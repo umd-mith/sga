@@ -20,9 +20,21 @@ use Catalyst qw/
     -Debug
     ConfigLoader
     Static::Simple
+
+    Unicode::Encoding
+
+    StatusMessage
+
+    StackTrace
 /;
 
+use CatalystX::RoleApplicator;
+
 extends 'Catalyst';
+
+__PACKAGE__ -> apply_request_class_roles(qw[
+  Catalyst::TraitFor::Request::REST::ForBrowsers
+]);
 
 our $VERSION = '0.01';
 
@@ -36,10 +48,19 @@ our $VERSION = '0.01';
 # local deployment.
 
 __PACKAGE__->config(
-    name => 'SGA::SharedCanvas',
+    name => 'SGA Shared Canvas Support',
     # Disable deprecated behavior needed by old applications
     disable_component_resolution_regex_fallback => 1,
     enable_catalyst_header => 1, # Send X-Catalyst header
+    encoding => 'UTF-8',
+    'Plugin::ConfigLoader' => {
+      file => __PACKAGE__ -> path_to( 'conf' ),
+    },
+    'View::HTML' => {
+      INCLUDE_PATH => [
+        __PACKAGE__ -> path_to( qw/root src/ ),
+      ],
+    },
 );
 
 # Start the application

@@ -20,12 +20,12 @@
 #     LICENSE => q[perl]
 #     NAME => q[SGA::SharedCanvas]
 #     NO_META => q[1]
-#     PREREQ_PM => { namespace::autoclean=>q[0], Catalyst::Plugin::Static::Simple=>q[0], ExtUtils::MakeMaker=>q[6.36], Catalyst::Plugin::ConfigLoader=>q[0], Catalyst::Action::RenderView=>q[0], Test::More=>q[0.88], Config::General=>q[0], Catalyst::Runtime=>q[5.90012], Moose=>q[0] }
+#     PREREQ_PM => { DateTime=>q[0], String::CamelCase=>q[0], Catalyst::Plugin::ConfigLoader=>q[0], CatalystX::RoleApplicator=>q[0], MooseX::NonMoose=>q[0.16], MooseX::Singleton=>q[0.29], Catalyst::Plugin::Session::Store::FastMmap=>q[0], Catalyst::Plugin::Session::State::Cookie=>q[0], Catalyst::Plugin::StatusMessage=>q[0], Config::General=>q[0], Lingua::EN::Inflect=>q[0], Catalyst::Action::REST=>q[0], Data::Verifier=>q[0], DBIx::Class=>q[0], DBIx::Class::Schema::Loader=>q[0], Moose=>q[0], MooseX::MarkAsMethods=>q[0.13], Catalyst::View::TT=>q[0], namespace::autoclean=>q[0], Catalyst::Plugin::Static::Simple=>q[0], ExtUtils::MakeMaker=>q[6.36], Catalyst::Plugin::StackTrace=>q[0], Data::UUID=>q[0], Catalyst::Action::RenderView=>q[0], Catalyst::Plugin::Session=>q[0], Test::More=>q[0.88], Catalyst::Model::DBIC::Schema=>q[0], Set::Scalar=>q[0], Catalyst::Plugin::Unicode::Encoding=>q[0], MooseX::MethodAttributes::Role=>q[0], Catalyst::Runtime=>q[5.90012], JSON=>q[0] }
 #     VERSION => q[0.01]
 #     VERSION_FROM => q[lib/SGA/SharedCanvas.pm]
 #     dist => { PREOP=>q[$(PERL) -I. "-MModule::Install::Admin" -e "dist_preop(q($(DISTVNAME)))"] }
 #     realclean => { FILES=>q[MYMETA.yml] }
-#     test => { TESTS=>q[t/01app.t t/02pod.t t/03podcoverage.t] }
+#     test => { TESTS=>q[t/01app.t t/02pod.t t/03podcoverage.t t/400-controller_Manifest.t t/401-controller_Sequence.t t/402-controller_Canvas.t t/model_DB.t] }
 
 # --- MakeMaker post_initialize section:
 
@@ -173,7 +173,13 @@ MAN1PODS = script/sga_sharedcanvas_cgi.pl \
 	script/sga_sharedcanvas_server.pl \
 	script/sga_sharedcanvas_test.pl
 MAN3PODS = lib/SGA/SharedCanvas.pm \
-	lib/SGA/SharedCanvas/Controller/Root.pm
+	lib/SGA/SharedCanvas/Controller/Root.pm \
+	lib/SGA/SharedCanvas/Model/DB.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Canvas.pm \
+	lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Manifest.pm \
+	lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Sequence.pm
 
 # Where is the Config information that we are using/depend on
 CONFIGDEP = $(PERL_ARCHLIB)$(DFSEP)Config.pm $(PERL_INC)$(DFSEP)config.h
@@ -195,13 +201,115 @@ PERL_ARCHIVE       =
 PERL_ARCHIVE_AFTER = 
 
 
-TO_INST_PM = lib/SGA/SharedCanvas.pm \
-	lib/SGA/SharedCanvas/Controller/Root.pm
+TO_INST_PM = lib/Catalyst/Action/Serialize/RDF/JSON.pm \
+	lib/Catalyst/Action/Serialize/RDF/XML.pm \
+	lib/SGA/SharedCanvas.pm \
+	lib/SGA/SharedCanvas/Base/Resource.pm \
+	lib/SGA/SharedCanvas/Base/ResourceCollection.pm \
+	lib/SGA/SharedCanvas/Base/ResourceController.pm \
+	lib/SGA/SharedCanvas/Collection.pm \
+	lib/SGA/SharedCanvas/Collection/Canvas.pm \
+	lib/SGA/SharedCanvas/Collection/Manifest.pm \
+	lib/SGA/SharedCanvas/Collection/Sequence.pm \
+	lib/SGA/SharedCanvas/Controller/Canvas.pm \
+	lib/SGA/SharedCanvas/Controller/Manifest.pm \
+	lib/SGA/SharedCanvas/Controller/Root.pm \
+	lib/SGA/SharedCanvas/Controller/Sequence.pm \
+	lib/SGA/SharedCanvas/Meta/Resource.pm \
+	lib/SGA/SharedCanvas/Meta/ResourceCollection.pm \
+	lib/SGA/SharedCanvas/Model/DB.pm \
+	lib/SGA/SharedCanvas/Resource.pm \
+	lib/SGA/SharedCanvas/Resource/Annotation.pm \
+	lib/SGA/SharedCanvas/Resource/Canvas.pm \
+	lib/SGA/SharedCanvas/Resource/Image.pm \
+	lib/SGA/SharedCanvas/Resource/ImageAnnotation.pm \
+	lib/SGA/SharedCanvas/Resource/ImageAnnotationList.pm \
+	lib/SGA/SharedCanvas/Resource/Layer.pm \
+	lib/SGA/SharedCanvas/Resource/Manifest.pm \
+	lib/SGA/SharedCanvas/Resource/Sequence.pm \
+	lib/SGA/SharedCanvas/Resource/TextAnnotationList.pm \
+	lib/SGA/SharedCanvas/Role/Schema/Result/UUID.pm \
+	lib/SGA/SharedCanvas/Schema.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Canvas.pm \
+	lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Manifest.pm \
+	lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Sequence.pm \
+	lib/SGA/SharedCanvas/Serialize/RDF/JSON.pm \
+	lib/SGA/SharedCanvas/Serialize/RDF/XML.pm
 
 PM_TO_BLIB = lib/SGA/SharedCanvas/Controller/Root.pm \
 	blib/lib/SGA/SharedCanvas/Controller/Root.pm \
+	lib/SGA/SharedCanvas/Controller/Manifest.pm \
+	blib/lib/SGA/SharedCanvas/Controller/Manifest.pm \
+	lib/SGA/SharedCanvas/Resource/TextAnnotationList.pm \
+	blib/lib/SGA/SharedCanvas/Resource/TextAnnotationList.pm \
+	lib/SGA/SharedCanvas/Resource/Sequence.pm \
+	blib/lib/SGA/SharedCanvas/Resource/Sequence.pm \
 	lib/SGA/SharedCanvas.pm \
-	blib/lib/SGA/SharedCanvas.pm
+	blib/lib/SGA/SharedCanvas.pm \
+	lib/SGA/SharedCanvas/Resource/ImageAnnotation.pm \
+	blib/lib/SGA/SharedCanvas/Resource/ImageAnnotation.pm \
+	lib/SGA/SharedCanvas/Controller/Sequence.pm \
+	blib/lib/SGA/SharedCanvas/Controller/Sequence.pm \
+	lib/SGA/SharedCanvas/Collection.pm \
+	blib/lib/SGA/SharedCanvas/Collection.pm \
+	lib/SGA/SharedCanvas/Resource.pm \
+	blib/lib/SGA/SharedCanvas/Resource.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Canvas.pm \
+	blib/lib/SGA/SharedCanvas/Schema/Result/Canvas.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Manifest.pm \
+	blib/lib/SGA/SharedCanvas/Schema/Result/Manifest.pm \
+	lib/SGA/SharedCanvas/Meta/Resource.pm \
+	blib/lib/SGA/SharedCanvas/Meta/Resource.pm \
+	lib/SGA/SharedCanvas/Resource/Annotation.pm \
+	blib/lib/SGA/SharedCanvas/Resource/Annotation.pm \
+	lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm \
+	blib/lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm \
+	lib/SGA/SharedCanvas/Schema.pm \
+	blib/lib/SGA/SharedCanvas/Schema.pm \
+	lib/SGA/SharedCanvas/Resource/ImageAnnotationList.pm \
+	blib/lib/SGA/SharedCanvas/Resource/ImageAnnotationList.pm \
+	lib/SGA/SharedCanvas/Base/ResourceController.pm \
+	blib/lib/SGA/SharedCanvas/Base/ResourceController.pm \
+	lib/SGA/SharedCanvas/Controller/Canvas.pm \
+	blib/lib/SGA/SharedCanvas/Controller/Canvas.pm \
+	lib/SGA/SharedCanvas/Serialize/RDF/XML.pm \
+	blib/lib/SGA/SharedCanvas/Serialize/RDF/XML.pm \
+	lib/SGA/SharedCanvas/Collection/Manifest.pm \
+	blib/lib/SGA/SharedCanvas/Collection/Manifest.pm \
+	lib/SGA/SharedCanvas/Collection/Sequence.pm \
+	blib/lib/SGA/SharedCanvas/Collection/Sequence.pm \
+	lib/SGA/SharedCanvas/Role/Schema/Result/UUID.pm \
+	blib/lib/SGA/SharedCanvas/Role/Schema/Result/UUID.pm \
+	lib/SGA/SharedCanvas/Meta/ResourceCollection.pm \
+	blib/lib/SGA/SharedCanvas/Meta/ResourceCollection.pm \
+	lib/SGA/SharedCanvas/Base/Resource.pm \
+	blib/lib/SGA/SharedCanvas/Base/Resource.pm \
+	lib/SGA/SharedCanvas/Resource/Layer.pm \
+	blib/lib/SGA/SharedCanvas/Resource/Layer.pm \
+	lib/Catalyst/Action/Serialize/RDF/XML.pm \
+	blib/lib/Catalyst/Action/Serialize/RDF/XML.pm \
+	lib/SGA/SharedCanvas/Model/DB.pm \
+	blib/lib/SGA/SharedCanvas/Model/DB.pm \
+	lib/SGA/SharedCanvas/Resource/Manifest.pm \
+	blib/lib/SGA/SharedCanvas/Resource/Manifest.pm \
+	lib/SGA/SharedCanvas/Resource/Canvas.pm \
+	blib/lib/SGA/SharedCanvas/Resource/Canvas.pm \
+	lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm \
+	blib/lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Sequence.pm \
+	blib/lib/SGA/SharedCanvas/Schema/Result/Sequence.pm \
+	lib/SGA/SharedCanvas/Base/ResourceCollection.pm \
+	blib/lib/SGA/SharedCanvas/Base/ResourceCollection.pm \
+	lib/SGA/SharedCanvas/Serialize/RDF/JSON.pm \
+	blib/lib/SGA/SharedCanvas/Serialize/RDF/JSON.pm \
+	lib/SGA/SharedCanvas/Resource/Image.pm \
+	blib/lib/SGA/SharedCanvas/Resource/Image.pm \
+	lib/SGA/SharedCanvas/Collection/Canvas.pm \
+	blib/lib/SGA/SharedCanvas/Collection/Canvas.pm \
+	lib/Catalyst/Action/Serialize/RDF/JSON.pm \
+	blib/lib/Catalyst/Action/Serialize/RDF/JSON.pm
 
 
 # --- MakeMaker platform_constants section:
@@ -429,7 +537,13 @@ manifypods : pure_all  \
 	script/sga_sharedcanvas_cgi.pl \
 	script/sga_sharedcanvas_fastcgi.pl \
 	lib/SGA/SharedCanvas/Controller/Root.pm \
-	lib/SGA/SharedCanvas.pm
+	lib/SGA/SharedCanvas.pm \
+	lib/SGA/SharedCanvas/Model/DB.pm \
+	lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Canvas.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Manifest.pm \
+	lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm \
+	lib/SGA/SharedCanvas/Schema/Result/Sequence.pm
 	$(NOECHO) $(POD2MAN) --section=1 --perm_rw=$(PERM_RW) \
 	  script/sga_sharedcanvas_test.pl $(INST_MAN1DIR)/sga_sharedcanvas_test.pl.$(MAN1EXT) \
 	  script/sga_sharedcanvas_create.pl $(INST_MAN1DIR)/sga_sharedcanvas_create.pl.$(MAN1EXT) \
@@ -438,7 +552,13 @@ manifypods : pure_all  \
 	  script/sga_sharedcanvas_fastcgi.pl $(INST_MAN1DIR)/sga_sharedcanvas_fastcgi.pl.$(MAN1EXT) 
 	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) \
 	  lib/SGA/SharedCanvas/Controller/Root.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Controller::Root.$(MAN3EXT) \
-	  lib/SGA/SharedCanvas.pm $(INST_MAN3DIR)/SGA::SharedCanvas.$(MAN3EXT) 
+	  lib/SGA/SharedCanvas.pm $(INST_MAN3DIR)/SGA::SharedCanvas.$(MAN3EXT) \
+	  lib/SGA/SharedCanvas/Model/DB.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Model::DB.$(MAN3EXT) \
+	  lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Schema::Result::ManifestSequence.$(MAN3EXT) \
+	  lib/SGA/SharedCanvas/Schema/Result/Canvas.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Schema::Result::Canvas.$(MAN3EXT) \
+	  lib/SGA/SharedCanvas/Schema/Result/Manifest.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Schema::Result::Manifest.$(MAN3EXT) \
+	  lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Schema::Result::CanvasSequence.$(MAN3EXT) \
+	  lib/SGA/SharedCanvas/Schema/Result/Sequence.pm $(INST_MAN3DIR)/SGA::SharedCanvas::Schema::Result::Sequence.$(MAN3EXT) 
 
 
 
@@ -812,7 +932,7 @@ $(MAKE_APERL_FILE) : $(FIRST_MAKEFILE) pm_to_blib
 TEST_VERBOSE=0
 TEST_TYPE=test_$(LINKTYPE)
 TEST_FILE = test.pl
-TEST_FILES = t/01app.t t/02pod.t t/03podcoverage.t
+TEST_FILES = t/01app.t t/02pod.t t/03podcoverage.t t/400-controller_Manifest.t t/401-controller_Sequence.t t/402-controller_Canvas.t t/model_DB.t
 TESTDB_SW = -d
 
 testdb :: testdb_$(LINKTYPE)
@@ -842,12 +962,35 @@ ppd :
 	$(NOECHO) $(ECHO) '    <ABSTRACT>Catalyst based application</ABSTRACT>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR>James Smith,,,</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Action::REST" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Action::RenderView" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Model::DBIC::Schema" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::ConfigLoader" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session::State::Cookie" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session::Store::FastMmap" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::StackTrace" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Static::Simple" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::StatusMessage" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Unicode::Encoding" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Runtime" VERSION="5.90012" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::View::TT" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="CatalystX::RoleApplicator" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Config::General" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="DBIx::Class" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="DBIx::Class::Schema::Loader" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Data::UUID" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Data::Verifier" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="DateTime::" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="JSON::" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Lingua::EN::Inflect" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Moose::" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::MarkAsMethods" VERSION="0.13" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::MethodAttributes::Role" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::NonMoose" VERSION="0.16" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::Singleton" VERSION="0.29" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Set::Scalar" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="String::CamelCase" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="namespace::autoclean" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="i686-linux-gnu-thread-multi-64int-5.14" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> $(DISTNAME).ppd
@@ -860,7 +1003,42 @@ ppd :
 pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
 	  lib/SGA/SharedCanvas/Controller/Root.pm blib/lib/SGA/SharedCanvas/Controller/Root.pm \
-	  lib/SGA/SharedCanvas.pm blib/lib/SGA/SharedCanvas.pm 
+	  lib/SGA/SharedCanvas/Controller/Manifest.pm blib/lib/SGA/SharedCanvas/Controller/Manifest.pm \
+	  lib/SGA/SharedCanvas/Resource/TextAnnotationList.pm blib/lib/SGA/SharedCanvas/Resource/TextAnnotationList.pm \
+	  lib/SGA/SharedCanvas/Resource/Sequence.pm blib/lib/SGA/SharedCanvas/Resource/Sequence.pm \
+	  lib/SGA/SharedCanvas.pm blib/lib/SGA/SharedCanvas.pm \
+	  lib/SGA/SharedCanvas/Resource/ImageAnnotation.pm blib/lib/SGA/SharedCanvas/Resource/ImageAnnotation.pm \
+	  lib/SGA/SharedCanvas/Controller/Sequence.pm blib/lib/SGA/SharedCanvas/Controller/Sequence.pm \
+	  lib/SGA/SharedCanvas/Collection.pm blib/lib/SGA/SharedCanvas/Collection.pm \
+	  lib/SGA/SharedCanvas/Resource.pm blib/lib/SGA/SharedCanvas/Resource.pm \
+	  lib/SGA/SharedCanvas/Schema/Result/Canvas.pm blib/lib/SGA/SharedCanvas/Schema/Result/Canvas.pm \
+	  lib/SGA/SharedCanvas/Schema/Result/Manifest.pm blib/lib/SGA/SharedCanvas/Schema/Result/Manifest.pm \
+	  lib/SGA/SharedCanvas/Meta/Resource.pm blib/lib/SGA/SharedCanvas/Meta/Resource.pm \
+	  lib/SGA/SharedCanvas/Resource/Annotation.pm blib/lib/SGA/SharedCanvas/Resource/Annotation.pm \
+	  lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm blib/lib/SGA/SharedCanvas/Schema/Result/CanvasSequence.pm \
+	  lib/SGA/SharedCanvas/Schema.pm blib/lib/SGA/SharedCanvas/Schema.pm \
+	  lib/SGA/SharedCanvas/Resource/ImageAnnotationList.pm blib/lib/SGA/SharedCanvas/Resource/ImageAnnotationList.pm \
+	  lib/SGA/SharedCanvas/Base/ResourceController.pm blib/lib/SGA/SharedCanvas/Base/ResourceController.pm \
+	  lib/SGA/SharedCanvas/Controller/Canvas.pm blib/lib/SGA/SharedCanvas/Controller/Canvas.pm \
+	  lib/SGA/SharedCanvas/Serialize/RDF/XML.pm blib/lib/SGA/SharedCanvas/Serialize/RDF/XML.pm \
+	  lib/SGA/SharedCanvas/Collection/Manifest.pm blib/lib/SGA/SharedCanvas/Collection/Manifest.pm \
+	  lib/SGA/SharedCanvas/Collection/Sequence.pm blib/lib/SGA/SharedCanvas/Collection/Sequence.pm \
+	  lib/SGA/SharedCanvas/Role/Schema/Result/UUID.pm blib/lib/SGA/SharedCanvas/Role/Schema/Result/UUID.pm \
+	  lib/SGA/SharedCanvas/Meta/ResourceCollection.pm blib/lib/SGA/SharedCanvas/Meta/ResourceCollection.pm \
+	  lib/SGA/SharedCanvas/Base/Resource.pm blib/lib/SGA/SharedCanvas/Base/Resource.pm \
+	  lib/SGA/SharedCanvas/Resource/Layer.pm blib/lib/SGA/SharedCanvas/Resource/Layer.pm \
+	  lib/Catalyst/Action/Serialize/RDF/XML.pm blib/lib/Catalyst/Action/Serialize/RDF/XML.pm \
+	  lib/SGA/SharedCanvas/Model/DB.pm blib/lib/SGA/SharedCanvas/Model/DB.pm \
+	  lib/SGA/SharedCanvas/Resource/Manifest.pm blib/lib/SGA/SharedCanvas/Resource/Manifest.pm \
+	  lib/SGA/SharedCanvas/Resource/Canvas.pm blib/lib/SGA/SharedCanvas/Resource/Canvas.pm 
+	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
+	  lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm blib/lib/SGA/SharedCanvas/Schema/Result/ManifestSequence.pm \
+	  lib/SGA/SharedCanvas/Schema/Result/Sequence.pm blib/lib/SGA/SharedCanvas/Schema/Result/Sequence.pm \
+	  lib/SGA/SharedCanvas/Base/ResourceCollection.pm blib/lib/SGA/SharedCanvas/Base/ResourceCollection.pm \
+	  lib/SGA/SharedCanvas/Serialize/RDF/JSON.pm blib/lib/SGA/SharedCanvas/Serialize/RDF/JSON.pm \
+	  lib/SGA/SharedCanvas/Resource/Image.pm blib/lib/SGA/SharedCanvas/Resource/Image.pm \
+	  lib/SGA/SharedCanvas/Collection/Canvas.pm blib/lib/SGA/SharedCanvas/Collection/Canvas.pm \
+	  lib/Catalyst/Action/Serialize/RDF/JSON.pm blib/lib/Catalyst/Action/Serialize/RDF/JSON.pm 
 	$(NOECHO) $(TOUCH) pm_to_blib
 
 
@@ -908,14 +1086,14 @@ installdeps_notest ::
 	$(NOECHO) $(NOOP)
 
 upgradedeps ::
-	$(PERL) Makefile.PL --config= --upgradedeps=Test::More,0.88,Catalyst::Runtime,5.90012,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Action::RenderView,0,Moose,0,namespace::autoclean,0,Config::General,0
+	$(PERL) Makefile.PL --config= --upgradedeps=Test::More,0.88,Catalyst::Runtime,5.90012,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Plugin::StackTrace,0,Catalyst::Plugin::StatusMessage,0,Catalyst::Plugin::Session,0,Catalyst::Plugin::Session::State::Cookie,0,Catalyst::Plugin::Session::Store::FastMmap,0,Catalyst::Plugin::Unicode::Encoding,0,Catalyst::Action::RenderView,0,Catalyst::Action::REST,0,Catalyst::Model::DBIC::Schema,0,Catalyst::View::TT,0,CatalystX::RoleApplicator,0,Moose,0,MooseX::MethodAttributes::Role,0,MooseX::MarkAsMethods,0.13,MooseX::NonMoose,0.16,MooseX::Singleton,0.29,Config::General,0,Data::UUID,0,Data::Verifier,0,DateTime,0,DBIx::Class,0,DBIx::Class::Schema::Loader,0,JSON,0,Lingua::EN::Inflect,0,Set::Scalar,0,String::CamelCase,0,namespace::autoclean,0
 
 upgradedeps_notest ::
-	$(PERL) Makefile.PL --config=notest,1 --upgradedeps=Test::More,0.88,Catalyst::Runtime,5.90012,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Action::RenderView,0,Moose,0,namespace::autoclean,0,Config::General,0
+	$(PERL) Makefile.PL --config=notest,1 --upgradedeps=Test::More,0.88,Catalyst::Runtime,5.90012,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Plugin::StackTrace,0,Catalyst::Plugin::StatusMessage,0,Catalyst::Plugin::Session,0,Catalyst::Plugin::Session::State::Cookie,0,Catalyst::Plugin::Session::Store::FastMmap,0,Catalyst::Plugin::Unicode::Encoding,0,Catalyst::Action::RenderView,0,Catalyst::Action::REST,0,Catalyst::Model::DBIC::Schema,0,Catalyst::View::TT,0,CatalystX::RoleApplicator,0,Moose,0,MooseX::MethodAttributes::Role,0,MooseX::MarkAsMethods,0.13,MooseX::NonMoose,0.16,MooseX::Singleton,0.29,Config::General,0,Data::UUID,0,Data::Verifier,0,DateTime,0,DBIx::Class,0,DBIx::Class::Schema::Loader,0,JSON,0,Lingua::EN::Inflect,0,Set::Scalar,0,String::CamelCase,0,namespace::autoclean,0
 
 listdeps ::
 	@$(PERL) -le "print for @ARGV" 
 
 listalldeps ::
-	@$(PERL) -le "print for @ARGV" Test::More Catalyst::Runtime Catalyst::Plugin::ConfigLoader Catalyst::Plugin::Static::Simple Catalyst::Action::RenderView Moose namespace::autoclean Config::General
+	@$(PERL) -le "print for @ARGV" Test::More Catalyst::Runtime Catalyst::Plugin::ConfigLoader Catalyst::Plugin::Static::Simple Catalyst::Plugin::StackTrace Catalyst::Plugin::StatusMessage Catalyst::Plugin::Session Catalyst::Plugin::Session::State::Cookie Catalyst::Plugin::Session::Store::FastMmap Catalyst::Plugin::Unicode::Encoding Catalyst::Action::RenderView Catalyst::Action::REST Catalyst::Model::DBIC::Schema Catalyst::View::TT CatalystX::RoleApplicator Moose MooseX::MethodAttributes::Role MooseX::MarkAsMethods MooseX::NonMoose MooseX::Singleton Config::General Data::UUID Data::Verifier DateTime DBIx::Class DBIx::Class::Schema::Loader JSON Lingua::EN::Inflect Set::Scalar String::CamelCase namespace::autoclean
 
