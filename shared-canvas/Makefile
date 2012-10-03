@@ -15,7 +15,9 @@ DOCCO ?= `which docco`
 BASE_FILES = ${SRC_DIR}/core.coffee \
 			${SRC_DIR}/data.coffee \
 			${SRC_DIR}/presentation.coffee \
-			${SRC_DIR}/controller.coffee
+			${SRC_DIR}/controller.coffee \
+			${SRC_DIR}/component.coffee \
+			${SRC_DIR}/application.coffee
 
 MODULES = ${SRC_DIR}/intro.coffee \
 		${BASE_FILES} \
@@ -30,16 +32,17 @@ VER = sed "s/@VERSION/${SC_VER}/"
 
 DATE=$(shell git log --pretty=format:%ad | head -1)
 
-all: core docs
+# add docs later
+all: core 
 
-core: shared-canvas min lint
+core: shared-canvas min
 		@@echo "shared-canvas build complete"
 
 ${DIST_DIR}:
 		@@mkdir -p ${DIST_DIR}
 
-docs: ${SC_C}
-		@@${DOCCO} ${SC_C}
+#docs: ${SC_C}
+#		@@${DOCCO} ${SC_C}
 
 shared-canvas: ${SC}
 
@@ -48,7 +51,7 @@ ${SC_C}: ${MODULES} | ${DIST_DIR}
 		
 		@@rm -f ${SC_C}.tmp;
 		@@for i in ${BASE_FILES}; do \
-			cat $$i | sed 's/^/		/' >> ${SC_C}.tmp; \
+			cat $$i | sed 's/^/    /' >> ${SC_C}.tmp; \
 			echo >> ${SC_C}.tmp; \
 			done
 		
@@ -58,15 +61,8 @@ ${SC_C}: ${MODULES} | ${DIST_DIR}
 		@@rm -f ${SC_C}.tmp;
 
 ${SC}: ${SC_C}
-		@@coffee -c ${SC_C};
-
-lint: shared-canvas
-		@@if test ! -z ${JS_ENGINE}; then \
-				echo "Checking shared-canvas against JSLint..."; \
-				${JS_ENGINE} build/jslint-check.js; \
-		else \
-				echo "You must have NodeJS installed in order to test shared-canvas against JSLint."; \
-		fi
+		@@coffee -c ${SC_C} && \
+		  cp ${SC} ../perl/SGA-SharedCanvas/root/static/js/
 
 min: shared-canvas ${SC_MIN}
 
@@ -86,4 +82,4 @@ clean:
 
 distclean: clean
 
-.PHONY: all shared-canvas lint min clean distclean core
+.PHONY: all shared-canvas min clean distclean core
