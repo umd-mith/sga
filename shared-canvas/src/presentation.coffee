@@ -64,12 +64,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
           canvasHeight = item.height?[0] || 1
           that.setScale (SVGWidth / canvasWidth)
 
-        console.log that
-
         that.addLens 'Image', (container, view, model, id) ->
           return unless 'Image' in (options.types || [])
           rendering = {}
-          console.log "Rendering an image", id
           item = model.getItem id
           # for now, we assume a full mapping - image to full canvas/container
           svgImage = null
@@ -82,4 +79,63 @@ SGAReader.namespace "Presentation", (Presentation) ->
           rendering.remove = ->
             SVG (svgRoot) ->
               svgRoot.remove svgImage
+          rendering
+
+        that.addLens 'TextContent', (container, view, model, id) ->
+          return unless 'Text' in (options.types || [])
+          rendering = {}
+          app = options.application()
+          item = model.getItem id
+          # for now, we assume that all of the text gets splatted onto
+          # the SVG canvas - we may want to play with doing it one
+          # glyph at a time, but that's probably going to be too expensive
+          svgText = null
+
+          # we need a nice way to get the span of text from the tei
+          # and then we apply any annotations that modify how we display
+          # the text before we create the svg elements - that way, we get
+          # things like line breaks
+          #
+          # .target = tei.id AND
+          # ( .start <= item.end[0] OR
+          #   .end >= item.start[0] )
+          #
+          #highlightDS = MITHGrid.Data.RangePager.initInstance
+          #  dataStore: MITHGrid.Data.View.initInstance
+          #    dataStore: model
+          #    type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
+          #  leftExpressions: [ '.end' ]
+          #  rightExpressions: [ '.start' ]
+
+          # we also need to know when we have one of these annotations
+          # getting updated - we might be able to hook into the
+          # highlightDS object for this and leave the following
+          # rendering.update method for tracking changes to the
+          # underlying unstructured text range
+
+          SVG (svgRoot) ->
+            texts = svgRoot.createText()
+            app.withSource item.source[0], (content) ->
+              text = content.substr(item.start[0], item.end[0])
+              #highlightDS.setKeyRange item.start[0], item.end[0]
+              # now we mark up the text as indicated by the highlights
+              # we want annotations that satisfy the following:
+              #
+              # might be useful to have a data store that lets us easily and
+              # quickly find overlapping ranges
+              #
+              # TODO: still need to manage the .target = tei.id bit
+              #
+              #highlightDS.visit (id) ->
+                # now apply annotation to text
+
+              #svgText = svgRoot.textpath(texts, "#textpath-#{id}", texts.string(text))
+              #svgRoot.text(svgText)
+              svgText = svgRoot.text(0, 100, text, { "font-size": "12pt" })
+
+          rendering.update = (item) ->
+            # do nothing for now
+          rendering.remove = ->
+            SVG (svgRoot) ->
+              svgRoot.remove svgText
           rendering

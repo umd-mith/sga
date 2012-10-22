@@ -1,13 +1,47 @@
 # # Data Managment
 SGAReader.namespace "Data", (Data) ->
+  Data.namespace "TextStore", (TextStore) ->
+    TextStore.initInstance = (args...) ->
+      MITHGrid.initInstance args..., (that) ->
+        options = that.options
+
+        fileContents = { }
+        loadingFiles = { }
+        pendingFiles = { }
+
+        that.addFile = (files) ->
+          files = [ files ] unless $.isArray(files)
+          for file in files 
+            do (file) ->
+              next if fileContents[file]? or loadingFiles[file]?
+              loadingFiles[file] = [ ]
+              $.ajax
+                url: file
+                type: 'GET'
+                processData: false
+                success: (data) ->
+                  c = data.documentElement.textContent
+                  fileContents[file] = c
+                  f(c) for f in loadingFiles[file]
+                  delete loadingFiles[file]
+
+        that.withFile = (file, cb) ->
+          if fileContents[file]?
+            cb(fileContents[file])
+          else if loadingFiles[file]?
+            loadingFiles[file].push cb
+
   Data.namespace "Manifest", (Manifest) ->
     NS =
       "http://dms.stanford.edu/ns/": "sc"
+      "http://www.shared-canvas.org/ns/": "sc"
       "http://www.w3.org/2000/01/rdf-schema#": "rdfs"
       "http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf"
       "http://www.w3.org/2003/12/exif/ns#": "exif"
       "http://purl.org/dc/elements/1.1/": "dc"
       "http://www.w3.org/ns/openannotation/core/": "oa"
+      "http://www.openannotation.org/ns/": "oa"
+      "http://www.w3.org/ns/openannotation/extension/": "oax"
       "http://www.openarchives.org/ore/terms/": "ore"
 
     Manifest.initInstance = (args...) ->

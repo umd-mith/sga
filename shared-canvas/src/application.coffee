@@ -7,6 +7,10 @@ SGAReader.namespace "Application", (Application) ->
 
         presentations = []
         manifestData = SGA.Reader.Data.Manifest.initInstance()
+        textSource = SGA.Reader.Data.TextStore.initInstance()
+
+        that.withSource = (file, cb) ->
+          textSource.withFile file, cb
 
         that.addPresentation = (config) ->
           # a presentation should only get a list of canvases
@@ -16,6 +20,7 @@ SGAReader.namespace "Application", (Application) ->
           # and a data view that provides a way to walk that sequence
           p = SGA.Reader.Presentation.Canvas.initInstance config.container,
             types: config.types
+            application: -> that
             dataView: that.dataView.canvasAnnotations
           presentations.push [ p, config.container ]
 
@@ -35,7 +40,6 @@ SGAReader.namespace "Application", (Application) ->
 
         that.events.onCanvasChange.addListener (k) ->
           that.dataView.canvasAnnotations.setKey k
-          console.log "things targeting the canvas:", that.dataView.canvasAnnotations.items()
           seq = that.dataStore.data.getItem currentSequence
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
@@ -73,8 +77,27 @@ SGAReader.namespace "Application", (Application) ->
                 sitem = manifestData.getItem sitem.rdfrest[0]
               item.sequence = seq
               items.push item
+
+            # now get the annotations we know something about handling
             for id in manifestData.getAnnotations()
               aitem = manifestData.getItem id
+
+              # for now, we *assume* that the content annotation is coming
+              # from a TEI file and is marked by begin/end pointers
+              if "scContentAnnotation" in aitem.type
+                textItem = manifestData.getItem aitem.oahasBody
+                textItem = textItem[0] if $.isArray(textItem)
+                textSpan = manifestData.getItem textItem.oahasSelector
+                textSpan = textSpan[0] if $.isArray(textSpan)
+                textSource.addFile(textItem.oahasSource);
+                items.push
+                  id: aitem.id
+                  target: aitem.oahasTarget
+                  type: "TextContent"
+                  source: textItem.oahasSource
+                  start: parseInt(textSpan.oaxbegin[0], 10)
+                  end: parseInt(textSpan.oaxend[0], 10)
+
               if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
                 imgitem = imgitem[0] if $.isArray(imgitem)
@@ -85,7 +108,6 @@ SGAReader.namespace "Application", (Application) ->
                   image: imgitem.oahasSource || aitem.oahasBody
                   type: "Image"
 
-            console.log items
             that.dataStore.data.loadItems items
 
     # we look for <div class="canvas" data-types="..." data-manifest="..."></div>
@@ -111,7 +133,6 @@ SGAReader.namespace "Application", (Application) ->
         if manifestUrl?
           manifest = that.manifests[manifestUrl]
           if !manifest?
-            console.log "Creating manifest"
             manifest = Application.SharedCanvas.initInstance
               url: manifestUrl
             that.manifests[manifestUrl] = manifest
@@ -119,12 +140,9 @@ SGAReader.namespace "Application", (Application) ->
               cbs = manifestCallbacks[manifestUrl] || []
               cb(manifest) for cb in cbs
               delete manifestCallbacks[manifestUrl]
-              console.log "manifest ready for ", manifestUrl
-          console.log("Running manifest app");
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
           that.onManifest manifestUrl, (manifest) ->
-            console.log "adding presentation"
             manifest.addPresentation
               types: types
               container: $(el)
