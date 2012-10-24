@@ -1,6 +1,6 @@
 var JSLINT = require("./lib/jslint").check, //.JSLINT,
 	print = require("util").print,
-	src = require("fs").readFileSync("dist/angles.js", "utf8");
+	src = require("fs").readFileSync("dist/shared-canvas.js", "utf8");
 
 JSLINT(src, { 
 	forin: true, 

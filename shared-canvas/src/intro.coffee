@@ -11,5 +11,6 @@
 ###
 
 (($, MITHGrid) ->
-	# The application uses the SGA.Reader namespace.
-	MITHGrid.globalNamespace "SGA.Reader", (SGA) ->
+  # The application uses the SGA.Reader namespace.
+  MITHGrid.globalNamespace "SGA"
+  SGA.namespace "Reader", (SGAReader) ->
