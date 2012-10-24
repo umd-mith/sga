@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Wed Oct 24 08:35:58 2012 -0400
+# Date: Wed Oct 24 13:11:47 2012 -0400
 #
 # License TBD.
 #
@@ -88,7 +88,8 @@
             "http://www.openannotation.org/ns/": "oa",
             "http://www.w3.org/ns/openannotation/extension/": "oax",
             "http://www.openarchives.org/ore/terms/": "ore",
-            "http://www.shelleygodwinarchive.org/ns/1#": "sga"
+            "http://www.shelleygodwinarchive.org/ns/1#": "sga",
+            "http://www.shelleygodwinarchive.org/ns1#": "sga"
           };
           return Manifest.initInstance = function() {
             var args;
@@ -233,19 +234,10 @@
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHGrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.Canvas"].concat(__slice.call(args), [function(that, container) {
-              var SVG, SVGHeight, SVGWidth, canvasHeight, canvasWidth, dataView, highlightDS, options, pendingSVGfctns, svgRoot, svgRootEl;
+              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, highlightDS, options, pendingSVGfctns, svgRoot, svgRootEl;
               options = that.options;
               highlightDS = null;
-              if (__indexOf.call(options.types || [], 'Text') >= 0) {
-                highlightDS = MITHGrid.Data.RangePager.initInstance({
-                  dataStore: MITHGrid.Data.View.initInstance({
-                    dataStore: that.dataView,
-                    type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
-                  }),
-                  leftExpressions: ['.end'],
-                  rightExpressions: ['.start']
-                });
-              }
+              annoExpr = that.dataView.prepare(['!target']);
               pendingSVGfctns = [];
               SVG = function(cb) {
                 return pendingSVGfctns.push(cb);
@@ -354,13 +346,14 @@
                     classes.push("text");
                   }
                   return {
+                    type: 'span',
                     text: info.acc,
                     classes: classes.join(' '),
                     modes: info.modes
                   };
                 };
                 compileText = function(info) {
-                  var current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref, _ref1;
+                  var br_pushed, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref, _ref1;
                   text = info.text;
                   mods = info.mods;
                   offset = info.offset;
@@ -369,17 +362,33 @@
                     modes: []
                   };
                   results = [];
+                  br_pushed = false;
                   for (pos = _i = 0, _ref = text.length; 0 <= _ref ? _i < _ref : _i > _ref; pos = 0 <= _ref ? ++_i : --_i) {
                     if (!(mods[pos + offset] != null)) {
+                      if (!text[pos].match(/^\s+$/)) {
+                        br_pushed = false;
+                      }
                       current_el.acc += text[pos];
                     } else {
-                      if (current_el.acc !== '') {
+                      if (current_el.acc.match(/^\s*$/)) {
+                        current_el.acc = '';
+                      } else {
                         results.push(processNode(current_el));
                       }
-                      current_el.acc = '';
+                      current_el.acc = text[pos];
                       _ref1 = mods[pos + offset];
                       for (_j = 0, _len = _ref1.length; _j < _len; _j++) {
                         mod = _ref1[_j];
+                        if (mod.type === "LineAnnotation") {
+                          if (!br_pushed) {
+                            results.push({
+                              type: 'br',
+                              modes: [],
+                              acc: ''
+                            });
+                            br_pushed = true;
+                          }
+                        }
                         if (mod.action === 'start') {
                           current_el.modes.push(mod.type);
                         }
@@ -403,6 +412,9 @@
                   results.push(processNode(current_el));
                   return results;
                 };
+                text = "";
+                mods = {};
+                textContainer = null;
                 setMod = function(pos, pref, type) {
                   if ($.isArray(pos)) {
                     pos = pos[0];
@@ -418,9 +430,6 @@
                     type: type
                   });
                 };
-                text = "";
-                mods = {};
-                textContainer = null;
                 SVG(function(svgRoot) {
                   var svg;
                   textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
@@ -428,14 +437,25 @@
                   svg = svgRoot.root();
                   svg.appendChild(textContainer);
                   return app.withSource(item.source[0], function(content) {
-                    var bodyEl, el, mode, node, nodes, rootEl, tags, _i, _j, _len, _len1, _ref, _ref1;
+                    var annoId, bodyEl, el, end, hitem, mode, node, nodes, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref, _ref1, _ref2;
                     text = content.substr(item.start[0], item.end[0]);
-                    highlightDS.visit(function(id) {
-                      var hitem;
-                      hitem = highlightDS.getItem(id);
-                      setMod(hitem.start, 'start', hitem.type);
-                      return setMod(hitem.start, 'end', hitem.type);
-                    });
+                    _ref = annoExpr.evaluate(item.source);
+                    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                      annoId = _ref[_i];
+                      hitem = model.getItem(annoId);
+                      start = hitem.start[0];
+                      end = hitem.end[0];
+                      if (start <= item.end[0] && end >= item.start[0]) {
+                        if (start < item.start[0]) {
+                          start = item.start[0];
+                        }
+                        if (end > item.end[0]) {
+                          end = item.end[0];
+                        }
+                        setMod(hitem.start, 'start', hitem.type);
+                        setMod(hitem.end, 'end', hitem.type);
+                      }
+                    }
                     nodes = compileText({
                       text: text,
                       mods: mods,
@@ -446,16 +466,18 @@
                     rootEl = document.createElement('div');
                     $(rootEl).addClass("text-content");
                     bodyEl.appendChild(rootEl);
-                    for (_i = 0, _len = nodes.length; _i < _len; _i++) {
-                      node = nodes[_i];
-                      el = $("<span></span>");
-                      el.text(node.text);
+                    for (_j = 0, _len1 = nodes.length; _j < _len1; _j++) {
+                      node = nodes[_j];
+                      el = $("<" + node.type + " />");
+                      if (node.type !== "br") {
+                        el.text(node.text);
+                      }
                       el.addClass(node.classes);
                       $(rootEl).append(el);
-                      _ref = node.modes;
-                      for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
-                        mode = _ref[_j];
-                        if ((_ref1 = tags[mode]) == null) {
+                      _ref1 = node.modes;
+                      for (_k = 0, _len2 = _ref1.length; _k < _len2; _k++) {
+                        mode = _ref1[_k];
+                        if ((_ref2 = tags[mode]) == null) {
                           tags[mode] = [];
                         }
                         tags[mode].push(el);

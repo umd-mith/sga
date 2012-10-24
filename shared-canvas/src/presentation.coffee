@@ -19,13 +19,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         highlightDS = null
 
-        if 'Text' in (options.types || [])
-          highlightDS = MITHGrid.Data.RangePager.initInstance
-            dataStore: MITHGrid.Data.View.initInstance
-              dataStore: that.dataView
-              type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
-            leftExpressions: [ '.end' ]
-            rightExpressions: [ '.start' ]
+        annoExpr = that.dataView.prepare(['!target'])
+
+        #if 'Text' in (options.types || [])
+        #  highlightDS = MITHGrid.Data.RangePager.initInstance
+        #    dataStore: MITHGrid.Data.View.initInstance
+        #      dataStore: that.dataView
+        #      type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
+        #    leftExpressions: [ '.end' ]
+        #    rightExpressions: [ '.start' ]
 
           # we also need to know when we have one of these annotations
           # getting updated - we might be able to hook into the
@@ -34,6 +36,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           # underlying unstructured text range
 
           #highlightDS.events.onModelChange.addListener (m, ids) ->
+          #  console.log ids
             
         pendingSVGfctns = []
         SVG = (cb) ->
@@ -96,6 +99,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.addLens 'Image', (container, view, model, id) ->
           return unless 'Image' in (options.types || [])
           rendering = {}
+
           item = model.getItem id
           # for now, we assume a full mapping - image to full canvas/container
           svgImage = null
@@ -132,6 +136,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             classes.push "text" if classes.length == 0
 
             return {
+              type: 'span'
               text: info.acc
               classes: classes.join(' ')
               modes: info.modes
@@ -150,16 +155,24 @@ SGAReader.namespace "Presentation", (Presentation) ->
               modes: [ ]
   
             results = []
+            br_pushed = false
   
             for pos in [ 0 ... text.length ]
               if !mods[pos+offset]?
+                br_pushed = false unless text[pos].match(/^\s+$/)
                 current_el.acc += text[pos]
               else 
-                if current_el.acc != ''
+                if current_el.acc.match(/^\s*$/)
+                  current_el.acc = ''
+                else
                   results.push processNode(current_el)
   
-                current_el.acc = ''
+                current_el.acc = text[pos]
                 for mod in mods[pos+offset]
+                  if mod.type == "LineAnnotation"
+                    if !br_pushed
+                      results.push { type: 'br', modes: [], acc: '' }
+                      br_pushed = true
                   if mod.action == 'start'
                     current_el.modes.push mod.type
                   if mod.action == 'end'
@@ -167,6 +180,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
             results.push processNode(current_el)
             results
+
+          text = ""
+          mods = {}
+          textContainer = null
 
           setMod = (pos, pref, type) ->
             pos = pos[0] if $.isArray(pos)
@@ -176,15 +193,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
               action: pref
               type: type
 
-          text = ""
-          mods = {}
-          textContainer = null
-
           SVG (svgRoot) ->
             textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
             $(textContainer).attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", "100%")
             svg = svgRoot.root()
             svg.appendChild(textContainer)
+
 
             app.withSource item.source[0], (content) ->
               text = content.substr(item.start[0], item.end[0])
@@ -197,11 +211,21 @@ SGAReader.namespace "Presentation", (Presentation) ->
               #
               # TODO: still need to manage the .target = tei.id bit
               #
-              highlightDS.visit (id) ->
-                # now apply annotation to text
-                hitem = highlightDS.getItem id
-                setMod hitem.start, 'start', hitem.type
-                setMod hitem.start, 'end', hitem.type
+              #highlightDS.visit (id) ->
+              #  # now apply annotation to text
+              #  hitem = highlightDS.getItem id
+              #  setMod hitem.start, 'start', hitem.type
+              #  setMod hitem.start, 'end', hitem.type
+
+              for annoId in annoExpr.evaluate(item.source)
+                hitem = model.getItem annoId
+                start = hitem.start[0]
+                end = hitem.end[0]
+                if start <= item.end[0] && end >= item.start[0]
+                  start = item.start[0] if start < item.start[0]
+                  end = item.end[0] if end > item.end[0]
+                  setMod hitem.start, 'start', hitem.type
+                  setMod hitem.end, 'end', hitem.type
 
               nodes = compileText
                 text: text
@@ -215,8 +239,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
               bodyEl.appendChild(rootEl)
               
               for node in nodes
-                el = $("<span></span>")
-                el.text(node.text)
+                el = $("<#{node.type} />")
+                if node.type != "br"
+                  el.text(node.text)
                 el.addClass(node.classes)
                 $(rootEl).append(el)
                 for mode in node.modes
