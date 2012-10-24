@@ -1,0 +1,8 @@
+.text-content {
+  text-align: left;
+  padding: 3px;
+}
+
+.text-content .line {
+  display: block;
+}

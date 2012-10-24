@@ -98,6 +98,45 @@ SGAReader.namespace "Application", (Application) ->
                   start: parseInt(textSpan.oaxbegin[0], 10)
                   end: parseInt(textSpan.oaxend[0], 10)
 
+              if "sgaLineAnnotation" in aitem.type
+                # no body for now
+                textItem = manifestData.getItem aitem.oahasTarget
+                textItem = textItem[0] if $.isArray(textItem)
+                textSpan = manifestData.getItem textItem.oahasSelector
+                textSpan = textSpan[0] if $.isArray(textSpan)
+                items.push
+                  id: aitem.id
+                  target: textItem.oahasSource
+                  start: parseInt(textSpan.oaxbegin[0], 10)
+                  end: parseInt(textSpan.oaxend[0], 10)
+                  type: "LineAnnotation"
+
+              if "sgaDeletionAnnotation" in aitem.type
+                # no body or style for now
+                textItem = manifestData.getItem aitem.oahasTarget
+                textItem = textItem[0] if $.isArray(textItem)
+                textSpan = manifestData.getItem textItem.oahasSelector
+                textSpan = textSpan[0] if $.isArray(textSpan)
+                items.push
+                  id: aitem.id
+                  target: textItem.oahasSource
+                  start: parseInt(textSpan.oaxbegin[0], 10)
+                  end: parseInt(textSpan.oaxend[0], 10)
+                  type: "DeletionAnnotation"
+
+              if "sgaAdditionAnnotation" in aitem.type
+                # no body or style for now
+                textItem = manifestData.getItem aitem.oahasTarget
+                textItem = textItem[0] if $.isArray(textItem)
+                textSpan = manifestData.getItem textItem.oahasSelector
+                textSpan = textSpan[0] if $.isArray(textSpan)
+                items.push
+                  id: aitem.id
+                  target: textItem.oahasSource
+                  start: parseInt(textSpan.oaxbegin[0], 10)
+                  end: parseInt(textSpan.oaxend[0], 10)
+                  type: "AdditionAnnotation"
+
               if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
                 imgitem = imgitem[0] if $.isArray(imgitem)

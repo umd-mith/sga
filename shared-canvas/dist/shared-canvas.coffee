@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Wed Oct 24 08:08:01 2012 -0400
+# Date: Wed Oct 24 08:35:58 2012 -0400
 #
 # License TBD.
 #
@@ -171,6 +171,34 @@
             # this would be anything with a target = the canvas
             options = that.options
     
+            # we need a nice way to get the span of text from the tei
+            # and then we apply any annotations that modify how we display
+            # the text before we create the svg elements - that way, we get
+            # things like line breaks
+            #
+            # .target = tei.id AND
+            # ( .start <= item.end[0] OR
+            #   .end >= item.start[0] )
+            #
+    
+            highlightDS = null
+    
+            if 'Text' in (options.types || [])
+              highlightDS = MITHGrid.Data.RangePager.initInstance
+                dataStore: MITHGrid.Data.View.initInstance
+                  dataStore: that.dataView
+                  type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
+                leftExpressions: [ '.end' ]
+                rightExpressions: [ '.start' ]
+    
+              # we also need to know when we have one of these annotations
+              # getting updated - we might be able to hook into the
+              # highlightDS object for this and leave the following
+              # rendering.update method for tracking changes to the
+              # underlying unstructured text range
+    
+              #highlightDS.events.onModelChange.addListener (m, ids) ->
+                
             pendingSVGfctns = []
             SVG = (cb) ->
               pendingSVGfctns.push cb
@@ -178,7 +206,7 @@
             svgRootEl = $("""
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                   width="0" height="0" viewbG
+                   width="0" height="0"
                >
               </svg>
             """)
@@ -190,8 +218,8 @@
                 pendingSVGfctns = null
             canvasWidth = null
             canvasHeight = null
-            SVGWidth = $(container).width()*19/20
             SVGHeight = null
+            SVGWidth = $(container).width()*19/20
             MITHGrid.events.onWindowResize.addListener ->
               SVGWidth = $(container).width() * 19/20
               if canvasWidth?
@@ -211,6 +239,7 @@
                     height: SVGHeight
                     border: "0.5em solid #eeeeee"
                     "border-radius": "5px"
+                    "background-color": "#ffffff"
     
             # the data view is managed outside the presentation
             dataView = MITHGrid.Data.SubSet.initInstance
@@ -255,58 +284,75 @@
               # glyph at a time, but that's probably going to be too expensive
               svgText = null
     
-              # we need a nice way to get the span of text from the tei
-              # and then we apply any annotations that modify how we display
-              # the text before we create the svg elements - that way, we get
-              # things like line breaks
-              #
-              # .target = tei.id AND
-              # ( .start <= item.end[0] OR
-              #   .end >= item.start[0] )
-              #
-              highlightDS = MITHGrid.Data.RangePager.initInstance
-                dataStore: MITHGrid.Data.View.initInstance
-                  dataStore: model
-                  type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
-                leftExpressions: [ '.end' ]
-                rightExpressions: [ '.start' ]
+              processNode = (info) ->
+                classes = []
+                if 'LineAnnotation' in info.modes
+                  classes.push 'line'
+                if 'AdditionAnnotation' in info.modes
+                  classes.push 'addition'
+                if 'DeletionAnnotation' in info.modes
+                  classes.push 'deletion'
     
-              # we also need to know when we have one of these annotations
-              # getting updated - we might be able to hook into the
-              # highlightDS object for this and leave the following
-              # rendering.update method for tracking changes to the
-              # underlying unstructured text range
+                classes.push "text" if classes.length == 0
     
-              highlightDS.events.onModelChange.addListener (m, ids) ->
-                console.log "Highlights changed: ", ids
-                
+                return {
+                  text: info.acc
+                  classes: classes.join(' ')
+                  modes: info.modes
+                }
+    
+              # takes a text string and a series of mods made at positions in the string
+              # returns a sequence of DOM elements and a grouping of elements based on
+              # type of mod being made
+              compileText = (info) ->
+                text = info.text
+                mods = info.mods
+                offset = info.offset 
+      
+                current_el = 
+                  acc: ''
+                  modes: [ ]
+      
+                results = []
+      
+                for pos in [ 0 ... text.length ]
+                  if !mods[pos+offset]?
+                    current_el.acc += text[pos]
+                  else 
+                    if current_el.acc != ''
+                      results.push processNode(current_el)
+      
+                    current_el.acc = ''
+                    for mod in mods[pos+offset]
+                      if mod.action == 'start'
+                        current_el.modes.push mod.type
+                      if mod.action == 'end'
+                        current_el.modes = (i for i in current_el.modes when i != mod.type)
+    
+                results.push processNode(current_el)
+                results
+    
+              setMod = (pos, pref, type) ->
+                pos = pos[0] if $.isArray(pos)
+                mods[pos] = [] unless mods[pos]?
+                type = type[0] if $.isArray(type)
+                mods[pos].push 
+                  action: pref
+                  type: type
     
               text = ""
               mods = {}
+              textContainer = null
     
-              renderSVG = ->
-                # we only care about starts/ends of types we want to render
-                # this lets us remove deletions, for example
-                # for now, we'll render everything
-                # we want to do a stack and push formats onto the stack
-                # when we push/pop, we close the current style and start a new
-                # style based on the full stack
-                # this is somewhat like nroff
-                
               SVG (svgRoot) ->
-                texts = svgRoot.createText()
-    
-                setMod = (pos, pref, type) ->
-                  pos = pos[0] if $.isArray(pos)
-                  mods[pos] = [] unless mods[pos]?
-                  type = type[0] if $.isArray(type)
-                  mods[pos].push 
-                    action: pref
-                    type: type
+                textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
+                $(textContainer).attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", "100%")
+                svg = svgRoot.root()
+                svg.appendChild(textContainer)
     
                 app.withSource item.source[0], (content) ->
                   text = content.substr(item.start[0], item.end[0])
-                  highlightDS.setKeyRange item.start[0], item.end[0]
+                  #highlightDS.setKeyRange item.start[0], item.end[0]
                   # now we mark up the text as indicated by the highlights
                   # we want annotations that satisfy the following:
                   #
@@ -321,15 +367,36 @@
                     setMod hitem.start, 'start', hitem.type
                     setMod hitem.start, 'end', hitem.type
     
+                  nodes = compileText
+                    text: text
+                    mods: mods
+                    offset: item.start[0]
+    
+                  tags = {}
+                  bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+                  rootEl = document.createElement('div')
+                  $(rootEl).addClass("text-content")
+                  bodyEl.appendChild(rootEl)
+                  
+                  for node in nodes
+                    el = $("<span></span>")
+                    el.text(node.text)
+                    el.addClass(node.classes)
+                    $(rootEl).append(el)
+                    for mode in node.modes
+                      tags[mode] ?= []
+                      tags[mode].push el
+                  textContainer.appendChild(bodyEl)
+    
                   #svgText = svgRoot.textpath(texts, "#textpath-#{id}", texts.string(text))
                   #svgRoot.text(svgText)
-                  svgText = svgRoot.text(0, 100, text, { "font-size": "12pt" })
+                  #svgText = svgRoot.text(0, 100, text, { "font-size": "12pt" })
     
               rendering.update = (item) ->
                 # do nothing for now
               rendering.remove = ->
-                SVG (svgRoot) ->
-                  svgRoot.remove svgText
+                  SVG (svgRoot) ->
+                    svgRoot.remove textContainer
               rendering
 
     # # Controllers
