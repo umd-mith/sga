@@ -60,12 +60,10 @@
 <div class="well">
   <div class="row-fluid">
     <div class="span6" style="padding-left: 2%; text-align: center;">
-      <!-- div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div -->
-      <div class="canvas" data-types="Image" data-manifest="Manifest.json"></div>
+      <div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
     </div>
     <div class="span6" style="padding-left: 2%; text-align: center;">
-      <!-- div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div -->
-      <div class="canvas" data-types="Text" data-manifest="Manifest.json"></div>
+      <div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
     </div>
   </div>
 </div>
@@ -73,8 +71,7 @@
   $(function() {
     var builder = SGA.Reader.Application.SharedCanvas.builder({
     });
-    /* builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) { */
-    builder.onManifest("Manifest.json", function(app) {
+    builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) {
       var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
         dataView: app.dataView.sequences
       });
