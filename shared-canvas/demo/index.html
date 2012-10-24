@@ -10,6 +10,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/overrides.css" rel="stylesheet">
+    <link href="./css/shared-canvas.css" rel="stylesheet">
     <script src="js/mithgrid.min.js"></script>
     <script src="../lib/jquery.svg.min.js"></script>
     <script src="../dist/shared-canvas.js"></script>
@@ -59,10 +60,12 @@
 <div class="well">
   <div class="row-fluid">
     <div class="span6" style="padding-left: 2%; text-align: center;">
-      <div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
+      <!-- div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div -->
+      <div class="canvas" data-types="Image" data-manifest="Manifest.json"></div>
     </div>
     <div class="span6" style="padding-left: 2%; text-align: center;">
-      <div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
+      <!-- div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div -->
+      <div class="canvas" data-types="Text" data-manifest="Manifest.json"></div>
     </div>
   </div>
 </div>
@@ -70,7 +73,8 @@
   $(function() {
     var builder = SGA.Reader.Application.SharedCanvas.builder({
     });
-    builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) {
+    /* builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) { */
+    builder.onManifest("Manifest.json", function(app) {
       var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
         dataView: app.dataView.sequences
       });

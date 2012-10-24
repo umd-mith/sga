@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Wed Oct 24 08:08:01 2012 -0400
+# Date: Wed Oct 24 08:35:58 2012 -0400
 #
 # License TBD.
 #
@@ -233,13 +233,24 @@
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHGrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.Canvas"].concat(__slice.call(args), [function(that, container) {
-              var SVG, SVGHeight, SVGWidth, canvasHeight, canvasWidth, dataView, options, pendingSVGfctns, svgRoot, svgRootEl;
+              var SVG, SVGHeight, SVGWidth, canvasHeight, canvasWidth, dataView, highlightDS, options, pendingSVGfctns, svgRoot, svgRootEl;
               options = that.options;
+              highlightDS = null;
+              if (__indexOf.call(options.types || [], 'Text') >= 0) {
+                highlightDS = MITHGrid.Data.RangePager.initInstance({
+                  dataStore: MITHGrid.Data.View.initInstance({
+                    dataStore: that.dataView,
+                    type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
+                  }),
+                  leftExpressions: ['.end'],
+                  rightExpressions: ['.start']
+                });
+              }
               pendingSVGfctns = [];
               SVG = function(cb) {
                 return pendingSVGfctns.push(cb);
               };
-              svgRootEl = $("<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"\n     xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n     width=\"0\" height=\"0\" viewbG\n >\n</svg>");
+              svgRootEl = $("<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"\n     xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n     width=\"0\" height=\"0\"\n >\n</svg>");
               container.append(svgRootEl);
               svgRoot = $(svgRootEl).svg({
                 onLoad: function(svg) {
@@ -256,8 +267,8 @@
               });
               canvasWidth = null;
               canvasHeight = null;
-              SVGWidth = $(container).width() * 19 / 20;
               SVGHeight = null;
+              SVGWidth = $(container).width() * 19 / 20;
               MITHGrid.events.onWindowResize.addListener(function() {
                 SVGWidth = $(container).width() * 19 / 20;
                 if (canvasWidth != null) {
@@ -277,7 +288,8 @@
                       width: SVGWidth,
                       height: SVGHeight,
                       border: "0.5em solid #eeeeee",
-                      "border-radius": "5px"
+                      "border-radius": "5px",
+                      "background-color": "#ffffff"
                     });
                   });
                 }
@@ -318,7 +330,7 @@
                 return rendering;
               });
               return that.addLens('TextContent', function(container, view, model, id) {
-                var app, highlightDS, item, mods, renderSVG, rendering, svgText, text;
+                var app, compileText, item, mods, processNode, rendering, setMod, svgText, text, textContainer;
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
@@ -326,56 +338,136 @@
                 app = options.application();
                 item = model.getItem(id);
                 svgText = null;
-                highlightDS = MITHGrid.Data.RangePager.initInstance({
-                  dataStore: MITHGrid.Data.View.initInstance({
-                    dataStore: model,
-                    type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
-                  }),
-                  leftExpressions: ['.end'],
-                  rightExpressions: ['.start']
-                });
-                highlightDS.events.onModelChange.addListener(function(m, ids) {
-                  return console.log("Highlights changed: ", ids);
-                });
+                processNode = function(info) {
+                  var classes;
+                  classes = [];
+                  if (__indexOf.call(info.modes, 'LineAnnotation') >= 0) {
+                    classes.push('line');
+                  }
+                  if (__indexOf.call(info.modes, 'AdditionAnnotation') >= 0) {
+                    classes.push('addition');
+                  }
+                  if (__indexOf.call(info.modes, 'DeletionAnnotation') >= 0) {
+                    classes.push('deletion');
+                  }
+                  if (classes.length === 0) {
+                    classes.push("text");
+                  }
+                  return {
+                    text: info.acc,
+                    classes: classes.join(' '),
+                    modes: info.modes
+                  };
+                };
+                compileText = function(info) {
+                  var current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref, _ref1;
+                  text = info.text;
+                  mods = info.mods;
+                  offset = info.offset;
+                  current_el = {
+                    acc: '',
+                    modes: []
+                  };
+                  results = [];
+                  for (pos = _i = 0, _ref = text.length; 0 <= _ref ? _i < _ref : _i > _ref; pos = 0 <= _ref ? ++_i : --_i) {
+                    if (!(mods[pos + offset] != null)) {
+                      current_el.acc += text[pos];
+                    } else {
+                      if (current_el.acc !== '') {
+                        results.push(processNode(current_el));
+                      }
+                      current_el.acc = '';
+                      _ref1 = mods[pos + offset];
+                      for (_j = 0, _len = _ref1.length; _j < _len; _j++) {
+                        mod = _ref1[_j];
+                        if (mod.action === 'start') {
+                          current_el.modes.push(mod.type);
+                        }
+                        if (mod.action === 'end') {
+                          current_el.modes = (function() {
+                            var _k, _len1, _ref2, _results;
+                            _ref2 = current_el.modes;
+                            _results = [];
+                            for (_k = 0, _len1 = _ref2.length; _k < _len1; _k++) {
+                              i = _ref2[_k];
+                              if (i !== mod.type) {
+                                _results.push(i);
+                              }
+                            }
+                            return _results;
+                          })();
+                        }
+                      }
+                    }
+                  }
+                  results.push(processNode(current_el));
+                  return results;
+                };
+                setMod = function(pos, pref, type) {
+                  if ($.isArray(pos)) {
+                    pos = pos[0];
+                  }
+                  if (mods[pos] == null) {
+                    mods[pos] = [];
+                  }
+                  if ($.isArray(type)) {
+                    type = type[0];
+                  }
+                  return mods[pos].push({
+                    action: pref,
+                    type: type
+                  });
+                };
                 text = "";
                 mods = {};
-                renderSVG = function() {};
+                textContainer = null;
                 SVG(function(svgRoot) {
-                  var setMod, texts;
-                  texts = svgRoot.createText();
-                  setMod = function(pos, pref, type) {
-                    if ($.isArray(pos)) {
-                      pos = pos[0];
-                    }
-                    if (mods[pos] == null) {
-                      mods[pos] = [];
-                    }
-                    if ($.isArray(type)) {
-                      type = type[0];
-                    }
-                    return mods[pos].push({
-                      action: pref,
-                      type: type
-                    });
-                  };
+                  var svg;
+                  textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
+                  $(textContainer).attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", "100%");
+                  svg = svgRoot.root();
+                  svg.appendChild(textContainer);
                   return app.withSource(item.source[0], function(content) {
+                    var bodyEl, el, mode, node, nodes, rootEl, tags, _i, _j, _len, _len1, _ref, _ref1;
                     text = content.substr(item.start[0], item.end[0]);
-                    highlightDS.setKeyRange(item.start[0], item.end[0]);
                     highlightDS.visit(function(id) {
                       var hitem;
                       hitem = highlightDS.getItem(id);
                       setMod(hitem.start, 'start', hitem.type);
                       return setMod(hitem.start, 'end', hitem.type);
                     });
-                    return svgText = svgRoot.text(0, 100, text, {
-                      "font-size": "12pt"
+                    nodes = compileText({
+                      text: text,
+                      mods: mods,
+                      offset: item.start[0]
                     });
+                    tags = {};
+                    bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body');
+                    rootEl = document.createElement('div');
+                    $(rootEl).addClass("text-content");
+                    bodyEl.appendChild(rootEl);
+                    for (_i = 0, _len = nodes.length; _i < _len; _i++) {
+                      node = nodes[_i];
+                      el = $("<span></span>");
+                      el.text(node.text);
+                      el.addClass(node.classes);
+                      $(rootEl).append(el);
+                      _ref = node.modes;
+                      for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
+                        mode = _ref[_j];
+                        if ((_ref1 = tags[mode]) == null) {
+                          tags[mode] = [];
+                        }
+                        tags[mode].push(el);
+                      }
+                    }
+                    return textContainer.appendChild(bodyEl);
                   });
                 });
                 rendering.update = function(item) {};
                 rendering.remove = function() {
                   return SVG(function(svgRoot) {
-                    return svgRoot.remove(svgText);
+                    return svgRoot.remove(textContainer);
                   });
                 };
                 return rendering;
