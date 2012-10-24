@@ -44,6 +44,7 @@ SGAReader.namespace "Data", (Data) ->
       "http://www.w3.org/ns/openannotation/extension/": "oax"
       "http://www.openarchives.org/ore/terms/": "ore"
       "http://www.shelleygodwinarchive.org/ns/1#": "sga"
+      "http://www.shelleygodwinarchive.org/ns1#": "sga"
 
     Manifest.initInstance = (args...) ->
       MITHGrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
