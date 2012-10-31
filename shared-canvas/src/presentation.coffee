@@ -240,7 +240,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
               
               for node in nodes
                 el = $("<#{node.type} />")
-                if node.type != "br"
+                if node.type == "br"
+                  $(rootEl).append($("<span class='linebreak'></span>"))
+                else
                   el.text(node.text)
                 el.addClass(node.classes)
                 $(rootEl).append(el)
