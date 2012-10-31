@@ -3,5 +3,11 @@
   padding: 3px;
 }
 
-.text-content .line {
+.text-content .deletion {
+  font-weight: lighter;
+  opacity: 0.75;
+}
+
+.text-content .addition {
+  font-weight: bolder;
 }
