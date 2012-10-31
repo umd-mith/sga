@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Wed Oct 24 13:11:47 2012 -0400
+# Date: Wed Oct 24 15:32:00 2012 -0400
 #
 # License TBD.
 #
@@ -469,7 +469,9 @@
                     for (_j = 0, _len1 = nodes.length; _j < _len1; _j++) {
                       node = nodes[_j];
                       el = $("<" + node.type + " />");
-                      if (node.type !== "br") {
+                      if (node.type === "br") {
+                        $(rootEl).append($("<span class='linebreak'></span>"));
+                      } else {
                         el.text(node.text);
                       }
                       el.addClass(node.classes);
