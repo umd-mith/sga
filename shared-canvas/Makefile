@@ -62,6 +62,7 @@ ${SC_C}: ${MODULES} | ${DIST_DIR}
 
 ${SC}: ${SC_C}
 		@@coffee -c ${SC_C} && \
+		  mkdir -p ../perl/SGA-SharedCanvas/root/static/js/ && \
 		  cp ${SC} ../perl/SGA-SharedCanvas/root/static/js/
 
 min: shared-canvas ${SC_MIN}
@@ -81,5 +82,10 @@ clean:
 		@@rm -rf ${DIST_DIR}
 
 distclean: clean
+
+demo/js/shared-canvas.min.js:
+		cp ${SC_MIN} ./demo/js/
+
+demo: demo/js/shared-canvas.min.js
 
 .PHONY: all shared-canvas min clean distclean core
