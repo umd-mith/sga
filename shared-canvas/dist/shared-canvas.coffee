@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Wed Oct 24 15:32:00 2012 -0400
+# Date: Mon Nov 26 18:54:17 2012 +0000
 #
 # License TBD.
 #
