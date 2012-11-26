@@ -62,6 +62,7 @@ ${SC_C}: ${MODULES} | ${DIST_DIR}
 
 ${SC}: ${SC_C}
 		@@coffee -c ${SC_C} && \
+		  mkdir -p ../perl/SGA-SharedCanvas/root/static/js/ && \
 		  cp ${SC} ../perl/SGA-SharedCanvas/root/static/js/
 
 min: shared-canvas ${SC_MIN}
