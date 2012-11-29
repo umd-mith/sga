@@ -5,7 +5,8 @@
 
 .text-content .deletion {
   font-weight: lighter;
-  color: #ccc;
+  color: #888;
+  text-decoration: line-through;
 }
 
 .text-content .addition {
