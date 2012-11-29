@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Nov 26 18:54:17 2012 +0000
+# Date: Mon Nov 26 11:34:38 2012 -0800
 #
 # License TBD.
 #
@@ -30,17 +30,17 @@
               files = [ files ] unless $.isArray(files)
               for file in files 
                 do (file) ->
-                  next if fileContents[file]? or loadingFiles[file]?
-                  loadingFiles[file] = [ ]
-                  $.ajax
-                    url: file
-                    type: 'GET'
-                    processData: false
-                    success: (data) ->
-                      c = data.documentElement.textContent
-                      fileContents[file] = c
-                      f(c) for f in loadingFiles[file]
-                      delete loadingFiles[file]
+                  if file? and !fileContents[file]? and !loadingFiles[file]?
+                    loadingFiles[file] = [ ]
+                    $.ajax
+                      url: file
+                      type: 'GET'
+                      processData: false
+                      success: (data) ->
+                        c = data.documentElement.textContent
+                        fileContents[file] = c
+                        f(c) for f in loadingFiles[file]
+                        delete loadingFiles[file]
     
             that.withFile = (file, cb) ->
               if fileContents[file]?
@@ -69,6 +69,8 @@
     
             data = MITHGrid.Data.Store.initInstance()
     
+            that.size = -> data.size()
+    
             loadedUrls = []
     
             importFromURL = (url, cb) ->
@@ -76,6 +78,8 @@
                 cb()
                 return
               loadedUrls.push url
+              that.addItemsToProcess 1
+              
               $.ajax
                 url: url
                 type: 'GET'
@@ -90,9 +94,21 @@
               # we care about certain namespaces - others we ignore
               # those we care about, we translate for datastore
               # {nsPrefix}-{localName}
-              syncer = MITHGrid.initSynchronizer cb
               items = []
-              for s, ps of json
+              syncer = MITHGrid.initSynchronizer ->
+                that.addItemsProcessed 1
+                setTimeout ->
+                  for item in items
+                    if data.contains(item.id)
+                      data.updateItems [ item ]
+                    else
+                      data.loadItems [ item ]
+                  cb() if cb?
+                , 0
+              subjects = (s for s of json when json.hasOwnProperty(s))
+              that.addItemsToProcess subjects.length
+              syncer.process subjects, (s) ->
+                ps = json[s]
                 item =
                   id: s
                 for p, os of ps
@@ -101,9 +117,8 @@
                      for o in os
                        if o.type == "uri"
                          for ns, prefix of NS
-                           if prefix in [ "sc", "sga", "oa", "oax" ]
-                             if o.value[0...ns.length] == ns
-                               values.push prefix + o.value.substr(ns.length)
+                           if o.value[0...ns.length] == ns
+                             values.push prefix + o.value.substr(ns.length)
                      item.type = values
                    else
                      for o in os
@@ -127,19 +142,15 @@
                            item[pname] = values
                 if !item.type? or item.type.length == 0
                   item.type = 'Blank'
-    
+     
                 if item.oreisDescribedBy?.length > 0
                   for url in item.oreisDescribedBy
                     syncer.increment()
                     importFromURL url, syncer.decrement
                 else
                   items.push item 
+                that.addItemsProcessed 1
     
-              for item in items
-                if data.contains(item.id)
-                  data.updateItems [ item ]
-                else
-                  data.loadItems [ item ]
               syncer.done()
     
             itemsWithType = (type) ->
@@ -364,8 +375,7 @@
                 svg = svgRoot.root()
                 svg.appendChild(textContainer)
     
-    
-                app.withSource item.source[0], (content) ->
+                app.withSource item.source?[0], (content) ->
                   text = content.substr(item.start[0], item.end[0])
                   #highlightDS.setKeyRange item.start[0], item.end[0]
                   # now we mark up the text as indicated by the highlights
@@ -430,6 +440,23 @@
     # # Controllers
     # # Component
     SGAReader.namespace "Component", (Component) ->
+      Component.namespace "ProgressBar", (ProgressBar) ->
+        ProgressBar.initInstance = (args...) ->
+          MITHGrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
+            that.events.onNumeratorChange.addListener (n) ->
+              percent = parseInt(100 * n / that.getDenominator(), 10)
+              percent = 100 if percent > 100
+              $(container).find(".bar").css("width", percent + "%")
+            that.events.onDenominatorChange.addListener (d) ->
+              percent = parseInt(100 * that.getNumerator() / d, 10)
+              percent = 100 if percent > 100
+              $(container).find(".bar").css("width", percent + "%")
+    
+            that.show = -> 
+              $(container).show()
+            that.hide = -> 
+              $(container).hide()
+    
       Component.namespace "SequenceSelector", (SequenceSelector) ->
         SequenceSelector.initInstance = (args...) ->
           MITHGrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
@@ -459,6 +486,15 @@
     
             presentations = []
             manifestData = SGA.Reader.Data.Manifest.initInstance()
+            that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
+            that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
+            that.getItemsProcessed = manifestData.getItemsProcessed
+            that.getItemsToProcess = manifestData.getItemsToProcess
+            that.setItemsProcessed = manifestData.setItemsProcessed
+            that.setItemsToProcess = manifestData.setItemsToProcess
+            that.addItemsProcessed = manifestData.addItemsProcessed
+            that.addItemsToProcess = manifestData.addItemsToProcess
+    
             textSource = SGA.Reader.Data.TextStore.initInstance()
     
             that.withSource = (file, cb) ->
@@ -481,7 +517,9 @@
             that.events.onSequenceChange.addListener (s) ->
               currentSequence = s
               seq = that.dataStore.data.getItem currentSequence
-              p = seq.sequence.indexOf that.getCanvas()
+              p = 0
+              if seq?.sequence?
+                p = seq.sequence.indexOf that.getCanvas()
               p = 0 if p < 0
               that.setPosition p
                 
@@ -505,8 +543,15 @@
                 # if multiple sequences, we want to add a control to allow
                 # selection
                 items = []
+                syncer = MITHGrid.initSynchronizer ->
+                  that.addItemsToProcess 1
+                  that.dataStore.data.loadItems items, ->
+                    that.addItemsProcessed 1
+    
                 canvases = manifestData.getCanvases()
-                for id in canvases
+                that.addItemsToProcess canvases.length
+                syncer.process canvases, (id) ->
+                  that.addItemsProcessed 1
                   mitem = manifestData.getItem id
                   item = 
                     id: id
@@ -515,7 +560,10 @@
                     height: parseInt(mitem.exifheight?[0], 10)
                     label: mitem.dctitle || mitem.rdfslabel
                   items.push item
-                for id in manifestData.getSequences()
+    
+                that.addItemsToProcess manifestData.getSequences().length
+                syncer.process manifestData.getSequences(), (id) ->
+                  that.addItemsProcessed 1
                   sitem = manifestData.getItem id
                   item =
                     id: id
@@ -524,14 +572,18 @@
     
                   # walk list of canvases
                   seq = []
-                  while manifestData.contains(sitem.rdffirst?[0])
+                  seq.push sitem.rdffirst[0]
+                  sitem = manifestData.getItem sitem.rdfrest[0]
+                  while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
                     seq.push sitem.rdffirst[0]
                     sitem = manifestData.getItem sitem.rdfrest[0]
                   item.sequence = seq
                   items.push item
     
                 # now get the annotations we know something about handling
-                for id in manifestData.getAnnotations()
+                that.addItemsToProcess manifestData.getAnnotations().length
+                syncer.process manifestData.getAnnotations(), (id) ->
+                  that.addItemsProcessed 1
                   aitem = manifestData.getItem id
     
                   # for now, we *assume* that the content annotation is coming
@@ -547,8 +599,8 @@
                       target: aitem.oahasTarget
                       type: "TextContent"
                       source: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin[0], 10)
-                      end: parseInt(textSpan.oaxend[0], 10)
+                      start: parseInt(textSpan.oaxbegin?[0], 10)
+                      end: parseInt(textSpan.oaxend?[0], 10)
     
                   if "sgaLineAnnotation" in aitem.type
                     # no body for now
@@ -559,8 +611,8 @@
                     items.push
                       id: aitem.id
                       target: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin[0], 10)
-                      end: parseInt(textSpan.oaxend[0], 10)
+                      start: parseInt(textSpan.oaxbegin?[0], 10)
+                      end: parseInt(textSpan.oaxend?[0], 10)
                       type: "LineAnnotation"
     
                   if "sgaDeletionAnnotation" in aitem.type
@@ -572,8 +624,8 @@
                     items.push
                       id: aitem.id
                       target: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin[0], 10)
-                      end: parseInt(textSpan.oaxend[0], 10)
+                      start: parseInt(textSpan.oaxbegin?[0], 10)
+                      end: parseInt(textSpan.oaxend?[0], 10)
                       type: "DeletionAnnotation"
     
                   if "sgaAdditionAnnotation" in aitem.type
@@ -585,8 +637,8 @@
                     items.push
                       id: aitem.id
                       target: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin[0], 10)
-                      end: parseInt(textSpan.oaxend[0], 10)
+                      start: parseInt(textSpan.oaxbegin?[0], 10)
+                      end: parseInt(textSpan.oaxend?[0], 10)
                       type: "AdditionAnnotation"
     
                   if "scImageAnnotation" in aitem.type
@@ -599,17 +651,52 @@
                       image: imgitem.oahasSource || aitem.oahasBody
                       type: "Image"
     
-                that.dataStore.data.loadItems items
+                syncer.done()
     
         # we look for <div class="canvas" data-types="..." data-manifest="..."></div>
         # in the page and instantiate the application
         # each application handles a single manifest, but multiple canvases
         SharedCanvas.builder = (config) ->
-          that = {
+          that =
             manifests: {}
-          }
     
           manifestCallbacks = {}
+    
+          updateProgressTracker = ->
+          updateProgressTrackerVisibility = ->
+    
+          if config.progressTracker?
+            updateProgressTracker = ->
+              # go through and calculate all of the unfinished items
+              n = 0
+              d = 0
+              for m, obj of that.manifests
+                #if obj.getItemsToProcess() > obj.getItemsProcessed()
+                n += obj.getItemsProcessed()
+                d += obj.getItemsToProcess()
+              config.progressTracker.setNumerator(n)
+              config.progressTracker.setDenominator(d or 1)
+    
+            uptv = null
+            uptvTimer = 1000
+    
+            updateProgressTrackerVisibility = ->
+              if uptv?
+                uptvTimer = 500
+              else
+                uptv = ->
+                  for m, obj of that.manifests
+                    if obj.getItemsToProcess() > obj.getItemsProcessed()
+                      config.progressTracker.show()
+                      uptvTimer /= 2
+                      uptvTimer = 500 if uptvTimer < 500
+                      setTimeout uptv, uptvTimer
+                      return
+                  config.progressTracker.hide() if uptvTimer > 500
+                  uptvTimer *= 2
+                  uptvTimer = 10000 if uptvTimer > 10000
+                  setTimeout uptv, uptvTimer
+                uptv()
     
           that.onManifest = (url, cb) ->
             if that.manifests[url]?
@@ -631,6 +718,10 @@
                   cbs = manifestCallbacks[manifestUrl] || []
                   cb(manifest) for cb in cbs
                   delete manifestCallbacks[manifestUrl]
+                manifest.events.onItemsToProcessChange.addListener updateProgressTracker
+                manifest.events.onItemsProcessedChange.addListener updateProgressTracker
+                updateProgressTrackerVisibility()
+                  
               manifest.run()
               types = $(el).data('types')?.split(/\s*,\s*/)
               that.onManifest manifestUrl, (manifest) ->
@@ -675,9 +766,34 @@ MITHGrid.defaults 'SGA.Reader.Component.SequenceSelector',
     Sequence:
       is: 'rw'
 
+MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
+  variables:
+    Numerator:
+      is: 'rw'
+      default: 0
+    Denominator:
+      is: 'rw'
+      default: 1
+  viewSetup: """
+    <div class="progress">
+      <div class="bar" style="width: 0%;"></div>
+    </div>
+  """
+
 MITHGrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas:
       is: 'rw'
     Scale:
       is: 'rw'
+
+MITHGrid.defaults 'SGA.Reader.Data.Manifest',
+  variables:
+    ItemsToProcess:
+      is: 'rw'
+      isa: 'numeric'
+      default: 0
+    ItemsProcessed:
+      is: 'rw'
+      isa: 'numeric'
+      default: 0
