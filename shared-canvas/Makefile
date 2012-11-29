@@ -83,8 +83,9 @@ clean:
 
 distclean: clean
 
-demo/js/shared-canvas.min.js:
+demo/js/shared-canvas.min.js: ${SC_MIN} ${SC}
 		cp ${SC_MIN} ./demo/js/
+		cp ${SC} ./demo/js/
 
 demo: demo/js/shared-canvas.min.js
 

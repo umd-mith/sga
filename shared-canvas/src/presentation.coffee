@@ -199,8 +199,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             svg = svgRoot.root()
             svg.appendChild(textContainer)
 
-
-            app.withSource item.source[0], (content) ->
+            app.withSource item.source?[0], (content) ->
               text = content.substr(item.start[0], item.end[0])
               #highlightDS.setKeyRange item.start[0], item.end[0]
               # now we mark up the text as indicated by the highlights

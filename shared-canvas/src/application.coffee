@@ -7,6 +7,15 @@ SGAReader.namespace "Application", (Application) ->
 
         presentations = []
         manifestData = SGA.Reader.Data.Manifest.initInstance()
+        that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
+        that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
+        that.getItemsProcessed = manifestData.getItemsProcessed
+        that.getItemsToProcess = manifestData.getItemsToProcess
+        that.setItemsProcessed = manifestData.setItemsProcessed
+        that.setItemsToProcess = manifestData.setItemsToProcess
+        that.addItemsProcessed = manifestData.addItemsProcessed
+        that.addItemsToProcess = manifestData.addItemsToProcess
+
         textSource = SGA.Reader.Data.TextStore.initInstance()
 
         that.withSource = (file, cb) ->
@@ -29,7 +38,9 @@ SGAReader.namespace "Application", (Application) ->
         that.events.onSequenceChange.addListener (s) ->
           currentSequence = s
           seq = that.dataStore.data.getItem currentSequence
-          p = seq.sequence.indexOf that.getCanvas()
+          p = 0
+          if seq?.sequence?
+            p = seq.sequence.indexOf that.getCanvas()
           p = 0 if p < 0
           that.setPosition p
             
@@ -53,8 +64,15 @@ SGAReader.namespace "Application", (Application) ->
             # if multiple sequences, we want to add a control to allow
             # selection
             items = []
+            syncer = MITHGrid.initSynchronizer ->
+              that.addItemsToProcess 1
+              that.dataStore.data.loadItems items, ->
+                that.addItemsProcessed 1
+
             canvases = manifestData.getCanvases()
-            for id in canvases
+            that.addItemsToProcess canvases.length
+            syncer.process canvases, (id) ->
+              that.addItemsProcessed 1
               mitem = manifestData.getItem id
               item = 
                 id: id
@@ -63,7 +81,10 @@ SGAReader.namespace "Application", (Application) ->
                 height: parseInt(mitem.exifheight?[0], 10)
                 label: mitem.dctitle || mitem.rdfslabel
               items.push item
-            for id in manifestData.getSequences()
+
+            that.addItemsToProcess manifestData.getSequences().length
+            syncer.process manifestData.getSequences(), (id) ->
+              that.addItemsProcessed 1
               sitem = manifestData.getItem id
               item =
                 id: id
@@ -72,14 +93,18 @@ SGAReader.namespace "Application", (Application) ->
 
               # walk list of canvases
               seq = []
-              while manifestData.contains(sitem.rdffirst?[0])
+              seq.push sitem.rdffirst[0]
+              sitem = manifestData.getItem sitem.rdfrest[0]
+              while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
                 seq.push sitem.rdffirst[0]
                 sitem = manifestData.getItem sitem.rdfrest[0]
               item.sequence = seq
               items.push item
 
             # now get the annotations we know something about handling
-            for id in manifestData.getAnnotations()
+            that.addItemsToProcess manifestData.getAnnotations().length
+            syncer.process manifestData.getAnnotations(), (id) ->
+              that.addItemsProcessed 1
               aitem = manifestData.getItem id
 
               # for now, we *assume* that the content annotation is coming
@@ -95,8 +120,8 @@ SGAReader.namespace "Application", (Application) ->
                   target: aitem.oahasTarget
                   type: "TextContent"
                   source: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin[0], 10)
-                  end: parseInt(textSpan.oaxend[0], 10)
+                  start: parseInt(textSpan.oaxbegin?[0], 10)
+                  end: parseInt(textSpan.oaxend?[0], 10)
 
               if "sgaLineAnnotation" in aitem.type
                 # no body for now
@@ -107,8 +132,8 @@ SGAReader.namespace "Application", (Application) ->
                 items.push
                   id: aitem.id
                   target: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin[0], 10)
-                  end: parseInt(textSpan.oaxend[0], 10)
+                  start: parseInt(textSpan.oaxbegin?[0], 10)
+                  end: parseInt(textSpan.oaxend?[0], 10)
                   type: "LineAnnotation"
 
               if "sgaDeletionAnnotation" in aitem.type
@@ -120,8 +145,8 @@ SGAReader.namespace "Application", (Application) ->
                 items.push
                   id: aitem.id
                   target: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin[0], 10)
-                  end: parseInt(textSpan.oaxend[0], 10)
+                  start: parseInt(textSpan.oaxbegin?[0], 10)
+                  end: parseInt(textSpan.oaxend?[0], 10)
                   type: "DeletionAnnotation"
 
               if "sgaAdditionAnnotation" in aitem.type
@@ -133,8 +158,8 @@ SGAReader.namespace "Application", (Application) ->
                 items.push
                   id: aitem.id
                   target: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin[0], 10)
-                  end: parseInt(textSpan.oaxend[0], 10)
+                  start: parseInt(textSpan.oaxbegin?[0], 10)
+                  end: parseInt(textSpan.oaxend?[0], 10)
                   type: "AdditionAnnotation"
 
               if "scImageAnnotation" in aitem.type
@@ -147,17 +172,52 @@ SGAReader.namespace "Application", (Application) ->
                   image: imgitem.oahasSource || aitem.oahasBody
                   type: "Image"
 
-            that.dataStore.data.loadItems items
+            syncer.done()
 
     # we look for <div class="canvas" data-types="..." data-manifest="..."></div>
     # in the page and instantiate the application
     # each application handles a single manifest, but multiple canvases
     SharedCanvas.builder = (config) ->
-      that = {
+      that =
         manifests: {}
-      }
 
       manifestCallbacks = {}
+
+      updateProgressTracker = ->
+      updateProgressTrackerVisibility = ->
+
+      if config.progressTracker?
+        updateProgressTracker = ->
+          # go through and calculate all of the unfinished items
+          n = 0
+          d = 0
+          for m, obj of that.manifests
+            #if obj.getItemsToProcess() > obj.getItemsProcessed()
+            n += obj.getItemsProcessed()
+            d += obj.getItemsToProcess()
+          config.progressTracker.setNumerator(n)
+          config.progressTracker.setDenominator(d or 1)
+
+        uptv = null
+        uptvTimer = 1000
+
+        updateProgressTrackerVisibility = ->
+          if uptv?
+            uptvTimer = 500
+          else
+            uptv = ->
+              for m, obj of that.manifests
+                if obj.getItemsToProcess() > obj.getItemsProcessed()
+                  config.progressTracker.show()
+                  uptvTimer /= 2
+                  uptvTimer = 500 if uptvTimer < 500
+                  setTimeout uptv, uptvTimer
+                  return
+              config.progressTracker.hide() if uptvTimer > 500
+              uptvTimer *= 2
+              uptvTimer = 10000 if uptvTimer > 10000
+              setTimeout uptv, uptvTimer
+            uptv()
 
       that.onManifest = (url, cb) ->
         if that.manifests[url]?
@@ -179,6 +239,10 @@ SGAReader.namespace "Application", (Application) ->
               cbs = manifestCallbacks[manifestUrl] || []
               cb(manifest) for cb in cbs
               delete manifestCallbacks[manifestUrl]
+            manifest.events.onItemsToProcessChange.addListener updateProgressTracker
+            manifest.events.onItemsProcessedChange.addListener updateProgressTracker
+            updateProgressTrackerVisibility()
+              
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
           that.onManifest manifestUrl, (manifest) ->
