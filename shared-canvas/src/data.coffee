@@ -13,17 +13,17 @@ SGAReader.namespace "Data", (Data) ->
           files = [ files ] unless $.isArray(files)
           for file in files 
             do (file) ->
-              next if fileContents[file]? or loadingFiles[file]?
-              loadingFiles[file] = [ ]
-              $.ajax
-                url: file
-                type: 'GET'
-                processData: false
-                success: (data) ->
-                  c = data.documentElement.textContent
-                  fileContents[file] = c
-                  f(c) for f in loadingFiles[file]
-                  delete loadingFiles[file]
+              if file? and !fileContents[file]? and !loadingFiles[file]?
+                loadingFiles[file] = [ ]
+                $.ajax
+                  url: file
+                  type: 'GET'
+                  processData: false
+                  success: (data) ->
+                    c = data.documentElement.textContent
+                    fileContents[file] = c
+                    f(c) for f in loadingFiles[file]
+                    delete loadingFiles[file]
 
         that.withFile = (file, cb) ->
           if fileContents[file]?
@@ -52,6 +52,8 @@ SGAReader.namespace "Data", (Data) ->
 
         data = MITHGrid.Data.Store.initInstance()
 
+        that.size = -> data.size()
+
         loadedUrls = []
 
         importFromURL = (url, cb) ->
@@ -59,6 +61,8 @@ SGAReader.namespace "Data", (Data) ->
             cb()
             return
           loadedUrls.push url
+          that.addItemsToProcess 1
+          
           $.ajax
             url: url
             type: 'GET'
@@ -73,9 +77,21 @@ SGAReader.namespace "Data", (Data) ->
           # we care about certain namespaces - others we ignore
           # those we care about, we translate for datastore
           # {nsPrefix}-{localName}
-          syncer = MITHGrid.initSynchronizer cb
           items = []
-          for s, ps of json
+          syncer = MITHGrid.initSynchronizer ->
+            that.addItemsProcessed 1
+            setTimeout ->
+              for item in items
+                if data.contains(item.id)
+                  data.updateItems [ item ]
+                else
+                  data.loadItems [ item ]
+              cb() if cb?
+            , 0
+          subjects = (s for s of json when json.hasOwnProperty(s))
+          that.addItemsToProcess subjects.length
+          syncer.process subjects, (s) ->
+            ps = json[s]
             item =
               id: s
             for p, os of ps
@@ -84,9 +100,8 @@ SGAReader.namespace "Data", (Data) ->
                  for o in os
                    if o.type == "uri"
                      for ns, prefix of NS
-                       if prefix in [ "sc", "sga", "oa", "oax" ]
-                         if o.value[0...ns.length] == ns
-                           values.push prefix + o.value.substr(ns.length)
+                       if o.value[0...ns.length] == ns
+                         values.push prefix + o.value.substr(ns.length)
                  item.type = values
                else
                  for o in os
@@ -110,19 +125,15 @@ SGAReader.namespace "Data", (Data) ->
                        item[pname] = values
             if !item.type? or item.type.length == 0
               item.type = 'Blank'
-
+ 
             if item.oreisDescribedBy?.length > 0
               for url in item.oreisDescribedBy
                 syncer.increment()
                 importFromURL url, syncer.decrement
             else
               items.push item 
+            that.addItemsProcessed 1
 
-          for item in items
-            if data.contains(item.id)
-              data.updateItems [ item ]
-            else
-              data.loadItems [ item ]
           syncer.done()
 
         itemsWithType = (type) ->

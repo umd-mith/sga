@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Shared Canvas</title>
     <script src="./js/jquery.js"></script>
-    <script src="js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="./js/jquery-ui-1.8.22.custom.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/overrides.css" rel="stylesheet">
     <link href="./css/shared-canvas.css" rel="stylesheet">
-    <script src="js/mithgrid.min.js"></script>
+    <script src="./js/mithgrid.min.js"></script>
     <script src="./js/jquery.svg.min.js"></script>
-    <script src="./js/shared-canvas.min.js"></script>
+    <script src="./js/shared-canvas.js"></script>
     <style>
       /* body { padding-top: 60px; } */
     </style>
@@ -52,6 +52,7 @@
     &nbsp;
     <label>Canvas:</label>
     <span id="canvas-label"></span>
+    <div id="loading-progress" style="margin: 10px; margin-left: 30px; margin-right: 30px;"></div>
 <br/>
 <input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" />
 </form>
@@ -61,27 +62,37 @@
   <div class="row-fluid">
     <div class="span6" style="padding-left: 2%; text-align: center;">
       <div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
+      <!-- div class="canvas" data-types="Image" data-manifest="./Manifest.json"></div -->
     </div>
     <div class="span6" style="padding-left: 2%; text-align: center;">
       <div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
+      <!-- div class="canvas" data-types="Text" data-manifest="./Manifest.json"></div -->
     </div>
   </div>
 </div>
 <script type="text/javascript">
   $(function() {
+
     var builder = SGA.Reader.Application.SharedCanvas.builder({
+      progressTracker: SGA.Reader.Component.ProgressBar.initInstance(
+                           $("#loading-progress")
+                       )
     });
-    builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) {
+
+    /* builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) { */
+    builder.onManifest("./Manifest.json", function(app) { 
       var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
         dataView: app.dataView.sequences
       });
       filter.events.onSequenceChange.addListener( app.setSequence );
       app.events.onSequenceChange.addListener( function(s) {
         var seq = app.dataStore.data.getItem(s);
-        $("#page-location").attr({
-          min: 0,
-          max: seq.sequence.length-1
-        });
+        if(seq != null && seq.sequence != null) {
+          $("#page-location").attr({
+            min: 0,
+            max: seq.sequence.length-1
+          });
+        }
       });
       app.setSequence( filter.getSequence() );
       app.events.onCanvasChange.addListener(function(c) {
@@ -106,7 +117,7 @@
       $("#next-page").click(function() {
         var p = app.getPosition();
         var seq = app.dataStore.data.getItem(app.getSequence());
-        if(p < seq.sequence.length-1) {
+        if(seq != null && seq.sequence != null && p < seq.sequence.length-1) {
           p += 1;
           app.setPosition(p);
         }
@@ -116,7 +127,9 @@
       });
       $("#last-page").click(function() {
         var seq = app.dataStore.data.getItem(app.getSequence());
-        app.setPosition(seq.sequence.length-1);
+        if(seq != null && seq.sequence != null) {
+          app.setPosition(seq.sequence.length-1);
+        }
       });
       app.events.onPositionChange.addListener(function(p) {
         $("#page-location").val(p);
@@ -129,7 +142,7 @@
           $("#first-page").addClass("disabled");
         }
         var seq = app.dataStore.data.getItem(app.getSequence());
-        if(p < seq.sequence.length-1) {
+        if(seq != null && seq.sequence != null && p < seq.sequence.length-1) {
           $("#next-page").removeClass("disabled");
           $("#last-page").removeClass("disabled");
         }
