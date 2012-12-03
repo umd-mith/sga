@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Nov 26 11:34:38 2012 -0800
+# Date: Mon Dec 3 08:49:54 2012 -0500
 #
 # License TBD.
 #
@@ -280,14 +280,18 @@
               # for now, we assume a full mapping - image to full canvas/container
               svgImage = null
               SVG (svgRoot) ->
-                svgImage = svgRoot.image(0, 0, "100%", "100%", item.image?[0], {
-                  preserveAspectRatio: 'none'
-                })
+                if item.image?[0]?
+                  svgImage = svgRoot.image(0, 0, "100%", "100%", item.image?[0], {
+                    preserveAspectRatio: 'none'
+                  })
+                else
+                  svgImage = null
               rendering.update = (item) ->
-                # do nothing for now
+                # do nothing for now - eventually, update image
               rendering.remove = ->
                 SVG (svgRoot) ->
-                  svgRoot.remove svgImage
+                  if svgImage?
+                    svgRoot.remove svgImage
               rendering
     
             that.addLens 'TextContent', (container, view, model, id) ->
@@ -338,10 +342,7 @@
                     br_pushed = false unless text[pos].match(/^\s+$/)
                     current_el.acc += text[pos]
                   else 
-                    if current_el.acc.match(/^\s*$/)
-                      current_el.acc = ''
-                    else
-                      results.push processNode(current_el)
+                    results.push processNode(current_el)
       
                     current_el.acc = text[pos]
                     for mod in mods[pos+offset]
@@ -413,10 +414,12 @@
                   $(rootEl).addClass("text-content")
                   bodyEl.appendChild(rootEl)
                   
+                  numberOfLines = 0
                   for node in nodes
                     el = $("<#{node.type} />")
                     if node.type == "br"
                       $(rootEl).append($("<span class='linebreak'></span>"))
+                      numberOfLines += 1
                     else
                       el.text(node.text)
                     el.addClass(node.classes)
@@ -424,11 +427,10 @@
                     for mode in node.modes
                       tags[mode] ?= []
                       tags[mode].push el
+                  if numberOfLines > 24
+                    # make the font height fit into the page
+                    $(rootEl).css("font-size", parseInt(30*100 / numberOfLines, 10) + "%");
                   textContainer.appendChild(bodyEl)
-    
-                  #svgText = svgRoot.textpath(texts, "#textpath-#{id}", texts.string(text))
-                  #svgRoot.text(svgText)
-                  #svgText = svgRoot.text(0, 100, text, { "font-size": "12pt" })
     
               rendering.update = (item) ->
                 # do nothing for now

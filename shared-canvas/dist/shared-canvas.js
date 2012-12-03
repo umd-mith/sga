@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Nov 26 11:34:38 2012 -0800
+# Date: Mon Dec 3 08:49:54 2012 -0500
 #
 # License TBD.
 #
@@ -329,15 +329,21 @@
                 item = model.getItem(id);
                 svgImage = null;
                 SVG(function(svgRoot) {
-                  var _ref;
-                  return svgImage = svgRoot.image(0, 0, "100%", "100%", (_ref = item.image) != null ? _ref[0] : void 0, {
-                    preserveAspectRatio: 'none'
-                  });
+                  var _ref, _ref1;
+                  if (((_ref = item.image) != null ? _ref[0] : void 0) != null) {
+                    return svgImage = svgRoot.image(0, 0, "100%", "100%", (_ref1 = item.image) != null ? _ref1[0] : void 0, {
+                      preserveAspectRatio: 'none'
+                    });
+                  } else {
+                    return svgImage = null;
+                  }
                 });
                 rendering.update = function(item) {};
                 rendering.remove = function() {
                   return SVG(function(svgRoot) {
-                    return svgRoot.remove(svgImage);
+                    if (svgImage != null) {
+                      return svgRoot.remove(svgImage);
+                    }
                   });
                 };
                 return rendering;
@@ -391,11 +397,7 @@
                       }
                       current_el.acc += text[pos];
                     } else {
-                      if (current_el.acc.match(/^\s*$/)) {
-                        current_el.acc = '';
-                      } else {
-                        results.push(processNode(current_el));
-                      }
+                      results.push(processNode(current_el));
                       current_el.acc = text[pos];
                       _ref1 = mods[pos + offset];
                       for (_j = 0, _len = _ref1.length; _j < _len; _j++) {
@@ -458,7 +460,7 @@
                   svg = svgRoot.root();
                   svg.appendChild(textContainer);
                   return app.withSource((_ref = item.source) != null ? _ref[0] : void 0, function(content) {
-                    var annoId, bodyEl, el, end, hitem, mode, node, nodes, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref1, _ref2, _ref3;
+                    var annoId, bodyEl, el, end, hitem, mode, node, nodes, numberOfLines, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref1, _ref2, _ref3;
                     text = content.substr(item.start[0], item.end[0]);
                     _ref1 = annoExpr.evaluate(item.source);
                     for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
@@ -487,11 +489,13 @@
                     rootEl = document.createElement('div');
                     $(rootEl).addClass("text-content");
                     bodyEl.appendChild(rootEl);
+                    numberOfLines = 0;
                     for (_j = 0, _len1 = nodes.length; _j < _len1; _j++) {
                       node = nodes[_j];
                       el = $("<" + node.type + " />");
                       if (node.type === "br") {
                         $(rootEl).append($("<span class='linebreak'></span>"));
+                        numberOfLines += 1;
                       } else {
                         el.text(node.text);
                       }
@@ -505,6 +509,9 @@
                         }
                         tags[mode].push(el);
                       }
+                    }
+                    if (numberOfLines > 24) {
+                      $(rootEl).css("font-size", parseInt(30 * 100 / numberOfLines, 10) + "%");
                     }
                     return textContainer.appendChild(bodyEl);
                   });
