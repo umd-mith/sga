@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shared Canvas</title>
     <script src="./js/jquery.js"></script>
+    <script src="./js/modernizr-2.6.2.min.js"></script>
+    <script src="./js/navigation.js"></script>
     <script src="./js/jquery-ui-1.8.22.custom.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/overrides.css" rel="stylesheet">
@@ -19,23 +28,33 @@
     </style>
   </head>
   <body>
-   <!-- div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">Shared Canvas</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="/">Home</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div -->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="page" class="site-content">
+
+        <header id="main-header" class="group">
+                <div id="logo">
+                <a href="index.htm"><img src="images/sga_logo.png" ></a>
+            </div>
+                <nav class="main-navigation">
+                <ul class="nav-menu">
+                        <li class="current_page_item"><a href="index.htm" >Home</a></li>
+                    <li><a href="static.htm">About</a></li>
+                    <li><a href="static.htm">Tutorials</a></li>
+                    <li><a href="static.htm">Search</a></li>
+                    <li><a href="static.htm">Browse</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+                <article class="page-content group">
+            <header>
+                <h2></h2>
+            </header>
+
+
     <div class="container-fluid">
 
 <div class="row-fluid">
@@ -61,12 +80,16 @@
 <div class="well">
   <div class="row-fluid">
     <div class="span6" style="padding-left: 2%; text-align: center;">
-      <div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
-      <!-- div class="canvas" data-types="Image" data-manifest="./Manifest.json"></div -->
+      <div class="canvas" data-types="Image" 
+           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+           data-local-manifest="./Manifest.json"
+      ></div>
     </div>
     <div class="span6" style="padding-left: 2%; text-align: center;">
-      <div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"></div>
-      <!-- div class="canvas" data-types="Text" data-manifest="./Manifest.json"></div -->
+      <div class="canvas" data-types="Text" 
+           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+           data-local-manifest="./Manifest.json"
+      ></div>
     </div>
   </div>
 </div>
@@ -79,8 +102,10 @@
                        )
     });
 
-    builder.onManifest("http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json", function(app) {
-    /* builder.onManifest("./Manifest.json", function(app) {  */
+    builder.onManifest(
+      "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+      // "./Manifest.json"
+    , function(app) {
       var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
         dataView: app.dataView.sequences
       });
@@ -104,19 +129,22 @@
           $("#canvas-label").text("(no label)");
         }
       });
-      $("#first-page").click(function() {
+      $("#first-page").click(function(e) {
+        e.preventDefault();
         app.setPosition(0);
       });
-      $("#prev-page").click(function() {
+      $("#prev-page").click(function(e) {
         var p = app.getPosition();
+        e.preventDefault();
         if(p > 0) {
           p -= 1;
           app.setPosition(p);
         }
       });
-      $("#next-page").click(function() {
+      $("#next-page").click(function(e) {
         var p = app.getPosition();
         var seq = app.dataStore.data.getItem(app.getSequence());
+        e.preventDefault();
         if(seq != null && seq.sequence != null && p < seq.sequence.length-1) {
           p += 1;
           app.setPosition(p);
@@ -125,8 +153,9 @@
       $("#page-location").change(function(e) {
         app.setPosition($(this).val());
       });
-      $("#last-page").click(function() {
+      $("#last-page").click(function(e) {
         var seq = app.dataStore.data.getItem(app.getSequence());
+        e.preventDefault();
         if(seq != null && seq.sequence != null) {
           app.setPosition(seq.sequence.length-1);
         }
@@ -156,6 +185,31 @@
 </script>
 
     </div>
+                </article>
+        </section>
+
+        <aside class="group">
+        </aside>
+
+        <footer class="group">
+
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </div>
+    <!-- /page -->
+
   </body>
 </html>
 
