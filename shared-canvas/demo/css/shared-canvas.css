@@ -1,3 +1,7 @@
+svg body {
+  border: none;
+}
+
 .text-content {
   text-align: left;
   padding: 3px;
