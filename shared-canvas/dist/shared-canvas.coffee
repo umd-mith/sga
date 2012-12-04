@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Dec 3 08:49:54 2012 -0500
+# Date: Mon Dec 3 09:21:29 2012 -0500
 #
 # License TBD.
 #
@@ -163,8 +163,9 @@
             #
             # "sc-Canvas" <- type
             #
-            that.getCanvases = -> itemsWithType 'scCanvas'
-            that.getSequences = -> itemsWithType 'scSequence'
+            that.getCanvases    = -> itemsWithType 'scCanvas'
+            that.getZones       = -> itemsWithType 'scZone'
+            that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
     
             that.getItem = data.getItem
@@ -176,6 +177,238 @@
 
     # # Presentations
     SGAReader.namespace "Presentation", (Presentation) ->
+    
+      Presentation.namespace "Zone", (Zone) ->
+        Zone.initInstance = (args...) ->
+          # We expect container to be in the SVG image
+          MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
+            options = that.options
+            svgRoot = options.svgRoot
+    
+            annoExpr = that.dataView.prepare(['!target'])
+    
+            that.addLens 'Image', (container, view, model, id) ->
+              return unless 'Image' in (options.types || [])
+              rendering = {}
+    
+              item = model.getItem id
+    
+              svgImage = null
+              if item.image?[0]? and svgRoot?
+                x = item.x?[0] || 0
+                y = item.y?[0] || 0
+                width = item.width?[0] || options.width - x
+                height = item.height?[0] || options.height - y
+                svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
+                  preserveAspectRatio: 'none'
+                })
+    
+              rendering.update = (item) ->
+                # do nothing for now - eventually, update image
+    
+              rendering.remove = ->
+                #if svgImage? and svgRoot?
+                #  svgRoot.remove svgImage
+              rendering
+    
+            that.addLens 'ZoneAnnotation', (container, view, model, id) ->
+              rendering = {}
+              # we need to get the width/height from the item
+              # based on what we're targeting
+              zoneInfo = model.getItem id
+              zoneContainer = null
+              zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg' )
+              # pull start/end/width/height from constraint with a default of
+              # the full surface
+              x = item.x?[0] || 0
+              y = item.y?[0] || 0
+              width = item.width?[0] || options.width - x
+              height = item.height?[0] || options.height - y
+              $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+              container.appendChild(zoneContainer)
+              # apply position/transformations
+              # based on zoneannotation info
+    
+              # TODO: position/size zoneContainer and set scaling
+              zoneDataView = MITHGrid.Data.SubSet.initInstance
+                dataStore: model
+                expressions: [ '!target' ]
+                key: id
+    
+              zone = Zone.initInstance zoneContainer,
+                types: options.types
+                dataView: zoneDataView
+                svgRoot: svgRoot
+                application: options.application
+                heigth: height
+                width: width
+    
+              rendering._destroy = ->
+                zone._destroy() if zone._destroy?
+                zoneDataView._destroy() if zoneDataView._destroy?
+    
+              rendering.remove = ->
+                #if svgRoot? and container?
+                #  $(container).empty()
+                #  svgRoot.remove container
+                rendering._destroy()
+     
+              rendering
+    
+            that.addLens 'TextContent', (container, view, model, id) ->
+              return unless 'Text' in (options.types || [])
+    
+              rendering = {}
+              app = options.application()
+              item = model.getItem id
+     
+              textContainer = null
+              textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
+              # pull start/end/width/height from constraint with a default of
+              # the full surface
+              x = item.x?[0] || 0
+              y = item.y?[0] || 0
+              width = item.width?[0] || options.width - x
+              height = item.height?[0] || options.height - y
+              $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+              container.appendChild(textContainer)
+    
+              rendering.remove = ->
+                #$(textContainer).empty()
+                #svgRoot.remove textContainer
+    
+              processNode = (info) ->
+                classes = []
+                if 'LineAnnotation' in info.modes
+                  classes.push 'line'
+                if 'AdditionAnnotation' in info.modes
+                  classes.push 'addition'
+                if 'DeletionAnnotation' in info.modes
+                  classes.push 'deletion'
+    
+                classes.push "text" if classes.length == 0
+    
+                return {
+                  type: 'span'
+                  text: info.acc
+                  classes: classes.join(' ')
+                  modes: info.modes
+                  css: info.css.join(" ")
+                }
+    
+              # takes a text string and a series of mods made at positions in the string
+              # returns a sequence of DOM elements and a grouping of elements based on
+              # type of mod being made
+              compileText = (info) ->
+                text = info.text
+                mods = info.mods
+                offset = info.offset
+    
+                current_el =
+                  acc: ''
+                  modes: [ ]
+                  css: [ ]
+    
+                results = []
+                br_pushed = false
+    
+                for pos in [ 0 ... text.length ]
+                  if !mods[pos+offset]?
+                    br_pushed = false unless text[pos].match(/^\s+$/)
+                    current_el.acc += text[pos]
+                  else
+                    results.push processNode(current_el)
+    
+                    current_el.acc = text[pos]
+                    for mod in mods[pos+offset]
+                      if mod.type == "LineAnnotation"
+                        if !br_pushed
+                          results.push { type: 'br', modes: [], acc: '', css: '' }
+                          br_pushed = true
+                      if mod.action == 'start'
+                        current_el.modes.push mod.type
+                        current_el.css.push mod.css
+                      if mod.action == 'end'
+                        current_el.modes = (i for i in current_el.modes when i != mod.type)   
+    
+                results.push processNode(current_el)
+                results
+    
+              text = ""
+              mods = {}
+    
+              setMod = (pos, pref, type, css) ->
+                pos = pos[0] if $.isArray(pos)
+                mods[pos] = [] unless mods[pos]?
+                type = type[0] if $.isArray(type)
+                mods[pos].push
+                  action: pref
+                  type: type
+                  css: css
+    
+              app.withSource item.source?[0], (content) ->
+                text = content.substr(item.start[0], item.end[0])
+                #highlightDS.setKeyRange item.start[0], item.end[0]
+                # now we mark up the text as indicated by the highlights
+                # we want annotations that satisfy the following:
+                #
+                # might be useful to have a data store that lets us easily and
+                # quickly find overlapping ranges
+                #
+                # TODO: still need to manage the .target = tei.id bit
+                #
+                #highlightDS.visit (id) ->
+                #  # now apply annotation to text
+                #  hitem = highlightDS.getItem id
+                #  setMod hitem.start, 'start', hitem.type
+                #  setMod hitem.start, 'end', hitem.type
+    
+                for annoId in annoExpr.evaluate(item.source)
+                  hitem = model.getItem annoId
+                  start = hitem.start[0]
+                  end = hitem.end[0]
+                  if start <= item.end[0] && end >= item.start[0]
+                    start = item.start[0] if start < item.start[0]
+                    end = item.end[0] if end > item.end[0]
+                    setMod hitem.start, 'start', hitem.type, hitem.css
+                    setMod hitem.end, 'end', hitem.type, ''
+    
+                nodes = compileText
+                  text: text
+                  mods: mods
+                  offset: item.start[0]
+    
+                tags = {}
+                bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')   
+                rootEl = document.createElement('div')
+                $(rootEl).addClass("text-content")
+                $(rootEl).css("font-size", 150)
+                $(rootEl).css("line-height", 1.15)
+                bodyEl.appendChild(rootEl)
+    
+                #numberOfLines = 0
+                for node in nodes
+                  el = $("<#{node.type} />")
+                  if node.type == "br"
+                    $(rootEl).append($("<span class='linebreak'></span>"))
+                    #numberOfLines += 1
+                  else
+                    el.text(node.text)
+                  el.addClass(node.classes)
+                  el.attr("css", node.css)
+                  $(rootEl).append(el)
+                  for mode in node.modes
+                    tags[mode] ?= []
+                    tags[mode].push el
+                #if numberOfLines > 24
+                #  # make the font height fit into the page
+                #  $(rootEl).css("font-size", parseInt(30*100 / numberOfLines, 10) + "%");   
+                textContainer.appendChild(bodyEl)
+    
+              rendering.update = (item) ->
+                # do nothing for now
+              rendering
+    
       Presentation.namespace "Canvas", (Canvas) ->
         Canvas.initInstance = (args...) ->
           MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
@@ -234,21 +467,27 @@
             canvasWidth = null
             canvasHeight = null
             SVGHeight = null
-            SVGWidth = $(container).width()*19/20
+            SVGWidth = parseInt($(container).width()*19/20, 10)
             MITHGrid.events.onWindowResize.addListener ->
-              SVGWidth = $(container).width() * 19/20
-              if canvasWidth?
+              SVGWidth = parseInt($(container).width() * 19/20, 10)
+              if canvasWidth? and canvasWidth > 0
                 that.setScale (SVGWidth / canvasWidth)
               
     
             that.events.onScaleChange.addListener (s) ->
               if canvasWidth? and canvasHeight?
-                SVGHeight = canvasHeight * s
+                SVGHeight = parseInt(canvasHeight * s, 10)
                 SVG (svgRoot) ->
                   svgRootEl.attr
-                    width: SVGWidth
-                    height: SVGHeight
-                    viewbox: "0 0 #{SVGWidth} #{SVGHeight}"
+                    width: canvasWidth
+                    height: canvasHeight
+                    #transform: "scale(#{s})"
+                  svgRoot.configure
+                    #transform: "scale(#{s})"
+                    viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
+    
+                  #console.log svgRoot
+                  #svgRootEl.scale(s)
                   svgRootEl.css
                     width: SVGWidth
                     height: SVGHeight
@@ -262,6 +501,8 @@
               expressions: [ '!target' ]
               key: null
     
+            realCanvas = null
+    
             that.events.onCanvasChange.addListener (canvas) ->
               dataView.setKey(canvas)
               item = dataView.getItem canvas
@@ -271,173 +512,18 @@
               canvasWidth = item.width?[0] || 1
               canvasHeight = item.height?[0] || 1
               that.setScale (SVGWidth / canvasWidth)
-    
-            that.addLens 'Image', (container, view, model, id) ->
-              return unless 'Image' in (options.types || [])
-              rendering = {}
-    
-              item = model.getItem id
-              # for now, we assume a full mapping - image to full canvas/container
-              svgImage = null
+              if realCanvas?
+                realCanvas.hide() if realCanvas.hide?
+                realCanvas._destroy() if realCanvas._destroy?
               SVG (svgRoot) ->
-                if item.image?[0]?
-                  svgImage = svgRoot.image(0, 0, "100%", "100%", item.image?[0], {
-                    preserveAspectRatio: 'none'
-                  })
-                else
-                  svgImage = null
-              rendering.update = (item) ->
-                # do nothing for now - eventually, update image
-              rendering.remove = ->
-                SVG (svgRoot) ->
-                  if svgImage?
-                    svgRoot.remove svgImage
-              rendering
-    
-            that.addLens 'TextContent', (container, view, model, id) ->
-              return unless 'Text' in (options.types || [])
-              rendering = {}
-              app = options.application()
-              item = model.getItem id
-              # for now, we assume that all of the text gets splatted onto
-              # the SVG canvas - we may want to play with doing it one
-              # glyph at a time, but that's probably going to be too expensive
-              svgText = null
-    
-              processNode = (info) ->
-                classes = []
-                if 'LineAnnotation' in info.modes
-                  classes.push 'line'
-                if 'AdditionAnnotation' in info.modes
-                  classes.push 'addition'
-                if 'DeletionAnnotation' in info.modes
-                  classes.push 'deletion'
-    
-                classes.push "text" if classes.length == 0
-    
-                return {
-                  type: 'span'
-                  text: info.acc
-                  classes: classes.join(' ')
-                  modes: info.modes
-                }
-    
-              # takes a text string and a series of mods made at positions in the string
-              # returns a sequence of DOM elements and a grouping of elements based on
-              # type of mod being made
-              compileText = (info) ->
-                text = info.text
-                mods = info.mods
-                offset = info.offset 
-      
-                current_el = 
-                  acc: ''
-                  modes: [ ]
-      
-                results = []
-                br_pushed = false
-      
-                for pos in [ 0 ... text.length ]
-                  if !mods[pos+offset]?
-                    br_pushed = false unless text[pos].match(/^\s+$/)
-                    current_el.acc += text[pos]
-                  else 
-                    results.push processNode(current_el)
-      
-                    current_el.acc = text[pos]
-                    for mod in mods[pos+offset]
-                      if mod.type == "LineAnnotation"
-                        if !br_pushed
-                          results.push { type: 'br', modes: [], acc: '' }
-                          br_pushed = true
-                      if mod.action == 'start'
-                        current_el.modes.push mod.type
-                      if mod.action == 'end'
-                        current_el.modes = (i for i in current_el.modes when i != mod.type)
-    
-                results.push processNode(current_el)
-                results
-    
-              text = ""
-              mods = {}
-              textContainer = null
-    
-              setMod = (pos, pref, type) ->
-                pos = pos[0] if $.isArray(pos)
-                mods[pos] = [] unless mods[pos]?
-                type = type[0] if $.isArray(type)
-                mods[pos].push 
-                  action: pref
-                  type: type
-    
-              SVG (svgRoot) ->
-                textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
-                $(textContainer).attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", "100%")
-                svg = svgRoot.root()
-                svg.appendChild(textContainer)
-    
-                app.withSource item.source?[0], (content) ->
-                  text = content.substr(item.start[0], item.end[0])
-                  #highlightDS.setKeyRange item.start[0], item.end[0]
-                  # now we mark up the text as indicated by the highlights
-                  # we want annotations that satisfy the following:
-                  #
-                  # might be useful to have a data store that lets us easily and
-                  # quickly find overlapping ranges
-                  #
-                  # TODO: still need to manage the .target = tei.id bit
-                  #
-                  #highlightDS.visit (id) ->
-                  #  # now apply annotation to text
-                  #  hitem = highlightDS.getItem id
-                  #  setMod hitem.start, 'start', hitem.type
-                  #  setMod hitem.start, 'end', hitem.type
-    
-                  for annoId in annoExpr.evaluate(item.source)
-                    hitem = model.getItem annoId
-                    start = hitem.start[0]
-                    end = hitem.end[0]
-                    if start <= item.end[0] && end >= item.start[0]
-                      start = item.start[0] if start < item.start[0]
-                      end = item.end[0] if end > item.end[0]
-                      setMod hitem.start, 'start', hitem.type
-                      setMod hitem.end, 'end', hitem.type
-    
-                  nodes = compileText
-                    text: text
-                    mods: mods
-                    offset: item.start[0]
-    
-                  tags = {}
-                  bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
-                  rootEl = document.createElement('div')
-                  $(rootEl).addClass("text-content")
-                  bodyEl.appendChild(rootEl)
-                  
-                  numberOfLines = 0
-                  for node in nodes
-                    el = $("<#{node.type} />")
-                    if node.type == "br"
-                      $(rootEl).append($("<span class='linebreak'></span>"))
-                      numberOfLines += 1
-                    else
-                      el.text(node.text)
-                    el.addClass(node.classes)
-                    $(rootEl).append(el)
-                    for mode in node.modes
-                      tags[mode] ?= []
-                      tags[mode].push el
-                  if numberOfLines > 24
-                    # make the font height fit into the page
-                    $(rootEl).css("font-size", parseInt(30*100 / numberOfLines, 10) + "%");
-                  textContainer.appendChild(bodyEl)
-    
-              rendering.update = (item) ->
-                # do nothing for now
-              rendering.remove = ->
-                  SVG (svgRoot) ->
-                    svgRoot.remove textContainer
-              rendering
+                svgRoot.clear()
+                realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
+                  types: options.types
+                  dataView: dataView
+                  application: options.application
+                  height: canvasHeight
+                  width: canvasWidth
+                  svgRoot: svgRoot
 
     # # Controllers
     # # Component
@@ -563,8 +649,24 @@
                     label: mitem.dctitle || mitem.rdfslabel
                   items.push item
     
-                that.addItemsToProcess manifestData.getSequences().length
-                syncer.process manifestData.getSequences(), (id) ->
+                zones = manifestData.getZones()
+                that.addItemsToProcess zones.length
+                syncer.process zones, (id) ->
+                  that.addItemsProcessed 1
+                  zitem = manifestData.getItem id
+                  item =
+                    id: id
+                    type: 'Zone'
+                    width: parseInt(mitem.exifwidth?[0], 10)
+                    height: parseInt(mitem.exifheight?[0], 10)
+                    angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                    label: zitem.rdfslabel
+    
+                  items.push item
+    
+                seq = manifestData.getSequences()
+                that.addItemsToProcess seq.length
+                syncer.process seq, (id) ->
                   that.addItemsProcessed 1
                   sitem = manifestData.getItem id
                   item =
@@ -582,76 +684,112 @@
                   item.sequence = seq
                   items.push item
     
+                extractSpatialConstraint = (item, id) ->
+                  return unless id?
+                  constraint = manifestData.getItem id
+                  if 'oaFragmentSelector' in constraint.type
+                    if constraint.rdfvalue[0].substr(0,5) == "xywh="
+                      item.shape = "Rectangle"
+                      bits = constraint.rdfvalue[0].substr(6).split(",")
+                      item.x = bits[0]
+                      item.y = bits[1]
+                      item.width = bits[2]
+                      item.height = bits[3]
+                  # handle SVG constraints (rectangles, ellipses)
+                  # handle time constraints? for video/sound annotations?
+    
                 # now get the annotations we know something about handling
-                that.addItemsToProcess manifestData.getAnnotations().length
-                syncer.process manifestData.getAnnotations(), (id) ->
+                annos = manifestData.getAnnotations()
+                that.addItemsToProcess annos.length
+                syncer.process annos, (id) ->
                   that.addItemsProcessed 1
                   aitem = manifestData.getItem id
+    
+                  item =
+                    id: aitem.id
+    
+                  if aitem.oahasStyle?
+                    styleItem = manifestData.getItem aitem.oahasStyle[0]
+                    if "text/css" in styleItem.dcformat
+                      item.css = styleItem.cntchars
     
                   # for now, we *assume* that the content annotation is coming
                   # from a TEI file and is marked by begin/end pointers
                   if "scContentAnnotation" in aitem.type
+                    target = manifestData.getItem aitem.oahasTarget?[0]
+                    if "oaSpecificTarget" in target.type
+                      item.target = target.oahasSource
+                      extractSpatialConstraint(item, target.oahasSelector?[0])
+                    else
+                      item.target = aitem.oahasTarget
+    
                     textItem = manifestData.getItem aitem.oahasBody
                     textItem = textItem[0] if $.isArray(textItem)
                     textSpan = manifestData.getItem textItem.oahasSelector
                     textSpan = textSpan[0] if $.isArray(textSpan)
                     textSource.addFile(textItem.oahasSource);
-                    items.push
-                      id: aitem.id
-                      target: aitem.oahasTarget
-                      type: "TextContent"
-                      source: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin?[0], 10)
-                      end: parseInt(textSpan.oaxend?[0], 10)
     
-                  if "sgaLineAnnotation" in aitem.type
+                    item.target = aitem.oahasTarget
+                    item.type = "TextContent"
+                    item.source = textItem.oahasSource
+                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    item.end = parseInt(textSpan.oaxend?[0], 10)
+    
+                  else if "sgaLineAnnotation" in aitem.type
                     # no body for now
                     textItem = manifestData.getItem aitem.oahasTarget
                     textItem = textItem[0] if $.isArray(textItem)
                     textSpan = manifestData.getItem textItem.oahasSelector
                     textSpan = textSpan[0] if $.isArray(textSpan)
-                    items.push
-                      id: aitem.id
-                      target: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin?[0], 10)
-                      end: parseInt(textSpan.oaxend?[0], 10)
-                      type: "LineAnnotation"
     
-                  if "sgaDeletionAnnotation" in aitem.type
+                    item.target = textItem.oahasSource
+                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    item.end = parseInt(textSpan.oaxend?[0], 10)
+                    item.type = "LineAnnotation"
+    
+                  else if "sgaDeletionAnnotation" in aitem.type
                     # no body or style for now
                     textItem = manifestData.getItem aitem.oahasTarget
                     textItem = textItem[0] if $.isArray(textItem)
                     textSpan = manifestData.getItem textItem.oahasSelector
                     textSpan = textSpan[0] if $.isArray(textSpan)
-                    items.push
-                      id: aitem.id
-                      target: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin?[0], 10)
-                      end: parseInt(textSpan.oaxend?[0], 10)
-                      type: "DeletionAnnotation"
     
-                  if "sgaAdditionAnnotation" in aitem.type
+                    item.target = textItem.oahasSource
+                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    item.end = parseInt(textSpan.oaxend?[0], 10)
+                    item.type = "DeletionAnnotation"
+    
+                  else if "sgaAdditionAnnotation" in aitem.type
                     # no body or style for now
                     textItem = manifestData.getItem aitem.oahasTarget
                     textItem = textItem[0] if $.isArray(textItem)
                     textSpan = manifestData.getItem textItem.oahasSelector
                     textSpan = textSpan[0] if $.isArray(textSpan)
-                    items.push
-                      id: aitem.id
-                      target: textItem.oahasSource
-                      start: parseInt(textSpan.oaxbegin?[0], 10)
-                      end: parseInt(textSpan.oaxend?[0], 10)
-                      type: "AdditionAnnotation"
     
-                  if "scImageAnnotation" in aitem.type
+                    item.target = textItem.oahasSource
+                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    item.end = parseInt(textSpan.oaxend?[0], 10)
+                    item.type = "AdditionAnnotation"
+    
+                  else if "scImageAnnotation" in aitem.type
                     imgitem = manifestData.getItem aitem.oahasBody
                     imgitem = imgitem[0] if $.isArray(imgitem)
-                    items.push
-                      id: aitem.id
-                      target: aitem.oahasTarget
-                      label: aitem.rdfslabel
-                      image: imgitem.oahasSource || aitem.oahasBody
-                      type: "Image"
+    
+                    item.target = aitem.oahasTarget
+                    item.label = aitem.rdfslabel
+                    item.image = imgitem.oahasSource || aitem.oahasBody
+                    item.type = "Image"
+    
+                  else if "scZoneAnnotation" in aitem.type
+                    target = manifestData.getItem aitem.oahasTarget
+                    extractSpatialConstraint item, target.hasSelector?[0]
+    
+                    item.target = target.hasSource
+                    item.label = aitem.rdfslabel
+                    item.type = "ZoneAnnotation"
+    
+                  if item.type?
+                    items.push item
     
                 syncer.done()
     
@@ -777,7 +915,7 @@ MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
       is: 'rw'
       default: 1
   viewSetup: """
-    <div class="progress">
+    <div class="progress progress-striped active">
       <div class="bar" style="width: 0%;"></div>
     </div>
   """

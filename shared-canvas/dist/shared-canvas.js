@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Dec 3 08:49:54 2012 -0500
+# Date: Mon Dec 3 09:21:29 2012 -0500
 #
 # License TBD.
 #
@@ -230,6 +230,9 @@
               that.getCanvases = function() {
                 return itemsWithType('scCanvas');
               };
+              that.getZones = function() {
+                return itemsWithType('scZone');
+              };
               that.getSequences = function() {
                 return itemsWithType('scSequence');
               };
@@ -250,12 +253,257 @@
         });
       });
       SGAReader.namespace("Presentation", function(Presentation) {
+        Presentation.namespace("Zone", function(Zone) {
+          return Zone.initInstance = function() {
+            var args, _ref;
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+            return (_ref = MITHGrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.Zone"].concat(__slice.call(args), [function(that, container) {
+              var annoExpr, options, svgRoot;
+              options = that.options;
+              svgRoot = options.svgRoot;
+              annoExpr = that.dataView.prepare(['!target']);
+              that.addLens('Image', function(container, view, model, id) {
+                var height, item, rendering, svgImage, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
+                if (__indexOf.call(options.types || [], 'Image') < 0) {
+                  return;
+                }
+                rendering = {};
+                item = model.getItem(id);
+                svgImage = null;
+                if ((((_ref = item.image) != null ? _ref[0] : void 0) != null) && (svgRoot != null)) {
+                  x = ((_ref1 = item.x) != null ? _ref1[0] : void 0) || 0;
+                  y = ((_ref2 = item.y) != null ? _ref2[0] : void 0) || 0;
+                  width = ((_ref3 = item.width) != null ? _ref3[0] : void 0) || options.width - x;
+                  height = ((_ref4 = item.height) != null ? _ref4[0] : void 0) || options.height - y;
+                  svgImage = svgRoot.image(container, x, y, width, height, (_ref5 = item.image) != null ? _ref5[0] : void 0, {
+                    preserveAspectRatio: 'none'
+                  });
+                }
+                rendering.update = function(item) {};
+                rendering.remove = function() {};
+                return rendering;
+              });
+              that.addLens('ZoneAnnotation', function(container, view, model, id) {
+                var height, rendering, width, x, y, zone, zoneContainer, zoneDataView, zoneInfo, _ref, _ref1, _ref2, _ref3;
+                rendering = {};
+                zoneInfo = model.getItem(id);
+                zoneContainer = null;
+                zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                x = ((_ref = item.x) != null ? _ref[0] : void 0) || 0;
+                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) || 0;
+                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) || options.width - x;
+                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) || options.height - y;
+                $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
+                container.appendChild(zoneContainer);
+                zoneDataView = MITHGrid.Data.SubSet.initInstance({
+                  dataStore: model,
+                  expressions: ['!target'],
+                  key: id
+                });
+                zone = Zone.initInstance(zoneContainer, {
+                  types: options.types,
+                  dataView: zoneDataView,
+                  svgRoot: svgRoot,
+                  application: options.application,
+                  heigth: height,
+                  width: width
+                });
+                rendering._destroy = function() {
+                  if (zone._destroy != null) {
+                    zone._destroy();
+                  }
+                  if (zoneDataView._destroy != null) {
+                    return zoneDataView._destroy();
+                  }
+                };
+                rendering.remove = function() {
+                  return rendering._destroy();
+                };
+                return rendering;
+              });
+              return that.addLens('TextContent', function(container, view, model, id) {
+                var app, compileText, height, item, mods, processNode, rendering, setMod, text, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4;
+                if (__indexOf.call(options.types || [], 'Text') < 0) {
+                  return;
+                }
+                rendering = {};
+                app = options.application();
+                item = model.getItem(id);
+                textContainer = null;
+                textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
+                x = ((_ref = item.x) != null ? _ref[0] : void 0) || 0;
+                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) || 0;
+                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) || options.width - x;
+                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) || options.height - y;
+                $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
+                container.appendChild(textContainer);
+                rendering.remove = function() {};
+                processNode = function(info) {
+                  var classes;
+                  classes = [];
+                  if (__indexOf.call(info.modes, 'LineAnnotation') >= 0) {
+                    classes.push('line');
+                  }
+                  if (__indexOf.call(info.modes, 'AdditionAnnotation') >= 0) {
+                    classes.push('addition');
+                  }
+                  if (__indexOf.call(info.modes, 'DeletionAnnotation') >= 0) {
+                    classes.push('deletion');
+                  }
+                  if (classes.length === 0) {
+                    classes.push("text");
+                  }
+                  return {
+                    type: 'span',
+                    text: info.acc,
+                    classes: classes.join(' '),
+                    modes: info.modes,
+                    css: info.css.join(" ")
+                  };
+                };
+                compileText = function(info) {
+                  var br_pushed, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
+                  text = info.text;
+                  mods = info.mods;
+                  offset = info.offset;
+                  current_el = {
+                    acc: '',
+                    modes: [],
+                    css: []
+                  };
+                  results = [];
+                  br_pushed = false;
+                  for (pos = _i = 0, _ref4 = text.length; 0 <= _ref4 ? _i < _ref4 : _i > _ref4; pos = 0 <= _ref4 ? ++_i : --_i) {
+                    if (!(mods[pos + offset] != null)) {
+                      if (!text[pos].match(/^\s+$/)) {
+                        br_pushed = false;
+                      }
+                      current_el.acc += text[pos];
+                    } else {
+                      results.push(processNode(current_el));
+                      current_el.acc = text[pos];
+                      _ref5 = mods[pos + offset];
+                      for (_j = 0, _len = _ref5.length; _j < _len; _j++) {
+                        mod = _ref5[_j];
+                        if (mod.type === "LineAnnotation") {
+                          if (!br_pushed) {
+                            results.push({
+                              type: 'br',
+                              modes: [],
+                              acc: '',
+                              css: ''
+                            });
+                            br_pushed = true;
+                          }
+                        }
+                        if (mod.action === 'start') {
+                          current_el.modes.push(mod.type);
+                          current_el.css.push(mod.css);
+                        }
+                        if (mod.action === 'end') {
+                          current_el.modes = (function() {
+                            var _k, _len1, _ref6, _results;
+                            _ref6 = current_el.modes;
+                            _results = [];
+                            for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
+                              i = _ref6[_k];
+                              if (i !== mod.type) {
+                                _results.push(i);
+                              }
+                            }
+                            return _results;
+                          })();
+                        }
+                      }
+                    }
+                  }
+                  results.push(processNode(current_el));
+                  return results;
+                };
+                text = "";
+                mods = {};
+                setMod = function(pos, pref, type, css) {
+                  if ($.isArray(pos)) {
+                    pos = pos[0];
+                  }
+                  if (mods[pos] == null) {
+                    mods[pos] = [];
+                  }
+                  if ($.isArray(type)) {
+                    type = type[0];
+                  }
+                  return mods[pos].push({
+                    action: pref,
+                    type: type,
+                    css: css
+                  });
+                };
+                app.withSource((_ref4 = item.source) != null ? _ref4[0] : void 0, function(content) {
+                  var annoId, bodyEl, el, end, hitem, mode, node, nodes, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref5, _ref6, _ref7;
+                  text = content.substr(item.start[0], item.end[0]);
+                  _ref5 = annoExpr.evaluate(item.source);
+                  for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
+                    annoId = _ref5[_i];
+                    hitem = model.getItem(annoId);
+                    start = hitem.start[0];
+                    end = hitem.end[0];
+                    if (start <= item.end[0] && end >= item.start[0]) {
+                      if (start < item.start[0]) {
+                        start = item.start[0];
+                      }
+                      if (end > item.end[0]) {
+                        end = item.end[0];
+                      }
+                      setMod(hitem.start, 'start', hitem.type, hitem.css);
+                      setMod(hitem.end, 'end', hitem.type, '');
+                    }
+                  }
+                  nodes = compileText({
+                    text: text,
+                    mods: mods,
+                    offset: item.start[0]
+                  });
+                  tags = {};
+                  bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body');
+                  rootEl = document.createElement('div');
+                  $(rootEl).addClass("text-content");
+                  $(rootEl).css("font-size", 150);
+                  $(rootEl).css("line-height", 1.15);
+                  bodyEl.appendChild(rootEl);
+                  for (_j = 0, _len1 = nodes.length; _j < _len1; _j++) {
+                    node = nodes[_j];
+                    el = $("<" + node.type + " />");
+                    if (node.type === "br") {
+                      $(rootEl).append($("<span class='linebreak'></span>"));
+                    } else {
+                      el.text(node.text);
+                    }
+                    el.addClass(node.classes);
+                    el.attr("css", node.css);
+                    $(rootEl).append(el);
+                    _ref6 = node.modes;
+                    for (_k = 0, _len2 = _ref6.length; _k < _len2; _k++) {
+                      mode = _ref6[_k];
+                      if ((_ref7 = tags[mode]) == null) {
+                        tags[mode] = [];
+                      }
+                      tags[mode].push(el);
+                    }
+                  }
+                  return textContainer.appendChild(bodyEl);
+                });
+                rendering.update = function(item) {};
+                return rendering;
+              });
+            }]));
+          };
+        });
         return Presentation.namespace("Canvas", function(Canvas) {
           return Canvas.initInstance = function() {
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHGrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.Canvas"].concat(__slice.call(args), [function(that, container) {
-              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, highlightDS, options, pendingSVGfctns, svgRoot, svgRootEl;
+              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, highlightDS, options, pendingSVGfctns, realCanvas, svgRoot, svgRootEl;
               options = that.options;
               highlightDS = null;
               annoExpr = that.dataView.prepare(['!target']);
@@ -281,21 +529,23 @@
               canvasWidth = null;
               canvasHeight = null;
               SVGHeight = null;
-              SVGWidth = $(container).width() * 19 / 20;
+              SVGWidth = parseInt($(container).width() * 19 / 20, 10);
               MITHGrid.events.onWindowResize.addListener(function() {
-                SVGWidth = $(container).width() * 19 / 20;
-                if (canvasWidth != null) {
+                SVGWidth = parseInt($(container).width() * 19 / 20, 10);
+                if ((canvasWidth != null) && canvasWidth > 0) {
                   return that.setScale(SVGWidth / canvasWidth);
                 }
               });
               that.events.onScaleChange.addListener(function(s) {
                 if ((canvasWidth != null) && (canvasHeight != null)) {
-                  SVGHeight = canvasHeight * s;
+                  SVGHeight = parseInt(canvasHeight * s, 10);
                   return SVG(function(svgRoot) {
                     svgRootEl.attr({
-                      width: SVGWidth,
-                      height: SVGHeight,
-                      viewbox: "0 0 " + SVGWidth + " " + SVGHeight
+                      width: canvasWidth,
+                      height: canvasHeight
+                    });
+                    svgRoot.configure({
+                      viewBox: "0 0 " + canvasWidth + " " + canvasHeight
                     });
                     return svgRootEl.css({
                       width: SVGWidth,
@@ -312,217 +562,33 @@
                 expressions: ['!target'],
                 key: null
               });
-              that.events.onCanvasChange.addListener(function(canvas) {
+              realCanvas = null;
+              return that.events.onCanvasChange.addListener(function(canvas) {
                 var item, _ref, _ref1;
                 dataView.setKey(canvas);
                 item = dataView.getItem(canvas);
                 canvasWidth = ((_ref = item.width) != null ? _ref[0] : void 0) || 1;
                 canvasHeight = ((_ref1 = item.height) != null ? _ref1[0] : void 0) || 1;
-                return that.setScale(SVGWidth / canvasWidth);
-              });
-              that.addLens('Image', function(container, view, model, id) {
-                var item, rendering, svgImage;
-                if (__indexOf.call(options.types || [], 'Image') < 0) {
-                  return;
+                that.setScale(SVGWidth / canvasWidth);
+                if (realCanvas != null) {
+                  if (realCanvas.hide != null) {
+                    realCanvas.hide();
+                  }
+                  if (realCanvas._destroy != null) {
+                    realCanvas._destroy();
+                  }
                 }
-                rendering = {};
-                item = model.getItem(id);
-                svgImage = null;
-                SVG(function(svgRoot) {
-                  var _ref, _ref1;
-                  if (((_ref = item.image) != null ? _ref[0] : void 0) != null) {
-                    return svgImage = svgRoot.image(0, 0, "100%", "100%", (_ref1 = item.image) != null ? _ref1[0] : void 0, {
-                      preserveAspectRatio: 'none'
-                    });
-                  } else {
-                    return svgImage = null;
-                  }
-                });
-                rendering.update = function(item) {};
-                rendering.remove = function() {
-                  return SVG(function(svgRoot) {
-                    if (svgImage != null) {
-                      return svgRoot.remove(svgImage);
-                    }
-                  });
-                };
-                return rendering;
-              });
-              return that.addLens('TextContent', function(container, view, model, id) {
-                var app, compileText, item, mods, processNode, rendering, setMod, svgText, text, textContainer;
-                if (__indexOf.call(options.types || [], 'Text') < 0) {
-                  return;
-                }
-                rendering = {};
-                app = options.application();
-                item = model.getItem(id);
-                svgText = null;
-                processNode = function(info) {
-                  var classes;
-                  classes = [];
-                  if (__indexOf.call(info.modes, 'LineAnnotation') >= 0) {
-                    classes.push('line');
-                  }
-                  if (__indexOf.call(info.modes, 'AdditionAnnotation') >= 0) {
-                    classes.push('addition');
-                  }
-                  if (__indexOf.call(info.modes, 'DeletionAnnotation') >= 0) {
-                    classes.push('deletion');
-                  }
-                  if (classes.length === 0) {
-                    classes.push("text");
-                  }
-                  return {
-                    type: 'span',
-                    text: info.acc,
-                    classes: classes.join(' '),
-                    modes: info.modes
-                  };
-                };
-                compileText = function(info) {
-                  var br_pushed, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref, _ref1;
-                  text = info.text;
-                  mods = info.mods;
-                  offset = info.offset;
-                  current_el = {
-                    acc: '',
-                    modes: []
-                  };
-                  results = [];
-                  br_pushed = false;
-                  for (pos = _i = 0, _ref = text.length; 0 <= _ref ? _i < _ref : _i > _ref; pos = 0 <= _ref ? ++_i : --_i) {
-                    if (!(mods[pos + offset] != null)) {
-                      if (!text[pos].match(/^\s+$/)) {
-                        br_pushed = false;
-                      }
-                      current_el.acc += text[pos];
-                    } else {
-                      results.push(processNode(current_el));
-                      current_el.acc = text[pos];
-                      _ref1 = mods[pos + offset];
-                      for (_j = 0, _len = _ref1.length; _j < _len; _j++) {
-                        mod = _ref1[_j];
-                        if (mod.type === "LineAnnotation") {
-                          if (!br_pushed) {
-                            results.push({
-                              type: 'br',
-                              modes: [],
-                              acc: ''
-                            });
-                            br_pushed = true;
-                          }
-                        }
-                        if (mod.action === 'start') {
-                          current_el.modes.push(mod.type);
-                        }
-                        if (mod.action === 'end') {
-                          current_el.modes = (function() {
-                            var _k, _len1, _ref2, _results;
-                            _ref2 = current_el.modes;
-                            _results = [];
-                            for (_k = 0, _len1 = _ref2.length; _k < _len1; _k++) {
-                              i = _ref2[_k];
-                              if (i !== mod.type) {
-                                _results.push(i);
-                              }
-                            }
-                            return _results;
-                          })();
-                        }
-                      }
-                    }
-                  }
-                  results.push(processNode(current_el));
-                  return results;
-                };
-                text = "";
-                mods = {};
-                textContainer = null;
-                setMod = function(pos, pref, type) {
-                  if ($.isArray(pos)) {
-                    pos = pos[0];
-                  }
-                  if (mods[pos] == null) {
-                    mods[pos] = [];
-                  }
-                  if ($.isArray(type)) {
-                    type = type[0];
-                  }
-                  return mods[pos].push({
-                    action: pref,
-                    type: type
-                  });
-                };
-                SVG(function(svgRoot) {
-                  var svg, _ref;
-                  textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
-                  $(textContainer).attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", "100%");
-                  svg = svgRoot.root();
-                  svg.appendChild(textContainer);
-                  return app.withSource((_ref = item.source) != null ? _ref[0] : void 0, function(content) {
-                    var annoId, bodyEl, el, end, hitem, mode, node, nodes, numberOfLines, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref1, _ref2, _ref3;
-                    text = content.substr(item.start[0], item.end[0]);
-                    _ref1 = annoExpr.evaluate(item.source);
-                    for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-                      annoId = _ref1[_i];
-                      hitem = model.getItem(annoId);
-                      start = hitem.start[0];
-                      end = hitem.end[0];
-                      if (start <= item.end[0] && end >= item.start[0]) {
-                        if (start < item.start[0]) {
-                          start = item.start[0];
-                        }
-                        if (end > item.end[0]) {
-                          end = item.end[0];
-                        }
-                        setMod(hitem.start, 'start', hitem.type);
-                        setMod(hitem.end, 'end', hitem.type);
-                      }
-                    }
-                    nodes = compileText({
-                      text: text,
-                      mods: mods,
-                      offset: item.start[0]
-                    });
-                    tags = {};
-                    bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body');
-                    rootEl = document.createElement('div');
-                    $(rootEl).addClass("text-content");
-                    bodyEl.appendChild(rootEl);
-                    numberOfLines = 0;
-                    for (_j = 0, _len1 = nodes.length; _j < _len1; _j++) {
-                      node = nodes[_j];
-                      el = $("<" + node.type + " />");
-                      if (node.type === "br") {
-                        $(rootEl).append($("<span class='linebreak'></span>"));
-                        numberOfLines += 1;
-                      } else {
-                        el.text(node.text);
-                      }
-                      el.addClass(node.classes);
-                      $(rootEl).append(el);
-                      _ref2 = node.modes;
-                      for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
-                        mode = _ref2[_k];
-                        if ((_ref3 = tags[mode]) == null) {
-                          tags[mode] = [];
-                        }
-                        tags[mode].push(el);
-                      }
-                    }
-                    if (numberOfLines > 24) {
-                      $(rootEl).css("font-size", parseInt(30 * 100 / numberOfLines, 10) + "%");
-                    }
-                    return textContainer.appendChild(bodyEl);
+                return SVG(function(svgRoot) {
+                  svgRoot.clear();
+                  return realCanvas = SGA.Reader.Presentation.Zone.initInstance(svgRoot.root(), {
+                    types: options.types,
+                    dataView: dataView,
+                    application: options.application,
+                    height: canvasHeight,
+                    width: canvasWidth,
+                    svgRoot: svgRoot
                   });
                 });
-                rendering.update = function(item) {};
-                rendering.remove = function() {
-                  return SVG(function(svgRoot) {
-                    return svgRoot.remove(textContainer);
-                  });
-                };
-                return rendering;
               });
             }]));
           };
@@ -657,7 +723,7 @@
               });
               if (options.url != null) {
                 return manifestData.importFromURL(options.url, function() {
-                  var canvases, items, syncer;
+                  var annos, canvases, extractSpatialConstraint, items, seq, syncer, zones;
                   items = [];
                   syncer = MITHGrid.initSynchronizer(function() {
                     that.addItemsToProcess(1);
@@ -680,9 +746,26 @@
                     };
                     return items.push(item);
                   });
-                  that.addItemsToProcess(manifestData.getSequences().length);
-                  syncer.process(manifestData.getSequences(), function(id) {
-                    var item, seq, sitem;
+                  zones = manifestData.getZones();
+                  that.addItemsToProcess(zones.length);
+                  syncer.process(zones, function(id) {
+                    var item, zitem, _ref, _ref1, _ref2;
+                    that.addItemsProcessed(1);
+                    zitem = manifestData.getItem(id);
+                    item = {
+                      id: id,
+                      type: 'Zone',
+                      width: parseInt((_ref = mitem.exifwidth) != null ? _ref[0] : void 0, 10),
+                      height: parseInt((_ref1 = mitem.exifheight) != null ? _ref1[0] : void 0, 10),
+                      angle: parseInt((_ref2 = mitem.scnaturalAngle) != null ? _ref2[0] : void 0, 10) || 0,
+                      label: zitem.rdfslabel
+                    };
+                    return items.push(item);
+                  });
+                  seq = manifestData.getSequences();
+                  that.addItemsToProcess(seq.length);
+                  syncer.process(seq, function(id) {
+                    var item, sitem;
                     that.addItemsProcessed(1);
                     sitem = manifestData.getItem(id);
                     item = {
@@ -700,12 +783,46 @@
                     item.sequence = seq;
                     return items.push(item);
                   });
-                  that.addItemsToProcess(manifestData.getAnnotations().length);
-                  syncer.process(manifestData.getAnnotations(), function(id) {
-                    var aitem, imgitem, textItem, textSpan, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7;
+                  extractSpatialConstraint = function(item, id) {
+                    var bits, constraint;
+                    if (id == null) {
+                      return;
+                    }
+                    constraint = manifestData.getItem(id);
+                    if (__indexOf.call(constraint.type, 'oaFragmentSelector') >= 0) {
+                      if (constraint.rdfvalue[0].substr(0, 5) === "xywh=") {
+                        item.shape = "Rectangle";
+                        bits = constraint.rdfvalue[0].substr(6).split(",");
+                        item.x = bits[0];
+                        item.y = bits[1];
+                        item.width = bits[2];
+                        return item.height = bits[3];
+                      }
+                    }
+                  };
+                  annos = manifestData.getAnnotations();
+                  that.addItemsToProcess(annos.length);
+                  syncer.process(annos, function(id) {
+                    var aitem, imgitem, item, styleItem, target, textItem, textSpan, _ref, _ref1, _ref10, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9;
                     that.addItemsProcessed(1);
                     aitem = manifestData.getItem(id);
+                    item = {
+                      id: aitem.id
+                    };
+                    if (aitem.oahasStyle != null) {
+                      styleItem = manifestData.getItem(aitem.oahasStyle[0]);
+                      if (__indexOf.call(styleItem.dcformat, "text/css") >= 0) {
+                        item.css = styleItem.cntchars;
+                      }
+                    }
                     if (__indexOf.call(aitem.type, "scContentAnnotation") >= 0) {
+                      target = manifestData.getItem((_ref = aitem.oahasTarget) != null ? _ref[0] : void 0);
+                      if (__indexOf.call(target.type, "oaSpecificTarget") >= 0) {
+                        item.target = target.oahasSource;
+                        extractSpatialConstraint(item, (_ref1 = target.oahasSelector) != null ? _ref1[0] : void 0);
+                      } else {
+                        item.target = aitem.oahasTarget;
+                      }
                       textItem = manifestData.getItem(aitem.oahasBody);
                       if ($.isArray(textItem)) {
                         textItem = textItem[0];
@@ -715,16 +832,12 @@
                         textSpan = textSpan[0];
                       }
                       textSource.addFile(textItem.oahasSource);
-                      items.push({
-                        id: aitem.id,
-                        target: aitem.oahasTarget,
-                        type: "TextContent",
-                        source: textItem.oahasSource,
-                        start: parseInt((_ref = textSpan.oaxbegin) != null ? _ref[0] : void 0, 10),
-                        end: parseInt((_ref1 = textSpan.oaxend) != null ? _ref1[0] : void 0, 10)
-                      });
-                    }
-                    if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
+                      item.target = aitem.oahasTarget;
+                      item.type = "TextContent";
+                      item.source = textItem.oahasSource;
+                      item.start = parseInt((_ref2 = textSpan.oaxbegin) != null ? _ref2[0] : void 0, 10);
+                      item.end = parseInt((_ref3 = textSpan.oaxend) != null ? _ref3[0] : void 0, 10);
+                    } else if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
                       textItem = manifestData.getItem(aitem.oahasTarget);
                       if ($.isArray(textItem)) {
                         textItem = textItem[0];
@@ -733,15 +846,11 @@
                       if ($.isArray(textSpan)) {
                         textSpan = textSpan[0];
                       }
-                      items.push({
-                        id: aitem.id,
-                        target: textItem.oahasSource,
-                        start: parseInt((_ref2 = textSpan.oaxbegin) != null ? _ref2[0] : void 0, 10),
-                        end: parseInt((_ref3 = textSpan.oaxend) != null ? _ref3[0] : void 0, 10),
-                        type: "LineAnnotation"
-                      });
-                    }
-                    if (__indexOf.call(aitem.type, "sgaDeletionAnnotation") >= 0) {
+                      item.target = textItem.oahasSource;
+                      item.start = parseInt((_ref4 = textSpan.oaxbegin) != null ? _ref4[0] : void 0, 10);
+                      item.end = parseInt((_ref5 = textSpan.oaxend) != null ? _ref5[0] : void 0, 10);
+                      item.type = "LineAnnotation";
+                    } else if (__indexOf.call(aitem.type, "sgaDeletionAnnotation") >= 0) {
                       textItem = manifestData.getItem(aitem.oahasTarget);
                       if ($.isArray(textItem)) {
                         textItem = textItem[0];
@@ -750,15 +859,11 @@
                       if ($.isArray(textSpan)) {
                         textSpan = textSpan[0];
                       }
-                      items.push({
-                        id: aitem.id,
-                        target: textItem.oahasSource,
-                        start: parseInt((_ref4 = textSpan.oaxbegin) != null ? _ref4[0] : void 0, 10),
-                        end: parseInt((_ref5 = textSpan.oaxend) != null ? _ref5[0] : void 0, 10),
-                        type: "DeletionAnnotation"
-                      });
-                    }
-                    if (__indexOf.call(aitem.type, "sgaAdditionAnnotation") >= 0) {
+                      item.target = textItem.oahasSource;
+                      item.start = parseInt((_ref6 = textSpan.oaxbegin) != null ? _ref6[0] : void 0, 10);
+                      item.end = parseInt((_ref7 = textSpan.oaxend) != null ? _ref7[0] : void 0, 10);
+                      item.type = "DeletionAnnotation";
+                    } else if (__indexOf.call(aitem.type, "sgaAdditionAnnotation") >= 0) {
                       textItem = manifestData.getItem(aitem.oahasTarget);
                       if ($.isArray(textItem)) {
                         textItem = textItem[0];
@@ -767,26 +872,28 @@
                       if ($.isArray(textSpan)) {
                         textSpan = textSpan[0];
                       }
-                      items.push({
-                        id: aitem.id,
-                        target: textItem.oahasSource,
-                        start: parseInt((_ref6 = textSpan.oaxbegin) != null ? _ref6[0] : void 0, 10),
-                        end: parseInt((_ref7 = textSpan.oaxend) != null ? _ref7[0] : void 0, 10),
-                        type: "AdditionAnnotation"
-                      });
-                    }
-                    if (__indexOf.call(aitem.type, "scImageAnnotation") >= 0) {
+                      item.target = textItem.oahasSource;
+                      item.start = parseInt((_ref8 = textSpan.oaxbegin) != null ? _ref8[0] : void 0, 10);
+                      item.end = parseInt((_ref9 = textSpan.oaxend) != null ? _ref9[0] : void 0, 10);
+                      item.type = "AdditionAnnotation";
+                    } else if (__indexOf.call(aitem.type, "scImageAnnotation") >= 0) {
                       imgitem = manifestData.getItem(aitem.oahasBody);
                       if ($.isArray(imgitem)) {
                         imgitem = imgitem[0];
                       }
-                      return items.push({
-                        id: aitem.id,
-                        target: aitem.oahasTarget,
-                        label: aitem.rdfslabel,
-                        image: imgitem.oahasSource || aitem.oahasBody,
-                        type: "Image"
-                      });
+                      item.target = aitem.oahasTarget;
+                      item.label = aitem.rdfslabel;
+                      item.image = imgitem.oahasSource || aitem.oahasBody;
+                      item.type = "Image";
+                    } else if (__indexOf.call(aitem.type, "scZoneAnnotation") >= 0) {
+                      target = manifestData.getItem(aitem.oahasTarget);
+                      extractSpatialConstraint(item, (_ref10 = target.hasSelector) != null ? _ref10[0] : void 0);
+                      item.target = target.hasSource;
+                      item.label = aitem.rdfslabel;
+                      item.type = "ZoneAnnotation";
+                    }
+                    if (item.type != null) {
+                      return items.push(item);
                     }
                   });
                   return syncer.done();
@@ -966,7 +1073,7 @@
         "default": 1
       }
     },
-    viewSetup: "<div class=\"progress\">\n  <div class=\"bar\" style=\"width: 0%;\"></div>\n</div>"
+    viewSetup: "<div class=\"progress progress-striped active\">\n  <div class=\"bar\" style=\"width: 0%;\"></div>\n</div>"
   });
 
   MITHGrid.defaults('SGA.Reader.Presentation.Canvas', {
