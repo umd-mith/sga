@@ -146,8 +146,9 @@ SGAReader.namespace "Data", (Data) ->
         #
         # "sc-Canvas" <- type
         #
-        that.getCanvases = -> itemsWithType 'scCanvas'
-        that.getSequences = -> itemsWithType 'scSequence'
+        that.getCanvases    = -> itemsWithType 'scCanvas'
+        that.getZones       = -> itemsWithType 'scZone'
+        that.getSequences   = -> itemsWithType 'scSequence'
         that.getAnnotations = -> itemsWithType 'oaAnnotation'
 
         that.getItem = data.getItem
