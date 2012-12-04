@@ -124,7 +124,8 @@ Background: #E0E0E0
 
 html { font-size: 87.5%; background: #e0e0e0 url(../images/bg-page.png); padding:0px; margin:0px; overflow:auto; font-family: "BergamoStdRegular", Georgia, "Times New Roman", Times, serif; }
 body { font-size: 14px; font-size: 1rem; color: #422F20; text-rendering: optimizeLegibility; border-bottom-width: 18px; border-top-width: 18px; border-top-width: 1.285714285714286rem; border-bottom-width: 1.285714285714286rem; border-top-color: #A54647; border-bottom-color: #A59971; border-right-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; height: auto !important; height: 100%; }
-.site-content { max-width: 960px; max-width: 68.571428571428571rem; margin: 0 auto;  }
+/* .site-content { max-width: 960px; max-width: 68.571428571428571rem; margin: 0 auto;  }
+*/
 
 em { font-family: "BergamoStdItalic", serif; font-style:italic; }
 strong { font-family: "BergamoStdBold", serif; font-weight:bold; }

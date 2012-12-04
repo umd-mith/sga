@@ -82,8 +82,24 @@ SGAReader.namespace "Application", (Application) ->
                 label: mitem.dctitle || mitem.rdfslabel
               items.push item
 
-            that.addItemsToProcess manifestData.getSequences().length
-            syncer.process manifestData.getSequences(), (id) ->
+            zones = manifestData.getZones()
+            that.addItemsToProcess zones.length
+            syncer.process zones, (id) ->
+              that.addItemsProcessed 1
+              zitem = manifestData.getItem id
+              item =
+                id: id
+                type: 'Zone'
+                width: parseInt(mitem.exifwidth?[0], 10)
+                height: parseInt(mitem.exifheight?[0], 10)
+                angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                label: zitem.rdfslabel
+
+              items.push item
+
+            seq = manifestData.getSequences()
+            that.addItemsToProcess seq.length
+            syncer.process seq, (id) ->
               that.addItemsProcessed 1
               sitem = manifestData.getItem id
               item =
@@ -101,76 +117,112 @@ SGAReader.namespace "Application", (Application) ->
               item.sequence = seq
               items.push item
 
+            extractSpatialConstraint = (item, id) ->
+              return unless id?
+              constraint = manifestData.getItem id
+              if 'oaFragmentSelector' in constraint.type
+                if constraint.rdfvalue[0].substr(0,5) == "xywh="
+                  item.shape = "Rectangle"
+                  bits = constraint.rdfvalue[0].substr(6).split(",")
+                  item.x = bits[0]
+                  item.y = bits[1]
+                  item.width = bits[2]
+                  item.height = bits[3]
+              # handle SVG constraints (rectangles, ellipses)
+              # handle time constraints? for video/sound annotations?
+
             # now get the annotations we know something about handling
-            that.addItemsToProcess manifestData.getAnnotations().length
-            syncer.process manifestData.getAnnotations(), (id) ->
+            annos = manifestData.getAnnotations()
+            that.addItemsToProcess annos.length
+            syncer.process annos, (id) ->
               that.addItemsProcessed 1
               aitem = manifestData.getItem id
+
+              item =
+                id: aitem.id
+
+              if aitem.oahasStyle?
+                styleItem = manifestData.getItem aitem.oahasStyle[0]
+                if "text/css" in styleItem.dcformat
+                  item.css = styleItem.cntchars
 
               # for now, we *assume* that the content annotation is coming
               # from a TEI file and is marked by begin/end pointers
               if "scContentAnnotation" in aitem.type
+                target = manifestData.getItem aitem.oahasTarget?[0]
+                if "oaSpecificTarget" in target.type
+                  item.target = target.oahasSource
+                  extractSpatialConstraint(item, target.oahasSelector?[0])
+                else
+                  item.target = aitem.oahasTarget
+
                 textItem = manifestData.getItem aitem.oahasBody
                 textItem = textItem[0] if $.isArray(textItem)
                 textSpan = manifestData.getItem textItem.oahasSelector
                 textSpan = textSpan[0] if $.isArray(textSpan)
                 textSource.addFile(textItem.oahasSource);
-                items.push
-                  id: aitem.id
-                  target: aitem.oahasTarget
-                  type: "TextContent"
-                  source: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin?[0], 10)
-                  end: parseInt(textSpan.oaxend?[0], 10)
 
-              if "sgaLineAnnotation" in aitem.type
+                item.target = aitem.oahasTarget
+                item.type = "TextContent"
+                item.source = textItem.oahasSource
+                item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                item.end = parseInt(textSpan.oaxend?[0], 10)
+
+              else if "sgaLineAnnotation" in aitem.type
                 # no body for now
                 textItem = manifestData.getItem aitem.oahasTarget
                 textItem = textItem[0] if $.isArray(textItem)
                 textSpan = manifestData.getItem textItem.oahasSelector
                 textSpan = textSpan[0] if $.isArray(textSpan)
-                items.push
-                  id: aitem.id
-                  target: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin?[0], 10)
-                  end: parseInt(textSpan.oaxend?[0], 10)
-                  type: "LineAnnotation"
 
-              if "sgaDeletionAnnotation" in aitem.type
+                item.target = textItem.oahasSource
+                item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                item.end = parseInt(textSpan.oaxend?[0], 10)
+                item.type = "LineAnnotation"
+
+              else if "sgaDeletionAnnotation" in aitem.type
                 # no body or style for now
                 textItem = manifestData.getItem aitem.oahasTarget
                 textItem = textItem[0] if $.isArray(textItem)
                 textSpan = manifestData.getItem textItem.oahasSelector
                 textSpan = textSpan[0] if $.isArray(textSpan)
-                items.push
-                  id: aitem.id
-                  target: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin?[0], 10)
-                  end: parseInt(textSpan.oaxend?[0], 10)
-                  type: "DeletionAnnotation"
 
-              if "sgaAdditionAnnotation" in aitem.type
+                item.target = textItem.oahasSource
+                item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                item.end = parseInt(textSpan.oaxend?[0], 10)
+                item.type = "DeletionAnnotation"
+
+              else if "sgaAdditionAnnotation" in aitem.type
                 # no body or style for now
                 textItem = manifestData.getItem aitem.oahasTarget
                 textItem = textItem[0] if $.isArray(textItem)
                 textSpan = manifestData.getItem textItem.oahasSelector
                 textSpan = textSpan[0] if $.isArray(textSpan)
-                items.push
-                  id: aitem.id
-                  target: textItem.oahasSource
-                  start: parseInt(textSpan.oaxbegin?[0], 10)
-                  end: parseInt(textSpan.oaxend?[0], 10)
-                  type: "AdditionAnnotation"
 
-              if "scImageAnnotation" in aitem.type
+                item.target = textItem.oahasSource
+                item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                item.end = parseInt(textSpan.oaxend?[0], 10)
+                item.type = "AdditionAnnotation"
+
+              else if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
                 imgitem = imgitem[0] if $.isArray(imgitem)
-                items.push
-                  id: aitem.id
-                  target: aitem.oahasTarget
-                  label: aitem.rdfslabel
-                  image: imgitem.oahasSource || aitem.oahasBody
-                  type: "Image"
+
+                item.target = aitem.oahasTarget
+                item.label = aitem.rdfslabel
+                item.image = imgitem.oahasSource || aitem.oahasBody
+                item.type = "Image"
+
+              else if "scZoneAnnotation" in aitem.type
+                target = manifestData.getItem aitem.oahasTarget
+                extractSpatialConstraint item, target.hasSelector?[0]
+
+                item.target = target.hasSource
+                item.label = aitem.rdfslabel
+                item.type = "ZoneAnnotation"
+
+              if item.type?
+                items.push item
 
             syncer.done()
 

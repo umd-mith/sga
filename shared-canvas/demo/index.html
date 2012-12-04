@@ -20,7 +20,7 @@
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/overrides.css" rel="stylesheet">
     <link href="./css/shared-canvas.css" rel="stylesheet">
-    <script src="./js/mithgrid.min.js"></script>
+    <script src="./js/mithgrid.js"></script>
     <script src="./js/jquery.svg.min.js"></script>
     <script src="./js/shared-canvas.js"></script>
     <style>
@@ -81,14 +81,14 @@
   <div class="row-fluid">
     <div class="span6" style="padding-left: 2%; text-align: center;">
       <div class="canvas" data-types="Image" 
-           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
-           data-local-manifest="./Manifest.json"
+           data-remote-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+           data-manifest="./Manifest.json"
       ></div>
     </div>
     <div class="span6" style="padding-left: 2%; text-align: center;">
       <div class="canvas" data-types="Text" 
-           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
-           data-local-manifest="./Manifest.json"
+           data-remote-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+           data-manifest="./Manifest.json"
       ></div>
     </div>
   </div>
@@ -103,8 +103,8 @@
     });
 
     builder.onManifest(
-      "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
-      // "./Manifest.json"
+      // "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+      "./Manifest.json"
     , function(app) {
       var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
         dataView: app.dataView.sequences

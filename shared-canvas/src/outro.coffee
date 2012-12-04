@@ -40,7 +40,7 @@ MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
       is: 'rw'
       default: 1
   viewSetup: """
-    <div class="progress">
+    <div class="progress progress-striped active">
       <div class="bar" style="width: 0%;"></div>
     </div>
   """
