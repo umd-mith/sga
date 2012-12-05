@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Tue Dec 4 16:33:20 2012 -0500
+# Date: Tue Dec 4 20:10:14 2012 -0500
 #
 # License TBD.
 #
@@ -443,7 +443,7 @@
                 };
                 app.withSource((_ref4 = item.source) != null ? _ref4[0] : void 0, function(content) {
                   var annoId, bodyEl, el, end, hitem, mode, node, nodes, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref5, _ref6, _ref7;
-                  text = content.substr(item.start[0], item.end[0]);
+                  text = content.substr(item.start[0], item.end[0] - item.start[0] + 1);
                   _ref5 = annoExpr.evaluate(item.source);
                   for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
                     annoId = _ref5[_i];
