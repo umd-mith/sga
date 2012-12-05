@@ -18,10 +18,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           svgImage = null
           if item.image?[0]? and svgRoot?
-            x = item.x?[0] || 0
-            y = item.y?[0] || 0
-            width = item.width?[0] || options.width - x
-            height = item.height?[0] || options.height - y
+            x = if item.x?[0]? then item.x[0] else 0
+            y = if item.y?[0]? then item.y[0] else 0
+            width = if item.width?[0]? then item.width[0] else options.width - x
+            height = if item.height?[0]? then item.height[0] else options.height - y
             svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
               preserveAspectRatio: 'none'
             })
@@ -43,10 +43,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
           zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg' )
           # pull start/end/width/height from constraint with a default of
           # the full surface
-          x = item.x?[0] || 0
-          y = item.y?[0] || 0
-          width = item.width?[0] || options.width - x
-          height = item.height?[0] || options.height - y
+          x = if item.x?[0]? then item.x[0] else 0
+          y = if item.y?[0]? then item.y[0] else 0
+          width = if item.width?[0]? then item.width[0] else options.width - x
+          height = if item.height?[0]? then item.height[0] else options.height - y
           $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(zoneContainer)
           # apply position/transformations
@@ -81,6 +81,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.addLens 'TextContent', (container, view, model, id) ->
           return unless 'Text' in (options.types || [])
 
+          console.log "TextContent:", id
           rendering = {}
           app = options.application()
           item = model.getItem id
@@ -89,10 +90,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
           # pull start/end/width/height from constraint with a default of
           # the full surface
-          x = item.x?[0] || 0
-          y = item.y?[0] || 0
-          width = item.width?[0] || options.width - x
-          height = item.height?[0] || options.height - y
+          x = if item.x?[0]? then item.x[0] else 0
+          y = if item.y?[0]? then item.y[0] else 0
+          width = if item.width?[0]? then item.width[0] else options.width - x
+          height = if item.height?[0]? then item.height[0] else options.height - y
+          console.log item
+          console.log "Setting up text container", x, y, width, height
           $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(textContainer)
 

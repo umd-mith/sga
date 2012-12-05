@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Dec 3 09:21:29 2012 -0500
+# Date: Tue Dec 4 16:33:20 2012 -0500
 #
 # License TBD.
 #
@@ -271,10 +271,10 @@
                 item = model.getItem(id);
                 svgImage = null;
                 if ((((_ref = item.image) != null ? _ref[0] : void 0) != null) && (svgRoot != null)) {
-                  x = ((_ref1 = item.x) != null ? _ref1[0] : void 0) || 0;
-                  y = ((_ref2 = item.y) != null ? _ref2[0] : void 0) || 0;
-                  width = ((_ref3 = item.width) != null ? _ref3[0] : void 0) || options.width - x;
-                  height = ((_ref4 = item.height) != null ? _ref4[0] : void 0) || options.height - y;
+                  x = ((_ref1 = item.x) != null ? _ref1[0] : void 0) != null ? item.x[0] : 0;
+                  y = ((_ref2 = item.y) != null ? _ref2[0] : void 0) != null ? item.y[0] : 0;
+                  width = ((_ref3 = item.width) != null ? _ref3[0] : void 0) != null ? item.width[0] : options.width - x;
+                  height = ((_ref4 = item.height) != null ? _ref4[0] : void 0) != null ? item.height[0] : options.height - y;
                   svgImage = svgRoot.image(container, x, y, width, height, (_ref5 = item.image) != null ? _ref5[0] : void 0, {
                     preserveAspectRatio: 'none'
                   });
@@ -289,10 +289,10 @@
                 zoneInfo = model.getItem(id);
                 zoneContainer = null;
                 zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-                x = ((_ref = item.x) != null ? _ref[0] : void 0) || 0;
-                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) || 0;
-                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) || options.width - x;
-                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) || options.height - y;
+                x = ((_ref = item.x) != null ? _ref[0] : void 0) != null ? item.x[0] : 0;
+                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) != null ? item.y[0] : 0;
+                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) != null ? item.width[0] : options.width - x;
+                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) != null ? item.height[0] : options.height - y;
                 $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
                 container.appendChild(zoneContainer);
                 zoneDataView = MITHGrid.Data.SubSet.initInstance({
@@ -326,15 +326,18 @@
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
+                console.log("TextContent:", id);
                 rendering = {};
                 app = options.application();
                 item = model.getItem(id);
                 textContainer = null;
                 textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
-                x = ((_ref = item.x) != null ? _ref[0] : void 0) || 0;
-                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) || 0;
-                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) || options.width - x;
-                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) || options.height - y;
+                x = ((_ref = item.x) != null ? _ref[0] : void 0) != null ? item.x[0] : 0;
+                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) != null ? item.y[0] : 0;
+                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) != null ? item.width[0] : options.width - x;
+                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) != null ? item.height[0] : options.height - y;
+                console.log(item);
+                console.log("Setting up text container", x, y, width, height);
                 $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
                 container.appendChild(textContainer);
                 rendering.remove = function() {};
@@ -792,11 +795,11 @@
                     if (__indexOf.call(constraint.type, 'oaFragmentSelector') >= 0) {
                       if (constraint.rdfvalue[0].substr(0, 5) === "xywh=") {
                         item.shape = "Rectangle";
-                        bits = constraint.rdfvalue[0].substr(6).split(",");
-                        item.x = bits[0];
-                        item.y = bits[1];
-                        item.width = bits[2];
-                        return item.height = bits[3];
+                        bits = constraint.rdfvalue[0].substr(5).split(",");
+                        item.x = parseInt(bits[0], 10);
+                        item.y = parseInt(bits[1], 10);
+                        item.width = parseInt(bits[2], 10);
+                        return item.height = parseInt(bits[3], 10);
                       }
                     }
                   };
@@ -817,7 +820,7 @@
                     }
                     if (__indexOf.call(aitem.type, "scContentAnnotation") >= 0) {
                       target = manifestData.getItem((_ref = aitem.oahasTarget) != null ? _ref[0] : void 0);
-                      if (__indexOf.call(target.type, "oaSpecificTarget") >= 0) {
+                      if (__indexOf.call(target.type, "oaSpecificResource") >= 0) {
                         item.target = target.oahasSource;
                         extractSpatialConstraint(item, (_ref1 = target.oahasSelector) != null ? _ref1[0] : void 0);
                       } else {
@@ -832,11 +835,13 @@
                         textSpan = textSpan[0];
                       }
                       textSource.addFile(textItem.oahasSource);
-                      item.target = aitem.oahasTarget;
                       item.type = "TextContent";
                       item.source = textItem.oahasSource;
                       item.start = parseInt((_ref2 = textSpan.oaxbegin) != null ? _ref2[0] : void 0, 10);
                       item.end = parseInt((_ref3 = textSpan.oaxend) != null ? _ref3[0] : void 0, 10);
+                      if (id === "_:193d86c8:13b67d529fd:-40a4") {
+                        console.log(item);
+                      }
                     } else if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
                       textItem = manifestData.getItem(aitem.oahasTarget);
                       if ($.isArray(textItem)) {

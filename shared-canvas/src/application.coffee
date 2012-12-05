@@ -123,11 +123,11 @@ SGAReader.namespace "Application", (Application) ->
               if 'oaFragmentSelector' in constraint.type
                 if constraint.rdfvalue[0].substr(0,5) == "xywh="
                   item.shape = "Rectangle"
-                  bits = constraint.rdfvalue[0].substr(6).split(",")
-                  item.x = bits[0]
-                  item.y = bits[1]
-                  item.width = bits[2]
-                  item.height = bits[3]
+                  bits = constraint.rdfvalue[0].substr(5).split(",")
+                  item.x = parseInt(bits[0],10)
+                  item.y = parseInt(bits[1],10)
+                  item.width = parseInt(bits[2],10)
+                  item.height = parseInt(bits[3],10)
               # handle SVG constraints (rectangles, ellipses)
               # handle time constraints? for video/sound annotations?
 
@@ -150,7 +150,7 @@ SGAReader.namespace "Application", (Application) ->
               # from a TEI file and is marked by begin/end pointers
               if "scContentAnnotation" in aitem.type
                 target = manifestData.getItem aitem.oahasTarget?[0]
-                if "oaSpecificTarget" in target.type
+                if "oaSpecificResource" in target.type
                   item.target = target.oahasSource
                   extractSpatialConstraint(item, target.oahasSelector?[0])
                 else
@@ -162,11 +162,11 @@ SGAReader.namespace "Application", (Application) ->
                 textSpan = textSpan[0] if $.isArray(textSpan)
                 textSource.addFile(textItem.oahasSource);
 
-                item.target = aitem.oahasTarget
                 item.type = "TextContent"
                 item.source = textItem.oahasSource
                 item.start = parseInt(textSpan.oaxbegin?[0], 10)
                 item.end = parseInt(textSpan.oaxend?[0], 10)
+                console.log item if id == "_:193d86c8:13b67d529fd:-40a4"
 
               else if "sgaLineAnnotation" in aitem.type
                 # no body for now
