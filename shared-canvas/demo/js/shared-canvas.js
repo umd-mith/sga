@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Wed Dec 5 10:44:15 2012 -0500
+# Date: Wed Dec 5 11:08:07 2012 -0500
 #
 # License TBD.
 #
@@ -394,7 +394,7 @@
                       for (_j = 0, _len = _ref5.length; _j < _len; _j++) {
                         mod = _ref5[_j];
                         minfo = modinfo[mod.id];
-                        if (mod.type === "LineAnnotation") {
+                        if (minfo.type === "LineAnnotation") {
                           if (!br_pushed) {
                             results.push({
                               type: 'br',
@@ -738,7 +738,7 @@
               });
               if (options.url != null) {
                 return manifestData.importFromURL(options.url, function() {
-                  var annos, canvases, extractSpatialConstraint, extractTextTarget, items, seq, syncer, zones;
+                  var annos, canvases, extractSpatialConstraint, extractTextBody, extractTextTarget, items, seq, syncer, zones;
                   items = [];
                   syncer = MITHGrid.initSynchronizer(function() {
                     that.addItemsToProcess(1);
@@ -811,14 +811,15 @@
                         item.x = parseInt(bits[0], 10);
                         item.y = parseInt(bits[1], 10);
                         item.width = parseInt(bits[2], 10);
-                        item.height = parseInt(bits[3], 10);
+                        return item.height = parseInt(bits[3], 10);
                       }
-                    }
-                    if (constraint.oaxbegin != null) {
-                      item.start = parseInt((_ref = constraint.oaxbegin) != null ? _ref[0] : void 0, 10);
-                    }
-                    if (constraint.oaxend != null) {
-                      return item.end = parseInt((_ref1 = constraint.oaxend) != null ? _ref1[0] : void 0, 10);
+                    } else {
+                      if (constraint.oaxbegin != null) {
+                        item.start = parseInt((_ref = constraint.oaxbegin) != null ? _ref[0] : void 0, 10);
+                      }
+                      if (constraint.oaxend != null) {
+                        return item.end = parseInt((_ref1 = constraint.oaxend) != null ? _ref1[0] : void 0, 10);
+                      }
                     }
                   };
                   extractTextTarget = function(item, id) {
@@ -840,10 +841,20 @@
                       return item.target = id;
                     }
                   };
+                  extractTextBody = function(item, id) {
+                    var body, _ref;
+                    if (id == null) {
+                      return;
+                    }
+                    body = manifestData.getItem(id);
+                    textSource.addFile(body.oahasSource);
+                    item.source = body.oahasSource;
+                    return extractSpatialConstraint(item, (_ref = body.oahasSelector) != null ? _ref[0] : void 0);
+                  };
                   annos = manifestData.getAnnotations();
                   that.addItemsToProcess(annos.length);
                   syncer.process(annos, function(id) {
-                    var aitem, imgitem, item, target, textItem, textSpan, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6;
+                    var aitem, imgitem, item, target, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
                     that.addItemsProcessed(1);
                     aitem = manifestData.getItem(id);
                     item = {
@@ -851,27 +862,16 @@
                     };
                     if (__indexOf.call(aitem.type, "scContentAnnotation") >= 0) {
                       extractTextTarget(item, (_ref = aitem.oahasTarget) != null ? _ref[0] : void 0);
-                      textItem = manifestData.getItem(aitem.oahasBody);
-                      if ($.isArray(textItem)) {
-                        textItem = textItem[0];
-                      }
-                      textSpan = manifestData.getItem(textItem.oahasSelector);
-                      if ($.isArray(textSpan)) {
-                        textSpan = textSpan[0];
-                      }
-                      textSource.addFile(textItem.oahasSource);
+                      extractTextBody(item, (_ref1 = aitem.oahasBody) != null ? _ref1[0] : void 0);
                       item.type = "TextContent";
-                      item.source = textItem.oahasSource;
-                      item.start = parseInt((_ref1 = textSpan.oaxbegin) != null ? _ref1[0] : void 0, 10);
-                      item.end = parseInt((_ref2 = textSpan.oaxend) != null ? _ref2[0] : void 0, 10);
                     } else if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
-                      extractTextTarget(item, (_ref3 = aitem.oahasTarget) != null ? _ref3[0] : void 0);
+                      extractTextTarget(item, (_ref2 = aitem.oahasTarget) != null ? _ref2[0] : void 0);
                       item.type = "LineAnnotation";
                     } else if (__indexOf.call(aitem.type, "sgaDeletionAnnotation") >= 0) {
-                      extractTextTarget(item, (_ref4 = aitem.oahasTarget) != null ? _ref4[0] : void 0);
+                      extractTextTarget(item, (_ref3 = aitem.oahasTarget) != null ? _ref3[0] : void 0);
                       item.type = "DeletionAnnotation";
                     } else if (__indexOf.call(aitem.type, "sgaAdditionAnnotation") >= 0) {
-                      extractTextTarget(item, (_ref5 = aitem.oahasTarget) != null ? _ref5[0] : void 0);
+                      extractTextTarget(item, (_ref4 = aitem.oahasTarget) != null ? _ref4[0] : void 0);
                       item.type = "AdditionAnnotation";
                     } else if (__indexOf.call(aitem.type, "scImageAnnotation") >= 0) {
                       imgitem = manifestData.getItem(aitem.oahasBody);
@@ -884,7 +884,7 @@
                       item.type = "Image";
                     } else if (__indexOf.call(aitem.type, "scZoneAnnotation") >= 0) {
                       target = manifestData.getItem(aitem.oahasTarget);
-                      extractSpatialConstraint(item, (_ref6 = target.hasSelector) != null ? _ref6[0] : void 0);
+                      extractSpatialConstraint(item, (_ref5 = target.hasSelector) != null ? _ref5[0] : void 0);
                       item.target = target.hasSource;
                       item.label = aitem.rdfslabel;
                       item.type = "ZoneAnnotation";

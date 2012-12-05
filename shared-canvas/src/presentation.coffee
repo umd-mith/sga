@@ -150,7 +150,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 current_el.acc = text[pos]
                 for mod in mods[pos+offset]
                   minfo = modinfo[mod.id]
-                  if mod.type == "LineAnnotation"
+                  if minfo.type == "LineAnnotation"
                     if !br_pushed
                       results.push { type: 'br', modes: [], acc: '', css: '' }
                       br_pushed = true

@@ -128,10 +128,11 @@ SGAReader.namespace "Application", (Application) ->
                   item.y = parseInt(bits[1],10)
                   item.width = parseInt(bits[2],10)
                   item.height = parseInt(bits[3],10)
-              if constraint.oaxbegin?
-                item.start = parseInt(constraint.oaxbegin?[0], 10)
-              if constraint.oaxend?
-                item.end = parseInt(constraint.oaxend?[0], 10)
+              else
+                if constraint.oaxbegin?
+                  item.start = parseInt(constraint.oaxbegin?[0], 10)
+                if constraint.oaxend?
+                  item.end = parseInt(constraint.oaxend?[0], 10)
               # handle SVG constraints (rectangles, ellipses)
               # handle time constraints? for video/sound annotations?
 
@@ -149,6 +150,13 @@ SGAReader.namespace "Application", (Application) ->
               else
                 item.target = id
 
+            extractTextBody = (item, id) ->
+              return unless id?
+              body = manifestData.getItem id
+              textSource.addFile(body.oahasSource)
+              item.source = body.oahasSource
+              extractSpatialConstraint(item, body.oahasSelector?[0])
+
 
             # now get the annotations we know something about handling
             annos = manifestData.getAnnotations()
@@ -164,57 +172,23 @@ SGAReader.namespace "Application", (Application) ->
               # from a TEI file and is marked by begin/end pointers
               if "scContentAnnotation" in aitem.type
                 extractTextTarget item, aitem.oahasTarget?[0]
-
-                textItem = manifestData.getItem aitem.oahasBody
-                textItem = textItem[0] if $.isArray(textItem)
-                textSpan = manifestData.getItem textItem.oahasSelector
-                textSpan = textSpan[0] if $.isArray(textSpan)
-                textSource.addFile(textItem.oahasSource);
-
+                extractTextBody   item, aitem.oahasBody?[0]
                 item.type = "TextContent"
-                item.source = textItem.oahasSource
-                item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                item.end = parseInt(textSpan.oaxend?[0], 10)
 
               else if "sgaLineAnnotation" in aitem.type
                 # no body for now
                 extractTextTarget item, aitem.oahasTarget?[0]
-                #textItem = manifestData.getItem aitem.oahasTarget
-                #textItem = textItem[0] if $.isArray(textItem)
-                #textSpan = manifestData.getItem textItem.oahasSelector
-                #textSpan = textSpan[0] if $.isArray(textSpan)
-
-                #item.target = textItem.oahasSource
-                #item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                #item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "LineAnnotation"
 
               else if "sgaDeletionAnnotation" in aitem.type
                 # no body or style for now
                 extractTextTarget item, aitem.oahasTarget?[0]
-                #textItem = manifestData.getItem aitem.oahasTarget
-                #textItem = textItem[0] if $.isArray(textItem)
-                #textSpan = manifestData.getItem textItem.oahasSelector
-                #textSpan = textSpan[0] if $.isArray(textSpan)
-
-                #item.target = textItem.oahasSource
-                #item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                #item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "DeletionAnnotation"
 
               else if "sgaAdditionAnnotation" in aitem.type
                 # no body or style for now
                 extractTextTarget item, aitem.oahasTarget?[0]
-                #textItem = manifestData.getItem aitem.oahasTarget
-                #textItem = textItem[0] if $.isArray(textItem)
-                #textSpan = manifestData.getItem textItem.oahasSelector
-                #textSpan = textSpan[0] if $.isArray(textSpan)
-
-                #item.target = textItem.oahasSource
-                #item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                #item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "AdditionAnnotation"
-                #item.css = "vertical-align: super;"
 
               else if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
