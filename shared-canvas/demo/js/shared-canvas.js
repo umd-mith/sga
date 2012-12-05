@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Tue Dec 4 22:00:57 2012 -0500
+# Date: Wed Dec 5 10:15:51 2012 -0500
 #
 # License TBD.
 #
@@ -322,7 +322,7 @@
                 return rendering;
               });
               return that.addLens('TextContent', function(container, view, model, id) {
-                var app, compileText, height, item, mods, processNode, rendering, setMod, text, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4;
+                var app, compileText, height, item, modinfo, mods, processNode, rendering, setMod, text, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4;
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
@@ -339,15 +339,23 @@
                 container.appendChild(textContainer);
                 rendering.remove = function() {};
                 processNode = function(info) {
-                  var classes;
+                  var classes, css, modes, _i, _len, _ref4;
                   classes = [];
-                  if (__indexOf.call(info.modes, 'LineAnnotation') >= 0) {
+                  modes = [];
+                  css = [];
+                  _ref4 = info.modIds;
+                  for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
+                    id = _ref4[_i];
+                    modes.push(modinfo[id].type);
+                    css.push(modinfo[id].css);
+                  }
+                  if (__indexOf.call(modes, 'LineAnnotation') >= 0) {
                     classes.push('line');
                   }
-                  if (__indexOf.call(info.modes, 'AdditionAnnotation') >= 0) {
+                  if (__indexOf.call(modes, 'AdditionAnnotation') >= 0) {
                     classes.push('addition');
                   }
-                  if (__indexOf.call(info.modes, 'DeletionAnnotation') >= 0) {
+                  if (__indexOf.call(modes, 'DeletionAnnotation') >= 0) {
                     classes.push('deletion');
                   }
                   if (classes.length === 0) {
@@ -357,19 +365,18 @@
                     type: 'span',
                     text: info.acc,
                     classes: classes.join(' '),
-                    modes: info.modes,
-                    css: info.css.join(" ")
+                    modes: modes,
+                    css: css.join(" ")
                   };
                 };
                 compileText = function(info) {
-                  var br_pushed, c, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
+                  var br_pushed, current_el, i, minfo, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
                   text = info.text;
                   mods = info.mods;
                   offset = info.offset;
                   current_el = {
                     acc: '',
-                    modes: [],
-                    css: []
+                    modIds: []
                   };
                   results = [];
                   br_pushed = false;
@@ -385,6 +392,7 @@
                       _ref5 = mods[pos + offset];
                       for (_j = 0, _len = _ref5.length; _j < _len; _j++) {
                         mod = _ref5[_j];
+                        minfo = modinfo[mod.id];
                         if (mod.type === "LineAnnotation") {
                           if (!br_pushed) {
                             results.push({
@@ -397,30 +405,17 @@
                           }
                         }
                         if (mod.action === 'start') {
-                          current_el.modes.push(mod.type);
-                          current_el.css.push(mod.css);
+                          current_el.modIds.push(mod.id);
                         }
                         if (mod.action === 'end') {
-                          current_el.modes = (function() {
+                          current_el.modIds = (function() {
                             var _k, _len1, _ref6, _results;
-                            _ref6 = current_el.modes;
+                            _ref6 = current_el.modIds;
                             _results = [];
                             for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
                               i = _ref6[_k];
-                              if (i !== mod.type) {
+                              if (i !== mod.id) {
                                 _results.push(i);
-                              }
-                            }
-                            return _results;
-                          })();
-                          current_el.css = (function() {
-                            var _k, _len1, _ref6, _results;
-                            _ref6 = current_el.css;
-                            _results = [];
-                            for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
-                              c = _ref6[_k];
-                              if (c !== mod.css) {
-                                _results.push(c);
                               }
                             }
                             return _results;
@@ -434,7 +429,8 @@
                 };
                 text = "";
                 mods = {};
-                setMod = function(pos, pref, type, css) {
+                modinfo = {};
+                setMod = function(id, pos, pref, type, css) {
                   if ($.isArray(pos)) {
                     pos = pos[0];
                   }
@@ -447,10 +443,13 @@
                   if ($.isArray(css)) {
                     css = css.join(" ");
                   }
-                  return mods[pos].push({
-                    action: pref,
+                  modinfo[id] = {
                     type: type,
                     css: css
+                  };
+                  return mods[pos].push({
+                    id: id,
+                    action: pref
                   });
                 };
                 app.withSource((_ref4 = item.source) != null ? _ref4[0] : void 0, function(content) {
@@ -469,8 +468,8 @@
                       if (end > item.end[0]) {
                         end = item.end[0];
                       }
-                      setMod(hitem.start, 'start', hitem.type, hitem.css);
-                      setMod(hitem.end, 'end', hitem.type, hitem.css);
+                      setMod(annoId, hitem.start, 'start', hitem.type, hitem.css);
+                      setMod(annoId, hitem.end, 'end', hitem.type, hitem.css);
                     }
                   }
                   nodes = compileText({
