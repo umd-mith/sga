@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Mon Dec 3 09:21:29 2012 -0500
+# Date: Tue Dec 4 16:33:20 2012 -0500
 #
 # License TBD.
 #
@@ -195,10 +195,10 @@
     
               svgImage = null
               if item.image?[0]? and svgRoot?
-                x = item.x?[0] || 0
-                y = item.y?[0] || 0
-                width = item.width?[0] || options.width - x
-                height = item.height?[0] || options.height - y
+                x = if item.x?[0]? then item.x[0] else 0
+                y = if item.y?[0]? then item.y[0] else 0
+                width = if item.width?[0]? then item.width[0] else options.width - x
+                height = if item.height?[0]? then item.height[0] else options.height - y
                 svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
                   preserveAspectRatio: 'none'
                 })
@@ -220,10 +220,10 @@
               zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg' )
               # pull start/end/width/height from constraint with a default of
               # the full surface
-              x = item.x?[0] || 0
-              y = item.y?[0] || 0
-              width = item.width?[0] || options.width - x
-              height = item.height?[0] || options.height - y
+              x = if item.x?[0]? then item.x[0] else 0
+              y = if item.y?[0]? then item.y[0] else 0
+              width = if item.width?[0]? then item.width[0] else options.width - x
+              height = if item.height?[0]? then item.height[0] else options.height - y
               $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(zoneContainer)
               # apply position/transformations
@@ -258,6 +258,7 @@
             that.addLens 'TextContent', (container, view, model, id) ->
               return unless 'Text' in (options.types || [])
     
+              console.log "TextContent:", id
               rendering = {}
               app = options.application()
               item = model.getItem id
@@ -266,10 +267,12 @@
               textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
               # pull start/end/width/height from constraint with a default of
               # the full surface
-              x = item.x?[0] || 0
-              y = item.y?[0] || 0
-              width = item.width?[0] || options.width - x
-              height = item.height?[0] || options.height - y
+              x = if item.x?[0]? then item.x[0] else 0
+              y = if item.y?[0]? then item.y[0] else 0
+              width = if item.width?[0]? then item.width[0] else options.width - x
+              height = if item.height?[0]? then item.height[0] else options.height - y
+              console.log item
+              console.log "Setting up text container", x, y, width, height
               $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(textContainer)
     
@@ -690,11 +693,11 @@
                   if 'oaFragmentSelector' in constraint.type
                     if constraint.rdfvalue[0].substr(0,5) == "xywh="
                       item.shape = "Rectangle"
-                      bits = constraint.rdfvalue[0].substr(6).split(",")
-                      item.x = bits[0]
-                      item.y = bits[1]
-                      item.width = bits[2]
-                      item.height = bits[3]
+                      bits = constraint.rdfvalue[0].substr(5).split(",")
+                      item.x = parseInt(bits[0],10)
+                      item.y = parseInt(bits[1],10)
+                      item.width = parseInt(bits[2],10)
+                      item.height = parseInt(bits[3],10)
                   # handle SVG constraints (rectangles, ellipses)
                   # handle time constraints? for video/sound annotations?
     
@@ -717,7 +720,7 @@
                   # from a TEI file and is marked by begin/end pointers
                   if "scContentAnnotation" in aitem.type
                     target = manifestData.getItem aitem.oahasTarget?[0]
-                    if "oaSpecificTarget" in target.type
+                    if "oaSpecificResource" in target.type
                       item.target = target.oahasSource
                       extractSpatialConstraint(item, target.oahasSelector?[0])
                     else
@@ -729,11 +732,11 @@
                     textSpan = textSpan[0] if $.isArray(textSpan)
                     textSource.addFile(textItem.oahasSource);
     
-                    item.target = aitem.oahasTarget
                     item.type = "TextContent"
                     item.source = textItem.oahasSource
                     item.start = parseInt(textSpan.oaxbegin?[0], 10)
                     item.end = parseInt(textSpan.oaxend?[0], 10)
+                    console.log item if id == "_:193d86c8:13b67d529fd:-40a4"
     
                   else if "sgaLineAnnotation" in aitem.type
                     # no body for now
