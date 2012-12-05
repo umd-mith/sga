@@ -81,7 +81,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.addLens 'TextContent', (container, view, model, id) ->
           return unless 'Text' in (options.types || [])
 
-          console.log "TextContent:", id
           rendering = {}
           app = options.application()
           item = model.getItem id
@@ -94,8 +93,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
           y = if item.y?[0]? then item.y[0] else 0
           width = if item.width?[0]? then item.width[0] else options.width - x
           height = if item.height?[0]? then item.height[0] else options.height - y
-          console.log item
-          console.log "Setting up text container", x, y, width, height
           $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(textContainer)
 
@@ -155,7 +152,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
                     current_el.modes.push mod.type
                     current_el.css.push mod.css
                   if mod.action == 'end'
-                    current_el.modes = (i for i in current_el.modes when i != mod.type)   
+                    current_el.modes = (i for i in current_el.modes when i != mod.type)
+                    current_el.css = (c for c in current_el.css when c != mod.css)
 
             results.push processNode(current_el)
             results
@@ -167,13 +165,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
             pos = pos[0] if $.isArray(pos)
             mods[pos] = [] unless mods[pos]?
             type = type[0] if $.isArray(type)
+            css = css.join(" ") if $.isArray(css)
             mods[pos].push
               action: pref
               type: type
               css: css
 
           app.withSource item.source?[0], (content) ->
-            text = content.substr(item.start[0], item.end[0] - item.start[0]+1)
+            text = content.substr(item.start[0], item.end[0] - item.start[0])
             #highlightDS.setKeyRange item.start[0], item.end[0]
             # now we mark up the text as indicated by the highlights
             # we want annotations that satisfy the following:
@@ -197,7 +196,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 start = item.start[0] if start < item.start[0]
                 end = item.end[0] if end > item.end[0]
                 setMod hitem.start, 'start', hitem.type, hitem.css
-                setMod hitem.end, 'end', hitem.type, ''
+                setMod hitem.end,   'end',   hitem.type, hitem.css
 
             nodes = compileText
               text: text
@@ -221,7 +220,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               else
                 el.text(node.text)
               el.addClass(node.classes)
-              el.attr("css", node.css)
+              el.attr("style", node.css)
               $(rootEl).append(el)
               for mode in node.modes
                 tags[mode] ?= []
@@ -293,9 +292,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
         canvasWidth = null
         canvasHeight = null
         SVGHeight = null
-        SVGWidth = parseInt($(container).width()*19/20, 10)
+        SVGWidth = parseInt($(container).width()*20/20, 10)
         MITHGrid.events.onWindowResize.addListener ->
-          SVGWidth = parseInt($(container).width() * 19/20, 10)
+          SVGWidth = parseInt($(container).width() * 20/20, 10)
           if canvasWidth? and canvasWidth > 0
             that.setScale (SVGWidth / canvasWidth)
           
