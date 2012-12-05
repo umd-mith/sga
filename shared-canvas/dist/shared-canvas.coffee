@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Tue Dec 4 16:33:20 2012 -0500
+# Date: Tue Dec 4 20:10:14 2012 -0500
 #
 # License TBD.
 #
@@ -350,7 +350,7 @@
                   css: css
     
               app.withSource item.source?[0], (content) ->
-                text = content.substr(item.start[0], item.end[0])
+                text = content.substr(item.start[0], item.end[0] - item.start[0]+1)
                 #highlightDS.setKeyRange item.start[0], item.end[0]
                 # now we mark up the text as indicated by the highlights
                 # we want annotations that satisfy the following:

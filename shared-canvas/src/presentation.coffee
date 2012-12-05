@@ -173,7 +173,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               css: css
 
           app.withSource item.source?[0], (content) ->
-            text = content.substr(item.start[0], item.end[0])
+            text = content.substr(item.start[0], item.end[0] - item.start[0]+1)
             #highlightDS.setKeyRange item.start[0], item.end[0]
             # now we mark up the text as indicated by the highlights
             # we want annotations that satisfy the following:
