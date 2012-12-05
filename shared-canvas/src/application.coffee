@@ -166,7 +166,6 @@ SGAReader.namespace "Application", (Application) ->
                 item.source = textItem.oahasSource
                 item.start = parseInt(textSpan.oaxbegin?[0], 10)
                 item.end = parseInt(textSpan.oaxend?[0], 10)
-                console.log item if id == "_:193d86c8:13b67d529fd:-40a4"
 
               else if "sgaLineAnnotation" in aitem.type
                 # no body for now
@@ -203,6 +202,7 @@ SGAReader.namespace "Application", (Application) ->
                 item.start = parseInt(textSpan.oaxbegin?[0], 10)
                 item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "AdditionAnnotation"
+                #item.css = "vertical-align: super;"
 
               else if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
