@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Tue Dec 4 20:10:14 2012 -0500
+# Date: Tue Dec 4 22:00:57 2012 -0500
 #
 # License TBD.
 #
@@ -326,7 +326,6 @@
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
-                console.log("TextContent:", id);
                 rendering = {};
                 app = options.application();
                 item = model.getItem(id);
@@ -336,8 +335,6 @@
                 y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) != null ? item.y[0] : 0;
                 width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) != null ? item.width[0] : options.width - x;
                 height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) != null ? item.height[0] : options.height - y;
-                console.log(item);
-                console.log("Setting up text container", x, y, width, height);
                 $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
                 container.appendChild(textContainer);
                 rendering.remove = function() {};
@@ -365,7 +362,7 @@
                   };
                 };
                 compileText = function(info) {
-                  var br_pushed, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
+                  var br_pushed, c, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
                   text = info.text;
                   mods = info.mods;
                   offset = info.offset;
@@ -416,6 +413,18 @@
                             }
                             return _results;
                           })();
+                          current_el.css = (function() {
+                            var _k, _len1, _ref6, _results;
+                            _ref6 = current_el.css;
+                            _results = [];
+                            for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
+                              c = _ref6[_k];
+                              if (c !== mod.css) {
+                                _results.push(c);
+                              }
+                            }
+                            return _results;
+                          })();
                         }
                       }
                     }
@@ -435,6 +444,9 @@
                   if ($.isArray(type)) {
                     type = type[0];
                   }
+                  if ($.isArray(css)) {
+                    css = css.join(" ");
+                  }
                   return mods[pos].push({
                     action: pref,
                     type: type,
@@ -443,7 +455,7 @@
                 };
                 app.withSource((_ref4 = item.source) != null ? _ref4[0] : void 0, function(content) {
                   var annoId, bodyEl, el, end, hitem, mode, node, nodes, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref5, _ref6, _ref7;
-                  text = content.substr(item.start[0], item.end[0] - item.start[0] + 1);
+                  text = content.substr(item.start[0], item.end[0] - item.start[0]);
                   _ref5 = annoExpr.evaluate(item.source);
                   for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
                     annoId = _ref5[_i];
@@ -458,7 +470,7 @@
                         end = item.end[0];
                       }
                       setMod(hitem.start, 'start', hitem.type, hitem.css);
-                      setMod(hitem.end, 'end', hitem.type, '');
+                      setMod(hitem.end, 'end', hitem.type, hitem.css);
                     }
                   }
                   nodes = compileText({
@@ -482,7 +494,7 @@
                       el.text(node.text);
                     }
                     el.addClass(node.classes);
-                    el.attr("css", node.css);
+                    el.attr("style", node.css);
                     $(rootEl).append(el);
                     _ref6 = node.modes;
                     for (_k = 0, _len2 = _ref6.length; _k < _len2; _k++) {
@@ -532,9 +544,9 @@
               canvasWidth = null;
               canvasHeight = null;
               SVGHeight = null;
-              SVGWidth = parseInt($(container).width() * 19 / 20, 10);
+              SVGWidth = parseInt($(container).width() * 20 / 20, 10);
               MITHGrid.events.onWindowResize.addListener(function() {
-                SVGWidth = parseInt($(container).width() * 19 / 20, 10);
+                SVGWidth = parseInt($(container).width() * 20 / 20, 10);
                 if ((canvasWidth != null) && canvasWidth > 0) {
                   return that.setScale(SVGWidth / canvasWidth);
                 }
@@ -839,9 +851,6 @@
                       item.source = textItem.oahasSource;
                       item.start = parseInt((_ref2 = textSpan.oaxbegin) != null ? _ref2[0] : void 0, 10);
                       item.end = parseInt((_ref3 = textSpan.oaxend) != null ? _ref3[0] : void 0, 10);
-                      if (id === "_:193d86c8:13b67d529fd:-40a4") {
-                        console.log(item);
-                      }
                     } else if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
                       textItem = manifestData.getItem(aitem.oahasTarget);
                       if ($.isArray(textItem)) {
