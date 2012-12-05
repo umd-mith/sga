@@ -128,8 +128,27 @@ SGAReader.namespace "Application", (Application) ->
                   item.y = parseInt(bits[1],10)
                   item.width = parseInt(bits[2],10)
                   item.height = parseInt(bits[3],10)
+              if constraint.oaxbegin?
+                item.start = parseInt(constraint.oaxbegin?[0], 10)
+              if constraint.oaxend?
+                item.end = parseInt(constraint.oaxend?[0], 10)
               # handle SVG constraints (rectangles, ellipses)
               # handle time constraints? for video/sound annotations?
+
+            extractTextTarget = (item, id) ->
+              return unless id?
+              target = manifestData.getItem id
+              if "oaSpecificResource" in target.type
+                item.target = target.oahasSource
+                if target.oahasStyle?
+                  styleItem = manifestData.getItem target.oahasStyle[0]
+                  if "text/css" in styleItem.dcformat
+                    item.css = styleItem.cntchars
+
+                extractSpatialConstraint(item, target.oahasSelector?[0])
+              else
+                item.target = id
+
 
             # now get the annotations we know something about handling
             annos = manifestData.getAnnotations()
@@ -141,20 +160,10 @@ SGAReader.namespace "Application", (Application) ->
               item =
                 id: aitem.id
 
-              if aitem.oahasStyle?
-                styleItem = manifestData.getItem aitem.oahasStyle[0]
-                if "text/css" in styleItem.dcformat
-                  item.css = styleItem.cntchars
-
               # for now, we *assume* that the content annotation is coming
               # from a TEI file and is marked by begin/end pointers
               if "scContentAnnotation" in aitem.type
-                target = manifestData.getItem aitem.oahasTarget?[0]
-                if "oaSpecificResource" in target.type
-                  item.target = target.oahasSource
-                  extractSpatialConstraint(item, target.oahasSelector?[0])
-                else
-                  item.target = aitem.oahasTarget
+                extractTextTarget item, aitem.oahasTarget?[0]
 
                 textItem = manifestData.getItem aitem.oahasBody
                 textItem = textItem[0] if $.isArray(textItem)
@@ -169,38 +178,41 @@ SGAReader.namespace "Application", (Application) ->
 
               else if "sgaLineAnnotation" in aitem.type
                 # no body for now
-                textItem = manifestData.getItem aitem.oahasTarget
-                textItem = textItem[0] if $.isArray(textItem)
-                textSpan = manifestData.getItem textItem.oahasSelector
-                textSpan = textSpan[0] if $.isArray(textSpan)
+                extractTextTarget item, aitem.oahasTarget?[0]
+                #textItem = manifestData.getItem aitem.oahasTarget
+                #textItem = textItem[0] if $.isArray(textItem)
+                #textSpan = manifestData.getItem textItem.oahasSelector
+                #textSpan = textSpan[0] if $.isArray(textSpan)
 
-                item.target = textItem.oahasSource
-                item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                item.end = parseInt(textSpan.oaxend?[0], 10)
+                #item.target = textItem.oahasSource
+                #item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                #item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "LineAnnotation"
 
               else if "sgaDeletionAnnotation" in aitem.type
                 # no body or style for now
-                textItem = manifestData.getItem aitem.oahasTarget
-                textItem = textItem[0] if $.isArray(textItem)
-                textSpan = manifestData.getItem textItem.oahasSelector
-                textSpan = textSpan[0] if $.isArray(textSpan)
+                extractTextTarget item, aitem.oahasTarget?[0]
+                #textItem = manifestData.getItem aitem.oahasTarget
+                #textItem = textItem[0] if $.isArray(textItem)
+                #textSpan = manifestData.getItem textItem.oahasSelector
+                #textSpan = textSpan[0] if $.isArray(textSpan)
 
-                item.target = textItem.oahasSource
-                item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                item.end = parseInt(textSpan.oaxend?[0], 10)
+                #item.target = textItem.oahasSource
+                #item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                #item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "DeletionAnnotation"
 
               else if "sgaAdditionAnnotation" in aitem.type
                 # no body or style for now
-                textItem = manifestData.getItem aitem.oahasTarget
-                textItem = textItem[0] if $.isArray(textItem)
-                textSpan = manifestData.getItem textItem.oahasSelector
-                textSpan = textSpan[0] if $.isArray(textSpan)
+                extractTextTarget item, aitem.oahasTarget?[0]
+                #textItem = manifestData.getItem aitem.oahasTarget
+                #textItem = textItem[0] if $.isArray(textItem)
+                #textSpan = manifestData.getItem textItem.oahasSelector
+                #textSpan = textSpan[0] if $.isArray(textSpan)
 
-                item.target = textItem.oahasSource
-                item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                item.end = parseInt(textSpan.oaxend?[0], 10)
+                #item.target = textItem.oahasSource
+                #item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                #item.end = parseInt(textSpan.oaxend?[0], 10)
                 item.type = "AdditionAnnotation"
                 #item.css = "vertical-align: super;"
 
