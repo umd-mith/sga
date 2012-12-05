@@ -4,7 +4,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Tue Dec 4 22:00:57 2012 -0500
+# Date: Wed Dec 5 10:44:15 2012 -0500
 #
 # License TBD.
 #
@@ -62,6 +62,7 @@
           "http://www.openarchives.org/ore/terms/": "ore"
           "http://www.shelleygodwinarchive.org/ns/1#": "sga"
           "http://www.shelleygodwinarchive.org/ns1#": "sga"
+          "http://www.w3.org/2011/content#": "cnt"
     
         Manifest.initInstance = (args...) ->
           MITHGrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
@@ -279,11 +280,17 @@
     
               processNode = (info) ->
                 classes = []
-                if 'LineAnnotation' in info.modes
+                modes = []
+                css = []
+                for id in info.modIds
+                  modes.push modinfo[id].type
+                  css.push modinfo[id].css
+    
+                if 'LineAnnotation' in modes
                   classes.push 'line'
-                if 'AdditionAnnotation' in info.modes
+                if 'AdditionAnnotation' in modes
                   classes.push 'addition'
-                if 'DeletionAnnotation' in info.modes
+                if 'DeletionAnnotation' in modes
                   classes.push 'deletion'
     
                 classes.push "text" if classes.length == 0
@@ -292,8 +299,8 @@
                   type: 'span'
                   text: info.acc
                   classes: classes.join(' ')
-                  modes: info.modes
-                  css: info.css.join(" ")
+                  modes: modes
+                  css: css.join(" ")
                 }
     
               # takes a text string and a series of mods made at positions in the string
@@ -306,8 +313,7 @@
     
                 current_el =
                   acc: ''
-                  modes: [ ]
-                  css: [ ]
+                  modIds: [ ]
     
                 results = []
                 br_pushed = false
@@ -321,32 +327,34 @@
     
                     current_el.acc = text[pos]
                     for mod in mods[pos+offset]
+                      minfo = modinfo[mod.id]
                       if mod.type == "LineAnnotation"
                         if !br_pushed
                           results.push { type: 'br', modes: [], acc: '', css: '' }
                           br_pushed = true
                       if mod.action == 'start'
-                        current_el.modes.push mod.type
-                        current_el.css.push mod.css
+                        current_el.modIds.push mod.id
                       if mod.action == 'end'
-                        current_el.modes = (i for i in current_el.modes when i != mod.type)
-                        current_el.css = (c for c in current_el.css when c != mod.css)
+                        current_el.modIds = (i for i in current_el.modIds when i != mod.id)
     
                 results.push processNode(current_el)
                 results
     
               text = ""
               mods = {}
+              modinfo = {}
     
-              setMod = (pos, pref, type, css) ->
+              setMod = (id, pos, pref, type, css) ->
                 pos = pos[0] if $.isArray(pos)
                 mods[pos] = [] unless mods[pos]?
                 type = type[0] if $.isArray(type)
                 css = css.join(" ") if $.isArray(css)
-                mods[pos].push
-                  action: pref
+                modinfo[id] =
                   type: type
                   css: css
+                mods[pos].push
+                  id: id
+                  action: pref
     
               app.withSource item.source?[0], (content) ->
                 text = content.substr(item.start[0], item.end[0] - item.start[0])
@@ -372,8 +380,8 @@
                   if start <= item.end[0] && end >= item.start[0]
                     start = item.start[0] if start < item.start[0]
                     end = item.end[0] if end > item.end[0]
-                    setMod hitem.start, 'start', hitem.type, hitem.css
-                    setMod hitem.end,   'end',   hitem.type, hitem.css
+                    setMod annoId, hitem.start, 'start', hitem.type, hitem.css
+                    setMod annoId, hitem.end,   'end',   hitem.type, hitem.css
     
                 nodes = compileText
                   text: text
@@ -440,15 +448,6 @@
             #    leftExpressions: [ '.end' ]
             #    rightExpressions: [ '.start' ]
     
-              # we also need to know when we have one of these annotations
-              # getting updated - we might be able to hook into the
-              # highlightDS object for this and leave the following
-              # rendering.update method for tracking changes to the
-              # underlying unstructured text range
-    
-              #highlightDS.events.onModelChange.addListener (m, ids) ->
-              #  console.log ids
-                
             pendingSVGfctns = []
             SVG = (cb) ->
               pendingSVGfctns.push cb
@@ -488,8 +487,6 @@
                     #transform: "scale(#{s})"
                     viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
     
-                  #console.log svgRoot
-                  #svgRootEl.scale(s)
                   svgRootEl.css
                     width: SVGWidth
                     height: SVGHeight
@@ -697,8 +694,27 @@
                       item.y = parseInt(bits[1],10)
                       item.width = parseInt(bits[2],10)
                       item.height = parseInt(bits[3],10)
+                  if constraint.oaxbegin?
+                    item.start = parseInt(constraint.oaxbegin?[0], 10)
+                  if constraint.oaxend?
+                    item.end = parseInt(constraint.oaxend?[0], 10)
                   # handle SVG constraints (rectangles, ellipses)
                   # handle time constraints? for video/sound annotations?
+    
+                extractTextTarget = (item, id) ->
+                  return unless id?
+                  target = manifestData.getItem id
+                  if "oaSpecificResource" in target.type
+                    item.target = target.oahasSource
+                    if target.oahasStyle?
+                      styleItem = manifestData.getItem target.oahasStyle[0]
+                      if "text/css" in styleItem.dcformat
+                        item.css = styleItem.cntchars
+    
+                    extractSpatialConstraint(item, target.oahasSelector?[0])
+                  else
+                    item.target = id
+    
     
                 # now get the annotations we know something about handling
                 annos = manifestData.getAnnotations()
@@ -710,20 +726,10 @@
                   item =
                     id: aitem.id
     
-                  if aitem.oahasStyle?
-                    styleItem = manifestData.getItem aitem.oahasStyle[0]
-                    if "text/css" in styleItem.dcformat
-                      item.css = styleItem.cntchars
-    
                   # for now, we *assume* that the content annotation is coming
                   # from a TEI file and is marked by begin/end pointers
                   if "scContentAnnotation" in aitem.type
-                    target = manifestData.getItem aitem.oahasTarget?[0]
-                    if "oaSpecificResource" in target.type
-                      item.target = target.oahasSource
-                      extractSpatialConstraint(item, target.oahasSelector?[0])
-                    else
-                      item.target = aitem.oahasTarget
+                    extractTextTarget item, aitem.oahasTarget?[0]
     
                     textItem = manifestData.getItem aitem.oahasBody
                     textItem = textItem[0] if $.isArray(textItem)
@@ -738,38 +744,41 @@
     
                   else if "sgaLineAnnotation" in aitem.type
                     # no body for now
-                    textItem = manifestData.getItem aitem.oahasTarget
-                    textItem = textItem[0] if $.isArray(textItem)
-                    textSpan = manifestData.getItem textItem.oahasSelector
-                    textSpan = textSpan[0] if $.isArray(textSpan)
+                    extractTextTarget item, aitem.oahasTarget?[0]
+                    #textItem = manifestData.getItem aitem.oahasTarget
+                    #textItem = textItem[0] if $.isArray(textItem)
+                    #textSpan = manifestData.getItem textItem.oahasSelector
+                    #textSpan = textSpan[0] if $.isArray(textSpan)
     
-                    item.target = textItem.oahasSource
-                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                    item.end = parseInt(textSpan.oaxend?[0], 10)
+                    #item.target = textItem.oahasSource
+                    #item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    #item.end = parseInt(textSpan.oaxend?[0], 10)
                     item.type = "LineAnnotation"
     
                   else if "sgaDeletionAnnotation" in aitem.type
                     # no body or style for now
-                    textItem = manifestData.getItem aitem.oahasTarget
-                    textItem = textItem[0] if $.isArray(textItem)
-                    textSpan = manifestData.getItem textItem.oahasSelector
-                    textSpan = textSpan[0] if $.isArray(textSpan)
+                    extractTextTarget item, aitem.oahasTarget?[0]
+                    #textItem = manifestData.getItem aitem.oahasTarget
+                    #textItem = textItem[0] if $.isArray(textItem)
+                    #textSpan = manifestData.getItem textItem.oahasSelector
+                    #textSpan = textSpan[0] if $.isArray(textSpan)
     
-                    item.target = textItem.oahasSource
-                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                    item.end = parseInt(textSpan.oaxend?[0], 10)
+                    #item.target = textItem.oahasSource
+                    #item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    #item.end = parseInt(textSpan.oaxend?[0], 10)
                     item.type = "DeletionAnnotation"
     
                   else if "sgaAdditionAnnotation" in aitem.type
                     # no body or style for now
-                    textItem = manifestData.getItem aitem.oahasTarget
-                    textItem = textItem[0] if $.isArray(textItem)
-                    textSpan = manifestData.getItem textItem.oahasSelector
-                    textSpan = textSpan[0] if $.isArray(textSpan)
+                    extractTextTarget item, aitem.oahasTarget?[0]
+                    #textItem = manifestData.getItem aitem.oahasTarget
+                    #textItem = textItem[0] if $.isArray(textItem)
+                    #textSpan = manifestData.getItem textItem.oahasSelector
+                    #textSpan = textSpan[0] if $.isArray(textSpan)
     
-                    item.target = textItem.oahasSource
-                    item.start = parseInt(textSpan.oaxbegin?[0], 10)
-                    item.end = parseInt(textSpan.oaxend?[0], 10)
+                    #item.target = textItem.oahasSource
+                    #item.start = parseInt(textSpan.oaxbegin?[0], 10)
+                    #item.end = parseInt(textSpan.oaxend?[0], 10)
                     item.type = "AdditionAnnotation"
                     #item.css = "vertical-align: super;"
     

@@ -6,7 +6,7 @@
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
 #  
-# Date: Tue Dec 4 22:00:57 2012 -0500
+# Date: Wed Dec 5 10:44:15 2012 -0500
 #
 # License TBD.
 #
@@ -87,7 +87,8 @@
             "http://www.w3.org/ns/openannotation/extension/": "oax",
             "http://www.openarchives.org/ore/terms/": "ore",
             "http://www.shelleygodwinarchive.org/ns/1#": "sga",
-            "http://www.shelleygodwinarchive.org/ns1#": "sga"
+            "http://www.shelleygodwinarchive.org/ns1#": "sga",
+            "http://www.w3.org/2011/content#": "cnt"
           };
           return Manifest.initInstance = function() {
             var args;
@@ -322,7 +323,7 @@
                 return rendering;
               });
               return that.addLens('TextContent', function(container, view, model, id) {
-                var app, compileText, height, item, mods, processNode, rendering, setMod, text, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4;
+                var app, compileText, height, item, modinfo, mods, processNode, rendering, setMod, text, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4;
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
@@ -339,15 +340,23 @@
                 container.appendChild(textContainer);
                 rendering.remove = function() {};
                 processNode = function(info) {
-                  var classes;
+                  var classes, css, modes, _i, _len, _ref4;
                   classes = [];
-                  if (__indexOf.call(info.modes, 'LineAnnotation') >= 0) {
+                  modes = [];
+                  css = [];
+                  _ref4 = info.modIds;
+                  for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
+                    id = _ref4[_i];
+                    modes.push(modinfo[id].type);
+                    css.push(modinfo[id].css);
+                  }
+                  if (__indexOf.call(modes, 'LineAnnotation') >= 0) {
                     classes.push('line');
                   }
-                  if (__indexOf.call(info.modes, 'AdditionAnnotation') >= 0) {
+                  if (__indexOf.call(modes, 'AdditionAnnotation') >= 0) {
                     classes.push('addition');
                   }
-                  if (__indexOf.call(info.modes, 'DeletionAnnotation') >= 0) {
+                  if (__indexOf.call(modes, 'DeletionAnnotation') >= 0) {
                     classes.push('deletion');
                   }
                   if (classes.length === 0) {
@@ -357,19 +366,18 @@
                     type: 'span',
                     text: info.acc,
                     classes: classes.join(' '),
-                    modes: info.modes,
-                    css: info.css.join(" ")
+                    modes: modes,
+                    css: css.join(" ")
                   };
                 };
                 compileText = function(info) {
-                  var br_pushed, c, current_el, i, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
+                  var br_pushed, current_el, i, minfo, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
                   text = info.text;
                   mods = info.mods;
                   offset = info.offset;
                   current_el = {
                     acc: '',
-                    modes: [],
-                    css: []
+                    modIds: []
                   };
                   results = [];
                   br_pushed = false;
@@ -385,6 +393,7 @@
                       _ref5 = mods[pos + offset];
                       for (_j = 0, _len = _ref5.length; _j < _len; _j++) {
                         mod = _ref5[_j];
+                        minfo = modinfo[mod.id];
                         if (mod.type === "LineAnnotation") {
                           if (!br_pushed) {
                             results.push({
@@ -397,30 +406,17 @@
                           }
                         }
                         if (mod.action === 'start') {
-                          current_el.modes.push(mod.type);
-                          current_el.css.push(mod.css);
+                          current_el.modIds.push(mod.id);
                         }
                         if (mod.action === 'end') {
-                          current_el.modes = (function() {
+                          current_el.modIds = (function() {
                             var _k, _len1, _ref6, _results;
-                            _ref6 = current_el.modes;
+                            _ref6 = current_el.modIds;
                             _results = [];
                             for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
                               i = _ref6[_k];
-                              if (i !== mod.type) {
+                              if (i !== mod.id) {
                                 _results.push(i);
-                              }
-                            }
-                            return _results;
-                          })();
-                          current_el.css = (function() {
-                            var _k, _len1, _ref6, _results;
-                            _ref6 = current_el.css;
-                            _results = [];
-                            for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
-                              c = _ref6[_k];
-                              if (c !== mod.css) {
-                                _results.push(c);
                               }
                             }
                             return _results;
@@ -434,7 +430,8 @@
                 };
                 text = "";
                 mods = {};
-                setMod = function(pos, pref, type, css) {
+                modinfo = {};
+                setMod = function(id, pos, pref, type, css) {
                   if ($.isArray(pos)) {
                     pos = pos[0];
                   }
@@ -447,10 +444,13 @@
                   if ($.isArray(css)) {
                     css = css.join(" ");
                   }
-                  return mods[pos].push({
-                    action: pref,
+                  modinfo[id] = {
                     type: type,
                     css: css
+                  };
+                  return mods[pos].push({
+                    id: id,
+                    action: pref
                   });
                 };
                 app.withSource((_ref4 = item.source) != null ? _ref4[0] : void 0, function(content) {
@@ -469,8 +469,8 @@
                       if (end > item.end[0]) {
                         end = item.end[0];
                       }
-                      setMod(hitem.start, 'start', hitem.type, hitem.css);
-                      setMod(hitem.end, 'end', hitem.type, hitem.css);
+                      setMod(annoId, hitem.start, 'start', hitem.type, hitem.css);
+                      setMod(annoId, hitem.end, 'end', hitem.type, hitem.css);
                     }
                   }
                   nodes = compileText({
@@ -738,7 +738,7 @@
               });
               if (options.url != null) {
                 return manifestData.importFromURL(options.url, function() {
-                  var annos, canvases, extractSpatialConstraint, items, seq, syncer, zones;
+                  var annos, canvases, extractSpatialConstraint, extractTextTarget, items, seq, syncer, zones;
                   items = [];
                   syncer = MITHGrid.initSynchronizer(function() {
                     that.addItemsToProcess(1);
@@ -799,7 +799,7 @@
                     return items.push(item);
                   });
                   extractSpatialConstraint = function(item, id) {
-                    var bits, constraint;
+                    var bits, constraint, _ref, _ref1;
                     if (id == null) {
                       return;
                     }
@@ -811,33 +811,46 @@
                         item.x = parseInt(bits[0], 10);
                         item.y = parseInt(bits[1], 10);
                         item.width = parseInt(bits[2], 10);
-                        return item.height = parseInt(bits[3], 10);
+                        item.height = parseInt(bits[3], 10);
                       }
+                    }
+                    if (constraint.oaxbegin != null) {
+                      item.start = parseInt((_ref = constraint.oaxbegin) != null ? _ref[0] : void 0, 10);
+                    }
+                    if (constraint.oaxend != null) {
+                      return item.end = parseInt((_ref1 = constraint.oaxend) != null ? _ref1[0] : void 0, 10);
+                    }
+                  };
+                  extractTextTarget = function(item, id) {
+                    var styleItem, target, _ref;
+                    if (id == null) {
+                      return;
+                    }
+                    target = manifestData.getItem(id);
+                    if (__indexOf.call(target.type, "oaSpecificResource") >= 0) {
+                      item.target = target.oahasSource;
+                      if (target.oahasStyle != null) {
+                        styleItem = manifestData.getItem(target.oahasStyle[0]);
+                        if (__indexOf.call(styleItem.dcformat, "text/css") >= 0) {
+                          item.css = styleItem.cntchars;
+                        }
+                      }
+                      return extractSpatialConstraint(item, (_ref = target.oahasSelector) != null ? _ref[0] : void 0);
+                    } else {
+                      return item.target = id;
                     }
                   };
                   annos = manifestData.getAnnotations();
                   that.addItemsToProcess(annos.length);
                   syncer.process(annos, function(id) {
-                    var aitem, imgitem, item, styleItem, target, textItem, textSpan, _ref, _ref1, _ref10, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9;
+                    var aitem, imgitem, item, target, textItem, textSpan, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6;
                     that.addItemsProcessed(1);
                     aitem = manifestData.getItem(id);
                     item = {
                       id: aitem.id
                     };
-                    if (aitem.oahasStyle != null) {
-                      styleItem = manifestData.getItem(aitem.oahasStyle[0]);
-                      if (__indexOf.call(styleItem.dcformat, "text/css") >= 0) {
-                        item.css = styleItem.cntchars;
-                      }
-                    }
                     if (__indexOf.call(aitem.type, "scContentAnnotation") >= 0) {
-                      target = manifestData.getItem((_ref = aitem.oahasTarget) != null ? _ref[0] : void 0);
-                      if (__indexOf.call(target.type, "oaSpecificResource") >= 0) {
-                        item.target = target.oahasSource;
-                        extractSpatialConstraint(item, (_ref1 = target.oahasSelector) != null ? _ref1[0] : void 0);
-                      } else {
-                        item.target = aitem.oahasTarget;
-                      }
+                      extractTextTarget(item, (_ref = aitem.oahasTarget) != null ? _ref[0] : void 0);
                       textItem = manifestData.getItem(aitem.oahasBody);
                       if ($.isArray(textItem)) {
                         textItem = textItem[0];
@@ -849,46 +862,16 @@
                       textSource.addFile(textItem.oahasSource);
                       item.type = "TextContent";
                       item.source = textItem.oahasSource;
-                      item.start = parseInt((_ref2 = textSpan.oaxbegin) != null ? _ref2[0] : void 0, 10);
-                      item.end = parseInt((_ref3 = textSpan.oaxend) != null ? _ref3[0] : void 0, 10);
+                      item.start = parseInt((_ref1 = textSpan.oaxbegin) != null ? _ref1[0] : void 0, 10);
+                      item.end = parseInt((_ref2 = textSpan.oaxend) != null ? _ref2[0] : void 0, 10);
                     } else if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
-                      textItem = manifestData.getItem(aitem.oahasTarget);
-                      if ($.isArray(textItem)) {
-                        textItem = textItem[0];
-                      }
-                      textSpan = manifestData.getItem(textItem.oahasSelector);
-                      if ($.isArray(textSpan)) {
-                        textSpan = textSpan[0];
-                      }
-                      item.target = textItem.oahasSource;
-                      item.start = parseInt((_ref4 = textSpan.oaxbegin) != null ? _ref4[0] : void 0, 10);
-                      item.end = parseInt((_ref5 = textSpan.oaxend) != null ? _ref5[0] : void 0, 10);
+                      extractTextTarget(item, (_ref3 = aitem.oahasTarget) != null ? _ref3[0] : void 0);
                       item.type = "LineAnnotation";
                     } else if (__indexOf.call(aitem.type, "sgaDeletionAnnotation") >= 0) {
-                      textItem = manifestData.getItem(aitem.oahasTarget);
-                      if ($.isArray(textItem)) {
-                        textItem = textItem[0];
-                      }
-                      textSpan = manifestData.getItem(textItem.oahasSelector);
-                      if ($.isArray(textSpan)) {
-                        textSpan = textSpan[0];
-                      }
-                      item.target = textItem.oahasSource;
-                      item.start = parseInt((_ref6 = textSpan.oaxbegin) != null ? _ref6[0] : void 0, 10);
-                      item.end = parseInt((_ref7 = textSpan.oaxend) != null ? _ref7[0] : void 0, 10);
+                      extractTextTarget(item, (_ref4 = aitem.oahasTarget) != null ? _ref4[0] : void 0);
                       item.type = "DeletionAnnotation";
                     } else if (__indexOf.call(aitem.type, "sgaAdditionAnnotation") >= 0) {
-                      textItem = manifestData.getItem(aitem.oahasTarget);
-                      if ($.isArray(textItem)) {
-                        textItem = textItem[0];
-                      }
-                      textSpan = manifestData.getItem(textItem.oahasSelector);
-                      if ($.isArray(textSpan)) {
-                        textSpan = textSpan[0];
-                      }
-                      item.target = textItem.oahasSource;
-                      item.start = parseInt((_ref8 = textSpan.oaxbegin) != null ? _ref8[0] : void 0, 10);
-                      item.end = parseInt((_ref9 = textSpan.oaxend) != null ? _ref9[0] : void 0, 10);
+                      extractTextTarget(item, (_ref5 = aitem.oahasTarget) != null ? _ref5[0] : void 0);
                       item.type = "AdditionAnnotation";
                     } else if (__indexOf.call(aitem.type, "scImageAnnotation") >= 0) {
                       imgitem = manifestData.getItem(aitem.oahasBody);
@@ -901,7 +884,7 @@
                       item.type = "Image";
                     } else if (__indexOf.call(aitem.type, "scZoneAnnotation") >= 0) {
                       target = manifestData.getItem(aitem.oahasTarget);
-                      extractSpatialConstraint(item, (_ref10 = target.hasSelector) != null ? _ref10[0] : void 0);
+                      extractSpatialConstraint(item, (_ref6 = target.hasSelector) != null ? _ref6[0] : void 0);
                       item.target = target.hasSource;
                       item.label = aitem.rdfslabel;
                       item.type = "ZoneAnnotation";
