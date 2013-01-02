@@ -1,5 +1,9 @@
 # # Data Managment
 SGAReader.namespace "Data", (Data) ->
+
+  #
+  # ## Data.TextStore
+  #
   Data.namespace "TextStore", (TextStore) ->
     TextStore.initInstance = (args...) ->
       MITHGrid.initInstance args..., (that) ->
@@ -31,7 +35,16 @@ SGAReader.namespace "Data", (Data) ->
           else if loadingFiles[file]?
             loadingFiles[file].push cb
 
+  #
+  # ## Data.Manifest
+  #
   Data.namespace "Manifest", (Manifest) ->
+
+    #
+    # We list all of the namespaces that we care about and the prefix
+    # we map them to. Some of the namespaces are easy "misspellings"
+    # that let us support older namespaces.
+    #
     NS =
       "http://dms.stanford.edu/ns/": "sc"
       "http://www.shared-canvas.org/ns/": "sc"
@@ -77,25 +90,16 @@ SGAReader.namespace "Data", (Data) ->
         that.importJSON = (json, cb) ->
           # we care about certain namespaces - others we ignore
           # those we care about, we translate for datastore
-          # {nsPrefix}-{localName}
+          # {nsPrefix}{localName}
           items = []
-          syncer = MITHGrid.initSynchronizer ->
-            that.addItemsProcessed 1
-            setTimeout ->
-              for item in items
-                if data.contains(item.id)
-                  data.updateItems [ item ]
-                else
-                  data.loadItems [ item ]
-              cb() if cb?
-            , 0
-          subjects = (s for s of json when json.hasOwnProperty(s))
+          syncer = MITHGrid.initSynchronizer()
+          subjects = (s for s of json) # when json.hasOwnProperty(s))
           that.addItemsToProcess subjects.length
           syncer.process subjects, (s) ->
-            ps = json[s]
+            predicates = json[s]
             item =
               id: s
-            for p, os of ps
+            for p, os of predicates
                values = []
                if p == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
                  for o in os
@@ -108,6 +112,13 @@ SGAReader.namespace "Data", (Data) ->
                  for o in os
                    if o.type == "literal"
                      values.push o.value
+                   #
+                   # Sometimes, references to blank nodes are wrapped in
+                   # parenthesis, but the subject IDs will be with a leading
+                   # _:. For example, an object uri/bnode in the form
+                   # "(123abc)" refers to a resource with the URI
+                   # "_:123abc".
+                   #
                    else if o.type == "uri"
                      if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
                        values.push "_:" + o.value.substr(1,o.value.length-2)
@@ -127,6 +138,15 @@ SGAReader.namespace "Data", (Data) ->
             if !item.type? or item.type.length == 0
               item.type = 'Blank'
  
+            #
+            # If the manifest indicates that another document describes
+            # this resource, then we throw away the current item we've built
+            # and load the data before continuing processing for this
+            # resource.
+            #
+            # We are not using this in the current SGA manifest, so this
+            # might be broken - but this is where support would be hooked in.
+            #
             if item.oreisDescribedBy?.length > 0
               for url in item.oreisDescribedBy
                 syncer.increment()
@@ -135,7 +155,16 @@ SGAReader.namespace "Data", (Data) ->
               items.push item 
             that.addItemsProcessed 1
 
-          syncer.done()
+          syncer.done ->
+            that.addItemsProcessed 1
+            setTimeout ->
+              for item in items
+                if data.contains(item.id)
+                  data.updateItems [ item ]
+                else
+                  data.loadItems [ item ]
+              cb() if cb?
+            , 0
 
         itemsWithType = (type) ->
           type = [ type ] if !$.isArray(type)
@@ -143,9 +172,8 @@ SGAReader.namespace "Data", (Data) ->
           data.getSubjectsUnion(types, "type").items()
 
         #
-        # Get things of different types
-        #
-        # "sc-Canvas" <- type
+        # Get things of different types. For example, "scCanvas" gets
+        # all of the canvas items.
         #
         that.getCanvases    = -> itemsWithType 'scCanvas'
         that.getZones       = -> itemsWithType 'scZone'

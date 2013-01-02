@@ -5,11 +5,21 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-#  
-# Date: Wed Dec 5 11:08:07 2012 -0500
+# Date: Wed Dec 5 11:39:48 2012 -0500
 #
-# License TBD.
+# (c) Copyright University of Maryland 2012.  All rights reserved.
 #
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 */
 
 
@@ -123,42 +133,24 @@
               that.importJSON = function(json, cb) {
                 var items, s, subjects, syncer;
                 items = [];
-                syncer = MITHGrid.initSynchronizer(function() {
-                  that.addItemsProcessed(1);
-                  return setTimeout(function() {
-                    var item, _i, _len;
-                    for (_i = 0, _len = items.length; _i < _len; _i++) {
-                      item = items[_i];
-                      if (data.contains(item.id)) {
-                        data.updateItems([item]);
-                      } else {
-                        data.loadItems([item]);
-                      }
-                    }
-                    if (cb != null) {
-                      return cb();
-                    }
-                  }, 0);
-                });
+                syncer = MITHGrid.initSynchronizer();
                 subjects = (function() {
                   var _results;
                   _results = [];
                   for (s in json) {
-                    if (json.hasOwnProperty(s)) {
-                      _results.push(s);
-                    }
+                    _results.push(s);
                   }
                   return _results;
                 })();
                 that.addItemsToProcess(subjects.length);
                 syncer.process(subjects, function(s) {
-                  var item, ns, o, os, p, pname, prefix, ps, url, values, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
-                  ps = json[s];
+                  var item, ns, o, os, p, pname, predicates, prefix, url, values, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
+                  predicates = json[s];
                   item = {
                     id: s
                   };
-                  for (p in ps) {
-                    os = ps[p];
+                  for (p in predicates) {
+                    os = predicates[p];
                     values = [];
                     if (p === "http://www.w3.org/1999/02/22-rdf-syntax-ns#type") {
                       for (_i = 0, _len = os.length; _i < _len; _i++) {
@@ -218,7 +210,23 @@
                   }
                   return that.addItemsProcessed(1);
                 });
-                return syncer.done();
+                return syncer.done(function() {
+                  that.addItemsProcessed(1);
+                  return setTimeout(function() {
+                    var item, _i, _len;
+                    for (_i = 0, _len = items.length; _i < _len; _i++) {
+                      item = items[_i];
+                      if (data.contains(item.id)) {
+                        data.updateItems([item]);
+                      } else {
+                        data.loadItems([item]);
+                      }
+                    }
+                    if (cb != null) {
+                      return cb();
+                    }
+                  }, 0);
+                });
               };
               itemsWithType = function(type) {
                 var types;
@@ -254,6 +262,52 @@
         });
       });
       SGAReader.namespace("Presentation", function(Presentation) {
+        Presentation.namespace("TextContent", function(TextContent) {
+          return TextContent.initInstance = function() {
+            var args, _ref;
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+            return (_ref = MITHGrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.TextContent"].concat(__slice.call(args), [function(that, container) {
+              var makeAnnoLens, options;
+              options = that.options;
+              makeAnnoLens = function(type) {
+                return that.addLens(type, function(container, view, model, id) {
+                  var el, item, rendering, _ref;
+                  rendering = {};
+                  el = $("<span></span>");
+                  rendering.$el = el;
+                  item = model.getItem(id);
+                  el.text(item.text[0]);
+                  el.addClass(item.type.join(" "));
+                  el.attr("style", (_ref = item.css) != null ? _ref[0] : void 0);
+                  $(container).append(el);
+                  rendering.remove = function() {
+                    return el.remove();
+                  };
+                  rendering.update = function(item) {
+                    return el.text(item.text[0]);
+                  };
+                  return rendering;
+                });
+              };
+              makeAnnoLens('AdditionAnnotation');
+              makeAnnoLens('DeletionAnnotation');
+              makeAnnoLens('LineAnnotation');
+              makeAnnoLens('Text');
+              return that.addLens('LineBreak', function(container, view, model, id) {
+                var el, rendering;
+                rendering = {};
+                el = $("<br/>");
+                rendering.$el = el;
+                $(container).append(el);
+                rendering.remove = function() {
+                  return el.remove();
+                };
+                rendering.update = function(item) {};
+                return rendering;
+              });
+            }]));
+          };
+        });
         Presentation.namespace("Zone", function(Zone) {
           return Zone.initInstance = function() {
             var args, _ref;
@@ -280,8 +334,24 @@
                     preserveAspectRatio: 'none'
                   });
                 }
-                rendering.update = function(item) {};
-                rendering.remove = function() {};
+                rendering.update = function(item) {
+                  var _ref10, _ref11, _ref6, _ref7, _ref8, _ref9;
+                  if ((((_ref6 = item.image) != null ? _ref6[0] : void 0) != null) && (svgRoot != null)) {
+                    x = ((_ref7 = item.x) != null ? _ref7[0] : void 0) != null ? item.x[0] : 0;
+                    y = ((_ref8 = item.y) != null ? _ref8[0] : void 0) != null ? item.y[0] : 0;
+                    width = ((_ref9 = item.width) != null ? _ref9[0] : void 0) != null ? item.width[0] : options.width - x;
+                    height = ((_ref10 = item.height) != null ? _ref10[0] : void 0) != null ? item.height[0] : options.height - y;
+                    svgRoot.remove(svgImage);
+                    return svgImage = svgRoot.image(container, x, y, width, height, (_ref11 = item.image) != null ? _ref11[0] : void 0, {
+                      preserveAspectRatio: 'none'
+                    });
+                  }
+                };
+                rendering.remove = function() {
+                  if ((svgImage != null) && (svgRoot != null)) {
+                    return svgRoot.remove(svgImage);
+                  }
+                };
                 return rendering;
               });
               that.addLens('ZoneAnnotation', function(container, view, model, id) {
@@ -298,8 +368,7 @@
                 container.appendChild(zoneContainer);
                 zoneDataView = MITHGrid.Data.SubSet.initInstance({
                   dataStore: model,
-                  expressions: ['!target'],
-                  key: id
+                  expressions: ['!target']
                 });
                 zone = Zone.initInstance(zoneContainer, {
                   types: options.types,
@@ -309,6 +378,7 @@
                   heigth: height,
                   width: width
                 });
+                zoneDataView.setKey(id);
                 rendering._destroy = function() {
                   if (zone._destroy != null) {
                     zone._destroy();
@@ -320,10 +390,18 @@
                 rendering.remove = function() {
                   return rendering._destroy();
                 };
+                rendering.update = function(item) {
+                  var _ref4, _ref5, _ref6, _ref7;
+                  x = ((_ref4 = item.x) != null ? _ref4[0] : void 0) != null ? item.x[0] : 0;
+                  y = ((_ref5 = item.y) != null ? _ref5[0] : void 0) != null ? item.y[0] : 0;
+                  width = ((_ref6 = item.width) != null ? _ref6[0] : void 0) != null ? item.width[0] : options.width - x;
+                  height = ((_ref7 = item.height) != null ? _ref7[0] : void 0) != null ? item.height[0] : options.height - y;
+                  return $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
+                };
                 return rendering;
               });
               return that.addLens('TextContent', function(container, view, model, id) {
-                var app, compileText, height, item, modinfo, mods, processNode, rendering, setMod, text, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4;
+                var app, bodyEl, height, item, rendering, rootEl, text, textContainer, textDataView, width, x, y, _ref, _ref1, _ref2, _ref3;
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
@@ -338,176 +416,44 @@
                 height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) != null ? item.height[0] : options.height - y;
                 $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
                 container.appendChild(textContainer);
-                rendering.remove = function() {};
-                processNode = function(info) {
-                  var classes, css, modes, _i, _len, _ref4;
-                  classes = [];
-                  modes = [];
-                  css = [];
-                  _ref4 = info.modIds;
-                  for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
-                    id = _ref4[_i];
-                    modes.push(modinfo[id].type);
-                    css.push(modinfo[id].css);
-                  }
-                  if (__indexOf.call(modes, 'LineAnnotation') >= 0) {
-                    classes.push('line');
-                  }
-                  if (__indexOf.call(modes, 'AdditionAnnotation') >= 0) {
-                    classes.push('addition');
-                  }
-                  if (__indexOf.call(modes, 'DeletionAnnotation') >= 0) {
-                    classes.push('deletion');
-                  }
-                  if (classes.length === 0) {
-                    classes.push("text");
-                  }
-                  return {
-                    type: 'span',
-                    text: info.acc,
-                    classes: classes.join(' '),
-                    modes: modes,
-                    css: css.join(" ")
-                  };
-                };
-                compileText = function(info) {
-                  var br_pushed, current_el, i, minfo, mod, mods, offset, pos, results, text, _i, _j, _len, _ref4, _ref5;
-                  text = info.text;
-                  mods = info.mods;
-                  offset = info.offset;
-                  current_el = {
-                    acc: '',
-                    modIds: []
-                  };
-                  results = [];
-                  br_pushed = false;
-                  for (pos = _i = 0, _ref4 = text.length; 0 <= _ref4 ? _i < _ref4 : _i > _ref4; pos = 0 <= _ref4 ? ++_i : --_i) {
-                    if (!(mods[pos + offset] != null)) {
-                      if (!text[pos].match(/^\s+$/)) {
-                        br_pushed = false;
-                      }
-                      current_el.acc += text[pos];
-                    } else {
-                      results.push(processNode(current_el));
-                      current_el.acc = text[pos];
-                      _ref5 = mods[pos + offset];
-                      for (_j = 0, _len = _ref5.length; _j < _len; _j++) {
-                        mod = _ref5[_j];
-                        minfo = modinfo[mod.id];
-                        if (minfo.type === "LineAnnotation") {
-                          if (!br_pushed) {
-                            results.push({
-                              type: 'br',
-                              modes: [],
-                              acc: '',
-                              css: ''
-                            });
-                            br_pushed = true;
-                          }
-                        }
-                        if (mod.action === 'start') {
-                          current_el.modIds.push(mod.id);
-                        }
-                        if (mod.action === 'end') {
-                          current_el.modIds = (function() {
-                            var _k, _len1, _ref6, _results;
-                            _ref6 = current_el.modIds;
-                            _results = [];
-                            for (_k = 0, _len1 = _ref6.length; _k < _len1; _k++) {
-                              i = _ref6[_k];
-                              if (i !== mod.id) {
-                                _results.push(i);
-                              }
-                            }
-                            return _results;
-                          })();
-                        }
-                      }
-                    }
-                  }
-                  results.push(processNode(current_el));
-                  return results;
-                };
-                text = "";
-                mods = {};
-                modinfo = {};
-                setMod = function(id, pos, pref, type, css) {
-                  if ($.isArray(pos)) {
-                    pos = pos[0];
-                  }
-                  if (mods[pos] == null) {
-                    mods[pos] = [];
-                  }
-                  if ($.isArray(type)) {
-                    type = type[0];
-                  }
-                  if ($.isArray(css)) {
-                    css = css.join(" ");
-                  }
-                  modinfo[id] = {
-                    type: type,
-                    css: css
-                  };
-                  return mods[pos].push({
-                    id: id,
-                    action: pref
-                  });
-                };
-                app.withSource((_ref4 = item.source) != null ? _ref4[0] : void 0, function(content) {
-                  var annoId, bodyEl, el, end, hitem, mode, node, nodes, rootEl, start, tags, _i, _j, _k, _len, _len1, _len2, _ref5, _ref6, _ref7;
-                  text = content.substr(item.start[0], item.end[0] - item.start[0]);
-                  _ref5 = annoExpr.evaluate(item.source);
-                  for (_i = 0, _len = _ref5.length; _i < _len; _i++) {
-                    annoId = _ref5[_i];
-                    hitem = model.getItem(annoId);
-                    start = hitem.start[0];
-                    end = hitem.end[0];
-                    if (start <= item.end[0] && end >= item.start[0]) {
-                      if (start < item.start[0]) {
-                        start = item.start[0];
-                      }
-                      if (end > item.end[0]) {
-                        end = item.end[0];
-                      }
-                      setMod(annoId, hitem.start, 'start', hitem.type, hitem.css);
-                      setMod(annoId, hitem.end, 'end', hitem.type, hitem.css);
-                    }
-                  }
-                  nodes = compileText({
-                    text: text,
-                    mods: mods,
-                    offset: item.start[0]
-                  });
-                  tags = {};
-                  bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body');
-                  rootEl = document.createElement('div');
-                  $(rootEl).addClass("text-content");
-                  $(rootEl).css("font-size", 150);
-                  $(rootEl).css("line-height", 1.15);
-                  bodyEl.appendChild(rootEl);
-                  for (_j = 0, _len1 = nodes.length; _j < _len1; _j++) {
-                    node = nodes[_j];
-                    el = $("<" + node.type + " />");
-                    if (node.type === "br") {
-                      $(rootEl).append($("<span class='linebreak'></span>"));
-                    } else {
-                      el.text(node.text);
-                    }
-                    el.addClass(node.classes);
-                    el.attr("style", node.css);
-                    $(rootEl).append(el);
-                    _ref6 = node.modes;
-                    for (_k = 0, _len2 = _ref6.length; _k < _len2; _k++) {
-                      mode = _ref6[_k];
-                      if ((_ref7 = tags[mode]) == null) {
-                        tags[mode] = [];
-                      }
-                      tags[mode].push(el);
-                    }
-                  }
-                  return textContainer.appendChild(bodyEl);
+                bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body');
+                rootEl = document.createElement('div');
+                $(rootEl).addClass("text-content");
+                $(rootEl).attr("id", id);
+                $(rootEl).css("font-size", 150);
+                $(rootEl).css("line-height", 1.15);
+                bodyEl.appendChild(rootEl);
+                textContainer.appendChild(bodyEl);
+                textDataView = MITHGrid.Data.SubSet.initInstance({
+                  dataStore: model,
+                  expressions: ['!target']
                 });
-                rendering.update = function(item) {};
+                text = Presentation.TextContent.initInstance(rootEl, {
+                  types: options.types,
+                  dataView: textDataView,
+                  svgRoot: svgRoot,
+                  application: options.application,
+                  height: height,
+                  width: width
+                });
+                textDataView.setKey(id);
+                rendering._destroy = function() {
+                  if (text._destroy != null) {
+                    text._destroy();
+                  }
+                  if (textDataView._destroy != null) {
+                    return textDataView._destroy();
+                  }
+                };
+                rendering.remove = function() {};
+                rendering.update = function(item) {
+                  var _ref4, _ref5, _ref6, _ref7;
+                  x = ((_ref4 = item.x) != null ? _ref4[0] : void 0) != null ? item.x[0] : 0;
+                  y = ((_ref5 = item.y) != null ? _ref5[0] : void 0) != null ? item.y[0] : 0;
+                  width = ((_ref6 = item.width) != null ? _ref6[0] : void 0) != null ? item.width[0] : options.width - x;
+                  height = ((_ref7 = item.height) != null ? _ref7[0] : void 0) != null ? item.height[0] : options.height - y;
+                  return $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height);
+                };
                 return rendering;
               });
             }]));
@@ -640,7 +586,7 @@
             }]));
           };
         });
-        return Component.namespace("SequenceSelector", function(SequenceSelector) {
+        Component.namespace("SequenceSelector", function(SequenceSelector) {
           return SequenceSelector.initInstance = function() {
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
@@ -667,6 +613,93 @@
             }]));
           };
         });
+        Component.namespace("Slider", function(Slider) {
+          return Slider.initInstance = function() {
+            var args;
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+            return MITHGrid.initInstance.apply(MITHGrid, ["SGA.Reader.Component.Slider"].concat(__slice.call(args), [function(that, container) {
+              that.events.onMinChange.addListener(function(n) {
+                return $(container).attr({
+                  min: n
+                });
+              });
+              that.events.onMaxChange.addListener(function(n) {
+                return $(container).attr({
+                  max: n
+                });
+              });
+              that.events.onValueChange.addListener(function(n) {
+                return $(container).val(n);
+              });
+              return $(container).change(function(e) {
+                return that.setValue($(container).val());
+              });
+            }]));
+          };
+        });
+        return Component.namespace("PagerControls", function(PagerControls) {
+          return PagerControls.initInstance = function() {
+            var args;
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+            return MITHGrid.initInstance.apply(MITHGrid, ["SGA.Reader.Component.PagerControls"].concat(__slice.call(args), [function(that, container) {
+              var firstEl, lastEl, nextEl, prevEl;
+              firstEl = $(container).find(".icon-fast-backward").parent();
+              prevEl = $(container).find(".icon-step-backward").parent();
+              nextEl = $(container).find(".icon-step-forward").parent();
+              lastEl = $(container).find(".icon-fast-forward").parent();
+              that.events.onMinChange.addListener(function(n) {
+                if (n < that.getValue()) {
+                  firstEl.removeClass("disabled");
+                  return prevEl.removeClass("disabled");
+                } else {
+                  firstEl.addClass("disabled");
+                  return prevEl.addClass("disabled");
+                }
+              });
+              that.events.onMaxChange.addListener(function(n) {
+                if (n > that.getValue()) {
+                  nextEl.removeClass("disabled");
+                  return lastEl.removeClass("disbaled");
+                } else {
+                  nextEl.addClass("disabled");
+                  return lastEl.addClass("disabled");
+                }
+              });
+              that.events.onValueChange.addListener(function(n) {
+                if (n > that.getMin()) {
+                  firstEl.removeClass("disabled");
+                  prevEl.removeClass("disabled");
+                } else {
+                  firstEl.addClass("disabled");
+                  prevEl.addClass("disabled");
+                }
+                if (n < that.getMax()) {
+                  nextEl.removeClass("disabled");
+                  return lastEl.removeClass("disabled");
+                } else {
+                  nextEl.addClass("disabled");
+                  return lastEl.addClass("disabled");
+                }
+              });
+              $(prevEl).click(function(e) {
+                e.preventDefault();
+                return that.addValue(-1);
+              });
+              $(nextEl).click(function(e) {
+                e.preventDefault();
+                return that.addValue(1);
+              });
+              $(firstEl).click(function(e) {
+                e.preventDefault();
+                return that.setValue(that.getMin());
+              });
+              return $(lastEl).click(function(e) {
+                e.preventDefault();
+                return that.setValue(that.getMax());
+              });
+            }]));
+          };
+        });
       });
       return SGAReader.namespace("Application", function(Application) {
         return Application.namespace("SharedCanvas", function(SharedCanvas) {
@@ -674,22 +707,9 @@
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHGrid.Application).initInstance.apply(_ref, ["SGA.Reader.Application.SharedCanvas"].concat(__slice.call(args), [function(that) {
-              var currentSequence, manifestData, options, presentations, textSource;
+              var currentSequence, extractSpatialConstraint, extractTextBody, extractTextTarget, manifestData, options, presentations, textSource;
               options = that.options;
               presentations = [];
-              manifestData = SGA.Reader.Data.Manifest.initInstance();
-              that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange;
-              that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange;
-              that.getItemsProcessed = manifestData.getItemsProcessed;
-              that.getItemsToProcess = manifestData.getItemsToProcess;
-              that.setItemsProcessed = manifestData.setItemsProcessed;
-              that.setItemsToProcess = manifestData.setItemsToProcess;
-              that.addItemsProcessed = manifestData.addItemsProcessed;
-              that.addItemsToProcess = manifestData.addItemsToProcess;
-              textSource = SGA.Reader.Data.TextStore.initInstance();
-              that.withSource = function(file, cb) {
-                return textSource.withFile(file, cb);
-              };
               that.addPresentation = function(config) {
                 var p;
                 p = SGA.Reader.Presentation.Canvas.initInstance(config.container, {
@@ -722,60 +742,116 @@
                 return that.setCanvas(canvasKey);
               });
               that.events.onCanvasChange.addListener(function(k) {
-                var p, pp, seq, _i, _len, _results;
+                var p, pp, seq, _i, _len;
                 that.dataView.canvasAnnotations.setKey(k);
                 seq = that.dataStore.data.getItem(currentSequence);
                 p = seq.sequence.indexOf(k);
                 if (p >= 0 && p !== that.getPosition()) {
                   that.setPosition(p);
                 }
-                _results = [];
                 for (_i = 0, _len = presentations.length; _i < _len; _i++) {
                   pp = presentations[_i];
-                  _results.push(pp[0].setCanvas(k));
+                  pp[0].setCanvas(k);
                 }
-                return _results;
+                return k;
               });
+              manifestData = SGA.Reader.Data.Manifest.initInstance();
+              that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange;
+              that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange;
+              that.getItemsProcessed = manifestData.getItemsProcessed;
+              that.getItemsToProcess = manifestData.getItemsToProcess;
+              that.setItemsProcessed = manifestData.setItemsProcessed;
+              that.setItemsToProcess = manifestData.setItemsToProcess;
+              that.addItemsProcessed = manifestData.addItemsProcessed;
+              that.addItemsToProcess = manifestData.addItemsToProcess;
+              textSource = SGA.Reader.Data.TextStore.initInstance();
+              that.withSource = textSource.withFile;
+              extractSpatialConstraint = function(item, id) {
+                var bits, constraint, _ref, _ref1;
+                if (id == null) {
+                  return;
+                }
+                constraint = manifestData.getItem(id);
+                if (__indexOf.call(constraint.type, 'oaFragmentSelector') >= 0) {
+                  if (constraint.rdfvalue[0].substr(0, 5) === "xywh=") {
+                    item.shape = "Rectangle";
+                    bits = constraint.rdfvalue[0].substr(5).split(",");
+                    item.x = parseInt(bits[0], 10);
+                    item.y = parseInt(bits[1], 10);
+                    item.width = parseInt(bits[2], 10);
+                    return item.height = parseInt(bits[3], 10);
+                  }
+                } else {
+                  if (constraint.oaxbegin != null) {
+                    item.start = parseInt((_ref = constraint.oaxbegin) != null ? _ref[0] : void 0, 10);
+                  }
+                  if (constraint.oaxend != null) {
+                    return item.end = parseInt((_ref1 = constraint.oaxend) != null ? _ref1[0] : void 0, 10);
+                  }
+                }
+              };
+              extractTextTarget = function(item, id) {
+                var styleItem, target, _ref;
+                if (id == null) {
+                  return;
+                }
+                target = manifestData.getItem(id);
+                if (__indexOf.call(target.type, "oaSpecificResource") >= 0) {
+                  item.target = target.oahasSource;
+                  if (target.oahasStyle != null) {
+                    styleItem = manifestData.getItem(target.oahasStyle[0]);
+                    if (__indexOf.call(styleItem.dcformat, "text/css") >= 0) {
+                      item.css = styleItem.cntchars;
+                    }
+                  }
+                  return extractSpatialConstraint(item, (_ref = target.oahasSelector) != null ? _ref[0] : void 0);
+                } else {
+                  return item.target = id;
+                }
+              };
+              extractTextBody = function(item, id) {
+                var body, _ref;
+                if (id == null) {
+                  return;
+                }
+                body = manifestData.getItem(id);
+                textSource.addFile(body.oahasSource);
+                item.source = body.oahasSource;
+                return extractSpatialConstraint(item, (_ref = body.oahasSelector) != null ? _ref[0] : void 0);
+              };
               if (options.url != null) {
                 return manifestData.importFromURL(options.url, function() {
-                  var annos, canvases, extractSpatialConstraint, extractTextBody, extractTextTarget, items, seq, syncer, zones;
+                  var annos, canvases, items, seq, syncer, textAnnos, textSources, zones;
                   items = [];
-                  syncer = MITHGrid.initSynchronizer(function() {
-                    that.addItemsToProcess(1);
-                    return that.dataStore.data.loadItems(items, function() {
-                      return that.addItemsProcessed(1);
-                    });
-                  });
+                  syncer = MITHGrid.initSynchronizer();
                   canvases = manifestData.getCanvases();
                   that.addItemsToProcess(canvases.length);
                   syncer.process(canvases, function(id) {
-                    var item, mitem, _ref, _ref1;
+                    var mitem, _ref, _ref1;
                     that.addItemsProcessed(1);
                     mitem = manifestData.getItem(id);
-                    item = {
+                    return items.push({
                       id: id,
                       type: 'Canvas',
                       width: parseInt((_ref = mitem.exifwidth) != null ? _ref[0] : void 0, 10),
                       height: parseInt((_ref1 = mitem.exifheight) != null ? _ref1[0] : void 0, 10),
                       label: mitem.dctitle || mitem.rdfslabel
-                    };
-                    return items.push(item);
+                    });
                   });
                   zones = manifestData.getZones();
                   that.addItemsToProcess(zones.length);
                   syncer.process(zones, function(id) {
-                    var item, zitem, _ref, _ref1, _ref2;
+                    var zitem, _ref, _ref1, _ref2;
                     that.addItemsProcessed(1);
                     zitem = manifestData.getItem(id);
-                    item = {
+                    return items.push({
                       id: id,
                       type: 'Zone',
                       width: parseInt((_ref = mitem.exifwidth) != null ? _ref[0] : void 0, 10),
                       height: parseInt((_ref1 = mitem.exifheight) != null ? _ref1[0] : void 0, 10),
                       angle: parseInt((_ref2 = mitem.scnaturalAngle) != null ? _ref2[0] : void 0, 10) || 0,
                       label: zitem.rdfslabel
-                    };
-                    return items.push(item);
+                    });
                   });
                   seq = manifestData.getSequences();
                   that.addItemsToProcess(seq.length);
@@ -798,102 +874,234 @@
                     item.sequence = seq;
                     return items.push(item);
                   });
-                  extractSpatialConstraint = function(item, id) {
-                    var bits, constraint, _ref, _ref1;
-                    if (id == null) {
-                      return;
-                    }
-                    constraint = manifestData.getItem(id);
-                    if (__indexOf.call(constraint.type, 'oaFragmentSelector') >= 0) {
-                      if (constraint.rdfvalue[0].substr(0, 5) === "xywh=") {
-                        item.shape = "Rectangle";
-                        bits = constraint.rdfvalue[0].substr(5).split(",");
-                        item.x = parseInt(bits[0], 10);
-                        item.y = parseInt(bits[1], 10);
-                        item.width = parseInt(bits[2], 10);
-                        return item.height = parseInt(bits[3], 10);
-                      }
-                    } else {
-                      if (constraint.oaxbegin != null) {
-                        item.start = parseInt((_ref = constraint.oaxbegin) != null ? _ref[0] : void 0, 10);
-                      }
-                      if (constraint.oaxend != null) {
-                        return item.end = parseInt((_ref1 = constraint.oaxend) != null ? _ref1[0] : void 0, 10);
-                      }
-                    }
-                  };
-                  extractTextTarget = function(item, id) {
-                    var styleItem, target, _ref;
-                    if (id == null) {
-                      return;
-                    }
-                    target = manifestData.getItem(id);
-                    if (__indexOf.call(target.type, "oaSpecificResource") >= 0) {
-                      item.target = target.oahasSource;
-                      if (target.oahasStyle != null) {
-                        styleItem = manifestData.getItem(target.oahasStyle[0]);
-                        if (__indexOf.call(styleItem.dcformat, "text/css") >= 0) {
-                          item.css = styleItem.cntchars;
-                        }
-                      }
-                      return extractSpatialConstraint(item, (_ref = target.oahasSelector) != null ? _ref[0] : void 0);
-                    } else {
-                      return item.target = id;
-                    }
-                  };
-                  extractTextBody = function(item, id) {
-                    var body, _ref;
-                    if (id == null) {
-                      return;
-                    }
-                    body = manifestData.getItem(id);
-                    textSource.addFile(body.oahasSource);
-                    item.source = body.oahasSource;
-                    return extractSpatialConstraint(item, (_ref = body.oahasSelector) != null ? _ref[0] : void 0);
-                  };
+                  textSources = {};
+                  textAnnos = [];
                   annos = manifestData.getAnnotations();
                   that.addItemsToProcess(annos.length);
                   syncer.process(annos, function(id) {
-                    var aitem, imgitem, item, target, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
+                    var aitem, array, f, imgitem, item, sgaTypes, target, _name, _ref, _ref1, _ref2, _ref3, _ref4;
                     that.addItemsProcessed(1);
                     aitem = manifestData.getItem(id);
+                    array = null;
                     item = {
-                      id: aitem.id
+                      id: id
                     };
                     if (__indexOf.call(aitem.type, "scContentAnnotation") >= 0) {
                       extractTextTarget(item, (_ref = aitem.oahasTarget) != null ? _ref[0] : void 0);
                       extractTextBody(item, (_ref1 = aitem.oahasBody) != null ? _ref1[0] : void 0);
+                      if ((_ref2 = textSources[_name = item.source]) == null) {
+                        textSources[_name] = [];
+                      }
+                      textSources[item.source].push([id, item.start, item.end]);
                       item.type = "TextContent";
-                    } else if (__indexOf.call(aitem.type, "sgaLineAnnotation") >= 0) {
-                      extractTextTarget(item, (_ref2 = aitem.oahasTarget) != null ? _ref2[0] : void 0);
-                      item.type = "LineAnnotation";
-                    } else if (__indexOf.call(aitem.type, "sgaDeletionAnnotation") >= 0) {
-                      extractTextTarget(item, (_ref3 = aitem.oahasTarget) != null ? _ref3[0] : void 0);
-                      item.type = "DeletionAnnotation";
-                    } else if (__indexOf.call(aitem.type, "sgaAdditionAnnotation") >= 0) {
-                      extractTextTarget(item, (_ref4 = aitem.oahasTarget) != null ? _ref4[0] : void 0);
-                      item.type = "AdditionAnnotation";
+                      array = items;
                     } else if (__indexOf.call(aitem.type, "scImageAnnotation") >= 0) {
                       imgitem = manifestData.getItem(aitem.oahasBody);
                       if ($.isArray(imgitem)) {
                         imgitem = imgitem[0];
                       }
+                      array = items;
                       item.target = aitem.oahasTarget;
                       item.label = aitem.rdfslabel;
                       item.image = imgitem.oahasSource || aitem.oahasBody;
                       item.type = "Image";
                     } else if (__indexOf.call(aitem.type, "scZoneAnnotation") >= 0) {
                       target = manifestData.getItem(aitem.oahasTarget);
-                      extractSpatialConstraint(item, (_ref5 = target.hasSelector) != null ? _ref5[0] : void 0);
+                      extractSpatialConstraint(item, (_ref3 = target.hasSelector) != null ? _ref3[0] : void 0);
+                      array = items;
                       item.target = target.hasSource;
                       item.label = aitem.rdfslabel;
                       item.type = "ZoneAnnotation";
+                    } else {
+                      sgaTypes = (function() {
+                        var _i, _len, _ref4, _results;
+                        _ref4 = aitem.type;
+                        _results = [];
+                        for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
+                          f = _ref4[_i];
+                          if (f.substr(0, 3) === "sga" && f.substr(f.length - 10) === "Annotation") {
+                            _results.push(f.substr(3));
+                          }
+                        }
+                        return _results;
+                      })();
+                      if (sgaTypes.length > 0) {
+                        extractTextTarget(item, (_ref4 = aitem.oahasTarget) != null ? _ref4[0] : void 0);
+                        item.type = sgaTypes;
+                        array = textAnnos;
+                      }
                     }
-                    if (item.type != null) {
-                      return items.push(item);
+                    if ((item.type != null) && (array != null)) {
+                      return array.push(item);
                     }
                   });
-                  return syncer.done();
+                  return syncer.done(function() {
+                    that.addItemsToProcess(1 + textAnnos.length);
+                    return that.dataStore.data.loadItems(items, function() {
+                      var item, modInfo, modend, modstart, s, setMod, source, sources, _fn, _i, _j, _len, _len1;
+                      items = [];
+                      modstart = {};
+                      modend = {};
+                      modInfo = {};
+                      setMod = function(item) {
+                        var end, id, source, start, _base, _base1, _ref, _ref1, _ref2, _ref3;
+                        source = item.target;
+                        start = item.start;
+                        end = item.end;
+                        id = item.id;
+                        if ($.isArray(id)) {
+                          id = id[0];
+                        }
+                        modInfo[id] = item;
+                        if ((_ref = modstart[source]) == null) {
+                          modstart[source] = {};
+                        }
+                        if ((_ref1 = (_base = modstart[source])[start]) == null) {
+                          _base[start] = [];
+                        }
+                        modstart[source][start].push(id);
+                        if ((_ref2 = modend[source]) == null) {
+                          modend[source] = {};
+                        }
+                        if ((_ref3 = (_base1 = modend[source])[end]) == null) {
+                          _base1[end] = [];
+                        }
+                        return modend[source][end].push(id);
+                      };
+                      for (_i = 0, _len = textAnnos.length; _i < _len; _i++) {
+                        item = textAnnos[_i];
+                        setMod(item);
+                      }
+                      sources = (function() {
+                        var _results;
+                        _results = [];
+                        for (s in modstart) {
+                          _results.push(s);
+                        }
+                        return _results;
+                      })();
+                      that.addItemsToProcess(sources.length);
+                      that.addItemsProcessed(textAnnos.length);
+                      _fn = function(source) {
+                        return that.withSource(source, function(text) {
+                          var br_pushed, id, idx, last_pos, makeLinebreak, makeTextItems, mends, modIds, mstarts, needs_br, p, pos, positions, processNode, pushTextItem, textItems, _k, _l, _len2, _len3, _len4, _m, _ref, _ref1;
+                          textItems = [];
+                          modIds = [];
+                          br_pushed = false;
+                          pushTextItem = function(classes, css, target, start, end) {
+                            return textItems.push({
+                              type: classes,
+                              css: css.join(" "),
+                              text: text.slice(start, end),
+                              id: source + "-" + start + "-" + end,
+                              target: target,
+                              start: start,
+                              end: end
+                            });
+                          };
+                          processNode = function(start, end) {
+                            var classes, css, id, _k, _len2;
+                            classes = [];
+                            css = [];
+                            for (_k = 0, _len2 = modIds.length; _k < _len2; _k++) {
+                              id = modIds[_k];
+                              classes.push(modInfo[id].type);
+                              if ($.isArray(modInfo[id].css)) {
+                                css.push(modInfo[id].css.join(" "));
+                              } else {
+                                css.push(modInfo[id].css);
+                              }
+                            }
+                            if (classes.length === 0) {
+                              classes.push("Text");
+                            }
+                            return makeTextItems(start, end, classes, css);
+                          };
+                          makeTextItems = function(start, end, classes, css) {
+                            var candidate, e, _k, _len2, _ref;
+                            _ref = textSources[source] || [];
+                            for (_k = 0, _len2 = _ref.length; _k < _len2; _k++) {
+                              candidate = _ref[_k];
+                              if (start <= candidate[2] && end >= candidate[1]) {
+                                s = Math.min(Math.max(start, candidate[1]), candidate[2]);
+                                e = Math.max(Math.min(end, candidate[2]), candidate[1]);
+                                pushTextItem(classes, css, candidate[0], s, e);
+                              }
+                            }
+                            return false;
+                          };
+                          makeLinebreak = function(pos) {
+                            var classes;
+                            classes = ["LineBreak"];
+                            return makeTextItems(pos, pos, classes, [""]);
+                          };
+                          mstarts = modstart[source] || [];
+                          mends = modend[source] || [];
+                          last_pos = 0;
+                          positions = ((function() {
+                            var _results;
+                            _results = [];
+                            for (p in mstarts) {
+                              _results.push(parseInt(p, 10));
+                            }
+                            return _results;
+                          })()).concat((function() {
+                            var _results;
+                            _results = [];
+                            for (p in mends) {
+                              _results.push(parseInt(p, 10));
+                            }
+                            return _results;
+                          })()).sort(function(a, b) {
+                            return a - b;
+                          });
+                          for (_k = 0, _len2 = positions.length; _k < _len2; _k++) {
+                            pos = positions[_k];
+                            if (pos !== last_pos) {
+                              processNode(last_pos, pos);
+                              if (br_pushed && !text.substr(last_pos, pos - last_pos).match(/^\s*$/)) {
+                                br_pushed = false;
+                              }
+                              needs_br = false;
+                              _ref = mstarts[pos] || [];
+                              for (_l = 0, _len3 = _ref.length; _l < _len3; _l++) {
+                                id = _ref[_l];
+                                if (__indexOf.call(modInfo[id].type, "LineAnnotation") >= 0) {
+                                  needs_br = true;
+                                }
+                                modIds.push(id);
+                              }
+                              _ref1 = mends[pos] || [];
+                              for (_m = 0, _len4 = _ref1.length; _m < _len4; _m++) {
+                                id = _ref1[_m];
+                                if (__indexOf.call(modInfo[id].type, "LineAnnotation") >= 0) {
+                                  needs_br = true;
+                                }
+                                idx = modIds.indexOf(id);
+                                if (idx > -1) {
+                                  modIds.splice(idx, 1);
+                                }
+                              }
+                              if (needs_br && !br_pushed) {
+                                makeLinebreak(pos);
+                                br_pushed = true;
+                              }
+                              last_pos = pos;
+                            }
+                          }
+                          processNode(last_pos, text.length);
+                          return that.dataStore.data.loadItems(textItems, function() {
+                            return that.addItemsProcessed(1);
+                          });
+                        });
+                      };
+                      for (_j = 0, _len1 = sources.length; _j < _len1; _j++) {
+                        source = sources[_j];
+                        _fn(source);
+                      }
+                      return that.addItemsProcessed(1);
+                    });
+                  });
                 });
               }
             }]));
@@ -1046,7 +1254,42 @@
         is: 'rw'
       },
       Position: {
-        is: 'rw'
+        is: 'lrw',
+        isa: 'numeric'
+      }
+    }
+  });
+
+  MITHGrid.defaults('SGA.Reader.Component.Slider', {
+    variables: {
+      Min: {
+        is: 'rw',
+        isa: 'numeric'
+      },
+      Max: {
+        is: 'rw',
+        isa: 'numeric'
+      },
+      Value: {
+        is: 'rw',
+        isa: 'numeric'
+      }
+    }
+  });
+
+  MITHGrid.defaults('SGA.Reader.Component.PagerControls', {
+    variables: {
+      Min: {
+        is: 'rw',
+        isa: 'numeric'
+      },
+      Max: {
+        is: 'rw',
+        isa: 'numeric'
+      },
+      Value: {
+        is: 'rw',
+        isa: 'numeric'
       }
     }
   });
@@ -1063,11 +1306,13 @@
     variables: {
       Numerator: {
         is: 'rw',
-        "default": 0
+        "default": 0,
+        isa: 'numeric'
       },
       Denominator: {
         is: 'rw',
-        "default": 1
+        "default": 1,
+        isa: 'numeric'
       }
     },
     viewSetup: "<div class=\"progress progress-striped active\">\n  <div class=\"bar\" style=\"width: 0%;\"></div>\n</div>"
@@ -1079,7 +1324,8 @@
         is: 'rw'
       },
       Scale: {
-        is: 'rw'
+        is: 'rw',
+        isa: 'numeric'
       }
     }
   });
@@ -1088,13 +1334,13 @@
     variables: {
       ItemsToProcess: {
         is: 'rw',
-        isa: 'numeric',
-        "default": 0
+        "default": 0,
+        isa: 'numeric'
       },
       ItemsProcessed: {
         is: 'rw',
-        isa: 'numeric',
-        "default": 0
+        "default": 0,
+        isa: 'numeric'
       }
     }
   });

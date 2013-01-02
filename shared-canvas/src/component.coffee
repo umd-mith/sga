@@ -1,5 +1,10 @@
-# # Component
+# # Components
+
 SGAReader.namespace "Component", (Component) ->
+
+  #
+  # ## Component.ProgressBar
+  #
   Component.namespace "ProgressBar", (ProgressBar) ->
     ProgressBar.initInstance = (args...) ->
       MITHGrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
@@ -17,6 +22,9 @@ SGAReader.namespace "Component", (Component) ->
         that.hide = -> 
           $(container).hide()
 
+  #
+  # ## Component.SequenceSelector
+  #
   Component.namespace "SequenceSelector", (SequenceSelector) ->
     SequenceSelector.initInstance = (args...) ->
       MITHGrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
@@ -36,3 +44,73 @@ SGAReader.namespace "Component", (Component) ->
 
         that.finishDisplayUpdate = ->
           that.setSequence $(container).val()
+
+  #
+  # ## Component.Slider
+  #
+  Component.namespace "Slider", (Slider) ->
+    Slider.initInstance = (args...) ->
+      MITHGrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+        that.events.onMinChange.addListener (n) ->
+          $(container).attr
+            min: n
+        that.events.onMaxChange.addListener (n) ->
+          $(container).attr
+            max: n
+        that.events.onValueChange.addListener (n) -> $(container).val(n)
+        $(container).change (e) -> that.setValue $(container).val()
+
+  #
+  # ## Component.PagerControls
+  #
+  Component.namespace "PagerControls", (PagerControls) ->
+    PagerControls.initInstance = (args...) ->
+      MITHGrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+        firstEl = $(container).find(".icon-fast-backward").parent()
+        prevEl = $(container).find(".icon-step-backward").parent()
+        nextEl = $(container).find(".icon-step-forward").parent()
+        lastEl = $(container).find(".icon-fast-forward").parent()
+
+        that.events.onMinChange.addListener (n) ->
+          if n < that.getValue()
+            firstEl.removeClass "disabled"
+            prevEl.removeClass "disabled"
+          else
+            firstEl.addClass "disabled"
+            prevEl.addClass "disabled"
+
+        that.events.onMaxChange.addListener (n) ->
+          if n > that.getValue()
+            nextEl.removeClass "disabled"
+            lastEl.removeClass "disbaled"
+          else
+            nextEl.addClass "disabled"
+            lastEl.addClass "disabled"
+
+        that.events.onValueChange.addListener (n) ->
+          if n > that.getMin()
+            firstEl.removeClass "disabled"
+            prevEl.removeClass "disabled"
+          else
+            firstEl.addClass "disabled"
+            prevEl.addClass "disabled"
+
+          if n < that.getMax()
+            nextEl.removeClass "disabled"
+            lastEl.removeClass "disabled"
+          else
+            nextEl.addClass "disabled"
+            lastEl.addClass "disabled"
+
+        $(prevEl).click (e) ->
+          e.preventDefault()
+          that.addValue -1
+        $(nextEl).click (e) ->
+          e.preventDefault()
+          that.addValue 1
+        $(firstEl).click (e) ->
+          e.preventDefault()
+          that.setValue that.getMin()
+        $(lastEl).click (e) ->
+          e.preventDefault()
+          that.setValue that.getMax()
