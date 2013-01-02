@@ -60,7 +60,7 @@
 <div class="row-fluid">
 <div class="span12">
 <form class="well form-inline">
-    <div style="float: right">
+    <div style="float: right" id="pager-controls">
       <a href="#" class="btn" id="first-page"><i class="icon icon-fast-backward"></i></a>
       <a href="#" class="btn" id="prev-page"><i class="icon icon-step-backward"></i></a>
       <a href="#" class="btn" id="next-page"><i class="icon icon-step-forward"></i></a>
@@ -117,20 +117,45 @@
     builder.onManifest(
       "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
     , function(app) {
-      var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
+      var filter, pageSlider, pager;
+
+      filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", { 
         dataView: app.dataView.sequences
       });
+
+      pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
+
+      pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
+
+      pageSlider.events.onValueChange.addListener( app.setPosition );
+      pager.events.onValueChange.addListener( app.setPosition );
+
+      app.events.onPositionChange.addListener( function(n) {
+        app.lockPosition();
+        pageSlider.setValue(n);
+        pager.setValue(n);
+        app.unlockPosition();
+      } );
+
       filter.events.onSequenceChange.addListener( app.setSequence );
+
       app.events.onSequenceChange.addListener( function(s) {
         var seq = app.dataStore.data.getItem(s);
         if(seq != null && seq.sequence != null) {
-          $("#page-location").attr({
-            min: 0,
-            max: seq.sequence.length-1
-          });
+          pageSlider.setMin(0);
+          pager.setMin(0);
+
+          pageSlider.setMax(seq.sequence.length-1);
+          pager.setMax(seq.sequence.length-1);
+
+          if(!(app.getPosition() != null)) {
+            app.setPosition(0);
+          }
         }
       });
+
       app.setSequence( filter.getSequence() );
+
       app.events.onCanvasChange.addListener(function(c) {
         var item = app.dataStore.data.getItem(c);
         if(item.label !== undefined) {
@@ -140,57 +165,7 @@
           $("#canvas-label").text("(no label)");
         }
       });
-      $("#first-page").click(function(e) {
-        e.preventDefault();
-        app.setPosition(0);
-      });
-      $("#prev-page").click(function(e) {
-        var p = app.getPosition();
-        e.preventDefault();
-        if(p > 0) {
-          p -= 1;
-          app.setPosition(p);
-        }
-      });
-      $("#next-page").click(function(e) {
-        var p = app.getPosition();
-        var seq = app.dataStore.data.getItem(app.getSequence());
-        e.preventDefault();
-        if(seq != null && seq.sequence != null && p < seq.sequence.length-1) {
-          p += 1;
-          app.setPosition(p);
-        }
-      });
-      $("#page-location").change(function(e) {
-        app.setPosition($(this).val());
-      });
-      $("#last-page").click(function(e) {
-        var seq = app.dataStore.data.getItem(app.getSequence());
-        e.preventDefault();
-        if(seq != null && seq.sequence != null) {
-          app.setPosition(seq.sequence.length-1);
-        }
-      });
-      app.events.onPositionChange.addListener(function(p) {
-        $("#page-location").val(p);
-        if(p > 0) {
-          $("#prev-page").removeClass("disabled");
-          $("#first-page").removeClass("disabled");
-        }
-        else {
-          $("#prev-page").addClass("disabled");
-          $("#first-page").addClass("disabled");
-        }
-        var seq = app.dataStore.data.getItem(app.getSequence());
-        if(seq != null && seq.sequence != null && p < seq.sequence.length-1) {
-          $("#next-page").removeClass("disabled");
-          $("#last-page").removeClass("disabled");
-        }
-        else {
-          $("#next-page").addClass("disabled");
-          $("#last-page").addClass("disabled");
-        }
-      });
+
     });
   });
 </script>

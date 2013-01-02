@@ -1,6 +1,56 @@
 # # Presentations
 SGAReader.namespace "Presentation", (Presentation) ->
 
+  #
+  # ## Presentation.TextContent
+  #
+
+  Presentation.namespace "TextContent", (TextContent) ->
+    TextContent.initInstance = (args...) ->
+      MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
+        options = that.options
+
+        makeAnnoLens = (type) ->
+          that.addLens type, (container, view, model, id) ->
+            rendering = {}
+            el = $("<span></span>")
+            rendering.$el = el
+            item = model.getItem id
+            el.text item.text[0]
+            el.addClass item.type.join(" ")
+            el.attr "style", item.css?[0]
+            $(container).append el
+            rendering.remove = ->
+              el.remove()
+            rendering.update = (item) ->
+              el.text item.text[0]
+            rendering
+
+        #
+        # We expect an HTML container for this to which we can append
+        # all of the text content pieces that belong to this container.
+        # For now, we are dependent on the data store to retain the ordering
+        # of items based on insertion order.
+        #
+        makeAnnoLens 'AdditionAnnotation'
+        makeAnnoLens 'DeletionAnnotation'
+        makeAnnoLens 'LineAnnotation'
+        makeAnnoLens 'Text'
+
+        that.addLens 'LineBreak', (container, view, model, id) ->
+          rendering = {}
+          el = $("<br/>")
+          rendering.$el = el
+          $(container).append(el)
+
+          rendering.remove = -> el.remove()
+          rendering.update = (item) ->
+
+          rendering
+
+  #
+  # ## Presentation.Zone
+  #
   Presentation.namespace "Zone", (Zone) ->
     Zone.initInstance = (args...) ->
       # We expect container to be in the SVG image
@@ -28,10 +78,19 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           rendering.update = (item) ->
             # do nothing for now - eventually, update image
+            if item.image?[0]? and svgRoot?
+              x = if item.x?[0]? then item.x[0] else 0
+              y = if item.y?[0]? then item.y[0] else 0
+              width = if item.width?[0]? then item.width[0] else options.width - x
+              height = if item.height?[0]? then item.height[0] else options.height - y
+              svgRoot.remove svgImage
+              svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
+                preserveAspectRatio: 'none'
+              })
 
           rendering.remove = ->
-            #if svgImage? and svgRoot?
-            #  svgRoot.remove svgImage
+            if svgImage? and svgRoot?
+              svgRoot.remove svgImage
           rendering
 
         that.addLens 'ZoneAnnotation', (container, view, model, id) ->
@@ -56,7 +115,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           zoneDataView = MITHGrid.Data.SubSet.initInstance
             dataStore: model
             expressions: [ '!target' ]
-            key: id
+            #key: id
 
           zone = Zone.initInstance zoneContainer,
             types: options.types
@@ -65,6 +124,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
             application: options.application
             heigth: height
             width: width
+
+          zoneDataView.setKey id
 
           rendering._destroy = ->
             zone._destroy() if zone._destroy?
@@ -75,6 +136,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
             #  $(container).empty()
             #  svgRoot.remove container
             rendering._destroy()
+ 
+          rendering.update = (item) ->
+            x = if item.x?[0]? then item.x[0] else 0
+            y = if item.y?[0]? then item.y[0] else 0
+            width = if item.width?[0]? then item.width[0] else options.width - x
+            height = if item.height?[0]? then item.height[0] else options.height - y
+            $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
  
           rendering
 
@@ -96,151 +164,51 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(textContainer)
 
+          bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+          rootEl = document.createElement('div')
+          $(rootEl).addClass("text-content")
+          $(rootEl).attr("id", id)
+          $(rootEl).css("font-size", 150)
+          $(rootEl).css("line-height", 1.15)
+          bodyEl.appendChild(rootEl)
+          textContainer.appendChild(bodyEl)
+
+          textDataView = MITHGrid.Data.SubSet.initInstance
+            dataStore: model
+            expressions: [ '!target' ]
+            #key: id
+
+
+          text = Presentation.TextContent.initInstance rootEl,
+            types: options.types
+            dataView: textDataView
+            svgRoot: svgRoot
+            application: options.application
+            height: height
+            width: width
+
+          textDataView.setKey id
+
+          rendering._destroy = ->
+            text._destroy() if text._destroy?
+            textDataView._destroy() if textDataView._destroy?
+
           rendering.remove = ->
             #$(textContainer).empty()
             #svgRoot.remove textContainer
 
-          processNode = (info) ->
-            classes = []
-            modes = []
-            css = []
-            for id in info.modIds
-              modes.push modinfo[id].type
-              css.push modinfo[id].css
-
-            if 'LineAnnotation' in modes
-              classes.push 'line'
-            if 'AdditionAnnotation' in modes
-              classes.push 'addition'
-            if 'DeletionAnnotation' in modes
-              classes.push 'deletion'
-
-            classes.push "text" if classes.length == 0
-
-            return {
-              type: 'span'
-              text: info.acc
-              classes: classes.join(' ')
-              modes: modes
-              css: css.join(" ")
-            }
-
-          # takes a text string and a series of mods made at positions in the string
-          # returns a sequence of DOM elements and a grouping of elements based on
-          # type of mod being made
-          compileText = (info) ->
-            text = info.text
-            mods = info.mods
-            offset = info.offset
-
-            current_el =
-              acc: ''
-              modIds: [ ]
-
-            results = []
-            br_pushed = false
-
-            for pos in [ 0 ... text.length ]
-              if !mods[pos+offset]?
-                br_pushed = false unless text[pos].match(/^\s+$/)
-                current_el.acc += text[pos]
-              else
-                results.push processNode(current_el)
-
-                current_el.acc = text[pos]
-                for mod in mods[pos+offset]
-                  minfo = modinfo[mod.id]
-                  if minfo.type == "LineAnnotation"
-                    if !br_pushed
-                      results.push { type: 'br', modes: [], acc: '', css: '' }
-                      br_pushed = true
-                  if mod.action == 'start'
-                    current_el.modIds.push mod.id
-                  if mod.action == 'end'
-                    current_el.modIds = (i for i in current_el.modIds when i != mod.id)
-
-            results.push processNode(current_el)
-            results
-
-          text = ""
-          mods = {}
-          modinfo = {}
-
-          setMod = (id, pos, pref, type, css) ->
-            pos = pos[0] if $.isArray(pos)
-            mods[pos] = [] unless mods[pos]?
-            type = type[0] if $.isArray(type)
-            css = css.join(" ") if $.isArray(css)
-            modinfo[id] =
-              type: type
-              css: css
-            mods[pos].push
-              id: id
-              action: pref
-
-          app.withSource item.source?[0], (content) ->
-            text = content.substr(item.start[0], item.end[0] - item.start[0])
-            #highlightDS.setKeyRange item.start[0], item.end[0]
-            # now we mark up the text as indicated by the highlights
-            # we want annotations that satisfy the following:
-            #
-            # might be useful to have a data store that lets us easily and
-            # quickly find overlapping ranges
-            #
-            # TODO: still need to manage the .target = tei.id bit
-            #
-            #highlightDS.visit (id) ->
-            #  # now apply annotation to text
-            #  hitem = highlightDS.getItem id
-            #  setMod hitem.start, 'start', hitem.type
-            #  setMod hitem.start, 'end', hitem.type
-
-            for annoId in annoExpr.evaluate(item.source)
-              hitem = model.getItem annoId
-              start = hitem.start[0]
-              end = hitem.end[0]
-              if start <= item.end[0] && end >= item.start[0]
-                start = item.start[0] if start < item.start[0]
-                end = item.end[0] if end > item.end[0]
-                setMod annoId, hitem.start, 'start', hitem.type, hitem.css
-                setMod annoId, hitem.end,   'end',   hitem.type, hitem.css
-
-            nodes = compileText
-              text: text
-              mods: mods
-              offset: item.start[0]
-
-            tags = {}
-            bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')   
-            rootEl = document.createElement('div')
-            $(rootEl).addClass("text-content")
-            $(rootEl).css("font-size", 150)
-            $(rootEl).css("line-height", 1.15)
-            bodyEl.appendChild(rootEl)
-
-            #numberOfLines = 0
-            for node in nodes
-              el = $("<#{node.type} />")
-              if node.type == "br"
-                $(rootEl).append($("<span class='linebreak'></span>"))
-                #numberOfLines += 1
-              else
-                el.text(node.text)
-              el.addClass(node.classes)
-              el.attr("style", node.css)
-              $(rootEl).append(el)
-              for mode in node.modes
-                tags[mode] ?= []
-                tags[mode].push el
-            #if numberOfLines > 24
-            #  # make the font height fit into the page
-            #  $(rootEl).css("font-size", parseInt(30*100 / numberOfLines, 10) + "%");   
-            textContainer.appendChild(bodyEl)
-
           rendering.update = (item) ->
-            # do nothing for now
+            x = if item.x?[0]? then item.x[0] else 0
+            y = if item.y?[0]? then item.y[0] else 0
+            width = if item.width?[0]? then item.width[0] else options.width - x
+            height = if item.height?[0]? then item.height[0] else options.height - y
+            $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+
           rendering
 
+  #
+  # ## Presentation.Canvas
+  #
   Presentation.namespace "Canvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
       MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
@@ -252,23 +220,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # and then we apply any annotations that modify how we display
         # the text before we create the svg elements - that way, we get
         # things like line breaks
-        #
-        # .target = tei.id AND
-        # ( .start <= item.end[0] OR
-        #   .end >= item.start[0] )
-        #
 
         highlightDS = null
 
         annoExpr = that.dataView.prepare(['!target'])
-
-        #if 'Text' in (options.types || [])
-        #  highlightDS = MITHGrid.Data.RangePager.initInstance
-        #    dataStore: MITHGrid.Data.View.initInstance
-        #      dataStore: that.dataView
-        #      type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
-        #    leftExpressions: [ '.end' ]
-        #    rightExpressions: [ '.start' ]
 
         pendingSVGfctns = []
         SVG = (cb) ->
