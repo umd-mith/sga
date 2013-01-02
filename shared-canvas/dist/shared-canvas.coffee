@@ -3,11 +3,21 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-#  
-# Date: Wed Dec 5 11:08:07 2012 -0500
+# Date: Wed Dec 5 11:39:48 2012 -0500
 #
-# License TBD.
+# (c) Copyright University of Maryland 2012.  All rights reserved.
 #
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 ###
 
 (($, MITHGrid) ->
@@ -17,6 +27,10 @@
     # # Core Utilities
     # # Data Managment
     SGAReader.namespace "Data", (Data) ->
+    
+      #
+      # ## Data.TextStore
+      #
       Data.namespace "TextStore", (TextStore) ->
         TextStore.initInstance = (args...) ->
           MITHGrid.initInstance args..., (that) ->
@@ -48,7 +62,16 @@
               else if loadingFiles[file]?
                 loadingFiles[file].push cb
     
+      #
+      # ## Data.Manifest
+      #
       Data.namespace "Manifest", (Manifest) ->
+    
+        #
+        # We list all of the namespaces that we care about and the prefix
+        # we map them to. Some of the namespaces are easy "misspellings"
+        # that let us support older namespaces.
+        #
         NS =
           "http://dms.stanford.edu/ns/": "sc"
           "http://www.shared-canvas.org/ns/": "sc"
@@ -94,25 +117,16 @@
             that.importJSON = (json, cb) ->
               # we care about certain namespaces - others we ignore
               # those we care about, we translate for datastore
-              # {nsPrefix}-{localName}
+              # {nsPrefix}{localName}
               items = []
-              syncer = MITHGrid.initSynchronizer ->
-                that.addItemsProcessed 1
-                setTimeout ->
-                  for item in items
-                    if data.contains(item.id)
-                      data.updateItems [ item ]
-                    else
-                      data.loadItems [ item ]
-                  cb() if cb?
-                , 0
-              subjects = (s for s of json when json.hasOwnProperty(s))
+              syncer = MITHGrid.initSynchronizer()
+              subjects = (s for s of json) # when json.hasOwnProperty(s))
               that.addItemsToProcess subjects.length
               syncer.process subjects, (s) ->
-                ps = json[s]
+                predicates = json[s]
                 item =
                   id: s
-                for p, os of ps
+                for p, os of predicates
                    values = []
                    if p == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
                      for o in os
@@ -125,6 +139,13 @@
                      for o in os
                        if o.type == "literal"
                          values.push o.value
+                       #
+                       # Sometimes, references to blank nodes are wrapped in
+                       # parenthesis, but the subject IDs will be with a leading
+                       # _:. For example, an object uri/bnode in the form
+                       # "(123abc)" refers to a resource with the URI
+                       # "_:123abc".
+                       #
                        else if o.type == "uri"
                          if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
                            values.push "_:" + o.value.substr(1,o.value.length-2)
@@ -144,6 +165,15 @@
                 if !item.type? or item.type.length == 0
                   item.type = 'Blank'
      
+                #
+                # If the manifest indicates that another document describes
+                # this resource, then we throw away the current item we've built
+                # and load the data before continuing processing for this
+                # resource.
+                #
+                # We are not using this in the current SGA manifest, so this
+                # might be broken - but this is where support would be hooked in.
+                #
                 if item.oreisDescribedBy?.length > 0
                   for url in item.oreisDescribedBy
                     syncer.increment()
@@ -152,7 +182,16 @@
                   items.push item 
                 that.addItemsProcessed 1
     
-              syncer.done()
+              syncer.done ->
+                that.addItemsProcessed 1
+                setTimeout ->
+                  for item in items
+                    if data.contains(item.id)
+                      data.updateItems [ item ]
+                    else
+                      data.loadItems [ item ]
+                  cb() if cb?
+                , 0
     
             itemsWithType = (type) ->
               type = [ type ] if !$.isArray(type)
@@ -160,9 +199,8 @@
               data.getSubjectsUnion(types, "type").items()
     
             #
-            # Get things of different types
-            #
-            # "sc-Canvas" <- type
+            # Get things of different types. For example, "scCanvas" gets
+            # all of the canvas items.
             #
             that.getCanvases    = -> itemsWithType 'scCanvas'
             that.getZones       = -> itemsWithType 'scZone'
@@ -179,6 +217,56 @@
     # # Presentations
     SGAReader.namespace "Presentation", (Presentation) ->
     
+      #
+      # ## Presentation.TextContent
+      #
+    
+      Presentation.namespace "TextContent", (TextContent) ->
+        TextContent.initInstance = (args...) ->
+          MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
+            options = that.options
+    
+            makeAnnoLens = (type) ->
+              that.addLens type, (container, view, model, id) ->
+                rendering = {}
+                el = $("<span></span>")
+                rendering.$el = el
+                item = model.getItem id
+                el.text item.text[0]
+                el.addClass item.type.join(" ")
+                el.attr "style", item.css?[0]
+                $(container).append el
+                rendering.remove = ->
+                  el.remove()
+                rendering.update = (item) ->
+                  el.text item.text[0]
+                rendering
+    
+            #
+            # We expect an HTML container for this to which we can append
+            # all of the text content pieces that belong to this container.
+            # For now, we are dependent on the data store to retain the ordering
+            # of items based on insertion order.
+            #
+            makeAnnoLens 'AdditionAnnotation'
+            makeAnnoLens 'DeletionAnnotation'
+            makeAnnoLens 'LineAnnotation'
+            makeAnnoLens 'Text'
+    
+            that.addLens 'LineBreak', (container, view, model, id) ->
+              rendering = {}
+              el = $("<br/>")
+              rendering.$el = el
+              $(container).append(el)
+    
+              rendering.remove = -> el.remove()
+              rendering.update = (item) ->
+    
+              rendering
+    
+      #
+      # ## Presentation.Zone
+      #
       Presentation.namespace "Zone", (Zone) ->
         Zone.initInstance = (args...) ->
           # We expect container to be in the SVG image
@@ -206,10 +294,19 @@
     
               rendering.update = (item) ->
                 # do nothing for now - eventually, update image
+                if item.image?[0]? and svgRoot?
+                  x = if item.x?[0]? then item.x[0] else 0
+                  y = if item.y?[0]? then item.y[0] else 0
+                  width = if item.width?[0]? then item.width[0] else options.width - x
+                  height = if item.height?[0]? then item.height[0] else options.height - y
+                  svgRoot.remove svgImage
+                  svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
+                    preserveAspectRatio: 'none'
+                  })
     
               rendering.remove = ->
-                #if svgImage? and svgRoot?
-                #  svgRoot.remove svgImage
+                if svgImage? and svgRoot?
+                  svgRoot.remove svgImage
               rendering
     
             that.addLens 'ZoneAnnotation', (container, view, model, id) ->
@@ -234,7 +331,7 @@
               zoneDataView = MITHGrid.Data.SubSet.initInstance
                 dataStore: model
                 expressions: [ '!target' ]
-                key: id
+                #key: id
     
               zone = Zone.initInstance zoneContainer,
                 types: options.types
@@ -243,6 +340,8 @@
                 application: options.application
                 heigth: height
                 width: width
+    
+              zoneDataView.setKey id
     
               rendering._destroy = ->
                 zone._destroy() if zone._destroy?
@@ -253,6 +352,13 @@
                 #  $(container).empty()
                 #  svgRoot.remove container
                 rendering._destroy()
+     
+              rendering.update = (item) ->
+                x = if item.x?[0]? then item.x[0] else 0
+                y = if item.y?[0]? then item.y[0] else 0
+                width = if item.width?[0]? then item.width[0] else options.width - x
+                height = if item.height?[0]? then item.height[0] else options.height - y
+                $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
      
               rendering
     
@@ -274,151 +380,51 @@
               $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(textContainer)
     
+              bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+              rootEl = document.createElement('div')
+              $(rootEl).addClass("text-content")
+              $(rootEl).attr("id", id)
+              $(rootEl).css("font-size", 150)
+              $(rootEl).css("line-height", 1.15)
+              bodyEl.appendChild(rootEl)
+              textContainer.appendChild(bodyEl)
+    
+              textDataView = MITHGrid.Data.SubSet.initInstance
+                dataStore: model
+                expressions: [ '!target' ]
+                #key: id
+    
+    
+              text = Presentation.TextContent.initInstance rootEl,
+                types: options.types
+                dataView: textDataView
+                svgRoot: svgRoot
+                application: options.application
+                height: height
+                width: width
+    
+              textDataView.setKey id
+    
+              rendering._destroy = ->
+                text._destroy() if text._destroy?
+                textDataView._destroy() if textDataView._destroy?
+    
               rendering.remove = ->
                 #$(textContainer).empty()
                 #svgRoot.remove textContainer
     
-              processNode = (info) ->
-                classes = []
-                modes = []
-                css = []
-                for id in info.modIds
-                  modes.push modinfo[id].type
-                  css.push modinfo[id].css
-    
-                if 'LineAnnotation' in modes
-                  classes.push 'line'
-                if 'AdditionAnnotation' in modes
-                  classes.push 'addition'
-                if 'DeletionAnnotation' in modes
-                  classes.push 'deletion'
-    
-                classes.push "text" if classes.length == 0
-    
-                return {
-                  type: 'span'
-                  text: info.acc
-                  classes: classes.join(' ')
-                  modes: modes
-                  css: css.join(" ")
-                }
-    
-              # takes a text string and a series of mods made at positions in the string
-              # returns a sequence of DOM elements and a grouping of elements based on
-              # type of mod being made
-              compileText = (info) ->
-                text = info.text
-                mods = info.mods
-                offset = info.offset
-    
-                current_el =
-                  acc: ''
-                  modIds: [ ]
-    
-                results = []
-                br_pushed = false
-    
-                for pos in [ 0 ... text.length ]
-                  if !mods[pos+offset]?
-                    br_pushed = false unless text[pos].match(/^\s+$/)
-                    current_el.acc += text[pos]
-                  else
-                    results.push processNode(current_el)
-    
-                    current_el.acc = text[pos]
-                    for mod in mods[pos+offset]
-                      minfo = modinfo[mod.id]
-                      if minfo.type == "LineAnnotation"
-                        if !br_pushed
-                          results.push { type: 'br', modes: [], acc: '', css: '' }
-                          br_pushed = true
-                      if mod.action == 'start'
-                        current_el.modIds.push mod.id
-                      if mod.action == 'end'
-                        current_el.modIds = (i for i in current_el.modIds when i != mod.id)
-    
-                results.push processNode(current_el)
-                results
-    
-              text = ""
-              mods = {}
-              modinfo = {}
-    
-              setMod = (id, pos, pref, type, css) ->
-                pos = pos[0] if $.isArray(pos)
-                mods[pos] = [] unless mods[pos]?
-                type = type[0] if $.isArray(type)
-                css = css.join(" ") if $.isArray(css)
-                modinfo[id] =
-                  type: type
-                  css: css
-                mods[pos].push
-                  id: id
-                  action: pref
-    
-              app.withSource item.source?[0], (content) ->
-                text = content.substr(item.start[0], item.end[0] - item.start[0])
-                #highlightDS.setKeyRange item.start[0], item.end[0]
-                # now we mark up the text as indicated by the highlights
-                # we want annotations that satisfy the following:
-                #
-                # might be useful to have a data store that lets us easily and
-                # quickly find overlapping ranges
-                #
-                # TODO: still need to manage the .target = tei.id bit
-                #
-                #highlightDS.visit (id) ->
-                #  # now apply annotation to text
-                #  hitem = highlightDS.getItem id
-                #  setMod hitem.start, 'start', hitem.type
-                #  setMod hitem.start, 'end', hitem.type
-    
-                for annoId in annoExpr.evaluate(item.source)
-                  hitem = model.getItem annoId
-                  start = hitem.start[0]
-                  end = hitem.end[0]
-                  if start <= item.end[0] && end >= item.start[0]
-                    start = item.start[0] if start < item.start[0]
-                    end = item.end[0] if end > item.end[0]
-                    setMod annoId, hitem.start, 'start', hitem.type, hitem.css
-                    setMod annoId, hitem.end,   'end',   hitem.type, hitem.css
-    
-                nodes = compileText
-                  text: text
-                  mods: mods
-                  offset: item.start[0]
-    
-                tags = {}
-                bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')   
-                rootEl = document.createElement('div')
-                $(rootEl).addClass("text-content")
-                $(rootEl).css("font-size", 150)
-                $(rootEl).css("line-height", 1.15)
-                bodyEl.appendChild(rootEl)
-    
-                #numberOfLines = 0
-                for node in nodes
-                  el = $("<#{node.type} />")
-                  if node.type == "br"
-                    $(rootEl).append($("<span class='linebreak'></span>"))
-                    #numberOfLines += 1
-                  else
-                    el.text(node.text)
-                  el.addClass(node.classes)
-                  el.attr("style", node.css)
-                  $(rootEl).append(el)
-                  for mode in node.modes
-                    tags[mode] ?= []
-                    tags[mode].push el
-                #if numberOfLines > 24
-                #  # make the font height fit into the page
-                #  $(rootEl).css("font-size", parseInt(30*100 / numberOfLines, 10) + "%");   
-                textContainer.appendChild(bodyEl)
-    
               rendering.update = (item) ->
-                # do nothing for now
+                x = if item.x?[0]? then item.x[0] else 0
+                y = if item.y?[0]? then item.y[0] else 0
+                width = if item.width?[0]? then item.width[0] else options.width - x
+                height = if item.height?[0]? then item.height[0] else options.height - y
+                $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+    
               rendering
     
+      #
+      # ## Presentation.Canvas
+      #
       Presentation.namespace "Canvas", (Canvas) ->
         Canvas.initInstance = (args...) ->
           MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
@@ -430,23 +436,10 @@
             # and then we apply any annotations that modify how we display
             # the text before we create the svg elements - that way, we get
             # things like line breaks
-            #
-            # .target = tei.id AND
-            # ( .start <= item.end[0] OR
-            #   .end >= item.start[0] )
-            #
     
             highlightDS = null
     
             annoExpr = that.dataView.prepare(['!target'])
-    
-            #if 'Text' in (options.types || [])
-            #  highlightDS = MITHGrid.Data.RangePager.initInstance
-            #    dataStore: MITHGrid.Data.View.initInstance
-            #      dataStore: that.dataView
-            #      type: ['LineAnnotation', 'DeleteAnnotation', 'AddAnnotation']
-            #    leftExpressions: [ '.end' ]
-            #    rightExpressions: [ '.start' ]
     
             pendingSVGfctns = []
             SVG = (cb) ->
@@ -525,8 +518,13 @@
                   svgRoot: svgRoot
 
     # # Controllers
-    # # Component
+    # # Components
+    
     SGAReader.namespace "Component", (Component) ->
+    
+      #
+      # ## Component.ProgressBar
+      #
       Component.namespace "ProgressBar", (ProgressBar) ->
         ProgressBar.initInstance = (args...) ->
           MITHGrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
@@ -544,6 +542,9 @@
             that.hide = -> 
               $(container).hide()
     
+      #
+      # ## Component.SequenceSelector
+      #
       Component.namespace "SequenceSelector", (SequenceSelector) ->
         SequenceSelector.initInstance = (args...) ->
           MITHGrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
@@ -563,42 +564,111 @@
     
             that.finishDisplayUpdate = ->
               that.setSequence $(container).val()
+    
+      #
+      # ## Component.Slider
+      #
+      Component.namespace "Slider", (Slider) ->
+        Slider.initInstance = (args...) ->
+          MITHGrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+            that.events.onMinChange.addListener (n) ->
+              $(container).attr
+                min: n
+            that.events.onMaxChange.addListener (n) ->
+              $(container).attr
+                max: n
+            that.events.onValueChange.addListener (n) -> $(container).val(n)
+            $(container).change (e) -> that.setValue $(container).val()
+    
+      #
+      # ## Component.PagerControls
+      #
+      Component.namespace "PagerControls", (PagerControls) ->
+        PagerControls.initInstance = (args...) ->
+          MITHGrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+            firstEl = $(container).find(".icon-fast-backward").parent()
+            prevEl = $(container).find(".icon-step-backward").parent()
+            nextEl = $(container).find(".icon-step-forward").parent()
+            lastEl = $(container).find(".icon-fast-forward").parent()
+    
+            that.events.onMinChange.addListener (n) ->
+              if n < that.getValue()
+                firstEl.removeClass "disabled"
+                prevEl.removeClass "disabled"
+              else
+                firstEl.addClass "disabled"
+                prevEl.addClass "disabled"
+    
+            that.events.onMaxChange.addListener (n) ->
+              if n > that.getValue()
+                nextEl.removeClass "disabled"
+                lastEl.removeClass "disbaled"
+              else
+                nextEl.addClass "disabled"
+                lastEl.addClass "disabled"
+    
+            that.events.onValueChange.addListener (n) ->
+              if n > that.getMin()
+                firstEl.removeClass "disabled"
+                prevEl.removeClass "disabled"
+              else
+                firstEl.addClass "disabled"
+                prevEl.addClass "disabled"
+    
+              if n < that.getMax()
+                nextEl.removeClass "disabled"
+                lastEl.removeClass "disabled"
+              else
+                nextEl.addClass "disabled"
+                lastEl.addClass "disabled"
+    
+            $(prevEl).click (e) ->
+              e.preventDefault()
+              that.addValue -1
+            $(nextEl).click (e) ->
+              e.preventDefault()
+              that.addValue 1
+            $(firstEl).click (e) ->
+              e.preventDefault()
+              that.setValue that.getMin()
+            $(lastEl).click (e) ->
+              e.preventDefault()
+              that.setValue that.getMax()
 
     # # Application
+    
     SGAReader.namespace "Application", (Application) ->
+      #
+      # ## Application.SharedCanvas
+      #
       Application.namespace "SharedCanvas", (SharedCanvas) ->
         SharedCanvas.initInstance = (args...) ->
           MITHGrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
             options = that.options
     
+            #
+            # ### Presentation Coordination
+            #
+    
             presentations = []
-            manifestData = SGA.Reader.Data.Manifest.initInstance()
-            that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
-            that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
-            that.getItemsProcessed = manifestData.getItemsProcessed
-            that.getItemsToProcess = manifestData.getItemsToProcess
-            that.setItemsProcessed = manifestData.setItemsProcessed
-            that.setItemsToProcess = manifestData.setItemsToProcess
-            that.addItemsProcessed = manifestData.addItemsProcessed
-            that.addItemsToProcess = manifestData.addItemsToProcess
     
-            textSource = SGA.Reader.Data.TextStore.initInstance()
-    
-            that.withSource = (file, cb) ->
-              textSource.withFile file, cb
-    
+            # This is a convenience method for creating a Shared Canvas
+            # presentation and tying it to the data management application.
+            # All presentations linked to this application will be coordinated
+            # when the current sequence or canvas changes.
+            #
             that.addPresentation = (config) ->
-              # a presentation should only get a list of canvases
-              # we really want a paging view that we can load with a 
-              # sequence
-              # we need a sequence selector
-              # and a data view that provides a way to walk that sequence
               p = SGA.Reader.Presentation.Canvas.initInstance config.container,
                 types: config.types
                 application: -> that
                 dataView: that.dataView.canvasAnnotations
               presentations.push [ p, config.container ]
     
+            #
+            # When we change the sequence, we find out where our current
+            # canvas is in the new sequence and set the position to reflect
+            # the new relationship between the canvas and the current sequence.
+            #
             currentSequence = null
     
             that.events.onSequenceChange.addListener (s) ->
@@ -610,11 +680,20 @@
               p = 0 if p < 0
               that.setPosition p
                 
+            #
+            # The position lets us manage our path through a sequence without
+            # having to know the names of the canvases.
+            #
             that.events.onPositionChange.addListener (p) ->
               seq = that.dataStore.data.getItem currentSequence
               canvasKey = seq.sequence?[p]
               that.setCanvas canvasKey
     
+            #
+            # But if we do know the name of the canvas we want to see, we
+            # can switch to it and everything else will be kept in sync as
+            # long as the canvas is in the current sequence.
+            #
             that.events.onCanvasChange.addListener (k) ->
               that.dataView.canvasAnnotations.setKey k
               seq = that.dataStore.data.getItem currentSequence
@@ -622,46 +701,117 @@
               if p >= 0 && p != that.getPosition()
                 that.setPosition p
               pp[0].setCanvas k for pp in presentations
+              k
+    
+            #
+            # ### Manifest Import
+            #
+    
+            #
+            # manifestData holds the data read from the shared canvas
+            # manifest that we then process into the application's data store.
+            #
+            manifestData = SGA.Reader.Data.Manifest.initInstance()
+    
+            #
+            # We expose several of the manifestData methods so that things like
+            # the progress bar can know where we are in the process.
+            #
+            that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
+            that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
+            that.getItemsProcessed = manifestData.getItemsProcessed
+            that.getItemsToProcess = manifestData.getItemsToProcess
+            that.setItemsProcessed = manifestData.setItemsProcessed
+            that.setItemsToProcess = manifestData.setItemsToProcess
+            that.addItemsProcessed = manifestData.addItemsProcessed
+            that.addItemsToProcess = manifestData.addItemsToProcess
+    
+            #
+            # textSource manages fetching and storing all of the TEI
+            # files that we will be referencing in our text content
+            # annotations.
+            #
+            textSource = SGA.Reader.Data.TextStore.initInstance()
+    
+            that.withSource = textSource.withFile
+    
+            extractSpatialConstraint = (item, id) ->
+              return unless id?
+              constraint = manifestData.getItem id
+              if 'oaFragmentSelector' in constraint.type
+                if constraint.rdfvalue[0].substr(0,5) == "xywh="
+                  item.shape = "Rectangle"
+                  bits = constraint.rdfvalue[0].substr(5).split(",")
+                  item.x = parseInt(bits[0],10)
+                  item.y = parseInt(bits[1],10)
+                  item.width = parseInt(bits[2],10)
+                  item.height = parseInt(bits[3],10)
+              else
+                if constraint.oaxbegin?
+                  item.start = parseInt(constraint.oaxbegin?[0], 10)
+                if constraint.oaxend?
+                  item.end = parseInt(constraint.oaxend?[0], 10)
+              # handle SVG constraints (rectangles, ellipses)
+              # handle time constraints? for video/sound annotations?
+    
+            extractTextTarget = (item, id) ->
+              return unless id?
+              target = manifestData.getItem id
+              if "oaSpecificResource" in target.type
+                item.target = target.oahasSource
+                if target.oahasStyle?
+                  styleItem = manifestData.getItem target.oahasStyle[0]
+                  if "text/css" in styleItem.dcformat
+                    item.css = styleItem.cntchars
+    
+                extractSpatialConstraint(item, target.oahasSelector?[0])
+              else
+                item.target = id
+    
+            extractTextBody = (item, id) ->
+              return unless id?
+              body = manifestData.getItem id
+              textSource.addFile(body.oahasSource)
+              item.source = body.oahasSource
+              extractSpatialConstraint(item, body.oahasSelector?[0])
+    
     
             if options.url?
-              # load url
+              #
+              # If we're given a URL in our options, then go ahead and load
+              # it. For now, this is the only way to get data from a manifest.
+              #
               manifestData.importFromURL options.url, ->
                 # now pull data out into data store
                 # if multiple sequences, we want to add a control to allow
                 # selection
                 items = []
-                syncer = MITHGrid.initSynchronizer ->
-                  that.addItemsToProcess 1
-                  that.dataStore.data.loadItems items, ->
-                    that.addItemsProcessed 1
+                syncer = MITHGrid.initSynchronizer()
     
                 canvases = manifestData.getCanvases()
                 that.addItemsToProcess canvases.length
                 syncer.process canvases, (id) ->
                   that.addItemsProcessed 1
                   mitem = manifestData.getItem id
-                  item = 
+                  items.push
                     id: id
                     type: 'Canvas'
                     width: parseInt(mitem.exifwidth?[0], 10)
                     height: parseInt(mitem.exifheight?[0], 10)
                     label: mitem.dctitle || mitem.rdfslabel
-                  items.push item
     
                 zones = manifestData.getZones()
                 that.addItemsToProcess zones.length
                 syncer.process zones, (id) ->
                   that.addItemsProcessed 1
                   zitem = manifestData.getItem id
-                  item =
+                  items.push
                     id: id
                     type: 'Zone'
                     width: parseInt(mitem.exifwidth?[0], 10)
                     height: parseInt(mitem.exifheight?[0], 10)
                     angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
                     label: zitem.rdfslabel
-    
-                  items.push item
     
                 seq = manifestData.getSequences()
                 that.addItemsToProcess seq.length
@@ -683,86 +833,39 @@
                   item.sequence = seq
                   items.push item
     
-                extractSpatialConstraint = (item, id) ->
-                  return unless id?
-                  constraint = manifestData.getItem id
-                  if 'oaFragmentSelector' in constraint.type
-                    if constraint.rdfvalue[0].substr(0,5) == "xywh="
-                      item.shape = "Rectangle"
-                      bits = constraint.rdfvalue[0].substr(5).split(",")
-                      item.x = parseInt(bits[0],10)
-                      item.y = parseInt(bits[1],10)
-                      item.width = parseInt(bits[2],10)
-                      item.height = parseInt(bits[3],10)
-                  else
-                    if constraint.oaxbegin?
-                      item.start = parseInt(constraint.oaxbegin?[0], 10)
-                    if constraint.oaxend?
-                      item.end = parseInt(constraint.oaxend?[0], 10)
-                  # handle SVG constraints (rectangles, ellipses)
-                  # handle time constraints? for video/sound annotations?
-    
-                extractTextTarget = (item, id) ->
-                  return unless id?
-                  target = manifestData.getItem id
-                  if "oaSpecificResource" in target.type
-                    item.target = target.oahasSource
-                    if target.oahasStyle?
-                      styleItem = manifestData.getItem target.oahasStyle[0]
-                      if "text/css" in styleItem.dcformat
-                        item.css = styleItem.cntchars
-    
-                    extractSpatialConstraint(item, target.oahasSelector?[0])
-                  else
-                    item.target = id
-    
-                extractTextBody = (item, id) ->
-                  return unless id?
-                  body = manifestData.getItem id
-                  textSource.addFile(body.oahasSource)
-                  item.source = body.oahasSource
-    
-                  #bodySpan = manifestData.getItem body.oahasSelector
-                  extractSpatialConstraint(item, body.oahasSelector?[0])
-                  #item.start = parseInt(bodySpan.oaxbegin?[0], 10)
-                  #item.end = parseInt(bodySpan.oaxend?[0], 10)
-    
+                textSources = {}
+                textAnnos = []
     
                 # now get the annotations we know something about handling
                 annos = manifestData.getAnnotations()
                 that.addItemsToProcess annos.length
                 syncer.process annos, (id) ->
+                  #
+                  # Once we have our various annotations, we want to process
+                  # them to produce sets of items that can be displayed in a
+                  # sequence - move some of the logic from the presentation to
+                  # here so we are only concerned with presenting things.
+                  #
                   that.addItemsProcessed 1
                   aitem = manifestData.getItem id
-    
+                  array = null
                   item =
-                    id: aitem.id
+                    id: id
     
                   # for now, we *assume* that the content annotation is coming
                   # from a TEI file and is marked by begin/end pointers
                   if "scContentAnnotation" in aitem.type
                     extractTextTarget item, aitem.oahasTarget?[0]
                     extractTextBody   item, aitem.oahasBody?[0]
+                    textSources[item.source] ?= []
+                    textSources[item.source].push [ id, item.start, item.end ]
                     item.type = "TextContent"
-    
-                  else if "sgaLineAnnotation" in aitem.type
-                    # no body for now
-                    extractTextTarget item, aitem.oahasTarget?[0]
-                    item.type = "LineAnnotation"
-    
-                  else if "sgaDeletionAnnotation" in aitem.type
-                    # no body or style for now
-                    extractTextTarget item, aitem.oahasTarget?[0]
-                    item.type = "DeletionAnnotation"
-    
-                  else if "sgaAdditionAnnotation" in aitem.type
-                    # no body or style for now
-                    extractTextTarget item, aitem.oahasTarget?[0]
-                    item.type = "AdditionAnnotation"
+                    array = items
     
                   else if "scImageAnnotation" in aitem.type
                     imgitem = manifestData.getItem aitem.oahasBody
                     imgitem = imgitem[0] if $.isArray(imgitem)
+                    array = items
     
                     item.target = aitem.oahasTarget
                     item.label = aitem.rdfslabel
@@ -772,35 +875,177 @@
                   else if "scZoneAnnotation" in aitem.type
                     target = manifestData.getItem aitem.oahasTarget
                     extractSpatialConstraint item, target.hasSelector?[0]
+                    array = items
     
                     item.target = target.hasSource
                     item.label = aitem.rdfslabel
                     item.type = "ZoneAnnotation"
     
-                  if item.type?
-                    items.push item
+                  else
+                    #
+                    # All of the SGA-specific annotations will have types
+                    # prefixed with "sga" and ending in "Annotation"
+                    sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
+                    if sgaTypes.length > 0
+                      extractTextTarget item, aitem.oahasTarget?[0]
+                      item.type = sgaTypes
+                      array = textAnnos
     
-                syncer.done()
+                  array.push item if item.type? and array?
     
-        # we look for <div class="canvas" data-types="..." data-manifest="..."></div>
-        # in the page and instantiate the application
-        # each application handles a single manifest, but multiple canvases
+                syncer.done ->
+                  # We process the highlight annotations here so we don't have
+                  # to do it *every* time we show a canvas.
+                  # each addition, deletion, etc., targets a scContentAnnotation
+                  # but we want to make sure we get any scContentAnnotation text
+                  # that isn't covered by any of the other annotations
+                  
+                  that.addItemsToProcess 1 + textAnnos.length
+                  that.dataStore.data.loadItems items, ->
+                    items = []
+                    modstart = {}
+                    modend = {}
+                    modInfo = {}
+                    setMod = (item) ->
+                      source = item.target
+                      start = item.start
+                      end = item.end
+                      id = item.id
+                      id = id[0] if $.isArray(id)
+                      modInfo[id] = item
+                      modstart[source] ?= {}
+                      modstart[source][start] ?= []
+                      modstart[source][start].push id
+                      modend[source] ?= {}
+                      modend[source][end] ?= []
+                      modend[source][end].push id
+    
+                    setMod item for item in textAnnos
+    
+                    sources = (s for s of modstart)
+                    that.addItemsToProcess sources.length
+                    that.addItemsProcessed textAnnos.length
+    
+                    for source in sources
+                      do (source) ->
+                        that.withSource source, (text) ->
+                          textItems = []
+                          modIds = [ ]
+                          br_pushed = false
+    
+                          pushTextItem = (classes, css, target, start, end) ->
+                            textItems.push
+                              type: classes
+                              css: css.join(" ")
+                              text: text[start ... end]
+                              id: source + "-" + start + "-" + end
+                              target: target
+                              start: start
+                              end: end
+                          
+                          processNode = (start, end) ->
+                            classes = []
+                            css = []
+                            for id in modIds
+                              classes.push modInfo[id].type
+                              if $.isArray(modInfo[id].css)
+                                css.push modInfo[id].css.join(" ")
+                              else
+                                css.push modInfo[id].css
+    
+                            classes.push "Text" if classes.length == 0
+    
+                            makeTextItems start, end, classes, css
+    
+                          #
+                          # We run through each possible shared canvas
+                          # target that might be mapped onto the source TEI
+                          # via the TextContent annotation. We want to target
+                          # the shared canvas text content zone, not the
+                          # text source that the highlight is targeting in the
+                          # actual open annotation model.
+                          #
+                          makeTextItems = (start, end, classes, css) ->
+                            for candidate in (textSources[source] || [])
+                              if start <= candidate[2] and end >= candidate[1]
+                                s = Math.min(Math.max(start, candidate[1]),candidate[2])
+                                e = Math.max(Math.min(end, candidate[2]), candidate[1])
+                                pushTextItem classes, css, candidate[0], s, e
+                            false
+    
+                          #
+                          # A line break is just a zero-width annotation at
+                          # the given position.
+                          #
+                          makeLinebreak = (pos) ->
+                            classes = [ "LineBreak" ]
+                            #classes.push modInfo[id].type for id in modIds
+                            makeTextItems pos, pos, classes, [ "" ]
+    
+                          #
+                          mstarts = modstart[source] || []
+                          mends = modend[source] || []
+                          last_pos = 0
+                          positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
+                          for pos in positions
+                            if pos != last_pos
+                              processNode last_pos, pos
+                              if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
+                                br_pushed = false
+                              needs_br = false
+                              for id in (mstarts[pos] || [])
+                                if "LineAnnotation" in modInfo[id].type
+                                  needs_br = true
+                                modIds.push id
+                              for id in (mends[pos] || [])
+                                if "LineAnnotation" in modInfo[id].type
+                                  needs_br = true
+                                idx = modIds.indexOf id
+                                modIds.splice idx, 1 if idx > -1
+                              if needs_br and not br_pushed
+                                makeLinebreak pos
+                                br_pushed = true
+                              last_pos = pos
+                          processNode last_pos, text.length
+    
+                          that.dataStore.data.loadItems textItems, ->
+                            that.addItemsProcessed 1
+                        
+                    that.addItemsProcessed 1
+    
+        #
+        # ### Application.SharedCanvas#builder
+        #
+        # This is an alternate instantiation method that will look through the
+        # DOM and find elements with the given class and instantiate
+        # Application.SharedCanvas applications for each manifest found along
+        # with Presentation.Canvas presentations for each element.
+        #
+        # Options:
+        #
+        # * class - the CSS class of the elements (defaults to "canvas")
+        # * progressTracker - a component with the setNumerator and
+        #   setDenominator methods that can show progress to the user
+        #
         SharedCanvas.builder = (config) ->
           that =
             manifests: {}
     
           manifestCallbacks = {}
     
+          # Initialize these to nil functions in case we don't have a progress
+          # tracker. Also makes sure that CoffeeScript scopes them correctly.
           updateProgressTracker = ->
           updateProgressTrackerVisibility = ->
     
           if config.progressTracker?
             updateProgressTracker = ->
-              # go through and calculate all of the unfinished items
+              # Go through and calculate all of the unfinished items. Then
+              # update the progress tracker. Should work even if a builder
+              # is tracking multiple manifests.
               n = 0
               d = 0
               for m, obj of that.manifests
-                #if obj.getItemsToProcess() > obj.getItemsProcessed()
                 n += obj.getItemsProcessed()
                 d += obj.getItemsToProcess()
               config.progressTracker.setNumerator(n)
@@ -827,6 +1072,17 @@
                   setTimeout uptv, uptvTimer
                 uptv()
     
+          #
+          # #### #onManifest
+          #
+          # * url: manifest URL
+          # * cb: callback to call when the manifest is loaded and ready
+          #
+          # This function accepts a callback function that will be called
+          # when the manifest has been loaded and processed. The callback will
+          # receive one argument representing the Application.SharedCanvas
+          # instance associated with the manifest URL.
+          #
           that.onManifest = (url, cb) ->
             if that.manifests[url]?
               that.manifests[url].ready ->
@@ -835,6 +1091,25 @@
               manifestCallbacks[url] ?= []
               manifestCallbacks[url].push cb
     
+          #
+          # #### #addPresentation
+          #
+          # * el: the DOM element to contain the shared canvas presentation
+          #
+          # The element should have the following data- attributes:
+          #
+          # * data-manifest: the URL of the manifest
+          # * data-types: a comma-separated list of annotation types to render
+          #
+          # The data types can be any of the following:
+          #
+          # * Image: render any image annotations
+          # * Text: render any text annotations
+          #
+          # N.B.: non-text and non-image annotations will still render. For example,
+          # zones will render regardless of the types. Zones inherit the types,
+          # so zones in a Text-only rendering will only render text annotations.
+          #
           that.addPresentation = (el) ->
             manifestUrl = $(el).data('manifest')
             if manifestUrl?
@@ -858,6 +1133,10 @@
                   types: types
                   container: $(el)
             
+          #
+          # Now we go through and find all of the DOM elements that should be
+          # made into shared canvas presentations.
+          #
           config.class ?= ".canvas"
           $(config.class).each (idx, el) -> that.addPresentation el
           that
@@ -883,26 +1162,30 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
       dataStore: 'data'
       types: [ 'Sequence' ]
   variables:
-    Canvas:
-      is: 'rw'
-    Sequence:
-      is: 'rw'
-    Position:
-      is: 'rw'
+    Canvas:   { is: 'rw' }
+    Sequence: { is: 'rw' }
+    Position: { is: 'lrw', isa: 'numeric' }
+
+MITHGrid.defaults 'SGA.Reader.Component.Slider',
+  variables:
+    Min:   { is: 'rw', isa: 'numeric' }
+    Max:   { is: 'rw', isa: 'numeric' }
+    Value: { is: 'rw', isa: 'numeric' }
+
+MITHGrid.defaults 'SGA.Reader.Component.PagerControls',
+  variables:
+    Min:   { is: 'rw', isa: 'numeric' }
+    Max:   { is: 'rw', isa: 'numeric' }
+    Value: { is: 'rw', isa: 'numeric' }
 
 MITHGrid.defaults 'SGA.Reader.Component.SequenceSelector',
   variables:
-    Sequence:
-      is: 'rw'
+    Sequence: { is: 'rw' }
 
 MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
   variables:
-    Numerator:
-      is: 'rw'
-      default: 0
-    Denominator:
-      is: 'rw'
-      default: 1
+    Numerator:   { is: 'rw', default: 0, isa: 'numeric' }
+    Denominator: { is: 'rw', default: 1, isa: 'numeric' }
   viewSetup: """
     <div class="progress progress-striped active">
       <div class="bar" style="width: 0%;"></div>
@@ -911,18 +1194,10 @@ MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
 
 MITHGrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
-    Canvas:
-      is: 'rw'
-    Scale:
-      is: 'rw'
+    Canvas: { is: 'rw' }
+    Scale:  { is: 'rw', isa: 'numeric' }
 
 MITHGrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
-    ItemsToProcess:
-      is: 'rw'
-      isa: 'numeric'
-      default: 0
-    ItemsProcessed:
-      is: 'rw'
-      isa: 'numeric'
-      default: 0
+    ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
+    ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }

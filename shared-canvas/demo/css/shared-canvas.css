@@ -7,12 +7,12 @@ svg body {
   padding: 2px;
 }
 
-.text-content .deletion {
+.text-content .DeletionAnnotation {
   font-weight: lighter;
   color: #888;
   text-decoration: line-through;
 }
 
-.text-content .addition {
+.text-content .AdditionAnnotation {
   font-weight: bolder;
 }
