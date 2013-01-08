@@ -1,8 +1,0 @@
-[% PROCESS "config/blocks" %]
-[% signupMethods = [
-     { title => 'Twitter', url => c.uri_for('/oauth/twitter'),
-       class => 'twitter-signup-btn btn' },
-     { title => 'Google',  url => c.uri_for('/oauth/google'),
-       class => 'goggle-signup-btn btn' },
-   ]
-%]
