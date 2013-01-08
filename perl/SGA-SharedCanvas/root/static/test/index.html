@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Shared Canvas</title>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/css/overrides.css" rel="stylesheet">
+    <link href="/static/css/shared-canvas.css" rel="stylesheet">
+    <script src="/static/js/mithgrid.min.js"></script>
+    <script src="/static/js/jquery.svg.min.js"></script>
+    <script src="/static/js/shared-canvas.js"></script>
+    <style>
+      //body { padding-top: 60px; }
+    </style>
+  </head>
+  <body>
+   <!-- div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Shared Canvas</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div -->
+    <div class="container-fluid">
+
+<div class="row-fluid">
+<div class="span12">
+<form class="well form-inline">
+    <div style="float: right">
+      <a href="#" class="btn" id="first-page"><i class="icon icon-fast-backward"></i></a>
+      <a href="#" class="btn" id="prev-page"><i class="icon icon-step-backward"></i></a>
+      <a href="#" class="btn" id="next-page"><i class="icon icon-step-forward"></i></a>
+      <a href="#" class="btn" id="last-page"><i class="icon icon-fast-forward"></i></a>
+    </div>
+    <label>Sequence:</label>
+    <select id="sequence"></select>
+    &nbsp;
+    <label>Canvas:</label>
+    <span id="canvas-label"></span>
+<br/>
+<input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" />
+</form>
+</div>
+</div>
+<div class="well">
+  <div class="row-fluid">
+    <div class="span6" style="padding-left: 2%; text-align: center;">
+      <div class="canvas" data-types="Image" data-manifest="http://localhost:3000/static/js/Manifest.json"></div>
+    </div>
+    <div class="span6" style="padding-left: 2%; text-align: center;">
+      <div class="canvas" data-types="Text" data-manifest="http://localhost:3000/static/js/Manifest.json"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function() {
+    var builder = SGA.Reader.Application.SharedCanvas.builder({
+    });
+    builder.onManifest("http://localhost:3000/static/js/Manifest.json", function(app) {
+      var filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", {   
+        dataView: app.dataView.sequences
+      });
+      filter.events.onSequenceChange.addListener( app.setSequence );
+      app.events.onSequenceChange.addListener( function(s) {
+        var seq = app.dataStore.data.getItem(s);
+        $("#page-location").attr({
+          min: 0,
+          max: seq.sequence.length-1
+        });
+      });
+      app.setSequence( filter.getSequence() );
+      app.events.onCanvasChange.addListener(function(c) {
+        var item = app.dataStore.data.getItem(c);
+        if(item.label !== undefined) {
+          $("#canvas-label").text(item.label[0]);
+        }
+        else {
+          $("#canvas-label").text("(no label)");
+        }
+      });
+      $("#first-page").click(function() {
+        app.setPosition(0);
+      });
+      $("#prev-page").click(function() {
+        var p = app.getPosition();
+        if(p > 0) {
+          p -= 1;
+          app.setPosition(p);
+        }
+      });
+      $("#next-page").click(function() {
+        var p = app.getPosition();
+        var seq = app.dataStore.data.getItem(app.getSequence());
+        if(p < seq.sequence.length-1) {
+          p += 1;
+          app.setPosition(p);
+        }
+      });
+      $("#page-location").change(function(e) {
+        app.setPosition($(this).val());
+      });
+      $("#last-page").click(function() {
+        var seq = app.dataStore.data.getItem(app.getSequence());
+        app.setPosition(seq.sequence.length-1);
+      });
+      app.events.onPositionChange.addListener(function(p) {
+        $("#page-location").val(p);
+        if(p > 0) {
+          $("#prev-page").removeClass("disabled");
+          $("#first-page").removeClass("disabled");
+        }
+        else {
+          $("#prev-page").addClass("disabled");
+          $("#first-page").addClass("disabled");
+        }
+        var seq = app.dataStore.data.getItem(app.getSequence());
+        if(p < seq.sequence.length-1) {
+          $("#next-page").removeClass("disabled");
+          $("#last-page").removeClass("disabled");
+        }
+        else {
+          $("#next-page").addClass("disabled");
+          $("#last-page").addClass("disabled");
+        }
+      });
+    });
+  });
+</script>
+
+    </div>
+  </body>
+</html>
+
+</body>

@@ -85,8 +85,8 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-06-27 13:59:15
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:oGkOv1LjCuyl+XYONt0OLw
+# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-07-13 09:22:59
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:2UjtJmelZCqznyQ1lHwifg
 
 __PACKAGE__ -> load_components( "Ordered" );
 

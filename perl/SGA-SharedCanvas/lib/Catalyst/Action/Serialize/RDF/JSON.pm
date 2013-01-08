@@ -16,8 +16,13 @@ sub execute {
       $controller->{'stash_key'}
     ) || 'rest';
 
-  my $output = $self -> serialize($c -> stash -> {$stash_key});
-  $c -> response -> output( $output );
+  if($c -> response -> status < 300) {
+    my $output = $self -> serialize($c -> stash -> {$stash_key});
+    $c -> response -> output( $output );
+  }
+  else {
+    $c -> response -> output( '' );
+  }
   return 1;
 }
 

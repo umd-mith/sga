@@ -1,74 +1,64 @@
-package SGA::SharedCanvas::Base::ResourceController;
+use CatalystX::Declare;
 
-use Moose;
-use namespace::autoclean;
+controller SGA::SharedCanvas::Base::ResourceController
+   extends Catalyst::Controller::REST
+{
 
-BEGIN {
-  extends 'Catalyst::Controller::REST';
-}
+  under base {
+    final action collection as '' isa REST;
 
-sub collection :Chained('base') :PathPart('') :Args(0) :ActionClass('REST') { }
+    action resource_base (Str $id) as '' {
+      my $resource = $ctx -> stash -> {collection} -> resource($id);
+      if(!$resource) {
+        $self -> status_not_found($ctx,
+          message => "Resource not found."
+        );
+        $ctx -> detach;
+      }
 
-sub collection_GET {
-  my($self, $c) = @_;
-
-  $self -> status_ok($c,
-    entity => $c -> stash -> {collection} -> _GET(1)
-  );
-}
-
-sub collection_POST {
-  my($self, $c) = @_;
-
-  my $manifest = $c -> stash -> {collection} -> POST($c -> req -> data);
-  $self -> status_created($c,
-    location => $manifest->link,
-    entity => $manifest -> _GET(1)
-  );
-}
-
-sub resource :Chained('base') :PathPart('') :Args(1) :ActionClass('REST') {
-  my($self, $c, $id) = @_;
-
-  my $resource = $c -> stash -> {collection} -> resource($id);
-  if(!$resource) {
-    $self -> status_not_found($c,
-      message => "Resource not found."
-    );
-    $c -> detach;
+      $ctx -> stash -> {resource} = $resource;
+    }
   }
 
-  $c -> stash -> {resource} = $resource;
-}
-
-sub resource_GET {
-  my($self, $c) = @_;
-
-  $self -> status_ok($c,
-    entity => $c -> stash -> {resource} -> _GET(1)
-  );
-}
-
-sub resource_PUT {
-  my($self, $c) = @_;
-
-  my $resource = $c -> stash -> {resource} -> _PUT($c -> req -> data);
-  $self -> status_ok($c,
-    entity => $resource -> _GET(1)
-  );
-}
-
-sub resource_DELETE {
-  my($self, $c) = @_;
-
-  if($c -> stash -> {resource} -> _DELETE) {
-    $self -> status_no_content($c);
+  under resource_base {
+    final action resource as '' isa REST;
   }
-  else {
-    $self -> status_forbidden($c,
-      message => "Unable to delete resource."
+
+  method collection_GET ($ctx) {
+    $self -> status_ok($ctx,
+      entity => $ctx -> stash -> {collection} -> _GET(1)
     );
   }
-}
 
-1;
+  method collection_POST ($ctx) {
+    my $manifest = $ctx -> stash -> {collection} -> POST($ctx -> req -> data);
+    $self -> status_created($ctx,
+      location => $manifest->link,
+      entity => $manifest -> _GET(1)
+    );
+  }
+
+  method resource_GET ($ctx) {
+    $self -> status_ok($ctx,
+      entity => $ctx -> stash -> {resource} -> _GET(1)
+    );
+  }
+
+  method resource_PUT ($ctx) {
+    my $resource = $ctx -> stash -> {resource} -> _PUT($ctx -> req -> data);
+    $self -> status_ok($ctx,
+      entity => $resource -> _GET(1)
+    );
+  }
+
+  method resource_DELETE ($ctx) {
+    if($ctx -> stash -> {resource} -> _DELETE) {
+      $self -> status_no_content($ctx);
+    }
+    else {
+      $self -> status_forbidden($ctx,
+        message => "Unable to delete resource."
+      );
+    }
+  }
+}

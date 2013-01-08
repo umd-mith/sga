@@ -10,7 +10,7 @@ use SGA::SharedCanvas::Meta::Resource;
 use namespace::autoclean;
 
 Moose::Exporter->setup_import_methods(
-  with_meta => [ 'prop', 'has_many', 'belongs_to', 'rdf_type', 'media_format' ],
+  with_meta => [ 'prop', 'has_many', 'belongs_to', 'rdf_type', 'media_format', 'has_a', 'contains_a', 'belongs_to_many' ],
   as_is     => [ ],
   also      => 'Moose',
 );
@@ -76,6 +76,29 @@ sub belongs_to {
   );
 }
 
+sub belongs_to_many {
+  my($meta, $key, $resource_class, %config) = @_;
+
+  my $method;
+
+  if(!$config{source}) {
+    $method = sub { $_[0] -> source -> $key };
+  }
+  elsif(!ref $config{source}) {
+    my $mkey = $config{source};
+    $method = sub { $_[0] -> source -> $mkey };
+  }
+  else {
+    $method = $config{source};
+  }
+
+  $meta -> add_embedded_in( $key, (
+    %config,
+    isa => $resource_class,
+    source => $method,
+  ));
+}
+
 sub has_many {
   my($meta, $key, $resource_class, %config) = @_;
 
@@ -96,13 +119,57 @@ sub has_many {
     %config,
     isa => $resource_class,
     source => $method,
-    default => sub {
-      my($self) = @_;
-      [ map { $resource_class -> new(
-        c => $self -> c,
-        source => $_,
-      ) } $method->($self) ];
-    },
+  ));
+}
+
+sub has_a {
+  my($meta, $key, $resource_class, %config) = @_;
+
+  my $method;
+
+  if(!$config{source}) {
+    $method = sub { $_[0] -> source -> $key };
+  }
+  elsif(!ref $config{source}) {
+    my $mkey = $config{source};
+    $method = sub { $_[0] -> source -> $mkey };
+  }
+  else {
+    $method = $config{source};
+  }
+
+  $meta -> add_hasa( $key, (
+    %config,
+    isa => $resource_class,
+    source => $method,
+  ) );
+}
+
+#
+# used to point to another resource to handle part of the source associated
+# with the current resource
+#
+# Allows nested JSON to handle part of the current object.
+#
+sub contains_a {
+  my($meta, $key, $resource_class, %config) = @_;
+
+  my $method;
+  if(!$config{source}) {
+    $method = sub { $_[0] -> source };
+  }
+  elsif(!ref $config{source}) {
+    my $mkey = $config{source};
+    $method = sub { $_[0] -> source -> $mkey };
+  }
+  else {
+    $method = $config{source};
+  }
+
+  $meta -> add_nested( $key, (
+    %config,
+    isa => $resource_class,
+    source => $method,
   ));
 }
 

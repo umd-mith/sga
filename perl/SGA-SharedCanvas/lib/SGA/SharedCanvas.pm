@@ -1,71 +1,53 @@
-package SGA::SharedCanvas;
-use Moose;
-use namespace::autoclean;
+use CatalystX::Declare;
+use 5.012;
 
-use Catalyst::Runtime 5.80;
+application SGA::SharedCanvas
+    with ConfigLoader
+    with Static::Simple
 
-# Set flags and add plugins for the application.
-#
-# Note that ORDERING IS IMPORTANT here as plugins are initialized in order,
-# therefore you almost certainly want to keep ConfigLoader at the head of the
-# list if you're using it.
-#
-#         -Debug: activates the debug mode for very useful log messages
-#   ConfigLoader: will load the configuration from a Config::General file in the
-#                 application's home directory
-# Static::Simple: will serve static files from the application's root
-#                 directory
+    with Params::Nested
 
-use Catalyst qw/
-    -Debug
-    ConfigLoader
-    Static::Simple
+    with Unicode::Encoding
 
-    Unicode::Encoding
+    with StatusMessage
 
-    StatusMessage
+    with StackTrace
+{
 
-    StackTrace
-/;
+  use CatalystX::RoleApplicator;
 
-use CatalystX::RoleApplicator;
+  $CLASS -> apply_request_class_roles(qw[
+    Catalyst::TraitFor::Request::REST::ForBrowsers
+  ]);
 
-extends 'Catalyst';
+  our $VERSION = '0.01';
+  $VERSION = eval $VERSION;
 
-__PACKAGE__ -> apply_request_class_roles(qw[
-  Catalyst::TraitFor::Request::REST::ForBrowsers
-]);
-
-our $VERSION = '0.01';
-
-# Configure the application.
-#
-# Note that settings in sga_sharedcanvas.conf (or other external
-# configuration file that you set up manually) take precedence
-# over this when using ConfigLoader. Thus configuration
-# details given here can function as a default configuration,
-# with an external configuration file acting as an override for
-# local deployment.
-
-__PACKAGE__->config(
+  $CLASS -> config(
     name => 'SGA Shared Canvas Support',
     # Disable deprecated behavior needed by old applications
     disable_component_resolution_regex_fallback => 1,
     enable_catalyst_header => 1, # Send X-Catalyst header
     encoding => 'UTF-8',
+    default_view => 'Mason',
     'Plugin::ConfigLoader' => {
-      file => __PACKAGE__ -> path_to( 'conf' ),
+      file => $CLASS -> path_to( 'conf' ),
     },
     'View::HTML' => {
       INCLUDE_PATH => [
-        __PACKAGE__ -> path_to( qw/root src/ ),
+        $CLASS -> path_to( qw/root src/ ),
       ],
     },
-);
+    static => {
+      dirs => [
+        'static',
+      ],
+    },
+  );
 
-# Start the application
-__PACKAGE__->setup();
+}
 
+__END__
 
 =head1 NAME
 

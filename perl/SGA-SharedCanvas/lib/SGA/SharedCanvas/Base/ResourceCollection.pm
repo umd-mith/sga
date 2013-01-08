@@ -1,152 +1,148 @@
-package SGA::SharedCanvas::Base::ResourceCollection;
+use CatalystX::Declare;
 
-use Moose;
-use namespace::autoclean;
+class SGA::SharedCanvas::Base::ResourceCollection {
 
-use String::CamelCase qw(decamelize);
-use Lingua::EN::Inflect qw(PL_N);
+  use String::CamelCase qw(decamelize);
+  use Lingua::EN::Inflect qw(PL_N);
 
-has c => (
-  is => 'rw',
-  required => 1,
-  isa => 'Object',
-);
-
-sub resource {
-  my($self, $id) = @_;
-
-  $self -> resource_class -> new(
-    c => $self -> c,
-    source => $self -> c -> model($self -> resource_model) 
-                         -> find({ uuid => $id })
+  has c => (
+    is => 'rw',
+    required => 1,
+    isa => 'Object',
   );
-}
 
-sub link {
-  my($self) = @_;
-
-  my $nom = $self -> resource_class;
-  $nom =~ s/^.*:://;
-  $nom = decamelize($nom);
-  "".$self -> c -> uri_for('/' . $nom);
-}
-
-sub constrain_collection { $_[1] }
-
-sub resources {
-  my($self) = @_;
-
-  my $c = $self -> c;
-  my $resource_class = $self -> resource_class;
-  my $q = $self -> c -> model($self -> resource_model);
-
-  $q = $self -> constrain_collection($q);
-
-  if(wantarray) {
-    map { $resource_class -> new(c => $c, source => $_) } $q -> all;
-  }
-  elsif(defined wantarray) {
-    $q -> count;
-  }
-}
-
-sub resource_for_url {
-  my($self, $url) = @_;
-
-  my $uuid;
-  if($url =~ m{^[-A-Za-z0-9_]{20}$}) {
-    $uuid = $url;
-  }
-  else {
-    my $url_base = $self -> link . "/";
-    if(substr($url, 0, length($url_base), '') eq $url_base) {
-      if($url =~ m{^[-A-Za-z0-9_]{20}$}) {
-        $uuid = $url;
-      }
+  method resource ($id) {
+    my $source = $self -> c -> model($self -> resource_model)
+                            -> find({ uuid => $id });
+    if($source) {
+      $self -> resource_class -> new(
+        c => $self -> c,
+        source => $source,
+      );
     }
   }
 
-  if($uuid) {
-    $self -> resource($uuid);
+  method link {
+    my $nom = $self -> resource_class;
+    $nom =~ s/^.*:://;
+    $nom = decamelize($nom);
+    "".$self -> c -> uri_for('/' . $nom);
   }
-}
 
-sub _GET {
-  my $self = shift;
+  method schema {
+    $self -> resource_class -> new(c => $self -> c) -> schema;
+  }
 
-  if($self -> c -> request -> preferred_content_type =~ m{^application/rdf}) {
-    my $rdf = RDF::Trine::Model->new(
-      RDF::Trine::Store::DBI->temporary_store
+  method constrain_collection ($q) { $q }
+
+  method resources {
+    my $ctx = $self -> c;
+    my $resource_class = $self -> resource_class;
+    my $q = $self -> c -> model($self -> resource_model);
+
+    $q = $self -> constrain_collection($q);
+
+    if(wantarray) {
+      map { $resource_class -> new(c => $ctx, source => $_) } $q -> all;
+    }
+    elsif(defined wantarray) {
+      $q -> count;
+    }
+  }
+
+  method resource_for_url ($url) {
+    my $uuid;
+    if($url =~ m{^[-A-Za-z0-9_]{20}$}) {
+      $uuid = $url;
+    }
+    else {
+      my $url_base = $self -> link . "/";
+      if(substr($url, 0, length($url_base), '') eq $url_base) {
+        if($url =~ m{^[-A-Za-z0-9_]{20}$}) {
+          $uuid = $url;
+        }
+      }
+    }
+
+    if($uuid) {
+      $self -> resource($uuid);
+    }
+  }
+
+  method _GET ($deep = 0) {
+    my $wanted_type = $self -> c -> request -> preferred_content_type;
+    if($wanted_type =~ m{^application/rdf} || $wanted_type eq 'text/turtle') {
+      my $rdf = RDF::Trine::Model->new(
+        RDF::Trine::Store::DBI->temporary_store
+      );
+      $rdf -> begin_bulk_ops;
+      $self -> GET_rdf($rdf, $deep);
+      $rdf -> end_bulk_ops;
+      $rdf;
+    }
+    elsif($wanted_type =~ m{^image/}) {
+      $self -> GET_image($deep);
+    }
+    else {
+      $self -> GET($deep);
+    }
+  }
+
+  method GET_rdf ($rdf, $deep = 0) {
+    for my $resource ($self -> resources) {
+      $resource -> GET_rdf($rdf);
+    }
+  }
+
+  method GET ($deep = 0) {
+    my $json = {
+      _links => { self => $self -> link },
+      _schema => $self -> schema,
+    };
+
+    my $items = [];
+
+    for my $resource ($self -> resources) {
+      push @{$items}, $resource -> GET;
+    }
+
+    $json -> {_embedded} = $items;
+
+    $json;
+  }
+
+  method _POST ($data) {
+    my $wanted_type = $self -> c -> request -> preferred_content_type;
+    # if $wanted_type is in our list of media types, then we support
+    # raw files of those types
+    my $allowed_media_types = $self -> resource_class -> meta -> media_formats;
+    if(grep { $_ eq $wanted_type } @{$allowed_media_types}) {
+      $self -> POST_raw($data->{file});
+    }
+    else {
+      my $accepted = $self -> verify(POST => $data);
+      $self -> POST($accepted);
+    }
+  }
+
+  method verify ($method, $data) {
+    $data;
+  }
+
+  method POST ($data) {
+    my $ctx = $self -> c;
+    my $resource_class = $self -> resource_class;
+    my $q = $self -> c -> model($self -> resource_model);
+
+    my $new_resource = $self -> constrain_collection(
+      $ctx -> model($self -> resource_model)
+    ) -> new({});
+
+    my $resource = $resource_class -> new(
+      c => $ctx,
+      source => $new_resource
     );
-    $rdf -> begin_bulk_ops;
-    $self -> GET_rdf($rdf, @_);
-    $rdf -> end_bulk_ops;
-    $rdf;
-  }
-  else {
-    $self -> GET(@_);
+
+    $resource -> _PUT($data);
   }
 }
-
-sub GET_rdf {
-  my($self, $rdf, $deep) = @_;
-
-  for my $resource ($self -> resources) {
-    $resource -> GET_rdf($rdf);
-  }
-}
-
-sub GET {
-  my($self, $deep) = @_;
-
-  my $json = {
-    _links => { self => $self -> link },
-  };
-
-  my $items = [];
-
-  for my $resource ($self -> resources) {
-    push @{$items}, $resource -> GET;
-  }
-
-  $json -> {_embedded} = $items;
-
-  $json;
-}
-
-sub _POST {
-  my($self, $data) = @_;
-
-  my $accepted = $self -> verify(POST => $data);
-
-  $self -> POST($accepted);
-}
-
-sub verify {
-  my($self, $method, $data) = @_;
-
-  $data;
-}
-
-sub POST {
-  my($self, $data) = @_;
-
-  my $c = $self -> c;
-  my $resource_class = $self -> resource_class;
-  my $q = $self -> c -> model($self -> resource_model);
-
-  my $new_resource = $self -> constrain_collection(
-    $c -> model($self -> resource_model)
-  ) -> new({});
-
-  $new_resource -> insert;
-
-  my $resource = $resource_class -> new(
-    c => $c,
-    source => $new_resource
-  );
-
-  $resource -> PUT($data);
-}
-
-1;

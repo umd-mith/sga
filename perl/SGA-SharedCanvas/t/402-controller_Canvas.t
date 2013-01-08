@@ -5,7 +5,7 @@ use HTTP::Request::Common;
 use JSON;
 
 BEGIN {
-  $ENV{'SGA_SHAREDCANVAS_LOCAL_SUFFIX'} = 'testing';
+  $ENV{'CATALYST_CONFIG_LOCAL_SUFFIX'} = 'testing';
 }
 
 use lib './t/lib';
@@ -28,7 +28,7 @@ GET_ok( $json->{_links}->{self}, "Get added canvas" );
 
 my $seq_json = POST_ok( "/sequence", { 
   label => "Bar",
-  canvases => [ $json -> {_links} -> {self} ],
+  _embedded => { canvases => [ $json -> {_links} -> {self} ] },
 }, "Add a sequence" );
 
 GET_ok( $seq_json -> {_links} -> {self}, "Get sequence" );
@@ -36,11 +36,11 @@ GET_ok( $seq_json -> {_links} -> {self}, "application/rdf+xml", "Get sequence" )
 
 my $c2_json = POST_ok("/canvas", { label => "Foo-v", height => 1024, width => 768 }, "Add another canvas" );
 
-PUT_ok( $seq_json -> {_links} -> {self}, {
+PUT_ok( $seq_json -> {_links} -> {self}, { _embedded => {
   canvases => [ $c2_json -> {_links} -> {self},
                 $json -> {_links} -> {self},
               ]
-}, "Add another canvas before the first in the sequence");
+} }, "Add another canvas before the first in the sequence");
 
 my $seq2_json = GET_ok( $seq_json -> {_links} -> {self}, "Get modified sequence" );
 GET_ok( $seq_json -> {_links} -> {self}, "application/rdf+xml", "Get modified sequence" );

@@ -50,6 +50,11 @@ __PACKAGE__->table("sequence");
   is_nullable: 0
   size: 20
 
+=head2 updated_at
+
+  data_type: 'datetime'
+  is_nullable: 0
+
 =head2 label
 
   data_type: 'varchar'
@@ -64,6 +69,8 @@ __PACKAGE__->add_columns(
   { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
   "uuid",
   { data_type => "char", is_nullable => 0, size => 20 },
+  "updated_at",
+  { data_type => "datetime", is_nullable => 0 },
   "label",
   { data_type => "varchar", default_value => "", is_nullable => 0, size => 255 },
 );
@@ -81,10 +88,11 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-06-27 13:12:11
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:AsVoMo5/UeiGqkHLbINRsw
+# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-07-13 09:22:59
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:0ZUcZXRwIPxfTPE426ygmw
 
 with 'SGA::SharedCanvas::Role::Schema::Result::UUID';
+with 'SGA::SharedCanvas::Role::Schema::Result::Timestamps';
 
 __PACKAGE__->has_many('manifest_sequence' => 'SGA::SharedCanvas::Schema::Result::ManifestSequence', 'sequence_id');
 __PACKAGE__->many_to_many('manifests' => 'manifest_sequence', 'manifest');

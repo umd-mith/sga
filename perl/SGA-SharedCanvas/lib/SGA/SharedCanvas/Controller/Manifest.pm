@@ -1,29 +1,27 @@
-package SGA::SharedCanvas::Controller::Manifest;
+use CatalystX::Declare;
 
-use Moose;
-use namespace::autoclean;
+controller SGA::SharedCanvas::Controller::Manifest
+   extends SGA::SharedCanvas::Base::ResourceController
+{
 
-use SGA::SharedCanvas::Collection::Manifest;
-use SGA::SharedCanvas::Resource::Manifest;
+  use SGA::SharedCanvas::Collection::Manifest;
+  use SGA::SharedCanvas::Resource::Manifest;
 
-BEGIN {
-  extends 'SGA::SharedCanvas::Base::ResourceController';
-}
-
-__PACKAGE__ -> config(
-  map => {
-    "application/rdf+json" => "RDF::JSON",
-    "application/rdf+xml" => "RDF::XML",
-  },
-  default => 'text/html',
-);
-
-sub base :Chained('/') :PathPart('manifest') :CaptureArgs(0) {
-  my($self, $c) = @_;
-
-  $c -> stash -> {collection} = SGA::SharedCanvas::Collection::Manifest -> new(
-    c => $c
+  $CLASS -> config(
+    map => {
+      "application/rdf+json" => "RDF::JSON",
+      "application/rdf+xml" => "RDF::XML",
+      "text/turtle" => "RDF::Turtle",
+    },
+    default => 'text/html',
   );
-}
 
-1;
+  under '/' {
+    action base as 'manifest' {
+      $ctx -> stash -> {collection} = 
+        SGA::SharedCanvas::Collection::Manifest -> new(
+          c => $ctx
+        );
+    }
+  }
+}

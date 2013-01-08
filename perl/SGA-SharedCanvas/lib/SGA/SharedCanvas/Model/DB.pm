@@ -1,18 +1,21 @@
-package SGA::SharedCanvas::Model::DB;
+use CatalystX::Declare;
 
-use strict;
-use base 'Catalyst::Model::DBIC::Schema';
+model SGA::SharedCanvas::Model::DB
+  extends Catalyst::Model::DBIC::Schema {
 
-__PACKAGE__->config(
+  $CLASS->config(
     schema_class => 'SGA::SharedCanvas::Schema',
     
     connect_info => {
-        dsn => 'dbi:SQLite:sga.db',
-        user => '',
-        password => '',
-        on_connect_do => q{PRAGMA foreign_keys = ON},
+      dsn => 'dbi:SQLite:sga.db',
+      user => '',
+      password => '',
+      on_connect_do => q{PRAGMA foreign_keys = ON},
     }
-);
+  );
+}
+
+__END__
 
 =head1 NAME
 
@@ -38,7 +41,3 @@ James Smith
 
 This library is free software, you can redistribute it and/or modify
 it under the same terms as Perl itself.
-
-=cut
-
-1;

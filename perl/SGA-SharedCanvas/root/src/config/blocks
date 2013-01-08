@@ -1,0 +1,63 @@
+[% BLOCK modalForm %]
+<div id="[% id %]" class="modal fade">
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">&times;</button>
+    <h3>[% title %]</h3>
+  </div>
+  <div class="modal-body">
+    <form>
+    [% content %]
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" id="[% id %]-cancel">Close</a>
+    <a href="#" class="btn btn-primary" id="[% id %]-action">[% title %]</a>
+  </div>
+</div>
+[% END %]
+[% BLOCK modalInput %]
+<label>[% label %]</label>
+  [% IF type == "textarea" %]
+    <textarea id="[% id %]" [% IF required %] required [% END %] class="span6 modal-form-input" placeholder="[% placeholder %]"></textarea>
+  [% ELSE %]
+    <input id="[% id %]" type="[% type || "text" %]" [% IF required %] required [% END %] class="span3 modal-form-input" placeholder="[% placeholder %]">
+  [% END %]
+[% END %]
+
+[% BLOCK modalButton %]
+<a class="btn btn-inverse" href="#[% target %]" data-toggle="modal">[% label %]</a>
+[% END %]
+
+[% BLOCK tabs %]
+<ul class="nav nav-tabs" id="[% id %]">
+  [% content %]
+</ul>
+[% END %]
+[% BLOCK tab %]
+  <li><a href="#[% target %]" data-toggle="tab">[% label %]</a></li>
+[% END %]
+[% BLOCK tabPanes %]
+  <div class="tab-content">
+    [% content %]
+  </div>
+[% END %]
+[% BLOCK tabPane %]
+  <div class="tab-pane [% classes %]" id="[% id %]">[% content %]</div>
+[% END %]
+
+[% BLOCK breadcrumbs %]
+<ul class="breadcrumb">
+  [% content %]
+</ul>
+[% END %]
+
+[% BLOCK breadcrumb %]
+  <li>
+    [%- IF link -%]
+    <a href="[% c.uri_for(link) %]">[% label %]</a>
+    <span class="divider">&raquo;</span>
+    [%- ELSE -%]
+    [% label %]
+    [%- END -%]
+  </li>
+[% END %]

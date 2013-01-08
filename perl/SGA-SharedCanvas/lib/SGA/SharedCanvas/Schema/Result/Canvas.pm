@@ -97,14 +97,16 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-06-27 13:59:15
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:5LXQN1Y2p+VxSEiSdhDucQ
+# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-07-13 09:22:59
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:P+167pe5179AM2FblrwQ5g
 
 with 'SGA::SharedCanvas::Role::Schema::Result::UUID';
 
 __PACKAGE__->has_many('canvas_sequence' => 'SGA::SharedCanvas::Schema::Result::CanvasSequence', 'canvas_id');
 __PACKAGE__->many_to_many('sequences' => 'canvas_sequence', 'sequence');
 
+__PACKAGE__->has_many('canvas_image_annotation' => 'SGA::SharedCanvas::Schema::Result::CanvasImageAnnotation', 'canvas_id');
+__PACKAGE__->many_to_many('image_annotations' => 'canvas_image_annotation', 'image_annotation');
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
 __PACKAGE__->meta->make_immutable;
 1;

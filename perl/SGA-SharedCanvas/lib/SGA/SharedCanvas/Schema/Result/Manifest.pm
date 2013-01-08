@@ -57,6 +57,20 @@ __PACKAGE__->table("manifest");
   is_nullable: 0
   size: 255
 
+=head2 object_date
+
+  data_type: 'varchar'
+  default_value: (empty string)
+  is_nullable: 0
+  size: 255
+
+=head2 object_creator
+
+  data_type: 'varchar'
+  default_value: (empty string)
+  is_nullable: 0
+  size: 255
+
 =cut
 
 __PACKAGE__->add_columns(
@@ -65,6 +79,10 @@ __PACKAGE__->add_columns(
   "uuid",
   { data_type => "char", is_nullable => 0, size => 20 },
   "label",
+  { data_type => "varchar", default_value => "", is_nullable => 0, size => 255 },
+  "object_date",
+  { data_type => "varchar", default_value => "", is_nullable => 0, size => 255 },
+  "object_creator",
   { data_type => "varchar", default_value => "", is_nullable => 0, size => 255 },
 );
 
@@ -81,13 +99,19 @@ __PACKAGE__->add_columns(
 __PACKAGE__->set_primary_key("id");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-06-27 11:23:21
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:ARqx6Un91O0YnCMfYBzo2g
+# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-07-13 09:22:59
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:zRvfHhnmrCpZ5dYFwh74XQ
 
 with 'SGA::SharedCanvas::Role::Schema::Result::UUID';
 
 __PACKAGE__->has_many('manifest_sequence' => 'SGA::SharedCanvas::Schema::Result::ManifestSequence', 'manifest_id');
 __PACKAGE__->many_to_many('sequences' => 'manifest_sequence', 'sequence');
+
+__PACKAGE__->has_many('layer_manifest' => 'SGA::SharedCanvas::Schema::Result::LayerManifest', 'manifest_id');
+__PACKAGE__->many_to_many('layers' => 'layer_manifest', 'layer');
+
+__PACKAGE__->has_many('image_annotation_list_manifest' => 'SGA::SharedCanvas::Schema::Result::ImageAnnotationListManifest', 'manifest_id');
+__PACKAGE__->many_to_many('image_annotation_lists' => 'image_annotation_list_manifest', 'image_annotation_list');
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
 __PACKAGE__->meta->make_immutable;

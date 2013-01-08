@@ -28,6 +28,7 @@ requires 'Catalyst::Model::DBIC::Schema';
 requires 'Catalyst::View::TT';
 
 requires 'CatalystX::RoleApplicator';
+requires 'CatalystX::Declare';
 
 requires 'Moose';
 requires 'MooseX::MethodAttributes::Role';

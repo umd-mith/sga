@@ -6,6 +6,7 @@ BEGIN {
 
 use Catalyst::ScriptRunner;
 Catalyst::ScriptRunner->run('SGA::SharedCanvas', 'Server');
+use Carp::Always;
 
 1;
 

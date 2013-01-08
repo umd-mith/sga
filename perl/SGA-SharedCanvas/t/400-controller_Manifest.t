@@ -5,7 +5,7 @@ use HTTP::Request::Common;
 use JSON;
 
 BEGIN {
-  $ENV{'SGA_SHAREDCANVAS_LOCAL_SUFFIX'} = 'testing';
+  $ENV{'CATALYST_CONFIG_LOCAL_SUFFIX'} = 'testing';
 }
 
 #use Catalyst::Test 'SGA::SharedCanvas';

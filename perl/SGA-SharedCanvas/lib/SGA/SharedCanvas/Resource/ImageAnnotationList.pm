@@ -1,10 +1,17 @@
-package SGA::SharedCanvas::Resource::ImageAnnotationSet;
+package SGA::SharedCanvas::Resource::ImageAnnotationList;
 
 use SGA::SharedCanvas::Resource;
 
-rdf_type "http://www.openarchives.org/ore/terms/Aggregation";
 rdf_type "http://dms.stanford.edu/ns/ImageAnnotationList";
-rdf_type "http://www.w3.org/1999/02/22-rdf-syntax-ns#List";
+
+has '+source' => (
+  isa => 'SGA::SharedCanvas::Model::DB::ImageAnnotationList',
+);
+
+prop id => (
+  is => 'ro',
+  source => sub { $_[0] -> source -> uuid },
+);
 
 prop label => (
   is => 'rw',
@@ -12,8 +19,13 @@ prop label => (
   rdf_property => 'http://www.w3.org/2001/01/rdf-schema#label',
 );
 
-has_many image_annotations => (
-  source => sub { ... },
+has_many image_annotations => 'SGA::SharedCanvas::Resource::ImageAnnotation', (
+  is => 'rw',
+  source => sub { 
+    my @ia = $_[0] -> source -> image_annotations ;
+    print STDERR "We have ", scalar(@ia), " image annotations in list\n";
+    @ia;
+  },
 );
 
 1;

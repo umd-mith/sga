@@ -33,6 +33,7 @@ requires:
   Catalyst::Plugin::Unicode::Encoding: 0
   Catalyst::Runtime: 5.90012
   Catalyst::View::TT: 0
+  CatalystX::Declare: 0
   CatalystX::RoleApplicator: 0
   Config::General: 0
   DBIx::Class: 0

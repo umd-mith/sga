@@ -38,6 +38,12 @@ __PACKAGE__->table("manifest_sequence");
 
 =head1 ACCESSORS
 
+=head2 id
+
+  data_type: 'integer'
+  is_auto_increment: 1
+  is_nullable: 0
+
 =head2 manifest_id
 
   data_type: 'integer'
@@ -51,15 +57,29 @@ __PACKAGE__->table("manifest_sequence");
 =cut
 
 __PACKAGE__->add_columns(
+  "id",
+  { data_type => "integer", is_auto_increment => 1, is_nullable => 0 },
   "manifest_id",
   { data_type => "integer", is_nullable => 0 },
   "sequence_id",
   { data_type => "integer", is_nullable => 0 },
 );
 
+=head1 PRIMARY KEY
 
-# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-06-27 13:29:41
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:QWupfWiv6bvgndlWhcXpvw
+=over 4
+
+=item * L</id>
+
+=back
+
+=cut
+
+__PACKAGE__->set_primary_key("id");
+
+
+# Created by DBIx::Class::Schema::Loader v0.07024 @ 2012-08-10 09:55:49
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:+EAGosUHET5AGMTBQzi97g
 
 __PACKAGE__ -> belongs_to( 'manifest' => 'SGA::SharedCanvas::Schema::Result::Manifest', 'manifest_id' );
 __PACKAGE__ -> belongs_to( 'sequence' => 'SGA::SharedCanvas::Schema::Result::Sequence', 'sequence_id' );

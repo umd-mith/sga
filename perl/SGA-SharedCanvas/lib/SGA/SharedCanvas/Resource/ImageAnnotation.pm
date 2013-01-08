@@ -6,10 +6,25 @@ rdf_type 'http://www.w3.org/ns/openannotation/core/Annotation';
 rdf_type 'http://dms.stanford.edu/ns/ContentAnnotation';
 rdf_type 'http://dms.stanford.edu/ns/ImageAnnotation';
 
-has_many targets => (
+has_many canvases => "SGA::SharedCanvas::Resource::Canvas", (
+  is => 'rw',
+  predicate => 'http://www.w3.org/ns/openannotation/core/hasTarget',
 );
 
-has_many images => (
+#has_many zones => "SGA::SharedCanvas::Resource::Zone", (
+#  is => 'rw',
+#  predicate => 'http://www.w3.org/ns/openannotation/core/hasTarget',
+#);
+
+has_a image => "SGA::SharedCanvas::Resource::Image", (
+  required => 1,
+  is => 'rw',
+  predicate => 'http://www.w3.org/ns/openannotation/core/hasBody',
+);
+
+prop id => (
+  is => 'ro',
+  source => sub { $_[0] -> source -> uuid },
 );
 
 prop label => (

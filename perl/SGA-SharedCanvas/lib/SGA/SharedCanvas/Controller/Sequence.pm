@@ -1,29 +1,27 @@
-package SGA::SharedCanvas::Controller::Sequence;
+use CatalystX::Declare;
 
-use Moose;
-use namespace::autoclean;
+controller SGA::SharedCanvas::Controller::Sequence
+   extends SGA::SharedCanvas::Base::ResourceController
+{
 
-use SGA::SharedCanvas::Collection::Sequence;
-use SGA::SharedCanvas::Resource::Sequence;
+  use SGA::SharedCanvas::Collection::Sequence;
+  use SGA::SharedCanvas::Resource::Sequence;
 
-BEGIN {
-  extends 'SGA::SharedCanvas::Base::ResourceController';
-}
-
-__PACKAGE__ -> config(
-  map => {
-    "application/rdf+json" => "RDF::JSON",
-    "application/rdf+xml" => "RDF::XML",
-  },
-  default => 'text/html',
-);
-
-sub base :Chained('/') :PathPart('sequence') :CaptureArgs(0) {
-  my($self, $c) = @_;
-
-  $c -> stash -> {collection} = SGA::SharedCanvas::Collection::Sequence -> new(
-    c => $c
+  $CLASS -> config(
+    map => {
+      "application/rdf+json" => "RDF::JSON",
+      "application/rdf+xml" => "RDF::XML",
+      "text/turtle" => "RDF::Turtle",
+    },
+    default => 'text/html',
   );
-}
 
-1;
+  under '/' {
+    action base as 'sequence' {
+      $ctx -> stash -> {collection} = 
+        SGA::SharedCanvas::Collection::Sequence -> new(
+          c => $ctx
+        );
+    }
+  }
+}
