@@ -15,6 +15,7 @@ SGAReader.namespace "Application", (Application) ->
 
         presentations = []
 
+        #
         # This is a convenience method for creating a Shared Canvas
         # presentation and tying it to the data management application.
         # All presentations linked to this application will be coordinated
@@ -32,6 +33,7 @@ SGAReader.namespace "Application", (Application) ->
         # canvas is in the new sequence and set the position to reflect
         # the new relationship between the canvas and the current sequence.
         #
+
         currentSequence = null
 
         that.events.onSequenceChange.addListener (s) ->
@@ -98,9 +100,30 @@ SGAReader.namespace "Application", (Application) ->
 
         that.withSource = textSource.withFile
 
+        #
+        # styleSource manages extracting style information for
+        # CSS classes from CSS documents that might be embedded
+        # in the RDF graph. This is the new mechanism encouraged by
+        # the OA W3C group.
+        #
+        styleSource = SGA.Reader.Data.StyleStore.initInstance()
+
+
+        #
+        # Given the id of a oahasSelector resource attached to
+        # a oaSpecificResource resource, extractSpatialContraint
+        # will find the type of spatial constraint and place the
+        # relavent bits into the given item.
+        #
         extractSpatialConstraint = (item, id) ->
           return unless id?
           constraint = manifestData.getItem id
+          #
+          # oaFragmentSelector represents a rectangular area
+          # if it starts with "xywh=". We may expand to cover
+          # some SVG spatial constraints and oaFragmentSelector temporal
+          # constraints if we want to support video annotation.
+          #
           if 'oaFragmentSelector' in constraint.type
             if constraint.rdfvalue[0].substr(0,5) == "xywh="
               item.shape = "Rectangle"
@@ -110,19 +133,33 @@ SGAReader.namespace "Application", (Application) ->
               item.width = parseInt(bits[2],10)
               item.height = parseInt(bits[3],10)
           else
+            #
+            # Otherwise, we expect this to be a text constraint.
+            #
             if constraint.oaxbegin?
               item.start = parseInt(constraint.oaxbegin?[0], 10)
             if constraint.oaxend?
               item.end = parseInt(constraint.oaxend?[0], 10)
-          # handle SVG constraints (rectangles, ellipses)
-          # handle time constraints? for video/sound annotations?
 
-        extractTextTarget = (item, id) ->
+        #
+        # Given the id of a oahasTarget, we put into the given item
+        # the information related to that target. We expect the target
+        # to be a text range.
+        #
+        extractTextTarget = (item, annoItem, id) ->
           return unless id?
           target = manifestData.getItem id
           if "oaSpecificResource" in target.type
             item.target = target.oahasSource
-            if target.oahasStyle?
+            #
+            # N.B.: The style inclusion mechanism is changing!
+            # We want to use styleSource to manage CSS styles.
+            #
+            if annoItem.oastyledBy? && target.oastyleClass?
+              cssStyleItem = manifestData.getItem annoitem.oastyledBy[0]
+              styleSource.addStyles cssStyleItem.id[0], cssStyleItem.cntchars[0]
+              item.css = styleSource.getStylesForClass target.oastyleClass[0]
+            else if target.oahasStyle?
               styleItem = manifestData.getItem target.oahasStyle[0]
               if "text/css" in styleItem.dcformat
                 item.css = styleItem.cntchars
@@ -131,13 +168,20 @@ SGAReader.namespace "Application", (Application) ->
           else
             item.target = id
 
+        #
+        # Given the id of a oahasBody, we put into the given item
+        # the information related to that body. We expect the body to
+        # be a text range.
+        #
         extractTextBody = (item, id) ->
           return unless id?
           body = manifestData.getItem id
-          textSource.addFile(body.oahasSource)
-          item.source = body.oahasSource
-          extractSpatialConstraint(item, body.oahasSelector?[0])
-
+          if "oaSpecificResource" in body.type
+            textSource.addFile(body.oahasSource)
+            item.source = body.oahasSource
+            extractSpatialConstraint(item, body.oahasSelector?[0])
+          else if "cntContentAsText" in body.type
+            item.text = body.cntchars[0]
 
         if options.url?
           #
@@ -145,12 +189,16 @@ SGAReader.namespace "Application", (Application) ->
           # it. For now, this is the only way to get data from a manifest.
           #
           manifestData.importFromURL options.url, ->
-            # now pull data out into data store
-            # if multiple sequences, we want to add a control to allow
-            # selection
+            # Once the RDF/JSON is loaded from the url and parsed into
+            # the manifestData triple store, we process it to pull out all
+            # of the features we care about.
             items = []
             syncer = MITHGrid.initSynchronizer()
 
+            #
+            # We begin by pulling out all of the canvases defined in the
+            # manifest. We only care about their id, size, and label.
+            #
             canvases = manifestData.getCanvases()
             that.addItemsToProcess canvases.length
             syncer.process canvases, (id) ->
@@ -163,6 +211,11 @@ SGAReader.namespace "Application", (Application) ->
                 height: parseInt(mitem.exifheight?[0], 10)
                 label: mitem.dctitle || mitem.rdfslabel
 
+            #
+            # We want to add any zones that might be in the manifest. These
+            # are like canvases, but with the addition of a rotation angle.
+            # ZoneAnnotations map zones onto canvases.
+            #
             zones = manifestData.getZones()
             that.addItemsToProcess zones.length
             syncer.process zones, (id) ->
@@ -176,6 +229,14 @@ SGAReader.namespace "Application", (Application) ->
                 angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
                 label: zitem.rdfslabel
 
+            #
+            # We pull out all of the sequences in the manifest. MITHGrid
+            # stores a multi-valued property as an ordered list (JavaScript
+            # array), so we don't need all of the blank nodes that RDF uses.
+            #
+            # The primary or initial sequence is undefined if there are
+            # multiple sequences in the manifest.
+            #
             seq = manifestData.getSequences()
             that.addItemsToProcess seq.length
             syncer.process seq, (id) ->
@@ -186,7 +247,6 @@ SGAReader.namespace "Application", (Application) ->
                 type: 'Sequence'
                 label: sitem.rdfslabel
 
-              # walk list of canvases
               seq = []
               seq.push sitem.rdffirst[0]
               sitem = manifestData.getItem sitem.rdfrest[0]
@@ -199,15 +259,19 @@ SGAReader.namespace "Application", (Application) ->
             textSources = {}
             textAnnos = []
 
-            # now get the annotations we know something about handling
+            #
+            # We pull out all of the annotations (oa:Annotation) items and
+            # process the ones we know about.
+            #
             annos = manifestData.getAnnotations()
             that.addItemsToProcess annos.length
             syncer.process annos, (id) ->
               #
               # Once we have our various annotations, we want to process
               # them to produce sets of items that can be displayed in a
-              # sequence - move some of the logic from the presentation to
-              # here so we are only concerned with presenting things.
+              # sequence. We preprocess overlapping ranges of highlights
+              # to create non-overlapping multi-classed items that can
+              # be filtered in the final presentation.
               #
               that.addItemsProcessed 1
               aitem = manifestData.getItem id
@@ -215,16 +279,44 @@ SGAReader.namespace "Application", (Application) ->
               item =
                 id: id
 
-              # for now, we *assume* that the content annotation is coming
-              # from a TEI file and is marked by begin/end pointers
+              #
+              # For now, we *assume* that the content annotation is coming
+              # from a TEI file and is marked by begin/end pointers.
+              # These annotations are loaded into the triple store as they
+              # are since they don't target sub-ranges of text.
+              # TextContent items end up acting like zones in that they
+              # are the target of text annotations but don't themselves
+              # end up providing content.
+              #
               if "scContentAnnotation" in aitem.type
-                extractTextTarget item, aitem.oahasTarget?[0]
+                extractTextTarget item, aitem, aitem.oahasTarget?[0]
                 extractTextBody   item, aitem.oahasBody?[0]
-                textSources[item.source] ?= []
-                textSources[item.source].push [ id, item.start, item.end ]
-                item.type = "TextContent"
+                if item.start? and item.end?
+                  textSources[item.source] ?= []
+                  textSources[item.source].push [ id, item.start, item.end ]
+                #
+                # We should use "ContentAnnotation" only when we know we
+                # won't have anything targeting this text. Otherwise, we
+                # should use TextContentZone. This is a work in progress
+                # as we see the pattern unfold.
+                #
+                # Essentially, if we want the annotation to act as a classic
+                # Shared Canvas text content annotation, we use a type of
+                # "ContentAnnotation". If we want to allow highlight annotation
+                # of the text with faceted selection of text, then we use a
+                # type of "TextContentZone".
+                #
+                if item.text?
+                  item.type = "ContentAnnotation"
+                else
+                  item.type = "TextContentZone"
                 array = items
 
+              #
+              # For now, we assume that images map onto the entire canvas.
+              # This isn't true for Shared Canvas. We need to extract any
+              # spatial constraint and respect it in the presentation.
+              #
               else if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
                 imgitem = imgitem[0] if $.isArray(imgitem)
@@ -250,7 +342,7 @@ SGAReader.namespace "Application", (Application) ->
                 # prefixed with "sga" and ending in "Annotation"
                 sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
                 if sgaTypes.length > 0
-                  extractTextTarget item, aitem.oahasTarget?[0]
+                  extractTextTarget item, aitem, aitem.oahasTarget?[0]
                   item.type = sgaTypes
                   array = textAnnos
 
@@ -262,6 +354,10 @@ SGAReader.namespace "Application", (Application) ->
               # each addition, deletion, etc., targets a scContentAnnotation
               # but we want to make sure we get any scContentAnnotation text
               # that isn't covered by any of the other annotations
+
+              # This is inspired by NROFF as implemented, for example, in
+              # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
+              # It also has shades of a SAX processor thrown in.
               
               that.addItemsToProcess 1 + textAnnos.length
               that.dataStore.data.loadItems items, ->

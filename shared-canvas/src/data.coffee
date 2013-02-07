@@ -2,6 +2,39 @@
 SGAReader.namespace "Data", (Data) ->
 
   #
+  # ## Data.StyleStore
+  #
+
+  Data.namespace "StyleStore", (StyleStore) ->
+    StyleStore.initInstance = (args...) ->
+      MITHGrid.initInstance args..., (that) ->
+        options = that.options
+
+        docs = { }
+        regex = new RegExp("(?:\\.(\\S+)\\s*\\{\\s*([^}]*)\\s*\\})", "mg")
+
+        #
+        # Associates the CSS content with the given id.
+        #
+        that.addStyles = (id, css) ->
+          return if docs[id]?
+          docs[id] = { }
+          results = regex.exec(css)
+          while results?.index?
+            docs[id][results[1]] = results[2]
+            results = regex.exec(css)
+
+        #
+        # Returns the CSS style rules for a given class as defined by the
+        # CSS content associated with the given id.
+        #
+        that.getStylesForClass = (id, klass) ->
+          if docs[id]?[klass]?
+            docs[id][klass]
+          else
+            ""
+
+  #
   # ## Data.TextStore
   #
   Data.namespace "TextStore", (TextStore) ->
@@ -34,6 +67,9 @@ SGAReader.namespace "Data", (Data) ->
             cb(fileContents[file])
           else if loadingFiles[file]?
             loadingFiles[file].push cb
+          else
+            that.addFile file
+            loadingFiles[file].push cb
 
   #
   # ## Data.Manifest
@@ -59,6 +95,11 @@ SGAReader.namespace "Data", (Data) ->
       "http://www.shelleygodwinarchive.org/ns/1#": "sga"
       "http://www.shelleygodwinarchive.org/ns1#": "sga"
       "http://www.w3.org/2011/content#": "cnt"
+      "http://purl.org/dc/dcmitype/": "dctypes"
+
+    types =
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "item"
+      "http://www.w3.org/ns/openannotation/core/hasMotivation": "item"
 
     Manifest.initInstance = (args...) ->
       MITHGrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
@@ -101,7 +142,7 @@ SGAReader.namespace "Data", (Data) ->
               id: s
             for p, os of predicates
                values = []
-               if p == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+               if types[p] == "item"
                  for o in os
                    if o.type == "uri"
                      for ns, prefix of NS

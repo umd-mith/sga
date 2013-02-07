@@ -5,38 +5,54 @@ SGAReader.namespace "Presentation", (Presentation) ->
   # ## Presentation.TextContent
   #
 
+  #
+  # The TextContent presentation is all about modeling a section of a canvas
+  # as a textual zone instead of a pixel-based zone. Eventually, we may want
+  # to allow addressing of lines and character offsets, but for now we simply
+  # fill in the area with textual annotations in the dataView.
+  #
+
   Presentation.namespace "TextContent", (TextContent) ->
     TextContent.initInstance = (args...) ->
       MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
         options = that.options
 
-        makeAnnoLens = (type) ->
-          that.addLens type, (container, view, model, id) ->
-            rendering = {}
-            el = $("<span></span>")
-            rendering.$el = el
-            item = model.getItem id
+        #
+        # We draw each text span type the same way. We rely on the
+        # item.type to give us the CSS classes we need for the span
+        #
+        annoLens = (container, view, model, id) ->
+          rendering = {}
+          el = $("<span></span>")
+          rendering.$el = el
+          item = model.getItem id
+          el.text item.text[0]
+          el.addClass item.type.join(" ")
+          el.attr "style", item.css?[0]
+          $(container).append el
+          rendering.remove = ->
+            el.remove()
+          rendering.update = (item) ->
             el.text item.text[0]
-            el.addClass item.type.join(" ")
-            el.attr "style", item.css?[0]
-            $(container).append el
-            rendering.remove = ->
-              el.remove()
-            rendering.update = (item) ->
-              el.text item.text[0]
-            rendering
+          rendering
 
         #
         # We expect an HTML container for this to which we can append
         # all of the text content pieces that belong to this container.
         # For now, we are dependent on the data store to retain the ordering
-        # of items based on insertion order.
+        # of items based on insertion order. Eventually, we'll build
+        # item ordering into the basic MITHGrid presentation code. Then, we
+        # can set 
         #
-        makeAnnoLens 'AdditionAnnotation'
-        makeAnnoLens 'DeletionAnnotation'
-        makeAnnoLens 'LineAnnotation'
-        makeAnnoLens 'Text'
+        that.addLens 'AdditionAnnotation', annoLens
+        that.addLens 'DeletionAnnotation', annoLens
+        that.addLens 'LineAnnotation', annoLens
+        that.addLens 'Text', annoLens
 
+        #
+        # Line breaks are different. We just want to add an explicit
+        # break without any classes or styling.
+        #
         that.addLens 'LineBreak', (container, view, model, id) ->
           rendering = {}
           el = $("<br/>")
@@ -51,15 +67,31 @@ SGAReader.namespace "Presentation", (Presentation) ->
   #
   # ## Presentation.Zone
   #
+
+  #
+  # The Zone presentation handles mapping annotations onto an SVG
+  # surface. A Canvas is just a special zone that covers the entire canvas.
+  #
+  # We expect container to be in the SVG image.
+  #
   Presentation.namespace "Zone", (Zone) ->
     Zone.initInstance = (args...) ->
-      # We expect container to be in the SVG image
       MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
         options = that.options
         svgRoot = options.svgRoot
 
+        #
+        # !target gives us all of the annotations that target the given
+        # item id. We use this later to find all of the annotations that target
+        # a given zone.
+        #
         annoExpr = that.dataView.prepare(['!target'])
 
+        #
+        # Since images don't have annotations attached to them, we simply
+        # do nothing if our presentation root isn't marked as including
+        # images.
+        #
         that.addLens 'Image', (container, view, model, id) ->
           return unless 'Image' in (options.types || [])
           rendering = {}
@@ -67,36 +99,35 @@ SGAReader.namespace "Presentation", (Presentation) ->
           item = model.getItem id
 
           svgImage = null
-          if item.image?[0]? and svgRoot?
-            x = if item.x?[0]? then item.x[0] else 0
-            y = if item.y?[0]? then item.y[0] else 0
-            width = if item.width?[0]? then item.width[0] else options.width - x
-            height = if item.height?[0]? then item.height[0] else options.height - y
-            svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
-              preserveAspectRatio: 'none'
-            })
-
-          rendering.update = (item) ->
-            # do nothing for now - eventually, update image
+          renderImage = (item) ->
             if item.image?[0]? and svgRoot?
               x = if item.x?[0]? then item.x[0] else 0
               y = if item.y?[0]? then item.y[0] else 0
               width = if item.width?[0]? then item.width[0] else options.width - x
               height = if item.height?[0]? then item.height[0] else options.height - y
-              svgRoot.remove svgImage
+              if svgImage?
+                svgRoot.remove svgImage
               svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
                 preserveAspectRatio: 'none'
               })
+
+          renderImage(item)
+
+          rendering.update = renderImage
 
           rendering.remove = ->
             if svgImage? and svgRoot?
               svgRoot.remove svgImage
           rendering
 
+        #
+        # ZoneAnnotations just map a zone onto a zone or canvas. We render
+        # these regardless of what kinds of annotations we are displaying
+        # since we might eventually get to an annotation we want to display.
+        #
         that.addLens 'ZoneAnnotation', (container, view, model, id) ->
           rendering = {}
-          # we need to get the width/height from the item
-          # based on what we're targeting
+
           zoneInfo = model.getItem id
           zoneContainer = null
           zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg' )
@@ -108,10 +139,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
           height = if item.height?[0]? then item.height[0] else options.height - y
           $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(zoneContainer)
-          # apply position/transformations
-          # based on zoneannotation info
 
-          # TODO: position/size zoneContainer and set scaling
+          # TODO: position/size zoneContainer and set scaling.
           zoneDataView = MITHGrid.Data.SubSet.initInstance
             dataStore: model
             expressions: [ '!target' ]
@@ -132,9 +161,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
             zoneDataView._destroy() if zoneDataView._destroy?
 
           rendering.remove = ->
-            #if svgRoot? and container?
-            #  $(container).empty()
-            #  svgRoot.remove container
             rendering._destroy()
  
           rendering.update = (item) ->
@@ -146,17 +172,66 @@ SGAReader.namespace "Presentation", (Presentation) ->
  
           rendering
 
-        that.addLens 'TextContent', (container, view, model, id) ->
+        #
+        # A ContentAnnotation is just text placed on the canvas. No
+        # structure. This is the default mode for SharedCanvas.
+        #
+        # See the following TextContentZone lens for how we're managing
+        # the SVG/HTML interface.
+        #
+
+        that.addLens 'ContentAnnotation', (container, view, model, id) ->
+          return unless 'Text' in (options.types || [])
+
+          rendering = {}
+          item = model.getItem id
+
+          textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject')
+
+          x = if item.x?[0]? then item.x[0] else 0
+          y = if item.y?[0]? then item.y[0] else 0
+          width = if item.width?[0]? then item.width[0] else options.width - x
+          height = if item.height?[0]? then item.height[0] else options.height - y
+          $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+          container.appendChild(textContainer)
+          bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+          rootEl = document.createElement('div')
+          $(rootEl).addClass("text-content")
+          
+          rootEl.text(item.text[0])
+          rendering.update = (item) ->
+            rootEl.text(item.text[0])
+          rendering.remove = ->
+            rootEl.remove()
+          rendering
+
+        #
+        #
+        # We're rendering text content from here on down, so if we aren't
+        # rendering text for this view, then we shouldn't do anything here.
+        #
+        # N.B.: If we ever support showing images based on their place
+        # in the text, then we will need to treat this like we treat the
+        # Zone above and allow rendering of embedded zones even if we don't
+        # render the textual content.
+        #
+        that.addLens 'TextContentZone', (container, view, model, id) ->
           return unless 'Text' in (options.types || [])
 
           rendering = {}
           app = options.application()
           item = model.getItem id
  
-          textContainer = null
+          #
+          # The foreignObject element MUST be in the SVG namespace, so we
+          # can't use the jQuery convenience methods.
+          #
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
-          # pull start/end/width/height from constraint with a default of
-          # the full surface
+
+          #
+          # If we're not given an offset and size, then we assume that we're
+          # covering the entire targeted zone or canvas.
+          #
           x = if item.x?[0]? then item.x[0] else 0
           y = if item.y?[0]? then item.y[0] else 0
           width = if item.width?[0]? then item.width[0] else options.width - x
@@ -164,6 +239,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(textContainer)
 
+          #
+          # Similar to foreignObject, the body element MUST be in the XHTML
+          # namespace, so we can't use jQuery. Once we're inside the body
+          # element, we can use jQuery all we want.
+          #
           bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
@@ -173,12 +253,23 @@ SGAReader.namespace "Presentation", (Presentation) ->
           bodyEl.appendChild(rootEl)
           textContainer.appendChild(bodyEl)
 
+          #
+          # textDataView gives us all of the annotations targeting this
+          # text content annotation - that is, all of the highlights and such
+          # that change how we render the text mapped onto the zone/canvas.
+          # We don't set the key here because the SubSet data view won't use
+          # the key to filter the set of annotations during the initInstance
+          # call.
+          #
           textDataView = MITHGrid.Data.SubSet.initInstance
             dataStore: model
             expressions: [ '!target' ]
-            #key: id
 
-
+          #
+          # Here we embed the text-based zone within the pixel-based
+          # zone. Any text-based positioning will have to be handled by
+          # the TextContent presentation.
+          #
           text = Presentation.TextContent.initInstance rootEl,
             types: options.types
             dataView: textDataView
@@ -187,6 +278,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
             height: height
             width: width
 
+          #
+          # Once we have the presentation in place, we set the
+          # key of the SubSet data view to the id of the text content 
+          # annotation item. This causes the presentation to render the
+          # annotations.
+          #
           textDataView.setKey id
 
           rendering._destroy = ->
@@ -194,8 +291,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
             textDataView._destroy() if textDataView._destroy?
 
           rendering.remove = ->
-            #$(textContainer).empty()
-            #svgRoot.remove textContainer
+            $(textContainer).empty()
+            svgRoot.remove textContainer
 
           rendering.update = (item) ->
             x = if item.x?[0]? then item.x[0] else 0
@@ -209,6 +306,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
   #
   # ## Presentation.Canvas
   #
+
+  #
+  # This is the wrapper around a root Zone presentation that gets things
+  # started.
+  #
   Presentation.namespace "Canvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
       MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
@@ -220,8 +322,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # and then we apply any annotations that modify how we display
         # the text before we create the svg elements - that way, we get
         # things like line breaks
-
-        highlightDS = null
 
         annoExpr = that.dataView.prepare(['!target'])
 
@@ -246,6 +346,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
         canvasHeight = null
         SVGHeight = null
         SVGWidth = parseInt($(container).width()*20/20, 10)
+
+        #
+        # MITHGrid makes available a global listener for browser window
+        # resizing so we don't have to guess how to do this for each
+        # application.
+        #
         MITHGrid.events.onWindowResize.addListener ->
           SVGWidth = parseInt($(container).width() * 20/20, 10)
           if canvasWidth? and canvasWidth > 0
@@ -259,9 +365,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRootEl.attr
                 width: canvasWidth
                 height: canvasHeight
-                #transform: "scale(#{s})"
               svgRoot.configure
-                #transform: "scale(#{s})"
                 viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
 
               svgRootEl.css

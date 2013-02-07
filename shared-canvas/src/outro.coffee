@@ -1,6 +1,15 @@
 
 )(jQuery, MITHGrid)
 
+#
+# The Application.SharedCanvas object ties together all of the information
+# about our view of the manifest, from available sequences and annotations
+# to where we are in which sequence. The application object coordinates all
+# of the components and presentations concerned with a particular manifest.
+#
+# The app.dataViews.canvasAnnotations data view will always contain a list
+# of annotations directly targeting the current canvas.
+#
 MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
   dataStores:
     data:
@@ -23,6 +32,10 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
     Sequence: { is: 'rw' }
     Position: { is: 'lrw', isa: 'numeric' }
 
+#
+# The Slider and PagerControls have the same variables so that they can be
+# used interchangably.
+#
 MITHGrid.defaults 'SGA.Reader.Component.Slider',
   variables:
     Min:   { is: 'rw', isa: 'numeric' }
@@ -39,6 +52,11 @@ MITHGrid.defaults 'SGA.Reader.Component.SequenceSelector',
   variables:
     Sequence: { is: 'rw' }
 
+#
+# We put the view setup here so that we don't have to remember how to
+# arrange the Twitter Bootstrap HTML each time. This is looking forward
+# to when this is a component outside SGA.
+#
 MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
   variables:
     Numerator:   { is: 'rw', default: 0, isa: 'numeric' }
@@ -49,11 +67,22 @@ MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
     </div>
   """
 
+#
+# We use the Canvas presentation as the root surface for displaying the
+# annotations. Thus, we keep track of which canvas we're looking at.
+# The Scale variable will be used to manage zooming.
+#
+# TODO: Have variables for panning across the canvas.
+#
 MITHGrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
 
+#
+# The ItemsToProcess and ItemsProcessed are analagous to the
+# Numerator and Denominator of the ProgressBar component.
+#
 MITHGrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
     ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
