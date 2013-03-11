@@ -68,26 +68,7 @@ SGAReader.namespace "Application", (Application) ->
 
         #
         # ### Manifest Import
-        #
-
-        #
-        # manifestData holds the data read from the shared canvas
-        # manifest that we then process into the application's data store.
-        #
-        manifestData = SGA.Reader.Data.Manifest.initInstance()
-
-        #
-        # We expose several of the manifestData methods so that things like
-        # the progress bar can know where we are in the process.
-        #
-        that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
-        that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
-        that.getItemsProcessed = manifestData.getItemsProcessed
-        that.getItemsToProcess = manifestData.getItemsToProcess
-        that.setItemsProcessed = manifestData.setItemsProcessed
-        that.setItemsToProcess = manifestData.setItemsToProcess
-        that.addItemsProcessed = manifestData.addItemsProcessed
-        that.addItemsToProcess = manifestData.addItemsToProcess
+        #             
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -98,53 +79,72 @@ SGAReader.namespace "Application", (Application) ->
 
         that.withSource = textSource.withFile
 
-        extractSpatialConstraint = (item, id) ->
-          return unless id?
-          constraint = manifestData.getItem id
-          if 'oaFragmentSelector' in constraint.type
-            if constraint.rdfvalue[0].substr(0,5) == "xywh="
-              item.shape = "Rectangle"
-              bits = constraint.rdfvalue[0].substr(5).split(",")
-              item.x = parseInt(bits[0],10)
-              item.y = parseInt(bits[1],10)
-              item.width = parseInt(bits[2],10)
-              item.height = parseInt(bits[3],10)
-          else
-            if constraint.oaxbegin?
-              item.start = parseInt(constraint.oaxbegin?[0], 10)
-            if constraint.oaxend?
-              item.end = parseInt(constraint.oaxend?[0], 10)
-          # handle SVG constraints (rectangles, ellipses)
-          # handle time constraints? for video/sound annotations?
+        console.log textSource
 
-        extractTextTarget = (item, id) ->
-          return unless id?
-          target = manifestData.getItem id
-          if "oaSpecificResource" in target.type
-            item.target = target.oahasSource
-            if target.oahasStyle?
-              styleItem = manifestData.getItem target.oahasStyle[0]
-              if "text/css" in styleItem.dcformat
-                item.css = styleItem.cntchars
-
-            extractSpatialConstraint(item, target.oahasSelector?[0])
-          else
-            item.target = id
-
-        extractTextBody = (item, id) ->
-          return unless id?
-          body = manifestData.getItem id
-          textSource.addFile(body.oahasSource)
-          item.source = body.oahasSource
-          extractSpatialConstraint(item, body.oahasSelector?[0])
-
-
-        if options.url?
+        loadManifest = (url, cb) ->
           #
-          # If we're given a URL in our options, then go ahead and load
-          # it. For now, this is the only way to get data from a manifest.
+          # manifestData holds the data read from the shared canvas
+          # manifest that we then process into the application's data store.
           #
-          manifestData.importFromURL options.url, ->
+          manifestData = SGA.Reader.Data.Manifest.initInstance()
+
+          #
+          # We expose several of the manifestData methods so that things like
+          # the progress bar can know where we are in the process.
+          #
+          that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
+          that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
+          that.getItemsProcessed = manifestData.getItemsProcessed
+          that.getItemsToProcess = manifestData.getItemsToProcess
+          that.setItemsProcessed = manifestData.setItemsProcessed
+          that.setItemsToProcess = manifestData.setItemsToProcess
+          that.addItemsProcessed = manifestData.addItemsProcessed
+          that.addItemsToProcess = manifestData.addItemsToProcess
+
+
+
+          extractSpatialConstraint = (item, id) ->
+            return unless id?
+            constraint = manifestData.getItem id
+            if 'oaFragmentSelector' in constraint.type
+              if constraint.rdfvalue[0].substr(0,5) == "xywh="
+                item.shape = "Rectangle"
+                bits = constraint.rdfvalue[0].substr(5).split(",")
+                item.x = parseInt(bits[0],10)
+                item.y = parseInt(bits[1],10)
+                item.width = parseInt(bits[2],10)
+                item.height = parseInt(bits[3],10)
+            else
+              if constraint.oaxbegin?
+                item.start = parseInt(constraint.oaxbegin?[0], 10)
+              if constraint.oaxend?
+                item.end = parseInt(constraint.oaxend?[0], 10)
+            # handle SVG constraints (rectangles, ellipses)
+            # handle time constraints? for video/sound annotations?
+
+          extractTextTarget = (item, id) ->
+            return unless id?
+            target = manifestData.getItem id
+            if "oaSpecificResource" in target.type
+              item.target = target.oahasSource
+              if target.oahasStyle?
+                styleItem = manifestData.getItem target.oahasStyle[0]
+                if "text/css" in styleItem.dcformat
+                  item.css = styleItem.cntchars
+
+              extractSpatialConstraint(item, target.oahasSelector?[0])
+            else
+              item.target = id
+
+          extractTextBody = (item, id) ->
+            return unless id?
+            body = manifestData.getItem id
+            textSource.addFile(body.oahasSource)
+            item.source = body.oahasSource
+            extractSpatialConstraint(item, body.oahasSelector?[0])
+
+          manifestData.importFromURL url, ->
+            console.log url
             # now pull data out into data store
             # if multiple sequences, we want to add a control to allow
             # selection
@@ -153,6 +153,7 @@ SGAReader.namespace "Application", (Application) ->
 
             canvases = manifestData.getCanvases()
             that.addItemsToProcess canvases.length
+
             syncer.process canvases, (id) ->
               that.addItemsProcessed 1
               mitem = manifestData.getItem id
@@ -262,7 +263,7 @@ SGAReader.namespace "Application", (Application) ->
               # each addition, deletion, etc., targets a scContentAnnotation
               # but we want to make sure we get any scContentAnnotation text
               # that isn't covered by any of the other annotations
-              
+
               that.addItemsToProcess 1 + textAnnos.length
               that.dataStore.data.loadItems items, ->
                 items = []
@@ -375,6 +376,20 @@ SGAReader.namespace "Application", (Application) ->
                         that.addItemsProcessed 1
                     
                 that.addItemsProcessed 1
+                cb() if cb?
+
+        if options.url?
+          #
+          # If we're given a URL in our options, then go ahead and load
+          # it. For now, this is the only way to get data from a manifest.
+          #
+          pipeManifests = (ms) ->
+            if ms.length > 1
+              loadManifest ms[0], pipeManifests(ms[1..ms.length])
+
+          pipeManifests [options.url, "http://localhost:5000/annotate?q=text:feelings"]
+          # Call function again to load annotations from: http://localhost:5000/annotate?q=text:feelings
+          
 
     #
     # ### Application.SharedCanvas#builder
