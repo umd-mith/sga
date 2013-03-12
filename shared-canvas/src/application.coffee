@@ -13,6 +13,7 @@ SGAReader.namespace "Application", (Application) ->
         # ### Presentation Coordination
         #
 
+
         presentations = []
 
         # This is a convenience method for creating a Shared Canvas
@@ -66,6 +67,16 @@ SGAReader.namespace "Application", (Application) ->
           pp[0].setCanvas k for pp in presentations
           k
 
+
+        #
+        # textSource manages fetching and storing all of the TEI
+        # files that we will be referencing in our text content
+        # annotations.
+        #
+        textSource = SGA.Reader.Data.TextStore.initInstance()
+
+        that.withSource = textSource.withFile
+
         #
         # ### Manifest Import
         #    
@@ -81,23 +92,6 @@ SGAReader.namespace "Application", (Application) ->
           # We expose several of the manifestData methods so that things like
           # the progress bar can know where we are in the process.
           #
-          that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
-          that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
-          that.getItemsProcessed = manifestData.getItemsProcessed
-          that.getItemsToProcess = manifestData.getItemsToProcess
-          that.setItemsProcessed = manifestData.setItemsProcessed
-          that.setItemsToProcess = manifestData.setItemsToProcess
-          that.addItemsProcessed = manifestData.addItemsProcessed
-          that.addItemsToProcess = manifestData.addItemsToProcess
-
-          #
-          # textSource manages fetching and storing all of the TEI
-          # files that we will be referencing in our text content
-          # annotations.
-          #
-          textSource = SGA.Reader.Data.TextStore.initInstance()
-
-          that.withSource = textSource.withFile
 
           extractSpatialConstraint = (item, id) ->
             return unless id?
@@ -378,13 +372,19 @@ SGAReader.namespace "Application", (Application) ->
           #
           # If we're given a URL in our options, then go ahead and load
           # it. For now, this is the only way to get data from a manifest.
-          #
+
+
           pipeManifests = (ms) ->
-            if ms.length > 1
-              loadManifest ms[0], pipeManifests(ms[1..ms.length])
+            n = ms.length
+            #console.log that.getItemsToProcess(), that.getItemsProcessed()
+
+            if n > 1
+              loadManifest ms[0], ->
+                pipeManifests ms[1..n]
+            else 
+              loadManifest ms[0]
 
           pipeManifests [options.url, "http://localhost:5000/annotate?q=text:feelings"]
-          # Call function again to load annotations from: http://localhost:5000/annotate?q=text:feelings
           
 
     #
@@ -410,7 +410,7 @@ SGAReader.namespace "Application", (Application) ->
       # Initialize these to nil functions in case we don't have a progress
       # tracker. Also makes sure that CoffeeScript scopes them correctly.
       updateProgressTracker = ->
-      updateProgressTrackerVisibility = ->
+      #updateProgressTrackerVisibility = ->
 
       if config.progressTracker?
         updateProgressTracker = ->
@@ -422,29 +422,33 @@ SGAReader.namespace "Application", (Application) ->
           for m, obj of that.manifests
             n += obj.getItemsProcessed()
             d += obj.getItemsToProcess()
+          if n < d
+            config.progressTracker.show()
+          else
+            config.progressTracker.hide()
           config.progressTracker.setNumerator(n)
           config.progressTracker.setDenominator(d or 1)
 
         uptv = null
         uptvTimer = 1000
 
-        updateProgressTrackerVisibility = ->
-          if uptv?
-            uptvTimer = 500
-          else
-            uptv = ->
-              for m, obj of that.manifests
-                if obj.getItemsToProcess() > obj.getItemsProcessed()
-                  config.progressTracker.show()
-                  uptvTimer /= 2
-                  uptvTimer = 500 if uptvTimer < 500
-                  setTimeout uptv, uptvTimer
-                  return
-              config.progressTracker.hide() if uptvTimer > 500
-              uptvTimer *= 2
-              uptvTimer = 10000 if uptvTimer > 10000
-              setTimeout uptv, uptvTimer
-            uptv()
+        # updateProgressTrackerVisibility = ->
+        #   if uptv?
+        #     uptvTimer = 500
+        #   else
+        #     uptv = ->
+        #       for m, obj of that.manifests
+        #         if obj.getItemsToProcess() > obj.getItemsProcessed()
+        #           config.progressTracker.show()
+        #           uptvTimer /= 2
+        #           uptvTimer = 500 if uptvTimer < 500
+        #           setTimeout uptv, uptvTimer
+        #           return
+        #       config.progressTracker.hide() if uptvTimer > 500
+        #       uptvTimer *= 2
+        #       uptvTimer = 10000 if uptvTimer > 10000
+        #       setTimeout uptv, uptvTimer
+        #     uptv()
 
       #
       # #### #onManifest
@@ -498,7 +502,7 @@ SGAReader.namespace "Application", (Application) ->
               delete manifestCallbacks[manifestUrl]
             manifest.events.onItemsToProcessChange.addListener updateProgressTracker
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
-            updateProgressTrackerVisibility()
+            #updateProgressTrackerVisibility()
               
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
