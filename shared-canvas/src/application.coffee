@@ -13,9 +13,9 @@ SGAReader.namespace "Application", (Application) ->
         # ### Presentation Coordination
         #
 
+
         presentations = []
 
-        #
         # This is a convenience method for creating a Shared Canvas
         # presentation and tying it to the data management application.
         # All presentations linked to this application will be coordinated
@@ -33,7 +33,6 @@ SGAReader.namespace "Application", (Application) ->
         # canvas is in the new sequence and set the position to reflect
         # the new relationship between the canvas and the current sequence.
         #
-
         currentSequence = null
 
         that.events.onSequenceChange.addListener (s) ->
@@ -68,28 +67,6 @@ SGAReader.namespace "Application", (Application) ->
           pp[0].setCanvas k for pp in presentations
           k
 
-        #
-        # ### Manifest Import
-        #
-
-        #
-        # manifestData holds the data read from the shared canvas
-        # manifest that we then process into the application's data store.
-        #
-        manifestData = SGA.Reader.Data.Manifest.initInstance()
-
-        #
-        # We expose several of the manifestData methods so that things like
-        # the progress bar can know where we are in the process.
-        #
-        that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
-        that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
-        that.getItemsProcessed = manifestData.getItemsProcessed
-        that.getItemsToProcess = manifestData.getItemsToProcess
-        that.setItemsProcessed = manifestData.setItemsProcessed
-        that.setItemsToProcess = manifestData.setItemsToProcess
-        that.addItemsProcessed = manifestData.addItemsProcessed
-        that.addItemsToProcess = manifestData.addItemsToProcess
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -101,106 +78,72 @@ SGAReader.namespace "Application", (Application) ->
         that.withSource = textSource.withFile
 
         #
-        # styleSource manages extracting style information for
-        # CSS classes from CSS documents that might be embedded
-        # in the RDF graph. This is the new mechanism encouraged by
-        # the OA W3C group.
-        #
-        styleSource = SGA.Reader.Data.StyleStore.initInstance()
+        # ### Manifest Import
+        #    
 
-
-        #
-        # Given the id of a oahasSelector resource attached to
-        # a oaSpecificResource resource, extractSpatialContraint
-        # will find the type of spatial constraint and place the
-        # relavent bits into the given item.
-        #
-        extractSpatialConstraint = (item, id) ->
-          return unless id?
-          constraint = manifestData.getItem id
+        loadManifest = (url, cb) ->
           #
-          # oaFragmentSelector represents a rectangular area
-          # if it starts with "xywh=". We may expand to cover
-          # some SVG spatial constraints and oaFragmentSelector temporal
-          # constraints if we want to support video annotation.
+          # manifestData holds the data read from the shared canvas
+          # manifest that we then process into the application's data store.
           #
-          if 'oaFragmentSelector' in constraint.type
-            if constraint.rdfvalue[0].substr(0,5) == "xywh="
-              item.shape = "Rectangle"
-              bits = constraint.rdfvalue[0].substr(5).split(",")
-              item.x = parseInt(bits[0],10)
-              item.y = parseInt(bits[1],10)
-              item.width = parseInt(bits[2],10)
-              item.height = parseInt(bits[3],10)
-          else
-            #
-            # Otherwise, we expect this to be a text constraint.
-            #
-            if constraint.oaxbegin?
-              item.start = parseInt(constraint.oaxbegin?[0], 10)
-            if constraint.oaxend?
-              item.end = parseInt(constraint.oaxend?[0], 10)
+          manifestData = SGA.Reader.Data.Manifest.initInstance()
 
-        #
-        # Given the id of a oahasTarget, we put into the given item
-        # the information related to that target. We expect the target
-        # to be a text range.
-        #
-        extractTextTarget = (item, annoItem, id) ->
-          return unless id?
-          target = manifestData.getItem id
-          if "oaSpecificResource" in target.type
-            item.target = target.oahasSource
-            #
-            # N.B.: The style inclusion mechanism is changing!
-            # We want to use styleSource to manage CSS styles.
-            #
-            if annoItem.oastyledBy? && target.oastyleClass?
-              cssStyleItem = manifestData.getItem annoitem.oastyledBy[0]
-              styleSource.addStyles cssStyleItem.id[0], cssStyleItem.cntchars[0]
-              item.css = styleSource.getStylesForClass target.oastyleClass[0]
-            else if target.oahasStyle?
-              styleItem = manifestData.getItem target.oahasStyle[0]
-              if "text/css" in styleItem.dcformat
-                item.css = styleItem.cntchars
+          #
+          # We expose several of the manifestData methods so that things like
+          # the progress bar can know where we are in the process.
+          #
 
-            extractSpatialConstraint(item, target.oahasSelector?[0])
-          else
-            item.target = id
+          extractSpatialConstraint = (item, id) ->
+            return unless id?
+            constraint = manifestData.getItem id
+            if 'oaFragmentSelector' in constraint.type
+              if constraint.rdfvalue[0].substr(0,5) == "xywh="
+                item.shape = "Rectangle"
+                bits = constraint.rdfvalue[0].substr(5).split(",")
+                item.x = parseInt(bits[0],10)
+                item.y = parseInt(bits[1],10)
+                item.width = parseInt(bits[2],10)
+                item.height = parseInt(bits[3],10)
+            else
+              if constraint.oaxbegin?
+                item.start = parseInt(constraint.oaxbegin?[0], 10)
+              if constraint.oaxend?
+                item.end = parseInt(constraint.oaxend?[0], 10)
+            # handle SVG constraints (rectangles, ellipses)
+            # handle time constraints? for video/sound annotations?
 
-        #
-        # Given the id of a oahasBody, we put into the given item
-        # the information related to that body. We expect the body to
-        # be a text range.
-        #
-        extractTextBody = (item, id) ->
-          return unless id?
-          body = manifestData.getItem id
-          if "oaSpecificResource" in body.type
+          extractTextTarget = (item, id) ->
+            return unless id?
+            target = manifestData.getItem id
+            if "oaSpecificResource" in target.type
+              item.target = target.oahasSource
+              if target.oahasStyle?
+                styleItem = manifestData.getItem target.oahasStyle[0]
+                if "text/css" in styleItem.dcformat
+                  item.css = styleItem.cntchars
+
+              extractSpatialConstraint(item, target.oahasSelector?[0])
+            else
+              item.target = id
+
+          extractTextBody = (item, id) ->
+            return unless id?
+            body = manifestData.getItem id
             textSource.addFile(body.oahasSource)
             item.source = body.oahasSource
             extractSpatialConstraint(item, body.oahasSelector?[0])
-          else if "cntContentAsText" in body.type
-            item.text = body.cntchars[0]
 
-        if options.url?
-          #
-          # If we're given a URL in our options, then go ahead and load
-          # it. For now, this is the only way to get data from a manifest.
-          #
-          manifestData.importFromURL options.url, ->
-            # Once the RDF/JSON is loaded from the url and parsed into
-            # the manifestData triple store, we process it to pull out all
-            # of the features we care about.
+          manifestData.importFromURL url, ->
+            console.log url
+            # now pull data out into data store
+            # if multiple sequences, we want to add a control to allow
+            # selection
             items = []
             syncer = MITHGrid.initSynchronizer()
 
-            #
-            # We begin by pulling out all of the canvases defined in the
-            # manifest. We only care about their id, size, and label.
-            #
             canvases = manifestData.getCanvases()
             that.addItemsToProcess canvases.length
+
             syncer.process canvases, (id) ->
               that.addItemsProcessed 1
               mitem = manifestData.getItem id
@@ -211,11 +154,6 @@ SGAReader.namespace "Application", (Application) ->
                 height: parseInt(mitem.exifheight?[0], 10)
                 label: mitem.dctitle || mitem.rdfslabel
 
-            #
-            # We want to add any zones that might be in the manifest. These
-            # are like canvases, but with the addition of a rotation angle.
-            # ZoneAnnotations map zones onto canvases.
-            #
             zones = manifestData.getZones()
             that.addItemsToProcess zones.length
             syncer.process zones, (id) ->
@@ -229,14 +167,6 @@ SGAReader.namespace "Application", (Application) ->
                 angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
                 label: zitem.rdfslabel
 
-            #
-            # We pull out all of the sequences in the manifest. MITHGrid
-            # stores a multi-valued property as an ordered list (JavaScript
-            # array), so we don't need all of the blank nodes that RDF uses.
-            #
-            # The primary or initial sequence is undefined if there are
-            # multiple sequences in the manifest.
-            #
             seq = manifestData.getSequences()
             that.addItemsToProcess seq.length
             syncer.process seq, (id) ->
@@ -247,6 +177,7 @@ SGAReader.namespace "Application", (Application) ->
                 type: 'Sequence'
                 label: sitem.rdfslabel
 
+              # walk list of canvases
               seq = []
               seq.push sitem.rdffirst[0]
               sitem = manifestData.getItem sitem.rdfrest[0]
@@ -259,19 +190,15 @@ SGAReader.namespace "Application", (Application) ->
             textSources = {}
             textAnnos = []
 
-            #
-            # We pull out all of the annotations (oa:Annotation) items and
-            # process the ones we know about.
-            #
+            # now get the annotations we know something about handling
             annos = manifestData.getAnnotations()
             that.addItemsToProcess annos.length
             syncer.process annos, (id) ->
               #
               # Once we have our various annotations, we want to process
               # them to produce sets of items that can be displayed in a
-              # sequence. We preprocess overlapping ranges of highlights
-              # to create non-overlapping multi-classed items that can
-              # be filtered in the final presentation.
+              # sequence - move some of the logic from the presentation to
+              # here so we are only concerned with presenting things.
               #
               that.addItemsProcessed 1
               aitem = manifestData.getItem id
@@ -279,44 +206,16 @@ SGAReader.namespace "Application", (Application) ->
               item =
                 id: id
 
-              #
-              # For now, we *assume* that the content annotation is coming
-              # from a TEI file and is marked by begin/end pointers.
-              # These annotations are loaded into the triple store as they
-              # are since they don't target sub-ranges of text.
-              # TextContent items end up acting like zones in that they
-              # are the target of text annotations but don't themselves
-              # end up providing content.
-              #
+              # for now, we *assume* that the content annotation is coming
+              # from a TEI file and is marked by begin/end pointers
               if "scContentAnnotation" in aitem.type
-                extractTextTarget item, aitem, aitem.oahasTarget?[0]
+                extractTextTarget item, aitem.oahasTarget?[0]
                 extractTextBody   item, aitem.oahasBody?[0]
-                if item.start? and item.end?
-                  textSources[item.source] ?= []
-                  textSources[item.source].push [ id, item.start, item.end ]
-                #
-                # We should use "ContentAnnotation" only when we know we
-                # won't have anything targeting this text. Otherwise, we
-                # should use TextContentZone. This is a work in progress
-                # as we see the pattern unfold.
-                #
-                # Essentially, if we want the annotation to act as a classic
-                # Shared Canvas text content annotation, we use a type of
-                # "ContentAnnotation". If we want to allow highlight annotation
-                # of the text with faceted selection of text, then we use a
-                # type of "TextContentZone".
-                #
-                if item.text?
-                  item.type = "ContentAnnotation"
-                else
-                  item.type = "TextContentZone"
+                textSources[item.source] ?= []
+                textSources[item.source].push [ id, item.start, item.end ]
+                item.type = "TextContent"
                 array = items
 
-              #
-              # For now, we assume that images map onto the entire canvas.
-              # This isn't true for Shared Canvas. We need to extract any
-              # spatial constraint and respect it in the presentation.
-              #
               else if "scImageAnnotation" in aitem.type
                 imgitem = manifestData.getItem aitem.oahasBody
                 imgitem = imgitem[0] if $.isArray(imgitem)
@@ -342,7 +241,7 @@ SGAReader.namespace "Application", (Application) ->
                 # prefixed with "sga" and ending in "Annotation"
                 sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
                 if sgaTypes.length > 0
-                  extractTextTarget item, aitem, aitem.oahasTarget?[0]
+                  extractTextTarget item, aitem.oahasTarget?[0]
                   item.type = sgaTypes
                   array = textAnnos
 
@@ -355,10 +254,6 @@ SGAReader.namespace "Application", (Application) ->
               # but we want to make sure we get any scContentAnnotation text
               # that isn't covered by any of the other annotations
 
-              # This is inspired by NROFF as implemented, for example, in
-              # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
-              # It also has shades of a SAX processor thrown in.
-              
               that.addItemsToProcess 1 + textAnnos.length
               that.dataStore.data.loadItems items, ->
                 items = []
@@ -471,6 +366,26 @@ SGAReader.namespace "Application", (Application) ->
                         that.addItemsProcessed 1
                     
                 that.addItemsProcessed 1
+                cb() if cb?
+
+        if options.url?
+          #
+          # If we're given a URL in our options, then go ahead and load
+          # it. For now, this is the only way to get data from a manifest.
+
+
+          pipeManifests = (ms) ->
+            n = ms.length
+            #console.log that.getItemsToProcess(), that.getItemsProcessed()
+
+            if n > 1
+              loadManifest ms[0], ->
+                pipeManifests ms[1..n]
+            else 
+              loadManifest ms[0]
+
+          pipeManifests [options.url, "http://localhost:5000/annotate?q=text:feelings"]
+          
 
     #
     # ### Application.SharedCanvas#builder
@@ -495,7 +410,7 @@ SGAReader.namespace "Application", (Application) ->
       # Initialize these to nil functions in case we don't have a progress
       # tracker. Also makes sure that CoffeeScript scopes them correctly.
       updateProgressTracker = ->
-      updateProgressTrackerVisibility = ->
+      #updateProgressTrackerVisibility = ->
 
       if config.progressTracker?
         updateProgressTracker = ->
@@ -507,29 +422,33 @@ SGAReader.namespace "Application", (Application) ->
           for m, obj of that.manifests
             n += obj.getItemsProcessed()
             d += obj.getItemsToProcess()
+          if n < d
+            config.progressTracker.show()
+          else
+            config.progressTracker.hide()
           config.progressTracker.setNumerator(n)
           config.progressTracker.setDenominator(d or 1)
 
         uptv = null
         uptvTimer = 1000
 
-        updateProgressTrackerVisibility = ->
-          if uptv?
-            uptvTimer = 500
-          else
-            uptv = ->
-              for m, obj of that.manifests
-                if obj.getItemsToProcess() > obj.getItemsProcessed()
-                  config.progressTracker.show()
-                  uptvTimer /= 2
-                  uptvTimer = 500 if uptvTimer < 500
-                  setTimeout uptv, uptvTimer
-                  return
-              config.progressTracker.hide() if uptvTimer > 500
-              uptvTimer *= 2
-              uptvTimer = 10000 if uptvTimer > 10000
-              setTimeout uptv, uptvTimer
-            uptv()
+        # updateProgressTrackerVisibility = ->
+        #   if uptv?
+        #     uptvTimer = 500
+        #   else
+        #     uptv = ->
+        #       for m, obj of that.manifests
+        #         if obj.getItemsToProcess() > obj.getItemsProcessed()
+        #           config.progressTracker.show()
+        #           uptvTimer /= 2
+        #           uptvTimer = 500 if uptvTimer < 500
+        #           setTimeout uptv, uptvTimer
+        #           return
+        #       config.progressTracker.hide() if uptvTimer > 500
+        #       uptvTimer *= 2
+        #       uptvTimer = 10000 if uptvTimer > 10000
+        #       setTimeout uptv, uptvTimer
+        #     uptv()
 
       #
       # #### #onManifest
@@ -583,7 +502,7 @@ SGAReader.namespace "Application", (Application) ->
               delete manifestCallbacks[manifestUrl]
             manifest.events.onItemsToProcessChange.addListener updateProgressTracker
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
-            updateProgressTrackerVisibility()
+            #updateProgressTrackerVisibility()
               
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
