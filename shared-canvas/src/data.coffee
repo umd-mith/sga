@@ -124,8 +124,12 @@ SGAReader.namespace "Data", (Data) ->
             contentType: 'application/rdf+json'
             processData: false
             dataType: 'json'
-            success: (data) -> that.importJSON data, cb
-            error: cb
+            success: (data) ->
+	            that.addItemsProcessed 1
+	            that.importJSON data, cb
+            error: ->
+	            that.addItemsProcessed 1
+	            cb() if cb?
 
         # we want to get the rdf/JSON version of things if we can
         that.importJSON = (json, cb) ->
@@ -197,7 +201,6 @@ SGAReader.namespace "Data", (Data) ->
             that.addItemsProcessed 1
 
           syncer.done ->
-            that.addItemsProcessed 1
             setTimeout ->
               for item in items
                 if data.contains(item.id)
