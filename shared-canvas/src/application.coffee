@@ -13,6 +13,7 @@ SGAReader.namespace "Application", (Application) ->
         # ### Presentation Coordination
         #
 
+
         presentations = []
 
         # This is a convenience method for creating a Shared Canvas
@@ -66,28 +67,6 @@ SGAReader.namespace "Application", (Application) ->
           pp[0].setCanvas k for pp in presentations
           k
 
-        #
-        # ### Manifest Import
-        #
-
-        #
-        # manifestData holds the data read from the shared canvas
-        # manifest that we then process into the application's data store.
-        #
-        manifestData = SGA.Reader.Data.Manifest.initInstance()
-
-        #
-        # We expose several of the manifestData methods so that things like
-        # the progress bar can know where we are in the process.
-        #
-        that.events.onItemsProcessedChange = manifestData.events.onItemsProcessedChange
-        that.events.onItemsToProcessChange = manifestData.events.onItemsToProcessChange
-        that.getItemsProcessed = manifestData.getItemsProcessed
-        that.getItemsToProcess = manifestData.getItemsToProcess
-        that.setItemsProcessed = manifestData.setItemsProcessed
-        that.setItemsToProcess = manifestData.setItemsToProcess
-        that.addItemsProcessed = manifestData.addItemsProcessed
-        that.addItemsToProcess = manifestData.addItemsToProcess
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -98,53 +77,64 @@ SGAReader.namespace "Application", (Application) ->
 
         that.withSource = textSource.withFile
 
-        extractSpatialConstraint = (item, id) ->
-          return unless id?
-          constraint = manifestData.getItem id
-          if 'oaFragmentSelector' in constraint.type
-            if constraint.rdfvalue[0].substr(0,5) == "xywh="
-              item.shape = "Rectangle"
-              bits = constraint.rdfvalue[0].substr(5).split(",")
-              item.x = parseInt(bits[0],10)
-              item.y = parseInt(bits[1],10)
-              item.width = parseInt(bits[2],10)
-              item.height = parseInt(bits[3],10)
-          else
-            if constraint.oaxbegin?
-              item.start = parseInt(constraint.oaxbegin?[0], 10)
-            if constraint.oaxend?
-              item.end = parseInt(constraint.oaxend?[0], 10)
-          # handle SVG constraints (rectangles, ellipses)
-          # handle time constraints? for video/sound annotations?
+        #
+        # ### Manifest Import
+        #    
 
-        extractTextTarget = (item, id) ->
-          return unless id?
-          target = manifestData.getItem id
-          if "oaSpecificResource" in target.type
-            item.target = target.oahasSource
-            if target.oahasStyle?
-              styleItem = manifestData.getItem target.oahasStyle[0]
-              if "text/css" in styleItem.dcformat
-                item.css = styleItem.cntchars
-
-            extractSpatialConstraint(item, target.oahasSelector?[0])
-          else
-            item.target = id
-
-        extractTextBody = (item, id) ->
-          return unless id?
-          body = manifestData.getItem id
-          textSource.addFile(body.oahasSource)
-          item.source = body.oahasSource
-          extractSpatialConstraint(item, body.oahasSelector?[0])
-
-
-        if options.url?
+        loadManifest = (url, cb) ->
           #
-          # If we're given a URL in our options, then go ahead and load
-          # it. For now, this is the only way to get data from a manifest.
+          # manifestData holds the data read from the shared canvas
+          # manifest that we then process into the application's data store.
           #
-          manifestData.importFromURL options.url, ->
+          manifestData = SGA.Reader.Data.Manifest.initInstance()
+
+          #
+          # We expose several of the manifestData methods so that things like
+          # the progress bar can know where we are in the process.
+          #
+
+          extractSpatialConstraint = (item, id) ->
+            return unless id?
+            constraint = manifestData.getItem id
+            if 'oaFragmentSelector' in constraint.type
+              if constraint.rdfvalue[0].substr(0,5) == "xywh="
+                item.shape = "Rectangle"
+                bits = constraint.rdfvalue[0].substr(5).split(",")
+                item.x = parseInt(bits[0],10)
+                item.y = parseInt(bits[1],10)
+                item.width = parseInt(bits[2],10)
+                item.height = parseInt(bits[3],10)
+            else
+              if constraint.oaxbegin?
+                item.start = parseInt(constraint.oaxbegin?[0], 10)
+              if constraint.oaxend?
+                item.end = parseInt(constraint.oaxend?[0], 10)
+            # handle SVG constraints (rectangles, ellipses)
+            # handle time constraints? for video/sound annotations?
+
+          extractTextTarget = (item, id) ->
+            return unless id?
+            target = manifestData.getItem id
+            if "oaSpecificResource" in target.type
+              item.target = target.oahasSource
+              if target.oahasStyle?
+                styleItem = manifestData.getItem target.oahasStyle[0]
+                if "text/css" in styleItem.dcformat
+                  item.css = styleItem.cntchars
+
+              extractSpatialConstraint(item, target.oahasSelector?[0])
+            else
+              item.target = id
+
+          extractTextBody = (item, id) ->
+            return unless id?
+            body = manifestData.getItem id
+            textSource.addFile(body.oahasSource)
+            item.source = body.oahasSource
+            extractSpatialConstraint(item, body.oahasSelector?[0])
+
+          manifestData.importFromURL url, ->
+            console.log url
             # now pull data out into data store
             # if multiple sequences, we want to add a control to allow
             # selection
@@ -153,6 +143,7 @@ SGAReader.namespace "Application", (Application) ->
 
             canvases = manifestData.getCanvases()
             that.addItemsToProcess canvases.length
+
             syncer.process canvases, (id) ->
               that.addItemsProcessed 1
               mitem = manifestData.getItem id
@@ -262,7 +253,7 @@ SGAReader.namespace "Application", (Application) ->
               # each addition, deletion, etc., targets a scContentAnnotation
               # but we want to make sure we get any scContentAnnotation text
               # that isn't covered by any of the other annotations
-              
+
               that.addItemsToProcess 1 + textAnnos.length
               that.dataStore.data.loadItems items, ->
                 items = []
@@ -375,6 +366,26 @@ SGAReader.namespace "Application", (Application) ->
                         that.addItemsProcessed 1
                     
                 that.addItemsProcessed 1
+                cb() if cb?
+
+        if options.url?
+          #
+          # If we're given a URL in our options, then go ahead and load
+          # it. For now, this is the only way to get data from a manifest.
+
+
+          pipeManifests = (ms) ->
+            n = ms.length
+            #console.log that.getItemsToProcess(), that.getItemsProcessed()
+
+            if n > 1
+              loadManifest ms[0], ->
+                pipeManifests ms[1..n]
+            else 
+              loadManifest ms[0]
+
+          pipeManifests [options.url, "http://localhost:5000/annotate?q=text:feelings"]
+          
 
     #
     # ### Application.SharedCanvas#builder
@@ -399,7 +410,7 @@ SGAReader.namespace "Application", (Application) ->
       # Initialize these to nil functions in case we don't have a progress
       # tracker. Also makes sure that CoffeeScript scopes them correctly.
       updateProgressTracker = ->
-      updateProgressTrackerVisibility = ->
+      #updateProgressTrackerVisibility = ->
 
       if config.progressTracker?
         updateProgressTracker = ->
@@ -411,29 +422,33 @@ SGAReader.namespace "Application", (Application) ->
           for m, obj of that.manifests
             n += obj.getItemsProcessed()
             d += obj.getItemsToProcess()
+          if n < d
+            config.progressTracker.show()
+          else
+            config.progressTracker.hide()
           config.progressTracker.setNumerator(n)
           config.progressTracker.setDenominator(d or 1)
 
         uptv = null
         uptvTimer = 1000
 
-        updateProgressTrackerVisibility = ->
-          if uptv?
-            uptvTimer = 500
-          else
-            uptv = ->
-              for m, obj of that.manifests
-                if obj.getItemsToProcess() > obj.getItemsProcessed()
-                  config.progressTracker.show()
-                  uptvTimer /= 2
-                  uptvTimer = 500 if uptvTimer < 500
-                  setTimeout uptv, uptvTimer
-                  return
-              config.progressTracker.hide() if uptvTimer > 500
-              uptvTimer *= 2
-              uptvTimer = 10000 if uptvTimer > 10000
-              setTimeout uptv, uptvTimer
-            uptv()
+        # updateProgressTrackerVisibility = ->
+        #   if uptv?
+        #     uptvTimer = 500
+        #   else
+        #     uptv = ->
+        #       for m, obj of that.manifests
+        #         if obj.getItemsToProcess() > obj.getItemsProcessed()
+        #           config.progressTracker.show()
+        #           uptvTimer /= 2
+        #           uptvTimer = 500 if uptvTimer < 500
+        #           setTimeout uptv, uptvTimer
+        #           return
+        #       config.progressTracker.hide() if uptvTimer > 500
+        #       uptvTimer *= 2
+        #       uptvTimer = 10000 if uptvTimer > 10000
+        #       setTimeout uptv, uptvTimer
+        #     uptv()
 
       #
       # #### #onManifest
@@ -487,7 +502,7 @@ SGAReader.namespace "Application", (Application) ->
               delete manifestCallbacks[manifestUrl]
             manifest.events.onItemsToProcessChange.addListener updateProgressTracker
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
-            updateProgressTrackerVisibility()
+            #updateProgressTrackerVisibility()
               
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
