@@ -22,8 +22,6 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
     Canvas:   { is: 'rw' }
     Sequence: { is: 'rw' }
     Position: { is: 'lrw', isa: 'numeric' }
-    ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
-    ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
 
 MITHGrid.defaults 'SGA.Reader.Component.Slider',
   variables:
