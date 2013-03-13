@@ -68,7 +68,18 @@ SGAReader.namespace "Application", (Application) ->
 
         #
         # ### Manifest Import
-        #    
+        #             
+
+        #
+        # textSource manages fetching and storing all of the TEI
+        # files that we will be referencing in our text content
+        # annotations.
+        #
+        textSource = SGA.Reader.Data.TextStore.initInstance()
+
+        that.withSource = textSource.withFile
+
+        console.log textSource
 
         loadManifest = (url, cb) ->
           #
@@ -90,14 +101,7 @@ SGAReader.namespace "Application", (Application) ->
           that.addItemsProcessed = manifestData.addItemsProcessed
           that.addItemsToProcess = manifestData.addItemsToProcess
 
-          #
-          # textSource manages fetching and storing all of the TEI
-          # files that we will be referencing in our text content
-          # annotations.
-          #
-          textSource = SGA.Reader.Data.TextStore.initInstance()
 
-          that.withSource = textSource.withFile
 
           extractSpatialConstraint = (item, id) ->
             return unless id?
