@@ -145,236 +145,237 @@ SGAReader.namespace "Application", (Application) ->
           # it. For now, this is the only way to get data from a manifest.
           #
           manifestData.importFromURL options.url, ->
-            # now pull data out into data store
-            # if multiple sequences, we want to add a control to allow
-            # selection
-            items = []
-            syncer = MITHGrid.initSynchronizer()
+            manifestData.importFromURL "http://localhost:5000/annotate?q=text:feelings", ->
+              # now pull data out into data store
+              # if multiple sequences, we want to add a control to allow
+              # selection
+              items = []
+              syncer = MITHGrid.initSynchronizer()
 
-            canvases = manifestData.getCanvases()
-            that.addItemsToProcess canvases.length
-            syncer.process canvases, (id) ->
-              that.addItemsProcessed 1
-              mitem = manifestData.getItem id
-              items.push
-                id: id
-                type: 'Canvas'
-                width: parseInt(mitem.exifwidth?[0], 10)
-                height: parseInt(mitem.exifheight?[0], 10)
-                label: mitem.dctitle || mitem.rdfslabel
+              canvases = manifestData.getCanvases()
+              that.addItemsToProcess canvases.length
+              syncer.process canvases, (id) ->
+                that.addItemsProcessed 1
+                mitem = manifestData.getItem id
+                items.push
+                  id: id
+                  type: 'Canvas'
+                  width: parseInt(mitem.exifwidth?[0], 10)
+                  height: parseInt(mitem.exifheight?[0], 10)
+                  label: mitem.dctitle || mitem.rdfslabel
 
-            zones = manifestData.getZones()
-            that.addItemsToProcess zones.length
-            syncer.process zones, (id) ->
-              that.addItemsProcessed 1
-              zitem = manifestData.getItem id
-              items.push
-                id: id
-                type: 'Zone'
-                width: parseInt(mitem.exifwidth?[0], 10)
-                height: parseInt(mitem.exifheight?[0], 10)
-                angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
-                label: zitem.rdfslabel
+              zones = manifestData.getZones()
+              that.addItemsToProcess zones.length
+              syncer.process zones, (id) ->
+                that.addItemsProcessed 1
+                zitem = manifestData.getItem id
+                items.push
+                  id: id
+                  type: 'Zone'
+                  width: parseInt(mitem.exifwidth?[0], 10)
+                  height: parseInt(mitem.exifheight?[0], 10)
+                  angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                  label: zitem.rdfslabel
 
-            seq = manifestData.getSequences()
-            that.addItemsToProcess seq.length
-            syncer.process seq, (id) ->
-              that.addItemsProcessed 1
-              sitem = manifestData.getItem id
-              item =
-                id: id
-                type: 'Sequence'
-                label: sitem.rdfslabel
+              seq = manifestData.getSequences()
+              that.addItemsToProcess seq.length
+              syncer.process seq, (id) ->
+                that.addItemsProcessed 1
+                sitem = manifestData.getItem id
+                item =
+                  id: id
+                  type: 'Sequence'
+                  label: sitem.rdfslabel
 
-              # walk list of canvases
-              seq = []
-              seq.push sitem.rdffirst[0]
-              sitem = manifestData.getItem sitem.rdfrest[0]
-              while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
+                # walk list of canvases
+                seq = []
                 seq.push sitem.rdffirst[0]
                 sitem = manifestData.getItem sitem.rdfrest[0]
-              item.sequence = seq
-              items.push item
+                while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
+                  seq.push sitem.rdffirst[0]
+                  sitem = manifestData.getItem sitem.rdfrest[0]
+                item.sequence = seq
+                items.push item
 
-            textSources = {}
-            textAnnos = []
+              textSources = {}
+              textAnnos = []
 
-            # now get the annotations we know something about handling
-            annos = manifestData.getAnnotations()
-            that.addItemsToProcess annos.length
-            syncer.process annos, (id) ->
-              #
-              # Once we have our various annotations, we want to process
-              # them to produce sets of items that can be displayed in a
-              # sequence - move some of the logic from the presentation to
-              # here so we are only concerned with presenting things.
-              #
-              that.addItemsProcessed 1
-              aitem = manifestData.getItem id
-              array = null
-              item =
-                id: id
-
-              # for now, we *assume* that the content annotation is coming
-              # from a TEI file and is marked by begin/end pointers
-              if "scContentAnnotation" in aitem.type
-                extractTextTarget item, aitem.oahasTarget?[0]
-                extractTextBody   item, aitem.oahasBody?[0]
-                textSources[item.source] ?= []
-                textSources[item.source].push [ id, item.start, item.end ]
-                item.type = "TextContent"
-                array = items
-
-              else if "scImageAnnotation" in aitem.type
-                imgitem = manifestData.getItem aitem.oahasBody
-                imgitem = imgitem[0] if $.isArray(imgitem)
-                array = items
-
-                item.target = aitem.oahasTarget
-                item.label = aitem.rdfslabel
-                item.image = imgitem.oahasSource || aitem.oahasBody
-                item.type = "Image"
-
-              else if "scZoneAnnotation" in aitem.type
-                target = manifestData.getItem aitem.oahasTarget
-                extractSpatialConstraint item, target.hasSelector?[0]
-                array = items
-
-                item.target = target.hasSource
-                item.label = aitem.rdfslabel
-                item.type = "ZoneAnnotation"
-
-              else
+              # now get the annotations we know something about handling
+              annos = manifestData.getAnnotations()
+              that.addItemsToProcess annos.length
+              syncer.process annos, (id) ->
                 #
-                # All of the SGA-specific annotations will have types
-                # prefixed with "sga" and ending in "Annotation"
-                sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
-                if sgaTypes.length > 0
-                  extractTextTarget item, aitem.oahasTarget?[0]
-                  item.type = sgaTypes
-                  array = textAnnos
-
-              array.push item if item.type? and array?
-
-            syncer.done ->
-              # We process the highlight annotations here so we don't have
-              # to do it *every* time we show a canvas.
-              # each addition, deletion, etc., targets a scContentAnnotation
-              # but we want to make sure we get any scContentAnnotation text
-              # that isn't covered by any of the other annotations
-              
-              that.addItemsToProcess 1 + textAnnos.length
-              that.dataStore.data.loadItems items, ->
-                items = []
-                modstart = {}
-                modend = {}
-                modInfo = {}
-                setMod = (item) ->
-                  source = item.target
-                  start = item.start
-                  end = item.end
-                  id = item.id
-                  id = id[0] if $.isArray(id)
-                  modInfo[id] = item
-                  modstart[source] ?= {}
-                  modstart[source][start] ?= []
-                  modstart[source][start].push id
-                  modend[source] ?= {}
-                  modend[source][end] ?= []
-                  modend[source][end].push id
-
-                setMod item for item in textAnnos
-
-                sources = (s for s of modstart)
-                that.addItemsToProcess sources.length
-                that.addItemsProcessed textAnnos.length
-
-                for source in sources
-                  do (source) ->
-                    that.withSource source, (text) ->
-                      textItems = []
-                      modIds = [ ]
-                      br_pushed = false
-
-                      pushTextItem = (classes, css, target, start, end) ->
-                        textItems.push
-                          type: classes
-                          css: css.join(" ")
-                          text: text[start ... end]
-                          id: source + "-" + start + "-" + end
-                          target: target
-                          start: start
-                          end: end
-                      
-                      processNode = (start, end) ->
-                        classes = []
-                        css = []
-                        for id in modIds
-                          classes.push modInfo[id].type
-                          if $.isArray(modInfo[id].css)
-                            css.push modInfo[id].css.join(" ")
-                          else
-                            css.push modInfo[id].css
-
-                        classes.push "Text" if classes.length == 0
-
-                        makeTextItems start, end, classes, css
-
-                      #
-                      # We run through each possible shared canvas
-                      # target that might be mapped onto the source TEI
-                      # via the TextContent annotation. We want to target
-                      # the shared canvas text content zone, not the
-                      # text source that the highlight is targeting in the
-                      # actual open annotation model.
-                      #
-                      makeTextItems = (start, end, classes, css) ->
-                        for candidate in (textSources[source] || [])
-                          if start <= candidate[2] and end >= candidate[1]
-                            s = Math.min(Math.max(start, candidate[1]),candidate[2])
-                            e = Math.max(Math.min(end, candidate[2]), candidate[1])
-                            pushTextItem classes, css, candidate[0], s, e
-                        false
-
-                      #
-                      # A line break is just a zero-width annotation at
-                      # the given position.
-                      #
-                      makeLinebreak = (pos) ->
-                        classes = [ "LineBreak" ]
-                        #classes.push modInfo[id].type for id in modIds
-                        makeTextItems pos, pos, classes, [ "" ]
-
-                      #
-                      mstarts = modstart[source] || []
-                      mends = modend[source] || []
-                      last_pos = 0
-                      positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
-                      for pos in positions
-                        if pos != last_pos
-                          processNode last_pos, pos
-                          if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
-                            br_pushed = false
-                          needs_br = false
-                          for id in (mstarts[pos] || [])
-                            if "LineAnnotation" in modInfo[id].type
-                              needs_br = true
-                            modIds.push id
-                          for id in (mends[pos] || [])
-                            if "LineAnnotation" in modInfo[id].type
-                              needs_br = true
-                            idx = modIds.indexOf id
-                            modIds.splice idx, 1 if idx > -1
-                          if needs_br and not br_pushed
-                            makeLinebreak pos
-                            br_pushed = true
-                          last_pos = pos
-                      processNode last_pos, text.length
-
-                      that.dataStore.data.loadItems textItems, ->
-                        that.addItemsProcessed 1
-                    
+                # Once we have our various annotations, we want to process
+                # them to produce sets of items that can be displayed in a
+                # sequence - move some of the logic from the presentation to
+                # here so we are only concerned with presenting things.
+                #
                 that.addItemsProcessed 1
+                aitem = manifestData.getItem id
+                array = null
+                item =
+                  id: id
+
+                # for now, we *assume* that the content annotation is coming
+                # from a TEI file and is marked by begin/end pointers
+                if "scContentAnnotation" in aitem.type
+                  extractTextTarget item, aitem.oahasTarget?[0]
+                  extractTextBody   item, aitem.oahasBody?[0]
+                  textSources[item.source] ?= []
+                  textSources[item.source].push [ id, item.start, item.end ]
+                  item.type = "TextContent"
+                  array = items
+
+                else if "scImageAnnotation" in aitem.type
+                  imgitem = manifestData.getItem aitem.oahasBody
+                  imgitem = imgitem[0] if $.isArray(imgitem)
+                  array = items
+
+                  item.target = aitem.oahasTarget
+                  item.label = aitem.rdfslabel
+                  item.image = imgitem.oahasSource || aitem.oahasBody
+                  item.type = "Image"
+
+                else if "scZoneAnnotation" in aitem.type
+                  target = manifestData.getItem aitem.oahasTarget
+                  extractSpatialConstraint item, target.hasSelector?[0]
+                  array = items
+
+                  item.target = target.hasSource
+                  item.label = aitem.rdfslabel
+                  item.type = "ZoneAnnotation"
+
+                else
+                  #
+                  # All of the SGA-specific annotations will have types
+                  # prefixed with "sga" and ending in "Annotation"
+                  sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
+                  if sgaTypes.length > 0
+                    extractTextTarget item, aitem.oahasTarget?[0]
+                    item.type = sgaTypes
+                    array = textAnnos
+
+                array.push item if item.type? and array?
+
+              syncer.done ->
+                # We process the highlight annotations here so we don't have
+                # to do it *every* time we show a canvas.
+                # each addition, deletion, etc., targets a scContentAnnotation
+                # but we want to make sure we get any scContentAnnotation text
+                # that isn't covered by any of the other annotations
+                
+                that.addItemsToProcess 1 + textAnnos.length
+                that.dataStore.data.loadItems items, ->
+                  items = []
+                  modstart = {}
+                  modend = {}
+                  modInfo = {}
+                  setMod = (item) ->
+                    source = item.target
+                    start = item.start
+                    end = item.end
+                    id = item.id
+                    id = id[0] if $.isArray(id)
+                    modInfo[id] = item
+                    modstart[source] ?= {}
+                    modstart[source][start] ?= []
+                    modstart[source][start].push id
+                    modend[source] ?= {}
+                    modend[source][end] ?= []
+                    modend[source][end].push id
+
+                  setMod item for item in textAnnos
+
+                  sources = (s for s of modstart)
+                  that.addItemsToProcess sources.length
+                  that.addItemsProcessed textAnnos.length
+
+                  for source in sources
+                    do (source) ->
+                      that.withSource source, (text) ->
+                        textItems = []
+                        modIds = [ ]
+                        br_pushed = false
+
+                        pushTextItem = (classes, css, target, start, end) ->
+                          textItems.push
+                            type: classes
+                            css: css.join(" ")
+                            text: text[start ... end]
+                            id: source + "-" + start + "-" + end
+                            target: target
+                            start: start
+                            end: end
+                        
+                        processNode = (start, end) ->
+                          classes = []
+                          css = []
+                          for id in modIds
+                            classes.push modInfo[id].type
+                            if $.isArray(modInfo[id].css)
+                              css.push modInfo[id].css.join(" ")
+                            else
+                              css.push modInfo[id].css
+
+                          classes.push "Text" if classes.length == 0
+
+                          makeTextItems start, end, classes, css
+
+                        #
+                        # We run through each possible shared canvas
+                        # target that might be mapped onto the source TEI
+                        # via the TextContent annotation. We want to target
+                        # the shared canvas text content zone, not the
+                        # text source that the highlight is targeting in the
+                        # actual open annotation model.
+                        #
+                        makeTextItems = (start, end, classes, css) ->
+                          for candidate in (textSources[source] || [])
+                            if start <= candidate[2] and end >= candidate[1]
+                              s = Math.min(Math.max(start, candidate[1]),candidate[2])
+                              e = Math.max(Math.min(end, candidate[2]), candidate[1])
+                              pushTextItem classes, css, candidate[0], s, e
+                          false
+
+                        #
+                        # A line break is just a zero-width annotation at
+                        # the given position.
+                        #
+                        makeLinebreak = (pos) ->
+                          classes = [ "LineBreak" ]
+                          #classes.push modInfo[id].type for id in modIds
+                          makeTextItems pos, pos, classes, [ "" ]
+
+                        #
+                        mstarts = modstart[source] || []
+                        mends = modend[source] || []
+                        last_pos = 0
+                        positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
+                        for pos in positions
+                          if pos != last_pos
+                            processNode last_pos, pos
+                            if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
+                              br_pushed = false
+                            needs_br = false
+                            for id in (mstarts[pos] || [])
+                              if "LineAnnotation" in modInfo[id].type
+                                needs_br = true
+                              modIds.push id
+                            for id in (mends[pos] || [])
+                              if "LineAnnotation" in modInfo[id].type
+                                needs_br = true
+                              idx = modIds.indexOf id
+                              modIds.splice idx, 1 if idx > -1
+                            if needs_br and not br_pushed
+                              makeLinebreak pos
+                              br_pushed = true
+                            last_pos = pos
+                        processNode last_pos, text.length
+
+                        that.dataStore.data.loadItems textItems, ->
+                          that.addItemsProcessed 1
+                      
+                  that.addItemsProcessed 1
 
     #
     # ### Application.SharedCanvas#builder
