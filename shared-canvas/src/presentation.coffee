@@ -34,6 +34,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         #
         makeAnnoLens 'AdditionAnnotation'
         makeAnnoLens 'DeletionAnnotation'
+        makeAnnoLens 'SearchAnnotation'
         makeAnnoLens 'LineAnnotation'
         makeAnnoLens 'Text'
 
