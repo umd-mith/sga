@@ -204,7 +204,7 @@ SGAReader.namespace "Application", (Application) ->
             # here so we are only concerned with presenting things.
             #
             that.addItemsProcessed 1
-            aitem = manifestData.getItem id
+            aitem = manifestData.getItem id            
             array = null
             item =
               id: id
@@ -227,7 +227,8 @@ SGAReader.namespace "Application", (Application) ->
               item.target = aitem.oahasTarget
               item.label = aitem.rdfslabel
               item.image = imgitem.oahasSource || aitem.oahasBody
-              item.type = "Image"
+              item.type = if "image/jp2" in imgitem["dcformat"] then "ImageViewer" else "Image"
+              #item.format = imgitem["dcformat"]
 
             else if "scZoneAnnotation" in aitem.type
               target = manifestData.getItem aitem.oahasTarget
@@ -258,8 +259,7 @@ SGAReader.namespace "Application", (Application) ->
             # that isn't covered by any of the other annotations
             
             that.addItemsToProcess 1 + textAnnos.length
-            that.dataStore.data.loadItems items, ->              
-              console.log 'here'
+            that.dataStore.data.loadItems items, -> 
               items = []
               modstart = {}
               modend = {}
