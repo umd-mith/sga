@@ -94,6 +94,47 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRoot.remove svgImage
           rendering
 
+        that.addLens 'ImageViewer', (container, view, model, id) ->
+          return unless 'Image' in (options.types || [])
+          rendering = {}
+
+          item = model.getItem id
+
+          # Djatoka URL is now hardcoded, it will eventually come from the manifest
+          # when we figure out how to model it.
+          djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
+          imageURL = item.image[0]
+          baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
+
+          po = org.polymaps
+
+          # clean up svg root element to accommodate Polymaps.js
+          svg = $(svgRoot.root())
+          svg.removeAttr("width")
+            .removeAttr("height")
+          # jQuery won't modify the viewBox - using pure JS
+          svg.get(0).removeAttribute("viewBox")
+
+          svg.attr("width", "100%")
+            .attr("height", "100%")
+
+          g = svgRoot.group()
+
+          map = po.map()
+            .container(g)
+
+          $.ajax
+            datatype: "json"
+            url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
+            success: adoratio($(container), baseURL, map)
+
+          rendering.update = (item) ->
+            0 # do nothing for now - eventually, update image viewer?
+
+          rendering.remove = ->
+            0 # eventually remove svg g#map
+          rendering
+
         that.addLens 'ZoneAnnotation', (container, view, model, id) ->
           rendering = {}
           # we need to get the width/height from the item
