@@ -67,6 +67,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           item = model.getItem id
 
+          # If the viewbox has been removed because of the image viewer, restore it.
+          svg = $(svgRoot.root())
+          # jQuery won't modify the viewBox - using pure JS
+          vb = svg.get(0).getAttribute("viewBox")
+
+          if !vb?
+            svgRoot.configure
+              viewBox: "0 0 #{options.width} #{options.height}"
+
           svgImage = null
           if item.image?[0]? and svgRoot?
             x = if item.x?[0]? then item.x[0] else 0
@@ -100,6 +109,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           item = model.getItem id
 
+          app = that.options.application()
+
+          # Activate imageControls
+          app.imageControls.setActive(true)
+
           # Djatoka URL is now hardcoded, it will eventually come from the manifest
           # when we figure out how to model it.
           djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
@@ -110,28 +124,32 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           # clean up svg root element to accommodate Polymaps.js
           svg = $(svgRoot.root())
-          svg.removeAttr("width")
-            .removeAttr("height")
           # jQuery won't modify the viewBox - using pure JS
           svg.get(0).removeAttribute("viewBox")
-
-          svg.attr("width", "100%")
-            .attr("height", "100%")
 
           g = svgRoot.group()
 
           map = po.map()
             .container(g)
 
-          $.ajax
+          canvas = $(container).parent().get(0)
+
+          toAdoratio = $.ajax
             datatype: "json"
             url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
-            success: adoratio($(container), baseURL, map)
+            success: adoratio(canvas, baseURL, map)
 
+          # wait for polymap to load image and update map, then...
+          toAdoratio.then ->
+            map.on 'zoom', ->
+              app.imageControls.setZoom(map.zoom())
+            
+          
           rendering.update = (item) ->
             0 # do nothing for now - eventually, update image viewer?
 
           rendering.remove = ->
+            app.imageControls.setActive(false)
             0 # eventually remove svg g#map
           rendering
 
@@ -192,9 +210,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
           return unless 'Text' in (options.types || [])
 
           rendering = {}
+          
           app = options.application()
+          zoom = app.imageControls.getZoom()
+
           item = model.getItem id
- 
+
           textContainer = null
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
           # pull start/end/width/height from constraint with a default of
@@ -214,6 +235,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(rootEl).css("line-height", 1.15)
           bodyEl.appendChild(rootEl)
           textContainer.appendChild(bodyEl)
+
+          if app.imageControls.getActive()
+            app.imageControls.events.onZoomChange.addListener (z)->
+              console.log 'Zoom!'
 
           textDataView = MITHGrid.Data.SubSet.initInstance
             dataStore: model
@@ -342,3 +367,4 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: canvasHeight
               width: canvasWidth
               svgRoot: svgRoot
+
