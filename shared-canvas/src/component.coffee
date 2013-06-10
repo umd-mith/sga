@@ -114,3 +114,13 @@ SGAReader.namespace "Component", (Component) ->
         $(lastEl).click (e) ->
           e.preventDefault()
           that.setValue that.getMax()
+
+#
+  # ## Component.PagerControls
+  #
+  Component.namespace "ImageControls", (ImageControls) ->
+    ImageControls.initInstance = (args...) ->
+      MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that) ->        
+
+        that.events.onZoomChange.addListener (z) ->
+          console.log z
