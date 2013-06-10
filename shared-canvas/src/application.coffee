@@ -9,6 +9,9 @@ SGAReader.namespace "Application", (Application) ->
       MITHGrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
         options = that.options
 
+        # Bind image controls to current application
+        that.imageControls = SGA.Reader.Component.ImageControls.initInstance()
+
         #
         # ### Presentation Coordination
         #
