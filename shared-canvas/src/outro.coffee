@@ -58,3 +58,8 @@ MITHGrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
     ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
     ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
+
+MITHGrid.defaults 'SGA.Reader.Component.ImageControls',
+  variables:
+    Active: { is: 'rw', default: false }
+    Zoom: { is: 'rw', default: 0, isa: 'numeric' }
