@@ -121,6 +121,4 @@ SGAReader.namespace "Component", (Component) ->
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
       MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that) ->        
-
-        that.events.onZoomChange.addListener (z) ->
-          console.log z
+        0
