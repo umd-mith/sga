@@ -16,3 +16,7 @@ svg body {
 .text-content .AdditionAnnotation {
   font-weight: bolder;
 }
+
+.text-content .SearchAnnotation {
+  background-color: Yellow;
+}
