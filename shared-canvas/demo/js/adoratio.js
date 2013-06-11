@@ -218,11 +218,18 @@
         map.zoomRange([startZoom, data.levels]).zoom(startZoom);
         dj.cc = map.center();
         map.center(getImgCenter(data.levels, startZoom));
+        map.on('zoom', function() {
+          var p;
+
+          p = getImgPosition(data.levels, map.zoom());
+          return map.position = p;
+        });
         map.on('drag', function() {
           var currentImgSize, p;
 
           p = getImgPosition(data.levels, map.zoom());
           currentImgSize = dj.getImgDimensions(map.zoom());
+          map.position = p;
           if (p.topLeft.x + currentImgSize.w > 20 && p.bottomRight.y > 20 && p.bottomRight.x - currentImgSize.w < c.clientWidth - 20 && p.topLeft.y < c.clientHeight - 20) {
             return 0;
           } else {
@@ -230,7 +237,8 @@
           }
         });
         map.add(dj.image());
-        return map.add(po.compass().pan("none"));
+        map.add(po.compass().pan("none"));
+        return map;
       };
     };
   })(jQuery);
