@@ -264,7 +264,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               fill: 'yellow', 
               stroke: 'navy', 
               strokeWidth: strokeW,
-              fillOpacity: '0.1',
+              fillOpacity: '0.05',
               strokeOpacity: '0.9' #currently not working in firefox
               ) 
             scale = options.width / $(container).width()
