@@ -237,7 +237,6 @@
           }
         });
         map.add(dj.image());
-        map.add(po.compass().pan("none"));
         return map;
       };
     };
