@@ -141,6 +141,23 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           # wait for polymap to load image and update map, then...
           toAdoratio.then ->
+            # Keep track of some start values
+            startCenter = map.center()
+
+            # Add listeners for external controls
+            app.imageControls.events.onZoomChange.addListener (z) ->
+              map.zoom(z)
+            app.imageControls.events.onImgPositionChange.addListener (p) ->
+              # only apply if reset
+              if p.topLeft.x == 0 and p.topLeft.y == 0
+                map.center(startCenter)
+
+            # Update controls with zoom and position info:
+            # both at the beginning and after every change.
+            app.imageControls.setZoom map.zoom()
+            app.imageControls.setMaxZoom map.zoomRange()[1]
+            app.imageControls.setMinZoom map.zoomRange()[0]
+            app.imageControls.setImgPosition map.position
             map.on 'zoom', ->
               app.imageControls.setZoom map.zoom()
               app.imageControls.setMaxZoom map.zoomRange()[1]
@@ -242,7 +259,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
           if app.imageControls.getActive()
             # First time, always full extent in size and visible area
             strokeW = 5
-            marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW, 
+            marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW,
+              class : 'marquee' 
               fill: 'yellow', 
               stroke: 'navy', 
               strokeWidth: strokeW,
@@ -253,11 +271,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
             visiblePerc = 100
 
             app.imageControls.events.onZoomChange.addListener (z) ->
-              width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
-              visiblePerc = Math.min(100, ($(container).width() * 100) / width)
+              if app.imageControls.getMaxZoom() > 0
+                width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
+                visiblePerc = Math.min(100, ($(container).width() * 100) / width)
 
-              marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
-              marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
+                marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
+                marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
 
             app.imageControls.events.onImgPositionChange.addListener (p) ->
               marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
