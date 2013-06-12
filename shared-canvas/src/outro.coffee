@@ -31,8 +31,6 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
     Canvas:   { is: 'rw' }
     Sequence: { is: 'rw' }
     Position: { is: 'lrw', isa: 'numeric' }
-    ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
-    ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
 
 #
 # The Slider and PagerControls have the same variables so that they can be
@@ -89,3 +87,10 @@ MITHGrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
     ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
     ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
+
+MITHGrid.defaults 'SGA.Reader.Component.ImageControls',
+  variables:
+    Active: { is: 'rw', default: false }
+    Zoom: { is: 'rw', default: 0, isa: 'numeric' }
+    MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
+    ImgPosition : {is: 'rw', default: {} }

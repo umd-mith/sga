@@ -46,6 +46,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         #
         that.addLens 'AdditionAnnotation', annoLens
         that.addLens 'DeletionAnnotation', annoLens
+        that.addLens 'SearchAnnotation', annoLens
         that.addLens 'LineAnnotation', annoLens
         that.addLens 'Text', annoLens
 
@@ -98,6 +99,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           item = model.getItem id
 
+          # If the viewbox has been removed because of the image viewer, restore it.
+          svg = $(svgRoot.root())
+          # jQuery won't modify the viewBox - using pure JS
+          vb = svg.get(0).getAttribute("viewBox")
+
+          if !vb?
+            svgRoot.configure
+              viewBox: "0 0 #{options.width} #{options.height}"
+
           svgImage = null
           renderImage = (item) ->
             if item.image?[0]? and svgRoot?
@@ -118,6 +128,59 @@ SGAReader.namespace "Presentation", (Presentation) ->
           rendering.remove = ->
             if svgImage? and svgRoot?
               svgRoot.remove svgImage
+          rendering
+
+        that.addLens 'ImageViewer', (container, view, model, id) ->
+          return unless 'Image' in (options.types || [])
+          rendering = {}
+
+          item = model.getItem id
+
+          app = that.options.application()
+
+          # Activate imageControls
+          app.imageControls.setActive(true)
+
+          # Djatoka URL is now hardcoded, it will eventually come from the manifest
+          # when we figure out how to model it.
+          djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
+          imageURL = item.image[0]
+          baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
+
+          po = org.polymaps
+
+          # clean up svg root element to accommodate Polymaps.js
+          svg = $(svgRoot.root())
+          # jQuery won't modify the viewBox - using pure JS
+          svg.get(0).removeAttribute("viewBox")
+
+          g = svgRoot.group()
+
+          map = po.map()
+            .container(g)
+
+          canvas = $(container).parent().get(0)
+
+          toAdoratio = $.ajax
+            datatype: "json"
+            url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
+            success: adoratio(canvas, baseURL, map)
+
+          # wait for polymap to load image and update map, then...
+          toAdoratio.then ->
+            map.on 'zoom', ->
+              app.imageControls.setZoom map.zoom()
+              app.imageControls.setMaxZoom map.zoomRange()[1]
+              app.imageControls.setImgPosition map.position
+            map.on 'drag', ->
+              app.imageControls.setImgPosition map.position
+          
+          rendering.update = (item) ->
+            0 # do nothing for now - eventually, update image viewer?
+
+          rendering.remove = ->
+            app.imageControls.setActive(false)
+            0 # eventually remove svg g#map
           rendering
 
         #
@@ -219,13 +282,18 @@ SGAReader.namespace "Presentation", (Presentation) ->
           return unless 'Text' in (options.types || [])
 
           rendering = {}
+          
           app = options.application()
+          zoom = app.imageControls.getZoom()
+
           item = model.getItem id
  
           #
           # The foreignObject element MUST be in the SVG namespace, so we
           # can't use the jQuery convenience methods.
           #
+
+          textContainer = null
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
 
           #
@@ -252,6 +320,31 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(rootEl).css("line-height", 1.15)
           bodyEl.appendChild(rootEl)
           textContainer.appendChild(bodyEl)
+
+          if app.imageControls.getActive()
+            # First time, always full extent in size and visible area
+            strokeW = 5
+            marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW, 
+              fill: 'yellow', 
+              stroke: 'navy', 
+              strokeWidth: strokeW,
+              fillOpacity: '0.1',
+              strokeOpacity: '0.9' #currently not working in firefox
+              ) 
+            scale = options.width / $(container).width()
+            visiblePerc = 100
+
+            app.imageControls.events.onZoomChange.addListener (z) ->
+              width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
+              visiblePerc = Math.min(100, ($(container).width() * 100) / width)
+
+              marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
+              marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
+
+            app.imageControls.events.onImgPositionChange.addListener (p) ->
+              marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
+              marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
+              
 
           #
           # textDataView gives us all of the annotations targeting this
@@ -404,3 +497,4 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: canvasHeight
               width: canvasWidth
               svgRoot: svgRoot
+
