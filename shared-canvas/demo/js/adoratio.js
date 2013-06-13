@@ -218,6 +218,7 @@
         map.zoomRange([startZoom, data.levels]).zoom(startZoom);
         dj.cc = map.center();
         map.center(getImgCenter(data.levels, startZoom));
+        map.position = getImgPosition(data.levels, map.zoom());
         map.on('zoom', function() {
           var p;
 
