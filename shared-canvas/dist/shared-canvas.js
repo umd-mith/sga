@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Jun 5 11:35:27 2013 -0400
+# Date: Wed Jun 12 11:03:51 2013 -0400
 #
 # (c) Copyright University of Maryland 2012.  All rights reserved.
 #
@@ -336,13 +336,20 @@
               svgRoot = options.svgRoot;
               annoExpr = that.dataView.prepare(['!target']);
               that.addLens('Image', function(container, view, model, id) {
-                var height, item, rendering, svgImage, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
+                var height, item, rendering, svg, svgImage, vb, width, x, y, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
 
                 if (__indexOf.call(options.types || [], 'Image') < 0) {
                   return;
                 }
                 rendering = {};
                 item = model.getItem(id);
+                svg = $(svgRoot.root());
+                vb = svg.get(0).getAttribute("viewBox");
+                if (vb == null) {
+                  svgRoot.configure({
+                    viewBox: "0 0 " + options.width + " " + options.height
+                  });
+                }
                 svgImage = null;
                 if ((((_ref = item.image) != null ? _ref[0] : void 0) != null) && (svgRoot != null)) {
                   x = ((_ref1 = item.x) != null ? _ref1[0] : void 0) != null ? item.x[0] : 0;
@@ -375,32 +382,59 @@
                 return rendering;
               });
               that.addLens('ImageViewer', function(container, view, model, id) {
-                var baseURL, djatokaURL, g, imageURL, item, map, po, rendering, svg;
+                var app, baseURL, canvas, djatokaURL, g, imageURL, item, map, po, rendering, svg, toAdoratio;
 
                 if (__indexOf.call(options.types || [], 'Image') < 0) {
                   return;
                 }
                 rendering = {};
                 item = model.getItem(id);
+                app = that.options.application();
+                app.imageControls.setActive(true);
                 djatokaURL = "http://localhost:8080/adore-djatoka/resolver";
                 imageURL = item.image[0];
                 baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL;
                 po = org.polymaps;
                 svg = $(svgRoot.root());
-                svg.removeAttr("width").removeAttr("height");
                 svg.get(0).removeAttribute("viewBox");
-                svg.attr("width", "100%").attr("height", "100%");
                 g = svgRoot.group();
                 map = po.map().container(g);
-                $.ajax({
+                canvas = $(container).parent().get(0);
+                toAdoratio = $.ajax({
                   datatype: "json",
                   url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata',
-                  success: adoratio($(container), baseURL, map)
+                  success: adoratio(canvas, baseURL, map)
+                });
+                toAdoratio.then(function() {
+                  var startCenter;
+
+                  startCenter = map.center();
+                  app.imageControls.events.onZoomChange.addListener(function(z) {
+                    return map.zoom(z);
+                  });
+                  app.imageControls.events.onImgPositionChange.addListener(function(p) {
+                    if (p.topLeft.x === 0 && p.topLeft.y === 0) {
+                      return map.center(startCenter);
+                    }
+                  });
+                  app.imageControls.setZoom(map.zoom());
+                  app.imageControls.setMaxZoom(map.zoomRange()[1]);
+                  app.imageControls.setMinZoom(map.zoomRange()[0]);
+                  app.imageControls.setImgPosition(map.position);
+                  map.on('zoom', function() {
+                    app.imageControls.setZoom(map.zoom());
+                    app.imageControls.setMaxZoom(map.zoomRange()[1]);
+                    return app.imageControls.setImgPosition(map.position);
+                  });
+                  return map.on('drag', function() {
+                    return app.imageControls.setImgPosition(map.position);
+                  });
                 });
                 rendering.update = function(item) {
                   return 0;
                 };
                 rendering.remove = function() {
+                  app.imageControls.setActive(false);
                   return 0;
                 };
                 return rendering;
@@ -454,13 +488,14 @@
                 return rendering;
               });
               return that.addLens('TextContent', function(container, view, model, id) {
-                var app, bodyEl, height, item, rendering, rootEl, text, textContainer, textDataView, width, x, y, _ref, _ref1, _ref2, _ref3;
+                var app, bodyEl, height, item, marquee, rendering, rootEl, scale, strokeW, text, textContainer, textDataView, visiblePerc, width, x, y, zoom, _ref, _ref1, _ref2, _ref3;
 
                 if (__indexOf.call(options.types || [], 'Text') < 0) {
                   return;
                 }
                 rendering = {};
                 app = options.application();
+                zoom = app.imageControls.getZoom();
                 item = model.getItem(id);
                 textContainer = null;
                 textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject');
@@ -478,6 +513,31 @@
                 $(rootEl).css("line-height", 1.15);
                 bodyEl.appendChild(rootEl);
                 textContainer.appendChild(bodyEl);
+                if (app.imageControls.getActive()) {
+                  strokeW = 5;
+                  marquee = svgRoot.rect(0, 0, options.width - strokeW, options.height - strokeW, {
+                    "class": 'marquee',
+                    fill: 'yellow',
+                    stroke: 'navy',
+                    strokeWidth: strokeW,
+                    fillOpacity: '0.05',
+                    strokeOpacity: '0.9'
+                  });
+                  scale = options.width / $(container).width();
+                  visiblePerc = 100;
+                  app.imageControls.events.onZoomChange.addListener(function(z) {
+                    if (app.imageControls.getMaxZoom() > 0) {
+                      width = Math.round(options.width / Math.pow(2, app.imageControls.getMaxZoom() - z));
+                      visiblePerc = Math.min(100, ($(container).width() * 100) / width);
+                      marquee.setAttribute("width", (options.width * visiblePerc) / 100);
+                      return marquee.setAttribute("height", (options.height * visiblePerc) / 100);
+                    }
+                  });
+                  app.imageControls.events.onImgPositionChange.addListener(function(p) {
+                    marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale);
+                    return marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale);
+                  });
+                }
                 textDataView = MITHGrid.Data.SubSet.initInstance({
                   dataStore: model,
                   expressions: ['!target']
@@ -703,7 +763,7 @@
             }]));
           };
         });
-        return Component.namespace("PagerControls", function(PagerControls) {
+        Component.namespace("PagerControls", function(PagerControls) {
           return PagerControls.initInstance = function() {
             var args;
 
@@ -764,6 +824,70 @@
               return $(lastEl).click(function(e) {
                 e.preventDefault();
                 return that.setValue(that.getMax());
+              });
+            }]));
+          };
+        });
+        return Component.namespace("ImageControls", function(ImageControls) {
+          return ImageControls.initInstance = function() {
+            var args;
+
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+            return MITHGrid.initInstance.apply(MITHGrid, ["SGA.Reader.Component.ImageControls"].concat(__slice.call(args), [function(that, container) {
+              var inEl, marqueeEl, outEl, resetEl;
+
+              resetEl = $(container).find(".icon-picture").parent();
+              inEl = $(container).find(".icon-zoom-in").parent();
+              outEl = $(container).find(".icon-zoom-out").parent();
+              marqueeEl = $(container).find(".icon-eye-open").parent();
+              $(resetEl).click(function(e) {
+                e.preventDefault();
+                that.setZoom(that.getMinZoom());
+                return that.setImgPosition({
+                  topLeft: {
+                    x: 0,
+                    y: 0
+                  },
+                  bottomRight: {
+                    x: 0,
+                    y: 0
+                  }
+                });
+              });
+              $(inEl).click(function(e) {
+                var zoom;
+
+                e.preventDefault();
+                zoom = that.getZoom();
+                if (Math.floor(zoom + 1 <= that.getMaxZoom())) {
+                  return that.setZoom(Math.floor(zoom + 1));
+                }
+              });
+              $(outEl).click(function(e) {
+                var minZoom, zoom;
+
+                e.preventDefault();
+                zoom = that.getZoom();
+                minZoom = that.getMinZoom();
+                if (Math.floor(zoom - 1 > minZoom)) {
+                  return that.setZoom(Math.floor(zoom - 1));
+                } else if (Math.floor(zoom - 1 === Math.floor(minZoom))) {
+                  return that.setZoom(minZoom);
+                }
+              });
+              return $(marqueeEl).click(function(e) {
+                var marquees;
+
+                e.preventDefault();
+                marquees = $('.marquee');
+                return marquees.each(function(i, m) {
+                  m = $(m);
+                  if (m.css("display") !== "none") {
+                    return m.hide();
+                  } else {
+                    return m.show();
+                  }
+                });
               });
             }]));
           };
@@ -985,7 +1109,10 @@
                     item.target = aitem.oahasTarget;
                     item.label = aitem.rdfslabel;
                     item.image = imgitem.oahasSource || aitem.oahasBody;
-                    item.type = __indexOf.call(imgitem["dcformat"], "image/jp2") >= 0 ? "ImageViewer" : "Image";
+                    item.type = "Image";
+                    if (__indexOf.call(imgitem["dcformat"], "image/jp2") >= 0 && (that.imageControls != null)) {
+                      item.type = "ImageViewer";
+                    }
                   } else if (__indexOf.call(aitem.type, "scZoneAnnotation") >= 0) {
                     target = manifestData.getItem(aitem.oahasTarget);
                     extractSpatialConstraint(item, (_ref3 = target.hasSelector) != null ? _ref3[0] : void 0);
@@ -1452,6 +1579,34 @@
         is: 'rw',
         "default": 0,
         isa: 'numeric'
+      }
+    }
+  });
+
+  MITHGrid.defaults('SGA.Reader.Component.ImageControls', {
+    variables: {
+      Active: {
+        is: 'rw',
+        "default": false
+      },
+      Zoom: {
+        is: 'rw',
+        "default": 0,
+        isa: 'numeric'
+      },
+      MaxZoom: {
+        is: 'rw',
+        "default": 0,
+        isa: 'numeric'
+      },
+      MinZoom: {
+        is: 'rw',
+        "default": 0,
+        isa: 'numeric'
+      },
+      ImgPosition: {
+        is: 'rw',
+        "default": {}
       }
     }
   });

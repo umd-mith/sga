@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Jun 5 11:35:27 2013 -0400
+# Date: Wed Jun 12 11:03:51 2013 -0400
 #
 # (c) Copyright University of Maryland 2012.  All rights reserved.
 #
@@ -283,6 +283,15 @@
     
               item = model.getItem id
     
+              # If the viewbox has been removed because of the image viewer, restore it.
+              svg = $(svgRoot.root())
+              # jQuery won't modify the viewBox - using pure JS
+              vb = svg.get(0).getAttribute("viewBox")
+    
+              if !vb?
+                svgRoot.configure
+                  viewBox: "0 0 #{options.width} #{options.height}"
+    
               svgImage = null
               if item.image?[0]? and svgRoot?
                 x = if item.x?[0]? then item.x[0] else 0
@@ -316,6 +325,11 @@
     
               item = model.getItem id
     
+              app = that.options.application()
+    
+              # Activate imageControls
+              app.imageControls.setActive(true)
+    
               # Djatoka URL is now hardcoded, it will eventually come from the manifest
               # when we figure out how to model it.
               djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
@@ -324,30 +338,54 @@
     
               po = org.polymaps
     
-              # remove default viewbox to accommodate Polymaps.js
+              # clean up svg root element to accommodate Polymaps.js
               svg = $(svgRoot.root())
-              svg.removeAttr("width")
-                .removeAttr("height")
               # jQuery won't modify the viewBox - using pure JS
               svg.get(0).removeAttribute("viewBox")
-    
-              svg.attr("width", "100%")
-                .attr("height", "100%")
     
               g = svgRoot.group()
     
               map = po.map()
                 .container(g)
     
-              $.ajax
+              canvas = $(container).parent().get(0)
+    
+              toAdoratio = $.ajax
                 datatype: "json"
                 url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
-                success: adoratio($(container), baseURL, map)
+                success: adoratio(canvas, baseURL, map)
     
+              # wait for polymap to load image and update map, then...
+              toAdoratio.then ->
+                # Keep track of some start values
+                startCenter = map.center()
+    
+                # Add listeners for external controls
+                app.imageControls.events.onZoomChange.addListener (z) ->
+                  map.zoom(z)
+                app.imageControls.events.onImgPositionChange.addListener (p) ->
+                  # only apply if reset
+                  if p.topLeft.x == 0 and p.topLeft.y == 0
+                    map.center(startCenter)
+    
+                # Update controls with zoom and position info:
+                # both at the beginning and after every change.
+                app.imageControls.setZoom map.zoom()
+                app.imageControls.setMaxZoom map.zoomRange()[1]
+                app.imageControls.setMinZoom map.zoomRange()[0]
+                app.imageControls.setImgPosition map.position
+                map.on 'zoom', ->
+                  app.imageControls.setZoom map.zoom()
+                  app.imageControls.setMaxZoom map.zoomRange()[1]
+                  app.imageControls.setImgPosition map.position
+                map.on 'drag', ->
+                  app.imageControls.setImgPosition map.position
+              
               rendering.update = (item) ->
                 0 # do nothing for now - eventually, update image viewer?
     
               rendering.remove = ->
+                app.imageControls.setActive(false)
                 0 # eventually remove svg g#map
               rendering
     
@@ -408,9 +446,12 @@
               return unless 'Text' in (options.types || [])
     
               rendering = {}
+              
               app = options.application()
+              zoom = app.imageControls.getZoom()
+    
               item = model.getItem id
-     
+    
               textContainer = null
               textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
               # pull start/end/width/height from constraint with a default of
@@ -430,6 +471,33 @@
               $(rootEl).css("line-height", 1.15)
               bodyEl.appendChild(rootEl)
               textContainer.appendChild(bodyEl)
+    
+              if app.imageControls.getActive()
+                # First time, always full extent in size and visible area
+                strokeW = 5
+                marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW,
+                  class : 'marquee' 
+                  fill: 'yellow', 
+                  stroke: 'navy', 
+                  strokeWidth: strokeW,
+                  fillOpacity: '0.05',
+                  strokeOpacity: '0.9' #currently not working in firefox
+                  ) 
+                scale = options.width / $(container).width()
+                visiblePerc = 100
+    
+                app.imageControls.events.onZoomChange.addListener (z) ->
+                  if app.imageControls.getMaxZoom() > 0
+                    width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
+                    visiblePerc = Math.min(100, ($(container).width() * 100) / width)
+    
+                    marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
+                    marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
+    
+                app.imageControls.events.onImgPositionChange.addListener (p) ->
+                  marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
+                  marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
+                  
     
               textDataView = MITHGrid.Data.SubSet.initInstance
                 dataStore: model
@@ -558,6 +626,7 @@
                   height: canvasHeight
                   width: canvasWidth
                   svgRoot: svgRoot
+    
 
     # # Controllers
     # # Components
@@ -676,6 +745,53 @@
             $(lastEl).click (e) ->
               e.preventDefault()
               that.setValue that.getMax()
+    
+    #
+      # ## Component.PagerControls
+      #
+      Component.namespace "ImageControls", (ImageControls) ->
+        ImageControls.initInstance = (args...) ->
+          MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
+            resetEl = $(container).find(".icon-picture").parent()
+            inEl = $(container).find(".icon-zoom-in").parent()
+            outEl = $(container).find(".icon-zoom-out").parent()
+            marqueeEl = $(container).find(".icon-eye-open").parent()
+    
+            $(resetEl).click (e) ->
+              e.preventDefault()
+              that.setZoom that.getMinZoom()
+              that.setImgPosition 
+                topLeft:
+                  x: 0,
+                  y: 0,
+                bottomRight:
+                  x: 0,
+                  y: 0
+    
+            $(inEl).click (e) ->
+              e.preventDefault()
+              zoom = that.getZoom()
+              if Math.floor zoom+1 <= that.getMaxZoom()
+                that.setZoom Math.floor zoom+1
+    
+            $(outEl).click (e) ->
+              e.preventDefault()
+              zoom = that.getZoom()
+              minZoom = that.getMinZoom()
+              if Math.floor zoom-1 > minZoom
+                that.setZoom Math.floor zoom-1
+              else if Math.floor zoom-1 == Math.floor minZoom
+                that.setZoom minZoom
+    
+            $(marqueeEl).click (e) ->
+              e.preventDefault()
+              marquees = $('.marquee')
+              marquees.each (i, m) ->
+                m = $(m)            
+                if m.css("display") != "none"
+                  m.hide()
+                else 
+                  m.show()
 
     # # Application
     
@@ -906,7 +1022,9 @@
                   item.target = aitem.oahasTarget
                   item.label = aitem.rdfslabel
                   item.image = imgitem.oahasSource || aitem.oahasBody
-                  item.type = if "image/jp2" in imgitem["dcformat"] then "ImageViewer" else "Image"
+                  item.type = "Image"
+                  if "image/jp2" in imgitem["dcformat"] and that.imageControls?
+                    item.type = "ImageViewer"
                   #item.format = imgitem["dcformat"]
     
                 else if "scZoneAnnotation" in aitem.type
@@ -1263,3 +1381,11 @@ MITHGrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
     ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
     ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
+
+MITHGrid.defaults 'SGA.Reader.Component.ImageControls',
+  variables:
+    Active: { is: 'rw', default: false }
+    Zoom: { is: 'rw', default: 0, isa: 'numeric' }
+    MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
+    MinZoom: { is: 'rw', default: 0, isa: 'numeric' }
+    ImgPosition : {is: 'rw', default: {} }
