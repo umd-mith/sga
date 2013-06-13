@@ -9,9 +9,6 @@ SGAReader.namespace "Application", (Application) ->
       MITHGrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
         options = that.options
 
-        # Bind image controls to current application
-        that.imageControls = SGA.Reader.Component.ImageControls.initInstance()
-
         #
         # ### Presentation Coordination
         #
@@ -230,7 +227,9 @@ SGAReader.namespace "Application", (Application) ->
               item.target = aitem.oahasTarget
               item.label = aitem.rdfslabel
               item.image = imgitem.oahasSource || aitem.oahasBody
-              item.type = if "image/jp2" in imgitem["dcformat"] then "ImageViewer" else "Image"
+              item.type = "Image"
+              if "image/jp2" in imgitem["dcformat"] and that.imageControls?
+                item.type = "ImageViewer"
               #item.format = imgitem["dcformat"]
 
             else if "scZoneAnnotation" in aitem.type
