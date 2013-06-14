@@ -113,7 +113,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           # Activate imageControls
           app.imageControls.setActive(true)
-
+          
           # Djatoka URL is now hardcoded, it will eventually come from the manifest
           # when we figure out how to model it.
           djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
@@ -141,14 +141,19 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           # wait for polymap to load image and update map, then...
           toAdoratio.then ->
+            # Decide when to propagate changes...
+            propagate = true
             # Keep track of some start values
             startCenter = map.center()
 
             # Add listeners for external controls
             app.imageControls.events.onZoomChange.addListener (z) ->
               map.zoom(z)
+              app.imageControls.setImgPosition map.position
+              propagate = false
             app.imageControls.events.onImgPositionChange.addListener (p) ->
               # only apply if reset
+              propagate = false
               if p.topLeft.x == 0 and p.topLeft.y == 0
                 map.center(startCenter)
 
@@ -159,18 +164,36 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.setMinZoom map.zoomRange()[0]
             app.imageControls.setImgPosition map.position
             map.on 'zoom', ->
-              app.imageControls.setZoom map.zoom()
-              app.imageControls.setMaxZoom map.zoomRange()[1]
-              app.imageControls.setImgPosition map.position
+              if propagate
+                app.imageControls.setZoom map.zoom()
+                app.imageControls.setImgPosition map.position
+              else
+                propagate = true
+              # app.imageControls.setMaxZoom map.zoomRange()[1]
             map.on 'drag', ->
-              app.imageControls.setImgPosition map.position
+              if propagate
+                app.imageControls.setImgPosition map.position
+              else
+                propagate = true
+
           
           rendering.update = (item) ->
             0 # do nothing for now - eventually, update image viewer?
 
           rendering.remove = ->
             app.imageControls.setActive(false)
-            0 # eventually remove svg g#map
+            app.imageControls.setZoom(0)
+            app.imageControls.setMaxZoom(0)
+            app.imageControls.setMinZoom(0)
+            app.imageControls.setImgPosition 
+              topLeft:
+                x: 0,
+                y: 0,
+              bottomRight:
+                x: 0,
+                y: 0
+            $(svgRoot.root()).find('#map').remove()
+
           rendering
 
         that.addLens 'ZoneAnnotation', (container, view, model, id) ->
