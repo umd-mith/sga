@@ -7,7 +7,7 @@ SGAReader.namespace "Data", (Data) ->
 
   Data.namespace "StyleStore", (StyleStore) ->
     StyleStore.initInstance = (args...) ->
-      MITHGrid.initInstance args..., (that) ->
+      MITHgrid.initInstance args..., (that) ->
         options = that.options
 
         docs = { }
@@ -39,7 +39,7 @@ SGAReader.namespace "Data", (Data) ->
   #
   Data.namespace "TextStore", (TextStore) ->
     TextStore.initInstance = (args...) ->
-      MITHGrid.initInstance args..., (that) ->
+      MITHgrid.initInstance args..., (that) ->
         options = that.options
 
         fileContents = { }
@@ -102,12 +102,14 @@ SGAReader.namespace "Data", (Data) ->
       "http://www.w3.org/ns/openannotation/core/hasMotivation": "item"
 
     Manifest.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
+      MITHgrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
         options = that.options
 
-        data = MITHGrid.Data.Store.initInstance()
+        data = MITHgrid.Data.Store.initInstance()
 
         that.size = -> data.size()
+        
+        importer = MITHgrid.Data.Importer.RDF_JSON.initInstance data, NS, types
 
         loadedUrls = []
 
@@ -135,83 +137,27 @@ SGAReader.namespace "Data", (Data) ->
           # we care about certain namespaces - others we ignore
           # those we care about, we translate for datastore
           # {nsPrefix}{localName}
-          items = []
-          syncer = MITHGrid.initSynchronizer()
-          subjects = (s for s of json) # when json.hasOwnProperty(s))
-          that.addItemsToProcess subjects.length
-          syncer.process subjects, (s) ->
-            predicates = json[s]
-            item =
-              id: s
-            for p, os of predicates
-               values = []
-               if types[p] == "item"
-                 for o in os
-                   if o.type == "uri"
-                     for ns, prefix of NS
-                       if o.value[0...ns.length] == ns
-                         values.push prefix + o.value.substr(ns.length)
-                 item.type = values
-               else
-                 for o in os
-                   if o.type == "literal"
-                     values.push o.value
-                   #
-                   # Sometimes, references to blank nodes are wrapped in
-                   # parenthesis, but the subject IDs will be with a leading
-                   # _:. For example, an object uri/bnode in the form
-                   # "(123abc)" refers to a resource with the URI
-                   # "_:123abc".
-                   #
-                   else if o.type == "uri"
-                     if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
-                       values.push "_:" + o.value.substr(1,o.value.length-2)
-                     else
-                       values.push o.value
-                   else if o.type == "bnode"
-                     if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
-                       values.push "_:" + o.value.substr(1,o.value.length-2)
-                     else
-                       values.push o.value
-                     
-                 if values.length > 0
-                   for ns, prefix of NS
-                     if p.substr(0, ns.length) == ns
-                       pname = prefix + p.substr(ns.length)
-                       item[pname] = values
-            if !item.type? or item.type.length == 0
-              item.type = 'Blank'
- 
+          syncer = MITHgrid.initSynchronizer cb
+          syncer.increment()
+          importer.import json, (ids) ->
             #
             # If the manifest indicates that another document describes
-            # this resource, then we throw away the current item we've built
-            # and load the data before continuing processing for this
-            # resource.
+            # this resource, then we load the data before continuing
+            # processing for this resource.
             #
-            # We are not using this in the current SGA manifest, so this
-            # might be broken - but this is where support would be hooked in.
-            #
-            if item.oreisDescribedBy?.length > 0
-              for url in item.oreisDescribedBy
-                syncer.increment()
-                importFromURL url, syncer.decrement
-            else
-              items.push item 
-            that.addItemsProcessed 1
 
-          syncer.done ->
-            setTimeout ->
-              for item in items
-                if data.contains(item.id)
-                  data.updateItems [ item ]
-                else
-                  data.loadItems [ item ]
-              cb() if cb?
-            , 0
+            # we want anything that has the oreisDescribedBy property
+            idset = MITHgrid.Data.Set.initInstance ids
+            urls = data.getObjectsUnion(idset, 'oreisDescribedBy')
+
+            urls.visit (url) ->
+              syncer.increment()
+              importFromURL url, syncer.decrement
+            syncer.decrement
 
         itemsWithType = (type) ->
           type = [ type ] if !$.isArray(type)
-          types = MITHGrid.Data.Set.initInstance type
+          types = MITHgrid.Data.Set.initInstance type
           data.getSubjectsUnion(types, "type").items()
 
         #

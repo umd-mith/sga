@@ -20,14 +20,14 @@
 # limitations under the License.
 ###
 
-(($, MITHGrid) ->
+(($, MITHgrid) ->
   #
   # The application uses the SGA.Reader namespace.
   #
   # N.B.: This may change as we move towards a general component
-  # repository for MITHGrid. At that point, we'll refactor out the
+  # repository for MITHgrid. At that point, we'll refactor out the
   # general purpose components and keep the SGA namespace for code
   # specific to the SGA project.
   #
-  MITHGrid.globalNamespace "SGA"
+  MITHgrid.globalNamespace "SGA"
   SGA.namespace "Reader", (SGAReader) ->

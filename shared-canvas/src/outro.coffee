@@ -1,5 +1,5 @@
 
-)(jQuery, MITHGrid)
+)(jQuery, MITHgrid)
 
 #
 # The Application.SharedCanvas object ties together all of the information
@@ -10,7 +10,7 @@
 # The app.dataViews.canvasAnnotations data view will always contain a list
 # of annotations directly targeting the current canvas.
 #
-MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
+MITHgrid.defaults 'SGA.Reader.Application.SharedCanvas',
   dataStores:
     data:
       types:
@@ -22,7 +22,7 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
   dataViews:
     canvasAnnotations:
       dataStore: 'data'
-      type: MITHGrid.Data.SubSet
+      type: MITHgrid.Data.SubSet
       expressions: [ '!target' ]
     sequences:
       dataStore: 'data'
@@ -36,19 +36,19 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
 # The Slider and PagerControls have the same variables so that they can be
 # used interchangably.
 #
-MITHGrid.defaults 'SGA.Reader.Component.Slider',
+MITHgrid.defaults 'SGA.Reader.Component.Slider',
   variables:
     Min:   { is: 'rw', isa: 'numeric' }
     Max:   { is: 'rw', isa: 'numeric' }
     Value: { is: 'rw', isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.PagerControls',
+MITHgrid.defaults 'SGA.Reader.Component.PagerControls',
   variables:
     Min:   { is: 'rw', isa: 'numeric' }
     Max:   { is: 'rw', isa: 'numeric' }
     Value: { is: 'rw', isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.SequenceSelector',
+MITHgrid.defaults 'SGA.Reader.Component.SequenceSelector',
   variables:
     Sequence: { is: 'rw' }
 
@@ -57,7 +57,7 @@ MITHGrid.defaults 'SGA.Reader.Component.SequenceSelector',
 # arrange the Twitter Bootstrap HTML each time. This is looking forward
 # to when this is a component outside SGA.
 #
-MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
+MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
   variables:
     Numerator:   { is: 'rw', default: 0, isa: 'numeric' }
     Denominator: { is: 'rw', default: 1, isa: 'numeric' }
@@ -74,7 +74,7 @@ MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
 #
 # TODO: Have variables for panning across the canvas.
 #
-MITHGrid.defaults 'SGA.Reader.Presentation.Canvas',
+MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
@@ -83,19 +83,15 @@ MITHGrid.defaults 'SGA.Reader.Presentation.Canvas',
 # The ItemsToProcess and ItemsProcessed are analagous to the
 # Numerator and Denominator of the ProgressBar component.
 #
-MITHGrid.defaults 'SGA.Reader.Data.Manifest',
+MITHgrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
     ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
     ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.ImageControls',
+MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
   variables:
     Active: { is: 'rw', default: false }
     Zoom: { is: 'rw', default: 0, isa: 'numeric' }
     MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
-<<<<<<< HEAD
-    ImgPosition : {is: 'rw', default: {} }
-=======
     MinZoom: { is: 'rw', default: 0, isa: 'numeric' }
     ImgPosition : {is: 'rw', default: {} }
->>>>>>> 0a9bd57425b4ba8ca3e64ac1b046c16054b133db

@@ -16,7 +16,7 @@ SGAReader.namespace "Component", (Component) ->
     #
 
     ProgressBar.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
+      MITHgrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
 
         that.events.onNumeratorChange.addListener (n) ->
           percent = parseInt(100 * n / that.getDenominator(), 10)
@@ -49,7 +49,7 @@ SGAReader.namespace "Component", (Component) ->
     #
 
     SequenceSelector.initInstance = (args...) ->
-      MITHGrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
         options = that.options
         that.addLens 'Sequence', (container, view, model, id) ->
           rendering = {}
@@ -81,7 +81,7 @@ SGAReader.namespace "Component", (Component) ->
     # This component has three variables: Min, Max, and Value.
     #
     Slider.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+      MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
         that.events.onMinChange.addListener (n) ->
           $(container).attr
             min: n
@@ -105,7 +105,7 @@ SGAReader.namespace "Component", (Component) ->
     #
 
     PagerControls.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+      MITHgrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
         firstEl = $(container).find(".icon-fast-backward").parent()
         prevEl = $(container).find(".icon-step-backward").parent()
         nextEl = $(container).find(".icon-step-forward").parent()
@@ -160,7 +160,7 @@ SGAReader.namespace "Component", (Component) ->
   #
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
+      MITHgrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
         resetEl = $(container).find(".icon-picture").parent()
         inEl = $(container).find(".icon-zoom-in").parent()
         outEl = $(container).find(".icon-zoom-out").parent()

@@ -6,7 +6,7 @@ SGAReader.namespace "Application", (Application) ->
   #
   Application.namespace "SharedCanvas", (SharedCanvas) ->
     SharedCanvas.initInstance = (args...) ->
-      MITHGrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
+      MITHgrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
         options = that.options
 
         #
@@ -143,7 +143,7 @@ SGAReader.namespace "Application", (Application) ->
           # if multiple sequences, we want to add a control to allow
           # selection
           items = []
-          syncer = MITHGrid.initSynchronizer()
+          syncer = MITHgrid.initSynchronizer()
 
           canvases = manifestData.getCanvases()
           that.addItemsToProcess canvases.length

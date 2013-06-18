@@ -14,7 +14,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
   Presentation.namespace "TextContent", (TextContent) ->
     TextContent.initInstance = (args...) ->
-      MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
         options = that.options
 
         #
@@ -41,7 +41,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # all of the text content pieces that belong to this container.
         # For now, we are dependent on the data store to retain the ordering
         # of items based on insertion order. Eventually, we'll build
-        # item ordering into the basic MITHGrid presentation code. Then, we
+        # item ordering into the basic MITHgrid presentation code. Then, we
         # can set 
         #
         that.addLens 'AdditionAnnotation', annoLens
@@ -77,7 +77,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
   #
   Presentation.namespace "Zone", (Zone) ->
     Zone.initInstance = (args...) ->
-      MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
         options = that.options
         svgRoot = options.svgRoot
 
@@ -244,7 +244,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           container.appendChild(zoneContainer)
 
           # TODO: position/size zoneContainer and set scaling.
-          zoneDataView = MITHGrid.Data.SubSet.initInstance
+          zoneDataView = MITHgrid.Data.SubSet.initInstance
             dataStore: model
             expressions: [ '!target' ]
             #key: id
@@ -396,7 +396,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           # the key to filter the set of annotations during the initInstance
           # call.
           #
-          textDataView = MITHGrid.Data.SubSet.initInstance
+          textDataView = MITHgrid.Data.SubSet.initInstance
             dataStore: model
             expressions: [ '!target' ]
 
@@ -448,7 +448,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
   #
   Presentation.namespace "Canvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
-      MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
         # We want to draw everything that annotates a Canvas
         # this would be anything with a target = the canvas
         options = that.options
@@ -483,11 +483,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
         SVGWidth = parseInt($(container).width()*20/20, 10)
 
         #
-        # MITHGrid makes available a global listener for browser window
+        # MITHgrid makes available a global listener for browser window
         # resizing so we don't have to guess how to do this for each
         # application.
         #
-        MITHGrid.events.onWindowResize.addListener ->
+        MITHgrid.events.onWindowResize.addListener ->
           SVGWidth = parseInt($(container).width() * 20/20, 10)
           if canvasWidth? and canvasWidth > 0
             that.setScale (SVGWidth / canvasWidth)
@@ -511,7 +511,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 "background-color": "#ffffff"
 
         # the data view is managed outside the presentation
-        dataView = MITHGrid.Data.SubSet.initInstance
+        dataView = MITHgrid.Data.SubSet.initInstance
           dataStore: options.dataView
           expressions: [ '!target' ]
           key: null
