@@ -93,4 +93,9 @@ MITHGrid.defaults 'SGA.Reader.Component.ImageControls',
     Active: { is: 'rw', default: false }
     Zoom: { is: 'rw', default: 0, isa: 'numeric' }
     MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
+<<<<<<< HEAD
     ImgPosition : {is: 'rw', default: {} }
+=======
+    MinZoom: { is: 'rw', default: 0, isa: 'numeric' }
+    ImgPosition : {is: 'rw', default: {} }
+>>>>>>> 0a9bd57425b4ba8ca3e64ac1b046c16054b133db

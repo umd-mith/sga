@@ -127,9 +127,8 @@ SGAReader.namespace "Data", (Data) ->
             success: (data) ->
 	            that.addItemsProcessed 1
 	            that.importJSON data, cb
-            error: ->
-	            that.addItemsProcessed 1
-	            cb() if cb?
+            error: (e) -> 
+              throw new Error("Could not load the manifest")
 
         # we want to get the rdf/JSON version of things if we can
         that.importJSON = (json, cb) ->

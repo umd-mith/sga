@@ -155,10 +155,49 @@ SGAReader.namespace "Component", (Component) ->
           e.preventDefault()
           that.setValue that.getMax()
 
-#
+  #
   # ## Component.PagerControls
   #
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that) ->        
-        0
+      MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
+        resetEl = $(container).find(".icon-picture").parent()
+        inEl = $(container).find(".icon-zoom-in").parent()
+        outEl = $(container).find(".icon-zoom-out").parent()
+        marqueeEl = $(container).find(".icon-eye-open").parent()
+
+        $(resetEl).click (e) ->
+          e.preventDefault()
+          that.setZoom that.getMinZoom()
+          that.setImgPosition 
+            topLeft:
+              x: 0,
+              y: 0,
+            bottomRight:
+              x: 0,
+              y: 0
+
+        $(inEl).click (e) ->
+          e.preventDefault()
+          zoom = that.getZoom()
+          if Math.floor zoom+1 <= that.getMaxZoom()
+            that.setZoom Math.floor zoom+1
+
+        $(outEl).click (e) ->
+          e.preventDefault()
+          zoom = that.getZoom()
+          minZoom = that.getMinZoom()
+          if Math.floor zoom-1 > minZoom
+            that.setZoom Math.floor zoom-1
+          else if Math.floor zoom-1 == Math.floor minZoom
+            that.setZoom minZoom
+
+        $(marqueeEl).click (e) ->
+          e.preventDefault()
+          marquees = $('.marquee')
+          marquees.each (i, m) ->
+            m = $(m)            
+            if m.css("display") != "none"
+              m.hide()
+            else 
+              m.show()
