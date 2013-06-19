@@ -15,8 +15,10 @@ DOCCO ?= `which docco-husky`
 
 BASE_FILES = ${SRC_DIR}/data.coffee \
 			${SRC_DIR}/presentation.coffee \
-			${SRC_DIR}/controller.coffee \
+			${SRC_DIR}/data.coffee \
 			${SRC_DIR}/component.coffee \
+			${SRC_DIR}/controller.coffee \
+			${SRC_DIR}/core.coffee \
 			${SRC_DIR}/application.coffee
 
 MODULES = ${SRC_DIR}/intro.coffee \

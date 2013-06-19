@@ -127,9 +127,10 @@ SGAReader.namespace "Data", (Data) ->
             processData: false
             dataType: 'json'
             success: (data) ->
-	            that.addItemsProcessed 1
-	            that.importJSON data, cb
+              that.addItemsProcessed 1
+              that.importJSON data, cb
             error: (e) -> 
+              that.addItemsProcessed 1
               throw new Error("Could not load the manifest")
 
         # we want to get the rdf/JSON version of things if we can
@@ -145,15 +146,16 @@ SGAReader.namespace "Data", (Data) ->
             # this resource, then we load the data before continuing
             # processing for this resource.
             #
-
+ 
             # we want anything that has the oreisDescribedBy property
             idset = MITHgrid.Data.Set.initInstance ids
             urls = data.getObjectsUnion(idset, 'oreisDescribedBy')
-
+            
             urls.visit (url) ->
               syncer.increment()
               importFromURL url, syncer.decrement
-            syncer.decrement
+            syncer.decrement()
+          syncer.done()
 
         itemsWithType = (type) ->
           type = [ type ] if !$.isArray(type)

@@ -1,11 +1,11 @@
 ###
-# SGA Shared Canvas v0.0.1
+# SGA Shared Canvas v0.131700
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Jun 12 11:03:51 2013 -0400
+# Date: Tue Jun 18 14:33:06 2013 -0400
 #
-# (c) Copyright University of Maryland 2012.  All rights reserved.
+# (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,20 +20,59 @@
 # limitations under the License.
 ###
 
-(($, MITHGrid) ->
+(($, MITHgrid) ->
+  #
   # The application uses the SGA.Reader namespace.
-  MITHGrid.globalNamespace "SGA"
+  #
+  # N.B.: This may change as we move towards a general component
+  # repository for MITHgrid. At that point, we'll refactor out the
+  # general purpose components and keep the SGA namespace for code
+  # specific to the SGA project.
+  #
+  MITHgrid.globalNamespace "SGA"
   SGA.namespace "Reader", (SGAReader) ->
-    # # Core Utilities
     # # Data Managment
     SGAReader.namespace "Data", (Data) ->
+    
+      #
+      # ## Data.StyleStore
+      #
+    
+      Data.namespace "StyleStore", (StyleStore) ->
+        StyleStore.initInstance = (args...) ->
+          MITHgrid.initInstance args..., (that) ->
+            options = that.options
+    
+            docs = { }
+            regex = new RegExp("(?:\\.(\\S+)\\s*\\{\\s*([^}]*)\\s*\\})", "mg")
+    
+            #
+            # Associates the CSS content with the given id.
+            #
+            that.addStyles = (id, css) ->
+              return if docs[id]?
+              docs[id] = { }
+              results = regex.exec(css)
+              while results?.index?
+                docs[id][results[1]] = results[2]
+                results = regex.exec(css)
+    
+            #
+            # Returns the CSS style rules for a given class as defined by the
+            # CSS content associated with the given id.
+            #
+            that.getStylesForClass = (id, klass) ->
+              if docs[id]?[klass]?
+                docs[id][klass]
+              else
+                ""
     
       #
       # ## Data.TextStore
       #
       Data.namespace "TextStore", (TextStore) ->
         TextStore.initInstance = (args...) ->
-          MITHGrid.initInstance args..., (that) ->
+          MITHgrid.initInstance args..., (that) ->
             options = that.options
     
             fileContents = { }
@@ -61,6 +100,9 @@
                 cb(fileContents[file])
               else if loadingFiles[file]?
                 loadingFiles[file].push cb
+              else
+                that.addFile file
+                loadingFiles[file].push cb
     
       #
       # ## Data.Manifest
@@ -86,14 +128,21 @@
           "http://www.shelleygodwinarchive.org/ns/1#": "sga"
           "http://www.shelleygodwinarchive.org/ns1#": "sga"
           "http://www.w3.org/2011/content#": "cnt"
+          "http://purl.org/dc/dcmitype/": "dctypes"
+    
+        types =
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "item"
+          "http://www.w3.org/ns/openannotation/core/hasMotivation": "item"
     
         Manifest.initInstance = (args...) ->
-          MITHGrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
+          MITHgrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
             options = that.options
     
-            data = MITHGrid.Data.Store.initInstance()
+            data = MITHgrid.Data.Store.initInstance()
     
             that.size = -> data.size()
+            
+            importer = MITHgrid.Data.Importer.RDF_JSON.initInstance data, NS, types
     
             loadedUrls = []
     
@@ -110,92 +159,40 @@
                 contentType: 'application/rdf+json'
                 processData: false
                 dataType: 'json'
-                success: (data) -> that.importJSON data, cb
-                error: cb
+                success: (data) ->
+                  that.addItemsProcessed 1
+                  that.importJSON data, cb
+                error: (e) -> 
+                  that.addItemsProcessed 1
+                  throw new Error("Could not load the manifest")
     
             # we want to get the rdf/JSON version of things if we can
             that.importJSON = (json, cb) ->
               # we care about certain namespaces - others we ignore
               # those we care about, we translate for datastore
               # {nsPrefix}{localName}
-              items = []
-              syncer = MITHGrid.initSynchronizer()
-              subjects = (s for s of json) # when json.hasOwnProperty(s))
-              that.addItemsToProcess subjects.length
-              syncer.process subjects, (s) ->
-                predicates = json[s]
-                item =
-                  id: s
-                for p, os of predicates
-                   values = []
-                   if p == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-                     for o in os
-                       if o.type == "uri"
-                         for ns, prefix of NS
-                           if o.value[0...ns.length] == ns
-                             values.push prefix + o.value.substr(ns.length)
-                     item.type = values
-                   else
-                     for o in os
-                       if o.type == "literal"
-                         values.push o.value
-                       #
-                       # Sometimes, references to blank nodes are wrapped in
-                       # parenthesis, but the subject IDs will be with a leading
-                       # _:. For example, an object uri/bnode in the form
-                       # "(123abc)" refers to a resource with the URI
-                       # "_:123abc".
-                       #
-                       else if o.type == "uri"
-                         if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
-                           values.push "_:" + o.value.substr(1,o.value.length-2)
-                         else
-                           values.push o.value
-                       else if o.type == "bnode"
-                         if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
-                           values.push "_:" + o.value.substr(1,o.value.length-2)
-                         else
-                           values.push o.value
-                         
-                     if values.length > 0
-                       for ns, prefix of NS
-                         if p.substr(0, ns.length) == ns
-                           pname = prefix + p.substr(ns.length)
-                           item[pname] = values
-                if !item.type? or item.type.length == 0
-                  item.type = 'Blank'
-     
+              syncer = MITHgrid.initSynchronizer cb
+              syncer.increment()
+              importer.import json, (ids) ->
                 #
                 # If the manifest indicates that another document describes
-                # this resource, then we throw away the current item we've built
-                # and load the data before continuing processing for this
-                # resource.
+                # this resource, then we load the data before continuing
+                # processing for this resource.
                 #
-                # We are not using this in the current SGA manifest, so this
-                # might be broken - but this is where support would be hooked in.
-                #
-                if item.oreisDescribedBy?.length > 0
-                  for url in item.oreisDescribedBy
-                    syncer.increment()
-                    importFromURL url, syncer.decrement
-                else
-                  items.push item 
-                that.addItemsProcessed 1
-    
-              syncer.done ->
-                that.addItemsProcessed 1
-                setTimeout ->
-                  for item in items
-                    if data.contains(item.id)
-                      data.updateItems [ item ]
-                    else
-                      data.loadItems [ item ]
-                  cb() if cb?
-                , 0
+     
+                # we want anything that has the oreisDescribedBy property
+                idset = MITHgrid.Data.Set.initInstance ids
+                urls = data.getObjectsUnion(idset, 'oreisDescribedBy')
+                
+                urls.visit (url) ->
+                  syncer.increment()
+                  importFromURL url, syncer.decrement
+                syncer.decrement()
+              syncer.done()
     
             itemsWithType = (type) ->
               type = [ type ] if !$.isArray(type)
-              types = MITHGrid.Data.Set.initInstance type
+              types = MITHgrid.Data.Set.initInstance type
               data.getSubjectsUnion(types, "type").items()
     
             #
@@ -221,39 +218,55 @@
       # ## Presentation.TextContent
       #
     
+      #
+      # The TextContent presentation is all about modeling a section of a canvas
+      # as a textual zone instead of a pixel-based zone. Eventually, we may want
+      # to allow addressing of lines and character offsets, but for now we simply
+      # fill in the area with textual annotations in the dataView.
+      #
+    
       Presentation.namespace "TextContent", (TextContent) ->
         TextContent.initInstance = (args...) ->
-          MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
+          MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
             options = that.options
     
-            makeAnnoLens = (type) ->
-              that.addLens type, (container, view, model, id) ->
-                rendering = {}
-                el = $("<span></span>")
-                rendering.$el = el
-                item = model.getItem id
+            #
+            # We draw each text span type the same way. We rely on the
+            # item.type to give us the CSS classes we need for the span
+            #
+            annoLens = (container, view, model, id) ->
+              rendering = {}
+              el = $("<span></span>")
+              rendering.$el = el
+              item = model.getItem id
+              el.text item.text[0]
+              el.addClass item.type.join(" ")
+              el.attr "style", item.css?[0]
+              $(container).append el
+              rendering.remove = ->
+                el.remove()
+              rendering.update = (item) ->
                 el.text item.text[0]
-                el.addClass item.type.join(" ")
-                el.attr "style", item.css?[0]
-                $(container).append el
-                rendering.remove = ->
-                  el.remove()
-                rendering.update = (item) ->
-                  el.text item.text[0]
-                rendering
+              rendering
     
             #
             # We expect an HTML container for this to which we can append
             # all of the text content pieces that belong to this container.
             # For now, we are dependent on the data store to retain the ordering
-            # of items based on insertion order.
+            # of items based on insertion order. Eventually, we'll build
+            # item ordering into the basic MITHgrid presentation code. Then, we
+            # can set 
             #
-            makeAnnoLens 'AdditionAnnotation'
-            makeAnnoLens 'DeletionAnnotation'
-            makeAnnoLens 'SearchAnnotation'
-            makeAnnoLens 'LineAnnotation'
-            makeAnnoLens 'Text'
+            that.addLens 'AdditionAnnotation', annoLens
+            that.addLens 'DeletionAnnotation', annoLens
+            that.addLens 'SearchAnnotation', annoLens
+            that.addLens 'LineAnnotation', annoLens
+            that.addLens 'Text', annoLens
     
+            #
+            # Line breaks are different. We just want to add an explicit
+            # break without any classes or styling.
+            #
             that.addLens 'LineBreak', (container, view, model, id) ->
               rendering = {}
               el = $("<br/>")
@@ -268,15 +281,31 @@
       #
       # ## Presentation.Zone
       #
+    
+      #
+      # The Zone presentation handles mapping annotations onto an SVG
+      # surface. A Canvas is just a special zone that covers the entire canvas.
+      #
+      # We expect container to be in the SVG image.
+      #
       Presentation.namespace "Zone", (Zone) ->
         Zone.initInstance = (args...) ->
-          # We expect container to be in the SVG image
-          MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
+          MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
             options = that.options
             svgRoot = options.svgRoot
     
+            #
+            # !target gives us all of the annotations that target the given
+            # item id. We use this later to find all of the annotations that target
+            # a given zone.
+            #
             annoExpr = that.dataView.prepare(['!target'])
     
+            #
+            # Since images don't have annotations attached to them, we simply
+            # do nothing if our presentation root isn't marked as including
+            # images.
+            #
             that.addLens 'Image', (container, view, model, id) ->
               return unless 'Image' in (options.types || [])
               rendering = {}
@@ -293,26 +322,21 @@
                   viewBox: "0 0 #{options.width} #{options.height}"
     
               svgImage = null
-              if item.image?[0]? and svgRoot?
-                x = if item.x?[0]? then item.x[0] else 0
-                y = if item.y?[0]? then item.y[0] else 0
-                width = if item.width?[0]? then item.width[0] else options.width - x
-                height = if item.height?[0]? then item.height[0] else options.height - y
-                svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
-                  preserveAspectRatio: 'none'
-                })
-    
-              rendering.update = (item) ->
-                # do nothing for now - eventually, update image
+              renderImage = (item) ->
                 if item.image?[0]? and svgRoot?
                   x = if item.x?[0]? then item.x[0] else 0
                   y = if item.y?[0]? then item.y[0] else 0
                   width = if item.width?[0]? then item.width[0] else options.width - x
                   height = if item.height?[0]? then item.height[0] else options.height - y
-                  svgRoot.remove svgImage
+                  if svgImage?
+                    svgRoot.remove svgImage
                   svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
                     preserveAspectRatio: 'none'
                   })
+    
+              renderImage(item)
+    
+              rendering.update = renderImage
     
               rendering.remove = ->
                 if svgImage? and svgRoot?
@@ -329,7 +353,7 @@
     
               # Activate imageControls
               app.imageControls.setActive(true)
-    
+              
               # Djatoka URL is now hardcoded, it will eventually come from the manifest
               # when we figure out how to model it.
               djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
@@ -357,14 +381,19 @@
     
               # wait for polymap to load image and update map, then...
               toAdoratio.then ->
+                # Decide when to propagate changes...
+                propagate = true
                 # Keep track of some start values
                 startCenter = map.center()
     
                 # Add listeners for external controls
                 app.imageControls.events.onZoomChange.addListener (z) ->
                   map.zoom(z)
+                  app.imageControls.setImgPosition map.position
+                  propagate = false
                 app.imageControls.events.onImgPositionChange.addListener (p) ->
                   # only apply if reset
+                  propagate = false
                   if p.topLeft.x == 0 and p.topLeft.y == 0
                     map.center(startCenter)
     
@@ -375,24 +404,46 @@
                 app.imageControls.setMinZoom map.zoomRange()[0]
                 app.imageControls.setImgPosition map.position
                 map.on 'zoom', ->
-                  app.imageControls.setZoom map.zoom()
-                  app.imageControls.setMaxZoom map.zoomRange()[1]
-                  app.imageControls.setImgPosition map.position
+                  if propagate
+                    app.imageControls.setZoom map.zoom()
+                    app.imageControls.setImgPosition map.position
+                  else
+                    propagate = true
+                  # app.imageControls.setMaxZoom map.zoomRange()[1]
                 map.on 'drag', ->
-                  app.imageControls.setImgPosition map.position
+                  if propagate
+                    app.imageControls.setImgPosition map.position
+                  else
+                    propagate = true
+    
               
               rendering.update = (item) ->
                 0 # do nothing for now - eventually, update image viewer?
     
               rendering.remove = ->
                 app.imageControls.setActive(false)
-                0 # eventually remove svg g#map
+                app.imageControls.setZoom(0)
+                app.imageControls.setMaxZoom(0)
+                app.imageControls.setMinZoom(0)
+                app.imageControls.setImgPosition 
+                  topLeft:
+                    x: 0,
+                    y: 0,
+                  bottomRight:
+                    x: 0,
+                    y: 0
+                $(svgRoot.root()).find('#map').remove()
+    
               rendering
     
+            #
+            # ZoneAnnotations just map a zone onto a zone or canvas. We render
+            # these regardless of what kinds of annotations we are displaying
+            # since we might eventually get to an annotation we want to display.
+            #
             that.addLens 'ZoneAnnotation', (container, view, model, id) ->
               rendering = {}
-              # we need to get the width/height from the item
-              # based on what we're targeting
+    
               zoneInfo = model.getItem id
               zoneContainer = null
               zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg' )
@@ -404,11 +455,9 @@
               height = if item.height?[0]? then item.height[0] else options.height - y
               $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(zoneContainer)
-              # apply position/transformations
-              # based on zoneannotation info
     
-              # TODO: position/size zoneContainer and set scaling
-              zoneDataView = MITHGrid.Data.SubSet.initInstance
+              # TODO: position/size zoneContainer and set scaling.
+              zoneDataView = MITHgrid.Data.SubSet.initInstance
                 dataStore: model
                 expressions: [ '!target' ]
                 #key: id
@@ -428,9 +477,6 @@
                 zoneDataView._destroy() if zoneDataView._destroy?
     
               rendering.remove = ->
-                #if svgRoot? and container?
-                #  $(container).empty()
-                #  svgRoot.remove container
                 rendering._destroy()
      
               rendering.update = (item) ->
@@ -442,7 +488,50 @@
      
               rendering
     
-            that.addLens 'TextContent', (container, view, model, id) ->
+            #
+            # A ContentAnnotation is just text placed on the canvas. No
+            # structure. This is the default mode for SharedCanvas.
+            #
+            # See the following TextContentZone lens for how we're managing
+            # the SVG/HTML interface.
+            #
+    
+            that.addLens 'ContentAnnotation', (container, view, model, id) ->
+              return unless 'Text' in (options.types || [])
+    
+              rendering = {}
+              item = model.getItem id
+    
+              textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject')
+    
+              x = if item.x?[0]? then item.x[0] else 0
+              y = if item.y?[0]? then item.y[0] else 0
+              width = if item.width?[0]? then item.width[0] else options.width - x
+              height = if item.height?[0]? then item.height[0] else options.height - y
+              $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+              container.appendChild(textContainer)
+              bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+              rootEl = document.createElement('div')
+              $(rootEl).addClass("text-content")
+              
+              rootEl.text(item.text[0])
+              rendering.update = (item) ->
+                rootEl.text(item.text[0])
+              rendering.remove = ->
+                rootEl.remove()
+              rendering
+    
+            #
+            #
+            # We're rendering text content from here on down, so if we aren't
+            # rendering text for this view, then we shouldn't do anything here.
+            #
+            # N.B.: If we ever support showing images based on their place
+            # in the text, then we will need to treat this like we treat the
+            # Zone above and allow rendering of embedded zones even if we don't
+            # render the textual content.
+            #
+            that.addLens 'TextContentZone', (container, view, model, id) ->
               return unless 'Text' in (options.types || [])
     
               rendering = {}
@@ -451,11 +540,19 @@
               zoom = app.imageControls.getZoom()
     
               item = model.getItem id
+     
+              #
+              # The foreignObject element MUST be in the SVG namespace, so we
+              # can't use the jQuery convenience methods.
+              #
     
               textContainer = null
               textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
-              # pull start/end/width/height from constraint with a default of
-              # the full surface
+    
+              #
+              # If we're not given an offset and size, then we assume that we're
+              # covering the entire targeted zone or canvas.
+              #
               x = if item.x?[0]? then item.x[0] else 0
               y = if item.y?[0]? then item.y[0] else 0
               width = if item.width?[0]? then item.width[0] else options.width - x
@@ -463,6 +560,11 @@
               $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(textContainer)
     
+              #
+              # Similar to foreignObject, the body element MUST be in the XHTML
+              # namespace, so we can't use jQuery. Once we're inside the body
+              # element, we can use jQuery all we want.
+              #
               bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
               rootEl = document.createElement('div')
               $(rootEl).addClass("text-content")
@@ -499,12 +601,23 @@
                   marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
                   
     
-              textDataView = MITHGrid.Data.SubSet.initInstance
+              #
+              # textDataView gives us all of the annotations targeting this
+              # text content annotation - that is, all of the highlights and such
+              # that change how we render the text mapped onto the zone/canvas.
+              # We don't set the key here because the SubSet data view won't use
+              # the key to filter the set of annotations during the initInstance
+              # call.
+              #
+              textDataView = MITHgrid.Data.SubSet.initInstance
                 dataStore: model
                 expressions: [ '!target' ]
-                #key: id
     
-    
+              #
+              # Here we embed the text-based zone within the pixel-based
+              # zone. Any text-based positioning will have to be handled by
+              # the TextContent presentation.
+              #
               text = Presentation.TextContent.initInstance rootEl,
                 types: options.types
                 dataView: textDataView
@@ -513,6 +626,12 @@
                 height: height
                 width: width
     
+              #
+              # Once we have the presentation in place, we set the
+              # key of the SubSet data view to the id of the text content 
+              # annotation item. This causes the presentation to render the
+              # annotations.
+              #
               textDataView.setKey id
     
               rendering._destroy = ->
@@ -520,8 +639,8 @@
                 textDataView._destroy() if textDataView._destroy?
     
               rendering.remove = ->
-                #$(textContainer).empty()
-                #svgRoot.remove textContainer
+                $(textContainer).empty()
+                svgRoot.remove textContainer
     
               rendering.update = (item) ->
                 x = if item.x?[0]? then item.x[0] else 0
@@ -535,9 +654,14 @@
       #
       # ## Presentation.Canvas
       #
+    
+      #
+      # This is the wrapper around a root Zone presentation that gets things
+      # started.
+      #
       Presentation.namespace "Canvas", (Canvas) ->
         Canvas.initInstance = (args...) ->
-          MITHGrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
+          MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
             # We want to draw everything that annotates a Canvas
             # this would be anything with a target = the canvas
             options = that.options
@@ -546,8 +670,6 @@
             # and then we apply any annotations that modify how we display
             # the text before we create the svg elements - that way, we get
             # things like line breaks
-    
-            highlightDS = null
     
             annoExpr = that.dataView.prepare(['!target'])
     
@@ -572,7 +694,13 @@
             canvasHeight = null
             SVGHeight = null
             SVGWidth = parseInt($(container).width()*20/20, 10)
-            MITHGrid.events.onWindowResize.addListener ->
+    
+            #
+            # MITHgrid makes available a global listener for browser window
+            # resizing so we don't have to guess how to do this for each
+            # application.
+            #
+            MITHgrid.events.onWindowResize.addListener ->
               SVGWidth = parseInt($(container).width() * 20/20, 10)
               if canvasWidth? and canvasWidth > 0
                 that.setScale (SVGWidth / canvasWidth)
@@ -585,9 +713,7 @@
                   svgRootEl.attr
                     width: canvasWidth
                     height: canvasHeight
-                    #transform: "scale(#{s})"
                   svgRoot.configure
-                    #transform: "scale(#{s})"
                     viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
     
                   svgRootEl.css
@@ -598,7 +724,7 @@
                     "background-color": "#ffffff"
     
             # the data view is managed outside the presentation
-            dataView = MITHGrid.Data.SubSet.initInstance
+            dataView = MITHgrid.Data.SubSet.initInstance
               dataStore: options.dataView
               expressions: [ '!target' ]
               key: null
@@ -628,7 +754,186 @@
                   svgRoot: svgRoot
     
 
-    # # Controllers
+    # # Data Managment
+    SGAReader.namespace "Data", (Data) ->
+    
+      #
+      # ## Data.StyleStore
+      #
+    
+      Data.namespace "StyleStore", (StyleStore) ->
+        StyleStore.initInstance = (args...) ->
+          MITHgrid.initInstance args..., (that) ->
+            options = that.options
+    
+            docs = { }
+            regex = new RegExp("(?:\\.(\\S+)\\s*\\{\\s*([^}]*)\\s*\\})", "mg")
+    
+            #
+            # Associates the CSS content with the given id.
+            #
+            that.addStyles = (id, css) ->
+              return if docs[id]?
+              docs[id] = { }
+              results = regex.exec(css)
+              while results?.index?
+                docs[id][results[1]] = results[2]
+                results = regex.exec(css)
+    
+            #
+            # Returns the CSS style rules for a given class as defined by the
+            # CSS content associated with the given id.
+            #
+            that.getStylesForClass = (id, klass) ->
+              if docs[id]?[klass]?
+                docs[id][klass]
+              else
+                ""
+    
+      #
+      # ## Data.TextStore
+      #
+      Data.namespace "TextStore", (TextStore) ->
+        TextStore.initInstance = (args...) ->
+          MITHgrid.initInstance args..., (that) ->
+            options = that.options
+    
+            fileContents = { }
+            loadingFiles = { }
+            pendingFiles = { }
+    
+            that.addFile = (files) ->
+              files = [ files ] unless $.isArray(files)
+              for file in files 
+                do (file) ->
+                  if file? and !fileContents[file]? and !loadingFiles[file]?
+                    loadingFiles[file] = [ ]
+                    $.ajax
+                      url: file
+                      type: 'GET'
+                      processData: false
+                      success: (data) ->
+                        c = data.documentElement.textContent
+                        fileContents[file] = c
+                        f(c) for f in loadingFiles[file]
+                        delete loadingFiles[file]
+    
+            that.withFile = (file, cb) ->
+              if fileContents[file]?
+                cb(fileContents[file])
+              else if loadingFiles[file]?
+                loadingFiles[file].push cb
+              else
+                that.addFile file
+                loadingFiles[file].push cb
+    
+      #
+      # ## Data.Manifest
+      #
+      Data.namespace "Manifest", (Manifest) ->
+    
+        #
+        # We list all of the namespaces that we care about and the prefix
+        # we map them to. Some of the namespaces are easy "misspellings"
+        # that let us support older namespaces.
+        #
+        NS =
+          "http://dms.stanford.edu/ns/": "sc"
+          "http://www.shared-canvas.org/ns/": "sc"
+          "http://www.w3.org/2000/01/rdf-schema#": "rdfs"
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf"
+          "http://www.w3.org/2003/12/exif/ns#": "exif"
+          "http://purl.org/dc/elements/1.1/": "dc"
+          "http://www.w3.org/ns/openannotation/core/": "oa"
+          "http://www.openannotation.org/ns/": "oa"
+          "http://www.w3.org/ns/openannotation/extension/": "oax"
+          "http://www.openarchives.org/ore/terms/": "ore"
+          "http://www.shelleygodwinarchive.org/ns/1#": "sga"
+          "http://www.shelleygodwinarchive.org/ns1#": "sga"
+          "http://www.w3.org/2011/content#": "cnt"
+          "http://purl.org/dc/dcmitype/": "dctypes"
+    
+        types =
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "item"
+          "http://www.w3.org/ns/openannotation/core/hasMotivation": "item"
+    
+        Manifest.initInstance = (args...) ->
+          MITHgrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
+            options = that.options
+    
+            data = MITHgrid.Data.Store.initInstance()
+    
+            that.size = -> data.size()
+            
+            importer = MITHgrid.Data.Importer.RDF_JSON.initInstance data, NS, types
+    
+            loadedUrls = []
+    
+            importFromURL = (url, cb) ->
+              if url in loadedUrls
+                cb()
+                return
+              loadedUrls.push url
+              that.addItemsToProcess 1
+              
+              $.ajax
+                url: url
+                type: 'GET'
+                contentType: 'application/rdf+json'
+                processData: false
+                dataType: 'json'
+                success: (data) ->
+                  that.addItemsProcessed 1
+                  that.importJSON data, cb
+                error: (e) -> 
+                  that.addItemsProcessed 1
+                  throw new Error("Could not load the manifest")
+    
+            # we want to get the rdf/JSON version of things if we can
+            that.importJSON = (json, cb) ->
+              # we care about certain namespaces - others we ignore
+              # those we care about, we translate for datastore
+              # {nsPrefix}{localName}
+              syncer = MITHgrid.initSynchronizer cb
+              syncer.increment()
+              importer.import json, (ids) ->
+                #
+                # If the manifest indicates that another document describes
+                # this resource, then we load the data before continuing
+                # processing for this resource.
+                #
+     
+                # we want anything that has the oreisDescribedBy property
+                idset = MITHgrid.Data.Set.initInstance ids
+                urls = data.getObjectsUnion(idset, 'oreisDescribedBy')
+                
+                urls.visit (url) ->
+                  syncer.increment()
+                  importFromURL url, syncer.decrement
+                syncer.decrement()
+              syncer.done()
+    
+            itemsWithType = (type) ->
+              type = [ type ] if !$.isArray(type)
+              types = MITHgrid.Data.Set.initInstance type
+              data.getSubjectsUnion(types, "type").items()
+    
+            #
+            # Get things of different types. For example, "scCanvas" gets
+            # all of the canvas items.
+            #
+            that.getCanvases    = -> itemsWithType 'scCanvas'
+            that.getZones       = -> itemsWithType 'scZone'
+            that.getSequences   = -> itemsWithType 'scSequence'
+            that.getAnnotations = -> itemsWithType 'oaAnnotation'
+    
+            that.getItem = data.getItem
+            that.contains = data.contains
+    
+            that.importFromURL = (url, cb) ->
+              importFromURL url, ->
+                cb() if cb?
+
     # # Components
     
     SGAReader.namespace "Component", (Component) ->
@@ -636,13 +941,24 @@
       #
       # ## Component.ProgressBar
       #
+    
       Component.namespace "ProgressBar", (ProgressBar) ->
+    
+        #
+        # This component manages the display of a progress bar based on
+        # the Twitter Bootstrap progress bar component.
+        #
+        # The component has two variables: Numerator and Denominator.
+        #
+    
         ProgressBar.initInstance = (args...) ->
-          MITHGrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
+          MITHgrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
+    
             that.events.onNumeratorChange.addListener (n) ->
               percent = parseInt(100 * n / that.getDenominator(), 10)
               percent = 100 if percent > 100
               $(container).find(".bar").css("width", percent + "%")
+    
             that.events.onDenominatorChange.addListener (d) ->
               percent = parseInt(100 * that.getNumerator() / d, 10)
               percent = 100 if percent > 100
@@ -650,17 +966,27 @@
     
             that.show = -> 
               $(container).show()
+    
             that.hide = -> 
               $(container).hide()
     
       #
       # ## Component.SequenceSelector
       #
+    
       Component.namespace "SequenceSelector", (SequenceSelector) ->
+    
+        #
+        # This component manages the options of a select HTML form element.
+        # 
+        # The component has one variable: Sequence.
+        #
+        # The container should be a <select></select> element.
+        #
+    
         SequenceSelector.initInstance = (args...) ->
-          MITHGrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
+          MITHgrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
             options = that.options
-            # container should be a <select/> element
             that.addLens 'Sequence', (container, view, model, id) ->
               rendering = {}
               item = model.getItem id
@@ -673,15 +999,25 @@
             $(container).change ->
               that.setSequence $(container).val()
     
+            that.events.onSequenceChange.addListener (v) ->
+              $(container).val(v)
+    
             that.finishDisplayUpdate = ->
               that.setSequence $(container).val()
     
       #
       # ## Component.Slider
       #
+    
       Component.namespace "Slider", (Slider) ->
+    
+        #
+        # This component manages an HTML5 slider input element.
+        #
+        # This component has three variables: Min, Max, and Value.
+        #
         Slider.initInstance = (args...) ->
-          MITHGrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+          MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
             that.events.onMinChange.addListener (n) ->
               $(container).attr
                 min: n
@@ -694,9 +1030,18 @@
       #
       # ## Component.PagerControls
       #
+    
       Component.namespace "PagerControls", (PagerControls) ->
+    
+        #
+        # This component manages a set of Twitter Bootstrap buttons that display
+        # the step forward, step backward, fast forward, and fast backward icons.
+        #
+        # This component has three variables: Min, Max, and Value.
+        #
+    
         PagerControls.initInstance = (args...) ->
-          MITHGrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+          MITHgrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
             firstEl = $(container).find(".icon-fast-backward").parent()
             prevEl = $(container).find(".icon-step-backward").parent()
             nextEl = $(container).find(".icon-step-forward").parent()
@@ -746,12 +1091,12 @@
               e.preventDefault()
               that.setValue that.getMax()
     
-    #
+      #
       # ## Component.PagerControls
       #
       Component.namespace "ImageControls", (ImageControls) ->
         ImageControls.initInstance = (args...) ->
-          MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
+          MITHgrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
             resetEl = $(container).find(".icon-picture").parent()
             inEl = $(container).find(".icon-zoom-in").parent()
             outEl = $(container).find(".icon-zoom-out").parent()
@@ -793,6 +1138,10 @@
                 else 
                   m.show()
 
+    # # Controllers
+
+    # # Core Utilities
+
     # # Application
     
     SGAReader.namespace "Application", (Application) ->
@@ -801,7 +1150,7 @@
       #
       Application.namespace "SharedCanvas", (SharedCanvas) ->
         SharedCanvas.initInstance = (args...) ->
-          MITHGrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
+          MITHgrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
             options = that.options
     
             #
@@ -938,7 +1287,7 @@
               # if multiple sequences, we want to add a control to allow
               # selection
               items = []
-              syncer = MITHGrid.initSynchronizer()
+              syncer = MITHgrid.initSynchronizer()
     
               canvases = manifestData.getCanvases()
               that.addItemsToProcess canvases.length
@@ -952,7 +1301,7 @@
                   height: parseInt(mitem.exifheight?[0], 10)
                   label: mitem.dctitle || mitem.rdfslabel
     
-              zones = manifestData.getZones()  
+              zones = manifestData.getZones()
               that.addItemsToProcess zones.length
               syncer.process zones, (id) ->
                 that.addItemsProcessed 1
@@ -965,7 +1314,7 @@
                   angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
                   label: zitem.rdfslabel
     
-              seq = manifestData.getSequences()
+              seq = manifestData.getSequences()          
               that.addItemsToProcess seq.length
               syncer.process seq, (id) ->
                 that.addItemsProcessed 1
@@ -989,7 +1338,7 @@
               textAnnos = []
     
               # now get the annotations we know something about handling
-              annos = manifestData.getAnnotations()
+              annos = manifestData.getAnnotations()          
               that.addItemsToProcess annos.length
               syncer.process annos, (id) ->
                 #
@@ -1011,7 +1360,7 @@
                   extractTextBody   item, aitem.oahasBody?[0]
                   textSources[item.source] ?= []
                   textSources[item.source].push [ id, item.start, item.end ]
-                  item.type = "TextContent"
+                  item.type = "TextContentZone"
                   array = items
     
                 else if "scImageAnnotation" in aitem.type
@@ -1162,7 +1511,7 @@
                               br_pushed = true
                             last_pos = pos
                         processNode last_pos, text.length
-    
+                        
                         that.dataStore.data.loadItems textItems, ->
                           that.addItemsProcessed 1
                       
@@ -1181,8 +1530,7 @@
                 manifestData.importFromURL url[0], ->
                   loadManifests(url[1..url.length])
               else
-                manifestData.importFromURL url[0], ->
-                  pullData()
+                manifestData.importFromURL url[0], pullData
     
             # Expose loadManifests to allow an application to load more annotations
             that.loadManifests = loadManifests
@@ -1192,7 +1540,7 @@
               # If we're given a URL in our options, then go ahead and load
               # it. For now, this is the only way to get data from a manifest.
               #
-              loadManifests([options.url])
+              loadManifests [options.url]
         #
         # ### Application.SharedCanvas#builder
         #
@@ -1322,9 +1670,18 @@
           that
 
 
-)(jQuery, MITHGrid)
+)(jQuery, MITHgrid)
 
-MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
+#
+# The Application.SharedCanvas object ties together all of the information
+# about our view of the manifest, from available sequences and annotations
+# to where we are in which sequence. The application object coordinates all
+# of the components and presentations concerned with a particular manifest.
+#
+# The app.dataViews.canvasAnnotations data view will always contain a list
+# of annotations directly targeting the current canvas.
+#
+MITHgrid.defaults 'SGA.Reader.Application.SharedCanvas',
   dataStores:
     data:
       types:
@@ -1336,7 +1693,7 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
   dataViews:
     canvasAnnotations:
       dataStore: 'data'
-      type: MITHGrid.Data.SubSet
+      type: MITHgrid.Data.SubSet
       expressions: [ '!target' ]
     sequences:
       dataStore: 'data'
@@ -1346,23 +1703,32 @@ MITHGrid.defaults 'SGA.Reader.Application.SharedCanvas',
     Sequence: { is: 'rw' }
     Position: { is: 'lrw', isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.Slider',
+#
+# The Slider and PagerControls have the same variables so that they can be
+# used interchangably.
+#
+MITHgrid.defaults 'SGA.Reader.Component.Slider',
   variables:
     Min:   { is: 'rw', isa: 'numeric' }
     Max:   { is: 'rw', isa: 'numeric' }
     Value: { is: 'rw', isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.PagerControls',
+MITHgrid.defaults 'SGA.Reader.Component.PagerControls',
   variables:
     Min:   { is: 'rw', isa: 'numeric' }
     Max:   { is: 'rw', isa: 'numeric' }
     Value: { is: 'rw', isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.SequenceSelector',
+MITHgrid.defaults 'SGA.Reader.Component.SequenceSelector',
   variables:
     Sequence: { is: 'rw' }
 
-MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
+#
+# We put the view setup here so that we don't have to remember how to
+# arrange the Twitter Bootstrap HTML each time. This is looking forward
+# to when this is a component outside SGA.
+#
+MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
   variables:
     Numerator:   { is: 'rw', default: 0, isa: 'numeric' }
     Denominator: { is: 'rw', default: 1, isa: 'numeric' }
@@ -1372,17 +1738,28 @@ MITHGrid.defaults 'SGA.Reader.Component.ProgressBar',
     </div>
   """
 
-MITHGrid.defaults 'SGA.Reader.Presentation.Canvas',
+#
+# We use the Canvas presentation as the root surface for displaying the
+# annotations. Thus, we keep track of which canvas we're looking at.
+# The Scale variable will be used to manage zooming.
+#
+# TODO: Have variables for panning across the canvas.
+#
+MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Data.Manifest',
+#
+# The ItemsToProcess and ItemsProcessed are analagous to the
+# Numerator and Denominator of the ProgressBar component.
+#
+MITHgrid.defaults 'SGA.Reader.Data.Manifest',
   variables:
     ItemsToProcess: { is: 'rw', default: 0, isa: 'numeric' }
     ItemsProcessed: { is: 'rw', default: 0, isa: 'numeric' }
 
-MITHGrid.defaults 'SGA.Reader.Component.ImageControls',
+MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
   variables:
     Active: { is: 'rw', default: false }
     Zoom: { is: 'rw', default: 0, isa: 'numeric' }
