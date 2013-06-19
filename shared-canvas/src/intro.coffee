@@ -5,7 +5,7 @@
 #
 # Date: @DATE
 #
-# (c) Copyright University of Maryland 2012.  All rights reserved.
+# (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,14 @@
 # limitations under the License.
 ###
 
-(($, MITHGrid) ->
+(($, MITHgrid) ->
+  #
   # The application uses the SGA.Reader namespace.
-  MITHGrid.globalNamespace "SGA"
+  #
+  # N.B.: This may change as we move towards a general component
+  # repository for MITHgrid. At that point, we'll refactor out the
+  # general purpose components and keep the SGA namespace for code
+  # specific to the SGA project.
+  #
+  MITHgrid.globalNamespace "SGA"
   SGA.namespace "Reader", (SGAReader) ->

@@ -2,11 +2,44 @@
 SGAReader.namespace "Data", (Data) ->
 
   #
+  # ## Data.StyleStore
+  #
+
+  Data.namespace "StyleStore", (StyleStore) ->
+    StyleStore.initInstance = (args...) ->
+      MITHgrid.initInstance args..., (that) ->
+        options = that.options
+
+        docs = { }
+        regex = new RegExp("(?:\\.(\\S+)\\s*\\{\\s*([^}]*)\\s*\\})", "mg")
+
+        #
+        # Associates the CSS content with the given id.
+        #
+        that.addStyles = (id, css) ->
+          return if docs[id]?
+          docs[id] = { }
+          results = regex.exec(css)
+          while results?.index?
+            docs[id][results[1]] = results[2]
+            results = regex.exec(css)
+
+        #
+        # Returns the CSS style rules for a given class as defined by the
+        # CSS content associated with the given id.
+        #
+        that.getStylesForClass = (id, klass) ->
+          if docs[id]?[klass]?
+            docs[id][klass]
+          else
+            ""
+
+  #
   # ## Data.TextStore
   #
   Data.namespace "TextStore", (TextStore) ->
     TextStore.initInstance = (args...) ->
-      MITHGrid.initInstance args..., (that) ->
+      MITHgrid.initInstance args..., (that) ->
         options = that.options
 
         fileContents = { }
@@ -34,6 +67,9 @@ SGAReader.namespace "Data", (Data) ->
             cb(fileContents[file])
           else if loadingFiles[file]?
             loadingFiles[file].push cb
+          else
+            that.addFile file
+            loadingFiles[file].push cb
 
   #
   # ## Data.Manifest
@@ -59,14 +95,21 @@ SGAReader.namespace "Data", (Data) ->
       "http://www.shelleygodwinarchive.org/ns/1#": "sga"
       "http://www.shelleygodwinarchive.org/ns1#": "sga"
       "http://www.w3.org/2011/content#": "cnt"
+      "http://purl.org/dc/dcmitype/": "dctypes"
+
+    types =
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "item"
+      "http://www.w3.org/ns/openannotation/core/hasMotivation": "item"
 
     Manifest.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
+      MITHgrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
         options = that.options
 
-        data = MITHGrid.Data.Store.initInstance()
+        data = MITHgrid.Data.Store.initInstance()
 
         that.size = -> data.size()
+        
+        importer = MITHgrid.Data.Importer.RDF_JSON.initInstance data, NS, types
 
         loadedUrls = []
 
@@ -83,8 +126,11 @@ SGAReader.namespace "Data", (Data) ->
             contentType: 'application/rdf+json'
             processData: false
             dataType: 'json'
-            success: (data) -> that.importJSON data, cb
+            success: (data) ->
+              that.addItemsProcessed 1
+              that.importJSON data, cb
             error: (e) -> 
+              that.addItemsProcessed 1
               throw new Error("Could not load the manifest")
 
         # we want to get the rdf/JSON version of things if we can
@@ -92,84 +138,28 @@ SGAReader.namespace "Data", (Data) ->
           # we care about certain namespaces - others we ignore
           # those we care about, we translate for datastore
           # {nsPrefix}{localName}
-          items = []
-          syncer = MITHGrid.initSynchronizer()
-          subjects = (s for s of json) # when json.hasOwnProperty(s))
-          that.addItemsToProcess subjects.length
-          syncer.process subjects, (s) ->
-            predicates = json[s]
-            item =
-              id: s
-            for p, os of predicates
-               values = []
-               if p == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-                 for o in os
-                   if o.type == "uri"
-                     for ns, prefix of NS
-                       if o.value[0...ns.length] == ns
-                         values.push prefix + o.value.substr(ns.length)
-                 item.type = values
-               else
-                 for o in os
-                   if o.type == "literal"
-                     values.push o.value
-                   #
-                   # Sometimes, references to blank nodes are wrapped in
-                   # parenthesis, but the subject IDs will be with a leading
-                   # _:. For example, an object uri/bnode in the form
-                   # "(123abc)" refers to a resource with the URI
-                   # "_:123abc".
-                   #
-                   else if o.type == "uri"
-                     if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
-                       values.push "_:" + o.value.substr(1,o.value.length-2)
-                     else
-                       values.push o.value
-                   else if o.type == "bnode"
-                     if o.value.substr(0,1) == "(" and o.value.substr(-1) == ")"
-                       values.push "_:" + o.value.substr(1,o.value.length-2)
-                     else
-                       values.push o.value
-                     
-                 if values.length > 0
-                   for ns, prefix of NS
-                     if p.substr(0, ns.length) == ns
-                       pname = prefix + p.substr(ns.length)
-                       item[pname] = values
-            if !item.type? or item.type.length == 0
-              item.type = 'Blank'
- 
+          syncer = MITHgrid.initSynchronizer cb
+          syncer.increment()
+          importer.import json, (ids) ->
             #
             # If the manifest indicates that another document describes
-            # this resource, then we throw away the current item we've built
-            # and load the data before continuing processing for this
-            # resource.
+            # this resource, then we load the data before continuing
+            # processing for this resource.
             #
-            # We are not using this in the current SGA manifest, so this
-            # might be broken - but this is where support would be hooked in.
-            #
-            if item.oreisDescribedBy?.length > 0
-              for url in item.oreisDescribedBy
-                syncer.increment()
-                importFromURL url, syncer.decrement
-            else
-              items.push item 
-            that.addItemsProcessed 1
-
-          syncer.done ->
-            that.addItemsProcessed 1
-            setTimeout ->
-              for item in items
-                if data.contains(item.id)
-                  data.updateItems [ item ]
-                else
-                  data.loadItems [ item ]
-              cb() if cb?
-            , 0
+ 
+            # we want anything that has the oreisDescribedBy property
+            idset = MITHgrid.Data.Set.initInstance ids
+            urls = data.getObjectsUnion(idset, 'oreisDescribedBy')
+            
+            urls.visit (url) ->
+              syncer.increment()
+              importFromURL url, syncer.decrement
+            syncer.decrement()
+          syncer.done()
 
         itemsWithType = (type) ->
           type = [ type ] if !$.isArray(type)
-          types = MITHGrid.Data.Set.initInstance type
+          types = MITHgrid.Data.Set.initInstance type
           data.getSubjectsUnion(types, "type").items()
 
         #

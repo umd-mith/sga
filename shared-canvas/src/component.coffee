@@ -5,13 +5,24 @@ SGAReader.namespace "Component", (Component) ->
   #
   # ## Component.ProgressBar
   #
+
   Component.namespace "ProgressBar", (ProgressBar) ->
+
+    #
+    # This component manages the display of a progress bar based on
+    # the Twitter Bootstrap progress bar component.
+    #
+    # The component has two variables: Numerator and Denominator.
+    #
+
     ProgressBar.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
+      MITHgrid.initInstance "SGA.Reader.Component.ProgressBar", args..., (that, container) ->
+
         that.events.onNumeratorChange.addListener (n) ->
           percent = parseInt(100 * n / that.getDenominator(), 10)
           percent = 100 if percent > 100
           $(container).find(".bar").css("width", percent + "%")
+
         that.events.onDenominatorChange.addListener (d) ->
           percent = parseInt(100 * that.getNumerator() / d, 10)
           percent = 100 if percent > 100
@@ -19,17 +30,27 @@ SGAReader.namespace "Component", (Component) ->
 
         that.show = -> 
           $(container).show()
+
         that.hide = -> 
           $(container).hide()
 
   #
   # ## Component.SequenceSelector
   #
+
   Component.namespace "SequenceSelector", (SequenceSelector) ->
+
+    #
+    # This component manages the options of a select HTML form element.
+    # 
+    # The component has one variable: Sequence.
+    #
+    # The container should be a <select></select> element.
+    #
+
     SequenceSelector.initInstance = (args...) ->
-      MITHGrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
         options = that.options
-        # container should be a <select/> element
         that.addLens 'Sequence', (container, view, model, id) ->
           rendering = {}
           item = model.getItem id
@@ -42,15 +63,25 @@ SGAReader.namespace "Component", (Component) ->
         $(container).change ->
           that.setSequence $(container).val()
 
+        that.events.onSequenceChange.addListener (v) ->
+          $(container).val(v)
+
         that.finishDisplayUpdate = ->
           that.setSequence $(container).val()
 
   #
   # ## Component.Slider
   #
+
   Component.namespace "Slider", (Slider) ->
+
+    #
+    # This component manages an HTML5 slider input element.
+    #
+    # This component has three variables: Min, Max, and Value.
+    #
     Slider.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+      MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
         that.events.onMinChange.addListener (n) ->
           $(container).attr
             min: n
@@ -63,9 +94,18 @@ SGAReader.namespace "Component", (Component) ->
   #
   # ## Component.PagerControls
   #
+
   Component.namespace "PagerControls", (PagerControls) ->
+
+    #
+    # This component manages a set of Twitter Bootstrap buttons that display
+    # the step forward, step backward, fast forward, and fast backward icons.
+    #
+    # This component has three variables: Min, Max, and Value.
+    #
+
     PagerControls.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+      MITHgrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
         firstEl = $(container).find(".icon-fast-backward").parent()
         prevEl = $(container).find(".icon-step-backward").parent()
         nextEl = $(container).find(".icon-step-forward").parent()
@@ -115,12 +155,12 @@ SGAReader.namespace "Component", (Component) ->
           e.preventDefault()
           that.setValue that.getMax()
 
-#
+  #
   # ## Component.PagerControls
   #
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
-      MITHGrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
+      MITHgrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
         resetEl = $(container).find(".icon-picture").parent()
         inEl = $(container).find(".icon-zoom-in").parent()
         outEl = $(container).find(".icon-zoom-out").parent()
