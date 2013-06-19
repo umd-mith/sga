@@ -6,7 +6,7 @@ SGAReader.namespace "Application", (Application) ->
   #
   Application.namespace "SharedCanvas", (SharedCanvas) ->
     SharedCanvas.initInstance = (args...) ->
-      MITHGrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
+      MITHgrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
         options = that.options
 
         #
@@ -143,7 +143,7 @@ SGAReader.namespace "Application", (Application) ->
           # if multiple sequences, we want to add a control to allow
           # selection
           items = []
-          syncer = MITHGrid.initSynchronizer()
+          syncer = MITHgrid.initSynchronizer()
 
           canvases = manifestData.getCanvases()
           that.addItemsToProcess canvases.length
@@ -157,7 +157,7 @@ SGAReader.namespace "Application", (Application) ->
               height: parseInt(mitem.exifheight?[0], 10)
               label: mitem.dctitle || mitem.rdfslabel
 
-          zones = manifestData.getZones()  
+          zones = manifestData.getZones()
           that.addItemsToProcess zones.length
           syncer.process zones, (id) ->
             that.addItemsProcessed 1
@@ -170,7 +170,7 @@ SGAReader.namespace "Application", (Application) ->
               angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
               label: zitem.rdfslabel
 
-          seq = manifestData.getSequences()
+          seq = manifestData.getSequences()          
           that.addItemsToProcess seq.length
           syncer.process seq, (id) ->
             that.addItemsProcessed 1
@@ -194,7 +194,7 @@ SGAReader.namespace "Application", (Application) ->
           textAnnos = []
 
           # now get the annotations we know something about handling
-          annos = manifestData.getAnnotations()
+          annos = manifestData.getAnnotations()          
           that.addItemsToProcess annos.length
           syncer.process annos, (id) ->
             #
@@ -216,7 +216,7 @@ SGAReader.namespace "Application", (Application) ->
               extractTextBody   item, aitem.oahasBody?[0]
               textSources[item.source] ?= []
               textSources[item.source].push [ id, item.start, item.end ]
-              item.type = "TextContent"
+              item.type = "TextContentZone"
               array = items
 
             else if "scImageAnnotation" in aitem.type
@@ -367,7 +367,7 @@ SGAReader.namespace "Application", (Application) ->
                           br_pushed = true
                         last_pos = pos
                     processNode last_pos, text.length
-
+                    
                     that.dataStore.data.loadItems textItems, ->
                       that.addItemsProcessed 1
                   
@@ -386,8 +386,7 @@ SGAReader.namespace "Application", (Application) ->
             manifestData.importFromURL url[0], ->
               loadManifests(url[1..url.length])
           else
-            manifestData.importFromURL url[0], ->
-              pullData()
+            manifestData.importFromURL url[0], pullData
 
         # Expose loadManifests to allow an application to load more annotations
         that.loadManifests = loadManifests
@@ -397,7 +396,7 @@ SGAReader.namespace "Application", (Application) ->
           # If we're given a URL in our options, then go ahead and load
           # it. For now, this is the only way to get data from a manifest.
           #
-          loadManifests([options.url])
+          loadManifests [options.url]
     #
     # ### Application.SharedCanvas#builder
     #

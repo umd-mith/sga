@@ -6,17 +6,19 @@ BUILD_DIR = build
 
 PREFIX = .
 DIST_DIR = ${PREFIX}/dist
+COMPILED_DOCS_DIR = ${PREFIX}/compiled_docs
 
 JS_ENGINE ?= `which node nodejs`
 COMPILER = ${JS_ENGINE} ${BUILD_DIR}/uglify.js --unsafe
 POST_COMPILER = ${JS_ENGINE} ${BUILD_DIR}/post-compile.js
-DOCCO ?= `which docco`
+DOCCO ?= `which docco-husky`
 
-BASE_FILES = ${SRC_DIR}/core.coffee \
-			${SRC_DIR}/data.coffee \
+BASE_FILES = ${SRC_DIR}/data.coffee \
 			${SRC_DIR}/presentation.coffee \
-			${SRC_DIR}/controller.coffee \
+			${SRC_DIR}/data.coffee \
 			${SRC_DIR}/component.coffee \
+			${SRC_DIR}/controller.coffee \
+			${SRC_DIR}/core.coffee \
 			${SRC_DIR}/application.coffee
 
 MODULES = ${SRC_DIR}/intro.coffee \
@@ -27,13 +29,16 @@ SC = ${DIST_DIR}/shared-canvas.js
 SC_MIN = ${DIST_DIR}/shared-canvas.min.js
 SC_C = ${DIST_DIR}/shared-canvas.coffee
 
-SC_VER = $(shell cat version.txt)
-VER = sed "s/@VERSION/${SC_VER}/"
+SC_MAJOR = $(shell cat version.txt)
+SC_MINOR = $(shell date +%y%j)
+N ?= 0
+
+VER = sed "s/@VERSION/${SC_MAJOR}.${SC_MINOR}${N}/"
 
 DATE=$(shell git log --pretty=format:%ad | head -1)
 
 # add docs later
-all: core 
+all: core
 
 core: shared-canvas min
 		@@echo "shared-canvas build complete"
@@ -41,13 +46,23 @@ core: shared-canvas min
 ${DIST_DIR}:
 		@@mkdir -p ${DIST_DIR}
 
-#docs: ${SC_C}
-#		@@${DOCCO} ${SC_C}
+${COMPILED_DOCS_DIR}/src:
+	@@mkdir -p ${COMPILED_DOCS_DIR}/src
+
+docs: core ${MODULES} ${COMPILED_DOCS_DIR}/src README.md
+	@@${DOCCO} ${SRC_DIR}/*
+
+package.json: package.json.in
+	@@echo "building package.json"
+	@@cat package.json.in | ${VER} > package.json
 
 shared-canvas: ${SC}
 
-${SC_C}: ${MODULES} | ${DIST_DIR}
+${SC_C}: package.json.in ${MODULES} | ${DIST_DIR}
 		@@echo "Building" ${SC_C}
+
+		@@echo "building package.json"
+		@@cat package.json.in | ${VER} > package.json
 		
 		@@rm -f ${SC_C}.tmp;
 		@@for i in ${BASE_FILES}; do \
