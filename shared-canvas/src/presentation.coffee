@@ -168,8 +168,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           # wait for polymap to load image and update map, then...
           toAdoratio.then ->
-            # Decide when to propagate changes...
-            propagate = true
+            # Help decide when to propagate changes...
+            fromZoomControls = false
             # Keep track of some start values
             startCenter = map.center()
 
@@ -177,10 +177,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.events.onZoomChange.addListener (z) ->
               map.zoom(z)
               app.imageControls.setImgPosition map.position
-              propagate = false
+              fromZoomControls = true
+              
             app.imageControls.events.onImgPositionChange.addListener (p) ->
               # only apply if reset
-              propagate = false
               if p.topLeft.x == 0 and p.topLeft.y == 0
                 map.center(startCenter)
 
@@ -190,18 +190,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.setMaxZoom map.zoomRange()[1]
             app.imageControls.setMinZoom map.zoomRange()[0]
             app.imageControls.setImgPosition map.position
+            
             map.on 'zoom', ->
-              if propagate
+              console.log fromZoomControls
+              if !fromZoomControls
                 app.imageControls.setZoom map.zoom()
-                app.imageControls.setImgPosition map.position
-              else
-                propagate = true
-              # app.imageControls.setMaxZoom map.zoomRange()[1]
+                app.imageControls.setImgPosition map.position                
+                app.imageControls.setMaxZoom map.zoomRange()[1]
+              fromZoomControls = false
             map.on 'drag', ->
-              if propagate
-                app.imageControls.setImgPosition map.position
-              else
-                propagate = true
+              app.imageControls.setImgPosition map.position
 
           
           rendering.update = (item) ->
