@@ -201,3 +201,24 @@ SGAReader.namespace "Component", (Component) ->
               m.hide()
             else 
               m.show()
+
+  #
+  # ## Component.SearchBox
+  #
+  Component.namespace "SearchBox", (SearchBox) ->
+    SearchBox.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->        
+        container = args[0]
+        that.setServiceURL service
+
+        # console.log $(container).closest('form')
+
+        $(container).closest('form').submit (e) ->
+          e.preventDefault()
+          val = $(container).val()
+          if !val.match '^\s*$'
+            that.setQuery val
+          false
+          
+
+        # On submit function go here and they will simply change the variable Query
