@@ -95,3 +95,8 @@ MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
     MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
     MinZoom: { is: 'rw', default: 0, isa: 'numeric' }
     ImgPosition : {is: 'rw', default: {} }
+
+MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
+  variables:
+    Query: { is: 'rw', default: false }
+    ServiceURL: { is: 'rw', default: false }
