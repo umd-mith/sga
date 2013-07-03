@@ -215,234 +215,221 @@ SGAReader.namespace "Application", (Application) ->
             textSources = {}
             textAnnos = []
 
-            canvas = manifestData.getObjectsUnion(MITHgrid.Data.Set.initInstance(seq), "rdffirst")
-            specificResources = manifestData.getSubjectsUnion(canvas, "oahasSource") # ["_:-304f09e1:13f1a198119:-7f82", "_:-304f09e1:13f1a198119:-7f7d", "_:-304f09e1:13f1a198119:-7f78"]
-            imageAnnotations = manifestData.getSubjectsUnion(canvas, "oahasTarget") # http://sga.mith.org/sc-demo/ox-ms_abinger_c56-005/imageanno/image-0050              
-            contentAnnotations = manifestData.getSubjectsUnion(specificResources, "oahasTarget") # ["_:-304f09e1:13f1a198119:-7f81", "_:-304f09e1:13f1a198119:-7f7c", "_:-304f09e1:13f1a198119:-7f77"]           
-            tei = manifestData.getObjectsUnion(contentAnnotations, 'oahasBody') # "_:-304f09e1:13f1a198119:-7f84", "_:-304f09e1:13f1a198119:-7f7f", "_:-304f09e1:13f1a198119:-7f7a"
-            teiURL = manifestData.getObjectsUnion(tei, 'oahasSource')
-
-            # Now find all annotations targeting the XML url
-            specificResourcesAnnos = manifestData.getSubjectsUnion(teiURL, 'oahasSource')
-            annos = manifestData.getSubjectsUnion(specificResourcesAnnos, 'oahasTarget').items()
-
-            annos = annos.concat imageAnnotations.items(), contentAnnotations.items()
-            # allAnnos = manifestData.getAnnotations()
-
-            #
-            # We pull out all of the annotations (oa:Annotation) items and
-            # process the ones we know about.
-            #
-            # annos = manifestData.getAnnotations()
-            that.addItemsToProcess annos.length
-            syncer.process annos, (id) ->
-              #
-              # Once we have our various annotations, we want to process
-              # them to produce sets of items that can be displayed in a
-              # sequence. We preprocess overlapping ranges of highlights
-              # to create non-overlapping multi-classed items that can
-              # be filtered in the final presentation.
-              #
-              that.addItemsProcessed 1
-              aitem = manifestData.getItem id
-              array = null
-              item =
-                id: id
-
-              #
-              # For now, we *assume* that the content annotation is coming
-              # from a TEI file and is marked by begin/end pointers.
-              # These annotations are loaded into the triple store as they
-              # are since they don't target sub-ranges of text.
-              # TextContent items end up acting like zones in that they
-              # are the target of text annotations but don't themselves
-              # end up providing content.
-              #
-              if "scContentAnnotation" in aitem.type
-                extractTextTarget item, aitem.oahasTarget?[0]
-                extractTextBody   item, aitem.oahasBody?[0]
-                if item.start? and item.end?
-                  textSources[item.source] ?= []
-                  textSources[item.source].push [ id, item.start, item.end ]
-                #
-                # We should use "ContentAnnotation" only when we know we
-                # won't have anything targeting this text. Otherwise, we
-                # should use TextContentZone. This is a work in progress
-                # as we see the pattern unfold.
-                #
-                # Essentially, if we want the annotation to act as a classic
-                # Shared Canvas text content annotation, we use a type of
-                # "ContentAnnotation". If we want to allow highlight annotation
-                # of the text with faceted selection of text, then we use a
-                # type of "TextContentZone".
-                #
-                if item.text?
-                  item.type = "ContentAnnotation"
-                else
-                  item.type = "TextContentZone"
-                array = items
-
-              #
-              # For now, we assume that images map onto the entire canvas.
-              # This isn't true for Shared Canvas. We need to extract any
-              # spatial constraint and respect it in the presentation.
-              #
-              else if "scImageAnnotation" in aitem.type
-                imgitem = manifestData.getItem aitem.oahasBody
-                imgitem = imgitem[0] if $.isArray(imgitem)
-                array = items
-
-                item.target = aitem.oahasTarget
-                item.label = aitem.rdfslabel
-                item.image = imgitem.oahasSource || aitem.oahasBody
-                item.type = "Image"
-                if "image/jp2" in imgitem["dcformat"] and that.imageControls?
-                  item.type = "ImageViewer"
-
-              else if "scZoneAnnotation" in aitem.type
-                target = manifestData.getItem aitem.oahasTarget
-                extractSpatialConstraint item, target.hasSelector?[0]
-                array = items
-
-                item.target = target.hasSource
-                item.label = aitem.rdfslabel
-                item.type = "ZoneAnnotation"
-
-              else
-                #
-                # All of the SGA-specific annotations will have types
-                # prefixed with "sga" and ending in "Annotation"
-                sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
-                if sgaTypes.length > 0
-                  extractTextTarget item, aitem.oahasTarget?[0]
-                  item.type = sgaTypes
-                  array = textAnnos
-
-              array.push item if item.type? and array?
-
             syncer.done ->
-              # We process the highlight annotations here so we don't have
-              # to do it *every* time we show a canvas.
-              # each addition, deletion, etc., targets a scContentAnnotation
-              # but we want to make sure we get any scContentAnnotation text
-              # that isn't covered by any of the other annotations
 
-              # This is inspired by NROFF as implemented, for example, in
-              # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
-              # It also has shades of a SAX processor thrown in.
-              
-              that.addItemsToProcess 1 + textAnnos.length
-              that.dataStore.data.loadItems items, ->
-                items = []
-                modstart = {}
-                modend = {}
-                modInfo = {}
-                setMod = (item) ->
-                  source = item.target
-                  start = item.start
-                  end = item.end
-                  id = item.id
-                  id = id[0] if $.isArray(id)
-                  modInfo[id] = item
-                  modstart[source] ?= {}
-                  modstart[source][start] ?= []
-                  modstart[source][start].push id
-                  modend[source] ?= {}
-                  modend[source][end] ?= []
-                  modend[source][end].push id
+              syncer = MITHgrid.initSynchronizer()
 
-                setMod item for item in textAnnos
+              annos = manifestData.getAnnotationsForCanvas seq[0] 
 
-                sources = (s for s of modstart)
-                that.addItemsToProcess sources.length
-                that.addItemsProcessed textAnnos.length
-
-                for source in sources
-                  do (source) ->
-                    that.withSource source, (text) ->
-                      textItems = []
-                      modIds = [ ]
-                      br_pushed = false
-
-                      pushTextItem = (classes, css, target, start, end) ->
-                        textItems.push
-                          type: classes
-                          css: css.join(" ")
-                          text: text[start ... end]
-                          id: source + "-" + start + "-" + end
-                          target: target
-                          start: start
-                          end: end
-                      
-                      processNode = (start, end) ->
-                        classes = []
-                        css = []
-                        for id in modIds
-                          classes.push modInfo[id].type
-                          if $.isArray(modInfo[id].css)
-                            css.push modInfo[id].css.join(" ")
-                          else
-                            css.push modInfo[id].css
-
-                        classes.push "Text" if classes.length == 0
-
-                        makeTextItems start, end, classes, css
-
-                      #
-                      # We run through each possible shared canvas
-                      # target that might be mapped onto the source TEI
-                      # via the TextContent annotation. We want to target
-                      # the shared canvas text content zone, not the
-                      # text source that the highlight is targeting in the
-                      # actual open annotation model.
-                      #
-                      makeTextItems = (start, end, classes, css) ->
-                        for candidate in (textSources[source] || [])
-                          if start <= candidate[2] and end >= candidate[1]
-                            s = Math.min(Math.max(start, candidate[1]),candidate[2])
-                            e = Math.max(Math.min(end, candidate[2]), candidate[1])
-                            pushTextItem classes, css, candidate[0], s, e
-                        false
-
-                      #
-                      # A line break is just a zero-width annotation at
-                      # the given position.
-                      #
-                      makeLinebreak = (pos) ->
-                        classes = [ "LineBreak" ]
-                        #classes.push modInfo[id].type for id in modIds
-                        makeTextItems pos, pos, classes, [ "" ]
-
-                      #
-                      mstarts = modstart[source] || []
-                      mends = modend[source] || []
-                      last_pos = 0
-                      positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
-                      for pos in positions
-                        if pos != last_pos
-                          processNode last_pos, pos
-                          if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
-                            br_pushed = false
-                          needs_br = false
-                          for id in (mstarts[pos] || [])
-                            if "LineAnnotation" in modInfo[id].type
-                              needs_br = true
-                            modIds.push id
-                          for id in (mends[pos] || [])
-                            if "LineAnnotation" in modInfo[id].type
-                              needs_br = true
-                            idx = modIds.indexOf id
-                            modIds.splice idx, 1 if idx > -1
-                          if needs_br and not br_pushed
-                            makeLinebreak pos
-                            br_pushed = true
-                          last_pos = pos
-                      processNode last_pos, text.length
-
-                      that.dataStore.data.loadItems textItems, ->
-                        that.addItemsProcessed 1
-                    
+              that.addItemsToProcess annos.length
+              syncer.process annos, (id) ->
+                #
+                # Once we have our various annotations, we want to process
+                # them to produce sets of items that can be displayed in a
+                # sequence. We preprocess overlapping ranges of highlights
+                # to create non-overlapping multi-classed items that can
+                # be filtered in the final presentation.
+                #
                 that.addItemsProcessed 1
+                aitem = manifestData.getItem id
+                array = null
+                item =
+                  id: id
+
+                #
+                # For now, we *assume* that the content annotation is coming
+                # from a TEI file and is marked by begin/end pointers.
+                # These annotations are loaded into the triple store as they
+                # are since they don't target sub-ranges of text.
+                # TextContent items end up acting like zones in that they
+                # are the target of text annotations but don't themselves
+                # end up providing content.
+                #
+                if "scContentAnnotation" in aitem.type
+                  extractTextTarget item, aitem.oahasTarget?[0]
+                  extractTextBody   item, aitem.oahasBody?[0]
+                  if item.start? and item.end?
+                    textSources[item.source] ?= []
+                    textSources[item.source].push [ id, item.start, item.end ]
+                  #
+                  # We should use "ContentAnnotation" only when we know we
+                  # won't have anything targeting this text. Otherwise, we
+                  # should use TextContentZone. This is a work in progress
+                  # as we see the pattern unfold.
+                  #
+                  # Essentially, if we want the annotation to act as a classic
+                  # Shared Canvas text content annotation, we use a type of
+                  # "ContentAnnotation". If we want to allow highlight annotation
+                  # of the text with faceted selection of text, then we use a
+                  # type of "TextContentZone".
+                  #
+                  if item.text?
+                    item.type = "ContentAnnotation"
+                  else
+                    item.type = "TextContentZone"
+                  array = items
+
+                #
+                # For now, we assume that images map onto the entire canvas.
+                # This isn't true for Shared Canvas. We need to extract any
+                # spatial constraint and respect it in the presentation.
+                #
+                else if "scImageAnnotation" in aitem.type
+                  imgitem = manifestData.getItem aitem.oahasBody
+                  imgitem = imgitem[0] if $.isArray(imgitem)
+                  array = items
+
+                  item.target = aitem.oahasTarget
+                  item.label = aitem.rdfslabel
+                  item.image = imgitem.oahasSource || aitem.oahasBody
+                  item.type = "Image"
+                  if "image/jp2" in imgitem["dcformat"] and that.imageControls?
+                    item.type = "ImageViewer"
+
+                else if "scZoneAnnotation" in aitem.type
+                  target = manifestData.getItem aitem.oahasTarget
+                  extractSpatialConstraint item, target.hasSelector?[0]
+                  array = items
+
+                  item.target = target.hasSource
+                  item.label = aitem.rdfslabel
+                  item.type = "ZoneAnnotation"
+
+                else
+                  #
+                  # All of the SGA-specific annotations will have types
+                  # prefixed with "sga" and ending in "Annotation"
+                  sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
+                  if sgaTypes.length > 0
+                    extractTextTarget item, aitem.oahasTarget?[0]
+                    item.type = sgaTypes
+                    array = textAnnos
+
+                array.push item if item.type? and array?
+
+              syncer.done ->
+                # We process the highlight annotations here so we don't have
+                # to do it *every* time we show a canvas.
+                # each addition, deletion, etc., targets a scContentAnnotation
+                # but we want to make sure we get any scContentAnnotation text
+                # that isn't covered by any of the other annotations
+
+                # This is inspired by NROFF as implemented, for example, in
+                # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
+                # It also has shades of a SAX processor thrown in.
+                
+                that.addItemsToProcess 1 + textAnnos.length
+                that.dataStore.data.loadItems items, ->
+                  items = []
+                  modstart = {}
+                  modend = {}
+                  modInfo = {}
+                  setMod = (item) ->
+                    source = item.target
+                    start = item.start
+                    end = item.end
+                    id = item.id
+                    id = id[0] if $.isArray(id)
+                    modInfo[id] = item
+                    modstart[source] ?= {}
+                    modstart[source][start] ?= []
+                    modstart[source][start].push id
+                    modend[source] ?= {}
+                    modend[source][end] ?= []
+                    modend[source][end].push id
+
+                  setMod item for item in textAnnos
+
+                  sources = (s for s of modstart)
+                  that.addItemsToProcess sources.length
+                  that.addItemsProcessed textAnnos.length
+
+                  for source in sources
+                    do (source) ->
+                      that.withSource source, (text) ->
+                        textItems = []
+                        modIds = [ ]
+                        br_pushed = false
+
+                        pushTextItem = (classes, css, target, start, end) ->
+                          textItems.push
+                            type: classes
+                            css: css.join(" ")
+                            text: text[start ... end]
+                            id: source + "-" + start + "-" + end
+                            target: target
+                            start: start
+                            end: end
+                        
+                        processNode = (start, end) ->
+                          classes = []
+                          css = []
+                          for id in modIds
+                            classes.push modInfo[id].type
+                            if $.isArray(modInfo[id].css)
+                              css.push modInfo[id].css.join(" ")
+                            else
+                              css.push modInfo[id].css
+
+                          classes.push "Text" if classes.length == 0
+
+                          makeTextItems start, end, classes, css
+
+                        #
+                        # We run through each possible shared canvas
+                        # target that might be mapped onto the source TEI
+                        # via the TextContent annotation. We want to target
+                        # the shared canvas text content zone, not the
+                        # text source that the highlight is targeting in the
+                        # actual open annotation model.
+                        #
+                        makeTextItems = (start, end, classes, css) ->
+                          for candidate in (textSources[source] || [])
+                            if start <= candidate[2] and end >= candidate[1]
+                              s = Math.min(Math.max(start, candidate[1]),candidate[2])
+                              e = Math.max(Math.min(end, candidate[2]), candidate[1])
+                              pushTextItem classes, css, candidate[0], s, e
+                          false
+
+                        #
+                        # A line break is just a zero-width annotation at
+                        # the given position.
+                        #
+                        makeLinebreak = (pos) ->
+                          classes = [ "LineBreak" ]
+                          #classes.push modInfo[id].type for id in modIds
+                          makeTextItems pos, pos, classes, [ "" ]
+
+                        #
+                        mstarts = modstart[source] || []
+                        mends = modend[source] || []
+                        last_pos = 0
+                        positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
+                        for pos in positions
+                          if pos != last_pos
+                            processNode last_pos, pos
+                            if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
+                              br_pushed = false
+                            needs_br = false
+                            for id in (mstarts[pos] || [])
+                              if "LineAnnotation" in modInfo[id].type
+                                needs_br = true
+                              modIds.push id
+                            for id in (mends[pos] || [])
+                              if "LineAnnotation" in modInfo[id].type
+                                needs_br = true
+                              idx = modIds.indexOf id
+                              modIds.splice idx, 1 if idx > -1
+                            if needs_br and not br_pushed
+                              makeLinebreak pos
+                              br_pushed = true
+                            last_pos = pos
+                        processNode last_pos, text.length
+
+                        that.dataStore.data.loadItems textItems, ->
+                          that.addItemsProcessed 1
+                      
+                  that.addItemsProcessed 1
     #
     # ### Application.SharedCanvas#builder
     #
