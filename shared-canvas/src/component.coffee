@@ -122,7 +122,7 @@ SGAReader.namespace "Component", (Component) ->
         that.events.onMaxChange.addListener (n) ->
           if n > that.getValue()
             nextEl.removeClass "disabled"
-            lastEl.removeClass "disbaled"
+            lastEl.removeClass "disabled"
           else
             nextEl.addClass "disabled"
             lastEl.addClass "disabled"
