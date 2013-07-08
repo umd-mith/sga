@@ -88,7 +88,10 @@ SGAReader.namespace "Component", (Component) ->
         that.events.onMaxChange.addListener (n) ->
           $(container).attr
             max: n
-        that.events.onValueChange.addListener (n) -> $(container).val(n)
+        that.events.onValueChange.addListener (n) -> 
+          $(container).val(n)
+          $.bbq.pushState
+            n: that.getValue()+1
         $(container).change (e) -> that.setValue $(container).val()
 
   #
@@ -142,18 +145,26 @@ SGAReader.namespace "Component", (Component) ->
             nextEl.addClass "disabled"
             lastEl.addClass "disabled"
 
+        updateBBQ = ->
+          $.bbq.pushState
+            n: that.getValue()+1
+
         $(prevEl).click (e) ->
           e.preventDefault()
           that.addValue -1
+          updateBBQ()
         $(nextEl).click (e) ->
           e.preventDefault()
           that.addValue 1
+          updateBBQ()
         $(firstEl).click (e) ->
           e.preventDefault()
           that.setValue that.getMin()
+          updateBBQ()
         $(lastEl).click (e) ->
           e.preventDefault()
           that.setValue that.getMax()
+          updateBBQ()
 
   #
   # ## Component.ImageControls
