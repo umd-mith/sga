@@ -85,6 +85,9 @@
       <a href="#" class="btn" id="zoom-in"><i class="icon icon-zoom-in"></i></a>
       <a href="#" class="btn" id="zoom-out"><i class="icon icon-zoom-out"></i></a>
       <a href="#" class="btn" id="marquee-sh"><i class="icon icon-eye-open"></i></a>
+
+  <input type="text" class="search-query" placeholder="Search" style="float: right" id="searchbox">
+
     </div>
 </form>
 </div>
@@ -93,13 +96,13 @@
   <div class="row-fluid">
     <div class="span6" style="padding-left: 2%; text-align: center;">
       <div class="canvas" data-types="Image" 
-           data-manifest="Manifest-jp2.json"
+           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"
       ></div>
     </div>
     <!-- div class="span2" style="padding-left: 2%; padding-right: 2%; text-align: center;">&nbsp;</div -->
     <div class="span6" style="padding-right: 2%; text-align: center;">
       <div class="canvas" data-types="Text" 
-           data-manifest="Manifest-jp2.json"
+           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"
       ></div>
     </div>
   </div>
@@ -108,9 +111,8 @@
   $(function() {
 
     var builder = SGA.Reader.Application.SharedCanvas.builder({
-      progressTracker: SGA.Reader.Component.ProgressBar.initInstance(
-                           $("#loading-progress")
-                       )
+      progressTracker: SGA.Reader.Component.ProgressBar.initInstance($("#loading-progress")),
+      searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://localhost:5000/annotate?q=text:")
     });
 
     if($.fn.popover != null) {
@@ -125,7 +127,7 @@
     }
 
     builder.onManifest(
-      "Manifest-jp2.json"
+      "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"
     , function(app) {
       var filter, pageSlider, pager;
 
