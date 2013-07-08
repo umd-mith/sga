@@ -363,7 +363,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             $('.marquee').remove()
             # First time, always full extent in size and visible area
             strokeW = 5
-            marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW,
+            marquee = svgRoot.rect(0, 0, Math.max(1, options.width-strokeW), Math.max(1, options.height-strokeW),
               class : 'marquee' 
               fill: 'yellow', 
               stroke: 'navy', 
