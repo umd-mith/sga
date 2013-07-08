@@ -37,10 +37,18 @@ SGAReader.namespace "Application", (Application) ->
         that.events.onSequenceChange.addListener (s) ->
           currentSequence = s
           seq = that.dataStore.data.getItem currentSequence
-          p = 0
-          if seq?.sequence?
-            p = seq.sequence.indexOf that.getCanvas()
-          p = 0 if p < 0
+
+          hash = $.param.fragment window.location.href
+          paras = $.deparam hash
+          
+          n = parseInt(paras.n)
+          if paras.n? and seq.sequence.length >= n-1 >= 0
+            p = n-1
+          else
+            if seq?.sequence?
+              p = seq.sequence.indexOf that.getCanvas()
+            p = 0 if p < 0
+
           that.setPosition p
             
         #
@@ -146,14 +154,6 @@ SGAReader.namespace "Application", (Application) ->
           items = []
           textSources = {}
           textAnnos = []
-
-          # Add canvases and sequence that have not be loaded yet
-          for item in sequenceItems
-            canvasItem = that.dataStore.data.getItem item.id
-            if item.type == "Canvas" and !canvasItem.id?
-              items.push item
-            else if item.type == "Sequence" and !that.dataStore.data.getItem(item.id).id?
-              items.push item
 
           syncer = MITHgrid.initSynchronizer()
 
@@ -447,8 +447,7 @@ SGAReader.namespace "Application", (Application) ->
               items.push item           
 
             syncer.done ->
-              sequenceItems = items
-              loadCanvas seq[0]
+              that.dataStore.data.loadItems items
 
     #
     # ### Application.SharedCanvas#builder
