@@ -143,7 +143,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           
           # Djatoka URL is now hardcoded, it will eventually come from the manifest
           # when we figure out how to model it.
-          djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
+          djatokaURL = "http://sga.mith.org:8080/adore-djatoka/resolver" 
           imageURL = item.image[0]
           baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
 
@@ -192,7 +192,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.setImgPosition map.position
             
             map.on 'zoom', ->
-              console.log fromZoomControls
               if !fromZoomControls
                 app.imageControls.setZoom map.zoom()
                 app.imageControls.setImgPosition map.position                
@@ -360,9 +359,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
           textContainer.appendChild(bodyEl)
 
           if app.imageControls.getActive()
+            # If the marquee already exists, replace it with a new one.
+            $('.marquee').remove()
             # First time, always full extent in size and visible area
             strokeW = 5
-            marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW,
+            marquee = svgRoot.rect(0, 0, Math.max(1, options.width-strokeW), Math.max(1, options.height-strokeW),
               class : 'marquee' 
               fill: 'yellow', 
               stroke: 'navy', 
@@ -372,19 +373,24 @@ SGAReader.namespace "Presentation", (Presentation) ->
               ) 
             scale = options.width / $(container).width()
             visiblePerc = 100
-
+            
             app.imageControls.events.onZoomChange.addListener (z) ->
               if app.imageControls.getMaxZoom() > 0
+
                 width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
                 visiblePerc = Math.min(100, ($(container).width() * 100) / width)
 
                 marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
                 marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
 
+                if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
+                  $(marquee).attr "opacity", "0"
+                else
+                  $(marquee).attr "opacity", "100"
+
             app.imageControls.events.onImgPositionChange.addListener (p) ->
               marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
               marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
-              
 
           #
           # textDataView gives us all of the annotations targeting this

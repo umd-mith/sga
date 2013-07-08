@@ -88,7 +88,10 @@ SGAReader.namespace "Component", (Component) ->
         that.events.onMaxChange.addListener (n) ->
           $(container).attr
             max: n
-        that.events.onValueChange.addListener (n) -> $(container).val(n)
+        that.events.onValueChange.addListener (n) -> 
+          $(container).val(n)
+          $.bbq.pushState
+            n: that.getValue()+1
         $(container).change (e) -> that.setValue $(container).val()
 
   #
@@ -122,7 +125,7 @@ SGAReader.namespace "Component", (Component) ->
         that.events.onMaxChange.addListener (n) ->
           if n > that.getValue()
             nextEl.removeClass "disabled"
-            lastEl.removeClass "disbaled"
+            lastEl.removeClass "disabled"
           else
             nextEl.addClass "disabled"
             lastEl.addClass "disabled"
@@ -142,21 +145,29 @@ SGAReader.namespace "Component", (Component) ->
             nextEl.addClass "disabled"
             lastEl.addClass "disabled"
 
+        updateBBQ = ->
+          $.bbq.pushState
+            n: that.getValue()+1
+
         $(prevEl).click (e) ->
           e.preventDefault()
           that.addValue -1
+          updateBBQ()
         $(nextEl).click (e) ->
           e.preventDefault()
           that.addValue 1
+          updateBBQ()
         $(firstEl).click (e) ->
           e.preventDefault()
           that.setValue that.getMin()
+          updateBBQ()
         $(lastEl).click (e) ->
           e.preventDefault()
           that.setValue that.getMax()
+          updateBBQ()
 
   #
-  # ## Component.PagerControls
+  # ## Component.ImageControls
   #
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
@@ -201,3 +212,24 @@ SGAReader.namespace "Component", (Component) ->
               m.hide()
             else 
               m.show()
+
+  #
+  # ## Component.SearchBox
+  #
+  Component.namespace "SearchBox", (SearchBox) ->
+    SearchBox.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->        
+        container = args[0]
+        that.setServiceURL service
+
+        # console.log $(container).closest('form')
+
+        $(container).closest('form').submit (e) ->
+          e.preventDefault()
+          val = $(container).val()
+          if !val.match '^\s*$'
+            that.setQuery val
+          false
+          
+
+        # On submit function go here and they will simply change the variable Query

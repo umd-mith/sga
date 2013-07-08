@@ -162,6 +162,23 @@ SGAReader.namespace "Data", (Data) ->
           types = MITHgrid.Data.Set.initInstance type
           data.getSubjectsUnion(types, "type").items()
 
+        itemsForCanvas = (canvas) ->
+          # Given a canvas, find the the TEI XML URL
+          canvas = [ canvas ] if !$.isArray(canvas)
+          canvasSet = MITHgrid.Data.Set.initInstance(canvas)
+          specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
+          imageAnnotations = data.getSubjectsUnion(canvasSet, "oahasTarget")            
+          contentAnnotations = data.getSubjectsUnion(specificResources, "oahasTarget")
+          tei = data.getObjectsUnion(contentAnnotations, 'oahasBody')
+          teiURL = data.getObjectsUnion(tei, 'oahasSource')
+
+          # Now find all annotations targeting that XML URL
+          specificResourcesAnnos = data.getSubjectsUnion(teiURL, 'oahasSource')
+          annos = data.getSubjectsUnion(specificResourcesAnnos, 'oahasTarget').items()
+
+          # Append other annotations collected so far and return
+          return annos.concat imageAnnotations.items(), contentAnnotations.items()
+
         #
         # Get things of different types. For example, "scCanvas" gets
         # all of the canvas items.
@@ -170,6 +187,7 @@ SGAReader.namespace "Data", (Data) ->
         that.getZones       = -> itemsWithType 'scZone'
         that.getSequences   = -> itemsWithType 'scSequence'
         that.getAnnotations = -> itemsWithType 'oaAnnotation'
+        that.getAnnotationsForCanvas = itemsForCanvas
 
         that.getItem = data.getItem
         that.contains = data.contains
