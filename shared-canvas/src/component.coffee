@@ -156,7 +156,7 @@ SGAReader.namespace "Component", (Component) ->
           that.setValue that.getMax()
 
   #
-  # ## Component.PagerControls
+  # ## Component.ImageControls
   #
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
