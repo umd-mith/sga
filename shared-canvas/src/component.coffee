@@ -109,6 +109,11 @@ SGAReader.namespace "Component", (Component) ->
 
     PagerControls.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+        
+        $(window).bind "hashchange", (e) ->
+          n = $.bbq.getState "n" 
+          that.setValue n-1
+
         firstEl = $(container).find(".icon-fast-backward").parent()
         prevEl = $(container).find(".icon-step-backward").parent()
         nextEl = $(container).find(".icon-step-forward").parent()
