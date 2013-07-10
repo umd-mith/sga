@@ -179,6 +179,11 @@ SGAReader.namespace "Data", (Data) ->
           # Append other annotations collected so far and return
           return annos.concat imageAnnotations.items(), contentAnnotations.items()
 
+        flushSearchResults = ->
+          types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
+          searchResults = data.getSubjectsUnion(types, "type").items()
+          data.removeItems searchResults
+
         #
         # Get things of different types. For example, "scCanvas" gets
         # all of the canvas items.
@@ -188,6 +193,7 @@ SGAReader.namespace "Data", (Data) ->
         that.getSequences   = -> itemsWithType 'scSequence'
         that.getAnnotations = -> itemsWithType 'oaAnnotation'
         that.getAnnotationsForCanvas = itemsForCanvas
+        that.flushSearchResults = flushSearchResults
 
         that.getItem = data.getItem
         that.contains = data.contains
