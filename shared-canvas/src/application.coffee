@@ -71,7 +71,7 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
-          loadCanvas k
+          that.loadCanvas k
           setTimeout ->
             pp[0].setCanvas k for pp in presentations          
           , 100
@@ -86,7 +86,6 @@ SGAReader.namespace "Application", (Application) ->
         # manifest that we then process into the application's data store.
         #
         manifestData = SGA.Reader.Data.Manifest.initInstance()
-        sequenceItems = []
 
         #
         # We expose several of the manifestData methods so that things like
@@ -100,6 +99,9 @@ SGAReader.namespace "Application", (Application) ->
         that.setItemsToProcess = manifestData.setItemsToProcess
         that.addItemsProcessed = manifestData.addItemsProcessed
         that.addItemsToProcess = manifestData.addItemsToProcess
+        that.addManifestData = manifestData.importFromURL
+        that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
+        that.flushSearchResults = manifestData.flushSearchResults
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -150,7 +152,7 @@ SGAReader.namespace "Application", (Application) ->
           item.source = body.oahasSource
           extractSpatialConstraint(item, body.oahasSelector?[0])
 
-        loadCanvas = (canvas, cb) ->
+        that.loadCanvas = (canvas, cb) ->
           items = []
           textSources = {}
           textAnnos = []
@@ -510,40 +512,40 @@ SGAReader.namespace "Application", (Application) ->
 
         if config.searchBox?
           if config.searchBox.getServiceURL()?
-            config.searchBox.events.onQueryChange.addListener (q) ->            
+            config.searchBox.events.onQueryChange.addListener (q) ->
               queryURL = config.searchBox.getServiceURL() + q
               for m, obj of that.manifests
+
+                # Flush out all annotations for this canvas.
+                p = obj.getPosition()
+                s = obj.getSequence()
+                seq = obj.dataStore.data.getItem s
+                canvasKey = seq.sequence?[p]
+
+                allAnnos = obj.dataView.canvasAnnotations.items()
+                obj.dataView.canvasAnnotations.removeItems(allAnnos)
+
+                annos = obj.getAnnotationsForCanvas canvasKey
+                obj.dataStore.data.removeItems(annos)
+
+                # Flush out all search annotations, if any. 
+                obj.flushSearchResults()
+
+                # Load new search annotations into main data store.
                 obj.addManifestData queryURL, ->
-                  # allItems = obj.dataStore.data.items()
 
-                  # #canvas items: obj.dataView.canvasAnnotations.items()
-                  # canvases = obj.dataView.canvasAnnotations.items()
-                  # items = []
-                  # for item in allItems
-                  #   i = obj.dataStore.data.getItem item
-                  #   if i.target?
-                  #     for t in i.target
-                  #       if jQuery.inArray t, canvases >= 0
-                  #       #if t == canvases[2] #how to determine the right one?
-                  #         items.push item
+                  # Parse new search annotations into presentation data store. 
+                  obj.loadCanvas canvasKey
 
-                  # allAnnotations = obj.dataView.getAnnotations()
-                  console.log obj
-
-                  # obj.dataView.canvasAnnotations.removeItems(items)
-                  # obj.dataView.canvasAnnotations.removeItems(canvases)
-                  # remove annotation pertaining to this page, reload them.
-                  #obj.pullData obj, canvases, items
-
-
-                  # currentPage = obj.getPosition()
-                  # if currentPage == 0
-                  #   newPage = currentPage + 1
-                  # else
-                  #   newPage = currentPage - 1
-                  # setTimeout -> obj.setPosition newPage, 0  
-                  # setTimeout -> obj.setPosition currentPage, 0
-                  # obj.pullData()
+                  # Refresh presentation (bit hack-ish).
+                  setTimeout ->
+                    if p == 0
+                      newPage = p + 1
+                    else
+                      newPage = p - 1
+                    setTimeout -> obj.setPosition newPage, 0  
+                    setTimeout -> obj.setPosition p, 0
+                  , 100
           else
             console.log "You must specify the URL to some search service."            
 
