@@ -71,10 +71,8 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
-          that.loadCanvas k
-          setTimeout ->
-            pp[0].setCanvas k for pp in presentations          
-          , 100
+          Q.fcall(that.loadCanvas, k).then () -> 
+              pp[0].setCanvas k for pp in presentations
           k
 
         #
@@ -153,6 +151,8 @@ SGAReader.namespace "Application", (Application) ->
           extractSpatialConstraint(item, body.oahasSelector?[0])
 
         that.loadCanvas = (canvas, cb) ->
+          deferred = Q.defer()
+
           items = []
           textSources = {}
           textAnnos = []
@@ -369,11 +369,14 @@ SGAReader.namespace "Application", (Application) ->
 
                     that.dataStore.data.loadItems textItems, ->
                       that.addItemsProcessed 1
-                  
+              
+              deferred.resolve()
               that.addItemsProcessed 1
 
           if cb?
             cb()
+
+          deferred.promise
 
         if options.url?
           #
@@ -476,6 +479,17 @@ SGAReader.namespace "Application", (Application) ->
       updateProgressTracker = ->
       updateProgressTrackerVisibility = ->
 
+      # Simple spinner as alternative to progress tracker
+      updateSpinnerVisibility = ->
+
+      if config.spinner?
+        updateSpinnerVisibility = ->
+          for m, obj of that.manifests
+            tot = obj.getItemsToProcess()
+            obj.events.onItemsToProcessChange.addListener (i) ->
+              config.spinner.hide() if i > tot
+
+
       if config.progressTracker?
         updateProgressTracker = ->
           # Go through and calculate all of the unfinished items. Then
@@ -510,44 +524,40 @@ SGAReader.namespace "Application", (Application) ->
               setTimeout uptv, uptvTimer
             uptv()
 
-        if config.searchBox?
-          if config.searchBox.getServiceURL()?
-            config.searchBox.events.onQueryChange.addListener (q) ->
-              queryURL = config.searchBox.getServiceURL() + q
-              for m, obj of that.manifests
+      if config.searchBox?
+        if config.searchBox.getServiceURL()?
+          config.searchBox.events.onQueryChange.addListener (q) ->
+            queryURL = config.searchBox.getServiceURL() + q
+            for m, obj of that.manifests
 
-                # Flush out all annotations for this canvas.
-                p = obj.getPosition()
-                s = obj.getSequence()
-                seq = obj.dataStore.data.getItem s
-                canvasKey = seq.sequence?[p]
+              # Flush out all annotations for this canvas.
+              p = obj.getPosition()
+              s = obj.getSequence()
+              seq = obj.dataStore.data.getItem s
+              canvasKey = seq.sequence?[p]
 
-                allAnnos = obj.dataView.canvasAnnotations.items()
-                obj.dataView.canvasAnnotations.removeItems(allAnnos)
+              allAnnos = obj.dataView.canvasAnnotations.items()
+              obj.dataView.canvasAnnotations.removeItems(allAnnos)
 
-                annos = obj.getAnnotationsForCanvas canvasKey
-                obj.dataStore.data.removeItems(annos)
+              annos = obj.getAnnotationsForCanvas canvasKey
+              obj.dataStore.data.removeItems(annos)
 
-                # Flush out all search annotations, if any. 
-                obj.flushSearchResults()
+              # Flush out all search annotations, if any. 
+              obj.flushSearchResults()
 
-                # Load new search annotations into main data store.
-                obj.addManifestData queryURL, ->
+              # Load new search annotations into main data store.
+              obj.addManifestData queryURL, ->
 
-                  # Parse new search annotations into presentation data store. 
-                  obj.loadCanvas canvasKey
-
-                  # Refresh presentation (bit hack-ish).
-                  setTimeout ->
-                    if p == 0
-                      newPage = p + 1
-                    else
-                      newPage = p - 1
-                    setTimeout -> obj.setPosition newPage, 0  
-                    setTimeout -> obj.setPosition p, 0
-                  , 100
-          else
-            console.log "You must specify the URL to some search service."            
+                # Parse new search annotations into presentation data store. 
+                Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                  if p == 0
+                    newPage = p + 1
+                  else
+                    newPage = p - 1
+                  setTimeout -> obj.setPosition newPage, 0  
+                  setTimeout -> obj.setPosition p, 0
+        else
+          console.log "You must specify the URL to some search service."            
 
 
       #
@@ -603,6 +613,7 @@ SGAReader.namespace "Application", (Application) ->
             manifest.events.onItemsToProcessChange.addListener updateProgressTracker
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
             updateProgressTrackerVisibility()
+            updateSpinnerVisibility()
               
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
