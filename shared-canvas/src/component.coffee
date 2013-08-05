@@ -34,6 +34,17 @@ SGAReader.namespace "Component", (Component) ->
         that.hide = -> 
           $(container).hide()
 
+  Component.namespace "Spinner", (Spinner) ->
+
+    Spinner.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.Spinner", args..., (that, container) ->
+
+        that.show = -> 
+          $(container).show()
+
+        that.hide = -> 
+          $(container).hide()
+
   #
   # ## Component.SequenceSelector
   #
@@ -109,6 +120,11 @@ SGAReader.namespace "Component", (Component) ->
 
     PagerControls.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+        
+        $(window).bind "hashchange", (e) ->
+          n = $.bbq.getState "n" 
+          that.setValue n-1
+
         firstEl = $(container).find(".icon-fast-backward").parent()
         prevEl = $(container).find(".icon-step-backward").parent()
         nextEl = $(container).find(".icon-step-forward").parent()

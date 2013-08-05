@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.131700
+# SGA Shared Canvas v0.132170
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Jun 18 14:33:06 2013 -0400
+# Date: Wed Jul 10 15:32:59 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -195,6 +195,28 @@
               types = MITHgrid.Data.Set.initInstance type
               data.getSubjectsUnion(types, "type").items()
     
+            itemsForCanvas = (canvas) ->
+              # Given a canvas, find the the TEI XML URL
+              canvas = [ canvas ] if !$.isArray(canvas)
+              canvasSet = MITHgrid.Data.Set.initInstance(canvas)
+              specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
+              imageAnnotations = data.getSubjectsUnion(canvasSet, "oahasTarget")            
+              contentAnnotations = data.getSubjectsUnion(specificResources, "oahasTarget")
+              tei = data.getObjectsUnion(contentAnnotations, 'oahasBody')
+              teiURL = data.getObjectsUnion(tei, 'oahasSource')
+    
+              # Now find all annotations targeting that XML URL
+              specificResourcesAnnos = data.getSubjectsUnion(teiURL, 'oahasSource')
+              annos = data.getSubjectsUnion(specificResourcesAnnos, 'oahasTarget').items()
+    
+              # Append other annotations collected so far and return
+              return annos.concat imageAnnotations.items(), contentAnnotations.items()
+    
+            flushSearchResults = ->
+              types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
+              searchResults = data.getSubjectsUnion(types, "type").items()
+              data.removeItems searchResults
+    
             #
             # Get things of different types. For example, "scCanvas" gets
             # all of the canvas items.
@@ -203,6 +225,8 @@
             that.getZones       = -> itemsWithType 'scZone'
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
+            that.getAnnotationsForCanvas = itemsForCanvas
+            that.flushSearchResults = flushSearchResults
     
             that.getItem = data.getItem
             that.contains = data.contains
@@ -356,7 +380,7 @@
               
               # Djatoka URL is now hardcoded, it will eventually come from the manifest
               # when we figure out how to model it.
-              djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
+              djatokaURL = "http://sga.mith.org:8080/adore-djatoka/resolver" 
               imageURL = item.image[0]
               baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
     
@@ -381,8 +405,8 @@
     
               # wait for polymap to load image and update map, then...
               toAdoratio.then ->
-                # Decide when to propagate changes...
-                propagate = true
+                # Help decide when to propagate changes...
+                fromZoomControls = false
                 # Keep track of some start values
                 startCenter = map.center()
     
@@ -390,10 +414,10 @@
                 app.imageControls.events.onZoomChange.addListener (z) ->
                   map.zoom(z)
                   app.imageControls.setImgPosition map.position
-                  propagate = false
+                  fromZoomControls = true
+                  
                 app.imageControls.events.onImgPositionChange.addListener (p) ->
                   # only apply if reset
-                  propagate = false
                   if p.topLeft.x == 0 and p.topLeft.y == 0
                     map.center(startCenter)
     
@@ -403,18 +427,15 @@
                 app.imageControls.setMaxZoom map.zoomRange()[1]
                 app.imageControls.setMinZoom map.zoomRange()[0]
                 app.imageControls.setImgPosition map.position
+                
                 map.on 'zoom', ->
-                  if propagate
+                  if !fromZoomControls
                     app.imageControls.setZoom map.zoom()
-                    app.imageControls.setImgPosition map.position
-                  else
-                    propagate = true
-                  # app.imageControls.setMaxZoom map.zoomRange()[1]
+                    app.imageControls.setImgPosition map.position                
+                    app.imageControls.setMaxZoom map.zoomRange()[1]
+                  fromZoomControls = false
                 map.on 'drag', ->
-                  if propagate
-                    app.imageControls.setImgPosition map.position
-                  else
-                    propagate = true
+                  app.imageControls.setImgPosition map.position
     
               
               rendering.update = (item) ->
@@ -534,6 +555,15 @@
             that.addLens 'TextContentZone', (container, view, model, id) ->
               return unless 'Text' in (options.types || [])
     
+              # Set initial viewbox
+              svg = $(svgRoot.root())
+              # jQuery won't modify the viewBox - using pure JS
+              vb = svg.get(0).getAttribute("viewBox")
+    
+              if !vb?
+                svgRoot.configure
+                  viewBox: "0 0 #{options.width} #{options.height}"
+    
               rendering = {}
               
               app = options.application()
@@ -575,9 +605,11 @@
               textContainer.appendChild(bodyEl)
     
               if app.imageControls.getActive()
+                # If the marquee already exists, replace it with a new one.
+                $('.marquee').remove()
                 # First time, always full extent in size and visible area
                 strokeW = 5
-                marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW,
+                marquee = svgRoot.rect(0, 0, Math.max(1, options.width-strokeW), Math.max(1, options.height-strokeW),
                   class : 'marquee' 
                   fill: 'yellow', 
                   stroke: 'navy', 
@@ -587,19 +619,24 @@
                   ) 
                 scale = options.width / $(container).width()
                 visiblePerc = 100
-    
+                
                 app.imageControls.events.onZoomChange.addListener (z) ->
                   if app.imageControls.getMaxZoom() > 0
+    
                     width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
                     visiblePerc = Math.min(100, ($(container).width() * 100) / width)
     
                     marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
                     marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
     
+                    if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
+                      $(marquee).attr "opacity", "0"
+                    else
+                      $(marquee).attr "opacity", "100"
+    
                 app.imageControls.events.onImgPositionChange.addListener (p) ->
                   marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
                   marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
-                  
     
               #
               # textDataView gives us all of the annotations targeting this
@@ -713,8 +750,16 @@
                   svgRootEl.attr
                     width: canvasWidth
                     height: canvasHeight
-                  svgRoot.configure
-                    viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
+    
+                  # If the viewbox is not set (ie beacuse of an image viewer), 
+                  # don't attempt to adjust it.
+                  svg = $(svgRoot.root())
+                  # jQuery won't modify the viewBox - using pure JS
+                  vb = svg.get(0).getAttribute("viewBox")
+    
+                  if vb?
+                    svgRoot.configure
+                      viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
     
                   svgRootEl.css
                     width: SVGWidth
@@ -918,6 +963,28 @@
               types = MITHgrid.Data.Set.initInstance type
               data.getSubjectsUnion(types, "type").items()
     
+            itemsForCanvas = (canvas) ->
+              # Given a canvas, find the the TEI XML URL
+              canvas = [ canvas ] if !$.isArray(canvas)
+              canvasSet = MITHgrid.Data.Set.initInstance(canvas)
+              specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
+              imageAnnotations = data.getSubjectsUnion(canvasSet, "oahasTarget")            
+              contentAnnotations = data.getSubjectsUnion(specificResources, "oahasTarget")
+              tei = data.getObjectsUnion(contentAnnotations, 'oahasBody')
+              teiURL = data.getObjectsUnion(tei, 'oahasSource')
+    
+              # Now find all annotations targeting that XML URL
+              specificResourcesAnnos = data.getSubjectsUnion(teiURL, 'oahasSource')
+              annos = data.getSubjectsUnion(specificResourcesAnnos, 'oahasTarget').items()
+    
+              # Append other annotations collected so far and return
+              return annos.concat imageAnnotations.items(), contentAnnotations.items()
+    
+            flushSearchResults = ->
+              types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
+              searchResults = data.getSubjectsUnion(types, "type").items()
+              data.removeItems searchResults
+    
             #
             # Get things of different types. For example, "scCanvas" gets
             # all of the canvas items.
@@ -926,6 +993,8 @@
             that.getZones       = -> itemsWithType 'scZone'
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
+            that.getAnnotationsForCanvas = itemsForCanvas
+            that.flushSearchResults = flushSearchResults
     
             that.getItem = data.getItem
             that.contains = data.contains
@@ -963,6 +1032,17 @@
               percent = parseInt(100 * that.getNumerator() / d, 10)
               percent = 100 if percent > 100
               $(container).find(".bar").css("width", percent + "%")
+    
+            that.show = -> 
+              $(container).show()
+    
+            that.hide = -> 
+              $(container).hide()
+    
+      Component.namespace "Spinner", (Spinner) ->
+    
+        Spinner.initInstance = (args...) ->
+          MITHgrid.initInstance "SGA.Reader.Component.Spinner", args..., (that, container) ->
     
             that.show = -> 
               $(container).show()
@@ -1024,7 +1104,10 @@
             that.events.onMaxChange.addListener (n) ->
               $(container).attr
                 max: n
-            that.events.onValueChange.addListener (n) -> $(container).val(n)
+            that.events.onValueChange.addListener (n) -> 
+              $(container).val(n)
+              $.bbq.pushState
+                n: that.getValue()+1
             $(container).change (e) -> that.setValue $(container).val()
     
       #
@@ -1042,6 +1125,11 @@
     
         PagerControls.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.PagerControls", args..., (that, container) ->
+            
+            $(window).bind "hashchange", (e) ->
+              n = $.bbq.getState "n" 
+              that.setValue n-1
+    
             firstEl = $(container).find(".icon-fast-backward").parent()
             prevEl = $(container).find(".icon-step-backward").parent()
             nextEl = $(container).find(".icon-step-forward").parent()
@@ -1058,7 +1146,7 @@
             that.events.onMaxChange.addListener (n) ->
               if n > that.getValue()
                 nextEl.removeClass "disabled"
-                lastEl.removeClass "disbaled"
+                lastEl.removeClass "disabled"
               else
                 nextEl.addClass "disabled"
                 lastEl.addClass "disabled"
@@ -1078,21 +1166,29 @@
                 nextEl.addClass "disabled"
                 lastEl.addClass "disabled"
     
+            updateBBQ = ->
+              $.bbq.pushState
+                n: that.getValue()+1
+    
             $(prevEl).click (e) ->
               e.preventDefault()
               that.addValue -1
+              updateBBQ()
             $(nextEl).click (e) ->
               e.preventDefault()
               that.addValue 1
+              updateBBQ()
             $(firstEl).click (e) ->
               e.preventDefault()
               that.setValue that.getMin()
+              updateBBQ()
             $(lastEl).click (e) ->
               e.preventDefault()
               that.setValue that.getMax()
+              updateBBQ()
     
       #
-      # ## Component.PagerControls
+      # ## Component.ImageControls
       #
       Component.namespace "ImageControls", (ImageControls) ->
         ImageControls.initInstance = (args...) ->
@@ -1137,7 +1233,27 @@
                   m.hide()
                 else 
                   m.show()
-
+    
+      #
+      # ## Component.SearchBox
+      #
+      Component.namespace "SearchBox", (SearchBox) ->
+        SearchBox.initInstance = (args...) ->
+          MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->        
+            container = args[0]
+            that.setServiceURL service
+    
+            # console.log $(container).closest('form')
+    
+            $(container).closest('form').submit (e) ->
+              e.preventDefault()
+              val = $(container).val()
+              if !val.match '^\s*$'
+                that.setQuery val
+              false
+              
+    
+            # On submit function go here and they will simply change the variable Query
     # # Controllers
 
     # # Core Utilities
@@ -1181,10 +1297,18 @@
             that.events.onSequenceChange.addListener (s) ->
               currentSequence = s
               seq = that.dataStore.data.getItem currentSequence
-              p = 0
-              if seq?.sequence?
-                p = seq.sequence.indexOf that.getCanvas()
-              p = 0 if p < 0
+    
+              hash = $.param.fragment window.location.href
+              paras = $.deparam hash
+              
+              n = parseInt(paras.n)
+              if paras.n? and seq.sequence.length >= n-1 >= 0
+                p = n-1
+              else
+                if seq?.sequence?
+                  p = seq.sequence.indexOf that.getCanvas()
+                p = 0 if p < 0
+    
               that.setPosition p
                 
             #
@@ -1194,7 +1318,7 @@
             that.events.onPositionChange.addListener (p) ->
               seq = that.dataStore.data.getItem currentSequence
               canvasKey = seq.sequence?[p]
-              that.setCanvas canvasKey
+              that.setCanvas canvasKey    
     
             #
             # But if we do know the name of the canvas we want to see, we
@@ -1207,7 +1331,8 @@
               p = seq.sequence.indexOf k
               if p >= 0 && p != that.getPosition()
                 that.setPosition p
-              pp[0].setCanvas k for pp in presentations
+              Q.fcall(that.loadCanvas, k).then () -> 
+                  pp[0].setCanvas k for pp in presentations
               k
     
             #
@@ -1232,6 +1357,9 @@
             that.setItemsToProcess = manifestData.setItemsToProcess
             that.addItemsProcessed = manifestData.addItemsProcessed
             that.addItemsToProcess = manifestData.addItemsToProcess
+            that.addManifestData = manifestData.importFromURL
+            that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
+            that.flushSearchResults = manifestData.flushSearchResults
     
             #
             # textSource manages fetching and storing all of the TEI
@@ -1282,87 +1410,70 @@
               item.source = body.oahasSource
               extractSpatialConstraint(item, body.oahasSelector?[0])
     
-            pullData = ->
-              # now pull data out into data store
-              # if multiple sequences, we want to add a control to allow
-              # selection
+            that.loadCanvas = (canvas, cb) ->
+              deferred = Q.defer()
+    
               items = []
-              syncer = MITHgrid.initSynchronizer()
-    
-              canvases = manifestData.getCanvases()
-              that.addItemsToProcess canvases.length
-              syncer.process canvases, (id) ->
-                that.addItemsProcessed 1
-                mitem = manifestData.getItem id
-                items.push
-                  id: id
-                  type: 'Canvas'
-                  width: parseInt(mitem.exifwidth?[0], 10)
-                  height: parseInt(mitem.exifheight?[0], 10)
-                  label: mitem.dctitle || mitem.rdfslabel
-    
-              zones = manifestData.getZones()
-              that.addItemsToProcess zones.length
-              syncer.process zones, (id) ->
-                that.addItemsProcessed 1
-                zitem = manifestData.getItem id
-                items.push
-                  id: id
-                  type: 'Zone'
-                  width: parseInt(mitem.exifwidth?[0], 10)
-                  height: parseInt(mitem.exifheight?[0], 10)
-                  angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
-                  label: zitem.rdfslabel
-    
-              seq = manifestData.getSequences()          
-              that.addItemsToProcess seq.length
-              syncer.process seq, (id) ->
-                that.addItemsProcessed 1
-                sitem = manifestData.getItem id
-                item =
-                  id: id
-                  type: 'Sequence'
-                  label: sitem.rdfslabel
-    
-                # walk list of canvases
-                seq = []
-                seq.push sitem.rdffirst[0]
-                sitem = manifestData.getItem sitem.rdfrest[0]
-                while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
-                  seq.push sitem.rdffirst[0]
-                  sitem = manifestData.getItem sitem.rdfrest[0]
-                item.sequence = seq
-                items.push item
-    
               textSources = {}
               textAnnos = []
     
-              # now get the annotations we know something about handling
-              annos = manifestData.getAnnotations()          
+              syncer = MITHgrid.initSynchronizer()
+    
+              annos = manifestData.getAnnotationsForCanvas canvas
+    
               that.addItemsToProcess annos.length
               syncer.process annos, (id) ->
                 #
                 # Once we have our various annotations, we want to process
                 # them to produce sets of items that can be displayed in a
-                # sequence - move some of the logic from the presentation to
-                # here so we are only concerned with presenting things.
+                # sequence. We preprocess overlapping ranges of highlights
+                # to create non-overlapping multi-classed items that can
+                # be filtered in the final presentation.
                 #
                 that.addItemsProcessed 1
-                aitem = manifestData.getItem id            
+                aitem = manifestData.getItem id
                 array = null
                 item =
                   id: id
     
-                # for now, we *assume* that the content annotation is coming
-                # from a TEI file and is marked by begin/end pointers
+                #
+                # For now, we *assume* that the content annotation is coming
+                # from a TEI file and is marked by begin/end pointers.
+                # These annotations are loaded into the triple store as they
+                # are since they don't target sub-ranges of text.
+                # TextContent items end up acting like zones in that they
+                # are the target of text annotations but don't themselves
+                # end up providing content.
+                #
                 if "scContentAnnotation" in aitem.type
                   extractTextTarget item, aitem.oahasTarget?[0]
                   extractTextBody   item, aitem.oahasBody?[0]
-                  textSources[item.source] ?= []
-                  textSources[item.source].push [ id, item.start, item.end ]
-                  item.type = "TextContentZone"
+                  if item.start? and item.end?
+                    textSources[item.source] ?= []
+                    textSources[item.source].push [ id, item.start, item.end ]
+                  #
+                  # We should use "ContentAnnotation" only when we know we
+                  # won't have anything targeting this text. Otherwise, we
+                  # should use TextContentZone. This is a work in progress
+                  # as we see the pattern unfold.
+                  #
+                  # Essentially, if we want the annotation to act as a classic
+                  # Shared Canvas text content annotation, we use a type of
+                  # "ContentAnnotation". If we want to allow highlight annotation
+                  # of the text with faceted selection of text, then we use a
+                  # type of "TextContentZone".
+                  #
+                  if item.text?
+                    item.type = "ContentAnnotation"
+                  else
+                    item.type = "TextContentZone"
                   array = items
     
+                #
+                # For now, we assume that images map onto the entire canvas.
+                # This isn't true for Shared Canvas. We need to extract any
+                # spatial constraint and respect it in the presentation.
+                #
                 else if "scImageAnnotation" in aitem.type
                   imgitem = manifestData.getItem aitem.oahasBody
                   imgitem = imgitem[0] if $.isArray(imgitem)
@@ -1374,7 +1485,6 @@
                   item.type = "Image"
                   if "image/jp2" in imgitem["dcformat"] and that.imageControls?
                     item.type = "ImageViewer"
-                  #item.format = imgitem["dcformat"]
     
                 else if "scZoneAnnotation" in aitem.type
                   target = manifestData.getItem aitem.oahasTarget
@@ -1403,9 +1513,14 @@
                 # each addition, deletion, etc., targets a scContentAnnotation
                 # but we want to make sure we get any scContentAnnotation text
                 # that isn't covered by any of the other annotations
+    
+                # This is inspired by NROFF as implemented, for example, in
+                # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
+                # It also has shades of a SAX processor thrown in.
                 
                 that.addItemsToProcess 1 + textAnnos.length
-                that.dataStore.data.loadItems items, -> 
+    
+                that.dataStore.data.loadItems items, ->
                   items = []
                   modstart = {}
                   modend = {}
@@ -1511,36 +1626,94 @@
                               br_pushed = true
                             last_pos = pos
                         processNode last_pos, text.length
-                        
+    
                         that.dataStore.data.loadItems textItems, ->
                           that.addItemsProcessed 1
-                      
+                  
+                  deferred.resolve()
                   that.addItemsProcessed 1
     
-            loadManifests = (url) ->
-              # Working example:
-              # This would work because pull data is done last.
-              # We now need to change the way line-framentation is handled in order to support 
-              # multiple calls to pullData()
-              #
-              # manifestData.importFromURL options.url, ->
-              #   manifestData.importFromURL "http://localhost:5000/annotate?q=text:feelings", ->
-              #     pullData()
-              if url.length > 1
-                manifestData.importFromURL url[0], ->
-                  loadManifests(url[1..url.length])
-              else
-                manifestData.importFromURL url[0], pullData
+              if cb?
+                cb()
     
-            # Expose loadManifests to allow an application to load more annotations
-            that.loadManifests = loadManifests
+              deferred.promise
     
             if options.url?
               #
               # If we're given a URL in our options, then go ahead and load
               # it. For now, this is the only way to get data from a manifest.
               #
-              loadManifests [options.url]
+              manifestData.importFromURL options.url, ->
+                # Once the RDF/JSON is loaded from the url and parsed into
+                # the manifestData triple store, we process it to pull out all
+                # of the features we care about.
+                items = []
+                syncer = MITHgrid.initSynchronizer()
+    
+                #
+                # We begin by pulling out all of the canvases defined in the
+                # manifest. We only care about their id, size, and label.
+                #
+                canvases = manifestData.getCanvases()
+                that.addItemsToProcess canvases.length
+                syncer.process canvases, (id) ->
+                  that.addItemsProcessed 1
+                  mitem = manifestData.getItem id
+                  items.push
+                    id: id
+                    type: 'Canvas'
+                    width: parseInt(mitem.exifwidth?[0], 10)
+                    height: parseInt(mitem.exifheight?[0], 10)
+                    label: mitem.dctitle || mitem.rdfslabel
+    
+                #
+                # We want to add any zones that might be in the manifest. These
+                # are like canvases, but with the addition of a rotation angle.
+                # ZoneAnnotations map zones onto canvases.
+                #
+                zones = manifestData.getZones()
+                that.addItemsToProcess zones.length
+                syncer.process zones, (id) ->
+                  that.addItemsProcessed 1
+                  zitem = manifestData.getItem id
+                  items.push
+                    id: id
+                    type: 'Zone'
+                    width: parseInt(mitem.exifwidth?[0], 10)
+                    height: parseInt(mitem.exifheight?[0], 10)
+                    angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                    label: zitem.rdfslabel
+    
+                #
+                # We pull out all of the sequences in the manifest. MITHgrid
+                # stores a multi-valued property as an ordered list (JavaScript
+                # array), so we don't need all of the blank nodes that RDF uses.
+                #
+                # The primary or initial sequence is undefined if there are
+                # multiple sequences in the manifest.
+                #
+                seq = manifestData.getSequences()
+                that.addItemsToProcess seq.length
+                syncer.process seq, (id) ->
+                  that.addItemsProcessed 1
+                  sitem = manifestData.getItem id
+                  item =
+                    id: id
+                    type: 'Sequence'
+                    label: sitem.rdfslabel
+    
+                  seq = []
+                  seq.push sitem.rdffirst[0]
+                  sitem = manifestData.getItem sitem.rdfrest[0]
+                  while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
+                    seq.push sitem.rdffirst[0]
+                    sitem = manifestData.getItem sitem.rdfrest[0]
+                  item.sequence = seq
+                  items.push item           
+    
+                syncer.done ->
+                  that.dataStore.data.loadItems items
+    
         #
         # ### Application.SharedCanvas#builder
         #
@@ -1565,6 +1738,17 @@
           # tracker. Also makes sure that CoffeeScript scopes them correctly.
           updateProgressTracker = ->
           updateProgressTrackerVisibility = ->
+    
+          # Simple spinner as alternative to progress tracker
+          updateSpinnerVisibility = ->
+    
+          if config.spinner?
+            updateSpinnerVisibility = ->
+              for m, obj of that.manifests
+                tot = obj.getItemsToProcess()
+                obj.events.onItemsToProcessChange.addListener (i) ->
+                  config.spinner.hide() if i > tot
+    
     
           if config.progressTracker?
             updateProgressTracker = ->
@@ -1599,6 +1783,42 @@
                   uptvTimer = 10000 if uptvTimer > 10000
                   setTimeout uptv, uptvTimer
                 uptv()
+    
+          if config.searchBox?
+            if config.searchBox.getServiceURL()?
+              config.searchBox.events.onQueryChange.addListener (q) ->
+                queryURL = config.searchBox.getServiceURL() + q
+                for m, obj of that.manifests
+    
+                  # Flush out all annotations for this canvas.
+                  p = obj.getPosition()
+                  s = obj.getSequence()
+                  seq = obj.dataStore.data.getItem s
+                  canvasKey = seq.sequence?[p]
+    
+                  allAnnos = obj.dataView.canvasAnnotations.items()
+                  obj.dataView.canvasAnnotations.removeItems(allAnnos)
+    
+                  annos = obj.getAnnotationsForCanvas canvasKey
+                  obj.dataStore.data.removeItems(annos)
+    
+                  # Flush out all search annotations, if any. 
+                  obj.flushSearchResults()
+    
+                  # Load new search annotations into main data store.
+                  obj.addManifestData queryURL, ->
+    
+                    # Parse new search annotations into presentation data store. 
+                    Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                      if p == 0
+                        newPage = p + 1
+                      else
+                        newPage = p - 1
+                      setTimeout -> obj.setPosition newPage, 0  
+                      setTimeout -> obj.setPosition p, 0
+            else
+              console.log "You must specify the URL to some search service."            
+    
     
           #
           # #### #onManifest
@@ -1653,6 +1873,7 @@
                 manifest.events.onItemsToProcessChange.addListener updateProgressTracker
                 manifest.events.onItemsProcessedChange.addListener updateProgressTracker
                 updateProgressTrackerVisibility()
+                updateSpinnerVisibility()
                   
               manifest.run()
               types = $(el).data('types')?.split(/\s*,\s*/)
@@ -1738,6 +1959,11 @@ MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
     </div>
   """
 
+MITHgrid.defaults 'SGA.Reader.Component.Spinner',
+  viewSetup: """
+    <img src="images/spinner.gif"/>
+  """
+
 #
 # We use the Canvas presentation as the root surface for displaying the
 # annotations. Thus, we keep track of which canvas we're looking at.
@@ -1766,3 +1992,8 @@ MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
     MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
     MinZoom: { is: 'rw', default: 0, isa: 'numeric' }
     ImgPosition : {is: 'rw', default: {} }
+
+MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
+  variables:
+    Query: { is: 'rw', default: false }
+    ServiceURL: { is: 'rw', default: false }

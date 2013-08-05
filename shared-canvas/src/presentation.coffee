@@ -318,6 +318,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.addLens 'TextContentZone', (container, view, model, id) ->
           return unless 'Text' in (options.types || [])
 
+          # Set initial viewbox
+          svg = $(svgRoot.root())
+          # jQuery won't modify the viewBox - using pure JS
+          vb = svg.get(0).getAttribute("viewBox")
+
+          if !vb?
+            svgRoot.configure
+              viewBox: "0 0 #{options.width} #{options.height}"
+
           rendering = {}
           
           app = options.application()
@@ -504,8 +513,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRootEl.attr
                 width: canvasWidth
                 height: canvasHeight
-              svgRoot.configure
-                viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
+
+              # If the viewbox is not set (ie beacuse of an image viewer), 
+              # don't attempt to adjust it.
+              svg = $(svgRoot.root())
+              # jQuery won't modify the viewBox - using pure JS
+              vb = svg.get(0).getAttribute("viewBox")
+
+              if vb?
+                svgRoot.configure
+                  viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
 
               svgRootEl.css
                 width: SVGWidth

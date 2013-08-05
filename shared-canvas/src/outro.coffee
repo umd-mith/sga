@@ -67,6 +67,11 @@ MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
     </div>
   """
 
+MITHgrid.defaults 'SGA.Reader.Component.Spinner',
+  viewSetup: """
+    <img src="images/spinner.gif"/>
+  """
+
 #
 # We use the Canvas presentation as the root surface for displaying the
 # annotations. Thus, we keep track of which canvas we're looking at.
