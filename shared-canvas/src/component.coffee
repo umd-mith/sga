@@ -34,6 +34,17 @@ SGAReader.namespace "Component", (Component) ->
         that.hide = -> 
           $(container).hide()
 
+  Component.namespace "Spinner", (Spinner) ->
+
+    Spinner.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.Spinner", args..., (that, container) ->
+
+        that.show = -> 
+          $(container).show()
+
+        that.hide = -> 
+          $(container).hide()
+
   #
   # ## Component.SequenceSelector
   #
