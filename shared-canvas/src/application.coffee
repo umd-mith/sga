@@ -71,10 +71,8 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
-          loadCanvas k
-          setTimeout ->
-            pp[0].setCanvas k for pp in presentations          
-          , 100
+          Q.fcall(that.loadCanvas, k).then () -> 
+              pp[0].setCanvas k for pp in presentations
           k
 
         #
@@ -86,7 +84,6 @@ SGAReader.namespace "Application", (Application) ->
         # manifest that we then process into the application's data store.
         #
         manifestData = SGA.Reader.Data.Manifest.initInstance()
-        sequenceItems = []
 
         #
         # We expose several of the manifestData methods so that things like
@@ -100,6 +97,9 @@ SGAReader.namespace "Application", (Application) ->
         that.setItemsToProcess = manifestData.setItemsToProcess
         that.addItemsProcessed = manifestData.addItemsProcessed
         that.addItemsToProcess = manifestData.addItemsToProcess
+        that.addManifestData = manifestData.importFromURL
+        that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
+        that.flushSearchResults = manifestData.flushSearchResults
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -150,7 +150,9 @@ SGAReader.namespace "Application", (Application) ->
           item.source = body.oahasSource
           extractSpatialConstraint(item, body.oahasSelector?[0])
 
-        loadCanvas = (canvas, cb) ->
+        that.loadCanvas = (canvas, cb) ->
+          deferred = Q.defer()
+
           items = []
           textSources = {}
           textAnnos = []
@@ -367,11 +369,14 @@ SGAReader.namespace "Application", (Application) ->
 
                     that.dataStore.data.loadItems textItems, ->
                       that.addItemsProcessed 1
-                  
+              
+              deferred.resolve()
               that.addItemsProcessed 1
 
           if cb?
             cb()
+
+          deferred.promise
 
         if options.url?
           #
@@ -474,6 +479,17 @@ SGAReader.namespace "Application", (Application) ->
       updateProgressTracker = ->
       updateProgressTrackerVisibility = ->
 
+      # Simple spinner as alternative to progress tracker
+      updateSpinnerVisibility = ->
+
+      if config.spinner?
+        updateSpinnerVisibility = ->
+          for m, obj of that.manifests
+            tot = obj.getItemsToProcess()
+            obj.events.onItemsToProcessChange.addListener (i) ->
+              config.spinner.hide() if i > tot
+
+
       if config.progressTracker?
         updateProgressTracker = ->
           # Go through and calculate all of the unfinished items. Then
@@ -508,44 +524,40 @@ SGAReader.namespace "Application", (Application) ->
               setTimeout uptv, uptvTimer
             uptv()
 
-        if config.searchBox?
-          if config.searchBox.getServiceURL()?
-            config.searchBox.events.onQueryChange.addListener (q) ->            
-              queryURL = config.searchBox.getServiceURL() + q
-              for m, obj of that.manifests
-                obj.addManifestData queryURL, ->
-                  # allItems = obj.dataStore.data.items()
+      if config.searchBox?
+        if config.searchBox.getServiceURL()?
+          config.searchBox.events.onQueryChange.addListener (q) ->
+            queryURL = config.searchBox.getServiceURL() + q
+            for m, obj of that.manifests
 
-                  # #canvas items: obj.dataView.canvasAnnotations.items()
-                  # canvases = obj.dataView.canvasAnnotations.items()
-                  # items = []
-                  # for item in allItems
-                  #   i = obj.dataStore.data.getItem item
-                  #   if i.target?
-                  #     for t in i.target
-                  #       if jQuery.inArray t, canvases >= 0
-                  #       #if t == canvases[2] #how to determine the right one?
-                  #         items.push item
+              # Flush out all annotations for this canvas.
+              p = obj.getPosition()
+              s = obj.getSequence()
+              seq = obj.dataStore.data.getItem s
+              canvasKey = seq.sequence?[p]
 
-                  # allAnnotations = obj.dataView.getAnnotations()
-                  console.log obj
+              allAnnos = obj.dataView.canvasAnnotations.items()
+              obj.dataView.canvasAnnotations.removeItems(allAnnos)
 
-                  # obj.dataView.canvasAnnotations.removeItems(items)
-                  # obj.dataView.canvasAnnotations.removeItems(canvases)
-                  # remove annotation pertaining to this page, reload them.
-                  #obj.pullData obj, canvases, items
+              annos = obj.getAnnotationsForCanvas canvasKey
+              obj.dataStore.data.removeItems(annos)
 
+              # Flush out all search annotations, if any. 
+              obj.flushSearchResults()
 
-                  # currentPage = obj.getPosition()
-                  # if currentPage == 0
-                  #   newPage = currentPage + 1
-                  # else
-                  #   newPage = currentPage - 1
-                  # setTimeout -> obj.setPosition newPage, 0  
-                  # setTimeout -> obj.setPosition currentPage, 0
-                  # obj.pullData()
-          else
-            console.log "You must specify the URL to some search service."            
+              # Load new search annotations into main data store.
+              obj.addManifestData queryURL, ->
+
+                # Parse new search annotations into presentation data store. 
+                Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                  if p == 0
+                    newPage = p + 1
+                  else
+                    newPage = p - 1
+                  setTimeout -> obj.setPosition newPage, 0  
+                  setTimeout -> obj.setPosition p, 0
+        else
+          console.log "You must specify the URL to some search service."            
 
 
       #
@@ -601,6 +613,7 @@ SGAReader.namespace "Application", (Application) ->
             manifest.events.onItemsToProcessChange.addListener updateProgressTracker
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
             updateProgressTrackerVisibility()
+            updateSpinnerVisibility()
               
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
