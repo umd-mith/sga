@@ -19,6 +19,7 @@
     <script src="./js/polymaps.min.js"></script>
     <script src="./js/adoratio.js"></script>
     <script src="./js/mithgrid.js"></script>
+    <script src="./js/q.min.js"></script>
     <script src="./js/shared-canvas.js"></script>
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
@@ -111,7 +112,8 @@
   $(function() {
 
     var builder = SGA.Reader.Application.SharedCanvas.builder({
-      progressTracker: SGA.Reader.Component.ProgressBar.initInstance($("#loading-progress")),
+      spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
+      // progressTracker: SGA.Reader.Component.ProgressBar.initInstance($("#loading-progress")),
       searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://localhost:5000/annotate?q=text:")
     });
 
