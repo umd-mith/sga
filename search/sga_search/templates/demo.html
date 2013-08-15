@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Canvas</title>
+    <script src="{{static('./js/jquery.js')}}"></script>
+    <script src="{{static('./js/modernizr-2.6.2.min.js')}}"></script>
+    <script src="{{static('./js/jquery.svg.min.js')}}"></script>
+    <script src="{{static('./js/navigation.js')}}"></script>
+    <script src="{{static('./js/jquery-ui-1.8.22.custom.min.js')}}"></script>
+    <script src="{{static('./js/bootstrap.min.js')}}"></script>
+    <script src="{{static('./js/mithgrid.js')}}"></script>
+    <script src="{{static('./js/shared-canvas.js')}}"></script>
+    <link href="{{static('./css/normalize.css')}}" rel="stylesheet">
+    <link href="{{static('./css/main.css')}}" rel="stylesheet">
+    <link href="{{static('./css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{static('./css/bootstrap-responsive.css')}}" rel="stylesheet">
+    <link href="{{static('./css/overrides.css')}}" rel="stylesheet">
+    <link href="{{static('./css/shared-canvas.css')}}" rel="stylesheet">
+    <style>
+      /* body { padding-top: 60px; } */
+    </style>
+  </head>
+  <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="page" class="site-content">
+
+        <header id="main-header" class="group">
+                <div id="logo">
+                <a href="index.htm"><img src="{{static('images/sga_logo.png')}}" ></a>
+            </div>
+                <nav class="main-navigation">
+                <ul class="nav-menu">
+                        <li class="current_page_item"><a href="index.htm" >Home</a></li>
+                    <li><a href="static.htm">About</a></li>
+                    <li><a href="static.htm">Tutorials</a></li>
+                    <li><a href="static.htm">Search</a></li>
+                    <li><a href="static.htm">Browse</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+                <article class="page-content group">
+            <header>
+                <h2></h2>
+            </header>
+
+
+    <div class="container-fluid">
+
+<div class="row-fluid">
+<div class="span12">
+<form class="well form-inline">
+    <div style="float: right" id="pager-controls">
+      <a href="#" class="btn" id="first-page"><i class="icon icon-fast-backward"></i></a>
+      <a href="#" class="btn" id="prev-page"><i class="icon icon-step-backward"></i></a>
+      <a href="#" class="btn" id="next-page"><i class="icon icon-step-forward"></i></a>
+      <a href="#" class="btn" id="last-page"><i class="icon icon-fast-forward"></i></a>
+    </div>
+    <strong>Manifest Title</strong>
+    <i id="metadata" class="icon icon-info-sign" style="margin-right: 10px"></i>
+    <label>Page Order:</label>
+    <select id="sequence"></select>
+    &nbsp;
+    <label>Page/Canvas:</label>
+    <span id="canvas-label"></span>
+    <div id="loading-progress" style="margin: 10px; margin-left: 30px; margin-right: 30px;"></div>
+<br/>
+<input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" />
+</form>
+</div>
+</div>
+<div class="well">
+  <p id="test">test</p>
+  <div class="row-fluid">
+    <div class="span6" style="padding-left: 2%; text-align: center;">
+      <div class="canvas" data-types="Image" 
+           data-manifest="{{static('Manifest.json')}}"
+      ></div>
+    </div>
+    <!-- div class="span2" style="padding-left: 2%; padding-right: 2%; text-align: center;">&nbsp;</div -->
+    <div class="span6" style="padding-right: 2%; text-align: center;">
+      <div class="canvas" data-types="Text" 
+           data-manifest="{{static('Manifest.json')}}"
+      ></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function() {
+
+    var builder = SGA.Reader.Application.SharedCanvas.builder({
+      progressTracker: SGA.Reader.Component.ProgressBar.initInstance(
+                           $("#loading-progress")
+                       )
+    });
+
+    if($.fn.popover != null) {
+      $("#metadata").popover({
+        title: "About this Manifest",
+        content: function() {
+          return "<p>We'll build up a list of items from the manifest.</p>";
+        },
+        html: true,
+        animation: true
+      });
+    }
+
+    builder.onManifest(
+      "{{static('Manifest.json')}}"
+    , function(app) {
+      var filter, pageSlider, pager;
+
+      filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", { 
+        dataView: app.dataView.sequences
+      });
+
+      pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
+
+      pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
+
+      pageSlider.events.onValueChange.addListener( app.setPosition );
+      pager.events.onValueChange.addListener( app.setPosition );
+
+      app.events.onPositionChange.addListener( function(n) {
+        app.lockPosition();
+        pageSlider.setValue(n);
+        pager.setValue(n);
+        app.unlockPosition();
+      } );
+
+      filter.events.onSequenceChange.addListener( app.setSequence );
+
+      app.events.onSequenceChange.addListener( function(s) {
+        var seq = app.dataStore.data.getItem(s);
+        if(seq != null && seq.sequence != null) {
+          pageSlider.setMin(0);
+          pager.setMin(0);
+
+          pageSlider.setMax(seq.sequence.length-1);
+          pager.setMax(seq.sequence.length-1);
+
+          if(!(app.getPosition() != null)) {
+            app.setPosition(0);
+          }
+        }
+      });
+
+      app.setSequence( filter.getSequence() );
+
+      app.events.onCanvasChange.addListener(function(c) {
+        var item = app.dataStore.data.getItem(c);
+        if(item.label !== undefined) {
+          $("#canvas-label").text(item.label[0]);
+        }
+        else {
+          $("#canvas-label").text("(no label)");
+        }
+      });
+
+      $('#test').click(function(){
+        app.loadManifests(["/annotate?q=text:feelings"])
+      });
+
+    });
+
+  });
+</script>
+<script>
+  
+</script>
+
+    </div>
+                </article>
+        </section>
+
+        <aside class="group">
+        </aside>
+
+        <footer class="group">
+
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="{{static('js/plugins.js')}}"></script>
+        <script src="{{static('js/main.js')}}"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </div>
+    <!-- /page -->
+
+  </body>
+</html>
+
+</body>
