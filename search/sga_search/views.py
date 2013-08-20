@@ -27,7 +27,9 @@ def index():
 @crossdomain.crossdomain(origin='*')
 def search():
     
-    def do_search(s, f, q):
+    def do_search(s, f, q, start=0):
+
+        pageLength = 20
 
         fields = f.split(",")
         fqs = []
@@ -39,12 +41,13 @@ def search():
             fl='shelfmark,id', 
             fq=fqs, 
             wt='json', 
-            rows='9999', 
+            start=start,
+            rows=pageLength, 
             hl='true', 
             hl_fl="text", 
             hl_fragsize='0',
-            hl_simple_pre='___',
-            hl_simple_post='___')
+            hl_simple_pre='_#_',
+            hl_simple_post='_#_')
         r = json.loads(response)
         results = {"numFound": r["response"]["numFound"], "results":[]}
 
@@ -52,8 +55,8 @@ def search():
             res = res_orig.copy()
             ident = res["id"]
             hl = " ".join(r["highlighting"][ident]["text"][0].replace(u"\u2038", u"").replace(u"\u2014", u"").split())
-            fragsize = 100
-            matches = [[m.start(),m.end()] for m in re.finditer(r'___.*?___', hl)]
+            fragsize = 200
+            matches = [[m.start(),m.end()] for m in re.finditer(r'_#_.*?_#_', hl)]
             res["hls"] = []
             for m in matches:
                 before = len(hl[:m[0]])
@@ -74,24 +77,25 @@ def search():
                         right+=1
                         total-=1
                     
-                hl_text = re.sub(r'___(.*?)___', r'<em>\1</em>', hl[left:right])
+                hl_text = re.sub(r'_#_(.*?)_#_', r'<em>\1</em>', hl[left:right])
                 res["hls"].append(hl_text)
             
             results["results"].append(res)
 
         return jsonify(results)
 
-
-
-    if len(request.args)==2 and "f" in request.args and "q" in request.args:
+    if 2 <= len(request.args) <= 3 and "f" in request.args and "q" in request.args:
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
-        # try:
-        s.conn.connect()
-        return do_search(s, request.args["f"], request.args["q"])
-        # except:
-        #     abort(500)
+        try:
+            s.conn.connect()
+            start = 0
+            if "s" in request.args: 
+                start = request.args["s"]
+            return do_search(s, request.args["f"], request.args["q"], start)
+        except:
+            abort(500)
 
     else:
         abort(400)   
