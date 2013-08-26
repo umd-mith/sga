@@ -4,9 +4,6 @@ from sga_search import sga_search, annotator, crossdomain
 
 import solr, urllib2, ast, uuid, re
 
-# Notes
-# Use request.args for GET and request.form for POST.
-# Use render_template(...) to override error messages with templates (or just return """<html>""", ERROR)
 
 sga_search.jinja_env.globals['static'] = (
     lambda filename: url_for('static', filename=filename))
@@ -17,8 +14,7 @@ def index():
     return """<!DOCTYPE html><html><head><title>SGA Search manager</title><p>Hic sunt leones.
 
     <ul>
-        <li><a href="annotate?q=text:feelings">Test annotation</a>
-        <li><a href="manifest?m=http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json&q=text:feelings">Test manifest + query</a>
+        <li><a href="annotate?f=text&q=feelings">Test search annotation</a>
     </ul>
 
     """
@@ -27,16 +23,22 @@ def index():
 @crossdomain.crossdomain(origin='*')
 def search():
     
-    def do_search(s, f, q, start=0):
+    def do_search(s, f, q, start=0, pageLength=20):
+        """ Send query to solr and prepare slimmed down JSON object for displaying results """
 
-        pageLength = 20
+        hl_simple_pre = '_#_'
+        hl_simple_post = '_#_'
 
+        # get solr fields from request
         fields = f.split(",")
         fqs = []
         if len(fields) > 0:
             fqs = fields[1:]
             fqs = [f+":"+q for f in fqs]
 
+        # send query, filter by fields (AND only at the moment), return highlights on text field.
+        # text field is the only one that keeps all the text with all the whitespace
+        # so all the positions are extracted from there.
         response = s.raw_query(q=fields[0]+":"+q, 
             fl='shelfmark,id', 
             fq=fqs, 
@@ -46,17 +48,25 @@ def search():
             hl='true', 
             hl_fl="text", 
             hl_fragsize='0',
-            hl_simple_pre='_#_',
-            hl_simple_post='_#_')
+            hl_simple_pre=hl_simple_pre,
+            hl_simple_post=hl_simple_post)
         r = json.loads(response)
+
+        # Start new object that will be the simplified JSON response
         results = {"numFound": r["response"]["numFound"], "results":[]}
 
+        # create an entry for each document found
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
             ident = res["id"]
+            # replacing unwanted unicode chars (like ^ and other metamarks)
             hl = " ".join(r["highlighting"][ident]["text"][0].replace(u"\u2038", u"").replace(u"\u2014", u"").split())
+            # hardcoded fragmentsize
             fragsize = 200
-            matches = [[m.start(),m.end()] for m in re.finditer(r'_#_.*?_#_', hl)]
+
+            # Create entries for each highlight. 
+            # A field can contain multiple highlights se we loop on them to create a different entry.
+            matches = [[m.start(),m.end()] for m in re.finditer(hl_simple_pre+r'.*?'+hl_simple_post, hl)]
             res["hls"] = []
             for m in matches:
                 before = len(hl[:m[0]])
@@ -84,6 +94,14 @@ def search():
 
         return jsonify(results)
 
+    # We expect two paramenters:
+    # f: a comma separated list of solr fields
+    # q: the string that will be queryed across the fields
+    #
+    # And one optional paramenter:
+    # s: the starting point for the results (pagination)
+    # 
+    # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
     if 2 <= len(request.args) <= 3 and "f" in request.args and "q" in request.args:
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
@@ -105,43 +123,48 @@ def search():
 @crossdomain.crossdomain(origin='*')
 def annotate():
     
-    def do_annotation(s, query):
+    def do_annotation(s, f, q):
         # This will probably stay hardcoded
         TEI_data = "http://sga.mith.org/sc-demo/tei/ox/"
+        hl_simple_pre = '_#_'
+        hl_simple_post = '_#_'
+        annotations = []
 
         # Create a UUID for this iteration
         uid = str(uuid.uuid4())
 
-        field_s = query.split(':')[0]
-        fields = field_s.split(',')
-        q = query.split(':')[1]
+        # get solr fields from request
+        fields = f.split(",")
+        fqs = []
+        if len(fields) > 0:
+            fqs = fields[1:]
+            fqs = [f+":"+q for f in fqs]
 
-        annotations = []
+        # send query, filter by fields (AND only at the moment), return highlights on text field.
+        # text field is the only one that keeps all the text with all the whitespace
+        # so all the positions are extracted from there.
+        #
+        # hl_fragsize=0 is important to calculate correct positions that SC will understand. 
+        response = s.raw_query(q=fields[0]+":"+q, 
+            fl='shelfmark,id', 
+            fq=fqs, 
+            wt='json', 
+            start=0,
+            rows=9999, 
+            hl='true', 
+            hl_fl="text", 
+            hl_fragsize='0',
+            hl_simple_pre=hl_simple_pre,
+            hl_simple_post=hl_simple_post)
+        r = json.loads(response)
 
-        short = ""
-        for f in fields:
-            if f == 'added':
-                short='add_pos'
-            elif f == 'deleted':
-                short='del_pos'
-            elif f == 'hand_mws':
-                short='mws_pos'
-            elif f == 'hand_pbs':
-                short='pbs_pos'
-            elif f == 'hand_comp':
-                short='comp_pos'
+        # Find all the highlights and make them into OA annotations
+        for i, TEI_id in enumerate(r["highlighting"]):            
+            hl = r["highlighting"][TEI_id]["text"][0]
+            
+            annotations += annotator.oa_annotations(hl, TEI_id, TEI_data, uid+":-"+str(i), hl_simple_pre, hl_simple_post)
 
-            if f != 'text':
-                response = s.raw_query(q=f+":"+q, fl=f+','+short, wt='json', rows='9999', hl='true', hl_fl=f, hl_fragsize='0')
-                r = json.loads(response)
-                annotations += annotator.do_hacky_things(f, short, r, TEI_data)
-
-            else:
-                response = s.query(f+":"+q, fields=f, highlight=True, hl_fragsize='0', rows='9999')
-                for i, TEI_id in enumerate(response.highlighting):
-                    hl = response.highlighting[TEI_id][f][0]
-                    annotations += [m for m in annotator.oa_annotations(f, hl, TEI_id, TEI_data, uid+":-"+str(i))]
-
+        # prepare a headless JSON
         final = {}
         for anno in annotations:
             for a in anno:
@@ -149,70 +172,18 @@ def annotate():
 
         return jsonify(final)
 
-    if len(request.args)==1 and "q" in request.args:
+    # We expect two paramenters:
+    # f: a comma separated list of solr fields
+    # q: the string that will be queryed across the fields
+    if len(request.args) == 2 and "f" in request.args and "q" in request.args:
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
         try:
             s.conn.connect()
-            return do_annotation(s, request.args["q"])
+            return do_annotation(s, request.args["f"], request.args["q"])
         except:
             abort(500)
 
     else:
-        abort(400)    
-
-@sga_search.route('/manifest', methods = ['GET'])
-@crossdomain.crossdomain(origin='*')
-def manifest():
-    """DEPRECATED"""
-    # Check parameters and return JSON
-    if len(request.args)==2 and "m" and "q" in request.args:
-        # Check parameters' well-formedness at this level
-        try:
-            manifest_string = urllib2.urlopen(request.args["m"])
-            manifest = ast.literal_eval("".join(manifest_string))
-
-            # Create a UUID for this iteration
-            uid = str(uuid.uuid4())
-
-            resource = { "http://www.openarchives.org/ore/terms/isDescribedBy" : [ { "type" : "bnode" ,
-                        "value" : "http://localhost:5000/annotate?q="+request.args["q"]
-                    }],
-                    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri" ,
-                            "value" : "http://www.openarchives.org/ore/terms/Aggregation"
-                        }, 
-                        { "type" : "uri" ,
-                            "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
-                        }, 
-                        { "type" : "uri" ,
-                            "value" : "http://www.shared-canvas.org/ns/TextAnnotationList"
-                        }]
-                    }
-
-            ext_URL = { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri" ,
-                            "value" : "http://www.openarchives.org/ore/terms/ResourceMap"
-                            }]
-                        }
-
-            aggr = [ { "type" : "bnode" , "value" : "_:"+uid }]
-
-            # Add aggregation to manifest's already existing description
-            manifest[request.args["m"]]["http://www.openarchives.org/ore/terms/aggregates"] = aggr
-
-            # Add resource and external URL to the manifest at root level
-            manifest["_:"+uid] = resource
-            manifest["http://localhost:5000/annotate?q="+request.args["q"]] = ext_URL
-
-            return jsonify(manifest)
-
-        except:
-            abort(500)
-    else:
-        abort(400)
-
-@sga_search.route('/demo', methods = ['GET'])
-@crossdomain.crossdomain(origin='*')
-def demo():
-    request.args
-    return render_template("demo.html")
+        abort(400) 
