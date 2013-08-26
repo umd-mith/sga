@@ -35,6 +35,9 @@ def search():
         if len(fields) > 0:
             fqs = fields[1:]
             fqs = [f+":"+q for f in fqs]
+        
+        # facets
+        fcts = ['added:'+q,'deleted:'+q,'hand_pbs:'+q,'hand_mws:'+q]
 
         # send query, filter by fields (AND only at the moment), return highlights on text field.
         # text field is the only one that keeps all the text with all the whitespace
@@ -44,20 +47,39 @@ def search():
             fq=fqs, 
             wt='json', 
             start=start,
-            rows=pageLength, 
+            rows=pageLength,
+            sort="shelfmark asc, id asc",
             hl='true', 
             hl_fl="text", 
             hl_fragsize='0',
             hl_simple_pre=hl_simple_pre,
-            hl_simple_post=hl_simple_post)
+            hl_simple_post=hl_simple_post,
+            facet='true',
+            facet_query=fcts)
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
-        results = {"numFound": r["response"]["numFound"], "results":[]}
+        results = {
+            "numFound": r["response"]["numFound"], 
+            "results":[],
+            "facets":{ "notebooks":{} }
+            }
+
+        # get facets
+        for fct in r["facet_counts"]["facet_queries"]:
+            f = fct.split(":")[0]
+            results["facets"][f] = r["facet_counts"]["facet_queries"][fct]
 
         # create an entry for each document found
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
+
+            shf = res["shelfmark"].strip()
+            if shf not in results["facets"]["notebooks"]:
+                results["facets"]["notebooks"][shf] = 1
+            else:
+                results["facets"]["notebooks"][shf] += 1
+
             ident = res["id"]
             # replacing unwanted unicode chars (like ^ and other metamarks)
             hl = " ".join(r["highlighting"][ident]["text"][0].replace(u"\u2038", u"").replace(u"\u2014", u"").split())
@@ -106,14 +128,14 @@ def search():
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
-        try:
-            s.conn.connect()
-            start = 0
-            if "s" in request.args: 
-                start = request.args["s"]
-            return do_search(s, request.args["f"], request.args["q"], start)
-        except:
-            abort(500)
+        # try:
+        s.conn.connect()
+        start = 0
+        if "s" in request.args: 
+            start = request.args["s"]
+        return do_search(s, request.args["f"], request.args["q"], start)
+        # except:
+        #     abort(500)
 
     else:
         abort(400)   
