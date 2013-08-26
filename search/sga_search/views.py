@@ -87,7 +87,7 @@ def search():
                         right+=1
                         total-=1
                     
-                hl_text = re.sub(r'_#_(.*?)_#_', r'<em>\1</em>', hl[left:right])
+                hl_text = re.sub(hl_simple_pre+r'(.*?)'+hl_simple_post, r'<em>\1</em>', hl[left:right])
                 res["hls"].append(hl_text)
             
             results["results"].append(res)
