@@ -86,17 +86,21 @@ def do_hacky_things(f, short, response, source_dir):
     return annotations
 
 
-def oa_annotations(f, hl, TEI_id, source_dir, uid):
+def oa_annotations(hl, TEI_id, source_dir, uid, hl_simple_pre, hl_simple_post):
     """ This function returns an ao:Annotation for highlighted text """
     
-    for i, m in enumerate(re.finditer(r'<em>([^<]+)</em>', hl)):
+    annos = []
+
+    for i, m in enumerate(re.finditer(hl_simple_pre+r'(.+?)'+hl_simple_post, hl)):
+        markers_len = len(hl_simple_pre) + len(hl_simple_post)
         cur_hl = len(m.group(1))
-        start = m.start()
+        # exclude markers from count
+        start = m.start() - (markers_len * i)
         end = start + (cur_hl)
 
-        anno = { "_:" + uid : 
+        anno = { "_:"+uid+"-"+str(i) : 
                     { "http://www.w3.org/ns/openannotation/core/hasTarget" : [ { "type" : "bnode" ,
-                        "value" : "_:"+uid+":-hT"
+                        "value" : "_:"+uid+"-"+str(i)+":-hT"
                     }],
                     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri" ,
                             "value" : "http://www.w3.org/ns/openannotation/core/Annotation"
@@ -109,7 +113,7 @@ def oa_annotations(f, hl, TEI_id, source_dir, uid):
                         }]
                     }
                 }
-        target = {"_:"+uid+":-hT" : 
+        target = {"_:"+uid+"-"+str(i)+":-hT" : 
                     { "http://www.w3.org/ns/openannotation/core/hasSource" : [ { "type" : "uri" ,
                         "value" : source_dir + TEI_id + ".xml"
                     }],
@@ -117,11 +121,11 @@ def oa_annotations(f, hl, TEI_id, source_dir, uid):
                         "value" : "http://www.w3.org/ns/openannotation/core/SpecificResource"
                     }] ,
                         "http://www.w3.org/ns/openannotation/core/hasSelector" : [ { "type" : "bnode" ,
-                            "value" : "_:"+uid+":-hS"
+                            "value" : "_:"+uid+"-"+str(i)+":-hS"
                         }]
                     }
                 }
-        selector = {"_:"+uid+":-hS" : { 
+        selector = {"_:"+uid+"-"+str(i)+":-hS" : { 
                         "http://www.w3.org/ns/openannotation/extension/begin" : [ { 
                           "type" : "literal" ,
                           "value" : start ,
@@ -141,7 +145,9 @@ def oa_annotations(f, hl, TEI_id, source_dir, uid):
                          ]
                     }}
 
-        return anno, target, selector
+        annos += [anno, target, selector]
+
+    return annos
 
 def TEI_positions (hl, TEI_id, source_dir):
     """ This function finds the positions of highlighted text in a *raw* TEI file """
