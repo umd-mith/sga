@@ -1,8 +1,9 @@
 # Shelley-Godwin Archive Search Framework
 
-This is a Flask framework for handling full-text and faceted search in SGA.
+This is a Flask app for handling full-text and faceted search in SGA.
 
-## What it will do eventually:
+There currently are two routers:
 
-* Update an existing Shared Canvas manifest with a query to Solr
-* Send the query to Solr and produce OA annotations to display on Shared Canvas
+* annotate: sends a query to solr and produces OA annotations of the highlights. This is used by the Shared Canvas viewer
+
+* search: sends a query to solr and produces a simplified JSON object for display. This is used by the full-text search page
