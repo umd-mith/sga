@@ -26,6 +26,16 @@ window.SGAsearch = {}
       "name"   : ""
       "num"    : 0
 
+  # Pages
+  class SGAsearch.Pages extends Backbone.Model
+    defaults:
+      "first"  : "disabled"
+      "prev"   : "disabled"
+      "next"   : "disabled"
+      "last"   : "disabled"
+      "pages"      : 1
+      "current"    : 1
+
 ## COLLECTIONS ##
 
   # SearchResult List
@@ -37,6 +47,20 @@ window.SGAsearch = {}
     model: SGAsearch.Facet
 
 ## VIEWS ##
+
+  class SGAsearch.PagesView extends Backbone.View
+    template: _.template $('#pagi-template').html()
+    initialize: ->
+      @listenTo @model, 'change', @render
+      @listenTo @model, 'destroy', @remove
+
+    render: ->
+      @$el.html @template(@model.toJSON())
+      @
+
+    remove: ->
+      @$el.remove()
+      @
 
   # SearchResult List View
   class SGAsearch.SearchResultListView extends Backbone.View
@@ -92,10 +116,18 @@ window.SGAsearch = {}
           o.fields += ",#{view.model.attributes.field}"
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
 
-      view.$el.find('i.icon-remove').click (e) ->
+      view.$el.find('span.label-danger').click (e) ->
         e.preventDefault()
         e.stopPropagation()
-        console.log "clicked X!"
+        if view.model.attributes.type == 'notebook'
+          f = "NOT%20shelfmark:#{view.model.attributes.name}"
+          if !o.filters? 
+            o.filters = f 
+          else 
+            o.filters += ",#{f}"
+        else
+          o.fields += ",NOT%20#{view.model.attributes.field}"
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
 
     clear: -> 
       @collection.each (m) -> m.trigger('destroy')
@@ -114,6 +146,15 @@ window.SGAsearch = {}
     remove: ->
       @$el.remove()
       @
+
+  SGAsearch.bindSort = (el) ->
+    console.log el
+
+  # SGAsearch.bindPagination = (el) ->
+  #   pagi = new SGAsearch.Pages()
+  #   view = new SGAsearch.PagesView {model: pagi}
+  #   el.append view.render().$el
+    
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null) ->   
 
@@ -138,6 +179,22 @@ window.SGAsearch = {}
       url += "&filters=#{filters}"
 
     console.log url
+
+    bindPagination = (tot) =>
+      console.log tot
+      pages = tot/20
+      pagi = new SGAsearch.Pages()
+
+      pagi.set
+        "first"  : "disabled"
+        "prev"   : "disabled"
+        "next"   : "disabled"
+        "last"   : "disabled"
+        "pages"      : pages
+        "current"    : @page+1
+
+      view = new SGAsearch.PagesView {model: pagi}
+      $(".pagination-sm").append view.render().$el
 
     updateResults = (res) =>
       # Results
@@ -239,6 +296,8 @@ window.SGAsearch = {}
           "num"  : res.facets.deleted      
 
       @r_flv.render $(facets).find('#r-list-rev'), srcOptions
+
+      bindPagination res.numFound
 
     $.ajax
       url: url

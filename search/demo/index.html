@@ -41,9 +41,9 @@
             <label for="r-sorting" class="control-label">Sort:</label>
             <div class="input-group">
               <select class="form-control" name="r-sortby" size="1">
-                <option value="rele" selected="selected">Relevance</option>
+                <option value="alph" selected="selected">Alphabetical</option>
                 <option value="freq">Frequency</option>
-                <option value="date">Date</option>
+                <!-- <option value="date">Date</option> -->
               </select>
               <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
             <div class="input-group">
@@ -55,14 +55,14 @@
           </div>
         </div>
         <div class="r-nav pull-right">
-          <ul class="pagination .pagination-sm">
-            <li><a href="#" class="nav-first disabled"><i class="icon-red icon-step-backward"></i></a></li>
+          <ul class="pagination pagination-sm">
+            <!-- <li><a href="#" class="nav-first disabled"><i class="icon-red icon-step-backward"></i></a></li>
             <li><a href="#" class="nav-prev disabled"><i class="icon-red icon-chevron-left"></i></a></li>
             <li><a href="#" class="active">1 <span class="sr-only">(current)</span></a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#" class="nav-next"><i class="icon-red icon-chevron-right"></i></a></li>
-            <li><a href="#" class="nav-last"><i class="icon-red icon-step-forward"></i></a></li>
+            <li><a href="#" class="nav-last"><i class="icon-red icon-step-forward"></i></a></li> -->
           </ul>
         </div>
       </form>
@@ -137,14 +137,8 @@
           </div>
         </div>
         <div class="r-nav pull-right">
-          <ul class="pagination .pagination-sm">
-            <li><a href="#" class="nav-first disabled"><i class="icon-red icon-step-backward"></i></a></li>
-            <li><a href="#" class="nav-prev disabled"><i class="icon-red icon-chevron-left"></i></a></li>
-            <li><a href="#" class="active">1 <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#" class="nav-next"><i class="icon-red icon-chevron-right"></i></a></li>
-            <li><a href="#" class="nav-last"><i class="icon-red icon-step-forward"></i></a></li>
+          <ul class="pagination pagination-sm">
+            
           </ul>
         </div>
       </form>
@@ -154,6 +148,31 @@
   <!--/results-info-sort--> 
 </div>
 <!--/r-footer-->
+
+<script type="text/template" id="pagi-template">
+  <li>
+    <a href="#" class="nav-first <%= first %>"><i class="icon-red icon-step-backward"></i></a>
+  </li>
+  <li>
+    <a href="#" class="nav-prev <%= prev %>"><i class="icon-red icon-chevron-left"></i></a>
+  </li>
+  <% _.each(_.range(1,pages+1), function(p){ %>
+    <li>
+    <a href="#" <% if (p == current) { %>
+      class="active"
+    <% } %> >
+    <%= p %>
+    <% if (p == current) { %>
+      <span class="sr-only">(current)</span>
+    <% } %> </li>
+  <% }); %>
+  <li>
+    <a href="#" class="nav-next <%= next %>"><i class="icon-red icon-chevron-right"></i></a>
+  </li>
+  <li>
+    <a href="#" class="nav-last <%= last %>"><i class="icon-red icon-step-forward"></i></a>
+  </li>
+</script>
 
 <script type="text/template" id="facet-template">
   <a href="#" class="list-group-item">
@@ -194,6 +213,8 @@
     $('#search-bar a').click( function() {
       $('#search-bar form').submit();
     });
+    SGAsearch.bindSort($(".r-sorting"));
+    // SGAsearch.bindPagination($(".pagination-sm"));
     $('#search-bar form').submit( function (e) {
       e.preventDefault();
       var service = "http://localhost:5000/search";
