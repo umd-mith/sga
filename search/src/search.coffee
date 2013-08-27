@@ -21,7 +21,9 @@ window.SGAsearch = {}
   # Facet
   class SGAsearch.Facet extends Backbone.Model
     defaults:
-      "name"   : "",
+      "type"   : ""
+      "field"  : ""
+      "name"   : ""
       "num"    : 0
 
 ## COLLECTIONS ##
@@ -71,16 +73,31 @@ window.SGAsearch = {}
   class SGAsearch.FacetListView extends Backbone.View
     target: null
 
-    render: (dest) ->
+    render: (dest, o) ->
       @target = dest
-      @collection.each @addOne, @
+      @collection.each ((m) -> @addOne(m, o)), @
       @
 
-    addOne: (model) =>
+    addOne: (model, o) ->
       view = new SGAsearch.FacetView {model: model}
       $(@target).append view.render().$el
+      @bindFacetControls view, o
 
-    clear: ->
+    bindFacetControls: (view, o) ->
+      view.$el.click (e) ->
+        e.preventDefault()
+        if view.model.attributes.type == 'notebook'
+          o.filters = "shelfmark:#{view.model.attributes.name}"
+        else
+          o.fields += ",#{view.model.attributes.field}"
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+
+      view.$el.find('i.icon-remove').click (e) ->
+        e.preventDefault()
+        e.stopPropagation()
+        console.log "clicked X!"
+
+    clear: -> 
       @collection.each (m) -> m.trigger('destroy')
 
   # Face View
@@ -98,7 +115,16 @@ window.SGAsearch = {}
       @$el.remove()
       @
 
-  SGAsearch.search = (service, query, facets, destination, page = 0) ->   
+  SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null) ->   
+
+    srcOptions = 
+      service : service
+      fields : fields
+      query : query
+      facets : facets
+      destination : destination
+      page : page
+      filters : filters
 
     if @srlv?
       @srlv.clear()
@@ -106,8 +132,12 @@ window.SGAsearch = {}
     @srl = new SGAsearch.SearchResultList()
     @srlv = new SGAsearch.SearchResultListView collection: @srl
 
-    fields = "text"
     url = "#{service}?q=#{query}&f=#{fields}"
+
+    if filters?
+      url += "&filters=#{filters}"
+
+    console.log url
 
     updateResults = (res) =>
       # Results
@@ -136,15 +166,23 @@ window.SGAsearch = {}
       @nb_fl = new SGAsearch.Facetlist()
       @nb_flv = new SGAsearch.FacetListView collection: @nb_fl 
 
-      for k,v of res.facets.notebooks
+      # sort notebook facet by frequency
+      orderedNBs = ([k, v] for k, v of res.facets.notebooks).sort (a, b) ->
+        b[1] - a[1]
+      .map (n) -> n[0]
+
+      # create models and add them to collection in the right order
+      for nb in orderedNBs
         f_nb = new SGAsearch.Facet()
         @nb_flv.collection.add f_nb
-
+        
         f_nb.set
-          "name" : k
-          "num" : v
+          "type" : "notebook"
+          "field" : "shelfmark"
+          "name" : nb
+          "num" : res.facets.notebooks[nb]
 
-      @nb_flv.render $(facets).find('#r-list-notebook')
+      @nb_flv.render $(facets).find('#r-list-notebook'), srcOptions
 
       ## Hand
 
@@ -154,21 +192,25 @@ window.SGAsearch = {}
       @h_fl = new SGAsearch.Facetlist()
       @h_flv = new SGAsearch.FacetListView collection: @h_fl 
 
-      f_h_mws = new SGAsearch.Facet()
-      f_h_pbs = new SGAsearch.Facet()
+      if parseInt(res.facets.hand_mws) > 0
+        f_h_mws = new SGAsearch.Facet()
+        @h_flv.collection.add f_h_mws
+        f_h_mws.set 
+          "type" : "hand"
+          "field" : "hand_mws"
+          "name" : "Mary Shelley"
+          "num"  : res.facets.hand_mws
 
-      @h_flv.collection.add f_h_mws
-      @h_flv.collection.add f_h_pbs
+      if parseInt(res.facets.hand_pbs) > 0
+        f_h_pbs = new SGAsearch.Facet()      
+        @h_flv.collection.add f_h_pbs
+        f_h_pbs.set 
+          "type" : "hand"
+          "field" : "hand_pbs"
+          "name" : "Percy Bysshe Shelley"
+          "num"  : res.facets.hand_pbs      
 
-      f_h_mws.set 
-        "name" : "Mary Shelley"
-        "num"  : res.facets.hand_mws
-
-      f_h_pbs.set 
-        "name" : "Percy Bysshe Shelley"
-        "num"  : res.facets.hand_pbs      
-
-      @h_flv.render $(facets).find('#r-list-hand')
+      @h_flv.render $(facets).find('#r-list-hand'), srcOptions
 
       ## Revision
 
@@ -178,21 +220,25 @@ window.SGAsearch = {}
       @r_fl = new SGAsearch.Facetlist()
       @r_flv = new SGAsearch.FacetListView collection: @r_fl 
 
-      f_add = new SGAsearch.Facet()
-      f_del = new SGAsearch.Facet()
+      if parseInt(res.facets.added) > 0
+        f_add = new SGAsearch.Facet()
+        @r_flv.collection.add f_add
+        f_add.set 
+          "type" : "rev"
+          "field" : "added"
+          "name" : "Added Passages"
+          "num"  : res.facets.added
 
-      @r_flv.collection.add f_add
-      @r_flv.collection.add f_del
+      if parseInt(res.facets.deleted) > 0
+        f_del = new SGAsearch.Facet()      
+        @r_flv.collection.add f_del
+        f_del.set 
+          "type" : "rev"
+          "field" : "deleted"
+          "name" : "Deleted Passages"
+          "num"  : res.facets.deleted      
 
-      f_add.set 
-        "name" : "Added Passages"
-        "num"  : res.facets.added
-
-      f_del.set 
-        "name" : "Deleted Passages"
-        "num"  : res.facets.deleted      
-
-      @r_flv.render $(facets).find('#r-list-rev')
+      @r_flv.render $(facets).find('#r-list-rev'), srcOptions
 
     $.ajax
       url: url
