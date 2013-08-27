@@ -23,7 +23,7 @@ def index():
 @crossdomain.crossdomain(origin='*')
 def search():
     
-    def do_search(s, f, q, start=0, pageLength=20):
+    def do_search(s, f, q, start, fq, pageLength=20):
         """ Send query to solr and prepare slimmed down JSON object for displaying results """
 
         hl_simple_pre = '_#_'
@@ -35,6 +35,9 @@ def search():
         if len(fields) > 0:
             fqs = fields[1:]
             fqs = [f+":"+q for f in fqs]
+
+        if fq != '':
+            fqs.append(fq.split(","))
         
         # facets
         fcts = ['added:'+q,'deleted:'+q,'hand_pbs:'+q,'hand_mws:'+q]
@@ -55,6 +58,7 @@ def search():
             hl_simple_pre=hl_simple_pre,
             hl_simple_post=hl_simple_post,
             facet='true',
+            facet_field='shelfmark',
             facet_query=fcts)
         r = json.loads(response)
 
@@ -70,15 +74,18 @@ def search():
             f = fct.split(":")[0]
             results["facets"][f] = r["facet_counts"]["facet_queries"][fct]
 
+        # solr returns facet fields and number of matches as a list (wtf?)
+        # Convert it into dictionary
+        smarks_l = r["facet_counts"]["facet_fields"]["shelfmark"]
+        smarks = dict(smarks_l[i:i+2] for i in range(0, len(smarks_l), 2))
+
+        for sm in smarks:
+            if int(smarks[sm]) > 0:
+                results["facets"]["notebooks"][sm] = int(smarks[sm])
+
         # create an entry for each document found
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
-
-            shf = res["shelfmark"].strip()
-            if shf not in results["facets"]["notebooks"]:
-                results["facets"]["notebooks"][shf] = 1
-            else:
-                results["facets"]["notebooks"][shf] += 1
 
             ident = res["id"]
             # replacing unwanted unicode chars (like ^ and other metamarks)
@@ -124,16 +131,19 @@ def search():
     # s: the starting point for the results (pagination)
     # 
     # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
-    if 2 <= len(request.args) <= 3 and "f" in request.args and "q" in request.args:
+    if 2 <= len(request.args) <= 4 and "f" in request.args and "q" in request.args:
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
         # try:
         s.conn.connect()
         start = 0
+        fq = ""
         if "s" in request.args: 
             start = request.args["s"]
-        return do_search(s, request.args["f"], request.args["q"], start)
+        if "filters" in request.args: 
+            fq = request.args["filters"]
+        return do_search(s, request.args["f"], request.args["q"], start, fq)
         # except:
         #     abort(500)
 
