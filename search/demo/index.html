@@ -159,12 +159,12 @@
   <% _.each(_.range(1,pages+1), function(p){ %>
     <li>
     <a href="#" <% if (p == current) { %>
-      class="active"
-    <% } %> >
-    <%= p %>
+      class="pg" 
+    <% } %> name="<%= p %>" >
+    <%= p %> 
     <% if (p == current) { %>
       <span class="sr-only">(current)</span>
-    <% } %> </li>
+    <% } %> </a></li>
   <% }); %>
   <li>
     <a href="#" class="nav-next <%= next %>"><i class="icon-red icon-chevron-right"></i></a>

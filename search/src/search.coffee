@@ -114,7 +114,7 @@ window.SGAsearch = {}
           o.filters = "shelfmark:#{view.model.attributes.name}"
         else
           o.fields += ",#{view.model.attributes.field}"
-        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
       view.$el.find('span.label-danger').click (e) ->
         e.preventDefault()
@@ -127,7 +127,7 @@ window.SGAsearch = {}
             o.filters += ",#{f}"
         else
           o.fields += ",NOT%20#{view.model.attributes.field}"
-        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
     clear: -> 
       @collection.each (m) -> m.trigger('destroy')
@@ -148,13 +148,7 @@ window.SGAsearch = {}
       @
 
   SGAsearch.bindSort = (el) ->
-    console.log el
-
-  # SGAsearch.bindPagination = (el) ->
-  #   pagi = new SGAsearch.Pages()
-  #   view = new SGAsearch.PagesView {model: pagi}
-  #   el.append view.render().$el
-    
+    console.log el    
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null) ->   
 
@@ -178,23 +172,54 @@ window.SGAsearch = {}
     if filters?
       url += "&filters=#{filters}"
 
+    if page > 0
+      url += "&s=#{page*20}"
+
     console.log url
 
-    bindPagination = (tot) =>
-      console.log tot
-      pages = tot/20
+    bindPagination = (tot) ->
+      pages = Math.ceil tot/20
       pagi = new SGAsearch.Pages()
+      current = page+1
+
+      first = "disabled"
+      prev = "disabled"
+      next = "disabled"
+      last = "disabled"
+
+      if current > 1
+        first = ""
+        prev = ""
+      else if current < pages
+        next = ""
+        last = ""
 
       pagi.set
-        "first"  : "disabled"
-        "prev"   : "disabled"
-        "next"   : "disabled"
-        "last"   : "disabled"
+        "first"  : first
+        "prev"   : prev
+        "next"   : next
+        "last"   : last
         "pages"      : pages
-        "current"    : @page+1
+        "current"    : current
 
       view = new SGAsearch.PagesView {model: pagi}
-      $(".pagination-sm").append view.render().$el
+      view.setElement $(".pagination-sm")
+      view.render().$el
+
+      view.$el.find('a').each (i,el) ->
+        $(el).click (ev) ->
+          ev.preventDefault()
+          o = srcOptions
+          btn = $(@)
+          o.page = switch
+            when btn.hasClass('nav-first') then 0
+            when btn.hasClass('nav-prev') then current - 2
+            when btn.hasClass('nav-next') then current
+            when btn.hasClass('nav-last') then pages - 1
+            else btn.attr("name") - 1
+          SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+
+      view.$el.find('.nav-first')
 
     updateResults = (res) =>
       # Results
