@@ -26,8 +26,8 @@ def search():
     def do_search(s, f, q, start, fq, sort, pageLength=20):
         """ Send query to solr and prepare slimmed down JSON object for displaying results """
 
-        hl_simple_pre = '_#_'
-        hl_simple_post = '_#_'
+        hl_simple_pre = '<em>'
+        hl_simple_post = '</em>'
 
         # get solr fields from request
         fields = f.split(",")
@@ -55,12 +55,13 @@ def search():
             sort=sort,
             hl='true', 
             hl_fl="text", 
-            hl_fragsize='0',
+            hl_fragsize='250',
             hl_simple_pre=hl_simple_pre,
             hl_simple_post=hl_simple_post,
+            hl_snippets=10,
             facet='true',
             facet_field='shelfmark',
-            facet_query=fcts)
+            facet_query=fcts,)
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
@@ -88,42 +89,14 @@ def search():
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
 
-            ident = res["id"]
-            # replacing unwanted unicode chars (like ^ and other metamarks)
-            hl = " ".join(r["highlighting"][ident]["text"][0].replace(u"\u2038", u"").replace(u"\u2014", u"").split())
-            # hardcoded fragmentsize
-            fragsize = 200
+            ident = res["id"]            
 
-            # Create entries for each highlight. 
-            # A field can contain multiple highlights se we loop on them to create a different entry.
-            matches = [[m.start(),m.end()] for m in re.finditer(hl_simple_pre+r'.*?'+hl_simple_post, hl)]
             res["hls"] = []
-            for m in matches:
 
-                # Wrap with <em> only the current match 
-                hlcopy = hl[:m[0]] + re.sub(hl_simple_pre+r'(.*?)'+hl_simple_post, r'<em>\1</em>', hl[m[0]:m[1]]) + hl[m[1]:]
-                # Clean other matches
-                hlcopy = re.sub(hl_simple_pre, '', hlcopy)
-                hlcopy = re.sub(hl_simple_post, '', hlcopy)
-
-                before = len(hl[:m[0]])
-                match = len(q)
-                after = len(hl[m[1]:])                
-
-                total = fragsize
-
-                left = m[0]
-                right = m[1]
-
-                while total > 0:
-                    if left > 0:
-                        left-=1
-                        total-=1
-                    if right < len(hl):
-                        right+=1
-                        total-=1
-                    
-                res["hls"].append(hlcopy[left:right])
+            for snip in r["highlighting"][ident]["text"]:
+                # replacing unwanted unicode chars (like ^ and other metamarks)
+                hl = " ".join(snip.replace(u"\u2038", u"").replace(u"\u2014", u"").replace(u"\u2013", u"").split())
+                res["hls"].append(hl)
             
             results["results"].append(res)
 
