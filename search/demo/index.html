@@ -156,7 +156,10 @@
   <li>
     <a href="#" class="nav-prev <%= prev %>"><i class="icon-red icon-chevron-left"></i></a>
   </li>
-  <% _.each(_.range(1,pages+1), function(p){ %>
+  <% if (pages > 3) {
+    var start = Math.max(1, current - 1);
+  } %>
+  <% _.each(_.range(start,pages+1), function(p){ %>
     <li>
     <a href="#" <% if (p == current) { %>
       class="pg" 
