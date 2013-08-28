@@ -23,7 +23,7 @@ def index():
 @crossdomain.crossdomain(origin='*')
 def search():
     
-    def do_search(s, f, q, start, fq, pageLength=20):
+    def do_search(s, f, q, start, fq, sort, pageLength=20):
         """ Send query to solr and prepare slimmed down JSON object for displaying results """
 
         hl_simple_pre = '_#_'
@@ -46,12 +46,13 @@ def search():
         # text field is the only one that keeps all the text with all the whitespace
         # so all the positions are extracted from there.
         response = s.raw_query(q=fields[0]+":"+q, 
+            q_op='AND',
             fl='shelfmark,id', 
             fq=fqs, 
             wt='json', 
             start=start,
             rows=pageLength,
-            sort="shelfmark asc, id asc",
+            sort=sort,
             hl='true', 
             hl_fl="text", 
             hl_fragsize='0',
@@ -98,12 +99,18 @@ def search():
             matches = [[m.start(),m.end()] for m in re.finditer(hl_simple_pre+r'.*?'+hl_simple_post, hl)]
             res["hls"] = []
             for m in matches:
+
+                # Wrap with <em> only the current match 
+                hlcopy = hl[:m[0]] + re.sub(hl_simple_pre+r'(.*?)'+hl_simple_post, r'<em>\1</em>', hl[m[0]:m[1]]) + hl[m[1]:]
+                # Clean other matches
+                hlcopy = re.sub(hl_simple_pre, '', hlcopy)
+                hlcopy = re.sub(hl_simple_post, '', hlcopy)
+
                 before = len(hl[:m[0]])
                 match = len(q)
                 after = len(hl[m[1]:])                
 
                 total = fragsize
-                total -= len(q)
 
                 left = m[0]
                 right = m[1]
@@ -116,8 +123,7 @@ def search():
                         right+=1
                         total-=1
                     
-                hl_text = re.sub(hl_simple_pre+r'(.*?)'+hl_simple_post, r'<em>\1</em>', hl[left:right])
-                res["hls"].append(hl_text)
+                res["hls"].append(hlcopy[left:right])
             
             results["results"].append(res)
 
@@ -131,19 +137,22 @@ def search():
     # s: the starting point for the results (pagination)
     # 
     # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
-    if 2 <= len(request.args) <= 4 and "f" in request.args and "q" in request.args:
+    if 2 <= len(request.args) <= 5 and "f" in request.args and "q" in request.args:
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
         # try:
         s.conn.connect()
         start = 0
+        sort = "shelfmark asc, id asc"
         fq = ""
         if "s" in request.args: 
             start = request.args["s"]
         if "filters" in request.args: 
             fq = request.args["filters"]
-        return do_search(s, request.args["f"], request.args["q"], start, fq)
+        if "sort" in request.args: 
+            sort = request.args["sort"]
+        return do_search(s, request.args["f"], request.args["q"], start, fq, sort)
         # except:
         #     abort(500)
 

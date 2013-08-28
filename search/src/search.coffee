@@ -147,7 +147,7 @@ window.SGAsearch = {}
       @$el.remove()
       @  
 
-  SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null) ->   
+  SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
 
     srcOptions = 
       service : service
@@ -157,6 +157,7 @@ window.SGAsearch = {}
       destination : destination
       page : page
       filters : filters
+      srt: sort
 
     if @srlv?
       @srlv.clear()
@@ -172,10 +173,27 @@ window.SGAsearch = {}
     if page > 0
       url += "&s=#{page*20}"
 
+    if sort?
+      url += "&sort=#{sort}"
+
     console.log url
 
-    # bindSort = () ->
-    #   $(".r-sorting")
+    bindSort = () ->
+      sortBy = $(".r-sorting").find('[name=r-sortby]')
+      order = $(".r-sorting").find('[name=r-sort]')
+
+      sortSearch = ->
+        sv = sortBy.val()
+        ov = order.val()
+        o = srcOptions
+        o.srt = "#{sv}%20#{ov},id%20#{ov}"
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters, o.srt)
+
+      sortBy.change ->
+        sortSearch()
+        
+      order.change ->
+        sortSearch()
 
     bindPagination = (tot) ->
       pages = Math.ceil tot/20
@@ -322,7 +340,9 @@ window.SGAsearch = {}
 
       @r_flv.render $(facets).find('#r-list-rev'), srcOptions
 
+      # Connect UI components
       bindPagination res.numFound
+      bindSort()
 
     $.ajax
       url: url
