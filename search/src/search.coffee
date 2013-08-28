@@ -145,10 +145,7 @@ window.SGAsearch = {}
 
     remove: ->
       @$el.remove()
-      @
-
-  SGAsearch.bindSort = (el) ->
-    console.log el    
+      @  
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null) ->   
 
@@ -176,6 +173,9 @@ window.SGAsearch = {}
       url += "&s=#{page*20}"
 
     console.log url
+
+    # bindSort = () ->
+    #   $(".r-sorting")
 
     bindPagination = (tot) ->
       pages = Math.ceil tot/20
@@ -206,7 +206,7 @@ window.SGAsearch = {}
       view.setElement $(".pagination-sm")
       view.render().$el
 
-      view.$el.find('a').each (i,el) ->
+      view.$el.find('a:not(.dots)').each (i,el) ->
         $(el).click (ev) ->
           ev.preventDefault()
           o = srcOptions

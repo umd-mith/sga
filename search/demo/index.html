@@ -163,7 +163,12 @@
       start = Math.max(1, current - 1);
       start = pages == current ? Math.max(1, current - 2) : start;
       end = Math.min(end, start + 3);
-  } %>
+
+      if (current > 2) {
+        %><li><a class="dots">…</a></li><%
+      }
+    } 
+  %>
   <% _.each(_.range(start,end), function(p){ %>
     <li>
     <a href="#" <% if (p == current) { %>
@@ -174,6 +179,11 @@
       <span class="sr-only">(current)</span>
     <% } %> </a></li>
   <% }); %>
+  <%  
+    if (pages > 3 && current < pages-1) {
+      %><li><a class="dots">…</a></li><%
+    }
+  %>
   <li>
     <a href="#" class="nav-next <%= next %>"><i class="icon-red icon-chevron-right"></i></a>
   </li>
@@ -221,8 +231,6 @@
     $('#search-bar a').click( function() {
       $('#search-bar form').submit();
     });
-    SGAsearch.bindSort($(".r-sorting"));
-    // SGAsearch.bindPagination($(".pagination-sm"));
     $('#search-bar form').submit( function (e) {
       e.preventDefault();
       var service = "http://localhost:5000/search";
