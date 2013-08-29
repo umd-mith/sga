@@ -63,22 +63,26 @@ SGAReader.namespace "Component", (Component) ->
       MITHgrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
         options = that.options
         that.addLens 'Sequence', (container, view, model, id) ->
-          rendering = {}
-          item = model.getItem id
-          el = $("<option></option>")
-          el.attr
-            value: id
-          el.text item.label?[0]
-          $(container).append(el)
+          
+          that.setSequence id
 
-        $(container).change ->
-          that.setSequence $(container).val()
+          if $(container).is "select"
+            rendering = {}
+            item = model.getItem id
+            el = $("<option></option>")
+            el.attr
+              value: id
+            el.text item.label?[0]
+            $(container).append(el)
 
-        that.events.onSequenceChange.addListener (v) ->
-          $(container).val(v)
+            $(container).change ->
+              that.setSequence $(container).val()
 
-        that.finishDisplayUpdate = ->
-          that.setSequence $(container).val()
+            that.events.onSequenceChange.addListener (v) ->
+              $(container).val(v)
+
+            that.finishDisplayUpdate = ->
+              that.setSequence $(container).val()
 
   #
   # ## Component.Slider
@@ -125,10 +129,10 @@ SGAReader.namespace "Component", (Component) ->
           n = $.bbq.getState "n" 
           that.setValue n-1
 
-        firstEl = $(container).find(".icon-fast-backward").parent()
-        prevEl = $(container).find(".icon-step-backward").parent()
-        nextEl = $(container).find(".icon-step-forward").parent()
-        lastEl = $(container).find(".icon-fast-forward").parent()
+        firstEl = $(container).find("#first-page")
+        prevEl = $(container).find("#prev-page")
+        nextEl = $(container).find("#next-page")
+        lastEl = $(container).find("#last-page")
 
         that.events.onMinChange.addListener (n) ->
           if n < that.getValue()
@@ -188,10 +192,10 @@ SGAReader.namespace "Component", (Component) ->
   Component.namespace "ImageControls", (ImageControls) ->
     ImageControls.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
-        resetEl = $(container).find(".icon-picture").parent()
-        inEl = $(container).find(".icon-zoom-in").parent()
-        outEl = $(container).find(".icon-zoom-out").parent()
-        marqueeEl = $(container).find(".icon-eye-open").parent()
+        resetEl = $(container).find("#zoom-reset")
+        inEl = $(container).find("#zoom-in")
+        outEl = $(container).find("#zoom-out")
+        marqueeEl = $(container).find("#marquee-sh")
 
         $(resetEl).click (e) ->
           e.preventDefault()
@@ -238,14 +242,38 @@ SGAReader.namespace "Component", (Component) ->
         container = args[0]
         that.setServiceURL service
 
-        # console.log $(container).closest('form')
+        srcButton = $('#search-btn')
+        srcForm = $(container).closest('form')
 
-        $(container).closest('form').submit (e) ->
+        if srcButton?
+          srcButton.click () ->
+            srcForm.submit()        
+
+        srcForm.submit (e) ->
           e.preventDefault()
-          val = $(container).val()
+          fields_html = $('#limit-search').find('input:checked')
+          fields = ""
+          if fields_html.length == 0
+            fields = "text"
+          else
+            for f,i in fields_html
+              fields += $(f).val()
+              if i+1 != fields_html.length
+                fields +=  ','
+          val = $(container).find('input').val()
           if !val.match '^\s*$'
-            that.setQuery val
+            that.setQuery "f="+fields+"&q="+val
           false
-          
 
-        # On submit function go here and they will simply change the variable Query
+  Component.namespace "ModeControls", (ModeControls) ->
+    ModeControls.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
+
+        imgOnly = $(container).find("#img-only")
+        text = $(container).find("#mode-rdg")
+        xml = $(container).find("#mode-xml")
+        std = $(container).find("#mode-std")
+
+        $(imgOnly).click (e) ->
+          e.preventDefault()
+          that.setImgOnly(true)

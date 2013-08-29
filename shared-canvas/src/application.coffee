@@ -71,8 +71,8 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
-          Q.fcall(that.loadCanvas, k).then () -> 
-              pp[0].setCanvas k for pp in presentations
+          Q.nfcall(that.loadCanvas, k).then () -> 
+              setTimeout (-> pp[0].setCanvas k for pp in presentations), 100
           k
 
         #
