@@ -69,7 +69,7 @@ MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
 
 MITHgrid.defaults 'SGA.Reader.Component.Spinner',
   viewSetup: """
-    <img src="images/spinner.gif"/>
+    <i class="icon-spinner icon-spin icon-3x"></i>
   """
 
 #
@@ -83,6 +83,7 @@ MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
+    ImgOnly: { is: 'rw' }
 
 #
 # The ItemsToProcess and ItemsProcessed are analagous to the
@@ -103,5 +104,10 @@ MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
 
 MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
   variables:
+    Field: { is: 'rw', default: false }
     Query: { is: 'rw', default: false }
     ServiceURL: { is: 'rw', default: false }
+
+MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
+  variables:
+    ImgOnly: { is: 'rw', default: false }

@@ -14,3 +14,7 @@ SGA uses Shared Canvas to produce the facsimile edition. This viewer is built
 on the MITHGrid framework to provide a flexible, extensible Shared Canvas
 viewer that can respond to faceted browsing of annotations and text features.
 
+## search
+
+Code for indexing our TEI files in Solr, a web service for querying them, and an example UI.
+
