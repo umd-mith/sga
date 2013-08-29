@@ -11,6 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
 <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
 <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js?mr4i2q"></script>
 </head>
 
@@ -232,15 +233,14 @@
     $('#search-bar a').click( function() {
       $('#search-bar form').submit();
     });
-    $('#search-bar form').submit( function (e) {
-      e.preventDefault();
-      var service = "http://localhost:5000/search";
-      var query = $('#search-bar input').val();
-      var options = $('#refine-results');
-      var destination = $('#results-grid ul');
-      SGAsearch.search(service, query, options, destination);
-      return false;
-    });
+
+     var service = "http://localhost:5000/search";
+     var input = $('#search-bar form');
+     var filters = $('#refine-results');
+     var destination = $('#results-grid ul');
+
+    SGAsearch.init(service, input, filters, destination);
+    
   });
 </script>
 

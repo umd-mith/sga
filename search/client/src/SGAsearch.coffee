@@ -147,6 +147,32 @@ window.SGAsearch = {}
       @$el.remove()
       @  
 
+## HISTORY ##
+
+  SGAsearch.trackState = () ->
+    console.log $.bbq.getState()
+    if $.bbq.getState("f")? and $.bbq.getState ("q")?
+      console.log 'h'
+      SGAsearch.search("http://localhost:5000/search", $.bbq.getState("q"), $('#refine-results'), $('#results-grid ul'), $.bbq.getState("f"))
+
+
+## INIT ##
+
+  SGAsearch.init = (service, input, facets, destination) ->
+    SGAsearch.service = service
+    SGAsearch.facets = facets
+    SGAsearch.destination = destination
+
+    SGAsearch.trackState()
+
+    input.submit (e) ->
+      e.preventDefault()
+      query = input.find('input').val()
+      SGAsearch.search(service, query, facets, destination);
+      false
+
+## SEARCH ##
+
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
 
     srcOptions = 
@@ -177,6 +203,11 @@ window.SGAsearch = {}
       url += "&sort=#{sort}"
 
     console.log url
+
+    setHistory = () ->
+      $.bbq.pushState
+        f: fields
+        q: query
 
     bindSort = () ->
       sortBy = $(".r-sorting").find('[name=r-sortby]')
@@ -343,6 +374,9 @@ window.SGAsearch = {}
       # Connect UI components
       bindPagination res.numFound
       bindSort()
+
+      # Track history
+      setHistory()
 
     $.ajax
       url: url

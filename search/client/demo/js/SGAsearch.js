@@ -279,8 +279,30 @@
       return FacetView;
 
     })(Backbone.View);
+    SGAsearch.trackState = function() {
+      console.log($.bbq.getState());
+      if (($.bbq.getState("f") != null) && $.bbq.getState("q" != null)) {
+        console.log('h');
+        return SGAsearch.search("http://localhost:5000/search", $.bbq.getState("q"), $('#refine-results'), $('#results-grid ul'), $.bbq.getState("f"));
+      }
+    };
+    SGAsearch.init = function(service, input, facets, destination) {
+      SGAsearch.service = service;
+      SGAsearch.facets = facets;
+      SGAsearch.destination = destination;
+      SGAsearch.trackState();
+      return input.submit(function(e) {
+        var query;
+
+        console.log('h');
+        e.preventDefault();
+        query = input.find('input').val();
+        SGAsearch.search(service, query, facets, destination);
+        return false;
+      });
+    };
     return SGAsearch.search = function(service, query, facets, destination, fields, page, filters, sort) {
-      var bindPagination, bindSort, srcOptions, updateResults, url,
+      var bindPagination, bindSort, setHistory, srcOptions, updateResults, url,
         _this = this;
 
       if (fields == null) {
@@ -323,6 +345,12 @@
         url += "&sort=" + sort;
       }
       console.log(url);
+      setHistory = function() {
+        return $.bbq.pushState({
+          f: fields,
+          q: query
+        });
+      };
       bindSort = function() {
         var order, sortBy, sortSearch;
 
@@ -506,7 +534,8 @@
         }
         _this.r_flv.render($(facets).find('#r-list-rev'), srcOptions);
         bindPagination(res.numFound);
-        return bindSort();
+        bindSort();
+        return setHistory();
       };
       return $.ajax({
         url: url,
