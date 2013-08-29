@@ -24,7 +24,8 @@
   </div>
   <div class="col-lg-7 col-7 col-sm-5" id="search-instructions">
     <h4>How To Search</h4>
-    Nulla rutrum turpis id urna condimentum pellentesque. Curabitur vitae mi est. Aenean nec commodo mi. Integer dignissim viverra ante vulputate iaculis.</div>
+    <p>Write a query in the search field. All words must be found on a page to be returned. Use <em>OR</em> between words to look for any of the words. Use inverted commas "" to look for word ocurring together.</p>
+  </div>
 </div>
 <div class="row r-header">
   <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
@@ -41,15 +42,15 @@
             <label for="r-sorting" class="control-label">Sort:</label>
             <div class="input-group">
               <select class="form-control" name="r-sortby" size="1">
-                <option value="alph" selected="selected">Alphabetical</option>
-                <option value="freq">Frequency</option>
+                <option value="score" selected="selected">Relevance</option>
+                <option value="shelfmark">Alphabetical</option>
                 <!-- <option value="date">Date</option> -->
               </select>
               <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
             <div class="input-group">
               <select class="form-control" name="r-sort" size="1">
-                <option value="asc">Ascending</option>
-                <option value="dec">Decending</option>
+                <option value="asc" selected>Ascending</option>
+                <option value="desc">Decending</option>
               </select>
               <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
           </div>
@@ -156,16 +157,34 @@
   <li>
     <a href="#" class="nav-prev <%= prev %>"><i class="icon-red icon-chevron-left"></i></a>
   </li>
-  <% _.each(_.range(1,pages+1), function(p){ %>
+  <% 
+    var start = 1;
+    var end = pages + 1;
+    if (pages > 3) {
+      start = Math.max(1, current - 1);
+      start = pages == current ? Math.max(1, current - 2) : start;
+      end = Math.min(end, start + 3);
+
+      if (current > 2) {
+        %><li><a class="dots">…</a></li><%
+      }
+    } 
+  %>
+  <% _.each(_.range(start,end), function(p){ %>
     <li>
     <a href="#" <% if (p == current) { %>
-      class="active"
-    <% } %> >
-    <%= p %>
+      class="pg" 
+    <% } %> name="<%= p %>" >
+    <%= p %> 
     <% if (p == current) { %>
       <span class="sr-only">(current)</span>
-    <% } %> </li>
+    <% } %> </a></li>
   <% }); %>
+  <%  
+    if (pages > 3 && current < pages-1) {
+      %><li><a class="dots">…</a></li><%
+    }
+  %>
   <li>
     <a href="#" class="nav-next <%= next %>"><i class="icon-red icon-chevron-right"></i></a>
   </li>
@@ -213,8 +232,6 @@
     $('#search-bar a').click( function() {
       $('#search-bar form').submit();
     });
-    SGAsearch.bindSort($(".r-sorting"));
-    // SGAsearch.bindPagination($(".pagination-sm"));
     $('#search-bar form').submit( function (e) {
       e.preventDefault();
       var service = "http://localhost:5000/search";
