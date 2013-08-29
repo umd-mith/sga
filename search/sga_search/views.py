@@ -79,7 +79,7 @@ def search():
         # solr returns facet fields and number of matches as a list (wtf?)
         # Convert it into dictionary
         smarks_l = r["facet_counts"]["facet_fields"]["shelfmark"]
-        smarks = dict(smarks_l[i:i+2] for i in range(0, len(smarks_l), 2))
+        smarks = dict(smarks_l[i:i+2] ofr i in range(0, len(smarks_l), 2))
 
         for sm in smarks:
             if int(smarks[sm]) > 0:
