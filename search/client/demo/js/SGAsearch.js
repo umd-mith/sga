@@ -334,7 +334,7 @@
           sv = sortBy.val();
           ov = order.val();
           o = srcOptions;
-          o.srt = "" + sv + "%20" + ov + ", id%20" + ov;
+          o.srt = "" + sv + "%20" + ov + ",id%20" + ov;
           return SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters, o.srt);
         };
         sortBy.change(function() {

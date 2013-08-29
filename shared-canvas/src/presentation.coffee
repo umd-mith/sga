@@ -81,6 +81,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
         options = that.options
         svgRoot = options.svgRoot
 
+        app = that.options.application()
+
         #
         # !target gives us all of the annotations that target the given
         # item id. We use this later to find all of the annotations that target
@@ -136,7 +138,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           item = model.getItem id
 
-          app = that.options.application()
+          
 
           # Activate imageControls
           app.imageControls.setActive(true)
@@ -538,6 +540,23 @@ SGAReader.namespace "Presentation", (Presentation) ->
           key: null
 
         realCanvas = null
+
+        that.events.onImgOnlyChange.addListener () ->
+          canvasWidth = item.width?[0] || 1
+          canvasHeight = item.height?[0] || 1
+          that.setScale (parseInt($(container).parent().width()) / canvasWidth)
+          if realCanvas?
+            realCanvas.hide() if realCanvas.hide?
+            realCanvas._destroy() if realCanvas._destroy?
+          SVG (svgRoot) ->
+            svgRoot.clear()
+            realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
+              types: options.types
+              dataView: dataView
+              application: options.application
+              height: canvasHeight
+              width: canvasWidth
+              svgRoot: svgRoot
 
         that.events.onCanvasChange.addListener (canvas) ->
           dataView.setKey(canvas)
