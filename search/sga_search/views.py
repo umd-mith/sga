@@ -23,11 +23,11 @@ def index():
 @crossdomain.crossdomain(origin='*')
 def search():
     
-    def do_search(s, f, q, start, fq, pageLength=20):
+    def do_search(s, f, q, start, fq, sort, pageLength=20):
         """ Send query to solr and prepare slimmed down JSON object for displaying results """
 
-        hl_simple_pre = '_#_'
-        hl_simple_post = '_#_'
+        hl_simple_pre = '<em>'
+        hl_simple_post = '</em>'
 
         # get solr fields from request
         fields = f.split(",")
@@ -46,20 +46,22 @@ def search():
         # text field is the only one that keeps all the text with all the whitespace
         # so all the positions are extracted from there.
         response = s.raw_query(q=fields[0]+":"+q, 
+            q_op='AND',
             fl='shelfmark,id', 
             fq=fqs, 
             wt='json', 
             start=start,
             rows=pageLength,
-            sort="shelfmark asc, id asc",
+            sort=sort,
             hl='true', 
             hl_fl="text", 
-            hl_fragsize='0',
+            hl_fragsize='250',
             hl_simple_pre=hl_simple_pre,
             hl_simple_post=hl_simple_post,
+            hl_snippets=10,
             facet='true',
             facet_field='shelfmark',
-            facet_query=fcts)
+            facet_query=fcts,)
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
@@ -77,7 +79,7 @@ def search():
         # solr returns facet fields and number of matches as a list (wtf?)
         # Convert it into dictionary
         smarks_l = r["facet_counts"]["facet_fields"]["shelfmark"]
-        smarks = dict(smarks_l[i:i+2] for i in range(0, len(smarks_l), 2))
+        smarks = dict(smarks_l[i:i+2] ofr i in range(0, len(smarks_l), 2))
 
         for sm in smarks:
             if int(smarks[sm]) > 0:
@@ -87,37 +89,14 @@ def search():
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
 
-            ident = res["id"]
-            # replacing unwanted unicode chars (like ^ and other metamarks)
-            hl = " ".join(r["highlighting"][ident]["text"][0].replace(u"\u2038", u"").replace(u"\u2014", u"").split())
-            # hardcoded fragmentsize
-            fragsize = 200
+            ident = res["id"]            
 
-            # Create entries for each highlight. 
-            # A field can contain multiple highlights se we loop on them to create a different entry.
-            matches = [[m.start(),m.end()] for m in re.finditer(hl_simple_pre+r'.*?'+hl_simple_post, hl)]
             res["hls"] = []
-            for m in matches:
-                before = len(hl[:m[0]])
-                match = len(q)
-                after = len(hl[m[1]:])                
 
-                total = fragsize
-                total -= len(q)
-
-                left = m[0]
-                right = m[1]
-
-                while total > 0:
-                    if left > 0:
-                        left-=1
-                        total-=1
-                    if right < len(hl):
-                        right+=1
-                        total-=1
-                    
-                hl_text = re.sub(hl_simple_pre+r'(.*?)'+hl_simple_post, r'<em>\1</em>', hl[left:right])
-                res["hls"].append(hl_text)
+            for snip in r["highlighting"][ident]["text"]:
+                # replacing unwanted unicode chars (like ^ and other metamarks)
+                hl = " ".join(snip.replace(u"\u2038", u"").replace(u"\u2014", u"").replace(u"\u2013", u"").split())
+                res["hls"].append(hl)
             
             results["results"].append(res)
 
@@ -131,19 +110,22 @@ def search():
     # s: the starting point for the results (pagination)
     # 
     # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
-    if 2 <= len(request.args) <= 4 and "f" in request.args and "q" in request.args:
+    if 2 <= len(request.args) <= 5 and "f" in request.args and "q" in request.args:
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
         # try:
         s.conn.connect()
         start = 0
+        sort = "shelfmark asc, id asc"
         fq = ""
         if "s" in request.args: 
             start = request.args["s"]
         if "filters" in request.args: 
             fq = request.args["filters"]
-        return do_search(s, request.args["f"], request.args["q"], start, fq)
+        if "sort" in request.args: 
+            sort = request.args["sort"]
+        return do_search(s, request.args["f"], request.args["q"], start, fq, sort)
         # except:
         #     abort(500)
 

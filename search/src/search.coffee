@@ -114,7 +114,7 @@ window.SGAsearch = {}
           o.filters = "shelfmark:#{view.model.attributes.name}"
         else
           o.fields += ",#{view.model.attributes.field}"
-        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
       view.$el.find('span.label-danger').click (e) ->
         e.preventDefault()
@@ -127,7 +127,7 @@ window.SGAsearch = {}
             o.filters += ",#{f}"
         else
           o.fields += ",NOT%20#{view.model.attributes.field}"
-        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
     clear: -> 
       @collection.each (m) -> m.trigger('destroy')
@@ -145,18 +145,9 @@ window.SGAsearch = {}
 
     remove: ->
       @$el.remove()
-      @
+      @  
 
-  SGAsearch.bindSort = (el) ->
-    console.log el
-
-  # SGAsearch.bindPagination = (el) ->
-  #   pagi = new SGAsearch.Pages()
-  #   view = new SGAsearch.PagesView {model: pagi}
-  #   el.append view.render().$el
-    
-
-  SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null) ->   
+  SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
 
     srcOptions = 
       service : service
@@ -166,6 +157,7 @@ window.SGAsearch = {}
       destination : destination
       page : page
       filters : filters
+      srt: sort
 
     if @srlv?
       @srlv.clear()
@@ -178,23 +170,74 @@ window.SGAsearch = {}
     if filters?
       url += "&filters=#{filters}"
 
+    if page > 0
+      url += "&s=#{page*20}"
+
+    if sort?
+      url += "&sort=#{sort}"
+
     console.log url
 
-    bindPagination = (tot) =>
-      console.log tot
-      pages = tot/20
+    bindSort = () ->
+      sortBy = $(".r-sorting").find('[name=r-sortby]')
+      order = $(".r-sorting").find('[name=r-sort]')
+
+      sortSearch = ->
+        sv = sortBy.val()
+        ov = order.val()
+        o = srcOptions
+        o.srt = "#{sv}%20#{ov},id%20#{ov}"
+        SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters, o.srt)
+
+      sortBy.change ->
+        sortSearch()
+        
+      order.change ->
+        sortSearch()
+
+    bindPagination = (tot) ->
+      pages = Math.ceil tot/20
       pagi = new SGAsearch.Pages()
+      current = page+1
+
+      first = "disabled"
+      prev = "disabled"
+      next = "disabled"
+      last = "disabled"
+
+      if current > 1
+        first = ""
+        prev = ""
+      else if current < pages
+        next = ""
+        last = ""
 
       pagi.set
-        "first"  : "disabled"
-        "prev"   : "disabled"
-        "next"   : "disabled"
-        "last"   : "disabled"
+        "first"  : first
+        "prev"   : prev
+        "next"   : next
+        "last"   : last
         "pages"      : pages
-        "current"    : @page+1
+        "current"    : current
 
       view = new SGAsearch.PagesView {model: pagi}
-      $(".pagination-sm").append view.render().$el
+      view.setElement $(".pagination-sm")
+      view.render().$el
+
+      view.$el.find('a:not(.dots)').each (i,el) ->
+        $(el).click (ev) ->
+          ev.preventDefault()
+          o = srcOptions
+          btn = $(@)
+          o.page = switch
+            when btn.hasClass('nav-first') then 0
+            when btn.hasClass('nav-prev') then current - 2
+            when btn.hasClass('nav-next') then current
+            when btn.hasClass('nav-last') then pages - 1
+            else btn.attr("name") - 1
+          SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
+
+      view.$el.find('.nav-first')
 
     updateResults = (res) =>
       # Results
@@ -297,7 +340,9 @@ window.SGAsearch = {}
 
       @r_flv.render $(facets).find('#r-list-rev'), srcOptions
 
+      # Connect UI components
       bindPagination res.numFound
+      bindSort()
 
     $.ajax
       url: url
