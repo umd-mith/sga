@@ -280,23 +280,25 @@
 
     })(Backbone.View);
     SGAsearch.updateSearch = function(service, facets, destination) {
-      var f, nb, p, q;
+      return $(window).bind("hashchange", function(e) {
+        var f, nb, p, q;
 
-      q = $.bbq.getState('q');
-      f = $.bbq.getState('f');
-      p = $.bbq.getState('p');
-      nb = $.bbq.getState('nb');
-      if ((q != null) && (f != null)) {
-        if (p == null) {
-          p = 0;
-        } else {
-          p -= 1;
+        q = $.bbq.getState('q');
+        f = $.bbq.getState('f');
+        p = $.bbq.getState('p');
+        nb = $.bbq.getState('nb');
+        if ((q != null) && (f != null)) {
+          if (p == null) {
+            p = 0;
+          } else {
+            p -= 1;
+          }
+          if (nb == null) {
+            nb = null;
+          }
+          return SGAsearch.search(service, q, facets, destination, f, p, nb);
         }
-        if (nb == null) {
-          nb = null;
-        }
-        return SGAsearch.search(service, q, facets, destination, f, p, nb);
-      }
+      });
     };
     return SGAsearch.search = function(service, query, facets, destination, fields, page, filters, sort) {
       var bindPagination, bindSort, setHistory, srcOptions, updateResults, url,
@@ -420,19 +422,31 @@
         return view.$el.find('.nav-first');
       };
       setHistory = function() {
-        $.bbq.pushState({
-          q: query,
-          f: fields
-        });
-        if (page > 0) {
+        var cur_f, cur_nb, cur_p, cur_q;
+
+        cur_q = $.bbq.getState('q');
+        cur_f = $.bbq.getState('f');
+        cur_p = $.bbq.getState('p');
+        cur_nb = parseInt($.bbq.getState('nb') - 1);
+        if (cur_q !== query && cur_f !== fields) {
           $.bbq.pushState({
-            p: page + 1
+            q: query,
+            f: fields
           });
         }
-        if (filters != null) {
-          return $.bbq.pushState({
-            nb: filters
-          });
+        if (cur_p !== page) {
+          if (page > 0) {
+            $.bbq.pushState({
+              p: page + 1
+            });
+          }
+        }
+        if (cur_nb !== filters) {
+          if (filters != null) {
+            return $.bbq.pushState({
+              nb: filters
+            });
+          }
         }
       };
       updateResults = function(res) {

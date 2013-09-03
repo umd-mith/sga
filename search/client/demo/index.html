@@ -242,8 +242,7 @@
     });
     $('#search-bar form').submit( function (e) {
       e.preventDefault();
-      var query = $('#search-bar input').val();
-      SGAsearch.search(service, query, options, destination);
+      $.bbq.pushState({q:$('#search-bar input').val(), f:'text'});
       return false;
     });
   });

@@ -151,17 +151,19 @@ window.SGAsearch = {}
 
   SGAsearch.updateSearch = (service, facets, destination) ->
 
-    q = $.bbq.getState('q')
-    f = $.bbq.getState('f')
-    p = $.bbq.getState('p')
-    nb = $.bbq.getState('nb')
-    # Leaving sorting out
-    # s = $.bbq.getState('s') 
+    $(window).bind "hashchange", (e) ->
 
-    if q? and f?
-      if !p? then p = 0 else p -= 1 
-      if !nb? then nb = null
-      SGAsearch.search(service, q, facets, destination, f, p, nb)
+      q = $.bbq.getState('q')
+      f = $.bbq.getState('f')
+      p = $.bbq.getState('p')
+      nb = $.bbq.getState('nb')
+      # Leaving sorting out
+      # s = $.bbq.getState('s') 
+
+      if q? and f?
+        if !p? then p = 0 else p -= 1 
+        if !nb? then nb = null
+        SGAsearch.search(service, q, facets, destination, f, p, nb)
 
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
@@ -257,15 +259,22 @@ window.SGAsearch = {}
       view.$el.find('.nav-first')
 
     setHistory = () ->
-      $.bbq.pushState
-        q: query
-        f: fields
-      if page > 0
+      cur_q = $.bbq.getState('q')
+      cur_f = $.bbq.getState('f')
+      cur_p = $.bbq.getState('p')
+      cur_nb = parseInt $.bbq.getState('nb') - 1
+      if cur_q != query and cur_f != fields
         $.bbq.pushState
-          p: page + 1
-      if filters?
-        $.bbq.pushState
-          nb: filters
+          q: query
+          f: fields
+      if cur_p != page
+        if page > 0
+          $.bbq.pushState
+            p: page + 1
+      if cur_nb != filters
+        if filters?
+          $.bbq.pushState
+            nb: filters
 
     updateResults = (res) =>
       # Results
