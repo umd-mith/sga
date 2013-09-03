@@ -147,6 +147,23 @@ window.SGAsearch = {}
       @$el.remove()
       @  
 
+  ## HISTORY ##
+
+  SGAsearch.updateSearch = (service, facets, destination) ->
+
+    q = $.bbq.getState('q')
+    f = $.bbq.getState('f')
+    p = $.bbq.getState('p')
+    nb = $.bbq.getState('nb')
+    # Leaving sorting out
+    # s = $.bbq.getState('s') 
+
+    if q? and f?
+      if !p? then p = 0 else p -= 1 
+      if !nb? then nb = null
+      SGAsearch.search(service, q, facets, destination, f, p, nb)
+
+
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
 
     srcOptions = 
@@ -238,6 +255,17 @@ window.SGAsearch = {}
           SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, o.page, o.filters)
 
       view.$el.find('.nav-first')
+
+    setHistory = () ->
+      $.bbq.pushState
+        q: query
+        f: fields
+      if page > 0
+        $.bbq.pushState
+          p: page + 1
+      if filters?
+        $.bbq.pushState
+          nb: filters
 
     updateResults = (res) =>
       # Results
@@ -343,6 +371,7 @@ window.SGAsearch = {}
       # Connect UI components
       bindPagination res.numFound
       bindSort()
+      setHistory()
 
     $.ajax
       url: url
