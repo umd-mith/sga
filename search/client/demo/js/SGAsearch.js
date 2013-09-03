@@ -279,8 +279,27 @@
       return FacetView;
 
     })(Backbone.View);
+    SGAsearch.updateSearch = function(service, facets, destination) {
+      var f, nb, p, q;
+
+      q = $.bbq.getState('q');
+      f = $.bbq.getState('f');
+      p = $.bbq.getState('p');
+      nb = $.bbq.getState('nb');
+      if ((q != null) && (f != null)) {
+        if (p == null) {
+          p = 0;
+        } else {
+          p -= 1;
+        }
+        if (nb == null) {
+          nb = null;
+        }
+        return SGAsearch.search(service, q, facets, destination, f, p, nb);
+      }
+    };
     return SGAsearch.search = function(service, query, facets, destination, fields, page, filters, sort) {
-      var bindPagination, bindSort, srcOptions, updateResults, url,
+      var bindPagination, bindSort, setHistory, srcOptions, updateResults, url,
         _this = this;
 
       if (fields == null) {
@@ -400,6 +419,22 @@
         });
         return view.$el.find('.nav-first');
       };
+      setHistory = function() {
+        $.bbq.pushState({
+          q: query,
+          f: fields
+        });
+        if (page > 0) {
+          $.bbq.pushState({
+            p: page + 1
+          });
+        }
+        if (filters != null) {
+          return $.bbq.pushState({
+            nb: filters
+          });
+        }
+      };
       updateResults = function(res) {
         var f_add, f_del, f_h_mws, f_h_pbs, f_nb, k, nb, orderedNBs, r, sr, v, _i, _j, _len, _len1, _ref10;
 
@@ -506,7 +541,8 @@
         }
         _this.r_flv.render($(facets).find('#r-list-rev'), srcOptions);
         bindPagination(res.numFound);
-        return bindSort();
+        bindSort();
+        return setHistory();
       };
       return $.ajax({
         url: url,
