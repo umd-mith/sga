@@ -2002,7 +2002,7 @@ _______________________________________________________________________*/
 .refine-results .panel-footer { margin-top: 0px; font-size: 0.85em; }
 .refine-results .list-group { margin-bottom: 0; }
 .refine-results .list-group-item { padding: 3px 15px 3px 0px; border: 0; border-color: transparent; background: transparent; font-size: 0.85em;}
-.refine-results .list-group-item .label { display:none; margin-right: 5px; } 
+.refine-results .list-group-item .label { margin-right: 5px; } 
 .refine-results .list-group-item.active .label { display: inline; }
 .refine-results a.list-group-item.active { background-color: transparent; border-color: transparent; }
 .refine-results a.list-group-item.active > .badge {background-color: #999; color: #FFF; }
