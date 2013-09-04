@@ -280,7 +280,9 @@
 
     })(Backbone.View);
     SGAsearch.updateSearch = function(service, facets, destination) {
-      return $(window).bind("hashchange", function(e) {
+      var doSearch;
+
+      doSearch = function() {
         var f, nb, p, q;
 
         q = $.bbq.getState('q');
@@ -298,6 +300,10 @@
           }
           return SGAsearch.search(service, q, facets, destination, f, p, nb);
         }
+      };
+      doSearch();
+      return $(window).bind("hashchange", function(e) {
+        return doSearch();
       });
     };
     return SGAsearch.search = function(service, query, facets, destination, fields, page, filters, sort) {

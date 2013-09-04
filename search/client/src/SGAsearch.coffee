@@ -151,7 +151,7 @@ window.SGAsearch = {}
 
   SGAsearch.updateSearch = (service, facets, destination) ->
 
-    $(window).bind "hashchange", (e) ->
+    doSearch = ->
 
       q = $.bbq.getState('q')
       f = $.bbq.getState('f')
@@ -165,6 +165,11 @@ window.SGAsearch = {}
         if !nb? then nb = null
         SGAsearch.search(service, q, facets, destination, f, p, nb)
 
+    doSearch()
+
+    $(window).bind "hashchange", (e) ->
+      doSearch()
+      
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
 
