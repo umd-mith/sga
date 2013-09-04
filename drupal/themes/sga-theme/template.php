@@ -11,33 +11,37 @@ function sgarchive_preprocess_html(&$variables) {
 
 	drupal_add_css('//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css', array('group' => CSS_THEME, 'type' => 'file', 'preprocess' => FALSE, 'weight' => '-1000'));
 	drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', array('group' => CSS_THEME, 'type' => 'file', 'preprocess' => FALSE, 'weight' => '-1000'));
+
+	drupal_add_js('http://code.jquery.com/ui/1.9.2/jquery-ui.min.js');
+	drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js');
+
+	drupal_add_js(path_to_theme() . '/js/jquery.ba-bbq.min.js');
+
+	$variables['bottom_scripts'] = drupal_get_js('bottom_scripts');
 }
 
-drupal_add_js('http://code.jquery.com/ui/1.9.2/jquery-ui.min.js');
-drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js');
-
-drupal_add_js('jQuery(document).ready(function ($) { 	
+// drupal_add_js('jQuery(document).ready(function ($) { 	
 	
-	$("#collapse-one").collapse("hide");
+// 	$("#collapse-one").collapse("hide");
 	
-	$(function() {
-		$( "#slider-vertical" ).slider({
-			orientation: "vertical",
-			range: "min",
-			min: 0,
-			max: 100,
-			value: 1,
-			slide: function( event, ui ) {
-			$( "#page-location" ).val( ui.value );
-			}
-		});
-		$( "#page-location" ).val( $( "#slider-vertical" ).slider( "value" ) );
-	});
+// 	$(function() {
+// 		$( "#slider-vertical" ).slider({
+// 			orientation: "vertical",
+// 			range: "min",
+// 			min: 0,
+// 			max: 100,
+// 			value: 1,
+// 			slide: function( event, ui ) {
+// 			$( "#page-location" ).val( ui.value );
+// 			}
+// 		});
+// 		$( "#page-location" ).val( $( "#slider-vertical" ).slider( "value" ) );
+// 	});
 	
 
-});', array('type' => 'inline', 'scope' => 'header', 'weight' => 4)
+// });', array('type' => 'inline', 'scope' => 'header', 'weight' => 4)
 	
-);
+// );
 
 /**
  * Add javascript files for jquery slideshow.

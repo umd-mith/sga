@@ -57,7 +57,8 @@
 <![endif]-->
 <?php endif; ?>
 
-<?php print $scripts; ?>
+<?php print $scripts;?>
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 <div id="skip-link">
@@ -65,6 +66,7 @@
 </div>
 <?php print $page_top; ?>
 <?php print $page; ?>
+<?php print $bottom_scripts;?>
 <?php print $page_bottom; ?>
 </body>
 </html>
