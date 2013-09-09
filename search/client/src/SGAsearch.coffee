@@ -276,10 +276,14 @@ window.SGAsearch = {}
         if page > 0
           $.bbq.pushState
             p: page + 1
+        else 
+          $.bbq.removeState('p')
       if cur_nb != filters
         if filters?
           $.bbq.pushState
             nb: filters
+        else
+          $.bbq.removeState('nb')
 
     updateResults = (res) =>
       # Results
