@@ -445,6 +445,8 @@
             $.bbq.pushState({
               p: page + 1
             });
+          } else {
+            $.bbq.removeState('p');
           }
         }
         if (cur_nb !== filters) {
@@ -452,6 +454,8 @@
             return $.bbq.pushState({
               nb: filters
             });
+          } else {
+            return $.bbq.removeState('nb');
           }
         }
       };
