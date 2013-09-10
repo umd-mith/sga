@@ -1,0 +1,24 @@
+svg body {
+  border: none;
+  background: none;
+  background-color: transparent;
+}
+
+.text-content {
+  text-align: left;
+  padding: 2px;
+}
+
+.text-content .DeletionAnnotation {
+  font-weight: lighter;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.text-content .AdditionAnnotation {
+  font-weight: bolder;
+}
+
+.text-content .SearchAnnotation {
+  background-color: Yellow;
+}
