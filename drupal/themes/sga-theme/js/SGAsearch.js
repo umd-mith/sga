@@ -298,7 +298,8 @@
           if (nb == null) {
             nb = null;
           }
-          return SGAsearch.search(service, q, facets, destination, f, p, nb);
+          SGAsearch.search(service, q, facets, destination, f, p, nb);
+          return $('#all-results').show();
         }
       };
       doSearch();
@@ -470,7 +471,6 @@
           _this.srlv.collection.add(sr);
           r.num = (res.results.indexOf(r) + 1) + page * 20;
           r.id = r.id.substr(r.id.length - 4);
-          r.shelfmark = r.shelfmark.substr(r.shelfmark.length - 3);
           sr.set(r);
         }
         _this.srlv.render(destination);
