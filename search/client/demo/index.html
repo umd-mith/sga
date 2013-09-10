@@ -28,6 +28,7 @@
     <p>Write a query in the search field. All words must be found on a page to be returned. Use <em>OR</em> between words to look for any of the words. Use inverted commas "" to look for word ocurring together.</p>
   </div>
 </div>
+<div id="all-results">
 <div class="row r-header">
   <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
   <div class="col-lg-3 col-3 col-sm-3 clearfix" id="results-refine-header">
@@ -107,15 +108,15 @@
             <label for="r-sorting" class="control-label">Sort:</label>
             <div class="input-group">
               <select class="form-control" name="r-sortby" size="1">
-                <option value="rele" selected="selected">Relevance</option>
-                <option value="freq">Frequency</option>
-                <option value="date">Date</option>
+                <option value="score" selected="selected">Relevance</option>
+                <option value="shelfmark">Alphabetical</option>
+                <!-- <option value="date">Date</option> -->
               </select>
               <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
             <div class="input-group">
               <select class="form-control" name="r-sort" size="1">
-                <option value="asc">Ascending</option>
-                <option value="dec">Decending</option>
+                <option value="asc" selected>Ascending</option>
+                <option value="desc">Decending</option>
               </select>
               <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
           </div>
@@ -132,7 +133,7 @@
   <!--/results-info-sort--> 
 </div>
 <!--/r-footer-->
-
+</div>
 <script type="text/template" id="pagi-template">
   <li>
     <a href="#" class="nav-first <%= first %>"><i class="icon-red icon-step-backward"></i></a>
@@ -187,7 +188,7 @@
 <script type="text/template" id="result-template">
   <li class="media list-group-item"> 
     <span class="label label-info"><%= num %></span> 
-    <a class="pull-left" href="#"> 
+    <a class="pull-left" href="sc/<%=shelfmark%>#n=<%= parseInt(id) %>"> 
       <img class="media-object r-img" src="http://placehold.it/75x100" alt="<%= shelfmark %>"> 
     </a>
     <div class="media-body">
