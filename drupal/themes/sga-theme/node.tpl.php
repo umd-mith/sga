@@ -1,3 +1,26 @@
+<!-- <div>
+<?php
+    print '<pre>';
+    $manifest = field_get_items('node',$node, 'field_manifest');
+    $m = $manifest[0]['value'];
+
+    $body = field_get_items('node',$node, 'body');
+    $b = $body[0]['value'];
+
+    $set_m = 'data-manifest="' . $m . '"';
+
+    $new_b = preg_replace('/\[manifest\]/g"', $set_m, $b);
+
+    //print $b;
+
+    $body[0]['value'] = $new_b;
+
+    // manifests/Manifest-jp2.json
+
+    print '</pre>';
+?>
+</div> -->
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
 	<?php print render($title_prefix); ?>
@@ -12,7 +35,6 @@
             // We hide the comments and links now so that we can render them later.
             hide($content['comments']);
             hide($content['links']);
-            hide($content['field_tags']);
             print render($content['field_image']); 
         ?>
        
