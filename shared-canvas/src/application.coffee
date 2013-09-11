@@ -71,6 +71,18 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
+
+          # Flush out all annotations for current canvas, if any.
+          canvasKey = seq.sequence?[p]
+
+          allAnnos = that.dataView.canvasAnnotations.items()
+          if allAnnos.length > 0
+            that.dataView.canvasAnnotations.removeItems(allAnnos)
+
+            annos = that.getAnnotationsForCanvas canvasKey
+            that.dataStore.data.removeItems(annos)
+
+          # Load annotations for this canvas
           Q.nfcall(that.loadCanvas, k).then () -> 
               setTimeout (-> pp[0].setCanvas k for pp in presentations), 100
           k
@@ -138,6 +150,10 @@ SGAReader.namespace "Application", (Application) ->
               styleItem = manifestData.getItem target.oahasStyle[0]
               if "text/css" in styleItem.dcformat
                 item.css = styleItem.cntchars
+            if target.oahasClass?
+              styleItem = manifestData.getItem target.oahasClass[0]
+              if "text/css" in styleItem.dcformat
+                item.class = styleItem.cntchars
 
             extractSpatialConstraint(item, target.oahasSelector?[0])
           else
@@ -530,26 +546,22 @@ SGAReader.namespace "Application", (Application) ->
             queryURL = config.searchBox.getServiceURL() + q
             for m, obj of that.manifests
 
-              # Flush out all annotations for this canvas.
-              p = obj.getPosition()
-              s = obj.getSequence()
-              seq = obj.dataStore.data.getItem s
-              canvasKey = seq.sequence?[p]
-
-              allAnnos = obj.dataView.canvasAnnotations.items()
-              obj.dataView.canvasAnnotations.removeItems(allAnnos)
-
-              annos = obj.getAnnotationsForCanvas canvasKey
-              obj.dataStore.data.removeItems(annos)
-
-              # Flush out all search annotations, if any. 
+              # Flush out *all* search annotations, if any. 
               obj.flushSearchResults()
 
               # Load new search annotations into main data store.
               obj.addManifestData queryURL, ->
 
+                # get canvas key
+                p = obj.getPosition()
+                s = obj.getSequence()
+                seq = obj.dataStore.data.getItem s
+                canvasKey = seq.sequence?[p]
+
                 # Parse new search annotations into presentation data store. 
                 Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                  # Here we need something like obj.Position.change()
+                  # Feature request to MITHgrid?
                   if p == 0
                     newPage = p + 1
                   else
