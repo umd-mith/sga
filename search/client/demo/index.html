@@ -188,8 +188,10 @@
 <script type="text/template" id="result-template">
   <li class="media list-group-item"> 
     <span class="label label-info"><%= num %></span> 
-    <a class="pull-left" href="sc/<%=shelfmark%>#n=<%= parseInt(id) %>"> 
-      <img class="media-object r-img" src="http://placehold.it/75x100" alt="<%= shelfmark %>"> 
+    <a class="pull-left" href="sc/<%=shelfmark%>#n=<%= parseInt(id) %><% if (detailQuery!='') { %>&<%=detailQuery%><% }%>
+    "> 
+      <img class="media-object r-img" src="<%=imageURL%>" alt="<%= shelfmark %>" width="75" height="100"
+      onerror="this.src='http://placehold.it/75x100';"> 
     </a>
     <div class="media-body">
       <div class="r-description">

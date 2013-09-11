@@ -9,6 +9,7 @@
   (function($, SGAsearch, _, Backbone) {
     var _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9;
 
+    $.param.fragment.noEscape(':,/');
     SGAsearch.SearchResult = (function(_super) {
       __extends(SearchResult, _super);
 
@@ -25,7 +26,9 @@
         "nbook": "[Notebook]",
         "author": "[Author]",
         "editor": "[Editor]",
-        "date": "[Date]"
+        "date": "[Date]",
+        "imageURL": "http://placehold.it/75x100",
+        "detailQuery": ""
       };
 
       return SearchResult;
@@ -435,7 +438,7 @@
         cur_f = $.bbq.getState('f');
         cur_p = $.bbq.getState('p');
         cur_nb = parseInt($.bbq.getState('nb') - 1);
-        if (cur_q !== query && cur_f !== fields) {
+        if (cur_q !== query || cur_f !== fields) {
           $.bbq.pushState({
             q: query,
             f: fields
@@ -471,6 +474,8 @@
           _this.srlv.collection.add(sr);
           r.num = (res.results.indexOf(r) + 1) + page * 20;
           r.id = r.id.substr(r.id.length - 4);
+          r.imageURL = "http://sga.mith.org:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://sga.mith.org/images/jp2/" + r.shelfmark + "-" + r.id + ".jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1&svc.region=0,0,100,75";
+          r.detailQuery = "s=f:" + fields + "|q:" + query;
           sr.set(r);
         }
         _this.srlv.render(destination);

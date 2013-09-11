@@ -4,6 +4,9 @@ window.SGAsearch = {}
 
 (($,SGAsearch,_,Backbone) ->
 
+  #bbq no escape for "pretty" search fragment
+  $.param.fragment.noEscape ':,/'
+
 ## MODELS ##
 
   # SearchResult
@@ -16,7 +19,9 @@ window.SGAsearch = {}
       "nbook" : "[Notebook]"
       "author" : "[Author]"
       "editor" : "[Editor]"
-      "date" : "[Date]"
+      "date" : "[Date]" 
+      "imageURL" : "http://placehold.it/75x100"
+      "detailQuery" : ""
 
   # Facet
   class SGAsearch.Facet extends Backbone.Model
@@ -269,7 +274,7 @@ window.SGAsearch = {}
       cur_f = $.bbq.getState('f')
       cur_p = $.bbq.getState('p')
       cur_nb = parseInt $.bbq.getState('nb') - 1
-      if cur_q != query and cur_f != fields
+      if cur_q != query or cur_f != fields
         $.bbq.pushState
           q: query
           f: fields
@@ -298,6 +303,9 @@ window.SGAsearch = {}
         r.num = (res.results.indexOf(r) + 1) + page*20
         r.id = r.id.substr r.id.length - 4
         # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
+
+        r.imageURL = "http://sga.mith.org:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://sga.mith.org/images/jp2/#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1&svc.region=0,0,100,75"
+        r.detailQuery = "s=f:#{fields}|q:#{query}"
 
         sr.set r
 
