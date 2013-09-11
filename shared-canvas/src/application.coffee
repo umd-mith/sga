@@ -651,18 +651,6 @@ SGAReader.namespace "Application", (Application) ->
                       bbq_q = bbq_q.replace(/\|/g, '&')
                       updateSearchResults bbq_q
                     removeListener()
-            # if config.searchBox?
-            #   that.onManifest manifestUrl, (manifest) ->
-                
-            #      #Check for existing search query in URL,
-            #     # run if different from current query
-            #     bbq_q = $.bbq.getState('s')
-            #     if bbq_q?
-            #       bbq_q = bbq_q.replace(/:/g,'=')
-            #       bbq_q = bbq_q.replace(/\|/g, '&')
-            #       console.log bbq_q
-            #       # console.log that.config.searchBox.getQuery()
-            #       #updateSearchResults(bbq_q)
 
 
           manifest.run()
