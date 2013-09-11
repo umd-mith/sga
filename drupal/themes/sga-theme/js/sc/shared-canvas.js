@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Sep 10 16:55:56 2013 -0400
+# Date: Wed Sep 11 13:41:05 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -171,7 +171,6 @@
                 }
                 loadedUrls.push(url);
                 that.addItemsToProcess(1);
-                console.log(url);
                 return $.ajax({
                   url: url,
                   type: 'GET',
@@ -182,9 +181,8 @@
                     that.addItemsProcessed(1);
                     return that.importJSON(data, cb);
                   },
-                  error: function(e, s, st) {
+                  error: function(e) {
                     that.addItemsProcessed(1);
-                    console.log(st);
                     throw new Error("Could not load the manifest");
                   }
                 });
@@ -235,7 +233,6 @@
 
                 types = MITHgrid.Data.Set.initInstance(['sgaSearchAnnotation']);
                 searchResults = data.getSubjectsUnion(types, "type").items();
-                console.log(searchResults);
                 return data.removeItems(searchResults);
               };
               that.getCanvases = function() {
@@ -897,7 +894,6 @@
                 }
                 loadedUrls.push(url);
                 that.addItemsToProcess(1);
-                console.log(url);
                 return $.ajax({
                   url: url,
                   type: 'GET',
@@ -908,9 +904,8 @@
                     that.addItemsProcessed(1);
                     return that.importJSON(data, cb);
                   },
-                  error: function(e, s, st) {
+                  error: function(e) {
                     that.addItemsProcessed(1);
-                    console.log(st);
                     throw new Error("Could not load the manifest");
                   }
                 });
@@ -961,7 +956,6 @@
 
                 types = MITHgrid.Data.Set.initInstance(['sgaSearchAnnotation']);
                 searchResults = data.getSubjectsUnion(types, "type").items();
-                console.log(searchResults);
                 return data.removeItems(searchResults);
               };
               that.getCanvases = function() {
@@ -1256,6 +1250,13 @@
             return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.SearchBox"].concat(__slice.call(args), [function(that, service) {
               var container, srcButton, srcForm;
 
+              that.events.onQueryChange.addListener(function(q) {
+                q = q.replace(/\=/g, ':');
+                q = q.replace(/\&/g, '|');
+                return $.bbq.pushState({
+                  s: q
+                });
+              });
               container = args[0];
               that.setServiceURL(service);
               srcButton = $('#search-btn');
@@ -1795,7 +1796,7 @@
             }]));
           };
           return SharedCanvas.builder = function(config) {
-            var manifestCallbacks, that, updateProgressTracker, updateProgressTrackerVisibility, updateSpinnerVisibility, uptv, uptvTimer, _ref;
+            var manifestCallbacks, that, updateProgressTracker, updateProgressTrackerVisibility, updateSearchResults, updateSpinnerVisibility, uptv, uptvTimer, _ref;
 
             that = {
               manifests: {}
@@ -1804,6 +1805,7 @@
             updateProgressTracker = function() {};
             updateProgressTrackerVisibility = function() {};
             updateSpinnerVisibility = function() {};
+            updateSearchResults = function() {};
             if (config.spinner != null) {
               updateSpinnerVisibility = function() {
                 var m, obj, tot, _ref, _results;
@@ -1874,7 +1876,8 @@
             }
             if (config.searchBox != null) {
               if (config.searchBox.getServiceURL() != null) {
-                config.searchBox.events.onQueryChange.addListener(function(q) {
+                $.param.fragment.noEscape(':,/|');
+                updateSearchResults = function(q) {
                   var m, obj, queryURL, _ref, _results;
 
                   queryURL = config.searchBox.getServiceURL() + q;
@@ -1898,7 +1901,6 @@
                         } else {
                           newPage = p - 1;
                         }
-                        console.log(obj);
                         setTimeout(function() {
                           return obj.setPosition(newPage, 0);
                         });
@@ -1909,6 +1911,9 @@
                     }));
                   }
                   return _results;
+                };
+                config.searchBox.events.onQueryChange.addListener(function(q) {
+                  return updateSearchResults(q);
                 });
               } else {
                 console.log("You must specify the URL to some search service.");
@@ -1953,6 +1958,25 @@
                   manifest.events.onItemsProcessedChange.addListener(updateProgressTracker);
                   updateProgressTrackerVisibility();
                   updateSpinnerVisibility();
+                  if (config.searchBox != null) {
+                    manifest.ready(function() {
+                      var removeListener;
+
+                      if (manifest.getSequence() == null) {
+                        return removeListener = manifest.events.onSequenceChange.addListener(function() {
+                          var bbq_q;
+
+                          bbq_q = $.bbq.getState('s');
+                          if (bbq_q != null) {
+                            bbq_q = bbq_q.replace(/:/g, '=');
+                            bbq_q = bbq_q.replace(/\|/g, '&');
+                            updateSearchResults(bbq_q);
+                          }
+                          return removeListener();
+                        });
+                      }
+                    });
+                  }
                 }
                 manifest.run();
                 types = (_ref = $(el).data('types')) != null ? _ref.split(/\s*,\s*/) : void 0;
