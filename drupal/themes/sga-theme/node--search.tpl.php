@@ -3,8 +3,8 @@
     $path = drupal_get_path('theme', 'sgarchive');
     drupal_add_js($path . '/js/underscore-min.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => FALSE));
     drupal_add_js($path . '/js/backbone-min.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => FALSE));
-    drupal_add_js($path . '/js/SGAsearch.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => TRUE));
-    drupal_add_js($path . '/js/SGAsearchGO.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => TRUE));
+    drupal_add_js($path . '/js/search/SGAsearch.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => TRUE));
+    drupal_add_js($path . '/js/search/main.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => TRUE));
 
 ?>
 
