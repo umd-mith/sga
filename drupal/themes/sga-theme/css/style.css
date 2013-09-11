@@ -210,6 +210,7 @@ li.expanded,li.collapsed,li.leaf {
     padding: 0em 0.5em 0.8em 0; /* LTR */
     margin: 0;
     }
+
 /*
 6. tables
 _______________________________________________________________________
@@ -1987,6 +1988,10 @@ _______________________________________________________________________*/
 .results-info-sort .pagination > .active > span {
   background-color: #e9e9e9;
 }
+.results-info-sort .pagination > li > a.disabled { pointer-events: none; cursor: default; opacity: .65; filter: alpha(opacity=65); -webkit-box-shadow: none; box-shadow: none; }
+.results-info-sort .pagination > li > a.dots { pointer-events: none; cursor: default; } 
+.results-info-sort .pagination > li > a.pg { color: #f9f9f9 !important; background-color: #a54647 ; border-color: #a54647; } 
+
 
 .r-qty .badge { vertical-align: baseline !important; }
 .r-nav .btn-small { padding: 0px 6px; line-height: 1; }
