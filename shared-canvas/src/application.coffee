@@ -498,6 +498,9 @@ SGAReader.namespace "Application", (Application) ->
       # Simple spinner as alternative to progress tracker
       updateSpinnerVisibility = ->
 
+      # Search results hook
+      updateSearchResults = ->
+
       if config.spinner?
         updateSpinnerVisibility = ->
           for m, obj of that.manifests
@@ -542,7 +545,11 @@ SGAReader.namespace "Application", (Application) ->
 
       if config.searchBox?
         if config.searchBox.getServiceURL()?
-          config.searchBox.events.onQueryChange.addListener (q) ->
+
+          #bbq no escape for "pretty" search fragment
+          $.param.fragment.noEscape ':,/|'
+
+          updateSearchResults = (q) ->
             queryURL = config.searchBox.getServiceURL() + q
             for m, obj of that.manifests
 
@@ -568,6 +575,10 @@ SGAReader.namespace "Application", (Application) ->
                     newPage = p - 1
                   setTimeout -> obj.setPosition newPage, 0  
                   setTimeout -> obj.setPosition p, 0
+
+          config.searchBox.events.onQueryChange.addListener (q) ->
+            updateSearchResults(q)          
+          
         else
           console.log "You must specify the URL to some search service."            
 
@@ -626,10 +637,37 @@ SGAReader.namespace "Application", (Application) ->
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
             updateProgressTrackerVisibility()
             updateSpinnerVisibility()
-              
+
+            # If searchBox component is active, check for search queries in the URL
+            # and run them *after* the first manifest datastore is ready.
+
+            if config.searchBox?
+              manifest.ready ->
+                if !manifest.getSequence()?
+                  removeListener = manifest.events.onSequenceChange.addListener ->
+                    bbq_q = $.bbq.getState('s')
+                    if bbq_q?
+                      bbq_q = bbq_q.replace(/:/g,'=')
+                      bbq_q = bbq_q.replace(/\|/g, '&')
+                      updateSearchResults bbq_q
+                    removeListener()
+            # if config.searchBox?
+            #   that.onManifest manifestUrl, (manifest) ->
+                
+            #      #Check for existing search query in URL,
+            #     # run if different from current query
+            #     bbq_q = $.bbq.getState('s')
+            #     if bbq_q?
+            #       bbq_q = bbq_q.replace(/:/g,'=')
+            #       bbq_q = bbq_q.replace(/\|/g, '&')
+            #       console.log bbq_q
+            #       # console.log that.config.searchBox.getQuery()
+            #       #updateSearchResults(bbq_q)
+
+
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
-          that.onManifest manifestUrl, (manifest) ->
+          that.onManifest manifestUrl, (manifest) ->            
             manifest.addPresentation
               types: types
               container: $(el)

@@ -238,7 +238,14 @@ SGAReader.namespace "Component", (Component) ->
   #
   Component.namespace "SearchBox", (SearchBox) ->
     SearchBox.initInstance = (args...) ->
-      MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->        
+      MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->
+
+        that.events.onQueryChange.addListener (q) ->          
+          q = q.replace(/\=/g,':')
+          q = q.replace(/\&/g, '|') 
+          $.bbq.pushState
+            s : q
+
         container = args[0]
         that.setServiceURL service
 
@@ -246,11 +253,13 @@ SGAReader.namespace "Component", (Component) ->
         srcForm = $(container).closest('form')
 
         if srcButton?
+
           srcButton.click () ->
             srcForm.submit()        
 
         srcForm.submit (e) ->
           e.preventDefault()
+
           fields_html = $('#limit-search').find('input:checked')
           fields = ""
           if fields_html.length == 0
