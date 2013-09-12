@@ -105,8 +105,9 @@ SGAReader.namespace "Component", (Component) ->
             max: n
         that.events.onValueChange.addListener (n) -> 
           $(container).val(n)
-          $.bbq.pushState
-            n: that.getValue()+1
+          if that.getValue()? and parseInt(that.getValue()) != NaN
+            $.bbq.pushState
+              n: that.getValue()+1
         $(container).change (e) -> that.setValue $(container).val()
 
   #
@@ -127,7 +128,8 @@ SGAReader.namespace "Component", (Component) ->
         
         $(window).bind "hashchange", (e) ->
           n = $.bbq.getState "n" 
-          that.setValue n-1
+          if n? and parseInt(n) != NaN
+            that.setValue n-1
 
         firstEl = $(container).find("#first-page")
         prevEl = $(container).find("#prev-page")
@@ -166,8 +168,9 @@ SGAReader.namespace "Component", (Component) ->
             lastEl.addClass "disabled"
 
         updateBBQ = ->
-          $.bbq.pushState
-            n: that.getValue()+1
+          if that.getValue()? and parseInt(that.getValue()) != NaN
+            $.bbq.pushState
+              n: that.getValue()+1
 
         $(prevEl).click (e) ->
           e.preventDefault()
