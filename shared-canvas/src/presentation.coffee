@@ -571,6 +571,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
             realCanvas.hide() if realCanvas.hide?
             realCanvas._destroy() if realCanvas._destroy?
           SVG (svgRoot) ->
+            # Trigger for slider height. There probably is a better way of passing this info around.
+            $(container).trigger("sizeChange", [{w:container.width(), h:container.height()}]) 
+
             svgRoot.clear()
             realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
               types: options.types
@@ -579,4 +582,5 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: canvasHeight
               width: canvasWidth
               svgRoot: svgRoot
+
 

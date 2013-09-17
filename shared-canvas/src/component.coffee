@@ -93,22 +93,78 @@ SGAReader.namespace "Component", (Component) ->
     #
     # This component manages an HTML5 slider input element.
     #
-    # This component has three variables: Min, Max, and Value.
+    # This component has four variables: Min, Max, Value, and Highlihgts.
     #
     Slider.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
-        that.events.onMinChange.addListener (n) ->
-          $(container).attr
-            min: n
-        that.events.onMaxChange.addListener (n) ->
-          $(container).attr
-            max: n
-        that.events.onValueChange.addListener (n) -> 
-          $(container).val(n)
+        
+        # This is a hack and should be eventually handled with a Filter/Facet
+        $('.canvas').on "searchResultsChange", (e, results)->
+          $c = $(container)
+
+          # Remove existing highlights, if any
+          $('.res').remove()
+
+          # Append highglights
+
+          pages = that.getMax()
+
+          for r in results
+            r = r + 1
+            res_height = $c.height() / (pages+1)
+            res_h_perc = (pages+1) / 100
+            s_min = $c.slider("option", "min")
+            s_max = $c.slider("option", "max")
+            valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
+            adjustment = res_h_perc / 2
+            $c.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+
+        that.events.onMaxChange.addListener (n) -> 
+
+          if $( container ).data( "slider" ) # Is the container set?
+            $(container).slider
+              max : n
+          else
+            pages = n
+            $(container).slider
+              orientation: "vertical"
+              range: "min"
+              min: that.getMin()
+              max: pages
+              value: pages
+              step: 1
+              slide: ( event, ui ) ->
+                0 #update some human readable indicator
+              stop: ( event, ui ) ->
+                0 #now update actual value
+                that.setValue pages - ui.value
+
+            # There might be a cleaner way of doing this:
+            $('.canvas').on "sizeChange", (e, d)->
+              $c = $(container)
+              $c.height d.h              
+
+              # Only set it once
+              $('.canvas').unbind("sizeChange")
+
           if that.getValue()? and parseInt(that.getValue()) != NaN
             $.bbq.pushState
               n: that.getValue()+1
-        $(container).change (e) -> that.setValue $(container).val()
+            $(container).slider
+              value: pages - that.getValue()
+
+        that.events.onMinChange.addListener (n) ->
+          if $( container ).data( "slider" ) # Is the container set?
+            $(container).slider
+              min : n
+
+        that.events.onValueChange.addListener (n) -> 
+          if $( container ).data( "slider" ) # Is the container set?
+            $(container).slider
+              value: that.getMax() - n
+          if that.getValue()? and parseInt(that.getValue()) != NaN
+            $.bbq.pushState
+              n: that.getValue()+1
 
   #
   # ## Component.PagerControls

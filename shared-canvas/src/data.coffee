@@ -163,7 +163,7 @@ SGAReader.namespace "Data", (Data) ->
           data.getSubjectsUnion(types, "type").items()
 
         itemsForCanvas = (canvas) ->
-          # Given a canvas, find the the TEI XML URL
+          # Given a canvas, find the TEI XML URL
           canvas = [ canvas ] if !$.isArray(canvas)
           canvasSet = MITHgrid.Data.Set.initInstance(canvas)
           specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
@@ -184,6 +184,21 @@ SGAReader.namespace "Data", (Data) ->
           searchResults = data.getSubjectsUnion(types, "type").items()
           data.removeItems searchResults
 
+        getSearchResultCanvases = ->
+          types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
+          searchResults = data.getSubjectsUnion(types, "type")
+          specificResources = data.getObjectsUnion(searchResults, "oahasTarget") 
+          teiURL = data.getObjectsUnion(specificResources, 'oahasSource')
+
+          sources = data.getSubjectsUnion(teiURL, 'oahasSource')
+          
+          annos = data.getSubjectsUnion(sources, 'oahasBody')
+          step = data.getObjectsUnion(annos, 'oahasTarget')
+          canvasKeys = data.getObjectsUnion(step, 'oahasSource')
+
+          return $.unique(canvasKeys.items())
+
+
         #
         # Get things of different types. For example, "scCanvas" gets
         # all of the canvas items.
@@ -194,6 +209,7 @@ SGAReader.namespace "Data", (Data) ->
         that.getAnnotations = -> itemsWithType 'oaAnnotation'
         that.getAnnotationsForCanvas = itemsForCanvas
         that.flushSearchResults = flushSearchResults
+        that.getSearchResultCanvases = getSearchResultCanvases
 
         that.getItem = data.getItem
         that.contains = data.contains

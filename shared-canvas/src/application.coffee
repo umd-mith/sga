@@ -112,6 +112,7 @@ SGAReader.namespace "Application", (Application) ->
         that.addManifestData = manifestData.importFromURL
         that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
         that.flushSearchResults = manifestData.flushSearchResults
+        that.getSearchResultCanvases = manifestData.getSearchResultCanvases
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -564,6 +565,15 @@ SGAReader.namespace "Application", (Application) ->
                 s = obj.getSequence()
                 seq = obj.dataStore.data.getItem s
                 canvasKey = seq.sequence?[p]
+
+                canvasesWithResults = obj.getSearchResultCanvases()
+                cwrPos = []
+
+                for cwr in canvasesWithResults
+                  cwrPos.push ($.inArray cwr, seq.sequence)
+
+                # Trigger for slider. This should eventually be hanlded with a Facet/Filter instead
+                $('.canvas').trigger("searchResultsChange", [cwrPos]) 
 
                 # Parse new search annotations into presentation data store. 
                 Q.fcall(obj.loadCanvas, canvasKey).then () ->
