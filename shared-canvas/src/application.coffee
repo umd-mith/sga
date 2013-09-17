@@ -151,10 +151,8 @@ SGAReader.namespace "Application", (Application) ->
               styleItem = manifestData.getItem target.oahasStyle[0]
               if "text/css" in styleItem.dcformat
                 item.css = styleItem.cntchars
-            if target.oahasClass?
-              styleItem = manifestData.getItem target.oahasClass[0]
-              if "text/css" in styleItem.dcformat
-                item.class = styleItem.cntchars
+            if target.sgahasClass?
+              item.cssclass = target.sgahasClass[0]
 
             extractSpatialConstraint(item, target.oahasSelector?[0])
           else
@@ -324,6 +322,7 @@ SGAReader.namespace "Application", (Application) ->
                       css = []
                       for id in modIds
                         classes.push modInfo[id].type
+                        if modInfo[id].cssclass? then classes.push modInfo[id].cssclass
                         if $.isArray(modInfo[id].css)
                           css.push modInfo[id].css.join(" ")
                         else
