@@ -1737,48 +1737,6 @@ form { margin-bottom: 0 !important; }
 .loader { height: 0px; text-align:center; }
 .loader i { position: relative; top: 100px; }
 
-.ui-slider {
-	position: relative;
-	text-align: left;
-}
-.ui-slider .ui-widget-header {
-	background: #a54647;
-}
-.ui-slider .ui-slider-handle {
-	position: absolute;
-	z-index: 2;
-	width: 1.05em;
-	height: 1.05em;
-	cursor: default;
-	border-radius: 2em;
-}
-.ui-slider .ui-slider-range {
-	position: absolute;
-	z-index: 1;
-	font-size: .7em;
-	display: block;
-	border: 0;
-	background-position: 0 0;
-}
-.ui-slider-vertical {
-	width: .4em;
-	height: 100px;
-}
-.ui-slider-vertical .ui-slider-handle {
-	left: -.4em;
-	margin-left: 0;
-	margin-bottom: -.5em;
-}
-.ui-slider-vertical .ui-slider-range {
-	left: 0;
-	width: 100%;
-}
-.ui-slider-vertical .ui-slider-range-min {
-	bottom: 0;
-}
-.ui-slider-vertical .ui-slider-range-max {
-	top: 0;
-}
 /*
 14A. Browse / Faceted Search
 _______________________________________________________________________*/
@@ -2058,3 +2016,18 @@ _______________________________________________________________________*/
 .sep-dashed{border-bottom:2px dashed #e7e6e6;}
 .sep-shadow{background:transparent url(../images/sep-shadow.png) no-repeat top center;height:7px;width:100%;}
 .row > .div-sep { margin-left: 15px; margin-right: 15px; }
+
+#page-location .ui-widget-header { background: none; }
+#page-location .res { background-color: #a54647; color: #a54647; border-bottom: 1px solid #fff; border-top: 1px solid #fff;}
+#page-location .ui-slider-handle {left: 15px !important;
+  width: 0 !important; 
+  height: 0 !important; 
+  border: 0 !important;
+  border-top: 10px solid transparent !important;
+  border-bottom: 10px solid transparent !important;       
+  border-right:10px solid #a54647 !important; 
+  background: transparent !important;
+}
+#page-location .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active {
+  border-right:10px solid #5f5b50 !important;
+}
