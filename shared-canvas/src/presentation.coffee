@@ -28,7 +28,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           item = model.getItem id
           el.text item.text[0]
           el.addClass item.type.join(" ")
-          el.attr "style", item.css?[0]
+          if item.css? then el.attr "style", item.css[0]
           $(container).append el
           rendering.remove = ->
             el.remove()
@@ -529,9 +529,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRootEl.css
                 width: SVGWidth
                 height: SVGHeight
-                border: "0.5em solid #eeeeee"
-                "border-radius": "5px"
-                "background-color": "#ffffff"
+                # border: "0.5em solid #eeeeee"
+                # "border-radius": "5px"
+                # "background-color": "#ffffff"
 
         # the data view is managed outside the presentation
         dataView = MITHgrid.Data.SubSet.initInstance
