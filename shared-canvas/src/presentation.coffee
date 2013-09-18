@@ -28,7 +28,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           item = model.getItem id
           el.text item.text[0]
           el.addClass item.type.join(" ")
-          if item.css? then el.attr "style", item.css[0]
+          if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
           $(container).append el
           rendering.remove = ->
             el.remove()
