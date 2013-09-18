@@ -541,7 +541,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         realCanvas = null
 
-        $(container).on "imgOnly", ->    
+        $(container).on "resetPres", ->    
           SVGWidth = parseInt($(container).width() * 20/20, 10)
           if canvasWidth? and canvasWidth > 0
             that.setScale (SVGWidth / canvasWidth)
