@@ -338,13 +338,35 @@ SGAReader.namespace "Component", (Component) ->
       MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
 
         imgOnly = $(container).find("#img-only")
-        text = $(container).find("#mode-rdg")
-        xml = $(container).find("#mode-xml")
-        std = $(container).find("#mode-std")
+        # text = $(container).find("#mode-rdg")
+        # xml = $(container).find("#mode-xml")
+        # std = $(container).find("#mode-std")
 
         $(imgOnly).click (e) ->
           e.preventDefault()
-          that.setImgOnly(true)
+
+          $('*[data-types=Text]').parent().remove()
+
+          # Double the bootstrap column
+          c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+          $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
+
+          # svg_s = $('*[data-types=Image] svg').attr('style')
+          # w = /width:\s*(\d+?)\s*px/g.exec svg_s
+          # h = /height:\s*(\d+?)\s*px/g.exec svg_s
+
+          # new_svg_s = "width:#{parseInt(w[1])*2}px; height:#{parseInt(h[1])*2}px"
+
+          # $('*[data-types=Image] svg').attr('style', new_svg_s )
+
+          # map_w = $('*[data-types=Image] svg .map > rect').attr('width') * 2
+          # map_h = $('*[data-types=Image] svg .map > rect').attr('height') * 2
+
+          # $('*[data-types=Image] svg .map > rect').attr('width', map_w)
+          # $('*[data-types=Image] svg .map > rect').attr('height', map_h)
+
+          $('*[data-types=Image]').trigger('imgOnly')
+          that.setMode('imgOnly')
 
   Component.namespace "LimitViewControls", (LimitViewControls) ->
     LimitViewControls.initInstance = (args...) ->

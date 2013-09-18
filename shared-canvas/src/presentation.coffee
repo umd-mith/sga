@@ -541,22 +541,22 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         realCanvas = null
 
-        that.events.onImgOnlyChange.addListener () ->
-          canvasWidth = item.width?[0] || 1
-          canvasHeight = item.height?[0] || 1
-          that.setScale (parseInt($(container).parent().width()) / canvasWidth)
-          if realCanvas?
-            realCanvas.hide() if realCanvas.hide?
-            realCanvas._destroy() if realCanvas._destroy?
-          SVG (svgRoot) ->
-            svgRoot.clear()
-            realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
-              types: options.types
-              dataView: dataView
-              application: options.application
-              height: canvasHeight
-              width: canvasWidth
-              svgRoot: svgRoot
+        $(container).on "imgOnly", ->    
+          SVGWidth = parseInt($(container).width() * 20/20, 10)
+          if canvasWidth? and canvasWidth > 0
+            that.setScale (SVGWidth / canvasWidth)
+            if realCanvas?
+              realCanvas.hide() if realCanvas.hide?
+              realCanvas._destroy() if realCanvas._destroy?
+            SVG (svgRoot) ->
+              svgRoot.clear()
+              realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
+                types: options.types
+                dataView: dataView
+                application: options.application
+                height: canvasHeight
+                width: canvasWidth
+                svgRoot: svgRoot
 
         that.events.onCanvasChange.addListener (canvas) ->
           dataView.setKey(canvas)
