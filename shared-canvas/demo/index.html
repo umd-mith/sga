@@ -1,115 +1,244 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shared Canvas</title>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/modernizr-2.6.2.min.js"></script>
-    <script src="./js/jquery.svg.min.js"></script>
-    <script src="./js/navigation.js"></script>
-    <script src="./js/jquery-ui-1.8.22.custom.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/polymaps.min.js"></script>
-    <script src="./js/adoratio.js"></script>
-    <script src="./js/mithgrid.js"></script>
-    <script src="./js/shared-canvas.js"></script>
-    <link href="./css/normalize.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="./css/overrides.css" rel="stylesheet">
-    <link href="./css/polymaps.css" rel="stylesheet">
-    <link href="./css/shared-canvas.css" rel="stylesheet">
-    <style>
-      /* body { padding-top: 60px; } */
-    </style>
-  </head>
-  <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-    <div id="page" class="site-content">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Shelley-Godwin Archive - Detail View</title>
+<link href="css/reset.css" type="text/css" rel="stylesheet" />
+<!-- <link type="text/css" rel="stylesheet" href="http://dev.shelleygodwinarchive.org/sites/all/themes/sga-theme/css/960.css" /> -->
+<link type="text/css" rel="stylesheet" href="./css/960.css" />
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css?mr4i2q" media="all" />
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?mr4i2q" media="all" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
 
-        <header id="main-header" class="group">
-                <div id="logo">
-                <a href="index.htm"><img src="images/sga_logo.png" ></a>
+<!-- <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
+<script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js?mr4i2q"></script> -->
+
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery.ui.core.min.js?v=1.8.11"></script>
+<script src="./js/modernizr-2.6.2.min.js"></script>
+<script src="./js/jquery.svg.min.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/jquery-ui-1.8.22.custom.min.js"></script>
+<script src="./js/jquery.ba-bbq.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/polymaps.min.js"></script>
+<script src="./js/adoratio.js"></script>
+<script src="./js/mithgrid.js"></script>
+<script src="./js/q.min.js"></script>
+<script src="./js/shared-canvas.js"></script>
+
+<link href="./css/overrides.css" rel="stylesheet">
+<link href="./css/polymaps.css" rel="stylesheet">
+<link href="./css/shared-canvas.css" rel="stylesheet">  
+
+</head>
+
+<body>
+<div class="detail-view-tools">
+  <form name="sgaDetails" id="sgaForm" class="well form-inline">
+    <fieldset class="meta-data-view">
+      <div class="noborder control-group row">
+        <ul class="meta-data-group controls col-lg-3">
+          <li class="meta-data-item">
+            <label class="meta-label">Author(s)</label>
+            [Author(s) Names]</li>
+          <li class="meta-data-item">
+            <label class="meta-label">Hand(s)</label>
+            [Hand(s) Names]</li>
+          <li class="meta-data-item">
+            <label class="meta-label">Date Written</label>
+            [Date]</li>
+        </ul>
+        <ul class="meta-data-group controls col-lg-3">
+          <li class="meta-data-item">
+            <label class="meta-label">Notebook</label>
+            [Notebook Title]</li>
+          <li class="meta-data-item">
+            <label class="meta-label">Title/Literary Work</label>
+            [Work Title]</li>
+          <li class="meta-data-item">
+            <label class="meta-label">Folio</label>
+            [ ] </li>
+          <li class="meta-data-item">
+            <label class="meta-label">State</label>
+            [Work State]</li>
+        </ul>
+        <ul class="meta-data-group controls col-lg-3">
+          <li class="meta-data-item">
+            <label class="meta-label">Institution</label>
+            Bodliean Library, University of Oxford</li>
+          <li class="meta-data-item">
+            <label class="meta-label">Shelfmark/ID</label>
+            MS Abinger c.56 </li>
+          <li class="meta-data-item">
+            <label class="meta-label">Collection</label>
+            [Collection Name] </li>
+        </ul>
+        <div class="meta-data-group col-lg-3 controls" id="status-block">
+          <div class="well well-small">
+            <div class="meta-data-item circle-yes" id="status-transcription">
+              <label class="meta-label">Transcription Status</label>
+              <span class="badge-red"><i class="icon-circle"></i></span>
+              <span class="badge-yellow"><i class="icon-circle"></i></span>
+              <span class="badge-green"><i class="icon-circle active"></i></span>
+              <a href="#" title="Details" class="details">Details</a> </div>
+            <div class="meta-data-item circle-yes" id="status-metadata">
+              <label class="meta-label">Metadata Status</label>
+              <span class="badge-red"><i class="icon-circle"></i></span>
+              <span class="badge-yellow"><i class="icon-circle active"></i></span>
+              <span class="badge-green"><i class="icon-circle"></i></span>
+              <a href="#" title="Details" class="details">Details</a> </div>
+          </div>
+        </div>
+        <!-- /status-block --> 
+        
+      </div>
+    </fieldset>
+    <fieldset class="detail-view-controls row">
+      <div class="accordion" id="accordion-parent">
+        <div class="accordion-group">
+          <div class="well">
+            <input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" />
+            <div class="btn-toolbar pull-left" id="view-controls">
+              <div class="btn-group"><a class="btn btn-small" title="Select"><i class="icon-red icon-pencil"></i></a></div>
+              <div class="btn-group"><a class="btn btn-small" title="Reset Zoom" id="zoom-reset"><i class="icon-red icon-search"></i></a><a class="btn btn-small" title="Zoom In" id="zoom-in"><i class="icon-red icon-zoom-in"></i></a><a class="btn btn-small" title="Zoom Out" id="zoom-out"><i class="icon-red icon-zoom-out"></i></a></div>
+              <div class="btn-group" id="mode-controls"><a class="btn btn-small" title="View Image Only" id="img-only"><i class="icon-red icon-picture"></i></a><a class="btn btn-small" title="Standard View" style="display:none;" id="mode-std"><i class="icon-red icon-pause"></i></a><a class="btn btn-small" title="View Text Online" id="mode-rdg"><i class="icon-red icon-align-left"></i></a><a class="btn btn-small" title="Toggle TEI View" id="mode-xml"><i class="icon-red icon-code"></i></a></div>
             </div>
-                <nav class="main-navigation">
-                <ul class="nav-menu">
-                        <li class="current_page_item"><a href="index.htm" >Home</a></li>
-                    <li><a href="static.htm">About</a></li>
-                    <li><a href="static.htm">Tutorials</a></li>
-                    <li><a href="static.htm">Search</a></li>
-                    <li><a href="static.htm">Browse</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-                <article class="page-content group">
-            <header>
-                <h2></h2>
-            </header>
-
-
-    <div class="container-fluid">
-
-<div class="row-fluid">
-<div class="span12">
-<form class="well form-inline">
-    <div style="float: right" id="pager-controls">
-      <a href="#" class="btn" id="first-page"><i class="icon icon-fast-backward"></i></a>
-      <a href="#" class="btn" id="prev-page"><i class="icon icon-step-backward"></i></a>
-      <a href="#" class="btn" id="next-page"><i class="icon icon-step-forward"></i></a>
-      <a href="#" class="btn" id="last-page"><i class="icon icon-fast-forward"></i></a>
-    </div>
-    <strong>Manifest Title</strong>
-    <i id="metadata" class="icon icon-info-sign" style="margin-right: 10px"></i>
-    <label>Page Order:</label>
-    <select id="sequence"></select>
-    &nbsp;
-    <label>Page/Canvas:</label>
-    <span id="canvas-label"></span>
-    <div id="loading-progress" style="margin: 10px; margin-left: 30px; margin-right: 30px;"></div>
-<br/>
-<input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" />
-<div style="margin-top: 1em;" id="image-controls">
-      <a href="#" class="btn" id="zoom-reset"><i class="icon icon-picture"></i></a>
-      <a href="#" class="btn" id="zoom-in"><i class="icon icon-zoom-in"></i></a>
-      <a href="#" class="btn" id="zoom-out"><i class="icon icon-zoom-out"></i></a>
-      <a href="#" class="btn" id="marquee-sh"><i class="icon icon-eye-open"></i></a>
-    </div>
-</form>
+            <!-- /view-controls -->
+            
+            <div class="pull-left" id="search-form-block">
+              <div class="accordion-heading">
+                <div class="input-group" id="searchbox">
+                  <input type="text" class="form-control input-small" placeholder="Search within current sequence" />
+                  <span class="input-group-btn"> <a class="btn btn-small" title="Search" id="search-btn"><i class="icon-search icon-flip-horizontal"></i></a><a class="btn btn-small accordion-toggle collapsed" data-toggle="collapse" data-parent="accordion-parent" title="Show Search Filter" href="#collapse-one"><i class="icon-chevron-up"></i></a></span> 
+                </div>
+              </div>
+            </div>
+            <!-- /search-form-block -->
+            
+            <div class="pull-left" id="hand-view-controls">
+              <div class="control-group">
+                <div class="control-label">Limit View:</div>
+                <label class="radio-inline">
+                  <input type="radio" name="hand-view" value="mary-shelley" id="hand-view_0" checked="checked" />
+                  All</label>
+                <label class="radio-inline">
+                  <input type="radio" name="hand-view" value="mary-shelley" id="hand-view_1" />
+                  Mary Shelley</label>
+                <label class="radio-inline">
+                  <input type="radio" name="hand-view" value="percy-bysshe-shelley" id="hand-view_2" />
+                  Percy Bysshe Shelley</label>
+              </div>
+            </div>
+            <!--/hand-view-controls-->
+            
+            <div class="btn-toolbar pull-right" id="sequence-nav">
+              <div class="btn-group" id="pager-controls"><a class="btn btn-small" id="first-page"><i class="icon-red icon-step-backward"></i></a><a class="btn btn-small" id="prev-page"><i class="icon-red icon-chevron-left" ></i></a><a class="btn btn-small" id="next-page"><i class="icon-red icon-chevron-right"></i></a><a class="btn btn-small" id="last-page"><i class="icon-red icon-step-forward"></i></a></div>
+            </div>
+            <!-- /sequence-nav --> 
+            
+          </div>
+          <!-- /well -->
+          <div id="collapse-one" class="accordion-body collapse in meta-data-filter">
+            <div class="accordion-inner well well-small">
+              <div class="controls meta-data-group" id="limit-search">
+                <h3>Limit Search <span>Only Show Terms Found In:</span></h3>
+                <div class="control-group">
+                  <label class="control-label">Text Type(s) <span>|</span></label>
+                  <label class="checkbox inline meta-data-item">
+                    <input type="checkbox" id="inlineCheckbox1" value="added">
+                    added passages</label>
+                  <label class="checkbox inline meta-data-item">
+                    <input type="checkbox" id="inlineCheckbox2" value="deleted">
+                    deleted passages</label>
+                  <!--<label class="checkbox inline meta-data-item">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3">
+                    unrevised passages only</label>-->
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Hand(s) <span>|</span></label>
+                  <label class="checkbox inline meta-data-item">
+                    <input type="checkbox" id="inlineCheckbox1" value="hand_msw">
+                    Mary Shelley</label>
+                  <label class="checkbox inline meta-data-item">
+                    <input type="checkbox" id="inlineCheckbox2" value="hand_pbs">
+                    Percy Bysshe Shelley</label>
+                  <label class="checkbox inline meta-data-item">
+                    <input type="checkbox" id="inlineCheckbox3" value="hand_comp">
+                    Unknown</label>
+                </div>
+              </div>
+            </div>
+            <!-- /well /accordion-inner --> 
+          </div>
+          <!-- accordion-body --> 
+        </div>
+        <!-- /accordion-group--> 
+      </div>
+      <!-- /accordion -->
+    </fieldset>
+    <!-- /detail-view-controls control-group -->
+  </form>
 </div>
-</div>
-<div class="well">
-  <div class="row-fluid">
-    <div class="span6" style="padding-left: 2%; text-align: center;">
-      <div class="canvas" data-types="Image" 
-           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
-      ></div>
+<!-- /detail-view-tools -->
+
+<div class="detail-view-results">
+  <div class="shadow-top"></div>
+  <div class="row">
+    <div class="loader" id="loading-progress"><!-- <i class="icon-spinner icon-spin icon-3x"></i> --></div>
+    <div class="col-lg-6">
+      <div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"></div>
     </div>
-    <!-- div class="span2" style="padding-left: 2%; padding-right: 2%; text-align: center;">&nbsp;</div -->
-    <div class="span6" style="padding-right: 2%; text-align: center;">
-      <div class="canvas" data-types="Text" 
-           data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
-      ></div>
+    <div class="col-lg-6">
+      <div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"></div>
     </div>
   </div>
 </div>
+<!-- /detail-view-results -->
+
+<div class="detail-view-meta">
+  <div class="row">
+    <div id="detail-view-details" class="meta-data-group col-lg-6">
+      <div class="well well-small meta-data-item">
+        <h3 class="meta-title">Page View Details</h3>
+        <div class="meta-page-view">[ . . . ]</div>
+      </div>
+    </div>
+    <div id="detail-view-sequence" class="meta-data-group col-lg-6">
+      <div class="well well-small">
+        <h3 class="meta-title">Sequence Details</h3>
+        <div class="meta-sequence meta-data-item">[ . . . ]</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="detail-view-citation" class="meta-data-group col-lg-6">
+      <div class="well well-small meta-data-item">
+        <h3 class="meta-title">Citation</h3>
+        <h4 class="cite-page"><i class="icon-desktop icon-fixed-width"></i> Cite This Page</h4>
+        <div class="page-citation">Author, A. A. (Year). Title of chapter. In B. B. Editor (Ed.), Title of book (pp. xxx–xxx). 
+          Retrieved from http://www.shellygodwinarchive.org/xxxxx-xxx/xxxxxxxxx</div>
+        <h4 class="cite-work"><i class="icon-book icon-fixed-width"></i> Cite This Work</h4>
+        <div class="work-citation">Bodleian Shelley Manuscripts, v. IX, Prometheus Unbound, ed. Neil Fraistat. New York: Garland, 1991. Print.</div>
+      </div>
+    </div>
+    <div id="detail-view-credits" class="meta-data-group col-lg-6">
+      <div class="well well-small meta-data-item">
+        <h3 class="meta-title">Credits + Contributors</h3>
+        <div class="meta-credits">[ . . . ]</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /detail-view-meta -->
 <script type="text/javascript">
   $(function() {
 
     var builder = SGA.Reader.Application.SharedCanvas.builder({
-      progressTracker: SGA.Reader.Component.ProgressBar.initInstance(
-                           $("#loading-progress")
-                       )
+      spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
+      searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://localhost:5000/annotate?")
     });
 
     if($.fn.popover != null) {
@@ -124,7 +253,7 @@
     }
 
     builder.onManifest(
-      "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest.json"
+      "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"
     , function(app) {
       var filter, pageSlider, pager;
 
@@ -136,7 +265,9 @@
 
       pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
 
-      app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#image-controls");
+      // modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
+
+      app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
       pageSlider.events.onValueChange.addListener( app.setPosition );
       pager.events.onValueChange.addListener( app.setPosition );
@@ -180,34 +311,17 @@
     });
   });
 </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-    </div>
-                </article>
-        </section>
-
-        <aside class="group">
-        </aside>
-
-        <footer class="group">
-
-        </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </div>
-    <!-- /page -->
-
-  </body>
-</html>
-
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 </body>
+</html>

@@ -81,6 +81,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
         options = that.options
         svgRoot = options.svgRoot
 
+        app = that.options.application()
+
         #
         # !target gives us all of the annotations that target the given
         # item id. We use this later to find all of the annotations that target
@@ -136,14 +138,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           item = model.getItem id
 
-          app = that.options.application()
+          
 
           # Activate imageControls
           app.imageControls.setActive(true)
           
           # Djatoka URL is now hardcoded, it will eventually come from the manifest
           # when we figure out how to model it.
-          djatokaURL = "http://localhost:8080/adore-djatoka/resolver" 
+          djatokaURL = "http://sga.mith.org:8080/adore-djatoka/resolver" 
           imageURL = item.image[0]
           baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
 
@@ -168,8 +170,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           # wait for polymap to load image and update map, then...
           toAdoratio.then ->
-            # Decide when to propagate changes...
-            propagate = true
+            # Help decide when to propagate changes...
+            fromZoomControls = false
             # Keep track of some start values
             startCenter = map.center()
 
@@ -177,10 +179,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.events.onZoomChange.addListener (z) ->
               map.zoom(z)
               app.imageControls.setImgPosition map.position
-              propagate = false
+              fromZoomControls = true
+              
             app.imageControls.events.onImgPositionChange.addListener (p) ->
               # only apply if reset
-              propagate = false
               if p.topLeft.x == 0 and p.topLeft.y == 0
                 map.center(startCenter)
 
@@ -190,18 +192,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.setMaxZoom map.zoomRange()[1]
             app.imageControls.setMinZoom map.zoomRange()[0]
             app.imageControls.setImgPosition map.position
+            
             map.on 'zoom', ->
-              if propagate
+              if !fromZoomControls
                 app.imageControls.setZoom map.zoom()
-                app.imageControls.setImgPosition map.position
-              else
-                propagate = true
-              # app.imageControls.setMaxZoom map.zoomRange()[1]
+                app.imageControls.setImgPosition map.position                
+                app.imageControls.setMaxZoom map.zoomRange()[1]
+              fromZoomControls = false
             map.on 'drag', ->
-              if propagate
-                app.imageControls.setImgPosition map.position
-              else
-                propagate = true
+              app.imageControls.setImgPosition map.position
 
           
           rendering.update = (item) ->
@@ -321,6 +320,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.addLens 'TextContentZone', (container, view, model, id) ->
           return unless 'Text' in (options.types || [])
 
+          # Set initial viewbox
+          svg = $(svgRoot.root())
+          # jQuery won't modify the viewBox - using pure JS
+          vb = svg.get(0).getAttribute("viewBox")
+
+          if !vb?
+            svgRoot.configure
+              viewBox: "0 0 #{options.width} #{options.height}"
+
           rendering = {}
           
           app = options.application()
@@ -362,9 +370,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
           textContainer.appendChild(bodyEl)
 
           if app.imageControls.getActive()
+            # If the marquee already exists, replace it with a new one.
+            $('.marquee').remove()
             # First time, always full extent in size and visible area
             strokeW = 5
-            marquee = svgRoot.rect(0, 0, options.width-strokeW, options.height-strokeW,
+            marquee = svgRoot.rect(0, 0, Math.max(1, options.width-strokeW), Math.max(1, options.height-strokeW),
               class : 'marquee' 
               fill: 'yellow', 
               stroke: 'navy', 
@@ -374,19 +384,24 @@ SGAReader.namespace "Presentation", (Presentation) ->
               ) 
             scale = options.width / $(container).width()
             visiblePerc = 100
-
+            
             app.imageControls.events.onZoomChange.addListener (z) ->
               if app.imageControls.getMaxZoom() > 0
+
                 width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
                 visiblePerc = Math.min(100, ($(container).width() * 100) / width)
 
                 marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
                 marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
 
+                if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
+                  $(marquee).attr "opacity", "0"
+                else
+                  $(marquee).attr "opacity", "100"
+
             app.imageControls.events.onImgPositionChange.addListener (p) ->
               marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
               marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
-              
 
           #
           # textDataView gives us all of the annotations targeting this
@@ -500,8 +515,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRootEl.attr
                 width: canvasWidth
                 height: canvasHeight
-              svgRoot.configure
-                viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
+
+              # If the viewbox is not set (ie beacuse of an image viewer), 
+              # don't attempt to adjust it.
+              svg = $(svgRoot.root())
+              # jQuery won't modify the viewBox - using pure JS
+              vb = svg.get(0).getAttribute("viewBox")
+
+              if vb?
+                svgRoot.configure
+                  viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
 
               svgRootEl.css
                 width: SVGWidth
@@ -517,6 +540,23 @@ SGAReader.namespace "Presentation", (Presentation) ->
           key: null
 
         realCanvas = null
+
+        that.events.onImgOnlyChange.addListener () ->
+          canvasWidth = item.width?[0] || 1
+          canvasHeight = item.height?[0] || 1
+          that.setScale (parseInt($(container).parent().width()) / canvasWidth)
+          if realCanvas?
+            realCanvas.hide() if realCanvas.hide?
+            realCanvas._destroy() if realCanvas._destroy?
+          SVG (svgRoot) ->
+            svgRoot.clear()
+            realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
+              types: options.types
+              dataView: dataView
+              application: options.application
+              height: canvasHeight
+              width: canvasWidth
+              svgRoot: svgRoot
 
         that.events.onCanvasChange.addListener (canvas) ->
           dataView.setKey(canvas)

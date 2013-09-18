@@ -67,6 +67,11 @@ MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
     </div>
   """
 
+MITHgrid.defaults 'SGA.Reader.Component.Spinner',
+  viewSetup: """
+    <i class="icon-spinner icon-spin icon-3x"></i>
+  """
+
 #
 # We use the Canvas presentation as the root surface for displaying the
 # annotations. Thus, we keep track of which canvas we're looking at.
@@ -78,6 +83,7 @@ MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
+    ImgOnly: { is: 'rw' }
 
 #
 # The ItemsToProcess and ItemsProcessed are analagous to the
@@ -95,3 +101,13 @@ MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
     MaxZoom: { is: 'rw', default: 0, isa: 'numeric' }
     MinZoom: { is: 'rw', default: 0, isa: 'numeric' }
     ImgPosition : {is: 'rw', default: {} }
+
+MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
+  variables:
+    Field: { is: 'rw', default: false }
+    Query: { is: 'rw', default: false }
+    ServiceURL: { is: 'rw', default: false }
+
+MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
+  variables:
+    ImgOnly: { is: 'rw', default: false }

@@ -37,10 +37,18 @@ SGAReader.namespace "Application", (Application) ->
         that.events.onSequenceChange.addListener (s) ->
           currentSequence = s
           seq = that.dataStore.data.getItem currentSequence
-          p = 0
-          if seq?.sequence?
-            p = seq.sequence.indexOf that.getCanvas()
-          p = 0 if p < 0
+
+          hash = $.param.fragment window.location.href
+          paras = $.deparam hash
+          
+          n = parseInt(paras.n)
+          if paras.n? and seq.sequence.length >= n-1 >= 0
+            p = n-1
+          else
+            if seq?.sequence?
+              p = seq.sequence.indexOf that.getCanvas()
+            p = 0 if p < 0
+
           that.setPosition p
             
         #
@@ -50,7 +58,7 @@ SGAReader.namespace "Application", (Application) ->
         that.events.onPositionChange.addListener (p) ->
           seq = that.dataStore.data.getItem currentSequence
           canvasKey = seq.sequence?[p]
-          that.setCanvas canvasKey
+          that.setCanvas canvasKey    
 
         #
         # But if we do know the name of the canvas we want to see, we
@@ -63,7 +71,8 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
-          pp[0].setCanvas k for pp in presentations
+          Q.nfcall(that.loadCanvas, k).then () -> 
+              setTimeout (-> pp[0].setCanvas k for pp in presentations), 100
           k
 
         #
@@ -88,6 +97,9 @@ SGAReader.namespace "Application", (Application) ->
         that.setItemsToProcess = manifestData.setItemsToProcess
         that.addItemsProcessed = manifestData.addItemsProcessed
         that.addItemsToProcess = manifestData.addItemsToProcess
+        that.addManifestData = manifestData.importFromURL
+        that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
+        that.flushSearchResults = manifestData.flushSearchResults
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -138,87 +150,70 @@ SGAReader.namespace "Application", (Application) ->
           item.source = body.oahasSource
           extractSpatialConstraint(item, body.oahasSelector?[0])
 
-        pullData = ->
-          # now pull data out into data store
-          # if multiple sequences, we want to add a control to allow
-          # selection
+        that.loadCanvas = (canvas, cb) ->
+          deferred = Q.defer()
+
           items = []
-          syncer = MITHgrid.initSynchronizer()
-
-          canvases = manifestData.getCanvases()
-          that.addItemsToProcess canvases.length
-          syncer.process canvases, (id) ->
-            that.addItemsProcessed 1
-            mitem = manifestData.getItem id
-            items.push
-              id: id
-              type: 'Canvas'
-              width: parseInt(mitem.exifwidth?[0], 10)
-              height: parseInt(mitem.exifheight?[0], 10)
-              label: mitem.dctitle || mitem.rdfslabel
-
-          zones = manifestData.getZones()
-          that.addItemsToProcess zones.length
-          syncer.process zones, (id) ->
-            that.addItemsProcessed 1
-            zitem = manifestData.getItem id
-            items.push
-              id: id
-              type: 'Zone'
-              width: parseInt(mitem.exifwidth?[0], 10)
-              height: parseInt(mitem.exifheight?[0], 10)
-              angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
-              label: zitem.rdfslabel
-
-          seq = manifestData.getSequences()          
-          that.addItemsToProcess seq.length
-          syncer.process seq, (id) ->
-            that.addItemsProcessed 1
-            sitem = manifestData.getItem id
-            item =
-              id: id
-              type: 'Sequence'
-              label: sitem.rdfslabel
-
-            # walk list of canvases
-            seq = []
-            seq.push sitem.rdffirst[0]
-            sitem = manifestData.getItem sitem.rdfrest[0]
-            while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
-              seq.push sitem.rdffirst[0]
-              sitem = manifestData.getItem sitem.rdfrest[0]
-            item.sequence = seq
-            items.push item
-
           textSources = {}
           textAnnos = []
 
-          # now get the annotations we know something about handling
-          annos = manifestData.getAnnotations()          
+          syncer = MITHgrid.initSynchronizer()
+
+          annos = manifestData.getAnnotationsForCanvas canvas
+
           that.addItemsToProcess annos.length
           syncer.process annos, (id) ->
             #
             # Once we have our various annotations, we want to process
             # them to produce sets of items that can be displayed in a
-            # sequence - move some of the logic from the presentation to
-            # here so we are only concerned with presenting things.
+            # sequence. We preprocess overlapping ranges of highlights
+            # to create non-overlapping multi-classed items that can
+            # be filtered in the final presentation.
             #
             that.addItemsProcessed 1
-            aitem = manifestData.getItem id            
+            aitem = manifestData.getItem id
             array = null
             item =
               id: id
 
-            # for now, we *assume* that the content annotation is coming
-            # from a TEI file and is marked by begin/end pointers
+            #
+            # For now, we *assume* that the content annotation is coming
+            # from a TEI file and is marked by begin/end pointers.
+            # These annotations are loaded into the triple store as they
+            # are since they don't target sub-ranges of text.
+            # TextContent items end up acting like zones in that they
+            # are the target of text annotations but don't themselves
+            # end up providing content.
+            #
             if "scContentAnnotation" in aitem.type
               extractTextTarget item, aitem.oahasTarget?[0]
               extractTextBody   item, aitem.oahasBody?[0]
-              textSources[item.source] ?= []
-              textSources[item.source].push [ id, item.start, item.end ]
-              item.type = "TextContentZone"
+              if item.start? and item.end?
+                textSources[item.source] ?= []
+                textSources[item.source].push [ id, item.start, item.end ]
+              #
+              # We should use "ContentAnnotation" only when we know we
+              # won't have anything targeting this text. Otherwise, we
+              # should use TextContentZone. This is a work in progress
+              # as we see the pattern unfold.
+              #
+              # Essentially, if we want the annotation to act as a classic
+              # Shared Canvas text content annotation, we use a type of
+              # "ContentAnnotation". If we want to allow highlight annotation
+              # of the text with faceted selection of text, then we use a
+              # type of "TextContentZone".
+              #
+              if item.text?
+                item.type = "ContentAnnotation"
+              else
+                item.type = "TextContentZone"
               array = items
 
+            #
+            # For now, we assume that images map onto the entire canvas.
+            # This isn't true for Shared Canvas. We need to extract any
+            # spatial constraint and respect it in the presentation.
+            #
             else if "scImageAnnotation" in aitem.type
               imgitem = manifestData.getItem aitem.oahasBody
               imgitem = imgitem[0] if $.isArray(imgitem)
@@ -230,7 +225,6 @@ SGAReader.namespace "Application", (Application) ->
               item.type = "Image"
               if "image/jp2" in imgitem["dcformat"] and that.imageControls?
                 item.type = "ImageViewer"
-              #item.format = imgitem["dcformat"]
 
             else if "scZoneAnnotation" in aitem.type
               target = manifestData.getItem aitem.oahasTarget
@@ -259,9 +253,14 @@ SGAReader.namespace "Application", (Application) ->
             # each addition, deletion, etc., targets a scContentAnnotation
             # but we want to make sure we get any scContentAnnotation text
             # that isn't covered by any of the other annotations
+
+            # This is inspired by NROFF as implemented, for example, in
+            # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
+            # It also has shades of a SAX processor thrown in.
             
             that.addItemsToProcess 1 + textAnnos.length
-            that.dataStore.data.loadItems items, -> 
+
+            that.dataStore.data.loadItems items, ->
               items = []
               modstart = {}
               modend = {}
@@ -367,36 +366,94 @@ SGAReader.namespace "Application", (Application) ->
                           br_pushed = true
                         last_pos = pos
                     processNode last_pos, text.length
-                    
+
                     that.dataStore.data.loadItems textItems, ->
                       that.addItemsProcessed 1
-                  
+              
+              deferred.resolve()
               that.addItemsProcessed 1
 
-        loadManifests = (url) ->
-          # Working example:
-          # This would work because pull data is done last.
-          # We now need to change the way line-framentation is handled in order to support 
-          # multiple calls to pullData()
-          #
-          # manifestData.importFromURL options.url, ->
-          #   manifestData.importFromURL "http://localhost:5000/annotate?q=text:feelings", ->
-          #     pullData()
-          if url.length > 1
-            manifestData.importFromURL url[0], ->
-              loadManifests(url[1..url.length])
-          else
-            manifestData.importFromURL url[0], pullData
+          if cb?
+            cb()
 
-        # Expose loadManifests to allow an application to load more annotations
-        that.loadManifests = loadManifests
+          deferred.promise
 
         if options.url?
           #
           # If we're given a URL in our options, then go ahead and load
           # it. For now, this is the only way to get data from a manifest.
           #
-          loadManifests [options.url]
+          manifestData.importFromURL options.url, ->
+            # Once the RDF/JSON is loaded from the url and parsed into
+            # the manifestData triple store, we process it to pull out all
+            # of the features we care about.
+            items = []
+            syncer = MITHgrid.initSynchronizer()
+
+            #
+            # We begin by pulling out all of the canvases defined in the
+            # manifest. We only care about their id, size, and label.
+            #
+            canvases = manifestData.getCanvases()
+            that.addItemsToProcess canvases.length
+            syncer.process canvases, (id) ->
+              that.addItemsProcessed 1
+              mitem = manifestData.getItem id
+              items.push
+                id: id
+                type: 'Canvas'
+                width: parseInt(mitem.exifwidth?[0], 10)
+                height: parseInt(mitem.exifheight?[0], 10)
+                label: mitem.dctitle || mitem.rdfslabel
+
+            #
+            # We want to add any zones that might be in the manifest. These
+            # are like canvases, but with the addition of a rotation angle.
+            # ZoneAnnotations map zones onto canvases.
+            #
+            zones = manifestData.getZones()
+            that.addItemsToProcess zones.length
+            syncer.process zones, (id) ->
+              that.addItemsProcessed 1
+              zitem = manifestData.getItem id
+              items.push
+                id: id
+                type: 'Zone'
+                width: parseInt(mitem.exifwidth?[0], 10)
+                height: parseInt(mitem.exifheight?[0], 10)
+                angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                label: zitem.rdfslabel
+
+            #
+            # We pull out all of the sequences in the manifest. MITHgrid
+            # stores a multi-valued property as an ordered list (JavaScript
+            # array), so we don't need all of the blank nodes that RDF uses.
+            #
+            # The primary or initial sequence is undefined if there are
+            # multiple sequences in the manifest.
+            #
+            seq = manifestData.getSequences()
+            that.addItemsToProcess seq.length
+            syncer.process seq, (id) ->
+              that.addItemsProcessed 1
+              sitem = manifestData.getItem id
+              item =
+                id: id
+                type: 'Sequence'
+                label: sitem.rdfslabel
+
+              seq = []
+              seq.push sitem.rdffirst[0]
+              sitem = manifestData.getItem sitem.rdfrest[0]
+              while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
+                seq.push sitem.rdffirst[0]
+                sitem = manifestData.getItem sitem.rdfrest[0]
+              item.sequence = seq
+              items.push item           
+
+            syncer.done ->
+              that.dataStore.data.loadItems items
+
     #
     # ### Application.SharedCanvas#builder
     #
@@ -421,6 +478,17 @@ SGAReader.namespace "Application", (Application) ->
       # tracker. Also makes sure that CoffeeScript scopes them correctly.
       updateProgressTracker = ->
       updateProgressTrackerVisibility = ->
+
+      # Simple spinner as alternative to progress tracker
+      updateSpinnerVisibility = ->
+
+      if config.spinner?
+        updateSpinnerVisibility = ->
+          for m, obj of that.manifests
+            tot = obj.getItemsToProcess()
+            obj.events.onItemsToProcessChange.addListener (i) ->
+              config.spinner.hide() if i > tot
+
 
       if config.progressTracker?
         updateProgressTracker = ->
@@ -455,6 +523,42 @@ SGAReader.namespace "Application", (Application) ->
               uptvTimer = 10000 if uptvTimer > 10000
               setTimeout uptv, uptvTimer
             uptv()
+
+      if config.searchBox?
+        if config.searchBox.getServiceURL()?
+          config.searchBox.events.onQueryChange.addListener (q) ->
+            queryURL = config.searchBox.getServiceURL() + q
+            for m, obj of that.manifests
+
+              # Flush out all annotations for this canvas.
+              p = obj.getPosition()
+              s = obj.getSequence()
+              seq = obj.dataStore.data.getItem s
+              canvasKey = seq.sequence?[p]
+
+              allAnnos = obj.dataView.canvasAnnotations.items()
+              obj.dataView.canvasAnnotations.removeItems(allAnnos)
+
+              annos = obj.getAnnotationsForCanvas canvasKey
+              obj.dataStore.data.removeItems(annos)
+
+              # Flush out all search annotations, if any. 
+              obj.flushSearchResults()
+
+              # Load new search annotations into main data store.
+              obj.addManifestData queryURL, ->
+
+                # Parse new search annotations into presentation data store. 
+                Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                  if p == 0
+                    newPage = p + 1
+                  else
+                    newPage = p - 1
+                  setTimeout -> obj.setPosition newPage, 0  
+                  setTimeout -> obj.setPosition p, 0
+        else
+          console.log "You must specify the URL to some search service."            
+
 
       #
       # #### #onManifest
@@ -509,6 +613,7 @@ SGAReader.namespace "Application", (Application) ->
             manifest.events.onItemsToProcessChange.addListener updateProgressTracker
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
             updateProgressTrackerVisibility()
+            updateSpinnerVisibility()
               
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)

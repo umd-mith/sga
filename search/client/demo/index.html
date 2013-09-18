@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Searcht</title>
+<link href="../../css/reset.css" type="text/css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="http://dev.shelleygodwinarchive.org/sites/all/themes/sga-theme/css/960.css" />
+<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css?mr4i2q" media="all" />
+<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?mr4i2q" media="all" />
+<link href="../../css/style.css" type="text/css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
+<script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js?mr4i2q"></script>
+</head>
+
+
+<body>
+<div class="row">
+  <div class="col-lg-5 col-5 col-sm-5" id="search-bar">
+    <div class="input-group">
+      <form><input type="text" class="form-control input-medium" placeholder="Search" /></form>
+      <span class="input-group-btn"><a class="btn btn-medium" title="Search"><i class="icon-search icon-flip-horizontal"></i></a> </span> </div>
+  </div>
+  <div class="col-lg-7 col-7 col-sm-5" id="search-instructions">
+    <h4>How To Search</h4>
+    <p>Write a query in the search field. All words must be found on a page to be returned. Use <em>OR</em> between words to look for any of the words. Use inverted commas "" to look for word ocurring together.</p>
+  </div>
+</div>
+<div class="row r-header">
+  <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
+  <div class="col-lg-3 col-3 col-sm-3 clearfix" id="results-refine-header">
+    <div class="results-refine-header">Refine Results</div>
+  </div>
+  <!--/col-->
+  <div class="col-lg-9 col-9 col-sm-9 clearfix" id="results-info-sort">
+    <div class="results-info-sort">
+      <form class="form-inline">
+        <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
+        <div class="r-sorting pull-left">
+          <div class="form-group">
+            <label for="r-sorting" class="control-label">Sort:</label>
+            <div class="input-group">
+              <select class="form-control" name="r-sortby" size="1">
+                <option value="score" selected="selected">Relevance</option>
+                <option value="shelfmark">Alphabetical</option>
+                <!-- <option value="date">Date</option> -->
+              </select>
+              <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
+            <div class="input-group">
+              <select class="form-control" name="r-sort" size="1">
+                <option value="asc" selected>Ascending</option>
+                <option value="desc">Decending</option>
+              </select>
+              <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
+          </div>
+        </div>
+        <div class="r-nav pull-right">
+          <ul class="pagination pagination-sm">
+            <!-- <li><a href="#" class="nav-first disabled"><i class="icon-red icon-step-backward"></i></a></li>
+            <li><a href="#" class="nav-prev disabled"><i class="icon-red icon-chevron-left"></i></a></li>
+            <li><a href="#" class="active">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#" class="nav-next"><i class="icon-red icon-chevron-right"></i></a></li>
+            <li><a href="#" class="nav-last"><i class="icon-red icon-step-forward"></i></a></li> -->
+          </ul>
+        </div>
+      </form>
+    </div>
+    <!--/results-info-sort--> 
+  </div>
+  <!--/col--> 
+</div>
+<!--/r-header-->
+<div class="row">
+  <div class="col-lg-3 refine-results" id="refine-results">
+    <!-- <div class="panel" id="r-list-author">
+      <div class="panel-heading">Author</div>
+      <div class="list-group"> <a href="#" class="list-group-item"><span class="label label-danger"><i class="icon-remove"></i></span><span class="badge">3</span>Dapibus Facilisis</a> <a href="#" class="list-group-item"><span class="label label-danger"><i class="icon-remove"></i></span><span class="badge">1</span>Morbi Leo</a> <a href="#" class="list-group-item"><span class="label label-danger"><i class="icon-remove"></i></span><span class="badge">1</span>Porta ac consectetur ac</a> </div>
+      <div class="panel-footer"><a href="#">Show More <i class="icon-caret-down icon-fixed-width"></i></a></div>
+    </div> -->
+    <!--/panel -->
+    <div class="panel" id="r-list-notebook">
+      <div class="panel-heading">Notebook</div>
+      <div class="list-group"> </div>
+      <!-- <div class="panel-footer"><a href="#">Show More <i class="icon-caret-down icon-fixed-width"></i></a></div> -->
+    </div>
+    <!--/panel -->
+    <!-- <div class="panel" id="r-list-date">
+      <div class="panel-heading">Date</div>
+      <div class="list-group"><a href="#" class="list-group-item"><span class="label label-danger"><i class="icon-remove"></i></span><span class="badge">3</span>Before 1800</a> <a href="#" class="list-group-item"><span class="badge">1</span>1931 &mdash; 1970</a> <a href="#" class="list-group-item"><span class="label label-danger"><i class="icon-remove"></i></span><span class="badge">1</span>1971 &ndash; 1997</a></div>
+      <div class="panel-footer"><a href="#">Show More <i class="icon-caret-down icon-fixed-width"></i></a></div>
+    </div> -->
+    <!--/panel -->
+    <div class="panel" id="r-list-hand">
+      <div class="panel-heading">Hand</div>
+      <div class="list-group"></div>
+    </div>
+    <!--/panel -->
+    <div class="panel" id="r-list-rev">
+      <div class="panel-heading">Revisions</div>
+      <div class="list-group"></div>
+    </div>
+    <!--/panel --> 
+    
+  </div>
+  <div class="col-lg-9 results-grid" id="results-grid">
+  	<div class="panel">
+    <ul class="media-list list-group">
+      
+    </ul>
+    </div>
+    <!-- /panel -->
+  </div>
+</div>
+<div class="row r-footer">
+  <div class="col-lg-9 col-offset-3" id="results-info-sort">
+  	<div class="results-info-sort">
+<form class="form-inline">
+        <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
+        <div class="r-sorting pull-left">
+          <div class="form-group">
+            <label for="r-sorting" class="control-label">Sort:</label>
+            <div class="input-group">
+              <select class="form-control" name="r-sortby" size="1">
+                <option value="rele" selected="selected">Relevance</option>
+                <option value="freq">Frequency</option>
+                <option value="date">Date</option>
+              </select>
+              <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
+            <div class="input-group">
+              <select class="form-control" name="r-sort" size="1">
+                <option value="asc">Ascending</option>
+                <option value="dec">Decending</option>
+              </select>
+              <span class="input-group-addon"><i class="icon-caret-down"></i></span> </div>
+          </div>
+        </div>
+        <div class="r-nav pull-right">
+          <ul class="pagination pagination-sm">
+            
+          </ul>
+        </div>
+      </form>
+      </div>    
+  
+  </div>
+  <!--/results-info-sort--> 
+</div>
+<!--/r-footer-->
+
+<script type="text/template" id="pagi-template">
+  <li>
+    <a href="#" class="nav-first <%= first %>"><i class="icon-red icon-step-backward"></i></a>
+  </li>
+  <li>
+    <a href="#" class="nav-prev <%= prev %>"><i class="icon-red icon-chevron-left"></i></a>
+  </li>
+  <% 
+    var start = 1;
+    var end = pages + 1;
+    if (pages > 3) {
+      start = Math.max(1, current - 1);
+      start = pages == current ? Math.max(1, current - 2) : start;
+      end = Math.min(end, start + 3);
+
+      if (current > 2) {
+        %><li><a class="dots">…</a></li><%
+      }
+    } 
+  %>
+  <% _.each(_.range(start,end), function(p){ %>
+    <li>
+    <a href="#" <% if (p == current) { %>
+      class="pg" 
+    <% } %> name="<%= p %>" >
+    <%= p %> 
+    <% if (p == current) { %>
+      <span class="sr-only">(current)</span>
+    <% } %> </a></li>
+  <% }); %>
+  <%  
+    if (pages > 3 && current < pages-1) {
+      %><li><a class="dots">…</a></li><%
+    }
+  %>
+  <li>
+    <a href="#" class="nav-next <%= next %>"><i class="icon-red icon-chevron-right"></i></a>
+  </li>
+  <li>
+    <a href="#" class="nav-last <%= last %>"><i class="icon-red icon-step-forward"></i></a>
+  </li>
+</script>
+
+<script type="text/template" id="facet-template">
+  <a href="#" class="list-group-item">
+    <span class="label label-danger"><i class="icon-remove"></i></span>
+    <span class="badge"><%= num %></span>
+    <%= name %>
+  </a>
+</script>
+
+<script type="text/template" id="result-template">
+  <li class="media list-group-item"> 
+    <span class="label label-info"><%= num %></span> 
+    <a class="pull-left" href="#"> 
+      <img class="media-object r-img" src="http://placehold.it/75x100" alt="<%= shelfmark %>"> 
+    </a>
+    <div class="media-body">
+      <div class="r-description">
+        <span class="r-title"><%= title %></span>
+        <span class="r-nbook"><%= shelfmark %></span>
+        <span class="r-nbook"><%= id %></span>
+        <span class="r-author"><%= author %></span>
+        <span class="r-editor"><%= editor %></span>
+        <span class="r-date"><%= date %></span>
+      </div>
+      <div class="r-summary">
+        <% _.each(hls, function(i) { %>  <p>…<%= i %>…</p> <% }); %>
+      </div>
+    </div>
+  </li>
+</script>
+
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/backbone-min.js"></script>
+<script type="text/javascript" src="js/SGAsearch.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $('#search-bar a').click( function() {
+      $('#search-bar form').submit();
+    });
+    $('#search-bar form').submit( function (e) {
+      e.preventDefault();
+      var service = "http://localhost:5000/search";
+      var query = $('#search-bar input').val();
+      var options = $('#refine-results');
+      var destination = $('#results-grid ul');
+      SGAsearch.search(service, query, options, destination);
+      return false;
+    });
+  });
+</script>
+
+</body>
+</html>
