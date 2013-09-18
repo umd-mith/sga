@@ -338,35 +338,40 @@ SGAReader.namespace "Component", (Component) ->
       MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
 
         imgOnly = $(container).find("#img-only")
-        # text = $(container).find("#mode-rdg")
-        # xml = $(container).find("#mode-xml")
-        # std = $(container).find("#mode-std")
+        text = $(container).find("#mode-rdg")
+        xml = $(container).find("#mode-xml")
+        std = $(container).find("#mode-std")
+
+        stored_txt_canvas = null
 
         $(imgOnly).click (e) ->
           e.preventDefault()
 
-          $('*[data-types=Text]').parent().remove()
+          if !$(imgOnly).hasClass('active')
+            stored_txt_canvas = $('*[data-types=Text]').parent()
+            $('*[data-types=Text]').parent().remove()
 
-          # Double the bootstrap column
-          c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-          $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
+            # Double the bootstrap column
+            c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+            $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
 
-          # svg_s = $('*[data-types=Image] svg').attr('style')
-          # w = /width:\s*(\d+?)\s*px/g.exec svg_s
-          # h = /height:\s*(\d+?)\s*px/g.exec svg_s
+            $('*[data-types=Image]').trigger('resetPres')
+            that.setMode('imgOnly')
 
-          # new_svg_s = "width:#{parseInt(w[1])*2}px; height:#{parseInt(h[1])*2}px"
+        $(std).click (e) ->
+          e.preventDefault()
 
-          # $('*[data-types=Image] svg').attr('style', new_svg_s )
+          if !$(std).hasClass('active') and stored_txt_canvas?
+            
+            img_parent = $('*[data-types=Image]').parent()
 
-          # map_w = $('*[data-types=Image] svg .map > rect').attr('width') * 2
-          # map_h = $('*[data-types=Image] svg .map > rect').attr('height') * 2
+            # Half the bootstrap column
+            c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+            img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
 
-          # $('*[data-types=Image] svg .map > rect').attr('width', map_w)
-          # $('*[data-types=Image] svg .map > rect').attr('height', map_h)
+            stored_txt_canvas.insertAfter(img_parent)
 
-          $('*[data-types=Image]').trigger('imgOnly')
-          that.setMode('imgOnly')
+            $('*[data-types=Image]').trigger('resetPres')
 
   Component.namespace "LimitViewControls", (LimitViewControls) ->
     LimitViewControls.initInstance = (args...) ->
