@@ -2,12 +2,13 @@
 
   // UI fixes
   $("#collapse-one").collapse("hide");
+  $('.marquee').remove();
 
   // MAIN SC SETUP CODE
 
   var builder = SGA.Reader.Application.SharedCanvas.builder({
     spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
-    searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://ec2-107-22-87-255.compute-1.amazonaws.com/annotate?")
+    searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://ec2-107-22-87-255.compute-1.amazonaws.com/annotate?")    
   });
 
   if($.fn.popover != null) {
@@ -35,6 +36,8 @@
     pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
 
     // modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
+
+    limitViewControls: SGA.Reader.Component.LimitViewControls.initInstance("#hand-view-controls");
 
     app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
