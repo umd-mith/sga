@@ -345,3 +345,42 @@ SGAReader.namespace "Component", (Component) ->
         $(imgOnly).click (e) ->
           e.preventDefault()
           that.setImgOnly(true)
+
+  Component.namespace "LimitViewControls", (LimitViewControls) ->
+    LimitViewControls.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.LimitViewControls", args..., (that, container) ->
+        $c = $(container)
+
+        # Declare general classes the control appearance.
+        # By doing this, when the user moves to another canvas in the sequence, the style "sticks".          
+
+        # Show PBS
+        $c.find('#hand-view_2').change ->
+          if $(this).is(':checked')
+
+            css = """
+              svg .hand-pbs{ color:#a54647; } 
+              svg *:not(.hand-pbs), svg .DeletionAnnotation:not(.hand-pbs){ color:#D9D9D9; }
+              svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+            """
+
+            $('#LimitViewControls_classes').remove()
+            $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head");
+
+        # Show MWS
+        $c.find('#hand-view_1').change ->
+          if $(this).is(':checked')
+
+            css = """
+              svg .hand-pbs{ color:#D9D9D9; } 
+              svg *:not(.hand-pbs), svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+              svg .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
+            """
+
+            $('#LimitViewControls_classes').remove()
+            $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head");   
+
+        # Show both
+        $c.find('#hand-view_0').change ->
+          if $(this).is(':checked')  
+            $('#LimitViewControls_classes').remove()    
