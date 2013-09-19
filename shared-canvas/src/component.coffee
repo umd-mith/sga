@@ -93,21 +93,78 @@ SGAReader.namespace "Component", (Component) ->
     #
     # This component manages an HTML5 slider input element.
     #
-    # This component has three variables: Min, Max, and Value.
+    # This component has four variables: Min, Max, Value, and Highlihgts.
     #
     Slider.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+        
+        # This is a hack and should be eventually handled with a Filter/Facet
+        $('.canvas').on "searchResultsChange", (e, results)->
+          $c = $(container)
+
+          # Remove existing highlights, if any
+          $('.res').remove()
+
+          # Append highglights
+
+          pages = that.getMax()
+
+          for r in results
+            r = r + 1
+            res_height = $c.height() / (pages+1)
+            res_h_perc = (pages+1) / 100
+            s_min = $c.slider("option", "min")
+            s_max = $c.slider("option", "max")
+            valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
+            adjustment = res_h_perc / 2
+            $c.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+
+        that.events.onMaxChange.addListener (n) -> 
+
+          if $( container ).data( "slider" ) # Is the container set?
+            $(container).slider
+              max : n
+          else
+            pages = n
+            $(container).slider
+              orientation: "vertical"
+              range: "min"
+              min: that.getMin()
+              max: pages
+              value: pages
+              step: 1
+              slide: ( event, ui ) ->
+                0 #update some human readable indicator
+              stop: ( event, ui ) ->
+                0 #now update actual value
+                that.setValue pages - ui.value
+
+            # There might be a cleaner way of doing this:
+            $('.canvas').on "sizeChange", (e, d)->
+              $c = $(container)
+              $c.height d.h              
+
+              # Only set it once
+              $('.canvas').unbind("sizeChange")
+
+          if that.getValue()? and parseInt(that.getValue()) != NaN
+            $.bbq.pushState
+              n: that.getValue()+1
+            $(container).slider
+              value: pages - that.getValue()
+
         that.events.onMinChange.addListener (n) ->
-          $(container).attr
-            min: n
-        that.events.onMaxChange.addListener (n) ->
-          $(container).attr
-            max: n
+          if $( container ).data( "slider" ) # Is the container set?
+            $(container).slider
+              min : n
+
         that.events.onValueChange.addListener (n) -> 
-          $(container).val(n)
-          $.bbq.pushState
-            n: that.getValue()+1
-        $(container).change (e) -> that.setValue $(container).val()
+          if $( container ).data( "slider" ) # Is the container set?
+            $(container).slider
+              value: that.getMax() - n
+          if that.getValue()? and parseInt(that.getValue()) != NaN
+            $.bbq.pushState
+              n: that.getValue()+1
 
   #
   # ## Component.PagerControls
@@ -127,7 +184,8 @@ SGAReader.namespace "Component", (Component) ->
         
         $(window).bind "hashchange", (e) ->
           n = $.bbq.getState "n" 
-          that.setValue n-1
+          if n? and parseInt(n) != NaN
+            that.setValue n-1
 
         firstEl = $(container).find("#first-page")
         prevEl = $(container).find("#prev-page")
@@ -166,8 +224,9 @@ SGAReader.namespace "Component", (Component) ->
             lastEl.addClass "disabled"
 
         updateBBQ = ->
-          $.bbq.pushState
-            n: that.getValue()+1
+          if that.getValue()? and parseInt(that.getValue()) != NaN
+            $.bbq.pushState
+              n: that.getValue()+1
 
         $(prevEl).click (e) ->
           e.preventDefault()
@@ -238,7 +297,14 @@ SGAReader.namespace "Component", (Component) ->
   #
   Component.namespace "SearchBox", (SearchBox) ->
     SearchBox.initInstance = (args...) ->
-      MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->        
+      MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->
+
+        that.events.onQueryChange.addListener (q) ->          
+          q = q.replace(/\=/g,':')
+          q = q.replace(/\&/g, '|') 
+          $.bbq.pushState
+            s : q
+
         container = args[0]
         that.setServiceURL service
 
@@ -246,11 +312,13 @@ SGAReader.namespace "Component", (Component) ->
         srcForm = $(container).closest('form')
 
         if srcButton?
+
           srcButton.click () ->
             srcForm.submit()        
 
         srcForm.submit (e) ->
           e.preventDefault()
+
           fields_html = $('#limit-search').find('input:checked')
           fields = ""
           if fields_html.length == 0
@@ -274,6 +342,72 @@ SGAReader.namespace "Component", (Component) ->
         xml = $(container).find("#mode-xml")
         std = $(container).find("#mode-std")
 
+        stored_txt_canvas = null
+
         $(imgOnly).click (e) ->
           e.preventDefault()
-          that.setImgOnly(true)
+
+          if !$(imgOnly).hasClass('active')
+            stored_txt_canvas = $('*[data-types=Text]').parent()
+            $('*[data-types=Text]').parent().remove()
+
+            # Double the bootstrap column
+            c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+            $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
+
+            $('*[data-types=Image]').trigger('resetPres')
+            that.setMode('imgOnly')
+
+        $(std).click (e) ->
+          e.preventDefault()
+
+          if !$(std).hasClass('active') and stored_txt_canvas?
+            
+            img_parent = $('*[data-types=Image]').parent()
+
+            # Half the bootstrap column
+            c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+            img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+
+            stored_txt_canvas.insertAfter(img_parent)
+
+            $('*[data-types=Image]').trigger('resetPres')
+
+  Component.namespace "LimitViewControls", (LimitViewControls) ->
+    LimitViewControls.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.LimitViewControls", args..., (that, container) ->
+        $c = $(container)
+
+        # Declare general classes the control appearance.
+        # By doing this, when the user moves to another canvas in the sequence, the style "sticks".          
+
+        # Show PBS
+        $c.find('#hand-view_2').change ->
+          if $(this).is(':checked')
+
+            css = """
+              svg .hand-pbs{ color:#a54647; } 
+              svg *:not(.hand-pbs), svg .DeletionAnnotation:not(.hand-pbs){ color:#D9D9D9; }
+              svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+            """
+
+            $('#LimitViewControls_classes').remove()
+            $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head");
+
+        # Show MWS
+        $c.find('#hand-view_1').change ->
+          if $(this).is(':checked')
+
+            css = """
+              svg .hand-pbs{ color:#D9D9D9; } 
+              svg *:not(.hand-pbs), svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+              svg .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
+            """
+
+            $('#LimitViewControls_classes').remove()
+            $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head");   
+
+        # Show both
+        $c.find('#hand-view_0').change ->
+          if $(this).is(':checked')  
+            $('#LimitViewControls_classes').remove()    
