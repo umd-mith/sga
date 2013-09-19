@@ -28,7 +28,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           item = model.getItem id
           el.text item.text[0]
           el.addClass item.type.join(" ")
-          el.attr "style", item.css?[0]
+          if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
           $(container).append el
           rendering.remove = ->
             el.remove()
@@ -553,9 +553,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRootEl.css
                 width: SVGWidth
                 height: SVGHeight
-                border: "1px solid #eeeeee"
-                "border-radius": "5px"
-                "background-color": "#ffffff"
 
         # the data view is managed outside the presentation
         dataView = MITHgrid.Data.SubSet.initInstance
@@ -565,22 +562,22 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         realCanvas = null
 
-        that.events.onImgOnlyChange.addListener () ->
-          canvasWidth = (item.width?[0] || 1) / 10
-          canvasHeight = (item.height?[0] || 1) / 10
-          that.setScale (parseInt($(container).parent().width()) / canvasWidth)
-          if realCanvas?
-            realCanvas.hide() if realCanvas.hide?
-            realCanvas._destroy() if realCanvas._destroy?
-          SVG (svgRoot) ->
-            svgRoot.clear()
-            realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
-              types: options.types
-              dataView: dataView
-              application: options.application
-              height: canvasHeight
-              width: canvasWidth
-              svgRoot: svgRoot
+        $(container).on "resetPres", ->    
+          SVGWidth = parseInt($(container).width() * 20/20, 10)
+          if canvasWidth? and canvasWidth > 0
+            that.setScale (SVGWidth / canvasWidth)
+            if realCanvas?
+              realCanvas.hide() if realCanvas.hide?
+              realCanvas._destroy() if realCanvas._destroy?
+            SVG (svgRoot) ->
+              svgRoot.clear()
+              realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
+                types: options.types
+                dataView: dataView
+                application: options.application
+                height: canvasHeight
+                width: canvasWidth
+                svgRoot: svgRoot
 
         that.events.onCanvasChange.addListener (canvas) ->
           dataView.setKey(canvas)
@@ -595,6 +592,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
             realCanvas.hide() if realCanvas.hide?
             realCanvas._destroy() if realCanvas._destroy?
           SVG (svgRoot) ->
+            # Trigger for slider height. There probably is a better way of passing this info around.
+            $(container).trigger("sizeChange", [{w:container.width(), h:container.height()}]) 
+
             svgRoot.clear()
             realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
               types: options.types
@@ -603,4 +603,5 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: canvasHeight
               width: canvasWidth
               svgRoot: svgRoot
+
 
