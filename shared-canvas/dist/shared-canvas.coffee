@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132170
+# SGA Shared Canvas v0.132610
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Jul 10 15:32:59 2013 -0400
+# Date: Wed Sep 18 16:02:48 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -196,7 +196,7 @@
               data.getSubjectsUnion(types, "type").items()
     
             itemsForCanvas = (canvas) ->
-              # Given a canvas, find the the TEI XML URL
+              # Given a canvas, find the TEI XML URL
               canvas = [ canvas ] if !$.isArray(canvas)
               canvasSet = MITHgrid.Data.Set.initInstance(canvas)
               specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
@@ -217,6 +217,21 @@
               searchResults = data.getSubjectsUnion(types, "type").items()
               data.removeItems searchResults
     
+            getSearchResultCanvases = ->
+              types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
+              searchResults = data.getSubjectsUnion(types, "type")
+              specificResources = data.getObjectsUnion(searchResults, "oahasTarget") 
+              teiURL = data.getObjectsUnion(specificResources, 'oahasSource')
+    
+              sources = data.getSubjectsUnion(teiURL, 'oahasSource')
+              
+              annos = data.getSubjectsUnion(sources, 'oahasBody')
+              step = data.getObjectsUnion(annos, 'oahasTarget')
+              canvasKeys = data.getObjectsUnion(step, 'oahasSource')
+    
+              return $.unique(canvasKeys.items())
+    
+    
             #
             # Get things of different types. For example, "scCanvas" gets
             # all of the canvas items.
@@ -227,6 +242,7 @@
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
+            that.getSearchResultCanvases = getSearchResultCanvases
     
             that.getItem = data.getItem
             that.contains = data.contains
@@ -265,7 +281,7 @@
               item = model.getItem id
               el.text item.text[0]
               el.addClass item.type.join(" ")
-              el.attr "style", item.css?[0]
+              if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
               $(container).append el
               rendering.remove = ->
                 el.remove()
@@ -317,6 +333,8 @@
           MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.Zone", args..., (that, container) ->
             options = that.options
             svgRoot = options.svgRoot
+    
+            app = that.options.application()
     
             #
             # !target gives us all of the annotations that target the given
@@ -373,7 +391,7 @@
     
               item = model.getItem id
     
-              app = that.options.application()
+              
     
               # Activate imageControls
               app.imageControls.setActive(true)
@@ -764,9 +782,9 @@
                   svgRootEl.css
                     width: SVGWidth
                     height: SVGHeight
-                    border: "0.5em solid #eeeeee"
-                    "border-radius": "5px"
-                    "background-color": "#ffffff"
+                    # border: "0.5em solid #eeeeee"
+                    # "border-radius": "5px"
+                    # "background-color": "#ffffff"
     
             # the data view is managed outside the presentation
             dataView = MITHgrid.Data.SubSet.initInstance
@@ -775,6 +793,23 @@
               key: null
     
             realCanvas = null
+    
+            $(container).on "resetPres", ->    
+              SVGWidth = parseInt($(container).width() * 20/20, 10)
+              if canvasWidth? and canvasWidth > 0
+                that.setScale (SVGWidth / canvasWidth)
+                if realCanvas?
+                  realCanvas.hide() if realCanvas.hide?
+                  realCanvas._destroy() if realCanvas._destroy?
+                SVG (svgRoot) ->
+                  svgRoot.clear()
+                  realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
+                    types: options.types
+                    dataView: dataView
+                    application: options.application
+                    height: canvasHeight
+                    width: canvasWidth
+                    svgRoot: svgRoot
     
             that.events.onCanvasChange.addListener (canvas) ->
               dataView.setKey(canvas)
@@ -789,6 +824,9 @@
                 realCanvas.hide() if realCanvas.hide?
                 realCanvas._destroy() if realCanvas._destroy?
               SVG (svgRoot) ->
+                # Trigger for slider height. There probably is a better way of passing this info around.
+                $(container).trigger("sizeChange", [{w:container.width(), h:container.height()}]) 
+    
                 svgRoot.clear()
                 realCanvas = SGA.Reader.Presentation.Zone.initInstance svgRoot.root(),
                   types: options.types
@@ -797,6 +835,7 @@
                   height: canvasHeight
                   width: canvasWidth
                   svgRoot: svgRoot
+    
     
 
     # # Data Managment
@@ -964,7 +1003,7 @@
               data.getSubjectsUnion(types, "type").items()
     
             itemsForCanvas = (canvas) ->
-              # Given a canvas, find the the TEI XML URL
+              # Given a canvas, find the TEI XML URL
               canvas = [ canvas ] if !$.isArray(canvas)
               canvasSet = MITHgrid.Data.Set.initInstance(canvas)
               specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
@@ -985,6 +1024,21 @@
               searchResults = data.getSubjectsUnion(types, "type").items()
               data.removeItems searchResults
     
+            getSearchResultCanvases = ->
+              types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
+              searchResults = data.getSubjectsUnion(types, "type")
+              specificResources = data.getObjectsUnion(searchResults, "oahasTarget") 
+              teiURL = data.getObjectsUnion(specificResources, 'oahasSource')
+    
+              sources = data.getSubjectsUnion(teiURL, 'oahasSource')
+              
+              annos = data.getSubjectsUnion(sources, 'oahasBody')
+              step = data.getObjectsUnion(annos, 'oahasTarget')
+              canvasKeys = data.getObjectsUnion(step, 'oahasSource')
+    
+              return $.unique(canvasKeys.items())
+    
+    
             #
             # Get things of different types. For example, "scCanvas" gets
             # all of the canvas items.
@@ -995,6 +1049,7 @@
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
+            that.getSearchResultCanvases = getSearchResultCanvases
     
             that.getItem = data.getItem
             that.contains = data.contains
@@ -1068,22 +1123,26 @@
           MITHgrid.Presentation.initInstance "SGA.Reader.Component.SequenceSelector", args..., (that, container) ->
             options = that.options
             that.addLens 'Sequence', (container, view, model, id) ->
-              rendering = {}
-              item = model.getItem id
-              el = $("<option></option>")
-              el.attr
-                value: id
-              el.text item.label?[0]
-              $(container).append(el)
+              
+              that.setSequence id
     
-            $(container).change ->
-              that.setSequence $(container).val()
+              if $(container).is "select"
+                rendering = {}
+                item = model.getItem id
+                el = $("<option></option>")
+                el.attr
+                  value: id
+                el.text item.label?[0]
+                $(container).append(el)
     
-            that.events.onSequenceChange.addListener (v) ->
-              $(container).val(v)
+                $(container).change ->
+                  that.setSequence $(container).val()
     
-            that.finishDisplayUpdate = ->
-              that.setSequence $(container).val()
+                that.events.onSequenceChange.addListener (v) ->
+                  $(container).val(v)
+    
+                that.finishDisplayUpdate = ->
+                  that.setSequence $(container).val()
     
       #
       # ## Component.Slider
@@ -1094,21 +1153,78 @@
         #
         # This component manages an HTML5 slider input element.
         #
-        # This component has three variables: Min, Max, and Value.
+        # This component has four variables: Min, Max, Value, and Highlihgts.
         #
         Slider.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
+            
+            # This is a hack and should be eventually handled with a Filter/Facet
+            $('.canvas').on "searchResultsChange", (e, results)->
+              $c = $(container)
+    
+              # Remove existing highlights, if any
+              $('.res').remove()
+    
+              # Append highglights
+    
+              pages = that.getMax()
+    
+              for r in results
+                r = r + 1
+                res_height = $c.height() / (pages+1)
+                res_h_perc = (pages+1) / 100
+                s_min = $c.slider("option", "min")
+                s_max = $c.slider("option", "max")
+                valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
+                adjustment = res_h_perc / 2
+                $c.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+    
+            that.events.onMaxChange.addListener (n) -> 
+    
+              if $( container ).data( "slider" ) # Is the container set?
+                $(container).slider
+                  max : n
+              else
+                pages = n
+                $(container).slider
+                  orientation: "vertical"
+                  range: "min"
+                  min: that.getMin()
+                  max: pages
+                  value: pages
+                  step: 1
+                  slide: ( event, ui ) ->
+                    0 #update some human readable indicator
+                  stop: ( event, ui ) ->
+                    0 #now update actual value
+                    that.setValue pages - ui.value
+    
+                # There might be a cleaner way of doing this:
+                $('.canvas').on "sizeChange", (e, d)->
+                  $c = $(container)
+                  $c.height d.h              
+    
+                  # Only set it once
+                  $('.canvas').unbind("sizeChange")
+    
+              if that.getValue()? and parseInt(that.getValue()) != NaN
+                $.bbq.pushState
+                  n: that.getValue()+1
+                $(container).slider
+                  value: pages - that.getValue()
+    
             that.events.onMinChange.addListener (n) ->
-              $(container).attr
-                min: n
-            that.events.onMaxChange.addListener (n) ->
-              $(container).attr
-                max: n
+              if $( container ).data( "slider" ) # Is the container set?
+                $(container).slider
+                  min : n
+    
             that.events.onValueChange.addListener (n) -> 
-              $(container).val(n)
-              $.bbq.pushState
-                n: that.getValue()+1
-            $(container).change (e) -> that.setValue $(container).val()
+              if $( container ).data( "slider" ) # Is the container set?
+                $(container).slider
+                  value: that.getMax() - n
+              if that.getValue()? and parseInt(that.getValue()) != NaN
+                $.bbq.pushState
+                  n: that.getValue()+1
     
       #
       # ## Component.PagerControls
@@ -1128,12 +1244,13 @@
             
             $(window).bind "hashchange", (e) ->
               n = $.bbq.getState "n" 
-              that.setValue n-1
+              if n? and parseInt(n) != NaN
+                that.setValue n-1
     
-            firstEl = $(container).find(".icon-fast-backward").parent()
-            prevEl = $(container).find(".icon-step-backward").parent()
-            nextEl = $(container).find(".icon-step-forward").parent()
-            lastEl = $(container).find(".icon-fast-forward").parent()
+            firstEl = $(container).find("#first-page")
+            prevEl = $(container).find("#prev-page")
+            nextEl = $(container).find("#next-page")
+            lastEl = $(container).find("#last-page")
     
             that.events.onMinChange.addListener (n) ->
               if n < that.getValue()
@@ -1167,8 +1284,9 @@
                 lastEl.addClass "disabled"
     
             updateBBQ = ->
-              $.bbq.pushState
-                n: that.getValue()+1
+              if that.getValue()? and parseInt(that.getValue()) != NaN
+                $.bbq.pushState
+                  n: that.getValue()+1
     
             $(prevEl).click (e) ->
               e.preventDefault()
@@ -1193,10 +1311,10 @@
       Component.namespace "ImageControls", (ImageControls) ->
         ImageControls.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.ImageControls", args..., (that, container) ->        
-            resetEl = $(container).find(".icon-picture").parent()
-            inEl = $(container).find(".icon-zoom-in").parent()
-            outEl = $(container).find(".icon-zoom-out").parent()
-            marqueeEl = $(container).find(".icon-eye-open").parent()
+            resetEl = $(container).find("#zoom-reset")
+            inEl = $(container).find("#zoom-in")
+            outEl = $(container).find("#zoom-out")
+            marqueeEl = $(container).find("#marquee-sh")
     
             $(resetEl).click (e) ->
               e.preventDefault()
@@ -1239,23 +1357,121 @@
       #
       Component.namespace "SearchBox", (SearchBox) ->
         SearchBox.initInstance = (args...) ->
-          MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->        
+          MITHgrid.initInstance "SGA.Reader.Component.SearchBox", args..., (that, service) ->
+    
+            that.events.onQueryChange.addListener (q) ->          
+              q = q.replace(/\=/g,':')
+              q = q.replace(/\&/g, '|') 
+              $.bbq.pushState
+                s : q
+    
             container = args[0]
             that.setServiceURL service
     
-            # console.log $(container).closest('form')
+            srcButton = $('#search-btn')
+            srcForm = $(container).closest('form')
     
-            $(container).closest('form').submit (e) ->
+            if srcButton?
+    
+              srcButton.click () ->
+                srcForm.submit()        
+    
+            srcForm.submit (e) ->
               e.preventDefault()
-              val = $(container).val()
-              if !val.match '^\s*$'
-                that.setQuery val
-              false
-              
     
-            # On submit function go here and they will simply change the variable Query
+              fields_html = $('#limit-search').find('input:checked')
+              fields = ""
+              if fields_html.length == 0
+                fields = "text"
+              else
+                for f,i in fields_html
+                  fields += $(f).val()
+                  if i+1 != fields_html.length
+                    fields +=  ','
+              val = $(container).find('input').val()
+              if !val.match '^\s*$'
+                that.setQuery "f="+fields+"&q="+val
+              false
+    
+      Component.namespace "ModeControls", (ModeControls) ->
+        ModeControls.initInstance = (args...) ->
+          MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
+    
+            imgOnly = $(container).find("#img-only")
+            text = $(container).find("#mode-rdg")
+            xml = $(container).find("#mode-xml")
+            std = $(container).find("#mode-std")
+    
+            stored_txt_canvas = null
+    
+            $(imgOnly).click (e) ->
+              e.preventDefault()
+    
+              if !$(imgOnly).hasClass('active')
+                stored_txt_canvas = $('*[data-types=Text]').parent()
+                $('*[data-types=Text]').parent().remove()
+    
+                # Double the bootstrap column
+                c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+                $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
+    
+                $('*[data-types=Image]').trigger('resetPres')
+                that.setMode('imgOnly')
+    
+            $(std).click (e) ->
+              e.preventDefault()
+    
+              if !$(std).hasClass('active') and stored_txt_canvas?
+                
+                img_parent = $('*[data-types=Image]').parent()
+    
+                # Half the bootstrap column
+                c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+                img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+    
+                stored_txt_canvas.insertAfter(img_parent)
+    
+                $('*[data-types=Image]').trigger('resetPres')
+    
+      Component.namespace "LimitViewControls", (LimitViewControls) ->
+        LimitViewControls.initInstance = (args...) ->
+          MITHgrid.initInstance "SGA.Reader.Component.LimitViewControls", args..., (that, container) ->
+            $c = $(container)
+    
+            # Declare general classes the control appearance.
+            # By doing this, when the user moves to another canvas in the sequence, the style "sticks".          
+    
+            # Show PBS
+            $c.find('#hand-view_2').change ->
+              if $(this).is(':checked')
+    
+                css = """
+                  svg .hand-pbs{ color:#a54647; } 
+                  svg *:not(.hand-pbs), svg .DeletionAnnotation:not(.hand-pbs){ color:#D9D9D9; }
+                  svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+                """
+    
+                $('#LimitViewControls_classes').remove()
+                $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head");
+    
+            # Show MWS
+            $c.find('#hand-view_1').change ->
+              if $(this).is(':checked')
+    
+                css = """
+                  svg .hand-pbs{ color:#D9D9D9; } 
+                  svg *:not(.hand-pbs), svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+                  svg .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
+                """
+    
+                $('#LimitViewControls_classes').remove()
+                $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head");   
+    
+            # Show both
+            $c.find('#hand-view_0').change ->
+              if $(this).is(':checked')  
+                $('#LimitViewControls_classes').remove()    
     # # Controllers
-
     # # Core Utilities
 
     # # Application
@@ -1331,8 +1547,20 @@
               p = seq.sequence.indexOf k
               if p >= 0 && p != that.getPosition()
                 that.setPosition p
-              Q.fcall(that.loadCanvas, k).then () -> 
-                  pp[0].setCanvas k for pp in presentations
+    
+              # Flush out all annotations for current canvas, if any.
+              canvasKey = seq.sequence?[p]
+    
+              allAnnos = that.dataView.canvasAnnotations.items()
+              if allAnnos.length > 0
+                that.dataView.canvasAnnotations.removeItems(allAnnos)
+    
+                annos = that.getAnnotationsForCanvas canvasKey
+                that.dataStore.data.removeItems(annos)
+    
+              # Load annotations for this canvas
+              Q.nfcall(that.loadCanvas, k).then () -> 
+                  setTimeout (-> pp[0].setCanvas k for pp in presentations), 100
               k
     
             #
@@ -1360,6 +1588,7 @@
             that.addManifestData = manifestData.importFromURL
             that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
             that.flushSearchResults = manifestData.flushSearchResults
+            that.getSearchResultCanvases = manifestData.getSearchResultCanvases
     
             #
             # textSource manages fetching and storing all of the TEI
@@ -1398,6 +1627,8 @@
                   styleItem = manifestData.getItem target.oahasStyle[0]
                   if "text/css" in styleItem.dcformat
                     item.css = styleItem.cntchars
+                if target.sgahasClass?
+                  item.cssclass = target.sgahasClass[0]
     
                 extractSpatialConstraint(item, target.oahasSelector?[0])
               else
@@ -1567,6 +1798,7 @@
                           css = []
                           for id in modIds
                             classes.push modInfo[id].type
+                            if modInfo[id].cssclass? then classes.push modInfo[id].cssclass
                             if $.isArray(modInfo[id].css)
                               css.push modInfo[id].css.join(" ")
                             else
@@ -1742,6 +1974,9 @@
           # Simple spinner as alternative to progress tracker
           updateSpinnerVisibility = ->
     
+          # Search results hook
+          updateSearchResults = ->
+    
           if config.spinner?
             updateSpinnerVisibility = ->
               for m, obj of that.manifests
@@ -1786,36 +2021,49 @@
     
           if config.searchBox?
             if config.searchBox.getServiceURL()?
-              config.searchBox.events.onQueryChange.addListener (q) ->
+    
+              #bbq no escape for "pretty" search fragment
+              $.param.fragment.noEscape ':,/|'
+    
+              updateSearchResults = (q) ->
                 queryURL = config.searchBox.getServiceURL() + q
                 for m, obj of that.manifests
     
-                  # Flush out all annotations for this canvas.
-                  p = obj.getPosition()
-                  s = obj.getSequence()
-                  seq = obj.dataStore.data.getItem s
-                  canvasKey = seq.sequence?[p]
-    
-                  allAnnos = obj.dataView.canvasAnnotations.items()
-                  obj.dataView.canvasAnnotations.removeItems(allAnnos)
-    
-                  annos = obj.getAnnotationsForCanvas canvasKey
-                  obj.dataStore.data.removeItems(annos)
-    
-                  # Flush out all search annotations, if any. 
+                  # Flush out *all* search annotations, if any. 
                   obj.flushSearchResults()
     
                   # Load new search annotations into main data store.
                   obj.addManifestData queryURL, ->
     
+                    # get canvas key
+                    p = obj.getPosition()
+                    s = obj.getSequence()
+                    seq = obj.dataStore.data.getItem s
+                    canvasKey = seq.sequence?[p]
+    
+                    canvasesWithResults = obj.getSearchResultCanvases()
+                    cwrPos = []
+    
+                    for cwr in canvasesWithResults
+                      cwrPos.push ($.inArray cwr, seq.sequence)
+    
+                    # Trigger for slider. This should eventually be hanlded with a Facet/Filter instead
+                    $('.canvas').trigger("searchResultsChange", [cwrPos]) 
+    
                     # Parse new search annotations into presentation data store. 
                     Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                      # Here we need something like obj.Position.change()
+                      # Feature request to MITHgrid?
                       if p == 0
                         newPage = p + 1
                       else
                         newPage = p - 1
                       setTimeout -> obj.setPosition newPage, 0  
                       setTimeout -> obj.setPosition p, 0
+    
+              config.searchBox.events.onQueryChange.addListener (q) ->
+                updateSearchResults(q)          
+              
             else
               console.log "You must specify the URL to some search service."            
     
@@ -1874,10 +2122,25 @@
                 manifest.events.onItemsProcessedChange.addListener updateProgressTracker
                 updateProgressTrackerVisibility()
                 updateSpinnerVisibility()
-                  
+    
+                # If searchBox component is active, check for search queries in the URL
+                # and run them *after* the first manifest datastore is ready.
+    
+                if config.searchBox?
+                  manifest.ready ->
+                    if !manifest.getSequence()?
+                      removeListener = manifest.events.onSequenceChange.addListener ->
+                        bbq_q = $.bbq.getState('s')
+                        if bbq_q?
+                          bbq_q = bbq_q.replace(/:/g,'=')
+                          bbq_q = bbq_q.replace(/\|/g, '&')
+                          updateSearchResults bbq_q
+                        removeListener()
+    
+    
               manifest.run()
               types = $(el).data('types')?.split(/\s*,\s*/)
-              that.onManifest manifestUrl, (manifest) ->
+              that.onManifest manifestUrl, (manifest) ->            
                 manifest.addPresentation
                   types: types
                   container: $(el)
@@ -1961,7 +2224,7 @@ MITHgrid.defaults 'SGA.Reader.Component.ProgressBar',
 
 MITHgrid.defaults 'SGA.Reader.Component.Spinner',
   viewSetup: """
-    <img src="images/spinner.gif"/>
+    <i class="icon-spinner icon-spin icon-3x"></i>
   """
 
 #
@@ -1975,6 +2238,7 @@ MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
+    ImgOnly: { is: 'rw' }
 
 #
 # The ItemsToProcess and ItemsProcessed are analagous to the
@@ -1995,5 +2259,10 @@ MITHgrid.defaults 'SGA.Reader.Component.ImageControls',
 
 MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
   variables:
+    Field: { is: 'rw', default: false }
     Query: { is: 'rw', default: false }
     ServiceURL: { is: 'rw', default: false }
+
+MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
+  variables:
+    Mode: { is: 'rw' }
