@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132610
+# SGA Shared Canvas v0.132620
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Sep 18 16:02:48 2013 -0400
+# Date: Thu Sep 19 11:07:12 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -370,6 +370,10 @@
                   y = if item.y?[0]? then item.y[0] else 0
                   width = if item.width?[0]? then item.width[0] else options.width - x
                   height = if item.height?[0]? then item.height[0] else options.height - y
+                  x /= 10
+                  y /= 10
+                  width /= 10
+                  height /= 10
                   if svgImage?
                     svgRoot.remove svgImage
                   svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
@@ -492,6 +496,10 @@
               y = if item.y?[0]? then item.y[0] else 0
               width = if item.width?[0]? then item.width[0] else options.width - x
               height = if item.height?[0]? then item.height[0] else options.height - y
+              x /= 10
+              y /= 10
+              width /= 10
+              height /= 10
               $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(zoneContainer)
     
@@ -523,6 +531,10 @@
                 y = if item.y?[0]? then item.y[0] else 0
                 width = if item.width?[0]? then item.width[0] else options.width - x
                 height = if item.height?[0]? then item.height[0] else options.height - y
+                x /= 10
+                y /= 10
+                height /= 10
+                width /= 10
                 $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
      
               rendering
@@ -547,6 +559,10 @@
               y = if item.y?[0]? then item.y[0] else 0
               width = if item.width?[0]? then item.width[0] else options.width - x
               height = if item.height?[0]? then item.height[0] else options.height - y
+              x /= 10
+              y /= 10
+              width /= 10
+              height /= 10
               $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(textContainer)
               bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
@@ -605,6 +621,10 @@
               y = if item.y?[0]? then item.y[0] else 0
               width = if item.width?[0]? then item.width[0] else options.width - x
               height = if item.height?[0]? then item.height[0] else options.height - y
+              x /= 10
+              y /= 10
+              width /= 10
+              height /= 10
               $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
               container.appendChild(textContainer)
     
@@ -617,7 +637,7 @@
               rootEl = document.createElement('div')
               $(rootEl).addClass("text-content")
               $(rootEl).attr("id", id)
-              $(rootEl).css("font-size", 150)
+              $(rootEl).css("font-size", 15.0)
               $(rootEl).css("line-height", 1.15)
               bodyEl.appendChild(rootEl)
               textContainer.appendChild(bodyEl)
@@ -626,7 +646,7 @@
                 # If the marquee already exists, replace it with a new one.
                 $('.marquee').remove()
                 # First time, always full extent in size and visible area
-                strokeW = 5
+                strokeW = 1
                 marquee = svgRoot.rect(0, 0, Math.max(1, options.width-strokeW), Math.max(1, options.height-strokeW),
                   class : 'marquee' 
                   fill: 'yellow', 
@@ -634,14 +654,14 @@
                   strokeWidth: strokeW,
                   fillOpacity: '0.05',
                   strokeOpacity: '0.9' #currently not working in firefox
-                  ) 
+                  )
                 scale = options.width / $(container).width()
                 visiblePerc = 100
                 
                 app.imageControls.events.onZoomChange.addListener (z) ->
                   if app.imageControls.getMaxZoom() > 0
     
-                    width  = Math.round(options.width / Math.pow(2, (app.imageControls.getMaxZoom() - z)))              
+                    width  = Math.round(options.width * 10 / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
                     visiblePerc = Math.min(100, ($(container).width() * 100) / width)
     
                     marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
@@ -702,6 +722,10 @@
                 y = if item.y?[0]? then item.y[0] else 0
                 width = if item.width?[0]? then item.width[0] else options.width - x
                 height = if item.height?[0]? then item.height[0] else options.height - y
+                x /= 10
+                y /= 10
+                width /= 10
+                height /= 10
                 $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
     
               rendering
@@ -782,9 +806,6 @@
                   svgRootEl.css
                     width: SVGWidth
                     height: SVGHeight
-                    # border: "0.5em solid #eeeeee"
-                    # "border-radius": "5px"
-                    # "background-color": "#ffffff"
     
             # the data view is managed outside the presentation
             dataView = MITHgrid.Data.SubSet.initInstance
@@ -817,8 +838,8 @@
               # now make SVG canvas the size of the canvas (for now)
               # eventually, we'll constrain the size but maintain the
               # aspect ratio
-              canvasWidth = item.width?[0] || 1
-              canvasHeight = item.height?[0] || 1
+              canvasWidth = (item.width?[0] || 1) / 10
+              canvasHeight = (item.height?[0] || 1) /10
               that.setScale (SVGWidth / canvasWidth)
               if realCanvas?
                 realCanvas.hide() if realCanvas.hide?
