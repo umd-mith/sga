@@ -71,6 +71,18 @@ SGAReader.namespace "Application", (Application) ->
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
             that.setPosition p
+
+          # Flush out all annotations for current canvas, if any.
+          canvasKey = seq.sequence?[p]
+
+          allAnnos = that.dataView.canvasAnnotations.items()
+          if allAnnos.length > 0
+            that.dataView.canvasAnnotations.removeItems(allAnnos)
+
+            annos = that.getAnnotationsForCanvas canvasKey
+            that.dataStore.data.removeItems(annos)
+
+          # Load annotations for this canvas
           Q.nfcall(that.loadCanvas, k).then () -> 
               setTimeout (-> pp[0].setCanvas k for pp in presentations), 100
           k
@@ -100,6 +112,7 @@ SGAReader.namespace "Application", (Application) ->
         that.addManifestData = manifestData.importFromURL
         that.getAnnotationsForCanvas = manifestData.getAnnotationsForCanvas
         that.flushSearchResults = manifestData.flushSearchResults
+        that.getSearchResultCanvases = manifestData.getSearchResultCanvases
 
         #
         # textSource manages fetching and storing all of the TEI
@@ -138,6 +151,8 @@ SGAReader.namespace "Application", (Application) ->
               styleItem = manifestData.getItem target.oahasStyle[0]
               if "text/css" in styleItem.dcformat
                 item.css = styleItem.cntchars
+            if target.sgahasClass?
+              item.cssclass = target.sgahasClass[0]
 
             extractSpatialConstraint(item, target.oahasSelector?[0])
           else
@@ -307,6 +322,7 @@ SGAReader.namespace "Application", (Application) ->
                       css = []
                       for id in modIds
                         classes.push modInfo[id].type
+                        if modInfo[id].cssclass? then classes.push modInfo[id].cssclass
                         if $.isArray(modInfo[id].css)
                           css.push modInfo[id].css.join(" ")
                         else
@@ -482,6 +498,9 @@ SGAReader.namespace "Application", (Application) ->
       # Simple spinner as alternative to progress tracker
       updateSpinnerVisibility = ->
 
+      # Search results hook
+      updateSearchResults = ->
+
       if config.spinner?
         updateSpinnerVisibility = ->
           for m, obj of that.manifests
@@ -526,36 +545,49 @@ SGAReader.namespace "Application", (Application) ->
 
       if config.searchBox?
         if config.searchBox.getServiceURL()?
-          config.searchBox.events.onQueryChange.addListener (q) ->
+
+          #bbq no escape for "pretty" search fragment
+          $.param.fragment.noEscape ':,/|'
+
+          updateSearchResults = (q) ->
             queryURL = config.searchBox.getServiceURL() + q
             for m, obj of that.manifests
 
-              # Flush out all annotations for this canvas.
-              p = obj.getPosition()
-              s = obj.getSequence()
-              seq = obj.dataStore.data.getItem s
-              canvasKey = seq.sequence?[p]
-
-              allAnnos = obj.dataView.canvasAnnotations.items()
-              obj.dataView.canvasAnnotations.removeItems(allAnnos)
-
-              annos = obj.getAnnotationsForCanvas canvasKey
-              obj.dataStore.data.removeItems(annos)
-
-              # Flush out all search annotations, if any. 
+              # Flush out *all* search annotations, if any. 
               obj.flushSearchResults()
 
               # Load new search annotations into main data store.
               obj.addManifestData queryURL, ->
 
+                # get canvas key
+                p = obj.getPosition()
+                s = obj.getSequence()
+                seq = obj.dataStore.data.getItem s
+                canvasKey = seq.sequence?[p]
+
+                canvasesWithResults = obj.getSearchResultCanvases()
+                cwrPos = []
+
+                for cwr in canvasesWithResults
+                  cwrPos.push ($.inArray cwr, seq.sequence)
+
+                # Trigger for slider. This should eventually be hanlded with a Facet/Filter instead
+                $('.canvas').trigger("searchResultsChange", [cwrPos]) 
+
                 # Parse new search annotations into presentation data store. 
                 Q.fcall(obj.loadCanvas, canvasKey).then () ->
+                  # Here we need something like obj.Position.change()
+                  # Feature request to MITHgrid?
                   if p == 0
                     newPage = p + 1
                   else
                     newPage = p - 1
                   setTimeout -> obj.setPosition newPage, 0  
                   setTimeout -> obj.setPosition p, 0
+
+          config.searchBox.events.onQueryChange.addListener (q) ->
+            updateSearchResults(q)          
+          
         else
           console.log "You must specify the URL to some search service."            
 
@@ -614,10 +646,25 @@ SGAReader.namespace "Application", (Application) ->
             manifest.events.onItemsProcessedChange.addListener updateProgressTracker
             updateProgressTrackerVisibility()
             updateSpinnerVisibility()
-              
+
+            # If searchBox component is active, check for search queries in the URL
+            # and run them *after* the first manifest datastore is ready.
+
+            if config.searchBox?
+              manifest.ready ->
+                if !manifest.getSequence()?
+                  removeListener = manifest.events.onSequenceChange.addListener ->
+                    bbq_q = $.bbq.getState('s')
+                    if bbq_q?
+                      bbq_q = bbq_q.replace(/:/g,'=')
+                      bbq_q = bbq_q.replace(/\|/g, '&')
+                      updateSearchResults bbq_q
+                    removeListener()
+
+
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
-          that.onManifest manifestUrl, (manifest) ->
+          that.onManifest manifestUrl, (manifest) ->            
             manifest.addPresentation
               types: types
               container: $(el)

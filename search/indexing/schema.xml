@@ -77,6 +77,8 @@
     <dynamicField name="hand_*" type="text_hand" multiValued="false" indexed="true" stored="true" required="false"/>
     <dynamicField name="*_pos" multiValued="true" type="string" indexed="true" stored="true" required="false"/>
 
+    <field name="_version_" type="long" indexed="true" stored="true"/>
+
   </fields>
 
   <uniqueKey>id</uniqueKey>
