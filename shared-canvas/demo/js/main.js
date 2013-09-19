@@ -1,7 +1,7 @@
 (function ($) { 
 
   // UI fixes
-  // $("#collapse-one").collapse("hide");
+  $("#collapse-one").collapse("hide");
 
   // MAIN SC SETUP CODE
 
