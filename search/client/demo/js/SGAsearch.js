@@ -9,6 +9,7 @@
   (function($, SGAsearch, _, Backbone) {
     var _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9;
 
+    $.param.fragment.noEscape(':,/');
     SGAsearch.SearchResult = (function(_super) {
       __extends(SearchResult, _super);
 
@@ -25,7 +26,9 @@
         "nbook": "[Notebook]",
         "author": "[Author]",
         "editor": "[Editor]",
-        "date": "[Date]"
+        "date": "[Date]",
+        "imageURL": "http://placehold.it/75x100",
+        "detailQuery": ""
       };
 
       return SearchResult;
@@ -279,26 +282,32 @@
       return FacetView;
 
     })(Backbone.View);
-    SGAsearch.trackState = function() {
-      console.log($.bbq.getState());
-      if (($.bbq.getState("f") != null) && $.bbq.getState("q" != null)) {
-        console.log('h');
-        return SGAsearch.search("http://localhost:5000/search", $.bbq.getState("q"), $('#refine-results'), $('#results-grid ul'), $.bbq.getState("f"));
-      }
-    };
-    SGAsearch.init = function(service, input, facets, destination) {
-      SGAsearch.service = service;
-      SGAsearch.facets = facets;
-      SGAsearch.destination = destination;
-      SGAsearch.trackState();
-      return input.submit(function(e) {
-        var query;
+    SGAsearch.updateSearch = function(service, facets, destination) {
+      var doSearch;
 
-        console.log('h');
-        e.preventDefault();
-        query = input.find('input').val();
-        SGAsearch.search(service, query, facets, destination);
-        return false;
+      doSearch = function() {
+        var f, nb, p, q;
+
+        q = $.bbq.getState('q');
+        f = $.bbq.getState('f');
+        p = $.bbq.getState('p');
+        nb = $.bbq.getState('nb');
+        if ((q != null) && (f != null)) {
+          if (p == null) {
+            p = 0;
+          } else {
+            p -= 1;
+          }
+          if (nb == null) {
+            nb = null;
+          }
+          SGAsearch.search(service, q, facets, destination, f, p, nb);
+          return $('#all-results').show();
+        }
+      };
+      doSearch();
+      return $(window).bind("hashchange", function(e) {
+        return doSearch();
       });
     };
     return SGAsearch.search = function(service, query, facets, destination, fields, page, filters, sort) {
@@ -428,6 +437,38 @@
         });
         return view.$el.find('.nav-first');
       };
+      setHistory = function() {
+        var cur_f, cur_nb, cur_p, cur_q;
+
+        cur_q = $.bbq.getState('q');
+        cur_f = $.bbq.getState('f');
+        cur_p = $.bbq.getState('p');
+        cur_nb = parseInt($.bbq.getState('nb') - 1);
+        if (cur_q !== query || cur_f !== fields) {
+          $.bbq.pushState({
+            q: query,
+            f: fields
+          });
+        }
+        if (cur_p !== page) {
+          if (page > 0) {
+            $.bbq.pushState({
+              p: page + 1
+            });
+          } else {
+            $.bbq.removeState('p');
+          }
+        }
+        if (cur_nb !== filters) {
+          if (filters != null) {
+            return $.bbq.pushState({
+              nb: filters
+            });
+          } else {
+            return $.bbq.removeState('nb');
+          }
+        }
+      };
       updateResults = function(res) {
         var f_add, f_del, f_h_mws, f_h_pbs, f_nb, k, nb, orderedNBs, r, sr, v, _i, _j, _len, _len1, _ref10;
 
@@ -439,7 +480,8 @@
           _this.srlv.collection.add(sr);
           r.num = (res.results.indexOf(r) + 1) + page * 20;
           r.id = r.id.substr(r.id.length - 4);
-          r.shelfmark = r.shelfmark.substr(r.shelfmark.length - 3);
+          r.imageURL = "http://sga.mith.org:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://sga.mith.org/images/jp2/" + r.shelfmark + "-" + r.id + ".jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1&svc.region=0,0,100,75";
+          r.detailQuery = "s=f:" + fields + "|q:" + query;
           sr.set(r);
         }
         _this.srlv.render(destination);
