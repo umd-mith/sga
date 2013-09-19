@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Sep 17 16:32:24 2013 -0400
+# Date: Wed Sep 18 16:02:48 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -705,31 +705,30 @@
                 key: null
               });
               realCanvas = null;
-              that.events.onImgOnlyChange.addListener(function() {
-                var _ref, _ref1;
-
-                canvasWidth = ((_ref = item.width) != null ? _ref[0] : void 0) || 1;
-                canvasHeight = ((_ref1 = item.height) != null ? _ref1[0] : void 0) || 1;
-                that.setScale(parseInt($(container).parent().width()) / canvasWidth);
-                if (realCanvas != null) {
-                  if (realCanvas.hide != null) {
-                    realCanvas.hide();
+              $(container).on("resetPres", function() {
+                SVGWidth = parseInt($(container).width() * 20 / 20, 10);
+                if ((canvasWidth != null) && canvasWidth > 0) {
+                  that.setScale(SVGWidth / canvasWidth);
+                  if (realCanvas != null) {
+                    if (realCanvas.hide != null) {
+                      realCanvas.hide();
+                    }
+                    if (realCanvas._destroy != null) {
+                      realCanvas._destroy();
+                    }
                   }
-                  if (realCanvas._destroy != null) {
-                    realCanvas._destroy();
-                  }
-                }
-                return SVG(function(svgRoot) {
-                  svgRoot.clear();
-                  return realCanvas = SGA.Reader.Presentation.Zone.initInstance(svgRoot.root(), {
-                    types: options.types,
-                    dataView: dataView,
-                    application: options.application,
-                    height: canvasHeight,
-                    width: canvasWidth,
-                    svgRoot: svgRoot
+                  return SVG(function(svgRoot) {
+                    svgRoot.clear();
+                    return realCanvas = SGA.Reader.Presentation.Zone.initInstance(svgRoot.root(), {
+                      types: options.types,
+                      dataView: dataView,
+                      application: options.application,
+                      height: canvasHeight,
+                      width: canvasWidth,
+                      svgRoot: svgRoot
+                    });
                   });
-                });
+                }
               });
               return that.events.onCanvasChange.addListener(function(canvas) {
                 var item, _ref, _ref1;
@@ -1393,15 +1392,37 @@
 
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.ModeControls"].concat(__slice.call(args), [function(that, container) {
-              var imgOnly, std, text, xml;
+              var imgOnly, std, stored_txt_canvas, text, xml;
 
               imgOnly = $(container).find("#img-only");
               text = $(container).find("#mode-rdg");
               xml = $(container).find("#mode-xml");
               std = $(container).find("#mode-std");
-              return $(imgOnly).click(function(e) {
+              stored_txt_canvas = null;
+              $(imgOnly).click(function(e) {
+                var c;
+
                 e.preventDefault();
-                return that.setImgOnly(true);
+                if (!$(imgOnly).hasClass('active')) {
+                  stored_txt_canvas = $('*[data-types=Text]').parent();
+                  $('*[data-types=Text]').parent().remove();
+                  c = /col-lg-(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
+                  $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2;
+                  $('*[data-types=Image]').trigger('resetPres');
+                  return that.setMode('imgOnly');
+                }
+              });
+              return $(std).click(function(e) {
+                var c, img_parent;
+
+                e.preventDefault();
+                if (!$(std).hasClass('active') && (stored_txt_canvas != null)) {
+                  img_parent = $('*[data-types=Image]').parent();
+                  c = /col-lg-(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
+                  img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2;
+                  stored_txt_canvas.insertAfter(img_parent);
+                  return $('*[data-types=Image]').trigger('resetPres');
+                }
               });
             }]));
           };
@@ -2317,9 +2338,8 @@
 
   MITHgrid.defaults('SGA.Reader.Component.ModeControls', {
     variables: {
-      ImgOnly: {
-        is: 'rw',
-        "default": false
+      Mode: {
+        is: 'rw'
       }
     }
   });
