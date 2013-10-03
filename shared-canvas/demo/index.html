@@ -10,19 +10,22 @@
 <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?mr4i2q" media="all" />
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 
 <!-- <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
 <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js?mr4i2q"></script> -->
 
-<script src="./js/jquery.js"></script>
-<script src="./js/jquery.ui.core.min.js?v=1.8.11"></script>
+<!-- <script src="./js/jquery.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<!-- <script src="./js/jquery.ui.core.min.js?v=1.8.11"></script> -->
 <script src="./js/modernizr-2.6.2.min.js"></script>
 <script src="./js/jquery.svg.min.js"></script>
 <script src="./js/navigation.js"></script>
-<script src="./js/jquery-ui-1.8.22.custom.min.js"></script>
+<!-- <script src="./js/jquery-ui-1.8.22.custom.min.js"></script> -->
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="./js/jquery.ba-bbq.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 <script src="./js/polymaps.min.js"></script>
 <script src="./js/adoratio.js"></script>
 <script src="./js/mithgrid.js"></script>
@@ -32,6 +35,25 @@
 <link href="./css/overrides.css" rel="stylesheet">
 <link href="./css/polymaps.css" rel="stylesheet">
 <link href="./css/shared-canvas.css" rel="stylesheet">  
+
+
+<style type="text/css">
+    .ui-widget-header { background: none; }
+    .res { background-color: #a54647; color: #a54647; border-bottom: 1px solid #fff; border-top: 1px solid #fff;}
+    .ui-slider-handle {left: 15px !important;
+      width: 0 !important; 
+      height: 0 !important; 
+      border: 0 !important;
+      border-top: 10px solid transparent !important;
+      border-bottom: 10px solid transparent !important;       
+      border-right:10px solid #a54647 !important; 
+      background: transparent !important;
+    }
+    .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active {
+      border-right:10px solid #5f5b50 !important;
+    }
+  </style>
+
 
 </head>
 
@@ -100,11 +122,27 @@
       <div class="accordion" id="accordion-parent">
         <div class="accordion-group">
           <div class="well">
-            <input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" />
+            <!-- <input type="range" id="page-location" style="width: 100%" step="1" max="100" min="0" value="0" /> -->
             <div class="btn-toolbar pull-left" id="view-controls">
               <div class="btn-group"><a class="btn btn-small" title="Select"><i class="icon-red icon-pencil"></i></a></div>
               <div class="btn-group"><a class="btn btn-small" title="Reset Zoom" id="zoom-reset"><i class="icon-red icon-search"></i></a><a class="btn btn-small" title="Zoom In" id="zoom-in"><i class="icon-red icon-zoom-in"></i></a><a class="btn btn-small" title="Zoom Out" id="zoom-out"><i class="icon-red icon-zoom-out"></i></a></div>
-              <div class="btn-group" id="mode-controls"><a class="btn btn-small" title="View Image Only" id="img-only"><i class="icon-red icon-picture"></i></a><a class="btn btn-small" title="Standard View" style="display:none;" id="mode-std"><i class="icon-red icon-pause"></i></a><a class="btn btn-small" title="View Text Online" id="mode-rdg"><i class="icon-red icon-align-left"></i></a><a class="btn btn-small" title="Toggle TEI View" id="mode-xml"><i class="icon-red icon-code"></i></a></div>
+              <!-- <div class="btn-group" id="mode-controls"><a class="btn btn-small" title="View Image Only" id="img-only"><i class="icon-red icon-picture"></i></a><a class="btn btn-small" title="Standard View" style="display:none;" id="mode-std"><i class="icon-red icon-pause"></i></a><a class="btn btn-small" title="View Text Online" id="mode-rdg"><i class="icon-red icon-align-left"></i></a><a class="btn btn-small" title="Toggle TEI View" id="mode-xml"><i class="icon-red icon-code"></i></a></div> -->
+              <div class="btn-group" id="mode-controls" data-toggle="buttons">
+
+                <a class="btn btn-small" title="View Image Only" id="img-only">
+
+                  <input type="radio" name="options">
+                  <i class="icon-red icon-picture"></i></a>
+
+                <a class="btn btn-small active" title="Standard View" id="mode-std">
+                  <input type="radio" name="options">
+                  <i class="icon-red icon-pause"></i></a>
+                <a class="btn btn-small" title="View Text Online" id="mode-rdg">
+                  <input type="radio" name="options">
+                  <i class="icon-red icon-align-left"></i></a>
+                <a class="btn btn-small" title="Toggle TEI View" id="mode-xml">
+                  <input type="radio" name="options">
+                  <i class="icon-red icon-code"></i></a></div>
             </div>
             <!-- /view-controls -->
             
@@ -188,11 +226,14 @@
   <div class="shadow-top"></div>
   <div class="row">
     <div class="loader" id="loading-progress"><!-- <i class="icon-spinner icon-spin icon-3x"></i> --></div>
-    <div class="col-lg-6">
-      <div class="canvas" data-types="Image" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"></div>
+    <div class="col-lg-5"> <!-- instead of class="col-lg-6" -->
+      <div class="canvas" data-types="Image" data-manifest="Manifest-jp2.json"></div>
     </div>
-    <div class="col-lg-6">
-      <div class="canvas" data-types="Text" data-manifest="http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"></div>
+    <div class="col-lg-5">
+      <div class="canvas" data-types="Text" data-manifest="Manifest-jp2.json"></div>
+    </div>
+    <div class="col-lg-2">
+      <div id="page-location"></div>
     </div>
   </div>
 </div>
@@ -253,7 +294,7 @@
     }
 
     builder.onManifest(
-      "http://sga.mith.org/sc-demo/ox-ms_abinger_c56/Manifest-jp2.json"
+      "Manifest-jp2.json"
     , function(app) {
       var filter, pageSlider, pager;
 
@@ -311,10 +352,10 @@
     });
   });
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>-->
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>

@@ -128,4 +128,4 @@ MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
 
 MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
   variables:
-    ImgOnly: { is: 'rw', default: false }
+    Mode: { is: 'rw' }

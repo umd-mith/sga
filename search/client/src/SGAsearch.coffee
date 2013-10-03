@@ -4,6 +4,9 @@ window.SGAsearch = {}
 
 (($,SGAsearch,_,Backbone) ->
 
+  #bbq no escape for "pretty" search fragment
+  $.param.fragment.noEscape ':,/'
+
 ## MODELS ##
 
   # SearchResult
@@ -16,7 +19,9 @@ window.SGAsearch = {}
       "nbook" : "[Notebook]"
       "author" : "[Author]"
       "editor" : "[Editor]"
-      "date" : "[Date]"
+      "date" : "[Date]" 
+      "imageURL" : "http://placehold.it/75x100"
+      "detailQuery" : ""
 
   # Facet
   class SGAsearch.Facet extends Backbone.Model
@@ -147,6 +152,31 @@ window.SGAsearch = {}
       @$el.remove()
       @  
 
+  ## HISTORY ##
+
+  SGAsearch.updateSearch = (service, facets, destination) ->
+
+    doSearch = ->
+
+      q = $.bbq.getState('q')
+      f = $.bbq.getState('f')
+      p = $.bbq.getState('p')
+      nb = $.bbq.getState('nb')
+      # Leaving sorting out
+      # s = $.bbq.getState('s') 
+
+      if q? and f?
+        if !p? then p = 0 else p -= 1 
+        if !nb? then nb = null
+        SGAsearch.search(service, q, facets, destination, f, p, nb)
+        $('#all-results').show()
+
+    doSearch()
+
+    $(window).bind "hashchange", (e) ->
+      doSearch()
+      
+
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
 
     srcOptions = 
@@ -177,6 +207,11 @@ window.SGAsearch = {}
       url += "&sort=#{sort}"
 
     console.log url
+
+    setHistory = () ->
+      $.bbq.pushState
+        f: fields
+        q: query
 
     bindSort = () ->
       sortBy = $(".r-sorting").find('[name=r-sortby]')
@@ -239,6 +274,28 @@ window.SGAsearch = {}
 
       view.$el.find('.nav-first')
 
+    setHistory = () ->
+      cur_q = $.bbq.getState('q')
+      cur_f = $.bbq.getState('f')
+      cur_p = $.bbq.getState('p')
+      cur_nb = parseInt $.bbq.getState('nb') - 1
+      if cur_q != query or cur_f != fields
+        $.bbq.pushState
+          q: query
+          f: fields
+      if cur_p != page
+        if page > 0
+          $.bbq.pushState
+            p: page + 1
+        else 
+          $.bbq.removeState('p')
+      if cur_nb != filters
+        if filters?
+          $.bbq.pushState
+            nb: filters
+        else
+          $.bbq.removeState('nb')
+
     updateResults = (res) =>
       # Results
 
@@ -250,7 +307,10 @@ window.SGAsearch = {}
 
         r.num = (res.results.indexOf(r) + 1) + page*20
         r.id = r.id.substr r.id.length - 4
-        r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
+        # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
+
+        r.imageURL = "http://sga.mith.org:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://sga.mith.org/images/jp2/#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1&svc.region=0,0,100,75"
+        r.detailQuery = "s=f:#{fields}|q:#{query}"
 
         sr.set r
 
@@ -343,6 +403,10 @@ window.SGAsearch = {}
       # Connect UI components
       bindPagination res.numFound
       bindSort()
+      setHistory()
+
+      # Track history
+      setHistory()
 
     $.ajax
       url: url
