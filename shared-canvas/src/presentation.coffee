@@ -17,10 +17,31 @@ SGAReader.namespace "Presentation", (Presentation) ->
       MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextContent", args..., (that, container) ->
         options = that.options
 
+        that.setHeight 0
+
+        that.events.onWidthChange.addListener (w) ->
+          $(container).attr('width', w)
+
+        if options.width?
+          that.setWidth options.width
+
+        that.events.onHeightChange.addListener (h) -> console.log "Height:", h, container
+
         #
         # We draw each text span type the same way. We rely on the
         # item.type to give us the CSS classes we need for the span
         #
+        heightSettingTimer = null
+        adjustHeight = ->
+          if heightSettingTimer?
+            clearTimeout heightSettingTimer
+          heightSettingTimer = setTimeout ->
+            h = $(container).height() * 10
+            if h > options.height
+              that.setHeight h
+            heightSettingTimer = null
+          , 0
+
         annoLens = (container, view, model, id) ->
           rendering = {}
           el = $("<span></span>")
@@ -30,10 +51,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
           el.addClass item.type.join(" ")
           if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
           $(container).append el
+          adjustHeight()
           rendering.remove = ->
             el.remove()
+            adjustHeight()
+
           rendering.update = (item) ->
             el.text item.text[0]
+            adjustHeight()
+
           rendering
 
         #
@@ -59,8 +85,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
           el = $("<br/>")
           rendering.$el = el
           $(container).append(el)
+          adjustHeight()
 
-          rendering.remove = -> el.remove()
+          rendering.remove = -> 
+            el.remove()
+            adjustHeight()
+
           rendering.update = (item) ->
 
           rendering
@@ -82,6 +112,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
         svgRoot = options.svgRoot
 
         app = that.options.application()
+
+        that.setHeight options.height
+        that.setWidth options.width
+        that.setX options.x
+        that.setY options.y
 
         #
         # !target gives us all of the annotations that target the given
@@ -237,18 +272,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
           zoneInfo = model.getItem id
           zoneContainer = null
           zoneContainer = document.createElementNS('http://www.w3.org/2000/svg', 'svg' )
+          container.appendChild(zoneContainer)
+
           # pull start/end/width/height from constraint with a default of
           # the full surface
           x = if item.x?[0]? then item.x[0] else 0
           y = if item.y?[0]? then item.y[0] else 0
           width = if item.width?[0]? then item.width[0] else options.width - x
           height = if item.height?[0]? then item.height[0] else options.height - y
-          x /= 10
-          y /= 10
-          width /= 10
-          height /= 10
-          $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
-          container.appendChild(zoneContainer)
 
           # TODO: position/size zoneContainer and set scaling.
           zoneDataView = MITHgrid.Data.SubSet.initInstance
@@ -266,11 +297,31 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           zoneDataView.setKey id
 
+          zone.events.onHeightChange.addListener (h) -> $(zoneContainer).attr('height', h/10)
+          zone.events.onWidthChange.addListener (w) -> $(zoneContainer).attr('width', w/10)
+          zone.events.onXChange.addListener (x) -> $(zoneContainer).attr('x', x/10)
+          zone.events.onYChange.addListener (y) -> $(zoneContainer).attr('y', y/10)
+
+
+          zone.setX x
+          zone.setY y
+          zone.setHeight height
+          zone.setWidth width
+
+
+          zone.events.onHeightChange.addListener (h) ->
+            ypos = that.getY()
+            if ypos + h > that.getHeight()
+              that.setHeight(ypos + h)
+            #$(zoneContainer).attr("height", that.getHeight()/10)
+
           rendering._destroy = ->
             zone._destroy() if zone._destroy?
             zoneDataView._destroy() if zoneDataView._destroy?
 
           rendering.remove = ->
+            zone.setHeight(0)
+            $(zoneContainer).hide()
             rendering._destroy()
  
           rendering.update = (item) ->
@@ -278,11 +329,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
             y = if item.y?[0]? then item.y[0] else 0
             width = if item.width?[0]? then item.width[0] else options.width - x
             height = if item.height?[0]? then item.height[0] else options.height - y
-            x /= 10
-            y /= 10
-            height /= 10
-            width /= 10
-            $(zoneContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+            if height < zone.getHeight()
+              height = zone.getHeight()
+            that.setX x
+            that.setY y
+            that.setWidth width
+            that.setHeight height
  
           rendering
 
@@ -313,8 +365,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
           container.appendChild(textContainer)
           bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+          overflowDiv = document.createElement('div')
+          bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
+          overflowDiv.appendChild rootEl
           
           rootEl.text(item.text[0])
           rendering.update = (item) ->
@@ -333,17 +388,20 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # Zone above and allow rendering of embedded zones even if we don't
         # render the textual content.
         #
+        # We have code to expand the overall canvas size for a Text-based div
+        # if the text is too long for the view.
+        #
         that.addLens 'TextContentZone', (container, view, model, id) ->
           return unless 'Text' in (options.types || [])
 
           # Set initial viewbox
           svg = $(svgRoot.root())
           # jQuery won't modify the viewBox - using pure JS
-          vb = svg.get(0).getAttribute("viewBox")
+          #vb = svg.get(0).getAttribute("viewBox")
 
-          if !vb?
-            svgRoot.configure
-              viewBox: "0 0 #{options.width} #{options.height}"
+          #if !vb?
+          #  svgRoot.configure
+          #    viewBox: "0 0 #{options.width} #{options.height}"
 
           rendering = {}
           
@@ -359,6 +417,64 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           textContainer = null
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
+          textContainer.style.overflow = 'hidden'
+          container.appendChild(textContainer)
+
+          #
+          # Similar to foreignObject, the body element MUST be in the XHTML
+          # namespace, so we can't use jQuery. Once we're inside the body
+          # element, we can use jQuery all we want.
+          #
+          bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+          overflowDiv = document.createElement('div')
+          #overflowDiv.style.overflow = 'hidden'
+          bodyEl.appendChild overflowDiv
+          rootEl = document.createElement('div')
+          $(rootEl).addClass("text-content")
+          $(rootEl).attr("id", id)
+          $(rootEl).css("font-size", 15.0)
+          $(rootEl).css("line-height", 1.15)
+          overflowDiv.appendChild(rootEl)
+          textContainer.appendChild(bodyEl)
+
+          #
+          # textDataView gives us all of the annotations targeting this
+          # text content annotation - that is, all of the highlights and such
+          # that change how we render the text mapped onto the zone/canvas.
+          # We don't set the key here because the SubSet data view won't use
+          # the key to filter the set of annotations during the initInstance
+          # call.
+          #
+          textDataView = MITHgrid.Data.SubSet.initInstance
+            dataStore: model
+            expressions: [ '!target' ]
+
+          #
+          # Here we embed the text-based zone within the pixel-based
+          # zone. Any text-based positioning will have to be handled by
+          # the TextContent presentation.
+          #
+          text = Presentation.TextContent.initInstance rootEl,
+            types: options.types
+            dataView: textDataView
+            svgRoot: svgRoot
+            application: options.application
+            height: height
+            width: width
+
+          #
+          # Once we have the presentation in place, we set the
+          # key of the SubSet data view to the id of the text content 
+          # annotation item. This causes the presentation to render the
+          # annotations.
+          #
+          textDataView.setKey id
+
+          text.events.onHeightChange.addListener (h) ->
+            if h > that.getHeight()
+              that.setHeight h
+            $(textContainer).attr("height", 'auto')
+            $(overflowDiv).attr("height", h/10)
 
           #
           # If we're not given an offset and size, then we assume that we're
@@ -368,26 +484,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
           y = if item.y?[0]? then item.y[0] else 0
           width = if item.width?[0]? then item.width[0] else options.width - x
           height = if item.height?[0]? then item.height[0] else options.height - y
+          that.setHeight height
           x /= 10
           y /= 10
           width /= 10
           height /= 10
           $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
-          container.appendChild(textContainer)
 
-          #
-          # Similar to foreignObject, the body element MUST be in the XHTML
-          # namespace, so we can't use jQuery. Once we're inside the body
-          # element, we can use jQuery all we want.
-          #
-          bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
-          rootEl = document.createElement('div')
-          $(rootEl).addClass("text-content")
-          $(rootEl).attr("id", id)
-          $(rootEl).css("font-size", 15.0)
-          $(rootEl).css("line-height", 1.15)
-          bodyEl.appendChild(rootEl)
-          textContainer.appendChild(bodyEl)
+ 
 
           if app.imageControls.getActive()
             # If the marquee already exists, replace it with a new one.
@@ -423,38 +527,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
               marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
 
-          #
-          # textDataView gives us all of the annotations targeting this
-          # text content annotation - that is, all of the highlights and such
-          # that change how we render the text mapped onto the zone/canvas.
-          # We don't set the key here because the SubSet data view won't use
-          # the key to filter the set of annotations during the initInstance
-          # call.
-          #
-          textDataView = MITHgrid.Data.SubSet.initInstance
-            dataStore: model
-            expressions: [ '!target' ]
 
-          #
-          # Here we embed the text-based zone within the pixel-based
-          # zone. Any text-based positioning will have to be handled by
-          # the TextContent presentation.
-          #
-          text = Presentation.TextContent.initInstance rootEl,
-            types: options.types
-            dataView: textDataView
-            svgRoot: svgRoot
-            application: options.application
-            height: height
-            width: width
-
-          #
-          # Once we have the presentation in place, we set the
-          # key of the SubSet data view to the id of the text content 
-          # annotation item. This causes the presentation to render the
-          # annotations.
-          #
-          textDataView.setKey id
 
           rendering._destroy = ->
             text._destroy() if text._destroy?
@@ -469,11 +542,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
             y = if item.y?[0]? then item.y[0] else 0
             width = if item.width?[0]? then item.width[0] else options.width - x
             height = if item.height?[0]? then item.height[0] else options.height - y
+            if height > that.getHeight()
+              that.setHeight height
+            else
+              height = that.getHeight()
             x /= 10
             y /= 10
             width /= 10
-            height /= 10
-            $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+            $(textContainer).attr("x", x).attr("y", y).attr("width", width)
 
           rendering
 
@@ -521,6 +597,30 @@ SGAReader.namespace "Presentation", (Presentation) ->
         SVGHeight = null
         SVGWidth = parseInt($(container).width()*20/20, 10)
 
+        setSizeAttrs = ->
+          SVG (svgRoot) ->
+            svgRootEl.attr
+              width: canvasWidth
+              height: canvasHeight
+
+            svg = $(svgRoot.root())
+            vb = svg.get(0).getAttribute("viewBox")
+
+            if vb?
+              svgRoot.configure
+                viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
+            svgRootEl.css
+              width: SVGWidth
+              height: SVGHeight
+              border: "1px solid #eeeeee"
+              "border-radius": "2px"
+              "background-color": "#ffffff"
+
+        that.events.onHeightChange.addListener (h) ->
+          canvasHeight = h
+          SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
+          setSizeAttrs()
+
         #
         # MITHgrid makes available a global listener for browser window
         # resizing so we don't have to guess how to do this for each
@@ -535,24 +635,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.events.onScaleChange.addListener (s) ->
           if canvasWidth? and canvasHeight?
             SVGHeight = parseInt(canvasHeight * s, 10)
-            SVG (svgRoot) ->
-              svgRootEl.attr
-                width: canvasWidth
-                height: canvasHeight
-
-              # If the viewbox is not set (ie beacuse of an image viewer), 
-              # don't attempt to adjust it.
-              svg = $(svgRoot.root())
-              # jQuery won't modify the viewBox - using pure JS
-              vb = svg.get(0).getAttribute("viewBox")
-
-              if vb?
-                svgRoot.configure
-                  viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
-
-              svgRootEl.css
-                width: SVGWidth
-                height: SVGHeight
+            setSizeAttrs()
 
         # the data view is managed outside the presentation
         dataView = MITHgrid.Data.SubSet.initInstance
@@ -603,5 +686,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: canvasHeight
               width: canvasWidth
               svgRoot: svgRoot
+            that.setHeight canvasHeight
+            realCanvas.events.onHeightChange.addListener that.setHeight
 
 

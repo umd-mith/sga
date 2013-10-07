@@ -84,6 +84,24 @@ MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
     ImgOnly: { is: 'rw' }
+    Height: { is: 'rw', isa: 'numeric' }
+    Width: { is: 'rw', isa: 'numeric' }
+    X: { is: 'rw', isa: 'numeric' }
+    Y: { is: 'rw', isa: 'numeric' }
+
+MITHgrid.defaults 'SGA.Reader.Presentation.TextContent',
+  variables:
+    Height: { is: 'rw', isa: 'numeric' }
+    Width: { is: 'rw', isa: 'numeric' }
+    X: { is: 'rw', isa: 'numeric' }
+    Y: { is: 'rw', isa: 'numeric' }
+
+MITHgrid.defaults 'SGA.Reader.Presentation.Zone',
+  variables:
+    Height: { is: 'rw', isa: 'numeric' }
+    Width: { is: 'rw', isa: 'numeric' }
+    X: { is: 'rw', isa: 'numeric' }
+    Y: { is: 'rw', isa: 'numeric' }
 
 #
 # The ItemsToProcess and ItemsProcessed are analagous to the
