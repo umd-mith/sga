@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 3 09:14:38 2013 -0400
+# Date: Tue Oct 8 13:06:42 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -787,10 +787,9 @@
                 });
               };
               that.events.onHeightChange.addListener(function(h) {
-                if (__indexOf.call(options.types, "Text") >= 0) {
+                SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10);
+                if (__indexOf.call(options.types, "Text") >= 0 && h / 10 > SVGHeight) {
                   SVGHeight = h / 10;
-                } else {
-                  SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10);
                 }
                 return setSizeAttrs();
               });

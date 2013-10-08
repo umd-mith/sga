@@ -646,10 +646,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         that.events.onHeightChange.addListener (h) ->
           #canvasHeight = h
-          if "Text" in options.types
+          SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
+
+          if "Text" in options.types and h/10 > SVGHeight
             SVGHeight = h / 10
-          else
-            SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
           #if SVGHeight < canvasHeight/10
           #  SVGHeight = canvasHeight/10
           setSizeAttrs()

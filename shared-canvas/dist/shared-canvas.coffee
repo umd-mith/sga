@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 3 09:14:38 2013 -0400
+# Date: Tue Oct 8 13:06:42 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -900,10 +900,10 @@
     
             that.events.onHeightChange.addListener (h) ->
               #canvasHeight = h
-              if "Text" in options.types
+              SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
+    
+              if "Text" in options.types and h/10 > SVGHeight
                 SVGHeight = h / 10
-              else
-                SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
               #if SVGHeight < canvasHeight/10
               #  SVGHeight = canvasHeight/10
               setSizeAttrs()
