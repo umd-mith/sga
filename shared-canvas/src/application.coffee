@@ -114,6 +114,8 @@ SGAReader.namespace "Application", (Application) ->
         that.flushSearchResults = manifestData.flushSearchResults
         that.getSearchResultCanvases = manifestData.getSearchResultCanvases
 
+
+
         #
         # textSource manages fetching and storing all of the TEI
         # files that we will be referencing in our text content
@@ -467,9 +469,63 @@ SGAReader.namespace "Application", (Application) ->
               item.sequence = seq
               items.push item           
 
+            ranges = manifestData.getRanges()
+            that.addItemsToProcess ranges.length
+            syncer.process ranges, (id) ->
+              that.addItemsProcessed 1
+              ritem = manifestData.getItem id
+              item =
+                id: id
+                type: 'Range'
+                label: ritem.rdfslabel
+
+              contents = []
+              contents.push ritem.rdffirst[0]
+              ritem = manifestData.getItem ritem.rdfrest[0]
+              while ritem.id?
+                contents.push ritem.rdffirst[0]
+                ritem = manifestData.getItem ritem.rdfrest[0]
+              item.canvases = contents
+              items.push item
+
             syncer.done ->
               that.dataStore.data.loadItems items
 
+        #
+        # The following are convenience methods for extracting all of the metadata associated with different
+        # parts of the manifest. 
+        #
+
+        that.getRangeMetadata = (id) ->
+          meta = {}
+          info = that.dataStore.data.getItem id
+          meta.rangeTitle = info.label?[0]
+          meta
+
+        that.getManifestMetadata = (id) ->
+          ret = {}
+          if not id?
+            id = options.url
+          if id?
+            info = manifestData.getItem id
+            ret.workTitle = info.dctitle?[0] or info.rdfslabel?[0]
+          ret
+            
+        that.getCanvasMetadata = (id) ->
+          meta = that.getManifestMetadata()
+          info = that.dataStore.data.getItem id
+          meta.canvasTitle = info.label?[0]
+
+          rangeIds = that.dataStore.data.getSubjectsUnion(MITHgrid.Data.Set.initInstance([id]), 'canvases')
+          rangeTitles = {}
+          rangeIds.visit (rid) ->
+            rmeta = that.getRangeMetadata rid
+            if rmeta.rangeTitle?
+              meta.rangeTitle or= []
+              meta.rangeTitle.push rmeta.rangeTitle
+
+          meta
+          
     #
     # ### Application.SharedCanvas#builder
     #
