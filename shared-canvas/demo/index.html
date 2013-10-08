@@ -244,8 +244,11 @@
     <div id="detail-view-details" class="meta-data-group col-lg-6">
       <div class="well well-small meta-data-item">
         <h3 class="meta-title">Page View Details</h3>
-        <div class="meta-page-view">[ . . . ]</div>
-      </div>
+        <div class="meta-page-view">
+          Work Title: <span id="sc-work-title"></span><br/>
+          Range Title: <span id="sc-range-title"></span><br/>
+          Canvas Title: <span id="sc-canvas-title"></span></div>
+        </div>
     </div>
     <div id="detail-view-sequence" class="meta-data-group col-lg-6">
       <div class="well well-small">
@@ -340,12 +343,32 @@
       app.setSequence( filter.getSequence() );
 
       app.events.onCanvasChange.addListener(function(c) {
-        var item = app.dataStore.data.getItem(c);
+        var item = app.dataStore.data.getItem(c),
+            meta = app.getCanvasMetadata(c);
+
         if(item.label !== undefined) {
           $("#canvas-label").text(item.label[0]);
         }
         else {
           $("#canvas-label").text("(no label)");
+        }
+        if(meta.workTitle !== undefined) {
+          $("#sc-work-title").text(meta.workTitle);
+        }
+        else {
+          $("#sc-work-title").text("");
+        }
+        if(meta.rangeTitle !== undefined) {
+          $("#sc-range-title").text(meta.rangeTitle.join("; "));
+        }
+        else {
+          $("#sc-range-title").text("");
+        }
+        if(meta.canvasTitle !== undefined) {
+          $("#sc-canvas-title").text(meta.canvasTitle);
+        }
+        else {
+          $("#sc-canvas-title").text("");
         }
       });
 

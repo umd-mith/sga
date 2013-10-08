@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132620
+# SGA Shared Canvas v0.132810
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Sep 19 15:53:44 2013 -0400
+# Date: Thu Oct 3 09:14:38 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -240,6 +240,7 @@
             that.getZones       = -> itemsWithType 'scZone'
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
+            that.getRanges      = -> itemsWithType 'scRange'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
             that.getSearchResultCanvases = getSearchResultCanvases
@@ -273,12 +274,14 @@
             that.setHeight 0
     
             that.events.onWidthChange.addListener (w) ->
-              $(container).attr('width', w)
+              $(container).attr('width', w/10)
     
             if options.width?
               that.setWidth options.width
-    
-            that.events.onHeightChange.addListener (h) -> console.log "Height:", h, container
+            if options.x?
+              that.setX options.x
+            if options.y?
+              that.setY options.y
     
             #
             # We draw each text span type the same way. We rely on the
@@ -292,6 +295,8 @@
                 h = $(container).height() * 10
                 if h > options.height
                   that.setHeight h
+                else if h < options.height
+                  that.setHeight options.height
                 heightSettingTimer = null
               , 0
     
@@ -371,6 +376,24 @@
             that.setX options.x
             that.setY options.y
     
+            recalculateHeightTimer = null
+            recalculateHeight = (h) ->
+              if recalculateHeightTimer?
+                clearTimeout recalculateHeightTimer
+              heightSettingTimer = setTimeout ->
+                length = (h or 0)
+                that.visitRenderings (id) ->
+                  r = that.renderingFor id
+                  if r.getHeight?
+                    h = (r.getHeight() or 0)
+                  if r.getY?
+                    h += (r.getY() or 0)
+                  if h > length
+                    length = h
+                  true
+                that.setHeight length + 15
+              , 0
+    
             #
             # !target gives us all of the annotations that target the given
             # item id. We use this later to find all of the annotations that target
@@ -399,23 +422,25 @@
                   viewBox: "0 0 #{options.width} #{options.height}"
     
               svgImage = null
+              height = 0
+              y = 0
               renderImage = (item) ->
                 if item.image?[0]? and svgRoot?
                   x = if item.x?[0]? then item.x[0] else 0
                   y = if item.y?[0]? then item.y[0] else 0
                   width = if item.width?[0]? then item.width[0] else options.width - x
                   height = if item.height?[0]? then item.height[0] else options.height - y
-                  x /= 10
-                  y /= 10
-                  width /= 10
-                  height /= 10
                   if svgImage?
                     svgRoot.remove svgImage
-                  svgImage = svgRoot.image(container, x, y, width, height, item.image?[0], {
+                  svgImage = svgRoot.image(container, x/10, y/10, width/10, height/10, item.image?[0], {
                     preserveAspectRatio: 'none'
                   })
     
               renderImage(item)
+    
+              rendering.getHeight = -> height/10
+    
+              rendering.getY = -> y/10
     
               rendering.update = renderImage
     
@@ -494,7 +519,11 @@
                 map.on 'drag', ->
                   app.imageControls.setImgPosition map.position
     
-              
+              # for now, this is the full height of the underlying canvas/zone
+              rendering.getHeight = -> options.height/10
+    
+              rendering.getY = -> options.y / 10
+    
               rendering.update = (item) ->
                 0 # do nothing for now - eventually, update image viewer?
     
@@ -562,11 +591,11 @@
               zone.setWidth width
     
     
-              zone.events.onHeightChange.addListener (h) ->
-                ypos = that.getY()
-                if ypos + h > that.getHeight()
-                  that.setHeight(ypos + h)
-                #$(zoneContainer).attr("height", that.getHeight()/10)
+              zone.events.onHeightChange.addListener recalculateHeight
+    
+              rendering.getHeight = zone.getHeight
+    
+              rendering.getY = zone.getY
     
               rendering._destroy = ->
                 zone._destroy() if zone._destroy?
@@ -611,11 +640,8 @@
               y = if item.y?[0]? then item.y[0] else 0
               width = if item.width?[0]? then item.width[0] else options.width - x
               height = if item.height?[0]? then item.height[0] else options.height - y
-              x /= 10
-              y /= 10
-              width /= 10
-              height /= 10
-              $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
+             
+              $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
               container.appendChild(textContainer)
               bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
               overflowDiv = document.createElement('div')
@@ -625,6 +651,10 @@
               overflowDiv.appendChild rootEl
               
               rootEl.text(item.text[0])
+              rendering.getHeight = -> $(textContainer).height() * 10
+    
+              rendering.getY = -> $(textContainer).position().top * 10
+    
               rendering.update = (item) ->
                 rootEl.text(item.text[0])
               rendering.remove = ->
@@ -690,6 +720,7 @@
               overflowDiv.appendChild(rootEl)
               textContainer.appendChild(bodyEl)
     
+    
               #
               # textDataView gives us all of the annotations targeting this
               # text content annotation - that is, all of the highlights and such
@@ -703,6 +734,17 @@
                 expressions: [ '!target' ]
     
               #
+              # If we're not given an offset and size, then we assume that we're
+              # covering the entire targeted zone or canvas.
+              #
+              x = if item.x?[0]? then item.x[0] else 0
+              y = if item.y?[0]? then item.y[0] else 0
+              width = if item.width?[0]? then item.width[0] else options.width - x
+              height = if item.height?[0]? then item.height[0] else options.height - y
+    
+              $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
+    
+              #
               # Here we embed the text-based zone within the pixel-based
               # zone. Any text-based positioning will have to be handled by
               # the TextContent presentation.
@@ -714,6 +756,8 @@
                 application: options.application
                 height: height
                 width: width
+                x: x
+                y: y
     
               #
               # Once we have the presentation in place, we set the
@@ -722,36 +766,15 @@
               # annotations.
               #
               textDataView.setKey id
-    
-              text.events.onHeightChange.addListener (h) ->
-                if h > that.getHeight()
-                  that.setHeight h
-                $(textContainer).attr("height", 'auto')
-                $(overflowDiv).attr("height", h/10)
-    
-              #
-              # If we're not given an offset and size, then we assume that we're
-              # covering the entire targeted zone or canvas.
-              #
-              x = if item.x?[0]? then item.x[0] else 0
-              y = if item.y?[0]? then item.y[0] else 0
-              width = if item.width?[0]? then item.width[0] else options.width - x
-              height = if item.height?[0]? then item.height[0] else options.height - y
-              that.setHeight height
-              x /= 10
-              y /= 10
-              width /= 10
-              height /= 10
-              $(textContainer).attr("x", x).attr("y", y).attr("width", width).attr("height", height)
-    
-     
+              
+              updateMarque = (z) ->
     
               if app.imageControls.getActive()
                 # If the marquee already exists, replace it with a new one.
                 $('.marquee').remove()
                 # First time, always full extent in size and visible area
                 strokeW = 1
-                marquee = svgRoot.rect(0, 0, Math.max(1, options.width-strokeW), Math.max(1, options.height-strokeW),
+                marquee = svgRoot.rect(0, 0, Math.max(1, that.getWidth()/10), Math.max(1, that.getHeight()/10),
                   class : 'marquee' 
                   fill: 'yellow', 
                   stroke: 'navy', 
@@ -759,28 +782,37 @@
                   fillOpacity: '0.05',
                   strokeOpacity: '0.9' #currently not working in firefox
                   )
-                scale = options.width / $(container).width()
+                scale = that.getWidth() / 10 / $(container).width()
                 visiblePerc = 100
-                
-                app.imageControls.events.onZoomChange.addListener (z) ->
+    
+                updateMarque = (z) ->
                   if app.imageControls.getMaxZoom() > 0
+                    width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
+                    visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
     
-                    width  = Math.round(options.width * 10 / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
-                    visiblePerc = Math.min(100, ($(container).width() * 100) / width)
-    
-                    marquee.setAttribute("width", (options.width * visiblePerc) / 100 )
-                    marquee.setAttribute("height", (options.height * visiblePerc) / 100 )
+                    marquee.setAttribute("width", (that.getWidth()/10 * visiblePerc) / 100 )
+                    marquee.setAttribute("height", (that.getHeight()/10 * visiblePerc) / 100 )
     
                     if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
                       $(marquee).attr "opacity", "0"
                     else
                       $(marquee).attr "opacity", "100"
     
-                app.imageControls.events.onImgPositionChange.addListener (p) ->
+                that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
+    
+                that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
                   marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
                   marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
     
+              that.onDestroy text.events.onHeightChange.addListener (h) ->
+                $(textContainer).attr("height", h/10)
+                $(overflowDiv).attr("height", h/10)
+                recalculateHeight()
+                setTimeout (-> updateMarque app.imageControls.getZoom()), 0
     
+              rendering.getHeight = text.getHeight
+    
+              rendering.getY = text.getY
     
               rendering._destroy = ->
                 text._destroy() if text._destroy?
@@ -799,10 +831,8 @@
                   that.setHeight height
                 else
                   height = that.getHeight()
-                x /= 10
-                y /= 10
-                width /= 10
-                $(textContainer).attr("x", x).attr("y", y).attr("width", width)
+               
+                $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10)
     
               rendering
     
@@ -835,7 +865,6 @@
             svgRootEl = $("""
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                   width="0" height="0"
                >
               </svg>
             """)
@@ -852,16 +881,16 @@
     
             setSizeAttrs = ->
               SVG (svgRoot) ->
-                svgRootEl.attr
-                  width: canvasWidth
-                  height: canvasHeight
+                #svgRootEl.attr
+                #  width: canvasWidth/10
+                #  height: canvasHeight/10
     
                 svg = $(svgRoot.root())
                 vb = svg.get(0).getAttribute("viewBox")
     
                 if vb?
                   svgRoot.configure
-                    viewBox: "0 0 #{canvasWidth} #{canvasHeight}"
+                    viewBox: "0 0 #{canvasWidth/10} #{canvasHeight/10}"
                 svgRootEl.css
                   width: SVGWidth
                   height: SVGHeight
@@ -870,8 +899,13 @@
                   "background-color": "#ffffff"
     
             that.events.onHeightChange.addListener (h) ->
-              canvasHeight = h
-              SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
+              #canvasHeight = h
+              if "Text" in options.types
+                SVGHeight = h / 10
+              else
+                SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
+              #if SVGHeight < canvasHeight/10
+              #  SVGHeight = canvasHeight/10
               setSizeAttrs()
     
             #
@@ -921,9 +955,9 @@
               # now make SVG canvas the size of the canvas (for now)
               # eventually, we'll constrain the size but maintain the
               # aspect ratio
-              canvasWidth = (item.width?[0] || 1) / 10
-              canvasHeight = (item.height?[0] || 1) /10
-              that.setScale (SVGWidth / canvasWidth)
+              canvasWidth = (item.width?[0] || 1)
+              canvasHeight = (item.height?[0] || 1)
+              that.setScale (SVGWidth / (canvasWidth))
               if realCanvas?
                 realCanvas.hide() if realCanvas.hide?
                 realCanvas._destroy() if realCanvas._destroy?
@@ -1153,6 +1187,7 @@
             that.getZones       = -> itemsWithType 'scZone'
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
+            that.getRanges      = -> itemsWithType 'scRange'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
             that.getSearchResultCanvases = getSearchResultCanvases
@@ -1698,6 +1733,8 @@
             that.flushSearchResults = manifestData.flushSearchResults
             that.getSearchResultCanvases = manifestData.getSearchResultCanvases
     
+    
+    
             #
             # textSource manages fetching and storing all of the TEI
             # files that we will be referencing in our text content
@@ -2051,9 +2088,63 @@
                   item.sequence = seq
                   items.push item           
     
+                ranges = manifestData.getRanges()
+                that.addItemsToProcess ranges.length
+                syncer.process ranges, (id) ->
+                  that.addItemsProcessed 1
+                  ritem = manifestData.getItem id
+                  item =
+                    id: id
+                    type: 'Range'
+                    label: ritem.rdfslabel
+    
+                  contents = []
+                  contents.push ritem.rdffirst[0]
+                  ritem = manifestData.getItem ritem.rdfrest[0]
+                  while ritem.id?
+                    contents.push ritem.rdffirst[0]
+                    ritem = manifestData.getItem ritem.rdfrest[0]
+                  item.canvases = contents
+                  items.push item
+    
                 syncer.done ->
                   that.dataStore.data.loadItems items
     
+            #
+            # The following are convenience methods for extracting all of the metadata associated with different
+            # parts of the manifest. 
+            #
+    
+            that.getRangeMetadata = (id) ->
+              meta = {}
+              info = that.dataStore.data.getItem id
+              meta.rangeTitle = info.label?[0]
+              meta
+    
+            that.getManifestMetadata = (id) ->
+              ret = {}
+              if not id?
+                id = options.url
+              if id?
+                info = manifestData.getItem id
+                ret.workTitle = info.dctitle?[0] or info.rdfslabel?[0]
+              ret
+                
+            that.getCanvasMetadata = (id) ->
+              meta = that.getManifestMetadata()
+              info = that.dataStore.data.getItem id
+              meta.canvasTitle = info.label?[0]
+    
+              rangeIds = that.dataStore.data.getSubjectsUnion(MITHgrid.Data.Set.initInstance([id]), 'canvases')
+              rangeTitles = {}
+              rangeIds.visit (rid) ->
+                rmeta = that.getRangeMetadata rid
+                if rmeta.rangeTitle?
+                  meta.rangeTitle or= []
+                  meta.rangeTitle.push rmeta.rangeTitle
+    
+              meta
+              
         #
         # ### Application.SharedCanvas#builder
         #
