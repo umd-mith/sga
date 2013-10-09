@@ -134,7 +134,7 @@ window.SGAranges = {}
       @listenTo @model, 'destroy', @remove
 
     render: ->
-      @$el.html @template(@model.toJSON())
+      @$el = @template(@model.toJSON())
       @
 
     remove: ->
@@ -224,6 +224,7 @@ window.SGAranges = {}
     $.ajax
       url: manifest
       type: 'GET'
+      dataType: 'json'
       processData: false
       success: processManifest
 
@@ -289,6 +290,7 @@ window.SGAranges = {}
     $.ajax
       url: manifest
       type: 'GET'
+      dataType: 'json'
       processData: false
       success: processManifest
 
@@ -297,7 +299,9 @@ window.SGAranges = {}
 # Work it, make it, do it, makes us
 ( ($) ->
 
-  SGAranges.LoadCanvasesOnly "ranges-sample.json"
+  # SGAranges.LoadCanvasesOnly "ranges-sample.json"
   # SGAranges.LoadRanges "ranges-sample.json"
+  SGAranges.LoadCanvasesOnly "Manifest.jsonld"
+  # SGAranges.LoadRanges "Manifest.jsonld"
 
 )(jQuery)
