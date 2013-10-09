@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Ranges</title>
-<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css?mr4i2q" media="all" />
+<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?mr4i2q" media="all" />
 <link href="http://dev.shelleygodwinarchive.org/sites/all/themes/s2/css/style.css?mtbs3a" type="text/css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
@@ -76,14 +76,25 @@
 </script>
 
 <script type="text/template" id="canvas-template">
-  <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">          
+  <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-4">          
     <a href="<%=scUrl%>#n=<%=position%>"><img class="img-thumbnail" src="<%=imgUrl%>"/></a>
     <div class="mask">
       <h6 class="pg-n"><%=label%></h6>
         <p class="pg-s"><i class="icon-circle <%=status.t%>" title="Transcription Status"></i><i class="icon-circle <%=status.m%>" title="Metadata Status"></i></p>
     </div>
   </div>
+
 </script>
+
+<!-- 
+  <% if (position % 6 == 0) { %>
+    <div class="clearfix visible-lg visible-sm visible-xs"></div>    
+  <% } else if (position % 4 == 0) { %>
+    <div class="clearfix visible-md"></div>
+  <% } else if (position % 3 == 0) { %>
+    <div class="clearfix visible-sm visible-xs"></div>
+  <% } %>
+-->
 
 
 <script type="text/javascript" src="js/SGAranges.js"></script>
