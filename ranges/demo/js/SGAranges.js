@@ -279,7 +279,7 @@
       };
 
       CanvasView.prototype.render = function() {
-        this.$el.html(this.template(this.model.toJSON()));
+        this.$el = this.template(this.model.toJSON());
         return this;
       };
 
@@ -383,6 +383,7 @@
       return $.ajax({
         url: manifest,
         type: 'GET',
+        dataType: 'json',
         processData: false,
         success: processManifest
       });
@@ -449,6 +450,7 @@
       return $.ajax({
         url: manifest,
         type: 'GET',
+        dataType: 'json',
         processData: false,
         success: processManifest
       });
@@ -456,7 +458,7 @@
   })(jQuery, window.SGAranges, _, Backbone);
 
   (function($) {
-    return SGAranges.LoadCanvasesOnly("ranges-sample.json");
+    return SGAranges.LoadCanvasesOnly("Manifest.jsonld");
   })(jQuery);
 
 }).call(this);
