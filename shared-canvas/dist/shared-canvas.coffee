@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132820
+# SGA Shared Canvas v0.132830
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Oct 9 13:39:53 2013 -0400
+# Date: Tue Oct 8 13:20:03 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -300,6 +300,60 @@
                 heightSettingTimer = null
               , 0
     
+            lines = {}
+            currentLine = 0
+    
+            that.startDisplayUpdate = ->
+              lines = {}
+              currentLine = 0
+    
+            that.finishDisplayUpdate = ->
+              $(container).empty()
+              # now we go through the lines and push them into the dom
+              currentLineEl = $("<div></div>")
+              $(container).append(currentLineEl)
+              afterLayout = []
+              for lineNo in ((i for i of lines).sort (a,b) -> a - b)
+                currentPos = 0
+                for r in lines[lineNo]
+                  do (r) ->
+                    if r.$el?
+                      if r.positioned
+                        # TODO: fix the width calculation to something a bit smarter - this gets us a bit closer for now
+                        #spanEl = $("<span style='display:inline-block;'></span>")
+                        #$(container).append(spanEl)
+                        currentPos = r.charLead
+                        afterLayout.push r.afterLayout
+                        # r.afterLayout spanEl
+                      $(currentLineEl).append(r.$el)
+                      r.$el.attr('data-pos', currentPos)
+                      r.$el.attr('data-line', lineNo)
+                      currentPos += (r.charWidth or 0)
+                #$(currentLineEl).append("<br />")
+                currentLineEl = $("<div></div>")
+                $(container).append(currentLineEl)
+              runAfterLayout = (i) ->
+                if i < afterLayout.length
+                  afterLayout[i]()
+                  setTimeout (-> runAfterLayout(i+1)), 0
+                # else
+                #   h = $(container).height() * 10
+                #   if h > options.height
+                #     that.setHeight h
+                #   else if h < options.height
+                #     that.setHeight options.height()
+              setTimeout ->
+                runAfterLayout 0
+              , 0
+              adjustHeight()
+              null
+    
+            renderingTimer = null
+            that.eventModelChange = ->
+              if renderingTimer?
+                clearTimeout renderingTimer
+              renderingTimer = setTimeout that.selfRender, 0
+    
             annoLens = (container, view, model, id) ->
     
               # Find the last line element in the container, append anno to the line
@@ -319,10 +373,26 @@
                 $(latestline).addClass "interlinear"
     
               if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
-              $(latestline).append el
-              adjustHeight()
+              
+              
+              content = item.text[0].replace(/\s+/g, " ")
+              if content == " "
+                rendering.charWidth = 0
+              else
+                rendering.charWidth = content.length
+    
+              if rendering.charWidth == 0
+                return null
+    
+              lines[currentLine] ?= []
+              lines[currentLine].push rendering
+              rendering.line = currentLine
+              rendering.positioned = false
+              rendering.afterLayout = ->
+    
               rendering.remove = ->
                 el.remove()
+                lines[rendering.line] = (r for r in lines[rendering.line] when r != rendering)
                 adjustHeight()
     
               rendering.update = (item) ->
@@ -330,6 +400,88 @@
                 adjustHeight()
     
               rendering
+    
+            additionLens = (container, view, model, id) ->
+              rendering = {}
+              el = $("<span></span>")
+              rendering.$el = el
+              item = model.getItem id
+              el.text item.text[0]
+              el.addClass item.type.join(" ")
+              #if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
+              if item.css? and /vertical-align: sub;/.test(item.css[0])
+                ourLineNo = currentLine + 0.3
+              else if item.css? and /vertical-align: super;/.test(item.css[0])
+                ourLineNo = currentLine - 0.3
+              else
+                ourLineNo = currentLine
+              lines[ourLineNo] ?= []
+              lines[ourLineNo].push rendering
+              lastRendering = lines[currentLine]?[lines[currentLine]?.length-1]
+              rendering.positioned = currentLine != ourLineNo and lines[currentLine]?.length > 0
+              content = item.text[0].replace(/\s+/g, " ")
+              if content == " "
+                rendering.charWidth = 0
+              else
+                rendering.charWidth = content.length
+              rendering.line = ourLineNo
+              rendering.afterLayout = ->
+                if lastRendering?
+                  myOffset = rendering.$el.offset()
+                  middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()/2
+                  myMiddle = myOffset.left + rendering.$el.outerWidth()/2
+                  neededSpace = middle - myMiddle
+                  # now we need to make sure we aren't overlapping with other text - if so, move to the right
+                  prevSibling = rendering.$el.prev()
+                  if prevSibling? and prevSibling.size() > 0
+                    prevOffset = prevSibling.offset()
+                    #if Math.abs(prevOffset.top - myOffset.top) < 5
+                    spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left 
+                    if spacing > neededSpace
+                      neededSpace = spacing
+                  if neededSpace >= 0
+                    rendering.$el.css
+                      'position': 'relative'
+                      'left': (neededSpace) + "px"
+    
+    
+              rendering.remove = ->
+                el.remove()
+                lines[rendering.line] = (r for r in lines[rendering.line] when r != rendering)
+                adjustHeight()
+    
+              rendering.update = (item) ->
+                el.text item.text[0]
+                adjustHeight()
+    
+              rendering
+    
+            # Todo: add method to MITHgrid presentations to retrieve lens for a particular key
+            #       that will let us eliminate the lenses variable and addLens redefinition here
+            lenses = {}
+    
+            that.addLens = (key, lens) ->
+              lenses[key] = lens
+    
+            that.getLens = (id) ->
+              item = that.dataView.getItem id
+              types = []
+              for t in item.type
+                if $.isArray(t)
+                  types = types.concat t
+                else
+                  types.push t
+    
+              if 'AdditionAnnotation' in types
+                return { render: lenses['AdditionAnnotation'] }
+    
+              for t in types
+                if t != 'LineAnnotation' and lenses[t]?
+                  return { render: lenses[t] }
+              return { render: lenses['LineAnnotation'] }
+    
+            that.hasLens = (k) -> lenses[k]?
+    
     
             #
             # We expect an HTML container for this to which we can append
@@ -339,34 +491,18 @@
             # item ordering into the basic MITHgrid presentation code. Then, we
             # can set 
             #
-            that.addLens 'AdditionAnnotation', annoLens
+            that.addLens 'AdditionAnnotation', additionLens
             that.addLens 'DeletionAnnotation', annoLens
             that.addLens 'SearchAnnotation', annoLens
             that.addLens 'LineAnnotation', annoLens
-            that.addLens 'Text', annoLens
+            that.addLens 'Text', -> #annoLens
     
             #
             # Line breaks are different. We just want to add an explicit
             # break without any classes or styling.
             #
             that.addLens 'LineBreak', (container, view, model, id) ->
-              rendering = {}
-              el = $("<br/>")
-              rendering.$el = el
-              $(container).append(el)
-    
-              # Also, at this point, create a new line container
-              $(container).append $("<span class='SGAline'/>")
-    
-              adjustHeight()
-    
-              rendering.remove = -> 
-                el.remove()
-                adjustHeight()
-    
-              rendering.update = (item) ->
-    
-              rendering
+              currentLine += 1
     
       #
       # ## Presentation.Zone
@@ -896,9 +1032,6 @@
     
             setSizeAttrs = ->
               SVG (svgRoot) ->
-                #svgRootEl.attr
-                #  width: canvasWidth/10
-                #  height: canvasHeight/10
     
                 svg = $(svgRoot.root())
                 vb = svg.get(0).getAttribute("viewBox")
@@ -914,13 +1047,10 @@
                   "background-color": "#ffffff"
     
             that.events.onHeightChange.addListener (h) ->
-              #canvasHeight = h
               SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
     
               if "Text" in options.types and h/10 > SVGHeight
                 SVGHeight = h / 10
-              #if SVGHeight < canvasHeight/10
-              #  SVGHeight = canvasHeight/10
               setSizeAttrs()
     
             #
