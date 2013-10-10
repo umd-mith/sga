@@ -311,7 +311,7 @@
           "title": data.label,
           "meta": data.metadata
         });
-        _this.wlv.render("body");
+        _this.wlv.render("#ranges_wrapper");
         _this.rl = new SGAranges.RangeList();
         _this.rlv = new SGAranges.RangeListView({
           collection: _this.rl
@@ -408,7 +408,7 @@
           "title": data.label,
           "meta": data.metadata
         });
-        _this.wlv.render("body");
+        _this.wlv.render("#ranges_wrapper");
         _this.cl = new SGAranges.CanvasList();
         _this.clv = new SGAranges.CanvasListView({
           collection: _this.cl
@@ -458,7 +458,7 @@
   })(jQuery, window.SGAranges, _, Backbone);
 
   (function($) {
-    return SGAranges.LoadCanvasesOnly("Manifest.jsonld");
+    return SGAranges.LoadCanvasesOnly("/manifests/Manifest.jsonld");
   })(jQuery);
 
 }).call(this);
