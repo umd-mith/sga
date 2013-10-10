@@ -212,7 +212,7 @@
         view = new SGAsearch.FacetView({
           model: model
         });
-        $(this.target).append(view.render().$el);
+        $(this.target).find('.list-group').append(view.render().$el);
         return this.bindFacetControls(view, o);
       };
 
@@ -394,7 +394,8 @@
         if (current > 1) {
           first = "";
           prev = "";
-        } else if (current < pages) {
+        }
+        if (current < pages) {
           next = "";
           last = "";
         }
@@ -480,7 +481,7 @@
           _this.srlv.collection.add(sr);
           r.num = (res.results.indexOf(r) + 1) + page * 20;
           r.id = r.id.substr(r.id.length - 4);
-          r.imageURL = "http://sga.mith.org:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://sga.mith.org/images/jp2/" + r.shelfmark + "-" + r.id + ".jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1&svc.region=0,0,100,75";
+          r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=" + r.shelfmark + "-" + r.id + ".jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75";
           r.detailQuery = "s=f:" + fields + "|q:" + query;
           sr.set(r);
         }
@@ -577,6 +578,7 @@
         _this.r_flv.render($(facets).find('#r-list-rev'), srcOptions);
         bindPagination(res.numFound);
         bindSort();
+        setHistory();
         return setHistory();
       };
       return $.ajax({
