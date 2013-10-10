@@ -159,7 +159,7 @@ window.SGAranges = {}
         "title"  : data.label
         "meta"   : data.metadata
 
-      @wlv.render "body"
+      @wlv.render "#ranges_wrapper"
     
       @rl = new SGAranges.RangeList()
       @rlv = new SGAranges.RangeListView collection: @rl
@@ -249,7 +249,7 @@ window.SGAranges = {}
         "title"  : data.label
         "meta"   : data.metadata
 
-      @wlv.render "body"
+      @wlv.render "#ranges_wrapper"
 
       @cl = new SGAranges.CanvasList()
       @clv = new SGAranges.CanvasListView collection: @cl  
