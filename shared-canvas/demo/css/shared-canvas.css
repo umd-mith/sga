@@ -22,3 +22,20 @@ svg body {
 .text-content .SearchAnnotation {
   background-color: Yellow;
 }
+
+.text-content .LineAnnotation {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.text-content .above-line {
+  padding-top: 4px;
+  padding-bottom: -2px;
+  font-size: smaller;
+}
+
+.text-content .below-line {
+  padding-bottom: 4px;
+  padding-top: -2px;
+  font-size: smaller;
+}
