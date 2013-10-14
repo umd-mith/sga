@@ -77,7 +77,9 @@
                 <div id="main-menu-inside">
                     <!--#menu-->
                     <div id="menu" class="clearfix">
-                        <?php if ($page['navigation']) :?>
+                    <h3 class="menu-toggle">Menu</h3>
+                    <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<?php if ($page['navigation']) : ?>
                         <?php print drupal_render($page['navigation']); ?>
                         <?php else :
                         if (module_exists('i18n_menu')) {

@@ -362,12 +362,23 @@
               renderingTimer = setTimeout that.selfRender, 0
     
             annoLens = (container, view, model, id) ->
+    
+              # Find the last line element in the container, append anno to the line
+              lines = $(container).find('.SGAline')
+              latestline = lines.get(lines.length-1)
+    
               rendering = {}
               el = $("<span></span>")
               rendering.$el = el
               item = model.getItem id
               el.text item.text[0]
-              el.addClass item.type.join(" ")
+              types = item.type.join(" ")
+              el.addClass types
+    
+              # Add interlinear class to line if there's an addition
+              if types.indexOf("AdditionAnnotation") >= 0
+                $(latestline).addClass "interlinear"
+    
               if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
               
               
@@ -1757,9 +1768,7 @@
             $c.find('#hand-view_0').change ->
               if $(this).is(':checked')  
                 $('#LimitViewControls_classes').remove()    
-
     # # Controllers
-
     # # Core Utilities
 
     # # Application
