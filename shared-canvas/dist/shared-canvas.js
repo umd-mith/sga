@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 10 11:04:01 2013 -0400
+# Date: Mon Oct 14 11:33:19 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -263,6 +263,9 @@
               that.getRanges = function() {
                 return itemsWithType('scRange');
               };
+              that.getLayers = function() {
+                return itemsWithType('scLayer');
+              };
               that.getAnnotationsForCanvas = itemsForCanvas;
               that.flushSearchResults = flushSearchResults;
               that.getSearchResultCanvases = getSearchResultCanvases;
@@ -287,6 +290,7 @@
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHgrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.TextContent"].concat(__slice.call(args), [function(that, container) {
               var additionLens, adjustHeight, annoLens, currentLine, heightSettingTimer, lenses, lines, options, renderingTimer;
+
               options = that.options;
               that.setHeight(0);
               that.events.onWidthChange.addListener(function(w) {
@@ -326,10 +330,12 @@
               };
               that.finishDisplayUpdate = function() {
                 var afterLayout, currentLineEl, currentPos, i, lineNo, lineNoFraq, r, runAfterLayout, _fn, _i, _j, _len, _len1, _ref, _ref1;
+
                 $(container).empty();
                 afterLayout = [];
                 _ref = ((function() {
                   var _results;
+
                   _results = [];
                   for (i in lines) {
                     _results.push(i);
@@ -392,17 +398,14 @@
                 return renderingTimer = setTimeout(that.selfRender, 0);
               };
               annoLens = function(container, view, model, id) {
-                var content, el, item, rendering;
+                var content, el, item, rendering, _ref;
+
                 rendering = {};
                 el = $("<span></span>");
                 rendering.$el = el;
                 item = model.getItem(id);
                 el.text(item.text[0]);
-                types = item.type.join(" ");
-                el.addClass(types);
-                if (types.indexOf("AdditionAnnotation") >= 0) {
-                  $(latestline).addClass("interlinear");
-                }
+                el.addClass(item.type.join(" "));
                 if ((item.css != null) && !/^\s*$/.test(item.css)) {
                   el.attr("style", item.css[0]);
                 }
@@ -415,7 +418,7 @@
                 if (rendering.charWidth === 0) {
                   return null;
                 }
-                if (lines[currentLine] == null) {
+                if ((_ref = lines[currentLine]) == null) {
                   lines[currentLine] = [];
                 }
                 lines[currentLine].push(rendering);
@@ -424,13 +427,15 @@
                 rendering.afterLayout = function() {};
                 rendering.remove = function() {
                   var r;
+
                   el.remove();
                   lines[rendering.line] = (function() {
-                    var _i, _len, _ref, _results;
-                    _ref = lines[rendering.line];
+                    var _i, _len, _ref1, _results;
+
+                    _ref1 = lines[rendering.line];
                     _results = [];
-                    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-                      r = _ref[_i];
+                    for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+                      r = _ref1[_i];
                       if (r !== rendering) {
                         _results.push(r);
                       }
@@ -446,7 +451,8 @@
                 return rendering;
               };
               additionLens = function(container, view, model, id) {
-                var content, el, item, lastRendering, ourLineNo, rendering, _ref, _ref1, _ref2;
+                var content, el, item, lastRendering, ourLineNo, rendering, _ref, _ref1, _ref2, _ref3;
+
                 rendering = {};
                 el = $("<span></span>");
                 rendering.$el = el;
@@ -460,12 +466,12 @@
                 } else {
                   ourLineNo = currentLine;
                 }
-                if (lines[ourLineNo] == null) {
+                if ((_ref = lines[ourLineNo]) == null) {
                   lines[ourLineNo] = [];
                 }
                 lines[ourLineNo].push(rendering);
-                lastRendering = (_ref = lines[currentLine]) != null ? _ref[((_ref1 = lines[currentLine]) != null ? _ref1.length : void 0) - 1] : void 0;
-                rendering.positioned = currentLine !== ourLineNo && ((_ref2 = lines[currentLine]) != null ? _ref2.length : void 0) > 0;
+                lastRendering = (_ref1 = lines[currentLine]) != null ? _ref1[((_ref2 = lines[currentLine]) != null ? _ref2.length : void 0) - 1] : void 0;
+                rendering.positioned = currentLine !== ourLineNo && ((_ref3 = lines[currentLine]) != null ? _ref3.length : void 0) > 0;
                 content = item.text[0].replace(/\s+/g, " ");
                 if (content === " ") {
                   rendering.charWidth = 0;
@@ -475,6 +481,7 @@
                 rendering.line = ourLineNo;
                 rendering.afterLayout = function() {
                   var middle, myMiddle, myOffset, neededSpace, prevOffset, prevSibling, spacing;
+
                   if (lastRendering != null) {
                     myOffset = rendering.$el.offset();
                     middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth() / 2;
@@ -505,13 +512,15 @@
                 };
                 rendering.remove = function() {
                   var r;
+
                   el.remove();
                   lines[rendering.line] = (function() {
-                    var _i, _len, _ref3, _results;
-                    _ref3 = lines[rendering.line];
+                    var _i, _len, _ref4, _results;
+
+                    _ref4 = lines[rendering.line];
                     _results = [];
-                    for (_i = 0, _len = _ref3.length; _i < _len; _i++) {
-                      r = _ref3[_i];
+                    for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
+                      r = _ref4[_i];
                       if (r !== rendering) {
                         _results.push(r);
                       }
@@ -532,6 +541,7 @@
               };
               that.getLens = function(id) {
                 var item, t, types, _i, _j, _len, _len1, _ref;
+
                 item = that.dataView.getItem(id);
                 types = [];
                 _ref = item.type;
@@ -1357,6 +1367,9 @@
               that.getRanges = function() {
                 return itemsWithType('scRange');
               };
+              that.getLayers = function() {
+                return itemsWithType('scLayer');
+              };
               that.getAnnotationsForCanvas = itemsForCanvas;
               that.flushSearchResults = flushSearchResults;
               that.getSearchResultCanvases = getSearchResultCanvases;
@@ -1744,19 +1757,111 @@
             }]));
           };
         });
+        Component.namespace("ReadingTxt", function(ReadingTxt) {
+          return ReadingTxt.initInstance = function() {
+            var args;
+
+            args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+            return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.ReadingTxt"].concat(__slice.call(args), [function(that, container) {
+              var canvas, get, hide, layerAnnos, show, text;
+
+              canvas = null;
+              text = null;
+              layerAnnos = [];
+              get = function() {
+                var a, data, las, layerA, _i, _len, _ref, _results;
+
+                data = that.options.dataView;
+                las = MITHgrid.Data.Set.initInstance(['LayerAnno']);
+                _ref = data.getSubjectsUnion(las, "type").items();
+                _results = [];
+                for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                  layerA = _ref[_i];
+                  a = data.getItem(layerA);
+                  _results.push(layerAnnos.push(a));
+                }
+                return _results;
+              };
+              show = function() {
+                $(container).html(text);
+                return $(container).show();
+              };
+              hide = function() {
+                return $(container).hide();
+              };
+              that.options.dataView.events.onAfterLoading.addListener(function(d) {
+                return get();
+              });
+              that.options.pagerEvt.addListener(function(c) {
+                var a, _i, _len, _results;
+
+                canvas = c;
+                $(container).height($('.canvas').height());
+                _results = [];
+                for (_i = 0, _len = layerAnnos.length; _i < _len; _i++) {
+                  a = layerAnnos[_i];
+                  if (a.motivation[0] === "http://www.shelleygodwinarchive.org/ns1#reading" && a.canvas[0] === canvas) {
+                    _results.push($.get(a.body, function(data) {
+                      var d, e, _j, _len1, _results1;
+
+                      d = $.parseHTML(data);
+                      _results1 = [];
+                      for (_j = 0, _len1 = d.length; _j < _len1; _j++) {
+                        e = d[_j];
+                        if ($(e).is('div')) {
+                          text = e;
+                          if (that.options.getMode() === 'reading') {
+                            _results1.push($(container).html(text));
+                          } else {
+                            _results1.push(void 0);
+                          }
+                        } else {
+                          _results1.push(void 0);
+                        }
+                      }
+                      return _results1;
+                    }));
+                  } else {
+                    _results.push(void 0);
+                  }
+                }
+                return _results;
+              });
+              return that.options.onModeChange.addListener(function(m) {
+                if (m === 'reading') {
+                  return show();
+                } else if (m === 'normal') {
+                  return hide();
+                }
+              });
+            }]));
+          };
+        });
         Component.namespace("ModeControls", function(ModeControls) {
           return ModeControls.initInstance = function() {
             var args;
 
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.ModeControls"].concat(__slice.call(args), [function(that, container) {
-              var imgOnly, std, stored_txt_canvas, text, xml;
+              var imgOnly, options, rdg, restoreBoth, std, stored_txt_canvas, xml;
 
+              options = that.options;
               imgOnly = $(container).find("#img-only");
-              text = $(container).find("#mode-rdg");
+              rdg = $(container).find("#mode-rdg");
               xml = $(container).find("#mode-xml");
               std = $(container).find("#mode-std");
               stored_txt_canvas = null;
+              restoreBoth = function() {
+                var c, img_parent;
+
+                img_parent = $('*[data-types=Image]').parent();
+                c = /col-lg-(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
+                img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2;
+                stored_txt_canvas.insertAfter(img_parent);
+                $('*[data-types=Image]').trigger('resetPres');
+                stored_txt_canvas = null;
+                return that.setMode('normal');
+              };
               $(imgOnly).click(function(e) {
                 var c;
 
@@ -1770,17 +1875,23 @@
                   return that.setMode('imgOnly');
                 }
               });
-              return $(std).click(function(e) {
-                var c, img_parent;
-
+              $(rdg).click(function(e) {
                 e.preventDefault();
-                if (!$(std).hasClass('active') && (stored_txt_canvas != null)) {
-                  img_parent = $('*[data-types=Image]').parent();
-                  c = /col-lg-(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
-                  img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2;
-                  stored_txt_canvas.insertAfter(img_parent);
-                  return $('*[data-types=Image]').trigger('resetPres');
+                if (!$(rdg).hasClass('active')) {
+                  $('*[data-types=Text]').hide();
+                  that.setMode('reading');
                 }
+                if (stored_txt_canvas != null) {
+                  return restoreBoth();
+                }
+              });
+              return $(std).click(function(e) {
+                e.preventDefault();
+                if (stored_txt_canvas != null) {
+                  restoreBoth();
+                }
+                $('*[data-types=Text]').show();
+                return that.setMode('normal');
               });
             }]));
           };
@@ -2241,7 +2352,7 @@
               };
               if (options.url != null) {
                 manifestData.importFromURL(options.url, function() {
-                  var canvases, items, ranges, seq, syncer, zones;
+                  var canvases, items, layers, ranges, seq, syncer, zones;
 
                   items = [];
                   syncer = MITHgrid.initSynchronizer();
@@ -2316,6 +2427,48 @@
                     while (ritem.id != null) {
                       contents.push(ritem.rdffirst[0]);
                       ritem = manifestData.getItem(ritem.rdfrest[0]);
+                    }
+                    item.canvases = contents;
+                    return items.push(item);
+                  });
+                  layers = manifestData.getLayers();
+                  that.addItemsToProcess(layers.length);
+                  syncer.process(layers, function(id) {
+                    var a, aitem, annos, aritem, c, contents, item, ritem, _i, _len, _ref;
+
+                    that.addItemsProcessed(1);
+                    ritem = manifestData.getItem(id);
+                    item = {
+                      id: id,
+                      type: 'Layer',
+                      label: ritem.rdfslabel,
+                      motivation: (_ref = ritem.scforMotivation) != null ? _ref[0] : void 0
+                    };
+                    contents = [];
+                    contents.push(ritem.rdffirst[0]);
+                    ritem = manifestData.getItem(ritem.rdfrest[0]);
+                    while (ritem.id != null) {
+                      contents.push(ritem.rdffirst[0]);
+                      ritem = manifestData.getItem(ritem.rdfrest[0]);
+                    }
+                    if (item.motivation === "http://www.shelleygodwinarchive.org/ns1#reading") {
+                      annos = [];
+                      for (_i = 0, _len = contents.length; _i < _len; _i++) {
+                        c = contents[_i];
+                        ritem = manifestData.getItem(c);
+                        a = manifestData.getItem(ritem.rdffirst[0]);
+                        annos.push(a.id);
+                        aritem = manifestData.getItem(a.id[0]);
+                        aitem = {
+                          id: aritem.id[0],
+                          type: 'LayerAnno',
+                          motivation: item.motivation,
+                          body: aritem.oahasBody[0],
+                          canvas: a.oahasTarget[0]
+                        };
+                        items.push(aitem);
+                      }
+                      item.annotations = annos;
                     }
                     item.canvases = contents;
                     return items.push(item);
@@ -2817,7 +2970,8 @@
   MITHgrid.defaults('SGA.Reader.Component.ModeControls', {
     variables: {
       Mode: {
-        is: 'rw'
+        is: 'rw',
+        "default": 'normal'
       }
     }
   });

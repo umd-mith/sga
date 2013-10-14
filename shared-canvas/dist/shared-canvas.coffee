@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 10 11:04:01 2013 -0400
+# Date: Mon Oct 14 11:33:19 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -241,6 +241,7 @@
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
             that.getRanges      = -> itemsWithType 'scRange'
+            that.getLayers      = -> itemsWithType 'scLayer'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
             that.getSearchResultCanvases = getSearchResultCanvases
@@ -362,23 +363,12 @@
               renderingTimer = setTimeout that.selfRender, 0
     
             annoLens = (container, view, model, id) ->
-    
-              # Find the last line element in the container, append anno to the line
-              lines = $(container).find('.SGAline')
-              latestline = lines.get(lines.length-1)
-    
               rendering = {}
               el = $("<span></span>")
               rendering.$el = el
               item = model.getItem id
               el.text item.text[0]
-              types = item.type.join(" ")
-              el.addClass types
-    
-              # Add interlinear class to line if there's an addition
-              if types.indexOf("AdditionAnnotation") >= 0
-                $(latestline).addClass "interlinear"
-    
+              el.addClass item.type.join(" ")
               if item.css? and not /^\s*$/.test(item.css) then el.attr "style", item.css[0]
               
               
@@ -1344,6 +1334,7 @@
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
             that.getRanges      = -> itemsWithType 'scRange'
+            that.getLayers      = -> itemsWithType 'scLayer'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
             that.getSearchResultCanvases = getSearchResultCanvases
@@ -1690,16 +1681,82 @@
                 that.setQuery "f="+fields+"&q="+val
               false
     
+      Component.namespace "ReadingTxt", (ReadingTxt) ->
+        ReadingTxt.initInstance = (args...) ->
+          MITHgrid.initInstance "SGA.Reader.Component.ReadingTxt", args..., (that, container) ->
+    
+            canvas = null
+            text = null
+            layerAnnos = []
+    
+            get = ->
+              data = that.options.dataView
+              las = MITHgrid.Data.Set.initInstance ['LayerAnno']
+    
+              for layerA in data.getSubjectsUnion(las, "type").items()
+                a = data.getItem layerA
+                layerAnnos.push a                
+    
+            show = ->
+              # make container visible                    
+                $(container).html text
+                $(container).show()
+    
+            hide = ->
+              # make container invisible
+              $(container).hide()
+    
+    
+            that.options.dataView.events.onAfterLoading.addListener (d) ->
+              get()
+    
+            that.options.pagerEvt.addListener (c) ->
+              canvas = c
+              $(container).height $('.canvas').height()
+    
+              for a in layerAnnos
+                if a.motivation[0] == "http://www.shelleygodwinarchive.org/ns1#reading" and a.canvas[0] == canvas
+                  $.get a.body, ( data ) ->    
+                    d = $.parseHTML data
+                    for e in d
+                      if $(e).is('div')
+                        text = e
+                        if that.options.getMode() == 'reading'
+                          $(container).html text               
+    
+            that.options.onModeChange.addListener (m) ->
+              if m == 'reading'
+                show()
+    
+              else if m == 'normal'
+                hide()
+                
       Component.namespace "ModeControls", (ModeControls) ->
         ModeControls.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
+            options = that.options
     
             imgOnly = $(container).find("#img-only")
-            text = $(container).find("#mode-rdg")
+            rdg = $(container).find("#mode-rdg")
             xml = $(container).find("#mode-xml")
             std = $(container).find("#mode-std")
     
             stored_txt_canvas = null
+    
+            restoreBoth = ->
+              img_parent = $('*[data-types=Image]').parent()
+    
+              # Half the bootstrap column
+              c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+              img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+    
+              stored_txt_canvas.insertAfter(img_parent)
+    
+              $('*[data-types=Image]').trigger('resetPres')
+    
+              stored_txt_canvas = null
+    
+              that.setMode('normal')
     
             $(imgOnly).click (e) ->
               e.preventDefault()
@@ -1715,20 +1772,24 @@
                 $('*[data-types=Image]').trigger('resetPres')
                 that.setMode('imgOnly')
     
+            $(rdg).click (e) ->
+              e.preventDefault()
+    
+              if !$(rdg).hasClass('active')
+                $('*[data-types=Text]').hide()
+                that.setMode('reading')
+    
+              if stored_txt_canvas?            
+                restoreBoth()
+    
             $(std).click (e) ->
               e.preventDefault()
     
-              if !$(std).hasClass('active') and stored_txt_canvas?
-                
-                img_parent = $('*[data-types=Image]').parent()
+              if stored_txt_canvas?
+                restoreBoth()
+              $('*[data-types=Text]').show()
+              that.setMode('normal')
     
-                # Half the bootstrap column
-                c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-                img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
-    
-                stored_txt_canvas.insertAfter(img_parent)
-    
-                $('*[data-types=Image]').trigger('resetPres')
     
       Component.namespace "LimitViewControls", (LimitViewControls) ->
         LimitViewControls.initInstance = (args...) ->
@@ -2261,6 +2322,47 @@
                   item.canvases = contents
                   items.push item
     
+                layers = manifestData.getLayers()
+                that.addItemsToProcess layers.length
+                syncer.process layers, (id) ->
+                  that.addItemsProcessed 1
+                  ritem = manifestData.getItem id
+                  item =
+                    id: id
+                    type: 'Layer'
+                    label: ritem.rdfslabel
+                    motivation: ritem.scforMotivation?[0]
+    
+                  contents = []
+                  contents.push ritem.rdffirst[0]
+                  ritem = manifestData.getItem ritem.rdfrest[0]
+                  while ritem.id?
+                    contents.push ritem.rdffirst[0]
+                    ritem = manifestData.getItem ritem.rdfrest[0]
+    
+                  if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading"
+                    annos = []
+                    
+                    for c in contents
+                      ritem = manifestData.getItem c                  
+                      a = manifestData.getItem ritem.rdffirst[0]
+                      annos.push a.id
+    
+                      aritem = manifestData.getItem a.id[0]
+                      aitem =
+                        id: aritem.id[0]
+                        type: 'LayerAnno'
+                        motivation: item.motivation
+                        body: aritem.oahasBody[0]
+                        canvas: a.oahasTarget[0]
+    
+                      items.push aitem
+    
+                    item.annotations = annos
+    
+                  item.canvases = contents
+                  items.push item
+    
                 syncer.done ->
                   that.dataStore.data.loadItems items
     
@@ -2636,4 +2738,4 @@ MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
 
 MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
   variables:
-    Mode: { is: 'rw' }
+    Mode: { is: 'rw', default: 'normal' }
