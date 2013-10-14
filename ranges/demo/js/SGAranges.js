@@ -291,12 +291,47 @@
       return CanvasView;
 
     })(Backbone.View);
-    SGAranges.LoadRanges = function(manifest) {
-      var processManifest,
+    return SGAranges.LoadRanges = function(manifest, flat) {
+      var processCanvas, processManifest,
         _this = this;
 
+      if (flat == null) {
+        flat = false;
+      }
+      processCanvas = function(canv, data) {
+        var c, c_id, c_pos, canvas, canvas_safe_id, i, i_url, img_url, resolver, sc_url, _i, _len, _ref12;
+
+        canvas = canv["@id"];
+        c = new SGAranges.Canvas();
+        _this.clv.collection.add(c);
+        c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1;
+        sc_url = data.service["@id"];
+        img_url = "";
+        _ref12 = data.images;
+        for (_i = 0, _len = _ref12.length; _i < _len; _i++) {
+          i = _ref12[_i];
+          if (i.on === canvas) {
+            i_url = i.resource["@id"];
+            resolver = i.resource.service["@id"];
+            img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1";
+          }
+        }
+        c_id = canv["@id"];
+        canvas_safe_id = c_id.replace(/[:\/\.]/g, "_");
+        return c.set({
+          "id": canvas_safe_id,
+          "label": canv.label,
+          "position": c_pos,
+          "scUrl": sc_url,
+          "imgUrl": img_url,
+          "status": {
+            t: "red",
+            m: "red"
+          }
+        });
+      };
       processManifest = function(data) {
-        var c, c_id, c_pos, canv, canvas, canvas_safe_id, i, i_url, img_url, r, range_safe_id, resolver, s_id, sc_url, struct, w, w_id, work_safe_id, _i, _j, _k, _l, _len, _len1, _len2, _len3, _len4, _m, _ref12, _ref13, _ref14, _ref15, _ref16, _results;
+        var canv, canvas, r, range_safe_id, s_id, struct, w, w_id, work_safe_id, _i, _j, _k, _l, _len, _len1, _len2, _len3, _len4, _m, _ref12, _ref13, _ref14, _ref15, _ref16, _results;
 
         _this.wl = new SGAranges.WorkList();
         _this.wlv = new SGAranges.WorkListView({
@@ -328,124 +363,47 @@
             "label": struct.label
           });
         }
-        _this.rlv.render('#' + work_safe_id + ' .panel-body');
-        _ref13 = data.structures;
-        _results = [];
-        for (_j = 0, _len1 = _ref13.length; _j < _len1; _j++) {
-          struct = _ref13[_j];
+        if (!flat) {
+          _this.rlv.render('#' + work_safe_id + ' .panel-body');
+        }
+        if (flat) {
           _this.cl = new SGAranges.CanvasList();
           _this.clv = new SGAranges.CanvasListView({
             collection: _this.cl
           });
-          s_id = struct["@id"];
-          range_safe_id = s_id.replace(/[:\/\.]/g, "_");
-          _ref14 = struct.canvases;
+          _ref13 = data.canvases;
+          for (_j = 0, _len1 = _ref13.length; _j < _len1; _j++) {
+            canv = _ref13[_j];
+            processCanvas(canv, data);
+          }
+          return _this.clv.render('#' + work_safe_id + ' .panel-body');
+        } else {
+          console.log('h');
+          _ref14 = data.structures;
+          _results = [];
           for (_k = 0, _len2 = _ref14.length; _k < _len2; _k++) {
-            canvas = _ref14[_k];
-            _ref15 = data.canvases;
+            struct = _ref14[_k];
+            _this.cl = new SGAranges.CanvasList();
+            _this.clv = new SGAranges.CanvasListView({
+              collection: _this.cl
+            });
+            s_id = struct["@id"];
+            range_safe_id = s_id.replace(/[:\/\.]/g, "_");
+            _ref15 = struct.canvases;
             for (_l = 0, _len3 = _ref15.length; _l < _len3; _l++) {
-              canv = _ref15[_l];
-              if (canv["@id"] === canvas) {
-                c = new SGAranges.Canvas();
-                _this.clv.collection.add(c);
-                c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1;
-                sc_url = "/sc/" + work_safe_id;
-                img_url = "";
-                _ref16 = data.images;
-                for (_m = 0, _len4 = _ref16.length; _m < _len4; _m++) {
-                  i = _ref16[_m];
-                  if (i.on === canvas) {
-                    i_url = i.resource["@id"];
-                    resolver = i.resource.service["@id"];
-                    img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1";
-                  }
+              canvas = _ref15[_l];
+              _ref16 = data.canvases;
+              for (_m = 0, _len4 = _ref16.length; _m < _len4; _m++) {
+                canv = _ref16[_m];
+                if (canv["@id"] === canvas) {
+                  processCanvas(canv, data);
                 }
-                c_id = canv["@id"];
-                canvas_safe_id = c_id.replace(/[:\/\.]/g, "_");
-                c.set({
-                  "id": canvas_safe_id,
-                  "label": canv.label,
-                  "position": c_pos,
-                  "scUrl": sc_url,
-                  "imgUrl": img_url,
-                  "status": {
-                    t: "red",
-                    m: "red"
-                  }
-                });
               }
             }
+            _results.push(_this.clv.render('#' + range_safe_id + ' .row'));
           }
-          _results.push(_this.clv.render('#' + range_safe_id + ' .row'));
+          return _results;
         }
-        return _results;
-      };
-      return $.ajax({
-        url: manifest,
-        type: 'GET',
-        dataType: 'json',
-        processData: false,
-        success: processManifest
-      });
-    };
-    return SGAranges.LoadCanvasesOnly = function(manifest) {
-      var processManifest,
-        _this = this;
-
-      processManifest = function(data) {
-        var c, c_id, c_pos, canv, canvas, canvas_safe_id, i, i_url, img_url, resolver, sc_url, w, w_id, work_safe_id, _i, _j, _len, _len1, _ref12, _ref13;
-
-        _this.wl = new SGAranges.WorkList();
-        _this.wlv = new SGAranges.WorkListView({
-          collection: _this.wl
-        });
-        w = new SGAranges.Work();
-        _this.wlv.collection.add(w);
-        w_id = data["@id"];
-        work_safe_id = w_id.replace(/[:\/\.]/g, "_");
-        w.set({
-          "id": work_safe_id,
-          "title": data.label,
-          "meta": data.metadata
-        });
-        _this.wlv.render("#ranges_wrapper");
-        _this.cl = new SGAranges.CanvasList();
-        _this.clv = new SGAranges.CanvasListView({
-          collection: _this.cl
-        });
-        _ref12 = data.canvases;
-        for (_i = 0, _len = _ref12.length; _i < _len; _i++) {
-          canv = _ref12[_i];
-          canvas = canv["@id"];
-          c = new SGAranges.Canvas();
-          _this.clv.collection.add(c);
-          c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1;
-          sc_url = "/sc/" + work_safe_id;
-          img_url = "";
-          _ref13 = data.images;
-          for (_j = 0, _len1 = _ref13.length; _j < _len1; _j++) {
-            i = _ref13[_j];
-            if (i.on === canvas) {
-              i_url = i.resource["@id"];
-              resolver = i.resource.service["@id"];
-              img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1";
-            }
-          }
-          c_id = canv["@id"];
-          canvas_safe_id = c_id.replace(/[:\/\.]/g, "_");
-          c.set({
-            "id": canvas_safe_id,
-            "label": canv.label,
-            "position": c_pos,
-            "scUrl": sc_url,
-            "imgUrl": img_url,
-            "status": {
-              t: "red",
-              m: "red"
-            }
-          });
-        }
-        return _this.clv.render('#' + work_safe_id + ' .panel-body');
       };
       return $.ajax({
         url: manifest,
@@ -458,7 +416,7 @@
   })(jQuery, window.SGAranges, _, Backbone);
 
   (function($) {
-    return SGAranges.LoadCanvasesOnly("/manifests/Manifest.jsonld");
+    return SGAranges.LoadRanges("Manifest.jsonld", true);
   })(jQuery);
 
 }).call(this);
