@@ -231,6 +231,7 @@
     </div>
     <div class="col-lg-5">
       <div class="canvas" data-types="Text" data-manifest="Manifest-jp2.json"></div>
+      <div id="readingTxt"></div>
     </div>
     <div class="col-lg-2">
       <div id="page-location"></div>
@@ -277,104 +278,6 @@
   </div>
 </div>
 <!-- /detail-view-meta -->
-<script type="text/javascript">
-  $(function() {
-
-    var builder = SGA.Reader.Application.SharedCanvas.builder({
-      spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
-      searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://localhost:5000/annotate?")
-    });
-
-    if($.fn.popover != null) {
-      $("#metadata").popover({
-        title: "About this Manifest",
-        content: function() {
-          return "<p>We'll build up a list of items from the manifest.</p>";
-        },
-        html: true,
-        animation: true
-      });
-    }
-
-    builder.onManifest(
-      "Manifest-jp2.json"
-    , function(app) {
-      var filter, pageSlider, pager;
-
-      filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", { 
-        dataView: app.dataView.sequences
-      });
-
-      pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
-
-      pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
-
-      // modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
-
-      app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
-
-      pageSlider.events.onValueChange.addListener( app.setPosition );
-      pager.events.onValueChange.addListener( app.setPosition );
-
-      app.events.onPositionChange.addListener( function(n) {
-        app.lockPosition();
-        pageSlider.setValue(n);
-        pager.setValue(n);
-        app.unlockPosition();
-      } );
-
-      filter.events.onSequenceChange.addListener( app.setSequence );
-
-      app.events.onSequenceChange.addListener( function(s) {
-        var seq = app.dataStore.data.getItem(s);
-        if(seq != null && seq.sequence != null) {
-          pageSlider.setMin(0);
-          pager.setMin(0);
-
-          pageSlider.setMax(seq.sequence.length-1);
-          pager.setMax(seq.sequence.length-1);
-
-          if(!(app.getPosition() != null)) {
-            app.setPosition(0);
-          }
-        }
-      });
-
-      app.setSequence( filter.getSequence() );
-
-      app.events.onCanvasChange.addListener(function(c) {
-        var item = app.dataStore.data.getItem(c),
-            meta = app.getCanvasMetadata(c);
-
-        if(item.label !== undefined) {
-          $("#canvas-label").text(item.label[0]);
-        }
-        else {
-          $("#canvas-label").text("(no label)");
-        }
-        if(meta.workTitle !== undefined) {
-          $("#sc-work-title").text(meta.workTitle);
-        }
-        else {
-          $("#sc-work-title").text("");
-        }
-        if(meta.rangeTitle !== undefined) {
-          $("#sc-range-title").text(meta.rangeTitle.join("; "));
-        }
-        else {
-          $("#sc-range-title").text("");
-        }
-        if(meta.canvasTitle !== undefined) {
-          $("#sc-canvas-title").text(meta.canvasTitle);
-        }
-        else {
-          $("#sc-canvas-title").text("");
-        }
-      });
-
-    });
-  });
-</script>
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>-->
 <script src="js/plugins.js"></script>
