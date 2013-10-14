@@ -141,7 +141,40 @@ window.SGAranges = {}
       @$el.remove()
       @
 
-  SGAranges.LoadRanges = (manifest) ->
+  # Set "flat" to true to skip subdivisions of thumbnails
+  SGAranges.LoadRanges = (manifest, flat=false) ->
+
+    processCanvas = (canv, data) =>
+      canvas = canv["@id"]
+      c = new SGAranges.Canvas()
+      @clv.collection.add c
+
+      # This might need to change when/if we'll have more than one sequence 
+      # We only need to address the "canonical" sequence here, which we're assuming
+      # is in first position.
+      c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1
+
+      sc_url = data.service["@id"]
+
+      img_url = ""
+
+      for i in data.images
+        if i.on == canvas
+          i_url = i.resource["@id"]                  
+          resolver = i.resource.service["@id"]
+
+          img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
+
+      c_id = canv["@id"]
+      canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
+
+      c.set
+        "id"       : canvas_safe_id
+        "label"    : canv.label
+        "position" : c_pos
+        "scUrl"    : sc_url
+        "imgUrl"   : img_url
+        "status"   : {t: "red", m: "red"}
 
     processManifest = (data) =>
 
@@ -176,132 +209,48 @@ window.SGAranges = {}
           "id"    : range_safe_id
           "label" : struct.label              
 
-      @rlv.render '#' + work_safe_id + ' .panel-body'
+      if !flat then @rlv.render '#' + work_safe_id + ' .panel-body'
 
-      for struct in data.structures
+      if flat
 
         @cl = new SGAranges.CanvasList()
         @clv = new SGAranges.CanvasListView collection: @cl  
 
-        s_id = struct["@id"]
-        range_safe_id = s_id.replace(/[:\/\.]/g, "_")
+        for canv in data.canvases
+          processCanvas canv, data
 
-        for canvas in struct.canvases
-          for canv in data.canvases
-            if canv["@id"] == canvas
-              c = new SGAranges.Canvas()
-              @clv.collection.add c
+        @clv.render '#' + work_safe_id + ' .panel-body'
 
-              # This might need to change when/if we'll have more than one sequence 
-              # We only need to address the "canonical" sequence here, which we're assuming
-              # is in first position.
-              c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1
+      else
+        console.log 'h'
+        for struct in data.structures
 
-              sc_url = "/sc/" + work_safe_id
+          @cl = new SGAranges.CanvasList()
+          @clv = new SGAranges.CanvasListView collection: @cl  
 
-              img_url = ""
+          s_id = struct["@id"]
+          range_safe_id = s_id.replace(/[:\/\.]/g, "_")
 
-              for i in data.images
-                if i.on == canvas
-                  i_url = i.resource["@id"]                  
-                  resolver = i.resource.service["@id"]
+          for canvas in struct.canvases
+            for canv in data.canvases
+              if canv["@id"] == canvas
+                processCanvas canv, data
 
-                  img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
-
-              c_id = canv["@id"]
-              canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
-
-              c.set
-                "id"       : canvas_safe_id
-                "label"    : canv.label
-                "position" : c_pos
-                "scUrl"    : sc_url
-                "imgUrl"   : img_url
-                "status"   : {t: "red", m: "red"}
-
-        @clv.render '#' + range_safe_id + ' .row'
+          @clv.render '#' + range_safe_id + ' .row'
 
     $.ajax
       url: manifest
       type: 'GET'
       dataType: 'json'
       processData: false
-      success: processManifest
-
-  #############
-  #############
-
-  SGAranges.LoadCanvasesOnly = (manifest) ->
-
-    processManifest = (data) =>
-
-      @wl = new SGAranges.WorkList()
-      @wlv = new SGAranges.WorkListView collection: @wl
-
-      w = new SGAranges.Work()
-      @wlv.collection.add w
-
-      w_id = data["@id"]
-      work_safe_id = w_id.replace(/[:\/\.]/g, "_")
-
-      w.set
-        "id"     : work_safe_id
-        "title"  : data.label
-        "meta"   : data.metadata
-
-      @wlv.render "#ranges_wrapper"
-
-      @cl = new SGAranges.CanvasList()
-      @clv = new SGAranges.CanvasListView collection: @cl  
-
-      for canv in data.canvases
-        canvas = canv["@id"]
-        c = new SGAranges.Canvas()
-        @clv.collection.add c
-
-        # This might need to change when/if we'll have more than one sequence 
-        # We only need to address the "canonical" sequence here, which we're assuming
-        # is in first position.
-        c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1
-
-        sc_url = "/sc/" + work_safe_id
-
-        img_url = ""
-
-        for i in data.images
-          if i.on == canvas
-            i_url = i.resource["@id"]                  
-            resolver = i.resource.service["@id"]
-
-            img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
-
-        c_id = canv["@id"]
-        canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
-
-        c.set
-          "id"       : canvas_safe_id
-          "label"    : canv.label
-          "position" : c_pos
-          "scUrl"    : sc_url
-          "imgUrl"   : img_url
-          "status"   : {t: "red", m: "red"}
-      @clv.render '#' + work_safe_id + ' .panel-body'
-
-    $.ajax
-      url: manifest
-      type: 'GET'
-      dataType: 'json'
-      processData: false
-      success: processManifest
+      success: processManifestnifest
 
 )(jQuery,window.SGAranges,_,Backbone)
 
 # Work it, make it, do it, makes us
 ( ($) ->
 
-  # SGAranges.LoadCanvasesOnly "ranges-sample.json"
-  # SGAranges.LoadRanges "ranges-sample.json"
-  SGAranges.LoadCanvasesOnly "Manifest.jsonld"
+  SGAranges.LoadRanges "Manifest.jsonld", true
   # SGAranges.LoadRanges "Manifest.jsonld"
 
 )(jQuery)
