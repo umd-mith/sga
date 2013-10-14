@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ranges</title>
+<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?mr4i2q" media="all" />
+<link href="http://dev.shelleygodwinarchive.org/sites/all/themes/s2/css/style.css?mtbs3a" type="text/css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
+<script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js?mr4i2q"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/backbone-min.js"></script>
+
+<style>
+  .img-thumbnail {
+    width: 100%;
+    max-width: 120px;
+    height: 170px;
+  }
+  .mask {
+    width: 100%;
+    max-width: 120px;
+  }
+</style>
+
+</head>
+
+<body>
+
+<div id="ranges_wrapper"></div>
+
+<script type="text/template" id="work-template">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default group-wk">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#<%=id%>">
+            <%=title%>
+          </a>
+        </h3>
+        <div class="meta-wk">
+        <% _.each(meta, function(m){ %>
+          <strong><%=m.label%></strong>: <%=m.value%> &nbsp;
+        <% }); %>
+        </div>
+      </div>    
+      <div id="<%=id%>" class="panel-collapse collapse in">
+        <div class="panel-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="range-template">
+  <div class="panel-group" id="<%=id%>-range">
+    <div class="panel panel-default group-nb">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="accordion-toggle collapsed" data-toggle="collapse" href="#<%=id%>">
+            <%=label%>
+          </a>
+        </h4>
+        <div class="meta-nb">
+          <%=meta%>
+        </div>
+      </div>
+      <div id="<%=id%>" class="panel-collapse collapse">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="canvas-template">
+  <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-4">          
+    <a href="<%=scUrl%>#n=<%=position%>"><img class="img-thumbnail" src="<%=imgUrl%>"/></a>
+    <div class="mask">
+      <h6 class="pg-n"><%=label%></h6>
+        <p class="pg-s"><i class="icon-circle <%=status.t%>" title="Transcription Status"></i><i class="icon-circle <%=status.m%>" title="Metadata Status"></i></p>
+    </div>
+  </div>
+
+</script>
+
+<!-- 
+  <% if (position % 6 == 0) { %>
+    <div class="clearfix visible-lg visible-sm visible-xs"></div>    
+  <% } else if (position % 4 == 0) { %>
+    <div class="clearfix visible-md"></div>
+  <% } else if (position % 3 == 0) { %>
+    <div class="clearfix visible-sm visible-xs"></div>
+  <% } %>
+-->
+
+
+<script type="text/javascript" src="js/SGAranges.js"></script>
+
+</body>
+</html>
