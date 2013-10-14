@@ -488,6 +488,47 @@ SGAReader.namespace "Application", (Application) ->
               item.canvases = contents
               items.push item
 
+            layers = manifestData.getLayers()
+            that.addItemsToProcess layers.length
+            syncer.process layers, (id) ->
+              that.addItemsProcessed 1
+              ritem = manifestData.getItem id
+              item =
+                id: id
+                type: 'Layer'
+                label: ritem.rdfslabel
+                motivation: ritem.scforMotivation?[0]
+
+              contents = []
+              contents.push ritem.rdffirst[0]
+              ritem = manifestData.getItem ritem.rdfrest[0]
+              while ritem.id?
+                contents.push ritem.rdffirst[0]
+                ritem = manifestData.getItem ritem.rdfrest[0]
+
+              if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading"
+                annos = []
+                
+                for c in contents
+                  ritem = manifestData.getItem c                  
+                  a = manifestData.getItem ritem.rdffirst[0]
+                  annos.push a.id
+
+                  aritem = manifestData.getItem a.id[0]
+                  aitem =
+                    id: aritem.id[0]
+                    type: 'LayerAnno'
+                    motivation: item.motivation
+                    body: aritem.oahasBody[0]
+                    canvas: a.oahasTarget[0]
+
+                  items.push aitem
+
+                item.annotations = annos
+
+              item.canvases = contents
+              items.push item
+
             syncer.done ->
               that.dataStore.data.loadItems items
 
