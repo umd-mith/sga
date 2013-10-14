@@ -39,3 +39,9 @@ svg body {
   padding-top: -2px;
   font-size: smaller;
 }
+
+#readingTxt {
+  display:none;
+  background-color: #FFF;
+  padding: 1.5em;
+}
