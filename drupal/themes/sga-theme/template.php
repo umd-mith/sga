@@ -15,6 +15,8 @@ function sgarchive_preprocess_html(&$variables) {
 	drupal_add_js('http://code.jquery.com/ui/1.9.2/jquery-ui.min.js');
 	drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js');
 
+	drupal_add_js(path_to_theme() . '/js/main.js');
+
 	drupal_add_js(path_to_theme() . '/js/jquery.ba-bbq.min.js');
 
 	$variables['bottom_scripts'] = drupal_get_js('bottom_scripts');
