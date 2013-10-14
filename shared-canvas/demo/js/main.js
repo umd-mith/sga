@@ -38,6 +38,13 @@
 
     app.modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
 
+    readingTxt = SGA.Reader.Component.ReadingTxt.initInstance("#readingTxt", { 
+      dataView: app.dataStore.data,
+      pagerEvt: app.events.onCanvasChange,
+      getMode: app.modeControls.getMode,
+      onModeChange : app.modeControls.events.onModeChange
+    });    
+
     app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
     pageSlider.events.onValueChange.addListener( app.setPosition );
