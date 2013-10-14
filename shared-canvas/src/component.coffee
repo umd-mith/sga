@@ -333,16 +333,82 @@ SGAReader.namespace "Component", (Component) ->
             that.setQuery "f="+fields+"&q="+val
           false
 
+  Component.namespace "ReadingTxt", (ReadingTxt) ->
+    ReadingTxt.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.ReadingTxt", args..., (that, container) ->
+
+        canvas = null
+        text = null
+        layerAnnos = []
+
+        get = ->
+          data = that.options.dataView
+          las = MITHgrid.Data.Set.initInstance ['LayerAnno']
+
+          for layerA in data.getSubjectsUnion(las, "type").items()
+            a = data.getItem layerA
+            layerAnnos.push a                
+
+        show = ->
+          # make container visible                    
+            $(container).html text
+            $(container).show()
+
+        hide = ->
+          # make container invisible
+          $(container).hide()
+
+
+        that.options.dataView.events.onAfterLoading.addListener (d) ->
+          get()
+
+        that.options.pagerEvt.addListener (c) ->
+          canvas = c
+          $(container).height $('.canvas').height()
+
+          for a in layerAnnos
+            if a.motivation[0] == "http://www.shelleygodwinarchive.org/ns1#reading" and a.canvas[0] == canvas
+              $.get a.body, ( data ) ->    
+                d = $.parseHTML data
+                for e in d
+                  if $(e).is('div')
+                    text = e
+                    if that.options.getMode() == 'reading'
+                      $(container).html text               
+
+        that.options.onModeChange.addListener (m) ->
+          if m == 'reading'
+            show()
+
+          else if m == 'normal'
+            hide()
+            
   Component.namespace "ModeControls", (ModeControls) ->
     ModeControls.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
+        options = that.options
 
         imgOnly = $(container).find("#img-only")
-        text = $(container).find("#mode-rdg")
+        rdg = $(container).find("#mode-rdg")
         xml = $(container).find("#mode-xml")
         std = $(container).find("#mode-std")
 
         stored_txt_canvas = null
+
+        restoreBoth = ->
+          img_parent = $('*[data-types=Image]').parent()
+
+          # Half the bootstrap column
+          c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+          img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+
+          stored_txt_canvas.insertAfter(img_parent)
+
+          $('*[data-types=Image]').trigger('resetPres')
+
+          stored_txt_canvas = null
+
+          that.setMode('normal')
 
         $(imgOnly).click (e) ->
           e.preventDefault()
@@ -358,20 +424,24 @@ SGAReader.namespace "Component", (Component) ->
             $('*[data-types=Image]').trigger('resetPres')
             that.setMode('imgOnly')
 
+        $(rdg).click (e) ->
+          e.preventDefault()
+
+          if !$(rdg).hasClass('active')
+            $('*[data-types=Text]').hide()
+            that.setMode('reading')
+
+          if stored_txt_canvas?            
+            restoreBoth()
+
         $(std).click (e) ->
           e.preventDefault()
 
-          if !$(std).hasClass('active') and stored_txt_canvas?
-            
-            img_parent = $('*[data-types=Image]').parent()
+          if stored_txt_canvas?
+            restoreBoth()
+          $('*[data-types=Text]').show()
+          that.setMode('normal')
 
-            # Half the bootstrap column
-            c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-            img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
-
-            stored_txt_canvas.insertAfter(img_parent)
-
-            $('*[data-types=Image]').trigger('resetPres')
 
   Component.namespace "LimitViewControls", (LimitViewControls) ->
     LimitViewControls.initInstance = (args...) ->
