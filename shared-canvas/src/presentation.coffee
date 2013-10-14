@@ -55,11 +55,19 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         that.finishDisplayUpdate = ->
           $(container).empty()
-          # now we go through the lines and push them into the dom
-          currentLineEl = $("<div></div>")
-          $(container).append(currentLineEl)
+          # now we go through the lines and push them into the dom          
           afterLayout = []
           for lineNo in ((i for i of lines).sort (a,b) -> a - b)
+            currentLineEl = $("<div></div>")
+            lineNoFraq = lineNo - parseInt(lineNo, 10)
+            if lineNoFraq < 0
+              lineNoFraq += 1
+            if lineNoFraq > 0.5
+              currentLineEl.addClass 'above-line'
+            else if lineNoFraq > 0
+              currentLineEl.addClass 'below-line'
+
+            $(container).append(currentLineEl)
             currentPos = 0
             for r in lines[lineNo]
               do (r) ->
@@ -76,8 +84,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                   r.$el.attr('data-line', lineNo)
                   currentPos += (r.charWidth or 0)
             #$(currentLineEl).append("<br />")
-            currentLineEl = $("<div></div>")
-            $(container).append(currentLineEl)
+
           runAfterLayout = (i) ->
             if i < afterLayout.length
               afterLayout[i]()
@@ -170,11 +177,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
               prevSibling = rendering.$el.prev()
               if prevSibling? and prevSibling.size() > 0
                 prevOffset = prevSibling.offset()
-                #if Math.abs(prevOffset.top - myOffset.top) < 5
                 spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left 
                 if spacing > neededSpace
                   neededSpace = spacing
               if neededSpace >= 0
+                if neededSpace + myOffset.left + rendering.$el.outerWidth() > that.getWidth()
+                  if myOffset.left + rendering.$el.outerWidth() > that.getWidth()
+                    neededSpace = 0
+                  else
+                    neededSpace = that.getWidth() - myOffset.left - rendering.$el.outerWidth()
                 rendering.$el.css
                   'position': 'relative'
                   'left': (neededSpace) + "px"
