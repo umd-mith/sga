@@ -109,7 +109,7 @@ window.SGAsearch = {}
 
     addOne: (model, o) ->
       view = new SGAsearch.FacetView {model: model}
-      $(@target).append view.render().$el
+      $(@target).find('.list-group').append view.render().$el
       @bindFacetControls view, o
 
     bindFacetControls: (view, o) ->
@@ -243,10 +243,10 @@ window.SGAsearch = {}
       if current > 1
         first = ""
         prev = ""
-      else if current < pages
+      if current < pages
         next = ""
         last = ""
-
+        
       pagi.set
         "first"  : first
         "prev"   : prev
@@ -309,7 +309,7 @@ window.SGAsearch = {}
         r.id = r.id.substr r.id.length - 4
         # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
 
-        r.imageURL = "http://sga.mith.org:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://sga.mith.org/images/jp2/#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1&svc.region=0,0,100,75"
+        r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
         r.detailQuery = "s=f:#{fields}|q:#{query}"
 
         sr.set r
