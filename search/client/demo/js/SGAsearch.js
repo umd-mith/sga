@@ -307,9 +307,7 @@
       };
       doSearch();
       return $(window).bind("hashchange", function(e) {
-        if (e.fragment !== '') {
-          return doSearch();
-        }
+        return doSearch();
       });
     };
     return SGAsearch.search = function(service, query, facets, destination, fields, page, filters, sort) {
