@@ -174,11 +174,12 @@ window.SGAsearch = {}
     doSearch()
 
     $(window).bind "hashchange", (e) ->
-      doSearch()
+      if e.fragment != ''
+        doSearch()
       
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
-
+    
     srcOptions = 
       service : service
       fields : fields
@@ -206,7 +207,7 @@ window.SGAsearch = {}
     if sort?
       url += "&sort=#{sort}"
 
-    console.log url
+    # console.log url
 
     setHistory = () ->
       $.bbq.pushState
@@ -309,7 +310,7 @@ window.SGAsearch = {}
         r.id = r.id.substr r.id.length - 4
         # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
 
-        r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
+        r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
         r.detailQuery = "s=f:#{fields}|q:#{query}"
 
         sr.set r
