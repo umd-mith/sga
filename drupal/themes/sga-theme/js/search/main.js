@@ -13,8 +13,17 @@
     });
     $('#search-bar form').submit( function (e) {
       e.preventDefault();
-      $.bbq.removeState();
-      $.bbq.pushState({q:$('#search-bar input').val(), f:'text'});
+      /* We reset manually all fields in one go: using removeState() causes
+         a troublesome extra hashchange */
+
+      p = $.bbq.getState('p');
+      nb = $.bbq.getState('nb');
+
+      states = {q:  $('#search-bar input').val(), f:  'text'}
+      if (p !== undefined) states.p = '';
+      if (nb !== undefined) states.nb = '';
+
+      $.bbq.pushState(states);
       return false;
     });
 })(jQuery);

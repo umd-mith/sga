@@ -39,3 +39,18 @@ svg body {
   padding-top: -2px;
   font-size: smaller;
 }
+
+#ModeLayers {
+  display:none;
+  background-color: #FFF;
+  padding: 1.5em;   
+}
+
+#ModeLayers.xml {
+  overflow-y: scroll;   
+}
+
+#ModeLayers pre {  
+  background-color: transparent;
+  border: none !important;
+}
