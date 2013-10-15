@@ -69,32 +69,25 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
             $(container).append(currentLineEl)
             currentPos = 0
+            afterLayoutPos = 0
             for r in lines[lineNo]
               do (r) ->
                 if r.$el?
                   if r.positioned
-                    # TODO: fix the width calculation to something a bit smarter - this gets us a bit closer for now
-                    #spanEl = $("<span style='display:inline-block;'></span>")
-                    #$(container).append(spanEl)
                     currentPos = r.charLead
-                    afterLayout.push r.afterLayout
-                    # r.afterLayout spanEl
+                    if afterLayout[afterLayoutPos]?
+                      afterLayout[afterLayoutPos].push r.afterLayout
+                    else
+                      afterLayout[afterLayoutPos] = [ r.afterLayout ]
                   $(currentLineEl).append(r.$el)
                   r.$el.attr('data-pos', currentPos)
                   r.$el.attr('data-line', lineNo)
                   currentPos += (r.charWidth or 0)
-            #$(currentLineEl).append("<br />")
 
           runAfterLayout = (i) ->
             if i < afterLayout.length
-              afterLayout[i]()
+              fn() for fn in afterLayout[i]
               setTimeout (-> runAfterLayout(i+1)), 0
-            # else
-            #   h = $(container).height() * 10
-            #   if h > options.height
-            #     that.setHeight h
-            #   else if h < options.height
-            #     that.setHeight options.height()
           setTimeout ->
             runAfterLayout 0
           , 0
@@ -109,7 +102,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         annoLens = (container, view, model, id) ->
           rendering = {}
-          el = $("<span></span>")
+          el = $("<span style='display: inline-block'></span>")
           rendering.$el = el
           item = model.getItem id
           el.text item.text[0]
@@ -145,7 +138,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         additionLens = (container, view, model, id) ->
           rendering = {}
-          el = $("<span></span>")
+          el = $("<span style='display: inline-block'></span>")
           rendering.$el = el
           item = model.getItem id
           el.text item.text[0]
@@ -167,28 +160,70 @@ SGAReader.namespace "Presentation", (Presentation) ->
           else
             rendering.charWidth = content.length
           rendering.line = ourLineNo
+
           rendering.afterLayout = ->
+            ourWidth = that.getWidth() / 10
+            ourLeft = rendering.$el.parent().offset().left
+
             if lastRendering?
               myOffset = rendering.$el.offset()
-              middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()/2
+              if lastRendering.$el.hasClass 'DeletionAnnotation'
+                middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()/2
+              else
+                middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()
               myMiddle = myOffset.left + rendering.$el.outerWidth()/2
               neededSpace = middle - myMiddle
               # now we need to make sure we aren't overlapping with other text - if so, move to the right
               prevSibling = rendering.$el.prev()
+              accOffset = 0
+              spacing = 0
               if prevSibling? and prevSibling.size() > 0
                 prevOffset = prevSibling.offset()
-                spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left 
+                accOffset = prevSibling.offset().left + prevSibling.outerWidth() - ourLeft
+                spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left
+                spacing = parseInt(prevSibling.css('left'), 10) or 0 #(prevOffset.left) - myOffset.left
+
                 if spacing > neededSpace
                   neededSpace = spacing
               if neededSpace >= 0
-                if neededSpace + myOffset.left + rendering.$el.outerWidth() > that.getWidth()
-                  if myOffset.left + rendering.$el.outerWidth() > that.getWidth()
-                    neededSpace = 0
+                if neededSpace + (myOffset.left - ourLeft) + accOffset + rendering.$el.outerWidth() > ourWidth
+
+                  neededSpace = ourWidth - (myOffset.left - ourLeft) - accOffset - rendering.$el.outerWidth()
+
+              # if we need negative space, then we need to move to the left if we can
+              if neededSpace < 0
+                # we need to move some of the other elements on this line
+                if !prevSibling? or prevSibling.size() <= 0
+                  neededSpace = 0
+                else
+                  neededSpace = -neededSpace
+                  prevSiblings = rendering.$el.prevAll()
+                  availableSpace = 0
+                  prevSiblings.each (i, x) ->
+                    availableSpace += (parseInt($(x).css('left'), 10) or 0)
+                  if prevSibling.size() > 0
+                    availableSpace -= (prevSibling.offset().left - ourLeft + prevSibling.outerWidth())
+                  if availableSpace > neededSpace
+                    usedSpace = 0
+                    prevSiblings.each (i, s) ->
+                      oldLeft = parseInt($(s).css('left'), 10) or 0
+                      if availableSpace > 0
+                        useWidth = parseInt(oldLeft * (neededSpace - usedSpace) / availableSpace, 10)
+                        $(s).css('left', (oldLeft - useWidth - usedSpace) + "px")
+                        usedSpace += useWidth
+                        availableSpace -= oldLeft
+
+                    neededSpace = -neededSpace
                   else
-                    neededSpace = that.getWidth() - myOffset.left - rendering.$el.outerWidth()
+                    prevSiblings.each (i, s) -> $(s).css('left', "0px")                      
+                    neededSpace = 0
+              if neededSpace > 0
+                if prevSibling.size() > 0
+                  if neededSpace < parseInt(prevSibling.css('left'), 10)
+                    neededSpace = parseInt(prevSibling.css('left'), 10)
                 rendering.$el.css
-                  'position': 'relative'
-                  'left': (neededSpace) + "px"
+                    'position': 'relative'
+                    'left': (neededSpace) + "px"
 
 
           rendering.remove = ->
@@ -545,6 +580,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
+          $(rootEl).css('overflow-x', 'auto')
           overflowDiv.appendChild rootEl
           
           rootEl.text(item.text[0])
@@ -597,7 +633,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           textContainer = null
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
-          textContainer.style.overflow = 'hidden'
+          textContainer.style.overflow = 'auto'
           container.appendChild(textContainer)
 
           #
@@ -607,13 +643,19 @@ SGAReader.namespace "Presentation", (Presentation) ->
           #
           bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
           overflowDiv = document.createElement('div')
-          #overflowDiv.style.overflow = 'hidden'
+          $(overflowDiv).css('overflow-x', 'auto')
+
           bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
           $(rootEl).attr("id", id)
-          $(rootEl).css("font-size", 15.0)
-          $(rootEl).css("line-height", 1.15)
+          $(rootEl).css
+            "font-size": 15.0
+            "line-height": 1.15
+            "overflow": "auto"
+            "white-space": "nowrap"
+            "overflow-x": "auto"
+
           overflowDiv.appendChild(rootEl)
           textContainer.appendChild(bodyEl)
 
@@ -640,6 +682,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           height = if item.height?[0]? then item.height[0] else options.height - y
 
           $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
+          $(rootEl).css('width', width/10)
 
           #
           # Here we embed the text-based zone within the pixel-based
@@ -686,6 +729,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               if app.imageControls.getMaxZoom() > 0
                 width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
                 visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
+
 
                 marquee.setAttribute("width", (that.getWidth()/10 * visiblePerc) / 100 )
                 marquee.setAttribute("height", (that.getHeight()/10 * visiblePerc) / 100 )

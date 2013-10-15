@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132870
+# SGA Shared Canvas v0.132880
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Mon Oct 14 11:33:19 2013 -0400
+# Date: Mon Oct 14 14:17:30 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -241,7 +241,6 @@
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
             that.getRanges      = -> itemsWithType 'scRange'
-            that.getLayers      = -> itemsWithType 'scLayer'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
             that.getSearchResultCanvases = getSearchResultCanvases
@@ -324,32 +323,25 @@
     
                 $(container).append(currentLineEl)
                 currentPos = 0
+                afterLayoutPos = 0
                 for r in lines[lineNo]
                   do (r) ->
                     if r.$el?
                       if r.positioned
-                        # TODO: fix the width calculation to something a bit smarter - this gets us a bit closer for now
-                        #spanEl = $("<span style='display:inline-block;'></span>")
-                        #$(container).append(spanEl)
                         currentPos = r.charLead
-                        afterLayout.push r.afterLayout
-                        # r.afterLayout spanEl
+                        if afterLayout[afterLayoutPos]?
+                          afterLayout[afterLayoutPos].push r.afterLayout
+                        else
+                          afterLayout[afterLayoutPos] = [ r.afterLayout ]
                       $(currentLineEl).append(r.$el)
                       r.$el.attr('data-pos', currentPos)
                       r.$el.attr('data-line', lineNo)
                       currentPos += (r.charWidth or 0)
-                #$(currentLineEl).append("<br />")
     
               runAfterLayout = (i) ->
                 if i < afterLayout.length
-                  afterLayout[i]()
+                  fn() for fn in afterLayout[i]
                   setTimeout (-> runAfterLayout(i+1)), 0
-                # else
-                #   h = $(container).height() * 10
-                #   if h > options.height
-                #     that.setHeight h
-                #   else if h < options.height
-                #     that.setHeight options.height()
               setTimeout ->
                 runAfterLayout 0
               , 0
@@ -364,7 +356,7 @@
     
             annoLens = (container, view, model, id) ->
               rendering = {}
-              el = $("<span></span>")
+              el = $("<span style='display: inline-block'></span>")
               rendering.$el = el
               item = model.getItem id
               el.text item.text[0]
@@ -400,7 +392,7 @@
     
             additionLens = (container, view, model, id) ->
               rendering = {}
-              el = $("<span></span>")
+              el = $("<span style='display: inline-block'></span>")
               rendering.$el = el
               item = model.getItem id
               el.text item.text[0]
@@ -422,28 +414,70 @@
               else
                 rendering.charWidth = content.length
               rendering.line = ourLineNo
+    
               rendering.afterLayout = ->
+                ourWidth = that.getWidth() / 10
+                ourLeft = rendering.$el.parent().offset().left
+    
                 if lastRendering?
                   myOffset = rendering.$el.offset()
-                  middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()/2
+                  if lastRendering.$el.hasClass 'DeletionAnnotation'
+                    middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()/2
+                  else
+                    middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()
                   myMiddle = myOffset.left + rendering.$el.outerWidth()/2
                   neededSpace = middle - myMiddle
                   # now we need to make sure we aren't overlapping with other text - if so, move to the right
                   prevSibling = rendering.$el.prev()
+                  accOffset = 0
+                  spacing = 0
                   if prevSibling? and prevSibling.size() > 0
                     prevOffset = prevSibling.offset()
-                    spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left 
+                    accOffset = prevSibling.offset().left + prevSibling.outerWidth() - ourLeft
+                    spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left
+                    spacing = parseInt(prevSibling.css('left'), 10) or 0 #(prevOffset.left) - myOffset.left
+    
                     if spacing > neededSpace
                       neededSpace = spacing
                   if neededSpace >= 0
-                    if neededSpace + myOffset.left + rendering.$el.outerWidth() > that.getWidth()
-                      if myOffset.left + rendering.$el.outerWidth() > that.getWidth()
-                        neededSpace = 0
+                    if neededSpace + (myOffset.left - ourLeft) + accOffset + rendering.$el.outerWidth() > ourWidth
+    
+                      neededSpace = ourWidth - (myOffset.left - ourLeft) - accOffset - rendering.$el.outerWidth()
+    
+                  # if we need negative space, then we need to move to the left if we can
+                  if neededSpace < 0
+                    # we need to move some of the other elements on this line
+                    if !prevSibling? or prevSibling.size() <= 0
+                      neededSpace = 0
+                    else
+                      neededSpace = -neededSpace
+                      prevSiblings = rendering.$el.prevAll()
+                      availableSpace = 0
+                      prevSiblings.each (i, x) ->
+                        availableSpace += (parseInt($(x).css('left'), 10) or 0)
+                      if prevSibling.size() > 0
+                        availableSpace -= (prevSibling.offset().left - ourLeft + prevSibling.outerWidth())
+                      if availableSpace > neededSpace
+                        usedSpace = 0
+                        prevSiblings.each (i, s) ->
+                          oldLeft = parseInt($(s).css('left'), 10) or 0
+                          if availableSpace > 0
+                            useWidth = parseInt(oldLeft * (neededSpace - usedSpace) / availableSpace, 10)
+                            $(s).css('left', (oldLeft - useWidth - usedSpace) + "px")
+                            usedSpace += useWidth
+                            availableSpace -= oldLeft
+    
+                        neededSpace = -neededSpace
                       else
-                        neededSpace = that.getWidth() - myOffset.left - rendering.$el.outerWidth()
+                        prevSiblings.each (i, s) -> $(s).css('left', "0px")                      
+                        neededSpace = 0
+                  if neededSpace > 0
+                    if prevSibling.size() > 0
+                      if neededSpace < parseInt(prevSibling.css('left'), 10)
+                        neededSpace = parseInt(prevSibling.css('left'), 10)
                     rendering.$el.css
-                      'position': 'relative'
-                      'left': (neededSpace) + "px"
+                        'position': 'relative'
+                        'left': (neededSpace) + "px"
     
     
               rendering.remove = ->
@@ -800,6 +834,7 @@
               bodyEl.appendChild overflowDiv
               rootEl = document.createElement('div')
               $(rootEl).addClass("text-content")
+              $(rootEl).css('overflow-x', 'auto')
               overflowDiv.appendChild rootEl
               
               rootEl.text(item.text[0])
@@ -852,7 +887,7 @@
     
               textContainer = null
               textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
-              textContainer.style.overflow = 'hidden'
+              textContainer.style.overflow = 'auto'
               container.appendChild(textContainer)
     
               #
@@ -862,13 +897,19 @@
               #
               bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
               overflowDiv = document.createElement('div')
-              #overflowDiv.style.overflow = 'hidden'
+              $(overflowDiv).css('overflow-x', 'auto')
+    
               bodyEl.appendChild overflowDiv
               rootEl = document.createElement('div')
               $(rootEl).addClass("text-content")
               $(rootEl).attr("id", id)
-              $(rootEl).css("font-size", 15.0)
-              $(rootEl).css("line-height", 1.15)
+              $(rootEl).css
+                "font-size": 15.0
+                "line-height": 1.15
+                "overflow": "auto"
+                "white-space": "nowrap"
+                "overflow-x": "auto"
+    
               overflowDiv.appendChild(rootEl)
               textContainer.appendChild(bodyEl)
     
@@ -895,6 +936,7 @@
               height = if item.height?[0]? then item.height[0] else options.height - y
     
               $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
+              $(rootEl).css('width', width/10)
     
               #
               # Here we embed the text-based zone within the pixel-based
@@ -941,6 +983,7 @@
                   if app.imageControls.getMaxZoom() > 0
                     width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
                     visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
+    
     
                     marquee.setAttribute("width", (that.getWidth()/10 * visiblePerc) / 100 )
                     marquee.setAttribute("height", (that.getHeight()/10 * visiblePerc) / 100 )
@@ -1334,7 +1377,6 @@
             that.getSequences   = -> itemsWithType 'scSequence'
             that.getAnnotations = -> itemsWithType 'oaAnnotation'
             that.getRanges      = -> itemsWithType 'scRange'
-            that.getLayers      = -> itemsWithType 'scLayer'
             that.getAnnotationsForCanvas = itemsForCanvas
             that.flushSearchResults = flushSearchResults
             that.getSearchResultCanvases = getSearchResultCanvases
@@ -1681,82 +1723,16 @@
                 that.setQuery "f="+fields+"&q="+val
               false
     
-      Component.namespace "ReadingTxt", (ReadingTxt) ->
-        ReadingTxt.initInstance = (args...) ->
-          MITHgrid.initInstance "SGA.Reader.Component.ReadingTxt", args..., (that, container) ->
-    
-            canvas = null
-            text = null
-            layerAnnos = []
-    
-            get = ->
-              data = that.options.dataView
-              las = MITHgrid.Data.Set.initInstance ['LayerAnno']
-    
-              for layerA in data.getSubjectsUnion(las, "type").items()
-                a = data.getItem layerA
-                layerAnnos.push a                
-    
-            show = ->
-              # make container visible                    
-                $(container).html text
-                $(container).show()
-    
-            hide = ->
-              # make container invisible
-              $(container).hide()
-    
-    
-            that.options.dataView.events.onAfterLoading.addListener (d) ->
-              get()
-    
-            that.options.pagerEvt.addListener (c) ->
-              canvas = c
-              $(container).height $('.canvas').height()
-    
-              for a in layerAnnos
-                if a.motivation[0] == "http://www.shelleygodwinarchive.org/ns1#reading" and a.canvas[0] == canvas
-                  $.get a.body, ( data ) ->    
-                    d = $.parseHTML data
-                    for e in d
-                      if $(e).is('div')
-                        text = e
-                        if that.options.getMode() == 'reading'
-                          $(container).html text               
-    
-            that.options.onModeChange.addListener (m) ->
-              if m == 'reading'
-                show()
-    
-              else if m == 'normal'
-                hide()
-                
       Component.namespace "ModeControls", (ModeControls) ->
         ModeControls.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
-            options = that.options
     
             imgOnly = $(container).find("#img-only")
-            rdg = $(container).find("#mode-rdg")
+            text = $(container).find("#mode-rdg")
             xml = $(container).find("#mode-xml")
             std = $(container).find("#mode-std")
     
             stored_txt_canvas = null
-    
-            restoreBoth = ->
-              img_parent = $('*[data-types=Image]').parent()
-    
-              # Half the bootstrap column
-              c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-              img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
-    
-              stored_txt_canvas.insertAfter(img_parent)
-    
-              $('*[data-types=Image]').trigger('resetPres')
-    
-              stored_txt_canvas = null
-    
-              that.setMode('normal')
     
             $(imgOnly).click (e) ->
               e.preventDefault()
@@ -1772,24 +1748,20 @@
                 $('*[data-types=Image]').trigger('resetPres')
                 that.setMode('imgOnly')
     
-            $(rdg).click (e) ->
-              e.preventDefault()
-    
-              if !$(rdg).hasClass('active')
-                $('*[data-types=Text]').hide()
-                that.setMode('reading')
-    
-              if stored_txt_canvas?            
-                restoreBoth()
-    
             $(std).click (e) ->
               e.preventDefault()
     
-              if stored_txt_canvas?
-                restoreBoth()
-              $('*[data-types=Text]').show()
-              that.setMode('normal')
+              if !$(std).hasClass('active') and stored_txt_canvas?
+                
+                img_parent = $('*[data-types=Image]').parent()
     
+                # Half the bootstrap column
+                c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+                img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+    
+                stored_txt_canvas.insertAfter(img_parent)
+    
+                $('*[data-types=Image]').trigger('resetPres')
     
       Component.namespace "LimitViewControls", (LimitViewControls) ->
         LimitViewControls.initInstance = (args...) ->
@@ -1829,7 +1801,9 @@
             $c.find('#hand-view_0').change ->
               if $(this).is(':checked')  
                 $('#LimitViewControls_classes').remove()    
+
     # # Controllers
+
     # # Core Utilities
 
     # # Application
@@ -2322,47 +2296,6 @@
                   item.canvases = contents
                   items.push item
     
-                layers = manifestData.getLayers()
-                that.addItemsToProcess layers.length
-                syncer.process layers, (id) ->
-                  that.addItemsProcessed 1
-                  ritem = manifestData.getItem id
-                  item =
-                    id: id
-                    type: 'Layer'
-                    label: ritem.rdfslabel
-                    motivation: ritem.scforMotivation?[0]
-    
-                  contents = []
-                  contents.push ritem.rdffirst[0]
-                  ritem = manifestData.getItem ritem.rdfrest[0]
-                  while ritem.id?
-                    contents.push ritem.rdffirst[0]
-                    ritem = manifestData.getItem ritem.rdfrest[0]
-    
-                  if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading"
-                    annos = []
-                    
-                    for c in contents
-                      ritem = manifestData.getItem c                  
-                      a = manifestData.getItem ritem.rdffirst[0]
-                      annos.push a.id
-    
-                      aritem = manifestData.getItem a.id[0]
-                      aitem =
-                        id: aritem.id[0]
-                        type: 'LayerAnno'
-                        motivation: item.motivation
-                        body: aritem.oahasBody[0]
-                        canvas: a.oahasTarget[0]
-    
-                      items.push aitem
-    
-                    item.annotations = annos
-    
-                  item.canvases = contents
-                  items.push item
-    
                 syncer.done ->
                   that.dataStore.data.loadItems items
     
@@ -2738,4 +2671,4 @@ MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
 
 MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
   variables:
-    Mode: { is: 'rw', default: 'normal' }
+    Mode: { is: 'rw' }
