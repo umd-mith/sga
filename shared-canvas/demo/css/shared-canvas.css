@@ -40,8 +40,14 @@ svg body {
   font-size: smaller;
 }
 
-#readingTxt {
+#ModeLayers {
   display:none;
   background-color: #FFF;
-  padding: 1.5em;
+  padding: 1.5em;   
+}
+
+#ModeLayers pre {
+  overflow-y: scroll;
+  background-color: transparent;
+  border: none !important;
 }
