@@ -38,7 +38,7 @@
 
     app.modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
 
-    readingTxt = SGA.Reader.Component.ReadingTxt.initInstance("#readingTxt", { 
+    ModeLayers = SGA.Reader.Component.ModeLayers.initInstance("#ModeLayers", { 
       dataView: app.dataStore.data,
       pagerEvt: app.events.onCanvasChange,
       getMode: app.modeControls.getMode,
