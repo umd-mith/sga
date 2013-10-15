@@ -46,8 +46,11 @@ svg body {
   padding: 1.5em;   
 }
 
-#ModeLayers pre {
-  overflow-y: scroll;
+#ModeLayers.xml {
+  overflow-y: scroll;   
+}
+
+#ModeLayers pre {  
   background-color: transparent;
   border: none !important;
 }
