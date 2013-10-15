@@ -242,6 +242,7 @@ SGAReader.namespace "Application", (Application) ->
               item.type = "Image"
               if "image/jp2" in imgitem["dcformat"] and that.imageControls?
                 item.type = "ImageViewer"
+                item.url = imgitem.schasRelatedService[0] + "?url_ver=Z39.88-2004&rft_id=" + item.image[0]
 
             else if "scZoneAnnotation" in aitem.type
               target = manifestData.getItem aitem.oahasTarget
