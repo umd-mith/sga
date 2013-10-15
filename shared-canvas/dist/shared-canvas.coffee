@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Oct 15 10:29:51 2013 -0400
+# Date: Tue Oct 15 17:06:51 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -642,16 +642,10 @@
     
               item = model.getItem id
     
-              
-    
               # Activate imageControls
               app.imageControls.setActive(true)
-              
-              # Djatoka URL is now hardcoded, it will eventually come from the manifest
-              # when we figure out how to model it.
-              djatokaURL = "http://sga.mith.org:8080/adore-djatoka/resolver" 
-              imageURL = item.image[0]
-              baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
+    
+              baseURL = item.url[0]
     
               po = org.polymaps
     
@@ -1786,14 +1780,19 @@
     
                       xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
                       if that.options.getMode() == 'xml'
-                        $(container).html text            
+                        $(container).html xml
+                        prettyPrint()            
     
             that.options.onModeChange.addListener (m) ->
-              if m == 'reading' or m == 'xml'
-                show()
-    
-              else if m == 'normal'
-                hide()
+              switch m
+                when 'reading'
+                  $(container).removeClass 'xml'
+                  show()
+                when 'xml'
+                  $(container).addClass 'xml'
+                  show()
+                when 'normal'
+                  hide()
                 
       Component.namespace "ModeControls", (ModeControls) ->
         ModeControls.initInstance = (args...) ->
@@ -1811,8 +1810,8 @@
               img_parent = $('*[data-types=Image]').parent()
     
               # Half the bootstrap column
-              c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-              img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+              c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+              img_parent[0].className = c[1] + parseInt(c[2]) / 2
     
               stored_txt_canvas.insertAfter(img_parent)
     
@@ -1830,8 +1829,8 @@
                 $('*[data-types=Text]').parent().remove()
     
                 # Double the bootstrap column
-                c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-                $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
+                c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+                $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
     
                 $('*[data-types=Image]').trigger('resetPres')
                 that.setMode('imgOnly')
@@ -2150,6 +2149,7 @@
                   item.type = "Image"
                   if "image/jp2" in imgitem["dcformat"] and that.imageControls?
                     item.type = "ImageViewer"
+                    item.url = imgitem.schasRelatedService[0] + "?url_ver=Z39.88-2004&rft_id=" + item.image[0]
     
                 else if "scZoneAnnotation" in aitem.type
                   target = manifestData.getItem aitem.oahasTarget
