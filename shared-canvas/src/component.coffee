@@ -394,14 +394,19 @@ SGAReader.namespace "Component", (Component) ->
 
                   xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
                   if that.options.getMode() == 'xml'
-                    $(container).html text            
+                    $(container).html xml
+                    prettyPrint()            
 
         that.options.onModeChange.addListener (m) ->
-          if m == 'reading' or m == 'xml'
-            show()
-
-          else if m == 'normal'
-            hide()
+          switch m
+            when 'reading'
+              $(container).removeClass 'xml'
+              show()
+            when 'xml'
+              $(container).addClass 'xml'
+              show()
+            when 'normal'
+              hide()
             
   Component.namespace "ModeControls", (ModeControls) ->
     ModeControls.initInstance = (args...) ->
@@ -419,8 +424,8 @@ SGAReader.namespace "Component", (Component) ->
           img_parent = $('*[data-types=Image]').parent()
 
           # Half the bootstrap column
-          c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-          img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2
+          c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+          img_parent[0].className = c[1] + parseInt(c[2]) / 2
 
           stored_txt_canvas.insertAfter(img_parent)
 
@@ -438,8 +443,8 @@ SGAReader.namespace "Component", (Component) ->
             $('*[data-types=Text]').parent().remove()
 
             # Double the bootstrap column
-            c = /col-lg-(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-            $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2
+            c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+            $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
 
             $('*[data-types=Image]').trigger('resetPres')
             that.setMode('imgOnly')
