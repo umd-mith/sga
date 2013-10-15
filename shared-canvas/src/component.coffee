@@ -333,12 +333,13 @@ SGAReader.namespace "Component", (Component) ->
             that.setQuery "f="+fields+"&q="+val
           false
 
-  Component.namespace "ReadingTxt", (ReadingTxt) ->
-    ReadingTxt.initInstance = (args...) ->
-      MITHgrid.initInstance "SGA.Reader.Component.ReadingTxt", args..., (that, container) ->
+  Component.namespace "ModeLayers", (ModeLayers) ->
+    ModeLayers.initInstance = (args...) ->
+      MITHgrid.initInstance "SGA.Reader.Component.ModeLayers", args..., (that, container) ->
 
         canvas = null
         text = null
+        xml = null
         layerAnnos = []
 
         get = ->
@@ -350,34 +351,53 @@ SGAReader.namespace "Component", (Component) ->
             layerAnnos.push a                
 
         show = ->
-          # make container visible                    
+          # make container visible 
+          if that.options.getMode() == 'xml'
+              $(container).html xml
+              prettyPrint()       
+          else            
             $(container).html text
-            $(container).show()
+          $(container).show()
+            
 
         hide = ->
           # make container invisible
           $(container).hide()
 
-
         that.options.dataView.events.onAfterLoading.addListener (d) ->
           get()
 
-        that.options.pagerEvt.addListener (c) ->
-          canvas = c
+        that.options.pagerEvt.addListener (canvas) ->
+          c = c
           $(container).height $('.canvas').height()
 
           for a in layerAnnos
-            if a.motivation[0] == "http://www.shelleygodwinarchive.org/ns1#reading" and a.canvas[0] == canvas
-              $.get a.body, ( data ) ->    
-                d = $.parseHTML data
-                for e in d
-                  if $(e).is('div')
-                    text = e
-                    if that.options.getMode() == 'reading'
-                      $(container).html text               
+            if a.canvas[0] == canvas
+              if a.motivation[0] == "http://www.shelleygodwinarchive.org/ns1#reading"
+                $.get a.body, ( data ) ->    
+                  d = $.parseHTML data
+                  for e in d
+                    if $(e).is('div')
+                      text = e
+                      if that.options.getMode() == 'reading'
+                        $(container).html text    
+
+              else if a.motivation[0] == "http://www.shelleygodwinarchive.org/ns1#source"
+                $.get a.body, ( data ) -> 
+                  surface = data.getElementsByTagName 'surface'
+                  serializer = new XMLSerializer()
+                  txtdata = serializer.serializeToString surface[0] 
+                  txtdata = txtdata.replace /\&/g, '&amp;'
+                  txtdata = txtdata.replace /%/g, '&#37;'
+                  txtdata = txtdata.replace /</g, '&lt;'
+                  txtdata = txtdata.replace />/g, '&gt;'
+
+                  xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
+                  if that.options.getMode() == 'xml'
+                    $(container).html text            
 
         that.options.onModeChange.addListener (m) ->
-          if m == 'reading'
+          if m == 'reading' or m == 'xml'
             show()
 
           else if m == 'normal'
@@ -427,12 +447,22 @@ SGAReader.namespace "Component", (Component) ->
         $(rdg).click (e) ->
           e.preventDefault()
 
+          if stored_txt_canvas?            
+            restoreBoth()
+
           if !$(rdg).hasClass('active')
             $('*[data-types=Text]').hide()
             that.setMode('reading')
 
+        $(xml).click (e) ->
+          e.preventDefault()
+
           if stored_txt_canvas?            
             restoreBoth()
+
+          if !$(xml).hasClass('active')
+            $('*[data-types=Text]').hide()
+            that.setMode('xml')          
 
         $(std).click (e) ->
           e.preventDefault()
