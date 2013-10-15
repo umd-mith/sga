@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Oct 15 10:29:51 2013 -0400
+# Date: Tue Oct 15 17:06:51 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -738,7 +738,7 @@
                 return rendering;
               });
               that.addLens('ImageViewer', function(container, view, model, id) {
-                var baseURL, canvas, djatokaURL, g, imageURL, item, map, po, rendering, svg, toAdoratio;
+                var baseURL, canvas, g, item, map, po, rendering, svg, toAdoratio;
 
                 if (__indexOf.call(options.types || [], 'Image') < 0) {
                   return;
@@ -746,9 +746,7 @@
                 rendering = {};
                 item = model.getItem(id);
                 app.imageControls.setActive(true);
-                djatokaURL = "http://sga.mith.org:8080/adore-djatoka/resolver";
-                imageURL = item.image[0];
-                baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL;
+                baseURL = item.url[0];
                 po = org.polymaps;
                 svg = $(svgRoot.root());
                 svg.get(0).removeAttribute("viewBox");
@@ -1908,7 +1906,8 @@
                         txtdata = txtdata.replace(/>/g, '&gt;');
                         xml = "<pre class='prettyprint'><code class='language-xml'>" + txtdata + "</code></pre>";
                         if (that.options.getMode() === 'xml') {
-                          return $(container).html(text);
+                          $(container).html(xml);
+                          return prettyPrint();
                         }
                       }));
                     } else {
@@ -1921,10 +1920,15 @@
                 return _results;
               });
               return that.options.onModeChange.addListener(function(m) {
-                if (m === 'reading' || m === 'xml') {
-                  return show();
-                } else if (m === 'normal') {
-                  return hide();
+                switch (m) {
+                  case 'reading':
+                    $(container).removeClass('xml');
+                    return show();
+                  case 'xml':
+                    $(container).addClass('xml');
+                    return show();
+                  case 'normal':
+                    return hide();
                 }
               });
             }]));
@@ -1948,8 +1952,8 @@
                 var c, img_parent;
 
                 img_parent = $('*[data-types=Image]').parent();
-                c = /col-lg-(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
-                img_parent[0].className = 'col-lg-' + parseInt(c[1]) / 2;
+                c = /(col-[^-]+?-)(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
+                img_parent[0].className = c[1] + parseInt(c[2]) / 2;
                 stored_txt_canvas.insertAfter(img_parent);
                 $('*[data-types=Image]').trigger('resetPres');
                 stored_txt_canvas = null;
@@ -1962,8 +1966,8 @@
                 if (!$(imgOnly).hasClass('active')) {
                   stored_txt_canvas = $('*[data-types=Text]').parent();
                   $('*[data-types=Text]').parent().remove();
-                  c = /col-lg-(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
-                  $('*[data-types=Image]').parent()[0].className = 'col-lg-' + parseInt(c[1]) * 2;
+                  c = /(col-[^-]+?-)(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
+                  $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2;
                   $('*[data-types=Image]').trigger('resetPres');
                   return that.setMode('imgOnly');
                 }
@@ -2236,6 +2240,7 @@
                     item.type = "Image";
                     if (__indexOf.call(imgitem["dcformat"], "image/jp2") >= 0 && (that.imageControls != null)) {
                       item.type = "ImageViewer";
+                      item.url = imgitem.schasRelatedService[0] + "?url_ver=Z39.88-2004&rft_id=" + item.image[0];
                     }
                   } else if (__indexOf.call(aitem.type, "scZoneAnnotation") >= 0) {
                     target = manifestData.getItem(aitem.oahasTarget);
