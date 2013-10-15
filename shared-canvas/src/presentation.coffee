@@ -580,6 +580,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
+          $(rootEl).css('overflow-x', 'auto')
           overflowDiv.appendChild rootEl
           
           rootEl.text(item.text[0])
@@ -632,7 +633,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           textContainer = null
           textContainer = document.createElementNS('http://www.w3.org/2000/svg', 'foreignObject' )
-          textContainer.style.overflow = 'hidden'
+          textContainer.style.overflow = 'auto'
           container.appendChild(textContainer)
 
           #
@@ -643,13 +644,18 @@ SGAReader.namespace "Presentation", (Presentation) ->
           bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
           overflowDiv = document.createElement('div')
           $(overflowDiv).css('overflow-x', 'auto')
-          #overflowDiv.style.overflow = 'hidden'
+
           bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
           $(rootEl).attr("id", id)
-          $(rootEl).css("font-size", 15.0)
-          $(rootEl).css("line-height", 1.15)
+          $(rootEl).css
+            "font-size": 15.0
+            "line-height": 1.15
+            "overflow": "auto"
+            "white-space": "nowrap"
+            "overflow-x": "auto"
+
           overflowDiv.appendChild(rootEl)
           textContainer.appendChild(bodyEl)
 
@@ -676,6 +682,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           height = if item.height?[0]? then item.height[0] else options.height - y
 
           $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
+          $(rootEl).css('width', width/10)
 
           #
           # Here we embed the text-based zone within the pixel-based
