@@ -2,7 +2,7 @@
 <div id="page-wrapper">
 
     <!--#header-->
-    <div id="header">
+    <div id="header" class="clearfix">
         <!--#header-inside-->
         <div id="header-inside" class="container_12">
             
@@ -69,7 +69,7 @@
     <!--EOF:#header-->
 
     <!--#main-menu-->
-    <div id="main-menu">
+    <div id="main-menu" class="clearfix">
     	<div class="container_12">
 
             <div class="grid_12">

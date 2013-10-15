@@ -242,6 +242,7 @@ SGAReader.namespace "Application", (Application) ->
               item.type = "Image"
               if "image/jp2" in imgitem["dcformat"] and that.imageControls?
                 item.type = "ImageViewer"
+                item.url = imgitem.schasRelatedService[0] + "?url_ver=Z39.88-2004&rft_id=" + item.image[0]
 
             else if "scZoneAnnotation" in aitem.type
               target = manifestData.getItem aitem.oahasTarget
@@ -485,6 +486,47 @@ SGAReader.namespace "Application", (Application) ->
               while ritem.id?
                 contents.push ritem.rdffirst[0]
                 ritem = manifestData.getItem ritem.rdfrest[0]
+              item.canvases = contents
+              items.push item
+
+            layers = manifestData.getLayers()
+            that.addItemsToProcess layers.length
+            syncer.process layers, (id) ->
+              that.addItemsProcessed 1
+              ritem = manifestData.getItem id
+              item =
+                id: id
+                type: 'Layer'
+                label: ritem.rdfslabel
+                motivation: ritem.scforMotivation?[0]
+
+              contents = []
+              contents.push ritem.rdffirst[0]
+              ritem = manifestData.getItem ritem.rdfrest[0]
+              while ritem.id?
+                contents.push ritem.rdffirst[0]
+                ritem = manifestData.getItem ritem.rdfrest[0]
+
+              if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or item.motivation == "http://www.shelleygodwinarchive.org/ns1#source"
+                annos = []
+                
+                for c in contents
+                  ritem = manifestData.getItem c                  
+                  a = manifestData.getItem ritem.rdffirst[0]
+                  annos.push a.id
+
+                  aritem = manifestData.getItem a.id[0]
+                  aitem =
+                    id: aritem.id[0]
+                    type: 'LayerAnno'
+                    motivation: item.motivation
+                    body: aritem.oahasBody[0]
+                    canvas: a.oahasTarget[0]
+
+                  items.push aitem
+
+                item.annotations = annos
+
               item.canvases = contents
               items.push item
 
