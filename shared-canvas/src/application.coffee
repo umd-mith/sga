@@ -506,7 +506,7 @@ SGAReader.namespace "Application", (Application) ->
                 contents.push ritem.rdffirst[0]
                 ritem = manifestData.getItem ritem.rdfrest[0]
 
-              if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading"
+              if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or item.motivation == "http://www.shelleygodwinarchive.org/ns1#source"
                 annos = []
                 
                 for c in contents
