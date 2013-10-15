@@ -174,8 +174,7 @@ window.SGAsearch = {}
     doSearch()
 
     $(window).bind "hashchange", (e) ->
-      if e.fragment != ''
-        doSearch()
+      doSearch()
       
 
   SGAsearch.search = (service, query, facets, destination, fields = 'text', page = 0, filters=null, sort=null) ->   
