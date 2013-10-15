@@ -9,15 +9,13 @@ function sgarchive_preprocess_html(&$variables) {
 	endif;
 	drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('!IE' => FALSE), 'preprocess' => FALSE));
 
-	drupal_add_css('//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css', array('group' => CSS_THEME, 'type' => 'file', 'preprocess' => FALSE, 'weight' => '-1000'));
+	drupal_add_css('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css', array('group' => CSS_THEME, 'type' => 'file', 'preprocess' => FALSE, 'weight' => '-1000'));
 	drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', array('group' => CSS_THEME, 'type' => 'file', 'preprocess' => FALSE, 'weight' => '-1000'));
 
 	drupal_add_js('http://code.jquery.com/ui/1.9.2/jquery-ui.min.js');
-	drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js');
+	drupal_add_js('//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js');
 
 	drupal_add_js(path_to_theme() . '/js/main.js');
-
-	drupal_add_js(path_to_theme() . '/js/jquery.ba-bbq.min.js');
 
 	$variables['bottom_scripts'] = drupal_get_js('bottom_scripts');
 }
