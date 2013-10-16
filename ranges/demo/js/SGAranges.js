@@ -58,8 +58,8 @@
         "scUrl": "",
         "imgUrl": "",
         "status": {
-          t: "red",
-          m: "red"
+          t: "grn",
+          m: "grn"
         }
       };
 
@@ -305,7 +305,7 @@
         c = new SGAranges.Canvas();
         _this.clv.collection.add(c);
         c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1;
-        sc_url = data.service["@id"];
+        sc_url = data.service;
         img_url = "";
         _ref12 = data.images;
         for (_i = 0, _len = _ref12.length; _i < _len; _i++) {
@@ -325,8 +325,8 @@
           "scUrl": sc_url,
           "imgUrl": img_url,
           "status": {
-            t: "red",
-            m: "red"
+            t: "grn",
+            m: "grn"
           }
         });
       };
@@ -343,7 +343,7 @@
         work_safe_id = w_id.replace(/[:\/\.]/g, "_");
         w.set({
           "id": work_safe_id,
-          "title": data.label,
+          "title": data.metadata.title != null ? data.metadata.title + " - " + data.label : data.label,
           "meta": data.metadata
         });
         _this.wlv.render("#ranges_wrapper");
@@ -416,7 +416,8 @@
   })(jQuery, window.SGAranges, _, Backbone);
 
   (function($) {
-    return SGAranges.LoadRanges("Manifest.jsonld", true);
+    SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest-index.jsonld", true);
+    return SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest-index.jsonld", true);
   })(jQuery);
 
 }).call(this);

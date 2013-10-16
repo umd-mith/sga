@@ -30,7 +30,7 @@ window.SGAranges = {}
       "position" : 1
       "scUrl"    : ""
       "imgUrl"   : ""
-      "status"   : {t: "red", m: "red"}
+      "status"   : {t: "grn", m: "grn"}
 
   ## COLLECTIONS ##
 
@@ -154,7 +154,7 @@ window.SGAranges = {}
       # is in first position.
       c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1
 
-      sc_url = data.service["@id"]
+      sc_url = data.service
 
       img_url = ""
 
@@ -174,7 +174,7 @@ window.SGAranges = {}
         "position" : c_pos
         "scUrl"    : sc_url
         "imgUrl"   : img_url
-        "status"   : {t: "red", m: "red"}
+        "status"   : {t: "grn", m: "grn"}
 
     processManifest = (data) =>
 
@@ -189,7 +189,7 @@ window.SGAranges = {}
 
       w.set
         "id"     : work_safe_id
-        "title"  : data.label
+        "title"  : if data.metadata.title? then data.metadata.title + " - " + data.label else data.label
         "meta"   : data.metadata
 
       @wlv.render "#ranges_wrapper"
@@ -243,14 +243,19 @@ window.SGAranges = {}
       type: 'GET'
       dataType: 'json'
       processData: false
-      success: processManifestnifest
+      success: processManifest
+
 
 )(jQuery,window.SGAranges,_,Backbone)
 
 # Work it, make it, do it, makes us
 ( ($) ->
 
-  SGAranges.LoadRanges "Manifest.jsonld", true
+  # SGAranges.LoadRanges "ranges-sample.json"
+  # SGAranges.LoadRanges "ox-ms_abinger_c56/Manifest-index.jsonld", true
+  # SGAranges.LoadRanges "ox-ms_abinger_c57/Manifest-index.jsonld", true
+  SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest-index.jsonld", true
+  SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest-index.jsonld", true
   # SGAranges.LoadRanges "Manifest.jsonld"
 
 )(jQuery)
