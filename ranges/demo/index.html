@@ -5,7 +5,7 @@
 <title>Ranges</title>
 <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?mr4i2q" media="all" />
-<link href="http://dev.shelleygodwinarchive.org/sites/all/themes/s2/css/style.css?mtbs3a" type="text/css" rel="stylesheet" />
+<link href="http://dev.shelleygodwinarchive.org/sites/all/themes/sga-theme/css/style.css?mtbs3a" type="text/css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
 <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 120px;
   }
+
 </style>
 
 </head>
@@ -36,7 +37,7 @@
     <div class="panel panel-default group-wk">
       <div class="panel-heading">
         <h3 class="panel-title">
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#<%=id%>">
+          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#<%=id%>">
             <%=title%>
           </a>
         </h3>
@@ -46,7 +47,7 @@
         <% }); %>
         </div>
       </div>    
-      <div id="<%=id%>" class="panel-collapse collapse in">
+      <div id="<%=id%>" class="panel-collapse collapse">
         <div class="panel-body">
           
         </div>
