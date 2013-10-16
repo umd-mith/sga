@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132880
+# SGA Shared Canvas v0.132890
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Oct 15 17:06:51 2013 -0400
+# Date: Wed Oct 16 10:23:43 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -2455,9 +2455,18 @@
               ret = {}
               if not id?
                 id = options.url
+                id = id.substr(0, id.indexOf('.json'));
+                id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
               if id?
                 info = manifestData.getItem id
-                ret.workTitle = info.dctitle?[0] or info.rdfslabel?[0]
+                ret.workTitle = info.dctitle?[0]
+                ret.workNotebook =  info.rdfslabel?[0]
+                ret.workAuthor = info.scagentLabel?[0]
+                ret.workHands = info.sgahandLabel?[0]
+                ret.workDate = info.scdateLabel?[0]
+                ret.workState = info.sgastateLabel?[0]
+                ret.workInstitution = info.scattributionLabel?[0]
+                ret.workShelfmark = info.sgashelfmarkLabel?[0]
               ret
                 
             that.getCanvasMetadata = (id) ->
