@@ -77,13 +77,35 @@
     app.setSequence( filter.getSequence() );
 
     app.events.onCanvasChange.addListener(function(c) {
-      var item = app.dataStore.data.getItem(c);
+      var item = app.dataStore.data.getItem(c),
+          meta = app.getCanvasMetadata(c);
+          console.log(meta);
+
       if(item.label !== undefined) {
         $("#canvas-label").text(item.label[0]);
       }
       else {
         $("#canvas-label").text("(no label)");
       }
+
+      if(meta.workTitle !== undefined) {
+          $("#sc-work-title").text(meta.workTitle);
+        }
+        else {
+          $("#sc-work-title").text("");
+        }
+        if(meta.rangeTitle !== undefined) {
+          $("#sc-range-title").text(meta.rangeTitle.join("; "));
+        }
+        else {
+          $("#sc-range-title").text("");
+        }
+        if(meta.canvasTitle !== undefined) {
+          $("#sc-canvas-title").text(meta.canvasTitle);
+        }
+       else {
+          $("#sc-canvas-title").text("");
+        }
     });
 
   });
