@@ -548,9 +548,18 @@ SGAReader.namespace "Application", (Application) ->
           ret = {}
           if not id?
             id = options.url
+            id = id.substr(0, id.indexOf('.json'));
+            id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
           if id?
             info = manifestData.getItem id
-            ret.workTitle = info.dctitle?[0] or info.rdfslabel?[0]
+            ret.workTitle = info.dctitle?[0]
+            ret.workNotebook =  info.rdfslabel?[0]
+            ret.workAuthor = info.scagentLabel?[0]
+            ret.workHands = info.sgahandLabel?[0]
+            ret.workDate = info.scdateLabel?[0]
+            ret.workState = info.sgastateLabel?[0]
+            ret.workInstitution = info.scattributionLabel?[0]
+            ret.workShelfmark = info.sgashelfmarkLabel?[0]
           ret
             
         that.getCanvasMetadata = (id) ->
