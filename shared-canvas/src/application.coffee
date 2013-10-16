@@ -549,7 +549,7 @@ SGAReader.namespace "Application", (Application) ->
           if not id?
             id = options.url
             id = id.substr(0, id.indexOf('.json'));
-            id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
+            #id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
           if id?
             info = manifestData.getItem id
             ret.workTitle = info.dctitle?[0]
