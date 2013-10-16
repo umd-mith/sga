@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Oct 16 10:23:43 2013 -0400
+# Date: Wed Oct 16 12:39:42 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -2601,7 +2601,7 @@
                 if (id == null) {
                   id = options.url;
                   id = id.substr(0, id.indexOf('.json'));
-                  id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest";
+                  id = id.replace('dev.', '');
                 }
                 if (id != null) {
                   info = manifestData.getItem(id);
