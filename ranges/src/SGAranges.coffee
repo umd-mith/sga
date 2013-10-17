@@ -144,7 +144,7 @@ window.SGAranges = {}
   # Set "flat" to true to skip subdivisions of thumbnails
   SGAranges.LoadRanges = (manifest, flat=false) ->
 
-    processCanvas = (canv, data) =>
+    processCanvas = (canv, data, pos=null) =>
       canvas = canv["@id"]
       c = new SGAranges.Canvas()
       @clv.collection.add c
@@ -152,8 +152,7 @@ window.SGAranges = {}
       # This might need to change when/if we'll have more than one sequence 
       # We only need to address the "canonical" sequence here, which we're assuming
       # is in first position.
-      c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1
-
+      c_pos = if pos? then pos else $.inArray(canvas, data.sequences[0].canvases) + 1
       sc_url = data.service
 
       img_url = ""
@@ -222,7 +221,6 @@ window.SGAranges = {}
         @clv.render '#' + work_safe_id + ' .panel-body'
 
       else
-        console.log 'h'
         for struct in data.structures
 
           @cl = new SGAranges.CanvasList()
@@ -231,10 +229,15 @@ window.SGAranges = {}
           s_id = struct["@id"]
           range_safe_id = s_id.replace(/[:\/\.]/g, "_")
 
+          cur_pos = 0
           for canvas in struct.canvases
+            cur_pos += 1
             for canv in data.canvases
-              if canv["@id"] == canvas
-                processCanvas canv, data
+              if canv["@id"] == canvas           
+                processCanvas canv, data, cur_pos
+                # This avoids rendering more than once
+                # canvases that are included in multiple ranges
+                break
 
           @clv.render '#' + range_safe_id + ' .row'
 
@@ -254,8 +257,10 @@ window.SGAranges = {}
   # SGAranges.LoadRanges "ranges-sample.json"
   # SGAranges.LoadRanges "ox-ms_abinger_c56/Manifest-index.jsonld", true
   # SGAranges.LoadRanges "ox-ms_abinger_c57/Manifest-index.jsonld", true
+  # SGAranges.LoadRanges "ox-frankenstein_draft/Manifest-index.jsonld"
   SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest-index.jsonld", true
   SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest-index.jsonld", true
+  SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein_draft/Manifest-index.jsonld"
   # SGAranges.LoadRanges "Manifest.jsonld"
 
 )(jQuery)
