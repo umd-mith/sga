@@ -32,11 +32,13 @@
 
     pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
 
-    pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
-
-    limitViewControls = SGA.Reader.Component.LimitViewControls.initInstance("#hand-view-controls");
+    pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");    
 
     app.modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
+
+    limitViewControls = SGA.Reader.Component.LimitViewControls.initInstance("#hand-view-controls", {
+      onModeChange : app.modeControls.events.onModeChange
+    });
 
     ModeLayers = SGA.Reader.Component.ModeLayers.initInstance("#ModeLayers", { 
       dataView: app.dataStore.data,
