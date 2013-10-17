@@ -406,9 +406,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           canvas = $(container).parent().get(0)
 
+          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080/, 'http://dev.shelleygodwinarchive.org/')
+
           toAdoratio = $.ajax
             datatype: "json"
-            url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
+            url: tempBaseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
             success: adoratio(canvas, baseURL, map)
 
           # wait for polymap to load image and update map, then...
