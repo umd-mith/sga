@@ -11,6 +11,8 @@
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link href="css/prettify.css" type="text/css" rel="stylesheet" />
+<script src="js/prettify.js" type="text/javascript"></script>
 
 <!-- <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1"></script>
 <script type="text/javascript" src="http://dev.shelleygodwinarchive.org/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
@@ -64,39 +66,27 @@
       <div class="noborder control-group row">
         <ul class="meta-data-group controls col-lg-3">
           <li class="meta-data-item">
-            <label class="meta-label">Author(s)</label>
-            [Author(s) Names]</li>
+            <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span></span></li>
           <li class="meta-data-item">
-            <label class="meta-label">Hand(s)</label>
-            [Hand(s) Names]</li>
+            <label class="meta-label" id="meta-workHands">Hand(s)&nbsp;</label><span></span></li>
           <li class="meta-data-item">
-            <label class="meta-label">Date Written</label>
-            [Date]</li>
+            <label class="meta-label" id="meta-workDate">Date Written&nbsp;</label><span></span></li>
         </ul>
         <ul class="meta-data-group controls col-lg-3">
           <li class="meta-data-item">
-            <label class="meta-label">Notebook</label>
-            [Notebook Title]</li>
+            <label class="meta-label" id="meta-workNotebook">Notebook&nbsp;</label><span></span></li>
           <li class="meta-data-item">
-            <label class="meta-label">Title/Literary Work</label>
-            [Work Title]</li>
+            <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span></span></li>
           <li class="meta-data-item">
-            <label class="meta-label">Folio</label>
-            [ ] </li>
+            <label class="meta-label" id="meta-workFolio">Folio&nbsp;</label><span></span></li>
           <li class="meta-data-item">
-            <label class="meta-label">State</label>
-            [Work State]</li>
+            <label class="meta-label" id="meta-workState">State&nbsp;</label><span></span></li>
         </ul>
         <ul class="meta-data-group controls col-lg-3">
           <li class="meta-data-item">
-            <label class="meta-label">Institution</label>
-            Bodliean Library, University of Oxford</li>
+            <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span></span></li>
           <li class="meta-data-item">
-            <label class="meta-label">Shelfmark/ID</label>
-            MS Abinger c.56 </li>
-          <li class="meta-data-item">
-            <label class="meta-label">Collection</label>
-            [Collection Name] </li>
+            <label class="meta-label" id="meta-workShelfmark">Shelfmark&nbsp;</label><span></span></li>
         </ul>
         <div class="meta-data-group col-lg-3 controls" id="status-block">
           <div class="well well-small">
@@ -109,8 +99,8 @@
             <div class="meta-data-item circle-yes" id="status-metadata">
               <label class="meta-label">Metadata Status</label>
               <span class="badge-red"><i class="icon-circle"></i></span>
-              <span class="badge-yellow"><i class="icon-circle active"></i></span>
-              <span class="badge-green"><i class="icon-circle"></i></span>
+              <span class="badge-yellow"><i class="icon-circle"></i></span>
+              <span class="badge-green"><i class="icon-circle active"></i></span>
               <a href="#" title="Details" class="details">Details</a> </div>
           </div>
         </div>
@@ -227,10 +217,11 @@
   <div class="row">
     <div class="loader" id="loading-progress"><!-- <i class="icon-spinner icon-spin icon-3x"></i> --></div>
     <div class="col-lg-5"> <!-- instead of class="col-lg-6" -->
-      <div class="canvas" data-types="Image" data-manifest="Manifest-jp2.json"></div>
+      <div class="canvas" data-types="Image" data-manifest="Manifest.json"></div>
     </div>
     <div class="col-lg-5">
-      <div class="canvas" data-types="Text" data-manifest="Manifest-jp2.json"></div>
+      <div class="canvas" data-types="Text" data-manifest="Manifest.json"></div>
+      <div id="ModeLayers"></div>
     </div>
     <div class="col-lg-2">
       <div id="page-location"></div>
@@ -245,9 +236,9 @@
       <div class="well well-small meta-data-item">
         <h3 class="meta-title">Page View Details</h3>
         <div class="meta-page-view">
-          Work Title: <span id="sc-work-title"></span><br/>
-          Range Title: <span id="sc-range-title"></span><br/>
-          Canvas Title: <span id="sc-canvas-title"></span></div>
+          <span>Work Title: <span id="sc-work-title"></span><br/></span>
+          <span>Range Title: <span id="sc-range-title"></span><br/></span>
+          <span>Canvas Title: <span id="sc-canvas-title"></span></span></div>
         </div>
     </div>
     <div id="detail-view-sequence" class="meta-data-group col-lg-6">
@@ -262,10 +253,12 @@
       <div class="well well-small meta-data-item">
         <h3 class="meta-title">Citation</h3>
         <h4 class="cite-page"><i class="icon-desktop icon-fixed-width"></i> Cite This Page</h4>
-        <div class="page-citation">Author, A. A. (Year). Title of chapter. In B. B. Editor (Ed.), Title of book (pp. xxx–xxx). 
-          Retrieved from http://www.shellygodwinarchive.org/xxxxx-xxx/xxxxxxxxx</div>
-        <h4 class="cite-work"><i class="icon-book icon-fixed-width"></i> Cite This Work</h4>
-        <div class="work-citation">Bodleian Shelley Manuscripts, v. IX, Prometheus Unbound, ed. Neil Fraistat. New York: Garland, 1991. Print.</div>
+        <div class="page-citation">
+          <span id="cite-author"></span> (<span id="cite-year"></span>). "<span id="cite-title"></span>", in <em>The Shelley-Godwin Archive</em>, <span id="cite-page"></span>. 
+          Retrieved from <span id="cite-url"></span>
+        </div>
+        <!--<h4 class="cite-work"><i class="icon-book icon-fixed-width"></i> Cite This Work</h4>
+        <div class="work-citation">Bodleian Shelley Manuscripts, v. IX, Prometheus Unbound, ed. Neil Fraistat. New York: Garland, 1991. Print.</div>-->
       </div>
     </div>
     <div id="detail-view-credits" class="meta-data-group col-lg-6">
@@ -277,104 +270,6 @@
   </div>
 </div>
 <!-- /detail-view-meta -->
-<script type="text/javascript">
-  $(function() {
-
-    var builder = SGA.Reader.Application.SharedCanvas.builder({
-      spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
-      searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://localhost:5000/annotate?")
-    });
-
-    if($.fn.popover != null) {
-      $("#metadata").popover({
-        title: "About this Manifest",
-        content: function() {
-          return "<p>We'll build up a list of items from the manifest.</p>";
-        },
-        html: true,
-        animation: true
-      });
-    }
-
-    builder.onManifest(
-      "Manifest-jp2.json"
-    , function(app) {
-      var filter, pageSlider, pager;
-
-      filter = SGA.Reader.Component.SequenceSelector.initInstance("#sequence", { 
-        dataView: app.dataView.sequences
-      });
-
-      pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
-
-      pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");
-
-      // modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
-
-      app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
-
-      pageSlider.events.onValueChange.addListener( app.setPosition );
-      pager.events.onValueChange.addListener( app.setPosition );
-
-      app.events.onPositionChange.addListener( function(n) {
-        app.lockPosition();
-        pageSlider.setValue(n);
-        pager.setValue(n);
-        app.unlockPosition();
-      } );
-
-      filter.events.onSequenceChange.addListener( app.setSequence );
-
-      app.events.onSequenceChange.addListener( function(s) {
-        var seq = app.dataStore.data.getItem(s);
-        if(seq != null && seq.sequence != null) {
-          pageSlider.setMin(0);
-          pager.setMin(0);
-
-          pageSlider.setMax(seq.sequence.length-1);
-          pager.setMax(seq.sequence.length-1);
-
-          if(!(app.getPosition() != null)) {
-            app.setPosition(0);
-          }
-        }
-      });
-
-      app.setSequence( filter.getSequence() );
-
-      app.events.onCanvasChange.addListener(function(c) {
-        var item = app.dataStore.data.getItem(c),
-            meta = app.getCanvasMetadata(c);
-
-        if(item.label !== undefined) {
-          $("#canvas-label").text(item.label[0]);
-        }
-        else {
-          $("#canvas-label").text("(no label)");
-        }
-        if(meta.workTitle !== undefined) {
-          $("#sc-work-title").text(meta.workTitle);
-        }
-        else {
-          $("#sc-work-title").text("");
-        }
-        if(meta.rangeTitle !== undefined) {
-          $("#sc-range-title").text(meta.rangeTitle.join("; "));
-        }
-        else {
-          $("#sc-range-title").text("");
-        }
-        if(meta.canvasTitle !== undefined) {
-          $("#sc-canvas-title").text(meta.canvasTitle);
-        }
-        else {
-          $("#sc-canvas-title").text("");
-        }
-      });
-
-    });
-  });
-</script>
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>-->
 <script src="js/plugins.js"></script>

@@ -139,7 +139,7 @@ def annotate():
     
     def do_annotation(s, f, q):
         # This will probably stay hardcoded
-        TEI_data = "http://sga.mith.org/sc-demo/tei/ox/"
+        TEI_data = "http://dev.shelleygodwinarchive.org/tei/ox/"
         hl_simple_pre = '_#_'
         hl_simple_post = '_#_'
         annotations = []

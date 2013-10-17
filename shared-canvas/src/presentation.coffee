@@ -387,16 +387,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           item = model.getItem id
 
-          
-
           # Activate imageControls
           app.imageControls.setActive(true)
-          
-          # Djatoka URL is now hardcoded, it will eventually come from the manifest
-          # when we figure out how to model it.
-          djatokaURL = "http://sga.mith.org:8080/adore-djatoka/resolver" 
-          imageURL = item.image[0]
-          baseURL = djatokaURL + "?url_ver=Z39.88-2004&rft_id=" + imageURL
+
+          baseURL = item.url[0]
 
           po = org.polymaps
 

@@ -38,6 +38,13 @@
 
     app.modeControls = SGA.Reader.Component.ModeControls.initInstance("#mode-controls");
 
+    ModeLayers = SGA.Reader.Component.ModeLayers.initInstance("#ModeLayers", { 
+      dataView: app.dataStore.data,
+      pagerEvt: app.events.onCanvasChange,
+      getMode: app.modeControls.getMode,
+      onModeChange : app.modeControls.events.onModeChange
+    });    
+
     app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
     pageSlider.events.onValueChange.addListener( app.setPosition );
@@ -70,13 +77,66 @@
     app.setSequence( filter.getSequence() );
 
     app.events.onCanvasChange.addListener(function(c) {
-      var item = app.dataStore.data.getItem(c);
-      if(item.label !== undefined) {
-        $("#canvas-label").text(item.label[0]);
+      var meta = app.getCanvasMetadata(c);
+      
+      // TOP METADATA      
+      for (var k in meta) {
+        var v = meta[k]
+        if (v !== undefined) {
+          $("#meta-"+k).next().text(v);
+        }
+        else {
+          $("#meta-"+k).next().text("Not specified");
+        }
+      }
+
+      // PAGE VIEW METADATA
+      if(meta.workTitle !== undefined) {
+        $("#sc-work-title").text(meta.workTitle);        
       }
       else {
-        $("#canvas-label").text("(no label)");
+        $("#sc-work-title").parent().remove();
       }
+      if(meta.rangeTitle !== undefined) {
+        $("#sc-range-title").text(meta.rangeTitle.join("; "));
+      }
+      else {
+        $("#sc-range-title").parent().remove();
+      }
+      if(meta.canvasTitle !== undefined) {
+        $("#sc-canvas-title").text(meta.canvasTitle);
+        $("#meta-workFolio").next().text(meta.canvasTitle);
+      }
+     else {
+        $("#sc-canvas-title").parent().remove();
+        $("#meta-workFolio").next().text("Not specified");
+      }
+
+      // CITATION
+      if(meta.workAuthor !== undefined) {
+        authorParts = meta.workAuthor.split(" ");
+        last = authorParts[authorParts.length-1];
+        initials = "";
+        for (i=0; i<authorParts.length-1; i++) { 
+          initials += authorParts[i].substring(0,1) + ". "; 
+        }
+        author = last + ", " + initials;
+        $("#cite-author").text(author);
+      }
+      if(meta.workDate !== undefined) {
+        dateParts = meta.workDate.split(" ");
+        year = dateParts[dateParts.length-1];
+        $("#cite-year").text(year);
+      }
+      if(meta.workTitle !== undefined) {
+        notebook = (meta.workNotebook !== undefined) ? meta.workNotebook : "";
+        title = meta.workTitle + " - " + notebook;
+        $("#cite-title").text(title);
+      }
+      if(meta.canvasTitle !== undefined) {
+        $("#cite-page").text(meta.canvasTitle);
+      }
+      $("#cite-url").text(document.URL);
     });
 
   });
