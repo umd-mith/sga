@@ -298,13 +298,16 @@
       if (flat == null) {
         flat = false;
       }
-      processCanvas = function(canv, data) {
+      processCanvas = function(canv, data, pos) {
         var c, c_id, c_pos, canvas, canvas_safe_id, i, i_url, img_url, resolver, sc_url, _i, _len, _ref12;
 
+        if (pos == null) {
+          pos = null;
+        }
         canvas = canv["@id"];
         c = new SGAranges.Canvas();
         _this.clv.collection.add(c);
-        c_pos = $.inArray(canvas, data.sequences[0].canvases) + 1;
+        c_pos = pos != null ? pos : $.inArray(canvas, data.sequences[0].canvases) + 1;
         sc_url = data.service;
         img_url = "";
         _ref12 = data.images;
@@ -331,7 +334,7 @@
         });
       };
       processManifest = function(data) {
-        var canv, canvas, r, range_safe_id, s_id, struct, w, w_id, work_safe_id, _i, _j, _k, _l, _len, _len1, _len2, _len3, _len4, _m, _ref12, _ref13, _ref14, _ref15, _ref16, _results;
+        var canv, canvas, cur_pos, r, range_safe_id, s_id, struct, w, w_id, work_safe_id, _i, _j, _k, _l, _len, _len1, _len2, _len3, _len4, _m, _ref12, _ref13, _ref14, _ref15, _ref16, _results;
 
         _this.wl = new SGAranges.WorkList();
         _this.wlv = new SGAranges.WorkListView({
@@ -378,7 +381,6 @@
           }
           return _this.clv.render('#' + work_safe_id + ' .panel-body');
         } else {
-          console.log('h');
           _ref14 = data.structures;
           _results = [];
           for (_k = 0, _len2 = _ref14.length; _k < _len2; _k++) {
@@ -389,14 +391,18 @@
             });
             s_id = struct["@id"];
             range_safe_id = s_id.replace(/[:\/\.]/g, "_");
+            cur_pos = 0;
             _ref15 = struct.canvases;
             for (_l = 0, _len3 = _ref15.length; _l < _len3; _l++) {
               canvas = _ref15[_l];
+              cur_pos += 1;
               _ref16 = data.canvases;
               for (_m = 0, _len4 = _ref16.length; _m < _len4; _m++) {
                 canv = _ref16[_m];
                 if (canv["@id"] === canvas) {
-                  processCanvas(canv, data);
+                  console.log(cur_pos);
+                  processCanvas(canv, data, cur_pos);
+                  break;
                 }
               }
             }
@@ -416,8 +422,9 @@
   })(jQuery, window.SGAranges, _, Backbone);
 
   (function($) {
-    SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest-index.jsonld", true);
-    return SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest-index.jsonld", true);
+    SGAranges.LoadRanges("ox-ms_abinger_c56/Manifest-index.jsonld", true);
+    SGAranges.LoadRanges("ox-ms_abinger_c57/Manifest-index.jsonld", true);
+    return SGAranges.LoadRanges("ox-frankenstein_draft/Manifest-index.jsonld");
   })(jQuery);
 
 }).call(this);
