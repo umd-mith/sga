@@ -19,8 +19,8 @@
 
       Work.prototype.defaults = {
         "id": "",
-        "title": "[Title]",
-        "meta": "[Work Metadata]"
+        "title": "",
+        "meta": ""
       };
 
       return Work;
@@ -36,8 +36,8 @@
 
       Range.prototype.defaults = {
         "id": "",
-        "label": "[Range Label]",
-        "meta": "[Range Metadata]"
+        "label": "",
+        "meta": ""
       };
 
       return Range;
@@ -53,7 +53,7 @@
 
       Canvas.prototype.defaults = {
         "id": "",
-        "label": "[Canvas Label]",
+        "label": "",
         "position": 1,
         "scUrl": "",
         "imgUrl": "",
@@ -400,7 +400,6 @@
               for (_m = 0, _len4 = _ref16.length; _m < _len4; _m++) {
                 canv = _ref16[_m];
                 if (canv["@id"] === canvas) {
-                  console.log(cur_pos);
                   processCanvas(canv, data, cur_pos);
                   break;
                 }
@@ -422,9 +421,9 @@
   })(jQuery, window.SGAranges, _, Backbone);
 
   (function($) {
-    SGAranges.LoadRanges("ox-ms_abinger_c56/Manifest-index.jsonld", true);
-    SGAranges.LoadRanges("ox-ms_abinger_c57/Manifest-index.jsonld", true);
-    return SGAranges.LoadRanges("ox-frankenstein_draft/Manifest-index.jsonld");
+    SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest-index.jsonld", true);
+    SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest-index.jsonld", true);
+    return SGAranges.LoadRanges("http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein_draft/Manifest-index.jsonld");
   })(jQuery);
 
 }).call(this);
