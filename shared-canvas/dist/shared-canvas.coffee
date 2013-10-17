@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132890
+# SGA Shared Canvas v0.132900
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Oct 16 12:39:42 2013 -0400
+# Date: Wed Oct 16 17:00:05 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -661,9 +661,11 @@
     
               canvas = $(container).parent().get(0)
     
+              tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080/, 'http://dev.shelleygodwinarchive.org/')
+    
               toAdoratio = $.ajax
                 datatype: "json"
-                url: baseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
+                url: tempBaseURL + '&svc_id=info:lanl-repo/svc/getMetadata'
                 success: adoratio(canvas, baseURL, map)
     
               # wait for polymap to load image and update map, then...
@@ -1868,6 +1870,15 @@
         LimitViewControls.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.LimitViewControls", args..., (that, container) ->
             $c = $(container)
+    
+            # Disable in non-standard view modes
+            that.options.onModeChange.addListener (m) ->
+              if m != 'normal'
+                $(container).fadeTo(1, 0.3)
+                $(container).find('input').prop('disabled', true)
+              else
+                $(container).fadeTo(1, 1)
+                $(container).find('input').prop('disabled', false)
     
             # Declare general classes the control appearance.
             # By doing this, when the user moves to another canvas in the sequence, the style "sticks".          
