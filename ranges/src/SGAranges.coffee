@@ -10,23 +10,23 @@ window.SGAranges = {}
   class SGAranges.Work extends Backbone.Model
     defaults:
       "id"     : ""
-      "title"  : "[Title]"
-      "meta"   : "[Work Metadata]"
+      "title"  : ""
+      "meta"   : ""
       # "ranges" : new SGAranges.RangeList
 
   # Range
   class SGAranges.Range extends Backbone.Model
     defaults:
       "id"       : ""
-      "label"    : "[Range Label]"
-      "meta"     : "[Range Metadata]"
+      "label"    : ""
+      "meta"     : ""
       # "canvases" : new SGAranges.CanvasList
 
   # Canvas
   class SGAranges.Canvas extends Backbone.Model
     defaults:
       "id"       : ""
-      "label"    : "[Canvas Label]"
+      "label"    : ""
       "position" : 1
       "scUrl"    : ""
       "imgUrl"   : ""
