@@ -64,7 +64,7 @@ class GSAContentHandler(xml.sax.ContentHandler):
         self.hand_start = 0
         self.path = [] # name, hand
 
-        self.addSpan = None
+        self.addSpan = {"id": "", "hand": None}
         self.delSpan = None
 
         # Initialize doc
@@ -108,7 +108,9 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
         if name == "addSpan":
             spanTo = attrs["spanTo"] if "spanTo" in attrs else " "
-            self.addSpan = spanTo[1:] if spanTo[0] == "#" else spanTo
+            self.addSpan["id"] = spanTo[1:] if spanTo[0] == "#" else spanTo
+            if "hand" in attrs:
+                self.addSpan["hand"] = attrs["hand"]
 
         if name == "delSpan":
             spanTo = attrs["spanTo"] if "spanTo" in attrs else " "
@@ -116,17 +118,27 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
         # if this is the anchor of and (add|del)Span, close the addition/deletion
         if name == "anchor":
-            if attrs["xml:id"] == self.addSpan:
-                self.addSpan = None
-                self.doc.mod_pos["add"][-1] += str(self.pos)
-            if attrs["xml:id"] == self.delSpan:
-                self.delSpan = None
-                self.doc.mod_pos["del"][-1] += str(self.pos)
+            if "xml:id" in attrs:
+                if attrs["xml:id"] == self.addSpan:
+
+                    # If the anchor corresponds to and addSpan with @hand, remove the hand from stack
+                    if self.addSpan["hand"] != None:
+                        if len(self.path) > 1 and self.hands[-1] != self.path[-2][-1]:
+                            self.hands.pop()
+                    # reset addSpan
+                    self.addSpan["id"] = ""
+                    self.addSpan["hand"] = None
+                    self.doc.mod_pos["add"][-1] += str(self.pos)
+                if attrs["xml:id"] == self.delSpan:
+                    self.delSpan = None
+                    self.doc.mod_pos["del"][-1] += str(self.pos)
  
     def endElement(self, name):
-        # Remove hand from hand stack if this is the last element with that hand    
-        if len(self.path) > 1 and self.hands[-1] != self.path[-2][-1]:
-            self.hands.pop()
+        # Remove hand from hand stack if this is the last element with that hand
+        # Unless it's an addSpan with hand, in which case we defer to the corresponding anchor
+        if name != "addSpan" and self.addSpan["hand"] == None:
+            if len(self.path) > 1 and self.hands[-1] != self.path[-2][-1]:
+                self.hands.pop()
         # Remove the element from element stack
         self.path.pop()
 
@@ -154,7 +166,7 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
         # if this is a descendant of add|del or we are in an (add|del)Span area, add content to added/deleted
         elements = [e[0] for e in self.path]
-        if 'add' in elements or self.addSpan:
+        if 'add' in elements or self.addSpan["id"] != "":
             self.doc.mod["add"][-1] += content
         if 'del' in elements or self.delSpan:
             self.doc.mod["del"][-1] += content

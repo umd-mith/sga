@@ -13,13 +13,12 @@ window.SGAsearch = {}
   class SGAsearch.SearchResult extends Backbone.Model
     defaults:
       "hls"   : []
-      "id": "[Page]"
-      "shelfmark": "[Shelfmark]"
-      "title" : "[Title]"
-      "nbook" : "[Notebook]"
-      "author" : "[Author]"
-      "editor" : "[Editor]"
-      "date" : "[Date]" 
+      "id": "" # [Page]
+      "shelfmark": "" # [Shelfmark]
+      "title" : "" # [Title]
+      "nbook" : "" # [Notebook]
+      "author" : "" # [Author]
+      "date" : "" # [Date] 
       "imageURL" : "http://placehold.it/75x100"
       "detailQuery" : ""
 
