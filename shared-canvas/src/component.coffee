@@ -472,15 +472,14 @@ SGAReader.namespace "Component", (Component) ->
           $('*[data-types=Text]').show()
 
         imgBinding.onSelect = ->
-          if !imgBinding.locate('').hasClass('active')
-            stored_txt_canvas = $('*[data-types=Text]').parent()
-            $('*[data-types=Text]').parent().remove()
+          stored_txt_canvas = $('*[data-types=Text]').parent()
+          $('*[data-types=Text]').parent().remove()
 
-            # Double the bootstrap column
-            c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-            $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
+          # Double the bootstrap column
+          c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+          $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
 
-            $('*[data-types=Image]').trigger('resetPres')
+          $('*[data-types=Image]').trigger('resetPres')
 
         ###
         $(imgOnly).click (e) ->

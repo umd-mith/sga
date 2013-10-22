@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Oct 22 13:54:38 2013 -0400
+# Date: Tue Oct 22 15:25:42 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -1868,15 +1868,14 @@
               $('*[data-types=Text]').show()
     
             imgBinding.onSelect = ->
-              if !imgBinding.locate('').hasClass('active')
-                stored_txt_canvas = $('*[data-types=Text]').parent()
-                $('*[data-types=Text]').parent().remove()
+              stored_txt_canvas = $('*[data-types=Text]').parent()
+              $('*[data-types=Text]').parent().remove()
     
-                # Double the bootstrap column
-                c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
-                $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
+              # Double the bootstrap column
+              c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+              $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
     
-                $('*[data-types=Image]').trigger('resetPres')
+              $('*[data-types=Image]').trigger('resetPres')
     
             ###
             $(imgOnly).click (e) ->
@@ -1992,11 +1991,13 @@
     
               binding.eventModeSelect = (m) ->
                 if options.mode == m
-                  el.addClass 'active'
-                  binding.onSelect()
+                  if not el.hasClass 'active'
+                    el.addClass 'active'
+                    binding.onSelect()
                 else
-                  el.removeClass 'active'
-                  binding.onUnselect()
+                  if el.hasClass 'active'
+                    el.removeClass 'active'
+                    binding.onUnselect()
     
               binding.onSelect = ->
               binding.onUnselect = ->
