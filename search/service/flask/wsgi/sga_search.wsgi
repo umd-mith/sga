@@ -1,7 +1,8 @@
-from sga_search import sga_search
 import sys
 
 sys.path.insert(0, '/home/ubuntu/code/sga/search/service/flask')
+
+from sga_search import sga_search as application
 
 """ This goes to apache2 config file. In ubuntu 12.04: /etc/apache2/sites-available/default
 

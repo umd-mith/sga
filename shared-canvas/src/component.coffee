@@ -483,6 +483,15 @@ SGAReader.namespace "Component", (Component) ->
       MITHgrid.initInstance "SGA.Reader.Component.LimitViewControls", args..., (that, container) ->
         $c = $(container)
 
+        # Disable in non-standard view modes
+        that.options.onModeChange.addListener (m) ->
+          if m != 'normal'
+            $(container).fadeTo(1, 0.3)
+            $(container).find('input').prop('disabled', true)
+          else
+            $(container).fadeTo(1, 1)
+            $(container).find('input').prop('disabled', false)
+
         # Declare general classes the control appearance.
         # By doing this, when the user moves to another canvas in the sequence, the style "sticks".          
 
