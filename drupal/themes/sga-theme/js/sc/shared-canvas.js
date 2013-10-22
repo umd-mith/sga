@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Oct 22 13:54:38 2013 -0400
+# Date: Tue Oct 22 15:25:42 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -1920,13 +1920,11 @@
               };
               return imgBinding.onSelect = function() {
                 var c;
-                if (!imgBinding.locate('').hasClass('active')) {
-                  stored_txt_canvas = $('*[data-types=Text]').parent();
-                  $('*[data-types=Text]').parent().remove();
-                  c = /(col-[^-]+?-)(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
-                  $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2;
-                  return $('*[data-types=Image]').trigger('resetPres');
-                }
+                stored_txt_canvas = $('*[data-types=Text]').parent();
+                $('*[data-types=Text]').parent().remove();
+                c = /(col-[^-]+?-)(\d+)/g.exec($('*[data-types=Image]').parent()[0].className);
+                $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2;
+                return $('*[data-types=Image]').trigger('resetPres');
               };
               /*
               $(imgOnly).click (e) ->
@@ -2042,11 +2040,15 @@
                 el.bind('click', binding.$clickHandler);
                 binding.eventModeSelect = function(m) {
                   if (options.mode === m) {
-                    el.addClass('active');
-                    return binding.onSelect();
+                    if (!el.hasClass('active')) {
+                      el.addClass('active');
+                      return binding.onSelect();
+                    }
                   } else {
-                    el.removeClass('active');
-                    return binding.onUnselect();
+                    if (el.hasClass('active')) {
+                      el.removeClass('active');
+                      return binding.onUnselect();
+                    }
                   }
                 };
                 binding.onSelect = function() {};

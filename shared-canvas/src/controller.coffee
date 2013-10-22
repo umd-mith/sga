@@ -20,11 +20,13 @@ SGAReader.namespace "Controller", (Controller) ->
 
           binding.eventModeSelect = (m) ->
             if options.mode == m
-              el.addClass 'active'
-              binding.onSelect()
+              if not el.hasClass 'active'
+                el.addClass 'active'
+                binding.onSelect()
             else
-              el.removeClass 'active'
-              binding.onUnselect()
+              if el.hasClass 'active'
+                el.removeClass 'active'
+                binding.onUnselect()
 
           binding.onSelect = ->
           binding.onUnselect = ->
