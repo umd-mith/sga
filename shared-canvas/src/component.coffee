@@ -405,7 +405,8 @@ SGAReader.namespace "Component", (Component) ->
             when 'xml'
               $(container).addClass 'xml'
               show()
-            when 'normal'
+            #when 'normal'
+            else
               hide()
             
   Component.namespace "ModeControls", (ModeControls) ->
@@ -430,10 +431,10 @@ SGAReader.namespace "Component", (Component) ->
 
           that.setMode('normal')
 
-        imgOnly = $(container).find("#img-only")
-        rdg = $(container).find("#mode-rdg")
-        xml = $(container).find("#mode-xml")
-        std = $(container).find("#mode-std")
+        #imgOnly = $(container).find("#img-only")
+        #rdg = $(container).find("#mode-rdg")
+        #xml = $(container).find("#mode-xml")
+        #std = $(container).find("#mode-std")
 
         modeController = SGA.Reader.Controller.ModeSelector.initInstance()
         rdgBinding = modeController.bind '#mode-rdg',
@@ -451,26 +452,19 @@ SGAReader.namespace "Component", (Component) ->
         imgBinding.events.onModeSelect.addListener that.setMode
 
         that.events.onModeChange.addListener (m) ->
-          rdgBinding.eventModeSelect m
-          xmlBinding.eventModeSelect m
-          stdBinding.eventModeSelect m
-          imgBinding.eventModeSelect m
+          thing.eventModeSelect m for thing in [ rdgBinding, xmlBinding, stdBinding, imgBinding ]
           $.bbq.pushState
               m: m
 
         rdgBinding.onSelect = ->
           if stored_txt_canvas?            
             restoreBoth()
-
-          if !rdgBinding.locate('').hasClass('active')
-            $('*[data-types=Text]').hide()
+          $('*[data-types=Text]').hide()
 
         xmlBinding.onSelect = ->
           if stored_txt_canvas?            
             restoreBoth()
-
-          if !xmlBinding.locate('').hasClass('active')
-            $('*[data-types=Text]').hide()
+          $('*[data-types=Text]').hide()
 
         stdBinding.onSelect = ->
           if stored_txt_canvas?
@@ -487,15 +481,6 @@ SGAReader.namespace "Component", (Component) ->
             $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
 
             $('*[data-types=Image]').trigger('resetPres')
-
-        $(window).bind "hashchange", (e) ->
-          m = $.bbq.getState "m" 
-          if m? and m != ""
-            that.setMode m        
-
-        m = $.bbq.getState "m"
-        if m? and m != ""
-          that.setMode m
 
         ###
         $(imgOnly).click (e) ->

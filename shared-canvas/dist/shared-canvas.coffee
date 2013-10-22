@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132900
+# SGA Shared Canvas v0.132950
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Oct 16 17:00:05 2013 -0400
+# Date: Tue Oct 22 13:54:38 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -89,6 +89,8 @@
                       url: file
                       type: 'GET'
                       processData: false
+                      beforeSend: (jqXHR) ->
+                        jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
                       success: (data) ->
                         c = data.documentElement.textContent
                         fileContents[file] = c
@@ -159,6 +161,8 @@
                 contentType: 'application/rdf+json'
                 processData: false
                 dataType: 'json'
+                beforeSend: (jqXHR) ->
+                  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
                 success: (data) ->
                   that.addItemsProcessed 1
                   that.importJSON data, cb
@@ -1222,6 +1226,8 @@
                       url: file
                       type: 'GET'
                       processData: false
+                      beforeSend: (jqXHR) ->
+                        jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
                       success: (data) ->
                         c = data.documentElement.textContent
                         fileContents[file] = c
@@ -1292,6 +1298,8 @@
                 contentType: 'application/rdf+json'
                 processData: false
                 dataType: 'json'
+                beforeSend: (jqXHR) ->
+                  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
                 success: (data) ->
                   that.addItemsProcessed 1
                   that.importJSON data, cb
@@ -1793,18 +1801,14 @@
                 when 'xml'
                   $(container).addClass 'xml'
                   show()
-                when 'normal'
+                #when 'normal'
+                else
                   hide()
                 
       Component.namespace "ModeControls", (ModeControls) ->
         ModeControls.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
             options = that.options
-    
-            imgOnly = $(container).find("#img-only")
-            rdg = $(container).find("#mode-rdg")
-            xml = $(container).find("#mode-xml")
-            std = $(container).find("#mode-std")
     
             stored_txt_canvas = null
     
@@ -1823,6 +1827,58 @@
     
               that.setMode('normal')
     
+            #imgOnly = $(container).find("#img-only")
+            #rdg = $(container).find("#mode-rdg")
+            #xml = $(container).find("#mode-xml")
+            #std = $(container).find("#mode-std")
+    
+            modeController = SGA.Reader.Controller.ModeSelector.initInstance()
+            rdgBinding = modeController.bind '#mode-rdg',
+              mode: 'reading'
+            xmlBinding = modeController.bind '#mode-xml',
+              mode: 'xml'
+            stdBinding = modeController.bind '#mode-std',
+              mode: 'normal'
+            imgBinding = modeController.bind '#img-only',
+              mode: 'imgOnly'
+    
+            rdgBinding.events.onModeSelect.addListener that.setMode
+            xmlBinding.events.onModeSelect.addListener that.setMode
+            stdBinding.events.onModeSelect.addListener that.setMode
+            imgBinding.events.onModeSelect.addListener that.setMode
+    
+            that.events.onModeChange.addListener (m) ->
+              thing.eventModeSelect m for thing in [ rdgBinding, xmlBinding, stdBinding, imgBinding ]
+              $.bbq.pushState
+                  m: m
+    
+            rdgBinding.onSelect = ->
+              if stored_txt_canvas?            
+                restoreBoth()
+              $('*[data-types=Text]').hide()
+    
+            xmlBinding.onSelect = ->
+              if stored_txt_canvas?            
+                restoreBoth()
+              $('*[data-types=Text]').hide()
+    
+            stdBinding.onSelect = ->
+              if stored_txt_canvas?
+                restoreBoth()
+              $('*[data-types=Text]').show()
+    
+            imgBinding.onSelect = ->
+              if !imgBinding.locate('').hasClass('active')
+                stored_txt_canvas = $('*[data-types=Text]').parent()
+                $('*[data-types=Text]').parent().remove()
+    
+                # Double the bootstrap column
+                c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+                $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
+    
+                $('*[data-types=Image]').trigger('resetPres')
+    
+            ###
             $(imgOnly).click (e) ->
               e.preventDefault()
     
@@ -1864,7 +1920,7 @@
                 restoreBoth()
               $('*[data-types=Text]').show()
               that.setMode('normal')
-    
+            ###
     
       Component.namespace "LimitViewControls", (LimitViewControls) ->
         LimitViewControls.initInstance = (args...) ->
@@ -1913,7 +1969,43 @@
             $c.find('#hand-view_0').change ->
               if $(this).is(':checked')  
                 $('#LimitViewControls_classes').remove()    
+
     # # Controllers
+    
+    SGAReader.namespace "Controller", (Controller) ->
+      Controller.namespace "ModeSelector", (ModeSelector) ->
+        ModeSelector.initInstance = (args...) ->
+          MITHgrid.Controller.initInstance "SGA.Reader.Controller.ModeSelector", args..., (that, container) ->
+            set = []
+            
+    
+            that.applyBindings = (binding, options) ->
+              set.push binding
+    
+              el = binding.locate ''
+              binding.$clickHandler = (e) ->
+                e.preventDefault()
+                binding.events.onModeSelect.fire(options.mode)
+                for b in set
+                  b.eventModeSelect?(options.mode)
+              el.bind 'click', binding.$clickHandler
+    
+              binding.eventModeSelect = (m) ->
+                if options.mode == m
+                  el.addClass 'active'
+                  binding.onSelect()
+                else
+                  el.removeClass 'active'
+                  binding.onUnselect()
+    
+              binding.onSelect = ->
+              binding.onUnselect = ->
+    
+            that.removeBindings = (binding) ->
+              set = (s for s in set when s != binding)
+              el.unbind 'click', binding.$clickHandler
+    
+
     # # Core Utilities
 
     # # Application
@@ -2834,3 +2926,8 @@ MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
 MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
   variables:
     Mode: { is: 'rw', default: 'normal' }
+
+MITHgrid.defaults 'SGA.Reader.Controller.ModeSelector',
+  bind:
+    events:
+      onModeSelect: null
