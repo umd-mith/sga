@@ -7,7 +7,7 @@
 
   var builder = SGA.Reader.Application.SharedCanvas.builder({
     spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
-    searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://ec2-107-22-87-255.compute-1.amazonaws.com/annotate?")
+    searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://107.20.241.32/annotate?")
   });
 
   if($.fn.popover != null) {
@@ -45,7 +45,14 @@
       pagerEvt: app.events.onCanvasChange,
       getMode: app.modeControls.getMode,
       onModeChange : app.modeControls.events.onModeChange
-    });    
+    });
+
+    $(window).bind("hashchange", function(e) {
+      var m = $.bbq.getState("m");
+      if(m !== undefined && m !== "") {
+        app.modeControls.setMode(m);
+      }
+    });
 
     app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
@@ -139,6 +146,13 @@
         $("#cite-page").text(meta.canvasTitle);
       }
       $("#cite-url").text(document.URL);
+    });
+    
+    app.ready(function() {
+      var m = $.bbq.getState("m");
+      if(m !== undefined && m !== "") {
+        app.modeControls.setMode(m);
+      }
     });
 
   });

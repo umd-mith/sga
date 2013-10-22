@@ -129,3 +129,8 @@ MITHgrid.defaults 'SGA.Reader.Component.SearchBox',
 MITHgrid.defaults 'SGA.Reader.Component.ModeControls',
   variables:
     Mode: { is: 'rw', default: 'normal' }
+
+MITHgrid.defaults 'SGA.Reader.Controller.ModeSelector',
+  bind:
+    events:
+      onModeSelect: null

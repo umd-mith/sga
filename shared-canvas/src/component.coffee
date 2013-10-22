@@ -405,18 +405,14 @@ SGAReader.namespace "Component", (Component) ->
             when 'xml'
               $(container).addClass 'xml'
               show()
-            when 'normal'
+            #when 'normal'
+            else
               hide()
             
   Component.namespace "ModeControls", (ModeControls) ->
     ModeControls.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.ModeControls", args..., (that, container) ->
         options = that.options
-
-        imgOnly = $(container).find("#img-only")
-        rdg = $(container).find("#mode-rdg")
-        xml = $(container).find("#mode-xml")
-        std = $(container).find("#mode-std")
 
         stored_txt_canvas = null
 
@@ -435,6 +431,58 @@ SGAReader.namespace "Component", (Component) ->
 
           that.setMode('normal')
 
+        #imgOnly = $(container).find("#img-only")
+        #rdg = $(container).find("#mode-rdg")
+        #xml = $(container).find("#mode-xml")
+        #std = $(container).find("#mode-std")
+
+        modeController = SGA.Reader.Controller.ModeSelector.initInstance()
+        rdgBinding = modeController.bind '#mode-rdg',
+          mode: 'reading'
+        xmlBinding = modeController.bind '#mode-xml',
+          mode: 'xml'
+        stdBinding = modeController.bind '#mode-std',
+          mode: 'normal'
+        imgBinding = modeController.bind '#img-only',
+          mode: 'imgOnly'
+
+        rdgBinding.events.onModeSelect.addListener that.setMode
+        xmlBinding.events.onModeSelect.addListener that.setMode
+        stdBinding.events.onModeSelect.addListener that.setMode
+        imgBinding.events.onModeSelect.addListener that.setMode
+
+        that.events.onModeChange.addListener (m) ->
+          thing.eventModeSelect m for thing in [ rdgBinding, xmlBinding, stdBinding, imgBinding ]
+          $.bbq.pushState
+              m: m
+
+        rdgBinding.onSelect = ->
+          if stored_txt_canvas?            
+            restoreBoth()
+          $('*[data-types=Text]').hide()
+
+        xmlBinding.onSelect = ->
+          if stored_txt_canvas?            
+            restoreBoth()
+          $('*[data-types=Text]').hide()
+
+        stdBinding.onSelect = ->
+          if stored_txt_canvas?
+            restoreBoth()
+          $('*[data-types=Text]').show()
+
+        imgBinding.onSelect = ->
+          if !imgBinding.locate('').hasClass('active')
+            stored_txt_canvas = $('*[data-types=Text]').parent()
+            $('*[data-types=Text]').parent().remove()
+
+            # Double the bootstrap column
+            c = /(col-[^-]+?-)(\d+)/g.exec( $('*[data-types=Image]').parent()[0].className )
+            $('*[data-types=Image]').parent()[0].className = c[1] + parseInt(c[2]) * 2
+
+            $('*[data-types=Image]').trigger('resetPres')
+
+        ###
         $(imgOnly).click (e) ->
           e.preventDefault()
 
@@ -476,7 +524,7 @@ SGAReader.namespace "Component", (Component) ->
             restoreBoth()
           $('*[data-types=Text]').show()
           that.setMode('normal')
-
+        ###
 
   Component.namespace "LimitViewControls", (LimitViewControls) ->
     LimitViewControls.initInstance = (args...) ->
