@@ -28,25 +28,28 @@ SGAReader.namespace "Presentation", (Presentation) ->
           that.setX options.x
         if options.y?
           that.setY options.y
+        if options.height?
+          that.setHeight options.height
+        if options.scale?
+          that.setScale options.scale
 
+        if options.inHTML
+          that.events.onScaleChange.addListener (s) ->
+            #$(container).css
+            #  position: 'absolute'
+            #  left: parseInt(that.getX() * s, 10) + "px"
+            #  top: parseInt(that.getY() * s, 10) + "px"
+            #  width: parseInt(that.getWidth() * s, 10) + "px"
+            #  height: parseInt(that.getHeight() * s, 10) + "px"
+            r.setScale(s) for r in scaleSettings
+
+          
         #
         # We draw each text span type the same way. We rely on the
         # item.type to give us the CSS classes we need for the span
         #
-        heightSettingTimer = null
-        adjustHeight = ->
-          if heightSettingTimer?
-            clearTimeout heightSettingTimer
-          heightSettingTimer = setTimeout ->
-            h = $(container).height() * 10
-            if h > options.height
-              that.setHeight h
-            else if h < options.height
-              that.setHeight options.height
-            heightSettingTimer = null
-          , 0
-
         lines = {}
+        scaleSettings = []
         currentLine = 0
 
         that.startDisplayUpdate = ->
@@ -72,6 +75,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
             afterLayoutPos = 0
             for r in lines[lineNo]
               do (r) ->
+                if r.setScale?
+                  scaleSettings.push r
                 if r.$el?
                   if r.positioned
                     currentPos = r.charLead
@@ -91,7 +96,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
           setTimeout ->
             runAfterLayout 0
           , 0
-          adjustHeight()
           null
 
         renderingTimer = null
@@ -123,16 +127,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
           lines[currentLine].push rendering
           rendering.line = currentLine
           rendering.positioned = false
+          rendering.setScale = ->
+
           rendering.afterLayout = ->
 
           rendering.remove = ->
             el.remove()
             lines[rendering.line] = (r for r in lines[rendering.line] when r != rendering)
-            adjustHeight()
 
           rendering.update = (item) ->
             el.text item.text[0]
-            adjustHeight()
 
           rendering
 
@@ -160,6 +164,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
           else
             rendering.charWidth = content.length
           rendering.line = ourLineNo
+
+          rendering.setScale = ->
+            # noop
 
           rendering.afterLayout = ->
             ourWidth = that.getWidth() / 10
@@ -224,16 +231,18 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 rendering.$el.css
                     'position': 'relative'
                     'left': (neededSpace) + "px"
+                rendering.left = neededSpace / that.getScale()
+                rendering.setScale = (s) ->
+                  rendering.$el.css
+                    'left': parseInt(rendering.left * s, 10) + "px"
 
 
           rendering.remove = ->
             el.remove()
             lines[rendering.line] = (r for r in lines[rendering.line] when r != rendering)
-            adjustHeight()
 
           rendering.update = (item) ->
             el.text item.text[0]
-            adjustHeight()
 
           rendering
 
@@ -284,6 +293,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         #
         that.addLens 'LineBreak', (container, view, model, id) ->
           currentLine += 1
+          null
 
   #
   # ## Presentation.Zone
@@ -307,24 +317,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.setWidth options.width
         that.setX options.x
         that.setY options.y
+        that.setScale options.scale
 
-        recalculateHeightTimer = null
         recalculateHeight = (h) ->
-          if recalculateHeightTimer?
-            clearTimeout recalculateHeightTimer
-          heightSettingTimer = setTimeout ->
-            length = (h or 0)
-            that.visitRenderings (id) ->
-              r = that.renderingFor id
-              if r.getHeight?
-                h = (r.getHeight() or 0)
-              if r.getY?
-                h += (r.getY() or 0)
-              if h > length
-                length = h
-              true
-            that.setHeight length + 15
-          , 0
+         
 
         #
         # !target gives us all of the annotations that target the given
@@ -572,11 +568,17 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
           container.appendChild(textContainer)
           bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+          $(bodyEl).attr('xmlns', "http://www.w3.org/1999/xhtml")
+
           overflowDiv = document.createElement('div')
           bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
-          $(rootEl).css('overflow-x', 'auto')
+          $(overflowDiv).css
+            'overflow': 'auto'
+            'height': height/10
+            'width': width/10
+
           overflowDiv.appendChild rootEl
           
           rootEl.text(item.text[0])
@@ -609,11 +611,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
           # Set initial viewbox
           svg = $(svgRoot.root())
           # jQuery won't modify the viewBox - using pure JS
-          #vb = svg.get(0).getAttribute("viewBox")
+          vb = svg.get(0).getAttribute("viewBox")
 
-          #if !vb?
-          #  svgRoot.configure
-          #    viewBox: "0 0 #{options.width} #{options.height}"
+          if !vb?
+            svgRoot.configure
+              viewBox: "0 0 #{options.width} #{options.height}"
 
           rendering = {}
           
@@ -638,19 +640,20 @@ SGAReader.namespace "Presentation", (Presentation) ->
           # element, we can use jQuery all we want.
           #
           bodyEl = document.createElementNS('http://www.w3.org/1999/xhtml', 'body')
+          $(bodyEl).attr('xmlns', "http://www.w3.org/1999/xhtml")
           overflowDiv = document.createElement('div')
-          $(overflowDiv).css('overflow-x', 'auto')
+          $(overflowDiv).css('overflow', 'auto')
 
           bodyEl.appendChild overflowDiv
           rootEl = document.createElement('div')
           $(rootEl).addClass("text-content")
           $(rootEl).attr("id", id)
           $(rootEl).css
-            "font-size": 15.0
-            "line-height": 1.15
-            "overflow": "auto"
+            #"font-size": 15.0
+            #"line-height": 1.15
+            #"overflow": "auto"
             "white-space": "nowrap"
-            "overflow-x": "auto"
+            "overflow": "auto"
 
           overflowDiv.appendChild(rootEl)
           textContainer.appendChild(bodyEl)
@@ -679,6 +682,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10).attr("height", height/10)
           $(rootEl).css('width', width/10)
+          $(overflowDiv).css
+            'width': width/10
+            'height': height/10
 
           #
           # Here we embed the text-based zone within the pixel-based
@@ -694,6 +700,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             width: width
             x: x
             y: y
+            scale: that.getScale()
 
           #
           # Once we have the presentation in place, we set the
@@ -741,11 +748,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
               marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
               marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
 
+          ###
           that.onDestroy text.events.onHeightChange.addListener (h) ->
-            $(textContainer).attr("height", h/10)
-            $(overflowDiv).attr("height", h/10)
-            recalculateHeight()
-            setTimeout (-> updateMarque app.imageControls.getZoom()), 0
+            #$(textContainer).attr("height", h/10)
+            #$(overflowDiv).attr("height", h/10)
+            #recalculateHeight()
+            #setTimeout (-> updateMarque app.imageControls.getZoom()), 0
+          ###
 
           rendering.getHeight = text.getHeight
 
@@ -764,26 +773,351 @@ SGAReader.namespace "Presentation", (Presentation) ->
             y = if item.y?[0]? then item.y[0] else 0
             width = if item.width?[0]? then item.width[0] else options.width - x
             height = if item.height?[0]? then item.height[0] else options.height - y
-            if height > that.getHeight()
-              that.setHeight height
-            else
-              height = that.getHeight()
-           
+            #if height > that.getHeight()
+            #  that.setHeight height
+            #else
+            #  height = that.getHeight()
+            that.setHeight height
             $(textContainer).attr("x", x/10).attr("y", y/10).attr("width", width/10)
 
+          rendering
+
+  Presentation.namespace "TextZone", (Zone) ->
+    Zone.initInstance = (args...) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextZone", args..., (that, container) ->
+        options = that.options
+        svgRoot = options.svgRoot
+
+        app = that.options.application()
+
+        that.setHeight options.height
+        that.setWidth options.width
+        that.setX options.x
+        that.setY options.y
+        that.setScale options.scale
+
+        that.events.onScaleChange.addListener (s) ->
+          that.visitRenderings (id, r) ->
+            r.setScale?(s)
+            true
+
+
+        #
+        # !target gives us all of the annotations that target the given
+        # item id. We use this later to find all of the annotations that target
+        # a given zone.
+        #
+        annoExpr = that.dataView.prepare(['!target'])
+
+        #
+        # A ContentAnnotation is just text placed on the canvas. No
+        # structure. This is the default mode for SharedCanvas.
+        #
+        # See the following TextContentZone lens for how we're managing
+        # the SVG/HTML interface.
+        #
+
+        that.addLens 'ContentAnnotation', (innerContainer, view, model, id) ->
+          rendering = {}
+          item = model.getItem id
+
+          textContainer = $("<div></div>")
+
+          x = if item.x?[0]? then item.x[0] else 0
+          y = if item.y?[0]? then item.y[0] else 0
+          width = if item.width?[0]? then item.width[0] else options.width - x
+          height = if item.height?[0]? then item.height[0] else options.height - y
+          
+          $(textContainer).css
+            "position": "absolute"
+            "left": parseInt(16 + x * that.getScale(), 10) + "px"
+            "top": parseInt(y * that.getScale(), 10) + "px"
+            "width": parseInt(width * that.getScale(), 10) + "px"
+            "height": parseInt(height * that.getScale(), 10) + "px"
+
+          container.append(textContainer)
+          overflowDiv = $("<div></div>")
+          container.append overflowDiv
+          rootEl = $("<div></div>")
+          $(rootEl).addClass("text-content")
+          $(overflowDiv).css
+            'overflow': 'auto'
+            'height': parseInt(height * that.getScale(), 10) + "px"
+            'width': parseInt(width * that.getScale(), 10) + "px"
+
+          overflowDiv.append rootEl
+          
+          rootEl.text(item.text[0])
+          rendering.getHeight = -> $(textContainer).height() * 10
+
+          rendering.getY = -> $(textContainer).position().top * 10
+
+          rendering.update = (item) ->
+            rootEl.text(item.text[0])
+          rendering.remove = ->
+            rootEl.remove()
+          rendering.setScale = (s) ->
+            $(textContainer).css
+              "left": parseInt(16 + x * s, 10) + "px"
+              "top": parseInt(y * s, 10) + "px"
+              "width": parseInt(width * s, 10) + "px"
+              "height": parseInt(height * s, 10) + "px"
+            $(overflowDiv).css
+              'height': parseInt(height * that.getScale(), 10) + "px"
+              'width': parseInt(width * that.getScale(), 10) + "px"
+          rendering
+
+        #
+        #
+        # We're rendering text content from here on down, so if we aren't
+        # rendering text for this view, then we shouldn't do anything here.
+        #
+        # N.B.: If we ever support showing images based on their place
+        # in the text, then we will need to treat this like we treat the
+        # Zone above and allow rendering of embedded zones even if we don't
+        # render the textual content.
+        #
+        # We have code to expand the overall canvas size for a Text-based div
+        # if the text is too long for the view.
+        #
+        that.addLens 'TextContentZone', (innerContainer, view, model, id) ->
+          rendering = {}
+          
+          app = options.application()
+          zoom = app.imageControls.getZoom()
+
+          item = model.getItem id
+ 
+          #
+          # The foreignObject element MUST be in the SVG namespace, so we
+          # can't use the jQuery convenience methods.
+          #
+
+          textContainer = $("<div></div>")
+          textContainer.css
+            overflow: 'auto'
+            position: 'absolute'
+
+          container.append(textContainer)
+
+          #
+          # Similar to foreignObject, the body element MUST be in the XHTML
+          # namespace, so we can't use jQuery. Once we're inside the body
+          # element, we can use jQuery all we want.
+          #
+          rootEl = $("<div></div>")
+          $(rootEl).addClass("text-content")
+          $(rootEl).attr("id", id)
+          $(rootEl).css
+            "white-space": "nowrap"
+
+          textContainer.append(rootEl)
+
+
+          #
+          # textDataView gives us all of the annotations targeting this
+          # text content annotation - that is, all of the highlights and such
+          # that change how we render the text mapped onto the zone/canvas.
+          # We don't set the key here because the SubSet data view won't use
+          # the key to filter the set of annotations during the initInstance
+          # call.
+          #
+          textDataView = MITHgrid.Data.SubSet.initInstance
+            dataStore: model
+            expressions: [ '!target' ]
+
+          #
+          # If we're not given an offset and size, then we assume that we're
+          # covering the entire targeted zone or canvas.
+          #
+
+          x = if item.x?[0]? then item.x[0] else 0
+          y = if item.y?[0]? then item.y[0] else 0
+          width = if item.width?[0]? then item.width[0] else options.width - x
+          height = if item.height?[0]? then item.height[0] else options.height - y
+
+          $(textContainer).css
+            left: parseInt(16 + x * that.getScale(), 10) + "px"
+            top: parseInt(y * that.getScale(), 10) + "px"
+            width: parseInt(width * that.getScale(), 10) + "px"
+            height: parseInt(height * that.getScale(), 10) + "px"
+
+          #
+          # Here we embed the text-based zone within the pixel-based
+          # zone. Any text-based positioning will have to be handled by
+          # the TextContent presentation.
+          #
+          text = Presentation.TextContent.initInstance rootEl,
+            types: options.types
+            dataView: textDataView
+            application: options.application
+            height: height
+            width: width
+            x: x
+            y: y
+            scale: that.getScale()
+            inHTML: true
+
+          #
+          # Once we have the presentation in place, we set the
+          # key of the SubSet data view to the id of the text content 
+          # annotation item. This causes the presentation to render the
+          # annotations.
+          #
+          textDataView.setKey id
+
+          rendering.getHeight = text.getHeight
+
+          rendering.getY = text.getY
+
+          rendering._destroy = ->
+            text._destroy() if text._destroy?
+            textDataView._destroy() if textDataView._destroy?
+
+          rendering.remove = ->
+            $(textContainer).empty()
+
+          rendering.setScale = (s) ->
+            $(textContainer).css
+              left: parseInt(16 + x * s, 10) + "px"
+              top: parseInt(y * s, 10) + "px"
+              width: parseInt(width * s, 10) + "px"
+              height: parseInt(height * s, 10) + "px"
+            text.setScale s
+
+          rendering.update = (item) ->
+            x = if item.x?[0]? then item.x[0] else 0
+            y = if item.y?[0]? then item.y[0] else 0
+            width = if item.width?[0]? then item.width[0] else options.width - x
+            height = if item.height?[0]? then item.height[0] else options.height - y
+            #if height > that.getHeight()
+            #  that.setHeight height
+            #else
+            #  height = that.getHeight()
+            that.setHeight height
+            $(textContainer).css
+              left: parseInt(16 + x * that.getScale(), 10) + "px"
+              top: parseInt(y * that.getScale(), 10) + "px"
+              width: parseInt(width * that.getScale(), 10) + "px"
+              height: parseInt(height * that.getScale(), 10) + "px"
           rendering
 
   #
   # ## Presentation.Canvas
   #
 
-  #
-  # This is the wrapper around a root Zone presentation that gets things
-  # started.
-  #
+  # Selects one of TextCanvas or ImageCanvas as appropriate.
+
   Presentation.namespace "Canvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
-      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.Canvas", args..., (that, container) ->
+      [ ns, container, options ] = MITHgrid.normalizeArgs(args...)
+      if "Text" in options.types and options.types.length == 1
+        SGA.Reader.Presentation.TextCanvas.initInstance args...
+      else
+        SGA.Reader.Presentation.ImageCanvas.initInstance args...
+  #
+  # ## Presentation.TextCanvas
+  #
+
+  #
+  # This is the wrapper around a root presentation that gets things started.
+  # It handles things when 'Text' is the only presentation type (@data-types)
+  #
+
+  Presentation.namespace "TextCanvas", (Canvas) ->
+    Canvas.initInstance = (args...) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextCanvas", args..., (that, container) ->
+        # we're just going to be a div with positioned child divs
+        options = that.options
+
+        annoExpr = that.dataView.prepare(['!target'])
+
+        viewEl = $("<div></div>")
+        container.append(viewEl)
+
+        canvasWidth = null
+        canvasHeight = null
+
+        baseFontSize = 150 # in terms of the SVG canvas size - about 15pt
+        DivHeight = null
+        DivWidth = parseInt($(container).width()*20/20, 10)
+
+        resizer = ->
+          DivWidth = parseInt($(container).width()*20/20,10)
+          if canvasWidth? and canvasWidth > 0
+            that.setScale  DivWidth / canvasWidth
+
+        MITHgrid.events.onWindowResize.addListener resizer
+
+        $(viewEl).css
+          'border': '1px solid grey'
+          'background-color': 'white'
+
+        that.events.onScaleChange.addListener (s) ->
+          if canvasWidth? and canvasHeight?
+            DivHeight = parseInt(canvasHeight * s, 10)
+          $(viewEl).css
+            'font-size': (parseInt(baseFontSize * s * 10, 10) / 10) + "px"
+            'line-height': (parseInt(baseFontSize * s * 11.5, 10) / 10) + "px"
+            'height': DivHeight
+            'width': DivWidth
+          realCanvas?.setScale s
+
+        # the data view is managed outside the presentation
+        dataView = MITHgrid.Data.SubSet.initInstance
+          dataStore: options.dataView
+          expressions: [ '!target' ]
+          key: null
+
+        realCanvas = null
+
+        $(container).on "resetPres", ->
+          resizer()
+          if realCanvas?
+            realCanvas.hide() if realCanvas.hide?
+            realCanvas._destroy() if realCanvas._destroy?
+          $(viewEl).empty()
+          realCanvas = SGA.Reader.Presentation.TextZone.initInstance viewEl,
+            types: options.types
+            dataView: dataView
+            application: options.application
+            height: canvasHeight
+            width: canvasWidth
+            scale: DivWidth / canvasWidth
+
+        that.events.onCanvasChange.addListener (canvas) ->
+          dataView.setKey(canvas)
+          item = dataView.getItem canvas
+          
+          canvasWidth = (item.width?[0] || 1)
+          canvasHeight = (item.height?[0] || 1)
+          resizer()
+          if realCanvas?
+            realCanvas.hide() if realCanvas.hide?
+            realCanvas._destroy() if realCanvas._destroy?
+        
+          $(viewEl).empty()
+          realCanvas = SGA.Reader.Presentation.TextZone.initInstance viewEl,
+            types: options.types
+            dataView: dataView
+            application: options.application
+            height: canvasHeight
+            width: canvasWidth
+            scale: DivWidth / canvasWidth
+          that.setHeight canvasHeight
+          realCanvas.events.onHeightChange.addListener that.setHeight
+
+  #
+  # ## Presentation.ImageCanvas
+  #
+
+  #
+  # This is the wrapper around a root Zone presentation that gets things
+  # started. It handles things when 'Image' is in the presentation type (@data-types)
+  #
+  Presentation.namespace "ImageCanvas", (Canvas) ->
+    Canvas.initInstance = (args...) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.ImageCanvas", args..., (that, container) ->
         # We want to draw everything that annotates a Canvas
         # this would be anything with a target = the canvas
         options = that.options
@@ -835,8 +1169,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.events.onHeightChange.addListener (h) ->
           SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
 
-          if "Text" in options.types and h/10 > SVGHeight
-            SVGHeight = h / 10
+          #if "Text" in options.types and h/10 > SVGHeight
+          #  SVGHeight = h / 10
           setSizeAttrs()
 
         #
@@ -879,6 +1213,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 height: canvasHeight
                 width: canvasWidth
                 svgRoot: svgRoot
+                scale: that.getScale()
 
         that.events.onCanvasChange.addListener (canvas) ->
           dataView.setKey(canvas)
@@ -904,6 +1239,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: canvasHeight
               width: canvasWidth
               svgRoot: svgRoot
+              scale: that.getScale()
             that.setHeight canvasHeight
             realCanvas.events.onHeightChange.addListener that.setHeight
 
