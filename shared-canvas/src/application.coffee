@@ -240,7 +240,7 @@ SGAReader.namespace "Application", (Application) ->
               item.label = aitem.rdfslabel
               item.image = imgitem.oahasSource || aitem.oahasBody
               item.type = "Image"
-              if "image/jp2" in imgitem["dcformat"] and that.imageControls?
+              if "image/jp2" in imgitem["dcformat"] and that.imageControls? and imgitem.schasRelatedService?
                 item.type = "ImageViewer"
                 item.url = imgitem.schasRelatedService[0] + "?url_ver=Z39.88-2004&rft_id=" + item.image[0]
 

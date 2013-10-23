@@ -547,9 +547,9 @@ SGAReader.namespace "Component", (Component) ->
           if $(this).is(':checked')
 
             css = """
-              svg .hand-pbs{ color:#a54647; } 
-              svg *:not(.hand-pbs), svg .DeletionAnnotation:not(.hand-pbs){ color:#D9D9D9; }
-              svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
+              .canvas[data-types] .hand-pbs{ color:#a54647; } 
+              .canvas[data-types] *:not(.hand-pbs), .canvas[data-types] .DeletionAnnotation:not(.hand-pbs){ color:#D9D9D9; }
+              .canvas[data-types] .DeletionAnnotation.hand-pbs{ color:#a54647; }
             """
 
             $('#LimitViewControls_classes').remove()
@@ -560,9 +560,9 @@ SGAReader.namespace "Component", (Component) ->
           if $(this).is(':checked')
 
             css = """
-              svg .hand-pbs{ color:#D9D9D9; } 
-              svg *:not(.hand-pbs), svg .DeletionAnnotation.hand-pbs{ color:#a54647; }
-              svg .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
+              .canvas[data-types] .hand-pbs{ color:#D9D9D9; } 
+              .canvas[data-types] *:not(.hand-pbs), .canvas[data-types] .DeletionAnnotation.hand-pbs{ color:#a54647; }
+              .canvas[data-types] .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
             """
 
             $('#LimitViewControls_classes').remove()
