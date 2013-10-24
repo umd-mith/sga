@@ -98,6 +98,7 @@ SGAReader.namespace "Component", (Component) ->
     Slider.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.Slider", args..., (that, container) ->
         
+        options = that.options
         # This is a hack and should be eventually handled with a Filter/Facet
         $('.canvas').on "searchResultsChange", (e, results)->
           $c = $(container)
@@ -134,11 +135,15 @@ SGAReader.namespace "Component", (Component) ->
               value: pages
               step: 1
               slide: ( event, ui ) ->
-                0 #update some human readable indicator
+                if options.getLabel?
+                  $(ui.handle).text(options.getLabel(pages - ui.value))
               stop: ( event, ui ) ->
                 0 #now update actual value
                 that.setValue pages - ui.value
 
+            if options.getLabel?
+              $(container).find("a").text(options.getLabel(0))
+ 
             # There might be a cleaner way of doing this:
             $('.canvas').on "sizeChange", (e, d)->
               $c = $(container)
@@ -162,6 +167,8 @@ SGAReader.namespace "Component", (Component) ->
           if $( container ).data( "slider" ) # Is the container set?
             $(container).slider
               value: that.getMax() - n
+          if options.getLabel?
+            $(container).find("a").text(options.getLabel(n))
           if that.getValue()? and parseInt(that.getValue()) != NaN
             $.bbq.pushState
               n: that.getValue()+1

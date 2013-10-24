@@ -397,12 +397,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           g = svgRoot.group()
 
-          map = po.map()
-            .container(g)
+          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/')
 
           canvas = $(container).parent().get(0)
 
-          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080/, 'http://dev.shelleygodwinarchive.org/')
+          map = po.map()
+            .container(g)
 
           toAdoratio = $.ajax
             datatype: "json"
@@ -443,10 +443,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
             map.on 'drag', ->
               app.imageControls.setImgPosition map.position
 
+
           # for now, this is the full height of the underlying canvas/zone
           rendering.getHeight = -> options.height/10
 
           rendering.getY = -> options.y / 10
+
+          MITHgrid.events.onWindowResize.addListener ->
+            # do something to make the image grow/shrink to fill the space
 
           rendering.update = (item) ->
             0 # do nothing for now - eventually, update image viewer?
@@ -458,10 +462,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
             app.imageControls.setMinZoom(0)
             app.imageControls.setImgPosition 
               topLeft:
-                x: 0,
-                y: 0,
+                x: 0
+                y: 0
               bottomRight:
-                x: 0,
+                x: 0
                 y: 0
             $(svgRoot.root()).find('#map').remove()
 
@@ -795,6 +799,54 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.setX options.x
         that.setY options.y
         that.setScale options.scale
+
+        updateMarque = (z) ->
+
+        app = that.options.application()
+
+        if app.imageControls?.getActive()
+          # If the marquee already exists, replace it with a new one.
+          $('.marquee').remove()
+          # First time, always full extent in size and visible area
+          strokeW = 1
+          marquee = $("<div class='marquee'></div>")
+          $(container).append(marquee)
+          marquee.css
+            "border-color": 'navy'
+            "background-color": "yellow"
+            "border-width": strokeW
+            "opacity": "0.1"
+            "border-opacity": "0.9"
+            "width": options.width * options.scale
+            "height": options.height * options.scale
+            "position": "absolute"
+            "z-index": 0
+            "top": 0
+            "left": 16
+
+          visiblePerc = 100
+
+          updateMarque = (z) ->
+            if app.imageControls.getMaxZoom() > 0
+              width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
+              visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
+
+
+              marquee.css
+                "width": parseInt((that.getWidth() * visiblePerc * that.getScale()) / 10, 10 )
+                "height": parseInt((that.getHeight() * visiblePerc * that.getScale()) / 10, 10 )
+
+              if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
+                $(marquee).css "opacity", "0"
+              else
+                $(marquee).css "opacity", "0.1"
+
+          that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
+
+          that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
+            marquee.css
+              "left": 16 + parseInt( ((-p.topLeft.x * visiblePerc) / 100) * that.getScale(), 10)
+              "top": parseInt( ((-p.topLeft.y * visiblePerc) / 100) * that.getScale(), 10)
 
         that.events.onScaleChange.addListener (s) ->
           that.visitRenderings (id, r) ->
