@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Tue Oct 22 20:13:36 2013 -0400
+# Date: Wed Oct 23 14:53:39 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -703,9 +703,9 @@
                 svg = $(svgRoot.root());
                 svg.get(0).removeAttribute("viewBox");
                 g = svgRoot.group();
-                map = po.map().container(g);
+                tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/');
                 canvas = $(container).parent().get(0);
-                tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080/, 'http://dev.shelleygodwinarchive.org/');
+                map = po.map().container(g);
                 toAdoratio = $.ajax({
                   datatype: "json",
                   url: tempBaseURL + '&svc_id=info:lanl-repo/svc/getMetadata',
@@ -747,6 +747,7 @@
                 rendering.getY = function() {
                   return options.y / 10;
                 };
+                MITHgrid.events.onWindowResize.addListener(function() {});
                 rendering.update = function(item) {
                   return 0;
                 };
@@ -1016,7 +1017,7 @@
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHgrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.TextZone"].concat(__slice.call(args), [function(that, container) {
-              var annoExpr, app, options, svgRoot;
+              var annoExpr, app, marquee, options, strokeW, svgRoot, updateMarque, visiblePerc, _ref;
               options = that.options;
               svgRoot = options.svgRoot;
               app = that.options.application();
@@ -1025,6 +1026,51 @@
               that.setX(options.x);
               that.setY(options.y);
               that.setScale(options.scale);
+              updateMarque = function(z) {};
+              app = that.options.application();
+              if ((_ref = app.imageControls) != null ? _ref.getActive() : void 0) {
+                $('.marquee').remove();
+                strokeW = 1;
+                marquee = $("<div class='marquee'></div>");
+                $(container).append(marquee);
+                marquee.css({
+                  "border-color": 'navy',
+                  "background-color": "yellow",
+                  "border-width": strokeW,
+                  "opacity": "0.1",
+                  "border-opacity": "0.9",
+                  "width": options.width * options.scale,
+                  "height": options.height * options.scale,
+                  "position": "absolute",
+                  "z-index": 0,
+                  "top": 0,
+                  "left": 16
+                });
+                visiblePerc = 100;
+                updateMarque = function(z) {
+                  var width;
+                  if (app.imageControls.getMaxZoom() > 0) {
+                    width = Math.round(that.getWidth() / Math.pow(2, app.imageControls.getMaxZoom() - z));
+                    visiblePerc = Math.min(100, ($(container).width() * 100) / width);
+                    marquee.css({
+                      "width": parseInt((that.getWidth() * visiblePerc * that.getScale()) / 10, 10),
+                      "height": parseInt((that.getHeight() * visiblePerc * that.getScale()) / 10, 10)
+                    });
+                    if (app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1) {
+                      return $(marquee).css("opacity", "0");
+                    } else {
+                      return $(marquee).css("opacity", "0.1");
+                    }
+                  }
+                };
+                that.onDestroy(app.imageControls.events.onZoomChange.addListener(updateMarque));
+                that.onDestroy(app.imageControls.events.onImgPositionChange.addListener(function(p) {
+                  return marquee.css({
+                    "left": 16 + parseInt(((-p.topLeft.x * visiblePerc) / 100) * that.getScale(), 10),
+                    "top": parseInt(((-p.topLeft.y * visiblePerc) / 100) * that.getScale(), 10)
+                  });
+                }));
+              }
               that.events.onScaleChange.addListener(function(s) {
                 return that.visitRenderings(function(id, r) {
                   if (typeof r.setScale === "function") {
@@ -1035,14 +1081,14 @@
               });
               annoExpr = that.dataView.prepare(['!target']);
               that.addLens('ContentAnnotation', function(innerContainer, view, model, id) {
-                var height, item, overflowDiv, rendering, rootEl, textContainer, width, x, y, _ref, _ref1, _ref2, _ref3;
+                var height, item, overflowDiv, rendering, rootEl, textContainer, width, x, y, _ref1, _ref2, _ref3, _ref4;
                 rendering = {};
                 item = model.getItem(id);
                 textContainer = $("<div></div>");
-                x = ((_ref = item.x) != null ? _ref[0] : void 0) != null ? item.x[0] : 0;
-                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) != null ? item.y[0] : 0;
-                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) != null ? item.width[0] : options.width - x;
-                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) != null ? item.height[0] : options.height - y;
+                x = ((_ref1 = item.x) != null ? _ref1[0] : void 0) != null ? item.x[0] : 0;
+                y = ((_ref2 = item.y) != null ? _ref2[0] : void 0) != null ? item.y[0] : 0;
+                width = ((_ref3 = item.width) != null ? _ref3[0] : void 0) != null ? item.width[0] : options.width - x;
+                height = ((_ref4 = item.height) != null ? _ref4[0] : void 0) != null ? item.height[0] : options.height - y;
                 $(textContainer).css({
                   "position": "absolute",
                   "left": parseInt(16 + x * that.getScale(), 10) + "px",
@@ -1089,7 +1135,7 @@
                 return rendering;
               });
               return that.addLens('TextContentZone', function(innerContainer, view, model, id) {
-                var height, item, rendering, rootEl, text, textContainer, textDataView, width, x, y, zoom, _ref, _ref1, _ref2, _ref3;
+                var height, item, rendering, rootEl, text, textContainer, textDataView, width, x, y, zoom, _ref1, _ref2, _ref3, _ref4;
                 rendering = {};
                 app = options.application();
                 zoom = app.imageControls.getZoom();
@@ -1111,10 +1157,10 @@
                   dataStore: model,
                   expressions: ['!target']
                 });
-                x = ((_ref = item.x) != null ? _ref[0] : void 0) != null ? item.x[0] : 0;
-                y = ((_ref1 = item.y) != null ? _ref1[0] : void 0) != null ? item.y[0] : 0;
-                width = ((_ref2 = item.width) != null ? _ref2[0] : void 0) != null ? item.width[0] : options.width - x;
-                height = ((_ref3 = item.height) != null ? _ref3[0] : void 0) != null ? item.height[0] : options.height - y;
+                x = ((_ref1 = item.x) != null ? _ref1[0] : void 0) != null ? item.x[0] : 0;
+                y = ((_ref2 = item.y) != null ? _ref2[0] : void 0) != null ? item.y[0] : 0;
+                width = ((_ref3 = item.width) != null ? _ref3[0] : void 0) != null ? item.width[0] : options.width - x;
+                height = ((_ref4 = item.height) != null ? _ref4[0] : void 0) != null ? item.height[0] : options.height - y;
                 $(textContainer).css({
                   left: parseInt(16 + x * that.getScale(), 10) + "px",
                   top: parseInt(y * that.getScale(), 10) + "px",
@@ -1156,11 +1202,11 @@
                   return text.setScale(s);
                 };
                 rendering.update = function(item) {
-                  var _ref4, _ref5, _ref6, _ref7;
-                  x = ((_ref4 = item.x) != null ? _ref4[0] : void 0) != null ? item.x[0] : 0;
-                  y = ((_ref5 = item.y) != null ? _ref5[0] : void 0) != null ? item.y[0] : 0;
-                  width = ((_ref6 = item.width) != null ? _ref6[0] : void 0) != null ? item.width[0] : options.width - x;
-                  height = ((_ref7 = item.height) != null ? _ref7[0] : void 0) != null ? item.height[0] : options.height - y;
+                  var _ref5, _ref6, _ref7, _ref8;
+                  x = ((_ref5 = item.x) != null ? _ref5[0] : void 0) != null ? item.x[0] : 0;
+                  y = ((_ref6 = item.y) != null ? _ref6[0] : void 0) != null ? item.y[0] : 0;
+                  width = ((_ref7 = item.width) != null ? _ref7[0] : void 0) != null ? item.width[0] : options.width - x;
+                  height = ((_ref8 = item.height) != null ? _ref8[0] : void 0) != null ? item.height[0] : options.height - y;
                   that.setHeight(height);
                   return $(textContainer).css({
                     left: parseInt(16 + x * that.getScale(), 10) + "px",
@@ -1744,6 +1790,8 @@
             var args;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.Slider"].concat(__slice.call(args), [function(that, container) {
+              var options;
+              options = that.options;
               $('.canvas').on("searchResultsChange", function(e, results) {
                 var $c, adjustment, pages, r, res_h_perc, res_height, s_max, s_min, valPercent, _i, _len, _results;
                 $c = $(container);
@@ -1779,13 +1827,18 @@
                     value: pages,
                     step: 1,
                     slide: function(event, ui) {
-                      return 0;
+                      if (options.getLabel != null) {
+                        return $(ui.handle).text(options.getLabel(pages - ui.value));
+                      }
                     },
                     stop: function(event, ui) {
                       0;
                       return that.setValue(pages - ui.value);
                     }
                   });
+                  if (options.getLabel != null) {
+                    $(container).find("a").text(options.getLabel(0));
+                  }
                   $('.canvas').on("sizeChange", function(e, d) {
                     var $c;
                     $c = $(container);
@@ -1814,6 +1867,9 @@
                   $(container).slider({
                     value: that.getMax() - n
                   });
+                }
+                if (options.getLabel != null) {
+                  $(container).find("a").text(options.getLabel(n));
                 }
                 if ((that.getValue() != null) && parseInt(that.getValue()) !== NaN) {
                   return $.bbq.pushState({
