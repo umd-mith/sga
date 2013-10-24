@@ -825,16 +825,24 @@ SGAReader.namespace "Presentation", (Presentation) ->
             "left": 16
 
           visiblePerc = 100
+          marqueeLeft = 0
+          marqueeTop = 0
+          marqueeWidth = options.width * options.scale
+          marqueeHeight = options.height * options.scale
+
+          # we do our own clipping because of the way margins and padding play with us
 
           updateMarque = (z) ->
             if app.imageControls.getMaxZoom() > 0
               width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
               visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
 
-
+              marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale()) / 10, 10 )
+              marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale()) / 10, 10 )
+              
               marquee.css
-                "width": parseInt((that.getWidth() * visiblePerc * that.getScale()) / 10, 10 )
-                "height": parseInt((that.getHeight() * visiblePerc * that.getScale()) / 10, 10 )
+                "width": if marqueeLeft < 0 then marqueeWidth + marqueeLeft else if marqueeWidth + marqueeLeft > $(container).width() then $(container).width() - marqueeLeft else marqueeWidth
+                "height": if marqueeTop < 0 then marqueeHeight + marqueeTop else if marqueeHeight + marqueeTop > $(container).height() then $(container).height() - marqueeTop else marqueeHeight
 
               if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
                 $(marquee).css "opacity", "0"
@@ -844,11 +852,17 @@ SGAReader.namespace "Presentation", (Presentation) ->
           that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
 
           that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
+            marqueeLeft = parseInt( ((-p.topLeft.x * visiblePerc) / 10) * that.getScale(), 10)
+            marqueeTop = parseInt( ((-p.topLeft.y * visiblePerc) / 10) * that.getScale(), 10)
+           
             marquee.css
-              "left": 16 + parseInt( ((-p.topLeft.x * visiblePerc) / 100) * that.getScale(), 10)
-              "top": parseInt( ((-p.topLeft.y * visiblePerc) / 100) * that.getScale(), 10)
+              "left": if marqueeLeft < 0 then 16 else marqueeLeft + 16
+              "top": if marqueeTop < 0 then 0 else marqueeTop
+              "width": if marqueeLeft < 0 then marqueeWidth + marqueeLeft else if marqueeWidth + marqueeLeft > $(container).width() then $(container).width() - marqueeLeft else marqueeWidth
+              "height": if marqueeTop < 0 then marqueeHeight + marqueeTop else if marqueeHeight + marqueeTop > $(container).height() then $(container).height() - marqueeTop else marqueeHeight
 
         that.events.onScaleChange.addListener (s) ->
+          updateMarque(app.imageControls.getZoom())
           that.visitRenderings (id, r) ->
             r.setScale?(s)
             true
