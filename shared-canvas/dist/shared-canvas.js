@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Wed Oct 23 21:35:02 2013 -0400
+# Date: Thu Oct 24 09:34:49 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -704,8 +704,8 @@
                 svg.get(0).removeAttribute("viewBox");
                 g = svgRoot.group();
                 tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/');
-                canvas = $(container).parent().get(0);
                 map = po.map().container(g);
+                canvas = $(container).parent().get(0);
                 toAdoratio = $.ajax({
                   datatype: "json",
                   url: tempBaseURL + '&svc_id=info:lanl-repo/svc/getMetadata',
@@ -714,6 +714,10 @@
                 toAdoratio.then(function() {
                   var fromZoomControls, startCenter;
                   fromZoomControls = false;
+                  map.center({
+                    lon: -110,
+                    lat: 63
+                  });
                   startCenter = map.center();
                   app.imageControls.events.onZoomChange.addListener(function(z) {
                     map.zoom(z);
@@ -747,7 +751,9 @@
                 rendering.getY = function() {
                   return options.y / 10;
                 };
-                MITHgrid.events.onWindowResize.addListener(function() {});
+                MITHgrid.events.onWindowResize.addListener(function() {
+                  return map.resize();
+                });
                 rendering.update = function(item) {
                   return 0;
                 };
@@ -1049,15 +1055,15 @@
                 visiblePerc = 100;
                 marqueeLeft = 0;
                 marqueeTop = 0;
-                marqueeWidth = options.width * options.scale;
-                marqueeHeight = options.height * options.scale;
+                marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale()) / 100, 10);
+                marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale()) / 100, 10);
                 updateMarque = function(z) {
                   var width;
                   if (app.imageControls.getMaxZoom() > 0) {
                     width = Math.round(that.getWidth() / Math.pow(2, app.imageControls.getMaxZoom() - z));
                     visiblePerc = Math.min(100, ($(container).width() * 100) / width);
-                    marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale()) / 10, 10);
-                    marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale()) / 10, 10);
+                    marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale()) / 100, 10);
+                    marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale()) / 100, 10);
                     marquee.css({
                       "width": marqueeLeft < 0 ? marqueeWidth + marqueeLeft : marqueeWidth + marqueeLeft > $(container).width() ? $(container).width() - marqueeLeft : marqueeWidth,
                       "height": marqueeTop < 0 ? marqueeHeight + marqueeTop : marqueeHeight + marqueeTop > $(container).height() ? $(container).height() - marqueeTop : marqueeHeight
@@ -1071,11 +1077,11 @@
                 };
                 that.onDestroy(app.imageControls.events.onZoomChange.addListener(updateMarque));
                 that.onDestroy(app.imageControls.events.onImgPositionChange.addListener(function(p) {
-                  marqueeLeft = parseInt(((-p.topLeft.x * visiblePerc) / 10) * that.getScale(), 10);
-                  marqueeTop = parseInt(((-p.topLeft.y * visiblePerc) / 10) * that.getScale(), 10);
+                  marqueeLeft = parseInt((-p.topLeft.x * visiblePerc / 10) * that.getScale(), 10);
+                  marqueeTop = parseInt((-p.topLeft.y * visiblePerc / 10) * that.getScale(), 10);
                   return marquee.css({
-                    "left": marqueeLeft < 0 ? 16 : marqueeLeft + 16,
-                    "top": marqueeTop < 0 ? 0 : marqueeTop,
+                    "left": 16 + Math.max(0, marqueeLeft),
+                    "top": Math.max(0, marqueeTop),
                     "width": marqueeLeft < 0 ? marqueeWidth + marqueeLeft : marqueeWidth + marqueeLeft > $(container).width() ? $(container).width() - marqueeLeft : marqueeWidth,
                     "height": marqueeTop < 0 ? marqueeHeight + marqueeTop : marqueeHeight + marqueeTop > $(container).height() ? $(container).height() - marqueeTop : marqueeHeight
                   });
