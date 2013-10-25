@@ -739,6 +739,7 @@ SGAReader.namespace "Application", (Application) ->
       # so zones in a Text-only rendering will only render text annotations.
       #
       that.addPresentation = (el) ->
+        $(el).height(parseInt($(el).width() * 4 / 3, 10))
         manifestUrl = $(el).data('manifest')
         if manifestUrl?
           manifest = that.manifests[manifestUrl]
@@ -772,7 +773,7 @@ SGAReader.namespace "Application", (Application) ->
 
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
-          that.onManifest manifestUrl, (manifest) ->            
+          that.onManifest manifestUrl, (manifest) ->  
             manifest.addPresentation
               types: types
               container: $(el)

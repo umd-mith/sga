@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 24 10:51:32 2013 -0400
+# Date: Fri Oct 25 10:34:14 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -710,7 +710,6 @@
                 if (__indexOf.call(options.types || [], 'Image') < 0) {
                   return;
                 }
-                console.log("ImageViewer for ", id);
                 rendering = {};
                 item = model.getItem(id);
                 app.imageControls.setActive(true);
@@ -767,7 +766,7 @@
                 }
                 rendering = {};
                 browserZoomLevel = parseInt(document.width / document.body.clientWidth * 100 - 100, 10);
-                if (browserZoomLevel !== 0) {
+                if (__indexOf.call(window, 'webkitRequestAnimationFrame') >= 0 && browserZoomLevel !== 0) {
                   if (!$("#zoom-warning").size()) {
                     $(container).parent().prepend("<p id='zoom-warning'></p>");
                   }
@@ -1343,6 +1342,7 @@
               baseFontSize = 150;
               DivHeight = null;
               DivWidth = parseInt($(container).width() * 20 / 20, 10);
+              $(container).height(parseInt($(container).width() * 4 / 3, 10));
               resizer = function() {
                 DivWidth = parseInt($(container).width() * 20 / 20, 10);
                 if ((canvasWidth != null) && canvasWidth > 0) {
@@ -1427,7 +1427,7 @@
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHgrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.ImageCanvas"].concat(__slice.call(args), [function(that, container) {
-              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, options, pendingSVGfctns, realCanvas, setSizeAttrs, svgRoot, svgRootEl;
+              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, e, options, pendingSVGfctns, realCanvas, setSizeAttrs, svgRoot, svgRootEl;
               options = that.options;
               annoExpr = that.dataView.prepare(['!target']);
               pendingSVGfctns = [];
@@ -1435,20 +1435,25 @@
                 return pendingSVGfctns.push(cb);
               };
               svgRootEl = $("<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"\n     xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n >\n</svg>");
-              container.append(svgRootEl);
-              svgRoot = $(svgRootEl).svg({
-                onLoad: function(svg) {
-                  var cb, _i, _len;
-                  SVG = function(cb) {
-                    return cb(svg);
-                  };
-                  for (_i = 0, _len = pendingSVGfctns.length; _i < _len; _i++) {
-                    cb = pendingSVGfctns[_i];
-                    cb(svg);
+              $(container).append(svgRootEl);
+              try {
+                svgRoot = $(svgRootEl).svg({
+                  onLoad: function(svg) {
+                    var cb, _i, _len;
+                    SVG = function(cb) {
+                      return cb(svg);
+                    };
+                    for (_i = 0, _len = pendingSVGfctns.length; _i < _len; _i++) {
+                      cb = pendingSVGfctns[_i];
+                      cb(svg);
+                    }
+                    return pendingSVGfctns = null;
                   }
-                  return pendingSVGfctns = null;
-                }
-              });
+                });
+              } catch (_error) {
+                e = _error;
+                console.log("svg call failed:", e.message);
+              }
               canvasWidth = null;
               canvasHeight = null;
               SVGHeight = null;
@@ -3186,6 +3191,7 @@
             };
             that.addPresentation = function(el) {
               var manifest, manifestUrl, types, _ref;
+              $(el).height(parseInt($(el).width() * 4 / 3, 10));
               manifestUrl = $(el).data('manifest');
               if (manifestUrl != null) {
                 manifest = that.manifests[manifestUrl];

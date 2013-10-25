@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 24 10:51:32 2013 -0400
+# Date: Fri Oct 25 10:34:14 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -655,7 +655,6 @@
     
             that.addLens 'ImageViewer2', (container, view, model, id) ->
               return unless 'Image' in (options.types || [])
-              console.log "ImageViewer for ", id
     
               rendering = {}
     
@@ -722,7 +721,10 @@
               browserZoomLevel = parseInt(document.width / document.body.clientWidth * 100 - 100, 10)
               
               # this is temporary until we see if scaling the SVG to counter this will fix the issues
-              if browserZoomLevel != 0
+              # this appears to be an issue only on webkit-based browsers - Mozilla/Firefox handles the
+              # zoom just fine
+    
+              if 'webkitRequestAnimationFrame' in window and browserZoomLevel != 0
                 # we're zoomed in/out and may have problems
                 if !$("#zoom-warning").size()
                   $(container).parent().prepend("<p id='zoom-warning'></p>")
@@ -1482,6 +1484,7 @@
             baseFontSize = 150 # in terms of the SVG canvas size - about 15pt
             DivHeight = null
             DivWidth = parseInt($(container).width()*20/20, 10)
+            $(container).height(parseInt($(container).width() * 4 / 3, 10))
     
             resizer = ->
               DivWidth = parseInt($(container).width()*20/20,10)
@@ -1562,7 +1565,6 @@
             # We want to draw everything that annotates a Canvas
             # this would be anything with a target = the canvas
             options = that.options
-    
             # we need a nice way to get the span of text from the tei
             # and then we apply any annotations that modify how we display
             # the text before we create the svg elements - that way, we get
@@ -1580,17 +1582,20 @@
                >
               </svg>
             """)
-            container.append(svgRootEl)
-            svgRoot = $(svgRootEl).svg 
-              onLoad: (svg) ->
-                SVG = (cb) -> cb(svg)
-                cb(svg) for cb in pendingSVGfctns
-                pendingSVGfctns = null
+            $(container).append(svgRootEl)
+            try
+              svgRoot = $(svgRootEl).svg 
+                onLoad: (svg) ->
+                  SVG = (cb) -> cb(svg)
+                  cb(svg) for cb in pendingSVGfctns
+                  pendingSVGfctns = null
+            catch e
+              console.log "svg call failed:", e.message
+    
             canvasWidth = null
             canvasHeight = null
             SVGHeight = null
             SVGWidth = parseInt($(container).width()*20/20, 10)
-    
             setSizeAttrs = ->
               SVG (svgRoot) ->
     
@@ -1624,7 +1629,6 @@
               if canvasWidth? and canvasWidth > 0
                 that.setScale (SVGWidth / canvasWidth)
               
-    
             that.events.onScaleChange.addListener (s) ->
               if canvasWidth? and canvasHeight?
                 SVGHeight = parseInt(canvasHeight * s, 10)
@@ -1683,8 +1687,6 @@
                   scale: that.getScale()
                 that.setHeight canvasHeight
                 realCanvas.events.onHeightChange.addListener that.setHeight
-    
-    
 
     # # Data Managment
     SGAReader.namespace "Data", (Data) ->
@@ -3275,6 +3277,7 @@
           # so zones in a Text-only rendering will only render text annotations.
           #
           that.addPresentation = (el) ->
+            $(el).height(parseInt($(el).width() * 4 / 3, 10))
             manifestUrl = $(el).data('manifest')
             if manifestUrl?
               manifest = that.manifests[manifestUrl]
@@ -3308,7 +3311,7 @@
     
               manifest.run()
               types = $(el).data('types')?.split(/\s*,\s*/)
-              that.onManifest manifestUrl, (manifest) ->            
+              that.onManifest manifestUrl, (manifest) ->  
                 manifest.addPresentation
                   types: types
                   container: $(el)
