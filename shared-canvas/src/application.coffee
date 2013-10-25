@@ -772,7 +772,7 @@ SGAReader.namespace "Application", (Application) ->
 
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)
-          that.onManifest manifestUrl, (manifest) ->            
+          that.onManifest manifestUrl, (manifest) ->  
             manifest.addPresentation
               types: types
               container: $(el)

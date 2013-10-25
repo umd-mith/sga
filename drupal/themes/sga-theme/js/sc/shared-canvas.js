@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Thu Oct 24 10:51:32 2013 -0400
+# Date: Fri Oct 25 15:24:13 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -710,7 +710,6 @@
                 if (__indexOf.call(options.types || [], 'Image') < 0) {
                   return;
                 }
-                console.log("ImageViewer for ", id);
                 rendering = {};
                 item = model.getItem(id);
                 app.imageControls.setActive(true);
@@ -767,7 +766,7 @@
                 }
                 rendering = {};
                 browserZoomLevel = parseInt(document.width / document.body.clientWidth * 100 - 100, 10);
-                if (browserZoomLevel !== 0) {
+                if (__indexOf.call(window, 'webkitRequestAnimationFrame') >= 0 && browserZoomLevel !== 0) {
                   if (!$("#zoom-warning").size()) {
                     $(container).parent().prepend("<p id='zoom-warning'></p>");
                   }
@@ -1338,11 +1337,16 @@
               annoExpr = that.dataView.prepare(['!target']);
               viewEl = $("<div></div>");
               container.append(viewEl);
+              $(viewEl).height(parseInt($(container).width() * 4 / 3, 10));
+              $(viewEl).css({
+                'background-color': 'white'
+              });
               canvasWidth = null;
               canvasHeight = null;
               baseFontSize = 150;
               DivHeight = null;
               DivWidth = parseInt($(container).width() * 20 / 20, 10);
+              $(container).height(parseInt($(container).width() * 4 / 3, 10));
               resizer = function() {
                 DivWidth = parseInt($(container).width() * 20 / 20, 10);
                 if ((canvasWidth != null) && canvasWidth > 0) {
@@ -1427,7 +1431,7 @@
             var args, _ref;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return (_ref = MITHgrid.Presentation).initInstance.apply(_ref, ["SGA.Reader.Presentation.ImageCanvas"].concat(__slice.call(args), [function(that, container) {
-              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, options, pendingSVGfctns, realCanvas, setSizeAttrs, svgRoot, svgRootEl;
+              var SVG, SVGHeight, SVGWidth, annoExpr, canvasHeight, canvasWidth, dataView, e, options, pendingSVGfctns, realCanvas, setSizeAttrs, svgRoot, svgRootEl;
               options = that.options;
               annoExpr = that.dataView.prepare(['!target']);
               pendingSVGfctns = [];
@@ -1435,24 +1439,38 @@
                 return pendingSVGfctns.push(cb);
               };
               svgRootEl = $("<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\"\n     xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n >\n</svg>");
-              container.append(svgRootEl);
-              svgRoot = $(svgRootEl).svg({
-                onLoad: function(svg) {
-                  var cb, _i, _len;
-                  SVG = function(cb) {
-                    return cb(svg);
-                  };
-                  for (_i = 0, _len = pendingSVGfctns.length; _i < _len; _i++) {
-                    cb = pendingSVGfctns[_i];
-                    cb(svg);
+              $(container).append(svgRootEl);
+              try {
+                svgRoot = $(svgRootEl).svg({
+                  onLoad: function(svg) {
+                    var cb, _i, _len;
+                    SVG = function(cb) {
+                      return cb(svg);
+                    };
+                    for (_i = 0, _len = pendingSVGfctns.length; _i < _len; _i++) {
+                      cb = pendingSVGfctns[_i];
+                      cb(svg);
+                    }
+                    return pendingSVGfctns = null;
                   }
-                  return pendingSVGfctns = null;
-                }
-              });
+                });
+              } catch (_error) {
+                e = _error;
+                console.log("svg call failed:", e.message);
+              }
               canvasWidth = null;
               canvasHeight = null;
-              SVGHeight = null;
               SVGWidth = parseInt($(container).width() * 20 / 20, 10);
+              SVGHeight = parseInt(SVGWidth * 4 / 3, 10);
+              SVG(function(svgRoot) {
+                return svgRootEl.css({
+                  width: SVGWidth,
+                  height: SVGHeight,
+                  border: "1px solid #eeeeee",
+                  "border-radius": "2px",
+                  "background-color": "#ffffff"
+                });
+              });
               setSizeAttrs = function() {
                 return SVG(function(svgRoot) {
                   var svg, vb;
@@ -1833,6 +1851,29 @@
             var args;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.Spinner"].concat(__slice.call(args), [function(that, container) {
+              var x, y;
+              x = $(window).width();
+              y = $(window).height();
+              if (x < 1) {
+                x = y;
+              }
+              x -= $(container).width();
+              y -= $(container).height();
+              if (x < 1) {
+                x = y * 2;
+              }
+              $(container).css({
+                position: "absolute",
+                "z-index": 10000,
+                top: parseInt(y / 2, 10),
+                left: parseInt(x / 2, 10)
+              });
+              MITHgrid.events.onWindowResize.addListener(function() {
+                return $(container).css({
+                  top: $(window).height() / 2 - $(container).height() / 2,
+                  left: $(window).width() / 2 - $(container).width() / 2
+                });
+              });
               that.show = function() {
                 return $(container).show();
               };

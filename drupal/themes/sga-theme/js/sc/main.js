@@ -1,5 +1,5 @@
 (function ($) { 
-
+$(document).ready(function() {
   // UI fixes
   $("#collapse-one").collapse("hide");
 
@@ -174,4 +174,5 @@
     });
 
   });
+});
 })(jQuery);

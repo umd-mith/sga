@@ -396,7 +396,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         that.addLens 'ImageViewer2', (container, view, model, id) ->
           return unless 'Image' in (options.types || [])
-          console.log "ImageViewer for ", id
 
           rendering = {}
 
@@ -463,7 +462,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
           browserZoomLevel = parseInt(document.width / document.body.clientWidth * 100 - 100, 10)
           
           # this is temporary until we see if scaling the SVG to counter this will fix the issues
-          if browserZoomLevel != 0
+          # this appears to be an issue only on webkit-based browsers - Mozilla/Firefox handles the
+          # zoom just fine
+
+          if 'webkitRequestAnimationFrame' in window and browserZoomLevel != 0
             # we're zoomed in/out and may have problems
             if !$("#zoom-warning").size()
               $(container).parent().prepend("<p id='zoom-warning'></p>")
@@ -1216,6 +1218,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         viewEl = $("<div></div>")
         container.append(viewEl)
+        $(viewEl).height(parseInt($(container).width() * 4 / 3, 10))
+        $(viewEl).css
+          'background-color': 'white'
 
         canvasWidth = null
         canvasHeight = null
@@ -1223,6 +1228,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         baseFontSize = 150 # in terms of the SVG canvas size - about 15pt
         DivHeight = null
         DivWidth = parseInt($(container).width()*20/20, 10)
+        $(container).height(parseInt($(container).width() * 4 / 3, 10))
 
         resizer = ->
           DivWidth = parseInt($(container).width()*20/20,10)
@@ -1303,7 +1309,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # We want to draw everything that annotates a Canvas
         # this would be anything with a target = the canvas
         options = that.options
-
         # we need a nice way to get the span of text from the tei
         # and then we apply any annotations that modify how we display
         # the text before we create the svg elements - that way, we get
@@ -1321,16 +1326,27 @@ SGAReader.namespace "Presentation", (Presentation) ->
            >
           </svg>
         """)
-        container.append(svgRootEl)
-        svgRoot = $(svgRootEl).svg 
-          onLoad: (svg) ->
-            SVG = (cb) -> cb(svg)
-            cb(svg) for cb in pendingSVGfctns
-            pendingSVGfctns = null
+        $(container).append(svgRootEl)
+        try
+          svgRoot = $(svgRootEl).svg 
+            onLoad: (svg) ->
+              SVG = (cb) -> cb(svg)
+              cb(svg) for cb in pendingSVGfctns
+              pendingSVGfctns = null
+        catch e
+          console.log "svg call failed:", e.message
+
         canvasWidth = null
         canvasHeight = null
-        SVGHeight = null
         SVGWidth = parseInt($(container).width()*20/20, 10)
+        SVGHeight = parseInt(SVGWidth * 4 / 3, 10)
+        SVG (svgRoot) ->
+          svgRootEl.css
+            width: SVGWidth
+            height: SVGHeight
+            border: "1px solid #eeeeee"
+            "border-radius": "2px"
+            "background-color": "#ffffff"
 
         setSizeAttrs = ->
           SVG (svgRoot) ->
@@ -1365,7 +1381,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
           if canvasWidth? and canvasWidth > 0
             that.setScale (SVGWidth / canvasWidth)
           
-
         that.events.onScaleChange.addListener (s) ->
           if canvasWidth? and canvasHeight?
             SVGHeight = parseInt(canvasHeight * s, 10)
@@ -1424,5 +1439,3 @@ SGAReader.namespace "Presentation", (Presentation) ->
               scale: that.getScale()
             that.setHeight canvasHeight
             realCanvas.events.onHeightChange.addListener that.setHeight
-
-
