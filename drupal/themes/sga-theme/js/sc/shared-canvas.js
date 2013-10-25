@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 10:34:14 2013 -0400
+# Date: Fri Oct 25 15:24:13 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -1337,6 +1337,10 @@
               annoExpr = that.dataView.prepare(['!target']);
               viewEl = $("<div></div>");
               container.append(viewEl);
+              $(viewEl).height(parseInt($(container).width() * 4 / 3, 10));
+              $(viewEl).css({
+                'background-color': 'white'
+              });
               canvasWidth = null;
               canvasHeight = null;
               baseFontSize = 150;
@@ -1456,8 +1460,17 @@
               }
               canvasWidth = null;
               canvasHeight = null;
-              SVGHeight = null;
               SVGWidth = parseInt($(container).width() * 20 / 20, 10);
+              SVGHeight = parseInt(SVGWidth * 4 / 3, 10);
+              SVG(function(svgRoot) {
+                return svgRootEl.css({
+                  width: SVGWidth,
+                  height: SVGHeight,
+                  border: "1px solid #eeeeee",
+                  "border-radius": "2px",
+                  "background-color": "#ffffff"
+                });
+              });
               setSizeAttrs = function() {
                 return SVG(function(svgRoot) {
                   var svg, vb;
@@ -1838,6 +1851,29 @@
             var args;
             args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
             return MITHgrid.initInstance.apply(MITHgrid, ["SGA.Reader.Component.Spinner"].concat(__slice.call(args), [function(that, container) {
+              var x, y;
+              x = $(window).width();
+              y = $(window).height();
+              if (x < 1) {
+                x = y;
+              }
+              x -= $(container).width();
+              y -= $(container).height();
+              if (x < 1) {
+                x = y * 2;
+              }
+              $(container).css({
+                position: "absolute",
+                "z-index": 10000,
+                top: parseInt(y / 2, 10),
+                left: parseInt(x / 2, 10)
+              });
+              MITHgrid.events.onWindowResize.addListener(function() {
+                return $(container).css({
+                  top: $(window).height() / 2 - $(container).height() / 2,
+                  left: $(window).width() / 2 - $(container).width() / 2
+                });
+              });
               that.show = function() {
                 return $(container).show();
               };
@@ -3191,7 +3227,6 @@
             };
             that.addPresentation = function(el) {
               var manifest, manifestUrl, types, _ref;
-              $(el).height(parseInt($(el).width() * 4 / 3, 10));
               manifestUrl = $(el).data('manifest');
               if (manifestUrl != null) {
                 manifest = that.manifests[manifestUrl];

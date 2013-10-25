@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 10:34:14 2013 -0400
+# Date: Fri Oct 25 15:24:13 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -1477,6 +1477,9 @@
     
             viewEl = $("<div></div>")
             container.append(viewEl)
+            $(viewEl).height(parseInt($(container).width() * 4 / 3, 10))
+            $(viewEl).css
+              'background-color': 'white'
     
             canvasWidth = null
             canvasHeight = null
@@ -1594,8 +1597,16 @@
     
             canvasWidth = null
             canvasHeight = null
-            SVGHeight = null
             SVGWidth = parseInt($(container).width()*20/20, 10)
+            SVGHeight = parseInt(SVGWidth * 4 / 3, 10)
+            SVG (svgRoot) ->
+              svgRootEl.css
+                width: SVGWidth
+                height: SVGHeight
+                border: "1px solid #eeeeee"
+                "border-radius": "2px"
+                "background-color": "#ffffff"
+    
             setSizeAttrs = ->
               SVG (svgRoot) ->
     
@@ -1955,6 +1966,25 @@
         Spinner.initInstance = (args...) ->
           MITHgrid.initInstance "SGA.Reader.Component.Spinner", args..., (that, container) ->
     
+            x = $(window).width()
+            y = $(window).height()
+            if x < 1
+              x = y
+            x -= $(container).width()
+            y -= $(container).height()
+            if x < 1
+              x = y * 2
+            $(container).css
+              position: "absolute"
+              "z-index": 10000
+              top: parseInt(y/2, 10)
+              left: parseInt(x/2, 10)
+    
+            MITHgrid.events.onWindowResize.addListener ->
+              $(container).css
+                top: $(window).height()/2 - $(container).height()/2
+                left: $(window).width()/2 - $(container).width()/2
+    
             that.show = -> 
               $(container).show()
     
@@ -2184,10 +2214,10 @@
               that.setZoom that.getMinZoom()
               that.setImgPosition 
                 topLeft:
-                  x: 0,
-                  y: 0,
+                  x: 0
+                  y: 0
                 bottomRight:
-                  x: 0,
+                  x: 0
                   y: 0
     
             $(inEl).click (e) ->
@@ -3277,7 +3307,6 @@
           # so zones in a Text-only rendering will only render text annotations.
           #
           that.addPresentation = (el) ->
-            $(el).height(parseInt($(el).width() * 4 / 3, 10))
             manifestUrl = $(el).data('manifest')
             if manifestUrl?
               manifest = that.manifests[manifestUrl]

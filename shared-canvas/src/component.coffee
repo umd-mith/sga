@@ -39,6 +39,25 @@ SGAReader.namespace "Component", (Component) ->
     Spinner.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Component.Spinner", args..., (that, container) ->
 
+        x = $(window).width()
+        y = $(window).height()
+        if x < 1
+          x = y
+        x -= $(container).width()
+        y -= $(container).height()
+        if x < 1
+          x = y * 2
+        $(container).css
+          position: "absolute"
+          "z-index": 10000
+          top: parseInt(y/2, 10)
+          left: parseInt(x/2, 10)
+
+        MITHgrid.events.onWindowResize.addListener ->
+          $(container).css
+            top: $(window).height()/2 - $(container).height()/2
+            left: $(window).width()/2 - $(container).width()/2
+
         that.show = -> 
           $(container).show()
 
@@ -268,10 +287,10 @@ SGAReader.namespace "Component", (Component) ->
           that.setZoom that.getMinZoom()
           that.setImgPosition 
             topLeft:
-              x: 0,
-              y: 0,
+              x: 0
+              y: 0
             bottomRight:
-              x: 0,
+              x: 0
               y: 0
 
         $(inEl).click (e) ->

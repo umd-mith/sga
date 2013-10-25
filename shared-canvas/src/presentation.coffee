@@ -1218,6 +1218,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         viewEl = $("<div></div>")
         container.append(viewEl)
+        $(viewEl).height(parseInt($(container).width() * 4 / 3, 10))
+        $(viewEl).css
+          'background-color': 'white'
 
         canvasWidth = null
         canvasHeight = null
@@ -1335,8 +1338,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         canvasWidth = null
         canvasHeight = null
-        SVGHeight = null
         SVGWidth = parseInt($(container).width()*20/20, 10)
+        SVGHeight = parseInt(SVGWidth * 4 / 3, 10)
+        SVG (svgRoot) ->
+          svgRootEl.css
+            width: SVGWidth
+            height: SVGHeight
+            border: "1px solid #eeeeee"
+            "border-radius": "2px"
+            "background-color": "#ffffff"
+
         setSizeAttrs = ->
           SVG (svgRoot) ->
 

@@ -739,7 +739,6 @@ SGAReader.namespace "Application", (Application) ->
       # so zones in a Text-only rendering will only render text annotations.
       #
       that.addPresentation = (el) ->
-        $(el).height(parseInt($(el).width() * 4 / 3, 10))
         manifestUrl = $(el).data('manifest')
         if manifestUrl?
           manifest = that.manifests[manifestUrl]
