@@ -56,8 +56,8 @@ SGAReader.namespace "Data", (Data) ->
                   url: file
                   type: 'GET'
                   processData: false
-                  beforeSend: (jqXHR) ->
-                    jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
+                  #beforeSend: (jqXHR) ->
+                  #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
                   success: (data) ->
                     c = data.documentElement.textContent
                     fileContents[file] = c
@@ -128,8 +128,8 @@ SGAReader.namespace "Data", (Data) ->
             contentType: 'application/rdf+json'
             processData: false
             dataType: 'json'
-            beforeSend: (jqXHR) ->
-              jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
+            #beforeSend: (jqXHR) ->
+            #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
             success: (data) ->
               that.addItemsProcessed 1
               that.importJSON data, cb

@@ -11,7 +11,7 @@
     drupal_add_js($path . '/js/sc/jquery.svg.min.js');
     drupal_add_js($path . '/js/jquery.ba-bbq.min.js');
     drupal_add_js($path . '/js/sc/navigation.js');
-    drupal_add_js($path . '/js/sc/jquery-ui-1.10.3.min.js');
+    drupal_add_js($path . '/js/sc/jquery-ui-1.10.3.js');
     drupal_add_js($path . '/js/sc/polymaps.min.js');
     drupal_add_js($path . '/js/sc/adoratio.js');
     drupal_add_js($path . '/js/sc/mithgrid.min.js');
