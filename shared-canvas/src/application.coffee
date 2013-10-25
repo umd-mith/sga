@@ -568,6 +568,15 @@ SGAReader.namespace "Application", (Application) ->
           info = that.dataStore.data.getItem id
           meta.canvasTitle = info.label?[0]
 
+          
+          meta.workTitle = info.dctitle[0] if info.dctitle?[0]?
+          meta.workAuthor = info.scagentLabel[0] if info.scagentLabel?[0]?
+          meta.workHands = info.sgahandLabel[0] if info.sgahandLabel?[0]?
+          meta.workDate = info.scdateLabel[0] if info.scdateLabel?[0]?
+          meta.workState = info.sgastateLabel[0] if info.sgastateLabel?[0]?
+          meta.workInstitution = info.scattributionLabel[0] if info.scattributionLabel?[0]
+          meta.workShelfmark = info.sgashelfmarkLabel[0] if info.sgashelfmarkLabel?[0]?
+
           rangeIds = that.dataStore.data.getSubjectsUnion(MITHgrid.Data.Set.initInstance([id]), 'canvases')
           rangeTitles = {}
           rangeIds.visit (rid) ->

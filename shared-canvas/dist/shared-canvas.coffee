@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 15:24:13 2013 -0400
+# Date: Fri Oct 25 16:06:19 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -3135,6 +3135,15 @@
               meta = that.getManifestMetadata()
               info = that.dataStore.data.getItem id
               meta.canvasTitle = info.label?[0]
+    
+              
+              meta.workTitle = info.dctitle[0] if info.dctitle?[0]?
+              meta.workAuthor = info.scagentLabel[0] if info.scagentLabel?[0]?
+              meta.workHands = info.sgahandLabel[0] if info.sgahandLabel?[0]?
+              meta.workDate = info.scdateLabel[0] if info.scdateLabel?[0]?
+              meta.workState = info.sgastateLabel[0] if info.sgastateLabel?[0]?
+              meta.workInstitution = info.scattributionLabel[0] if info.scattributionLabel?[0]
+              meta.workShelfmark = info.sgashelfmarkLabel[0] if info.sgashelfmarkLabel?[0]?
     
               rangeIds = that.dataStore.data.getSubjectsUnion(MITHgrid.Data.Set.initInstance([id]), 'canvases')
               rangeTitles = {}

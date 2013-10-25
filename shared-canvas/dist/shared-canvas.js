@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 15:24:13 2013 -0400
+# Date: Fri Oct 25 16:06:19 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -3071,10 +3071,31 @@
                 return ret;
               };
               return that.getCanvasMetadata = function(id) {
-                var info, meta, rangeIds, rangeTitles, _ref;
+                var info, meta, rangeIds, rangeTitles, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7;
                 meta = that.getManifestMetadata();
                 info = that.dataStore.data.getItem(id);
                 meta.canvasTitle = (_ref = info.label) != null ? _ref[0] : void 0;
+                if (((_ref1 = info.dctitle) != null ? _ref1[0] : void 0) != null) {
+                  meta.workTitle = info.dctitle[0];
+                }
+                if (((_ref2 = info.scagentLabel) != null ? _ref2[0] : void 0) != null) {
+                  meta.workAuthor = info.scagentLabel[0];
+                }
+                if (((_ref3 = info.sgahandLabel) != null ? _ref3[0] : void 0) != null) {
+                  meta.workHands = info.sgahandLabel[0];
+                }
+                if (((_ref4 = info.scdateLabel) != null ? _ref4[0] : void 0) != null) {
+                  meta.workDate = info.scdateLabel[0];
+                }
+                if (((_ref5 = info.sgastateLabel) != null ? _ref5[0] : void 0) != null) {
+                  meta.workState = info.sgastateLabel[0];
+                }
+                if ((_ref6 = info.scattributionLabel) != null ? _ref6[0] : void 0) {
+                  meta.workInstitution = info.scattributionLabel[0];
+                }
+                if (((_ref7 = info.sgashelfmarkLabel) != null ? _ref7[0] : void 0) != null) {
+                  meta.workShelfmark = info.sgashelfmarkLabel[0];
+                }
                 rangeIds = that.dataStore.data.getSubjectsUnion(MITHgrid.Data.Set.initInstance([id]), 'canvases');
                 rangeTitles = {};
                 rangeIds.visit(function(rid) {
