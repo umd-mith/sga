@@ -49,6 +49,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # item.type to give us the CSS classes we need for the span
         #
         lines = {}
+        lineAlignments = {}
+        lineIndents = {}
         scaleSettings = []
         currentLine = 0
 
@@ -62,6 +64,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
           afterLayout = []
           for lineNo in ((i for i of lines).sort (a,b) -> a - b)
             currentLineEl = $("<div></div>")
+            if lineAlignments[lineNo]?
+              currentLineEl.css
+                'text-align': lineAlignments[lineNo]
+            if lineIndents[lineNo]?
+              currentLineEl.css
+              currentLineEl.css
+                'padding-left': (lineIndents[lineNo] * 4)+"em"
+
             lineNoFraq = lineNo - parseInt(lineNo, 10)
             if lineNoFraq < 0
               lineNoFraq += 1
@@ -293,6 +303,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
         #
         that.addLens 'LineBreak', (container, view, model, id) ->
           currentLine += 1
+          item = model.getItem id
+          if item.sgatextAlignment?.length > 0
+            lineAlignments[currentLine] = item.sgatextAlignment[0]
+          if item.sgatextIndentLevel?.length > 0
+            lineIndents[currentLine] = parseInt(item.sgatextIndentLevel[0], 10) or 0
           null
 
   #
@@ -377,9 +392,88 @@ SGAReader.namespace "Presentation", (Presentation) ->
               svgRoot.remove svgImage
           rendering
 
+        #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,0,256,256
+
+        that.addLens 'ImageViewer2', (container, view, model, id) ->
+          return unless 'Image' in (options.types || [])
+          console.log "ImageViewer for ", id
+
+          rendering = {}
+
+          item = model.getItem id
+
+          app.imageControls.setActive(true)
+
+          baseURL = item.url[0]
+          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/')
+
+          console.log(baseURL, tempBaseURL, $(container))
+
+          rendering.update = (item) ->
+
+          rendering.getZoom = ->
+          rendering.setZoom = (z) ->
+
+          rendering.getX = ->
+          rendering.setX = (x) ->
+          rendering.getY = ->
+          rendering.setY = (y) ->
+
+
+          $.ajax
+            url: tempBaseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
+            success: (metadata) ->              
+              originalWidth = parseInt(metadata.width, 10) || 1
+              originalHeight = parseInt(metadata.height, 10) || 1
+              zoomLevels = parseInt(metadata.levels, 10)
+              divWidth = $(svgRoot.root()).parent().width() || 1
+              divHeight = $(svgRoot.root()).parent().height() || 1
+              zoomForFull = zoomLevels - Math.floor((Math.log(originalWidth) - Math.log(divWidth))/Math.log(2.0))
+              xTiles = Math.ceil(divWidth / 256)
+              yTiles = Math.ceil(divHeight / 256)
+              console.log
+                imageWidth: originalWidth
+                imageHeight: originalHeight
+                zoomLevels: zoomLevels
+                divWidth: divWidth
+                divHeight: divHeight
+                originalZoom: zoomForFull
+                xTiles: xTiles
+                yTiles: yTiles
+                tileWidth: Math.pow(2.0, zoomForFull)*256
+                #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004
+                #&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,2048,256,256
+              imageURL = (x,y,z) ->
+                # we want (x,y) to be the tiling for the screen -- it should be fairly constant, but should be
+                # divided into 256x256 pixel tiles
+                tileWidth = Math.pow(2.0, zoomForFull) * 256
+                xx = x * tileWidth
+                yy = y * tileWidth
+                baseURL + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=#{z}&svc.region=#{yy},#{xx},256,256"
+                
+              console.log imageURL(0,0,zoomForFull)
+              console.log imageURL(1,0,zoomForFull)
+
+          rendering
+
         that.addLens 'ImageViewer', (container, view, model, id) ->
           return unless 'Image' in (options.types || [])
           rendering = {}
+
+          browserZoomLevel = parseInt(document.width / document.body.clientWidth * 100 - 100, 10)
+          
+          # this is temporary until we see if scaling the SVG to counter this will fix the issues
+          if browserZoomLevel != 0
+            # we're zoomed in/out and may have problems
+            if !$("#zoom-warning").size()
+              $(container).parent().prepend("<p id='zoom-warning'></p>")
+            if browserZoomLevel > 0
+              $("#zoom-warning").text("Zooming in using your browser's controls will distort the facsimile image.")
+            else
+              $("#zoom-warning").text("Zooming out using your browser's controls will distort the facsimile image.")
+          else
+            $("#zoom-warning").remove()
+          
 
           item = model.getItem id
 
@@ -399,10 +493,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/')
 
-          canvas = $(container).parent().get(0)
-
           map = po.map()
             .container(g)
+
+          canvas = $(container).parent().get(0)
 
           toAdoratio = $.ajax
             datatype: "json"
@@ -413,6 +507,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           toAdoratio.then ->
             # Help decide when to propagate changes...
             fromZoomControls = false
+
             # Keep track of some start values
             startCenter = map.center()
 
@@ -451,6 +546,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           MITHgrid.events.onWindowResize.addListener ->
             # do something to make the image grow/shrink to fill the space
+            map.resize()
 
           rendering.update = (item) ->
             0 # do nothing for now - eventually, update image viewer?
@@ -825,17 +921,35 @@ SGAReader.namespace "Presentation", (Presentation) ->
             "left": 16
 
           visiblePerc = 100
+          marqueeLeft = 0
+          marqueeTop = 0
+          marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+          marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+
+          # we do our own clipping because of the way margins and padding play with us
 
           updateMarque = (z) ->
             if app.imageControls.getMaxZoom() > 0
               width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
               visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
 
-
+              marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+              marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+              
               marquee.css
-                "width": parseInt((that.getWidth() * visiblePerc * that.getScale()) / 10, 10 )
-                "height": parseInt((that.getHeight() * visiblePerc * that.getScale()) / 10, 10 )
-
+                "width":
+                  if marqueeLeft < 0
+                    marqueeWidth + marqueeLeft 
+                  else if marqueeWidth + marqueeLeft > $(container).width() 
+                    $(container).width() - marqueeLeft 
+                  else marqueeWidth
+                "height": 
+                  if marqueeTop < 0  
+                    marqueeHeight + marqueeTop 
+                  else if marqueeHeight + marqueeTop > $(container).height()
+                    $(container).height() - marqueeTop 
+                  else 
+                    marqueeHeight
               if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
                 $(marquee).css "opacity", "0"
               else
@@ -844,15 +958,31 @@ SGAReader.namespace "Presentation", (Presentation) ->
           that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
 
           that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
-            marquee.css
-              "left": 16 + parseInt( ((-p.topLeft.x * visiblePerc) / 100) * that.getScale(), 10)
-              "top": parseInt( ((-p.topLeft.y * visiblePerc) / 100) * that.getScale(), 10)
+            marqueeLeft = parseInt( (-p.topLeft.x * visiblePerc / 10) * that.getScale(), 10)
+            marqueeTop = parseInt( (-p.topLeft.y * visiblePerc / 10) * that.getScale(), 10)
+            marquee.css({
+              "left": 16 + Math.max(0, marqueeLeft)
+              "top": Math.max(0, marqueeTop)
+              "width":
+                if marqueeLeft < 0
+                  marqueeWidth + marqueeLeft 
+                else if marqueeWidth + marqueeLeft > $(container).width() 
+                  $(container).width() - marqueeLeft 
+                else marqueeWidth
+              "height": 
+                if marqueeTop < 0  
+                  marqueeHeight + marqueeTop 
+                else if marqueeHeight + marqueeTop > $(container).height()
+                  $(container).height() - marqueeTop 
+                else 
+                  marqueeHeight
+            })
 
         that.events.onScaleChange.addListener (s) ->
+          updateMarque(app.imageControls.getZoom())
           that.visitRenderings (id, r) ->
             r.setScale?(s)
             true
-
 
         #
         # !target gives us all of the annotations that target the given
