@@ -540,8 +540,8 @@ SGAReader.namespace "Application", (Application) ->
 
         that.getRangeMetadata = (id) ->
           meta = {}
-          info = that.dataStore.data.getItem id
-          meta.rangeTitle = info.label?[0]
+          info = manifestData.getItem id
+          meta.rangeTitle = info.rdfslabel?[0]
           meta
 
         that.getManifestMetadata = (id) ->
@@ -565,8 +565,8 @@ SGAReader.namespace "Application", (Application) ->
             
         that.getCanvasMetadata = (id) ->
           meta = that.getManifestMetadata()
-          info = that.dataStore.data.getItem id
-          meta.canvasTitle = info.label?[0]
+          info = manifestData.getItem id
+          meta.canvasTitle = info.rdfslabel?[0]
 
           
           meta.workTitle = info.dctitle[0] if info.dctitle?[0]?

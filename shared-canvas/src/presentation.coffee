@@ -394,67 +394,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,0,256,256
 
-        that.addLens 'ImageViewer2', (container, view, model, id) ->
-          return unless 'Image' in (options.types || [])
-
-          rendering = {}
-
-          item = model.getItem id
-
-          app.imageControls.setActive(true)
-
-          baseURL = item.url[0]
-          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/')
-
-          console.log(baseURL, tempBaseURL, $(container))
-
-          rendering.update = (item) ->
-
-          rendering.getZoom = ->
-          rendering.setZoom = (z) ->
-
-          rendering.getX = ->
-          rendering.setX = (x) ->
-          rendering.getY = ->
-          rendering.setY = (y) ->
-
-
-          $.ajax
-            url: tempBaseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
-            success: (metadata) ->              
-              originalWidth = parseInt(metadata.width, 10) || 1
-              originalHeight = parseInt(metadata.height, 10) || 1
-              zoomLevels = parseInt(metadata.levels, 10)
-              divWidth = $(svgRoot.root()).parent().width() || 1
-              divHeight = $(svgRoot.root()).parent().height() || 1
-              zoomForFull = zoomLevels - Math.floor((Math.log(originalWidth) - Math.log(divWidth))/Math.log(2.0))
-              xTiles = Math.ceil(divWidth / 256)
-              yTiles = Math.ceil(divHeight / 256)
-              console.log
-                imageWidth: originalWidth
-                imageHeight: originalHeight
-                zoomLevels: zoomLevels
-                divWidth: divWidth
-                divHeight: divHeight
-                originalZoom: zoomForFull
-                xTiles: xTiles
-                yTiles: yTiles
-                tileWidth: Math.pow(2.0, zoomForFull)*256
-                #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004
-                #&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,2048,256,256
-              imageURL = (x,y,z) ->
-                # we want (x,y) to be the tiling for the screen -- it should be fairly constant, but should be
-                # divided into 256x256 pixel tiles
-                tileWidth = Math.pow(2.0, zoomForFull) * 256
-                xx = x * tileWidth
-                yy = y * tileWidth
-                baseURL + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=#{z}&svc.region=#{yy},#{xx},256,256"
-                
-              console.log imageURL(0,0,zoomForFull)
-              console.log imageURL(1,0,zoomForFull)
-
-          rendering
-
         that.addLens 'ImageViewer', (container, view, model, id) ->
           return unless 'Image' in (options.types || [])
           rendering = {}
@@ -464,7 +403,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           # this is temporary until we see if scaling the SVG to counter this will fix the issues
           # this appears to be an issue only on webkit-based browsers - Mozilla/Firefox handles the
           # zoom just fine
-
+          ###
           if 'webkitRequestAnimationFrame' in window and browserZoomLevel != 0
             # we're zoomed in/out and may have problems
             if !$("#zoom-warning").size()
@@ -475,7 +414,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               $("#zoom-warning").text("Zooming out using your browser's controls will distort the facsimile image.")
           else
             $("#zoom-warning").remove()
-          
+          ###
 
           item = model.getItem id
 
@@ -884,9 +823,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           rendering
 
-  Presentation.namespace "TextZone", (Zone) ->
+  Presentation.namespace "HTMLZone", (Zone) ->
     Zone.initInstance = (args...) ->
-      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextZone", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.HTMLZone", args..., (that, container) ->
         options = that.options
         svgRoot = options.svgRoot
 
@@ -898,90 +837,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
         that.setY options.y
         that.setScale options.scale
 
-        updateMarque = (z) ->
+        $(container).css
+          'overflow': 'hidden'
 
-        app = that.options.application()
-
-        if app.imageControls?.getActive()
-          # If the marquee already exists, replace it with a new one.
-          $('.marquee').remove()
-          # First time, always full extent in size and visible area
-          strokeW = 1
-          marquee = $("<div class='marquee'></div>")
-          $(container).append(marquee)
-          marquee.css
-            "border-color": 'navy'
-            "background-color": "yellow"
-            "border-width": strokeW
-            "opacity": "0.1"
-            "border-opacity": "0.9"
-            "width": options.width * options.scale
-            "height": options.height * options.scale
-            "position": "absolute"
-            "z-index": 0
-            "top": 0
-            "left": 16
-
-          visiblePerc = 100
-          marqueeLeft = 0
-          marqueeTop = 0
-          marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
-          marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
-
-          # we do our own clipping because of the way margins and padding play with us
-
-          updateMarque = (z) ->
-            if app.imageControls.getMaxZoom() > 0
-              width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
-              visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
-
-              marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
-              marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
-              
-              marquee.css
-                "width":
-                  if marqueeLeft < 0
-                    marqueeWidth + marqueeLeft 
-                  else if marqueeWidth + marqueeLeft > $(container).width() 
-                    $(container).width() - marqueeLeft 
-                  else marqueeWidth
-                "height": 
-                  if marqueeTop < 0  
-                    marqueeHeight + marqueeTop 
-                  else if marqueeHeight + marqueeTop > $(container).height()
-                    $(container).height() - marqueeTop 
-                  else 
-                    marqueeHeight
-              if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
-                $(marquee).css "opacity", "0"
-              else
-                $(marquee).css "opacity", "0.1"
-
-          that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
-
-          that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
-            marqueeLeft = parseInt( (-p.topLeft.x * visiblePerc / 10) * that.getScale(), 10)
-            marqueeTop = parseInt( (-p.topLeft.y * visiblePerc / 10) * that.getScale(), 10)
-            marquee.css({
-              "left": 16 + Math.max(0, marqueeLeft)
-              "top": Math.max(0, marqueeTop)
-              "width":
-                if marqueeLeft < 0
-                  marqueeWidth + marqueeLeft 
-                else if marqueeWidth + marqueeLeft > $(container).width() 
-                  $(container).width() - marqueeLeft 
-                else marqueeWidth
-              "height": 
-                if marqueeTop < 0  
-                  marqueeHeight + marqueeTop 
-                else if marqueeHeight + marqueeTop > $(container).height()
-                  $(container).height() - marqueeTop 
-                else 
-                  marqueeHeight
-            })
-
-        that.events.onScaleChange.addListener (s) ->
-          updateMarque(app.imageControls.getZoom())
+        that.onDestroy that.events.onScaleChange.addListener (s) ->
           that.visitRenderings (id, r) ->
             r.setScale?(s)
             true
@@ -1002,6 +861,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
         #
 
         that.addLens 'ContentAnnotation', (innerContainer, view, model, id) ->
+          return unless 'Text' in (options.types || [])
+
           rendering = {}
           item = model.getItem id
 
@@ -1065,6 +926,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # if the text is too long for the view.
         #
         that.addLens 'TextContentZone', (innerContainer, view, model, id) ->
+          return unless 'Text' in (options.types || [])
           rendering = {}
           
           app = options.application()
@@ -1174,10 +1036,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
             y = if item.y?[0]? then item.y[0] else 0
             width = if item.width?[0]? then item.width[0] else options.width - x
             height = if item.height?[0]? then item.height[0] else options.height - y
-            #if height > that.getHeight()
-            #  that.setHeight height
-            #else
-            #  height = that.getHeight()
             that.setHeight height
             $(textContainer).css
               left: parseInt(16 + x * that.getScale(), 10) + "px"
@@ -1186,19 +1044,441 @@ SGAReader.namespace "Presentation", (Presentation) ->
               height: parseInt(height * that.getScale(), 10) + "px"
           rendering
 
+        that.addLens 'Image', (innerContainer, view, model, id) ->
+          return unless 'Image' in (options.types || [])
+
+          rendering = {}
+
+          item = model.getItem id
+
+          htmlImage = null
+          height = 0
+          y = 0
+          x = 0
+          width = 0
+          renderImage = (item) ->
+            if item.image?[0]?
+              x = if item.x?[0]? then item.x[0] else 0
+              y = if item.y?[0]? then item.y[0] else 0
+              width = if item.width?[0]? then item.width[0] else options.width - x
+              height = if item.height?[0]? then item.height[0] else options.height - y
+              s = that.getScale()
+              if htmlImage?
+                htmlImage.remove()
+              htmlImage = $("<img></img>")
+              $(innerContainer).append(htmlImage)
+              htmlImage.attr
+                height: parseInt(height * s / 10, 10)
+                width: parseInt(width * s / 10, 10)
+                src: item.image[0]
+                border: 'none'
+              htmlImage.css
+                position: 'absolute'
+                top: parseInt(y * s / 10, 10)
+                left: parseInt(x * s / 10, 10)
+
+          renderImage(item)
+
+          rendering.setScale = (s) ->
+            if htmlImage?
+              htmlImage.attr
+                height: parseInt(height * s / 10, 10)
+                width: parseInt(width * s / 10, 10)
+              htmlImage.css
+                top: parseInt(y * s / 10, 10)
+                left: parseInt(x * s / 10, 10)
+
+          rendering.getHeight = -> height/10
+
+          rendering.getY = -> y/10
+
+          rendering.update = renderImage
+
+          rendering.remove = ->
+            if htmlImage?
+              htmlImage.remove()
+              htmlImage = null
+          rendering
+
+        # This tile-based image viewer does not use SVG for now to avoid issues with FireFox
+        that.addLens 'ImageViewer', (innerContainer, view, model, id) ->
+          return unless 'Image' in (options.types || [])
+
+          rendering = {}
+
+          djatokaTileWidth = 256
+
+          item = model.getItem id
+
+          x = if item.x?[0]? then item.x[0] else 0
+          y = if item.y?[0]? then item.y[0] else 0
+          width = if item.width?[0]? then item.width[0] else options.width - x
+          height = if item.height?[0]? then item.height[0] else options.height - y
+
+          divWidth = $(container).width() || 1
+          divHeight = $(container).height() || 1
+
+          divScale = that.getScale()
+
+          $(innerContainer).css
+            'overflow': 'hidden'
+            'position': "absolute"
+            'top': 0
+            'left': 0
+
+          imgContainer = $("<div></div>")
+          $(innerContainer).append(imgContainer)
+
+          app.imageControls.setActive(true)
+
+          baseURL = item.url[0]
+          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/')
+
+          rendering.update = (item) ->
+
+          zoomLevel = null
+
+          rendering.getZoom = -> zoomLevel
+          rendering.setZoom = (z) ->
+          rendering.setScale = (s) ->
+          rendering.getScale = -> divScale
+          rendering.getX = ->
+          rendering.setX = (x) ->
+          rendering.getY = ->
+          rendering.setY = (y) ->
+
+          centerX = 0
+          centerY = 0
+
+          rendering.setCenterX = (x) ->
+          rendering.setCenterY = (y) ->
+          rendering.getCenterX = -> centerX
+          rendering.getCenterY = -> centerY
+
+          rendering.remove = ->
+            $(imgContainer).empty()
+
+          $.ajax
+            url: tempBaseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
+            success: (metadata) ->
+              # original{Width,Height} are the size of the full jp2 image - the maximum resolution            
+              originalWidth = parseInt(metadata.width, 10) || 1
+              originalHeight = parseInt(metadata.height, 10) || 1
+              # zoomLevels are how many different times we can divide the resolution in half
+              zoomLevels = parseInt(metadata.levels, 10)
+              # div{Width,Height} are the size of the HTML <div/> in which we are rendering the image
+              divWidth = $(container).width() || 1
+              divHeight = $(container).height() || 1
+              divScale = that.getScale()
+              # {x,y}Tiles are how many whole times we can tile the <div/> with tiles _djatokaTileWidth_ wide
+              xTiles = Math.floor(originalWidth * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
+              yTiles = Math.floor(originalHeight * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
+              inDrag = false
+              
+              #mouseupHandler = (e) ->
+              #  if inDrag
+              #    e.preventDefault()
+              #    inDrag = false
+              #$(document).mouseup mouseupHandler
+              #that.onDestroy ->
+              #  $(document).unbind 'mouseup', mouseupHandler
+
+              startX = 0
+              startY = 0
+              startCenterX = centerX
+              startCenterY = centerY
+              # Initially, center the image in the view area
+              centerX = originalWidth / 2
+              centerY = originalHeight / 2
+              baseZoomLevel = 0 # this is the amount needed to render full width of the div - can change with a window resize
+              
+              # if we want all of the image to show up on the screen, then we need to pick the zoom level that
+              # is one step larger than the screen
+              # so if image is 1024 px and we want to fit in 256 px, then image = 2^(n) * fit
+              #xUnits * 2^8 = divWidth - divWidth % 2^8
+              #xUnits * 2^(8+z) = originalWidth - originalWidth % 2^(8+z)
+              recalculateBaseZoomLevel = ->
+                divWidth = $(container).width() || 1
+                baseZoomLevel = Math.ceil(-Math.log( divScale )/Math.log(2))
+
+              wrapWithImageReplacement = (cb) ->
+                cb()
+                currentZ = Math.ceil(zoomLevel + baseZoomLevel)
+                $(imgContainer).find("img").each (idx, el) ->
+                  img = $(el)
+                  x = img.data 'x'
+                  y = img.data 'y'
+                  z = img.data 'z'
+                  if z != currentZ
+                    img.css
+                      "z-index": -10
+                  else
+                    img.css
+                      "z-index": 0
+
+              rendering.setZoom = (z) ->
+                wrapper = (cb) -> cb()
+                if z < 0
+                  z = 0
+                if z > zoomLevels - baseZoomLevel
+                  z = zoomLevels - baseZoomLevel
+                if z != zoomLevel
+                  if zoomLevel? and Math.ceil(z) != Math.ceil(zoomLevel)
+                    wrapper = wrapWithImageReplacement
+                  zoomLevel = z
+                  wrapper renderTiles
+             
+              rendering.setScale = (s) ->
+                divScale = s
+                $(innerContainer).css
+                  width: originalWidth * divScale
+                  height: originalHeight * divScale
+
+                oldZoom = baseZoomLevel
+                recalculateBaseZoomLevel()
+                if oldZoom != baseZoomLevel
+                  zoomLevel = zoomLevel - baseZoomLevel + oldZoom
+                  if zoomLevel > zoomLevels - baseZoomLevel
+                    zoomLevel = zoomLevels - baseZoomLevel
+                  if zoomLevel < 0
+                    zoomLevel = 0
+
+                  wrapper = wrapWithImageReplacement
+                else
+                  wrapper = (cb) -> cb()
+                wrapper renderTiles
+
+              recalculateBaseZoomLevel()
+
+              tiles = []
+              for i in [0..zoomLevels]
+                tiles[i] = []
+
+                # level 6 => zoomed in all the way - 1px = 1px
+                # level 5 => zoomed in such that   - 2px in image = 1px on screen
+                #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004
+                #&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,2048,256,256
+              imageURL = (x,y,z) ->
+                # we want (x,y) to be the tiling for the screen -- it should be fairly constant, but should be
+                # divided into 256x256 pixel tiles
+
+                #
+                # the tileWidth is the amount of space in the full size jpeg2000 image represented by the tile
+                #
+                tileWidth = Math.pow(2.0, zoomLevels - z) * djatokaTileWidth
+                [ 
+                  baseURL
+                  "svc_id=info:lanl-repo/svc/getRegion"
+                  "svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000"
+                  "svc.format=image/jpeg"
+                  "svc.level=#{z}"
+                  "svc.region=#{y * tileWidth},#{x * tileWidth},#{djatokaTileWidth},#{djatokaTileWidth}"
+                ].join("&")
+
+              screenCenter = ->
+                original2screen(centerX - originalWidth / 2, centerY - originalHeight/2)
+
+              # we want to map 256 pixels from the Djatoka server onto 128-256 pixels on our screen
+              
+
+              calcJP2KTileSize = ->
+                Math.pow(2.0, zoomLevels - Math.ceil(zoomLevel + baseZoomLevel)) * djatokaTileWidth
+
+              calcTileSize = ->
+                Math.floor(Math.pow(2.0, zoomLevel) * divScale * calcJP2KTileSize())
+
+              # returns the screen coordinates for the top/left position of the screen tile at the (x,y) position
+              # takes into account the center{X,Y} and zoom level
+              screenCoords = (x, y) ->
+                tileSize = calcTileSize()
+                top = y * tileSize
+                left = x * tileSize
+                center = screenCenter()
+                return {
+                  top: top + center.top
+                  left: left + center.left
+                }
+
+              original2screen = (ox, oy) ->
+                return {
+                  left: ox * divScale * Math.pow(2.0, zoomLevel)
+                  top: oy * divScale * Math.pow(2.0, zoomLevel)
+                }
+
+              screen2original = (ox, oy) ->
+                return {
+                  left: ox / divScale / Math.pow(2.0, zoomLevel)
+                  top: oy / divScale / Math.pow(2.0, zoomLevel)
+                }
+
+              # make sure we aren't too far right/left/up/down
+              constrainCenter = ->
+                tl = screen2original(-divWidth/2,-divHeight/2)
+                br = screen2original(divWidth/2, divHeight/2)
+
+                if tl.left + centerX < 0
+                  centerX = -tl.left
+                if tl.top + centerY < 0
+                  centerY = -tl.top
+                if originalWidth - br.left < centerX
+                  centerX = originalWidth - br.left
+                if originalHeight - br.top < centerY
+                  centerY = originalHeight - br.top
+
+              # returns the width/height of the screen tile at the (x,y) position
+              screenExtents = (x, y) ->
+                tileSize = calcTileSize()
+                # when at full zoom in, we're using djatokaTileWidth == tileSize
+                jp2kTileSize = calcJP2KTileSize()
+
+                if (x + 1) * jp2kTileSize > originalWidth
+                  width = originalWidth - x * jp2kTileSize
+                else
+                  width = jp2kTileSize
+                if (y + 1) * jp2kTileSize > originalHeight
+                  height = originalHeight - y * jp2kTileSize
+                else
+                  height = jp2kTileSize
+
+                #scale = divHeight / originalHeight * Math.pow(2.0, zoomLevel)
+                scale = tileSize / jp2kTileSize
+
+                return {
+                  width: Math.max(0, width * scale)
+                  height: Math.max(0, height * scale)
+                }
+
+              renderTile = (o) ->
+                z = Math.ceil(zoomLevel + baseZoomLevel)                
+                topLeft = screenCoords(o.x, o.y)
+                heightWidth = screenExtents(o.x, o.y)
+
+                if heightWidth.height == 0 or heightWidth.width == 0
+                  return
+
+                # If we've already created the image at this zoom level, then we'll just use it and adjust the
+                # size/position on the screen.
+                if tiles[z]?[o.x]?[o.y]?
+                  imgEl = tiles[z][o.x][o.y]
+
+                # If the image is off the view area, we just hide it.
+                if topLeft.left + heightWidth.width < 0 or topLeft.left > divWidth or topLeft.top + heightWidth.height < 0 or topLeft.top > divHeight
+                  if imgEl?
+                    imgEl.hide()
+                  return # don't render the image if off the top of left
+
+                # If we have a cached image, we make sure it isn't hidden.
+                if imgEl?
+                  imgEl.show()
+                else
+                  imgEl = $("<img></img>")
+                  $(imgContainer).append(imgEl)
+                  imgEl.attr
+                    'data-x': o.x
+                    'data-y': o.y
+                    'data-z': z
+                    border: 'none'
+                    src: imageURL(o.x, o.y, z)
+                  tiles[z] ?= []
+                  tiles[z][o.x] ?= []
+                  tiles[z][o.x][o.y] = imgEl
+
+                  do (imgEl) ->
+                    imgEl.bind 'mousedown', (evt) ->
+                      if not inDrag
+                        evt.preventDefault()
+
+                        startX = null
+                        startY = null
+                        startCenterX = centerX
+                        startCenterY = centerY
+                        inDrag = true
+                        MITHgrid.mouse.capture (type) ->
+                          e = this
+                          switch type
+                            when "mousemove"
+                              if !startX? or !startY?
+                                startX = e.pageX
+                                startY = e.pageY
+                              scoords = screen2original(startX - e.pageX, startY - e.pageY)
+                              centerX = startCenterX - scoords.left
+                              centerY = startCenterY - scoords.top
+                              constrainCenter()
+                              renderTiles()
+                            when "mouseup"
+                              inDrag = false
+                              MITHgrid.mouse.uncapture()
+                    imgEl.bind 'mousemove', (e) ->
+                      e.preventDefault() if inDrag
+                    imgEl.bind 'mouseup', (e) ->
+                      e.preventDefault() if inDrag
+
+                    imgEl.bind 'mousewheel', (e) ->
+                      e.preventDefault()
+                      inDrag = false
+                      z = rendering.getZoom()
+                      if z >= 0 and z <= zoomLevels - baseZoomLevel
+                        rendering.setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
+
+                imgEl.css
+                  position: 'absolute'
+                  top: topLeft.top
+                  left: 16 + topLeft.left
+                  width: heightWidth.width
+                  height: heightWidth.height
+
+              renderTiles = ->
+                divWidth = $(container).width() || 1
+                divHeight = $(container).height() || 1
+                constrainCenter()
+
+                # the tileSize is the size of the area tiled by the image. It should be between 1/2 and 1 times the djatokaTileWidth
+                tileSize = calcTileSize()
+                # xTiles and yTiles are how many of these tileSize tiles will cover the zoomed in image
+                xTiles = Math.floor(originalWidth * divScale * Math.pow(2.0, zoomLevel) / tileSize)
+                yTiles = Math.floor(originalHeight * divScale * Math.pow(2.0, zoomLevel) / tileSize)
+                
+                # x,y,width,height are in terms of canvas extents - not screen pixels
+                # s gives us the conversion to screen pixels
+                # for now, we're mapping full images, so we don't need to worry about offsets into the image
+                # xTiles tells us how many tiles across
+                # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
+
+                for j in [0..yTiles]
+                  for i in [0..xTiles]
+                    renderTile 
+                      x: i
+                      y: j
+                      tileSize: tileSize
+
+              rendering.setCenterX = (x) ->
+                centerX = x
+                renderTiles()
+
+              rendering.setCenterY = (y) ->
+                centerY = y
+                renderTiles()
+              rendering.addCenterX = (dx) ->
+                rendering.setCenterX centerX + dx
+              rendering.addCenterY = (dy) ->
+                rendering.setCenterY centerY + dy
+
+              rendering.setZoom(0)
+
+          rendering
   #
   # ## Presentation.Canvas
   #
 
-  # Selects one of TextCanvas or ImageCanvas as appropriate.
+  # Selects one of HTMLCanvas or SVGCanvas as appropriate.
 
   Presentation.namespace "Canvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
-      [ ns, container, options ] = MITHgrid.normalizeArgs(args...)
-      if "Text" in options.types and options.types.length == 1
-        SGA.Reader.Presentation.TextCanvas.initInstance args...
-      else
-        SGA.Reader.Presentation.ImageCanvas.initInstance args...
+      #[ ns, container, options ] = MITHgrid.normalizeArgs(args...)
+      #if "Text" in options.types and options.types.length == 1
+      SGA.Reader.Presentation.HTMLCanvas.initInstance args...
+      #else
+      #  SGA.Reader.Presentation.SVGCanvas.initInstance args...
   #
   # ## Presentation.TextCanvas
   #
@@ -1208,13 +1488,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
   # It handles things when 'Text' is the only presentation type (@data-types)
   #
 
-  Presentation.namespace "TextCanvas", (Canvas) ->
+  Presentation.namespace "HTMLCanvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
-      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.TextCanvas", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.HTMLCanvas", args..., (that, container) ->
         # we're just going to be a div with positioned child divs
         options = that.options
 
         annoExpr = that.dataView.prepare(['!target'])
+        container.css
+          'overflow': 'hidden'
 
         viewEl = $("<div></div>")
         container.append(viewEl)
@@ -1257,6 +1539,102 @@ SGAReader.namespace "Presentation", (Presentation) ->
           expressions: [ '!target' ]
           key: null
 
+        updateMarque = (z) ->
+
+        if 'Text' in (options.types || [])
+          app = options.application()
+
+          # If the marquee already exists, replace it with a new one.
+          $('.marquee').remove()
+          # First time, always full extent in size and visible area
+          strokeW = 1
+          marquee = $("<div class='marquee'></div>")
+          $(container).append(marquee)
+          marquee.css
+            "border-color": 'navy'
+            "background-color": "yellow"
+            "border-width": strokeW
+            "opacity": "0.1"
+            "border-opacity": "0.9"
+            "width": options.width * options.scale
+            "height": options.height * options.scale
+            "position": "absolute"
+            "z-index": 0
+            "top": 0
+            "left": 16
+
+          visiblePerc = 100
+          marqueeLeft = 0
+          marqueeTop = 0
+          marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+          marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+
+          # we do our own clipping because of the way margins and padding play with us
+
+          updateMarque = (z) ->
+            if app.imageControls.getMaxZoom() > 0
+              width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
+              visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
+
+              marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+              marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+              
+              marquee.css
+                "width":
+                  if marqueeLeft < 0
+                    marqueeWidth + marqueeLeft 
+                  else if marqueeWidth + marqueeLeft > $(container).width() 
+                    $(container).width() - marqueeLeft 
+                  else marqueeWidth
+                "height": 
+                  if marqueeTop < 0  
+                    marqueeHeight + marqueeTop 
+                  else if marqueeHeight + marqueeTop > $(container).height()
+                    $(container).height() - marqueeTop 
+                  else 
+                    marqueeHeight
+              if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
+                $(marquee).css "opacity", "0"
+              else
+                $(marquee).css "opacity", "0.1"
+
+            that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
+
+            that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
+              marqueeLeft = parseInt( (-p.topLeft.x * visiblePerc / 10) * that.getScale(), 10)
+              marqueeTop = parseInt( (-p.topLeft.y * visiblePerc / 10) * that.getScale(), 10)
+              marquee.css({
+                "left": 16 + Math.max(0, marqueeLeft)
+                "top": Math.max(0, marqueeTop)
+                "width":
+                  if marqueeLeft < 0
+                    marqueeWidth + marqueeLeft 
+                  else if marqueeWidth + marqueeLeft > $(container).width() 
+                    $(container).width() - marqueeLeft 
+                  else marqueeWidth
+                "height": 
+                  if marqueeTop < 0  
+                    marqueeHeight + marqueeTop 
+                  else if marqueeHeight + marqueeTop > $(container).height()
+                    $(container).height() - marqueeTop 
+                  else 
+                    marqueeHeight
+              })
+
+          if app.imageControls?.getActive()
+            $('.marquee').show()
+          else
+            $('.marquee').hide()
+
+          that.onDestroy app.imageControls?.events.onActiveChange.addListener (a) ->
+            if a
+              $('.marquee').show()
+            else
+              $('.marquee').hide()
+
+          that.events.onScaleChange.addListener (s) ->
+            updateMarque(app.imageControls.getZoom())
+
         realCanvas = null
 
         $(container).on "resetPres", ->
@@ -1265,7 +1643,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             realCanvas.hide() if realCanvas.hide?
             realCanvas._destroy() if realCanvas._destroy?
           $(viewEl).empty()
-          realCanvas = SGA.Reader.Presentation.TextZone.initInstance viewEl,
+          realCanvas = SGA.Reader.Presentation.HTMLZone.initInstance viewEl,
             types: options.types
             dataView: dataView
             application: options.application
@@ -1285,7 +1663,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             realCanvas._destroy() if realCanvas._destroy?
         
           $(viewEl).empty()
-          realCanvas = SGA.Reader.Presentation.TextZone.initInstance viewEl,
+          realCanvas = SGA.Reader.Presentation.HTMLZone.initInstance viewEl,
             types: options.types
             dataView: dataView
             application: options.application
@@ -1296,16 +1674,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
           realCanvas.events.onHeightChange.addListener that.setHeight
 
   #
-  # ## Presentation.ImageCanvas
+  # ## Presentation.SVGCanvas
   #
 
   #
   # This is the wrapper around a root Zone presentation that gets things
   # started. It handles things when 'Image' is in the presentation type (@data-types)
   #
-  Presentation.namespace "ImageCanvas", (Canvas) ->
+  Presentation.namespace "SVGCanvas", (Canvas) ->
     Canvas.initInstance = (args...) ->
-      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.ImageCanvas", args..., (that, container) ->
+      MITHgrid.Presentation.initInstance "SGA.Reader.Presentation.SVGCanvas", args..., (that, container) ->
         # We want to draw everything that annotates a Canvas
         # this would be anything with a target = the canvas
         options = that.options
@@ -1327,6 +1705,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
           </svg>
         """)
         $(container).append(svgRootEl)
+        # The following gives us problems on Firefox with jQuery 1.9.x and jquery.svg
+        # So we need to do something different or drop back to jQuery 1.7.2
         try
           svgRoot = $(svgRootEl).svg 
             onLoad: (svg) ->
