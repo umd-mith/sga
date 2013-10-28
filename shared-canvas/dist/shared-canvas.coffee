@@ -1,9 +1,9 @@
 ###
-# SGA Shared Canvas v0.132980
+# SGA Shared Canvas v0.133010
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 15:24:13 2013 -0400
+# Date: Fri Oct 25 13:07:56 2013 -0700
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -329,7 +329,7 @@
                 if lineIndents[lineNo]?
                   currentLineEl.css
                   currentLineEl.css
-                    'padding-left': (lineIndents[lineNo] * 4)+"em"
+                    'padding-left': (lineIndents[lineNo] * 1)+"em"
     
                 lineNoFraq = lineNo - parseInt(lineNo, 10)
                 if lineNoFraq < 0
@@ -560,13 +560,13 @@
             # Line breaks are different. We just want to add an explicit
             # break without any classes or styling.
             #
-            that.addLens 'LineBreak', (container, view, model, id) ->
-              currentLine += 1
+            that.addLens 'LineBreak', (container, view, model, id) ->          
               item = model.getItem id
               if item.sgatextAlignment?.length > 0
                 lineAlignments[currentLine] = item.sgatextAlignment[0]
-              if item.sgatextIndentLevel?.length > 0
-                lineIndents[currentLine] = parseInt(item.sgatextIndentLevel[0], 10) or 0
+              if item.indent?.length > 0
+                lineIndents[currentLine] = parseInt(item.indent[0], 10) or 0
+              currentLine += 1
               null
     
       #
@@ -2525,7 +2525,6 @@
             $c.find('#hand-view_0').change ->
               if $(this).is(':checked')  
                 $('#LimitViewControls_classes').remove()    
-
     # # Controllers
     
     SGAReader.namespace "Controller", (Controller) ->
@@ -2826,8 +2825,12 @@
                   # All of the SGA-specific annotations will have types
                   # prefixed with "sga" and ending in "Annotation"
                   sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
+                  
                   if sgaTypes.length > 0
                     extractTextTarget item, aitem.oahasTarget?[0]
+                    # If there is an indentation level specified, store it.
+                    if aitem.sgatextIndentLevel?
+                      item.indent = aitem.sgatextIndentLevel
                     item.type = sgaTypes
                     array = textAnnos
     
@@ -2852,6 +2855,7 @@
                   modend = {}
                   modInfo = {}
                   setMod = (item) ->
+                    indent = item.indent
                     source = item.target
                     start = item.start
                     end = item.end
@@ -2878,8 +2882,8 @@
                         modIds = [ ]
                         br_pushed = false
     
-                        pushTextItem = (classes, css, target, start, end) ->
-                          textItems.push
+                        pushTextItem = (classes, css, target, start, end, indent=null) ->
+                          titem = 
                             type: classes
                             css: css.join(" ")
                             text: text[start ... end]
@@ -2887,6 +2891,8 @@
                             target: target
                             start: start
                             end: end
+                          if indent? then titem.indent = indent
+                          textItems.push titem                   
                         
                         processNode = (start, end) ->
                           classes = []
@@ -2911,22 +2917,22 @@
                         # text source that the highlight is targeting in the
                         # actual open annotation model.
                         #
-                        makeTextItems = (start, end, classes, css) ->
+                        makeTextItems = (start, end, classes, css, indent) ->
                           for candidate in (textSources[source] || [])
                             if start <= candidate[2] and end >= candidate[1]
                               s = Math.min(Math.max(start, candidate[1]),candidate[2])
                               e = Math.max(Math.min(end, candidate[2]), candidate[1])
-                              pushTextItem classes, css, candidate[0], s, e
+                              pushTextItem classes, css, candidate[0], s, e, indent
                           false
     
                         #
                         # A line break is just a zero-width annotation at
                         # the given position.
                         #
-                        makeLinebreak = (pos) ->
+                        makeLinebreak = (pos, indent) ->
                           classes = [ "LineBreak" ]
                           #classes.push modInfo[id].type for id in modIds
-                          makeTextItems pos, pos, classes, [ "" ]
+                          makeTextItems pos, pos, classes, [ "" ], indent
     
                         #
                         mstarts = modstart[source] || []
@@ -2949,7 +2955,9 @@
                               idx = modIds.indexOf id
                               modIds.splice idx, 1 if idx > -1
                             if needs_br and not br_pushed
-                              makeLinebreak pos
+                              indent = null
+                              if modInfo[id].indent? then indent = modInfo[id].indent
+                              makeLinebreak pos, indent
                               br_pushed = true
                             last_pos = pos
                         processNode last_pos, text.length
@@ -3117,8 +3125,8 @@
               if not id?
                 id = options.url
                 id = id.substr(0, id.indexOf('.json'));
-                id = id.replace('dev.', '');
-                #id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
+                #id = id.replace('dev.', '');
+                id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest"
               if id?
                 info = manifestData.getItem id
                 ret.workTitle = info.dctitle?[0]
