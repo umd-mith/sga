@@ -70,7 +70,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             if lineIndents[lineNo]?
               currentLineEl.css
               currentLineEl.css
-                'padding-left': (lineIndents[lineNo] * 4)+"em"
+                'padding-left': (lineIndents[lineNo] * 1)+"em"
 
             lineNoFraq = lineNo - parseInt(lineNo, 10)
             if lineNoFraq < 0
@@ -301,13 +301,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # Line breaks are different. We just want to add an explicit
         # break without any classes or styling.
         #
-        that.addLens 'LineBreak', (container, view, model, id) ->
-          currentLine += 1
+        that.addLens 'LineBreak', (container, view, model, id) ->          
           item = model.getItem id
           if item.sgatextAlignment?.length > 0
             lineAlignments[currentLine] = item.sgatextAlignment[0]
-          if item.sgatextIndentLevel?.length > 0
-            lineIndents[currentLine] = parseInt(item.sgatextIndentLevel[0], 10) or 0
+          if item.indent?.length > 0
+            lineIndents[currentLine] = parseInt(item.indent[0], 10) or 0
+          currentLine += 1
           null
 
   #

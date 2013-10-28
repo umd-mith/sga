@@ -260,6 +260,9 @@ SGAReader.namespace "Application", (Application) ->
               sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
               if sgaTypes.length > 0
                 extractTextTarget item, aitem.oahasTarget?[0]
+                # If there is an indentation level specified, store it.
+                if aitem.sgatextIndentLevel?
+                  item.indent = aitem.sgatextIndentLevel
                 item.type = sgaTypes
                 array = textAnnos
 
@@ -284,6 +287,7 @@ SGAReader.namespace "Application", (Application) ->
               modend = {}
               modInfo = {}
               setMod = (item) ->
+                indent = item.indent
                 source = item.target
                 start = item.start
                 end = item.end
@@ -310,8 +314,8 @@ SGAReader.namespace "Application", (Application) ->
                     modIds = [ ]
                     br_pushed = false
 
-                    pushTextItem = (classes, css, target, start, end) ->
-                      textItems.push
+                    pushTextItem = (classes, css, target, start, end, indent=null) ->
+                      titem = 
                         type: classes
                         css: css.join(" ")
                         text: text[start ... end]
@@ -319,6 +323,8 @@ SGAReader.namespace "Application", (Application) ->
                         target: target
                         start: start
                         end: end
+                      if indent? then titem.indent = indent
+                      textItems.push titem                   
                     
                     processNode = (start, end) ->
                       classes = []
@@ -343,22 +349,22 @@ SGAReader.namespace "Application", (Application) ->
                     # text source that the highlight is targeting in the
                     # actual open annotation model.
                     #
-                    makeTextItems = (start, end, classes, css) ->
+                    makeTextItems = (start, end, classes, css, indent) ->
                       for candidate in (textSources[source] || [])
                         if start <= candidate[2] and end >= candidate[1]
                           s = Math.min(Math.max(start, candidate[1]),candidate[2])
                           e = Math.max(Math.min(end, candidate[2]), candidate[1])
-                          pushTextItem classes, css, candidate[0], s, e
+                          pushTextItem classes, css, candidate[0], s, e, indent
                       false
 
                     #
                     # A line break is just a zero-width annotation at
                     # the given position.
                     #
-                    makeLinebreak = (pos) ->
+                    makeLinebreak = (pos, indent) ->
                       classes = [ "LineBreak" ]
                       #classes.push modInfo[id].type for id in modIds
-                      makeTextItems pos, pos, classes, [ "" ]
+                      makeTextItems pos, pos, classes, [ "" ], indent
 
                     #
                     mstarts = modstart[source] || []
@@ -381,7 +387,9 @@ SGAReader.namespace "Application", (Application) ->
                           idx = modIds.indexOf id
                           modIds.splice idx, 1 if idx > -1
                         if needs_br and not br_pushed
-                          makeLinebreak pos
+                          indent = null
+                          if modInfo[id].indent? then indent = modInfo[id].indent
+                          makeLinebreak pos, indent
                           br_pushed = true
                         last_pos = pos
                     processNode last_pos, text.length
