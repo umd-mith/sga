@@ -4,7 +4,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 13:07:56 2013 -0700
+# Date: Mon Oct 28 16:08:27 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -3223,7 +3223,7 @@
                 if (id == null) {
                   id = options.url;
                   id = id.substr(0, id.indexOf('.json'));
-                  id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest";
+                  id = id.replace('dev.', '');
                 }
                 if (id != null) {
                   info = manifestData.getItem(id);
@@ -3365,15 +3365,8 @@
                       }
                       $('.canvas').trigger("searchResultsChange", [cwrPos]);
                       return Q.fcall(obj.loadCanvas, canvasKey).then(function() {
-                        var newPage;
-
-                        if (p === 0) {
-                          newPage = p + 1;
-                        } else {
-                          newPage = p - 1;
-                        }
                         setTimeout(function() {
-                          return obj.setPosition(newPage, 0);
+                          return obj.setPosition(-1, 0);
                         });
                         return setTimeout(function() {
                           return obj.setPosition(p, 0);
@@ -3435,14 +3428,25 @@
 
                       if (manifest.getSequence() == null) {
                         return removeListener = manifest.events.onSequenceChange.addListener(function() {
-                          var bbq_q;
+                          var bbq_q, search;
 
-                          bbq_q = $.bbq.getState('s');
-                          if (bbq_q != null) {
+                          search = function(bbq_q) {
+                            console.log('1');
                             bbq_q = bbq_q.replace(/:/g, '=');
                             bbq_q = bbq_q.replace(/\|/g, '&');
-                            updateSearchResults(bbq_q);
+                            return updateSearchResults(bbq_q);
+                          };
+                          bbq_q = $.bbq.getState("s");
+                          if (bbq_q != null) {
+                            search(bbq_q);
                           }
+                          $(window).bind("hashchange", function(e) {
+                            bbq_q = $.bbq.getState("s");
+                            if (bbq_q != null) {
+                              console.log('h');
+                              return search(bbq_q);
+                            }
+                          });
                           return removeListener();
                         });
                       }

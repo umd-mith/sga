@@ -58,7 +58,7 @@ SGAReader.namespace "Application", (Application) ->
         that.events.onPositionChange.addListener (p) ->
           seq = that.dataStore.data.getItem currentSequence
           canvasKey = seq.sequence?[p]
-          that.setCanvas canvasKey    
+          that.setCanvas canvasKey
 
         #
         # But if we do know the name of the canvas we want to see, we
@@ -692,13 +692,9 @@ SGAReader.namespace "Application", (Application) ->
 
                 # Parse new search annotations into presentation data store. 
                 Q.fcall(obj.loadCanvas, canvasKey).then () ->
-                  # Here we need something like obj.Position.change()
-                  # Feature request to MITHgrid?
-                  if p == 0
-                    newPage = p + 1
-                  else
-                    newPage = p - 1
-                  setTimeout -> obj.setPosition newPage, 0  
+                  # hack to refresh presentation. The -1 is used to avoid updating other components
+                  # such as the slider, pager, and bbq haschange listeners.
+                  setTimeout -> obj.setPosition -1, 0
                   setTimeout -> obj.setPosition p, 0
 
           config.searchBox.events.onQueryChange.addListener (q) ->
@@ -770,13 +766,23 @@ SGAReader.namespace "Application", (Application) ->
               manifest.ready ->
                 if !manifest.getSequence()?
                   removeListener = manifest.events.onSequenceChange.addListener ->
-                    bbq_q = $.bbq.getState('s')
-                    if bbq_q?
+
+                    search = (bbq_q) ->
+                      console.log '1'
                       bbq_q = bbq_q.replace(/:/g,'=')
                       bbq_q = bbq_q.replace(/\|/g, '&')
                       updateSearchResults bbq_q
-                    removeListener()
 
+                    bbq_q = $.bbq.getState "s" 
+                    if bbq_q? 
+                      search(bbq_q)
+
+                    $(window).bind "hashchange", (e) ->
+                      bbq_q = $.bbq.getState "s" 
+                      if bbq_q?                         
+                        console.log 'h'
+                        search(bbq_q)
+                    removeListener()
 
           manifest.run()
           types = $(el).data('types')?.split(/\s*,\s*/)

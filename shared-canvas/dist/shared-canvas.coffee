@@ -3,7 +3,7 @@
 #
 # **SGA Shared Canvas** is a shared canvas reader written in CoffeeScript.
 #
-# Date: Fri Oct 25 13:07:56 2013 -0700
+# Date: Mon Oct 28 16:08:27 2013 -0400
 #
 # (c) Copyright University of Maryland 2012-2013.  All rights reserved.
 #
@@ -2625,7 +2625,7 @@
             that.events.onPositionChange.addListener (p) ->
               seq = that.dataStore.data.getItem currentSequence
               canvasKey = seq.sequence?[p]
-              that.setCanvas canvasKey    
+              that.setCanvas canvasKey
     
             #
             # But if we do know the name of the canvas we want to see, we
@@ -2825,7 +2825,6 @@
                   # All of the SGA-specific annotations will have types
                   # prefixed with "sga" and ending in "Annotation"
                   sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
-                  
                   if sgaTypes.length > 0
                     extractTextTarget item, aitem.oahasTarget?[0]
                     # If there is an indentation level specified, store it.
@@ -3125,8 +3124,8 @@
               if not id?
                 id = options.url
                 id = id.substr(0, id.indexOf('.json'));
-                #id = id.replace('dev.', '');
-                id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest"
+                id = id.replace('dev.', '');
+                #id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
               if id?
                 info = manifestData.getItem id
                 ret.workTitle = info.dctitle?[0]
@@ -3260,13 +3259,9 @@
     
                     # Parse new search annotations into presentation data store. 
                     Q.fcall(obj.loadCanvas, canvasKey).then () ->
-                      # Here we need something like obj.Position.change()
-                      # Feature request to MITHgrid?
-                      if p == 0
-                        newPage = p + 1
-                      else
-                        newPage = p - 1
-                      setTimeout -> obj.setPosition newPage, 0  
+                      # hack to refresh presentation. The -1 is used to avoid updating other components
+                      # such as the slider, pager, and bbq haschange listeners.
+                      setTimeout -> obj.setPosition -1, 0
                       setTimeout -> obj.setPosition p, 0
     
               config.searchBox.events.onQueryChange.addListener (q) ->
@@ -3338,13 +3333,23 @@
                   manifest.ready ->
                     if !manifest.getSequence()?
                       removeListener = manifest.events.onSequenceChange.addListener ->
-                        bbq_q = $.bbq.getState('s')
-                        if bbq_q?
+    
+                        search = (bbq_q) ->
+                          console.log '1'
                           bbq_q = bbq_q.replace(/:/g,'=')
                           bbq_q = bbq_q.replace(/\|/g, '&')
                           updateSearchResults bbq_q
-                        removeListener()
     
+                        bbq_q = $.bbq.getState "s" 
+                        if bbq_q? 
+                          search(bbq_q)
+    
+                        $(window).bind "hashchange", (e) ->
+                          bbq_q = $.bbq.getState "s" 
+                          if bbq_q?                         
+                            console.log 'h'
+                            search(bbq_q)
+                        removeListener()
     
               manifest.run()
               types = $(el).data('types')?.split(/\s*,\s*/)

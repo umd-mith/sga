@@ -1,5 +1,5 @@
 (function ($) { 
-$(document).ready(function() {
+
   // UI fixes
   $("#collapse-one").collapse("hide");
 
@@ -30,25 +30,7 @@ $(document).ready(function() {
       dataView: app.dataView.sequences
     });
 
-    pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location", {
-      getLabel: function(n) {
-        var seq, canvas, seqContent;
-
-        seq = app.getSequence();
-        seqContent = app.dataStore.data.getItem(seq);
-        if(seqContent === undefined || seqContent["sequence"] === undefined) {
-          return "";
-        }
-        if(n < 0 || n >= seqContent["sequence"].length) {
-          return "";
-        }
-        canvas = app.dataStore.data.getItem(seqContent["sequence"][n]);
-        if(canvas != undefined && canvas["label"] != undefined && canvas["label"].length > 0) {
-          return canvas["label"][0];
-        }
-        return "";
-      }
-    });
+    pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
 
     pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");    
 
@@ -63,14 +45,7 @@ $(document).ready(function() {
       pagerEvt: app.events.onCanvasChange,
       getMode: app.modeControls.getMode,
       onModeChange : app.modeControls.events.onModeChange
-    });
-
-    $(window).bind("hashchange", function(e) {
-      var m = $.bbq.getState("m");
-      if(m !== undefined && m !== "") {
-        app.modeControls.setMode(m);
-      }
-    });
+    });    
 
     app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
@@ -79,8 +54,10 @@ $(document).ready(function() {
 
     app.events.onPositionChange.addListener( function(n) {
       app.lockPosition();
-      pageSlider.setValue(n);
-      pager.setValue(n);
+      if (n != -1) {
+        pageSlider.setValue(n);
+        pager.setValue(n);
+      }
       app.unlockPosition();
     } );
 
@@ -165,14 +142,6 @@ $(document).ready(function() {
       }
       $("#cite-url").text(document.URL);
     });
-    
-    app.ready(function() {
-      var m = $.bbq.getState("m");
-      if(m !== undefined && m !== "") {
-        app.modeControls.setMode(m);
-      }
-    });
 
   });
-});
 })(jQuery);
