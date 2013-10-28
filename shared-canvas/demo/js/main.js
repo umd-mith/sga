@@ -7,7 +7,7 @@
 
   var builder = SGA.Reader.Application.SharedCanvas.builder({
     spinner: SGA.Reader.Component.Spinner.initInstance($("#loading-progress")),
-    searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://ec2-107-22-87-255.compute-1.amazonaws.com/annotate?")
+    searchBox: SGA.Reader.Component.SearchBox.initInstance("#searchbox", "http://107.20.241.32/annotate?")
   });
 
   if($.fn.popover != null) {
@@ -54,8 +54,10 @@
 
     app.events.onPositionChange.addListener( function(n) {
       app.lockPosition();
-      pageSlider.setValue(n);
-      pager.setValue(n);
+      if (n != -1) {
+        pageSlider.setValue(n);
+        pager.setValue(n);
+      }
       app.unlockPosition();
     } );
 
