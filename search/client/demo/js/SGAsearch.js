@@ -22,10 +22,9 @@
         "hls": [],
         "id": "",
         "shelfmark": "",
-        "title": "",
-        "nbook": "",
-        "author": "",
-        "date": "",
+        "work": "",
+        "authors": "",
+        "viewer_url": "",
         "imageURL": "http://placehold.it/75x100",
         "detailQuery": ""
       };
@@ -219,7 +218,7 @@
         view.$el.click(function(e) {
           e.preventDefault();
           if (view.model.attributes.type === 'notebook') {
-            o.filters = "shelfmark:" + view.model.attributes.name;
+            o.filters = "shelfmark:%22" + view.model.attributes.name + "%22";
           } else {
             o.fields += "," + view.model.attributes.field;
           }
@@ -231,7 +230,7 @@
           e.preventDefault();
           e.stopPropagation();
           if (view.model.attributes.type === 'notebook') {
-            f = "NOT%20shelfmark:" + view.model.attributes.name;
+            f = "NOT%20shelfmark:%22" + view.model.attributes.name + "%22";
             if (o.filters == null) {
               o.filters = f;
             } else {
@@ -469,7 +468,7 @@
         }
       };
       updateResults = function(res) {
-        var f_add, f_del, f_h_mws, f_h_pbs, f_nb, k, nb, orderedNBs, r, sr, v, _i, _j, _len, _len1, _ref10;
+        var f_add, f_del, f_h_mws, f_h_pbs, f_nb, k, nb, orderedNBs, orig_id, r, sr, v, _i, _j, _len, _len1, _ref10;
 
         $(".num-results .badge").show().text(res.numFound);
         $("#usr-msg").hide();
@@ -481,9 +480,10 @@
           r = _ref10[_i];
           sr = new SGAsearch.SearchResult();
           _this.srlv.collection.add(sr);
+          orig_id = r.id;
           r.num = (res.results.indexOf(r) + 1) + page * 20;
           r.id = r.id.substr(r.id.length - 4);
-          r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/" + r.shelfmark + "-" + r.id + ".jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75";
+          r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/" + orig_id + ".jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75";
           r.detailQuery = "s=f:" + fields + "|q:" + query;
           sr.set(r);
         }
