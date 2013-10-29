@@ -9,7 +9,7 @@
 
     $set_m = 'data-manifest="' . $m . '"';
 
-    $new_b = preg_replace('/\[manifest\]/"', $set_m, $b);
+    $new_b = preg_replace('/\[manifest\]/', $set_m, $b);
 
     //print $b;
 
