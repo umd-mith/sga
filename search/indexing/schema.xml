@@ -69,6 +69,12 @@
     <field name="id" type="string" indexed="true" stored="true" required="true" /> 
     <field name="shelfmark" type="string" indexed="true" stored="true" required="true" />
 
+    <field name="shelf_label" type="string" indexed="true" stored="true" required="true" />
+    <field name="viewer_url" type="string" indexed="true" stored="true" required="true" />
+    <field name="work" type="string" indexed="true" stored="true" required="true" />
+    <field name="authors" type="string" indexed="true" stored="true" required="true" />
+    <field name="attribution" type="string" indexed="true" stored="true" required="true" />
+
     <field name="added" type="text" multiValued="true" indexed="true" stored="true" required="false"/>
     <field name="deleted" type="text" multiValued="true" indexed="true" stored="true" required="false"/>
     
