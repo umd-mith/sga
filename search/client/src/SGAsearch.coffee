@@ -302,7 +302,7 @@ window.SGAsearch = {}
       # User messages
       $("#usr-msg").hide()
       if res.numFound == 0
-        $("#usr-msg").show().text "No results found."
+        $("#usr-msg").show().find('span').text "No results found."
 
       for r in res.results
         sr = new SGAsearch.SearchResult()
@@ -418,6 +418,6 @@ window.SGAsearch = {}
       type: 'GET'
       processData: false
       success: updateResults
-      error: -> $("#usr-msg").show().addClass('error').text 'Could not reach server. Please try again later.'
+      error: -> $("#usr-msg").show().addClass('error').find('span').text 'Could not reach server. Please try again later.'
 
 )(jQuery,window.SGAsearch,_,Backbone)
