@@ -1,5 +1,6 @@
 (function ($) { 
-
+  MITHgrid.config.noTimeouts = true;
+  
   // UI fixes
   $("#collapse-one").collapse("hide");
 
