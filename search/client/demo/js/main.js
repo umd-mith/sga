@@ -2,7 +2,7 @@
 
     $('#all-results').hide();
 
-    var service = "http://ec2-107-22-87-255.compute-1.amazonaws.com/search";
+    var service = "http://107.20.241.32/search";
     var options = $('#refine-results');
     var destination = $('#results-grid ul');
 
