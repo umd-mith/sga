@@ -327,7 +327,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         $(container).css
           'overflow': 'hidden'
 
-        that.onDestroy that.events.onScaleChange.addListener (s) ->
+        that.onDestroy? that.events.onScaleChange.addListener (s) ->
           that.visitRenderings (id, r) ->
             r.setScale?(s)
             true
@@ -506,9 +506,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
               else
                 $(marquee).css "opacity", "0.1"
 
-          that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
+          that.onDestroy? app.imageControls.events.onZoomChange.addListener updateMarque
 
-          that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
+          that.onDestroy? app.imageControls.events.onImgPositionChange.addListener (p) ->
             marqueeLeft = Math.floor( (-p.topLeft.x * that.getScale()) )
             marqueeTop = Math.floor( (-p.topLeft.y * that.getScale()) )
 
@@ -530,12 +530,12 @@ SGAReader.namespace "Presentation", (Presentation) ->
                   marqueeHeight
             })
 
-          if app.imageControls?.getActive()
-            $('.marquee').show()
-          else
-            $('.marquee').hide()
+          #if app.imageControls?.getActive()
+          #  $('.marquee').show()
+          #else
+          $('.marquee').hide()
 
-          that.onDestroy app.imageControls?.events.onActiveChange.addListener (a) ->
+          that.onDestroy? app.imageControls?.events.onActiveChange.addListener (a) ->
             if a
               $('.marquee').show()
             else
@@ -703,6 +703,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           divHeight = $(container).height() || 1
 
           divScale = that.getScale()
+          imgScale = divScale
 
           $(innerContainer).css
             'overflow': 'hidden'
@@ -748,6 +749,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               # original{Width,Height} are the size of the full jp2 image - the maximum resolution            
               originalWidth = Math.floor(metadata.width) || 1
               originalHeight = Math.floor(metadata.height) || 1
+              imgScale = width / originalWidth
               # zoomLevels are how many different times we can divide the resolution in half
               zoomLevels = Math.floor(metadata.levels)
               # div{Width,Height} are the size of the HTML <div/> in which we are rendering the image
@@ -764,7 +766,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               #    e.preventDefault()
               #    inDrag = false
               #$(document).mouseup mouseupHandler
-              #that.onDestroy ->
+              #that.onDestroy? ->
               #  $(document).unbind 'mouseup', mouseupHandler
 
               startX = 0
@@ -783,9 +785,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
               #xUnits * 2^(8+z) = originalWidth - originalWidth % 2^(8+z)
               recalculateBaseZoomLevel = ->
                 divWidth = $(container).width() || 1
-                baseZoomLevel = Math.max(0, Math.ceil(-Math.log( that.getScale() )/Math.log(2)))
-                app.imageControls.setMinZoom 0
-                app.imageControls.setMaxZoom zoomLevels - baseZoomLevel
+                if that.getScale?
+                  baseZoomLevel = Math.max(0, Math.ceil(-Math.log( that.getScale() * imgScale )/Math.log(2)))
+                  app.imageControls.setMinZoom 0
+                  app.imageControls.setMaxZoom zoomLevels - baseZoomLevel
 
               wrapWithImageReplacement = (cb) ->
                 cb()
@@ -822,8 +825,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
               rendering.setScale = (s) ->
                 divScale = s
                 $(innerContainer).css
-                  width: originalWidth * divScale
-                  height: originalHeight * divScale
+                  width: originalWidth * divScale * imgScale
+                  height: originalHeight * divScale * imgScale
 
                 oldZoom = baseZoomLevel
                 recalculateBaseZoomLevel()
@@ -839,13 +842,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
                   wrapper = (cb) -> cb()
                 wrapper renderTiles
 
-              that.onDestroy app.imageControls.events.onZoomChange.addListener rendering.setZoom
+              that.onDestroy? app.imageControls.events.onZoomChange.addListener rendering.setZoom
 
               updateImageControlPosition = ->
                 app.imageControls.setImgPosition
                   topLeft: 
-                    x: offsetX
-                    y: offsetY
+                    x: offsetX * imgScale
+                    y: offsetY * imgScale
 
 
               recalculateBaseZoomLevel()
@@ -883,7 +886,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 Math.pow(2.0, zoomLevels - Math.ceil(zoomLevel + baseZoomLevel)) * djatokaTileWidth
 
               calcTileSize = ->
-                Math.floor(Math.pow(2.0, zoomLevel) * divScale * calcJP2KTileSize())
+                Math.floor(Math.pow(2.0, zoomLevel) * divScale * imgScale * calcJP2KTileSize())
 
               # returns the screen coordinates for the top/left position of the screen tile at the (x,y) position
               # takes into account the center{X,Y} and zoom level
@@ -899,14 +902,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
               original2screen = (ox, oy) ->
                 return {
-                  left: ox * divScale * Math.pow(2.0, zoomLevel)
-                  top: oy * divScale * Math.pow(2.0, zoomLevel)
+                  left: ox * divScale * imgScale * Math.pow(2.0, zoomLevel)
+                  top: oy * divScale * imgScale * Math.pow(2.0, zoomLevel)
                 }
 
               screen2original = (ox, oy) ->
                 return {
-                  left: ox / divScale / Math.pow(2.0, zoomLevel)
-                  top: oy / divScale / Math.pow(2.0, zoomLevel)
+                  left: ox / divScale / imgScale / Math.pow(2.0, zoomLevel)
+                  top: oy / divScale / imgScale / Math.pow(2.0, zoomLevel)
                 }
 
               # make sure we aren't too far right/left/up/down
@@ -949,7 +952,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 else
                   height = jp2kTileSize
 
-                #scale = divHeight / originalHeight * Math.pow(2.0, zoomLevel)
                 scale = tileSize / jp2kTileSize
 
                 return {
@@ -1018,23 +1020,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
                             when "mouseup"
                               inDrag = false
                               MITHgrid.mouse.uncapture()
-                    ###
-                    imgEl.bind 'mousemove', (e) ->
-                      if inDrag
-                        e.preventDefault()
-                        if !startX? or !startY?
-                          startX = e.pageX
-                          startY = e.pageY
-                        scoords = screen2original(startX - e.pageX, startY - e.pageY)
-                        offsetX = startoffsetX - scoords.left
-                        offsetY = startoffsetY - scoords.top
-                        renderTiles()
-                    imgEl.bind 'mouseup', (e) ->
-                      if inDrag
-                        e.preventDefault()
-                        console.log "mouseup binding called"
-                        MITHgrid.mouse.uncapture()
-                    ###
 
                     imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) ->
                       e.preventDefault()
@@ -1076,8 +1061,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 # the tileSize is the size of the area tiled by the image. It should be between 1/2 and 1 times the djatokaTileWidth
                 tileSize = calcTileSize()
                 # xTiles and yTiles are how many of these tileSize tiles will cover the zoomed in image
-                xTiles = Math.floor(originalWidth * divScale * Math.pow(2.0, zoomLevel) / tileSize)
-                yTiles = Math.floor(originalHeight * divScale * Math.pow(2.0, zoomLevel) / tileSize)
+                xTiles = Math.floor(originalWidth * divScale * imgScale * Math.pow(2.0, zoomLevel) / tileSize)
+                yTiles = Math.floor(originalHeight * divScale * imgScale * Math.pow(2.0, zoomLevel) / tileSize)
                 
                 # x,y,width,height are in terms of canvas extents - not screen pixels
                 # s gives us the conversion to screen pixels
@@ -1149,6 +1134,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
           DivWidth = Math.floor($(container).width()*20/20,10)
           if canvasWidth? and canvasWidth > 0
             that.setScale  DivWidth / canvasWidth
+          if canvasHeight? and canvasHeight > 0
+            $(container).height(DivHeight = Math.floor(canvasHeight * that.getScale()))
 
         MITHgrid.events.onWindowResize.addListener resizer
 
