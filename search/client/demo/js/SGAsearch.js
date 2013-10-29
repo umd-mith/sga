@@ -20,13 +20,12 @@
 
       SearchResult.prototype.defaults = {
         "hls": [],
-        "id": "[Page]",
-        "shelfmark": "[Shelfmark]",
-        "title": "[Title]",
-        "nbook": "[Notebook]",
-        "author": "[Author]",
-        "editor": "[Editor]",
-        "date": "[Date]",
+        "id": "",
+        "shelfmark": "",
+        "title": "",
+        "nbook": "",
+        "author": "",
+        "date": "",
         "imageURL": "http://placehold.it/75x100",
         "detailQuery": ""
       };
@@ -473,6 +472,10 @@
         var f_add, f_del, f_h_mws, f_h_pbs, f_nb, k, nb, orderedNBs, r, sr, v, _i, _j, _len, _len1, _ref10;
 
         $(".num-results .badge").show().text(res.numFound);
+        $("#usr-msg").hide();
+        if (res.numFound === 0) {
+          $("#usr-msg").show().text("No results found.");
+        }
         _ref10 = res.results;
         for (_i = 0, _len = _ref10.length; _i < _len; _i++) {
           r = _ref10[_i];
@@ -584,7 +587,10 @@
         url: url,
         type: 'GET',
         processData: false,
-        success: updateResults
+        success: updateResults,
+        error: function() {
+          return $("#usr-msg").show().addClass('error').text('Could not reach server. Please try again later.');
+        }
       });
     };
   })(jQuery, window.SGAsearch, _, Backbone);
