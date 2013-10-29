@@ -1,5 +1,5 @@
 (function ($) { 
-$(document).ready(function() {
+
   // UI fixes
   $("#collapse-one").collapse("hide");
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
         }
         return "";
       }
-    });
+    }););
 
     pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");    
 
@@ -63,14 +63,7 @@ $(document).ready(function() {
       pagerEvt: app.events.onCanvasChange,
       getMode: app.modeControls.getMode,
       onModeChange : app.modeControls.events.onModeChange
-    });
-
-    $(window).bind("hashchange", function(e) {
-      var m = $.bbq.getState("m");
-      if(m !== undefined && m !== "") {
-        app.modeControls.setMode(m);
-      }
-    });
+    });    
 
     app.imageControls = SGA.Reader.Component.ImageControls.initInstance("#view-controls");
 
@@ -79,8 +72,10 @@ $(document).ready(function() {
 
     app.events.onPositionChange.addListener( function(n) {
       app.lockPosition();
-      pageSlider.setValue(n);
-      pager.setValue(n);
+      if (n != -1) {
+        pageSlider.setValue(n);
+        pager.setValue(n);
+      }
       app.unlockPosition();
     } );
 
@@ -165,14 +160,6 @@ $(document).ready(function() {
       }
       $("#cite-url").text(document.URL);
     });
-    
-    app.ready(function() {
-      var m = $.bbq.getState("m");
-      if(m !== undefined && m !== "") {
-        app.modeControls.setMode(m);
-      }
-    });
 
   });
-});
 })(jQuery);
