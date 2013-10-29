@@ -47,7 +47,7 @@ def search():
         # so all the positions are extracted from there.
         response = s.raw_query(q=fields[0]+":"+q, 
             q_op='AND',
-            fl='shelfmark,id,work,viewer_url,authors,attribution', 
+            fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label', 
             fq=fqs, 
             wt='json', 
             start=start,
@@ -92,6 +92,7 @@ def search():
 
             # metadata
             results["metadata"][res["shelfmark"]] = {
+                "shelf_label":res["shelf_label"],
                 "work":res["work"],
                 "viewer_url":res["viewer_url"],
                 "authors":res["authors"],
