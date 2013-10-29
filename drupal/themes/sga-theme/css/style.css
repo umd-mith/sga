@@ -1887,6 +1887,9 @@ _______________________________________________________________________*/
 #search-instructions { font-size: 0.9em; }
 #search-instructions h4 { margin-top: 0; margin-bottom: 0.5em; } 
 
+#usr-msg { display: none; border: none; padding: 1em 0 1em 0; font-size: larger; background-color: #999; text-align: center; }
+#usr-msg.error { background-color: #a54647; }
+
 .r-header, .r-footer { line-height: 2em; font-size: 1em; color: #a54647; }
 .r-header { margin-top: 2em; margin-bottom: 1em; }
 .r-header .r-results-header { background: #ececec; margin-right: 15px; width: 100%; }
