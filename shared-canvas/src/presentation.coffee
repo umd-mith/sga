@@ -1024,26 +1024,27 @@ SGAReader.namespace "Presentation", (Presentation) ->
                     imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) ->
                       e.preventDefault()
                       inDrag = false
-                      #x = e.originalEvent.offsetX
-                      #y = e.originalEvent.offsetY
-                      #scrollPoint = screen2original(x, y)
-
-                      #console.log scrollPoint
+                    
+                      x = e.originalEvent.offsetX + parseInt($(imgEl).css('left'), 10)
+                      y = e.originalEvent.offsetY + parseInt($(imgEl).css('top'), 10)
+                    
                       # we want to change centerX/centerY so that scrollPoint is constant after the zoom
                       z = rendering.getZoom()
+                      oldOffsetX = offsetX
+                      oldOffsetY = offsetY
+                      scrollPoint = screen2original(x, y)
+                      oldOffsetX -= scrollPoint.left
+                      oldOffsetY -= scrollPoint.top
                       if z >= 0 and z <= zoomLevels - baseZoomLevel
                         rendering.setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
-
-                        #newScrollPoint = screen2original(x, y)
-                        #console.log
-                        #  dx: scrollPoint.left - newScrollPoint.left
-                        #  dy: scrollPoint.top - newScrollPoint.top
-                        #  x: offsetX
-                        #  y: offsetY
-
-                        #offsetX += (scrollPoint.left - newScrollPoint.left)
-                        #offsetY += (scrollPoint.top - newScrollPoint.top)
-                        #renderTiles()
+                        # we only update the cursor position if we're in the same zoomLevel as the image after zooming in/out
+                        if $(imgEl).data('z') == Math.ceil(zoomLevel + baseZoomLevel) 
+                          scrollPoint = screen2original(x, y)
+                          oldOffsetX += scrollPoint.left
+                          oldOffsetY += scrollPoint.top
+                          offsetX = oldOffsetX
+                          offsetY = oldOffsetY
+                          renderTiles()
 
                 imgEl.css
                   position: 'absolute'
