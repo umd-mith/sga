@@ -79,7 +79,7 @@ MITHgrid.defaults 'SGA.Reader.Component.Spinner',
 #
 # TODO: Have variables for panning across the canvas.
 #
-MITHgrid.defaults 'SGA.Reader.Presentation.ImageCanvas',
+MITHgrid.defaults 'SGA.Reader.Presentation.SVGCanvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
@@ -89,7 +89,7 @@ MITHgrid.defaults 'SGA.Reader.Presentation.ImageCanvas',
     X: { is: 'rw', isa: 'numeric' }
     Y: { is: 'rw', isa: 'numeric' }
 
-MITHgrid.defaults 'SGA.Reader.Presentation.TextCanvas',
+MITHgrid.defaults 'SGA.Reader.Presentation.HTMLCanvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
@@ -116,7 +116,7 @@ MITHgrid.defaults 'SGA.Reader.Presentation.Zone',
     Scale: { is: 'rw', isa: 'numeric' }
 
 
-MITHgrid.defaults 'SGA.Reader.Presentation.TextZone',
+MITHgrid.defaults 'SGA.Reader.Presentation.HTMLZone',
   variables:
     Height: { is: 'rw', isa: 'numeric' }
     Width: { is: 'rw', isa: 'numeric' }
