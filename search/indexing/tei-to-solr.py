@@ -10,6 +10,11 @@ class Doc :
     def __init__(self, 
         solr="", 
         shelfmark="",
+        shelf_label="",
+        viewer_url="",
+        work="",
+        authors="",
+        attribution="",
         doc_id=None, 
         text="", 
         hands={"mws":"","pbs":"", "comp":"", "library":""}, 
@@ -17,11 +22,6 @@ class Doc :
         hands_pos={"mws":[], "pbs":[], "comp":[], "library":[]}, 
         hands_tei_pos={"mws":[], "pbs":[], "comp":[], "library":[]},
         mod_pos={"add":[],"del":[]}):
-
-        # shelf_label="",
-        # work="",
-        # authors="",
-        # attribution="",
       
         # Solr connection
         self.solr = solr
@@ -45,6 +45,11 @@ class Doc :
         # print "id: %s\nshelf: %s\ntext: %s\nhands: %s\nmod: %s\nhands_pos: %s\nmod_pos: %s\n" % (self.doc_id, self.shelfmark, self.text, self.hands, self.mod, self.hands_pos, self.mod_pos)
         self.solr.add(id=self.doc_id, 
             shelfmark=self.shelfmark, 
+            shelf_label=self.shelf_label,
+            viewer_url = self.viewer_url,
+            work=self.work,
+            authors=self.authors,
+            attribution=self.attribution,
             text=self.text, 
             hand_mws=self.hands["mws"], 
             hand_pbs=self.hands["pbs"], 
@@ -60,13 +65,8 @@ class Doc :
             del_pos=self.mod_pos["del"])
         self.solr.commit()
 
-        # shelf_label=self.shelf_label,
-        #     work=self.work,
-        #     authors=self.authors,
-        #     attribution=self.attribution,
-
 class GSAContentHandler(xml.sax.ContentHandler):
-    def __init__(self, s):
+    def __init__(self, s, filename):
         xml.sax.ContentHandler.__init__(self)
 
         self.solr = s
@@ -81,6 +81,8 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
         self.handShift = False
 
+        self.filename = filename
+
         # Initialize doc
         self.doc = Doc(
             solr = self.solr)
@@ -88,6 +90,11 @@ class GSAContentHandler(xml.sax.ContentHandler):
         print self.doc
         #purge 
         self.doc.shelfmark=""
+        shelf_label=""
+        viewer_url = ""
+        work=""
+        authors=""
+        attribution=""
         self.doc.doc_id=None
         self.doc.text=""
         self.doc.hands={"mws":"","pbs":"", "comp":"", "library":""}
@@ -101,12 +108,21 @@ class GSAContentHandler(xml.sax.ContentHandler):
         self.path.append([name, self.hands[-1]])
 
         if name == "surface":
-            partOf = attrs["partOf"] if "partOf" in attrs else " "
-            self.doc.shelfmark = partOf[1:] if partOf[0] == "#" else partOf
+            if "partOf" in attrs:
+                partOf = attrs["partOf"] if "partOf" in attrs else " "
+                # self.doc.shelfmark = partOf[1:] if partOf[0] == "#" else partOf
             self.doc.doc_id = attrs["xml:id"]
 
-            # Find my manifest and my position in the sequence
-            # print self.doc.doc_id
+            # Find my manifest and populate metadata
+            for mk in manifests:
+                for c in manifests[mk]["canvases"]:                
+                    if c["sga:hasTeiSource"].endswith(self.filename):
+                        self.doc.shelf_label = c["label"]
+                        self.doc.viewer_url = c["service"]
+                        self.doc.work = manifests[mk]["dc:title"]
+                        self.doc.authors = manifests[mk]["metadata"][0]["value"]
+                        self.doc.attribution = manifests[mk]["attribution"]
+                        self.doc.shelfmark = manifests[mk]["label"]
 
         if "hand" in attrs:
             hand = attrs["hand"]
@@ -239,5 +255,5 @@ if __name__ == "__main__":
     for f in os.listdir(xml_dir):
         if f.endswith('.xml'):
             source = open(xml_dir + f)
-            xml.sax.parse(source, GSAContentHandler(s))
+            xml.sax.parse(source, GSAContentHandler(s, f))
             source.close()
