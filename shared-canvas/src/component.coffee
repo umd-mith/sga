@@ -129,69 +129,79 @@ SGAReader.namespace "Component", (Component) ->
 
           pages = that.getMax()
 
-          for r in results
-            r = r + 1
-            res_height = $c.height() / (pages+1)
-            res_h_perc = (pages+1) / 100
-            s_min = $c.slider("option", "min")
-            s_max = $c.slider("option", "max")
-            valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
-            adjustment = res_h_perc / 2
-            $c.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+          try
+            for r in results
+              r = r + 1
+              res_height = $c.height() / (pages+1)
+              res_h_perc = (pages+1) / 100
+              s_min = $c.slider("option", "min")
+              s_max = $c.slider("option", "max")
+              valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
+              adjustment = res_h_perc / 2
+              $c.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+          catch e
+            console.log "Unable to update slider with search results"
 
         that.events.onMaxChange.addListener (n) -> 
+          try 
+            if $( container ).data( "slider" ) # Is the container set?
+              $(container).slider
+                max : n
+            else
+              pages = n
+              $(container).slider
+                orientation: "vertical"
+                range: "min"
+                min: that.getMin()
+                max: pages
+                value: pages
+                step: 1
+                slide: ( event, ui ) ->
+                  if options.getLabel?
+                    $(ui.handle).text(options.getLabel(pages - ui.value))
+                stop: ( event, ui ) ->
+                  0 #now update actual value
+                  that.setValue pages - ui.value
 
-          if $( container ).data( "slider" ) # Is the container set?
-            $(container).slider
-              max : n
-          else
-            pages = n
-            $(container).slider
-              orientation: "vertical"
-              range: "min"
-              min: that.getMin()
-              max: pages
-              value: pages
-              step: 1
-              slide: ( event, ui ) ->
-                if options.getLabel?
-                  $(ui.handle).text(options.getLabel(pages - ui.value))
-              stop: ( event, ui ) ->
-                0 #now update actual value
-                that.setValue pages - ui.value
+              if options.getLabel?
+                $(container).find("a").text(options.getLabel(0))
+   
+              # There might be a cleaner way of doing this:
+              $('.canvas').on "sizeChange", (e, d)->
+                $c = $(container)
+                $c.height d.h              
 
-            if options.getLabel?
-              $(container).find("a").text(options.getLabel(0))
- 
-            # There might be a cleaner way of doing this:
-            $('.canvas').on "sizeChange", (e, d)->
-              $c = $(container)
-              $c.height d.h              
+                # Only set it once
+                $('.canvas').unbind("sizeChange")
 
-              # Only set it once
-              $('.canvas').unbind("sizeChange")
-
-          if that.getValue()? and parseInt(that.getValue()) != NaN
-            $.bbq.pushState
-              n: that.getValue()+1
-            $(container).slider
-              value: pages - that.getValue()
+            if that.getValue()? and parseInt(that.getValue()) != NaN
+              $.bbq.pushState
+                n: that.getValue()+1
+              $(container).slider
+                value: pages - that.getValue()
+          catch e
+            console.log "Unable to update maximum value of slider"
 
         that.events.onMinChange.addListener (n) ->
-          if $( container ).data( "slider" ) # Is the container set?
-            $(container).slider
-              min : n
+          try 
+            if $( container ).data( "slider" ) # Is the container set?
+              $(container).slider
+                min : n
+          catch e
+            console.log "Unable to update minimum value of slider"
 
         that.events.onValueChange.addListener (n) -> 
-          if $( container ).data( "slider" ) # Is the container set?
-            $(container).slider
-              value: that.getMax() - n
-          if options.getLabel?
-            $(container).find("a").text(options.getLabel(n))
-          if that.getValue()? and parseInt(that.getValue()) != NaN
-            $.bbq.pushState
-              n: that.getValue()+1
-
+          try 
+            if $( container ).data( "slider" ) # Is the container set?
+              $(container).slider
+                value: that.getMax() - n
+            if options.getLabel?
+              $(container).find("a").text(options.getLabel(n))
+            if that.getValue()? and parseInt(that.getValue()) != NaN
+              $.bbq.pushState
+                n: that.getValue()+1
+          catch e
+            console.log "Unable to update value of slider"
   #
   # ## Component.PagerControls
   #

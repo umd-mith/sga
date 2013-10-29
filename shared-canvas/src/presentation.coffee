@@ -37,10 +37,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
           that.events.onScaleChange.addListener (s) ->
             #$(container).css
             #  position: 'absolute'
-            #  left: parseInt(that.getX() * s, 10) + "px"
-            #  top: parseInt(that.getY() * s, 10) + "px"
-            #  width: parseInt(that.getWidth() * s, 10) + "px"
-            #  height: parseInt(that.getHeight() * s, 10) + "px"
+            #  left: Math.floor(that.getX() * s) + "px"
+            #  top: Math.floor(that.getY() * s) + "px"
+            #  width: Math.floor(that.getWidth() * s) + "px"
+            #  height: Math.floor(that.getHeight() * s) + "px"
             r.setScale(s) for r in scaleSettings
 
           
@@ -72,7 +72,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               currentLineEl.css
                 'padding-left': (lineIndents[lineNo] * 1)+"em"
 
-            lineNoFraq = lineNo - parseInt(lineNo, 10)
+            lineNoFraq = lineNo - Math.floor(lineNo)
             if lineNoFraq < 0
               lineNoFraq += 1
             if lineNoFraq > 0.5
@@ -103,16 +103,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
             if i < afterLayout.length
               fn() for fn in afterLayout[i]
               setTimeout (-> runAfterLayout(i+1)), 0
-          setTimeout ->
-            runAfterLayout 0
-          , 0
-          null
+          runAfterLayout 0
 
         renderingTimer = null
         that.eventModelChange = ->
           if renderingTimer?
             clearTimeout renderingTimer
-          renderingTimer = setTimeout that.selfRender, 0
+          renderingTimer = setTimeout ->
+            that.selfRender()
+            renderingTimer = null
+          , 0
 
         annoLens = (container, view, model, id) ->
           rendering = {}
@@ -198,7 +198,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 prevOffset = prevSibling.offset()
                 accOffset = prevSibling.offset().left + prevSibling.outerWidth() - ourLeft
                 spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left
-                spacing = parseInt(prevSibling.css('left'), 10) or 0 #(prevOffset.left) - myOffset.left
+                spacing = Math.floor(prevSibling.css('left')) or 0 #(prevOffset.left) - myOffset.left
 
                 if spacing > neededSpace
                   neededSpace = spacing
@@ -217,15 +217,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
                   prevSiblings = rendering.$el.prevAll()
                   availableSpace = 0
                   prevSiblings.each (i, x) ->
-                    availableSpace += (parseInt($(x).css('left'), 10) or 0)
+                    availableSpace += (Math.floor($(x).css('left')) or 0)
                   if prevSibling.size() > 0
                     availableSpace -= (prevSibling.offset().left - ourLeft + prevSibling.outerWidth())
                   if availableSpace > neededSpace
                     usedSpace = 0
                     prevSiblings.each (i, s) ->
-                      oldLeft = parseInt($(s).css('left'), 10) or 0
+                      oldLeft = Math.floor($(s).css('left')) or 0
                       if availableSpace > 0
-                        useWidth = parseInt(oldLeft * (neededSpace - usedSpace) / availableSpace, 10)
+                        useWidth = Math.floor(oldLeft * (neededSpace - usedSpace) / availableSpace)
                         $(s).css('left', (oldLeft - useWidth - usedSpace) + "px")
                         usedSpace += useWidth
                         availableSpace -= oldLeft
@@ -236,15 +236,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
                     neededSpace = 0
               if neededSpace > 0
                 if prevSibling.size() > 0
-                  if neededSpace < parseInt(prevSibling.css('left'), 10)
-                    neededSpace = parseInt(prevSibling.css('left'), 10)
+                  if neededSpace < Math.floor(prevSibling.css('left'))
+                    neededSpace = Math.floor(prevSibling.css('left'))
                 rendering.$el.css
                     'position': 'relative'
                     'left': (neededSpace) + "px"
                 rendering.left = neededSpace / that.getScale()
                 rendering.setScale = (s) ->
                   rendering.$el.css
-                    'left': parseInt(rendering.left * s, 10) + "px"
+                    'left': Math.floor(rendering.left * s) + "px"
 
 
           rendering.remove = ->
@@ -306,7 +306,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           if item.sgatextAlignment?.length > 0
             lineAlignments[currentLine] = item.sgatextAlignment[0]
           if item.indent?.length > 0
-            lineIndents[currentLine] = parseInt(item.indent[0], 10) or 0
+            lineIndents[currentLine] = Math.floor(item.indent[0]) or 0
           currentLine += 1
           null
 
@@ -398,7 +398,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           return unless 'Image' in (options.types || [])
           rendering = {}
 
-          browserZoomLevel = parseInt(document.width / document.body.clientWidth * 100 - 100, 10)
+          browserZoomLevel = Math.floor(document.width / document.body.clientWidth * 100 - 100)
           
           # this is temporary until we see if scaling the SVG to counter this will fix the issues
           # this appears to be an issue only on webkit-based browsers - Mozilla/Firefox handles the
@@ -789,14 +789,6 @@ SGAReader.namespace "Presentation", (Presentation) ->
               marquee.setAttribute("x", ((-p.topLeft.x * visiblePerc) / 100) * scale)
               marquee.setAttribute("y", ((-p.topLeft.y * visiblePerc) / 100) * scale)
 
-          ###
-          that.onDestroy text.events.onHeightChange.addListener (h) ->
-            #$(textContainer).attr("height", h/10)
-            #$(overflowDiv).attr("height", h/10)
-            #recalculateHeight()
-            #setTimeout (-> updateMarque app.imageControls.getZoom()), 0
-          ###
-
           rendering.getHeight = text.getHeight
 
           rendering.getY = text.getY
@@ -875,10 +867,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
           
           $(textContainer).css
             "position": "absolute"
-            "left": parseInt(16 + x * that.getScale(), 10) + "px"
-            "top": parseInt(y * that.getScale(), 10) + "px"
-            "width": parseInt(width * that.getScale(), 10) + "px"
-            "height": parseInt(height * that.getScale(), 10) + "px"
+            "left": Math.floor(16 + x * that.getScale()) + "px"
+            "top": Math.floor(y * that.getScale()) + "px"
+            "width": Math.floor(width * that.getScale()) + "px"
+            "height": Math.floor(height * that.getScale()) + "px"
 
           container.append(textContainer)
           overflowDiv = $("<div></div>")
@@ -887,8 +879,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
           $(rootEl).addClass("text-content")
           $(overflowDiv).css
             'overflow': 'auto'
-            'height': parseInt(height * that.getScale(), 10) + "px"
-            'width': parseInt(width * that.getScale(), 10) + "px"
+            'height': Math.floor(height * that.getScale()) + "px"
+            'width': Math.floor(width * that.getScale()) + "px"
 
           overflowDiv.append rootEl
           
@@ -903,13 +895,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
             rootEl.remove()
           rendering.setScale = (s) ->
             $(textContainer).css
-              "left": parseInt(16 + x * s, 10) + "px"
-              "top": parseInt(y * s, 10) + "px"
-              "width": parseInt(width * s, 10) + "px"
-              "height": parseInt(height * s, 10) + "px"
+              "left": Math.floor(16 + x * s) + "px"
+              "top": Math.floor(y * s) + "px"
+              "width": Math.floor(width * s) + "px"
+              "height": Math.floor(height * s) + "px"
             $(overflowDiv).css
-              'height': parseInt(height * that.getScale(), 10) + "px"
-              'width': parseInt(width * that.getScale(), 10) + "px"
+              'height': Math.floor(height * that.getScale()) + "px"
+              'width': Math.floor(width * that.getScale()) + "px"
           rendering
 
         #
@@ -983,10 +975,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
           height = if item.height?[0]? then item.height[0] else options.height - y
 
           $(textContainer).css
-            left: parseInt(16 + x * that.getScale(), 10) + "px"
-            top: parseInt(y * that.getScale(), 10) + "px"
-            width: parseInt(width * that.getScale(), 10) + "px"
-            height: parseInt(height * that.getScale(), 10) + "px"
+            left: Math.floor(16 + x * that.getScale()) + "px"
+            top: Math.floor(y * that.getScale()) + "px"
+            width: Math.floor(width * that.getScale()) + "px"
+            height: Math.floor(height * that.getScale()) + "px"
 
           #
           # Here we embed the text-based zone within the pixel-based
@@ -1025,10 +1017,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           rendering.setScale = (s) ->
             $(textContainer).css
-              left: parseInt(16 + x * s, 10) + "px"
-              top: parseInt(y * s, 10) + "px"
-              width: parseInt(width * s, 10) + "px"
-              height: parseInt(height * s, 10) + "px"
+              left: Math.floor(16 + x * s) + "px"
+              top: Math.floor(y * s) + "px"
+              width: Math.floor(width * s) + "px"
+              height: Math.floor(height * s) + "px"
             text.setScale s
 
           rendering.update = (item) ->
@@ -1038,10 +1030,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
             height = if item.height?[0]? then item.height[0] else options.height - y
             that.setHeight height
             $(textContainer).css
-              left: parseInt(16 + x * that.getScale(), 10) + "px"
-              top: parseInt(y * that.getScale(), 10) + "px"
-              width: parseInt(width * that.getScale(), 10) + "px"
-              height: parseInt(height * that.getScale(), 10) + "px"
+              left: Math.floor(16 + x * that.getScale()) + "px"
+              top: Math.floor(y * that.getScale()) + "px"
+              width: Math.floor(width * that.getScale()) + "px"
+              height: Math.floor(height * that.getScale()) + "px"
           rendering
 
         that.addLens 'Image', (innerContainer, view, model, id) ->
@@ -1068,25 +1060,25 @@ SGAReader.namespace "Presentation", (Presentation) ->
               htmlImage = $("<img></img>")
               $(innerContainer).append(htmlImage)
               htmlImage.attr
-                height: parseInt(height * s / 10, 10)
-                width: parseInt(width * s / 10, 10)
+                height: Math.floor(height * s / 10)
+                width: Math.floor(width * s / 10)
                 src: item.image[0]
                 border: 'none'
               htmlImage.css
                 position: 'absolute'
-                top: parseInt(y * s / 10, 10)
-                left: parseInt(x * s / 10, 10)
+                top: Math.floor(y * s / 10)
+                left: Math.floor(x * s / 10)
 
           renderImage(item)
 
           rendering.setScale = (s) ->
             if htmlImage?
               htmlImage.attr
-                height: parseInt(height * s / 10, 10)
-                width: parseInt(width * s / 10, 10)
+                height: Math.floor(height * s / 10)
+                width: Math.floor(width * s / 10)
               htmlImage.css
-                top: parseInt(y * s / 10, 10)
-                left: parseInt(x * s / 10, 10)
+                top: Math.floor(y * s / 10)
+                left: Math.floor(x * s / 10)
 
           rendering.getHeight = -> height/10
 
@@ -1147,13 +1139,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
           rendering.getY = ->
           rendering.setY = (y) ->
 
-          centerX = 0
-          centerY = 0
+          offsetX = 0
+          offsetY = 0
 
-          rendering.setCenterX = (x) ->
-          rendering.setCenterY = (y) ->
-          rendering.getCenterX = -> centerX
-          rendering.getCenterY = -> centerY
+          rendering.setOffsetX = (x) ->
+          rendering.setOffsetY = (y) ->
+          rendering.getOffsetX = -> offsetX
+          rendering.getOffsetY = -> offsetY
 
           rendering.remove = ->
             $(imgContainer).empty()
@@ -1162,14 +1154,14 @@ SGAReader.namespace "Presentation", (Presentation) ->
             url: tempBaseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
             success: (metadata) ->
               # original{Width,Height} are the size of the full jp2 image - the maximum resolution            
-              originalWidth = parseInt(metadata.width, 10) || 1
-              originalHeight = parseInt(metadata.height, 10) || 1
+              originalWidth = Math.floor(metadata.width) || 1
+              originalHeight = Math.floor(metadata.height) || 1
               # zoomLevels are how many different times we can divide the resolution in half
-              zoomLevels = parseInt(metadata.levels, 10)
+              zoomLevels = Math.floor(metadata.levels)
               # div{Width,Height} are the size of the HTML <div/> in which we are rendering the image
               divWidth = $(container).width() || 1
               divHeight = $(container).height() || 1
-              divScale = that.getScale()
+              #divScale = that.getScale()
               # {x,y}Tiles are how many whole times we can tile the <div/> with tiles _djatokaTileWidth_ wide
               xTiles = Math.floor(originalWidth * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
               yTiles = Math.floor(originalHeight * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
@@ -1185,11 +1177,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
               startX = 0
               startY = 0
-              startCenterX = centerX
-              startCenterY = centerY
+              startoffsetX = offsetX
+              startoffsetY = offsetY
               # Initially, center the image in the view area
-              centerX = originalWidth / 2
-              centerY = originalHeight / 2
+              offsetX = 0
+              offsetY = 0
               baseZoomLevel = 0 # this is the amount needed to render full width of the div - can change with a window resize
               
               # if we want all of the image to show up on the screen, then we need to pick the zoom level that
@@ -1276,11 +1268,9 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 ].join("&")
 
               screenCenter = ->
-                original2screen(centerX - originalWidth / 2, centerY - originalHeight/2)
+                original2screen(offsetX , offsetY)
 
               # we want to map 256 pixels from the Djatoka server onto 128-256 pixels on our screen
-              
-
               calcJP2KTileSize = ->
                 Math.pow(2.0, zoomLevels - Math.ceil(zoomLevel + baseZoomLevel)) * djatokaTileWidth
 
@@ -1313,17 +1303,21 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
               # make sure we aren't too far right/left/up/down
               constrainCenter = ->
-                tl = screen2original(-divWidth/2,-divHeight/2)
-                br = screen2original(divWidth/2, divHeight/2)
-
-                if tl.left + centerX < 0
-                  centerX = -tl.left
-                if tl.top + centerY < 0
-                  centerY = -tl.top
-                if originalWidth - br.left < centerX
-                  centerX = originalWidth - br.left
-                if originalHeight - br.top < centerY
-                  centerY = originalHeight - br.top
+                # we don't want the top-left corner to move into the div space
+                # we don't want the bottom-right corner to move into the div space
+                if zoomLevel == 0
+                  offsetX = 0
+                  offsetY = 0
+                else
+                  sizes = screen2original(divWidth, divHeight)
+                  if offsetX > 0
+                    offsetX = 0
+                  if offsetY > 0
+                    offsetY = 0
+                  if offsetX < -originalWidth + sizes.left
+                    offsetX = -originalWidth + sizes.left
+                  if offsetY < -originalHeight + sizes.top
+                    offsetY = -originalHeight + sizes.top
 
               # returns the width/height of the screen tile at the (x,y) position
               screenExtents = (x, y) ->
@@ -1390,8 +1384,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
                         startX = null
                         startY = null
-                        startCenterX = centerX
-                        startCenterY = centerY
+                        startoffsetX = offsetX
+                        startoffsetY = offsetY
                         inDrag = true
                         MITHgrid.mouse.capture (type) ->
                           e = this
@@ -1401,24 +1395,52 @@ SGAReader.namespace "Presentation", (Presentation) ->
                                 startX = e.pageX
                                 startY = e.pageY
                               scoords = screen2original(startX - e.pageX, startY - e.pageY)
-                              centerX = startCenterX - scoords.left
-                              centerY = startCenterY - scoords.top
-                              constrainCenter()
+                              offsetX = startoffsetX - scoords.left
+                              offsetY = startoffsetY - scoords.top
                               renderTiles()
                             when "mouseup"
                               inDrag = false
                               MITHgrid.mouse.uncapture()
+                    ###
                     imgEl.bind 'mousemove', (e) ->
-                      e.preventDefault() if inDrag
+                      if inDrag
+                        e.preventDefault()
+                        if !startX? or !startY?
+                          startX = e.pageX
+                          startY = e.pageY
+                        scoords = screen2original(startX - e.pageX, startY - e.pageY)
+                        offsetX = startoffsetX - scoords.left
+                        offsetY = startoffsetY - scoords.top
+                        renderTiles()
                     imgEl.bind 'mouseup', (e) ->
-                      e.preventDefault() if inDrag
+                      if inDrag
+                        e.preventDefault()
+                        console.log "mouseup binding called"
+                        MITHgrid.mouse.uncapture()
+                    ###
 
-                    imgEl.bind 'mousewheel', (e) ->
+                    imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) ->
                       e.preventDefault()
                       inDrag = false
+                      #x = e.originalEvent.offsetX
+                      #y = e.originalEvent.offsetY
+                      #scrollPoint = screen2original(x, y)
+
+                      #console.log scrollPoint
+                      # we want to change centerX/centerY so that scrollPoint is constant after the zoom
                       z = rendering.getZoom()
                       if z >= 0 and z <= zoomLevels - baseZoomLevel
                         rendering.setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
+                        #newScrollPoint = screen2original(x, y)
+                        #console.log
+                        #  dx: scrollPoint.left - newScrollPoint.left
+                        #  dy: scrollPoint.top - newScrollPoint.top
+                        #  x: offsetX
+                        #  y: offsetY
+
+                        #offsetX += (scrollPoint.left - newScrollPoint.left)
+                        #offsetY += (scrollPoint.top - newScrollPoint.top)
+                        #renderTiles()
 
                 imgEl.css
                   position: 'absolute'
@@ -1451,17 +1473,17 @@ SGAReader.namespace "Presentation", (Presentation) ->
                       y: j
                       tileSize: tileSize
 
-              rendering.setCenterX = (x) ->
-                centerX = x
+              rendering.setOffsetX = (x) ->
+                offsetX = x
                 renderTiles()
 
-              rendering.setCenterY = (y) ->
-                centerY = y
+              rendering.setOffsetY = (y) ->
+                offsetY = y
                 renderTiles()
-              rendering.addCenterX = (dx) ->
-                rendering.setCenterX centerX + dx
-              rendering.addCenterY = (dy) ->
-                rendering.setCenterY centerY + dy
+              rendering.addoffsetX = (dx) ->
+                rendering.setOffsetX offsetX + dx
+              rendering.addoffsetY = (dy) ->
+                rendering.setOffsetY offsetY + dy
 
               rendering.setZoom(0)
 
@@ -1500,20 +1522,21 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         viewEl = $("<div></div>")
         container.append(viewEl)
-        $(viewEl).height(parseInt($(container).width() * 4 / 3, 10))
+        $(viewEl).height(Math.floor($(container).width() * 4 / 3))
         $(viewEl).css
           'background-color': 'white'
+          'z-index': 0
 
         canvasWidth = null
         canvasHeight = null
 
         baseFontSize = 150 # in terms of the SVG canvas size - about 15pt
         DivHeight = null
-        DivWidth = parseInt($(container).width()*20/20, 10)
-        $(container).height(parseInt($(container).width() * 4 / 3, 10))
+        DivWidth = Math.floor($(container).width()*20/20)
+        $(container).height(Math.floor($(container).width() * 4 / 3))
 
         resizer = ->
-          DivWidth = parseInt($(container).width()*20/20,10)
+          DivWidth = Math.floor($(container).width()*20/20,10)
           if canvasWidth? and canvasWidth > 0
             that.setScale  DivWidth / canvasWidth
 
@@ -1525,10 +1548,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         that.events.onScaleChange.addListener (s) ->
           if canvasWidth? and canvasHeight?
-            DivHeight = parseInt(canvasHeight * s, 10)
+            DivHeight = Math.floor(canvasHeight * s)
           $(viewEl).css
-            'font-size': (parseInt(baseFontSize * s * 10, 10) / 10) + "px"
-            'line-height': (parseInt(baseFontSize * s * 11.5, 10) / 10) + "px"
+            'font-size': (Math.floor(baseFontSize * s * 10) / 10) + "px"
+            'line-height': (Math.floor(baseFontSize * s * 11.5) / 10) + "px"
             'height': DivHeight
             'width': DivWidth
           realCanvas?.setScale s
@@ -1566,8 +1589,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
           visiblePerc = 100
           marqueeLeft = 0
           marqueeTop = 0
-          marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
-          marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+          marqueeWidth = Math.floor((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+          marqueeHeight = Math.floor((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
 
           # we do our own clipping because of the way margins and padding play with us
 
@@ -1576,8 +1599,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
               width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
               visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
 
-              marqueeWidth = parseInt((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
-              marqueeHeight = parseInt((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+              marqueeWidth = Math.floor((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+              marqueeHeight = Math.floor((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
               
               marquee.css
                 "width":
@@ -1601,8 +1624,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
             that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
 
             that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
-              marqueeLeft = parseInt( (-p.topLeft.x * visiblePerc / 10) * that.getScale(), 10)
-              marqueeTop = parseInt( (-p.topLeft.y * visiblePerc / 10) * that.getScale(), 10)
+              marqueeLeft = Math.floor( (-p.topLeft.x * visiblePerc / 10) * that.getScale())
+              marqueeTop = Math.floor( (-p.topLeft.y * visiblePerc / 10) * that.getScale())
               marquee.css({
                 "left": 16 + Math.max(0, marqueeLeft)
                 "top": Math.max(0, marqueeTop)
@@ -1718,8 +1741,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
         canvasWidth = null
         canvasHeight = null
-        SVGWidth = parseInt($(container).width()*20/20, 10)
-        SVGHeight = parseInt(SVGWidth * 4 / 3, 10)
+        SVGWidth = Math.floor($(container).width()*20/20)
+        SVGHeight = Math.floor(SVGWidth * 4 / 3)
         SVG (svgRoot) ->
           svgRootEl.css
             width: SVGWidth
@@ -1745,7 +1768,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
               "background-color": "#ffffff"
 
         that.events.onHeightChange.addListener (h) ->
-          SVGHeight = parseInt(SVGWidth / canvasWidth * canvasHeight, 10)
+          SVGHeight = Math.floor(SVGWidth / canvasWidth * canvasHeight)
 
           #if "Text" in options.types and h/10 > SVGHeight
           #  SVGHeight = h / 10
@@ -1757,13 +1780,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
         # application.
         #
         MITHgrid.events.onWindowResize.addListener ->
-          SVGWidth = parseInt($(container).width() * 20/20, 10)
+          SVGWidth = Math.floor($(container).width() * 20/20)
           if canvasWidth? and canvasWidth > 0
             that.setScale (SVGWidth / canvasWidth)
           
         that.events.onScaleChange.addListener (s) ->
           if canvasWidth? and canvasHeight?
-            SVGHeight = parseInt(canvasHeight * s, 10)
+            SVGHeight = Math.floor(canvasHeight * s)
             setSizeAttrs()
 
         # the data view is managed outside the presentation
@@ -1775,7 +1798,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
         realCanvas = null
 
         $(container).on "resetPres", ->    
-          SVGWidth = parseInt($(container).width() * 20/20, 10)
+          SVGWidth = Math.floor($(container).width() * 20/20)
           if canvasWidth? and canvasWidth > 0
             that.setScale (SVGWidth / canvasWidth)
             if realCanvas?
