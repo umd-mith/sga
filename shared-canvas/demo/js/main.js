@@ -140,7 +140,11 @@
       if(meta.canvasTitle !== undefined) {
         $("#cite-page").text(meta.canvasTitle);
       }
-      $("#cite-url").text(document.URL);
+      
+      $(window).bind("hashchange", function (e) {
+        $("#cite-url").text(document.URL);
+      });
+      
     });
 
   });
