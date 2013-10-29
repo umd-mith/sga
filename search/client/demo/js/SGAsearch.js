@@ -473,7 +473,7 @@
         $(".num-results .badge").show().text(res.numFound);
         $("#usr-msg").hide();
         if (res.numFound === 0) {
-          $("#usr-msg").show().text("No results found.");
+          $("#usr-msg").show().find('span').text("No results found.");
         }
         _ref10 = res.results;
         for (_i = 0, _len = _ref10.length; _i < _len; _i++) {
@@ -589,7 +589,7 @@
         processData: false,
         success: updateResults,
         error: function() {
-          return $("#usr-msg").show().addClass('error').text('Could not reach server. Please try again later.');
+          return $("#usr-msg").show().addClass('error').find('span').text('Could not reach server. Please try again later.');
         }
       });
     };
