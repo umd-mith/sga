@@ -4,19 +4,24 @@
 
 import os, sys
 import solr
-import xml.sax
+import xml.sax, json
  
 class Doc :
     def __init__(self, 
         solr="", 
-        shelfmark="", 
+        shelfmark="",
         doc_id=None, 
         text="", 
-        hands={"mws":"","pbs":"", "comp":""}, 
+        hands={"mws":"","pbs":"", "comp":"", "library":""}, 
         mod={"add":[],"del":[]}, 
-        hands_pos={"mws":[], "pbs":[], "comp":[]}, 
-        hands_tei_pos={"mws":[], "pbs":[], "comp":[]},
+        hands_pos={"mws":[], "pbs":[], "comp":[], "library":[]}, 
+        hands_tei_pos={"mws":[], "pbs":[], "comp":[], "library":[]},
         mod_pos={"add":[],"del":[]}):
+
+        # shelf_label="",
+        # work="",
+        # authors="",
+        # attribution="",
       
         # Solr connection
         self.solr = solr
@@ -37,21 +42,28 @@ class Doc :
 
 
     def commit(self):
-        print "id: %s\nshelf: %s\ntext: %s\nhands: %s\nmod: %s\nhands_pos: %s\nmod_pos: %s\n" % (self.doc_id, self.shelfmark, self.text, self.hands, self.mod, self.hands_pos, self.mod_pos)
+        # print "id: %s\nshelf: %s\ntext: %s\nhands: %s\nmod: %s\nhands_pos: %s\nmod_pos: %s\n" % (self.doc_id, self.shelfmark, self.text, self.hands, self.mod, self.hands_pos, self.mod_pos)
         self.solr.add(id=self.doc_id, 
             shelfmark=self.shelfmark, 
             text=self.text, 
             hand_mws=self.hands["mws"], 
             hand_pbs=self.hands["pbs"], 
             hand_comp=self.hands["comp"],
+            hand_library=self.hands["library"], 
             added=self.mod["add"], 
             deleted=self.mod["del"],
             mws_pos=self.hands_pos["mws"], 
             pbs_pos=self.hands_pos["pbs"],
             comp_pos=self.hands_pos["comp"],
+            library_pos=self.hands_pos["library"],
             add_pos=self.mod_pos["add"], 
             del_pos=self.mod_pos["del"])
         self.solr.commit()
+
+        # shelf_label=self.shelf_label,
+        #     work=self.work,
+        #     authors=self.authors,
+        #     attribution=self.attribution,
 
 class GSAContentHandler(xml.sax.ContentHandler):
     def __init__(self, s):
@@ -67,6 +79,8 @@ class GSAContentHandler(xml.sax.ContentHandler):
         self.addSpan = {"id": "", "hand": None}
         self.delSpan = None
 
+        self.handShift = False
+
         # Initialize doc
         self.doc = Doc(
             solr = self.solr)
@@ -76,12 +90,11 @@ class GSAContentHandler(xml.sax.ContentHandler):
         self.doc.shelfmark=""
         self.doc.doc_id=None
         self.doc.text=""
-        self.doc.hands={"mws":"","pbs":"", "comp":""}
+        self.doc.hands={"mws":"","pbs":"", "comp":"", "library":""}
         self.doc.mod={"add":[],"del":[]}
-        self.doc.hands_pos={"mws":[], "pbs":[], "comp":[]}
-        self.doc.hands_tei_pos={"mws":[], "pbs":[], "comp":[]}
+        self.doc.hands_pos={"mws":[], "pbs":[], "comp":[], "library":[]}
+        self.doc.hands_tei_pos={"mws":[], "pbs":[], "comp":[], "library":[]}
         self.doc.mod_pos={"add":[],"del":[]}
-        # print self.doc.mod["add"]
  
     def startElement(self, name, attrs):
         # add element to path stack
@@ -91,6 +104,9 @@ class GSAContentHandler(xml.sax.ContentHandler):
             partOf = attrs["partOf"] if "partOf" in attrs else " "
             self.doc.shelfmark = partOf[1:] if partOf[0] == "#" else partOf
             self.doc.doc_id = attrs["xml:id"]
+
+            # Find my manifest and my position in the sequence
+            # print self.doc.doc_id
 
         if "hand" in attrs:
             hand = attrs["hand"]
@@ -132,13 +148,31 @@ class GSAContentHandler(xml.sax.ContentHandler):
                 if attrs["xml:id"] == self.delSpan:
                     self.delSpan = None
                     self.doc.mod_pos["del"][-1] += str(self.pos)
+
+        if name == "handShift":
+            if "new" in attrs:
+                self.handShift = True
+                hand = attrs["new"]
+                if hand[0]=="#": hand = hand[1:]
+                self.hands.append(hand)
+                self.path[-1][-1] = hand
+
+                # print self.hands, self.path
+
  
     def endElement(self, name):
         # Remove hand from hand stack if this is the last element with that hand
         # Unless it's an addSpan with hand, in which case we defer to the corresponding anchor
-        if name != "addSpan" and self.addSpan["hand"] == None:
+        # Here we are assuming that there is only one handShift per page.
+        if not self.handShift and name != "addSpan" and self.addSpan["hand"] == None:
             if len(self.path) > 1 and self.hands[-1] != self.path[-2][-1]:
                 self.hands.pop()
+
+        ### SPECIAL CASES ###
+        if self.doc.doc_id == "ox-ms_abinger_c58-0057" and self.path[-1][-1] == "mws":
+            # self.hands.pop()
+            self.hands.append("pbs")
+                
         # Remove the element from element stack
         self.path.pop()
 
@@ -180,12 +214,25 @@ class GSAContentHandler(xml.sax.ContentHandler):
  
 if __name__ == "__main__":
 
-    if len(sys.argv) != 2:
-        print 'Usage: ./tei-to-solr.py path'
+    if len(sys.argv) != 3:
+        print 'Usage: ./tei-to-solr.py path_to_tei path_to_manifests'
         sys.exit(1)
 
     # Connect to solr instance
     s = solr.SolrConnection('http://localhost:8080/solr/sga')
+
+    # Walk provided directory for manifests; parse them and store them
+    man_dir = os.path.normpath(sys.argv[2]) + os.sep
+
+    manifests = {}
+
+    for d in os.listdir(man_dir):
+        if os.path.isdir(man_dir + d):
+            for f in os.listdir(man_dir + d):
+                if f.endswith('.jsonld'):
+                    json_data=open(man_dir + os.sep + d + os.sep + f)
+                    data = json.load(json_data)
+                    manifests[d] = data
 
     # Walk provided directory for xml files; parse them and create/commit documents
     xml_dir = os.path.normpath(sys.argv[1]) + os.sep
