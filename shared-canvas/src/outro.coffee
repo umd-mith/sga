@@ -79,17 +79,8 @@ MITHgrid.defaults 'SGA.Reader.Component.Spinner',
 #
 # TODO: Have variables for panning across the canvas.
 #
-MITHgrid.defaults 'SGA.Reader.Presentation.SVGCanvas',
-  variables:
-    Canvas: { is: 'rw' }
-    Scale:  { is: 'rw', isa: 'numeric' }
-    ImgOnly: { is: 'rw' }
-    Height: { is: 'rw', isa: 'numeric' }
-    Width: { is: 'rw', isa: 'numeric' }
-    X: { is: 'rw', isa: 'numeric' }
-    Y: { is: 'rw', isa: 'numeric' }
 
-MITHgrid.defaults 'SGA.Reader.Presentation.HTMLCanvas',
+MITHgrid.defaults 'SGA.Reader.Presentation.Canvas',
   variables:
     Canvas: { is: 'rw' }
     Scale:  { is: 'rw', isa: 'numeric' }
@@ -115,14 +106,6 @@ MITHgrid.defaults 'SGA.Reader.Presentation.Zone',
     Y: { is: 'rw', isa: 'numeric' }
     Scale: { is: 'rw', isa: 'numeric' }
 
-
-MITHgrid.defaults 'SGA.Reader.Presentation.HTMLZone',
-  variables:
-    Height: { is: 'rw', isa: 'numeric' }
-    Width: { is: 'rw', isa: 'numeric' }
-    X: { is: 'rw', isa: 'numeric' }
-    Y: { is: 'rw', isa: 'numeric' }
-    Scale: { is: 'rw', isa: 'numeric' }
 #
 # The ItemsToProcess and ItemsProcessed are analagous to the
 # Numerator and Denominator of the ProgressBar component.
