@@ -47,7 +47,7 @@ def search():
         # so all the positions are extracted from there.
         response = s.raw_query(q=fields[0]+":"+q, 
             q_op='AND',
-            fl='shelfmark,id', 
+            fl='shelfmark,id,work,viewer_url,authors,attribution', 
             fq=fqs, 
             wt='json', 
             start=start,
@@ -65,10 +65,11 @@ def search():
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
-        results = {
+        results = {            
             "numFound": r["response"]["numFound"], 
             "results":[],
-            "facets":{ "notebooks":{} }
+            "facets":{ "notebooks":{} },
+            "metadata": {}
             }
 
         # get facets
@@ -88,6 +89,14 @@ def search():
         # create an entry for each document found
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
+
+            # metadata
+            results["metadata"][res["shelfmark"]] = {
+                "work":res["work"],
+                "viewer_url":res["viewer_url"],
+                "authors":res["authors"],
+                "attribution":res["attribution"]
+            }
 
             ident = res["id"]            
 
@@ -147,6 +156,8 @@ def annotate():
         # Create a UUID for this iteration
         uid = str(uuid.uuid4())
 
+        print f, q
+
         # get solr fields from request
         fields = f.split(",")
         fqs = []
@@ -193,11 +204,11 @@ def annotate():
         
         s = solr.SolrConnection("http://localhost:8080/solr/sga")
 
-        try:
-            s.conn.connect()
-            return do_annotation(s, request.args["f"], request.args["q"])
-        except:
-            abort(500)
+        # try:
+        s.conn.connect()
+        return do_annotation(s, request.args["f"], request.args["q"])
+        # except:
+        #     abort(500)
 
     else:
         abort(400) 
