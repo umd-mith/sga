@@ -30,7 +30,25 @@
       dataView: app.dataView.sequences
     });
 
-    pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location");
+    pageSlider = SGA.Reader.Component.Slider.initInstance("#page-location", {
+      getLabel: function(n) {
+        var seq, canvas, seqContent;
+
+        seq = app.getSequence();
+        seqContent = app.dataStore.data.getItem(seq);
+        if(seqContent === undefined || seqContent["sequence"] === undefined) {
+          return "";
+        }
+        if(n < 0 || n >= seqContent["sequence"].length) {
+          return "";
+        }
+        canvas = app.dataStore.data.getItem(seqContent["sequence"][n]);
+        if(canvas != undefined && canvas["label"] != undefined && canvas["label"].length > 0) {
+          return canvas["label"][0];
+        }
+        return "";
+      }
+    });
 
     pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");    
 

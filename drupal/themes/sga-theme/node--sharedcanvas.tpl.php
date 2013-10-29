@@ -2,19 +2,19 @@
 
     $path = drupal_get_path('theme', 'sgarchive');
     drupal_add_css($path . '/css/sc/overrides.css');
-    drupal_add_css($path . '/css/sc/polymaps.css');
+    //drupal_add_css($path . '/css/sc/polymaps.css');
     drupal_add_css($path . '/css/sc/prettify.css');
     drupal_add_css($path . '/css/sc/shared-canvas.css');
     drupal_add_css($path . '/css/sc/jquery-ui.css');
     drupal_add_css($path . '/css/sc/reset.css');
     drupal_add_js($path . '/js/sc/modernizr-2.6.2.min.js');
-    drupal_add_js($path . '/js/sc/jquery.svg.min.js');
-    drupal_add_js($path . '/js/sc/jquery.svgdom.min.js');
+    //drupal_add_js($path . '/js/sc/jquery.svg.min.js');
+    //drupal_add_js($path . '/js/sc/jquery.svgdom.min.js');
     drupal_add_js($path . '/js/jquery.ba-bbq.min.js');
     drupal_add_js($path . '/js/sc/navigation.js');
     drupal_add_js($path . '/js/sc/jquery-ui-1.10.3.js');
-    drupal_add_js($path . '/js/sc/polymaps.min.js');
-    drupal_add_js($path . '/js/sc/adoratio.js');
+    //drupal_add_js($path . '/js/sc/polymaps.min.js');
+    //drupal_add_js($path . '/js/sc/adoratio.js');
     drupal_add_js($path . '/js/sc/mithgrid.min.js');
     drupal_add_js($path . '/js/sc/q.min.js');
     drupal_add_js($path . '/js/sc/prettify.js');
