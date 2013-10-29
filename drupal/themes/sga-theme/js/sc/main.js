@@ -48,7 +48,7 @@
         }
         return "";
       }
-    }););
+    });
 
     pager = SGA.Reader.Component.PagerControls.initInstance("#pager-controls");    
 

@@ -50,13 +50,13 @@ SGAReader.namespace "Component", (Component) ->
         $(container).css
           position: "absolute"
           "z-index": 10000
-          top: parseInt(y/2, 10)
-          left: parseInt(x/2, 10)
+          top: "50%"
+          left: "50%"
 
-        MITHgrid.events.onWindowResize.addListener ->
-          $(container).css
-            top: $(window).height()/2 - $(container).height()/2
-            left: $(window).width()/2 - $(container).width()/2
+        #MITHgrid.events.onWindowResize.addListener ->
+        #  $(container).css
+        #    top: $(window).height()/2 - $(container).height()/2
+        #    left: $(window).width()/2 - $(container).width()/2
 
         that.show = -> 
           $(container).show()

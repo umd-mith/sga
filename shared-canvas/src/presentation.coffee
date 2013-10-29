@@ -951,6 +951,100 @@ SGAReader.namespace "Presentation", (Presentation) ->
 
           textContainer.append(rootEl)
 
+          updateMarque = (z) ->
+
+          app = options.application()
+
+          # If the marquee already exists, replace it with a new one.
+          $('.marquee').remove()
+          # First time, always full extent in size and visible area
+          strokeW = 1
+          marquee = $("<div class='marquee'></div>")
+          $(container).append(marquee)
+          marquee.css
+            "border-color": 'navy'
+            "background-color": "yellow"
+            "border-width": strokeW
+            "opacity": "0.1"
+            "border-opacity": "0.9"
+            "width": options.width * options.scale
+            "height": options.height * options.scale
+            "position": "absolute"
+            "z-index": 0
+            "top": 0
+            "left": 16
+
+          visiblePerc = 100
+          marqueeLeft = 0
+          marqueeTop = 0
+          marqueeWidth = Math.floor((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+          marqueeHeight = Math.floor((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+
+          # we do our own clipping because of the way margins and padding play with us
+
+          updateMarque = (z) ->
+            if app.imageControls.getMaxZoom() > 0
+              width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
+              visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
+
+              marqueeWidth = Math.floor((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
+              marqueeHeight = Math.floor((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
+              
+              marquee.css
+                "width":
+                  if marqueeLeft < 0
+                    marqueeWidth + marqueeLeft 
+                  else if marqueeWidth + marqueeLeft > $(container).width() 
+                    $(container).width() - marqueeLeft 
+                  else marqueeWidth
+                "height": 
+                  if marqueeTop < 0  
+                    marqueeHeight + marqueeTop 
+                  else if marqueeHeight + marqueeTop > $(container).height()
+                    $(container).height() - marqueeTop 
+                  else 
+                    marqueeHeight
+              if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
+                $(marquee).css "opacity", "0"
+              else
+                $(marquee).css "opacity", "0.1"
+
+            that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
+
+            that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
+              marqueeLeft = Math.floor( (-p.topLeft.x * visiblePerc / 10) * that.getScale())
+              marqueeTop = Math.floor( (-p.topLeft.y * visiblePerc / 10) * that.getScale())
+              marquee.css({
+                "left": 16 + Math.max(0, marqueeLeft)
+                "top": Math.max(0, marqueeTop)
+                "width":
+                  if marqueeLeft < 0
+                    marqueeWidth + marqueeLeft 
+                  else if marqueeWidth + marqueeLeft > $(container).width() 
+                    $(container).width() - marqueeLeft 
+                  else marqueeWidth
+                "height": 
+                  if marqueeTop < 0  
+                    marqueeHeight + marqueeTop 
+                  else if marqueeHeight + marqueeTop > $(container).height()
+                    $(container).height() - marqueeTop 
+                  else 
+                    marqueeHeight
+              })
+
+          if app.imageControls?.getActive()
+            $('.marquee').show()
+          else
+            $('.marquee').hide()
+
+          that.onDestroy app.imageControls?.events.onActiveChange.addListener (a) ->
+            if a
+              $('.marquee').show()
+            else
+              $('.marquee').hide()
+
+          that.events.onScaleChange.addListener (s) ->
+            updateMarque(app.imageControls.getZoom())
 
           #
           # textDataView gives us all of the annotations targeting this
@@ -1192,6 +1286,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
               recalculateBaseZoomLevel = ->
                 divWidth = $(container).width() || 1
                 baseZoomLevel = Math.ceil(-Math.log( divScale )/Math.log(2))
+                app.imageControls.setMinZoom 0
+                app.imageControls.setMaxZoom zoomLevels - baseZoomLevel
 
               wrapWithImageReplacement = (cb) ->
                 cb()
@@ -1208,7 +1304,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                     img.css
                       "z-index": 0
 
-              rendering.setZoom = (z) ->
+              _setZoom = (z) ->
                 wrapper = (cb) -> cb()
                 if z < 0
                   z = 0
@@ -1220,6 +1316,10 @@ SGAReader.namespace "Presentation", (Presentation) ->
                   zoomLevel = z
                   wrapper renderTiles
              
+              rendering.setZoom = (z) ->
+                _setZoom(z)
+                app.imageControls.setZoom(z)
+
               rendering.setScale = (s) ->
                 divScale = s
                 $(innerContainer).css
@@ -1239,6 +1339,15 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 else
                   wrapper = (cb) -> cb()
                 wrapper renderTiles
+
+              that.onDestroy app.imageControls.events.onZoomChange.addListener _setZoom
+
+              updateImageControlPosition = ->
+                app.imageControls.setImgPosition
+                  topLeft: 
+                    x: offsetX
+                    y: offsetY
+
 
               recalculateBaseZoomLevel()
 
@@ -1398,6 +1507,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
                               offsetX = startoffsetX - scoords.left
                               offsetY = startoffsetY - scoords.top
                               renderTiles()
+                              updateImageControlPosition()
+
                             when "mouseup"
                               inDrag = false
                               MITHgrid.mouse.uncapture()
@@ -1431,6 +1542,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                       z = rendering.getZoom()
                       if z >= 0 and z <= zoomLevels - baseZoomLevel
                         rendering.setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
+  
                         #newScrollPoint = screen2original(x, y)
                         #console.log
                         #  dx: scrollPoint.left - newScrollPoint.left
@@ -1445,7 +1557,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 imgEl.css
                   position: 'absolute'
                   top: topLeft.top
-                  left: 16 + topLeft.left
+                  left: topLeft.left
                   width: heightWidth.width
                   height: heightWidth.height
 
@@ -1476,12 +1588,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
               rendering.setOffsetX = (x) ->
                 offsetX = x
                 renderTiles()
+                updateImageControlPosition()
 
               rendering.setOffsetY = (y) ->
                 offsetY = y
                 renderTiles()
+                updateImageControlPosition()
+
               rendering.addoffsetX = (dx) ->
                 rendering.setOffsetX offsetX + dx
+
               rendering.addoffsetY = (dy) ->
                 rendering.setOffsetY offsetY + dy
 
@@ -1555,108 +1671,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
             'height': DivHeight
             'width': DivWidth
           realCanvas?.setScale s
+          $(container).trigger("sizeChange", [{w:$(container).width(), h:$(container).height()}])
 
         # the data view is managed outside the presentation
         dataView = MITHgrid.Data.SubSet.initInstance
           dataStore: options.dataView
           expressions: [ '!target' ]
           key: null
-
-        updateMarque = (z) ->
-
-        if 'Text' in (options.types || [])
-          app = options.application()
-
-          # If the marquee already exists, replace it with a new one.
-          $('.marquee').remove()
-          # First time, always full extent in size and visible area
-          strokeW = 1
-          marquee = $("<div class='marquee'></div>")
-          $(container).append(marquee)
-          marquee.css
-            "border-color": 'navy'
-            "background-color": "yellow"
-            "border-width": strokeW
-            "opacity": "0.1"
-            "border-opacity": "0.9"
-            "width": options.width * options.scale
-            "height": options.height * options.scale
-            "position": "absolute"
-            "z-index": 0
-            "top": 0
-            "left": 16
-
-          visiblePerc = 100
-          marqueeLeft = 0
-          marqueeTop = 0
-          marqueeWidth = Math.floor((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
-          marqueeHeight = Math.floor((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
-
-          # we do our own clipping because of the way margins and padding play with us
-
-          updateMarque = (z) ->
-            if app.imageControls.getMaxZoom() > 0
-              width  = Math.round(that.getWidth() / Math.pow(2, (app.imageControls.getMaxZoom() - z)))
-              visiblePerc = Math.min(100, ($(container).width() * 100) / (width))
-
-              marqueeWidth = Math.floor((that.getWidth() * visiblePerc * that.getScale())/100, 10 )
-              marqueeHeight = Math.floor((that.getHeight() * visiblePerc * that.getScale())/100, 10 )
-              
-              marquee.css
-                "width":
-                  if marqueeLeft < 0
-                    marqueeWidth + marqueeLeft 
-                  else if marqueeWidth + marqueeLeft > $(container).width() 
-                    $(container).width() - marqueeLeft 
-                  else marqueeWidth
-                "height": 
-                  if marqueeTop < 0  
-                    marqueeHeight + marqueeTop 
-                  else if marqueeHeight + marqueeTop > $(container).height()
-                    $(container).height() - marqueeTop 
-                  else 
-                    marqueeHeight
-              if app.imageControls.getZoom() > app.imageControls.getMaxZoom() - 1
-                $(marquee).css "opacity", "0"
-              else
-                $(marquee).css "opacity", "0.1"
-
-            that.onDestroy app.imageControls.events.onZoomChange.addListener updateMarque
-
-            that.onDestroy app.imageControls.events.onImgPositionChange.addListener (p) ->
-              marqueeLeft = Math.floor( (-p.topLeft.x * visiblePerc / 10) * that.getScale())
-              marqueeTop = Math.floor( (-p.topLeft.y * visiblePerc / 10) * that.getScale())
-              marquee.css({
-                "left": 16 + Math.max(0, marqueeLeft)
-                "top": Math.max(0, marqueeTop)
-                "width":
-                  if marqueeLeft < 0
-                    marqueeWidth + marqueeLeft 
-                  else if marqueeWidth + marqueeLeft > $(container).width() 
-                    $(container).width() - marqueeLeft 
-                  else marqueeWidth
-                "height": 
-                  if marqueeTop < 0  
-                    marqueeHeight + marqueeTop 
-                  else if marqueeHeight + marqueeTop > $(container).height()
-                    $(container).height() - marqueeTop 
-                  else 
-                    marqueeHeight
-              })
-
-          if app.imageControls?.getActive()
-            $('.marquee').show()
-          else
-            $('.marquee').hide()
-
-          that.onDestroy app.imageControls?.events.onActiveChange.addListener (a) ->
-            if a
-              $('.marquee').show()
-            else
-              $('.marquee').hide()
-
-          that.events.onScaleChange.addListener (s) ->
-            updateMarque(app.imageControls.getZoom())
 
         realCanvas = null
 
