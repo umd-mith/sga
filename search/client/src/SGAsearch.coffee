@@ -12,14 +12,13 @@ window.SGAsearch = {}
   # SearchResult
   class SGAsearch.SearchResult extends Backbone.Model
     defaults:
-      "hls"   : []
-      "id": "" # [Page]
-      "shelfmark": "" # [Shelfmark]
-      "title" : "" # [Title]
-      "nbook" : "" # [Notebook]
-      "author" : "" # [Author]
-      "date" : "" # [Date] 
-      "imageURL" : "http://placehold.it/75x100"
+      "hls"         : []
+      "id"          : ""
+      "shelfmark"   : ""
+      "work"        : ""
+      "authors"     : ""
+      "viewer_url"   : ""
+      "imageURL"    : "http://placehold.it/75x100"
       "detailQuery" : ""
 
   # Facet
@@ -115,7 +114,7 @@ window.SGAsearch = {}
       view.$el.click (e) ->
         e.preventDefault()
         if view.model.attributes.type == 'notebook'
-          o.filters = "shelfmark:#{view.model.attributes.name}"
+          o.filters = "shelfmark:%22#{view.model.attributes.name}%22"
         else
           o.fields += ",#{view.model.attributes.field}"
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
@@ -124,7 +123,7 @@ window.SGAsearch = {}
         e.preventDefault()
         e.stopPropagation()
         if view.model.attributes.type == 'notebook'
-          f = "NOT%20shelfmark:#{view.model.attributes.name}"
+          f = "NOT%20shelfmark:%22#{view.model.attributes.name}%22"
           if !o.filters? 
             o.filters = f 
           else 
@@ -303,17 +302,19 @@ window.SGAsearch = {}
       # User messages
       $("#usr-msg").hide()
       if res.numFound == 0
-        $("#usr-msg").show().text "No results found."
+        $("#usr-msg").show().find('span').text "No results found."
 
       for r in res.results
         sr = new SGAsearch.SearchResult()
         @srlv.collection.add sr
 
+        orig_id = r.id
+
         r.num = (res.results.indexOf(r) + 1) + page*20
         r.id = r.id.substr r.id.length - 4
         # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
 
-        r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/#{r.shelfmark}-#{r.id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
+        r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/#{orig_id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
         r.detailQuery = "s=f:#{fields}|q:#{query}"
 
         sr.set r
@@ -417,6 +418,6 @@ window.SGAsearch = {}
       type: 'GET'
       processData: false
       success: updateResults
-      error: -> $("#usr-msg").show().addClass('error').text 'Could not reach server. Please try again later.'
+      error: -> $("#usr-msg").show().addClass('error').find('span').text 'Could not reach server. Please try again later.'
 
 )(jQuery,window.SGAsearch,_,Backbone)

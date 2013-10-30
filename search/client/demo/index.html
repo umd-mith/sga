@@ -192,19 +192,17 @@
 <script type="text/template" id="result-template">
   <li class="media list-group-item"> 
     <span class="label label-info"><%= num %></span> 
-    <a class="pull-left" href="sc/ox/<%=shelfmark%>#n=<%= parseInt(id) %><% if (detailQuery!='') { %>&<%=detailQuery%><% }%>
+    <a class="pull-left" href="<%= viewer_url %><% if (detailQuery!='') { %>&<%=detailQuery%><% }%>
     "> 
       <img class="media-object r-img" src="<%=imageURL%>" alt="<%= shelfmark %>" width="75" height="100"
       onerror="this.src='http://placehold.it/75x100';"> 
     </a>
     <div class="media-body">
       <div class="r-description">
-        <span class="r-title"><%= title %></span>
-        <span class="r-nbook"><%= shelfmark %></span>
-        <span class="r-nbook"><%= id %></span>
-        <span class="r-author"><%= author %></span>
-        
-        <span class="r-date"><%= date %></span>
+        <span class="r-work"><%= work %></span> -
+        <span class="r-shelfmark"><%= shelfmark %></span>.
+        <span class="r-shelf_label"><em><%= shelf_label %></em></span>
+        <span class="r-authors"><%= authors %></span>
       </div>
       <div class="r-summary">
         <% _.each(hls, function(i) { %>  <p>…<%= i %>…</p> <% }); %>
