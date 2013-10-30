@@ -37,7 +37,6 @@ window.SGAranges = {}
   # RangeList List
   class SGAranges.WorkList extends Backbone.Collection
     model: SGAranges.Work
-    url: 'works.json' 
 
   # RangeList List
   class SGAranges.RangeList extends Backbone.Collection
