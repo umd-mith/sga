@@ -601,6 +601,8 @@ SGAReader.namespace "Component", (Component) ->
               .canvas[data-types] .hand-library{ color:#D9D9D9; } 
               .canvas[data-types] .hand-comp{ color:#D9D9D9; } 
               .canvas[data-types] .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
+              .canvas[data-types] .DeletionAnnotation.hand-library{ color:#D9D9D9 }
+              .canvas[data-types] .DeletionAnnotation.hand-comp{ color:#D9D9D9 }
             """
 
             $('#LimitViewControls_classes').remove()
