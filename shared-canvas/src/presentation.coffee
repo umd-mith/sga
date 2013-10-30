@@ -103,6 +103,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             if i < afterLayout.length
               fn() for fn in afterLayout[i]
               setTimeout (-> runAfterLayout(i+1)), 0
+            
           runAfterLayout 0
 
         renderingTimer = null
@@ -137,10 +138,11 @@ SGAReader.namespace "Presentation", (Presentation) ->
           lines[currentLine].push rendering
           rendering.line = currentLine
           rendering.positioned = false
-          rendering.setScale = ->
-
+          rendering.setScale = (s) ->
+          
           rendering.afterLayout = ->
-
+            rendering.width = rendering.$el.width() / that.getScale()
+          
           rendering.remove = ->
             el.remove()
             lines[rendering.line] = (r for r in lines[rendering.line] when r != rendering)
@@ -181,14 +183,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
           rendering.afterLayout = ->
             ourWidth = that.getWidth() / 10
             ourLeft = rendering.$el.parent().offset().left
-
+            rendering.width = rendering.$el.width() / that.getScale()
+            rendering.$el.css
+              width: Math.ceil(rendering.width * that.getScale()) + "px"
             if lastRendering?
               myOffset = rendering.$el.offset()
               if lastRendering.$el.hasClass 'DeletionAnnotation'
-                middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()/2
+                middle = lastRendering.$el.offset().left + (lastRendering.$el.outerWidth(false)/2)
               else
-                middle = lastRendering.$el.offset().left + lastRendering.$el.outerWidth()
-              myMiddle = myOffset.left + rendering.$el.outerWidth()/2
+                middle = lastRendering.$el.offset().left + (lastRendering.$el.outerWidth(false))
+              myMiddle = myOffset.left + rendering.$el.outerWidth(false)/2
               neededSpace = middle - myMiddle
               # now we need to make sure we aren't overlapping with other text - if so, move to the right
               prevSibling = rendering.$el.prev()
@@ -196,16 +200,16 @@ SGAReader.namespace "Presentation", (Presentation) ->
               spacing = 0
               if prevSibling? and prevSibling.size() > 0
                 prevOffset = prevSibling.offset()
-                accOffset = prevSibling.offset().left + prevSibling.outerWidth() - ourLeft
-                spacing = (prevOffset.left + prevSibling.outerWidth()) - myOffset.left
-                spacing = Math.floor(prevSibling.css('left')) or 0 #(prevOffset.left) - myOffset.left
+                accOffset = prevSibling.offset().left + prevSibling.outerWidth(false) - ourLeft
+                spacing = (prevOffset.left + prevSibling.outerWidth(false)) - myOffset.left
+                spacing = parseInt(prevSibling.css('left'),10) or 0 #(prevOffset.left) - myOffset.left
 
                 if spacing > neededSpace
                   neededSpace = spacing
               if neededSpace >= 0
-                if neededSpace + (myOffset.left - ourLeft) + accOffset + rendering.$el.outerWidth() > ourWidth
+                if neededSpace + (myOffset.left - ourLeft) + accOffset + rendering.$el.outerWidth(false) > ourWidth
 
-                  neededSpace = ourWidth - (myOffset.left - ourLeft) - accOffset - rendering.$el.outerWidth()
+                  neededSpace = ourWidth - (myOffset.left - ourLeft) - accOffset - rendering.$el.outerWidth(false)
 
               # if we need negative space, then we need to move to the left if we can
               if neededSpace < 0
@@ -217,13 +221,13 @@ SGAReader.namespace "Presentation", (Presentation) ->
                   prevSiblings = rendering.$el.prevAll()
                   availableSpace = 0
                   prevSiblings.each (i, x) ->
-                    availableSpace += (Math.floor($(x).css('left')) or 0)
+                    availableSpace += (parseInt($(x).css('left'),10) or 0)
                   if prevSibling.size() > 0
-                    availableSpace -= (prevSibling.offset().left - ourLeft + prevSibling.outerWidth())
+                    availableSpace -= (prevSibling.offset().left - ourLeft + prevSibling.outerWidth(false))
                   if availableSpace > neededSpace
                     usedSpace = 0
                     prevSiblings.each (i, s) ->
-                      oldLeft = Math.floor($(s).css('left')) or 0
+                      oldLeft = parseInt($(s).css('left'), 10) or 0
                       if availableSpace > 0
                         useWidth = Math.floor(oldLeft * (neededSpace - usedSpace) / availableSpace)
                         $(s).css('left', (oldLeft - useWidth - usedSpace) + "px")
@@ -236,8 +240,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
                     neededSpace = 0
               if neededSpace > 0
                 if prevSibling.size() > 0
-                  if neededSpace < Math.floor(prevSibling.css('left'))
-                    neededSpace = Math.floor(prevSibling.css('left'))
+                  if neededSpace < parseInt(prevSibling.css('left'), 10)
+                    neededSpace = parseInt(prevSibling.css('left'), 10)
                 rendering.$el.css
                     'position': 'relative'
                     'left': (neededSpace) + "px"
@@ -245,6 +249,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
                 rendering.setScale = (s) ->
                   rendering.$el.css
                     'left': Math.floor(rendering.left * s) + "px"
+                    'width': Math.ceil(rendering.width * s) + "px"
 
 
           rendering.remove = ->
