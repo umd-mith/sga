@@ -596,8 +596,10 @@ SGAReader.namespace "Component", (Component) ->
           if $(this).is(':checked')
 
             css = """
-              .canvas[data-types] .hand-pbs{ color:#D9D9D9; } 
               .canvas[data-types] *:not(.hand-pbs), .canvas[data-types] .DeletionAnnotation.hand-pbs{ color:#a54647; }
+              .canvas[data-types] .hand-pbs{ color:#D9D9D9; } 
+              .canvas[data-types] .hand-library{ color:#D9D9D9; } 
+              .canvas[data-types] .hand-comp{ color:#D9D9D9; } 
               .canvas[data-types] .DeletionAnnotation:not(.hand-pbs){ color:#a54647 }
             """
 
