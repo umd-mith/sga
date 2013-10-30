@@ -777,7 +777,6 @@ SGAReader.namespace "Application", (Application) ->
                   removeListener = manifest.events.onSequenceChange.addListener ->
 
                     search = (bbq_q) ->
-                      console.log '1'
                       bbq_q = bbq_q.replace(/:/g,'=')
                       bbq_q = bbq_q.replace(/\|/g, '&')
                       updateSearchResults bbq_q
@@ -788,8 +787,7 @@ SGAReader.namespace "Application", (Application) ->
 
                     $(window).bind "hashchange", (e) ->
                       bbq_q = $.bbq.getState "s" 
-                      if bbq_q?                         
-                        console.log 'h'
+                      if bbq_q?        
                         search(bbq_q)
                     removeListener()
 
