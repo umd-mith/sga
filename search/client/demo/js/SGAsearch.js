@@ -589,7 +589,7 @@
         processData: false,
         success: updateResults,
         error: function() {
-          return $("#usr-msg").show().addClass('error').find('span').text('Could not reach server. Please try again later.');
+          return $("#usr-msg").show().find('span').toggleClass('alert-info alert-danger').text('Could not reach server. Please try again later.');
         }
       });
     };
