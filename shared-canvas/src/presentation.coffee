@@ -709,7 +709,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
             'overflow': 'hidden'
             'position': "absolute"
             'top': 0
-            'left': 0
+            'left': '16px'
 
           imgContainer = $("<div></div>")
           $(innerContainer).append(imgContainer)
