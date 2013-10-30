@@ -308,8 +308,8 @@ SGAReader.namespace "Presentation", (Presentation) ->
         #
         that.addLens 'LineBreak', (container, view, model, id) ->          
           item = model.getItem id
-          if item.sgatextAlignment?.length > 0
-            lineAlignments[currentLine] = item.sgatextAlignment[0]
+          if item.align?.length > 0
+            lineAlignments[currentLine] = item.align[0]
           if item.indent?.length > 0
             lineIndents[currentLine] = Math.floor(item.indent[0]) or 0
           currentLine += 1
