@@ -792,10 +792,10 @@ SGAReader.namespace "Application", (Application) ->
                     if bbq_q? 
                       search(bbq_q)
 
-                    $(window).bind "hashchange", (e) ->
-                      bbq_q = $.bbq.getState "s" 
-                      if bbq_q?        
-                        search(bbq_q)
+                    # $(window).bind "hashchange", (e) ->
+                    #   bbq_q = $.bbq.getState "s" 
+                    #   if bbq_q?        
+                    #     search(bbq_q)
                     removeListener()
 
           manifest.run()
