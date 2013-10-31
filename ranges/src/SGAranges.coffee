@@ -164,10 +164,12 @@ window.SGAranges = {}
 
       for i in data.images
         if i.on == canvas
-          i_url = i.resource["@id"]                  
-          resolver = i.resource.service["@id"]
-
-          img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
+          i_url = i.resource["@id"]  
+          if i.resource.service?
+            resolver = i.resource.service["@id"]
+            img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
+          else 
+            img_url = i_url
 
       c_id = canv["@id"]
       canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
