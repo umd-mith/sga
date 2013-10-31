@@ -130,6 +130,12 @@ class GSAContentHandler(xml.sax.ContentHandler):
             self.hands.append(hand)
             self.path[-1][-1] = hand
 
+        if "type" in attrs:
+            if attrs["type"] == "library":
+                hand = "library"
+                self.hands.append(hand)
+                self.path[-1][-1] = hand
+
         # Create a new added section
         if name == "add" or name == 'addSpan':
             self.doc.mod["add"].append("")            
