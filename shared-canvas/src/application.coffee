@@ -260,6 +260,9 @@ SGAReader.namespace "Application", (Application) ->
               sgaTypes = (f.substr(3) for f in aitem.type when f.substr(0,3) == "sga" and f.substr(f.length-10) == "Annotation")
               if sgaTypes.length > 0
                 extractTextTarget item, aitem.oahasTarget?[0]
+                # If there is text alignment property specified, store it.
+                if aitem.sgatextAlignment?
+                  item.align = aitem.sgatextAlignment
                 # If there is an indentation level specified, store it.
                 if aitem.sgatextIndentLevel?
                   item.indent = aitem.sgatextIndentLevel
@@ -288,6 +291,7 @@ SGAReader.namespace "Application", (Application) ->
               modInfo = {}
               setMod = (item) ->
                 indent = item.indent
+                align = item.align
                 source = item.target
                 start = item.start
                 end = item.end
@@ -314,7 +318,7 @@ SGAReader.namespace "Application", (Application) ->
                     modIds = [ ]
                     br_pushed = false
 
-                    pushTextItem = (classes, css, target, start, end, indent=null) ->
+                    pushTextItem = (classes, css, target, start, end, indent=null, aling=null) ->
                       titem = 
                         type: classes
                         css: css.join(" ")
@@ -324,6 +328,7 @@ SGAReader.namespace "Application", (Application) ->
                         start: start
                         end: end
                       if indent? then titem.indent = indent
+                      if align? then titem.align = align
                       textItems.push titem                   
                     
                     processNode = (start, end) ->
@@ -349,22 +354,22 @@ SGAReader.namespace "Application", (Application) ->
                     # text source that the highlight is targeting in the
                     # actual open annotation model.
                     #
-                    makeTextItems = (start, end, classes, css, indent) ->
+                    makeTextItems = (start, end, classes, css, indent, align) ->
                       for candidate in (textSources[source] || [])
                         if start <= candidate[2] and end >= candidate[1]
                           s = Math.min(Math.max(start, candidate[1]),candidate[2])
                           e = Math.max(Math.min(end, candidate[2]), candidate[1])
-                          pushTextItem classes, css, candidate[0], s, e, indent
+                          pushTextItem classes, css, candidate[0], s, e, indent, align
                       false
 
                     #
                     # A line break is just a zero-width annotation at
                     # the given position.
                     #
-                    makeLinebreak = (pos, indent) ->
+                    makeLinebreak = (pos, indent, align) ->
                       classes = [ "LineBreak" ]
                       #classes.push modInfo[id].type for id in modIds
-                      makeTextItems pos, pos, classes, [ "" ], indent
+                      makeTextItems pos, pos, classes, [ "" ], indent, align
 
                     #
                     mstarts = modstart[source] || []
@@ -388,8 +393,10 @@ SGAReader.namespace "Application", (Application) ->
                           modIds.splice idx, 1 if idx > -1
                         if needs_br and not br_pushed
                           indent = null
+                          align = null
                           if modInfo[id].indent? then indent = modInfo[id].indent
-                          makeLinebreak pos, indent
+                          if modInfo[id].align? then align = modInfo[id].align
+                          makeLinebreak pos, indent, align
                           br_pushed = true
                         last_pos = pos
                     processNode last_pos, text.length
@@ -782,7 +789,6 @@ SGAReader.namespace "Application", (Application) ->
                   removeListener = manifest.events.onSequenceChange.addListener ->
 
                     search = (bbq_q) ->
-                      console.log '1'
                       bbq_q = bbq_q.replace(/:/g,'=')
                       bbq_q = bbq_q.replace(/\|/g, '&')
                       updateSearchResults bbq_q
@@ -793,8 +799,7 @@ SGAReader.namespace "Application", (Application) ->
 
                     $(window).bind "hashchange", (e) ->
                       bbq_q = $.bbq.getState "s" 
-                      if bbq_q?                         
-                        console.log 'h'
+                      if bbq_q?        
                         search(bbq_q)
                     removeListener()
 

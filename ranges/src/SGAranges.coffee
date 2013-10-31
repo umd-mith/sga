@@ -9,9 +9,9 @@ window.SGAranges = {}
   # Work
   class SGAranges.Work extends Backbone.Model
     defaults:
+      "url"    : ""
       "id"     : ""
-      "title"  : ""
-      "meta"   : ""
+      "flat"   : false
       # "ranges" : new SGAranges.RangeList
 
   # Range
@@ -72,7 +72,15 @@ window.SGAranges = {}
       @listenTo @model, 'destroy', @remove
 
     render: ->
-      @$el.html @template(@model.toJSON())
+      thisEl = @$el
+      thisFlat = @model.attributes.flat
+      thisTemplate = @template
+      $.ajax
+        url: @model.attributes.url
+        type: 'GET'
+        dataType: 'json'
+        processData: false
+        success: (data) -> SGAranges.processManifest data, thisFlat, thisEl, thisTemplate
       @
 
     remove: ->
@@ -141,10 +149,7 @@ window.SGAranges = {}
       @$el.remove()
       @
 
-  # Set "flat" to true to skip subdivisions of thumbnails
-  SGAranges.LoadRanges = (manifest, flat=false) ->
-
-    processCanvas = (canv, data, pos=null) =>
+  SGAranges.processCanvas = (canv, data, pos=null) =>
       canvas = canv["@id"]
       c = new SGAranges.Canvas()
       @clv.collection.add c
@@ -175,23 +180,15 @@ window.SGAranges = {}
         "imgUrl"   : img_url
         "status"   : {t: "grn", m: "grn"}
 
-    processManifest = (data) =>
-
-      @wl = new SGAranges.WorkList()
-      @wlv = new SGAranges.WorkListView collection: @wl
-
-      w = new SGAranges.Work()
-      @wlv.collection.add w
-
+  SGAranges.processManifest = (data, flat, el, template) =>
       w_id = data["@id"]
       work_safe_id = w_id.replace(/[:\/\.]/g, "_")
-
-      w.set
+ 
+      el.html template(
         "id"     : work_safe_id
         "title"  : if data.metadata.title? then data.metadata.title + " - " + data.label else data.label
         "meta"   : data.metadata
-
-      @wlv.render "#ranges_wrapper"
+      )
     
       @rl = new SGAranges.RangeList()
       @rlv = new SGAranges.RangeListView collection: @rl
@@ -216,7 +213,7 @@ window.SGAranges = {}
         @clv = new SGAranges.CanvasListView collection: @cl  
 
         for canv in data.canvases
-          processCanvas canv, data
+          SGAranges.processCanvas canv, data
 
         @clv.render '#' + work_safe_id + ' .panel-body'
 
@@ -234,33 +231,50 @@ window.SGAranges = {}
             cur_pos += 1
             for canv in data.canvases
               if canv["@id"] == canvas           
-                processCanvas canv, data, cur_pos
+                SGAranges.processCanvas canv, data, cur_pos
                 # This avoids rendering more than once
                 # canvases that are included in multiple ranges
                 break
 
           @clv.render '#' + range_safe_id + ' .row'
 
-    $.ajax
-      url: manifest
-      type: 'GET'
-      dataType: 'json'
-      processData: false
-      success: processManifest
 
 
 )(jQuery,window.SGAranges,_,Backbone)
 
 # Work it, make it, do it, makes us
 ( ($) ->
+  wl = new SGAranges.WorkList([
+    id: "ox-frankenstein-notebook_a"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-notebook_a/Manifest-index.jsonld"
+    flat: true
+  ,
+    id: "ox-frankenstein-notebook_b"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-notebook_b/Manifest-index.jsonld"
+    flat: true
+  ,
+    id: "ox-frankenstein-notebook_c1"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-notebook_c1/Manifest-index.jsonld"
+    flat: true
+  ,
+    id: "ox-frankenstein-notebook_c2"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-notebook_c2/Manifest-index.jsonld"
+    flat: true
+  ,
+    id: "ox-frankenstein-volume_i"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-volume_i/Manifest-index.jsonld"
+    flat: false
+  ,
+    id: "ox-frankenstein-volume_ii"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-volume_ii/Manifest-index.jsonld"
+    flat: false
+  ,
+    id: "ox-frankenstein-volume_iii"
+    url: "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein-volume_iii/Manifest-index.jsonld"
+    flat: false
+  ])
 
-  # SGAranges.LoadRanges "ranges-sample.json"
-  # SGAranges.LoadRanges "ox-ms_abinger_c56/Manifest-index.jsonld", true
-  # SGAranges.LoadRanges "ox-ms_abinger_c57/Manifest-index.jsonld", true
-  # SGAranges.LoadRanges "ox-frankenstein_draft/Manifest-index.jsonld"
-  SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest-index.jsonld", true
-  SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-ms_abinger_c57/Manifest-index.jsonld", true
-  SGAranges.LoadRanges "http://dev.shelleygodwinarchive.org/data/ox/ox-frankenstein_draft/Manifest-index.jsonld"
-  # SGAranges.LoadRanges "Manifest.jsonld"
-
+  wlv = new SGAranges.WorkListView collection: wl
+  wlv.render "#ranges_wrapper"
 )(jQuery)
+
