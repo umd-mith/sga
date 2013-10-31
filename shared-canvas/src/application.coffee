@@ -553,6 +553,12 @@ SGAReader.namespace "Application", (Application) ->
         # parts of the manifest. 
         #
 
+        that.getManifestURI = ->
+          ret = manifestData.getManifests()
+          if ret.length > 0
+            return ret[0]
+          null
+
         that.getRangeMetadata = (id) ->
           meta = {}
           info = manifestData.getItem id
@@ -561,11 +567,10 @@ SGAReader.namespace "Application", (Application) ->
 
         that.getManifestMetadata = (id) ->
           ret = {}
+          
           if not id?
-            id = options.url
-            id = id.substr(0, id.indexOf('.json'));
-            id = id.replace('dev.', '');
-            #id = "http://shelleygodwinarchive.org/data/ox/ox-ms_abinger_c56/Manifest"
+            id = that.getManifestURI()
+          
           if id?
             info = manifestData.getItem id
             ret.workTitle = info.dctitle?[0]
