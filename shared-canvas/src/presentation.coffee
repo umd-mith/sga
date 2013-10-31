@@ -722,7 +722,7 @@ SGAReader.namespace "Presentation", (Presentation) ->
           app.imageControls.setActive(true)
 
           baseURL = item.url[0]
-          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, 'http://dev.shelleygodwinarchive.org/')
+          tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, '/')
 
           rendering.update = (item) ->
 
