@@ -54,3 +54,8 @@ svg body {
   background-color: transparent;
   border: none !important;
 }
+
+#ModeLayers div { 
+  line-height: 2.0;
+  margin: 2.0em;
+}
