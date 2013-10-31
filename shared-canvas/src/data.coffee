@@ -213,6 +213,7 @@ SGAReader.namespace "Data", (Data) ->
         that.getAnnotations = -> itemsWithType 'oaAnnotation'
         that.getRanges      = -> itemsWithType 'scRange'
         that.getLayers      = -> itemsWithType 'scLayer'
+        that.getManifests   = -> itemsWithType 'scManifest'
         that.getAnnotationsForCanvas = itemsForCanvas
         that.flushSearchResults = flushSearchResults
         that.getSearchResultCanvases = getSearchResultCanvases
