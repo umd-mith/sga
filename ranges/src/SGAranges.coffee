@@ -178,7 +178,7 @@ window.SGAranges = {}
         "id"       : canvas_safe_id
         "label"    : canv.label
         "position" : c_pos
-        "scUrl"    : sc_url
+        "scUrl"    : canv.service
         "imgUrl"   : img_url
         "status"   : {t: "grn", m: "grn"}
 
