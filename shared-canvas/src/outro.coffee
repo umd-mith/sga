@@ -28,7 +28,7 @@ MITHgrid.defaults 'SGA.Reader.Application.SharedCanvas',
       dataStore: 'data'
       types: [ 'Sequence' ]
   variables:
-    Canvas:   { is: 'rw' }
+    Canvas:   { is: 'lrw' }
     Sequence: { is: 'rw' }
     Position: { is: 'lrw', isa: 'numeric' }
 
