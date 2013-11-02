@@ -58,7 +58,9 @@ SGAReader.namespace "Application", (Application) ->
         that.events.onPositionChange.addListener (p) ->
           seq = that.dataStore.data.getItem currentSequence
           canvasKey = seq.sequence?[p]
+          that.lockPosition()
           that.setCanvas canvasKey
+          that.unlockPosition()
 
         #
         # But if we do know the name of the canvas we want to see, we
@@ -70,7 +72,9 @@ SGAReader.namespace "Application", (Application) ->
           seq = that.dataStore.data.getItem currentSequence
           p = seq.sequence.indexOf k
           if p >= 0 && p != that.getPosition()
+            that.lockCanvas()
             that.setPosition p
+            that.unlockCanvas()
 
           # Flush out all annotations for current canvas, if any.
           canvasKey = seq.sequence?[p]
