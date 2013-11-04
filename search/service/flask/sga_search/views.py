@@ -122,7 +122,7 @@ def search():
     # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
     if 2 <= len(request.args) <= 5 and "f" in request.args and "q" in request.args:
         
-        s = solr.SolrConnection("http://localhost:8080/solr/sga")
+        s = solr.SolrConnection("http://localhost:8080/solr/collection1")
 
         # try:
         s.conn.connect()
@@ -149,7 +149,7 @@ def annotate():
     
     def do_annotation(s, f, q):
         # This will probably stay hardcoded
-        TEI_data = "http://dev.shelleygodwinarchive.org/tei/ox/"
+        TEI_data = "http://shelleygodwinarchive.org/tei/ox/"
         hl_simple_pre = '_#_'
         hl_simple_post = '_#_'
         annotations = []
@@ -203,7 +203,7 @@ def annotate():
     # q: the string that will be queryed across the fields
     if len(request.args) == 2 and "f" in request.args and "q" in request.args:
         
-        s = solr.SolrConnection("http://localhost:8080/solr/sga")
+        s = solr.SolrConnection("http://localhost:8080/solr/collection1")
 
         # try:
         s.conn.connect()
