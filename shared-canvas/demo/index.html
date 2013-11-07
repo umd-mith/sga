@@ -3,6 +3,10 @@
   <head>
     <meta charset='utf-8'>
     <title>Shelley-Godwin Archive - Shared Canvas Viewer</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bower_components.js"></script>
+    <script src="../lib/mithgrid/dist/mithgrid.min.js"></script>
+    <script src="../dist/SGASharedCanvas.js"></script>
   </head>
 
   <body>
@@ -143,10 +147,10 @@
       <div class="row">
         <div class="loader" id="loading-progress"><!-- <i class="icon-spinner icon-spin icon-3x"></i> --></div>
         <div class="col-xs-6">
-          <div class="canvas" data-types="Image" data-manifest="/data/ox/ox-frankenstein-notebook_a/Manifest.json"></div>
+          <div class="canvas" data-types="Image" data-manifest="example-manifest.json"></div>
         </div>
         <div class="col-xs-6">
-          <div class="canvas" data-types="Text" data-manifest="/data/ox/ox-frankenstein-notebook_a/Manifest.json"></div>
+          <div class="canvas" data-types="Text" data-manifest="example-manifest.json"></div>
           <div id="ModeLayers"></div>
         </div>
         <div class="page-location-bar">
