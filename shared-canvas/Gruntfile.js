@@ -76,7 +76,7 @@ module.exports = function(grunt) {
       scripts: {
         files: 'src/*.coffee',
         // Not uglifying, since watch is supposed to be used for development
-        tasks: ['concat:coffee', 'coffee', 'clean:coffee',], 
+        tasks: ['concat:coffee', 'coffee', 'clean:coffee'], 
         options: {
           livereload: true
         }
