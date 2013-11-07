@@ -7,6 +7,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-install-dependencies');
   grunt.loadNpmTasks('grunt-bower-cli');
@@ -24,9 +26,40 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      coffee: {
+        options: {
+          process: function (src) {
+            src = grunt.util.normalizelf(src);
+            return src.split(grunt.util.linefeed).map(function (line) {
+                return '    ' + line;
+            }).join(grunt.util.linefeed);
+          }
+        },
+        src: ['src/presentation.coffee',
+              'src/data.coffee',
+              'src/component.coffee',
+              'src/controller.coffee',
+              'src/core.coffee',
+              'src/application.coffee'],
+        dest: 'src/sc_middle_tmp.coffee'
+      }
+    },
+
+    clean: {
+      coffee: ['src/sc_middle_tmp.coffee']
+    },
+
     coffee: {
-      compile: {
-        files: { 'dist/<%= pkg.name %>.js': ['src/*.coffee'] }
+      compileJoined: {
+        options: {
+          join: true
+        },
+        files: { 
+          'dist/<%= pkg.name %>.js': ['src/intro.coffee', 
+                                      'src/sc_middle_tmp.coffee',
+                                      'src/outro.coffee']
+        }
       }
     },
 
@@ -42,7 +75,8 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: 'src/*.coffee',
-        tasks: ['coffee', 'uglify'],
+        // Not uglifying, since watch is supposed to be used for development
+        tasks: ['concat:coffee', 'coffee', 'clean:coffee',], 
         options: {
           livereload: true
         }
@@ -54,7 +88,7 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['bower', 'coffee', 'uglify']);
-  grunt.registerTask('run', ['bower', 'connect', 'watch']);
+  grunt.registerTask('default', ['concat:coffee', 'coffee', 'clean:coffee', 'uglify']);
+  grunt.registerTask('run', ['connect', 'watch']);
   grunt.registerTask('install', ['install-dependencies', 'bower']);
 }
