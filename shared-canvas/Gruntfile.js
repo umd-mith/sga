@@ -56,7 +56,7 @@ module.exports = function(grunt) {
               'lib/vendor/jquery-ui.min.js', 
               'lib/vendor/jquery.ba-bbq.min.js',
               'bower_components/q/q.js',
-              'bower_components/bootstrap/dist/js/bootstrap-min.js',
+              'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'lib/vendor/google-prettify.js',
 /*temporary!*/'lib/mithgrid.js'], 
         dest: 'demo/js/bower_components.js'
