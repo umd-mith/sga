@@ -640,6 +640,9 @@ SGAReader.namespace "Application", (Application) ->
               lc = new that.Layers()
               collections.push lc
 
+              lac = new that.LayerAnnos()
+              collections.push lac
+
               syncer.process layers, (id) ->
                 that.addItemsProcessed 1
                 ritem = manifestData.getItem id
@@ -655,17 +658,15 @@ SGAReader.namespace "Application", (Application) ->
 
                 contents = []
                 contents.push ritem.rdffirst[0]
-                ritem = manifestData.getItem ritem.rdfrest[0]
+                ritem = manifestData.getItem ritem.rdfrest[0]                
+
                 while ritem.id?
                   contents.push ritem.rdffirst[0]
                   ritem = manifestData.getItem ritem.rdfrest[0]
 
-                if ritem.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or ritem.motivation == "http://www.shelleygodwinarchive.org/ns1#source"                  
+                if fields.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or fields.motivation == "http://www.shelleygodwinarchive.org/ns1#source"                  
                   # Get SGA-specific layer annotations 
-                  annos = []
-
-                  lac = new that.LayerAnnos()
-                  collections.push lac
+                  annos = []                  
                   
                   for c in contents
                     ritem = manifestData.getItem c                  
@@ -680,11 +681,9 @@ SGAReader.namespace "Application", (Application) ->
                     aitem.set
                       id: aritem.id[0]
                       type: 'LayerAnno'
-                      motivation: item.motivation
+                      motivation: fields.motivation
                       body: aritem.oahasBody[0]
                       canvas: a.oahasTarget[0]
-
-                    items.push aitem
 
                   fields.annotations = annos
 
@@ -692,10 +691,8 @@ SGAReader.namespace "Application", (Application) ->
 
                 item.set fields
 
-              # syncer.done ->
-              #   that.dataStore.data.loadItems items
-
-              console.log collections
+              syncer.done ->
+                that.dataStore.bb_data = collections
 
             else
               items = []
