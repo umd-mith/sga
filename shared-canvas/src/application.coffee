@@ -41,19 +41,57 @@ SGAReader.namespace "Application", (Application) ->
               "label"    : ""
               "sequence" : []
 
+          # Range
+          class that.Range extends Backbone.Model
+            defaults:
+              "id"       : ""
+              "type"     : ""
+              "label"    : ""
+              "canvases" : []
+
+          # Layer
+          class that.Layer extends Backbone.Model
+            defaults:
+              "id"         : ""
+              "type"       : ""
+              "label"      : ""
+              "motivation" : ""
+              "canvases"   : []
+
+          # Layer Annotation
+          class that.LayerAnno extends Backbone.Model
+            defaults:
+              "id"         : ""
+              "type"       : ""
+              "motivation" : ""
+              "annotations": []
+              "canvas"     : ""
+
           ## COLLECTIONS ##
 
-          # Canvas List
-          class that.CanvasList extends Backbone.Collection
+          # Canvas Collection
+          class that.Canvases extends Backbone.Collection
             model: that.Canvas
 
-          # Zone List
-          class that.ZoneList extends Backbone.Collection
+          # Zone Collection
+          class that.Zones extends Backbone.Collection
             model: that.Zone
 
-          # Sequence List
-          class that.SequenceList extends Backbone.Collection
+          # Sequence Collection
+          class that.Sequences extends Backbone.Collection
             model: that.Sequence
+
+          # Range Collection
+          class that.Ranges extends Backbone.Collection
+            model: that.Range
+
+          # Layer Collection
+          class that.Layers extends Backbone.Collection
+            model: that.Layer
+
+          # Layer Annotation Collection
+          class that.LayerAnnos extends Backbone.Collection
+            model: that.LayerAnno
 
 
         #
@@ -476,6 +514,8 @@ SGAReader.namespace "Application", (Application) ->
             if Backbone?
               syncer = MITHgrid.initSynchronizer()
 
+              collections = []
+
               #
               # We begin by pulling out all of the canvases defined in the
               # manifest.
@@ -483,14 +523,15 @@ SGAReader.namespace "Application", (Application) ->
               canvases = manifestData.getCanvases()
               that.addItemsToProcess canvases.length
               
-              cl = new that.CanvasList()              
+              cc = new that.Canvases()
+              collections.push cc
 
               syncer.process canvases, (id) ->
                 that.addItemsProcessed 1
                 mitem = manifestData.getItem id
 
                 item = new that.Canvas()
-                cl.add item
+                cc.add item
 
                 item.set
                   id: id
@@ -507,14 +548,15 @@ SGAReader.namespace "Application", (Application) ->
               zones = manifestData.getZones()
               that.addItemsToProcess zones.length
 
-              zl = new that.ZoneList()
+              zc = new that.Zones()
+              collections.push zc
 
               syncer.process zones, (id) ->
                 that.addItemsProcessed 1
                 zitem = manifestData.getItem id
 
                 item = new that.Zone()
-                zl.add item
+                zc.add item
 
                 item.set
                   id: id
@@ -533,14 +575,15 @@ SGAReader.namespace "Application", (Application) ->
               seq = manifestData.getSequences()
               that.addItemsToProcess seq.length
 
-              sl = new that.SequenceList()
+              sc = new that.Sequences()
+              collections.push sc
 
               syncer.process seq, (id) ->
                 that.addItemsProcessed 1
                 sitem = manifestData.getItem id
 
                 item = new that.Sequence()
-                sl.add item
+                sc.add item
 
                 fields =
                   id: id
@@ -557,8 +600,102 @@ SGAReader.namespace "Application", (Application) ->
 
                 item.set fields
 
-              console.log sl              
+              #
+              # And now ranges
+              #
+              ranges = manifestData.getRanges()
+              that.addItemsToProcess ranges.length
 
+              rc = new that.Ranges()
+              collections.push rc
+
+              syncer.process ranges, (id) ->
+                that.addItemsProcessed 1
+                ritem = manifestData.getItem id
+
+                item = new that.Range()
+                rc.add item
+
+                fields =
+                  id: id
+                  type: 'Range'
+                  label: ritem.rdfslabel
+
+                contents = []
+                contents.push ritem.rdffirst[0]
+                ritem = manifestData.getItem ritem.rdfrest[0]
+                while ritem.id?
+                  contents.push ritem.rdffirst[0]
+                  ritem = manifestData.getItem ritem.rdfrest[0]
+                fields.canvases = contents
+                
+                item.set fields
+
+              #
+              # Different layers (e.g. image, text annotations, another image, etc.)
+              #
+              layers = manifestData.getLayers()
+              that.addItemsToProcess layers.length
+
+              lc = new that.Layers()
+              collections.push lc
+
+              syncer.process layers, (id) ->
+                that.addItemsProcessed 1
+                ritem = manifestData.getItem id
+
+                item = new that.Layer()
+                lc.add item
+
+                fields =
+                  id: id
+                  type: 'Layer'
+                  label: ritem.rdfslabel
+                  motivation: ritem.scforMotivation?[0]
+
+                contents = []
+                contents.push ritem.rdffirst[0]
+                ritem = manifestData.getItem ritem.rdfrest[0]
+                while ritem.id?
+                  contents.push ritem.rdffirst[0]
+                  ritem = manifestData.getItem ritem.rdfrest[0]
+
+                if ritem.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or ritem.motivation == "http://www.shelleygodwinarchive.org/ns1#source"                  
+                  # Get SGA-specific layer annotations 
+                  annos = []
+
+                  lac = new that.LayerAnnos()
+                  collections.push lac
+                  
+                  for c in contents
+                    ritem = manifestData.getItem c                  
+                    a = manifestData.getItem ritem.rdffirst[0]
+                    annos.push a.id
+
+                    aritem = manifestData.getItem a.id[0]                    
+
+                    aitem = new that.LayerAnno()
+                    lac.add aitem
+
+                    aitem.set
+                      id: aritem.id[0]
+                      type: 'LayerAnno'
+                      motivation: item.motivation
+                      body: aritem.oahasBody[0]
+                      canvas: a.oahasTarget[0]
+
+                    items.push aitem
+
+                  fields.annotations = annos
+
+                fields.canvases = contents
+
+                item.set fields
+
+              # syncer.done ->
+              #   that.dataStore.data.loadItems items
+
+              console.log collections
 
             else
               items = []
