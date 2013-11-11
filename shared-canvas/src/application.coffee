@@ -9,6 +9,53 @@ SGAReader.namespace "Application", (Application) ->
       MITHgrid.Application.initInstance "SGA.Reader.Application.SharedCanvas", args..., (that) ->
         options = that.options
 
+        # Create Backbone models and collections for manifest data
+        if Backbone?
+
+          ## MODELS ##
+
+          # Canvas
+          class that.Canvas extends Backbone.Model
+            defaults:
+              "id"     : ""
+              "type"   : ""
+              "width"  : 0
+              "height" : 0
+              "label"  : ""
+
+          # Zone
+          class that.Zone extends Backbone.Model
+            defaults:
+              "id"     : ""
+              "type"   : ""
+              "width"  : 0
+              "height" : 0
+              "angle"  : 0
+              "label"  : ""
+
+          # Sequence
+          class that.Sequence extends Backbone.Model
+            defaults:
+              "id"       : ""
+              "type"     : ""
+              "label"    : ""
+              "sequence" : []
+
+          ## COLLECTIONS ##
+
+          # Canvas List
+          class that.CanvasList extends Backbone.Collection
+            model: that.Canvas
+
+          # Zone List
+          class that.ZoneList extends Backbone.Collection
+            model: that.Zone
+
+          # Sequence List
+          class that.SequenceList extends Backbone.Collection
+            model: that.Sequence
+
+
         #
         # ### Presentation Coordination
         #
@@ -425,132 +472,221 @@ SGAReader.namespace "Application", (Application) ->
             # Once the RDF/JSON is loaded from the url and parsed into
             # the manifestData triple store, we process it to pull out all
             # of the features we care about.
-            items = []
-            syncer = MITHgrid.initSynchronizer()
 
-            #
-            # We begin by pulling out all of the canvases defined in the
-            # manifest. We only care about their id, size, and label.
-            #
-            canvases = manifestData.getCanvases()
-            that.addItemsToProcess canvases.length
-            syncer.process canvases, (id) ->
-              that.addItemsProcessed 1
-              mitem = manifestData.getItem id
-              items.push
-                id: id
-                type: 'Canvas'
-                width: parseInt(mitem.exifwidth?[0], 10)
-                height: parseInt(mitem.exifheight?[0], 10)
-                label: mitem.dctitle || mitem.rdfslabel
+            if Backbone?
+              syncer = MITHgrid.initSynchronizer()
 
-            #
-            # We want to add any zones that might be in the manifest. These
-            # are like canvases, but with the addition of a rotation angle.
-            # ZoneAnnotations map zones onto canvases.
-            #
-            zones = manifestData.getZones()
-            that.addItemsToProcess zones.length
-            syncer.process zones, (id) ->
-              that.addItemsProcessed 1
-              zitem = manifestData.getItem id
-              items.push
-                id: id
-                type: 'Zone'
-                width: parseInt(mitem.exifwidth?[0], 10)
-                height: parseInt(mitem.exifheight?[0], 10)
-                angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
-                label: zitem.rdfslabel
+              #
+              # We begin by pulling out all of the canvases defined in the
+              # manifest.
+              #
+              canvases = manifestData.getCanvases()
+              that.addItemsToProcess canvases.length
+              
+              cl = new that.CanvasList()              
 
-            #
-            # We pull out all of the sequences in the manifest. MITHgrid
-            # stores a multi-valued property as an ordered list (JavaScript
-            # array), so we don't need all of the blank nodes that RDF uses.
-            #
-            # The primary or initial sequence is undefined if there are
-            # multiple sequences in the manifest.
-            #
-            seq = manifestData.getSequences()
-            that.addItemsToProcess seq.length
-            syncer.process seq, (id) ->
-              that.addItemsProcessed 1
-              sitem = manifestData.getItem id
-              item =
-                id: id
-                type: 'Sequence'
-                label: sitem.rdfslabel
+              syncer.process canvases, (id) ->
+                that.addItemsProcessed 1
+                mitem = manifestData.getItem id
 
-              seq = []
-              seq.push sitem.rdffirst[0]
-              sitem = manifestData.getItem sitem.rdfrest[0]
-              while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
+                item = new that.Canvas()
+                cl.add item
+
+                item.set
+                  id: id
+                  type: 'Canvas'
+                  width: parseInt(mitem.exifwidth?[0], 10)
+                  height: parseInt(mitem.exifheight?[0], 10)
+                  label: mitem.dctitle || mitem.rdfslabel
+
+              #
+              # We want to add any zones that might be in the manifest. These
+              # are like canvases, but with the addition of a rotation angle.
+              # ZoneAnnotations map zones onto canvases.
+              #
+              zones = manifestData.getZones()
+              that.addItemsToProcess zones.length
+
+              zl = new that.ZoneList()
+
+              syncer.process zones, (id) ->
+                that.addItemsProcessed 1
+                zitem = manifestData.getItem id
+
+                item = new that.Zone()
+                zl.add item
+
+                item.set
+                  id: id
+                  type: 'Zone'
+                  width: parseInt(mitem.exifwidth?[0], 10)
+                  height: parseInt(mitem.exifheight?[0], 10)
+                  angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                  label: zitem.rdfslabel
+
+              #
+              # We pull out all of the sequences in the manifest.
+              #
+              # The primary or initial sequence is undefined if there are
+              # multiple sequences in the manifest.
+              #
+              seq = manifestData.getSequences()
+              that.addItemsToProcess seq.length
+
+              sl = new that.SequenceList()
+
+              syncer.process seq, (id) ->
+                that.addItemsProcessed 1
+                sitem = manifestData.getItem id
+
+                item = new that.Sequence()
+                sl.add item
+
+                fields =
+                  id: id
+                  type: 'Sequence'
+                  label: sitem.rdfslabel
+
+                seq = []
                 seq.push sitem.rdffirst[0]
                 sitem = manifestData.getItem sitem.rdfrest[0]
-              item.sequence = seq
-              items.push item           
+                while sitem.id?
+                  seq.push sitem.rdffirst[0]
+                  sitem = manifestData.getItem sitem.rdfrest[0]
+                fields.sequence = seq
 
-            ranges = manifestData.getRanges()
-            that.addItemsToProcess ranges.length
-            syncer.process ranges, (id) ->
-              that.addItemsProcessed 1
-              ritem = manifestData.getItem id
-              item =
-                id: id
-                type: 'Range'
-                label: ritem.rdfslabel
+                item.set fields
 
-              contents = []
-              contents.push ritem.rdffirst[0]
-              ritem = manifestData.getItem ritem.rdfrest[0]
-              while ritem.id?
+              console.log sl              
+
+
+            else
+              items = []
+              syncer = MITHgrid.initSynchronizer()
+
+              #
+              # We begin by pulling out all of the canvases defined in the
+              # manifest. We only care about their id, size, and label.
+              #
+              canvases = manifestData.getCanvases()
+              that.addItemsToProcess canvases.length
+              syncer.process canvases, (id) ->
+                that.addItemsProcessed 1
+                mitem = manifestData.getItem id
+                items.push
+                  id: id
+                  type: 'Canvas'
+                  width: parseInt(mitem.exifwidth?[0], 10)
+                  height: parseInt(mitem.exifheight?[0], 10)
+                  label: mitem.dctitle || mitem.rdfslabel
+
+              #
+              # We want to add any zones that might be in the manifest. These
+              # are like canvases, but with the addition of a rotation angle.
+              # ZoneAnnotations map zones onto canvases.
+              #
+              zones = manifestData.getZones()
+              that.addItemsToProcess zones.length
+              syncer.process zones, (id) ->
+                that.addItemsProcessed 1
+                zitem = manifestData.getItem id
+                items.push
+                  id: id
+                  type: 'Zone'
+                  width: parseInt(mitem.exifwidth?[0], 10)
+                  height: parseInt(mitem.exifheight?[0], 10)
+                  angle: parseInt(mitem.scnaturalAngle?[0], 10) || 0
+                  label: zitem.rdfslabel
+
+              #
+              # We pull out all of the sequences in the manifest. MITHgrid
+              # stores a multi-valued property as an ordered list (JavaScript
+              # array), so we don't need all of the blank nodes that RDF uses.
+              #
+              # The primary or initial sequence is undefined if there are
+              # multiple sequences in the manifest.
+              #
+              seq = manifestData.getSequences()
+              that.addItemsToProcess seq.length
+              syncer.process seq, (id) ->
+                that.addItemsProcessed 1
+                sitem = manifestData.getItem id
+                item =
+                  id: id
+                  type: 'Sequence'
+                  label: sitem.rdfslabel
+
+                seq = []
+                seq.push sitem.rdffirst[0]
+                sitem = manifestData.getItem sitem.rdfrest[0]
+                while sitem.id? # manifestData.contains(sitem.rdfrest?[0])
+                  seq.push sitem.rdffirst[0]
+                  sitem = manifestData.getItem sitem.rdfrest[0]
+                item.sequence = seq
+                items.push item           
+
+              ranges = manifestData.getRanges()
+              that.addItemsToProcess ranges.length
+              syncer.process ranges, (id) ->
+                that.addItemsProcessed 1
+                ritem = manifestData.getItem id
+                item =
+                  id: id
+                  type: 'Range'
+                  label: ritem.rdfslabel
+
+                contents = []
                 contents.push ritem.rdffirst[0]
                 ritem = manifestData.getItem ritem.rdfrest[0]
-              item.canvases = contents
-              items.push item
+                while ritem.id?
+                  contents.push ritem.rdffirst[0]
+                  ritem = manifestData.getItem ritem.rdfrest[0]
+                item.canvases = contents
+                items.push item
 
-            layers = manifestData.getLayers()
-            that.addItemsToProcess layers.length
-            syncer.process layers, (id) ->
-              that.addItemsProcessed 1
-              ritem = manifestData.getItem id
-              item =
-                id: id
-                type: 'Layer'
-                label: ritem.rdfslabel
-                motivation: ritem.scforMotivation?[0]
+              layers = manifestData.getLayers()
+              that.addItemsToProcess layers.length
+              syncer.process layers, (id) ->
+                that.addItemsProcessed 1
+                ritem = manifestData.getItem id
+                item =
+                  id: id
+                  type: 'Layer'
+                  label: ritem.rdfslabel
+                  motivation: ritem.scforMotivation?[0]
 
-              contents = []
-              contents.push ritem.rdffirst[0]
-              ritem = manifestData.getItem ritem.rdfrest[0]
-              while ritem.id?
+                contents = []
                 contents.push ritem.rdffirst[0]
                 ritem = manifestData.getItem ritem.rdfrest[0]
+                while ritem.id?
+                  contents.push ritem.rdffirst[0]
+                  ritem = manifestData.getItem ritem.rdfrest[0]
 
-              if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or item.motivation == "http://www.shelleygodwinarchive.org/ns1#source"
-                annos = []
-                
-                for c in contents
-                  ritem = manifestData.getItem c                  
-                  a = manifestData.getItem ritem.rdffirst[0]
-                  annos.push a.id
+                if item.motivation == "http://www.shelleygodwinarchive.org/ns1#reading" or item.motivation == "http://www.shelleygodwinarchive.org/ns1#source"
+                  annos = []
+                  
+                  for c in contents
+                    ritem = manifestData.getItem c                  
+                    a = manifestData.getItem ritem.rdffirst[0]
+                    annos.push a.id
 
-                  aritem = manifestData.getItem a.id[0]
-                  aitem =
-                    id: aritem.id[0]
-                    type: 'LayerAnno'
-                    motivation: item.motivation
-                    body: aritem.oahasBody[0]
-                    canvas: a.oahasTarget[0]
+                    aritem = manifestData.getItem a.id[0]
+                    aitem =
+                      id: aritem.id[0]
+                      type: 'LayerAnno'
+                      motivation: item.motivation
+                      body: aritem.oahasBody[0]
+                      canvas: a.oahasTarget[0]
 
-                  items.push aitem
+                    items.push aitem
 
-                item.annotations = annos
+                  item.annotations = annos
 
-              item.canvases = contents
-              items.push item
+                item.canvases = contents
+                items.push item
 
-            syncer.done ->
-              that.dataStore.data.loadItems items
+              syncer.done ->
+                that.dataStore.data.loadItems items
 
         #
         # The following are convenience methods for extracting all of the metadata associated with different
