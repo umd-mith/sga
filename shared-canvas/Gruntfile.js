@@ -58,7 +58,9 @@ module.exports = function(grunt) {
               'bower_components/q/q.js',
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'lib/vendor/google-prettify.js',
-/*temporary!*/'lib/mithgrid.js'], 
+              'bower_components/underscore/underscore.js',
+              'bower_components/backbone/backbone-min.js',
+              'bower_components/mithgrid/dist/mithgrid.min.js'], 
         dest: 'demo/js/bower_components.js'
       }
     },
