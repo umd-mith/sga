@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         src: ['bower_components/modernizr/modernizr.js',
               'bower_components/jquery/jquery.min.js', 
               'lib/vendor/jquery-migrate-1.1.0.js',
-              'lib/vendor/jquery-ui.min.js', 
+              'bower_components/jquery-ui/ui/minified/jquery-ui.min.js', 
               'lib/vendor/jquery.ba-bbq.min.js',
               'bower_components/q/q.js',
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
