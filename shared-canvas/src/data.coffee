@@ -1,117 +1,60 @@
 # # Data Managment
 SGAReader.namespace "Data", (Data) ->
-
-  #
-  # ## Data.StyleStore
-  #
-
-  Data.namespace "StyleStore", (StyleStore) ->
-    StyleStore.initInstance = (args...) ->
-      MITHgrid.initInstance args..., (that) ->
-        options = that.options
-
-        docs = { }
-        regex = new RegExp("(?:\\.(\\S+)\\s*\\{\\s*([^}]*)\\s*\\})", "mg")
-
-        #
-        # Associates the CSS content with the given id.
-        #
-        that.addStyles = (id, css) ->
-          return if docs[id]?
-          docs[id] = { }
-          results = regex.exec(css)
-          while results?.index?
-            docs[id][results[1]] = results[2]
-            results = regex.exec(css)
-
-        #
-        # Returns the CSS style rules for a given class as defined by the
-        # CSS content associated with the given id.
-        #
-        that.getStylesForClass = (id, klass) ->
-          if docs[id]?[klass]?
-            docs[id][klass]
-          else
-            ""
-
-  #
-  # ## Data.TextStore
-  #
-  Data.namespace "TextStore", (TextStore) ->
-    TextStore.initInstance = (args...) ->
-      MITHgrid.initInstance args..., (that) ->
-        options = that.options
-
-        fileContents = { }
-        loadingFiles = { }
-        pendingFiles = { }
-
-        that.addFile = (files) ->
-          files = [ files ] unless $.isArray(files)
-          for file in files 
-            do (file) ->
-              if file? and !fileContents[file]? and !loadingFiles[file]?
-                loadingFiles[file] = [ ]
-                $.ajax
-                  url: file
-                  type: 'GET'
-                  processData: false
-                  #beforeSend: (jqXHR) ->
-                  #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
-                  success: (data) ->
-                    c = data.documentElement.textContent
-                    fileContents[file] = c
-                    f(c) for f in loadingFiles[file]
-                    delete loadingFiles[file]
-
-        that.withFile = (file, cb) ->
-          if fileContents[file]?
-            cb(fileContents[file])
-          else if loadingFiles[file]?
-            loadingFiles[file].push cb
-          else
-            that.addFile file
-            loadingFiles[file].push cb
-
+  
   #
   # ## Data.Manifest
   #
   Data.namespace "Manifest", (Manifest) ->
 
+    # 
+    # Here we define all the Backbone models and collections.
+    # They are instantiated and populated when importing JSONLD
     #
-    # We list all of the namespaces that we care about and the prefix
-    # we map them to. Some of the namespaces are easy "misspellings"
-    # that let us support older namespaces.
-    #
-    NS =
-      "http://dms.stanford.edu/ns/": "sc"
-      "http://www.shared-canvas.org/ns/": "sc"
-      "http://www.w3.org/2000/01/rdf-schema#": "rdfs"
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf"
-      "http://www.w3.org/2003/12/exif/ns#": "exif"
-      "http://purl.org/dc/elements/1.1/": "dc"
-      "http://www.w3.org/ns/openannotation/core/": "oa"
-      "http://www.openannotation.org/ns/": "oa"
-      "http://www.w3.org/ns/openannotation/extension/": "oax"
-      "http://www.openarchives.org/ore/terms/": "ore"
-      "http://www.shelleygodwinarchive.org/ns/1#": "sga"
-      "http://www.shelleygodwinarchive.org/ns1#": "sga"
-      "http://www.w3.org/2011/content#": "cnt"
-      "http://purl.org/dc/dcmitype/": "dctypes"
 
-    types =
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "item"
-      "http://www.w3.org/ns/openannotation/core/hasMotivation": "item"
+    ## MODELS ##
+    # idAttribute is used to map JSONLD @id to Backbone id
+
+    class Sequence extends Backbone.Model
+      idAttribute : "@id"
+
+    class Range extends Backbone.Model
+      idAttribute : "@id"
+
+    class Layer extends Backbone.Model
+      idAttribute : "@id"
+
+    class Zone extends Backbone.Model
+      idAttribute : "@id"
+
+    class Canvas extends Backbone.Model
+      idAttribute : "@id"
+
+    class Annotation extends Backbone.Model
+      idAttribute : "@id"
+
+    class LayerAnnotation extends Annotation
+      0
+
+    ## COLLECTIONS ##
+
+    class Sequences extends Backbone.Collection
+      model: Sequence
+
+    class Ranges extends Backbone.Collection
+      model: Range
+
+    class Layers extends Backbone.Collection
+      model: Layer
+
+    class Zones extends Backbone.Collection
+      model: Zone
+
+    class Canvases extends Backbone.Collection
+      model: Canvas
 
     Manifest.initInstance = (args...) ->
       MITHgrid.initInstance "SGA.Reader.Data.Manifest", args..., (that) ->
         options = that.options
-
-        data = MITHgrid.Data.Store.initInstance()
-
-        that.size = -> data.size()
-        
-        importer = MITHgrid.Data.Importer.RDF_JSON.initInstance data, NS, types
 
         loadedUrls = []
 
@@ -125,101 +68,95 @@ SGAReader.namespace "Data", (Data) ->
           $.ajax
             url: url
             type: 'GET'
-            contentType: 'application/rdf+json'
+            contentType: 'application/json'
             processData: false
             dataType: 'json'
             #beforeSend: (jqXHR) ->
             #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
             success: (data) ->
-              that.addItemsProcessed 1
               that.importJSON data, cb
             error: (e) -> 
-              that.addItemsProcessed 1
               throw new Error("Could not load the manifest")
 
-        # we want to get the rdf/JSON version of things if we can
+
+        # Expose properties and methods
+
         that.importJSON = (json, cb) ->
           # we care about certain namespaces - others we ignore
-          # those we care about, we translate for datastore
+          # those we care about, we store as Backbone collections 
           # {nsPrefix}{localName}
-          syncer = MITHgrid.initSynchronizer cb
-          syncer.increment()
-          importer.import json, (ids) ->
-            #
-            # If the manifest indicates that another document describes
-            # this resource, then we load the data before continuing
-            # processing for this resource.
-            #
- 
-            # we want anything that has the oreisDescribedBy property
-            idset = MITHgrid.Data.Set.initInstance ids
-            urls = data.getObjectsUnion(idset, 'oreisDescribedBy')
-            
-            urls.visit (url) ->
-              syncer.increment()
-              importFromURL url, syncer.decrement
-            syncer.decrement()
-          syncer.done()
 
-        itemsWithType = (type) ->
-          type = [ type ] if !$.isArray(type)
-          types = MITHgrid.Data.Set.initInstance type
-          data.getSubjectsUnion(types, "type").items()
+          graph = json["@graph"]
 
-        itemsForCanvas = (canvas) ->
-          # Given a canvas, find the TEI XML URL
-          canvas = [ canvas ] if !$.isArray(canvas)
-          canvasSet = MITHgrid.Data.Set.initInstance(canvas)
-          specificResources = data.getSubjectsUnion(canvasSet, "oahasSource")
-          imageAnnotations = data.getSubjectsUnion(canvasSet, "oahasTarget")            
-          contentAnnotations = data.getSubjectsUnion(specificResources, "oahasTarget")
-          tei = data.getObjectsUnion(contentAnnotations, 'oahasBody')
-          teiURL = data.getObjectsUnion(tei, 'oahasSource')
+          # Initialize Collections
+          collections = 
+            sequences : new Sequences()
+            ranges : new Ranges()
+            layers : new Layers()
+            zones : new Zones()
+            canvases : new Canvases()
 
-          # Now find all annotations targeting that XML URL
-          specificResourcesAnnos = data.getSubjectsUnion(teiURL, 'oahasSource')
-          annos = data.getSubjectsUnion(specificResourcesAnnos, 'oahasTarget').items()
+          # This is temporary until the JSONLD is better organized
+          id_graph = {}
 
-          # Append other annotations collected so far and return
-          return annos.concat imageAnnotations.items(), contentAnnotations.items()
+          for node in graph
+            if node["@id"]?
+              id_graph[node["@id"]] = node
 
-        flushSearchResults = ->
-          types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
-          searchResults = data.getSubjectsUnion(types, "type").items()
-          data.removeItems searchResults
+          for id, node of id_graph
 
-        getSearchResultCanvases = ->
-          types = MITHgrid.Data.Set.initInstance ['sgaSearchAnnotation']
-          searchResults = data.getSubjectsUnion(types, "type")
-          specificResources = data.getObjectsUnion(searchResults, "oahasTarget") 
-          teiURL = data.getObjectsUnion(specificResources, 'oahasSource')
+            # Organize nodes by type
+            if node["@type"]? 
+              types = node["@type"]
+              types = [ types ] if !$.isArray(types)
+              
+              # Get and store data
+              if "sc:Sequence" in types
+                sequence = new Sequence()
+                collections.sequences.add sequence
 
-          sources = data.getSubjectsUnion(teiURL, 'oahasSource')
+                canvases = [node["first"]]
+
+                next_node = node
+                while next_node?
+                  rest = next_node["rdf:rest"]
+                  rest = [ rest ] if !$.isArray(rest)
+                  next = rest[0]["@id"]
+                  next_node = id_graph[next]
+                  if next_node?
+                    canvases.push next_node["first"]
+
+                sequence.set 
+                  "@id"      : node["@id"]
+                  "@type"    : node["@type"]
+                  "label"    : node["label"]
+                  "canvases" : canvases
+
+              else if "sc:Range" in types
+                range = new Range()
+                collections.ranges.add range
+
+                ranges.set node
+
+              else if "sc:Layer" in types
+                layer = new Layer()
+                collections.layers.add layer
+
+                layer.set node
+
+              else if "sc:Zone" in types
+                zone = new Zone()
+                collections.zones.add zone
+
+                zone.set node
+
+              else if "sc:Canvas" in types
+                canvas = new Canvas()
+                collections.canvases.add canvas
+
+                canvas.set node
           
-          annos = data.getSubjectsUnion(sources, 'oahasBody')
-          step = data.getObjectsUnion(annos, 'oahasTarget')
-          canvasKeys = data.getObjectsUnion(step, 'oahasSource')
-
-          return $.unique(canvasKeys.items())
-
-
-        #
-        # Get things of different types. For example, "scCanvas" gets
-        # all of the canvas items.
-        #
-        that.getCanvases    = -> itemsWithType 'scCanvas'
-        that.getZones       = -> itemsWithType 'scZone'
-        that.getSequences   = -> itemsWithType 'scSequence'
-        that.getAnnotations = -> itemsWithType 'oaAnnotation'
-        that.getRanges      = -> itemsWithType 'scRange'
-        that.getLayers      = -> itemsWithType 'scLayer'
-        that.getManifests   = -> itemsWithType 'scManifest'
-        that.getAnnotationsForCanvas = itemsForCanvas
-        that.flushSearchResults = flushSearchResults
-        that.getSearchResultCanvases = getSearchResultCanvases
-
-        that.getItem = data.getItem
-        that.contains = data.contains
+          console.log collections
 
         that.importFromURL = (url, cb) ->
           importFromURL url, ->
