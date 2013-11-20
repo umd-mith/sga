@@ -20,14 +20,7 @@
 # limitations under the License.
 ###
 
-(($, MITHgrid) ->
-  #
-  # The application uses the SGA.Reader namespace.
-  #
-  # N.B.: This may change as we move towards a general component
-  # repository for MITHgrid. At that point, we'll refactor out the
-  # general purpose components and keep the SGA namespace for code
-  # specific to the SGA project.
-  #
-  MITHgrid.globalNamespace "SGA"
-  SGA.namespace "Reader", (SGAReader) ->
+# root is a reference to the global object (window)
+root = this
+
+root.SGASharedCanvas = root.SGASharedCanvas or {}
