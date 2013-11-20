@@ -8,7 +8,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');  
   grunt.loadNpmTasks('grunt-bower-task');
@@ -29,23 +28,6 @@ module.exports = function(grunt) {
     },
 
     concat: {
-      coffee: {
-        options: {
-          process: function (src) {
-            src = grunt.util.normalizelf(src);
-            return src.split(grunt.util.linefeed).map(function (line) {
-                return '    ' + line;
-            }).join(grunt.util.linefeed);
-          }
-        },
-        src: ['src/presentation.coffee',
-              'src/data.coffee',
-              'src/component.coffee',
-              'src/controller.coffee',
-              'src/core.coffee',
-              'src/application.coffee'],
-        dest: 'src/sc_middle_tmp.coffee'
-      },
       bower_js: {
         options: {
           separator: ';'
@@ -59,14 +41,9 @@ module.exports = function(grunt) {
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'lib/vendor/google-prettify.js',
               'bower_components/underscore/underscore.js',
-              'bower_components/backbone/backbone-min.js',
-              'bower_components/mithgrid/dist/mithgrid.min.js'], 
+              'bower_components/backbone/backbone-min.js'], 
         dest: 'demo/js/bower_components.js'
       }
-    },
-
-    clean: {
-      coffee: ['src/sc_middle_tmp.coffee']
     },
 
     coffee: {
@@ -76,8 +53,11 @@ module.exports = function(grunt) {
         },
         files: { 
           'dist/<%= pkg.name %>.js': ['src/intro.coffee', 
-                                      'src/sc_middle_tmp.coffee',
-                                      'src/outro.coffee']
+                                      'src/data.coffee',
+                                      'src/application.coffee',
+                                      'src/view.coffee',
+                                      'src/router.coffee',
+                                      'src/component.coffee']
         }
       }
     },
@@ -101,7 +81,7 @@ module.exports = function(grunt) {
       scripts: {
         files: 'src/*.coffee',
         // Not uglifying, since watch is supposed to be used for development
-        tasks: ['concat:bower_js', 'concat:coffee', 'coffee', 'clean:coffee', 'less'], 
+        tasks: ['concat:bower_js', 'coffee', 'less'], 
         options: {
           livereload: true
         }
@@ -124,7 +104,7 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['concat:bower_js', 'concat:coffee', 'coffee', 'clean:coffee', 'uglify', 'less']);
+  grunt.registerTask('default', ['concat:bower_js', 'coffee', 'uglify', 'less']);
   grunt.registerTask('run', ['connect', 'watch']);
   grunt.registerTask('install', ['install-dependencies', 'bower', 'copy:install']);
 }
