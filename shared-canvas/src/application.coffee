@@ -3,7 +3,7 @@
 
 SGASharedCanvas.Application = SGASharedCanvas.Application or {}
 
-( () ->
+( ->
 
   SGASharedCanvas.Application.start = (config={}) ->
 
