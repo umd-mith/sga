@@ -19,15 +19,12 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     idAttribute : "@id"
 
   class Zone extends Backbone.Model
-    idAttribute : "@id"
-
-  class Canvas extends Backbone.Model
-    idAttribute : "@id"
+    idAttribute : "@id"  
 
   class Annotation extends Backbone.Model
     idAttribute : "@id"
 
-  class LayerAnnotation extends Annotation
+  class CanvasAnnotation extends Annotation
     0
 
   ## COLLECTIONS ##
@@ -50,20 +47,37 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
   class Canvases extends Backbone.Collection
     model: Canvas
 
+  class CanvasAnnos extends Backbone.Collection
+    model: CanvasAnnotation
+
+  ## NESTED MODELS
+
   # # MANIFEST MODEL
   # Each Manifest model groups other collections.
 
   class Manifest extends Backbone.Model
     idAttribute : "url"
-    defaults:
-      "sequences" : new Sequences()
-      "ranges"    : new Ranges()
-      "layers"    : new Layers()
-      "zones"     : new Zones()
-      "canvases"  : new Canvases()
+    # Using initialize instead of defaults for nested collections
+    # is recommended by the Backbone FAQs:
+    # http://documentcloud.github.io/backbone/#FAQ-nested
+    initialize : () ->
+      @sequences = new Sequences
+      @ranges = new Ranges
+      @layers = new Layers
+      @zones = new Zones
+      @canvases = new Canvases
+
+  # # CANVAS MODEL
+  # Each Canvas model groups its own annotations,
+  # which are populated when a canvas is visited
+
+  class Canvas extends Backbone.Model
+    idAttribute : "@id"
+    initialize: () ->
+      @annotations = new CanvasAnnos
 
   # Start a general manifest collection
-  manifests = new Manifests()
+  manifests = new Manifests
 
 
   ## Code for importing from one JSONLD file
@@ -81,7 +95,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       success: (data) ->
         importJSONLD data, manifest
       error: (e) -> 
-        throw new Error("Could not load the manifest")
+        throw new Error "Could not load the manifest"
 
   importJSONLD = (jsonld, manifest) ->
 
@@ -101,19 +115,19 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       # Organize nodes by type
       if node["@type"]? 
         types = node["@type"]
-        types = [ types ] if !$.isArray(types)
+        types = [ types ] if !$.isArray types
         
         # Get and store data
         if "sc:Sequence" in types
-          sequence = new Sequence()
-          manifest.get("sequences").add sequence
+          sequence = new Sequence
+          manifest.sequences.add sequence
 
           canvases = [node["first"]]
 
           next_node = node
           while next_node?
             rest = next_node["rdf:rest"]
-            rest = [ rest ] if !$.isArray(rest)
+            rest = [ rest ] if !$.isArray rest
             next = rest[0]["@id"]
             next_node = id_graph[next]
             canvases.push next_node["first"] if next_node?
@@ -125,32 +139,30 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             "canvases" : canvases
 
         else if "sc:Range" in types
-          range = new Range()
-          manifest.get("ranges").add range
+          range = new Range
+          manifest.ranges.add range
 
           ranges.set node
 
         else if "sc:Layer" in types
-          layer = new Layer()
-          manifest.get("layers").add layer
+          layer = new Layer
+          manifest.layers.add layer
 
           layer.set node
 
         else if "sc:Zone" in types
-          zone = new Zone()
-          manifest.get("zones").add zone
+          zone = new Zone
+          manifest.zones.add zone
 
           zone.set node
 
         else if "sc:Canvas" in types
-          canvas = new Canvas()
-          manifest.get("canvases").add canvas
+          canvas = new Canvas
+          manifest.canvases.add canvas
 
           canvas.set node
 
     manifest.trigger("sync")
-
-    # SGASharedCanvas.Data = collections
 
     #console.log manifest
 
@@ -158,7 +170,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     if url?
       manifest = manifests.get(url)
       if !manifest?
-        manifest = new Manifest()
+        manifest = new Manifest
         manifest.set 
           url: url
         manifests.add manifest   
@@ -167,50 +179,81 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       else
         manifest
     else
-      # Throw exception
-      0
+      throw new Error "Could not load the manifest"
 
   SGASharedCanvas.Data.importCanvasData = (n) ->
-    #
-    # For now, we assume that there is only one manifest 
-    #
-    manifests.once "add", ->
-      manifest = this.first()   
 
-      manifest.once "sync", ->
-        # Now get everything for n
-        graph = manifest.get("raw_graph")
+    # Get everything for n
+    getCanvasAnnos = () ->
+      graph = manifest.get "raw_graph"
 
-        canvases = manifest.get("sequences").first().get("canvases")
+      canvases = manifest.sequences.first().get "canvases"
 
-        n = canvases.length if n > canvases.length
+      n = canvases.length if n > canvases.length
 
-        canvas = canvases[n-1]
+      canvas_id = canvases[n-1]
 
-        #canvasObj = manifest.get("canvases").get(canvas)
+      # Locate current canvas Backbone object
+      canvas =  manifest.canvases.get canvas_id
 
-        #console.log canvasObj
+      # Only load annotations the first time
+      if canvas.annotations.length <= 0
+
+        resource = null
 
         for id, node of graph
 
-          if node["sc:forMotivation"]?
-            if node["sc:forMotivation"]["@id"] == "sga:source"
+          if node["sc:forMotivation"]?["@id"] == "sga:source"
 
               next_node = node
               while next_node?
-                if graph[graph[next_node["first"]]["first"]]["on"] == canvas
-                  console.log graph[graph[next_node["first"]]["first"]]
+                if graph[graph[next_node["first"]]["first"]]["on"] == canvas_id
+                  resource = graph[graph[next_node["first"]]["first"]]["resource"]
                   break
                 rest = next_node["rdf:rest"]
                 rest = [ rest ] if !$.isArray(rest)
                 next = rest[0]["@id"]
                 next_node = graph[next]
 
-          # if node["@type"]? 
-          #   types = node["@type"]
-          #   types = [ types ] if !$.isArray(types)
+              break
 
-          #   if "oa:Annotation" in types and node["on"] == canvas
-          #     console.log node["resource"], node["@id"]
+        # Finally get all the canvas annotations
+        for id, node of graph
 
+          if node["on"]?
+
+            target = graph[node["on"]]
+
+            if target["full"]? and target["full"] == resource
+
+              # Create new CanvasAnnotation
+              canvasAnnotation = new CanvasAnnotation
+              canvas.annotations.add canvasAnnotation
+
+              # Resolve resources and selectors
+              copy_node = node
+
+              selector = graph[target["selector"]]
+              target["selector"] = 
+                start : selector["beginOffset"]
+                end : selector["endOffset"]
+              copy_node["on"] = target["full"]
+              copy_node["selector"] = target["selector"]
+              canvasAnnotation.set copy_node
+
+      console.log manifest    
+
+    # If the manifest has already be loaded, go ahead and load the canvas
+    # otherwise, wait and listen.
+    #
+    # **N.B. For now, we assume that there is only one manifest**
+    #
+    manifest = manifests.first()
+    if manifest?
+      getCanvasAnnos() 
+    else
+      manifests.once "add", ->        
+        manifest = this.first()
+        manifest.once "sync", ->
+          getCanvasAnnos() 
 )()
