@@ -18,7 +18,7 @@ SGASharedCanvas.Application = SGASharedCanvas.Application or {}
     # made into shared canvas viewers.
     # Manifests with the same URL will only be loaded once.
     #
-    config.class ?= ".canvas"
+    config.class ?= ".sharedcanvas"
     $(config.class).each (idx, el) -> addView el
   
 )()
