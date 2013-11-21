@@ -3,7 +3,7 @@
 
 SGASharedCanvas.Router = SGASharedCanvas.Router or {}
 
-( () ->
+( ->
 
   #
   # For now, the routers assume that there is only one Manifest
@@ -14,7 +14,7 @@ SGASharedCanvas.Router = SGASharedCanvas.Router or {}
       "" : "page"
       "page/:n" : "page"
 
-  SGASharedCanvas.Router.Pagination = new Pagination()
+  SGASharedCanvas.Router.Pagination = new Pagination
 
   SGASharedCanvas.Router.Pagination.on 'route:page', (n) ->    
     n = 1 if !n? or n<1
