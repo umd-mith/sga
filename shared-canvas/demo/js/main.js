@@ -1,6 +1,6 @@
 (function ($) { 
   'use strict';
 
-  SGASharedCanvas.Application.start();
+  var sc = new SGASharedCanvas.Application();
 
 })(jQuery);
