@@ -23,25 +23,30 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 	  # already present in the HTML.
 	  el: '#SGASharedCanvasViewer'
 
-	  initialize: ->
-	    @listenToOnce @model.canvases, 'add', @renderCanvas
+	  # initialize: ->
+	  #   @listenToOnce @model.canvases, 'add', @renderCanvas
 
 
-	  renderCanvas: ->
-	  	canvasView = new CanvasesView collection : @model.canvases
+	  # renderCanvas: ->
+	  # 	canvasView = new CanvasesView collection : @model.canvases
 
-	  render: ->
-	    @
+	  # render: ->
+	  #   @
 
-	  remove: ->
-	    @$el.remove()
-	    @
+	  # remove: ->
+	  #   @$el.remove()
+	  #   @
 
 	# Canvas view
 	class CanvasView extends Backbone.View
 
 	  initialize: ->
-      console.log @model
+      @render()
+
+    # el: if @options.dataTypes? then '.sharedcanvas[data-types=#{@options.dataTypes}]' else '#sharedcanvas'
+
+    render: ->
+      console.log 'h'
 
     # render: (dest) ->
     #   @target = dest
@@ -55,10 +60,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     # clear: ->
     #   @collection.each (m) -> m.trigger('destroy')
   
-  SGASharedCanvas.View.ClearCanvases = ->
+  SGASharedCanvas.View.clearCanvases = ->
     0
 
-  SGASharedCanvas.View.ShowCanvas = (canvas) ->
+  SGASharedCanvas.View.showCanvas = (canvas) ->
     canvasView = new CanvasView model: canvas
 
 )()

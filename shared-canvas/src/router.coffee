@@ -5,8 +5,6 @@ SGASharedCanvas.Router = SGASharedCanvas.Router or {}
 
 ( ->
 
-  manifests = SGASharedCanvas.Data.Manifests
-
   #
   # For now, the routers assume that there is only one Manifest
   #
@@ -21,18 +19,10 @@ SGASharedCanvas.Router = SGASharedCanvas.Router or {}
   SGASharedCanvas.Router.Pagination.on 'route:page', (n) ->    
     n = 1 if !n? or n<1
 
-    # destroy current canvas view, if any
-    SGASharedCanvas.View.ClearCanvases()
+    SGASharedCanvas.View.clearCanvases()
 
-    manifest = manifests.first()
-    if manifest?
-      canvas = SGASharedCanvas.Data.getCanvasFor 'first', n
-      canvasView = SGASharedCanvas.View.ShowCanvas canvas
-    else 
-      manifests.once "add", ->        
-        manifest = this.first()
-        manifest.once "sync", ->
-          canvas = SGASharedCanvas.Data.getCanvasFor 'first', n
-          SGASharedCanvas.Data.importCanvasData canvas
-          canvasView = SGASharedCanvas.View.ShowCanvas canvas
+    SGASharedCanvas.Data.importCanvasData n, (canvas) ->
+      SGASharedCanvas.View.showCanvas canvas
+
+
 )()
