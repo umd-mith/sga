@@ -117,8 +117,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       @SGAannos  = new Annotations
       @textItems = new ParsedAnnos
 
-  # Start a general manifest collection
-  manifests = new Manifests
+  # Start a global manifest collection
+  SGASharedCanvas.Data.Manifests = manifests = new Manifests
 
   ## Code for importing from one JSONLD file
 
@@ -194,8 +194,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
     manifest.trigger("sync")
 
-    #console.log manifest
-
   SGASharedCanvas.Data.importFullJSONLD = (url) ->
     if url?
       manifest = manifests.get(url)
@@ -211,7 +209,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     else
       throw new Error "Could not load the manifest"
 
-  SGASharedCanvas.Data.importCanvasData = (n) ->
+  SGASharedCanvas.Data.importCanvasData = (canvas) ->
 
     makeArray = (item) ->
       if !$.isArray item then [ item ] else item
@@ -267,237 +265,231 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         source : body["full"]
       extractSpatialConstraint model, body["selector"]
 
-    # Get everything for n
-    getCanvasAnnos = ->      
-
-      canvases = manifest.sequences.first().get "canvases"
-
-      n = canvases.length if n > canvases.length
-
-      canvas_id = canvases[n-1]
-
-      # Locate current canvas Backbone object
-      canvas =  manifest.canvases.get canvas_id
-
-      # Only load annotations the first time
-      if canvas.contents.length <= 0
-
-        for id, node of graph
-
-          if node["@type"]? 
-            types = makeArray node["@type"]
-
-            target = node["on"]
-            body = node["resource"]
-
-            # Get content annotations
-            if "sc:ContentAnnotation" in types and graph[target]["full"] == canvas_id
-              content = new Content
-              canvas.contents.add content
-
-              extractTextTarget content, target
-              extractTextBody content, body
-
-            # Get zones - *N.B. there are no zones in SGA*
-            else if "sc:ZoneAnnotation" in types and graph[target]["full"] == canvas_id
-              zone = new Zone
-              canvas.zones.add zone
-
-              extractSpatialConstraint zone, target
-              zone.set node
-
-            # Get images
-            else if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
-              image = new Image
-              canvas.images.add image
-              image.set graph[node["resource"]]
-
-            # Get everything else (including project-specific annotations!) for this canvas
-            # Could this be moved into its own project-specific module at some point?
-            else 
-              sgaTypes = (f.substr(4) for f in types when f.substr(0,4) == "sga:" and f.substr(f.length-10) == "Annotation")
-              if sgaTypes.length > 0
-                sources = []
-                canvas.contents.forEach (c,i) ->
-                  s = c.get("source")
-                  if s? and s not in sources
-                    sources.push s
-                
-                # filter annotations and store only those relevant to the current canvas
-                if graph[target]["full"] in sources
-                  annotation = new Annotation
-                  canvas.SGAannos.add annotation
-
-                  extractTextTarget annotation, target
-                  annotation.set 
-                    "@id"   : node["@id"]
-                    "@type" : node["@type"]
-
-        # Now deal with highlights.
-        # Each addition, deletion, etc., targets a scContentAnnotation
-        # but we want to make sure we get any scContentAnnotation text
-        # that isn't covered by any of the other annotations
-
-        # This is inspired by NROFF as implemented, for example, in
-        # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
-        # It also has shades of a SAX processor thrown in.
-
-        items = []
-        modstart = {}
-        modend = {}
-        modInfo = {}
-        setMod = (item) ->
-          indent = item.get "indent"
-          align = item.get "align"
-          source = item.get "target"
-          start = item.get "beginOffset"
-          end = item.get "endOffset"
-          id = item.get "id"
-          modInfo[id] = item
-          modstart[source] ?= {}
-          modstart[source][start] ?= []
-          modstart[source][start].push id
-          modend[source] ?= {}
-          modend[source][end] ?= []
-          modend[source][end].push id
-
-        canvas.SGAannos.forEach (anno, i) ->
-          setMod anno
-
-        sources = (s for s of modstart)
-        loadedSources = manifest.textFiles
-
-        for source in sources
-          do (source) ->
-
-          # Store once the annotated text resource (TEI in SGA)
-          loaded = loadedSources.where({target : target}).length > 0
-
-          if not loaded
-            s = new TextFile
-            loadedSources.add s
-            s.set 
-             target : source
-            s.fetch()
-
-            s.once 'sync', ->
-
-              text = s.get("data")
-
-              # Split annotations according to their start/end offsets to avoid overlap
-              modIds = []
-              br_pushed = false
-
-              pushTextItem = (classes, css, target, start, end, indent=null, aling=null) ->
-                titem = new ParsedAnno
-                titem.set 
-                  type: classes
-                  css: css.join(" ")
-                  text: text[start ... end]
-                  id: source + "-" + start + "-" + end
-                  target: target
-                  start: start
-                  end: end
-                if indent? then titem.set {indent : indent}
-                if align? then titem.set {align : align}
-                canvas.textItems.add titem                   
-              
-              processNode = (start, end) ->
-                classes = []
-                css = []
-                for id in modIds
-                  classes.push modInfo[id].get "@type"
-                  cssClass = modInfo[id].get "cssclass"
-                  if cssClass? then classes.push cssClass
-                  annocss = modInfo[id].get "css"
-                  if $.isArray(annocss)
-                    css.push annocss.join(" ")
-                  else
-                    css.push annocss
-
-                classes.push "Text" if classes.length == 0
-
-                makeTextItems start, end, classes, css
-
-              #
-              # We run through each possible shared canvas
-              # target that might be mapped onto the source TEI
-              # via the TextContent annotation. We want to target
-              # the shared canvas text content zone, not the
-              # text source that the highlight is targeting in the
-              # actual open annotation model.
-              #
-              makeTextItems = (start, end, classes, css, indent, align) ->
-                sources = {}
-                canvas.contents.forEach (c,i) ->
-                  s = c.get("source")
-                  if s? and s not in sources
-                    sources[s] = c
-                
-                for k, candidate of sources
-                  beginOffset = candidate.get "beginOffset"
-                  endOffset = candidate.get "endOffset"
-                  # Pushes the text item only if its outside of contentAnnos
-                  if start <= endOffset and end >= beginOffset
-                    st = Math.min(Math.max(start, beginOffset),endOffset)
-                    en = Math.max(Math.min(end, endOffset), beginOffset)
-                    pushTextItem classes, css, candidate.get("source"), st, en, indent, align
-                false
-
-              #
-              # A line break is just a zero-width annotation at
-              # the given position.
-              #
-              makeLinebreak = (pos, indent, align) ->
-                classes = [ "LineBreak" ]
-                #classes.push modInfo[id].type for id in modIds
-                makeTextItems pos, pos, classes, [ "" ], indent, align
-
-              #
-              mstarts = modstart[source] || []
-              mends = modend[source] || []
-              last_pos = 0
-              positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
-              for pos in positions
-                if pos != last_pos
-                  processNode last_pos, pos
-                  if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
-                    br_pushed = false
-                  needs_br = false
-                  for id in (mstarts[pos] || [])
-                    if "sga:LineAnnotation" in modInfo[id].get "@type"
-                      needs_br = true
-                    modIds.push id
-                  for id in (mends[pos] || [])
-                    if "sga:LineAnnotation" in modInfo[id].get "@type"
-                      needs_br = true
-                    idx = modIds.indexOf id
-                    modIds.splice idx, 1 if idx > -1
-                  if needs_br and not br_pushed
-                    indent = null
-                    align = null
-                    if modInfo[id].indent? then indent = modInfo[id].get "indent"
-                    if modInfo[id].align? then align = modInfo[id].get "align"
-                    makeLinebreak pos, indent, align
-                    br_pushed = true
-                  last_pos = pos
-              processNode last_pos, text.length
-
-      console.log manifest
-
-    # If the manifest has already been loaded, go ahead and load the canvas
-    # otherwise, wait and listen.
     #
-    # **N.B. For now, we assume that there is only one manifest**
+    # Get annotations for canvas
     #
     manifest = manifests.first()
-    if manifest?
-      graph = manifest.get "raw_graph"
-      getCanvasAnnos() 
-    else
-      manifests.once "add", ->        
-        manifest = this.first()
-        manifest.once "sync", ->
-          graph = manifest.get "raw_graph"
-          getCanvasAnnos() 
+    graph = manifest.get "graph"
+
+    canvas_id = canvas.get "id"
+
+    # Only load annotations the first time (this may be redundant)
+    if canvas.contents.length <= 0
+
+      for id, node of graph
+
+        if node["@type"]? 
+          types = makeArray node["@type"]
+
+          target = node["on"]
+          body = node["resource"]
+
+          # Get content annotations
+          if "sc:ContentAnnotation" in types and graph[target]["full"] == canvas_id
+            content = new Content
+            canvas.contents.add content
+
+            extractTextTarget content, target
+            extractTextBody content, body
+
+          # Get zones - *N.B. there are no zones in SGA*
+          else if "sc:ZoneAnnotation" in types and graph[target]["full"] == canvas_id
+            zone = new Zone
+            canvas.zones.add zone
+
+            extractSpatialConstraint zone, target
+            zone.set node
+
+          # Get images
+          else if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
+            image = new Image
+            canvas.images.add image
+            image.set graph[node["resource"]]
+
+          # Get everything else (including project-specific annotations!) for this canvas
+          # Could this be moved into its own project-specific module at some point?
+          else 
+            sgaTypes = (f.substr(4) for f in types when f.substr(0,4) == "sga:" and f.substr(f.length-10) == "Annotation")
+            if sgaTypes.length > 0
+              sources = []
+              canvas.contents.forEach (c,i) ->
+                s = c.get("source")
+                if s? and s not in sources
+                  sources.push s
+              
+              # filter annotations and store only those relevant to the current canvas
+              if graph[target]["full"] in sources
+                annotation = new Annotation
+                canvas.SGAannos.add annotation
+
+                extractTextTarget annotation, target
+                annotation.set 
+                  "@id"   : node["@id"]
+                  "@type" : node["@type"]
+
+      # Now deal with highlights.
+      # Each addition, deletion, etc., targets a scContentAnnotation
+      # but we want to make sure we get any scContentAnnotation text
+      # that isn't covered by any of the other annotations
+
+      # This is inspired by NROFF as implemented, for example, in
+      # [the Discworld mud.](https://github.com/Yuffster/discworld_distribution_mudlib/blob/master/obj/handlers/nroff.c)
+      # It also has shades of a SAX processor thrown in.
+
+      items = []
+      modstart = {}
+      modend = {}
+      modInfo = {}
+      setMod = (item) ->
+        indent = item.get "indent"
+        align = item.get "align"
+        source = item.get "target"
+        start = item.get "beginOffset"
+        end = item.get "endOffset"
+        id = item.get "id"
+        modInfo[id] = item
+        modstart[source] ?= {}
+        modstart[source][start] ?= []
+        modstart[source][start].push id
+        modend[source] ?= {}
+        modend[source][end] ?= []
+        modend[source][end].push id
+
+      canvas.SGAannos.forEach (anno, i) ->
+        setMod anno
+
+      sources = (s for s of modstart)
+      loadedSources = manifest.textFiles
+
+      for source in sources
+        do (source) ->
+
+        # Store once the annotated text resource (TEI in SGA)
+        loaded = loadedSources.where({target : target}).length > 0
+
+        if not loaded
+          s = new TextFile
+          loadedSources.add s
+          s.set 
+           target : source
+          s.fetch()
+
+          s.once 'sync', ->
+
+            text = s.get("data")
+
+            # Split annotations according to their start/end offsets to avoid overlap
+            modIds = []
+            br_pushed = false
+
+            pushTextItem = (classes, css, target, start, end, indent=null, aling=null) ->
+              titem = new ParsedAnno
+              titem.set 
+                type: classes
+                css: css.join(" ")
+                text: text[start ... end]
+                id: source + "-" + start + "-" + end
+                target: target
+                start: start
+                end: end
+              if indent? then titem.set {indent : indent}
+              if align? then titem.set {align : align}
+              canvas.textItems.add titem                   
+            
+            processNode = (start, end) ->
+              classes = []
+              css = []
+              for id in modIds
+                classes.push modInfo[id].get "@type"
+                cssClass = modInfo[id].get "cssclass"
+                if cssClass? then classes.push cssClass
+                annocss = modInfo[id].get "css"
+                if $.isArray(annocss)
+                  css.push annocss.join(" ")
+                else
+                  css.push annocss
+
+              classes.push "Text" if classes.length == 0
+
+              makeTextItems start, end, classes, css
+
+            #
+            # We run through each possible shared canvas
+            # target that might be mapped onto the source TEI
+            # via the TextContent annotation. We want to target
+            # the shared canvas text content zone, not the
+            # text source that the highlight is targeting in the
+            # actual open annotation model.
+            #
+            makeTextItems = (start, end, classes, css, indent, align) ->
+              sources = {}
+              canvas.contents.forEach (c,i) ->
+                s = c.get("source")
+                if s? and s not in sources
+                  sources[s] = c
+              
+              for k, candidate of sources
+                beginOffset = candidate.get "beginOffset"
+                endOffset = candidate.get "endOffset"
+                # Pushes the text item only if its outside of contentAnnos
+                if start <= endOffset and end >= beginOffset
+                  st = Math.min(Math.max(start, beginOffset),endOffset)
+                  en = Math.max(Math.min(end, endOffset), beginOffset)
+                  pushTextItem classes, css, candidate.get("source"), st, en, indent, align
+              false
+
+            #
+            # A line break is just a zero-width annotation at
+            # the given position.
+            #
+            makeLinebreak = (pos, indent, align) ->
+              classes = [ "LineBreak" ]
+              #classes.push modInfo[id].type for id in modIds
+              makeTextItems pos, pos, classes, [ "" ], indent, align
+
+            #
+            mstarts = modstart[source] || []
+            mends = modend[source] || []
+            last_pos = 0
+            positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
+            for pos in positions
+              if pos != last_pos
+                processNode last_pos, pos
+                if br_pushed and !text.substr(last_pos, pos - last_pos).match(/^\s*$/)
+                  br_pushed = false
+                needs_br = false
+                for id in (mstarts[pos] || [])
+                  if "sga:LineAnnotation" in modInfo[id].get "@type"
+                    needs_br = true
+                  modIds.push id
+                for id in (mends[pos] || [])
+                  if "sga:LineAnnotation" in modInfo[id].get "@type"
+                    needs_br = true
+                  idx = modIds.indexOf id
+                  modIds.splice idx, 1 if idx > -1
+                if needs_br and not br_pushed
+                  indent = null
+                  align = null
+                  if modInfo[id].indent? then indent = modInfo[id].get "indent"
+                  if modInfo[id].align? then align = modInfo[id].get "align"
+                  makeLinebreak pos, indent, align
+                  br_pushed = true
+                last_pos = pos
+            processNode last_pos, text.length
+
+      canvas.trigger 'sync'
+ 
+  SGASharedCanvas.Data.getCanvasFor = (seq, n) ->
+
+      manifest = manifests.first()
+
+      if seq == 'first'
+        sequence = manifest.sequences.first()
+      else
+        sequence = manifest.sequences.get seq
+      canvases = sequence.get "canvases"
+      n = canvases.length if n > canvases.length
+      canvas_id = canvases[n-1]      
+      canvas = manifest.canvases.get canvas_id
+
 )()
