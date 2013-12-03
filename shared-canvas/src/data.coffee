@@ -216,7 +216,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     extractSpatialConstraint = (model, id) ->
       return unless id?
       constraint = graph[id]
-      if 'oa:FragmentSelector' in makeArray(constraint.type)
+      if 'oa:FragmentSelector' in makeArray(constraint["@type"])
         if constraint["value"].substr(0,5) == "xywh="
           model.set
             shape : "Rectangle"
@@ -397,7 +397,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   end: end
                 if indent? then titem.set {indent : indent}
                 if align? then titem.set {align : align}
-                canvas.textItems.add titem                   
+                canvas.textItems.add titem                
               
               processNode = (start, end) ->
                 classes = []
@@ -425,20 +425,13 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               # actual open annotation model.
               #
               makeTextItems = (start, end, classes, css, indent, align) ->
-                sources = {}
                 canvas.contents.forEach (c,i) ->
-                  s = c.get("source")
-                  if s? and s not in sources
-                    sources[s] = c
-                
-                for k, candidate of sources
-                  beginOffset = candidate.get "beginOffset"
-                  endOffset = candidate.get "endOffset"
-                  # Pushes the text item only if its outside of contentAnnos
+                  beginOffset = c.get "beginOffset"
+                  endOffset = c.get "endOffset"
                   if start <= endOffset and end >= beginOffset
-                    st = Math.min(Math.max(start, beginOffset),endOffset)
+                    st = Math.min(Math.max(start, beginOffset), endOffset)
                     en = Math.max(Math.min(end, endOffset), beginOffset)
-                    pushTextItem classes, css, candidate.get("source"), st, en, indent, align
+                    pushTextItem classes, css, c.get("source"), st, en, indent, align
                 false
 
               #
