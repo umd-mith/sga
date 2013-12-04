@@ -9,20 +9,19 @@ SGASharedCanvas.Router = SGASharedCanvas.Router or {}
   # For now, the routers assume that there is only one Manifest
   #
 
-  class Pagination extends Backbone.Router
+  class Main extends Backbone.Router
     routes:
       "" : "page"
       "page/:n" : "page"
 
-  SGASharedCanvas.Router.Pagination = new Pagination
+    page: (n) ->
+      n = 1 if !n? or n<1
 
-  SGASharedCanvas.Router.Pagination.on 'route:page', (n) ->    
-    n = 1 if !n? or n<1
+      # Trigger an event "page" on the manifests collection to 
+      # fetch canvas data
+      manifests = SGASharedCanvas.Data.Manifests
+      manifests.trigger "page", n
 
-    SGASharedCanvas.View.clearCanvases()
-
-    SGASharedCanvas.Data.importCanvasData n, (canvas) ->
-      SGASharedCanvas.View.showCanvas canvas
-
+  SGASharedCanvas.Router.Main = new Main
 
 )()
