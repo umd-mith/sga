@@ -96,7 +96,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     initialize : ->
       @sequences = new Sequences
       @ranges = new Ranges
-      @canvases = new Canvases      
+      @canvases = new Canvases
       @textFiles = new TextFiles
 
     url : (u) ->
@@ -137,11 +137,26 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
     # We override fetch, since we actually fetch and re-organize
     # data from the parent Manifest model
-    fetch : (manifest) ->      
+    fetch : (manifest) ->    
       importCanvas @, manifest
 
   class Canvases extends Backbone.Collection
     model: Canvas   
+    # BackBone's reset() removes model silently. 
+    # We want it to tell its models that they're going to die
+    # (so that their views know that they need to go too)
+    reset: (models=[], options={}) ->
+
+      for model in @models
+        @_removeReference model
+        # trigger the remove event for the model manually
+        model.trigger('remove', model, @)
+
+      @_reset()
+      @add @models, _.extend({silent: true}, options)
+      if !options.silent 
+        @trigger 'reset', @, options
+      @
 
   ## CONTENTS ##
 
@@ -203,8 +218,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         else if "sc:Range" in types
           manifest.ranges.add node
 
-        else if "sc:Canvas" in types
-          manifest.canvases.add node
+        # else if "sc:Canvas" in types
+        #   manifest.canvasesMeta.add node
 
   importCanvas = (canvas, manifest) ->
     # This method imports manifest level data and metadata
@@ -265,28 +280,40 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
     # Main code for importCanvas()
 
-    canvas_id = canvas.get "@id"
+    canvas_id = canvas.get "id"
     graph = manifest.get "raw_graph"
+
+    # First get generic canvas metadata. This is up for grabs without looping on the graph
+    canvas.set graph[canvas_id]
+    # Signal that the basic canvas data is loaded.
+    # Further on there will be another event 'fullsync'
+    # that signals that subcollections have been loaded too.
+    canvas.trigger 'sync'
 
     # Don't process annos again if the canvas is already populated.
     if canvas.contents.length <= 0
 
+      # find content annotations right away. You'll need these before creating parsing other annos
       for id, node of graph
 
         if node["@type"]? 
           types = makeArray node["@type"]
 
           target = node["on"]
-          body = node["resource"]
+          body = node["resource"]          
 
           # Get content annotations
           if "sc:ContentAnnotation" in types and graph[target]["full"] == canvas_id
             content = new Content
-            canvas.contents.add content
             content.set graph[id]
 
             extractTextTarget content, target
             extractTextBody content, body
+
+            # Adding triggers the view. Alternatively, we could have the view listen to change,
+            # but we trigger change too often by setting attributes gradually. 
+            # We could store attributes in an object and set them all together.
+            canvas.contents.add content
 
           # Get zones - *N.B. there are no zones in SGA*
           else if "sc:ZoneAnnotation" in types and graph[target]["full"] == canvas_id
@@ -296,11 +323,23 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             extractSpatialConstraint zone, target
             zone.set node
 
+      for id, node of graph
+
+        if node["@type"]? 
+          types = makeArray node["@type"]
+
+          target = node["on"]
+          body = node["resource"]
+
           # Get images
-          else if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
-            image = new Image
-            canvas.images.add image
+          if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
+            image = new Image            
             image.set graph[node["resource"]]
+
+            # Adding triggers the view. Alternatively, we could have the view listen to change,
+            # but we trigger change too often by setting attributes gradually. 
+            # We could store attributes in an object and set them all together.
+            canvas.images.add image
 
           # Get everything else (including project-specific annotations!) for this canvas
           # Could this be moved into its own project-specific module at some point?
@@ -342,7 +381,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         source = item.get "target"
         start = item.get "beginOffset"
         end = item.get "endOffset"
-        id = item.get "id"
+        id = item.get "@id"
         modInfo[id] = item
         modstart[source] ?= {}
         modstart[source][start] ?= []
@@ -396,7 +435,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               classes = []
               css = []
               for id in modIds
-                for t in makeArray modInfo[id].get("@type")
+                for t in makeArray modInfo[id].get "@type"
                   classes.push t.replace(":", "")
                 cssClass = modInfo[id].get "cssclass"
                 if cssClass? then classes.push cssClass
@@ -434,7 +473,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             #
             makeLinebreak = (pos, indent, align) ->
               classes = [ "LineBreak" ]
-              #classes.push modInfo[id].type for id in modIds
               makeTextItems pos, pos, classes, [ "" ], indent, align
 
             #
@@ -460,13 +498,13 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                 if needs_br and not br_pushed
                   indent = null
                   align = null
-                  if modInfo[id].indent? then indent = modInfo[id].get "indent"
-                  if modInfo[id].align? then align = modInfo[id].get "align"
+                  if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
+                  if modInfo[id].get("align")? then align = modInfo[id].get "align"
                   makeLinebreak pos, indent, align
                   br_pushed = true
                 last_pos = pos
             processNode last_pos, text.length
 
-      canvas.trigger 'sync'
+      canvas.trigger 'fullsync'
 
 )()
