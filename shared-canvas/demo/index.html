@@ -153,13 +153,6 @@
               <div class="row">
                 <div class="loader" id="loading-progress"><!-- <i class="icon-spinner icon-spin icon-3x"></i> --></div>
                 <div id="mainSharedCanvas">
-                  <div class="col-xs-6">
-                    <div class="sharedcanvas" data-types="Image"></div>
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="sharedcanvas" data-types="Text"></div>
-                    <div id="ModeLayers"></div>
-                  </div>
                 </div>
                 <div class="page-location-bar">
                   <div id="page-location"></div>
@@ -188,6 +181,16 @@
       </div>
     </div></div></div>
     
+  <!-- Adjust these templates to set up your own Viewer -->
+  <script type="text/template" id="canvas-tpl">
+    <div class="col-xs-6">
+      <div class="sharedcanvas" data-types="Image"></div>
+    </div>
+    <div class="col-xs-6">
+      <div class="sharedcanvas" data-types="Text"></div>
+      <div id="ModeLayers"></div>
+    </div>
+  </script>
 
   <script src="js/main.js"></script>
   </body>
