@@ -11,6 +11,7 @@
     "grunt-bower-cli": "0.0.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-less": "~0.8.1",
-    "grunt-contrib-copy": "~0.4.1"
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-connect-proxy": "~0.1.6"
   }
 }

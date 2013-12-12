@@ -6,6 +6,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-connect-proxy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
@@ -70,13 +71,36 @@ module.exports = function(grunt) {
         options: {
           port: 8000,
           hostname: "localhost",
+          middleware: function (connect, options) {
+            var config = [ // Serve static files.
+               connect.static(options.base),
+               // Make empty directories browsable.
+               connect.directory(options.base)
+            ];
+            var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;           
+            var test = function (req, res, next) {
+              next();
+            }
+            config.unshift(proxy);
+            config.unshift(test);
+            return config;
+          }
         }
-      }
+      },
+      proxies: [
+            {
+                context: '/adore-djatoka',
+                host: 'tiles2.bodleian.ox.ac.uk',
+                port: '8080',
+                changeOrigin: true,
+                xforward: false
+            }
+          ]
     },
 
     watch: {
       scripts: {
-        files: 'src/*.coffee',
+        files: ['src/*.coffee', 'less/*.less'],
         // Not uglifying, since watch is supposed to be used for development
         tasks: ['concat:bower_js', 'coffee', 'less'], 
         options: {
@@ -102,6 +126,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['concat:bower_js', 'coffee', 'uglify', 'less']);
-  grunt.registerTask('run', ['connect', 'watch']);
+  grunt.registerTask('run', ['configureProxies', 'connect:server', 'watch']);
   grunt.registerTask('install', ['install-dependencies', 'bower', 'copy:install']);
 }
