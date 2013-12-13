@@ -8,6 +8,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # MAIN APPLICATION VIEW
 	class SGASharedCanvas.Application extends Backbone.View
 
+    # This is the top-level piece of UI, 
+    # so we bind it to an element already present in the HTML.
+    el: '#main-content'
+
     initialize: (config={}) ->     
 
       manifestUrl = $("#SGASharedCanvasViewer").data('manifest')
@@ -54,10 +58,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # Manifests view
   class ManifestsView extends Backbone.View
 
-    # Instead of generating a new element, bind to the existing skeleton of
-    # already present in the HTML.
-    el: '#SGASharedCanvasViewer'
-
     initialize: ->
       @listenTo @collection, 'add', @addOne
 
@@ -74,9 +74,49 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # Manifest view
   class ManifestView extends Backbone.View
 
+    # Instead of generating a new element, bind to the existing skeleton of
+    # already present in the HTML.
+    el: '#SGASharedCanvasViewer'
+
+    # Delegated events for UI components
+    events: 
+      # Pager
+      'click #sequence-nav #next-page': 'nextPage'
+      'click #sequence-nav #prev-page': 'prevPage'
+      'click #sequence-nav #first-page': 'firstPage'
+      'click #sequence-nav #last-page': 'lastPage'
+
     initialize: ->
+
+      # Set view properties
+      @variables = new ViewProperties 
+        seqPage: 0
+        seqMin: 1
+        seqMax: 0
+
       # Add views for child collections right away
       new CanvasesView collection: @model.canvases
+
+      # Pager
+      firstEl = $('#sequence-nav #first-page')
+      prevEl = $('#sequence-nav #prev-page')
+      nextEl = $('#sequence-nav #next-page')
+      lastEl = $('#sequence-nav #last-page')
+
+      @listenTo @variables, 'change:seqPage', (n) ->
+        if n > @variables.get "seqMin"
+          firstEl.removeClass "disabled"
+          prevEl.removeClass "disabled"
+        else
+          firstEl.addClass "disabled"
+          prevEl.addClass "disabled"
+
+        if n < @variables.get "seqMax"
+          nextEl.removeClass "disabled"
+          lastEl.removeClass "disabled"
+        else
+          nextEl.addClass "disabled"
+          lastEl.addClass "disabled"
 
       # When a new canvas is requested through a Router, fetch the right canvas data.
       @listenTo SGASharedCanvas.Data.Manifests, 'page', (n) ->
@@ -85,14 +125,18 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         # 1. it avoids piling up canvases data in the browser memory
         # 2. it causes previously instantiated views to destry themselves and make room for the new one.
         @model.canvases.reset()
-        # @model.canvases.each (m, i) =>
-        #   @model.canvases.remove m.get("@id")
 
         fetchCanvas = =>
           # For now we assume there is only one sequence.
           # Eventually this should be on a sequence view.
           # From the sequence, we locate the correct canvas id
-          canvases = @model.sequences.first().get "canvases"
+          sequence = @model.sequences.first()
+
+          canvases = sequence.get "canvases"
+
+          @variables.set "seqMax", canvases.length
+          @variables.set "seqPage", parseInt(n)
+
           n = canvases.length if n > canvases.length
           canvasId = canvases[n-1]
           # Create the view
@@ -105,7 +149,18 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         if @model.sequences.length > 0
           fetchCanvas()
         else
-          @model.once "sync", fetchCanvas
+          @model.once "sync", fetchCanvas    
+
+    # Pager
+    nextPage: (e) ->
+      e.preventDefault()
+      newPage = @variables.get("seqPage")+1
+      Backbone.history.navigate("#/page/"+newPage)
+
+    prevPage: (e) ->
+      e.preventDefault()
+      newPage = @variables.get("seqPage")-1
+      Backbone.history.navigate("#/page/"+newPage)
 
     render: ->
       @
@@ -122,7 +177,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     addOne: (c) ->
       # Only trigger views once the model contains canvas data (but not subcollections yet)
-      console.log c
       @listenToOnce c, 'sync', ->
         new CanvasView model: c
 
@@ -269,11 +323,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           vars: @variables.variables # Pass on variables set in this view
         ).render().el
       addImages = =>
-        container.append new ImagesView(
-          collection: @model.images
-          el: container
-          vars: @variables.variables # Pass on variables set in this view
-        ).render().el
+        # container.append new ImagesView(
+        #   collection: @model.images
+        #   el: container
+        #   vars: @variables.variables # Pass on variables set in this view
+        # ).render().el
 
       for type in @types
       # Accepted data-types "All", "Image", "Text". 
@@ -487,7 +541,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     addOne: (model) ->
       # This viewer supports JP2 if a DJATOKA service is provided
       if model.get("format") == "image/jp2" and model.get("service")?
-        console.log 'create ImageServerView'
         new ImageDjatokaView( 
           el: @$el
           model: model 
