@@ -67,10 +67,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     render: ->
       @
 
-    remove: ->
-      @$el.remove()
-      @
-
   # Manifest view
   class ManifestView extends Backbone.View
 
@@ -85,6 +81,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       'click #sequence-nav #prev-page': 'prevPage'
       'click #sequence-nav #first-page': 'firstPage'
       'click #sequence-nav #last-page': 'lastPage'
+ 
+    nextPage: (e) ->
+      e.preventDefault()
+      newPage = @variables.get("seqPage")+1
+      Backbone.history.navigate("#/page/"+newPage)
+
+    prevPage: (e) ->
+      e.preventDefault()
+      newPage = @variables.get("seqPage")-1
+      Backbone.history.navigate("#/page/"+newPage)
 
     initialize: ->
 
@@ -151,22 +157,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         else
           @model.once "sync", fetchCanvas    
 
-    # Pager
-    nextPage: (e) ->
-      e.preventDefault()
-      newPage = @variables.get("seqPage")+1
-      Backbone.history.navigate("#/page/"+newPage)
-
-    prevPage: (e) ->
-      e.preventDefault()
-      newPage = @variables.get("seqPage")-1
-      Backbone.history.navigate("#/page/"+newPage)
-
     render: ->
-      @
-
-    remove: ->
-      @$el.remove()
       @
 
   # Canvases view
@@ -181,10 +172,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         new CanvasView model: c
 
     render: ->
-      @
-
-    remove: ->
-      @$el.remove()
       @
 
   # Canvas view
@@ -220,10 +207,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           model: @model
           el: area.el
           types: area.types.split(" ")     
-      @
-
-    remove: ->
-      @$el.remove()
       @
 
   # General area view, declaring variables that can be tracked with events
@@ -362,9 +345,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     render: ->
       @
 
-    remove: ->
-      @$el.remove()
-      @
 
   class ContentView extends AreaView
 
@@ -407,10 +387,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         el: rootEl
         vars : @variables.variables # Pass on properties set in this view
 
-      @
-
-    remove: ->
-      @$el.remove()
       @
 
   #TODOs HERE
@@ -482,10 +458,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         # null
       @
 
-    remove: ->
-      @$el.remove()
-      @
-
   class TextAnnoView extends Backbone.View
     tagName: "span"
 
@@ -523,10 +495,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       #   el.text item.text[0]
       @
 
-    remove: ->
-      @$el.remove()
-      @
-
   #
   # IMAGE VIEWS
   #
@@ -541,15 +509,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     addOne: (model) ->
       # This viewer supports JP2 if a DJATOKA service is provided
       if model.get("format") == "image/jp2" and model.get("service")?
-        new ImageDjatokaView( 
-          el: @$el
-          model: model 
-          vars: @variables 
-        ).render()
-        # console.log(new ImageDjatokaView( 
+        # new ImageDjatokaView( 
+        #   el: @$el
         #   model: model 
         #   vars: @variables 
-        # ).render().el)
+        # ).render()
       else
         console.log 'create ImageView'
         # @$el.append new ImageView( 
@@ -560,9 +524,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     render: ->
       @
 
-    remove: ->
-      @$el.remove()
-      @
 
   class ImageView extends AreaView
 
@@ -1000,10 +961,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # rendering.setZoom(0)
           zoomLevel = 0
 
-      @
-
-    remove: ->
-      @$el.remove()
       @
 
 )()
