@@ -96,7 +96,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     initialize : ->
       @sequences = new Sequences
       @ranges = new Ranges
-      @canvases = new Canvases
+      @canvasesMeta = new CanvasesMeta
+      @canvasesData = new CanvasesData
       @textFiles = new TextFiles
 
     url : (u) ->
@@ -127,7 +128,13 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
   ## CANVASES ##
 
-  class Canvas extends Backbone.Model
+  class CanvasMeta extends Backbone.Model
+    idAttribute : "@id"
+
+  class CanvasesMeta extends Backbone.Collection
+    model: CanvasMeta  
+
+  class CanvasData extends Backbone.Model
     idAttribute : "@id"
     initialize: ->
       @contents  = new Contents
@@ -140,8 +147,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     fetch : (manifest) ->    
       importCanvas @, manifest
 
-  class Canvases extends Backbone.Collection
-    model: Canvas   
+  class CanvasesData extends Backbone.Collection
+    model: CanvasData   
     # BackBone's reset() removes model silently. 
     # We want it to tell its models that they're going to die
     # (so that their views know that they need to go too)
@@ -218,8 +225,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         else if "sc:Range" in types
           manifest.ranges.add node
 
-        # else if "sc:Canvas" in types
-        #   manifest.canvasesMeta.add node
+        else if "sc:Canvas" in types
+          manifest.canvasesMeta.add node
 
   importCanvas = (canvas, manifest) ->
     # This method imports manifest level data and metadata
