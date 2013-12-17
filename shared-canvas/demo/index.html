@@ -20,46 +20,12 @@
               <form name="sgaDetails" id="sgaForm" class="well form-inline">
                 <fieldset class="meta-data-view">
                   <div class="noborder control-group row">
-                    <ul class="meta-data-group controls col-lg-3">
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span></span></li>
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workHands">Hand(s)&nbsp;</label><span></span></li>
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workDate">Date Written&nbsp;</label><span></span></li>
-                    </ul>
-                    <ul class="meta-data-group controls col-lg-3">
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workNotebook">View&nbsp;</label><span></span></li>
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span></span></li>
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workFolio">Folio&nbsp;</label><span></span></li>
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workState">State&nbsp;</label><span></span></li>
-                    </ul>
-                    <ul class="meta-data-group controls col-lg-3">
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span></span></li>
-                      <li class="meta-data-item">
-                        <label class="meta-label" id="meta-workShelfmark">Shelfmark&nbsp;</label><span></span></li>
-                    </ul>
-                    <div class="meta-data-group col-lg-3 controls" id="status-block">
-                      <div class="well well-sm">
-                        <div class="meta-data-item circle-yes" id="status-transcription">
-                          <label class="meta-label">Transcription Status</label>
-                          <span class="badge-red"><i class="icon-circle"></i></span>
-                          <span class="badge-yellow"><i class="icon-circle"></i></span>
-                          <span class="badge-green"><i class="icon-circle active"></i></span></div>
-                        <div class="meta-data-item circle-yes" id="status-metadata">
-                          <label class="meta-label">Metadata Status</label>
-                          <span class="badge-red"><i class="icon-circle"></i></span>
-                          <span class="badge-yellow"><i class="icon-circle"></i></span>
-                          <span class="badge-green"><i class="icon-circle active"></i></span></div>
-                      </div>
-                    </div>
-                    <!-- /status-block --> 
-                    
+                    <span id="SGAManifestMeta">
+
+                    </span>
+                    <span id="SGACanvasMeta">
+
+                    </span>                                   
                   </div>
                 </fieldset>
                 <fieldset class="detail-view-controls row">
@@ -111,7 +77,7 @@
                                  
                       </div>
                       <!-- /well -->
-                      <div id="collapse-one" class="accordion-body collapse in meta-data-filter">
+                      <div id="collapse-one" class="accordion-body collapse meta-data-filter">
                         <div class="accordion-inner well well-sm">
                           <div class="controls meta-data-group" id="limit-search">
                             <h3>Limit Search <span>Only Show Terms Found In:</span></h3>
@@ -192,6 +158,52 @@
     </div>
   </script>
 
+  <script type="text/template" id="manifestMeta-tpl">
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span><%=scagentLabel%></span></li>      
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workDate">Date Written&nbsp;</label><span><%=scdateLabel%></span></li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>   
+    </ul>
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workNotebook">View&nbsp;</label><span><%=label%></span></li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workState">State&nbsp;</label><span><%=sgastateLabel%></span></li>
+        <li class="meta-data-item">
+        <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span><%=attribution%></span></li>
+    </ul>
+  </script>
+
+  <script type="text/template" id="canvasMeta-tpl">
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workHands">Hand(s)&nbsp;</label><span><%=sgahandLabel%></span>
+      </li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workShelfmark">Shelfmark&nbsp;</label><span><%=sgashelfmarkLabel%></span>
+      </li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workFolio">Folio&nbsp;</label><span><%=label%></span>
+      </li>
+    </ul>
+    <div class="meta-data-group col-lg-3 controls" id="status-block">
+      <div class="well well-sm">
+        <div class="meta-data-item circle-yes" id="status-transcription">
+          <label class="meta-label">Transcription Status</label>
+          <span class="badge-red"><i class="icon-circle <% if (trans=='red') {%>active<%}%>"></i></span>
+          <span class="badge-yellow"><i class="icon-circle <% if (trans=='yellow') {%>active<%}%>"></i></span>
+          <span class="badge-green"><i class="icon-circle <% if (trans=='green') {%>active<%}%>"></i></span></div>
+        <div class="meta-data-item circle-yes" id="status-metadata">
+          <label class="meta-label">Metadata Status</label>
+          <span class="badge-red"><i class="icon-circle <% if (meta=='red') {%>active<%}%>"></i></span>
+          <span class="badge-yellow"><i class="icon-circle <% if (meta=='yellow') {%>active<%}%>"></i></span>
+          <span class="badge-green"><i class="icon-circle <% if (meta=='green') {%>active<%}%>"></i></span></div>
+      </div>             
+    </div>
+  </script>
   <script src="js/main.js"></script>
   </body>
 </html>
