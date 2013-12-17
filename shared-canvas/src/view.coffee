@@ -70,17 +70,26 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # Manifest view
   class ManifestView extends Backbone.View
 
-    # Instead of generating a new element, bind to the existing skeleton of
+    # Instead of generating a new element, bind to the existing skeleton
     # already present in the HTML.
     el: '#SGASharedCanvasViewer'
 
     initialize: ->
+
+      @model.ready = (cb) ->
+        if @sequences.length > 0
+          cb()
+        else
+          @once "sync", cb
 
       # Set view properties
       @variables = new ViewProperties 
         seqPage: 0
         seqMin: 1
         seqMax: 0
+
+      # Set templates
+      @metaTemplate = _.template($('#manifestMeta-tpl').html())
 
       # Add views for child collections right away
       new CanvasesView collection: @model.canvasesData
@@ -112,17 +121,27 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # Finally fetch the data. This will cause the views to render.
           canvas.fetch @model
 
+          # Render canvas metadata          
+          new CanvasMetaView 
+            el: "#SGACanvasMeta"
+            model: @model.canvasesMeta.get canvasId
+
         # Make sure manifest is loaded        
-        if @model.sequences.length > 0
-          fetchCanvas()
-        else
-          @model.once "sync", fetchCanvas   
+        @model.ready fetchCanvas   
 
-        @render() 
+      @render()
+      @model.ready @renderMeta
 
-    render: ->
-      # Manage UI components as subviews
-      
+    renderMeta: =>
+      # Render Manifest Metadata
+      noColon = {}
+      for k,v of @model.toJSON()
+        noColon[k.replace(':', '')] = v
+      $('#SGAManifestMeta').html @metaTemplate(noColon)
+
+    render: ->     
+
+      # Manage UI components as subviews      
       syncVarsFor = (component) =>
 
         component.listenTo @variables, 'change', (p) ->
@@ -194,6 +213,23 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           types: area.types.split(" ")     
       @
 
+  # Canvas Meta view
+  class CanvasMetaView extends Backbone.View    
+
+    initialize: ->
+      @template = _.template($('#canvasMeta-tpl').html())
+      @render()
+
+    render: ->
+      noColon = {}
+      for k,v of @model.toJSON()
+        noColon[k.replace(':', '')] = v
+      # Handle status metadata (at the moment not in manifest)
+      noColon.trans = "green"
+      noColon.meta = "green"
+      @$el.html @template(noColon)
+
+
   # General area view, declaring variables that can be tracked with events
   class AreaView extends Backbone.View
     initialize: (options) ->
@@ -209,7 +245,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       if options.vars? and typeof options.vars == 'object'
         for k, v of options.vars
           @variables.set k, v
-
 
       # Example of listeners
       # @variables.on 
