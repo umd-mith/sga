@@ -52,10 +52,10 @@ module.exports = function(grunt) {
         files: { 
           'dist/<%= pkg.name %>.js': ['src/intro.coffee', 
                                       'src/data.coffee',
-                                      'src/application.coffee',
+                                      //'src/application.coffee',
+                                      'src/component.coffee',
                                       'src/view.coffee',
-                                      'src/router.coffee',
-                                      'src/component.coffee']
+                                      'src/router.coffee']
         }
       }
     },
