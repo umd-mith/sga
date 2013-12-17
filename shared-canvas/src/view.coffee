@@ -85,50 +85,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Add views for child collections right away
       new CanvasesView collection: @model.canvasesData
 
-      sliderEl = $('#page-location') 
-
-      @listenTo @variables, 'change:seqMax', (n) ->
-
-        getLabel = (n) =>
-          # For now we assume there is only one sequence.
-          # Eventually this should be on a sequence view.
-          # From the sequence, we locate the correct canvas id
-          sequence = @model.sequences.first()
-          canvases = sequence.get "canvases"
-          canvasId = canvases[n]
-          canvas = @model.canvasesMeta.get canvasId
-          canvas.get "label"
-
-        try 
-          if sliderEl.data( "ui-slider" ) # Is the container set?
-            sliderEl.slider
-              max : n
-          else
-            pages = n
-            sliderEl.slider
-              orientation: "vertical"
-              range: "min"
-              min: @variables.get 'seqMin' 
-              max: pages
-              value: pages
-              step: 1
-              slide: ( event, ui ) ->
-                $(ui.handle).text(getLabel(pages - ui.value))
-              stop: ( event, ui ) ->
-                # now update actual value
-                newPage =  (pages+1) - ui.value
-                Backbone.history.navigate("#/page/"+newPage)
-
-            sliderEl.find("a").text( getLabel(0) )
-        
-            # Using the concept of "Event aggregation" (similar to the dispatcher in Angles)
-            # cfr.: http://addyosmani.github.io/backbone-fundamentals/#event-aggregator
-            Backbone.on 'viewer:resize', (el) ->
-              sliderEl.height(el.height() + 'px')
-
-        catch e
-          console.log e, "Unable to update maximum value of slider"
-
       # When a new canvas is requested through a Router, fetch the right canvas data.
       @listenTo SGASharedCanvas.Data.Manifests, 'page', (n) ->
 
@@ -166,13 +122,27 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     render: ->
       # Manage UI components as subviews
+      
+      syncVarsFor = (component) =>
+
+        component.listenTo @variables, 'change', (p) ->
+          for k,v of @variables.variables 
+            component.variables.set k, p[k]
+
+      # Pager
       pager = new SGASharedCanvas.Component.Pager 
         el : '#sequence-nav'
         vars: @variables.variables
 
-      pager.listenTo @variables, 'change', (p) ->
-        for k,v of @variables.variables 
-          pager.variables.set k, p[k]
+      syncVarsFor pager
+
+      # Slider
+      slider = new SGASharedCanvas.Component.Slider
+        el : '#page-location'
+        vars: @variables.variables
+        data: @model
+
+      syncVarsFor slider
       @
 
   # Canvases view
