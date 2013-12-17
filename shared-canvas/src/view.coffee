@@ -23,7 +23,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Add manifest from DOM. This triggers data collection and rendering.
       manifest = manifests.add
         url: manifestUrl
-      manifest.fetch()      
+      manifest.fetch()
 
       # Activate Routers
       Backbone.history.start()
@@ -74,23 +74,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     # already present in the HTML.
     el: '#SGASharedCanvasViewer'
 
-    # Delegated events for UI components
-    events: 
-      # Pager
-      'click #sequence-nav #next-page': 'nextPage'
-      'click #sequence-nav #prev-page': 'prevPage'
-      'click #sequence-nav #first-page': 'firstPage'
-      'click #sequence-nav #last-page': 'lastPage'
-
-    # Pager
-    nextPage: (e) ->
-      newPage = @variables.get("seqPage")+1
-      Backbone.history.navigate("#/page/"+newPage)
-    prevPage: (e) ->
-      e.preventDefault()
-      newPage = @variables.get("seqPage")-1
-      Backbone.history.navigate("#/page/"+newPage)
-
     initialize: ->
 
       # Set view properties
@@ -102,33 +85,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Add views for child collections right away
       new CanvasesView collection: @model.canvasesData
 
-      # Pager
-      firstEl = $('#sequence-nav #first-page')
-      prevEl = $('#sequence-nav #prev-page')
-      nextEl = $('#sequence-nav #next-page')
-      lastEl = $('#sequence-nav #last-page')
-      # Slider
       sliderEl = $('#page-location') 
-
-      @listenTo @variables, 'change:seqPage', (n) ->
-        if n > @variables.get "seqMin"
-          firstEl.removeClass "disabled"
-          prevEl.removeClass "disabled"
-        else
-          firstEl.addClass "disabled"
-          prevEl.addClass "disabled"
-
-        if n < @variables.get "seqMax"
-          nextEl.removeClass "disabled"
-          lastEl.removeClass "disabled"
-        else
-          nextEl.addClass "disabled"
-          lastEl.addClass "disabled"
 
       @listenTo @variables, 'change:seqMax', (n) ->
 
         getLabel = (n) =>
-          console.log n
           # For now we assume there is only one sequence.
           # Eventually this should be on a sequence view.
           # From the sequence, we locate the correct canvas id
@@ -166,14 +127,14 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               sliderEl.height(el.height() + 'px')
 
         catch e
-          console.log "Unable to update maximum value of slider"
+          console.log e, "Unable to update maximum value of slider"
 
       # When a new canvas is requested through a Router, fetch the right canvas data.
       @listenTo SGASharedCanvas.Data.Manifests, 'page', (n) ->
 
         # First of all, destroy any canvas already loaded. We do this for two reasons:
         # 1. it avoids piling up canvases data in the browser memory
-        # 2. it causes previously instantiated views to destry themselves and make room for the new one.
+        # 2. it causes previously instantiated views to destroy themselves and make room for the new one.
         @model.canvasesData.reset()
 
         fetchCanvas = =>
@@ -199,9 +160,19 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         if @model.sequences.length > 0
           fetchCanvas()
         else
-          @model.once "sync", fetchCanvas    
+          @model.once "sync", fetchCanvas   
+
+        @render() 
 
     render: ->
+      # Manage UI components as subviews
+      pager = new SGASharedCanvas.Component.Pager 
+        el : '#sequence-nav'
+        vars: @variables.variables
+
+      pager.listenTo @variables, 'change', (p) ->
+        for k,v of @variables.variables 
+          pager.variables.set k, p[k]
       @
 
   # Canvases view
