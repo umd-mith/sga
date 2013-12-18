@@ -28,33 +28,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Activate Routers
       Backbone.history.start()
 
-  #
-  # Our Views have properties that are not reflected in the data models. 
-  # The models should be considered read-only from the views
-  # 
-  # In order to manage this properties, we mix Backbone's Events module
-  # with the properties and define general setters and getters to fire Backbone events.
-  #
-  class ViewProperties
-
-    constructor: (@variables) ->
-      _.extend @, Backbone.Events
-
-    set: (prop, val) ->
-      if @variables[prop]?
-        @variables[prop] = val
-        @trigger 'change', @variables
-        @trigger 'all', @variables
-        @trigger 'change:'+prop, val, @variables
-      else 
-        throw new Error "View property #{prop} does not exist."
-
-    get: (prop) ->
-      if @variables[prop]? 
-        @variables[prop]
-      else 
-        throw new Error "View property #{prop} does not exist."
-
   # Manifests view
   class ManifestsView extends Backbone.View
 
@@ -83,7 +56,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           @once "sync", cb
 
       # Set view properties
-      @variables = new ViewProperties 
+      @variables = new SGASharedCanvas.Utils.AudibleProperties 
         seqPage: 0
         seqMin: 1
         seqMax: 0
@@ -234,7 +207,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   class AreaView extends Backbone.View
     initialize: (options) ->
       # Set view properties
-      @variables = new ViewProperties 
+      @variables = new SGASharedCanvas.Utils.AudibleProperties 
         height: 0
         width : 0
         x     : 0
@@ -327,11 +300,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           vars: @variables.variables # Pass on variables set in this view
         ).render().el
       addImages = =>
-        # container.append new ImagesView(
-        #   collection: @model.images
-        #   el: container
-        #   vars: @variables.variables # Pass on variables set in this view
-        # ).render().el
+        container.append new ImagesView(
+          collection: @model.images
+          el: container
+          vars: @variables.variables # Pass on variables set in this view
+        ).render().el
 
       for type in @types
       # Accepted data-types "All", "Image", "Text". 
@@ -530,11 +503,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     addOne: (model) ->
       # This viewer supports JP2 if a DJATOKA service is provided
       if model.get("format") == "image/jp2" and model.get("service")?
-        # new ImageDjatokaView( 
-        #   el: @$el
-        #   model: model 
-        #   vars: @variables 
-        # ).render()
+        new ImageDjatokaView( 
+          el: @$el
+          model: model 
+          vars: @variables 
+        ).render()
       else
         console.log 'create ImageView'
         # @$el.append new ImageView( 
@@ -549,6 +522,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   class ImageView extends AreaView
 
   class ImageDjatokaView extends AreaView
+
     render: ->
       rendering = {}
 
