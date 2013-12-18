@@ -135,7 +135,28 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
   class SGASharedCanvas.Component.ImageControls extends ComponentView
 
-    initialize: (options) ->
-      super
+    events: 
+      'click #zoom-reset': 'zoomReset'
+      'click #zoom-in': 'zoomIn'
+      'click #zoom-out': 'zoomOut'
+
+    zoomReset: (e) ->
+      e.preventDefault()
+      @variables.set "zoom", @variables.get("minZoom")
+
+    zoomIn: (e) ->
+      e.preventDefault()
+      zoom = @variables.get "zoom"
+      if Math.floor zoom+1 <= @variables.get "maxZoom"
+        @variables.set "zoom", Math.floor zoom+1
+
+    zoomOut: (e) ->
+      e.preventDefault()
+      zoom = @variables.get "zoom"
+      minZoom = @variables.get "minZoom"
+      if Math.floor zoom-1 > minZoom
+        @variables.set "zoom", Math.floor zoom-1
+      else if Math.floor zoom-1 == Math.floor minZoom
+        @variables.set "zoom", minZoom
 
 )()

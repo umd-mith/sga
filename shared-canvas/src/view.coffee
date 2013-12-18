@@ -547,7 +547,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         el : '#img-controls'
         vars: @variables.variables
 
-      syncVarsFor imageControls
+      syncVarsFor imageControls      
 
       # 
       # Render tiled image, add interaction.
@@ -582,6 +582,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       baseURL = @model.get("service") + "?url_ver=Z39.88-2004&rft_id=" + @model.get("@id")
       tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, '/')
+
+      @setZoom = (z) ->
 
       zoomLevel = null
 
@@ -766,7 +768,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               height: Math.max(0, height * scale)
             }
 
-          renderTile = (o) ->
+          renderTile = (o) =>
             z = Math.ceil(zoomLevel + baseZoomLevel)                
             topLeft = screenCoords(o.x, o.y)
             heightWidth = screenExtents(o.x, o.y)
@@ -801,7 +803,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               tiles[z][o.x] ?= []
               tiles[z][o.x][o.y] = imgEl
 
-              do (imgEl) ->
+              do (imgEl) =>
                 imgEl.bind 'mousedown', (evt) ->
                   if not inDrag
                     evt.preventDefault()
@@ -828,7 +830,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                           inDrag = false
                           SGASharedCanvas.Utils.mouse.uncapture()
 
-                imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) ->
+                imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) =>
                   e.preventDefault()
                   inDrag = false
                 
@@ -843,7 +845,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                   oldOffsetX -= scrollPoint.left
                   oldOffsetY -= scrollPoint.top
                   if z >= 0 and z <= zoomLevels - baseZoomLevel
-                    setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
+                    @setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
                     # we only update the cursor position if we're in the same zoomLevel as the image after zooming in/out
                     if $(imgEl).data('z') == Math.ceil(zoomLevel + baseZoomLevel) 
                       scrollPoint = screen2original(x, y)
@@ -885,7 +887,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                   y: j
                   tileSize: tileSize
 
-          setZoom = (z) ->
+          _setZoom = (z) ->
             wrapper = (cb) -> cb()
             if z < 0
               z = 0
@@ -896,6 +898,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 wrapper = wrapWithImageReplacement
               zoomLevel = z
               wrapper renderTiles
+
+          @setZoom = (z) =>
+            if z != zoomLevel
+              _setZoom(z)
+              @variables.set "zoom", z
          
           setScale = (s) ->
             divScale = s
@@ -920,6 +927,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           setScale divScale
 
           zoomLevel = 0
+
+          # Listen to Image Controls zoom value for updating
+          @listenTo imageControls.variables, 'change:zoom', (z) ->
+            @setZoom z
       @
 
 )()
