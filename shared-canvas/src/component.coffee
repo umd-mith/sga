@@ -9,7 +9,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
     initialize: (options) ->
       # Set view properties
-      @variables = new ComponentProperties {}
+      @variables = new SGASharedCanvas.Utils.AudibleProperties {}
 
       # Set values if provided
       if options.vars? and typeof options.vars == 'object'
@@ -130,24 +130,5 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
             @$el.find("a").text(getLabel(n))
         catch e
           console.log e, "Unable to update value of slider"
-
-  class ComponentProperties
-
-    constructor: (@variables) ->
-      _.extend @, Backbone.Events
-
-    set: (prop, val) ->
-      @variables[prop] = val
-      @trigger 'change', @variables
-      @trigger 'all', @variables
-      @trigger 'change:'+prop, val, @variables
-
-    get: (prop) ->
-      if @variables[prop]? 
-        @variables[prop]
-      else 
-        throw new Error "View property #{prop} does not exist."
-
-	
 
 )()
