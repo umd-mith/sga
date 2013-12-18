@@ -829,22 +829,22 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                     startoffsetX = offsetX
                     startoffsetY = offsetY
                     inDrag = true
-                    # MITHgrid.mouse.capture (type) ->
-                    #   e = this
-                    #   switch type
-                    #     when "mousemove"
-                    #       if !startX? or !startY?
-                    #         startX = e.pageX
-                    #         startY = e.pageY
-                    #       scoords = screen2original(startX - e.pageX, startY - e.pageY)
-                    #       offsetX = startoffsetX - scoords.left
-                    #       offsetY = startoffsetY - scoords.top
-                    #       renderTiles()
-                    #       updateImageControlPosition()
+                    SGASharedCanvas.Utils.mouse.capture (type) ->
+                      e = @
+                      switch type
+                        when "mousemove"
+                          if !startX? or !startY?
+                            startX = e.pageX
+                            startY = e.pageY
+                          scoords = screen2original(startX - e.pageX, startY - e.pageY)
+                          offsetX = startoffsetX - scoords.left
+                          offsetY = startoffsetY - scoords.top
+                          renderTiles()
+                          updateImageControlPosition()
 
-                    #     when "mouseup"
-                    #       inDrag = false
-                    #       MITHgrid.mouse.uncapture()
+                        when "mouseup"
+                          inDrag = false
+                          SGASharedCanvas.Utils.mouse.uncapture()
 
                 imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) ->
                   e.preventDefault()
