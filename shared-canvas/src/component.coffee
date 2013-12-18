@@ -72,6 +72,8 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       @data = options.data
 
       @listenTo @variables, 'change:seqMax', (n) ->
+        # The value passed in is human readable. Remove 1.
+        n = n-1
 
         getLabel = (n) =>
           # For now we assume there is only one sequence.
@@ -99,8 +101,8 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
               slide: ( event, ui ) ->
                 $(ui.handle).text(getLabel(pages - ui.value))
               stop: ( event, ui ) ->
-                # now update actual value
-                newPage =  (pages+1) - ui.value
+                # now update actual value, re-add 1 for human redeability.
+                newPage =  pages - ui.value + 1
                 Backbone.history.navigate("#/page/"+newPage)
 
             @$el.find("a").text( getLabel(0) )
@@ -130,5 +132,10 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
             @$el.find("a").text(getLabel(n))
         catch e
           console.log e, "Unable to update value of slider"
+
+  class SGASharedCanvas.Component.ImageControls extends ComponentView
+
+    initialize: (options) ->
+      super
 
 )()
