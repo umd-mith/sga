@@ -229,15 +229,12 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           manifest.canvasesMeta.add node
 
   importCanvas = (canvas, manifest) ->
-    # This method imports manifest level data and metadata
-
-    makeArray = (item) ->
-      if !$.isArray item then [ item ] else item
+    # This method imports manifest level data and metadata   
 
     extractSpatialConstraint = (model, id) ->
       return unless id?
       constraint = graph[id]
-      if 'oa:FragmentSelector' in makeArray(constraint["@type"])
+      if 'oa:FragmentSelector' in SGASharedCanvas.Utils.makeArray(constraint["@type"])
         if constraint["value"].substr(0,5) == "xywh="
           model.set
             shape : "Rectangle"
@@ -261,7 +258,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     extractTextTarget = (model, id) ->
       return unless id?
       target = graph[id]
-      if "oa:SpecificResource" in makeArray(target["@type"])
+      if "oa:SpecificResource" in SGASharedCanvas.Utils.makeArray(target["@type"])
         model.set
           target : target["full"]
         if target["oa:hasStyle"]?
@@ -304,7 +301,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       for id, node of graph
 
         if node["@type"]? 
-          types = makeArray node["@type"]
+          types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           target = node["on"]
           body = node["resource"]          
@@ -333,7 +330,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       for id, node of graph
 
         if node["@type"]? 
-          types = makeArray node["@type"]
+          types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           target = node["on"]
           body = node["resource"]
@@ -442,7 +439,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               classes = []
               css = []
               for id in modIds
-                for t in makeArray modInfo[id].get "@type"
+                for t in SGASharedCanvas.Utils.makeArray modInfo[id].get "@type"
                   classes.push t.replace(":", "")
                 cssClass = modInfo[id].get "cssclass"
                 if cssClass? then classes.push cssClass
