@@ -50,7 +50,8 @@ module.exports = function(grunt) {
           join: true
         },
         files: { 
-          'dist/<%= pkg.name %>.js': ['src/intro.coffee', 
+          'dist/<%= pkg.name %>.js': ['src/intro.coffee',
+                                      'src/utils.coffee',
                                       'src/data.coffee',
                                       //'src/application.coffee',
                                       'src/component.coffee',
