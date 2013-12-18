@@ -3,10 +3,7 @@
 
 SGASharedCanvas.Utils = SGASharedCanvas.Utils or {}
 
-( ->
-
-	SGASharedCanvas.Utils.makeArray = (item) ->
-      if !$.isArray item then [ item ] else item
+( ->	
 
   #
   # Some of our Views have properties that are not reflected in the data models. 
@@ -31,5 +28,39 @@ SGASharedCanvas.Utils = SGASharedCanvas.Utils or {}
         @variables[prop]
       else 
         throw new Error "View property #{prop} does not exist."
+
+  # Embed any object in an Array, if it isn't an Array already.
+  SGASharedCanvas.Utils.makeArray = (item) ->
+      if !$.isArray item then [ item ] else item
+
+
+  # ## Mouse capture (from MITHgrid)
+  #
+  # To receive notices of mouse movement and mouse button up events 
+  # regardless of where they are in the document,
+  # register appropriate functions.
+  #
+  SGASharedCanvas.Utils.mouse = 
+    mouseCaptureCallbacks : []
+      
+    capture: (cb) ->
+      oldCB = @mouseCaptureCallbacks[0]
+      @mouseCaptureCallbacks.unshift cb
+      if @mouseCaptureCallbacks.length == 1
+        # it was zero before, so no bindings
+        $(document).mousemove (e) =>
+          e.preventDefault()
+          @mouseCaptureCallbacks[0].call e, "mousemove"
+        $(document).mouseup (e) =>
+          e.preventDefault()
+          @mouseCaptureCallbacks[0].call e, "mouseup"
+      oldCB
+    
+    uncapture: ->
+      oldCB = @mouseCaptureCallbacks.shift()
+      if @mouseCaptureCallbacks.length == 0
+        $(document).unbind "mousemove"
+        $(document).unbind "mouseup"
+      oldCB
 
 )()
