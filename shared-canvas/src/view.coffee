@@ -112,8 +112,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         noColon[k.replace(':', '')] = v
       $('#SGAManifestMeta').html @metaTemplate(noColon)
 
-    render: ->     
-
+    render: ->
       # Manage UI components as subviews      
       syncVarsFor = (component) =>
 
@@ -523,8 +522,36 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
   class ImageDjatokaView extends AreaView
 
+    initialize: (options) ->
+      super
+
+      # Extend view properties
+      @variables.set "active", false
+      @variables.set "zoom", 0
+      @variables.set "maxZoom", 0
+      @variables.set "minZoom", 0
+      @variables.set "imgPosition", {}
+
     render: ->
-      rendering = {}
+      #
+      # Manage UI components as subviews
+      #
+      syncVarsFor = (component) =>
+
+        component.listenTo @variables, 'change', (p) ->
+          for k,v of @variables.variables 
+            component.variables.set k, p[k]
+
+      # Image Controls
+      imageControls = new SGASharedCanvas.Component.ImageControls 
+        el : '#img-controls'
+        vars: @variables.variables
+
+      syncVarsFor imageControls
+
+      # 
+      # Render tiled image, add interaction.
+      #
 
       djatokaTileWidth = 256
 
@@ -551,34 +578,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       imgContainer = $("<div></div>")
       $(innerContainer).append(imgContainer)
 
-      # app.imageControls.setActive(true)
+      @variables.set 'active', true
 
       baseURL = @model.get("service") + "?url_ver=Z39.88-2004&rft_id=" + @model.get("@id")
       tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, '/')
 
-      # rendering.update = (item) ->
-
       zoomLevel = null
-
-      # rendering.getZoom = -> zoomLevel
-      # rendering.setZoom = (z) ->
-      # rendering.setScale = (s) ->
-      # rendering.getScale = -> divScale
-      # rendering.getX = ->
-      # rendering.setX = (x) ->
-      # rendering.getY = ->
-      # rendering.setY = (y) ->
 
       offsetX = 0
       offsetY = 0
-
-      # rendering.setOffsetX = (x) ->
-      # rendering.setOffsetY = (y) ->
-      # rendering.getOffsetX = -> offsetX
-      # rendering.getOffsetY = -> offsetY
-
-      # rendering.remove = ->
-      #   $(imgContainer).empty()
 
       $.ajax
         url: tempBaseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
@@ -598,13 +606,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           yTiles = Math.floor(originalHeight * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
           inDrag = false
           
-          #mouseupHandler = (e) ->
+          # If at all needed, this should be handled with Backbone, not jQuery
+          # so that we can dispose of bindings when the view is removed.
+          # mouseupHandler = (e) ->
           #  if inDrag
           #    e.preventDefault()
           #    inDrag = false
-          #$(document).mouseup mouseupHandler
-          #that.onDestroy? ->
-          #  $(document).unbind 'mouseup', mouseupHandler
+          # $(document).mouseup mouseupHandler
+          # Unbind event when the view is removed.
+          #   $(document).unbind 'mouseup', mouseupHandler
 
           startX = 0
           startY = 0
@@ -624,8 +634,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             divWidth = @$el.width() || 1
             if @variables.get("scale")? > 0
               baseZoomLevel = Math.max(0, Math.ceil(-Math.log( @variables.get("scale") * imgScale )/Math.log(2)))
-              # app.imageControls.setMinZoom 0
-              # app.imageControls.setMaxZoom zoomLevels - baseZoomLevel
+              @variables.set 'minZoom', 0
+              @variables.set 'maxZoom', zoomLevels - baseZoomLevel
 
           wrapWithImageReplacement = (cb) ->
             cb()
@@ -640,41 +650,13 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                   "z-index": -10
               else
                 img.css
-                  "z-index": 0
+                  "z-index": 0         
 
-          # rendering.setZoom = (z) ->
-          #   if z != zoomLevel
-          #     _setZoom(z)
-              # app.imageControls.setZoom(z)
-
-          # rendering.setScale = (s) ->
-          #   divScale = s
-          #   $(innerContainer).css
-          #     width: originalWidth * divScale * imgScale
-          #     height: originalHeight * divScale * imgScale
-
-          #   oldZoom = baseZoomLevel
-          #   recalculateBaseZoomLevel()
-          #   if oldZoom != baseZoomLevel
-          #     zoomLevel = zoomLevel - baseZoomLevel + oldZoom
-          #     if zoomLevel > zoomLevels - baseZoomLevel
-          #       zoomLevel = zoomLevels - baseZoomLevel
-          #     if zoomLevel < 0
-          #       zoomLevel = 0
-
-          #     wrapper = wrapWithImageReplacement
-          #   else
-          #     wrapper = (cb) -> cb()
-          #   wrapper renderTiles
-
-          # that.onDestroy? app.imageControls.events.onZoomChange.addListener rendering.setZoom
-
-          updateImageControlPosition = ->
-            # app.imageControls.setImgPosition
-            #   topLeft: 
-            #     x: offsetX * imgScale
-            #     y: offsetY * imgScale
-
+          updateImageControlPosition = =>
+            @variables.set 'imgPosition',
+              topLeft: 
+                x: offsetX * imgScale
+                y: offsetY * imgScale
 
           recalculateBaseZoomLevel()
 
@@ -937,25 +919,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
           setScale divScale
 
-          # rendering.setOffsetX = (x) ->
-          #   offsetX = x
-          #   renderTiles()
-          #   updateImageControlPosition()
-
-          # rendering.setOffsetY = (y) ->
-          #   offsetY = y
-          #   renderTiles()
-          #   updateImageControlPosition()
-
-          # rendering.addoffsetX = (dx) ->
-          #   rendering.setOffsetX offsetX + dx
-
-          # rendering.addoffsetY = (dy) ->
-          #   rendering.setOffsetY offsetY + dy
-
-          # rendering.setZoom(0)
           zoomLevel = 0
-
       @
 
 )()
