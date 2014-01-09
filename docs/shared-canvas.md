@@ -6,12 +6,12 @@ used does not conform to the current Shared Canvas data model, explaining
 how our use of the data model may change in the future to bring us into
 compliance with the most recent Shared Canvas data model.
 
-Because we are using the evolving [Shared Canvas data model specification
-document](http://www.shared-canvas.org/datamodel/spec/) and [IIIF Metadata
-API](http://www.shared-canvas.org/datamodel/iiif/metadata-api.html) as models
-for this work, it is licensed under a [Creative Commons Attribution-
-NonCommercial-ShareAlike 3.0 Unported
-License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+Because we are using the evolving 
+[Shared Canvas data model specification document](http://www.shared-canvas.org/datamodel/spec/)
+and 
+[IIIF Metadata API](http://www.shared-canvas.org/datamodel/iiif/metadata-api.html)
+as models for this work, it is licensed under a 
+[Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 The JSON-LD examples are shown using [CoffeeScript](http://coffeescript.org/)
 syntax and the context outlined in the Introduction.
@@ -19,10 +19,10 @@ syntax and the context outlined in the Introduction.
 ## Introduction
 
 As much as possible, we produced the primary canvas sequence, ranges, and
-canvas metadata from information in the TEI files. While the current manifests
-are published as single files containing all of the needed annotations, the
-Shared Canvas data model does allow publication of separate files containing
-information on sequences, ranges, canvases, etc. 
+canvas metadata from information in the TEI files. While the current
+manifests are published as single files containing all of the needed
+annotations, the Shared Canvas data model does allow publication of separate
+files containing information on sequences, ranges, canvases, etc. 
 
 We are in the process of moving from RDF/JSON to JSON-LD. As part of this
 move, we will be composing the manifest out of a number of files to encourage
@@ -30,10 +30,10 @@ resource reuse. This document describes the data model as it was used in the
 RDF/JSON manifests published at the end of October, 2013, and the data model
 to which we are moving as we transition from RDF/JSON to JSON-LD.
 
-For now, we assume that all image annotations will map the full image onto the
-full canvas. Some provisions are made in the viewer code for images mapping to
-part of the canvas, but we have not tested this with the manifests we are
-producing.
+For now, we assume that all image annotations will map the full image onto
+the full canvas. Some provisions are made in the viewer code for images
+mapping to part of the canvas, but we have not tested this with the
+manifests we are producing.
 
 ### Document Structure
 
@@ -46,8 +46,8 @@ This document is composed of four primary sections after this introduction:
 * "Discovery Model" discusses how we tie everything together.
 
 Each primary section consists of sub-sections for each concept or RDF class 
-used in the data model. For each concept or RDF class, we provide two sections 
-on the data model details:
+used in the data model. For each concept or RDF class, we provide two
+sections on the data model details:
 
 * "RDF" describes the data model for October, 2013, and
 * "JSON-LD" describes the target data model for 2014.
@@ -59,11 +59,11 @@ and the namespaces described below. The JSON-LD examples are shown using
 ### URIs and URLs
 
 When composing URIs for manifests and manifest components, the URI should not
-end in a file extension (e.g., `.json`) while the URL from which the resource 
-is fetched should.
+end in a file extension (e.g., `.json`) while the URL from which the
+resource is fetched should.
 
-When the URL does not match the URI of the requested object, then the returned
-serialization MUST have a triple of the following form:
+When the URL does not match the URI of the requested object, then the
+returned serialization MUST have a triple of the following form:
 
 ```turtle
 <URL> ore:describes <URI>
@@ -75,6 +75,34 @@ serialization MUST have a triple of the following form:
   describes: "URI"
 }
 ```
+
+Except for the `ore:describes` link between the URI and the URL, all of the
+data associated with the resource should use the URI and not the URL.
+
+In resources that reference the URI but do not contain any of the triples
+for which the URI is the subject, there should be a triple of the following
+form:
+
+```turtle
+<URI> ore:describedBy <URL>
+```
+
+```json
+{
+  id: "URI"
+  describedBy: "URL"
+}
+```
+
+The Shared Canvas viewer will know to retrieve the resource at URL in order
+to find all of the information associated with URI.
+
+When a URI/URL is constructed, path components should not start with a
+number since XML element names can not start with a number. Generally,
+ensuring that each path component (after any namespace prefix) is a valid
+XML element name allows the annotations and other relationships to be
+serialized as RDF/XML. The Open Annotation community prefers JSON-LD, but
+RDF/XML is a valid serialization of RDF data models.
 
 ### Namespaces
 
@@ -99,10 +127,11 @@ These namespaces are used in the October, 2013, manifests.
 
 ### JSON-LD Context
 
-The JSON-LD context is based on the [Shared Canvas JSON-LD context](http://www.shared-canvas.org/ns/context.json)
-and additional contextual material for the Archive's ontology. Some namespaces
-have changed from the October, 2013, list. For example, the Open Annotation 
-data model dropped its extension namespace.
+The JSON-LD context is based on the 
+[Shared Canvas JSON-LD context](http://www.shared-canvas.org/ns/context.json)
+and additional contextual material for the Archive's ontology. Some
+namespaces have changed from the October, 2013, list. For example, the Open
+Annotation data model dropped its extension namespace.
 
 ```coffee
 "@context":
@@ -252,6 +281,12 @@ data model dropped its extension namespace.
   styledBy:
     a    : "@id"
     id   : "oa:styledBy"
+  describes:
+    a    : "@id"
+    id   : "ore:describes"
+  describedBy:
+    a    : "@id"
+    id   : "ore:describedBy"
 
   style           : "oa:styleClass"
   viewingDirection: "sc:viewingDirection"
@@ -303,16 +338,16 @@ above.
 
 URL pattern: http://shelleygodwinarchive.org/data/canvases/{name}.json
 
-Canvases aren't annotations, so they are simply a bag of information about the
-surface we're annotating. Canvases may be referenced by multiple manifests, so
-they are not considered a part of any particular manifest.
+Canvases aren't annotations, so they are simply a bag of information about
+the surface we're annotating. Canvases may be referenced by multiple
+manifests, so they are not considered a part of any particular manifest.
 
 The canvas resource can have pointers to any lists of annotations it knows
 about that result in content rendered on the canvas, but these are not
 necessary. The viewer we're writing doesn't use these links at the moment.
 
-The recommendation in the spec is that multiple labels should be translations.
-The viewer should then select the appropriate one.
+The recommendation in the spec is that multiple labels should be 
+translations. The viewer should then select the appropriate one.
 
 The Shelley-Godwin Archive does not provide multiple translations of the
 label. All labels are assumed to be in English or otherwise written using
@@ -360,14 +395,17 @@ _:canvas1 a sc:Canvas ;
   width : "..."
   height: "..."
   label : "..."
+  resources: [ 
+    # annotation lists
+  ]
 }
 ```
 
 ### Zones
 
-A zone is an area of a canvas that can be the target of annotations, including
-other zones. A zone has many of the same properties as a canvas since it plays
-the role of one for annotations targeting them.
+A zone is an area of a canvas that can be the target of annotations,
+including other zones. A zone has many of the same properties as a canvas
+since it plays the role of one for annotations targeting them.
 
 The easiest way to manage the height and width of a zone is to make it the
 same as the area targeted on the canvas by the annotation mapping the zone
@@ -401,7 +439,8 @@ _:zone1 a sc:Zone ;
   sc:naturalAngle "..." .
 ```
 
-The Shelley-Godwin Archive does not use Zones in the October, 2013, manifests.
+The Shelley-Godwin Archive does not use Zones in the October, 2013, 
+manifests.
 
 #### JSON-LD
 
@@ -419,17 +458,17 @@ Note that the `sga:TextZone` class takes an optional height in nominal lines
 and an optional width in nominal characters. Interlinear additions do not
 count as nominal lines and should have fractional line numbers. When height
 and width are missing, the text zone should use a standard font and allow
-scrolling when text overflows the target bounding box. If height and width are
-provided, they should be used to guide the display of a portion of the text
-painted into the text zone.
+scrolling when text overflows the target bounding box. If height and width
+are provided, they should be used to guide the display of a portion of the
+text painted into the text zone.
 
 Fractional line numbers indicate interlinear text that should be bound
-visually to the nearest whole line number. For example, line 0.3 is below line
-0 and closer to line 0 than to line 1. Generally, the following formula can be
-used to determine relative distance between the whole line and the fractional
-line. It is designed to have a half line number be equidistant between the two
-whole line numbers (e.g., line 1.5 will be equidistant between line 1 and line
-2 and thus have no deviation from the normal layout).
+visually to the nearest whole line number. For example, line 0.3 is below
+line 0 and closer to line 0 than to line 1. Generally, the following formula
+can be used to determine relative distance between the whole line and the
+fractional line. It is designed to have a half line number be equidistant
+between the two whole line numbers (e.g., line 1.5 will be equidistant
+between line 1 and line 2 and thus have no deviation from the normal layout).
 
 ```coffee
 partial_y = y - Math.floor(y) - 0.5
@@ -442,14 +481,14 @@ marginEm = switch
     0
 ```
 
-This formula tends to cluster associated lines together. It can be loosened or
-tightened a bit by changing the exponent (`k`). The value of `marginEm` should
-be considered the amount of margin to add/remove above or below the line to
-bind it appropriately to the proper nominal line. When the number is greater
-than zero, then it represents the amount of space to remove between the
-interlinear line and the following line. When the number is less than zero,
-then its absolute value represents the amount of space to remove from between
-the interlinear line and the preceding line.
+This formula tends to cluster associated lines together. It can be loosened
+or tightened a bit by changing the exponent (`k`). The value of `marginEm`
+should be considered the amount of margin to add/remove above or below the
+line to bind it appropriately to the proper nominal line. When the number is
+greater than zero, then it represents the amount of space to remove between
+the interlinear line and the following line. When the number is less than
+zero, then its absolute value represents the amount of space to remove from
+between the interlinear line and the preceding line.
 
 Line numbers start at zero at the top of the text zone and increase down,
 following the manner of numbering lines in text.
@@ -514,17 +553,17 @@ According to the specification:
 > normalized, and so forth. This allows the Selector to be used with
 > different formats and still have the same semantics and utility.
 
-The concept of a "character" can be problematic in Unicode implementations, but
-the Shelley-Godwin Archive does not use any characters that cause problems
-using typical JavaScript implementations in browsers.
+The concept of a "character" can be problematic in Unicode implementations,
+but the Shelley-Godwin Archive does not use any characters that cause
+problems using typical JavaScript implementations in browsers.
 
 `_sp:Target1` can be a canvas or a zone, depending on what we're associating
 the text with. The oa:hasSource property should provide the URL of the TEI
 file that we can fetch to supply the content we draw on the screen.
 
 We can constrain the target of the text annotation instead of using an
-intermediate zone if we don't want to aggregate annotations for an area of the
-canvas.
+intermediate zone if we don't want to aggregate annotations for an area of
+the canvas.
 
 #### RDF
 
@@ -600,12 +639,12 @@ _:selector1 a oax:TextOffsetSelector ;
 ```
 
 If we need additional information about the annotation, for example
-information about which hand was used in a particular section, then we can add
-a structured body to the annotation. For now, we'll not worry about that.
+information about which hand was used in a particular section, then we can
+add a structured body to the annotation. For now, we'll not worry about that.
 
-The `full` URL should be the URL of the TEI file from which we are getting the
-text that we are targeting. This should be the same URL as the TEI file we
-used in the body of the content annotations. We use this to tie these
+The `full` URL should be the URL of the TEI file from which we are getting
+the text that we are targeting. This should be the same URL as the TEI file
+we used in the body of the content annotations. We use this to tie these
 annotations to the unstructured text content annotations.
 
 For now, the OA specification has style information attached to the target
@@ -633,8 +672,8 @@ In accordance with recommendations from the Open Annotation W3C Community
 Group, the most recent Shared Canvas data model specification does not use
 different classes to indicate different types of annotations. However, the
 Archive developed its use of the Shared Canvas data model before this change
-and uses a number of classes to indicate the type of material being associated
-with the canvas.
+and uses a number of classes to indicate the type of material being
+associated with the canvas.
 
 The Shelley-Godwin Archive uses:
 
@@ -665,8 +704,8 @@ text on the canvas.
 
 Whereas the JavaScript viewer needed to calculate line numbers and relative
 positioning of text using the October, 2013, manifests, the line numbers and
-character offsets are provided in the annotation targets and determined by the
-scripts creating the manifests.
+character offsets are provided in the annotation targets and determined by
+the scripts creating the manifests.
 
 In the JSON-LD manifests, only deletions and search results use highlights.
 All other annotations, namely lines and additions, paint a text zone with the
@@ -717,8 +756,8 @@ that they are not commentary about the text.
 }]
 ```
 
-This would place the text at the range in the specified TEI file at a position
-in the text zone that is at the beginning of nominal line 3.
+This would place the text at the range in the specified TEI file at a
+position in the text zone that is at the beginning of nominal line 3.
 
 Highlight annotations are similar to the October, 2013, method:
 
@@ -772,7 +811,11 @@ The original TEI file:
 </surface>
 ```
 
-Normalized, placed into rows of ten characters bracketed by ‘[’ and ‘]’. I've collapsed tags and space into a single space except where a space seemed significant within a tag. This might not be accurate or a reasonable algorithm since we cantt know for sure what is a significant space within an element.
+Normalized, placed into rows of ten characters bracketed by ‘[’ and ‘]’.
+I've collapsed tags and space into a single space except where a space
+seemed significant within a tag. This might not be accurate or a reasonable
+algorithm since we cantt know for sure what is a significant space within an
+element.
 
 ```
 000-009 [   A12 A 1]
@@ -810,35 +853,12 @@ The Shelley-Godwin Archive augments this model with:
 
 | Vocabulary Item | JSON-LD    | Type      | Description |
 | --------------- | ---------- | --------- | ----------- |
-| sga:reading     |         | Instance  | [instance of oa:Motivation] The motivation that represents the distinction between resources that should be used as a reading text, rather than resources that should be painted onto the Canvas. |
-| sga:source      |         | Instance  | [instance of oa:Motivation] The motivation that represents the distinction between resources that represent the master TEI-GE from which the reading and painted text are derived, rather than resources that should be painted onto the Canvas. |
-| sga:adding      |         | Instance | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents text marked in the TEI transcription as being added at the target position. The added text is the body of the annotation. |
-| sga:deleting    |         | Instance | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents text marked in the TEI transcription as being deleted. The annotation is a highlight, targeting the text that is being deleted. |
-| sga:modification |        | Instnace | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents the replacement of a span of text with another text in the TEI transcription. The replacement text is the body of the annotation, and the replaced text is selected as the target. |
-
-#### sc:painting
-
-The `sc:painting` motivation is the standard motivation for annotations
-placing elements on the canvas or zone. This is used to indicate that an
-annotation with an image, zone, or text body and targeting a canvas or zone is
-linking the body to the target for the purpose of painting the body onto the
-target.
-
-This motivation replaces the sga:LineAnnotation class when the target is a
-TextZone.
-
-#### sga:reading
-
-The `sga:reading` motivation indicates annotations that connect an HTML
-document with a canvas where the HTML document represents a clean reading text
-of the associated transcription.
-
-#### sga:source
-
-The `sga:source` motivation indicates annotations that connect a TEI (XML)
-document with a canvas where the TEI document represents the scholarly digital
-transcription of the physical text in or on the artifact represented by the
-canvas.
+| sga:adding      |            | Instance  | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents text marked in the TEI transcription as being added at the target position. The added text is the body of the annotation. |
+| sga:deleting    |            | Instance  | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents text marked in the TEI transcription as being deleted. The annotation is a highlight, targeting the text that is being deleted. |
+| sga:modification |           | Instance  | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents the replacement of a span of text with another text in the TEI transcription. The replacement text is the body of the annotation, and the replaced text is selected as the target. |
+| sga:reading     |            | Instance  | [instance of oa:Motivation] The motivation that represents the distinction between resources that should be used as a reading text, rather than resources that should be painted onto the Canvas. |
+| sga:searching   |            | Instance  | |
+| sga:source      |            | Instance  | [instance of oa:Motivation] The motivation that represents the distinction between resources that represent the master TEI-GE from which the reading and painted text are derived, rather than resources that should be painted onto the Canvas. |
 
 #### sga:adding
 
@@ -858,9 +878,53 @@ faithfully reflects the intent of the TEI transcription. This allows the two
 to be linked together for a better user experience. The target should be a
 span of text within a TEI document.
 
+#### sc:painting
+
+The `sc:painting` motivation is the standard motivation for annotations
+placing elements on the canvas or zone. This is used to indicate that an
+annotation with an image, zone, or text body and targeting a canvas or zone
+is linking the body to the target for the purpose of painting the body onto
+the target.
+
+This motivation replaces the sga:LineAnnotation class when the target is a
+TextZone.
+
+#### sga:reading
+
+The `sga:reading` motivation indicates annotations that connect an HTML
+document with a canvas where the HTML document represents a clean reading
+text of the associated transcription.
+
+#### sga:source
+
+The `sga:source` motivation indicates annotations that connect a TEI (XML)
+document with a canvas where the TEI document represents the scholarly
+digital transcription of the physical text in or on the artifact represented
+by the canvas.
+
+#### sga:searching
+
+
 ## Ordering Model
 
 ### Ordered Aggregations
+
+URI pattern: http://shelleygodwinarchive.org/data/{manifest_id}/list/{name}.json
+
+Ordered aggregations of annotations or other content should be represented by
+a RDF list.
+
+#### JSON-LD
+
+```json
+{
+  id: "http://shelleygodwinarchive.org/data/{manifest_id}/list/{name}"
+  @type: "sc:AnnotationList"
+  resources: [
+    # list of annotations
+  ]
+}
+```
 
 ### Sequences
 
@@ -868,20 +932,21 @@ URL pattern: http://shelleygodwinarchive.org/data/{manifest_id}/sequences/{name}
 
 The Sequence conveys the ordering of the pages. The default sequence (and
 typically the only sequence) should be embedded within the Manifest, but may
-also be available from its own URI. Any additional sequences should be referred
-to from the Manifest but not embedded within it.
+also be available from its own URI. Any additional sequences should be
+referred to from the Manifest but not embedded within it.
 
 The {name} parameter in the URI structure is to distinguish it from any other
-sequences that may be available for the physical object. Typical default names
-are "normal" or "basic". Names should not begin with a number, as it cannot be
-the first character of an XML tag making RDF/XML serialization impossible.
+sequences that may be available for the physical object. Typical default
+names are "normal" or "basic". Names should not begin with a number, as it
+cannot be the first character of an XML tag making RDF/XML serialization
+impossible.
 
-Sequences may have their own descriptive, rights and linking metadata using the
-same fields as for Manifests. The Label field should be given for all sequences
-and must be given if there is more than one referenced from a Manifest. After
-the metadata, the set of pages in the object, represented by Canvas resources,
-are listed in order in the JSON-LD "canvases" property or the RDF list 
-construct in the October, 2013, manifests.
+Sequences may have their own descriptive, rights and linking metadata using
+the same fields as for Manifests. The Label field should be given for all
+sequences and must be given if there is more than one referenced from a
+Manifest. After the metadata, the set of pages in the object, represented by
+Canvas resources, are listed in order in the JSON-LD "canvases" property or
+the RDF list construct in the October, 2013, manifests.
 
 #### RDF
 
@@ -957,22 +1022,22 @@ _:selector1 a oa:FragmentSelector ;
 
 ## Discovery Model
 
-When using RDF (JSON, XML, or other triple-oriented serialization format), the
-application should look for the node whose URI is the same as the URI of the
-manifest file. This node MAY use `ore:describes` to point to the URI of the
-manifest node, in which case the application should use that URI for further
-discovery.
+When using RDF (JSON, XML, or other triple-oriented serialization format),
+the application should look for the node whose URI is the same as the URI of
+the manifest file. This node MAY use `ore:describes` to point to the URI of
+the manifest node, in which case the application should use that URI for
+further discovery.
 
 When using JSON-LD, the JSON document SHOULD be structured in such a way that
-the manifest node provides the primary structure of the document. For the S-GA
-Shared Canvas viewer, the JSON document MUST be structured in such a way that
-the manifest node provides the primary structure of the document.
+the manifest node provides the primary structure of the document. For the 
+S-GA Shared Canvas viewer, the JSON document MUST be structured in such a
+way that the manifest node provides the primary structure of the document.
 
 Everything that is considered part of the Shared Canvas view should be
-discoverable by following links from the manifest URI or by following links to
-the manifest URI (properties pointing from or to nodes in such a way that a
-path can be drawn from the manifest URI to the content in question regardless
-of the direction of the property). 
+discoverable by following links from the manifest URI or by following links
+to the manifest URI (properties pointing from or to nodes in such a way that
+a path can be drawn from the manifest URI to the content in question
+regardless of the direction of the property). 
 
 This is tricky when considering annotations of text when the constraints
 between target and body are not strictly equal. In those cases, the
@@ -982,10 +1047,11 @@ to what extent an annotation applies in a particular context.
 ### Annotation Lists
 
 Lists are useful for grouping related annotations that might fall across
-different layers or apply to different aspects of a digital facsimile edition.
+different layers or apply to different aspects of a digital facsimile 
+edition.
 
-Annotations may use the `within` property to assert that the annotation belongs
-in a layer.
+Annotations may use the `within` property to assert that the annotation
+belongs in a layer.
 
 ### Layers
 
@@ -1009,7 +1075,7 @@ _:layer1  sc:Layer, ore:Aggregation ;
 ```json
 {
   id: "_:layer1"
-  a "sc:Layer"
+  a: "sc:Layer"
   label: "..."
 }
 ```
@@ -1029,23 +1095,23 @@ annotations lists each of the annotations mapping the zones to the canvases.
 The text annotations are mapping the base text onto the zones. The image
 annotations are mapping the images onto the canvases.
 
-The Shared Canvas data model is evolving in a direction that removes the media
-aspect of the annotation from the decision process as to which list the
+The Shared Canvas data model is evolving in a direction that removes the
+media aspect of the annotation from the decision process as to which list the
 annotation appears in. So we will eventually get to the point where the image
-annotations aren't in a list of image annotations because they are images, but
-because the annotation list happens to revolve around a particular semantic
-relating the images to the canvas: original light, 1990 scans, 2010 scans,
-etc., providing options for someone assembling an edition.
+annotations aren't in a list of image annotations because they are images,
+but because the annotation list happens to revolve around a particular
+semantic relating the images to the canvas: original light, 1990 scans, 2010
+scans, etc., providing options for someone assembling an edition.
 
 The dc:* properties are where we can insert arbitrary Dublin Core properties
-that describe the manifest resource (e.g., who assembled the manifest - who is
-asserting that these resources should be brought together to construct a
+that describe the manifest resource (e.g., who assembled the manifest - who
+is asserting that these resources should be brought together to construct a
 scholarly edition?).
 
-The "rdfs:label" is a human readable string describing the content represented
-by the manifest. It's like a book title or similar label. According to the
-current spec (as of 20 June 2013), each manifest MUST have 1 or more
-rdfs:label properties.
+The "rdfs:label" is a human readable string describing the content
+represented by the manifest. It's like a book title or similar label.
+According to the current spec (as of 20 June 2013), each manifest MUST have
+1 or more rdfs:label properties.
 
 #### MODEL
 
@@ -1093,8 +1159,6 @@ The Shelley-Godwin Archive augments this model with:
   } ]
   canvases: [ ... ]
   structures: [ ... ]
-  images: [ ... ]
-  resources: [ ... ]
   otherContent: [ ... ]
 }
 ```
@@ -1120,9 +1184,9 @@ The Shelley-Godwin Archive understands the following service profiles:
 
 The Archive uses JPEG2000 images to provide zooming and panning using a tiled
 image viewer. All JPEG2000 URLs have a `sc:hasRelatedService` property
-providing information about the rendering server and image type. The following
-JSON-LD example assumes that more than one image will reference the djatoka
-service.
+providing information about the rendering server and image type. The
+following JSON-LD example assumes that more than one image will reference
+the djatoka service.
 
 #### RDF
 
@@ -1149,9 +1213,9 @@ service.
 
 Images that are available through a IIIF service will have a
 `sc:hasRelatedService` property pointing to the service endpoint. Images
-served through an IIIF service can be used in a panning and zooming interface.
-The following JSON-LD example assumes that more than one image will reference
-the IIIF service.
+served through an IIIF service can be used in a panning and zooming
+interface. The following JSON-LD example assumes that more than one image
+will reference the IIIF service.
 
 #### JSON-LD
 
