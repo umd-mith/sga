@@ -508,17 +508,49 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           vars: @variables 
         ).render()
       else
-        console.log 'create ImageView'
-        # @$el.append new ImageView( 
-        #   model: model 
-        #   vars: @variables 
-        # ).render().el
+        @$el.append new ImageView( 
+          model: model 
+          vars: @variables 
+        ).render().el
+        # Set the image container to relative to properly float img elements within.
+        @$el.css
+          position: 'relative'
 
     render: ->
       @
 
 
   class ImageView extends AreaView
+
+    tagName: 'img'
+
+    render: ->
+
+      x = if @model.get("x")? then @model.get("x") else @variables.get("x")
+      y = if @model.get("y")? then @model.get("y") else @variables.get("y")
+      width = if @model.get("width")? then @model.get("width") else @variables.get("width") - x
+      height = if @model.get("height")? then @model.get("height") else @variables.get("height") - x
+      s = @variables.get("scale")
+
+      @$el.attr
+        height: Math.floor(height * s)
+        width: Math.floor(width * s)
+        src: @model.get("@id")
+        border: 'none'
+      @$el.css
+        position: 'absolute'
+        top: Math.floor(y * s)
+        left: Math.floor(x * s)
+
+      # setScale = (s) ->
+      #   @$el.attr
+      #     height: Math.floor(height * s)
+      #     width: Math.floor(width * s)
+      #   @$el.css
+      #     top: Math.floor(y * s)
+      #     left: Math.floor(x * s)
+      @
+
 
   class ImageDjatokaView extends AreaView
 
