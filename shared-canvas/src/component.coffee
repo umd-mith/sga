@@ -144,7 +144,7 @@ SGAReader.namespace "Component", (Component) ->
 
         that.events.onMaxChange.addListener (n) -> 
           try 
-            if $( container ).data( "slider" ) # Is the container set?
+            if $( container ).data( "ui-slider" ) # Is the container set?
               $(container).slider
                 max : n
             else
@@ -184,7 +184,7 @@ SGAReader.namespace "Component", (Component) ->
 
         that.events.onMinChange.addListener (n) ->
           try 
-            if $( container ).data( "slider" ) # Is the container set?
+            if $( container ).data( "ui-slider" ) # Is the container set?
               $(container).slider
                 min : n
           catch e
@@ -192,7 +192,7 @@ SGAReader.namespace "Component", (Component) ->
 
         that.events.onValueChange.addListener (n) -> 
           try 
-            if $( container ).data( "slider" ) # Is the container set?
+            if $( container ).data( "ui-slider" ) # Is the container set?
               $(container).slider
                 value: that.getMax() - n
             if options.getLabel?
