@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0037" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0037.jp2"/>
+  <zone type="pagination"><line>139</line></zone>
+  <zone type="library"><line>19</line></zone>
+  <zone type="main">
+    <line>was here that the population of the country chiefly</line>
+    <line>collected. In other places human beings were seldom seen</line>
+    <line>and I generally subsisted on the wild animals that</line>
+    <line>crossed my path. I had money with me and gained the</line>
+    <line>friendship of the villagers by distributing it or bringing</line>
+    <line>with me some food that I had killed which after</line>
+    <line>taking a small part I always presented to those</line>
+    <line>who had provided me with fire and utensils for</line>
+    <line>cooking. <del rend="strikethrough">My</del>
+      <del rend="strikethrough">My life as it passed thus</del></line>
+    <milestone unit="tei:p"/><line><milestone unit="tei:note" spanTo="#c58-0037.01"/><add
+        place="intralinear" hand="#comp">F.W/</add><anchor xml:id="c58-0037.01"/>My life as it
+      passed thus was indeed hateful to</line>
+    <line>me and it was during sleep alone that I could</line>
+    <line>taste joy. Oh<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">!</add>
+      </mod> blessed sleep! often when most mise</line>
+    <line>rable I sank to repose and my dreams lulled me even</line>
+    <line>to rapture. The spirit that guarded me had provided</line>
+  </zone>
+</surface>

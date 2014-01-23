@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" queryBinding="xslt2">
+    <title>ISO Schematron: Pointer Validation</title>
+    <p>Created by: Trevor Muñoz on 2012-05-15 for the Shelley-Godwin Archive.</p>
+    <p>This schematron file checks to make sure that tei:ptr elements are actually pointing to the xml:id of another element in the document.</p>
+
+    <xsl:key name="verify-ptr-targets" match="*[@xml:id]" use="@xml:id"/>
+
+    <pattern id="ptr-targets">
+        <rule context="*[@target]">
+            <assert test="key('verify-ptr-targets', substring-after(@target, '#'))">This pointer has
+                no target in this document. The value of the target attribute on &lt;ptr&gt; must be
+                a valid xml:id for an element in this document. Without this, there is no
+                linkage!</assert>
+        </rule>
+    </pattern>
+
+</schema>

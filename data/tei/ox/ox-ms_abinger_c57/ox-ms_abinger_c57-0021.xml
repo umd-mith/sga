@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0021" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0021.jp2"/>
+  <zone type="pagination" rend="bordered"><line>20</line></zone>
+  <zone type="library"><line>11</line></zone>
+  <zone type="main">
+    <line>I sympathized in their joys. I saw few</line>
+    <line>human beings besides them, and if</line>
+    <line>any other happened to enter the cottage</line>
+    <line>their harsh <del rend="strikethrough">and rud</del> manners &amp; rude</line>
+    <line>gait only enhanced to me <del rend="strikethrough">th</del>
+      <del rend="strikethrough">my friends</del></line>
+    <line>the superior advantages of m<retrace hand="#pbs" cause="clarify">y</retrace>
+      friends.</line>
+    <line>The <del rend="strikethrough">Father</del> old man, I could percieve,</line>
+    <line>often endeavoured to encourage his</line>
+    <line>children as I sometimes found that</line>
+    <line>he called them. <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to cast off their melancholy.</add>
+      </mod> He would talk in</line>
+    <line>a cheerful accent with an <mod>
+        <del rend="strikethrough">aspect</del>
+        <add place="superlinear">expression of</add>
+      </mod></line>
+    <line><del rend="strikethrough" instant="true">godn</del> goodness that <mod>
+        <del rend="strikethrough">even</del>
+        <del rend="strikethrough">gave</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">me</del>
+        <del rend="strikethrough">delight.</del>
+        <add place="superlinear">bestowed pleasure</add>
+      </mod></line>
+    <line><anchor xml:id="c57-0021.01"/>Agatha listened with respect&#x2013; her eyes</line>
+    <line><del rend="strikethrough">f</del> somethimes filled with tears which</line>
+    <line><metamark function="displacement" xml:id="c57-0021.02"/>wipe<del rend="strikethrough"
+        >d</del> away unpercieved but I general</line>
+    <line>ly found that her manners and tone</line>
+    <line>were more cheerful after having listen</line>
+    <line>end to <del rend="strikethrough">the</del> the exhortations of her father</line>
+    <line>It was not thus with Felix. He was</line>
+    <line>always the saddest of the groupe And</line>
+    <line>even to my unpractised senses he</line>
+    <line>appeared to have suffered more</line>
+    <line>deeply than his friends. But if his</line>
+    <line>countenance was more sorrowful</line>
+    <line>his voice was more cheerful than</line>
+    <line><anchor xml:id="c57-0021.03"/>his sister<del rend="strikethrough"
+        ><unclear>es</unclear></del> expecially when he</line>
+    <line>addressed the old man&#x2014;</line>
+  </zone>
+
+  
+
+  <zone type="left_margin" corresp="#c57-0021.01">
+    <line><add>even on me; </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0021.02">
+    <line><add>she endeavoured <hi rend="sup">to</hi></add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0021.03">
+    <line><add>that of </add></line>
+  </zone>
+</surface>

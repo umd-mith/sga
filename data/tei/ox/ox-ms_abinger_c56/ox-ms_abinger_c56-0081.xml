@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0081" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0081.jp2"/>
+  <zone type="pagination" rend="bordered"><line>111</line></zone>
+  <zone type="library"><line>38</line></zone>
+  
+  <zone type="main">
+    <line><milestone unit="tei:head" spanTo="#c56-0081.04"/>Chapter 10<hi rend="sup"><hi rend="underline">th</hi></hi><anchor xml:id="c56-0081.04"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Night had closed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in</add>
+      </mod> when I arrived <del rend="strikethrough">and</del></line>
+    <line>the gates of Geneva were already <mod>
+        <del rend="strikethrough">closed</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">shut</add>
+      </mod> and</line>
+    <line>I determined to remain that night at</line>
+    <line>Secheron <anchor xml:id="c56-0081.01"/>. The <mod>
+        <del rend="strikethrough">night</del>
+        <add hand="#pbs" place="superlinear">sky</add>
+      </mod> was <mod>
+        <del rend="strikethrough">very fine</del>
+        <add hand="#pbs" place="superlinear">serene</add>
+      </mod> and</line>
+    <line><del rend="strikethrough">unable</del> as I was unable to rest I resolved</line>
+    <line>to <mod>
+        <del rend="strikethrough">walk toward</del>
+        <del rend="unmarked">s</del>
+        <add hand="#pbs" place="superlinear">visit</add>
+      </mod> the spot where m<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add hand="#pbs" place="intralinear">y</add>
+      </mod></line>
+    <line>poor William had been murdered;</line>
+    <line>as I walked I perceived a storm collecting</line>
+    <line>on the other side of the lake. I saw the</line>
+    <line>lightnings play in the most beautiful</line>
+    <line>figures and gained a summit</line>
+    <line>that I might observe <mod>
+        <del rend="strikethrough">the</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">its</add>
+      </mod> progress.</line>
+    <line>It advanced <del rend="strikethrough">slowly and</del> and I soon felt</line>
+    <line>the rain coming slowly in large</line>
+    <line>drops but its violence quickly encreased.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I quitted my seat and walk on,</line>
+    <line>although the darkness and storm aug</line>
+    <line>mented every minute and the thunder</line>
+    <line>burst <del rend="strikethrough">violently over</del> with a terrific</line>
+    <line>crash over my head &#x2014; <delSpan spanTo="#c56-0081.03" rend="strikethrough"/>William I
+      ex</line>
+    <line>cried aloud &#x2013; dear angel this is thy</line>
+    <line>funeral this thy dirge.<anchor xml:id="c56-0081.03"/> It was echoed</line>
+    <line>from Sal&#xEA;ve <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">the Jura</add>
+      </mod> and the Alps of Savoy&#x2014;</line>
+    <line>vivid flashes of lightning dazzled my</line>
+    <line>eyes, <del rend="strikethrough">and</del> illumin<mod>
+        <del rend="overwritten">ed</del>
+        <add hand="#pbs" place="intralinear">ating</add>
+      </mod> the lake; <del rend="strikethrough">and</del></line>
+    <line>then for an instant every thing</line>
+    <line>seemed of a pitchy <mod>
+        <del rend="strikethrough">black</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">darkness</add>
+      </mod>
+      <del rend="strikethrough">til</del> untill</line>
+    <line>the eye recovered itself from the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">preceeding</add>
+      </mod> flash.</line>
+    <line><del rend="strikethrough">A</del> The storm as is often the case in</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0081.01">
+    <addSpan spanTo="#c56-0081.02" hand="#pbs"/>
+    <line>a village</line>
+    <line>half a league</line>
+    <line>to the east</line>
+    <line>-ward of the city</line>
+    <anchor xml:id="c56-0081.02"/>
+  </zone>
+</surface>

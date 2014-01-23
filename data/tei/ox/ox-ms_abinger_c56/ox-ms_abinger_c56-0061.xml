@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0061" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0061.jp2"/>
+  <zone type="pagination" rend="bordered"><line>91</line></zone>
+  <zone type="library"><line>28b</line></zone>
+  <zone type="main">
+    <line>if you were <del rend="strikethrough">a</del> in an ill humour</line>
+    <line>one glance from Justine, could dissi</line>
+    <line>pate it <mod>
+        <del rend="strikethrough">from</del>
+        <add place="superlinear" hand="#pbs">for</add>
+      </mod> the same reason</line>
+    <line>that Ariosto gave concerning the</line>
+    <line>beauty of Angelica:&#x2013; she looked so</line>
+    <line>frank hearted and happy. My Aunt</line>
+    <line><mod spanTo="#c56-0061.04"/><del rend="strikethrough">was very fond of her which</del>
+      <del rend="strikethrough" next="#c56-0061.05">caused</del>
+      <add place="superlinear" hand="#pbs">concieved an attachment for her, by which she <mod>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear" hand="#pbs">was</add>
+        </mod></add>
+      <add place="superlinear">induced</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0061.05">her to</del><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to</add>
+      </mod><anchor xml:id="c56-0061.04"/> give her an<del rend="strikethrough">d</del>
+      education</line>
+    <line>superior to that which she <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">had</add>
+      </mod> at</line>
+    <line>first intended<mod>
+        <add place="intralinear" hand="#pbs">.</add>
+        <del rend="strikethrough">and she</del>
+        <add place="superlinear" hand="#pbs">This benefit</add>
+      </mod> was fully</line>
+    <line>repaid; <del rend="strikethrough">for</del> Justine was the most</line>
+    <line>grateful little creature in the</line>
+    <line>world. I do not mean that she</line>
+    <line>made any professions&#x2013;I never</line>
+    <line>heard one pass her lips <del rend="strikethrough">w</del> but</line>
+    <line>you could see by her eye that</line>
+    <line>she almost adored her protectress.</line>
+    <line>Although very gay, and in many respects</line>
+    <line>inconsiderate, yet she paid the greatest</line>
+    <line>attention to every gesture of my Aunt&#x2013;</line>
+    <line>she thought her the <mod>
+        <del rend="strikethrough">miracle</del>
+        <add place="superlinear" hand="#pbs">model</add>
+      </mod> of <mod spanTo="#c56-0061.06"/><add place="intralinear" hand="#pbs"
+      >all</add></line>
+    <line><del rend="strikethrough">perfection</del><add place="superlinear" hand="#pbs"
+        >excellence,</add><anchor xml:id="c56-0061.06"/> and endeavoured to imi-</line>
+    <line>tate her words and even her man</line>
+    <line>ners, so that <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">even</add>
+      </mod> now she <del rend="strikethrough">very</del> often <mod>
+        <del rend="strikethrough">puts</del>
+        <anchor xml:id="c56-0061.03"/>
+      </mod></line>
+    <line>me <del rend="strikethrough">in mind</del> of her. <delSpan rend="vertical_line"
+        spanTo="#c56-0061.07"/><del rend="strikethrough">You did not</del> observe</line>
+    <line>all this, nor did I at the time but</line>
+    <line>it struck me afterwards when I</line>
+    <line>reflected on the subject.<anchor xml:id="c56-0061.07"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">When my dearest Aunt died every</line>
+    <line>one was too much occupied in their</line>
+  </zone>
+  <!-- Zone continued from 0060 -->
+  <zone type="left_margin">
+    <addSpan xml:id="c56-0061.01" spanTo="#c56-0061.02" hand="#pbs"/>
+    <line>-tinction<del rend="strikethrough">s</del> between</line>
+    <line>the classes into</line>
+    <line>which human</line>
+    <line>beings have</line>
+    <line>been divided,</line>
+    <line>&#x26; the lower</line>
+    <line>orders being</line>
+    <line>neither so poor</line>
+    <line>nor so despised</line>
+    <line>are more</line>
+    <line>refined &#x26; moral.</line>
+    <line>A servant at</line>
+    <line>Geneva does</line>
+    <line>not mean the</line>
+    <line>same thing as</line>
+    <line>a servant in</line>
+    <line>France or England</line>
+    <line>&#x2014;Justine <del rend="strikethrough"><hi rend="underline">was</hi></del></line>
+    <line>thus recieved into</line>
+    <line>our family to</line>
+    <line>learn the duties</line>
+    <line>of a servant, which</line>
+    <line>in our fortunate</line>
+    <line>country does not</line>
+    <line>include a sacri</line>
+    <line>-fize of the digni</line>
+    <line>-ty of a human</line>
+    <line>being.<anchor xml:id="c56-0061.02"/></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0061.03">
+    <line><add hand="#pbs"/>reminds</line>
+  </zone>
+</surface>

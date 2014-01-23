@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c58-0002" ulx="0" uly="0" lrx="5408" lry="6680"
+    partOf="#ox-ms_abinger_c58">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0002.jp2"/>
+    <zone type="pagination"><line>100</line></zone>
+    <zone type="main">
+        <line>sentence, and on that night would the d&#xE6;mon employ</line>
+        <line>every art to destroy me and tear me from the</line>
+        <line><mod>
+                <del rend="strikethrough">p</del>
+                <add><metamark function="insert">^</metamark></add>
+                <add place="superlinear">glimse of</add>
+            </mod> happiness which promised <del rend="strikethrough">to</del> partly to <del
+                rend="strikethrough">so</del> console</line>
+        <line>my sufferings. On that night he had determined</line>
+        <line>to consummate his crimes by my death. Well be it so;</line>
+        <line>a deadly strugle would then assuredly take place</line>
+        <line>where if he <del rend="strikethrough" instant="true">wer</del>
+                <mod><del rend="strikethrough">should be</del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">was</add>
+            </mod> victorious I should be at</line>
+        <line>peace and his power over me be at an end. If </line>
+        <line>he were vanquished I should <add place="sublinear" hand="#comp"><metamark
+                    function="insert">^</metamark></add><add place="superlinear" hand="#comp"
+                >be</add> a free man. Alas!</line>
+        <line>what freedom; such as the peasant enjoys when</line>
+        <line>his family have been massacred before his</line>
+        <line>eyes, his cottage burnt, his lands <add place="superlinear" hand="#comp">laid</add>
+            waste, and he is</line>
+        <line>turned adrift homeless pennyless and alone, but </line>
+        <line>free. Such would be my liberty except that in</line>
+        <line>my <del rend="strikethrough">libert</del> Elizabeth I possessed a treasure,
+            alas!</line>
+        <line>balanced by the horrors of remorse and guilt</line>
+        <line>which would pursue me untill death.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Sweet and beloved Elizabeth! I read and re-</line>
+        <line>read her letter and some softened feelings stole</line>
+    </zone>
+</surface>

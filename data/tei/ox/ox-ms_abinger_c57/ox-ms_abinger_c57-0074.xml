@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57-0074" xml:id="ox-ms_abinger_c57-0074" ulx="0" uly="0" lrx="5138"
+  lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0074.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>98</line>
+  </zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0074.06"/>Chap. 10<hi rend="underline">th</hi><anchor xml:id="c57-0074.06"/></line>
+    <line>Day after day, week after week passed <add place="superlinear">away</add> on</line>
+    <line>my return to Geneva and I had not the</line>
+    <line>courage to commence my work. I feared the</line>
+    <line>vengeance of the disappointed fiend yet</line>
+    <line>I <mod>
+        <del rend="strikethrough">could not</del>
+        <add place="superlinear" hand="#pbs">I was unable to</add>
+      </mod> overcome my repugnance <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to the task</add>
+      </mod>. <add place="intralinear"><metamark function="displacement" xml:id="c57-0074.01"><hi
+            rend="sup">X</hi>1</metamark></add></line>
+    <line>My health <del rend="strikethrough">also</del> which had hitherto declined</line>
+    <line>was now much restored, &amp; my spirits when</line>
+    <line>unchecked by the memory of my unhappy</line>
+    <line>promise, rose propor<mod>
+        <del rend="overwritten">it</del>
+        <add place="intralinear">ti</add>
+      </mod>onably. My father</line>
+    <line>saw this with pleasure and he turned his</line>
+    <line>thoughts towards the best me<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">t</add>
+      </mod>hod of</line>
+    <line>eradicating the remains of my melancholy&#x2013;</line>
+    <line>which every now and then would return</line>
+    <line>by fits &amp; with a devouring blackness over</line>
+    <line>cast the approaching <mod>
+        <del rend="strikethrough">day</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">sunshine</add>
+      </mod>. At these</line>
+    <line>moments I took refuge in the most</line>
+    <line>perfect solitude: <del rend="strikethrough">&amp; my deli</del>
+      <del rend="strikethrough">I used to</del>
+      <milestone unit="tei:seg" spanTo="#c57-0074.02" xml:id="c57-0074.03"/>Alone</line>
+    <line>in a little boat<anchor xml:id="c57-0074.02"/>
+      <milestone unit="tei:seg" spanTo="#c57-0074.04" xml:id="c57-0074.05"/>I passed whole days
+      on</line>
+    <line>the lake<anchor xml:id="c57-0074.04"/><listTranspose>
+        <transpose>
+          <ptr target="#c57-0074.05"/>
+          <ptr target="#c57-0074.03"/>
+        </transpose>
+      </listTranspose> watching the clouds &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">listening to</add>
+      </mod> the ripp<mod>
+        <del rend="overwritten">les</del>
+        <add place="intralinear" hand="#pbs">ling</add>
+      </mod></line>
+    <line>of the waves, silent &amp; listless. But the fresh</line>
+    <line>air and bright sun seldom failed <add place="intralinear" hand="#pbs">to</add></line>
+    <line>restore me to some degree of compo-</line>
+    <line>sure &amp; <del rend="strikethrough">I</del> on my return I met the</line>
+    <line><del rend="strikethough">smi</del> salutations of my friends with a</line>
+    <line>readier smile, &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">a</add>
+      </mod> more cheerful heart</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">It was after my return from one</line>
+    <line>of the<add place="intralinear">se</add> rambles that my father calling</line>
+    <line>me aside thus a<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">d</add>
+      </mod>dressed me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I am happy to remark, my dear</line>
+    <line>son, that <del rend="strikethrough">lately</del> you have <del rend="strikethrough"
+        instant="true">acqu</del></line>
+    <line>resumed your former pleasures &amp; seem</line>
+    <line>to be returning to yourself. And yet</line>
+    <line><del rend="strikethrough"><unclear reason="illegible">so</unclear></del> you are still
+      unhappy &amp; still avoid</line>
+    <line>our society. <del rend="strikethrough">When I consider</del> For some time</line>
+  </zone>
+</surface>

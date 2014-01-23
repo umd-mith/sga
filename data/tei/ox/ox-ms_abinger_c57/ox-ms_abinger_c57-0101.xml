@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0101" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0101.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>117</line>
+  </zone>
+  <zone type="library">
+    <line>51</line>
+  </zone>
+  <zone type="main">
+    <line><anchor xml:id="c57-0101.01"/>as it was I <del rend="strikethrough">arrived</del> lived
+      ungazed at</line>
+    <line>and unmolested, hardly thanked for the</line>
+    <line>pittance of food and clothes which I gave</line>
+    <line>so much does suffering blunt even</line>
+    <line>the coarsest sensations of men.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><del rend="strikethrough">I now applied myself to my creation</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">In this retreat I devoted the mor</line>
+    <line>ning to labour, but in the evening,</line>
+    <line>when the weather permitted I walked</line>
+    <line>on the stony beach of the sea to listen</line>
+    <line>to the waves as they roared &amp; dashed at</line>
+    <line>my feet; It was a monotonous yet</line>
+    <line>ever changing scene. I thought of Swit</line>
+    <line>zerland; It was far different from</line>
+    <line>this desolate &amp; appalling <mod>
+        <del rend="strikethrough">scene</del>
+        <add place="superlinear">landscape</add>
+      </mod> &#x2013;Its</line>
+    <line>hills are covered with vines &amp; its</line>
+    <line>cottages are scattered thi<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">c</add>
+      </mod>kly in the</line>
+    <line>plains&#x2014; Its fair lakes reflect a</line>
+    <line>blue &amp; gentle sky &amp; when troubled</line>
+    <line>by the winds it is but the play of</line>
+    <line>a lively infant when compared</line>
+    <line>to the roarings of the giant ocean.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><mod>
+        <add place="intralinear">In</add>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">t</add>
+      </mod>his <del rend="strikethrough">was at first</del> manner I</line>
+    <line>distributed my occupations when I first</line>
+    <line>arrived; but <add place="superlinear">as</add> I proceeded in my work it</line>
+    <line>became every day more horrible &amp; irksome</line>
+    <line>to me. Sometimes I could <del rend="strikethrough"><unclear unit="chars" extent="2"
+          reason="illegible"/></del> not prevail</line>
+    <line>on myself to enter my <mod>
+        <del rend="strikethrough">workshop</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">laboratory</add>
+      </mod> for several</line>
+    <line>days and at other times I <mod>
+        <del rend="strikethrough">laboured</del>
+        <add hand="#pbs" place="superlinear">toiled</add>
+      </mod> day &amp;</line>
+    <line>night in order to <mod>
+        <del rend="strikethrough">finish</del>
+        <add hand="#pbs" place="superlinear">complete</add>
+      </mod> it. It was indeed</line>
+    <line>a <del rend="strikethrough" instant="true">filhthy</del> filthy work in which I was
+      en-</line>
+    <line>gaged. <mod>
+        <del rend="strikethrough">In</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">During</add>
+      </mod> my first experiment a kind of</line>
+    <line>enthusiastic frenzy <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">had</add>
+      </mod> blinded me to the</line>
+    <line>horror of my employment; my mind was</line>
+    <line>intently fixed on the sequel of my labour</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0101.01">
+    <addSpan spanTo="#c57-0101.02"/>
+    <line>and squalid</line>
+    <line>poverty; </line>
+    <anchor xml:id="c57-0101.02"/>
+  </zone>
+</surface>

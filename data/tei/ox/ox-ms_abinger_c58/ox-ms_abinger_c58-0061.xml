@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0061" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0061.jp2"/>
+  <zone type="pagination">
+    <line>185</line>
+  </zone>
+  
+  
+  <zone type="library">
+    <line>(W<unclear reason="illegible">m</unclear>.)</line>
+    <line>31</line>
+  </zone>
+  <zone type="main">
+    <line><del rend="strikethrough"><add hand="#library">A11</add></del></line>
+    <handShift medium="pen" new="#mws"/>
+    <line>whilst I destroyed his hopes, I did not satisfy my own</line>
+    <line>desires. They were forever ardent and craving; <del rend="strikethrough"
+      >still</del></line>
+    <line>Still I desired love and fellowship, and I was still</line>
+    <line>spurned. W<mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">a</add>
+      </mod>s there no injustice in this? Am I to</line>
+    <line>be thought the only criminal when all human</line>
+    <line>kind sinned against me? Why do you not hate Fe</line>
+    <line>-lix who drove his friend from his door with contumely?</line>
+    <line>Why do you not execrate the rustic who sought</line>
+    <line>to destroy the saviour of his child? Nay, these are</line>
+    <line>virtuous and immalculate beings! I, the miserable</line>
+    <line>and the abandoned am an abortion to be spurned</line>
+    <line>at and kicked and trampled on. Even now my</line>
+    <line>blood boils at the recollection of this injustice.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">But i<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">t</add>
+      </mod> is true that I am a <del rend="strikethrough" instant="true">wrecth</del>
+      wretch.</line>
+    <line>I have murdered the lovely and the helpless. I have</line>
+    <line>strangled the innocent as they slept and grasped</line>
+    <line>to death his throat who never injured me or any</line>
+  </zone>
+</surface>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0028" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0028.jp2"/>
+  <zone type="pagination"><line>130</line></zone>
+  <zone type="main">
+    <line>you do not credit my narrative, and do not intend to</line>
+    <line>pursue my enemy with the punishment which</line>
+    <line>is his desert.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">As I spoke rage sparkled in my eyes; the ma-</line>
+    <line>gistrate was intimidated; <mod>
+        <del rend="overwritten">Y</del>
+        <add place="intralinear">y</add>
+      </mod>ou are mistaken, said</line>
+    <line>he, I will exert myself and if it is in my power to</line>
+    <line>seize the monster be assured that he shall suffer</line>
+    <line>punishment proportionate to his crimes. But I</line>
+    <line>fear from what you have yourself described</line>
+    <line>to be his properties that this will prove impracti</line>
+    <line>cable and that, while every proper measure is</line>
+    <line>pursued, you should endeavour to make up your mind</line>
+    <line>to a disappointment.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">That cannot be; but all that I can say will be</line>
+  </zone>
+</surface>

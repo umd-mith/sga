@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0058" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0058.jp2"/>
+  <zone type="pagination" rend="bordered"><line>88</line></zone>
+  <zone type="main">
+    <line>ness we have all felt concerning your</line>
+    <line>health<unclear>.</unclear> We cannot help imagining that</line>
+    <line>your friend Clerval conceals the ex</line>
+    <line>tent of your disorder, for it is now</line>
+    <line>several months since we have seen</line>
+    <line>your handwriting and all this time</line>
+    <line>you have been obliged to dictate to</line>
+    <line>Henry &#x2013; Surely Victor you must have</line>
+    <line>been very ill<mod>
+        <add place="superlinear">and this makes us very wretched as much so <metamark
+            function="displacement" xml:id="c56-0058.01">X</metamark></add></mod>. My father was almost</line>
+    <line>persuaded <mod>
+        <del rend="strikethrough">of this</del>
+        <add place="superlinear" hand="#pbs">that you were indeed dangerously ill,</add>
+      </mod> and could hardly</line>
+    <line><add place="superlinear" hand="#pbs">be</add> re<mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">st</add>
+      </mod>rain<add place="intralinear" hand="#pbs">ed</add> from <mod>
+        <add place="sublinear"><metamark function="insert">&#2038;</metamark></add>
+        <add place="superlinear" hand="#pbs">undertaking</add>
+      </mod> a journey to Ingolstadt.</line>
+    <line><del rend="strikethrough">I</del>
+      <del next="#c56-0058.02">but I entreated him not</del><del rend="strikethrough"><add
+          place="superlinear" hand="#pbs">to undertake it</add></del>
+      <del rend="strikethrough" xml:id="c56-0058.02" next="#c56-0058.03">because</del><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">for</add></del>
+      </mod></line>
+    <line><del rend="strikethrough" xml:id="c56-0058.03">although</del>
+      <delSpan spanTo="#c56-0058.04" rend="vertical_line"/>his health is better now</line>
+    <line>tha<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">n</add>
+      </mod> it has been since the death</line>
+    <line>of My beloved Aunt, yet <mod>
+        <del rend="strikethrough">tha</del>
+        <add place="superlinear">the</add>
+      </mod> fatigue</line>
+    <line>might <add place="superlinear" hand="#pbs">have</add><anchor xml:id="c56-0058.04"/>
+      <del rend="strikethrough">make him very ill</del>
+      <del rend="strikethrough">and</del></line>
+    <line>Clerval always wr<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">i</add>
+      </mod>te<add place="intralinear">s</add> that you</line>
+    <line>were getting better <mod>
+        <del rend="strikethrough">and</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">I</del>
+        <add place="superlinear">I <del rend="strikethrough">arden</del> eagerly</add>
+      </mod> hope you</line>
+    <line>will confirm this<add place="superlinear" hand="#pbs">intelligence</add> soon in your
+      own</line>
+    <line>handwriting for indeed, indeed Victor</line>
+    <line>we are all very <mod>
+        <del rend="strikethrough">uneasy</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">miserable on this account</add>
+      </mod>. Relieve</line>
+    <line>us from this fear and we shall</line>
+    <line>be the happiest creatures in the</line>
+    <line>world.&#x2013; My uncles health <del rend="strikethrough">impro</del> is</line>
+    <line>now <mod>
+        <del rend="strikethrough">well &#x26;</del>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs"
+          ><unclear>far</unclear></add></del>
+      </mod> vigorous that he appears</line>
+    <line>ten years younger since last</line>
+    <line>winter. Ernest also is so much im</line>
+    <line>proved, <del rend="strikethrough"><add place="intralinear" hand="#pbs">so</add></del> that
+      you would hardly</line>
+    <line>know him; he is now nearly sixteen</line>
+    <line>you know and has <del rend="strikethrough">quite</del> lost that</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0058.01">
+    <addSpan spanTo="#c56-0058.05"/>
+    <line>nearly as <del rend="strikethrough">t</del></line>
+    <line>after the death</line>
+    <line>of your dear</line>
+    <line>mother</line>
+    <anchor xml:id="c56-0058.05"/>
+  </zone>
+</surface>

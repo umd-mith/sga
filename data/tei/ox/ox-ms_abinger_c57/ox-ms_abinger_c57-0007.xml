@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0007" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0007.jp2"/>
+  <zone type="pagination" rend="bordered"><line>6</line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c57-0007.01"/>and wrapp<mod>
+        <del rend="overwritten"><unclear>r</unclear></del>
+        <add place="intralinear">i</add>
+      </mod>ng myself up in my cloak</line>
+    <line>I struck across the wood towards the</line>
+    <line>setting sun &#x2013; I passed three days in these</line>
+    <line>rambles and at length discovered the</line>
+    <line>open country &#x2013; A great fall of snow had</line>
+    <line>taken place the night before and the</line>
+    <line>fields were of one uni<del rend="strikethrough">n</del>form white the</line>
+    <line>appearrance was disconsolate and I</line>
+    <line>found my feet chilled by the cold <del rend="strikethrough">dab</del></line>
+    <line>damp <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">substance that covered the</add>
+      </mod> ground &#x2013; It was about seven in</line>
+    <line>the morning and I longed to obtain food</line>
+    <line>and shelter. At length I perceived <del rend="strikethrough">in</del> a</line>
+    <line>small hut which had <del rend="strikethrough"><unclear>b</unclear></del> doubtless
+      been</line>
+    <line>built for the convenience of <del rend="strikethrough">the</del></line>
+    <line>some sheph<add place="intralinear">e</add>ard. This was a new sight</line>
+    <line>to me and I examined the <del rend="strikethrough">stu</del> struc</line>
+    <line>ture of it with great curiosity. <del rend="strikethrough">and</del></line>
+    <line>finding the door open I entered. An old</line>
+    <line>man sat <del rend="strikethrough">it</del> in it, near a fire <mod>
+        <del rend="strikethrough">on</del>
+        <add place="superlinear" hand="#pbs">over</add>
+        <del rend="strikethrough"><add place="superlinear">by</add></del>
+      </mod></line>
+    <line>which he was preparing his breakfast</line>
+    <line>he turned <del rend="strikethrough">of</del> on hearing a noise <del rend="strikethrough"
+        >&#x26;</del>
+      <del rend="strikethrough">on</del></line>
+    <line><anchor xml:id="c57-0007.03"/>perceiving <add place="superlinear">me</add>
+      shrieked loudly and quiting</line>
+    <line>the hut ran across the fields with</line>
+    <line>a speed <del rend="strikethrough">little</del> of which his debilitated form</line>
+    <line>hardly appeared capable<mod>
+        <add place="intralinear">.</add>
+        <del rend="strikethrough">of</del>
+      </mod> His flight</line>
+    <line>somewhat surprised me &#x2013; but I was</line>
+    <line>inchanted with the appearance of the</line>
+    <line>hut. Here the snow and rain could not</line>
+    <line>penetrate &#x2013; the ground was dry <delSpan spanTo="#c57-0007.04" rend="strikethrough"
+      />and wind</line>
+    <line>expelled<anchor xml:id="c57-0007.04"/> and it <mod>
+        <del rend="strikethrough">appeared</del>
+        <add place="superlinear">presented</add>
+      </mod> to me then</line>
+    <line>as <del rend="strikethrough">heavenly and divine</del> exquisite &#x26; di</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0007.01">
+    <addSpan spanTo="#c57-0007.02" hand="#pbs"/>
+    <line>relinquish all</line>
+    <line>attempts to</line>
+    <line>supply it, </line>
+    <anchor xml:id="c57-0007.02"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0007.03">
+    <line><add>and </add></line>
+  </zone>
+</surface>

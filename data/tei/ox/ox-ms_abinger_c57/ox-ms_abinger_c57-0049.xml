@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0049" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0049.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>74</line>
+  </zone>
+  <zone type="library">
+    <line>25</line>
+  </zone>
+  <zone type="main">
+    <line>I am poor and an exile, but it</line>
+    <line>will afford me true pleasure to <del rend="strikethrough">of</del> be</line>
+    <line><anchor xml:id="c57-0049.01"/>service<add place="intralinear">able</add> to a <mod>
+        <del rend="strikethrough">fellow</del>
+        <add place="superlinear" hand="#pbs">human</add>
+      </mod> creature.&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Excellent man &#x2013; exclaimed I, I</line>
+    <line>thank you and accept your <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">generous</add>
+      </mod> offer</line>
+    <line><add place="superlinear"><metamark function="displacement" xml:id="c58-0049.02"
+          >X</metamark></add>I trust <del rend="strikethrough">now</del> that I shall not be
+      driven</line>
+    <line>from the society &amp; sympathy of my</line>
+    <line>fellow creatures</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Heaven forbid! even if you <mod>
+        <del rend="strikethrough">are</del>
+        <add place="superlinear">were</add>
+      </mod> really</line>
+    <line>criminal for that<del rend="strikethrough"><add place="superlinear">not in</add></del> can
+      only drive you</line>
+    <line>to desperation and not <mod>
+        <del rend="strikethrough">reform</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">instigate</add>
+      </mod> you <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to virtue</add>
+      </mod> &#x2014;</line>
+    <line>I also am unfortunate.&#x2013; I<del rend="strikethrough"><unclear unit="chars" extent="1"
+        /></del> and my</line>
+    <line>family have been condemned <del rend="strikethrough">when</del></line>
+    <line>although innocent judge therefore</line>
+    <line>if I do not <del rend="strikethrough">sympath</del> feel for your</line>
+    <line>misfortunes&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">How can I thank you, my best &amp;</line>
+    <line>only benefactor &#x2013; from your lips first</line>
+    <line>have I heard the voice of kindness</line>
+    <line>directed towards me &#x2013;I shall be for</line>
+    <line>ever grateful and your present</line>
+    <line>humanity assures me of success with</line>
+    <line>the friends whom I am on the</line>
+    <line>point of meeting</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">May I know the names <del rend="strikethrough">of</del> and
+      residence</line>
+    <line>of those friends? asked De Lacey.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I paused &#x2014; This was the moment</line>
+    <line>of decision which was to rob me <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">of</add>
+      </mod> or</line>
+    <line>bestow happiness <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">on me</add>
+      </mod> for ever &#x2013; <del rend="strikethrough">I <unclear>sum</unclear></del></line>
+    <line>I struggled vainly <del rend="strikethrough">to find</del> for firmness</line>
+    <line><mod>
+        <anchor xml:id="c57-0049.04"/>
+        <del rend="strikethrough">enough</del>
+      </mod> to answer him &#x2013; <del rend="strikethrough">but</del> the effort</line>
+    <line>destroyed all my remaining stren<del rend="strikethrough">t</del>gth</line>
+    <line><del rend="strikethrough">&amp;</del> I sank on <del rend="strikethrough">the</del> a
+      chair &amp; sobbed aloud</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0049.01">
+    <line><add>in any way </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0049.02">
+    <addSpan spanTo="#c57-0049.03"/>
+    <line><metamark><hi rend="sup">X</hi></metamark>You raise me</line>
+    <line>from the dust</line>
+    <line>by this kindess and </line>
+    <anchor xml:id="c57-0049.03"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0049.04">
+    <line><add>sufficient </add></line>
+  </zone>
+
+</surface>

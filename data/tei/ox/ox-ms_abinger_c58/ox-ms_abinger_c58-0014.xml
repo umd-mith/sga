@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0014" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0014.jp2"/>
+  <zone type="pagination"><line>116</line></zone>
+  <zone type="main">
+    <line>while my right hand grasped a pistol which</line>
+    <line>was hidden in my bosom; every sound terrified</line>
+    <line>me but I <del rend="strikethrough">s</del> resolved that I would sell my life</line>
+    <line><del rend="strikethrough">as</del> dearly <del rend="strikethrough">as possible</del> and
+      not relax the impending</line>
+    <line>conflict untill my own life, or that of my adversa</line>
+    <line>ry were extinguished.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Elizabeth observed my agitation for some</line>
+    <line>time in timid and fearful silence; at length she</line>
+    <line>said, What is it that agitates you<del rend="strikethrough"><unclear>r</unclear></del>, my
+      dear Victor?</line>
+    <line>What is it you fear?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Oh! peace, peace, my love, replied I, this night</line>
+    <line>and all will be safe; but this night is dreadful,</line>
+    <line><unclear>&#x2014;</unclear>very dreadful.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I passed an hour in this state of mind when</line>
+  </zone>
+</surface>

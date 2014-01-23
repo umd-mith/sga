@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0017" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0017.jp2"/>
+  <zone type="pagination"><line>1<mod><del rend="overwritten">0</del><add place="intralinear">1</add></mod>9</line></zone>
+  <zone type="library"><line>9</line></zone>
+  <zone type="main">
+    <line>a breathless terror but the horror of others appear</line>
+    <line>ed only as a mockery, a shadow of the feelings that op-</line>
+    <line>pressed me. I escaped from them to the room where</line>
+    <line>lay the body of Elizabeth, my love, my wife; so lately</line>
+    <line>living, so dear, so worthy. She had been moved from</line>
+    <line>the posture in which I had first beheld her, <add place="intralinear">and</add></line>
+    <line>now as she lay her head upon her arm, and a</line>
+    <line>handkerchief thrown across her face and neck I</line>
+    <line>might have supposed her asleep. I rushed towards</line>
+    <line>her, and embraced her with adrour but the <del rend="strikethrough">dealthy</del></line>
+    <line>dealthy languour of the limbs told me that what</line>
+    <line>I now held in my arms had ceased to be the Eliza</line>
+    <line>beth whom I had loved and cherished; the <add hand="#comp" place="superlinear"><milestone
+          unit="tei:note" spanTo="#c58-0017.01"/>[Vol. III-G 121]<anchor xml:id="c58-0017.01"
+        /></add>
+      <add hand="#comp" place="intralinear"><metamark function="paragraph"
+      >[</metamark></add>murder</line>
+    <line>rous mark of the fiend's grasp was on her neck,</line>
+    <line>and the breath had ceased to issue from her lips.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">While I still hung over her in the agony of</line>
+    <line>despair, I happened to look up. The <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">windows of the</add>
+      </mod> room had</line>
+    <line>before been darkened, and I felt a kind of panic on</line>
+    <line>seeing the pale yellow light of the moon illuminate</line>
+  </zone>
+</surface>

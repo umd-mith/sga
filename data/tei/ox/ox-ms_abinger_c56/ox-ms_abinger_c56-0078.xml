@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0078" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0078.jp2"/>
+  <zone type="pagination" rend="bordered"><line>108</line></zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Clerval spoke this as we huried</line>
+    <line><del rend="strikethrough">thou</del> through the streets the words</line>
+    <line>impressed themselves on my <del rend="strikethrough">memor</del></line>
+    <line>mind and I remembered them afterwads</line>
+    <line>in solitude. <del rend="strikethrough">As soon</del> But now, as soon</line>
+    <line>as the horses arrived I hurried into</line>
+    <line>a Cabriolet and <del rend="strikethrough">left Ingo</del> bad fare</line>
+    <line>well to my friend.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My journey was very melancholy.</line>
+    <line>At first I wished to hurry on for I longed</line>
+    <line>to console &#x26; sympathize <add place="superlinear">with</add>my loved and</line>
+    <line>sorrowing friends but when I drew</line>
+    <line>near my <del rend="strikethrough">t</del> native town I sla<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">c</add>
+      </mod>kened</line>
+    <line>my <mod>
+        <del rend="strikethrough">pace</del>
+        <add place="superlinear" hand="#pbs">progress</add>
+      </mod>. <del rend="strikethrough">I</del>
+      <del rend="strikethrough">C</del> I could hardly sustain</line>
+    <line>the multitude of feelings that</line>
+    <line><del rend="strikethrough">crowed</del> crowded into my mind. I passed</line>
+    <line>though <del rend="strikethrough">scee</del> scenes familiar to my youth</line>
+    <line>but which I had not seen for nearly</line>
+    <line>five years, how altered every thing might</line>
+    <line>be <mod>
+        <del rend="strikethrough">during</del>
+        <add place="superlinear" hand="#pbs">since</add>
+      </mod>that time<add place="intralinear" hand="#pbs">?</add> one great sudden</line>
+    <line>and desolating change had taken place</line>
+    <line>but a thousand little circumstance</line>
+    <line>might have <mod>
+        <del rend="strikethrough">sapped</del>
+        <del rend="strikethrough"><add place="superlinear">worked</add></del>
+      </mod> by <del rend="strikethrough">degreed</del> degrees</line>
+    <line><mod>
+        <del rend="strikethrough">worked</del><add place="superlinear">worked other<del rend="strikethrough">s</del></add>
+      </mod>
+      <del rend="strikethrough"><unclear>t</unclear></del>
+      <del rend="strikethrough">as great</del> alterations <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">which</add>
+      </mod> although</line>
+    <line>it might be done more tranquilly would</line>
+    <line>not be less de<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">c</add>
+      </mod>isive. Fear overc<retrace cause="clarify">a</retrace>me me</line>
+    <line>I dared <del rend="strikethrough">had</del>
+      <del rend="strikethrough">N</del> not advance <del rend="strikethrough">fea</del>
+      dreading</line>
+    <line>a <del rend="strikethrough">thoug</del> thousand nameless evils that</line>
+    <line>made me tremble <mod>
+        <del rend="strikethrough">while</del>
+        <add place="superlinear">although</add>
+      </mod> I <mod>
+        <del rend="strikethrough">could not</del>
+        <add place="superlinear">was unable</add>
+      </mod></line>
+  </zone>
+  
+</surface>

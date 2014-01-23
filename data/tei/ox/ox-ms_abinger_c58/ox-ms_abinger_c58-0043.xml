@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0043" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0043.jp2"/>
+  <zone type="pagination"><line>155</line></zone>
+  <zone type="library"><line>22</line></zone>
+  <zone type="main">
+    <line>to encrease your own.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Frankenstein discovered <mod>
+        <del rend="strikethrough">or</del>
+        <add place="sublinear" hand="#comp"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#comp">that I</add>
+      </mod> made notes concern</line>
+    <line>-ing his history; he asked to see them and then</line>
+    <line>himself <del rend="stikethrough">as</del> corrected and augmented them in many</line>
+    <line>places, but principally in giving the life and spirit</line>
+    <line>to the conversations he held with his enemy. Si<retrace cause="clarify"
+      >n</retrace>ce</line>
+    <line>you <del rend="strikethrough">y</del> have preserved my narration, said he, I</line>
+    <line>would not that a mutilated one should go down</line>
+    <line>to posterity.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Thus <del rend="strikethrough">as</del> has a week passed away while I
+      have</line>
+    <line>listened to the strangest tale that ever imagination</line>
+    <line>formed. My thoughts and every feeling of my soul have</line>
+    <line>been drunk up by the interrest for my guest which</line>
+    <line>this tale and his own elevated and gentle manners</line>
+  </zone>
+</surface>

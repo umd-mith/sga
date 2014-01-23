@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0030" ulx="0" uly="0" lrx="5408" lry="6680"
+  partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0030.jp2"/>
+  <zone type="pagination"><line>132</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c58-0030.01"/>Chapter <mod><del rend="strikethrough">7</del><add place="intralinear">VII</add></mod><anchor xml:id="c58-0030.01"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My present situation was one in which all vo-</line>
+    <line>luntary thought was swallowed up and lost. I was hur-</line>
+    <line>ried away by fury; revenge alone endowed me with</line>
+    <line>strength and composure, it modelled my feelings and</line>
+    <line>allowed me to be <del rend="strikethrough">call</del> calculating and calm at
+      periods</line>
+    <line>when otherwise delirium or death would have</line>
+    <line>been my portion. <milestone unit="tei:p"/><add place="intralinear" hand="#comp"><metamark
+          function="paragraph">[</metamark></add>My first resolution was to quit</line>
+    <line>Geneva for ever; my country, which when I was</line>
+    <line>happy and beloved was dear to me, now in my</line>
+    <line>adversity became <del rend="strikethrough">hurf</del>
+      <del rend="strikethrough">hurtful</del> hateful. I provided</line>
+    <line>myself with a sum of money together with a few</line>
+    <line>jewels which had belonged to my mother and departed.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><add place="intralinear" hand="#comp"><metamark
+          function="paragraph">[</metamark></add>And now my wanderings began which are to
+      cease</line>
+  </zone>
+</surface>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0077" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0077.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>99</line>
+  </zone>
+  <zone type="library">
+    <line>39</line>
+  </zone>
+  <zone type="main">
+    <line>I was lost in conjecture as to the cause</line>
+    <line>of this but yesterday <del rend="strikethrough">t</del> an idea struck</line>
+    <line>me and if it is well founded I conjure</line>
+    <line>you to avow it <del rend="strikethrough">to me.</del>
+      <del rend="strikethrough">For</del> secresy on</line>
+    <line>such a point would <add place="superlinear" hand="#pbs">not only</add> be useless <mod
+        spanTo="#c57-0077.01"/><del rend="strikethrough" next="#c57-0077.02">&amp; only</del><add
+        place="superlinear" hand="#pbs" next="#c57-0077.03">but</add></line>
+    <line><del xml:id="c57-0077.02" rend="strikethrough">bring</del><add place="superlinear"
+        hand="#pbs" xml:id="c57-0077.03">draw</add><anchor xml:id="c57-077.01"/><anchor
+        xml:id="c57-0077.04"/> down <del rend="strikethrough" instant="true">trem</del> treble
+      misery on us</line>
+    <line>all.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I trembled violently at this exordium,</line>
+    <line>and my father continued. <mod>
+        <del rend="strikethrough">It is true, my</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I confess</add>
+      </mod> my</line>
+    <line>son, that I have always looked forward</line>
+    <line>to your marriage with your cousin</line>
+    <line>as the tie of our domestic comfort &amp;</line>
+    <line>the stay of my declining years. You<del rend="strikethrough">r</del> were</line>
+    <line>attached to <del rend="strikethrough">y</del> each other from your</line>
+    <line>earliest infancy; <unclear reason="case">Y</unclear>ou studied together</line>
+    <line>and appeared in disposition<add place="intralinear">s</add> &amp; <del
+        rend="strikethrough">in</del> tastes</line>
+    <line>entirely suited for one another. But</line>
+    <line>so blind is the <del rend="strikethrough">best</del> experience of man</line>
+    <line>that what I conceived to be the best</line>
+    <line>assistants to my plan may have</line>
+    <line>entirely destroyed it,<del rend="strikethrough">&#x2013;</del> you <mod>
+        <del rend="strikethrough">may</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">perhaps</add>
+      </mod> regard</line>
+    <line>her as your sister without any wish</line>
+    <line>that she might become your wife.</line>
+    <line>Nay you may have met with another</line>
+    <line>whom you may love <mod>
+        <del rend="strikethrough">but</del>
+        <add place="sublinear">^</add>
+        <add place="superlinear" hand="#pbs">and</add>
+      </mod> considering</line>
+    <line>yourself as bound in honor to you<add place="intralinear">r</add></line>
+    <line>cousin, this feeling may occasion the</line>
+    <line>poignant misery <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod> you<del rend="strikethrough">r</del> appear to</line>
+    <line>feel.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My dear father, <del rend="strikethrough">replied I,</del> reassure</line>
+    <line>yourself. I love my cousin tenderly</line>
+    <line>&amp; sincerely. I never saw any woman</line>
+    <line>who excited as Elizabeth does my warmest</line>
+    <line>admiration &amp; affection. My future hopes</line>
+    <line>and prospects are entirely bound up in</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0077.04">
+    <line><add hand="#pbs">but</add></line>
+  </zone>
+</surface>

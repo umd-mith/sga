@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0122" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0122.jp2"/>
+  <zone type="pagination" rend="bordered"><line>152</line></zone>
+
+  <zone type="main">
+    <line>scene that that win<damage agent="ink">d</damage> may convey to</line>
+    <line>us</line>
+    <milestone unit="tei:lg" spanTo="#c56-0122.01"/>
+    <line rend="indent3">We rest, A dream has power to poison</line>
+    <line rend="right"><metamark>L</metamark> sleep</line>
+    <line rend="indent4">We rise one wandering thought pollutes</line>
+    <line rend="right">the day</line>
+    <line rend="indent2">We feel conceive, or reason &#x2013; laugh or weep</line>
+    <line rend="indent3">Embrace fond woe or cast our cares</line>
+    <line rend="right">away</line><anchor xml:id="c56-0122.01"/>
+    <milestone unit="tei:lg" spanTo="#c56-0122.02"/>
+    <line rend="indent1">It is the same &#x2013;for be it joy or sorrow</line>
+    <line rend="indent2">The path of its departure still is free</line>
+    <line rend="indent3">Mans yesterday may ne'er be like</line>
+    <line rend="right"><add place="intralinear" hand="#pbs">h</add>is
+      morrow</line>
+    <line rend="indent2">Nought may endure but mutability.</line>
+    <anchor xml:id="c56-0122.02"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I<add place="intralinear">t</add> was noon when I arrived
+      at the</line>
+    <line>top of the <mod>
+        <del rend="strikethrough">mountain</del>
+        <add hand="#pbs" place="superlinear">ascent</add>
+      </mod>. For some time I</line>
+    <line>sat upon the <del rend="strikethrough">the</del> rock that overlooks</line>
+    <line>the sea of ice. A mist covered both</line>
+    <line>that and the surrounding <mod><restore type="smear_strikethrough"><del rend="strikethrough"
+          >mo</del></restore></mod>untains</line>
+    <line>Presently a breeze dissipated the mist</line>
+    <!--ligatured "ss" overlays "s" in "dissipated-->
+    <line>and I descended on the <mod>
+        <del rend="strikethrough">ice</del>
+        <add place="superlinear">glacier</add>
+      </mod>. <delSpan spanTo="#c56-0122.03"/>It is in<del rend="strikethrough"
+      >s</del>tersper</line>
+    <line>sed with rifts<anchor xml:id="c56-0122.03"/> &#x2013; The surface is very uneven</line>
+    <line>rising like the waves of a troubled sea,</line>
+    <line>decending <del rend="strikethrough">tow</del> low, &#x26; in<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">t</add>
+      </mod>erspered by rifts</line>
+    <line>that sink deep&#x2014; The <mod>
+        <del rend="strikethrough">width of the</del>
+        <add place="intralinear" hand="#pbs">field of</add>
+      </mod></line>
+    <line>ice is <del rend="strikethrough">nearly</del> a <del rend="strikethrough">lege</del> league,<mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear" hand="#pbs">in width,</add>
+      </mod> but I was</line>
+    <line>nearly two hours <add place="superlinear" hand="#pbs">in</add> crossing it &#x2013; The
+      oppo</line>
+    <line>site <del rend="strikethrough">t</del> mountain is a bare perpendicu</line>
+    <line>lar rock.&#x2013;From that side where I now</line>
+    <line>stood Montanvert was exactly opposite</line>
+    <line>at the distance of a league and above</line>
+  </zone>
+
+</surface>

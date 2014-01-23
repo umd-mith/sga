@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0069" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0069.jp2"/>
+  <zone type="pagination" rend="bordered"><line>99</line></zone>
+  <zone type="library"><line>32</line></zone>
+  <zone type="main">
+    <line>the minuti&#xE6; of science. <del rend="strikethrough">La</del> Lan</line>
+    <line>guages were his <mod>
+        <del rend="strikethrough">chief</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">principal</add>
+      </mod> study for he</line>
+    <line>wished to open a field for <mod>
+        <del rend="strikethrough"><add place="sublinear"><metamark function="insert">^</metamark></add><add
+            place="superlinear">him</add></del>
+      </mod> self-instruc</line>
+    <line>tion on his return &#x2013; <del rend="strikethrough">Greek</del> Persian</line>
+    <line><del rend="strikethrough">&#x26;</del> Arabic &#x26; Hebrew gained his atten</line>
+    <line>tion <mod>
+        <del rend="strikethrough">when</del>
+      <add place="superlinear"><metamark function="displacement" xml:id="c56-0069.01">X</metamark></add>
+        
+      </mod> he had become perfect</line>
+    <line>ly master of the Greek &#x26; Latin langua</line>
+    <line>ges. For my own part idleness had</line>
+    <line>ever been irksome to me and</line>
+    <line>now that I wished to fly from reflec</line>
+    <line>tion and hated my former studies</line>
+    <line><del rend="strikethrough"><unclear>a</unclear></del> I found great relief in being
+      the</line>
+    <line>fellow pupil <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear">with</add>
+      </mod> my <del rend="strikethrough">fr</del> friend and</line>
+    <line><del rend="strikethrough">I not a only</del> found <mod>
+        <del rend="strikethrough">instruct</del>
+        <add place="superlinear">not only</add>
+      </mod> instruc</line>
+    <line>tion but consolation in the works of</line>
+    <line>the orientalists. <del rend="strikethrough">There is something soothing</del></line>
+    <line>Their melancholy is soothing and their</line>
+    <line>joy elevating to a degree I never before</line>
+    <line>experienced in <mod>
+        <del rend="strikethrough">reading</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">studying</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">any</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">the authors of</add>
+        <add place="superlinear">any</add>
+      </mod> other <mod>
+        <del rend="strikethrough">books.</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">country.</add>
+      </mod></line>
+    <line>When you read<del rend="strikethrough">s</del> their <del rend="strikethrough"
+          ><unclear>li</unclear></del> writings life</line>
+    <line>appears to consist in a warm sun</line>
+    <line>and gardens of roses &#x2013; in the smiles &#x26;</line>
+    <line><mod>
+        <del rend="strikethrough">tears</del>
+        <anchor xml:id="c56-0069.02"/>
+      </mod> of a fair enemy and the fire</line>
+    <line>that consumes your own heart</line>
+    <line>How different from the man<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">l</add>
+      </mod>y &#x26; <del rend="strikethrough">warlike</del></line>
+    <line><anchor xml:id="c56-0069.03"/>poet<mod>
+        <del rend="overwritten"><unclear>s</unclear></del>
+        <add place="intralinear" hand="#pbs">ry</add>
+      </mod> of Greece &#x26; Rome.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Summer passed away in these</line>
+    <line><mod>
+        <del rend="strikethrough">studies</del>
+        <add><anchor xml:id="c56-0069.04"/></add>
+      </mod> &#x26; my return to Geneva was</line>
+    <line>fixed for the latter end of Autum<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod> but</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0069.01">
+    <line><add hand="#pbs">so soon as <metamark function="displacement">X</metamark></add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0069.02">
+    <line><add>frowns</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0069.03">
+    <line><add hand="#pbs">heroical </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0069.04">
+    <line><add>occupations</add></line>
+  </zone>
+</surface>

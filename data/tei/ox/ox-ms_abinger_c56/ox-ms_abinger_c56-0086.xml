@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0086" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0086.jp2"/>
+  <zone type="pagination" rend="bordered"><line>116</line></zone>
+  <zone type="main">
+    <line>months ago and then you would have <mod spanTo="#c56-0086.01"/><delSpan
+        spanTo="#c56-0086.02" rend="strikethrough"/>been</line>
+    <line>welcomed as you ought<anchor xml:id="c56-0086.02"/><anchor xml:id="c56-0086.03"
+        /><anchor xml:id="c56-0086.01"/> &#x2013; But we are now</line>
+    <line><del rend="strikethrough">all of us</del> so unhappy that I am afraid</line>
+    <line>tears instead of smiles <mod>
+        <del rend="strikethrough">for</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will be</add>
+      </mod> your welcome</line>
+    <line><mod>
+        <del rend="strikethrough">my</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">our</add>
+      </mod> father looks so sorrowful and it seems</line>
+    <line>to have revived in his mind his sorrow</line>
+    <line>for the death of Mamma and poor Eliza</line>
+    <line>beth is quite inconsolable." Ernest began</line>
+    <line>to weep as he said these words.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Do not <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">you"</add>
+      </mod> said I," welcome me thus; try</line>
+    <line>to be more calm <mod spanTo="#c56-0086.05"/><del rend="strikethrough">and</del>
+      <mod>
+        <del rend="strikethrough">not let<add place="superlinear">preveng</add></del>
+      </mod>
+      <del rend="strikethrough">m<mod>
+          <del rend="overwritten">e</del>
+          <add place="intralinear">y</add>
+        </mod> be<add place="intralinear">ing</add></del></line>
+    <line><add hand="#pbs" place="superlinear">that I may not be</add><anchor xml:id="c56-0086.05"
+      />absolutely miserable the moment I enter</line>
+    <line>my fathers house after so long an absence.</line>
+    <line>But tell me, How<add place="superlinear" hand="#pbs">does</add> my father support<delSpan
+        spanTo="#c56-0086.06" rend="strikethrough"/>s it</line>
+    <line>and if Elizabeth<anchor xml:id="c56-0086.06"/> his <del rend="strikethrough">f</del>
+      misfortunes; and how</line>
+    <line>is my poor Elizabeth?"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">She indeed requires consolation," replied</line>
+    <line>Ernest&#x2013;" She accused herself of having caused</line>
+    <line>the death of my brother and that made</line>
+    <line>her very, very wretched; but since the</line>
+    <line>murderer has been discovered"&#x2014;&#x2014;"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"The murderer discovered!" Exclaimed I&#x2013;</line>
+    <line>"Good God how can that be? Who could</line>
+    <line>attempt to pursue him? It is im</line>
+    <line>possible, one might as well try to</line>
+    <line>overtake the winds or confine a</line>
+    <line>mountain stream with a straw<unclear>!</unclear></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"I do not know what you mean" replied</line>
+    <line>Ernest, But we were all very unhappy</line>
+    <line>when she was discovered&#x2013;No one would</line>
+    <line><del rend="strikethrough">one</del> believe it at first and even now</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0086.03">
+    <addSpan spanTo="#c56-0086.04"/>
+    <line>found</line>
+    <line>us all joy</line>
+    <line>ous &#x26; de</line>
+    <line>lighted</line>
+    <anchor xml:id="c56-0086.04"/>
+  </zone>
+</surface>

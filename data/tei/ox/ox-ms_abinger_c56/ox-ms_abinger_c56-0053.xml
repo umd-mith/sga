@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0053" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0053.jp2"/>
+  <zone type="pagination" rend="bordered"><line>83</line></zone>
+  <zone type="library"><line>25</line></zone>
+  <zone type="main">
+    <line>believe that so great a good fortune</line>
+    <line>could have befallen me; but when</line>
+    <line>I <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">became</add>
+      </mod> assured that my enemy had</line>
+    <line>indeed fled, I clapped my hands for</line>
+    <line>joy and ran down to Henr<retrace cause="clarify" hand="#pbs">y</retrace>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We ascended into my room &#x26; present</line>
+    <line>ly the servant brought breakfast:</line>
+    <line>but I was unable to contain my-</line>
+    <line>self. It was not joy only that possess-</line>
+    <line>-ed me,&#x2013;I felt my flesh tingle with</line>
+    <line>the excess of sensitiveness and my</line>
+    <line>pulse beat rapidly. I was unable to</line>
+    <line>remain for a single instant in</line>
+    <line>the same place &#x2014; I jumped over</line>
+    <line>the chairs, clapped my hand<add place="intralinear">s</add> &#x26; laughed</line>
+    <line>aloud. Clerval at first attributed</line>
+    <line>my unusual spirits to joy <mod>
+        <del rend="strikethrough">at</del>
+        <add place="superlinear">on</add>
+      </mod> his</line>
+    <line>arrival&#x2013; but when <del rend="strikethrough">saw</del> he observed</line>
+    <line>me <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"
+        hand="#pbs">more attentively</add>he saw a wildness in my eyes for</line>
+    <line>which he could not account and</line>
+    <line>my loud unrestrained heartless laugh</line>
+    <line>-ter frightened and astonished him.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My dear Frankenstein," cried he "What</line>
+    <line>for God's sake is the matter <del rend="strikethrough">for</del> do not</line>
+    <line>laugh so &#x2013; <del rend="strikethrough">What has</del> How ill you are!</line>
+    <line>What is the cause of all this?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Do not ask me cried I, putting my</line>
+    <line>hand<add place="intralinear">s</add>
+      <del rend="strikethrough">fef</del> before my eyes, for I thought</line>
+    <line>I saw <hi rend="underline">the spectre</hi> glide into the</line>
+  </zone>
+</surface>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0058" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0058.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>83</line>
+  </zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">But how was I to direct myself?&#x2014;<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I knew that</add>
+      </mod> I must travel</line>
+    <line><anchor xml:id="c57-0058.01"/>South west<add place="intralinear" hand="#pbs">erly</add>
+      <add place="superlinear" hand="#pbs">direction</add>
+      <del rend="strikethrough">I knew</del>to reach my destination but</line>
+    <line><del rend="strikethrough">in this</del> the sun was my only guide &#x2013; I did
+      not</line>
+    <line>know the names of the towns I was to pass</line>
+    <line>through, nor could I ask information from</line>
+    <line>a single human being &#x2013; But I did not despair</line>
+    <line>From you only could I hope for succour</line>
+    <line>although towards you I felt <mod>
+        <del rend="strikethrough">only</del>
+        <add place="superlinear" hand="#pbs">no</add>
+        <del rend="strikethrough">the</del>
+      </mod> senti</line>
+    <line>ment<mod>
+        <del rend="strikethrough">s of</del>
+        <del rend="strikethrough">detestatio</del>
+        <del rend="unmarked">n</del>
+        <add place="superlinear" hand="#pbs">that that of hate.</add>
+      </mod> &#x2013; Unfeeling heartless</line>
+    <line>creator! You had endowed me with percep</line>
+    <line>tions and passions and then cast me</line>
+    <line>abroard for the scorn &amp; horror of man</line>
+    <line>kind &#x2014; <del rend="strikethrough">On</del> But on you only had I any</line>
+    <line>claim &amp; from you I determined <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear">to seek</add>
+      </mod> that</line>
+    <line>justice <del rend="strikethrough">&amp;</del>
+      <del rend="strikethrough">for</del> which I <del rend="strikethrough">w</del> vainly
+      attempted</line>
+    <line>to gain from <del rend="strikethrough">your fellow creatures.</del><anchor
+        xml:id="c57-0058.02"/>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent3">My travels were long and <del rend="strikethrough">the</del> the</line>
+    <line><del rend="strikethrough">suff</del> suffering<add place="intralinear" hand="#pbs">s</add>
+      I endured intense &#x2013;It was</line>
+    <line>late in autumn when I quitted the</line>
+    <line>district where I had so long resided &#x2013; <delSpan spanTo="#c57-0058.03"
+        rend="strikethrough"/>Months</line>
+    <line>passed and I knew not how near I<anchor xml:id="c57-0058.03"/> I tra</line>
+    <line>velled only at night, fearful of meeting</line>
+    <line>the visage of a human being.&#x2014;Nature</line>
+    <line>decayed around me and the sun became</line>
+    <line><del rend="strikethrough">co</del> heatless,&#x2014;rain <add place="superlinear">&amp;
+        snow</add> poured around me and I</line>
+    <line>found no shelter &#x2014; Oh Earth how often</line>
+    <line>did I imprecate curses on the cause of</line>
+    <line>my being&#x2014; The mildness of <del rend="strikethrough">the</del> my nature</line>
+    <line>had fled &amp; all within me was turned to gall</line>
+    <line>&amp; bitterness &#x2013; <delSpan spanTo="#c57-0058.04" rend="strikethrough"/>I hated De
+      Lacey and his family</line>
+    <line>and<anchor xml:id="c57-0058.04"/> the near<add place="intralinear">er</add> I approached
+      to your habi</line>
+    <line>tation the more deeply did I feel the spirit</line>
+    <line>of revenge <mod>
+        <del rend="strikethrough">imprint itself on</del>
+        <add place="sublinear" hand="#pbs">become kind led in</add>
+      </mod> my heart&#x2014;</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0058.01">
+    <line><add>in a </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0058.02">
+    <addSpan hand="#pbs" spanTo="#c57-0058.05"/>
+    <line>any other being</line>
+    <line>that wore the human</line>
+    <line>form. </line>
+    <anchor xml:id="c57-0058.05"/>
+  </zone>
+</surface>

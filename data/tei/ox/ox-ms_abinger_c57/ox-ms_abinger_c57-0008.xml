@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0008" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0008.jp2"/>
+  <zone type="pagination" rend="bordered"><line>7</line></zone>
+  <zone type="main">
+    <line>vine a retreat as Pandemonium appeared</line>
+    <line>to the <del rend="strikethrough"><unclear>tr</unclear></del> dominions of Hell<del
+        rend="unmarked">.</del>
+      <add place="superlinear" hand="#pbs">after thier suffocation in the </add><anchor
+          xml:id="c57-0008.01"/> I greedily</line>
+    <line>devoured the rem<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod>ants of the shepherds</line>
+    <line>breakfast which consisted of bread, cheese,</line>
+    <line>milk &#x26; rhenish wine; the latter of which</line>
+    <line>however I did not like. Then overcome</line>
+    <line>by fatigue I lay down among some straw</line>
+    <line>&#x26; fell asleep.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">It was noon when I awoke and allured</line>
+    <line>by the <del rend="strikethrough">warth</del> warmth of the sun I deter</line>
+    <line>mined to recommence my travels&#x2013;&#x26;<mod>
+        <del rend="strikethrough">wrapping</del>
+        <del rend="strikethrough"><add place="superlinear">dep</add></del>
+        <anchor xml:id="c57-0008.03"/></mod></line>
+    <line>the <mod>
+        <del rend="strikethrough">rest</del>
+        <add place="superlinear">remains</add>
+      </mod> of the <del rend="strikethrough">herds bre</del> peasants break</line>
+    <line>fast in a wallet I found, I proceeded</line>
+    <line>across the fields for several hours, untill</line>
+    <line>at sunset I <mod>
+        <del rend="strikethrough">came to</del>
+        <add place="superlinear" hand="#pbs">arrived at</add>
+      </mod> a village. How mira</line>
+    <line>culous did this appear. The huts the neater</line>
+    <line>cottages &#x26; stat<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>lier houses engaged my</line>
+    <line>admiration by turns&#x2013; The vegetables in the</line>
+    <line>garden<add place="intralinear" hand="#pbs">s</add>
+      <del rend="strikethrough">allured me</del> and the milk and</line>
+    <line>cheese that I saw placed at <del rend="strikethrough">s</del> the windows</line>
+    <line>of some of the cottages<mod>
+        <del rend="vertical_line">&#x2014;</del>
+        <add place="superlinear" hand="#pbs">allured me&#x2014;</add>
+      </mod> One of the best of</line>
+    <line>these I entered&#x2013; but I had hardly placed</line>
+    <line>my foot <mod>
+        <del rend="strikethrough">inside</del>
+        <add place="superlinear" hand="#pbs">within</add>
+      </mod> the door before the</line>
+    <line>children shrieked and one of the <delSpan spanTo="#c57-0008.04" rend="strikethrough"
+      />child</line>
+    <line>ren<anchor xml:id="c57-0008.04"/> women fainted, the village was roused</line>
+    <line>some fled,&#x2014;some attacked me untill</line>
+    <line>grievously bruised by <mod>
+        <del rend="strikethrough">sticks</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">stones</add>
+      </mod> and <del rend="strikethrough">all</del></line>
+    <line>many other kinds of missile weapon I</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0008.01">
+    <addSpan spanTo="#c57-0008.02" hand="#pbs"/>
+    <line>lake of</line>
+    <line>fire. </line>
+    <anchor xml:id="c57-0008.02"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0008.03">
+    <line><add>depositing</add></line>
+  </zone>
+</surface>

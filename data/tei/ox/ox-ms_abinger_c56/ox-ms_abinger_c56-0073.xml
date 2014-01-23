@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0073" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0073.jp2"/>
+  <zone type="pagination" rend="bordered"><line>103</line></zone>
+  <zone type="library"><line>34</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="head" spanTo="#c56-0073.05"/>Chap. 9<hi rend="sup"><hi rend="underline">th</hi></hi><anchor xml:id="c56-0073.05"/></line>
+    <line>On my return I found the following letter</line>
+    <line>from my father.</line>
+    <!--Beginning of a letter that spans that spans to 56-0076.-->
+    <line rend="indent2">To V.&#x2013;Frankenstein</line>
+    <line rend="right">Geneva &#x2013; June 2<hi rend="sup"><hi rend="underline"
+          >n</hi>d</hi>&#x2013; 17&#x2014;</line>
+    <line>My dear Victor</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">You have probably waited impati-</line>
+    <line>ently <del rend="strikethrough">the</del> for <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">a</add>
+      </mod> letter <del rend="strikethrough">which was</del> to fix</line>
+    <line><anchor xml:id="c56-0073.01"/>your return and I was at first tempted</line>
+    <line>to write a few lines <mod spanTo="#c56-0073.02"/><del rend="strikethrough">only</del>
+      <del rend="unmarked">to</del>
+      <del rend="strikethrough">fix</del>
+      <del rend="strikethrough">that</del><add place="superlinear">merely mentioning the
+      day</add></line>
+    <line><del rend="strikethrough">date</del><anchor xml:id="c56-0073.03"/><anchor
+        xml:id="c56-0073.02"/> &#x2013; but that would be <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+        <del rend="strikethrough">very</del>
+      </mod> cruel <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">kindness</add>
+      </mod></line>
+    <line>and I dare not do it. What would <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">be</add>
+      </mod> your</line>
+    <line>surprise <del rend="strikethrough">be</del>, my son<del rend="strikethrough">e</del>, when
+      your ex</line>
+    <line>pected a happy and gay welcome to <del rend="strikethrough">heho</del></line>
+    <line>beh<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">e</add>
+      </mod>ld on the contrary tears and wretched</line>
+    <line>ness. And how, Victor, can I relate our</line>
+    <line>misfortune<mod>
+        <del rend="overwritten"><unclear>;</unclear></del>
+        <add place="intralinear">?</add>
+      </mod> absence cannot have rendered</line>
+    <line>you callous to our joys and griefs and how</line>
+    <line>can I inflict pain on an absent child.?</line>
+    <line>I wish to prepare you for the woeful</line>
+    <line>news but I know it is impossible; even</line>
+    <line>now your eye skims over the page to</line>
+    <line>seek the words which are to convey to</line>
+    <line>you the horrible tidings.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">William is dead! That sweet child</line>
+    <line>whose smiles delighted &#x26; warmed me</line>
+    <line>who was so gentle yet so gay, Victor, he</line>
+    <line>is Murdered!</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I will not attempt to <del rend="strikethrough">o</del>
+      console you</line>
+    <line>but will simply relate the circumstances</line>
+    <line>of the transaction.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0073.01">
+    <line><add>the date of </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0073.03">
+    <addSpan spanTo="#c56-0073.04"/>
+    <line>on which</line>
+    <line>I should</line>
+    <line>expect you</line>
+    <anchor xml:id="c56-0073.04"/>
+  </zone>
+</surface>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0025" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0025.jp2"/>
+  <zone type="pagination"><line>60</line></zone>
+  
+  <zone type="library"><line>13</line></zone>
+  <zone type="main">
+    <line>terms of her <hi rend="sup">60</hi> Mother who born in freedom</line>
+    <line>spurned the bondage <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear">to which</add>
+      </mod> she was now</line>
+    <line><mod>
+        <del rend="strikethrough">obliged</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">to</del>
+        <del rend="strikethrough">submit</del>
+        <del rend="strikethrough"><add place="superlinear">to which</add></del>
+        <add hand="#pbs" place="superlinear">reduced.</add>
+      </mod>. She instructed he<add place="sublinear">r</add> daugh</line>
+    <line>ter in the tenets of her religion &amp; taught her</line>
+    <line>to aspire to higher powers of intellect &amp; an</line>
+    <line>independance of spir<add place="intralinear">i</add>t forbidden to the female</line>
+    <line>followers of Mahomet. <del rend="strikethrough">Amina sickened</del> This</line>
+    <line>Lady died, but her lessons were indelibly</line>
+    <line>impressed in the mind of <mod>
+        <del rend="strikethrough">Maimouna</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">Amina</add></del>
+        <add place="superlinear">Safie</add>
+      </mod></line>
+    <line>who sickened at the prospect of again</line>
+    <line>returning to <mod>
+        <del rend="strikethrough"><hi rend="underline">Turkey</hi></del>
+        <add hand="#pbs" place="superlinear">Asia</add>
+      </mod> and the being immurred</line>
+    <line>in walls of a haram <del rend="strikethrough">occupy</del>
+      <del rend="strikethrough">&amp;</del> allowed only to</line>
+    <line>occupy herself with puerile amusements</line>
+    <line>ill-suited to the temper of her soul now</line>
+    <line>accustomed to grand ideas &amp; a noble emu-</line>
+    <line>lation for <del rend="strikethrough">vi</del> virtue. The <del rend="strikethrough"
+        >pr</del> prospect of</line>
+    <line>marrying a Christian and remaining</line>
+    <line>in a country where women were allowed</line>
+    <line>to take a rank in society was enchan</line>
+    <line>ting to her. <del rend="strikethrough">Yet she requested Felix not to</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The day for the execution of the Turk was</line>
+    <line>fixed but <del rend="strikethrough">the he</del> on the night <mod>
+        <del rend="strikethrough">before</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">previous to it</add>
+      </mod></line>
+    <line>he had quitted prison &amp; before morning was <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">distant</add>
+      </mod></line>
+    <line>many leagues from Paris. Felix has procurred</line>
+    <line>passports in the name of his</line><damage type="tear"/>
+    <line>father sister &amp; himself.</line><damage type="tear"/>
+    <line>He communicated hi<damage type="tear"/></line>
+    <line>plan to the former<damage type="tear"/></line>
+    <line>who aided the</line>
+  </zone>
+</surface>

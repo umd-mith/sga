@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0027" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0027.jp2"/>
+  <zone type="pagination"><line>62</line></zone>
+  <zone type="library"><line>14</line></zone>
+  <zone type="main">
+    <line>be enabled to <mod>
+        <del rend="strikethrough">carry on</del>
+        <add place="superlinear">prolong</add>
+      </mod> the deceit untill it</line>
+    <line>was no longer necessary; and then <add hand="#pbs" place="superlinear">to</add> carry
+      his</line>
+    <line>daughter to Africa with him. <del rend="strikethrough">And</del>
+      <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>is</line>
+    <line>plans were greatly facillitated by the news</line>
+    <line><mod>
+        <del rend="strikethrough">that</del>
+        <add hand="#pbs" place="superlinear">which</add>
+      </mod> arrived from Paris.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The government of France were greatly</line>
+    <line>enraged at the escape of their victim and spared</line>
+    <line>no pains to discover and punish his deliverer<unclear>.</unclear></line>
+    <line>The plot of Felix was quickly discovered &amp;</line>
+    <line>De Lacey &amp; Agathat were thrown intto prison</line>
+    <line><delSpan rend="strikethrough" spanTo="#c57-0027.01"/>This news reached the youth and
+      awakened</line>
+    <line>him from the blissful dream that he enjoyed.<anchor xml:id="c57-0027.01"/></line>
+    <line>The news reached Felix and roused him from</line>
+    <line>his dream of pleasure. His blind <mod>
+        <del rend="strikethrough">&amp; <unclear>in</unclear></del>
+        <add place="superlinear">&amp; aged</add>
+      </mod> father and</line>
+    <line>his gentle sister lay in a noisome dungeon</line>
+    <line>while he enjoyed the free air &amp; the society of</line>
+    <line>her he loved. This idea was torture to him &#x2013; He</line>
+    <line>arranged with the Turk <mod>
+        <del rend="strikethrough">that</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">if the latter should find a favourable opportunity for escape
+          before Felix could return <add place="sublinear">to Italy</add></add>
+      </mod> Safie should</line>
+    <line>remain as <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> boarder in a convent at Leghorn</line>
+    <line><delSpan spanTo="#c57-0027.02"/>If a favourable opportunity for the fathers escape</line>
+    <line>should occur before <mod>
+        <del rend="strikethrough">Felix</del>
+        <add place="superlinear">he</add>
+      </mod> could return to Italy<anchor xml:id="c57-0027.02"/></line>
+    <line>and then quitting the lovely Arabian, he hastened</line>
+    <line>to Paris &amp; delivered himself up to the vengeance</line>
+    <line>of <del rend="strikethrough">For</del> the law hoping <del rend="strikethrough">by this
+        pr</del> to free De Lacey</line>
+    <line>&amp; Agatha by this proceeding.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">He did not succeed <del rend="strikethrough">for</del>
+      <del rend="strikethrough">three</del><del rend="strikethrough"><add place="superlinear"
+          >five</add></del>
+      <del rend="strikethrough">months</del></line>
+    <line>they remained confined <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for five months</add>
+      </mod> before the trial took</line>
+    <line>place the result of which deprived them</line>
+  </zone>
+</surface>

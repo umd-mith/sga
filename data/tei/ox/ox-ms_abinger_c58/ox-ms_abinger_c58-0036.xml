@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0036" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0036.jp2"/>
+  <zone type="pagination"><line>138</line></zone>
+  <zone type="main">
+    <line>my steps and when I most murmured would sud-</line>
+    <line>denly extricate me from my seemingly insurmounta</line>
+    <line>ble difficulties; sometimes when nature over<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">c</add>
+      </mod>ome by</line>
+    <line>hunger sunk under the exhaustion a repast was</line>
+    <line>prepared for me in the desart that restored and</line>
+    <line>insprited me. The fare was indeed coarse, such as</line>
+    <line>the peasants of the country ate, but I may not doubt</line>
+    <line>that it was <del rend="strikethrough">e</del> set there by the <del rend="strikethrough"
+        >sprits</del>
+      <del rend="strikethrough">th</del> spirits that</line>
+    <line>I invoked to aid me. Often when all was dry, the hea-</line>
+    <line>vens cloudless and I was parched by thirst, a slight</line>
+    <line>cloud would bedim the sky, shed the few drops that</line>
+    <line>revived me and vanish.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I followed when I could the courses of the</line>
+    <line>rivers but the d&#xE6;mon generally avoided these as it</line>
+  </zone>
+</surface>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0114" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0114.jp2"/>
+  <zone type="pagination" rend="bordered"><line>130</line></zone>
+  <zone type="main">
+    <line>appearance but as I approached nearer I</line>
+    <line>easily perceived the traces of cultivation &#x2013;I saw</line>
+    <line>vessels near the shore &amp; found myself sud-</line>
+    <line>denly transported back to the neighborhood</line>
+    <line>of civilized man &#x2013; I eagerly <mod>
+        <del rend="strikethrough">viewed</del>
+        <add place="superlinear" hand="#pbs">traced</add>
+      </mod> the windings</line>
+    <line>of the <mod>
+        <del rend="unmarked">s</del>
+        <del rend="strikethrough">hor</del>
+        <del rend="unmarked">e</del>
+        <add place="superlinear" hand="#pbs">land</add>
+      </mod> &amp; hailed a steeple which <delSpan spanTo="#c57-0114.01" rend="strikethrough"
+      />after</line>
+    <line>sailing<anchor xml:id="c57-0114.01"/> I at length saw issueing from <del
+        rend="strikethrough">an<unclear>i</unclear></del> behi<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">n</add>
+      </mod>d</line>
+    <line>a small promontory &#x2013; As I was <del rend="strikethrough">fainting</del> in</line>
+    <line>a st<del rend="strikethrough">r</del>ate of extreme debility from fasting</line>
+    <line>I resolved to go directly towards the town</line>
+    <line>as a place where could most easily pro</line>
+    <line>cure <del rend="strikethrough">f</del> nourishment&#x2013; Fortunately I <mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">h</add>
+      </mod>ad</line>
+    <line>money with me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">As I turned the promontory I discovered</line>
+    <line>a small neat town &#x2013; <del rend="strikethrough">a</del> and a good harbour</line>
+    <line>which I entered, my heart bounding with</line>
+    <line>joy at my unexpected escape. <milestone unit="tei:p"/><metamark function="paragraph">[</metamark>As I <del
+        rend="strikethrough">fi</del> was</line>
+    <line>occupied in fixing the boat and ar arranging</line>
+    <line>the sails several <damage type="inkblot">peo</damage>ple crowded towards</line>
+    <line>the spot &#x2013; They appeared very much much</line>
+    <line>surprised at my appearance <del rend="strikethrough">and</del> but</line>
+    <line>instead of offering me any assistance</line>
+    <line>whispered together <del rend="strikethrough">in</del> with gestures that</line>
+    <line>at any other time might have produced</line>
+    <line>in me a slight sensation of alarm &#x2013;as it</line>
+    <line>was I merely remarked <del rend="strikethrough">th</del> that it was</line>
+    <line>English, that they spoke and therefore</line>
+    <line>addressed them; My Good Friends, said I, Will you</line>
+    <line>be<del rend="strikethrough">so</del> so kind as to tell me what the name</line>
+    <line>of this <mod>
+        <del rend="strikethrough">place</del>
+        <add place="superlinear">town</add>
+      </mod> is; &amp; where I am.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">You will know that soon enough, re-</line>
+    <line>plied a<del rend="strikethrough">n</del> man with a gruff voice; May be</line>
+    <line>you are come to a place that will</line>
+    <line>not prove much to your taste &#x2013; But</line>
+  </zone>
+</surface>

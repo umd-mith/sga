@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0051" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0051.jp2"/>
+  <zone type="pagination" rend="bordered"><line>81</line></zone>
+  <zone type="library"><line>24</line></zone>
+  <zone type="main">
+    <line>"and indeed I believe I left him</line>
+    <line>"incredulous to the last for his con</line>
+    <line>"stant answer to my applications</line>
+    <line>"was the same as <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">that of</add>
+      </mod>the dutch school</line>
+    <line>"master in the Vicar of Wakefield&#x2013;</line>
+    <line><delSpan rend="strikethrough" spanTo="#c56-0051.01"/>'I live very well yet I do not
+      know</line>
+    <line>"Greek<anchor xml:id="c56-0051.01"/> " I have ten thousand florins&#x2013; <anchor
+          xml:id="c56-0051.02"/></line>
+    <line>"But his affection for me at</line>
+    <line>"length overcame his dislike for</line>
+    <line>"learning, and he permitted me</line>
+    <line>"to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">under</add>
+      </mod>take a voyage <add place="superlinear" hand="#pbs">of discovery</add>to the land
+      of</line>
+    <line>"knowledge."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"And my father, brothers &#x26; Eliza</line>
+    <line>beth" said I</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Very well &#x26; very happy" replied</line>
+    <line>he "only a little uneasy that <del rend="strikethrough">yo</del></line>
+    <line>"they hear from you so seldom, &#x26;</line>
+    <line>"by the bye, I mean to lecture you</line>
+    <line>"a little upon their account</line>
+    <line>"myself&#x2013; But my dear Frankenstein"</line>
+    <line>continued he stopping short &#x26; gazing </line>
+    <line>"full in my face "I did not before</line>
+    <line>"remark how very ill you are. So thin</line>
+    <line>"and pale; you appear as if you had</line>
+    <line>"been watching for several nights."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"You have guessed right" I replied</line>
+    <line>"I have lately been so engaged in</line>
+    <line>"<mod>
+        <del rend="strikethrough">several</del>
+        <add place="superlinear" hand="#pbs"><del rend="strikethrough">studious</del> one</add>
+      </mod> occupation<del rend="strikethrough">s</del> that I <mod>
+        <del rend="strikethrough">did</del>
+        <anchor xml:id="c56-0051.04"/>
+      </mod></line>
+    <line>"not allow<mod>
+        <add place="intralinear" hand="#pbs">ed</add>
+      </mod><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">myself</add>
+      </mod> sufficient rest as you</line>
+  </zone>
+  
+  <zone type="left_margin" corresp="#c56-0051.02">
+    <addSpan spanTo="#c56-0051.03"/>
+    <line>"<mod><restore type="smear_strikethrough"><del rend="strikethrough">a year</del></restore></mod><del
+        rend="smear"><add place="superlinear">y<hi rend="sup">r</hi>.</add></del> with</line>
+    <line>"out greek &#x2013;I</line>
+    <line>"eat heartily</line>
+    <line>"without greek</line>
+    <line><unclear>of-</unclear></line>
+    <anchor xml:id="c56-0051.03"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0051.04">
+    <line><add hand="#pbs">have</add></line>
+  </zone>
+</surface>

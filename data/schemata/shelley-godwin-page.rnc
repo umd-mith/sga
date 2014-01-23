@@ -1,0 +1,2938 @@
+default namespace = "http://www.tei-c.org/ns/1.0"
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace ns1 = "http://www.isocat.org/ns/dcr"
+namespace ns2 = "http://shelleygodwinarchive.org/ns/1.0"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+namespace s = "http://www.ascc.net/xml/schematron"
+namespace sch = "http://purl.oclc.org/dsdl/schematron"
+namespace xlink = "http://www.w3.org/1999/xlink"
+
+# Schema generated from ODD source 2013-05-02T15:36:05Z. 
+# Edition: 2.3.0. Last updated on 17th January 2013.
+# Edition Location: http://www.tei-c.org/Vault/P5/2.3.0/
+#
+
+# This work is copyright Trevor Muñoz and Maryland Institute for Technology in the Humanities and licensed under a Creative Commons Attribution 3.0 Unported License.
+sga-pmacro.paraContent =
+  (text
+   | sga-pmodel.gLike
+   | sga-pmodel.phrase
+   | sga-pmodel.inter
+   | sga-pmodel.global)*
+sga-pmacro.limitedContent =
+  (text | sga-pmodel.limitedPhrase | sga-pmodel.inter)*
+sga-pmacro.phraseSeq =
+  (text | sga-pmodel.gLike | sga-pmodel.phrase | sga-pmodel.global)*
+sga-pmacro.phraseSeq.limited =
+  (text | sga-pmodel.limitedPhrase | sga-pmodel.global)*
+sga-pmacro.specialPara =
+  (text
+   | sga-pmodel.gLike
+   | sga-pmodel.phrase
+   | sga-pmodel.inter
+   | sga-pmodel.divPart
+   | sga-pmodel.global)*
+sga-pmacro.xtext = (text | sga-pmodel.gLike)*
+sga-pdata.certainty = "high" | "medium" | "low" | "unknown"
+sga-pdata.probability =
+  xsd:double { minInclusive = "0" maxInclusive = "1" }
+sga-pdata.numeric =
+  xsd:double
+  | xsd:token { pattern = "(\-?[\d]+/\-?[\d]+)" }
+  | xsd:decimal
+sga-pdata.count = xsd:nonNegativeInteger
+sga-pdata.temporal.w3c =
+  xsd:date
+  | xsd:gYear
+  | xsd:gMonth
+  | xsd:gDay
+  | xsd:gYearMonth
+  | xsd:gMonthDay
+  | xsd:time
+  | xsd:dateTime
+sga-pdata.truthValue = xsd:boolean
+sga-pdata.xTruthValue = xsd:boolean | "unknown" | "inapplicable"
+sga-pdata.language = xsd:language
+sga-pdata.outputMeasurement =
+  xsd:token {
+    pattern =
+      "[\-+]?\d+(\.\d+)?(%|cm|mm|in|pt|pc|px|em|ex|gd|rem|vw|vh|vm)"
+  }
+sga-pdata.point =
+  xsd:token { pattern = "(\-?[0-9]+\.?[0-9]*,\-?[0-9]+\.?[0-9]*)" }
+sga-pdata.pointer = xsd:anyURI
+sga-pdata.version = xsd:token { pattern = "[\d]+(\.[\d]+){0,2}" }
+sga-pdata.word = xsd:token { pattern = "(\p{L}|\p{N}|\p{P}|\p{S})+" }
+sga-pdata.text = xsd:string
+sga-pdata.code = sga-pdata.word
+sga-pdata.name = xsd:Name
+sga-pdata.enumerated = sga-pdata.name
+sga-patt.canonical.attributes =
+  sga-patt.canonical.attribute.key, sga-patt.canonical.attribute.ref
+sga-patt.canonical.attribute.key =
+  
+  ## provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.
+  attribute key { sga-pdata.text }?
+sga-patt.canonical.attribute.ref =
+  
+  ## (reference) provides an explicit means of locating a full definition for the entity being named by means of one or more URIs.
+  attribute ref {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.ranging.attributes =
+  sga-patt.ranging.attribute.atLeast,
+  sga-patt.ranging.attribute.atMost,
+  sga-patt.ranging.attribute.min,
+  sga-patt.ranging.attribute.max,
+  sga-patt.ranging.attribute.confidence
+sga-patt.ranging.attribute.atLeast =
+  
+  ## gives a minimum estimated value for the approximate measurement.
+  attribute atLeast { sga-pdata.numeric }?
+sga-patt.ranging.attribute.atMost =
+  
+  ## gives a maximum estimated value for the approximate measurement.
+  attribute atMost { sga-pdata.numeric }?
+sga-patt.ranging.attribute.min =
+  
+  ## where the measurement summarizes more than one observation or a range, supplies the minimum value observed.
+  attribute min { sga-pdata.numeric }?
+sga-patt.ranging.attribute.max =
+  
+  ## where the measurement summarizes more than one observation or a range, supplies the maximum value observed.
+  attribute max { sga-pdata.numeric }?
+sga-patt.ranging.attribute.confidence =
+  
+  ## specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.
+  attribute confidence { sga-pdata.probability }?
+sga-patt.dimensions.attributes =
+  sga-patt.ranging.attributes,
+  sga-patt.dimensions.attribute.unit,
+  sga-patt.dimensions.attribute.quantity,
+  sga-patt.dimensions.attribute.extent,
+  sga-patt.dimensions.attribute.precision,
+  sga-patt.dimensions.attribute.scope
+sga-patt.dimensions.attribute.unit =
+  
+  ## names the unit used for the measurement
+  ## Suggested values include: 1] cm(centimetres) ; 2] mm(millimetres) ; 3] in(inches) ; 4] lines; 5] chars(characters) 
+  attribute unit {
+    
+    ## (centimetres) 
+    "cm"
+    | 
+      ## (millimetres) 
+      "mm"
+    | 
+      ## (inches) 
+      "in"
+    | 
+      ## lines of text
+      "lines"
+    | 
+      ## (characters) characters of text
+      "chars"
+    | xsd:Name
+  }?
+sga-patt.dimensions.attribute.quantity =
+  
+  ## specifies the length in the units specified
+  attribute quantity { sga-pdata.numeric }?
+sga-patt.dimensions.attribute.extent =
+  
+  ## indicates the size of the object concerned using a project-specific vocabulary combining quantity and units in a single string of words. 
+  attribute extent { sga-pdata.text }?
+sga-patt.dimensions.attribute.precision =
+  
+  ## characterizes the precision of the values specified by the other attributes.
+  attribute precision { sga-pdata.certainty }?
+sga-patt.dimensions.attribute.scope =
+  
+  ## where the measurement summarizes more than one observation, specifies the applicability of this measurement.
+  ## Sample values include: 1] all; 2] most; 3] range
+  attribute scope { sga-pdata.enumerated }?
+sga-patt.damaged.attributes =
+  sga-patt.dimensions.attributes,
+  sga-patt.damaged.attribute.hand,
+  sga-patt.damaged.attribute.agent,
+  sga-patt.damaged.attribute.degree,
+  sga-patt.damaged.attribute.group
+sga-patt.damaged.attribute.hand =
+  
+  ## in the case of damage (deliberate defacement, inking out, etc.) assignable to a distinct hand, signifies the hand responsible for the damage.
+  attribute hand { sga-pdata.pointer }?
+sga-patt.damaged.attribute.agent =
+  
+  ## categorizes the cause of the damage, if it can be identified.
+  ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+  attribute agent { sga-pdata.enumerated }?
+sga-patt.damaged.attribute.degree =
+  
+  ## signifies the degree of damage according to a convenient scale. The damage tag with the degree attribute should only be used where the text may be read with some confidence; text supplied from other sources should be tagged as supplied.
+  attribute degree { sga-pdata.probability | sga-pdata.certainty }?
+sga-patt.damaged.attribute.group =
+  
+  ## assigns an arbitrary number to each stretch of damage regarded as forming part of the same physical phenomenon.
+  attribute group { sga-pdata.count }?
+sga-patt.breaking.attributes = sga-patt.breaking.attribute.break
+sga-patt.breaking.attribute.break =
+  
+  ## indicates whether or not the element bearing this attribute should be considered to mark the end of an orthographic token in the same way as whitespace.
+  attribute break { sga-pdata.enumerated }?
+sga-patt.cReferencing.attributes = sga-patt.cReferencing.attribute.cRef
+sga-patt.cReferencing.attribute.cRef =
+  
+  ## (canonical reference) specifies the destination of the pointer by supplying a canonical reference from a scheme defined in a refsDecl element in the TEI header
+  attribute cRef { sga-pdata.text }?
+sga-patt.datable.w3c.attributes =
+  sga-patt.datable.w3c.attribute.when,
+  sga-patt.datable.w3c.attribute.notBefore,
+  sga-patt.datable.w3c.attribute.notAfter,
+  sga-patt.datable.w3c.attribute.from,
+  sga-patt.datable.w3c.attribute.to
+sga-patt.datable.w3c.attribute.when =
+  
+  ## supplies the value of the date or time in a standard form, e.g. yyyy-mm-dd.
+  attribute when { sga-pdata.temporal.w3c }?
+sga-patt.datable.w3c.attribute.notBefore =
+  
+  ## specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.
+  attribute notBefore { sga-pdata.temporal.w3c }?
+sga-patt.datable.w3c.attribute.notAfter =
+  
+  ## specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd.
+  attribute notAfter { sga-pdata.temporal.w3c }?
+sga-patt.datable.w3c.attribute.from =
+  
+  ## indicates the starting point of the period in standard form, e.g. yyyy-mm-dd.
+  attribute from { sga-pdata.temporal.w3c }?
+sga-patt.datable.w3c.attribute.to =
+  
+  ## indicates the ending point of the period in standard form, e.g. yyyy-mm-dd.
+  attribute to { sga-pdata.temporal.w3c }?
+sga-patt.datable.attributes =
+  sga-patt.datable.w3c.attributes,
+  sga-patt.datable.attribute.calendar,
+  sga-patt.datable.attribute.period
+sga-patt.datable.attribute.calendar =
+  
+  ## indicates the system or calendar to which the date represented by the content of this element belongs.
+  attribute calendar { sga-pdata.pointer }?
+sch:pattern [
+  id = "calendar-constraint-calendar"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@calendar]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test = "string-length(.) gt 0"
+      "\x{a}" ~
+      "@calendar indicates the system or calendar to which the date represented by the content of this element\x{a}" ~
+      "belongs, but this "
+      sch:name [ ]
+      " element has no textual content."
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sga-patt.datable.attribute.period =
+  
+  ## supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred.
+  attribute period { sga-pdata.pointer }?
+sga-patt.datcat.attributes =
+  sga-patt.datcat.attribute.datcat,
+  sga-patt.datcat.attribute.valueDatcat
+sga-patt.datcat.attribute.datcat =
+  
+  ## contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat.
+  attribute ns1:datcat {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.datcat.attribute.valueDatcat =
+  
+  ## contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat.
+  attribute ns1:valueDatcat {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.declarable.attributes = sga-patt.declarable.attribute.default
+sga-patt.declarable.attribute.default =
+  
+  ## indicates whether or not this element is selected by default when its parent is selected.
+  [ a:defaultValue = "false" ]
+  attribute default {
+    
+    ## This element is selected if its parent is selected
+    "true"
+    | 
+      ## This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected.
+      "false"
+  }?
+sga-patt.fragmentable.attributes = sga-patt.fragmentable.attribute.part
+sga-patt.fragmentable.attribute.part =
+  
+  ## specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure : for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.
+  [ a:defaultValue = "N" ]
+  attribute part {
+    
+    ##  (yes) the element is fragmented in some (unspecified) respect
+    "Y"
+    | 
+      ##  (no) either the element is not fragmented, or no claim is made as to its completeness.
+      "N"
+    | 
+      ##  (initial) this is the initial part of a fragmented element
+      "I"
+    | 
+      ##  (medial) this is a medial part of a fragmented element
+      "M"
+    | 
+      ##  (final) this is the final part of a fragmented element
+      "F"
+  }?
+sga-patt.divLike.attributes =
+  sga-patt.fragmentable.attributes,
+  sga-patt.divLike.attribute.org,
+  sga-patt.divLike.attribute.sample
+sga-patt.divLike.attribute.org =
+  
+  ## (organization) specifies how the content of the division is organized.
+  [ a:defaultValue = "uniform" ]
+  attribute org {
+    
+    ## composite content: i.e. no claim is made about the sequence in which the immediate contents of this division are to be processed, or their inter-relationships.
+    "composite"
+    | 
+      ## uniform content: i.e. the immediate contents of this element are regarded as forming a logical unit, to be processed in sequence.
+      "uniform"
+  }?
+sga-patt.divLike.attribute.sample =
+  
+  ## indicates whether this division is a sample of the original source and if so, from which part.
+  [ a:defaultValue = "complete" ]
+  attribute sample {
+    
+    ## division lacks material present at end in source.
+    "initial"
+    | 
+      ## division lacks material at start and end.
+      "medial"
+    | 
+      ## division lacks material at start.
+      "final"
+    | 
+      ## position of sampled material within original unknown.
+      "unknown"
+    | 
+      ## division is not a sample.
+      "complete"
+  }?
+sga-patt.docStatus.attributes = sga-patt.docStatus.attribute.status
+sga-patt.docStatus.attribute.status =
+  
+  ## describes the status of a document either currently or, when associated with a dated element, at the time indicated.
+  ## Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] draft; 6] embargoed; 7] expired; 8] frozen; 9] galley; 10] proposed; 11] published; 12] recommendation; 13] submitted; 14] unfinished; 15] withdrawn
+  [ a:defaultValue = "draft" ]
+  attribute status { sga-pdata.enumerated }?
+sga-patt.editLike.attributes =
+  sga-patt.dimensions.attributes,
+  sga-patt.editLike.attribute.evidence,
+  sga-patt.editLike.attribute.source,
+  sga-patt.editLike.attribute.instant
+sga-patt.editLike.attribute.evidence =
+  
+  ## indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.
+  ## Suggested values include: 1] internal; 2] external; 3] conjecture
+  attribute evidence {
+    list {
+      (
+       ## there is internal evidence to support the intervention.
+       "internal"
+       | 
+         ## there is external evidence to support the intervention.
+         "external"
+       | 
+         ## the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise.
+         "conjecture"
+       | xsd:Name)+
+    }
+  }?
+sga-patt.editLike.attribute.source =
+  
+  ## contains a list of one or more pointers indicating sources supporting the given intervention or interpretation.
+  attribute source {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.editLike.attribute.instant =
+  
+  ## indicates whether this is an instant revision or not.
+  [ a:defaultValue = "false" ]
+  attribute instant { sga-pdata.xTruthValue }?
+sga-patt.global.attributes =
+  sga-patt.global.linking.attributes,
+  sga-patt.global.facs.attributes,
+  sga-patt.global.attribute.el-target,
+  sga-patt.global.attribute.att-target,
+  sga-patt.global.attribute.att-value,
+  sga-patt.global.attribute.xmlid,
+  sga-patt.global.attribute.n,
+  sga-patt.global.attribute.rend,
+  sga-patt.global.attribute.style
+sga-patt.global.attribute.el-target =
+  
+  ## A convenience attribute for indicating what text-centric element a document-centric element should be transformed to
+  attribute ns2:el-target { text }?
+sga-patt.global.attribute.att-target =
+  
+  ## A convenience attribute for indicating what attribute should be added in transforming from document- to text-centric markup. By convention the attribute is placed on the element specified in a preceding el-target attribute
+  attribute ns2:att-target { text }?
+sga-patt.global.attribute.att-value =
+  
+  ## If an attribute created during a document- to text-centric markup conversion should have a particular value, please indicate
+  attribute ns2:att-value { text }?
+sga-patt.global.attribute.xmlid =
+  
+  ## (identifier) provides a unique identifier for the element bearing the attribute.
+  attribute xml:id { xsd:ID }?
+sga-patt.global.attribute.n =
+  
+  ## (number) gives a number (or other label) for an element, which is not necessarily unique within the document.
+  attribute n { sga-pdata.text }?
+sga-patt.global.attribute.rend =
+  
+  ## (rendition) indicates how the element in question was rendered or presented in the source text.
+  attribute rend {
+    list { sga-pdata.word+ }
+  }?
+sga-patt.global.attribute.style =
+  
+  ## contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text 
+  attribute style { sga-pdata.text }?
+sga-patt.handFeatures.attribute.scribe =
+  
+  ## gives a name or other identifier for the scribe believed to be responsible for this hand.
+  attribute scribe { sga-pdata.name }?
+sga-patt.handFeatures.attribute.scribeRef =
+  
+  ## points to a full description of the scribe concerned, typically supplied by a person element elsewhere in the description.
+  attribute scribeRef {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.handFeatures.attribute.script =
+  
+  ## characterizes the particular script or writing style used by this hand, for example secretary, copperplate, Chancery, Italian, etc.
+  attribute script {
+    list { sga-pdata.name+ }
+  }?
+sga-patt.handFeatures.attribute.scriptRef =
+  
+  ## points to a full description of the script or writing style used by this hand, typically supplied by a scriptNote element elsewhere in the description.
+  attribute scriptRef {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.handFeatures.attribute.scope =
+  
+  ## specifies how widely this hand is used in the manuscript.
+  attribute scope {
+    
+    ## only this hand is used throughout the manuscript
+    "sole"
+    | 
+      ## this hand is used through most of the manuscript
+      "major"
+    | 
+      ## this hand is used occasionally in the manuscript
+      "minor"
+  }?
+sga-patt.internetMedia.attributes =
+  sga-patt.internetMedia.attribute.mimeType
+sga-patt.internetMedia.attribute.mimeType =
+  
+  ## (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type
+  attribute mimeType {
+    list { sga-pdata.word+ }
+  }?
+sga-patt.media.attributes =
+  sga-patt.internetMedia.attributes,
+  sga-patt.media.attribute.width,
+  sga-patt.media.attribute.height,
+  sga-patt.media.attribute.scale
+sga-patt.media.attribute.width =
+  
+  ## Where the media are displayed, indicates the display width 
+  attribute width { sga-pdata.outputMeasurement }?
+sga-patt.media.attribute.height =
+  
+  ## Where the media are displayed, indicates the display height
+  attribute height { sga-pdata.outputMeasurement }?
+sga-patt.media.attribute.scale =
+  
+  ## Where the media are displayed, indicates a scale factor to be applied when generating the desired display size
+  attribute scale { sga-pdata.numeric }?
+sga-patt.resourced.attributes = sga-patt.resourced.attribute.url
+sga-patt.resourced.attribute.url =
+  
+  ## (uniform resource locator) specifies the URL from which the media concerned may be obtained.
+  attribute url { sga-pdata.pointer }
+sga-patt.measurement.attributes =
+  sga-patt.measurement.attribute.unit,
+  sga-patt.measurement.attribute.quantity,
+  sga-patt.measurement.attribute.commodity
+sga-patt.measurement.attribute.unit =
+  
+  ## indicates the units used for the measurement, usually using the standard symbol for the desired units.
+  ## Suggested values include: 1] m(metre) ; 2] kg(kilogram) ; 3] s(second) ; 4] Hz(hertz) ; 5] Pa(pascal) ; 6] Ω(ohm) ; 7] L(litre) ; 8] t(tonne) ; 9] ha(hectare) ; 10] Å(ångström) ; 11] mL(millilitre) ; 12] cm(centimetre) ; 13] dB(decibel) ; 14] kbit(kilobit) ; 15] Kibit(kibibit) ; 16] kB(kilobyte) ; 17] KiB(kibibyte) ; 18] MB(megabyte) ; 19] MiB(mebibyte) 
+  attribute unit {
+    
+    ## (metre) SI base unit of length
+    "m"
+    | 
+      ## (kilogram) SI base unit of mass
+      "kg"
+    | 
+      ## (second) SI base unit of time
+      "s"
+    | 
+      ## (hertz) SI unit of frequency
+      "Hz"
+    | 
+      ## (pascal) SI unit of pressure or stress
+      "Pa"
+    | 
+      ## (ohm) SI unit of electric resistance
+      "Ω"
+    | 
+      ## (litre) 1 dm³
+      "L"
+    | 
+      ## (tonne) 10³ kg
+      "t"
+    | 
+      ## (hectare) 1 hm²
+      "ha"
+    | 
+      ## (ångström) 10⁻¹⁰ m
+      "Å"
+    | 
+      ## (millilitre) 
+      "mL"
+    | 
+      ## (centimetre) 
+      "cm"
+    | 
+      ## (decibel) see remarks, below
+      "dB"
+    | 
+      ## (kilobit) 10³ or 1000 bits
+      "kbit"
+    | 
+      ## (kibibit) 2¹⁰ or 1024 bits
+      "Kibit"
+    | 
+      ## (kilobyte) 10³ or 1000 bytes
+      "kB"
+    | 
+      ## (kibibyte) 2¹⁰ or 1024 bytes
+      "KiB"
+    | 
+      ## (megabyte) 10⁶ or 1 000 000 bytes
+      "MB"
+    | 
+      ## (mebibyte) 2²⁰ or 1 048 576 bytes
+      "MiB"
+    | xsd:Name
+  }?
+sga-patt.measurement.attribute.quantity =
+  
+  ## specifies the number of the specified units that comprise the measurement
+  attribute quantity { sga-pdata.numeric }?
+sga-patt.measurement.attribute.commodity =
+  
+  ## indicates the substance that is being measured
+  attribute commodity {
+    list { sga-pdata.word+ }
+  }?
+sga-patt.naming.attributes =
+  sga-patt.canonical.attributes,
+  sga-patt.naming.attribute.role,
+  sga-patt.naming.attribute.nymRef
+sga-patt.naming.attribute.role =
+  
+  ## may be used to specify further information about the entity referenced by this name, for example the occupation of a person, or the status of a place. 
+  attribute role { sga-pdata.enumerated }?
+sga-patt.naming.attribute.nymRef =
+  
+  ## (reference to the canonical name) provides a means of locating the canonical form (nym) of the names associated with the object named by the element bearing it.
+  attribute nymRef {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.placement.attributes = sga-patt.placement.attribute.place
+sga-patt.placement.attribute.place =
+  
+  ## specifies where this item is placed
+  ## Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace
+  attribute place {
+    list {
+      (
+       ## below the line
+       "below"
+       | 
+         ## at the foot of the page
+         "bottom"
+       | 
+         ## in the margin (left, right, or both)
+         "margin"
+       | 
+         ## at the top of the page
+         "top"
+       | 
+         ## on the opposite, i.e. facing, page
+         "opposite"
+       | 
+         ## on the other side of the leaf
+         "overleaf"
+       | 
+         ## above the line
+         "above"
+       | 
+         ## at the end of e.g. chapter or volume.
+         "end"
+       | 
+         ## within the body of the text.
+         "inline"
+       | 
+         ## in a predefined space, for example left by an earlier scribe.
+         "inspace"
+       | xsd:Name)+
+    }
+  }?
+sga-patt.typed.attributes =
+  sga-patt.typed.attribute.type, sga-patt.typed.attribute.subtype
+sga-patt.typed.attribute.type =
+  
+  ## characterizes the element in some sense, using any convenient classification scheme or typology.
+  attribute type { sga-pdata.enumerated }?
+sga-patt.typed.attribute.subtype =
+  
+  ## provides a sub-categorization of the element, if needed
+  attribute subtype { sga-pdata.enumerated }?
+sga-patt.pointing.attributes =
+  sga-patt.pointing.attribute.targetLang,
+  sga-patt.pointing.attribute.target,
+  sga-patt.pointing.attribute.evaluate
+sga-patt.pointing.attribute.targetLang =
+  
+  ## specifies the language of the content to be found at the destination referenced by target, using a language tag generated according to BCP 47.
+  attribute targetLang { sga-pdata.language }?
+sch:pattern [
+  id = "targetLang-constraint-targetLang"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[not(self::tei:schemaSpec)][@targetLang]"
+    "\x{a}" ~
+    "            "
+    sch:assert [
+      test = "count(@target)"
+      "@targetLang can only be used if @target is specified."
+    ]
+    "\x{a}" ~
+    "          "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sga-patt.pointing.attribute.target =
+  
+  ## specifies the destination of the reference by supplying one or more URI References
+  attribute target {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.pointing.attribute.evaluate =
+  
+  ## specifies the intended meaning when the target of a pointer is itself a pointer.
+  attribute evaluate {
+    
+    ## if the element pointed to is itself a pointer, then the target of that pointer will be taken, and so on, until an element is found which is not a pointer.
+    "all"
+    | 
+      ## if the element pointed to is itself a pointer, then its target (whether a pointer or not) is taken as the target of this pointer.
+      "one"
+    | 
+      ## no further evaluation of targets is carried out beyond that needed to find the element specified in the pointer's target.
+      "none"
+  }?
+sga-patt.pointing.group.attributes =
+  sga-patt.pointing.attributes,
+  sga-patt.typed.attributes,
+  sga-patt.pointing.group.attribute.domains,
+  sga-patt.pointing.group.attribute.targFunc
+sga-patt.pointing.group.attribute.domains =
+  
+  ## optionally specifies the identifiers of the elements within which all elements indicated by the contents of this element lie.
+  attribute domains {
+    list { sga-pdata.pointer, sga-pdata.pointer, sga-pdata.pointer* }
+  }?
+sga-patt.pointing.group.attribute.targFunc =
+  
+  ## (target function) describes the function of each of the values of the target attribute of the enclosed link, join, or alt tags.
+  attribute targFunc {
+    list { sga-pdata.word, sga-pdata.word, sga-pdata.word* }
+  }?
+sga-patt.segLike.attributes =
+  sga-patt.datcat.attributes,
+  sga-patt.fragmentable.attributes,
+  sga-patt.segLike.attribute.function
+sga-patt.segLike.attribute.function =
+  
+  ## characterizes the function of the segment.
+  attribute function { sga-pdata.enumerated }?
+sga-patt.sortable.attributes = sga-patt.sortable.attribute.sortKey
+sga-patt.sortable.attribute.sortKey =
+  
+  ## supplies the sort key for this element in an index, list or group which contains it.
+  attribute sortKey { sga-pdata.word }?
+sga-patt.edition.attributes =
+  sga-patt.edition.attribute.ed, sga-patt.edition.attribute.edRef
+sga-patt.edition.attribute.ed =
+  
+  ## (edition) supplies an arbitrary identifier for the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text.
+  attribute ed {
+    list { sga-pdata.code+ }
+  }?
+sga-patt.edition.attribute.edRef =
+  
+  ##  (edition reference) provides a pointer to the source edition in which the associated feature (for example, a page, column, or line break) occurs at this point in the text.
+  attribute edRef {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.spanning.attributes = sga-patt.spanning.attribute.spanTo
+sga-patt.spanning.attribute.spanTo =
+  
+  ## indicates the end of a span initiated by the element bearing this attribute.
+  attribute spanTo { sga-pdata.pointer }?
+sch:pattern [
+  id = "spanTo-constraint-spanTo-2"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@spanTo]"
+    "\x{a}" ~
+    "         "
+    sch:assert [
+      test = "following::*[@xml:id=substring(current()/@target,2)]"
+      "\x{a}" ~
+      "The element indicated by @spanTo must follow the current element "
+      sch:name [ ]
+      "\x{a}" ~
+      "         "
+    ]
+    "\x{a}" ~
+    "      "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sch:pattern [
+  id = "spanTo-constraint-spanTo-3"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "tei:*[@spanTo]"
+    "\x{a}" ~
+    "         "
+    sch:assert [
+      test = "id(substring(@spanTo,2))"
+      "\x{a}" ~
+      "@spanTo on "
+      sch:name [ ]
+      " must point to  the identifier of some element  in this document"
+    ]
+    "\x{a}" ~
+    "      "
+  ]
+  "\x{a}" ~
+  "   "
+]
+sga-patt.timed.attributes =
+  sga-patt.timed.attribute.start, sga-patt.timed.attribute.end
+sga-patt.timed.attribute.start =
+  
+  ## indicates the location within a temporal alignment at which this element begins.
+  attribute start { sga-pdata.pointer }?
+sga-patt.timed.attribute.end =
+  
+  ## indicates the location within a temporal alignment at which this element ends.
+  attribute end { sga-pdata.pointer }?
+sga-patt.transcriptional.attributes =
+  sga-patt.editLike.attributes,
+  sga-patt.transcriptional.attribute.hand,
+  sga-patt.transcriptional.attribute.seq
+sga-patt.transcriptional.attribute.hand =
+  
+  ##
+  attribute hand {
+    
+    ##  (Percy Shelley's handwriting) Text written in Percy Shelley's hand.
+    "#pbs"
+    | 
+      ##  (Mary Shelley's handwriting) Text written in Mary Shelley's hand.
+      "#mws"
+    | 
+      ##  (compositor's handwriting) Text written in an (unknown?) compositor's hand.
+      "#comp"
+    | 
+      ##
+      "http://viaf.org/viaf/95159449"
+  }?
+sga-patt.transcriptional.attribute.seq =
+  
+  ## (sequence) assigns a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.
+  attribute seq { sga-pdata.count }?
+sga-patt.translatable.attributes =
+  sga-patt.translatable.attribute.versionDate
+sga-patt.translatable.attribute.versionDate =
+  
+  ## specifies the date on which the source text was extracted and sent to the translator
+  attribute versionDate { sga-pdata.temporal.w3c }?
+sga-pmodel.nameLike.agent = sga-pname
+sga-pmodel.nameLike.agent_alternation = sga-pname
+sga-pmodel.nameLike.agent_sequence = sga-pname
+sga-pmodel.nameLike.agent_sequenceOptional = sga-pname?
+sga-pmodel.nameLike.agent_sequenceOptionalRepeatable = sga-pname*
+sga-pmodel.nameLike.agent_sequenceRepeatable = sga-pname+
+sga-pmodel.segLike = sga-pseg | sga-pc
+sga-pmodel.hiLike = sga-phi
+sga-pmodel.hiLike_alternation = sga-phi
+sga-pmodel.hiLike_sequence = sga-phi
+sga-pmodel.hiLike_sequenceOptional = sga-phi?
+sga-pmodel.hiLike_sequenceOptionalRepeatable = sga-phi*
+sga-pmodel.hiLike_sequenceRepeatable = sga-phi+
+sga-pmodel.emphLike = sga-pforeign | sga-pemph | sga-pterm | sga-ptitle
+sga-pmodel.emphLike_alternation =
+  sga-pforeign | sga-pemph | sga-pterm | sga-ptitle
+sga-pmodel.emphLike_sequence =
+  sga-pforeign, sga-pemph, sga-pterm, sga-ptitle
+sga-pmodel.emphLike_sequenceOptional =
+  sga-pforeign?, sga-pemph?, sga-pterm?, sga-ptitle?
+sga-pmodel.emphLike_sequenceOptionalRepeatable =
+  sga-pforeign*, sga-pemph*, sga-pterm*, sga-ptitle*
+sga-pmodel.emphLike_sequenceRepeatable =
+  sga-pforeign+, sga-pemph+, sga-pterm+, sga-ptitle+
+sga-pmodel.highlighted = sga-pmodel.hiLike | sga-pmodel.emphLike
+sga-pmodel.dateLike = sga-pdate
+sga-pmodel.dateLike_alternation = sga-pdate
+sga-pmodel.dateLike_sequence = sga-pdate
+sga-pmodel.dateLike_sequenceOptional = sga-pdate?
+sga-pmodel.dateLike_sequenceOptionalRepeatable = sga-pdate*
+sga-pmodel.dateLike_sequenceRepeatable = sga-pdate+
+sga-pmodel.measureLike = sga-pnum | sga-pmeasureGrp
+sga-pmodel.measureLike_alternation = sga-pnum | sga-pmeasureGrp
+sga-pmodel.measureLike_sequence = sga-pnum, sga-pmeasureGrp
+sga-pmodel.measureLike_sequenceOptional = sga-pnum?, sga-pmeasureGrp?
+sga-pmodel.measureLike_sequenceOptionalRepeatable =
+  sga-pnum*, sga-pmeasureGrp*
+sga-pmodel.measureLike_sequenceRepeatable = sga-pnum+, sga-pmeasureGrp+
+sga-pmodel.graphicLike = sga-pmedia | sga-pgraphic
+sga-pmodel.pPart.editorial = sga-psubst
+sga-pmodel.pPart.editorial_alternation = sga-psubst
+sga-pmodel.pPart.editorial_sequence = sga-psubst
+sga-pmodel.pPart.editorial_sequenceOptional = sga-psubst?
+sga-pmodel.pPart.editorial_sequenceOptionalRepeatable = sga-psubst*
+sga-pmodel.pPart.editorial_sequenceRepeatable = sga-psubst+
+sga-pmodel.pPart.transcriptional =
+  sga-padd
+  | sga-pdel
+  | sga-punclear
+  | sga-pdamage
+  | sga-phandShift
+  | sga-prestore
+  | sga-pmod
+  | sga-pretrace
+sga-pmodel.pPart.transcriptional_alternation =
+  sga-padd
+  | sga-pdel
+  | sga-punclear
+  | sga-pdamage
+  | sga-phandShift
+  | sga-prestore
+  | sga-pmod
+  | sga-pretrace
+sga-pmodel.pPart.transcriptional_sequence =
+  sga-padd,
+  sga-pdel,
+  sga-punclear,
+  sga-pdamage,
+  sga-phandShift,
+  sga-prestore,
+  sga-pmod,
+  sga-pretrace
+sga-pmodel.pPart.transcriptional_sequenceOptional =
+  sga-padd?,
+  sga-pdel?,
+  sga-punclear?,
+  sga-pdamage?,
+  sga-phandShift?,
+  sga-prestore?,
+  sga-pmod?,
+  sga-pretrace?
+sga-pmodel.pPart.transcriptional_sequenceOptionalRepeatable =
+  sga-padd*,
+  sga-pdel*,
+  sga-punclear*,
+  sga-pdamage*,
+  sga-phandShift*,
+  sga-prestore*,
+  sga-pmod*,
+  sga-pretrace*
+sga-pmodel.pPart.transcriptional_sequenceRepeatable =
+  sga-padd+,
+  sga-pdel+,
+  sga-punclear+,
+  sga-pdamage+,
+  sga-phandShift+,
+  sga-prestore+,
+  sga-pmod+,
+  sga-pretrace+
+sga-pmodel.pPart.edit =
+  sga-pmodel.pPart.editorial | sga-pmodel.pPart.transcriptional
+sga-pmodel.linePart =
+  sga-pmodel.segLike
+  | sga-pmodel.hiLike
+  | sga-pmodel.pPart.transcriptional
+  | sga-pzone
+  | sga-pline
+sga-pmodel.ptrLike = sga-pptr | sga-pref
+sga-pmodel.global.meta =
+  sga-pindex
+  | sga-psubstJoin
+  | sga-plistTranspose
+  | sga-plink
+  | sga-plinkGrp
+  | sga-pjoin
+  | sga-pjoinGrp
+  | sga-palt
+sga-pmodel.milestoneLike = sga-pmilestone | sga-panchor
+sga-pmodel.gLike = sga-pg
+sga-pmodel.biblLike = sga-pbibl
+sga-pmodel.biblLike_alternation = sga-pbibl
+sga-pmodel.biblLike_sequence = sga-pbibl
+sga-pmodel.biblLike_sequenceOptional = sga-pbibl?
+sga-pmodel.biblLike_sequenceOptionalRepeatable = sga-pbibl*
+sga-pmodel.biblLike_sequenceRepeatable = sga-pbibl+
+sga-pmodel.headLike = notAllowed
+sga-pmodel.headLike_alternation = notAllowed
+sga-pmodel.headLike_sequence = empty
+sga-pmodel.headLike_sequenceOptional = empty
+sga-pmodel.headLike_sequenceOptionalRepeatable = empty
+sga-pmodel.headLike_sequenceRepeatable = notAllowed
+sga-pmodel.labelLike = sga-pdesc
+sga-pmodel.labelLike_alternation = sga-pdesc
+sga-pmodel.labelLike_sequence = sga-pdesc
+sga-pmodel.labelLike_sequenceOptional = sga-pdesc?
+sga-pmodel.labelLike_sequenceOptionalRepeatable = sga-pdesc*
+sga-pmodel.labelLike_sequenceRepeatable = sga-pdesc+
+sga-pmodel.listLike = sga-plist
+sga-pmodel.listLike_alternation = sga-plist
+sga-pmodel.listLike_sequence = sga-plist
+sga-pmodel.listLike_sequenceOptional = sga-plist?
+sga-pmodel.listLike_sequenceOptionalRepeatable = sga-plist*
+sga-pmodel.listLike_sequenceRepeatable = sga-plist+
+sga-pmodel.noteLike = sga-pnote
+sga-pmodel.stageLike = sga-pstage
+sga-pmodel.stageLike_alternation = sga-pstage
+sga-pmodel.stageLike_sequence = sga-pstage
+sga-pmodel.stageLike_sequenceOptional = sga-pstage?
+sga-pmodel.stageLike_sequenceOptionalRepeatable = sga-pstage*
+sga-pmodel.stageLike_sequenceRepeatable = sga-pstage+
+sga-pmodel.global.edit =
+  sga-pgap | sga-paddSpan | sga-pdamageSpan | sga-pdelSpan | sga-pspace
+sga-pmodel.divPart = notAllowed
+sga-pmodel.certLike = notAllowed
+sga-pmodel.descLike = sga-pdesc
+sga-pmodel.glossLike = notAllowed
+sga-pmodel.respLike = sga-prespStmt
+sga-pmodel.divWrapper = sga-pdateline | sga-psalute
+sga-pmodel.divTopPart = sga-pmodel.headLike | sga-popener
+sga-pmodel.divTop = sga-pmodel.divWrapper | sga-pmodel.divTopPart
+sga-pmodel.divBottomPart =
+  sga-ptrailer | sga-pcloser | sga-psigned | sga-ppostscript
+sga-pmodel.divBottom = sga-pmodel.divWrapper | sga-pmodel.divBottomPart
+sga-pmodel.nameLike = sga-pmodel.nameLike.agent | sga-prs
+sga-pmodel.nameLike_alternation =
+  sga-pmodel.nameLike.agent_alternation | sga-prs
+sga-pmodel.nameLike_sequence =
+  sga-pmodel.nameLike.agent_sequence, sga-prs
+sga-pmodel.nameLike_sequenceOptional =
+  sga-pmodel.nameLike.agent_sequenceOptional?, sga-prs?
+sga-pmodel.nameLike_sequenceOptionalRepeatable =
+  sga-pmodel.nameLike.agent_sequenceOptionalRepeatable*, sga-prs*
+sga-pmodel.nameLike_sequenceRepeatable =
+  sga-pmodel.nameLike.agent_sequenceRepeatable+, sga-prs+
+sga-pmodel.global =
+  sga-pmodel.global.meta
+  | sga-pmodel.milestoneLike
+  | sga-pmodel.noteLike
+  | sga-pmodel.global.edit
+  | sga-pmetamark
+  | sga-pfigure
+sga-pmodel.biblPart =
+  sga-pmodel.respLike | sga-pcitedRange | sga-pbibl | sga-prelatedItem
+sga-pmodel.pPart.data =
+  sga-pmodel.dateLike | sga-pmodel.measureLike | sga-pmodel.nameLike
+sga-pmodel.inter =
+  sga-pmodel.biblLike
+  | sga-pmodel.labelLike
+  | sga-pmodel.listLike
+  | sga-pmodel.stageLike
+sga-pmodel.common = sga-pmodel.divPart | sga-pmodel.inter
+sga-pmodel.phrase =
+  sga-pmodel.segLike
+  | sga-pmodel.highlighted
+  | sga-pmodel.graphicLike
+  | sga-pmodel.pPart.edit
+  | sga-pmodel.ptrLike
+  | sga-pmodel.pPart.data
+sga-pmodel.limitedPhrase =
+  sga-pmodel.hiLike
+  | sga-pmodel.emphLike
+  | sga-pmodel.pPart.editorial
+  | sga-pmodel.ptrLike
+  | sga-pmodel.pPart.data
+sga-pmodel.divLike = sga-pdiv
+sga-pmodel.divGenLike = notAllowed
+sga-pmodel.div1Like = notAllowed
+sga-patt.personal.attributes =
+  sga-patt.naming.attributes,
+  sga-patt.personal.attribute.full,
+  sga-patt.personal.attribute.sort
+sga-patt.personal.attribute.full =
+  
+  ## indicates whether the name component is given in full, as an abbreviation or simply as an initial.
+  [ a:defaultValue = "yes" ]
+  attribute full {
+    
+    ## the name component is spelled out in full.
+    "yes"
+    | 
+      ## (abbreviated) the name component is given in an abbreviated form.
+      "abb"
+    | 
+      ## (initial letter) the name component is indicated only by one initial.
+      "init"
+  }?
+sga-patt.personal.attribute.sort =
+  
+  ## specifies the sort order of the name component in relation to others within the name.
+  attribute sort { sga-pdata.count }?
+sga-pforeign =
+  
+  ## (foreign) identifies a word or phrase as belonging to some language other than that of the surrounding text.  [3.3.2.1. ]
+  element foreign {
+    sga-pmacro.phraseSeq, sga-patt.global.attributes, empty
+  }
+sga-pemph =
+  
+  ## (emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [3.3.2.2.  3.3.2. ]
+  element emph {
+    sga-pmacro.paraContent, sga-patt.global.attributes, empty
+  }
+sga-phi =
+  
+  ## (highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made.  [3.3.2.2.  3.3.2. ]
+  element hi {
+    sga-pmacro.paraContent,
+    sga-patt.global.attribute.el-target,
+    sga-patt.global.attribute.att-target,
+    sga-patt.global.attribute.att-value,
+    sga-patt.global.attribute.xmlid,
+    sga-patt.global.attribute.n,
+    sga-patt.global.attribute.style,
+    sga-patt.global.linking.attribute.corresp,
+    sga-patt.global.linking.attribute.next,
+    sga-patt.global.linking.attribute.prev,
+    sga-patt.global.facs.attribute.facs,
+    
+    ##
+    attribute rend {
+      
+      ##
+      "hyphenated"
+      | 
+        ##
+        "underline"
+      | 
+        ##
+        "double-underline"
+      | 
+        ##
+        "bold"
+      | 
+        ##
+        "caps"
+      | 
+        ##
+        "italic"
+      | 
+        ##
+        "sup"
+    },
+    empty
+  }
+sga-pdesc =
+  
+  ## (description) contains a brief description of the object documented by its parent element, including its intended usage, purpose, or application where this is appropriate. [22.4.4.  22.4.5.  22.4.6.  22.4.7. ]
+  element desc {
+    sga-pmacro.limitedContent,
+    sga-patt.global.attributes,
+    sga-patt.translatable.attributes,
+    empty
+  }
+sga-pterm =
+  
+  ## contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.3.4. ]
+  element term {
+    sga-pmacro.phraseSeq,
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.canonical.attributes,
+    sga-patt.sortable.attributes,
+    sga-patt.cReferencing.attributes,
+    empty
+  }
+sga-pgap =
+  
+  ## (gap) indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [3.4.3. ]
+  element gap {
+    (sga-pmodel.descLike | sga-pmodel.certLike)*,
+    sga-patt.global.attributes,
+    sga-patt.editLike.attributes,
+    
+    ## gives the reason for omission. Sample values include sampling, inaudible, irrelevant, cancelled.
+    attribute reason {
+      list { sga-pdata.word+ }
+    }?,
+    
+    ## in the case of text omitted from the transcription because of deliberate deletion by an identifiable hand, signifies the hand which made the deletion.
+    attribute hand { sga-pdata.pointer }?,
+    
+    ## In the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified.
+    ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+    attribute agent { sga-pdata.enumerated }?,
+    empty
+  }
+sga-padd =
+  
+  ## (addition) contains letters, words, or phrases inserted in the text by an author, scribe, annotator, or corrector. [3.4.3. ]
+  element add {
+    sga-pmacro.paraContent,
+    sga-patt.global.attribute.el-target,
+    sga-patt.global.attribute.att-target,
+    sga-patt.global.attribute.att-value,
+    sga-patt.global.attribute.xmlid,
+    sga-patt.global.attribute.n,
+    sga-patt.global.attribute.style,
+    sga-patt.global.linking.attribute.corresp,
+    sga-patt.global.linking.attribute.next,
+    sga-patt.global.linking.attribute.prev,
+    sga-patt.global.facs.attribute.facs,
+    sga-patt.transcriptional.attributes,
+    sga-patt.typed.attribute.subtype,
+    
+    ##
+    attribute place {
+      
+      ##
+      "superlinear"
+      | 
+        ##
+        "intralinear"
+      | 
+        ##
+        "interlinear"
+      | 
+        ##
+        "sublinear"
+    }?,
+    
+    ##
+    attribute type {
+      
+      ##
+      "alternative"
+    }?,
+    empty
+  }
+sga-pdel =
+  
+  ## (deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector. [3.4.3. ]
+  element del {
+    sga-pmacro.paraContent,
+    sga-patt.global.attribute.el-target,
+    sga-patt.global.attribute.att-target,
+    sga-patt.global.attribute.att-value,
+    sga-patt.global.attribute.xmlid,
+    sga-patt.global.attribute.n,
+    sga-patt.global.attribute.style,
+    sga-patt.global.linking.attribute.corresp,
+    sga-patt.global.linking.attribute.next,
+    sga-patt.global.linking.attribute.prev,
+    sga-patt.global.facs.attribute.facs,
+    sga-patt.transcriptional.attribute.seq,
+    sga-patt.editLike.attribute.evidence,
+    sga-patt.editLike.attribute.source,
+    sga-patt.editLike.attribute.instant,
+    sga-patt.dimensions.attribute.unit,
+    sga-patt.dimensions.attribute.quantity,
+    sga-patt.dimensions.attribute.extent,
+    sga-patt.dimensions.attribute.precision,
+    sga-patt.dimensions.attribute.scope,
+    sga-patt.ranging.attribute.atLeast,
+    sga-patt.ranging.attribute.atMost,
+    sga-patt.ranging.attribute.min,
+    sga-patt.ranging.attribute.max,
+    sga-patt.ranging.attribute.confidence,
+    sga-patt.typed.attributes,
+    
+    ## 
+    ## Suggested values include: 1] strikethrough; 2] overwritten; 3] smear; 4] vertical_line; 5] unmarked
+    attribute rend {
+      
+      ##
+      "strikethrough"
+      | 
+        ##
+        "overwritten"
+      | 
+        ##
+        "smear"
+      | 
+        ##
+        "vertical_line"
+      | 
+        ##
+        "unmarked"
+      | xsd:Name
+    }?,
+    empty
+  }
+sga-punclear =
+  
+  ## contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source. [11.3.3.1.  3.4.3. ]
+  element unclear {
+    sga-pmacro.paraContent,
+    sga-patt.global.attributes,
+    sga-patt.editLike.attributes,
+    
+    ## indicates why the material is hard to transcribe.
+    attribute reason {
+      list { sga-pdata.word+ }
+    }?,
+    
+    ## Where the difficulty in transcription arises from action (partial deletion, etc.) assignable to an identifiable hand, signifies the hand responsible for the action.
+    attribute hand { sga-pdata.pointer }?,
+    
+    ## Where the difficulty in transcription arises from damage, categorizes the cause of the damage, if it can be identified.
+    ## Sample values include: 1] rubbing; 2] mildew; 3] smoke
+    attribute agent { sga-pdata.enumerated }?,
+    empty
+  }
+sga-pname =
+  
+  ## (name, proper noun) contains a proper noun or noun phrase. [3.5.1. ]
+  element name {
+    sga-pmacro.phraseSeq,
+    sga-patt.global.attributes,
+    sga-patt.personal.attributes,
+    sga-patt.datable.attributes,
+    sga-patt.editLike.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-prs =
+  
+  ## (referencing string) contains a general purpose name or referring string. [13.2.1.  3.5.1. ]
+  element rs {
+    sga-pmacro.phraseSeq,
+    sga-patt.global.attributes,
+    sga-patt.naming.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-pnum =
+  
+  ## (number) contains a number, written in any form. [3.5.3. ]
+  element num {
+    sga-pmacro.phraseSeq,
+    sga-patt.global.attributes,
+    sga-patt.ranging.attributes,
+    
+    ## indicates the type of numeric value.
+    ## Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage
+    attribute type {
+      
+      ## absolute number, e.g. 21, 21.5
+      "cardinal"
+      | 
+        ## ordinal number, e.g. 21st
+        "ordinal"
+      | 
+        ## fraction, e.g. one half or three-quarters
+        "fraction"
+      | 
+        ## a percentage
+        "percentage"
+      | xsd:Name
+    }?,
+    
+    ## supplies the value of the number in standard form.
+    attribute value { sga-pdata.numeric }?,
+    empty
+  }
+sga-pmeasureGrp =
+  
+  ## (measure group) contains a group of dimensional specifications which relate to the same object, for example the height and width of a manuscript page. [10.3.4. ]
+  element measureGrp {
+    (text | sga-pmodel.gLike | sga-pmodel.measureLike)*,
+    sga-patt.global.attributes,
+    sga-patt.measurement.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-pdate =
+  
+  ## contains a date in any format. [3.5.4.  2.2.4.  2.5.  3.11.2.3.  15.2.3.  13.3.6. ]
+  element date {
+    (text | sga-pmodel.gLike | sga-pmodel.phrase | sga-pmodel.global)*,
+    sga-patt.global.attributes,
+    sga-patt.datable.attributes,
+    sga-patt.editLike.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-pptr =
+  
+  ## (pointer) defines a pointer to another location. [3.6.  16.1. ]
+  element ptr {
+    empty
+    >> sch:pattern [
+         id = "ptr-constraint-ptrAtts"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ptr"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @cRef"
+             "Only one of the\x{a}" ~
+             "attributes @target and @cRef may be supplied on "
+             sch:name [ ]
+             "."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.internetMedia.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.cReferencing.attributes,
+    empty
+  }
+sga-pref =
+  
+  ## (reference) defines a reference to another location, possibly modified by additional text or comment. [3.6.  16.1. ]
+  element ref {
+    sga-pmacro.paraContent
+    >> sch:pattern [
+         id = "ref-constraint-refAtts"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:ref"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @cRef"
+             "Only one of the\x{a}" ~
+             "	attributes @target' and @cRef' may be supplied on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.internetMedia.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.cReferencing.attributes,
+    empty
+  }
+sga-plist =
+  
+  ## (list) contains any sequence of items organized as a list. [3.7. ]
+  element list {
+    ((sga-pmodel.divTop | sga-pmodel.global)*,
+     ((sga-pitem, sga-pmodel.global*)+
+      | (sga-pmodel.global*, sga-pitem, sga-pmodel.global*)+),
+     (sga-pmodel.divBottom, sga-pmodel.global*)*),
+    sga-patt.global.attributes,
+    sga-patt.sortable.attributes,
+    
+    ## describes the form of the list.
+    ## Suggested values include: 1] ordered; 2] bulleted; 3] simple; 4] gloss
+    [ a:defaultValue = "simple" ]
+    attribute type {
+      
+      ## list items are numbered or lettered. 
+      "ordered"
+      | 
+        ## list items are marked with a bullet or other typographic device. 
+        "bulleted"
+      | 
+        ## list items are not numbered or bulleted. 
+        "simple"
+      | 
+        ## each list item glosses some term or concept, which is given by a label element preceding the list item.
+        "gloss"
+      | xsd:Name
+    }?,
+    empty
+  }
+sga-pitem =
+  
+  ## contains one component of a list. [3.7.  2.5. ]
+  element item {
+    sga-pmacro.specialPara,
+    sga-patt.global.attributes,
+    sga-patt.sortable.attributes,
+    empty
+  }
+sga-pnote =
+  
+  ## contains a note or annotation. [3.8.1.  2.2.6.  3.11.2.7.  9.3.5.4. ]
+  element note {
+    sga-pmacro.specialPara,
+    sga-patt.global.attributes,
+    sga-patt.placement.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.typed.attributes,
+    
+    ## indicates whether the copy text shows the exact place of reference for the note.
+    [ a:defaultValue = "true" ]
+    attribute anchored { sga-pdata.truthValue }?,
+    
+    ## points to the end of the span to which the note is attached, if the note is not embedded in the text at that point.
+    attribute targetEnd {
+      list { sga-pdata.pointer+ }
+    }?,
+    empty
+  }
+sga-pindex =
+  
+  ## (index entry) marks a location to be indexed for whatever purpose. [3.8.2. ]
+  element index {
+    (sga-pterm, sga-pindex?)*,
+    sga-patt.global.attributes,
+    sga-patt.spanning.attributes,
+    
+    ## a single word which follows the rules defining a legal XML name (see ), supplying a name to specify which index (of several) the index entry belongs to.
+    attribute indexName { sga-pdata.name }?,
+    empty
+  }
+sga-pmedia =
+  
+  ## indicates the location of any form of external media such as an audio or video clip etc. [3.9. ]
+  element media {
+    sga-pmodel.descLike*,
+    sga-patt.typed.attributes,
+    sga-patt.global.attributes,
+    sga-patt.media.attribute.width,
+    sga-patt.media.attribute.height,
+    sga-patt.media.attribute.scale,
+    sga-patt.resourced.attributes,
+    sga-patt.timed.attributes,
+    
+    ## (MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type
+    attribute mimeType {
+      list { sga-pdata.word+ }
+    },
+    empty
+  }
+sga-pgraphic =
+  
+  ## indicates the location of an inline graphic, illustration, or figure. [3.9. ]
+  element graphic {
+    sga-pmodel.descLike*,
+    sga-patt.global.attributes,
+    sga-patt.media.attributes,
+    sga-patt.resourced.attributes,
+    empty
+  }
+sga-pmilestone =
+  
+  ## marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.10.3. ]
+  element milestone {
+    empty,
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.edition.attributes,
+    sga-patt.spanning.attributes,
+    sga-patt.breaking.attributes,
+    
+    ##
+    attribute unit {
+      
+      ##
+      "tei:div"
+      | 
+        ##
+        "tei:p"
+      | 
+        ##
+        "tei:lg"
+      | 
+        ##
+        "tei:date"
+      | 
+        ##
+        "tei:speaker"
+      | 
+        ##
+        "tei:q"
+      | 
+        ##
+        "tei:stage"
+      | 
+        ##
+        "tei:seg"
+      | 
+        ##
+        "tei:note"
+    },
+    empty
+  }
+sga-prespStmt =
+  
+  ## (statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [3.11.2.2.  2.2.1.  2.2.2.  2.2.5. ]
+  element respStmt {
+    ((sga-presp+, sga-pmodel.nameLike.agent+)
+     | (sga-pmodel.nameLike.agent+, sga-presp+)),
+    sga-patt.global.attributes,
+    empty
+  }
+sga-presp =
+  
+  ## (responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [3.11.2.2.  2.2.1.  2.2.2.  2.2.5. ]
+  element resp {
+    sga-pmacro.phraseSeq.limited,
+    sga-patt.global.attributes,
+    sga-patt.canonical.attributes,
+    empty
+  }
+sga-ptitle =
+  
+  ## contains a title for any kind of work. [3.11.2.2.  2.2.1.  2.2.5. ]
+  element title {
+    sga-pmacro.paraContent,
+    sga-patt.global.attributes,
+    sga-patt.canonical.attributes,
+    sga-patt.typed.attribute.subtype,
+    
+    ## classifies the title according to some convenient typology.
+    ## Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] short; 5] desc(descriptive) 
+    attribute type { sga-pdata.enumerated }?,
+    
+    ## indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material.
+    attribute level {
+      
+      ## (analytic) analytic title (article, poem, or other item published as part of a larger item) 
+      "a"
+      | 
+        ## (monographic) monographic title (book, collection, or other item published as a distinct item, including single volumes of multi-volume works) 
+        "m"
+      | 
+        ## (journal) journal title 
+        "j"
+      | 
+        ## (series) series title 
+        "s"
+      | 
+        ## (unpublished) title of unpublished material (including theses and dissertations unless published by a commercial press)
+        "u"
+    }?,
+    empty
+  }
+sga-pcitedRange =
+  
+  ##  (cited range) defines the range of cited content, often represented by pages or other units [3.11.2.3. ]
+  element citedRange {
+    sga-pmacro.phraseSeq,
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    
+    ## identifies the type of information conveyed by the element, e.g. columns, pages, volume.
+    ## Suggested values include: 1] vol (volume) ; 2] issue; 3] pp (pages) ; 4] ll (lines) ; 5] chap (chapter) ; 6] part
+    attribute unit {
+      
+      ##  (volume) the element contains a volume number.
+      "vol"
+      | 
+        ## the element contains an issue number, or volume and issue numbers.
+        "issue"
+      | 
+        ##  (pages) the element contains a page number or page range.
+        "pp"
+      | 
+        ##  (lines) the element contains a line number or line range.
+        "ll"
+      | 
+        ##  (chapter) the element contains a chapter indication (number and/or title)
+        "chap"
+      | 
+        ## the element identifies a part of a book or collection.
+        "part"
+      | xsd:Name
+    }?,
+    
+    ## specifies the starting point of the range of units indicated by the unit attribute.
+    attribute from { sga-pdata.word }?,
+    
+    ## specifies the end-point of the range of units indicated by the unit attribute.
+    attribute to { sga-pdata.word }?,
+    empty
+  }
+sga-pbibl =
+  
+  ## (bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged.  [3.11.1.  2.2.7.  15.3.2. ]
+  element bibl {
+    (text
+     | sga-pmodel.gLike
+     | sga-pmodel.highlighted
+     | sga-pmodel.pPart.data
+     | sga-pmodel.pPart.edit
+     | sga-pmodel.segLike
+     | sga-pmodel.ptrLike
+     | sga-pmodel.biblPart
+     | sga-pmodel.global)*,
+    sga-patt.global.attributes,
+    sga-patt.declarable.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.sortable.attributes,
+    sga-patt.docStatus.attributes,
+    empty
+  }
+sga-prelatedItem =
+  
+  ## contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [3.11.2.6. ]
+  element relatedItem {
+    ((sga-pmodel.biblLike | sga-pmodel.ptrLike)?)
+    >> sch:pattern [
+         id = "relatedItem-constraint-targetorcontent11"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and count( child::* ) > 0"
+             "\x{a}" ~
+             "If the @target attribute on "
+             sch:name [ ]
+             " is used, the\x{a}" ~
+             "relatedItem element must be empty"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "relatedItem-constraint-targetorcontent11"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:relatedItem"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@target or child::*"
+             "A relatedItem element should have either a 'target' attribute\x{a}" ~
+             "        or a child element to indicate the related bibliographic item"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    
+    ## points to the related bibliographic element by means of an absolute or relative URI reference
+    attribute target { sga-pdata.pointer }?,
+    empty
+  }
+sga-pstage =
+  
+  ## (stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.12.2.  3.12.  7.2.4. ]
+  element stage {
+    sga-pmacro.specialPara,
+    sga-patt.global.attributes,
+    
+    ## indicates the kind of stage direction.
+    ## Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] novelistic; 6] delivery; 7] modifier; 8] location; 9] mixed
+    attribute type {
+      
+      ## describes a setting.
+      "setting"
+      | 
+        ## describes an entrance.
+        "entrance"
+      | 
+        ## describes an exit.
+        "exit"
+      | 
+        ## describes stage business.
+        "business"
+      | 
+        ## is a narrative, motivating stage direction.
+        "novelistic"
+      | 
+        ## describes how a character speaks.
+        "delivery"
+      | 
+        ## gives some detail about a character.
+        "modifier"
+      | 
+        ## describes a location.
+        "location"
+      | 
+        ## more than one of the above
+        "mixed"
+      | xsd:Name
+    }?,
+    empty
+  }
+sga-pbody =
+  
+  ## (text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. ]
+  element body {
+    (sga-pmodel.global*,
+     (sga-pmodel.divTop, (sga-pmodel.global | sga-pmodel.divTop)*)?,
+     (sga-pmodel.divGenLike,
+      (sga-pmodel.global | sga-pmodel.divGenLike)*)?,
+     ((sga-pmodel.divLike,
+       (sga-pmodel.global | sga-pmodel.divGenLike)*)+
+      | (sga-pmodel.div1Like,
+         (sga-pmodel.global | sga-pmodel.divGenLike)*)+
+      | ((sga-pmodel.common, sga-pmodel.global*)+,
+         ((sga-pmodel.divLike,
+           (sga-pmodel.global | sga-pmodel.divGenLike)*)+
+          | (sga-pmodel.div1Like,
+             (sga-pmodel.global | sga-pmodel.divGenLike)*)+)?)),
+     (sga-pmodel.divBottom, sga-pmodel.global*)*),
+    sga-patt.global.attributes,
+    empty
+  }
+sga-pdiv =
+  
+  ## (text division) contains a subdivision of the front, body, or back of a text. [4.1. ]
+  element div {
+    ((sga-pmodel.divTop | sga-pmodel.global)*,
+     ((((sga-pmodel.divLike | sga-pmodel.divGenLike),
+        sga-pmodel.global*)+
+       | ((sga-pmodel.common, sga-pmodel.global*)+,
+          ((sga-pmodel.divLike | sga-pmodel.divGenLike),
+           sga-pmodel.global*)*)),
+      (sga-pmodel.divBottom, sga-pmodel.global*)*)?),
+    sga-patt.global.attributes,
+    sga-patt.divLike.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-ptrailer =
+  
+  ## contains a closing title or footer appearing at the end of a division of a text.  [4.2.4.  4.2. ]
+  element trailer {
+    sga-pmacro.phraseSeq,
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-pdateline =
+  
+  ## contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer.  [4.2.2. ]
+  element dateline {
+    sga-pmacro.phraseSeq, sga-patt.global.attributes, empty
+  }
+sga-popener =
+  
+  ## groups together dateline, byline, salutation, and similar phrases appearing as a preliminary group at the start of a division, especially of a letter. [4.2. ]
+  element opener {
+    (text
+     | sga-pmodel.gLike
+     | sga-pmodel.phrase
+     | sga-pdateline
+     | sga-psalute
+     | sga-psigned
+     | sga-pmodel.global)*,
+    sga-patt.global.attributes,
+    empty
+  }
+sga-pcloser =
+  
+  ## groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2.  4.2. ]
+  element closer {
+    (text
+     | sga-pmodel.gLike
+     | sga-psigned
+     | sga-pdateline
+     | sga-psalute
+     | sga-pmodel.phrase
+     | sga-pmodel.global)*,
+    sga-patt.global.attributes,
+    empty
+  }
+sga-psalute =
+  
+  ## (salutation) contains a salutation or greeting prefixed to a foreword, dedicatory epistle, or other division of a text, or the salutation in the closing of a letter, preface, etc. [4.2.2. ]
+  element salute {
+    sga-pmacro.phraseSeq, sga-patt.global.attributes, empty
+  }
+sga-psigned =
+  
+  ## (signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text.  [4.2.2. ]
+  element signed {
+    sga-pmacro.paraContent, sga-patt.global.attributes, empty
+  }
+sga-ppostscript =
+  
+  ## contains a postscript, e.g. to a letter. [4.2. ]
+  element postscript {
+    ((sga-pmodel.global | sga-pmodel.divTopPart)*,
+     sga-pmodel.common,
+     (sga-pmodel.global | sga-pmodel.common)*,
+     (sga-pmodel.divBottomPart, sga-pmodel.global*)*),
+    sga-patt.global.attributes,
+    empty
+  }
+sga-pfacsimile =
+  
+  ## contains a representation of some written source in the form of a set of images rather than as transcribed or encoded text. [11.1. ]
+  element facsimile {
+    (sga-pmodel.graphicLike | sga-psurface | sga-psurfaceGrp)+,
+    sga-patt.global.attributes,
+    empty
+  }
+sga-psourceDoc =
+  
+  ## contains a transcription or other representation of a single source document potentially forming part of a dossier génétique or collection of sources.
+  element sourceDoc {
+    (sga-pmodel.global
+     | sga-pmodel.graphicLike
+     | sga-psurface
+     | sga-psurfaceGrp)+,
+    sga-patt.global.attributes,
+    empty
+  }
+sga-patt.global.facs.attributes = sga-patt.global.facs.attribute.facs
+sga-patt.global.facs.attribute.facs =
+  
+  ## (facsimile) points to all or part of an image which corresponds with the content of the element.
+  attribute facs {
+    list { sga-pdata.pointer+ }
+  }?
+sga-psurface =
+  
+  ## defines a written surface as a two-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and transcriptions of the writing within them.
+  element surface {
+    (sga-pmodel.glossLike*,
+     sga-pmodel.graphicLike+,
+     (sga-pzone | sga-pmodel.global | sga-pline)*)
+    >> sch:ns [ prefix = "tei" uri = "http://www.tei-c.org/ns/1.0" ],
+    sga-patt.global.attribute.el-target,
+    sga-patt.global.attribute.att-target,
+    sga-patt.global.attribute.att-value,
+    sga-patt.global.attribute.rend,
+    sga-patt.global.attribute.style,
+    sga-patt.global.linking.attribute.next,
+    sga-patt.global.linking.attribute.prev,
+    sga-patt.global.facs.attribute.facs,
+    sga-patt.coordinated.attribute.start,
+    sga-patt.typed.attributes,
+    
+    ## (identifier) provides a unique identifier for the element bearing the attribute.
+    attribute xml:id { xsd:ID },
+    
+    ## (number) gives a number (or other label) for an element, which is not necessarily unique within the document.
+    attribute n { sga-pdata.text }?,
+    
+    ## (corresponds) Syntactic sugar attribute—should refer to the id of the sourceDoc element with which this surface should be associated
+    attribute partOf {
+      list { sga-pdata.pointer+ }
+    },
+    
+    ## gives the x coordinate value for the upper left corner of a rectangular space.
+    attribute ulx { sga-pdata.numeric },
+    
+    ## gives the y coordinate value for the upper left corner of a rectangular space.
+    attribute uly { sga-pdata.numeric },
+    
+    ## gives the x coordinate value for the lower right corner of a rectangular space.
+    attribute lrx { sga-pdata.numeric },
+    
+    ## gives the y coordinate value for the lower right corner of a rectangular space.
+    attribute lry { sga-pdata.numeric },
+    empty
+  }
+sga-psurfaceGrp =
+  
+  ## defines any kind of useful grouping of written surfaces, for example the recto and verso of a single leaf, which the encoder wishes to treat as a single unit. 
+  element surfaceGrp {
+    (sga-pmodel.global | sga-psurface | sga-psurfaceGrp)+,
+    sga-patt.global.attributes,
+    sga-patt.coordinated.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-patt.coordinated.attributes =
+  sga-patt.coordinated.attribute.start,
+  sga-patt.coordinated.attribute.ulx,
+  sga-patt.coordinated.attribute.uly,
+  sga-patt.coordinated.attribute.lrx,
+  sga-patt.coordinated.attribute.lry
+sga-patt.coordinated.attribute.start =
+  
+  ## indicates the element within a transcription of the text containing at least the start of the writing represented by this zone or surface.
+  attribute start { sga-pdata.pointer }?
+sga-patt.coordinated.attribute.ulx =
+  
+  ## gives the x coordinate value for the upper left corner of a rectangular space.
+  attribute ulx { sga-pdata.numeric }?
+sga-patt.coordinated.attribute.uly =
+  
+  ## gives the y coordinate value for the upper left corner of a rectangular space.
+  attribute uly { sga-pdata.numeric }?
+sga-patt.coordinated.attribute.lrx =
+  
+  ## gives the x coordinate value for the lower right corner of a rectangular space.
+  attribute lrx { sga-pdata.numeric }?
+sga-patt.coordinated.attribute.lry =
+  
+  ## gives the y coordinate value for the lower right corner of a rectangular space.
+  attribute lry { sga-pdata.numeric }?
+sga-pzone =
+  
+  ## defines any two-dimensional area within a surface element.
+  element zone {
+    (text
+     | sga-pmodel.linePart
+     | sga-pmodel.graphicLike
+     | sga-pmodel.milestoneLike
+     | sga-pmodel.noteLike
+     | sga-pmodel.global.edit
+     | sga-pmetamark)*,
+    sga-patt.global.attributes,
+    sga-patt.coordinated.attributes,
+    sga-patt.typed.attribute.subtype,
+    
+    ##
+    attribute type {
+      
+      ## Material that can appear at the top of a manuscript page—like headings or notes
+      "top"
+      | 
+        ## Zone for marginal additions, deletions, and other modifications. More than one zone with this type may appear in a document if marginal zones are distinct interventions.
+        "left_margin"
+      | 
+        ## The main block of text on a page
+        "main"
+      | 
+        ## For segments of a page where page numbers have been added in one or more original hands; distinct from later additions by librarians/collectors
+        "pagination"
+      | 
+        ## A zone of writing which appears to have been added by librarians/collectors at a later date—often page numbers
+        "library"
+      | 
+        ## A zone of writing which is not part of the main text block and appears at the bottom of a page
+        "bottom"
+    },
+    
+    ## identifies a two dimensional area within the bounding box specified by the other attributes by means of a series of pairs of numbers, each of which gives the x,y coordinates of a point on a line enclosing the area.
+    attribute points {
+      list {
+        sga-pdata.point,
+        sga-pdata.point,
+        sga-pdata.point,
+        sga-pdata.point*
+      }
+    }?,
+    
+    ## indicates the amount by which this zone has been rotated clockwise, with respect to the normal orientation of the parent surface element as implied by the dimensions given in the msDesc element or by the coordinates of the surface itself. The orientation is expressed in arc degrees.
+    [ a:defaultValue = "0" ] attribute rotate { sga-pdata.count }?,
+    empty
+  }
+sga-paddSpan =
+  
+  ## (added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also add). [11.3.1.4. ]
+  element addSpan {
+    empty
+    >> sch:pattern [
+         id = "addSpan-constraint-spanTo"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:addSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "The spanTo= attribute of "
+             sch:name [ ]
+             " is required."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "addSpan-constraint-spanTo_fr"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:addSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "L'attribut spanTo est requis."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.transcriptional.attributes,
+    sga-patt.placement.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.spanning.attributes,
+    empty
+  }
+sga-pdamage =
+  
+  ## contains an area of damage to the text witness. [11.3.3.1. ]
+  element damage {
+    sga-pmacro.paraContent,
+    sga-patt.global.attribute.el-target,
+    sga-patt.global.attribute.att-target,
+    sga-patt.global.attribute.att-value,
+    sga-patt.global.attribute.xmlid,
+    sga-patt.global.attribute.n,
+    sga-patt.global.attribute.style,
+    sga-patt.global.linking.attribute.corresp,
+    sga-patt.global.linking.attribute.next,
+    sga-patt.global.linking.attribute.prev,
+    sga-patt.global.facs.attribute.facs,
+    sga-patt.typed.attributes,
+    sga-patt.damaged.attributes,
+    
+    ##
+    attribute rend {
+      
+      ##
+      "inkblot"
+      | 
+        ##
+        "tear"
+      | 
+        ##
+        "cut"
+    }?,
+    empty
+  }
+sga-pdamageSpan =
+  
+  ## (damaged span of text) marks the beginning of a longer sequence of text which is damaged in some way but still legible. [11.3.3.1. ]
+  element damageSpan {
+    empty
+    >> sch:pattern [
+         id = "damageSpan-constraint-spanTo"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:damageSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "\x{a}" ~
+             "The @spanTo attribute of "
+             sch:name [ ]
+             " is required."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "damageSpan-constraint-spanTo_fr"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:damageSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "L'attribut spanTo est requis."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.damaged.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.spanning.attributes,
+    empty
+  }
+sga-pdelSpan =
+  
+  ## (deleted span of text) marks the beginning of a longer sequence of text deleted, marked as deleted, or otherwise signaled as superfluous or spurious by an author, scribe, annotator, or corrector. [11.3.1.4. ]
+  element delSpan {
+    empty
+    >> sch:pattern [
+         id = "delSpan-constraint-spanTo"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:delSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "The spanTo= attribute of "
+             sch:name [ ]
+             " is required."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "delSpan-constraint-spanTo_fr"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:delSpan"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "@spanTo"
+             "L'attribut spanTo est requis."
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    sga-patt.spanning.attributes,
+    empty
+  }
+sga-phandNotes =
+  
+  ## contains one or more handNote elements documenting the different hands identified within the source texts. [11.3.2.1. ]
+  element handNotes { sga-patt.global.attributes, empty }
+sga-phandShift =
+  
+  ## marks the beginning of a sequence of text written in a new hand, or the beginning of a scribal stint. [11.3.2.1. ]
+  element handShift {
+    empty,
+    sga-patt.global.attributes,
+    sga-patt.handFeatures.attribute.scribe,
+    sga-patt.handFeatures.attribute.scribeRef,
+    sga-patt.handFeatures.attribute.script,
+    sga-patt.handFeatures.attribute.scriptRef,
+    sga-patt.handFeatures.attribute.scope,
+    
+    ##
+    attribute medium {
+      
+      ##
+      "pen"
+      | 
+        ##
+        "pencil"
+    },
+    
+    ##
+    attribute new {
+      
+      ##
+      "#pbs"
+      | 
+        ##
+        "#mws"
+    },
+    empty
+  }
+sga-prestore =
+  
+  ## indicates restoration of text to an earlier state by cancellation of an editorial or authorial marking or instruction. [11.3.1.6. ]
+  element restore {
+    sga-pmacro.paraContent,
+    sga-patt.global.attributes,
+    sga-patt.transcriptional.attributes,
+    sga-patt.typed.attribute.subtype,
+    
+    ##
+    attribute type {
+      
+      ##
+      "stetdots"
+      | 
+        ##
+        "smear_strikethrough"
+      | 
+        ##
+        "underline"
+    }?,
+    empty
+  }
+sga-pspace =
+  
+  ## indicates the location of a significant space in the copy text. [11.5.1. ]
+  element space {
+    (sga-pmodel.descLike | sga-pmodel.certLike)*,
+    sga-patt.global.attributes,
+    sga-patt.dimensions.attributes,
+    
+    ## (dimension) indicates whether the space is horizontal or vertical.
+    attribute dim {
+      
+      ## the space is horizontal.
+      "horizontal"
+      | 
+        ## the space is vertical.
+        "vertical"
+    }?,
+    
+    ## (responsible party) indicates the individual responsible for identifying and measuring the space.
+    attribute resp { sga-pdata.pointer }?,
+    empty
+  }
+sga-psubst =
+  
+  ## (substitution) groups one or more deletions with one or more additions when the combination is to be regarded as a single intervention in the text.
+  element subst {
+    ((sga-padd | sga-pdel | sga-pmodel.milestoneLike)+)
+    >> sch:pattern [
+         id = "subst-constraint-substContents1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:subst"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "child::tei:add and child::tei:del"
+             "\x{a}" ~
+             "                  "
+             sch:name [ ]
+             " must have at least one child add and at least one child del"
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.transcriptional.attribute.seq,
+    sga-patt.editLike.attribute.evidence,
+    sga-patt.editLike.attribute.source,
+    sga-patt.editLike.attribute.instant,
+    sga-patt.dimensions.attribute.unit,
+    sga-patt.dimensions.attribute.quantity,
+    sga-patt.dimensions.attribute.extent,
+    sga-patt.dimensions.attribute.precision,
+    sga-patt.dimensions.attribute.scope,
+    sga-patt.ranging.attribute.atLeast,
+    sga-patt.ranging.attribute.atMost,
+    sga-patt.ranging.attribute.min,
+    sga-patt.ranging.attribute.max,
+    sga-patt.ranging.attribute.confidence,
+    
+    ##
+    attribute hand {
+      
+      ##
+      "#pbs"
+      | 
+        ##
+        "#mws"
+    }?,
+    
+    ##
+    attribute cause {
+      
+      ##
+      "clarify"
+      | 
+        ##
+        "fix"
+    }?,
+    empty
+  }
+sga-psubstJoin =
+  
+  ## (substitution join) identifies a series of possibly fragmented additions, deletions or other revisions on a manuscript that combine to make up a single intervention in the text
+  element substJoin {
+    (sga-pmodel.descLike | sga-pmodel.certLike)*,
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.transcriptional.attributes,
+    empty
+  }
+sga-pline =
+  
+  ## contains the transcription of a topographic line in the source document
+  element line {
+    (text
+     | sga-pmodel.global
+     | sga-pmodel.segLike
+     | sga-pmodel.hiLike
+     | sga-pzone
+     | sga-pline
+     | sga-padd
+     | sga-pdel
+     | sga-padd
+     | sga-punclear
+     | sga-pdamage
+     | sga-phandShift
+     | sga-pmod
+     | sga-pretrace)*,
+    sga-patt.typed.attributes,
+    sga-patt.global.attribute.el-target,
+    sga-patt.global.attribute.att-target,
+    sga-patt.global.attribute.att-value,
+    sga-patt.global.attribute.xmlid,
+    sga-patt.global.attribute.n,
+    sga-patt.global.attribute.style,
+    sga-patt.global.linking.attribute.corresp,
+    sga-patt.global.linking.attribute.next,
+    sga-patt.global.linking.attribute.prev,
+    sga-patt.global.facs.attribute.facs,
+    sga-patt.coordinated.attributes,
+    
+    ##
+    attribute rend {
+      
+      ##
+      "right"
+      | 
+        ##
+        "center"
+      | 
+        ##
+        "left"
+      | 
+        ##
+        "indent1"
+      | 
+        ##
+        "indent2"
+      | 
+        ##
+        "indent3"
+      | 
+        ##
+        "indent4"
+      | 
+        ##
+        "indent5"
+    }?,
+    empty
+  }
+sga-plistTranspose =
+  
+  ## supplies a list of transpositions, each of which is indicated at some point in a document typically by means of metamarks.
+  element listTranspose {
+    sga-ptranspose+, sga-patt.global.attributes, empty
+  }
+sga-pmetamark =
+  
+  ## contains or describes any kind of graphic or written signal within a document the function of which is to determine how it should be read rather than forming part of the actual content of the document.
+  element metamark {
+    sga-pmacro.specialPara,
+    sga-patt.spanning.attributes,
+    sga-patt.placement.attributes,
+    sga-patt.global.attributes,
+    
+    ##
+    attribute function {
+      
+      ##
+      "count"
+      | 
+        ##
+        "insert"
+      | 
+        ##
+        "separate"
+      | 
+        ##
+        "paragraph"
+      | 
+        ##
+        "displacement"
+      | 
+        ##
+        "transpose"
+    }?,
+    
+    ## identifies one or more elements to which the function indicated by the metamark applies. 
+    attribute target {
+      list { sga-pdata.pointer+ }
+    }?,
+    empty
+  }
+sga-pmod =
+  
+  ## represents any kind of modification identified within a single document.
+  element mod {
+    ((sga-pmodel.gLike
+      | sga-pmodel.phrase
+      | sga-pmodel.inter
+      | sga-pmodel.global)*)
+    >> sch:pattern [
+         id = "mod-constraint-modContents"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:mod"
+           "\x{a}" ~
+           "                                    "
+           sch:assert [
+             test = "count(node()) gt 1"
+             "The mod element is\x{a}" ~
+             "                                        intended to group a series of related changes to the\x{a}" ~
+             "                                        manuscript. Thus, mod must have more than one child\x{a}" ~
+             "                                        element. If only a single addition or deletion is being\x{a}" ~
+             "                                        encoded, mod is not required."
+           ]
+           "\x{a}" ~
+           "                                "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.transcriptional.attributes,
+    sga-patt.typed.attribute.subtype,
+    sga-patt.spanning.attributes,
+    
+    ##
+    attribute type {
+      
+      ##
+      "additions"
+      | 
+        ##
+        "deletions"
+    }?,
+    empty
+  }
+sga-pretrace =
+  
+  ## contains a sequence of writing which has been retraced, for example by over-inking, to clarify or fix it.
+  element retrace {
+    sga-pmacro.paraContent,
+    sga-patt.global.attributes,
+    sga-patt.spanning.attributes,
+    sga-patt.transcriptional.attributes,
+    empty
+  }
+sga-ptranspose =
+  
+  ## describes a single textual transposition as an ordered list of at least two pointers specifying the order in which the elements indicated should be re-combined. 
+  element transpose {
+    (sga-pptr, sga-pptr+), sga-patt.global.attributes, empty
+  }
+sga-pg =
+  
+  ## (character or glyph) represents a glyph, or a non-standard character. [5. ]
+  element g {
+    text,
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    
+    ## points to a description of the character or glyph intended.
+    attribute ref { sga-pdata.pointer }?,
+    empty
+  }
+sga-pchar =
+  
+  ## (character) provides descriptive information about a character. 
+  element char {
+    (sga-pcharName?,
+     sga-pmodel.descLike*,
+     sga-pcharProp*,
+     sga-pmapping*,
+     sga-pfigure*,
+     sga-pmodel.graphicLike*,
+     sga-pmodel.noteLike*),
+    sga-patt.global.attributes,
+    empty
+  }
+sga-pcharName =
+  
+  ## (character name) contains the name of a character, expressed following Unicode conventions. 
+  element charName { text, sga-patt.global.attributes, empty }
+sga-pcharProp =
+  
+  ## (character property) provides a name and value for some property of the parent character or glyph. 
+  element charProp {
+    ((sga-punicodeName | sga-plocalName), sga-pvalue),
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-pcharDecl =
+  
+  ## (character declarations) provides information about nonstandard characters and glyphs. 
+  element charDecl {
+    (sga-pdesc?, (sga-pchar | sga-pglyph)+),
+    sga-patt.global.attributes,
+    empty
+  }
+sga-pglyph =
+  
+  ## (character glyph) provides descriptive information about a character glyph. 
+  element glyph {
+    (sga-pglyphName?,
+     sga-pmodel.descLike*,
+     sga-pcharProp*,
+     sga-pmapping*,
+     sga-pfigure*,
+     sga-pmodel.graphicLike*,
+     sga-pmodel.noteLike*),
+    sga-patt.global.attributes,
+    empty
+  }
+sga-pglyphName =
+  
+  ## (character glyph name) contains the name of a glyph, expressed following Unicode conventions for character names. 
+  element glyphName { text, sga-patt.global.attributes, empty }
+sga-plocalName =
+  
+  ## (locally-defined property name) contains a locally defined name for some property. 
+  element localName { text, sga-patt.global.attributes, empty }
+sga-pmapping =
+  
+  ## (character mapping) contains one or more characters which are related to the parent character or glyph in some respect, as specified by the type attribute.
+  element mapping {
+    sga-pmacro.xtext,
+    sga-patt.global.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-punicodeName =
+  
+  ## (unicode property name) contains the name of a registered Unicode normative or informative property. 
+  element unicodeName {
+    text,
+    sga-patt.global.attributes,
+    
+    ## specifies the version number of the Unicode Standard in which this property name is defined.
+    attribute version { sga-pdata.version }?,
+    empty
+  }
+sga-pvalue =
+  
+  ## (value) contains a single value for some property, attribute, or other analysis.
+  element value { sga-pmacro.xtext, sga-patt.global.attributes, empty }
+sga-plink =
+  
+  ## defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. ]
+  element link {
+    empty
+    >> sch:pattern [
+         id = "link-constraint-linkTargets1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:link"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @targets"
+             "You may not supply both \x{a}" ~
+             "	@target and @targets on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "link-constraint-linkTargets2"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:link"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "not(@target) and not(@targets)"
+             "You must\x{a}" ~
+             "	supply either @target or @targets on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "link-constraint-linkTargets3"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:link"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "contains(@target,' ')"
+             "You must supply at least two\x{a}" ~
+             "values for @target on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.typed.attributes,
+    
+    ## specifies the identifiers of the elements or passages to be linked or associated. 
+    attribute targets {
+      list { sga-pdata.pointer, sga-pdata.pointer, sga-pdata.pointer* }
+    }?,
+    empty
+  }
+sga-plinkGrp =
+  
+  ## (link group) defines a collection of associations or hypertextual links. [16.1. ]
+  element linkGrp {
+    (sga-plink | sga-pptr)+,
+    sga-patt.global.attributes,
+    sga-patt.pointing.group.attributes,
+    empty
+  }
+sga-panchor =
+  
+  ## (anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2.  16.4. ]
+  element anchor {
+    empty, sga-patt.global.attributes, sga-patt.typed.attributes, empty
+  }
+sga-pseg =
+  
+  ## (arbitrary segment) represents any segmentation of text below the chunk level. [16.3.  6.2.  7.2.5. ]
+  element seg {
+    sga-pmacro.paraContent,
+    sga-patt.global.attributes,
+    sga-patt.segLike.attributes,
+    sga-patt.typed.attribute.subtype,
+    
+    ##
+    attribute type {
+      
+      ##
+      "alternative"
+    }?,
+    empty
+  }
+sga-pjoin =
+  
+  ## identifies a possibly fragmented segment of text, by pointing at the possibly discontiguous elements which compose it. [16.7. ]
+  element join {
+    ((sga-pmodel.descLike | sga-pmodel.certLike)*)
+    >> sch:pattern [
+         id = "join-constraint-joinTargets1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:join"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @targets"
+             "\x{a}" ~
+             "You may not supply both @target and @targets on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "join-constraint-joinTargets2"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:join"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "not(@target) and not(@targets)"
+             "\x{a}" ~
+             "You must supply either @target or @targets on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "join-constraint-joinTargets3"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:join"
+           "\x{a}" ~
+           "               "
+           sch:assert [
+             test = "contains(@target,' ')"
+             "\x{a}" ~
+             "You must supply at least two values for @target on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.pointing.attributes,
+    sga-patt.typed.attributes,
+    
+    ## specifies the identifiers of the elements or passages to be joined into a virtual element.
+    attribute targets {
+      list { sga-pdata.pointer, sga-pdata.pointer, sga-pdata.pointer* }
+    }?,
+    
+    ## specifies the name of an element which this aggregation may be understood to represent.
+    attribute result { sga-pdata.name }?,
+    
+    ## indicates whether the targets to be joined include the entire element indicated (the entire subtree including its root), or just the children of the target (the branches of the subtree).
+    [ a:defaultValue = "root" ]
+    attribute scope {
+      
+      ## the rooted subtrees indicated by the targets attribute are joined, each subtree become a child of the virtual element created by the join
+      "root"
+      | 
+        ## the children of the subtrees indicated by the targets attribute become the children of the virtual element (i.e. the roots of the subtrees are discarded)
+        "branches"
+    }?,
+    empty
+  }
+sga-pjoinGrp =
+  
+  ## (join group) groups a collection of join elements and possibly pointers. [16.7. ]
+  element joinGrp {
+    (sga-pmodel.glossLike*, (sga-pjoin | sga-pptr)+),
+    sga-patt.global.attributes,
+    sga-patt.pointing.group.attributes,
+    
+    ## describes the result of the joins gathered in this collection.
+    attribute result { sga-pdata.name }?,
+    empty
+  }
+sga-palt =
+  
+  ## (alternation) identifies an alternation or a set of choices among elements or passages. [16.8. ]
+  element alt {
+    empty
+    >> sch:pattern [
+         id = "alt-constraint-altTargets1"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:alt"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "@target and @targets"
+             "You may not supply both \x{a}" ~
+             "	@target and @targets on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ]
+    >> sch:pattern [
+         id = "alt-constraint-altTargets2"
+         "\x{a}" ~
+         "            "
+         sch:rule [
+           context = "tei:alt"
+           "\x{a}" ~
+           "               "
+           sch:report [
+             test = "not(@target) and not(@targets)"
+             "You must\x{a}" ~
+             "	supply either @target or @targets on "
+             sch:name [ ]
+             "\x{a}" ~
+             "               "
+           ]
+           "\x{a}" ~
+           "            "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
+    sga-patt.global.attributes,
+    sga-patt.pointing.attribute.targetLang,
+    sga-patt.pointing.attribute.evaluate,
+    sga-patt.typed.attributes,
+    
+    ## specifies the destination of the reference by supplying one or more URI References
+    attribute target {
+      list { sga-pdata.pointer, sga-pdata.pointer, sga-pdata.pointer* }
+    }?,
+    
+    ## specifies the identifiers of the alternative elements or passages.
+    attribute targets {
+      list { sga-pdata.pointer, sga-pdata.pointer, sga-pdata.pointer* }
+    }?,
+    
+    ## states whether the alternations gathered in this collection are exclusive or inclusive.
+    attribute mode {
+      
+      ## (exclusive) indicates that the alternation is exclusive, i.e. that at most one of the alternatives occurs.
+      "excl"
+      | 
+        ## (inclusive) indicates that the alternation is not exclusive, i.e. that one or more of the alternatives occur.
+        "incl"
+    }?,
+    
+    ## If mode is , each weight states the probability that the corresponding alternative occurs. If mode is incl each weight states the probability that the corresponding alternative occurs given that at least one of the other alternatives occurs.
+    attribute weights {
+      list {
+        sga-pdata.probability,
+        sga-pdata.probability,
+        sga-pdata.probability*
+      }
+    }?,
+    empty
+  }
+sga-patt.global.linking.attributes =
+  sga-patt.global.linking.attribute.corresp,
+  sga-patt.global.linking.attribute.next,
+  sga-patt.global.linking.attribute.prev
+sga-patt.global.linking.attribute.corresp =
+  
+  ## (corresponds) points to elements that correspond to the current element in some way.
+  attribute corresp {
+    list { sga-pdata.pointer+ }
+  }?
+sga-patt.global.linking.attribute.next =
+  
+  ## points to the next element of a virtual aggregate of which the current element is part.
+  attribute next { sga-pdata.pointer }?
+sga-patt.global.linking.attribute.prev =
+  
+  ## (previous) points to the previous element of a virtual aggregate of which the current element is part.
+  attribute prev { sga-pdata.pointer }?
+sga-pfigure =
+  
+  ## groups elements representing or containing graphic information such as an illustration, formula, or figure. [14.4. ]
+  element figure {
+    (sga-pmodel.headLike
+     | sga-pmodel.common
+     | sga-pfigDesc
+     | sga-pmodel.graphicLike
+     | sga-pmodel.global
+     | sga-pmodel.divBottomPart)*,
+    sga-patt.global.attributes,
+    sga-patt.placement.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+sga-pfigDesc =
+  
+  ## (description of figure) contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it. [14.4. ]
+  element figDesc {
+    sga-pmacro.limitedContent, sga-patt.global.attributes, empty
+  }
+sga-pc =
+  
+  ## (character) represents a character. [17.1. ]
+  element c {
+    sga-pmacro.xtext,
+    sga-patt.global.attributes,
+    sga-patt.segLike.attributes,
+    sga-patt.typed.attributes,
+    empty
+  }
+start = sga-psurface | sga-psurfaceGrp

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0094" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0094.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>110</line>
+  </zone>
+  <zone type="main">
+    <line>We had arrived in Englan <mod>
+        <del rend="strikethrough">in</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">at</add>
+      </mod> the beginning</line>
+    <line>of October and it was now february; we according</line>
+    <line>ly determined to commence our journey</line>
+    <line>towards the north at <del rend="strikethrough">ex</del> at the expiration of</line>
+    <line>another month. In this expedition we did</line>
+    <line>not intend to follow the great road to Edinburgh</line>
+    <line>But to visit Windsor, Oxford, Matlock &amp; the</line>
+    <line>Cumberland lakes resolving to arrive at the</line>
+    <line>completion of this tour about the end of</line>
+    <line>July. I packed my chemical instruments</line>
+    <line>&amp; the materials which I had collected resolv-</line>
+    <line>ing to finish my labours in some obscure</line>
+    <line>nook in the country.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">We quitted London on the 27 of</line>
+    <line>March and remain<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="intralinear">e</add>
+      </mod>d a few days at Windsor</line>
+    <line>rambling in its beautiful forest. This was</line>
+    <line>a new scene to us mountaineers; The <mod spanTo="#c57-0094.01"/><del rend="strikethrough"
+        next="#c57-0094.02">beauti</del><add place="sublinear"><metamark function="insert"
+          >^</metamark></add><add place="superlinear">majectic</add></line>
+    <line><del xml:id="c57-0094.02">ful</del><anchor xml:id="c57-0094.01"/> oaks the quantity of
+      game &amp; the <delSpan spanTo="#c57-0094.03" rend="strikethrough"/>beau</line>
+    <line>tiful<anchor xml:id="c57-0094.03"/> flock<add place="intralinear">s</add> of <mod>
+        <del rend="strikethrough">beautiful</del>
+        <add place="superlinear">lovely</add>
+      </mod> deer were all novelties</line>
+    <line>to us. From thence we proceeded to Oxford.</line>
+    <line>We were charmed with the appearance</line>
+    <line>of the town. The colledges are antient and</line>
+    <line>picturesque, the streets broard &amp; the lands</line>
+    <line>cape rendered perfect by the lovely Isis<unclear>.</unclear></line>
+    <line>which <del rend="strikethrough">near here</del> spreads into broard &amp;</line>
+    <line>placid expance of water &amp; runs south</line>
+    <line>of the town. We had <del rend="strikethrough">seve</del> letter<add place="intralinear"
+        >s</add> to several</line>
+    <line>of the professors <mod>
+        <del rend="strikethrough">&amp; were</del>
+        <add place="superlinear" hand="#pbs">who</add>
+      </mod> received <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">us</add>
+      </mod> with great</line>
+    <line>politeness &amp; <del rend="strikethrough">cord</del> cordiality. We found that the</line>
+    <line>regulations of this university were much</line>
+    <line>improved since the days of Gibbon; But</line>
+    <line>there is still <del rend="strikethrough"><unclear>pr</unclear></del> in fashion a great
+      deal</line>
+    <line>of bigotry &amp; devotion to established rules that</line>
+    <line>constrains the mind of the students &amp; leads</line>
+    <line>to slavish &amp; narrow principles of action.</line>
+  </zone>
+</surface>

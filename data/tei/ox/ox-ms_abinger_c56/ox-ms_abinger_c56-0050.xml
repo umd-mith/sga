@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0050" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0050.jp2"/>
+  <zone type="pagination" rend="bordered"><line>80</line></zone>
+  <zone type="main">
+    <line>the doors being opened I perceived Henry</line>
+    <line>Clerval, who on <del><unclear>seee</unclear></del> seeing me instantly</line>
+    <line>sprung out.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"My dear Frankenstien," exclaimed
+      he</line>
+    <line>"How glad I am to see you; how</line>
+    <line>"fortunate <add place="superlinear" hand="#pbs">that</add> you should be here at</line>
+    <line>the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">very</add>
+      </mod> moment of my alighting."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Nothing could equal my delight</line>
+    <line>on <del rend="strikethrough">see</del> seing Clerval: his presence</line>
+    <line>brought back to my thoughts my fa-</line>
+    <line>ther, Elizabeth and all those scenes</line>
+    <line>of home so dear to my recollection.</line>
+    <line>I grasped his hand, and in a moment</line>
+    <line>forgot my horror and misfortune.</line>
+    <line>I felt<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">suddenly, and</add>
+      </mod> for the first time <mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear" hand="#pbs">during</add>
+      </mod>for</line>
+    <line>many months<add hand="#pbs">,</add> calm and serene</line>
+    <line>joy. I welcomed my friend therefore</line>
+    <line>in the most cordial manner &#x26;</line>
+    <line>we walked towards my colledge.</line>
+    <line>Clerval <del rend="strikethrough">ran on</del>
+      <del rend="strikethrough">talked</del> continued</line>
+    <line>talking for some time about <mod>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear" hand="#pbs">our mutual</add>
+      </mod></line>
+    <line>friends and his <add place="superlinear" hand="#pbs">own</add>good fortune in</line>
+    <line>being allowed to come to Ingolstadt.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"You may believe," said he, <del rend="strikethrough"
+        >"that</del></line>
+    <line>"it was not with<del rend="strikethrough">out</del> considerable</line>
+    <line>"trouble that I persuaded my</line>
+    <line>"father that it is not absolutely</line>
+    <line>"necessary for a merchant to</line>
+    <line>"know nothing except bookeeping</line>
+  </zone>
+  
+</surface>

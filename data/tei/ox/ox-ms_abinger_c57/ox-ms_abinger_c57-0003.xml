@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+href="../../../xsl/page-proof.xsl"
+?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0003" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0003.jp2"/>
+  <zone type="pagination" rend="bordered"><line>2</line></zone>
+  <zone type="library"><line>2</line></zone>
+  <zone type="main">
+    <line>dormant state and I ate some berries</line>
+    <line>which I found <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">hanging</add>
+      </mod> on the trees or lying on</line>
+    <line>the ground &#x2013; I slaked my thirst by the</line>
+    <line>brook and then again lying down I was</line>
+    <line>overcome by sleep<mod>
+        <del rend="overwritten">&#x2013;</del>
+        <add place="intralinear">;</add>
+      </mod> It was dark when I</line>
+    <line>awoke, I felt cold also and half frightened</line>
+    <line><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">as it were instinctively</add>
+      </mod> on <del rend="strikethrough">seein</del> finding myself so desolate.</line>
+    <line>Before I had quitted you<add place="intralinear">r</add> appartment</line>
+    <line>on a sensation of cold I had covered my</line>
+    <line>self with some clothes, but these were</line>
+    <line><del rend="strikethrough">not</del>
+      <add place="intralinear">in</add>sufficient to secure me from the</line>
+    <line><del rend="strikethrough">dw</del> dews of night. I was a poor helpless</line>
+    <line>miserable wretch&#x2014;I knew <del rend="strikethrough">no</del> &amp; could</line>
+    <line>distinguish <del rend="strikethrough">no</del> nothing but <mod>
+        <del rend="strikethrough">felt</del>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">feeling</add>
+      </mod> pain</line>
+    <line>invade me on all sides <del rend="strikethrough">and</del> I sat down</line>
+    <line>and wept.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Soon a gentle light stole over the</line>
+    <line>heavens and gave me a sensation of pleasure</line>
+    <line>I started up, and beheld a radiant form</line>
+    <line>rise <del rend="strikethrough">am</del> from among the trees. I gazed with</line>
+    <line>a kind of wonder &#x2013; It moved slowly; but</line>
+    <line>it enlightened my path, and I again</line>
+    <line>went out in search of berries. I was still</line>
+    <line>cold when <del rend="strikethrough">on the ground</del> under one of the</line>
+    <line>trees I found a huge cloak with which I&#x2013;</line>
+    <line>covered myself, and sat down on the ground.</line>
+    <line>No distinct ideas occupied my mind all was</line>
+    <line>confused <del rend="strikethrough">and</del> I felt the light, and hunger</line>
+    <line>and thirst and darkness; innumerable</line>
+    <line>sounds rung in my ears and on all sides</line>
+    <line>various scents saluted me; the only object</line>
+    <line>that I could distinguish was the bright</line>
+  </zone>
+  
+</surface>

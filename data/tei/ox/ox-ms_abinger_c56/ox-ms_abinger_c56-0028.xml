@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0028" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0028.jp2"/>
+  <zone type="pagination" rend="bordered"><line>58</line></zone>
+  <zone type="main">
+    <line>"in her hiding places. They ascend into</line>
+    <line>"the heavens<add place="intralinear" hand="#pbs">;</add>&#x2013; they have discoverd
+      how</line>
+    <line>"the blood circulates, and the nature</line>
+    <line>"of the air we breathe. <del rend="strikethrough">New</del> They have</line>
+    <line>"acquired new and almost unlimi</line>
+    <line>ted powers<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear" hand="#pbs">;</add>
+      </mod>&#x2013; The<add place="intralinear">y</add> can command the</line>
+    <line>"thunders of heaven, mimick the</line>
+    <line>"earthquake, and even mock the</line>
+    <line>"invisible world with its own</line>
+    <line>"shadows."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I departed highly pleased with</line>
+    <line>the professor and his lecture &#x26;</line>
+    <line>paid him a visit the same evening.</line>
+    <line>His manners in private were even</line>
+    <line>more mild <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&#x26; attractive</add>
+      </mod> than in public. For</line>
+    <line>there was a certain dignity in his</line>
+    <line>manner during his lectures which</line>
+    <line>was replaced by the greatest <del rend="strikethrough">affabity</del></line>
+    <line>affability and kindness in his own</line>
+    <line>house. He heard <mod>
+        <del rend="strikethrough">by</del>
+        <add place="superlinear">my</add>
+      </mod> little narration</line>
+    <line>concerning my studies with attention</line>
+    <line>smiled at the names of Cornelius</line>
+    <line>Agrippa and Paracelsus<add place="superlinear"><metamark>X</metamark></add> but
+      without</line>
+    <line>the contempt that Mr Krempe had</line>
+    <line><del rend="strikethrough">Ex</del>
+      <mod>
+        <del rend="strikethrough">exhibited</del>
+        <add place="superlinear" hand="#pbs">expressed to them</add>
+      </mod>. <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <anchor xml:id="c56-0028.01"/>
+      </mod>
+      <del rend="strikethrough">I ended by saying</del> that</line>
+    <line>his lecture had removed my prejudice</line>
+    <line>against modern chemists and I request-</line>
+    <line>ed at the same time his advice</line>
+    <line>concerning the books I ought to procure</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0028.01">
+    <addSpan hand="#pbs" spanTo="#c56-0028.02"/>
+    <line><retrace cause="fix" hand="#mws" spanTo="#c56-0028.04"
+      /><metamark function="displacement">^</metamark></line>
+    <line>He said that</line>
+    <line>these were</line>
+    <line>men to whose</line>
+    <line>indefatigable zeal</line>
+    <line>modern<anchor xml:id="c56-0028.04"/>
+      <mod>
+        <del rend="strikethrough">chem</del>
+        <add place="superlinear">natural</add>
+      </mod></line>
+    <line><retrace cause="fix" hand="#mws" spanTo="#c56-0028.05"/>philosophers were</line>
+    <line>indebted for most</line>
+    <line>of the foundations</line>
+    <line>of their knowledge<anchor xml:id="c56-0028.05"/></line>
+    <line><delSpan spanTo="#c56-0028.03" rend="strikethrough"/>it is not a meaner</line>
+    <line>task<anchor xml:id="c56-0028.03"/>
+      <retrace cause="fix" hand="#mws">They</retrace>
+      <mod>
+        <add place="sublinear" hand="#mws"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#mws">had</add>
+      </mod>
+      <retrace cause="fix" hand="#mws" spanTo="#c56-0028.06"/>left to</line>
+    <line>us, as an easier</line>
+    <line>task to give new</line>
+    <line>names, &#x26; arrange</line>
+    <line>in conected classi</line>
+    <line>fications the</line>
+    <line>facts which they</line>
+    <line>to a great degree</line>
+    <line>ha<mod>
+        <del rend="overwritten">v</del>
+        <add place="intralinear" hand="#mws">d</add>
+        <del rend="strikethrough">e</del>
+      </mod> been the</line>
+    <line>instruments of</line>
+    <line>bringing to light.</line>
+    <line>The labours of</line>
+    <line>men of genius</line>
+    <line>however erroneously</line>
+    <line>directed scarce</line>
+    <line>ly ever failed.<anchor xml:id="c56-0028.06"/><anchor xml:id="c56-0028.02"
+        /></line><anchor xml:id="c56-0029.01"/>
+  </zone>
+</surface>

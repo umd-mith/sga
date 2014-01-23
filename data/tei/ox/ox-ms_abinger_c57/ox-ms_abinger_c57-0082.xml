@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0082" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0082.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>102</line>
+  </zone>
+  <zone type="main">
+    <line>before I allowed myself to enjoy the delight of a</line>
+    <line>union, <mod>
+        <del rend="strikethrough">I should otherwise eagerly expect</del>
+        <add hand="#pbs" place="superlinear">from which I expected</add>
+      </mod>. I remember<add place="intralinear">ed</add></line>
+    <line>also the necessity I was under of either <mod>
+        <del rend="strikethrough">going</del>
+        <add hand="#pbs" place="superlinear">journeying</add>
+      </mod> to England</line>
+    <line>or entering into a long correspondence with th<mod>
+        <del rend="overwritten">ose</del>
+        <add place="intralinear">e</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">men</del>
+        <add hand="#pbs" place="superlinear">philosophers</add>
+      </mod> of that country whose knowledge and discove</line>
+    <line>ries <mod>
+        <del rend="strikethrough">might</del>
+        <add hand="#pbs" place="superlinear">were of</add>
+      </mod> be of <mod>
+        <del rend="strikethrough">inestimable</del>
+        <add hand="#pbs" place="superlinear">indispensable</add>
+      </mod>
+      <mod>
+        <restore type="smear_strikethrough"><del rend="strikethrough">use</del></restore>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">necess</add></del>
+      </mod> to me<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"> in my present undertaking</add>
+      </mod>. The latter</line>
+    <line>method of obtaining the desired intelligence was dilato</line>
+    <line>ry and unsatisfactory; besides any change of scene</line>
+    <line>was agreable to me and I was delighted with the</line>
+    <line>idea of spending a year or two <mod>
+        <del rend="strikethrough">away from</del>
+        <del rend="strikethrough"><add hand="#pbs" place="superlinear">in absence from</add></del>
+      </mod>
+      <mod spanTo="#c57-0082.01"/><delSpan spanTo="#c57-0082.02" rend="strikethrough"/>my
+      fami</line>
+    <line>ly<anchor xml:id="c57-0082.02"/><add hand="#pbs" place="superlinear">in change of scene
+        &amp; variety of occupation in absence from my family</add><anchor xml:id="c57-0082.01"/>
+      during which time <del rend="strikethrough">during this</del>
+      <del rend="strikethrough">time</del>
+      <del rend="strikethrough">which</del></line>
+    <line><del rend="strikethrough">time</del> some event might happen which would</line>
+    <line>restore me to them in peace and happiness. My</line>
+    <line>promise might be fulfilled, and the monster</line>
+    <line>have departed or some <del rend="strikethrough">other</del> accident might</line>
+    <line>occur to destroy him and put a<add place="sublinear">n</add>
+      <del rend="strikethrough">f</del> end to my</line>
+    <line>slavery for ever&#x2014;These feelings dictated my an</line>
+    <line>swer to my father. I <mod>
+        <del rend="strikethrough">said I</del>
+        <add place="superlinear">expressed <del rend="strikethrough">my</del> a</add>
+      </mod> wish<del rend="strikethrough">ed</del> to visit England</line>
+    <line>but concealing <mod>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> true reasons <mod>
+        <del rend="strikethrough">for</del>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear" hand="#pbs">of this</add>
+      </mod> request I</line>
+    <line>clothed my desires under the guise of <del rend="strikethrough" instant="true"
+      >wh</del>wishing to</line>
+    <line>travel and see the world before I sat down</line>
+    <line>for life within the walls of my native town.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I urged my <mod>
+        <del rend="strikethrough">request</del>
+        <add hand="#pbs" place="superlinear">entreaty</add>
+      </mod> with earnestness and</line>
+    <line>my father was easily induced to <mod>
+        <del rend="strikethrough">grant it</del>
+        <add place="superlinear">comply;</add>
+      </mod> for a </line>
+    <line><del rend="strikethrough">man</del> more indulgent <mod>
+        <del rend="strikethrough">and</del>
+        <add hand="#pbs" place="superlinear">or a</add>
+      </mod> less dictatorial parent</line>
+  </zone>
+</surface>

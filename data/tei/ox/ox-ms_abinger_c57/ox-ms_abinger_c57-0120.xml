@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0120" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0120.jp2"/>
+  <zone type="pagination" rend="bordered"><line>136</line></zone>
+  <zone type="main">
+    <line>I was perfectly tranquil as to the consequences of the</line>
+    <line>affair.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I entered the room where the <mod>
+        <del rend="strikethrough">body</del>
+        <add place="superlinear">corpse</add>
+      </mod> lay</line>
+    <line>&amp; was led up to the coffin. How can I describle<unclear>?</unclear></line>
+    <line>my sensation. I feel yet parched with horror</line>
+    <line>nor can I ever reflect on that ter<retrace cause="clarify">r</retrace>ible</line>
+    <line>moment without shuddering &amp; agony that</line>
+    <line><damage type="inkblot">fa</damage>intly reminds of the anguish of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> recogni</line>
+    <line>tion. The trial, the presence of the</line>
+    <line>magistrate &amp; witnesses passed like a</line>
+    <line>dream from my memory when I saw</line>
+    <line>the lifeless form of Henry Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval</line>
+    <line>stre<add place="intralinear">t</add>ched before me &#x2013; I gasped for breath</line>
+    <line>&amp; throwing myself on the body I exclaim</line>
+    <line>ed. And have my murderous machi</line>
+    <line>nations deprived you <del rend="strikethrough">alls</del> also my</line>
+    <line>dearest Henry of life&#x2014; Two <del rend="strikethrough">w</del>
+      <del rend="strikethrough">victims</del></line>
+    <line>I have already destroyed; other victims</line>
+    <line>await their destinny &#x2013; But you, Cl<mod>
+        <del><damage type="inkblot">ai</damage></del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval,</line>
+    <line>my frend, my benefactor!&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The human frame could no longer</line>
+    <line>support the <damage type="inkblot">ag</damage>onizing suffering that I</line>
+    <line>endured &amp; I was <damage type="inkblot">ca</damage>rried out <damage type="inkblot">of
+        t</damage>he room</line>
+    <line>in strong convulsions.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">A fever succeeded to this. I lay for two</line>
+    <line>months on the point of death. My ravings,</line>
+    <line>as I afterwards heard were frightful. I called</line>
+    <line>myself the murderer of William <del rend="strikethrough">of</del>
+      <delSpan spanTo="#c57-0120.01" rend="strikethrough"/>Jus Wil</line>
+    <line>liam<anchor xml:id="c57-0120.01"/>, <del rend="strikethrough">&amp;</del> of Justine &amp;
+      of <del rend="strikethrough"><unclear>Cl</unclear></del> Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark place="sublinear">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval. Sometimes</line>
+    <line>I entreated my attendants to assist me in</line>
+    <line>the destruction of the fiend by whom</line>
+    <line>I was tormented &#x2013; and at others I felt the</line>
+    <line><mod>
+        <del rend="strikethrough">fangs</del>
+        <anchor xml:id="c57-0120.02"/>
+      </mod> of the mosn<add place="intralinear">s</add>ter already grasping my</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0120.02">
+    <line><add>fingers </add></line>
+  </zone>
+</surface>

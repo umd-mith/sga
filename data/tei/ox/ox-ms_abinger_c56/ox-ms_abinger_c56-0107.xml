@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0107" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0107.jp2"/>
+  <zone type="pagination" rend="bordered"><line>137</line></zone>
+  <zone type="library"><line>51</line></zone>
+  <zone type="main">
+    <line>May this be the last misfortune that</line>
+    <line>you will ever suffer. &#x2013; live &#x26; be happy</line>
+    <line>to make <del rend="strikethrough">of</del> others so.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><space unit="chars" extent="4"/>As We returned Elizabeth said, You</line>
+    <line>do not know, my dear Victor, <del rend="strikethrough">w</del> how</line>
+    <line>much I am relieved now that I trust</line>
+    <line>in the innocence of this unfortunate</line>
+    <line>girl. I never could again have</line>
+    <line>known peace if I had been deceived</line>
+    <line>in my reliance on her. For the mo</line>
+    <line>ment that I did believe it I felt</line>
+    <line><del rend="strikethrough">such</del> anguish that I could not have</line>
+    <line>long sustained. Now my heart is light</line>
+    <line>ened. The innocent suffers &#x2013; but she</line>
+    <line>whom I thought amiable and good</line>
+    <line>is not wicked and I am consoled."</line>
+    <milestone unit="tei:p"/>
+    <line><mod>
+        <add place="intralinear">Amiable</add>
+        <del rend="strikethrough">Sweet</del>
+      </mod> Cousin! Such were your</line>
+    <line>thoughts mild and gentle as your</line>
+    <line>dear eyes <del rend="strikethrough">&#x26;</del>
+      <del rend="strikethrough">gentle tone</del> and voice<unclear>.</unclear></line>
+    <line>but I.&#x2014;&#x2014; I was a wretch <del rend="strikethrough">none</del> &#x26;</line>
+    <line>none ever conceived <del rend="strikethrough">of</del> the misery</line>
+    <line>that I then suffered.</line>
+    
+ 
+  </zone>
+  
+    
+  
+</surface>

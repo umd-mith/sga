@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0091" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0091.jp2"/>
+
+  <zone type="pagination" rend="bordered"><line>107</line></zone>
+  <zone type="library"><line>46</line></zone>
+
+  <zone type="main">
+    <line>enough to allow one carriage to pass</line>
+    <line>and when we met another vehicle</line>
+    <line>which was frequently the case we were</line>
+    <line>rolled back sometimes for nearly a</line>
+    <line>mile untill we found one of the</line>
+    <line>drawbridges which led to the fields, down</line>
+    <line>on which one carriage remained</line>
+    <line>while the other <del rend="strikethrough">carriage</del> passed</line>
+    <line>on. They soak their flax also in the</line>
+    <line>mud of their canals and place it</line>
+    <line>against the trees along the road side</line>
+    <line>to dry. When the sun is hot the</line>
+    <line>scent <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod> this exhales is not very</line>
+    <line>easily endured. Yet the roads are</line>
+    <line><del rend="strikethrough">good</del> excellent &amp; the verdure beautiful</line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="5"/>From Rotterdam we went</line>
+    <line>by sea to England. It was on a clear</line>
+    <line>morning in the latter <add place="superlinear" hand="#pbs">days</add> of September</line>
+    <line>that I first saw the white cliffs of</line>
+    <line>Britain. The banks <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">of the</add>
+      </mod> Thames presented</line>
+    <line>a new scene; they were flat but fertile</line>
+    <line>&amp; almost every town was marked by</line>
+    <line>some story. <del rend="strikethrough">Th</del> We saw Tilbury Fort &amp;</line>
+    <line>remembered the Spanish Armada;</line>
+    <line>Gravesend, Woolwich, Greenwich places</line>
+    <line>which I had heard of even in my</line>
+    <line>country. At length we saw the nume</line>
+    <line>rous steeples of London; <del rend="strikethrough">&amp;</del> St Pauls</line>
+    <line>towerering above all &amp; the Tower famed</line>
+    <line>in English History.</line>
+  </zone>
+</surface>

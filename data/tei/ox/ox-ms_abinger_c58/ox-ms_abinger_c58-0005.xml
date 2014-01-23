@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0005" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0005.jp2"/>
+  <zone type="pagination"><line>107</line></zone>
+  <zone type="library"><line>3</line></zone>
+  <zone type="main">
+    <line>adversary I would rather have banished myself for</line>
+    <line>ever from my native country and wandered <mod>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> friend-</line>
+    <line>less outcast over the earth than have consented</line>
+    <line>to this miserable marriage. But as if possessed</line>
+    <line>of magic powers the monster had blinded me to his real</line>
+    <line>intentions and when I thought that I prepared only</line>
+    <line>my own death I hastened that of a far dearer victim.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">As the <del rend="strikethrough">th</del> period fixed for our
+      marriage drew</line>
+    <line>nearer <del rend="strikethrough" instant="true">wh</del>
+      <del rend="strikethrough" instant="true">wh</del> whether from cowardice or a prophetic</line>
+    <line>feeling, I felt my heart sink within me. But I concealed</line>
+    <line>my feelings by <del rend="strikethrough">b</del> an appearance of hilarity that</line>
+    <line>brought smiles and joy to the countenance of my fa-</line>
+    <line>ther but hardly deceived the ever watchful and</line>
+    <line> nicer eye of Elizabeth. She looked forward to our u-</line>
+  </zone>
+</surface>

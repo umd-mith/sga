@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0175" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0175.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>191</line>
+  </zone>
+  <zone type="library">
+    <line>88</line>
+  </zone>
+
+  <zone type="main">
+    <line>would instantly direct my course to <mod spanTo="#c57-0175.01"/><delSpan
+        spanTo="#c57-0175.02"/>En</line>
+    <line>gland.<anchor xml:id="c57-0175.02"/>
+      <add place="intralinear" hand="#pbs">Archangel.</add><anchor xml:id="c57-0175.01"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This speech tro<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">u</add>
+      </mod>bled <del rend="strikethrough"><unclear reason="illegible">b</unclear></del> me. I <mod>
+        <del rend="strikethrough">did</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">had</add>
+      </mod> not despair<add place="intralinear">ed</add></line>
+    <line>nor had I yet conceived the idea of returning</line>
+    <line>if set free. Yet could I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in</add>
+      </mod> justice, or even in</line>
+    <line>possibility refuse th<del rend="overwritten">e</del><mod>
+        <add place="intralinear" hand="#pbs">i</add>
+      </mod>s<del rend="strikethrough">e</del>
+      <mod>
+        <del rend="strikethrough">men</del>
+        <add place="superlinear" hand="#pbs">demand</add>
+      </mod>. I hesitated be-</line>
+    <line>fore I answered <add place="superlinear">when</add> Frankenstein who had</line>
+    <line><del rend="strikethrough">hitherto</del> at first been silent &amp; indeed</line>
+    <line><anchor xml:id="c57-0175.03"/>hardly to have force enough to attend</line>
+    <line>now rouzed himself. His eyes sparkled</line>
+    <line>an<mod>
+        <del rend="overwritten"><unclear reason="illegible">y</unclear></del>
+        <add place="intralinear">d</add>
+      </mod> his cheek flushed <add place="superlinear" hand="#pbs">was</add> with momentary</line>
+    <line>vigo<add place="intralinear">u</add>r. <del rend="strikethrough">and</del> Turning to the
+      men he</line>
+    <line>said; What do you mean? What do</line>
+    <line>you demand of your captain? Are</line>
+    <line>you then so easily turned from your</line>
+    <line>design? Did you <del rend="strikethrough">n</del>ot <del rend="strikethrough">expect</del>
+      call this</line>
+    <line>a glorious expedition &amp; <mod>
+        <del rend="strikethrough">why</del>
+        <add place="superlinear" hand="#pbs">wherefore</add>
+      </mod> was it <mod>
+        <del rend="strikethrough">so</del>
+        <add place="superlinear" hand="#pbs">glorious?</add>
+      </mod></line>
+    <line>Not because the way was smooth</line>
+    <line>&amp; placid as a <mod>
+        <del rend="strikethrough">summer lake</del>
+        <add place="superlinear" hand="#pbs">southern sea</add>
+      </mod> but</line>
+    <line>because it was full of dangers &amp;</line>
+    <line>terror &#x2013; because at every new incident</line>
+    <line>your fortitude was to be called forth &amp; your</line>
+    <line>courage exhibited&#x2013; Because death &amp; danger</line>
+    <line>surrounded you &amp; these you were to</line>
+    <line>brave &amp; overcome. For this was it a glori</line>
+    <line>ous; for this was it <mod>
+        <del rend="strikethrough">&amp;</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">an</add>
+      </mod> honorable under</line>
+    <line>taking. You were to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">be</add>
+      </mod> hereafter hailed</line>
+    <line>as <add place="superlinear">the</add> benefactors of your species &#x2013; <unclear
+        reason="case">Y</unclear>our names</line>
+    <line>adored as the brave men who encoun</line>
+    <line>tered death for honor &amp; <mod>
+        <del rend="strikethrough">glory</del>
+        <add place="superlinear" hand="#pbs">the benefit of mankind.</add>
+      </mod> &#x2013; And now</line>
+    <line>behold with the first <mod>
+        <del rend="strikethrough">straw</del>
+        <add place="superlinear" hand="#pbs">imagination of danger</add>
+      </mod> &#x2013;or if</line>
+    <line>you will &#x2013; The first mighty &amp; terrific</line>
+    <line>trial <del rend="strikethrough" instant="true">you shri</del> of your courage you</line>
+    <line>shrink away &amp; are content to be handed</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0175.03">
+    <line><add>appeared </add></line>
+  </zone>
+</surface>

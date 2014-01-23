@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0021" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0021.jp2"/>
+  <zone type="pagination" rend="bordered"><line>51</line></zone>
+  <zone type="library"><line>9</line></zone>
+  <zone type="main">
+    <line>of <del rend="strikethrough">hels</del> herself.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The day of my departure at lenghth</line>
+    <line>arrived &#x2013; I had taken leave of all</line>
+    <line>my friends excepting Clerval, who spent</line>
+    <line>the last evening with us. He bitterly la</line>
+    <line>mented that he was <mod>
+        <del rend="strikethrough">not able</del>
+        <add place="superlinear" hand="#pbs">unable</add>
+      </mod> to</line>
+    <line>accompany me But his father</line>
+    <line>could not <mod>
+        <del rend="strikethrough">bear</del>
+        <add place="superlinear" hand="#pbs">be persuaded</add>
+      </mod> to part with him</line>
+    <line><del rend="strikethrough">besides</del>
+      <del rend="strikethrough">as</del>
+      <del rend="strikethrough">he</del> intend<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">him to</del>
+        <add place="superlinear" hand="#pbs">that he should</add>
+      </mod> be-</line>
+    <line>come a partner with him in</line>
+    <line>his business, and <mod spanTo="#c56-0021.09"/><del rend="strikethrough"
+        next="#c56-0021.03">he said he did not</del><anchor xml:id="c56-0021.01"/></line>
+    <line><del rend="strikethrough" xml:id="c56-0021.03" next="#c56-0021.04">see</del>
+      <mod>
+        <del rend="unmarked"><add place="sublinear"><metamark function="insert">^</metamark></add><add
+            place="superlinear">of</add></del>
+      </mod>
+      <del rend="strikethrough" xml:id="c56-002201.04" next="#c56-0021.05">what use learning</del>
+      <mod>
+        <del rend="strikethrough" xml:id="c56-0021.05" next="#c56-0021.06">was</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">could be</add></del>
+      </mod>
+      <del rend="strikethrough" xml:id="c56-0021.06" next="#c56-0021.07">to a</del></line>
+    <line><del rend="strikethrough" xml:id="c56-0021.07">merchant.</del><anchor xml:id="c56-0021.09"
+      /> Henry had a refined mind</line>
+    <line><del rend="strikethrough">and a</del> he <mod>
+        <del rend="strikethrough">did not wish</del>
+        <add place="superlinear" hand="#pbs">had no desire</add>
+      </mod> to be idle</line>
+    <line>and was well pleased to become <delSpan spanTo="#c56-0021.08" rend="strikethrough"
+      />the</line>
+    <line>partner<anchor xml:id="c56-0021.08"/>
+      <del rend="strikethrough">of</del> his father's <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">partner</add>
+      </mod>but he believed</line>
+    <line>that a man might be a very good</line>
+    <line>trader and yet <mod>
+        <del rend="strikethrough">have</del>
+        <add place="superlinear" hand="#pbs">posess</add>
+      </mod> a cultivated</line>
+    <line><mod>
+        <del rend="strikethrough">mind.</del>
+        <add place="intralinear">understanding.</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We sate late listening to his com</line>
+    <line>plaints, and <del rend="strikethrough">I</del> making many little</line>
+    <line>arrangements for the future. <del rend="strikethrough">and</del>
+      <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>he</line>
+    <line>next morning early I departed. Tears</line>
+    <line>gushed from the eyes of Elizabeth</line>
+    <line>they proceeded partly from sorrow</line>
+    <line>at my departure, and partly because</line>
+    <line>she reflected that the same journey</line>
+    <line>was to have taken place three</line>
+    <line>months before when a mothers</line>
+    <line>blessing would have accompanied me</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0021.01">
+    <addSpan hand="#pbs" spanTo="#c56-0021.02"/>
+    <line><del rend="strikethrough">and</del> in</line>
+    <line>compliance</line>
+    <line>with his favou</line>
+    <line>rite theory,</line>
+    <line>that <del rend="strikethrough">the</del> learning</line>
+    <line>was superflous</line>
+    <line>in the com-</line>
+    <line>-merce of ordi</line>
+    <line>nary life.</line>
+    <anchor xml:id="c56-0021.02"/>
+  </zone>
+</surface>

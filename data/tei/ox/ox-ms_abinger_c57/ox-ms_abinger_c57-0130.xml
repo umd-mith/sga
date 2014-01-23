@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0130" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0130.jp2"/>
+  <zone type="pagination" rend="bordered"><line>146</line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c57-0130.01"/>my beloved cousin &amp; the blue lake which had</line>
+    <line>been so dear to me, in early childhood, but my</line>
+    <line>general <mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">state of</add>
+      </mod> feeling was <mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> torpor in which a prison</line>
+    <line>was as welcome a <del rend="strikethrough" instant="true">scene</del> residence as the
+      divi</line>
+    <line>nest scene in nature &amp; these fits were seldom</line>
+    <line>interrupted but by paroxisms of anguish &amp;</line>
+    <line>despair &#x2013; At these moments I often endeavour</line>
+    <line>ed to put an end to the existence I loathed</line>
+    <line>&amp; it required unceasing attendance &amp; vigilance</line>
+    <line>to <mod>
+        <del rend="strikethrough">prevent</del>
+        <add place="superlinear" hand="#pbs">restrain</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear" hand="#pbs"><del rend="strikethrough">me</del> me from</add>
+      </mod> committing some dreadful</line>
+    <line>act of violence. I remember as I quitted the</line>
+    <line>prison I heard one of the men say &#x2013; He may be</line>
+    <line>innocent of the murder but he has certainly</line>
+    <line>a bad conscien<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">c</add>
+      </mod>e.&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line>These words struck me; a bad conscience,</line>
+    <line>yes surely I had one &#x2013; William, Justine &amp; Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval</line>
+    <line>had died <mod>
+        <del rend="strikethrough">by</del>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">through</add>
+      </mod> my infernal machinations</line>
+    <line><del rend="strikethrough">And who is <mod>
+          <add><metamark function="insert">^</metamark></add>
+          <del rend="strikethrough"><add place="superlinear">to be the</add></del>
+        </mod> next victim I exclaimed</del> And whose</line>
+    <line>death, cried I, is to finish the tragedy &#x2014; Ah! my</line>
+    <line>father do not let us remain in this wretched</line>
+    <line>country&#x2013; Take me where I can forget myself,</line>
+    <line>my existence &amp; all the world. My father easily</line>
+    <line>acceeded to my desire &amp; after having taken</line>
+    <line>leave of M<hi rend="sup">r</hi>. Kirwin we hastened to Dublin.</line>
+    <line>I felt as if I was relieved from a heavy weight</line>
+    <line>when the packet set sail with a fair wind</line>
+    <line>from Ireland and I had quitted for ever the</line>
+    <line>country which had been to me the scene</line>
+    <line>of so much misery &#x2013; It was midnight, my</line>
+    <line>father slept below in the cabin &amp; I lay on</line>
+    <line>the deck looking at the stars &amp; listening to</line>
+    <line>the dashing of the waves &#x2013;I hailed the darkness</line>
+    <line>that shut Ireland from my sight &amp;</line>
+    <line>my pulse beat with a feverish joy when</line>
+    <line>I reflected that I should soon see Geneva</line>
+    <line>The passed appeared to me <mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in the</add>
+      </mod> light <add place="intralinear">of</add> a fright</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0130.01">
+    <line><add>for happiness; </add></line>
+  </zone>
+</surface>

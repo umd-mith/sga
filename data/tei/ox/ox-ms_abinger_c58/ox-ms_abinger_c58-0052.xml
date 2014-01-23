@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0052" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0052.jp2"/>
+  <zone type="pagination"><line>180</line></zone>
+  <zone type="main">
+    <handShift medium="pen" new="#pbs"/>
+    <line>such as you cannot even <mod>
+        <del rend="overwritten"><del rend="smear"><unclear reason="illegible"
+          >ing</unclear></del></del>
+        <add place="intralinear">im</add>
+      </mod>agine&#x2014; After the</line>
+    <line>murder of Clerval I returned to Switzerland</line>
+    <line>heart- broken &amp; overcome - I pitied Frankenstein</line>
+    <line>My pity ammounted to horror &#x2013; I abhorred myself.</line>
+    <line>But when I discovered that he&#x2013; the author <del rend="strikethrough">of</del></line>
+    <line>at once of my existence and of all its unspea</line>
+    <line>kable torments dared to hope for happiness &#x2014;</line>
+    <line>that whilst he accumulated upon me wretchedness</line>
+    <line>&amp; despair, he sought his own enjoyment in</line>
+    <line>feelings &amp; passions from the indulgence of</line>
+    <line>which I was barred&#x2014; then impotent envy &amp;</line>
+    <line>bitter indignation filled me with an insatiable</line>
+    <line>thirst for vengeance. I recollected my threat</line>
+    <line>&amp; resolved that it should be accomplished. I</line>
+    <line>knew that I was preparing for myselft a deadly</line>
+    <line>torture.. but I was the slave not the master</line>
+    <line>of an impulse which I detested but could not</line>
+    <line>disobey. &#x2013; Yet when she died! Nay then I</line>
+    <line>was not miserable. I had cast off all feeling,</line>
+    <line>subdued all anguish to riot in the excess of</line>
+    <line>my despair. Evil thenceforth became my good.</line>
+    <line><mod>
+        <del rend="overwritten"><unclear unit="chars" extent="5"/></del>
+        <add place="intralinear">Urged</add>
+      </mod> thus far I had no choice but to adapt</line>
+  </zone>
+</surface>

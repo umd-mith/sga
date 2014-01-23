@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0038" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0038.jp2"/>
+  <zone type="pagination"><line>140</line></zone>
+  <zone type="main">
+    <line>these moments or rather hours of happiness that I might</line>
+    <line>retain strength to fulfil my pilgrimage. Deprived of</line>
+    <line>this respite I should <mod>
+        <add place="sublinear" hand="#comp"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#comp">have</add>
+      </mod>sunk under my hardships. Du</line>
+    <line>ring the day I was sustained and inspirited by the hope</line>
+    <line>of night; for in sleep I <mod>
+        <del rend="strikethrough">saw</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">saw</add>
+      </mod> my friends, my wife and</line>
+    <line>my beloved country; again I saw the benevolent coun-</line>
+    <line>tenance of my father, heard the silver tones of my</line>
+    <line>Elizabeth's voice and beheld Clerval enjoying health</line>
+    <line>and youth. Often when wearied by a toilsome march</line>
+    <line>I persuaded myself that I was dreaming untill night</line>
+    <line>should come and that I should then enjoy <del rend="strikethrough"><unclear unit="chars"
+          extent="1"/></del> reality in</line>
+    <line>the arms of my dearest friends. What agonizing fondness</line>
+    <line>did I feel for them, how did I cling to their dear forms</line>
+    <line>as sometimes they haunted even my waking hours,</line>
+    <line>and persuade myself that they still lived. At such</line>
+    <line>moments vengeance that burned within me died</line>
+    <line>in my heart and I pursued my path towards the</line>
+    <line>destruction of the d&#xE6;mon more as a task <del rend="strikethrough">enjo</del></line>
+    <line>enjoined by heaven, as the mechanical impulse</line>
+  </zone>
+</surface>

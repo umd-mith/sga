@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0010" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0010.jp2"/>
+  <zone type="pagination"><line>112</line></zone>
+  <zone type="main">
+    <line>that this one day at least permits me to enjoy.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Be happy, my dear Victor, replied Elizabeth, there</line>
+    <line>is I hope nothing to distress you; and be assured that</line>
+    <line>if a lively joy is not painted in my face my heart is</line>
+    <line>contented. Something whispers to me not to depend</line>
+    <line>too much on the prospect that is opened before us</line>
+    <line>but I will not <del rend="strikethrough">lis</del> listen to such a sinister voice.</line>
+    <line>Observe how fast we move along, and how the clouds</line>
+    <line>which sometimes obscure, and sometimes rise above</line>
+    <line>the dome of M&#244;nt Bl&#226;nc, under this scene of</line>
+    <line>beauty still more interesting. Look also at the</line>
+    <line>innumerable fish that are <del rend="strikethrough">smi</del> swimming</line>
+    <line>in the clear waters where we can distinguish</line>
+    <line>every pebble that lies at the bottom. What a divine</line>
+    <line>day<mod>
+        <del rend="overwritten">;</del>
+        <add place="intralinear">!</add>
+      </mod> how happy and serene all nature appears!</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Thus Elizabeth endeavoured to divert her</line>
+    <line>thoughts and mine from all reflection upon</line>
+    <line>melancholy subjects. But her temper was fluc</line>
+    <line>tuating; joy for a few instants shone in her</line>
+  </zone>
+</surface>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0093" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0093.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>109</line>
+  </zone>
+  <zone type="library">
+    <line>47</line>
+  </zone>
+  <zone type="main">
+    <line>to gain experience &amp; instruction; The</line>
+    <line>difference of manners <mod>
+        <del rend="strikethrough">that</del>
+        <add hand="#pbs" place="superlinear">which</add>
+      </mod> he observed</line>
+    <line>was to him <del rend="strikethrough" instant="true">&amp;</del> an inexhaustible source
+      of</line>
+    <line><anchor xml:id="c57-0093.01"/>amusement. He was for ever busy &amp; the</line>
+    <line>only check to his enjoyments was my sor-</line>
+    <line>rowful &amp; dejected m<mod>
+        <del rend="overwritten">ei</del>
+        <add place="intralinear">ie</add>
+      </mod>n. I tried to conceal</line>
+    <line>this as much as possible that I might not</line>
+    <line>debar him from the pleasures natural</line>
+    <line>to one who was entering on a new scene</line>
+    <line>of life, undisturbed by any care or <del rend="smear"><add place="superlinear" hand="#pbs"
+          >the</add></del> bitter</line>
+    <line><anchor xml:id="c57-0093.02"/>recollection. I often refused to accompany</line>
+    <line>him alledging another engagement that</line>
+    <line>I might remain a alone; I now also</line>
+    <line>began to collect the materials necessary</line>
+    <line>for my <del rend="strikethrough" instant="true">work</del> new creation &amp; this was
+        <del rend="strikethrough">a</del> to</line>
+    <line>me like the torture of single drops of</line>
+    <line>water continually falling on the head;</line>
+    <line>Every thought that was devoted to it</line>
+    <line>was <del rend="strikethrough">th</del> an extreme anguish, and every</line>
+    <line>word that I spoke in allusion to it caused</line>
+    <line>my lips to quiver &amp; my heart to palpitate<add place="intralinear">.</add></line>
+    <line><del rend="strikethrough">in a most painful degre</del><del rend="unmarked"
+      >e.</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">After passing some months in</line>
+    <line>London we received a letter from a</line>
+    <line>person in Scotland who had formerly</line>
+    <line>been <del rend="strikethrough">an</del> our visitor at Geneva. He</line>
+    <line>mentioned the beauties of his native coun</line>
+    <line>try &amp; asked us if those were not sufficient</line>
+    <line>allurements to induce us to prolong our</line>
+    <line>journey as far <del rend="strikethrough">noth</del> north as Perth</line>
+    <line>where he resided. Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval eagerly desired</line>
+    <line>to accept this invitation, and I, although</line>
+    <line>I abhorred society, wished to view again</line>
+    <line>mountains &amp; streams &amp; all the <del rend="strikethrough">the</del> wondrous</line>
+    <line>works of nature in her chosen dwelling places</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0093.01">
+    <line><add>observation &amp; </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0093.02">
+    <line><del rend="smear"><add hand="#pbs">ness of </add></del></line>
+  </zone>
+</surface>

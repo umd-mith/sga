@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0184" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0184.jp2"/>
+  <zone type="pagination" rend="bordered"><line>200</line></zone>
+  <zone type="main">
+    <line>are consumed you si<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> amid the ruins &amp; lament</line>
+    <line>their fall. Hypocritical <del rend="strikethrough">fi</del> Fiend! If he whom</line>
+    <line>you lament still lived still would you</line>
+    <line>persue him with your accursed vengeance.</line>
+    <line>It is not pity that you feel &#x2013; it is sorrow that</line>
+    <line>your power of mischief is <del rend="strikethrough">at an end.</del> anihilated</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><del rend="strikethrough">I par</del> It is not thus, said
+      the d&#xE6;mon, &amp;</line>
+    <line>yet <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">such must be</add>
+      </mod> you<add place="intralinear">r</add>
+      <mod>
+        <del rend="strikethrough">must think so</del>
+        <add place="superlinear">impression</add>
+      </mod> since such</line>
+    <line>appears to have been the purport of my</line>
+    <line>actions. But I do not seek <mod>
+        <del rend="strikethrough">sympathy</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a fellow feeling</add>
+      </mod> in</line>
+    <line>my misery&#x2013;I feel it deeply &amp; truly &amp; for sy</line>
+    <line>mpathy that I may never find. When</line>
+    <line>I first sought it&#x2013; it was <mod>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear">the</add>
+      </mod> love of virtue,</line>
+    <line>it was <del rend="strikethrough">in</del> feelings of happiness &amp; content</line>
+    <line>that I wished to be participated. But</line>
+    <line>now that virtue is to me merely a sha</line>
+    <line>dow and happiness &amp; content <mod>
+        <del rend="strikethrough">and</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">are</add>
+      </mod> turned</line>
+    <line>into despair shall I seek for sympathy</line>
+    <line>in that. No&#x2013;I am content to suffer</line>
+    <line>alone while I do suffer &#x2013; And when I</line>
+    <line>die I am satisfied that <del rend="strikethrough">death</del> hatred</line>
+    <line>&amp; opprobrium should load my memory.</line>
+    <line>Once my fancy was soothed by dreams</line>
+    <line>of virtue of fame &amp; <add place="intralinear">of</add> enjoyment. Once</line>
+    <line>I hoped to meet with one who pardoning</line>
+    <line>my outward form <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">would</add>
+      </mod> love me for the</line>
+    <line>excellent qualities <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">with which</add>
+      </mod> I <mod>
+        <del rend="strikethrough">displayed</del>
+        <add place="superlinear" hand="#pbs">was so eminently <anchor xml:id="c57-0184.01"/></add>
+      </mod> &#x2013; I</line>
+    <line>was then filled with high thoughts of</line>
+    <line>honour &amp; self devotion &#x2013; But now <mod>
+        <del rend="strikethrough">crime</del>
+        <anchor xml:id="c57-0184.03"/>
+      </mod></line>
+    <line>has <add place="intralinear">s</add>unk me below the meanest <del rend="strikethrough"
+        >of</del></line>
+    <line>animal&#x2013; no crimes can equal mine</line>
+    <line>&amp; when I call over the frightful cata</line>
+    <line>logue I cannot believe that I am he</line>
+    <line><damage unit="chars" extent="4" type="inkblot"/>whose thoughts were once filled with</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0184.01">
+    <addSpan spanTo="#c57-0184.02" hand="#pbs"/>
+    <line>capable</line>
+    <line>of bringing</line>
+    <line>forth.</line>
+    <anchor xml:id="c57-0184.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0184.03">
+    <line><add>vice</add></line>
+  </zone>
+</surface>

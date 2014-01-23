@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0127" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0127.jp2"/>
+  <zone type="pagination" rend="bordered"><line>143</line></zone>
+  <zone type="library"><line>64</line></zone>
+  <zone type="main">
+    <line>momentary return of delirium <unclear reason="case">a</unclear>nd</line>
+    
+    <line>now he instantly resumed his former</line>
+    <line>benevolence &#x2013; He rose and quitted the room</line>
+    <line>with my nurse &#x26; in a minute my father</line>
+    <line>entered it.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Nothing at this moment could</line>
+    <line>have given my greater pleasure than</line>
+    <line>the arrival of my father &#x2013; I stretched</line>
+    <line>out my hand to him &#x26; cried &#x2013; Are you then</line>
+    <line>safe &#x26; Elizabeth &#x26; Ernest.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My father calmed me by his assu</line>
+    <line>rances of their welfare &#x26; told me</line>
+    <line>that he had not communicated my</line>
+    <line>imprisonment to my cousin but</line>
+    <line>merely mentioned my <del rend="strikethrough">he</del> illness&#x2014;And</line>
+    <line>what a place this is that you inhabit,</line>
+    <line>my son continued he looking mourn</line>
+    <line>fully at the barred window<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">s</add>
+      </mod> and the</line>
+    <line>wretched appearance of the room;</line>
+    <line>You travelled to seek happiness but</line>
+    <line>a fatality seems to <mod>
+        <del rend="strikethrough">hang over</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">pursue</add>
+      </mod> you &#x2013;And</line>
+    <line>poor Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="superlinear">e</add>
+      </mod>rval.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The name of my unfortunate &#x26;</line>
+    <line>murdered friend <del rend="strikethrough">agitated</del> was too great</line>
+    <line>an agitation to be endured in my</line>
+    <line>weak state&#x2014;I shed tears; Alas, yes, my father</line>
+    <line>said I, <mod>
+        <del rend="strikethrough">a</del>
+        <add place="superlinear" hand="#pbs">some</add>
+      </mod>
+      <damage type="inkblot">des</damage>tiny of the most horrible</line>
+    <line>kind hangs over <add place="superlinear" hand="#pbs">me,</add> and I must live to</line>
+    <line>fulfil it, or surely I should have died</line>
+    <line>on the coffin of Henry.</line>
+  </zone>
+</surface>

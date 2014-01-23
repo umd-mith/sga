@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0019" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0019.jp2"/>
+  <zone type="pagination" rend="bordered"><line>18</line></zone>
+  <zone type="library"><line>10</line></zone>
+  <zone type="main">
+    <line>youth spent a great part of each</line>
+    <line>day in <del rend="strikethrough">felling</del> collecting wood for the</line>
+    <line>family fire&#x2013;and during the night I often</line>
+    <line>took his tools the <del rend="strikethrough"><unclear>com</unclear></del> use of which
+      I</line>
+    <line>quickly discovered and brought home</line>
+    <line><del rend="strikethrough">for them</del> firing sufficient <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for the consumption</add>
+      </mod>
+      <del rend="strikethrough">f</del>o<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">f</add>
+      </mod> seve</line>
+    <line>ral days&#x2013; <milestone unit="tei:p"/><metamark function="paragraph">[</metamark>I
+      remember the first time <add place="superlinear" hand="#pbs">that</add> I</line>
+    <line>did this, the young woman who opened</line>
+    <line>the door in the morning <mod>
+        <del rend="strikethrough">was</del>
+        <add hand="#pbs" place="superlinear">appeared</add>
+      </mod> greatly <mod spanTo="#c57-0019.01"/><delSpan spanTo="#c57-0019.02" rend="strikethrough"
+      />sur</line>
+    <line>prised<anchor xml:id="c57-0019.02"/><add hand="#pbs" place="superlinear"
+        >astonished</add><anchor xml:id="c57-0019.01"/> to see a great pile of wood on</line>
+    <line>the outside &#x2013; she said some words in a</line>
+    <line>loud voice, &amp; presently the youth joined</line>
+    <line>her who also appeared astonished. <del rend="strikethrough">and</del></line>
+    <line>I observed <del rend="strikethrough">th</del> with pleasure that he</line>
+    <line>did not go to the <mod>
+        <del rend="strikethrough">wood</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">forest</add>
+      </mod> that day but</line>
+    <line>spent it in repairing the cottage &amp; in</line>
+    <line>cultivating the garden.&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">Soon after</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">By degrees also</add>
+      </mod> I made another discovery</line>
+    <line><mod>
+        <del rend="strikethrough">which was that</del>
+        <anchor xml:id="c57-0019.03"/>
+      </mod>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">that</add>
+      </mod> these people <mod>
+        <del rend="strikethrough">ha</del>
+        <del rend="unmarked">d</del>
+        <add place="superlinear" hand="#pbs">posessed</add>
+      </mod> a</line>
+    <line><mod>
+        <del rend="strikethrough">means</del>
+        <add hand="#pbs" place="superlinear">method</add>
+      </mod> of communicating their <mod spanTo="#c57-0019.05"/>
+      <del rend="strikethrough">ideas</del>
+      <add place="superlinear" hand="#pbs" next="#c57-0019.06">experience &amp; </add> to</line>
+    <line><add place="superlinear" hand="#pbs" xml:id="c57-0019.06">feelings </add><anchor
+        xml:id="c57-0019.05"/>one another by articulate sounds which</line>
+    <line>they uttered <del rend="strikethrough"><add place="superlinear">som</add></del>
+        &#x2014;<del rend="strikethrough">w</del> I <del rend="strikethrough">often</del> percieved
+      that</line>
+    <line>the words the<retrace cause="clarify">y</retrace> spoke <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">sometimes</add>
+      </mod> produced plea</line>
+    <line>sure pain, smiles or sadness in the</line>
+    <line><anchor xml:id="c57-0019.07"/>countenances of the hear<mod>
+        <del rend="overwritten">ee</del>
+        <add place="intralinear">ers</add>
+      </mod>&#x2013; This was</line>
+    <line>indeed a Godlike science and I ardently</line>
+    <line><mod>
+        <del rend="strikethrough">wished</del>
+        <anchor xml:id="c57-0019.08"/>
+      </mod> to become acquainted with it&#x2013;But</line>
+    <line>I was baffled in every attempt <mod>
+        <del rend="strikethrough">they</del>
+        <add place="superlinear">I</add>
+      </mod> made <add place="superlinear">for this purpose</add></line>
+    <line>Their pronunciation was quick &amp; the</line>
+    <line>words they uttered <del rend="strikethrough">seemed</del>
+      <del rend="strikethrough">had</del> no<add place="intralinear">t</add> having</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0019.03">
+    <addSpan spanTo="#c57-0019.04"/>
+    <line><del rend="strikethrough">to me</del> of still</line>
+    <line>greater</line>
+    <line>moment <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to me</add>
+      </mod> I</line>
+    <line>found</line>
+    <anchor xml:id="c57-0019.04"/></zone>
+
+  <zone type="left_margin" corresp="#c57-0019.07">
+    <line><add>minds &amp; </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0019.08">
+    <line><add>desired</add></line>
+  </zone>
+</surface>

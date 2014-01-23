@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0026" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0026.jp2"/>
+  <zone type="pagination" rend="bordered"><line>57</line></zone>
+
+  <zone type="main">
+    <line>of his <mod>
+        <del rend="strikethrough">science</del><del rend="unmarked">.</del>
+        <add place="superlinear" hand="#pbs">doctrine.</add>
+      </mod>
+      <del rend="strikethrough">But when the ne</del> Be-</line>
+    <line>sides I had a contempt for the uses</line>
+    <line>of modern <mod>
+        <del rend="strikethrough">chemistry</del>
+        <add place="superlinear">natural philosophy</add>
+      </mod>. It was very</line>
+    <line><del rend="strikethrough">when</del> different when the<del rend="strikethrough">n</del>
+      masters</line>
+    <line>of the science sought immortality</line>
+    <line>and <mod>
+        <del rend="strikethrough">wealth</del>
+        <add place="superlinear" hand="#pbs">power</add>
+      </mod>;&#x2013; such views although</line>
+    <line>futile were grand; but now <mod>
+        <del rend="strikethrough">it</del>
+        <add place="superlinear" hand="#pbs">the scene</add>
+      </mod> was</line>
+    <line><del rend="strikethrough">all</del> changed.<mod spanTo="#c56-0026.06"/><delSpan
+        spanTo="#c56-0026.07" rend="vertical_line"/>
+      <del rend="strikethrough">t and the expulsion</del></line>
+    <line>of chimera overthrew at the same</line>
+    <line>time all <mod>
+        <del rend="strikethrough">greatness in the science</del>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">those</add></del>
+      </mod>
+      <anchor xml:id="c56-0026.07"/><anchor xml:id="c56-0026.01"/>
+        <anchor xml:id="c56-0026.04"/>
+      <anchor xml:id="c56-0026.06"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Such were my reflections during</line>
+    <line><del rend="strikethrough">tw</del> two or three days <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">spent</add>
+      </mod> almost <mod>
+        <add place="intralinear">in</add>
+        <del rend="strikethrough">solitary</del>
+        <anchor xml:id="c56-0026.03"/>
+      </mod></line>
+    <line> but <del rend="strikethrough">at</del> as the ensueing week</line>
+    <line>commenced I thought of the infor</line>
+    <line>mation M<hi rend="sup">r</hi>. K.<mod>
+        <del rend="unmarked">&#x2014;</del>
+        <add place="superlinear">rempe</add>
+      </mod> had given me</line>
+    <line>concerning the lectures, and although</line>
+    <line>I could not consent to go and hear</line>
+    <line>that little conceited fellow deliver</line>
+    <line>sentences <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">out of a pulpit</add>
+      </mod> I recollected what he had</line>
+    <line>said of M<hi rend="sup">r</hi>. Waldham, whom I had</line>
+    <line>never seen <del rend="strikethrough">and</del> as he had been</line>
+    <line>hitherto out of town.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><mod>
+        <del rend="strikethrough">Half out of</del>
+        <add place="superlinear">Partly from</add>
+      </mod> curiosity and partly from</line>
+    <line>idleness I went into the lecturing room</line>
+    <line>which M<hi rend="sup">r</hi>. Waldham entered shortly</line>
+    <line>after. This Professor was a very dif</line>
+    <line>ferent man from <mod>
+        <del rend="strikethrough">the other</del>
+        <add place="superlinear">his colleague</add>
+      </mod>. He</line>
+    <line>was about fifty but with aspect ex-</line>
+    <line>pressive of the greatest benevolence</line>
+    <line>a few grey <del rend="strikethrough">hars</del> hairs covered his temples</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0026.01">
+    <addSpan hand="#pbs" spanTo="#c56-0026.02"/>
+    <line>the <del rend="strikethrough">utmost</del></line>
+    <line>ambition of</line>
+    <line>enquirer seemed</line>
+    <line>to limit itself</line>
+    <line>to the annihi</line>
+    <line>lation of those</line>
+    <line>visions on which </line>
+    <anchor xml:id="c56-0026.02"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0026.03">
+    <line><add>solitude:</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0026.04">
+    <addSpan hand="#pbs" spanTo="#c56-0026.05"/>
+    <line>my interest in science</line>
+    <line>was chiefly founded.</line>
+    <line>I was required</line>
+    <line>to exchange</line>
+    <line>chimeras of</line>
+    <line>boundless grandeur,</line>
+    <line>for realities of</line>
+    <line>little worth.</line>
+    <anchor xml:id="c56-0026.05"/>
+  </zone>
+
+</surface>

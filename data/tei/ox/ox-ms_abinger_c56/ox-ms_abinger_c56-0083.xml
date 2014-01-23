@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0083" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0083.jp2"/>
+  <zone type="pagination" rend="bordered"><line>113</line></zone>
+  <zone type="library"><line>39</line></zone>
+  <zone type="main">
+    <line>the murderer of my brother. No sooner</line>
+    <line>did that idea cross my imagination than</line>
+    <line>I became convinced <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">of its truth</add>
+      </mod> &#x2014; my teeth chattered</line>
+    <line>and I was forced to lean against <del rend="strikethrough">th</del> a </line>
+    <line>tree for support &#x2014; The figure quickly passed</line>
+    <line>me and I lost it in the gloom. <del rend="strikethrough">And</del>
+      <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>e</line>
+    <line><anchor xml:id="c56-0083.01"/>was the murderer! <mod spanTo="c56-0083.02"/>
+      <del rend="strikethrough">I<mod>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear">could not</add>
+        </mod> doubt<del rend="strikethrough">ed</del> it</del>
+      <del rend="strikethrough">not</del>
+      <del rend="strikethrough">my</del></line>
+    <line><del rend="strikethrough">the</del>
+      <del rend="strikethrough">thought</del>
+      <del rend="strikethrough">was agony<mod>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear">I was agonized by the bare probability</add>
+        </mod></del><anchor xml:id="c56-0083.03"/><anchor xml:id="c56-0083.02"/> &#x2014; I thought
+      of pur</line>
+    <line>sueing the devil, but <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"> it would have been</add>
+      </mod> in vain for another</line>
+    <line>flash discovered him to me <mod spanTo="#c56-0083.05"/><delSpan spanTo="#c56-0083.06"
+        rend="strikethrough"/>climbing</line>
+    <line>up the steep and<anchor xml:id="c56-0083.06"/><add place="superlinear" hand="#pbs">hanging
+        among the rocks of the</add><anchor xml:id="c56-0083.05"/> nearly perpendicular</line>
+    <line>ascent of the Mont-Sal&#xEA;ve; he soon reached</line>
+    <line>the summit and dissap<mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">e</add>
+      </mod>ared.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I remained motionless the thunder</line>
+    <line>ceased but the rain still continued &#x26;</line>
+    <line>the scene was inveloped in a<mod>
+        <add place="intralinear">n</add>
+        <del rend="strikethrough">pitchy</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">impenetrable</add>
+      </mod> dark-</line>
+    <line>ness. I revolved in my mind <mod spanTo="c56-0083.11"/><delSpan spanTo="#c56-0083.07"
+        rend="strikethrough"/>I revolved in</line>
+    <line>my mind<anchor xml:id="c56-0083.07"/><anchor xml:id="c56-0083.10"/><anchor
+        xml:id="c56-0083.11"/> the events which I <del rend="strikethrough">u</del> had,</line>
+    <line>untill now, sought to forget. <add><metamark function="displacement" xml:id="c56-0083.08"
+          >^</metamark></add> The appearance</line>
+    <line>of <mod>
+        <del rend="strikethrough">the creature</del>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">the work of my own hands, alive</add>
+      </mod> at my bed side &#x2013; <add place="superlinear" hand="#pbs"> &#x26;</add> its
+      departure.</line>
+    <line><del rend="strikethrough">Its</del>
+      <del rend="strikethrough">It was now nearly</del> two years <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">had now nearly elapsed</add>
+      </mod> since the</line>
+    <line>night <del rend="strikethrough">of</del> on which he first received</line>
+    <line>life, and was this his first crime &#x2013; <del rend="strikethrough"
+        ><unclear>?</unclear></del>Alas!</line>
+    <line>I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add>had</add>
+      </mod> turned loose in the world a depraved</line>
+    <line>wretch whose delight was in <del rend="strikethrough">deat</del></line>
+    <line>murder &#x26; wretchedness; <mod>
+        <del rend="strikethrough">For</del>
+        <add place="superlinear" hand="#pbs">for</add>
+      </mod> had he</line>
+    <line>not murdered my brother?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">No one can conceive of the anguish I</line>
+    <line>suff<mod>
+        <del rend="overwritten">er</del>
+        <add place="intralinear" hand="#pbs">e</add>
+      </mod>red during the remainder of the</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0083.01">
+    <line><add>therefore </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0083.03">
+    <addSpan spanTo="#c56-0083.04" hand="#pbs"/>
+    <line>Nothing<add place="superlinear" hand="#pbs">in</add> human</line>
+    <line>shape could</line>
+    <line>have destroyed</line>
+    <line>that fair</line>
+    <line>child. <damage agent="ink">He</damage></line>
+    <line>was the</line>
+    <line>murderer!</line>
+    <line>I could not</line>
+    <line>doubt it.</line>
+    <line>The mere presence</line>
+    <line>of the idea</line>
+    <line>was an ir</line>
+    <line>-resistible</line>
+    <line>proof of the</line>
+    <line>fact</line><anchor xml:id="c56-0083.04"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0083.10">
+    <line><add hand="#pbs">I resolved in my mind</add></line>
+  </zone>
+  <!--marginal "I resolved in my mind" mistakenly repeated and uncanceled.-->
+
+  <zone type="left_margin" corresp="#c56-0083.08">
+    <addSpan spanTo="#c56-0083.09" hand="#pbs"/>
+    <line>The whole</line>
+    <line>train of my</line>
+    <line>progress to-</line>
+    <line>wards my</line>
+    <line><del rend="strikethrough"><unclear unit="chars" extent="1"/></del> creation</line>
+    <anchor xml:id="c56-0083.09"/>
+  </zone>
+</surface>

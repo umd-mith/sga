@@ -1,0 +1,74 @@
+/**********************
+       CONSTANTS
+***********************/
+
+@deletionColor: #888;
+@searchColor: Yellow;
+
+/**********************
+         STYLES
+***********************/
+
+svg body {
+  border: none;
+  background: none;
+  background-color: transparent;
+}
+
+.text-content {
+  text-align: left;
+  padding: 2px;
+
+  .sgaDeletionAnnotation {
+    font-weight: lighter;
+    color: @deletionColor;
+    text-decoration: line-through;
+  }
+
+  .sgaAdditionAnnotation {
+    font-style: italic;
+  }
+
+  .sgaSearchAnnotation {
+    background-color: @searchColor;
+  }
+
+  .sgaLineAnnotation {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .above-line {
+    padding-top: 4px;
+    margin-bottom: -.25em;
+    font-size: smaller;
+  }
+
+  .below-line {
+    padding-bottom: 4px;
+    margin-top: -.25em;
+    font-size: smaller;
+  }
+
+}
+
+#ModeLayers {
+  display:none;
+  background-color: #FFF;
+  padding: 1.5em; 
+
+  .xml {
+    overflow-y: scroll;   
+  }
+
+  pre {  
+    background-color: transparent;
+    border: none !important;
+  }
+
+  div { 
+    line-height: 2.0;
+    margin: 2.0em;
+  }
+
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0072" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0072.jp2"/>
+  <zone type="pagination" rend="bordered"><line>96</line></zone>
+  <zone type="library"><line>B</line></zone>
+  <zone type="main">
+    <line>in darkness. But my heart was heavy, and</line>
+    <line>mys steps slow. The labour of winding a</line>
+    <line>mong the little paths and fixing my feet</line>
+    <line>firmly <del rend="strikethrough">a</del> as I advanced teazed me occupied</line>
+    <line>as I was by the feelings <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"><mod>
+            <del rend="strikethrough">that</del>
+            <add place="superlinear" hand="#pbs">which</add>
+          </mod></add>
+      </mod> the occurences of the</line>
+    <line>day had produced. It had long been night</line>
+    <line>when I came to the half way resting place</line>
+    <line>&amp; seated myself beside the fountain. The stars</line>
+    <line>shone at intervals as the <del rend="strikethrough">dark</del> clouds passed</line>
+    <line>from over them &#x2014; The dark pines rose</line>
+    <line>before me &amp; every here and there a broken</line>
+    <line>tre<retrace cause="clarify">e</retrace> lay <del rend="strikethrough">listless</del>
+      <mod>
+        <del rend="strikethrough">of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">on</add>
+      </mod> the ground; it was</line>
+    <line>a scene of wonderful solemnity &amp; <delSpan spanTo="#c57-0072.01" rend="strikethrough"
+      />moved</line>
+    <line>me<anchor xml:id="c57-0072.01"/> stirred strange thoughts within</line>
+    <line>me. I wept bitterly and clasping my</line>
+    <line>hands in agony I exclaimed&#x2013; Oh stars,</line>
+    <line><anchor xml:id="c57-0072.02"/>and wind ye are all about <del rend="strikethrough">ye</del>
+      to mock</line>
+    <line>me &#x2014; If ye really pity crush me but if</line>
+    <line>not depart depart &amp; leave <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">me</add>
+      </mod> to darkness.</line>
+    <line><del rend="strikethrough">Wild</del> These were wild &amp; miserable thoughts</line>
+    <line>but I cannot describe to you how the</line>
+    <line>eternal twinkling of stars weighed upon</line>
+    <line>me, and I listened to every blast of wind</line>
+    <line>as it were a dull ugly siroc<del rend="strikethrough">k</del> on its way</line>
+    <line>to consume me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">It was morning before I arrived at</line>
+    <line>the village of Chamounix &#x2014; but my presence</line>
+    <line>so haggard &amp; strange hardly calmed the</line>
+    <line>fears of my family who had waited the</line>
+    <line>whole night in anxious expectation of</line>
+    <line>my return. <delSpan spanTo="#c57-0072.03" rend="strikethrough"/>What could I say to
+      them</line>
+    <line>or how account for my disappearance</line>
+    <line>and present miser<anchor xml:id="c57-0072.03"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The following day we returned to Geneva.</line>
+    <line>The <del rend="strikethrough" instant="true">purpos</del> intention of my father in</line>
+  </zone>
+  
+  <zone type="left_margin" corresp="#c57-0072.02">
+    <line><add>&amp; clouds, </add></line>
+  </zone>
+</surface>

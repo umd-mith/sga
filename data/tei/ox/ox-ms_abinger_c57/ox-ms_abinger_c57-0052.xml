@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0052" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0052.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>77</line>
+  </zone>
+  <zone type="main">
+    <line>and destruction and then have</line>
+    <line>sat down &amp; enjoyed the ruin&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">But this was a luxury of</line>
+    <line>sensation that could not <mod spanTo="#c57-0052.01"/><del rend="strikethrough"
+      >last</del></line>
+    <line><anchor xml:id="c57-0052.02"/><anchor xml:id="c57-0052.01"/> I <mod>
+        <del rend="strikethrough">grew</del>
+        <del rend="strikethrough">tired</del>
+        <add place="superlinear">became fatigued</add>
+      </mod> with excess of bodily</line>
+    <line>exertion; and sank on the</line>
+    <line><del rend="strikethrough">g</del> damp grass in the despondency</line>
+    <line>of despair. There was no one <del rend="strikethrough">in</del></line>
+    <line>amo<del rend="strikethrough">u</del>ng the myriads of men that</line>
+    <line>existed that <del rend="strikethrough">could</del> would pity</line>
+    <line>or assist me &#x2014; and should I feel</line>
+    <line>kindness towards my enemies?</line>
+    <line>No! from that moment I de</line>
+    <line>clared everlasting war against</line>
+    <line><anchor xml:id="c57-0052.03"/>and more than all against</line>
+    <line>h<mod>
+        <del rend="overwritten">e</del>
+        <add hand="#pbs" place="intralinear">im</add>
+      </mod> who had formed me &amp; sent</line>
+    <line>me forth to <mod>
+        <del rend="strikethrough">pain &amp;</del>
+        <add hand="#pbs" place="superlinear">this insupportable</add>
+      </mod> misery.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The sun rose &#x2013; I heard the</line>
+    <line>voices of men and knew that it</line>
+    <line>was impossible to return to my retreat</line>
+    <line><anchor xml:id="c57-0052.04"/>that day; accordingly, I hid myself</line>
+    <line>in some thick underwood <del rend="strikethrough">determine</del></line>
+    <line>determin<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod> to devote the ensueing</line>
+    <line>hours to reflection on my situation&#x2014;</line>
+    <line><anchor xml:id="c57-0052.05"/>When I considered what had passed</line>
+    <line>at the cottage I could not help</line>
+    <line>believing that I was too hasty in</line>
+    <line>my conclusions &#x2013; <del rend="strikethrough">Ther</del> I had certain</line>
+    <line>ly acted imprudently. <del rend="strikethrough">My con</del> It was</line>
+    <line>apparent that my conversation</line>
+    <line><add place="intralinear" hand="#pbs">h</add>ad softened the father and I was a</line>
+    <line>fool <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear" hand="#pbs">for </add>
+        <add place="superlinear">having</add>
+      </mod> expose<add place="intralinear">d</add> my person to the</line>
+    <line>horror of his children. I ought to</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0052.02">
+    <line><add>endure </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0052.03">
+    <line><add>the<mod>
+          <del rend="strikethrough">m</del>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear"> species </add>
+        </mod></add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0052.04">
+    <line><add hand="#pbs">during </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0052.05">
+    <addSpan spanTo="#c57-0052.06"/>
+    <line>The pleasant sunshine</line>
+    <line>and pure air of day</line>
+    <line>restored me to some</line>
+    <line>degree of tranquillity &amp; </line>
+    <anchor xml:id="c57-0052.06"/>
+  </zone>
+</surface>

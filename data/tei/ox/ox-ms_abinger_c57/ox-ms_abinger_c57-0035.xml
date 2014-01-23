@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0035" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0035.jp2"/>
+  <zone type="main">
+    <line>guage of the country and utterly ignorant of</line>
+    <line>the customs of the world.&#x2013; She fell <del rend="strikethrough" instant="true"
+        >hover</del> however</line>
+    <line>in to good hands&#x2013; <delSpan spanTo="#c57-0035.01" rend="strikethrough"/>The hostess
+      of the Inn was in</line>
+    <line>terrested in her fate<anchor xml:id="c57-0035.01"/>
+      <del rend="strikethrough">And</del>
+      <del rend="strikethrough">and</del> The Italian</line>
+    <line><mod>
+        <del rend="strikethrough">before her death</del>
+        <add place="superlinear">had</add>
+      </mod> mentioned the name of the</line>
+    <line>spot for which they were bound and after</line>
+    <line>her death the woman of the house in which</line>
+    <line>they had lived took care that Safie should</line>
+    <line>arrive safely at the cottage of her lover.</line>
+    <damage type="tear"/><!--lower two thirds of page torn away -->
+  </zone>
+</surface>

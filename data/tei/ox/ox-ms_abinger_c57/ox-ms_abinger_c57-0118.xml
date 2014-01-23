@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0118" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0118.jp2"/>
+  <zone type="pagination" rend="bordered"><line>134</line></zone>
+  <zone type="main">
+    <line><del rend="strikethrough">In vain</del>. He appeared to have been a handsome</line>
+    <line>young man about twenty years of age. He</line>
+    <line>had apparently been strangled for there</line>
+    <line><anchor xml:id="c57-0118.01"/>no sign of any violence except the black</line>
+    <line>mark of fingers on his neck.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The first <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">part</add>
+      </mod> of this deposition did not</line>
+    <line>in the least interrest me but when the</line>
+    <line>mark of the fingers was mentioned I remem</line>
+    <line>bered the <del rend="strikethrough">the</del> murder of my brother &#x26; felt</line>
+    <line>myself extremely agitated; my limbs t<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">re</add>
+      </mod>mbled</line>
+    <line>&#x26; a mist came over my eyes which obliged</line>
+    <line>me to lean on a chair for support; the</line>
+    <line>Magistrate observed me with a keen eye</line>
+    <line>&#x26; of course drew <add place="superlinear">an</add> unfavourable augury f<mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>om</line>
+    <line><del rend="strikethrough">it.</del> my manner.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The son confirmed his fathers account</line>
+    <line>but when Daniel Nugent was questioned</line>
+    <line>he swore positively that just before the</line>
+    <line>fall of his companion he saw a boat with</line>
+    <line>a single man in it <mod>
+        <del rend="strikethrough">push</del>
+        <del rend="strikethrough">about fifty yar</del>
+        <del rend="unmarked">ds</del>
+        <add place="superlinear">at a short distance</add>
+      </mod></line>
+    <line>from the shore &#x26; as far as he could judge</line>
+    <line>by the light of a few stars it was the same</line>
+    <line>boat in which I had just landed.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">A woman deposed that she lived near</line>
+    <line>the beach &#x26; was standing at the door of her</line>
+    <line>cottage waiting for the return <mod>
+        <del rend="strikethrough">when</del>
+        <add place="superlinear">of the fisherman</add>
+      </mod> about</line>
+    <line><mod>
+        <del rend="strikethrough">ten minutes</del>
+        <anchor xml:id="c57-0118.02"/>
+        <add place="superlinear">an hour</add>
+      </mod> before she heard of the dis</line>
+    <line>covery of the body she saw a boat with only</line>
+    <line>one <del rend="strikethrough">w</del> man in it push off from that</line>
+    <line>part of the shore where the corpse was</line>
+    <line>afterwards found.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Another woman confirmed the ac<del rend="strikethrough">c</del></line>
+    <line>count of the fisherman having brought the</line>
+    <line>bo<mod>
+        <del rend="overwritten">at</del>
+        <add place="intralinear">dy</add>
+      </mod> into her house.&#x2013;It was not cold &amp;</line>
+    <line>they put <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">it</add>
+      </mod> into a bed &#x26; rubbed it and Daniel</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0118.01">
+    <line><add hand="#pbs">was </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0118.02">
+    <line><mod>
+        <del rend="strikethrough"><add>half a quarter of</add></del>
+        <del rend="strikethrough"><add place="superlinear">half</add></del>
+      </mod></line>
+  </zone>
+</surface>

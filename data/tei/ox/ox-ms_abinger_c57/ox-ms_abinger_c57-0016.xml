@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0016" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0016.jp2"/>
+  <zone type="pagination" rend="bordered"><line>15</line></zone>
+  <zone type="main">
+    <line>of their <del rend="strikethrough">motions</del> actions.&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="5"/>The<mod>
+        <del rend="strikethrough">y</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">cottagers</add>
+      </mod> arose the next morning before</line>
+    <line>the sun;&#x2013; The young woman arranged the</line>
+    <line>cottage &amp; <del rend="strikethrough">per</del> prepared the food; &amp; the</line>
+    <line>youth mounted on a large strange animal</line>
+    <line><del rend="strikethrough">road</del> rode away. This day was passed in</line>
+    <line>the same routine <mod>
+        <del rend="strikethrough">and</del>
+        <add hand="#pbs" place="superlinear">as</add>
+      </mod> the preceeding one.</line>
+    <line>The <del rend="strikethrough">young</del> young man was constantly</line>
+    <line>employed out of doors and the girl in</line>
+    <line>various laborious occupations <mod>
+        <add hand="#pbs" place="superlinear">within.</add>
+        <add place="intralinear" hand="#pbs">.</add>
+      </mod>&#x2014; The old</line>
+    <line>man whom I soon perceived to be blind</line>
+    <line>employed his leisure hours in playing</line>
+    <line>on his instrument or in <del rend="strikethrough">pesively</del></line>
+    <line>contemplation &#x2013; Nothing could exceed</line>
+    <line>the love &amp; respect that the younger</line>
+    <line>cottagers <mod>
+        <del rend="strikethrough">bore</del>
+        <add hand="#pbs" place="superlinear">shewed</add>
+      </mod> towards this venerable</line>
+    <line>old man &#x2013; They performed towards <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">him</add>
+      </mod> every</line>
+    <line>little office of <mod>
+        <del rend="strikethrough">love</del>
+        <add hand="#pbs" place="superlinear">affection</add>
+      </mod> &amp; duty with gentleness;</line>
+    <line>and he rewarded them by his benevo</line>
+    <line>lent smiles. <del rend="strikethrough">B</del></line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="6"/>They were not however entirely</line>
+    <line>happy&#x2013;The <del rend="strikethrough">youth</del> young<del rend="strikethrough"
+        >er</del> man<del rend="strikethrough">d</del> &amp; his</line>
+    <line>companion, often retired into a corner</line>
+    <line>of their common room and wept. I saw</line>
+    <line>no cause for this unhappiness but</line>
+    <line>I was deeply affected by it &#x2013; If such</line>
+    <line>lovely creatures were miserable it was</line>
+    <line>less strange that <del rend="strikethrough">alone<del rend="strikethrough">d</del></del>
+      I, an imperfect</line>
+    <line>and solitary being should be wretched&#x2014;</line>
+  </zone>
+ 
+</surface>

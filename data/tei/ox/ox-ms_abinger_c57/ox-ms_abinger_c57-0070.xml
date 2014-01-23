@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0070" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0070.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>95</line>
+  </zone>
+  <zone type="main">
+    <line>thize with him I had no right to refuse him</line>
+    <line>the small portion of happiness that I had it</line>
+    <line>in my power to bestow. <mod>
+        <del rend="overwritten">I</del>
+        <add place="intralinear">Y</add>
+      </mod>ou swear, I said, to</line>
+    <line>be harmless but have you not already shown</line>
+    <line>a degree of malise that would reasonably</line>
+    <line>make me distrust you? May not eve<add place="sublinear">n</add> this</line>
+    <line>be a feint that will encrease your triumph</line>
+    <line><mod>
+        <del rend="strikethrough">&amp; desire of revenge</del>
+        <add place="sublinear" hand="#pbs">by affording a wider scope to your revenge.</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">How is this, cried he; I thought I had moved</line>
+    <line>your compassion, and yet you still refuse to</line>
+    <line><mod>
+        <del rend="strikethrough">give</del>
+        <anchor xml:id="c57-0070.01"/>
+      </mod> me the only benefit that <add place="superlinear" hand="#pbs">can</add> soften
+      my</line>
+    <line>heart and render me harmless. If I</line>
+    <line>have no ties &amp; no affections hatred &amp; vice</line>
+    <line>must be my portion. The love of another</line>
+    <line>will destroy the cause of my crimes &amp; I shall</line>
+    <line>become a thing of whose existence every</line>
+    <line>one will be ignorant. My vices are</line>
+    <line><del rend="strikethrough">ch</del> the children of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> forced solitude that I</line>
+    <line>abhor and my virtues will necessarily arise</line>
+    <line>when <del rend="strikethrough"><add place="superlinear" hand="#pbs">sh</add></del> I <add
+        place="superlinear" hand="#pbs">shall</add> receive the sympathy of an equal.</line>
+    <line>I shall feel <mod>
+        <del rend="strikethrough">human</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod>
+      <del rend="strikethrough">sy</del>
+      <del rend="strikethrough">f</del> affections <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">of a living being</add>
+      </mod> &amp;</line>
+    <line>become linked to the chain of existence</line>
+    <line>&amp; events from which I am now excluded</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I paused some time <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to</add>
+      </mod> reflect on all</line>
+    <line>he had related and the various arguments</line>
+    <line><mod>
+        <del rend="strikethrough">that</del>
+        <anchor xml:id="c57-0070.02"/>
+      </mod> he had <mod>
+        <del rend="strikethrough">used</del>
+        <add place="superlinear" hand="#pbs">employed</add>
+      </mod>. I thought of <delSpan rend="strikethrough" spanTo="#c57-0070.03"/>pro-</line>
+    <line>mises &amp; threats<anchor xml:id="c57-0070.03"/> the <mod>
+        <del rend="strikethrough">various</del>
+        <add place="superlinear" hand="#pbs">promise of</add>
+      </mod> virtues <add place="superlinear" hand="#pbs">which</add> he</line>
+    <line>had displayed on the opening of his exis</line>
+    <line><anchor xml:id="c57-0070.04"/>and th<mod>
+        <del rend="overwritten">eir</del>
+        <add place="intralinear">e</add>
+      </mod> subsequent blight <mod spanTo="#c57-0070.05"/><del rend="strikethrough">caused
+        by</del><add place="superlinear" hand="#pbs" next="#c57-0070.06">of all</add></line>
+    <line><add place="superlinear" hand="#pbs" xml:id="c57-0070.06">kindly feelings by</add><anchor
+        xml:id="c57-0070.05"/> the detestation &amp; horror <mod>
+        <del rend="strikethrough">that his</del>
+        <add place="superlinear" hand="#pbs">inspired by</add>
+      </mod></line>
+    <line>protectors had manifested towards</line>
+    <line>him. His power &amp; threats were not</line>
+    <line>ommitted in my calculations; a crea</line>
+    <line>ture who could exist among the ice caves</line>
+    <line>of the glaciers &amp; hide himself from per</line>
+    <line>suit in <add place="superlinear">the ridges</add> inaccessible precepieces was</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0070.01">
+    <line><add>bestow on </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0070.02">
+    <line><add>which </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0070.04">
+    <line>tence; </line>
+  </zone>
+</surface>

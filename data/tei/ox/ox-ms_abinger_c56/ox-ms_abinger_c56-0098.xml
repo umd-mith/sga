@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0098" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0098.jp2"/>
+  <zone type="pagination" rend="bordered"><line>12<mod><del rend="overwritten"><unclear>6</unclear></del><add place="intralinear">8</add></mod></line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c56-0098.01"/>against her I believe and rely <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">o</add>
+      </mod>n</line>
+    <line>her perfect innocence. <del rend="strikethrough">An</del> She had</line>
+    <line>no<del rend="strikethrough"><add place="intralinear">t</add></del> temptation <mod
+        spanTo="#c56-0098.02"/><del rend="strikethrough" next="#c56-0098.03">and her dispo
+        character</del><add place="superlinear"><del rend="strikethrough">whi</del> for such an
+        action</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0098.03">is amiable</del>
+      <del rend="strikethrough">for</del><anchor xml:id="c56-0098.02"/> as to the bauble on
+      which</line>
+    <line>the chief proof rests <del rend="strikethrough">If</del>
+      <del rend="strikethrough">s</del>
+      <mod>
+        <del rend="strikethrough">I</del>
+        <del rend="strikethrough"><add place="superlinear"><unclear>I</unclear></add></del>
+      </mod> if <hi rend="underline">s</hi>he had</line>
+    <line>earnestly wished for it I should have</line>
+    <line>willingly given it her so much <del rend="strikethrough">did</del> do</line>
+    <line><del rend="strikethrough">I rely</del> I esteem and value her."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Excellent Elizabeth! A murmur</line>
+    <line>of approbation <del rend="strikethrough">o</del> was heard, but it</line>
+    <line>was <mod>
+        <del rend="strikethrough">on her account</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">excited by her generous interference</add>
+      </mod>&#x26; not in favour</line>
+    <line>of poor Justine on whom the public</line>
+    <line><del rend="strikethrough">ig</del> indignation<add place="superlinear" hand="#pbs"
+        >was</add> turned with renewed</line>
+    <line>violence, charging her<add place="superlinear">with</add> the blackest in-</line>
+    <line>gratitude. <del rend="strikethrough">For</del> She herself wept as</line>
+    <line>Elizabeth spoke but she did not</line>
+    <line>answer. My own agitation<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&#x26; anguish</add>
+      </mod> was extreme</line>
+    <line><del rend="strikethrough">wh</del> during the whole of the trial. <delSpan
+        rend="strikethrough" spanTo="#c56-0098.04"/>The</line>
+    <line>picture was<anchor xml:id="c56-0098.04"/> I believed in her inno</line>
+    <line>cence I knew it. Could the monster</line>
+    <line>who had (I did not for a minute</line>
+    <line>doubt) murdered my brother, alo in</line>
+    <line>his hellish sport<add place="superlinear">have</add> betrayed the inno</line>
+    <line>cent to death and ignominy. I could</line>
+    <line>not sustain the horror of my situa</line>
+    <line>tion and when I saw that the popu</line>
+    <line>lar voice and the countenance of the</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0098.01">
+    <line><add>produced </add></line>
+  </zone>
+</surface>

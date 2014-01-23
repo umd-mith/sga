@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0104" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0104.jp2"/>
+  <zone type="pagination" rend="bordered"><line>120</line></zone>
+  <zone type="main">
+    <line><mod>
+        <del rend="strikethrough">selfishness</del>
+        <anchor xml:id="c57-0104.01"/>
+      </mod> of my promise burst upo<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod> me;</line>
+    <line>I shud<del rend="strikethrough">d</del>ered to think that future ages might</line>
+    <line>curse me as their pest whose <mod><restore type="smear_strikethrough"><del rend="strikethrough"
+          >selfishness</del></restore></mod></line>
+    <line>had not hesitated to buy its own peace at</line>
+    <line>the price perhaps of the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">existence of</add>
+      </mod> whole human</line>
+    <line>race. I trembled, and my heart failed <del rend="strikethrough" instant="true"
+      >wh</del></line>
+    <line>within me, when on looking up I saw</line>
+    <line>by the light of the moon, the d&#xE6;mon <mod>
+        <del rend="strikethrough">with</del>
+        <add place="superlinear" hand="#pbs">at the </add>
+        <anchor xml:id="c57-0104.02"/>
+      </mod></line>
+    <line>A ghastly grin <del rend="strikethrough" instant="true">on his countena</del>
+      wrinkled</line>
+    <line>lips, <add place="superlinear" hand="#pbs">as he</add> gazed on me <mod>
+        <del rend="strikethrough">as</del>
+        <add place="superlinear" hand="#pbs">where</add>
+      </mod> I sat. Yes, he had</line>
+    <line>followed me in my travels; he had loitered</line>
+    <line>in forests, hid himself in caves or taken</line>
+    <line>refuge in wide &amp; desart heaths &amp; he</line>
+    <line>now came to view my progress &amp; claim</line>
+    <line><anchor xml:id="c57-0104.03"/>my promise; as I looked on hi<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">m</add>
+      </mod> his <mod>
+        <del rend="strikethrough">face</del>
+        <add place="superlinear">countenance</add>
+      </mod></line>
+    <line><anchor xml:id="c57-0104.05"/>express<del rend="strikethrough">ed</del> the utmost extent
+      of malice</line>
+    <line>&amp; <mod>
+        <del rend="strikethrough">barbarity</del>
+        <del rend="unmarked">:</del>
+        <add place="superlinear" hand="#pbs">treachery.</add>
+      </mod> I thought with a sensation</line>
+    <line>of <del rend="strikethrough" instant="true">horror</del> madness <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear" hand="#pbs">on</add>
+      </mod> my promise of crea</line>
+    <line>ting another like to him &amp; trembling</line>
+    <line>with passion <del rend="strikethrough">as</del> tore to pieces the thing</line>
+    <line>on which I was engaged &#x2013; The wretch</line>
+    <line>saw me destroy the creature on whose</line>
+    <line>future existence he depended for</line>
+    <line>happiness and with a howl of devi</line>
+    <line>lish despair <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">&amp; revenge</add>
+      </mod> withdrew.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I left the room &amp; locking the door</line>
+    <line>made a vow in my own heart never</line>
+    <line>to resume my labou<retrace cause="clarify">rs</retrace>; &amp; then with trem</line>
+    <line>bling steps I sought my own appartment</line>
+    <line>I <del rend="strikethrough">a</del> was alone. <del rend="strikethrough"><unclear
+          reason="illegible">n</unclear></del> None were near me to</line>
+    <line>dissipate the gloom and relieve me</line>
+    <line>from the most terrible reveries. Several</line>
+    <line>hours passed and I remained near my</line>
+    <line>window gazing on the sea. It was almost</line>
+    <line>motionless for the winds were hushed &amp;</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0104.01">
+    <line><del rend="strikethrough"><add hand="#pbs">selfishness</add></del></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0104.02">
+    <line><mod>
+        <del rend="overwritten"><del rend="smear"><add hand="#pbs">window</add></del></del>
+        <add place="intralinear" hand="#pbs">casement.</add>
+      </mod></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0104.03">
+    <addSpan spanTo="#c57-0104.04"/>
+    <line>the fulfill</line>
+    <line>ment of </line>
+    <line><metamark function="separate">_________</metamark></line>
+    <anchor xml:id="c57-0104.04"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0104.05">
+    <line><add>appeared to </add></line>
+  </zone>
+</surface>

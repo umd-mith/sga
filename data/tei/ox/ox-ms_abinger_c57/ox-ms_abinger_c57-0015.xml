@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c57-0015" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0015.jp2"/>
+    <zone type="pagination" rend="bordered"><line>14</line></zone>
+    <zone type="library"><line>8</line></zone>
+    <zone type="main">
+        <line>my human neighbours<add place="intralinear" hand="#pbs">.</add>&#x2013;In the
+            evening</line>
+        <line>the young girl and her companion</line>
+        <line>were employed in various occupations;</line>
+        <line><mod>
+                <del rend="strikethrough">that</del>
+                <add hand="#pbs" place="superlinear">which</add>
+            </mod> I did not then understand, &#x26; the</line>
+        <line>old man again took that instru</line>
+        <line>ment which produced th<mod>
+                <del rend="overwritten">o</del>
+                <add place="intralinear">e</add>
+                <del rend="strikethrough">se</del>
+            </mod> divine</line>
+        <line>sounds that had enchanted me in</line>
+        <line>the morning. <mod>
+                <del rend="strikethrough">and</del>
+                <del rend="strikethrough"><del rend="overwritten">w</del><add place="intralinear"
+                        hand="#pbs">W</add>hen</del>
+                <add hand="#pbs" place="superlinear">So soon as</add>
+            </mod> he had finish</line>
+        <line>-ed the youth began,&#x2013; not to play<add place="intralinear" hand="#pbs"
+            >,</add>&#x2013; but</line>
+        <line><mod>
+                <del rend="strikethrough">he</del>
+                <add hand="#pbs" place="superlinear">to</add>
+            </mod> utter<del rend="strikethrough">ed</del> sounds which were monoto</line>
+        <line>nous <del rend="strikethrough">and</del> and <mod>
+                <del rend="strikethrough">far from</del>
+                <add place="superlinear">neither resembling</add>
+            </mod> the harmony</line>
+        <line>of the old mans instrument or the</line>
+        <line>songs of the birds I since found that</line>
+        <line>he read <add hand="#pbs" place="superlinear">aloud</add><add place="superlinear"
+                >,</add> but <add place="superlinear">at that time</add> I knew nothing of
+            the</line>
+        <line>science of words or letters. <delSpan spanTo="#c57-0015.01" rend="strikethrough"/>a<mod>
+                <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+                <add place="intralinear">t</add>
+            </mod> that</line>
+        <line>time<anchor xml:id="c57-0015.01"/><del rend="unmarked">.</del> The family soon
+            extinguished</line>
+        <line>their lights and retired, as I conjectured,</line>
+        <line>to <del rend="strikethrough">sleep</del>. rest</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">I lay on my straw but I could not</line>
+        <line>sleep &#x2013; I thought of the occurences of</line>
+        <line>the day.&#x2013; What cheifly struck me was</line>
+        <line>the gentle manners of these people, and</line>
+        <line>I longed to join them but dared not.&#x2014;</line>
+        <line>I remembered too well the treatment I</line>
+        <line>had suffered the night before fro<mod>
+                <del rend="overwritten">n</del>
+                <add place="intralinear">m</add>
+            </mod></line>
+        <line>the barbarous villagers and resolved</line>
+        <line>whatever <mod spanTo="#c57-0015.02"/><del rend="strikethrough">I</del>
+            <del rend="strikethrough" next="#c57-0015.03">should</del><add place="sublinear"
+                    ><metamark function="insert">^</metamark></add><add place="superlinear">course of conduct I
+                might</add>
+            <del rend="strikethrough" xml:id="c57-0015.03">afterwards</del>
+            <del rend="strikethrough" next="#c57-0015.04">think it</del><add place="superlinear"
+                next="#c57-0015.05">hereafter consider</add></line>
+        <line><del rend="strikethrough" xml:id="c57-0015.04">right to do</del><add
+                place="superlinear" xml:id="c57-0015.05">it proper to pursue that</add><anchor
+                xml:id="c57-0015.02"/> for the present I would</line>
+        <line>remain quietly in my hovel watching</line>
+        <line>and endeavouring to discover the motive</line>
+    </zone>
+</surface>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0071" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0071.jp2"/>
+  <zone type="pagination" rend="bordered"><line>101</line></zone>
+  <zone type="library"><line>33</line></zone>
+  <zone type="main">
+    <line>try. We passed a fortnight in these</line>
+    <line>perambulations. My health and spirits had long</line>
+    <line>been restored and they gained add<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">it</add>
+      </mod>ional vigour</line>
+    <line>from the salubrious air<del rend="strikethrough">,<add place="superlinear"
+            ><metamark>X</metamark></add></del> I breathed, <mod>
+        <add place="superlinear"><metamark function="displacement" xml:id="c56-0071.01"
+          >X</metamark></add>
+      </mod> and the</line>
+    <line>conversation of my friend. Study had before</line>
+    <line>rendered me unsocia<mod>
+        <del rend="overwritten">ble</del>
+        <add place="intralinear" hand="#pbs">l,</add>
+      </mod> &#x2013;I<add hand="#pbs" place="superlinear">had</add> shunned the <del
+        rend="strikethrough">face</del></line>
+    <line>company of my fellow beings But Clerval</line>
+    <line>called forth the better feelings of my heart.</line>
+    <line>he again taught me to love the aspect</line>
+    <line>of nature and the cheerful faces of chil-</line>
+    <line>dren. Excellent Friend! How sincerely did you</line>
+    <line>love me and endeavour to elevate my</line>
+    <line>mind untill it was on a level with</line>
+    <line>your own. A selfish persuit<del rend="strikethrough">e</del> had cramp-</line>
+    <line>ed and narrowed <mod>
+        <del rend="strikethrough">it</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> untill your gentle</line>
+    <line>ness &#x26; affection warmed &#x26; opened <mod>
+        <del rend="strikethrough">it</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my senses</add>
+      </mod>. <delSpan spanTo="#c56-0071.03"/>and</line>
+    <line>now<anchor xml:id="c56-0071.03"/> I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">now</add></del>
+      </mod> became the same happy creature</line>
+    <line>who a few years ago, loving &#x26; beloved by</line>
+    <line>all, had no sorrow or care &#x2013; <del rend="strikethrough">I</del>
+      <del rend="strikethrough">and</del> when</line>
+    <line>happy <mod>
+        <del rend="strikethrough">so</del>
+        <del rend="strikethrough"><add place="superlinear">no</add></del>
+      </mod>
+      <delSpan spanTo="#c56-0071.04"/>soul was more fitted than mine</line>
+    <line>for feeling delight<anchor xml:id="c56-0071.04"/>
+      <del rend="strikethrough">in</del> inanimate nature <add place="superlinear"><metamark
+          function="displacement" xml:id="c56-0071.05">X</metamark></add> &#x2014;</line>
+    <line>A serene sky <del rend="strikethrough">filled</del> and verdant<del rend="strikethrough"
+        >s</del> fields</line>
+    <line>filled me with extasy.&#x2013;<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>he <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">present</add>
+      </mod> season was indeed</line>
+    <line>divine &#x2013; the flowers of spring <mod>
+        <del rend="strikethrough">blossomed</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">bloomed</add>
+      </mod> in the</line>
+    <line>hedges while those of summer were al</line>
+    <line>ready in bud&#x2013; I <del rend="strikethrough">dis</del> was not disturbed by</line>
+    <line>thoughts that during the preceeding</line>
+    <line>year pressed upon me not withstand-</line>
+    <line>ing my endeavours to throw them off<add place="sublinear" hand="#pbs">with an invincible
+        burthen.</add></line>
+    <line>Henry <del rend="strikethrough">a</del> rejoiced <del rend="strikethrough">im</del> in my
+      gaiety and</line>
+    <line>sincerely sympathized in my <mod>
+        <del rend="strikethrough">joy</del>
+        <add place="superlinear">feelings</add>
+      </mod> &#x2013; he exer</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0071.01">
+    <addSpan spanTo="#c56-0071.02" hand="#pbs"/>
+    <line>the natural</line>
+    <line>incidents of</line>
+    <line>our progress<metamark>X</metamark></line>
+    <anchor xml:id="c56-0071.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0071.05">
+    <addSpan spanTo="#c56-0071.06"/>
+    <line><metamark function="displacement">X</metamark>had the</line>
+    <line>power of bes</line>
+    <line><del rend="strikethrough">bo</del> towing on</line>
+    <line>me the most</line>
+    <line>delightful</line>
+    <line>sensations</line>
+    <anchor xml:id="c56-0071.06"/>
+  </zone>
+</surface>

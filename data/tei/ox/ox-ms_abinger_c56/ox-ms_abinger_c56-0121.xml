@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0121" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0121.jp2"/>
+  <zone type="pagination" rend="bordered"><line>151</line></zone>
+  <zone type="library"><line>58</line></zone>
+  <zone type="main">
+    <line>upon <del rend="strikethrough">juts in</del> the jutting <mod>
+        <del rend="strikethrough">corners</del>
+        <add place="superlinear" hand="#pbs">rocks</add>
+      </mod> of the</line>
+    <line>mountain, or <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">transversely</add>
+      </mod> upon other trees. The</line>
+    <line>path as you <del rend="strikethrough">ascen</del> ascend higher is inters</line>
+    <line><mod>
+        <del rend="strikethrough">persed</del>
+        <add place="superlinear" hand="#pbs">ected</add>
+        <del rend="strikethrough">wi</del>
+        <del rend="unmarked">th</del>
+        <add hand="#pbs" place="superlinear">by</add>
+      </mod> ravines <add place="superlinear" hand="#pbs">of</add> snow, down which</line>
+    <line>stones continually roll from above;</line>
+    <line>one of the them is particularly dange</line>
+    <line>rous as the slightest sound such as <add place="intralinear" hand="#pbs">even</add></line>
+    <line>speaking in a loud voice <mod>
+        <del rend="strikethrough">is</del>
+        <add place="superlinear" hand="#pbs">produces</add>
+      </mod> a <delSpan spanTo="#c56-0121.01"/>suffi</line>
+    <line>cien<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod><anchor xml:id="c56-0121.01"/> concussion of air sufficient</line>
+    <line>to draw destruction the head of the</line>
+    <line>speaker. The pine<add place="intralinear" hand="#pbs">s</add> here are not</line>
+    <line>tall or luxuriant but they are sombre</line>
+    <line>and add an air of <mod>
+        <del rend="strikethrough">gravit</del>
+        <del rend="unmarked">y</del>
+        <add place="superlinear">severity</add>
+      </mod> to the scene.</line>
+    <line>I looked on the valley beneath.<add place="intralinear" hand="#pbs">;</add> Vast
+      mist</line>
+    <line>were rising from the river which ran</line>
+    <line>through<del rend="strikethrough">t</del>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">it</add>
+      </mod> and curling in thick wreaths</line>
+    <line>around the opposite mountains</line>
+    <line>whose summits were hid in the</line>
+    <line><anchor xml:id="c56-0121.02"/>clouds, while rain poured from the</line>
+    <line>dark sky and added to the melancholy</line>
+    <line>impression I received from the objects</line>
+    <line>around me &#x2014; Alas! <del rend="strikethrough">who can boast</del> why</line>
+    <line>does man boast of sensibilities above</line>
+    <line>those apparent in the brute it only</line>
+    <line>renders them more <hi rend="underline">necessary</hi> beings. <delSpan
+        spanTo="#c56-0121.03"/>Hunger</line>
+    <line>&#x26; desire and <unclear unit="chars" extent="1"/><anchor xml:id="c56-0121.03"/> If our
+      impulses were</line>
+    <line>confined to hunger thirst and desire</line>
+    <line>we might be <mod>
+        <del rend="strikethrough">more</del>
+        <add place="superlinear">nearly</add>
+      </mod> free but now</line>
+    <line>we are moved by every wind that</line>
+    <line>blows &#x26; by every <del rend="strikethrough">sc</del> chance <del rend="strikethrough"
+        >work</del> word or</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0121.02">
+    <line><add>uniform </add></line>
+  </zone>
+</surface>

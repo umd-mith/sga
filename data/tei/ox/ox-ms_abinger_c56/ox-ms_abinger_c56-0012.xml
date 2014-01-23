@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0012" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0012.jp2"/>
+  <zone type="pagination" rend="bordered"><line>42</line></zone>
+  <zone type="main">
+    <line>than mine. &#x2013; <mod>
+        <del rend="strikethrough">Our</del>
+        <add place="superlinear" hand="#pbs">My</add>
+      </mod> parents were indul</line>
+    <line>gent, and my companions amiable.</line>
+    <line><del rend="strikethrough">and our stud</del> Our studies were never</line>
+    <line>forced, and by some means we al-</line>
+    <line>ways had an end placed in view which</line>
+    <line>excited us to ardour.<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">in the prosecution of them.</add>
+      </mod> It was by this <mod>
+        <del rend="strikethrough">&#x26;</del>
+        <add place="superlinear" hand="#pbs">method</add>
+      </mod></line>
+    <line>not by emulation that we were</line>
+    <line>urged. Elizabeth was not told to apply</line>
+    <line>herself to drawing <mod>
+        <del rend="strikethrough">or</del>
+        <add place="superlinear" hand="#pbs">that</add>
+      </mod> her companions</line>
+    <line><mod>
+        <del rend="strikethrough">would</del>
+        <add place="superlinear" hand="#pbs">might not</add>
+      </mod> outstrip her, but <mod spanTo="#c56-0012.01"/><del type="overwritten">she</del><add
+        place="intralinear" hand="#pbs">by</add><del rend="strikethrough" next="#c56-0012.02"
+        >was</del><add place="superlinear" hand="#pbs">the</add><anchor xml:id="c56-0012.03"
+        /></line>
+    <line><del rend="strikethrough" xml:id="c56-0012.02">knew how</del><anchor xml:id="c56-0012.01"
+      /> pleas<mod>
+        <del type="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod> her Aunt <delSpan spanTo="#c56-0012.04" rend="strikethrough"/>would</line>
+    <line>be<anchor xml:id="c56-0012.04"/> by <mod>
+        <del rend="strikethrough">a painting</del>
+        <add place="superlinear" hand="#pbs">the representation</add>
+      </mod> of some <del rend="strikethrough">of her</del></line>
+    <line>favourite scene<del rend="strikethrough">s</del> done by her own</line>
+    <line>hand. <del rend="strikethrough">Latin</del> We learned Latin &#x26;</line>
+    <line>English <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear" hand="#pbs">that we might</add>
+      </mod> read the writ<mod>
+        <del type="overwritten">ers</del>
+        <add place="intralinear" hand="#pbs">ings</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear" hand="#pbs">in</add>
+      </mod> those</line>
+    <line>languages and so far from study</line>
+    <line>begin rendered odious <del rend="strikethrough">by</del> to us th<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>ough</line>
+    <line>punishment, we loved application</line>
+    <line>and our amusements <mod>
+        <del rend="strikethrough">were</del>
+        <add place="superlinear" hand="#pbs">would have been</add>
+      </mod> the</line>
+    <line>labours of other children. perhaps</line>
+    <line>we did not read so many books</line>
+    <line>or learn <del rend="strikethrough">a</del> languages so quickly</line>
+    <line>as <mod>
+        <del rend="strikethrough">another child</del>
+        <add place="superlinear" hand="#pbs">those who are disciplined according to the
+          ordinary</add>
+        <add place="sublinear" hand="#pbs">method,</add>
+      </mod> but what we</line>
+    <line>learned was impressed <add place="superlinear" hand="#pbs">the more deeply</add> on
+      our</line>
+    <line>memory. <mod>
+      <add place="superlinear" hand="#pbs"><metamark function="displacement" xml:id="c56-0012.05">X</metamark></add>
+        <del rend="strikethrough">I include</del></mod>
+      <del rend="strikethrough">Hen</del> Henry <mod spanTo="#c56-0012.07"/><del
+        rend="strikethrough" next="#c56-0012.08">Carignan</del><add place="superlinear"
+        >Clerval,</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0012.08">in this account</del><anchor
+        xml:id="c56-0012.07"/> for <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">he</add>
+      </mod> was<del rend="strikethrough">con</del> constantly</line>
+    <line>with us. he went to <del rend="strikethrough">sho</del> school</line>
+    <line>with me and generally passed</line>
+    <line>the afternoon at our house for</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0012.03">
+    <line><add hand="#pbs">desire of</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0012.05">
+    <addSpan spanTo="#c56-0012.06"/>
+    <line><add place="superlinear" hand="#pbs"><metamark function="displacement">X</metamark></add>In <mod>
+        <del rend="strikethrough">this</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> descrip</line>
+    <line>tion of our do</line>
+    <line>mestic circle</line>
+    <line>I include</line>
+    <anchor xml:id="c56-0012.06"/>
+  </zone>
+
+</surface>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0113" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0113.jp2"/>
+  <zone type="pagination" rend="bordered"><line>129</line></zone>
+  <zone type="library"><line>57</line></zone>
+  <zone type="main">
+    <line>buffeted around me. I had already been out</line>
+    <line>many hours and felt the tortures of a</line>
+    <line>burning thirst a prelude to my other</line>
+    <line>sufferings &#x2013; I looked on the heavens which</line>
+    <line>was covered by clouds that <del rend="strikethrough">pass</del> flew</line>
+    <line>with the wind only to be replaced by others&#x2013;</line>
+    <line>I looked on the sea &#x2013; It was to be my grave.</line>
+    <line>Fiend, I exclaimed, your task is already</line>
+    <line>fulfilled&#x2014;I thought of Elizabeth of my</line>
+    <line>father &amp; of Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="superlinear">e</add>
+      </mod>rval &#x2013; &amp; sunk into a reverie</line>
+    <line>so despairing &amp; frightful that even now</line>
+    <line>when the scene is on the point of closing</line>
+    <line>before me for ever I shudder to reflect</line>
+    <line>on it.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Some hours passed thus&#x2013;But by</line>
+    <line>degrees, as the sun <mod>
+        <del rend="strikethrough">verged</del>
+        <add place="superlinear">declined</add>
+      </mod> towards the</line>
+    <line>horizon, the <mod>
+        <del rend="strikethrough">breezed</del>
+        <add place="superlinear">wind</add>
+      </mod> died away into</line>
+    <line>a gentle breeze and the <del rend="strikethrough">breakers <unclear>ce</unclear></del>
+      sea</line>
+    <line><del rend="strikethrough">was smothed</del> became free from breakers.</line>
+    <line>But these gave place to a heavy swell,</line>
+    <line>I felt sick &amp; hardly able to hold the rud</line>
+    <line>der when suddenly I saw a line of</line>
+    <line>high land towards the south. Almost</line>
+    <line>spent as I was by fatigue &amp; misery this</line>
+    <line>sudden certainty of life rush<add place="intralinear">ed</add> like a</line>
+    <line>warm joy to my heart and tears gush</line>
+    <line>ed from my eyes. How mutable are our</line>
+    <line>feelings &amp; how strange is that clinging love</line>
+    <line>we have of life even in the excess of</line>
+    <line>misery. <mod spanTo="#c57-0113.01"/><delSpan rend="strikethrough"
+        spanTo="#c57-0113.02"/>I steered my boat towards the shore</line>
+    <line>and<anchor xml:id="c57-0113.02"/><anchor xml:id="c57-0113.03"/><anchor
+        xml:id="c57-0113.01"/> constructed another sail with a</line>
+    <line>part of my dress &amp; eagerly st<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>ered my course</line>
+    <line>towards the lan<mod>
+        <del rend="overwritten"><unclear>g</unclear></del>
+        <add place="intralinear">d</add>
+      </mod>. It had a wild rocky</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0113.03">
+    <line><add> I</add></line>
+  </zone>
+</surface>

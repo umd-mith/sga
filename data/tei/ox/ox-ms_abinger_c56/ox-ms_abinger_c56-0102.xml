@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0102" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0102.jp2"/>
+  <zone type="pagination" rend="bordered"><line>132</line></zone>
+  <zone type="main">
+    <line>I am not one of your enemies, I believed in</line>
+    <line>your innocence notwith<retrace cause="clarify">sta</retrace>nding every</line>
+    <line>evidence untill I heard that you had</line>
+    <line>yourself declared your guilt. That report</line>
+    <line>you say is false, and be assured my</line>
+    <line>dear Justine nothing can for a minute</line>
+    <line>shake my confidence in you but</line>
+    <line>your own confession&#x2013;"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"I did confess" said Justine "but</line>
+    <line>I confessed a lie. I confessed that I</line>
+    <line>might obtain absolution but now</line>
+    <line>that falsehood lies heavier at my</line>
+    <line>heart than all my other sins. The God</line>
+    <line>of heaven forgive me! Ever since I</line>
+    <line>was condemned my confessor has besieged</line>
+    <line>me<unclear>,&#x2013;</unclear> he threatened and menaced untill</line>
+    <line>I almost began to think that I was</line>
+    <line>the wicked wretch he said I was. He</line>
+    <line>threatened excomunication and Hell</line>
+    <line>fire in my last moments if I con</line>
+    <line>tinued obdurate. Dear Lady, I had none</line>
+    <line>to support me &#x2013; all looked on me</line>
+    <line>as a wretch doom to ignominy and</line>
+    <line>perdition; what could I do? In an evil</line>
+    <line>hour I <del rend="strikethrough">confessed</del> subscribed to a lie</line>
+    <line>and now only I am truly miserable." She</line>
+    <line>paused, weeping, and then continued.</line>
+    <line>"I thought with horror, my sweet lady,</line>
+    <line>that you should <del rend="strikethrough">sho</del> believe that</line>
+  </zone>
+</surface>

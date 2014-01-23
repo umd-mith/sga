@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0023" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0023.jp2"/>
+  <zone type="pagination" rend="bordered"><line>57</line></zone>
+  <zone type="main">
+    <delSpan rend="vertical-strike" spanTo="#c57-0023.01"/>
+    <line><del rend="strikethrough">It</del> Some time elapsed before I learned the</line>
+    <line>history of my friends. It was one that could not fail</line>
+    <line>to impress itself on my mind unfolding as it did</line>
+    <line>a number of circumstances each interresting</line>
+    <line>&amp; wonderful to one so utterly inexperienced as</line>
+    <line>I was.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The name of the old man was De Lacey<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"> he was</add>
+      </mod> descended</line>
+    <line>of a good family in France and had but recently</line>
+    <line>left his country when he been deprived of</line>
+    <line>a competent fortune which he <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">had</add>
+      </mod> before enjoyed</line>
+    <line><del rend="strikethrough">They had</del>
+      <mod>
+        <del rend="overwritten">b</del>
+        <add place="intralinear">B</add>
+      </mod>ut a few months before my arrival <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">they had</add>
+      </mod>
+    </line>
+    <line>resided in a large &amp; luxurious city called Paris</line>
+    <line>surrounded by friends &amp; possessed of every comfort</line>
+    <line>that could add to their happiness. The father</line>
+    <line>of the Arabian had been the cause of their</line>
+    <line>misfortunes. He had been unjustly imprisoned</line>
+    <line>and sentenced to die. The cause I understood was</line>
+    <line>very flagrant and it was visible to every impartial</line>
+    <line>spectator that he had been <add place="superlinear">rather</add> condemned <mod
+        spanTo="#c57-0023.02"/><delSpan spanTo="#c57-0023.03" rend="strikethrough"/>more</line>
+    <line>on account of<anchor xml:id="c57-0023.03"/><add place="superlinear">for</add><anchor
+        xml:id="c57-0023.02"/> his religion &amp; wealth than for</line>
+    <line>the crime of which he was accused. All the</line>
+    <line>spectators of the trial were shocked at the</line>
+    <line>injustice <del rend="strikethrough">th</del> of the court but the indignation</line>
+    <line>of Felix was uncontrolable. He made a solemn </line>
+    <line>vow to deliver him &amp; then looked around for the</line>
+    <line>means. After many fruitless attempts to gain</line>
+    <line>admittance into the prison &#x2013;he found a strongly</line>
+    <line>grated window in an unguarded part of the</line>
+    <line>prison which lighted the dungeon of the</line>
+    <line>unfortunate Mahometan who loaded with</line>
+    <anchor xml:id="c57-0023.01"/>
+  </zone>
+</surface>

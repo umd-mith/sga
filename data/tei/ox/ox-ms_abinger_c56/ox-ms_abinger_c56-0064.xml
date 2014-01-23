@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0064" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0064.jp2"/>
+  <zone type="pagination" rend="bordered"><line>94</line></zone>
+  <zone type="main">
+    <line>say <del rend="strikethrough">I</del> you wish to be indulged in a little</line>
+    <line>gossip about your acquaintance. The</line>
+    <line>pretty Miss Mansfeld has already received</line>
+    <line><del rend="strikethrough">on</del>
+      <del rend="strikethrough">her</del> the congratulatory visits on her</line>
+    <line>approaching marriage with a young</line>
+    <line>Englishman, John <del rend="strikethrough">Mebourne</del> Mel-</line>
+    <line>bourne Esq. Her ugly sister Manon</line>
+    <line>married M. Hofland the rich banker last</line>
+    <line>autumn. Your favourite schoolfellow</line>
+    <line>Louis Manoir <del rend="strikethrough">ma</del> has suffered several</line>
+    <line>misfortunes <del rend="strikethrough">d</del> since the departure</line>
+    <line>of Clerval from Geneva <del rend="strikethrough">b</del> But he</line>
+    <line>has <del rend="strikethrough">atready</del> already recovered his spirits</line>
+    <line>and he reported to <del rend="strikethrough">m</del> be on the point</line>
+    <line>of marrying a very lively pretty french</line>
+    <line>woman&#x2014; Mad. Tavernier &#x2013;She is a widow</line>
+    <line>and much older than Manoir but</line>
+    <line>she is much <del rend="strikethrough">adv</del> admired and a</line>
+    <line>favourite with every body.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I have written myself into good spi</line>
+    <line>rits, dear Cousin yet I can not conclude</line>
+    <line>without again anxiously enquiring</line>
+    <line>concerning your health&#x2014; Dear Victor, if</line>
+    <line>you are not very ill write yourself</line>
+    <line>and make your father and all</line>
+    <line>of us happy or&#x2014; I cannot bear to <anchor xml:id="c56-0064.01"/></line>
+    <line rend="right">Your very affectionate Cousin</line>
+    <line><milestone unit="tei:seg" spanTo="#c56-0064.03" next="#c56-0064.04"/><del
+        rend="strikethrough">dearrest</del> &#x2013; dearest Victor<metamark function="separate"
+        >)</metamark><anchor xml:id="c56-0064.03"/> Elizabeth Lavenza</line>
+    <line><milestone unit="tei:seg" xml:id="c56-0064.04" spanTo="#c56-0064.05"/>write&#x2013;<anchor
+        xml:id="c56-0064.05"/></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0064.01">
+    <addSpan spanTo="#c56-0064.02"/>
+    <line>think <mod>
+        <del rend="strikethrough">of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">on</add>
+      </mod> the</line>
+    <line>other side</line>
+    <line>of the question</line>
+    <line>my tears al-</line>
+    <line>ready flow</line>
+    <anchor xml:id="c56-0064.02"/>
+  </zone>
+
+
+</surface>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0160" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0160.jp2"/>
+  <zone type="pagination" rend="bordered"><line>176</line></zone>
+  <zone type="main">
+    <line>and when I m<damage type="inkblot">os</damage>t murmured would suddenly</line>
+    <line>extricate me from my seemingly insur</line>
+    <line>mountable difficulties&#x2014; Sometimes when</line>
+    <line>nature overcome by hunger sunk under</line>
+    <line>the exhaustion a repast was prepared for</line>
+    <line>me in the desart that restored &amp; inspirited</line>
+    <line>me&#x2013; The fare indeed was coarse such as the</line>
+    <line>peasants of the country <mod>
+        <del rend="strikethrough">lived on</del>
+        <add place="superlinear" hand="#pbs">ate</add>
+      </mod> but I</line>
+    <line>may not doubt that it was set there</line>
+    <line>by the spirits I had invoked to aid me. Often</line>
+    <line><damage type="inkblot">wh</damage>en all was dry <del rend="strikethrough">and</del> the
+      heavens cloudless</line>
+    <line>&amp; I was parched with thirst &#x2013; a slight</line>
+    <line>cloud would bedim the sky &#x2013; shed the few</line>
+    <line>drops that revived me, &amp; vanish.</line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="5"/>I followed when I could the courses</line>
+    <line>of rivers but the d&#xE6;mon generally avoided</line>
+    <line>these as it was here that the population</line>
+    <line>of the country chiefly collected&#x2013; In other</line>
+    <line><del rend="strikethrough">s</del>places human beings were seldom</line>
+    <line>seen &amp; I generally subsisted <mod>
+        <del rend="strikethrough">by</del>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">on</add>
+      </mod> the wild</line>
+    <line><mod>
+        <del rend="strikethrough">game</del>
+        <add><ptr target="#c57-0160.01"/></add>
+      </mod> that cross<add place="intralinear">ed</add> my path &#x2013; I had money</line>
+    <line>with me &amp; gained the friendship of the</line>
+    <line>villagers by distributing it or bringing with</line>
+    <line>me some <mod>
+        <del rend="strikethrough">a</del>
+        <del rend="strikethrough">beast</del>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">food</add>
+      </mod> that I had killed</line>
+    <line>which after taking a small part I al</line>
+    <line>ways presented to those who had provided</line>
+    <line>with fire &amp; utensils.<mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">for cooking</add>
+      </mod> My life as it passed</line>
+    <line>thus was indeed hateful to me &amp; it was</line>
+    <line>during sleep alone that I could taste</line>
+    <line>joy &#x2013; Oh blessed sleep! often when most</line>
+    <line>miserable I sunk to repose &amp; my dreams</line>
+    <line><del rend="strikethrough">lu</del> lulled <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> even to rapture &#x2013; The spirit</line>
+    <line>that guarded me had surely provided</line>
+    <line>these moments or rather hours of happi</line>
+    <line>ness that I might retain strength to</line>
+  </zone>
+  <zone type="left_margin">
+    <line><add xml:id="c57-0160.01">animals</add></line>
+  </zone>
+</surface>

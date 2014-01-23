@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0005" ulx="0" uly="0" lrx="5088" lry="7082" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2"/>
+  <zone type="library"><line>1</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c56-0005.06"/>Chapt. 2<anchor xml:id="c56-0005.06"/></line>
+    <line>Those events which materially influence our fu</line>
+    <line>ture destinies <del rend="strikethrough">are</del> often <mod>
+        <del rend="strikethrough">caused</del>
+        <del rend="strikethrough">by slight or</del>
+        <add hand="#pbs" place="superlinear">derive thier origin from a</add>
+      </mod> tri</line>
+    <line>vial occurence<del rend="strikethrough">s</del>. <mod spanTo="#c56-0005.01"/><del
+        rend="strikethrough" next="#c56-0005.02">Strange as the</del>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">statement of the</add></del>
+      </mod>
+      <del rend="strikethrough" xml:id="c56-0005.02" next="#c56-0005.03">simple fact</del></line>
+    <line><del rend="strikethrough" xml:id="c56-0005.03">may appear my fate had been</del>
+      <del rend="strikethrough">Chemist</del><anchor xml:id="c56-0005.01"/> Natu</line>
+    <line>ral philosophy <del rend="strikethrough">has</del> is the genius that has</line>
+    <line>regulated my fate I <mod>
+        <del rend="strikethrough">wish</del>
+        <add hand="#pbs" place="superlinear">desire</add>
+      </mod> the<mod>
+        <del rend="overwritten">ir</del>
+        <add place="intralinear">refore</add>
+      </mod> in this account</line>
+    <line>of my early years to state those facts which</line>
+    <line>led to my<mod>
+        <del rend="strikethrough">love</del>
+        <del rend="strikethrough">pursuit</del>
+        <del rend="strikethrough"><add place="superlinear">first aqu</add></del>
+      </mod>
+      <mod>
+        <del rend="strikethrough">of that study.</del>
+        <add place="superlinear">predeliction for that science.</add>
+      </mod> When</line>
+    <line>I was eleven years old we all went on a party</line>
+    <line>of pleasure to <mod>
+        <del rend="strikethrough">Thonon</del>
+        <retrace cause="fix" hand="#pbs">
+          <add place="superlinear">the baths near</add>
+        </retrace>
+        <add place="superlinear" hand="#pbs">Thonon.</add>
+      </mod>
+      <del rend="strikethrough">and were confined there</del></line>
+    <line><del rend="strikethrough">b</del>
+      <del rend="strikethrough">obil</del>
+      <del rend="strikethrough">obliged by the rain</del>
+      <del rend="strikethrough">and</del>
+      <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear" hand="#pbs">T</add>
+      </mod>he inclemen</line>
+    <line>cy of the weather obliged us to remain a day</line>
+    <line>confined to the inn. In this house I chanced</line>
+    <line>to fin<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear">d</add>
+      </mod> a <del rend="strikethrough">fo</del> volume<del rend="strikethrough">s</del> of the
+      Works of Corne</line>
+    <line>lius Agrippa. <del rend="strikethrough">And</del> I opened it with apathy</line>
+    <line><mod>
+        <del rend="strikethrough" next="#c56-0005.04">but</del>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the theory that he attempted to d<add place="superlinear"
+            next="#c56-0005.05">demonstrate and the wonderful facts that</add></add>
+        <add place="sublinear" xml:id="c56-0005.05">he relates <del rend="strikethrough">chan</del>
+          soon changed this feeling into</add>
+        <del rend="strikethrough" xml:id="c56-0005.04">continued <unclear>to re</unclear> with</del>
+      </mod> enthusiasm. A new</line>
+    <line>light dawned upon my mind and <del rend="strikethrough">I</del>
+      <del rend="strikethrough">com</del></line>
+    <line>bounding with joy I communicated my</line>
+    <line>discovery to my father. I cannot help here remark</line>
+    <line>ing the many opportunities <mod>
+        <del rend="strikethrough">parents</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">instructors</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">have</del>
+        <add place="superlinear" hand="#pbs">posess</add>
+      </mod></line>
+    <line>of directing the attention of their pupils to</line>
+    <line>useful knowledge, which they utterly neglect.</line>
+    <line>My father looked carelessly at the tit<del rend="strikethrough">t</del>le page</line>
+    <line>of my book &#x2014; <del rend="strikethrough">Ah</del> and said Ah! Cornelius</line>
+    <line>Agrippa! &#x2014; My dear Victor do not waste</line>
+    <line>your time upon this &#x2013; it is sad trash.</line>
+    <line>If instead of this remark or rather excla</line>
+    <line>mation my father had taken the pains to</line>
+    <line>exp<mod>
+        <del rend="strikethrough">ound</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">lain</add>
+      </mod> to me that the principles of</line>
+  </zone>
+</surface>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0088" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0088.jp2"/>
+  <zone type="pagination" rend="bordered"><line>118</line></zone>
+  <zone type="main">
+    <line>days one of the servants happen<mod>
+        <del rend="overwritten"><mod>
+            <del rend="overwritten">s</del>
+            <add place="intralinear">ed</add>
+            <del rend="strikethrough"><add place="intralinear">to</add></del>
+          </mod></del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod> to</line>
+    <line>examine the apparel she had worn on</line>
+    <line>the night of the murder <del rend="strikethrough">&#x26;</del> h<mod>
+        <del rend="overwritten"><unclear>ard</unclear></del>
+        <add hand="#pbs" place="intralinear">ad</add>
+      </mod> discovered</line>
+    <line>in her pocket the picture of my mother</line>
+    <line>which had been judged to be the tempta</line>
+    <line>tion of the murderer. The servant instantly</line>
+    <line>shewed it to one of the others, <mod>
+        <del rend="strikethrough">and</del>
+        <add hand="#pbs" place="superlinear">who</add>
+      </mod> without</line>
+    <line>saying a word to any of the family <del rend="strikethrough">they</del></line>
+    <line>went to a magistrate who sent to appre</line>
+    <line>hend Justine. <del rend="strikethrough">who</del> on being charged with</line>
+    <line>the fact<add place="superlinear">she</add> confirmed the suspicion <del
+        rend="strikethrough">to</del></line>
+    <line><del rend="strikethrough">a</del> in a great measure by her extreme</line>
+    <line>confusion.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This was a strange tale but it did</line>
+    <line>not shake my faith and I replied earnest</line>
+    <line>ly. "You are all mistaken. I know the</line>
+    <line>murderer Justine, poor, good Justine is</line>
+    <line>innocent."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">At that instant my father en-</line>
+    <line>tered <mod>
+        <!--section from 89 replaces marginal addition on 88.-->
+        <del rend="strikethrough"><add place="superlinear"><metamark function="displacement"
+              xml:id="c56-0088.01">X</metamark></add></del>
+        <anchor xml:id="c56-0089.01"/>
+      </mod>
+      <del rend="strikethrough">and</del> Ernest exclaimed Good God, Pa</line>
+    <line>pa! Victor says that he <del rend="strikethrough">ha<mod>
+          <del rend="overwritten">d</del>
+          <add place="intralinear">s</add>
+        </mod></del>
+      <del rend="strikethrough">k</del> knows</line>
+    <line>the murderer of poor William.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"<del rend="strikethrough">And</del> We do also, unfortunately," replied my</line>
+    <line>father for indeed I had rather have</line>
+    <line>been<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for ever</add>
+      </mod> ignorant than, have discovered so</line>
+    <line>much depravity &#x26; ingratitude in one whom</line>
+    <line>I valued so highly.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"My dear father" exclaimed I&#x2013;"You are</line>
+    <line>mistaken. Justine is innocent."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">"If she is" replied my father "God forbid</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0088.01">
+    <delSpan rend="vertical_line" spanTo="#c56-0088.03"/>
+    <addSpan spanTo="#c56-0088.02" hand="#pbs"/>
+    <line>After our</line>
+    <line>first</line>
+    <line>mournful</line>
+    <line>greetings</line>
+    <line>had past</line>
+    <line>I</line>
+    <anchor xml:id="c56-0088.02"/>
+    <anchor xml:id="c56-0088.03"/>
+  </zone>
+</surface>

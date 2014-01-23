@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0149" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0149.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>165</line>
+  </zone>
+  <zone type="library">
+    <line>75</line>
+  </zone>
+  <zone type="main">
+    <line>arms &amp; relaxed figure flung by the mur</line>
+    <line>derer on its <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">bridal</add>
+      </mod> bier &#x2014; Could I behold this &amp; and</line>
+    <line>live&#x2013; Alas life is obstinate <mod>
+        <del rend="strikethrough">&amp; clinging</del>
+        <add hand="#pbs" place="superlinear">it clings closest</add>
+      </mod> where it</line>
+    <line>is most hated&#x2013; for a moment only did</line>
+    <line>I lose recollection &#x2013; I fainted.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">When I recovered I found myself in</line>
+    <line>the midst of the people of inn &#x2013; Their</line>
+    <line>countenances expressed a breathless terror</line>
+    <line>but the horror of others appeared <mod>
+        <del rend="strikethrough">but</del>
+        <add place="superlinear" hand="#pbs">only as</add>
+      </mod> a</line>
+    <line>mockery <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">a shadow</add>
+      </mod> of the feelings that oppre<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">ss</add>
+      </mod>ed</line>
+    <line><anchor xml:id="c57-0149.01"/>I escaped from them <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to the room</add>
+      </mod> where lay the body</line>
+    <line>of Elizabeth &#x2013; my love &#x2014; my wife &#x2013; so lately</line>
+    <line>living &#x2013; so dear &#x2013;so worthy &#x2013; She had</line>
+    <line>been moved from the posture in</line>
+    <line>which I had first beheld her &amp; now</line>
+    <line>as she lay her head upon her arm</line>
+    <line>and <del rend="strikethrough" instant="true">h</del> a hankerchief thrown across</line>
+    <line>her face &amp; neck I might have sup</line>
+    <line>posed her asleep &#x2013; I rushed toward<add place="intralinear">s</add> her &amp;</line>
+    <line>embraced her with ardour but the</line>
+    <line>deathly coldness of the body told me that</line>
+    <line>what I now held in my arms had</line>
+    <line>ceased to be the Elizabeth whom I</line>
+    <line>had loved &amp; cherished, the murderous</line>
+    <line>grasp of the fiend was on her neck</line>
+    <line>&amp; the breath had ceased to issue from</line>
+    <line>her <del rend="strikethrough">sweet</del> lips.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">While I still held her in my arms</line>
+    <line>in the agony of despair I happened to</line>
+    <line>look up. The room <del rend="strikethrough">which</del> had before</line>
+    <line>been quite dark and I felt a kind of</line>
+    <line>panic on seeing the pale yellow light</line>
+    <line>of the moon illuminate the chamber</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0149.01">
+    <line><add hand="#pbs">me. </add></line>
+  </zone>
+</surface>

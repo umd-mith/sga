@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0034" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0034.jp2"/>
+
+  <zone type="pagination">
+    <line>65</line> <!--"65" appears at start of next paragraph. Consider taking pagination out of zones. Use milestones. -->
+  </zone>
+
+  <zone type="main">
+    <line>to <del rend="strikethrough">Can</del> Constantinople <mod>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear" hand="#pbs">for</add>
+      </mod> which <add place="superlinear" hand="#pbs">city</add> he should</line>
+    <line>sail in few hours. He intended to leave his</line>
+    <line>daughter <del rend="strikethrough" instant="true">to foll</del> under the care of a
+      servant</line>
+    <line>to follow at her leisure with the greater part</line>
+    <line>of his property which had not yet arrived</line>
+    <line>at Leghorn.</line>
+    <milestone unit="tei:p"/>
+    <line><del rend="strikethrough" instant="true">Lef</del>
+      <del rend="strikethrough">Deserted by her father</del> Safie revolved</line>
+    <line>in her own mind the <del rend="strikethrough">various</del> plan<del rend="strikethrough"
+        >s</del> of con</line>
+    <line>duct that it would become her to pursue</line>
+    <line><add place="superlinear">in this emergency.</add>
+      <del rend="strikethrough">The slavery</del> A residence in Turkey was ab</line>
+    <line>horrent to her &#x2013; her religion &amp; feelings were</line>
+    <line>alike adverse to it. By some papers <del rend="strikethrough">that</del></line>
+    <line>of her fathers that fell into her hands she</line>
+    <line>heard of the exile of her lover and <del rend="strikethrough">the</del></line>
+    <line>learnt the name of the spot where</line>
+    <line>he resided. She hesitated some time but at</line>
+    <line>length she formed her resolution &#x2014;Taking</line>
+    <line>with her some jewels that belonged to her,</line>
+    <line>and a small sum of money; she quitted</line>
+    <line>Italy with a<add place="intralinear">n</add> <del rend="strikethrough">servant who</del> attendant a</line>
+    <line>native of Leghorn but who understood <mod spanTo="#c57-0034.01"/><delSpan
+        rend="strikethrough" spanTo="#c57-0034.02"/>Tur</line>
+    <line>kish<anchor xml:id="c57-0034.02"/><add place="superlinear" hand="#pbs">Arabic</add><anchor
+        xml:id="c57-0034.01"/> and departed for Germany. She arrived</line>
+    <line><del rend="strikethrough">safely</del> in safety at a town about <mod>
+        <del rend="strikethrough">50</del>
+        <add place="superlinear">20</add>
+      </mod> leagues</line>
+    <line>from the Cottage of De Lacey &#x2013; her attendant</line>
+    <line>then fell <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">dangerously</add>
+      </mod> ill <del rend="strikethrough">and she was retarded wh</del> Safie</line>
+    <line><del rend="strikethrough" instant="true">watched</del> nursed her with the most
+      devoted</line>
+    <line>affection but the poor girl died &amp; <mod>
+        <del rend="strikethrough">Safie</del>
+        <add place="superlinear">the Arabian</add>
+      </mod></line>
+    <line>was left alone unacquainted with the lan</line>
+  </zone>
+
+</surface>

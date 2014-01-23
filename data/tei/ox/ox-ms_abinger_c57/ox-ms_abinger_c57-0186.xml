@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0186" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0186.jp2"/>
+  <zone type="pagination">
+    <line><damage type="tear">202</damage></line>
+  </zone>
+  <zone type="main">
+    <line>Fear not that I shall do more mischief my</line>
+    <line>work is nearly complete &#x2013;It needs not yours or</line>
+    <line>any mans death to consumate it but it</line>
+    <line><mod>
+        <del rend="strikethrough">me</del>
+        <del rend="strikethrough">needs</del>
+        <anchor xml:id="c57-0186.01"/>
+      </mod> my own. And <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">do not</add>
+      </mod> think <del rend="strikethrough">t</del>
+      <del rend="strikethrough">not</del> that I</line>
+    <line>shall be slow to perform that sacrifice</line>
+    <line>I shall quit your vessel &amp; on the ice raft</line>
+    <line>that brought me I shall seek <del rend="strikethrough">to</del> the most</line>
+    <line><unclear reason="case">N</unclear>orthern extremity of land that the globe</line>
+    <line>affords &#x2013; I shall collect my funeral pile</line>
+    <line>and consume myself to ashes &#x2013; that my</line>
+    <line>remains may afford no light to any</line>
+    <line>curious &amp; unhallowed wretch who would</line>
+    <line>create such another. I shall die. I shall</line>
+    <line>no longer feel the anguish that now</line>
+    <line>consumes me or be the prey of feelings</line>
+    <line>unsatisfied yet unquenched. He is dead</line>
+    <line>who created me and when I die the remem-</line>
+    <line>brance of me will be lost for ever. <del rend="strikethrough">Yet</del></line>
+    <line><del rend="strikethrough">Strange</del> I shall no longer see the sun</line>
+    <line><mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">or</add>
+      </mod> stars <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear" hand="#pbs">or</add>
+      </mod> feel the winds play on my</line>
+    <line>cheeks&#x2013; Light feeling &amp; sense will die.</line>
+    <line>And in this must I find my happiness.</line>
+    <line>Some years ago when the images this</line>
+    <line>world affords first opened on me</line>
+    <line>when I felt the cheering war<add place="superlinear">m</add>th of sum</line>
+    <line>mer &amp; heard the rustling of leaves &amp;</line>
+    <line>the chirping of birds &amp; these were all</line>
+    <line>to me I should have wept to die &amp; now</line>
+    <line>it is my only consolation. Stained by crimes</line>
+    <line>and torn by the bitterest remorse where</line>
+    <line>can I find <mod>
+        <del rend="strikethrough">consolation</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">rest</add>
+      </mod> but in death.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Farewell; I leave you and with</line>
+    <line>you the last of men that these eyes</line>
+    <line>will ever behold. Farewell, Frankenstein</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0186.01">
+    <line><add>requires</add></line>
+  </zone>
+</surface>

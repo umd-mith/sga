@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0091" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0091.jp2"/>
+  <zone type="pagination" rend="bordered"><line>121</line></zone>
+  <zone type="library"><line>43</line></zone>
+  <zone type="main">
+    <line>away by even a worse fate &#x2013; Alas if she</line>
+    <line>is condemned I shall never know joy more</line>
+    <line>But she will not I am sure she will</line>
+    <line>not and then I shall be happy again even</line>
+    <line>after the <del rend="strikethrough">d</del> sad death of my little William."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"She is innocent, my Elizabeth," said I and</line>
+    <line>that shall be proved &#x2013; fear nothing but let</line>
+    <line>your spirits be cheered by the assurance</line>
+    <line>of her aquittal.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"How kind your are," replied Elizabeth,</line>
+    <line>"every one else believes in her guilt, and</line>
+    <line>that made me wretched <delSpan spanTo="#c56-0091.01" rend="strikethrough"/>for I would
+      as</line>
+    <line>surely believe in my<anchor xml:id="c56-0091.01"/> for I knew <mod spanTo="#c56-0091.02"
+        /><delSpan spanTo="#c56-0091.03" rend="strikethrough"/>it to</line>
+    <line>be<anchor xml:id="c56-0091.03"/><add place="superlinear" hand="#pbs">that it
+        was</add><anchor xml:id="c56-0091.02"/> impossible, and to see every one else</line>
+    <line>prejudiced in so deadly a manner rendered</line>
+    <line>me hopeless and despairing." She wept&#x2014;</line>
+    <line>"Sweet niece" said my father dry your</line>
+    <line><del rend="strikethrough" instant="true">eyes</del> tears <mod spanTo="#c56-0091.04"
+        /><delSpan spanTo="#c56-0091.05" rend="strikethrough"/>and do not give so sad<add
+        place="superlinear">sorrowful</add> a welc-</line>
+    <line>come to Victor who has been so long</line>
+    <line>absent<anchor xml:id="c56-0091.05"/>
+      <addSpan spanTo="#c56-0091.07" hand="#pbs"/> if she is as you believe innocent rely <del
+        rend="strikethrough">that</del>
+      <line>on the justice of our judges &#x26; the activity with</line>
+      <line>which I shall prevent the slightest shadow of partiality.</line><anchor
+        xml:id="c56-0091.04"/>
+      <anchor xml:id="c56-0091.07"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We passed a few sad hours untill eleven</line>
+    <line>o'clock when the trial was to <mod>
+        <del rend="strikethrough">begin</del>
+        <add place="superlinear">commence</add>
+      </mod>
+      <del rend="strikethrough">and</del>
+      <mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">M</add>
+      </mod>y <delSpan spanTo="#c56-0091.08" rend="strikethrough"/>father</line>
+    <line>and E<anchor xml:id="c56-0091.08"/>
+      <del rend="strikethrough">father</del>
+      <del rend="strikethrough">El</del> the rest of the family being obliged</line>
+    <line>to attend as witnesses <del rend="strikethrough">Iac</del> I accompanied them to</line>
+    <line>the court. During the whole of this wretched</line>
+    <line>mockery of justice I sufferred living torture.<add place="sublinear"><unclear
+          reason="illegible"><metamark>^</metamark></unclear></add></line>
+    <line>It was to be decided whether the result of</line>
+    <line>my curiosity and lawless<mod>
+        <del rend="strikethrough">desires</del>
+        <add place="superlinear" hand="#pbs">devices</add>
+      </mod> would cause</line>
+  </zone>
+
+
+</surface>

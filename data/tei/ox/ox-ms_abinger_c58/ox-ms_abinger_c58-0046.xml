@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0046" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0046.jp2"/>
+  <zone type="pagination"><line>168</line></zone>
+  <zone type="main">
+    <line>of disgrace marked on your brows. Return as heroes</line>
+    <line>who have fought and conquered and who know</line>
+    <line>not what it is to turn their backs on the foe.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">He spoke thus with a voice so modulated</line>
+    <line>to the different feelings expressed in his speech,</line>
+    <line>with an eye so full of lofty design and heroism,</line>
+    <line>that can you wonder that these men were</line>
+    <line>moved. They looked at one another and were</line>
+    <line>unable to reply. I spoke; I told them to retire</line>
+    <line>and consider of what had been said. <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>hat I would</line>
+    <line>not lead them further north if they strenuously</line>
+    <line>desired the contrary; but that I hoped that</line>
+    <line>with reflection their courage would return.</line>
+    <line>They retired and I turned towards my friend but</line>
+  </zone>
+</surface>

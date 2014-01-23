@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0113" ulx="0" uly="0" lrx="5428" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0113.jp2"/>
+  <zone type="pagination" rend="bordered"><line>143</line></zone>
+  <zone type="library"><line>54</line></zone>
+  <zone type="main">
+    <line>last saw her<anchor xml:id="c56-0113.02"/><anchor xml:id="c56-0113.03"/><anchor
+        xml:id="c56-0113.01"/>
+      <del rend="unmarked">&#x2013; <mod>
+          <del rend="overwritten">who</del>
+          <add place="intralinear" hand="#pbs">had</add>
+        </mod></del> wandered with</line>
+    <line><del rend="strikethrough">on</del> me on the banks of the lake</line>
+    <line>and talked with extacy of our future</line>
+    <line>prospects&#x2013; She <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">had become</add>
+      </mod> grave, and often</line>
+    <line><mod>
+        <del rend="strikethrough">talked</del>
+        <anchor xml:id="c56-0113.05"/>
+      </mod> of the inconstancy of fortune</line>
+    <line>and the instability of human life&#x2014;</line>
+    <line>"When I reflect, my dear Cousin," she said "on</line>
+    <line>the miserable death of Justine Moritz, I</line>
+    <line>no longer see <del rend="strikethrough">things</del> the world and its</line>
+    <line>works in the same light as they before</line>
+    <line>appeared to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me.</add>
+      </mod> Before &#x2013; <mod>
+        <del rend="strikethrough">Stories</del>
+        <add place="superlinear">I looked upon the</add>
+      </mod> accounts of vice</line>
+    <line>and injustice that I read in books or heard</line>
+    <line>from others as tales of ancient days or</line>
+    <line>imaginary evils<mod>
+        <add place="intralinear" hand="#pbs">;</add>
+        <add place="superlinear"><metamark function="displacement" xml:id="c56-0113.06"
+          >X</metamark></add>
+      </mod> but now misery has</line>
+    <line>come home and men appear to me as</line>
+    <line>monsters thirsting for each others blood.</line>
+    <line>Yet I am certainly unjust.&#x2013;Every one</line>
+    <line>believed that poor girl to be guilty, and</line>
+    <line>if she <mod>
+        <del rend="strikethrough">had</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">could have committed the crime for which she suffered,
+          assuredly she</add>
+      </mod> would <del rend="strikethrough">she not</del> have been</line>
+    <line>the most depraved of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">human</add>
+      </mod> creatures. For the</line>
+    <line>sake of a few jewels to have murdered</line>
+    <line>the son of her benefactor &#x26; friend, a child</line>
+    <line>whom she had nursed from its birth</line>
+    <line>and appeared to love as if it had been</line>
+    <line><del rend="strikethrough">its</del> her own. I could not consent to the</line>
+    <line>death of any human being <mod>
+        <del rend="strikethrough">yet</del>
+        <add place="superlinear">but</add>
+      </mod> certainly</line>
+    <line>I should have thought such a <mod spanTo="#c56-0113.09"/><del rend="strikethrough"
+        next="#c56-0113.10">woman</del><add place="superlinear" hand="#pbs" next="#c56-0113.11"
+        >being</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0113.10">unworthy of life</del>
+      <add place="superlinear" hand="#pbs" xml:id="c56-0113.11"><del rend="strikethrough">as</del>
+        unfit to remain in the society of men.</add><anchor xml:id="c56-0113.09"/> &#x2013; Yet she
+        <del rend="strikethrough">she</del> was inno</line>
+    <line>cent&#x2013;I know<del rend="vertical_line">&#x2013;</del>I feel she was innocent
+      You</line>
+    <line>are of the same opinion and that</line>
+    <line>confirms me. Alas, Victor! when <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">lies</del>
+        <del rend="strikethrough">appear</del>
+        <add place="superlinear">falsehood <del rend="strikethrough">look</del></add>
+      </mod></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0113.03">
+    <addSpan spanTo="#c56-0113.04" hand="#pbs"/>
+    <line>who in earlier</line>
+    <line>youth had </line>
+    <anchor xml:id="c56-0113.04"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0113.05">
+    <line><add>conversed</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0113.06">
+    <addSpan spanTo="#c56-0113.07" hand="#pbs"/>
+    <line><metamark function="displacement"><hi rend="sup">X</hi></metamark>At least they</line>
+    <line>were remote,</line>
+    <line>and more</line>
+    <line>familiar to <delSpan spanTo="#c56-0113.08"/>the</line>
+    <line>beli<anchor xml:id="c56-0113.08"/> reason than</line>
+    <line>to imagination</line>
+    <anchor xml:id="c56-0113.07"/>
+  </zone>
+</surface>

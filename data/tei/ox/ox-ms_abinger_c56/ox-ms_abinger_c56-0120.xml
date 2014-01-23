@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0120" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0120.jp2"/>
+  <zone type="pagination" rend="bordered"><line>150</line></zone>
+  <zone type="main">
+    <line><del rend="strikethrough">n</del>ever inured myself to rain and cold I</line>
+    <line>resolved <del rend="strikethrough">t</del> to go to the summit of</line>
+    <line>Montanvert <mod>
+        <del rend="strikethrough">by myself</del>
+        <add place="superlinear">alone</add>
+      </mod>. I remembered</line>
+    <line>the effect the view of the tremendous</line>
+    <line>and ever moving glacier had <mod>
+        <del rend="strikethrough">had</del>
+        <anchor xml:id="c56-0120.01"/>
+      </mod></line>
+    <line>upon my mind when I first saw it</line>
+    <line><mod>
+        <del rend="strikethrough">how</del>
+        <mod>
+          <del rend="overwritten">i</del>
+          <add place="intralinear" hand="#pbs">I</add>
+        </mod>
+      </mod>t had then filled me with</line>
+    <line>a sublime extacy that gave wings</line>
+    <line>to the soul and allowed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">it</add>
+      </mod> to soar from</line>
+    <line>the <mod>
+        <del rend="strikethrough">lower</del>
+        <add place="superlinear" hand="#pbs">obscure</add>
+      </mod> world to light &#x26; joy. The</line>
+    <line>sight of the awful &#x26; majestic in</line>
+    <line>nature had indeed always the effect</line>
+    <line>of <mod>
+        <del rend="strikethrough">tranquillizing the</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">solemnizing</add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my</add>
+      </mod> mind &#x26; causing</line>
+    <line>me to forget the <del rend="strikethrough">the</del> passing cares</line>
+    <line>of life. I determined to go <mod>
+        <del rend="strikethrough">f</del>
+        <del rend="strikethrough">by myself</del>
+        <add place="superlinear">alone</add>
+      </mod></line>
+    <line>for I was well acquainted with the</line>
+    <line>path and the presence of another</line>
+    <line><mod>
+        <del rend="strikethrough">had the effect of</del>
+        <add place="superlinear">would</add>
+      </mod> destroy<del rend="strikethrough">ing</del> the <del rend="strikethrough"
+      >solitary</del></line>
+    <line>solitary grandeur of the scene.<unclear unit="chars" extent="1"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The ascent <mod>
+        <del rend="strikethrough">to the mountain</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">is</add>
+      </mod> pre</line>
+    <line>cipitous <mod>
+        <del rend="strikethrough">w</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">with</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">but <add place="superlinear">the path is</add> cut into</add>
+      </mod> continual and short</line>
+    <line>windings which enable<del rend="strikethrough">s</del>
+      <del rend="strikethrough">to</del> you</line>
+    <line>surmount the perpedicularity of</line>
+    <line>the mountains&#x2013; It is a scene terrifical</line>
+    <line>ly desolate. In a thousand places the</line>
+    <line>traces of the winter avelanche may</line>
+    <line>be perceived where trees lie broken</line>
+    <line>and str<retrace cause="clarify" hand="#pbs">ewed</retrace> on the ground; some</line>
+    <line>entirely destroyed others bent leaning</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0120.01">
+    <line><add hand="#pbs">produced</add>
+    </line>
+  </zone>
+</surface>
