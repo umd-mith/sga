@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0161" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0161.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>177</line>
+  </zone>
+  <zone type="main">
+    <line>fulfil my pilgrimage <mod>
+        <del rend="strikethrough">without them I should</del>
+        <anchor xml:id="c57-0161.01"/>
+      </mod></line>
+    <line>have sunk under my hardships <del rend="strikethrough">&amp; misery</del></line>
+    <line><del rend="strikethrough">but</del> during the day I was <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">thus</add>
+      </mod> sustained &amp; inspri</line>
+    <line>ted by the hope of night; <mod>
+        <del rend="strikethrough">&amp; sleep &#x2013; I then</del>
+        <add hand="#pbs" place="superlinear">for in sleep I</add>
+      </mod> saw</line>
+    <line>my friends my wife &amp; my beloved country</line>
+    <line>again I saw the benevolent countenance</line>
+    <line>of my <del rend="strikethrough"><unclear reason="illegible">b</unclear></del>
+      father,&#x2013; heard the silver <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">t</add>
+      </mod>ones of</line>
+    <line>my Elizabeths voice and beheld Clerval</line>
+    <line>enjoying health &amp; youth &#x2013; Often when</line>
+    <line>wearied by a toilsome march I persua</line>
+    <line>ded myself that I was <del rend="strikethrough">then</del> dreaming <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">until night should come</add>
+      </mod> &amp;</line>
+    <line>that <del rend="strikethrough">reality</del> I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">should then</add>
+      </mod> enjoy<del rend="strikethrough">ed</del> reality <del rend="strikethrough">when I was
+        again</del></line>
+    <line>in the arms of my dearest friends&#x2013;What</line>
+    <line>agonizing fondness did I feel for them&#x2013;how</line>
+    <line>did I cling to their dear forms as <add place="superlinear" hand="#pbs">sometimes</add>
+      they <mod spanTo="#c57-0161.10"/><add place="sublinear"><metamark function="insert"
+          >^</metamark></add>
+      <mod>
+        <del rend="strikethrough"><unclear reason="illegible">pursed</unclear></del>
+        <add place="superlinear">haunted</add>
+      </mod>
+      <add place="sublinear" hand="#pbs">even</add></line>
+    <line><anchor xml:id="c57-0161.03"/><del rend="strikethrough">my <mod>
+          <del rend="overwritten">m</del>
+          <add place="intralinear">d</add>
+        </mod>ay</del>
+      <del rend="strikethrough">as well as night dreams</del><anchor xml:id="c57-161.10"/> and
+      per</line>
+    <line>suade myself that they still lived. At such</line>
+    <line>moments the vengeance that burned</line>
+    <line>within<del rend="strikethrough">g</del> me died in my heart and I pursued</line>
+    <line>my path towards the destruction of the d&#xE6;</line>
+    <line>mon more as a task enjoined by heaven, <add><metamark function="displacement"
+          xml:id="c57-0161.05">X</metamark></add></line>
+    <line>than the ardent desire of my soul.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">What his feelings were whom I pur</line>
+    <line>sued I <mod>
+        <del rend="strikethrough">hardly</del>
+        <add place="superlinear">cannot</add>
+      </mod> know &#x2013; <del rend="strikethrough" instant="true">Yet</del>
+      <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>ometimes indeed he</line>
+    <line>left marks in writing on the barks of</line>
+    <line>trees or cut on stone that guided me,</line>
+    <line>&amp; instigated my fury &#x2014; My reign is not yet</line>
+    <line>over, <mod>
+        <del rend="strikethrough">he said</del>
+        <add place="superlinear" hand="#pbs">was legible</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">on</del>
+        <add hand="#pbs" place="superlinear">in</add>
+      </mod> one of these <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">inscriptions&#x2013;</add>
+      </mod>&#x2013; You live &amp;</line>
+    <line>my power is complete. Follow me &#x2013;I seek</line>
+    <line>the everlasting ices of the north where you</line>
+    <line>will feel the misery of <del rend="strikethrough" instant="true">go</del> cold &amp; frost
+        <mod spanTo="#c57-0161.11"/><delSpan spanTo="#c57-0161.07" rend="strikethrough"/>but</line>
+    <line>I shall not for cold is sweeter to me</line>
+    <line>than heat&#x2013;<anchor xml:id="c57-0161.07"/><anchor xml:id="c57-0161.08"/><anchor
+        xml:id="c57-0161.11"/> You will find near this place</line>
+    <line>if you follow not too tardily, a dead <mod>
+        <del rend="strikethrough">hair</del>
+        <add place="superlinear">hare</add>
+      </mod></line>
+    <line>eat &amp; be revived. <del rend="strikethrough" instant="true">for I</del> Come on my
+      enemy</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0161.01">
+    <addSpan spanTo="#c57-0161.02"/>
+    <line>Deprived of this</line>
+    <line>respite I should </line>
+    <anchor xml:id="c57-0161.02"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0161.03">
+    <addSpan spanTo="#c57-0161.04"/>
+    <line>the visions of</line>
+    <line>my waking</line>
+    <line>hours</line>
+    <anchor xml:id="c57-0161.04"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0161.05">
+    <addSpan spanTo="#c57-0161.06"/>
+    <line><metamark function="displacement">X</metamark> as the mechanical</line>
+    <line>impulse of</line>
+    <line>some power of which</line>
+    <line>I was uncon</line>
+    <line>-scious,</line>
+    <anchor xml:id="c57-0161.06"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0161.08">
+    <addSpan spanTo="#c57-0161.09"/>
+    <line> to which I am</line>
+    <line>impassive</line>
+    <anchor xml:id="c57-0161.09"/>
+  </zone>
+</surface>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0127" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0127.jp2"/>
+  <zone type="pagination" rend="bordered"><line>157</line></zone>
+  <zone type="library"><line>61</line></zone>
+  <zone type="main">
+    <line>love and humanity but am I not alone</line>
+    <line>miserably alone &#x2013; <delSpan spanTo="#c56-0127.01" rend="strikethrough"/>None to love
+      me but</line>
+    <line>all fly<anchor xml:id="c56-0127.01"/>
+      <del rend="strikethrough">and</del> You, my creator abhor me</line>
+    <line>What hope <mod>
+        <del rend="strikethrough">have I then from</del>
+        <add hand="#pbs" place="superlinear">can I gather from</add>
+      </mod> your</line>
+    <line>fellow creatures <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">who owe me nothing.</add>
+      </mod>&#x2014;They spurn and <mod>
+        <del rend="strikethrough">abhor</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">hate</add>
+      </mod></line>
+    <line>me. The desart mountains and mourful</line>
+    <line>glaciers are my refuge&#x2014;I have wandered</line>
+    <line>here many days&#x2013; The caves of ice <mod>
+        <del rend="strikethrough">are my</del>
+        <add place="superlinear">which</add>
+      </mod>
+      <unclear unit="chars" extent="1"/></line>
+    <line>I only do not fear are a dwelling to me and</line>
+    <line>the only one which man does not grudge</line>
+    <line><del rend="strikethrough">to me</del> &#x2014; <del rend="strikethrough">And food</del>
+      &#x2013; These bleak skies I </line>
+    <line>hail for they are kinder <add place="superlinear">to me</add> than <mod>
+        <del rend="strikethrough">man</del>
+        <add place="superlinear">your fellow <del rend="strikethrough">creatures</del><add
+            place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"
+            >beings</add></add>
+      </mod></line>
+    <line><mod spanTo="#c56-0127.02"/><del rend="strikethrough">and</del>
+      <del rend="strikethrough">But I no</del><add place="sublinear"
+        ><metamark function="insert">^</metamark></add>
+      <mod>
+        <del rend="strikethrough">They</del>
+        <del rend="strikethrough"><add place="superlinear">Man</add></del>
+      </mod>
+      <del next="#c56-0127.03" rend="strikethrough">hate<add place="intralinear">s</add> me and
+        i</del><del rend="unmarked">f</del></line>
+    <line><mod>
+        <del rend="strikethrough" xml:id="c56-0127.03">they</del>
+        <del rend="strikethrough"><add place="superlinear">he</add></del>
+      </mod><anchor xml:id="c56-0127.04"/><anchor xml:id="c56-0127.02"/> knew of my
+      existence <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">they</add>
+      </mod> would as you<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">do</add>
+      </mod></line>
+    <line>arm themselves for my destruction &#x2013; <del rend="strikethrough">And</del></line>
+    <line><mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>hall I not <add place="superlinear">then</add> hate them who abhor me</line>
+    <line>I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will</add>
+      </mod> keep no <del rend="strikethrough">temm</del> terms with <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my</add>
+      </mod> enemies <del rend="strikethrough">and</del></line>
+    <line>I am miserable <add place="intralinear">&#x26;</add> they shall share my</line>
+    <line>wretchedness&#x2013; Yet it is in your pow<mod>
+        <del rend="overwritten">re</del>
+        <add place="intralinear">er</add>
+      </mod></line>
+    <line>to recompense me and deliver them from</line>
+    <line>an evil which<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">it</add>
+        <anchor xml:id="c56-0127.06"/>
+      </mod>
+      <mod>
+        <del rend="strikethrough"><add place="superlinear">you</add></del>
+        <del rend="strikethrough">have bestowed on them</del>
+      </mod>.</line>
+    <line>Let your compassion and justice be</line>
+    <line>moved and do not disdain me. Listen</line>
+    <line>to my tale <unclear>!</unclear> when you have heard that</line>
+    <line>deny or comiserate<del rend="strikethrough">d</del> me as you shall</line>
+    <line>judge <add place="superlinear" hand="#pbs">that</add> I deserve&#x2013;<add
+        place="sublinear" hand="#pbs">.</add> But <mod>
+        <del rend="strikethrough">here</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">hear</add>
+      </mod> me &#x2013;The</line>
+    <line>guilty <del rend="strikethrough">may</del> are allowed by human laws,</line>
+    <line>bloody as they <mod>
+        <del rend="strikethrough">are</del>
+        <add place="superlinear" hand="#pbs">may be</add>
+      </mod>, to speak in their <add hand="#pbs" place="superlinear">own</add> defence</line>
+    <line><add hand="#pbs" place="superlinear">before they are condemned</add> Listen to me
+      Frankenstein <del rend="strikethrough">for you are</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0127.04">
+    <addSpan spanTo="#c56-0127.05" hand="#pbs"/>
+    <line>If the</line>
+    <line>multitude</line>
+    <line>of mankind</line>
+    <anchor xml:id="c56-0127.05"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0127.06">
+    <addSpan spanTo="#c56-0127.07"/>
+    <line> only remains</line>
+    <line>for you to</line>
+    <line>make so</line>
+    <line>great, that</line>
+    <line>not only you</line>
+    <line>&#x26; your family</line>
+    <line>but thousands</line>
+    <line>of others shall</line>
+    <line>be swallowed</line>
+    <line>up in the</line>
+    <line>whirlwinds of</line>
+    <line>its rage.</line>
+    <anchor xml:id="c56-0127.07"/>
+  </zone>
+</surface>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0047" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0047.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>72</line>
+  </zone>
+  <zone type="library">
+    <line>24</line>
+  </zone>
+  <zone type="main">
+    <line>"Do not trouble yourself, my kind</line>
+    <line>host," I replied, I have food, it is warmth</line>
+    <line>and rest only that I need.&#x2013;I sat down</line>
+    <line>and a silence ensued; I kn<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">e</add>
+      </mod>w very</line>
+    <line>well that every minute was precious</line>
+    <line>to me yet I remained irresolute <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in</add>
+      </mod> what</line>
+    <line><mod>
+        <del rend="strikethrough">to say</del>
+        <anchor xml:id="c57-0047.01"/>
+      </mod> when the old man <mod>
+        <del rend="strikethrough">began</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">addressed me</add>
+      </mod> &#x2013;"By</line>
+    <line>your language St<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>anger, I suppose you</line>
+    <line>are my countryman, are you french?"</line>
+    <line>"No," replied I but I was educated by a</line>
+    <line>french family and understand that</line>
+    <line>language only. <delSpan spanTo="#c57-0047.04" rend="strikethrough"/>I am unfortunate
+      and</line>
+    <line>a Str<anchor xml:id="c57-0047.04"/> I am now going to claim the</line>
+    <line>protection of some friends, whom I sincerely</line>
+    <line>love <mod>
+        <del rend="strikethrough">but</del>
+        <add place="superlinear">and</add>
+      </mod> of whose favour I have</line>
+    <line>some hopes." "Are these Germans"&#x2013; <del rend="strikethrough"><unclear unit="chars"
+          extent="1"/></del> Asked</line>
+    <line>De Lacey &#x2013; <del rend="strikethrough" instant="true">know</del>"No &#x2013;They are
+      french &#x2013;But let</line>
+    <line>us change the subject &#x2013;I am an unfortu</line>
+    <line>nate &amp; deserted creature. I look around and</line>
+    <line>I have no relation or fr<retrace cause="clarify">ie</retrace>nd <mod>
+        <del rend="overwritten">&#x2013;</del>
+        <add place="intralinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">on earth &#x2013;</add>
+      </mod> The<mod>
+        <add place="intralinear">se</add>
+        <del rend="strikethrough">kind</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">amiable</add>
+      </mod></line>
+    <line>people to whom I go, have never seem</line>
+    <line>me and know little of me. I am full</line>
+    <line>of fears, for if I fail there, I am an</line>
+    <line>outcast in the world for ever."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Do not despair, said the old man.</line>
+    <line>To be friendless is indeed to be unfortu</line>
+    <line>nate<unclear>:</unclear> but <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the hearts of</add>
+      </mod> men <del rend="strikethrough">are</del> when unpre</line>
+    <line>judiced by obvious self interrest, are ful<add place="intralinear">l</add></line>
+    <line>of brotherly love and charity. Rely therefore</line>
+    <line>on your hopes and if <delSpan spanTo="#c57-0047.05" rend="strikethrough"/>these
+      dispositions</line>
+    <line>of your friends are kind<anchor xml:id="c57-0047.05"/> these friends</line>
+    <line>are good and amiable &#x2013; do not <mod>
+        <del rend="strikethrough">fear</del>
+        <add place="superlinear">despair</add>
+        <del rend="strikethrough">for your</del>
+      </mod>
+    </line>
+  </zone>
+  
+  <zone type="left_margin" corresp="#c57-0047.01">
+    <addSpan spanTo="#c57-0047.03"/>
+    <line>manner to</line>
+    <line>comemmence</line>
+    <line>the interview</line>
+    <anchor xml:id="c57-0047.03"/>
+  </zone>
+</surface>

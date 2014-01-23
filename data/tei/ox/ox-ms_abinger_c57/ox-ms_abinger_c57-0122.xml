@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0122" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0122.jp2"/>
+  <zone type="pagination" rend="bordered"><line><damage type="inkblot">138</damage>
+    <add place="intralinear">138</add></line></zone>
+  <zone type="main">
+    <line>that class. her face was hard &#x26; rude like that</line>
+    <line>of per<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1" reason="illegible"/></del>
+        <add place="intralinear">s</add>
+      </mod>ons accustomed to see without sympa</line>
+    <line>thizing in sights of misery. <mod spanTo="#c57-0122.01"/><del rend="strikethrough">She
+        spoke with a</del></line>
+    <line><anchor xml:id="c57-0122.02"/><anchor xml:id="c57-0122.01"/>voice <mod>
+        <del rend="strikethrough">that</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">expressed</add>
+      </mod> her entire indifference &#x2013; She</line>
+    <line>addressed me in Eglish &#x26; the words struck</line>
+    <line>me as one that I had heard during <add place="superlinear" hand="#pbs">my</add>
+      suff</line>
+    <line>ering<add place="intralinear" hand="#pbs">s&#x2013;</add> Are you better now, <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>ir, said she.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I replied in the same language</line>
+    <line>with a feeble voice; I believe I am but</line>
+    <line>if it all be true &#x2013; if indeed I did not</line>
+    <line>dream I am sorry that I am still alive</line>
+    <line>to feel misery &#x26; horror.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">For that matter, replied the old</line>
+    <line><del rend="strikethrough">wan</del> woman, if you mean about</line>
+    <line>the gentleman that you murdered I</line>
+    <line>believe that it were better for you</line>
+    <line>if you were dead &#x2013; for I fancy it will</line>
+    <line>go hard with you, <del rend="strikethrough">but</del> you will be</line>
+    <line>hanged when the next session comes</line>
+    <line>on &#x2013; however that is none of my business</line>
+    <line>I am sent <del rend="strikethrough">for</del> to nurse you &#x26; get</line>
+    <line>you well&#x2013;I do <del rend="strikethrough">no more</del> my duty with</line>
+    <line>a safe conscience; it were well if every</line>
+    <line>body did the same.&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I turned <del rend="strikethrough" instant="true">fro</del> with lo<del
+        rend="strikethrough">o</del>athing from</line>
+    <line>the woman who could utter so un</line>
+    <line>feeling a speech to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">man</del>
+        <add place="superlinear" hand="#pbs">person</add>
+      </mod> just saved on</line>
+    <line>the very edge of death; but I felt languid</line>
+    <line>and unable to reflect on all that had</line>
+    <line>passed; <mod>
+        <del rend="strikethrough">It sometimes</del>
+        <add place="superlinear" hand="#pbs">The whole series of my life</add>
+      </mod> appeared as a dream</line>
+    <line>I sometimes <del rend="strikethrough">I</del> doubted if indeed it was not</line>
+    <line>all true but it never presented itself to</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0122.02">
+    <line><add>Her </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0115" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0115.jp2"/>
+  <zone type="pagination" rend="bordered"><line>131</line></zone>
+  <zone type="library"><line>58</line></zone>
+  <zone type="main">
+    <line>you will not be consulted as to your</line>
+    <line>quarters, I promise you&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><del rend="strikethrough" instant="true">My</del> I was exceedingly
+      surprized at receiv</line>
+    <line>ing so rude an answer from a stranger</line>
+    <line>and I was also disconcerted on perceiving th<add place="intralinear">e</add></line>
+    <line><delSpan spanTo="#c57-0115.01" rend="strikethrough"/>the countenance of this man an
+      his</line>
+    <line>companions<anchor xml:id="c57-0115.01"/> frow<mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">n</add>
+      </mod>ing and angry countenances</line>
+    <line>of his companions &#x2013; <del rend="strikethrough">Why</del> Why do you answer</line>
+    <line>me so roughly, I replied Surely <del rend="strikethrough">as En</del> it</line>
+    <line>is not the custom of Englishmen to receive</line>
+    <line>strangers <del rend="strikethrough"><add place="superlinear">in</add></del> so
+      inhospitably.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I do not know, said the man, what</line>
+    <line>the custom of the English may be but</line>
+    <line>it is the custom of the Irish to hate</line>
+    <line>villains. <milestone unit="tei:p"/><add place="intralinear"><metamark function="paragraph"
+          >[</metamark></add>While this strange dialogue</line>
+    <line>continued I perceived the croud <del rend="strikethrough">en</del> rapidly</line>
+    <line>encrease. Their <mod>
+        <del rend="strikethrough">countenances</del>
+        <add place="superlinear">faces</add>
+      </mod> expressed</line>
+    <line>a mixture of <del rend="strikethrough">ang</del> curiosity &#x26; anger</line>
+    <line><del rend="strikethrough">wit</del> which an<mod>
+        <del rend="overwritten">oy</del>
+        <add place="intralinear">n</add>
+      </mod>oyed &#x26; in so<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">me</add>
+      </mod> degree</line>
+    <line>alarmed me. I enquired the way to the inn</line>
+    <line>but no one replied &#x2013; I then moved foward</line>
+    <line>and <del rend="strikethrough">a buz arose</del> a murmuring noise</line>
+    <line>rose from the croud <del rend="strikethrough">the</del> as they followed</line>
+    <line>&#x26; surrounded me&#x2014; when an ill looking</line>
+    <line>man comming forward&#x2013; tapped me on</line>
+    <line>the shoulder &#x26; said &#x2013; Come, <del rend="strikethrough">yo</del> Sir, You</line>
+    <line>must follow me to Mr. Kirwins to give</line>
+    <line>an account of yourself.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Who is M<hi rend="sup">r</hi>. Kirwin, said I, &#x26; why am</line>
+    <line>I to give an account of myself.&#x2013;is not</line>
+    <line>this a free country?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Aye, Sir, replied the man, free enough</line>
+    <line>for honest folks. M<hi rend="sup">r</hi>. Kirwin is a magis</line>
+    <line>trate &#x26; you are to give an account of</line>
+  </zone>
+</surface>

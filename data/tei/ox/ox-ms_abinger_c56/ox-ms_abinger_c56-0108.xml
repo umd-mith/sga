@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0108" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0108.jp2"/>
+  <zone type="pagination" rend="bordered"><line>138</line></zone>
+ 
+
+  <zone type="main">
+    <line rend="indent3"><milestone unit="tei:head" spanTo="#c56-0108.08"/>Chap. 13<hi rend="underline"><hi rend="sup">th</hi></hi><anchor xml:id="c56-0108.08"/></line>
+    <line rend="indent1">Nothing is more painful <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">than</add>
+      </mod> when the</line>
+    <line>mind has been worked up by a <add place="intralinear">quick</add></line>
+    <line><del rend="strikethrough">S</del> succession of events, <mod spanTo="#c56-0108.05"
+        /><delSpan spanTo="#c56-0108.01" rend="strikethrough"/>for a dead calm</line>
+    <line>of inaction and certainty to<anchor xml:id="c56-0108.01"/><anchor xml:id="c56-0108.02"
+        /><anchor xml:id="c56-0108.05"/> follow<add place="intralinear" hand="#pbs">s</add>
+      <mod>
+        <del rend="strikethrough">which</del>
+        <add place="superlinear" hand="#pbs">and</add>
+      </mod></line>
+    <line>deprives the <mod>
+        <del rend="strikethrough">mind</del>
+        <add place="superlinear">soul</add>
+      </mod> both of hope or fear.</line>
+    <line>Justine died&#x2014; She rested. <mod>
+        <del rend="strikethrough">But</del>
+        <add place="superlinear">&#x26;</add>
+      </mod> I was alive</line>
+    <line>the blood flowed freely in my veins but</line>
+    <line>a weight of despair &#x26; remorse pressed</line>
+    <line>on my heart which nothing could remove&#x2013;</line>
+    <delSpan spanTo="#c56-0108.04" rend="vertical_line"/>
+    <line>our house was a house of mourning&#x2013;</line>
+    <line>My fathers health was deeply shaken by</line>
+    <line>the horror of the recent events; Eliza</line>
+    <line>beth was sad and desponding&#x2013; She no longer</line>
+    <line>took delight in her ordinary occupa</line>
+    <line>tions all pleasure seemed to her sacri</line>
+    <line>ledge towards the dead&#x2014; eternal woe</line>
+    <line>and tears she then thought was the</line>
+    <line>just tribute she ought to pay to inno</line>
+    <line>cence thus blasted &#x26; <del rend="strikethrough">destroyed</del><anchor
+        xml:id="c56-0108.04"/>
+      <retrace cause="clarify">S</retrace>leep fled</line>
+    <line>from my eyes. I wandered like an</line>
+    <line>evil spirit for I <mod>
+        <del rend="strikethrough">done</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">had committed deeds of</add>
+      </mod> mischief beyond</line>
+    <line>description <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">horrible,</add>
+      </mod> and <del rend="smear"><add place="superlinear">hor</add></del> more much more (I</line>
+    <line>persuaded my self) was yet in store.</line>
+    <line>Yet my heart overflowed with kind</line>
+    <line>ness and <mod>
+        <del rend="strikethrough">benevolence</del>
+        <add place="superlinear">goodness</add>
+      </mod> &#x2013; I had begun life</line>
+    <line>with benevolent intentions and thirsted for</line>
+    <line>the moment when I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">could</add>
+      </mod> put them in practise</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0108.02">
+    <addSpan spanTo="#c56-0108.03" hand="#pbs"/>
+    <line xml:id="c56-0108.06">of inaction &#x26; certainty</line>
+    <line><milestone unit="tei:seg" spanTo="#c56-0108.09" xml:id="c56-0108.07"/>the dead calmness<anchor xml:id="c56-0108.09"/>
+      <add><metamark function="insert">^</metamark>which</add><listTranspose>
+        <transpose>
+          <ptr target="#c56-0108.07"/>
+          <ptr target="#c56-0108.06"/>
+        </transpose>
+      </listTranspose></line><anchor xml:id="c56-0108.03"/>
+  </zone>
+</surface>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0013" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0013.jp2"/>
+  <zone type="pagination"><line>115</line></zone>
+  <zone type="library"><line>7</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c58-0013.03"/>Chapter VI<anchor xml:id="c58-0013.03"/></line>
+    <milestone unit="tei:p"/><line>It was eight o'clock when we landed; we walk</line>
+    <line>ed for a short time on the shore enjoying the</line>
+    <line>transitory light and then retired to the inn and con</line>
+    <line>templated the lovely scene of waters, woods and mountains</line>
+    <line>obscured in darkness yet still displaying the<mod>
+        <del rend="overwritten">y</del>
+        <add place="intralinear">ir</add>
+      </mod>
+      <del rend="strikethrough"><add place="superlinear">black</add></del></line>
+    <line><mod>
+        <del rend="strikethrough">lovely</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">black <del rend="strikethrough">black</del></add>
+      </mod> outlines. <milestone unit="tei:p"/><add place="intralinear" hand="#comp"><metamark
+          function="paragraph">[</metamark></add>The wind which had fallen in the</line>
+    <line>south now rose with great violence in the west. The</line>
+    <line>moon had reached her summit in the heavens and</line>
+    <line>was beginning to descend; the clouds swept across</line>
+    <line>it swifter than the flight of the vulture and dim</line>
+    <line>me<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">d</add>
+      </mod> her rays while the lake reflected the scene of the</line>
+    <line>busy heavens <del rend="strikethrough"><unclear reason="illegible">se</unclear></del>
+      rendered still busier <delSpan spanTo="#c58-0013.02" rend="strikethrough"/>made still</line>
+    <line>busier<anchor xml:id="c58-0013.02"/> by the restless waves that were beginning to</line>
+    <line>rise. Suddenly a heavy storm of rain descended.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I had been calm during the day but so soon as</line>
+    <line>night obscured the shapes of objects a thousand<del rend="strikethrough">s</del></line>
+    <line>fears arose in my mind. I was anxious at watchful</line>
+  </zone>
+</surface>

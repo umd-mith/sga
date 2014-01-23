@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0059" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0059.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>84</line>
+  </zone>
+  <zone type="library" rend="bordered">
+    <line>30</line>
+  </zone>
+  <zone type="main">
+    <line>Snow fell around me and the waters</line>
+    <line>were hardened, but I rested not&#x2014;A few</line>
+    <line>incidents now and then directed me</line>
+    <line>right but I often <del rend="strikethrough">de</del> wandered wide from</line>
+    <line>my path. <add place="superlinear"><metamark function="displacement" xml:id="c57-0059.01"
+          >X</metamark></add>
+      <mod>
+        <del rend="strikethrough">An</del>
+        <del rend="strikethrough">incident</del>
+        <add place="superlinear" hand="#pbs">but a circumstance</add>
+      </mod> that happened</line>
+    <line>when I arrived on the confines of Swit</line>
+    <line>zerland &#x2014; when the sun had recovered</line>
+    <line>a part of its heat &amp; the earth again</line>
+    <line>began to look green confirmed in a<mod spanTo="#c57-0059.03"/><add place="intralinear"
+        hand="#pbs">n</add></line>
+    <line><del rend="strikethrough">dreadful</del>
+      <add place="superlinear" hand="#pbs">especial</add><anchor xml:id="c57-0059.03"/> manner the
+      bitterness &amp;</line>
+    <line>horror of my feelings.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I generally rested <mod>
+        <del rend="strikethrough">through</del>
+        <add place="superlinear" hand="#pbs">during</add>
+      </mod> the</line>
+    <line>day, and travelled only when I was se</line>
+    <line>cured by night from the view of man.</line>
+    <line><del rend="strikethrough"><unclear unit="chars" extent="2"/></del> one morning however
+      finding</line>
+    <line>that my path lay through a deep</line>
+    <line>wood I ventured to continue my <mod spanTo="#c57-0059.04"/><del rend="strikethrough"
+        >way</del></line>
+    <line><anchor xml:id="c57-0059.05"/><anchor xml:id="c57-0059.04"/> after the sun had risen
+        <delSpan spanTo="#c57-0059.06" rend="strikethrough"/>high in</line>
+    <line>the heavens<anchor xml:id="c57-0059.06"/>. The day which was one</line>
+    <line>of the first of spring <del rend="strikethrough">and</del>
+      <del rend="strikethrough">even</del> cheered</line>
+    <line><anchor xml:id="c57-0059.07"/>me by the loveliness of its sun<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">shine</add>
+      </mod> &amp;</line>
+    <line>the gentleness of the breeze. &#x2013; I felt <mod spanTo="#c57-0059.08"/><del
+        rend="strikethrough">feelings</del></line>
+    <line><anchor xml:id="c57-0059.09"/><anchor xml:id="c57-0059.08"/>of softness and pleasure that
+      had</line>
+    <line>long appeared dead, revive within me;</line>
+    <line>half surprized with these new sensa</line>
+    <line>tions I allowed myself to be borne</line>
+    <line>away by them &amp; <del rend="strikethrough" instant="true">forg</del> forgetting
+      my</line>
+    <line>solitude &amp; deformity dared to be happy</line>
+    <line>tears of gentleness again bedewed my</line>
+    <line>cheeks and I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">even</add>
+      </mod> raised my humid eyes</line>
+    <line>with thankfullness towards the blessed</line>
+    <line>sun which bestowed <del rend="strikethrough">on me</del> such joy upon <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0059.01">
+    <addSpan hand="#pbs" spanTo="#c57-0059.02"/>
+    <line><metamark function="displacement">X</metamark></line>
+    <line>The agony of</line>
+    <line>my grief</line>
+    <line>allowed me no</line>
+    <line>respite, <del rend="strikethrough">N</del></line>
+    <line><del rend="strikethrough">No event of my</del></line>
+    <line>No incident</line>
+    <line>occurred from</line>
+    <line>which my rage</line>
+    <line>&amp; misery could</line>
+    <line>not extract its</line>
+    <line>food.</line>
+    <anchor xml:id="c57-0059.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0059.05">
+    <line><add>journey </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0059.07">
+    <line><add>even </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0059.09">
+    <line><add>emotions </add></line>
+  </zone>
+</surface>

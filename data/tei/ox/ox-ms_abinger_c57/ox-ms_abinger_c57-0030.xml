@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0030" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0030.jp2"/>
+  <zone type="pagination"><line>63</line></zone>
+  <zone type="main">
+    <line>of their fortune and <mod spanTo="#c57-0030.01"/>
+      <del next="#c57-0030.02" rend="strikethrough"/>exiled them for ever <add hand="#pbs"
+        place="superlinear" next="#c57-0030.03">condemned them to a</add></line>
+    <line><del rend="strikethrough" xml:id="c57-0030.02">from</del>
+      <add hand="#pbs" place="sublinear" xml:id="c57-0030.03">perpetual exile from</add><anchor
+        xml:id="c57-0030.01"/> their native country.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">They found a miserable assylum in</line>
+    <line>the cottage in Germany where I found them<damage type="tear"/></line>
+    <line>Felix <mod>
+        <del rend="strikethrough">heard</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">learned</add>
+      </mod> that the treacherous Turk for whom</line>
+    <line>he and his family <del rend="strikethrough" instant="true">suf</del> endured such
+      unheard</line>
+    <line>of oppression, on <mod>
+        <del rend="strikethrough">hearing</del>
+        <add hand="#pbs" place="superlinear">discovering</add>
+      </mod>
+      <del rend="strikethrough" next="#c57-0030.04">that he was a</del><add place="superlinear"
+        hand="#pbs" xml:id="c57-0030.05">was thus</add></line>
+    <line><del rend="strikethrough" xml:id="c57-0030.04">beggar had</del>
+      <del rend="strikethrough">w</del> that his deliver<add place="intralinear">er</add>
+      <mod>
+        <del rend="strikethrough">was</del>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">had been</add></del>
+        <anchor corresp="#c57-0030.05"/>
+      </mod>
+      <mod spanTo="#c57-0030.06"/><del rend="strikethrough" next="#c57-0030.07">poor &amp;</del>
+      <add place="superlinear" hand="#pbs" next="#c57-0030.08"> reduced to</add></line>
+    <!--Tricky bit here. "had been" was struck out and replaced with "was thus" above the previous line
+    Line reads "that his deliverer was thus reduced to poverty & impotence"-->
+    <line>
+      <del rend="strikethrough" xml:id="c57-0030.07">harmless</del><add hand="#pbs"
+        place="superlinear" xml:id="c57.0030.08">poverty &amp; impotence</add><anchor
+        xml:id="c57.0030.06"/>
+      <del rend="strikethrough">forgot</del>
+      <del rend="strikethrough"><unclear>his</unclear> prom</del> beca<mod>
+        <del rend="strikethrough">ming</del>
+        <add place="sublinear">me</add>
+      </mod> a traitor</line>
+    <line>to good feeling &amp; honour <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&amp; had</add>
+      </mod> quitted <del rend="strikethrough">his</del> Italy with</line>
+    <line>his daughter insultingly sending Felix a</line>
+    <line><del rend="strikethrough">miserable</del> pittance of money to aid him,</line>
+    <line>as he said, in some plan of future main</line>
+    <line>tenance.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Such were the events that <del rend="strikethrough" instant="true"
+        >sprea</del> preyed</line>
+    <line>on the heart of Felix and rendered him when</line>
+    <line>I first saw him, the most miserable</line>
+    <line>of his family. He could have endured poverty</line>
+    <line>and when <mod>
+        <del rend="strikethrough">it</del>
+        <del rend="strikethrough"><add place="superlinear">this</add></del>
+        <del rend="strikethrough">had been</del>
+      </mod> this distress had</line>
+    <line>been the meed of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">his</add>
+      </mod> virtue he would have</line>
+    <line>gloried in it. But the ingratitude of the</line>
+    <line>Turk &amp; the loss of his beloved Safie <delSpan spanTo="#c57-0030.09"
+        rend="strikethrough"/>preyed on</line>
+    <line>his heart<anchor xml:id="c57-0030.09"/>
+      <del rend="strikethrough" instant="true">were misfortunes</del> were misfor</line>
+    <line><damage type="tear"/>tunes more bitter &amp; irreperable.</line>
+    <line><damage type="tear"/><del rend="strikethrough">But</del><mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>he arrival of the Arrabian</line>
+    <line><damage type="tear"/><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">had</del>
+        <add hand="#pbs" place="superlinear">now</add>
+      </mod> infused new life into his soul.</line>
+    <line><damage type="tear"/><milestone unit="tei:p"/><metamark function="paragraph"
+      >[</metamark>When the news <mod>
+        <del rend="strikethrough">had arrived</del>
+        <add hand="#pbs" place="superlinear">reached her</add>
+      </mod> that</line>
+    <line><damage type="tear"/>Felix was deprived of his wealth</line>
+  </zone>
+</surface>

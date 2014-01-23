@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0055" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0055.jp2"/>
+  <zone type="pagination" rend="bordered"><line>85</line></zone>
+  <zone type="library"><line>26</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c56-0055.02"/>Chap. 7<anchor xml:id="c56-0055.02"/></line>
+    <line>This was the commencement of a nervous</line>
+    <line>fever which confined me for several</line>
+    <line> months. <del rend="strikethrough">And</del> during all this time Henry was</line>
+    <line>my only nurse. I afterwards learned that</line>
+    <line><del rend="strikethrough">kn</del> knowing my fathers advanced age</line>
+    <line>and unfitness for so long a journey &#x26;</line>
+    <line>wretched Elizabeth would be he</line>
+    <line>had spared them this <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">grief</add>
+      </mod> by <del rend="strikethrough">partly</del> conceal</line>
+    <line>ing the extent of my disorder. He knew</line>
+    <line>that I could not have a more kind</line>
+    <line>&#x26; attentive nurse than himself, and</line>
+    <line>firm in the hope he had of my recovery</line>
+    <line>he did not doubt that instead of doing</line>
+    <line>harm he performed the kindest action</line>
+    <line>that he could towards them.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">But I was in reality very ill &#x26;</line>
+    <line>surely nothing but the unbounded</line>
+    <line><del rend="strikethrough">affection</del> &#x26; unremitting attentions of</line>
+    <line>my friend could have restored me to</line>
+    <line>life. The form of the mo<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">n</add>
+      </mod>ster on whom</line>
+    <line>I had bestowed life was for ever before</line>
+    <line><add place="superlinear" hand="#pbs">my</add>eyes, and I raved <del rend="strikethrough"
+        >incessant</del> incessantly</line>
+    <line>concerning him. <add place="superlinear">Doubtless</add>My words <del rend="strikethrough"
+        >no</del>
+      <del rend="strikethrough">doubt</del></line>
+    <line>surprised Henry &#x2013; he at first believed</line>
+    <line>them the wanderings of my disordered</line>
+    <line>imagination but the <delSpan rend="strikethrough" spanTo="#c56-0055.01"
+      />continuance</line>
+    <line>and<anchor xml:id="c56-0055.01"/> per<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear" hand="#pbs">t</add>
+      </mod>inacity with which I conti</line>
+    <line>nually recurred to the same subject</line>
+  </zone>
+</surface>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0170" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0170.jp2"/>
+  <zone type="pagination" rend="bordered"><line>186</line></zone>
+  <zone type="main">
+    <line>that they <mod>
+        <del rend="strikethrough">were</del>
+        <add place="superlinear" hand="#pbs">are</add>
+      </mod> not the creations of his</line>
+    <line>fancy but the real beings <mod spanTo="#c57-0170.06"/><del rend="strikethrough">that
+        he</del>
+      <del rend="strikethrough">saw</del></line>
+    <line><anchor xml:id="c57-0170.01"/><del rend="strikethrough">and conversed with</del><anchor
+        xml:id="c57-0170.02"/><anchor xml:id="c57-0170.06"/> &#x2013;This <add place="superlinear"
+        hand="#pbs">faith</add> g<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear" hand="#pbs">i</add>
+      </mod>ve<add place="intralinear" hand="#pbs">s</add> a solemni</line>
+    <line>ty to his reveries that <mod>
+        <del rend="strikethrough">made</del>
+        <add place="superlinear">render<del rend="smear">ed</del></add>
+      </mod> them <mod spanTo="#c57-0170.07"/><del rend="strikethrough">peculiar</del><del
+        rend="unmarked">ly</del></line>
+    <line><del rend="strikethrough">interresting.</del>
+      <add place="intralinear" hand="#pbs">to me, almost as imposing &#x26; inte</add></line>
+    <line><add place="interlinear" hand="#pbs">resting as truth.</add><anchor xml:id="c57-0170.07"
+      /></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Our conversations <mod>
+        <del rend="strikethrough">have</del>
+        <add place="superlinear" hand="#pbs">are</add>
+      </mod> not always</line>
+    <line><del rend="strikethrough">been</del> confined to his own history &#x26;
+      misfortunes&#x2013;</line>
+    <line><del rend="strikethrough" instant="true">and</del>
+      <mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">O</add>
+      </mod>n every point of general literature he</line>
+    <line>displays unbounded knowledge and a quick</line>
+    <line>&#x26; piercing apprehension. His eloquence is</line>
+    <line>forcible &#x26; touching nor can I hear him when</line>
+    <line>he narrates a pathetic incident or endea</line>
+    <line>vours to move the passions <add place="superlinear" hand="#pbs">of</add> pity &#x26; love
+      without</line>
+    <line>tears. What a glorious creature must <del rend="strikethrough" instant="true">this</del>
+      he</line>
+    <line>have been in his days of prosperity when</line>
+    <line>he is thus noble &#x26; godlike in ruin &#x2013; He seems</line>
+    <line>to feel his own worth &#x26; the greatness of</line>
+    <line>his fall. <del rend="strikethrough">I have felt, said he, great &#x26;</del></line>
+    <line>When younger, said he, I felt as if I was destin</line>
+    <line>ed for some great enterprize. My feelings</line>
+    <line>are profound but I possess<add place="sublinear">ed</add> a coolness of judge</line>
+    <line>ment that fitted me for <mod spanTo="#c57-0170.08"/><delSpan spanTo="#c57-0170.09"
+        rend="strikethrough"/>gr<mod>
+        <del rend="overwritten">an</del>
+        <add place="intralinear" hand="#pbs">eat</add>
+        <del rend="strikethrough">d</del>
+      </mod> enter</line>
+    <line>prises<anchor xml:id="c57-0170.09"/><anchor xml:id="c57-0170.04"/><anchor
+        xml:id="c57-0170.08"/>. This sentiment of the worth of my</line>
+    <line>nature supported me when others <add place="intralinear">would</add></line>
+    <line>have sunk for I deemed it criminal</line>
+    <line>to throw away in useless grief; those ta</line>
+    <line>lents that might be useful to my</line>
+    <line>fellow creatures &#x2013; When I reflected on the</line>
+    <line>work that I had compleated, no less a one</line>
+    <line>than the creation of a sensitive &#x26;</line>
+    <line>rational animal I could not rank my</line>
+    <line>self with the herd of common projectors.</line>
+    <line>But this feeling which supported me <del rend="strikethrough">only</del></line>
+    <line>now serves <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">only</add>
+      </mod> to <mod>
+        <del rend="strikethrough">sink</del>
+        <add place="superlinear" hand="#pbs">plunge</add>
+      </mod> me lower in <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod> dust&#x2014; All</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0170.01">
+    <line><del rend="strikethrough"><add>beheld </add></del></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0170.02">
+    <addSpan spanTo="#c57-0170.03" hand="#pbs"/>
+    <line>who visit</line>
+    <line>him from</line>
+    <line>the regions</line>
+    <line>of a</line>
+    <line>remoter world</line>
+    <anchor xml:id="c57-0170.03"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0170.04">
+    <addSpan spanTo="#c57-0170.05" hand="#pbs"/>
+    <line>illustrious</line>
+    <line>atchievements</line>
+    <anchor xml:id="c57-0170.05"/>
+  </zone>
+</surface>

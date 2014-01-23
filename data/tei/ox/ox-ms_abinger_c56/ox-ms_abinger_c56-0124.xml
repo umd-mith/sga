@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0124" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0124.jp2"/>
+  <zone type="pagination" rend="bordered"><line>154</line></zone>
+  <zone type="main">
+    <line>(<del rend="strikethrough">oh</del> sight tremendous and abhorred) that it</line>
+    <line>was the wretch whom I had <del rend="strikethrough">cr</del> created <delSpan
+        spanTo="#c56-0124.01" rend="strikethrough"/>and</line>
+    <line>who had caused me such deep misery<anchor xml:id="c56-0124.01"/>. I</line>
+    <line>trembled with rage <del rend="strikethrough">an</del> and horror <mod
+        spanTo="#c56-0124.02"/><del rend="strikethrough" next="#c56-0124.03">determin</del><add
+        place="superlinear" hand="#pbs">I</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0124.03">ing</del><add place="superlinear">resolv<mod>
+          <del rend="overwritten">in</del>
+          <add place="intralinear" hand="#pbs">ed</add>
+        </mod><del rend="unmarked">g</del></add><anchor xml:id="c56-0124.02"/> to wait his approach
+      &#x26; then close</line>
+    <line>with him in mortal combat. He ap-</line>
+    <line>proached; I <del rend="strikethrough">saw again that form from which</del></line>
+    <line><del rend="strikethrough"><unclear>I</unclear></del> His countenance bespoke bitter
+      anguish</line>
+    <line>combined with d<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>sdain and malignancy.</line>
+    <line>But I <mod>
+        <del rend="strikethrough">hardly</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">scarcely</add>
+      </mod> observed this&#x2013;anger and hatred</line>
+    <line><del rend="strikethrough">at f</del> had at first deprived me of utterance</line>
+    <line>and I recovered only to overwhelm him</line>
+    <line>with <del rend="strikethrough">express</del> words expressive of utter</line>
+    <line>detestation <del rend="strikethrough">and</del>
+      <del rend="strikethrough">re</del> and contempt &#x2013; "Devil"</line>
+    <line>I exclaimed &#x2013; "do you dare approach me</line>
+    <line>and do not <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">you</add>
+      </mod> dread the fierce vengeance</line>
+    <line>of my arm wreaked on you<add place="intralinear">r</add> miserable</line>
+    <line>head &#x2013; Begone vile insect or <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">rather</add>
+      </mod> Stay that</line>
+    <line>I may trample you to dust and oh that</line>
+    <line>I could with <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the <del rend="strikethrough">end</del></add>
+        <add place="superlinear" hand="#pbs">extinction of</add>
+      </mod> your miserable existence</line>
+    <line>restore those creatures whom you</line>
+    <line>have diabollicaly murdered"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"I expect<add hand="#pbs" place="intralinear">ed</add> this reception" said the
+      d&#xE6;mon</line>
+    <line>all men hate <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod> wretched &#x2013; how then</line>
+    <line>must <mod>
+        <del rend="strikethrough">O</del>
+        <add place="superlinear">I</add>
+      </mod> be hated who am miserable</line>
+    <line>beyond <mod>
+        <del rend="strikethrough">conception or</del>
+        <del rend="strikethrough">idea</del>
+        <add place="superlinear" hand="#pbs">all living things.</add>
+      </mod> &#x2013; Yet you</line>
+    <line><del rend="strikethrough">my</del> my creator hate me and spurn me</line>
+  </zone>
+</surface>

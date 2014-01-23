@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c56-0017" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0017.jp2"/>
+    <zone type="pagination" rend="#bordered"><line>47</line></zone>
+    
+    <zone type="library"><line>7</line></zone>
+    <zone type="main">
+        <line rend="center"><milestone unit="tei:head" spanTo="#c56-0017.04"/>Chapter <mod><del rend="overwritten">2</del><add place="intralinear">3</add></mod><anchor xml:id="c56-0017.04"/></line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">When I had attained the age of</line>
+        <line>seventeen my <mod>
+                <del rend="strikethrough">father</del>
+                <add place="superlinear">parents</add>
+            </mod> resolved that</line>
+        <line>I should <mod>
+                <del rend="strikethrough">go</del>
+                <del rend="strikethrough"> to</del>
+                <anchor xml:id="c56-0017.01"/>
+                <add place="superlinear" hand="#pbs">at</add>
+            </mod> the university of In-</line>
+        <line>golstadt. I had hitherto attended the</line>
+        <line>schools of Geneva, but my father thought</line>
+        <line>it necessary for the completion of my</line>
+        <line>education <del rend="strikethrough">that</del> that I should be</line>
+        <line><anchor xml:id="c56-0017.02"/>acquainted with other customs <mod>
+                <del rend="strikethrough">besides</del>
+                <add place="superlinear" hand="#pbs">than</add>
+            </mod></line>
+        <line>those of my native country. My depar</line>
+        <line>ture was therefore fixed <del rend="strikethrough">for</del> at an</line>
+        <line>early <mod>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">date.</add>
+            </mod> But before the day resolved</line>
+        <line>upon could arrive the first mis</line>
+        <line>fortune of my life occurred: <del rend="strikethrough">as if</del> an</line>
+        <line>omen <add place="superlinear" hand="#pbs">as it were</add> of my future misery
+                <delSpan rend="strikethrough" spanTo="#c56-0017.03"/>if</line>
+        <line>I should prosecute my journey.<anchor xml:id="c56-0017.03"/></line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">>Elizabeth had caught the scar</line>
+        <line>let fever but <del rend="strikethrough"><unclear unit="chars" extent="1"/></del> her
+            illness was</line>
+        <line>not severe and she quickly recovered.</line>
+        <line>During her confinement <mod>
+                <del rend="strikethrough">mady</del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear"><del rend="strikethrough"><unclear>made</unclear></del>
+                    many</add>
+            </mod> ar</line>
+        <line>guments had been urged to persuade</line>
+        <line>my mother <mod>
+                <del rend="strikethrough">not</del>
+                <del rend="strikethrough">a</del>
+                <add place="superlinear" hand="#pbs">to refrain from</add>
+            </mod> to attend upon</line>
+        <line>her. She had yielded <mod>
+                <del rend="strikethrough">the</del>
+                <del rend="strikethrough">to these</del>
+                <add place="superlinear" hand="#pbs">to our entreaties,</add>
+            </mod> but</line>
+        <line>when she <del rend="strikethrough">ha</del> heard that her</line>
+        <line>favourite was recovering, she <mod>
+                <del rend="overwritten">w</del>
+                <add place="intralinear" hand="#pbs">c</add>
+            </mod>ould</line>
+        <line>no longer debar herself from her</line>
+        <line>society, and entered her sick cham</line>
+        <line>ber long before <mod>
+                <del rend="strikethrough">it was safe</del>
+                <add place="superlinear" hand="#pbs">the danger of infection was past</add>
+            </mod>. The</line>
+    </zone>
+    <zone type="left_margin" corresp="#c56-0017.01">
+        <line><add hand="#pbs">become a student </add></line>
+    </zone>
+    <zone type="left_margin" corresp="#c56-0017.02">
+        <line><add hand="#pbs">made </add></line>
+    </zone>
+</surface>

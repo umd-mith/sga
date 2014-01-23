@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0001" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0001.jp2"/>
+  <zone type="pagination"><line>99</line></zone>
+  <zone type="library"><line>1</line></zone>
+  <zone type="main">
+    <line>satisfied that nothing on earth will have the power</line>
+    <line>to interrupt my tranquility.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Do not let this letter disturb you; do not</line>
+    <line>answer it tomorrow or the next day or even untill</line>
+    <line>you come if it will give you pain. My uncle will</line>
+    <line>send me news of your health and if I see but</line>
+    <line>one smile on your lips when we meet occasioned</line>
+    <line>by this or any other <del rend="strikethrough">happ</del> exertion of mine I</line>
+    <line>shall need no other happiness;</line>
+    <line rend="right">E<hi rend="underline">liz<hi rend="double-underline">abeth</hi></hi>
+      <hi rend="underline">L<hi rend="double-underline">avenz</hi></hi>a</line>
+    <line>Geneva</line>
+    <line><del rend="strikethrough" instant="true">April</del> May 18<hi rend="underline"><hi
+          rend="sup">th</hi></hi>
+      <hi rend="underline">17&#x2014;&#x2014; </hi></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This letter revived in my memory what I had</line>
+    <line>before forgotten, the <del rend="strikethrough">tr</del> threat of the fiend.&#x2013; <hi
+        rend="underline">I will b</hi>e</line>
+    <line><hi rend="underline">with you on your wedding night!</hi> Such was my</line>
+  </zone>
+</surface>

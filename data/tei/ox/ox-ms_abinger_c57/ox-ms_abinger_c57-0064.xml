@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0064" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0064.jp2"/>
+  <zone type="pagination" rend="bordered"><line>89</line></zone>
+  <zone type="main">
+    <line>sworn eternal revenge &amp; you shall be</line>
+    <line>my first victim. The child still struggled</line>
+    <line>&amp; loaded me with<del rend="strikethrough">e</del> epithets which carried</line>
+    <line>despair to my heart &#x2013; I grasped his t<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">h</add>
+      </mod>roat</line>
+    <line>to silence him &amp; in a moment he lay</line>
+    <line>dead at my feet.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I gazed on my victim and my heart</line>
+    <line>swelled with exultation and hellish</line>
+    <line>triumph &#x2014; <del rend="strikethrough">I</del> clapp<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear">ing</add>
+      </mod> my hands <del rend="strikethrough">&amp;</del> I exclaimed</line>
+    <line>I <mod>
+        <del rend="strikethrough">too</del>
+        <add place="superlinear" hand="#pbs">too</add>
+      </mod> can <mod>
+        <del rend="strikethrough">destroy</del>
+        <add place="superlinear" hand="#pbs">make desolate.</add>
+      </mod> &#x2013; My enemy is not impreg</line>
+    <line>nable; this death will carry despair to</line>
+    <line>him &amp; a thousand thousand others <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">miseries</add>
+      </mod></line>
+    <line><del rend="strikethrough">will d</del> shall torment &amp; destroy him.</line>
+    <line>As I fixed my eyes on the child I saw</line>
+    <line><anchor xml:id="c57-0064.01"/>thing glittering on his breast &#x2013; I took
+      it</line>
+    <line>I was the portrai<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> of a most lovely woman.</line>
+    <line>In spite of my malignity <del rend="strikethrough">and horro</del> it</line>
+    <line>softened and attracted me. for a few</line>
+    <line>moments I gazed with delight on her</line>
+    <line>dark <mod>
+        <del rend="strikethrough">black</del>
+        <add place="superlinear" hand="#pbs">deep</add>
+      </mod> eyes &amp; lovely lips but</line>
+    <line>presently my rage returned: I remembered</line>
+    <line>that I was for ever deprived of the</line>
+    <line>delights such <del rend="strikethrough"><unclear>ba</unclear></del> beautiful
+      creatures</line>
+    <line>could bestow &#x2013; and that <del rend="strikethrough"><add place="superlinear">the
+          cont</add></del> she whose</line>
+    <line>resemblance I contemplated <del rend="strikethrough">wh</del> would,</line>
+    <line><del rend="strikethrough">have</del>
+      <del rend="strikethrough">ch</del> in regarding me have, changed</line>
+    <line>that air of divine benignity to one of</line>
+    <line>horror &amp; detestation.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Can you wonder that such</line>
+    <line>thoughts transported me with rage?</line>
+    <line>I only wonder that at that moment</line>
+    <line>instead of venting my sensations in</line>
+    <line>useless exclamations &amp; agony I did not</line>
+    <line>rush among mankind and perish</line>
+    <line>in the attempt to destroy them.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0064.01">
+    <line><add>some</add></line>
+  </zone>
+</surface>

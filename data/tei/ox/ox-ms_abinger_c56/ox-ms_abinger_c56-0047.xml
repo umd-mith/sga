@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0047" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0047.jp2"/>
+  <zone type="pagination"><line>77</line></zone>
+  <zone type="library"><line>22</line></zone>
+  <zone type="main">
+    <line>to change and I thought that I held</line>
+    <line>the corpse of my dead mother in my arms<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear" hand="#pbs">:</add>
+      </mod></line>
+    <line><mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod> shroud envolepped her form &#x26; I saw</line>
+    <line>the grave worms crawling in the folds of</line>
+    <line>the flannel; I started <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">from my sleep</add>
+      </mod> with horror, a</line>
+    <line><del rend="strikethrough">when I saw</del> cold dew covered my forehead</line>
+    <line>my teeth <del rend="strikethrough">ah</del> chattered and every limb</line>
+    <line><mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">became</add>
+      </mod> convul<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">s</add>
+      </mod>ed, when, by the dim and</line>
+    <line>yellow light of the moon as it forced</line>
+    <line>its way through the window shutters, I</line>
+    <line>beheld the wretch &#x2014; the miserable</line>
+    <line>monster whom I had created; he hel<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">d</add>
+      </mod></line>
+    <line>up the curtain, and his eyes<add place="superlinear" hand="#pbs">&#x2014;</add>; if
+      eyes</line>
+    <line>they may be called,<add place="superlinear">&#x2014;</add> were fixed on
+      me&#x2013;His</line>
+    <!--em-dashes above "eyes" and "called" possibly meant to replace punctuation. -->
+    <line>jaws opened and he muttered <del rend="strikethrough"><add place="superlinear" hand="#pbs"
+          >in</add></del> some <mod>
+        <del rend="strikethrough">words</del>
+        <anchor xml:id="c56-0047.01"/>
+      </mod></line>
+    <line>while a grin wrinkled his cheeks. He</line>
+    <line>might have spoken but I did not</line>
+    <line>hear &#x2014; one <del rend="strikethrough">had</del> hand was stretched out</line>
+    <line>to detain me but I escaped and <del rend="strikethrough">ran</del></line>
+    <line>rushed down <mod>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">the</add></del>
+      </mod> stair<mod>
+        <retrace cause="fix" hand="#pbs">s</retrace>
+        <del rend="strikethrough"><add place="intralinear" hand="#pbs">case</add></del>
+      </mod> I took refuge in</line>
+    <line>a court-yard belonging to the house</line>
+    <line>which I inhabited; where I remained</line>
+    <line><anchor xml:id="c56-0047.03"/>the rest of the night walking up and</line>
+    <line>down in the greatest agitation; listen</line>
+    <line>ing attentively, catching and fearing each</line>
+    <line>sound as if it were to announce the</line>
+    <line>arrival of the demoniacal corpse to</line>
+    <line>which I had so miserabl<mod>
+        <del rend="overwritten">e</del>
+        <add hand="#pbs" place="intralinear">y</add>
+      </mod> given life.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Oh! no mortal could support</line>
+    <line>the horror of that countenance. A</line>
+    <line>mummy <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">again</add>
+      </mod> endued with <mod>
+        <del rend="strikethrough">life</del>
+        <add place="superlinear" hand="#pbs">animation</add>
+      </mod> could not be</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0047.01">
+    <addSpan hand="#pbs" spanTo="#c56-0047.02"/>
+    <line>inarticulate</line>
+    <line>sounds</line><anchor xml:id="c56-0047.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0047.03">
+    <line><add hand="#pbs">during </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0071" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0071.jp2"/>
+  <zone type="pagination" rend="bordered"><line>96<add place="intralinear">A</add></line></zone>
+  <zone type="library"><line>36</line></zone>
+  <zone type="main">
+    <line><del rend="strikethrough">a powerful <hi rend="underline">cre</hi> being.</del> was a
+      being poss</line>
+    <line>essing faculties it would be vain to cope</line>
+    <line>with; <del rend="strikethrough">I thought</del>
+      <del rend="strikethrough">And</del>
+      <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>fter a long pause</line>
+    <line>of reflection I concluded that the justice</line>
+    <line>due both to him &amp; my <mod>
+        <del rend="overwritten"><unclear>p</unclear></del>
+        <add place="intralinear">f</add>
+      </mod>ellow creatures</line>
+    <line>demanded of me that I should comply</line>
+    <line>with his request. Turning to him</line>
+    <line>therefore I said.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I consent to your demand on</line>
+    <line>you solemn oath to quit Europe &amp;</line>
+    <line>every other place in the neighbourhood</line>
+    <line>of mam as soon as I shall deliver</line>
+    <line>into you hands a female who is to</line>
+    <line>accompany you in your exile.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I swear, he cried, by the sun &amp; by</line>
+    <line>the <mod>
+        <del rend="strikethrough">clouds</del>
+        <add place="superlinear">blue sky of heaven</add>
+      </mod> that while they exist you</line>
+    <line>shall never behold me. Depart</line>
+    <line>then to your home &amp; commence</line>
+    <line>your labours. I shall <del rend="strikethrough">th</del> watch</line>
+    <line>their progress with <del rend="strikethrough">utt</del> unutterable</line>
+    <line>anxiety and fear not but that when</line>
+    <line>you are ready for me <add place="superlinear" hand="#pbs"><unclear>but</unclear>
+        that</add> I shall appear.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Saying this he suddenly quitted me</line>
+    <line>fearful perhaps of any change in</line>
+    <line>my sentiments. I saw him descend</line>
+    <line>the mountain with greater speed than</line>
+    <line>the flight of the eagle and quickly lost</line>
+    <line>him among the undulations of the</line>
+    <line>sea of ice.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">His tale had occupied the whole day</line>
+    <line>and the sun was upon the <del rend="strikethrough">ve</del> verge</line>
+    <line>of the horizon when he departed. I knew</line>
+    <line>that I ought to hasten to descend to the</line>
+    <line>valley as I should soon be encompassed</line>
+  </zone>
+</surface>

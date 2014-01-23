@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0068" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0068.jp2"/>
+  <zone type="pagination"><line>98</line></zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">M<hi rend="sup">r</hi>. Krempe was not <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">equally</add>
+      </mod> docile <mod spanTo="#c56-0068.01"/><del rend="strikethrough">yet</del><add
+        place="superlinear">&#x26;</add>
+      <delSpan spanTo="#c56-0068.02" rend="strikethrough"/>weak</line>
+    <line>as my illness had made me<anchor xml:id="c56-0068.02"/><anchor xml:id="c56-0068.03"
+        /><anchor xml:id="c56-0068.01"/> his harsh</line>
+    <line>blunt econiums gave me even more</line>
+    <line>pain <del rend="strikethrough">that</del> than the benevolent</line>
+    <line>approbation of M. Waldman &#x2014;"Dam<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod></line>
+    <line>"the fellow," cried he "Why M<hi rend="sup">r</hi>. Clerval</line>
+    <line>"I tell you he has <del rend="strikethrough">beaut</del> outstript</line>
+    <line>"us all&#x2013; ay stare if you please but</line>
+    <line>"it is nevertheless true &#x2013; A youngster</line>
+    <line>"who but <del rend="strikethrough">two</del> three years ago believed</line>
+    <line>"Cornelius Agrippa <mod>
+        <del rend="strikethrough">to be</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">as firmly as the</add>
+      </mod> gospel has</line>
+    <line>"now set himself at the head of</line>
+    <line>"the university &#x26; if he is not soon</line>
+    <line>"pulled down we shall all be out</line>
+    <line>"of countenance.&#x2014;Aye, Aye, continued</line>
+    <line>"he observing my <mod>
+        <del rend="strikethrough">countenance</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">face</add>
+      </mod> ex</line>
+    <line>"pressive of suffering "Mr. <del rend="strikethrough">f</del> Franken-</line>
+    <line>"stein is modest an excellent quality in</line>
+    <line>"a young man; Young men should be</line>
+    <line>"diffident of themselves you know M<hi rend="sup"><hi rend="underline">r</hi></hi></line>
+    <line>"Clerval; I was myself when young but</line>
+    <line>"one soon grows out of that."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">M<hi rend="sup"><hi rend="underline">r</hi></hi> Krempe
+      had now commenced</line>
+    <line><mod>
+        <del rend="strikethrough">the subject of his own praise</del>
+        <add place="superlinear">an eulogy on himself</add>
+      </mod> and that</line>
+    <line>happily turned the conversation</line>
+    <line>from the subject that was so <mod>
+        <del rend="strikethrough">painful</del>
+        <add place="superlinear" hand="#pbs">agonizing</add>
+      </mod></line>
+    <line>to me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Clerval was no natural philosopher.</line>
+    <line>His imagination was too vivid for</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0068.03">
+    <addSpan spanTo="#c56-0068.04" hand="#pbs"/>
+    <line>in my then</line>
+    <line>condition of</line>
+    <line>almost in-</line>
+    <line>-supportable</line>
+    <line>sensitiveness</line>
+    <anchor xml:id="c56-0068.04"/>
+  </zone>
+</surface>

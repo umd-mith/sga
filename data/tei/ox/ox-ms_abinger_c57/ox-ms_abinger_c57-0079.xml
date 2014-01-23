@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0079" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0079.jp2"/>
+  <zone type="pagination" rend="bordered"><line><unclear>101</unclear></line></zone>
+  <zone type="main">
+    <delSpan rend="vertical_line" spanTo="#c57-0079.01"/>
+    <line>to my slavery.<add place="superlinear"><metamark>X</metamark></add>
+      <del rend="strikethrough">But <unclear unit="chars" extent="1"/></del>
+      <del rend="strikethrough">But</del>
+      <mod>
+        <del rend="strikethrough">could</del>
+        <del rend="strikethrough"><add place="superlinear">should</add></del>
+      </mod> I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">should</add>
+      </mod> leave</line>
+    <line><del rend="strikethrough">Geneva &amp; the fiend beli</del>
+      <del rend="strikethrough">&amp;</del> my friends</line>
+    <line>unconscious of the existence of their</line>
+    <line>enemy &amp; unprotected from his attacks</line>
+    <line>exasperated as he might be by my depar</line>
+    <line>ture &#x2013; But then he had promised to</line>
+    <line>follow me every where &amp; might</line>
+    <line>he not accompany me to England&#x2013;the</line>
+    <line>thought was dreadful in itself but</line>
+    <line>soothing inasmuch as my friends would</line>
+    <line>be in safety. <del rend="strikethrough"><add place="superlinear"><metamark
+            function="displacement" xml:id="c57-0079.02">X</metamark></add></del> The thoughts
+      occurred</line>
+    <line>rapidly to me &amp; I answered my fa</line>
+    <line>ther with eagerness that I should</line>
+    <line>be delighted to visit <del rend="strikethrough" instant="true">Engl</del> England</line>
+    <line>with Clerval and that <del rend="strikethrough">travel</del> the</line>
+    <line>idea of travelling was inchanting to</line>
+    <line>me.</line>
+    <milestone unit="tei:p"/>
+    <delSpan rend="vertical_line" spanTo="#c57-0079.04"/>
+    <line rend="indent2">Your <del rend="strikethrough" instant="true">journey</del> travels, said
+      my</line>
+    <line>father, will occupy the space of</line>
+    <line>two years&#x2013; on your return you</line>
+    <line><del rend="strikethrough">shall be united to your cousin</del></line>
+    <anchor xml:id="c57-0079.04"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Our plan was soon arranged.</line>
+    <line>I should travel to Strasburgh where</line>
+    <line>Clerval would join me &amp; we</line>
+    <line>should proceed down the Rhine</line>
+    <line>together.<del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
+            >tow</unclear></add></del> Some short time would</line>
+    <line>be spent in the towns of Holland</line>
+    <line>&amp; many months in England. We were</line>
+    <line>to return by france &amp; it was sup</line>
+    <line>posed that this tour would occupy</line>
+    <line>the space of two years. My father</line>
+    <line>pleased himself with the reflection</line>
+    <line>that I should be united to Eliza</line>
+    <line>beth immediately on my return</line>
+    <anchor xml:id="c57-0079.01"/>
+  </zone>
+  <zone type="left_margin">
+    <line><add><metamark function="sequence">3</metamark></add></line>
+  </zone>
+
+  <zone type="left_margin">
+    <line><add><metamark>X</metamark></add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0079.02">
+    <addSpan hand="#pbs" spanTo="#c57-0079.03"/>
+    <line>the thought of</line>
+    <line>the possibility<add><metamark function="sequence">5</metamark></add></line>
+    <line>of the reverse</line>
+    <line>must have</line>
+    <line>been dreadful</line>
+    <anchor xml:id="c57-0079.03"/>
+  </zone>
+
+  
+</surface>

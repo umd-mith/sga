@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0126" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0126.jp2"/>
+  <zone type="pagination"><line>156</line></zone>
+  <zone type="main">
+    <line>powe<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>ful than thyself my height is superior</line>
+    <line>to yours my joints more supple. But I</line>
+    <line><mod>
+        <del rend="strikethrough">do not wish to <unclear>trave</unclear></del>
+        <del rend="strikethrough">you</del>
+        <add place="superlinear" hand="#pbs">will not be tempted to set myself in opposition to
+          thee,</add>
+      </mod> I am thy</line>
+    <line>creature and <del rend="strikethrough">I</del> wi<mod>
+        <del rend="overwritten">th</del>
+        <add place="intralinear">ll</add>
+      </mod> be <add place="superlinear" hand="#pbs">even</add> mild and docile</line>
+    <line><mod>
+        <del rend="strikethrough">to you</del>
+        <anchor xml:id="c56-0126.01"/>
+      </mod>, <mod>
+        <del rend="strikethrough">my gentle master</del>
+        <add hand="#pbs" place="superlinear">my natural master &#x26; king</add>
+      </mod>, &#x2013; if <mod>
+        <del rend="strikethrough">you</del>
+        <add hand="#pbs" place="superlinear">thou</add>
+      </mod> will</line>
+    <line>perform <mod>
+        <del rend="strikethrough">your</del>
+        <add place="superlinear" hand="#pbs">thy part also, the which thou owest me</add>
+      </mod> dut<mod>
+        <del rend="overwritten">y</del>
+        <add place="intralinear" hand="#pbs">ies</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">towards</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+      </mod> me. Oh Fran</line>
+    <line>kenstein, do not <add place="intralinear" hand="#pbs">be</add> equitable to every
+      other</line>
+    <line>and trample upon me <add place="superlinear" hand="#pbs">alone</add> to whom thy</line>
+    <line>justice &#x26; even <mod>
+        <del rend="strikethrough">mere</del>
+        <del rend="strikethrough">charity</del>
+        <add place="superlinear" hand="#pbs">they clemency, thy affection</add>
+      </mod> is most</line>
+    <line>due. <del rend="strikethrough">Remb</del> Remember that I am</line>
+    <line>thy creature &#x2013; <add place="superlinear" hand="#pbs">I ought to be</add> Thy Adam
+      &#x2013; <mod>
+        <del rend="strikethrough">or</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">but I am</add>
+      </mod> rather the</line>
+    <line>fallen angel <mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear" hand="#pbs">whom thou driven from joy for no misdeed;</add>
+      </mod> every where I see</line>
+    <line>bliss <add place="superlinear" hand="#pbs">from</add> whi<mod>
+        <del rend="overwritten">ile</del>
+        <add place="intralinear" hand="#pbs">ch</add>
+      </mod> I alome am irrecoverably</line>
+    <line><mod>
+        <del rend="strikethrough">wretched</del>
+        <anchor xml:id="c56-0126.02"/>
+      </mod>. I was benevolent and good:</line>
+    <line>misery made me a fiend. Make me</line>
+    <line>happy and I shall again be virtuous</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Begone replied I &#x2013; I <del rend="strikethrough"
+        >cannot and</del></line>
+    <line>will not hear you. there can be no</line>
+    <line>community between you and I&#x2013; We are</line>
+    <line>enemies &#x2014; Begone or <del rend="strikethrough">allhow</del> let us try</line>
+    <line>our streng<del rend="strikethrough">h</del>th in a fight in which</line>
+    <line>one must fall."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">><del rend="strikethrough">How</del> How can I move you?
+      said the</line>
+    <line>fiend&#x2014; Will no entreaties cause you</line>
+    <line>to turn a favourable eye upon thy</line>
+    <line>creature who implores thy goodness and</line>
+    <line>compassion &#x2013; Believe me, Frankenstien</line>
+    <line>I was benevolent &#x2014;my soul glowed with</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0126.01">
+    <line><add hand="#pbs">to <add place="superlinear" hand="#pbs"
+        >thee</add></add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0126.02">
+    <line><add hand="#pbs">excluded</add></line>
+  </zone>
+</surface>

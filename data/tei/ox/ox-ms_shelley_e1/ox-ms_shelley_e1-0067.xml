@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0067" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0067.jp2"/>
+  <zone type="library">33</zone>
+  <zone type="main">
+    <line rend="center">Prometheus</line>
+    <line>I see the curse on gestures <mod>
+        <del rend="strikethrough"><hi rend="underline">cruel</hi></del>
+        <add place="superlinear"><del rend="strikethrough">calm</del></add>
+        <add place="superlinear"><unclear extent="3"/>proud</add>
+      </mod> &#x26; cold</line>
+    <line><metamark function="insert"
+        ><!--This mark (equals sign/less than sign) I believe corresponds to the same one in e1-0066.xml which seems to indicate that these lines
+    should be inserted into the corresponding spot in e1-0066.xml, between Ione's speech and that of the Phantasm.--></metamark><del
+        rend="strikethrough">And looks of firm defiance, &#x26;</del></line>
+    <line><del rend="strikethrough">Written as on a scroll...yet speak o speak</del></line>
+    <line>And looks of <del rend="strikethrough">des</del> firm defiance, &#x26; calm hate</line>
+    <line>And such despair as mocks itself with smiles</line>
+    <line>Written as on a scroll...yet speak&#x2013;o speak..</line>
+    <!--Below the final line on this page there's a long curving line and a mark that almost looks like a comma but clearly isn't; I wasn't sure how to encode those-->
+  </zone>
+</surface>

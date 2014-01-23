@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0035" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0035.jp2"/>
+  <zone type="pagination"><line>137</line></zone>
+  <zone type="library"><line>18</line></zone>
+  <zone type="main">
+    <line>ed the windings of the Rhone but vainly; the blue</line>
+    <line>Mediterranean appeared and by a strange chance</line>
+    <line>I saw the fiend enter by night and hide himself</line>
+    <line><add place="superlinear">in a vessel </add>bound for the black sea and took my passage
+      in</line>
+    <line>the same ship but he escaped I know not how;</line>
+    <milestone unit="tei:p"/><line><add place="intralinear" hand="#comp"
+        ><metamark>[</metamark></add>Amidst the wilds of Tartary and Russia although</line>
+    <line>he still evaded me I <del rend="strikethrough">e</del> have ever followed in his</line>
+    <line>tract. Sometimes the peasants <add place="intralinear">s</add>cared by <add
+        place="intralinear">t</add>his horrid</line>
+    <line>appar<add place="intralinear">i</add>tion informed me of his path; sometimes</line>
+    <line>he himself, who feared that if I lost all trace I should</line>
+    <line>despair and die, often left some mark to guide</line>
+    <line>me. The snows descended on my head and I saw the prin<add place="intralinear"
+      >t</add></line>
+    <line>of his huge step on the white plain. To you <delSpan rend="strikethrough"
+        spanTo="#c58-0034.01"/>who</line>
+    <line>are<anchor xml:id="c58-0034.01"/> first enterring on life <mod>
+        <del rend="strikethrough">an</del>
+        <add place="superlinear">to whom</add>
+      </mod> care is new <del rend="strikethrough">new</del>
+      <del rend="strikethrough">to you</del></line>
+    <line>and agony unknown; how can you <del rend="strikethrough">de</del> understand what</line>
+    <line>I have felt and still feel. Cold, want and fatigue were</line>
+    <line>the least pains which I was destined to endure; I was</line>
+    <line>cursed by some devil <mod>
+        <add place="sublinear" hand="#comp"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#comp">carried</add>
+      </mod> about with me my eternal</line>
+    <line>hell; yet still a spirit of good followed and directed</line>
+  </zone>
+</surface>

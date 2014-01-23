@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0060" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0060.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>85</line>
+  </zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <delSpan spanTo="#c57-0060.01" rend="vertical_line"/>
+    <line rend="indent1">As I continued my way in this mood I</line>
+    <line>heard a voices which forced me to conceal my</line>
+    <line>self. This I did in a small cave surrounded by</line>
+    <line>wood at the foot of which was a <mod>
+        <del rend="strikethrough"><unclear>la</unclear></del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">deep &amp; impetuous</add>
+      </mod> river &#x2013; I</line>
+    <line>presently discovered that the voices proceeded</line>
+    <line>from people who were on the rock which</line>
+    <line>formed the roof of the cavern &#x2013; They spoke a</line>
+    <line>language unknown to me &#x2013; when suddenly</line>
+    <line>I heard a noise and saw a <del rend="strikethrough" instant="true">woma</del> young
+      girl</line>
+    <line>fall from the precipiece into the river a</line>
+    <line><del rend="strikethrough" instant="true">and aloud</del> loud scream followed &amp; all
+      was quiet&#x2013;</line>
+    <line>I rushed from my hiding place &amp; dashing into</line>
+    <line>the river rescued the girl &amp; bore her to the</line>
+    <line>shore. She was senseless &amp; I endeavoured to</line>
+    <line>restore her to life when a man came sudden</line>
+    <line>ly from the woods and appeared aghas</line>
+    <anchor xml:id="c57-0060.01"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I continued to wind among the paths of the</line>
+    <line>wood untill I came to its <del rend="strikethrough" instant="true">skirts</del> boundary
+      which</line>
+    <line>was skirted a deep &amp; rapid river &#x2014; into which</line>
+    <line>many of the trees bent their branches now budding</line>
+    <line>with the fresh spring.&#x2013; Here I paused, not exact</line>
+    <line>ly knowing what course to pursue when I heard</line>
+    <line>voices that induced me to conceal myself under</line>
+    <line>the shade of cypress. <delSpan spanTo="#c57-0060.02" rend="strikethrough"/>A rustic
+      approached armed</line>
+    <line>with a gun and leading a young girl of about twelve</line>
+    <line>years of age When they came near me they turne</line>
+    <anchor xml:id="c57-0060.02"/>
+    <line>I was scarcely hid when a young girl came run</line>
+    <line>ning towards the <mod>
+        <del rend="strikethrough">river</del>
+        <add place="superlinear">spot where I was concealed</add>
+      </mod> &#x2013; laughing as if she had ran</line>
+    <line>from some one in sport &#x2013; She continued her</line>
+    <line>course along the precipitate sides of the river</line>
+    <line>when suddenly her foot slipt, &amp; she fell in<add place="intralinear">to</add></line>
+    <line>the rapid <mod>
+        <del rend="strikethrough">current</del>
+        <add place="superlinear">stream</add>
+      </mod>. I rushed from my hiding</line>
+    <line>place and with extreme labour from the</line>
+    <line>force of the current saved her, &amp; dragged her</line>
+    <line>to shore &#x2014; She was <del rend="strikethrough">sensell</del> senseless and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I</add>
+      </mod> endeavo</line>
+    <line>ured by every means in my power to restore</line>
+  </zone>
+</surface>

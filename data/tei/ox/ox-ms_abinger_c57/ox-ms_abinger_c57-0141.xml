@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0141" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0141.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>157</line>
+  </zone>
+  <zone type="library">
+    <line>71</line>
+  </zone>
+  <zone type="main">
+    <line>with me and for me. <del rend="strikethrough">When unhappy &amp;</del></line>
+    <line>When reason returned she would remonstrate</line>
+    <line>with me &amp; endeavour to inspire me with</line>
+    <line>resignation &#x2014;Ah it is well for the unfortunate</line>
+    <line>to be resigned&#x2013; But <del rend="strikethrough">th</del> for the guilty there
+      is</line>
+    <line>no peace: <del rend="strikethrough">&amp; tranquillity &amp;</del> the agonies of</line>
+    <line>remorse poison the luxury there other</line>
+    <line>wise is <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">sometimes found</add>
+      </mod> in indulging <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">in</add></del>
+      </mod> the excess of grief.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Soon after my arrival my father</line>
+    <line>spoke of my immediate marriage with</line>
+    <line>my cousin. I remained silent.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Have you then, said my father</line>
+    <line>some other attachment</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">None on earth <del rend="strikethrough">I replied</del> I love Eliza</line>
+    <line>beth and look forward to our union</line>
+    <line>with delight&#x2014;Let the day therefore be</line>
+    <line>named <delSpan rend="strikethrough" spanTo="#c57-0141.01"/>and I shall be happy when
+      it</line>
+    <line>arrives<anchor xml:id="c57-0141.01"/> and on it I will consecrate</line>
+    <line>my life or death to the happiness <del rend="strikethrough">to</del> of</line>
+    <line>my cousin.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My dear Victor, <del rend="strikethrough">said my father,</del></line>
+    <line>do not speak thus. Heavy misfortunes</line>
+    <line>have befallen us but let <del rend="strikethrough">us</del> us only</line>
+    <line>cling closer to what remains <del rend="strikethrough">and</del> and</line>
+    <line>transfer our love for those whom</line>
+    <line>we ha<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear" hand="#pbs">ve</add>
+      </mod> lost to those who <mod>
+        <del rend="strikethrough">now</del>
+        <add hand="#pbs" place="superlinear">yet</add>
+      </mod> live.</line>
+    <line>Our circle will be small but bound</line>
+    <line>close by the ties of affection &amp; mutual</line>
+    <line>misfortune&#x2014; And when time will have</line>
+    <line><mod>
+        <del rend="strikethrough">ameliorated</del>
+        <anchor xml:id="c57-0141.02"/>
+      </mod> your despair <del rend="strikethrough">&amp;</del> new &amp; dear</line>
+    <line>cares will be born to replace those</line>
+    <line><anchor xml:id="c57-0141.03"/>whom <mod>
+        <del rend="strikethrough">fate has</del>
+        <add place="superlinear" hand="#pbs">we have been so cruelly</add>
+      </mod> deprived <del rend="strikethrough">us of</del>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Such were the lessons of my</line>
+    <line>father but to me the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">remembrance of the</add>
+      </mod> threat returned</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0141.02">
+    <line><add hand="#pbs">softened</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0141.03">
+    <line><add hand="#pbs">of </add></line>
+  </zone>
+</surface>

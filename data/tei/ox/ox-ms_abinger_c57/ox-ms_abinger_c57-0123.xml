@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0123" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0123.jp2"/>
+  <zone type="pagination" rend="bordered"><line>139</line></zone>
+  <zone type="library"><line>62</line></zone>
+  <zone type="main">
+    <line>my mind with the face of reality.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><del rend="strikethrough">But</del>
+      <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>s the images that floated</line>
+    <line>before me became more distinct I grew</line>
+    <line>feverish; a darkness pressed around me<damage type="inkblot"><unclear unit="chars"
+          extent="1"/></damage></line>
+    <line><del rend="strikethrough">and</del> no person was near me who soothed</line>
+    <line>me with the gentle voice of love; no</line>
+    <line>dear hand supported me. The ph<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">y</add>
+      </mod>s<mod>
+        <del rend="overwritten"><mod>
+            <del rend="overwritten">i</del>
+            <add place="intralinear">y</add>
+          </mod></del>
+        <add place="intralinear">i</add>
+      </mod></line>
+    <line>cian came &#x26; prescribed medecines &#x26; the</line>
+    <line>old woman prepared them for me</line>
+    <line>but utter carelessness was visible in</line>
+    <line>the first &#x26; the <mod>
+        <del rend="strikethrough">marks</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">expression</add>
+      </mod> of brutality <mod>
+        <del rend="strikethrough">were</del>
+        <anchor xml:id="c57-0123.01"/>
+      </mod></line>
+    <line>strongly impressed on the visage of</line>
+    <line>the second &#x2013; <del rend="strikethrough">Besides</del> who could be</line>
+    <line>inte<del rend="strikethrough">r</del>rested in the fate of a murderer</line>
+    <line><del rend="strikethrough">none</del> but the hangman who would</line>
+    <line>gain his fee? <delSpan spanTo="#c57-0123.02" rend="strikethrough"/>if he recovered only
+      to</line>
+    <line>die by his hands.<anchor xml:id="c57-0123.02"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">These were my first reflections</line>
+    <line>but I soon learned that M<hi rend="sup">r</hi>.. Kir</line>
+    <line>win had shewn me extreme</line>
+    <line>kindness &#x2013; He had caused the best room</line>
+    <line>in the prison to be prepared for me,</line>
+    <line>(wretched indeed was the best) And it</line>
+    <line>was he who had provided a physician</line>
+    <line>&#x26; attendants for me. It is true he sel-</line>
+    <line>dom came to see me for although</line>
+    <line>he ardently desired to relieve the suffe</line>
+    <line>rings of every human creature he did</line>
+    <line>not wish to be present at the agonies</line>
+    <line>and miserable ravings of a murderer&#x2014;</line>
+    <line>He came therefore sometimes to see</line>
+    <line>that I was not neglected, but his visits</line>
+    <line><del rend="strikethrough">wh</del> were short &#x26; at <mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">l</add>
+      </mod>ong intervals.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">One day when I was gradually re</line>
+    <line>covering <mod>
+        <del rend="strikethrough">&#x26;</del>
+        <add place="superlinear" hand="#pbs">I was</add>
+      </mod> seated in a chair, my eyes half</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0123.01">
+    <line><add>was </add></line>
+  </zone>
+</surface>

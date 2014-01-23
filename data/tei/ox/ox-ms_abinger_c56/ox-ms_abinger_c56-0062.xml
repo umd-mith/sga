@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0062" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0062.jp2"/>
+  <zone type="pagination" rend="bordered"><line>92</line></zone>
+  <zone type="main">
+    <line>own <del rend="strikethrough">grif</del> grief to notice poor Justine</line>
+    <line>who had attended her during her <del rend="strikethrough">whole</del></line>
+    <line>illness with the greatest affection.</line>
+    <line>Poor Justine was very ill but other</line>
+    <line>tryals were reserved for her.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><space unit="chars" extent="3"/>One by one her brothers &#x26; sister</line>
+    <line>had died and her mother was now</line>
+    <line>with the exception of her neglected</line>
+    <line>daugher <del rend="strikethrough">was</del> left childless. The</line>
+    <line>conscience of the woman was troubled</line>
+    <line>and she began to think that the</line>
+    <line>deaths of her favourites was a judgement</line>
+    <line><add place="superlinear" hand="#pbs">sent</add>from heaven to <mod>
+        <del rend="strikethrough">punish</del>
+        <add place="superlinear" hand="#pbs">chastise</add>
+      </mod> her partialli<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">t</add>
+      </mod>y</line>
+    <line>she was a roman Catholic and I believe</line>
+    <line>her confessor encouraged the idea<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">which she had concieved.</add>
+      </mod>. Accor</line>
+    <line>dingly, a few Months after your depar</line>
+    <line>ture for <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">I</add>
+      </mod>ngolstadt, <del rend="strikethrough">sh</del> Justine was called</line>
+    <line>home by her repentant Mother. Poor</line>
+    <line>girl she wept when she quitted our house</line>
+    <line>she was much altered since the death</line>
+    <line>of my aunt: grief had given soft<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">n</add>
+      </mod>ess</line>
+    <line>and a winning mildness to her manners</line>
+    <line>which had before been remarkable</line>
+    <line>for vivacity. Nor <del rend="strikethrough">did</del> was her residence</line>
+    <line>at her Mothers house of a nature to</line>
+    <line>restore her gaiety. The poor <del rend="strikethrough">fo</del> wo</line>
+    <line>man was very vacillating in her</line>
+    <line>repentance. She sometimes begged</line>
+    <line>Justine to forgive her unkindness</line>
+  </zone>
+</surface>

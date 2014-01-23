@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0063" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0063.jp2"/>
+  <zone type="pagination" rend="bordered"><line>93</line></zone>
+  <zone type="library"><line>29</line></zone>
+  <zone type="main">
+    <line>but much oftenor accused her</line>
+    <line>as having caused the deaths of <del rend="strikethrough">h</del> her</line>
+    <line>brothers &#x26; sister. Perpetual fretting</line>
+    <line>at last threw Mad. Martin into</line>
+    <line>a decline, which at first encreased</line>
+    <line>her irritability<unclear>,</unclear> but she is now at</line>
+    <line>rest for ever; <del rend="strikethrough">for</del>
+      <del rend="strikethrough"><unclear>S</unclear></del> she <del rend="stikethrough">did</del>
+      died</line>
+    <line>on the first approach of cold at</line>
+    <line>the beginning of th<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">is</add>
+      </mod>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">last</add>
+      </mod> winter <delSpan spanTo="#c56-0063.01" rend="strikethrough"/>that</line>
+    <line>has just passed<anchor xml:id="c56-0063.01"/>. Justine has</line>
+    <line>returned to us and I assure you</line>
+    <line>I love her tenderly. She is very clever</line>
+    <line>and extremely mild &#x26; pretty and as</line>
+    <line>I mentioned before <del rend="strikethrough">she</del>
+      <del rend="strikethrough">is</del> her <mod>
+        <del rend="strikethrough">air</del>
+        <add place="superlinear" hand="#pbs">mein</add>
+      </mod> and</line>
+    <line><anchor xml:id="c56-0063.02"/>expressions <del rend="strikethrough">are</del> continually
+      remind me</line>
+    <line>of my dear Aunt.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><del rend="strikethrough">And</del> I must say a few words
+      to</line>
+    <line>you also, My dear Victor, of little darling</line>
+    <line>William. I wish you could see him. He</line>
+    <line>is very tall of his age with sweet laughing</line>
+    <line>blue eyes <del rend="strikethrough">and</del> dark eyelashes and curling</line>
+    <line>hair When he smiles two little dimples</line>
+    <line>appear on his cheeks which are rosy</line>
+    <line>with health &#x2014; his chin comes down in</line>
+    <line>a beautiful oval <del rend="strikethrough">a</del> After this descrip</line>
+    <line>tion I can only say what our visitors</line>
+    <line>say a thousand times a day&#x2013;'He is too</line>
+    <line>pretty for a boy'.<mod>
+        <add place="superlinear"><metamark function="displacement" xml:id="c56-0063.03"
+          >X</metamark></add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><del rend="strikethrough">Miss Mansfeld</del> Now, dear
+      Victor I dare</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0063.02">
+    <line><add hand="#pbs">her </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0063.03">
+    <addSpan spanTo="#c56-0063.04"/>
+    <line>He has already</line>
+    <line>had one or two</line>
+    <line>little <hi rend="underline">wives</hi></line>
+    <line>but Louisa</line>
+    <line><del rend="strikethrough">M</del>
+      <del rend="strikethrough"><unclear>Caln</unclear></del> Biron</line>
+    <line><add place="intralinear" hand="#pbs">is</add> his favourite&#x2013;</line>
+    <line>a pretty little</line>
+    <line>girl of five years old <del rend="strikethrough">to</del></line>
+    <anchor xml:id="c56-0063.04"/>
+    <!-- Here there is a line to differentiate between left margin zone and 
+      main zone since the "years old to" crosses into the main zone -->
+  </zone>
+</surface>

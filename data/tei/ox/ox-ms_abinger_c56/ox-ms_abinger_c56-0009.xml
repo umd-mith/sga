@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0009" ulx="0" uly="0" lrx="5088" lry="7082" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0009.jp2"/>
+  <zone type="library"><line>3</line></zone>
+  <zone type="main">
+    <line><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">thier</add>
+      </mod> credit with <mod>
+        <add place="superlinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> &#x2013; but I could not entirely throw</line>
+    <line>them aside before <mod>
+        <del rend="strikethrough">any</del>
+        <add place="superlinear" hand="#pbs"><del rend="strikethrough"><unclear>some</unclear></del>
+          some</add>
+      </mod> other system <mod>
+        <del rend="strikethrough">cocc</del>
+        <add hand="#pbs" place="superlinear">should</add>
+      </mod></line>
+    <line>occup<mod>
+        <del rend="overwritten">ie</del>
+        <add place="intralinear" hand="#pbs">y</add>
+      </mod>d their place<mod>
+        <del rend="overwritten">.</del>
+        <add place="intralinear" hand="#pbs">,</add>
+      </mod>
+      <unclear unit="chars" extent="1"/> in my mind&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent3"><mod>
+        <del rend="strikethrough">An</del>
+        <del rend="unmarked">d</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">Among other questions suggested by natural
+          objects</add>
+      </mod> I <del rend="strikethrough">as</del> eagerly enquired of my father</line>
+    <line><mod>
+        <del rend="strikethrough">what</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">the nature <space unit="chars" extent="3"/> &#x26; the
+          origin of</add>
+      </mod> thunder and lightening. <del rend="strikethrough">was.</del> He</line>
+    <line>replied, electricity; describing at the same</line>
+    <line>time the effect of that power. He <mod>
+        <del rend="strikethrough">made</del>
+        <add hand="#pbs" place="superlinear">constructed</add>
+      </mod></line>
+    <line>a small electrical machine and exhi</line>
+    <line>bited a few experiments and made a</line>
+    <line>kite with a wire <add hand="#pbs" place="intralinear">&#x26;</add> string <mod>
+        <del rend="strikethrough">and</del>
+        <add hand="#pbs" place="superlinear">which</add>
+      </mod> drew down</line>
+    <line>that fluid from the clouds.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">This last <del rend="strikethrough">blow</del>
+      <del rend="strikethrough">st</del> stroke compleated</line>
+    <line>the overthrow of Cornelius Agrippa, Albertus</line>
+    <line>Magnus and Paracelsus, who had so long</line>
+    <line>reigned the lords of my imagination. But</line>
+    <line>by some fatality I did not feel enclined to</line>
+    <line>commence any modern system and this</line>
+    <line><mod>
+        <del rend="strikethrough">inclination</del>
+        <add hand="#pbs" place="superlinear">disinclination</add>
+      </mod> was influenced by the following</line>
+    <line>circumstance.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My father expressed a wish that I</line>
+    <line>should attend a course of lectures upon</line>
+    <line>natural philosophy, to which I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">cheerfully</add>
+      </mod>consented <delSpan spanTo="#c56-0009.02" rend="strikethrough"/>and</line>
+    <line><delSpan spanTo="#c56-0009.01" rend="vertical_line"/>one evening<anchor
+        xml:id="c56-0009.02"/> that I spent in town at the</line>
+    <line>house of Clerval's father I <delSpan spanTo="#c56-0009.03" rend="strikethrough"/>heard
+      that</line>
+    <line>M<hi rend="sup">r</hi> &#x2014; was lef at<anchor xml:id="c56-0009.03"/> met M. <del
+        rend="strikethrough">O P</del> a proficient</line>
+    <line>in Chemistry who left the company at</line>
+    <line>an early hour to <del rend="strkethrough">h</del> give his lecture upon</line>
+    <line>tha<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">t</add>
+      </mod> science enquiring as he went out<anchor xml:id="c56-0009.01"/></line>
+  </zone>
+</surface>

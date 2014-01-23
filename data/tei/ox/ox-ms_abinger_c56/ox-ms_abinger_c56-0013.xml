@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0013" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0013.jp2"/>
+  <zone type="pagination" rend="bordered"><line>43</line></zone>
+  <zone type="library"><line>5</line></zone>
+  <zone type="main">
+    <line>being an only child, and desti</line>
+    <line>tute of companions at home, h<mod>
+        <del rend="overwritten"><unclear>is</unclear></del>
+        <add place="intralinear" hand="#pbs">is</add>
+      </mod></line>
+    <line><del rend="strikethrough"><unclear>to</unclear></del> father was pleased that he</line>
+    <line>should find associates at our</line>
+    <line>house and we were never com</line>
+    <line>pletely happy when Clerval was</line>
+    <line>absent.</line>
+    <milestone unit="tei:p"/>
+    <delSpan spanTo="#c56-0013.01" rend="vertical_line"/>
+    <delSpan spanTo="#c56-0013.02" rend="strikethrough"/>
+    <line rend="indent1">In this account of my early</line>
+    <line>youth I wish particularly to <mod spanTo="#c56-0013.03"/>men</line>
+    <line>tion <anchor xml:id="c56-0013.04"/><anchor xml:id="c56-0013.03"/> those
+        circumstances<anchor xml:id="c56-0013.02"/> which</line>
+    <line>led to and nourished my taste</line>
+    <line>for that science which was</line>
+    <line>the principal amusement of my</line>
+    <line>boyish days and in <delSpan spanTo="#c56-0013.05" rend="strikethrough"/>the end
+      deci</line>
+    <line>ded my destiny<anchor xml:id="c56-0013.05"/>. I mentioned before</line>
+    <line>my taste for old books of chemist</line>
+    <line>ry and natural magic and I remem</line>
+    <line>ber very well that I learned latin</line>
+    <line>principally that I might read</line>
+    <line>Pliny's Natural History my father</line>
+    <line>refusing to allow me to read a</line>
+    <line>translation. I used when very young</line>
+    <line>to attend lectures of chemistry</line>
+    <line>given in Geneva and athough</line>
+    <line>I did not understand them the</line>
+    <line>experiments never failed to</line>
+    <line>attract my attention.<anchor xml:id="c56-0013.01"/><del rend="strikethrough"
+        next="#c56-0013.06">I reme<mod><add place="sublinear"
+            ><metamark function="insert">^</metamark></add><add place="superlinear" hand="#pbs"
+        >m</add></mod>ber</del></line>
+    <line><del rend="strikethrough" xml:id="c56-0013.06">also</del><milestone unit="tei:p"
+        /><metamark function="paragraph"> [</metamark><mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">W</add>
+      </mod>hen I was about <mod>
+        <del rend="strikethrough">twelve</del>
+        <add place="superlinear">fourteen</add>
+      </mod> years</line>
+    <line>old we were at our house near</line>
+    <line>Belrive when we witnessed <del rend="strikethrough">the</del> a</line>
+    <line>violent <mod>
+        <del rend="strikethrough">at</del>
+        <add place="superlinear" hand="#pbs">and</add>
+      </mod> terrible thunder storm</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0013.04">
+    <line><del rend="strikethrough"><add>record </add></del></line></zone>
+</surface>

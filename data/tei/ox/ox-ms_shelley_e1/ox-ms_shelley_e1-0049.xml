@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0" lrx="5406" lry="7276"
+  xml:id="ox-ms_shelley_e1-0049" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0049.jp2"/>
+  <zone type="library">24</zone>
+  <zone type="main">
+    <milestone unit="tei:speaker" spanTo="e1-0049.01"/>
+    <line rend="indent2">a Voice</line>
+    <line rend="indent1">The Earth <anchor xml:id="e1-0049.01"/><mod><del rend="strikethrough">hollows</del><add place="superlinear">caverns</add></mod> of the craggy hills</line>
+    <line rend="indent1">The tongueless <mod><del rend="strikethrough">clefts</del> <del rend="strikethrough">within the mountains then</del></mod></line>
+    <!-- The first two lines on this page include both a speaker ("The Earth") and a line of poetry 
+      ("The tongueless caverns of the craggy hills").  PBS presents the two in a mixed form across two lines.  
+      I have encoded these lines exactly as they appear on the page, but this will make the document 
+      unserachable for these lines. -->
+    <line rend="indent1">Cried Misery, <unclear extent="2"></unclear><add place="superlinear">then</add>the <mod><del rend="strikethrough">startled</del><add place="superlinear">hollow</add></mod> Heaven replied</line>
+    <line rend="indent1">Misery! And the Oceans purple waves,</line>
+    <line rend="indent1">Climbing the land, howled <del rend="strikethrough">it</del> to <mod><del rend="strikethrough">all</del><add place="superlinear"><unclear extent="4"></unclear>the lashing</add></mod> the winds.</line>
+    <!-- I think I'm encoding unclear tags incorrectly.  What should I put between the two tags? -->
+    <line rend="indent1">And the pale nations heard it,&#x2014;Misery!</line>
+    <line rend="indent2">&#x2014;Mother thy sons &#x26; thou</line>
+    <line rend="indent1">Scorn him, without whose all-enduring will</line>
+    <line rend="indent1">Beneath the fierce omnipotence of Jove</line>
+  </zone>
+</surface>

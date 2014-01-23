@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0081" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0081.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>101</line>
+  </zone>
+  <zone type="library"><line>41</line></zone>
+
+  <zone type="main">
+    <line>But it is this gloom which appears to have taken</line>
+    <line>too strong a hold of your mind that I wish to dissi</line>
+    <line>pate. Tell me therefore whether you object to an imme</line>
+    <line>diate solemnization of the marriage. We have been unfor</line>
+    <line><del rend="smear">tunate</del></line>
+    <line>tunate, and recent events have drawn us from that</line>
+    <line>every day tranquillity <del rend="strikethrough">so necess</del> befitting my years
+      and</line>
+    <line>infirmities. You are younger yet I do not suppose, possess</line>
+    <line>ed as you are of a competent fortune that an early</line>
+    <line>marriage would at all interfere with any future plans</line>
+    <line>of honour and utility<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">that </add>
+        <add place="superlinear">you may have formed</add>
+      </mod>. <del rend="strikethrough">Yet</del> Do not suppose however that</line>
+    <line>I wish to dictate happiness to you or that a</line>
+    <line>delay on your part would cause me any <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">serious</add>
+      </mod> uneasi</line>
+    <line>ness; Interp<mod>
+        <del rend="overwritten">er</del>
+        <add place="intralinear">e</add>
+      </mod>et my words with candour and answer</line>
+    <line>me I conjure you with confidence and sincerity.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I listened to my father in silence and remained</line>
+    <line><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for </add>
+      </mod>sometime without offering any reply. I revolved</line>
+    <line>rapidly in my mind a multitude of <mod>
+        <del rend="strikethrough">ideas</del>
+        <add place="superlinear">thoughts</add>
+      </mod> and</line>
+    <line><del rend="strikethrough">d</del> endeavoured to come to some conclusion. Alas!</line>
+    <line>to me the idea of an immediate union with my</line>
+    <line>cousin was one of horror and dismay. I was bound by</line>
+    <line>a solemn promise which I had not yet fufilled and</line>
+    <line>dared not break; or if I did what manifold mise</line>
+    <line>ries might not impend over me and my devo</line>
+    <line>ted family! <del rend="strikethrough">And</del> could I enter into a festival with</line>
+    <line>this deadly weight yet hanging round my neck and</line>
+    <line>bowing me to the ground. <mod spanTo="#c57-0081.01"/><delSpan spanTo="#c57-0081.02"
+        rend="strikethrough"/>No, <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">that</add></del>
+      </mod> I could not endure</line>
+    <line>that<anchor xml:id="c57-0081.02"/>
+      <del rend="strikethrough">and therefore resolved to</del><add place="superlinear" hand="#pbs"
+        >I must</add><anchor xml:id="c57-0081.01"/> perform my engage</line>
+    <line>ment and let the monster depart with his mate</line>
+  </zone>
+</surface>

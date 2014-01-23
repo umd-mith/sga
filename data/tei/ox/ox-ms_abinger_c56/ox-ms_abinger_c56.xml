@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Frankenstein, Draft Notebook A</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editor</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2012-2014</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Oxford University</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive 
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Abinger c. 56</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <bibl status="draft">
+                                <author>Mary Shelley</author>
+                                <title>Frankenstein</title>
+                                <date notBefore="1816-08" notAfter="1816-12">[August or September]-[?December] 1816</date>
+                            </bibl>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="mws"><persName>Mary Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#RV" when="2014-01-21">Added metadata.</change>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <xi:include href="ox-ms_abinger_c56-0001.xml" />
+        <xi:include href="ox-ms_abinger_c56-0002.xml" />
+        <xi:include href="ox-ms_abinger_c56-0003.xml" />
+        <xi:include href="ox-ms_abinger_c56-0004.xml" />
+        <xi:include href="ox-ms_abinger_c56-0005.xml" />
+        <xi:include href="ox-ms_abinger_c56-0006.xml" />
+        <xi:include href="ox-ms_abinger_c56-0007.xml" />
+        <xi:include href="ox-ms_abinger_c56-0008.xml" />
+        <xi:include href="ox-ms_abinger_c56-0009.xml" />
+        <xi:include href="ox-ms_abinger_c56-0010.xml" />
+        <xi:include href="ox-ms_abinger_c56-0011.xml" />
+        <xi:include href="ox-ms_abinger_c56-0012.xml" />
+        <xi:include href="ox-ms_abinger_c56-0013.xml" />
+        <xi:include href="ox-ms_abinger_c56-0014.xml" />
+        <xi:include href="ox-ms_abinger_c56-0015.xml" />
+        <xi:include href="ox-ms_abinger_c56-0016.xml" />
+        <xi:include href="ox-ms_abinger_c56-0017.xml" />
+        <xi:include href="ox-ms_abinger_c56-0018.xml" />
+        <xi:include href="ox-ms_abinger_c56-0019.xml" />
+        <xi:include href="ox-ms_abinger_c56-0020.xml" />
+        <xi:include href="ox-ms_abinger_c56-0021.xml" />
+        <xi:include href="ox-ms_abinger_c56-0022.xml" />
+        <xi:include href="ox-ms_abinger_c56-0023.xml" />
+        <xi:include href="ox-ms_abinger_c56-0024.xml" />
+        <xi:include href="ox-ms_abinger_c56-0025.xml" />
+        <xi:include href="ox-ms_abinger_c56-0026.xml" />
+        <xi:include href="ox-ms_abinger_c56-0027.xml" />
+        <xi:include href="ox-ms_abinger_c56-0028.xml" />
+        <xi:include href="ox-ms_abinger_c56-0029.xml" />
+        <xi:include href="ox-ms_abinger_c56-0030.xml" />
+        <xi:include href="ox-ms_abinger_c56-0031.xml" />
+        <xi:include href="ox-ms_abinger_c56-0032.xml" />
+        <xi:include href="ox-ms_abinger_c56-0033.xml" />
+        <xi:include href="ox-ms_abinger_c56-0034.xml" />
+        <xi:include href="ox-ms_abinger_c56-0035.xml" />
+        <xi:include href="ox-ms_abinger_c56-0036.xml" />
+        <xi:include href="ox-ms_abinger_c56-0037.xml" />
+        <xi:include href="ox-ms_abinger_c56-0038.xml" />
+        <xi:include href="ox-ms_abinger_c56-0039.xml" />
+        <xi:include href="ox-ms_abinger_c56-0040.xml" />
+        <xi:include href="ox-ms_abinger_c56-0041.xml" />
+        <xi:include href="ox-ms_abinger_c56-0042.xml" />
+        <xi:include href="ox-ms_abinger_c56-0043.xml" />
+        <xi:include href="ox-ms_abinger_c56-0044.xml" />
+        <xi:include href="ox-ms_abinger_c56-0045.xml" />
+        <xi:include href="ox-ms_abinger_c56-0046.xml" />
+        <xi:include href="ox-ms_abinger_c56-0047.xml" />
+        <xi:include href="ox-ms_abinger_c56-0048.xml" />
+        <xi:include href="ox-ms_abinger_c56-0049.xml" />
+        <xi:include href="ox-ms_abinger_c56-0050.xml" />
+        <xi:include href="ox-ms_abinger_c56-0051.xml" />
+        <xi:include href="ox-ms_abinger_c56-0052.xml" />
+        <xi:include href="ox-ms_abinger_c56-0053.xml" />
+        <xi:include href="ox-ms_abinger_c56-0054.xml" />
+        <xi:include href="ox-ms_abinger_c56-0055.xml" />
+        <xi:include href="ox-ms_abinger_c56-0056.xml" />
+        <xi:include href="ox-ms_abinger_c56-0057.xml" />
+        <xi:include href="ox-ms_abinger_c56-0058.xml" />
+        <xi:include href="ox-ms_abinger_c56-0059.xml" />
+        <xi:include href="ox-ms_abinger_c56-0060.xml" />
+        <xi:include href="ox-ms_abinger_c56-0061.xml" />
+        <xi:include href="ox-ms_abinger_c56-0062.xml" />
+        <xi:include href="ox-ms_abinger_c56-0063.xml" />
+        <xi:include href="ox-ms_abinger_c56-0064.xml" />
+        <xi:include href="ox-ms_abinger_c56-0065.xml" />
+        <xi:include href="ox-ms_abinger_c56-0066.xml" />
+        <xi:include href="ox-ms_abinger_c56-0067.xml" />
+        <xi:include href="ox-ms_abinger_c56-0068.xml" />
+        <xi:include href="ox-ms_abinger_c56-0069.xml" />
+        <xi:include href="ox-ms_abinger_c56-0070.xml" />
+        <xi:include href="ox-ms_abinger_c56-0071.xml" />
+        <xi:include href="ox-ms_abinger_c56-0072.xml" />
+        <xi:include href="ox-ms_abinger_c56-0073.xml" />
+        <xi:include href="ox-ms_abinger_c56-0074.xml" />
+        <xi:include href="ox-ms_abinger_c56-0075.xml" />
+        <xi:include href="ox-ms_abinger_c56-0076.xml" />
+        <xi:include href="ox-ms_abinger_c56-0077.xml" />
+        <xi:include href="ox-ms_abinger_c56-0078.xml" />
+        <xi:include href="ox-ms_abinger_c56-0079.xml" />
+        <xi:include href="ox-ms_abinger_c56-0080.xml" />
+        <xi:include href="ox-ms_abinger_c56-0081.xml" />
+        <xi:include href="ox-ms_abinger_c56-0082.xml" />
+        <xi:include href="ox-ms_abinger_c56-0083.xml" />
+        <xi:include href="ox-ms_abinger_c56-0084.xml" />
+        <xi:include href="ox-ms_abinger_c56-0085.xml" />
+        <xi:include href="ox-ms_abinger_c56-0086.xml" />
+        <xi:include href="ox-ms_abinger_c56-0087.xml" />
+        <xi:include href="ox-ms_abinger_c56-0088.xml" />
+        <xi:include href="ox-ms_abinger_c56-0089.xml" />
+        <xi:include href="ox-ms_abinger_c56-0090.xml" />
+        <xi:include href="ox-ms_abinger_c56-0091.xml" />
+        <xi:include href="ox-ms_abinger_c56-0092.xml" />
+        <xi:include href="ox-ms_abinger_c56-0093.xml" />
+        <xi:include href="ox-ms_abinger_c56-0094.xml" />
+        <xi:include href="ox-ms_abinger_c56-0095.xml" />
+        <xi:include href="ox-ms_abinger_c56-0096.xml" />
+        <xi:include href="ox-ms_abinger_c56-0097.xml" />
+        <xi:include href="ox-ms_abinger_c56-0098.xml" />
+        <xi:include href="ox-ms_abinger_c56-0099.xml" />
+        <xi:include href="ox-ms_abinger_c56-0100.xml" />
+        <xi:include href="ox-ms_abinger_c56-0101.xml" />
+        <xi:include href="ox-ms_abinger_c56-0102.xml" />
+        <xi:include href="ox-ms_abinger_c56-0103.xml" />
+        <xi:include href="ox-ms_abinger_c56-0104.xml" />
+        <xi:include href="ox-ms_abinger_c56-0105.xml" />
+        <xi:include href="ox-ms_abinger_c56-0106.xml" />
+        <xi:include href="ox-ms_abinger_c56-0107.xml" />
+        <xi:include href="ox-ms_abinger_c56-0108.xml" />
+        <xi:include href="ox-ms_abinger_c56-0109.xml" />
+        <xi:include href="ox-ms_abinger_c56-0110.xml" />
+        <xi:include href="ox-ms_abinger_c56-0111.xml" />
+        <xi:include href="ox-ms_abinger_c56-0112.xml" />
+        <xi:include href="ox-ms_abinger_c56-0113.xml" />
+        <xi:include href="ox-ms_abinger_c56-0114.xml" />
+        <xi:include href="ox-ms_abinger_c56-0115.xml" />
+        <xi:include href="ox-ms_abinger_c56-0116.xml" />
+        <xi:include href="ox-ms_abinger_c56-0117.xml" />
+        <xi:include href="ox-ms_abinger_c56-0118.xml" />
+        <xi:include href="ox-ms_abinger_c56-0119.xml" />
+        <xi:include href="ox-ms_abinger_c56-0120.xml" />
+        <xi:include href="ox-ms_abinger_c56-0121.xml" />
+        <xi:include href="ox-ms_abinger_c56-0122.xml" />
+        <xi:include href="ox-ms_abinger_c56-0123.xml" />
+        <xi:include href="ox-ms_abinger_c56-0124.xml" />
+        <xi:include href="ox-ms_abinger_c56-0125.xml" />
+        <xi:include href="ox-ms_abinger_c56-0126.xml" />
+        <xi:include href="ox-ms_abinger_c56-0127.xml" />
+        <xi:include href="ox-ms_abinger_c56-0128.xml" />
+        <xi:include href="ox-ms_abinger_c56-0129.xml" />
+        <xi:include href="ox-ms_abinger_c56-0130.xml" />
+        <xi:include href="ox-ms_abinger_c56-0131.xml" />
+        <xi:include href="ox-ms_abinger_c56-0132.xml" />
+        <xi:include href="ox-ms_abinger_c56-0133.xml" />
+        <xi:include href="ox-ms_abinger_c56-0134.xml" />  
+    </sourceDoc>
+</TEI>

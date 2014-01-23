@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0147" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0147.jp2"/>
+  <zone type="pagination">
+    <line>163</line>
+  </zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0147.07"/>Chap. 17<anchor xml:id="c57-0147.07"/></line>
+    <line>It was eight o'clock when we landed; we</line>
+    <line>walked <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for a short time</add>
+      </mod> on the shore enjoying the transitory</line>
+    <line>twilight &amp; then retired to the Inn and contem</line>
+    <line>plated the lovely scene of waters, mountains</line>
+    <line>&amp; woods obscured in darkness yet still <mod spanTo="#c57-0147.01"/><delSpan
+        spanTo="#c57-0147.02"/>allow</line>
+    <line>ing<anchor xml:id="c57-0147.02"/><anchor xml:id="c57-0147.03"/><anchor
+        xml:id="c57-0147.01"/> the<add place="intralinear">ir</add>
+      <del rend="strikethrough">their</del>
+      <mod>
+        <del rend="strikethrough">dark</del>
+        <add place="superlinear">black</add>
+      </mod> outlines&#x2013; The wind which</line>
+    <line>had fallen in the south now rose with great</line>
+    <line>violence in the west&#x2014;the moon had</line>
+    <line>reached her summit in the heavens</line>
+    <line>&amp; was beginning to descend the clouds</line>
+    <line>swept across it swifter than the</line>
+    <line>flight of the vulture and dimmed her</line>
+    <line>rays while the lake reflected the <add place="intralinear" hand="#pbs" next="#c57-0147.04"
+        >scene</add></line>
+    <line><add place="superlinear" hand="#pbs" xml:id="c57-0147.04">of the </add>busy heavens <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs"><del rend="strikethrough">m</del> made</add>
+      </mod> still busier by the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">restless</add>
+      </mod> waves</line>
+    <line>that were beginning to rise&#x2014; <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>uddenly</line>
+    <line>a heavy storm of rain descended.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I<del rend="smear">t</del> had been calm during the day but</line>
+    <line><mod>
+        <del rend="strikethrough">now</del>
+        <add place="superlinear" hand="#pbs">so soon</add>
+      </mod> as night <del rend="strikethrough">ha</del> obscured the shapes of</line>
+    <line>objects a thousand fears arose in</line>
+    <line>my mind &#x2013; I was anxious and watchful</line>
+    <line>while my right hand grasped a pistol</line>
+    <line>which was hidden in my bosom &#x2014;</line>
+    <line>Every sound terrified <add place="superlinear" hand="#pbs">me,</add> but I
+      resoldved</line>
+    <line>that I would sell my<del rend="strikethrough">s</del> life dearly &amp;</line>
+    <line>not <mod>
+        <del rend="strikethrough">die</del>
+        <add place="superlinear" hand="#pbs">relax the conflict that impended</add>
+      </mod> untill <mod spanTo="#c57-0147.05"/><del rend="strikethrough">my adversary</del>
+      <del rend="strikethrough">lay</del>
+      <del rend="strikethrough" next="#c57-0147.06">at my</del><del rend="strikethrough"><add
+          place="superlinear">should lie senseless</add></del></line>
+    <line><del rend="strikethrough" xml:id="c57-0147.06">fee</del><del rend="unmarked">t.</del>
+      <add place="intralinear" hand="#pbs">my own life, or that of my adversary were
+        extinguished</add><anchor xml:id="c57-0147.05"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Elizabeth observed my agitation for</line>
+    <line>some time in timid &amp; fearful silence</line>
+    <line><unclear reason="case">A</unclear>t length she said &#x2014; What is it, my dear</line>
+    <line>Victor, that agitates you? What is it</line>
+    <line>you fear?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Oh peace, peace, my love, I replied,</line>
+    <line>this night and all will be safe &#x2013; but</line>
+    <line>this nigh<retrace cause="clarify">t</retrace> is dreadful very dreadful.</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0147.03">
+    <line><add>displaying</add></line>
+  </zone>
+</surface>

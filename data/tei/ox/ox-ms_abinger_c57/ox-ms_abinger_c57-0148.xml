@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0148" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0148.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>164</line>
+  </zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I passed an hour in this state of</line>
+    <line>mind when suddenly I reflected how dreadful</line>
+    <line><mod>
+        <del rend="strikethrough">such a</del>
+        <add place="superlinear">the</add>
+      </mod> combat <mod>
+        <del rend="strikethrough">as</del>
+        <add place="superlinear">which</add>
+      </mod> I <add place="superlinear" hand="#pbs">momently</add> expected <mod>
+        <del rend="strikethrough">would</del>
+        <add place="superlinear" hand="#pbs">to</add>
+      </mod> take</line>
+    <line>place would be <add place="intralinear">to</add> my wife and I earnestly</line>
+    <line>entreated her to retire &#x2013; resolving not to join</line>
+    <line>her untill I had obtained some knowledge</line>
+    <line>as to the situation of my enemy.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">She left me and I continued some</line>
+    <line>time walking up and down the passages</line>
+    <line>of the house &amp; inspecting every corner</line>
+    <line>that might afford a retreat to my</line>
+    <line>adversary &#x2013; But I <del rend="strikethrough">sa</del> saw no trace <add
+        place="superlinear" hand="#pbs">of him</add> &amp;</line>
+    <line><anchor xml:id="c57-0148.01"/>beg<mod>
+        <del rend="overwritten">an</del>
+        <add hand="#pbs" place="intralinear">inning</add>
+      </mod> to consider <mod spanTo="#c57-0148.02"/><del rend="strikethrough" next="#c57-0148.03"
+        >what was my best</del><add hand="#pbs" place="superlinear" next="#c57-0148.04">that some
+        fortunate chance</add></line>
+    <line><del rend="strikethrough" xml:id="c57-0148.03">mode of proceeding</del><add
+        place="superlinear" hand="#pbs" xml:id="c57-0148.04">had intervened to prevent the execution
+        of his menace,</add><anchor xml:id="c57-0148.02"/> &#x2013; When suddenly</line>
+    <line>I heard a shrill &amp; dreadful scream.&#x2013;</line>
+    <line>It came from the room into which</line>
+    <line>Elizabeth had retired<mod>
+        <add place="intralinear">.</add>
+        <del rend="strikethrough">with a servant</del>
+      </mod></line>
+    <line>As I heard it the whole truth rushed</line>
+    <line>to my mind my arms dropped &#x2013; the</line>
+    <line>motion of every muscle &amp; fibre was</line>
+    <line>suspended I could feel the b<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">l</add>
+      </mod>ood trick</line>
+    <line>ling <del rend="strikethrough" instant="true">from</del> in my veins &#x2013; <mod>
+        <del rend="strikethrough">The scream</del>
+        <add hand="#pbs" place="superlinear">&amp; tingling in my feet</add>
+      </mod></line>
+    <line>This state lasted but an instant</line>
+    <line>the scream was repeated &amp; I rushed</line>
+    <line>into the room. Great God why did I</line>
+    <line>not then expire &#x2013; Why I am I here to</line>
+    <line>relate the d<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">e</add>
+      </mod>struction of the best hope</line>
+    <line>&amp; <mod>
+        <del rend="strikethrough">d</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> purest creature of earth &#x2013; She was</line>
+    <line>there &#x2013; lifeless &amp; inanimate &#x2013; thrown</line>
+    <line>across the bed her head hanging</line>
+    <line>down <add place="superlinear">her</add> pale &amp; distorted features half</line>
+    <line>covered by he<add place="intralinear">r</add> hair &#x2013; Every where I turn</line>
+    <line>I see the same figure &#x2014;Her bloodless</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0148.01">
+    <line><add hand="#pbs">was </add></line>
+  </zone>
+</surface>

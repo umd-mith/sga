@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0051" ulx="0" uly="0" lrx="5410" lry="6660"
+  partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0051.jp2"/>
+  <zone type="pagination"><line>179</line></zone>
+  <zone type="library"><line>26</line></zone>
+  <zone type="main">
+    <handShift medium="pen" new="#pbs"/>
+    <line>wild &amp; incoherent reproaches.. At length I gathered</line>
+    <line>resolution to speak, in a pause as it were in</line>
+    <line>the tempest of his passion &#x2014; Your repentance is</line>
+    <line>now superflous: I said, If you had listened to</line>
+    <line>the voice of conscience, &amp; heeded the stings of</line>
+    <line>remorse before you had urged your diabolical</line>
+    <line>vengeance to this extremity; Frankenstein would</line>
+    <line>yet have lived.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">And do you dream &#x2014; said the D&#xE6;mon,
+      do</line>
+    <line>you think that I was then dead to agony &amp;</line>
+    <line>remorse. &#x2013; He&#x2013; he <del rend="strikethrough">ex</del> p continued, pointing
+      to</line>
+    <line>the corpse, he suffered not more in consum</line>
+    <line>-mation of the deed; oh not the ten thousandth</line>
+    <line>portion of the anguish that was mine during</line>
+    <line>the lingering detail of its execution. A frigh-</line>
+    <line>-tful selfishness hurried me on, while my heart</line>
+    <line>was poisoned with remorse. Think ye that</line>
+    <line>the groans of Clerval were music to my ear.</line>
+    <line>My heart was fashioned to be susceptible of</line>
+    <line>love &amp; sympathy, &amp; when wrenched by misery</line>
+    <line>to vice &amp; hatred it did not endure the</line>
+    <line>violence of the change without torture</line>
+  </zone>
+</surface>

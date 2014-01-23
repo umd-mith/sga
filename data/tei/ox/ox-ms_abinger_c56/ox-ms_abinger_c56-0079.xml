@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0079" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0079.jp2"/>
+  <zone type="pagination" rend="bordered"><line>109</line></zone>
+  <zone type="library"><line>37</line></zone>
+  <zone type="main">
+    <line>to define them.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I remained <del rend="strikethrough">thus</del> at
+      Lausanne for</line>
+    <line>two days not daring to proceed. I contem</line>
+    <line>plated the lake &#x2013; the waters were</line>
+    <line>placid &#x2013; all around was calm and the</line>
+    <line>Snowy mountains the "Palaces of Nature"<add place="superlinear"><metamark
+          xml:id="c56-0079.01" function="displacement">X</metamark></add></line>
+    <line>were not changed. By degrees, this calm</line>
+    <line>and heavenly scene restored me, and I</line>
+    <line><mod>
+        <del rend="strikethrough">proceeded</del>
+        <anchor xml:id="c56-0079.03"/>
+        <add place="superlinear" hand="#pbs" xml:id="c56-0079.02">journey</add>
+      </mod> towards Geneva. The road</line>
+    <line>ran by the side of the lake which</line>
+    <line>became narrower as I approached</line>
+    <line>my native town &#x2013; I discovered more</line>
+    <line>distinctly the black sides of Jura;</line>
+    <line>and the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">bright</add>
+      </mod>summit of Mount Blanc&#x2013;</line>
+    <line>I wept like a child&#x2013; Dear mountains</line>
+    <line>my own beautiful lake how do you</line>
+    <line>welcome your wanderer Your sum</line>
+    <line>mits are clear the sky and lake</line>
+    <line>are blue is this <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to</add>
+      </mod>prognosticate peace</line>
+    <line>or to mock<retrace hand="#pbs" cause="fix"><add place="superlinear" hand="#pbs"
+        >at</add></retrace> my unhappiness?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I fear, my friend <mod>
+        <del rend="strikethrough">to</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">that I shall</add>
+      </mod> render myself</line>
+    <line>tedious by dwelling on these preliminary</line>
+    <line>circumstances but they were days of</line>
+    <line>comparative happiness and I <mod>
+        <del rend="strikethrough">dwell</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">think</add>
+      </mod></line>
+    <line>o<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">f</add>
+      </mod> them with pleasure &#x2013; My Country</line>
+    <line>my beloved country Who <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">but a native</add>
+      </mod>can tell the</line>
+    <line>delight I took in again beholding thy</line>
+    <line>st<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>eams thy mountains and more than</line>
+    <line>all thy lovely lake <del rend="strikethrough">and</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0079.01">
+    <line><add><metamark function="displacement">X</metamark><del rend="strikethrough">Lo<hi
+            rend="underline">rd Byron</hi></del></add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0079.03">
+    <line><add hand="#pbs" next="#c56-0079.02">continued my </add></line>
+  </zone>
+</surface>

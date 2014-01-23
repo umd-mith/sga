@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0185" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0185.jp2"/>
+  <zone type="pagination" rend="bordered"><line><damage type="tear">201</damage></line></zone>
+  <zone type="main">
+    <line>sublime &amp; transcendant visions of loveliness.</line>
+    <line>But it is even so &#x2013; The fallen Angel becomes a ma</line>
+    <line>lignant devil&#x2014;Yet he even he Mans enemy had</line>
+    <line>friends &amp; associate<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">s</add>
+      </mod>, <del rend="strikethrough">while</del> I am quite alone.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">You who call Frankenstein your friend <add
+        place="intralinear">&amp;</add></line>
+    <line>seem to have a knowledge of my crimes &amp;</line>
+    <line>his misfortunes &#x2013; But in the detail that</line>
+    <line>he gave of them he could not sum up</line>
+    <line>the hours &amp; months of misery that I endured</line>
+    <line>burning with impotent rage &#x2013; For when</line>
+    <line>I destroyed his hopes I did not <mod>
+        <del rend="strikethrough">relieve</del>
+        <add place="superlinear">satisfy</add>
+      </mod> my own</line>
+    <line><mod>
+        <del rend="strikethrough">wants</del>
+        <add place="superlinear">desires.</add>
+      </mod> &#x2013; They were as craving &amp; ardent as</line>
+    <line><del rend="strikethrough">fef</del> before <del rend="strikethrough">When Elizabeth
+        died&#x2013; her destru</del></line>
+    <line>Still I desired love &amp; fellowship and I was still</line>
+    <line>spurned &#x2013; Was there no injustice in this? And</line>
+    <line>am I the only criminal while all man</line>
+    <line>kind sinned against me? Why do you not</line>
+    <line>hate Felix who drove his friend from his door</line>
+    <line>or the man who would have destroyed</line>
+    <line>the saviour of his child? Nay they are</line>
+    <line>virtuous &amp; immalculate beings&#x2013; While I the</line>
+    <line>miserable &amp; <del rend="strikethrough">tra<mod>
+          <del rend="overwritten">p</del>
+          <add place="intralinear">m</add>
+        </mod>bled on</del>
+      <del rend="strikethrough">trap</del> trampeled</line>
+    <line>on, am <mod>
+        <del rend="strikethrough">the devil</del>
+        <add place="superlinear" hand="#pbs">an abortion</add>
+      </mod> to <add place="intralinear">be</add> spurned &amp; kicked</line>
+    <line>&amp; hated! Even now my blood boils at</line>
+    <line>the memory of this injustice &#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">But it is true <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">that</add>
+      </mod> I am a wretch. I have</line>
+    <line>murdered the lovely &amp; the helpless. I have</line>
+    <line>seized the innocent as they slept and grasped</line>
+    <line>his throat to death who never injured me.</line>
+    <line>I devoted my creator to misery &amp; have follow</line>
+    <line>ed <add place="superlinear">him</add> even to his <del rend="strikethrough">death</del>
+      destruction &#x2013; You hate</line>
+    <line>me but your a<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">b</add>
+      </mod>horrence cannot equal</line>
+    <line>mine for myself&#x2013;I look on my hands that</line>
+    <line>executed the deed<del rend="strikethrough">s</del> I think of the heart that</line>
+    <line>formed the plans &amp; I loathe myself.</line>
+  </zone>
+</surface>

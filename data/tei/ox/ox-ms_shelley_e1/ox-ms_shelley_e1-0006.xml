@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0006" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0006.jp2"/>
+  <zone type="main">
+    <line rend="indent1">Strew oh strew</line>
+    <line rend="indent1">Hair, not yew!</line>
+    <line>Wet the dusty pall with tears, not dew!</line>
+    <line rend="indent1">Be the faded flowers</line>
+    <line rend="indent1">Of Deaths bare bowers</line>
+    <line>Spread on the corpse of the King of Hours<unclear>!</unclear></line>
+    <line rend="indent2">Haste, oh haste!</line>
+    <line rend="indent2">As shades are chased</line>
+    <line>Trembling, by Day, from Heaven's blue waste<unclear>.</unclear></line>
+    <line rend="indent2">We <mod>
+        <del rend="strikethrough">flee</del>
+        <add place="superlinear">melt</add>
+      </mod> away</line>
+    <line rend="indent2">Like dissolving spray</line>
+    <line>From the children of a diviner day<unclear>,</unclear>
+      <unclear>t</unclear></line>
+    <addSpan spanTo="#e1-0006.06" place="interlinear"/>
+    <line rend="indent2">With the lullaby</line>
+    <line rend="indent2">Of winds that die</line>
+    <anchor xml:id="e1-0006.06"/>
+    <line>On the bosom <space unit="chars" extent="17"/> of their own harmony <add
+        place="superlinear"><milestone unit="tei:stage" spanTo="#e1-0006.01"/><hi rend="underline"
+          >they vanish</hi><anchor xml:id="e1-0006.01"/></add></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0006.02"/>
+    <line rend="center">Ione (<del rend="strikethrough">awakening</del>)</line><anchor
+      xml:id="e1-0006.02"/>
+    <line><metamark><unclear>/</unclear></metamark></line>
+    <line rend="indent2">What dark forns were they?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0006.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0006.03"/>
+    <line rend="indent2">The past Hours weak &amp; grey</line>
+    <line rend="indent2">With the spoil, which their toil</line>
+    <line rend="indent3">Raked together,</line>
+    <line rend="indent2">From the conquest but One could foil</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0006.04"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0006.04"/>
+    <line rend="indent2">Have they past?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0006.05"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0006.05"/>
+    <line rend="indent5">They have past</line>
+  </zone>
+</surface>

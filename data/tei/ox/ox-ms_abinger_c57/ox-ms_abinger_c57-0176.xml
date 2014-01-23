@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0176" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0176.jp2"/>
+  <zone type="pagination" rend="bordered"><line>192</line></zone>
+  <zone type="main">
+    <line>down as men who had not strength <mod>
+        <del rend="strikethrough">danger</del>
+        <add place="superlinear">to endure</add>
+      </mod></line>
+    <line>cold &amp; peril &#x2013; And so poor souls they were</line>
+    <line>chilly &amp; returned to their warm fire sides&#x2013;Why</line>
+    <line>that requires not this preperation &#x2013;<unclear reason="case">Y</unclear>e need</line>
+    <!--"Ye" could be "ye"-->
+    <line>not <del rend="strikethrough">co</del> have come thus far &amp; dragged <del
+        rend="strikethrough">to</del> your</line>
+    <line>Captain to the shame of a defeat to prove</line>
+    <line>yourselves cowards. Oh be men or be <del rend="strikethrough">for</del></line>
+    <line>more than men &#x2013; be steady to your pur</line>
+    <line>poses &amp; fir<retrace cause="clarify">m</retrace> as rock. this ice is not made</line>
+    <line>of such stuff <add place="superlinear" hand="#pbs">as your hearts might be.</add> it is
+      mutable &amp; cannot</line>
+    <line>withand you if you say that it shall</line>
+    <line>not. Do not return to your famil<add place="intralinear">i</add>es</line>
+    <line>with <del rend="strikethrough">s</del> the stigma of disgrace marked on</line>
+    <line>your brows&#x2013; return as heroes who have</line>
+    <line>fought &amp; conquered &amp; who know not what</line>
+    <line>it is to turn their backs on the foe<del rend="strikethrough">s</del>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">He spoke thus with a voice so mo</line>
+    <line>dulated to the different feelings expressed</line>
+    <line>in his speech &#x2013; with an eye so full of</line>
+    <line>high design &amp; heroism that can you</line>
+    <line>wonder that the<del rend="strikethrough">n</del> men were moved &#x2013;They</line>
+    <line>looked at one <mod>
+        <del rend="strikethrough">atho</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">another</add>
+      </mod> &amp; were unable to reply.</line>
+    <line>I spoke. I told them to retire &amp; consider</line>
+    <line>of what had been said. That I would</line>
+    <line>not lead them further north if they</line>
+    <line>streneously <mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">d</add>
+      </mod>esired the contrary but that</line>
+    <line>I hoped that with reflection their courage</line>
+    <line>would return. They retired and I turned to</line>
+    <line>my friend but he was sunk<del rend="strikethrough">s</del> in languor</line>
+    <line>and almost deprived of life.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">How <del rend="strikethrough">it</del>
+      <del rend="strikethrough">will</del> all this <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will</add>
+      </mod> terminate I</line>
+    <line>know not. But I had rather die <mod>
+        <del rend="strikethrough">&amp;</del>
+        <add place="superlinear">than</add>
+      </mod> return</line>
+    <line>shamefully, my purpose unfulfilled&#x2013;Yet</line>
+    <line>I fear <mod>
+        <del rend="strikethrough">that</del>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">such</add>
+      </mod> will be my fate The</line>
+    <line>men <del rend="strikethrough">unf</del> unsupported by the ideas of glory</line>
+  </zone>
+</surface>

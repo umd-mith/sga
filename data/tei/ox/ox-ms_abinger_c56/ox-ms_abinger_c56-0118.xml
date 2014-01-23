@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0118" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0118.jp2"/>
+
+  <zone type="pagination" rend="bordered"><line>148</line></zone>
+  <zone type="main">
+    <line>in the misery of reflection. At other</line>
+    <line>times I spurred on <mod>
+        <del rend="strikethrough">my mule</del>
+        <add place="superlinear">the animal</add>
+      </mod> before</line>
+    <line>my companions that I might forget</line>
+    <line>them, the world, and more than</line>
+    <line>all myself. When at <add place="superlinear"><unclear>a</unclear></add> distance I</line>
+    <line>alighted and threw myself on</line>
+    <line>the grass <del rend="strikethrough">to shut out</del> weighed down</line>
+    <line>by horror &#x26; despair. At eight in</line>
+    <line>the evening we arrived at Chamou</line>
+    <line>nix. <mod>
+        <del rend="strikethrough">Myrtella</del>
+        <del rend="strikethrough">was</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">My father &#x26; Elizabeth were</add>
+      </mod> very much fatigued.</line>
+    <line><del rend="strikethrough">a</del> Ernest who accompanied us was</line>
+    <line>delighted and in high spirits&#x2013; The</line>
+    <line>only circumstance that detracted</line>
+    <line>from his pleasure was the south wind</line>
+    <line>and the rain that that wind seemed</line>
+    <line>to promise <del rend="strikethrough">us</del> for the next day.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We retired early to our appartments</line>
+    <line>but not to sleep:&#x2013; at least I did not. I</line>
+    <line>remained many hours at the window</line>
+    <line>watching the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">pallid</add>
+      </mod> lightning that played</line>
+    <line>above Mont Blanc &#x2013; and listening</line>
+    <line>to the rushing of the Arve which</line>
+    <line>ran before my window.</line>
+  </zone>
+</surface>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0139" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0139.jp2"/>
+  <zone type="pagination" rend="bordered"><line>155</line></zone>
+  <zone type="library"><line>70</line></zone>
+  <zone type="main">
+    <line>would die to make her happy <del rend="strikethrough">on whom I</del></line>
+    <line>and if the monster ex<del rend="strikethrough">c</del>ecuted his threat <mod
+        spanTo="#c57-0139.01"/><delSpan spanTo="#c57-0139.02" rend="strikethrough"/>die</line>
+    <line>I must.<anchor xml:id="c57-0139.02"/><anchor xml:id="c57-0139.03"/><anchor
+        xml:id="c57-0139.01"/> Yet again I considered <mod>
+        <del rend="strikethrough">if</del>
+        <add place="superlinear" hand="#pbs">whether</add>
+      </mod> my marriage</line>
+    <line>would hasten my fate if once the fiend had</line>
+    <line>determined on my death &#x2013; <mod spanTo="#c57-0139.05"/><delSpan rend="strikethrough"
+        spanTo="#c57-0139.06"/>It might indeed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"><del rend="strikethrough">protract</del> hasten</add>
+      </mod> a</line>
+    <line>few months but if he suspected that I delayed</line>
+    <line>it on his account he would certainly revenge</line>
+    <line>himself some other way<anchor xml:id="c57-0139.06"/><anchor xml:id="c57-0139.07"/><anchor
+        xml:id="c57-0139.05"/>. He had vowed <hi rend="underline">to</hi></line>
+    <line><hi rend="underline">be with me on my marriage night</hi> Yet he</line>
+    <line>did not consider that threat as binding</line>
+    <line>him to peace in the mean time &#x2013; for as</line>
+    <line>if to shew me that he was not yet</line>
+    <line>satiated with blood <del rend="strikethrough">his ne</del> he had mur-</line>
+    <line>dered Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval <add place="superlinear" hand="#pbs">immediately after the enunciation of this
+        theats</add> &#x2013; <delSpan spanTo="#c57-0139.09" rend="strikethrough"/>After many hours
+      spent</line>
+    <line>in reverie &#x26; consideration.<anchor xml:id="c57-0139.09"/>. I resolved <add
+        place="superlinear" hand="#pbs">therefore</add></line>
+    <line>that if <del rend="strikethrough">th</del>
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">my</add>
+      </mod> immediate union with</line>
+    <line>my cousin s<mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">w</add>
+      </mod>ould conduce either to hers or</line>
+    <line>my fathers happiness my <del rend="strikethrough">threatened</del> adver</line>
+    <line>sary's threats against my life should</line>
+    <line>not retard it a single hour.&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><delSpan spanTo="#c57-0139.10" rend="strikethrough"/>We returned to Geneva.
+      Elizabeth</line>
+    <line>welcome<anchor xml:id="c57-0139.10"/> In this state of mind I wrote</line>
+    <line>to Elizabeth. My letter was calm and affectio</line>
+    <line>nate &#x2013; I fear, my beloved girl, I said,</line>
+    <line>little happiness remains on earth for</line>
+    <line>us, yet <mod>
+        <del rend="strikethrough">what</del>
+        <add place="superlinear" hand="#pbs">all that</add>
+      </mod> I may one day enjoy</line>
+    <line>is <del rend="strikethrough">all</del> concentered <add place="superlinear" hand="#pbs"
+        >in</add> you. <del rend="strikethrough">my beloved one</del></line>
+    <line>Chase away your idle fears &#x2013;To you</line>
+    <line>alone do I consecrate my life &#x26; my</line>
+    <line>endeavours for <del rend="strikethrough"><unclear reason="illegible">h</unclear></del>
+      content. I have</line>
+    <line>one secret, Elizabeth, a dreadful one&#x2014;</line>
+    <line>It will chill your frame with horror</line>
+    <line>and then far from being surprised at</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0139.03">
+    <addSpan spanTo="#c57-0139.04" hand="#pbs"/>
+    <line>death was</line>
+    <line>inevitable.</line>
+    <anchor xml:id="c57-0139.04"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0139.07">
+    <addSpan spanTo="#c57-0139.08" hand="#pbs"/>
+    <line>My destruction</line>
+    <line>might inded</line>
+    <line>arrive a few</line>
+    <line>months sooner</line>
+    <line>but if my</line>
+    <line>torturer should</line>
+    <line>suspect that</line>
+    <line>I postponed</line>
+    <line>my marriage</line>
+    <line>on account of</line>
+    <line>his menaces</line>
+    <line>he would surely</line>
+    <line>find other, &#x26;</line>
+    <line>perhaps more</line>
+    <line>dreadful means</line>
+    <line>of revenge</line>
+    <anchor xml:id="c57-0139.08"/>
+  </zone>
+</surface>

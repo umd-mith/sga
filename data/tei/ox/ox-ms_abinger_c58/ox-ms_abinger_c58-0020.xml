@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0020" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0020.jp2"/>
+  <zone type="pagination"><line>122</line></zone>
+  <zone type="main">
+    <line>safe from the malignity of the <del rend="strikethrough">friend</del> fiend; my
+      father</line>
+    <line>even now might <mod>
+        <add place="sublinear" hand="#comp"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#comp">be</add>
+      </mod> writhing under his grasp and Er-</line>
+    <line>nest might be dead at his feet. This <del rend="strikethrough">p</del> idea made</line>
+    <line>me shudder and recalled me to action; I started up</line>
+    <line>and resolved to return to Geneva with all possible</line>
+    <line>speed.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">There were no horses to be procured and I must</line>
+    <line>return by the lake; but the wind was unfavourable</line>
+    <line><del rend="strikethrough">amd</del> and the rain fell in torrents. However it was</line>
+    <line>hardly morning and I might reasonably hope to arrive</line>
+    <line>by night. I hired men to row and took an oar myself</line>
+    <line>for I had always experienced relief from mental tor</line>
+    <line>ment in bodily exercise. But the overflowing misery</line>
+    <line>I now felt and the excess of agitation that I endured</line>
+  </zone>
+</surface>

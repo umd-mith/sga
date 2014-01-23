@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0116" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0116.jp2"/>
+  <zone type="pagination" rend="bordered"><line>146</line></zone>
+  <zone type="main">
+    <line>was I wa<retrace cause="clarify" hand="#pbs">s</retrace>
+      <add place="superlinear" hand="#pbs">somewhat</add> interrested <mod spanTo="#c56-0116.01"/>
+      <del rend="strikethrough" next="#c56-0116.02">and sometimes</del><add hand="#pbs"
+        place="superlinear" next="#c56-0116.03">in the scene..it sometimes</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0116.02">amused<del rend="unmarked">.</del>
+      </del><anchor xml:id="c56-0116.05"/><add place="superlinear" hand="#pbs" xml:id="c56-0116.04"
+          ><del rend="strikethrough">somehow</del> could not extinguish my grief.</add><anchor
+        xml:id="c56-0116.01"/>
+      <add place="sublinear" hand="#pbs">during</add>The first day we travelled</line>
+    <line>in a carriage. In the morning we</line>
+    <line>had seen the mountains at a distance</line>
+    <line>to which we gradually advanced. <del rend="strikethrough">Br</del></line>
+    <line>We perceived that the valley through</line>
+    <line>which we wound, and which was</line>
+    <line>formed by the Arve whose course</line>
+    <line>we followed, closed upon us by degrees</line>
+    <line>and when the sun had set we</line>
+    <line>saw immense mountains &#x26; preci</line>
+    <line>pieces overhanging <add place="superlinear" hand="#pbs">us</add> on <mod>
+        <del rend="strikethrough">each</del>
+        <add place="superlinear" hand="#pbs">every</add>
+      </mod>side</line>
+    <line><del rend="strikethrough">of us</del> &#x26; heard the sound of <mod spanTo="#c56-0116.06"
+        /><del next="#c56-0116.07" rend="strikethrough">moun</del><add next="#c56-0116.08"
+        place="superlinear" hand="#pbs">the river raging</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0116.07">tain</del>
+      <del rend="strikethrough">streams</del><add place="superlinear" xml:id="c56-0116.08"
+        hand="#pbs">among rocks</add><anchor xml:id="c56-0116.06"/>, and the dashing of the</line>
+    <line>waterfalls<del rend="unmarked">.</del><add place="intralinear" hand="#pbs"
+      >around.</add></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The next day we pursued our</line>
+    <line>journey on mules and as we ascended</line>
+    <line>still higher; the valley assumed a</line>
+    <line>more beautiful &#x26; verdant appear</line>
+    <line>ance &#x2013; Ruined castles <mod>
+        <del rend="strikethrough">on</del>
+        <add place="sublinear">^</add>
+        <add place="superlinear" hand="#pbs"><mod>
+            <del rend="strikethrough">built</del>
+            <add place="superlinear">hanging</add>
+          </mod> on the precipices of</add>
+      </mod> piny mountains;</line>
+    <line>the impetuous Arve, and cottages every</line>
+    <line>here &#x26; there peeping from among the</line>
+    <line>trees, formed a scene of singular</line>
+    <line>beauty.. But it was augment<add place="intralinear">ed</add> &#x26;</line>
+    <line>rendered sublime by the mighty</line>
+    <line>alps whose white <add place="superlinear">&#x26;</add> shining <del rend="strikethrough"
+        >pir</del></line>
+    <line>piramids &#x26; domes towered above</line>
+    <line>all like <del rend="strikethrough">the</del> another earth &#x2014;the</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0116.05">
+    <line><add xml:id="c56-0116.03" next="#c56-0116.04" hand="#pbs">lulled, <hi rend="underline"
+          >it</hi></add></line>
+  </zone>
+</surface>

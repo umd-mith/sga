@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0" lrx="5406" lry="7276"
+  xml:id="ox-ms_shelley_e1-0070" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0070.jp2"/>
+  <zone type="main">
+    <line>Both infinite as is this Universe</line>
+    <line>And thou, &#x26; thy self torturing solitude.</line>
+    <line rend="indent1">An awful Image of calm power</line>
+    <line rend="indent1">Though now thou sittest, let the hour</line>
+    <line rend="indent1">Come, when thou must appear to be</line>
+    <line rend="indent1">That which thou art internally</line>
+    <line>And after many a false &#x26; fruitless crime</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0070.01"/>Scorn track thy lagging fall thro boundless</line>
+    <line rend="right">Space &#x26; time<anchor xml:id="e1-0070.01"/></line>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="e1-0070.02"/>Prometheus<anchor xml:id="e1-0070.02"/><milestone unit="tei:stage" spanTo="e1-0070.03"/><hi rend="underline">the Phantasm vanishes</hi><anchor xml:id="e1-0070.03"/></line>
+    <line>Were these my words o Parent?</line>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="e1-0070.04"/>The Earth<anchor xml:id="e1-0070.04"/></line>
+    <line rend="indent4">They were thine</line>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="e1-0070.05"/>Prometheus<anchor xml:id="e1-0070.05"/></line>
+    <line>It doth repent me<del rend="overwritten">,</del>: words are quick &#x26; vain;</line>
+    <line>Grief for awhile is blind, &#x26; so was mine</line>
+    <line>I wish no living thing to suffer pain.</line>
+    <line rend="indent4"><del rend="strikethrough">he bends his head as in pain</del></line>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="e1-0070.06"/>The Earth<anchor xml:id="e1-0070.06"/></line>
+    <line rend="indent1">Misery o misery to me</line>
+    <line rend="indent1"><milestone unit="tei:l" spanTo="e1-0070.07"/>That Jove at length should vanquish</line>
+    <line rend="right">thee<anchor xml:id="e1-0070.07"/></line>
+  </zone>
+<zone type="pagination">294</zone>
+</surface>

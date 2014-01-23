@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0004" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0004.jp2"/>
+  <zone type="pagination"><line>106</line></zone>
+  <zone type="main">
+    <line>and when time shall have softened your despair</line>
+    <line>new and dear cares will be <del rend="strikethrough">to</del> born to replace those
+      of</line>
+    <line>whom we have been so cruelly deprived."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Such were the lessons of my father; but to</line>
+    <line>me the remembrance of the threat returned nor</line>
+    <line>can you wonder that omnipotent as the fiend</line>
+    <line>had yet been in his deeds of blood I should almost </line>
+    <line>regard him as invincible, and that when <add place="superlinear" hand="#comp">he</add>
+      had</line>
+    <line>pronounced the words, <hi rend="underline">I <del rend="strikethrough" instant="true"
+          >will</del> shall be with you</hi></line>
+    <line><hi rend="underline">on your wedding night</hi>, I should regard the </line>
+    <line>threatened fate as unavoidable. But death was </line>
+    <line>no evil to me if the loss of Elizabeth were balanced</line>
+    <line>with it and I therefore with a conten<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod>ed and even</line>
+    <line>cheerful countenance agreed with my father</line>
+    <line>that if my cousin would consent the ceremony</line>
+    <line>should take place in ten days; and thus put as I</line>
+    <line>imagined the seal to my fate.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Great God! If for one instant I had though<add place="intralinear"
+      >t</add></line>
+    <line>what might be the hellish intention of my fiendish</line>
+  </zone>
+</surface>

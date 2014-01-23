@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0114" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0114.jp2"/>
+  <zone type="pagination" rend="bordered"><line>144</line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c56-0114.01"/>so like the truth, who can assure them</line>
+    <line>selves of certain happiness? I feel as if I</line>
+    <line>were walking on the edge of precipiece</line>
+    <line>towards which thousands are crowding &#x26;</line>
+    <line>endeavouring to plunge me into the</line>
+    <line>abyss.<unclear>&#x2013;</unclear> William &#x26; Justine were assassi</line>
+    <line>nated and the murderer escap<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">es</add>
+      </mod>, wearing</line>
+    <line>human lineaments; he walks abou<mod>
+        <del rend="overwritten">l</del>
+        <add place="intralinear">t</add>
+        <del rend="strikethrough">d</del>
+      </mod></line>
+    <line>the world free &#x26; perhaps respected.</line>
+    <line>But <del rend="strikethrough">if</del> even if <del rend="strikethrough">tomo</del> I were
+      condemmed</line>
+    <line>to suffer on the scaffold for the same</line>
+    <line>crimes I would not change places with</line>
+    <line>such a wretch."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I listened to this discourse with the</line>
+    <line>extremest agony &#x2013; I &#x2013; not <mod>
+        <del rend="strikethrough"><unclear unit="chars" extent="2"/></del>
+        <del rend="strikethrough">ind</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in</add>
+      </mod> deed</line>
+    <line>but in effect was the true murderer.&#x2014;</line>
+    <line>Elizabeth read my anguish in my counte</line>
+    <line>nance, and kindly taking my hand</line>
+    <line>said&#x2013;"My dearest cousin, you must</line>
+    <line>calm yourself; these events have affect</line>
+    <line>ed me <mod>
+        <del rend="overwritten">g</del>
+        <add place="intralinear">G</add>
+      </mod>od knows how deeply! but I am</line>
+    <line>not so wretched as you are. There is an</line>
+    <line>expression of misery and sometimes of</line>
+    <line>revenge in your countenance that</line>
+    <line>makes me tremble; be calm, my <mod>
+        <restore type="stetdots">
+          <del rend="stikethrough">beloved</del>
+        </restore>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear"><unclear>best</unclear></add></del>
+      </mod></line>
+    <line>Victor, I <mod>
+        <del rend="overwritten">c</del>
+        <add place="intralinear">w</add>
+      </mod>ould sacrifice my life to your</line>
+    <line>peace. We surely shall be happy; <del rend="strikethrough">quite</del></line>
+    <line>quiet in our native country and not</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0114.01">
+    <line><add>can look </add></line>
+  </zone>
+</surface>

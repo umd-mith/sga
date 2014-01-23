@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0022" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0022.jp2"/>
+  <zone type="pagination"><line>12<mod><del rend="overwritten">2</del><add place="intralinear">4</add></mod></line></zone>
+  <zone type="main">
+    <line>dents that followed this last overwhelming event.</line>
+    <line>Mine has been a tale of horrors, I have <del rend="strikethrough">now</del> reached</line>
+    <line>their acme <del rend="strikethrough">me</del> and what I must now relate can</line>
+    <line>but be <del rend="strikethrough">de</del> tedious to you<mod>
+        <add place="intralinear" hand="#comp">.</add>
+        <del rend="strikethrough">no</del>
+        <add place="superlinear" hand="#comp">Know</add>
+      </mod> that, one by one, my friends</line>
+    <line>were snatched away; I was left desolate. <del rend="strikethrough"
+        ><unclear>ow</unclear></del> My own</line>
+    <line>strength is exhausted; and I must tell in few words</line>
+    <line>what remains of my hideous narration.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I arrived at Geneva. My father and Ernest</line>
+    <line>yet lived; but the former sunk under the tidings</line>
+    <line>that I bore. I see him now, excellent and venerable old</line>
+    <line>man; his eyes wandered in vacancy for they had lost</line>
+    <line>their charm and delight. His neice, his more than daugh</line>
+    <line>-ter whom he doated <mod>
+        <add place="sublinear" hand="#comp"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#comp">on</add>
+      </mod> with all the affection that a</line>
+    <line>man in the dec<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">l</add>
+      </mod>ine of life having few affections clings</line>
+  </zone>
+</surface>

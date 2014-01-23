@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0018" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0018.jp2"/>
+  <zone type="pagination"><line>120</line></zone>
+  <!--first "120" was mispositioned and faintly inked in upper left corner-->
+  
+  <zone type="main">
+    <line>the chamber, the shutters had been thrown back; and,</line>
+    <line>with a sensation of horror not be described, <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I</add>
+      </mod> saw <del rend="strikethrough">th</del>at</line>
+    <line>the open window a figure the most hidious and</line>
+    <line>abhorred. A grin was <del rend="strikethrough">was</del> on the face <add
+        place="superlinear">of</add> the monster;</line>
+    <line>he seemed to jeer as with his fiendish finger he pointed</line>
+    <line>towards the <del rend="strikethrough">window</del> corpse of my wife. I rushed
+      towards</line>
+    <line>the window, and, drawing a pistol from <del rend="strikethrough">the window
+      and</del></line>
+    <line>my bosom, shot; but he eluded me, leapt from his</line>
+    <line>station, and running with the swiftness of lightning</line>
+    <line>plunged into the lake. <milestone unit="tei:p"/><add place="intralinear" hand="#comp"
+          ><metamark function="paragraph">[</metamark><metamark><hi rend="sup"
+        >X</hi></metamark></add>The report of the pistol brought</line>
+    <line>a crowd into the room; I pointed to where he had</line>
+    <line>disappeared and we followed the tract with boats; nets</line>
+    <line>were cast but in vain. After passing <del rend="strikethrough">in the</del> severa<add
+        place="intralinear">l</add></line>
+    <line>hours we returned hopeless, most of my companions</line>
+  </zone>
+</surface>

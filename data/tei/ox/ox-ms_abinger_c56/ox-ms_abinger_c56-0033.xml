@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c56-0033" ulx="0" uly="0" lrx="5364" lry="7104" partOf="ox-ms_abinger_c56">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0033.jp2"/>
+    <zone type="pagination" rend="bordered"><line>63</line></zone>
+    <zone type="library"><line>15</line></zone>
+    <zone type="main">
+        <line><del rend="strikethrough">golstadt was</del><anchor xml:id="c56-0033.01"/> no
+            longer conducive to</line>
+        <line>my improvement, I thought of returning</line>
+        <line>to my friends and to my native town,</line>
+        <line>when an incident happened that</line>
+        <line>protracted my stay.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">One of those ph&#xE6;nonoma which</line>
+        <line>had <mod>
+                <del rend="strikethrough">mo<del rend="overwritten">re</del><add place="intralinear"
+                        hand="#pbs">st</add></del>
+            </mod> peculiarly attracted my atten</line>
+        <line>tion was the structure of the human</line>
+        <line>frame; and indeed that of any animal</line>
+        <line>endued with life. Whence I often asked</line>
+        <line>myself did this principle of life proceed.</line>
+        <line>It was a bold question, and one <mod>
+                <del rend="strikethrough">that</del>
+                <anchor xml:id="c56-0033.02"/>
+            </mod></line>
+        <line>has ever been considered as a mystery.</line>
+        <line>Yet how many things are we on the</line>
+        <line>brink of becoming acquainted with</line>
+        <line>if cowardice or carelessness did</line>
+        <line>not restrain <mod>
+                <del rend="strikethrough">us</del>
+                <add place="superlinear" hand="#pbs">our enquiries?</add>
+            </mod>. I revolved these circum</line>
+        <line>stances in my mind and determined</line>
+        <line>from thenceforth to apply myself more</line>
+        <line>particularly to th<mod>
+                <del rend="overwritten">at</del>
+                <add place="intralinear" hand="#pbs">ose</add>
+            </mod> branch<add place="intralinear" hand="#pbs">es</add> of natural</line>
+        <line>philosophy which <mod>
+                <del rend="strikethrough">treats</del>
+                <del rend="strikethrough">of</del>
+                <add place="superlinear" hand="#pbs">relate to</add>
+            </mod> phisiology.</line>
+        <line>Unless I had been animated by an al-</line>
+        <line>most supernatural enthusiasm, my</line>
+        <line>application to this study would have</line>
+        <line>been irksome and almost intolerable.</line>
+        <line>To examine the causes of life <del rend="strikethrough"><unclear>de</unclear></del> we
+            must</line>
+        <line>first have <del rend="strikethrough">recou</del> recourse to death.</line>
+        <line><del rend="strikethrough">No is ano anatomy</del> I became acquainted</line>
+        <line>with the science of anatomy but this</line>
+        <line>was not sufficient. I must also observe</line>
+        <line>the natural decay &#x26; corruption of the</line>
+        <line>human body. In my education</line>
+    </zone>
+    <zone type="left_margin" corresp="#c56-0033.01">
+        <line><add hand="#pbs">there being</add></line>
+    </zone>
+    <zone type="left_margin" corresp="#c56-0033.02">
+        <line><add hand="#pbs">which</add></line>
+    </zone>
+</surface>

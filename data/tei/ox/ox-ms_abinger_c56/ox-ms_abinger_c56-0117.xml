@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c56-0117" ulx="0" uly="0" lrx="5428" lry="7104"
+    partOf="#ox-ms_abinger_c56">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0117.jp2"/>
+    <zone type="pagination" rend="bordered"><line>147</line></zone>
+    <zone type="library"><line>56</line></zone>
+    <zone type="main">
+        <line>habitations of another race of beings</line>
+        <delSpan rend="vertical_line" spanTo="#c56-0117.01"/>
+        <line>Soon<del rend="strikethrough">e</del> after we entered the valley of</line>
+        <line>Chamounix. This valley is more <mod spanTo="#c56-0117.06"/><delSpan
+                spanTo="#c56-0117.02" rend="strikethrough"/>beauti</line>
+        <line>ful<anchor xml:id="c56-0117.02"/><anchor xml:id="c56-0117.03"/><anchor
+                xml:id="c56-0117.06"/> and sublime but not so beau</line>
+        <anchor xml:id="c56-0117.01"/>
+        <line>We passed the bridge of <del rend="strikethrough">Pellisier</del></line>
+        <line>Pellissier, where the ravine which the</line>
+        <line>river forms opened before us and</line>
+        <line>we began to ascend the mountain</line>
+        <line>which over hung it&#x2013;. Soon after we</line>
+        <line>entered the Valley of Chamounix. This</line>
+        <line>valley is more wonderful and sublime</line>
+        <line>but not so beautiful &#x26; picturesque</line>
+        <line>as that of Servox; through which we</line>
+        <line>had just passed. The high &#x26; snowy</line>
+        <line>mountains w<del rend="strikethrough">h</del>ere its boundaries</line>
+        <line>but <del rend="strikethrough">t</del> we saw no more ruined castles</line>
+        <line>or fertile fields. Immense glaciers</line>
+        <line>approached the road, <del rend="strikethrough">and</del> we heard</line>
+        <line>the rumbling thunder of the falling</line>
+        <line>Avelanche and marked the smoke</line>
+        <line>of its passage.&#x2013;Mont Blanc, the <mod spanTo="#c56-0117.07"/><delSpan
+                spanTo="#c56-0117.04"/>beau-</line>
+        <line>tiful<anchor xml:id="c56-0117.04"/><add place="superlinear" hand="#pbs">supreme &#x26; magnificent</add><anchor
+                xml:id="c56-0117.07"/> Mont Blanc raised itself from</line>
+        <line>the surrounding <hi rend="underline">aiguilles</hi> and its tremen</line>
+        <line>dous <hi rend="underline">dome</hi> overlooked the valley.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">During this journey I sometimes joined</line>
+        <line>Elizabeth and exerted myself to point</line>
+        <line>out to her the various beauties of the</line>
+        <line>scene.&#x2014; And often I <del rend="strikethrough">let my</del> suffered</line>
+        <line>my mule to lag behind &#x26; indulged</line>
+    </zone>
+    <zone type="left_margin" corresp="#c56-0117.03">
+        <line><del rend="strikethrough"><add>wondeful</add></del></line>
+    </zone>
+    
+</surface>

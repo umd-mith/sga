@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0008" ulx="0" uly="0" lrx="5088" lry="7082" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0008.jp2"/>
+  <zone type="main">
+    <line><mod>
+        <del rend="overwritten"><unclear unit="chars" extent="2"/></del>
+        <add place="intralinear">b</add>
+        <add place="sublinear" hand="#pbs">ut a</add>
+      </mod> violent death.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Nor were these my only visions, the</line>
+    <line>raising of ghosts or devils <mod spanTo="#c56-0008.01"/><add place="sublinear"
+          ><metamark function="insert">^</metamark></add>
+      <del rend="strikethrough" next="#c56-0008.02">was also a favour</del><add hand="#pbs"
+        place="superlinear" next="#c56-0008.05">was a promise liberally accorded by</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0008.02" next="#c56-0008.03">ite</del>
+      <del rend="strikethrough" xml:id="c56-0008.03" next="#c56-0008.04">pursuit</del>
+      <del rend="unmarked">and</del>
+      <del rend="strikethrough" xml:id="c56-0008.04">If I never saw any</del><add hand="#pbs"
+        place="superlinear" xml:id="c56-0008.05" next="#c56-0008.06">my favourite authors; the
+        fulfilment of which I most eagerly sought;</add></line>
+    <line><add place="superlinear" hand="#pbs" xml:id="c56-0008.06">&#x26; if my incantations were
+        always unsuccessful</add><anchor xml:id="c56-0008.01"/>attributed <mod>
+        <del rend="strikethrough">it</del>
+        <add place="sublinear" hand="#pbs">the failure</add>
+      </mod> rather to my own inexperience</line>
+    <line><del rend="strikethrough">th</del> and mistake, than <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to a</add>
+      </mod> want of skill <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">or fidelity</add>
+      </mod> in</line>
+    <line>my instructor<add place="intralinear" hand="#pbs">s</add>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><del rend="strikethrough">When I was about fifteen my
+        f</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The natural ph&#xE6;nonema that takes</line>
+    <line>place every day before our eyes did not</line>
+    <line>escape my exa<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear" hand="#pbs">m</add>
+      </mod>i<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear" hand="#pbs">n</add>
+      </mod>ations. <del rend="strikethrough">I remember</del>
+      <del rend="strikethrough">The</del></line>
+    <line><del rend="strikethrough">fermentation</del>
+      <del rend="strikethrough">of liquors</del> &#x2013; <del rend="strikethrough">di</del><hi
+        rend="underline">stillation</hi> of which</line>
+    <line>my favorite authors were utterly<add place="superlinear" hand="#pbs"
+            ><note><unclear>no</unclear></note></add> ignorant</line>
+    <line>excited my astonishment, but my utmost</line>
+    <line>wonder was <mod>
+        <del rend="strikethrough">caused</del>
+        <del rend="strikethrough">by an</del>
+        <add place="superlinear" hand="#pbs">engaged by some experiements</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">air pump</del>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">electrical
+          machine</add></del>
+        <add place="sublinear" hand="#pbs">on an air pump</add>
+      </mod></line>
+    <line>which I saw <mod>
+        <add place="superlinear" hand="#pbs">employed</add>
+        <del rend="strikethrough">used</del>
+      </mod> by a gentleman whom </line>
+    <line>we were in the habit of visiting.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The ignorance of my philosopher<mod>
+        <del rend="overwritten">es</del>
+        <add place="intralinear" hand="#pbs">s</add>
+      </mod> on these</line>
+    <line>and several other points, served to decrease</line>
+    <damage/>
+  </zone>
+</surface>

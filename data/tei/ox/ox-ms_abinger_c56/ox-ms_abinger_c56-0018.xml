@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0018" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0018.jp2"/>
+
+  <zone type="pagination" rend="bordered"><line>48</line></zone>
+
+  <zone type="main">
+    <line>consequences of this imprudence were</line>
+    <line>fatal: on the third day my mother</line>
+    <line>sickened. Her fever was <del rend="strikethrough">very</del> malig-</line>
+    <line>nant, <del rend="strikethrough">tr</del> and the looks of her atten</line>
+    <line>dants prognosticated the <del rend="strikethrough">wort</del> worst</line>
+    <line>evil. On her death bed the forti</line>
+    <line>tude and benignity <del rend="strikethrough">di</del> of <mod>
+        <del rend="strikethrough">my mother</del>
+        <add place="superlinear" hand="#pbs">this admirable woman</add>
+      </mod></line>
+    <line>did not desert her. She joined the</line>
+    <line>hands of Elizabeth and myself. "My</line>
+    <line>"children said she it was on your</line>
+    <line>"union that my firmest hopes of</line>
+    <line>"future happiness were placed. It</line>
+    <line>"will now be the consolation of</line>
+    <line>"your <del rend="strikethrough">fathor</del> father.<del rend="strikethrough"><add
+          hand="#pbs" place="superlinear">alone</add></del> Elizabeth, my</line>
+    <line>"love, supply my place to <del rend="strikethrough">the other</del></line>
+    <line>"your young <del rend="strikethrough">cons</del> cousins. Alas! I</line>
+    <line>"<del rend="strikethrough">almost</del> regret <mod>
+        <del rend="strikethrough">being</del>
+        <add place="superlinear" hand="#pbs">than I am</add>
+      </mod> taken from you,</line>
+    <line>"<del rend="strikethrough">h</del> and happy and beloved, as I am</line>
+    <line>"is it not hard to quit you all? But</line>
+    <line>"these are not thoughts befitting me</line>
+    <line>"I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will endeavour to</add>
+      </mod> resign myself <del rend="strikethrough">to</del> cheerfully to</line>
+    <line>"death and will indulge a hope <del rend="strikethrough" next="#c56-0018.01"
+      >my</del></line>
+    <line>"<del rend="strikethrough" xml:id="c56-0018.01">beloved</del>
+      <del rend="strikethrough">creatures</del> of meeting you</line>
+    <line>"in another world."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">She died calmly and her features</line>
+    <line>expressed <del rend="strikethrough"><unclear>lov</unclear></del> affection even in
+      death.</line>
+    <line>I need not describe the feelings of those</line>
+  </zone>
+</surface>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0129" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0129.jp2"/>
+  <zone type="pagination" rend="bordered"><line>145</line></zone>
+  <zone type="main">
+    <line>care of collecting witnesses and arranging</line>
+    <line>my defence&#x2013; I was <del rend="strikethrough">p</del> spared the disgrace</line>
+    <line>of appearing <mod>
+        <del rend="strikethrough">in the court</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">publickly as a criminal</add>
+      </mod> as <del rend="strikethrough">my trial did</del></line>
+    <line>the case was not brought before the <delSpan spanTo="#c57-0129.01" rend="strikethrough"
+      />last</line>
+    <line>court<anchor xml:id="c57-0129.01"/> court that decides on life &amp; death&#x2014;</line>
+    <line>The Gran<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1" reason="illegible"/></del>
+        <add place="intralinear">d</add>
+      </mod> Jury rejected the bill on its being</line>
+    <line>proved that I was in the <unclear reason="case">o</unclear>rkney Island <del
+        rend="strikethrough">the</del></line>
+    <line>at the hour the body <mod>
+        <del rend="strikethrough">was f</del>
+        <del rend="strikethrough"><add place="superlinear">of m</add></del>
+      </mod> of my friend was</line>
+    <line>found. And a fortnight after my removal</line>
+    <line>I was liberated from prison&#x2014;My father was</line>
+    <line>enraptured on finding me freed from the</line>
+    <line>vexations of a criminal charge &amp; that</line>
+    <line>I was again permitted to breathe the fresh</line>
+    <line>atmosphere &amp; allowed to return to my</line>
+    <line>native country. I did not participate in</line>
+    <line>these feelings for <add place="superlinear">to</add> me the walls of a</line>
+    <line>dungeon or a <del rend="strikethrough" instant="true">plal</del> palace were alike</line>
+    <line>hateful &#x2013; The cup of life was <del rend="strikethrough">to me</del> poisoned</line>
+    <line>for ever &amp; although the sun shone upon</line>
+    <line>me as <mod>
+        <del rend="strikethrough">in</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">upon</add>
+      </mod> the happy &amp; <del rend="strikethrough">light</del><add place="superlinear">gay</add>
+      of heart I</line>
+    <line>saw around me nothing but a dense &amp;</line>
+    <line>frightful darkness penetrated by no glimmer</line>
+    <line>but <del rend="strikethrough">that of</del> the light of two eyes that</line>
+    <line>glared upon me.&#x2013; Sometimes they were</line>
+    <line>the expressive eyes of Henry languishing</line>
+    <line>in death &#x2013; the dark orbs nearly covered by</line>
+    <line>the lid &amp; the <del rend="strikethrough">the</del> long lashes that fringed</line>
+    <line>it &#x2013; Sometimes it was the watry clouded</line>
+    <line>eyes of the monster as I first saw them</line>
+    <line><mod>
+        <del rend="strikethrough">at</del>
+        <add place="superlinear">in</add>
+      </mod> my chamber at Ingolstadt</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My father tried to awake <mod>
+        <del rend="strikethrough">a</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in me the</add>
+      </mod> feelings</line>
+    <line>of affection &#x2014; He talked of Geneva which I</line>
+    <line>should soon visit &#x2013; Of Elizabeth &amp; Ernest</line>
+    <line>But these words only drew from me deep</line>
+    <line>groans &#x2014; Sometimes indeed I felt a wish</line>
+  </zone>
+</surface>

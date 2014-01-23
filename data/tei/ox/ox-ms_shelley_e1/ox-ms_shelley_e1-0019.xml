@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5346" lry="7200" xml:id="ox-ms_shelley_e1-0019" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0019.jp2"/>
+  <zone type="library">9</zone>
+  <zone type="main">
+    <milestone unit="tei:speaker" spanTo="#e1-0019.01"/>
+    <line>Panthea</line>
+    <anchor xml:id="e1-0019.01"/>
+    <line>And from the other opening in the wood <metamark function="count">200</metamark></line>
+    <line>Rushes with loud &amp; whirlwind harmony</line>
+    <line>A sphere, which is as many thousand spheres,</line>
+    <line>Solid as chrystal, yet through all its mass</line>
+    <line>Flow, as through empty space, music &amp; light</line>
+    <line>Ten thousand orbs involving &amp; involved</line>
+    <line>Purple &amp; azure, <mod>
+        <add place="sublinear"><metamark>&#x2038;</metamark></add>
+        <add place="superlinear">white &amp; green &amp;</add>
+      </mod> golden <mod>
+        <del rend="strikethrough">white &amp; green</del>
+        <del rend="strikethrough"><add place="superlinear">&amp; white</add></del>
+      </mod></line>
+    <line>Sphere within sphere, &amp; every space between</line>
+    <line>Peopled with unimaginable shapes</line>
+    <line>Such as ghosts dream dwell in the lampless deep</line>
+    <line>Yet each inter transpicuous, &amp; they whirl</line>
+    <line>Over each other with a thousand motions</line>
+    <line>Upon a thousand sightless axles spinning</line>
+    <line>And with the force of self destroying swiftness</line>
+    <line>Intensely slowly solemnly roll on&#x2014;</line>
+    <line><space unit="chars" extent="33"/><mod spanTo="#e1-0019.04"/><add place="sublinear"><metamark function="insert">&#x2014;&#x2014;&#x2014;</metamark></add></line>
+    <line><anchor xml:id="e1-0019.02"/></line>
+    <line><anchor xml:id="e1-0019.03"/></line><anchor xml:id="e1-0019.04"/>
+    <line>With mighty whirl the multitudinous Orb</line>
+    <line>Grinds the bright brook into an azure mist</line>
+    <line>Of elemental subtlety, like light,</line>
+    <line>And the wild odour of the forest flowers</line>
+    <line>The music of the living grass &amp; air</line>
+    <line>The emerald light of leaf-entangled beams</line>
+    <zone type="left_margin" rotate="270" corresp="#e1-0019.02">
+      <line><add>Kindling with many</add></line>
+    </zone>
+    <zone type="left_margin" rotate="270" corresp="#e1-0019.03">
+      <line><add>Intelligible words &amp; music wild</add></line>
+    </zone>
+  </zone>
+</surface>

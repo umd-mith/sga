@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0111" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0111.jp2"/>
+  <zone type="pagination" rend="bordered"><line>127</line></zone>
+  <zone type="library">56</zone>
+  <zone type="main">
+    <line>my feelings since the night of the ap</line>
+    <line>pearance of the d&#xE6;mon. I had before</line>
+    <line>regarded my promise with gloomy despair</line>
+    <line>as a<del rend="strikethrough">n</del> thing that must <del rend="strikethrough">at</del>
+      with whatever</line>
+    <line>consequences be fulfilled but I now felt</line>
+    <line>as if a film had been taken from before</line>
+    <line>my eyes &amp; that I now for the first time</line>
+    <line>saw clearly. <del rend="strikethrough">It never once</del> The idea of</line>
+    <line>renewing my labours did not for an</line>
+    <line>instant occur to me. The threat I had</line>
+    <line>heard weighed on my thoughts but I <mod spanTo="#c57-0111.01"/><del
+        rend="strikethrough" next="#c57-0111.02">never</del>
+      <add place="superlinear" next="#c57-0111.03">did</add></line>
+    <line><anchor xml:id="c57-0111.04"/><del xml:id="c57-0111.02"
+        rend="strikethrough">suppose</del><del rend="unmarked">d</del><anchor xml:id="c57-0111.01"/>
+      that a voluntary act of mine</line>
+    <line>might avert it. I had resolved in my</line>
+    <line>own mind that to create another like</line>
+    <line>the fiend I had first made would be</line>
+    <line>an act of the basest &amp; most atrocious</line>
+    <line>selfishness and I <del rend="strikethrough">did not</del> banished</line>
+    <line>from my mind every thought that</line>
+    <line>could lead to a different conclusion</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Between two &amp; three in the morning</line>
+    <line>the moon rose and I then putting my</line>
+    <line>basket into a little skiff sailed out about</line>
+    <line>four miles from the shore &#x2013; The scene</line>
+    <line>was perfectly solitary, a few boats were</line>
+    <line>returning towards land but I sailed</line>
+    <line>away from them. I felt as if I was</line>
+    <line>about the commission of a dreadful</line>
+    <line>crime and avoided with shuddering</line>
+    <line>anxiety any e<damage type="inkblot">nc</damage>ounter with my fellow</line>
+    <line>creatures. At one time the moon which</line>
+    <line>had before been clear was suddenly <del rend="strikethrough">covered</del></line>
+    <line>overspread by a thick cloud &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I</add>
+      </mod> took advan</line>
+    <line>tage of the moment of darkness &amp; cast</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0111.04">
+    <line><add xml:id="c57-0111.03">not reflect </add></line>
+  </zone>
+</surface>

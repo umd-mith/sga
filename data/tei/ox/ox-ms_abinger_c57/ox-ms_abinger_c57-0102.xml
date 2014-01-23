@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0102" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0102.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>118</line>
+  </zone>
+  <zone type="main">
+    <line>and my eyes were shut to the horror of my</line>
+    <line>proceedings. But now I went to it in cold</line>
+    <line>blood and my heart often sicken<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>d at the</line>
+    <line>work of my hands.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Thus situated; employed in the most</line>
+    <line>detestable occupation, in <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> solitude whe<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">re</add>
+      </mod></line>
+    <line>nothing could for an instant call my <mod spanTo="#c57-0102.01"/><del rend="strikethrough"
+        next="#c57-0102.02">reflec</del><add place="superlinear">attention</add></line>
+    <line><del xml:id="c57-0102.02">tions</del><anchor xml:id="c57-0102.01"/> from the actual scene
+      in which I</line>
+    <line>was engaged, my spirits <mod>
+        <del rend="strikethrough">became</del>
+        <add place="superlinear">were</add>
+      </mod> unequal, I</line>
+    <line>became restless &amp; nervous&#x2013; Every moment I</line>
+    <line>feared to meet <del rend="strikethrough">the</del> my persecutor. Sometimes</line>
+    <line>I sat with my eyes fixed on the ground fear-</line>
+    <line>ing to raise them lest they should meet</line>
+    <line><mod>
+        <del rend="strikethrough">him</del>
+        <add place="superlinear" hand="#pbs">the object which</add>
+      </mod> I so much dreaded to <mod>
+        <del rend="strikethrough">see</del>
+        <add place="superlinear" hand="#pbs">behold</add>
+      </mod> I feared</line>
+    <line><anchor xml:id="c57-0102.03"/>wander from the sight of my fellow crea</line>
+    <line>tures lest when alone <del rend="strikethrough">he</del> He should come</line>
+    <line>to claim his companion. <del rend="strikethrough">In</del> In the</line>
+    <line>mean time I worked on &amp; my <del rend="strikethrough">f</del> labour</line>
+    <line>was already considerably advanced&#x2013; I looked</line>
+    <line>with pleasure towards <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">its</add>
+      </mod> completion yet</line>
+    <line>freedom from the curse I endured was</line>
+    <line>a joy I never dared promise myself&#x2014;</line>
+    <line><milestone unit="tei:note" spanTo="#c57-0102.04"/><add place="interlinear">Finish Chap. 2
+        here</add><anchor xml:id="c57-0102.04"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">One evening I sat in my <del rend="strikethrough" instant="true"
+        >chemic</del></line>
+    <line>workshop, the sun had set &amp; the moon</line>
+    <line>was just rising from the sea &#x2014; I had not</line>
+    <line>light sufficient for my <mod>
+        <del rend="strikethrough">work</del>
+        <add place="superlinear">employment</add>
+      </mod> and I sat</line>
+    <line>idle <del rend="strikethrough">mus</del>
+      <del rend="strikethrough">untill</del> in <mod>
+        <del rend="strikethrough">the</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> pause of consideration</line>
+    <line>of whether I should leave my labour for</line>
+    <line>the night or hasten its conclusion by an</line>
+    <line>unremitting attention to it. As I sat a train</line>
+    <line>of reflection occur<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">r</add>
+      </mod>ed to me which led to me</line>
+    <line>consider the effects of what I was now</line>
+    <line>doing. <mod>
+        <del rend="strikethrough">Two</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">three</add>
+      </mod> years before I had been engaged</line>
+    <line>in the same manner &amp; had created a</line>
+    <line>fiend whose unparralelled barbarity had</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0102.03">
+    <line><add>to </add></line>
+  </zone>
+
+</surface>

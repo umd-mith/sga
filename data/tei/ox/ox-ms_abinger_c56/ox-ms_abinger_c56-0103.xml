@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0103" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0103.jp2"/>
+  <zone type="pagination" rend="bordered"><line>133</line></zone>
+  <zone type="library"><line>49</line></zone>
+  <zone type="main">
+    <line>your Justine whom your bessed</line>
+    <line>aunt had so highly honoured and</line>
+    <line>whom you loved, was a wretch capa</line>
+    <line>ble of<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> crime which <mod>
+        <del rend="strikethrough">not</del>
+        <add place="superlinear">none</add>
+      </mod> but the</line>
+    <line>devil himself <mod>
+        <del rend="strikethrough">was capable of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">could have perpetrated</add>
+      </mod>. Dear</line>
+    <line>William, dearest blessed child, I soon</line>
+    <line>shall see you again in heaven &#x26;</line>
+    <line>glory and that consoles me going as</line>
+    <line>I am to suffer ignominy and de<add place="superlinear">"</add>ath.</line><!--quotation mark above death due to lack of space on right margin-->
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Oh Justine" cried the weeping</line>
+    <line>Elizabeth, "forgive me for having for</line>
+    <line>one moment distrusted you &#x2013; <del rend="strikethrough">But</del></line>
+    <line>why did<add place="superlinear">you</add> confess? But do not mourn</line>
+    <line>my dear girl, I will every where</line>
+    <line>proclaim your innocence and will</line>
+    <line>force belief. Yet you must die &#x2013;</line>
+    <line>you my companion, my playfellow,</line>
+    <line>my more than sister&#x2014; die &#x2013;I never</line>
+    <line>never can survive so horrible</line>
+    <line>a misfortune".</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Dear Sweet lady," do not weep"&#x2013;</line>
+    <line><del rend="strikethrough">sai</del> replied Justine"&#x2013; you ought to</line>
+    <line>raise me <del rend="strikethrough">w</del> with thoughts of a better</line>
+    <line><mod>
+        <del rend="strikethrough">world</del>
+        <add place="superlinear">life<space unit="chars" extent="2"/>,</add>
+      </mod> and elevate me from the</line>
+    <line>petty cares of this world of injustice</line>
+    <line>and strife &#x2013;Do not you, excellent</line>
+    <line>Elizabeth drive me to despair."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Elizabeth <del rend="strikethrough">Em</del> embraced the
+      suffer</line>
+    <line>er "I will try to comfort you," said she<unclear>,</unclear></line>
+  </zone>
+</surface>

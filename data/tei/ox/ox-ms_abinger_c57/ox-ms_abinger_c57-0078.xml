@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0078" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0078.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>100</line>
+  </zone>
+  <zone type="main">
+    <line>the expectation of our union.&#x2014;</line>
+    <line>The expression of your sentiments, <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">on this subject</add>
+      </mod> my dear Victor,</line>
+    <line><del rend="strikethrough">rejoined my father,</del>
+      <del rend="strikethrough">have restored</del> gives</line>
+    <line>me more pleasure than I have <del rend="strikethrough">known</del></line>
+    <line>for some time <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">experienced</add>
+      </mod>. If you feel thus we</line>
+    <line>shall assuredly be happy however pre</line>
+    <line>sent events may cast a gloom over us.<add place="superlinear"
+      ><metamark>X</metamark></add></line>
+    <line><delSpan spanTo="#c57-0078.01" rend="vertical_line"/><del rend="strikethrough">But tell me
+        then what it is that occa</del></line>
+    <line>sions your present discomfort. Are</line>
+    <line>you<del rend="strikethrough">r</del> weary of your slothful life &amp;</line>
+    <line>do you wish while you are yet young</line>
+    <line>to travel &amp; treasure recollections &amp;</line>
+    <line>pleasures for your future years? I</line>
+    <line>have thought much of this and am</line>
+    <line>come to a resolution that <del rend="strikethrough">y</del> if your</line>
+    <line>inclinations so impell you that you</line>
+    <line>should accompany Henry Clairval</line>
+    <line>in a journey he intends to make to England</line>
+    <line>You understand well the language</line>
+    <line>of that country and I think no <del rend="strikethrough" instant="true">jou</del>
+      tour</line>
+    <line>could be more useful or agreable</line>
+    <line>to you.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Any change of scene was agreable</line>
+    <line>to me and I was delighted with the</line>
+    <line>idea of spending a year or two away</line>
+    <line>from my family during which time</line>
+    <line>some event might happen which</line>
+    <line>would restore me to them in peace</line>
+    <line>&amp; happiness. My promise might</line>
+    <line>be fulfilled the monster depart or</line>
+    <line>some <del rend="strikethrough">other</del> event <unclear reason="illegible">p</unclear>
+      might take</line>
+    <line>place to destroy him &amp; put an end</line>
+    <anchor xml:id="c57-0078.01"/>
+  </zone>
+
+  <zone type="left_margin">
+    <line><add><metamark function="sequence">2</metamark></add></line>
+  </zone>
+
+  <zone type="left_margin">
+    <milestone unit="tei:note" spanTo="#c57-0078.02"/>
+    <delSpan rend="vertical_line" spanTo="#c57-0078.03"/>
+    <addSpan hand="#pbs" spanTo="#c57-0078.04"/>
+    <line>I think</line>
+    <line>the journey</line>
+    <line>to England</line>
+    <line>ought to be</line>
+    <line><hi rend="underline">Victor's</hi> propo</line>
+    <line>-sal.&#x2013; that he</line>
+    <line>ought to go</line>
+    <line>for the purpose of</line>
+    <line>collecting</line>
+    <line>knowledge, for</line>
+    <line>the formation</line>
+    <line>of a female.</line>
+    <line>He ought to</line>
+    <line>lead his father to</line>
+    <line>this in</line>
+    <line>the conversa</line>
+    <line>tions&#x2013;the</line>
+    <line>conversation</line>
+    <line><hi rend="underline">commences</hi></line>
+    <line>right enough</line>
+    <anchor xml:id="c57-0078.04"/>
+    <anchor xml:id="c57-0078.03"/>
+    <anchor xml:id="c57-0078.02"/>
+  </zone>
+</surface>

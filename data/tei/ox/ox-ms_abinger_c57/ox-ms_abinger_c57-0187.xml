@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0187" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0187.jp2"/>
+  <zone type="pagination" rend="bordered"><line>203</line></zone>
+  <zone type="main">
+    <line>If a desire for <del rend="strikethrough">my</del>
+      <del rend="strikethrough">unhapiness</del> revenge remain<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">s</add>
+        <del rend="strikethrough">d</del>
+      </mod></line>
+    <line>to you in death it would be better satisfied in</line>
+    <line>my life than in my destruction &#x2013; <del rend="strikethrough">B</del> But it
+      was</line>
+    <line>not so. You wished for my extinction that I</line>
+    <line>might not cause greater <mod>
+        <del rend="strikethrough">misery</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">wretchedness</add>
+      </mod> to others &amp;</line>
+    <line>now you will not desire my life for my</line>
+    <line>own misery. <del rend="strikethrough">In destroying you</del>
+      <mod>
+        <del rend="strikethrough">Miserabl</del>
+        <del rend="unmarked">e</del>
+        <add place="superlinear" hand="#pbs">Blasted</add>
+      </mod></line>
+    <line>as you were my <mod>
+        <del rend="strikethrough">wretchedness</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">agony</add>
+      </mod> is superior to</line>
+    <line>yours for remorse is the bitter sting that</line>
+    <line>rankles in my wounds &amp; tortures me to</line>
+    <line>madness.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">But soon, he cried clasping his hands</line>
+    <line>I shall die and what I now feel will no</line>
+    <line>longer be felt &#x2013; soon these thoughts &#x2013;these</line>
+    <line>burning miseries will be extinct &#x2013;I</line>
+    <line>shall ascend my pile triumphantly &amp; the</line>
+    <line>flame that consumes my body will give</line>
+    <line><mod>
+        <del rend="strikethrough">rest &amp; blessings</del>
+        <add place="superlinear" hand="#pbs">enjoyment or tranquillity</add>
+      </mod> to my mind.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">He sprung from the cabin window</line>
+    <line>as he said this <mod>
+        <del rend="strikethrough">on to</del>
+        <add place="superlinear" hand="#pbs">upon</add>
+      </mod> an ice raft that</line>
+    <line>lay close to the vessel <mod>
+        <del rend="strikethrough">p</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">&amp;</del>
+        <add place="superlinear">&amp;</add>
+      </mod> pushing him</line>
+    <line>self off he was carried away by the</line>
+    <line>waves and I soon lost sight of him</line>
+    <line>in the darkness &amp; distance.</line>
+  </zone>
+</surface>

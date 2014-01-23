@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0105" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0105.jp2"/>
+  <zone type="pagination" rend="bordered"><line>135</line></zone>
+  <zone type="library"><line>50</line></zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">During this conversation I had retired</line>
+    <line>to a corner of the prison-room where</line>
+    <line>I could conceal the horrid anguish</line>
+    <line>that possessed me&#x2013; Despair<unclear reason="illegible">!</unclear> Who dared</line><!--exclamation mark could be question mark -->
+    <line>talk of that? The poor victim who</line>
+    <line>on the morrow was to pass the</line>
+    <line>dreary boundary of life &#x26; death felt</line>
+    <line>not as I did &#x2014; Such deep &#x26; bitter agony</line>
+    <line>I gnashed my teeth and ground them</line>
+    <line><del rend="strikethrough"><unclear unit="chars" extent="1"/></del> together uttering a
+      groan that came</line>
+    <line>from my inmost soul. Justine started</line>
+    <line><del rend="strikethrough">and</del> when she saw wh<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">o</add>
+        <del rend="strikethrough">t</del>
+      </mod> it was</line>
+    <line>she approached me. "Dear Sir," said</line>
+    <line>she, "you are very kind to visit me;</line>
+    <line>you I hope do not believe that I am</line>
+    <line>guilty."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><del rend="strikethrough">"</del>I could not answer &#x2013; "No Justine"</line>
+    <line>said Elizabeth; "he is <del rend="strikethrough">even</del> more</line>
+    <line>convinced of your innocence than</line>
+    <line>I was for even when he heard</line>
+    <line>that you had confessed he did not </line>
+    <line><mod>
+        <del rend="strikethrough">believe</del>
+        <anchor xml:id="c56-0105.01"/>
+      </mod> it."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"I truly than<add place="intralinear">k</add> him"&#x2013;
+      said Justine</line>
+    <line>"In these last minutes I feel the</line>
+    <line>sincerest gratitude for those who</line>
+    <line>still think of me with kindness. How</line>
+    <line>sweet is the affection of others to</line>
+    <line>such a wretch as I am &#x2013; It removes</line>
+    <line>more than half my misfortune</line>
+    <line>and I feel as if I could die in <del rend="strikethrough">pea</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0105.01">
+    <add>credit</add>
+  </zone>
+</surface>

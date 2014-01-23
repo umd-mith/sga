@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0154" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0154.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>170</line>
+  </zone>
+  <zone type="main">
+    <line>hension of the murderer<unclear>.</unclear></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The magistrate listened <del rend="strikethrough">to</del> to me with
+      at-</line>
+    <line><add place="intralinear">ten</add>tion &amp; kindness &#x2013; Be assured, sir, said he no
+      pains</line>
+    <line>or exertions on my part <del rend="strikethrough" instant="true">sha</del> have been
+      or</line>
+    <line>shall be spared to discover the <mod>
+        <del rend="strikethrough">wretch</del>
+        <add hand="#pbs" place="intralinear">villain</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I thank you, <add place="intralinear">I</add> replied, listen therefore
+      to</line>
+    <line><mod>
+        <del rend="strikethrough">a</del>
+        <anchor xml:id="c57-0154.01"/>
+      </mod>
+      <mod>
+        <del rend="strikethrough">tale</del>
+        <add place="superlinear">deposition</add>
+      </mod> I have to <mod>
+        <del rend="strikethrough">relate</del>
+        <add place="superlinear">make</add>
+      </mod>. <del rend="strikethrough" instant="true">which</del> It is a indeed a</line>
+    <line>tale so <del rend="strikethrough" instant="true">wonderf</del> strange that I fear you
+      would</line>
+    <line>not credit it were there not somthing in</line>
+    <line>truth which however wonderful forces</line>
+    <line>conviction. The story is <add place="superlinear">too</add> connected to be mis</line>
+    <line>taken for a dream &amp; I have no motive</line>
+    <line>for falsehood. My manner as I said this</line>
+    <line><del rend="strikethrough" instant="true">wals</del> was impressive but calm; I had
+      formed</line>
+    <line>in my own heart the resolution to pursue</line>
+    <line>my destroyer to death &amp; this purpose quieted</line>
+    <line>my agony &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">provisionally</add>
+      </mod> reconciled me to life. I now</line>
+    <line>related my history briefly but with firmness</line>
+    <line>&amp; precision &#x2013; marking dates with accuracy</line>
+    <line>and never deviating into invective or</line>
+    <line>exclamation. The magistrate appeared at</line>
+    <line>first perfectly incredulous but as I con</line>
+    <line>tinued he became <del rend="strikethrough" instant="true">be</del> more atte<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">nt</add>
+      </mod>ive &amp;</line>
+    <line>interrested &#x2013;I saw him sometimes shudder</line>
+    <line>with horror, at others a lively surprise</line>
+    <line>unmi<mod>
+        <del rend="strikethrough">xed</del>
+        <add place="superlinear" hand="#pbs">ngled</add>
+      </mod> with disbelief was painted</line>
+    <line>on his countenance. When I had concluded</line>
+    <line>my <del rend="strikethrough" instant="true">relation I</del> narration I said.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">This is the being whom I accuse</line>
+    <line>and for whose detection &amp; punishment</line>
+    <line>I call upon you <add place="superlinear" hand="#pbs">to</add> exert your whole
+      power</line>
+    <line><mod>
+        <del rend="overwritten">Th</del>
+        <add place="intralinear">It</add>
+        <del rend="strikethrough">is</del>
+      </mod> is your duty as a magist<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>ate and</line>
+    <line>I believe &amp; hope your feelings as a man</line>
+    <line>do not revol<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> from the execution</line>
+    <line>of <mod>
+        <del rend="strikethrough">your</del>
+        <add place="superlinear" hand="#pbs">those</add>
+      </mod> functions on this occasion.&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">This address caused a considerable</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0154.01">
+    <line><add>the </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0178" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0178.jp2"/>
+  <zone type="pagination" rend="bordered"><line>194</line></zone>
+  <zone type="main">
+    <line>loud &amp; long continued.&#x2013; Frankenstein who was dozing</line>
+    <line>awoke<mod>
+        <del rend="overwritten">k</del>
+        <add place="intralinear">d</add>
+      </mod>e &amp; asked the reason <add place="superlinear" hand="#pbs">of the
+      tumult</add>&#x2013; I was unable to</line>
+    <line>reply. He asked again &#x2013; They shout I said be</line>
+    <line>cause they will soon return to England.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Do you then really return.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Alas yes. I cannot with<del rend="strikethrough"
+      >a</del>stand their</line>
+    <line>demands &#x2013; I cannot lead them <del rend="strikethrough">to danger</del></line>
+    <line>unwi<mod>
+        <del rend="overwritten">tt</del>
+        <add place="intralinear">ll</add>
+      </mod>ingly <add place="superlinear">to dangerer</add> &amp; I must return.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Do so if you will, <del rend="strikethrough">said my
+        friend,</del> but</line>
+    <line>I will not. You may give up your pur</line>
+    <line>pose but mine is assigned to b<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">y</add>
+      </mod> heaven</line>
+    <line>and I dare not. I am weak, <delSpan rend="strikethrough" spanTo="#c57-0178.01"/>continued
+      he</line>
+    <line>sinking down<del rend="strikethrough">g</del> again<anchor xml:id="c57-0178.01"/> but
+      surely the <mod spanTo="#c57-0178.02"/><delSpan spanTo="#c57-0178.03" rend="strikethrough"
+      />minis</line>
+    <line>ters<anchor xml:id="c57-0178.03"/><anchor xml:id="c57-0178.04"/><anchor
+        xml:id="c57-0178.02"/> who assist my vengeance will endow</line>
+    <line>me with sufficient strength &#x2013; Saying</line>
+    <line>this endeavoured to spring from the bed</line>
+    <line>but the exertion was too great <mod>
+        <del rend="strikethrough">fror</del>
+        <add place="superlinear">for</add>
+      </mod> him</line>
+    <line>he fell back &amp; fainted. It was <add place="superlinear">long</add> before he</line>
+    <line>was restored I often thought that life</line>
+    <line>was entirely extinct &#x2013; <del rend="strikethrough">but</del>
+      <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>t length he</line>
+    <line>opened his eyes &#x2013; but he breathed with</line>
+    <line>difficulty and was unable to speak &#x2013; The</line>
+    <line><mod>
+        <del rend="strikethrough">ph<mod>
+            <del rend="overwritten">y</del>
+            <add place="intralinear">i</add>
+          </mod>sycian</del>
+        <add place="superlinear" hand="#pbs">surgeon,</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">ordered us to give</del>
+        <add place="superlinear">gave him a</add>
+      </mod> composing</line>
+    <line>draught and ordered us to leave him</line>
+    <line><del rend="strikethrough">qu</del> undisturbed. I<mod>
+        <del rend="overwritten"><unclear>t</unclear></del>
+        <add place="intralinear">n</add>
+      </mod> the mean time he</line>
+    <line>told me that my friend had certainly</line>
+    <line>not many hours to live.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">His sentence was pronounced &amp; I</line>
+    <line>could only grieve &amp; be <del rend="strikethrough">pass</del> patient. I</line>
+    <line>sat by <del rend="strikethrough">he</del> his bed watching him &#x2013;his eyes</line>
+    <line>were closed and I thought he slept. But</line>
+    <line>presently he called to me in a feeble voice</line>
+    <line>and bidding me come near said&#x2013; Alas! the</line>
+    <line>strength I relied on is gone &#x2013; I feel that I</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0178.04">
+    <line><add>spirits</add></line>
+  </zone>
+</surface>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0080" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0080.jp2"/>
+  <zone type="pagination" rend="bordered"><line>102</line></zone>
+  <zone type="main">
+    <delSpan rend="vertical_line" spanTo="#c57-0080.01"/>
+    <line>to Geneva. These two years, said he, will pass</line>
+    <line>swiftly and it will be the last delay that will</line>
+    <line>oppose itself to your happiness. How do I long</line>
+    <line>for that time when we shall be all</line>
+    <line>united and <mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add place="superlinear">neither</add>
+      </mod> hopes or fears <mod>
+        <del rend="strikethrough">will</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">arise</add>
+      </mod> destroy our</line>
+    <line>domestic felicity. <milestone unit="tei:p"/>
+    </line>
+    <line rend="indent2">I am content, I replied, with your </line>
+    <line>arrangement. By that time we shall</line>
+    <line>both have become wiser &amp; I hope happier</line>
+    <line>than we are now. I sigh<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">e</add>
+      </mod>d. But my father</line>
+    <line>kindly forebore to question me concerning</line>
+    <line>the cause of my dejection. He hoped that</line>
+    <line>new scenes &amp; the amusement of travelling</line>
+    <line>would restore my tranquility<add place="intralinear"><metamark>X</metamark></add></line>
+    <anchor xml:id="c57-0080.01"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">It was in the latter end of August</line>
+    <line>that I departed to pass two years of exile.</line>
+    <line><del type="strikethrough">M</del> Elizabeth approved of the reasons of my</line>
+    <line>departure and only regretted that she</line>
+    <line>had not the same opportunities of enlarg</line>
+    <line>ing her experience &amp; cultivating her</line>
+    <line>understanding &#x2013;She wept however as she</line>
+    <line>bade me farewell and entreated to return</line>
+    <line>happy &amp; tranquil. We all, said she, depend</line>
+    <line>upon you, &amp; if you are miserable</line>
+    <line>what must be our feelings?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I threw myself into the carriage</line>
+    <line>that was to conve<retrace cause="clarify">y</retrace> me away hardly</line>
+    <line>knowing <mod>
+        <del rend="strikethrough">where</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">whither</add>
+      </mod> I was going &amp; carless of</line>
+    <line>what was passing around. I remembered</line>
+    <line>only, and it was with a bitter anguish</line>
+    <line>that I reflected on it, to order that my</line>
+    <line>chemical instruments should be packed</line>
+    <line>to go with me. For I resolved to fulfil</line>
+    <line>my promise while abroard &amp; return if</line>
+    <line>possible a free man. Filled with</line>
+  </zone>
+
+  <zone type="left_margin">
+    <line><metamark function="sequence">4</metamark></line>
+  </zone>
+
+</surface>

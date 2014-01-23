@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0069" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0069.jp2"/>
+  <zone type="pagination" rend="bordered"><line>94</line></zone>
+  <zone type="library"><line>35</line></zone>
+  <zone type="main">
+    <line>of man and to inhabit those wilds where</line>
+    <line>the beasts of the field will be your only co<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">m</add>
+      </mod></line>
+    <line>panions. How can you who long for the love</line>
+    <line>&amp; sympathy of <mod>
+        <del rend="strikethrough">human being</del><del rend="unmarked">s</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">man</add>
+      </mod> persevere in</line>
+    <line>this exile? You will return and seek</line>
+    <line><del rend="strikethrough">for</del> their kindness &amp; you will meet their</line>
+    <line>detestation; your evil <del rend="strikethrough">w</del> passions will</line>
+    <line>be renewed, &amp; you will then have</line>
+    <line>a companion to aid you in your</line>
+    <line>task of destruction. Begone; I cannot</line>
+    <line>consent.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The Monster replied with fervour,</line>
+    <line>How inconstant are your feelings; but</line>
+    <line>a moment ago you were moved by</line>
+    <line>my representations, &amp; why do you again</line>
+    <line>harden yourself to my complaints? I</line>
+    <line>swear by the earth which I inhabit</line>
+    <line>&amp; by you that made me that with</line>
+    <line>the companion you bestow I will</line>
+    <line>quit the neighbourhood of man &amp;</line>
+    <line>dwell, as it may chance, in the</line>
+    <line>most savage <del rend="strikethrough">of</del> places. My evil</line>
+    <line>passions will have fled, for I shall</line>
+    <line>meet with sympathy. My life will</line>
+    <line>flow quietly away &amp; in my dying <del rend="strikethrough">momen</del></line>
+    <line>moments I shall not curse my</line>
+    <line>maker.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">His words had a strange effect</line>
+    <line>upon me. I compassionated him &amp;</line>
+    <line>sometimes felt a wish to console him</line>
+    <line>but when I looked on him when I saw</line>
+    <line>the filthy mass that moved &amp; talked</line>
+    <line>my heart sickend &amp; my feelings were</line>
+    <line>altered to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">those</add>
+      </mod> horror &amp; hatred. I tried to</line>
+    <line>stifle them I thought that as I could</line>
+    <line>not <mod>
+        <del rend="strikethrough">comfort</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">sympathize</add></del>
+      </mod>
+      <del rend="strikethrough">him I h</del>
+      <del rend="strikethrough">sympo</del> sympa</line>
+  </zone>
+</surface>

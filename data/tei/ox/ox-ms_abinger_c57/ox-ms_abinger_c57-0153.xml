@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0153" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0153.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>169</line>
+  </zone>
+  <zone type="library">
+    <line>77</line>
+  </zone>
+  <zone type="main">
+    <line>in my arms</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">What then became of me? I know</line>
+    <line>not&#x2014;I lost sensation &amp; chains &amp; darkness were</line>
+    <line><anchor xml:id="c57-0153.01"/>only objects that pressed upon me &#x2013; some</line>
+    <line>times indeed I dreamed that I wandered</line>
+    <line>in flowery meadows &amp; pleasant vales with</line>
+    <line>the friends of my youth &#x2013; But I awoke &amp;</line>
+    <line>found myself in a dungeon. Melancholy</line>
+    <line>followed but by degrees I regained a clear</line>
+    <line>conception of my miseries &amp; situation &amp;</line>
+    <line>was then released from my prison. For</line>
+    <line>they had called me mad &amp; <mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear" hand="#pbs">During</add>
+      </mod> many</line>
+    <line>months as I understood a solitary</line>
+    <line>cell had been my habitation. &#x2013; <delSpan rend="strikethrough" spanTo="#c57-0153.02"
+      />But I</line>
+    <line>might now wander freely<anchor xml:id="c57-0153.02"/> But liberty</line>
+    <line><mod>
+        <del rend="strikethrough">was a</del>
+        <anchor xml:id="c57-0153.03"/>
+        <add place="superlinear">a</add>
+      </mod> useless gift to me had <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I</add>
+      </mod> not as I a-</line>
+    <line>wakened to reason <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">at the same time <del rend="strikethrough">been</del></add>
+      </mod> awakened to vengeance.</line>
+    <line>As <del rend="strikethrough" instant="true">pa</del> the memory of past misfortunes</line>
+    <line>prest upom me I began to <del rend="strikethrough">f</del> reflect</line>
+    <line><mod>
+        <del rend="strikethrough">of</del>
+        <anchor xml:id="c57-0153.04"/>
+      </mod> their cause &#x2013; The monster whom I had</line>
+    <line>created&#x2014;the miserable d&#xE6;mo<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod> whom</line>
+    <line>I had sent abroard in the world for my des</line>
+    <line>truction &#x2014; I was possessed by a madening</line>
+    <line>rage when I thought of him and desired</line>
+    <line>&amp; ardently prayed that I might have him</line>
+    <line>with<add place="intralinear">in</add> my grasp to wreak <add hand="#pbs"
+        place="superlinear">a</add> great &amp; sig</line>
+    <line>nal <mod>
+        <del rend="strikethrough">vengeance</del>
+        <add place="superlinear" hand="#pbs">revenge</add>
+      </mod> on hi<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">s</add>
+        <add place="intralinear"> cursed head.</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Nor did my hate long confine its</line>
+    <line>elf to useless wishes; I began to reflect on</line>
+    <line>the best means of securing him &amp; for</line>
+    <line>this purpose about a month after my</line>
+    <line>release I repaired to a criminal judge</line>
+    <line>in the town &amp; told him that I had an accu</line>
+    <line>sation to make, that I knew the destroyer</line>
+    <line>of my family and that I required him</line>
+    <line>to exert his whole authority for <mod>
+        <del rend="strikethrough">his</del>
+        <add place="superlinear">the</add>
+      </mod> appre</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0153.01">
+    <line><add>the </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0153.03">
+    <line><add>had been </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0153.04">
+    <line><add>on</add></line>
+  </zone>
+</surface>

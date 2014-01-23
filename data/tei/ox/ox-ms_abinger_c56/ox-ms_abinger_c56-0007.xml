@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0007" ulx="0" uly="0" lrx="5088" lry="7082" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0007.jp2"/>
+
+  <zone type="library"><line>2</line></zone>
+
+  <zone type="main">
+    <line>definite censure of my favorite Agrippa,</line>
+    <line>always withheld me. <del rend="strikethrough">I let</del> I disclosed my secret</line>
+    <line>to Elizabeth therefore, under a strict promise</line>
+    <line>of secrecy; but she did not interest herself</line>
+    <line>in <mod>
+        <del rend="strikethrough">them</del>
+        <del rend=" strikethrough"><add hand="#pbs" place="superlinear"
+          >m<unclear>y</unclear></add></del>
+        <add hand="#pbs" place="superlinear">the subject,</add>
+      </mod> and I was left by her to pursue</line>
+    <line>my studies alone. &#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">It may appear very strange that a desci</line>
+    <line>ple of Albertus Magnus should arise in the</line>
+    <line>eighteenth century, but our family was not</line>
+    <line>scientifical, and I <mod>
+        <del rend="strikethrough">did</del>
+        <add hand="#pbs" place="superlinear">had</add>
+      </mod> not attend<add hand="#pbs" place="intralinear">ed</add> any of the</line>
+    <line> lectures given at Geneva. My dreams were</line>
+    <line> therefore undisturbed by reality, and I entered</line>
+    <line>with the greates diligence into the search</line>
+    <line> of the philosophers stone and the <add hand="#pbs" place="superlinear"><note>or if you
+          chose petrum philosophale</note></add>
+      <mod spanTo="#c56-0007.01"/>
+      <del rend="strikethrough" next="#c56-0007.02">elizer vi</del>
+      <add hand="#pbs" place="superlinear">elixer of life</add></line>
+    <line><del rend=" strikethrough" xml:id="c56-0007.02">t&#xE6;</del><anchor xml:id="c56-0007.01"
+      />. But the latter obtained my most undi</line>
+    <line>ved attention; wealth was an inferior</line>
+    <line>object but what would be the glory</line>
+    <line> of the discovery if I could <del rend=" strikethrough">besto</del>
+      <del rend=" strikethrough">forever</del></line>
+    <line>banish disease from the human frame</line>
+    <line>and render man <mod>
+        <del rend=" strikethrough">unatainable</del>
+        <del rend=" strikethrough">by</del>
+        <add place="superlinear">invunerable to</add>
+      </mod> any</line>
+    <damage type="tear"/>
+  </zone>
+
+</surface>

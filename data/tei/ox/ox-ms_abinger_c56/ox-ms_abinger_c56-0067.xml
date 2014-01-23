@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0067" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0067.jp2"/>
+  <zone type="pagination" rend="bordered"><line>97</line></zone>
+  <zone type="library"><line>31</line></zone>
+  <zone type="main">
+    <line><del rend="strikethrough">he therefore</del><anchor xml:id="c56-0067.01"/> changed the
+      subject from</line>
+    <line>my improvement, to the science itself,</line>
+    <line>with <del rend="strikethrough">an</del> a desire as I evidently saw</line>
+    <line>of drawing <del rend="strikethrough">friend</del> me out. <del rend="strikethrough"
+        >K</del>
+      <delSpan spanTo="#c56-0067.02" rend="strikethrough"/>Kind</line>
+    <line>friend he tortured me without<anchor xml:id="c56-0067.02"/>
+      <delSpan spanTo="#c56-0067.03" rend="strikethrough"/>but</line>
+    <line>it<anchor xml:id="c56-0067.03"/>
+      <del rend="strikethrough">How cruel is</del> What could I do?</line>
+    <line>He meant to please <del rend="strikethrough">and</del>
+      <del rend="strikethrough">me</del> &#x26; he</line>
+    <line><mod>
+        <del rend="strikethrough">tortured</del>
+        <anchor xml:id="c56-0067.04"/>
+      </mod> me <mod>
+        <del rend="strikethrough">it was</del>
+        <add place="superlinear">I felt</add>
+      </mod> as if he <del rend="strikethrough">had</del></line>
+    <line><anchor xml:id="c56-0067.05"/>carefully one by one <del rend="strikethrough">placed</del>
+      in my</line>
+    <line>view those instruments which were</line>
+    <line><anchor xml:id="c56-0067.06"/>afterwards used in putting me to a</line>
+    <line>slow and cruel <del rend="strikethrough">dre</del> death. I writhed</line>
+    <line>under his words, yet dared not shew</line>
+    <line><del rend="strikethrough">my</del> the pain I felt. Clerval, whose</line>
+    <line>eyes and feelings were always quick</line>
+    <line>in di<add place="intralinear" hand="#pbs">s</add>cerning the sensations of others</line>
+    <line>declined the subject alledging <mod>
+        <del rend="strikethrough">in</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">his</add>
+      </mod></line>
+    <line>ignorance &#x26; the conversation took</line>
+    <line>a more general turn. I thanked him</line>
+    <line>from my heart, but I did not speak.</line>
+    <line>I plainly saw that he was surprised,</line>
+    <line>but he never attempted to draw</line>
+    <line>my secret from me, and although</line>
+    <line>I loved him with a mixture of</line>
+    <line><mod>
+        <del rend="strikethrough">love</del>
+        <anchor xml:id="c56-0067.07"/>
+      </mod> and reverence that knew no</line>
+    <line>bounds, yet I could never <del rend="strikethrough"><unclear>pr</unclear></del>
+      persuade</line>
+    <line>myself to confide to him that event</line>
+    <line>which was so often present to my</line>
+    <line>thoughts, but which I feared the detail</line>
+    <line>to another would only impress more deeply.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0067.01">
+    <line><add>and</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0067.04">
+    <line><add>tormented</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0067.05">
+    <line><add>placed </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0067.06">
+    <line><add>to be </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0067.07">
+    <line><add>affection</add></line>
+  </zone>
+</surface>
