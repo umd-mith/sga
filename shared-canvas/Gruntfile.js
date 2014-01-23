@@ -6,9 +6,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-connect-proxy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');  
   grunt.loadNpmTasks('grunt-bower-task');
@@ -29,44 +29,19 @@ module.exports = function(grunt) {
     },
 
     concat: {
-      coffee: {
-        options: {
-          process: function (src) {
-            src = grunt.util.normalizelf(src);
-            return src.split(grunt.util.linefeed).map(function (line) {
-                return '    ' + line;
-            }).join(grunt.util.linefeed);
-          }
-        },
-        src: ['src/presentation.coffee',
-              'src/data.coffee',
-              'src/component.coffee',
-              'src/controller.coffee',
-              'src/core.coffee',
-              'src/application.coffee'],
-        dest: 'src/sc_middle_tmp.coffee'
-      },
       bower_js: {
         options: {
           separator: ';'
         },
         src: ['bower_components/modernizr/modernizr.js',
-              'bower_components/jquery/jquery.min.js', 
-              'lib/vendor/jquery-migrate-1.1.0.js',
-              'bower_components/jquery-ui/ui/minified/jquery-ui.min.js', 
-              'lib/vendor/jquery.ba-bbq.min.js',
-              'bower_components/q/q.js',
+              'bower_components/jquery/jquery.min.js',
+              'bower_components/jquery-ui/ui/minified/jquery-ui.min.js',
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'lib/vendor/google-prettify.js',
               'bower_components/underscore/underscore.js',
-              'bower_components/backbone/backbone-min.js',
-              'bower_components/mithgrid/dist/mithgrid.min.js'], 
+              'bower_components/backbone/backbone-min.js'], 
         dest: 'demo/js/bower_components.js'
       }
-    },
-
-    clean: {
-      coffee: ['src/sc_middle_tmp.coffee']
     },
 
     coffee: {
@@ -75,9 +50,13 @@ module.exports = function(grunt) {
           join: true
         },
         files: { 
-          'dist/<%= pkg.name %>.js': ['src/intro.coffee', 
-                                      'src/sc_middle_tmp.coffee',
-                                      'src/outro.coffee']
+          'dist/<%= pkg.name %>.js': ['src/intro.coffee',
+                                      'src/utils.coffee',
+                                      'src/data.coffee',
+                                      //'src/application.coffee',
+                                      'src/component.coffee',
+                                      'src/view.coffee',
+                                      'src/router.coffee']
         }
       }
     },
@@ -93,15 +72,38 @@ module.exports = function(grunt) {
         options: {
           port: 8000,
           hostname: "localhost",
+          middleware: function (connect, options) {
+            var config = [ // Serve static files.
+               connect.static(options.base),
+               // Make empty directories browsable.
+               connect.directory(options.base)
+            ];
+            var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;           
+            var test = function (req, res, next) {
+              next();
+            }
+            config.unshift(proxy);
+            config.unshift(test);
+            return config;
+          }
         }
-      }
+      },
+      proxies: [
+            {
+                context: '/adore-djatoka',
+                host: 'tiles2.bodleian.ox.ac.uk',
+                port: '8080',
+                changeOrigin: true,
+                xforward: false
+            }
+          ]
     },
 
     watch: {
       scripts: {
-        files: 'src/*.coffee',
+        files: ['src/*.coffee', 'less/*.less'],
         // Not uglifying, since watch is supposed to be used for development
-        tasks: ['concat:bower_js', 'concat:coffee', 'coffee', 'clean:coffee', 'less'], 
+        tasks: ['concat:bower_js', 'coffee', 'less'], 
         options: {
           livereload: true
         }
@@ -124,7 +126,7 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['concat:bower_js', 'concat:coffee', 'coffee', 'clean:coffee', 'uglify', 'less']);
-  grunt.registerTask('run', ['connect', 'watch']);
+  grunt.registerTask('default', ['concat:bower_js', 'coffee', 'uglify', 'less']);
+  grunt.registerTask('run', ['configureProxies', 'connect:server', 'watch']);
   grunt.registerTask('install', ['install-dependencies', 'bower', 'copy:install']);
 }
