@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0087" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0087.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>103</line>
+  </zone>
+  <zone type="library">
+    <line>44</line>
+  </zone>
+  <zone type="main">
+    <line>dreary imaginations I passed th<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>ough <add place="intralinear">many</add></line>
+    <line>beautiful &amp; majestic scenes but my eyes</line>
+    <line>were fixed &amp; unobserving; I <del rend="strikethrough">co</del> could only</line>
+    <line>thin<mod>
+        <del rend="overwritten">g</del>
+        <add place="intralinear">k</add>
+      </mod> of the bourne of my travels &amp; the</line>
+    <line>work which was to occupy me whilst</line>
+    <line>they endured. After some days spen<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> in</line>
+    <line>listless indolence during which I <del rend="strikethrough">travere</del></line>
+    <line>traversed many leagues I arrived at</line>
+    <line>Strasburgh where I waited two days</line>
+    <line>for Clerval. He came; <del rend="strikethrough">&amp;</del> alas, how great</line>
+    <line>was the contrast between us. He was</line>
+    <line>alive to every new scene; joyful when</line>
+    <line>he saw the beauties of <mod>
+        <del rend="strikethrough">sun</del>
+        <add place="superlinear">the </add>
+      </mod>set<mod>
+        <add place="intralinear">ting</add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">sun</add>
+      </mod> and</line>
+    <line>more happy when he saw it rise &amp;</line>
+    <line>recommence a new day. He pointed</line>
+    <line>out to me the shifting colours <del rend="strikethrough"><unclear>l</unclear></del> of
+      the</line>
+    <line>landscape &amp; the appearances of the</line>
+    <line>sky. <mod><restore type="smear_strikethrough"><del rend="strikethrough">"</del></restore></mod>This
+      is what it is to live<mod><restore type="smear_strikethrough"><del rend="strikethrough"
+        >"</del></restore></mod>, he cried,</line>
+    <line>now I enjoy existence. But you, my</line>
+    <line>dear Frankenstein, <mod>
+        <del rend="strikethrough">are</del>
+        <add place="superlinear" hand="#pbs">wherefore are you</add>
+      </mod> desponding &amp;</line>
+    <line>sorrowful?" Indeed I was occupied by</line>
+    <line>gloomy thoughts and neither saw</line>
+    <line>the <mod>
+        <del rend="strikethrough">rise</del>
+        <add place="superlinear">descent</add>
+      </mod> of the evening star nor the</line>
+    <line>golden sun<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">r</add>
+      </mod>ise reflected in the Rhine;</line>
+    <line>and you, my friend, would be far more</line>
+    <line>amused with the journal of Clerval</line>
+    <line>who observed the scenery with an</line>
+    <line>eye of feeling &amp; delight, than to listen</line>
+    <line>to my reflections; I, a miserable wretch</line>
+    <line>haunted by a curse that shut up every</line>
+    <line>avenue to enjoyment.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We had agreed to go down the Rhine</line>
+    <line>in a boat from Strasbourgh to Rotterdam</line>
+  </zone>
+</surface>

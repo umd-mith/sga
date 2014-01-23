@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0073" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0073.jp2"/>
+  <zone type="pagination" rend="bordered"><line><mod><del rend="overwritten">97</del><add place="intralinear">100</add></mod></line></zone>
+  <zone type="library"><line>37</line></zone>
+  <zone type="main">
+    <line>coming had been to divert my mind &amp; to restore</line>
+    <line>to me my lost tranquillity. But the medecine</line>
+    <line>had been fatal &amp; unable to account</line>
+    <line>for the excess of misery I appeared to</line>
+    <line>suffer he hastened to return home</line>
+    <line>hoping that the quiet &amp; calm of a domestic</line>
+    <line>life would by degrees alleviate my suf-</line>
+    <line>ferings from whatsoever cause they</line>
+    <line>might spring.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">For myself I was passive in all</line>
+    <line>their arrangements, and the gentle</line>
+    <line>affection of my beloved Elizabeth was</line>
+    <line>inadequate to draw me from the</line>
+    <line>depth of my despair. The promise I</line>
+    <line>had made to the d&#xE6;mon weighed</line>
+    <line>upon my mind like Dante's iron</line>
+    <line>cowl on the head of the hellish hypo</line>
+    <line>crites. all pleasures of earth or sky</line>
+    <line>passed before me as a dream &amp; that</line>
+    <line>one thought only had to me the</line>
+    <line>reality of life. Can <unclear reason="case">y</unclear>ou wonder that</line>
+    <line>sometimes a kind of insanity possessed</line>
+    <line>me or that I saw about me a</line>
+    <line>multitude of filthy animals inflic</line>
+    <line>ting on me incessant torture that</line>
+    <line>often extorted <del rend="strikethrough">from</del> screams &amp;</line>
+    <line>bitter groans.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">By degrees however these</line>
+    <line>feelings became calmed. I entered</line>
+    <line>again into the every day of life if</line>
+    <line>not with interrest at least with</line>
+    <line>some degree of tranquillity.</line>
+  </zone>
+</surface>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0108" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0108.jp2"/>
+  <zone type="pagination" rend="bordered"><line>124</line></zone>
+  
+  <zone type="main">
+    <line><milestone unit="tei:head" spanTo="#c57-0108.02"/>Chapter 13<hi rend="sup"><hi rend="underline">rd</hi></hi><anchor xml:id="c57-0108.02"/></line>
+    <milestone unit="tei:p"/>
+    <line>I started forward &amp; exclaimed&#x2014;Villain, before</line>
+    <line>you sign my death-warrant, be sure that</line>
+    <line>you are yourself safe. I would have seized</line>
+    <line>him but he eluded me and quitting the house</line>
+    <line>with precipitation in a few moments I saw him</line>
+    <line>in his boat which shot across the waters with</line>
+    <line>an arrowy swiftness &amp; was soon lost amidst the</line>
+    <line>waves.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">All was again silent; but his words rung in</line>
+    <line>my ears; I burnt with rage to pursue the</line>
+    <line>murderer of my peace &amp; precipitate him into</line>
+    <line>the ocean. I walked up &amp; down my room hastily</line>
+    <line>&amp; perturbed, my imagination conjured before</line>
+    <line>me a thousand images <del rend="strikethrough">all</del> to torment &amp; sting</line>
+    <line>me &#x2013; Why <del rend="strikethrough">d</del> had I not followed him &amp; closed
+      with</line>
+    <line>him in<del rend="strikethrough">t</del> mortal strife&#x2013;<add place="superlinear"
+      >?</add> But I had suffered</line>
+    <line>him to depart and he had directed his course</line>
+    <line>towards the main land; I shuddered to sup-</line>
+    <line>pose who might be the next victim sacri</line>
+    <line>ficed to his insatiate revenge &#x2013; And then</line>
+    <line>again I thought of his words &#x2013; "<hi rend="underline">I will be with</hi></line>
+    <line><hi rend="underline">you on your marriage night</hi> That then</line>
+    <line>was the period fixed for the fulfillment</line>
+    <line>of my destiny &#x2013; <mod>
+      <del rend="overwritten">o</del>
+      <add place="intralinear">I</add>
+    </mod>n that <mod>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear">hour</add>
+    </mod> I should die and at</line>
+    <line>once satisfy and extinguish his malic<retrace cause="clarify">e</retrace>. <delSpan
+      rend="strikethrough" spanTo="#c57-0108.01"/>Yet</line>
+    <line>when I thought of Elizabeth<anchor xml:id="c57-0108.01"/> The prospect did</line>
+    <line>not not move me to fear yet when I thought</line>
+    <line>of my beloved Elizabeth; of her tears &amp; endless</line>
+    <line>sorrow when she should fin<mod>
+      <del rend="overwritten">e</del>
+      <add place="intralinear">d</add>
+    </mod> her lover</line>
+    <line>so barbarously snatched from her &#x2013;tears</line>
+    <line>the first I had shed for many months, stream</line>
+    <line>ed from my eyes &amp; I resolved not to fall before</line>
+    <line>my enemy without a bitter struggle.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The night passed away &amp; the sun rose</line>
+    <line>from the ocean &#x2013; My feelings became calmer</line>
+    <line>if it may be called calmness when the</line>
+    <line>violence of rage sinks into the depths of</line>
+  </zone>
+</surface>

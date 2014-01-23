@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0053" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0053.jp2"/>
+  <zone type="pagination" rend="bordered"><line>78</line></zone>
+  <zone type="library"><line>27</line></zone>
+  <zone type="main">
+    <line>have familia<mod>
+        <del rend="overwritten">rzi</del>
+        <add place="intralinear">r</add>
+      </mod>ized the old <mod>
+        <del rend="overwritten">L</del>
+        <add place="intralinear">D</add>
+      </mod>e Lacey</line>
+    <line>to me and by degrees have discovered</line>
+    <line>myself to the rest of the family when</line>
+    <line>they should have been prepared for</line>
+    <line>my approach &#x2013; But I did not believe</line>
+    <line>my errors irretrievable &#x2013; and after</line>
+    <line>much consideration I resolved to</line>
+    <line>return to the cottage &#x2014; seek the</line>
+    <line>old man and by my representa</line>
+    <line>tions win him to my party.&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">These thoughts calmed me &amp;</line>
+    <line>in the afternoon I sunk into a</line>
+    <line>profound sleep&#x2013; but the fever</line>
+    <line>of my blood did not <del rend="strikethrough">pe</del> allow of</line>
+    <line>peaceful dreams <del rend="strikethrough">for ever</del> the hor</line>
+    <line>ri<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear" hand="#pbs">ble</add>
+      </mod> scene of the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">preceeding</add>
+      </mod> day <mod>
+        <del rend="strikethrough">before</del>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear">was for ever</add>
+      </mod></line>
+    <line>acting before my eyes &#x2013; The females</line>
+    <line>were flying and the eraged Felix</line>
+    <line>tearing me from his fathers feet&#x2013; I</line>
+    <line>awoke exhausted, and finding that</line>
+    <line>it was already night I crept from</line>
+    <line>my hiding place &amp; went in search</line>
+    <line>of food.</line>
+  </zone>
+</surface>

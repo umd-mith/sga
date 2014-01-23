@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0065" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0065.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>90</line>
+  </zone>
+  <zone type="library">
+    <line>33</line>
+  </zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line>While I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">was</add>
+      </mod> overcome by these feelings I</line>
+    <line>left the spot where I had committed the</line>
+    <line>murder and sought a more secluded</line>
+    <line>hid<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear">ing</add>
+      </mod> place. At that moment I peceiv</line>
+    <line>ing a woman passing near me,&#x2013; she</line>
+    <line>was young<unclear>;</unclear> not indeed so beautiful as</line>
+    <line>her who portrait I held but of an</line>
+    <line>agreable <del rend="strikethrough">in</del> aspect &amp; blooming in the</line>
+    <line>loveliness of health &amp; youth. And here</line>
+    <line>I thought is one <del rend="strikethrough">one</del> of those whose</line>
+    <line>smiles are bestowed on all but me</line>
+    <line><del rend="strikethrough">but</del> She shall not escape my vengeance</line>
+    <line>thanks to the lessons of Felix &amp; the</line>
+    <line>sangu<add place="intralinear">i</add>nary laws of man, I <mod>
+        <del rend="strikethrough">know</del>
+        <add place="superlinear" hand="#pbs">have learned</add>
+      </mod> how</line>
+    <line>to work mischief. I approached her</line>
+    <line>unpeceived, and placed the portrait</line>
+    <line>securely in one of the folds of her</line>
+    <line>dress.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">For some day I haunted the spot</line>
+    <line>where these scenes had taken place</line>
+    <line>sometimes wishing to see you some</line>
+    <line>times resolved to quit the world &amp; it</line>
+    <line>miseries for ever. <mod>
+        <del rend="strikethrough">I have</del>
+        <add place="superlinear">At length I</add>
+      </mod> wandered</line>
+    <line><mod>
+        <del rend="strikethrough">to</del>
+        <anchor xml:id="c57-0065.01"/>
+      </mod> these mountains and have ranged</line>
+    <line><mod>
+        <del rend="strikethrough">in</del>
+        <anchor xml:id="c57-0065.02"/>
+      </mod> their immense recesses consumed</line>
+    <line>by a burning passion which you</line>
+    <line>alone can gratify&#x2014;And we may not</line>
+    <line>part untill you have promised</line>
+    <line>to <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">c</add>
+      </mod>omply with my requisitions. I am</line>
+    <line>alone &amp; miserable. Man will not</line>
+    <line>associate with but one as deformed</line>
+    <line>and horrible as my self would not</line>
+    <line>deny herself to me. This being you</line>
+    <line>must create<mod>
+        <add place="intralinear">.</add>
+        <del rend="strikethrough">for me.</del>
+      </mod></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0065.01">
+    <line><add>towards </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0065.02">
+    <line><add hand="#pbs">through </add></line>
+  </zone>
+</surface>

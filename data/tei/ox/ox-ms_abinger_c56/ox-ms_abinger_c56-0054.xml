@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0054" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0054.jp2"/>
+  <zone type="pagination" rend="bordered"><line>84</line></zone>
+  <zone type="main">
+    <line>room &#x2013; <del rend="strikethrough">Wh</del> He can tell! Oh save me</line>
+    <line>save <del rend="strikethrough">I</del> me"&#x2013; I imagined that the</line>
+    <line>monster seized me I struggled furious</line>
+    <line>ly &#x26; fell down in a fit.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Poor Clerval! What must have been</line>
+    <line>his feelings. A <del rend="strikethrough">joy</del>
+      <del rend="strikethrough">meti</del> meeting which</line>
+    <line>he had anticipated with such joy so</line>
+    <line>strangely turned to bitterness. But I</line>
+    <line>did not witness his grief for I was</line>
+    <line><mod>
+        <del rend="strikethrough">senseless</del>
+        <add place="superlinear">lifeless</add>
+      </mod> and did not recover my</line>
+    <line>senses for <del rend="strikethrough">several</del> a long, long time.</line>
+  </zone>
+</surface>

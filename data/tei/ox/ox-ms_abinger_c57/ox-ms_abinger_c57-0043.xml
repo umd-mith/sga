@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0043" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0043.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>68</line>
+  </zone>
+  <zone type="main">
+    <line>contented &amp; happy. <del rend="strikethrough">Such were</del> their fee</line>
+    <line>lings <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">were serene &amp; peaceful,</add>
+      </mod> while <mod>
+        <del rend="strikethrough">I</del>
+        <add place="sublinear" hand="#pbs">mine</add>
+      </mod> became every day more</line>
+    <line><mod>
+        <del rend="strikethrough">unhappy</del>
+        <anchor xml:id="c57-0043.01"/>
+      </mod> &#x2013; encrease of knowledge only <mod spanTo="#c57-0043.02"/><del
+        rend="strikethrough">shewed</del></line>
+    <line><anchor xml:id="c57-0043.03"/><anchor xml:id="c57-0043.02"/> me more <mod>
+        <del rend="strikethrough">plainly</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">clearly</add>
+      </mod> what a wretched outcast</line>
+    <line>I was. I cherished hope it is true but</line>
+    <line>it vanished when I beheld my person re</line>
+    <line>flected <mod>
+        <del rend="strikethrough">by</del>
+        <add place="superlinear">in</add>
+        <del rend="strikethrough">the</del>
+      </mod> water or even my shadow</line>
+    <line>in the moonshine &#x2014;I endeavoured to <mod spanTo="#c57-0043.04"/><del
+        rend="strikethrough">hush</del></line>
+    <line><add><anchor xml:id="c57-0043.05"/></add>these fears and to fortify myself for the</line>
+    <line>trial which in a few months I resolved</line>
+    <line>to undergo; and sometimes I allowed my</line>
+    <line>thoughts unchecked by reason to ramble</line>
+    <line>in the fields of Paradise <mod>
+        <add place="superlinear">&amp;</add>
+        <del rend="strikethrough">to</del>
+        <del rend="strikethrough">fan</del>
+      </mod> dared</line>
+    <line>to fancy amiable &amp; lovely beings sym</line>
+    <line>pathizing with my feelings and cheeri</line>
+    <line>ng my <del rend="strikethrough" instant="true">d</del> gloom &#x2014; Their angelic <del
+        rend="strikethrough">cont</del></line>
+    <line>countenances breathed smiles of consola</line>
+    <line>tion &#x2014; But it was all a dream &#x2013; No</line>
+    <line>Eve <del rend="strikethrough">waited on</del> soothed my sorrows</line>
+    <line>or shared my thoughts. I was alone.</line>
+    <line>I remembered Adams supplication to</line>
+    <line>his creator but where was mine?</line>
+    <line>He had abbandoned me and in the</line>
+    <line>bitterness of my heart I cursed him.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Autumn passed thus <mod>
+        <del rend="strikethrough">and</del>
+        <anchor xml:id="c57-0043.09"/>
+      </mod> with</line>
+    <line>surpise &amp; grief <milestone unit="tei:seg" spanTo="#c57-0043.10" corresp="#c57-0043.09"
+      />I saw<anchor xml:id="c57-0043.10"/> the leaves decay</line>
+    <line> &amp; fall, <del rend="strikethrough"><unclear unit="chars" extent="1"/></del> And nature
+      again assume</line>
+    <line>the barren &amp; bleak appearance</line>
+    <line>it had when I first beheld the</line>
+    <line>woods and the lovely moon. I</line>
+    <line>did not heed the <mod>
+        <del rend="strikethrough">cold</del>
+        <add place="superlinear">bleakness of the weather</add>
+      </mod>
+      <milestone unit="tei:seg" spanTo="#c57-0043.11" xml:id="c57-0043.12"/>By my consti</line>
+    <line>tution<anchor xml:id="c57-0043.11"/>
+      <milestone unit="tei:seg" spanTo="#c57-0043.13" xml:id="c57-0043.14"/>I was more fitted<anchor
+        xml:id="c57-0043.13"/><listTranspose>
+        <transpose>
+          <ptr target="#c57-0043.14"/>
+          <ptr target="#c57-0043.12"/>
+        </transpose>
+      </listTranspose> for <mod spanTo="#c57-0043.06"/><del rend="strikethrough">that</del><add
+        place="superlinear" next="#c57-0043.07">this sufferance</add></line>
+    <line><anchor xml:id="c57-0043.08"/><anchor xml:id="c57-0043.06"/> than heat. But my only joys
+      were</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0043.01">
+    <line><add>miserable</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0043.03">
+    <line><add>discovered to </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0043.05">
+    <line><add>crush </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0043.08">
+    <line><add xml:id="c57-0043.07">of cold </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0010" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0010.jp2"/>
+  <zone type="pagination" rend="bordered"><line>9</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0010.02"/>Chap. 2<anchor xml:id="c57-0010.02"/></line>
+    <milestone unit="tei:p"/>
+    <line>As soon as morning dawned I crept from</line>
+    <line>my assylum <del rend="strikethrough">to</del> that I might view the</line>
+    <line>adjacent cottage and discover if I could</line>
+    <line>remain in the kennel that I had found.</line>
+    <line>It was situated <mod>
+        <del rend="strikethrough">at</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">against</add>
+      </mod> the back of the cottage</line>
+    <line>and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">surrounded</add>
+      </mod> on <mod>
+        <del rend="strikethrough">its</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="intralinear">the</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">open</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> sides which were exposed</line>
+    <line>by a pigstye &#x26; &#x2013;c<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">l</add>
+      </mod>ear pool of water one</line>
+    <line>part was open and by that I had crept</line>
+    <line>in but now <del rend="strikethrough">with stones and wood</del> I cover</line>
+    <line>ed every crevice <add corresp="#c57-0010.01" place="superlinear">with stones &#x26;
+        wood</add> by which I might be</line>
+    <line>discovered <add place="sublinear"><metamark function="displacement" xml:id="c57-0010.01"
+          >^</metamark></add> yet in such a manner</line>
+    <line>that I could move the<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">m</add>
+      </mod> on an occasion</line>
+    <line>to pass out; all the light I enjoyed came</line>
+    <line>through the stye and that was suffi</line>
+    <line>cient for me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Having thus arranged my dwelling &#x26;</line>
+    <line><del rend="strikethrough">spr</del> carpeted it with clean straw, I retired</line>
+    <line>for I saw the figure of a man <mod>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear">at</add>
+      </mod> a distance</line>
+    <line>and <damage type="inkblot"><del rend="strikethrough">feared</del></damage> I <del
+        rend="strikethrough">feared</del> remembered <del rend="strikethrough">but</del></line>
+    <line>too well my treatment the night</line>
+    <line>before <del rend="strikethrough">not</del> to trust myself in his</line>
+    <line>power. I had first however provided</line>
+    <line>for my sustenance for that day <del rend="strikethrough">by mean</del></line>
+    <line>by a loaf of <del rend="strikethrough">bro</del> coarse bread which I pur</line>
+    <line>loined and a cup <mod>
+        <del rend="strikethrough">w</del>
+        <del rend="strikethrough">by</del>
+        <add place="superlinear">with</add>
+      </mod> which I could <del rend="strikethrough">take</del></line>
+    <line>drin<mod>
+        <del rend="overwritten">g</del>
+        <add place="intralinear">k</add>
+      </mod> more conveniently than from my</line>
+  </zone>
+</surface>

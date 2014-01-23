@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0059" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0059.jp2"/>
+  <zone type="pagination">
+    <line>187</line>
+  </zone>
+  <zone type="library">
+    <line>30</line>
+  </zone>
+  <zone type="main">
+    <handShift medium="pen" new="#pbs"/>
+    <line>my extinction <del rend="strikethrough">because</del> that I might not cause</line>
+    <line>greater wretchedness; &amp; if yet <del rend="strikethrough">by</del> in some mode</line>
+    <line>unknown to me, <mod>
+        <del rend="strikethrough">you</del>
+        <add place="superlinear">thou</add>
+      </mod> haste not ceased to think</line>
+    <line>&amp; feel, <mod>
+        <del rend="strikethrough">you</del>
+        <add place="superlinear">thou</add>
+      </mod> desirest not my life for my own</line>
+    <line>misery. Blasted as thou wert, my agony</line>
+    <line>was still superior to thine: for the bitter sting</line>
+    <line>of remorse may not cease to Rankle in my wounds,</line>
+    <line>until death shall close them forever.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">But soon, he cried with sad &amp; solemn enthusi</line>
+    <line>asm, I shall die, &amp; what I now feel be no</line>
+    <line>longer felt. . . Soon these burning miseries will</line>
+    <line>be extinct. I shall <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"><mod>
+            <del rend="strikethrough">moun</del>
+            <add place="superlinear">ascend</add>
+          </mod></add>
+      </mod> my funeral pile triumphantly;</line>
+    <line>&amp; exult in the agony of the torturing flames.</line>
+    <line>The light of that conflagration will fade away.</line>
+    <line><del rend="strikethrough"><unclear reason="illegible">I know not</unclear></del> My ashes
+      will be swept into the sea</line>
+    <line>by the winds. My spirit will sleep in peace;</line>
+    <line>or if it thinks will surely not think thus.</line>
+    <line>Adieu.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">He sprung from the cabin-window, as he said this,</line>
+    <line>upon an ice raft which lay close to the vessel;</line>
+    <line>he was soon borne away by the waves, &amp; lost</line>
+    <line rend="indent1">in the darkness of distance.</line>
+  </zone>
+</surface>

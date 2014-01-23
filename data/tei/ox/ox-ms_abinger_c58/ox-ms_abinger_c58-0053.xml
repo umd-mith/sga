@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0053" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0053.jp2"/>
+  <zone type="pagination"><line>181</line></zone>
+  <zone type="library"><line>27</line></zone>
+  <zone type="main">
+    <handShift medium="pen" new="#pbs"/>
+    <line><damage/>nature to an element which <add place="superlinear">I</add> had chosen
+      willingly.</line>
+    <line>The completion of my demoniacal design thencefor-</line>
+    <line>ward became an insatiable pasion&#x2014; And now</line>
+    <line><damage/>t is ended&#x2014; there is my last victim!"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I was <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">at first</add>
+      </mod> touched by the expression of his misery,</line>
+    <line>yet when I called to mind what Frankenstein</line>
+    <line>had said of his powers of eloquence &amp; persua</line>
+    <line>-sion, &amp; when I again cast my eyes on the</line>
+    <line>lifeless form of my friend, indignation was</line>
+    <line>re- kindled within me. &#x2014; Wretch, I said,</line>
+    <line>it is well that you come here to whine over</line>
+    <line>the desolation which you have made &#x2013; you</line>
+    <line>throw a torch into a pile of buildings, &amp;</line>
+    <line>when they are consumed you sit among the</line>
+    <line>ruins &amp; lament the fall. Hypocritical</line>
+    <line>fiend! If he whom you lament still lived,</line>
+    <line>still would he be the object, again would he</line>
+    <line>become the prey of your accursed vengeamce.</line>
+    <line>It is not pity that you feel&#x2013; you lament</line>
+    <line>only because the victim of your malignity</line>
+    <line>is withdrawn from your power.&#x2014;&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Oh! it is not thus&#x2014; not thus &#x2013;
+      interrupted</line>
+  </zone>
+</surface>

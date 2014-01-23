@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0046" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0046.jp2"/>
+  <zone type="pagination"><line>71</line></zone>
+  <zone type="main">
+    <line>the instrument he sat absorbed</line>
+    <line>in reflection.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My heart beat quick. This</line>
+    <line>was the hour &amp; moment of trial</line>
+    <line>which <mod>
+        <del rend="strikethrough">was to</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">would</add>
+      </mod> decide my <del rend="strikethrough">fea</del> hopes</line>
+    <line><del rend="strikethrough">or</del>
+      <unclear unit="chars" extent="1"/>
+      <del rend="strikethrough">I quitted my hovel with trem</del> The</line>
+    <line>servants <del rend="strikethrough">of the cottage</del> were gone</line>
+    <line>to a neighbouring fair:&#x2013; All was</line>
+    <line>silent in and around the cottage</line>
+    <line>It was an excellent opportunity</line>
+    <line>yet when I <mod>
+        <del rend="strikethrough">rose</del>
+        <add place="superlinear" hand="#pbs">proceeded</add>
+      </mod> to execute my plan</line>
+    <line>my limbs failed me, and I sunk</line>
+    <line>to the ground. Again I rose and</line>
+    <line><mod>
+        <del rend="strikethrough">with with</del>
+        <anchor xml:id="c57-0046.01"/>
+      </mod> all of the firm<mod>
+        <del rend="overwritten"><unclear>e</unclear></del>
+        <add place="intralinear">n</add>
+      </mod>ess <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">of which</add>
+      </mod> I</line>
+    <line>was master <del rend="strikethrough">of</del> removed the planks</line>
+    <line>which I had placed before my</line>
+    <line>hovel to conceal my retreat &#x2013; The</line>
+    <line>fresh air revived me and with</line>
+    <line>renew<add place="intralinear">ed</add> determination I approach</line>
+    <!--"ed" possibly added in "renewed"-->
+    <line>ed the door of the cottage. I knock</line>
+    <line>ed &#x2013; "who is there?" said the old</line>
+    <line>man&#x2013; "come in"&#x2014; I entered &#x2013; "Pardon</line>
+    <line>this intrusion" said I&#x2013; "I am a</line>
+    <line>traveller, in want of a little</line>
+    <line>rest. <del rend="strikethrough">and</del> you would greatly oblige</line>
+    <line>me if you would allow me to</line>
+    <line>remain a few minutes before</line>
+    <line>your fire." "Enter" said De Lacey &amp;</line>
+    <line>I will try in what manner I can re</line>
+    <line>lieve your wants&#x2013; but unfortunately</line>
+    <line>my children are <mod>
+        <del rend="strikethrough">out</del>
+        <add place="superlinear" hand="#pbs">from home,</add>
+      </mod> and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">as</add>
+      </mod> I am blind</line>
+    <line>I am afraid <del rend="strikethrough">therefore</del> I shall find it</line>
+    <line>difficult to procure food for you"&#x2013;</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0046.01">
+    <line><add>exerting </add></line>
+  </zone>
+</surface>

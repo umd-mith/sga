@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0107" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0107.jp2"/>
+  <zone type="pagination" rend="bordered"><line>123</line></zone>
+  <zone type="library"><line>54</line></zone>
+  <zone type="main">
+    <line>Your hours will pass in dread &amp; misery</line>
+    <line>and soon the bolt will fall which will</line>
+    <line>ravish from you your happiness for ever.</line>
+    <line>Are you to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">be</add>
+      </mod> happy while I grovel in the</line>
+    <line>intensity of my wretchedness. You <mod>
+        <del rend="strikethrough">destroy</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">can blast</add>
+      </mod> my</line>
+    <line>other passions but revenge remains; revenge</line>
+    <line>dearer than light or food. I may die but</line>
+    <line>first you my tyrant &amp; tormentor shall</line>
+    <line>curse the sun that gazes on your misery.</line>
+    <line>Beware, for I am fearless &amp; therefore</line>
+    <line>powerful. I will watch with the wiliness</line>
+    <line>of a <del rend="strikethrough">snank</del> snake that I may sting with</line>
+    <line>its venom. Man, you shall repent</line>
+    <line>of the injuries you inflict.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Devil, I cried, Cease, &amp; do not</line>
+    <line>poison the air with those sounds</line>
+    <line>of malice. I have declared my resolution</line>
+    <line>to you and I am no coward to bend</line>
+    <line>beneath words &#x2013; Leave me, I am inexo</line>
+    <line>rable.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">It is well, said he, I go; but remem</line>
+    <line>ber! I shall be with you on your</line>
+    <line>marriage night.</line>
+  </zone>
+</surface>

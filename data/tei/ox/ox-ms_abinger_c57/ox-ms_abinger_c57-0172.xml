@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0172" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0172.jp2"/>
+  <zone type="pagination" rend="bordered"><line>188</line></zone>
+  <zone type="main">
+    <line>ways possess a certain power over our mind</line>
+    <line>that hardly any other later friend can</line>
+    <line>obtain. They know our infantine feelings</line>
+    <line>which however they may be afterwards</line>
+    <line>modified are never <mod>
+      <del rend="strikethrough">entirely changed</del>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear">eradicated</add>
+    </mod> and they</line>
+    <line>can judge of our actions with greater</line>
+    <line>certainty &#x2013; A sister or brother can never, un</line>
+    <line>less indeed such symtoms have been shewn</line>
+    <line>early suspect the other <add place="superlinear" hand="#pbs">of</add> fraud or
+      false</line>
+    <line>dealing when another friend however</line>
+    <line>strongly he may be attatched may <mod>
+      <del rend="strikethrough">feel</del>
+      <add place="superlinear">be</add>
+    </mod> in</line>
+    <line>spite of himself invaded by suspicion.</line>
+    <line>But I enjoyed friends dear not only by</line>
+    <line>association but for their<del rend="strikethrough">e</del> own sake &#x2013;and</line>
+    <line>wherever I am the soothing voice of my</line>
+    <line>Eliszabeth or the conversation of Cler</line>
+    <line>val will be ever whispered <mod>
+      <del rend="strikethrough">to</del>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear" hand="#pbs">in</add>
+    </mod> my ear.</line>
+    <line>They are dead &amp; but one feeling <mod>
+      <del rend="strikethrough">could</del>
+      <add place="superlinear" hand="#pbs">can</add>
+    </mod> in</line>
+    <line>such a <mod>
+      <del rend="strikethrough">situation</del>
+      <add place="superlinear" hand="#pbs">solitude</add>
+    </mod>
+      <mod>
+        <del rend="strikethrough">keep me alive</del>
+        <add place="superlinear" hand="#pbs">persuade me to preserve my life</add>
+      </mod>. If I</line>
+    <line>w<del rend="strikethrough">h</del>ere engaged in any high undertaking</line>
+    <line>or design fraught with extensive uti</line>
+    <line>lity to my fellow creatures then could I</line>
+    <line>live to fulfil it&#x2014;But such is not my</line>
+    <line>destiny &#x2013;I must pursue &amp; destroy the</line>
+    <line><mod>
+      <del rend="strikethrough">creature</del>
+      <anchor xml:id="c57-0172.01"/>
+    </mod> to whom I gave existence then</line>
+    <line>my task will be fulfilled &amp; I may die.</line>
+    <line rend="right">August <mod>
+      <del rend="overwritten">27</del>
+      <add place="intralinear">31</add>
+    </mod><hi rend="sup"><hi rend="underline">th</hi></hi></line>
+    <!--encode the dateline and address-->
+    <line>My beloved <mod>
+      <del rend="overwritten">s</del>
+      <add place="intralinear">S</add>
+    </mod>ister</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I write to you encompassed by peril</line>
+    <line>and ignorant if I am ever doomed to</line>
+    <line>see again <del rend="strikethrough">my</del> dear England &amp; the dearer</line>
+    <line>friends that inhabit it. I am surrounded</line>
+    <line>by mountains of ice which admit of no</line>
+    <line>escape and threaten every moment to</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0172.01">
+    <line><add>being</add></line>
+  </zone>
+</surface>

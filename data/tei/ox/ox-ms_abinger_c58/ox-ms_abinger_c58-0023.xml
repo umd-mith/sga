@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0023" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0023.jp2"/>
+  <zone type="pagination"><line>125</line></zone>
+  <zone type="library"><line>12</line></zone>
+  <zone type="main">
+    <line>more earnestly to those that remain. Cursed, Cursed</line>
+    <line>be the fiend that brought <del rend="strikethrough">wretchedn</del> misery <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear">on</add>
+      </mod> his</line>
+    <line>grey hairs and domed him to waste in wretchedness.</line>
+    <line>He could not live under the horrors that were</line>
+    <line>accumulated around him; an approplectic fit was</line>
+    <line>brought on and in a few days he died in my arms.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">What then became of me? I know not; I</line>
+    <line>lost sensation and chains and darkness were the only</line>
+    <line>objects that pressed upon me. Sometimes indeed</line>
+    <line>I dreamt that I wandered in flowery meadows and</line>
+    <line>pleasant vales with the friends of my youth; but I</line>
+    <line>awoke and found myself in a dungeon. Melancholy</line>
+    <line>followed but by degrees. I gained a clear conception</line>
+    <line>of my miseries and situation and was then released</line>
+    <line>from my prison. For they had called me mad</line>
+    <line>and during many months, as I understood, a solita</line>
+    <line>-ry cell had been my habitation. <milestone unit="tei:p"/><add place="intralinear"
+        hand="#comp"><metamark function="paragraph">[</metamark></add>But liberty had</line>
+    <line>been a useless gift to me had I not <delSpan spanTo="#c58-0023.01"/>at the same</line>
+    <line>time that<anchor xml:id="c58-0023.01"/> as I awakened to reason at the same</line>
+  </zone>
+</surface>

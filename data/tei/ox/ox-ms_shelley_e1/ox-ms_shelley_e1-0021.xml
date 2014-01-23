@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0021" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0021.jp2"/>
+  <zone type="library">10</zone>
+  <zone type="main">
+    <line>Infinite mines of adamant &amp; gold</line>
+    <line>Valueless stones &amp; unimagined gems</line>
+    <line>And caverns <mod>
+        <del rend="strikethrough">of columnar <hi rend="underline">stone</hi>, w like jet</del>
+        <add place="superlinear">on chrystalline columns poised</add>
+      </mod></line>
+    <line>With vegetable silver overspread</line>
+    <line><del rend="strikethrough">Fount</del> Wells of unfathomed fire, &amp; watersprings</line>
+    <line>Whence the great Sea, even as a child, is fed</line>
+    <line>Whose vapours clothe Earth's <mod>
+        <del rend="strikethrough">mount</del>
+        <add place="superlinear">monarch</add>
+      </mod> mountain-tops</line>
+    <line>With kingly, ermine snow; <mod spanTo="#e1-0021.01"/><del rend="strikethrough">see, as
+        they flas</del><add place="sublinear"><metamark function="count">250</metamark></add></line>
+    <line><add place="sublinear"><del rend="strikethrough">as</del> the beams flash <mod>
+          <del rend="strikethrough">deep</del>
+          <add place="superlinear">on</add>
+        </mod></add><anchor xml:id="e1-0021.01"/></line>
+    <line><mod>
+        <del rend="strikethrough">They</del>
+        <add place="superlinear">And</add>
+      </mod> make appear the melancholy ruins</line>
+    <line>Of cancelled cycles<unclear>;</unclear> anchors, beaks of ships</line>
+    <line>Planks turned to marble, quivers helms &amp; spears<unclear>,</unclear></line>
+    <line>And gorgon-headed targes, &amp; the wheels</line>
+    <line>Of scythed chariots, &amp; the emblazonry</line>
+    <line>Of trophies standards &amp; armorial beasts</line>
+    <line>Round which Death laughed, sepulchered emblems</line>
+    <line>Of dead Destruction, ruin within ruin!</line>
+    <line>The wrecks beside of many a city vast</line>
+    <line>Whose population which the Earth grew over</line>
+    <line>Was mortal but not human, see, they lie</line>
+    <line>Thier monstrous works &amp; uncouth skeletons,</line>
+    <line>Thier <mod>
+        <del rend="strikethrough">once Heaven-cleaving pyramids &amp; domes</del>
+        <add place="superlinear">statues, <del rend="strikethrough">fa<unclear>n</unclear></del>
+          homes, &amp; fanes; prodigious shapes</add>
+      </mod></line>
+    <line>Huddled in grey annihilation, split,</line>
+    <line>Jammed in the hard black deep<unclear>;</unclear> &amp; over these</line>
+  </zone>
+</surface>

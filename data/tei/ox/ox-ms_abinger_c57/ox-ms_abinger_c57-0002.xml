@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0002" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0002.jp2"/>
+  <zone type="pagination" rend="bordered"><line>1</line></zone>
+  
+  <zone type="main">
+    <milestone unit="tei:head" spanTo="#c57-0002.07"/>
+    <line rend="center">Vol. II</line>
+    <line rend="center">Chap I</line>
+    <anchor xml:id="c57-0002.07"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"It is with difficulty that I remember</line>
+    <line>the &#xE6;ra of my <del rend="strikethrough">cr</del> being. All the events of</line>
+    <line>that period appear confused &#x26; indistinct.</line>
+    <line><del rend="strikethrough">I know only that I felt a strang<unclear>e</unclear></del> A
+      strange</line>
+    <line>sensation <del rend="strikethrough">sea</del> seized me <del rend="strikethrough">and a it
+        appeared</del></line>
+    <line>I saw, felt heard and smelt at the same</line>
+    <line>time and it was indeed a long time be</line>
+    <line>fore I learned to distinguish between the</line>
+    <line><anchor xml:id="c57-0002.01"/><del rend="unmarked"><retrace cause="clarify"
+            ><unclear>op</unclear></retrace></del>operations of my various senses. By degrees</line>
+    <line>I remember a stronger light pressed upon</line>
+    <line>my nerves <del rend="strikethrough">and</del> so that I was obliged to close</line>
+    <line>my eyes. Darkness then came over me</line>
+    <line>and troubled me.&#x2013; But hardly had I felt</line>
+    <line>this when (by opening my eyes as I now suppose)</line>
+    <line>the light poured in upon me again&#x2013; I walked</line>
+    <line>and I believe descended; but presently I found</line>
+    <line>a great <mod>
+        <del rend="strikethrough">difference</del>
+        <add place="superlinear">alteration</add>
+      </mod> in my sensations; before</line>
+    <line>dark opaque bodies had surrounded me<add place="superlinear">,</add></line>
+    <line>impervious to my touch or sight &#x2013; and I</line>
+    <line>now found that I could wander on at liberty</line>
+    <line>with no obstacles which I could not either</line>
+    <line>surmount or avoid&#x2013; The light <del rend="strikethrough">be</del> became <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">more</add>
+      </mod> &#x26;</line>
+    <line>more opressive to me and the heat wearying</line>
+    <line>me as I walked I sought a place where I could</line>
+    <line><milestone unit="tei:seg" spanTo="#c57-0002.04" xml:id="c57-0002.02"/>perceive<anchor
+        xml:id="c57-0002.04"/><milestone unit="tei:seg" spanTo="#c57-0002.05" xml:id="c57-0002.03"
+        /><add place="superlinear" hand="#pbs">recieve</add><anchor
+        xml:id="c57-0002.05"/> shade. This was the forest near Ingolstadt,</line>
+    <alt mode="excl" targets="#c57-0002.02 #c57-0002.03" weights="0.5 0.5"/>
+    <line>and here by the side of a brook I lay <del rend="strikethrough">weary</del></line>
+    <line>for some hours <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">resting from my fatigue</add>
+      </mod> untill I felt tormented by</line>
+    <line>hunger and thirst. This roused me from my nearly</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0002.01">
+    <line><del rend="strikethrough"><add>various </add></del></line>
+  </zone>
+  <zone type="left_margin">
+    <milestone unit="tei:note" spanTo="#c57-0002.06"/>
+    <line><add hand="#pbs">or<metamark>]</metamark></add></line>
+    <anchor xml:id="c57-0002.06"/>
+    <!-- The marginal addition "or" indicates that PBS is giving MWS a choice between "perceive" or "recieve" (sic)-->
+  </zone>
+</surface>

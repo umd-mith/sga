@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0168" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0168.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>184</line>
+  </zone>
+  <zone type="main">
+    <line><delSpan rend="strikethrough" spanTo="#c57-168.01"/>act of cruelty &#x2013; No the blood
+      of all the innocent</line>
+    <line>that he has murdered will plead for you<anchor xml:id="c57-168.01"/></line>
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0168.14"/>Walton in continuation.<anchor xml:id="c57-0168.14"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="right"><milestone unit="tei:date" spanTo="#c57-0168.02"/>August 1<mod>
+        <del rend="overwritten"><unclear reason="illegible">6</unclear></del>
+        <add place="intralinear">3</add>
+      </mod><hi rend="underline"><hi rend="sup">th</hi></hi><anchor xml:id="c57-0168.02"/></line>
+    <line>You have read this strange &amp; terrific story,</line>
+    <line>Marg<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">a</add>
+      </mod>ret and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">do</add>
+      </mod> not you feel your blood con</line>
+    <line>gealed with horror <mod spanTo="#c57-0168.03"/><delSpan spanTo="#c57-0168.04"
+        rend="strikethrough"/>Mine of<add place="sublinear">ten</add>did as he</line>
+    <line>related it<anchor xml:id="c57-0168.04"/><anchor xml:id="c57-0168.05"/><anchor
+        xml:id="c57-0168.03"/> &#x2013; <mod>
+        <del rend="strikethrough">When</del>
+        <add place="superlinear" hand="#pbs">Sometimes</add>
+      </mod> seized with <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">sudden</add>
+      </mod> agony he</line>
+    <line>could not continue <mod>
+        <del rend="strikethrough">or</del>
+        <add place="superlinear" hand="#pbs">his tale, at others</add>
+      </mod> his voice broken</line>
+    <line>yet piercing <mod spanTo="#c57-0168.07"/><del rend="strikethrough" next="#c57-0168.08"
+        >described some of the scenes</del><add place="superlinear" hand="#pbs" next="#c57-0168.10"
+        >uttered the words of which it is</add></line>
+    <line><add place="superlinear" hand="#pbs" xml:id="c57-0168.10">composed.</add><del
+        rend="strikethrough" xml:id="c57-0168.08" next="#c57-0168.09">he had passed</del>
+      <del rend="strikethrough" xml:id="c57-0168.09">through</del><anchor xml:id="c57-0168.07"/>
+      &#x2013; His fine &amp; lovely</line>
+    <line>eyes <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear" hand="#pbs">were now</add>
+      </mod> lighted up <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">with</add>
+      </mod> indignation <mod>
+        <del rend="strikethrough">or</del>
+        <add place="superlinear" hand="#pbs">now</add>
+      </mod> subdued</line>
+    <line><mod>
+        <del rend="strikethrough">by</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to downcast</add>
+      </mod> sorrow &amp; infinite wretchedness. Sometimes</line>
+    <line>he commanded his countenance &amp; tones</line>
+    <line>and related the most horrible incidents</line>
+    <line>with a <mod>
+        <del rend="strikethrough">smothered</del>
+        <add place="superlinear" hand="#pbs">tranquil</add>
+      </mod> voice suppressing every</line>
+    <line>mark of <del rend="strikethrough" instant="true">indi</del> agitation &#x2013; <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear" hand="#pbs">then</add>
+      </mod> like a vol</line>
+    <line>cano bursting forth his face would sud</line>
+    <line>denly change to an expression of the</line>
+    <line>wildest rage as he shrieked <mod spanTo="#c57-0168.11"/><del rend="strikethrough"
+        >forth</del></line>
+    <line><anchor xml:id="c57-0168.12"/><anchor xml:id="c57-0168.11"/>his imprecations <mod>
+        <del rend="strikethrough">of</del>
+        <add place="sublinear">^</add>
+        <add place="superlinear">on</add>
+      </mod> hi<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">s</add>
+      </mod> persecutor.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">His tale is connected &amp; told with</line>
+    <line>an appearance of the simplest truth</line>
+    <line>yet I own to you my sister that the</line>
+    <line>letters of Felix &amp; <mod>
+        <del rend="strikethrough">Maimouna</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">Safie</add>
+      </mod> which he</line>
+    <line>shewed me &amp; the apparition of the</line>
+    <line>monster seen from our ship brought</line>
+    <line>to me a greater conviction of the <mod>
+        <del rend="strikethrough">fact</del>
+        <add place="superlinear">truth </add>
+        <anchor xml:id="c57-0168.13"/>
+      </mod></line>
+    <line>than his asserverations&#x2014;<add place="superlinear" hand="#pbs">however earnest &amp;
+        connected.</add> Such a monster</line>
+    <line><mod>
+        <del rend="strikethrough">did</del>
+        <add place="superlinear" hand="#pbs">has</add>
+      </mod> then real<del rend="strikethrough">ly</del> exist<add place="intralinear" hand="#pbs"
+        >ence,</add> I <mod>
+        <del rend="strikethrough">could</del>
+        <del rend="strikethrough">not</del>
+        <add place="superlinear" hand="#pbs">cannot</add>
+      </mod> doubt</line>
+    <line>it yet I <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">am</add>
+      </mod> lost in surpri<mod>
+        <del rend="overwritten">z</del>
+        <add place="intralinear">s</add>
+      </mod>e &amp; admira</line>
+    <line>tion. Sometimes I endeavoured to gain from</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0168.05">
+    <addSpan hand="#pbs" spanTo="#c57-0168.06"/>
+    <line> like that</line>
+    <line>which even</line>
+    <line>now curdles</line>
+    <line>mine</line>
+    <anchor xml:id="c57-0168.06"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0168.12">
+    <line><add hand="#pbs">out </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0168.13">
+    <line><add>of his narrative</add></line>
+  </zone>
+</surface>

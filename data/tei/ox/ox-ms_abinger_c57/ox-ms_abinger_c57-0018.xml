@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0018" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0018.jp2"/>
+  <zone type="pagination" rend="bordered"><line>17</line></zone>
+ 
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0018.05"/>Chap. 3<anchor xml:id="c57-0018.05"/></line>
+    <line><mod>
+        <del rend="strikethrough">It was some time</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">A considerable period elapsed</add>
+      </mod> before I discovered one</line>
+    <line><anchor xml:id="c57-0018.01"/>cause<add hand="#pbs">s</add> of the uneasiness of
+      this amiable</line>
+    <line>family &#x2013; <mod>
+        <del rend="strikethrough">It</del>
+        <del rend="strikethrough">Itw</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">It</add>
+      </mod> was poverty&#x2013; and they suffered</line>
+    <line>that evil in a very distressing degree&#x2013; <delSpan spanTo="#c57-0018.02"
+        rend="strikethrough"/>Dur</line>
+    <line>ring the winter<anchor xml:id="c57-0018.02"/>
+      <del rend="strikethrough">They often had hardly any</del></line>
+    <line>their nourishment consisted entirely of bread</line>
+    <line><del rend="strikethrough">and &#x2013;</del> the vegetables of their garden and the</line>
+    <line>milk of one cow which gave very little</line>
+    <line>during the <del rend="strikethrough">hard</del>
+      <del rend="strikethrough">monthes</del> winter when</line>
+    <line><del rend="strikethrough">the</del> its masters could <mod spanTo="#c57-0018.03"/><del
+        rend="strikethrough">spare</del><add place="superlinear">scarcely</add>
+      <delSpan spanTo="#c57-0018.04" rend="strikethrough"/>very little</line>
+    <line>money towards the<anchor xml:id="c57-0018.04"/><anchor xml:id="c57-0018.03"/> procur<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">e</add>
+        <del rend="strikethrough">ng</del>
+      </mod>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">any</add>
+        <del rend="strikethrough">of</del>
+      </mod> food for it.</line>
+    <line><del rend="strikethrough">This state of poverty</del> They often I believe<del
+        rend="strikethrough">d</del></line>
+    <line>suffered the pangs of hunger very poi</line>
+    <line>gnantly especially the <add hand="#pbs" place="superlinear">two</add> young<mod>
+        <add place="sublinear">er</add>
+        <del rend="strikethrough">er part</del>
+        <!--smeared and canceled ?letters below "er part" could possibly be ?Cottagers-->
+      </mod></line>
+    <line>for <add place="sublinear"><metamark>^</metamark></add><add place="superlinear"
+        >several times</add> they <del rend="strikethrough">often</del> placed food before the
+      old</line>
+    <line>man when <mod>
+        <del rend="strikethrough">they</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">were</add></del>
+      </mod>
+      <del rend="strikethrough">themselves in want of it</del></line>
+    <line>they had none for <del rend="strikethrough">their</del> themselves &#x2013;This</line>
+    <line>trait of kindness moved me sensibly.</line>
+    <line>I had been accustomed during the night</line>
+    <line>to steal a part of their store for my</line>
+    <line>own consumption; but when I found</line>
+    <line>that in doing this I inflicted pain on the</line>
+    <line>cottagers, I abstained, and satisfied my</line>
+    <line>self with berries nuts and roots which</line>
+    <line>I <mod>
+        <del rend="strikethrough">found</del>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear" hand="#pbs">gathered from</add>
+      </mod> a neighbouring <add place="superlinear">wood.</add> I <mod>
+        <del rend="strikethrough">found</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">discovered</add>
+      </mod> also</line>
+    <line>another means by which I was able</line>
+    <line>to assist their labours. I found that the</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0018.01">
+    <line><add hand="#pbs">of the </add></line>
+  </zone>
+</surface>

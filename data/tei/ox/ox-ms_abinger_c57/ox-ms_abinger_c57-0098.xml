@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0098" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0098.jp2"/>
+  <zone type="pagination">
+    <line>114</line>
+  </zone>
+  <zone type="main">
+    <line>my letters with feverish impatience; If they</line>
+    <line>were delayed I was miserable &amp; overcome</line>
+    <line>by a thousand fears; &amp; when they arrived</line>
+    <line>and I saw the superscription of Elizabeth</line>
+    <line>or my father I hardly dared to read &amp; ascer </line>
+    <line>tain my fate. Sometimes I thought that the</line>
+    <line>fiend followed me &amp; might remind me</line>
+    <line><mod>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear" hand="#pbs">by</add>
+      </mod> murdering my companion; <mod>
+        <del rend="strikethrough">with</del>
+        <add hand="#pbs" place="superlinear">When</add>
+      </mod> these</line>
+    <line>thought<add place="intralinear" hand="#pbs">s</add>
+      <mod>
+        <add place="sublinear"><metamark function="displacement" xml:id="c57-0098.01"
+            >^</metamark></add>
+      </mod> I would not quit Henry for a</line>
+    <line>moment but followed him as his shadow</line>
+    <line>to protect him from <mod>
+        <del rend="strikethrough">his</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod> fancied rage</line>
+    <line>of his destroyer. I felt as if I had commit</line>
+    <line>ted some great crime the conscious</line>
+    <line>ness of which haunted me. I was guiltless</line>
+    <line>but I had <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">indeed</add>
+      </mod> drawn down a horrible curse</line>
+    <line><mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear" hand="#pbs">upon</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">his</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my</add>
+      </mod> head <mod spanTo="#c57-0098.02"/><del rend="strikethrough" next="#c57-0098.03">which I
+        in vain endeavoured</del><add place="superlinear" hand="#pbs">as mortal as that of
+        crime</add></line>
+    <line><del xml:id="c57-0098.03" rend="strikethrough">to shake off</del><anchor
+        xml:id="c57-0098.02"/>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I visited Edinburgh with languid</line>
+    <line>eyes &amp; mind &amp; yet that city might have</line>
+    <line>interrested the most unfortunate being.</line>
+    <line>Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="superlinear">e</add>
+      </mod>rval did not like it so well as</line>
+    <line>Oxford for the antiquity of th<mod>
+        <del rend="overwritten">at</del>
+        <add place="intralinear">e</add>
+      </mod>
+      <add place="superlinear" hand="#pbs">latter</add> city was</line>
+    <line>pleasing to him. But the beauty &amp; regu</line>
+    <line>larity of the new town <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">of Edinburgh</add>
+      </mod> delighted him; its</line>
+    <line>environs are also the most beautiful</line>
+    <line>in the world; Arthur's seat, St Bernards</line>
+    <line>Well &amp; the Pentland hills&#x2013; But I was im</line>
+    <line>patient to arrive at the termination</line>
+    <line>of my journey. <del rend="strikethrough">and</del> We left Edinbur<add place="intralinear"
+        >g</add>h in</line>
+    <line>a week passing through Cooper, St Andrews</line>
+    <line>&amp; Along the the banks of the Tay to Perth</line>
+    <line>Where our friend expected us; But I was</line>
+    <line>not in the mood to laugh &amp; talk with </line>
+    <line>Strangers or enter into their feelings or plans</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0098.01">
+    <line><add hand="#pbs">posessed me</add></line>
+  </zone>
+</surface>

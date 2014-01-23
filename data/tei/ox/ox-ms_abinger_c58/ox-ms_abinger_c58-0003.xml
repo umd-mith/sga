@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0003" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0003.jp2"/>
+  <zone type="pagination"><line>105</line></zone>
+  <zone type="library"><line>2</line></zone>
+  <zone type="main">
+    <line><add hand="#comp"><milestone unit="tei:note" spanTo="#c58-0003.01"/>T.K<anchor
+          xml:id="c58-0003.01"/></add></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Soon after my arrival my father spoke</line>
+    <line>of my immediate marriage with my cousin. I</line>
+    <line>remained silent.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Have you then some other attachment?"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"None on earth; I love Elizabeth and look</line>
+    <line>foward to our union with delight. Let the</line>
+    <line>day therefore be fixed and on it I will consecrate</line>
+    <line>my<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="intralinear">s</add></del>
+      </mod><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">self in</add>
+      </mod> life or death to the happiness of my cousin.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My dear Victor do not speak thus. Heavy</line>
+    <line>misfortunes have befallen us, but let us only cling</line>
+    <line>closer to what remains and transfer our love for</line>
+    <line>those whom we have lost <del rend="strikethrough">wh</del> to those who yet</line>
+    <line>live. Our circle will be small but bound close</line>
+    <line>by the ties of affection and mutual misfortune-</line>
+  </zone>
+</surface>

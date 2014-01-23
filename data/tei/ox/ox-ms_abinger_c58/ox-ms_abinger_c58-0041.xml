@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0041" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0041.jp2"/>
+  <zone type="pagination"><line>153</line></zone>
+  <zone type="library"><line>21</line></zone>
+  
+  <zone type="main">
+    <line><milestone unit="tei:head" spanTo="#c58-0041.01"/>Walton, in continuation<anchor xml:id="c58-0041.01"/></line>
+    <line rend="right">August 2<mod>
+        <del rend="overwritten">5</del>
+        <add place="intralinear">6</add>
+      </mod>&#x2013; 17&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">You have read this strange and terrific story, Mar</line>
+    <line>geret, and do you not feel your blood congealed with</line>
+    <line>horror like that which even now curdles mine. Some</line>
+    <line>times seized with sudden agony he could not continue</line>
+    <line>his tale, at others his <mod>
+        <del rend="overwritten"><unclear reason="illegible">b</unclear></del>
+        <add place="intralinear">v</add>
+      </mod>oice broken yet piercing uttered</line>
+    <line>with difficulty the words so replete with agony. His fine</line>
+    <line>and lovely eyes were now lighted up with indignation,</line>
+    <line>now subdued to downcast sorrow and infinite wretch</line>
+    <line>edness. Sometimes he commanded his countenance and</line>
+    <line>tones and related the most horrible incidents with a</line>
+    <line>tranquil voice suppressing every mark of agitation,</line>
+    <line>then like a volcano bursting forth his face would</line>
+  </zone>
+</surface>

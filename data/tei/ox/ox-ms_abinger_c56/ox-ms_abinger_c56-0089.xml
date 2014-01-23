@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0089" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0089.jp2"/>
+  <zone type="pagination" rend="bordered"><line>119</line></zone>
+  <zone type="library"><line>42</line></zone>
+  <zone type="main">
+    <line>that she should suffer as <del rend="strikethrough">innocent</del></line>
+    <line>guilty &#x2013; She is to be tried today and I hope I</line>
+    <line>sincerely hope that she will be acquitted</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">This speech calmed me. I was firmly con</line>
+    <line>vinced in my own mind that Justine and</line>
+    <line>indeed every human being was guiltless of</line>
+    <line>this murder. I had no fear therefore</line>
+    <line>that any circumstantial evidence could</line>
+    <line>be brought forward strong enough to</line>
+    <line>convict her and in this assurance I calmed</line>
+    <line>myself expecting the trial with eagerness</line>
+    <line>but without prognosticating an evil</line>
+    <line>result.</line>
+    <line><metamark function="separate">_____________________</metamark></line>
+  
+    <addSpan corresp="#c56-0089.01" spanTo="#c56-0089.02"/>
+    <line><metamark function="displacement"><hi rend="sup">X</hi></metamark>I saw unhappiness deeply
+      impressed</line>
+    <line><del rend="strikethrough">co</del> on his countenance but he endea</line>
+    <line>voured to welcome me cheerfully</line>
+    <line>and <anchor xml:id="c56-0089.03"/><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">after <mod>
+            <del rend="strikethrough">our</del>
+            <add place="superlinear" hand="#pbs">we</add>
+          </mod> <del rend="strikethrough">mournful</del> had exchanged our mournful greetings</add>
+      </mod> would have spoken on some</line>
+    <line>other topic than that of our disaster</line>
+    <line>had not</line>
+    <anchor xml:id="c56-0089.02"/>
+  </zone>
+  <!--"he" in left margin was probably abandoned in favor of superlinear addition. -->
+  <zone type="left_margin" corresp="#c56-0089.03">
+    <line><add hand="#pbs">he</add></line>
+  </zone>
+</surface>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0009" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0009.jp2"/>
+  <zone type="pagination" rend="bordered"><line>8</line></zone>
+  <zone type="main">
+    <line>escaped to the open country and fear</line>
+    <line>fully took refuge in a low <mod>
+        <del rend="strikethrough">hut</del>
+        <add place="superlinear" hand="#pbs">hovel</add>
+      </mod> &#x2013;quite</line>
+    <line>bare and making a wretched appearance</line>
+    <line>after the pal<del rend="strikethrough">l</del>aces I had beheld in the</line>
+    <line>village.&#x2013; This <mod>
+        <del rend="strikethrough">hut</del>
+        <add place="superlinear" hand="#pbs">hovel</add>
+      </mod> however adjoined a</line>
+    <line>cottage of a neat &#x26; pleasant appearance,</line>
+    <line>but after my late <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear" hand="#pbs">dearly</add>
+      </mod> bought experience</line>
+    <line>I dared not enter it. My place of refuge<add place="superlinear"><metamark
+          function="displacement" xml:id="c57-0009.04">X</metamark></add></line>
+    <line><delSpan spanTo="#c57-0009.01" rend="vertical_line"/><del rend="strikethrough">was the
+        tool house and had not been</del></line>
+    <line><anchor xml:id="c57-0009.02"/>used <del rend="strikethrough">for</del> by the
+      inhabitants of the ad</line>
+    <line>joining dwelling and was entirely shut</line>
+    <line>out from view by a pigstye on one</line>
+    <line>side and a dunghill &#x26; small <del rend="strikethrough">s</del>pool</line>
+    <line>on <del rend="strikethrough">the</del> another &#x2013; the two others were</line>
+    <line>formed by the wall of the cottage<unclear>.</unclear><anchor xml:id="c57-0009.01"/>
+      Here</line>
+    <line><anchor xml:id="c57-0009.03"/>I retreated and lay down happy to have</line>
+    <line>found a shelter from the inclemency</line>
+    <line>of the season &#x26; still more from the</line>
+    <line>barbarity of man</line>
+    <line><metamark function="separate">___________________________</metamark></line>
+    <addSpan corresp="#c57-0009.04" spanTo="#c57-0009.05"/>
+    <line> was constructed of wood, <mod>
+        <del rend="strikethrough">&#x26;</del>
+        <add place="superlinear">but</add>
+      </mod> so low that</line>
+    <line>I could with difficulty sit upright in</line>
+    <line>it. <del rend="strikethrough">The</del>
+      <del rend="strikethrough">f</del>
+      <del rend="strikethrough">earth</del> No wood however</line>
+    <line>was placed on the earth which formed</line>
+    <line>the floor of the cottage but it was dry</line>
+    <line>and although the wind entered by</line>
+    <line>innumerable chinks I found it an</line>
+    <line>agreable assylum from the snow</line>
+    <line>&#x26; rain</line>
+    <anchor xml:id="c57-0009.05"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0009.02">
+    <add>was not </add>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0009.03">
+    <add>then </add>
+  </zone>
+
+
+</surface>

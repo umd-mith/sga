@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0173" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0173.jp2"/>
+  <zone type="pagination" rend="bordered"><line>189</line></zone>
+  <zone type="main">
+    <line>crush my vessel. The brave fellows whom I persua</line>
+    <line>ded to be my companions look at me for aid</line>
+    <line>but I have none <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to bestow.</add>
+      </mod> There is somthing terribly appall</line>
+    <line>ing in our situation Yet my courage &amp; hopes do</line>
+    <line>not desert me &#x2014; We may survive &amp; if we do not &#x2013;</line>
+    <line>I will repeat the lessons of my Seneca &amp; die with a</line>
+    <line>good heart.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Yet what, Mar<damage type="inkblot">gar</damage>et, will
+      be your state &#x2013; You</line>
+    <line>will not hear of my destruction and you will</line>
+    <line>anxiously awai<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> my return &#x2013; Years will pass</line>
+    <line>and you will have visitings of despair &amp;</line>
+    <line>yet be cheered by hope. Oh my beloved sister</line>
+    <line>the <del rend="strikethrough">siskness</del> sicknening failings of your heart</line>
+    <line>felt expectations <del rend="strikethrough">have</del> are in prospect</line>
+    <line>more terrible to me than my own death &#x2013;But</line>
+    <line>you have a husband and lovely children&#x2014;</line>
+    <line>you may be happy &#x2014; Heaven bless you &amp;</line>
+    <line>make you so.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My <del rend="strikethrough">in</del> unfortunate gu<del
+        rend="strikethrough">i</del>est regards</line>
+    <line>me with the tenderest compassion &#x2013; He</line>
+    <line><del rend="strikethrough">fills</del> endeavours to fill me with hope &#x2013; And</line>
+    <line>talks as if life were a thing which he loved</line>
+    <line>He reminds me how often the same acci</line>
+    <line>dents have happened to other navigators,</line>
+    <line>who have attempted the same sea. In</line>
+    <line>spite of myself he fills me with cheerful</line>
+    <line>augu<del rend="strikethrough">i</del>ries. Even the sailors feel the benefit</line>
+    <line>of his eloquence &#x2013; when he speaks they</line>
+    <line>no longer despair &#x2013; he rouzes their ener</line>
+    <line>gies &amp; they believe <del rend="smear"><mod>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear" hand="#pbs">when</add>
+        </mod></del> these vast mountains</line>
+    <line>of ice <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear" hand="#pbs">are</add>
+      </mod> mole hills which will va</line>
+    <line>nish before the resolution<add place="intralinear">s</add> of man.</line>
+    <line><del rend="strikethrough">But</del> this is but transitory and each</line>
+    <line>days expectation delayed, fills them fear &amp;</line>
+    <line rend="indent3">I almost dread <add place="superlinear" hand="#pbs"
+        >the</add> mutiny <add place="intralinear" hand="#pbs">of despair</add></line>
+  </zone>
+</surface>

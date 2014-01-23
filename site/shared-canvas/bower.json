@@ -1,0 +1,26 @@
+{
+  "name": "SGA_Shared_Canvas_Viewer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/umd-mith/sga",
+  "authors": [
+    "raffazizzi <raffaeleviglianti@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.2",
+    "modernizr": "~2.6.2",
+    "font-awesome": "3.2.1",
+    "jquery-ui": "~1.10.3",
+    "underscore": "~1.5.2",
+    "backbone": "~1.1.0"
+  }
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0189" ulx="0" uly="0" lrx="5138" lry="7316" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0189.jp2"/>
+  <zone type="library"><line>95 (<unclear unit="chars" extent="2"/>)</line></zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The mames of <damage type="tear"/> a Simiramis, sovereigns of Babylon
+      are</line>
+    <line>preserved by that bloody hallo with glory and victory always decora<damage type="tear"
+      /></line>
+    <line>its worshippers; but the effects of their conquest were but mom<damage type="tear"
+      />e</line>
+    <line>tary and gave way before the rapid advances of Cyrus whose</line>
+    <line>warfare conducted on principles of utility and benevolence</line>
+    <line><unclear unit="chars" extent="4"/>red through the lapse of many ages</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The memory of Cyrus is contemplated with peculiar</line>
+    <line>complacency by <del rend="strikethrough" instant="true">many</del> most historians. His
+      humanity and love</line>
+    <line>of justice distinguishe<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">s</add>
+      </mod> him those other conquerors to whom</line>
+    <line>ambition <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">is</add>
+        <del rend="strikethrough">was</del>
+      </mod> the ruling motive. Cyrus was educated in the</line>
+    <line>strictest simplicity, <del rend="strikethrough">and</del> <del rend="strikethrough">e</del>
+      early enured to fatigue and taught</line>
+    <line>after the manners of <mod>
+        <del rend="strikethrough">the</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">his</add>
+      </mod> age, to consider glory as the great &#x26;</line>
+    <line>desirable bourne towards which every virtuous man ought</line>
+    <line>to direct his exertions But the natural <del rend="strikethrough">m</del> mildness of
+      his</line>
+    <line>disposition let him the rather to seek for honour in the <damage type="tear"/></line>
+    <line>don than in the punishment of his enemies; and his <damage type="tear"/></line>
+    <line>often appeared to the fallen nation rather in the light of <damage type="tear"/></line>
+    <line>blessing than a curse. Innumerable anecdotes are <damage type="tear"/></line>
+    <line>of his virtue and wisdom by Xenephon but this history, <damage type="tear"/></line>
+    <line>tunately must be regarded as a romance rather than the real</line>
+    <line>biography of the man: for although tradition might probably</line>
+    <line>preserve several <del rend="strikethrough">anecdotes</del> of the private actions of
+      so</line>
+    <line>celebrated a prince. Yet the minuteness &#x26; regularity of detail</line>
+    <line><del rend="strikethrough"><unclear unit="chars" extent="1"/></del> which embellishes the
+      narratives of the Cyropedia must</line>
+    <line>be solely attributed to the invention of its author and there</line>
+    <line>are no rational grounds by which we can regulate the ex</line>
+    <line>tent of credit due to the historian of <del rend="strikethrough">C</del> Cyrus. The
+      anecdotes</line>
+    <line>however that are perserved of him chiefly relate to the generous</line>
+    <line>pardon of his prisoners of war, a mode of proceeding that</line>
+    <line>wonderfully facillitated his conquests so that he was still young</line>
+    <line>when he became possessed of the Babylonish Empire. From</line>
+    <line>this time he was principally occupied in the cares of govern</line>
+    <line>ment which he established on a very arbitrary <del rend="strikethrough">f</del>
+      footing</line>
+    <line>leaving to his sucessors a despotic authority over a people</line>
+    <line><damage type="tear"/> whose courage was destroyed by slavery and</line>
+  </zone>
+</surface>

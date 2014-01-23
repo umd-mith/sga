@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0125" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0125.jp2"/>
+  <zone type="pagination" rend="bordered"><line>141</line></zone>
+  <zone type="library"><line>63</line></zone>
+  <zone type="main">
+    <line>beany evil to me?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Nothing indeed <del rend="strikethrough">said M<hi
+          rend="underline"><hi rend="sup">r</hi></hi> Kirwin</del> could</line>
+    <line>be more unfortunate <add place="superlinear">&#x26; agonizing</add> than the
+      strange</line>
+    <line>chances that have lately <del rend="strikethrough">taken</del> occurred.</line>
+    <line>You were thrown, by some surprising</line>
+    <line>accident, on this shore, renowned for its</line>
+    <line>hospitality <del rend="strikethrough">but prejudiced against you.</del></line>
+    <line>Siezed immediately &#x26; charged with murder</line>
+    <line>the first sight that was presented to your</line>
+    <line>eyes was the body of your friend mur</line>
+    <line>dered in so unaccountable a manner</line>
+    <line>and placed by some fiend as it were across</line>
+    <line>your path&#x2014; <del rend="strikethrough">I What a</del>
+      <del rend="strikethrough">Could such incidents</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">As M<hi rend="sup">r</hi>. Kirwin said this,
+      notwithstanding</line>
+    <line>the agitation that I <del rend="strikethrough">fel</del> endured on this</line>
+    <line>retrospect of my sufferings&#x2013;I also felt</line>
+    <line>considerable surprise at the knowledge</line>
+    <line>he seemed to possess concerning me.</line>
+    <line>I suppose some astonishment was expressed</line>
+    <line>in my countenance &#x2013; for M<hi rend="sup">r</hi>. Kirwin</line>
+    <line>hastened to say &#x2013; It was not untill a day</line>
+    <line>or two after your illness that I thought</line>
+    <line>of examining your dress that I might</line>
+    <line>discover some trace by which I could</line>
+    <line>send to your relations an account of your</line>
+    <line>misfortune and illness. I found several letters</line>
+    <line>among others one <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">which I</add>
+      </mod> discovered by its commence</line>
+    <line>ment to be from your father &#x2013; I instant</line>
+    <line>ly wrote to Geneva &#x2013; nearly two months has</line>
+    <line>passed since the departure of my letter &#x2014;</line>
+    <line>But you are ill &#x2013; even now you tremble</line>
+    <line><anchor xml:id="c57-0125.01"/>appear unfit for agitation of any kind.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">This suspence, <del rend="strikethrough">I cried</del> is
+      a thousand</line>
+    <line>times worse than the most horrible</line>
+    <line>event &#x2013;Tell me what new scene of dea<del rend="strikethrough">l</del>th</line>
+    <line>has been acted &#x26; whose murder I am</line>
+    <line>now to lament.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0125.01">
+    <line><add hand="#pbs">You </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0044" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0044.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>69</line>
+  </zone>
+  <zone type="main">
+    <line>were the sight of flowers and birds</line>
+    <line>and all the gay apparel of summer</line>
+    <line><mod>
+        <del rend="strikethrough">but</del>
+        <anchor xml:id="c57-0043.01"/>
+      </mod> when those deserted me <delSpan spanTo="#c57-0044.02" rend="strikethrough"/>&amp;
+      the</line>
+    <line>days became shorter<anchor xml:id="c57-0044.02"/> I turned with</line>
+    <line>more attention towards the cottagers</line>
+    <line><mod>
+        <anchor xml:id="c57-0044.03"/>
+        <mod>
+          <del rend="overwritten">T</del>
+          <add place="intralinear">t</add>
+        </mod>
+      </mod>he absence of summer &#x2013; They loved</line>
+    <line>and sympathized with one another </line>
+    <line>and the<add place="intralinear">ir</add>
+      <mod>
+        <del rend="strikethrough">happiness</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">joys</add>
+      </mod> depending on</line>
+    <line>each other were not <mod>
+        <del rend="strikethrough">hurt</del>
+        <add place="superlinear" hand="#pbs">interrupted</add>
+      </mod> by the</line>
+    <line>casualties that took place around</line>
+    <line>them &#x2014; The more I saw of them</line>
+    <line>the greater became my desire to</line>
+    <line>claim their protection &amp; kindness.</line>
+    <line>My heart yearned to <del rend="strikethrough">beco</del> be <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">known and</add>
+      </mod> loved</line>
+    <line>by the<add place="intralinear">se</add> amiable creatures to see</line>
+    <line>their sweet looks directed towards</line>
+    <line>me in kindness &#x2013; I dared not think</line>
+    <line>that they would turn <add place="superlinear" hand="#pbs">them</add> from me</line>
+    <line>with disdain or horror &#x2013; The poor</line>
+    <line>that stopt at their door were</line>
+    <line>never driven away &#x2013;<del rend="strikethrough" instant="true">And I</del> I
+      asked</line>
+    <line>it is true for greater treasures</line>
+    <line>that a little food or rest I required</line>
+    <line>kindness &amp; sympathy but I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">did</add>
+      </mod> not</line>
+    <line>believe my self utterly unworthy</line>
+    <line>of it</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0043.01">
+    <line><del rend="strikethrough"><add>and </add></del></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0044.03">
+    <line>Their happiness was <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">not decreased by </add>
+      </mod></line>
+  </zone>
+</surface>

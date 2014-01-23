@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0012" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0012.jp2"/>
+  <zone type="pagination" rend="bordered"><line>11</line></zone>
+  <zone type="main">
+    <line>a young man met her whose countenance</line>
+    <line>expressed a deeper desponc<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">e</add>
+      </mod>ns<mod>
+        <del rend="overwritten">des</del>
+        <add place="intralinear">ces</add>
+      </mod>ly; <del rend="strikethrough">than her</del></line>
+    <line>uttering a few <mod>
+        <del rend="strikethrough">words</del>
+        <add place="superlinear">sounds</add>
+      </mod> with <del rend="strikethrough">ain</del> an air of</line>
+    <line>melancholy he took the pail from her head</line>
+    <line>and bore it into the cottage himself. She</line>
+    <line>followed <del rend="strikethrough">wiping</del>
+      <del rend="strikethrough">dry my her tears whi</del>, and they</line>
+    <line>diasppeared &#x2013; Presently I saw the young man</line>
+    <line>again with some tools in his hand cross the</line>
+    <line>field opposite the cottage and the girl was</line>
+    <line>also busied someti<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">m</add>
+      </mod>es in <del rend="strikethrough">and som</del> the cottage</line>
+    <line>and sometimes in the yard where she fe<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">d</add>
+      </mod></line>
+    <line>some <del rend="strikethrough">ck</del> chickens. <del rend="strikethrough">and after some
+        hours </del>While</line>
+    <line>I examined my dwelling I discovered that part</line>
+    <line>of the cottage window had formerly occupied</line>
+    <line>a corner of it <del rend="strikethrough">pu</del> but the panes had <del
+        rend="strikethrough">n</del> been</line>
+    <line>filled up with wood. In one of these was</line>
+    <line>a small &#x26; allmost imperceptible <del rend="strikethrough">h</del> chink,</line>
+    <line>through which <del rend="strikethrough">howev</del> the eye could just</line>
+    <line>pene<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">t</add>
+      </mod>rate; <mod>
+        <del rend="strikethrough">and looking in</del>
+        <del rend="strikethrough">I behe</del>
+        <del rend="strikethrough">sa</del>
+        <del rend="unmarked">w</del>
+        <add place="superlinear" hand="#pbs">thro this chink</add>
+      </mod> a</line>
+    <line>small room <add hand="#pbs" place="superlinear">was visible,</add> whitewashed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&#x26;</add>
+      </mod> clean but very</line>
+    <line>bare of furniture <del rend="strikethrough">&#x26;</del> in <del rend="strikethrough"
+        >co</del> one corner near</line>
+    <line>a small fire <mod>
+        <del rend="strikethrough">I saw</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">beheld</add></del>
+          <add hand="#pbs" place="superlinear">sate</add>
+        </mod>
+      </mod> an old man <del rend="strikethrough">sitting</del> leaning</line>
+    <line>his head on his hand <del rend="smear">&#x2013;</del> in a disconslate atti</line>
+    <line>tude &#x2014; <add place="superlinear"><metamark function="displacement"
+          xml:id="c57-0012.01">X</metamark></add> The young girl was <del rend="strikethrough"
+        >co</del> occupied in</line>
+    <line>arranging the cottage <mod spanTo="#c57-0012.06"/><del rend="strikethrough">and</del><add
+        place="superlinear">but presently</add>
+      <delSpan spanTo="#c57-0012.07" rend="strikethrough"/>when that was</line>
+    <line>done<anchor xml:id="c57-0012.07"/><anchor xml:id="c57-0012.06"/> she took somthing out of
+        <del rend="strikethrough">the</del> a drawer</line>
+    <line>which employed her hands <mod>
+        <del rend="strikethrough">and</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&#x26; sat down beside <del rend="strikethrough">the o</del></add>
+      </mod> the old</line>
+    <line>man <add place="superlinear">who</add> taking up an <del rend="strikethrough">instur</del>
+      instrument began</line>
+    <line>to play and to produce sounds sweeter than</line>
+    <line>the voice of the thrush or nightingale.</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0012.01">
+    <delSpan spanTo="#c57-0012.03" rend="strikethrough"/>
+    <addSpan spanTo="#c57-0012.02"/>
+    <line>his hair</line>
+    <line>was grey</line>
+    <anchor xml:id="c57-0012.02"/>
+    <anchor xml:id="c57-0012.03"/>
+  </zone>
+
+  <zone type="left_margin">
+    <milestone unit="tei:note" spanTo="#c57-0012.05"/>
+    <addSpan spanTo="#c57-0012.04" hand="#pbs"/>
+    <line>This chapter is</line>
+    <line>too</line>
+    <line>short</line>
+    <anchor xml:id="c57-0012.04"/>
+    <anchor xml:id="c57-0012.05"/>
+  </zone>
+</surface>

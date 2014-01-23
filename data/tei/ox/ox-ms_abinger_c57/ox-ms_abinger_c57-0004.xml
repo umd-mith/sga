@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c57-0004" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0004.jp2"/>
+    <zone type="pagination" rend="bordered"><line>3</line></zone>
+    <zone type="main">
+        <line>moon and <add place="superlinear">I</add> fixed my eyes <mod>
+                <del rend="overwritten">i</del>
+                <add place="intralinear">o</add>
+            </mod>n <del rend="strikethrough">th</del> that with</line>
+        <line>pleasure. Several changes of day and night</line>
+        <line>passed and the orb of night had greatly</line>
+        <line>lessened when I began to distinguish my</line>
+        <line>sensations <mod>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear" hand="#pbs">from each other&#x2013;</add>
+            </mod>. I <mod>
+                <del rend="strikethrough">first saw</del>
+                <add place="superlinear" hand="#pbs"><del rend="strikethrough">dis</del> gradually
+                    saw plainly</add>
+            </mod> the clear stream</line>
+        <line>that supplied me with drink and the <del rend="strikethrough"
+                ><unclear>gre</unclear></del></line>
+        <line>trees that <mod>
+                <del rend="strikethrough">covered</del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">shaded</add>
+            </mod> me with their foliage.</line>
+        <line>I was delighted when I first discovered</line>
+        <line>that a pleasant sound <mod>
+                <del rend="strikethrough">that</del>
+                <add place="superlinear" hand="#pbs">which</add>
+            </mod> often</line>
+        <line><del rend="strikethrough">delighte</del> saluted my ears proceeded</line>
+        <line>from the throats of <del rend="strikethrough">son</del> the little <mod>
+                <del rend="strikethrough">anih</del>
+                <add place="superlinear" hand="#pbs">winged</add>
+            </mod></line>
+        <line>a<mod>
+                <del rend="overwritten">m</del>
+                <add place="intralinear">ni</add>
+            </mod>mals who often intercepted the light</line>
+        <line>from my eyes. I began also to see <del rend="strikethrough">an</del></line>
+        <line>with <del rend="strikethrough">forms</del> greater accuracy the forms</line>
+        <line>that surrounded me and to perceive</line>
+        <line>the boundaries of the radiant light which</line>
+        <line><del rend="strikethrough">overspeaed my dwelling</del> canopied me.&#x2013;some</line>
+        <line>times I tried to imitate <add place="superlinear">the</add> pleasant songs of</line>
+        <line>the birds but was unable&#x2014; Sometimes I</line>
+        <line><del rend="strikethrough">also</del> wished to express my sensations in</line>
+        <line>my own mode but <add place="superlinear" hand="#pbs">the</add> unco<add
+                place="superlinear" hand="#pbs">u</add>th and innarticu</line>
+        <line>late sound <add place="superlinear" hand="#pbs">which</add> broke from me <del
+                rend="strikethrough">which</del> frightened</line>
+        <line>me into silence again.</line>
+        <milestone unit="tei:p"/>
+        <line><space unit="chars" extent="5"/>The moon had dissapeared from the night, &amp;</line>
+        <line>again with a lessened form it shewed itself</line>
+        <line><del rend="strikethrough">again</del> while I still remained in the forest.</line>
+        <line>My <mod>
+                <del rend="strikethrough">ideas</del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">sensations</add>
+            </mod> were by this time become distinct</line>
+        <line>&amp; <mod>
+                <del rend="strikethrough"><unclear reason="illegible">e</unclear></del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">my mind</add>
+            </mod> received every day aditional <mod>
+                <del rend="strikethrough">ones</del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">ideas.</add>
+            </mod> My eyes</line>
+        <line>became accustomed to the light and to</line>
+        <line>perceive objects in their right forms; I distin</line>
+    </zone>
+    
+</surface>

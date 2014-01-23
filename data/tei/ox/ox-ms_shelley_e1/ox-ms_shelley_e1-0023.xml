@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0023" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0023.jp2"/>
+  <zone type="library">11</zone>
+  <zone type="main">
+    <line>Which wraps me, like an atmosphere of light</line>
+    <line>And bears me as a cloud is borne by its own wind<add place="sublinear">!</add></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0023.01"/>
+    <line rend="center">The Moon</line>
+    <anchor xml:id="e1-0023.01"/>
+    <line rend="indent1">Brother mine, calm wanderer</line>
+    <line rend="indent1">Happy globe of land &amp; air</line>
+    <line>Some Spirit <mod>
+        <del rend="strikethrough">wraps thine atmosphere &amp;</del>
+        <add place="superlinear">is darted like a beam from</add>
+      </mod> thee</line>
+    <line rend="indent1">Which penetrates my frozen frame</line>
+    <line rend="indent1">And passes with the warmth of flame&#x2014;</line>
+    <line>With love &amp; odour &amp; deep melody</line>
+    <line rend="indent2">Through me, through me!&#x2014;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0023.02"/>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e1-0023.02"/>
+    <line>Ha, ha,! the cavens of my hollow mountains</line>
+    <line>My cloven fire-crags, sound-exulting fountains</line>
+    <line>Laugh with a vast &amp; inextinguishable laughter</line>
+    <line rend="indent1">The Oceans &amp; the Desarts &amp; the Abysses</line>
+    <line rend="indent1">Of the deep air's un<mod>
+        <del rend="strikethrough">fathomed</del>
+        <add place="superlinear">measured</add>
+      </mod> wildernesses</line>
+    <line>Answer from <mod>
+        <add place="sublinear"><metamark>&#x2038;</metamark></add>
+        <add place="superlinear">all</add>
+      </mod> their clouds &amp; billows, echoing after</line>
+    <line rend="indent1">They cry aloud as I do&#x2014; Sceptered Curse</line>
+    <line rend="indent1">Who all our green &amp; azure Universe</line>
+  </zone>
+</surface>

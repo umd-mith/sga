@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0039" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0039.jp2"/>
+  <zone type="pagination"><line>143</line></zone>
+  <zone type="library"><line>20</line></zone>
+  <zone type="main">
+    <line>words. Prepare! Your toils only begin; wrap yourself up</line>
+    <line>in furs and provide food for we shall soon enter</line>
+    <line>on a journey where your sufferings will satisfy</line>
+    <line>my everlasting hatred.</line>
+    <line><milestone unit="tei:note" spanTo="#c58-0039.01"/><add place="intralinear" hand="#comp"
+        >F.W/</add><anchor xml:id="c58-0039.01"/><milestone unit="tei:p"/>My courage and
+      perseverance were invigorated</line>
+    <line>by these scoffing words; I resolved not to fail in my</line>
+    <line>purpose; and calling on heaven to support me I</line>
+    <line>continued with unabated fervour, to traverse im-</line>
+    <line>mense desarts untill the ocean appeared at a</line>
+    <line>distance and formed the utmost boundary of</line>
+    <line>the horizon. Oh! how unlike it was to the blue seas</line>
+    <line>of the south<mod>
+        <add place="intralinear">!</add>
+        <del rend="overwritten">;</del>
+      </mod> Covered with ice it was only to be</line>
+    <line>distinguished from land by its superior wildness and</line>
+    <line>ruggedness. The greeks wept <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for joy</add>
+      </mod>when they beheld the</line>
+  </zone>
+</surface>

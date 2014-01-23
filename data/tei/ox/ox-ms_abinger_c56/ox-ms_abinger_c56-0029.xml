@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0029" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0029.jp2"/>
+  <zone type="pagination" rend="bordered"><line>59</line></zone>
+  <zone type="library"><line>13</line></zone>
+
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"I am happy" said M<hi rend="sup">r</hi>. Waldham,
+      "To</line>
+    <line>"have gained a <del rend="strikethrough">desci</del> desciple and if if your</line>
+    <line>"<del rend="strikethrough">appil</del> application equals your ability</line>
+    <line>"I have no doubt of your success. Che</line>
+    <line>"mistry is that branch of natural</line>
+    <line>"philosophy in which the greatest im-</line>
+    <line>"provements have <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">been</add>
+      </mod> &#x26; may be made.</line>
+    <line>"It is on that account<del rend="strikethrough">s</del> that I
+      <unclear>sl</unclear></line>
+    <line>"chose it for my peculiar study. But</line>
+    <line>"at the same <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">time</add>
+      </mod> I did not neglect the</line>
+    <line>"other sciences. A man would make</line>
+    <line>"a very sorry chemist if he atteneded</line>
+    <line>to that department alone. <unclear unit="chars" extent="1"/> If</line>
+    <line>"your wish is really to become a</line>
+    <line>"man of science and not merely</line>
+    <line>"a pretty experimentalist I should</line>
+    <line>"advi<mod>
+        <del rend="overwritten">c</del>
+        <add place="intralinear" hand="#pbs">s</add>
+      </mod>e you to apply to every</line>
+    <line>"branch of natural philosophy <del rend="strikethrough">and</del><anchor
+          xml:id="c56-0029.05"/></line>
+    <line>"Mathematics."</line>
+    <milestone unit="tei:p"/>
+    <delSpan spanTo="#c56-0029.07" rend="vertical_line"/><line rend="indent1">He
+      then gave me the list</line>
+    <line>I had requested and mentioned a few</line>
+    <line>machines that I ought to procure</line>
+    <line>and promising that when I should</line>
+    <line>have</line><anchor xml:id="c56-0029.07"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">He then took me into his</line>
+    <line><mod>
+        <del rend="strikethrough">workroom</del>
+        <add place="superlinear">laboratory</add>
+      </mod> and <del rend="strikethrough">shewed a</del><del rend="unmarked">nd</del>
+      explain</line>
+    <line>ed to me <add hand="#pbs" place="superlinear">the use of</add> his various machines
+        <mod spanTo="c56-0029.08"/><delSpan rend="strikethrough" spanTo="#c56-0029.09"
+      />tel</line>
+    <line>ling me<anchor xml:id="c56-0029.09"/><anchor xml:id="c56-0029.06"/><anchor
+        xml:id="c56-0029.08"/> what I <mod spanTo="#c56-0029.10"/><del rend="strikethrough"
+        next="#c56-0029.11">should</del>
+      <del rend="strikethrough" xml:id="c56-0029.11" next="c56-0029.12">procure</del><add
+        place="superlinear">ought to procure</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0029.12">for my priva</del><anchor
+        xml:id="c56-0029.10"/> and promising me</line>
+    <line><del rend="strikethrough">a lone</del> the use of his <add place="superlinear" hand="#pbs"
+        >own</add> when I should</line>
+    <line>have advanced far<del rend="strikethrough">e</del> enough in</line>
+    <line>the study not to <damage agent="ink_blot">des</damage>
+      <del rend="strikethrough">der</del> derange</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0029.01">
+    <addSpan spanTo="#c56-0029.02"/>
+    <line><addSpan spanTo="#c56-0029.03" hand="#pbs"/>in ultimately</line>
+    <line>turning to the</line>
+    <line>solid advantage of</line>
+    <line>mankind.<anchor xml:id="c56-0029.03"/>
+      <addSpan spanTo="#c56-0029.04"/>I listen</line>
+    <line>ed to his state</line>
+    <line>ment which</line>
+    <line>was delivered</line>
+    <line>without any</line>
+    <line>presumption</line>
+    <line>&#x26; then added<anchor xml:id="c56-0029.04"/></line><anchor xml:id="c56-0029.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0029.05">
+    <line><retrace cause="fix" hand="#mws"><add hand="#pbs">including</add></retrace></line></zone>
+
+  <zone type="left_margin" corresp="#c56-0029.06">
+    <line><add hand="#pbs">instructing me as to</add></line></zone>
+
+  
+</surface>

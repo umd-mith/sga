@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0093" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0093.jp2"/>
+  <zone type="pagination" rend="bordered"><line>123</line></zone>
+  <zone type="library"><line>44</line></zone>
+  <zone type="main">
+    <line>constrained &#x2013; and as her confusion had</line>
+    <line>before been adduced as a proof of her guilt</line>
+    <line>she worked <del rend="strikethrough">herself</del> up her mind to an appear</line>
+    <line>ance of courage. When she entered the court</line>
+    <line>she threw her eyes round it and quickly dis</line>
+    <line>covered where we were seated &#x2013; a tear seemed</line>
+    <line>to dim her eye when she saw us but she</line>
+    <line>recovered herself and <del rend="strikethrough">g</del>
+      <del rend="strikethrough">with</del> a look<del rend="strikethrough">e</del> of sorrow</line>
+    <line>ful affection seemed to attest her utter</line>
+    <line>guiltlessness.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The trial began <del rend="strikethrough">and</del>
+      <delSpan rend="strikethrough" spanTo="#c56-0093.01"/>listened attentive</line>
+    <line>ly wish<anchor xml:id="c56-0093.01"/> and after the advocate against her</line>
+    <line>had stated the charge several witnesses</line>
+    <line>were called. Several strange facts combined</line>
+    <line>against her which would have staggered</line>
+    <line>any one who had not such prof of her</line>
+    <line>innocence as I had. She had been out the</line>
+    <line>whole of the night on which the mur</line>
+    <line>der had been committed and towards</line>
+    <line>morning had been perceived by a <mod spanTo="#c56-0093.02"/><del rend="strikethrough"
+        >farme</del></line>
+    <line><anchor xml:id="c56-0093.03"/><anchor xml:id="c56-0093.02"/>woman not far from the spot
+      where</line>
+    <line>the body of the murdered child had been</line>
+    <line>afterwards found. <del rend="strikethrough">He asked her wh</del>
+      <mod>
+        <del rend="strikethrough">She</del>
+        <add place="superlinear" hand="#pbs">The woman</add>
+      </mod></line>
+    <line>asked <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">her</add>
+      </mod> what she did there<add place="intralinear" hand="#pbs">?</add>&#x2013;<mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear" hand="#pbs">but</add>
+      </mod> she looked</line>
+    <line>very <del rend="strikethrough">stang</del> strangely and only returned a</line>
+    <line>confused <add place="sublinear"><metamark function="displacement" xml:id="c56-0093.04"
+          >^</metamark></add> answer<del rend="strikethrough">e</del>. <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">S</del>
+        <add place="superlinear">She</add>
+      </mod>
+      <del rend="strikethrough">came</del> returned to</line>
+    <line>the house about eight o'clock and when</line>
+    <line>some one enquired where she had</line>
+    <line>passed the night she replied that she</line>
+    <line>had been looking <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear" hand="#pbs">for</add>
+      </mod> the child and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">enquired</del>
+        <add place="superlinear">demanded</add>
+      </mod></line>
+    <line>earnestly if any thing had been heard con</line>
+    <line>cerning him. When the body was brought</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0093.03">
+    <line><add>market-</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0093.04">
+    <addSpan hand="#pbs" spanTo="#c56-0093.05"/>
+    <line>&#x26; unin-</line>
+    <line>telligible</line>
+    <line><metamark function="displacement">^</metamark></line>
+    <anchor xml:id="c56-0093.05"/>
+  </zone>
+</surface>

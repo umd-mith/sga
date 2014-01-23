@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0022" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0022.jp2"/>
+  <zone type="main">
+    <line>The anatomies of unknown winged things,</line>
+    <line>And fishes which were <mod>
+        <del rend="strikethrough">islands</del>
+        <add place="superlinear">isles</add>
+      </mod> of living scale,</line>
+    <line>And serpents, bony chains, twisted around</line>
+    <line>The iron crags, or <mod>
+        <del rend="strikethrough">around</del>
+        <add place="superlinear">within</add>
+      </mod> heaps of dust</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0022.02"/>To which the tortuous strength of thier
+      last</line>
+    <line rend="right">pangs<anchor xml:id="e1-0022.02"/><add place="sublinear"
+          ><metamark>&#x2014;&#x2014;&#x2014;</metamark></add></line>
+    <line>Had crushed the iron crags;&#x2014;&amp; over these</line>
+    <line>The jagged alligator &amp; the might</line>
+    <line>Of earth-convulsing behemoth, which once</line>
+    <line>Were monarch beasts, &amp; on the slimy shores</line>
+    <line>And weed-overgrown continents of Earth</line>
+    <line>Increased &amp; multiplied like summer worms</line>
+    <line>On an abandoned corpse, till the blue globe</line>
+    <line>Wrapt Deluge round it like a cloak, &amp; they</line>
+    <line><del rend="strikethrough">Gasped</del><del rend="unmarked">,</del> Yelled, gaspt &amp;
+      were abolished; <unclear>or</unclear> some God</line>
+    <line>Whose throne was in a Comet, past, &amp; cried--</line>
+    <line><add place="superlinear"><metamark function="count">280</metamark></add><milestone
+        unit="tei:l" spanTo="#e1-0022.03"/>Be not! &#x2014; &amp; like my words they were no</line>
+    <line>more<anchor xml:id="e1-0022.03"/><add place="sublinear"><metamark function="separate"
+          >&#x2014;&#x2014;&#x2014;</metamark></add></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0022.01"/>
+    <line>The Earth</line>
+    <anchor xml:id="e1-0022.01"/>
+    <line>The joy, the triumph, the delight, the <mod>
+        <del rend="strikethrough">gladness!</del>
+        <add place="superlinear">madness</add>
+      </mod></line>
+    <line>The boundless, overflowing bursting gladness</line>
+    <line>The vapourous exultation, not to be confined!</line>
+    <line rend="indent1">Ha! ha! the Animation of delight</line>
+  </zone>
+</surface>

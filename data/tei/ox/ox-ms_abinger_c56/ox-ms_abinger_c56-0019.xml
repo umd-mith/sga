@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c56-0019" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0019.jp2"/>
+
+    <zone type="pagination" rend="#bordered"><line>49</line></zone>
+    <zone type="library"><line>8</line></zone>
+
+    <zone type="main">
+        <line>whose dearest ties are rent by that</line>
+        <line>most irreperable evil; the <del rend="strikethrough">bla</del> void</line>
+        <line>that every where presents itself to</line>
+        <line><mod>
+                <del rend="strikethrough">their</del>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <del rend="strikethrough">minds</del>
+                <add place="superlinear">the soul</add>
+            </mod> and the despair that</line>
+        <line>is exhibited on the countenance.</line>
+        <line>It is so long before the mind can</line>
+        <line>persuade itself that she, whom</line>
+        <line>they saw every day, and whose very</line>
+        <line>existence appeared a part of theirs,</line>
+        <line>can have departed for ever: <mod>
+                <del rend="overwritten">T</del>
+                <add>t</add>
+            </mod>hat</line>
+        <line>the brightness of a loved eye can have</line>
+        <line><mod>
+                <del rend="strikethrough">faded</del>
+                <add place="superlinear" hand="#pbs">been extinguished,</add>
+            </mod> and the sound of a voice <del rend="strikethrough">never</del></line>
+        <line>so familiar and dear to the ear</line>
+        <line>can be hushed, never more to be</line>
+        <line>heard. These are the reflections of the</line>
+        <line>first days. But when the lapse of</line>
+        <line>time proves the reality of the evil</line>
+        <line>then the <mod>
+                <del rend="strikethrough">true</del>
+                <del rend="strikethrough">despair</del>
+                <add place="superlinear">bitterness of grief</add>
+            </mod> commences<add place="intralinear" hand="#pbs"><unclear>,</unclear></add></line>
+        <line><del rend="strikethrough">Then the survivors dare not turn</del></line>
+        <line><mod>
+                <del rend="strikethrough">But</del>
+                <add place="superlinear" hand="#pbs">Yet, from whom</add>
+            </mod> who has not <delSpan rend="strikethrough" spanTo="#c56-0019.01"/>had some
+            dear</line>
+        <line>connection rent away by<anchor xml:id="c56-0019.01"/> that rude hand <anchor
+                xml:id="c56-0019.02"/></line>
+        <line><unclear unit="chars" extent="2"/> and why <mod>
+                <del rend="strikethrough">need</del>
+                <add place="superlinear" hand="#pbs">should</add>
+            </mod> I describe a sorrow</line>
+        <line>which all have felt, and must</line>
+        <line>feel? <del rend="strikethrough">But</del>
+            <mod>
+                <del rend="overwritten">t</del>
+                <add place="intralinear" hand="#pbs">T</add>
+            </mod>he time at length arrives</line>
+        <line>when grief is rather an indulgence</line>
+        <line><del rend="strikethrough">a</del> than a necessity and the smile</line>
+        <line>that plays on the lips, although</line>
+        <line>it is deemed sacriledge, is not Ba</line>
+        <line>nished.&#x2013; My mother <mod spanTo="#c56-0019.04"/><del rend="strikethrough"
+                next="#c56-0019.05">was gone</del><add place="superlinear"
+                ><unclear>lost</unclear></add>
+            <del rend="strikethrough" xml:id="c56-0019.05" next="#c56-0019.06">had be</del><del
+                rend="unmarked">en</del></line>
+        <line><del rend="strikethrough" xml:id="c56-0019.06" next="#c56-0019.07">taken</del><add
+                place="sublinear"><metamark function="insert">^</metamark></add>
+            <del rend="strikethrough" xml:id="c56-0019.07">away</del><add place="superlinear">was
+                dead</add><anchor xml:id="c56-0019.04"/> but we had still</line>
+    </zone>
+
+    <zone type="left_margin" corresp="#c56-0019.02">
+        <addSpan hand="#pbs" spanTo="#c56-0019.03"/>
+        <line>rent away some</line>
+        <line>dear connection,</line><anchor xml:id="c56-0019.03"/>
+    </zone>
+</surface>

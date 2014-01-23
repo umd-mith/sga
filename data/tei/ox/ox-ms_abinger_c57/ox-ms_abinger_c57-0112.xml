@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0112" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0112.jp2"/>
+  <zone type="pagination" rend="bordered"><line>128</line></zone>
+  <zone type="main">
+    <line>the basket into the sea &#x2013; I listened to the gurg-</line>
+    <line>ling sound as it sunk &amp; then <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">sailed</add>
+      </mod> away from the</line>
+    <line>spot. The sky had become clouded but the</line>
+    <line>air was pure although <del rend="strikethrough">a</del> chilled by the</line>
+    <line>North-East breeze that was rising. But</line>
+    <line>it refreshed &amp; filled me with such agreable</line>
+    <line>sensations that I resolved to prolong</line>
+    <line>my stay on the water &amp; <mod>
+        <del rend="strikethrough">leaving</del>
+        <add place="superlinear">fixing</add>
+      </mod> the rudder</line>
+    <line><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <anchor xml:id="c57-0112.01"/>
+      </mod>stretched myself at the bottom of the boat.</line>
+    <line>Clouds hid the moon, every thing was obscure</line>
+    <line>&amp; I heard only the sound of the boat as it</line>
+    <line>keel cut through the waves&#x2013;The sound</line>
+    <line>lulled me&#x2013;&amp; in a short time I slept <del rend="strikethrough">s</del></line>
+    <line>soundly</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I do not know how long I remained in</line>
+    <line>this situation but when I awoke I found</line>
+    <line>that the sun had already mounted considerably&#x2013;</line>
+    <line>The wind was high and the waves <del rend="strikethrough" instant="true">th</del>
+      continually</line>
+    <line>threatened the safety of my little <del rend="strikethrough" instant="true">boat</del>
+      skiff&#x2014;</line>
+    <line>I <del rend="strikethrough" instant="true">endeavoure</del> found that the wind was
+      north-</line>
+    <line>east and must have driven me far</line>
+    <line>from the coast from which I had embarked.</line>
+    <line>I endeavoured to <mod>
+        <del rend="strikethrough">turn</del>
+        <del rend="strikethrough">the</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">boat</del>
+        <add place="superlinear">change my course</add>
+      </mod> but</line>
+    <line>quickly found that if I again <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">made the</add>
+      </mod> attempt<del rend="strikethrough">ed</del>
+      <del rend="strikethrough">it</del></line>
+    <line>the boat would be instantl<mod>
+        <del rend="overwritten">ey</del>
+        <add place="intralinear">y</add>
+      </mod> filled with</line>
+    <line>water. Thus situated my only resource was</line>
+    <line>to drive before the wind &#x2013; <del rend="strikethrough" instant="true">To be a</del> I
+      confess</line>
+    <line>that I felt a few sensations of terror &#x2013;I had</line>
+    <line>no compass with me and was so little</line>
+    <line>acquainted with the geography of this part</line>
+    <line>of the world that the sun was of little be</line>
+    <line>nefit to me &#x2013;I might be <del rend="strikethrough" instant="true">driv</del> driven
+      into</line>
+    <line>the wide Atlantic &amp; feel all the tortures</line>
+    <line>of starvation or be swallowed up in</line>
+    <line>immeasurable waters that roared &amp;</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0112.01">
+    <line><add>in a direct <add place="superlinear">position </add></add></line>
+  </zone>
+</surface>

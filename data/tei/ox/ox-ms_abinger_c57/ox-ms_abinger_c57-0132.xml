@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0132" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0132.jp2"/>
+  <zone type="pagination" rend="bordered"><line>148</line></zone>
+  <zone type="main">
+    <line>and pointed <del rend="strikethrough">and pointed</del> to the port of</line>
+    <line>Holyhead which we were now entering.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">We had resolved not to go to London</line>
+    <line>but <mod>
+        <del rend="strikethrough">to go</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to</add>
+        <del rend="strikethrough">a</del>
+      </mod>cross the country to Portsmouth</line>
+    <line>and <del rend="strikethrough">from</del> thence to embark to Havre. I</line>
+    <line>preferred this <del rend="strikethrough">pan</del> plan principally because</line>
+    <line>I dreaded to see again those places in which</line>
+    <line>I had enjoyed a few moments of tranquilli</line>
+    <line>ty with my beloved Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval &#x2013; And I thought</line>
+    <line>with horror of seeing those men whom</line>
+    <line>we had been accustomed to visit together</line>
+    <line>and who, doubtless, would make enquiries</line>
+    <line>concerning an event the very remembrance</line>
+    <line>of which ma<mod>
+        <del rend="overwritten">k</del>
+        <add place="intralinear">d</add>
+      </mod>e me again feel what I</line>
+    <line>endured when I gazed on his lifeless form.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">As for my father; his desires &amp; exer</line>
+    <line>tions were bounded to the again seeing</line>
+    <line>me <del rend="strikethrough">res</del> restored to health and peace of</line>
+    <line>mind. His tenderness &amp; attentions were</line>
+    <line>unremitt<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod>, my grief and gloom was o<add place="sublinear">bs</add>ti-</line>
+    <line>nate but he would not despair. Some</line>
+    <line>times he thought that I felt deeply</line>
+    <line>the degradation of being obliged to answer</line>
+    <line>a charge of murde<damage type="inkblot">r</damage> and he endeavoured</line>
+    <line>to prove to me the futility of pride.</line>
+    <line>Alas! my father, said I, how little do you</line>
+    <line>know me: human beings, their feelings</line>
+    <line>and passions would indeed be degraded</line>
+    <line>if such a wretch as I felt pride<unclear reason="illegible">.</unclear> Justine</line>
+    <!--period after "pride" could be a colon-->
+    <line>poor unhappy Justine was as innocent</line>
+    <line>as I and she suffered the same charge,</line>
+    <line>she died for it &#x2013; And I am the cause</line>
+    <line>of this &#x2013; I murdered her. William</line>
+  </zone>
+</surface>

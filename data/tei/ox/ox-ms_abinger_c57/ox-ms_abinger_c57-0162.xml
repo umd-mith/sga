@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0162" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0162.jp2"/>
+  <zone type="pagination"><line>178</line></zone>
+  <zone type="main">
+    <line>we have yet to wrestle for our lives but many</line>
+    <line>hard &amp; miserable hours will you spend</line>
+    <line>untill that period arrives"&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Scoffing <unclear reason="case">D</unclear>evils! Again do I vow vengeance</line>
+    <!--"Devils" could be "devils"-->
+    <line>again do I devote thee miserable fiend to</line>
+    <line>torture &amp; death never will I <mod>
+        <del rend="strikethrough">leave</del>
+        <add place="superlinear" hand="#pbs">omit</add>
+      </mod> my search</line>
+    <line>untill he <mod>
+        <del rend="strikethrough">dies</del>
+        <add place="superlinear" hand="#pbs">or I, perish.</add>
+      </mod> &#x2013; And then with what</line>
+    <line>extacy shall I <del rend="strikethrough">fe</del> join my Elizabeth &amp;</line>
+    <line>those who even <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">now</add>
+      </mod> prepare for me <mod>
+        <del rend="strikethrough">a</del>
+        <add place="intralinear" hand="#pbs">the</add>
+      </mod></line>
+    <line>reward <mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear" hand="#pbs">of</add>
+      </mod> my tedious &amp; <del rend="strikethrough"><unclear extent="1" unit="chars"/></del>
+      horrible</line>
+    <line>pilgrimage</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">As I pursed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">still</add>
+      </mod> my journey <del rend="strikethrough">still</del> to the</line>
+    <line>northward<del rend="strikethrough">s</del> the snows <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">thickened,</add>
+      </mod> &amp; cold encreased <delSpan rend="strikethrough" spanTo="#c57-0162.01"/>to an</line>
+    <line>almos<anchor xml:id="c57-0162.01"/>
+      <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear" hand="#pbs">in</add>
+      </mod> ae degree almost too severe to support.</line>
+    <line>The peasantry were shut up in their hovels</line>
+    <line>and only a few of the most hardy ventured</line>
+    <line>forth to seize the animals whom starvation</line>
+    <line>had forced forth to seek for prey. The rivers</line>
+    <line>were covered with ice and no fish could</line>
+    <line>be procured. The triumph of my enemy</line>
+    <line>encreased with the difficulty of my labours</line>
+    <line>One <del rend="strikethrough">en</del> inscription that he left was in</line>
+    <line>these words &#x2013; Prepare &#x2013; your toils only begin &#x2013;</line>
+    <line><unclear reason="case">W</unclear>rap yourself in furs &amp; provide food for</line>
+    <!--"Wrap" could be "wrap"-->
+    <line>we shall soon enter on a journey where</line>
+    <line>you sufferings will satisfy my <add place="superlinear">everlasting</add> hat<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">red</add>
+      </mod>" My cou</line>
+    <line>rage &amp; perseverance were inspired with</line>
+    <line>new strength by these difficulties I resolved</line>
+    <line>not to fail in my pur<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">p</add>
+      </mod>ose and calling</line>
+    <line>heaven to support me I continued with</line>
+    <line>unabated fervour to traverse immense</line>
+    <line>desarts untill the occean appeared at a</line>
+    <line>distance and formed the utmost boundary</line>
+    <line>of the horizon &#x2013;<add place="intralinear">Oh</add> How unlike it was to the</line>
+    <line>blue se<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">a</add>
+      </mod>s of the south Covered with ice it</line>
+    <line>was only to be distinguished from land by</line>
+  </zone>
+</surface>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0124" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0124.jp2"/>
+  <zone type="pagination"><line>140</line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c57-0124.01"/>and my cheeks livid like those of death I was</line>
+    <line>overcome by gloom &#x26; misery and often</line>
+    <line>reflected whether I had better not seek death</line>
+    <line>that wait miserably pent up only to be</line>
+    <line>let loose in a world replete with <mod spanTo="#c57-0124.02"/><del rend="strikethrough"
+        >whrect</del></line>
+    <line><add place="superlinear" hand="#pbs">wretchedness.</add><anchor xml:id="c57-0124.02"/> At
+      one time I considered whether</line>
+    <line>I should not delare myself guilty &#x26; suffer</line>
+    <line>the penalty of the law which in depriving</line>
+    <line>me of <del rend="strikethrough">w</del> life would afford the only consola</line>
+    <line>tion that I was capable of receiving. Such</line>
+    <line>were my thoughts when the door of my</line>
+    <line>prison opened and M<hi rend="sup">r</hi>. Kirwin entered.</line>
+    <line>His counte<damage type="inkblot">n</damage>ance expressed sympathy</line>
+    <line>and kindness: he drew a chair close to</line>
+    <line>mine &#x26; addressed me in french.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I fear, <del rend="strikethrough">said he</del>, that this place</line>
+    <line>is very shocking to you; Can I do anything</line>
+    <line>to make you more comfortable.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I thank you, replied I, but all</line>
+    <line>that you mention is nothing to me;</line>
+    <line><del rend="strikethrough">No one on earth is capable</del> on the</line>
+    <line>whole earth there is no comfort which</line>
+    <line>I am capable of receiving.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I know, <del rend="strikethrough">said M<hi rend="sup">r</hi>.
+        Kirwin,</del> that the</line>
+    <line>sympathy of a stranger can be <mod>
+        <del rend="strikethrough">of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">but</add>
+      </mod> little</line>
+    <line>relief to one borne down as you are by</line>
+    <line>so strange a misfortune <damage type="inkblot">B</damage>ut you</line>
+    <line>will I hope soon quit this unhappy</line>
+    <line>abode&#x2013; for doubtless <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">evidence</add>
+      </mod> can be easily brought</line>
+    <line>to free you from the criminal charge</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">That, <del rend="strikethrough">I replied</del> is my least
+      concern&#x2013;I</line>
+    <line>am by a course of strange events, become</line>
+    <line>the most miserable of mortals. Persecuted</line>
+    <line>&#x26; tortured as I am &#x26; have been can death</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0124.01">
+    <line><add hand="#pbs">open,</add></line>
+  </zone>
+
+</surface>

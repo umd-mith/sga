@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0096" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0096.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>112</line>
+  </zone>
+  <zone type="main">
+    <line>with curiosity the press instituted by the author</line>
+    <line>of the history <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">of the troubles</add>
+      </mod> We <del rend="strikethrough">we</del>re also shewn a roo<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">m</add>
+      </mod></line>
+    <line>which <mod>
+        <del rend="strikethrough">the</del>
+        <del rend="strikethrough">Lord Chancellor</del>
+        <add place="superlinear">Frier</add>
+      </mod> Bacon <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the disoverer of gunpowder</add>
+      </mod> had</line>
+    <line>inhabited and which, as it was predicted,</line>
+    <line>would fall in when a man wiser than</line>
+    <line>that philosopher should enter it. A <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a short, round faced prating</add>
+      </mod> profes</line>
+    <line>sor who accompanied us<del rend="strikethrough">e</del> refused to pass</line>
+    <line>the threshold; although we ventured inside</line>
+    <line>in perfect <del rend="strikethrough">safety</del>. security <anchor xml:id="c57-0096.03"
+      /></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Matlock, which was our next</line>
+    <line>place of rest, resembled to agreat<del rend="strikethrough">er</del> degree</line>
+    <line>the scenery of Switzerland; But every thing</line>
+    <line>is on a lower scale &amp; the green <mod>
+        <del rend="strikethrough">mountains</del>
+        <add place="superlinear" hand="#pbs">hills</add>
+      </mod></line>
+    <line>want the <mod>
+        <del rend="strikethrough">cwon</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">crown</add>
+      </mod> of distant white alps</line>
+    <line>which always attend on the piny <mod spanTo="#c57-0096.05"/><del rend="strikethrough"
+        >hills</del></line>
+    <line><mod><restore type="underline" hand="#pbs"><del rend="strikethrough"
+        >mountains</del></restore></mod><anchor xml:id="c57-0096.05"/> of our country. We visited</line>
+    <line>the wondrous cave &amp; the <del rend="strikethrough">the</del> little cabinets</line>
+    <line>of natural history where the curiosities</line>
+    <line>are disposed in the same manner</line>
+    <line>as in the collections at Servox &amp; Chamou</line>
+    <line>-nix. The latter mame made me tremble</line>
+    <line>when pronounced by Henry &amp; I hastened</line>
+    <line>to quit Matlock where the scenes were</line>
+    <line>thus a<mod>
+        <add place="intralinear">s</add>
+        <del rend="overwritten">ss</del>
+        <add place="intralinear">c</add>
+      </mod>ociated.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">From Derby, still journeying north-</line>
+    <line>ward, we passed two months <mod spanTo="#c57-0096.06"/><delSpan rend="strikethrough"
+        spanTo="#c57-0096.07"/>among the</line>
+    <line>mountains of<anchor xml:id="c57-0096.07"/><add place="sublinear"><metamark
+          function="insert">^</metamark></add><add place="superlinear">in</add><anchor
+        xml:id="c57-0096.06"/> Cumberland &amp; Westmorland.</line>
+    <line>I could now almost fancy myself among</line>
+    <line>the Swiss mountains; The little patches of</line>
+    <line>snow which yet lingered <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">o</add>
+      </mod>n the north<add place="intralinear" hand="#pbs">ern</add></line>
+    <line>sides of the mountains &#x2013; the lakes &amp; the</line>
+    <line>dashing of the rocky <del rend="strikethrough">mountain</del> streams</line>
+    <line>were all <del rend="strikethrough">dear</del> familiar &amp; dear sights</line>
+    <line><damage type="inkblot">to</damage> me. Here also we made some aquain</line>
+  </zone>
+
+  <zone type="left_margin">
+    <milestone unit="tei:note" spanTo="#c57-0096.01"/>
+    <addSpan hand="#pbs" spanTo="#c57-0096.02"/>
+    <line>no sweet</line>
+    <line>Pecksie&#x2013;'twas</line>
+    <line>f<hi rend="double-underline">ria</hi>r Bacon</line>
+    <line>the discoverer</line>
+    <line>of gunpowder.</line>
+    <anchor xml:id="c57-0096.02"/>
+    <anchor xml:id="c57-0096.01"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0096.03">
+    <addSpan hand="#pbs" spanTo="#c57-0096.04"/>
+    <line>and probably</line>
+    <line>he might</line>
+    <line>have done the same</line>
+    <anchor xml:id="c57-0096.04"/>
+  </zone>
+</surface>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0123" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0123.jp2"/>
+  <zone type="pagination" rend="bordered"><line>153</line></zone>
+  <zone type="library"><line>59</line></zone>
+  <zone type="main">
+    <delSpan spanTo="#c56-0123.01" rend="vertical_line"/>
+    <line>I should listen to the d&#xE6;mon &#x2013; my</line>
+    <line>feelings were ag<hi rend="underline">ainst</hi> it but the</line>
+    <line>misery he expressed had al<del rend="strikethrough">l</del>ready</line>
+    <line>moved m<damage agent="ink">y</damage> compassion and I thought</line>
+    <line>the least justice I could shew would</line>
+    <line>be to listen to to his tale.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We entered the hut &#x2013; the monster</line>
+    <line>lighted a fire and sitting by it he</line>
+    <line>began thus.</line>
+    <anchor xml:id="c56-0123.01"/>
+    <line>it rose Mont Blanc in awful majesty. I re</line>
+    <line>mained in a recess of the rock gazing on</line>
+    <line>this wonderful &amp; stupedous scene &#x2013; <anchor xml:id="c56-0123.02"/> My
+      heart</line>
+    <line>before<mod>
+        <add place="sublinear"><unclear><metamark function="insert">^</metamark></unclear></add>
+        <del rend="strikethrough">sad</del>
+        <add place="superlinear" hand="#pbs">which was sorrowful<del rend="strikethrough">ly</del>,
+          now</add>
+      </mod> swelled with somthing like</line>
+    <line>joy <del rend="strikethrough">I clas</del> I exclaimed &#x2013; Wandering spirits,</line>
+    <line>if indeed ye wander and do not rest in</line>
+    <line>your narrow beds, allow me this faint</line>
+    <line>happiness or take me as your compa</line>
+    <line>nion away from the joys of life." As I</line>
+    <line>said this I suddenly beheld <mod>
+        <del rend="strikethrough">a</del>
+        <del rend="strikethrough">human</del>
+        <add place="superlinear">the</add>
+      </mod></line>
+    <line>figure <add place="superlinear">of a man</add> at some distance advancing</line>
+    <line>towards me with superhuman speed&#x2014;</line>
+    <line>He bounded over the crevices in the</line>
+    <line>ice <mod>
+        <del rend="strikethrough">by</del>
+        <add hand="#pbs" place="superlinear">among</add>
+      </mod> which I had walked with caution,</line>
+    <line>his stature also as he approached seem</line>
+    <line>ed to exceed that of man &#x2013;I was</line>
+    <line>troubled &#x2014; a mist covered my eyes and</line>
+    <line>I felt <mod>
+        <del rend="strikethrough">ready to pa faint</del>
+        <add hand="#pbs" place="superlinear">faintness seize me.</add>
+      </mod> &#x2013; The cold breeze</line>
+    <line>of the mountains quickly restored me.</line>
+    <line><del rend="strikethrough">But</del> I perceived as <mod>
+        <del rend="strikethrough">he</del>
+        <add place="superlinear" hand="#pbs">the shape</add>
+      </mod> came nearer</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0123.02">
+    <addSpan spanTo="#c56-0123.03" hand="#pbs"/>
+    <line>the sea or</line>
+    <line>rather <add place="superlinear">the vast</add> river of</line>
+    <line>ice, wound among</line>
+    <line><del rend="strikethrough">the</del> its dependant</line>
+    <line>mountains whose</line>
+    <line>aerial summits</line>
+    <line>hung over its</line>
+    <line>recesses. Thier</line>
+    <line>icy &#x26; glittering</line>
+    <line>peaks shone</line>
+    <line>in sunlight</line>
+    <line>over the clouds. </line>
+    <anchor xml:id="c56-0123.03"/>
+  </zone>
+</surface>

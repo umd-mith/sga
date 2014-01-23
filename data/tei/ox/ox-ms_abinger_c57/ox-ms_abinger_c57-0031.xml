@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0031" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0031.jp2"/>
+  <zone type="pagination" rend="bordered"><line>57</line></zone>
+  <zone type="library"><line>16</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0031.11"/><add hand="#pbs">another Chapter</add><anchor xml:id="c57-0031.11"/></line>
+    <line>Sometime elapsed before I <mod spanTo="#c57-0031.01"/><del rend="strikethrough"
+        next="#c57-0031.02">became informed</del></line>
+    <line><anchor xml:id="c57-0031.03"/><anchor xml:id="c57-0031.01"/><mod>
+        <del rend="strikethrough">of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">learned</add>
+      </mod> the history of my friends. It was one <mod spanTo="#c57-0031.04"/><del
+        rend="strikethrough">that</del></line>
+    <line><anchor xml:id="c57-0031.05"/><anchor xml:id="c57-0031.04"/>could not fail to impress
+      itself deeply <mod>
+        <del rend="strikethrough">in</del>
+        <add hand="#pbs" place="superlinear">on</add>
+      </mod> my</line>
+    <line>mind unfolding as it did a number of</line>
+    <line>circumstances each inter<del rend="strikethrough">r</del>esting &amp; wonder</line>
+    <line>ful to one so utterly inexperienced as I</line>
+    <line>was. <del rend="vertical_line"><unclear>2</unclear></del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The name of the old man was De Lacey.</line>
+    <line>He was decended from a good family in France <delSpan spanTo="#c57-0031.06"
+        rend="strikethrough"/>&amp;</line>
+    <line>untill very lately had lived<anchor xml:id="c57-0031.06"/> where for many years</line>
+    <line>he had lived in affluence respected by his superiors</line>
+    <line>&amp; beloved by his equals. <delSpan spanTo="#c57-0031.07" rend="strikethrough"/>His two
+      children Felix &amp; Aga</line>
+    <line>tha<anchor xml:id="c57-0031.07"/> His son was bred <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">i</add>
+      </mod>n the service of his country</line>
+    <line>&amp; Agatha had <mod>
+        <del rend="strikethrough">been</del>
+        <add place="superlinear">ranked</add>
+        <del rend="strikethrough">woed</del>
+        <del rend="strikethrough">by gentlemen</del>
+        <add place="superlinear">with ladies</add>
+      </mod> of the</line>
+    <line>highest distinction. A few months <mod spanTo="#c57-0031.08"/>
+      <del rend="strikethrough" next="#c57-0031.09">previous</del>
+      <add hand="#pbs" place="superlinear">before</add>
+    </line>
+    <line><del xml:id="c57-0031.09" rend="strikethrough">to</del><anchor xml:id="c57-0031.08"/> my
+      arrival they had lived in a large &amp; lux</line>
+    <line>urious city called Paris, surrounded by friends</line>
+    <line>&amp; possessed of every enjoyment that <mod>
+        <del rend="strikethrough">that</del>
+        <add hand="#pbs" place="superlinear">which</add>
+      </mod> virtue <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear" next="#c57-0031.10">&amp; refin</add>
+      </mod> ac</line>
+    <line><add hand="#pbs" place="superlinear" xml:id="c57-0031.10">ement of intellect &amp; taste,
+      </add>companied with a competent fortune could</line>
+    <line>afford.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The father of Safie <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear">had been</add>
+      </mod> the cause of their</line>
+    <line><mod>
+        <del rend="strikethrough">fall</del>
+        <add hand="#pbs" place="superlinear">ruin;</add>
+      </mod> He was a <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>urkish Merchant and had</line>
+    <line><del rend="strikethrough" instant="true">li</del> inhabited Paris for many years. When his
+      person</line>
+    <line>became <mod>
+        <del rend="strikethrough">for some</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">for some reason which I could not learn</add>
+      </mod> obnoxious to the govern</line>
+    <line>ment&#x2013; He was seized and cast into prison</line>
+    <line>the very day that Safie arrived from Constan</line>
+    <line>tinople to join him. He was tried &amp; condemned</line>
+    <line>to death. The injustice of his sentence was very</line>
+    <line>flagrant All Paris were indignant &amp; it</line>
+    <line>was judged that his relig<del rend="strikethrough">i</del>ion and wealth </line>
+    <line><del rend="strikethrough">had been the causes of his condemnation rather</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0031.03">
+    <line><del rend="strikethrough" xml:id="c57-0031.02"> of th </del></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0031.05">
+    <line><add hand="#pbs"> which </add></line>
+  </zone>
+</surface>

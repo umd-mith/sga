@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0182" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0182.jp2"/>
+  <zone type="pagination" rend="bordered"><line>198</line></zone>
+  <zone type="main">
+    <line>again turning towards the lifeless form of his</line>
+    <line>creator he seemed to forget my presence while</line>
+    <line>every feature &amp; gesture seemed instigated</line>
+    <line>by the wildest rage. That is also my victim,</line>
+    <line>he exclaimed&#x2014;In his murder my crimes are</line>
+    <line><anchor xml:id="c57-0182.01"/>consum<mod>
+        <del rend="strikethrough"><add place="superlinear"><unclear>m</unclear></add></del>
+        <add place="sublinear">m</add>
+      </mod>ate<del rend="strikethrough">d</del>&#x2013; Oh Frankenstein &#x2013; Generous
+      &amp;</line>
+    <line>self devoted creature dare I ask <mod>
+        <del rend="strikethrough">you</del>
+        <add place="superlinear" hand="#pbs">thee</add>
+      </mod> to</line>
+    <line>pardon me &#x2013; I who destroyed thee by des</line>
+    <line>troying those <mod>
+        <del rend="strikethrough">thou</del>
+        <del rend="strikethrough">you</del>
+        <add place="superlinear" hand="#pbs">thou</add>
+      </mod> loved<add place="intralinear" hand="#pbs">st</add>. Alas he is</line>
+    <line>dead and may not answer me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">His voice seemed suffocated &amp; my</line>
+    <line>first impulse which had been <del rend="strikethrough">at first</del></line>
+    <line>to obey the dying request of my friend in</line>
+    <line>destroying his enemy <del rend="strikethrough">do</del> now <mod>
+        <del rend="strikethrough">died</del>
+        <del rend="strikethrough">away</del>
+        <add place="superlinear" hand="#pbs">was overwhelmed</add>
+      </mod> in</line>
+    <line>a mixture of curiosity &amp; pity. I approach</line>
+    <line>ed him &#x2013; yet I dared not look on him</line>
+    <line>there was somthing so <milestone unit="tei:seg" spanTo="#c57-0182.04" xml:id="c57.0182.02"
+        />unearthly<anchor xml:id="c57-0182.04"/><add place="superlinear" hand="#pbs"><metamark
+          function="transpose" target="#c57-0182.02">2</metamark></add> &amp; <milestone
+        unit="tei:seg" spanTo="#c57-0182.05" xml:id="c57.0182.03"/>scaring<anchor
+        xml:id="c57-0182.05"/><add place="sublinear" hand="#pbs"><metamark function="insert"
+        >^</metamark></add><add place="superlinear" hand="#pbs"><metamark
+          function="transpose" target="#c57-0182.03"><mod><del rend="overwritten">2</del><add
+            place="intralinear" hand="#pbs">1</add></mod></metamark></add>
+      <listTranspose>
+        <transpose>
+          <ptr target="#c57-0182.03"/>
+          <ptr target="#c57-0182.02"/>
+        </transpose>
+      </listTranspose></line>
+    <line>in his ugliness. I attempted to speak but</line>
+    <line>the words died away on my lips &#x2013; The Monster</line>
+    <line>continued to utter wild &amp; incoherent</line>
+    <line>self reproaches <unclear reason="case">a</unclear>t length I said. Your</line>
+    <!--"at" could be "At"-->
+    <line>repentance is now useless. If you had felt</line>
+    <line>the stings of remorse before you urged</line>
+    <line><del rend="strikethrough">to extremity</del> your diabolical vengeance <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to <mod>
+            <del rend="strikethrough">its</del>
+            <add place="superlinear" hand="#pbs">this</add>
+          </mod> extremity</add>
+      </mod> Fran</line>
+    <line>kenstein would yet have live<add place="intralinear">d</add></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">And do you think, said the d&#xE6;mon</line>
+    <line>that <hi rend="underline">I</hi> was then dead to anguish and</line>
+    <line>remorse?&#x2014; He &#x2013; he continued pointing to</line>
+    <line>the corpse, he suffered not more</line>
+    <line>in the completion of the deed that</line>
+    <line>I did in its execution. A frightful</line>
+    <line>selfishness hurried me on while my</line>
+    <line>heart was torn with agony. Think ye</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0182.01">
+    <line><del rend="strikethrough"><add>ren </add></del></line>
+  </zone>
+</surface>

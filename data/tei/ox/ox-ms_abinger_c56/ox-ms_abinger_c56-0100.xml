@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0100" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0100.jp2"/>
+  
+  <zone type="pagination" rend="bordered"><line>130</line></zone>
+  
+  <zone type="main">
+    <line rend="indent3"><milestone unit="tei:head" spanTo="c56-0100.01"/>Chapter 1<mod><del rend="overwritten">1</del><add place="intralinear">2</add></mod><anchor xml:id="c56-0100.01"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I cannot attempt to describe what I</line>
+    <line>then felt &#x2013; I had <mod>
+        <del rend="strikethrough">had</del>
+        <add place="superlinear" hand="#pbs">experienced</add>
+      </mod> sensations of horror</line>
+    <line>before and I have endeavoured to bestow</line>
+    <line>on them adequate expressions but now</line>
+    <line>words cannot convey any idea of the</line>
+    <line>heart sickening despair that I <mod>
+        <del rend="strikethrough">then felt</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">endured</add>
+      </mod>.</line>
+    <line><del rend="strikethrough">Nor</del> The person to whom I had addressed</line>
+    <line>myself also added that Justine had al-</line>
+    <line>ready confessed her guilt. "That evidence" he</line>
+    <line>observed &#x2013;"was hardly required in so glaring</line>
+    <line>a case but I <del rend="strikethrough">I</del> am glad of it; and indeed</line>
+    <line>none of our judges like to condemn a</line>
+    <line><del rend="strikethrough">ch</del> criminal upon circumstantial evi-</line>
+    <line>dence <del rend="strikethrough">let it</del> be<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">it</add>
+      </mod> ever so decisive."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">When I returned home Elizabeth</line>
+    <line>eagerly <mod>
+        <del rend="strikethrough">enquired</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">demanded</add>
+      </mod> the result. "My cousin"</line>
+    <line>replied I, "it is decided as you may have</line>
+    <line>suspected &#x2013; <add place="sublinear"><metamark function="insert">^</metamark></add><add
+        place="superlinear">all</add>Judges had rather that ten</line>
+    <line>innocent should suffer tha<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">n</add>
+      </mod> that</line>
+    <line>one guilty should escape: but she</line>
+    <line>has confessed."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This was a <del rend="strikethrough">b</del> dire blow to
+      poor Eliza</line>
+    <line>beth who had relied with firmness on</line>
+    <line>her innocence. "Alas!" said she "How</line>
+    <line>shall I ever again believe in human</line>
+    <line>benovolence &#x2013; Justine, whom I loved and</line>
+    <line>esteemed as my sister. How could she</line>
+    <line>put on <del rend="strikethrough">thos</del> those smiles of innocence</line>
+    <line>only to betray&#x2013; her mild eyes seemed inca</line>
+  </zone>
+</surface>

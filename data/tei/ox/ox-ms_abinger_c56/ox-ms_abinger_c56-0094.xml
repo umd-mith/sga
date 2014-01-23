@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0094" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0094.jp2"/>
+  <zone type="pagination" rend="bordered"><line>124</line></zone>
+  <zone type="main">
+    <line>into the house she fell into violent hys-</line>
+    <line>terics and kept her bed for several</line>
+    <line>days. The picture was then produced</line>
+    <line>which the servant had found in her</line>
+    <line>pocket and when Elizabeth in a falte</line>
+    <line>ring voice proved that it was the same</line>
+    <line><mod>
+        <del rend="strikethrough">she had</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod>
+      <del rend="strikethrough">the</del> an hour before <del rend="strikethrough">the
+      murder</del></line>
+    <line>the child had been missed,<add place="superlinear" hand="#pbs">she had</add> placed
+      round</line>
+    <line>his neck a murmur of indignation</line>
+    <line>and horror filled the court.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Justine was then called on for</line>
+    <line>her defence. <delSpan spanTo="#c56-0094.01"/>God kno who reads all</line>
+    <line>hearts knows how<anchor xml:id="c56-0094.01"/> As the trial had</line>
+    <line>proceeded her countenance had altered.</line>
+    <line>Surprise horror and misery were strong</line>
+    <line>ly expressed. Sometimes she struggled</line>
+    <line>with her tears <del rend="strikethrough">wh</del> but when she</line>
+    <line>was desired to speak she collected her</line>
+    <line>powers and spoke in an audible although</line>
+    <line>variable voice.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"God knows," she said, "<del rend="strikethrough"
+        >w</del>ho<add place="intralinear">w</add> entirely I</line>
+    <line>am inocent. but I do not pretend to be</line>
+    <line>acquitted on account of my protestations</line>
+    <line>I rest my innocence <del rend="strikethrough">a</del> on a simple</line>
+    <line>explanation of the <mod>
+        <del rend="strikethrough">facts</del>
+        <add place="superlinear">facts</add>
+      </mod> which have</line>
+    <line>been adduced against me, and I hope</line>
+    <line>the character I have always borne will</line>
+    <line>encline my judges to a favourable</line>
+    <line>interpretation where any <mod>
+        <del rend="strikethrough">fact</del>
+        <add place="superlinear">circumstance</add>
+      </mod> appears</line>
+  </zone>
+</surface>

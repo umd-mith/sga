@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+        xml:id="ox-ms_abinger_c57-0024" ulx="0" uly="0" lrx="5368" lry="7104"
+        partOf="#ox-ms_abinger_c57">
+        <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0024.jp2"/>
+
+        <zone type="pagination">59</zone>
+
+        <zone type="main">
+                <delSpan rend="strikethrough" spanTo="#c57-0024.01"/>
+                <line>chains expected in despair the execution of</line>
+                <line>the barbarous sentence. Felix visited the grate at</line>
+                <line>night and made known to the prisoner his</line>
+                <line>intentions in his favour.</line><anchor xml:id="c57-0024.01"/>
+                <line rend="center"><metamark function="separate">______________</metamark></line>
+                <milestone unit="tei:p"/>
+                <line rend="indent1"><del rend="strikethrough">For</del> During the ensueing days
+                                <add place="superlinear">while the</add> preparations were</line>
+                <line><mod>
+                                <del rend="strikethrough">made</del>
+                                <add place="superlinear">going forward</add>
+                        </mod> for the escape of the merchant. <del rend="strikethrough">And</del>
+                        the</line>
+                <line>zeal of Felix was warmed by several letters</line>
+                <line>that he received from th<mod>
+                                <del rend="overwritten">e</del>
+                                <add place="intralinear">is</add>
+                        </mod> lovely <mod>
+                                <del rend="strikethrough">Amina</del>
+                                <add place="sublinear"><metamark function="insert"
+                                        >^</metamark></add>
+                                <add place="superlinear">girl</add>
+                        </mod> Who</line>
+                <line><del rend="strikethrough">ardently thanked him for the</del> found
+                        means</line>
+                <line>to express her thoughts in <mod>
+                                <del rend="strikethrough">writing</del>
+                                <del rend="strikethrough">his</del>
+                                <add place="superlinear">the</add>
+                        </mod> lang</line>
+                <line>uage of her lover by the aid of <del rend="strikethrough">he</del> an old
+                        man</line>
+                <line>a servant of her Fathers who understood</line>
+                <line>french. She thanked him in the most</line>
+                <line>ardent terms for his intended kindness,</line>
+                <line>and at the same time she gently deplored</line>
+                <line>her own fate. I have copies of these letters</line>
+                <line>for I found means during <mod>
+                                <add place="sublinear"><metamark function="insert"
+                                        >^</metamark></add>
+                                <add place="superlinear">my</add>
+                        </mod> residence in the</line>
+                <line>hovel to procure the <mod>
+                                <del rend="strikethrough">means</del>
+                                <add place="superlinear">implements</add>
+                        </mod> of writing</line>
+                <line>and the<mod>
+                                <del rend="overwritten">s</del>
+                                <add place="intralinear">y</add>
+                                <del rend="strikethrough">e</del>
+                                <del rend="strikethrough">letters</del>
+                        </mod> were often in the hands of</line>
+                <line><del rend="strikethrough">A</del> Felix or Agatha. <add place="superlinear"
+                                        ><metamark function="displacement" xml:id="c57-0024.02"
+                                        >X</metamark></add>
+                        <mod>
+                                <del rend="strikethrough">Amina</del>
+                                <add place="superlinear">Safie</add>
+                        </mod> related that her</line>
+                <line>Mother was a Christian Arab seized and</line>
+                <line>made a slave by the <mod>
+                                <del rend="overwritten">t</del>
+                                <add place="intralinear">T</add>
+                        </mod>urks. <del rend="strikethrough">&amp;</del> recommended by</line>
+                <line>her beauty she had won the heart of</line>
+                <line>the <del rend="strikethrough">pr</del> father of <mod>
+                                <del rend="strikethrough">Amina</del>
+                                <add place="superlinear">Safie</add>
+                        </mod> who married her.</line>
+                <line>The young girl spoke in high &amp; enthusiastic</line>
+                <addSpan corresp="#c57-0024.02" spanTo="#c57-0024.03"/>
+                <line><metamark function="separate"
+                                >__________________________________________________________</metamark></line>
+                <line><metamark function="displacement">X</metamark>before I depart I will give them
+                        to you they</line>
+                <line>will prove to you the truth of my tale <del rend="strikethrough">&amp;</del>
+                        but at</line>
+                <line>present as the sun already begins to decline I shall only have</line>
+                <line>time to repeat the substance to you</line>
+                <anchor xml:id="c57-0024.03"/>
+        </zone>
+</surface>

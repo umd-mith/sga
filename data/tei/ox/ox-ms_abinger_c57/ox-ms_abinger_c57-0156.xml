@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0156" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0156.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>172</line>
+  </zone>
+  <zone type="main">
+    <line>shall suffer punishment proportionate to</line>
+    <line>his crimes &#x2013; But I fear from what you <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">have</add>
+      </mod> your</line>
+    <line>self described to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">be</add>
+      </mod> hi<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">s</add>
+      </mod> properties that this will</line>
+    <line>prove impracticable and that &#x2014; while every</line>
+    <line>proper measure is pursued you should</line>
+    <line>endeavour to make up your mind to a</line>
+    <line>di<mod>
+        <del rend="overwritten">ss</del>
+        <add place="intralinear" hand="#pbs">s</add>
+      </mod>appointment</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">That cannot be&#x2013; said I wildly&#x2014;But</line>
+    <line><mod>
+        <anchor xml:id="c57-0156.01"/>
+        <mod>
+          <del rend="overwritten">w</del>
+          <add place="intralinear">t</add>
+        </mod>
+      </mod>hat I can say <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will</add>
+      </mod> be of little avail; <mod spanTo="#c57-0156.02"/><del rend="strikethrough"
+        >vengeance</del></line>
+    <line><anchor xml:id="c57-0156.03"/>is of no moment to you yet while I allow</line>
+    <line>it to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">be</add>
+      </mod> a vice I confess that it is the</line>
+    <line>devouring &amp; only passion of my soul; my</line>
+    <line>rage is unspeakable when I reflect that</line>
+    <line>the murderer whom I have turned lo<add place="intralinear">o</add>se</line>
+    <line>upon society still exists &#x2013; <delSpan rend="strikethrough" spanTo="#c57-0156.04"/>I
+      trembled as I spoke</line>
+    <line>this<anchor xml:id="c57-0156.04"/> You refuse my just demand &#x2013; I have</line>
+    <line>but one resource and I devote myself</line>
+    <line>either in my life or death to his destruc</line>
+    <line>tion &#x2013; <del rend="strikethrough" instant="true">I will pursue him</del> I
+      trembled</line>
+    <line>with excess of agitation as I said this</line>
+    <line>there was <del rend="strikethrough">a</del> frenzy in my manner</line>
+    <line>&amp; something I doubt not of that</line>
+    <line>haught<add place="intralinear" hand="#pbs">y</add> fierceness <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod> the martyrs of</line>
+    <line>old were said to <add place="superlinear">have</add> possessed &#x2014; But <mod>
+        <del rend="strikethrough">a</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to</add>
+      </mod> a</line>
+    <line>Genev<mod>
+        <del rend="overwritten">ese</del>
+        <add place="intralinear">an</add>
+      </mod> magistrate, whose mind was</line>
+    <line>occupied by far other ideas than</line>
+    <line><del rend="strikethrough" instant="true">tho</del> those of devo<del rend="strikethrough"
+        >te</del>tion &amp; <del rend="strikethrough" instant="true">heh</del> heroism <del
+        rend="strikethrough">&amp;</del></line>
+    <line>this elevation of mind had much the</line>
+    <line>appearance of madness. He endeavoured</line>
+    <line>to <del rend="strikethrough" instant="true">calm</del> soothe me as a nurse does</line>
+    <line>a child &amp; reverted to my tale as the</line>
+    <line>effects of delirium &#x2014; Man &#x2013; I cried, how</line>
+    <line>ignorant art thou in thy pride of</line>
+    <line>wisdom.&#x2013; cease you know not what</line>
+    <line><del rend="strikethrough">you speak about</del> it is you say.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I broke from the house &amp; angry &amp;</line>
+    <line>disturbed retired to meditate some other mode</line>
+    <line rend="indent5">of action.</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0156.01">
+    <line><add>all </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0156.03">
+    <line><add>My revenge </add></line>
+  </zone>
+</surface>

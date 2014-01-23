@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0133" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0133.jp2"/>
+  <zone type="pagination" rend="bordered"><line>149</line></zone>
+  <zone type="library"><line>67</line></zone>
+  <zone type="main">
+    <line>Justine &#x26; Henry, they all died by my hand</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My father had often during my</line>
+    <line>late confinement heard <damage type="inkblot">m</damage>e make the</line>
+    <line>same <unclear reason="case">A</unclear>ssertion <delSpan spanTo="#c57-0133.01" rend="strikethrough"/>&#x26; his
+      astonishment</line>
+    <line>was extreme<anchor xml:id="c57-0133.01"/>. When <mod>
+        <del rend="strikethrough">he</del>
+        <add place="superlinear" hand="#pbs">I</add>
+        <del rend="strikethrough">heard me</del>
+        <add place="superlinear" hand="#pbs">thus</add>
+        <del rend="strikethrough">thus</del>
+      </mod> ac</line>
+    <line>accuse<add place="intralinear" hand="#pbs">d</add> myself, he sometimes seemed to d<damage
+        type="inkblot">esire</damage></line>
+    <line>an explanation &#x26; at others he appeared</line>
+    <line>to consider it as caused by delirium &#x26;</line>
+    <line>that <del rend="strikethrough">some idea</del> during my illness some</line>
+    <line>idea of this kind had presented itself</line>
+    <line>to my imagination <del rend="strikethrough">t</del>
+      <del rend="strikethrough">an</del> the remembe</line>
+    <line>rance of which I preserved in my conva</line>
+    <line>lescence. <del rend="strikethrough">I</del> avoided explanation; I main</line>
+    <line>tained a continual silence concerning</line>
+    <line>the wretch I had created. I had a feeling</line>
+    <line>that I should be supposed mad and this</line>
+    <line>for ever chained my tongue when I</line>
+    <line>would have given the whole world to</line>
+    <line>have confided the fatal secret. Up</line>
+    <line>on th<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear" hand="#pbs">e</add>
+      </mod>s<add place="intralinear" hand="#pbs">e</add> occasion<add place="intralinear"
+        hand="#pbs">s</add> my father said with</line>
+    <line>an expression of unbounded wonder</line>
+    <line>What do you mean, Victor, are you mad?</line>
+    <line>My dear son, I entreat you not to make</line>
+    <line>so strange an assertion again.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I am not mad, I cried energetically,</line>
+    <line>the sun &#x26; the heavens who have view</line>
+    <line>ed my operations can bear witness of</line>
+    <line>my truth. I was the assassin of those</line>
+    <line>most innocent victims &#x2014; they died by my</line>
+    <line>machinations. A thousand times would</line>
+    <line>I <del rend="strikethrough">rather</del> have shed my own blood</line>
+    <line>drop <del rend="strikethrough">d</del> by drop to have saved their
+        lives<unclear>:</unclear></line>
+    <line>But I could not, my father, indeed I</line>
+  </zone>
+</surface>

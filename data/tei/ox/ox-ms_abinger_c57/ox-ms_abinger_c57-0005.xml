@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0005" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0005.jp2"/>
+  <zone type="pagination" rend="bordered"><line>4</line></zone>
+  <zone type="library"><line>3</line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c57-0005.01"/><del rend="strikethrough">insect</del> insect from the herb,
+      and by de</line>
+    <line>grees one herb from <del rend="strikethrough">a</del> another &#x2013; I found</line>
+    <line>that the sparrow uttered none but harsh</line>
+    <line>notes <mod>
+        <del rend="strikethrough">and</del>
+        <del rend="strikethrough"><add place="superlinear">but</add></del>
+        <add place="superlinear" hand="#pbs">whilst</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">that</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">those of</add>
+      </mod> the blackbird were sweet</line>
+    <line>and enticing. <del rend="strikethrough">I had <unclear>le</unclear></del> one day when I
+      was</line>
+    <line>oppressed by cold I found a fire that</line>
+    <line>had been left by some wandering beg</line>
+    <line>gars and was over come with delight<mod>
+        <del rend="overwritten">.</del>
+        <add place="intralinear"><metamark function="displacement" xml:id="c57-0005.02"
+          >X</metamark></add>
+      </mod></line>
+    <line>In my joy I thrust my hand into the</line>
+    <line>live embers but quickly drew it away <mod spanTo="#c57-0005.04"/><add place="superlinear"
+        >with a cry</add>
+      <del rend="strikethrough">in</del></line>
+    <line><anchor xml:id="c57-0005.05"/><anchor xml:id="c57-0005.04"/>pain&#x2013; How strange, I
+      thought, that the</line>
+    <line>same cause should at once produce</line>
+    <line>such <del rend="strikethrough">delicious and such</del>
+      <del rend="strikethrough"><unclear>u</unclear></del>
+      <del rend="strikethrough">opp</del> opposite</line>
+    <line>effects &#x2013;I examined the materials of the</line>
+    <line>fire, &#x26; to my joy found it to be wood &#x2013;</line>
+    <line>I quickly collected some branches but</line>
+    <line>they were wet and would not burn.</line>
+    <line>I was pained at this and sat still</line>
+    <line>watching the o<del rend="strikethrough">p</del>peration of the fire.</line>
+    <line>The wet wood I had placed near the heat</line>
+    <line><mod>
+        <del rend="strikethrough">became dy dry</del>
+        <add place="superlinear">dried,</add>
+      </mod> and itself <del rend="strikethrough">became</del> became</line>
+    <line><mod>
+        <del rend="strikethrough">hot</del>
+        <anchor xml:id="c57-0005.06"/>
+      </mod> I reflected on this, and by touching</line>
+    <line>the various branches I discovered the cause</line>
+    <line>and busied myself in collecti<mod>
+        <del rend="overwritten">on</del>
+        <add place="intralinear">ng</add>
+      </mod> a great</line>
+    <line><mod>
+        <del rend="strikethrough">deal</del>
+        <add place="superlinear" hand="#pbs">quantity</add>
+      </mod> of wood that I might dry it and</line>
+    <line>have a <del rend="strikethrough">pel</del> plentiful supply <add place="superlinear"
+        hand="#pbs">o</add>
+      <add place="intralinear" hand="#pbs">of fire.</add> When night</line>
+    <line>came on and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">brought with it</add>
+      </mod> sleep, I was in the greatest</line>
+    <line>fear lest my fire should be extinguished</line>
+    <line>I covered it carefully with <del rend="strikethrough">try</del> dry wood</line>
+    <line>and leaves &#x26; then placed upon that wet</line>
+    <line>branches and then spreading my cloak I <del rend="strikethrough">la</del></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0005.01">
+    <line><add>guished the </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0005.02">
+    <addSpan spanTo="#c57-0005.03" hand="#pbs"/>
+    <line><metamark function="displacement">X</metamark></line>
+    <line> at the warmth</line>
+    <line>which I ex-</line>
+    <line>perienced from</line>
+    <line>it.</line>
+    <anchor xml:id="c57-0005.03"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57.0005.05">
+    <line><add>of </add></line>
+  </zone>
+  
+  <zone type="left_margin" corresp="#c57-0005.06">
+    <line><add>inflamed.</add></line>
+  </zone>
+
+</surface>

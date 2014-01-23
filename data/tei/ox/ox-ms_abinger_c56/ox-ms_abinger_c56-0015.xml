@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0015" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0015.jp2"/>
+  <zone type="pagination" rend="bordered"><line>45</line></zone>
+  <zone type="library"><line>6</line></zone>
+  <zone type="main">
+    <delSpan spanTo="#c56-0015.01" rend="vertical_line"/>
+    <line>ph&#xE6;nonema. On Elizabeth and</line>
+    <line>Clerval it produced a <del rend="strikethrough">di</del> very different</line>
+    <line>effect. They admired the beauty</line>
+    <line>of the storm without wishing to</line>
+    <line>analyze its causes. Henry said that</line>
+    <line>the Fairies and giants were at</line>
+    <line>war and Elizabeth attempted</line>
+    <line>a picture of it.</line><anchor xml:id="c56-0015.01"/>
+    <milestone unit="tei:p"/>
+    <delSpan rend="vertical_line" spanTo="#c56-0015.02"/>
+    <line rend="indent1">As I grew older my attempts</line>
+    <line>in science were of a higher nature.</line>
+    <line>I <del rend="strikethrough">endeavou</del> produced little earthquakes</line>
+    <line>and tried every kind of combination</line>
+    <line>of gasses <del rend="strikethrough">to</del> and elements to ascertain</line>
+    <line>the results.</line><anchor xml:id="c56-0015.02"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><delSpan spanTo="#c56-0015.03" rend="strikethrough"/>As I
+      before mentioned my brothers</line>
+    <line>were much younger than myself.</line>
+    <line>Ernest the second of our family was five</line><anchor xml:id="c56-0015.03"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Another task <mod>
+        <del rend="strikethrough">soon</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">also</add>
+      </mod> devolved upon</line>
+    <line>me when I became the instructor</line>
+    <line>of my brothers. Ernest was five years</line>
+    <line>younger than myself, and was my</line>
+    <line>principal pupil. He had been aflicted</line>
+    <line>with ill health from his infancy <mod>
+        <del rend="strikethrough">&#x26;</del>
+        <add hand="#pbs" place="superlinear">thro which</add>
+      </mod></line>
+    <line>Elizabeth and I had been his constant</line>
+    <line><del rend="strikethrough">m</del> nurses <del rend="strikethrough">I</del> his disposition
+      was gentle but</line>
+    <line>he was incapable any severe appli</line>
+    <line>cation. William the younge<mod>
+        <del rend="overwritten">er</del>
+        <add hand="#pbs" place="intralinear">st</add>
+      </mod> of our</line>
+    <line>family was quite a child and the</line>
+    <line>most beautiful little fellow in the</line>
+    <line>world, his lively blue eyes dimpled cheeks</line>
+  </zone>
+</surface>

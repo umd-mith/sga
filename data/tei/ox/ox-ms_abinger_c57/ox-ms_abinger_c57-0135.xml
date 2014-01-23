@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0135" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0135.jp2"/>
+  <zone type="pagination" rend="bordered"><line>151</line></zone>
+  <zone type="library"><line>68</line></zone>
+  <zone type="main">
+    <line>It gave me the greatest pleasure to</line>
+    <line>receive a letter from my <unclear reason="case">U</unclear>ncle dated at</line>
+    <line>Paris. You are no longer at a formi<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">d</add>
+      </mod>able</line>
+    <line>distance and I may hope to see you in</line>
+    <line>less than a fortnight. My poor Cousin<unclear>!</unclear></line>
+    <line>How much must you have suffered!</line>
+    <line>I expect to see you looking even more</line>
+    <line>ill than when you quitted Geneva. This</line>
+    <line>winter has been passed most miserably</line>
+    <line>but although happiness will not shine</line>
+    <line>in our eyes for many months yet I</line>
+    <line>hope to <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">see</add>
+      </mod> peace in your countenance &#x26; to</line>
+    <line>find that your heart is not totally</line>
+    <line>devoid of comfort &#x26; tranquility.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Yet I fear that<del rend="strikethrough">,</del> the same
+      feelings</line>
+    <line>now exist that made you so miserable</line>
+    <line>a year ago even perhaps augmented by time.</line>
+    <line>I would not at this period disturb you</line>
+    <line>when so many misfortunes weigh upon</line>
+    <line>you but a conversation that I had</line>
+    <line>with my uncle previous to his departure</line>
+    <line>renders some explanation necessary</line>
+    <line>before we meet.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Explanation, you may possibly say,</line>
+    <line>what can Elizabeth have to explain?</line>
+    <line>If you really say this my questions are</line>
+    <line>answered and I have no more to do than</line>
+    <line>to sign myself your affectionate cousin.</line>
+    <line>But you are distant from me &#x26; <delSpan spanTo="#c57-0135.01" rend="strikethrough"/>I
+      can</line>
+    <line>not<anchor xml:id="c57-0135.01"/> it is possible that you may dread &#x26;</line>
+    <line>yet be pleased with this explanation</line>
+    <line><del rend="strikethrough">af</del>
+      <delSpan spanTo="#c57-0135.02" rend="strikethrough"/>and if such could be the case I</line>
+    <line>cannot delay it<anchor xml:id="c57-0135.02"/> and <mod>
+        <del rend="strikethrough">with</del>
+        <add place="superlinear">in</add>
+        <del rend="strikethrough">a</del>
+        <add place="superlinear">the</add>
+      </mod> probabil<retrace cause="clarify">ity</retrace> of</line>
+    <line>this being the case I dare not postpone</line>
+    <line>any longer to write what during your</line>
+    <line>absence I have often wished to express to</line>
+  </zone>
+</surface>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0065" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0065.jp2"/>
+  <zone type="library">32</zone>
+  <zone type="main">
+    <line>Rejoice to hear what yet <mod>
+        <del rend="strikethrough">must be fulfilled</del>
+        <add place="superlinear">yet dare not speak</add>
+      </mod></line>
+    <!--I.253-->
+  </zone>
+</surface>

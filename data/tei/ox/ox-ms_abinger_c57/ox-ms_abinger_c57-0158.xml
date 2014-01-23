@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0158" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0158.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>174</line>
+  </zone>
+  <zone type="main">
+    <line>the deep grief <mod>
+        <del rend="strikethrough">that I at first</del>
+        <anchor xml:id="c57-0158.01"/>
+      </mod> felt quickly gave</line>
+    <line>way to rage &amp; despair &#x2013; They were dead and I lived &#x2013; Their</line>
+    <line>murderer also lived &amp; to destroy him I must drag</line>
+    <line>out my <del rend="strikethrough">we</del> weary existence. I knelt on the earth</line>
+    <line>and with <del rend="strikethrough">a</del> quir<del rend="strikethrough">v</del>ering lips
+      exclaimed &#x2013; By the</line>
+    <line>Sacred earth <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">on which</add>
+      </mod> I kneel <del rend="strikethrough">on</del>, by the shades <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">that</add>
+        <del rend="strikethrough">I</del>
+      </mod> wander</line>
+    <line>near me. By the deep &amp; eternal grief that</line>
+    <line>I feel I swear &#x2014; And by thee oh night and by</line>
+    <line>the spirits that preside over thee I swear</line>
+    <line>to pursue the d&#xE6;mon who caused this misery</line>
+    <line>untill he or I shall <mod>
+        <del rend="strikethrough">fall</del>
+        <add place="superlinear" hand="#pbs">perish</add>
+      </mod> in a mortal</line>
+    <line>conflict &#x2013; For this purpose I will preserve</line>
+    <line>my life &#x2014; To execute this <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">dear</add>
+      </mod> revenge will I again</line>
+    <line><mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">b</add>
+      </mod>ehold the sun &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">tread the</add>
+      </mod> green herbage of earth</line>
+    <line>which otherwise should vanish from my</line>
+    <line>eyes for ever &#x2013; And I call on you spirits of</line>
+    <line>the dead &amp; you wandering ministers of ven</line>
+    <line>geance to aid me &amp; conduct me in my</line>
+    <line>work. Let the cursed &amp; hellish monster</line>
+    <line>drink deep of agony &#x2013; <del rend="strikethrough">And his heart</del> Let</line>
+    <line>him feel the despair that now torments</line>
+    <line>me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I had begun my adjuration with</line>
+    <line>solemnity &amp; an awe that almost assured</line>
+    <line>me that the shades of my murdered friends</line>
+    <line>heard &amp; approved my <mod>
+        <del rend="strikethrough">oath</del>
+        <add place="superlinear">devotion</add>
+      </mod> &#x2013; But the <mod><restore type="smear_strikethrough"><del rend="strikethrough"
+          >furies</del></restore></mod></line>
+    <line>possessed me as I concluded it &amp; <mod>
+        <del rend="strikethrough">I was</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">rage</add>
+      </mod> choaked</line>
+    <line>my utterance. I was answered through the</line>
+    <line>stillness of night by a loud &amp; fiendish laugh&#x2013;</line>
+    <line>It rung my ears long and heavily; the</line>
+    <line>mountains re-echoed it and I felt as if</line>
+    <line>all Hell surrounded me with mockery</line>
+    <line>and laughing&#x2014;Surely in that moment I</line>
+    <line>should have been possessed by frenzy</line>
+    <line>and have destroyed <del rend="strikethrough">t</del> my miserable exis-</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0158.01">
+    <addSpan hand="#pbs" spanTo="#c57-0158.02"/>
+    <line>which this</line>
+    <line>scene had</line>
+    <line>at first</line>
+    <line>excited</line>
+    <anchor xml:id="c57-0158.02"/>
+  </zone>
+</surface>

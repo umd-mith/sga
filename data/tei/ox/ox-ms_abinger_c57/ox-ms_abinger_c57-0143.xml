@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0143" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0143.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>159</line>
+  </zone>
+  <zone type="library">
+    <line>72</line>
+  </zone>
+  <zone type="main">
+    <line>, which past misfortunes had impressed,</line>
+    <line>that what now appeared certain &amp; tangible</line>
+    <line>happiness might soon dissipate into an</line>
+    <line>airy dream &amp; leave no trace but deep &amp; ever</line>
+    <line>lasting regret.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Preparations were made for the event.</line>
+    <line>Congratulatory visits <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">were</add>
+      </mod> received and all wore a</line>
+    <line>smiling appearance &#x2013;I shut up <del rend="strikethrough"><unclear reason="illegible"
+          >m</unclear></del> as well</line>
+    <line>as I could, in my own heart the anxiety that</line>
+    <line>preyed there and entered with seeming ear</line>
+    <line>nestness into the plans of my father although</line>
+    <line>they might only serve as the decorations of</line>
+    <line>my tragedy. A house was purchased for us</line>
+    <line>near Coligny by which we should enjoy</line>
+    <line>the pleasures of the country and yet be so</line>
+    <line>near Geneva as to see my father every</line>
+    <line>day&#x2013; who would still reside within the</line>
+    <line>walls for the benefit of Ernest, that he</line>
+    <line>might follow his studies at the universi</line>
+    <line>ty.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">In the mean time I took every precau</line>
+    <line>tion to defend my person in case the</line>
+    <line>fiend should at<del rend="strikethrough">t</del>ack we&#x2014; I carried</line>
+    <line>pistols &amp; a dagger constantly about</line>
+    <line>me and was ever on the watch to</line>
+    <line>prevent artifice &amp; by these means gain</line>
+    <line>ed <add place="superlinear">a</add> great<del rend="strikethrough">er</del>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">degree of</add>
+      </mod> tranquillity&#x2013; And indeed as the</line>
+    <line>period approached the threat<del rend="strikethrough">s</del> appeared</line>
+    <line>more as <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">dreams</del>
+        <add place="superlinear">a delusion</add>
+      </mod> not to be regarded as</line>
+    <line>worthy to disturb <mod>
+        <del rend="overwritten">b</del>
+        <add place="intralinear">m</add>
+      </mod>y peace while the</line>
+    <line>happiness I hoped for in my marriage</line>
+    <line>wore a<add place="intralinear">n</add>
+      <del rend="strikethrough">greater</del> appearance of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">greater</add>
+      </mod> certainty</line>
+    <line>as <mod>
+        <del rend="strikethrough">it</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the period of its solemnization</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">drew nearer</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"><del rend="strikethrough">approac</del> drew near</add>
+      </mod> and I heard it</line>
+    <line>spoken of every day as an <mod>
+        <del rend="strikethrough">event</del>
+        <add place="superlinear">occurence</add>
+      </mod> which</line>
+    <line>no <del rend="strikethrough">event could alter</del> accident could</line>
+    <line><anchor xml:id="c57-0143.01"/>prevent.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0143.01">
+    <line><add>possibly </add></line>
+  </zone>
+</surface>

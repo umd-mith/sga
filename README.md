@@ -1,20 +1,14 @@
-Shelley-Godwin Archive
-======================
+# Shelley-Godwin Archive
 
-This repository holds various software components of the Shelley-Godwin Archive
+This repository holds various software components and data of the Shelley-Godwin Archive
 (SGA) project. 
 
-This project is under active development and has no publicly available
-components at this time.
+## Structure
 
-shared-canvas
--------------
+`data` : Contains the data produced during the course of the project, including TEI documents, ODD documentation and derivative schemata.
 
-SGA uses Shared Canvas to produce the facsimile edition. This viewer is built
-on the MITHGrid framework to provide a flexible, extensible Shared Canvas
-viewer that can respond to faceted browsing of annotations and text features.
+`docs` : Contains documentation of various kind, included docs generated from ODD.
 
-## search
+`site` : Contains those software components used for shelleygodwinarchive.org, including a JavaScript Shared Canvas viewer.
 
-Code for indexing our TEI files in Solr, a web service for querying them, and an example UI.
-
+`tools` : Contains one-off and proofing tools used for the creation and curation of our data. Some tools may be obsolete at this stage, but they show some steps we took in getting the data to what it is now.

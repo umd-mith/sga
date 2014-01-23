@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0032" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0032.jp2"/>
+  <zone type="main">
+    <line>magnificent fiction with a religious</line>
+    <line>feeling, it engenders something</line>
+    <line>worse. But Prometheus is, as</line>
+    <line>it were, the type of the highest</line>
+    <line>perfection of moral &amp; intellectual</line>
+    <line>nature, impelled by the purest</line>
+    <line>&amp; the truest motives to the best</line>
+    <line>&amp; noblest ends.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This Poem was chiefly written <mod>
+        <del rend="strikethrough">among</del>
+        <add place="superlinear">upon</add>
+      </mod></line>
+    <line>the mountainous ruins of the Baths of</line>
+    <line>Caracalla, among the flowery glades, &amp;</line>
+    <line>thickets of odoriferous blossoming trees</line>
+    <line>which <del rend="strikethrough">has</del> are <mod>
+        <mod>
+          <add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
+          <add place="superlinear">extended</add>
+          <del rend="strikethrough">stretched out</del>
+        </mod>
+        <mod>
+          <add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
+          <add place="superlinear">extended in ever winding labyrinths</add>
+        </mod>
+        <del rend="strikethrough"><unclear>a</unclear>m</del>
+      </mod> upon</line>
+    <line>its immense platforms &amp; dizzy arches</line>
+    <line>suspended in the air. The bright blue</line>
+    <line><mod>
+        <del rend="strikethrough">air</del>
+        <add place="superlinear">sky</add>
+      </mod> of Rome, &amp; the effect of the vigorous</line>
+    <line>awakening of spring in that divinest</line>
+    <line>climate, and the new life with which</line>
+    <line>it drenches the spirits even to intoxi</line>
+    <line>cation, were the inspiration of this</line>
+    <line>drama.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><mod>
+        <del rend="underline">There will be found</del>
+        <add place="superlinear">The imagery which I have</add>
+      </mod></line>
+    <!--First part of line is deleted by underlining. Either add "underline" as an attribute or use both <hi> and <del>-->
+    <line>employed will be found in many</line>
+    <line>instances to have been drawn from</line>
+  </zone>
+</surface>

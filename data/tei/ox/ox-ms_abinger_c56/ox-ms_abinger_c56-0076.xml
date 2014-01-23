@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0076" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0076.jp2"/>
+  <zone type="pagination" rend="bordered"><line>106</line></zone>
+  <zone type="main">
+    <line>console Elizabeth, <mod>
+        <del rend="strikethrough">who</del>
+        <add place="superlinear" hand="#pbs">She</add>
+      </mod> weeps <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">continually</add>
+      </mod>&#x26; accuses herself</line>
+    <line><del rend="strikethrough">of all how u</del>
+      <del rend="strikethrough">so</del> unjustly <mod>
+        <add place="sublinear"><metamark function="displacement" xml:id="c56-0076.01"
+            >^</metamark></add> <del rend="strikethrough">and</del></mod> yet her words</line>
+    <line><add place="interlinear" hand="#pbs" corresp="#c56-0076.01"><del rend="strikethrough">of th</del> as the cause of his death&#x2014;</add></line>
+    <line>pierce my heart. We are all unhpappy</line>
+    <line>but <del rend="strikethrough">that</del> will not that be an additio</line>
+    <line>nal motive <mod>
+        <del rend="overwritten">to</del>
+        <add place="intralinear">for</add>
+      </mod> you, my <del rend="strikethrough">co</del> son, to <mod>
+        <del rend="strikethrough">come</del>
+        <add place="superlinear" hand="#pbs">return</add>
+      </mod></line>
+    <line>and be our comforter. Your dear Mother!</line>
+    <line>Alas, Victor! I now say Thank God she did</line>
+    <line>not live to witness <del rend="strikethrough">this grief</del><del rend="unmarked"
+        >&#x2013;</del>
+      <mod>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">t</add>
+      </mod>he cruel</line>
+    <line>miserable death of her youngest darling.</line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="4"/>Come, Victor; not brooding <del rend="strikethrough"
+        >w</del> thoughts</line>
+    <line>of vengeance against the assassin but</line>
+    <line>with feelings of peace and gentleness</line>
+    <line>that will heal instead of festering the</line>
+    <line><del rend="strikethrough">woul</del> wound<del rend="strikethrough">s</del> of our <del
+        rend="strikethrough">soul</del> minds. Enter</line>
+    <line>the house of mourning, my son &#x26; friend</line>
+    <line>but with kindness and affection</line>
+    <line>for those who love you &#x26; not with</line>
+    <line>hat<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">red</add>
+      </mod> for your enemies.</line>
+    <line rend="indent2">Your affectionate &#x26; afflicted father</line>
+    <line rend="right">Alphonse Frankenstein</line>
+    <line rend="indent5"><del rend="smear">Al</del></line>
+    <line><metamark function="separate">_______________</metamark></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Clerval who had watched my countenance</line>
+    <line>as I read this letter was surprised in observ-</line>
+    <line>ing the despair that succeeded to the joy</line>
+    <line>I expressed on receiving new<add place="intralinear" hand="#pbs">s</add> from my
+      friends.</line>
+    <line>I threw the letter on the table and covered</line>
+    <line>my face with my hands.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"My dear Frankenstien," exclaimed</line>
+    <line><del rend="strikethrough">hen</del> Henry when he saw me weep with</line>
+  </zone>
+  
+</surface>

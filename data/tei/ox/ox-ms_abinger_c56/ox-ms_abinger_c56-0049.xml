@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0049" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0049.jp2"/>
+  <zone type="pagination" rend="bordered"><line>79</line></zone>
+  <zone type="library"><line>23</line></zone>
+  <zone type="main">
+    <line>my view. I did not dare <del rend="strikethrough">to</del> return</line>
+    <line>to the appartment <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">which</add>
+      </mod> I inhabited but</line>
+    <line>felt impelled to hurry on although</line>
+    <line>wetted by the <del rend="strikethrough">drizzling</del> rain which poured</line>
+    <line>from a black and comfortless sky.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I continued walking in this manner</line>
+    <line>for some time endeavouring by bodily</line>
+    <line>exercise to ease the load that weighed</line>
+    <line>upon my mind. I traversed the streets</line>
+    <line>without any clear conception of where</line>
+    <line>I was or what I was doing: my heart</line>
+    <line>palpitated <mod>
+        <del rend="strikethrough">with</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">in the sickness of</add>
+      </mod> fear and I hurried</line>
+    <line>on with irregular steps not daring</line>
+    <line>to look about me,</line>
+    <milestone unit="tei:lg" spanTo="#c56-0049.01"/>
+    <line><space unit="chars" extent="7"/>"Like one who on a lon<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">es</add>
+      </mod>ome road</line>
+    <line rend="indent2">"doth walk in fear and dread</line>
+    <line rend="indent2">"and having once turned round</line>
+    <line rend="right"><metamark>L</metamark>walks on</line><!--text is contained within an "L" bracket to indicate line runover-->
+    <line rend="indent2">"<del rend="smear">wal</del>And turns no more his
+      head</line>
+    <line rend="indent2">"Because he knows a frightful</line>
+    <line rend="right"><metamark>L</metamark>fiend</line><!--text is contained within an "L" bracket to indicate line runover-->
+    <line rend="indent2">"doth close behind him tread."<metamark>*</metamark></line>
+    <anchor xml:id="c56-0049.01"/>
+    <line>Continueing thus, I came at lenght</line>
+    <line><mod>
+        <del rend="strikethrough">opposite</del>
+        <add place="superlinear" hand="#pbs">opposite to</add>
+      </mod> the Inn at which the dili</line>
+    <line>-gences and carriages usually stopped. Here</line>
+    <line>I paused I knew not why but remained</line>
+    <line>some minutes with my eyes fixed on</line>
+    <line>a coach that was coming towards me</line>
+    <line>from the other end of the street.</line>
+    <line>As <mod>
+        <del rend="strikethrough">I</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">it</add>
+      </mod> drew nearer I observed that it</line>
+    <line>was the Swiss diligence; it stopped</line>
+    <line>just where I was standing, and on</line>
+  </zone>
+  <zone type="left_margin">
+    <line><metamark>_______________</metamark></line>
+    <milestone unit="tei:note" spanTo="#c56-0049.03"/>
+      <line><metamark>*</metamark>Coleridge's</line>
+      <line>"Ancient Mariner."</line>
+    <anchor xml:id="c56-0049.03"/>
+    
+  </zone>
+</surface>

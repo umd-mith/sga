@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0101" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0101.jp2"/>
+  <zone type="pagination" rend="bordered"><line>131</line></zone>
+  <zone type="library"><line>48</line></zone>
+  <zone type="main">
+    <line>pable of any severity or ill humour and</line>
+    <line>yet she has <del rend="strikethrough">com</del> committed a murder."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Soon after we heard that the</line>
+    <line>poor victim had expressed a wish to</line>
+    <line>see my cousin. My father wished her not</line>
+    <line>to go but said that he left it to her</line>
+    <line>own judgement and feelings to decide.</line>
+    <line>"Yes," said Elizabeth "I will go although</line>
+    <line>she is guilty &#x2013; and you Victor shall acco</line>
+    <line>pany me &#x2013;I cannot go alone". <del rend="strikethrough">This</del> The</line>
+    <line>idea of this visit was torture to me</line>
+    <line>yet I could not refuse.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">We entered the gloomy prison cham</line>
+    <line>ber and beheld Justine sitting on some</line>
+    <line>straw at the further end; her hands</line>
+    <line>were mannacled and her head rested</line>
+    <line>on her <del rend="strikethrough">knews</del> knees,&#x2013; she rose on seeing</line>
+    <line>us and when <del rend="strikethrough">th</del> we were left alone</line>
+    <line>with her she threw herself at the</line>
+    <line>feet of Elizabeth weeping bitterly.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My cousin wept also &#x2013; Oh Justine</line>
+    <line>said she, why did you rob me of my</line>
+    <line>last consolation &#x2013; I <mod>
+        <del rend="strikethrough">believed</del>
+        <add place="superlinear">relied</add>
+      </mod>
+      <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">o</add>
+      </mod>n your</line>
+    <line>innocence and although I was very</line>
+    <line><del rend="strikethrough">wh</del> wretched I was not so miserable</line>
+    <line>as I am now."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"And do you also believe that I am</line>
+    <line>so very very wicked&#x2013;?<add place="sublinear"><metamark function="insert">^</metamark></add><add
+        place="superlinear">Cried Justine</add> Do you also join</line>
+    <line>with my enemies to crush me? Her</line>
+    <line>voice was suffocated <mod>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear">with</add>
+      </mod> sobs.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Rise my poor girl," said Elizabeth</line>
+    <line>"why do you kneel if you are innocen<damage type="tear">t</damage></line>
+  </zone>
+</surface>

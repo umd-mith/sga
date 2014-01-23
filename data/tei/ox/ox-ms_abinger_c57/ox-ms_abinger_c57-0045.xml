@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+   xml:id="ox-ms_abinger_c57-0045" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0045.jp2"/>
+  <zone type="pagination"><line>70</line></zone>
+  <zone type="library"><line>23</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0045.06"/>Chap. 7<hi rend="sup"><hi rend="underline">th</hi></hi><anchor xml:id="c57-0045.06"/></line>
+    <line>The <mod>
+        <del rend="strikethrough">season</del>
+        <add place="superlinear">winter</add>
+      </mod> advanced and <mod spanTo="#c57-0045.01"/><del next="#c57-0045.02"
+        rend="strikethrough">it was now about a</del><add place="superlinear" next="#c57-0045.03"
+        >and an entire revolution of the</add></line>
+    <line><del rend="strikethrough" xml:id="c57-0045.02">year</del><add place="sublinear"
+          ><metamark function="insert">^</metamark></add><add place="superlinear" xml:id="c57-0045.03">seasons
+        had taken place</add><anchor xml:id="c57-0045.01"/> since I awoke into life.&#x2013; <del
+        rend="strikethrough">and I then</del>
+      <delSpan spanTo="#c57-0045.04" rend="strikethrough"/>at</line>
+    <line>that<anchor xml:id="c57-0045.04"/>
+      <del rend="strikethrough">time</del> My attention <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">at this time</add>
+      </mod> was <del rend="strikethrough">now</del> solely</line>
+    <line>directed towards my plan of introducing</line>
+    <line>myself into the cottage of my protectors. I revol</line>
+    <line>ved many projects but that on which I</line>
+    <line>finally fixed was to enter their dwelling when</line>
+    <line>the blind old man <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">should be</add>
+      </mod> alone. <delSpan spanTo="#c57-0045.05" rend="strikethrough"/>My voice</line>
+    <line> although harsh had nothin<mod>
+        <del rend="overwritten">k</del>
+        <add place="intralinear">g</add>
+      </mod> terrible in</line>
+    <line> it.<anchor xml:id="c57-0045.05"/>
+      <del rend="strikethrough">and</del> I had sagacity enough to discover</line>
+    <line>that the unnatural hideousness of my person</line>
+    <line>was the chief object of horror <del rend="strikethrough">am</del> with those</line>
+    <line>who had formerly beheld me:&#x2013;my voice al</line>
+    <line>though harsh, had nothing terrible in</line>
+    <line>it. I though<add place="intralinear">t</add> therefore that if in the absence</line>
+    <line>of his children I could gain the goodwill</line>
+    <line>of the old De Lacey I might by his means be</line>
+    <line>tolerated by <del rend="strikethrough">the</del> my younger protectors.</line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="9"/><del rend="strikethrough">One clear</del> One day when the
+      sun</line>
+    <line>shone on the red leaves that strewed</line>
+    <line>the ground, and <del rend="strikethrough">all</del> diffused cheerfulness</line>
+    <line>although it denied warmth <mod>
+        <del rend="strikethrough">Maimouna</del>
+        <add place="superlinear">Safie</add>
+      </mod></line>
+    <line>Agatha and Felix set out on a long country</line>
+    <line>walk and the old man at his own desire</line>
+    <line>was left alone in the cottage. When his chil</line>
+    <line>dren had departed he took up his guitar &amp;</line>
+    <line>played <del rend="strikethrough">ver</del> several mournful but sweet</line>
+    <line>airs<unclear>:</unclear> <mod>
+        <del rend="strikethrough">that I had seldom</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">more sweet &amp; mournful that I had ever</add>
+      </mod> heard him play</line>
+    <line>before. At first his countenance was illumi</line>
+    <line>nated with pleasure but as he continued thought</line>
+    <line>fullness and sadness succeeded and laying down</line>
+  </zone>
+</surface>

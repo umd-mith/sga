@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0110" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0110.jp2"/>
+  <zone type="pagination" rend="bordered"><line>140</line></zone>
+  <zone type="main">
+    <line>society."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This advice, although good, was utterly inna-</line>
+    <line>-plicable to my case; I should have been</line>
+    <line>the first to hide my grief and console</line>
+    <line>my friends if remorse had not mingled its</line>
+    <line>bitterness with my other sensations. Now</line>
+    <line>I could only answer my father with a</line>
+    <line>look of despair and endeavour to</line>
+    <line>hide myself from his view. About this</line>
+    <line>time <del rend="strikethrough">also</del> we retired to our house at</line>
+    <line>Belrive. This <del rend="strikethrough">chal</del> change was very</line>
+    <line>agreable to me in particular. The</line>
+    <line>shutting of the gates of the town regularly</line>
+    <line>at ten o'clock and the impossibility of</line>
+    <line><mod>
+        <del rend="strikethrough">stay</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">ing</add></del>
+        <anchor xml:id="c56-0110.01"/>
+      </mod> on the lake after that hour</line>
+    <line>rendered our residence within the</line>
+    <line>walls of Geneva very irksome to me.</line>
+    <line>I was now free: often, after the rest of</line>
+    <line>the family had retired for the night</line>
+    <line>I took the boat and passed the</line>
+    <line>night upon the water: sometimes</line>
+    <line>with my sails set I was carried by the</line>
+    <line>wind and sometimes after <del rend="strikethrough">wo</del> rowing</line>
+    <line>into the middle of the lake I left the</line>
+    <line>boat to <mod>
+        <del rend="strikethrough">take</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">pursue</add>
+      </mod> its own course and</line>
+    <line><mod>
+        <del rend="strikethrough">followed</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <anchor xml:id="c56-0110.02"/>
+        <add place="superlinear" xml:id="c56-0110.03">to</add>
+      </mod> my own miserable reflections.</line>
+    <line>I was often tempted <del rend="strikethrough">w</del> when all was <mod>
+        <del rend="strikethrough">quiet</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">at peace</add>
+      </mod></line>
+    <line>around me and I the only unquiet</line>
+    <line>thing that wandered restless in a scene</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0110.01">
+    <line><add hand="#pbs">remaining</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0110.02">
+    <line><add next="#c56-0110.03">gave way </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0007" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0007.jp2"/>
+  <zone type="pagination"><line>109</line></zone>
+  <zone type="library"><line>4</line></zone>
+  <zone type="main">
+    <line>to defend my person in case the fiend should openly</line>
+    <line>attack me. I carried pistols and dagger constantly</line>
+    <line>about me and was ever on the watch to prevent</line>
+    <line>artifice and by these means gain<add place="intralinear">ed</add> a greter degree
+      of</line>
+    <line>tanquillity. Indeed as the <del rend="strikethrough">the</del> period approached
+      the</line>
+    <line>threat appeared more as a delusion not <del rend="strikethrough">bo</del> to be re-</line>
+    <line>garded as worthy to disturb my peace while the</line>
+    <line>happiness I hoped for in my marriage wore</line>
+    <line>a greater appearance of certainty as the day fixed</line>
+    <line>for its solemnization drew nearer and I heard it</line>
+    <line>continully spoken of as an occurrence which no ac</line>
+    <line>cident could possibly prevent.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Elizabeth seemed happy and this change</line>
+    <line>from mirth to content which she saw come over</line>
+  </zone>
+</surface>

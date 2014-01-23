@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0057" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0057.jp2"/>
+  <zone type="pagination" rend="bordered"><line>87</line></zone>
+  <zone type="library"><line>27</line></zone>
+  <zone type="main">
+    <line>"but get well as fast as you ca<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod>. And</line>
+    <line>"since you appear in such good</line>
+    <line>"spirits I may speak to you on</line>
+    <line>"one subject; may I not?"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I trembled; one subject! What</line>
+    <line>could it be? Could he allude to<mod>
+        <add place="sublinear"><metamark function="insert"><metamark function="insert"
+              >^</metamark></metamark></add>
+        <add place="superlinear">an</add>
+      </mod> object</line>
+    <line><anchor xml:id="c56-0057.01"/>I dared not even think. Do not fright</line>
+    <line>"en yourself," said Clerval, who observed</line>
+    <line>my change of colour," I will not mention</line>
+    <line>"it if it agitates you. But your father</line>
+    <line>"and cousin would be so happy if they</line>
+    <line>"<del rend="strikethrough">rec</del> received a letter from you in</line>
+    <line>"your own hand &#x2013; They hardly know how</line>
+    <line>"ill you have been<unclear>,</unclear> and are uneasy</line>
+    <line>"at your long silence."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Is that all? "I said smiling</line>
+    <line>"My dear Henry how could you suppose</line>
+    <line>"that my first thoughts would not</line>
+    <line>"fly towards<mod>
+        <del rend="strikethrough">that</del>
+        <add place="sublinear"><metamark function="insert">&#2038;</metamark></add>
+        <add place="superlinear">those</add>
+      </mod> dear, dear friends</line>
+    <line>"whom I love and who are so deserving</line>
+    <line>"of my love."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"If this is your present temper"</line>
+    <line>said Henry "you will be glad perhaps</line>
+    <line>"to see a letter <del rend="strikethrough">here</del> that has been</line>
+    <line>"<del rend="strikethrough">ly</del> lying<del rend="strikethrough">e</del> here some
+        day<add place="intralinear" hand="#pbs">s</add> it is from your</line>
+    <line>"cousin I believe."</line>
+    <line rend="center"><milestone unit="tei:head" spanTo="#c56-0057.02"/><add place="interlinear">Ch V&#x2013; 113</add><anchor xml:id="c56-0057.02"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">He then put the following letter</line>
+    <line>into my hands.</line>
+    <line rend="indent2">"To V. Frankenstien</line>
+    <line rend="right">Geneva <mod>
+        <del rend="strikethrough">Apri</del>
+        <del rend="unmarked">l</del>
+        <add place="superlinear">March</add>
+      </mod> 18<hi rend="underline"><hi rend="sup">th</hi></hi> 17&#x2014;</line>
+    <line>"My dear Cousin</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"I cannot describe to you the uneasi</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0057.01">
+    <line><add>on whom </add></line>
+  </zone>
+
+  </surface>

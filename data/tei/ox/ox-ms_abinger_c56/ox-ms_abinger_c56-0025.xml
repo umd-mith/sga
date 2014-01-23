@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0025" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0025.jp2"/>
+  <zone type="pagination" rend="#bordered"><line>56</line></zone>
+  <zone type="library"><line>11</line></zone>
+  <zone type="main">
+    <line>"so greedily imbibed are <del rend="strikethrough">at le</del> a </line>
+    <line>"thousand years old and as musty as</line>
+    <line>"<del rend="strikethrough">your</del> they are ancient. I little expected</line>
+    <line>"in this enlightened and scientific age</line>
+    <line>"to find a disciple of Albertus Mag</line>
+    <line>"nus and Paracelsus. My dear sir</line>
+    <line>"you must begin your studies entire</line>
+    <line>"ly anew." So saying he ste<mod>
+        <del rend="overwritten">ss</del>
+        <add place="intralinear" hand="#pbs">pp</add>
+      </mod>ed aside, and</line>
+    <!--PBS writes "pp" over MWS's ligatured ss-->
+    <line><del rend="strikethrough">wh</del> wrote down a list of several</line>
+    <line>books <del rend="strikethrough"><unclear>u</unclear></del> upon natural philosophy</line>
+    <line>which he desired me to procure</line>
+    <line>and dismissed me after mentioning</line>
+    <line>that <del rend="strikethrough">he intended</del>
+      <del rend="strikethrough">to commen</del> in</line>
+    <line>the beginning of the next week</line>
+    <line>he intended to commence a course</line>
+    <line>of lectures upon natural philosophy <mod>
+        <add place="sublinear"><metamark function="displacement" xml:id="c56-0025.01"
+          >X</metamark></add>
+      </mod></line>
+    <line>and that M. W.<mod>
+        <del rend="unmarked">&#x2014;</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">aldham</add>
+      </mod> a fellow professor</line>
+    <line>would lecture upon chemistry</line>
+    <line>the alternate days which he missed.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I returned home not dissapointed</line>
+    <line>for I had long considered the au-</line>
+    <line>thors useless which the professor</line>
+    <line>had so strongly reprobated &#x2013; but I</line>
+    <line>did not feel very much enclined</line>
+    <line>to <del rend="strikethrough">bu</del> study those books which at</line>
+    <line>his <del rend="strikethrough">recon</del> recommondation I had</line>
+    <line>procured. M. K<mod>
+        <del rend="unmarked">&#x2014;</del>
+        <add place="superlinear">rempe</add>
+      </mod> was a little squat</line>
+    <line>man with a gruff voice and repul</line>
+    <line>sive countenance and the teacher</line>
+    <line>did not prepossess me in favour</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0025.01">
+    <line><add hand="#pbs"><metamark function="displacement">X</metamark> in its general
+        relations;</add></line>
+  </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0019" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0019.jp2"/>
+  <zone type="pagination"><line>121</line></zone>
+  <zone type="library"><line>10</line></zone>
+  <zone type="main">
+    <line>believing it <mod>
+        <add place="sublinear" hand="#comp"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#comp">to</add>
+      </mod> have been a form conjured <del rend="strikethrough">my</del> by my</line>
+    <line>fancy. After having landed they proceeded to search the</line>
+    <line>country, parties going in different directions among</line>
+    <line>the woods and vines.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I did not accompany them; I was exhausted,</line>
+    <line>a film covered my eyes and my skin was parched with</line>
+    <line>the heat of fever. In this state I lay on a bed</line>
+    <line>hardly conscious of what had happened; my eyes</line>
+    <line>wandered round the room as if to seek somthing</line>
+    <line>that I had lost. <milestone unit="tei:p"/><add place="intralinear" hand="#comp"><metamark
+          function="paragraph">[</metamark></add>At length I remembered that my father</line>
+    <line>would anxiously expect the return of Elizabeth and</line>
+    <line>myself, and that I must return alone. This reflec</line>
+    <line>-tion brought tears into my eyes and I wept for a long</line>
+    <line>time; but my thoughts rambled to various subjects,</line>
+    <line>reflecting on my misfortunes and their cause I was</line>
+    <line>bewildered in a cloud of wonder and horror. The</line>
+    <line>death of William, the execution of Justine, the murder</line>
+    <line>of Clerval and lastly of my wife; even at that mo-</line>
+    <line>ment I knew not that my only remaining friends were</line>
+  </zone>
+</surface>

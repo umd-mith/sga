@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0027" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0027.jp2"/>
+
+  <zone type="pagination" rend="#bordered"><line>58</line></zone>
+  <zone type="library"><line>12</line></zone>
+
+  <zone type="main">
+    <line>but those at the back of his head</line>
+    <line>were nearly black. He was short in</line>
+    <line>person but remarkably erect <del rend="strikethrough">ha</del> and</line>
+    <line>his voice the sweetest I had ever</line>
+    <line>heard. He began his lecture with a</line>
+    <line><mod>
+        <del rend="strikethrough">kind</del>
+        <del rend="strikethrough">of</del>
+        <anchor xml:id="c56-0027.01"/>
+      </mod> history of chemistry and <delSpan rend="strikethrough" spanTo="#c56-0027.03"
+      />remark-</line>
+    <line>ed<anchor xml:id="c56-0027.03"/> the various improvements <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">&#x26; discoveries</add></del>
+      </mod>
+      <delSpan spanTo="#c56-0027.04" rend="strikethrough"/>diffe</line>
+    <line>rent<anchor xml:id="c56-0027.04"/><anchor xml:id="c56-0027.05"/> men <mod>
+        <del rend="strikethrough">had made</del>
+        <add place="superlinear">of learning</add>
+      </mod> pronoucing</line>
+    <line>the names of the greatest discoverers</line>
+    <line><mod>
+        <del rend="strikethrough">with great warmth</del>
+        <anchor xml:id="c56-0027.06"/>
+      </mod>. He then took</line>
+    <line>a cursory view of the present state</line>
+    <line>of <mod>
+        <del rend="strikethrough">chemistry</del>
+        <add place="superlinear" hand="#pbs">the science,</add>
+      </mod> and explained many</line>
+    <line>of its <del rend="strikethrough">termes</del> terms. <mod>
+        <del rend="strikethrough">made</del>
+        <add place="superlinear" hand="#pbs">After making</add>
+      </mod> a few</line>
+    <line>preparatory experiments <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear" hand="#pbs">he</add>
+      </mod> conclu</line>
+    <line>ded with a panegyric upon <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">modern</add>
+      </mod> chemist</line>
+    <line>ry the words of which I shall never</line>
+    <line>forget.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"The ancient teachers of this science"</line>
+    <line>said he, "promised impossibilities</line>
+    <line>"and performed nothing. The modern</line>
+    <line>"masters promise very little. They</line>
+    <line>"<del rend="strikethrough">no</del> know that metals cannot be</line>
+    <line>"transmuted and that the elixir</line>
+    <line>"<mod>
+        <del rend="strikethrough">vit&#xE6;</del>
+        <anchor xml:id="c56-0027.07"/>
+      </mod> is a <del rend="strikethrough">mere</del> chim&#xE6;ra. But</line>
+    <line>"these philosophers whose <del rend="strikethrough">eyes</del> hands</line>
+    <line>"appear only made to dabble in</line>
+    <line>"dirt and their eyes to pore over</line>
+    <line>"the microscope or cruscible,</line>
+    <line>"have indeed performed miracles.</line>
+    <line>"They penetrate into the recesses of</line>
+    <line>"nature and show how she works</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0027.01">
+    <addSpan hand="#pbs" spanTo="#c56-0027.02"/><line>by a recapitu</line>
+    <line>lation of the</line><anchor xml:id="c56-0027.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0027.05">
+    <add>made by various</add>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0027.06">
+    <add>with fervour</add>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0027.07">
+    <add>of life</add>
+  </zone>
+</surface>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0129" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0129.jp2"/>
+  <zone type="pagination" rend="bordered"><line>159</line></zone>
+  <zone type="library"><line>62</line></zone>
+  <zone type="main">
+    <line>heavens &#x2013; before it descends to <del rend="strikethrough">its lowest</del></line>
+    <line>hide itself behind <mod>
+        <del rend="strikethrough">thes</del>
+        <del rend="unmarked">e</del>
+        <add hand="#pbs" place="superlinear">yon</add>
+      </mod> mountains and</line>
+    <line>illumin<add hand="#pbs" place="intralinear">a</add>t<add hand="#pbs" place="intralinear"
+        >es</add> another world you will have</line>
+    <line>heard my story and can decide. <del rend="strikethrough">And</del></line>
+    <line>on you it rests whether I quit for ever</line>
+    <line>the habitations of man &#x26; lead a</line>
+    <line>harmless life or become the scourge</line>
+    <line>of your fellow creatures<unclear>,</unclear>
+      <del rend="strikethrough">&#x2013;</del>
+      <add place="intralinear" hand="#pbs">&#x26; the author </add><add place="sublinear"
+        hand="#pbs">of your own speedy ruin.</add></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">As he said this he led the way</line>
+    <line>across the ice &#x2013;I followed &#x2013; my heart was</line>
+    <line>full and <add hand="#pbs" place="intralinear">I</add> did not answer him but</line>
+    <line><mod>
+        <del rend="strikethrough">when</del>
+        <anchor xml:id="c56-0129.01"/>
+      </mod> I weighed the various arguments</line>
+    <line>which he had used, <mod spanTo="#c56-0129.02"/><add place="sublinear"
+          ><metamark function="insert">^</metamark></add><del rend="strikethrough">I</del>
+      <del rend="strikethrough">felt enclined</del><add place="superlinear" hand="#pbs">&#x26; I
+        determined at </add></line>
+    <line><anchor xml:id="c56-0129.03"/><anchor xml:id="c56-0129.02"/>to listen to his tale&#x2014;I
+      was partly urged</line>
+    <line>by curiosity, and compassion confirmed</line>
+    <line>me.&#x2013; <del rend="strikethrough">As</del>
+      <del rend="strikethrough">I was not</del> I had hitherto suppos</line>
+    <line>ed him to be the murder<add hand="#pbs" place="intralinear">er</add> of my brother</line>
+    <line>and I <mod spanTo="#c56-0129.04"/><delSpan spanTo="#c56-0129.05" rend="strikethrough"
+      />wished to find this either confirmed</line>
+    <line>or denied<anchor xml:id="c56-0129.05"/><del rend="unmarked">.</del><anchor
+        xml:id="c56-0129.06"/><anchor xml:id="c56-0129.04"/> For the first time also I felt</line>
+    <line>what the duties of a creator towards his</line>
+    <line>creature were and that I ought to</line>
+    <line>render him happy before I complained</line>
+    <line>of his wickedness. these motives urged me</line>
+    <line>to comply with his <mod>
+        <del rend="strikethrough">request</del>
+        <add place="superlinear">demand</add>
+      </mod> &#x2013; We crossed</line>
+    <line>the ice therefore, and ascended the</line>
+    <line>opposite rock.&#x2013; The air was cold and</line>
+    <line>the rain began again to descend&#x2013;We</line>
+    <line>entered the hut &#x2013; the fiend with an</line>
+    <line>air of exultation I with a heavy</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0129.01">
+    <line><add hand="#pbs">as I proceeded</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0129.03">
+    <line><add hand="#pbs">least </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0129.06">
+    <addSpan spanTo="#c56-0129.07" hand="#pbs"/>
+    <line>I eagerly sought</line>
+    <line>a confirma</line>
+    <line>tion or denial</line>
+    <line>of this opinion.</line>
+    <anchor xml:id="c56-0129.07"/>
+  </zone>
+</surface>

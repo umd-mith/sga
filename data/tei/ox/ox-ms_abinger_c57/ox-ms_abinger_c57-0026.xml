@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0026" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0026.jp2"/>
+  <zone type="pagination"><line>61</line></zone>
+  <zone type="main">
+    <line>deceit by quitting his house under the pretence</line>
+    <line>of a journey &amp; conceal<mod>
+        <del rend="overwritten">in</del>
+        <add place="intralinear">ed</add>
+        <del rend="strikethrough">g</del>
+      </mod> himself with his daughter</line>
+    <line>in an obscure part of Paris. <unclear unit="chars" extent="1"/> Felix conducted</line>
+    <line>the fugitives <mod>
+        <del rend="strikethrough">across</del>
+        <add place="superlinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">through</add>
+      </mod> France to Lyons &amp; <add place="superlinear">across</add> Mount Cenis</line>
+    <line>when he arrived at Leghorn where the merchant</line>
+    <line><mod>
+        <del rend="unmarked">w</del>
+        <del rend="strikethrough">as to</del>
+        <add hand="#pbs" place="superlinear">had decided to</add>
+      </mod> wait a favourable<del rend="smear"><add place="superlinear" hand="#pbs"
+        >safe</add></del> opportunity of passing</line>
+    <zone type="pagination"><line><del rend="smear">61</del></line></zone>
+    <line>over to Africa <del rend="strikethrough">The</del>
+      <del rend="strikethrough">H</del> He could not deny hi<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">m</add>
+      </mod></line>
+    <line>self the pleasure of remaining a <del rend="strikethrough" instant="true">short</del>
+      few</line>
+    <line>days in the <mod>
+        <del rend="strikethrough">company</del>
+        <add place="superlinear">society</add>
+      </mod> of the Arabian who exhi</line>
+    <line>bited towards him the simplest &amp; tenderest</line>
+    <line>affection<unclear>.</unclear> They conversed with one another</line>
+    <line>by the aid of an interpreter &amp; Safie sang</line>
+    <line>to him the divine airs of her native coun</line>
+    <line>try. The Turk allowed this intimacy to</line>
+    <line>take place and encouraged the hopes of </line>
+    <line><del rend="strikethrough">Th</del>the <mod>
+        <del rend="strikethrough">Christian</del>
+        <add place="superlinear">youthful</add>
+      </mod> lovers, while in his heart</line>
+    <line>he had formed far other plans. He loathed</line>
+    <line>the idea that his daughter should be</line>
+    <line>united to a Christian <del rend="strikethrough">and</del>
+      <del rend="strikethrough">and</del> but he</line>
+    <line>feared the resentment of Felix if he should</line>
+    <line>appear lukewarm for he<del rend="strikethrough">w</del> knew that he</line>
+    <line> was still in <mod>
+        <del rend="strikethrough">his</del>
+        <add place="superlinear">the</add>
+      </mod> power <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">o</add>
+      </mod>f his <del rend="strikethrough">former</del> deli</line>
+    <line>ver<add place="intralinear" hand="#pbs">er</add> if he should <mod>
+        <del rend="strikethrough">deliver</del>
+        <add place="superlinear">choose to betray</add>
+      </mod> him <del rend="strikethrough">up</del> to the</line>
+    <line><damage type="tear"/>Italian state which they at</line>
+    <line><damage type="tear"/>that time imhabited.</line>
+    <line><damage type="tear"/>He revolved a thou</line>
+    <line><damage type="tear"/>sand plans by</line>
+    <line><damage type="tear"/>which he <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">should</add>
+      </mod></line>
+  </zone>
+</surface>

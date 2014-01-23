@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0082" ulx="0" uly="0" lrx="5364" lry="7104" partOf="ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0082.jp2"/>
+  <zone type="pagination" rend="bordered"><line>112</line></zone>
+  <zone type="main">
+    <line><mod>
+        <del rend="strikethrough">that country</del>
+        <add place="superlinear">Switzerland</add>
+      </mod> appeared at once in various</line>
+    <line>parts of the heavens. The most violent</line>
+    <line>storm <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">hung</add>
+      </mod> exactly <del rend="strikethrough">noth</del> north of the town</line>
+    <line><mod>
+        <del rend="strikethrough">and at</del>
+        <add place="superlinear" hand="#pbs">over</add>
+      </mod> that part <mod>
+        <del rend="strikethrough">where</del>
+        <add place="superlinear" hand="#pbs">of the</add>
+      </mod> lake <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">turns</del>
+        <add place="superlinear" hand="#pbs" next="#c56-0082.01">which <del rend="strikethrough"
+            >at</del></add>
+        <add place="sublinear" xml:id="c56-0082.01" hand="#pbs">lies between</add>
+      </mod></line>
+    <line>the promontory of Belrive and <mod spanTo="#c56-0082.02"/><del rend="strikethrough"
+        next="#c56-0082.03">changing</del><add place="superlinear" hand="#pbs" next="#c56-0082.04"
+        >the</add></line>
+    <line><add place="superlinear" hand="#pbs" xml:id="c56-0082.04">village of Copet</add>
+      <delSpan spanTo="#c56-0082.05" rend="strikethrough"/>its course from South to north
+      which</line>
+    <line>it before p<mod>
+        <del rend="overwritten"><unclear>e</unclear></del>
+        <add place="intralinear">u</add>
+      </mod>rsue<mod>
+        <add place="sublinear">s</add>
+        <del rend="strikethrough">d</del>
+      </mod> proceeds from west</line>
+    <line>to east<anchor xml:id="c56-0082.05"/> &#x2014; another storm enlightened</line>
+    <line>Jura with faint flashes and another</line>
+    <line><del rend="strikethrough">appeared</del> darkened and sometimes</line>
+    <line>disclosed the Mole &#x2013; <del rend="strikethrough">the name of</del></line>
+    <line>a peaked mountain to the east of</line>
+    <line>the lake.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">While I watched the storm &#x2013; so beauti</line>
+    <line>ful yet terrific I wandered <del rend="strikethrough">listlessly</del></line>
+    <line>on with a hasty step &#x2013; <del rend="strikethrough">I felt that</del></line>
+    <line>th<mod>
+        <del rend="overwritten">is</del>
+        <add place="intralinear" hand="#pbs">e</add>
+      </mod> noble war in the sky elevated</line>
+    <line>my spirits; I clasped my hands &#x26; ex</line>
+    <line>claimed aloud "William, dear angel,</line>
+    <line>this is thy funeral, this thy dirge!"&#x2013;</line>
+    <line>As I said the<add place="sublinear">se</add> words <mod spanTo="#c56-0082.06"/><del
+        rend="strikethrough" next="#c56-0082.07">a flash of lightning</del><add place="superlinear"
+        >I perceived in the gloom</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0082.07">discovered to me</del><anchor
+        xml:id="c56-0082.06"/> a figure which stole from</line>
+    <line>behind a clump of trees near me &#x2013; <mod spanTo="#c56-0082.08"/><add
+      place="superlinear"><metamark function="displacement" xml:id="c56-0082.09">X</metamark></add>
+      <delSpan spanTo="#c56-0082.11" rend="strikethrough"/>I stood</line>
+    <line>aghast<anchor xml:id="c56-0082.11"/><anchor xml:id="c56-0082.08"/> its gigantc sta<del
+        rend="strikethrough">n</del>ture<mod>
+        <del rend="strikethrough">, its</del>
+        <add place="superlinear" hand="#pbs">&#x26; the</add>
+      </mod> deformity</line>
+    <line><add place="superlinear" hand="#pbs">of its aspect</add>more hideous tha<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">n</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">a</del>
+        <del rend="strikethrough">man could be</del>
+        <add place="superlinear">belongs to humanity</add>
+      </mod></line>
+    <line><del rend="strikethrough">explain</del> instantly informed me who it</line>
+    <line>was. I<add place="intralinear">t</add> was the wretch, the filthy d&#xE6;mon to</line>
+    <line>whom I had given life. What did he there?</line>
+    <line>Could he be (I shuddered at the conception</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0082.09">
+    <addSpan spanTo="#c56-0082.10"/>
+    <line>I stood</line>
+    <line>fixed gazing</line>
+    <line>intently, I</line>
+    <line>could not</line>
+    <line>be mista</line>
+    <line>ken a</line>
+    <line>flash of</line>
+    <line>lightning</line>
+    <line>illumined</line>
+    <line>the object<unclear>,</unclear></line>
+    <line>and discov</line>
+    <line>ered to me</line>
+    <anchor xml:id="c56-0082.10"/>
+  </zone>
+</surface>

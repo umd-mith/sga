@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0006" ulx="0" uly="0" lrx="5088" lry="7082" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0006.jp2"/>
+  <zone type="main">
+    <line>Agrippa had been entirely exploded. <del rend="strikethrough">And</del></line>
+    <line><del rend="strikethrough">aan</del> and that <mod>
+        <del rend="strikethrough">another</del>
+        <add place="superlinear">a modern</add>
+      </mod>system of science</line>
+    <line>had been introduced which possessed much</line>
+    <line>greater power than the ancient because</line>
+    <line>the powers of the ancient were pretended</line>
+    <line>and chimerical, while those of the moderns</line>
+    <line>are real and practical; under such</line>
+    <line>circumstances I should certainly have thrown</line>
+    <line>Agrippa aside, and with my imagination</line>
+    <line>warmed as it was <mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear" hand="#pbs">sh</add>
+      </mod>ould probably have</line>
+    <line>aplied myself to <del rend="strikethrough">m</del> the more <del rend="strikethrough"
+        >ra</del> rational</line>
+    <line>theory of chemistry which <mod spanTo="#c56-0006.04"/><del rend="strikethrough"
+        next="#c56-0006.01">has at present</del>
+      <add place="superlinear" hand="#pbs" next="#c56-0006.02">has resulted from modern
+        discoveries</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0006.01">the approbation of the learned.</del>
+      <add place="superlinear" hand="#pbs" xml:id="c56-0006.02" next="#c56-0006.03">It is even
+        possible that the train of my ideas might never have recieved</add>
+      <add place="sublinear" hand="#pbs" xml:id="c56-0006.03">that fatal impulse which led me to my
+        ruin.</add><anchor xml:id="c56-0006.04"/> But the</line>
+    <line>cursory glance my father had taken of</line>
+    <line>my volume by no means assured me</line>
+    <line>that he was acquainted with <mod>
+        <del rend="strikethrough">the</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">its</add>
+      </mod> contents;</line>
+    <line>and I continued to read with the greatest</line>
+    <line>avidity. <milestone unit="tei:p"/><metamark function="paragraph">[</metamark>When I
+      returned home, my first</line>
+    <line>care was to procure <mod>
+        <del rend="strikethrough">this</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">whole</add>
+      </mod> works of this</line>
+    <line>author and afterwards those of Paracel-</line>
+    <line>sus and Albertus Magnus. I read and studi<damage>ed</damage></line>
+    <line>the wild fancies of the<add place="intralinear" hand="#pbs">se</add> authors with</line>
+    <line>delight, they appeared to me treasures</line>
+    <line>known to few besides myself; and, althoug<damage>h</damage></line>
+    <line>I often wished to <mod>
+        <del rend="strikethrough">discover</del>
+        <add place="superlinear" hand="#pbs">communicate</add>
+      </mod> these secret stores</line>
+    <line>of knowledge <del rend="strikethrough">from</del> to my father yet his in</line>
+  </zone>
+</surface>

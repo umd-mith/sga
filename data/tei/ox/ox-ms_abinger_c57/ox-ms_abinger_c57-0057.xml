@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0057" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0057.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>82</line>
+  </zone>
+  <zone type="library" rend="bordered">
+    <line>29</line>
+  </zone>
+  <zone type="main">
+    <line>and with a loud scream I fird</line>
+    <line>the straw and hay <del rend="strikethrough">of my bon</del> that</line>
+    <line>I had collected. The wind <mod>
+        <del rend="strikethrough">blew</del>
+        <add place="superlinear">fanned</add>
+      </mod> the <mod>
+        <del rend="strikethrough">flame</del>
+        <add place="superlinear">fire</add>
+      </mod></line>
+    <line>and the cottage was quickly enveloped</line>
+    <line>by the flames which clun<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">g</add>
+      </mod> to it</line>
+    <line>and <del rend="strikethrough">liked</del> licked it with <del rend="strikethrough"
+        >th</del>
+      <del rend="strikethrough">with</del></line>
+    <line>their forked <mod>
+        <del rend="strikethrough">ton</del>
+        <add place="superlinear" hand="#pbs">&amp; destroying</add>
+      </mod> tongues, <delSpan spanTo="#c57-0057.01" rend="strikethrough"/>to destroy</line>
+    <line>it&#x2014;<anchor xml:id="c57-0057.01"/>. As soon as I was convinced that</line>
+    <line>no <del rend="strikethrough">hu</del> assistance could save any</line>
+    <line>part of the habitation I quitted</line>
+    <line>the scene and sought for refuge</line>
+    <line>in the wood.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">And now <del rend="strikethrough"><unclear>it</unclear></del> with the
+      world before</line>
+    <line>me w<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">h</add>
+      </mod>ither should I bend my steps?</line>
+    <line>I resolved to fly far from the scene</line>
+    <line>of my misfortunes &#x2013; <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear" hand="#pbs">But</add>
+      </mod> to me, hated</line>
+    <line>and despised, every country <del rend="strikethrough">And</del></line>
+    <line>must be equally horrible.&#x2013; At length</line>
+    <line>the thought of you crossed my</line>
+    <line>mind &#x2014; I learned from your papers</line>
+    <line>that you <mod>
+        <del rend="strikethrough">was I</del>
+        <add place="superlinear">were my</add>
+      </mod> creator &amp; to whom</line>
+    <line><del rend="strikethrough">w</del> could I apply with more fitness</line>
+    <line>than to h<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear" hand="#pbs">im</add>
+      </mod> who had given <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> life.</line>
+    <line>Among the lessons that Felix had</line>
+    <line>bestowed on <mod>
+        <del rend="strikethrough">Maimouna</del>
+        <add place="superlinear">Safie</add>
+      </mod> geography</line>
+    <line>had not been ommitted. From</line>
+    <line>these I had learned the relative</line>
+    <line>situations of the different countries</line>
+    <line><anchor xml:id="c57-0057.02"/>You had mentioned Geneva as</line>
+    <line>the name of your native town</line>
+    <line>&amp; to<mod><restore type="stetdots"><del rend="strikethrough">wards</del></restore></mod> this
+      place I resolved to</line>
+    <line rend="indent3">proceed.</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0057.02">
+    <line><add>of the earth; </add></line>
+  </zone>
+</surface>

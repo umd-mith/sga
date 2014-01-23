@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0045" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0045.jp2"/>
+  <zone type="pagination" rend="bordered"><line>75</line></zone>
+  <zone type="library"><line>21</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c56-0045.04"/>Chapter 7<hi rend="sup"><hi rend="underline">th</hi></hi><anchor xml:id="c56-0045.04"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">It was on a dreary night of November</line>
+    <line>that I beheld <del rend="strikethrough"><add place="superlinear" hand="#pbs">the frame on
+          whic</add></del> my man comple<mod>
+        <del rend="overwritten">at</del>
+        <add place="intralinear">te</add>
+        <add>ed</add>
+      </mod><add place="intralinear" hand="#pbs">,</add>. <del rend="strikethrough">And</del></line>
+    <line>with an anxiety that almost amount</line>
+    <line>ed to agony I collected instruments of life</line>
+    <line>around me <mod>
+        <del rend="strikethrough">and endeavour to</del>
+        <add place="superlinear">that I might</add>
+      </mod>
+      <mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>nfuse a</line>
+    <line>spark of being into the lifeless thin<mod>
+        <del rend="overwritten">k</del>
+        <add place="intralinear">g</add>
+      </mod></line>
+    <line>that lay at my feet. It was already</line>
+    <line>one in the morning, the rain pattered</line>
+    <line>dismally against the window panes, &#x26;</line>
+    <line>my candle was nearly burnt out, when</line>
+    <line>by the glimmer of the half extinguish-</line>
+    <line>ed light I saw the dull yellow eye of</line>
+    <line>the creature open.&#x2014;It breathed hard,</line>
+    <line>and a convulsive motion agitated</line>
+    <line>its limbs.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><del rend="strikethrough">But how</del> How can I describe
+      my</line>
+    <line>emotion at this catastrophe; or how deli</line>
+    <line>neate the wretch whom with such</line>
+    <line>infinite pains and care I had endeavoured</line>
+    <line>to form. His limbs were in proportion</line>
+    <line>and I had selected his features <del rend="strikethrough">h</del> as</line>
+    <line><mod>
+        <del rend="strikethrough">handsome</del>
+        <del rend="unmarked">.</del>
+        <anchor xml:id="c56-0045.01"/>
+      </mod>
+      <mod>
+        <del rend="strikethrough">Handsome</del>
+        <add place="superlinear" hand="#pbs">Beautiful</add>
+      </mod>; Great God! His</line>
+    <line><mod>
+        <del rend="strikethrough">dun</del>
+        <anchor xml:id="c56-0045.02"/>
+      </mod> skin scarcely covered the work of</line>
+    <line>muscles and arteries beneath; his hair</line>
+    <line>was<mod>
+      <add place="sublinear"><metamark function="displacement" xml:id="c56-0045.03">^</metamark></add>
+        </mod> flowing and his teeth of a pearly white</line>
+    <line>ness but these luxurianc<add place="intralinear">i</add>es only <del rend="strikethrough"
+        >fomed</del></line>
+    <line>formed a more horrid contrast with</line>
+    <line>his watry eyes that seemed almost of</line>
+    <line>the same colour as the dun white</line>
+    <line>sockets in which they were set,</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0045.01">
+    <line><add><mod>
+          <del rend="strikethrough">handsome</del>
+          <add place="superlinear" hand="#pbs">beautiful.</add>
+        </mod></add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0045.02">
+    <line><add>yellow</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0045.03">
+    <line><add hand="#pbs">of a lustrous black &#x26;</add></line>
+  </zone>
+</surface>

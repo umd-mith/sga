@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0022" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0022.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>21</line>
+  </zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I could mention innumberable instances</line>
+    <line>which although slight marked the <mod>
+        <del rend="strikethrough">heart</del>
+        <add place="superlinear">dispositions</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough" next="#c57-0022.01">in</del>
+        <del rend="strikethrough" xml:id="c57-0022.01" next="#c57-0022.02"><add place="superlinear"
+            >by</add></del>
+        <add place="intralinear">of</add>
+        <del rend="strikethrough" xml:id="c57-0022.02">which</del>
+      </mod> these amiable cottagers <delSpan rend="strikethrough" spanTo="#c57-0022.03"
+      />shewed</line>
+    <line>their dispositions<anchor xml:id="c57-0022.03"/>. In the midst of poverty</line>
+    <line>and want Felix carried wit<damage>h</damage> pleasure</line>
+    <line>to his sister the fist little white flower</line>
+    <line>that peeped out from beneath the <mod>
+        <del rend="strikethrough">snow</del>
+        <add hand="#pbs" place="sublinear">snowy</add>
+        <add place="superlinear"><del rend="strikethrough">white</del> ground</add>
+      </mod></line>
+    <line><anchor xml:id="c57-0022.04"/>
+      <mod>
+        <del rend="overwritten">I</del>
+        <add place="intralinear">i</add>
+      </mod>n the morning <del rend="strikethrough">early</del> before <del rend="strikethrough">any
+        of the</del></line>
+    <line>she had risen he had cleared away the</line>
+    <line>snow that obst<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>ucted her path to the</line>
+    <line>milkhouse<mod>
+        <del rend="overwritten">&#x2013;</del>
+        <add place="intralinear" hand="#pbs">;</add>
+      </mod> drew water from the well</line>
+    <line>and brought the wood from the <mod>
+        <del rend="overwritten"><del rend="strikethrough">outhouse</del></del>
+        <add place="intralinear"><metamark function="displacement" xml:id="c57-0022.05">X</metamark>
+        </add>
+      </mod></line>
+    <line>In the day I believe he worked sometimes</line>
+    <line>for a neighbouring farmer, <mod>
+        <del rend="strikethrough">for</del>
+        <add hand="#pbs" place="superlinear">because</add>
+      </mod> he</line>
+    <line>often went <mod>
+        <del rend="strikethrough">out</del>
+        <add place="superlinear" hand="#pbs">forth,</add>
+      </mod> and did not return</line>
+    <line>untill dinner, yet brought no wood</line>
+    <line>with him:&#x2013; at other times he worked</line>
+    <line>in the garden but as there was litt<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">le</add>
+      </mod></line>
+    <line>to do in the frosty season he often</line>
+    <line>read to the old man and Agatha.</line>
+    <line>This reading had puzzled me extremely</line>
+    <line>at first &#x2013; but by degrees I discovered</line>
+    <line>that he uttered many of the same</line>
+    <line>sounds when he read as when he talked;</line>
+    <line>I conjectured <del rend="strikethrough">their</del> therefore that he</line>
+    <line>found on the paper signs for speech</line>
+    <line>which he understood and I ardently longed</line>
+    <line>to <mod>
+        <del rend="strikethrough">understand</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">comprehend</add>
+      </mod> these <del rend="strikethrough"><unclear>b</unclear></del> also; but how was</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0022.04">
+    <line><add>Early</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0022.05">
+    <addSpan spanTo="#c57-0022.06" hand="#pbs"/>
+    <line><metamark function="displacement">X</metamark></line>
+    <line>outhouse</line>
+    <line>where to his</line>
+    <line>perpetual</line>
+    <line>astonishment</line>
+    <line>he found his</line>
+    <line>store always</line>
+    <line>replenished by</line>
+    <line>an invisible</line>
+    <line>hand.</line>
+    <anchor xml:id="c57-0022.06"/>
+  </zone>
+</surface>

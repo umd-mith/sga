@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0095" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0095.jp2"/>
+  <zone type="pagination" rend="bordered"><line>125</line></zone>
+  <zone type="library"><line>45</line></zone>
+  <zone type="main">
+    <line>doubtful or suspicious.</line>
+    <delSpan spanTo="#c56-0095.01" rend="vertical_line"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">By the permission of Mad<hi rend="sup"><hi rend="underline">ll</hi>e</hi>
+      Lavenza</line>
+    <line>I passed the evening with an aunt at</line>
+    <line>Ch&#234;ne. One of my cousins returning from</line>
+    <line>Geneva said that he had been at the</line>
+    <line>house of M. Frankenstein and</line><anchor xml:id="c56-0095.01"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">She then related that by the</line>
+    <line>permission of Elizabeth she had passed</line>
+    <line>the evening of the night on which the</line>
+    <line>murder was perpetrated at <mod>
+        <del rend="strikethrough">M</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the house of</add>
+      </mod> an aunt</line>
+    <line>who resided in Ch&#234;ne a village about</line>
+    <line>a league from Geneva. On her return</line>
+    <line><anchor xml:id="c56-0095.02"/>about nine o'clock she met a <del rend="strikethrough"
+        >servant</del></line>
+    <line>man who asked her if she had seen</line>
+    <line>any thing of the child who was lost. She</line>
+    <line>was frightened at this account<add place="intralinear" hand="#pbs">,</add> and
+      passed</line>
+    <line>several hours in looking for him when</line>
+    <line>the gates of Geneva were shut and she</line>
+    <line><mod>
+        <del rend="strikethrough">passed</del>
+        <anchor xml:id="c56-0095.03"/>
+      </mod> s<hi rend="underline">e</hi>veral hours of the night<add place="superlinear">in</add>
+      a</line>
+    <line>cottage, but unable to rest or sleep, she</line>
+    <line>rose early that she might again</line>
+    <line>endeavour to find my brother. If she</line>
+    <line>had gone near the <del rend="strikethrough"><unclear unit="chars" extent="1"/></del>
+        spot<del rend="strikethrough">e</del> where his</line>
+    <line>body lay it was without her knowledge</line>
+    <line><mod>
+        <del rend="strikethrough">and she had been confused</del>
+        <add place="superlinear" hand="#pbs">That if she had been bewildered</add>
+      </mod> when ques</line>
+    <line>tioned by the market woman, was</line>
+    <line><mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">not</add>
+      </mod> surprising when she <del rend="strikethrough">was so</del></line>
+    <line><del rend="strikethrough">c</del> was so wretched <mod>
+        <del rend="strikethrough">on</del>
+        <add place="superlinear" hand="#pbs">for</add>
+      </mod> the loss of poor</line>
+    <line>William. Concerning the picture she</line>
+    <line>could give no account. "I know," continued</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0095.02">
+    <add>at </add>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0095.03">
+    <mod>
+      <add place="sublinear" hand="#pbs"><metamark function="insert">^</metamark></add>
+      <add place="superlinear" hand="#pbs">was forced to </add>
+      <add>remain<del rend="strikethrough">ed</del></add>
+    </mod></zone>
+</surface>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0128" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0128.jp2"/>
+  <zone type="pagination" rend="bordered"><line>158</line></zone>
+  <zone type="main">
+    <line>you accuse me of muder and yet <del rend="strikethrough">wh</del></line>
+    <line>you would with a <del rend="strikethrough">s</del>
+      <unclear extent="1" unit="chars"/> satisfi<del rend="strikethrough">c</del>ed
+      conscience</line>
+    <line>destroy <mod>
+        <del rend="strikethrough">thy</del>
+        <add place="superlinear" hand="#pbs">thine own</add>
+      </mod> creature &#x2013;Oh praise the eter</line>
+    <line>nal justice of man<add place="intralinear" hand="#pbs">!</add>&#x2014;Yet I ask you</line>
+    <line>not to spare me, listen and then, if</line>
+    <line>you <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear" hand="#pbs">can and if you</add>
+      </mod> will, destroy the work of your hands."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"Why" cried I&#x2013;"do you <del rend="strikethrough"
+        >ever</del> call to my</line>
+    <line>remembrance <del rend="strikethrough">those</del> circumstances <add place="superlinear"
+        hand="#pbs">of</add> which</line>
+    <line>I shudder to reflect <mod>
+        <del rend="strikethrough">ever re occured</del>
+        <add place="superlinear" hand="#pbs">that I have been the</add>
+        <anchor xml:id="c56-0128.01"/>
+      </mod> &#x2013;</line>
+    <line>Cursed be the <del rend="strikethrough">night o during which you</del></line>
+    <line>day in which you first saw light, cursed</line>
+    <line>(although I curse myself) be the hands</line>
+    <line>that formed you!&#x2014; You have made</line>
+    <line>me wretched beyond expression <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear" hand="#pbs">You have left me no power to consider</add>
+        <add place="sublinear" hand="#pbs">whether I am just to you or no.</add>
+      </mod> begone,</line>
+    <line>relieve me from <mod>
+        <del rend="strikethrough">they</del>
+        <add place="superlinear" hand="#pbs">your</add>
+      </mod> sight</line>
+    <milestone unit="tei:p"/>
+    <line><mod spanTo="#c56-0128.06"/><add place="interlinear" next="#c56-0128.07">Thus I relieve you, Creator</add></line>
+    <line><add place="intralinear" xml:id="c56-0128.07">he replied &#x26;</add> <del rend="strikethrough">He</del><anchor xml:id="c56-0128.06"/>
+       placed his abhorred hand<del rend="strikethrough">s</del> before</line>
+    <line>my eyes &#x2013; <mod>
+        <del rend="strikethrough">Thus will I relieve yo</del>
+        <del rend="unmarked">u</del>
+        <add place="superlinear">which I flung from me with violence</add>
+      </mod> &#x2013; <delSpan spanTo="#c56-0128.03" rend="strikethrough"/>Creator</line>
+    <line>he replied<anchor xml:id="c56-0128.03"/> &#x2013;fro<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">m</add>
+      </mod> the sight of one whom</line>
+    <line>you abhor.&#x2013;still you can listen to me</line>
+    <line>and grant me your compassion &#x2013;By the</line>
+    <line>the virtues I <del rend="strikethrough">c</del>once possessed I demand this</line>
+    <line>of you &#x2013; <del rend="strikethrough">Lis</del> Hear my <del rend="strikethrough"
+        >tale</del> tale &#x2013;It is</line>
+    <line>long and strange <del rend="strikethrough">but</del> and the temperature</line>
+    <line>of this place is not fitting <del rend="strikethrough">y</del> to your</line>
+    <line>fine sensations; come to <add place="superlinear">the</add> hut on <mod
+        spanTo="#c56-0128.04"/><del rend="strikethrough" next="#c56-0128.05">Motan</del><add
+        place="superlinear">the mountain</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0128.05">vert</del><anchor xml:id="c56-0128.04"/>
+      &#x2013; The sun is yet high in the</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0128.01">
+    <addSpan spanTo="#c56-0128.02"/>
+    <line> miserable</line>
+    <line>origin</line>
+    <line>&#x26; author</line>
+    <anchor xml:id="c56-0128.02"/>
+  </zone>
+</surface>

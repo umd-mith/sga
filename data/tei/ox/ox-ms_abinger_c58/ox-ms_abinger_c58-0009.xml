@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0009" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0009.jp2"/>
+  <zone type="pagination"><line>111</line></zone>
+  <zone type="library"><line>5</line></zone>
+  <zone type="main">
+    <line>one side of the lake where we saw Mont Sal&#xEA;ve,</line>
+    <line>the pleasant banks of Montal&#xEA;gre and at a dis</line>
+    <line>tance surmounting all the beeautiful Mont</line>
+    <line>Bl&#226;nc and the assemblage of snowy mountains</line>
+    <line>that <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in vain</add>
+      </mod> endeavour <del rend="strikethrough">in va</del> to emulate her; som<add
+        place="intralinear">e</add>times</line>
+    <line>coasting the opposite banks we saw the mighty Jura</line>
+    <line>opposing its dark side to the ambition that would</line>
+    <line>quit its native country and an almost insurmount</line>
+    <line>able barrier to the invader who should wish to</line>
+    <line>enslave it.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I took the hand of Elizabeth<mod>
+        <del rend="strikethrough">s</del>
+        <add place="intralinear">:</add>
+      </mod> "You are sorrow</line>
+    <line>ful, my love<mod>
+        <del rend="strikethrough">;</del>
+        <add place="intralinear">.</add>
+      </mod> ah! if you knew what I have suffered</line>
+    <line>and what I may yet endure you would endeavour</line>
+    <line>to let me taste the quiet, and freedom from despair</line>
+  </zone>
+</surface>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0183" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0183.jp2"/>
+  <zone type="pagination" rend="bordered"><line>199</line></zone>
+  <zone type="library"><line>92</line></zone>
+  <zone type="main">
+    <line>not that the groans of Clerval were music</line>
+    <line>to my <del rend="strikethrough">ye</del> ear. My heart was made for love &amp;</line>
+    <line>sympathy and when wrenched <del rend="strikethrough">to</del> by misery to</line>
+    <line>vice &amp; hatred it did not not endure the vio</line>
+    <line>lence of the change without torture <add place="superlinear" hand="#pbs">such as
+          you<metamark function="displacement" xml:id="c57-0183.01">X</metamark></add> &#x2013;
+      When</line>
+    <line>Clerval died I returned to Switzerland <delSpan spanTo="#c57-0183.02" rend="strikethrough"
+        /><unclear>how</unclear></line>
+    <line>many <unclear>ti</unclear><anchor xml:id="c57-0183.02"/> heart broken &amp; overcome
+      &#x2013;I pitied</line>
+    <line>Frankenstein and his bitter sufferings &#x2013; my</line>
+    <line>pity amounted to horror &#x2013; I abhorred my</line>
+    <line>self &#x2013; But when I saw that <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">he</add>
+      </mod> again <del rend="strikethrough">he</del> dared</line>
+    <line><add place="intralinear">to</add> hope for happiness&#x2013; That while he heaped</line>
+    <line>wretchedness &amp; despair on me he sought</line>
+    <line>his own enjoyment in feelings &amp; passions</line>
+    <line>from <del rend="strikethrough">whic</del> the indulgence of which I was</line>
+    <line>for ever barred &#x2013; I was again rouzed to</line>
+    <line>indignation &amp; revenge. I remembered my</line>
+    <line>threat &amp; resolved to execute it&#x2014;Yet when</line>
+    <line>she died&#x2014; Nay then I <del rend="strikethrough">d</del> was not misera</line>
+    <line>ble &#x2013;I cast off all feeling &amp; all anguish</line>
+    <line>I rioted in the extent of my despair</line>
+    <line>&amp; being urged thus far &#x2013; I resolved to</line>
+    <line>finish my demoniacal design. And</line>
+    <line>it is now <mod>
+        <del rend="strikethrough">finished</del>
+        <add place="superlinear">ended</add>
+      </mod> &#x2013; There is my last vic</line>
+    <line>tim.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I was touched by the expressions of his</line>
+    <line>misery <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">yet</add>
+      </mod> I remembered what Frankenstein</line>
+    <line>had said of his eloquence &amp; persua</line>
+    <line>sion &#x2013; &amp; when I again cast my eyes on</line>
+    <line><add place="sublinear"><metamark function="displacement" xml:id="c57-0183.03"
+          >^</metamark></add>my friend<del rend="erased">s</del>
+      <del rend="strikethrough">form</del> my indignation was</line>
+    <line>kindled &#x2013; Wretch I said, It is well that</line>
+    <line>you come here to whine over the mise</line>
+    <line>ry you have created &#x2013; you throw a torch</line>
+    <line>among a pile of buildings &amp; when they</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0183.01">
+    <addSpan spanTo="#c57-0183.04" hand="#pbs"/>
+    <line><metamark function="displacement">X</metamark></line>
+    <line> cannot</line>
+    <line>even im</line>
+    <line>agine</line>
+    <anchor xml:id="c57-0183.04"/>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0183.03">
+    <line><add>the form of </add></line>
+  </zone>
+</surface>

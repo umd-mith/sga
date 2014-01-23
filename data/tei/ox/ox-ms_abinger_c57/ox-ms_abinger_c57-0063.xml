@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0063" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0063.jp2"/>
+  <zone type="pagination" rend="bordered"><line>88</line></zone>
+  <zone type="library"><line>32</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><del rend="strikethrough"><milestone unit="tei:head" spanTo="#c57-0063.01"/>Chap. 9<hi rend="underline"><hi rend="sup">th</hi></hi><anchor xml:id="c57-0063.01"/></del></line>
+    <line><del rend="strikethrough">I now saw </del>
+      <del rend="strikethrough">Thus my journey appeared</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">It was evening when I arrived in the outskirts</line>
+    <line>of <mod>
+        <del rend="strikethrough">Geneva</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">that town</add>
+      </mod> and I retired to a hiding place among the</line>
+    <line>fields that surround<del rend="strikethrough">s</del> it, to consider in what</line>
+    <line>manner I should apply to you. I was oppressed</line>
+    <line>by fatigue and hunger and far too unhappy to</line>
+    <line>enjoy the gentl<del rend="strikethrough">l</del>e breezes of evening or the
+      prospect</line>
+    <line>of the sun setting behind the stupendous moun</line>
+    <line>tains of the Jura. At this time <del rend="strikethrough">I was relieved by</del></line>
+    <line>a slight sleep <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">relieved me</add>
+      </mod> which was disturbed by the</line>
+    <line>approach of a beautiful child who came</line>
+    <line>running into the recess I had chosen with</line>
+    <line>all the sportiveness of infancy&#x2014;Suddenly as I</line>
+    <line>gaze<mod>
+        <del rend="overwritten"><unclear>n</unclear></del>
+        <add place="intralinear">d</add>
+      </mod> on him a<mod>
+        <add place="intralinear">n</add>
+        <del rend="strikethrough">thought</del>
+        <add place="superlinear">idea</add>
+      </mod> seized me &#x2013; that</line>
+    <line>this little creature was <del rend="strikethrough">uncorrupted &amp;</del> unpre</line>
+    <line>judiced &amp; ha<mod>
+        <del rend="overwritten">v</del>
+        <add place="intralinear">d</add>
+        <del rend="strikethrough">e</del>
+      </mod> lived to<add place="intralinear">o</add> short a time to have</line>
+    <line>imbibed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> horro<mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">r</add>
+      </mod> of deformity. If therefore I</line>
+    <line>could seize him &amp; educate him as my</line>
+    <line>companion &amp; friend, I should not be so</line>
+    <line>desolate <mod>
+        <del rend="overwritten"><unclear>o</unclear></del>
+        <add place="intralinear">i</add>
+      </mod>n this peopled earth. <del rend="strikethrough">Un</del> Urged by this</line>
+    <line>impulse I seized on the boy as he passed</line>
+    <line>and drew him towards me. As soon as he beheld</line>
+    <line>my form he placed his hand before his eyes</line>
+    <line>&amp; uttered a shrill scream. I drew his hand</line>
+    <line>forcibly from his <mod>
+        <del rend="strikethrough">eyes</del>
+        <add place="superlinear">face</add>
+      </mod> &amp; said Child, w<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">h</add>
+      </mod>at is</line>
+    <line>the meaning of this? I do not intend to hurt</line>
+    <line>you&#x2014; listen to me. He struggled violently</line>
+    <line>Let me g<del rend="strikethrough">r</del>o<del rend="strikethrough">w</del> he
+      cried&#x2014; Monster &#x2014; ugly wretch</line>
+    <line>You wish to eat me &amp; tear me to pieces you</line>
+    <line>are an ogre, &#x2013; let me go or I will tell my papa.</line>
+    <line>Boy said I &#x2013; You will never see your father</line>
+    <line>again &#x2013;you must come with me. He</line>
+    <line>burst into loud cries &#x2014; hideous monster</line>
+    <line>let me go &#x2014; My papa is a syndic he is</line>
+    <line>M. Frankenstien let me go you dare not</line>
+    <line>keep me<mod>
+        <del rend="smear">!</del>
+        <add place="intralinear">.</add>
+      </mod> Frankenstein cried I &#x2014; You belong then</line>
+    <line>to my enemy&#x2013;To <del rend="strikethrough">wh</del> him towards whom I have</line>
+  </zone>
+</surface>

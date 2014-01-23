@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0115" ulx="0" uly="0" lrx="5428" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0115.jp2"/>
+  <zone type="pagination" rend="bordered"><line>1<mod><del rend="overwritten">3</del><add place="intralinear">4</add></mod>5</line></zone>
+  <zone type="library"><line>55</line></zone>
+  <zone type="main">
+    <line>mingling in the world what can dis</line>
+    <line>-turb our tranquillity?"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">She shed tears as she said this <add place="sublinear"
+          ><metamark function="displacement" xml:id="c56-0115.01">^</metamark></add></line>
+    <line><del rend="strikethrough">but</del><add place="intralinear" hand="#pbs">but</add> at the
+      same time <retrace hand="#pbs" cause="clarify">s</retrace>miled, that</line>
+    <line>she might chase away the fiend that</line>
+    <line>lurked in my heart. My father who saw</line>
+    <line>in the unhappiness that was painted in</line>
+    <line>my face, only an exag<add place="intralinear">g</add>eration of that</line>
+    <line><del rend="strikethrough">w</del> sorrow which I might naturally</line>
+    <line>feel thought that an amusement</line>
+    <line>suited to my taste would be the best</line>
+    <line>means of restoring to me my wonted</line>
+    <line>serenity &#x2013; It was <del rend="strikethrough">th</del> fro<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">m</add>
+      </mod> this cause that</line>
+    <line>he<del rend="strikethrough">a</del> had removed to the country &#x26; <mod>
+        <del rend="strikethrough">from</del>
+        <anchor xml:id="c56-0115.03"/>
+      </mod></line>
+    <line>the same reasons he now proposed</line>
+    <line>that <del rend="strikethrough">I</del> we should all <del rend="strikethrough">tak</del>
+      take a</line>
+    <line>journey to the Valley of C<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">h</add>
+      </mod>amounix. I had</line>
+    <line>been there before but Elizabeth &#x26; Ernest</line>
+    <line>never had, and both had often ex</line>
+    <line>pressed a wish to see this place which</line>
+    <line>had been described to them as so wonderful</line>
+    <line>&#x26; sublime. Accordingly we departed from</line>
+    <line>Geneva on this tour about the middle</line>
+    <line>of the month of august <del rend="strikethrough">more</del>
+      <del rend="strikethrough">than</del> nearly</line>
+    <line>two months after the death of Justine.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The weather was beautiful and if</line>
+    <line>mine<del rend="strikethrough">d</del> had been a sorrow to be chased</line>
+    <line>away by any fleeting circumstance this</line>
+    <line>voyage would certainly have had the</line>
+    <line>effect <mod>
+        <del rend="strikethrough">which</del>
+        <add place="superlinear" hand="#pbs">intended by</add>
+      </mod> my father <del rend="strikethrough">intended</del>. As it</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0115.01">
+    <addSpan spanTo="#c56-0115.02" hand="#pbs"/>
+    <line>distrusting the</line>
+    <line>very solace</line>
+    <line>which she</line>
+    <line>gave,</line>
+    <anchor xml:id="c56-0115.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0115.03">
+    <line><add hand="#pbs">induced by</add></line>
+  </zone>
+</surface>

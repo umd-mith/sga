@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0104" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0104.jp2"/>
+  <zone type="pagination" rend="bordered"><line>134</line></zone>
+  <zone type="main">
+    <line>but this I fear is an evil to<add place="intralinear">o</add> deep and poignant</line>
+    <line>to admit of consolation <del rend="strikethrough">or</del> for there is no hope</line>
+    <line>Yet heaven bless thee, my dearest Justine,</line>
+    <line>with resignation and <mod>
+        <del rend="strikethrough">a hope</del>
+        <add place="superlinear">a confidence</add>
+      </mod> elevated</line>
+    <line>beyond this world. Oh how I hate all its shews</line>
+    <line>and mockeries.&#x2013; When one creature is</line>
+    <line><mod>
+        <del rend="strikethrough">deprived of life</del>
+        <add place="superlinear">murdered</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">they</del>
+        <del rend="strikethrough">bel</del>
+        <add place="superlinear">another is</add>
+      </mod> immediately <mod spanTo="#c56-0104.01"/><delSpan rend="strikethrough"
+        spanTo="#c56-0104.02"/>mur</line>
+    <line>der<anchor xml:id="c56-0104.02"/>
+      <del rend="strikethrough">another</del><anchor xml:id="c56-0104.03"/><anchor
+        xml:id="c56-0104.01"/> of life in a slow torturing</line>
+    <line>manner &#x26; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" next="#c56-0104.04">then the executioners their hands yet reeking
+          with the blood of in</add>
+        <add place="sublinear" xml:id="c56-0104.04">nocence</add>
+      </mod> believe that they have done</line>
+    <line><anchor xml:id="c56-0104.05"/>great <mod>
+        <del rend="strikethrough">things</del>
+        <add place="superlinear">deed</add>
+      </mod>. The<add place="intralinear" hand="#pbs">y</add> call this retribution; hate</line>
+    <line>ful name! When that <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">word</add>
+      </mod> is pronounced</line>
+    <line>I know that greater and more horrid</line>
+    <line>punishments are going to be inflicted</line>
+    <line>than the gloomiest tyrant has <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">ever</add>
+      </mod> in</line>
+    <line>venten<add place="intralinear">t</add>e<add place="intralinear">d</add> to satiate<add
+        place="superlinear">his utmost</add> revenge. Yet this</line>
+    <line>is not consolation <mod>
+        <del rend="strikethrough">to</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">for</add>
+      </mod> you, my Justine,</line>
+    <line>unless indeed that you may glory</line>
+    <line>in escaping so miserable a den. Alas!</line>
+    <line>I would I were <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in peace</add>
+      </mod> with my aunt &#x26; my</line>
+    <line>sweet William &#x2013; <del rend="strikethrough">in peace</del> escaped</line>
+    <line>from light which <mod>
+        <del rend="strikethrough">I abhor</del>
+        <add place="superlinear">is hateful to me</add>
+      </mod> and the</line>
+    <line>visages of men which <delSpan spanTo="#c56-0104.06" rend="strikethrough"/>are hateful
+      to</line>
+    <line>me.<anchor xml:id="c56-0104.06"/>" I abhor.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Justine smiled languidly. "This, dear Lady</line>
+    <line>said she is despair and not resignation.</line>
+    <line>I must not learn the lesson that you</line>
+    <line>would teach me &#x2013; talk of somthing else</line>
+    <line><del rend="strikethrough">of fields</del>
+      <del rend="strikethrough">s</del> of something that will <del rend="strikethrough">brig
+        jo</del></line>
+    <line>bring joy and not encrease of misery."</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0104.03">
+    <add>deprive</add>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0104.05">
+    <add>a </add>
+  </zone>
+  
+</surface>

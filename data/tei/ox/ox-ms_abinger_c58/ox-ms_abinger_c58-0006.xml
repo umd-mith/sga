@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0006" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0006.jp2"/>
+  <zone type="pagination"><line>108</line></zone>
+  <zone type="main">
+    <line>nion with placid contentment not unmingled</line>
+    <line>with a little fear, which past misfortune had</line>
+    <line>impressed, that what now appeared certain and</line>
+    <line>tangible happiness might soon dissipate into an</line>
+    <line>airy dream and leave no trace but deep and</line>
+    <line>everlasting regret.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Preparations were made for the event; congratu-</line>
+    <line>latory were received, and all wore a smiling appear</line>
+    <line>ance. I shut up as well as I could in my own heart</line>
+    <line>the anxiety that preyed there and entered with <del rend="strikethrough">sen</del></line>
+    <line>seeming earnestness into the plans of my father</line>
+    <line><del rend="strikethrough">altho</del> although they might only serve as the decora-</line>
+    <line>tions of my tragedy. A house was purchased for us</line>
+    <line>near Cologny by which we should enjoy the plea-</line>
+    <line>sures of the country and yet be so near Gene<retrace cause="clarify">v</retrace>a</line>
+    <line>as to see my father every day; who would still</line>
+    <line>reside within the walls for the benefit of Ernest that</line>
+    <line>he might follow his studies at the schools.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">In the mean time I took every precaution</line>
+  </zone>
+</surface>

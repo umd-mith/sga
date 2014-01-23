@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0085" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0085.jp2"/>
+  <zone type="main">
+    <line>I sighed but my father kindly forbore</line>
+    <line><del rend="strikethrough">to me que</del> question me <add place="superlinear" hand="#pbs"
+        >further</add> concerning the</line>
+    <line>cause of my dejection&#x2013; He hoped that</line>
+    <line>new scenes and the amusement of tra</line>
+    <line>velling would restore my tranquillity</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I now <mod>
+        <del rend="strikethrough">arranged</del>
+        <add place="superlinear" hand="#pbs">made arrangements</add>
+      </mod> for my journey</line>
+    <line>but one feeling haunted me which</line>
+    <line>filled <del rend="strikethrough">w</del> me with fear and agitation.</line>
+    <line>During my absence I should leave my</line>
+    <line>friends unconscious of the existence</line>
+    <line>of their enemy, and unprotected from</line>
+    <line>his attacks, <del rend="strikethrough">and</del> exasperated as he</line>
+    <line>might be by my departure. But he</line>
+    <line>had promised to follow me wherever</line>
+    <line>I might go and would he not accom</line>
+    <line>pany me to England? This <mod>
+        <del rend="strikethrough">idea</del>
+        <add place="superlinear" hand="#pbs">imagination</add>
+      </mod> was</line>
+    <line>dreadful in itself but soothing in</line>
+    <line>as much as <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">it supposed the safety of</add>
+      </mod> my friends <delSpan spanTo="#c57-0085.01"/>would be</line>
+    <line>in safety<anchor xml:id="c57-0085.01"/>. <del rend="strikethrough">Yet</del> I was
+      agonized with<del rend="strikethrough">e</del></line>
+    <line>the <add place="superlinear" hand="#pbs">idea of a</add> possibility that the
+      reverse</line>
+    <line>of this might happen. Bu<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">t</add>
+        <del rend="strikethrough">ing</del>
+      </mod>
+      <del rend="strikethrough">du</del></line>
+    <line>through the whole period during</line>
+    <line>which I was the slave of my crea</line>
+    <line>ture I allowed myself to be govern</line>
+  </zone>
+</surface>

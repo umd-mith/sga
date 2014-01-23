@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0177" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0177.jp2"/>
+  <zone type="pagination" rend="bordered"><line>193</line></zone>
+  <zone type="library"><line>89</line></zone>
+  <zone type="main">
+    <line>and honor can<del rend="strikethrough">d</del> never willingly continue to en</line>
+    <line>dure their present hardships.</line>
+    <milestone unit="tei:p"/>
+    <line rend="right"><milestone unit="tei:date" spanTo="#c57-0177.01"/>September 7<hi rend="underline"><hi
+          rend="sup">th</hi></hi><anchor xml:id="c57-0177.01"/></line>
+    <line>The die is cast. I have consented to return if we</line>
+    <line>are not destroyed. Thus are my hopes blasted&#x2013;</line>
+    <line>by cowardice and indecision &#x2013; I come back</line>
+    <line><mod>
+        <del rend="strikethrough">bringing no new</del>
+        <add place="superlinear">ignorant</add>
+      </mod> &amp; dissa<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">p</add>
+      </mod>pointed &#x2013;It requires <mod spanTo="#c57-0177.02"/><delSpan
+        spanTo="#c57-0177.03" rend="strikethrough"/>a</line>
+    <line>great deal of<anchor xml:id="c57-0177.03"/><add place="superlinear">more</add><anchor
+        xml:id="c57-0177.02"/> philosophy <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">than I possess</add>
+      </mod> to bear this injustice</line>
+    <line>with patience &#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="right"><milestone unit="tei:date" spanTo="#c57-0177.04"/>September <mod>
+        <add place="intralinear">1</add>
+        <del rend="overwritten">7</del>
+        <add place="intralinear">2</add>
+      </mod><hi rend="underline"><hi rend="sup">th</hi></hi><anchor xml:id="c57-0177.04"/></line>
+    <line>It is past. I am returning to <mod>
+        <del rend="strikethrough">England</del>
+        <add place="superlinear" hand="#pbs">Archangel</add>
+      </mod>. I have</line>
+    <line>lost my hopes of utility &amp; glory &#x2013;I have lost</line>
+    <line>my friend. But <del rend="strikethrough">if</del> I <mod>
+        <del rend="strikethrough">am</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will</add>
+        <del rend="strikethrough">at</del>
+      </mod> endeavour</line>
+    <line>to detail the bitter circumstances to you,</line>
+    <line>my dear sister &#x2013; And while I am wafted</line>
+    <line>towards England &amp; towards you I will not</line>
+    <line>despair. <del rend="strikethrough">Sep</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">September 9<hi rend="underline"><hi rend="sup">th</hi></hi> The ice began to move</line>
+    <line>and roarings like thunder was heard</line>
+    <line>at a distance as the <mod>
+        <del rend="strikethrough">mountains</del>
+        <add place="superlinear" hand="#pbs">islands</add>
+      </mod> split</line>
+    <line>&amp; cracked in every direction. We were</line>
+    <line>in the most eminent peril &#x2013; But as we</line>
+    <line>could only remain passive my chief at</line>
+    <line>tention was <del rend="strikethrough">co</del> occupied by my unfor</line>
+    <line>tunate guest whose illness encreased to</line>
+    <line>such a degree that <del rend="strikethrough">to</del> he was entirely</line>
+    <line>confined to his bed. The ice cracked be</line>
+    <line>hind us and was driven with force</line>
+    <line>towards the north &#x2013; a bree<mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">z</add>
+      </mod>e sprung</line>
+    <line>from that quarter &#x2013;<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">and</add>
+        <add place="superlinear">on the 11<hi rend="sup">th</hi></add>
+      </mod> the passage to</line>
+    <line>wards the south <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear" hand="#pbs">became</add>
+      </mod> free <del rend="strikethrough">on th</del></line>
+    <line>When the sailors saw this &amp; that their</line>
+    <line>return towards their native country</line>
+    <line>was apparently assured a shout of</line>
+    <line>tumutuous joy broke from them</line>
+  </zone>
+</surface>

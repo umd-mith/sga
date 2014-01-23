@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+    xml:id="ox-ms_abinger_c57-0040" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0040.jp2"/>
+    <zone type="pagination" rend="bordered"><line>65</line></zone>
+    <zone type="main">
+        <line>for glory and slaughter I should have</line>
+        <line>been imbued with different sensations</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">But Paradise Lost Excited</line>
+        <line><del rend="strikethrough">in me</del> different and far deeper</line>
+        <line><mod>
+                <del rend="strikethrough">sensations</del>
+                <anchor xml:id="c57-0040.01"/>
+                <add place="superlinear">emotions</add>
+            </mod> &#x2013;I read it as I <mod>
+                <del rend="strikethrough">did</del>
+                <add place="superlinear">had </add>
+                <add place="superlinear" hand="#pbs">read</add>
+            </mod> the</line>
+        <line>other volumes which had fallen in</line>
+        <line>to my hands, as a true history. <del rend="strikethrough">and</del> It</line>
+        <line><mod>
+                <del rend="strikethrough">excited</del>
+                <anchor xml:id="c57-0040.02"/>
+            </mod> every <mod>
+                <del rend="strikethrough">feeling</del>
+                <add place="superlinear">feeling</add>
+            </mod> of wonder and</line>
+        <line>awe. <mod spanTo="#c57-0040.03"/><delSpan spanTo="#c57-0040.04"/>I deeply lamented the
+            fall</line>
+        <line>of Adam<anchor xml:id="c57-0040.04"/><add place="superlinear">that</add><anchor
+                xml:id="c57-0040.03"/>
+            <mod>
+                <del rend="overwritten">T</del>
+                <add place="intralinear">t</add>
+            </mod>he picture of an omni</line>
+        <line>potent God warring with his crea</line>
+        <line>tures was capable of exciting &#x2013; <del rend="strikethrough">often</del></line>
+        <line>I <mod>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">often</add>
+            </mod> referred the several situations</line>
+        <line>as their similarity struck me to</line>
+        <line>my own. Like Adam I <mod spanTo="#c57-0040.05"/><del next="#c57-0040.06"
+                rend="strikethrough">felt my</del><add place="superlinear">was</add></line>
+        <line><del rend="strikethrough" xml:id="c57-0040.06">self</del><anchor xml:id="c57-0040.05"
+            /> created <del rend="strikethrough">but I w</del> apparently</line>
+        <line><mod>
+                <del rend="strikethrough">desolate in my situation</del>
+                <anchor xml:id="c57-0040.07"/>
+            </mod> but</line>
+        <line>his state was different from</line>
+        <line>mine in every other respect.</line>
+        <line>He had come forth from the</line>
+        <line>hands of God a perfect creature</line>
+        <line>happy <del rend="strikethrough">&amp;</del> prosperous<mod>
+                <add place="superlinear"><metamark function="displacement" xml:id="c57-0040.11"
+                        >X</metamark></add>
+            </mod>&#x2013; but I was</line>
+        <line>wretched helpless and alone. <del rend="strikethrough" instant="true">Oft</del></line>
+        <line>Many times I considered Satan</line>
+        <line>as my fitter mate for often</line>
+        <line>like him when I viewed the</line>
+        <line>bliss of my protectors the bitter</line>
+        <line>gall of envy rose within me.</line>
+        <line><del rend="strikethrough">But I would not distrub their</del></line>
+        <line><del rend="strikethrough"><unclear unit="chars" extent="2"/>he</del>
+            <milestone unit="tei:p"/> Another circumstance</line>
+        <line>strengthened and confirmed these</line>
+        <line>feelings. <del rend="strikethrough" instant="true">I had soon a</del> Soon <del
+                rend="strikethrough" instant="true">affe</del> af</line>
+        <line>ter my arrival in the hovel I dis</line>
+    </zone>
+
+    <zone type="left_margin" corresp="#c57-0040.01">
+        <line><del rend="strikethrough"><add>feelings</add></del></line>
+    </zone>
+
+    <zone type="left_margin" corresp="#c57-0040.02">
+        <line><add>moved</add></line>
+    </zone>
+
+    <zone type="left_margin" corresp="#c57-0040.07">
+        <addSpan spanTo="#c57-0040.08"/>
+        <line>as I <del rend="strikethrough">had been</del> had been</line>
+        <line>united by no link to any</line>
+        <line>other being <mod spanTo="#c57-0040.09"/><delSpan spanTo="#c57-0040.10"
+                rend="strikethrough"/>of the</line>
+        <line>creation<anchor xml:id="c57-0040.10"/>
+            <add place="intralinear" hand="#pbs">in existence</add><anchor xml:id="c57-0040.09"
+            /></line>
+        <anchor xml:id="c57-0040.08"/>
+    </zone>
+
+    <zone type="left_margin" corresp="#c57-0040.11">
+        <addSpan spanTo="#c57-0040.12"/>
+        <line>guarded by the <del rend="strikethrough" instant="true">spe</del> es</line>
+        <line>pecial care of his</line>
+        <line>creator. <mod>
+                <del rend="strikethrough">and</del>
+                <add place="superlinear">&#x2013;he was</add>
+            </mod> allow</line>
+        <line>ed to converse &amp;</line>
+        <line>acquire knowledge</line>
+        <line>from beings of a</line>
+        <line>superior nature</line>
+        <anchor xml:id="c57-0040.12"/>
+    </zone>
+</surface>
