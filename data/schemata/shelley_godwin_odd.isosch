@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+   <title>ISO Schematron rules</title>
+   <!-- This file generated 2014-01-22T20:09:00.366+01:00 by 'extract-isosch.xsl'. -->
+
+<!-- ********************* -->
+<!-- namespaces, declared: -->
+<!-- ********************* -->
+<ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+   <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+   <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+   <ns prefix="rng" uri="http://relaxng.org/ns/structure/1.0"/>
+
+   <!-- ********************* -->
+<!-- namespaces, implicit: -->
+<!-- ********************* -->
+<ns prefix="dcr" uri="http://www.isocat.org/ns/dcr"/>
+   <ns prefix="eip-d1e3137" uri="http://shelleygodwinarchive.org/ns/1.0"/>
+   <ns prefix="eip-d1e3140" uri="http://shelleygodwinarchive.org/ns/1.0"/>
+   <ns prefix="eip-d1e3143" uri="http://shelleygodwinarchive.org/ns/1.0"/>
+   <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+
+   <!-- ************ -->
+<!-- constraints: -->
+<!-- ************ -->
+<pattern id="shelley_godwin_odd-att.datable-calendar-constraint-calendar">
+          <rule context="tei:*[@calendar]">
+            <assert test="string-length(.) gt 0">
+@calendar indicates the system or calendar to which the date represented by the content of this element
+belongs, but this <name/> element has no textual content.</assert>
+          </rule>
+        </pattern>
+   <pattern id="shelley_godwin_odd-att.typed-constraint-subtypeTyped">
+      <rule context="*[@subtype]">
+        <assert test="@type">The <name/> element should not be categorized in detail with @subtype
+ unless also categorized in general with @type</assert>
+      </rule>
+    </pattern>
+   <pattern id="shelley_godwin_odd-att.pointing-targetLang-constraint-targetLang">
+          <rule context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
+            <assert test="count(@target)">@targetLang can only be used if @target is specified.</assert>
+          </rule>
+        </pattern>
+   <pattern id="shelley_godwin_odd-att.spanning-spanTo-constraint-spanTo-2">
+          <rule context="tei:*[@spanTo]">
+            <assert test="id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)]">
+The element indicated by @spanTo (<value-of select="@spanTo"/>) must follow the current element <name/>
+                  </assert>
+          </rule>
+        </pattern>
+   <pattern id="shelley_godwin_odd-att.styleDef-schemeVersion-constraint-schemeVersionRequiresScheme">
+          <rule context="tei:*[@schemeVersion]">
+            <assert test="@scheme and not(@scheme = 'free')">
+              @schemeVersion can only be used if @scheme is specified.
+            </assert>
+          </rule>
+        </pattern>
+   <pattern id="shelley_godwin_odd-ptr-constraint-ptrAtts">
+      <rule context="tei:ptr">
+         <report test="@target and @cRef">Only one of the
+attributes @target and @cRef may be supplied on <name/>.</report>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-ref-constraint-refAtts">
+      <rule context="tei:ref">
+         <report test="@target and @cRef">Only one of the
+	attributes @target' and @cRef' may be supplied on <name/>
+         </report>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-relatedItem-constraint-targetorcontent1">
+      <rule context="tei:relatedItem">
+         <report test="@target and count( child::* ) &gt; 0">
+If the @target attribute on <name/> is used, the
+relatedItem element must be empty</report>
+         <assert test="@target or child::*">A relatedItem element should have either a 'target' attribute
+        or a child element to indicate the related bibliographic item</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-addSpan-constraint-spanTo">
+      <rule context="tei:addSpan">
+         <assert test="@spanTo">The spanTo= attribute of <name/> is required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-damageSpan-constraint-spanTo">
+      <rule context="tei:damageSpan">
+         <assert test="@spanTo">
+The @spanTo attribute of <name/> is required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-delSpan-constraint-spanTo">
+      <rule context="tei:delSpan">
+         <assert test="@spanTo">The spanTo= attribute of <name/> is required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-subst-constraint-substContents1">
+      <rule context="tei:subst">
+         <assert test="child::tei:add and child::tei:del">
+            <name/> must have at least one child add and at least one child del</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-mod-constraint-modContents">
+      <rule context="tei:mod">
+         <assert test="count(node()) gt 1">The mod element is
+                                        intended to group a series of related changes to the
+                                        manuscript. Thus, mod must have more than one child
+                                        element. If only a single addition or deletion is being
+                                        encoded, mod is not required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-link-constraint-linkTargets3">
+      <rule context="tei:link">
+         <assert test="contains(@target,' ')">You must supply at least two values for  @target or @targets on <name/>
+         </assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-join-constraint-joinTargets3">
+      <rule context="tei:join">
+         <assert test="contains(@target,' ')">
+You must supply at least two values for @target on <name/>
+         </assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-quotation-constraint-quotationContents">
+      <rule context="tei:quotation">
+         <report test="not(@marks) and not (tei:p)">
+On <name/>, either the @marks attribute should be used, or a paragraph of description provided</report>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-dimensions-constraint-duplicateDim">
+      <rule context="tei:dimensions">
+         <report test="count(tei:width)&gt; 1">
+The element <name/> may appear once only
+      </report>
+         <report test="count(tei:height)&gt; 1">
+The element <name/> may appear once only
+      </report>
+         <report test="count(tei:depth)&gt; 1">
+The element <name/> may appear once only
+      </report>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-msIdentifier-constraint-msId_minimal">
+      <rule context="tei:msIdentifier">
+         <report test="not(parent::tei:msPart) and       (local-name(*[1])='idno' or       local-name(*[1])='altIdentifier' or       normalize-space(.)='')">An msIdentifier must contain either a repository or location of some type, or a manuscript name</report>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-relation-constraint-reforkeyorname">
+      <rule context="tei:relation">
+         <assert test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-relation-constraint-activemutual">
+      <rule context="tei:relation">
+         <report test="@active and @mutual">Only one of the attributes
+@active and @mutual may be supplied</report>
+      </rule>
+   </pattern>
+   <pattern id="shelley_godwin_odd-relation-constraint-activepassive">
+      <rule context="tei:relation">
+         <report test="@passive and not(@active)">the attribute 'passive'
+	may be supplied only if the attribute 'active' is
+	supplied</report>
+      </rule>
+   </pattern>
+
+   <!-- *********** -->
+<!-- deprecated: -->
+<!-- *********** -->
+<pattern>
+      <rule context="tei:quotation">
+         <report test="@form" role="nonfatal">WARNING: use of deprecated attribute — @form of the quotation element will be removed from the TEI on 2014-04-28.
+                </report>
+      </rule>
+   </pattern>
+   <pattern>
+      <rule context="tei:relationGrp">
+         <report test="true()" role="nonfatal">
+                  WARNING: use of deprecated element — The <name/> element will be removed from the TEI on 2014-06-17. 
+                </report>
+      </rule>
+   </pattern>
+</schema>

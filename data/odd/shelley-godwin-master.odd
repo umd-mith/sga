@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../derivatives/brown_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../derivatives/brown_odds.isosch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:ge="http://www.tei-c.org/ns/geneticEditions">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Shelley Godwin Archive Customization</title>
+        <author xml:id="tmunoz">Trevor Muñoz</author>
+        <author xml:id="rviglian">Raffaele Viglianti</author>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>Shelley Godwin Archive (via website)</distributor>
+        <address>
+          <addrLine>mith@umd.edu</addrLine>
+        </address>
+        <date when="2011-10-17">October 17, 2011</date>
+        <availability status="restricted">
+          <p>This work is copyright Trevor Muñoz, Raffaele Viglianti, and Maryland Institute for Technology in the
+            Humanities and licensed under a <ref
+              target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0
+              Unported License</ref>.</p>
+        </availability>
+        <pubPlace>College Park, MD USA</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Based on <name type="file">geneticTEI.xml</name>, which can be found <ref
+            target="http://tei.svn.sourceforge.net/viewvc/tei/trunk/P5/">Sourceforge</ref>.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change who="tmunoz" when="2011-10-16">First draft</change>
+      <change who="tmunoz" when="2011-11-14">Temporarily removing Genetic Editions stuff</change>
+      <change who="tmunoz" when="2011-11-21">Making additional header elements required</change>
+      <change who="rviglian" when="2014-01-21">Restructured to validate master files (metadata + xinlcluded content)</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Rationale</head>
+        <p>To be added</p>
+      </div>
+      <div>
+        <head>Shelley Godwin ODD</head>
+        <p>The prefix in this schema stands for <expan>Shelley Godwin Archive</expan>, the project
+          for which this customization was developed.</p>
+        <schemaSpec ident="shelley_godwin_odd" prefix="sga" start="TEI">
+
+          <xi:include href="shelley-godwin-page.odd" xpointer="modules"/>
+          <xi:include href="shelley-godwin-page.odd" xpointer="mainSpec"/>
+          
+          <specGrpRef target="#modules"/>
+          <moduleRef key="core"
+            except="abbr analytic biblScope biblStruct 
+            binaryObject cb choice cit distinct divGen editor email expan gb gloss 
+            head headItem headLabel imprint l label lb listBibl lg measure 
+            meeting mentioned monogr pb postBox postCode publisher 
+            q quote said series soCalled sp street teiCorpus textLang time sic corr reg orig"/>
+          <moduleRef key="header"/>
+          <moduleRef key="textstructure"/>
+          <moduleRef key="msdescription"/>
+          <moduleRef key="namesdates"/>
+          <specGrpRef target="#mainSpec"/>
+
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>
