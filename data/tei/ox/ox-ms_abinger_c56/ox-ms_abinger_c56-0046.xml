@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0046" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0046.jp2"/>
+  <zone type="pagination" rend="bordered"><line>76</line></zone>
+  <zone type="main">
+    <line>his shrivelled complexion and strait</line>
+    <line>black lips.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The different accidents of life are</line>
+    <line>not so changeable as the feelings of hu</line>
+    <line>man nature. I had worked hard for</line>
+    <line>nearly two years for the sole purpose</line>
+    <line>of infusing <del rend="strikethrough">f</del> life into an inanimate</line>
+    <line>body. For this I had deprived m<retrace cause="clarify">y</retrace>self of</line>
+    <line>rest and <del rend="strikethrough">heath</del> health. I had desired</line>
+    <line>it with an ardour that far exceed<add place="intralinear" hand="#pbs">ed</add></line>
+    <line>moderation; but now that I had succeed</line>
+    <line>ed these dreams vanished and breathless</line>
+    <line>horror and disgust filled my heart.</line>
+    <line>Unable <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to endure</add>
+      </mod> the aspect of the <mod>
+        <del rend="strikethrough">creature</del>
+        <add place="superlinear" hand="#pbs">being</add>
+      </mod> I</line>
+    <line>had created, I rushed out of the room and</line>
+    <line><mod>
+        <del rend="strikethrough">remained</del>
+        <add place="superlinear" hand="#pbs">continued</add>
+      </mod> a long time traversing my</line>
+    <line>bed chamber unable to compose my</line>
+    <line>mind to sleep. At lenght <mod>
+        <del rend="overwritten"><unclear>s</unclear></del>
+        <add place="intralinear">l</add>
+      </mod>assitude</line>
+    <line>succeeded to the tumult I had before</line>
+    <line>endured, and I threw myself on my</line>
+    <line>bed in my clothes endeavouring to seek</line>
+    <line>a <del rend="strikethrough">feew</del> few moments of forgetfullness.</line>
+    <line>But it was in vain; I slept indeed but</line>
+    <line><damage type="inkblot">I</damage> was disturbed by the wildest dreams&#x2013;</line>
+    <line>I saw Elizabeth <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in the bloom of health</add>
+      </mod> walking in the streets of</line>
+    <line>Ingolstadt; delighted &#x26; surprised I embraced</line>
+    <line>her but as I imprinted the first kiss</line>
+    <line>on her lips they became lurid with</line>
+    <line>the hue of death; her features appeared</line>
+  </zone>
+</surface>

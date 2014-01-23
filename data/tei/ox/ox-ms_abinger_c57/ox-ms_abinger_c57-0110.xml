@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0110" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0110.jp2"/>
+  <zone type="pagination" rend="bordered"><line>126</line></zone>
+  <zone type="main">
+    <line>year had <mod>
+        <del rend="strikethrough">passed</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">elapsed</add>
+      </mod> since we had quitted Switzerland</line>
+    <line>and France was yet unvisited. He entreated me</line>
+    <line>therefore to <del rend="strikethrough">return</del> leave my solitary isle</line>
+    <line>and meet him at Perth in a week from that</line>
+    <line>time when we might arrange <del rend="strikethrough">our</del> the plan</line>
+    <line>of our future proceedings. This letter complete</line>
+    <line>ly recalled <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> to life &amp; I determined to quit my</line>
+    <line>island <del rend="strikethrough">the next day</del>. at the expiration of two days</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Yet before I departed there was a task</line>
+    <line>to perform on which I shuddered to <mod spanTo="#c57-0110.01"/><del
+        rend="strikethrough">think</del></line>
+    <line><anchor xml:id="c57-0110.02"/><anchor xml:id="c57-0110.01"/>I must pack my
+      chemical instruments</line>
+    <line>&amp; for that purpose I must enter the room</line>
+    <line>which had been the scene of my odious</line>
+    <line>work,<add place="superlinear">&amp;</add> I must handle the utensils the sight</line>
+    <line>of which were sickening to me. The</line>
+    <line>next morning at daybreak I summoned</line>
+    <line>sufficient courage &amp; unlocked the door</line>
+    <line>of my work room &#x2013; The remains of the half fi</line>
+    <line>nished creature whom I had destroyed lay</line>
+    <line>scattered on the floor &#x2013; &amp; I almost felt as</line>
+    <line>if I <add hand="#pbs" place="superlinear">had</add> mangled the living flesh of a
+      human</line>
+    <line>being. I paused to collect myself &amp; then</line>
+    <line>entered the chamber. With trembling hands</line>
+    <line>I conveyed the instruments out of the room</line>
+    <line>but I reflected that I ought not to leave</line>
+    <line>the relicks of my work to excite the horror</line>
+    <line><add place="superlinear" hand="#pbs">&amp; suspicion </add>of the peasants and I
+      accordingly put them</line>
+    <line>into a basket with a great quantity of</line>
+    <line>stones and tying it up determined to throw</line>
+    <line>them into the sea that very night and</line>
+    <line>in the mean time <add place="intralinear">I</add> sat on the beach em-</line>
+    <line>ployed in cleaning &amp; arranging my chemical</line>
+    <line>apparatus.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Nothing <del rend="strikethrough">w</del> could be more
+      complete than</line>
+    <line>the alteration that had taken place in</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0110.02">
+    <line><add>reflect: </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0095" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0095.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>111</line>
+  </zone>
+  <zone type="library">
+    <line>48</line>
+  </zone>
+  <zone type="main">
+    <line>Many enormities are also practised which</line>
+    <line>although they might excite the laughter</line>
+    <line>of a stranger were looked upon in the</line>
+    <line><anchor xml:id="c57-0095.01"/>university as matters of the utmost</line>
+    <line>consequence. Some of the gentlemen obsti</line>
+    <line>nately wore light coloured pantaloons</line>
+    <line>when it was the rule of the colledge to</line>
+    <line>wear dark: <mod>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">t</add>
+      </mod>he masters were angry</line>
+    <line>&amp; their sc<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">h</add>
+      </mod>olar<del rend="strikethrough">d</del>s resolute so that <mod spanTo="#c57-0095.05"
+        /><delSpan spanTo="#c57-0095.02" rend="strikethrough"/>while</line>
+    <line>we were there<anchor xml:id="c57-0095.02"/><anchor xml:id="c57-0095.03"/><anchor
+        xml:id="c57-0095.05"/> two of the students were</line>
+    <line>on the point of being expelled on th<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">is</add>
+      </mod></line>
+    <line>very question. The th<mod>
+        <del rend="overwritten"><unclear>e</unclear></del>
+        <add place="intralinear">r</add>
+      </mod>eatened severity</line>
+    <line>caused a considerable change in the</line>
+    <line>costume of the gentlemen for seve</line>
+    <line>ral days.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Such, to our infinite astonishment,</line>
+    <line>we found to be the principal topic</line>
+    <line>of conversation when we arrived in</line>
+    <line>the town. Our minds had been filled</line>
+    <line>with the remembrance of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod> events that</line>
+    <line>had been transacted here above</line>
+    <line><anchor xml:id="c57-0095.04"/><del rend="strikethrough">a</del> centur<mod>
+        <del rend="overwritten">y</del>
+        <add place="intralinear"><mod>
+            <del rend="overwritten">ie</del>
+            <add place="intralinear" hand="#pbs">y</add>
+          </mod>s</add>
+      </mod>
+      <add place="superlinear" hand="#pbs">&amp; a half</add> before. It was here that
+      Charles</line>
+    <line>I had collected his forces; this town had</line>
+    <line>been faithful to him when the whole</line>
+    <line>nation had forsaken him to join the</line>
+    <line>standard of parliament &amp; liberty.</line>
+    <line>It was strange to us <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">as we</add>
+      </mod> enter<mod>
+        <del rend="overwritten">ing</del>
+        <add place="intralinear" hand="#pbs">ed</add>
+      </mod> in the town</line>
+    <line><del rend="strikethrough">full of the</del> our thoughts <mod>
+        <del rend="strikethrough">co</del>
+        <add hand="#pbs" place="superlinear">were</add>
+      </mod> occupied</line>
+    <line>by the memory th<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">e</add>
+        <del rend="strikethrough">t</del>
+      </mod> unfortunate king,</line>
+    <line>the amiable Falkland and the insolent</line>
+    <line>Gower <mod>
+        <del rend="strikethrough">and finding</del>
+        <add place="superlinear" hand="#pbs">but we found</add>
+      </mod> it filled with</line>
+    <line><del rend="strikethrough">gown</del> gownsmen &amp; students who think</line>
+    <line>of nothing less than these events. Yet</line>
+    <line>there are some relics to remind you</line>
+    <line>of antient times; Among others we regarded</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0095.01">
+    <line><add>world of the </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0095.03">
+    <line><add hand="#pbs">during our stay</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0095.04">
+    <line><del rend="strikethrough"><add>two </add></del></line>
+  </zone>
+</surface>

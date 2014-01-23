@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0048" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0048.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>73</line>
+  </zone>
+  <zone type="main">
+    <line>They are kind&#x2013; I answered&#x2013; They are the most</line>
+    <line><mod>
+        <del rend="strikethrough">amiable</del>
+        <add place="superlinear">excelle<retrace cause="clarify">nt</retrace></add>
+      </mod> creatures in the world but unfortu</line>
+    <line>nately they are prejudiced against me. I</line>
+    <line>have good dispositions &#x2013;I love virtue and</line>
+    <line><del rend="strikethrough">detest</del> knowledge, &#x2013;my life has been hitherto</line>
+    <line>harmless &amp; in some degree beneficial</line>
+    <line>but a fatal prejudice clouds their eyes</line>
+    <line>and where they ought to see a feeling</line>
+    <line>and kind friend, they behold only a detes</line>
+    <line>table monster.&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">That is indeed unfortunate, replied</line>
+    <line>De Lacey&#x2013; but if you are really blameless can</line>
+    <line>not you undeceive them?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><mod>
+        <del rend="strikethrough">This is</del>
+        <del rend="strikethrough">That is</del>
+        <add place="superlinear"><del rend="strikethrough">the task</del>
+          <del rend="strikethrough">that</del></add>
+        <del rend="strikethrough">what</del>
+      </mod> I <mod>
+        <mod>
+          <del rend="strikethrough">am</del>
+          <del rend="strikethrough"><add place="superlinear">shall</add></del>
+        </mod>
+        <mod>
+          <del rend="strikethrough">goin</del>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear">am about</add>
+        </mod>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">endeavouring</del>
+        <anchor xml:id="c57-0048.01"/>
+        <add place="superlinear">that task</add>
+      </mod> &#x2014; <del rend="strikethrough">said I</del> "And it is on that</line>
+    <line>account that I feel so many overwhelming</line>
+    <line>terrors&#x2014;I love these friends tenderly; <delSpan spanTo="#c57-0048.02"
+        rend="strikethrough"/>for many</line>
+    <line>months<anchor xml:id="c57-0048.02"/> I have <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikekthrough"><add place="superlinear">for many months</add></del>
+      </mod> unknown to them been</line>
+    <line><anchor xml:id="c57-0002.03"/>in the habits of daily kindness towards them,</line>
+    <line>but they believe that I wish to injure</line>
+    <line>them and it is that prejudice which</line>
+    <line>I wish to over come.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Where do these friends reside, said de</line>
+    <line>Lacey &#x2014; <del rend="strikethrough">N</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Near here. <mod>
+        <del rend="strikethrough">I replied</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">on</add>
+        <add place="superlinear">this spot.</add>
+      </mod><add place="intralinear"><metamark function="paragraph">[</metamark></add><milestone
+        unit="tei:p"/>The old man</line>
+    <line>paused a moment and then continued</line>
+    <line>If you will unreservedly confide to me</line>
+    <line>the particulars I perhaps may be of use</line>
+    <line>in undeceiving them. I am blind and</line>
+    <line>cannot judge of your cou<damage type="inkblot">ntenan</damage>ce but</line>
+    <line>there is somthing in your words <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod></line>
+    <line><damage type="inkblot">persuad</damage>es me that you are sincere.</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0048.01">
+    <line><add>to undertake </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0002.03">
+    <line><add>for many months </add></line>
+  </zone>
+</surface>

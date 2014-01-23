@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0171" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0171.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>187</line>
+  </zone>
+  <zone type="main">
+    <line>my speculations &amp; hopes are as nothing and like the</line>
+    <line>Archangel who aspired to omnipotence I am <del rend="strikethrough">now</del></line>
+    <line>chained in an eternal hell. My imagination</line>
+    <line>was vivid yet my <del rend="strikethrough">app</del> powers of application were in-</line>
+    <line>tense &#x2013; by the union of these qualities I <del rend="strikethrough">ex</del>
+      conceived</line>
+    <line>the idea and executed the <del rend="strikethrough" instant="true">desig</del> creation of
+      a man&#x2013;</line>
+    <line>Even now I cannot recollect without passion</line>
+    <line>my reveries while the work was incomplete &#x2013;I</line>
+    <line>trod heaven in my thoughts &#x2013; now exulting</line>
+    <line>in my powers &#x2013; now <del rend="strikethrough" instant="true">wi</del> burning with
+      the idea</line>
+    <line>of their consequen<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">c</add>
+      </mod>es. From my infancy I was</line>
+    <line>imbued with high hopes and a lofty ambition</line>
+    <line>but how am I sunk &#x2013; Oh my friend &#x2013; if you had</line>
+    <line>know<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod> me as I once was <del rend="strikethrough">who</del> you would</line>
+    <line>not recognize me <del rend="strikethrough">even</del> in this <mod>
+        <del rend="strikethrough">misery</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">state of <del rend="strikethrough" instant="true">dgr</del>
+          degradation</add>
+      </mod> Despon</line>
+    <line>dancy rarely visited my heart a high destiny</line>
+    <line>seemed to bear me on, untill I fe<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">l</add>
+      </mod>l oh, never</line>
+    <line>never <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">again</add>
+      </mod> to rise" <del rend="strikethrough">again</del>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Must I lose this <mod>
+        <del rend="strikethrough">creature</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">admirable being</add>
+      </mod>? I have</line>
+    <line>longed for a friend, <add hand="#pbs" place="superlinear">I have sought</add> one who
+      would sympathize</line>
+    <line>with &amp; love me. Behold on these desart seas</line>
+    <line>I have found <mod>
+        <del rend="strikethrough">one</del>
+        <add place="superlinear" hand="#pbs">such an one</add>
+      </mod> &#x2013; but I fear I <add place="superlinear" hand="#pbs">have</add> gained him</line>
+    <line>but to know his value &amp; lose him &#x2013;I would</line>
+    <line>reconcile him with life but he repulses the</line>
+    <line>thought. "I thank you," Walton," he said, <delSpan spanTo="#c57-0171.01"
+        rend="strikethrough"/>but</line>
+    <line>When<anchor xml:id="c57-0171.01"/> for your kind intentions towards so</line>
+    <line>miserable a wretch &#x2013; but when you speak</line>
+    <line>of new <mod>
+        <del rend="strikethrough">connections</del>
+        <add place="superlinear">ties and</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">think</del>
+        <add place="superlinear" hand="#pbs">fresh</add>
+      </mod> affections think <add hand="#pbs" place="superlinear">you that</add> any</line>
+    <line>can replace those <mod>
+        <del rend="strikethrough">I have lost</del>
+        <del rend="unmarked">.</del>
+        <add place="superlinear" hand="#pbs">which are gone?</add>
+      </mod> Can any man</line>
+    <line>be to me as Clerval was or any woman ano</line>
+    <line>ther Elizabeth. Even where the affections are</line>
+    <line>not strongly moved by any superior excel</line>
+    <line>lence the companions of our childhood al</line>
+  </zone>
+</surface>

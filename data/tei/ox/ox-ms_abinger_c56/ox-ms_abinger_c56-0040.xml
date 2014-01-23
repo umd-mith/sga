@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0040" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0040.jp2"/>
+  <zone type="pagination" rend="bordered"><line>70</line></zone>
+  <zone type="main">
+    <line>it impossible) renew life where</line>
+    <line>death had apparently devoted the</line>
+    <line>body to corruption.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">These thoughts supported my</line>
+    <line>spirits while I pursued my <mod>
+        <del rend="strikethrough">labours</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">undertaking</add>
+      </mod></line>
+    <line>with unremitting <mod>
+        <del rend="strikethrough">eagerness</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">ardour</add>
+      </mod>. My cheek</line>
+    <line><mod>
+        <del rend="strikethrough">was</del>
+        <anchor xml:id="c56-0040.01"/>
+      </mod> pale with study, and <del rend="strikethrough">pe</del> my person</line>
+    <line><anchor xml:id="c56-0040.02"/>emaciated by confinement. sometimes</line>
+    <line>on the very brink of certainty I faild</line>
+    <line>yet I still clung to the hope which</line>
+    <line>the next day or the <del rend="strikethrough">nexhour</del> next</line>
+    <line>hour might realize. One secret</line>
+    <line>which I alone <mod>
+        <del rend="strikethrough">knew</del>
+        <add place="superlinear">possessed</add>
+      </mod> was the hope</line>
+    <line>to which I clung and the moon</line>
+    <line>gazed on my midnight labours</line>
+    <line>while with unrelaxed &#x26; breathless</line>
+    <line>eagerness I pursued nature to her</line>
+    <line>most secret hiding places<del rend="strikethrough">. But</del></line>
+    <line>who shall <mod>
+        <del rend="strikethrough">know</del>
+        <del rend="strikethrough">my</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">concieve the horrors of my</add>
+      </mod> secret <mod>
+        <del rend="strikethrough">operatio</del>
+        <del rend="unmarked">ns</del>
+        <add place="superlinear" hand="#pbs">toil</add>
+      </mod></line>
+    <line>as I dabbled among the unhallowed</line>
+    <line>damps of the grave, or tortured the</line>
+    <line>living <del rend="strikethrough">animate to ani</del> animal to</line>
+    <line>animate <mod>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> lifeless clay? <del rend="strikethrough">Now</del> my limbs</line>
+    <line><anchor xml:id="c56-0040.03"/> tremble and my eyes swim with the</line>
+    <line>rememberance, but then a resistless</line>
+    <line>and <del rend="strikethrough">all</del> almost frantic<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">impulse</add>
+      </mod> urged me</line>
+    <line><mod>
+        <del rend="strikethrough">on</del>
+        <anchor xml:id="c56-0040.04"/>
+      </mod>; I seemed to have lost all</line>
+    <line>soul or sensation but for one</line>
+    <line>pursuit. It was indeed a passing trance</line>
+    <line>that only made me feel with renew</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0040.01">
+    <line><add hand="#pbs">had grown</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0040.02">
+    <line><add hand="#pbs">became</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0040.03">
+    <line><add hand="#pbs">now</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0040.04">
+    <line><add hand="#pbs">forward</add></line>
+  </zone>
+</surface>

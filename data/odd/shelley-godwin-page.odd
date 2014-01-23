@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../derivatives/brown_odds.isosch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+    xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Encoding Guidelines</title>
+                <author>
+                    <persName xml:id="tmunoz">Trevor Mu&#241;oz</persName>
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>The Maryland Institute for Technology in the Humanites
+                    (MITH)</distributor>
+                <address>
+                    <addrLine>mith@umd.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>This work is copyright Trevor Mu&#241;oz and Maryland Institute for
+                        Technology in the Humanities and licensed under a <ref
+                            target="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+                            Attribution 3.0 Unported License</ref>.</p>
+                </availability>
+                <pubPlace>College Park, MD USA</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2012-02-08" who="tmunoz">Created this separate ODD to govern page-level
+                markup</change>
+            <change when="2012-02-12" who="tmunoz">Began adding prose documentation about
+                workflow</change>
+            <change when="2012-02-14" who="tmunoz">Finished section on workflow</change>
+            <change when="2012-02-16" who="tmunoz">Revision of workflow section</change>
+            <change when="2012-02-17" who="tmunoz">Finished quick overview of basic
+                principles.</change>
+            <change when="2012-03-04" who="tmunoz">Adding documentation about dividing pages into
+                zones</change>
+            <change when="2012-03-24" who="tmunoz">Removed about 40 unused elements</change>
+            <change when="2012-05-15" who="tmunoz">Added some schematron tests</change>
+            <change when="2014-01-21" who="rviglian">Grouped main specs for inclusion in master ODD. Reintroduced xml:base, removed duplicate @target on metamark</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <div xml:id="intro">
+                <head type="section">General introduction</head>
+                <p>The encoding model developed for the <expan>Shelley-Godwin Archive</expan>
+                        (<abbr>SGA</abbr>) project and described in this document is intended to
+                    support the creation of diplomatic edition by providing an XML format for
+                    electronic transcriptions which reproduce a set of key characteristics of the
+                    original, physical documents as faithfully as possible. The goal of
+                    transcription is to accurately describe the state of the physical materials
+                    using the most efficient amount of markup.</p>
+            </div>
+            <div xml:id="git-workflow">
+                <head type="section">Project mechanics: using version control</head>
+                <p>The Shelley-Godwin Archive (SGA) uses the <ref
+                        target="http://en.wikipedia.org/wiki/Git_(software)">Git</ref> version
+                    control system to manage all files associated with transcriptions created for
+                    the project. Since SGA is using Git, we also use <ref
+                        target="https://github.com/">Github</ref>, a hosted service for Git projects
+                    which incorporates many useful project management features, to manage the
+                    transcription and encoding workflow. The rest of this section briefly describes
+                    how to use Git and Github to prepare transcriptions for the Archive.</p>
+
+                <p>You will need: a web browser, the <term>oXygen</term> XML editor, and a Terminal
+                    window or Git client (e.g., <term>Github for Mac</term>)</p>
+
+                <list>
+                    <head><hi rend="bold">In a web browser</hi> ...</head>
+                    <item>Visit the Github page for the Shelley-Godwin Archive data and navigate to
+                        the <ref target="../assets/img/issues_tab.png">Issues tab</ref>.</item>
+                    <item>Select an open issue from the list to work on. Each ticket represents a
+                        page to be transcribed.</item>
+                    <item>Assign the issue to yourself using the <ref
+                            target="../assets/img/assignment_menu.png">small gear icon below the
+                            issue title</ref>. Add a comment to the issue to indicate when you
+                        started working. For example <q>Started transcription on 2012-02-13.</q>
+                        (Using machine readable dates is a nice convenience for us scanning the logs
+                        so please try to remember to use them.)</item>
+                    <item>The issue ticket has a link to the page image you can use for
+                        transcription and to the stub TEI file for that page image that has already
+                        been created.</item>
+                    <item>You may want to open the page image in a browser window but don't open the
+                        TEI file yet.</item>
+                    <item>Exception: if the page image contains no text at all (e.g., it's an image
+                        of the cover, or a completely blank page) then you can edit the TEI file
+                        right in the web interface using the <q>Edit this file</q> button. All you
+                        need to do is add a &lt;desc&gt; element describing the content, e.g. "Front
+                        cover." Otherwise, follow the instructions below.</item>
+                </list>
+
+                <list>
+                    <head><hi rend="bold">In a terminal session</hi>... (You can also use a git
+                        client but all examples assume you are working on the command line)</head>
+                    <item>Make sure you are in the top-level of the project directory in your local
+                        clone of repository. Make sure you are on the <q>master</q> branch. If
+                        you're not sure you can type: <code>$git branch</code>, which will display a
+                        list of all the branches. There should be an asterisk next to master if
+                        that's the active branch.</item>
+                    <item>Create a branch to hold your work. You could name this anything you want,
+                        but for convenience, name your branch with your Github username and the
+                        number of the image (from the filename): e.g., <code>$git branch
+                            trevormunoz&#8209;0001</code></item>
+                    <item>Switch to working on the branch you just created. In Git terminology this
+                        is called a <q>checkout</q>. So, <code>$git&#xa0; checkout&#xa0;
+                            trevormunoz&#8209;0001</code></item>
+                    <item>Making sure that you are now on the branch you created, open the TEI file
+                        and transcribe what you see on the page (more on that below).</item>
+                    <item/>
+                </list>
+
+                <p>As you work, please take advantage of Git as a version control system to help
+                    you. You can (and should) commit frequently and even push to the remote copy of
+                    your branch. This is akin to saving your work.</p>
+
+                <p>A note on git commits and commit messages. A commit is like a snapshot of your
+                    working directory. If you can think about your work in relatively atomic kind of
+                    units this will help guide you in understanding when or how often to commit.
+                    When you commit, Git will ask you to supply a short message describing the
+                    changes you're committing. For your own benefit later on as well as for the sake
+                    of everyone else on the project who might be trying to review your work, please
+                    make your commit messages concise but descriptive.</p>
+
+                <list>
+                    <head><hi rend="bold">When you've completed your transcription of a file</hi>
+                        ...</head>
+                    <item>Make sure you have committed and pushed the last of your changes to the
+                        file on your branch. Note: to push to your branch, you will need to modify
+                        the command: e.g.,
+                            <code>$git&#xa0;push&#xa0;origin&#xa0;trevormunoz&#8209;0001</code>
+                        instead of <code>$git&#xa0;push&#xa0;origin&#xa0;master</code>.</item>
+                    <item>Using your browser, return to the Shelley-Godwin Archive Github page.
+                        Select your branch from <ref target="../assets/img/branches_menu.png">the
+                            dropdown menu</ref> (this is like doing a checkout in the graphical user
+                        interface).</item>
+                    <item>Issue a pull request by clicking on <ref
+                            target="../assets/img/pull_request.png">pull request button</ref>. This
+                        will take you to a new page where you can fill in more information about the
+                        request. You'll see that your last commit message is already pre-populated
+                        as the subject line.</item>
+                    <item>Please make sure the sequence number for the page is included in the title
+                        of pull request so that requests related to different pages are easier to
+                        distinguish from each other, e.g., <q>First pass transcription of
+                            c56-0016</q>. In the body of the message for the pull request, please
+                        reference the issue number relating to this page, e.g. <q>This request
+                            relates to Issue #50</q>. Feel free to add any other details or
+                        questions about the encoding to the body of the message as well.</item>
+                    <item>Click submit.</item>
+                    <item>You're done! Someone from the editorial team will review your
+                        transcriptions, merge your branch back into the master, and close the
+                        relevant issue.</item>
+                    <item>Once you've received a message indicating that your transcription has been
+                        merged and the relevant issue closed, you will need to do a little cleanup
+                        in your local copy of the repository. Specifically you will need to delete
+                        the branch you made above. To do this, you will need to be on the master
+                        branch. Then make sure your copy is up-to-date by issuing:
+                            <code>$git&#xa0;pull</code>. Finally, delete the branch both locally and
+                        in the remote copy of the repository:
+                            <code>$git&#xa0;branch&#xa0;-d&#xa0;trevormunoz&#8209;0001</code> (this
+                        takes care of your local version), then
+                            <code>$git&#xa0;push&#xa0;origin&#xa0;&#8209;&#8209;delete&#xa0;trevormunoz&#8209;0001</code>
+                    </item>
+                </list>
+
+                <list>
+                    <head><hi rend="bold">Warning: while the schemas for the project are still under
+                            development</hi> ...</head>
+                    <item>Document analysis and modeling is an ongoing process</item>
+                    <item>During the early stages of encoding, the schemas for the project may
+                        change in a number of ways: elements and attributes might be added or
+                        removed, content models of elements might change, project conventions for
+                        encoding certain features might be updated. Please be patient and
+                        flexible.</item>
+                    <item>Changes may occur while you are working on transcriptions in a separate
+                        branch of the repository. In that case, you will need to apply
+                            <q>patches</q> from the master branch to your branch in order for your
+                        files to validate correctly. Someone from the editorial team will let you
+                        know if you need to do this.</item>
+                    <item>To patch, you will issue the following command (from your branch):
+                            <code>$git&#xa0;checkout&#xa0;master&#xa0;&#8209;&#8209;&#xa0;data/derivatives/shelley&#8209;godwin&#8209;page.rnc</code></item>
+                    <item>This will apply the changes to the schema file that have been committed on
+                        the master branch to your branch. This means your working copy will have
+                        changed and you should commit, indicating that you are applying a patch from
+                        the master branch</item>
+                    <item>Carry on transcribing.</item>
+                </list>
+            </div>
+            <div xml:id="structural_overview">
+                <head>Structural overview</head>
+                <p>The encoding of documents for SGA privileges recording information about the
+                    physical document rather than about a <q> text.</q></p>
+                <p>SGA's model assumes that the transcription of a single physical page of source
+                    material is contained in a separate XML file. The project provides a custom
+                    schema for validating these page-level transcription files for the convenience
+                    of encoders and reviewers.</p>
+                <p>A complete SGA document is a TEI-conformant XML document in which a single
+                        <tag>sourceDoc</tag> represents a physical item and contains all the
+                    information from transcriptions of pages from that item.</p>
+                <div xml:id="page_outline">
+                    <head>Outline of a page-level transcription</head>
+                    <p>The structure of an XML file containing a transcription of a single page in
+                        accordance with the SGA encoding model can be summarized as follows:</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                        xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <surface xmlns:ns1="http://shelleygodwinarchive.org/ns/1.0" xml:id="page_identifier"
+                            ulx="0" uly="0" lrx="4038" lry="5320"
+                            partOf="pointer_to_item_identifier">
+                            <graphic url="pointer_to_img_url"/>
+                            <zone>[Transcription of one two-dimensional area within a
+                                surface]</zone>
+                            <zone>
+                                <milestone/>
+                                <line>[Transcription of a physical line of the document]</line>
+                            </zone>
+                        </surface>
+                    </egXML>
+                    <p>There are a couple high-level features about this document to note. First,
+                        the <att>ulx</att>, <att>uly</att>, <att>lrx</att>, and <att>lry</att>
+                        attributes define the coordinates of the upper-left and lower-right corners
+                        of the surface (in pixels). These values will be supplied when the TEI stub
+                        file is created as part of pre-processing of images before transcription
+                        begins. Second, the <att>partOf</att> attribute is provided to link a
+                        page-level transcription with the item to which it belongs. Supply the value
+                        of the <att>xml:id</att> of the appropriate <tag>sourceDoc</tag> element.
+                        (See project file naming conventions to decide what this is.)</p>
+                </div>
+                <div xml:id="document_vs_text">
+                    <head>Document-centric markup vs. text-centric markup</head>
+                    <p>The SGA project privileges the structures of the physical document as the
+                        principal hierarchy to be encoded rather than one related to the logical
+                        hierarchy of <q>a text</q>. </p>
+                    <div xml:id="surfaces">
+                        <head>The <tag>surface</tag> element</head>
+                        <p>The outermost element in a page-level transcription file is
+                                <tag>surface</tag>, which represents the page being transcribed.</p>
+                        <p>Within <tag>surface</tag>, if the page is blank (contains no writing or
+                            marking at all), a <tag>desc</tag> element will be supplied, providing
+                            an alternate description of the page, e.g., <q>Front pastedown.</q>
+                            There will always be at least one <tag>graphic</tag> element within
+                                <tag>surface</tag>, which provides a link to the facsimile image of
+                            that page.</p>
+                        <p>A surface (presuming it is not blank) will contain one or more
+                                <tag>zone</tag>s. These elements are used to describe specific
+                            regions within a page. If the writing is not linear within a zone, e.g.,
+                            a marginal note or some kind of metamark, the content can be transcribed
+                            directly within zone.</p>
+                    </div>
+                    <div xml:id="zones">
+                        <head>Dividing a page into zones</head>
+                        <p>There are a couple of project-specific conventions for dividing pages
+                            into zones. By convention, page numbering or similar kinds of notes
+                            occurring at the top of a page should be placed within their own zone,
+                            and this should be the first zone on the page. If the content is not
+                            linear, then transcribe directly inside the <tag>zone</tag> element.</p>
+                        <p>Also by convention, <tag>zone</tag> containing the main block of text on
+                            a page should precede any <tag>zone</tag>s used to transcribe content in
+                            page margins or other distinct regions.</p>
+                        <p>You do not need to worry about creating identifiers for zones or adding
+                            descriptive attributes to record their placement on the page. This
+                            information will be supplied by coordinates when the transcriptions and
+                            page images are linked.</p>
+                        <p>SGA does use <att>@type</att> on <tag>zone</tag> with a controlled list
+                            of descriptive values such as <q>top</q>, <q>pagination</q>,
+                            <q>main</q>, etc. These are most for the benefit of processing tools and
+                            are secondary to the coordinates for positioning a zone with respect to
+                            the page it appears on.</p>
+                    </div>
+                    <div xml:id="lines">
+                        <head>Transcribing lines</head>
+                        <p>For linear blocks of writing, a series of <tag>line</tag> elements are to
+                            be used to record topographic lines of writing on the physical document
+                            (these are different from verse lines, etc.).</p>
+                    </div>
+                    <div>
+                        <head>Elements for reconstructing a <q>text-centric</q> hierarchy</head>
+                        <p>While the project's focus is on representing the physical documents, the
+                            online presentation will also include clean, <q>reading texts</q> so it
+                            is necessary to have mechanisms for reconstructing the hierachy of
+                                <q>the text</q> apart from its physical support. For this purpose,
+                            SGA uses <tag>milestone</tag> elements as well as several
+                            project-specific attributes.</p>
+                        <p>To record a major structural division in the text, e.g., a line group,
+                            paragraph, or div, the use of <tag>milestone</tag> is most appropriate.
+                            The value of the <att>unit</att> attribute should be the qualified name
+                            of a TEI element, so tei:div. For phrase-level elements, a number of
+                            attributes are supplied to indicate what textual structure should
+                            correspond to lines of the text. These attributes are:
+                                <att>el-target</att>, which stands for <q>target element</q>;
+                                <att>att-target</att>, which stands for <q>attribute target</q>
+                            meaning attributes which should be part of the target element being
+                            created; and <att>att-value</att>, which indicates the intended value of
+                            any attributes supplied. These workarounds are necessary because XML
+                            enforces a single document hierarchy and does not permit overlap.</p>
+                    </div>
+                </div>
+            </div>
+            <div xml:id="diplomatic_transcriptions">
+                <head>Diplomatic Transcriptions</head>
+                <p>As noted above, the primary goal of the encoding for this project is to produce
+                    high-quality diplomatic transcriptions to accompany the new high-resolution page
+                    images produced for the Archive. It is therefore worth saying a little more
+                    about diplomatic transcriptions.</p>
+                <!-- Goal is to accurately record what is on the page while adding information beyond what could be discerned from the image alone -->
+                <div xml:id="hands">
+                    <head>A note about hands</head>
+                    <p>Deciphering the different hands present in the <emph>Frankenstein</emph>
+                        manuscripts is a challenging problem and notable Shelley scholars have
+                        struggled with correct identifications in the past.</p>
+                    <p>For this project, we will be using the identifications provided in the Word
+                        files or in the scans of the Shelley &amp; his Circle volumes. <hi
+                            rend="bold">Only interventions by Percy Shelley need to be recorded in
+                            transcriptions</hi> (these are marked in blue in the editors' Word
+                        files). To record responsibility, use a <att>resp</att> attribute on the
+                        appropriate element. Neither the darkness/lightness of the ink nor ink color
+                        is a reliable indicator of a change in hands.</p>
+                    <p>Determination of hand shifts will be reviewed by subject experts after the
+                        initial transcription has been completed. Please feel free to note any
+                        questions or problems in your commit notes or pull requests.</p>
+                </div>
+            </div>
+            <div xml:id="spec">
+                <head>Technical documentation</head>
+                <p>The customization for page-level markup specified herein is provided for the
+                    convenience of Shelley-Godwin Archive project encoders. It is <hi rend="bold"
+                        >NON-CONFORMANT</hi> with the TEI abstract model because the documents
+                    governed by this model are fragments and are not-intended to stand alone.</p>
+                <schemaSpec ident="shelley-godwin-page" prefix="sga-p" start="surface surfaceGrp">
+
+                    <specGrp xml:id="modules">
+                        <moduleRef key="tei"/>
+                        
+                        <!-- Additional modules -->
+                        <moduleRef key="transcr" except="am ex fw supplied surplus redo undo"/>
+                        <moduleRef key="gaiji"/>
+                        <moduleRef key="linking" except="ab altGrp timeline"/>
+                        <!-- included principally for the att.linking class -->
+                        <moduleRef key="figures" include="figure figDesc"/>
+                        
+                        <!-- Some specific elements to include-->
+                        <elementRef key="c"/>
+                    </specGrp>
+                    
+                    <specGrp xml:id="mainSpec">
+                        <!-- Class-level modifications -->
+                    <classSpec ident="att.global" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="xml:lang" mode="delete"/>
+                            <!--<attDef ident="xml:base" mode="delete"/>-->
+                            <attDef ident="xml:space" mode="delete"/>
+                            <attDef ident="rendition" mode="delete"/>
+                            <attDef ident="el-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
+                                <desc>A convenience attribute for indicating what text-centric
+                                    element a document-centric element should be transformed
+                                    to</desc>
+                            </attDef>
+                            <attDef ident="att-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
+                                <desc>A convenience attribute for indicating what attribute should
+                                    be added in transforming from document- to text-centric markup.
+                                    By convention the attribute is placed on the element specified
+                                    in a preceding el-target attribute</desc>
+                            </attDef>
+                            <attDef ident="att-value" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
+                                <desc>If an attribute created during a document- to text-centric
+                                    markup conversion should have a particular value, please
+                                    indicate</desc>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.transcriptional" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="status" mode="delete"/>
+                            <attDef ident="cause" mode="delete"/>
+                            <attDef ident="hand" mode="replace">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="#pbs">
+                                        <gloss>Percy Shelley's handwriting</gloss>
+                                        <desc>Text written in Percy Shelley's hand.</desc>
+                                    </valItem>
+                                    <valItem ident="#mws">
+                                        <gloss>Mary Shelley's handwriting</gloss>
+                                        <desc>Text written in Mary Shelley's hand.</desc>
+                                    </valItem>
+                                    <valItem ident="#comp">
+                                        <gloss>compositor's handwriting</gloss>
+                                        <desc>Text written in an (unknown?) compositor's hand.</desc>
+                                    </valItem>
+                                    <valItem ident="http://viaf.org/viaf/95159449"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.global.linking" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="synch" mode="delete"/>
+                            <attDef ident="sameAs" mode="delete"/>
+                            <attDef ident="copyOf" mode="delete"/>
+                            <attDef ident="exclude" mode="delete"/>
+                            <attDef ident="select" mode="delete"/>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.coordinated.attributes" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="start" mode="delete"/>
+                        </attList>
+                    </classSpec>
+
+                    <!-- Removing entire classes; some of these might be restored later -->
+                    <classSpec ident="att.global.analytic" type="atts" mode="delete"/>
+                    <classSpec ident="att.global.change" type="atts" mode="delete"/>
+                    <classSpec ident="att.declaring" type="atts" mode="delete"/>
+                    <classSpec ident="att.responsibility" type="atts" mode="delete"/>
+
+                    <elementSpec ident="surface" module="transcr" mode="change">
+                        <content>
+                            <rng:group>
+                                <rng:zeroOrMore>
+                                    <rng:ref name="model.glossLike"/>
+                                </rng:zeroOrMore>
+                                <rng:oneOrMore>
+                                    <rng:ref name="model.graphicLike"/>
+                                </rng:oneOrMore>
+                                <rng:zeroOrMore>
+                                    <rng:choice>
+                                        <rng:ref name="zone"/>
+                                        <!--<rng:ref name="surface"/>
+                                        <rng:ref name="surfaceGrp"/>-->
+                                        <!-- Temporarily removing the case of paste-ins, etc. -->
+                                        <rng:ref name="model.global"/>
+                                        <rng:ref name="line"/>
+                                    </rng:choice>
+                                </rng:zeroOrMore>
+                            </rng:group>
+                        </content>
+                        <constraintSpec scheme="isoschematron" ident="add-ns-for-schema-fragment">
+                            <constraint>
+                                <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
+                            </constraint>
+                        </constraintSpec>
+                        <attList>
+                            <attDef ident="xml:id" mode="change" usage="req"/>
+
+                            <!-- Make the attributes to set the coordinate grid of the page required; should be automatically generated -->
+                            <attDef ident="ulx" mode="change" usage="req"/>
+                            <attDef ident="uly" mode="change" usage="req"/>
+                            <attDef ident="lrx" mode="change" usage="req"/>
+                            <attDef ident="lry" mode="change" usage="req"/>
+
+                            <attDef ident="n" mode="change" usage="rec"/>
+
+                            <attDef ident="corresp" mode="change" usage="req">
+                                <altIdent>partOf</altIdent>
+                                <desc>Syntactic sugar attribute—should refer to the id of the
+                                    sourceDoc element with which this surface should be
+                                    associated</desc>
+                            </attDef>
+
+                            <!-- See note above re: Whitman integration -->
+                            <attDef ident="attachment" mode="delete"/>
+                            <attDef ident="flipping" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
+                    <!-- Tightening the content model of line to remove more interpretive elements; 
+                        expect this to be fixed in a future release of the Guidelines, 
+                        see http://tei-l.970651.n3.nabble.com/Content-model-of-lt-line-gt-td3647279.html -->
+                    <elementSpec ident="line" module="transcr" mode="change">
+                        <content>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <rng:ref name="model.global"/>
+                                    <rng:ref name="model.segLike"/>
+                                    <rng:ref name="model.hiLike"/>
+                                    <rng:ref name="choice"/>
+                                    <rng:ref name="zone"/>
+                                    <rng:ref name="line"/>
+                                    <!-- What follows is only a subset of model.pPart.transcriptional -->
+                                    <rng:ref name="add"/>
+                                    <rng:ref name="del"/>
+                                    <rng:ref name="add"/>
+                                    <rng:ref name="unclear"/>
+                                    <rng:ref name="damage"/>
+                                    <rng:ref name="handShift"/>
+                                    <rng:ref name="mod"/>
+                                    <rng:ref name="retrace"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
+                        </content>
+                        <attList>
+                            <attDef ident="rend" mode="replace" usage="opt">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="right"/>
+                                    <valItem ident="center"/>
+                                    <valItem ident="left"/>
+                                    <valItem ident="indent1"/>
+                                    <valItem ident="indent2"/>
+                                    <valItem ident="indent3"/>
+                                    <valItem ident="indent4"/>
+                                    <valItem ident="indent5"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                        <remarks>
+                            <p>For the purposes of diplomatic transcriptions, the content model of
+                                line has been restricted to remove more interpretive elements such
+                                as &lt;sic&gt;, and &lt;reg&gt;</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec module="transcr" ident="damage" mode="change">
+                        <attList>
+                            <attDef ident="rend" mode="replace" usage="opt">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="inkblot"/>
+                                    <valItem ident="tear"/>
+                                    <valItem ident="cut"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="hi" module="core" mode="change">
+                        <attList>
+                            <attDef ident="rend" mode="replace" usage="req">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="hyphenated"/>
+                                    <valItem ident="underline"/>
+                                    <valItem ident="double-underline"/>
+                                    <valItem ident="bold"/>
+                                    <valItem ident="caps"/>
+                                    <valItem ident="italic"/>
+                                    <valItem ident="sup"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                        <remarks>
+                            <p>Attribute values adapted from the TEI P5 specification for the ENRICH
+                                project, http://enrich.manuscriptorium.com/</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="add" module="core" mode="change">
+                        <attList>
+                            <attDef ident="place" mode="replace">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="superlinear"/>
+                                    <valItem ident="intralinear"/>
+                                    <valItem ident="sublinear"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="type" mode="replace">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="alternative"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rend" mode="delete"/>
+                            
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="addSpan" module="transcr" mode="change">
+                        <classes mode="change">
+                            <memberOf key="att.responsibility" mode="add"/>
+                        </classes>
+                    </elementSpec>
+
+                    <elementSpec ident="delSpan" module="transcr" mode="change">
+                        <classes mode="change">
+                            <memberOf key="att.transcriptional" mode="delete"/>
+                            <memberOf key="att.responsibility" mode="add"/>
+                        </classes>
+                    </elementSpec>
+
+                    <elementSpec ident="del" module="core" mode="change">
+                        <attList>
+                            <attDef ident="rend" mode="replace">
+                                <valList type="semi" mode="replace">
+                                    <valItem ident="strikethrough"/>
+                                    <valItem ident="overwritten"/>
+                                    <valItem ident="smear"/>
+                                    <valItem ident="vertical_line"/>
+                                    <valItem ident="unmarked"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="resp" mode="delete"/>
+                            <attDef ident="hand" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="milestone" module="core" mode="change">
+                        <attList>
+                            <attDef ident="unit" mode="replace" usage="req">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="tei:div"/>
+                                    <valItem ident="tei:p"/>
+                                    <valItem ident="tei:lg"/>
+                                    <valItem ident="tei:date"/>
+                                    <valItem ident="tei:speaker"/>
+                                    <valItem ident="tei:q"/>
+                                    <valItem ident="tei:stage"/>
+                                    <valItem ident="tei:seg"/>
+                                    <valItem ident="tei:note"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="zone" module="transcr" mode="change">
+                        <content>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:text/>
+                                    <!--<rng:ref name="surface"/>-->
+                                    <!-- Temporarily removing this option pre-Whitman -->
+                                    <rng:ref name="model.linePart"/>
+                                    <rng:ref name="model.graphicLike"/>
+                                    <!-- The following represent only a subset of model.global -->
+                                    <rng:ref name="model.milestoneLike"/>
+                                    <rng:ref name="model.noteLike"/>
+                                    <rng:ref name="model.global.edit"/>
+                                    <rng:ref name="metamark"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
+                        </content>
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="req">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="top">
+                                        <desc>Material that can appear at the top of a manuscript
+                                            page—like headings or notes</desc>
+                                    </valItem>
+                                    <valItem ident="left_margin">
+                                        <desc>Zone for marginal additions, deletions, and other
+                                            modifications. More than one zone with this type may
+                                            appear in a document if marginal zones are distinct
+                                            interventions.</desc>
+                                    </valItem>
+                                    <valItem ident="main">
+                                        <desc>The main block of text on a page</desc>
+                                    </valItem>
+                                    <valItem ident="pagination">
+                                        <desc>For segments of a page where page numbers have been
+                                            added in one or more original hands; distinct from later
+                                            additions by librarians/collectors</desc>
+                                    </valItem>
+                                    <valItem ident="library">
+                                        <desc>A zone of writing which appears to have been added by
+                                            librarians/collectors at a later date—often page
+                                            numbers</desc>
+                                    </valItem>
+                                    <valItem ident="bottom">
+                                        <desc>A zone of writing which is not part of the main text
+                                            block and appears at the bottom of a page</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="metamark"  module="transcr" mode="change">
+                        <attList>
+                            <attDef ident="function" mode="replace">
+                                <valList type="closed" mode="replace">
+                                    <valItem ident="count"/>
+                                    <valItem ident="insert"/>
+                                    <valItem ident="separate"/>
+                                    <valItem ident="paragraph"/>
+                                    <valItem ident="displacement"/>
+                                    <valItem ident="trasnpose"/>
+                                </valList>
+                            </attDef>
+                            <!--<attDef ident="target">
+                                <desc>identifies one or more elements to which the function
+                                    indicated by the metamark applies. </desc>
+                                <datatype minOccurs="1" maxOccurs="unbounded">
+                                    <rng:ref name="data.pointer"/>
+                                </datatype>
+                            </attDef>-->
+                        </attList>
+                        <exemplum xml:lang="no"><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <line><seg xml:id="tp-ib01">bör</seg><metamark rend="underline"
+                                function="transposition" target="#tp-ib01" place="above">2.</metamark>
+                                og <seg xml:id="tp-ib02">hör</seg><metamark rend="underline"
+                                    function="transposition" target="#tp-ib02" place="above"
+                                    >1.</metamark></line></egXML></exemplum>
+                        
+                    </elementSpec>
+
+                    <elementSpec ident="mod" module="transcr" mode="change">
+                        <content>
+                            <!-- mod must have only element children so the below is a subset of macro.paraContent -->
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:ref name="model.gLike"/>
+                                    <rng:ref name="model.phrase"/>
+                                    <rng:ref name="model.inter"/>
+                                    <rng:ref name="model.global"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
+                        </content>
+                        <constraintSpec scheme="isoschematron" ident="modContents">
+                            <constraint>
+                                <sch:rule context="tei:mod">
+                                    <sch:assert test="count(node()) gt 1">The mod element is
+                                        intended to group a series of related changes to the
+                                        manuscript. Thus, mod must have more than one child
+                                        element. If only a single addition or deletion is being
+                                        encoded, mod is not required.</sch:assert>
+                                </sch:rule>
+                            </constraint>
+                        </constraintSpec>
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="additions"/>
+                                    <valItem ident="deletions"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec ident="ptr" module="core" mode="change">
+                        <constraintSpec scheme="isoschematron" ident="verify-ptr-targets">
+                            <constraint>
+                                <!--<sch:rule context="*[@target]">
+                                    <sch:report test="not(//*[@xml:id=substring-after(@target, '#')])">This pointer has
+                                        no target in this document. The value of the target attribute on ptr must be
+                                        a valid xml:id for an element in this document. Without this, there is no
+                                        linkage!</sch:report>
+                                </sch:rule>-->
+                            </constraint>
+                        </constraintSpec>
+                    </elementSpec>
+                    
+                    <elementSpec module="transcr" ident="subst" mode="change">
+                        <attList>
+                            <attDef ident="cause" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="clarify"/>
+                                    <valItem ident="fix"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="hand" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="#pbs"/>
+                                    <valItem ident="#mws"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec module="transcr" ident="restore" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="stetdots"/>
+                                    <valItem ident="smear_strikethrough"/>
+                                    <valItem ident="underline"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec module="linking" ident="seg" mode="change">
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="alternative"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec module="transcr" ident="handShift" mode="change">
+                        <attList>
+                            <attDef ident="new" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="#pbs"/>
+                                    <valItem ident="#mws"/>
+                                </valList>
+                            </attDef>
+                            <attDef ident="medium" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="pen"/>
+                                    <valItem ident="pencil"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>                
+                    </specGrp>
+                    
+                    <specGrpRef target="#modules"/>
+                    <moduleRef key="core"
+                        except="abbr addrLine address analytic author biblScope biblStruct 
+                        binaryObject cb choice cit distinct divGen editor email expan gb gloss 
+                        head headItem headLabel imprint l label lb listBibl lg measure 
+                        meeting mentioned monogr p pb postBox postCode pubPlace publisher 
+                        q quote said series soCalled sp street teiCorpus textLang time sic corr reg orig"/>
+                    <moduleRef key="textstructure"
+                        except="argument back byline TEI div1 div2 div3 div4 div5 div6 div7 docAuthor docDate 
+                        docEdition docImprint docTitle epigraph floatingText front group imprimatur titlePage titlePart"/>
+                    <specGrpRef target="#mainSpec"/>
+
+                </schemaSpec>
+            </div>
+        </body>
+    </text>
+</TEI>

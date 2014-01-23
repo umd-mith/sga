@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0077" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0077.jp2"/>
+  <zone type="pagination" rend="bordered"><line>107</line></zone>
+  <zone type="library"><line>36</line></zone>
+  <zone type="main">
+    <line>bitterness "are you always to be unhappy?</line>
+    <line>"my dear friend, what has happened?"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I motioned to him to <mod>
+        <del rend="strikethrough">read</del>
+        <add place="superlinear">take up</add>
+      </mod> the letter</line>
+    <line>while I walked up &#x26; down the room</line>
+    <line>in the most extreme agitation. <delSpan spanTo="#c56-0077.01" rend="strikethrough"
+      />Clerval</line>
+    <line>read the letter<anchor xml:id="c56-0077.01"/> &#x2013; <del rend="strikethrough">and</del>
+      tears also <del rend="strikethrough">gush</del></line>
+    <line>gushed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">also</add>
+      </mod> from <mod>
+        <del rend="strikethrough">his</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod> eyes <add place="superlinear"><metamark function="displacement" xml:id="c56-0077.02"
+          >X</metamark></add> &#x2013;"I can offer you</line>
+    <line>"no consolation, my friend," said he <del rend="strikethrough">my</del></line>
+    <line>"your <mod>
+        <del rend="strikethrough">misfortune</del>
+        <add place="superlinear">disaster</add>
+      </mod> is irreperable.<del rend="strikethrough">"</del> What</line>
+    <line>"do you intend to do"?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"To go instantly to Geneva<del rend="strikethrough"
+        >"</del> come</line>
+    <line>with me, Clerval, to order the horses"</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">During our walk <del rend="strikethrough">C</del> Henry
+      endeav-</line>
+    <line>oured to raise my spirits&#x2013; He did not</line>
+    <line>do this by the common topics of <del rend="strikethrough">conversatio</del></line>
+    <line>consolation but<del rend="strikethrough">t</del> by shew<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>ng the truest</line>
+    <line>sympathy. "Poor William" said "that dear</line>
+    <line>"child he now sleeps with his angel</line>
+    <line>"mother. His friends mourn and weep but</line>
+    <line>"he is at rest he does not now feel the</line>
+    <line>"murderers grasp &#x2013; a <del rend="strikethrough">green</del> sod covers his</line>
+    <line>"gentle form and he knows no pain&#x2013;He</line>
+    <line>"can no longer be a subject for pity his</line>
+    <line>"survivors are the greatest sufferers and</line>
+    <line>"for them time is the<del rend="vertical_line">ir</del> only consolation.</line>
+    <line>"Those maxims of the stoics that death</line>
+    <line>"was no evil and that the mind of man</line>
+    <line>"ought to be sup<retrace cause="clarify">er</retrace>ior to <del rend="strikethrough"
+        >that</del> despair</line>
+    <line>"on the eternal absence of a beloved</line>
+    <line>"object ought not to be urged &#x2013; even</line>
+    <line>"Cato wept over the dead body of his</line>
+    <line>"brother."</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0077.02">
+    <addSpan spanTo="#c56-0077.03"/>
+    <line><metamark function="displacement">X</metamark>of Clerval</line>
+    <line>as he read the</line>
+    <line>account of my</line>
+    <line>misfortune</line>
+    <anchor xml:id="c56-0077.03"/>
+  </zone>
+</surface>

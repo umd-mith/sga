@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0068" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0068.jp2"/>
+  <zone type="pagination" rend="bordered"><line>93</line></zone>
+  <zone type="main">
+    <line><anchor xml:id="c57-0068.01"/>let me feel gratitude towards you for one</line>
+    <line>benefit<unclear>;</unclear> Let me see that I excite the</line>
+    <line>sympathy of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">one</add>
+      </mod> creature. Do not deny me my</line>
+    <line>request.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I was moved. I shuddered when I thought</line>
+    <line>of the possible consequences of my consent</line>
+    <line>but I felt that there was some justice</line>
+    <line>in his argument. His tale and the fee</line>
+    <line>lings he now expressed <del rend="strikethrough">ap</del>proved him to</line>
+    <line>be a creature of fine sensations and</line>
+    <line>did not I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">as</add>
+      </mod> his <del rend="strikethrough">creator</del> maker owe him</line>
+    <line>all the portion of happiness that it</line>
+    <line>was in <mod>
+        <del rend="strikethrough">pw</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my</add>
+      </mod> power to bestow? He saw my</line>
+    <line>change of feeling &amp; continued.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">If you consent neither you or</line>
+    <line>any human <del rend="strikethrough" instant="true">being</del> creature shall ever
+      see</line>
+    <line>us again. I will go to the vast wilds of</line>
+    <line>America. My food is not that of man; I</line>
+    <line>do not destroy the lamb or the kid to</line>
+    <line>glut my appetite. Acorns &amp; berries afford</line>
+    <line>me sufficient nourishment. My com</line>
+    <line>panion will be of the same nature</line>
+    <line>as myself and will be content with</line>
+    <line>the same fare. We shall make our bed</line>
+    <line>of dried leaves; the sun will shine on</line>
+    <line>us as on man &amp; will ripen our food. You</line>
+    <line>are moved. The picture I present to you</line>
+    <line>is peaceful &amp; human and you must</line>
+    <line>feel that you could deny it only in</line>
+    <line>the wantoness of power &amp; cruelty. Pitiless</line>
+    <line>as you are towards me I see compassi</line>
+    <line>on in your eyes. Let me seize the</line>
+    <line>favourable moment &amp; <del rend="strikethrough">pro</del> persuade</line>
+    <line>you to promise what I so ardently</line>
+    <line>desire.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">You promise, replied I, to quit the habitations</line>
+  </zone>
+  
+  <zone type="left_margin" corresp="#c57-0068.01">
+    <line><add>me happy&#x2013;<add place="sublinear">,</add>
+      </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0011" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0011.jp2"/>
+  <zone type="pagination" rend="bordered"><line>10</line></zone>
+  <zone type="library"><line>6</line></zone>
+  <zone type="main">
+    <line>hand <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">of</add>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> pure water <add place="superlinear">which</add> flowed by my</line>
+    <line><mod>
+        <del rend="strikethrough">house</del>
+        <add place="superlinear" hand="#pbs">retreat</add>
+      </mod> &#x2013; <del rend="strikethrough">but</del>
+      <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>he f<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">l</add>
+      </mod>oor <del rend="strikethrough">of that</del>
+      <del rend="strikethrough">being</del></line>
+    <line><anchor xml:id="c57-0011.01"/>a little raised <mod>
+        <del rend="strikethrough"><add place="intralinear">&amp;</add></del>
+        <del rend="strikethrough">it</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">so that it</add>
+      </mod> was kept <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">perfectly</add>
+      </mod> dry and by</line>
+    <line>its vicinity to the chimney of the</line>
+    <line>kitchen fire of the cottage it was</line>
+    <line>tolerably warm. <del rend="strikethrough">And</del>
+      <mod>
+        <del rend="overwritten">b</del>
+        <add place="intralinear">B</add>
+      </mod>eing thus provided</line>
+    <line>I determined to reside in this hovel</line>
+    <line>untill <del rend="strikethrough">o</del> something should occur which</line>
+    <line>might alter my determination. It</line>
+    <line>was indeed a paradise compared to</line>
+    <line>the blea<del rend="strikethrough">c</del>k forest, my former residence,</line>
+    <line><del rend="strikethrough">and</del> the<del rend="strikethrough">ir</del> rain dropping <mod>
+        <del rend="strikethrough">leaves</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">branches </add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&amp; the dank earth</add>
+      </mod>. I ate</line>
+    <line>my breakfast with pleasure and was</line>
+    <line>about to remove a plank to procure</line>
+    <line>myself a little water when I heard</line>
+    <line>a step and looking through a small</line>
+    <line>chink a beheld a young creature</line>
+    <line>with a pail on her head passing</line>
+    <line>before my hovel. The girl was youn<mod>
+        <del rend="overwritten"><del rend="strikethrough">d</del></del>
+        <add place="intralinear">g</add>
+      </mod></line>
+    <line>and of gentle dem&#xE6;nour unlike what</line>
+    <line>I have since found Cottagers and farm</line>
+    <line>house servants to be &#x2013; Yet she was mean</line>
+    <line>ly dressed &#x2013; a <del rend="strikethrough">blue</del> coarse <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">blue</add>
+      </mod> petticoat and a</line>
+    <line><anchor xml:id="c57-0011.02"/>jacket being her only garb <del rend="strikethrough"
+        >on</del> her fair hair</line>
+    <line>was plaited but not adorned; she looked patient</line>
+    <line>yet sad. She passed <del rend="strikethrough">aw</del> away but in a quarter</line>
+    <line>of an hour returned, <del rend="strikethrough">be</del> bearing the pail which</line>
+    <line>was now partly filled with milk. As she walked</line>
+    <line>along seemingly incommoded by the burthen</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0011.01">
+    <line><add>was </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0011.02">
+    <line><add>linen </add></line>
+  </zone>
+</surface>

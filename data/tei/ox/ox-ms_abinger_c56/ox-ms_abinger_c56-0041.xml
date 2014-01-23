@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0041" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0041.jp2"/>
+  <zone type="pagination" rend="bordered"><line>71</line></zone>
+  <zone type="library"><line>19</line></zone>
+  <zone type="main">
+    <line>ed acuteness <mod>
+        <del rend="strikethrough">when</del>
+        <add place="superlinear" hand="#pbs">so soon as</add>
+      </mod> the unnatural sti</line>
+    <line>mulus ceas<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">had</add></del>
+      </mod> to operate, and I had return</line>
+    <line>ed to my old habits. I collected bones from</line>
+    <line>Charnel houses and with profane fingers</line>
+    <line>meddled with the secrets of the human</line>
+    <line>frame. In a solitary chamber&#x2013;or rather</line>
+    <line>cell at the top of the house and seperated</line>
+    <line>from all other appartments by a gallery</line>
+    <line>and staircase I <del rend="strikethrough">h</del> kept my workshop</line>
+    <line>of filthy creation; my eyeballs were</line>
+    <line>starting from their sockets in at-</line>
+    <line>tending to the minuti&#xE6; of <del rend="strikethrough">the</del> my</line>
+    <line>employment. The dissecting room and</line>
+    <line>the slaughter house furnished many</line>
+    <line>of my materials, and often did my</line>
+    <line>human nature turn from my</line>
+    <line>occupation <mod>
+        <del rend="strikethrough">but</del>
+        <del rend="overwritten">I</del>
+        <add place="superlinear" hand="#pbs">whilst</add>
+        <del rend="strikethgrough">wal</del>
+        <del rend="strikethrough">was</del>
+      </mod> still urged</line>
+    <line>on by an eagerness which <add place="superlinear" hand="#pbs"
+      >perpetually</add> encreased,</line>
+    <line><mod>
+        <del rend="strikethrough">as</del>
+        <anchor xml:id="c56-0041.01"/>
+      </mod> my work <del rend="strikethrough">drew</del> near <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to</add>
+      </mod> a conclusion.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The <del rend="strikethrough">sums</del> Summer
+      months</line>
+    <line>passed while I was thus <mod>
+        <del rend="strikethrough">employed</del>
+        <add place="superlinear" hand="#pbs">engaged,</add>
+      </mod></line>
+    <line>heart and soul, in one pursuit. It</line>
+    <line>was a most beautiful season: never</line>
+    <line>did the fields bestow a more plentiful</line>
+    <line>harvest, or the vines yeild a more</line>
+    <line>luxuriant vintage. But my eyes were</line>
+    <line><mod>
+        <del rend="unmarked">s</del>
+        <del rend="strikethrough">hut</del>
+        <anchor xml:id="c56-0041.02"/>
+      </mod> to the charms of nature &#x26; the</line>
+    <line>same feelings which <mod>
+        <del rend="strikethrough">caused</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">made</add>
+      </mod> me <del rend="strikethrough">to</del></line>
+    <line>neglect the scenes around me caused</line>
+    <line>me also to forget those friends who</line>
+    <line>were so many miles absent and whom</line>
+    <line>I had not seen for so long a time.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0041.01">
+    <line><add hand="#pbs">I brought</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0041.02">
+    <line><add hand="#pbs">insensible</add></line>
+  </zone>
+</surface>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0117" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0117.jp2"/>
+  <zone type="pagination"><line>133</line></zone>
+  <zone type="library"><line>59</line></zone>
+  
+
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0117.02"/>Chap. 14<hi rend="underline"><hi rend="sup">th</hi></hi><anchor xml:id="c57-0117.02"/></line>
+    <line><anchor xml:id="c57-0117.01"/>soon <del rend="strikethrough">int</del> introduced into the
+      presence of the</line>
+    <line>Magistrate; an<del rend="strikethrough">d</del> old benevolent man with</line>
+    <line>calm &#x26; mild manners. He looked <mod>
+        <del rend="strikethrough">towards</del>
+        <add place="superlinear" hand="#pbs">upon</add>
+      </mod> me</line>
+    <line>however with some degree of severity, and then</line>
+    <line>turning towards my conductors <del rend="strikethrough">wh</del> he <del
+        rend="strikethrough"><unclear reason="illegible">h</unclear></del> asked who</line>
+    <line><del rend="strikethrough">it was that</del>
+      <del rend="strikethrough">there were who</del> appeared as wit-</line>
+    <line>nesses on this occasion<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">.</add>
+      </mod> about half a dozen</line>
+    <line>men came forward and one being selected</line>
+    <line>by the magistrate <retrace cause="clarify">he</retrace> deposed that he had been</line>
+    <line>out fishing the night before with his son &#x26;</line>
+    <line>his brother-in-law, Daniel Nugent, when</line>
+    <line>about nine o clock they observed a strong</line>
+    <line>northerly blast rising &#x26; they accordingly put</line>
+    <line>in for port. It was a very dark night as</line>
+    <line>the moon had not yet risen; They did not</line>
+    <line>lan<mod>
+        <del rend="overwritten"><unclear reason="illegible">g</unclear></del>
+        <add place="intralinear">d</add>
+      </mod> at the harbour but, as they had been</line>
+    <line>accustomed, at a creek about two miles</line>
+    <line>below. He went first carrying a part</line>
+    <line>of the fishing tackle &#x26; his companions</line>
+    <line>followed him at some distance. As he</line>
+    <line>was walking along the sands he <mod>
+        <del rend="strikethrough">hit</del>
+        <add place="superlinear" hand="#pbs">struck</add>
+      </mod> his foot</line>
+    <line>against somthing &#x26; fell all his length on</line>
+    <line>the ground; his comrades came up to assist</line>
+    <line>him &#x26; by the light of their lantern they</line>
+    <line>discovered that he had fallen on the</line>
+    <line>body of a man who was to all appearance</line>
+    <line>dead.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Their first supposition was that</line>
+    <line>it was the corpse of <mod>
+        <del rend="strikethrough">man</del>
+        <add place="superlinear" hand="#pbs">some person</add>
+      </mod> who had been</line>
+    <line>drowned &#x26; thrown on shore by the waves,</line>
+    <line>But upon examination they found that</line>
+    <line>the clothes were not wet &#x26; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">even</add>
+      </mod> that the body</line>
+    <line>was not yet cold. They instantly carried</line>
+    <line>it to the cottage of an old woman</line>
+    <line>near <add place="superlinear" hand="#pbs">the spot</add> &#x26; endeavoured <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">but in vain</add>
+      </mod> to restore it to life <del rend="strikethrough">but</del></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0117.01">
+    <line>I was </line></zone>
+</surface>

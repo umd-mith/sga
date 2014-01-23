@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron"
+        xmlns:oxdoc="http://www.oxygenxml.com/ns/doc/xsl"
+        queryBinding="xslt2">
+   <title>ISO Schematron rules</title>
+   <!--namespaces:--><ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
+   <!--keys:--><!--patterns:--><!--constraints:--><pattern id="ptr-constraint-ptrAtts">
+      <rule context="tei:ptr">
+         <report test="@target and @cRef">Only one of the
+	attributes 'target' and 'cRef' may be supplied.</report>
+      </rule>
+   </pattern>
+   <pattern id="ref-constraint-refAtts">
+      <rule context="tei:ref">
+         <report test="@target and @cRef">Only one of the
+	attributes 'target' and 'cRef' may be supplied.</report>
+      </rule>
+   </pattern>
+   <pattern id="relatedItem-constraint-targetorcontent1">
+      <rule context="tei:relatedItem">
+         <report test="@target and count( child::* ) &gt; 0">If the 'target' attribute is used, the
+        relatedItem element must be empty</report>
+         <assert test="@target or child::*">A relatedItem element should have either a 'target' attribute
+        or a child element to indicate the related bibliographic item</assert>
+      </rule>
+   </pattern>
+   <pattern id="addSpan-constraint-spanTo">
+      <rule context="tei:addSpan">
+         <assert test="@spanTo">The spanTo= attribute of <name/> is required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="damageSpan-constraint-spanTo">
+      <rule context="tei:damageSpan">
+         <assert test="@spanTo">The spanTo= attribute of
+	<name/> is required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="delSpan-constraint-spanTo">
+      <rule context="tei:delSpan">
+         <assert test="@spanTo">The spanTo= attribute of <name/>
+      is required.</assert>
+      </rule>
+   </pattern>
+   <pattern id="subst-constraint-substContents1">
+      <rule context="tei:subst">
+         <assert test="child::add and child::del">
+        Subst must have at least one child add and at least one child del</assert>
+      </rule>
+   </pattern>
+   <pattern id="mod-constraint-modContents">
+      <rule context="tei:mod">
+                                    <assert test="count(node()) gt 1">The mod element is
+                                        intended to group a series of related changes to the
+                                        manuscript. Thus, mod must have more than one child
+                                        element. If only a single addition or deletion is being
+                                        encoded, mod is not required.</assert>
+                                </rule>
+   </pattern>
+   <pattern id="link-constraint-linkTargets1">
+      <rule context="tei:link">
+         <report test="@target and @targets">You may not supply both 
+	@target and @targets</report>
+      </rule>
+   </pattern>
+   <pattern id="link-constraint-linkTargets2">
+      <rule context="tei:link">
+         <report test="not(@target) and not(@targets)">You must
+	supply either @target or @targets</report>
+      </rule>
+   </pattern>
+   <pattern id="link-constraint-linkTargets3">
+      <rule context="tei:link">
+         <assert test="contains(@target,' ')">You must supply at least two
+values for @target</assert>
+      </rule>
+   </pattern>
+   <pattern id="join-constraint-joinTargets1">
+      <rule context="tei:join">
+         <report test="@target and @targets">You may not supply both 
+	@target and @targets</report>
+      </rule>
+   </pattern>
+   <pattern id="join-constraint-joinTargets2">
+      <rule context="tei:join">
+         <report test="not(@target) and not(@targets)">You must
+	supply either @target or @targets</report>
+      </rule>
+   </pattern>
+   <pattern id="join-constraint-joinTargets3">
+      <rule context="tei:join">
+         <assert test="contains(@target,' ')">You must supply at least two
+values for @target</assert>
+      </rule>
+   </pattern>
+</schema>

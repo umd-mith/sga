@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+   xml:id="ox-ms_abinger_c57-0032" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0032.jp2"/>
+   <zone type="pagination">
+      <line><line>58</line></line>
+   </zone>
+   <zone type="main">
+      <line><mod>
+            <anchor xml:id="c57-0032.01"/>
+            <add place="intralinear">than</add>
+         </mod> the crime alledged against him</line>
+      <line><anchor xml:id="c57-0032.02"/>Felix was present at his trial; <del rend="strikethrough"
+            >&amp;</del> his <add place="superlinear">horror &amp;</add> in</line>
+      <line>dignation <mod>
+            <add place="sublinear"><metamark function="insert">^</metamark></add>
+            <add place="superlinear">w<mod>
+                  <del rend="overwritten">as</del>
+                  <add place="intralinear" hand="#pbs">ere</add>
+               </mod></add>
+         </mod> uncontrolable when he heard the</line>
+      <line><mod>
+            <del rend="strikethrough">event.</del>
+            <add place="superlinear" hand="#pbs"><del rend="strikethrough">of</del> decision of the
+               court.</add>
+         </mod> He made at that moment a solemn</line>
+      <line>vow to deliver him &amp; then looked around</line>
+      <line>for the means. After many fruitless</line>
+      <line>attempts to gain admittance to the <delSpan spanTo="#c57-0032.04" rend="strikethrough"
+         />pri</line>
+      <line>son<anchor xml:id="c57-0032.04"/>
+         <mod>
+            <del rend="strikethrough">goal</del>
+            <add hand="#pbs" place="superlinear">prison</add>
+         </mod> he found a st<mod>
+            <add place="sublinear"><metamark function="insert">^</metamark></add>
+            <add place="superlinear">r</add>
+         </mod>ongly grated window</line>
+      <line>in an unguarded part of the <mod>
+            <del rend="strikethrough">prison</del>
+            <add place="superlinear" hand="#pbs">building,</add>
+         </mod></line>
+      <line>which <del rend="strikethrough" instant="true">li</del>
+         <del rend="strikethrough" instant="true">illuminated</del> lighted the dungeon</line>
+      <line>of the unfortunate Mahometan, who</line>
+      <line>loaded with chains waited in despair</line>
+      <line>the execution of the barbarous sen</line>
+      <line>tence. Felix visited the grate at night</line>
+      <line><del rend="strikethrough">h</del> and made know<add place="sublinear">n</add> to the
+         prisoner his</line>
+      <line>intentions in his favour. The Turk</line>
+      <line>amazed and delighted endeavoured to <mod>
+            <del rend="strikethrough">warm</del>
+            <anchor xml:id="c57-0032.05"/>
+         </mod></line>
+      <line>the zeal of his <del rend="strikethrough">promised</del> deliverer by</line>
+      <line>promises of reward &amp; wealth. Felix rejected</line>
+      <line>his offers with contempt Yet when he</line>
+      <line>saw the lovely Safie who was allowed</line>
+      <line>to visit her father &amp; who by her <del rend="strikethrough">expressive</del></line>
+      <line>gestures expressed her lively gratitude, the</line>
+      <line>youth could not help owning to his own</line>
+      <line>mind that the captive possessed a</line>
+      <line>treasure which <mod>
+            <add place="sublinear"><metamark function="insert">^</metamark></add>
+            <del rend="strikethrough"><add place="superlinear" hand="#pbs">altho it had not
+               en</add></del>
+         </mod> would fully reward his</line>
+      <line>toil &amp; hazard.</line>
+      <milestone unit="tei:p"/>
+      <line rend="indent1">The Turk quickly perceived the im</line>
+      <line>pression that his daughter had made on</line>
+   </zone>
+
+   <zone type="left_margin" corresp="#c57-0032.01">
+      <line><del rend="smear">than</del>
+         <add place="intralinear" hand="#pbs">rather </add></line>
+   </zone>
+
+   <zone type="left_margin" corresp="#c57-0032.02">
+      <addSpan spanTo="#c57-0032.03" hand="#pbs"/>
+      <line>had been the</line>
+      <line>cause of his</line>
+      <line>condemnation </line>
+      <anchor xml:id="c57-0032.03"/>
+   </zone>
+
+   <zone type="left_margin" corresp="#c57-0032.05">
+      <line><add hand="#pbs">kindle</add></line>
+   </zone>
+</surface>

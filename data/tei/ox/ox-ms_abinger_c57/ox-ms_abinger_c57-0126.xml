@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0126" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0126.jp2"/>
+  <zone type="pagination" rend="bordered"><line>142</line></zone>
+  <zone type="main">
+    <line>Your family are all perfectly <del rend="strikethrough">well</del> well, <mod
+        spanTo="#c57-0126.01"/><delSpan spanTo="#c57-0126.02" rend="strikethrough"/>said</line>
+    <line>M<hi rend="sup">r</hi>. Kirwin<anchor xml:id="c57-0126.02"/><add place="superlinear"
+        hand="#pbs">said M<hi rend="sup">r</hi>. Kirwin</add><anchor xml:id="c57-0126.01"/>, with
+      gentleness; and some one, a</line>
+    <line>friend, is come to visit you.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I do not know by what chain of</line>
+    <line>thought the idea presented itself but it</line>
+    <line>instantly darted into my mind that the</line>
+    <line>monster had come to mock at my misery</line>
+    <line>&#x26; taunt me with the death of Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval</line>
+    <line>as a new incitement to comply with</line>
+    <line>his hellish desires. I put my hand before</line>
+    <line>my eyes &#x26; cried out in agony &#x2013;Oh! take</line>
+    <line>him away &#x2013; I cannot see him for Gods</line>
+    <line>sake do not let him enter!</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><del rend="strikethrough">M<hi rend="sup">r</hi>. Kirwin changed
+        countenance</del></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">M<hi rend="sup">r</hi>. Kirwin regarded me with a</line>
+    <line>troubled countenance. He could not</line>
+    <line>help regarding my exclamation as a</line>
+    <line>presumption of my guilt &#x26; said in</line>
+    <line>rather severe tone &#x2013; I should have</line>
+    <line>thought, young man, that the presence</line>
+    <line>of your Father would have been</line>
+    <line>welcome instead of inpiring such</line>
+    <line>violent repugnance.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My father, said, I, while every fea</line>
+    <line>ture &#x26; every muscle was relaxed from</line>
+    <line><unclear reason="case">a</unclear>nguish to pleasure &#x2013; Is my father indeed</line>
+    <line>come &#x2013; how kind, how very kind! But</line>
+    <line><unclear reason="case">w</unclear>here is he, why does he not hasten</line>
+    <line>to me?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">My change of manner suprised &#x26;</line>
+    <line>pleased <mod>
+        <del rend="strikethrough">M<hi rend="sup">r</hi>. Kirwin</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the magistrate</add>
+      </mod>, perhaps he thought</line>
+    <line>that my former exclamation was a</line>
+  </zone>
+</surface>

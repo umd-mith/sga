@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0060" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0060.jp2"/>
+  <zone type="pagination" rend="bordered"><line>90</line></zone>
+  <zone type="main">
+    <line>it was at least a happier employ</line>
+    <line>ment than that of a judge, whose</line>
+    <line>misfortune it was always to meddle</line>
+    <line>with the dark side of human nature</line>
+    <line>My uncle smiled and said that I</line>
+    <line><del rend="strikethrough">ou<add place="intralinear">g</add>t</del> ought to be an
+      advocate myself;</line>
+    <line>which put an end to the conversation</line>
+    <line>on that subject</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1"><space unit="chars" extent="4"/>And now I must tell you a little</line>
+    <line>story that will please you. Do you</line>
+    <line>not remember <del rend="strikethrough">Ju</del> Justine <del rend="strikethrough"
+        >Martin</del>?<anchor xml:id="c56-0060.01"/></line>
+    <line>Perhaps you do not I will therefore</line>
+    <line>tell you her story in a few words. Mad.</line>
+    <line>Martin her Mother was a widow with</line>
+    <line>four children of whom <del rend="strikethrough">this</del> Justine</line>
+    <line>was the third. This girl had always been</line>
+    <line>the <del rend="strikethrough">favou</del> favourite of her father</line>
+    <line><mod>
+        <del rend="strikethrough">and</del>
+        <anchor xml:id="c56-0060.02"/>
+        <del rend="strikethrough">by</del>
+        <add place="superlinear" hand="#pbs">thro</add>
+      </mod> an odd perversity her Mother</line>
+    <line><del rend="strikethrough">never</del> could <mod>
+        <del rend="strikethrough">bear</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">not endure</add>
+      </mod> her and after the</line>
+    <line>death of M. <mod>
+        <del rend="strikethrough">Martin</del>
+        <add place="superlinear">Moritz</add>
+      </mod> treated her very ill.</line>
+    <line>My aunt observed this, and when Justine</line>
+    <line>was <del rend="strikethrough">ten</del> twelve years old <unclear>too</unclear>
+      prevailed</line>
+    <line>on her mother to allow her to live</line>
+    <line>at our house.<add place="superlinear"><metamark function="displacement" xml:id="c56-0060.03">X</metamark></add>
+      <del rend="strikethrough">Where</del>
+      <delSpan rend="strikethrough" spanTo="#c56-0060.05"/>she was taught</line>
+    <line>all the duties of servant &#x26; was very</line>
+    <line>kindly treated.<anchor xml:id="c56-0060.05"/> I dare say that you now</line>
+    <line>remember all about it, for Justine</line>
+    <line>was a great favourite of yours, &#x26; I</line>
+    <line><mod>
+        <del rend="strikethrough">remember</del>
+        <add place="superlinear" hand="#pbs">recollect</add>
+      </mod> you once said, that</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0060.01">
+    <line><add/>Moritz?</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0060.02">
+    <line><add hand="#pbs"/>but</line>
+  </zone>
+
+  <!-- This is the beginning of a left-margin zone that crosses two pages-->
+  <zone type="left_margin" corresp="#c56-0060.03">
+    <addSpan hand="#pbs" spanTo="#c56-0060.04" next="#c56-0061.01"/>
+    <line><metamark function="displacement">X</metamark></line>
+    <line>The republican</line>
+    <line>institutions of our</line>
+    <line><del rend="strikethrough">state</del> country, have</line>
+    <line>produced simpler</line>
+    <line>&#x26; happier manners</line>
+    <line>than those which</line>
+    <line>prevail in the</line>
+    <line>great monarchies</line>
+    <line>that surround it.</line>
+    <line><del rend="strikethrough">Ju Whilst</del></line>
+    <line>Hence there</line>
+    <line>is less dis-</line>
+    <anchor xml:id="c56-0060.04"/>
+  </zone>
+</surface>

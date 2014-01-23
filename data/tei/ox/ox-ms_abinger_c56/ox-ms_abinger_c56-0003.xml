@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0003" ulx="0" uly="0" lrx="5364" lry="7248" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0003.jp2"/>
+  <zone type="library"><line>ii (<unclear unit="chars" extent="2"/>)</line></zone>
+  <zone type="main">
+    <addSpan hand="#library" spanTo="#c56-0003.01"/>
+    <line>The first fragment contains</line>
+    <line>pp. 24-97 of the Standard</line>
+    <line>Novel edition.</line>
+    <milestone unit="tei:p"/>
+    <line>The second pp. 104-202, with</line>
+    <line>a slight interruption.</line>
+    <milestone unit="tei:p"/>
+    <line>The third pp. 168-202, with</line>
+    <line>many imperfections.</line>
+    <anchor xml:id="c56-0003.01"/>
+  </zone>
+</surface>

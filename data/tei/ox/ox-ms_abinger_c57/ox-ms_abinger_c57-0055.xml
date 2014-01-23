@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0055" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0055.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>80</line>
+  </zone>
+  <zone type="library" rend="bordered">
+    <line>28</line>
+  </zone>
+  <zone type="main">
+    <line>and I beg therefore that you will</line>
+    <line>take some days to <mod>
+        <del rend="strikethrough">consult</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">consider of</add>
+      </mod>
+      <delSpan spanTo="#c57-0055.01" rend="strikethrough"/>about</line>
+    <line>this affair with<anchor xml:id="c57-0055.01"/> your <del rend="strikethrough"
+        >friends.</del> determination.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">It is utterly useless&#x2013; replied Felix,</line>
+    <line>we <mod><del rend="overwritten">s</del><add place="intralinear">c</add></mod>an never <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">again</add>
+      </mod> inhabit that cottage</line>
+    <line><del rend="strikethrough">again</del> &#x2013;The life of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my</add>
+      </mod> father is in the greatest</line>
+    <line>danger owing to the dreadful circumstanc</line>
+    <line>that I have related&#x2014; My wife and sister</line>
+    <line><mod>
+        <del rend="strikethrough">can</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">will</add>
+      </mod> never recover their horror&#x2014; <del rend="strikethrough">Do</del> I</line>
+    <line>entreat you not to reason with me</line>
+    <line>any more&#x2014;<del rend="strikethrough">let</del> Take possession <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">of your tenement</add>
+      </mod> and let me</line>
+    <line>fly from this place &#x2013; <del rend="strikethrough">very</del>
+      <delSpan spanTo="#c57-0055.02" rend="strikethrough"/>We intend</line>
+    <line>very soon to quit entirely the country.<anchor xml:id="c57-0055.02"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Felix trembled violently as he said</line>
+    <line>this. He and his companion entered the</line>
+    <line>cottage <del rend="strikethrough">w</del> in which they remained for a</line>
+    <line>few minutes &amp; then departed. I never</line>
+    <line>again saw any of the family of de Lacey<unclear>.</unclear></line>
+    <line><mod>
+        <del rend="strikethrough">They had qu</del>
+        <add place="superlinear" hand="#pbs">more.</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><delSpan spanTo="#c57-0055.03"/>And now my hopes were entirely</line>
+    <line>fled &#x2013;were I had been fool enough to</line>
+    <line>hope but these</line>><anchor xml:id="c57-0055.03"/>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I <mod>
+        <del rend="strikethrough">remained</del>
+        <add place="superlinear">continued</add>
+        <del rend="strikethrough">all night</del>
+        <del rend="strikethrough"><add place="sublinear"><metamark function="insert"
+              >^</metamark></add></del>
+      </mod> in my hovel<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"> for the remainder of the day</add>
+      </mod></line>
+    <line>in a state of utter &amp; stupid despair&#x2013;</line>
+    <line>my protectors had departed and had</line>
+    <line>broken the only link that held me</line>
+    <line>to the world&#x2013; for the first time the</line>
+    <line>feeling of revenge and hatred filled</line>
+    <line>my bosom, and I did not strive to</line>
+    <line>controul them &#x2014; but allowing myself</line>
+    <line>to be borne away by the stream I</line>
+    <line>bent my mind<del rend="strikethrough">s</del> towards <del rend="strikethrough"
+          ><unclear>I</unclear></del> injury &amp; death&#x2013;</line>
+    <line><del rend="strikethrough">But</del> when I thought of my friends&#x2013; of</line>
+    <line>the mild voice of De Lacey the gentle</line>
+    <line>eyes of Agatha &#x2013; and the <del rend="strikethrough">warm</del>
+      <del rend="strikethrough"><unclear>he</unclear></del></line>
+  </zone>
+</surface>

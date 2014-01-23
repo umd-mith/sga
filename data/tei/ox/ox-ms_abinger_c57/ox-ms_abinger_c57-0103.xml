@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0103" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0103.jp2"/>
+  <zone type="pagination"><line>119</line></zone>
+  <zone type="library"><line>52</line></zone>
+  <zone type="main">
+    <line>desolated my heart and filled it for</line>
+    <line>ever with the bitterest remorse. I was</line>
+    <line>now about to form another being of whose</line>
+    <line>dispositions I was alike ignorant. <retrace hand="#pbs" cause="clarify"
+      >Sh</retrace>e</line>
+    <line>might be ten thousand times more ma</line>
+    <line>lignant than her mate and delight in</line>
+    <line>murder &amp; wretchedness. He had sworn</line>
+    <line>to quit the neighbourhood of man &amp; hide</line>
+    <line>himself in desarts but she had not &amp;</line>
+    <line>she who was in all probability to become</line>
+    <line>a thinking &amp; reasoning animal might</line>
+    <line>refuse to <del rend="strikethrough">to</del> comply with a compact made</line>
+    <line>before her creation. They might even</line>
+    <line>hate one another. The creature who al-</line>
+    <line>ready lived loathed his own deformity</line>
+    <line>&amp; might he not conceive a greater ab-</line>
+    <line>horrence for it when it came before</line>
+    <line>his eyes in the female form. She also</line>
+    <line>might turn with disgust from him</line>
+    <line>to the superior beauty of man <delSpan spanTo="#c57-0103.01" rend="strikethrough"/>&amp;
+      who</line>
+    <line>confine her eyes or wishes<anchor xml:id="c57-0103.01"/>. She might</line>
+    <line>quit him and he be again alone <mod><del rend="strikethrough">with</del><add
+      place="sublinear"><metamark function="displacement" xml:id="c57-0103.02">^</metamark></add></mod></line>
+    <line>the fresh provocation of being deserted</line>
+    <line>by one of his own species.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Even if they were to leave Europe</line>
+    <line>&amp; inhabit the desarts of the new world,</line>
+    <line><del rend="strikethrough">I</del> it was their intention to have children</line>
+    <line>and a race of devils would be propagated</line>
+    <line><add place="intralinear" hand="#pbs">up</add>on the earth from whose form &amp;
+      mind</line>
+    <line>man shrunk with horro<mod><del rend="overwritten">w</del><add place="intralinear"
+      hand="#pbs">r</add></mod>. <del rend="smear">&amp;</del> had I <add place="superlinear"
+        hand="#pbs">any</add> right</line>
+    <line><del rend="strikethrough">for</del> for my own benefit to inflict this</line>
+    <line>curse to everlasting generations? I had</line>
+    <line>before been moved by the sophisms</line>
+    <line>of the being whom I had created; I had</line>
+    <line>been moved by his fiendish threats &amp; now</line>
+    <line>for the first time the wickedness <del rend="strikethrough">&amp; utter</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0103.02">
+    <line><add hand="#pbs">exasperated by </add></line>
+  </zone>
+</surface>

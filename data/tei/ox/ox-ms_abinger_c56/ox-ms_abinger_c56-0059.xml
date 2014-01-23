@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0059" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0059.jp2"/>
+  <zone type="pagination" rend="bordered"><line>89</line></zone>
+  <zone type="library"><line>28<add>a</add></line></zone>
+  <zone type="main">
+    <line>sickly appearance that he had</line>
+    <line>some years ago &#x2013; he is quite well &#x26; <hi rend="underline">hearty</hi></line>
+    <line>if I <del rend="strikethrough">y</del> may use that term for it is</line>
+    <line>very expressive.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">"My uncle and I conversed <del rend="strikethrough"
+        >the</del></line>
+    <line>last night a long time about what</line>
+    <line><anchor xml:id="c56-0059.01"/>Ernest <mod>
+        <del rend="strikethrough"><hi rend="underline">should be</hi></del>
+        <add place="superlinear">should follow</add>
+      </mod>. His constant</line>
+    <line>ill health when young has deprived</line>
+    <line><anchor xml:id="c56-0059.02"/>of the habit of application and now</line>
+    <line>that he enjoys good health <del rend="strikethrough">we</del> he</line>
+    <line>is continually in the open air <del rend="strikethrough">on</del></line>
+    <line>climbing the hills or rowing on the</line>
+    <line>lake. I, therefore, proposed that</line>
+    <line>he should<add place="superlinear" hand="#pbs">be</add> a farmer which you</line>
+    <line>know cousin is a favourite scheme</line>
+    <line>of mine &#x2013;A farmer's is a very healthy</line>
+    <line><del rend="strikethrough">&#x26;</del> happy life; and the least hurtful</line>
+    <line>or rather the most benificial <del rend="strikethrough">of any</del></line>
+    <line>profession.<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">of any.</add>
+      </mod> My <del rend="strikethrough">father</del> uncle had an</line>
+    <line>idea of his being<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">educated as</add>
+      </mod> an advocate, <mod>
+        <del rend="overwritten">&#x26;</del>
+        <add place="intralinear" hand="#pbs">that</add>
+      </mod> through</line>
+    <line>his interrest<add place="superlinear" hand="#pbs">he might become</add> a judge. But
+      besides that</line>
+    <line>he is not at all fit for such an</line>
+    <line>occupation, it is certainly <mod>
+        <del rend="strikethrough">better</del>
+        <add place="superlinear" hand="#pbs">more <del rend="strikethrough">honourable</del></add>
+        <add place="sublinear" hand="#pbs">creditable</add>
+      </mod> to</line>
+    <line><del rend="strikethrough">to</del> cultivate the earth for the suste</line>
+    <line>nance of man than <del rend="strikethrough">it</del> to be the</line>
+    <line>confid<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear" hand="#pbs">a</add>
+      </mod>nt &#x26; sometimes <mod>
+        <del rend="strikethrough">a helpmate</del>
+        <add place="superlinear" hand="#pbs">the accomplice</add>
+      </mod> of</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">their</del>
+        <add place="superlinear" hand="#pbs">his</add>
+      </mod> vices; which is the employment<mod>
+        <add place="sublinear"><metamark function="displacement" xml:id="c56-0059.03"
+            >^</metamark></add>
+      </mod></line>
+    <line>of a Lawyer. <delSpan spanTo="#c56-0059.05" rend="strikethrough"/>And if he should
+      become</line>
+    <line>a judge<anchor xml:id="c56-0059.05"/> I said that <mod>
+        <del rend="strikethrough">a</del>
+        <del rend="strikethrough">rich</del>
+        <add place="superlinear" hand="#pbs">the occupation of a prosperous</add>
+      </mod> farmer</line>
+    <line>if it were not a more honourable</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0059.01">
+    <line><add> profession</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0059.02">
+    <line><add> him</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0059.03">
+    <line><add hand="#pbs">&#x26; <unclear unit="chars" extent="5"/></add></line>
+  </zone>
+</surface>

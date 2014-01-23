@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0090" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0090.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>106</line>
+  </zone>
+  <zone type="main">
+    <line>that group of laboures coming from among</line>
+    <line>their vines; &amp; that village half hid in the</line>
+    <line>recess of the mountain. Oh Surely the spi</line>
+    <line>rit that inhabits &amp; guards this place</line>
+    <line>has a soul more in <del rend="strikethrough">sympathy</del><add place="sublinear"
+          ><metamark function="insert">^</metamark></add><add place="superlinear"
+        >harmony</add> with</line>
+    <line>man than those who pile the glacier or</line>
+    <line>retire to the inaccessible peaks of the</line>
+    <line>mountains of our own country.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I smiled at the enthusiasm of my</line>
+    <line>friend and remembered with a sigh the</line>
+    <line>period when my eyes would have glistened</line>
+    <line>with joy to behold the scenes <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod> I now</line>
+    <line>viewed. But the recollection of those days</line>
+    <line>was too painful; I must shut out all</line>
+    <line>thought to enjoy tranquillity, &amp; that</line>
+    <line>reflection alone is sufficient to poison</line>
+    <line>every pleasure.<milestone unit="tei:p"/><add place="intralinear"><metamark
+          function="paragraph">[</metamark></add> At Cologne we descended</line>
+    <line>to the plains of Holland &amp; we resolved to</line>
+    <line>post the remainder of our way for</line>
+    <line>the wind was contrary &amp; the stream of</line>
+    <line>the river was too gentle to aid us. We now</line>
+    <line>arrived at very different country. The</line>
+    <line>soil was sandy and the wheels sunk deep</line>
+    <line>in it. The towns of th<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">is</add>
+      </mod> country are the</line>
+    <line>most pleasing part of the scene. The</line>
+    <line>Dutch are extremely neat but there is</line>
+    <line>an awkwardness in their contrivances</line>
+    <line>that often surprised us. In one place,</line>
+    <line>I remember, a wind mill was <del rend="strikethrough" instant="true">placed</del></line>
+    <line>situated in such a manner that the</line>
+    <line>postillion was obliged to guide the car-</line>
+    <line>riage close to the opposite side of the</line>
+    <line>road to escape from the sweep of its</line>
+    <line>sails. The way often led between two ca-</line>
+    <line>nals where the road was only broard</line>
+  </zone>
+</surface>

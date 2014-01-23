@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0119" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0119.jp2"/>
+  <zone type="pagination" rend="bordered"><line>135</line></zone>
+  <zone type="library"><line>60</line></zone>
+
+  <zone type="main">
+    <line>went to the town for an appothecary, but</line>
+    <line>life was quite gone.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Several other men <del rend="strikethrough">deposed
+        con</del></line>
+    <line>were examined concerning my landing &amp; they</line>
+    <line>agreed that with the strong north wind that</line>
+    <line>had arrisen during the night it was very</line>
+    <line>probable that I had beaten about for</line>
+    <line>many hours &amp; have been obliged to return</line>
+    <line><anchor xml:id="c57-0119.01"/>to the same <mod>
+        <del rend="strikethrough">place</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">spot</add>
+      </mod> from which I had</line>
+    <line><del rend="strikethrough">set out</del> departed. Besides, they observed,</line>
+    <line>that it appeared I had brought the body</line>
+    <line>from another place &amp; it was likely</line>
+    <line>that <del rend="strikethrough">I might</del>
+      <del rend="strikethrough"><unclear>p</unclear></del> as I did not appear to know</line>
+    <line>the shore I might have put in to the</line>
+    <line>harbour ignorant of the distance</line>
+    <line>of the town of &#x2014;&#x2014; from the place where</line>
+    <line>I had deposited the <del rend="strikethrough">body</del><del rend="unmarked">.</del>
+      corpse.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">>M<hi rend="sup">r</hi>. Kirwin on hearing this
+      evidence</line>
+    <line>desired that I should be taken into the</line>
+    <line>room where the body lay for interment</line>
+    <line>that it might be observed what effect</line>
+    <line>the sight of it <add place="superlinear" hand="#pbs">would</add> produce<del
+        rend="strikethrough">d</del> upon me.</line>
+    <line>This idea was probably suggested by</line>
+    <line>the extreme agitation I had exhibited</line>
+    <line><del rend="strikethrough">th</del> when the mode of the murder had</line>
+    <line>been <del rend="strikethrough">describ</del> described. I was according</line>
+    <line>ly conducted by the Magistrate &amp; several</line>
+    <line>other persons to the Inn. I could not</line>
+    <line>help being struck by the strange coin</line>
+    <line>cidences that had taken place during</line>
+    <line>this eventful night but knowing that</line>
+    <line>I had been <del rend="strikethrough">in</del> conversing with several</line>
+    <line>persons in the island I had inhabited</line>
+    <line>about the time that the body <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">had been</add>
+      </mod> found</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0119.01">
+    <line><add>nearly </add></line>
+  </zone>
+</surface>

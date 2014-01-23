@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0008" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0008.jp2"/>
+  <zone type="main">
+    <milestone unit="tei:speaker" spanTo="#e1-0008.01"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0008.01"/>
+    <line>What charioteers are these</line> <milestone unit="tei:speaker" spanTo="#e1-0008.02"
+        />Panthea<anchor xml:id="e1-0008.02"/> 
+    <line rend="right">Where are their chariots?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.03"/>
+    <line rend="indent3"><del rend="strikethrough">Chorus o<metamark>&lt;</metamark></del></line>
+    <line rend="center">Semichorus of Hours. 1.</line>
+    <line rend="center"><del rend="strikethrough">Semichorus 1</del></line>
+    <anchor xml:id="e1-0008.03"/>
+    <line rend="indent2">The voice of the Spirits of air &amp; earth</line>
+    <line rend="indent2">Have drawn back the figured curtain of sleep</line>
+    <line rend="indent2">Which covered our being &amp; darkened our birth</line>
+    <line rend="indent2">In the deep&#x2014;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.04"/>
+    <line rend="center">a Voice</line>
+    <anchor xml:id="e1-0008.04"/>
+    <line rend="indent4">In the deep?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.05"/>
+    <line rend="center">Semichorus 2.</line>
+    <anchor xml:id="e1-0008.05"/>
+    <line rend="indent5">Oh below the deep</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.06"/>
+    <line rend="center">Semichorus 1.</line>
+    <anchor xml:id="e1-0008.06"/>
+    <line>An hundred ages we had been kept</line>
+    <line>Cradled in <mod>
+        <del rend="strikethrough">dreams</del>
+        <add place="superlinear">visions</add>
+      </mod> of hate &amp; <del rend="strikethrough"><unclear unit="chars" extent="1"/></del>
+      care</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0008.09"/>And each one who waked as his brother</line>
+    <line rend="right">slept<anchor xml:id="e1-0008.09"/></line>
+    <line>Found the truth&#x2014;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.07"/>
+    <line rend="center">Semichorus 2.</line>
+    <anchor xml:id="e1-0008.07"/>
+    <line rend="indent3">Worse than his visions were</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.08"/>
+    <line rend="center">Semichorus 1.</line>
+    <anchor xml:id="e1-0008.08"/>
+    <line>We have heard the lute of Hope in sleep</line>
+    <line>We have known the voice of love in dream</line>
+  </zone>
+</surface>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0167" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0167.jp2"/>
+  <zone type="pagination" rend="bordered"><line>18<mod><del rend="overwritten">5</del><add place="intralinear">3</add></mod></line></zone>
+  <zone type="library"><line>84</line></zone>
+  <zone type="main">
+    <line><del rend="strikethrough">And</del> you took me on board when <del rend="strikethrough"
+      >life</del> my</line>
+    <line>vigour was ex<mod>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear">h</add>
+    </mod>austed &#x26; <del rend="strikethrough">death would soon have</del></line>
+    <line>I should soon have sunk under my multi</line>
+    <line>plied hardships to a death <add place="superlinear" hand="#pbs">which I still</add>
+      dread<del rend="strikethrough">ed</del> for my</line>
+    <line>task is unfu<mod>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear">l</add>
+    </mod>filled. Oh when will my gui</line>
+    <line>ding <del rend="strikethrough">Oh! When s</del> spirit in conducting me</line>
+    <line>to him allow <mod>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear">me</add>
+    </mod> the rest I so much desire!</line>
+    <line>or must I die &#x26; he yet live&#x2014;If I do swear</line>
+    <line>to me, Walton, that he shall not escape</line>
+    <line>that you will seek him &#x26; satisfy my</line>
+    <line>vengeance in his death. Yet do I dare</line>
+    <line>ask you to undertake my pilgrimage to</line>
+    <line>endure the hardships that I have un</line>
+    <line>dergone. No I am not so selfish&#x2013; yet</line>
+    <line><unclear reason="case">W</unclear>hen I am dead if he should appear</line>
+    <!--"When" could be "when"-->
+    <line>if the ministers of vengeance should</line>
+    <line>conduct him to you <delSpan spanTo="#c57-0167.01" rend="strikethrough"/>I confide
+      that</line>
+    <line>you would<anchor xml:id="c57-0167.01"/> Swear that he shall</line>
+    <line>not live &#x2013; Swear that <del rend="strikethrough">the accumu</del></line>
+    <line>he shall not triumph over my accu</line>
+    <line>mulated miseries &#x26; live to make a</line>
+    <line>nother such a wretch as I am &#x2013; Oh he</line>
+    <line>is eloquent &#x26; persuasive and once</line>
+    <line>his words had even power over</line>
+    <line>my heart but trust him not&#x2013; His soul</line>
+    <line><del rend="strikethrough">h</del>is hellish <mod>
+      <add place="sublinear"><metamark function="insert">^</metamark></add>
+      <add place="superlinear" hand="#pbs">as his form</add>
+    </mod> full of <mod>
+      <del rend="strikethrough">malise</del>
+      <add place="superlinear" hand="#pbs">treachery</add>
+    </mod> &#x26; fiend like</line>
+    <line>mali<mod>
+      <del rend="strikethrough">gnity</del>
+      <add place="superlinear">ce</add>
+    </mod>&#x2013; hear him not, call on the</line>
+    <line>manes of William, Justine, Clerval</line>
+    <line>Elizabeth, my father and of the Whretch-</line>
+    <line>ed Victor &#x26; thrust your <mod>
+      <del rend="strikethrough">dagger</del>
+      <add place="superlinear" hand="#pbs">sword</add>
+    </mod>
+      <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear" hand="#pbs">into</add>
+      </mod> his</line>
+    <line>heart&#x2013; <del rend="strikethrough">If I then</del>
+      <del rend="strikethrough"><mod>
+        <del rend="strikethrough">live</del>
+        <add place="superlinear">exist</add>
+      </mod></del>
+      <del rend="strikethrough">to the knowled</del><del rend="unmarked">ge</del></line>
+    <line>I will hover near you &#x26; direct the steel</line>
+    <line>aright <del rend="strikethrough">fear not that you commit</del>
+      <del rend="strikethrough">an</del></line>
+  </zone>
+</surface>

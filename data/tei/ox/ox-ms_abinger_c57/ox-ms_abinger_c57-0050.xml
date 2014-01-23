@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0050" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0050.jp2"/>
+  <zone type="pagination"><line>75</line></zone>
+  <zone type="main">
+    <line>At that moment I heard the steps</line>
+    <line>of my younger protectors&#x2014;I had not</line>
+    <line>a moment to lose, but seizing the</line>
+    <line>hand of the old man I cried&#x2013; Now</line>
+    <line>is the time, sa<damage type="inkblot">ve</damage> a<damage type="inkblot">n</damage>d
+      protect me</line>
+    <line>You and your family are the</line>
+    <line>friends whom I seek &#x2013; Do not you</line>
+    <line>des<mod>
+        <del rend="strikethrough">a</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rt me in the hour of trial<mod>
+        <del rend="overwritten">&#x2013;</del>
+        <add place="intralinear">!</add>
+      </mod>.&#x2013;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Great God! exclaimed the old</line>
+    <line>man &#x2013; Who are you?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">At that instan<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> the cottage</line>
+    <line>door opened and Felix, <mod spanTo="#c57-0050.01"/><del rend="strikethrough"
+        >Maimouna</del></line>
+    <line><anchor xml:id="c57-0050.02"/><anchor xml:id="c57-0050.01"/>and Agatha entered
+      &#x2013; Who can</line>
+    <line>describe their horro<mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">r</add>
+      </mod> and ast<damage type="inkblot">o</damage></line>
+    <line>nishment on beholding <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> &#x2013;Agatha</line>
+    <line>fainted &amp; <mod>
+        <del rend="strikethrough">Maimouna</del>
+        <add place="superlinear">Safie</add>
+      </mod> unable </line>
+    <line>to attend to her friend rushed</line>
+    <line>out of the cottage.&#x2013; Felix darted</line>
+    <line>forward and with supernatural</line>
+    <line>strength tore me from his father</line>
+    <line>to whose knees I clung &#x2013;In a</line>
+    <line>transport of fury he dashed</line>
+    <line>me to the ground and struck</line>
+    <line>me voi<del rend="strikethrough">len</del>lently with a stick</line>
+    <line>I saw him <del rend="strikethrough">going</del>
+      <del rend="strikethrough">to</del> on the point</line>
+    <line>of repeating the <del rend="strikethrough">p</del> blow when </line>
+    <line>overcome by pain and anguish</line>
+    <line>I quitted the cottage and in the</line>
+    <line>general tumult, escaped unper</line>
+    <line>ceived to my hovel.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0050.02">
+    <line><add>Safie </add></line>
+  </zone>
+</surface>

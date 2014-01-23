@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0099" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0099.jp2"/>
+  <zone type="pagination" rend="bordered"><line>12<mod><del rend="overwritten">7</del><add place="intralinear">9</add></mod></line></zone>
+  <zone type="library"><line>47</line></zone>
+  <zone type="main">
+    <line>Judges had already condemned <mod>
+        <add place="superlinear"><metamark function="displacement" xml:id="c56-0099.01"
+          >X</metamark></add>
+        <del rend="strikethrough">her</del>
+      </mod></line>
+    <line>I rushed out of the court in agony. The</line>
+    <line>tortures of the accused did not equal</line>
+    <line>mine she was sustained by innocence</line>
+    <line>but the fangs of remorse tore my bosom&#x2013;</line>
+    <line>I passed a night of unmingled wretched</line>
+    <line>ness. In the morning I went to the</line>
+    <line>court; my lips and throat were</line>
+    <line>parched<unclear>.</unclear> I dared not ask the fatal</line>
+    <line>question &#x2013; but I was know<add place="intralinear">n</add> and the</line>
+    <line>officer guessed <mod spanTo="#c56-0099.04"/><del rend="strikethrough" next="#c56-0099.05"
+        >what I came to en-</del><add place="sublinear"><metamark function="insert">^</metamark></add><add
+        place="superlinear">the cause of my visit</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0099.05">quire;</del><anchor xml:id="c56-0099.04"/>
+      &#x2014; the ballots had been thrown</line>
+    <line>they were all <mod>
+        <del rend="strikethrough">blak</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">black</add>
+      </mod> &#x26; Justine was</line>
+    <line>condemned.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0099.01">
+    <addSpan spanTo="#c56-0099.02"/>
+    <line><mod spanTo="#c56-0099.06"/><delSpan spanTo="#c56-0099.03"/>the accu</line>
+    <line>sed<anchor xml:id="c56-0099.03"/></line>
+    <line><metamark function="displacement">X</metamark>my un</line>
+    <line>happy</line>
+    <line>victim<anchor xml:id="c56-0099.06"/></line>
+    <anchor xml:id="c56-0099.02"/>
+  </zone>
+</surface>

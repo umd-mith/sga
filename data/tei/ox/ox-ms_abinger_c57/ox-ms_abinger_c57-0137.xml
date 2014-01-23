@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0137" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0137.jp2"/>
+  <zone type="pagination" rend="bordered"><line>153</line></zone>
+  <zone type="library"><line>69</line></zone>
+  <zone type="main">
+    <line>and companion. But it is your hap</line>
+    <line>piness I desire as well as my own <del rend="strikethrough">felicity</del></line>
+    <line>when I declare to you that our marriage</line>
+    <line>would render me eternally miserable</line>
+    <line>unless it were the dictate of your own</line>
+    <line>free choice. Even now I weep when I <del rend="strikethrough">co</del> think</line>
+    <line>that borne down as you are by the</line>
+    <line>cruellest misfortunes you may stifle</line>
+    <line>by the word honor all hope of that</line>
+    <line>love &#x26; happiness which would alone</line>
+    <line><mod>
+        <del rend="strikethrough">conduce to your felicity</del>
+        <del rend="unmarked">.</del>
+        <add place="superlinear" hand="#pbs">restore you to yourself.</add>
+      </mod> I who have</line>
+    <line>so disinterrested an affection for you</line>
+    <line>may encrease your miseries tenfold</line>
+    <line>by being an obstacle to your wishes</line>
+    <line>Ah Victor be assured that you<add place="sublinear">r</add> cou</line>
+    <line>sin &#x26; playmate has too sincere</line>
+    <line>a love for you not to be made</line>
+    <line>wretched by this supposition. Be hap</line>
+    <line>py my friend and if you obey me in</line>
+    <line>this one request be assured that</line>
+    <line>nothing on earth will have the power</line>
+    <line>to <mod>
+        <del rend="strikethrough">disturb.</del>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear">interrupt</add>
+      </mod> my tranquillity.</line>
+    <milestone unit="tei:p"/>
+    <line><space unit="chars" extent="4"/>Do not let this letter disturb you.</line>
+    <line>Do <del rend="strikethrough">y</del> not answer it tomorrow or the</line>
+    <!--"Do" could be "do"-->
+    <line>next day or not even untill you</line>
+    <line>come if it will give you pain. My</line>
+    <line>Uncle will send me news of your</line>
+    <line>health and if I see but one smile</line>
+    <line>on your lips when we meet occa</line>
+    <line>sioned by this letter or any other</line>
+    <line>exertion of mine I shall need no</line>
+    <line>other happiness&#x2013; Your affectionate friend</line>
+    <line rend="right">Elizabeth Lavenza.</line>
+    <line>Geneva</line>
+  </zone>
+</surface>

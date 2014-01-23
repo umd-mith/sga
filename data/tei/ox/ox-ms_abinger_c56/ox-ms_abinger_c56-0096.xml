@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0096" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0096.jp2"/>
+  <zone type="pagination" rend="bordered"><line>126</line></zone>
+  <zone type="main">
+    <line>the unhappy victim<del rend="strikethrough">e</del> "how heavily and fatally this</line>
+    <line><del rend="strikethrough">o</del> one circumstance <del rend="strikethrough">we</del>
+      weighs against me</line>
+    <line>but I have no power of explaining it and</line>
+    <line>when I have expressed my utter ignorance</line>
+    <line>I am only left <del rend="strikethrough">w</del>
+      <del rend="strikethrough">as any other is to conject</del><del rend="unmarked"
+      >ure</del></line>
+    <line>to conjecture concerning the probabilities</line>
+    <line>by which it might have been placed in</line>
+    <line>my pocket. But <del rend="strikethrough">I</del> here also I am <mod>
+        <del rend="strikethrough">at a</del>
+        <add place="superlinear">checked</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">stand</del>
+        <add place="superlinear">I believe that</add>
+      </mod> I have have no enemy on earth <delSpan rend="strikethrough" spanTo="#c56-0096.01"
+      />who</line>
+    <line>that I know<anchor xml:id="c56-0096.01"/> and none surely who could have</line>
+    <line>been so wicked as <del rend="strikethrough">d</del> to destroy me <mod>
+        <del rend="strikethrough">so cruelly</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">wantonly.</add>
+      </mod></line>
+    <line>Did the murderer place it there? I know</line>
+    <line>of no opportunity afforded him for so doing</line>
+    <line>or if I had why should he have stolen</line>
+    <line>the jewel to part with it <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">again</add>
+      </mod> so soon <mod>
+        <del rend="strikethrough">again</del>
+        <add place="superlinear">?</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">"I commit my cause to the justice of</line>
+    <line>my judges yet I see no room for hope. I</line>
+    <line>beg permission to have a few witnesses exam-</line>
+    <line>ined concerning my character and if the<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear" hand="#pbs">ir</add>
+      </mod></line>
+    <line><add place="superlinear" hand="#pbs">testimony shall not overweigh</add>my supposed guilt
+        <del rend="strikethrough">is an apparent</del> I <mod>
+        <del rend="strikethrough">shall</del>
+        <add place="superlinear" hand="#pbs">must</add>
+      </mod></line>
+    <line>be condemned although I <del rend="strikethrough">p</del> would pledge</line>
+    <line>my salvation on my innocence."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Several witnesses were called who had</line>
+    <line>known her for many years and they spoke</line>
+    <line>well of her but fear and hatred of the</line>
+    <line>crime of which they supposed her guilty</line>
+    <line>rendered them timorous and unwilling</line>
+    <line><mod>
+        <del rend="strikethrough">to speak</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">come forward</add></del>
+      </mod>. Elizabeth saw even this last</line>
+    <line>resource, her excellent and irreproacha</line>
+    <line>ble dispositions &#x26; conduct, about to fail</line>
+  </zone>
+</surface>

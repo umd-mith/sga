@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0088" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0088.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>104</line>
+  </zone>
+  <zone type="main">
+    <line>
+      <del rend="strikethrough">from</del> whence we might take shipping for</line>
+    <line>London. During this voyage we passed by</line>
+    <line>many willowy islands &amp; saw several beautiful</line>
+    <line>towns. We staid a day at Manheim, <mod>
+        <del rend="strikethrough">on</del>
+        <add place="superlinear" hand="#pbs">&amp;</add>
+      </mod> on</line>
+    <line>the fifth from our departure from Stras</line>
+    <line>bourgh, arrived at Mayence. The course of</line>
+    <line>the Rhine below Mayence becomes much</line>
+    <line>more picturesque. The river descends rapid</line>
+    <line>ly and winds between hills not high but</line>
+    <line>steep and of beautiful forms. We saw</line>
+    <line>many ruined cast<del rend="strikethrough">l</del>les standing on the edges</line>
+    <line>of preci<del rend="strikethrough">s</del>pieces <delSpan spanTo="#c57-0088.01"
+        rend="strikethrough"/>&amp; the sl green slopes of</line>
+    <line>the hills<anchor xml:id="c57-0088.01"/> surrounded by black woods</line>
+    <line>high &amp; inaccessible. This part of the Rhine</line>
+    <line>indeed presents a <del rend="strikethrough">wonderfully</del> singularly</line>
+    <line>variegated lanscape. In <add place="superlinear">one</add> spot you view</line>
+    <line>rugged hills, ruined castl<del rend="strikethrough">l</del>es overlooking</line>
+    <line>tremendous precipieces with the dark</line>
+    <line>Rhine rushing beneath. And on the</line>
+    <line>sudden turn of a <del rend="strikethrough">p</del> promontory flou</line>
+    <line>rishing vineyards &amp; populous towns</line>
+    <line><milestone unit="tei:seg" spanTo="#c57-0088.02" corresp="#c57-0088.03"/>with green sloping
+        <del rend="strikethrough">me</del> banks<anchor xml:id="c57-0088.02"/> &amp; a</line>
+    <line>meandering river <anchor xml:id="c57-0088.03"/> occupy the scene.</line>
+    <line>We travelled at the time of the vintage</line>
+    <line>and heard the song of the labourers</line>
+    <line>as we glided down the stream. Even I,</line>
+    <line>depressed in mind, &amp; my spirits conti</line>
+    <line>nually agitated by gloomy feelings; even I</line>
+    <line>was pleased. I lay at the bottom of the</line>
+    <line>boat and as I gazed on the cloudless</line>
+    <line>blue sky I<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"> seemed to</add>
+      </mod> dr<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">i</add>
+      </mod>nk in a tranquillity to</line>
+    <line>which I had long been a stranger.</line>
+    <line>And if these were my sensations who</line>
+    <line>can describe those of Henry. He felt as</line>
+    <line>if he had been transported to fairy land</line>
+  </zone>
+</surface>

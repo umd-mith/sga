@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0027" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0027.jp2"/>
+  <zone type="library">13</zone>
+  <zone type="main">
+    <line rend="indent1">Man, oh not men; a chain of linked thought</line>
+    <line rend="indent1">Of love &amp; might to be divided not</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0027.01"/>Compelling the elements with
+      adamantine</line>
+    <line rend="right">stress&#x2014;<anchor xml:id="e1-0027.01"/></line>
+    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0027.02"/>As the Sun rules, even with a
+      tyrants</line>
+    <line rend="right">gaze<anchor xml:id="e1-0027.02"/></line>
+    <line rend="indent1">The unquiet Republic of the maze</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0027.03"/>Of Planets, struggling fierce towards
+      Heavens</line>
+    <line>free wild<add place="superlinear">er</add>ness.<anchor xml:id="e1-0027.03"/></line>
+    <line rend="indent1">Man, one harmonious Soul of many a soul</line>
+    <line rend="indent1">Whose nature is it's own divine controul</line>
+    <line>Where all things flow to all, as rivers to the sea;</line>
+    <line rend="indent1">Familiar acts are beautiful <mod>
+        <restore type="underline">
+          <hi rend="underline"><del rend="strikethrough">thro</del></hi>
+        </restore>
+        <del rend="strikethrough"><add place="superlinear">by</add></del>
+      </mod> love</line>
+    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0027.04"/>Labour &amp; Pain &amp; Grief <mod>
+        <del rend="strikethrough">through</del>
+        <add place="superlinear">in</add>
+      </mod> life's green</line>
+    <line rend="right">grove<anchor xml:id="e1-0027.04"/></line>
+    <line><milestone unit="tei:l" spanTo="#e1-0027.05"/>Sport like tame beasts&#x2014;none knew
+      how</line>
+    <line rend="right"><add><metamark>(</metamark></add>gentle they could be<anchor
+        xml:id="e1-0027.05"/><add><metamark>)</metamark></add></line>
+    <line rend="indent5"
+      ><add><metamark>&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;</metamark></add></line>
+    <!--The encoding for the metamarks needs to be revisited.-->
+    <line rend="indent1">His Will, with all mean passions, bad delight<unclear>s</unclear></line>
+    <line rend="indent1">And selfish cares, its trembling satellites,</line>
+    <line>A spirit ill to guide, but mighty to obey<unclear>;</unclear></line>
+    <line rend="indent1">Is as a tempest-winged ship, whose helm</line>
+    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0027.06"/>Love rules, through waves
+      which dare</line>
+    <line rend="right">not overwhelm<anchor xml:id="e1-0027.06"/></line>
+    <line><milestone unit="tei:l" spanTo="#e1-0027.07"/>Forcing Life's wildest shores to own its
+        sovereign<unclear>s</unclear></line>
+    <line rend="right">sway<anchor xml:id="e1-0027.07"/></line>
+    <line><add><metamark function="count">375</metamark></add></line>
+  </zone>
+</surface>

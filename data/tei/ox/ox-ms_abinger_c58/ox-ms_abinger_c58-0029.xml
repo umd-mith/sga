@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0029" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0029.jp2"/>
+  <zone type="pagination"><line>131</line></zone>
+  <zone type="library"><line>15</line></zone>
+  <zone type="main">
+    <line>of little avail; my revenge is of no moment to you, yet</line>
+    <line>while I allow it to be a vice I confess that it is the devour</line>
+    <line>-ing and only passion of my soul. My rage is unspeaka</line>
+    <line>ble when I reflect that the murderer whom I have</line>
+    <line>turned loose upon society still exists. You refuse</line>
+    <line>my just demand; I have but one resource and I de-</line>
+    <line>vote myself either in <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">my</add>
+      </mod>life or death to his destruc-</line>
+    <line>tion.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I trembled with excess of agitation as I said this; there</line>
+    <line>was a frenzy in my manner, and something I doubt not</line>
+    <line>of that haughty fierceness which the martys of old are </line>
+    <line>said to have possessed. But to a Genevan magistrate</line>
+    <line>whose mind was occupied by far other ideas than those</line>
+    <line>of devotion and heroism, this elevation of mind had much the</line>
+    <line>appearance of madness. He endeavoured to soothe me as a</line>
+    <line>nurse does a child and reverted to my tale as the effects of deli</line>
+    <line>rium<add place="intralinear" hand="#comp"><metamark function="paragraph"
+        >[</metamark></add>. <milestone unit="tei:p"/>"Man, I cried, how ignorant ar<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">t</add>
+      </mod> thou in thy pride of</line>
+    <line>wisdom. Cease, you know not what it is you say.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I broke from the house <mod>
+        <del rend="strikethrough">ang</del>
+        <add place="sublinear"><metamark function="insert">^ ^</metamark></add>
+        <add place="superlinear">angry and</add>
+      </mod> disturbed and retired to</line>
+    <line>meditate on some other mode of action.</line>
+  </zone>
+</surface>

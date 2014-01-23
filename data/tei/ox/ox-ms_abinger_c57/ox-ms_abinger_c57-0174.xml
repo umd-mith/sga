@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0174" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0174.jp2"/>
+  <zone type="pagination" rend="bordered"><line>190</line></zone>
+  <zone type="main">
+    <line rend="right">Septemb<damage type="inkblot">er</damage> 6<hi rend="sup"
+          ><hi rend="underline">th</hi></hi></line>
+    <line>A scene has just passed of such <mod>
+        <del rend="strikethrough">curious</del>
+        <add place="superlinear" hand="#pbs">uncommon</add>
+      </mod> inter</line>
+    <line>rest that although it is highly probable that</line>
+    <line>the papers may never reach you, my dear</line>
+    <line>Margeret, yet I cannot forbear recording it.</line>
+    <line>We are still surrounded by <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">mountains of</add>
+      </mod> ice still in <mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>m</line>
+    <line>minent danger <add place="superlinear" hand="#pbs">of being crushed in their
+        conflict.</add>&#x2014; The cold is excessive &amp;</line>
+    <line><anchor xml:id="c57-0174.01"/>my unfortunate comrades have already</line>
+    <line>found a grave admidst this scene of</line>
+    <line>desolation. Frankenstein has declined daily</line>
+    <line><del rend="strikethrough">his</del> in health a feverish fire still glim</line>
+    <line>mers in his eyes but he is ex<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">h</add>
+      </mod>austed &amp;</line>
+    <line>when suddenly rouzed to any exertion he</line>
+    <line>speedily sinks again <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear" hand="#pbs">into</add>
+      </mod> apparent lifelessness.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I mentioned my last letter the fears</line>
+    <line>I had of mutiny. This morning as I sat</line>
+    <line>watching the <add place="superlinear">wan</add> countenance of my friend his</line>
+    <line>eyes half closed and his limbs hanging list</line>
+    <line>lessly I was rouzed by half a dozen of the</line>
+    <line>sailors who desired admission into the ca</line>
+    <line>bin they enter<del rend="strikethrough">r</del>ed &amp; their leader adressed</line>
+    <line>me. He told me that he &amp; his compani</line>
+    <line>ons had been chosen by the other sailors</line>
+    <line>to come in deputation to me to make</line>
+    <line>a demand which in justice I could not</line>
+    <line>refuse. We were immured by ice &amp;</line>
+    <line>would probably never escape but they</line>
+    <line>feared that if, as was possible the ice</line>
+    <line>should be dissipated and a free passage</line>
+    <line>opened I should be rash enough to conti</line>
+    <line>nue my voyage &amp; lead them to fresh</line>
+    <line>dang<damage type="inkblot">e</damage>rs after they <mod>
+        <del rend="strikethrough">had</del>
+        <add place="superlinear" hand="#pbs">might</add>
+        <del rend="strikethrough">so</del>
+      </mod> happily <add place="superlinear" hand="#pbs">have</add> sur</line>
+    <line>mounted <mod>
+        <del rend="strikethrough">this</del>
+        <del rend="unmarked">.</del>
+        <add place="superlinear" hand="#pbs">this.</add>
+      </mod> They desired therefore that</line>
+    <line>I should make a solemn promise <delSpan spanTo="#c57-0174.02" rend="strikethrough"
+      />that</line>
+    <line>when<anchor xml:id="c57-0174.02"/> if the vess<damage type="inkblot">e</damage>l s<damage
+        type="inkblot">houl</damage>d be freed, <mod>
+        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="superlinear" hand="#pbs">that</add>
+      </mod> I</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0174.01">
+    <line><add>many of </add></line>
+  </zone>
+</surface>

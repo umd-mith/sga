@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0016" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0016.jp2"/>
+  <zone type="pagination" rend="bordered"><line>46</line></zone>
+  <zone type="main">
+    <line>and <del rend="strikethrough">affectionate</del> endearing manners</line>
+    <line>inspired the tenderest affection. Such</line>
+    <line>was our domestic circle from which</line>
+    <line>care and pain seemed for ever banish</line>
+    <line>ed. <del rend="strikethrough">f</del> My father directed our studies</line>
+    <line>and my mother partook of our</line>
+    <line>enjoyments. <mod>
+        <del rend="strikethrough">we were all equal</del>
+        <anchor xml:id="c56-0016.01"/>
+      </mod> the</line>
+    <line>voice of command was never heard</line>
+    <line>among us but mutual affection</line>
+    <line>engaged us all to comply with<add place="intralinear" hand="#pbs">,</add> &#x26; <add
+        place="intralinear" hand="#pbs">to</add></line>
+    <line>obey the slightest desire of each</line>
+    <line>other.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0016.01">
+    <addSpan spanTo="#c56-0016.02"/>
+    <line><mod>
+        <del rend="strikethrough">we none</del>
+        <add place="superlinear">neither</add>
+      </mod> of</line>
+    <line>us possessed</line>
+    <line>an envied</line>
+    <line>preheminence</line>
+    <line>over the other</line>
+    <anchor xml:id="c56-0016.02"/></zone>
+</surface>

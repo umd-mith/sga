@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0116" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0116.jp2"/>
+  <zone type="pagination" rend="bordered"><line>132</line></zone>
+  <zone type="main">
+    <line>the death of a gentleman who was found murdered</line>
+    <line>here last night.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">This answer startled <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me,</add>
+      </mod> But I presently</line>
+    <line>recovered myself. I was innocent &#x26; that could</line>
+    <line>easily be proved &#x2013; accordingly I followed my con</line>
+    <line>ductor in silence &#x26; was led to <del rend="strikethrough">wha</del> one o<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">f</add>
+      </mod> the</line>
+    <line>best houses in <add place="superlinear" hand="#pbs">the</add> town. I was ready to sink
+      from</line>
+    <line>fatigue &#x26; hunger, but bein<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1" reason="illegible"/></del>
+        <add place="intralinear" hand="#pbs">g</add>
+      </mod> surrounded by</line>
+    <line>a croud I thought it politic to rouse all</line>
+    <line>my stren<add place="intralinear" hand="#pbs">g</add>th that no physical debility
+      might</line>
+    <line>be construed into apprehension <del rend="strikethrough">&#x26;</del> or cons</line>
+    <line>cious guilt. Little did I then expect the</line>
+    <line>calamity that would in a few moments</line>
+    <line>overwhelm me, and <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">extinguish</add>
+      </mod> in horror &#x26; despair</line>
+    <line><del rend="strikethrough">extinguish</del> all fear of ignominy or death&#x2014;</line>
+    <line><del rend="strikethrough">The sun &#x26; ea</del> I must pause <del rend="strikethrough"
+        >for the</del></line>
+    <line><del rend="unmarked">sc</del><del rend="strikethrough">ene which I shall now
+        relate</del><add place="superlinear" hand="#pbs">for it</add> requires</line>
+    <line><mod><restore type="smear_strikethrough"><del rend="strikethrough">all my
+        fortitude</del></restore></mod>
+      <delSpan spanTo="#c57-0116.01" rend="strikethrough"/>&#x26; strength to suffer</line>
+    <line>me<anchor xml:id="c57-0116.01"/> to recall <mod>
+        <del rend="overwritten">its</del>
+        <add place="intralinear" hand="#pbs">the</add>
+      </mod> frightful images <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">of the events which</add>
+        <anchor xml:id="c57-0116.02"/>
+      </mod> in</line>
+    <line>proper detail to my recollection.</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0116.02">
+    <addSpan spanTo="#c57-0116.03" hand="#pbs"/>
+    <line> I am about</line>
+    <line>to relate in</line>
+    <anchor xml:id="c57-0116.03"/>
+  </zone>
+</surface>

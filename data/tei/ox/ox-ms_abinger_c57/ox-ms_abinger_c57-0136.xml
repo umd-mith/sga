@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0136" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0136.jp2"/>
+  <zone type="pagination"><line>152</line></zone>
+  <zone type="main">
+    <line>to you but have never had courage to begin.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">You <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">well</add>
+      </mod> know, <unclear reason="case">V</unclear>ictor, that <del rend="strikethrough">it</del>
+      our union</line>
+    <line>had been the favourite plan of my aunt</line>
+    <line>and uncle ever since our infancy&#x2013;We were</line>
+    <line>told this when young and taught to look</line>
+    <line>forward to it as an event that would</line>
+    <line>certainly take place. We were affectionate</line>
+    <line>playfellow<add place="intralinear">s</add> during childhood &#x26; I beli<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>ve</line>
+    <line>dear &#x26; <mod>
+        <del rend="strikethrough">beloved</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">valued</add>
+      </mod> friends to one another when</line>
+    <line>we grew older. But as a brother &#x26; sister</line>
+    <line>often entertain a lively affection towards</line>
+    <line>one another <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">without desiring a more intimate union</add>
+      </mod> may not <mod>
+        <del rend="strikethrough">this</del>
+        <add place="superlinear" hand="#pbs">such</add>
+      </mod> also be</line>
+    <line>our case. Tell me, dearest Victor, <unclear reason="case">A</unclear>nswer</line>
+    <line>me, I conjure you by our mutual happi</line>
+    <line>ness, with simple truth do you not love</line>
+    <line><del rend="strikethrough">as you would wish to love a wife</del></line>
+    <line>another?</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">You have travelled, you have spent</line>
+    <line><mod>
+        <del rend="strikethrough">some</del>
+        <anchor xml:id="c57-0136.01"/>
+      </mod> years of you<mod>
+        <del rend="overwritten">ng</del>
+        <add place="intralinear">r</add>
+      </mod> life at Ingolstadt&#x2013;&#x26;</line>
+    <line>I confess to <del rend="strikethrough">m</del> you, my friend that when</line>
+    <line>I saw you last Autumn so unhappy</line>
+    <line><del rend="strikethrough">&#x26; obstinately</del> flying from the society</line>
+    <line>of every creature to solitude &#x26; despon</line>
+    <line>dency I could not help supposing</line>
+    <line>that you might regret our connection</line>
+    <line>&#x26; believe your self bound in honour</line>
+    <line>to fulfil the wishes of your parents</line>
+    <line>although they opposed themselves to</line>
+    <line>your inclinations. But this is false</line>
+    <line>resoning. <del rend="strikethrough">I lo</del> I confess to <retrace cause="clarify"
+        >y</retrace>ou my</line>
+    <line>cousin that I <del rend="strikethrough">have</del> love you &#x26;</line>
+    <line>that in my airy castles of futurity</line>
+    <line>you have been my constant friend</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0136.01">
+    <line><add>several</add></line>
+  </zone>
+</surface>

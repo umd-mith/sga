@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0016" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0016.jp2"/>
+  <zone type="pagination"><line>118</line></zone>
+  <zone type="main">
+    <line>and I rushed into the room. <milestone unit="tei:p"/><add place="intralinear" hand="#comp"
+          ><metamark function="paragraph">[</metamark></add>Gread God! Why did I not</line>
+    <line>then expire! Why am I here to relate the dustruction</line>
+    <line>of the best hope and the purest creature of earth.</line>
+    <line>She was there, lifeless and inanimate<del rend="strikethrough">;</del> thrown
+      across</line>
+    <line>the bed, her head hanging down and her pale and</line>
+    <line>distorted features half covered by her hair. Every</line>
+    <line>where I turn I see the same figure, her bloodless</line>
+    <line>arms and relaxed form flung by the murderer on</line>
+    <line>its bridal bier. Could I behold this, and live? Alas!</line>
+    <line>life is obstinate and clings closest where it is most</line>
+    <line>hated. For a moment only did I lo<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">s</add>
+      </mod>e recollection;</line>
+    <line>I fainted.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">When I recovered, I found myself surrounded by</line>
+    <line>the people of the inn; their countenances expressed</line>
+  </zone>
+</surface>

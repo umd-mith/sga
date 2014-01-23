@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0031" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0031.jp2"/>
+  
+  <zone type="pagination" rend="bordered"><line>61</line></zone>
+  <zone type="library"><line>14</line></zone>
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c56-0031.07"/>Chap. 5<anchor xml:id="c56-0031.07"/></line>
+    <line>From this day natural philosophy and parti</line>
+    <line>cularly chemistry became <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">nearly</add>
+      </mod> my sole <del rend="strikethrough">appli</del></line>
+    <line>study. I read with ardour <del rend="strikethrough">m</del> those books</line>
+    <line>so full of genius and discrimination</line>
+    <line><mod>
+        <del rend="unmarked">th</del>
+        <del rend="strikethrough">at have been written</del>
+        <anchor xml:id="c56-0031.01"/>
+      </mod> on these sub-</line>
+    <line>jects. I attended the lectures, and culti</line>
+    <line>vated the acquaintance of the men</line>
+    <line>of science of the university; and I found</line>
+    <line>even in M<hi rend="underline"><hi rend="sup">r</hi></hi> Krempe a great deal</line>
+    <line>of sound sense &#x26; real information</line>
+    <line>combined it is true with a repulsive</line>
+    <line>phisiognomy &#x26; manners, but not on</line>
+    <line>that account the less valuable.</line>
+    <line>In M. Waldman I found a true friend.</line>
+    <line>His gentleness was never tinged by <del rend="strikethrough">dg</del></line>
+    <line>dogmatism and his instructions were</line>
+    <line>given with an air of frankness and</line>
+    <line>good nature that banished ever<add hand="#pbs" place="intralinear">y</add> idea</line>
+    <line>of <del rend="strikethrough">pedantl</del> pedantry. It was perhaps the</line>
+    <line>amiable character of this man that</line>
+    <line>enclined me more to the study of that</line>
+    <line>branch of <mod>
+        <del rend="strikethrough">science</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">natural philosophy which he professed</add>
+      </mod> than an intrinsic</line>
+    <line>love for the science itself. But this</line>
+    <line><mod>
+      <add place="intralinear"><metamark function="displacement" xml:id="c56-0031.03">X</metamark></add>
+        <del rend="strikethrough">was</del></mod> only in the first steps towards</line> the <line>knowledge; <mod>
+        <del rend="strikethrough">as</del>
+        <add place="superlinear" hand="#pbs">the more fully</add>
+      </mod> I entered <del rend="strikethrough">more fully</del> into</line>
+    <line><mod>
+        <del rend="strikethrough">the</del>
+        <del rend="strikethrough">philosophy</del>
+        <add place="superlinear" hand="#pbs">science </add>
+      </mod> the more I <mod>
+        <del rend="strikethrough">studied</del>
+        <del rend="strikethrough"><add place="superlinear">s</add></del>
+        <add place="superlinear" hand="#pbs"> pursued</add>
+      </mod> it</line>
+    <line>for its own sake. That application</line>
+    <line>which at first had been a matter</line>
+    <line>of <del rend="strikethrough">ch</del> duty <add place="sublinear"
+          ><metamark function="insert">^</metamark></add><add place="superlinear" hand="#pbs">&#x26;
+        resolution,</add> now became so ardent</line>
+    <line>and eager that the stars often</line>
+    <line>dissapeared <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add><anchor xml:id="c56-0031.05"/>
+      </mod> while I was yet <mod>
+        <del rend="strikethrough">labouring</del>
+        <add place="sublinear" hand="#pbs">engaged</add>
+      </mod></line>
+    <line>in my labrotary.</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0031.01">
+    <addSpan hand="#pbs" spanTo="#c56-0031.02"/>
+    <line>which modern</line>
+    <line>enquirers</line>
+    <anchor xml:id="c56-0031.02"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0031.03">
+    <addSpan hand="#pbs" spanTo="#c56-0031.04"/><line/>
+    <line><del rend="strikethrough">circumstance</del></line>
+    <line><del rend="strikethrough"><unclear>of</unclear></del>
+      <del rend="strikethrough">was had</del></line>
+    <line>state of mind had</line>
+    <line>place <metamark function="displacement">X</metamark></line><anchor xml:id="c56-0031.04"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0031.05">
+    <addSpan hand="#pbs" spanTo="#c56-0031.06"/>
+    <line>in the light of</line>
+    <line>morning</line>
+    <anchor xml:id="c56-0031.06"/>
+  </zone>
+</surface>

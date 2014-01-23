@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0119" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0119.jp2"/>
+  <zone type="pagination" rend="bordered"><line>149</line></zone>
+  <zone type="library"><line>57</line></zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c56-0119.01"/>Chap. 14<anchor xml:id="c56-0119.01"/></line>
+    <milestone unit="tei:p"/>
+    <line><retrace cause="clarify">T</retrace>he next day, contrary to the prognostics of our</line>
+    <line>guides, was fine although clouded. <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">We</add>
+      </mod> visited the</line>
+    <line>source of the Aveiron and rode about the</line>
+    <line>valley <mod>
+        <del rend="strikethrough">the whole da</del>
+        <del rend="unmarked">y</del>
+        <add hand="#pbs" place="superlinear">until evening</add>
+      </mod>. These sublime and</line>
+    <line>magnificent scenes afforded me the greatest</line>
+    <line>consolation that I was capable of receiving</line>
+    <line>They elevated me from <add place="superlinear">all</add> littleness of feeling</line>
+    <line>and although they <del rend="strikethrough">d</del> did not remove my</line>
+    <line>grief they <del rend="strikethrough">t</del> subdued and tranquilized it.</line>
+    <line>In some degree<retrace cause="clarify" hand="#pbs">,</retrace> also they diverted my
+      mind</line>
+    <line>from the thoughts <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">over which</add>
+      </mod> it had brooded <del rend="strikethrough">over</del></line>
+    <line>for the last month<del rend="strikethrough">s</del>. I returned in the</line>
+    <line>evening, fatigued but less unhappy and convered</line>
+    <line>with the family <del type="strikethrough">t</del> with more cheerfulness than</line>
+    <line><del rend="strikethrough">I</del> had been <mod>
+        <del rend="strikethrough">accustomed</del>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear" hand="#pbs">my custom</add>
+      </mod> for some time. My fa</line>
+    <line>ther was pleased and Elizabeth overjoyed; "My</line>
+    <line>dear Cousin," said she, "You see what happiness</line>
+    <line>you diffuse when you are <mod>
+        <del rend="strikethrough">cheerful</del>
+        <add hand="#pbs" place="superlinear">happy</add>
+      </mod>; do</line>
+    <line>not relapse again!&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The following morning the rain poured</line>
+    <line>down in torrents and thick mists hid</line>
+    <line>the summits of the mountains. I rose early</line>
+    <line>but felt unusually melancholy. The rain</line>
+    <line>depressed <mod>
+        <del rend="strikethrough">my</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod>, my old feelings recurred</line>
+    <line>and I was miserable. I knew how my father</line>
+    <line>would be dissapointed at this sudden</line>
+    <line>change and I wished to avoid him</line>
+    <line>untill I had <del rend="strikethrough">rev</del> recovered myself so far</line>
+    <line>as to conceal the feelings that overpowered</line>
+    <line>me &#x2014; I knew that they would remain</line>
+    <line>that day at the inn and as I had</line>
+  </zone>
+</surface>

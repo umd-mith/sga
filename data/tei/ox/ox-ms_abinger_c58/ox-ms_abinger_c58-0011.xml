@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0011" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0011.jp2"/>
+  <zone type="pagination"><line>113</line></zone>
+  <zone type="library"><line>6</line></zone>
+  <zone type="main">
+    <line><del rend="strikethrough">ey</del> eyes but it continually gave place to
+      distraction</line>
+    <line>and reverie.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The sun sunk lower in the heavens; we</line>
+    <line>passed the river Drance and observed its path</line>
+    <line>through the chasms of the higher and the glens</line>
+    <line>of the lower hills. The <del rend="strikethrough" instant="true">Ap</del> Alps here come closer</line>
+    <line>to the lake and we approached the amphi-</line>
+    <line><del rend="strikethrough" instant="true">thre</del> theatre of mountains which forms the</line>
+    <line>eastern boundary of the lake. The spire of Evian</line>
+    <line>shone <del rend="strikethrough">un<mod>
+          <del rend="overwritten">t</del>
+          <add place="intralinear">d</add>
+        </mod>e</del> under the woods that surrounded</line>
+    <line>it and the range of mountain above mountain</line>
+    <line>by which it was overhung.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">The wind which had hitherto carried us a-</line>
+    <line>long with amazing rapidity sunk at sunset to a</line>
+  </zone>
+</surface>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0105" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0105.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>121</line>
+  </zone>
+  <zone type="library">
+    <line>53</line>
+  </zone>
+  <zone type="main">
+    <line>all nature reposed under the eye of the</line>
+    <line>quiet moon A few fishing<del rend="strikethrough">s</del> vessels alone</line>
+    <line>specked the water and now &amp; then the</line>
+    <line>gentle breeze<del rend="strikethrough">d</del> wa<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">f</add>
+      </mod>ted the sound of the</line>
+    <line>voices as the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">fisher</add>
+      </mod>men called to one another.</line>
+    <line>I felt the silence although I was hardly</line>
+    <line>conscious of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">its</add>
+      </mod> extreme profundity untill</line>
+    <line>my ear was suddenly arrested by</line>
+    <line>the paddling of oars near the shore</line>
+    <line>and a person landed close to my house.</line>
+    <line>In a few minutes after I heard the</line>
+    <line>creaking of my door as if some one</line>
+    <line>endeavoured to open it softly. I</line>
+    <line>trembled from head to foot; I felt a</line>
+    <line>presentiment of who it was and wished</line>
+    <line>to rouse one of the peasants who dwelt</line>
+    <line>in a cottage not far from mine. But</line>
+    <line>I was overcome by the <del rend="strikethrough" instant="true">fright</del>
+      sensation</line>
+    <line><anchor xml:id="c57-0105.01"/>helplessness so often felt in a fright</line>
+    <line>ful dream when you in vain endea</line>
+    <line>vour to fly the impending danger &amp;</line>
+    <line>was rooted to the spot. Presently I heard</line>
+    <line>the sound of footsteps along the passage,</line>
+    <line><mod>
+        <del rend="strikethrough">my</del>
+        <anchor xml:id="c57-0105.02"/>
+      </mod> door opened &amp; the wretch whom I</line>
+    <line>dreaded appeared. Shutting the door he</line>
+    <line><mod>
+        <del rend="strikethrough">advanced towards</del>
+        <anchor xml:id="c57-0105.03"/>
+      </mod> me &amp; said in a</line>
+    <line>smothered <del rend="strikethrough">v</del> voice:&#x2014; You have des</line>
+    <line>-troyed the work that you began<mod>
+        <del rend="overwritten">.</del>
+        <add place="intralinear">;</add>
+      </mod> What</line>
+    <line>is it that you intend? Do you dare break</line>
+    <line>your promise? I <del rend="strikethrough">h</del> have endured toil</line>
+    <line>&amp; misery: I left Switzerland with you;</line>
+    <line>I crept along the shores of the Rhine</line>
+    <line><del rend="strikethrough">with you</del>, among its willow <del rend="strikethrough"
+        instant="true">ils</del> islands</line>
+    <line>and <mod>
+        <del rend="strikethrough">upon</del>
+        <add place="superlinear" hand="#pbs">over</add>
+      </mod> the summits of its hills. I have</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0105.01">
+    <line><add hand="#pbs">of </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0105.02">
+    <line><add hand="#pbs">the</add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0105.03">
+    <line><add>approached</add></line>
+  </zone>
+</surface>

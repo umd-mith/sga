@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0142" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0142.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>158</line>
+  </zone>
+  <zone type="main">
+    <line>nor can you wonder that omnipotent as the</line>
+    <line>fiend <add>h</add>a<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">d</add>
+      </mod> yet been in his deeds of blood I should</line>
+    <line>almost regard him as invincible, and <add place="superlinear">that</add> when he</line>
+    <line><anchor xml:id="c57-0142.01"/>pronounced the words&#x2013; <hi rend="underline">I shall be
+        with you</hi></line>
+    <line><hi rend="underline">on your marriage night</hi> I should regard</line>
+    <line>the threatened fate as unavoidable. But</line>
+    <line>death was no evil to me if the loss of Eliza</line>
+    <line>beth were balanced with it and I therefore</line>
+    <line>with contented &amp; even cheerful countenance</line>
+    <line>agreed with my father that the ceremony</line>
+    <line>should take place if my cousin would</line>
+    <line>consent in ten days. <del rend="strikethrough">from that time</del></line>
+    <line>and thus put, as I imagined the seal to</line>
+    <line>my fate.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Grea<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod> God! If for one instant</line>
+    <line>I had thought what might be the</line>
+    <line>hellish intention of my fiendish adversa</line>
+    <line>ry I would rather have banished my</line>
+    <line>self <del rend="strikethrough">to</del> for ever from my country <mod
+        spanTo="#c57-0142.02"/><delSpan spanTo="#c57-0142.03" rend="strikethrough"/>&amp;
+      only</line>
+    <line>friends<anchor xml:id="c57-0142.03"/><anchor xml:id="c57-0142.04"/><anchor
+        xml:id="c57-0142.02"/> than have consented to this</line>
+    <line>miserable marriage &#x2013; But as if possess-</line>
+    <line>ed of magic powers the monster had</line>
+    <line>blinded me to his real resolutions &amp;</line>
+    <line>when I thought I prepared only my own</line>
+    <line>death I hastened that of <mod>
+        <del rend="strikethrough">the real</del>
+        <add place="superlinear" hand="#pbs">a far dearer</add>
+      </mod> victim.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">As the time drew nearer for our</line>
+    <line>marriage, whether from cowardice</line>
+    <line>or <add place="superlinear">a</add> prophetic feeling, I felt my heart</line>
+    <line>sink with in me &#x2013; But I concealed <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs" xml:id="c57-0142.06">my feelings</add>
+        <del rend="strikethrough"><add place="superlinear" next="#c57-0142.06">this</add></del>
+      </mod>
+      <mod>
+        <del rend="strikethrough">by</del>
+        <add place="superlinear" hand="#pbs">under</add>
+      </mod></line>
+    <line>an appearance of hilarity that brought</line>
+    <line>smiles <del rend="strikethrough">to</del> of joy to the countenance of</line>
+    <line>my father but hardly deceived the ever</line>
+    <line>watchful &amp; nicer eye of Elizabeth. She</line>
+    <line>looked forward to our union with placid</line>
+    <line>content not unmingled with a little fear</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0142.01">
+    <line><add>had </add></line></zone>
+
+  <zone type="left_margin" corresp="#c57-0142.04">
+    <addSpan hand="#pbs" spanTo="#c57-0142.05"/>
+    <line>&amp; wandered</line>
+    <line>a friendless</line>
+    <line>outcast over</line>
+    <line>the earth</line>
+    <anchor xml:id="c57-0142.05"/>
+  </zone>
+</surface>

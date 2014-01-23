@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0025" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0025.jp2"/>
+  <zone type="pagination"><line>127</line></zone>
+  <zone type="library"><line>13</line></zone>
+  <zone type="main">
+    <line>I knew the destroyer of my family and that I required</line>
+    <line>him to exert his whole authority for the apprehension</line>
+    <line>of the murderer.</line>
+    <line><add hand="#comp"><milestone unit="tei:note" spanTo="#c58-0025.01"
+        /><unclear>KT</unclear></add><anchor xml:id="c58-0025.01"/>
+      <milestone unit="tei:p"/> The magistrate listened to me with attention</line>
+    <line>and kindness. Be assured, sir, said he, no pains or</line>
+    <line>exertions on my part shall be spared to discover</line>
+    <line>the villain.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I thank you, replied I, listen therefore to the</line>
+    <line>deposition that I have to make. It is indeed a tale</line>
+    <line>so strange that I should fear you would not</line>
+    <line>credit it were there not som<add place="intralinear">e</add>thing in truth which
+      how</line>
+    <line>ever wonderful forces conviction. The story is too con</line>
+    <line>nected to be mistaken for a dream and I have no</line>
+    <line>motive for falsehood. My manner as I thus addressed</line>
+    <line>him was impressive but calm; I had formed in my</line>
+    <line>own heart a resolution to pursue my destroyer to death</line>
+    <line>and th<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">is</add>
+      </mod> purpose quieted my agony and provisonably</line>
+    <line>reconciled me to life. I now related my history briefly but</line>
+    <line>with firmness and precision, marking the dates</line>
+  </zone>
+</surface>

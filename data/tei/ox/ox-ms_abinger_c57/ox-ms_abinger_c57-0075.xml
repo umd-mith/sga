@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0075" ulx="0" uly="0" lrx="7230" lry="5034">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0075.jp2"/>
+  <zone type="library">
+    <line>38</line>
+  </zone>
+
+  <zone type="main" corresp="#c57-0074.01">
+    <addSpan spanTo="#c57-0075.02"/>
+    <line><metamark function="sequence">1</metamark></line>
+    <line><metamark function="displacement">my repugnance)X</metamark> I found <add
+        place="superlinear">also</add> that I was unable to compose</line>
+    <line>a female without <del rend="strikethrough">fresh</del> again devoting <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">several</add>
+      </mod> months</line>
+    <line>to study &amp; laborious disquisition. I had heard <del rend="strikethrough"
+      >also</del></line>
+    <line>of some discoveries having been made by</line>
+    <line>an <mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">E</add>
+      </mod>nglish philosopher the knowledge of which</line>
+    <line>was material to <del rend="strikethrough">w</del> my <mod>
+        <del rend="strikethrough">work.</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">success</add>
+      </mod>
+      <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">and</add>
+      </mod> I <del rend="strikethrough">thought</del>
+      <delSpan rend="strikethrough" spanTo="#c57-0075.03"/>of writing</line>
+    <line>som<anchor xml:id="c57-0075.03"/>etimes <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">thought</add>
+      </mod> of obtainting my fathers consent</line>
+    <line><damage type="tear"/>to visit England for this purpose but</line>
+    <line><damage type="tear"/>I clung to <mod>
+        <del rend="strikethrough">this</del>
+        <add place="superlinear" hand="#pbs">every</add>
+      </mod> pretence of delay &amp; could</line>
+    <line><damage type="tear"/>not resolve to interrupt my return</line>
+    <line><damage type="tear"/>ing tran<mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">q</add>
+      </mod>uillity</line>
+    <anchor xml:id="c57-0075.02"/>
+  </zone>
+
+</surface>

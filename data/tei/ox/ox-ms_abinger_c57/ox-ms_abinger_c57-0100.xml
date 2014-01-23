@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0100" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0100.jp2"/>
+  <zone type="pagination">116</zone>
+  
+  <zone type="main">
+    <line rend="center"><milestone unit="tei:head" spanTo="#c57-0100.03"/>Chap 12<anchor xml:id="c57-0100.03"/></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Having parted from my friend I deter</line>
+    <line>mined to visit some remote spot of <del rend="strikethrough">this</del></line>
+    <line>Scotland and finish my work in solitude.</line>
+    <line>I did not doubt but that the monster</line>
+    <line>followed me, and would <del rend="strikethrough">be</del> discover himself</line>
+    <line><anchor xml:id="c57-0100.01"/>when I should have finished, <mod>
+        <del rend="strikethrough">to</del>
+        <add hand="#pbs" place="superlinear">that he might </add>
+      </mod> receive his</line>
+    <line>companion. With this resolution I traversed</line>
+    <line>the north<add place="intralinear">ern</add> highlands and fixed on one of the</line>
+    <line>Orkney Islands for the scene of my labours.</line>
+    <line><del rend="strikethrough">I was</del> It was a place fitted for such <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">a</add>
+      </mod> work;</line>
+    <line>being hardly more than a rock whose high</line>
+    <line>sides were continually beaten upon by the</line>
+    <line>waves&#x2013; The soil was barren hardly affording</line>
+    <line>pasture for a few miserable cows &amp; oat</line>
+    <line>meal for its <del rend="strikethrough">few</del> inhabitants which consis</line>
+    <line>ted of five person<add place="intralinear" hand="#pbs">s</add>, Whose gaunt &amp;
+      scraggy</line>
+    <line>limbs gave token<add place="intralinear">s</add> of their sorry fare. <delSpan
+        spanTo="#c57-0100.02" rend="strikethrough"/>Fresh</line>
+    <line>water.<anchor xml:id="c57-0100.02"/> Vegetables &amp; bread, when they indulged</line>
+    <line>in such luxuries, &amp; even fresh water was</line>
+    <line>to be procured from the main land which</line>
+    <line>was about five miles distant. On the</line>
+    <line>whole island there were but three mise</line>
+    <line>rable huts &amp; one of these was vacant</line>
+    <line>when I arrived. This I hired&#x2013; It contained</line>
+    <line>but two rooms &amp; <del rend="strikethrough">for</del> these exhibited all</line>
+    <line>the squalidness of the most miserable</line>
+    <line>p<mod>
+        <del rend="overwritten"><unclear>overty</unclear></del>
+        <add place="intralinear">enury</add>
+      </mod>&#x2014; The thatch had fallen in &#x2013; the</line>
+    <line>walls <add place="superlinear" hand="#pbs">were</add> unplastered &amp; the door was off
+      its</line>
+    <line>hinges. I ordered it to be repaired, <del rend="strikethrough">&amp;</del> bought</line>
+    <line>some furniture &amp; took possession &#x2013; an</line>
+    <line>incident which would have <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">doubtless</add>
+      </mod> occasioned</line>
+    <line>some surprise had not all the <del rend="strikethrough">th</del> senses</line>
+    <line>of the cottagers been benumbed by want</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0100.01">
+    <line><add hand="#pbs">to me, </add></line>
+  </zone>
+</surface>

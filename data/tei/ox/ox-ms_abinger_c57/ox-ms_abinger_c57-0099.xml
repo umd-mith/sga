@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0099" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0099.jp2"/>
+  <zone type="pagination" rend="bordered"><line>115</line></zone>
+  <zone type="library"><line>50</line></zone>
+  <zone type="main">
+    <line>with <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">the</add>
+      </mod> good humour expected from a</line>
+    <line>guest and accordingly I told Cl<mod>
+        <del rend="smear">ai</del>
+        <add place="superlinear">e</add>
+      </mod>rval</line>
+    <line>that I wished to make the tour of</line>
+    <line>Scotland <mod>
+        <del rend="strikethrough">by myself</del>
+        <add place="superlinear" hand="#pbs">alone</add>
+      </mod>. Do you, said I, enjoy</line>
+    <line>yourself and let this be our rendezvous&#x2013;</line>
+    <line>I may be absent a month or two, but do</line>
+    <line>not interfere with my motions I entreat</line>
+    <line>you; leave <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">me</add>
+      </mod> to peace &amp; solitude for</line>
+    <line>a short time &amp; when I return I</line>
+    <line>hope it will be with a lighter heart</line>
+    <line><del rend="strikethrough">fitter for your friend &amp;</del> more congenial</line>
+    <line>to your own temper." Henry wished</line>
+    <line>to dissuade me but seeing me bent</line>
+    <line>on this plan <mod>
+        <del rend="strikethrough">consented.</del>
+        <add place="superlinear" hand="#pbs">ceased to remonstrate.</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">but</del>
+        <add place="superlinear" hand="#pbs">he</add>
+      </mod> entreated</line>
+    <line>me to write often. I had rather be</line>
+    <line>with you, he said, In your solitary</line>
+    <line>rambles than with these scotch people</line>
+    <line>whom I do not know; hasten the<mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">n</add>
+      </mod></line>
+    <line>my dear friend to return that I may</line>
+    <line>again feel myself <del rend="strikethrough">at</del> somewhat at</line>
+    <line>home which I cannot do in your</line>
+    <line>absence.</line>
+  </zone>
+</surface>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0179" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0179.jp2"/>
+  <zone type="pagination" rend="bordered"><line>195</line></zone>
+  <zone type="library"><line>90</line></zone>
+  <zone type="main">
+    <line>shall soon die and he my enemy &amp; perse</line>
+    <line>cutor may still be in being. Think not, Walton,</line>
+    <line>than in the last moments of my existence</line>
+    <line>I feel that burning hatred &amp; ardent desire</line>
+    <line>of revenge that I once expressed but I feel</line>
+    <line>myself justified in desiring the monsters</line>
+    <line>death. During these last days I have</line>
+    <line>been occupied in <del rend="strikethrough">ex <del rend="strikethrough">h</del>a</del>
+      examining my</line>
+    <line>past conduct <mod>
+        <del rend="strikethrough">an</del>
+        <add place="superlinear">nor</add>
+      </mod> do I find it blamable.</line>
+    <line><del rend="strikethrough">In</del> In a fit of enthusiastic madness I crea</line>
+    <line>ted a rational creature &amp; was bound</line>
+    <line><del rend="strikethrough">by</del> towards him to assure as far as in me</line>
+    <line>lay his happiness &amp; well being&#x2013; this was</line>
+    <line>my duty&#x2013; but there was one still para</line>
+    <line>mount to this. <del rend="strikethrough">It</del>
+      <del rend="strikethrough">was</del> My duties towards</line>
+    <line>my fellow creatures had greater claims</line>
+    <line>because they <mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>ncluded a greater portion</line>
+    <line>of happiness <add place="superlinear">or misery&#x2013;</add>. Urged by this view I
+      refused</line>
+    <line>and I did right in refusing to <del rend="strikethrough">cre</del> create</line>
+    <line>a companion for the first creature&#x2013;</line>
+    <line>He shewed unparelled malignity. He</line>
+    <line>destroyed my friend &#x2013; <milestone unit="tei:seg" xml:id="c57-0178.02"
+        spanTo="#c57-0179.03"/>beings who <mod>
+        <del rend="strikethrough">had</del>
+        <anchor xml:id="c57-0179.01"/>
+      </mod></line>
+    <line>sensations &#x2013; happiness &amp; wisdom<anchor xml:id="c57-0179.03"/>
+      <milestone unit="tei:seg" xml:id="c57-0179.04" spanTo="#c57-0179.05"/>he</line>
+    <line>devoted to destruction<anchor xml:id="c57-0179.05"/>
+      <listTranspose>
+        <transpose>
+          <ptr target="#c57-0179.04"/>
+          <ptr target="#c57-0179.02"/>
+        </transpose>
+      </listTranspose> <unclear reason="case">N</unclear>or do I know</line>
+    <!--"Nor" could be "nor"-->
+    <line><unclear reason="case">W</unclear>here this thirst for <del rend="strikethrough">g</del> vengeance</line>
+    <!--"Where" could be "where"-->
+    <line>may end. Miserable himself, that</line>
+    <line>he may render <mod>
+        <del rend="strikethrough">know</del>
+        <add place="superlinear">no</add>
+      </mod> other wretched,</line>
+    <line><del rend="strikethrough">also</del> he ought to die &#x2013; Th<mod>
+        <del rend="overwritten">is</del>
+        <add place="intralinear">e</add>
+      </mod> task of</line>
+    <line>his destruction was mine but I have</line>
+    <line>failed. <del rend="strikethrough">In</del> Once <del rend="strikethrough">I demanded</del>
+      when actua</line>
+    <line>ted by selfish and vicious motives I</line>
+    <line>asked you to undertake my unfinished</line>
+    <line>work and I renew this request now when</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0179.01">
+    <line><add hand="#pbs">possessed exquisite</add></line>
+  </zone>
+</surface>

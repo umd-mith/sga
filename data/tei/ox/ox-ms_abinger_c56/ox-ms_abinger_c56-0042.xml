@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0042" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0042.jp2"/>
+  <zone type="pagination" rend="bordered"><line>72</line></zone>
+  <zone type="main">
+    <line>I knew that my silence disquieted</line>
+    <line>them and I well remembered the</line>
+    <line>words of my father. "I know that while</line>
+    <line>"you are pleased with yourself you</line>
+    <line>"will <del rend="strikethrough">thing</del> think of us with affection</line>
+    <line>"and we shall hear regularly from</line>
+    <line>"you. And you must pardon me</line>
+    <line>"if I regard <del rend="strikethrough">you</del> any interruption</line>
+    <line>"in your corespondence, as a proof</line>
+    <line>"that your other <mod>
+        <del rend="strikethrough">studies</del>
+        <add place="superlinear" hand="#pbs">duties</add>
+      </mod> are equal-</line>
+    <line>"ly neglected" I <del rend="strikethrough">rembered</del> knew well</line>
+    <line>therefore what his <del rend="strikethrough">opinion</del> would</line>
+    <line>be <add place="superlinear" hand="#pbs">his feelings</add> but I could not tear my
+      thoughts</line>
+    <line>from my occupation loathsome in</line>
+    <line>itself but which had taken a<add place="intralinear">n</add></line>
+    <line><mod>
+        <del rend="strikethrough">strong</del>
+        <anchor xml:id="c56-0042.02"/>
+      </mod> hold of my <del rend="strikethrough">imagni</del> imagination.</line>
+    <line>I wished as it were to <del rend="strikethrough">procr</del> procras</line>
+    <line>tinate <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">all that related to</add>
+      </mod> my feelings of affection, untill</line>
+    <line>the great object <mod>
+        <del rend="strikethrough">of my affection</del>
+        <del rend="strikethrough">was</del>
+        <add place="sublinear" hand="#pbs">which swallowed up every habit</add>
+        <anchor xml:id="c56-0042.04"/>
+      </mod></line>
+    <line>compleated.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I then thought that my father</line>
+    <line>would be <del rend="strikethrough">in</del> unjust <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear">if he</add>
+      </mod> ascribe<add place="intralinear">d</add> my</line>
+    <line>neglect to vice or faultiness on my</line>
+    <line>part; but I am now convinced</line>
+    <line>that <mod>
+        <del rend="strikethrough">I</del>
+        <del rend="strikethrough">am</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">he was</add>
+        <add place="superlinear"><metamark function="displacement">X</metamark></add>
+        <del rend="strikethrough">in the right</del>
+        <del rend="strikethrough"><add place="superlinear">in <unclear>co</unclear>
+          conceive</add></del>
+        <anchor xml:id="c56-0042.05"/>
+      </mod>. A human</line>
+    <line>being in perfection ough<add place="intralinear">t</add> always to</line>
+    <line>preserve a <del rend="strikethrough">cl</del> calm and peaceful</line>
+    <line>mind and never to allow passion</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0042.02">
+    <line><add>irresistible</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0042.04">
+    <line><add xml:id="c56-0042.03"> of my nature should be</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0042.05">
+    <addSpan spanTo="#c56-0042.06"/>
+    <line><metamark>X</metamark> he was in the</line>
+    <line>right in conceiv</line>
+    <line>ing that I</line>
+    <line>should not be</line>
+    <line>altogether free</line>
+    <line>from blame.</line>
+    <anchor xml:id="c56-0042.06"/>
+  </zone>
+</surface>

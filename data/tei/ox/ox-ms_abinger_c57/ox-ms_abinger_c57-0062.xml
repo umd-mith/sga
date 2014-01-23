@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0062" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0062.jp2"/>
+  <zone type="pagination" rend="bordered"><line>87</line></zone>
+  <zone type="main">
+    <line>no means of extracting it. <del rend="strikethrough">A</del> My suffering were</line>
+    <line>augmented also by the oppressive sense <del rend="strikethrough">I had</del></line>
+    <line>of <add place="superlinear" hand="#pbs">the</add> injustice &amp; ingratitude <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">of their infliction</add>
+      </mod> My daily <mod>
+        <del rend="strikethrough">prayers</del>
+        <add place="superlinear" hand="#pbs">vows</add>
+      </mod></line>
+    <line>rose for revenge &#x2013; a deep &amp; deadly revenge</line>
+    <line>such as would alone compensate for the</line>
+    <line><mod>
+        <del rend="strikethrough">horrors of my situation.</del>
+        <add place="superlinear" hand="#pbs">the outrages &amp; the anguish I had endured.</add>
+      </mod></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">After some weeks my wound healed</line>
+    <line>and I continued my journey &#x2014; the labours</line>
+    <line>I endured were no longer <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to be</add>
+      </mod> alleviated by the</line>
+    <line>bright sun or gent<del rend="strikethrough">t</del>le breezes of spring &#x2014;</line>
+    <line>all joy was but <add place="superlinear" hand="#pbs">a</add> mockery to me, <mod>
+        <del rend="strikethrough"> &amp;</del>
+        <anchor xml:id="c57-0062.01"/>
+      </mod></line>
+    <line>made me feel more painfully that</line>
+    <line>I was not made for enjoyment. But</line>
+    <line>my <mod>
+        <del rend="strikethrough">journey</del>
+        <add place="superlinear">toils</add>
+      </mod> now drew near a close &amp; two</line>
+    <line>months from this time I reached the</line>
+    <line>environs of Geneva.</line>
+    <milestone unit="tei:head" spanTo="#c57-0062.04"/>
+    <addSpan spanTo="#c57-0062.03"/>
+    <line rend="right">The same</line>
+    <line rend="right">chapter</line>
+    <line rend="right">continued</line>
+    <anchor xml:id="c57-0062.03"/><anchor xml:id="c57-0062.04"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0062.01">
+    <addSpan spanTo="#c57-0062.02"/>
+    <line> which insul</line>
+    <line>ted my desolate</line>
+    <line>state, &amp; </line>
+    <anchor xml:id="c57-0062.02"/>
+  </zone>
+
+
+
+</surface>

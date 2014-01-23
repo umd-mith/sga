@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0015" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0015.jp2"/>
+  <zone type="library">7</zone>
+  <zone type="main">
+    <milestone unit="tei:speaker" spanTo="#e1-0015.01"/>
+    <line rend="center">Chorus of Hours &amp; Spirits</line>
+    <anchor xml:id="e1-0015.01"/>
+    <line>Break the dance &amp; scatter the song&#x2014;</line>
+    <line>Let some depart &amp; some remain</line>
+    <line>Wherever we fly we lead along</line>
+    <line>In leashes, like starbeams, soft yet strong</line>
+    <line>The clouds that are heavy with Loves sweet rain</line>
+    <line><metamark function="count">1<unclear>5</unclear>7</metamark></line>
+    <line rend="right"><milestone unit="tei:stage" spanTo="#e1-0015.08"/><hi rend="underline">they
+        depart</hi><anchor xml:id="e1-0015.08"/></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0015.02"/>
+    <line rend="indent3"><mod>
+        <del rend="overwritten">Ione</del>
+        <add place="intralinear">Pan</add>
+      </mod></line>
+    <anchor xml:id="e1-0015.02"/>
+    <line>Ha, they are gone!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0015.03"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0015.03"/>
+    <line rend="indent4">Yet feel you no delight</line>
+    <line>From the past sweetness?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0015.04"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0015.04"/>
+    <line rend="right">As the bare <mod>
+        <del rend="strikethrough">dry</del>
+        <add place="superlinear">green</add>
+      </mod> hill</line>
+    <line>When some <del rend="strikethrough">some</del> soft cloud <mod>
+        <del rend="strikethrough">of <unclear>has</unclear> loosed its</del>
+        <add place="sublinear">vanishes into rain</add>
+      </mod></line>
+    <line>Laughs with a thousand drops of <mod>
+        <del rend="strikethrough">orbed <unclear>r</unclear></del>
+        <add place="sublinear">sunny <mod>
+            <del rend="strikethrough">wet</del>
+            <add place="sublinear">water</add>
+          </mod></add>
+      </mod></line>
+    <!--The composition sequence of the following line is uncertain.-->
+    <line><delSpan spanTo="#e1.0015.09" rend="strikethrough"/>To the <mod>
+        <del rend="strikethrough">pale</del>
+        <add place="sublinear">unpavili</add>
+      </mod> sky, my</line>
+    <line>unpavili <milestone unit="tei:speaker" spanTo="#e1-0015.010"/>Ione<anchor
+        xml:id="e1-0015.10"/><anchor xml:id="e1.0015.09"/></line>
+    <line>To the unpavilioned sky<unclear>!</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0015.05"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0015.05"/>
+    <line rend="right">Even whilst we speak</line>
+    <line>New notes arise . . . what is that awful sound</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0015.06"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0015.06"/>
+    <line>Tis the deep music of the rolling world</line>
+    <line>Kindling within the strings of the waved air</line>
+    <line>&#xC6;olian modulations</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0015.07"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0015.07"/>
+    <line rend="indent5">Listen too</line>
+  </zone>
+</surface>

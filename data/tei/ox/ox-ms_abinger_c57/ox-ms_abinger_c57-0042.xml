@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0042" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0042.jp2"/>
+  <zone type="pagination" rend="bordered">
+    <line>67</line>
+  </zone>
+  <zone type="main">
+    <line>dispositions I persuaded myself that <mod>
+        <add place="superlinear"><metamark function="displacement" xml:id="c57-0042.01"
+          >X</metamark></add>
+      </mod></line>
+    <line>they would pity me and overlook</line>
+    <line>my personal deformity <delSpan spanTo="#c57-0042.03" rend="strikethrough"/>when
+      they</line>
+    <line>should know my admiration of</line>
+    <line>their virtues.<anchor xml:id="c57-0042.03"/>
+      <delSpan spanTo="#c57-0042.04" rend="strikethrough"/>Yes I <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">was</add></del>
+      </mod> mad enough to <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">put</add></del>
+      </mod> my</line>
+    <line>trust in my own intentions and to<anchor xml:id="c57-0042.04"/></line>
+    <line>Could they turn from their door</line>
+    <line>one however monstrous, who solici</line>
+    <line>ted their compassion &amp; friendship?</line>
+    <line>I resolved at least not to despair</line>
+    <line>but in every way to fit myself</line>
+    <line>for an interview which would</line>
+    <line>de<del rend="strikethrough">s</del>cide my fate. <del rend="strikethrough" instant="true"
+        >I wish</del> I postponed</line>
+    <line><anchor xml:id="c57-0042.05"/>for some months longer for the</line>
+    <line>importance attached to it<add place="intralinear" hand="#pbs">'s</add>
+      <add place="superlinear" hand="#pbs">success</add> inspired</line>
+    <line>me with a <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">dread</add>
+      </mod>
+      <mod spanTo="#c57-0042.06"/><del rend="strikethrough" next="#c57-0042.07">for it's
+        success</del><add place="superlinear" hand="#pbs">lest it should not succeed</add></line>
+    <line><delSpan spanTo="#c57-0042.08" rend="strikethrough" xml:id="c57-0042.07"/>that I in vain
+      endeavoured to</line>
+    <line>surmount<anchor xml:id="c57-0042.08"/><anchor xml:id="c57-0042.06"/>. Besides I found
+      that</line>
+    <line>my understanding improved so much</line>
+    <line>with every days experience <del rend="strikethrough">that</del></line>
+    <line><del rend="strikethrough">I</del> that I was unwilling to <del rend="strikethrough"
+        instant="true">attempt</del></line>
+    <line>commence this <mod>
+        <del rend="strikethrough">attempts</del>
+        <add place="superlinear">undertaking</add>
+      </mod> untill</line>
+    <line>a few more months should have</line>
+    <line>added to my <del rend="strikethrough" instant="true">des</del> wisdom</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2"><mod>
+        <del rend="strikethrough">Many</del>
+        <add place="superlinear">Several</add>
+      </mod> changes in the mean</line>
+    <line>time took place in the cottage</line>
+    <line>the presence of <mod>
+        <del rend="strikethrough">Maimouna</del>
+        <add place="superlinear">Safie</add>
+      </mod> diffused</line>
+    <line>happiness among its inhabitants <delSpan spanTo="#c57-0042.09" rend="strikethrough"
+      />and</line>
+    <line>also as I soon perceived more plenty<anchor xml:id="c57-0042.09"/></line>
+    <line>and I also found that a greater <del rend="strikethrough">g</del> degree</line>
+    <line>of plenty <del rend="strikethrough" instant="true">&amp; en</del> reigned there &#x2013;
+      Felix &amp;</line>
+    <line>and Agatha spent more time</line>
+    <line>in amusement <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">&amp; conversation <del rend="strikethrough">they</del> and</add>
+      </mod> were <del rend="strikethrough">now also</del></line>
+    <line>assisted in their labours by servants</line>
+    <line>They <mod>
+        <del rend="strikethrough">were</del>
+        <del rend="strikethrough">not</del>
+        <add place="superlinear">did not appear</add>
+      </mod> rich but they were</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0042.01">
+    <addSpan spanTo="#c57-0042.02"/>
+    <line><metamark>X</metamark>When they <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">should</add>
+      </mod> be</line>
+    <line>came acquainted with</line>
+    <line>my admiration of their</line>
+    <line>virtues</line>
+    <anchor xml:id="c57-0042.02"/>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0042.05">
+    <line><add>this attempt </add></line>
+  </zone>
+</surface>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0052" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0052.jp2"/>
+  <zone type="pagination" rend="bordered"><line>82</line></zone>
+  <zone type="main">
+    <line>"see<add place="intralinear" hand="#pbs">;</add> but I hope<add place="intralinear"
+        hand="#pbs">,</add> I sincerely hope all those</line>
+    <line>"occupations are at an end&#x2014;I am free</line>
+    <line>"now I hope."</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I trembled excessively: I could not</line>
+    <line>bear to think of<add place="intralinear" hand="#pbs">,</add> &#38; far less to
+      allude</line>
+    <line>to the occurences of the prece<del rend="strikethrough">e</del>ding</line>
+    <line>night. <del rend="strikethrough">I continued to walk</del>
+      <del rend="strikethrough">theire</del> I</line>
+    <line>walked therefore with a quick pace,</line>
+    <line>and we soon arrived at my colledge.</line>
+    <line>I then reflected &#x2013; and the thought made</line>
+    <line>me shiver that the creature whom</line>
+    <line>I had left in my appartment might</line>
+    <line>be still there&#x2014;alive and walking</line>
+    <line>about. I dreaded to see him but I</line>
+    <line>dreaded still more that Henry should</line>
+    <line>behold the monst<del rend="strikethrough">h</del>er. <del rend="strikethrough">I
+        therefore</del></line>
+    <line>entreat<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod> him <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">therefore</add>
+      </mod>to remain a few</line>
+    <line>minute<add place="intralinear" hand="#pbs">s</add> at the bottom of the</line>
+    <line>stairs, <del rend="strikethrough">while</del> I darted up towards</line>
+    <line>my own room. My hand was already</line>
+    <line>on the lock before I recovered</line>
+    <line>myself, when I paused and a cold</line>
+    <line>shivering came over me. I threw</line>
+    <line>the door open as children are accus</line>
+    <line>tomed to do when they expect</line>
+    <line>a spectre to stand in waiting for</line>
+    <line>them on the other side. But</line>
+    <line>nothing appeared. I stepped fearfully</line>
+    <line><damage type="ink_blot">in &#x2013;</damage> the appartment was empty, and</line>
+    <line>my bedroon was also freed from its</line>
+    <line>hideous guest. I could hardly <del rend="strikethrough">belief</del></line>
+  </zone>
+</surface>

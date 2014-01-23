@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  partOf="#ox-ms_abinger_c57" xml:id="ox-ms_abinger_c57-0051" ulx="0" uly="0" lrx="5138" lry="7032">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0051.jp2"/>
+  <zone type="pagination" rend="bordered"><line>76</line></zone>
+  <zone type="library"><line>26</line></zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent3">Cursed, Cursed Creator! Why</line>
+    <line>did I <del rend="strikethrough">lif</del> live why in that instant</line>
+    <line>did I not extinguish the spark of</line>
+    <line>existence which you had so wantonly</line>
+    <line>bestowed? I know not&#x2014; Despair had not</line>
+    <line>yet taken possession of me <del rend="strikethrough">it w</del>
+      <delSpan spanTo="#c57-0051.01" rend="strikethrough"/>I</line>
+    <line>was enraged<anchor xml:id="c57-0051.01"/> my feelings were those</line>
+    <line>of rage &amp; revenge &#x2013;I <del rend="strikethrough">w</del> could with plea</line>
+    <line>sure <del rend="strikethrough">of</del>
+      <del rend="strikethrough">torn</del> ha<add place="intralinear">ve</add> destroyed the
+      cottage</line>
+    <line>and its inhabitants, and glutted my</line>
+    <line>self with their shrieks &amp; misery. <del rend="strikethrough">They</del></line>
+    <line><del rend="strikethrough">As</del> When night came on I quitted</line>
+    <line>my retreat and wandered to the</line>
+    <line>wood.&#x2014; <del rend="strikethrough">And now</del>
+      <mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">N</add>
+      </mod>o longer restrained</line>
+    <line>by the fear of discovery I gave vent</line>
+    <line>to my anguish in fearful howlings.</line>
+    <line>I was like a wild beast in the toils;</line>
+    <line><mod>
+        <del rend="strikethrough">tearing</del>
+        <anchor xml:id="c57-0051.02"/>
+      </mod> the objects that obstructed</line>
+    <line>me <mod>
+        <del rend="strikethrough">with</del>
+        <del rend="strikethrough">fear</del>
+        <add place="superlinear">and</add>
+      </mod> ranging through the</line>
+    <line>wood with stag like swiftness.&#x2014;</line>
+    <line>Oh! What a miserable night I passed.</line>
+    <line>the cold stars shone in mockery,</line>
+    <line>the bare trees waved their branches</line>
+    <line>above <add place="superlinear">me</add> and now and then the sweet</line>
+    <line>voice of a bird burst forth anidst</line>
+    <line>the universal stillness.&#x2013; All <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">save I</add>
+      </mod> were</line>
+    <line>at rest or in enjoyment <del rend="strikethrough">but I.</del>
+      <del rend="unmarked">A</del><del rend="strikethrough">nd</del></line>
+    <line>I like the <add place="superlinear">arch</add> fiend bore <del rend="strikethrough"
+        >bo</del> a hell</line>
+    <line>within me and, finding <del rend="strikethrough">th</del><del rend="unmarked">e</del>
+      my</line>
+    <line>self unsympathized with, I <del rend="strikethrough">wi</del> wished</line>
+    <line>to tear <mod>
+        <del rend="strikethrough">of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">up</add>
+      </mod> the trees, <del rend="strikethrough"><unclear extent="1" unit="chars"/></del> spread
+      havock</line>
+  </zone>
+  <zone type="left_margin" corresp="#c57-0051.02">
+    <line><add>destroying </add></line>
+  </zone>
+</surface>

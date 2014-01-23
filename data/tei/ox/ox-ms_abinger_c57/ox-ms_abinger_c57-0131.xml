@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0131" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0131.jp2"/>
+  <zone type="pagination" rend="bordered"><line>147</line></zone>
+  <zone type="library"><line>66</line></zone>
+  <zone type="main">
+    <line>ful dream yet the <mod>
+        <del rend="strikethrough">place</del>
+        <del rend="strikethrough"><add place="superlinear">vessel</add></del>
+      </mod>
+      <del rend="strikethrough">in w</del> vessel in which</line>
+    <line>I was &#x2013; <del rend="strikethrough" instant="true">the sea &#x26;</del> the wind that
+      blew me from</line>
+    <line>the detested shore of Ireland and the sea</line>
+    <line>which surrounded me told me too forci</line>
+    <line>bly that I was deceived by no vision &#x26; that</line>
+    <line>Cl<mod>
+        <del rend="strikethrough">ai</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">e</add>
+      </mod>rval my friend &#x26; dearest companion</line>
+    <line>had fallen a victim to me &#x26; the <mod spanTo="#c57-0131.01"/><del rend="strikethrough"
+        >animal</del></line>
+    <line><anchor xml:id="c57-0131.02"/><anchor xml:id="c57-0131.01"/>of my creation.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I repassed in my memory my whole</line>
+    <line>life; my quiet happiness when residing with</line>
+    <line>my family in Geneva &#x2013;The death of my Mother</line>
+    <line>and my departure for Insgolstadt; I remem</line>
+    <line>bered with shuddering the mad enthusiasm</line>
+    <line>that hurried me on to the creation of</line>
+    <line>my hideous enemy &#x26; I called to my mind</line>
+    <line>the night on which he first lived. <mod spanTo="#c57-0131.03"/><mod>
+        <del rend="strikethrough">I un</del>
+        <add place="superlinear">I</add>
+      </mod></line>
+    <line><anchor xml:id="c57-0131.04"/>able to <mod>
+        <del rend="strikethrough">continue</del>
+        <add place="superlinear" hand="#pbs">pursue</add>
+      </mod> the train of thought &#x2013;A</line>
+    <line>thousand feelings pressed upon me &#x26; I wept</line>
+    <line>bitterly.&#x2014;</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Ever since my recovery from the fever</line>
+    <line>I had been in the custom of taking every</line>
+    <line>night a small quantity of laudanum</line>
+    <line><del rend="strikethrough">a</del> for it was by means of this drug only</line>
+    <line>that I was enabled to gain the <mod>
+        <del rend="strikethrough">sleep</del>
+        <add place="superlinear">rest</add>
+      </mod> necessa</line>
+    <line>ry for the preservation of life. O<del rend="strikethrough">p</del>pressed</line>
+    <line>by the recollection of my various misfor</line>
+    <line>tunes I now took a double dose &#x26; soon</line>
+    <line>slept profoundly. But alas sleep did</line>
+    <line>not afford me <mod>
+        <del rend="strikethrough">rest</del>
+        <add place="superlinear">respite</add>
+      </mod> from thought &#x26;</line>
+    <line>misery &#x2013; my dreams <del rend="strikethrough">s</del>presented <del
+        rend="strikethrough">to me</del></line>
+    <line>a thousand objects that scared me&#x2013;</line>
+    <line>towards mor<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">n</add>
+      </mod>ing I was <del rend="strikethrough">opp</del> possessed by</line>
+    <line>a kind of nightmare &#x2013; I felt the fiends</line>
+    <line>grasp on my neck and could not free</line>
+    <line>myself from it&#x2014;Groans &#x26; cries rung in my</line>
+    <line>ears&#x2013; My father who was watching over me,</line>
+    <line><del rend="strikethrough">and</del> perceiving my restlessness <del rend="strikethrough"
+        instant="true">he</del> awok<retrace cause="clarify">e</retrace> me</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0131.02">
+    <line><add>mo<mod>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
+          <add place="superlinear">n</add>
+        </mod>ster </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0131.04">
+    <line><add>I was un</add></line>
+  </zone>
+</surface>

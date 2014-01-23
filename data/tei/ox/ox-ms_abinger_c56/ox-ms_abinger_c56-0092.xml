@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0092" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0092.jp2"/>
+  <zone type="pagination" rend="bordered"><line>122</line></zone>
+  <zone type="main">
+    <line>the death of two of my fellow beings. One a</line>
+    <line>smiling babe full of innocence and joy, the</line>
+    <line>other far more dreadfully murdered with</line>
+    <line>every agravation <del rend="strikethrough">ignominy</del> infamy that could</line>
+    <line>make that murder <mod>
+        <del rend="strikethrough">more terrible</del>
+        <del rend="unmarked">.</del>
+        <add place="superlinear" hand="#pbs">memorable in horror.</add>
+      </mod> Justine</line>
+    <line>also was a girl of merit and possessed</line>
+    <line>qualities which promised to render her</line>
+    <line><mod>
+        <del rend="strikethrough">little world</del>
+        <add place="superlinear">life</add>
+      </mod> happy; now all was to be oblite</line>
+    <line>rated in an<del rend="strikethrough">d</del> ignominious grave <mod>
+        <del rend="overwritten">&#x2013;</del>
+        <add place="intralinear">;</add>
+      </mod> And I the</line>
+    <line>cause! A thousand times rather would</line>
+    <line>I have confessed myself guilty of the crime</line>
+    <line>ascribed to Justine, but I was absent when</line>
+    <line>it was committed and such a declaration</line>
+    <line>would have<add place="superlinear">been</add> considered as the ravings of</line>
+    <line>a madman and could not have excul</line>
+    <line>pated her who suffered through me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">The <del rend="strikethrough">aff</del> appearance of
+      Justine was</line>
+    <line>calm. She was dressed in <del rend="strikethrough">morn</del> mourning and</line>
+    <line>her countenance, always engaging, was rendered</line>
+    <line>by the solemnity of her feelings exquisite</line>
+    <line>-ly beautiful. <del rend="strikethrough">Yet she</del>
+      <del rend="strikethrough">Her mann</del> Yet she</line>
+    <line>appeared confident in innocence and</line>
+    <line>did not tremble although gazed at and</line>
+    <line>execrated by thousands. <del rend="strikethrough">fo</del> For all the kind</line>
+    <line>ness which her beauty might have</line>
+    <line>gained from others was obliterated by</line>
+    <line>the rememberance of the enormity she was</line>
+    <line>supposed to have committed. She was</line>
+    <line>tranquil yet her tranquillity was evident</line>
+  </zone>
+</surface>

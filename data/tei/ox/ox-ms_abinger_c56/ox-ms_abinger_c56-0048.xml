@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0048" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0048.jp2"/>
+  <zone type="pagination" rend="bordered"><line>78</line></zone>
+  <zone type="main">
+    <line>so hideous as <hi rend="double-underline">He</hi>. I had gazed on him</line>
+    <line>while unfinished; <del rend="strikethrough">and I thought</del> he</line>
+    <line>was ugly then. But when those muscles</line>
+    <line>and joints were endued with motion</line>
+    <line>it became a thing <del rend="strikethrough">to</del> such as even Dante</line>
+    <line>could never have conceived.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I passed the night wretchedly&#x2013;</line>
+    <line>sometimes my pulse<add place="intralinear">s</add> beat so quickly <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">a</add>
+      </mod>nd</line>
+    <line>ha<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">r</add>
+      </mod>dly that I felt the palpitation of</line>
+    <line>every artery: At others I nearly sunk</line>
+    <line>to the ground <mod>
+        <del rend="strikethrough">with</del>
+        <add place="superlinear" hand="#pbs">thro</add>
+      </mod> languor and ex-</line>
+    <line>treme weakness. <mod spanTo="#c56-0048.04"/><del rend="strikethrough"
+        next="#c56-0048.05">Surely so wretched a</del></line>
+    <line><add place="superlinear"><metamark function="displacement" xml:id="c56-0048.01">X</metamark></add><del rend="strikethrough"
+        xml:id="c56-0048.05">creature as I never before existed.</del><anchor xml:id="c56-0048.04"/></line>
+    <line>Dreams that had been my food and</line>
+    <line>rest for so long a space were now</line>
+    <line>become a hell to me&#x2013; <del rend="strikethrough">I</del> and the</line>
+    <line>change was so rapid, the overthrow</line>
+    <line>so complete.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Morning &#x2014; dismal and wet &#x2014; at leng<mod>
+        <del rend="overwritten">ht</del>
+        <add place="intralinear">th</add>
+      </mod></line>
+    <line>dawned, and <del rend="strikethrough">to</del> discovered to my sleepless</line>
+    <line>and aching eyes the church of Ingols-</line>
+    <line>stadt its white steeple &#x26; <add place="superlinear"><del rend="strikethrough"
+          >the</del> its</add> clock which</line>
+    <line>pointed to the sixth<del rend="strikethrough">e</del> hour. The porter</line>
+    <line>opened the gates of the court which had</line>
+    <line>that night been my assylum and I</line>
+    <line>issued into the streets, pacing <add hand="#pbs" place="superlinear">them</add>
+      with</line>
+    <line>quick steps as if I <del rend="strikethrough">ough</del> sought to</line>
+    <line><anchor xml:id="c56-0048.03"/>the wretch whom I feared every turn-</line>
+    <line>ing in the street would present to</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0048.01">
+    <addSpan spanTo="#c56-0048.02"/>
+    <line><metamark function="displacement">X</metamark></line>
+    <line>and mingled</line>
+    <line>with this hor</line>
+    <line>ror I felt the</line>
+    <line>bitterness of</line>
+    <line><del rend="strikethrough">disapp</del></line>
+    <line>disappointment:</line><anchor xml:id="c56-0048.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0048.03">
+    <line><add hand="#pbs">avoid </add></line>
+  </zone>
+</surface>

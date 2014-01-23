@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0075" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0075.jp2"/>
+  <zone type="pagination" rend="bordered"><line>105</line></zone>
+  <zone type="library"><line>35</line></zone>
+  <zone type="main">
+    <line>blooming &#x26; active in health stretch</line>
+    <line>ed on the grass livid and motionless&#x2013;</line>
+    <line>the print of the murderers finger was</line>
+    <line>on his neck.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">He was conveyed home and the</line>
+    <line><del rend="strikethrough">extreme</del>
+      <del rend="strikethrough">wh</del>
+      <mod>
+        <del rend="strikethrough">misery</del>
+        <add place="superlinear">anguish</add>
+      </mod>
+      <del rend="strikethrough">agony</del> that was</line>
+    <line>visible in my countenance revealed</line>
+    <line>the secret to Elizabeth. She was <mod spanTo="#c56-0075.01"/><delSpan rend="strikethrough"
+        spanTo="#c56-0075.02"/>extreme</line>
+    <line>ly<anchor xml:id="c56-0075.02"/><anchor xml:id="c56-0075.03"/><anchor xml:id="c56-0075.01"
+      /> earnest to see the corpse. <mod spanTo="#c56-0075.04"/><del rend="strikethrough"
+        >which</del><mod>
+        <add place="sublinear">^</add>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">I</add></del>
+      </mod><delSpan spanTo="#c56-0075.05" rend="strikethrough"/>for a</line>
+    <line>long time<anchor xml:id="c56-0075.05"/>
+      <del rend="strikethrough">refused</del><anchor xml:id="c56-0075.07"/><add xml:id="c56-0075.06"
+        place="superlinear" hand="#pbs">attempted to prevent her</add><anchor xml:id="c56-0075.04"/>
+      but <del rend="strikethrough"><unclear unit="chars" extent="1"/></del> she persisted,</line>
+    <line>and entering the room where it lay</line>
+    <line><del rend="strikethrough">quickly</del> hastily examined the neck of</line>
+    <line>the victim and clasping her <del rend="strikethrough">hads</del></line>
+    <line>hands exclaimed&#x2014; <del rend="strikethrough">Go</del> Oh God! I have</line>
+    <line>murdered <del rend="strikethrough">this sweet</del>
+      <del rend="strikethrough">babe</del><del rend="unmarked">.</del> my darling</line>
+    <line>infant.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">She fainted and was retored with</line>
+    <line>extreme difficulty; <del rend="strikethrough">and</del> when she again</line>
+    <line>lived it was only to weep and sigh&#x2013;</line>
+    <line>She told me that that same evening</line>
+    <line>William had teazed her to let him</line>
+    <line><del rend="strikethrough">we</del>
+      <del rend="strikethrough">we</del> wear a very valuable miniature</line>
+    <line>she possessed of your Mother. This</line>
+    <line>picture is gone and was doubtless</line>
+    <line>the temptation which urged the mur</line>
+    <line>derer to the deed. We have no trace</line>
+    <line><del rend="strikethrough">of</del>
+      <del rend="strikethrough">Come my dear Victor</del>
+      <del rend="strikethrough">him</del> at</line>
+    <line>present of him, <mod>
+        <del rend="strikethrough">but</del>
+        <add place="superlinear" hand="#pbs">altho</add>
+      </mod> our exertions <mod>
+        <del rend="strikethrough">are</del>
+        <add place="superlinear" hand="#pbs">to discover him</add>
+      </mod></line>
+    <line>are unremitted; but they will not restore</line>
+    <line>my beloved William.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Come, dearest Victor, you alone can</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0075.03">
+    <line><add>very</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0075.07">
+    <line><add hand="#pbs" next="#c56-0075.06">At first I </add></line>
+  </zone>
+</surface>

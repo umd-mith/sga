@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0111" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0111.jp2"/>
+  <zone type="pagination" rend="bordered"><line>141</line></zone>
+  <zone type="library"><line>53</line></zone>
+  <zone type="main">
+    <line>so beautiful <add place="intralinear">&#x26;</add> heavenly; if I except</line>
+    <line>alone some bat, or the<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">frogs, whose</add>
+      </mod> harsh and</line>
+    <line>interrupted croaking <del rend="strikethrough">of the frogs</del><mod>
+        <del rend="strikethrough">which</del>
+        <add place="superlinear" hand="#pbs">was</add>
+      </mod></line>
+    <line><del rend="strikethrough">I</del> heard only when I app<retrace cause="clarify"
+        >r</retrace>oached the</line>
+    <line>shore; often I say, I was tempted to</line>
+    <line>plunge into the <del rend="strikethrough">still and</del> silent lake</line>
+    <line><mod>
+        <del rend="strikethrough">and let</del>
+        <add place="superlinear" hand="#pbs">that</add>
+      </mod> the waters<mod>
+        <add place="sublinear"><metamark function="insert">>^</metamark></add>
+        <add place="superlinear" hand="#pbs">might</add>
+      </mod> close over me &#x26;</line>
+    <line>my calamities for ever. But I was</line>
+    <line>restrained when I thought of the heroic</line>
+    <line><add place="intralinear">&#x26; </add>suffering Elizabeth whom I tenderly</line>
+    <line>loved, and whose existence was bound</line>
+    <line>up in mine. And then I thought also</line>
+    <line>of my father and surviving brother; <del rend="strikethrough">And</del></line>
+    <line>should I not by my base desertion leave</line>
+    <line>them exposed &#x26; unprotected to the</line>
+    <line>mali<mod>
+        <del rend="overwritten"><unclear>s</unclear></del>
+        <add place="intralinear">c</add>
+      </mod>e of the fiend <del rend="strikethrough">I</del> whom I had</line>
+    <line>let lose among them? At these</line>
+    <line>moments I wept bitterly and wished</line>
+    <line>that peace would revisit my mind <add place="sublinear"><metamark function="displacement"
+          xml:id="c56-0111.02">^</metamark></add></line>
+    <line>that I might afford them consolation</line>
+    <line>and happiness &#x2014; but that could not</line>
+    <line>be: remorse <mod>
+        <del rend="strikethrough">took away</del>
+        <add place="superlinear" hand="#pbs">extinguished</add>
+      </mod> every hope&#x2014;</line>
+    <line>I had been the <mod>
+        <del rend="strikethrough">cause</del>
+        <add place="superlinear" hand="#pbs">author</add>
+      </mod> of unalterable</line>
+    <line>evil, and I lived in daily fear <mod spanTo="#c56-0111.03"/><delSpan rend="strikethrough"
+        spanTo="#c56-0111.04"/>that</line>
+    <line>the d&#xE6;mon<anchor xml:id="c56-0111.04"/>
+      <delSpan spanTo="#c56-0111.05" rend="strikethrough"/>of some new wickedness</line>
+    <line>which<anchor xml:id="c56-0111.05"/><add place="superlinear">let</add><anchor
+        xml:id="c56-0111.03"/> the monster whom I had</line>
+    <line>created might <mod>
+        <del rend="strikethrough">commit</del>
+        <add place="superlinear">perpetrate</add>
+        <add place="superlinear" hand="#pbs">some new wickedness.</add>
+      </mod> &#x2013;I had a<mod>
+        <add place="intralinear" hand="#pbs">n</add>
+        <add place="superlinear" hand="#pbs">obscure</add>
+      </mod> feeling</line>
+    <line>that all was not over, and that</line>
+    <line>he would still commit some signal</line>
+  </zone>
+  
+  <zone type="left_margin" corresp="#c56-0111.02">
+    <line><add hand="#pbs"><del rend="strikethrough">if</del> only &#x2014;</add></line>
+  </zone>
+</surface>

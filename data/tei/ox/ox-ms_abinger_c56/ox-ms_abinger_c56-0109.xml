@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0109" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0109.jp2"/>
+  <zone type="pagination" rend="bordered"><line>139</line></zone>
+  <zone type="library"><line>52</line></zone>
+  <zone type="main">
+    <line>and make myself useful to my fellow</line>
+    <line>beings. <del rend="strikethrough">But</del>
+      <mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear" hand="#pbs">N</add>
+      </mod>ow all was blasted<add place="intralinear" hand="#pbs">;</add> Instead</line>
+    <line>of seren<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>ty of conscience which allowed me</line>
+    <line>to look back on my actions with self satis</line>
+    <line>faction, and from thence <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">to gather promise of</add>
+      </mod> new hopes <delSpan spanTo="#c56-0109.01" rend="strikethrough"/>like</line>
+    <line>gay<unclear>-</unclear>sweet-smelling flowers to spring up</line>
+    <line>with <hi rend="underline">regard</hi> to futurity<anchor xml:id="c56-0109.01"/>. I was
+      seized by</line>
+    <line>remorse and guilt<unclear>,</unclear> and hurried away</line>
+    <line>to a hell <mod>
+        <del rend="strikethrough">no tongue</del>
+        <add place="superlinear" hand="#pbs">of intense tortures such as</add>
+      </mod> no language can</line>
+    <line>describe.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This state of mind <mod>
+        <del rend="strikethrough">allt</del>
+        <del rend="strikethrough">altered</del>
+        <add place="superlinear" hand="#pbs">preyed upon</add>
+      </mod> my health</line>
+    <line>which had <mod>
+        <del rend="strikethrough">nearly</del>
+        <add place="superlinear">entirely</add>
+      </mod> recovered from the</line>
+    <line>first shock it had sustained. I shunned</line>
+    <line>the face of man; all sound of joy or</line>
+    <line>complacency was torture to me<add place="intralinear" hand="#pbs">;</add> Solitude</line>
+    <line>was my only consolation deep, dark, <del rend="strikethrough">night</del></line>
+    <line>death-like solitude. My father observed</line>
+    <line>with pain <mod>
+        <del rend="strikethrough">how</del>
+        <add place="superlinear" hand="#pbs">the alteration perceptible in</add>
+      </mod> my dispositions &#x26; habits,</line>
+    <line><del rend="strikethrough">were altered</del> and endeavoured to reason</line>
+    <line>with me on the folly of giving way to immo</line>
+    <line>derate grief. "Do you think, Victor" said he</line>
+    <line>"That I do not suffer also&#x2013; no one <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">could</add>
+      </mod> love<del rend="strikethrough">d</del></line>
+    <line>a child more than I <mod>
+        <del rend="strikethrough">did</del>
+        <add place="superlinear" hand="#pbs">loved</add>
+      </mod> your brother&#x2013;</line>
+    <line>(<del rend="strikethrough">and</del> tears came <del rend="strikethrough">into</del> into
+      his eyes as he</line>
+    <line>said this) but is <add place="superlinear" hand="#pbs">it</add> not <mod>
+        <del rend="strikethrough">th</del>
+        <del rend="strikethrough">our</del>
+        <add place="superlinear" hand="#pbs">a</add>
+      </mod> duty <delSpan spanTo="#c56-0109.02" rend="strikethrough"/>not to</line>
+    <line>add to the grief of<anchor xml:id="c56-0109.02"/>
+      <del rend="strikethrough">owed</del> to the<del rend="strikethrough">ir</del> survivors</line>
+    <line><mod>
+        <del rend="strikethrough">not</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <del rend="strikethrough"><add place="superlinear">to</add></del>
+        <del rend="strikethrough">add to</del>
+        <anchor xml:id="c56-0109.03"/>
+      </mod> their unhappiness by an appear</line>
+    <line>ance of immoderate grief. It is also a duty</line>
+    <line>owed to yourself; for excessive sorrow</line>
+    <line>prevents improvement or enjoyment, or</line>
+    <line>even the discharge of day<add place="intralinear" hand="#pbs">ly</add> usefullness</line>
+    <line>without which no man is fit for</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0109.03">
+    <addSpan spanTo="#c56-0109.04" hand="#pbs"/>
+    <line>that we</line>
+    <line>should re</line>
+    <line>-frain from</line>
+    <line><del rend="strikethrough">adding to</del></line>
+    <line>augmenting</line>
+    <anchor xml:id="c56-0109.04"/>
+  </zone>
+</surface>

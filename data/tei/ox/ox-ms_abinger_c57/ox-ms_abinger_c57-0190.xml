@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0190" ulx="0" uly="0" lrx="5138" lry="7316" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0190.jp2"/>
+  
+  <zone type="main">
+    <line><damage type="tear"><unclear>th</unclear></damage>eir virtues by oppression; abject and
+        <damage type="tear"><unclear unit="chars" extent="7"/></damage> have left to</line>
+    <line>historian the melancholy task of <mod>
+        <del rend="strikethrough">recording</del>
+        <add place="superlinear">detailing</add>
+      </mod> a series of <del rend="strikethrough">vice</del></line>
+    <line>enormities unrelieved by a single record of wisdom or virtue.</line>
+    <line>From such a race I turn with pleasure to the Greeks, who,</line>
+    <line>bred in liberty and independance afford instances at the</line>
+    <line>name of which humanity triumphs and lifts <del rend="strikethrough"><unclear
+          reason="illegible">I</unclear></del> its head</line>
+    <line>in glory before depressed by the vice and wretchedness of so large</line>
+    <line>a portion of mankind.</line>
+  
+    
+    <addSpan spanTo="#c57-0190.01" hand="#library"/>
+  <line rend="center">95 haves</line>
+    <line rend="center">BCBB, 31 Jan 1995</line>
+    <anchor xml:id="c57-0190.01"/>
+  </zone>
+  
+  
+</surface>

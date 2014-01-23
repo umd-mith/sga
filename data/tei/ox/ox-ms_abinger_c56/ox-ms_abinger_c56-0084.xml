@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0084" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0084.jp2"/>
+  <zone type="pagination" rend="bordered"><line>114</line></zone>
+  <zone type="main">
+    <line>night which I spent<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">cold &#x26; wet</add>
+      </mod> in the open</line>
+    <line>air. <del rend="strikethrough">cold and wet</del>. But I did not</line>
+    <line>feel th<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">e</add>
+        <del rend="strikethrough">s</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">incovenience of the weather.</add>
+      </mod> my imagination was busy in</line>
+    <line>in <del rend="strikethrough">scene</del> scenes of ev<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>l and despair</line>
+    <line>I considered the <mod>
+        <del rend="strikethrough">wh</del>
+        <del rend="strikethrough">wretch</del>
+        <add hand="#pbs" place="superlinear">being</add>
+      </mod> whom I</line>
+    <line>had cast in among mankind <mod>
+        <del rend="strikethrough">for pu</del>
+        <anchor xml:id="c56-0084.01"/>
+      </mod></line>
+    <line>purposes of <mod>
+        <del rend="strikethrough">mischief</del>
+        <add hand="#pbs" next="#c56-0084.03" place="superlinear">horror such as <del
+            rend="strikethrough">this</del> the deed which he had</add>
+        <add place="sublinear" hand="#pbs" xml:id="c56-0084.03">now done,</add>
+      </mod> nearly in the light</line>
+    <line>of my <del rend="strikethrough">ow</del> vampire; my own spirit let</line>
+    <line>loose from the grave and forced to</line>
+    <line>destroy all who were dear to me.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Day dawned and I directed my</line>
+    <line>steps towards the town &#x2013; the gates were</line>
+    <line>open and I hastened to my father's</line>
+    <line>house<del rend="strikethrough">s</del>.&#x2013;My <del rend="strikethrough">n</del> first
+      thought was to disco-</line>
+    <line>ver what I knew of the murderer &#x26;</line>
+    <line>cause instant <del rend="strikethrough">search</del> pursuit to</line>
+    <line>be made. But I paused when I reflect-</line>
+    <line>ed what the story was that I had</line>
+    <line>to tell. A <mod>
+        <del rend="strikethrough">creature</del>
+        <add hand="#pbs" place="superlinear">being</add>
+      </mod> whom I myself</line>
+    <line>had created and endued with life, <anchor xml:id="c56-0084.04"/> The</line>
+    <line><mod>
+        <del rend="strikethrough">story</del>
+        <anchor xml:id="c56-0084.06"/>
+      </mod> was utterly improbable and I knew</line>
+    <line>well that if any other had <mod>
+        <del rend="strikethrough">related</del>
+        <add place="superlinear">communicated</add>
+      </mod> such</line>
+    <line>a <mod>
+        <del rend="strikethrough">tale</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">relation</add>
+      </mod> to me I should have looked</line>
+    <line>upon it as the ravings of delirium</line>
+    <line>Besides the strange nature of the</line>
+    <line>animal would <del rend="strikethrough">elude all the <unclear>us</unclear></del></line>
+    <line>elude pursuit, even if I were <mod spanTo="#c56-0084.07"/><add place="superlinear"
+        hand="#pbs">so far</add><mod>
+        <del rend="strikethrough">believed</del>
+        <anchor xml:id="c56-0084.08"/>
+      </mod></line>
+    <line><del rend="strikethrough" next="#c56-0084.09">which was</del><add place="sublinear"
+          ><metamark function="insert">^</metamark></add>
+      <del rend="strikethrough" xml:id="c56-0084.09">utterly impossible</del><add
+        place="superlinear" hand="#pbs">as to persuade <mod>
+          <del rend="strikethrough">its</del>
+          <del rend="overwritten">self</del>
+          <add place="intralinear">my</add>
+        </mod> relatives to commence it</add><anchor xml:id="c56-0084.07"/> &#x2013; <del
+        rend="strikethrough">the com</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0084.01">
+    <addSpan spanTo="#c56-0084.02" hand="#pbs"/>
+    <line>and</line>
+    <line>endowed with</line>
+    <line>the will &#x26;</line>
+    <line>the power</line>
+    <line>to effect</line>
+    <anchor xml:id="c56-0084.02"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0084.04">
+    <addSpan spanTo="#c56-0084.05" hand="#pbs"/>
+    <line>had met</line>
+    <line>me at mid</line>
+    <line>night among</line>
+    <line>the</line>
+    <line>precipices of</line>
+    <line>an inaccessi</line>
+    <line>ble mountain</line>
+    <anchor xml:id="c56-0084.05"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0084.06">
+    <line><add>tale</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0084.08">
+    <line><add>credited</add></line>
+  </zone>
+</surface>

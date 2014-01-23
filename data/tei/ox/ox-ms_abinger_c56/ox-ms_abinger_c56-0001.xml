@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0001" ulx="0" uly="0" lrx="5078" lry="7304" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0001.jp2"/>
+  <zone type="main">
+    <addSpan spanTo="#c56-0001.01" hand="#library"/>
+    <line rend="indent3"><del rend="strikethrough">A12</del></line>
+    <line rend="center">A 11</line>
+    <line rend="center"><unclear unit="chars" extent="1"/> Autograph</line>
+    <line rend="center"><metamark function="separate">__________</metamark></line>
+    <line rend="center">Part of the MS of</line>
+    <line rend="center">Frankenstein</line>
+    <line rend="center"><metamark function="separate">__________</metamark></line>
+    <line rend="center">pp 64-172 (of vol I.?)</line>
+    <line rend="center">ch. 6-17</line>
+    <line rend="center">vol. II. pp 1-150</line>
+    <line rend="center">ch I-XIV</line>
+    <line rend="center">Corrections in another</line>
+    <line rend="center">hand</line>
+    <line rend="center">Dep. c. 477/1</line>
+    <anchor xml:id="c56-0001.01"/>
+  </zone>
+</surface>

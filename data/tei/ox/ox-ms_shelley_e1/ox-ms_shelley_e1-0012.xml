@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
+  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0012" partOf="#ox-ms_shelley_e1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0012.jp2"/>
+  <zone type="main">
+    <line rend="indent2">Our feet now, <mod>
+        <del rend="strikethrough">each</del>
+        <add place="superlinear">every</add>
+        <del rend="strikethrough"> cal</del>
+      </mod> palm,</line>
+    <line rend="indent2">Are sandalled with calm,</line>
+    <line>And the dew of our wings is a rain of balm;</line>
+    <line rend="indent2">And beyond our eyes</line>
+    <line rend="indent2">The human love lies</line>
+    <line>Which makes all it gazes on, Paradise.</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0012.01"/>
+    <line rend="center">Chorus of Spirits &amp; Hours</line>
+    <anchor xml:id="e1-0012.01"/>
+    <line>Then weave the web of the mystic measure;</line>
+    <line><del rend="strikethrough">Of music &amp; dance &amp; shapes of light</del></line>
+    <line>From the depths of the sky &amp; the ends of the Earth</line>
+    <line>Come, swift Spirits of might &amp; of pleasure,</line>
+    <line>Fill the dance &amp; the music of mirth,</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0012.03"/>As the waves of a thousand streams
+      rush</line>
+    <line rend="right">by<anchor xml:id="e1-0012.03"/></line>
+    <line>To an Ocean of splendour &amp; harmony!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0012.02"/>
+    <line>Chorus o<hi rend="underline">f S</hi>pirits</line>
+    <anchor xml:id="e1-0012.02"/>
+    <line rend="indent1"><del rend="strikethrough" instant="true">Away, away!</del></line>
+    <line rend="indent1"><del rend="strikethrough" instant="true">We aw</del></line>
+    <line rend="indent2">Our spoil is won</line>
+    <line rend="indent2">Our task is done</line>
+    <line>We are free to dive or soar or run <unclear>. . .</unclear></line>
+    <line rend="indent2">Beyond or around</line>
+    <line rend="indent2">Or within the bound</line>
+    <line>Which clips the world with darkness round</line>
+  </zone>
+</surface>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Example SGA Shared Canvas Viewer</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bower_components.js"></script>
+    <script src="../dist/SGASharedCanvas.js"></script>
+  </head>
+
+  <body class="page-node node-type-sharedcanvas">
+    <div id ="content-main" class="container_12 clearfix" style="margin: auto">
+    <div class="grid_12 grid_main" id="SGASharedCanvasViewer" data-manifest="example-manifest.jsonld">
+    <div id="main-content">
+      <h1 class="title" id="page-title">Example SGA Shared Canvas Viewer</h1>
+      <div class="region region-content">
+        <div id="block-system-main" class="block block-system">
+          <div class="content">
+            <div class="detail-view-tools">
+              <form name="sgaDetails" id="sgaForm" class="well form-inline">
+                <fieldset class="meta-data-view">
+                  <div class="noborder control-group row">
+                    <span id="SGAManifestMeta">
+
+                    </span>
+                    <span id="SGACanvasMeta">
+
+                    </span>                                   
+                  </div>
+                </fieldset>
+                <fieldset class="detail-view-controls row">
+                  <div class="accordion col-xs-12" id="accordion-parent">
+                    <div class="accordion-group">
+                      <div class="well">
+                        <div class="btn-toolbar pull-left" id="view-controls">
+                          <div class="btn-group"><a class="btn btn-sm" title="Show/Hide Marquee"  id="marquee-sh"><i class="icon-red icon-marquee"></i></a></div>
+                          <div class="btn-group" id="img-controls"><a class="btn btn-sm" title="Reset Zoom" id="zoom-reset"><i class="icon-red icon-search"></i></a><a class="btn btn-sm" title="Zoom In" id="zoom-in"><i class="icon-red icon-zoom-in"></i></a><a class="btn btn-sm" title="Zoom Out" id="zoom-out"><i class="icon-red icon-zoom-out"></i></a></div>             
+                          <div class="btn-group" id="mode-controls" data-toggle="buttons"><a class="btn btn-sm" title="View Image Only" id="img-only"><input type="radio" name="options"><i class="icon-red icon-picture"></i></a><a class="btn btn-sm active" title="Standard View" id="mode-std"><input type="radio" name="options"><i class="icon-red icon-pause"></i></a><a class="btn btn-sm" title="View Reading Text" id="mode-rdg"><input type="radio" name="options"><i class="icon-red icon-align-left"></i></a><a class="btn btn-sm" title="View TEI" id="mode-xml"><input type="radio" name="options"><i class="icon-red icon-code"></i></a></div>
+                        </div>
+                        <!-- /view-controls -->
+                        
+                        <div class="pull-left" id="search-form-block">
+                          <div class="accordion-heading">
+                            <div class="input-group input-group-sm" id="searchbox">                  
+                              <div class="input-group input-group-sm" id="searchbox">
+                                <input type="text" class="form-control"placeholder="Search" />
+                                <div class="input-group-btn">
+                                  <a type="button" class="btn btn-sm btn-default" tabindex="-1"><i class="icon-search icon-flip-horizontal"></i></a>
+                                  <a type="button" class="btn btn-sm btn-default dropdown-toggle accordion-toggle collapsed" data-toggle="collapse" tabindex="-1" data-parent="accordion-parent" title="Show Search Filter" href="#collapse-one"><i class="icon-chevron-up"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /search-form-block -->
+                        
+                        <div class="btn-toolbar pull-right" id="sequence-nav">
+                          <div class="btn-group" id="pager-controls"><a class="btn btn-sm" id="first-page"><i class="icon-red icon-step-backward"></i></a><a class="btn btn-sm" id="prev-page"><i class="icon-red icon-chevron-left" ></i></a><a class="btn btn-sm" id="next-page"><i class="icon-red icon-chevron-right"></i></a><a class="btn btn-sm" id="last-page"><i class="icon-red icon-step-forward"></i></a></div>
+                        </div>
+                        <!-- /sequence-nav --> 
+               
+                        <div class="pull-left" id="hand-view-controls">
+                          <div class="control-group">
+                            <div class="control-label">Limit View:</div>
+                            <label class="radio-inline">
+                              <input type="radio" name="hand-view" value="all" id="hand-view_0" checked="checked" />
+                              All</label>
+                            <label class="radio-inline">
+                              <input type="radio" name="hand-view" value="mary" id="hand-view_1" />
+                              Mary Shelley</label>
+                            <label class="radio-inline">
+                              <input type="radio" name="hand-view" value="percy" id="hand-view_2" />
+                              Percy Shelley</label>
+                          </div>
+                        </div>
+                        <!--/hand-view-controls-->
+                                 
+                      </div>
+                      <!-- /well -->
+                      <div id="collapse-one" class="accordion-body collapse meta-data-filter">
+                        <div class="accordion-inner well well-sm">
+                          <div class="controls meta-data-group" id="limit-search">
+                            <h3>Limit Search <span>Only Show Terms Found In:</span></h3>
+                            <div class="control-group">
+                              <label class="control-label">Text Type(s) <span>|</span></label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox1" value="added">
+                                added passages</label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox2" value="deleted">
+                                deleted passages</label>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label">Hand(s) <span>|</span></label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox1" value="hand_msw">
+                                Mary Shelley</label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox2" value="hand_pbs">
+                                Percy Bysshe Shelley</label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /well /accordion-inner --> 
+                      </div>
+                      <!-- accordion-body --> 
+                    </div>
+                    <!-- /accordion-group--> 
+                  </div>
+                  <!-- /accordion -->
+                </fieldset>
+                <!-- /detail-view-controls control-group -->
+              </form>
+            </div>
+            <!-- /detail-view-tools -->
+
+            <div class="detail-view-results">
+              <div class="shadow-top"></div>
+              <div class="row">
+                <div class="loader" id="loading-progress"><!-- <i class="icon-spinner icon-spin icon-3x"></i> --></div>
+                <div id="mainSharedCanvas">
+                </div>
+                <div class="page-location-bar">
+                  <div id="page-location"></div>
+               </div>
+              </div>
+            </div>
+            <!-- /detail-view-results -->
+
+            <div class="detail-view-meta">
+              <div class="row">
+                <div id="detail-view-citation" class="meta-data-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="well well-sm meta-data-item">
+                    <h3 class="meta-title">Citation</h3>
+                    <h4 class="cite-page"><i class="icon-desktop icon-fixed-width"></i> Cite This Page</h4>
+                    <div class="page-citation">
+                      <span id="cite-author"></span> (<span id="cite-year"></span>). "<span id="cite-title"></span>", in <em>The Shelley-Godwin Archive</em>, <span id="cite-page"></span>. 
+                      Retrieved from <span id="cite-url"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /detail-view-meta -->
+          </div>
+        </div>
+      </div>
+    </div></div></div>
+    
+  <!-- Adjust these templates to set up your own Viewer -->
+  <script type="text/template" id="canvas-tpl">
+    <div class="col-xs-6">
+      <div class="sharedcanvas" data-types="Image"></div>
+    </div>
+    <div class="col-xs-6">
+      <div class="sharedcanvas" data-types="Text"></div>
+      <div id="ModeLayers"></div>
+    </div>
+  </script>
+
+  <script type="text/template" id="manifestMeta-tpl">
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span><%=scagentLabel%></span></li>      
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workDate">Date Written&nbsp;</label><span><%=scdateLabel%></span></li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>   
+    </ul>
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workNotebook">View&nbsp;</label><span><%=label%></span></li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workState">State&nbsp;</label><span><%=sgastateLabel%></span></li>
+        <li class="meta-data-item">
+        <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span><%=attribution%></span></li>
+    </ul>
+  </script>
+
+  <script type="text/template" id="canvasMeta-tpl">
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workHands">Hand(s)&nbsp;</label><span><%=sgahandLabel%></span>
+      </li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workShelfmark">Shelfmark&nbsp;</label><span><%=sgashelfmarkLabel%></span>
+      </li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workFolio">Folio&nbsp;</label><span><%=label%></span>
+      </li>
+    </ul>
+    <div class="meta-data-group col-lg-3 controls" id="status-block">
+      <div class="well well-sm">
+        <div class="meta-data-item circle-yes" id="status-transcription">
+          <label class="meta-label">Transcription Status</label>
+          <span class="badge-red"><i class="icon-circle <% if (trans=='red') {%>active<%}%>"></i></span>
+          <span class="badge-yellow"><i class="icon-circle <% if (trans=='yellow') {%>active<%}%>"></i></span>
+          <span class="badge-green"><i class="icon-circle <% if (trans=='green') {%>active<%}%>"></i></span></div>
+        <div class="meta-data-item circle-yes" id="status-metadata">
+          <label class="meta-label">Metadata Status</label>
+          <span class="badge-red"><i class="icon-circle <% if (meta=='red') {%>active<%}%>"></i></span>
+          <span class="badge-yellow"><i class="icon-circle <% if (meta=='yellow') {%>active<%}%>"></i></span>
+          <span class="badge-green"><i class="icon-circle <% if (meta=='green') {%>active<%}%>"></i></span></div>
+      </div>             
+    </div>
+  </script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

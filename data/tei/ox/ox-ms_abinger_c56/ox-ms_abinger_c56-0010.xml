@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0010" ulx="0" uly="0" lrx="5088" lry="7082" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0010.jp2"/>
+  <zone type="library"><line>3<hi rend="sup">v</hi></line></zone>
+
+  <zone type="main">
+    <line><mod spanTo="#c56-0010.04"/><del rend="strikethrough">if any one would <unclear
+          unit="chars" extent="5"/>
+        <unclear>him</unclear> I went</del>
+      <del rend="unmarked">but</del><add hand="#pbs" place="superlinear" next="#c56-0010.01">Some
+        accident prevented my attending the <del rend="strikethrough">series of</del> these
+        lectures</add></line>
+    <line><del rend="strikethrough" next="#c56-0010.03">this lecture was unfortunately nearly
+        the</del>
+      <add place="superlinear" hand="#pbs" xml:id="c56-0010.01" next="#c56-0010.02">until <del
+          rend="strikethrough">they were nearly over </del>
+        <del rend="strikethrough">they</del> it was nearly finihsed. The</add></line>
+    <line><del rend="strikethrough" xml:id="c56-0010.03">last</del><add place="superlinear"
+        hand="#pbs" xml:id="c56-0010.02">lecture which I attended being thus <del
+          rend="strikethrough">the</del> almost the last <del rend="strikethrough">in his
+        </del></add><anchor xml:id="c56-0010.04"/> in his course <mod>
+        <add><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="sublinear">was entirely incomprehensible to me.</add>
+      </mod> &#x2013; the professor talked</line>
+    <line>with the greatest fluency of potassium &#x26;</line>
+    <line>Boron <del rend="strikethrough">zinc bismuth</del> &#x2013; of sulphats and oxids</line>
+    <line><del rend="strikethrough">and displayed so many</del>
+      <mod>
+        <del rend="strikethrough">words</del>
+        <add hand="#pbs" place="superlinear">terms</add>
+      </mod> to which</line>
+    <line>I could <del rend="strikethrough">not</del> affix <mod>
+        <del rend="strikethrough">any</del>
+        <add hand="#pbs" place="superlinear">no</add>
+      </mod> idea: <del rend="strikethrough">that</del> I was</line>
+    <line>disgusted with <del rend="strikethrough">the appearance</del>
+      <del rend="strikethrough">of</del> a science</line>
+    <line>that appeared to me to contain only words.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">From this time untill I went to</line>
+    <line>Colledge I entirely neglected my formerly</line>
+    <line>adored study of <mod>
+        <del rend="strikethrough">chemistry</del>
+        <add place="superlinear">the science of</add>
+        <add place="superlinear" hand="#pbs"> natural philosophy</add>
+      </mod> although I still</line>
+    <line>read with delight Pliny and Buffons</line>
+    <line>authors <mod>
+        <del rend="strikethrough">that stood about on a par</del>
+        <add place="superlinear" hand="#pbs"><del rend="strikethrough">ar</del>
+          <del rend="strikethrough">of</del></add>
+      </mod></line>
+    <line>in my estimation <add hand="#pbs" place="intralinear">of nearly equal interest &#x26;
+        utility.</add></line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">My <mod>
+        <del rend="strikethrough">studies</del>
+        <add hand="#pbs" place="superlinear">occupations</add>
+      </mod> at this age were <del rend="strikethrough">th</del> principally the</line>
+    <line>mathematics, <del rend="strikethrough">which I delighted in an</del> and most</line>
+    <line>of the branches of study appertaining <del rend="strikethrough">th</del> to that</line>
+    <line>science. I was also busily employed in learning</line>
+    <line>languages Latin was <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">already</add>
+      </mod> familiar to me and I began to</line>
+    <line>read without the help of the <mod>
+        <del rend="strikethrough">dictionary</del>
+        <add hand="#pbs" place="superlinear">lexicon</add>
+      </mod> some of the</line>
+    <line>easiest greek authors. &#x2013;I <add place="superlinear">also</add> understood English
+      &#x26;</line>
+    <line>german perfectly: th<mod>
+        <del rend="overwritten">ese</del>
+        <add place="intralinear">is</add>
+        <del rend="strikethrough">are</del>
+        <add place="superlinear">is</add>
+      </mod> list of my accom-</line>
+    <line>plishments at <mod>
+        <del rend="strikethrough">that</del>
+        <del rend="strikethrough">time</del>
+        <add hand="#pbs" place="superlinear"><del rend="unmarked">th</del><del rend="strikethrough"
+            >e period</del> the age of</add>
+      </mod> and you may</line>
+    <line>conceive that my hours were fully employd</line>
+    <line>in acquiring and maintaining a knowledge</line>
+    <line> of this various literature.</line>
+  </zone>
+</surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c58-0008" ulx="0" uly="0" lrx="5408" lry="6680" partOf="#ox-ms_abinger_c58">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0008.jp2"/>
+  <zone type="pagination"><line>110</line></zone>
+  <zone type="main">
+    <line>me. But on the day that was to fulfil my <del rend="strikethrough">wi</del> wishes</line>
+    <line>and my destiny she was melancholy and a presentiment</line>
+    <line>of evil pervaded her; and perhaps also she thought</line>
+    <line>of the dreadful secret which I had promised to</line>
+    <line>reveal to her the following day. My father was in the</line>
+    <line>mean time overjoyed, and, <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in</add>
+      </mod> the bustle of <del rend="strikethrough" instant="true">pe</del> preparation,</line>
+    <line>only observed in the melancholy of his niece the</line>
+    <line><del rend="strikethrough">a</del> diffidence of a bride.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">After the ceremony was performed a large</line>
+    <line>party assembled at my father's; but it was agreed</line>
+    <line>that Elizabeth and I should pass the afternoon</line>
+    <line>and night at Evian and return to Cologny the</line>
+    <line>next morning. <add place="superlinear" hand="#comp">As</add> The day was fair and the <del
+        rend="strikethrough">the</del></line>
+    <line>wind <del rend="strikethrough">was</del> favourable we resolved to go by water.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Those were the last moments of my life du</line>
+    <line>ring which I enjoyed the felling of happiness. We</line>
+    <line>passed rapidly along; the sun was hot but we were</line>
+    <line>sheltered <del rend="strikethrough">by</del> from its rays by a kind of canopy
+      while</line>
+    <line>we enjoyed the beauty of the scene; sometimes on</line>
+  </zone>
+</surface>

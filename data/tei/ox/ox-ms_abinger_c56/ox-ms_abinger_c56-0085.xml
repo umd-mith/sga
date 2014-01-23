@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0085" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0085.jp2"/>
+  <zone type="pagination" rend="bordered"><line>115</line></zone>
+  <zone type="library"><line>40</line></zone>
+  <zone type="main">
+    <line><mod spanTo="#c56-0085.01"/><delSpan spanTo="#c56-0085.02"/>mon people would believe it
+      to</line>
+    <line>be a real devil and who could attempt<anchor xml:id="c56-0085.02"/><anchor
+        xml:id="c56-0084.03"/><anchor xml:id="c56-0085.01"/></line>
+    <line>a creature <mod>
+        <del rend="strikethrough">that could</del>
+        <add place="superlinear" hand="#pbs">capable of</add>
+      </mod> scal<mod>
+        <del rend="overwritten">e</del>
+        <add hand="#pbs" place="intralinear">ing</add>
+      </mod> the</line>
+    <line><mod>
+        <del rend="strikethrough">steep</del>
+        <anchor xml:id="c56-0085.05"/>
+      </mod> sides of Mont-Sal&#xEA;ve? These</line>
+    <line>reflections determined me, and I resolved</line>
+    <line>to <mod>
+        <del rend="strikethrough">be</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">remain</add>
+      </mod> silent.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">It was about five in the morning when</line>
+    <line>I entered my fathers house. I told the servant<add hand="#pbs" place="intralinear"
+      >s</add></line>
+    <line>not to disturb the family<add place="intralinear" hand="#pbs">,</add> and went into</line>
+    <line>the library to attend their usual time of</line>
+    <line>rising. Five years had elapsed&#x2013;passed as</line>
+    <line>a dream but for one indelible trace, and</line>
+    <line>I stood in the same place where I had last</line>
+    <line>embraced my father before my departure</line>
+    <line>for Ingolstadt. Beloved and respectable</line>
+    <line>parent! <delSpan spanTo="#c56-0085.06" rend="strikethrough"/>His chair was before the
+      reading</line>
+    <line>desk and a book open<anchor xml:id="c56-0085.06"/> He still remained</line>
+    <line>to me. I gazed on a picture of my mother</line>
+    <line>which stood over the mantlepiece. It was</line>
+    <line>an historical piece painted to please my</line>
+    <line>father and represented Caroline Beaumont</line>
+    <line>in an agony of despair kneeling by the coffin</line>
+    <line>of her dead father. Her garb was rustic<add place="intralinear" hand="#pbs">,</add> &#x26;
+      her</line>
+    <line>cheek pale but there was an air of dignity</line>
+    <line>and beauty that hardly <mod>
+        <del rend="strikethrough">allowed of</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">permitted</add>
+      </mod> the</line>
+    <line><mod>
+        <del rend="strikethrough">feeling</del>
+        <add hand="#pbs" place="superlinear">sentiment</add>
+      </mod> of pity. Below this picture was a</line>
+    <line>miniature of William, and my tears</line>
+    <line>flowed when I look<add place="intralinear">ed</add> upon it&#x2014;While I was</line>
+    <line>thus engaged Ernest entered&#x2013; he had heard</line>
+    <line>me arrive and hastened to welcome me.</line>
+    <line>He expressed the greatest delight on seeing</line>
+    <line>me &#x2013; "Welcome my dearest Victor," said he,</line>
+    <line>ah I wish you had come three <del rend="strikethrough">weeks</del></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0084.03">
+    <addSpan spanTo="#c56-0084.04" hand="#pbs"/>
+    <line>Besides of what use</line>
+    <line>would be pursuit?</line>
+    <line>Who could</line>
+    <line>arrest</line><anchor xml:id="c56-0084.04"/>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0085.05">
+    <line><add hand="#pbs">overhanging</add></line>
+  </zone>
+</surface>

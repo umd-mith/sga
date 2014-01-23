@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0074" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0074.jp2"/>
+  <zone type="pagination" rend="bordered"><line>104</line></zone>
+  <zone type="main">
+    <milestone unit="tei:p"/>
+    <line rend="indent1">Last thurday (May <del rend="strikethrough">26</del> 28<hi
+        rend="underline">th</hi>) I; <mod>
+        <del rend="strikethrough">your<add place="superlinear">my</add></del>
+      </mod>
+      <del rend="strikethrough">cousin</del></line>
+    <line>my niece and your two brothers went to</line>
+    <line>walk in Plainpalais. The evening was</line>
+    <line>warm and serene, and we prolonged our</line>
+    <line>walk <del rend="strikethrough">fat</del> farther than usual. It was</line>
+    <line><del rend="strikethrough"><hi rend="underline">ale</hi></del> already dusk before we
+      thought of</line>
+    <line>returning <mod>
+        <del rend="strikethrough">When</del>
+        <add place="superlinear">and then</add>
+      </mod> we <mod>
+        <del rend="strikethrough">found</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">discovered</add>
+      </mod> that Ernest</line>
+    <line>and William who had gone on before,</line>
+    <line>were not to be found. We accordingly</line>
+    <line>rested on a seat untill they should</line>
+    <line>return. Presently Ernest came <del rend="strikethrough">up</del> &#x26;</line>
+    <line>enquired for his brother he said that</line>
+    <line>he had been playing with <del rend="strikethrough">them</del> him</line>
+    <line>and that William had run away to</line>
+    <line>hide himself and that he had <mod>
+        <del rend="strikethrough">wai</del>
+        <add place="superlinear">vainly</add>
+      </mod></line>
+    <line>sought <del rend="strikethrough">fo</del> for him &#x26; afterwards wai</line>
+    <line>ted a long time but that he did</line>
+    <line>not return.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">This rather alarmed us and we <del rend="strikethrough"
+        >sought</del></line>
+    <line>continued to search <add place="superlinear">for him</add>untill night fell<del
+        rend="strikethrough">l</del>;</line>
+    <line><anchor xml:id="c56-0074.01"/>Elizabeth conjectured that he might have</line>
+    <line>returned to the house: <del rend="strikethrough">but</del> he was</line>
+    <line>not there &#x2013; We returned again with torches</line>
+    <line>for I could not rest when I thought my</line>
+    <line>sweet child had lost himself, and</line>
+    <line>was exposed to all the damps &#38; dews</line>
+    <line>of night; Elizabeth also suffered extreme</line>
+    <line>anguish. <del rend="strikethrough">We found him</del>
+      <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>bout <mod>
+        <del rend="strikethrough">four</del>
+        <anchor xml:id="c56-0074.02"/>
+      </mod></line>
+    <line>in the morning I discovered my lovely</line>
+    <line>boy whom the night before I had seen</line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0074.01">
+    <line><add>when </add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0074.02">
+    <line><add>seven</add></line>
+  </zone>
+</surface>

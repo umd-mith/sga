@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0164" ulx="0" uly="0" lrx="5148" lry="7030" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0164.jp2"/>
+  <zone type="pagination" rend="bordered"><line>180</line></zone>
+  <zone type="main">
+    <line>porary fit of despair &#x2013; he had escaped me and I</line>
+    <line>must now commence a destructive &amp; almost</line>
+    <line>endless journey across the mountainous ices</line>
+    <line>of the occean &#x2013; amidst cold that few of the</line>
+    <line>inhabitants could long endure &amp; <mod spanTo="#c57-0164.01"/><del rend="strikethrough"
+        >how could</del></line>
+    <line><anchor xml:id="c57-0164.02"/><anchor xml:id="c57-0164.01"/> I <del rend="strikethrough"
+        >ex</del>
+      <mod>
+        <del rend="strikethrough">a</del>
+        <add place="superlinear" hand="#pbs">the</add>
+      </mod> native of a genial &amp; su<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">n</add>
+      </mod>ny climate</line>
+    <line><anchor xml:id="c57-0164.03"/>hope to survive. Yet at the idea that the</line>
+    <line>fiend should <del rend="strikethrough">lif</del> live &amp; be triumphant my</line>
+    <line>rage and vengeance returned &amp; like a</line>
+    <line>mighty tide overwhelmed every other fee-</line>
+    <line>ling. After <del rend="strikethrough">tasting</del> a slight repose during</line>
+    <line>which the spirits of the dead hovered round</line>
+    <line>me &amp; instigated me to toil &amp; revenge I</line>
+    <line>prepared for my journey.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">I exchanged my land sledge for</line>
+    <line>one fashioned for the ruggedness of the</line>
+    <line><anchor xml:id="c57-0164.04"/>ocean and purchasing a plentiful stock</line>
+    <line>of provisions I departed from land. How</line>
+    <line>many days have passed since then I know</line>
+    <line>not but I have endured misery <mod>
+        <del rend="strikethrough">that</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod></line>
+    <line>nothing but the eternal sentiment <mod spanTo="#c57-0164.05"/><del rend="strikethrough"
+        >that</del></line>
+    <line><anchor xml:id="c57-0164.06"/><anchor xml:id="c57-0164.05"/>burn<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod> within my heart could have enabled</line>
+    <line>me to support. Immense &amp; rugged moun</line>
+    <line>tains of ice often <del rend="strikethrough">barred up my</del>
+      <del rend="strikethrough">par</del></line>
+    <line>barred up my passage and I often heard</line>
+    <line>the <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">earthquake &amp; the thunder of the</add>
+      </mod> ground sea which threatened my</line>
+    <line>destruction but again a frost came <mod spanTo="#c57-0164.07"/><delSpan
+        rend="strikethrough" spanTo="#c57-0164.08"/>that</line>
+    <line>secured me.<anchor xml:id="c57-0164.08"/><anchor xml:id="c57-0164.09"/><anchor
+        xml:id="c57-0164.07"/>
+      <delSpan rend="strikethrough" spanTo="#c57-0164.11"/>and I followed the slight</line>
+    <line>tracts that my enemy had left<anchor xml:id="c57-0164.11"/> &#x2013; By the</line>
+    <line><mod>
+        <del rend="strikethrough">consumation</del>
+        <add place="superlinear" hand="#pbs">quantity</add>
+      </mod> of provision <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">which I have consumed</add>
+      </mod> I should guess</line>
+    <line>that I had passed <mod>
+        <del rend="strikethrough">three</del>
+        <del rend="strikethrough"><add place="superlinear">two</add></del>
+      </mod>
+      <mod>
+        <del rend="strikethrough">months</del>
+        <add place="superlinear" hand="#pbs">three weeks</add>
+      </mod> in this</line>
+    <line>journey &#x2013; And <mod>
+        <del rend="strikethrough">despair</del>
+        <add place="superlinear">despondency &amp; grief&#x2013;</add>
+      </mod> often wrung bitter</line>
+    <line>drops from my eyes &#x2014; Despair indeed had</line>
+    <line>almost secured her prey &amp; I should soon</line>
+    <line>have sunk under this misery&#x2013; When once</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0164.02">
+    <line><add hand="#pbs">whih, </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0164.03">
+    <line><add hand="#pbs">could not </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0164.04">
+    <line><add hand="#pbs">frozen </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0164.06">
+    <line><add hand="#pbs">of a just revenge </add></line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0164.09">
+    <addSpan hand="#pbs" spanTo="#c57-0164.10"/>
+    <line>&amp; made the</line>
+    <line>paths of the</line>
+    <line>sea, secure.</line>
+    <anchor xml:id="c57-0164.10"/>
+  </zone>
+</surface>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0056" ulx="0" uly="0" lrx="5138" lry="7032" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0056.jp2"/>
+  <zone type="pagination" rend="bordered"><line>81</line></zone>
+  <zone type="main">
+    <line>exquisite beauty of the Arabian &#x2014; these thoughts</line>
+    <line>vanish<add place="intralinear" hand="#pbs">ed</add> &amp; a gush of tears somewhat
+      soothed</line>
+    <line>me&#x2014;But again <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">when</add>
+      </mod> I reflected that they had</line>
+    <line>spurned &amp; deserted me, anger returned</line>
+    <line>and unable to <del rend="strikethrough" instant="true">hurt</del> injure anything</line>
+    <line>human I turned my fury towards</line>
+    <line>inanimate objects.&#x2013; As night advanced</line>
+    <line>I placed a variety of combustibles <add place="intralinear">a</add>round</line>
+    <line>the cottage, and after having destroyed</line>
+    <line>every vestige of cultivation in the</line>
+    <line>garden &#x2014; <del rend="strikethrough">when</del>
+      <del rend="strikethrough">the sun h</del>
+      <delSpan spanTo="#c57-0056.01" rend="strikethrough"/>the</line>
+    <line>moon had<anchor xml:id="c57-0056.01"/> I waited with forced pa</line>
+    <line>tience untill the moon had sunk</line>
+    <line><del rend="strikethrough">and</del> to commence my operations. As</line>
+    <line>the night advanced a fierce wind</line>
+    <line>arose from the woods and quickly</line>
+    <line><del rend="strikethrough">covered the heavens wit</del> dispersed</line>
+    <line>the clouds that had loitered in the</line>
+    <line>heavens&#x2014; <milestone unit="tei:seg" spanTo="#c57-0056.03"/><hi rend="underline">Like a mighty
+        avelanche</hi><anchor xml:id="c57-0056.03"/></line>
+    <line><anchor xml:id="c57-0056.02"/><del rend="strikethrough">it</del> tore a long <add
+        place="intralinear"><metamark function="displacement" corresp="#c57-0056.03"
+        >/</metamark></add> and <del rend="strikethrough">filled with</del></line>
+    <line>produced <milestone unit="tei:seg" spanTo="#c57-0056.04"/><hi rend="underline">in my spirits</hi><anchor
+        xml:id="c57-0056.04"/> a kind</line>
+    <line>of insanity <add place="intralinear"><metamark function="displacement"
+          corresp="#c57-0056.04">/</metamark></add> that burst all bounds</line>
+    <line>of reason or reflection &#x2014; I lighted</line>
+    <line>a dry branch of tree and danced</line>
+    <line>with <del rend="strikethrough">wild</del> fury around the devoted</line>
+    <line>cottage, my eyes still fixed on the</line>
+    <line>western horizon, <del rend="strikethrough">towards</del> the edge</line>
+    <line>of which the moon nearly touched<unclear>.</unclear></line>
+    <line>part of it orb was <del rend="strikethrough">h</del> at length</line>
+    <line>hid and I waved my brand &#x2014; it sunk</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0056.02">
+    <line><add>the blast </add></line>
+  </zone>
+</surface>

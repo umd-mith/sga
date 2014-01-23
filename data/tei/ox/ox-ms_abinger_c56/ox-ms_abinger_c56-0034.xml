@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c56-0034" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-ms_abinger_c56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0034.jp2"/>
+  <zone type="pagination" rend="bordered"><line>64</line></zone>
+  <zone type="main">
+    <line>my father had taken the greatest</line>
+    <line>precautions that my mind should</line>
+    <line><del rend="strikethrough">not</del> be impressed by <mod>
+        <add place="sublinear">^</add>
+        <add place="superlinear" hand="#pbs">no</add>
+      </mod> supernatural</line>
+    <line>horrors. I do not ever remember</line>
+    <line>having trembled at <mod>
+        <del rend="strikethrough">a ghost story</del>
+        <add place="superlinear" hand="#pbs">tale of superstition</add>
+      </mod> or</line>
+    <line>to have feared the apparition of <add place="superlinear" hand="#pbs">a</add>
+      spirit</line>
+    <line><del rend="strikethrough">Ligh</del> Darkness had no effect upon my</line>
+    <line>fancy and a churchyard was to</line>
+    <line>me merely <mod>
+        <add place="superlinear">^</add>
+        <add place="superlinear" hand="#pbs">as</add>
+      </mod> the receptacle of <del rend="strikethrough">rotten b</del></line>
+    <line>bodies deprived of life and <mod>
+        <del rend="strikethrough">becoming</del>
+        <add place="superlinear" hand="#pbs">which</add>
+      </mod></line>
+    <line>from being the seat of beauty &#x26;</line>
+    <line>strength <mod>
+        <add place="sublinear">^</add>
+        <add place="superlinear" hand="#pbs">become</add>
+      </mod> food for the worm. <del rend="strikethrough">But</del></line>
+    <line><del rend="strikethrough">I </del>
+      <del rend="strikethrough">A loathsome</del>
+      <unclear>c</unclear>
+      <del rend="strikethrough">But</del> now I was</line>
+    <line><mod>
+        <del rend="strikethrough">obliged</del>
+        <add place="superlinear" hand="#pbs">led</add>
+      </mod> to examine the <mod>
+        <del rend="strikethrough">cause</del>
+        <add place="superlinear">cause</add>
+      </mod> &#x26; progress</line>
+    <line>of this decay and forced to spend days</line>
+    <line>and nights in vau<retrace cause="clarify" hand="#pbs">l</retrace>ts and Charnel</line>
+    <line>houses. I <del rend="strikethrough">was obliged</del> My attention was</line>
+    <line>fixed upon every <mod>
+        <del rend="strikethrough">horror of whic</del>
+        <del rend="unmarked">h</del>
+        <add place="superlinear" hand="#pbs" next="#c56-0034.01">object <del rend="strikethrough"
+            >calculated to</del></add>
+        <add place="sublinear" hand="#pbs" xml:id="c56-0034.01">the most insupportable to the
+          delicacy of</add>
+      </mod></line>
+    <line>the human feelings. <del rend="strikethrough">are suscept</del><del rend="unmarked"
+        >able</del>&#x2013;</line>
+    <!--the period after "feelings" must have been added by PBS. Check with CR-->
+    <line>I saw how the fine form of <del rend="strikethrough">a</del> man</line>
+    <line><mod>
+        <del rend="strikethrough">was</del>
+        <del rend="strikethrough"><add place="superlinear" hand="#pbs">became</add></del>
+        <anchor xml:id="c56-0034.02"/>
+      </mod> degraded and wasted. I beheld the</line>
+    <line>corruption of death succeed to the bloom</line>
+    <line>-ing cheek of life &#x2013; <add place="superlinear" hand="#pbs">I saw</add> how the worm
+        <mod spanTo="#c56-0034.06"/><delSpan spanTo="#c56-0034.03" rend="strikethrough"
+      />suc</line>
+    <line>ceeded to<anchor xml:id="c56-0034.03"/><add place="superlinear" hand="#pbs"
+        >inherited</add><anchor xml:id="c56-0034.06"/> the wonders of the eye and</line>
+    <line>brain. I paused, examin<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear" hand="#pbs">ing</add>
+      </mod> and anal<mod>
+        <del rend="overwritten">yzed</del>
+        <add place="intralinear" hand="#pbs">yzing</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">every</del>
+        <del rend="strikethrough">minuti&#xE6;</del>
+        <del rend="unmarked"> of </del>
+        <del rend="strikethrough">causation</del>
+        <anchor xml:id="c56-0034.04"/>
+      </mod> untill</line>
+    <line>from the midst of this darkness</line>
+    <line>a sudden light broke in upon me.</line>
+    <line>A light so brilliant &#x26; wondrous yet</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c56-0034.02">
+    <line><add hand="#pbs">was</add></line>
+  </zone>
+  <zone type="left_margin" corresp="#c56-0034.04">
+    <addSpan hand="#pbs" spanTo="#c56-0034.05"/>
+    <line>all the minuti&#xE6;</line>
+    <line>of causation</line>
+    <line>as exemplified in</line>
+    <line>the change from</line>
+    <line>life to death, &#x26;</line>
+    <line>death to life,</line>
+    <anchor xml:id="c56-0034.05"/>
+  </zone>
+</surface>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../derivatives/shelley-godwin-page.rnc"
+            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+            href="../../../xsl/page-proof.xsl"
+        ?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  xml:id="ox-ms_abinger_c57-0020" ulx="0" uly="0" lrx="5368" lry="7104" partOf="#ox-ms_abinger_c57">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0020.jp2"/>
+  <zone type="pagination" rend="bordered"><line>19</line></zone>
+  <zone type="main">
+    <line>any apparent <del rend="strikethrough">co</del> connexion with <del rend="strikethrough"
+        >the</del> visible</line>
+    <line>objects I was unable to discover any clue</line>
+    <line>by which I could unrable the mystery</line>
+    <line>of their <mod>
+        <del rend="strikethrough">sounds.</del>
+        <add hand="#pbs" place="superlinear"><del rend="strikethrough">application</del>
+          reference.</add>
+      </mod>. By great application how</line>
+    <line>ever and after having remained <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear" hand="#pbs">during the space of</add>
+      </mod> several</line>
+    <line>revolutions of the moon in my hovel</line>
+    <line>I discovered the names that were given</line>
+    <line>to some of the most familiar objects</line>
+    <line><anchor xml:id="c57-0020.01"/>I learned <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&amp; applied</add>
+      </mod> the words <hi rend="underline">fire, <del rend="strikethrough">milk</del></hi>
+      <hi rend="underline">mil</hi>k</line>
+    <line><hi rend="underline">bread</hi> &amp; <hi rend="underline">wood</hi> I learned also the
+      names</line>
+    <line>of the cottagers themsel<mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">v</add>
+      </mod>es&#x2013; <del rend="strikethrough">but as</del></line>
+    <line>the<mod>
+        <del rend="strikethrough">y</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">youth &amp; his companion</add>
+      </mod> had <damage type="inkblot">h</damage> each of them several but</line>
+    <line>the old man had only one which</line>
+    <line>was <hi rend="underline">Father</hi> &#x2013; the girl was call<del rend="strikethrough"
+        >ed Sist</del></line>
+    <line>Sister or Agatha and the youth</line>
+    <line>Felix. <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear"><del rend="strikethrough">or</del> brother or son</add>
+      </mod> I <del rend="strikethrough">c</del> cannot describe the delight</line>
+    <line>I felt when I <mod>
+        <del rend="strikethrough">discovered</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">learned</add>
+      </mod> the ideas <del rend="strikethrough">opp</del></line>
+    <line>appropriated to each of these sounds</line>
+    <line>and was able to pronounce them. <del rend="strikethrough">But</del></line>
+    <line>I <mod>
+        <del rend="strikethrough">learned</del>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">distinguished</add>
+      </mod> several other <del rend="strikethrough">sounds</del> words</line>
+    <line>without being able <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add hand="#pbs" place="superlinear">as yet</add>
+      </mod> to understand <del rend="strikethrough">th</del> or</line>
+    <line>apply them &#x2013; <del rend="strikethrough">Among these</del> Such as <hi
+        rend="underline">good</hi></line>
+    <line><hi rend="underline">dearest</hi> &#x2013; <hi rend="underline">unhappy</hi>.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">I spent the winter in this manner&#x2013;</line>
+    <line>the gentle manners and beauty of the</line>
+    <line>cottagers greatly endeared them to me&#x2013;When</line>
+    <line>the<add place="intralinear" hand="#pbs">y</add> were unhappy I felt depressed and</line>
+  </zone>
+
+  <zone type="left_margin" corresp="#c57-0020.01">
+    <line><add hand="#pbs">of discourse, </add></line>
+  </zone>
+</surface>
