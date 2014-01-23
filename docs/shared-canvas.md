@@ -130,8 +130,16 @@ These namespaces are used in the October, 2013, manifests.
 The JSON-LD context is based on the 
 [Shared Canvas JSON-LD context](http://www.shared-canvas.org/ns/context.json)
 and additional contextual material for the Archive's ontology. Some
-namespaces have changed from the October, 2013, list. For example, the Open
-Annotation data model dropped its extension namespace.
+namespaces have changed from the October, 2013, list:
+
+| Prefix  | October, 2013 Namespace | JSON-LD Namespace |
+| ------- | ----------------------- | ----------------- |
+| dc      | http://purl.org/dc/elements/1.1/ | http://purl.org/dc/terms/ |
+| dc11    | (not used) | http://purl.org/dc/elements/1.1/ |
+| dcterms | http://purl.org/dc/terms/ | (not used) |
+| sga     | http://www.shelleygodwinarchive.org/ns1# | http://shelleygodwinarchive.org/ns/1# |
+| oa      | http://www.w3.org/ns/openannotation/core/ | http://www.w3.org/ns/oa# |
+| oax     | http://www.w3.org/ns/openannotation/extension/ | (not used) |
 
 ```coffee
 "@context":
@@ -144,8 +152,8 @@ Annotation data model dropped its extension namespace.
   iiif:    "http://library.stanford.edu/iiif/image-api/ns/"
   oa:      "http://www.w3.org/ns/oa#"
   cnt:     "http://www.w3.org/2011/content#"
-  dc:      "http://purl.org/dc/elements/1.1/"
-  dcterms: "http://purl.org/dc/terms/"
+  dc11:    "http://purl.org/dc/elements/1.1/"
+  dc:      "http://purl.org/dc/terms/"
   dctypes: "http://purl.org/dc/dcmitype/"
   foaf:    "http://xmlns.com/foaf/0.1/"
   rdf:     "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -159,7 +167,7 @@ Annotation data model dropped its extension namespace.
 
   license:
     a   : "@id"
-    id  : "dcterms:license"
+    id  : "dc:license"
   service:
     a   : "@id"
     id  : "sc:hasRelatedService"
@@ -168,10 +176,10 @@ Annotation data model dropped its extension namespace.
     id  : "sc:hasRelatedDescription"
   within:
     a   : "@id"
-    id  : "dcterms:isPartOf"
+    id  : "dc:isPartOf"
   profile:
     a   : "@id"
-    id  : "dcterms:conformsTo"
+    id  : "dc:conformsTo"
   sequences:
     a    : "@id"
     id   : "sc:hasSequences"
@@ -201,7 +209,7 @@ Annotation data model dropped its extension namespace.
     id   : "sc:metadataLabels"
     holds: "@list"
 
-  description: "dc:description"
+  description: "dc11:description"
   attribution: "sc:attributionLabel"
 
   height:
@@ -295,8 +303,8 @@ Annotation data model dropped its extension namespace.
   chars:        "cnt:chars"
   encoding:     "cnt:characterEncoding"
   bytes:        "cnt:bytes"
-  format:       "dc:format"
-  language:     "dc:language"
+  format:       "dc11:format"
+  language:     "dc11:language"
   annotatedAt:  "oa:annotatedAt"
   serializedAt: "oa:serializedAt"
   when:         "oa:when"
@@ -310,7 +318,7 @@ Annotation data model dropped its extension namespace.
   name:         "foaf:name"
   mbox:         "foaf:mbox"
 
-  title:     "dc:title"
+  title:     "dc11:title"
 
   agent:     "sc:agentLabel"
   hand:      "sga:handleLabel"
@@ -857,7 +865,7 @@ The Shelley-Godwin Archive augments this model with:
 | sga:deleting    |            | Instance  | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents text marked in the TEI transcription as being deleted. The annotation is a highlight, targeting the text that is being deleted. |
 | sga:modification |           | Instance  | [instance of oa:Motivation; broader motivation is oa:editing] The motivation that represents the replacement of a span of text with another text in the TEI transcription. The replacement text is the body of the annotation, and the replaced text is selected as the target. |
 | sga:reading     |            | Instance  | [instance of oa:Motivation] The motivation that represents the distinction between resources that should be used as a reading text, rather than resources that should be painted onto the Canvas. |
-| sga:searching   |            | Instance  | |
+| sga:searching   |            | Instance  | [instance of oa:Motivation] |
 | sga:source      |            | Instance  | [instance of oa:Motivation] The motivation that represents the distinction between resources that represent the master TEI-GE from which the reading and painted text are derived, rather than resources that should be painted onto the Canvas. |
 
 #### sga:adding
@@ -1103,10 +1111,10 @@ but because the annotation list happens to revolve around a particular
 semantic relating the images to the canvas: original light, 1990 scans, 2010
 scans, etc., providing options for someone assembling an edition.
 
-The dc:* properties are where we can insert arbitrary Dublin Core properties
-that describe the manifest resource (e.g., who assembled the manifest - who
-is asserting that these resources should be brought together to construct a
-scholarly edition?).
+The dc:* and dc11:* properties are where we can insert arbitrary Dublin Core
+properties that describe the manifest resource (e.g., who assembled the
+manifest&mdash;who is asserting that these resources should be brought
+together to construct a scholarly edition?).
 
 The "rdfs:label" is a human readable string describing the content
 represented by the manifest. It's like a book title or similar label.
