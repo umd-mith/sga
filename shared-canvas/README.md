@@ -8,23 +8,31 @@ How to build SGA Shared Canvas
 
 First, clone a copy of the SGA git repo by running `git clone git://github.com/umd_mith/sga.git`.
 
-You will need to have installed Node.js and npm (a node package manager).
+You will need to have installed [Node.js and npm](http://nodejs.org/) (a node package manager).
 
-First get all node.js dependencies by running:
+First use `npm` to install the `grunt` and `bower` tools globally
+(note that these commands must be run with superuser privileges):
 
+``` bash
+# npm install -g grunt-cli
+# npm install -g bower
 ```
+
+Next get all node.js dependencies by running:
+
+``` bash
 $ npm install
 ```
 
 Then get other dependencies (including those from Bower) by running:
 
-```
+``` bash
 $ grunt install
 ```
 
 Finally, to compile run:
 
-```
+``` bash
 $ grunt
 ```
 
