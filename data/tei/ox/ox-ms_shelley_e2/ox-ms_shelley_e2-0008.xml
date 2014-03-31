@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0008" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0008" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0008.jp2"/>
   <zone type="main">
-    <line>Which must bend the Invincible</line>
-    <line>The stern of thought</line>
+    <line rend="indent1">Which must bend the Invincible</line>
+    <line rend="indent1">The stern of thought</line>
     <line>He yet defies the deepest power of Hell</line>
-    <line>a</line>
-    <line><del rend="strikethrough">Another</del>  Fury rushing from the crowd</line>
-    <line>Tear the veil <unclear>!&#8212;</unclear> The Furies having [?mingled]</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0008.01" xml:id="Fury"/>
+    <line rend="indent2"><mod>
+        <del rend="strikethrough">Another</del>
+        <add place="superlinear">a</add>
+      </mod> Fury rushing from the crowd</line>
+    <anchor xml:id="e2-0008.01"/>
+    <line>Tear the veil<unclear reason="illegible">!&#8212;</unclear>
+      <milestone unit="tei:stage" spanTo="#e2-0008.02"/>The Furies having <unclear
+        reason="illegible">mingled</unclear></line>
     <line>in a strange dance divide, &amp; in the background</line>
     <line>is seen a plain covered with burning cities</line>
-    <line>Another Fury</line>
+    <anchor xml:id="e2-0008.02"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0008.03" xml:id="Fury"/>
+    <line rend="center">Another Fury</line>
+    <anchor xml:id="e2-0008.03"/>
     <line>It is torn!</line>
-    <line>Chorus</line>
-    <line>The pale stars of the morn</line>
-    <line>Shine on a misery dire to be born <unclear>e</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0008.04" xml:id="Chorus"/>
+    <line rend="center">Chorus</line>
+    <anchor xml:id="e2-0008.04"/>
+    <line rend="indent5">The pale stars of the morn</line>
+    <line>Shine on a misery dire to be born<unclear reason="illegible">e</unclear></line>
+    <milestone unit="l" spanTo="#e2-0008.05"/>
     <line>Dost thou faint mighty Titan? We laugh thee</line>
-    <line>to scorn</line>
+    <line rend="right">to scorn</line>
+    <anchor xml:id="e2-0008.05"/>
+    <milestone unit="l" spanTo="#e2-0008.06"/>
     <line>Dost thou boast the clear knowledge thou wakenedst</line>
-    <line>for man?</line>
+    <line rend="indent5">for man?</line>
+    <anchor xml:id="e2-0008.06"/>
     <line>Then was kindled within him a thirst which outran</line>
     <line>Those perishing waters, a thirst of fierce fever</line>
     <line>Hope love doubt desire &#8212; which consume him forever.</line>
-    <line>One came forth, of gentle worth</line>
-    <line>Smiling on the sanguine earth,</line>
+    <line rend="indent1">One came forth, of gentle worth</line>
+    <line rend="indent1">Smiling on the sanguine earth,</line>
   </zone>
 </surface>
-
