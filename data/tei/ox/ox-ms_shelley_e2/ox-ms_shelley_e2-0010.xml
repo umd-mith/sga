@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0010" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0010" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0010.jp2"/>
   <zone type="main">
-    <line>[f. 4r is blank]</line>
-    <line>His words outlived him, like swift poison</line>
-    <line>Withering up truth peace &amp; pity</line>
-    <line>Look where round the wide horizon</line>
-    <line>Many a million-peopled city</line>
-    <line>Vomits smoke in the bright air&#8212;</line>
-    <line><del rend="strikethrough">Hark</del>  a shadow passes over the scene</line>
-    <line>&amp; a piercing shriek is heard</line>
-    <line>Hark that outcry of despair</line>
-    <line>Tis his mild &amp; gentle ghost</line>
-    <line>Wailing for the faith he kindled</line>
-    <line>Look again <unclear>,&#8212;</unclear> the flames almost</line>
-    <line>To a glow-worm's lamp have dwindled</line>
-    <line>The survivors round the embers</line>
-    <line>Gather in dread</line>
-    <line>Joy, Joy, Joy,</line>
-    <line><unclear>P</unclear>ast ages crowd on thee but each one remembers,</line>
+    <line rend="indent1">His words outlived him, like swift poison</line>
+    <line rend="indent1">Withering up truth peace &amp; pity</line>
+    <line rend="indent1">Look where round the wide horizon</line>
+    <line rend="indent1">Many a million-peopled city</line>
+    <line rend="indent1">Vomits smoke in the bright air&#8212;</line>
+    <line rend="indent1"><del rend="strikethrough">Hark</del>
+      <milestone unit="tei:stage" spanTo="#e2-0010.01"/>a shadow passes over the scene</line>
+    <line>&amp; a piercing shriek is heard</line><anchor xml:id="e2-0010.01"/>
+    <line rend="indent1">Hark that outcry of despair</line>
+    <line rend="indent1">Tis his mild &amp; gentle ghost</line>
+    <line rend="indent1">Wailing for the faith he kindled</line>
+    <line rend="indent1">Look again <unclear reason="illegible">,&#8212;</unclear> the flames
+      almost</line>
+    <line rend="indent1">To a glow-worm's lamp have dwindled</line>
+    <line rend="indent1">The survivors round the embers</line>
+    <line rend="indent2">Gather in dread</line>
+    <line rend="indent3">Joy, Joy, Joy,</line>
+    <line><unclear reason="case">P</unclear>ast ages crowd on thee but each one remembers,</line>
     <line>And the future is dark and the present is spread</line>
     <line>Like a pillow of thorns for thy slumberless head.</line>
   </zone>
 </surface>
-
