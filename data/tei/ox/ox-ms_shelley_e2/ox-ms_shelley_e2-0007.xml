@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0007" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0007" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0007.jp2"/>
+  <zone type="library"><line rend="right">3</line>
+  </zone>
   <zone type="main">
-    <line>3</line>
-    <line>Ione</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0007.01" xml:id="Ione"/>
+    <line rend="indent4">Ione</line>
+    <anchor xml:id="e2.0007.01"/>
     <line>Sister I hear the thunder of new wings</line>
-    <line>Panthea</line>
-    <line>These solid quiver</line>
-    <line><del rend="strikethrough">Alas the</del> mountains <del rend="strikethrough">tremble</del> with the sound</line>
-    <line>Even as the tremulous air &#8212; <del rend="strikethrough"><unclear>L</unclear>ook not I pray</del></line>
-    <line>Thier shadows make</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0007.02" xml:id="Panthea"/>
+    <line rend="indent4">Panthea</line>
+    <anchor xml:id="e2.0007.02"/>
+    <line><mod>
+        <del rend="strikethrough">Alas the</del>
+        <add place="superlinear">These solid</add>
+      </mod> mountains <mod>
+        <del rend="strikethrough">tremble</del>
+        <add place="superlinear">quiver</add>
+      </mod> with the sound</line>
+    <line>Even as the tremulous air &#8212; <mod>
+        <del rend="strikethrough"><unclear reason="case">L</unclear>ook not I pray</del>
+        <add place="sublinear">Thier shadows make</add>
+      </mod></line>
     <line>The space within my plumes more black than night.</line>
   </zone>
 </surface>
-
