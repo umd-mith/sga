@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0012" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0012" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0012.jp2"/>
   <zone type="main">
-    <line>[f. 5r is blank]</line>
-    <line>Semichorus 1.</line>
-    <line><del rend="strikethrough">Hah, agony-drops</del></line>
-    <line>Drops of bloody agony flow</line>
-    <line><del rend="strikethrough">Fast</del> From his <del rend="strikethrough">qui</del> white &amp; quivering brow <unclear>,</unclear></line>
-    <line>Grant a little respite now&#8212;</line>
-    <line>See a <del rend="strikethrough">dien</del> disenchanted Nation</line>
-    <line>Springs like day from desolation</line>
-    <line>To truth its state, is dedicate <unclear>;</unclear></line>
-    <line>And Freedom leads it forth, her mate;</line>
-    <line>A legioned band of linked brothers</line>
-    <line>Whom Love calls children&#8212;</line>
-    <line>Semichorus 2</line>
-    <line>'Tis another's&#8212;</line>
-    <line>See how kindred murder kin</line>
-    <line>Tis the vintage-time for Death &amp; Sin</line>
-    <line>Blood, like new Wine, bubbles within</line>
-    <line>Till Despair smothers</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0012.01" xml:id="Semichorus1"/>
+    <line rend="center">Semichorus 1.</line>
+    <anchor xml:id="e2-0012.01"/>
+    <line rend="indent1"><del rend="strikethrough" instant="true">Hah, agony-drops</del></line>
+    <line rend="indent1">Drops of bloody agony flow</line>
+    <line rend="indent1"><del rend="strikethrough" instant="true">Fast</del> From his <del
+        rend="strikethrough" instant="true">qui</del> white &amp; quivering brow<unclear
+        reason="illegible">,</unclear></line>
+    <line rend="indent1">Grant a little respite now&#8212;</line>
+    <line rend="indent1">See a <del rend="strikethrough" instant="true">dien</del> disenchanted
+      Nation</line>
+    <line rend="indent1">Springs like day from desolation</line>
+    <line rend="indent1">To truth its state, is dedicate<unclear reason="illegible"
+      >;</unclear></line>
+    <line rend="indent1">And Freedom leads it forth, her mate;</line>
+    <line rend="indent1">A legioned band of linked brothers</line>
+    <line rend="indent1">Whom Love calls children&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0012.02" xml:id="Semichorus2"/>
+    <line rend="center">Semichorus 2</line>
+    <anchor xml:id="e2-0012.02"/>
+    <line rend="indent5">'Tis another's&#8212;</line>
+    <line rend="indent1">See how kindred murder kin</line>
+    <line rend="indent1">Tis the vintage-time for Death &amp; Sin</line>
+    <line rend="indent1">Blood, like new Wine, bubbles within</line>
+    <line rend="indent1">Till Despair smothers</line>
+    <milestone unit="tei:l" spanTo="#e2-0012.03"/>
     <line>The struggling World&#8212;which slaves &amp; tyrants</line>
-    <line>win</line>
-    <line>561 Ione</line>
-    <line><del rend="strikethrough">Panthea</del></line>
+    <line rend="right">win</line><anchor xml:id="e2-0012.03"/>
+    <line><metamark function="count">561</metamark>
+      <space unit="chars" extent="14"/>
+      <milestone unit="tei:speaker" spanTo="#e2-0012.04" xml:id="Ione"/><del rend="strikethrough"
+        >Panthea</del><add place="superlinear">Ione</add><anchor xml:id="e2-0012.04"/></line>
     <line>Hark sister, what a low yet dreadful groan</line>
   </zone>
 </surface>
-
