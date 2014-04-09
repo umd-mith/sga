@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Frankenstein, Fair-Copy Notebook C2</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editor</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Metadata editor</resp>
+                    <name xml:id="TB">Travis Brown</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2012-2014</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Oxford University</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive 
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Abinger c. 58</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem type="#work">
+                            <bibl status="fair_copy">
+                                <author>Mary Shelley</author>
+                                <title>Frankenstein</title>
+                            </bibl>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="mws"><persName>Mary Shelley</persName></handNote>
+                            <handNote xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#RV" when="2014-01-22">Added metadata.</change>
+            <change who="#TB" when="2014-04-09">Added metadata about volumes and chapters.</change>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0037.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0038.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0039.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0040.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0041.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0042.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0043.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0044.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0045.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0046.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0047.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0048.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0049.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0050.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0051.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0052.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0053.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0054.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0055.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0056.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0057.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0058.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0059.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0060.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0061.xml" />
+        <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0062.xml" />
+    </sourceDoc>
+</TEI>
