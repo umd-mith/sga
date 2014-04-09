@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0016" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0016" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0016.jp2"/>
   <zone type="main">
-    <line>[f. 7r is blank]</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0016.01" xml:id="Prometheus"/>
     <line>Prometheus</line>
+    <anchor xml:id="e2-0016.01"/>
     <line>Remit the anguish of that lighted stare&#8212;</line>
-    <line>Close <del rend="strikethrough">that</del> those wan lips <unclear>&#8212;</unclear>let that thorn-wounded</line>
-    <line>brow</line>
+    <milestone unit="tei:l" spanTo="#e2-0016.02"/>
+    <line>Close <del rend="strikethrough" instant="true">that</del> those wan lips
+        <unclear>&#8212;</unclear> let that thorn-wounded</line>
+    <line rend="right">brow</line>
+    <anchor xml:id="e2-0016.02"/>
     <line>Stream not with blood&#8212;it mingles with thy tears!</line>
-    <line>Fix fix those tortured orbs in peace &amp; death</line>
+    <line><mod>
+        <add place="intralinear">Fix</add>
+        <del rend="strikethrough">O</del>
+      </mod> fix those tortured orbs in peace &amp; death</line>
     <line>So thy sick throes shake not that crucifix</line>
     <line>So those pale fingers play not with thy gore&#8212;</line>
     <line>O horrible! thy name I will not speak</line>
@@ -27,7 +34,6 @@
     <line>Float by my feet like sea-uprooted isles</line>
     <line>Whose sons are kneaded down in common blood</line>
     <line>By the red light of thier own burning homes&#8212;</line>
-    <line>599</line>
+    <line rend="indent5"><metamark function="count">599</metamark></line>
   </zone>
 </surface>
-
