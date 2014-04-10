@@ -1,39 +1,52 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0020" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0020" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0020.jp2"/>
   <zone type="main">
     <line>[f.9r is blank]</line>
-    <line>Fury</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0020.01"/>
+    <line rend="center">Fury</line>
+    <anchor xml:id="e2-0020.01"/>
     <line>Thou pitiest them? I speak no<del rend="strikethrough">t!</del> more!</line>
-    <line>Exit</line>
-    <line>Prometheus</line>
-    <line>ah woe <del rend="strikethrough">is me</del></line>
-    <line>Ah woe! alas! pain pain ever forever <unclear>?</unclear></line>
+    <milestone unit="tei:stage" spanTo="#e2-0020.02"/>
+    <line rend="right">Exit</line>
+    <anchor xml:id="e2-0020.02"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0020.03"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e2-0020.03"/>
+    <line rend="indent5">ah woe <del rend="strikethrough">is me</del></line>
+    <line>Ah woe! alas! pain pain ever forever<unclear>?</unclear></line>
     <line>I close my tearless eyes, but see more clear</line>
     <line>Thy works within my woe-illumed mind</line>
     <line>Thou subtle tyrant.... peace is in the grave&#8212;</line>
     <line>The grave hides all things beautiful &amp; good&#8212;</line>
     <line>I am a God &amp; cannot find it there&#8212;</line>
     <line>Nor would I seek it. For, though dread revenge</line>
-    <line>Fierce King</line>
-    <line>This is defeat not  <unclear>V</unclear>ictory! <del rend="strikethrough">to</del></line>
-    <line>^</line>
+    <line>This is defeat not <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">Fierce King</add>
+      </mod>
+      <unclear reason="case">V</unclear>ictory! <del rend="strikethrough">to</del></line>
+    <milestone unit="tei:l" spanTo="#e2-0020.04"/>
     <line>The sights with which thou torturest gird</line>
-    <line>my soul</line>
+    <line rend="right">my soul</line>
+    <anchor xml:id="e2-0020.04"/>
     <line>With new endurance, till the hour arrives</line>
     <line>When they shall be no types of things which are</line>
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0020.05"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0020.05"/>
     <line>Alas! what sawest thou more?</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0020.06"                      />
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e2-0020.06"/>
     <line>[SKETCH OF FOLIAGE]</line>
-    <line>There are two woes</line>
+    <line rend="indent5">There are two woes</line>
     <line>To speak and to behold; thou spare me one</line>
     <line>Names are there, Natures sacred watchwords&#8212;They</line>
-    <line>Were borne aloft in bright emblazoning</line>
+    <line>Were borne aloft in bright emblazonry</line>
     <line>And nations thronged around, &amp; cried aloud</line>
   </zone>
 </surface>
-
