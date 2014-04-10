@@ -4,10 +4,12 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0021" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0021.jp2"/>
+  <zone type="library">8</zone>
   <zone type="main">
-    <line>8</line>
-    <line>[SKETCH OF BRIDGE AND CLOCKTOWER, IN PENCIL]</line>
-    <line>?</line>
+        <add><figure>
+      <figDesc>[SKETCH OF BRIDGE AND CLOCKTOWER, IN PENCIL]</figDesc>
+    </figure></add>
   </zone>
+  <zone type="left_margin">?</zone>
 </surface>
 
