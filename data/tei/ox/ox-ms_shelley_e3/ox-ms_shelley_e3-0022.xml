@@ -5,29 +5,32 @@
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0022" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0022.jp2"/>
   <zone type="main">
-    <line>Thy presence thus unveiled &#8212; the Nereids tell 510</line>
+    <line>Thy presence thus unveiled &#8212; the Nereids tell <metamark function="count">510</metamark></line>
     <line>That on the day when the clear hyaline</line>
     <line>Was cloven at thine uprise, &amp; thou didst stand</line>
     <line>Within a veined shell, which floated on</line>
     <line>Over the calm floor of the chrystal sea,</line>
     <line>Among the Egean isles, &amp; by the shores</line>
-    <line>Which bear thy name, love, like <del rend="strikethrough">a <unclear>n</unclear> fiery s</del></line>
-    <line>the atmosphere</line>
+    <line>Which bear thy name, love, like <del rend="strikethrough">a <unclear>n</unclear> fiery s</del>
+    <add place="sublinear">the atmosphere</add></line>
     <line>Of the sun's fire filling the living world</line>
     <line>Burst from thee, and illumined Earth &amp; Heaven&#8212;</line>
     <line>And the deep ocean &amp; the sunless caves</line>
-    <line>And all that dwell within them; till <del rend="strikethrough">Earth</del></line>
-    <line>grief cast</line>
+    <line>And all that dwell within them; till <del rend="strikethrough">Earth</del>
+    <add place="sublinear">grief cast</add></line>
     <line>Eclipse upon the soul from which it came:</line>
     <line>Such art thou now, nor is it I alone</line>
     <line>Thy sister thy companion, thine own chosen one</line>
     <line>But the whole world which seeks thy sympathy.</line>
-    <line>Hearest thou not sounds i the air which speak</line>
-    <line>all the  <unclear>love</unclear></line>
-    <line>Of <del rend="strikethrough">each</del> articulate beings? feelest thou not</line>
+    <line>Hearest thou not sounds i the air which speak
+    <add place="sublinear">the <unclear>love</unclear></add></line>
+    <line>Of <del rend="strikethrough">each</del> articulate beings? feelest thou not
+    <add place="superlinear">all</add></line>
     <line>The inanimate winds enamoured of thee?&#8212;list</line>
-    <line>Music</line>
-    <line>Asia</line>
+    <line rend="right"><milestone unit="tei:stage"
+    spanTo="#e3-0022.01"/>Music<anchor xml:id="e3-0022.01"/></line>
+    <line rend="center"><milestone unit="tei:speaker"
+    spanTo="e3-0022.02"/>Asia<anchor xml:id="e3-0022.02"/></line>  
     <line>Thy words are sweeter than aught else but his</line>
     <line>Whose echoes they are &#8212; yet all love is sweet</line>
   </zone>
