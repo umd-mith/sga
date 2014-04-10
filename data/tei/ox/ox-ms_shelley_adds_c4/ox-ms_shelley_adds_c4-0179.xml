@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0179" partOf="#ox-ms_shelley_adds_c4" sga:folio="86r">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0179" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="86r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0179.jp2"/>
   <zone type="main">
     <line>Dentro alla           scorrente</line>
@@ -20,7 +22,7 @@
     <line>Una alata armonia di gioia ed amore e mara<del rend="strikethrough">l</del>viglie</line>
     <line>batte l'ali</line>
     <line>Che <del rend="strikethrough">s'inalzal</del>    dove Speranza mai non vola</line>
-    <line>Squarciando il velo del <unclear>lo</unclear> spazio e del Tempo.</line>
+    <line>Squarciando il velo del{lo} spazio e del Tempo.</line>
     <line>Un solo Oceano pasce le nuvole, le <del rend="strikethrough">acq</del> e</line>
     <line>onde, la rugiada,</line>
     <line>Un<del rend="strikethrough">o</del> solo Sole illumina cielo <del rend="strikethrough">e terra</del>, - un solo Spirito</line>
@@ -36,4 +38,3 @@
     <line><del rend="strikethrough">Era</del> Non era ancora svezzata da quello Elisio cibo</line>
   </zone>
 </surface>
-

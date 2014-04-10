@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0055" partOf="#ox-ms_shelley_adds_c4" sga:folio="23v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0055" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="23v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0055.jp2"/>
   <zone type="main">
     <line>The music of their ever moving wings</line>
@@ -24,7 +26,7 @@
     <line><del rend="strikethrough">And</del>               light is round <del rend="strikethrough">him</del> cast</line>
     <line>Nor then avails the<del rend="strikethrough">t</del> <del rend="strikethrough">there is light around</del></line>
     <line>beams that quench the Sun</line>
-    <line>Or [sight within its pierce            pierce</line>
+    <line>Or [sight within its pierce            pierce </line>
     <line>Or that <del rend="strikethrough">these</del> <del rend="strikethrough">eyes banded</del> eyes <del rend="strikethrough">could scan the sphere</del></line>
     <line>their</line>
     <line><del rend="strikethrough">Of the to come the present &amp; the past</del></line>
@@ -40,4 +42,3 @@
     <line><del rend="strikethrough">So mighty was the Vision</del></line>
   </zone>
 </surface>
-

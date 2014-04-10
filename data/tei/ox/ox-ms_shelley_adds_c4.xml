@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../schemata/shelley_godwin_odd.rng"  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Frankenstein, Draft Notebook A</title>
+        <title type="sub">An electronic transcription</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          Shelley-Godwin Archive edition,
+          <date>2012-2014</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <distributor>Oxford University</distributor>
+        <address>
+          <addrLine>
+            <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+          </addrLine>
+        </address>
+        <availability status="free">
+          <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+            <p>CC0 1.0 Universal.</p>
+            <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive have waived all copyright and related or neighboring rights to this work.</p>
+          </licence>
+        </availability>
+        <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Oxford</settlement>
+            <repository>Bodleian Library, University of Oxford</repository>
+            <idno type="Bod">MS. Shelley adds. c. 4</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem xml:id="ox-ms_shelley_adds_c4">
+              <bibl status="">
+                <author>Percy Shelley</author>
+              </bibl>
+              <msItem>
+                <bibl>
+                  <title>Translation (Goethe)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0231 #ox-ms_shelley_adds_c4-0232"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0235 #ox-ms_shelley_adds_c4-0236"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0239 #ox-ms_shelley_adds_c4-0240 #ox-ms_shelley_adds_c4-0241 #ox-ms_shelley_adds_c4-0242"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0237 #ox-ms_shelley_adds_c4-0238"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0233 #ox-ms_shelley_adds_c4-0234"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0243 #ox-ms_shelley_adds_c4-0244"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0247 #ox-ms_shelley_adds_c4-0248"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0251 #ox-ms_shelley_adds_c4-0252"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0255 #ox-ms_shelley_adds_c4-0256 #ox-ms_shelley_adds_c4-0257 #ox-ms_shelley_adds_c4-0258"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0253 #ox-ms_shelley_adds_c4-0254"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0249 #ox-ms_shelley_adds_c4-0250"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0245"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0259 #ox-ms_shelley_adds_c4-0260"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0263 #ox-ms_shelley_adds_c4-0264 #ox-ms_shelley_adds_c4-0265 #ox-ms_shelley_adds_c4-0266"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0269 #ox-ms_shelley_adds_c4-0270 #ox-ms_shelley_adds_c4-0271 #ox-ms_shelley_adds_c4-0272"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0547 #ox-ms_shelley_adds_c4-0548 #ox-ms_shelley_adds_c4-0549 #ox-ms_shelley_adds_c4-0550 #ox-ms_shelley_adds_c4-0551 #ox-ms_shelley_adds_c4-0552 #ox-ms_shelley_adds_c4-0553 #ox-ms_shelley_adds_c4-0554 #ox-ms_shelley_adds_c4-0555 #ox-ms_shelley_adds_c4-0556 #ox-ms_shelley_adds_c4-0557 #ox-ms_shelley_adds_c4-0558 #ox-ms_shelley_adds_c4-0559 #ox-ms_shelley_adds_c4-0560 #ox-ms_shelley_adds_c4-0561 #ox-ms_shelley_adds_c4-0562 #ox-ms_shelley_adds_c4-0563 #ox-ms_shelley_adds_c4-0564 #ox-ms_shelley_adds_c4-0565 #ox-ms_shelley_adds_c4-0566 #ox-ms_shelley_adds_c4-0567 #ox-ms_shelley_adds_c4-0568 #ox-ms_shelley_adds_c4-0569 #ox-ms_shelley_adds_c4-0570 #ox-ms_shelley_adds_c4-0571 #ox-ms_shelley_adds_c4-0572 #ox-ms_shelley_adds_c4-0573 #ox-ms_shelley_adds_c4-0574 #ox-ms_shelley_adds_c4-0575 #ox-ms_shelley_adds_c4-0576 #ox-ms_shelley_adds_c4-0577 #ox-ms_shelley_adds_c4-0578 #ox-ms_shelley_adds_c4-0579 #ox-ms_shelley_adds_c4-0580 #ox-ms_shelley_adds_c4-0581 #ox-ms_shelley_adds_c4-0582 #ox-ms_shelley_adds_c4-0583 #ox-ms_shelley_adds_c4-0584 #ox-ms_shelley_adds_c4-0585 #ox-ms_shelley_adds_c4-0586 #ox-ms_shelley_adds_c4-0587 #ox-ms_shelley_adds_c4-0588 #ox-ms_shelley_adds_c4-0589 #ox-ms_shelley_adds_c4-0590 #ox-ms_shelley_adds_c4-0591 #ox-ms_shelley_adds_c4-0592 #ox-ms_shelley_adds_c4-0593 #ox-ms_shelley_adds_c4-0594 #ox-ms_shelley_adds_c4-0595 #ox-ms_shelley_adds_c4-0596 #ox-ms_shelley_adds_c4-0597 #ox-ms_shelley_adds_c4-0598 #ox-ms_shelley_adds_c4-0599 #ox-ms_shelley_adds_c4-0600 #ox-ms_shelley_adds_c4-0601 #ox-ms_shelley_adds_c4-0602 #ox-ms_shelley_adds_c4-0603 #ox-ms_shelley_adds_c4-0604 #ox-ms_shelley_adds_c4-0605 #ox-ms_shelley_adds_c4-0606"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>The Triumph of Life</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0046 #ox-ms_shelley_adds_c4-0047 #ox-ms_shelley_adds_c4-0048"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0050 #ox-ms_shelley_adds_c4-0051 #ox-ms_shelley_adds_c4-0052 #ox-ms_shelley_adds_c4-0053 #ox-ms_shelley_adds_c4-0054 #ox-ms_shelley_adds_c4-0055 #ox-ms_shelley_adds_c4-0056 #ox-ms_shelley_adds_c4-0057 #ox-ms_shelley_adds_c4-0058 #ox-ms_shelley_adds_c4-0059 #ox-ms_shelley_adds_c4-0060 #ox-ms_shelley_adds_c4-0061 #ox-ms_shelley_adds_c4-0062 #ox-ms_shelley_adds_c4-0063 #ox-ms_shelley_adds_c4-0064 #ox-ms_shelley_adds_c4-0065 #ox-ms_shelley_adds_c4-0066 #ox-ms_shelley_adds_c4-0067"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0070 #ox-ms_shelley_adds_c4-0071 #ox-ms_shelley_adds_c4-0072 #ox-ms_shelley_adds_c4-0073 #ox-ms_shelley_adds_c4-0074 #ox-ms_shelley_adds_c4-0075 #ox-ms_shelley_adds_c4-0076"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0068 #ox-ms_shelley_adds_c4-0069"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0083 #ox-ms_shelley_adds_c4-0084 #ox-ms_shelley_adds_c4-0085 #ox-ms_shelley_adds_c4-0086 #ox-ms_shelley_adds_c4-0087 #ox-ms_shelley_adds_c4-0088 #ox-ms_shelley_adds_c4-0089 #ox-ms_shelley_adds_c4-0090 #ox-ms_shelley_adds_c4-0091 #ox-ms_shelley_adds_c4-0092"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0095 #ox-ms_shelley_adds_c4-0096 #ox-ms_shelley_adds_c4-0097 #ox-ms_shelley_adds_c4-0098"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0100"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0102 #ox-ms_shelley_adds_c4-0103 #ox-ms_shelley_adds_c4-0104"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0106 #ox-ms_shelley_adds_c4-0107 #ox-ms_shelley_adds_c4-0108 #ox-ms_shelley_adds_c4-0109 #ox-ms_shelley_adds_c4-0110 #ox-ms_shelley_adds_c4-0111 #ox-ms_shelley_adds_c4-0112 #ox-ms_shelley_adds_c4-0113"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0113"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0115 #ox-ms_shelley_adds_c4-0116 #ox-ms_shelley_adds_c4-0117 #ox-ms_shelley_adds_c4-0118 #ox-ms_shelley_adds_c4-0119 #ox-ms_shelley_adds_c4-0120 #ox-ms_shelley_adds_c4-0121 #ox-ms_shelley_adds_c4-0122 #ox-ms_shelley_adds_c4-0123 #ox-ms_shelley_adds_c4-0124"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>A Defence of Poetry</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0477 #ox-ms_shelley_adds_c4-0478 #ox-ms_shelley_adds_c4-0479 #ox-ms_shelley_adds_c4-0480 #ox-ms_shelley_adds_c4-0481 #ox-ms_shelley_adds_c4-0482 #ox-ms_shelley_adds_c4-0483 #ox-ms_shelley_adds_c4-0484 #ox-ms_shelley_adds_c4-0485 #ox-ms_shelley_adds_c4-0486 #ox-ms_shelley_adds_c4-0487 #ox-ms_shelley_adds_c4-0488 #ox-ms_shelley_adds_c4-0489 #ox-ms_shelley_adds_c4-0490 #ox-ms_shelley_adds_c4-0491 #ox-ms_shelley_adds_c4-0492 #ox-ms_shelley_adds_c4-0493 #ox-ms_shelley_adds_c4-0494 #ox-ms_shelley_adds_c4-0495 #ox-ms_shelley_adds_c4-0496 #ox-ms_shelley_adds_c4-0497 #ox-ms_shelley_adds_c4-0498 #ox-ms_shelley_adds_c4-0499 #ox-ms_shelley_adds_c4-0500 #ox-ms_shelley_adds_c4-0501 #ox-ms_shelley_adds_c4-0502 #ox-ms_shelley_adds_c4-0503 #ox-ms_shelley_adds_c4-0504 #ox-ms_shelley_adds_c4-0505 #ox-ms_shelley_adds_c4-0506 #ox-ms_shelley_adds_c4-0507 #ox-ms_shelley_adds_c4-0508 #ox-ms_shelley_adds_c4-0509 #ox-ms_shelley_adds_c4-0510 #ox-ms_shelley_adds_c4-0511 #ox-ms_shelley_adds_c4-0512 #ox-ms_shelley_adds_c4-0513"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0517 #ox-ms_shelley_adds_c4-0518 #ox-ms_shelley_adds_c4-0519 #ox-ms_shelley_adds_c4-0520 #ox-ms_shelley_adds_c4-0521 #ox-ms_shelley_adds_c4-0522 #ox-ms_shelley_adds_c4-0523 #ox-ms_shelley_adds_c4-0524 #ox-ms_shelley_adds_c4-0525 #ox-ms_shelley_adds_c4-0526 #ox-ms_shelley_adds_c4-0527 #ox-ms_shelley_adds_c4-0528 #ox-ms_shelley_adds_c4-0529 #ox-ms_shelley_adds_c4-0530 #ox-ms_shelley_adds_c4-0531 #ox-ms_shelley_adds_c4-0532 #ox-ms_shelley_adds_c4-0533 #ox-ms_shelley_adds_c4-0534 #ox-ms_shelley_adds_c4-0535"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Prose (others)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0017"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0327 #ox-ms_shelley_adds_c4-0328"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0331 #ox-ms_shelley_adds_c4-0332 #ox-ms_shelley_adds_c4-0333 #ox-ms_shelley_adds_c4-0334"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0329 #ox-ms_shelley_adds_c4-0330"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0339 #ox-ms_shelley_adds_c4-0340"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0345 #ox-ms_shelley_adds_c4-0346"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0393 #ox-ms_shelley_adds_c4-0394 #ox-ms_shelley_adds_c4-0395 #ox-ms_shelley_adds_c4-0396 #ox-ms_shelley_adds_c4-0397 #ox-ms_shelley_adds_c4-0398 #ox-ms_shelley_adds_c4-0399 #ox-ms_shelley_adds_c4-0400 #ox-ms_shelley_adds_c4-0401 #ox-ms_shelley_adds_c4-0402 #ox-ms_shelley_adds_c4-0403 #ox-ms_shelley_adds_c4-0404"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0421"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0423"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0441 #ox-ms_shelley_adds_c4-0442"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0447 #ox-ms_shelley_adds_c4-0448 #ox-ms_shelley_adds_c4-0449"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0455 #ox-ms_shelley_adds_c4-0456 #ox-ms_shelley_adds_c4-0457 #ox-ms_shelley_adds_c4-0458"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Ode alla Liberta</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0175 #ox-ms_shelley_adds_c4-0176 #ox-ms_shelley_adds_c4-0177 #ox-ms_shelley_adds_c4-0178 #ox-ms_shelley_adds_c4-0179 #ox-ms_shelley_adds_c4-0180 #ox-ms_shelley_adds_c4-0181 #ox-ms_shelley_adds_c4-0182 #ox-ms_shelley_adds_c4-0183"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0185 #ox-ms_shelley_adds_c4-0186 #ox-ms_shelley_adds_c4-0187 #ox-ms_shelley_adds_c4-0188"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Speculations on Morals</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0311 #ox-ms_shelley_adds_c4-0312 #ox-ms_shelley_adds_c4-0313 #ox-ms_shelley_adds_c4-0314 #ox-ms_shelley_adds_c4-0315 #ox-ms_shelley_adds_c4-0316 #ox-ms_shelley_adds_c4-0317 #ox-ms_shelley_adds_c4-0318 #ox-ms_shelley_adds_c4-0319 #ox-ms_shelley_adds_c4-0320 #ox-ms_shelley_adds_c4-0321"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Prose (translation)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0376"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0429 #ox-ms_shelley_adds_c4-0430"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0433 #ox-ms_shelley_adds_c4-0434 #ox-ms_shelley_adds_c4-0435 #ox-ms_shelley_adds_c4-0436"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0431 #ox-ms_shelley_adds_c4-0432"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Essay on Christianity</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0409 #ox-ms_shelley_adds_c4-0410"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0413 #ox-ms_shelley_adds_c4-0414 #ox-ms_shelley_adds_c4-0415 #ox-ms_shelley_adds_c4-0416"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0411 #ox-ms_shelley_adds_c4-0412"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Shorter Poems written in 1821</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0129"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0205 #ox-ms_shelley_adds_c4-0206"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0217"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0223"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0226"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0289 #ox-ms_shelley_adds_c4-0290"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Draft of Letters (category = P)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0543 #ox-ms_shelley_adds_c4-0544"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0381 #ox-ms_shelley_adds_c4-0382 #ox-ms_shelley_adds_c4-0383 #ox-ms_shelley_adds_c4-0384"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0463 #ox-ms_shelley_adds_c4-0464"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Sgricci review, Una Favola</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0357 #ox-ms_shelley_adds_c4-0358 #ox-ms_shelley_adds_c4-0359 #ox-ms_shelley_adds_c4-0360 #ox-ms_shelley_adds_c4-0361 #ox-ms_shelley_adds_c4-0362 #ox-ms_shelley_adds_c4-0363"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Ode to Naples (1820)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0193 #ox-ms_shelley_adds_c4-0194"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0197 #ox-ms_shelley_adds_c4-0198 #ox-ms_shelley_adds_c4-0199 #ox-ms_shelley_adds_c4-0200"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Shorter Poems written in 1819</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0024"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0166 #ox-ms_shelley_adds_c4-0167 #ox-ms_shelley_adds_c4-0168 #ox-ms_shelley_adds_c4-0169 #ox-ms_shelley_adds_c4-0170"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Shorter Poems written in 1822</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0061"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0078 #ox-ms_shelley_adds_c4-0079 #ox-ms_shelley_adds_c4-0080 #ox-ms_shelley_adds_c4-0081 #ox-ms_shelley_adds_c4-0082"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Speculations on Metaphysics</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0297 #ox-ms_shelley_adds_c4-0298 #ox-ms_shelley_adds_c4-0299 #ox-ms_shelley_adds_c4-0300 #ox-ms_shelley_adds_c4-0301 #ox-ms_shelley_adds_c4-0302"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Shorter Poems written in 1816</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0149"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0151 #ox-ms_shelley_adds_c4-0152"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0165 #ox-ms_shelley_adds_c4-0166"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Fragment (category = V, P, M)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0144"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0224"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0290 #ox-ms_shelley_adds_c4-0291"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0393"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Laon and Cythna (The Revolt of Islam)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0006 #ox-ms_shelley_adds_c4-0007 #ox-ms_shelley_adds_c4-0008 #ox-ms_shelley_adds_c4-0009"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0302"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Hellas</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0030 #ox-ms_shelley_adds_c4-0031 #ox-ms_shelley_adds_c4-0032 #ox-ms_shelley_adds_c4-0033"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Translation (Plato)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0373 #ox-ms_shelley_adds_c4-0374 #ox-ms_shelley_adds_c4-0375 #ox-ms_shelley_adds_c4-0376"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Epipsychidion</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0022 #ox-ms_shelley_adds_c4-0023 #ox-ms_shelley_adds_c4-0024 #ox-ms_shelley_adds_c4-0025"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Shorter Poems written in 1817</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0133"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0143"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0300"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>To Jane: &quot;The keen stars...&quot; (1822)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0077"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0085"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0119"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Journal (category = P)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0137 #ox-ms_shelley_adds_c4-0138"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0152"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Miscellaneous Entries (category = M)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0061"/>
+                  <locus target="#ox-ms_shelley_adds_c4-0123 #ox-ms_shelley_adds_c4-0124"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Charles the First</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0277 #ox-ms_shelley_adds_c4-0278"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Buona Notte</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0211"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Translation (others)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0283"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>The Cenci</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0328"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Mont Blanc (1816)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0152"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>To Jane: The Recollection (1822)</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0135"/>
+                </locusGrp>
+              </msItem>
+              <msItem>
+                <bibl>
+                  <title>Prometheus Unbound</title>
+                </bibl>
+                <locusGrp>
+                  <locus target="#ox-ms_shelley_adds_c4-0014"/>
+                </locusGrp>
+              </msItem>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <handDesc>
+              <handNote xml:id="pbs">
+                <persName>Percy Shelley</persName>
+              </handNote>
+            </handDesc>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc> </revisionDesc>
+  </teiHeader>
+  <sourceDoc>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0001.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0002.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0003.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0004.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0005.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0006.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0007.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0008.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0009.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0010.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0011.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0012.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0013.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0014.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0015.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0016.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0017.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0018.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0019.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0020.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0021.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0022.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0023.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0024.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0025.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0026.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0027.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0028.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0029.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0030.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0031.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0032.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0033.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0034.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0035.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0036.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0037.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0038.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0039.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0040.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0041.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0042.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0043.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0044.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0045.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0046.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0047.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0048.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0049.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0050.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0051.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0052.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0053.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0054.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0055.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0056.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0057.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0058.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0059.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0060.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0061.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0062.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0063.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0064.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0065.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0066.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0067.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0068.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0069.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0070.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0071.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0072.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0073.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0074.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0075.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0076.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0077.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0078.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0079.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0080.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0081.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0082.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0083.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0084.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0085.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0086.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0087.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0088.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0089.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0090.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0091.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0092.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0093.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0094.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0095.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0096.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0097.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0098.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0099.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0100.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0101.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0102.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0103.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0104.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0105.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0106.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0107.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0108.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0109.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0110.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0111.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0112.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0113.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0114.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0115.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0116.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0117.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0118.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0119.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0120.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0121.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0122.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0123.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0124.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0125.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0126.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0127.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0128.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0129.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0130.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0131.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0132.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0133.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0134.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0135.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0136.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0137.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0138.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0139.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0140.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0141.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0142.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0143.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0144.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0145.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0146.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0147.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0148.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0149.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0150.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0151.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0152.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0153.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0154.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0155.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0156.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0157.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0158.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0159.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0160.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0161.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0162.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0163.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0164.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0165.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0166.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0167.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0168.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0169.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0170.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0171.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0172.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0173.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0174.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0175.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0176.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0177.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0178.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0179.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0180.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0181.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0182.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0183.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0184.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0185.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0186.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0187.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0188.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0189.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0190.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0191.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0192.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0193.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0194.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0195.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0196.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0197.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0198.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0199.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0200.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0201.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0202.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0203.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0204.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0205.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0206.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0207.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0208.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0209.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0210.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0211.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0212.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0213.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0214.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0215.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0216.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0217.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0218.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0219.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0220.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0221.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0222.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0223.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0224.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0225.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0226.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0227.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0228.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0229.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0230.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0231.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0232.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0233.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0234.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0235.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0236.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0237.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0238.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0239.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0240.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0241.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0242.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0243.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0244.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0245.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0246.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0247.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0248.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0249.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0250.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0251.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0252.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0253.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0254.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0255.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0256.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0257.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0258.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0259.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0260.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0261.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0262.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0263.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0264.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0265.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0266.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0267.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0268.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0269.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0270.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0271.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0272.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0273.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0274.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0275.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0276.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0277.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0278.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0279.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0280.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0281.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0282.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0283.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0284.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0285.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0286.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0287.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0288.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0289.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0290.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0291.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0292.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0293.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0294.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0295.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0296.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0297.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0298.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0299.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0300.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0301.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0302.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0303.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0304.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0305.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0306.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0307.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0308.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0309.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0310.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0311.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0312.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0313.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0314.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0315.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0316.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0317.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0318.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0319.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0320.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0321.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0322.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0323.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0324.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0325.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0326.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0327.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0328.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0329.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0330.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0331.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0332.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0333.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0334.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0335.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0336.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0337.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0338.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0339.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0340.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0341.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0342.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0343.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0344.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0345.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0346.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0347.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0348.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0349.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0350.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0351.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0352.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0353.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0354.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0355.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0356.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0357.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0358.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0359.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0360.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0361.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0362.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0363.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0364.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0365.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0366.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0367.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0368.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0369.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0370.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0371.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0372.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0373.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0374.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0375.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0376.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0377.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0378.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0379.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0380.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0381.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0382.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0383.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0384.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0385.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0386.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0387.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0388.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0389.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0390.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0391.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0392.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0393.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0394.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0395.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0396.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0397.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0398.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0399.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0400.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0401.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0402.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0403.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0404.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0405.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0406.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0407.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0408.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0409.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0410.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0411.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0412.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0413.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0414.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0415.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0416.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0417.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0418.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0419.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0420.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0421.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0422.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0423.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0424.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0425.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0426.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0427.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0428.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0429.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0430.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0431.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0432.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0433.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0434.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0435.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0436.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0437.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0438.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0439.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0440.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0441.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0442.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0443.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0444.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0445.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0446.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0447.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0448.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0449.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0450.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0451.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0452.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0453.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0454.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0455.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0456.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0457.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0458.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0459.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0460.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0461.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0462.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0463.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0464.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0465.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0466.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0467.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0468.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0469.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0470.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0471.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0472.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0473.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0474.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0475.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0476.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0477.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0478.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0479.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0480.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0481.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0482.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0483.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0484.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0485.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0486.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0487.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0488.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0489.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0490.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0491.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0492.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0493.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0494.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0495.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0496.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0497.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0498.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0499.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0500.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0501.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0502.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0503.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0504.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0505.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0506.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0507.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0508.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0509.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0510.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0511.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0512.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0513.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0514.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0515.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0516.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0517.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0518.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0519.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0520.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0521.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0522.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0523.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0524.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0525.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0526.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0527.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0528.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0529.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0530.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0531.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0532.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0533.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0534.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0535.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0536.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0537.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0538.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0539.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0540.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0541.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0542.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0543.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0544.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0545.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0546.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0547.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0548.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0549.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0550.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0551.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0552.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0553.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0554.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0555.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0556.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0557.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0558.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0559.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0560.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0561.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0562.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0563.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0564.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0565.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0566.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0567.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0568.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0569.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0570.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0571.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0572.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0573.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0574.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0575.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0576.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0577.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0578.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0579.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0580.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0581.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0582.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0583.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0584.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0585.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0586.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0587.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0588.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0589.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0590.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0591.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0592.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0593.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0594.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0595.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0596.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0597.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0598.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0599.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0600.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0601.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0602.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0603.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0604.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0605.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0606.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0607.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0608.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0609.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0610.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0611.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0612.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0613.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0614.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0615.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0616.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0617.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0618.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0619.xml"/>
+    <xi:include href="ox-ms_shelley_adds_c4/ox-ms_shelley_adds_c4-0620.xml"/>
+  </sourceDoc>
+</TEI>

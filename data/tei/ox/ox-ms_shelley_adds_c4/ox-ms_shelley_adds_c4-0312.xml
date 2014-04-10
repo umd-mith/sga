@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0312" partOf="#ox-ms_shelley_adds_c4" sga:folio="190v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0312" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="190v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0312.jp2"/>
   <zone type="main">
     <line>The tendencies which exist in the agencies of the material</line>
@@ -29,7 +31,7 @@
     <line>instrumental to that purpose, is called</line>
     <line>-volence, or the desire to be the author of good, united</line>
     <line>apprehension</line>
-    <line>with <del rend="strikethrough">a sense of</del> justice, or a <unclear>n</unclear> <del rend="strikethrough">perception</del> of the manner</line>
+    <line>with <del rend="strikethrough">a sense of</del> justice, or a{n} <del rend="strikethrough">perception</del> of the manner</line>
     <line>in which that good is to be done, constitutes virtue. &#8212;</line>
     <line>has been</line>
     <line><del rend="strikethrough">W</del> <del rend="strikethrough">It <unclear>is</unclear> a generally recieved opinion that men ought</del></line>
@@ -40,4 +42,3 @@
     <line>Justice &amp; Benevolence</line>
   </zone>
 </surface>
-

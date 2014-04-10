@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0314" partOf="#ox-ms_shelley_adds_c4" sga:folio="191v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0314" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="191v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0314.jp2"/>
   <zone type="main">
     <line>A common sophism, which like many others depends</line>
@@ -20,7 +22,7 @@
     <line>punishment         <del rend="strikethrough">Such philosophy instructs</del></line>
     <line><del rend="strikethrough">penalty</del> were attached to disobedience. <del rend="strikethrough">We might</del></line>
     <line><del rend="strikethrough">mankind that there <del rend="strikethrough">is</del> is licence</del></line>
-    <line><del rend="strikethrough">decieve &amp;  <unclear>to</unclear> defraud, that he m<del rend="strikethrough">ight</del>ay innocently indulge</del></line>
+    <line><del rend="strikethrough">decieve &amp; {to} defraud, that he m<del rend="strikethrough">ight</del>ay innocently indulge</del></line>
     <line><del rend="strikethrough">in murder &amp; rapine were it not for Hell &amp; the</del></line>
     <line><del rend="strikethrough">gibbet.</del> This is the philosophy of slavery and superstition.</line>
     <line>In fact no person can be bound obliged without</line>
@@ -34,4 +36,3 @@
     <line>hope of heavenly reward has constrained him to sacrifize</line>
   </zone>
 </surface>
-
