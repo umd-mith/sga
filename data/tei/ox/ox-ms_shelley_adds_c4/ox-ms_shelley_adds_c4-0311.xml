@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0311" partOf="#ox-ms_shelley_adds_c4" sga:folio="190r">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0311" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="190r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0311.jp2"/>
   <zone type="main">
     <line>on truth.</line>
@@ -25,7 +27,7 @@
     <line><unclear></unclear> ?&amp;c</line>
     <line><del rend="strikethrough">-duce the one is called good, the other evil. Nor is it only</del></line>
     <line><del rend="strikethrough">in relation</del> to <del rend="strikethrough">the fee</del>   <del rend="strikethrough">his own peculiar feelings that any</del></line>
-    <line><del rend="strikethrough">man applies the <unclear>se</unclear> epithet <unclear>s</unclear> <unclear>of good or evil</unclear> to</del> the <del rend="strikethrough">subs agents</del></line>
+    <line><del rend="strikethrough">man applies the{se} epithet{s} <unclear>of good or evil</unclear> to</del> the <del rend="strikethrough">subs agents</del></line>
     <line><del rend="strikethrough">of the material world</del>. <del rend="strikethrough">Poison is still considered <unclear>as</unclear> evil by him</del></line>
     <line><del rend="strikethrough">good</del></line>
     <line><del rend="strikethrough">as sunshine is considered</del>  <del rend="strikethrough">altho he should posess an antidote</del></line>
@@ -42,4 +44,3 @@
     <line>of degree<unclear>,</unclear> &amp; modification: and their value is always determi</line>
   </zone>
 </surface>
-

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0402" partOf="#ox-ms_shelley_adds_c4" sga:folio="271v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0402" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="271v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0402.jp2"/>
   <zone type="main">
     <line>posesst</line>
     <line><del rend="strikethrough">Hum</del> Human beings of the most admirable &amp; glorious pro<del rend="strikethrough">pensities</del></line>
-    <line>-pensities are suddenly cut off in the <unclear>ir</unclear> full career of usefulness.</line>
+    <line>-pensities are suddenly cut off in the{ir} full career of usefulness.</line>
     <line>Beings</line>
-    <line><del rend="strikethrough">Men</del> to whom nations have turned <del rend="strikethrough">the</del> anxious <unclear>ly</unclear> <del rend="strikethrough">regard</del> <del rend="strikethrough">for</del></line>
+    <line><del rend="strikethrough">Men</del> to whom nations have turned <del rend="strikethrough">the</del> anxious{ly} <del rend="strikethrough">regard</del> <del rend="strikethrough">for</del></line>
     <line>to</line>
     <line>as thier expected saviours, <del rend="strikethrough">to</del> whom families have regarded</line>
     <line>as thier only comfort &amp; support, who have dispensed</line>
@@ -48,4 +50,3 @@
     <line>state he is frugivorous: domestication has rendered him</line>
   </zone>
 </surface>
-

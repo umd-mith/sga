@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0050" partOf="#ox-ms_shelley_adds_c4" sga:folio="21r">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0050" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="21r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0050.jp2"/>
   <zone type="main">
     <line>for want of dew was soiled</line>
@@ -27,8 +29,8 @@
     <line><del rend="strikethrough">Which</del> <del rend="strikethrough"><unclear>On</unclear></del> <del rend="strikethrough">One of</del></line>
     <line><del rend="strikethrough">Brought</del> <del rend="strikethrough">each</del> <del rend="strikethrough">his</del> <del rend="strikethrough">chariot</del></line>
     <line><del rend="strikethrough">Each marshalled</del></line>
-    <line>[Each brought its &amp;lt;?chariots&amp;gt;:</line>
-    <line>[&amp;lt;Were&amp;gt;] mingled in one impulse], and [did]</line>
+    <line>[Each brought its &lt;?chariots&gt;: </line>
+    <line>[&lt;Were&gt;] mingled in one impulse], and [did] </line>
     <line><del rend="strikethrough"><unclear>Were</unclear></del> <del rend="strikethrough"><unclear>Whirled</unclear></del> <del rend="strikethrough">Whirred</del> torrent</line>
     <line>Mixed in one mighty <del rend="strikethrough">impulse</del> did appear</line>
     <line><del rend="strikethrough">By</del></line>
@@ -36,4 +38,3 @@
     <line><del rend="strikethrough">Some</del></line>
   </zone>
 </surface>
-

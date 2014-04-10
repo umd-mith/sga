@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0051" partOf="#ox-ms_shelley_adds_c4" sga:folio="21v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0051" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="21v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0051.jp2"/>
   <zone type="main">
     <line>Seeking the object of <del rend="strikethrough">an</del>other's fear</line>
@@ -37,4 +39,3 @@
     <line><del rend="strikethrough">Nor saw the landscape on which they had perish</del></line>
   </zone>
 </surface>
-

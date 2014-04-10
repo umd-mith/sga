@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0181" partOf="#ox-ms_shelley_adds_c4" sga:folio="87r">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0181" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="87r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0181.jp2"/>
   <zone type="main">
     <line>E gridavano-Liberta. - Indignazione</line>
@@ -10,7 +12,7 @@
     <line>Respondeva a Pieta dal<del rend="strikethrough">la sua spelon</del></line>
     <line>La Morte s'impallide dentro alla tomba</line>
     <line>E Desolazione <del rend="strikethrough">gr</del> urlava Desolatore - Salva<del rend="strikethrough">ti</del>;</line>
-    <line>Quando Tu, come il Sole del Cielo cinto dal <unclear>lo</unclear> vapore</line>
+    <line>Quando Tu, come il Sole del Cielo cinto dal{lo} vapore</line>
     <line>Della sua gloriosa luce, <del rend="strikethrough">tu</del> te inalza<del rend="strikethrough">i</del>sti</line>
     <line>Cacciando ?i tuoi nemici da nazione al nazione</line>
     <line><del rend="strikethrough">quasi</del></line>
@@ -42,4 +44,3 @@
     <line>L'Anarca <del rend="strikethrough">d<del rend="strikethrough">i</del>ei tuo<unclear>i</unclear></del> smarrit<del rend="strikethrough">i</del>e schiere</line>
   </zone>
 </surface>
-

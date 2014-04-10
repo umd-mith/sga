@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4970" lry="7256" xml:id="ox-ms_shelley_adds_c4-0396" partOf="#ox-ms_shelley_adds_c4" sga:folio="268v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4970" lry="7256"
+  xml:id="ox-ms_shelley_adds_c4-0396" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="268v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0396.jp2"/>
   <zone type="main">
     <line>fails to be opposed to every reasoning of this nature is, that</line>
@@ -48,4 +50,3 @@
     <line>is - <del rend="strikethrough">the</del> cause <del rend="strikethrough">of</del> this universal <del rend="strikethrough">desolation</del> <del rend="strikethrough">If</del> much of</line>
   </zone>
 </surface>
-

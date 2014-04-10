@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0394" partOf="#ox-ms_shelley_adds_c4" sga:folio="267v">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="4966" lry="7248"
+  xml:id="ox-ms_shelley_adds_c4-0394" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="267v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0394.jp2"/>
   <zone type="main">
     <line>in some degree</line>
     <line>of bodily derangement fail to limit the energies of intellect</line>
     <line>some slighter     of passion       Is</line>
-    <line>and to excite pervers<del rend="strikethrough">e</del> <unclear>ities</unclear> <del rend="strikethrough">desires</del>? <del rend="strikethrough">Is that which generates</del> idiotism</line>
+    <line>and to excite pervers<del rend="strikethrough">e</del>{ities} <del rend="strikethrough">desires</del>? <del rend="strikethrough">Is that which generates</del> idiotism</line>
     <line>and frenzy to be traced to one cause, ill temper &amp; stupidity</line>
     <line><del rend="strikethrough">a</del> the result of another? A certain degree of violent &amp; injudicious</line>
     <line>conduct has been invariably ascribed to organic derangement:</line>
@@ -55,4 +57,3 @@
     <line>?Feinars ?Ghosts</line>
   </zone>
 </surface>
-

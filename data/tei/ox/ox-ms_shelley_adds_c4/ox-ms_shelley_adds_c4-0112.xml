@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5300" lry="7382" xml:id="ox-ms_shelley_adds_c4-0112" partOf="#ox-ms_shelley_adds_c4" sga:folio="52r">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5300" lry="7382"
+  xml:id="ox-ms_shelley_adds_c4-0112" partOf="#ox-ms_shelley_adds_c4"
+  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="52r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0112.jp2"/>
   <zone type="main">
     <line>With <del rend="strikethrough">thought, and eyes</del>                      shone</line>
@@ -31,14 +33,13 @@
     <line><del rend="strikethrough">And left behind <unclear>the</unclear> <unclear>car</unclear></del>   <del rend="strikethrough"><unclear>sp?  </unclear></del></line>
     <line>cars creative <del rend="strikethrough">light</del></line>
     <line>And of this stuff the <del rend="strikethrough">light of</del> <del rend="strikethrough">that</del> Vision</line>
-    <line>&amp;lt;busy&amp;gt; that [&amp;lt;were&amp;gt;] [like] &amp;gt;</line>
+    <line>&lt;busy&gt; that [&lt;were&gt;] [like] &gt; </line>
     <line>Wrought all the phantoms, <del rend="strikethrough"><unclear>fluttering</unclear></del> <del rend="strikethrough">there</del></line>
     <line><del rend="strikethrough">&amp; on its far flight</del></line>
     <line>As the sun shapes the clouds <del rend="strikethrough">&amp; in derision</del></line>
     <line>form            mighty</line>
-    <line>[Wither Changes their shape &amp;lt;at his whim&amp;gt; at his will]]</line>
+    <line>[Wither Changes their shape &lt;at his whim&gt; at his will]] </line>
     <line>So                <del rend="strikethrough">by his prevailing ray</del></line>
     <line><del rend="strikethrough">From</del></line>
   </zone>
 </surface>
-
