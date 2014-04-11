@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0028" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0028" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0028.jp2"/>
   <zone type="main">
     <line>[f. 13r blank]</line>
-    <line>Twas the hope the prophecy</line>
-    <line>Which begins &amp; ends in thee</line>
-    <line>2.dSpirit</line>
+    <line rend="indent1">Twas the hope the prophecy</line>
+    <line rend="indent1">Which begins &amp; ends in thee</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0028.01"/>
+    <line rend="center">2.<hi rend="sup">d</hi>Spirit</line>
+    <anchor xml:id="e2-0028.01"/>
+    <delSpan rend="vertical_line" spanTo="#e2-0028.02"/>
     <line>I leaped on the wings of the Earth-star damp</line>
-    <line>As it rose in the steam of a slaughtered camp&#8212;</line>
+    <line>As it rose <unclear reason="illegible">i</unclear>n the steam of a slaughtered
+      camp&#8212;</line>
     <line>The sleeping newt heard not our tramp</line>
-    <line>as the wing of fire may pass</line>
-    <line>As swift <del rend="strikethrough">and silent we did pass</del></line>
-    <line>We threaded</line>
-    <line><del rend="strikethrough">Among</del> the points of long thick grass</line>
+    <line>As swift <mod>
+        <del rend="strikethrough">and silent we did pass</del>
+        <add place="superlinear">as the wing of fire may pass</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">Among</del>
+        <add place="superlinear">We threaded</add>
+      </mod> the points of long thick grass</line>
     <line>Which hide the green pools of the morass</line>
     <line>But shook a water-serpents couch</line>
     <line>In a cleft skull, of many such</line>
-    <line>The widest; at the meteor <unclear>s</unclear> touch</line>
+    <line>The widest; at the meteor<unclear reason="illegible">s</unclear> touch</line>
     <line>The snake did seem to see in dream</line>
     <line>Thrones &amp; dungeons overthrown</line>
     <line>Visions how unlike his own ....</line>
     <line>'Twas the hope the prophecy</line>
     <line>Which begins &amp; ends in thee</line>
-    <line>2dSpirit</line>
+    <anchor xml:id="e2-0028.02"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0028.03"/>
+    <line rend="center"><mod>
+        <del rend="overwritten">3</del>
+        <add place="intralinear">2</add>
+      </mod><hi rend="sup">d</hi> Spirit</line>
+    <anchor xml:id="e2-0028.03"/>
     <line>A rainbows arch stood on the sea</line>
-    <line>708</line>
+    <line><add><metamark function="count">708</metamark></add></line>
     <line>Which rocked beneath, immoveably;</line>
   </zone>
 </surface>
-
