@@ -4,38 +4,41 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0027" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0027.jp2"/>
+  <zone type="library">11</zone>
   <zone type="main">
-    <line>11</line>
-    <line>Asia</line>
-    <line>spoke</line>
-    <line>You <del rend="strikethrough">say</del> said that Spirits <del rend="strikethrough">speak</del> , but it was thee</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0027.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e3-0027.01"/>
+    <line>You <del rend="strikethrough">say</del> said that Spirits <del rend="strikethrough">speak</del> <add place="superlinear">spoke</add>, but it was thee</line>
     <line>Sweet sister, for even now thy curved lips</line>
     <line>Tremble as if the sound were dying there</line>
     <line>Not dead</line>
-    <line>Panthea was spoke</line>
-    <line>Alas it <del rend="strikethrough">is</del> Prometheus <del rend="strikethrough">speaks</del></line>
-    <line>and I know</line>
-    <line>Within me, <del rend="strikethrough">if I spoke</del> , &amp; <del rend="strikethrough">even now it</del> it must be so</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0027.02"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e3-0027.02"/>
+    <line rend="indent3">Alas it <del rend="strikethrough">is</del><add place="superlinear">was</add> Prometheus 
+         <del rend="strikethrough">speaks</del><add place="superlinear">spoke</add></line>
+    <line>Within me, <del rend="strikethrough">if I spoke</del> , &amp; <add place="superlinear">and I know</add><del rend="strikethrough">even now it</del> it must be so</line>  
     <line>I mixed my own weak nature with his love</line>
     <line>And</line>
-    <line>And my thoughts</line>
-    <line>Are like the many forests of a vale</line>
-    <line>Through which the might of whirlwind &amp; of rain</line>
-    <line>rest [<del rend="strikethrough">rest</del> ]</line>
-    <line>Ha <unclear>d</unclear> passed <del rend="strikethrough">bu</del> <del rend="strikethrough">and</del> they [<del rend="strikethrough">glimmer</del> ]</line>
-    <line><del rend="strikethrough">glimmer</del> through the</line>
-    <line>evening light</line>
-    <line>As Imine do now in thy beloved smile.</line>
-    <line>Asia</line>
-    <line>My soul is an enchanted Boat</line>
-    <line>Which, like a sleeping swan, doth float</line>
+    <line rend="indent4">And my thoughts</line>
+    <line rend="indent1">Are like the many forests of a vale</line>
+    <line rend="indent1">Through which the might of whirlwind &amp; of rain</line>
+    <line rend="indent1">Ha<unclear>d</unclear> passed <del rend="strikethrough">bu</del> <del rend="strikethrough">and</del> they <del rend="strikethrough">glimmer</del>
+      <add place="superlinear"></add>rest <del rend="strikethrough">rest</del>
+      <add place="sublinear"><del rend="strikethrough">glimmer</del> through the<add place="sublinear">evening light</add></add></line> 
+    <line rend="indent1">As Imine do now in thy beloved smile.</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0027.03"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e3-0027.03"/> 
+    <line rend="indent1">My soul is an enchanted Boat</line>
+    <line rend="indent1">Which, like a sleeping swan, doth float</line>
     <line>Upon the silver waves of thy sweet singing,</line>
-    <line>And thine doth like an Angel sit</line>
-    <line>Beside the helm conducting it</line>
+    <line rend="indent1">And thine doth like an Angel sit</line>
+    <line rend="indent1">Beside the helm conducting it</line>
     <line>Whilst all the winds with melody are ringing</line>
     <line>It seems to float ever&#8212;forever&#8212;</line>
-    <line>Upon</line>
-    <line><del rend="strikethrough">Betwee</del>  that many winding River</line>
+    <line rend="indent1"><del rend="strikethrough">Betwee</del> <add place="superlinear">Upon</add> that many winding River</line>
   </zone>
 </surface>
 
