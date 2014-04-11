@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0032" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0032" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0032.jp2"/>
   <zone type="main">
     <line>[f. 15r is blank]</line>
@@ -15,7 +15,9 @@
     <line>As Desires lightning feet</line>
     <line>I must ride it back ere morrow</line>
     <line>Or the sage will wake in sorrow</line>
-    <line>4.th</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0032.01"/>
+    <line>4.<hi rend="sup">th</hi></line>
+    <anchor xml:id="e2-0032.01"/>
     <line>On a Poets lips I slept</line>
     <line>Dreaming like a love-adept</line>
     <line>In the sound his breathing kept;</line>
@@ -24,8 +26,7 @@
     <line>Of shapes that haunt thoughts wilderness</line>
     <line>He will watch from dawn to gloom</line>
     <line>The lake-reflected Sun illume</line>
-    <line>The yellow bee i the ivy-bloom</line>
-    <line>731</line>
+    <line>The yellow bees i<del rend="strikethrough">n</del> the ivy-bloom</line>
+    <line><add><metamark function="count">731</metamark></add></line>
   </zone>
 </surface>
-
