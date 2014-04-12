@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0038" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0038" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0038.jp2"/>
   <zone type="main">
-    <line>[f. 18r is blank]</line>
-    <line>Man and beast &amp; foul &amp; fair</line>
-    <line>Like a tempest thro the air;</line>
-    <line>Thou shalt quell this Horseman grim</line>
-    <line>Woundless though in heart or limb.&#8212;</line>
-    <line>Prometheus</line>
-    <line>Spirits how know ye this shall be</line>
-    <line>Chorus</line>
-    <line>In the atmosphere we breathe</line>
-    <line>As buds grow red when snow <unclear>-</unclear>storms flee</line>
-    <line>From spring gathering up beneath</line>
-    <line>Whose mild winds shake, the elder brake</line>
-    <line>And the wandering herdsman know</line>
-    <line>That the white-thorn soon will blow&#8212;</line>
-    <line>Wisdom Justice Love &amp; Peace</line>
-    <line>When they struggle to increase</line>
-    <line>Are to us as soft winds be</line>
-    <line>To shepherd-boys &#8212; the prophecy</line>
-    <line>Which begins &amp; ends in thee</line>
-    <line>They vanish</line>
-    <line><del rend="strikethrough">Panthea</del> Ione</line>
+    <line rend="indent1">[f. 18r is blank]</line>
+    <line rend="indent1">Man and beast &amp; foul &amp; fair</line>
+    <line rend="indent1">Like a tempest thro the air;</line>
+    <line rend="indent1">Thou shalt quell this Horseman grim</line>
+    <line rend="indent1">Woundless though in heart or limb.&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0038.01"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e2-0038.01"/>
+    <line rend="indent1">Spirits how know ye this shall be</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0038.02"/>
+    <line rend="center">Chorus</line>
+    <anchor xml:id="e2-0038.02"/>
+    <line rend="indent1">In the atmosphere we breathe</line>
+    <line rend="indent1">As buds grow red when snow <unclear>-</unclear>storms flee</line>
+    <line rend="indent1">From spring gathering up beneath</line>
+    <line rend="indent1">Whose mild winds shake, the elder brake</line>
+    <line rend="indent1">And the wandering herdsman know</line>
+    <line rend="indent1">That the white-thorn soon will blow&#8212;</line>
+    <line rend="indent1">Wisdom Justice Love &amp; Peace</line>
+    <line rend="indent1">When they struggle to increase</line>
+    <line rend="indent1">Are to us as soft winds be</line>
+    <line rend="indent1">To shepherd-boys &#8212; the prophecy</line>
+    <line rend="indent1">Which begins &amp; ends in thee</line>
+    <milestone unit="tei:stage" spanTo="#e2-0038.03"/>
+    <line rend="right">They vanish</line>
+    <anchor xml:id="e2-0038.03"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0038.04"/>
+    <line rend="center"><mod>
+        <del rend="strikethrough">Panthea</del>
+        <add place="intralinear">Ione</add>
+      </mod></line>
+    <anchor xml:id="e2-0038.04"/>
     <line>Where are the spirits fled?</line>
-    <line>786</line>
+    <line><add><metamark function="count">786</metamark></add></line>
   </zone>
 </surface>
-
