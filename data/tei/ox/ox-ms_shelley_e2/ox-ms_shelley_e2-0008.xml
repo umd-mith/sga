@@ -8,7 +8,7 @@
     <line rend="indent1">Which must bend the Invincible</line>
     <line rend="indent1">The stern of thought</line>
     <line>He yet defies the deepest power of Hell</line>
-    <milestone unit="tei:speaker" spanTo="#e2-0008.01" xml:id="Fury"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0008.01"/>
     <line rend="indent2"><mod>
         <del rend="strikethrough">Another</del>
         <add place="superlinear">a</add>
@@ -20,11 +20,11 @@
     <line>in a strange dance divide, &amp; in the background</line>
     <line>is seen a plain covered with burning cities</line>
     <anchor xml:id="e2-0008.02"/>
-    <milestone unit="tei:speaker" spanTo="#e2-0008.03" xml:id="Fury"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0008.03"/>
     <line rend="center">Another Fury</line>
     <anchor xml:id="e2-0008.03"/>
     <line>It is torn!</line>
-    <milestone unit="tei:speaker" spanTo="#e2-0008.04" xml:id="Chorus"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0008.04"/>
     <line rend="center">Chorus</line>
     <anchor xml:id="e2-0008.04"/>
     <line rend="indent5">The pale stars of the morn</line>
