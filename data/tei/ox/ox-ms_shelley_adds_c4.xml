@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../schemata/shelley_godwin_odd.rng"  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../schemata/shelley_godwin_odd.rng"  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.tei-c.org/ns/1.0" xml:id="ox-ms_shelley_adds_c4">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,7 +34,7 @@
             <idno type="Bod">MS. Shelley adds. c. 4</idno>
           </msIdentifier>
           <msContents>
-            <msItem xml:id="ox-ms_shelley_adds_c4">
+            <msItem xml:id="ox-ms_shelley_adds_c4-works">
               <bibl status="">
                 <author>Percy Shelley</author>
               </bibl>
