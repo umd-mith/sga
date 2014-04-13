@@ -22,7 +22,7 @@
     <line rend="indent1">And Freedom leads it forth, her mate;</line>
     <line rend="indent1">A legioned band of linked brothers</line>
     <line rend="indent1">Whom Love calls children&#8212;</line>
-    <milestone unit="tei:speaker" spanTo="#e2-0012.02" xml:id="Semichorus2"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0012.02"/>
     <line rend="center">Semichorus 2</line>
     <anchor xml:id="e2-0012.02"/>
     <line rend="indent5">'Tis another's&#8212;</line>
@@ -35,7 +35,7 @@
     <line rend="right">win</line><anchor xml:id="e2-0012.03"/>
     <line><metamark function="count">561</metamark>
       <space unit="chars" extent="14"/>
-      <milestone unit="tei:speaker" spanTo="#e2-0012.04" xml:id="Ione"/><del rend="strikethrough"
+      <milestone unit="tei:speaker" spanTo="#e2-0012.04"/><del rend="strikethrough"
         >Panthea</del><add place="superlinear">Ione</add><anchor xml:id="e2-0012.04"/></line>
     <line>Hark sister, what a low yet dreadful groan</line>
   </zone>

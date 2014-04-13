@@ -7,11 +7,11 @@
   <zone type="library"><line rend="right">3</line>
   </zone>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="#e2-0007.01" xml:id="Ione"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0007.01"/>
     <line rend="indent4">Ione</line>
     <anchor xml:id="e2.0007.01"/>
     <line>Sister I hear the thunder of new wings</line>
-    <milestone unit="tei:speaker" spanTo="#e2-0007.02" xml:id="Panthea"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0007.02"/>
     <line rend="indent4">Panthea</line>
     <anchor xml:id="e2.0007.02"/>
     <line><mod>
