@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0049" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0049" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0049.jp2"/>
-  <zone type="main">
+  <zone type="library">
     <line>24</line>
-    <line>to</line>
-    <line>I was wont sleep</line>
+  </zone>
+  <zone type="main" corresp="#e2-0048.02">
+    <addSpan spanTo="#e2-0049.01"/>
+    <line rend="indent5">I was wont <add place="superlinear">to</add> sleep</line>
     <line>Peacefully, and awake refreshed &amp; calm</line>
     <line>Before the sacred Titan's fall, and thine</line>
-    <line>had made through</line>
-    <line>Unhappy love, <del rend="strikethrough">And ere by</del> use &amp; pity</line>
-    <line>familiar to my heart</line>
-    <line>Both love &amp; woe <del rend="strikethrough">had grown mine own .. I slept</del></line>
-    <line><del rend="strikethrough">my hearts own mates</del></line>
+    <line>Unhappy love, <mod>
+        <del rend="strikethrough">And ere by</del>
+        <add place="superlinear">had made through</add>
+      </mod> use &amp; pity</line>
+    <line>Both love &amp; woe <mod>
+        <mod>
+          <del rend="strikethrough">had grown mine own .. I slept</del>
+          <del rend="strikethrough"><add place="sublinear">my hearts own mates</add></del>
+        </mod>
+        <add place="superlinear">familiar to my heart</add>
+      </mod></line>
     <line>As they had grown to yours ... erewhile I slept</line>
+    <anchor xml:id="e2-0049.01"/>
   </zone>
 </surface>
-
