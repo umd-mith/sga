@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0044" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0044" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0044.jp2"/>
   <zone type="main">
     <line>[f. 21r is blank]</line>
-    <line>Act 2.</line>
-    <line>lovely</line>
-    <line>-A Vale in the Indian</line>
-    <line>Scene Morning- ^</line>
+    <milestone unit="tei:act" spanTo="#e2-0044.01"/>
+    <line rend="center">Act 2.</line>
+    <anchor xml:id="e2-0044.01"/>
+    <milestone unit="tei:stage" spanTo="#e2-0044.02"/>
+    <line rend="indent1">Scene Morning- -a <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">lovely</add>
+      </mod>
+      <unclear reason="case">V</unclear>ale in the Indian</line>
     <line>Caucasus &#8212;. Asia alone</line>
-    <line>Asia</line>
+    <anchor xml:id="e2-0044.02"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0044.03"/>
+    <line rend="center">Asia.</line>
+    <anchor xml:id="e2-0044.03"/>
     <line>From all the blasts of Heaven thou hast descended&#8212;</line>
     <line>Yes like a spirit, like a thought which makes</line>
     <line>Unwonted tears throng to the horny eyes</line>
@@ -25,12 +33,11 @@
     <line>As from the Earth clothing with golden clouds</line>
     <line>The desart of our life....</line>
     <line>This is the season this the day the hour,</line>
-    <line>At sunrise thou shouldst come sweet sister mine</line>
-    <line>...</line>
-    <line>Too long-\desired too long delaying come . ..</line>
-    <line>&amp;lt;</line>
+    <line>At sunrise thou shouldst come sweet sister mine ...</line>
+    <line>Too long<del rend="strikethrough">-</del>desired too long delaying come . ..</line>
+    <line rend="right"><add place="interlinear"><metamark function="displacement"
+          xml:id="e2-0044.04">&#12296;</metamark></add></line>
     <line>The point of one white star is quivering still</line>
-    <line>16</line>
+    <line><add><metamark function="count">16</metamark></add></line>
   </zone>
 </surface>
-

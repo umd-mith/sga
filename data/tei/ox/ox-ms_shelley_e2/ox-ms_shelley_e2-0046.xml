@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0046" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0046" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0046.jp2"/>
   <zone type="main">
-    <line>widening morn</line>
-    <line>Deep in the orange light of <del rend="strikethrough">widern</del></line>
+    <line>Deep in the orange light of <mod>
+        <del rend="strikethrough">widern</del>
+        <add place="superlinear">widening morn</add>
+      </mod></line>
     <line>Beyond the purple mountains; through a chasm</line>
-    <line>Of wind-divided mist the darker lake</line>
+    <line>Of wind<hi rend="underline">-</hi>divided mist the darker lake</line>
     <line>Reflects it&#8212;now it wanes&#8212;it gleams again</line>
     <line>As the waves fade, &amp; as the burning threads</line>
     <line>Of woven cloud unravel in pale air. . . .</line>
@@ -16,18 +18,21 @@
     <line>The roseate sunrise quivers&#8212;hear I not</line>
     <line>The eolian music of her seagreen plumes</line>
     <line>Winnowing the crimson dawn?</line>
-    <line>Panthea enters</line>
-    <line>I feel, I see</line>
+    <milestone unit="tei:stage" spanTo="#e2-0046.01"/>
+    <line rend="indent5">Panthea enters</line>
+    <anchor xml:id="e2-0046.01"/>
+    <line rend="right">I feel, I see</line>
     <line>Those eyes which burn thro smiles that fade in tears</line>
     <line>Like stars half quenched in mists of silver dew&#8212;</line>
     <line>Beloved &amp; most beautiful, who wearest</line>
     <line>The shadow of that soul by which I live</line>
-    <line>How late thou art; the sphered  <unclear>S</unclear>un had climbed</line>
+    <line>How late thou art; the sphered <unclear reason="case">S</unclear>un had climbed</line>
     <line>The sea, my heart was sick with hope, before</line>
     <line>The printless air felt thy belated plumes.</line>
-    <line>Panthea</line>
-    <line>Pardon  <unclear>g</unclear>reat Sister! but my wings were faint</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0046.02"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0046.02"/>
+    <line>Pardon <unclear reason="case">g</unclear>reat Sister! but my wings were faint</line>
     <line>With the delight of a remembered dream</line>
   </zone>
 </surface>
-

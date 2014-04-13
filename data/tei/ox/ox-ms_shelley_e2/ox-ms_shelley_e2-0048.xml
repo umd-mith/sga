@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0048" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0048" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0048.jp2"/>
   <zone type="main">
     <line>As are the noontide plumes of summer winds</line>
-    <line>Satiate with sweet flowers. <del rend="strikethrough">I slept peacefully</del></line>
-    <line><del rend="strikethrough">Before thine exile &amp; his grievous woe</del></line>
-    <line>Under</line>
-    <line><del rend="strikethrough">Within</del> the glaucous caverns of old Ocean</line>
+    <line>Satiate with sweet flowers. <mod spanTo="#e2-0048.01"/><anchor xml:id="e2-0048.02"
+        /><delSpan rend="strikethrough" spanTo="#e2-0048.03"/>I slept peacefully</line>
+    <line>Before thine exile &amp; his grievous woe<anchor xml:id="e2-0048.03"/></line><anchor
+      xml:id="e2-0048.01"/>
+    <line><mod>
+        <del rend="strikethrough">Within</del>
+        <add place="superlinear">Under</add>
+      </mod> the glaucous caverns of old Ocean</line>
     <line>Within dim bowers of green &amp; purple moss;</line>
     <line>Our young Ione's soft &amp; milky arms</line>
     <line>Locked then as now behind my dark moist hair</line>
@@ -18,19 +22,23 @@
     <line>But not as now since I am made the wind</line>
     <line>Which fails beneath the music that I bear</line>
     <line>Of thy most wordless converse; since dissolved</line>
-    <line>With the sense with which love talks, my rest</line>
+    <line>Into the sense with which love talks, my rest</line>
     <line>Was troubled &amp; yet sweet&#8212;my waking hours</line>
     <line>Too full of care &amp; pain.</line>
-    <line>Asia</line>
-    <line>Lift up thine eyes</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0048.04"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0048.04"/>
+    <line rend="indent5">Lift up thine eyes</line>
     <line>And let me read thy dream&#8212;</line>
-    <line>Panthea</line>
-    <line>As I have said</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0048.05"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0048.05"/>
+    <line rend="indent5">As I have said</line>
     <line>With our sea-sister at his feet I slept</line>
     <line>The mountain-mists condensing at our voice</line>
     <line>Under the moon, had spread their snowy flakes</line>
-    <line>From the keen ice sh <unclear>ei</unclear>lding our linked sleep....</line>
-    <line>55</line>
+    <line>From the keen ice sh <unclear reason="illegible">ei</unclear>lding our linked
+      sleep....</line>
+    <line rend="indent1"><add><metamark function="count">55</metamark></add></line>
   </zone>
 </surface>
-

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0050" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0050" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0050.jp2"/>
   <zone type="main">
     <line>Then two dreams came. One I remember not.</line>
@@ -12,9 +12,11 @@
     <line>Which lives unchanged within, &amp; his voice fell</line>
     <line>Like music which makes dizzy the dim brain</line>
     <line>Faint with intoxication of keen joy:</line>
-    <line>`Sister of her whose footsteps pave the world</line>
-    <line>more</line>
-    <line>With loveliness&#8212;<del rend="strikethrough">thysel</del> fair than aught but her</line>
+    <line>'Sister of her whose footsteps pave the world</line>
+    <line>With loveliness&#8212;<mod>
+        <del rend="strikethrough">thysel</del>
+        <add place="superlinear">more</add>
+      </mod> fair than aught but her</line>
     <line>Whose shadow thou art&#8212;lift thine eyes on me!</line>
     <line>I lifted them &#8212; the overpowering light</line>
     <line>Of that immortal shape was shadowed oer</line>
@@ -23,12 +25,13 @@
     <line>Steam'd forth like vaporous fire; an atmosphere</line>
     <line>Which wrapt me in its all-dissolving power</line>
     <line>As the warm ether of the morning sun</line>
+    <milestone unit="tei:l" spanTo="#e2-0050.01"/>
     <line>Wraps ere it drinks some cloud of wandering</line>
-    <line>dew.</line>
+    <line rend="right">dew.</line>
+    <anchor xml:id="e2-0050.01"/>
     <line>I saw not&#8212;heard not&#8212;moved not&#8212;only felt</line>
     <line>His presence flow &amp; mingle thro my blood</line>
     <line>Till it became his life &amp; his grew mine</line>
-    <line>76</line>
+    <line><add><metamark function="count">76</metamark></add></line>
   </zone>
 </surface>
-
