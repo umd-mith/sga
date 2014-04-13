@@ -3,7 +3,8 @@
             href="../../../xsl/page-proof.xsl"
         ?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c58-0017" ulx="0" uly="0" lrx="5410" lry="6660" partOf="#ox-frankenstein_volume_iii">
+  xml:id="ox-ms_abinger_c58-0017" ulx="0" uly="0" lrx="5410" lry="6660"
+  mith:shelfmark="MS. Abinger c. 58" mith:folio="9r" partOf="#ox-frankenstein_volume_iii">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0017.jp2"/>
   <zone type="pagination"><line>1<mod><del rend="overwritten">0</del><add place="intralinear">1</add></mod>9</line></zone>
   <zone type="library"><line>9</line></zone>
