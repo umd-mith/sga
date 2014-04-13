@@ -2,8 +2,9 @@
             type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
             href="../../../xsl/page-proof.xsl"
         ?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
-  xml:id="ox-ms_abinger_c56-0011" ulx="0" uly="0" lrx="5364" lry="7104" partOf="#ox-frankenstein_volume_i">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  xml:id="ox-ms_abinger_c56-0011" ulx="0" uly="0" lrx="5364" lry="7104"
+  mith:shelfmark="MS. Abinger c. 56" mith:folio="4r" partOf="#ox-frankenstein_volume_i">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0011.jp2"/>
 
   <zone type="pagination" rend="bordered">
@@ -91,7 +92,8 @@
     <line>No youth could could be more happy</line>
   </zone>
 
-  <zone type="left_margin" ulx="0" uly="46" lrx="1289" lry="687" corresp="#c56-0011.04">
+  <zone type="left_margin" ulx="0" uly="46" lrx="1289" lry="687"
+  mith:shelfmark="MS. Abinger c. 56" mith:folio="4r" corresp="#c56-0011.04">
     <addSpan spanTo="#c56-0011.05" hand="#pbs"/>
     <metamark function="displacement" spanTo="#c56-0011.06" xml:id="c56-0011.07"/>
     <line rend="right">X</line>
@@ -100,7 +102,8 @@
     <anchor xml:id="c56-0011.05"/>
   </zone>
 
-  <zone type="left_margin" corresp="#c56-0011.09" ulx="0" uly="811" lrx="1289" lry="1804">
+  <zone type="left_margin" corresp="#c56-0011.09" ulx="0" uly="811" lrx="1289" lry="1804"
+  mith:shelfmark="MS. Abinger c. 56" mith:folio="4r">
     <addSpan spanTo="#c56-0011.10" hand="#pbs"/>
     <line rend="right"><metamark>X</metamark> yet</line>
     <line>there was an</line>

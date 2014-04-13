@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   ulx="0" uly="0" lrx="4896" lry="7354"
   xml:id="ox-ms_shelley_adds_c4-0113" partOf="#ox-ms_shelley_adds_c4"
-  sga:shelfmark="MS. Shelley adds. c. 4" sga:folio="52v and 53r">
+  mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="52v and 53r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0113.jp2"/>
   <zone type="main">
     <line><del rend="strikethrough"><unclear>As</unclear> They</del></line>

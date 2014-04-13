@@ -2,8 +2,9 @@
             type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
             href="../../../xsl/page-proof.xsl"
         ?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
-  partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0075" ulx="0" uly="0" lrx="7230" lry="5034">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0075" ulx="0" uly="0" lrx="7230" lry="5034"
+  mith:shelfmark="MS. Abinger c. 57" mith:folio="38r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0075.jp2"/>
   <zone type="library">
     <line>38</line>

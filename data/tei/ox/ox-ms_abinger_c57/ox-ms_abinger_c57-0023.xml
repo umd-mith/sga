@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:sga="http://shelleygodwinarchive.org/ns/1.0"
-  xml:id="ox-ms_abinger_c57-0023" ulx="0" uly="0" lrx="5368" lry="7104" partOf="ox-frankenstein_notebook_b.xml#ox-frankenstein_volume_ii">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  xml:id="ox-ms_abinger_c57-0023" ulx="0" uly="0" lrx="5368" lry="7104"
+  mith:shelfmark="MS. Abinger c. 57" mith:folio="12r" partOf="ox-frankenstein_notebook_b.xml#ox-frankenstein_volume_ii">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c57-0023.jp2"/>
   <zone type="pagination" rend="bordered"><line>57</line></zone>
   <zone type="main">
