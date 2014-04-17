@@ -8,7 +8,7 @@
     <line>Given or returned; common as light is love</line>
     <line>And its familiar voice wearies not ever</line>
     <line>Like the wide Heaven, the all-sustaining air</line>
-    <line><del rend="strikethrough">Making</del> <add place="superlinear">It makes</add> the reptile equal to the God ...</line>
+    <line><mod><del rend="strikethrough">Making</del> <add place="superlinear">It makes</add></mod> the reptile equal to the God ...</line>
     <line>They who inspire it most, are fortunate</line>
     <line>As I am now <unclear>:</unclear> but thou who feel it most</line>
     <line>Are happier still, after long sufferings</line>
@@ -16,15 +16,9 @@
     <milestone unit="tei:speaker" spanTo="#e3-0024.01"/>
     <line rend="center"><del rend="strikethrough">Panthea</del></line>
     <anchor xml:id="e3-0024.01"/>
-    <milestone unit="tei:stage" spanTo="#e3-0024.02"/>
     <line rend="indent4">list, spirits speak <unclear>.</unclear></line>
-    <anchor xml:id="e3-0024.02"/>
-    <milestone unit="tei:speaker" spanTo="#e3-0024.03"/>
-    <line rend="center"><del rend="strikethrough">Song of an enamoured Spirit</del></line>
-    <anchor xml:id="e3-0024.03"/>
-    <milestone unit="tei:speaker" spanTo="#e3-0024.04"/>
-    <line rend="center">Voice in the Air</line>
-    <anchor xml:id="e3-0024.04"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0024.02"/>
+    <line rend="center"><mod><del rend="strikethrough">Song of an enamoured Spirit</del><add place="sublinear">Voice in the Air</add></mod></line> 
     <line>Life of life! thy lips enkindle</line>
     <line>With their love the breath beteen them</line>
     <line>And thy smiles before they dwindle</line>
