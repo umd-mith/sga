@@ -6,32 +6,32 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0036.jp2"/>
   <zone type="main">
     <line>On Caucasus&#8212;he would not doom me thus&#8212;</line>
-    <line>refuge</line>
-    <line>No <del rend="strikethrough">respite</del> , no appeal&#8212; . . .</line>
-    <line><del rend="strikethrough">Defiance</del></line>
-    <line><del rend="strikethrough">then shall we sink</del></line>
-    <line>Let <del rend="strikethrough">loose o</del>  Hell unlock 75</line>
-    <line>Its</line>
-    <line><hi rend="underline">Thy</hi>mounded Oceans of tempestuous fire</line>
-    <line>whelm on</line>
-    <line><del rend="strikethrough">Swallow</del> And <del rend="strikethrough">let</del> them into the bottomless void</line>
-    <line>^</line>
+    <line>No <mod><del rend="strikethrough">respite</del><add place="superlinear">refuge</add></mod>, no appeal&#8212; . . .</line>
+    <line rend="indent4"><del rend="strikethrough">Defiance</del></line>
+    <line rend="indent3"><del rend="strikethrough">then shall we sink</del></line>
+    <line rend="indent3">Let <del rend="strikethrough">loose <unclear>o</unclear></del> Hell unlock <metamark function="count">75</metamark></line>
+    <line><hi rend="underline">Thy</hi><add place="superlinear">Its</add> mounded Oceans of tempestuous fire</line>
+    <line><del rend="strikethrough">Swallow</del> And <mod><del rend="strikethrough">let</del><add place="superlinear">whelm on</add></mod>them into the bottomless void</line>
     <line>The desolated world &amp; thou &amp; me</line>
     <line>The conqueror &amp; the conquered, &amp; the wreck</line>
-    <line>Of that for which they combated . . .Ai, ai,80</line>
+    <line>Of that for which they combated . . .Ai, ai,<metamark function="count">80</metamark></line>
     <line>The elements obey me not . . . I sink . . .</line>
-    <line>Dizzily down &#8212; ever, forever, down 82</line>
-    <line><del rend="strikethrough">Down down down down dizzily, far</del></line>
-    <line><del rend="strikethrough">&amp; deep</del></line>
+    <line><mod><del rend="strikethrough">Down down down down dizzily, far <add place="sublinear">&amp; deep</add></del> 
+      <add place="superlinear">Dizzily down &#8212; ever, forever, down<metamark function="count">82</metamark></add></mod></line>
     <line><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
-    <line>Scene The mouth of a great</line>
+    <milestone unit="tei:stage" spanTo="#e3-0036.01"/>
+    <line rend="indent2">Scene The mouth of a great</line>
     <line>River in the island of Atlantis &#8212; Ocean</line>
     <line>is discovered reclining near the shore&#8212;</line>
     <line>Apollo stands beside him&#8212;</line>
-    <line>Ocean</line>
-    <line>He fell thou sayest beneath his Conque</line>
-    <line>rors frown?</line>
-    <line>Apollo</line>
+    <anchor xml:id="e3-0036.01"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0036.02"/>
+    <line rend="center">Ocean</line>
+    <anchor xml:id="e3-0036.02"/>
+    <line>He fell thou sayest beneath his Conque <add place="sublinear">rors frown?</add></line>
+    <milestone unit="tei:speaker" spanTo="#e3-0036.03"/>
+    <line rend="center">Apollo</line>
+    <anchor xml:id="e3-0036.03"/>
     <line>Aye, when the strife was ended which</line>
   </zone>
 </surface>
