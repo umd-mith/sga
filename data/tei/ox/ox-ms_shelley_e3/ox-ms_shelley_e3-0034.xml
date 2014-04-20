@@ -5,28 +5,30 @@
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0034" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0034.jp2"/>
   <zone type="main">
-    <line>Awful Shape, what art thou? Speak</line>
-    <line>Demogorgon</line>
+    <line rend="indent2">Awful Shape, what art thou? Speak</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0034.01"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e3-0034.01"/>
     <line>Eternity &#8212; demand no direr name.</line>
     <line>Descend, &amp; follow me down the abyss;</line>
-    <line>as thou wert Saturn's child</line>
-    <line>I am thy child, <del rend="strikethrough">as thou art Saturn</del> s...</line>
-    <line>Mi<hi rend="underline">ghtier than the</hi>e and we must dwell [<del rend="strikethrough">pent</del> ]</line>
-    <line>together</line>
+    <line>I am thy child, <mod><del rend="strikethrough">as thou art Saturn's...</del><add place="superlinear">as thou wert Saturn's child</add></mod></line>
+    <line rend="indent1">Mi<hi rend="underline">ghtier than the</hi>e and we must dwell <mod><del rend="strikethrough">pent</del><add place ="sublinear">together</add></mod></line>
     <line>Henceforth in darkness&#8212;lift thy lightnings not&#8212;</line>
     <line>The tyranny of Heaven none may retain</line>
     <line>Or reassume, or hold succeeding thee ...</line>
-    <line>Yet if thou wilt&#8212;as tis the destiny 60</line>
-    <line>Of trodden worms to writhe till they are</line>
-    <line>dead&#8212;</line>
+    <line>Yet if thou wilt&#8212;as tis the destiny <metamark function="count">60</metamark></line>
+    <line>Of trodden worms to writhe till they are <add place="sublinear">dead&#8212;</add></line>
     <line>Put forth thy might</line>
-    <line>Jupiter</line>
-    <line>Detested prodigy!</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0034.02"/>
+    <line rend="center">Jupiter</line>
+    <anchor xml:id="e3-0034.02"/>
+    <line rend="indent4">Detested prodigy!</line>
     <line>Even thus beneath the deep Titanian prisons</line>
     <line>I trample thee! thou lingerest?</line>
-    <line>Mercy, mercy</line>
-    <line>64</line>
-    <line>No pity&#8212;no release, no respite! . . oh 65</line>
+    <line></line>
+    <line></line>
+    <line rend="indent4">Mercy, mercy</line>
+    <line>No <add place="superlinear"><metamark function="count">64</metamark></add>pity&#8212;no release, no respite! . . oh <metamark function="count">65</metamark></line>
     <line>That thou wouldst make mine enemy my judge.</line>
     <line>Even where he hangs, seared by my long revenge</line>
   </zone>
