@@ -28,10 +28,11 @@
     <milestone unit="tei:speaker" spanTo="#e3-0036.02"/>
     <line rend="center">Ocean</line>
     <anchor xml:id="e3-0036.02"/>
-    <line>He fell thou sayest beneath his Conque <add place="sublinear">rors frown?</add></line>
-    <milestone unit="tei:speaker" spanTo="#e3-0036.03"/>
+    <line><milestone unit="tei:l" spanTo="#e3-0036.03"/>He fell thou sayest beneath his Conque</line>
+    <line rend="right">rors frown?</line><anchor xml:id="e3-0036.03"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0036.04"/>
     <line rend="center">Apollo</line>
-    <anchor xml:id="e3-0036.03"/>
+    <anchor xml:id="e3-0036.04"/>
     <line>Aye, when the strife was ended which</line>
   </zone>
 </surface>
