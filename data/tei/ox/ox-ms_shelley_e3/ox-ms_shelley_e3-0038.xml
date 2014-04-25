@@ -7,24 +7,27 @@
   <zone type="main">
     <line>The orb I rule, &amp; shook the solid stars.</line>
     <line>The terrors of his eye illumined Heaven</line>
-    <line>With <mod><del rend="strikethrough">crimson</del><add place="sublinear">sanguine></add></mod>light, thro the thick ragged<add place="sublinear">skirts</add></line>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.01"/>With <mod><del rend="strikethrough">crimson</del><add place="sublinear">sanguine></add></mod>light, thro the thick ragged</line>
+    <line rend="right">skirts</line><anchor xml:id="e3-0038.01"/>
     <line>Of the victorious Darkness, as he fell; <metamark function="count">90</metamark></line>
     <line>Like the last glare of day's red agony</line>
     <line>Which from a rent among the fiery clouds</line>
     <line>Burns far along the tempest-wrinkled Deep</line>
-    <milestone unit="tei:speaker" spanTo="#e3-0038.01"/>
-    <line rend="center">Ocean</line>
-    <anchor xml:id="e3-0038.01"/>
-    <line>He sunk to the abyss? to the dark void?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0038.02"/>
-    <line rend="center">Apollo</line>
+    <line rend="center">Ocean</line>
     <anchor xml:id="e3-0038.02"/>
+    <line>He sunk to the abyss? to the dark void?</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0038.03"/>
+    <line rend="center">Apollo</line>
+    <anchor xml:id="e3-0038.03"/>
     <line>An eagle so, caught in some bursting cloud <metamark function="count">95</metamark></line>
     <line>On Caucasus <unclear>,</unclear> his thunder-baffled wings</line>
     <line><unclear>E</unclear>ntangled in the whirlwind, &amp; his eyes</line>
     <line>Which gazed on the undazzling sun, now blinded</line>
-    <line>By the white lightning, while the ponderous<add place="sublinear">hail</add></line>
-    <line>Beats on his struggling form which sinks<add place="sublinear">at length</add></line>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.04"/>By the white lightning, while the ponderous</line>
+    <line rend="right">hail</line><anchor xml:id="e3-0038.04"/>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.05"/>Beats on his struggling form which sinks</line>
+    <line rend="right">at length</line><anchor xml:id="e3-0038.05"/>
     <line>Prone, &amp; the aerial ice clings over it&#8212;</line>
     <line rend="right">101 94</line>
   </zone>
