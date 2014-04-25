@@ -22,8 +22,8 @@
     <line>Such art thou now, nor is it I alone</line>
     <line>Thy sister thy companion, thine own chosen one</line>
     <line>But the whole world which seeks thy sympathy.</line>
-    <line>Hearest thou not sounds i the air which speak
-    <add place="sublinear">the <unclear>love</unclear></add></line>
+    <line><milestone unit="tei:l" spanTo="#e1-0022.01"/>Hearest thou not sounds i the air which speak</line>
+    <line rend="right">the <unclear>love</unclear><anchor xml:id="e1-0022.01"/></line>  
     <line>Of <mod><del rend="strikethrough">each</del><add place="superlinear">all</add></mod> articulate beings? feelest thou not</line>
     <line>The inanimate winds enamoured of thee?&#8212;list</line>
     <line rend="right"><milestone unit="tei:stage"
