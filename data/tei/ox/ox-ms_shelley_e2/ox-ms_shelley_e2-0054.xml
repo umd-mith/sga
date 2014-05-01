@@ -1,38 +1,57 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0054" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0054" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0054.jp2"/>
   <zone type="main">
     <line>"Of the life-blood for loss of which I faint</line>
     <line>Quivered between our intertwining arms"</line>
     <line>I answered not, for the Eastern star grew pale</line>
     <line>But fled to thee</line>
-    <line>Asia</line>
-    <line>Thou speakest, but thy words</line>
-    <line><del rend="strikethrough">Lift up thine</del></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0054.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0054.01"/>
+    <line rend="indent4"><mod>
+        <del rend="strikethrough">Lift up thine</del>
+        <add place="superlinear">Thou speakest, but thy words</add>
+      </mod></line>
     <line>Are as the air. I feel them not . . . .oh lift</line>
-    <line>soul.</line>
-    <line>Thine eyes that I may read his written <del rend="strikethrough">spirit</del></line>
-    <line><del rend="strikethrough">Lift up thine eyes Panthe</del> a&#8212; &#8212;they pierce &#8212;they burn!</line>
-    <line>Panthea</line>
+    <line>Thine eyes that I may read his written <mod>
+        <del rend="strikethrough">spirit</del>
+        <add place="superlinear">soul.</add>
+      </mod></line>
+    <delSpan rend="vertical_line" spanTo="#e2-0054.02"/>
+    <line><del rend="strikethrough">Lift up thine eyes Panthea&#8212; &#8212;they pierce &#8212;they
+        burn!</del></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0054.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0054.03"/>
     <line>Alas I am consumed&#8212;I melt away</line>
     <line>The fire is in my heart&#8212;</line>
-    <line>Asia</line>
-    <line>Thine eyes burn!&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0054.04"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0054.04"/>
+    <line rend="indent4">Thine eyes burn!&#8212;</line>
     <line>Hide them within thine hair</line>
-    <line>Panthea</line>
-    <line>O quench thy lips</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0054.05"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0054.05"/>
+    <line rend="indent5">O quench thy lips</line>
     <line>I sink I perish</line>
-    <line>Asia</line>
-    <line>Shelter me now&#8212;they burn</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0054.06"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0054.06"/>
+    <line rend="indent4">Shelter me now&#8212;they burn</line>
     <line>It is his spirit in thier orbs .. my life</line>
     <line>Is ebbing fast&#8212;I cannot speak&#8212;</line>
-    <line>Panthea</line>
-    <line>Rest, rest!</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0054.07"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0054.07"/>
+    <line rend="indent5">Rest, rest!</line>
     <line>Sleep death annihilation pain! aught else</line>
-    <line>[111]</line>
+    <line rend="indent3"><add><metamark function="count"><unclear reason="illegible"
+          >111</unclear></metamark></add></line>
+    <anchor xml:id="e2-0054.02"/>
   </zone>
 </surface>
-
