@@ -24,13 +24,14 @@
     <line rend="indent4">And my thoughts</line>
     <line rend="indent1">Are like the many forests of a vale</line>
     <line rend="indent1">Through which the might of whirlwind &amp; of rain</line>
-    <line rend="indent1">Ha<unclear>d</unclear> passed <del rend="strikethrough">bu</del> <del rend="strikethrough">and</del> they 
-      <mod><del rend="strikethrough">glimmer</del> <add place="superlinear">rest <del rend="strikethrough">rest</del></add> 
-      <add place="sublinear"><del rend="strikethrough">glimmer</del> through the</add> <add place="sublinear">evening light</add></mod></line> 
+    <line rend="indent1"><milestone unit="tei:l" spanTo="#e3-0027.03"/>Ha<unclear>d</unclear> passed <del rend="strikethrough">bu</del> <del rend="strikethrough">and</del> they 
+      <mod><del rend="strikethrough">glimmer</del> <add place="superlinear">rest <del rend="smear">rest</del></add></mod></line>   
+    <line rend="indent4"><del rend="strikethrough">glimmer</del> through the</line>
+    <line rend="right">evening light</line><anchor xml:id="e3-0027.03"/> 
     <line rend="indent1">As Imine do now in thy beloved smile.</line>
-    <milestone unit="tei:speaker" spanTo="#e3-0027.03"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0027.04"/>
     <line rend="center">Asia</line>
-    <anchor xml:id="e3-0027.03"/> 
+    <anchor xml:id="e3-0027.04"/> 
     <line rend="indent1">My soul is an enchanted Boat</line>
     <line rend="indent1">Which, like a sleeping swan, doth float</line>
     <line>Upon the silver waves of thy sweet singing,</line>

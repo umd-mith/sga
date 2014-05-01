@@ -4,12 +4,13 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0039" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0039.jp2"/>
+  <zone type="library">17</zone>
   <zone type="main">
-    <line>17</line>
+    <milestone unit="tei:speaker" spanTo="e3-0039.01"/>
     <line>Chorus of Spirits</line>
-    <line>[40]</line>
-    <line>2 Paradise of golden lights</line>
-    <line>1 Palace-roof of cloudless nights</line>
+    <line rend="indent2">--<metamark function="count">40</metamark></line>
+    <line><metamark function="displacement">2</metamark>Paradise of golden lights</line>
+    <line><metamark function="displacement">1</metamark>Palace-roof of cloudless nights</line>
     <line>Deep, Immeasurable, Vast <unclear>,</unclear></line>
     <line>Which art now, &amp; which wert then;</line>
     <line>Of the present &amp; the past</line>
@@ -17,6 +18,8 @@
     <line>Presence chamber, Temple, Home,</line>
     <line>Ever canopying Dome</line>
     <line>Of acts &amp; ages yet to come!</line>
+    <line></line>
+    <line></line>
     <line>Glorious shapes have life in thee</line>
     <line>Earth &amp; all Earth's company</line>
     <line>Living globes which ever throng</line>

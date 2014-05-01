@@ -13,17 +13,21 @@
       <line>Into a Sea profound, of ever-<mod><del rend="strikethrough">flowing</del><add place="sublinear">spreading</add></mod>sound</line>
     <line rend="indent1">Meanwhile thy Spirit lifts its pinions</line>
     <line rend="indent1">In Music's most serene dominions</line>
-    <line>Catching the winds that fan that <add place="sublinear">happy Heaven</add></line>
+    <line><milestone unit="tei:l" spanTo="#e3-0029.01"/>Catching the winds that fan that</line>
+    <line rend="right">happy Heaven</line> <anchor xml:id="e3-0029.01"/>
     <line rend="indent1">And we sail on, away, afar,</line>
     <line rend="indent1">Without a course&#8212;without a star&#8212;</line>
     <line>But by the instinct of sweet Music driven</line>
     <line rend="indent1">Till, through Elysian garden islets,</line>
     <line rend="indent1">By thee <unclear>,</unclear> most beautiful of pilots,</line>
-    <line rend="indent1">Where <add place="superlinear"><del rend="strikethrough">The masks of a rebellion</del></add>never mortal pinnace glided</line>
+    <line><del rend="strikethrough">The masks of a rebellion</del></line>
+    <line rend="indent1">Where never mortal pinnace glided</line>
     <line rend="indent1">The boat of my desire is guided&#8212;</line>
     <line rend="indent1">Realms where the air we breathe is Love</line>
-    <line>Which<del rend="strikethrough">Which</del> in the winds &amp; on the waves <add place="sublinear">doth move</add></line>
-    <line>Harmonizing <add place="sublinear">night</add>this Earth with what we feel above</line> 
+    <line><milestone unit="tei:l" spanTo="#e3-0029.02"/>Which<del rend="strikethrough">Which</del> in the winds &amp; on the waves</line> 
+      <line rend="right">doth move</line><anchor xml:id="e3-0029.02"/>
+    <line>Harmonizing this Earth with what we feel above</line>
+    <line>night</line>  
     </zone>
 </surface>
 

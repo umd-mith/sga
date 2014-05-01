@@ -18,7 +18,11 @@
     <line>The glory &amp; the strength of him ye serve</line>
     <line>Rejoice <unclear><del rend="strikethrough">,</del></unclear>! henceforth am I omnipotent</line>
     <line>All else has been subdued to me &#8212; alone</line>
-    <line>The soul of man, like unextinguished fire 5</line>
+    <line>The soul of man, like unextinguished fire <metamark function="count">5</metamark></line>
+    <milestone unit="tei:l" spanTo="#e3-0028.04"/>
+    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0028.05" xml:id="e3-0028.06"/>doubt<anchor xml:id="e3-0028.05"/></line>
+    <line><milestone unit="tei:seg" spanTo="#e3-xx.03" next="#e3-0028.06"/>Yet burns towards Heaven with fierce reproach &amp;<anchor xml:id="e3-xx.03"/></line>
+    <anchor xml:id="e3-0028.04"/>
     <line>Yet burns towards Heaven with fierce reproach &amp; <add place="superlinear">doubt</add></line>  
     <line>And lamentation &amp; reluctant prayer</line>
     <line><del rend="strikethrough">In tameless</del> insurrection, which might make</line>
