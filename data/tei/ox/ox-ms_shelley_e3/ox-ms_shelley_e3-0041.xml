@@ -4,10 +4,12 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0041" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0041.jp2"/>
+  
+  <zone type="library">18</zone>
   <zone type="main">
-    <line>18</line>
     <line>And mighty suns, beyond the Night,</line>
     <line>Atoms of intensest light!</line>
+    <line></line>
     <line>Even thy name is as a God</line>
     <line>Heaven! for thou art the abode</line>
     <line>Of that Power which is the glass</line>
@@ -17,10 +19,12 @@
     <line>Thier unremaining Gods &amp; they</line>
     <line>Like a river roll away&#8212;</line>
     <line>Thou remainest such &#8212; alway!&#8212;</line>
-    <line rend="indent2">a Remoter Voice</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0041.01"/>
+    <line rend="center">a Remoter Voice</line>
+    <anchor xml:id="e3-0041.01"/>
+    <line rend="center">&#8212;</line>
     <line>Thou art but the  <unclear>M</unclear>inds first  <unclear>C</unclear>hamber</line>
-    <line rend="indent3">young</line>
-    <line>Round which it's <del rend="strikethrough">weak</del> fancies clamber</line>
+    <line>Round which its' <mod><del rend="strikethrough">weak</del><add place="superlinear">young</add></mod> fancies clamber</line>
     <line>Like weak insects in a cave</line>
     <line>Lighted up by stalactites</line>
     <line>But the portal of the grave</line>
