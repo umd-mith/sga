@@ -6,8 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0054.jp2"/>
   <zone type="main">
     <line>[f. 24r is blank]</line>
-    <line>Draining</line>
-    <line><del rend="strikethrough">Sucking</del> the poison of despair, shall take</line>
+    <line><mod><del rend="strikethrough">Sucking</del><add place="superlinear">Draining</add></mod>the poison of despair, shall take</line>
     <line>And interchange sweet nutriment; to me</line>
     <line>Shall they become like sister-antelopes</line>
     <line>By one fair dam, snowwhite &amp; swift as wind</line>
@@ -15,24 +14,29 @@
     <line>The dew mists of my sunless sleep shall float</line>
     <line>Under the stars like balm, night-folded flowers</line>
     <line>Shall suck unwithering <del rend="strikethrough">colours as they</del> <del rend="strikethrough">dream</del></line>
-    <line>And men &amp; beasts in happy dream <unclear>s</unclear> shall gather</line>
-    <line>Strength for the coming day &amp; all its joy240</line>
+    <line>And men &amp; beasts in happy dream<unclear>s</unclear> shall gather</line>
+    <line>Strength for the coming day &amp; all its joy <metamark function="count">240</metamark></line>
     <line>And death shall be the last embrace of her</line>
     <line>Who takes the life she gave, even as a mother</line>
     <line>Folding her child, says, leave me not again!</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0054.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e3-0054.01"/>
     <line>O mother wherefore speak the name of death <unclear>?</unclear></line>
     <line>Cease they to love &amp; move &amp; breathe &amp; speak</line>
     <line>Who die?</line>
-    <line>The Earth</line>
-    <line><del rend="strikethrough">The</del> It would avail not to reply</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0054.02"/>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e3-0054.02"/>
+    <line rend="right"><del rend="strikethrough">The</del> It would avail not to reply</line>
     <line>Thou art immortal &amp; this tongue is known</line>
-    <line>But</line>
-    <line><del rend="strikethrough">Only</del>  to the uncommunicating dead &#8212;</line>
+    <line><mod><del rend="strikethrough">Only</del><add place="superlinear">But</add></mod>to the uncommunicating dead &#8212;</line>
+    <milestone unit="tei:l" spanTo="#e3-0054.03"/>
     <line>Death is the veil which those who live call</line>
-    <line>They life</line>
-    <line><del rend="strikethrough">Men</del> sleep &#8212; &amp; it is lifted... &amp; meanwhile</line>
-    <line>242</line>
+    <line rend="right">life</line>
+    <anchor xml:id="e3-0054.03"/>
+    <line><mod><del rend="strikethrough">Men</del><add place="superlinear">They</add></mod>sleep &#8212; &amp; it is lifted... &amp; meanwhile</line>
+    <line rend="indent4"><metamark function="count">242</metamark></line>
   </zone>
 </surface>
 
