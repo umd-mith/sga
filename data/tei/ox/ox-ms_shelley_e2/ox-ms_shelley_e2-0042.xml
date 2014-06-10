@@ -1,34 +1,53 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0042" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0042" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0042.jp2"/>
   <zone type="main">
     <line>[f. 20r is blank]</line>
+    <milestone unit="tei:l" spanTo="#e2-0042.01"/>
     <line>Earth can console, Heaven can torment no</line>
-    <line>more</line>
-    <line>Panthea</line>
+    <line rend="right">more</line>
+    <anchor xml:id="e2-0042.01"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0042.02"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0042.02"/>
     <line>Hast thou forgotten one who watches thee</line>
     <line>The cold dark night, &amp; never sleeps but when</line>
-    <line>The shadow of thy spirit falls on her?</line>
-    <line>Prometheus</line>
+    <line>The shadow of thy spirit<del rend="strikethrough">s</del> falls on her?</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0042.03"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e2-0042.03"/>
     <line>I said all hope was vain but love&#8212;thou lovest...</line>
     <line><del rend="strikethrough">But the eastern star is pale</del></line>
-    <line>Deeply Panthea looks wan</line>
-    <line>In truth <del rend="strikethrough">most deeply</del>  &#8212; but the Eastern star <del rend="strikethrough">is</del></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0042.04"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0042.04"/>
+    <milestone unit="tei:l" spanTo="#e2-0042.05"/>
+    <line><add place="superlinear">Deeply </add>In truth <del rend="strikethrough">most deeply</del>
+      &#8212; but the Eastern star <mod spanTo="#e2-0042.06"/><del rend="strikethrough"
+        next="#e2-0042.07">is</del><add place="superlinear">looks wan</add></line>
+    <line rend="right"><del rend="strikethrough" xml:id="e2-0042.07">pale</del><anchor
+        xml:id="e2-0042.06"/></line>
+    <anchor xml:id="e2-0042.05"/>
     <line>And Asia waits in that far Indian vale</line>
-    <line>The scene of her sad exile&#8212;<del rend="strikethrough">tho her presence</del></line>
-    <line><del rend="strikethrough">Makes fruits &amp; flowers &amp; sunwarm winds,</del> <del rend="strikethrough">&amp; sounds</del></line>
-    <line><del rend="strikethrough">smooth oer</del></line>
-    <line>rugged once</line>
+    <line>The scene of her sad exile&#8212;<mod spanTo="#e2-0042.08"/><delSpan rend="strikethrough"
+        spanTo="#e2-0042.09"/>tho her presence</line>
+    <milestone unit="tei:l" spanTo="#e2-0042.10"/>
+    <line>Makes fruits &amp; flowers &amp; sunwarm winds,<anchor xml:id="e2-0042.09"/>
+      <mod>
+        <del rend="strikethrough">&amp; sounds</del>
+        <del rend="strikethrough"><add place="sublinear">smooth oer</add></del>
+      </mod></line>
+    <line rend="indent5"><add>rugged once</add></line>
+    <anchor xml:id="e2-0042.10"/><anchor xml:id="e2-0042.08"/>
     <line>And desolate &amp; frozen like this ravine;</line>
     <line>But now invested with fair flowers &amp; herbs</line>
     <line>And haunted by sweet air's &amp; sounds, which flow</line>
     <line>Among the woods &amp; waters: from the ether</line>
     <line>Of her transforming presence&#8212;which would fade</line>
     <line>If it were mingled not with thine&#8212;farewell</line>
-    <line>818.</line>
+    <line><add><metamark function="count">818.</metamark></add></line>
   </zone>
 </surface>
-

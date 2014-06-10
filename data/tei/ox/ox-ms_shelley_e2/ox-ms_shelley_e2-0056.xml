@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0056" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0056" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0056.jp2"/>
   <zone type="main">
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0056.01"/>
+    <line rend="center">Panthea</line>
+    <anchor/>
     <line>I lift them, though they droop beneath the load</line>
     <line>Of that they would express&#8212;what canst thou see</line>
     <line>But thine own fairest shadow imaged there</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0056.02"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0056.02"/>
     <line>Thine eyes are like the deep blue boundless Heaven</line>
     <line>Contracted in two circles underneath</line>
     <line>Their long fine lashes&#8212;dark, far, measureless,&#8212;</line>
     <line>Orb within orb, &amp; line through line inwoven&#8212;</line>
-    <line>Panthea</line>
-    <line>111</line>
-    <line>Why lookest thou as if a spirit past?</line>
-    <line>Asia</line>
-    <line>beyond</line>
-    <line>There is a change, <del rend="strikethrough">within</del> their inmost depth</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0056.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0056.03"/>
+    <line><add place="superlinear"><metamark function="count">111</metamark></add>Why lookest thou
+      as if a spirit past?</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0056.04"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0056.04"/>
+    <line>There is a change, <mod>
+        <del rend="strikethrough">within</del>
+        <add place="superlinear">beyond</add>
+      </mod> their inmost depth</line>
     <line>I see a shade &#8212; a shape &#8212; 'tis He, arrayed</line>
     <line>In the soft light of his own smiles which spread</line>
     <line>Like radiance from the cloud-surrounded moon</line>
+    <anchor xml:id="e2-0056.05"/>
     <line>Say not those smiles that we shall meet again</line>
-    <line>Within that bright Pavilion which th <unclear>e</unclear>r beams</line>
+    <line>Within that bright Pavilion which th<unclear reason="illegible">e</unclear>r beams</line>
     <line>Shall build oer the waste world? the dream is told</line>
     <line>What shape is that between us? its rude hair</line>
-    <line>Roughens the wind that lifts it, its regard</line>
-    <line>122</line>
-    <line>Is wild &amp; quick, yet 'tis a thing of air</line>
+    <line>Roughens the wind that lifts it, <del rend="strikethrough">&amp;</del> its regard</line>
+    <line><add place="superlinear"><metamark function="count">122</metamark></add>Is wild &amp;
+      quick, yet 'tis a thing of air</line>
   </zone>
 </surface>
-
