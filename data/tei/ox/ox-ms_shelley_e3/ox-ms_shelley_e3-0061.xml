@@ -4,12 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0061" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0061.jp2"/>
+  <zone type="library">28</zone>
   <zone type="main">
-    <line>28</line>
-    <line>The beginning of Platos Republic&#8212;</line>
-    <line>As thou hast borne it most triumphantly</line>
-    <line>far</line>
-    <line>To this <del rend="strikethrough">high</del> goal of Time ... depart, farewell!</line>
+  <line>The beginning of Platos Republic&#8212;</line>
+  <line>As thou hast borne it most triumphantly</line>
+  <line>To this <mod><del rend="strikethrough">high</del> <add place="superlinear">far</add></mod> goal of Time ... depart, farewell!</line>
   </zone>
 </surface>
 
