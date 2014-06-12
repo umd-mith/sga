@@ -6,19 +6,23 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0052.jp2"/>
   <zone type="main">
     <line>[f. 23r is blank]</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0052.01"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e3-0052.01"/>  
     <line>Go, borne over the cities of mankind</line>
     <line>On whirlwind-footed coursers! once again <unclear>.</unclear></line>
     <line>Outspeed the sun around the orbed world</line>
-    <line>And as thy chariot cleaves the kindling air 215</line>
+    <line>And as thy chariot cleaves the kindling air <metamark function="count">215</metamark></line>
     <line>Thou breathe into the many-folded Shell</line>
-    <line>Loosening it's mighty music . . . it shall be</line>
+    <line>Loosening its' mighty music . . . it shall be</line>
     <line>As thunder mingled with clear echoes &#8212; then</line>
     <line>Return &amp; thou shalt dwell beside our cave</line>
-    <line><unclear>K</unclear>issing the ground</line>
+    <line rend="indent3"><unclear>K</unclear>issing the ground</line>
     <line>And thou o Mother Earth&#8212;</line>
-    <line>The Earth</line>
-    <line>I hear&#8212;I feel&#8212;220</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0052.02"/>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e3-0052.02"/>  
+    <line rend="right">I hear&#8212;I feel&#8212;<metamark function="count">220</metamark></line>
     <line>Thy lips are on me, &amp; their touch runs down</line>
     <line>Even to the adamantine central gloom</line>
     <line>Along these marble nerves&#8212;'tis life 'tis joy</line>
@@ -29,7 +33,7 @@
     <line>And creeping forms, &amp; insects rainbow-winged</line>
     <line>And birds &amp; beasts &amp; fish &amp; human shapes</line>
     <line>Which drew disease &amp; pain from my wan bosom</line>
-    <line>230 222</line>
+    <line rend="right"><metamark function="count">230</metamark><metamark function="count">222</metamark></line>
   </zone>
 </surface>
 

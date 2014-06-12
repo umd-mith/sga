@@ -14,21 +14,21 @@
     <line>Shall clothe the forests &amp; the fields&#8212;aye even</line>
     <line>The crag-built desarts of the barren deep</line>
     <line>With ever-living leaves &amp; fruits &amp; flowers</line>
-    <line>And Thou ... there is a Cavern whence my</line>
-    <line>spirit2</line>
+    <line><milestone unit="tei:l" spanTo="#e3-0056.01">And Thou ... there is a Cavern whence my</line>
+    <line rend="right">spirit2</line><anchor xml:id="e3-0056.01">
     <line>Was panted forth in anguish whilst thy pain</line>
-    <line>Made my heart mad, &amp; thou who did inhale</line>
-    <line>it</line>
+    <line><milestone unit="tei:l" spanTo="#e3-0056.02">Made my heart mad, &amp; thou who did inhale</line>
+    <line rend ="right">it</line><anchor xml:id="e3-0056.02">
     <line>Became mad too, &amp; built a Temple there</line>
     <line>And spoke and were oracular, &amp; lured</line>
     <line>The erring nations round to mutual war</line>
-    <line>And faithless faith, such as Jove kept with</line>
-    <line>thee;</line>
+      <line><milestone unit="tei:l" spanTo="#e3-0056.03">And faithless faith, such as Jove kept with</line>
+      <line rend="right">thee;</line><anchor xml:id="e3-0056.03">
     <line><del rend="strikethrough">Which now floats upward</del>  as among tall weeds</line>
     <line>A violets exhalation, &amp; it fills</line>
     <line>With a serener light &amp; crimson air</line>
     <line>Intense yet soft the rocks &amp; woods around</line>
-    <line>262</line>
+    <line rend="right"><metamark function="count">262</metamark></line>
   </zone>
 </surface>
 

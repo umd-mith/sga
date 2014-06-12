@@ -6,20 +6,28 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0044.jp2"/>
   <zone type="main">
     <line>Peace Monster&#8212;I come now! farewell</line>
-    <line>Apollo</line>
-    <line>Farewell!&#8212; 135</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0044.01"/>
+    <line rend="center">Apollo</line>
+    <anchor xml:id="e3-0044.01"/>
+    <line rend="indent3">Farewell!&#8212; <metamark function="count">135</metamark></line>
+    <milestone unit="tei:stage" spanTo="#e3-0044.02"/>
     <line>Scene Caucasus, Prometheus, Hercules, Asia</line>
     <line>borne by the spirit of the Hour</line>
     <line>Panthea Ione, the Earth. Spirits&#8212;</line>
     <line>Hercules unbinds Prometheus who descends</line>
-    <line>Hercules</line>
+    <anchor xml:id="e3-0044.02"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0044.03"/>
+    <line rend="center">Hercules</line>
+    <anchor xml:id="e3-0044.03"/>
     <line>Most glorious among Spirits, thus doth strength</line>
     <line>To wisdom courage &amp; long suffering love</line>
     <line>And thee, who art the form they animate</line>
     <line>Minister, like a slave</line>
-    <line>Prometheus</line>
-    <line>Thy gentle words</line>
-    <line>Are sweeter even than freedom long desired 140</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0044.04"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e3-0044.04"/>
+    <line rend="right">Thy gentle words</line>
+    <line>Are sweeter even than freedom long desired <metamark function="count">140</metamark></line>
     <line>And long delayed. Asia, thou light of life,</line>
     <line>Shadow of beauty unbeheld, &amp; ye</line>
     <line>Fair sister-nymphs who make long years of pain</line>
@@ -27,7 +35,7 @@
     <line>Henceforth we will not part. There is a Cave</line>
     <line>All overgrown with trailing odorous plants</line>
     <line>Which curtain out the day with leaves &amp; flowers</line>
-    <line>140</line>
+    <line><metamark function="count">140</metamark></line>
   </zone>
 </surface>
 

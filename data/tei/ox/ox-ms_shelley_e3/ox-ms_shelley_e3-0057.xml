@@ -4,11 +4,12 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0057" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0057.jp2"/>
+  <zone type="library">26</zone>
+  
   <zone type="main">
-    <line>26</line>
-    <line>260</line>
+    <line><metamark function="count">260</metamark></line>
     <line>Which breath now rises</line>
-    <line>270</line>
+    <line><metamark function="count">270</metamark></line>
   </zone>
 </surface>
 
