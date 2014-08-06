@@ -9,8 +9,8 @@
   
   <zone type="main">
    <line>As my own soul would answer, did it know</line>
-    <line>That which I ask&#8212;</line>
-    <line><del rend="strikethrough">Nor dark nor dim</del></line>
+    <line> That which I ask&#8212;</line>
+    <line><mod><del rend="strikethrough">Nor dark nor dim</del> <add place="intralinear"></add></mod></line>
   </zone>
 </surface>
 
