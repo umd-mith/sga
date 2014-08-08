@@ -5,7 +5,8 @@
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0011" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0011.jp2"/>
   <zone type="main">
-    <line>3</line>
+    
+    <line> <zone type="library">3</zone><zone type="main"></line>
     <line>/</line>
     <line>\</line>
     <line>[SKETCHES OF ?KITE AND HARP OR SAIL, IN PENCIL]</line>
@@ -14,5 +15,5 @@
     <line>[SKETCH OF ?CLOUDS, IN PEN]</line>
   </zone>
 </surface>
-test
-lkjhl ul
+
+
