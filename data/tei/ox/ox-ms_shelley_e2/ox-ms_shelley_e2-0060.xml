@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0060" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0060" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0060.jp2"/>
   <zone type="main">
     <line>[f. 29r is blank]</line>
     <line>And multitudes of dense white fleecy clouds</line>
     <line>Were wandering in thick flocks along the mountains</line>
-    <line>Shepherded by the slow unwilling winds;</line>
+    <line>Shepherded by the slow unwilling wind<unclear reason="illegible">s</unclear>;</line>
     <line>And the white dew on the new-bladed grass</line>
     <line>Just piercing the dark earth, hung silently&#8212;</line>
     <line>And there was more which I remember not;</line>
     <line>But, on the shadows of the moving clouds</line>
     <line>Athwart the purple mountain slope was written</line>
     <line><hi rend="underline">Follow, o follow</hi>as they vanished by,</line>
+    <milestone unit="tei:l" spanTo="#e2-0060.01"/>
     <line>And on each herb from which Heaven's dew</line>
-    <line>had fallen</line>
+    <line rend="right">had fallen</line>
+    <anchor xml:id="e2-0060.01"/>
     <line>The like was stamped as with a withering fire</line>
     <line>A wind arose among the pines &#8212; it shook</line>
     <line>The clinging music from their boughs, &amp; then</line>
     <line>Low sweet faint sounds like the farewell of ghosts</line>
     <line>Were heard &#8212; oh<hi rend="underline">, follow, follow, follow me</hi></line>
     <line>And then I said Panthea look on me</line>
-    <line>But in the depths of those beloved eyes</line>
+    <line>But in the depth of those beloved eyes</line>
     <line>Still I saw, <hi rend="underline">follow, follow</hi>.</line>
-    <line>/</line>
-    <line>\</line>
-    <line>Panthea</line>
-    <line>our voices</line>
+    <line><add place="interlinear"><metamark function="displacement" xml:id="e2-0060.02"
+          >^</metamark></add></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0060.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0060.03"/>
+    <line rend="right">our voices</line>
     <line>The crags this clear spring morning mock</line>
   </zone>
 </surface>
-
