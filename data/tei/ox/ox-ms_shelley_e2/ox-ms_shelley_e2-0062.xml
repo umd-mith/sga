@@ -1,31 +1,46 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0062" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0062" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0062.jp2"/>
   <zone type="main">
     <line>As they were spirit-tongued</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker"/>
+    <line rend="center">Asia</line>
+    <anchor/>
     <line>It is some being</line>
     <line>Around the crags &#8212; what fine clear sounds&#8212;o list</line>
-    <line>Echoes unseen</line>
+    <milestone unit="tei:speaker"/>
+    <line rend="center">Echoes unseen</line>
+    <anchor/>
     <line>Echoes we&#8212;listen</line>
     <line><del rend="strikethrough">As</del> We cannot stay</line>
     <line>As dew-stars glisten</line>
     <line>Then fade away</line>
     <line>Child of Ocean!</line>
-    <line>Asia</line>
-    <line>liquid</line>
-    <line>Hark spirits speak! the <del rend="strikethrough">aerial</del> responses</line>
+    <milestone unit="tei:speaker"/>
+    <line rend="center">Asia</line>
+    <anchor/>
+    <line>Hark spirits speak! the <mod>
+        <del rend="strikethrough">aerial</del>
+        <add place="superlinear">liquid</add>
+      </mod> responses</line>
     <line>Of thier aerial tongues yet sound&#8212;</line>
-    <line>Panthea I hear.</line>
-    <line>Echoes</line>
+    <milestone unit="tei:speaker"/>
+    <line rend="center">Panthea</line>
+    <anchor/>
+    <line>I hear.</line>
+    <milestone unit="tei:speaker"/>
+    <line rend="center">Echoes</line>
+    <anchor/>
     <line>O follow follow</line>
     <line>As our voice recedeth</line>
     <line>Thro the caverns hollow</line>
     <line>Where the forest spreadeth</line>
-    <line>More distant</line>
+    <milestone unit="tei:stage"/>
+    <line><add place="interlinear">More distant</add></line>
+    <anchor/>
     <line>O follow follow</line>
     <line>Throughthe caverns hollow</line>
     <line>As the song floats, thou pursue</line>
@@ -33,4 +48,3 @@
     <line>173</line>
   </zone>
 </surface>
-
