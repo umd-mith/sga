@@ -6,45 +6,45 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0062.jp2"/>
   <zone type="main">
     <line>As they were spirit-tongued</line>
-    <milestone unit="tei:speaker"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.01"/>
     <line rend="center">Asia</line>
-    <anchor/>
-    <line>It is some being</line>
+    <anchor xml:id="e2-0062.01"/>
+    <line rend="indent4">It is some being</line>
     <line>Around the crags &#8212; what fine clear sounds&#8212;o list</line>
-    <milestone unit="tei:speaker"/>
-    <line rend="center">Echoes unseen</line>
-    <anchor/>
-    <line>Echoes we&#8212;listen</line>
-    <line><del rend="strikethrough">As</del> We cannot stay</line>
-    <line>As dew-stars glisten</line>
-    <line>Then fade away</line>
-    <line>Child of Ocean!</line>
-    <milestone unit="tei:speaker"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.02"/>
+    <line rend="center"><del rend="strikethrough" instant="true">V</del>Echoes unseen</line>
+    <anchor xml:id="e2-0062.02"/>
+    <line rend="indent1">Echoes we&#8212;listen</line>
+    <line rend="indent1"><del rend="strikethrough" instant="true">As</del> We cannot stay</line>
+    <line rend="indent1">As dew-stars glisten</line>
+    <line rend="indent2">Then fade away</line>
+    <line rend="indent2">Child of Ocean!</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.03"/>
     <line rend="center">Asia</line>
-    <anchor/>
+    <anchor xml:id="e2-0062.03"/>
     <line>Hark spirits speak! the <mod>
         <del rend="strikethrough">aerial</del>
         <add place="superlinear">liquid</add>
       </mod> responses</line>
     <line>Of thier aerial tongues yet sound&#8212;</line>
-    <milestone unit="tei:speaker"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.04"/>
     <line rend="center">Panthea</line>
-    <anchor/>
-    <line>I hear.</line>
-    <milestone unit="tei:speaker"/>
+    <anchor xml:id="e2-0062.04"/>
+    <line rend="indent5">I hear.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.05"/>
     <line rend="center">Echoes</line>
-    <anchor/>
-    <line>O follow follow</line>
-    <line>As our voice recedeth</line>
-    <line>Thro the caverns hollow</line>
-    <line>Where the forest spreadeth</line>
-    <milestone unit="tei:stage"/>
-    <line><add place="interlinear">More distant</add></line>
-    <anchor/>
-    <line>O follow follow</line>
-    <line>Throughthe caverns hollow</line>
+    <anchor xml:id="e2-0062.05"/>
+    <line rend="indent2">O follow follow</line>
+    <line rend="indent2">As our voice recedeth</line>
+    <line rend="indent2">Thro the caverns hollow</line>
+    <line rend="indent3">Where the forest spreadeth</line>
+    <milestone unit="tei:stage" spanTo="#e2-0062.06"/>
+    <line rend="indent5"><add place="interlinear">More distant</add></line>
+    <anchor xml:id="e2-0062.06"/>
+    <line rend="indent3">O follow follow</line>
+    <line rend="indent3">Throughthe caverns hollow</line>
     <line>As the song floats, thou pursue</line>
     <line>Where the wild-bee never flew</line>
-    <line>173</line>
+    <line rend="right"><add><metamark function="count">173</metamark></add></line>
   </zone>
 </surface>
