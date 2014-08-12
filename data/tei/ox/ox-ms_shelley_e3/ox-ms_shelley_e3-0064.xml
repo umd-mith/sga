@@ -12,23 +12,30 @@
     <line>Yet idly reasoned what it saw&#8212;&amp; called her&#8212;</line>
     <line>For whence it sprung it knew not nor do I&#8212;</line>
     <line>Mother dear Mother</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0064.01"/>
     <line>The Spirit running to Asia</line>
-    <line>Mother dearest Mother!</line>
-    <line>May I then talk with thee as I was wont? 335</line>
+    <anchor xml:id="e3-0064.01"/>
+    <line rend="indent3">Mother dearest Mother!</line>
+    <line>May I then talk with thee as I was wont? <metamark function="count">335</metamark></line>
     <line>May I then hide mine eyes in thy soft arms</line>
     <line>After thy looks have made them tired of joy?</line>
     <line>May I then play beside thee the long noons</line>
     <line>When work is none in the bright silent air?</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0064.02"/>
     <line>Asia</line>
-    <line>I love thee gentlest being, and henceforth 340</line>
+    <anchor xml:id="e3-0064.02"/>
+    <line>I love thee gentlest being, and henceforth <metamark function="count">340</metamark></line>
     <line>Can cherish thee unenvied&#8212; speak I pray</line>
-    <line>Thy  <unclear></unclear> simple talk once solaced ... now delights.</line>
+    <line>Thy <del rend="strikethrough"><unclear>p</unclear></del> simple talk once solaced ... now delights.</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0064.03"/>
     <line>Spirit</line>
+    <anchor xml:id="e3-0064.03"/>
     <line>Mother, I am grown wiser though a child</line>
     <line>Cannot be wise like thee, within this day</line>
     <line>And happier too, happier &amp; wiser both.</line>
     <line>Thou knowest that toads &amp; snakes &amp; loathly worms</line>
-    <line>&amp;lt;3&amp;gt;&amp;lt;3&amp;gt;7</line>
+    <line rend="right"><gap reason="illegible"/></line>
+    <line rend="right"><gap reason="illegible"/>7</line>
   </zone>
 </surface>
 
