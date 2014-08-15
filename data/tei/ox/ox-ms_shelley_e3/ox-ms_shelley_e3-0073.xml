@@ -4,37 +4,33 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0073" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0073.jp2"/>
+  <zone type="library">34</zone>
   <zone type="main">
-    <line>34</line>
     <line><del rend="strikethrough">chariot</del></line>
-    <line>car will stand</line>
-    <line>And when my moonlike <del rend="strikethrough">stands</del> within</line>
-    <line>^ <del rend="strikethrough">fretted</del></line>
-    <line>A temple, <del rend="strikethrough">underneath its hollow dome</del></line>
+    <line></line>
+    <line>And when my moonlike <mod><del rend="strikethrough">stands</del><add place="sublinear">^</add><add place="superlinear">car will stand<add place="superlinear"><del rend="strikethrough">chariot</del></add></add></mod>within</line>
+    <line>A temple, <del rend="strikethrough">underneath its hollow <add place="superlinear"><del rend="strikethrough">fretted</del></add>dome</del></line>
     <line><del rend="strikethrough">Poised on twelve columns of resplendent stone,</del></line>
-    <line><del rend="strikethrough">And</del> Around stand Asia &amp; the Earth &amp; thou</line>
+    <line><del rend="strikethrough">And Around stand Asia &amp; the Earth &amp; thou</del></line>
     <line><del rend="strikethrough">Prometheus, and the sisters of the Sea</del></line>
     <line><del rend="strikethrough">In memory of the tidings it has borne</del></line>
-    <line>Phidian</line>
-    <line><del rend="strikethrough">And</del> gazed upon by <del rend="strikethrough">living statues</del> forms, <del rend="strikethrough">around</del></line>
+    <line><del rend="strikethrough">And</del> gazed upon by <mod><del rend="strikethrough">living statues</del><add place="superlinear">Phidian</add></mod> forms, <del rend="strikethrough">around</del></line>
     <line>Of thee, and Asia &amp; the Earth, &amp; me</line>
-    <line>And<del rend="strikethrough">thou</del>  fair nymphs, looking the love we feel</line>
-    <line>yo <unclear>u</unclear> <del rend="strikethrough">which</del>  graven flowers</line>
-    <line>Beneath a dome fretted with <del rend="strikethrough">carven</del></line>
+    <line>And<mod><del rend="strikethrough">thou</del><add place="sublinear">you</add></mod> fair nymphs, looking the love we feel</line>
+    <line>Beneath a dome <add place="superlinear"><del rend="strikethrough">which</del></add> fretted with <mod><del rend="strikethrough">carven</del><add place="superlinear">graven flowers</add></line>
     <line>Poised on twelve columns of resplendent stone</line>
-    <line>And open to the [all]-surrounding Heaven</line>
+    <line>And open to the <del rend="strikethrough"><unclear>all</unclear>-surrounding Heaven</del></line>
     <line>In memory of the tidings it has borne</line>
-    <line>Yoked to it by an amphisbaenic snake</line>
-    <line>430 <del rend="strikethrough">And</del> <hi rend="underline">Drawn by the likeness of thos</hi><del rend="strikethrough"><hi rend="underline">e winged steed</hi></del> <del rend="strikethrough">s</del></line>
-    <line>The likeness of those winged steeds will make</line>
+    <line rend="indent1">Yoked to it by an amphisbaenic snake</line>
+    <line><metamark function="count">430</metamark><del rend="strikethrough">And Drawn by the likeness of those winged steeds</del></line>
+    <line>The likeness of those winged steeds will mock</line>
     <line>The flight from which they find repose&#8212;alas</line>
-    <line><del rend="strikethrough">Withe</del>  Wither has wandered now my partial tongue</line>
-    <line>When all remains unsaid which ye w.dhear!&#8212;</line>
+    <line><del rend="strikethrough">Withe</del> Wither has wandered now my partial tongue</line>
+    <line>When all remains unsaid which ye w.d hear!&#8212;</line>
     <line>As I have said I floated to the Earth</line>
     <line><hi rend="underline">?</hi> *</line>
-    <line>14</line>
-    <line><hi rend="underline">5</hi> Y<hi rend="underline">oke</hi>d</line>
-    <line>9</line>
-  </zone>
+    <line><hi rend="underline">Yoked</hi></line>
+    </zone>
+  <zone type="left_margin" rotate="90">bright &amp; liquid sky</zone>
 </surface>
 
