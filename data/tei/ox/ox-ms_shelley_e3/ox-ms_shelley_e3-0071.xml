@@ -4,34 +4,39 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0071" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0071.jp2"/>
-  <zone type="main">
-    <line>33</line>
-    <line>[?from]</line>
-    <line>[?<del rend="strikethrough">those</del> ]</line>
+  <zone type="library">33</zone>
+    <zone type="main">
+    <line rend="indent3"><unclear>from</unclear></line>
+    <line rend="indent3"><unclear><del rend="strikethrough">those</del></unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e3-0071.01"/>
     <line>Asia</line>
-    <line>chaste</line>
-    <line>till <del rend="strikethrough">cold</del> Sister</line>
-    <line>And never will we part, <del rend="strikethrough">and</del> thy <del rend="strikethrough">cold</del> <del rend="strikethrough"><hi rend="underline">chaste</hi></del></line>
-    <line>the</line>
-    <line>Who guides the frozen and inconstant moon</line>
-    <line>warm &amp; equal light</line>
-    <line>Will look on thy more <del rend="strikethrough">pure</del></line>
-    <line>Till her heart thaw like flakes of April snow</line>
-    <line>And love thee 400</line>
+    <anchor xml:id="e3-0071.01"/>
+    <line rend="indent4">chaste</line>  
+    <line>And never will we part, <mod><del rend="strikethrough">and</del><add place="superlinear">till</add></mod> thy <mod><del rend="strikethrough">cold</del><add place="superlinear"><del rend="strikethrough">cold</del></add></mod><mod><del rend="strikethrough"><hi rend="underline">chaste</hi></del><add place="superlinear">Sister</add></mod></line>  
+    <line>Who guides the frozen and <add place="superlinear">the</add>inconstant moon</line>
+    <line>Will look on thy more <mod><del rend="strikethrough">pure</del><add place="superlinear">warm &amp; equal light</add></mod></line>
+    <line rend ="indent1">Till her heart thaw like flakes of April snow</line>
+    <line>And love thee <metamark function="count">400</metamark></line>
+    <milestone unit="tei:speaker" spanTo="#e3-0071.02"/>
     <line>Spirit of the Earth</line>
-    <line>What, as Asia loves Prometheus</line>
+    <anchor xml:id="e3-0071.02"/>
+    <line rend="indent3">What, as Asia loves Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0071.03"/>
     <line>Asia</line>
+    <anchor xml:id="e3-0071.03"/>
     <line>Peace Wanton &#8212; thou art yet not old enough</line>
     <line>Think ye, by gazing on each others eyes</line>
     <line>To multiply your lovely selves, &amp; fill</line>
-    <line>fires</line>
-    <line>With sphered <del rend="strikethrough">lights</del> the interlunar air? <unclear>&#8212;</unclear></line>
-    <line>trims</line>
-    <line>Spirit ofthe Earth</line>
-    <line>Nay Mother while my sister <del rend="strikethrough"><hi rend="underline">fills</hi></del> her lamp</line>
-    <line><del rend="strikethrough">Why</del> Tis hard I should go darkling <unclear>-\-\.</unclear></line>
+    <line>With sphered <mod><del rend="strikethrough">lights</del><add place="superlinear">fires</add></mod> the interlunar air? <unclear>&#8212;</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e3-0071.04"/>
+    <line>Spirit of the Earth</line>
+    <anchor xml:id="e3-0071.04"/> 
+    <line>Nay Mother while my sister <mod><del rend="strikethrough"><hi rend="underline">fills</hi></del><add place="superlinear">trims</add></mod>her lamp</line>
+    <line><del rend="strikethrough">Why</del> Tis hard I should go darkling <unclear><del rend="strikethrough">&#8212;</del>.</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e3-0071.05"/>
     <line>Asia</line>
-    <line>&#8212; Listen! Look!</line>
+    <anchor xml:id="e3-0071.05"/>
+    <line rend="indent3">&#8212; Listen! Look!</line>
     <line>Spirit</line>
     <line>I hear &amp; see, but I must away</line>
   </zone>

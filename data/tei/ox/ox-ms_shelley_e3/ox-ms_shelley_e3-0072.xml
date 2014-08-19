@@ -6,15 +6,15 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0072.jp2"/>
   <zone type="main">
     <line>Where they henceforth will live exempt from toil.</line>
-    <line>Pasturing flowers of vegetable fire 42 <unclear>1</unclear></line>
+    <line>Pasturing flowers of vegetable fire <del rend="strikethrough"><hi rend="underline">/</hi></del><metamark function="count">42<unclear>1</unclear></metamark></line>
     <line>It was, as it is still, the pain of bliss</line>
     <line>To move, to breathe, to be; I wandering went</line>
     <line>Among the haunts &amp; dwellings of mankind</line>
     <line>And first was disappointed not to see</line>
     <line>Such mighty change as I had felt within</line>
     <line>Expressed in outward things; but soon I looked</line>
-    <line>1790</line>
-    <line>And beh <unclear>o</unclear>ld! thrones were kingless, &amp; men walked</line>
+    <line><metamark function="count">1790</metamark></line>
+    <line>And behold! thrones were kingless, &amp; men walked</line>
     <line>One with the other even as spirits do,</line>
     <line>None frowned, none trampled, hate disdain or fear</line>
     <line>Self-love or self-contempt on human brows,</line>
@@ -22,16 +22,12 @@
     <line>"All hope abandon, ye who enter here"</line>
     <line>None fawned, none trembled, none with eager fear</line>
     <line>Gazed on anothers eye of cold command</line>
-    <line>subject</line>
-    <line>Until the <del rend="strikethrough">captive</del> of a tyrants will</line>
-    <line>abject</line>
-    <line>Became, worse fate, the <del rend="strikethrough">subject</del> of his own</line>
-    <line>1800</line>
-    <line>Which spurred him, like an outspent horse, to</line>
-    <line>death&#8212;</line>
+    <line>Until the <mod><del rend="strikethrough">captive</del><add place="superlinear">subject</add> </mod>of a tyrants will</line>
+    <line>Became, worse fate, the <mod><del rend="strikethrough">subject</del><add place="superlinear">abject</add></mod>of his own</line>
+    <line><metamark function="count">1800</metamark></line>
+    <line>Which spurred him, like an outspent horse, to death&#8212;</line>
     <line>None wrought his lips in truth entangling lines</line>
     <line>Which smiled the lie his tongue disdained to speak</line>
-    <line><unclear>?</unclear></line>
   </zone>
 </surface>
 

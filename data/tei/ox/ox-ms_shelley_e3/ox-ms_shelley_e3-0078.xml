@@ -6,11 +6,9 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0078.jp2"/>
   <zone type="main">
     <line>With blood, &amp; hearts broken by long hope, &amp; love</line>
-    <line>Dragged to</line>
-    <line><del rend="strikethrough">Slain at</del>  his altars soiled &amp; garlandless</line>
+    <line><mod><del rend="strikethrough">Slain at</del><add place="superlinear">Dragged to</add></mod> his altars soiled &amp; garlandless</line>
     <line>Flattering the thing they feared, which fear was hate</line>
-    <line><del rend="strikethrough">Stand</del> mouldering fast, oer their abandoned shrines <unclear>&#8212;</unclear></line>
-    <line>Frown,</line>
+    <line><mod><del rend="strikethrough">Stand</del><add place="sublinear">Frown,</add></mod>mouldering fast, oer their abandoned shrines <unclear>&#8212;</unclear></line>
     <line>The painted veil by those who were, called life,</line>
     <line>Which mimicked, as with colours idly spread,</line>
     <line>All men believed or hoped, is torn aside&#8212;</line>
@@ -19,19 +17,28 @@
     <line>Equal, unclassed, tribeless, &amp; nationless</line>
     <line>Exempt from awe <unclear>,</unclear> worship, degree,&#8212; the King</line>
     <line>Over himself; just, gentle, wise <unclear>:&#8212;</unclear>but man:</line>
-    <line>1866 yet</line>
-    <line><hi rend="underline">5</hi>Passionless <unclear>?</unclear> no &#8212; <del rend="strikethrough">but</del> free from guilt [or] pain</line>
-    <line>1871</line>
-    <line><hi rend="underline">29</hi>Which were, for his will made, or suffered them <unclear>,</unclear></line>
-    <line>1900 Nor yet though</line>
-    <line>[15] <del rend="strikethrough">Though</del> <del rend="strikethrough">not</del> exempt, <del rend="strikethrough">yet</del>  ruling them like slaves,</line>
+    <line>Passionless <unclear>?</unclear> no &#8212; <mod><del rend="strikethrough">but</del><add place="superlinear">yet</add></mod> free from guilt or pain</line>
+    <line>Which were, for his will made, or suffered them <unclear>,</unclear></line>
+    <line><mod><del rend="strikethrough">Though not</del><add place="superlinear">Nor yet</add></mod> exempt, <mod><del rend="strikethrough">yet</del><add place="superlinear">though</add></mod> ruling them like slaves,</line>
     <line>From chance &amp; death &amp; mutability</line>
-    <line><del rend="strikethrough">Which</del>  <del rend="strikethrough">Which clog that spirit, else which might</del></line>
-    <line rend="indent9"><del rend="strikethrough">outsoar</del></line>
+    <milestone unit="tei:l" spanTo="#e3-0078.01"/> 
+    <line><del rend="strikethrough">Which</del> <del rend="strikethrough">Which clog that spirit, else which might</del></line>
+    <line rend="right"><del rend="strikethrough">outsoar</del></line>
+    <anchor xml:id="e3-0078.01"/>
     <line>The loftiest star of unascended Heaven</line>
     <line>Pinnacled dim in the intense inane.</line>
-    <line>1915</line>
-    <line rend="indent2">Prometheus</line>
+    <line><metamark function="count">1915</metamark></line>
+    <milestone unit="tei:speaker" spanTo="#e3-0078.02"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e3-0078.02"/>
+  </zone>
+  <zone type="left_margin">
+    <line>1866</line>
+    <line><hi rend="underline">   5</hi></line>
+    <line>1871</line>
+    <line><hi rend="underline">  29</hi></line>
+    <line>1900</line>
+    <line>  15</line>
   </zone>
 </surface>
 

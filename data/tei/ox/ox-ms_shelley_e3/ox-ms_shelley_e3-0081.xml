@@ -4,8 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0081" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0081.jp2"/>
-  <zone type="main">
-    <line>[<hi rend="underline">reverso</hi>]</line>
+  <zone type="library">
+    <line>38</line>
+    <line>(ult.)</line>
+  </zone>
+  <zone type="main" rotate="180">
     <line>peculiarity of the moral &amp; intellectual</line>
     <line>condition of the minds among which</line>
     <line>they have been produced. Thus a</line>
@@ -15,22 +18,19 @@
     <line>the former is the endowment of the</line>
     <line>age in which they live, &amp; the latter</line>
     <line>must be the uncommunicated</line>
-    <line>lightning of their own mind.~~~~~~</line>
-    <line>remains</line>
-    <line>The mass of capabilities [<del rend="strikethrough">is</del> ] at every</line>
+    <line>lightning of their own mind.</line>
+    <line>The mass of capabilities <mod><del rend="strikethrough">ins</del><add place="superlinear">remains</add></mod> at every</line>
     <line>period materially the same; the circum</line>
     <line>stances which awaken it to action</line>
     <line>perpetually change. If England were</line>
     <line>divided into forty republics each</line>
-    <line>aequal in population &amp; extent to</line>
+    <line>&#230;qual in population &amp; extent to</line>
     <line>Athens, there is <del rend="strikethrough">every</del> no reason to</line>
     <line>suppose but that, under institutions</line>
-    <line><del rend="strikethrough">aequally</del> no more <del rend="strikethrough">e <unclear>x</unclear></del> perfect than</line>
+    <line><del rend="strikethrough">&#230;qually</del> no more <del rend="strikethrough">e<unclear>x</unclear></del> perfect than</line>
     <line>those of Athens, each would produce</line>
     <line>philosophers &amp; poets equal to those</line>
     <line>who (if we except Shakespeare) have</line>
-    <line>38</line>
-    <line>(ult.)</line>
-  </zone>
+   </zone>
 </surface>
 

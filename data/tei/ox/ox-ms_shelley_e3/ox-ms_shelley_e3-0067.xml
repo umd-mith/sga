@@ -4,23 +4,19 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0067" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0067.jp2"/>
-  <zone type="main">
-    <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>31</line>
-    <line>Of <del rend="strikethrough">that</del> reform, or that I consider them</line>
-    <line>as containing a</line>
-    <line>in any degree reasoned system on the</line>
-    <line>^</line>
+  <zone type="library">31</zone>
+  <zone type="main" rotate="180">
+    <line>of <del rend="strikethrough">that</del> reform, or that I consider them</line>
+    <line>in any degree <add place="sublinear">^</add><add place="superlinear">as containing a</add> reasoned system on the</line>
     <line>theory of human life. Didactic poetry</line>
     <line>is my abhorrence; nothing can equally well</line>
     <line>be expressed in prose that is not tedious &amp;</line>
     <line>supererogatory in verse. My purpose has</line>
-    <line>simply</line>
-    <line>hitherto been <del rend="strikethrough">rather</del> to familiarize the</line>
+    <line>hitherto been <mod><del rend="strikethrough">rather</del><add place="superlinear">simply</add></mod> to familiarize the</line>
     <line><del rend="strikethrough">imagination of po</del> highly refined ima</line>
     <line>gination of the more select classes of</line>
     <line>poetical readers with beautiful ideali</line>
-    <line>sms of moral excellence; aware that <unclear>,</unclear> 360</line>
+    <line>sms of moral excellence; aware that <unclear>,</unclear> <metamark function="count"></metamark>360</line>
     <line>until the mind can love &amp; admire &amp;</line>
     <line>trust &amp; hope &amp; endure, <del rend="strikethrough">that</del> reasoned</line>
     <line>principles of moral conduct are seeds</line>
@@ -30,14 +26,10 @@
     <line>the harvest of his happiness. Should</line>
     <line>I live to accomplish what I purpose,</line>
     <line>that is, produce a systematical</line>
-    <line>what appear to me to be</line>
-    <line>developement of <del rend="strikethrough">the principles which</del></line>
-    <line>the genuine <del rend="strikethrough">elements of</del> [?sources of]the</line>
-    <line>should regulate human life, let not</line>
-    <line>[our] human society injustice 350</line>
-    <line>advocates of <del rend="strikethrough">despotism &amp;</del>  superstition</line>
-    <line>flatter</line>
-    <line><del rend="strikethrough">assure</del>  themselves that I should</line>
+    <line>developement of <mod><del rend="strikethrough">the principles which</del><add place="superlinear">what appear to me to be</add></mod></line>
+    <line><mod><del rend="strikethrough">should regulate human life</del><add place="superlinear">the genuine <del rend="strikethrough">elements of</del>sources of</add><add place="sublinear"><unclear>our</unclear> human society</add></mod> let not <add place="superlinear">the</add><metamark function="count">350</metamark></line>
+    <line>advocates of <mod><del rend="strikethrough">despotism</del> <add place="superlinear">injustice</add></mod> &amp; superstition</line>
+    <line><mod><del rend="strikethrough">assure</del><add place="superlinear">flatter</add></mod> themselves that I should</line>
   </zone>
 </surface>
 
