@@ -4,12 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0082" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0082.jp2"/>
-  <zone type="main">
-    <line>[<hi rend="underline">reverso</hi>]</line>
+  <zone type="main" rotate="180">
     <line>One word is due in candour to the</line>
     <line>degree in which the study of contem</line>
     <line>porary writings may have tinged my</line>
-    <line>composition <unclear>,</unclear> for such has been a topic</line>
+    <line>composition<unclear>,</unclear> for such has been a topic</line>
     <line>of censure with regard to poems far</line>
     <line>more popular, &amp; indeed more deservedly</line>
     <line>popular than mine. It is impossible</line>
