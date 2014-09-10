@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0088" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0088" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0088.jp2"/>
   <zone type="main">
     <line>Their shelterless pale tribes to mountain caves</line>
@@ -13,12 +13,15 @@
     <line>Prometheus saw, &amp; waked the legioned hopes</line>
     <line>Which sleep within folded Elysian flowers,</line>
     <line>Nepenthe, Moly, Amaranth, fadeless blooms;</line>
+    <milestone unit="tei:l" spanTo="#e2-0088.01"/>
     <line>That they might hide with thin &amp; rainbow</line>
-    <line>wings</line>
+    <line rend="right">wings</line><anchor xml:id="e2-0088.01"/>
     <line>The shape of death, and love be sent to bind</line>
     <line>The disunited tendrils of that vine</line>
+    <milestone unit="tei:l" spanTo="#e2-0088.02"/>
     <line>Which bears the wine of life, the human</line>
-    <line>heart;</line>
+    <line rend="right">heart;</line>
+    <anchor xml:id="e2-0088.02"/>
     <line>And he tamed fire, which like some beast of [?chase]</line>
     <line>Most terrible, but lovely, played beneath</line>
     <line>The frown of man, &amp; tortured to his will</line>
@@ -32,4 +35,3 @@
     <line>392</line>
   </zone>
 </surface>
-
