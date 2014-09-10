@@ -22,7 +22,7 @@
     <line>Which bears the wine of life, the human</line>
     <line rend="right">heart;</line>
     <anchor xml:id="e2-0088.02"/>
-    <line>And he tamed fire, which like some beast of [?chase]</line>
+    <line>And he tamed fire, which like some beast of <unclear reason="unclear">chase</unclear></line>
     <line>Most terrible, but lovely, played beneath</line>
     <line>The frown of man, &amp; tortured to his will</line>
     <line>Iron &amp; gold, the slaves &amp; signs of power;</line>
@@ -30,8 +30,10 @@
     <line>Hidden beneath the mountains &amp; the waves</line>
     <line>He gave man speech, &amp; speech created thought</line>
     <line>Which is the measure of the Universe</line>
+    <milestone unit="tei:l" spanTo="#e2-0088.03"/>
     <line>And Science struck the thrones of Earth</line>
-    <line>&amp; Heaven</line>
+    <line rend="right">&amp; Heaven</line>
+    <anchor xml:id="e2-0088.03"/>
     <line>392</line>
   </zone>
 </surface>
