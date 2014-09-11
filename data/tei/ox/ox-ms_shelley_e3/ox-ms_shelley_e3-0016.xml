@@ -5,38 +5,45 @@
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0016" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0016.jp2"/>
   <zone type="main">
-    <line>Spirit</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0016.01"/>
+    <line rend="center">Spirit</line>
+    <anchor xml:id="e3-0016.01"/>
     <line>I am the shadow of a destiny</line>
     <line>More dread than is my aspect <unclear>&#8212;</unclear> ere yon planet</line>
     <line>Has set, the Darkness which ascends with me</line>
     <line>Shall wrap in lasting night Heaven's kingless throne</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0016.02"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e3-0016.02"/>
     <line>What meanest thou?</line>
-    <line>Panthea</line>
-    <line>The terrible shadow floats</line>
-    <line>may</line>
-    <line>Up from its throne, as <del rend="strikethrough">doth</del> the lurid <del rend="strikethrough">smoke</del> dust</line>
-    <line>oer</line>
-    <line>Of earthquake-ruined cities <del rend="strikethrough">to</del> the sea&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0016.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e3-0016.03"/>
+    <line rend="indent4">The terrible shadow floats</line>
+    <line>Up from its throne, as <mod><del rend="strikethrough">doth</del><add place="superlinear">may</add></mod>the lurid <del rend="strikethrough">smoke</del> dust</line>
+    <line>Of earthquake-ruined cities <mod><del rend="strikethrough">to</del><add place="superlinear">oer</add></mod> the sea&#8212;</line>
     <line>Lo! it ascends the Car... the coursers fly</line>
-    <line>watch its path among the stars</line>
-    <line>Terrified; &amp; <del rend="strikethrough">its path darkens the night</del> &#8212;</line>
-    <line><del rend="strikethrough">Darkening</del> the night</line>
-    <line>Blackening Asia</line>
-    <line><del rend="strikethrough">But</del> <del rend="strikethrough">see</del> <del rend="strikethrough">See near the verge</del>  an<del rend="strikethrough">other chariot</del> <del rend="strikethrough">stays</del></line>
-    <line>Thus I am answered&#8212;strange!</line>
-    <line>Panthea</line>
+    <line>Terrified; &amp; <mod><del rend="strikethrough">its path darkens the night</del><add place="superlinear">watch its path among the stars</add></mod> &#8212;</line>
+    <line><mod><del rend="strikethrough">Darkening</del><add place="sublinear">Blackening</add></mod> the night</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0016.04"/>
+    <line rend="center"> Asia</line>
+    <anchor xml:id="e3-0016.04"/>
+    <line><del rend="strikethrough">But</del> <del rend="strikethrough">see</del> <del rend="strikethrough">See near the verge another chariot</del> <del rend="strikethrough">stays</del></line>
+    <line rend="indent3">Thus I am answered&#8212;strange!</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0016.05"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e3-0016.05"/>
     <line>See, near the verge another chariot stays</line>
     <line>An ivory shell inlaid with crimson fire</line>
     <line><del rend="strikethrough">Like the</del></line>
+    <milestone unit="tei:l" spanTo="#e3-0016.06"/>
     <line>Which <del rend="strikethrough">burns around</del> comes &amp; goes within its</line>
-    <line>sculptured ruin</line>
+    <line rend="right">sculptured ruin</line>
+    <anchor xml:id="e3-0016.06"/>
     <line>Of delicate strange tracery&#8212; the <del rend="strikethrough">fair</del> young Spirit</line>
-    <line>That guides it,</line>
-    <line><del rend="strikethrough">Within it</del> , has the dovelike eyes of hope.</line>
+    <line><mod><del rend="strikethrough">Within it</del><add place="superlinear">That guides it,</add></mod>, has the dovelike eyes of hope.</line>
     <line>How its soft smiles attract the soul!&#8212;as light</line>
-    <line><del rend="strikethrough">Leads</del> winged</line>
-    <line><del rend="strikethrough">Attracts</del>  insects thro the lampless air.</line>
+    <line><mod><del rend="strikethrough">Leads</del><add place="sublinear"><del rend="strikethrough">Attracts</del></add></mod> winged insects thro the lampless air.</line>
     <line>Lures</line>
   </zone>
 </surface>

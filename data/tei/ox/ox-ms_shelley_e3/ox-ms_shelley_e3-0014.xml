@@ -5,32 +5,40 @@
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0014" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0014.jp2"/>
   <zone type="main">
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0014.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e3-0014.01"/>
     <line>The rocks are cloven, &amp; through the purple night</line>
     <line>I see Cars drawn by rainbow-winged steeds</line>
+    <milestone unit="tei:l" spanTo="#e3-0014.02"/>
     <line>Which trample the dim winds <unclear>:</unclear> in each there</line>
-    <line>stands</line>
-    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight <unclear>,</unclear></line>
+    <line rend="right">stands</line>
+    <anchor xml:id="e3-0014.02"/>
+    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight <unclear>.</unclear></line>
     <line>Some look behind, as fiends pursued them there</line>
     <line>And yet I see no shapes but the keen stars</line>
     <line>Others with burning eyes lean forth, &amp; drink</line>
     <line>With eager lips the wind oftheir own speed</line>
     <line>As if the thing they loved fled on before</line>
     <line>And now&#8212;even now they clasped it; their bright hair</line>
-    <line>like a comets <del rend="strikethrough">scattered hair</del> &amp;</line>
-    <line><del rend="strikethrough">Streams on the blast like meteors &amp; they</del> all</line>
+    <line><del rend="strikethrough">Str</del>eams <mod><del rend="strikethrough">on the blast like meteors &amp; they</del><add>like a comets <del rend="strikethrough">scattered hair</del></add></mod> all</line>
     <line>Sweep onward&#8212;</line>
-    <line>Demogorgon</line>
-    <line>These are the immortal Hours</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0014.03"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e3-0014.03"/>
+    <line rend="indent3">These are the immortal Hours</line>
     <line>Of whom thou didst demand&#8212;one waits for thee</line>
-    <line>Asia</line>
-    <line>A  <unclear>S</unclear>pirit with a dreadful countenance</line>
-    <line>[Ch]</line>
-    <line><del rend="strikethrough">Waits with it's</del> chariot by the craggy gulph</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0014.04"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e3-0014.04"/>
+    <line>A Spirit with a dreadful countenance</line>
+    <line><mod><del rend="strikethrough">Waits with it's</del><add place="superlinear"><unclear>Ch</unclear></add></mod> chariot by the craggy gulph</line>
     <line>Unlike thy brethren &#8212; ghastly charioteer</line>
+    <milestone unit="tei:l" spanTo="#e3-0014.05"/>
     <line>What art thou? whither wouldst thou bear me</line>
-    <line>?</line>
-    <line><del rend="strikethrough">Speak</del> .</line>
+    <line rend="right">?</line>
+    <anchor xml:id="e3-0014.05"/>
+    <line rend="indent5"><del rend="strikethrough">Speak</del>.</line>
   </zone>
 </surface>
 
