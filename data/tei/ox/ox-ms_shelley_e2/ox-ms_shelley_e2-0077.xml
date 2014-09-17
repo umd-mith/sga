@@ -1,28 +1,49 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0077" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0077" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0077.jp2"/>
-  <zone type="main">
+  <zone type="library">
     <line>38</line>
-    <line>folded violets deep</line>
-    <line>Of meadow flowers, <del rend="strikethrough">or in the violets heart</del></line>
+  </zone>
+  <zone type="main">
+    <line>Of meadow flowers, or <mod>
+        <del rend="strikethrough">in the violets heart</del>
+        <add place="superlinear">folded violets deep</add>
+      </mod></line>
     <line>Or on thier dying odours, when they die</line>
     <line>Or in the sunlight of the sphered dew?</line>
-    <line>2.d divine</line>
-    <line>Aye, many more <unclear>,</unclear> which we may well <del rend="strikethrough">imagine</del></line>
-    <line>But should we try to speak, the noontide w.dcome <unclear>,</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0077.01"/>
+    <line rend="center">2<hi rend="sup">d</hi>.</line>
+    <anchor xml:id="e2-0077.01"/>
+    <line>Aye, many more <unclear>,</unclear> which we may well <mod>
+        <del rend="strikethrough">imagine</del>
+        <add place="superlinear">divine</add>
+      </mod></line>
+    <line>But should we <unclear>try</unclear> to speak, <mod>
+        <del rend="strikethrough">the</del>
+      </mod> noontide w<hi rend="sup">d</hi>. come <unclear>,</unclear></line>
     <line>And thwart Silenus find his goats undrawn</line>
     <line>And grudge to sing those wise &amp; lovely songs</line>
     <line>Our solitary solitary</line>
-    <line><del rend="strikethrough">Which cheer</del>  <del rend="strikethrough">our lonesome</del> twilights, &amp; which charm</line>
+    <line><mod>
+        <del rend="strikethrough">Which cheer</del>
+        <del rend="strikethrough">our</del>
+        <add place="superlinear">Our solitary</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">lonesome</del>
+        <add place="superlinear">solitary</add>
+      </mod> twilights, &amp; which charm</line>
     <line>To silence the unenvying nightingales ..</line>
-    <line>Of fate &amp; chance &amp; God, &amp; Chaos old <unclear>;</unclear></line>
+    <line>Of fate &amp; chance &amp; God, &amp; Chaos old <unclear reason="illegible"
+      >;</unclear></line>
     <line>And love, &amp; the chained Titans woful doom</line>
     <line>And how he shall be loosed, &amp; make the Earth</line>
     <line>One brotherhood&#8212;delighful strains which cheer</line>
+    <milestone unit="tei:seg" spanTo="#e2-0077.02" corresp="#e2-0076.03"/>
     <line>mountains</line>
+    <anchor xml:id="e2-0077.02"/>
   </zone>
 </surface>
-

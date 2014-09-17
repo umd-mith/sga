@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0076" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0076" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0076.jp2"/>
   <zone type="main">
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0076.01"/>
+    <line rend="indent2">Asia</line>
+    <anchor xml:id="e2-0076.01"/>
     <line>Fit throne for such a power! Magnificent <unclear>:</unclear></line>
     <line>How glorious art thou Earth! &amp; if thou beest</line>
     <line>The shadow of some Spirit lovelier still</line>
-    <line>should be</line>
-    <line>Though evil stain its work and it <del rend="strikethrough">must</del></line>
-    <line>Like its creation</line>
-    <line>A<del rend="strikethrough">s [thou]</del> <del rend="strikethrough">perchance</del>  yet</line>
-    <line><del rend="strikethrough">Like all we love</del> , weak <del rend="strikethrough">although</del> beautiful</line>
+    <line>Though evil stain its work and it <mod>
+        <del rend="strikethrough">must</del>
+        <add place="superlinear">should be</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">Like all we love</del>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">As <unclear>thou</unclear>
+              perchance</add></del>
+          <add place="superlinear">Like its creation</add>
+        </mod>
+      </mod>, weak <mod>
+        <del rend="strikethrough">although</del>
+        <add place="superlinear">yet</add>
+      </mod> beautiful</line>
     <line>I could fall down &amp; worship that &amp; thee&#8212;</line>
     <line>Even now my heart adoreth&#8212;Wonderful!</line>
     <line>Look Sister &#8212; ere the vapour dim thy brain;</line>
@@ -26,7 +38,7 @@
     <line>Encinctured by the dark &amp; blooming forests</line>
     <line>Dim twilight lawns &amp; stream-illumed caves</line>
     <line>And wind-inchanted shapes of wandering mist</line>
-    <line>293And far on high the keen sky-cleaving</line>
+    <line><metamark function="count"><add>293</add></metamark>And far on high the keen sky-cleaving
+        <anchor xml:id="e2-0076.03"/></line>
   </zone>
 </surface>
-
