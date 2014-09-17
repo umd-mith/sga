@@ -5,8 +5,7 @@
   lrx="5372" lry="7222" xml:id="ox-ms_shelley_e2-0078" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0078.jp2"/>
   <zone type="main">
-    <line>icy spires</line>
-    <line>From <del rend="strikethrough">pyramids</del> of sunlike radiance fling</line>
+    <line>From<mod><del rend="strikethrough">pyramids</del><add place="superlinear">icy spires</add></mod> of sunlike radiance fling</line>
     <line>The dawn, as lifted Oceans dazzling spray</line>
     <line>From some Atlantic islet scattered up</line>
     <line>Spangles the wind with lamp-like water drops</line>
@@ -17,15 +16,17 @@
     <line>The sun-awakened avalanche, whose mass</line>
     <line>Thrice sifted by the storm had gathered there</line>
     <line>Flake after flake: in Heaven-defying minds</line>
+    <milestone unit="tei:l" spanTo="e2-0078.01"/>
     <line>As thought by thought is piled, till some great</line>
-    <line>nations truth</line>
-    <line>Is loosened, &amp; the <del rend="strikethrough">mountains</del> echo round</line>
+    <line rend="right">truth</line>
+    <anchor xml:id="e2-0078.01"/>
+    <line>Is loosened, &amp; the <mod><del rend="strikethrough">mountains</del><add place="superlinear">nations</add></mod> echo round</line>
     <line>Shaken to their roots: as do the mountains now.</line>
     <line>Panthea</line>
     <line>Look <unclear>;</unclear> how the gusty sea of mist is breaking</line>
     <line>In crimson foam even at our feet&#8212;it rises</line>
     <line>As Ocean at the inchantment of the moon</line>
-    <line>310</line>
+    <line><add><metamark function="count">310</metamark></add></line>
   </zone>
 </surface>
 

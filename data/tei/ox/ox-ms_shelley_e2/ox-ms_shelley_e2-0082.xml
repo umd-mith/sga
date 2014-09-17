@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0082" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0082" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0082.jp2"/>
   <zone type="main">
     <line>Nor form nor outline yet we feel it is</line>
     <line>A living Spirit</line>
-    <line>Demogorgon</line>
-    <line><unclear>A</unclear>sk what thou wouldst know</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.01"/>
+    <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.01"/>
+    <line rend="indent3"><unclear>A</unclear>sk what thou wouldst know</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.02"/>
+    <line rend="center">Asia</line><anchor xml:id="e2-0082.02"/>
     <line>What canst thou tell?</line>
-    <line>Demogorgon</line>
-    <line>All things thou darest demand</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.03"/>
+    <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.03"/>
+    <line rend="indent3">All things thou darest demand</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.04"/>
+    <line rend="center">Asia</line><anchor xml:id="e2-0082.04"/>
     <line>Who made the living world?</line>
-    <line>Demogorgon</line>
-    <line>God.</line>
-    <line>Asia Who made all</line>
-    <line>thought</line>
-    <line>That it contains &#8212; <del rend="strikethrough"> <unclear>S</unclear>ense</del> passion, reason, will,</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.05"/>
+    <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.05"/>
+    <line rend="indent3">God.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.11"/>
+    <line rend="center">Asia<anchor xml:id="e2-0082.11"/>
+      <milestone unit="tei:l" spanTo="#e2-0082.12"/>Who made all</line>
+    <line>That it contains &#8212; <mod>
+        <del rend="strikethrough">
+          <unclear>S</unclear>ense</del>
+        <add place="superlinear">thought,</add>
+      </mod> passion, reason, will,</line>
     <line>Imagination?</line>
-    <line>Demogorgon</line>
-    <line>God, Almighty God.</line>
-    <line>Asia</line>
+    <anchor xml:id="e2-0082.12"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.06"/>
+    <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.06"/>
+    <line rend="indent3">God, Almighty God.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.07"/>
+    <line rend="center">Asia</line><anchor xml:id="e2-0082.07"/>
+    <milestone unit="tei:l" spanTo="#e2-0082.08"/>
     <line>Who made that sense which when the winds</line>
-    <line>of spring</line>
+    <line rend="right">of sp<unclear>r</unclear>ing</line>
+    <anchor xml:id="e2-0082.08"/>
     <line>In rarest visitation, or the voice</line>
     <line>Of one beloved heard in youth alone</line>
+    <milestone unit="tei:l" spanTo="#e2-0082.09"/>
     <line>Fills the faint eyes with falling tears, which</line>
-    <line>dim</line>
+    <line rend="right">dim</line>
+    <anchor xml:id="e2-0082.09"/>
     <line>The radiant looks of unbewailing flowers</line>
     <line>And leaves this peopled earth a solitude</line>
     <line>When it returns no more</line>
-    <line>Demogorgon</line>
-    <line>Merciful God</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0082.10"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e2-0082.10"/>
+    <line rend="indent3">Merciful God</line>
   </zone>
 </surface>
-

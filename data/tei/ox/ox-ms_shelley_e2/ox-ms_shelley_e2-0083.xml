@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0083" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0083" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0083.jp2"/>
   <zone type="main">
     <line>41</line>
     <line>Through the grey void Abysm</line>
-    <line>Down, Down!</line>
+    <line rend="indent2">Down, Down!</line>
     <line>Where the air is no prism</line>
     <line>And the moon &amp; stars are not</line>
     <line>And the cavern-crags wear not</line>
     <line>The radiance of Heaven,</line>
     <line>Nor the gloom to Earth given;</line>
     <line>Where there is One pervading, One alone <unclear>,</unclear></line>
-    <line>Down, Down!</line>
+    <line rend="indent2">Down, Down!</line>
     <line>In the depth of the Deep</line>
-    <line>Down, Down!</line>
-    <line>Like veil'd Lightning asleep,</line>
+    <line rend="indent2">Down, Down!</line>
+    <line>Like veil<mod>
+        <del rend="strikethrough">e</del>
+      </mod>'d Lightning asleep,</line>
     <line>Like that spark nursed in embers</line>
     <line>The last look Love remembers,</line>
     <line>Like a diamond which shines</line>
     <line>On the dark wealth of mines</line>
     <line>hidden from</line>
-    <line>A spell is <del rend="strikethrough">buried</del> , but <del rend="strikethrough">for</del> thee alone&#8212;</line>
-    <line>Down Down!</line>
+    <line>A spell is <mod>
+        <del rend="strikethrough">buried</del>
+        <add place="superlinear">hidden</add>
+      </mod> , but <mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear">from</add>
+      </mod> thee alone&#8212;</line>
+    <line rend="indent2">Down Down!</line>
     <line>We have bound thee, we guide thee</line>
-    <line>Down Down!</line>
+    <line rend="indent2">Down Down!</line>
   </zone>
 </surface>
-

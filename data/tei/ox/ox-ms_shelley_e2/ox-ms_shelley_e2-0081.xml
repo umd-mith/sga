@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0081" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0081" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0081.jp2"/>
   <zone type="main">
     <line>40</line>
-    <line>Song of Spirits</line>
+    <line rend="indent2">Song of Spirits</line>
     <line>To the Deep, to the Deep</line>
-    <line>Down, Down!</line>
+    <line rend="indent2">Down, Down!</line>
     <line>Through the shade of Sleep</line>
     <line>Through the cloudy strife</line>
-    <line>Of Death and of life</line>
-    <line>Through the viel &amp; the bar</line>
-    <line>Of things which seem &amp; are</line>
-    <line><del rend="strikethrough">Desideratum</del></line>
-    <line>the <del rend="strikethrough">threshold of the</del></line>
-    <line>Even to <del rend="strikethrough">Desideratur aliquid</del></line>
-    <line>steps of the remotest Throne</line>
-    <line>Down, Down!</line>
+    <line rend="indent1">Of Death and of life</line>
+    <line rend="indent1">Through the viel &amp; the bar</line>
+    <line rend="indent1">Of things which seem &amp; are</line>
+    <line><mod>
+        <del rend="strikethrough">Desideratum</del>
+      </mod></line>
+    <line rend="indent2">the <mod>
+        <del rend="strikethrough">threshold of the</del>
+      </mod></line>
+    <line>Even to <mod>
+        <del rend="strikethrough">Desideratur aliquid</del>
+      </mod></line>
+    <line rend="indent2">steps of the remotest Throne</line>
+    <line rend="indent2">Down, Down!</line>
     <line>While the sound, whirls around,</line>
-    <line>Down, Down!</line>
+    <line rend="indent1">Down, Down!</line>
     <line>As the fawn draws the hound</line>
     <line>As the lightning the vapour</line>
     <line>As a weak moth the taper</line>
     <line>Death Despair, Love Sorrow</line>
     <line>Time both, To-day to-morrow;</line>
     <line>As steel obeys the Spirit of the stone</line>
-    <line>Down, Down</line>
+    <line rend="indent2">Down, Down</line>
   </zone>
 </surface>
-
