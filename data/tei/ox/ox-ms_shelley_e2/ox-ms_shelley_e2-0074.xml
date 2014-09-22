@@ -11,10 +11,12 @@
     <line>Behind its gathering billows meet</line>
     <line>And to the fatal mountain bear</line>
     <line>Like clouds amid the yielding air</line>
-    <line>264 /</line>
+    <line rend="left"><add><metamark function="count">264</metamark></add> /</line>
     <line>\</line>
-    <line>Scene 3. A pinnacle of rock among</line>
+    <milestone unit="scene" spanTo="#e2-0074.01"/>
+    <line rend="center">Scene 3. A pinnacle of rock among</line>
     <line>Mountains &#8212; Asia &amp; Panthea</line>
+    <anchor xml:id="e2-0074.01"/>
     <line>Panthea</line>
     <line>Hither the sound has borne us&#8212; to the realm</line>
     <line>Of Demogorgon, &amp; the mighty portal</line>
