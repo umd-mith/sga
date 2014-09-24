@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5382" lry="7236" xml:id="ox-ms_shelley_e2-0074" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5382" lry="7236" xml:id="ox-ms_shelley_e2-0074" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0074.jp2"/>
   <zone type="main">
     <line>[f. 36r is blank]</line>
@@ -13,17 +13,18 @@
     <line>Like clouds amid the yielding air</line>
     <line rend="left"><add><metamark function="count">264</metamark></add> /</line>
     <line>\</line>
-    <milestone unit="scene" spanTo="#e2-0074.01"/>
+    <milestone unit="tei:scene" spanTo="#e2-0074.01"/>
     <line rend="center">Scene 3. A pinnacle of rock among</line>
     <line>Mountains &#8212; Asia &amp; Panthea</line>
     <anchor xml:id="e2-0074.01"/>
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0074.02"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0074.02"/>
     <line>Hither the sound has borne us&#8212; to the realm</line>
     <line>Of Demogorgon, &amp; the mighty portal</line>
     <line>Like a Volcano's meteor-breathing chasm</line>
     <line>Whence the oracular vapour is breathed up</line>
-    <line>Which lonely men drink wandering in their</line>
-    <line>youth</line>
+    <line>Which lonely men drink wandering in their youth</line>
     <line>And call truth, virtue, love, genius or joy</line>
     <line>That maddening wine of life, whose dregs they drain</line>
     <line>To deep intoxication, &amp; uplift</line>
@@ -31,4 +32,3 @@
     <line>The voice which is contagion to the world.</line>
   </zone>
 </surface>
-
