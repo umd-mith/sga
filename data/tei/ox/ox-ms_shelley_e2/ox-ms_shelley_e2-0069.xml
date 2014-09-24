@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0069" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0069" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0069.jp2"/>
   <zone type="main">
-    <line>34</line>
+    <line rend="right"><add><metamark function="count">34</metamark></add></line>
     <line>Many years&#8212;we must live some</line>
     <line>Hours or ages yet to come&#8212;</line>
     <line>Tis an evil lot, &amp; yet</line>
@@ -22,8 +22,9 @@
     <line>And mine arm shall be thy pillow</line>
     <line>Sounds &amp; odours, sorrowful</line>
     <line>lull</line>
-    <line>Because they once were sweet, shall</line>
+    <milestone unit="tei:l" spanTo="#e2-0069.01"/>
+    <line>Because they once were sweet, shall <add place="superlinear">lull</add></line>
     <line>Us</line>
+    <anchor xml:id="e2-0069.01"/>
   </zone>
 </surface>
-
