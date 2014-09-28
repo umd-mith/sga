@@ -5,14 +5,14 @@
   uly="0" lrx="5378" lry="7232" xml:id="ox-ms_shelley_e2-0066" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0066.jp2"/>
   <zone type="main">
-    <line>As the song floats, thou pursue</line>
-    <line>By the woodland noontide dew</line>
-    <line>By the forests lakes &amp; fountains</line>
-    <line>Thro the many-folded mountains</line>
-    <line>To the rents &amp; gulphs &amp; chasms</line>
-    <line>Where the Earth reposed from spasms</line>
-    <line>On the day when He &amp; thou</line>
-    <line rend="indent1">Parted &#8212; to conmingle now</line>
+    <line rend="indent1">As the song floats, thou pursue</line>
+    <line rend="indent1">By the woodland noontide dew</line>
+    <line rend="indent1">By the forests lakes &amp; fountains</line>
+    <line rend="indent1">Thro the many-folded mountains</line>
+    <line rend="indent1">To the rents &amp; gulphs &amp; chasms</line>
+    <line rend="indent1">Where the Earth reposed from spasms</line>
+    <line rend="indent1">On the day when He &amp; thou</line>
+    <line rend="indent2">Parted &#8212; to conmingle now</line>
     <line rend="center">Child of Ocean</line>
     <milestone unit="tei:speaker" spanTo="#e2-0066.01"/>
     <line rend="center">Asia</line>
@@ -20,25 +20,25 @@
     <line>Come sweet Panthea&#8212;link thine hand in mine</line>
     <line>And follow, ere the voices fade away</line>
     <milestone unit="tei:scene" spanTo="#e2-0066.02"/>
-    <line>Scene 2.</line>
-    <anchor xml:id="e2-0066.02"/>
-    <line>A forest <mod>
-        <del rend="strikethrough">surrounded by Mountains</del>
-      </mod> intermingled</line>
-    <line>With rocks &amp; caverns. <milestone unit="tei:speaker" spanTo="#e2-0066.03"/>Asia &amp;
-      Panthea</line>
-    <anchor xml:id="e2-0066.03"/>
-    <line>2 young fawns are sitting on a rock listening</line>
+    <line>Scene 2.</line><anchor xml:id="e2-0066.02"/>
+    <milestone unit="stage" spanTo="#e2-0066.03"/>
+    <line>A forest <del rend="strikethrough">surrounded by Mountains</del> intermingled</line>
+    <line>With rocks &amp; caverns. Asia &amp; Panthea</line>
+    <line rend="indent4">2 young fawns are sitting on a rock listening</line>
     <line>pass into it&#8212;</line>
-    <line><mod><add place="superlinear">pass into it &#8212;</add></mod>Semi<mod>
+    <anchor xml:id="e2-0066.03"/>
+    <line>
+      <add place="superlinear">pass into it &#8212;</add>
+      <milestone unit="tei:speaker" spanTo="#e2-0066.04"/> Semi
         <del rend="strikethrough">c</del>
-      </mod><hi rend="sup">1</hi>
+      <hi rend="sup">1</hi>
       <mod>
         <del rend="strikethrough">C</del>
       </mod> horus of Spirits &#8212; 1</line>
-    <line>The path through which that lovely twain</line>
-    <line>Have past <unclear>,&#8212;</unclear> by cedar, pine &amp; yew</line>
-    <line>And each dark tree that ever grew</line>
-    <line>Is curtained out from Heaven's wide blue</line>
+    <anchor xml:id="e2-0066.04"/>
+    <line rend="indent3">The path through which that lovely twain</line>
+    <line rend="indent3">Have past <unclear>,&#8212;</unclear> by cedar, pine &amp; yew</line>
+    <line rend="indent3">And each dark tree that ever grew</line>
+    <line rend="indent3">Is curtained out from Heaven's wide blue</line>
   </zone>
 </surface>

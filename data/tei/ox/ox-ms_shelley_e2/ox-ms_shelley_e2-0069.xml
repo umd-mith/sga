@@ -4,26 +4,25 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0069" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0069.jp2"/>
-  <zone type="main">
-    <line rend="right"><add><metamark function="count">34</metamark></add></line>
+  <zone type="library"><line rend="right">34</line></zone>
+  <zone rotate="180" type="main">
     <line>Many years&#8212;we must live some</line>
     <line>Hours or ages yet to come&#8212;</line>
     <line>Tis an evil lot, &amp; yet</line>
     <line>Let us make the best of it</line>
-    <line>If love lives when pleasure dies</line>
-    <line>We two will love, till in our eyes</line>
-    <line>This hearts hell seem Paradise</line>
+    <line rend="indent1">If love lives when pleasure dies</line>
+    <line rend="indent1">We two will love, till in our eyes</line>
+    <line rend="indent1">This hearts hell seem Paradise</line>
     <line>Come be happy &#8212; lie thee down</line>
     <line>On the fresh grass newly mown</line>
     <line>While the grasshopper doth sing</line>
-    <line>Merrily&#8212;one joyous thing</line>
-    <line>In a world oof sorrowing</line>
+    <line rend="indent1">Merrily&#8212;one joyous thing</line>
+    <line rend="indent1">In a world oof sorrowing</line>
     <line>There our tent shall be the willow</line>
     <line>And mine arm shall be thy pillow</line>
-    <line>Sounds &amp; odours, sorrowful</line>
-    <line>lull</line>
+    <line rend="indent1">Sounds &amp; odours, sorrowful</line>
     <milestone unit="tei:l" spanTo="#e2-0069.01"/>
-    <line>Because they once were sweet, shall <add place="superlinear">lull</add></line>
+    <line rend="indent1">Because they once were sweet, shall <add place="superlinear">lull</add></line>
     <line>Us</line>
     <anchor xml:id="e2-0069.01"/>
   </zone>

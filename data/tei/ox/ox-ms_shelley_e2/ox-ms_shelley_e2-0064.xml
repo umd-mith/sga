@@ -5,18 +5,18 @@
   uly="0" lrx="5380" lry="7234" xml:id="ox-ms_shelley_e2-0064" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0064.jp2"/>
   <zone type="main">
-    <line>Through the noontide darkness deep</line>
-    <line>By the odour breathing sleep</line>
-    <line>Of <mod>
+    <line rend="indent1">Through the noontide darkness deep</line>
+    <line rend="indent1">By the odour breathing sleep</line>
+    <line rend="indent1">Of <mod>
         <del rend="strikethrough">sweet</del>
         <add place="superlinear">faint</add>
       </mod> night <unclear>-</unclear>flowers, &amp; the waves</line>
-    <line>At the fountain-lighted caves</line>
-    <line>While <mod>
+    <line rend="indent1">At the fountain-lighted caves</line>
+    <line rend="indent1">While <mod>
         <del rend="strikethrough">the</del>
         <add place="superlinear">our</add>
       </mod> music wild &amp; sweet</line>
-    <line>Mocks thy gently-falling feet</line>
+    <line rend="indent2">Mocks thy gently-falling feet</line>
     <line rend="center">Child of Ocean!</line>
     <milestone unit="tei:speaker" spanTo="e2-0064.01"/>
     <line rend="center">Asia</line>
@@ -26,14 +26,14 @@
     <milestone unit="tei:speaker" spanTo="#e2-0064.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0064.02"/>
-    <line rend="indent1">list &#8212; the strain floats nearer now</line>
+    <line rend="indent3">list &#8212; the strain floats nearer now</line>
     <milestone unit="tei:speaker" spanTo="#e2-0064.03"/>
     <line rend="center">Echo</line>
     <anchor xml:id="e2-0064.03"/>
-    <line>In the world unknown</line>
-    <line>Sleeps a voice unspoken</line>
-    <line>By thy step alone</line>
-    <line>Can its rest be broken</line>
+    <line rend="indent1">In the world unknown</line>
+    <line rend="indent1">Sleeps a voice unspoken</line>
+    <line rend="indent1">By thy step alone</line>
+    <line rend="indent2">Can its rest be broken</line>
     <line rend="center">Child of Ocean</line>
     <milestone unit="tei:speaker" spanTo="#e2-0064.04"/>
     <line rend="center">Asia</line>
@@ -42,8 +42,8 @@
     <milestone unit="tei:speaker" spanTo="#e2-0064.05"/>
     <line rend="center">Echo</line>
     <anchor xml:id="e2-0064.05"/>
-    <line rend="indent1">O follow follow</line>
-    <line>Thro the caverns hollow</line>
-    <line><add><metamark function="count">190</metamark></add></line>
+    <line rend="indent3">O follow follow</line>
+    <line rend="indent3">Thro the caverns hollow</line>
+    <line rend="left"><add><metamark function="count">190</metamark></add></line>
   </zone>
 </surface>

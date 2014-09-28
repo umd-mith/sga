@@ -9,19 +9,19 @@
     <line>A living Spirit</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.01"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.01"/>
-    <line rend="indent3"><unclear>A</unclear>sk what thou wouldst know</line>
+    <line rend="indent4"><unclear>A</unclear>sk what thou wouldst know</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.02"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.02"/>
     <line>What canst thou tell?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.03"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.03"/>
-    <line rend="indent3">All things thou darest demand</line>
+    <line rend="indent4">All things thou darest demand</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.04"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.04"/>
     <line>Who made the living world?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.05"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.05"/>
-    <line rend="indent3">God.</line>
+    <line rend="indent4">God.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.11"/>
     <line rend="center">Asia<anchor xml:id="e2-0082.11"/>
       <milestone unit="tei:l" spanTo="#e2-0082.12"/>Who made all</line>
@@ -34,7 +34,7 @@
     <anchor xml:id="e2-0082.12"/>
     <milestone unit="tei:speaker" spanTo="#e2-0082.06"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.06"/>
-    <line rend="indent3">God, Almighty God.</line>
+    <line rend="indent4">God, Almighty God.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.07"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.07"/>
     <milestone unit="tei:l" spanTo="#e2-0082.08"/>
@@ -53,6 +53,6 @@
     <milestone unit="tei:speaker" spanTo="#e2-0082.10"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e2-0082.10"/>
-    <line rend="indent3">Merciful God</line>
+    <line rend="indent4">Merciful God</line>
   </zone>
 </surface>
