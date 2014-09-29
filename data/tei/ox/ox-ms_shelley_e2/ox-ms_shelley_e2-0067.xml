@@ -4,19 +4,18 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0067" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0067.jp2"/>
-  <zone type="main">
+  <zone type="library"><line rend="right">33</line></zone>
+  <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line rend="right"><add><metamark function="count">33</metamark></add></line>
-    <line>Ha! <mod>
-        <del rend="strikethrough">fr <unclear>o</unclear></del>
-      </mod> thy frozen pulses flutter</line>
+    <line>Ha! <del rend="strikethrough">fr <unclear>o</unclear></del> thy frozen pulses
+      flutter</line>
     <line>With a love thou darest not utter&#8212;</line>
     <line>Thou art murmuring&#8212;thou art weeping&#8212;</line>
     <line>Was thine icy <mod>
         <del rend="strikethrough">bosom then</del>
         <add place="sublinear">bosom leaping</add>
       </mod></line>
-    <line>While my burning heart was sleeping?</line>
+    <line rend="indent1">While my burning heart was sleeping?</line>
     <delSpan rend="strikethrough" spanTo="#e2-0067.01"/>
     <line>Kiss me &#8212; oh thy lips are cold&#8212;</line>
     <milestone unit="tei:l" spanTo="#e2-0067.02"/>
@@ -27,15 +26,13 @@
         <del rend="strikethrough">weak</del>
         <add place="sublinear">weak</add>
       </mod></line>
-    <line>And thy tears upon my <mod>
-        <del rend="strikethrough">cheek</del>
-      </mod> head</line>
-    <line>Burn, as it were with frost&#8212;o speak</line>
+    <line rend="indent1">And thy tears upon my <del rend="strikethrough">cheek</del> head</line>
+    <line rend="indent1">Burn, as it were with frost&#8212;o speak</line>
     <anchor xml:id="e2-0067.01"/>
     <line>Kiss me <unclear>;</unclear>&#8212;oh thy lips are cold&#8212;</line>
     <line>Round my neck thine arms enfold&#8212;</line>
     <line>They are soft&#8212;but chill &amp; dead</line>
-    <line>And thy tears upon my head</line>
-    <line>Burn like points of frozen lead</line>
+    <line rend="indent1">And thy tears upon my head</line>
+    <line rend="indent1">Burn like points of frozen lead</line>
   </zone>
 </surface>

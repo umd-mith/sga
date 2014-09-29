@@ -4,14 +4,14 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0085" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0085.jp2"/>
+  <zone type="library"><line rend="right">42</line></zone>
   <zone type="main">
-    <line><add><metamark function="count">42</metamark></add></line>
     <line>/Abandoned hope, &amp; love that turns to hate</line>
     <line>\And Self-contempt, bitterer to drink than blood;</line>
-    <line>With the bright form beside thee&#8212;</line>
-    <line>Resist not the weakness&#8212;</line>
-    <line><mod><del rend="strikethrough">For</del><add place="sublinear">Such</add></mod> strength is in meekness&#8212;</line>
-    <line><hi rend="underline">That the Eternal the Immortal</hi></line>
+    <line rend="indent1">With the bright form beside thee&#8212;</line>
+    <line rend="indent2">Resist not the weakness&#8212;</line>
+    <line rend="indent3"><mod><del rend="strikethrough">For</del><add place="sublinear">Such</add></mod> strength is in meekness&#8212;</line>
+    <line rend="indent3"><hi rend="underline">That the Eternal the Immortal</hi></line>
     <line><mod><del rend="strikethrough">With the the key of life's portal</del></mod></line>
     <line>That the Eternal the Immortal</line>
     <line><mod><del rend="strikethrough">Will loose</del></mod> unloose thro life's portal</line>

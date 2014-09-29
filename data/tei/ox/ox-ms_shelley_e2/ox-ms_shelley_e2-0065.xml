@@ -4,9 +4,9 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0065" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0065.jp2"/>
-  <zone type="main">
+  <zone type="library"><line rend="right">32</line></zone>
+  <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>32</line>
     <line>Hasten to the bridal bed</line>
     <line>Underneath the grave tis spread</line>
     <line>In darkness may our love be hid&#8212;</line>
@@ -18,15 +18,15 @@
     <line>Like a vapour, fade away</line>
     <line><hi rend="underline">In  </hi>the sleep which lasts alway</line>
     <line rend="indent1">We may dream in that long sleep</line>
-    <line>That we are not those who weep;</line>
-    <line>Even as pleasure dreams of thee</line>
-    <line>Life-deserting Misery</line>
-    <line>Thou mayest dream of her with me</line>
+    <line rend="indent1">That we are not those who weep;</line>
+    <line rend="indent1">Even as pleasure dreams of thee</line>
+    <line rend="indent1">Life-deserting Misery</line>
+    <line rend="indent1">Thou mayest dream of her with me</line>
     <line>Let us laugh &amp; make our mirth</line>
     <line>At all shadows on the Earth</line>
     <line>As dogs bay the moonlight clouds</line>
-    <line>Which <unclear>,</unclear> like spectres wrapt in shrouds</line>
-    <line>Pass oer night in multitudes</line>
+    <line rend="indent1">Which <unclear>,</unclear> like spectres wrapt in shrouds</line>
+    <line rend="indent1">Pass oer night in multitudes</line>
   </zone>
 </surface>
 

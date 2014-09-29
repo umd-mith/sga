@@ -5,15 +5,15 @@
   uly="0" lrx="5394" lry="7250" xml:id="ox-ms_shelley_e2-0070" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0070.jp2"/>
   <zone type="main">
-    <milestone unit="tei:head" spanTo="#e2-0070.01"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0070.01"/>
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e2-0070.01"/>
     <line>There the voluptuous nightingales</line>
     <line>Are awake through all the broad noonday</line>
     <line>When one with bliss or sadness fails</line>
-    <line><mod>
-        <del rend="strikethrough">An</del>
-      </mod>And through the windless ivy-boughs</line>
+    <line>
+      <del rend="strikethrough">A</del><del rend="unmarked">n</del> And through the windless
+      ivy-boughs</line>
     <line>Sick with sweet love, droops dying away</line>
     <line>On its mates music-panting bosom&#8212;</line>
     <line>Another from the swinging blossom</line>

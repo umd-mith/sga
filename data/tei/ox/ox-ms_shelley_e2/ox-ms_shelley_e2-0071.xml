@@ -4,25 +4,23 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0071" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0071.jp2"/>
-  <zone type="main">
+  <zone type="library"><line rend="right">35</line></zone>
+  <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line rend="right"><add><metamark function="count">35</metamark></add></line>
     <line>Come, be happy, sit near <mod>
         <del rend="strikethrough">b <unclear>y</unclear></del>
       </mod> me</line>
     <line>Shadow vested Misery!</line>
     <line>Coy unwilling silent bride</line>
-    <line>Mourning in thy robe of pride,</line>
-    <line>Desolation deified&#8212;</line>
+    <line rend="indent1">Mourning in thy robe of pride,</line>
+    <line rend="indent1">Desolation deified&#8212;</line>
     <line>Come be happy&#8212; sit near me</line>
     <line>Sad as I may seem to thee</line>
     <line>I am merrier yet than thou&#8212;</line>
-    <line>Lady, whose imperial brow</line>
-    <line>Is endiademed with woe&#8212;</line>
+    <line rend="indent1">Lady, whose imperial brow</line>
+    <line rend="indent1">Is endiademed with woe&#8212;</line>
     <line>Misery! we have known each other</line>
     <line>Like a sister &amp; a brother</line>
-    <line>Living in the same <mod>
-        <del rend="strikethrough">dre</del>
-      </mod> lone home</line>
+    <line>Living in the same <del rend="strikethrough">dre</del> lone home</line>
   </zone>
 </surface>

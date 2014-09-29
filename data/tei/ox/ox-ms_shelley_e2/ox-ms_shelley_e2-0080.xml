@@ -23,7 +23,7 @@
         <add place="sublinear">^</add>
         <add place="superlinear">st those</add>
       </mod> shapes within the mist <unclear>?</unclear></line>
-    <milestone unit="tei:l" spanTo="#e2-0080.03"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0080.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0080.03"/>
     <line>A countenance with beckoning smiles&#8212;<mod>
@@ -54,7 +54,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0080.08"/>
     <line>Panthea</line>
     <anchor xml:id="e2-0080.08"/>
-    <line rend="indent3">I see a mighty Darkness</line>
+    <line rend="indent4">I see a mighty Darkness</line>
     <line>the</line>
     <line>Filling <mod>
         <del rend="strikethrough">that</del>

@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0006" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0006" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0006.jp2"/>
   <zone type="main">
     <line>[f. 2r is blank]</line>
     <line>And we burthen the blasts of the atmosphere</line>
     <line>But vainly we toil till ye come here</line>
-    <line>Enter rushing by groupes of horrible</line>
-    <line>forms; they speak as they <del rend="strikethrough"><hi rend="underline">rush by</hi></del> pass in chorus</line>
-    <line><del rend="strikethrough">2.</del> <del rend="strikethrough">d</del> <del rend="strikethrough">Fury</del></line>
-    <line>1.st</line>
-    <line>Your call was as a winged car</line>
-    <line>Driven on whirlwinds fast &amp; far</line>
-    <line>It rapt us from from red gulphs of war</line>
-    <line>2.d</line>
-    <line>From wide cities famine-wasted&#8212;</line>
-    <line>3</line>
-    <line>Groans half heard, &amp; blood untasted&#8212;</line>
-    <line>4</line>
-    <line>Kingly conclaves stern &amp; cold</line>
-    <line>Where blood with gold was bought &amp; sold</line>
-    <line>5</line>
-    <line>From the furnace white &amp; hot</line>
-    <line>In which&#8212;</line>
-    <line><unclear>a</unclear> Fury</line>
-    <line>Speak not&#8212;whisper not</line>
-    <line>I know all that ye would tell</line>
-    <line>518.</line>
-    <line>But to speak might break the spell</line>
+    <delSpan rend="vertical_line" spanTo="#e2-0006.01"/>
+    <line rend="indent2">Enter rushing by groupes of horrible</line>
+    <line>forms; they speak as they <del rend="strikethrough"><hi rend="underline">rush
+        by</hi></del> pass in chorus</line>
+    <anchor xml:id="e2-0006.01"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.02"/>
+    <line><del rend="strikethrough">2.<hi rend="sup">d</hi> Fury</del></line>
+    <anchor xml:id="e2-0006.02"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.03"/>
+    <line rend="center">1.<hi rend="sup">st</hi></line>
+    <anchor xml:id="e2-0006.03"/>
+    <line rend="indent1">Your call was as a winged car</line>
+    <line rend="indent1">Driven on whirlwinds fast &amp; far</line>
+    <line rend="indent1">It rapt us from from red gulphs of war</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.04"/>
+    <line rend="center">2.<hi rend="sup">d</hi></line>
+    <anchor xml:id="e2-0006.04"/>
+    <line rend="indent1">From wide cities famine-wasted&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.05"/>
+    <line rend="center">3</line>
+    <anchor xml:id="e2-0006.05"/>
+    <line rend="indent1">Groans half heard, &amp; blood untasted&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.06"/>
+    <line rend="center">4</line>
+    <anchor xml:id="e2-0006.06"/>
+    <line rend="indent1">Kingly conclaves stern &amp; cold</line>
+    <line rend="indent1">Where blood with gold was bought &amp; sold</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.07"/>
+    <line rend="center">5</line>
+    <anchor xml:id="e2-0006.07"/>
+    <line rend="indent1">From the furnace white &amp; hot</line>
+    <line rend="indent1">In which&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0006.08"/>
+    <line rend="center"><unclear>a</unclear> Fury</line>
+    <anchor xml:id="e2-0006.08"/>
+    <line rend="indent4">Speak not&#8212;whisper not</line>
+    <line rend="indent1">I know all that ye would tell</line>
+    <line rend="left"><add><metamark function="count">518.</metamark></add></line>
+    <line rend="indent1">But to speak might break the spell</line>
   </zone>
 </surface>
-
