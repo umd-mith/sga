@@ -5,7 +5,7 @@
   ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0016" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0016.jp2"/>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="#e2-0016.01" xml:id="Prometheus"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0016.01"/>
     <line>Prometheus</line>
     <anchor xml:id="e2-0016.01"/>
     <line>Remit the anguish of that lighted stare&#8212;</line>
@@ -34,6 +34,6 @@
     <line>Float by my feet like sea-uprooted isles</line>
     <line>Whose sons are kneaded down in common blood</line>
     <line>By the red light of thier own burning homes&#8212;</line>
-    <line rend="indent5"><metamark function="count">599</metamark></line>
+    <line rend="indent5"><add><metamark function="count">599</metamark></add></line>
   </zone>
 </surface>
