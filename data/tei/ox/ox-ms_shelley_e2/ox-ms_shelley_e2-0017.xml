@@ -14,15 +14,21 @@
     <line rend="indent2"> </line>
     <line rend="indent1"><mod>
         <del rend="strikethrough">Stripes</del>
-        <add place="superlinear"><del rend="strikethrough">Wounds</del></add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">Wounds</add></del>
+        </mod>
       </mod>
       <mod>
         <del rend="strikethrough">for mankind</del>
         <add place="superlinear">Deep wrongs for man,</add>
-      </mod> , &amp; scorn <unclear>:</unclear><add place="sublinear"><metamark function="insert"
-          >^</metamark></add><add place="superlinear"><del rend="strikethrough">wound</del></add>
-      and chains<add place="superlinear"><del rend="strikethrough">&amp; de
-          <unclear>s</unclear></del></add>, but heap</line>
+      </mod> , &amp; scorn <unclear>:</unclear><mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">wound</add></del>
+        </mod>
+      </mod> and chains<mod>
+        <del rend="strikethrough"><add place="superlinear">&amp; de <unclear>s</unclear></add></del>
+      </mod>, but heap</line>
     <line><del rend="strikethrough">Heap</del> Thousand-fold torment on themselves &amp; him.</line>
     <line rend="indent4">a <mod>
         <del rend="strikethrough">shadow</del>

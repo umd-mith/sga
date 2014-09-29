@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0075.jp2"/>
   <zone type="library">
     <line>37</line></zone>
-  <zone type="main">
+  <zone type="main" corresp="#e2-0074.03">
     <metamark function="displacement">&#60;</metamark>
     <milestone unit="tei:stage" spanTo="#e2-0075.01"/>
     <line><del rend="unmarked">ente</del><del rend="strikethrough">r two young</del>
@@ -47,16 +47,19 @@
     <line>They ride on <del rend="strikethrough">it</del>
       <del rend="strikethrough">&amp;</del> [<del rend="strikethrough">their</del> ] &amp; in
       fire</line>
-    <line>They rein <del rend="strikethrough">its</del> their headlong speed, &amp; glide <del
-        rend="strikethrough">with it</del></line>
-    <line>And bow thier burning crests</line>
-    <line><del rend="strikethrough">If</del>
-      <del rend="strikethrough">Into</del> the waters of the Earth again</line>
-    <line>Under</line>
+    <line rend="indent1">They rein <del rend="strikethrough">its</del> their headlong speed, &amp;
+      glide <del rend="strikethrough">with it</del></line>
+    <line rend="indent2">And bow thier burning crests</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">If</del>
+        <del rend="strikethrough">Into</del>
+        <add place="sublinear">Under</add>
+      </mod> the waters of the Earth again</line>
     <milestone unit="tei:speaker" spanTo="#e2-0075.04"/>
     <line rend="center">1<hi rend="sup">st</hi></line>
     <anchor xml:id="e2-0075.04"/>
     <line>If <del rend="strikethrough">these</del> such live thus, have others other lives</line>
     <line>Under pink blossoms or within the bells</line>
+    <anchor xml:id="e2-0075.05"/>
   </zone>
 </surface>
