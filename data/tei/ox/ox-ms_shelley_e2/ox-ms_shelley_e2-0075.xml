@@ -41,8 +41,10 @@
         <add place="superlinear">tide</add>
       </mod> kindles through the woven leaves</line>
     <line>And when these burst, &amp; the thin fiery air</line>
-    <line>shining <unclear>h</unclear>omes lucent domes</line>
-    <line>The which they breathed within those lucid homes <unclear>,</unclear></line>
+    <!--Encode the alternate readings-->
+    <line><milestone unit="tei:seg" spanTo="#e2-0075.06"/><add place="superlinear">shining <unclear>h</unclear>omes</add>The which they breathed
+      within those lucid homes <milestone unit="tei:seg" spanTo="#e2-0075.07"/><add place="superlinear">lucent domes</add>
+      <unclear>,</unclear></line>
     <line>Ascends to flow like meteors through the night <unclear>&#8212;</unclear></line>
     <line>They ride on <del rend="strikethrough">it</del>
       <del rend="strikethrough">&amp;</del> [<del rend="strikethrough">their</del> ] &amp; in
