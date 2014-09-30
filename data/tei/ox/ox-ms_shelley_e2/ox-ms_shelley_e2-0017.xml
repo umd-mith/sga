@@ -4,14 +4,13 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0017" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0017.jp2"/>
-  <zone type="library"><line>8</line></zone>
+  <zone type="library"><line rend="right">8</line></zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0017.01"/>
     <line rend="center">Fury</line>
     <anchor xml:id="e2-0017.01"/>
     <line>Behold, <del rend="strikethrough">behold how those who do endure</del></line>
-    <line rend="indent3">an emblem&#8212;those who do endure</line>
-    <line rend="indent2"> </line>
+    <line rend="indent2">an emblem&#8212;those who do endure</line>
     <line rend="indent1"><mod>
         <del rend="strikethrough">Stripes</del>
         <mod>

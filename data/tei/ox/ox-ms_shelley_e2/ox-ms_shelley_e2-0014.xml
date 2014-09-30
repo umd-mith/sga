@@ -13,8 +13,10 @@
         </mod>
       </mod></line>
     <line>And beasts hear the <mod>
-        <del rend="strikethrough"><hi rend="underline">Sea</hi><add place="superlinear"><del
-              rend="strikethrough">waves</del></add></del>
+        <del rend="strikethrough"><hi rend="underline">Sea</hi></del>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">waves</add></del>
+        </mod>
       </mod> moan in inland cave<unclear reason="illegible">s</unclear></line>
     <line>Darest thou observe how the fiends torture him <unclear>,&#8212;</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e2-0014.01"/>
@@ -53,7 +55,10 @@
     <line>Were wandering by &#8212; let us not tempt worse</line>
     <line rend="right">fear</line>
     <anchor xml:id="e2-0014.06"/>
-    <line>By looking forth &#8212; those groans are grief<add place="sublinear">enough.</add></line>
-    <line rend="center"><metamark function="count">577</metamark></line>
+    <milestone unit="tei:l" spanTo="#e2-0014.07"/>
+    <line>By looking forth &#8212; those groans are grief</line>
+    <line rend="right">enough.</line>
+    <anchor xml:id="e2-0014.07"/>
+    <line rend="center"><add><metamark function="count">577</metamark></add></line>
   </zone>
 </surface>

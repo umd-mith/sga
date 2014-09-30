@@ -30,7 +30,7 @@
     <line><mod>
         <del rend="strikethrough">'Till</del>
         <del rend="strikethrough"><unclear>,</unclear></del>
-        <add place="intralinear">Who</add>
+        <add place="superlinear">Who</add>
       </mod> soothed to false repose by the fanning plumes above</line>
     <line>And the music-stirring motion of its soft &amp; busy feet,</line>
     <line>Dream visions of aerial joy, &amp; call the monster, Love</line>
@@ -48,11 +48,12 @@
         <add place="sublinear">Chorus</add>
       </mod></line>
     <anchor xml:id="e2-0036.05"/>
+    <line rend="indent4"><unclear reason="illegible">X</unclear></line>
     <line rend="indent1">Though Ruin now Loves shadow be</line>
     <line rend="indent1">Following him, destroyingly</line>
     <line rend="indent2">On Death's white &amp; winged steed</line>
     <line rend="indent2">Which the fleetest cannot flee&#8212;</line>
     <line rend="indent2">Trampling down both flower &amp; weed</line>
-    <line><add><metamark function="count">769</metamark></add></line>
+    <line rend="left"><add><metamark function="count">769</metamark></add></line>
   </zone>
 </surface>

@@ -11,7 +11,7 @@
     <line rend="indent1">Nurslings of immortality!&#8212;</line>
     <line rend="indent1">One of them awakened me</line>
     <line rend="indent1">And I sped to succour thee</line>
-    <line><add><metamark function="count">737</metamark></add></line>
+    <line rend="left"><add><metamark function="count">737</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e2-0034.01"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e2-0034.01"/>
@@ -37,7 +37,7 @@
     <line>Orange &amp; azure, deepening into gold</line>
     <line>Thier soft smiles light the air like a star's fire</line>
     <milestone unit="tei:speaker" spanTo="#e2-0034.04"/>
-    <line><mod>
+    <line rend="center"><mod>
         <del rend="strikethrough">5<hi rend="sup">th</hi> Spirit</del>
         <add place="intralinear">Chorus of Spirits</add>
       </mod></line>

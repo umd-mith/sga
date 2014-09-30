@@ -35,8 +35,8 @@
     <line rend="right">win</line><anchor xml:id="e2-0012.03"/>
     <line><metamark function="count">561</metamark>
       <space unit="chars" extent="14"/>
-      <milestone unit="tei:speaker" spanTo="#e2-0012.04"/><del rend="strikethrough"
-        >Panthea</del><add place="superlinear">Ione</add><anchor xml:id="e2-0012.04"/></line>
+      <milestone unit="tei:speaker" spanTo="#e2-0012.04"/><mod><del rend="strikethrough"
+        >Panthea</del><add place="superlinear">Ione</add></mod><anchor xml:id="e2-0012.04"/></line>
     <line>Hark sister, what a low yet dreadful groan</line>
   </zone>
 </surface>
