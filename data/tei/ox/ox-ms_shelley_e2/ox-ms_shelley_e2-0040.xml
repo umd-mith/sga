@@ -14,11 +14,11 @@
     <line>Of music wh<damage type="inkblot">en</damage> the inspired voice &amp; lute</line>
     <line>Languish, <mod>
         <del rend="strikethrough">though yet</del>
-        <add place="superlinear">ere</add>
+        <add place="superlinear"><handShift medium="pencil">ere</handShift></add>
       </mod> the <mod>
         <del rend="strikethrough">echoes are not</del>
-        <add place="superlinear">reponses are</add>
-      </mod> mute</line>  <!--"ere" and "ses are" in pencil; encode handshift-->
+        <add place="superlinear">repon<handShift medium="pencil">ses are</handShift></add>
+      </mod> mute</line>  <!--"ere" and "ses are" in pencil; encode handshift, and adjust schema-->
     <line>Which thro the deep &amp; labyrinthine soul</line>
     <line>Like echoes through long caverns wind &amp; roll</line>
     <milestone unit="tei:speaker" spanTo="#e2-0040.02"/>
