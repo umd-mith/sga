@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0085" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0085" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0085.jp2"/>
   <zone type="library"><line rend="right">42</line></zone>
   <zone type="main">
     <line>/Abandoned hope, &amp; love that turns to hate</line>
     <line>\And Self-contempt, bitterer to drink than blood;</line>
     <line rend="indent1">With the bright form beside thee&#8212;</line>
-    <line rend="indent2">Resist not the weakness&#8212;</line>
-    <line rend="indent3"><mod><del rend="strikethrough">For</del><add place="sublinear">Such</add></mod> strength is in meekness&#8212;</line>
-    <line rend="indent3"><hi rend="underline">That the Eternal the Immortal</hi></line>
-    <line><mod><del rend="strikethrough">With the the key of life's portal</del></mod></line>
-    <line>That the Eternal the Immortal</line>
-    <line><mod><del rend="strikethrough">Will loose</del></mod> unloose thro life's portal</line>
-    <line><mod><del rend="strikethrough">With</del></mod>  Must <mod><del rend="strikethrough">unchain, at</del></mod></line>
+    <line rend="indent1">Resist not the weakness&#8212;</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">For</del>
+        <add place="sublinear">Such</add>
+      </mod> strength is in meekness&#8212;</line>
+    <line rend="indent1"><hi rend="underline">That the Eternal the Immortal</hi></line>
+    <line><mod>
+        <del rend="strikethrough">With the the key of life's portal</del>
+      </mod></line>
+    <line rend="indent1">That the Eternal the Immortal</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough"><add place="superlinear">Will loose</add></del>
+        <del rend="strikethrough">With </del>
+      </mod>Must <mod>
+        <del rend="strikethrough">unchain, at</del>
+        <add place="superlinear">unloose thro life's portal</add>
+      </mod></line>
     <milestone unit="tei:l" spanTo="#e2-0085.01"/>
-    <line>The<del rend="strikethrough">D <unclear>A</unclear></del> snake-like Doom coiled <mod><del rend="strikethrough">up</del></mod> underneath his</line>
+    <line>The<del rend="strikethrough">D <unclear>A</unclear></del> snake-like Doom coiled 
+        <del rend="strikethrough">up</del>
+       underneath his</line>
     <line rend="right">throne</line>
     <anchor xml:id="e2-0085.01"/>
     <line rend="indent2">By that alone!</line>
@@ -29,4 +41,3 @@
     <line>125</line>
   </zone>
 </surface>
-

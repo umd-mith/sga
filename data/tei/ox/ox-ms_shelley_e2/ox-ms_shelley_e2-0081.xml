@@ -16,16 +16,17 @@
     <line rend="indent1">Of Death and of life</line>
     <line rend="indent1">Through the viel &amp; the bar</line>
     <line rend="indent1">Of things which seem &amp; are</line>
+    <milestone unit="tei:l" spanTo="#e2-0081.02"/>
     <line>Even to <mod>
         <del rend="strikethrough"><add place="superlinear">Desideratum</add></del>
       </mod>
       <mod>
         <del rend="strikethrough">Desideratur aliquid</del>
         <add place="superlinear">the</add>
-      </mod><mod>
-        <del rend="strikethrough"><add place="superlinear">threshold of the</add></del>
-      </mod><add place="sublinear">steps of the remotest Throne</add>
-    </line>
+        <del rend="strikethrough"><add place="superlinear"> threshold of the</add></del>
+      </mod></line>
+    <line rend="indent3">steps of the remotest Throne</line>
+    <anchor xml:id="e2-0081.02"/>
     <line rend="indent2">Down, Down!</line>
     <line rend="indent1">While the sound, whirls around,</line>
     <line rend="indent2">Down, Down!</line>
