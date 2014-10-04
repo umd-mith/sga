@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0040" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0040" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0040.jp2"/>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="#e3-0040.01"/>  
+    <milestone unit="tei:speaker" spanTo="#e3-0040.01"/>
     <line rend="center">Ocean</line>
     <anchor xml:id="e3-0040.01"/>
     <line>Henceforth the fields of Heaven-reflecting sea</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0040.02"/>Which are my realm, will heave, unstain'd with </line>
-    <line rend="right">blood<anchor xml:id="e3-0040.02"/></line>
+    <milestone unit="tei:l" spanTo="#e3-0040.02"/>
+    <line>Which are my realm, will heave, unstain'd with </line>
+    <line rend="right">blood <anchor xml:id="e3-0040.02"/></line>
     <line>Beneath the uplifting winds&#8212;like plains of corn</line>
     <line>Swayed by the summer air; my streams will flow</line>
     <line>Round many-peopled continents &amp; round</line>
     <line>Fortunate isles; &amp; from their glassy thrones</line>
     <line>Blue Proteus &amp; his humid Nymphs shall mark</line>
     <line>The shadow of fair ships, as mortals see</line>
-    <line>The floating bark of the <mod><del rend="strikethrough">un</del><add place="superlinear">light</add></mod>laden moon <metamark function="count">110</metamark></line>
-    <line>With that white star, <mod><del rend="strikethrough">which is</del><add place="sublinear">its <del rend="strikethrough">unseen</del></add><add place="superlinear">sightless</add></mod>pilots cast</line>  
+    <line>The floating bark of the <mod>
+        <del rend="strikethrough">un</del>
+        <add place="superlinear">light</add>
+      </mod>laden moon <add><metamark function="count">110</metamark></add></line>
+    <line>With that white star, <mod>
+        <del rend="strikethrough">which is</del>
+        <add place="sublinear">its</add>
+        <del rend="strikethrough"><add place="sublinear">unseen</add></del>
+        <add place="superlinear">sightless</add>
+      </mod>pilots cast</line>
     <line>Borne down the rapid sunsets ebbing sea <unclear>;</unclear></line>
     <line>Tracking their path no more by blood &amp; groans</line>
     <line>And desolation, and the mingled voice</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0040.03"/>Of slavery &amp; command&#8212;but by the light<metamark function="count">115</metamark></line>
-    <line rend="indent5">floating<anchor xml:id="e3-0040.03"/></line>
-    <line>Of wave-reflected flowers, and <add place="sublinear">free</add> odours <del rend="strikethrough">sweet</del> ,</line>
-    <line>And music soft, &amp; mild <del rend="strikethrough">frank</del> gentle voices</line>
+    <line>Of slavery &amp; command&#8212;but by the light<add><metamark function="count"
+          >115</metamark></add></line>
+    <line>Of wave-reflected flowers, and <add place="superlinear">floating</add> odours <del
+        rend="strikethrough">sweet</del> ,</line>
+    <line>And music soft, &amp; mild <mod>
+        <del rend="strikethrough">frank</del>
+        <add place="superlinear">free</add>
+      </mod> gentle voices</line>
     <line>That sweetest music,&#8212;such as spirits love.</line>
   </zone>
 </surface>
-

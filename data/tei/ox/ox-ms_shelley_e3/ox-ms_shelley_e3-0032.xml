@@ -1,31 +1,54 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0032" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0032" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0032.jp2"/>
   <zone type="main">
-    <line>Ascend beside me, veiled in the light <metamark function="count">35</metamark></line>
+    <line>Ascend beside me, veiled in the light <add><metamark function="count"
+      >35</metamark></add></line>
     <line>Of the desire which makes thee one with me</line>
-    <line>Thetis, bright <mod><del rend="strikethrough">Shadow</del><add place="superlinear">Image</add></mod> of Eternity&#8212;</line>
+    <line>Thetis, bright <mod>
+        <del rend="strikethrough">Shadow</del>
+        <add place="superlinear">Image</add>
+      </mod> of Eternity&#8212;</line>
     <line>When thou didst cry &#8212; "Insufferable might</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0032.01"/>God! spare me! I sustain not the quick</line> 
+    <line><milestone unit="tei:l" spanTo="#e3-0032.01"/>God! spare me! I sustain not the
+      quick</line>
     <line rend="right">flames <unclear>,</unclear></line><anchor xml:id="e3-0032.01"/>
-    <line>The penetrating presence, all my <mod><del rend="strikethrough">frame</del><add place="superlinear">being</add></mod></line>
+    <line>The penetrating presence, all my <mod>
+        <del rend="strikethrough">frame</del>
+        <add place="superlinear">being</add>
+      </mod></line>
     <line>Like him whom the Numidian seps did thaw</line>
     <line>Into a dew with poison, is dissolved&#8212;</line>
     <line>Sinking thro its foundations&#8212;<add place="superlinear">"</add> Even then</line>
     <line>Two mighty spirits mingling made a third</line>
     <line>Mightier than either &#8212; <del rend="strikethrough">th</del> which unbodied now</line>
-    <line><mod><del rend="strikethrough">Even</del><add place="superlinear">Which</add></mod>
+    <line><mod>
+        <del rend="strikethrough">Even</del>
+        <del rend="strikethrough"><add place="superlinear">Which</add></del>
+      </mod>
       <del rend="strikethrough">now unbodied &amp; invisible</del></line>
-    <line>Between us, floats, <mod><del rend="strikethrough">our mighty Progeny</del><add place="superlinear">felt <del rend="strikethrough">al</del> though unbeheld</add></mod></line>
+    <line>Between us, floats, <mod>
+        <del rend="strikethrough">our mighty Progeny</del>
+        <add place="superlinear">felt</add>
+        <del rend="strikethrough"><add place="superlinear">al</add></del>
+        <add place="superlinear">though unbeheld</add>
+      </mod></line>
     <line>Waiting the incarnation, which ascends&#8212;</line>
-    <line>Hear ye the thunder of the fiery <mod><del rend="strikethrough">winds</del><add place="superlinear">wheels</add></mod></line>
+    <line>Hear ye the thunder of the fiery <mod>
+        <del rend="strikethrough">winds</del>
+        <add place="superlinear">wheels</add>
+      </mod></line>
     <line>Griding the winds? from Demogorgon's throne&#8212;</line>
-    <line>Victory,! Victory!; feel'st thou not o World <metamark function="count">50</metamark></line>
-    <line><milestone unit="tei:l" spanTo="#e3-0032.01"/>The Earthquake of his chariot thundering</line>
-    <line rend="right">up</line><anchor xml:id="e3-0032.02"/>
+    <line>Victory,! Victory!; feel'st thou not o World <metamark function="count"
+      >50</metamark></line>
+    <milestone unit="tei:l" spanTo="#e3-0032.01"/>
+    <line>The Earthquake of his chariot
+      thundering</line>
+    <line rend="right">up</line>
+    <anchor xml:id="e3-0032.02"/>
     <line>Olympus?</line>
     <milestone unit="tei:stage" spanTo="#e3-0032.03"/>
     <line rend="indent1">The Car of the Hour arrives, Demogorgon</line>
@@ -33,4 +56,3 @@
     <anchor xml:id="e3-0032.03"/>
   </zone>
 </surface>
-
