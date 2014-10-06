@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0048" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0048" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0048.jp2"/>
   <zone type="main">
-    <line>For hidden thoughts each lovelier than the last <metamark function="count">170</metamark></line>
-    <line>Our unexhausted spirits, <mod><del rend="strikethrough">till,</del><add place="superlinear">and</add></mod> like lutes</line>
+    <line>For hidden thoughts each lovelier than the last<add><metamark function="count"
+          >170</metamark></add></line>
+    <line>Our unexhausted spirits, <mod>
+        <del rend="strikethrough">till,</del>
+        <add place="superlinear">and</add>
+      </mod> like lutes</line>
     <line>Touched by the skill of the enamoured wind</line>
     <line>Weave harmonies divine, yet ever new,</line>
     <line>From difference sweet where discord cannot be. .</line>
-    <line><mod><del rend="strikethrough">For</del><add place="superlinear">And</add></mod> thither come, sped on the charmed winds</line>
+    <line><mod>
+        <del rend="strikethrough">For</del>
+        <add place="superlinear">And</add>
+      </mod> thither come, sped on the charmed winds</line>
     <line>Which meet from all the points of Heaven, as bees</line>
     <line>From every flower aerial Enna feeds</line>
     <line>At their known island-homes in Himera,</line>
     <line>The echoes of the human world, which tell</line>
-    <line>Of the low voice of love, almost unheard <metamark function="count">180</metamark></line>
+    <line>Of the low voice of love, almost unheard <add><metamark function="count">180</metamark></add></line>
     <line>And dove-eyed pity's murmured pain, &amp; music</line>
     <line>Iitself the echo of the heart, &amp; all</line>
     <line>That tempers or improves man's life, now free</line>
@@ -25,9 +32,8 @@
     <line>Of which these are the phantoms, casts on them</line>
     <line>The gathered rays which are reality <unclear>,</unclear></line>
     <line>Shall visit us, the progeny immortal</line>
-    <line>Of painting Sculpture &amp; rapt Poesy <metamark function="count">190</metamark></line>
-    <line>And arts, though unimagined, yet to be</line>
-    <line rend="right"><metamark function="count">184</metamark></line>
+    <line rend="indent1">Of painting Sculpture &amp; rapt Poesy <add><metamark function="count">190</metamark></add></line>
+    <line rend="indent1">And arts, though unimagined, yet to be</line>
+    <line rend="right"><add><metamark function="count">184</metamark></add></line>
   </zone>
 </surface>
-

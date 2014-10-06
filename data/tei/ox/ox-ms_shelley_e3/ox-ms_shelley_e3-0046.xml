@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0046" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0046" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0046.jp2"/>
   <zone type="main">
     <line>And paved with veined emerald, &amp; a fountain</line>
     <line>Leaps in the midst with an awakening sound;</line>
-    <line>From its curved roof the mountain's frozen tears <metamark function="count">150</metamark></line>
+    <line>From its curved roof the mountain's frozen tears <add><metamark function="count"
+          >150</metamark></add></line>
     <line>Like snow or silver or long diamond spires</line>
-    <line>Hang downward, raining <mod><del rend="strikethrough">down</del><add place="superlinear">forth</add></mod> a doubtful light;</line>
+    <line>Hang downward, raining <mod>
+        <del rend="strikethrough">down</del>
+        <add place="superlinear">forth</add>
+      </mod> a doubtful light;</line>
     <line>And there is heard the ever-moving air</line>
     <line>Whispering without from tree to tree, &amp; birds,</line>
     <line>And bees; and all around are mossy seats</line>
@@ -20,8 +24,10 @@
     <line>A simple dwelling, which shall be our own</line>
     <line>Where we will sit &amp; talk of time &amp; change</line>
     <line>As the world ebbs &amp; flows, ourselves unchanged&#8212;</line>
-    <line><del rend="strikethrough">For</del> What can hide man from Mutability?&#8212; <metamark function="count">160</metamark></line>
-    <line>And <add place="superlinear">if</add><add place="sublinear">^</add> ye sigh, then I will smile, &amp; thou</line>
+    <line><del rend="strikethrough">For</del> What can hide man from Mutability?&#8212;
+          <add><metamark function="count">160</metamark></add></line>
+    <line>And <add place="sublinear"><metamark function="insert">^</metamark></add><add
+        place="superlinear">if</add> ye sigh, then I will smile, &amp; thou</line>
     <line>Ione, shall chant fragments of sea-music <unclear>,</unclear></line>
     <line>Until I weep, when ye shall smile away</line>
     <milestone unit="tei:l" spanTo="#e3-0046.02"/>
@@ -32,7 +38,6 @@
     <line>Strange combinations out of common things</line>
     <line>Like human babes in their brief innocence</line>
     <line>And we will search, with looks &amp; words of love</line>
-    <line><metamark function="count">161</metamark></line>
+    <line rend="left"><add><metamark function="count">161</metamark></add></line>
   </zone>
 </surface>
-
