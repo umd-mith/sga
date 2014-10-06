@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7054" xml:id="ox-ms_shelley_e3-0036" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7054" xml:id="ox-ms_shelley_e3-0036" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0036.jp2"/>
   <zone type="main">
     <line>On Caucasus&#8212;he would not doom me thus&#8212;</line>
-    <line>No <mod><del rend="strikethrough">respite</del><add place="superlinear">refuge</add></mod>, no appeal&#8212; . . .</line>
-    <line rend="indent4"><del rend="strikethrough">Defiance</del></line>
-    <line rend="indent3"><del rend="strikethrough">then shall we sink</del></line>
-    <line rend="indent3">Let <del rend="strikethrough">loose <unclear>o</unclear></del> Hell unlock <metamark function="count">75</metamark></line>
-    <line><hi rend="underline">Thy</hi><add place="superlinear">Its</add> mounded Oceans of tempestuous fire</line>
-    <line><del rend="strikethrough">Swallow</del> And <mod><del rend="strikethrough">let</del><add place="superlinear">whelm on</add></mod>them into the bottomless void</line>
+    <line>No <mod>
+        <del rend="strikethrough">respite</del>
+        <add place="superlinear">refuge</add>
+      </mod>, no appeal&#8212; . . .</line>
+    <line rend="indent5"><del rend="strikethrough">Defiance</del></line>
+    <line rend="indent4"><del rend="strikethrough">then shall we sink</del></line>
+    <line rend="indent4">Let <del rend="strikethrough">loose <unclear>o</unclear></del> Hell unlock
+        <add><metamark function="count">75</metamark></add></line>
+    <line><hi rend="underline">Thy</hi><add place="superlinear">Its</add> mounded Oceans of
+      tempestuous fire</line>
+    <line><del rend="strikethrough">Swallow</del> And <mod>
+        <del rend="strikethrough">let</del>
+        <add place="superlinear">whelm on</add>
+      </mod>them into the bottomless void</line>
     <line>The desolated world &amp; thou &amp; me</line>
     <line>The conqueror &amp; the conquered, &amp; the wreck</line>
-    <line>Of that for which they combated . . .Ai, ai,<metamark function="count">80</metamark></line>
+    <line>Of that for which they combated . . .Ai, ai,<add><metamark function="count"
+      >80</metamark></add></line>
     <line>The elements obey me not . . . I sink . . .</line>
-    <line><mod><del rend="strikethrough">Down down down down dizzily, far <add place="sublinear">&amp; deep</add></del> 
-      <add place="superlinear">Dizzily down &#8212; ever, forever, down<metamark function="count">82</metamark></add></mod></line>
+    <line><mod>
+        <del rend="strikethrough">Down down down down dizzily, far <del rend="strikethrough"><add place="sublinear">&amp;
+            deep</add></del></del>
+        <add place="superlinear">Dizzily down &#8212; ever, forever, down<add><metamark function="count"
+            >82</metamark></add></add>
+      </mod></line>
     <line><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
-    <milestone unit="tei:stage" spanTo="#e3-0036.01"/>
+    <milestone unit="tei:scene" spanTo="#e3-0036.01"/>
     <line rend="indent2">Scene The mouth of a great</line>
     <line>River in the island of Atlantis &#8212; Ocean</line>
     <line>is discovered reclining near the shore&#8212;</line>
@@ -28,12 +41,14 @@
     <milestone unit="tei:speaker" spanTo="#e3-0036.02"/>
     <line rend="center">Ocean</line>
     <anchor xml:id="e3-0036.02"/>
-    <line><milestone unit="tei:l" spanTo="#e3-0036.03"/>He fell thou sayest beneath his Conque</line>
-    <line rend="right">rors frown?</line><anchor xml:id="e3-0036.03"/>
+    <milestone unit="tei:l" spanTo="#e3-0036.03"/>
+    <line>He fell thou sayest beneath his
+      Conque</line>
+    <line rend="right">rors frown?</line>
+    <anchor xml:id="e3-0036.03"/>
     <milestone unit="tei:speaker" spanTo="#e3-0036.04"/>
     <line rend="center">Apollo</line>
     <anchor xml:id="e3-0036.04"/>
     <line>Aye, when the strife was ended which</line>
   </zone>
 </surface>
-

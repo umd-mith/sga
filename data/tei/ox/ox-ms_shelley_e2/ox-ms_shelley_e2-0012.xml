@@ -33,10 +33,10 @@
     <milestone unit="tei:l" spanTo="#e2-0012.03"/>
     <line>The struggling World&#8212;which slaves &amp; tyrants</line>
     <line rend="right">win</line><anchor xml:id="e2-0012.03"/>
-    <line><metamark function="count">561</metamark>
-      <space unit="chars" extent="14"/>
-      <milestone unit="tei:speaker" spanTo="#e2-0012.04"/><mod><del rend="strikethrough"
-        >Panthea</del><add place="superlinear">Ione</add></mod><anchor xml:id="e2-0012.04"/></line>
+    <line><metamark function="count">561</metamark></line>
+    <line><milestone unit="tei:speaker" spanTo="#e2-0012.04"/><mod><del rend="strikethrough"
+        >Panthea</del><add place="superlinear">Ione</add></mod><anchor xml:id="e2-0012.04"/>
+      </line>
     <line>Hark sister, what a low yet dreadful groan</line>
   </zone>
 </surface>

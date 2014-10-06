@@ -21,12 +21,10 @@
         <del rend="strikethrough">imagine</del>
         <add place="superlinear">divine</add>
       </mod></line>
-    <line>But should we <unclear>try</unclear> to speak, <mod>
-        <del rend="strikethrough">the</del>
-      </mod> noontide w<hi rend="sup">d</hi>. come <unclear>,</unclear></line>
+    <line>But should we <unclear>try</unclear> to speak, <del rend="strikethrough">the</del>
+      noontide w<hi rend="sup">d</hi>. come <unclear>,</unclear></line>
     <line>And thwart Silenus find his goats undrawn</line>
     <line>And grudge to sing those wise &amp; lovely songs</line>
-    <line>Our solitary solitary</line>
     <line><mod>
         <del rend="strikethrough">Which cheer</del>
         <del rend="strikethrough">our</del>
@@ -39,9 +37,9 @@
     <line>To silence the unenvying nightingales ..</line>
     <line>Of fate &amp; chance &amp; God, &amp; Chaos old <unclear reason="illegible"
       >;</unclear></line>
-    <line>And love, &amp; the chained Titans woful doom</line>
+    <line rend="indent1">And love, &amp; the chained Titans woful doom</line>
     <line>And how he shall be loosed, &amp; make the Earth</line>
-    <line>One brotherhood&#8212;delighful strains which cheer</line>
+    <line rend="indent1">One brotherhood&#8212;delighful strains which cheer</line>
     <milestone unit="tei:seg" spanTo="#e2-0077.02" corresp="#e2-0076.03"/>
     <line>mountains</line>
     <anchor xml:id="e2-0077.02"/>

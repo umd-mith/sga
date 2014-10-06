@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0038" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0038" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0038.jp2"/>
   <zone type="main">
     <line>The orb I rule, &amp; shook the solid stars.</line>
     <line>The terrors of his eye illumined Heaven</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.01"/>With <mod><del rend="strikethrough">crimson</del><add place="sublinear">sanguine></add></mod>light, thro the thick ragged</line>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.01"/>With <mod>
+        <del rend="strikethrough">crimson</del>
+        <add place="sublinear">sanguine></add>
+      </mod>light, thro the thick ragged</line>
     <line rend="right">skirts</line><anchor xml:id="e3-0038.01"/>
-    <line>Of the victorious Darkness, as he fell; <metamark function="count">90</metamark></line>
+    <line>Of the victorious Darkness, as he fell; <add><metamark function="count">90</metamark></add></line>
     <line>Like the last glare of day's red agony</line>
     <line>Which from a rent among the fiery clouds</line>
     <line>Burns far along the tempest-wrinkled Deep</line>
@@ -24,12 +27,13 @@
     <line>On Caucasus <unclear>,</unclear> his thunder-baffled wings</line>
     <line><unclear>E</unclear>ntangled in the whirlwind, &amp; his eyes</line>
     <line>Which gazed on the undazzling sun, now blinded</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.04"/>By the white lightning, while the ponderous</line>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.04"/>By the white lightning, while the
+      ponderous</line>
     <line rend="right">hail</line><anchor xml:id="e3-0038.04"/>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.05"/>Beats on his struggling form which sinks</line>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.05"/>Beats on his struggling form which
+      sinks</line>
     <line rend="right">at length</line><anchor xml:id="e3-0038.05"/>
     <line>Prone, &amp; the aerial ice clings over it&#8212;</line>
     <line rend="right">101 94</line>
   </zone>
 </surface>
-

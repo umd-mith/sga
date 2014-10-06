@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0013" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0013" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0013.jp2"/>
-  
-  <zone type="library">4</zone>
-  
+  <zone type="library"><line rend="right">4</line></zone>
   <zone type="main">
-   <line>As my own soul would answer, did it know</line>
-    <line> That which I ask&#8212;</line>
-    <line><mod><del rend="strikethrough">Nor dark nor dim</del> <add place="intralinear"></add></mod></line>
+    <line>As my own soul would answer, did it know</line>
+    <line><mod>
+        <del rend="strikethrough">Nor</del>
+        <del rend="overwritten">dark nor dim</del>
+        <add place="intralinear">That which I ask&#8212;</add>
+      </mod></line>
   </zone>
 </surface>
-

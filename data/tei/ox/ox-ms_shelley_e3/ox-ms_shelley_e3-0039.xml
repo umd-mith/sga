@@ -4,20 +4,21 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0039" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0039.jp2"/>
-  <zone type="library">17</zone>
+  <zone type="library"><line rend="right">17</line></zone>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="e3-0039.01"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0039.01"/>
     <line>Chorus of Spirits</line>
+    <anchor xml:id="e3-0039.01"/>
     <line rend="indent2">--<metamark function="count">40</metamark></line>
-    <line><metamark function="displacement">2</metamark>Paradise of golden lights</line>
-    <line><metamark function="displacement">1</metamark>Palace-roof of cloudless nights</line>
+    <line><add><metamark function="displacement">2</metamark></add>Paradise of golden lights</line>
+    <line><add><metamark function="displacement">1</metamark></add>Palace-roof of cloudless nights</line>
     <line>Deep, Immeasurable, Vast <unclear>,</unclear></line>
     <line>Which art now, &amp; which wert then;</line>
-    <line>Of the present &amp; the past</line>
-    <line>Of the eternal Where &amp; When</line>
-    <line>Presence chamber, Temple, Home,</line>
-    <line>Ever canopying Dome</line>
-    <line>Of acts &amp; ages yet to come!</line>
+    <line rend="indent1">Of the present &amp; the past</line>
+    <line rend="indent1">Of the eternal Where &amp; When</line>
+    <line rend="indent1">Presence chamber, Temple, Home,</line>
+    <line rend="indent1">Ever canopying Dome</line>
+    <line rend="indent1">Of acts &amp; ages yet to come!</line>
     <line></line>
     <line></line>
     <line>Glorious shapes have life in thee</line>

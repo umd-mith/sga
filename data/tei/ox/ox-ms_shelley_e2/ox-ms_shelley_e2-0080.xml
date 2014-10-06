@@ -17,18 +17,15 @@
     <anchor xml:id="e2-0080.02"/>
     <line>Its' billows now sweep oer my eyes&#8212; my brain</line>
     <line>st those</line>
-    <line>Grows dizzy&#8212; <mod>
-        <del rend="strikethrough">I</del>
-      </mod> see<mod>
+    <line>Grows dizzy&#8212; <del rend="strikethrough">I</del> see<mod>
         <add place="sublinear">^</add>
         <add place="superlinear">st those</add>
       </mod> shapes within the mist <unclear>?</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0080.03"/>
-    <line>A countenance with beckoning smiles&#8212;<mod>
-        <add place="superlinear">burns</add>
-      </mod>there</line>
+    <line>A countenance with beckoning smiles&#8212;
+      there <add place="superlinear">burns</add></line>
     <line>An<del rend="strikethrough">
         <unclear>o</unclear></del> azure fire within its golden locks&#8212;</line>
     <line>Another &amp; another hark they speak!</line>

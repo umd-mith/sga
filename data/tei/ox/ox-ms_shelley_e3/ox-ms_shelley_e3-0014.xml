@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0014" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0014" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0014.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0014.01"/>
@@ -14,14 +14,20 @@
     <line>Which trample the dim winds <unclear>:</unclear> in each there</line>
     <line rend="right">stands</line>
     <anchor xml:id="e3-0014.02"/>
-    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight <unclear>.</unclear></line>
+    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight
+        <unclear>.</unclear></line>
     <line>Some look behind, as fiends pursued them there</line>
     <line>And yet I see no shapes but the keen stars</line>
     <line>Others with burning eyes lean forth, &amp; drink</line>
     <line>With eager lips the wind oftheir own speed</line>
     <line>As if the thing they loved fled on before</line>
     <line>And now&#8212;even now they clasped it; their bright hair</line>
-    <line><del rend="strikethrough">Str</del>eams <mod><del rend="strikethrough">on the blast like meteors &amp; they</del><add>like a comets <del rend="strikethrough">scattered hair</del></add></mod> all</line>
+    <line><del rend="strikethrough">Str</del>eams <mod>
+        <del rend="strikethrough">on the blast like meteors &amp; they</del>
+        <add place="superlinear">like a comets</add>
+        <del rend="strikethrough"><add place="superlinear">scattered hair</add></del>
+        <add place="superlinear"> &amp;</add>
+      </mod> all</line>
     <line>Sweep onward&#8212;</line>
     <milestone unit="tei:speaker" spanTo="#e3-0014.03"/>
     <line rend="center">Demogorgon</line>
@@ -32,13 +38,15 @@
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0014.04"/>
     <line>A Spirit with a dreadful countenance</line>
-    <line><mod><del rend="strikethrough">Waits with it's</del><add place="superlinear"><unclear>Ch</unclear></add></mod> chariot by the craggy gulph</line>
+    <line><mod>
+        <del rend="strikethrough">Waits with it's</del>
+        <add place="superlinear"><unclear>Ch</unclear></add>
+      </mod> chariot by the craggy gulph</line>
     <line>Unlike thy brethren &#8212; ghastly charioteer</line>
     <milestone unit="tei:l" spanTo="#e3-0014.05"/>
     <line>What art thou? whither wouldst thou bear me</line>
     <line rend="right">?</line>
     <anchor xml:id="e3-0014.05"/>
-    <line rend="indent5"><del rend="strikethrough">Speak</del>.</line>
+    <line rend="indent5"><del rend="strikethrough">Speak.</del></line>
   </zone>
 </surface>
-
