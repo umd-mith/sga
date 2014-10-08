@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0060" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0060" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0060.jp2"/>
   <zone type="main">
     <line>And beyond Indus, &amp; its tribute rivers,</line>
@@ -15,16 +15,24 @@
     <line><del rend="strikethrough">Which bore thy name ere faith was o</del></line>
     <line>Distinct with column arch &amp; architrave</line>
     <line>And palm-like capitals, &amp; over wrought,</line>
-    <line>And populous with most living imagery <metamark function="count">300</metamark></line>
+    <line>And populous with most living imagery <add><metamark function="count"
+      >300</metamark></add></line>
     <line>Praxitelean shapes, whose marble smiles</line>
     <line>Fill the hushed air with everlasting love.</line>
     <line>It is deserted now, but once it bore</line>
-    <line>Thy name Prometheus, <mod><del rend="strikethrough">and ardent</del><add place="superlinear">there the emulous</add></mod>youths</line>
+    <line>Thy name Prometheus, <mod>
+        <del rend="strikethrough">and ardent</del>
+        <add place="superlinear">there the emulous</add>
+      </mod>youths</line>
     <line>Bore to thine honour thro the divine gloom</line>
     <line>The lamp, which was thine emblem... even as those</line>
     <line>Who bear the untransmitted torch of hope</line>
     <line>Into the grave across the night of life...</line>
-    <line>Beside <mod><del rend="strikethrough">it</del><add place="sublinear">that Temple></add></mod> is the destined Cave...<del rend="strikethrough">depart!</del><metamark function="count">311</metamark></line>
-    </zone>
+    <anchor xml:id="e3-0060.01"/>
+    <line>Beside <mod>
+        <del rend="strikethrough">it</del>
+        <add place="sublinear"><hi rend="underline">that Temple</hi>></add>
+      </mod> is the destined Cave...<del rend="strikethrough">depart!</del><add><metamark
+          function="count">311</metamark></add></line>
+  </zone>
 </surface>
-

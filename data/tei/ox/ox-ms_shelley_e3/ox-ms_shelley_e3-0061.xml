@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0061" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0061" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0061.jp2"/>
-  <zone type="library">28</zone>
+  <zone type="library"><line rend="right">28</line></zone>
   <zone type="main">
-  <line>The beginning of Platos Republic&#8212;</line>
-  <line>As thou hast borne it most triumphantly</line>
-  <line>To this <mod><del rend="strikethrough">high</del> <add place="superlinear">far</add></mod> goal of Time ... depart, farewell!</line>
+    <line>The beginning of Platos Republic&#8212;</line>
+    <milestone unit="tei:seg" spanTo="#e3-0061.01" corresp="#e3-0060.01"/>
+    <line>As thou hast borne it most triumphantly</line>
+    <line>To this <mod>
+        <del rend="strikethrough">high</del>
+        <add place="superlinear">far</add>
+      </mod> goal of Time ... depart, farewell!</line>
+    <anchor xml:id="e3-0061.01"/>
   </zone>
 </surface>
-
