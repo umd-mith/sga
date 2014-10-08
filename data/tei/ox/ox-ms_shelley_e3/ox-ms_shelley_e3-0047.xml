@@ -7,8 +7,10 @@
   <zone type="library"><line rend="right">21</line></zone>
   <zone type="main">
     <line>Cling pendent</line>
+    <milestone unit="tei:seg" spanTo="#e3-0047.02" corresp="#e3-0046.04"/>
     <line rend="right">&amp; beams</line>
-    <line>Which twinkle on the fountain's brim</line>
+    <line>Which twinkle on the fountain's brim <anchor xml:id="e3-0047.01"/></line>
+    <anchor xml:id="e3-0047.02"/>
   </zone>
 </surface>
 

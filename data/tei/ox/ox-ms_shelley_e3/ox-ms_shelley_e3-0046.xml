@@ -34,7 +34,10 @@
     <line>The tears she brought, which yet were sweet to</line>
     <line rend="right">shed;</line>
     <anchor xml:id="e3-0046.02"/>
-    <line>We will entangle buds &amp; flowers, &amp; make</line>
+    <line>We will entangle buds &amp; flowers,<add place="superlinear"><metamark
+          function="displacement">&#x2014;&#x2014;</metamark></add>
+      <milestone unit="tei:seg" spanTo="#e3-0046.03" corresp="#e3-0047.01"/>&amp; make<anchor
+        xml:id="e3-0046.03"/><anchor xml:id="e3-0046.04"/></line>
     <line>Strange combinations out of common things</line>
     <line>Like human babes in their brief innocence</line>
     <line>And we will search, with looks &amp; words of love</line>
