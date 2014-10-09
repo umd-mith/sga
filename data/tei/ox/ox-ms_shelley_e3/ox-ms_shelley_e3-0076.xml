@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0076" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0076" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0076.jp2"/>
   <zone type="main">
     <line>Thrones altars judgment-seats &amp; prisons <unclear>;</unclear> wherein</line>
     <line>And besides which, by wretrched men were borne</line>
     <line>Sceptres tiaras swords &amp; chains, &amp; tomes</line>
     <line>Of reasoned wrong glozed on by ignorance,</line>
-    <line>Were like those <del rend="strikethrough">hideous</del> <hi rend="underline">secret</hi>&amp; barbaric shapes</line>
+    <line>Were like those <del rend="strikethrough">hideous</del>
+      <hi rend="underline">secret</hi>&amp; barbaric shapes</line>
     <line>The ghosts of a no more remembered fame</line>
     <line>Which from their unworn obelisks look forth</line>
     <line>In triumph oer the palaces &amp; tombs</line>
@@ -26,7 +27,6 @@
     <line>Strange, savage, ghastly, dark &amp; execrable</line>
     <line>Were Jupiter, the tyrant of the world</line>
     <line>And which the nations panic-stricken served</line>
-    <line rend="right"><metamark function="count">1854</metamark></line>
+    <line rend="right"><add><metamark function="count">1854</metamark></add></line>
   </zone>
 </surface>
-

@@ -12,7 +12,7 @@
     <line rend="indent1">To the rents &amp; gulphs &amp; chasms</line>
     <line rend="indent1">Where the Earth reposed from spasms</line>
     <line rend="indent1">On the day when He &amp; thou</line>
-    <line rend="indent2">Parted &#8212; to conmingle now</line>
+    <line rend="indent1">Parted &#8212; to conmingle now</line>
     <line rend="center">Child of Ocean</line>
     <milestone unit="tei:speaker" spanTo="#e2-0066.01"/>
     <line rend="center">Asia</line>
@@ -20,25 +20,22 @@
     <line>Come sweet Panthea&#8212;link thine hand in mine</line>
     <line>And follow, ere the voices fade away</line>
     <milestone unit="tei:scene" spanTo="#e2-0066.02"/>
-    <line>Scene 2.</line><anchor xml:id="e2-0066.02"/>
-    <milestone unit="stage" spanTo="#e2-0066.03"/>
+    <line>Scene 2.</line>
     <line>A forest <del rend="strikethrough">surrounded by Mountains</del> intermingled</line>
     <line>With rocks &amp; caverns. Asia &amp; Panthea</line>
-    <line rend="indent4">2 young fawns are sitting on a rock listening</line>
-    <line>pass into it&#8212;</line>
-    <anchor xml:id="e2-0066.03"/>
+    <line>pass into it&#8212; 2 young fawns are sitting on a rock listening</line>
+    <anchor xml:id="e2-0066.02"/>
     <line>
       <add place="superlinear">pass into it &#8212;</add>
-      <milestone unit="tei:speaker" spanTo="#e2-0066.04"/> Semi
-        <del rend="strikethrough">c</del>
+      <milestone unit="tei:speaker" spanTo="#e2-0066.04"/> Semi <del rend="strikethrough">c</del>
       <hi rend="sup">1</hi>
       <mod>
         <del rend="strikethrough">C</del>
       </mod> horus of Spirits &#8212; 1</line>
     <anchor xml:id="e2-0066.04"/>
-    <line rend="indent3">The path through which that lovely twain</line>
-    <line rend="indent3">Have past <unclear>,&#8212;</unclear> by cedar, pine &amp; yew</line>
-    <line rend="indent3">And each dark tree that ever grew</line>
-    <line rend="indent3">Is curtained out from Heaven's wide blue</line>
+    <line rend="indent1">The path through which that lovely twain</line>
+    <line rend="indent1">Have past <unclear>,&#8212;</unclear> by cedar, pine &amp; yew</line>
+    <line rend="indent1">And each dark tree that ever grew</line>
+    <line rend="indent1">Is curtained out from Heaven's wide blue</line>
   </zone>
 </surface>

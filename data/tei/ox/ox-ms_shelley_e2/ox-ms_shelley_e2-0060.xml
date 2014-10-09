@@ -27,8 +27,8 @@
     <line>And then I said Panthea look on me</line>
     <line>But in the depth of those beloved eyes</line>
     <line>Still I saw, <hi rend="underline">follow, follow</hi>.</line>
-    <line><add place="interlinear"><metamark function="displacement" xml:id="e2-0060.02"
-          >^</metamark></add></line>
+    <line rend="right"><add place="interlinear"><metamark function="displacement"
+          xml:id="e2-0060.02">&#60;</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e2-0060.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0060.03"/>
