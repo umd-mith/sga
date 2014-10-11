@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0028" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0028" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0028.jp2"/>
-    <zone type="main">
+  <zone type="main">
     <milestone unit="tei:act" spanTo="#e3-0028.01"/>
     <line>Act 3.<hi rend="sup">d</hi></line><anchor xml:id="e3-0028.01"/>
-    <milestone unit="tei:stage" spanTo="#e3-0028.02"/> 
+    <milestone unit="tei:stage" spanTo="#e3-0028.02"/>
     <line>Scene &#8212; Heaven. Jupiter on his throne</line>
     <line>Thetis &amp; The other Deities assembled &#8212;</line>
     <anchor xml:id="e3-0028.02"/>
     <milestone unit="tei:speaker" spanTo="#e3-0028.03"/>
-    <line>Jupiter <add place="superlinear">Jupiter</add></line>
+    <line><mod>
+        <del rend="overwritten">Jupiter</del>
+        <add place="intralinear">Jupiter</add>
+      </mod></line>
     <anchor xml:id="e3-0028.03"/>
     <line>Ye congregated Powers of Heaven who share</line>
     <line>The glory &amp; the strength of him ye serve</line>
-    <line>Rejoice <unclear><del rend="strikethrough">,</del></unclear>! henceforth am I omnipotent</line>
+    <line>Rejoice <unclear><del rend="strikethrough">,</del></unclear>! henceforth am I
+      omnipotent</line>
     <line>All else has been subdued to me &#8212; alone</line>
-    <line>The soul of man, like unextinguished fire <add><metamark function="count">5</metamark></add></line>
+    <line>The soul of man, like unextinguished fire <add><metamark function="count"
+        >5</metamark></add></line>
     <milestone unit="tei:l" spanTo="#e3-0028.04"/>
-    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0028.05" xml:id="e3-0028.06"/>doubt<anchor xml:id="e3-0028.05"/></line>
-    <line><milestone unit="tei:seg" spanTo="#e3-xx.03" next="#e3-0028.06"/>Yet burns towards Heaven with fierce reproach &amp;<anchor xml:id="e3-xx.03"/></line>
+    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0028.05" xml:id="e3-0028.06"
+        />doubt<anchor xml:id="e3-0028.05"/></line>
+    <line><milestone unit="tei:seg" spanTo="#e3-0028.09" next="#e3-0028.06"/>Yet burns towards Heaven
+      with fierce reproach &amp;<anchor xml:id="e3-0028.09"/></line>
     <anchor xml:id="e3-0028.04"/>
-    <line>Yet burns towards Heaven with fierce reproach &amp; <add place="superlinear">doubt</add></line>  
+    <line>Yet burns towards Heaven with fierce reproach &amp; <add place="superlinear"
+      >doubt</add></line>
     <line>And lamentation &amp; reluctant prayer</line>
     <line><del rend="strikethrough">In tameless</del> insurrection, which might make</line>
     <line>Our antique empire insecure, though built</line>
-    <line>On eldest faith, &amp; Hell's coeval, fear;<add><metamark function="count">10</metamark></add></line>
+    <line>On eldest faith, &amp; Hell's coeval, fear;<add><metamark function="count"
+        >10</metamark></add></line>
     <line>And though my curses thro the pendulous air</line>
     <line>Like snow on herbless peaks, fall flake by flake</line>
     <line>And cling to it &#8212; though under my wrath's</line>
-    </zone>  
+  </zone>
 </surface>
-

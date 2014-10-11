@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0070" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0070" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0070.jp2"/>
   <zone type="main">
     <line>I saw two azure halcyons clinging downward</line>
@@ -25,7 +25,11 @@
     <line>Soon as the <del rend="strikethrough">thu</del> sound had ceased whose thunder</line>
     <line rend="right">filled</line>
     <anchor xml:id="e3-0070.04"/>
-    <line>The abysses <add place="sublinear">^</add><add place="superlinear">of</add> the <mod><del rend="strikethrough">air</del><add place="superlinear">skies</add></mod>, &amp; the wide earth; <metamark function="count">410</metamark></line>
+    <line>The abysses <add place="sublinear"><metamark function="insert">^</metamark></add><add
+        place="superlinear">of</add> the <mod>
+        <del rend="strikethrough">air</del>
+        <add place="superlinear">skies</add>
+      </mod>, &amp; the wide earth; <add><metamark function="count">410</metamark></add></line>
     <line>There was a change...the impalpable thin air</line>
     <milestone unit="tei:l" spanTo="#e3-0070.05"/>
     <line><del rend="strikethrough">The light</del> And the all-circling sunlight were</line>
@@ -40,8 +44,11 @@
     <line>Winnowing the lightsome air with languid</line>
     <line rend="right">plumes</line>
     <anchor xml:id="e3-0070.06"/>
-    <line>My coursers sought their <mod><del rend="strikethrough">pastures</del><add place="superlinear">birthplace</add></mod> in the sun</line>
-    <line rend="indent4"><metamark function="count">401  1778</metamark></line>
+    <line>My coursers sought their <mod>
+        <del rend="strikethrough">pastures</del>
+        <add place="superlinear">birthplace</add>
+      </mod> in the sun</line>
+    <line rend="indent4"><add><metamark function="count">401 </metamark><metamark function="count"
+        >1778</metamark></add></line>
   </zone>
 </surface>
-

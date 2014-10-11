@@ -12,7 +12,8 @@
         <add place="sublinear">sanguine></add>
       </mod>light, thro the thick ragged</line>
     <line rend="right">skirts</line><anchor xml:id="e3-0038.01"/>
-    <line>Of the victorious Darkness, as he fell; <add><metamark function="count">90</metamark></add></line>
+    <line>Of the victorious Darkness, as he fell; <add><metamark function="count"
+        >90</metamark></add></line>
     <line>Like the last glare of day's red agony</line>
     <line>Which from a rent among the fiery clouds</line>
     <line>Burns far along the tempest-wrinkled Deep</line>
@@ -34,6 +35,7 @@
       sinks</line>
     <line rend="right">at length</line><anchor xml:id="e3-0038.05"/>
     <line>Prone, &amp; the aerial ice clings over it&#8212;</line>
-    <line rend="right">101 94</line>
+    <line rend="right"><add><metamark function="count">101</metamark>
+        <metamark function="count">94</metamark></add></line>
   </zone>
 </surface>

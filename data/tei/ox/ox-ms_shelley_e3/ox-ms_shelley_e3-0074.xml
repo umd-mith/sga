@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0074" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0074" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0074.jp2"/>
   <zone type="main">
     <line>None with firm sneer trod out in his own heart</line>
@@ -21,11 +21,12 @@
     <line>Speaking the wisdom once they could not think</line>
     <line>Looking emotions once they feared to feel</line>
     <line>And changed to all which once they dared not</line>
-    <line><del rend="strikethrough">And</del> Yet being now, make Earth like Heaven<add place="superlinear"><del rend="strikethrough">be</del></add>&#8212;</line>
-    <line>Nor jealousy nor envy nor ill shame nor <del rend="strikethrough">pri</del></line>
+    <line><del rend="strikethrough">And</del> Yet being now, make Earth like Heaven<del rend="strikethrough"><add
+        place="superlinear">be</add></del>&#8212;</line>
+    <line>Nor jealousy nor envy nor ill shame <del rend="strikethrough">nor pri</del></line>
     <line>The bitterest of those drops of treasured gall&#8212;</line>
     <line>Spoilt the sweet taste of the nepenthe love <unclear>.&#8212;</unclear></line>
-    <line><del rend="strikethrough">1823</del> 1832</line>
+    <line><del rend="strikethrough"><add><metamark function="count">1823</metamark></add></del>
+      <add><metamark function="count">1832</metamark></add></line>
   </zone>
 </surface>
-
