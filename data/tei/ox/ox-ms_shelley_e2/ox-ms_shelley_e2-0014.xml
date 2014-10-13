@@ -7,18 +7,20 @@
   <zone type="main">
     <line>Quite unsuppressed is tearing up the heart</line>
     <line>Of the good Titan&#8212;as storms tear the <mod>
-        <del rend="strikethrough"><hi rend="underline">deep</hi></del>
+        <restore type="underline"><del rend="strikethrough"><hi rend="underline"
+          >deep</hi></del></restore>
         <mod>
-          <del rend="strikethrough"><add place="superlinear">sea</add></del>
+          <del rend="smear"><add place="superlinear">sea</add></del>
         </mod>
       </mod></line>
     <line>And beasts hear the <mod>
-        <del rend="strikethrough"><hi rend="underline">Sea</hi></del>
+        <restore type="underline"><del rend="strikethrough"><hi rend="underline"
+          >Sea</hi></del></restore>
         <mod>
           <del rend="strikethrough"><add place="superlinear">waves</add></del>
         </mod>
       </mod> moan in inland cave<unclear reason="illegible">s</unclear></line>
-    <line>Darest thou observe how the fiends torture him <unclear>,&#8212;</unclear></line>
+    <line>Darest thou observe how the fiends torture him <unclear reason="illegible">,&#8212;</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e2-0014.01"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0014.01"/>

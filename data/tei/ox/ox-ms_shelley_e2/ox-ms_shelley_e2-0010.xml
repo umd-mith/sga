@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0010" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0010" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0010.jp2"/>
   <zone type="main">
     <line rend="indent1">His words outlived him, like swift poison</line>
     <line rend="indent1">Withering up truth peace &amp; pity</line>
     <line rend="indent1">Look where round the wide horizon</line>
     <line rend="indent1">Many a million-peopled city</line>
-    <line rend="indent1">Vomits smoke in the bright air&#8212;</line>
+    <line rend="indent1">Vomits smoke in the bright <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">a</add>
+      </mod>ir&#8212;</line>
     <line rend="indent1"><del rend="strikethrough">Hark</del>
-      <milestone unit="tei:stage" spanTo="#e2-0010.01"/>a shadow passes over the scene</line>
-    <line>&amp; a piercing shriek is heard</line><anchor xml:id="e2-0010.01"/>
+      <milestone unit="tei:stage" spanTo="#e2-0010.01"/><delSpan rend="vertical_line" spanTo="#e2-0010.02"/>a shadow passes over the scene</line>
+    <line>&amp; a piercing shriek is heard</line><anchor xml:id="e2-0010.02"/><anchor xml:id="e2-0010.01"/>
     <line rend="indent1">Hark that outcry of despair</line>
     <line rend="indent1">Tis his mild &amp; gentle ghost</line>
     <line rend="indent1">Wailing for the faith he kindled</line>
