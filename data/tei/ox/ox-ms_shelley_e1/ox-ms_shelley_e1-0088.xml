@@ -5,20 +5,33 @@
   xml:id="ox-ms_shelley_e1-0088" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0088.jp2"/>
   <zone type="main">
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.01"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0088.01"/>
     <line>See where the child of Heaven with winged feet</line>
     <line>Runs down the slanted sunlight of the dawn</line>
-    <line>Ione</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.02"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0088.02"/>
     <line>Dear sister close thy plumes over thine eyes</line>
     <line>Lest thou behold &amp; die--they come they come</line>
     <line>Blackening the birth of day with countless wings</line>
     <line>And hollow underneath like death</line>
-    <line>1<hi rend="superscript">t</hi> Fury</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.03"/>
+    <line rend="center">1<hi rend="sup">t</hi> Fury</line>
+    <anchor xml:id="e1-0088.03"/>
     <line>Prometheus!</line>
-    <line>2</line>
+   <milestone unit="tei:speaker" spanTo="#e1-0088.04"/>
+    <line rend="center">2</line>
+    <anchor xml:id="e1-0088.04"/>
     <line>Immortal Titan!</line>
-    <line>3 Champion of Heaven's slaves!</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.05"/>
+    <line rend="center">3 </line>
+    <anchor xml:id="e1-0088.05"/>
+      <line>Champion of Heaven's slaves!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.06"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0088.06"/>
     <line>He whom some dreadful voice invokes, is here,</line>
     <line>Prometheus, the chained Titan.--Horrible forms</line>
     <line>What &amp; who are ye? never yet there came</line>
@@ -26,7 +39,7 @@
     <line>From the all-miscreative brain of Jove;</line>
     <line>Whilst I behold such execrable shapes {. .}</line>
     <line>Methinks I grow like what I contemplate</line>
-    <line>437</line>
+    <line><add><metamark function="count">437</metamark></add></line>
     <line>And laugh &amp; stare in loathsome sympathy</line>
   </zone>
 </surface>

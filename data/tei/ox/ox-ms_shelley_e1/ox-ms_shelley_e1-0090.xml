@@ -5,24 +5,32 @@
   xml:id="ox-ms_shelley_e1-0090" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0090.jp2"/>
   <zone type="main">
-    <line>1<hi rend="superscript">st</hi> Fury</line>
+    <line>1<hi rend="sup">st</hi> Fury</line>
     <line>We are the ministers of pain &amp; fear</line>
     <line>And dissappointment &amp; mistrust &amp; hate</line>
     <line>And clinging crime; &amp; as lean dogs pursue</line>
     <line>Through wood &amp; lake some struck &amp; sobbing fawn</line>
     <line>We track all things that weep &amp; bleed &amp; live</line>
     <line>When the great King betrays them to our will</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0090.01"/>
     <line>Prometheus</line>
+    <anchor xml:id="e1-0090.01"/>
     <line>O many fearful natures in one name!</line>
     <line>I know ye, &amp; these lakes &amp; echoes know</line>
     <line>The darkness &amp; the clangour of your wings.</line>
     <line>But why more hideous than your loathed selves</line>
     <line>Gather ye up in legions from the deep?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0090.02"/>
     <line>2 Fury</line>
+    <anchor xml:id="e1-0090.02"/>
     <line>We knew not that--Sisters rejoice rejoice!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0090.03"/>
     <line>Prometheus</line>
+    <anchor xml:id="e1-0090.03"/>
     <line>Can aught <del rend="strikethrough">de</del> exult in its deformity?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0090.04"/>
     <line>2 Fury</line>
+    <anchor xml:id="e1-0090.04"/>
     <line>The beauty of delight makes lovers glad</line>
     <line>Gazing on one another--so are we {.}.</line>
     <line>As from the rose which the pale priestess kneels</line>

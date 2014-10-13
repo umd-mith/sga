@@ -5,8 +5,10 @@
   xml:id="ox-ms_shelley_e1-0094" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0094.jp2"/>
   <zone type="main">
-    <line>3 Fury</line>
-    <line>Thou think{<hi rend="superscript">'</hi>e}st we will live through thee, one by one</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0094.01"/>
+    <line rend="center">3 Fury</line>
+    <anchor xml:id="e1-0094.01"/>
+    <line>Thou think{<hi rend="sup">'</hi>e}st we will live through thee, one by one</line>
     <line>animal life</line>
     <line>Like and though we can obscure not</line>
     <line>^</line>
@@ -19,17 +21,21 @@
     <line>And blood within <del rend="strikethrough">your</del> labyrithine veins</line>
     <line>Crawling like agony</line>
     <line>X</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0094.02"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0094.02"/>
     <line>Why, ye are thus now</line>
     <line>Yet am I king over myself &amp; rule</line>
     <line>The torturing &amp; conflicting throngs within</line>
     <line>As Jove rules you when Hell grows mutinous</line>
-    <line>Chorus of Furies</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0094.03"/>
+    <line rend="center">Chorus of Furies</line>
+    <anchor xml:id="e1-0094.03"/>
     <line>From the ends of the Earth, from y ends of the Earth</line>
     <line>Where the night has its grave &amp; the morning its birth</line>
     <line>Come, Come, Come</line>
     <line>O ye who shake hills with the scream of your</line>
     <line>mirth</line>
-    <line>483</line>
+    <line><add><metamark function="count">483</metamark></add></line>
   </zone>
 </surface>
