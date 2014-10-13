@@ -5,25 +5,37 @@
   xml:id="ox-ms_shelley_e1-0086" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0086.jp2"/>
   <zone type="main">
-    <line>Mercury</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.01"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0086.01"/>
     <line>If thou might'st dwell among the Gods the while</line>
     <line>Lapped in voluptuous joy?--</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.02"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0086.02"/>
     <line>I would not quit</line>
     <line>This bleak ravine, these unrepentant pains</line>
-    <line>Mercury</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.03"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0086.03"/>
     <line>Alas I wonder at, yet pity thee</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.04"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0086.04"/>
     <line>Pity the self-despising slaves of Heaven</line>
     <line>Not me, within whose mind sits peace serene</line>
     <line>As light in the sun, throned ... how vain is talk!</line>
     <line>Call up the fiends</line>
     <line>(<del rend="strikethrough">thunder &amp; l</del>ightning)</line>
-    <line>Ione</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.05"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0086.05"/>
     <line>O sister O sister look, white fire</line>
     <line>Has cloven to the roots yon huge snow-loaded Cedar</line>
     <line>How fearfully God's thunder howls behind!</line>
-    <line>Mercury</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.06"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0086.06"/>
     <line>I must obey his words &amp; thine--alas</line>
     <line>Most</line>
     <line><del rend="strikethrough">How</del> heavily remorse hangs at my heart!</line>

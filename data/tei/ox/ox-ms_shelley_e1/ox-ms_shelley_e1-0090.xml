@@ -5,7 +5,9 @@
   xml:id="ox-ms_shelley_e1-0090" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0090.jp2"/>
   <zone type="main">
-    <line>1<hi rend="sup">st</hi> Fury</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0090.05"/>
+    <line rend="center">1<hi rend="sup">st</hi> Fury</line>
+    <anchor xml:id="e1-0090.05"/>
     <line>We are the ministers of pain &amp; fear</line>
     <line>And dissappointment &amp; mistrust &amp; hate</line>
     <line>And clinging crime; &amp; as lean dogs pursue</line>
