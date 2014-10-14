@@ -30,15 +30,30 @@
       xml:id="e2-0058.05"/>
     <line rend="indent1">As we sate here the flower-infolding buds</line>
     <line>Burst on yon lightning-blasted almond-tree</line>
-    <line>When swift, from the white Scythian wilderness,</line>
+    <line>When swift, from the white Scythian wilderness<add>,</add></line>
     <milestone unit="tei:l" spanTo="#e2-0058.07"/>
-    <line>A wind swept forth wrinkling the Earth with</line>
+    <line>A wind swep<mod>
+        <del rend="overwritten">th</del>
+        <add place="intralinear">t</add>
+      </mod> forth wrinkling the Earth with</line>
     <line rend="right">frost ...</line>
     <anchor xml:id="e2-0058.07"/>
-    <line>I looked, &amp; all the blossoms were blown down</line>
-    <line>But on each leaf was stamped&#8212;as the blue <del rend="strikethrough">of</del>
-      bells</line>
-    <line>Of Hyacinth <mod>
+    <line>I looked, &amp; all the blo<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">s</add>
+      </mod>soms were blown down</line>
+    <line>But on each leaf was stamped&#8212;as the blue <del rend="strikethrough">o</del>
+      <mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">b</add>
+      </mod>ells</line>
+    <line>Of <mod>
+        <del rend="overwritten">the</del>
+        <add place="intralinear">Hy</add>
+      </mod>a<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">c</add>
+      </mod>inth <mod>
         <del rend="strikethrough">speak</del>
         <add place="superlinear">tell</add>
       </mod> Apollos written grief&#8212;</line>

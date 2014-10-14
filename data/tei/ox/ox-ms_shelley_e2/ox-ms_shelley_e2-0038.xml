@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0038" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0038" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0038.jp2"/>
   <zone type="main">
     <line rend="indent1">[f. 18r is blank]</line>
@@ -13,17 +13,26 @@
     <milestone unit="tei:speaker" spanTo="#e2-0038.01"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e2-0038.01"/>
-    <line rend="indent1">Spirits how know ye this shall be</line>
+    <line rend="indent1">Spirits how know ye <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">t</add>
+      </mod>his shall be</line>
     <milestone unit="tei:speaker" spanTo="#e2-0038.02"/>
     <line rend="center">Chorus</line>
     <anchor xml:id="e2-0038.02"/>
     <line rend="indent1">In the atmosphere we breathe</line>
-    <line rend="indent1">As buds grow red when snow <unclear>-</unclear>storms flee</line>
+    <line rend="indent1">As buds grow red when snow <unclear reason="illegible">-</unclear><mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">st</add>
+      </mod>orms flee</line>
     <line rend="indent1">From spring gathering up beneath</line>
     <line rend="indent1">Whose mild winds shake, the elder brake</line>
     <line rend="indent1">And the wandering herdsman know</line>
     <line rend="indent1">That the white-thorn soon will blow&#8212;</line>
-    <line rend="indent1">Wisdom Justice Love &amp; Peace</line>
+    <line rend="indent1">Wisdom Justice <mod>
+        <del rend="overwritten">l</del>
+        <add place="intralinear">L</add>
+      </mod>ove &amp; Peace</line>
     <line rend="indent1">When they struggle to increase</line>
     <line rend="indent1">Are to us as soft winds be</line>
     <line rend="indent1">To shepherd-boys &#8212; the prophecy</line>

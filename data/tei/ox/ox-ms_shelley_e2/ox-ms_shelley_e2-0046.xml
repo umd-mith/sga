@@ -32,7 +32,16 @@
     <milestone unit="tei:speaker" spanTo="#e2-0046.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0046.02"/>
-    <line>Pardon <unclear reason="case">g</unclear>reat Sister! but my wings were faint</line>
-    <line>With the delight of a remembered dream</line>
+    <line>Pardon <mod>
+        <del rend="overwritten">G</del>
+        <add place="intralinear">g</add>
+      </mod>reat <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>ister! but my wings were faint</line>
+    <line>With <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod>he delight of a remembered dream</line>
   </zone>
 </surface>

@@ -13,7 +13,8 @@
     <milestone unit="tei:speaker" spanTo="#e2-0042.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0042.02"/>
-    <line>Hast thou forgotten one who watches thee</line>
+    <line>Hast thou forgotten one who watch<retrace cause="clarify" hand="#pbs">es</retrace>
+      thee</line>
     <line>The cold dark night, &amp; never sleeps but when</line>
     <line>The shadow of thy spirit<del rend="strikethrough">s</del> falls on her?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0042.03"/>
@@ -31,7 +32,10 @@
     <line rend="right"><del rend="strikethrough" xml:id="e2-0042.07">pale</del><anchor
         xml:id="e2-0042.06"/></line>
     <anchor xml:id="e2-0042.05"/>
-    <line>And Asia waits in that far Indian vale</line>
+    <line>And Asia waits in that far Indian <mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">v</add>
+      </mod>ale</line>
     <line>The scene of her sad exile&#8212;<mod spanTo="#e2-0042.08"/><delSpan rend="strikethrough"
         spanTo="#e2-0042.09"/>tho her presence</line>
     <milestone unit="tei:l" spanTo="#e2-0042.10"/>
@@ -42,7 +46,8 @@
       </mod></line>
     <line rend="indent5"><add>rugged once</add></line>
     <anchor xml:id="e2-0042.10"/><anchor xml:id="e2-0042.08"/>
-    <line>And desolate &amp; frozen like this ravine;</line>
+    <line>And desolate &amp; fro<retrace cause="clarify" hand="#pbs">zen</retrace> like this
+      ravine;</line>
     <line>But now invested with fair flowers &amp; herbs</line>
     <line>And haunted by sweet air's &amp; sounds, which flow</line>
     <line>Among the woods &amp; waters: from the ether</line>

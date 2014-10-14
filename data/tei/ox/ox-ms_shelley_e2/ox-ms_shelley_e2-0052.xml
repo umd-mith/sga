@@ -7,8 +7,10 @@
   <zone type="main">
     <line>[f. 25r is blank]</line>
     <line>And I was thus absorbed&#8212;until it past</line>
-    <line><del rend="strikethrough" instant="true">Then</del> And like the vapours when the sun
-      sinks down</line>
+    <line><del rend="strikethrough" instant="true">Then</del> And <mod>
+        <del rend="overwritten">as</del>
+        <add place="intralinear">like</add>
+      </mod> the vapours when the sun sinks down</line>
     <line><mod>
         <del rend="strikethrough">Which hang</del>
         <add place="superlinear">Gathering</add>
@@ -25,13 +27,16 @@
       <del rend="strikethrough">I heard</del></line>
     <line>Like footsteps of <mod>
         <del rend="strikethrough">lost</del>
-        <del rend="strikethrough"><add place="superlinear">w</add></del>
-        <add place="superlinear">far</add>
+        <mod>
+          <del rend="overwritten"><add place="superlinear">weak</add></del>
+          <add place="intralinear">far</add>
+        </mod>
       </mod>
       <mod>
         <del rend="strikethrough">music</del>
         <add place="superlinear">melody.</add>
-      </mod> . . .<anchor xml:id="e2-0052.02"/> <del rend="strikethrough">but</del>
+      </mod> . . .<anchor xml:id="e2-0052.02"/>
+      <del rend="strikethrough">but</del>
       <delSpan spanTo="#e2-0052.01"/>I heard</line>
     <line>Among the many sounds, one word, thy name<anchor xml:id="e2-0052.01"/></line>
     <line>Ione wakened then, &amp; said to me</line>
@@ -39,7 +44,8 @@
     <line>"I always knew what I desired before</line>
     <line>"Nor ever found delight to wish in vain</line>
     <line>"But now I cannot tell thee what I seek</line>
-    <line>"I know not<anchor xml:id="e2-0052.03"/> <del rend="strikethrough">even</del> &#8212;<mod>
+    <line>"I know not<anchor xml:id="e2-0052.03"/>
+      <del rend="strikethrough">even</del> &#8212;<mod>
         <del rend="strikethrough">so sweet, that it is sweet</del>
         <del rend="strikethrough"><add place="superlinear">yet it is <unclear reason="illegible"
               >something</unclear></add></del>
@@ -47,11 +53,13 @@
     <line>"Even to desire&#8212;it is <mod>
         <del rend="strikethrough">some</del>
         <add place="superlinear">thy</add>
-      </mod> sport <del rend="strikethrough">of thine</del><add place="superlinear">false <unclear
-          reason="case">S</unclear>ister!</add></line>
+      </mod> sp<retrace cause="clarify" hand="#pbs">ort</retrace>
+      <del rend="strikethrough">of thine</del><add place="superlinear">false <unclear reason="case"
+          >S</unclear>ister!</add></line>
     <line/>
     <line>"Thou hast discovered <mod>
-        <del rend="strikethrough"><hi rend="underline">some</hi></del>
+        <restore type="underline"><del rend="strikethrough"><hi rend="underline"
+          >some</hi></del></restore>
         <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
             >an</unclear></add></del>
       </mod> inchantment old</line>

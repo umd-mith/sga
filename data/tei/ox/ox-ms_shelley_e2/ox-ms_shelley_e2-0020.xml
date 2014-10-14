@@ -17,7 +17,7 @@
     <line rend="center">Prometheus</line>
     <anchor xml:id="e2-0020.03"/>
     <line rend="indent5">ah woe <del rend="strikethrough">is me</del></line>
-    <line>Ah woe! alas! pain pain ever forever<unclear>?</unclear></line>
+    <line>Ah woe! alas! pain pain ever forever<unclear reason="illegible">?</unclear></line>
     <line>I close my tearless eyes, but see more clear</line>
     <line>Thy works within my woe-illumed mind</line>
     <line>Thou subtle tyrant.... peace is in the grave&#8212;</line>
@@ -26,7 +26,10 @@
     <line>Nor would I seek it. For, though dread revenge</line>
     <line>This is defeat <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
-        <add place="superlinear">Fierce King</add>
+        <add place="superlinear"><mod>
+            <del rend="overwritten">f</del>
+            <add place="intralinear">F</add>
+          </mod>ierce King</add>
       </mod>not <unclear reason="case">V</unclear>ictory! <del rend="strikethrough">to</del></line>
     <milestone unit="tei:l" spanTo="#e2-0020.04"/>
     <line>The sights with which thou torturest gird</line>

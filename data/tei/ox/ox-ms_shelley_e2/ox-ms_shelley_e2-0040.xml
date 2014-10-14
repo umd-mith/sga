@@ -18,8 +18,9 @@
       </mod> the <mod>
         <del rend="strikethrough">echoes are not</del>
         <add place="superlinear">repon<handShift medium="pencil">ses are</handShift></add>
-      </mod> mute</line>  <!--"ere" and "ses are" in pencil; encode handshift, and adjust schema-->
-    <line>Which thro the deep &amp; labyrinthine soul</line>
+      </mod> mute</line>
+    <!--"ere" and "ses are" in pencil; encode handshift, and adjust schema-->
+    <line>Which th<del rend="smear">e</del>ro the deep &amp; labyrinthine soul</line>
     <line>Like echoes through long caverns wind &amp; roll</line>
     <milestone unit="tei:speaker" spanTo="#e2-0040.02"/>
     <line rend="center">Prometheus</line>
@@ -37,9 +38,9 @@
     <anchor xml:id="e2-0040.03"/>
     <line>If slumber were denied not .. I would fain</line>
     <line>Be what it is my destiny to be</line>
-    <line>The saviour &amp; the strength of suffering man</line>
-    <line>Or sink into the original<unclear>,</unclear> gulph of things...
-      <unclear>.</unclear></line>
+    <line>The <unclear reason="case">s</unclear>aviour &amp; the strength of suffering man</line>
+    <line>Or sink into the original<unclear reason="illegible">,</unclear> gulph of things...
+      <unclear reason="illegible">.</unclear></line>
     <line>There is no agony &amp; no solace left</line>
     <line><add><metamark function="count">804</metamark></add></line>
   </zone>

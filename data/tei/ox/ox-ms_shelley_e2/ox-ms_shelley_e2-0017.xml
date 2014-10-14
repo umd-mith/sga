@@ -19,18 +19,25 @@
       <mod>
         <del rend="strikethrough">for mankind</del>
         <add place="superlinear">Deep wrongs for man,</add>
-      </mod> , &amp; scorn <unclear>:</unclear><mod>
-        <add place="sublinear"><metamark function="insert">^</metamark></add>
+      </mod> , &amp; scorn <mod>
+        <del rend="overwritten">;</del>
+        <add place="intralinear">:</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">&amp;</del>
         <del rend="strikethrough"><add place="superlinear">wound</add></del>
-      </mod> and chains
-        <del rend="strikethrough"><add place="superlinear">&amp; de<unclear>s</unclear></add></del>, but heap</line>
+      </mod> and chains <del rend="strikethrough"><add place="superlinear">&amp;
+            de<unclear>s</unclear></add></del>, but heap</line>
     <line><del rend="strikethrough">Heap</del> Thousand-fold torment on themselves &amp; him.</line>
     <milestone unit="tei:stage" spanTo="#e2-0017.02"/>
     <line rend="indent4">a <mod>
         <del rend="strikethrough">shadow</del>
         <add place="superlinear">darkness</add>
       </mod> floats <del rend="strikethrough">flo</del> slowly across</line>
-    <line><unclear>t</unclear>he <unclear>s</unclear>cene</line>
+    <line><mod>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">t</add>
+      </mod>he <unclear reason="case">s</unclear>cene</line>
     <anchor xml:id="e2-0017.02"/>
     <line>[PENCIL SKETCH OF FOLIAGE AND MARKS FROM PEN CLEARING BELOW]</line>
   </zone>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0028" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0028" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0028.jp2"/>
   <zone type="main">
     <line>[f. 13r blank]</line>
@@ -30,7 +30,10 @@
     <line>The widest; at the meteor<unclear reason="illegible">s</unclear> touch</line>
     <line>The snake did seem to see in dream</line>
     <line>Thrones &amp; dungeons overthrown</line>
-    <line>Visions how unlike his own ....</line>
+    <line><mod>
+        <del rend="overwritten">A</del>
+        <add place="intralinear">V</add>
+      </mod>isions how unlike his own ....</line>
     <line>'Twas the hope the prophecy</line>
     <line>Which begins &amp; ends in thee</line>
     <anchor xml:id="e2-0028.02"/>

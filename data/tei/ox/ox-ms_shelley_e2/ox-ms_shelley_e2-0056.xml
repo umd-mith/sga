@@ -9,7 +9,10 @@
     <line rend="center">Panthea</line>
     <anchor/>
     <line>I lift them, though they droop beneath the load</line>
-    <line>Of that they would express&#8212;what canst thou see</line>
+    <line>Of <mod>
+        <del rend="overwritten">what</del>
+        <add place="intralinear">that</add>
+      </mod> they would express&#8212;what canst thou see</line>
     <line>But thine own fairest shadow imaged there</line>
     <milestone unit="tei:speaker" spanTo="#e2-0056.02"/>
     <line rend="center">Asia</line>
@@ -32,13 +35,19 @@
       </mod> their inmost depth</line>
     <line>I see a shade &#8212; a shape &#8212; 'tis He, arrayed</line>
     <line>In the soft light of his own smiles which spread</line>
-    <line>Like radiance from the cloud-surrounded moon</line>
+    <line>Like radiance from the clou<retrace cause="clarify" hand="#pbs">d</retrace>-surrounded
+      moon</line>
     <anchor xml:id="e2-0056.05"/>
     <line>Say not those smiles that we shall meet again</line>
-    <line>Within that bright Pavilion which th<unclear reason="illegible">e</unclear>r beams</line>
+    <line>Within that bright <retrace cause="clarify" hand="#pbs">P</retrace>av<retrace
+        cause="clarify" hand="#pbs">il</retrace>ion which th<unclear reason="illegible">e</unclear>r
+      beams</line>
     <line>Shall build oer the waste world? the dream is told</line>
     <line>What shape is that between us? its rude hair</line>
-    <line>Roughens the wind that lifts it, <del rend="strikethrough">&amp;</del> its regard</line>
+    <line><mod>
+        <del rend="overwritten">Roughs</del>
+        <add place="intralinear">Roughens</add>
+      </mod> the wind that lifts it, <del rend="strikethrough">&amp;</del> its regard</line>
     <line><add place="superlinear"><metamark function="count">122</metamark></add>Is wild &amp;
       quick, yet 'tis a thing of air</line>
   </zone>
