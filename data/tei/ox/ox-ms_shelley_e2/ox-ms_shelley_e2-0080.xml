@@ -18,14 +18,14 @@
     <line>Its' billows now sweep oer my eyes&#8212; my brain</line>
     <line>st those</line>
     <line>Grows dizzy&#8212; <del rend="strikethrough">I</del> see<mod>
-        <add place="sublinear">^</add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">st those</add>
       </mod> shapes within the mist <unclear>?</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0080.03"/>
-    <line>A countenance with beckoning smiles&#8212;
-      there <add place="superlinear">burns</add></line>
+    <line>A countenance with beckoning smiles&#8212; there <add place="superlinear"
+      >burns</add></line>
     <line>An<del rend="strikethrough">
         <unclear>o</unclear></del> azure fire within its golden locks&#8212;</line>
     <line>Another &amp; another hark they speak!</line>
@@ -33,12 +33,11 @@
     <line>\</line>
     <milestone unit="tei:scene" spanTo="#e2-0080.04"/>
     <line rend="center">Scene 4 the Cave of Demogorgon</line>
-    <line>Asia, Panthea, <mod>
-        <del rend="strikethrough">a</del>
-        <del rend="strikethrough">v</del>
-        <del rend="strikethrough">Demogorgon</del>
-        <del rend="strikethrough">on his throne</del>
-      </mod></line><anchor xml:id="e2-0080.04"/>
+    <line>Asia, Panthea, <del rend="strikethrough">a</del>
+      <del rend="strikethrough">v</del>
+      <del rend="strikethrough">Demogorgon</del>
+      <del rend="strikethrough">on his throne</del>
+    </line><anchor xml:id="e2-0080.04"/>
     <milestone unit="tei:speaker" spanTo="#e2-0080.06"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0080.06"/>

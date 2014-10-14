@@ -16,7 +16,7 @@
     <line>Past floating thro' the air, &amp; fading still</line>
     <line>Into the winds that scatter them, &amp; those</line>
     <milestone unit="tei:l" spanTo="#e3-0068.01"/>
-    <line>From whom they passed seemed mild &amp; lovely <metamark function="count">380</metamark></line>
+    <line>From whom they passed seemed mild &amp; lovely <add><metamark function="count">380</metamark></add></line>
     <line rend="right">forms</line>
     <anchor xml:id="e3-0068.01"/>
     <line>After some foul disguise had fallen &#8212; &amp; all</line>
@@ -33,7 +33,7 @@
     <line><del rend="strikethrough">Like an old garment soiled</del> <del rend="strikethrough">&amp;</del> <del rend="strikethrough">overworn</del></line>
     <line>I cannot tell my joy, when oer a lake,</line>
     <line>Upon a drooping bough with nightshade twined</line>
-    <line><metamark function="count">383</metamark></line>
+    <line><add><metamark function="count">383</metamark></add></line>
   </zone>
 </surface>
 
