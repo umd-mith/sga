@@ -6,7 +6,13 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0060.jp2"/>
   <zone type="main">
     <line>[f. 29r is blank]</line>
-    <line>And multitudes of dense white fleecy clouds</line>
+    <line>And <mod>
+        <del rend="overwritten">in</del>
+        <add place="intralinear">m</add>
+      </mod>ultitudes of <mod>
+        <del rend="overwritten"><unclear reason="illegible">thic</unclear></del>
+        <add place="intralinear">dense</add>
+      </mod> white fleecy clouds</line>
     <line>Were wandering in thick flocks along the mountains</line>
     <line>Shepherded by the slow unwilling wind<unclear reason="illegible">s</unclear>;</line>
     <line>And the white dew on the new-bladed grass</line>
@@ -22,7 +28,7 @@
     <line>The like was stamped as with a withering fire</line>
     <line>A wind arose among the pines &#8212; it shook</line>
     <line>The clinging music from their boughs, &amp; then</line>
-    <line>Low sweet faint sounds like the farewell of ghosts</line>
+    <line><del rend="strikethrough">S</del>Low sweet faint sounds like the farewell of ghosts</line>
     <line>Were heard &#8212; oh<hi rend="underline">, follow, follow, follow me</hi></line>
     <line>And then I said Panthea look on me</line>
     <line>But in the depth of those beloved eyes</line>
@@ -32,7 +38,8 @@
     <milestone unit="tei:speaker" spanTo="#e2-0060.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0060.03"/>
-    <line rend="right">our voices</line>
-    <line>The crags this clear spring morning mock</line>
+    <line rend="right"><milestone unit="tei:seg" spanTo="#e2-0060.04" corresp="#e2-0060.05"/>our
+        voices<anchor xml:id="e2-0060.04"/></line>
+    <line>The crags this clear spring morning mock <anchor xml:id="e2-0060.05"/></line>
   </zone>
 </surface>

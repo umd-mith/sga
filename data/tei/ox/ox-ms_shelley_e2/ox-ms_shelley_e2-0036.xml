@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0036" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0036" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0036.jp2"/>
   <zone type="main">
     <line><milestone unit="tei:speaker" spanTo="#e2-0036.01"/>5<hi rend="sup">th</hi> Spirit<anchor
-        xml:id="e2-0036.01"/> As over wide dominions</line>
+        xml:id="e2-0036.01"/>
+      <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>s over wide dominions</line>
     <line>I sped, like some swift cloud that wings the wide air's wildernesses</line>
-    <line>That planet-crested Shape swiftly on lightning-braided pinions</line>
-    <line rend="indent1">Scattering the liquid joy of life from his ambrosial tresses:</line>
+    <line>That planet-crested <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>hape swiftly on lightning-braided pinions</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">Scattered</del>
+        <add place="intralinear">Scattering</add>
+      </mod> the liquid joy of life from his ambrosial tresses:</line>
     <milestone unit="tei:l" spanTo="#e2-0036.02"/>
-    <line>His footsteps paved the world with light<unclear>&#8212;</unclear> but as I past
-      'twas</line>
+    <line>His footsteps paved the world with light <mod>
+        <del rend="overwritten">?</del>
+        <add place="intralinear">&#8212;</add>
+      </mod> but as I past 'twas</line>
     <line rend="right">fading</line>
     <anchor xml:id="e2-0036.02"/>
     <line rend="indent1">And hollow Ruin yawned behind &#8212; great Sages bound in madness</line>
@@ -26,7 +38,7 @@
     <line>Ah sister , Desolation is a delicate thing</line>
     <line>It walks not on the Earth it floats not on the air</line>
     <line>But treads with lulling footstep, &amp; fans with silent wing</line>
-    <line>The tender hopes which in thier hearts the best &amp; gentlest bear</line>
+    <line>The tender hopes which in thier heart<add>s</add> the best &amp; gentlest bear</line>
     <line><mod>
         <del rend="strikethrough">'Till</del>
         <del rend="strikethrough"><unclear>,</unclear></del>
@@ -49,7 +61,10 @@
       </mod></line>
     <anchor xml:id="e2-0036.05"/>
     <line rend="indent4"><unclear reason="illegible">X</unclear></line>
-    <line rend="indent1">Though Ruin now Loves shadow be</line>
+    <line rend="indent1">Though Ruin now <mod>
+        <del rend="overwritten">loves</del>
+        <add place="intralinear">Loves</add>
+      </mod> shadow be</line>
     <line rend="indent1">Following him, destroyingly</line>
     <line rend="indent2">On Death's white &amp; winged steed</line>
     <line rend="indent2">Which the fleetest cannot flee&#8212;</line>

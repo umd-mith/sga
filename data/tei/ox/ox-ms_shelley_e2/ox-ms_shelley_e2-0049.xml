@@ -23,7 +23,10 @@
         </mod>
         <add place="superlinear">familiar to my heart</add>
       </mod></line>
-    <line>As they had grown to yours ... erewhile I slept</line>
+    <line>As they <mod>
+        <del rend="overwritten">have</del>
+        <add place="intralinear">had</add>
+      </mod> grown to yours ... erewhile <add>I slept</add></line>
     <anchor xml:id="e2-0049.01"/>
   </zone>
 </surface>

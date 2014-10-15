@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0008" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0008" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0008.jp2"/>
   <zone type="main">
     <line rend="indent1">Which must bend the Invincible</line>
@@ -28,7 +28,10 @@
     <line rend="center">Chorus</line>
     <anchor xml:id="e2-0008.04"/>
     <line rend="indent5">The pale stars of the morn</line>
-    <line>Shine on a misery dire to be born<unclear reason="illegible">e</unclear></line>
+    <line>Shine on <mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">a</add>
+      </mod> misery dire to be born<unclear reason="illegible">e</unclear></line>
     <milestone unit="tei:l" spanTo="#e2-0008.05"/>
     <line>Dost thou faint mighty Titan? We laugh thee</line>
     <line rend="right">to scorn</line>

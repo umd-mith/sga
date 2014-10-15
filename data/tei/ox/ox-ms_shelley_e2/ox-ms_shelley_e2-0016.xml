@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0016" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0016" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0016.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0016.01"/>
@@ -10,8 +10,10 @@
     <anchor xml:id="e2-0016.01"/>
     <line>Remit the anguish of that lighted stare&#8212;</line>
     <milestone unit="tei:l" spanTo="#e2-0016.02"/>
-    <line>Close <del rend="strikethrough" instant="true">that</del> those wan lips
-        <unclear>&#8212;</unclear> let that thorn-wounded</line>
+    <line>Close <del rend="strikethrough" instant="true">that</del> those wan lips <mod>
+        <del rend="overwritten">;</del>
+        <add place="intralinear">&#8212;</add>
+      </mod> let that thorn-wounded</line>
     <line rend="right">brow</line>
     <anchor xml:id="e2-0016.02"/>
     <line>Stream not with blood&#8212;it mingles with thy tears!</line>
