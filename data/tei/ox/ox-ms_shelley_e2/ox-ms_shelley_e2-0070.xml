@@ -8,9 +8,13 @@
     <milestone unit="tei:speaker" spanTo="#e2-0070.01"/>
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e2-0070.01"/>
-    <line>There the voluptuous nightingales</line>
+    <line><del rend="unmarked"><unclear reason="illegible">T</unclear></del>There the voluptuous
+      nightingales</line>
     <line>Are awake through all the broad noonday</line>
-    <line>When one with bliss or sadness fails</line>
+    <line>When one with bliss or sadness <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">f</add>
+      </mod>ails</line>
     <line>
       <del rend="strikethrough">A</del><del rend="unmarked">n</del> And through the windless
       ivy-boughs</line>
@@ -25,9 +29,12 @@
         <del rend="strikethrough">faint</del>
         <add place="superlinear">weak</add>
       </mod> melody</line>
-    <line>Till some new <unclear>stream</unclear> of feeling bear</line>
-    <line><unclear>The song</unclear>
-      <unclear>,</unclear> &amp; all the woods are mute;</line>
+    <line>Till some new <mod>
+        <del rend="overwritten">strain</del>
+        <add place="intralinear">stream</add>
+      </mod> of feeling bear</line>
+    <line><unclear reason="illegible">T</unclear>he song <unclear reason="illegible">,</unclear>
+      &amp; all the woods are mute;</line>
     <line>When there is heard thro' the dim air</line>
     <line>The rush of wings <unclear>&#8212;</unclear>, &amp; rising there</line>
     <line>Like many a lake-surrounded flute</line>

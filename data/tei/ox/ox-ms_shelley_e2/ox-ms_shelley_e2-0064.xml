@@ -10,23 +10,33 @@
     <line rend="indent1">Of <mod>
         <del rend="strikethrough">sweet</del>
         <add place="superlinear">faint</add>
-      </mod> night <unclear>-</unclear>flowers, &amp; the waves</line>
-    <line rend="indent1">At the fountain-lighted caves</line>
+      </mod> night <unclear reason="illegible">-</unclear>flowers, &amp; the waves</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">Of</del>
+        <add place="intralinear">At</add>
+      </mod> the fountain-lighted caves</line>
     <line rend="indent1">While <mod>
-        <del rend="strikethrough">the</del>
+        <del rend="smear">the</del>
         <add place="superlinear">our</add>
       </mod> music wild &amp; sweet</line>
-    <line rend="indent2">Mocks thy gently-falling feet</line>
+    <line rend="indent2">Mock<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear">s</add>
+      </mod> thy gently-falling feet</line>
     <line rend="center">Child of Ocean!</line>
     <milestone unit="tei:speaker" spanTo="e2-0064.01"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0064.01"/>
-    <line>Shall we pursue the sound <unclear>?&#8212;</unclear> it grows more faint</line>
+    <line>Shall we pursue the sound <unclear reason="illegible">?&#8212;</unclear> it grows more
+      faint</line>
     <line>And distant</line>
     <milestone unit="tei:speaker" spanTo="#e2-0064.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0064.02"/>
-    <line rend="indent3">list &#8212; the strain floats nearer now</line>
+    <line rend="indent3">list &#8212; <mod>
+        <del rend="overwritten">it</del>
+        <add place="intralinear">the strain</add>
+      </mod> floats nearer now</line>
     <milestone unit="tei:speaker" spanTo="#e2-0064.03"/>
     <line rend="center">Echo</line>
     <anchor xml:id="e2-0064.03"/>
@@ -40,7 +50,7 @@
     <anchor xml:id="e2-0064.04"/>
     <line>How the notes sink upon the ebbing wind</line>
     <milestone unit="tei:speaker" spanTo="#e2-0064.05"/>
-    <line rend="center">Echo</line>
+    <line rend="center"><retrace cause="clarify" hand="#pbs">E</retrace>cho</line>
     <anchor xml:id="e2-0064.05"/>
     <line rend="indent3">O follow follow</line>
     <line rend="indent3">Thro the caverns hollow</line>

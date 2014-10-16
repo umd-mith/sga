@@ -7,11 +7,15 @@
   <zone type="library"><line rend="right">33</line></zone>
   <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>Ha! <del rend="strikethrough">fr <unclear>o</unclear></del> thy frozen pulses
-      flutter</line>
-    <line>With a love thou darest not utter&#8212;</line>
+    <line>Ha! <del rend="strikethrough">fr <unclear reason="illegible">o</unclear></del> thy frozen
+      pulses flutter</line>
+    <line>With a love thou darest<del rend="unmarked"><unclear reason="illegible">'</unclear></del>
+      not utter&#8212;</line>
     <line>Thou art murmuring&#8212;thou art weeping&#8212;</line>
-    <line rend="left">Was thine icy <mod>
+    <line rend="left"><mod>
+        <del rend="overwritten">is</del>
+        <add place="intralinear">Was</add>
+      </mod> thine icy <mod>
         <del rend="strikethrough">bosom then</del>
         <add place="sublinear">bosom leaping</add>
       </mod></line>
@@ -22,14 +26,17 @@
     <line>Round my neck thine arms enfold</line>
     <line rend="right">dead</line>
     <anchor xml:id="e2-0067.02"/>
-    <line>They are soft&#8212;but chill &amp; <mod>
+    <line>They are soft&#8212;but <mod>
+        <del rend="overwritten">dead</del>
+        <add place="intralinear">chill</add>
+      </mod> &amp; <mod>
         <del rend="strikethrough">weak</del>
         <add place="sublinear">weak</add>
       </mod></line>
     <line rend="indent1">And thy tears upon my <del rend="strikethrough">cheek</del> head</line>
     <line rend="indent1">Burn, as it were with frost&#8212;o speak</line>
     <anchor xml:id="e2-0067.01"/>
-    <line>Kiss me <unclear>;</unclear>&#8212;oh thy lips are cold&#8212;</line>
+    <line>Kiss me <unclear reason="illegible">;</unclear>&#8212;oh thy lips are cold&#8212;</line>
     <line>Round my neck thine arms enfold&#8212;</line>
     <line>They are soft&#8212;but chill &amp; dead</line>
     <line rend="indent1">And thy tears upon my head</line>
