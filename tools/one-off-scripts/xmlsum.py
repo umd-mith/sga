@@ -2,7 +2,7 @@
 
 """
 A crazy little script that summarizes what tags and attributes are used in the 
-SGA TEI data and writes out a report as HTML.
+SGA TEI data and writes out an HTML report.
 """
 
 import os
@@ -17,11 +17,11 @@ class XmlSum():
         self.s = {}
 
     def summarize(self, path):
+        self.doc_count += 1
         doc = etree.parse(path)
         self.add(doc.getroot())
 
     def add(self, e):
-        self.doc_count += 1
         ns, tag = re.match("(?:{(.+)})(.+)", e.tag).groups()
         self.tally(ns)
         self.tally(ns, tag)
@@ -34,26 +34,33 @@ class XmlSum():
             self.add(child)
     
     def tally(self, *keys):
+        d = self.dict(keys)
+        d["___count"] += 1
+
+    def count(self, *keys):
+        d = self.dict(keys, create=False)
+        if not d:
+            return 0
+        else:
+            return d['___count'] 
+
+    def dict(self, keys, create=True):
         d = self.s
         for k in keys:
             if k not in d:
-                d[k] = {"___count": 0}
+                if create:
+                    d[k] = {"___count": 0}
+                else:
+                    return None
             d = d[k]
-        d["___count"] = d["___count"] + 1
-
-    def text(self):
-        for ns in self._keys(self.s):
-            print "%s [%s]" % (ns, self.s[ns]["___count"])
-            for tag in self._keys(self.s[ns]):
-                print " %s [%s]" % (tag, self.s[ns][tag]["___count"])
-                for attribute in self._keys(self.s[ns][tag]):
-                    print "  %s [%s]" % (attribute, self.s[ns][tag][attribute]["___count"])
+        return d
 
     def html(self):
         print '''
 <!doctype html>
 <html>
   <head>
+    <title>XML Summary: %(count)s Files</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <style>
       body {
@@ -75,6 +82,9 @@ class XmlSum():
         font-size: larger;
         margin-top: 20px;
       }
+      .elements {
+        display: none;
+      }
       .attributes {
         display: none;
       }
@@ -89,22 +99,40 @@ class XmlSum():
   </head>
   <body>
   <div class="container">
-  <h1>XML Summary: %s files</h1>
+  <h1>XML Summary: %(count)s Files</h1>
   <ul class="namespaces">
-''' % c(self.doc_count)
-        for ns in self._keys(self.s):
-            print '  <li><span class="glyphicon glyphicon-plus"></span> <span class="namespace">%s</span> <span class="count">%s</span>' % (ns, c(self.s[ns]["___count"]))
+''' % {"count": c(self.doc_count)}
+        for ns in keys(self.s):
+            count = self.count(ns)
+            print '  <li>'
+            print '    <span class="glyphicon glyphicon-plus"></span>'
+            print '    <span class="namespace">%s</span>' % ns
+            print '    <span class="count">%s</span>' % c(count)
             print '    <ul class="elements">'
-            for tag in self._keys(self.s[ns]):
+            for tag in keys(self.s[ns]):
                 if ns == "http://www.tei-c.org/ns/1.0":
-                    e = '<a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-%s.html">&lt;%s&gt;</a>' % (tag, tag)
+                    a = '<a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-%s.html">&lt;%s&gt;</a>' % (tag, tag)
                 else:
-                    e = '&lt;%s&gt;' % tag
-                print '      <li><span class="glyphicon glyphicon-plus"></span> <span class="element">%s</span> <span class="count">%s</span>' % (e, c(self.s[ns][tag]["___count"]))
+                    a = '&lt;%s&gt;' % tag
+                count = self.count(ns, tag)
+                print '      <li>'
+                print '        <span class="glyphicon glyphicon-plus"></span>'
+                print '        <span class="element">%s</span>'% a
+                print '        <span class="count">%s</span>' % c(count)
                 print '        <ul class="attributes">'
-                for attribute in self._keys(self.s[ns][tag]):
-                    print '          <li><span class="attribute">%s</span> <span class="count">%s</span>' % (attribute, c(self.s[ns][tag][attribute]["___count"]))
+                for attribute in keys(self.s[ns][tag]):
+                    count = self.count(ns, tag, attribute)
+                    print '          <li>'
+                    print '            <span class="attribute">%s</span>' % attribute
+                    print '            <span class="count">%s</span>' % c(count)
+                    #for value in keys(self.s[ns][tag][attribute]):
+                    #    count = self.s[ns][tag][attribute]['___count']
+                    #    if count < 2: 
+                    #        continue
+                    print '          </li>'
+                print '          </li>'
                 print '        </ul>'
+            print '      </li>'
             print '    </ul>'
         print '''
 </ul>
@@ -121,7 +149,7 @@ class XmlSum():
         $(this).removeClass('glyphicon-minus');
         $(this).addClass('glyphicon-plus');
       }
-      $(this).parent().find("ul").each(function(i, ul) {
+      $(this).parent().children("ul").each(function(i, ul) {
         ul = $(ul);
         if (ul.is(":visible")) {
           ul.hide();
@@ -135,15 +163,26 @@ class XmlSum():
 </body>
 </html>
 '''
-        
 
-    def _keys(self, d):
-        keys = d.keys()
-        if '___count' in keys:
-            keys.pop(keys.index('___count'))
-        keys.sort(lambda a, b: cmp(d[b]['___count'], d[a]['___count']))
-        return keys
+def keys(d):
+    keys = d.keys()
+    if '___count' in keys:
+        keys.pop(keys.index('___count'))
+    keys.sort(lambda a, b: cmp(d[b]['___count'], d[a]['___count']))
+    return keys
 
+def c(n):
+    "1234 -> 1,234"
+    return format(n, ",d")
+
+def icon(n, state):
+    if n > 0:
+        if state == 'closed':
+            return '<span class="glyphicon glyphicon-plus"></span>'
+        else:
+            return '<span class="glyphicon glyphicon-minus"></span>'
+    else:
+        return ''
 
 def main():
     xs = XmlSum()
@@ -159,9 +198,6 @@ def main():
 
     xs.html()
 
-def c(n):
-    "1234 -> 1,234"
-    return format(n, ",d")
 
 if __name__ == "__main__":
     main()
