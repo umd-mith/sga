@@ -12,9 +12,15 @@
     <line rend="left"><add place="interlinear"><metamark function="displacement"
         >&#60;</metamark></add></line>
     <milestone unit="tei:seg" spanTo="#e2-0085.04" next="#e2-0085.03"/>
-    <line>And Self-contempt, bitterer to drink than blood;</line>
+    <line>And Self-<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">co</add>
+      </mod>ntempt, bitterer to drink than blood;</line>
     <anchor xml:id="e2-0085.04"/>
-    <line rend="indent1">With the bright form beside thee&#8212;</line>
+    <line rend="indent1">With <mod>
+        <del rend="overwritten">that</del>
+        <add place="intralinear">the</add>
+      </mod> bright form beside thee&#8212;</line>
     <line rend="indent1">Resist not the weakness&#8212;</line>
     <line rend="indent1"><mod>
         <del rend="strikethrough">For</del>
@@ -33,8 +39,10 @@
         <add place="superlinear">unloose thro life's portal</add>
       </mod></line>
     <milestone unit="tei:l" spanTo="#e2-0085.01"/>
-    <line>The<del rend="strikethrough">D <unclear>A</unclear></del> snake-like Doom coiled <del
-        rend="strikethrough">up</del> underneath his</line>
+    <line>The<del rend="strikethrough">D<unclear reason="illegible">A</unclear></del> snake-like <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>oom coiled <del rend="strikethrough">up</del> underneath his</line>
     <line rend="right">throne</line>
     <anchor xml:id="e2-0085.01"/>
     <line rend="indent2">By that alone!</line>

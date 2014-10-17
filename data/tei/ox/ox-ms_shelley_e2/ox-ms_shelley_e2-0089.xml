@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7480" xml:id="ox-ms_shelley_e2-0089" partOf="#ox-ms_shelley_e2">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7480" xml:id="ox-ms_shelley_e2-0089" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0089.jp2"/>
   <zone type="main">
-    <line rend="indent2">Their boats [arose] from the depth of the</line>
-    <line>Water then instantly drove on before the wind</line>
+    <line rend="indent2"><unclear reason="illegible">Thin bursts</unclear> arose from the depth of
+      the</line>
+    <line>Water then <unclear reason="illegible">one loudly</unclear> drove on before the
+      wind</line>
     <line rend="right">Borghese Garden</line>
-    <line>The <unclear>fen</unclear> bubbles the pavilion of water spirits</line>
+    <line>The <unclear reason="illegible">fen</unclear> bubbles the pavilion of water spirits</line>
     <line rend="right">3 still</line>
     <line rend="right">Clare</line>
     <line rend="indent4">Prometheus [SKETCH OF</line>
@@ -21,4 +23,3 @@
     <line rend="indent4">Witch of Atlas</line>
   </zone>
 </surface>
-

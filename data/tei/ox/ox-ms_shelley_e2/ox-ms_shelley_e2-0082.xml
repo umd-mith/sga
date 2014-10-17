@@ -9,7 +9,7 @@
     <line>A living Spirit</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.01"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.01"/>
-    <line rend="indent4"><unclear>A</unclear>sk what thou wouldst know</line>
+    <line rend="indent4"><unclear reason="case">A</unclear>sk what thou wouldst know</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.02"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.02"/>
     <line>What canst thou tell?</line>
@@ -23,11 +23,11 @@
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.05"/>
     <line rend="indent4">God.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.11"/>
-    <line rend="center">Asia<anchor xml:id="e2-0082.11"/>
-      <milestone unit="tei:l" spanTo="#e2-0082.12"/>Who made all</line>
+    <line rend="center">Asia<anchor xml:id="e2-0082.11"/> Who made all</line>
+    <milestone unit="tei:l" spanTo="#e2-0082.12"/>
     <line>That it contains &#8212; <mod>
         <del rend="strikethrough">
-          <unclear>S</unclear>ense</del>
+          <unclear reason="case">S</unclear>ense</del>
         <add place="superlinear">thought,</add>
       </mod> passion, reason, will,</line>
     <line>Imagination?</line>
