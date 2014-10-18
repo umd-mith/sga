@@ -6,7 +6,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0074.jp2"/>
   <zone type="main">
     <line>[f. 36r is blank]</line>
-    <line rend="indent1">The storm of sound is driven along</line>
+    <line rend="indent1">The storm of sound is driven <unclear reason="illegible"
+      >a</unclear>long</line>
     <line rend="indent1">Sucked up &amp; hurrying&#8212;as they fleet</line>
     <line rend="indent1">Behind its gathering billows meet</line>
     <line rend="indent1">And to the fatal mountain bear</line>
@@ -15,12 +16,15 @@
     <line><add><metamark function="displacement" xml:id="e2-0074.03">&#60;</metamark></add></line>
     <milestone unit="tei:scene" spanTo="#e2-0074.01"/>
     <line rend="center">Scene 3. A pinnacle of rock among</line>
-    <line>Mountains &#8212; Asia &amp; Panthea</line>
+    <line>Mountains &#8212; <add>Asia &amp; Panthea</add></line>
     <anchor xml:id="e2-0074.01"/>
     <milestone unit="tei:speaker" spanTo="#e2-0074.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0074.02"/>
-    <line>Hither the sound has borne us&#8212; to the realm</line>
+    <line>Hither the sound has borne us&#8212; <mod>
+        <del rend="overwritten"><unclear reason="illegible">'tis</unclear></del>
+        <add place="intralinear">to</add>
+      </mod> the realm</line>
     <line>Of Demogorgon, &amp; the mighty portal</line>
     <line>Like a Volcano's meteor-breathing chasm</line>
     <line>Whence the oracular vapour is breathed up</line>

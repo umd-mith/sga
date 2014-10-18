@@ -11,14 +11,20 @@
     <anchor xml:id="e2-0081.01"/>
     <line rend="indent1">To the Deep, to the Deep</line>
     <line rend="indent2">Down, Down!</line>
-    <line rend="indent1">Through the shade of Sleep</line>
+    <line rend="indent1">Through the shade of <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>leep</line>
     <line rend="indent1">Through the cloudy strife</line>
     <line rend="indent1">Of Death and of life</line>
     <line rend="indent1">Through the viel &amp; the bar</line>
     <line rend="indent1">Of things which seem &amp; are</line>
+    <milestone unit="tei:note" spanTo="#e2-0081.03"/>
+    <line><del rend="strikethrough">Desideratum</del></line>
+    <anchor xml:id="e2-0081.03"/>
     <milestone unit="tei:l" spanTo="#e2-0081.02"/>
     <line>Even to <mod>
-        <del rend="strikethrough"><add place="superlinear">Desideratum</add></del>
+        <del rend="strikethrough"><add place="superlinear">Desideratur</add></del>
       </mod>
       <mod>
         <del rend="strikethrough">Desideratur aliquid</del>
@@ -30,12 +36,18 @@
     <line rend="indent2">Down, Down!</line>
     <line rend="indent1">While the sound, whirls around,</line>
     <line rend="indent2">Down, Down!</line>
-    <line rend="indent1">As the fawn draws the hound</line>
+    <line rend="indent1">As the fawn draw<add>s</add> the hound</line>
     <line rend="indent1">As the lightning the vapour</line>
     <line rend="indent1">As a weak moth the taper</line>
-    <line rend="indent1">Death Despair, Love Sorrow</line>
+    <line rend="indent1">Death <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>espair, Love Sorrow</line>
     <line rend="indent1">Time both, To-day to-morrow;</line>
-    <line>As steel obeys the Spirit of the stone</line>
+    <line>As steel obeys the <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>pirit of the stone</line>
     <line rend="indent3">Down, Down</line>
   </zone>
 </surface>

@@ -10,21 +10,26 @@
   <zone type="main" corresp="#e2-0075.05">
     <line>Of meadow flowers, or <mod>
         <del rend="strikethrough">in the violets heart</del>
-        <add place="superlinear">folded violets deep</add>
+        <retrace cause="clarify" hand="#pbs"><add place="superlinear">folded violets
+          deep</add></retrace>
       </mod></line>
     <line>Or on thier dying odours, when they die</line>
     <line>Or in the sunlight of the sphered dew?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0077.01"/>
     <line rend="center">2<hi rend="sup">d</hi>.</line>
     <anchor xml:id="e2-0077.01"/>
-    <line>Aye, many more <unclear>,</unclear> which we may well <mod>
+    <line>Aye, many more <unclear reason="illegible">,</unclear> which we may well <mod>
         <del rend="strikethrough">imagine</del>
-        <add place="superlinear">divine</add>
+        <retrace cause="clarify" hand="#pbs"><add place="superlinear">divine</add></retrace>
       </mod></line>
-    <line>But should we <unclear>try</unclear> to speak, <del rend="strikethrough">the</del>
-      noontide w<hi rend="sup">d</hi>. come <unclear>,</unclear></line>
-    <line>And thwart Silenus find his goats undrawn</line>
+    <line>But should we <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear"><unclear reason="illegible">try</unclear></add>
+      </mod> to speak, <del rend="strikethrough">the</del> noontide w<hi rend="sup">d</hi>. come
+        <unclear reason="illegible">,</unclear></line>
+    <line>And thwart Silenus find his g<unclear reason="illegible">o</unclear>ats undrawn</line>
     <line>And grudge to sing those wise &amp; lovely songs</line>
+    <milestone unit="tei:seg" spanTo="#e2-0077.03" corresp="#e2-0077.04"/>
     <line><mod>
         <del rend="strikethrough">Which cheer</del>
         <del rend="strikethrough">our</del>
@@ -35,11 +40,16 @@
         <add place="superlinear">solitary</add>
       </mod> twilights, &amp; which charm</line>
     <line>To silence the unenvying nightingales ..</line>
+    <anchor xml:id="e2-0077.03"/>
     <line>Of fate &amp; chance &amp; God, &amp; Chaos old <unclear reason="illegible"
-      >;</unclear></line>
-    <line rend="indent1">And love, &amp; the chained Titans woful doom</line>
-    <line>And how he shall be loosed, &amp; make the Earth</line>
-    <line rend="indent1">One brotherhood&#8212;delighful strains which cheer</line>
+      >,</unclear></line>
+    <line rend="indent1"><retrace cause="clarify" hand="#pbs">And love</retrace>, <retrace
+        cause="clarify" hand="#pbs">&amp; the chained Titans woful doom</retrace></line>
+    <line><retrace cause="clarify" hand="#pbs">And how he shall be loosed, &amp; make the
+        Earth</retrace></line>
+    <line rend="indent1"><retrace cause="clarify" hand="#pbs">One brotherhood&#8212;delighful
+        strains which cheer</retrace></line>
+    <anchor xml:id="e2-0077.04"/>
   </zone>
   <zone type="bottom">
     <milestone unit="tei:seg" spanTo="#e2-0077.02" corresp="#e2-0076.03"/>

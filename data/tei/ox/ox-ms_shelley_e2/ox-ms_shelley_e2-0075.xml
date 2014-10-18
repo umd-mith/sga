@@ -11,10 +11,16 @@
     <milestone unit="tei:stage" spanTo="#e2-0075.01"/>
     <line><del rend="unmarked">ente</del><del rend="strikethrough">r two young</del>
       <del rend="strikethrough"><hi rend="underline">female</hi></del>
-      <del rend="unmarked">Fauns</del></line>
+      <del rend="unmarked">Fa<mod>
+          <del rend="overwritten">wns</del>
+          <add place="intralinear">uns</add>
+        </mod></del></line>
     <anchor xml:id="e2-0075.01"/>
     <milestone unit="tei:speaker" spanTo="#e2-0075.02"/>
-    <line rend="center">1<hi rend="sup">st</hi>. Faun</line>
+    <line rend="center">1<hi rend="sup">st</hi>. Fa<mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">u</add>
+      </mod>n</line>
     <anchor xml:id="e2-0075.02"/>
     <line>Canst thou imagine where those spirits live</line>
     <line>Which make such delicate music in the woods?</line>
@@ -36,18 +42,20 @@
     <line>Are the pavilions where such dwell, &amp; float</line>
     <line>Under the green &amp; golden atmosphere</line>
     <line>tide</line>
-    <line>Which <unclear>the</unclear> noon <mod>
+    <line>Which <unclear reason="illegible">the</unclear> noon<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">tide</add>
       </mod> kindles through the woven leaves</line>
     <line>And when these burst, &amp; the thin fiery air</line>
     <!--Encode the alternate readings-->
-    <line><milestone unit="tei:seg" spanTo="#e2-0075.06"/><add place="superlinear">shining <unclear>h</unclear>omes</add>The which they breathed
-      within those lucid homes <milestone unit="tei:seg" spanTo="#e2-0075.07"/><add place="superlinear">lucent domes</add>
-      <unclear>,</unclear></line>
+    <line><milestone unit="tei:seg" spanTo="#e2-0075.06"/><add place="superlinear">shining
+          <unclear>h</unclear>omes</add>The which they breathed within those lucid homes <milestone
+        unit="tei:seg" spanTo="#e2-0075.07"/><add place="superlinear">lucent domes</add>
+      <unclear reason="illegible">,</unclear></line>
     <line>Ascends to flow like meteors through the night <unclear>&#8212;</unclear></line>
     <line>They ride on <del rend="strikethrough">it</del>
-      <del rend="strikethrough">&amp;</del> [<del rend="strikethrough">their</del> ] &amp; in
+      <del rend="strikethrough">&amp;</del>
+      <del rend="strikethrough"><unclear reason="illegible">their</unclear></del> &amp; in
       fire</line>
     <line rend="indent1">They rein <del rend="strikethrough">its</del> their headlong speed, &amp;
       glide <del rend="strikethrough">with it</del></line>

@@ -5,7 +5,10 @@
   uly="0" lrx="5368" lry="7218" xml:id="ox-ms_shelley_e2-0068" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0068.jp2"/>
   <zone type="main">
-    <line>Nor sun nor moon nor wind nor rain</line>
+    <line><mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">N</add>
+      </mod>or sun nor moon nor wind nor rain</line>
     <line>Can pierce its interwoven bowers;</line>
     <line>Nor aught save <unclear>where</unclear> some cloud of dew</line>
     <line>Drifted along the earth-creeping breeze</line>
@@ -18,7 +21,8 @@
     <line>Of the green laurel, blown anew;</line>
     <line>And bends &amp; then fades silently</line>
     <line>One frail &amp; fair anemone:</line>
-    <line>Or <unclear>where</unclear> some star of many a one</line>
+    <line>Or <unclear reason="illegible">where</unclear> some star of many a <unclear reason="case"
+        >o</unclear>ne</line>
     <line>That climb &amp; wander through steep Night</line>
     <line>Has found the <mod>
         <del rend="strikethrough">spot</del>
