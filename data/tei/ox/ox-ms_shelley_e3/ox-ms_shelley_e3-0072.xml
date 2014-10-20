@@ -25,9 +25,14 @@
     <line>None fawned, none trembled, none with eager fear</line>
     <line>Gazed on anothers eye of cold command</line>
     <line>Until the <mod>
-        <del rend="strikethrough">ca<hi rend="underline">p</hi>tive</del>
+        <milestone unit="tei:seg" spanTo="#e3-0072.02" xml:id="e3-0072.03"/>
+        <del rend="strikethrough">ca<hi rend="underline">pt</hi>ive</del>
+        <anchor xml:id="e3-0072.02"/>
+        <milestone unit="tei:seg" spanTo="#e3-0072.04" xml:id="e3-0072.05"/>
         <add place="superlinear">subject</add>
-      </mod>of a tyrants will</line>
+        <anchor xml:id="e3-0072.04"/>
+      </mod><alt targets="#e3-0072.03 #e3-0072.05" mode="excl" weights="0 1"/> of a tyrants
+      will</line>
     <line><add place="sublinear"><metamark function="count">1800</metamark></add>Became, worse fate,
       the <mod>
         <del rend="strikethrough">subject</del>
@@ -36,6 +41,7 @@
     <line>Which spurred him, like an outspent horse, to death&#8212;</line>
     <line>None wrought his lips in truth entangling lines</line>
     <line>Which smiled the lie his tongue disdained to speak</line>
-    <line rend="left"><unclear><metamark>?</metamark></unclear></line>
+    <line rend="left"><add hand="#mws"><unclear><metamark function="alternate"
+          >?</metamark></unclear></add></line>
   </zone>
 </surface>
