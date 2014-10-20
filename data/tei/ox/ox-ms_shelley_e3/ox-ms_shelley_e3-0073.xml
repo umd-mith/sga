@@ -42,10 +42,10 @@
     <milestone unit="tei:seg" spanTo="#e3-0073.02" corresp="#e3-0073.03"/>
     <line>In memory of the tidings it has borne</line>
     <anchor xml:id="e3-0073.02"/>
-    <line rend="indent1">Yoked to it by an amphisbaenic snake</line>
-    <line><add><metamark function="count">430</metamark></add><hi rend="underline">And Drawn by the
-        likeness of those </hi><del rend="strikethrough"><hi rend="underline">winged
-        steeds</hi></del></line>
+    <line rend="indent1">Yoked to it by an amphisb&#xE6;nic snake</line>
+    <line><add><metamark function="count">430</metamark></add><del rend="strikethrough">And</del>
+      <del rend="strikethrough">Drawn by the likeness of those <del rend="strikethrough">winged
+          steeds</del></del></line>
     <line>The likeness of those winged steeds will mock</line>
     <line>The flight from which they find repose&#8212;alas</line>
     <line><del rend="strikethrough">Withe</del> Wither has wandered now my partial tongue</line>
@@ -53,7 +53,9 @@
     <line>As I have said I floated to the Earth</line>
     <line><add><metamark><hi rend="underline">? </hi>
         </metamark><metamark function="separate">*</metamark></add></line></zone>
-  <zone type="bottom"><line><hi rend="underline">Yoked</hi></line></zone>
+
+  <zone type="bottom"><line>Y<hi rend="underline">oke</hi>d</line></zone>
+  <!-- Investigate what kind of encoding can describe a possible start-->
 
   <zone type="left_margin" rotate="90" corresp="#e3-0073.01">bright &amp; liquid sky</zone>
 </surface>

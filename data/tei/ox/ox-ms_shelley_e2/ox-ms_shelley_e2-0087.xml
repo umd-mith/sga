@@ -7,7 +7,8 @@
   <zone type="library"><line rend="right">43</line>
     <line rend="right">(ult.)</line></zone>
   <zone type="main">
-    <line rend="left">earth</line>
+    <line rend="left"><milestone unit="tei:seg" spanTo="#e2-0087.02" xml:id="e2-0087.03"
+        />earth<anchor xml:id="e2-0087.02"/></line>
     <milestone unit="tei:seg" spanTo="#e2-0087.01" corresp="e2-0086.01"/>
     <line>Before the wind <mod>
         <del rend="overwritten">h</del>

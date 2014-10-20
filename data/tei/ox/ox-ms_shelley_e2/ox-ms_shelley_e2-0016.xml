@@ -18,9 +18,10 @@
     <anchor xml:id="e2-0016.02"/>
     <line>Stream not with blood&#8212;it mingles with thy tears!</line>
     <line><mod>
-        <add place="intralinear">Fix</add>
-        <del rend="strikethrough">O</del>
-      </mod> fix those tortured orbs in peace &amp; death</line>
+        <add place="intralinear" xml:id="e2-0016.03">Fix</add>
+        <del rend="strikethrough" next="#e2-0016.03">O</del>
+        <del rend="unmarked">fix</del>
+      </mod> those tortured orbs in peace &amp; death</line>
     <line>So thy sick throes shake not that crucifix</line>
     <line>So those pale fingers play not with thy gore&#8212;</line>
     <line>O horrible! thy name I will not speak</line>
@@ -35,7 +36,7 @@
     <line>Impaled in lingering fire: and mighty realms</line>
     <line>Float by my feet like sea-uprooted isles</line>
     <line>Whose sons are kneaded down in common blood</line>
-    <line>By the red light of thier own burning homes&#8212;</line>
+    <line>By the red light of thier own burning homes&#x2014;</line>
     <line rend="indent5"><add><metamark function="count">599</metamark></add></line>
   </zone>
 </surface>
