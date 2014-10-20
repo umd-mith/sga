@@ -4,8 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
   xml:id="ox-ms_shelley_e1-0085" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0085.jp2"/>
+ <zone type="library">
+  <line>42</line>
+   </zone>
   <zone type="main">
-    <line>42</line>
+    
     <line>on this diversity of power.</line>
     <line>I will tell you o Ion what appears</line>
     <line>to me to be the cause of this</line>
@@ -19,9 +22,11 @@
     <line><hi rend="underline">Mer</hi>cury</line>
     <line>alas,</line>
     <line>xThou canst not count thy years to come of pain?</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0085.01"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0085.01"/>
     <line>They last while Jove must reign, nor more nor less</line>
-    <line>Do I desire or fear{.}</line>
+    <line>Do I desire or fear<unclear>.</unclear></line>
     <line>you, a power like that which</line>
     <line><del rend="strikethrough">Euripides</del> resides in the stone called</line>
     <line>magnet by Euripides &amp; heracleia</line>

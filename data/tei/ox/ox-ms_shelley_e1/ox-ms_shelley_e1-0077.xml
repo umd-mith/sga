@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0077" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0077" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0077.jp2"/>
-  <zone type="main">
+  <zone type="library">
     <line>38</line>
+  </zone>
+  <zone type="main">
     <line>illustrates them, must be the same.--</line>
     <line><del rend="strikethrough">in the</del></line>
-    <line><hi rend="underline">Ion</hi> As<hi rend="underline">sur</hi>edly <hi rend="underline">Soc</hi>. Yet <del rend="strikethrough">if</del> [?<del rend="strikethrough">progress</del>]</line>
+    <line><hi rend="underline">Ion</hi> As<hi rend="underline">sur</hi>edly <hi rend="underline"
+        >Soc</hi>. Yet <del rend="strikethrough">if</del> [?<del rend="strikethrough"
+      >progress</del>]</line>
     <line>[<hi rend="underline">?of] spe</hi>ak of</line>
     <line>[?of]</line>
-    <line><del rend="strikethrough">consideration</del> any other art--<hi rend="superscript">;</hi> the same</line>
+    <line><del rend="strikethrough">consideration</del> any other art--<hi rend="superscript">;</hi>
+      the same</line>
     <line>^</line>
     <line>mode of consideration must be</line>
     <line>[admitted] with respect to all arts; do</line>
@@ -34,7 +39,8 @@
     <line>The contrast would have been completeter if the sentiment</line>
     <line>had been transposed: but wherefore sacrifize the philoso</line>
     <line>phical truth, that love however monstrous in its expression</line>
-    <line>is still less worthy of [horror] than hatred{--}[<del rend="strikethrough">the</del>] perhaps in</line>
+    <line>is still less worthy of [horror] than hatred{--}[<del rend="strikethrough">the</del>]
+      perhaps in</line>
     <line>[?whatever degree]</line>
   </zone>
 </surface>
