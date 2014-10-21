@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0010" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0010" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0010.jp2"/>
   <zone type="main">
     <line><add><unclear>Salt</unclear></add></line>
@@ -17,9 +17,13 @@
     <line>Man looks on his creation like a God</line>
     <line>And sees that it is glorious, drives him on</line>
     <line>The wreck of his own will, the scorn of Earth,</line>
-    <line>The outcast, the abandoned, the alone?&#8212;</line>
-   <milestone unit="tei:l" spanTo="#e3-0010.01"/>
-    <line>Not Jove, <del rend="strikethrough">for</del>  while<add place="superlinear">yet</add> his frown shook Heaven, aye</line>
+    <line>The outcast<mod>
+        <del rend="erased">?</del>
+        <add place="intralinear">,</add>
+      </mod> the abandoned, the alone?&#8212;</line>
+    <milestone unit="tei:l" spanTo="#e3-0010.01"/>
+    <line>Not Jove, <del rend="strikethrough">for</del> while<add place="superlinear">yet</add> his
+      frown shook Heaven, aye</line>
     <line>when</line>
     <anchor xml:id="e3-0010.01"/>
     <line>His adversary from adamantine chains</line>
@@ -31,10 +35,9 @@
     <line>All spirits are enslaved which serve things</line>
     <line>evil.</line>
     <line>Thou knowest if Jupiter be such or no.</line>
-    <milestone unit="tei:speaker" spanTo="e3-0010.03" />
+    <milestone unit="tei:speaker" spanTo="e3-0010.03"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0010.03"/>
     <line>Whom calledst thou God?</line>
   </zone>
 </surface>
-

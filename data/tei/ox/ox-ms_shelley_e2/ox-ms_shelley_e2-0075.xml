@@ -48,10 +48,14 @@
       </mod> kindles through the woven leaves</line>
     <line>And when these burst, &amp; the thin fiery air</line>
     <!--Encode the alternate readings-->
-    <line><milestone unit="tei:seg" spanTo="#e2-0075.06"/><add place="superlinear">shining
-          <unclear>h</unclear>omes</add>The which they breathed within those lucid homes <milestone
-        unit="tei:seg" spanTo="#e2-0075.07"/><add place="superlinear">lucent domes</add>
-      <unclear reason="illegible">,</unclear></line>
+    <line><add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.06"
+          xml:id="e2-0075.09"/>shining <unclear reason="unclear">h</unclear>omes<anchor
+          xml:id="e2-0075.06"/></add>The which they breathed within those <milestone unit="tei:seg"
+        spanTo="#e2-0075.08" xml:id="e2-0075.11"/>lucid homes<anchor xml:id="e2-0075.08"/>
+      <add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.07" xml:id="e2-0075.10"
+        />lucent domes<anchor xml:id="e2-0075.07"/></add>
+      <unclear reason="illegible">,</unclear><alt targets="#e2-0075.09 #e2-0075.10 #e2-0075.11"
+        mode="excl" weights="0 1 0"/></line>
     <line>Ascends to flow like meteors through the night <unclear>&#8212;</unclear></line>
     <line>They ride on <del rend="strikethrough">it</del>
       <del rend="strikethrough">&amp;</del>

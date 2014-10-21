@@ -13,13 +13,16 @@
         <add place="superlinear">It makes</add>
       </mod> the reptile equal to the God ...</line>
     <line>They who inspire it most, are fortunate</line>
-    <line>As I am now <unclear>:</unclear> but thou who feel it most</line>
+    <line>As I am now <mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">:</add>
+      </mod> but thou who feel it most</line>
     <line>Are happier still, after long sufferings</line>
     <line>As I shall soon become</line>
     <milestone unit="tei:speaker" spanTo="#e3-0024.01"/>
     <line rend="center"><del rend="strikethrough">Panthea</del></line>
     <anchor xml:id="e3-0024.01"/>
-    <line rend="indent4">list, spirits speak <unclear>.</unclear></line>
+    <line rend="indent4">list, spirits speak <unclear reason="illegible">.</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e3-0024.02"/>
     <line rend="center"><mod>
         <del rend="strikethrough">Song of an enamoured Spirit</del>
