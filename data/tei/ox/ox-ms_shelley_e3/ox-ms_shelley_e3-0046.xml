@@ -10,10 +10,12 @@
     <line>From its curved roof the mountain's frozen tears <add><metamark function="count"
           >150</metamark></add></line>
     <line>Like snow or silver or long diamond spires</line>
-    <line>Hang downward, raining <mod>
+    <line><milestone unit="tei:seg" spanTo="#e3-0046.05" xml:id="e3-0046.06"/>Hang downward<anchor
+        xml:id="e3-0046.05"/>, raining <mod>
         <del rend="strikethrough">down</del>
         <add place="superlinear">forth</add>
-      </mod> a doubtful light;</line>
+      </mod> a doubtful light; <alt targets="#e3-0046.06 #e3-0047.04" mode="excl" weights="1 0"
+      /></line>
     <line>And there is heard the ever-moving air</line>
     <line>Whispering without from tree to tree, &amp; birds,</line>
     <line>And bees; and all around are mossy seats</line>

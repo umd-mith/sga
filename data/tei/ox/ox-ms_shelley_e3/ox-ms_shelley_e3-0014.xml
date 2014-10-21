@@ -11,11 +11,11 @@
     <line>The rocks are cloven, &amp; through the purple night</line>
     <line>I see Cars drawn by rainbow-winged steeds</line>
     <milestone unit="tei:l" spanTo="#e3-0014.02"/>
-    <line>Which trample the dim winds <unclear>:</unclear> in each there</line>
+    <line>Which trample the dim winds <unclear reason="illegible">:</unclear> in each there</line>
     <line rend="right">stands</line>
     <anchor xml:id="e3-0014.02"/>
-    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight
-        <unclear>.</unclear></line>
+    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight <unclear
+        reason="illegible">.</unclear></line>
     <line>Some look behind, as fiends pursued them there</line>
     <line>And yet I see no shapes but the keen stars</line>
     <line>Others with burning eyes lean forth, &amp; drink</line>
@@ -37,11 +37,11 @@
     <milestone unit="tei:speaker" spanTo="#e3-0014.04"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0014.04"/>
-    <line>A Spirit with a dreadful countenance</line>
+    <line>A <unclear reason="case">S</unclear>pirit with a dreadful countenance</line>
     <line><mod>
         <del rend="strikethrough">Waits with it's</del>
-        <add place="superlinear"><unclear>Ch</unclear></add>
-      </mod> chariot by the craggy gulph</line>
+        <add place="superlinear"><unclear reason="illegible">Ch</unclear></add>
+    </mod><anchor xml:id="e3-0014.06"/> chariot by the craggy gulph</line>
     <line>Unlike thy brethren &#8212; ghastly charioteer</line>
     <milestone unit="tei:l" spanTo="#e3-0014.05"/>
     <line>What art thou? whither wouldst thou bear me</line>

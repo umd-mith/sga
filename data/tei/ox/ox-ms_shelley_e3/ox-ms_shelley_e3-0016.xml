@@ -8,8 +8,11 @@
     <milestone unit="tei:speaker" spanTo="#e3-0016.01"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0016.01"/>
-    <line>I am the shadow of a destiny</line>
-    <line>More dread than is my aspect <unclear>&#8212;</unclear> ere yon planet</line>
+    <line>I am the <milestone unit="tei:seg" spanTo="#e3-0016.07" xml:id="e3-0016.08"/>shadow<anchor
+        xml:id="e3-0016.07"/> of a <retrace cause="clarify">destiny</retrace><alt
+        targets="#e3-0016.08 #e3-0017.02" mode="excl" weights="1 0"/></line>
+    <line>More dread than is my aspect <unclear reason="illegible">&#8212;</unclear> ere yon
+      planet</line>
     <line>Has set, the Darkness which ascends with me</line>
     <line>Shall wrap in lasting night Heaven's kingless throne</line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.02"/>
@@ -19,7 +22,13 @@
     <milestone unit="tei:speaker" spanTo="#e3-0016.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e3-0016.03"/>
-    <line rend="indent4">The terrible shadow floats</line>
+    <line rend="indent4"><mod>
+        <del rend="overwritten">That</del>
+        <add place="intralinear">The</add>
+      </mod> terrible s<mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">h</add>
+      </mod>adow floats</line>
     <line>Up from its throne, as <mod>
         <del rend="strikethrough">doth</del>
         <add place="superlinear">may</add>
@@ -29,12 +38,20 @@
         <add place="superlinear">oer</add>
       </mod> the sea&#8212;</line>
     <line>Lo! it ascends the Car... the coursers fly</line>
-    <line>Terrified; &amp; <mod>
+    <line>Terrified<mod>
+        <del rend="overwritten">.</del>
+        <add place="intralinear">;</add>
+      </mod>
+      <mod>
+        <del rend="unmarked">&amp;</del>
         <del rend="strikethrough">its path darkens the night</del>
         <add place="superlinear">watch its path among the stars</add>
       </mod> &#8212;</line>
     <line><mod>
-        <del rend="strikethrough">Darkening</del>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">Darkens</del>
+            <add place="intralinear">Darkening</add>
+          </mod></del>
         <add place="sublinear">Blackening</add>
       </mod> the night</line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.04"/>
@@ -44,9 +61,12 @@
       <del rend="strikethrough">see</del>
       <del rend="strikethrough">See near the verge another chariot</del>
       <del rend="strikethrough">stays</del></line>
-    <line rend="indent3">Thus I am answered&#8212;strange!</line>
+    <line rend="indent3">Thus I am answered&#8212;strange<mod>
+        <del rend="unmarked">.</del>
+        <add place="intralinear">!</add>
+      </mod></line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.05"/>
-    <line rend="center">Panthea</line>
+    <line rend="center"><unclear reason="illegible">P</unclear>anthea</line>
     <anchor xml:id="e3-0016.05"/>
     <line>See, near the verge another chariot stays</line>
     <line rend="indent1">An ivory shell inlaid with crimson fire</line>

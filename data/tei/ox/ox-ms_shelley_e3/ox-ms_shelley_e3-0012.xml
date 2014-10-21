@@ -19,10 +19,11 @@
     <anchor xml:id="e3-0012.03"/>
     <line rend="indent4">&#8212;If the Abysm</line>
     <line>Could vomit forth its secrets:&#8212; but a voice</line>
-    <line>Is wanting, the deep truth is imageless;</line>
+    <line>Is wanting, the deep truth is imageless<unclear reason="illegible">;</unclear></line>
     <line>For what would it avail to bid thee gaze</line>
     <line>On the revolving world? what to bid speak</line>
-    <line>Fate, Time, Occasion, Chance &amp; Change:&#8212;To these</line>
+    <line>Fate, Time, Occasion, Chance &amp; <unclear reason="case">C</unclear>hange:&#8212;To
+      these</line>
     <line>All things are subject but eternal love.</line>
     <milestone unit="tei:speaker" spanTo="#e3-0012.04"/>
     <line rend="center">Asia</line>
@@ -31,7 +32,7 @@
     <line>The <mod>
         <del rend="strikethrough">answer</del>
         <add place="superlinear">response</add>
-      </mod>thou hast given; &amp; of such truths</line>
+      </mod>thou hast given<unclear reason="illegible">;</unclear> &amp; of such truths</line>
     <line>Each to itself must be the oracle.&#8212;</line>
     <line><metamark function="count">441</metamark></line>
     <line>One more demand ... and <mod>
@@ -41,9 +42,14 @@
         <del rend="strikethrough">now</del>
         <add place="superlinear">me</add>
       </mod></line>
-    <line><del rend="strikethrough">Nor doubtful nor obscure.</del>Prometheus shall arise</line>
+    <anchor xml:id="e3-0012.06"/>
+    <line><del rend="strikethrough">Nor doubtful nor obscure.</del><anchor xml:id="e3-0012.07"
+      />Prometheus shall arise</line>
     <line>Henceforth the Sun of this rejoicing world</line>
-    <line>When shall the destined hour arrive?</line>
+    <line>When <mod>
+        <del rend="overwritten">will</del>
+        <add place="intralinear">shall</add>
+      </mod> the destined hour arrive?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0012.05"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0012.05"/>

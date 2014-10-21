@@ -30,13 +30,23 @@
         <del rend="strikethrough">even now it</del>
         <add place="superlinear">and I know</add>
       </mod> it must be so</line>
-    <line>I mixed my own weak nature with his love</line>
-    <line>And</line>
+    <line>I mixed my own weak nature with his <mod>
+        <del rend="overwritten">life</del>
+        <add place="intralinear">love</add>
+      </mod></line>
+    <line>An<retrace cause="clarify">d</retrace></line>
     <line rend="indent4">And my thoughts</line>
     <line rend="indent1">Are like the many forests of a vale</line>
     <line rend="indent1">Through which the might of whirlwind &amp; of rain</line>
     <milestone unit="tei:l" spanTo="#e3-0027.03"/>
-    <line rend="indent1">Ha<unclear>d</unclear> passed <del rend="strikethrough">bu</del>
+    <line rend="indent1">Ha<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">d</add>
+      </mod> pas<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">sed</add>
+      </mod>
+      <del rend="strikethrough">bu</del>
       <del rend="strikethrough">and</del> they <mod>
         <del rend="strikethrough">glimmer</del>
         <add place="superlinear">rest <del rend="smear">rest</del></add>
@@ -49,7 +59,10 @@
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0027.04"/>
     <line rend="indent1">My soul is an enchanted Boat</line>
-    <line rend="indent1">Which, like a sleeping swan, doth float</line>
+    <line rend="indent1">Which, li<mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">k</add>
+      </mod>e a sleeping swan, doth <unclear reason="illegible">f</unclear>loat</line>
     <line>Upon the silver waves of thy sweet singing,</line>
     <line rend="indent1">And thine doth like an Angel sit</line>
     <line rend="indent1">Beside the helm conducting it</line>
