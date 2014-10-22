@@ -6,15 +6,17 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0036.jp2"/>
   <zone type="main">
     <line>On Caucasus&#8212;he would not doom me thus&#8212;</line>
+    <anchor xml:id="e3-0036.05"/>
     <line>No <mod>
         <del rend="strikethrough">respite</del>
         <add place="superlinear">refuge</add>
       </mod>, no appeal&#8212; . . .</line>
     <line rend="indent5"><del rend="strikethrough">Defiance</del></line>
     <line rend="indent4"><del rend="strikethrough">then shall we sink</del></line>
-    <line rend="indent4">Let <del rend="strikethrough">loose <unclear>o</unclear></del> Hell unlock
-          <add><metamark function="count">75</metamark></add></line>
-    <line><hi rend="underline">Thy</hi><add place="superlinear">Its</add> mounded Oceans of
+    <line rend="indent4"><anchor xml:id="e3-0036.06"/>Let <del rend="strikethrough">loose <unclear
+          reason="illegible">o</unclear></del> Hell unlock <add><metamark function="count"
+          >75</metamark></add></line>
+    <line><del rend="strikethrough">Thy</del><add place="superlinear">Its</add> mounded Oceans of
       tempestuous fire</line>
     <line><del rend="strikethrough">Swallow</del> And <mod>
         <del rend="strikethrough">let</del>
@@ -22,8 +24,8 @@
       </mod>them into the bottomless void</line>
     <line>The desolated world &amp; thou &amp; me</line>
     <line>The conqueror &amp; the conquered, &amp; the wreck</line>
-    <line>Of that for which they combated . . .Ai, ai,<add><metamark function="count"
-        >80</metamark></add></line>
+    <line><unclear reason="illegible">O</unclear>f that for which they combated . . .Ai,
+          ai,<add><metamark function="count">80</metamark></add></line>
     <line>The elements obey me not . . . I sink . . .</line>
     <line><mod>
         <del rend="strikethrough">Down down down down dizzily, far <del rend="strikethrough"><add
@@ -31,6 +33,7 @@
         <add place="superlinear">Dizzily down &#8212; ever, forever, down<add><metamark
               function="count">82</metamark></add></add>
       </mod></line>
+    <anchor xml:id="e3-0036.07"/>
     <line><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
     <milestone unit="tei:scene" spanTo="#e3-0036.01"/>
     <line rend="indent2">Scene The mouth of a great</line>
@@ -48,6 +51,6 @@
     <milestone unit="tei:speaker" spanTo="#e3-0036.04"/>
     <line rend="center">Apollo</line>
     <anchor xml:id="e3-0036.04"/>
-    <line>Aye, when the strife was ended which</line>
+    <line>Aye, when the strife was ended which <anchor xml:id="e3-0036.08"/></line>
   </zone>
 </surface>
