@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5394" lry="7036" xml:id="ox-ms_shelley_e3-0043" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5394" lry="7036" xml:id="ox-ms_shelley_e3-0043" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0043.jp2"/>
   <zone type="library">19</zone>
   <zone type="main">
@@ -10,17 +10,19 @@
     <line>But a dim &amp; noonday gleam</line>
     <line>From the shadow of a dream:</line>
     <line rend="indent2">a louder &amp; still remoter Voice</line>
-    <line>Peace! the abyss is wreathed with scorn</line>
+    <line>Peace! the abyss is wreathed wi<retrace cause="clarify">th</retrace> scorn</line>
     <line>At your presumption, Atom-born!</line>
     <line>What is Heaven? &amp; what are ye</line>
     <line rend="indent1">Who its brief expanse inherit?</line>
     <line>What are suns &amp; spheres which flee</line>
     <line rend="indent2">With the instinct of that spirit</line>
+    <milestone unit="tei:seg" spanTo="#e3-0043.01" corresp="#e3-0042.05"/>
     <line rend="left">The loud Deep calls me home even now, to feed it</line>
+    <anchor xml:id="e3-0043.01"/>
     <line>Of which ye are but a part?</line>
     <line>Drops which Natures mighty heart</line>
     <line>Drives through thinnest veins. Depart!</line>
-    <line></line>
+    <line/>
     <line>What is Heaven? a globe of dew</line>
     <line>Filling in the morning new</line>
     <line>Some eyed flower whose young leaves waken</line>
@@ -28,4 +30,3 @@
     <line>Constellated suns unshaken</line>
   </zone>
 </surface>
-

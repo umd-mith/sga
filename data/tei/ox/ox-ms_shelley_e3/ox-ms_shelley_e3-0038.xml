@@ -24,12 +24,18 @@
     <milestone unit="tei:speaker" spanTo="#e3-0038.03"/>
     <line rend="center">Apollo</line>
     <anchor xml:id="e3-0038.03"/>
-    <line>An eagle so, caught in some bursting cloud <metamark function="count">95</metamark></line>
-    <line>On Caucasus <unclear>,</unclear> his thunder-baffled wings</line>
-    <line><unclear>E</unclear>ntangled in the whirlwind, &amp; his eyes</line>
+    <line>An eagle so, caught in some burs<retrace cause="clarify">t</retrace>ing cloud <metamark
+        function="count">95</metamark></line>
+    <line>On Caucasus <mod>
+        <del rend="overwritten">;</del>
+        <add place="intralinear">,</add>
+      </mod> his thunder-baffled wings</line>
+    <line><unclear reason="illegible">E</unclear>ntangled in the whirlwind, &amp; his eyes</line>
     <line>Which gazed on the undazzling sun, now blinded</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.04"/>By the white lightning, while the
-      ponderous</line>
+    <line><milestone unit="tei:l" spanTo="#e3-0038.04"/>By the white lightning, <mod>
+        <del rend="overwritten">when</del>
+        <add place="intralinear">while</add>
+      </mod> the ponderous</line>
     <line rend="right">hail</line><anchor xml:id="e3-0038.04"/>
     <line><milestone unit="tei:l" spanTo="#e3-0038.05"/>Beats on his struggling form which
       sinks</line>

@@ -25,13 +25,19 @@
     <line>Of the low voice of love, almost unheard <add><metamark function="count"
         >180</metamark></add></line>
     <line>And dove-eyed pity's murmured pain, &amp; music</line>
-    <line>Iitself the echo of the heart, &amp; all</line>
+    <line><mod>
+        <add xml:id="e3-0048.01">I</add>
+        <del rend="unmarked" next="e3-0048.01">i</del>
+      </mod>tself the echo of the heart, &amp; all</line>
     <line>That tempers or improves man's life, now free</line>
-    <line>And lovely apparitions dim at first</line>
+    <line>And lovely ap<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">p</add>
+      </mod>aritions dim at first</line>
     <line>Then radiant, as the mind, arising bright</line>
     <line>From the embrace of beauty, whence the forms</line>
     <line>Of which these are the phantoms, casts on them</line>
-    <line>The gathered rays which are reality <unclear>,</unclear></line>
+    <line>The gathered rays which are reality <unclear reason="illegible">,</unclear></line>
     <line>Shall visit us, the progeny immortal</line>
     <line rend="indent1">Of painting Sculpture &amp; rapt Poesy <add><metamark function="count"
           >190</metamark></add></line>

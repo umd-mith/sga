@@ -9,7 +9,8 @@
     <milestone unit="tei:speaker" spanTo="#e3-0044.01"/>
     <line rend="center">Apollo</line>
     <anchor xml:id="e3-0044.01"/>
-    <line rend="indent4">Farewell!&#8212; <add><metamark function="count">135</metamark></add></line>
+    <line rend="indent4">Farewell!&#8212; <add><metamark function="count"
+      >135</metamark></add></line>
     <milestone unit="tei:scene" spanTo="#e3-0044.02"/>
     <line rend="indent1">Scene Caucasus, Prometheus, Hercules, Asia</line>
     <line rend="indent2">borne by the spirit of the Hour</line>
@@ -20,20 +21,22 @@
     <line rend="center">Hercules</line>
     <anchor xml:id="e3-0044.03"/>
     <line>Most glorious among Spirits, thus doth strength</line>
-    <line>To wisdom courage &amp; long suffering love</line>
+    <line>To <unclear reason="case">w</unclear>isdom courage &amp; long suffering love</line>
     <line>And thee, who art the form they animate</line>
     <line>Minister, like a slave</line>
     <milestone unit="tei:speaker" spanTo="#e3-0044.04"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e3-0044.04"/>
     <line rend="indent5">Thy gentle words</line>
-    <line>Are sweeter even than freedom long desired <add><metamark function="count"
-      >140</metamark></add></line>
+    <line>Are sweeter even tha<unclear reason="illegible">n</unclear> freedom long desired
+          <add><metamark function="count">140</metamark></add></line>
     <line>And long delayed. Asia, thou light of life,</line>
     <line>Shadow of beauty unbeheld, &amp; ye</line>
     <line>Fair sister-nymphs who make long years of pain</line>
     <line>Sweet to remember through your love &amp; care</line>
-    <line>Henceforth we will not part. There is a Cave</line>
+    <line>Henceforth <milestone unit="tei:seg" spanTo="#e3-0044.05" xml:id="e3-0044.07"/>we will not<anchor
+        xml:id="e3-0044.05"/> part. There is a Cave<alt targets="#e3-0044.07 #e3-0045.02"
+        mode="excl" weights="1 0"/></line>
     <line>All overgrown with trailing odorous plants</line>
     <line>Which curtain out the day with leaves &amp; flowers</line>
     <line><add><metamark function="count">140</metamark></add></line>

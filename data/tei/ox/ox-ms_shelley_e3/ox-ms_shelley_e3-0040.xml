@@ -12,7 +12,10 @@
     <milestone unit="tei:l" spanTo="#e3-0040.02"/>
     <line>Which are my realm, will heave, unstain'd with </line>
     <line rend="right">blood <anchor xml:id="e3-0040.02"/></line>
-    <line>Beneath the uplifting winds&#8212;like plains of corn</line>
+    <line>Beneath the uplifting winds&#8212;<mod>
+        <del rend="overwritten"><unclear reason="illegible">in</unclear></del>
+        <add place="intralinear">like</add>
+      </mod> plains of corn</line>
     <line>Swayed by the summer air; my streams will flow</line>
     <line>Round many-peopled continents &amp; round</line>
     <line>Fortunate isles; &amp; from their glassy thrones</line>
@@ -25,10 +28,11 @@
     <line>With that white star, <mod>
         <del rend="strikethrough">which is</del>
         <add place="sublinear">its</add>
-        <del rend="strikethrough"><add place="sublinear">unseen</add></del>
+        <del rend="strikethrough"><add place="sublinear"><unclear reason="illegible"
+              >unseen</unclear></add></del>
         <add place="superlinear">sightless</add>
       </mod>pilots cast</line>
-    <line>Borne down the rapid sunsets ebbing sea <unclear>;</unclear></line>
+    <line>Borne down the rapid sunsets ebbing sea <unclear reason="illegible">;</unclear></line>
     <line>Tracking their path no more by blood &amp; groans</line>
     <line>And desolation, and the mingled voice</line>
     <line>Of slavery &amp; command&#8212;but by the light<add><metamark function="count"
@@ -36,9 +40,15 @@
     <line>Of wave-reflected flowers, and <add place="superlinear">floating</add> odours <del
         rend="strikethrough">sweet</del> ,</line>
     <line>And music soft, &amp; mild <mod>
-        <del rend="strikethrough">frank</del>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">fresh</del>
+            <add place="intralinear">frank</add>
+          </mod></del>
         <add place="superlinear">free</add>
       </mod> gentle voices</line>
-    <line>That sweetest music,&#8212;such as spirits love.</line>
+    <line><mod>
+        <del rend="overwritten">The</del>
+        <add place="intralinear">That</add>
+      </mod> sweetest music,&#8212;such as spirits love.</line>
   </zone>
 </surface>

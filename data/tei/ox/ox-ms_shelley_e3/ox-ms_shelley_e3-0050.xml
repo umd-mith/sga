@@ -16,8 +16,8 @@
     <milestone unit="tei:stage" spanTo="#e3-0050.01"/>
     <line rend="indent4">turning to the spirit of the Hour</line>
     <anchor xml:id="e3-0050.01"/>
-    <line>For thee fair Spirit one toil remains.<unclear>.</unclear>Ione <add><metamark function="count"
-        >200</metamark></add></line>
+    <line>For thee fair Spirit one toil remains.<unclear>.</unclear>Ione <add><metamark
+          function="count">200</metamark></add></line>
     <line>Give her that curved shell, which Proteus old</line>
     <line>Made Asia's nuptial boon, breathing within it</line>
     <line>A voice to be accomplished, &amp; which thou</line>
@@ -25,11 +25,15 @@
     <milestone unit="tei:speaker" spanTo="#e3-0050.02"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e3-0050.02"/>
-    <line>Thou most desired Hour, more loved &amp; lovely</line>
-    <line>Than all thy sisters <unclear>.</unclear> this the mystic shell</line>
+    <line>Thou most desired <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>our, more loved &amp; lovely</line>
+    <line>Than all thy sisters <unclear reason="illegible">.</unclear> this the mystic shell</line>
     <line>See the pale azure fading into silver</line>
     <line>Lining it with a soft yet glowing light <unclear>.</unclear></line>
-    <line>Looks it not like lulled music sleeping there?</line>
+    <line>Looks it not like lulled music sleeping <unclear reason="illegible"
+      >there</unclear>?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0050.03"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0050.03"/>

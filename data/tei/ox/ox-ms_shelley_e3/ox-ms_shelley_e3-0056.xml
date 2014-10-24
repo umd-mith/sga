@@ -7,16 +7,21 @@
   <zone type="main">
     <line>In mild variety the seasons mild</line>
     <line>With rainbow-skirted showers, &amp; odorous winds</line>
-    <line>And long blue meteors cleansing the dull night <unclear>,</unclear></line>
+    <line>And long blue meteors cleansing the dull night <unclear reason="illegible"
+      >,</unclear></line>
     <line>And the life-kindling shafts of the keen Sun's</line>
     <line>All-piercing bow, &amp; the dew-mingled rain</line>
-    <line>Of the calm moonbeams, a soft influence mild <unclear>;</unclear></line>
+    <line>Of the calm moonbeams, a soft influence mild <unclear reason="illegible"
+      >;</unclear></line>
     <line>Shall clothe the forests &amp; the fields&#8212;aye even</line>
     <line>The crag-built desarts of the barren deep</line>
     <line>With ever-living leaves &amp; fruits &amp; flowers</line>
-    <line>And Thou ... there is a Cavern whence my spirit<add><metamark function="count"
-          >2</metamark></add></line>
-    <line>Was panted forth in anguish whilst thy pain</line>
+    <line>And <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>hou ... there is a Cavern whence my spirit<add><metamark function="count"
+        >2</metamark></add></line>
+    <line>Was panted forth in anguish whilst thy pain<anchor xml:id="e3-0056.04"/></line>
     <milestone unit="tei:l" spanTo="#e3-0056.02"/>
     <line>Made my heart mad, &amp; thou who did inhale</line>
     <line rend="right">it</line>
@@ -28,10 +33,11 @@
       with</line>
     <line rend="right">thee;</line>
     <anchor xml:id="e3-0056.03"/>
-    <line><del rend="strikethrough">Which now floats upward</del><anchor xml:id="e3-0056.04"/> as among tall weeds</line>
+    <line><del rend="strikethrough">Which now floats upward</del><anchor xml:id="e3-0056.04"/> as
+      among tall weeds</line>
     <line>A violets exhalation, &amp; it fills</line>
     <line>With a serener light &amp; crimson air</line>
-    <line>Intense yet soft the rocks &amp; woods around</line>
+    <line>Intense yet soft the rocks &amp; woods around<anchor xml:id="e3-0056.05"/></line>
     <line rend="right"><add><metamark function="count">262</metamark></add></line>
   </zone>
 </surface>

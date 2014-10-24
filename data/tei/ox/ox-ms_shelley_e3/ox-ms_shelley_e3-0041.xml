@@ -11,7 +11,10 @@
     <line/>
     <line>Even thy name is as a God</line>
     <line>Heaven! for thou art the abode</line>
-    <line>Of that Power which is the glass</line>
+    <line>Of that <mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">P</add>
+      </mod>ower which is the glass</line>
     <line>Wherein man his nature sees <unclear>;&#8212;</unclear></line>
     <line>Generations as they pass</line>
     <line>Worship thee with bended knees&#8212;</line>
@@ -22,14 +25,18 @@
     <line rend="center">a Remoter Voice</line>
     <anchor xml:id="e3-0041.01"/>
     <line rend="center">&#8212;</line>
-    <line>Thou art but the <unclear>M</unclear>inds first <unclear>C</unclear>hamber</line>
+    <line>Thou art but the <unclear reason="case">M</unclear>inds first <unclear reason="case"
+        >C</unclear>hamber</line>
     <line>Round which its' <mod>
         <del rend="strikethrough">weak</del>
         <add place="superlinear">young</add>
       </mod> fancies clamber</line>
     <line>Like weak insects in a cave</line>
     <line>Lighted up by stalactites</line>
-    <line>But the portal of the grave</line>
+    <line><mod>
+        <del rend="overwritten">S</del>
+        <add place="intralinear">B</add>
+      </mod>ut the portal of the grave</line>
     <line>Where a world of new delights</line>
   </zone>
 </surface>

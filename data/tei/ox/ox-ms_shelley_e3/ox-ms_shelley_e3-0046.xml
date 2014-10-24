@@ -6,7 +6,10 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0046.jp2"/>
   <zone type="main">
     <line>And paved with veined emerald, &amp; a fountain</line>
-    <line>Leaps in the midst with an awakening sound;</line>
+    <line>Leaps in the mi<mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">d</add>
+      </mod>st with an awakening sound;</line>
     <line>From its curved roof the mountain's frozen tears <add><metamark function="count"
           >150</metamark></add></line>
     <line>Like snow or silver or long diamond spires</line>
@@ -30,7 +33,7 @@
           <add><metamark function="count">160</metamark></add></line>
     <line>And <add place="sublinear"><metamark function="insert">^</metamark></add><add
         place="superlinear">if</add> ye sigh, then I will smile, &amp; thou</line>
-    <line>Ione, shall chant fragments of sea-music <unclear>,</unclear></line>
+    <line>Ione, shall chant fragments of sea-music <unclear reason="illegible">,</unclear></line>
     <line>Until I weep, when ye shall smile away</line>
     <milestone unit="tei:l" spanTo="#e3-0046.02"/>
     <line>The tears she brought, which yet were sweet to</line>
