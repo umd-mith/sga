@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0039" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0039" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0039.jp2"/>
   <zone type="library"><line rend="right">17</line></zone>
   <zone type="main">
@@ -11,16 +11,20 @@
     <anchor xml:id="e3-0039.01"/>
     <line rend="indent2">--<metamark function="count">40</metamark></line>
     <line><add><metamark function="displacement">2</metamark></add>Paradise of golden lights</line>
-    <line><add><metamark function="displacement">1</metamark></add>Palace-roof of cloudless nights</line>
-    <line>Deep, Immeasurable, Vast <unclear>,</unclear></line>
+    <line><add><metamark function="displacement">1</metamark></add>Palace-roof of cloudless
+      nights</line>
+    <line>Deep, Immeasurable, Vast <unclear reason="illegible">,</unclear></line>
     <line>Which art now, &amp; which wert then;</line>
     <line rend="indent1">Of the present &amp; the past</line>
     <line rend="indent1">Of the eternal Where &amp; When</line>
-    <line rend="indent1">Presence chamber, Temple, Home,</line>
+    <line rend="indent1">Presence chamber, Temple, <mod>
+        <del rend="overwritten">D</del>
+        <add place="intralinear">H</add>
+      </mod>ome,</line>
     <line rend="indent1">Ever canopying Dome</line>
     <line rend="indent1">Of acts &amp; ages yet to come!</line>
-    <line></line>
-    <line></line>
+    <line/>
+    <line/>
     <line>Glorious shapes have life in thee</line>
     <line>Earth &amp; all Earth's company</line>
     <line>Living globes which ever throng</line>
@@ -28,7 +32,9 @@
     <line><del rend="strikethrough">And swift stars with flashing tresses</del></line>
     <line>And green worlds that glide along</line>
     <line>And swift stars with flashing tresses</line>
-    <line>And icy moons most cold &amp; bright</line>
+    <line>A<mod>
+        <del rend="overwritten"><unclear reason="illegible">d</unclear></del>
+        <add place="intralinear">n</add>
+      </mod>d icy moons most cold &amp; bright</line>
   </zone>
 </surface>
-

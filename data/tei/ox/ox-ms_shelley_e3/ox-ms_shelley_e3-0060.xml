@@ -5,12 +5,15 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0060" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0060.jp2"/>
   <zone type="main">
-    <line>And beyond Indus, &amp; its tribute rivers,</line>
+    <line><mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>nd beyond Indus, &amp; its tribute rivers,</line>
     <line>Trampling the torrent streams &amp; glassy lakes</line>
     <line>With feet unwet, unwearied, undelaying;</line>
     <line>And up the green ravine, across the vale</line>
-    <line>Beside the windless &amp; chrystalline pool</line>
-    <line>Where ever lies, on unerasing waves</line>
+    <line>Besid<retrace cause="clarify">e</retrace> the windless &amp; chrystalline pool</line>
+    <line>Where ever lies, on un<retrace cause="clarify">e</retrace>rasing waves</line>
     <line>The image of a temple built above.</line>
     <line><del rend="strikethrough">Which bore thy name ere faith was o</del></line>
     <line>Distinct with column arch &amp; architrave</line>
@@ -25,7 +28,8 @@
         <add place="superlinear">there the emulous</add>
       </mod>youths</line>
     <line>Bore to thine honour thro the divine gloom</line>
-    <line>The lamp, which was thine emblem... even as those</line>
+    <line>The lamp, <unclear reason="illegible">which</unclear> was thine emblem... even as
+      those</line>
     <line>Who bear the untransmitted torch of hope</line>
     <line>Into the grave across the night of life...</line>
     <anchor xml:id="e3-0060.01"/>

@@ -6,6 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0037.jp2"/>
   <zone type="library"><line rend="right">16</line></zone>
   <zone type="main">
+    <milestone unit="tei:seg" spanTo="#e3-0037.01" corresp="e3-0036.05"/>
     <line>Gentle &amp; just &amp; <mod>
         <del rend="strikethrough">mild</del>
         <add place="superlinear">dreadless</add>
@@ -13,15 +14,20 @@
       <del rend="strikethrough">if</del>
       <del rend="strikethrough">he is now</del> is he not</line>
     <line>The monarch of the world&#8212; what then art thou?</line>
+    <anchor xml:id="e3-0037.01"/>
+    <milestone unit="tei:seg" spanTo="#e3-0037.02" corresp="#e3-0036.06"/>
     <line rend="indent3">Sink with me then&#8212; <add><metamark function="count"
         >71</metamark></add></line>
-    <line rend="indent1">We two shall sink <unclear>o</unclear>n the wide waves of ruin</line>
+    <line rend="indent1">We two shall sink <unclear reason="illegible">o</unclear>n the wide waves
+      of ruin</line>
     <line rend="indent2"><del rend="strikethrough">sink down upon the stream of ruin</del><del
         rend="strikethrough"><add place="superlinear">Together then</add></del></line>
-    <line rend="indent1"><del rend="strikethrough">Shall we</del><del rend="strikethrough"><add
-          place="superlinear">Into</add></del>
+    <line rend="indent1"><del rend="strikethrough"><mod>
+          <del rend="overwritten">Sink</del>
+          <add place="intralinear">Shall</add>
+        </mod> we</del><del rend="strikethrough"><add place="superlinear">Into</add></del>
       <del rend="strikethrough"> be drowned</del>
-      <del rend="strikethrough">in <hi rend="underline">rui</hi>n</del>
+      <del rend="strikethrough">in ruin</del>
       <del rend="strikethrough">fathomless</del></line>
     <line rend="indent1">Even <mod>
         <del rend="strikethrough">like</del>
@@ -31,21 +37,25 @@
         <del rend="strikethrough">Sink</del>
         <add place="superlinear">Drop</add>
       </mod> , twisted in inextricable fight;</line>
-    <line>Into a shoreless sea <unclear>.</unclear>&#8212;</line>
+    <line>Into a shoreless sea <unclear reason="illegible">.</unclear>&#8212;<anchor
+        xml:id="e3-0037.02"/></line>
     <line/>
     <line/>
     <line/>
+    <milestone unit="tei:seg" spanTo="#e3-0037.03" corresp="e3-0036.07"/>
     <line>And like a cloud <mod>
         <del rend="strikethrough">mine</del>
         <add place="superlinear">the</add>
       </mod>enemy above....</line>
     <line>Darkens my fall with victory&#8212; ai! ai!</line>
+    <anchor xml:id="e3-0037.03"/>
     <line/>
     <line/>
     <line/>
     <line/>
     <line/>
     <line/>
-    <line>made <del rend="strikethrough">pale</del> dim</line>
+    <line><milestone unit="tei:seg" spanTo="#e3-0037.04" corresp="e3-0036.08"/>made <del
+        rend="strikethrough">pale</del> dim<anchor xml:id="e3-0037.04"/></line>
   </zone>
 </surface>

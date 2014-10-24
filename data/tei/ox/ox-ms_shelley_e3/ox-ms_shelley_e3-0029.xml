@@ -11,7 +11,7 @@
         <del rend="strikethrough">forests</del>
         <add place="superlinear">mountains, woods</add>
       </mod> abysses,</line>
-    <line rend="indent1">A Paradise of wildernesses,</line>
+    <line rend="indent1">A Paradise of wildernesses<retrace cause="clarify">,</retrace></line>
     <line rend="indent1">Till like one in slumber bound</line>
     <line>Borne to the Ocean, I float, down, around,</line>
     <line>Into a Sea profound, of ever-<mod>
@@ -27,16 +27,20 @@
     <line rend="indent1">Without a course&#8212;without a star&#8212;</line>
     <line>But by the instinct of sweet Music driven</line>
     <line rend="indent1">Till, through Elysian garden islets,</line>
-    <line rend="indent1">By thee <unclear>,</unclear> most beautiful of pilots,</line>
+    <line rend="indent1">By thee <unclear reason="illegible">,</unclear> most<milestone
+        unit="tei:seg" spanTo="#e3-0029.03" corresp="#e3-0028.10"/><add place="intralinear">hurling
+        up</add><anchor xml:id="e3-0029.03"/> beautiful of pilots,</line>
     <line><del rend="strikethrough">The masks of a rebellion</del></line>
     <line rend="indent1">Where never mortal pinnace glided</line>
     <line rend="indent1">The boat of my desire is guided&#8212;</line>
     <line rend="indent1">Realms where the air we breathe is Love</line>
     <milestone unit="tei:l" spanTo="#e3-0029.02"/>
-    <line>Which<del rend="strikethrough">Which</del>
-      in the winds &amp; on the waves</line>
-    <line rend="right">doth move</line><anchor xml:id="e3-0029.02"/>
+    <line>Which<del rend="strikethrough">Which</del> in the winds &amp; on the waves</line>
+    <line rend="right">doth move<unclear reason="illegible">,</unclear></line><anchor
+      xml:id="e3-0029.02"/>
     <line>Harmonizing this Earth with what we feel above</line>
+    <milestone unit="tei:seg" spanTo="#e3-0029.04" corresp="#e3-0028.11"/>
     <line>night</line>
+    <anchor xml:id="e3-0029.04"/>
   </zone>
 </surface>

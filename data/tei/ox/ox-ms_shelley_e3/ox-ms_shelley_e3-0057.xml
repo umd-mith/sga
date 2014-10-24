@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0057" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0057" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0057.jp2"/>
   <zone type="library"><line rend="right">26</line></zone>
   <zone type="main">
-    <line><add><metamark function="count">260</metamark></add></line>
+    <line><milestone unit="tei:seg" spanTo="#e3-0057.02" corresp="#e3-0056.04"/><add><metamark
+          function="count">260</metamark></add><anchor xml:id="e3-0057.02"/></line>
     <milestone unit="tei:seg" spanTo="#e3-0057.01" corresp="#e3-0056.04"/>
-    <line>Which breath now rises</line>
+    <line><retrace cause="clarify">Which breath now rises</retrace></line>
     <anchor xml:id="e3-0056.04"/>
     <line><add><metamark function="count">270</metamark></add></line>
   </zone>
 </surface>
-
