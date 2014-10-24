@@ -11,7 +11,6 @@
     <milestone unit="tei:seg" spanTo="#e3-0057.01" corresp="#e3-0056.04"/>
     <line><retrace cause="clarify">Which breath now rises</retrace></line>
     <anchor xml:id="e3-0056.04"/>
-    <line><milestone unit="tei:seg" spanTo="#e3-0057.03" corresp="#e3-0056.05"/><add><metamark
-          function="count">270</metamark></add><anchor xml:id="e3-0057.03"/></line>
+    <line><add><metamark function="count">270</metamark></add></line>
   </zone>
 </surface>
