@@ -6,11 +6,18 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0070.jp2"/>
   <zone type="main">
     <line>I saw two azure halcyons clinging downward</line>
-    <line>And thinning one bright mass <add place="superlinear">bunch</add> of amber berries</line>
+    <line><mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>nd thinning one bright <milestone unit="tei:seg" spanTo="#e3-0070.07"
+        xml:id="e3-0070.09"/>mass<anchor xml:id="e3-0070.07"/>
+      <add place="superlinear"><milestone unit="tei:seg" spanTo="#e3-0070.08" xml:id="e3-0070.10"
+          />bunch<anchor xml:id="e3-0070.08"/></add> of amber berries <alt
+        targets="#e3-0070.09 #e3-0070.10" mode="excl" weights="0 1"/></line>
     <line>With quick long beaks, &amp; in the deep there lay</line>
     <line>Those lovely forms imaged as in a sky&#8212;</line>
     <line>So with my thoughts full of these happy changes</line>
-    <line>We meet again, the happiest change of all.</line>
+    <line>We meet again, the happiest change of all. &#60;</line>
     <milestone unit="tei:stage" spanTo="#e3-0070.01"/>
     <line rend="right">Enter, the Spirit of the Hour</line>
     <anchor xml:id="e3-0070.01"/>
@@ -49,6 +56,6 @@
         <add place="superlinear">birthplace</add>
       </mod> in the sun</line>
     <line rend="indent4"><add><metamark function="count">401 </metamark><metamark function="count"
-        >1778</metamark></add></line>
+          >1778</metamark></add></line>
   </zone>
 </surface>

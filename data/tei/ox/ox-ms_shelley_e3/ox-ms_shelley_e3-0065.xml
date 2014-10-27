@@ -15,13 +15,14 @@
         <del rend="strikethrough"><add place="superlinear">Euclid</add></del>
         <add place="sublinear">Plato</add>
       </mod>as</line>
-    <line>my model <unclear>.&#8212;</unclear></line>
+    <line>my model <unclear reason="illegible">.&#8212;</unclear></line>
     <line rend="indent1">The having spoken of myself with</line>
     <line>unaffected freedom will need little</line>
     <line>apology <mod>
         <del rend="strikethrough">to a</del>
         <add place="superlinear">with the</add>
-      </mod> candid, <del rend="strikethrough">mind;</del> &amp; <mod>
+      </mod> candid<unclear reason="illegible">,</unclear>
+      <del rend="strikethrough">mind;</del> &amp; <mod>
         <del rend="strikethrough">those</del>
         <add place="superlinear">let</add>
       </mod></line>
@@ -60,10 +61,14 @@
     <line><mod>
         <del rend="strikethrough">attempt</del>
         <add place="superlinear">purpose</add>
-      </mod> have been sufficient, let none</line>
-    <line><del rend="strikethrough">one</del> trouble themselves to heap the dust</line>
-    <line>of Oblivion upon his <del rend="strikethrough">hopes</del> efforts.&#8212; the</line>
-    <line>pile they raise will betray <del rend="strikethrough">the spot</del> his grave</line>
+      </mod> have been sufficient, let no<mod spanTo="#e3-0065.01"/><add>ne</add></line>
+    <line><del rend="strikethrough">one</del><anchor xml:id="e3-0065.01"/> trouble themselves to
+      heap the dust</line>
+    <line>of Oblivion upon his <del rend="strikethrough">hopes</del> efforts.&#8212;</line>
+    <!-- figure out how to encode different layers of writting on the same page,
+      specifically the lines starting with pile and which-->
+    <line>pile they raise will betray <del rend="strikethrough">the spot</del> his<add
+        place="superlinear"><unclear reason="case">t</unclear>he</add> grave</line>
     <line rotate="180">Asia &amp; the spirit have entered the cave</line>
     <line>which might otherwise have been unknown</line>
     <line>is <del rend="strikethrough">already trembling upon</del><unclear>.</unclear></line>

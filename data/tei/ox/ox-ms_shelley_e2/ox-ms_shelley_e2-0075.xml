@@ -5,7 +5,7 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0075" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0075.jp2"/>
   <zone type="library">
-    <line>37</line></zone>
+    <line rend="right">37</line></zone>
   <zone type="main" corresp="#e2-0074.03">
     <metamark function="displacement">&#60;</metamark>
     <milestone unit="tei:stage" spanTo="#e2-0075.01"/>
@@ -48,14 +48,12 @@
       </mod> kindles through the woven leaves</line>
     <line>And when these burst, &amp; the thin fiery air</line>
     <!--Encode the alternate readings, with David-->
-    <line><add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.06"
-          xml:id="e2-0075.09"/>shining <unclear reason="unclear">h</unclear>omes<anchor
-          xml:id="e2-0075.06"/></add>The which they breathed within those <milestone unit="tei:seg"
-        spanTo="#e2-0075.08" xml:id="e2-0075.11"/>lucid homes<anchor xml:id="e2-0075.08"/>
-      <add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.07" xml:id="e2-0075.10"
-        />lucent domes<anchor xml:id="e2-0075.07"/></add>
-      <unclear reason="illegible">,</unclear><alt targets="#e2-0075.09 #e2-0075.10 #e2-0075.11"
-        mode="excl" weights="0 1 0"/></line>
+    <line>The which they breathed within those <mod>
+        <del rend="unmarked">lucid homes</del>
+        <add place="superlinear">shining <unclear reason="unclear">h</unclear>omes</add>
+        <add place="superlinear">lucent domes</add>
+      </mod>
+      <unclear reason="illegible">,</unclear><alt/></line>
     <line>Ascends to flow like meteors through the night <unclear>&#8212;</unclear></line>
     <line>They ride on <del rend="strikethrough">it</del>
       <del rend="strikethrough">&amp;</del>
