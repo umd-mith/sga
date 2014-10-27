@@ -14,8 +14,7 @@ First use `npm` to install the `grunt` and `bower` tools globally
 (note that these commands must be run with superuser privileges):
 
 ``` bash
-# npm install -g grunt-cli
-# npm install -g bower
+# npm install -g grunt-cli bower
 ```
 
 Next get all node.js dependencies by running:

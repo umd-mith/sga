@@ -39,7 +39,7 @@ module.exports = function(grunt) {
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'lib/vendor/google-prettify.js',
               'bower_components/underscore/underscore.js',
-              'bower_components/backbone/backbone-min.js'], 
+              'bower_components/backbone/backbone.js'], 
         dest: 'demo/js/bower_components.js'
       }
     },
