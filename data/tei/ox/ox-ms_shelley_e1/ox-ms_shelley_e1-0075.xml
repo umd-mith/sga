@@ -4,8 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5394" lry="7260"
   xml:id="ox-ms_shelley_e1-0075" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0075.jp2"/>
-  <zone type="main">
+  <zone type="library">
     <line>37</line>
+    </zone>
+  <zone type="main">
+    
     <line>utterly unable to [?<del rend="strikethrough">put</del>] {?<del rend="strikethrough">d</del>} <del rend="strikethrough">compose</del></line>
     <line>Enter Mer</line>
     <line>improvise any thing worth speaking</line>
@@ -26,7 +29,7 @@
     <line>concerning Homer according to art or</line>
     <line>{<del rend="strikethrough">kno}</del> <del rend="strikethrough">science</del> knowledge; for if you,</line>
     <line>could speak according to <del rend="strikethrough">you{r}</del> art,</line>
-    <line>you would be equally <del rend="strikethrough underline">competent</del></line>
+    <line>you would be equally <del rend="strikethrough"><hi rend="underline">competent</hi></del></line>
     <line>capable of illustrating any of the</line>
     <line>other poets; as the materials</line>
     <line>of their composition no less than</line>
