@@ -16,29 +16,46 @@
     <line>A temple, <del rend="strikethrough">underneath its hollow <del rend="strikethrough"><add
             place="superlinear">fretted</add></del>dome</del></line>
     <delSpan spanTo="#e3-0073.04" rend="strikethrough"/>
-    <line>Poised on twelve columns of resplendent stone,</line>
+    <line>Poised on twelve columns of resplende<unclear reason="illegible">n</unclear>t
+      stone,</line>
     <line>And Around stand Asia &amp; the Earth &amp; thou</line>
     <line>Prometheus, and the sisters of the Sea</line>
-    <line>In memory of the tidings it has borne</line>
+    <line><mod>
+        <del rend="overwritten">For</del>
+        <add place="intralinear">In</add>
+      </mod> memory of the tidings it has borne</line>
     <anchor xml:id="e3-0073.04"/>
     <line><del rend="strikethrough">And</del> gazed upon by <mod>
         <del rend="strikethrough">living statues</del>
-        <add place="superlinear">Phidian</add>
+        <add place="superlinear">Phid<mod>
+            <del rend="overwritten">ine</del>
+            <add place="intralinear">ian</add>
+          </mod></add>
       </mod> forms, <del rend="strikethrough">around</del></line>
-    <line>Of thee, and Asia &amp; the Earth, &amp; me</line>
-    <line>And<mod>
+    <line>Of th<mod>
+        <del rend="overwritten">ou</del>
+        <add place="intralinear">ee</add>
+      </mod>, and <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>sia &amp; the Earth, &amp; me</line>
+    <line>A<unclear reason="illegible">n</unclear>d<mod>
         <del rend="strikethrough">thou</del>
-        <add place="sublinear">yo<unclear>u</unclear></add>
-      </mod> fair nymphs,<del rend="strikethrough"><add place="sublinear">which</add></del> looking
+        <add place="sublinear">yo<unclear reason="illegible">u</unclear></add>
+      </mod>
+      <mod>
+        <del rend="overwritten">y</del>
+        <add place="intralinear">f</add>
+      </mod>air nymphs,<del rend="strikethrough"><add place="sublinear">which</add></del> looking
       the love we feel</line>
     <anchor xml:id="e3-0073.03"/>
     <line>Beneath a dome fretted with <mod>
         <del rend="strikethrough">carven</del>
         <add place="superlinear">graven flowers</add>
       </mod></line>
-    <line>Poised on twelve columns of resplendent stone</line>
-    <line rend="indent1">And open to the <del rend="strikethrough"
-        ><unclear>all</unclear>-surrounding Heaven</del><anchor xml:id="e3-0073.01"/></line>
+    <line>Poised on twelve columns of resplen<unclear reason="illegilbe">dent</unclear> stone</line>
+    <line rend="indent1">And open to the <del rend="strikethrough"><unclear reason="illegible"
+          >all</unclear>-surrounding Heaven</del><anchor xml:id="e3-0073.01"/></line>
     <milestone unit="tei:seg" spanTo="#e3-0073.02" corresp="#e3-0073.03"/>
     <line>In memory of the tidings it has borne</line>
     <anchor xml:id="e3-0073.02"/>
@@ -49,7 +66,10 @@
     <line>The likeness of those winged steeds will mock</line>
     <line>The flight from which they find repose&#8212;alas</line>
     <line><del rend="strikethrough">Withe</del> Wither has wandered now my partial tongue</line>
-    <line>When all remains unsaid which ye w.<hi rend="sup">d</hi> hear!&#8212;</line>
+    <line>When all remains un<mod>
+        <del rend="overwritten">told</del>
+        <add place="intralinear">said</add>
+      </mod> which ye w.<hi rend="sup">d</hi> hear!&#8212;</line>
     <line>As I have said I floated to the Earth</line>
     <line><add><metamark><hi rend="underline">? </hi>
         </metamark><metamark function="separate">*</metamark></add></line></zone>

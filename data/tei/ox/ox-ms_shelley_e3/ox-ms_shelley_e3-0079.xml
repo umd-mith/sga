@@ -6,9 +6,19 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0079.jp2"/>
   <zone type="library">37</zone>
   <zone type="main">
+    <milestone unit="tei:seg" spanTo="#e3-0079.01" corresp="#e3-0078.10"/>
     <line>Dragged to</line>
-    <line>And slain amid<del rend="strikethrough">g</del> men's unreclaiming tears</line>
-    <line>Kindling with <mod>
+    <anchor xml:id="e3-0079.01"/>
+    <milestone unit="tei:seg" spanTo="#e3-0079.02" corresp="#e3-0078.03"/>
+    <line>And slain am<mod>
+        <del rend="overwritten">on</del>
+        <add place="intralinear">id</add>
+      </mod><del rend="strikethrough">g</del> men's unreclaiming tears</line>
+    <anchor xml:id="e3-0079.02"/>
+    <line>Kindl<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>ng with <mod>
         <del rend="strikethrough">many</del>
         <add place="superlinear">mingled</add>
       </mod> sounds, &amp; <mod>
@@ -22,7 +32,9 @@
     <line> 690</line>
     <line><hi rend="underline">1915</hi></line>
     <line>2605</line>
+    <milestone unit="tei:seg" spanTo="#e3-0079.03" corresp="#e3-0078.04"/>
     <line>The clogs of that which else might oversoar</line>
+    <anchor xml:id="e3-0079.03"/>
     <line>1915</line>
     <line><hi rend="underline"> 533</hi></line>
     <line>2448</line>

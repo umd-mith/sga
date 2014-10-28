@@ -10,25 +10,36 @@
         <del rend="strikethrough">Slain at</del>
         <add place="superlinear">Dragged to</add>
       </mod> his altars soiled &amp; garlandless</line>
+    <anchor xml:id="e3-0078.03"/>
     <line>Flattering the thing they feared, which fear was hate</line>
     <line><mod>
         <del rend="strikethrough">Stand</del>
         <add place="sublinear">Frown,</add>
-      </mod>mouldering fast, oer their abandoned shrines <unclear>&#8212;</unclear></line>
+      </mod>mouldering fast, <mod>
+        <del rend="overwritten">on</del>
+        <add place="intralinear">oer</add>
+      </mod> their abandoned shrines <unclear reason="illegible">&#8212;</unclear></line>
     <line>The painted veil by those who were, called life,</line>
     <line>Which mimicked, as with colours idly spread,</line>
     <line>All men believed or hoped, is torn aside&#8212;</line>
     <line>The loathsome mask has fallen, the man remains</line>
-    <line>Sceptreless, free, uncircumscribed <unclear>:&#8212;</unclear> but man
-        <unclear>:</unclear></line>
+    <line>Sceptreless, free, uncircumscribed <mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear"><unclear>:</unclear>&#8212;</add>
+      </mod> but man <unclear reason="illegible">:</unclear></line>
     <line>Equal, unclassed, tribeless, &amp; nationless</line>
-    <line>Exempt from awe <unclear>,</unclear> worship, degree,&#8212; the King</line>
-    <line>Over himself; just, gentle, wise <unclear>:&#8212;</unclear>but man:</line>
-    <line>Passionless <unclear>?</unclear> no &#8212; <mod>
+    <line>Exempt from awe <unclear reason="illegible">,</unclear> worship, degree,&#8212; the
+      King</line>
+    <line>Over himself; just, gentle, wise <mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear"><unclear>:</unclear>&#8212;</add>
+      </mod>but man:</line>
+    <line>Passionless <unclear reason="illegible">?</unclear> no &#8212; <mod>
         <del rend="strikethrough">but</del>
         <add place="superlinear">yet</add>
       </mod> free from guilt or pain</line>
-    <line>Which were, for his will made, or suffered them <unclear>,</unclear></line>
+    <line>Which were, for his will made, or suffered them <unclear reason="illegible"
+      >,</unclear></line>
     <line><mod>
         <del rend="strikethrough">Though not</del>
         <add place="superlinear">Nor yet</add>
@@ -39,9 +50,13 @@
     <line>From chance &amp; death &amp; mutability</line>
     <milestone unit="tei:l" spanTo="#e3-0078.01"/>
     <line><del rend="strikethrough">Which</del>
-      <del rend="strikethrough">Which clog that spirit, else which might</del></line>
+      <del rend="strikethrough"><mod>
+          <del rend="overwritten">T</del>
+          <add place="intralinear">W</add>
+        </mod>hich clog that spirit, else which might</del></line>
     <line rend="right"><del rend="strikethrough">outsoar</del></line>
     <anchor xml:id="e3-0078.01"/>
+    <anchor xml:id="e3-0078.04"/>
     <line>The loftiest star of unascended Heaven</line>
     <line>Pinnacled dim in the intense inane.</line>
     <line><add><metamark function="count">1915</metamark></add></line>

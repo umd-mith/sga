@@ -15,8 +15,8 @@
     <line>And first was disappointed not to see</line>
     <line>Such mighty change as I had felt within</line>
     <line>Expressed in outward things; but soon I looked</line>
-    <line><add place="superlinear"><metamark function="count">1790</metamark></add>And behold!
-      thrones were kingless, &amp; men walked</line>
+    <line><add place="superlinear"><metamark function="count">1790</metamark></add>And beh<unclear
+        reason="illegible">o</unclear>ld! thrones were kingless, &amp; men walked</line>
     <line>One with the other even as spirits do,</line>
     <line>None frowned, none trampled, hate disdain or fear</line>
     <line>Self-love or self-contempt on human brows,</line>
@@ -26,7 +26,10 @@
     <line>Gazed on anothers eye of cold command</line>
     <line>Until the <mod>
         <milestone unit="tei:seg" spanTo="#e3-0072.02" xml:id="e3-0072.03"/>
-        <del rend="strikethrough">ca<hi rend="underline">pt</hi>ive</del>
+        <restore type="underline"><del rend="strikethrough"><mod>
+              <del rend="overwritten">s</del>
+              <add place="intralinear">c</add>
+            </mod>a<hi rend="underline">pt</hi>ive</del></restore>
         <anchor xml:id="e3-0072.02"/>
         <milestone unit="tei:seg" spanTo="#e3-0072.04" xml:id="e3-0072.05"/>
         <add place="superlinear">subject</add>
