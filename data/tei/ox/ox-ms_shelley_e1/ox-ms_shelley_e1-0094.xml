@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0094" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0094" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0094.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0094.01"/>
-    <line rend="center">3 Fury</line>
+    <line rend="center">3.<hi rend="sup">d</hi> Fury</line>
     <anchor xml:id="e1-0094.01"/>
-    <line>Thou think{<hi rend="sup">'</hi>e}st we will live through thee, one by one</line>
-    <line>animal life</line>
-    <line>Like and though we can obscure not</line>
-    <line>^</line>
+    <line>Th<mod>
+        <del rend="overwritten">in</del>
+        <add place="intralinear">ou</add>
+      </mod> think<hi rend="sup">'</hi><del rend="unmarked">e</del>st we will live through thee, one
+      by one</line>
+    <line>Like <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">animal life</add>
+      </mod>
+      <retrace cause="clarify">a</retrace>nd though we can obscure not</line>
     <line>The soul which burns within that we will dwell</line>
-    <line>Beside it, like a vain loud multitude</line>
-    <line>Vexing the self-content of wisest men --</line>
+    <line>Beside it, <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">l</add>
+      </mod>ike <mod>
+        <del rend="overwritten"><unclear reason="illegible">v</unclear></del>
+        <add place="intralinear">a</add>
+      </mod> vain loud multitude</line>
+    <line>Vexing the self-content of wisest men &#8212;</line>
     <line>That we will be dread thought beneath thy brain</line>
     <line>And foul desire round thine astonished heart</line>
     <line>thy</line>
-    <line>And blood within <del rend="strikethrough">your</del> labyrithine veins</line>
+    <line>And blood with<mod>
+        <del rend="overwritten">out</del>
+        <add place="intralinear">in</add>
+      </mod>
+      <del rend="strikethrough">your</del> labyrithine veins</line>
     <line>Crawling like agony</line>
-    <line>X</line>
+    <line rend="indent5"><add><metamark function="count">X</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0094.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0094.02"/>
-    <line>Why, ye are thus now</line>
+    <line rend="indent3">Why, ye are thus now</line>
     <line>Yet am I king over myself &amp; rule</line>
     <line>The torturing &amp; conflicting throngs within</line>
     <line>As Jove rules you when Hell grows mutinous</line>
     <milestone unit="tei:speaker" spanTo="#e1-0094.03"/>
     <line rend="center">Chorus of Furies</line>
     <anchor xml:id="e1-0094.03"/>
-    <line>From the ends of the Earth, from y ends of the Earth</line>
+    <line>From the ends of the Earth, from y.<hi rend="sup">e</hi> ends of the Earth</line>
     <line>Where the night has its grave &amp; the morning its birth</line>
-    <line>Come, Come, Come</line>
+    <line rend="indent2">Come, Come<unclear reason="illegible">,</unclear> Come</line>
+    <milestone unit="l" spanTo="#e1-0094.04"/>
     <line>O ye who shake hills with the scream of your</line>
-    <line>mirth</line>
+    <line rend="right">mirth</line>
+    <anchor xml:id="e1-0094.04"/>
     <line><add><metamark function="count">483</metamark></add></line>
   </zone>
 </surface>

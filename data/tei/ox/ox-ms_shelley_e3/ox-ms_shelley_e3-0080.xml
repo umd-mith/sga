@@ -5,14 +5,20 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0080" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0080.jp2"/>
   <zone type="main" rotate="180">
-    <line>never been surpassed. We owe the great</line>
-    <line>writers of the golden age of our litera</line>
-    <line>ture to that fervid awakening of the</line>
+    <line>never been surpassed. <mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">W</add>
+      </mod>e owe the great</line>
+    <line><unclear reason="illegible">w</unclear>riters of the golden age of our litera</line>
+    <line>ture to th<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">at</add>
+      </mod> fervid awakening of the</line>
     <line>public mind which shook to dust the</line>
     <line>oldest &amp; most oppresive form of the</line>
     <line>Christian Religion. We owe <unclear><del rend="strikethrough">Pa</del></unclear>
       Milton</line>
-    <line>to the progress &amp; development of the</line>
+    <line>to the progress &amp; development of <unclear reason="illegible">the</unclear></line>
     <line>same spirit; the sacred Milton was,</line>
     <line>let it ever be remembered, a Republican</line>
     <milestone unit="tei:seg" spanTo="#e3-0080.01" corresp="e3-0081.01"/>
@@ -27,7 +33,7 @@
         <add place="superlinear">morals &amp; religion</add>
       </mod>. The</line>
     <line>great writers of our own age, are, we</line>
-    <line>have reason to suppose <unclear>&#8212;</unclear> the companions</line>
+    <line>have reason to suppose <unclear reason="illegible">&#8212;</unclear> the companions</line>
     <line>or forerunners of some unimagined</line>
     <line>change in our social condition, &amp; <add place="sublinear"><metamark function="insert"
           >^</metamark></add><add place="superlinear">in</add> the</line>

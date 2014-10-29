@@ -8,12 +8,15 @@
     <line>One word is due in candour to the</line>
     <line>degree in which the study of contem</line>
     <line>porary writings may have tinged my</line>
-    <line>composition<unclear>,</unclear> for such has been a topic</line>
+    <line>composition<mod>
+        <del rend="overwritten">&#8212;</del>
+        <add place="intralinear">,</add>
+      </mod> for such has been a topic</line>
     <line>of censure with regard to poems far</line>
     <line>more popular, &amp; indeed more deservedly</line>
     <line>popular than mine. It is impossible</line>
     <line>that any one who inhabits the same</line>
-    <line>age with such writers as those who</line>
+    <line>age w<retrace cause="clarify">i</retrace>th such writers as those who</line>
     <line>stand in the foremost ranks of our</line>
     <line>own, can conscientiously assure</line>
     <line>himself, that his language &amp; tone</line>
