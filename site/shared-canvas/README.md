@@ -23,16 +23,16 @@ Next get all node.js dependencies by running:
 $ npm install
 ```
 
-Then get other dependencies (including those from Bower) by running:
-
-``` bash
-$ grunt install
-```
-
-Finally, to compile run:
+Then build the application:
 
 ``` bash
 $ grunt
+```
+
+And if you want to see the demo:
+
+``` bash
+$ grunt run
 ```
 
 Style Guide
