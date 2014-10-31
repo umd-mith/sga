@@ -1,0 +1,7 @@
+language: python
+script: 
+  - cd tools/manifest
+  - python setup.py test
+python:
+  - "2.7"
+  - "3.4"

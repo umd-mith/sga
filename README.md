@@ -1,7 +1,8 @@
 # Shelley-Godwin Archive
 
-This repository holds various software components and data of the Shelley-Godwin Archive
-(SGA) project. 
+[![Build Status](https://travis-ci.org/umd-mith/sga.svg)](http://travis-ci.org/umd-mith/sga)
+
+This repository holds various software components and data of the Shelley-Godwin Archive (SGA) project. 
 
 ## Structure
 
