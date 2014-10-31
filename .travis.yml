@@ -1,7 +1,8 @@
 language: python
 script: 
   - cd tools/manifest
-  - python setup.py test
+  - pip install -r requirements.txt
+  - py.test test.py
 python:
   - "2.7"
   - "3.4"
