@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0066" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0066" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0066.jp2"/>
   <zone type="main">
     <line>And venemous &amp; malicious beasts, &amp; boughs</line>
@@ -16,18 +16,20 @@
     <line>Hide that fair being whom we spirits call man</line>
     <line>And women too, ugliest of all things evil</line>
     <line>Though fair, even in a world where thou art fair</line>
-    <line>When good &amp; kind free &amp; sincere like thee;</line>
-    <line>When <add place="superlinear"><metamark function="count">360</metamark></add> false or frowning made me sick at heart</line>
+    <line>When good &amp; kind free &amp; sincere like thee<unclear reason="illegible"
+      >;</unclear></line>
+    <line>When <add place="superlinear"><metamark function="count">360</metamark></add> false or
+      frowning made me sick at heart</line>
     <line>To pass them, though they slept, &amp; I unseen.</line>
     <line>Well&#8212; my path lately lay thro' a great City</line>
     <line>Into the woody hills surounding it.</line>
     <line>The sentinel was sleeping at the gate <unclear>.</unclear></line>
     <line>When there was heard a sound, so loud, it shook</line>
     <line>The towers amid the moonlight, yet more sweet</line>
-    <line><del rend="strikethrough">But</del>  Than any voice but thine, sweetest of all</line>
+    <line><del rend="strikethrough">But</del> Than any voice but thine, sweetes<unclear
+        reason="illegible">t</unclear> of all</line>
     <line>A long long sound, as it would never end</line>
     <line>And all the inhabitants leapt suddenly</line>
     <line><add><metamark function="count">360</metamark></add></line>
   </zone>
 </surface>
-

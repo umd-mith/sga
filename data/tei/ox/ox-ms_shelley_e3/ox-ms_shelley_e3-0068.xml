@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0068" partOf="#ox-ms_shelley_e3">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0068" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0068.jp2"/>
   <zone type="main">
-    <line>Out of their rest, &amp; gathered in the streets <metamark function="count">370</metamark></line>
+    <line>Out of their rest, &amp; gathered in the streets <metamark function="count"
+      >370</metamark></line>
     <line>Looking in wonder up to Heaven, while yet</line>
     <line>The music pealed along; I hid myself</line>
     <line>Within a fountain in the public square</line>
-    <line>Where I lay like the reflex of the moon</line>
+    <line>Where I lay like <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">t</add>
+      </mod>he reflex of the moon</line>
     <line>Seen in a wave under the green leaves&#8212;&amp; soon</line>
     <line>Those ugly human shapes &amp; visages</line>
     <line>Of which I spoke as having wrought me pain</line>
     <line>Past floating thro' the air, &amp; fading still</line>
     <line>Into the winds that scatter them, &amp; those</line>
     <milestone unit="tei:l" spanTo="#e3-0068.01"/>
-    <line>From whom they passed seemed mild &amp; lovely <add><metamark function="count">380</metamark></add></line>
+    <line>From whom they passed seemed mild &amp; lovely <add><metamark function="count"
+          >380</metamark></add></line>
     <line rend="right">forms</line>
     <anchor xml:id="e3-0068.01"/>
     <line>After some foul disguise had fallen &#8212; &amp; all</line>
-    <line>Were somewhat changed &#8212; and after brief surprise</line>
+    <line><unclear reason="illegible">Were</unclear> somewhat changed &#8212; and after brief
+      surprise</line>
     <line>And greetings of delighted wonder, all</line>
     <line>Went to their sleep again &#8212; and when the dawn</line>
     <milestone unit="tei:l" spanTo="#e3-0068.02"/>
     <line>Came &#8212; wouldst thou think that toads &amp; snakes</line>
     <line rend="right">&amp; efts</line>
     <anchor xml:id="e3-0068.02"/>
-    <line>Could e'er be beautiful <unclear>?&#8212;</unclear> yet so they were</line>
+    <line>Could e'er be beautiful <hi rend="sup">?</hi>&#8212; yet so they were</line>
     <line>And that with little change of shape or hue</line>
     <line>All things had put their evil nature off</line>
-    <line><del rend="strikethrough">Like an old garment soiled</del> <del rend="strikethrough">&amp;</del> <del rend="strikethrough">overworn</del></line>
+    <line><del rend="strikethrough">Like an old garment soiled</del>
+      <del rend="strikethrough">&amp;</del>
+      <del rend="strikethrough">overworn</del></line>
     <line>I cannot tell my joy, when oer a lake,</line>
     <line>Upon a drooping bough with nightshade twined</line>
     <line><add><metamark function="count">383</metamark></add></line>
   </zone>
 </surface>
-

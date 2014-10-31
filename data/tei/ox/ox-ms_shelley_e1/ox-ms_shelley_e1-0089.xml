@@ -1,37 +1,87 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0089" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0089" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0089.jp2"/>
+  <zone type="library"><line rend="right">44</line></zone>
   <zone type="main">
-    <line>44</line>
-    <line>[?<del rend="strikethrough">Corbay</del>] Corybants who <del rend="strikethrough">have</del> dance</line>
+    <line>[?<del rend="strikethrough">Corbay</del>] Corybants who <del rend="strikethrough"
+        >have</del> dance</line>
     <line>having lost all controul over their</line>
-    <line>mind, are <del rend="strikethrough">excited</del> <del rend="strikethrough">to a stated of divine</del></line>
-    <line>compose</line>
-    <line>insanity in the composition of those</line>
-    <line>of theirs</line>
-    <line><del rend="strikethrough">beautiful songs</del> admired songs in a</line>
-    <line>state of <del rend="strikethrough">divine</del> insanity, &amp; <del rend="strikethrough">possessed</del></line>
-    <line>by <del rend="strikethrough">something more powerful than [their]</del></line>
-    <line>in this supernatural possession are</line>
-    <line>excited to <del rend="strikethrough">ha</del> the [rhythm] &amp; harmony</line>
+    <line>mind, <del rend="unmarked">are</del>
+      <del rend="strikethrough">excited</del>
+      <del rend="strikethrough">to a stated of divine</del></line>
+    <line>insanity in the<add place="superlinear">compose</add> compos<unclear rend="illegible"
+        >ition</unclear> of <mod>
+        <del rend="overwritten">the</del>
+        <add place="intralinear">those</add>
+      </mod></line>
+    <line/>
+    <line><del rend="strikethrough">beautiful songs</del> admired songs <add place="superlinear">of
+        theirs</add> in a</line>
+    <line>state of <del rend="strikethrough">divine</del> insanity, &amp; <del rend="strikethrough"
+        >possessed</del></line>
+    <line><del rend="unmarked">by</del>
+      <del rend="strikethrough">something more powerful than <unclear reason="illegible"
+          >their</unclear></del></line>
+    <line>in th<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">is</add>
+      </mod> supernatural possession are</line>
+    <line>excited to <del rend="strikethrough">ha</del> the <unclear reason="illegible"
+        >rhythm</unclear> &amp; harmony</line>
     <line>which they invent; like <del rend="strikethrough">one</del> the</line>
-    <line>Bacchants, who when possessed by</line>
-    <line>the God draw honey &amp; milk from the</line>
-    <line>streams-- [<del rend="strikethrough">River</del>] in which {&amp;} when they</line>
-    <line><del rend="strikethrough">deep rivers</del>,-- {<del rend="strikethrough">e}nd {o}f [?deception</del>] [?by]</line>
-    <line>[?honey]</line>
-    <line>come to their senses find no [more]</line>
-    <line>the inspiration they would find as</line>
-    <line>for</line>
-    <line><del rend="strikethrough">nothing but [water]</del>{;} <del rend="strikethrough">and</del> the souls of</line>
-    <line>poets{,} <del rend="strikethrough">as the</del> <del rend="strikethrough">they say</del> as poets tell,</line>
-    <line><del rend="strikethrough">do this</del> have this peculiar minis-</line>
-    <line>[tell us]</line>
-    <line>-tration in the world; <del rend="strikethrough">for Poets</del></line>
-    <line>tell us, that [<del rend="strikethrough">fluttering</del>] flying like</line>
+    <line>Bacchant<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">s</add>
+      </mod>, who when possessed by</line>
+    <line>the <unclear reason="case">G</unclear>od <mod>
+        <del rend="overwritten"><unclear reason="illegible">st</unclear></del>
+        <add place="intralinear">dr</add>
+      </mod>aw honey &amp; milk from the</line>
+    <line><mod>
+        <del rend="strikethrough">deep rivers</del>
+        <add place="superlinear">streams&#8212;</add>
+      </mod>,&#8212; <mod>
+        <del rend="strikethrough"><unclear reason="illegible">e</unclear>nd <unclear
+            reason="illegible">o</unclear>f <unclear reason="illegible">deception</unclear></del>
+        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
+              >River</unclear></add></del>
+        <add place="superlinear"> in which <unclear reason="illegible">&amp;</unclear> when
+          they</add>
+      </mod>
+      <unclear reason="illegible">by</unclear></line>
+    <line/>
+    <line><mod>
+        <del rend="strikethrough">the inspiration they would find as</del>
+        <add place="superlinear">come to their senses find honey no <unclear reason="illegible"
+            >more</unclear></add>
+      </mod></line>
+    <line><del rend="strikethrough">nothing but <unclear reason="illegible"
+        >water</unclear></del><unclear reason="illegible">;</unclear>
+      <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">for</add>
+      </mod> the souls of</line>
+    <line><del rend="strikethrough">a</del> poets<mod>
+        <del rend="strikethrough">,</del>
+        <add>,</add>
+      </mod><del rend="strikethrough">as the</del>
+      <del rend="strikethrough">they say</del> as poets tell,</line>
+    <line><del rend="strikethrough">do this</del> have this peculiar minis&#8211;</line>
+    <line/>
+    <line>&#8211;tration in the <mod>
+        <del rend="overwritten">word&#8212;</del>
+        <add place="intralinear">world</add>
+      </mod>; <mod>
+        <del rend="strikethrough">for Poets</del>
+        <add place="superlinear"><unclear reason="illegible">tell us</unclear></add>
+      </mod></line>
+    <line>tell us, that <del rend="strikethrough">fl<mod>
+          <del rend="overwritten">y</del>
+          <add place="intralinear">u</add>
+        </mod>ttering</del> flying like</line>
     <line>bees from flower to flower, &amp; wanderg</line>
     <line>over the gardens &amp; the meadows</line>
   </zone>
