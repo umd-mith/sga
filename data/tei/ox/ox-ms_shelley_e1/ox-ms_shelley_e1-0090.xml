@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5384" lry="7250"
-  xml:id="ox-ms_shelley_e1-0090" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5384" lry="7250" xml:id="ox-ms_shelley_e1-0090" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0090.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0090.05"/>
@@ -15,28 +15,29 @@
     <line>We track all things that weep &amp; bleed &amp; live</line>
     <line>When the great King betrays them to our will</line>
     <milestone unit="tei:speaker" spanTo="#e1-0090.01"/>
-    <line>Prometheus</line>
+    <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0090.01"/>
     <line>O many fearful natures in one name!</line>
-    <line>I know ye, &amp; these lakes &amp; echoes know</line>
+    <line>I know ye, &amp; <unclear reason="illegible">these</unclear> lakes &amp; echoes
+      know</line>
     <line>The darkness &amp; the clangour of your wings.</line>
     <line>But why more hideous than your loathed selves</line>
     <line>Gather ye up in legions from the deep?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0090.02"/>
-    <line>2 Fury</line>
+    <line rend="center">2<hi rend="sup">d</hi>. Fury</line>
     <anchor xml:id="e1-0090.02"/>
     <line>We knew not that--Sisters rejoice rejoice!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0090.03"/>
-    <line>Prometheus</line>
+    <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0090.03"/>
     <line>Can aught <del rend="strikethrough">de</del> exult in its deformity?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0090.04"/>
-    <line>2 Fury</line>
+    <line>2<hi rend="sup">d</hi>. Fury</line>
     <anchor xml:id="e1-0090.04"/>
     <line>The beauty of delight makes lovers glad</line>
-    <line>Gazing on one another--so are we {.}.</line>
+    <line>Gazing on one another--so are we <unclear reason="illegible">.</unclear>.</line>
     <line>As from the rose which the pale priestess kneels</line>
     <line>To gather for her festal crown of flowers</line>
-    <line>4{5}4</line>
+    <line>4<unclear reason="illegible">5</unclear>4</line>
   </zone>
 </surface>

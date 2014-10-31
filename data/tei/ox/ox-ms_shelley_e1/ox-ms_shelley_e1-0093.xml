@@ -1,30 +1,52 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0093" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0093" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0093.jp2"/>
+  <zone type="library">
+    <line rend="right">46</line>
+    <line rend="right">(ult.)</line>
+  </zone>
   <zone type="main">
-    <line>46</line>
-    <line>a (ult.)</line>
+    <line rend="indent5">a</line>
     <line>descended upon him.-- In other respects poets</line>
-    <line>may be sufficiently ignorant &amp; incapable.</line>
-    <line>[] They compose according to</line>
-    <line><del rend="strikethrough">For</del> <del rend="strikethrough">poets</del> do no<del rend="strikethrough">t say these things through</del></line>
+    <line>may be <unclear reason="illegible">su</unclear>fficiently ignorant &amp; incapable.</line>
+    <line><mod>
+        <del rend="strikethrough">For</del>
+        <del rend="strikethrough">poets</del>
+        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
+            >p</unclear></add></del>
+        <add place="superlinear">They</add>
+      </mod> do not <mod>
+        <del rend="strikethrough">say these things through</del>
+        <add place="superlinear">compose according to</add>
+      </mod></line>
     <line>any art which they have acquired, but</line>
     <line>from the impulse of the divinity</line>
     <line>did</line>
-    <line>within them; for, <del rend="strikethrough">if</del> they [<del rend="strikethrough">even</del>] know</line>
+    <line>within them; for, <del rend="strikethrough">if</del> they <del rend="strikethrough"
+        >even</del> kn<mod>
+        <del rend="overwritten">ew</del>
+        <add place="intralinear">ow</add>
+      </mod></line>
     <line>any system of criticism according to</line>
     <line>which they could compose beautiful</line>
     <line>verses upon one subject, they would</line>
     <line>be able to exert the same faculty</line>
-    <line>with respect to <del rend="strikethrough">any</del> all or any other{s} <del rend="strikethrough">subj</del></line>
+    <line>with respect to <del rend="strikethrough">any</del> all or any other<unclear
+        reason="illegible">s</unclear>
+      <del rend="strikethrough">subj</del></line>
     <line>purposely</line>
-    <line>The <unclear>G</unclear>od <del rend="strikethrough">purposely</del> has deprived all</line>
+    <line>The <unclear reason="case">G</unclear>od <del rend="strikethrough">purposely</del> has
+      deprived all</line>
     <line>to adapt them for</line>
-    <line>poets, prophets &amp; soothsayers, [<del rend="strikethrough">whom</del>]</line>
-    <line>their employ<hi rend="sub">ments</hi>as his ministers &amp;</line>
+    <line>poets, prophets &amp; soothsayers, <del rend="strikethrough"><unclear reason="illegible"
+          >whom</unclear></del></line>
+    <line><mod>
+        <del rend="overwritten">the</del>
+        <add place="intralinear">their</add>
+      </mod> employ<hi rend="sub">ments</hi>as his ministers &amp;</line>
     <!--check if subscript or just falling script -->
     <line>interpreters, of every particle of reason</line>
     <line>&amp; understanding; in order that we</line>
@@ -32,6 +54,7 @@
     <line>such absurd persons cannot</line>
     <line>possibly be the authors of the</line>
     <line>excellent &amp; admirable things which</line>
-    <line>they communicate; [<del rend="strikethrough">So</del>] but that he</line>
+    <line>they communicate; <del rend="strikethrough"><unclear reason="illegible">So</unclear></del>
+      but that he</line>
   </zone>
 </surface>

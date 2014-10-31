@@ -10,9 +10,16 @@
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">is</add>
       </mod> about to be restored.</line>
-    <line rend="indent1">As to imitation; Poetry is a</line>
+    <line rend="indent1"><unclear reason="illegible">As</unclear> to imitation; Poetry is a</line>
     <line>mimetic art. It creates, but it creates</line>
-    <line>by combination &amp; representation. <del rend="strikethrough">;</del> Poetical</line>
+    <line>by combination &amp; representation<mod>
+        <add xml:id="e3-0077.01">.</add>
+        <del rend="strikethrough" next="#e3-0077.01">;</del>
+      </mod>
+      <mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">P</add>
+      </mod>oetical</line>
     <line>abstractions are beautiful &amp; new, not</line>
     <line>because <del rend="strikethrough">they had no previous</del> the <mod>
         <del rend="strikethrough">parts</del>
@@ -20,26 +27,37 @@
       </mod></line>
     <line>of which they are composed had no</line>
     <line>previous existence in the mind of man</line>
-    <line>or <del rend="strikethrough">of</del> in nature, but because the whole </line>
-    <line><del rend="strikethrough">which these parts</del> produced<mod>
+    <line>or <del rend="strikethrough">of</del> in nature<unclear reason="illegible">,</unclear> but
+      because the whole </line>
+    <line><del rend="strikethrough">which <unclear reason="illegible">these</unclear> parts</del> produced<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">by their combination</add>
       </mod> has some</line>
-    <line rend="right" rotate="180"><unclear>as</unclear> they</line>
+    <line rend="right" rotate="180"><milestone unit="tei:seg" spanTo="#e3-0077.02"
+        xml:id="e3-0077.03"/><unclear reason="illegible">as</unclear> they<anchor
+        xml:id="e3-0077.02"/></line>
     <line>intelligible &amp; beautiful analogy with</line>
     <line>those sources of emotion &amp; thought.</line>
-    <line rend="indent1">One great Poet is a masterpiece</line>
-    <line>of nature <unclear>,</unclear><add place="superlinear">which another</add> not only ought
-      to study</line>
-    <line>but must study. <del rend="strikethrough">He <unclear>r</unclear></del> He might</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">The</del>
+        <add place="intralinear">One</add>
+      </mod> great Poet is a masterpiece</line>
+    <line>of nature <mod>
+        <del rend="overwritten">.</del>
+        <add place="intralinear">,</add>
+      </mod><add place="superlinear">which another</add> not only ought to study</line>
+    <line>but must study. <del rend="strikethrough">He <unclear reason="illegible">m</unclear></del>
+      He might</line>
     <line>as wisely &amp; as easily determine that</line>
     <line>his mind should no longer be the</line>
-    <line rend="right" rotate="180">monstrous</line>
-    <line>mirror of <del rend="strikethrough">th</del> all that is lovely
-      <unclear>&#8212;</unclear>in</line>
+    <line rend="right" rotate="180"><milestone unit="tei:seg" spanTo="#e3-0077.04"
+        xml:id="e3-0077.05"/>monstrous<anchor xml:id="e3-0077.04"/></line>
+    <line>mirror of <del rend="strikethrough">th</del> all that is lovely <unclear
+        reason="illegible">&#8212;</unclear>in</line>
     <line>the visible universe, as <mod>
         <del rend="strikethrough">that he would</del>
-        <add place="superlinear"><del rend="strikethrough"><unclear>to</unclear></del></add>
+        <add place="superlinear"><del rend="strikethrough"><unclear reason="illegible"
+            >to</unclear></del></add>
       </mod></line>
     <line><unclear reason="case">E</unclear>xclude from his contemplation</line>
     <line>the <del rend="strikethrough"><unclear>be</unclear></del> beautiful which exists</line>

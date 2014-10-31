@@ -6,8 +6,9 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0071.jp2"/>
   <zone type="library">33</zone>
   <zone type="main">
-    <line rend="indent4"><unclear>from</unclear></line>
-    <line rend="indent4"><del rend="strikethrough"><unclear>those</unclear></del></line>
+    <line rend="indent4"><unclear reason="illegible">from</unclear></line>
+    <line rend="indent4"><del rend="strikethrough"><unclear reason="illegible"
+      >those</unclear></del></line>
     <milestone unit="tei:speaker" spanTo="#e3-0071.01"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0071.01"/>
@@ -21,7 +22,7 @@
           <add place="superlinear">chaste</add>
         </mod>
       </mod><mod>
-        <del rend="strikethrough"><hi rend="underline">chaste</hi></del>
+        <hi rend="underline"><del rend="strikethrough">chaste</del></hi>
         <add place="superlinear">Sister</add>
       </mod></line>
     <line>Who guides the frozen and <add place="superlinear">the</add>inconstant moon</line>
@@ -44,16 +45,18 @@
     <line>With sphered <mod>
         <del rend="strikethrough">lights</del>
         <add place="superlinear">fires</add>
-      </mod> the interlunar air? <unclear>&#8212;</unclear></line>
+      </mod> the interlunar air? <unclear reason="illegible">&#8212;</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e3-0071.04"/>
-    <line rend="center">Spirit of the Earth</line>
+    <line rend="center">Spirit <add>of the Earth</add></line>
     <anchor xml:id="e3-0071.04"/>
-    <line>Nay Mother while my sister <mod>
-        <del rend="strikethrough"><hi rend="underline">fills</hi></del>
+    <line>Nay Mother <unclear reason="illegible">while</unclear> my sister <mod>
+        <hi rend="underline"><del rend="strikethrough">fills</del></hi>
         <add place="superlinear">trims</add>
       </mod>her lamp</line>
-    <line><del rend="strikethrough">Why</del> Tis hard I should go darkling <del
-          rend="strikethrough"><unclear>&#8212;.</unclear></del></line>
+    <line><del rend="strikethrough">Why</del> Tis hard I should go darkling <mod>
+        <del rend="strikethrough"><unclear reason="illegible">&#8212;</unclear></del>
+        <add>.</add>
+      </mod></line>
     <milestone unit="tei:speaker" spanTo="#e3-0071.05"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0071.05"/>
