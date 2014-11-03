@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7478"
-  xml:id="ox-ms_shelley_e1-0002" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7478" xml:id="ox-ms_shelley_e1-0002" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0002.jp2"/>
   <zone type="library">
     <line>MS. Shelley e.1</line>
@@ -14,6 +14,7 @@
     <line rend="indent4"><hi rend="underline">163</hi></line>
     <line>excite your audience to the highest</line>
     <line rend="indent4"><del rend="strikethrough"><hi rend="underline">500</hi></del></line>
+    <!--use the "change" element or attribute to indicate layers of writing-->
     <line>degree; when for instance you sing of</line>
     <line>Ulysses leaping upon the threshold of</line>
     <line>his home, <mod>
@@ -31,7 +32,10 @@
     <line>transported into the midst of</line>
     <line>the action which it paints in</line>
     <line>its enthusiasm, whether in Ithaca</line>
-    <line>or in Troy, or whatever other place</line>
+    <line>or in Troy, <mod>
+        <del rend="overwritten">&amp;</del>
+        <add place="intralinear">or</add>
+      </mod> whatever other place</line>
     <line>may be the scene of the epic</line>
     <line>you recite? <metamark>X</metamark></line>
   </zone>
