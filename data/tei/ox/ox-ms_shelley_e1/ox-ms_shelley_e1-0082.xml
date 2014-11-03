@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0082" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0082" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0082.jp2"/>
   <zone type="main">
-    <line>The chrystal-winged snow cling round my hair&#x2014;</line>
-    <line>Whilst my beloved race is trodden down</line>
+    <line>The chrystal-winged snow cling<del rend="strikethrough">s</del> round my
+      hair&#x2014;</line>
+    <line>Whilst my beloved ra<retrace cause="clarify">c</retrace>e is tr<mod>
+        <del rend="overwritten">ample</del>
+        <add place="intralinear">dodden</add>
+      </mod> down</line>
     <line>By his thought-executing ministers.</line>
     <line>Such is the tyrants recompense&#x2014;'tis just:</line>
     <line>He who is evil can recieve no good</line>
     <line>And for a world bestowed or a friend lost</line>
-    <line>He Can feel hate, fear, shame&#x2014;not gratitude</line>
-    <line>/</line>
-    <line>\</line>
+    <line rend="left">He Can feel hate, fear, shame&#x2014;not gratitude</line>
+    <line rend="right"><add><metamark function="displacement">&#60;</metamark></add></line>
+    <anchor xml:id="e1-0082.01"/>
     <line>Kindness to such is keen reproach which breaks</line>
-    <line>With bitter stings the light sleep of Revenge.</line>
-    <line>Submission, thou dost know, I cannot try:</line>
+    <line>With bitter stings the light sleep of Reveng<unclear reason="illegible"
+      >e</unclear>.</line>
+    <line>Subm<retrace cause="clarify">i</retrace>ssion, thou dost know, I cannot try:</line>
     <line>For what submission but that fatal word</line>
     <line>The death-seal of mankind's captivity,</line>
-    <line>Like the Sicilians hair-suspended sword</line>
-    <line>Which trembles oer his crown, would he accept<unclear>--</unclear></line>
-    <line>Or could I yield?&#x2014;which yet I will not yield.</line>
-    <line>Let others flatter Crime where it sits thron<unclear>e</unclear>d</line>
+    <line><mod>
+        <del rend="overwritten">The</del>
+        <add place="intralinear">Like</add>
+      </mod> the Sicilians hair-suspended sword</line>
+    <line>Which trembles oer his crown, would he accept<unclear reason="illegible"
+      >&#8212;</unclear></line>
+    <line>Or could I yield?&#x2014;which yet I will not y<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>eld.</line>
+    <line>Let others flatter Crime where it sits thron<unclear reason="illegible"
+      >e</unclear>d</line>
     <line>In brief Omnipotence; secure are they</line>
     <line>For Justice when triumphant will weep down</line>
     <line>Pity not punishment on her own wrongs</line>

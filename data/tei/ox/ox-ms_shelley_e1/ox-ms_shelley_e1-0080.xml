@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0080" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0080" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0080.jp2"/>
   <zone type="main">
     <line>Or what more subtle foul &amp; savage fiends</line>
@@ -10,8 +10,12 @@
     <line>Be it not so ... there is a secret known</line>
     <line>To thee &amp; to none else of living things</line>
     <line>Which may transfer the sceptre of wide Heaven</line>
-    <line>The fear of which perplexes the Supreme...</line>
-    <line>Clothe it in words, &amp; bid <del rend="strikethrough">them gird</del> his throne</line>
+    <line>The fear of which perplexes the <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>upreme...</line>
+    <line>Clothe it in words, &amp; bid <del rend="strikethrough">them gird</del><anchor
+        xml:id="e1-0080.02"/> his throne</line>
     <line>In intercession; bend thy soul in prayer</line>
     <line>And like a suppliant in some gorgeous fane</line>
     <line>Let the will kneel within thy haughty heart;</line>
@@ -20,14 +24,26 @@
     <milestone unit="tei:speaker" spanTo="#e1-0080.01"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0080.01"/>
-    <line>Evil minds</line>
+    <line rend="indent4">Evil minds</line>
     <line>Change good to their own nature. I gave all</line>
-    <line>He has{;} <del rend="strikethrough">I</del> placed it in his choice to be</line>
+    <delSpan spanTo="#e1-0080.03"/>
+    <line>He has<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">;</add>
+      </mod>
+      <mod>
+        <del rend="overwritten">&amp;</del>
+        <add place="intralinear">I</add>
+      </mod> placed it in his choice to be</line>
     <line>The crown, or trampled refuse of the world</line>
     <line>With but one law itself a glorious boon &#x2014;</line>
-    <line>I gave &#x2014; &amp; in return he chains me here</line>
+    <line>I gave &#x2014; &amp; in return he chains me h<mod>
+        <del rend="overwritten">ear</del>
+        <add place="intralinear">ere</add>
+      </mod></line>
+    <anchor xml:id="e1-0080.03"/>
     <line>Years, ages night &amp; day, whether the Sun</line>
     <line>Split my parched skin, or in the moony [night&#x2014;]</line>
-    <line>374</line>
+    <line rend="right"><add><metamark function="count">374</metamark></add></line>
   </zone>
 </surface>

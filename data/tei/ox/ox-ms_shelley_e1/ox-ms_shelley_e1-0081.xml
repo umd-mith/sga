@@ -5,36 +5,48 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0081" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0081.jp2"/>
   <zone type="library">
-    <line>40</line>
+    <line rend="right">40</line>
   </zone>
   <zone type="main">
     <line>reasoning upon the subject; but who,</line>
     <line>when his opinion was required</line>
-    <line>of</line>
-    <line><del rend="strikethrough">respecting</del> Polygnotus{,} or any</line>
+    <line><mod>
+        <del rend="strikethrough">respecting</del>
+        <add place="superlinear">of</add>
+      </mod> Polygnotus<unclear reason="illegible">,</unclear> or any</line>
     <line>one single painter you please, awoke,</line>
     <line>paid attention to the subject, &amp;</line>
     <line><del rend="strikethrough">discussed</del> it with great eloquence.</line>
-    <line>it clasp<hi rend="subscript">ed</hi></line>
-    <line>illustration</line>
-    <line><hi rend="underline">Ion</hi>. Never, by Jupiter.-- <hi rend="underline">Soc</hi>.
-      Did</line>
+    <line><milestone unit="tei:seg" spanTo="#e1-0081.07" corresp="#e1-0080.02"/>it clasp<anchor
+        xml:id="e1-0081.07"/></line>
+    <line>illustrat<mod>
+        <del rend="unmarked">ion</del>
+        <add><hi rend="sup">ed</hi></add>
+      </mod></line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0081.03"/><hi rend="underline">Ion</hi>.<anchor
+        xml:id="e1-0081.03"/> Never, by Jupiter.&#8212; <milestone unit="tei:speaker"
+        spanTo="#e1-0081.04"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0081.04"/> Did</line>
     <line>you ever know any one very skilful</line>
-    <line>in disscussing the merits of <del rend="strikethrough">any</del></line>
-    <line><del rend="strikethrough">one great {s}</del> DÃ¦dalus the son of</line>
-    <line>[?one]</line>
-    <line>Metion, Epeius <del rend="strikethrough">of</del> Panopeus, Theo</line>
+    <line>in disscussing th<unclear reason="illegible">e</unclear> merits of <del
+        rend="strikethrough">any</del></line>
+    <line><del rend="strikethrough">one great {s}</del> D&#230;ldalus the son of</line>
+    <line><add place="superlinear"><unclear reason="illegible">one</unclear></add>Metion, <unclear
+        reason="illegible">Epeius</unclear>
+      <del rend="strikethrough">of</del> Panopeus, Theo</line>
     <line>dorus the Samian or any other</line>
     <line>great sculptor, who immediately</line>
     <line>went to sleep &amp; became at a</line>
-    <line>loss the moment any other sculp</line>
+    <line>loss the moment any other sculp<anchor xml:id="e1-0081.02"/></line>
     <line><del rend="strikethrough">To be the Sun of gladness to all life</del></line>
-    <line>tor was</line>
+    <line rend="indent5"><milestone unit="tei:seg" spanTo="#e1-0081.01" corresp="e1-0081.02"/>tor
+        was<anchor xml:id="e1-0081.01"/></line>
     <line><del rend="strikethrough">To be the sun of joy to the dark world</del></line>
-    <line>mentioned. <hi rend="underline">Ion</hi>. I never met</line>
+    <line>mentioned. <milestone unit="tei:speaker" spanTo="#e1-0081.05"/><hi rend="underline"
+        >Ion</hi>.<anchor xml:id="e1-0081.05"/> I never met</line>
     <line>with such a person certainly.</line>
-    <line><hi rend="underline">Soc</hi>. Nor do I think you ever</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0081.06"/><hi rend="underline">Soc</hi>.<anchor
+        xml:id="e1-0081.06"/> Nor do I think you ever</line>
     <line>saw a man who <del rend="strikethrough">having</del>
-      <del rend="strikethrough underline">studied</del></line>
+      <del rend="strikethrough">studied</del></line>
   </zone>
 </surface>
