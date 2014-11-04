@@ -2,40 +2,66 @@
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
 <!-- editing begun, not yet complete amstauff dmw and sas -->
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0076" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0076" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0076.jp2"/>
   <zone type="main">
     <milestone unit="tei:stage" spanTo="e1-0076.01"/>
-    <line rend="indent1">Enter Mercury followed by the Furies</line>
-    <line>whom he represses with his wand.</line><anchor xml:id="e1-0076.01"/>
+    <delSpan spanTo="#e1-0076.11" rend="vertical_line"/>
+    <line rend="indent1">Enter <mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">M</add>
+      </mod>ercury followed by the Furies</line>
+    <line>whom he represses with his wand.</line><anchor xml:id="e1-0076.11"/><anchor
+      xml:id="e1-0076.01"/>
     <milestone unit="tei:speaker" spanTo="e1-0076.02"/>
     <line rend="center">1<hi rend="sup">st</hi>. Fury</line><anchor xml:id="e1-0076.02"/>
-    <line>Ha I <mod><del rend="strikethrough">smell</del> <add place="superlinear">scent</add></mod>life!</line>
-    <milestone unit="tei:speaker" spanTo="#e1-0076.03"/><line>2 <hi rend="sup">d</hi>.</line><anchor xml:id="e1-0076.03"/>
+    <line>Ha I <mod>
+        <del rend="strikethrough">smell</del>
+        <add place="superlinear">scent</add>
+      </mod>life!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0076.03"/><line>2 <hi rend="sup">d</hi>.</line><anchor
+      xml:id="e1-0076.03"/>
     <line rend="indent3">Let me but look in his eyes!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0076.04"/>
-    <line>3<hi rend="sup">d</hi>.</line><anchor xml:id="e1-0076.04"/>
+    <line rend="center">3<hi rend="sup">d</hi>.</line><anchor xml:id="e1-0076.04"/>
     <line>The hope of torturing him smells like <mod spanTo="#e1-0076.05"/>
-     <del rend="strikethrough">fresh</del> <del rend="strikethrough">corpses</del>
-      <add place="superlinear" next="#e1-0076.06">a <del rend="strikethrough" instant="true">hap</del>heap</add></line>
-    <line><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"/><anchor xml:id="e1-0076.06"/>
-    To a death-bird after battle!</line>
+      <del rend="strikethrough">fresh</del>
+      <del rend="strikethrough">corpses</del>
+      <add place="superlinear" next="#e1-0076.06">a <del rend="strikethrough" instant="true"
+          >hap</del>heap</add></line>
+    <line rend="indent1"><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"
+        /><anchor xml:id="e1-0076.06"/></line>
+    <line>To a death-bird after battle!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0076.07"/>
+    <delSpan spanTo="#e1-0076.12" rend="vertical_line"/>
     <line rend="center">1<hi rend="sup">st</hi>.</line><anchor xml:id="e1-0076.07"/>
     <mod spanTo="#e1-0076.08"/><line rend="indent3">Herald of Gods</line>
-    <line>Darest thou delay? take cheer, <del rend="strikethrough">a richer prey</del></line>
-    <line><mod><del rend="strikethrough">Children of Hell</del>
-      <add place="superlinear"><milestone unit="tei:stage" spanTo="e1-0076.09"/>He pauses<anchor xml:id="e1-0076.09"/></add></mod>
-      If the Son of Maia soon</line>
+    <line>Darest thou delay<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">?</add>
+      </mod> take cheer, <del rend="strikethrough">a richer prey</del></line>
+    <line><mod>
+        <del rend="strikethrough">Children of Hell</del>
+        <add place="superlinear"><milestone unit="tei:stage" spanTo="e1-0076.09"/>He pauses<unclear
+            reason="illegible">.</unclear><anchor xml:id="e1-0076.09"/></add>
+      </mod> If the Son of Maia soon</line>
     <line>Should make us food &#x26; sport? Who can please long</line>
-    <line>The Omnipotent?</line><anchor xml:id="e1-0076.08"/>
-    <milestone unit="tei:speaker" spanTo="e1-0076.10"/><line rend="center">Mercury</line><anchor xml:id="e1-0076.10"/>
+    <line>The <unclear reason="case">O</unclear>mnipotent?</line><anchor xml:id="e1-0076.08"/>
+    <anchor xml:id="e1-0076.12"/>
+    <milestone unit="tei:speaker" spanTo="e1-0076.10"/><line rend="center">Mercury</line><anchor
+      xml:id="e1-0076.10"/>
     <line rend="indent3">Back to your towers of iron</line>
-    <line>And gnash, beside the streams of fire &#x26; wail</line>
+    <line>And gnash, beside the streams of fire wail</line>
     <line>Your foodless teeth!.. Geryon arise &#x26; Gorgon</line>
     <line>Chim&#x00e6;ra &#x26; thou Spinx subtlest of fiends</line>
     <line>Who ministered to Thebes Heaven's poisoned wine</line>
-    <line>Unnatural <mod><del rend="strikethrough">hate</del><add place="superlinear">love</add> </mod>&#x26; more unnatural hate</line>
+    <line>Unnatural <mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">love</del>
+            <add place="intralinear">hate</add>
+          </mod></del>
+        <add place="superlinear">love</add>
+      </mod>&#x26; more unnatural hate</line>
   </zone>
 </surface>

@@ -1,44 +1,62 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0078" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0078" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0078.jp2"/>
   <zone type="main">
     <line>20</line>
     <line>These shall perform your task <hi rend="underline">37</hi></line>
     <line>140</line>
-    <line>37)37000 1<hi rend="superscript">t</hi><hi rend="superscript">20</hi><hi rend="underline">60</hi></line>
-    <line>O mercy{!} mercy</line>
+    <line>37)37000 <milestone unit="tei:speaker" spanTo="#e1-0078.01"/>1<hi rend="sup"
+        >st</hi>.<anchor xml:id="e1-0078.01"/><hi rend="sup">20</hi><hi rend="underline"
+      >60</hi></line>
+    <line rend="indent4">O mercy<unclear reason="illegible">!</unclear> mercy</line>
     <line>500</line>
-    <line><hi rend="underline">5,0)00</hi><del rend="strikethrough">0,0</del> <hi rend="underline">500</hi></line>
-    <line><del rend="strikethrough">25</del><del rend="strikethrough underline">0,</del><hi rend="underline">000</hi></line>
-    <line>We die with our desire--drive us not back!</line>
+    <line><hi rend="underline">5,0)00</hi><del rend="strikethrough">0,0</del>
+      <hi rend="underline">500</hi></line>
+    <line><del rend="strikethrough">25</del><del rend="strikethrough">0,</del><hi rend="underline"
+        >000</hi></line>
+    <line>We die with our desire&#8212;drive us not back!</line>
     <line>69 37260 690</line>
-    <line>10) <hi rend="underline">37260</hi> Mercury <hi rend="underline">54</hi> 37<hi rend="subscript">2</hi>460</line>
-    <line>Crouch then in silence.-- 2760 <hi rend="underline">.20</hi></line>
-    <line>34Awful Sufferer{,}</line>
+    <line>10) <hi rend="underline">37260</hi>
+      <milestone unit="tei:speaker" spanTo="#e1-0078.02"/>Mercury<anchor xml:id="e1-0078.02"/>
+      <hi rend="underline">54</hi> 37<hi rend="subscript">2</hi>460</line>
+    <line>Crouch then in silence.&#8212; 34 Awful Sufferer<unclear reason="illegible"
+      >,</unclear>2760 <hi rend="underline">.20</hi></line>
+    <line/>
     <line>37,260</line>
-    <line>thee</line>
-    <line>To <del rend="strikethrough">one</del> unwilling, most unwillingly</line>
-    <line>I come{,} by the great Father's will driven down</line>
+    <line/>
+    <line>To <mod>
+        <del rend="strikethrough">one</del>
+        <add place="superlinear">thee</add>
+      </mod> unwilling, most unwillingly</line>
+    <line>I come<unclear reason="illegible">,</unclear> by the great Father's will driven
+      down</line>
     <line><del rend="strikethrough">20,000</del></line>
     <line>To execute a doom of new revenge.</line>
     <line>Alas I pity thee, and hate myself</line>
-    <line>That I can do more-- aye from thy sight</line>
-    <line>Returning, for a season, heaven seems hell{.}</line>
+    <line>That I can do more&#8212; aye from thy sight</line>
+    <line>Returning, for a season, heaven seems hell<unclear reason="illegible">.</unclear></line>
     <line>So thy worn form pursues me night &amp; day,</line>
     <line>Smiling reproach. Wise art thou firm &amp; go&lt;od&gt;</line>
     <line>But vanily wouldst stand forth alone in strife</line>
     <line>Against the Omnipotent, as yon clear lamps</line>
-    <line>That measure &amp; divide the weary years</line>
+    <line>That measure &amp; divide the weary year<retrace cause="clarify">s</retrace></line>
     <line>From which there is no refuge, long have taught</line>
-    <line>even now <del rend="strikethrough">mighty</del></line>
-    <line>And long must teach -- thy<hi rend="subscript">^</hi>Torturer arms</line>
-    <line>the strange might of</line>
-    <line><del rend="strikethrough underline">Even now</del><del rend="strikethrough">,</del> with <del rend="strikethrough">new</del> unimagined pains</line>
+    <line>And long must teach &#8212; thy<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">even now </add>
+        <del rend="strikethrough"><add place="superlinear">mighty</add></del>
+      </mod>Torturer arms</line>
+    <line><del rend="strikethrough"><hi rend="underline">Even now</hi></del><del
+        rend="strikethrough">,</del> with <del rend="strikethrough">new</del>
+      <mod>
+        <del rend="strikethrough">&amp;</del>
+        <add place="superlinear">the strange might of</add>
+      </mod> unimagined pains</line>
     <line>The powers who scheme slow agonies in hell,</line>
     <line>And my commission is{,} to lead them here</line>
-    <line>355</line>
+    <line rend="right"><add><metamark function="count">355</metamark></add></line>
   </zone>
 </surface>
