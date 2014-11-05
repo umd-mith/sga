@@ -4,15 +4,29 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
   xml:id="ox-ms_shelley_e1-0041" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0041.jp2"/>
-  <zone type="main">
+  <zone type="library">
     <line>20</line>
-    <line>that which thou surveyest</line>
+    </zone>
+  <zone type="main">
+    <addSpan spanTo="#e1-0041.01" corresp="#e1-0040.05"/>
+    <line rend="indent3">that which thou surveyest</line>
     <line>From thine unenvied throne</line>
+    <anchor xml:id="e1-0041.01"/>
+    
     <line>[SKETCH IN PENCIL OF TREE]</line>
+    
+    
     <line>Have it's deaf waves not heard my agony?</line>
-    <line>Ah me, alas, pain, pain ever forever!</line>
-    <line>No change, no pause, no hope!--yet I endure</line>
+    
+    <addSpan spanTo="#e1-0041.02"/>
+    <line rend="indent1">Ah me, alas, pain, pain ever forever!</line>
+    <line rend="indent1">No change, no pause, no hope!--yet I endure</line>
+    <anchor xml:id="e1-0041.02"/>
+    
     <line>Ah me alas pain ever forever</line>
-    <line>Mocking me</line>
+    
+    
+    
+    <line><add>Mocking me</add></line>
   </zone>
 </surface>
