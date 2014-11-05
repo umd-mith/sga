@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0074" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0074" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0074.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="e1-0074.01"/><line rend="center">Panthea</line>
     <anchor xml:id="e1-0074.01"/>
-    <line>Tis Jove's <mod><del rend="strikethrough">Heaven-walking</del> <add place="superlinear">world-wandering</add></mod> Herald, Mercury</line>
-    <milestone unit="tei:speaker" spanTo="e1-0074.02"/> <line rend="center">Ione</line>
+    <line>Tis Jove's <mod>
+        <del rend="strikethrough">Heaven-walking</del>
+        <add place="superlinear">world-wandering</add>
+      </mod> Herald, Mercury</line>
+    <milestone unit="tei:speaker" spanTo="e1-0074.02"/>
+    <line rend="center">Ione</line>
     <anchor xml:id="e1-0074.02"/>
-    <line rend="indent1">And who are those with hydra tresses</line>
+    <line rend="indent1">And who are those with <mod>
+        <del rend="overwritten">H</del>
+        <add place="intralinear">h</add>
+      </mod>ydra tresses</line>
     <line rend="indent1">And iron wings that climb the wind</line>
     <line rend="indent1">Whom the frowning God represses</line>
     <line rend="indent1">Like vapours steaming up behind,</line>
     <line rend="indent1">Clanging loud, an endless crowd</line>
     <milestone unit="tei:speaker" spanTo="e1-0074.03"/><line rend="center">Panthea</line>
     <anchor xml:id="e1-0074.03"/>
-    <line rend="indent1">These are Joves <del rend="strikethrough">tempest</del>-<del rend="strikethrough">walkin</del>g hounds</line>
+    <line rend="indent1">These are Joves <del rend="strikethrough">tempest</del>-<del
+        rend="strikethrough">walkin</del>g hounds</line>
     <line rend="indent1">Whom he gluts on groans &#x26; blood</line>
     <line rend="indent1">When charioted on sulphurous cloud</line>
     <line rend="indent2">He bursts Heaven's bounds</line>
@@ -27,8 +35,14 @@
     <line rend="indent1">On new pangs to be fed?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0074.05"/><line rend="center">Panthea</line>
     <anchor xml:id="e1-0074.05"/>
-    <line><milestone unit="tei: l" spanTo="e1-0074.06"/><del rend="strikethrough">Yes. but</del> The Titan looks<mod><add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
-    <add place="superlinear">as ever</add></mod> firm, <del rend="strikethrough">though</del> not</line>
+    <line><milestone unit="tei:l" spanTo="e1-0074.06"/><del rend="strikethrough">Yes. but</del>
+      <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>he Titan looks<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">as ever</add>
+      </mod> firm, <del rend="strikethrough">though</del> not</line>
     <line rend="right">proud.<anchor xml:id="e1-0074.06"/></line>
   </zone>
 </surface>
