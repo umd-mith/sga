@@ -1,28 +1,43 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0071" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0071" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0071.jp2"/>
+  <zone type="library">
+    <line rend="right">35</line>
+  </zone>
   <zone type="main">
-    <line>35</line>
     <line>Of dread endurance; from the slippery, steep,</line>
     <line>And narrow verge of craglike Agony springs</line>
     <line>And folds over the world its healing wings</line>
     <line>Gentleness, Virtue,</line>
-    <line><del rend="strikethrough">Virtue &amp; Love &amp;</del> Wisdom &amp; {E}ndurance,--</line>
+    <line><del rend="strikethrough">Virtue &amp; Love &amp;</del> Wisdom &amp; <unclear
+        reason="case">E</unclear>ndurance,&#8212;</line>
     <line>These are the seals of that most firm assurance</line>
     <line>Which bars the pit over Destructions strength;</line>
     <line>And if, with infirm hand, Eternity,</line>
-    <line>Mother of many acts &amp; hours, should free</line>
+    <line>Mother of many acts &amp; hours, <mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">sh</add>
+      </mod>ould free</line>
+    <milestone unit="tei:l" spanTo="#e1-0071.01"/>
     <line>The serpent that would clasp her with his</line>
-    <line>length,--</line>
-    <line>These are the spells by which to reassume</line>
-    <line>An empire o'er that disentangled Doom</line>
+    <line rend="right">length,&#8212;</line>
+    <anchor xml:id="e1-0071.01"/>
+    <line>These are the sp<retrace cause="clarify">e</retrace>lls by which to reassume</line>
+    <line>An empire o<retrace cause="clarify">'e</retrace>r that <mod>
+        <del rend="overwritten">D</del>
+        <add place="intralinear">d</add>
+      </mod>isentangled <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>oom</line>
     <line>To suffer woes which Hope thinks infinite</line>
-    <line>To forgive wrongs darker than Death or Night{;}</line>
+    <line>To forgive wrongs darker than Death or Night<unclear reason="illegible">;</unclear></line>
     <line>To defy Power, which seems Omnipotent;</line>
-    <line>To love, &amp; bear; to hope{} till Hope creates</line>
+    <line>To love, &amp; bear; to hope<del rend="smear"><unclear reason="illegible"
+        >,</unclear></del> till Hope creates</line>
     <line>From its own wreck the thing it contemplates</line>
     <line>Neither to change nor falter nor repent</line>
     <line>This, like thy glory, Titan! is to be</line>
