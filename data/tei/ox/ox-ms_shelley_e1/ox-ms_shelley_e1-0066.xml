@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0066" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0066" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0066.jp2"/>
   <zone type="main">
     <line>Darkens above.</line>
-    <milestone unit="tei:speaker" spanTo="e1-0066.01"/><line rend="center">Ione</line><anchor xml:id="e1-0066.01"/>
-    <line>He speaks! <mod><del rend="strikethrough">O sister</del><add place="superlinear">O</add></mod> shelter me&#x2014;</line>
-    <line><metamark function="insert"><!-- Here in the MS PBS has a mark that looks a little like an equals sign (or a less than sign):
-    in the printed volume Prometheus speaks four lines here so I assume this metamark points to those missing
-    lines, but I wasn't sure what to put inside the metamark tag to represent the symbol itself--></metamark></line>
-    <milestone unit="tei:speaker" spanTo="e1-0066.02"/><line rend="center">Phantasm</line><anchor xml:id="e1-0066.02"/>
+    <milestone unit="tei:speaker" spanTo="e1-0066.01"/><line rend="center">Ione</line><anchor
+      xml:id="e1-0066.01"/>
+    <line>He speaks! <mod>
+        <del rend="strikethrough">O sister</del>
+        <add place="superlinear">O</add>
+      </mod> shelter me&#x2014;</line>
+    <line rend="indent5"><add><metamark function="displacement" xml:id="e1-0066.02"
+        >&#60;</metamark></add></line>
+    <milestone unit="tei:speaker" spanTo="e1-0066.03"/><line rend="center">Phantasm</line><anchor
+      xml:id="e1-0066.03"/>
     <line>Fiend I defy thee, with a calm fixed mind</line>
     <line rend="indent1">All that thou canst inflict I bid thee do</line>
     <line>Foul Tyrant both of Gods &#x26; Humankind</line>
@@ -21,13 +25,15 @@
     <line rend="indent2">And let alternate frost &#x26; fire</line>
     <line rend="indent2">Eat into me, &#x26; be thine ire</line>
     <line>Lightning &#x26; cutting hail and legioned forms</line>
-    <line>Of furies, driving by upon the wounding storms</line> 
-    &#x160;
+    <line>Of furies, driving by upon the wounding storms</line>
     <line>Aye do thy worst. Thou art Omnipotent</line>
     <line>Oer all things but thy self I gave thee power</line>
     <line>And my own will. Be thy swift mischiefs sent</line>
-    <line>To blast mankind from yon etherial <del rend="overwritten">p</del> <!--PBS originally wrote "power" but changed the "p" to a "t," so is this the correct use of "overwritten"?-->tower</line>
-    <line>Let thy malignant spirit move</line>
+    <line>To blast mankind from yon etherial <mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">t</add>
+      </mod>ower</line>
+    <line><add place="interlinear"><metamark function="count">263</metamark></add>Let thy malignant
+      spirit move</line>
   </zone>
-  <zone type="pagination">263</zone>
 </surface>

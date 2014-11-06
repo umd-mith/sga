@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0067" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0067" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0067.jp2"/>
-  <zone type="library">33</zone>
-  <zone type="main">
+  <zone type="library">
+    <line rend="right">33</line>
+  </zone>
+  <zone type="main" corresp="#e1-0066.02">
+    <milestone unit="tei:speaker" spanTo="#e1-0067.01"/>
     <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0067.01"/>
     <line>I see the curse on gestures <mod>
-        <del rend="strikethrough"><hi rend="underline">cruel</hi></del>
-        <add place="superlinear"><del rend="strikethrough">calm</del></add>
-        <add place="superlinear"><unclear extent="3"/>proud</add>
-      </mod> &#x26; cold</line>
-    <line><metamark function="insert"
-        ><!--This mark (equals sign/less than sign) I believe corresponds to the same one in e1-0066.xml which seems to indicate that these lines
-    should be inserted into the corresponding spot in e1-0066.xml, between Ione's speech and that of the Phantasm.--></metamark><del
-        rend="strikethrough">And looks of firm defiance, &#x26;</del></line>
+        <milestone unit="tei:seg" spanTo="#e1-0067.02" xml:id="e1-0067.04"/>
+        <mod>
+          <restore type="underline"><hi rend="underline"><del rend="strikethrough"
+            >cruel,</del></hi></restore>
+        </mod>
+        <anchor xml:id="e1-0067.02"/>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">calm</add></del>
+          <milestone unit="tei:seg" spanTo="#e1-0067.03" xml:id="e1-0067.05"/>
+          <add place="superlinear"><unclear extent="3"/>proud</add>
+          <anchor xml:id="e1-0067.03"/>
+        </mod>
+      </mod> &#x26; cold<alt targets="#e1-0067.04 #e1-0067.05" mode="excl" weights="0 1"/></line>
+    <line><add><metamark function="displacement">&#60;</metamark></add><del rend="strikethrough">And
+        looks of firm defiance, &#x26;</del></line>
     <line><del rend="strikethrough">Written as on a scroll...yet speak o speak</del></line>
     <line>And looks of <del rend="strikethrough">des</del> firm defiance, &#x26; calm hate</line>
     <line>And such despair as mocks itself with smiles</line>
