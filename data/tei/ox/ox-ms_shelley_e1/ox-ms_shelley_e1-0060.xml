@@ -5,30 +5,35 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0060" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0060.jp2"/>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="#e1-0060.01"/>
-    <line rend="center">Typhon</line>
-    <anchor xml:id="e1-0060.01"/>
-    <line>or <del rend="strikethrough">Saturn</del>
-      <retrace cause="clarify">mightier</retrace>
-      <del rend="strikethrough">later</del></line>
-    <line>Hades, <del rend="strikethrough">Osiris</del> or what <del rend="strikethrough"
-        >later</del> Gods</line>
+    <line>Hades, <mod>
+        <del rend="strikethrough">Osiris</del>
+        <add place="superlinear">or</add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">Saturn</add></del>
+          <add place="superlinear">Typhon</add>
+        </mod>
+      </mod> or what <mod>
+        <del rend="strikethrough">later</del>
+        <add place="superlinear"><retrace cause="clarify">mightier</retrace></add>
+      </mod> Gods<del rend="strikethrough"><add place="superlinear">later</add></del></line>
     <line>From all-prolific evil, since thy ruin</line>
     <line>Have sprung, &amp; trampled on my prostrate sons&#8212;</line>
     <line>Ask &amp; they must reply &#8212; so the revenge</line>
+    <milestone unit="tei:l" spanTo="#e1-0060.01"/>
     <line>Of the supreme <del rend="strikethrough">shall</del> may sweep through vacant</line>
-    <line>shades</line>
+    <line rend="right">shades</line>
+    <anchor xml:id="e1-0060.01"/>
     <line>As rainy wind through the abandoned gate</line>
     <line>Of a fallen palace</line>
     <milestone unit="tei:speaker" spanTo="#e1-0060.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0060.02"/>
-    <line>Mother, let not aught</line>
+    <line rend="indent2">Mother, let not aught</line>
     <line>Of that which may be evil, pass again</line>
     <line>My lips, or those of aught resembling <unclear reason="illegible"
       >m</unclear>e&#8212;</line>
     <line>Phantasm of Jupiter arise appear!</line>
-    <delSpan spanTo="#e1-0060.05"/>
+    <delSpan spanTo="#e1-0060.05" rend="vertical_line"/>
     <milestone unit="tei:stage" spanTo="#e1-0060.04"/>
     <line>The sound beneath as of earthquake &amp; the</line>
     <line>driving of whirlwinds&#8212; The Ravine is split, &amp;</line>
@@ -41,9 +46,9 @@
         <add>Ione</add>
       </mod></line>
     <anchor xml:id="e1-0060.03"/>
-    <line>My wings are folded oer mine ears,</line>
-    <line>My wings are crossed over mine eyes,</line>
-    <line>Yet thro their silver shade appears</line>
+    <line rend="indent1">My wings are folded oer mine ears,</line>
+    <line rend="indent1">My wings are crossed over mine eyes,</line>
+    <line rend="indent1">Yet thro their silver shade appears</line>
     <line rend="indent5"><add><metamark function="count">214</metamark></add></line>
   </zone>
 </surface>
