@@ -35,7 +35,7 @@
     <line>Phantasm of Jupiter arise appear!</line>
     <delSpan spanTo="#e1-0060.05" rend="vertical_line"/>
     <milestone unit="tei:stage" spanTo="#e1-0060.04"/>
-    <line>The sound beneath as of earthquake &amp; the</line>
+    <line rend="indent1">The sound beneath as of earthquake &amp; the</line>
     <line>driving of whirlwinds&#8212; The Ravine is split, &amp;</line>
     <line>the Phantasm of Jupiter <del rend="strikethrough">appears</del> rises, surrounded</line>
     <line>by heavy clouds which dart forth lightning</line>
