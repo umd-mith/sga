@@ -1,4 +1,4 @@
-# manifest
+# sga
 
 [![Build Status](https://travis-ci.org/umd-mith/sga.svg)](http://travis-ci.org/umd-mith/sga)
 
