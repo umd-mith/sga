@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/umd-mith/sga.svg)](http://travis-ci.org/umd-mith/sga)
 
-manifest.py is a Python 2/3 library for generating a Shared Canvas manifest from
+sga is a Python 2/3 module for generating a Shared Canvas manifest from
 Shelley-Godwin TEI for use by the Shared Canvas viewer. It's also a work 
 in progress...
 
@@ -10,9 +10,15 @@ in progress...
 
     pip install requirements.txt
 
-## Run
+## Use
 
-    ./manifest.py /path/to/tei/file.xml > manifest.jsonld
+```python
+
+from sga.shared_canvas import Manifest
+
+m = Manifest("/path/to/a/tei/file.xml")
+print m.jsonld()
+```
 
 ## Test
 

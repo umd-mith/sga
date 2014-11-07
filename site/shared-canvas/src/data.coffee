@@ -254,6 +254,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       # TODO: handle other shape constraints (rectangles, ellipses)
       # TODO: handle music notation constraints
       # TODO: handle time constraints for video/sound annotations
+    console.log canvas, manifest
 
     extractTextTarget = (model, id) ->
       return unless id?
