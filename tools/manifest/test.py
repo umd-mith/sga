@@ -5,21 +5,28 @@ import pytest
 from rdflib.plugin import register, Parser
 from rdflib import ConjunctiveGraph, URIRef, RDF
 
-from manifest import Manifest, Canvas
+from sga.tei import Document, Surface
+from sga.shared_canvas import Manifest
+
 from xml.etree import ElementTree as etree
 
 
-def test_manifest():
+def test_doc():
     tei_file = "../../data/tei/ox/ox-frankenstein_notebook_c1.xml"
-    m = Manifest(tei_file)
-    assert len(m.canvases) == 36
+    d = Document(tei_file)
+    assert len(d.surfaces) == 36
 
-def test_canvas():
+def test_surface():
     tei_file = "../../data/tei/ox/ox-ms_abinger_c58/ox-ms_abinger_c58-0001.xml"
-    c = Canvas(tei_file)
-    assert len(c.zones) == 3
+    s = Surface(tei_file)
+    assert s.width == "5410"
+    assert s.height == "6660" 
+    assert s.shelfmark == "MS. Abinger c. 58"
+    assert s.folio == "1r"
+    assert s.image == "http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c58-0001.jp2"
 
-    z = c.zones[2]
+    assert len(s.zones) == 3
+    z = s.zones[2]
     assert len(z.lines) == 15
 
     l = z.lines[0]
@@ -30,20 +37,24 @@ def test_canvas():
 def test_deletion():
     # TODO: what should we do here?
     tei_file = "../../data/tei/ox/ox-ms_abinger_c58/ox-ms_abinger_c58-0001.xml"
-    c = Canvas(tei_file)
-    l = c.zones[2].lines[13]
+    s = Surface(tei_file)
+    l = s.zones[2].lines[13]
 
 def test_addition():
     # TODO: what should we do here?
     pass
 
-def test_parse_jsonld():
-    register('json-ld', Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
+def test_jsonld():
+    # generate shared canvase json-ld
     tei_file = "../../data/tei/ox/ox-frankenstein_notebook_c1.xml"
-    m = Manifest(tei_file)
-    jsonld = m.jsonld('http://example.com/frankenstein.json')
+    manifest_uri = 'http://example.com/frankenstein.json'
+    m = Manifest(tei_file, manifest_uri)
+    jsonld = m.jsonld()
 
+    # parse the json-ld as rdf
+    register('json-ld', Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
     g = ConjunctiveGraph()
     g.parse(data=jsonld, format='json-ld')
 
+    # sanity check the graph
     assert g.value(URIRef('http://example.com/frankenstein.json'), RDF.type) == URIRef('http://www.shared-canvas.org/ns/Manifest')
