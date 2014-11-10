@@ -1,34 +1,58 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5366" lry="7226"
-  xml:id="ox-ms_shelley_e1-0059" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5366" lry="7226" xml:id="ox-ms_shelley_e1-0059" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0059.jp2"/>
+  <zone type="library">
+    <line rend="right">29</line>
+  </zone>
   <zone type="main">
-    <line>29</line>
-    <line>a</line>
-    <line>As a lover or cameleon</line>
-    <line>Grows like what it gazes on--</line>
-    <line>[Gaz] The Earth</line>
+    <line rend="indent1">As a lover or<add place="superlinear">a</add> cameleon</line>
+    <line rend="indent1">G<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">r</add>
+      </mod>ows like wh<unclear reason="illegible">a</unclear>t it gazes on&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0059.01"/>
+    <line rend="center"><add><unclear reason="illegible">Gaz</unclear></add> The Earth</line>
+    <anchor xml:id="e1-0059.01"/>
     <line>O Gentle moon, the voice of thy delight</line>
     <line>Falls on me like thy clear &amp; tender light</line>
-    <line>Soothing the seaman, borne the summer night</line>
-    <line>Thro' isles forever calm;</line>
-    <line>Oh Gentle Moon, thy chrystal accents pierce</line>
+    <line>S<unclear reason="illegible">oo</unclear>thing the seaman, borne the summer night</line>
+    <line rend="indent1">Thro' isles forever calm;</line>
+    <line>Oh Gentle <mod>
+        <del rend="overwritten">m</del>
+        <add place="superlinear">M</add>
+      </mod>oon, thy chrystal accents pierce</line>
     <line>The caverns of my Pride's deep Universe</line>
-    <line>Charming the Tyger Joy, whose tramplings</line>
-    <line>fierce</line>
-    <line>Made wounds, which need thy balm</line>
-    <line>457</line>
-    <line>Panthea</line>
+    <milestone unit="tei:l" spanTo="#e1-0059.02"/>
+    <line>Charming the <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>yger <mod>
+        <del rend="overwritten">j</del>
+        <add place="intralinear">J</add>
+      </mod>oy, whose tramplings</line>
+    <line rend="right">fierce</line>
+    <anchor xml:id="e1-0059.02"/>
+    <line rend="indent1">Made wounds, which need thy balm</line>
+    <line rend="right"><add><metamark function="count">457</metamark></add></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0059.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0059.03"/>
     <line>I rise as from a bath of sparkling water,</line>
     <line>A bath of azure light, among dark rocks,</line>
-    <line>Out of the stream of sound--</line>
-    <line>Ione</line>
-    <line>Ah me, sweet sister</line>
-    <line>The stream of sound has ebbed away from us</line>
+    <line>Out of the stream of sound&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0059.04"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0059.04"/>
+    <line rend="indent3">Ah me, sweet sister</line>
+    <line>The stream of sound<del rend="strikethrough">s</del> has ebbed away from us</line>
     <line>And you pretend to rise out of its wave</line>
-    <line>Because your words fall like the clear soft dew</line>
+    <line>Because your words <mod>
+        <del rend="overwritten">are</del>
+        <add place="intralinear">fall</add>
+      </mod> like the clear soft dew</line>
     <line>Shaken from a bathing wood nymphs limbs &amp; hair</line>
   </zone>
 </surface>

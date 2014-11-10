@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0069" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0069" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0069.jp2"/>
-  <zone type="library">34</zone>
+  <zone type="library"><line rend="right">34</line></zone>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="e1-0069.01"/><line rend="center">a confused Voice</line><anchor xml:id="e1-0069.01"/>
+    <milestone unit="tei:speaker" spanTo="e1-0069.01"/><line rend="center"><add><unclear
+          reason="case">a</unclear>
+        <unclear reason="case">c</unclear>onfused Voice</add></line><anchor xml:id="e1-0069.01"/>
     <line>We hear&#x2014;thy words waken Oblivion.</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.02"/><line rend="center">Demogorgon</line> <anchor xml:id="e1-0069.02"/>
-    <line>Spirits whose homes are flesh&#x2013;ye beasts &#x26; birds</line>
-    <metamark function="count">500</metamark><line rend="indent1">Ye worms &#x26; fish&#x2013;ye living leaves &#x26; buds&#x2014;</line>
+    <milestone unit="tei:speaker" spanTo="e1-0069.02"/><line rend="center">Demogorgon</line>
+    <anchor xml:id="e1-0069.02"/>
+    <line><add place="interlinear"><metamark function="count"><unclear reason="illegible"
+            >500</unclear></metamark></add>Spirits whose homes are flesh&#x2013;ye beasts &#x26;
+      birds</line>
+    <line rend="indent1">Ye worms &#x26; fish&#x2013;ye living leaves &#x26; buds&#x2014;</line>
     <line>Lightning &#x26; Wind&#x2013;&#x26; ye untameable herds,</line>
-    <line rend="indent1">Meteors &#x26; mists, which <mod><del rend="strikethrough">throng</del><add>feed<!-- not sure this word is actually "feed": I can't quite make it out --></add></mod> Air's solitudes</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.03"/><line rend="center">a Voice</line><anchor xml:id="e1-0069.03"/>
+    <line rend="indent1">Meteors &#x26; mists, wh<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">i</add>
+      </mod>ch <mod>
+        <del rend="strikethrough">throng</del>
+        <add>feed</add>
+      </mod> Air<unclear reason="illegible">'</unclear>s solitudes</line>
+    <milestone unit="tei:speaker" spanTo="e1-0069.03"/><line rend="center">a Voice</line><anchor
+      xml:id="e1-0069.03"/>
     <line>Thy voice to us is wind among still woods</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.04"/><line rend="center">Demogorgon</line><anchor xml:id="e1-0069.04"/>
+    <milestone unit="tei:speaker" spanTo="e1-0069.04"/><line rend="center">Demogorgon</line><anchor
+      xml:id="e1-0069.04"/>
     <line>Man who wert once a despot &#x26; a slave,&#x2013;</line>
     <line>A dupe or a deciever,&#x2013;a Decay</line>
     <line>A Traveller from the cradle to the grave</line>
     <line><milestone unit="tei:l" spanTo="e1-0069.05"/>Through the dim night of this immortal</line>
     <line rend="right">Day<anchor xml:id="e1-0069.05"/></line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.06"/><line rend="center">All</line><anchor xml:id="e1-0069.06"/>
+    <milestone unit="tei:speaker" spanTo="e1-0069.06"/><line rend="center">All</line><anchor
+      xml:id="e1-0069.06"/>
     <line>Speak&#x2014;thy strong words may never pass away</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.07"/><line rend="center">Demogorgon</line><anchor xml:id="e1-0069.07"/>
+    <milestone unit="tei:speaker" spanTo="e1-0069.07"/><line rend="center">Demogorgon</line><anchor
+      xml:id="e1-0069.07"/>
     <line>This is the Day which down the void Abysm</line>
     <line>At the Earthborn's spell yawns for Heavens Despotism</line>
     <line>And conquest is dragged captive thro' the Deep;</line>
-    <line>Love from its awful home of patient power</line>
+    <line>Love from its awful <unclear reason="illegible">home</unclear> of patient power</line>
     <line>In the wise heart, from the last giddy hour</line>
   </zone>
 </surface>

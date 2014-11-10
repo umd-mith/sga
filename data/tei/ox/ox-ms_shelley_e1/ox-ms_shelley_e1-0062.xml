@@ -1,34 +1,51 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0062" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0062" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0062.jp2"/>
   <zone type="main">
-    <line>a</line>
-    <line>And through their lulling plumes <del rend="strikethrough">up</del>rise</line>
-    <line>A Shape, a throng of sounds:</line>
-    <line>May it be, no ill to thee</line>
-    <line>O thou of many wounds</line>
+    <line rend="indent1">And through their lulling plumes <mod>
+        <del rend="strikethrough">up</del>
+        <add place="superlinear">a</add>
+      </mod>rise</line>
+    <line rend="indent2">A Shape, a throng of sounds:</line>
+    <line rend="indent3">May it be, no ill to thee</line>
+    <line rend="indent2">O thou of many wounds</line>
     <line>Near whom for our sweet sister's sake</line>
     <line>Ever thus we watch &amp; wake</line>
-    <line>{?}</line>
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0062.01"/>
+    <line rend="center"><del rend="unmarked"><unclear reason="illegible"><hi rend="sup"
+          >I</hi></unclear></del> Panthea</line>
+    <anchor xml:id="e1-0062.01"/>
     <line>The sound is of whirlwind underground</line>
     <line>Earthquake &amp; fire &amp; mountains cloven,</line>
-    <line>The Shape is awful like the sound,</line>
+    <line>The Shape is awful li<unclear reason="illegible">k</unclear>e the sound,</line>
     <line>Clothed in dark purple star-inwoven</line>
-    <line>pale</line>
-    <line>A sceptre of <del rend="strikethrough">proud</del> gold</line>
-    <line>To stay steps proud, oer the slow cloud</line>
-    <line>Its His veined hand doth hold</line>
-    <line>it</line>
-    <line>Cruel he looks but calm &amp; strong</line>
-    <line>Like one who does, not suffers wrong</line>
-    <line>Phantasm</line>
+    <line rend="indent1">A sceptre of <mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">proud</del>
+            <add place="intralinear">pale</add>
+          </mod></del>
+        <add place="superlinear">pale</add>
+      </mod> gold</line>
+    <line rend="indent1">To stay steps proud, oer the slow cloud</line>
+    <line rend="indent1"><milestone unit="tei:seg" spanTo="#e1-0062.03" xml:id="e1-0062.06"
+        />Its<anchor xml:id="e1-0062.03"/>
+      <milestone unit="tei:seg" spanTo="#e1-0062.04" xml:id="e1-0062.05"/>His<anchor
+        xml:id="e1-0062.04"/> veined hand doth hold<alt targets="#e1-0062.05 #e1-0062.06"
+        mode="excl" weights="1 0"/></line>
+    <line rend="indent1">Cruel <milestone unit="tei:seg" spanTo="#e1-0062.07" xml:id="e1-0062.10"
+        /><add place="superlinear">it</add><anchor xml:id="e1-0062.07"/><milestone unit="tei:seg"
+        spanTo="#e1-0062.08" xml:id="e1-0062.09"/>he<anchor xml:id="e1-0062.08"/> looks but calm
+      &amp; strong<alt targets="#e1-0062.09 #e1-0062.10" mode="excl" weights="1 0"/></line>
+    <line rend="indent1">Like one who does, not suffers wrong</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0062.02"/>
+    <line rend="center">Phantasm</line>
+    <anchor xml:id="e1-0062.02"/>
     <line>Why have the secret powers of this strange world</line>
     <line>Driven me, a frail &amp; empty phantom hither</line>
     <line>On direst storms? What unaccustomed sounds</line>
-    <line>232</line>
+    <line rend="right"><add><metamark function="count">232</metamark></add></line>
   </zone>
 </surface>
