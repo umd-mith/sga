@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0058" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0058" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0058.jp2"/>
   <zone type="main">
     <line>The Magus Zoroaster, my dead child</line>
@@ -16,18 +16,34 @@
     <line>Till death unite them, and they part no more,</line>
     <line>Dreams &#x26; the light imaginings of men</line>
     <line>And all that faith creates, or love desires,</line>
-    <line>Terrible, strange, sublime &#x26; beauteous shapes.</line>
+    <line>Terrible, strange, sublime &#x26; <mod>
+        <del rend="overwritten">lo</del>
+        <add place="intralinear">be</add>
+      </mod>auteous shapes.</line>
     <line>There thou art, &#x26; dost hang, a writhing shade</line>
-    <line>'Mid whirlwind-<del rend="strikethrough">peopled</del><add place="superlinear">shaken</add> mountains; all the Gods</line>
-    <line>Are there, &#x26; all the Powers of nameless worlds</line>
+    <line>'Mid whirl<mod>
+        <del rend="overwritten">-</del>
+        <add place="intralinear">w</add>
+      </mod>ind-<mod>
+        <del rend="strikethrough">peopled</del>
+        <add place="superlinear">shaken</add>
+      </mod> mountains; all the Gods</line>
+    <line>Are there, &#x26; all the <mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">P</add>
+      </mod>owers of nameless worlds</line>
     <line>Vast, sceptered Phantoms; heroes, men, &#x26; beasts</line>
     <line>And Demogorgon, a tremendous Gloom</line>
-    <line>And he, the Supreme Tyrant <add place="superlinear">throned</add><del rend="strikethrough">on his throne</del></line>
-    <line><add place="superlinear">On</add><del rend="strikethrough">Of</del> burning Gold. Son one of these shall utter</line>
+    <line>And he, the Supreme Tyrant <mod>
+        <del rend="strikethrough">on his throne</del>
+        <add place="superlinear">throned</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">Of</del>
+        <add place="superlinear">On</add>
+      </mod> burning Gold. Son one of these shall utter</line>
     <line>The curse which all remember. Call at will</line>
     <line>Thine own ghost, or the ghost of Jupiter,</line>
-  </zone>
-  <zone type="pagination">
-    <line rend="right">201</line>
+    <line rend="right"><add><metamark function="count">201</metamark></add></line>
   </zone>
 </surface>
