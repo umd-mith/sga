@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
 type="application/relax-ng-compact-syntax"?> <?xml-stylesheet type="text/xsl" href="../data/xsl/page-proof.xsl"?>
-<!-- dmwheeles began editing feb 26, 2013 -->
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0054" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0054" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0054.jp2"/>
   <zone type="main">
     <line>Thy mother, she within whose stony veins</line>
     <line>To the last fibre of the loftiest tree</line>
     <line>Whose thin leaves trembled in the frozen air</line>
     <line>Joy ran, as blood within a living frame</line>
-    <line>When thou didst from her bosom, like a <mod><del rend="strikethrough">cloud</del><add place="superlinear">beam</add></mod></line>
-    <line><mod><del rend="strikethrough">Of glory</del><add place="superlinear">From sunrise,</add></mod> <del rend="strikethrough">burst</del> leap--</line>
-    <!-- not clear what's going on here -->
-    <line> <del rend="strikethrough">arise</del> -- a spirit of keen joy!</line>
+    <line>When thou didst from her bosom, like a <mod>
+        <del rend="strikethrough">cloud</del>
+        <add place="superlinear">beam</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">Of glory</del>
+        <add place="superlinear">From sunrise,</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">arise</del>
+        <del rend="strikethrough"><add place="superlinear">burst</add></del>
+        <add place="superlinear"> leap&#8212;</add>
+      </mod> &#8212; a spirit of keen joy!</line>
     <line>And at thy voice her pining sons uplifted</line>
     <line>Thier prostrate brows from the polluting dust</line>
-    <line>And our <del rend="strikethrough">invisible</del> Tyrant with fierce dread</line>
-    <line>Grew pale -- until his thunder chained thee here--</line>
-    <line>Then-- see those million worlds which burn &#x26; roll</line>
+    <line>And our <del rend="strikethrough">invisible</del><anchor xml:id="e1-0054.01"/> Tyrant with
+      fierce dread</line>
+    <line>Grew pale &#8212; until his thunder chained thee here&#8212;</line>
+    <line>Then&#8212; see those million worlds which burn &#x26; roll</line>
     <line>Around us; their inhabitants beheld</line>
-    <line>moonlike</line>
-    <line>My sphered light wane in wide Heaven, the sea</line>
-    <line>lifted</line>
-    <line>Was <del rend="strikethrough">shaken</del> with strange tempest, &#x26; new fire</line>
-    <line>From earthquake-rifted mountains of bright snow</line>
+    <line>My <milestone unit="tei:seg" spanTo="#e1-0054.04" xml:id="e1-0054.06"/>sphered<anchor
+        xml:id="e1-0054.04"/><add place="superlinear"><milestone unit="tei:seg" spanTo="#e1-0054.05"
+          xml:id="e1-0054.07"/>moonlike<anchor xml:id="e1-0054.05"/></add>
+      <milestone unit="tei:seg" spanTo="#e1-0054.08" xml:id="e1-0054.09"/>light<anchor
+        xml:id="e1-0054.08"/> wane in wide Heaven, the <unclear reason="case">s</unclear>ea<alt
+        targets="#e1-0054.06 #e1-0054.07" mode="excl" weights="1 0"/><alt
+        targets="#e1-0054.09 #e1-0055.10" mode="excl" weights="1 0"/></line>
+    <line/>
+    <line>Was <mod>
+        <del rend="strikethrough">shaken</del>
+        <add place="superlinear">lifted</add>
+      </mod> with strange tempest, &#x26; new fire</line>
+    <line>From earthquake-<mod>
+        <del rend="overwritten">l</del>
+        <add place="intralinear">r</add>
+      </mod>ifted mountains of bright snow</line>
+    <milestone unit="tei:l" spanTo="#e1-0054.02"/>
     <line>Shook its portentous hair beneath Heaven's</line>
-    <line>frown;</line>
+    <line rend="right">frown;</line>
+    <anchor xml:id="e1-0054.02"/>
     <line>Lightning &#x26; Inundation vexed the plains</line>
-    <line>/</line>
-    <line>\</line>
+    <line rend="right"><add><metamark function="displacement" xml:id="e1-0054.03"
+        >&#60;</metamark></add></line>
     <line><del rend="strikethrough">Pestilence fell</del> on man &#x26; beast &#x26; worm</line>
-    <line>And Famine, &#x26; black blight on herb &#x26; tree,</line>
-    <line>163</line>
+    <line>And Famine, &#x26; bl<mod>
+        <del rend="overwritten">ue</del>
+        <add place="intralinear">ack</add>
+      </mod> blight on herb &#x26; tree,</line>
+    <line><add><metamark function="count">163</metamark></add></line>
   </zone>
 </surface>

@@ -1,37 +1,75 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0053" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0053" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0053.jp2"/>
+  <zone type="library">
+    <line rend="right">26</line>
+  </zone>
   <zone type="main">
-    <line>26</line>
-    <line>arithmetic? Ion. Certainly. Soc. <hi rend="underline">Suppose</hi></line>
-    <line>giving their opinions</line>
-    <line>among several people <del rend="strikethrough">deciding</del> [<del rend="strikethrough">respect</del>]</line>
-    <line>upon</line>
-    <line><del rend="strikethrough">on</del> the wholesomeness of different foods</line>
-    <line>one <del rend="strikethrough">be competent to [pronounce]</del></line>
-    <line>whether would <del rend="strikethrough">one</del> person <del rend="strikethrough underline">know</del> the</line>
-    <line>[?<del rend="strikethrough">Wisd</del>]</line>
-    <line><del rend="strikethrough">rectitude of</del> rectitude of the opinion</line>
+    <line>arithmetic<retrace cause="clarify">?</retrace> Ion. Certainly. Soc. <del
+        rend="strikethrough">Suppose</del></line>
+    <line>among <unclear reason="illegible">s</unclear>everal people <mod>
+        <del rend="strikethrough">deciding</del>
+        <del rend="strikethrough"><unclear reason="illegible">respect</unclear></del>
+        <add place="superlinear">giving their opinions</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">on</del>
+        <add place="superlinear">upon</add>
+      </mod> the wholesomeness of different foods</line>
+    <line/>
+    <line>whether would <mod>
+        <del rend="strikethrough">one</del>
+        <add place="superlinear">one</add>
+      </mod> person <mod>
+        <mod>
+          <restore type="underline"><hi rend="underline"><del rend="strikethrough"
+            >know</del></hi></restore>
+        </mod>
+        <del rend="strikethrough"><add place="superlinear">be competent to <unclear
+              reason="illegible">pronounce</unclear></add></del>
+      </mod> the</line>
+    <line/>
+    <line><mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">which</del>
+            <add place="intralinear">rectitude</add>
+          </mod> of</del>
+        <del rend="strikethrough">W<unclear unit="chars" extent="3"/></del>
+      </mod> rectitude of the opinion<del rend="strikethrough">s</del></line>
     <line>of those who judged rightly, and another</line>
-    <line>[?pass] upon the erroneousness of those</line>
+    <!-- "pass" overwrites "fell" from PU in the fascimile, for now just encoding "fell" in another
+      line as an addition -->
+    <line>pass upon the erroneousness of those</line>
+    <line><add>fell</add></line>
     <line>which were incorrect, or would the same</line>
     <line>person be competent to decide respecting</line>
-    <line>both.-- <hi rend="underline">Ion</hi> The same evidently. <hi rend="underline">Soc</hi></line>
+    <line><mod>
+        <del rend="overwritten"><unclear unit="chars" extent="2"/></del>
+        <add place="intralinear">bo</add>
+      </mod>th.-- <hi rend="underline">Ion</hi>
+      <unclear reason="illegible">T</unclear>he same evidently. <hi rend="underline">Soc</hi></line>
     <line>What should you call that person. <hi rend="underline">Ion</hi></line>
-    <line>{a} a physician. <hi rend="underline">Soc</hi>. We may then</line>
+    <line><unclear reason="illegible"><unclear reason="case">a</unclear></unclear>
+      <unclear reason="case">a</unclear> physician. <hi rend="underline">Soc</hi>. We may
+      then</line>
     <line>assert universally, that the same</line>
     <line>person who is competent to judge</line>
     <line>of the truth is competent also to</line>
     <line>determine the falshood of whatever</line>
     <line>is asserted on the same topic; and</line>
     <line>who</line>
-    <line>it is manifest that [<del rend="strikethrough">if</del>] he cannot</line>
-    <line>And what art thou</line>
+    <line>it is manifest that <del rend="strikethrough"><unclear reason="illegible"
+        >if</unclear></del> he cannot</line>
+    <line>And wh<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">at</add>
+      </mod> art thou</line>
     <line>judge respecting the falshood or unfitness</line>
     <line>what is said on a given subject</line>
-    <line>of <del rend="strikethrough">any assertion</del> what <del rend="strikethrough">is said,</del> is</line>
+    <line>of <del rend="strikethrough">any assertion</del> what <del rend="strikethrough">is
+        said,</del> is</line>
   </zone>
 </surface>
