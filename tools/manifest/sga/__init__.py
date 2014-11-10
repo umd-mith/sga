@@ -1,4 +1,4 @@
-from shared_canvas import Manifest
+from .shared_canvas import Manifest
 
 def jsonld(tei_file):
     m = Manifest(tei_file)
