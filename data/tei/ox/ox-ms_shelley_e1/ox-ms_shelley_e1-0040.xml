@@ -19,6 +19,7 @@
     <line>Nailed to this wall of eagle baffling mountain</line>
     <line>Black, wintry, dead, unmeasured; without herb</line>
     <line>Insect or beast, or shape or sound of life&#x2014;</line>
+    <anchor xml:id="e1-0040.07"/>
     <line>I ask the Earth, have not the mountains felt?</line>
     <line>I ask yon <mod>
         <del rend="strikethrough">Sky</del>
@@ -30,6 +31,8 @@
         <add place="superlinear">Heaven's</add>
       </mod> ever changing Shadow, spread below<del rend="strikethrough"><unclear reason="illegible"
           >?</unclear></del>&#x2014;</line>
+    <anchor xml:id="e1-0040.08"/>
+    <anchor xml:id="e1-0040.09"/>
     <line>The crawling glaciers pierce me with the spears</line>
     <line>Of their moon-freezing chrystals, the bright chains</line>
     <line>Eat with their burning cold into my bones,</line>
@@ -43,8 +46,9 @@
     <line>In torture, for a tyrant seldom sleeps,</line>
     <milestone unit="tei:l" spanTo="#e1-0040.02"/>
     <line rend="right" corresp="#e1-0040.03">charged</line>
-    <line>Thou never;<anchor xml:id="e1-0040.01"/> &#x26; the Earthquake-fiends are <anchor
-        xml:id="e1-0040.03"/></line>
+    <line>Thou never;<anchor xml:id="e1-0040.01"/>
+      <anchor xml:id="e1-0040.10"/> &#x26; the Earthquake-fiends are <anchor xml:id="e1-0040.03"
+      /></line>
     <anchor xml:id="e1-0040.02"/>
   </zone>
 </surface>
