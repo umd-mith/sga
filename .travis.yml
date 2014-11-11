@@ -5,4 +5,3 @@ script:
   - py.test test.py
 python:
   - "2.7"
-  - "3.4"

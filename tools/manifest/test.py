@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import json
 import pytest
 
 from rdflib.plugin import register, Parser
@@ -54,7 +55,8 @@ def test_jsonld():
     # parse the json-ld as rdf
     register('json-ld', Parser, 'rdflib_jsonld.parser', 'JsonLDParser')
     g = ConjunctiveGraph()
-    g.parse(data=jsonld, format='json-ld')
+    jsonld_str = json.dumps(jsonld)
+    g.parse(data=jsonld_str, format='json-ld')
 
     # sanity check the graph
     assert g.value(URIRef('http://example.com/frankenstein.json'), RDF.type) == URIRef('http://www.shared-canvas.org/ns/Manifest')

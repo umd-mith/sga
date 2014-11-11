@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 
 import sys
+import json
+import pyld
 
 from rdflib.plugin import register, Parser, Serializer
 from rdflib import ConjunctiveGraph, URIRef, RDF, RDFS, BNode, Literal
 
-from tei import Document
-from namespaces import TEI, XI, SC, SGA
+from .tei import Document
+from .namespaces import OA, SC, SGA, TEI
 
 
 class Manifest(object):
@@ -17,8 +19,11 @@ class Manifest(object):
         self.g = ConjunctiveGraph()
         self._build()
 
-    def jsonld(self):
-        return self.g.serialize(context=self._context(), format='json-ld')
+    def jsonld(self, indent=2):
+        j = self.g.serialize(format='json-ld')
+        j = json.loads(j)
+        j = pyld.jsonld.compact(j, self._context())
+        return j
 
     def _build(self):
         self.g.add((self.uri, RDF.type, SC.Manifest))
@@ -26,13 +31,33 @@ class Manifest(object):
 
     def _add_canvases(self):
         g = self.g
+
+        sequence_uri = BNode()
+        g.add((sequence_uri, RDF.type, SC.Sequence))
+        g.add((sequence_uri, RDF.type, RDF.List))
+
         for surface in self.tei.surfaces:
             canvas_uri = BNode()
+
             g.add((self.uri, SC.hasCanvases, canvas_uri))
             g.add((canvas_uri, RDF.type, SC.Canvas))
             g.add((canvas_uri, RDFS.label, Literal(surface.folio)))
             g.add((canvas_uri, SGA.folioLabel, Literal(surface.folio)))
             g.add((canvas_uri, SGA.shelfmarkLabel, Literal(surface.shelfmark)))
+           
+            image_ann_uri = BNode()
+            g.add((image_ann_uri, RDF.type, OA.Annotation))
+            g.add((image_ann_uri, OA.hasTarget, canvas_uri))
+            g.add((image_ann_uri, OA.hasBody, URIRef(surface.image)))
+
+            g.add((self.uri, SC.hasImageAnnotations, image_ann_uri))
+
+            g.add((sequence_uri, RDF.first, canvas_uri))
+            next_sequence_uri = BNode()
+            g.add((sequence_uri, RDF.rest, next_sequence_uri))
+            sequence_uri = next_sequence_uri
+
+        g.add((sequence_uri, RDF.rest, RDF.nil))
 
     def _context(self):
       # TODO: pare this down, and make it more sane over time

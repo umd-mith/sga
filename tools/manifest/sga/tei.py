@@ -8,7 +8,7 @@ from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
 from xml.etree import ElementTree as etree
 
-from namespaces import XI, TEI, MITH
+from .namespaces import XI, TEI, MITH
 
 
 class Document(object):
