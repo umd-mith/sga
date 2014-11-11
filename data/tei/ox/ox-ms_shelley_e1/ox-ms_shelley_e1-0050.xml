@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0050" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0050" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0050.jp2"/>
   <zone type="main">
-    <line>Now <del rend="strikethrough">dimly</del> seen <mod><del rend="strikethrough">thro' tempests</del><add place="superlinear">athwart frore vapours</add></mod> deep below,</line>
+    <line>Now <del rend="strikethrough">dimly</del> seen <mod>
+        <del rend="strikethrough">thro' tempests</del>
+        <add place="superlinear">athwart frore vapours</add>
+      </mod> deep below,</line>
     <line>Thro whose oer-shadowing woods<del rend="strikethrough">,</del> I wandered once</line>
     <line>With Asia, drinking life from her loved eyes,</line>
     <line>Why scorns the spirit which informs ye, now</line>
     <line>To commune with me &#x2013;me alone, who checked&#x2014;</line>
     <line>As one who checks a fiend-drawn charioteer&#x2014;</line>
-    <line>The falshood &#x26; the force of Him who rei<del rend="overwritten">ng</del>gns</line>
+    <line>The falshood &#x26; the force of Him who rei<mod>
+        <del rend="overwritten">ng</del>
+        <add place="intralinear">gn</add>
+      </mod>s</line>
     <line>Supreme, &#x26; with the groans of pining slaves</line>
     <line>Fills your dim glens &#x26; liquid wildernesses?</line>
     <line>Why answer ye not, still? brethren!</line>
     <milestone unit="tei:speaker" spanTo="e1-0050.01"/>
-    <line rend="center">The Earth</line><anchor xml:id="e1-0050.01"/>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e1-0050.01"/>
     <line rend="indent4">They dare not</line>
     <milestone unit="tei:speaker" spanTo="e1-0050.02"/>
     <line rend="center">Prometheus</line><anchor xml:id="e1-0050.02"/>
     <line>Who dares? for I would hear that curse again....</line>
-    <line>Ha, what an awful whisper rises up!</line>
+    <line><unclear reason="illegible">H</unclear>a, what an awful whisper rises up!</line>
     <line>'Tis scarce like sound, it tingles thro the frame</line>
     <line>As lightning tingles, hovering ere it strike&#x2014;</line>
     <line>Speak Spirit! from thine inorganic voice</line>
     <line>I only know that thou art moving near</line>
     <line>And love. How cursed I him?</line>
+    <line><add><metamark function="count">130</metamark></add></line>
   </zone>
-  <zone type="pagination">136</zone>
   <!-- Some ink on this line, presumably transferred from another page when the paper was folded. -->
 </surface>
