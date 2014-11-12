@@ -8,7 +8,7 @@ from rdflib.plugin import register, Parser, Serializer
 from rdflib import ConjunctiveGraph, URIRef, RDF, RDFS, BNode, Literal
 
 from .tei import Document
-from .namespaces import OA, SC, SGA, TEI
+from .namespaces import OA, OAX, ORE, SC, SGA, TEI, EXIF
 
 
 class Manifest(object):
@@ -27,14 +27,21 @@ class Manifest(object):
 
     def _build(self):
         self.g.add((self.uri, RDF.type, SC.Manifest))
+        # TODO: add manifest level metadata here
         self._add_canvases()
 
     def _add_canvases(self):
         g = self.g
 
+        sequences_uri = BNode()
+        g.add((self.uri, SC.hasSequences, sequences_uri))
+
         sequence_uri = BNode()
+        g.add((sequences_uri, RDF.first, sequence_uri))
+        g.add((sequences_uri, RDF.rest, RDF.nil))
         g.add((sequence_uri, RDF.type, SC.Sequence))
         g.add((sequence_uri, RDF.type, RDF.List))
+        g.add((sequence_uri, RDFS.label, Literal("Physical sequence")))
 
         for surface in self.tei.surfaces:
             canvas_uri = BNode()
@@ -44,12 +51,13 @@ class Manifest(object):
             g.add((canvas_uri, RDFS.label, Literal(surface.folio)))
             g.add((canvas_uri, SGA.folioLabel, Literal(surface.folio)))
             g.add((canvas_uri, SGA.shelfmarkLabel, Literal(surface.shelfmark)))
+            g.add((canvas_uri, EXIF.height, Literal(surface.height)))
+            g.add((canvas_uri, EXIF.width, Literal(surface.width)))
            
             image_ann_uri = BNode()
             g.add((image_ann_uri, RDF.type, OA.Annotation))
             g.add((image_ann_uri, OA.hasTarget, canvas_uri))
             g.add((image_ann_uri, OA.hasBody, URIRef(surface.image)))
-
             g.add((self.uri, SC.hasImageAnnotations, image_ann_uri))
 
             g.add((sequence_uri, RDF.first, canvas_uri))
@@ -57,7 +65,30 @@ class Manifest(object):
             g.add((sequence_uri, RDF.rest, next_sequence_uri))
             sequence_uri = next_sequence_uri
 
+            self._add_annotations(surface, canvas_uri)
+
         g.add((sequence_uri, RDF.rest, RDF.nil))
+
+    def _add_annotations(self, surface, canvas_uri):
+        g = self.g
+        for zone in surface.zones:
+            zone_uri = BNode()
+            g.add((self.uri, ORE.aggregates, zone_uri))
+            g.add((zone_uri, RDF.type, SC.AnnotationList))
+            for line in zone.lines:
+                content_ann_uri = BNode()
+                g.add((zone_uri, ORE.aggregates, content_ann_uri))
+                g.add((content_ann_uri, RDF.type, SC.ContentAnnotation))
+
+                spec_res_uri = BNode()
+                g.add((content_ann_uri, OA.hasTarget, spec_res_uri))
+                g.add((spec_res_uri, RDF.type, OA.SpecificResource))
+                
+                selector_uri = BNode()
+                g.add((spec_res_uri, OA.hasSelector, selector_uri))
+                g.add((selector_uri, RDF.type, OAX.TextOffsetSelector))
+                g.add((selector_uri, OAX.beginOffset, Literal(line.begin)))
+                g.add((selector_uri, OAX.endOffset, Literal(line.end)))
 
     def _context(self):
       # TODO: pare this down, and make it more sane over time

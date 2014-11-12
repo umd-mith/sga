@@ -262,6 +262,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       if "oa:SpecificResource" in SGASharedCanvas.Utils.makeArray(target["@type"])
         model.set
           target : target["full"]
+        console.log 'xxx', target["full"]
         if target["oa:hasStyle"]?
           styleItem = graph[target["oa:hasStyle"]["@id"]]
           if "text/css" in styleItem["format"]
