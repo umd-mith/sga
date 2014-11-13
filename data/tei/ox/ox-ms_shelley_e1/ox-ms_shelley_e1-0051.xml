@@ -1,35 +1,46 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0051" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0051" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0051.jp2"/>
-  <zone type="library">25</zone>
+  <zone type="library"><line rend="right">25</line></zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="e1-0051.01"/>
-    <line rend="center">The <hi rend="underline">Earth</hi><anchor xml:id="e1-0051.01"/></line>
+    <line rend="center">The <hi rend="underline">Earth</hi></line>
+    <anchor xml:id="e1-0051.01"/>
     <line>I spin beneath my pyramid of night</line>
     <line>Which points into the Heavens, dreaming delight</line>
-    <line>Murmuring victorious joy in my enchanted sleep;</line>
-    <line rend="indent1">As a youth lulled in love-dreams, faintly sighing,</line>
+    <line>Murmuring victorious joy in my enchanted sleep<unclear reason="illegible"
+      >;</unclear></line>
+    <line rend="indent1">As a youth lulled in love-drea<unclear reason="illegible">ms</unclear>,
+      faintly sighing,</line>
     <line rend="indent1">Under the shadow of his beauty lying</line>
-    <line>Which round his rest a watch of light &#x26;</line>
+    <milestone unit="tei:l" spanTo="#e1-0051.03"/>
+    <line>Which <del rend="strikethrough">a</del>round his rest a watch of light &#x26;</line>
     <line rend="indent4">warmth doth keep</line>
-    <!-- Are we supposed to wrap the above line? -->
+    <anchor xml:id="e1-0051.03"/>
     <milestone unit="tei:speaker" spanTo="e1-0051.02"/>
-    <line rend="center">The <hi rend="underline">Moon</hi><anchor xml:id="e1-0051.02"/></line>
+    <line rend="center">The <hi rend="underline">Moon</hi></line>
+    <anchor xml:id="e1-0051.02"/>
     <line rend="indent1">As in the soft &#x26; sweet eclipse</line>
-    <line rend="indent1">When soul <mod><del rend="strikethrough">darkens</del><add place="superlinear">meets</add></mod> soul on lovers lips</line>
-    <!-- "Meets" in the above line is in pencil. Should we mark this? -->
+    <line rend="indent1">When soul <mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">m</del>
+            <add place="intralinear">d</add>
+          </mod>arkens</del>
+        <add place="superlinear">meets</add>
+      </mod> soul on lovers lips</line>
     <line>High hearts are calm &#x26; brightest eyes are dull</line>
-    <line rend="indent2">So when thy shadow falls on me</line>
-    <line rend="indent2">Then am I mute &#x26; still,&#x2014;by thee</line>
+    <line rend="indent1">So when thy shadow falls on me</line>
+    <line rend="indent1">Then am I mute &#x26; still,&#x2014;by thee</line>
     <line>Covered; of thy love, Orb most beautiful,</line>
-    <line rend="indent3">Full, oh too full!&#x2014;</line>
-    <line rend="indent2">Thou art speeding round the Sun</line>
-    <line rend="indent2">Brightest World of many a one</line>
-    <line rend="indent2">Green &#x26; azure sphere, which shinest</line>
-    <line rend="indent2">With a light which is divinest</line>
-    <line rend="indent2">Among all the lamps of Heaven</line>
+    <line rend="indent2">Full, oh too full!&#x2014;</line>
+    <line rend="indent1">Thou art speeding round the Sun</line>
+    <line rend="indent1">Brightest <retrace cause="clarify">W</retrace>or<unclear reason="illegible"
+        >ld</unclear> of many a one</line>
+    <line rend="indent1">Green &#x26; azure sphere, which shinest</line>
+    <line rend="indent1">With a light which is divinest</line>
+    <line rend="indent1">Among all the lamps of Heaven</line>
   </zone>
 </surface>

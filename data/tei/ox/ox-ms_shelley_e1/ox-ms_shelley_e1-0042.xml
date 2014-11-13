@@ -1,39 +1,56 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0042" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0042" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0042.jp2"/>
   <zone type="pagination">
-    <line>3 &#x00A0;36</line></zone>
+    <line rend="center">3</line></zone>
   <zone type="main">
-    <line>36</line>
-    <line>3</line>
+    <line rend="right"><add><metamark function="count">36</metamark></add></line>
     <line>To wrench the rivets from my quivering wounds</line>
     <line>When the rocks split &#x26; close again behind;</line>
     <line>While from their loud abysses howling throng</line>
-    <line>The <del rend="strikethrough">spiri</del>ts<add place="superlinear">genii</add> of the storm, urging the rage</line>
+    <line>The <mod>
+        <del rend="strikethrough">spiri</del>
+        <del rend="unmarked">ts</del>
+        <add place="superlinear">genii</add>
+      </mod> of the storm, urging the rage</line>
     <line>Of whirlwind, &#x26; afflict me with keen hail.</line>
-    <line>And yet to me welcome is Day &#x26; Night</line>
+    <line><milestone unit="tei:seg" spanTo="#e1-0042.02" xml:id="e1-0042.03"/>And yet<anchor
+        xml:id="e1-0042.02"/> to me welcome is Day &#x26; Night<alt
+        targets="#e1-0042.03 #e1-0043.09" mode="excl" weights="1 0"/></line>
     <line>Whether one breaks the hoar frost of the morn,</line>
     <line>Or starry, dim, &#x26; slow the other climbs</line>
     <line>The leaden-coloured East; for then they lead</line>
-    <line>Thier wingless crawling Hours, one among whom&#x2013;</line>
-    <line>&#x2014;As some dark Priest hales the reluctant victim&#x2014;</line>
+    <line>Thi<add>e</add>r wingless crawling Hours, one among whom<unclear reason="illegible"
+        >&#x2013;</unclear></line>
+    <line>&#x2014;As some dark Priest hales the reluctant victim<retrace cause="clarify"
+        >&#x2014;</retrace></line>
     <line>Shall drag thee, cruel King, to kiss the blood</line>
+    <milestone unit="tei:l" spanTo="#e1-0042.04"/>
     <line>From these pale feet, which then might</line>
     <line rend="indent5">trample thee</line>
-    <!-- "Trample thee" appeared as part of the line above, but Shelley ran out of room when writing it. -->
+    <anchor xml:id="e1-0042.04"/>
+    <line rend="right"><metamark function="separate">____</metamark></line>
+    <!-- Not sure how to encode separate mark above -->
     <line>If they disdained not such a prostrate slave. &#x2013;</line>
-    <line>Disdain? a<del rend="overwritten">las</del>h<add place="superlinear">no</add> I pity thee&#x2014;what Ruin</line>
-    <line>Will hunt thee undefended thro wide Heaven!</line>
+    <line>Disdain? a<mod>
+        <del rend="overwritten">las</del>
+        <add place="intralinear">h</add>
+      </mod><add place="superlinear">no</add> I pity thee&#x2014;what Ruin</line>
+    <line>Will hunt thee undefended thro wide <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>eaven!</line>
     <line>How will thy soul, cloven to its depth with terror</line>
     <line>Gape like a Hell within! I speak in grief</line>
     <line>Not exultation, for I hate no more</line>
     <line>As then, ere misery made me wise&#x2014;the Curse</line>
-    <line><del rend="strikethrough">Then</del><add place="superlinear"></add> breathed on thee I would recall. Ye</line>
-  </zone>
-  <zone type="pagination">
-    <line rend="right">58</line>
+    <line><mod>
+        <del rend="strikethrough">Then</del>
+        <add place="superlinear">once</add>
+      </mod> breathed on thee I would recall. Ye <anchor xml:id="e1-0042.01"/></line>
+    <line rend="right"><add><metamark function="count">58</metamark></add></line>
   </zone>
 </surface>
