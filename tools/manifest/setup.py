@@ -25,6 +25,6 @@ setup(
     py_modules = ['manifest'],
     description = 'Write SGA TEI as SharedCanvas',
     cmdclass = {'test': PyTest},
-    install_requires=requirements,
+    install_requires = requirements,
     tests_require=['pytest'],
 )

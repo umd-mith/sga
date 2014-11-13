@@ -44,8 +44,9 @@ class Manifest(object):
         g.add((sequence_uri, RDFS.label, Literal("Physical sequence")))
 
         for surface in self.tei.surfaces:
-            canvas_uri = BNode()
 
+            # add the canvas
+            canvas_uri = BNode()
             g.add((self.uri, SC.hasCanvases, canvas_uri))
             g.add((canvas_uri, RDF.type, SC.Canvas))
             g.add((canvas_uri, RDFS.label, Literal(surface.folio)))
@@ -53,42 +54,93 @@ class Manifest(object):
             g.add((canvas_uri, SGA.shelfmarkLabel, Literal(surface.shelfmark)))
             g.add((canvas_uri, EXIF.height, Literal(surface.height)))
             g.add((canvas_uri, EXIF.width, Literal(surface.width)))
-           
+          
+            # add the image annotation
             image_ann_uri = BNode()
             g.add((image_ann_uri, RDF.type, OA.Annotation))
             g.add((image_ann_uri, OA.hasTarget, canvas_uri))
             g.add((image_ann_uri, OA.hasBody, URIRef(surface.image)))
             g.add((self.uri, SC.hasImageAnnotations, image_ann_uri))
 
+            # add the canvas to the sequence
             g.add((sequence_uri, RDF.first, canvas_uri))
             next_sequence_uri = BNode()
             g.add((sequence_uri, RDF.rest, next_sequence_uri))
             sequence_uri = next_sequence_uri
 
-            self._add_annotations(surface, canvas_uri)
+            # add the zone annotations
+            self._add_zone_annotations(surface, canvas_uri)
 
+            # add the line annotations
+            self._add_text_annotations(surface)
+
+        # close off the sequence list
         g.add((sequence_uri, RDF.rest, RDF.nil))
 
-    def _add_annotations(self, surface, canvas_uri):
+    def _add_zone_annotations(self, surface, canvas):
         g = self.g
-        for zone in surface.zones:
-            zone_uri = BNode()
-            g.add((self.uri, ORE.aggregates, zone_uri))
-            g.add((zone_uri, RDF.type, SC.AnnotationList))
-            for line in zone.lines:
-                content_ann_uri = BNode()
-                g.add((zone_uri, ORE.aggregates, content_ann_uri))
-                g.add((content_ann_uri, RDF.type, SC.ContentAnnotation))
+        annotations = BNode()
 
-                spec_res_uri = BNode()
-                g.add((content_ann_uri, OA.hasTarget, spec_res_uri))
-                g.add((spec_res_uri, RDF.type, OA.SpecificResource))
-                
-                selector_uri = BNode()
-                g.add((spec_res_uri, OA.hasSelector, selector_uri))
-                g.add((selector_uri, RDF.type, OAX.TextOffsetSelector))
-                g.add((selector_uri, OAX.beginOffset, Literal(line.begin)))
-                g.add((selector_uri, OAX.endOffset, Literal(line.end)))
+        g.add((self.uri, ORE.aggregates, annotations))
+        g.add((annotations, RDF.type, SC.AnnotationList))
+        g.add((annotations, RDF.type, SC.Layer))
+
+        for zone in surface.zones:
+            annotation = BNode()
+            g.add((annotations, ORE.aggregates, annotation))
+            g.add((annotation, RDF.type, SC.ContentAnnotation))
+
+            body = BNode()
+            g.add((annotation, OA.hasBody, body))
+            g.add((body, RDF.type, OA.SpecificResource))
+            g.add((body, OA.hasSource, URIRef(surface.filename)))
+
+            selector = BNode()
+            g.add((body, OA.hasSelector, selector))
+            g.add((selector, RDF.type, OAX.TextOffsetSelector))
+            g.add((selector, OAX.beginOffset, Literal(zone.begin)))
+            g.add((selector, OAX.endOffset, Literal(zone.end)))
+
+            target = BNode()
+            g.add((annotation, OA.hasTarget, target))
+            g.add((target, RDF.type, OA.SpecificResource))
+            g.add((target, OA.hasSource, canvas))
+
+            selector = BNode()
+            g.add((target, OA.hasSelector, selector))
+            g.add((selector, RDF.type, OA.FragmentSelector))
+            g.add((selector, RDF.value, Literal(zone.xywh)))
+
+    def _add_text_annotations(self, surface):
+        g = self.g
+        annotations = BNode()
+
+        g.add((self.uri, ORE.aggregates, annotations))
+        g.add((annotations, RDF.type, SC.AnnotationList))
+        g.add((annotations, RDF.type, SC.Layer))
+
+        for zone in surface.zones:
+
+            for line in zone.lines:
+
+                # link AnnotationList to LineAnnotation
+                line_annotation = BNode()
+                g.add((annotations, ORE.aggregates, line_annotation))
+                g.add((line_annotation, RDF.type, SGA.LineAnnotation))
+           
+                # link LineAnnotation to SpecificResource and TEI file
+                target = BNode()
+                g.add((line_annotation, OA.hasTarget, target))
+                g.add((target, RDF.type, OA.SpecificResource))
+                g.add((target, OA.hasSource, URIRef(surface.filename)))
+
+                # link SpecificResource and TextOffsetSelector
+                selector = BNode()
+                g.add((target, OA.hasSelector, selector))
+                g.add((selector, RDF.type, OAX.TextOffsetSelector))
+                g.add((selector, OAX.beginOffset, Literal(line.begin)))
+                g.add((selector, OAX.endOffset, Literal(line.end)))
+
 
     def _context(self):
       # TODO: pare this down, and make it more sane over time

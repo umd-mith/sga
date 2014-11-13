@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+import teizone
 
 from six.moves.urllib.parse import urljoin
 
@@ -27,7 +28,13 @@ class Surface(object):
 
     def __init__(self, filename):
         self.filename = filename
-        tei = etree.parse(filename).getroot()
+        # TODO: at some point we should write the canonical coordinates to the 
+        # TEI. For now it is being done dynamically.
+        surface = teizone.Surface(filename)
+        surface.guess_coordinates()
+        doc = surface.doc
+
+        tei = doc.getroot()
         self.height = tei.attrib.get('lry')
         self.width = tei.attrib.get('lrx')
         self.folio = tei.attrib.get("{%s}folio" % MITH)
@@ -46,8 +53,32 @@ class Surface(object):
 
 class Zone(object):
 
-    def __init__(self):
+    def __init__(self, attrs={}):
         self.lines = []
+        self.ulx = attrs.get('ulx', '0')
+        self.uly = attrs.get('uly', '0')
+        self.lrx = attrs.get('lrx', '1')
+        self.lry = attrs.get('lry', '0')
+
+    @property
+    def begin(self):
+        if len(self.lines) > 0:
+            return self.lines[0].begin
+        else:
+            return None
+
+    @property
+    def end(self):
+        if len(self.lines) > 0:
+            return self.lines[0].end
+        else:
+            return None
+
+    @property
+    def xywh(self):
+        height = int(self.lry) - int(self.uly)
+        width = int(self.lrx) - int(self.ulx)
+        return "xywh:%s,%s,%s,%s" % (self.ulx, self.uly, height, width)
 
 
 class Line(object):
@@ -73,7 +104,7 @@ class SurfaceHandler(ContentHandler):
 
     def startElement(self, name, attrs):
         if name == "zone":
-            self.zones.append(Zone())
+            self.zones.append(Zone(attrs))
         elif name == "line":
             self.in_line = True
             l = Line()
