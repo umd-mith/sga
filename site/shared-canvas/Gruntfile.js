@@ -67,6 +67,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           mangle: false,
+          sourceMap: true,
           banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'   
         },   
         files: {
@@ -86,9 +87,17 @@ module.exports = function(grunt) {
             src: ['**'], dest: 'demo/font/'
           },
           {
+            src: 'dist/app.js',
+            dest: 'demo/js/app.js'
+          },
+          {
             src: 'dist/app.min.js',
             dest: 'demo/js/app.min.js'
-          }
+          },
+          {
+            src: 'dist/app.min.js.map',
+            dest: 'demo/js/app.min.js.map'
+          },
         ]
       }
     },
