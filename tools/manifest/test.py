@@ -8,6 +8,7 @@ from rdflib import ConjunctiveGraph, URIRef, RDF
 
 from sga.tei import Document, Surface
 from sga.shared_canvas import Manifest
+from sga.namespaces import SGA
 
 from xml.etree import ElementTree as etree
 
@@ -28,6 +29,8 @@ def test_surface():
 
     assert len(s.zones) == 3
     z = s.zones[2]
+
+    assert z.xywh == "xywh:0,333,6327,5410"
     assert len(z.lines) == 15
 
     l = z.lines[0]
@@ -60,3 +63,5 @@ def test_jsonld():
 
     # sanity check the graph
     assert g.value(URIRef('http://example.com/frankenstein.json'), RDF.type) == URIRef('http://www.shared-canvas.org/ns/Manifest')
+    line_anns = list(g.triples((None, RDF.type, SGA.LineAnnotation)))
+    assert len(line_anns) == 638

@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
+import re
 import sys
 import teizone
+import StringIO
+import tempfile
 
 from six.moves.urllib.parse import urljoin
 
@@ -28,12 +31,16 @@ class Surface(object):
 
     def __init__(self, filename):
         self.filename = filename
+
         # TODO: at some point we should write the canonical coordinates to the 
-        # TEI. For now it is being done dynamically.
+        # TEI. For now it is being done dynamically
+
         surface = teizone.Surface(filename)
         surface.guess_coordinates()
-        doc = surface.doc
+        tmp_fh, tmp_filename = tempfile.mkstemp()
+        surface.save(tmp_filename)
 
+        doc = surface.doc
         tei = doc.getroot()
         self.height = tei.attrib.get('lry')
         self.width = tei.attrib.get('lrx')
@@ -45,20 +52,25 @@ class Surface(object):
         # since we need to keep track of text offsets 
 
         parser = make_parser()
-        handler = SurfaceHandler(filename)
+        handler = SurfaceHandler()
         parser.setContentHandler(handler)
-        parser.parse(open(filename))
+        parser.parse(tmp_filename)
         self.zones = handler.zones
+
+    @property
+    def uri(self):
+        m = re.search('(/data/.+$)', self.filename)
+        return 'https://raw.githubusercontent.com/umd-mith/sga/master' + m.group(1)
 
 
 class Zone(object):
 
-    def __init__(self, attrs={}):
+    def __init__(self, attrs):
         self.lines = []
-        self.ulx = attrs.get('ulx', '0')
-        self.uly = attrs.get('uly', '0')
-        self.lrx = attrs.get('lrx', '1')
-        self.lry = attrs.get('lry', '0')
+        self.ulx = attrs.get('ulx', 0)
+        self.uly = attrs.get('uly', 0)
+        self.lrx = attrs.get('lrx', 0)
+        self.lry = attrs.get('lry', 0)
 
     @property
     def begin(self):
@@ -94,8 +106,7 @@ class SurfaceHandler(ContentHandler):
     SAX Handler for extracting zones and lines from a TEI canvas.
     """
 
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(self):
         self.zones = []
         self.pos = 0
         self.height = None
