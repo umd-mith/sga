@@ -1,7 +1,0 @@
-language: python
-script: 
-  - cd tools/manifest
-  - pip install -r requirements.txt
-  - py.test test.py
-python:
-  - "2.7"
