@@ -189,7 +189,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     id_graph = {}
 
     for node in graph
-      id_graph[node["@id"]] = node if node["@id"]?              
+      id_graph[node["@id"]] = node if node["@id"]?
 
     # Store the full manifest for further processing at canvas level
     manifest.set
@@ -198,7 +198,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     for id, node of id_graph
 
       # Organize nodes by type
-      if node["@type"]? 
+      if node["@type"]?
         types = node["@type"]
         types = [ types ] if !$.isArray types
         
@@ -206,16 +206,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           manifest.set node
 
         if "sc:Sequence" in types
-          canvases = [node["first"]]
-
-          next_node = node
-          while next_node?
-            rest = next_node["rdf:rest"]
-            rest = [ rest ] if !$.isArray rest
-            next = rest[0]["@id"]
-            next_node = id_graph[next]
-            canvases.push next_node["first"] if next_node?
-
+          canvases = [node["first"]["@id"]]
+          for canvas in node["rest"]
+            canvases.push canvas["@id"]
           manifest.sequences.add
             "@id"      : node["@id"]
             "@type"    : node["@type"]
@@ -227,6 +220,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
         else if "sc:Canvas" in types
           manifest.canvasesMeta.add node
+          console.log node
 
   importCanvas = (canvas, manifest) ->
     # This method imports manifest level data and metadata   
@@ -262,7 +256,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       if "oa:SpecificResource" in SGASharedCanvas.Utils.makeArray(target["@type"])
         model.set
           target : target["full"]
-        console.log 'xxx', target["full"]
         if target["oa:hasStyle"]?
           styleItem = graph[target["oa:hasStyle"]["@id"]]
           if "text/css" in styleItem["format"]
@@ -302,14 +295,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       # find content annotations right away. You'll need these before creating parsing other annos
       for id, node of graph
 
-        if node["@type"]? 
+        if node["@type"]?
           types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           target = node["on"]
-          body = node["resource"]          
+          body = node["resource"]
 
           # Get content annotations
-          if "sc:ContentAnnotation" in types and graph[target]["full"] == canvas_id
+          console.log target, canvas_id
+          if "sc:ContentAnnotation" in types and target["full"] == canvas_id
             content = new Content
             content.set graph[id]
 
@@ -331,15 +325,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
       for id, node of graph
 
-        if node["@type"]? 
+        if node["@type"]?
           types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           target = node["on"]
           body = node["resource"]
 
           # Get images
-          if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
-            image = new Image            
+          if "oa:Annotation" in types and target == canvas_id
+            image = new Image
             image.set graph[node["resource"]]
 
             # Adding triggers the view. Alternatively, we could have the view listen to change,
@@ -349,7 +343,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
           # Get everything else (including project-specific annotations!) for this canvas
           # Could this be moved into its own project-specific module at some point?
-          else 
+          else
             sgaTypes = (f.substr(4) for f in types when f.substr(0,4) == "sga:" and f.substr(f.length-10) == "Annotation")
             if sgaTypes.length > 0
               sources = []
@@ -359,7 +353,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   sources.push s
               
               # filter annotations and store only those relevant to the current canvas
-              if graph[target]["full"] in sources
+              if target["full"] in sources
                 annotation = new Annotation
                 canvas.SGAannos.add annotation
 
