@@ -23,7 +23,8 @@ module.exports = function(grunt) {
     coffee: {
       compileJoined: {
         options: {
-          join: true
+          join: true,
+          sourceMap: true
         },
         files: { 
           'dist/<%= pkg.name %>.js': [
@@ -57,9 +58,8 @@ module.exports = function(grunt) {
           'lib/vendor/google-prettify.js',
           'bower_components/underscore/underscore.js',
           'bower_components/backbone/backbone.js',
-          'dist/<%= pkg.name %>.js'
         ], 
-        dest: 'dist/app.js'
+        dest: 'dist/dependencies.js'
       }
     },
 
@@ -68,11 +68,15 @@ module.exports = function(grunt) {
         options: {
           mangle: false,
           sourceMap: true,
+          sourceMapIn: 'dist/<%= pkg.name %>.js.map',
           banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'   
         },   
         files: {
-          'dist/app.min.js': [ 
-            'dist/app.js' 
+          'dist/<%= pkg.name %>.min.js': [ 
+            'dist/<%= pkg.name %>.js' 
+          ],
+          'dist/dependencies.min.js': [
+            'dist/dependencies.js'
           ]
         }
       }
@@ -87,17 +91,25 @@ module.exports = function(grunt) {
             src: ['**'], dest: 'demo/font/'
           },
           {
-            src: 'dist/app.js',
-            dest: 'demo/js/app.js'
+            src: 'dist/dependencies.min.js',
+            dest: 'demo/js/dependencies.min.js'
           },
           {
-            src: 'dist/app.min.js',
-            dest: 'demo/js/app.min.js'
+            src: 'dist/<%= pkg.name %>.min.js',
+            dest: 'demo/js/<%= pkg.name %>.min.js'
           },
           {
-            src: 'dist/app.min.js.map',
-            dest: 'demo/js/app.min.js.map'
+            src: 'dist/<%= pkg.name %>.min.js.map',
+            dest: 'demo/js/<%= pkg.name %>.min.js.map'
           },
+          { 
+            src: 'dist/<%= pkg.name %>.coffee',
+            dest: 'demo/js/<%= pkg.name %>.coffee'
+          },
+          { 
+            src: 'dist/<%= pkg.name %>.src.coffee',
+            dest: 'demo/js/<%= pkg.name %>.src.coffee'
+          }
         ]
       }
     },
