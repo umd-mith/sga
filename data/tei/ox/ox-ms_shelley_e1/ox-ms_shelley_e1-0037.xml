@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0037" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0037" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0037.jp2"/>
+  <zone type="library">
+    <line rend="right">18</line>
+  </zone>
   <zone type="main">
-    <line>18</line>
-    <line>Prometheus Unbound</line>
-    <line>a Lyrical Drama</line>
-    <line>D.P.</line>
+    <line rend="center">Prometheus Unbound</line>
+    <line rend="center">a Lyrical Drama</line>
+    <line rend="center">D.P.</line>
     <line>Prometheus</line>
     <line>Jupiter</line>
     <line>The Earth</line>
     <line>Mercury</line>
     <line>Hercules</line>
+    <line><del rend="strikethrough">Panthea</del></line>
+    <line><milestone unit="tei:seg" spanTo="#e1-0037.01" corresp="#e1-0037.02"/>Asia<anchor
+        xml:id="e1-0037.01"/><add><metamark function="displacement">&#8659;</metamark></add></line>
     <line>Panthea</line>
-    <line>Asia</line>
-    <line>Panthea</line>
-    <line>Oceanides</line>
+    <line rend="indent2"><add><metamark function="separate">&#9002;</metamark></add>Oceanides</line>
     <line>Ione</line>
+    <line><anchor xml:id="e1-0037.02"/></line>
     <line>The Phantasm of Jupiter</line>
     <line>The Spirit of the Earth</line>
-    <line>The Spirits of the Hours</line>
+    <line><add>The Spirits of the Hours</add></line>
     <line>The Echoes</line>
-    <line>Fawns</line>
+    <line><add>Fawns</add></line>
     <line>Furies</line>
     <line>Spirits</line>
   </zone>
