@@ -4,7 +4,8 @@
     <meta charset='utf-8'>
     <title>Example SGA Shared Canvas Viewer</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/app.min.js"></script>
+    <script src="js/dependencies.min.js"></script>
+    <script src="js/SGASharedCanvas.min.js"></script>
   </head>
 
   <body class="page-node node-type-sharedcanvas">
@@ -203,6 +204,11 @@
       </div>             
     </div>
   </script>
-  <script src="js/main.js"></script>
+  <script>
+    (function ($) { 
+      'use strict';
+      var sc = new SGASharedCanvas.Application();
+    })(jQuery);
+  </script>
   </body>
 </html>
