@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0029" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0029" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0029.jp2"/>
-  <zone type="library">14</zone>
-  <zone type="top"><line rend="indent3">Preface</line></zone>
+  <zone type="library">
+    <line rend="right">14</line>
+  </zone>
   <zone type="main">
-    <milestone unit="tei:p"/>
-    <line>The <unclear>g</unclear>reek tragic writers in selecting as thier</line>
+    <line rend="center">Preface</line>
+    <line>The <unclear reason="case">g</unclear>reek tragic writers in selecting as thier</line>
     <line>subject any portion of their national</line>
     <line>history or mythology, employed in</line>
-    <line>thier treatment of it a certain arbi</line>
+    <line><unclear reason="illegible">thier</unclear> treatment of it a certain arbi</line>
     <line>-trary discretion. They by no means</line>
     <line>conceived themselves bound to adhere</line>
     <line>to the common interpretation, or to</line>
-    <line>imitate in story as in <del rend="strikethrough">th<unclear>e</unclear></del> title
-      their</line>
+    <line>imitate in story as in <del rend="strikethrough">th<unclear reason="illegible"
+        >e</unclear></del> title their</line>
     <line>rivals &amp; predecessors. Such a system</line>
     <line>w<hi rend="sup">d</hi>. have amounted to a resignation of</line>
     <line>those claims to preference over their</line>
     <line>competitors which incited the com-</line>
-    <line>-position. <milestone unit="tei:seg" spanTo="#e1-0029.01"/>Violet<anchor xml:id="e1-0029.01"/> The Agamenmonian story</line>
+    <line>-position. <milestone unit="tei:seg" spanTo="#e1-0029.01"/>Violet<anchor
+        xml:id="e1-0029.01"/> The Agamenmonian story</line>
     <!--"Violet" was written on the page before PBS began drafting the Preface-->
     <line>was exhibited on the Athenian theatre</line>
     <line>with as many variations as dramas.</line>
-    <milestone unit="tei:p"/>
     <line rend="indent1">I have presumed to employ a similar</line>
     <line>license&#x2014; The "Prometheus unbound" of</line>
     <line>&#xC6;schylus, supposed the reconciliation of</line>

@@ -8,13 +8,17 @@
     <line rend="indent2"><add>\ \ \ \ \ \</add> 1</line>
   </zone>
   <zone type="main">
-    <line><del rend="unmarked"><add place="superlinear">So</add></del>Soc.--Hail to thee Ion, <mod>
+    <line><del rend="unmarked"><add place="superlinear"><milestone unit="tei:speaker"
+            spanTo="#e1-0034.02"/>So<anchor xml:id="e1-0034.02"/></add></del><milestone
+        unit="tei:speaker" spanTo="#e1-0034.03"/>Soc.<anchor xml:id="e1-0034.03"/>&#8212;Hail to
+      thee <milestone unit="tei:speaker" spanTo="#e1-0034.04"/>Ion<anchor xml:id="e1-0034.04"/>, <mod>
         <del rend="strikethrough">comest thou</del>
         <add place="sublinear">whence returnest thou</add>
       </mod></line>
     <line>amongst us; from thine own native Ephesus?</line>
-    <line>Ion--From Epidauras, o Socrates, of the Ã†scula</line>
-    <line>-pians.--S. Had the Epidaurians instituted a</line>
+    <line>Ion&#8212;From Epidauras, o Socrates, of the &#198;scula</line>
+    <line>-pians.&#8212;<milestone unit="tei:speaker" spanTo="#e1-0034.05"/>S.<anchor
+        xml:id="e1-0034.05"/> Had the Epidaurians instituted a</line>
     <line/>
     <line>contest of <mod>
         <del rend="strikethrough">raphsodists</del>
@@ -23,34 +27,50 @@
         <del rend="overwritten">&#8212;</del>
         <add place="intralinear">?</add>
       </mod></line>
-    <line>Ion. And not that alone, but <retrace cause="clarify">c</retrace>ontests in</line>
-    <line>every species of <del rend="strikethrough">mus</del> musical art. Soc.</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0034.06"/>Ion.<anchor xml:id="e1-0034.06"/> And
+      not that alone, but <retrace cause="clarify">c</retrace>ontests in</line>
+    <line>every species of <del rend="strikethrough">mus</del> musical art. <milestone
+        unit="tei:speaker" spanTo="#e1-0034.07"/>Soc.<anchor xml:id="e1-0034.07"/></line>
     <delSpan spanTo="#e1-0034.01" rend="strikethrough"/>
     <line>And what prize didst thou gain, &amp; how</line>
     <line>did you gain it?<anchor xml:id="e1-0034.01"/> And into what contest</line>
     <line>did you enter, &amp; what was the event of</line>
-    <line>you<retrace cause="clarify">r</retrace> efforts. Ion. I carried the first prize</line>
-    <line>you have only to consider</line>
-    <!-- Continue Here, Alejandro (11/17/14) -->
-    <line>[?how]</line>
-    <line>o Socrates. Socrates. Well done, <del rend="strikethrough"><unclear reason="illegible"
-          >how</unclear></del> you <del rend="strikethrough">will</del></line>
-    <line><unclear reason="illegible">shall</unclear></line>
-    <line>bear away the Panath{e}nea, [<del rend="strikethrough">too</del>] <del
-        rend="strikethrough">next</del>.--</line>
-    <line>Ion. That also may happen if the <mod>
+    <line>you<retrace cause="clarify">r</retrace> efforts. <milestone unit="tei:speaker"
+        spanTo="#e1-0034.08"/>Ion.<anchor xml:id="e1-0034.08"/> I carried the first prize</line>
+    <line>o Socrates. <milestone unit="tei:speaker" spanTo="#e1-0034.09"/>Socrates.<anchor
+        xml:id="e1-0034.09"/> Well done, <mod>
+        <del rend="strikethrough"><unclear reason="illegible">how</unclear></del>
+        <add place="superlinear"><unclear reason="illegible">how</unclear><add place="superlinear"
+            >you have only to consider</add></add>
+      </mod> you <mod>
+        <del rend="strikethrough">will</del>
+        <add place="sublinear"><unclear reason="illegible">shall</unclear></add>
+      </mod></line>
+    <line>bear away the Panath<unclear reason="illegible">e</unclear>nea, <del rend="strikethrough"
+          ><unclear reason="illegible">too</unclear></del>
+      <del rend="strikethrough">next</del>.&#8212;</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0034.10"/>Ion.<anchor xml:id="e1-0034.10"/> That
+      also may happen if the <mod>
         <del rend="overwritten">g</del>
         <add place="intralinear">G</add>
       </mod>od</line>
-    <line>should be propitious. S. I have often</line>
-    <line>on account</line>
-    <line>envied you rhapsodists, o Ion, <del rend="strikethrough">for the</del></line>
-    <line><del rend="strikethrough">delicacy</del> for <del rend="unmarked">for</del></line>
-    <line><del rend="strikethrough">Elegance</del>
+    <line>should be propitious. <milestone unit="tei:speaker" spanTo="#e1-0034.11"/>S.<anchor
+        xml:id="e1-0034.11"/> I have often</line>
+    <line>envied you rhapsodists, o Ion, <mod>
+        <del rend="strikethrough">for the</del>
+        <add place="superlinear">on account</add>
+      </mod></line>
+    <line> </line>
+    <line><mod>
+        <del rend="strikethrough">Elegance</del>
+        <del rend="strikethrough"><add place="superlinear">delicacy</add></del>
+      </mod>
       <mod>
         <del rend="overwritten">&amp;</del>
         <add place="intralinear">of</add>
-      </mod> your art<unclear reason="illegible">;</unclear> it <unclear reason="illegible"
+      </mod> your art<unclear reason="illegible">;</unclear>
+      <add place="superlinear">for</add>
+      <del rend="unmarked"><add place="superlinear">for</add></del> it <unclear reason="illegible"
         >im</unclear>poses on you</line>
     <line><add place="superlinear"><unclear reason="illegible">first</unclear></add>the <del
         rend="strikethrough">ni<unclear reason="illegible">c</unclear>est</del> nicest care of your

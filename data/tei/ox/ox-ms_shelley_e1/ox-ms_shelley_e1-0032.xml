@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0032" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0032" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0032.jp2"/>
   <zone type="main">
     <line>magnificent fiction with a religious</line>
@@ -16,19 +16,22 @@
     <milestone unit="tei:p"/>
     <line rend="indent1">This Poem was chiefly written <mod>
         <del rend="strikethrough">among</del>
-        <add place="superlinear">upon</add>
+        <add place="superlinear"><unclear reason="illegible">up</unclear>on</add>
       </mod></line>
     <line>the mountainous ruins of the Baths of</line>
     <line>Caracalla, among the flowery glades, &amp;</line>
-    <line>thickets of odoriferous blossoming trees</line>
+    <line>thickets of odor<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">i</add>
+      </mod>ferous blossoming trees</line>
     <line>which <del rend="strikethrough">has</del> are <mod>
         <mod>
-          <add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
           <add place="superlinear">extended</add>
           <del rend="strikethrough">stretched out</del>
         </mod>
         <mod>
-          <add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
+          <add place="sublinear"><metamark function="insert">^</metamark></add>
           <add place="superlinear">extended in ever winding labyrinths</add>
         </mod>
         <del rend="strikethrough"><unclear>a</unclear>m</del>
@@ -46,10 +49,9 @@
     <line>drama.</line>
     <milestone unit="tei:p"/>
     <line rend="indent1"><mod>
-        <del rend="underline">There will be found</del>
+        <del rend="strikethrough">There will be found</del>
         <add place="superlinear">The imagery which I have</add>
       </mod></line>
-    <!--First part of line is deleted by underlining. Either add "underline" as an attribute or use both <hi> and <del>-->
     <line>employed will be found in many</line>
     <line>instances to have been drawn from</line>
   </zone>
