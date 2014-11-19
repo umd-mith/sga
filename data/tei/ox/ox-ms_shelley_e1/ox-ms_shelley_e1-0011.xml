@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0011" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0011" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0011.jp2"/>
-  <zone type="library">5</zone>
+  <zone type="library">
+    <line rend="right">5</line>
+  </zone>
   <zone type="main">
     <line rend="indent2">From those skiey towers</line>
-    <line rend="indent2">Where Thoughts crowned Powers</line>
-    <line>Sit <del rend="strikethrough"><unclear>ye</unclear></del> watching your dance, ye happy
-      Hours</line>
-    <line rend="indent2">From the dim recesses</line>
+    <line rend="indent2">Where <unclear reason="case">T</unclear>houghts crowned <unclear
+        reason="illegible">P</unclear>owers</line>
+    <line>Sit <del rend="strikethrough">y<unclear reason="illegible">e</unclear></del> watching your
+      dance, ye happy Hours</line>
+    <line rend="indent2">From the dim recess<retrace cause="clarify">e</retrace>s</line>
     <line rend="indent2">Of woven caresses</line>
     <line>Where lovers catch ye by your <mod>
-        <del rend="strikethrough"><hi rend="underline">loose</hi></del>
-        <add place="superlinear"><unclear>sliding</unclear></add>
-      </mod> tresses<unclear>,</unclear>&#x2014;</line>
+        <milestone unit="tei:seg" spanTo="#e1-0011.01" xml:id="e1-0011.03"/>
+        <mod>
+          <restore type="underline"><del rend="strikethrough"><hi rend="underline"
+            >loose</hi></del></restore>
+        </mod>
+        <anchor xml:id="e1-0011.01"/>
+        <milestone unit="tei:seg" spanTo="#e1-0011.02" xml:id="e1-0011.04"/>
+        <add place="superlinear"><unclear reason="illegible">sliding</unclear></add>
+        <anchor xml:id="e1-0011.02"/>
+      </mod> tresses<unclear reason="illegible">,</unclear>&#x2014;<alt
+        targets="#e1-0011.03 #e1-0011.04" mode="excl" weights="1 0"/></line>
     <line rend="indent2">From the azure isles</line>
     <line rend="indent2">Where sweet Wisdom smiles</line>
     <line>Delaying your ships with her syren wiles</line>
@@ -24,16 +35,19 @@
     <line>Roofed over Sculpture &amp; Poesy</line>
     <line rend="indent2">From the murmurings</line>
     <line rend="indent2">Of the unsealed springs</line>
-    <line>Where Science bedews <unclear>her</unclear> D&#xE6;dal wings</line>
+    <line>Where Science be<mod>
+        <del rend="overwritten">str</del>
+        <add place="intralinear">d</add>
+      </mod>ews <unclear>her</unclear> D&#xE6;dal wings</line>
     <line rend="indent2">Years after years</line>
     <line rend="indent2">Through blood &amp; tears</line>
     <line>And a <mod>
-        <add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">thick</add>
       </mod> hell of hatreds &amp; hopes &amp; fears,</line>
     <line rend="indent2">We waded &amp; flew</line>
     <line rend="indent2">And the islets were few</line>
-    <line><metamark function="count">120</metamark> Where the bud-blighted flowers of happiness
-      grew</line>
+    <line rend="left"><add><metamark function="count">120</metamark></add> Where the bud-blighted
+      flowers of happiness grew</line>
   </zone>
 </surface>

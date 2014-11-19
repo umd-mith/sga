@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5346" lry="7200" xml:id="ox-ms_shelley_e1-0019" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5346" lry="7200" xml:id="ox-ms_shelley_e1-0019" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0019.jp2"/>
-  <zone type="library">9</zone>
+  <zone type="library">
+    <line rend="right">9</line>
+  </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0019.01"/>
     <line>Panthea</line>
     <anchor xml:id="e1-0019.01"/>
-    <line>And from the other opening in the wood <metamark function="count">200</metamark></line>
+    <line>And from the other opening in the wood <add><metamark function="count"
+        >200</metamark></add></line>
     <line>Rushes with loud &amp; whirlwind harmony</line>
-    <line>A sphere, which is as many thousand spheres,</line>
+    <line>A sphere, which is as <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">m</add>
+      </mod>any thousand spheres,</line>
     <line>Solid as chrystal, yet through all its mass</line>
     <line>Flow, as through empty space, music &amp; light</line>
     <line>Ten thousand orbs involving &amp; involved</line>
     <line>Purple &amp; azure, <mod>
-        <add place="sublinear"><metamark>&#x2038;</metamark></add>
+        <add place="sublinear"><metamark>^</metamark></add>
         <add place="superlinear">white &amp; green &amp;</add>
       </mod> golden <mod>
         <del rend="strikethrough">white &amp; green</del>
@@ -29,8 +35,12 @@
     <line>Over each other with a thousand motions</line>
     <line>Upon a thousand sightless axles spinning</line>
     <line>And with the force of self destroying swiftness</line>
-    <line>Intensely slowly solemnly roll on&#x2014;</line>
-    <line><space unit="chars" extent="33"/><mod spanTo="#e1-0019.04"/><add place="sublinear"><metamark function="insert">&#x2014;&#x2014;&#x2014;</metamark></add></line>
+    <line>Intensely slowly solemnly ro<mod>
+        <del rend="overwritten">lls</del>
+        <add place="intralinear">ll</add>
+      </mod> on&#x2014;</line>
+    <line><space unit="chars" extent="33"/><mod spanTo="#e1-0019.04"/><add place="sublinear"
+          ><metamark function="insert">&#x2014;&#x2014;&#x2014;</metamark></add></line>
     <line><anchor xml:id="e1-0019.02"/></line>
     <line><anchor xml:id="e1-0019.03"/></line><anchor xml:id="e1-0019.04"/>
     <line>With mighty whirl the multitudinous Orb</line>
