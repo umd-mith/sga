@@ -1,42 +1,86 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0039" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0039" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0039.jp2"/>
+  <zone type="library"><line rend="right">19</line></zone>
   <zone type="main">
-    <line>19</line>
-    <line>posess</line>
-    <line><hi rend="underline">respecting</hi> Hesiod &amp; Archilochus. <hi rend="underline">Ion.</hi> I <del rend="strikethrough">have</del></line>
-    <line>with regard to</line>
+    <line><mod>
+        <del rend="strikethrough">respecting</del>
+        <add place="sublinear">with regard to</add>
+      </mod> Hesiod &amp; Archilochus. <milestone unit="tei:speaker" spanTo="#e1-0039.03"/><hi
+        rend="underline">Ion.</hi><anchor xml:id="e1-0039.03"/> I <mod>
+        <del rend="strikethrough">have</del>
+        <add place="superlinear">posess</add>
+      </mod></line>
     <line>this high degree of skill respecting Homer alone;</line>
-    <line>and I consider that sufficient.-- <hi rend="underline">Soc</hi>. <hi rend="underline">But</hi></line>
-    <line>[?there]</line>
-    <line>[?<del rend="strikethrough">Ion</del>] are <del rend="strikethrough">subjects</del> any topics concerng which</line>
-    <line><del rend="strikethrough">During the scene morning slowly breaks.</del></line>
-    <line>Homer &amp; Hesiod say the same <del rend="strikethrough">things</del>?--<hi rend="underline">Ion</hi></line>
-    <line>Many, as it seems to me. Soc. [?<del rend="strikethrough">If</del>] [<del rend="strikethrough">Should</del>]</line>
-    <line>whether</line>
-    <line>[<del rend="strikethrough">?should</del>]</line>
-    <line>you illustrate these topics better</line>
-    <line>as treated by Homer or Hesiod?-- <hi rend="underline">Ion</hi>.--</line>
+    <line>and I consider that sufficient.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0039.04"
+        /><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0039.04"/>
+      <del rend="strikethrough"><unclear reason="illegible">B</unclear>ut</del></line>
+    <line><mod>
+        <del rend="strikethrough"><unclear reason="illegible">Ion</unclear></del>
+        <add place="superlinear" next="#e1-0039.02"><unclear reason="illegible"
+          >there</unclear></add>
+      </mod>
+      <milestone unit="tei:seg" spanTo="#e1-0039.01" xml:id="e1-0039.02"/>are<anchor
+        xml:id="e1-0039.01"/>
+      <del rend="strikethrough">subjects</del> any topics concerng which</line>
+    <line rend="indent2"><del rend="strikethrough"><add>During the scene morning slowly
+          breaks.</add></del></line>
+    <line>Homer &amp; Hesiod say the same <add place="superlinear"><metamark function="displacement"
+          >&#8594;</metamark></add>
+      <del rend="strikethrough">things</del>?&#8212;<milestone unit="tei:speaker"
+        spanTo="#e1-0039.05"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0039.05"/></line>
+    <line>Many, as it seems to <unclear reason="illegible">me</unclear><add>.</add>
+      <milestone unit="tei:speaker" spanTo="#e1-0039.06"/><mod>
+        <del rend="overwritten">I</del>
+        <add place="intralinear">S</add>
+      </mod>oc.<anchor xml:id="e1-0039.06"/>
+      <mod>
+        <del rend="strikethrough"><unclear reason="illegible">If</unclear></del>
+        <add place="sublinear">whether</add>
+      </mod>
+      <del rend="strikethrough"><unclear reason="illegible">Should</unclear></del></line>
+    <line>you <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
+            >should</unclear></add></del> illustrate these topics better</line>
+    <line>as treated by <retrace cause="clarify">H</retrace>omer or Hesiod?&#8212; <milestone
+        unit="tei:speaker" spanTo="#e1-0039.07"/><hi rend="underline">Ion</hi>.<anchor
+        xml:id="e1-0039.07"/>&#8212;</line>
     <line>In the same manner doubtless inasmuch</line>
-    <line>as they say the same words with respect</line>
-    <line>to the same things. <hi rend="underline">Soc</hi>. But with</line>
+    <line>as they say the same<add place="interlinear"><metamark>X</metamark></add> words<add
+        place="interlinear"><metamark>X</metamark></add> with respect</line>
+    <line>to the same things. <milestone unit="tei:speaker" spanTo="#e1-0039.08"/><hi
+        rend="underline">Soc</hi>.<anchor xml:id="e1-0039.08"/> But with</line>
     <line>regard to those things in which they</line>
-    <line>differ; divination for instance? <hi rend="underline">Ion</hi></line>
-    <line>I feel that</line>
-    <line>Certainly I could explain them.-- Soc.</line>
-    <line>^ you <del rend="strikethrough">do</del> <del rend="strikethrough">imagine</del>, that</line>
+    <line>differ; divination for instance? <milestone unit="tei:speaker" spanTo="#e1-0039.09"/><hi
+        rend="underline">Ion</hi><anchor xml:id="e1-0039.09"/></line>
+    <line>Certainly <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">I feel that</add>
+      </mod> I could explain them.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0039.10"
+        />Soc.<anchor xml:id="e1-0039.10"/></line>
+    <line>
+      <del rend="unmarked">you</del>
+      <del rend="strikethrough">do</del>
+      <del rend="strikethrough">imagine</del><del rend="unmarked">, that</del></line>
     <line>But whether or not you or a diviner</line>
-    <line>would</line>
-    <line>make the best exposition respecting</line>
-    <line>those poets</line>
-    <line>all that <del rend="strikethrough">they</del> say of divination, <del rend="strikethrough">whether</del></line>
+    <line><add place="superlinear">would</add>make the best exposition respecting</line>
+    <line>all that <mod>
+        <del rend="strikethrough">they</del>
+        <add place="superlinear">those poets</add>
+      </mod> say of divination, <del rend="strikethrough">whether</del></line>
     <line><del rend="strikethrough">those poets</del></line>
-    <line>both as <del rend="strikethrough">they</del> agree &amp; as they differ.--</line>
-    <line><hi rend="underline">Ion</hi> A diviner certainly. Soc. If you</line>
+    <line>both as <mod>
+        <restore><del rend="strikethrough">they</del></restore>
+      </mod> agree &amp; as they differ.&#8212;</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0039.11"/><hi rend="underline">Ion</hi><anchor
+        xml:id="e1-0039.11"/> A diviner certainly. <milestone unit="tei:speaker"
+        spanTo="#e1-0039.12"/>Soc.<anchor xml:id="e1-0039.12"/> If you</line>
     <line>were a diviner do</line>
-    <line>these are mine empire.</line>
+    <!-- This is supposed to be bracketed off -->
+    <milestone unit="tei:seg" spanTo="#e1-0039.13" corresp="e1-0038.01"/>
+    <line rend="indent3"><add>these are mine empire.</add></line>
+    <anchor xml:id="e1-0039.13"/>
   </zone>
 </surface>

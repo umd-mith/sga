@@ -1,47 +1,69 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0026" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0026" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0026.jp2"/>
   <zone type="main">
     <line>Out of the lampless caves of unimagined being</line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0026.01"/>With earthquake shook &amp;
-      swiftness making</line>
-    <line rend="right">shiver<anchor xml:id="e1-0026.01"/></line>
-    <line rend="indent1">Thought's stagnant chaos, unremoved forever,</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0026.02"/>Till Hate &amp; Fear &amp; Pain,
-      light-vanquished</line>
-    <line rend="right">shadows, fleeing<anchor xml:id="e1-0026.02"/></line>
-    <line rend="indent1">Leave Man, who was a manysided mirror</line>
+    <milestone unit="tei:l" spanTo="#e1-0026.01"/>
+    <line rend="indent1">With earthquake shook &amp; swiftness making</line>
+    <line rend="right">shiver</line>
+    <anchor xml:id="e1-0026.01"/>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">E<unclear reason="illegible">ar</unclear></del>
+        <add place="intralinear">Th</add>
+      </mod>ought's stagnant chaos, unremoved forever,</line>
+    <milestone unit="tei:l" spanTo="#e1-0026.02"/>
+    <line>Till Hate &amp; Fear &amp; Pain, light-vanquished</line>
+    <line rend="right">shadows, fleeing</line>
+    <anchor xml:id="e1-0026.02"/>
+    <line rend="indent1">Leav<mod>
+        <del rend="overwritten">es</del>
+        <add place="intralinear">e</add>
+      </mod> Man, who was a manysided mirror</line>
     <line rend="indent1">Which could distort to many a shape of error</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0026.03"/>This true fair world of things&#x2014;a Sea
-      reflecting</line>
-    <line rend="right">Love;<anchor xml:id="e1-0026.03"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0026.03"/>
+    <line>This true fair world of things&#x2014;a Sea reflecting</line>
+    <line rend="right">Love;</line>
+    <anchor xml:id="e1-0026.03"/>
     <line rend="indent1">Which over all his kind, as the Suns Heaven</line>
     <line rend="indent1">Gliding oer Ocean <mod>
-        <del rend="strikethrough">smooth</del>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">with</del>
+            <add place="intralinear">smooth</add>
+          </mod></del>
         <add place="superlinear">smooth</add>
       </mod>, serene &amp; even,</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0026.04"/>Darting from starry depths radiance
-      &amp;</line>
-    <line rend="right">life, doth move<unclear>.</unclear><anchor xml:id="e1-0026.04"/></line>
-    <line rend="indent1">Leave Man, even as a leprous child is left</line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0026.05"/>Who follows <mod>
+    <milestone unit="tei:l" spanTo="#e1-0026.04"/>
+    <line>Darting from starry depths radiance &amp;</line>
+    <line rend="right">life, doth move<unclear reason="illegible">.</unclear></line>
+    <anchor xml:id="e1-0026.04"/>
+    <line rend="indent1">Leav<mod>
+        <del rend="overwritten">es</del>
+        <add place="intralinear">e</add>
+      </mod> Man, even as a leprous child is left</line>
+    <milestone unit="tei:l" spanTo="#e1-0026.05"/>
+    <line rend="indent1">Who follows <mod>
         <del rend="strikethrough">some</del>
         <add place="superlinear">a</add>
       </mod> sick beast to <mod>
         <del rend="strikethrough">a</del>
         <add place="superlinear">some</add>
       </mod> warm</line>
-    <line rend="right">cleft<anchor xml:id="e1-0026.05"/></line>
-    <line><milestone unit="tei:l" spanTo="#e1-0026.06"/>Of rocks, through which the might of</line>
-    <line rend="right">healing springs is poured<anchor xml:id="e1-0026.06"/></line>
-    <line><add><metamark function="separate">L______________</metamark></add></line>
+    <line rend="right">cleft</line>
+    <anchor xml:id="e1-0026.05"/>
+    <milestone unit="tei:l" spanTo="#e1-0026.06"/>
+    <line>Of rocks, through which the might of</line>
+    <line rend="right">healing springs is poured</line>
+    <anchor xml:id="e1-0026.06"/>
+    <!-- Check this separate mark -->
+    <line rend="indent4"><add><metamark function="separate">L______________</metamark></add></line>
     <line rend="indent1">Then when it wanders home with rosy smile</line>
     <line rend="indent1">Unconscious, &amp; its mother fears awhile</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0026.07"/>It is a Spirit&#x2014;then, weeps on her
-      child</line>
-    <line rend="right">restored.<anchor xml:id="e1-0026.07"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0026.07"/>
+    <line>It is a Spirit&#x2014;then, weeps on her child</line>
+    <line rend="right"><unclear reason="illegible">res</unclear>tored.<anchor xml:id="e1-0026.07"
+      /></line>
   </zone>
 </surface>

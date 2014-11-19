@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0023" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0023" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0023.jp2"/>
-  <zone type="library">11</zone>
+  <zone type="library">
+    <line rend="right">11</line>
+  </zone>
   <zone type="main">
-    <line>Which wraps me, like an atmosphere of light</line>
+    <line rend="indent1">Which wraps me, like an atmosphere of light</line>
     <line>And bears me as a cloud is borne by its own wind<add place="sublinear">!</add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0023.01"/>
     <line rend="center">The Moon</line>
@@ -14,13 +16,16 @@
     <line rend="indent1">Brother mine, calm wanderer</line>
     <line rend="indent1">Happy globe of land &amp; air</line>
     <line>Some Spirit <mod>
-        <del rend="strikethrough">wraps thine atmosphere &amp;</del>
+        <del rend="strikethrough">wraps th<mod>
+            <del rend="overwritten">y</del>
+            <add place="intralinear">ine</add>
+          </mod> atmosphere &amp;</del>
         <add place="superlinear">is darted like a beam from</add>
       </mod> thee</line>
     <line rend="indent1">Which penetrates my frozen frame</line>
     <line rend="indent1">And passes with the warmth of flame&#x2014;</line>
     <line>With love &amp; odour &amp; deep melody</line>
-    <line rend="indent2">Through me, through me!&#x2014;</line>
+    <line rend="indent2"><retrace cause="clarify">T</retrace>hrough me, through me!&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0023.02"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0023.02"/>

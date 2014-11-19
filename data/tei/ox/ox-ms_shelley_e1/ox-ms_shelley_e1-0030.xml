@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0030" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0030" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0030.jp2"/>
   <zone type="main">
     <line>by the consummation of his marriage</line>
@@ -21,7 +21,10 @@
     <line>to this mode of treating the subject</line>
     <line>had incited me to cherish, the recollec</line>
     <line>-tion of the high comparison such</line>
-    <line>an attempt would challenge, might</line>
+    <line><mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">a</add>
+      </mod>n attempt would challenge, might</line>
     <line>well abate. But in truth I</line>
     <line>was averse from a catastrophe so</line>
     <line>feeble as that of reconciling the</line>
