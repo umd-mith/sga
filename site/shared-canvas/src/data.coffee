@@ -140,15 +140,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       @contents  = new Contents
       @images    = new Images
       @zones     = new Zones
-      @SGAannos  = new Annotations  
+      @SGAannos  = new Annotations
 
     # We override fetch, since we actually fetch and re-organize
     # data from the parent Manifest model
-    fetch : (manifest) ->    
+    fetch : (manifest) ->
       importCanvas @, manifest
 
   class CanvasesData extends Backbone.Collection
-    model: CanvasData   
+    model: CanvasData
     # BackBone's reset() removes model silently. 
     # We want it to tell its models that they're going to die
     # (so that their views know that they need to go too)
@@ -220,7 +220,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
         else if "sc:Canvas" in types
           manifest.canvasesMeta.add node
-          console.log node
 
   importCanvas = (canvas, manifest) ->
     # This method imports manifest level data and metadata   
@@ -248,7 +247,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       # TODO: handle other shape constraints (rectangles, ellipses)
       # TODO: handle music notation constraints
       # TODO: handle time constraints for video/sound annotations
-    console.log canvas, manifest
 
     extractTextTarget = (model, id) ->
       return unless id?
@@ -264,7 +262,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         if target["oa:hasClass"]?
           content.set
             cssclass : target["oa:hasClass"]
-        extractSpatialConstraint model, target["selector"]
+        extractSpatialConstraint model, target["selector"]["@id"]
       else
         model.set
           target : id
@@ -275,7 +273,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       #textSource.addFile(body.oahasSource)
       model.set
         source : body["full"]
-      extractSpatialConstraint model, body["selector"]
+      extractSpatialConstraint model, body["selector"]["@id"]
 
     # Main code for importCanvas()
 
@@ -302,13 +300,13 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           body = node["resource"]
 
           # Get content annotations
-          console.log target, canvas_id
-          if "sc:ContentAnnotation" in types and target["full"] == canvas_id
+          if "sc:ContentAnnotation" in types and target["full"] and target["full"]["@id"] == canvas_id
+
             content = new Content
             content.set graph[id]
 
-            extractTextTarget content, target
-            extractTextBody content, body
+            extractTextTarget content, target["@id"]
+            extractTextBody content, body["@id"]
 
             # Adding triggers the view. Alternatively, we could have the view listen to change,
             # but we trigger change too often by setting attributes gradually. 
@@ -320,7 +318,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             zone = new Zone
             canvas.zones.add zone
 
-            extractSpatialConstraint zone, target
+            extractSpatialConstraint zone, target["@id"]
             zone.set node
 
       for id, node of graph
@@ -357,7 +355,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                 annotation = new Annotation
                 canvas.SGAannos.add annotation
 
-                extractTextTarget annotation, target
+                extractTextTarget annotation, target["@id"]
                 annotation.set 
                   "@id"   : node["@id"]
                   "@type" : node["@type"]
@@ -405,7 +403,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         if not loaded
           s = new TextFile
           loadedSources.add s
-          s.set 
+          s.set
            target : source
           s.fetch()
 
@@ -429,7 +427,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                 end: end
               if indent? then titem.set {indent : indent}
               if align? then titem.set {align : align}
-              contentAnno.textItems.add titem                
+              contentAnno.textItems.add titem
             
             processNode = (start, end) ->
               classes = []
@@ -459,6 +457,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             #
             makeTextItems = (start, end, classes, css, indent, align) ->
               canvas.contents.forEach (c,i) ->
+                console.log c
                 beginOffset = c.get "beginOffset"
                 endOffset = c.get "endOffset"
                 if start <= endOffset and end >= beginOffset
