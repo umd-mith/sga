@@ -57,6 +57,10 @@
       "@type": "@id", 
       "@container": "@list"
     }, 
+    "resource": {
+      "@id": "oa:hasBody", 
+      "@type": "@id"
+    }, 
     "cnt": "http://www.w3.org/2011/content#", 
     "ore": "http://www.openarchives.org/ore/terms/", 
     "end": "oa:end", 
@@ -143,10 +147,7 @@
       "@id": "oa:hasTarget", 
       "@type": "@id"
     }, 
-    "resource": {
-      "@id": "oa:hasBody", 
-      "@type": "@id"
-    }, 
+    "indent": "sga:textIndentLevel", 
     "scale_factors": {
       "@id": "iiif:scaleFactor", 
       "@container": "@list"
@@ -160,6 +161,7 @@
       "@type": "@id"
     }, 
     "painting": "sc:painting", 
+    "align": "sga:textAlignment", 
     "bytes": "cnt:bytes", 
     "value": "rdf:value", 
     "annotatedAt": "oa:annotatedAt", 
@@ -202,101 +204,283 @@
   }, 
   "@graph": [
     {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N7f4340e083c14eb6946e9a8b12da5cdf", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N0c00cc58181944289e84cba423980a10"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:Nd13c7f3723b84a6391d26f53edc556dc", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:Nede0be58c79d40359464a781d103c88f"
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N0d573ee32e2841c4b0e90c4d2b64654b", 
+      "on": "_:N93fa7fad28be4afa9d39a8c3f3c170af", 
+      "align": "center", 
+      "@id": "_:N7f79c54cf80d4feea9b7ca1e1f29555c", 
       "@type": [
         "sga:LineAnnotation", 
         "oax:Highlight"
-      ], 
-      "on": "_:Nfc187d19c5a243398cf02f671662d822"
+      ]
     }, 
     {
-      "@id": "_:N2166329546ca4f489230e130c883a3da", 
+      "on": "_:N552ba8a5690e420ea04c04a2507a09a1", 
+      "align": "center", 
+      "@id": "_:N266ef56f735d4d62af5336b17fe96fbc", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "on": "_:Ne1172f279d9c4e889cc0e713a3364786", 
+      "align": "center", 
+      "@id": "_:Nd4b112ef472d40da8f4e049105f8fb3e", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "endOffset": 139, 
+      "@id": "_:Nc76ca120466c4fca9415fc9d0b7b9122", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 117
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Na64ae78164544ad7b99ecb88039fc8ba", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N7052393b793d4f65a4178d6817fdab54"
+    }, 
+    {
+      "endOffset": 187, 
+      "@id": "_:N3bc488f745554e5a88dd8062f9b61dc3", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 179
+    }, 
+    {
+      "endOffset": 58, 
+      "@id": "_:N7f2fdbb66a2043a686a0a5b0aa1e5454", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 48
+    }, 
+    {
+      "@id": "_:Ne958fc5102f04df8b9bc28a254b6272e", 
       "@type": "oa:FragmentSelector", 
       "value": "xywh:0,0,7304,5078"
     }, 
     {
-      "endOffset": 28, 
-      "@id": "_:N959c75523e64415e9e96f71e9deb9b5a", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 24
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N7328ae1a1e72402c85560a5b843f9585", 
+      "on": "_:Nce47d22a1146440eb5131c2026ee57db", 
+      "align": "center", 
+      "@id": "_:N6e797b2adb70491a8659237f786f94ef", 
       "@type": [
         "sga:LineAnnotation", 
         "oax:Highlight"
-      ], 
-      "on": "_:N8bf1fb5c8efe4c4783d3b3ac6524fcac"
+      ]
+    }, 
+    {
+      "endOffset": 152, 
+      "@id": "_:N7bbe102135e74d6b9377848fbf7641bb", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 144
     }, 
     {
       "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:Na31f4cc8aaf042c3935b554fbb8f7c07", 
+      "@id": "_:Ndcb8b3d04739497d8dfbe1073cf32d2f", 
       "@type": "oa:SpecificResource", 
-      "selector": "_:N3d04b676ede0419ebf2b582f3d138dab"
+      "selector": "_:N3bc488f745554e5a88dd8062f9b61dc3"
+    }, 
+    {
+      "endOffset": 241, 
+      "@id": "_:Nade2e2e2179a4422ac8f89f8515de890", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 16
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N46c39f05c8af4ab5b0203cd1d54c953c", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nc78b68bf816c477da742f9b17a7e36cb"
+    }, 
+    {
+      "resource": "http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0001.jp2", 
+      "@id": "_:N965701a146a2438aad6e3e17959ef77c", 
+      "@type": "oa:Annotation", 
+      "on": "_:N22ddd34c3e2a4d0484833ae0addb994d"
+    }, 
+    {
+      "on": "_:Na64ae78164544ad7b99ecb88039fc8ba", 
+      "align": "center", 
+      "@id": "_:Nf8367b6e75224ffebbc8ecbbf147b3bd", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N3368ab5b9ed1467592505c2218cf4364", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N81375bfd9ee14ebf988e1d6fe32247a0"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N93fa7fad28be4afa9d39a8c3f3c170af", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N7bbe102135e74d6b9377848fbf7641bb"
+    }, 
+    {
+      "on": "_:Nbce588cd40e94d46af8380d322a40dca", 
+      "align": "center", 
+      "@id": "_:N94d681b50da04285a8951038d03efc3c", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N231d690cec244412bc63624162bcbf21", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nf4a24e26545142eaa7ef9090cfd6183b"
+    }, 
+    {
+      "endOffset": 97, 
+      "@id": "_:Nc78b68bf816c477da742f9b17a7e36cb", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 85
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Ne8f8a21b2e074b99af5921c512307df7", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N742d768a05924662a5b77c57a7db25c6"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Nd38a908dea88487f9c9a5fd788277ed5", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nc76ca120466c4fca9415fc9d0b7b9122"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Nce47d22a1146440eb5131c2026ee57db", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N4e4c74e877564447a8f6cf8d90acebc0"
+    }, 
+    {
+      "on": "_:N46c39f05c8af4ab5b0203cd1d54c953c", 
+      "align": "center", 
+      "@id": "_:N3aeaf8cdc33a4edeac71bfb15f65c1c5", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "endOffset": 80, 
+      "@id": "_:N742d768a05924662a5b77c57a7db25c6", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 63
+    }, 
+    {
+      "on": "_:N11a97b61eb5c4444b0e909c91a25313f", 
+      "align": "center", 
+      "@id": "_:N5a1e777b65244b86bdd0653683b26d30", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "rdf:rest": [
+        {
+          "@id": "_:N1f846a17c1fb4436bdd1cb3017a95bbf"
+        }, 
+        {
+          "@list": []
+        }
+      ], 
+      "label": "Physical sequence", 
+      "@id": "_:N1b5bd49798d04c7e879baf2b610dd183", 
+      "@type": [
+        "sc:Sequence", 
+        "rdf:List"
+      ], 
+      "first": "_:N22ddd34c3e2a4d0484833ae0addb994d"
+    }, 
+    {
+      "endOffset": 174, 
+      "@id": "_:N0fd1c79ca0c0438e8c821a04b9a8f70e", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 157
+    }, 
+    {
+      "endOffset": 214, 
+      "@id": "_:Nf4a24e26545142eaa7ef9090cfd6183b", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 192
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Nbce588cd40e94d46af8380d322a40dca", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N8d30bff98bb640129459361d443f2a84"
+    }, 
+    {
+      "resource": "_:Na476cf2b901c43e4a2d52743396db0fc", 
+      "@id": "_:N707e9d097d1548b3bb8921f45264d277", 
+      "@type": [
+        "oa:Annotation", 
+        "sc:ContentAnnotation"
+      ], 
+      "on": "_:Nb1eaccf15fd949ddb5f16fff07f290b0"
+    }, 
+    {
+      "endOffset": 112, 
+      "@id": "_:N4e4c74e877564447a8f6cf8d90acebc0", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 102
     }, 
     {
       "ore:aggregates": [
         {
-          "@id": "_:N540f36c479c5413fb5a0c745f77a00cb"
+          "@id": "_:N3aeaf8cdc33a4edeac71bfb15f65c1c5"
         }, 
         {
-          "@id": "_:N54ab8feff2d444ff8b50a937951a0d41"
+          "@id": "_:Nf8367b6e75224ffebbc8ecbbf147b3bd"
         }, 
         {
-          "@id": "_:N2b7ca926a82148e18c47e17c7be177d5"
+          "@id": "_:N94d681b50da04285a8951038d03efc3c"
         }, 
         {
-          "@id": "_:N13cfa50a15574b59b63cf4c8ffcce9f7"
+          "@id": "_:N03264ac5c85c462d94cf7deadd4d69cf"
         }, 
         {
-          "@id": "_:N5d9413c868054dfbb50b38573558a12b"
+          "@id": "_:N10ee1e97a08a42499b71f5043f308c54"
         }, 
         {
-          "@id": "_:N6264d1850dea47dd859f178d1c30d0b6"
+          "@id": "_:Nd4b112ef472d40da8f4e049105f8fb3e"
         }, 
         {
-          "@id": "_:N0d573ee32e2841c4b0e90c4d2b64654b"
+          "@id": "_:N8750d05061da45d0bfa04e78447be6cf"
         }, 
         {
-          "@id": "_:N54bb6ca4ecb948549e717b8f1502a94d"
+          "@id": "_:N5a1e777b65244b86bdd0653683b26d30"
         }, 
         {
-          "@id": "_:N2fcef64a167f4f8a930b89b8e201fbd6"
+          "@id": "_:Ne560482244c548b4a21b7eeda2e78b73"
         }, 
         {
-          "@id": "_:Nc637633705354d8795597bc8371d0391"
+          "@id": "_:N7f79c54cf80d4feea9b7ca1e1f29555c"
         }, 
         {
-          "@id": "_:N92d19e3daba549edb801b2fe02b40699"
+          "@id": "_:N266ef56f735d4d62af5336b17fe96fbc"
         }, 
         {
-          "@id": "_:Naff22b9ebba143fc95501ee2bdd41c88"
+          "@id": "_:Nd4c2caa8930c4e61b3e368feb805d96e"
         }, 
         {
-          "@id": "_:Nf0aaff0f9d5243f79890bdc3743e9f92"
+          "@id": "_:N6e797b2adb70491a8659237f786f94ef"
         }, 
         {
-          "@id": "_:N7328ae1a1e72402c85560a5b843f9585"
+          "@id": "_:N4a9eb0a316124e9a92225c32c4c7b285"
         }
       ], 
       "sc:forMotivation": {
         "@id": "sc:painting"
       }, 
-      "@id": "_:N53fac5cc68244b8495667fee9cfb58f6", 
+      "@id": "_:N5f3344720c2746e18bf094f293072204", 
       "@type": [
         "sc:Layer", 
         "sc:AnnotationList"
@@ -304,336 +488,16 @@
       "label": "Transcription"
     }, 
     {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N5dbfab9e5aef450c86719c6f33f0ca9a", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N737db4fb1bc444a9a8fbb32c99f92ef3"
-    }, 
-    {
-      "endOffset": 152, 
-      "@id": "_:N3d04b676ede0419ebf2b582f3d138dab", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 144
-    }, 
-    {
-      "endOffset": 139, 
-      "@id": "_:Ndb6c9adea7b44c098e2bcb6fe75b1a2c", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 117
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N2b7ca926a82148e18c47e17c7be177d5", 
-      "@type": [
-        "sga:LineAnnotation", 
-        "oax:Highlight"
-      ], 
-      "on": "_:Nbff0515049034cf290ad26411d849b60"
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:Nf0aaff0f9d5243f79890bdc3743e9f92", 
-      "@type": [
-        "sga:LineAnnotation", 
-        "oax:Highlight"
-      ], 
-      "on": "_:Nb3a415a45bd345ea882dce4f7f75b665"
-    }, 
-    {
-      "endOffset": 174, 
-      "@id": "_:Nede0be58c79d40359464a781d103c88f", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 157
-    }, 
-    {
-      "sga:shelfmarkLabel": "MS. Abinger c. 56", 
-      "sga:folioLabel": "i recto", 
-      "label": "i recto", 
-      "width": 5078, 
-      "sga:handLabel": "Mary Shelley", 
-      "height": 7304, 
-      "@id": "_:N27b9f44f2ef348cb82cc779c15d17ebf", 
-      "@type": "sc:Canvas"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:Nbff0515049034cf290ad26411d849b60", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N38781dad45314195987a26273598554a"
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N54bb6ca4ecb948549e717b8f1502a94d", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:Nd13c7f3723b84a6391d26f53edc556dc"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N4bd2af87851d4cb2a2db363eac831cc7", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N67da1ab8ef5c4f3eb4671b86728f9f7d"
-    }, 
-    {
-      "endOffset": 112, 
-      "@id": "_:N12d1aebfc5504ff78624dcfcef8d2fdb", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 102
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:Nc637633705354d8795597bc8371d0391", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:N00fde7e109704aebb96699ac6c0a846e"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N8bf1fb5c8efe4c4783d3b3ac6524fcac", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:Ndb6c9adea7b44c098e2bcb6fe75b1a2c"
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N54ab8feff2d444ff8b50a937951a0d41", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:N4bd2af87851d4cb2a2db363eac831cc7"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N6ab94d07f0e04359b6df6d2a7058c706", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N959c75523e64415e9e96f71e9deb9b5a"
-    }, 
-    {
-      "ore:aggregates": {
-        "@id": "_:N184cfc3f1dd046c9b0accb7c4dd6d471"
-      }, 
-      "@id": "_:N05bea30ff5724e89aca6e4995d2a1e60", 
-      "@type": [
-        "sc:Layer", 
-        "sc:AnnotationList"
-      ], 
-      "label": "Zones"
-    }, 
-    {
       "endOffset": 19, 
-      "@id": "_:N11f8b88658e346efaba9e04716c509b3", 
+      "@id": "_:Nde002ac18d7541238ad3b47c37ab2c42", 
       "@type": "textOffsetSelector", 
       "beginOffset": 16
-    }, 
-    {
-      "rdf:rest": {
-        "@list": []
-      }, 
-      "@id": "_:N63ae304459874940be51af4956b45edd"
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N5d9413c868054dfbb50b38573558a12b", 
-      "@type": [
-        "sga:LineAnnotation", 
-        "oax:Highlight"
-      ], 
-      "on": "_:N77194038d7484c7ab30de817dea5a103"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N965bc15bb2e34f9d8ca531422cadc1de", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:Na81207cf683b4c0f8bcae0958d653142"
-    }, 
-    {
-      "endOffset": 58, 
-      "@id": "_:N3d09b11e71e747ed9c920722aa07150a", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 48
-    }, 
-    {
-      "resource": "_:N2d8b8522f64f41c6a5aa5a70d6e6fdea", 
-      "@id": "_:N184cfc3f1dd046c9b0accb7c4dd6d471", 
-      "@type": [
-        "sc:ContentAnnotation", 
-        "oa:Annotation"
-      ], 
-      "on": "_:Nf75a10c673cf435c8215e5a24385a585"
-    }, 
-    {
-      "endOffset": 97, 
-      "@id": "_:N737db4fb1bc444a9a8fbb32c99f92ef3", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 85
-    }, 
-    {
-      "endOffset": 80, 
-      "@id": "_:N7698b3cafc2c4078802f83e5071bf182", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 63
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N2d8b8522f64f41c6a5aa5a70d6e6fdea", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:Ned71b5fe9f924d91960c3d9d8090ff1a"
-    }, 
-    {
-      "endOffset": 241, 
-      "@id": "_:Ned71b5fe9f924d91960c3d9d8090ff1a", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 16
-    }, 
-    {
-      "endOffset": 43, 
-      "@id": "_:N67da1ab8ef5c4f3eb4671b86728f9f7d", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 33
-    }, 
-    {
-      "ore:aggregates": [
-        {
-          "@id": "_:N53fac5cc68244b8495667fee9cfb58f6"
-        }, 
-        {
-          "@id": "_:N05bea30ff5724e89aca6e4995d2a1e60"
-        }
-      ], 
-      "sc:hasImageAnnotations": {
-        "@id": "_:Ne030584043754b11bf9914d7b6d4d840"
-      }, 
-      "attribution": "Mary Shelley", 
-      "dc:title": "Frankenstein", 
-      "sc:dateLabel": "18 April-[?13] May 1817", 
-      "sc:hasSequences": {
-        "@id": "_:N3b197feea01a46bda6eda25aecf110fa"
-      }, 
-      "sc:agentLabel": "Mary Shelley", 
-      "sga:stateLabel": "Fair copy", 
-      "sc:hasCanvases": {
-        "@id": "_:N27b9f44f2ef348cb82cc779c15d17ebf"
-      }, 
-      "label": "Fair-Copy Notebook C1", 
-      "@id": "http://localhost:8000/demo/a.jsonld", 
-      "@type": "sc:Manifest", 
-      "sc:service": {
-        "@id": "http://dev.shelleygodwinarchive.org/sc/oxford/frankenstein/notebook/c1"
-      }
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N6264d1850dea47dd859f178d1c30d0b6", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:Na31f4cc8aaf042c3935b554fbb8f7c07"
-    }, 
-    {
-      "endOffset": 214, 
-      "@id": "_:Ne616b51a89f44890a4714d46762f296a", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 192
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N540f36c479c5413fb5a0c745f77a00cb", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:N7f4340e083c14eb6946e9a8b12da5cdf"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N77194038d7484c7ab30de817dea5a103", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N7698b3cafc2c4078802f83e5071bf182"
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:N13cfa50a15574b59b63cf4c8ffcce9f7", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:N965bc15bb2e34f9d8ca531422cadc1de"
-    }, 
-    {
-      "endOffset": 187, 
-      "@id": "_:Na81207cf683b4c0f8bcae0958d653142", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 179
-    }, 
-    {
-      "sga:textAlignment": "center", 
-      "@id": "_:Naff22b9ebba143fc95501ee2bdd41c88", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:N5dbfab9e5aef450c86719c6f33f0ca9a"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N00fde7e109704aebb96699ac6c0a846e", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N12d1aebfc5504ff78624dcfcef8d2fdb"
-    }, 
-    {
-      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:N68d5f7322c3a4c4990beb8a95e5cdb19", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N11f8b88658e346efaba9e04716c509b3"
-    }, 
-    {
-      "sga:textIndentLevel": 3, 
-      "@id": "_:N92d19e3daba549edb801b2fe02b40699", 
-      "@type": [
-        "oax:Highlight", 
-        "sga:LineAnnotation"
-      ], 
-      "on": "_:N68d5f7322c3a4c4990beb8a95e5cdb19"
-    }, 
-    {
-      "endOffset": 241, 
-      "@id": "_:N0c00cc58181944289e84cba423980a10", 
-      "@type": "textOffsetSelector", 
-      "beginOffset": 228
-    }, 
-    {
-      "resource": "http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0001.jp2", 
-      "@id": "_:Ne030584043754b11bf9914d7b6d4d840", 
-      "@type": "oa:Annotation", 
-      "on": "_:N27b9f44f2ef348cb82cc779c15d17ebf"
     }, 
     {
       "endOffset": 223, 
-      "@id": "_:N38781dad45314195987a26273598554a", 
+      "@id": "_:N8d30bff98bb640129459361d443f2a84", 
       "@type": "textOffsetSelector", 
       "beginOffset": 219
-    }, 
-    {
-      "rdf:rest": [
-        {
-          "@list": []
-        }, 
-        {
-          "@id": "_:N63ae304459874940be51af4956b45edd"
-        }
-      ], 
-      "label": "Physical sequence", 
-      "@id": "_:N3b197feea01a46bda6eda25aecf110fa", 
-      "@type": [
-        "sc:Sequence", 
-        "rdf:List"
-      ], 
-      "first": "_:N27b9f44f2ef348cb82cc779c15d17ebf"
     }, 
     {
       "width": 5078, 
@@ -644,30 +508,168 @@
     }, 
     {
       "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:Nfc187d19c5a243398cf02f671662d822", 
+      "@id": "_:N11a97b61eb5c4444b0e909c91a25313f", 
       "@type": "oa:SpecificResource", 
-      "selector": "_:Ne616b51a89f44890a4714d46762f296a"
+      "selector": "_:N2cf5005234e64d81840e29a1e44c7650"
     }, 
     {
-      "full": "_:N27b9f44f2ef348cb82cc779c15d17ebf", 
-      "@id": "_:Nf75a10c673cf435c8215e5a24385a585", 
-      "@type": "oa:SpecificResource", 
-      "selector": "_:N2166329546ca4f489230e130c883a3da"
+      "rdf:rest": {
+        "@list": []
+      }, 
+      "@id": "_:N1f846a17c1fb4436bdd1cb3017a95bbf"
     }, 
     {
-      "sga:textAlignment": "center", 
-      "@id": "_:N2fcef64a167f4f8a930b89b8e201fbd6", 
+      "on": "_:Ne8f8a21b2e074b99af5921c512307df7", 
+      "align": "center", 
+      "@id": "_:Ne560482244c548b4a21b7eeda2e78b73", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "endOffset": 241, 
+      "@id": "_:N2cf5005234e64d81840e29a1e44c7650", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 228
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N552ba8a5690e420ea04c04a2507a09a1", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N0fd1c79ca0c0438e8c821a04b9a8f70e"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Ne1172f279d9c4e889cc0e713a3364786", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N7f2fdbb66a2043a686a0a5b0aa1e5454"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N0286107e7e82410a8d80c1f6cfc97f73", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nde002ac18d7541238ad3b47c37ab2c42"
+    }, 
+    {
+      "on": "_:N3368ab5b9ed1467592505c2218cf4364", 
+      "align": "center", 
+      "@id": "_:Nd4c2caa8930c4e61b3e368feb805d96e", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "indent": 3, 
+      "@id": "_:N10ee1e97a08a42499b71f5043f308c54", 
       "@type": [
         "oax:Highlight", 
         "sga:LineAnnotation"
       ], 
-      "on": "_:N6ab94d07f0e04359b6df6d2a7058c706"
+      "on": "_:N0286107e7e82410a8d80c1f6cfc97f73"
+    }, 
+    {
+      "ore:aggregates": {
+        "@id": "_:N707e9d097d1548b3bb8921f45264d277"
+      }, 
+      "@id": "_:N4428eafb09b549d2b4344c02e9e2e33d", 
+      "@type": [
+        "sc:Layer", 
+        "sc:AnnotationList"
+      ], 
+      "label": "Zones"
+    }, 
+    {
+      "on": "_:N231d690cec244412bc63624162bcbf21", 
+      "align": "center", 
+      "@id": "_:N8750d05061da45d0bfa04e78447be6cf", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "endOffset": 43, 
+      "@id": "_:N81375bfd9ee14ebf988e1d6fe32247a0", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 33
+    }, 
+    {
+      "ore:aggregates": [
+        {
+          "@id": "_:N5f3344720c2746e18bf094f293072204"
+        }, 
+        {
+          "@id": "_:N4428eafb09b549d2b4344c02e9e2e33d"
+        }
+      ], 
+      "sc:hasImageAnnotations": {
+        "@id": "_:N965701a146a2438aad6e3e17959ef77c"
+      }, 
+      "attribution": "Mary Shelley", 
+      "dc:title": "Frankenstein", 
+      "sc:dateLabel": "18 April-[?13] May 1817", 
+      "sc:hasSequences": {
+        "@id": "_:N1b5bd49798d04c7e879baf2b610dd183"
+      }, 
+      "sc:agentLabel": "Mary Shelley", 
+      "sga:stateLabel": "Fair copy", 
+      "sc:hasCanvases": {
+        "@id": "_:N22ddd34c3e2a4d0484833ae0addb994d"
+      }, 
+      "label": "Fair-Copy Notebook C1", 
+      "@id": "http://localhost:8000/demo/a.jsonld", 
+      "@type": "sc:Manifest", 
+      "sc:service": {
+        "@id": "http://dev.shelleygodwinarchive.org/sc/oxford/frankenstein/notebook/c1"
+      }
     }, 
     {
       "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
-      "@id": "_:Nb3a415a45bd345ea882dce4f7f75b665", 
+      "@id": "_:Na476cf2b901c43e4a2d52743396db0fc", 
       "@type": "oa:SpecificResource", 
-      "selector": "_:N3d09b11e71e747ed9c920722aa07150a"
+      "selector": "_:Nade2e2e2179a4422ac8f89f8515de890"
+    }, 
+    {
+      "endOffset": 28, 
+      "@id": "_:N7052393b793d4f65a4178d6817fdab54", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 24
+    }, 
+    {
+      "on": "_:Nd38a908dea88487f9c9a5fd788277ed5", 
+      "align": "center", 
+      "@id": "_:N03264ac5c85c462d94cf7deadd4d69cf", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "sga:shelfmarkLabel": "MS. Abinger c. 56", 
+      "sga:folioLabel": "i recto", 
+      "label": "i recto", 
+      "width": 5078, 
+      "sga:handLabel": "Mary Shelley", 
+      "height": 7304, 
+      "@id": "_:N22ddd34c3e2a4d0484833ae0addb994d", 
+      "@type": "sc:Canvas"
+    }, 
+    {
+      "on": "_:Ndcb8b3d04739497d8dfbe1073cf32d2f", 
+      "align": "center", 
+      "@id": "_:N4a9eb0a316124e9a92225c32c4c7b285", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "full": "_:N22ddd34c3e2a4d0484833ae0addb994d", 
+      "@id": "_:Nb1eaccf15fd949ddb5f16fff07f290b0", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Ne958fc5102f04df8b9bc28a254b6272e"
     }
   ]
 }
