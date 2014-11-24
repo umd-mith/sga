@@ -26,7 +26,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             @set
               data : data.documentElement.textContent
             @trigger "sync"
-          error: (e) -> 
+          error: (e) ->
             throw new Error "Could not load text data."
       else
         # Call the default sync method for other sync methods
@@ -47,7 +47,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     idAttribute : "@id"
 
   class Zone extends Backbone.Model
-    idAttribute : "@id"  
+    idAttribute : "@id"
 
   class Annotation extends Backbone.Model
     idAttribute : "@id"
@@ -114,10 +114,10 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           dataType: 'json'
           #beforeSend: (jqXHR) ->
           #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
-          success: (data) => 
+          success: (data) =>
             importManifest data, @
             @trigger 'sync'
-          error: (e) -> 
+          error: (e) ->
             throw new Error "Could not load the manifest"
       else
         # Call the default sync method for other sync methods
@@ -132,7 +132,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     idAttribute : "@id"
 
   class CanvasesMeta extends Backbone.Collection
-    model: CanvasMeta  
+    model: CanvasMeta
 
   class CanvasData extends Backbone.Model
     idAttribute : "@id"
@@ -161,7 +161,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
       @_reset()
       @add @models, _.extend({silent: true}, options)
-      if !options.silent 
+      if !options.silent
         @trigger 'reset', @, options
       @
 
@@ -204,11 +204,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         
         if "sc:Manifest" in types
           manifest.set node
+          images = []
+          for image in node["sc:hasImageAnnotations"]
+            images.push image
+          manifest.set "images", images
 
         if "sc:Sequence" in types
-          canvases = [node["first"]["@id"]]
-          for canvas in node["rest"]
-            canvases.push canvas["@id"]
+          canvases = [node["first"]]
+          canvases = canvases.concat node["rest"]
+
           manifest.sequences.add
             "@id"      : node["@id"]
             "@type"    : node["@type"]
@@ -223,7 +227,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
   importCanvas = (canvas, manifest) ->
     # This method imports manifest level data and metadata   
-
+   
     extractSpatialConstraint = (model, id) ->
       return unless id?
       constraint = graph[id]
@@ -242,8 +246,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           model.set
             beginOffset : parseInt constraint["beginOffset"]
         if constraint["endOffset"]?
-          model.set 
+          model.set
             endOffset : parseInt constraint["endOffset"]
+
       # TODO: handle other shape constraints (rectangles, ellipses)
       # TODO: handle music notation constraints
       # TODO: handle time constraints for video/sound annotations
@@ -262,7 +267,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         if target["oa:hasClass"]?
           content.set
             cssclass : target["oa:hasClass"]
-        extractSpatialConstraint model, target["selector"]["@id"]
+        extractSpatialConstraint model, target["selector"]
       else
         model.set
           target : id
@@ -273,7 +278,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       #textSource.addFile(body.oahasSource)
       model.set
         source : body["full"]
-      extractSpatialConstraint model, body["selector"]["@id"]
+      extractSpatialConstraint model, body["selector"]
 
     # Main code for importCanvas()
 
@@ -300,13 +305,12 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           body = node["resource"]
 
           # Get content annotations
-          if "sc:ContentAnnotation" in types and target["full"] and target["full"]["@id"] == canvas_id
-
+          if "sc:ContentAnnotation" in types and graph[target]["full"] == canvas_id
             content = new Content
             content.set graph[id]
 
-            extractTextTarget content, target["@id"]
-            extractTextBody content, body["@id"]
+            extractTextTarget content, target
+            extractTextBody content, body
 
             # Adding triggers the view. Alternatively, we could have the view listen to change,
             # but we trigger change too often by setting attributes gradually. 
@@ -318,7 +322,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             zone = new Zone
             canvas.zones.add zone
 
-            extractSpatialConstraint zone, target["@id"]
+            extractSpatialConstraint zone, target
             zone.set node
 
       for id, node of graph
@@ -330,7 +334,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           body = node["resource"]
 
           # Get images
-          if "oa:Annotation" in types and target == canvas_id
+          if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
             image = new Image
             image.set graph[node["resource"]]
 
@@ -351,12 +355,12 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   sources.push s
               
               # filter annotations and store only those relevant to the current canvas
-              if target["full"] in sources
+              if graph[target]["full"] in sources
                 annotation = new Annotation
                 canvas.SGAannos.add annotation
 
-                extractTextTarget annotation, target["@id"]
-                annotation.set 
+                extractTextTarget annotation, target
+                annotation.set
                   "@id"   : node["@id"]
                   "@type" : node["@type"]
 
@@ -417,7 +421,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
             pushTextItem = (classes, css, contentAnno, start, end, indent=null, aling=null) ->
               titem = new ParsedAnno
-              titem.set 
+              titem.set
                 type: classes
                 css: css.join(" ")
                 text: text[start ... end]
@@ -444,7 +448,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   css.push annocss
 
               classes.push "Text" if classes.length == 0
-
+              
               makeTextItems start, end, classes, css
 
             #
@@ -457,7 +461,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             #
             makeTextItems = (start, end, classes, css, indent, align) ->
               canvas.contents.forEach (c,i) ->
-                console.log c
                 beginOffset = c.get "beginOffset"
                 endOffset = c.get "endOffset"
                 if start <= endOffset and end >= beginOffset
