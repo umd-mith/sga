@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0028" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0028" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0028.jp2"/>
   <zone type="main">
     <line rend="indent1">All things confess his strength&#x2014;<mod>
@@ -12,35 +12,48 @@
     <line rend="indent1">Of marble &amp; of colour his dreams pass</line>
     <line><mod>
         <del rend="strikethrough">And Mothers gazing</del>
-        <add place="superlinear">Bright threads, whence mothers</add>
+        <add place="superlinear">Bright threads, <mod>
+            <del rend="overwritten"><unclear reason="illegible">r</unclear></del>
+            <add place="intralinear">w</add>
+          </mod>hence mothers</add>
       </mod> weave the robes their children wear;</line>
     <line rend="indent1">Language is a perpetual Orphic song</line>
     <line><mod>
-        <add place="intralinear">Ruling</add>
-        <del rend="strikethrough">Which rules</del>
+        <add xml:id="e1-0028.06">Ruling</add>
+        <del rend="strikethrough" next="#e1-0028.06">Which rules</del>
       </mod> with d&#xE6;dal harmony, <mod>
         <del rend="strikethrough">the</del>
         <add place="superlinear">a</add>
       </mod> throng</line>
     <line>Of thoughts &amp; forms, which else senseless &amp; shapeless were</line>
     <line rend="indent1">The Lightning is his slave; Heavens utmost deep</line>
-    <line rend="indent1">Gives up her stars, &amp; like a flock of sheep</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">H</del>
+        <add place="intralinear">G</add>
+      </mod>ives up her stars, &amp; like a flock of sheep</line>
     <line>They pass before his eye, are numbered, &amp; roll on!</line>
     <line rend="indent1">The Tempest is his steed,&#x2014;he strides the air!</line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0028.01"/>And the abyss shouts from her
-      depth</line>
-    <line rend="right">laid bare<anchor xml:id="e1-0028.01"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0028.01"/>
+    <line rend="indent1">And the abyss shouts from her <unclear reason="illegible"
+      >d</unclear>epth</line>
+    <line rend="right">laid bare</line>
+    <anchor xml:id="e1-0028.01"/>
     <line><del rend="unmarked" instant="true">Wh</del><del rend="strikethrough" instant="true">at
         secrets hast thou Heaven</del><del instant="true" rend="ummarked">?</del></line>
-    <line><milestone unit="tei:l" spanTo="#e1-0028.02"/>Heaven, hast thou secrets? Man unveils me,
-      I</line>
-    <line rend="right">have none<anchor xml:id="e1-0028.02"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0028.02"/>
+    <line>Heaven, hast thou secrets? Man unveils me, I</line>
+    <line rend="right">have none</line>
+    <anchor xml:id="e1-0028.02"/>
     <milestone unit="tei:speaker" spanTo="#e1-0028.05"/>
     <line rend="center">The Moon</line>
     <anchor xml:id="e1-0028.05"/>
-    <line rend="indent1">The shadow of white Death hath past</line>
+    <line rend="indent1">The shadow of white Death ha<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">th</add>
+      </mod> past</line>
     <line rend="indent1">From my path in Heaven at last,</line>
     <line>A clinging shroud of solid frost &amp; sleep&#x2014;</line>
-    <line rend="indent1">And through my newly-woven bowers</line>
+    <line rend="indent1">And through my newly-woven <unclear reason="illegible"
+      >b</unclear>owers</line>
   </zone>
 </surface>

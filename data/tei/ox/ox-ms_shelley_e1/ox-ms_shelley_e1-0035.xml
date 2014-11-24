@@ -1,35 +1,58 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0035" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0035" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0035.jp2"/>
+  <zone type="library">
+    <line rend="right">17</line>
+  </zone>
+  <zone type="pagination">
+    <line rend="center">2</line>
+  </zone>
   <zone type="main">
-    <line>17</line>
-    <line>2</line>
     <line>excell the beautiful in beauty; &amp; secondly</line>
-    <line>a familiarity with <del rend="strikethrough">the best</del></line>
-    <line>many &amp; excellent</line>
-    <line>especially</line>
-    <line>poets &amp; with Homer the most godlike</line>
-    <line>^</line>
-    <line>among them</line>
-    <line>&amp; admirable <del rend="strikethrough">of poets</del>, &amp; your emulation</line>
-    <line>is [greater], <del rend="strikethrough">to fa</del> not merely to remember</line>
+    <line>a familiarity with <mod>
+        <del rend="strikethrough">the best</del>
+        <add place="sublinear">many &amp; excellent</add>
+      </mod></line>
+    <line/>
+    <line>poets &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">especially</add>
+      </mod> with Homer the most godlike</line>
+    <line>&amp; admirable <mod>
+        <del rend="strikethrough">of poets</del>
+        <add place="superlinear">amo<mod>
+            <del rend="overwritten">gs</del>
+            <add place="intralinear">ng</add>
+          </mod> th<mod>
+            <del rend="overwritten">y</del>
+            <add place="superlinear">em</add>
+          </mod></add>
+      </mod>, &amp; your emulation</line>
+    <line>is <unclear reason="illegible">greater</unclear>, <del rend="strikethrough">to fa</del>
+      not merely to remember</line>
     <line>the verses, but to fathom the deepest</line>
     <line>meaning of this king of melody: for</line>
-    <line>rhap</line>
-    <line>i<del rend="strikethrough">t is the office of the</del> [?<del rend="strikethrough">rap</del>] he is no</line>
+    <line><add place="superlinear">rhap</add><del rend="unmarked">i</del><del rend="strikethrough">t
+        is the office of the</del>
+      <del rend="strikethrough"><unclear reason="illegible">rap</unclear></del> he is no</line>
     <line>rhapsodist who does not understand</line>
     <line>the whole <del rend="strikethrough">purpose &amp;</del> scope &amp; intention</line>
     <line>of the poet, &amp; is not capable of</line>
-    <line>interpreting it to his audience.-- This</line>
+    <line>interpreting it to his audience.&#8212; This</line>
     <line>he cannot do without a full compre</line>
     <line>hension of the meaning of his author;</line>
     <line>worthy indeed of envy are those who</line>
-    <line>[<del rend="strikethrough">thus</del>] can [<del rend="strikethrough">attain it] S.</del> fulfill these</line>
-    <line>conditions!-- You speak truly {o}</line>
-    <line>Socrates; and indeed I have expended</line>
+    <line><del rend="strikethrough"><unclear reason="illegible">thus</unclear></del> can <del
+        rend="strikethrough"><unclear reason="illegible">attain it S.</unclear></del> fulfill
+      these</line>
+    <line>conditions!&#8212; You speak truly <unclear reason="illegible">o</unclear></line>
+    <line>Socrates<mod>
+        <del rend="overwritten">:</del>
+        <add place="intralinear">;</add>
+      </mod> and indeed I have expended</line>
     <line><del rend="strikethrough">upon this</del> my principal study upon this</line>
     <line>circumstance of the art; I flatter myself</line>
     <line>that no man living <del rend="strikethrough">can</del> excels me in</line>
