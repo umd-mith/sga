@@ -1,0 +1,659 @@
+{
+  "@context": {
+    "conformsTo": {
+      "@id": "dcterms:conformsTo", 
+      "@type": "@id"
+    }, 
+    "foaf": "http://xmlns.com/foaf/0.1/", 
+    "motivation": {
+      "@id": "oa:motivatedBy", 
+      "@type": "@id"
+    }, 
+    "oax": "http://www.w3.org/ns/openannotation/extension/", 
+    "suffix": "oa:suffix", 
+    "encoding": "cnt:characterEncoding", 
+    "tile_height": {
+      "@id": "iiif:tileHeight", 
+      "@type": "xsd:integer"
+    }, 
+    "within": {
+      "@id": "dcterms:isPartOf", 
+      "@type": "@id"
+    }, 
+    "serializedAt": "oa:serializedAt", 
+    "rest": {
+      "@id": "rdf:rest", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "height": {
+      "@id": "exif:height"
+    }, 
+    "sga": "http://www.shelleygodwinarchive.org/ns1#", 
+    "prefix": "oa:prefix", 
+    "tile_width": {
+      "@id": "iiif:tileWidth", 
+      "@type": "xsd:integer"
+    }, 
+    "oa": "http://www.w3.org/ns/openannotation/core/", 
+    "sequences": {
+      "@id": "sc:hasSequences", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "images": {
+      "@id": "sc:hasImageAnnotations", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "skos": "http://www.w3.org/2004/02/skos/core#", 
+    "otherContent": {
+      "@id": "sc:hasLists", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "canvases": {
+      "@id": "sc:hasCanvases", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "cnt": "http://www.w3.org/2011/content#", 
+    "ore": "http://www.openarchives.org/ore/terms/", 
+    "end": "oa:end", 
+    "beginOffset": {
+      "@id": "oax:begin"
+    }, 
+    "exif": "http://www.w3.org/2003/12/exif/ns#", 
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+    "viewingHint": "sc:viewingHint", 
+    "hasScope": {
+      "@id": "oa:hasScope", 
+      "@type": "@id"
+    }, 
+    "endOffset": {
+      "@id": "oax:end"
+    }, 
+    "when": "oa:when", 
+    "label": "rdfs:label", 
+    "dctypes": "http://purl.org/dc/dcmitype/", 
+    "stylesheet": {
+      "@id": "oa:styledBy", 
+      "@type": "@id"
+    }, 
+    "dcterms": "http://purl.org/dc/terms/", 
+    "structures": {
+      "@id": "sc:hasRanges", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "start": "oa:start", 
+    "resources": {
+      "@id": "sc:hasAnnotations", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "iiif": "http://library.stanford.edu/iiif/image-api/ns/", 
+    "profile": {
+      "@id": "dcterms:conformsTo", 
+      "@type": "@id"
+    }, 
+    "annotatedBy": {
+      "@id": "oa:annotatedBy", 
+      "@type": "@id"
+    }, 
+    "xsd": "http://www.w3.org/2001/XMLSchema#", 
+    "full": {
+      "@id": "oa:hasSource", 
+      "@type": "@id"
+    }, 
+    "attribution": "sc:attributionLabel", 
+    "description": "dc:description", 
+    "format": "dc:format", 
+    "viewingDirection": "sc:viewingDirection", 
+    "chars": "cnt:chars", 
+    "style": "oa:styleClass", 
+    "dc": "http://purl.org/dc/elements/1.1/", 
+    "textOffsetSelector": {
+      "@id": "oax:TextOffsetSelector", 
+      "@type": "@id"
+    }, 
+    "hasState": {
+      "@id": "oa:hasState", 
+      "@type": "@id"
+    }, 
+    "seeAlso": {
+      "@id": "sc:hasRelatedDescription", 
+      "@type": "@id"
+    }, 
+    "serializedBy": {
+      "@id": "oa:serializedBy", 
+      "@type": "@id"
+    }, 
+    "selector": {
+      "@id": "oa:hasSelector", 
+      "@type": "@id"
+    }, 
+    "exact": "oa:exact", 
+    "name": "foaf:name", 
+    "service": {
+      "@id": "sc:hasRelatedService", 
+      "@type": "@id"
+    }, 
+    "on": {
+      "@id": "oa:hasTarget", 
+      "@type": "@id"
+    }, 
+    "resource": {
+      "@id": "oa:hasBody", 
+      "@type": "@id"
+    }, 
+    "scale_factors": {
+      "@id": "iiif:scaleFactor", 
+      "@container": "@list"
+    }, 
+    "license": {
+      "@id": "dcterms:license", 
+      "@type": "@id"
+    }, 
+    "default": {
+      "@id": "oa:default", 
+      "@type": "@id"
+    }, 
+    "painting": "sc:painting", 
+    "bytes": "cnt:bytes", 
+    "value": "rdf:value", 
+    "annotatedAt": "oa:annotatedAt", 
+    "item": {
+      "@id": "oa:item", 
+      "@type": "@id"
+    }, 
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+    "language": "dc:language", 
+    "qualities": {
+      "@id": "iiif:qualities", 
+      "@container": "@list"
+    }, 
+    "formats": {
+      "@id": "iiif:formats", 
+      "@container": "@list"
+    }, 
+    "sc": "http://www.shared-canvas.org/ns/", 
+    "cachedSource": {
+      "@id": "oa:cachedSource", 
+      "@type": "@id"
+    }, 
+    "metadata": {
+      "@id": "sc:metadataLabels", 
+      "@type": "@id", 
+      "@container": "@list"
+    }, 
+    "mbox": "foaf:mbox", 
+    "width": {
+      "@id": "exif:width"
+    }, 
+    "equivalentTo": {
+      "@id": "oa:equivalentTo", 
+      "@type": "@id"
+    }, 
+    "first": {
+      "@id": "rdf:first", 
+      "@type": "@id"
+    }
+  }, 
+  "@graph": [
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N9329633ad82a4b05b54c2e6b18aa06a8", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N5f7fe80187674f4382777dd6b20a1856"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N254c608477134ec2b5262af6255fbdbb", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nb15a633c6bdc4fe194a7049c7fe054f0"
+    }, 
+    {
+      "endOffset": 187, 
+      "@id": "_:Nef90bceb3fba44a9b68ad4f032290a3f", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 179
+    }, 
+    {
+      "ore:aggregates": [
+        {
+          "@id": "_:N62758f58d2724f23a75eda2fd683ea19"
+        }, 
+        {
+          "@id": "_:N0476ba2aa1a144a2acb0a98d6602e088"
+        }
+      ], 
+      "sc:hasImageAnnotations": {
+        "@id": "_:N39ce952575684356b92712556f42e8c7"
+      }, 
+      "attribution": "Mary Shelley", 
+      "dc:title": "Frankenstein", 
+      "sc:dateLabel": "18 April-[?13] May 1817", 
+      "sc:hasSequences": {
+        "@id": "_:N00df2bf1c51a4674aabd9de0c20bbe48"
+      }, 
+      "sc:agentLabel": "Mary Shelley", 
+      "sga:stateLabel": "Fair copy", 
+      "sc:hasCanvases": {
+        "@id": "_:N436979fb698143628697dfef848cce62"
+      }, 
+      "label": "Fair-Copy Notebook C1", 
+      "@id": "http://localhost:8000/demo/a.jsonld", 
+      "@type": "sc:Manifest", 
+      "sc:service": {
+        "@id": "http://dev.shelleygodwinarchive.org/sc/oxford/frankenstein/notebook/c1"
+      }
+    }, 
+    {
+      "on": "_:Ne3302c114eca4c589f0e73f2c30815db", 
+      "@id": "_:N94fc131ced6d4bf39abb612cf8d81c4f", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "rdf:rest": [
+        {
+          "@list": []
+        }, 
+        {
+          "@id": "_:Nf2b9286d9b0f419491fb067ca70b2e4b"
+        }
+      ], 
+      "label": "Physical sequence", 
+      "@id": "_:N00df2bf1c51a4674aabd9de0c20bbe48", 
+      "@type": [
+        "rdf:List", 
+        "sc:Sequence"
+      ], 
+      "first": "_:N436979fb698143628697dfef848cce62"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N7c1de43a60a8454bae3b8546fa561edd", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nef90bceb3fba44a9b68ad4f032290a3f"
+    }, 
+    {
+      "on": "_:N254c608477134ec2b5262af6255fbdbb", 
+      "@id": "_:N62a57cd6f57e404197e275971b253964", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "on": "_:N7c1de43a60a8454bae3b8546fa561edd", 
+      "@id": "_:N91b6a0987aed48ad90acee7f5d04b7c9", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "rdf:rest": {
+        "@list": []
+      }, 
+      "@id": "_:Nf2b9286d9b0f419491fb067ca70b2e4b"
+    }, 
+    {
+      "on": "_:Nb0fbc0f3fd7f442eb9b3cac7b6ea6ada", 
+      "@id": "_:N68d82c26a91a4d6e8fa0705ad2eb9a0f", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N5215fa5d627c45228896d222960f1557", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N03a2d2472a2147b7bc44b89262b3cbb2"
+    }, 
+    {
+      "on": "_:N690c0921cbad4046bebaf4db194cfeef", 
+      "@id": "_:Nc7d5b187539f45e28e08b5aca87109a1", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N9878f97ce522450eb37fc920eff9bd66", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nc403803a91b54ba2a495febf57da0c63"
+    }, 
+    {
+      "endOffset": 28, 
+      "@id": "_:N6881409e57924d3e86e0ff21f58bee41", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 24
+    }, 
+    {
+      "on": "_:Ne640dd5500694cc2893c66dce3f0db91", 
+      "@id": "_:N89f393465ebb4cc1b4d84a542b1bc365", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "endOffset": 174, 
+      "@id": "_:N8438cb91068c43a99b542d1708a31fd0", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 157
+    }, 
+    {
+      "on": "_:Nbb3bf4e6b8d845909e7581f540d7654b", 
+      "@id": "_:N197d7ae369604c40a566ffc5d1eaf6f0", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "endOffset": 112, 
+      "@id": "_:Nb15a633c6bdc4fe194a7049c7fe054f0", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 102
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Na48c244f0d5a420786a4088d45f72d0f", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N8438cb91068c43a99b542d1708a31fd0"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Ne3302c114eca4c589f0e73f2c30815db", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Na8b163b8c06c4b1b947e0be3ad6ced7c"
+    }, 
+    {
+      "endOffset": 241, 
+      "@id": "_:Ne4567a3703864556b253b1e966306e6a", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 228
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N99341e14ffd447578aab1f70e8731b8d", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nf5a9cad8299042769f76dead79b2e7d3"
+    }, 
+    {
+      "on": "_:Nd8b65cdc62b44476a9d00a21b6f602b1", 
+      "@id": "_:Ned9ac9b5dfac43b4a5fa07aaf359656e", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N690c0921cbad4046bebaf4db194cfeef", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N8e62c52e26394f2ebb13aaff6f6c1b33"
+    }, 
+    {
+      "on": "_:Na48c244f0d5a420786a4088d45f72d0f", 
+      "@id": "_:Nc2a7790bb95c4d94897f631c63ff9333", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "sga:shelfmarkLabel": "MS. Abinger c. 56", 
+      "sga:folioLabel": "i recto", 
+      "label": "i recto", 
+      "width": 5078, 
+      "sga:handLabel": "Mary Shelley", 
+      "height": 7304, 
+      "@id": "_:N436979fb698143628697dfef848cce62", 
+      "@type": "sc:Canvas"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Nb0fbc0f3fd7f442eb9b3cac7b6ea6ada", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Ne4567a3703864556b253b1e966306e6a"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N333af765315041cbb577a002a1fc6cea", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N474cc175f5744e8dab9d7aa855df2595"
+    }, 
+    {
+      "resource": "http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0001.jp2", 
+      "@id": "_:N39ce952575684356b92712556f42e8c7", 
+      "@type": [
+        "sc:ContentAnnotation", 
+        "oa:Annotation"
+      ], 
+      "on": "_:N436979fb698143628697dfef848cce62"
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:N5357319162674d9fa7c386cb1ad15810", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N9b67a9accdc84e2cbc2de9e823e978a7"
+    }, 
+    {
+      "full": "_:N436979fb698143628697dfef848cce62", 
+      "@id": "_:N02972445a60a47479fa4dd0add0e2442", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N033f5d70249e4325af777ef2a4d8d210"
+    }, 
+    {
+      "endOffset": 97, 
+      "@id": "_:Nc403803a91b54ba2a495febf57da0c63", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 85
+    }, 
+    {
+      "on": "_:N5215fa5d627c45228896d222960f1557", 
+      "@id": "_:Nff67a76cdd6c4e89bc0be0a079af7204", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "on": "_:N333af765315041cbb577a002a1fc6cea", 
+      "@id": "_:Nad2a2f69c3824683b0668cba4b125cfc", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "ore:aggregates": {
+        "@id": "_:N03c6009a337f44f0803bcf6e9d5f59d7"
+      }, 
+      "@id": "_:N0476ba2aa1a144a2acb0a98d6602e088", 
+      "@type": [
+        "sc:AnnotationList", 
+        "sc:Layer"
+      ], 
+      "label": "Zones"
+    }, 
+    {
+      "endOffset": 80, 
+      "@id": "_:N313ce3a773854e1e809fd509f05ef500", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 63
+    }, 
+    {
+      "endOffset": 43, 
+      "@id": "_:Nf5a9cad8299042769f76dead79b2e7d3", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 33
+    }, 
+    {
+      "endOffset": 223, 
+      "@id": "_:Na8b163b8c06c4b1b947e0be3ad6ced7c", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 219
+    }, 
+    {
+      "resource": "_:N9329633ad82a4b05b54c2e6b18aa06a8", 
+      "@id": "_:N03c6009a337f44f0803bcf6e9d5f59d7", 
+      "@type": "sc:ContentAnnotation", 
+      "on": "_:N02972445a60a47479fa4dd0add0e2442"
+    }, 
+    {
+      "endOffset": 19, 
+      "@id": "_:N474cc175f5744e8dab9d7aa855df2595", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 16
+    }, 
+    {
+      "ore:aggregates": [
+        {
+          "@id": "_:N197d7ae369604c40a566ffc5d1eaf6f0"
+        }, 
+        {
+          "@id": "_:Ned9ac9b5dfac43b4a5fa07aaf359656e"
+        }, 
+        {
+          "@id": "_:N52dbecfbcc244032994bbd7086166e66"
+        }, 
+        {
+          "@id": "_:N62a57cd6f57e404197e275971b253964"
+        }, 
+        {
+          "@id": "_:N2ce9cdb9cb6143a59f32a2276623b90e"
+        }, 
+        {
+          "@id": "_:Nc7d5b187539f45e28e08b5aca87109a1"
+        }, 
+        {
+          "@id": "_:N89f393465ebb4cc1b4d84a542b1bc365"
+        }, 
+        {
+          "@id": "_:N68d82c26a91a4d6e8fa0705ad2eb9a0f"
+        }, 
+        {
+          "@id": "_:Nc2a7790bb95c4d94897f631c63ff9333"
+        }, 
+        {
+          "@id": "_:Nf1160f59bf3f48558635a023ba413eb7"
+        }, 
+        {
+          "@id": "_:Nff67a76cdd6c4e89bc0be0a079af7204"
+        }, 
+        {
+          "@id": "_:Nad2a2f69c3824683b0668cba4b125cfc"
+        }, 
+        {
+          "@id": "_:N94fc131ced6d4bf39abb612cf8d81c4f"
+        }, 
+        {
+          "@id": "_:N91b6a0987aed48ad90acee7f5d04b7c9"
+        }
+      ], 
+      "sc:forMotivation": {
+        "@id": "sc:painting"
+      }, 
+      "@id": "_:N62758f58d2724f23a75eda2fd683ea19", 
+      "@type": [
+        "sc:AnnotationList", 
+        "sc:Layer"
+      ], 
+      "label": "Transcription"
+    }, 
+    {
+      "width": 5078, 
+      "height": 7304, 
+      "@id": "http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0001.jp2", 
+      "service": "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver", 
+      "format": "image/jp2"
+    }, 
+    {
+      "@id": "_:N033f5d70249e4325af777ef2a4d8d210", 
+      "@type": "oa:FragmentSelector", 
+      "value": "xywh:0,0,7304,5078"
+    }, 
+    {
+      "endOffset": 19, 
+      "@id": "_:N5f7fe80187674f4382777dd6b20a1856", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 16
+    }, 
+    {
+      "endOffset": 58, 
+      "@id": "_:Nedc326cdff8649e882b923049ffdff3c", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 48
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Nbb3bf4e6b8d845909e7581f540d7654b", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N313ce3a773854e1e809fd509f05ef500"
+    }, 
+    {
+      "on": "_:N9878f97ce522450eb37fc920eff9bd66", 
+      "@id": "_:N52dbecfbcc244032994bbd7086166e66", 
+      "@type": [
+        "oax:Highlight", 
+        "sga:LineAnnotation"
+      ]
+    }, 
+    {
+      "on": "_:N99341e14ffd447578aab1f70e8731b8d", 
+      "@id": "_:Nf1160f59bf3f48558635a023ba413eb7", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "endOffset": 139, 
+      "@id": "_:N03a2d2472a2147b7bc44b89262b3cbb2", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 117
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Ne640dd5500694cc2893c66dce3f0db91", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:N6881409e57924d3e86e0ff21f58bee41"
+    }, 
+    {
+      "endOffset": 152, 
+      "@id": "_:N9b67a9accdc84e2cbc2de9e823e978a7", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 144
+    }, 
+    {
+      "endOffset": 214, 
+      "@id": "_:N8e62c52e26394f2ebb13aaff6f6c1b33", 
+      "@type": "textOffsetSelector", 
+      "beginOffset": 192
+    }, 
+    {
+      "on": "_:N5357319162674d9fa7c386cb1ad15810", 
+      "@id": "_:N2ce9cdb9cb6143a59f32a2276623b90e", 
+      "@type": [
+        "sga:LineAnnotation", 
+        "oax:Highlight"
+      ]
+    }, 
+    {
+      "full": "http://localhost:8000/data/tei/ox/ox-ms_abinger_c56/ox-ms_abinger_c56-0001.xml", 
+      "@id": "_:Nd8b65cdc62b44476a9d00a21b6f602b1", 
+      "@type": "oa:SpecificResource", 
+      "selector": "_:Nedc326cdff8649e882b923049ffdff3c"
+    }
+  ]
+}
