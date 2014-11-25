@@ -10,13 +10,14 @@
     <line>Through the clouds ere they divide them</line>
     <line>And this atmosphere divinest</line>
     <line>Shrouds thee whereso'er thou shinest</line>
-    <line><del rend="strikethrough">Lamp of Earth<mod>
-          <del rend="unmarked">,</del>
-          <add place="intralinear">!</add>
-        </mod> where'er thou movest</del></line>
-    <line rend="indent1">Its' <del rend="strikethrough">dim shapes are clad with
-      brightness</del></line>
-    <line><del rend="strikethrough">And the sou</del></line>
+    <delSpan spanTo="#e3-0026.01" rend="strikethrough"/>
+    <line>Lamp of Earth<mod>
+        <del rend="unmarked">,</del>
+        <add place="intralinear">!</add>
+      </mod> where'er thou movest</line>
+    <line rend="indent1">Its' dim shapes are clad with brightness</line>
+    <line>And the sou</line>
+    <anchor xml:id="e3-0026.01"/>
     <line rend="indent1">Fair are others;&#8212;none beholds thee,</line>
     <line rend="indent1">But thy voice sounds low &amp; tender</line>
     <line rend="indent1">Like the fairest &#8212;for it folds thee</line>

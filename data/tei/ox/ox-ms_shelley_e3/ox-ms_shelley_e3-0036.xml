@@ -16,8 +16,10 @@
     <line rend="indent4"><anchor xml:id="e3-0036.06"/>Let <del rend="strikethrough">loose <unclear
           reason="illegible">o</unclear></del> Hell unlock <add><metamark function="count"
           >75</metamark></add></line>
-    <line><del rend="strikethrough">Thy</del><add place="superlinear">Its</add> mounded Oceans of
-      tempestuous fire</line>
+    <line><mod>
+        <del rend="strikethrough">Thy</del>
+        <add place="superlinear">Its</add>
+      </mod> mounded Oceans of tempestuous fire</line>
     <line><del rend="strikethrough">Swallow</del> And <mod>
         <del rend="strikethrough">let</del>
         <add place="superlinear">whelm on</add>
@@ -28,11 +30,13 @@
           ai,<add><metamark function="count">80</metamark></add></line>
     <line>The elements obey me not . . . I sink . . .</line>
     <line><mod>
-        <del rend="strikethrough">Down down down down dizzily, far <del rend="strikethrough"><add
-              place="sublinear">&amp; deep</add></del></del>
-        <add place="superlinear">Dizzily down &#8212; ever, forever, down<add><metamark
-              function="count">82</metamark></add></add>
+        <del rend="strikethrough">Down down down down dizzily, far <anchor xml:id="e3-0036.09"
+          /></del>
+        <add place="superlinear">Dizzily down &#8212; ever, forever, down</add>
+        <add><metamark function="count">82</metamark></add>
       </mod></line>
+    <line rend="right"><del rend="strikethrough" next="#e3-0036.09"><add place="sublinear">&amp;
+          deep</add></del></line>
     <anchor xml:id="e3-0036.07"/>
     <line><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
     <milestone unit="tei:scene" spanTo="#e3-0036.01"/>

@@ -11,16 +11,17 @@
         <del rend="strikethrough">forests</del>
         <add place="superlinear">mountains, woods</add>
       </mod> abysses,</line>
-    <line rend="indent1">A Paradise of wildernesses<retrace cause="clarify">,</retrace></line>
-    <line rend="indent1">Till like one in slumber bound</line>
+    <line rend="indent2">A Paradise of wildernesses<retrace cause="clarify">,</retrace></line>
+    <line rend="indent2">Till like one in slumber bound</line>
     <line>Borne to the Ocean, I float, down, around,</line>
     <line>Into a Sea profound, of ever-<mod>
         <del rend="strikethrough">flowing</del>
         <add place="sublinear">spreading</add>
       </mod>sound</line>
-    <line rend="indent1">Meanwhile thy Spirit lifts its pinions</line>
-    <line rend="indent1">In Music's most serene dominions</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0029.01"/>Catching the winds that fan that</line>
+    <line rend="indent2">Meanwhile thy Spirit lifts its pinions</line>
+    <line rend="indent2">In Music's most serene dominions</line>
+    <milestone unit="tei:l" spanTo="#e3-0029.01"/>
+    <line>Catching the winds that fan that</line>
     <line rend="right">happy Heaven</line>
     <anchor xml:id="e3-0029.01"/>
     <line rend="indent1">And we sail on, away, afar,</line>
@@ -36,8 +37,8 @@
     <line rend="indent1">Realms where the air we breathe is Love</line>
     <milestone unit="tei:l" spanTo="#e3-0029.02"/>
     <line>Which<del rend="strikethrough">Which</del> in the winds &amp; on the waves</line>
-    <line rend="right">doth move<unclear reason="illegible">,</unclear></line><anchor
-      xml:id="e3-0029.02"/>
+    <line rend="right">doth move<unclear reason="illegible">,</unclear></line>
+    <anchor xml:id="e3-0029.02"/>
     <line>Harmonizing this Earth with what we feel above</line>
     <milestone unit="tei:seg" spanTo="#e3-0029.04" corresp="#e3-0028.11"/>
     <line>night</line>

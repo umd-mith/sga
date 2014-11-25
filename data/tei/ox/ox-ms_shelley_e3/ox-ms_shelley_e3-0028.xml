@@ -6,8 +6,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0028.jp2"/>
   <zone type="main">
     <milestone unit="tei:act" spanTo="#e3-0028.01"/>
-    <line>Act 3.<hi rend="sup">d</hi></line><anchor xml:id="e3-0028.01"/>
-    <milestone unit="tei:stage" spanTo="#e3-0028.02"/>
+    <line>Act 3<hi rend="sup">d</hi></line>.<anchor xml:id="e3-0028.01"/>
+    <milestone unit="tei:scene" spanTo="#e3-0028.02"/>
     <line>Scene &#8212; Heaven. Jupiter on his throne</line>
     <line><add>Thetis &amp;</add> The other Deities assembled &#8212;</line>
     <anchor xml:id="e3-0028.02"/>
@@ -27,12 +27,10 @@
       </mod> been s<add place="intralinear">u</add>bdued to me &#8212; alone</line>
     <line>The soul of man, like unextinguished fire <add><metamark function="count"
         >5</metamark></add></line>
-    <milestone unit="tei:l" spanTo="#e3-0028.04"/>
-    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0028.05" xml:id="e3-0028.06"
-        />doubt<anchor xml:id="e3-0028.05"/></line>
-    <line><milestone unit="tei:seg" spanTo="#e3-0028.09" next="#e3-0028.06"/>Yet burns towards
-      Heaven with fierce reproach &amp;<anchor xml:id="e3-0028.09"/></line>
-    <anchor xml:id="e3-0028.04"/>
+    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0028.05" corresp="#e3-0028.06"
+        /><add>doubt</add><anchor xml:id="e3-0028.05"/></line>
+    <line><milestone unit="tei:seg" spanTo="#e3-0028.09"/>Yet burns towards Heaven with fierce
+      reproach &amp; <anchor xml:id="e3-0028.09"/><anchor xml:id="e3-0028.06"/></line>
     <line>Yet burns towards Heaven with fierce reproach &amp; <add place="superlinear"
       >doubt</add></line>
     <line>And lamentation &amp; reluctant prayer</line>

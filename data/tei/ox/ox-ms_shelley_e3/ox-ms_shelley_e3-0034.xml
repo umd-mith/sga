@@ -25,9 +25,10 @@
     <line>Or reassume, or hold succeeding thee ...</line>
     <line>Yet if thou wilt&#8212;as tis the destiny <add><metamark function="count"
         >60</metamark></add></line>
-    <line><milestone unit="tei:l" spanTo="#e3-0034.02"/> Of trodden worms to writhe till they
-      are</line>
-    <line rend="right">dead&#8212;</line><anchor xml:id="e3-0034.02"/>
+    <milestone unit="tei:l" spanTo="#e3-0034.02"/>
+    <line> Of trodden worms to writhe till they are</line>
+    <line rend="right">dead&#8212;</line>
+    <anchor xml:id="e3-0034.02"/>
     <line>Put forth thy might</line>
     <milestone unit="tei:speaker" spanTo="#e3-0034.03"/>
     <line rend="center">Jupiter</line>
@@ -35,8 +36,6 @@
     <line rend="indent4">Detested prodigy!</line>
     <line>Even thus beneath the deep Titanian prisons</line>
     <line>I trample thee! thou lingerest?</line>
-    <line/>
-    <line/>
     <line rend="indent4">Mercy, mercy</line>
     <line><add place="superlinear"><metamark function="count">64</metamark></add>No pity&#8212;no
       release, no respite! . . oh <add><metamark function="count">65</metamark></add></line>

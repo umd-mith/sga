@@ -22,17 +22,18 @@
     <line>With eager lips the wind oftheir own speed</line>
     <line>As if the thing they loved fled on before</line>
     <line>And now&#8212;even now they clasped it; their bright hair</line>
-    <line><del rend="strikethrough">Str</del>eams <mod>
+    <line>Streams <mod>
         <del rend="strikethrough">on the blast like meteors &amp; they</del>
         <add place="superlinear">like a comets</add>
-        <del rend="strikethrough"><add place="superlinear">scattered hair</add></del>
+        <del rend="strikethrough"><add place="superlinear">scattered hair <unclear unit="chars"
+              extent="1"/></add></del>
         <add place="superlinear"> &amp;</add>
       </mod> all</line>
     <line>Sweep onward&#8212;</line>
     <milestone unit="tei:speaker" spanTo="#e3-0014.03"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0014.03"/>
-    <line rend="indent3">These are the immortal Hours</line>
+    <line rend="indent2">These are the immortal Hours</line>
     <line>Of whom thou didst demand&#8212;one waits for thee</line>
     <milestone unit="tei:speaker" spanTo="#e3-0014.04"/>
     <line rend="center">Asia</line>
@@ -41,7 +42,7 @@
     <line><mod>
         <del rend="strikethrough">Waits with it's</del>
         <add place="superlinear"><unclear reason="illegible">Ch</unclear></add>
-    </mod><anchor xml:id="e3-0014.06"/> chariot by the craggy gulph</line>
+      </mod><anchor xml:id="e3-0014.06"/> chariot by the craggy gulph</line>
     <line>Unlike thy brethren &#8212; ghastly charioteer</line>
     <milestone unit="tei:l" spanTo="#e3-0014.05"/>
     <line>What art thou? whither wouldst thou bear me</line>
