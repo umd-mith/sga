@@ -1,6 +1,8 @@
 (function ($) { 
   'use strict';
 
-  var sc = new SGASharedCanvas.Application();
+  var manifestURL = $("#SGASharedCanvasViewer").data("manifest");
+
+  var sc = new SGASharedCanvas.Application({"manifest":manifestURL});
 
 })(jQuery);
