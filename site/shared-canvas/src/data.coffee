@@ -225,13 +225,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         if "sc:Sequence" in types
           canvases = [node["first"]]
 
-          next_node = node
-          while next_node?
-            rest = next_node["rdf:rest"]
-            rest = [ rest ] if !$.isArray rest
-            next = rest[0]["@id"]
-            next_node = id_graph[next]
-            canvases.push next_node["first"] if next_node?
+          canvases = canvases.concat(node["rest"])
+
+          # next_node = node
+          # while next_node?
+          #   rest = next_node["rdf:rest"]
+          #   rest = [ rest ] if !$.isArray rest
+          #   next = rest[0]["@id"]
+          #   next_node = id_graph[next]
+          #   canvases.push next_node["first"] if next_node?
 
           manifest.sequences.add
             "@id"      : node["@id"]
