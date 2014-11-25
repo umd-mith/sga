@@ -368,6 +368,13 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   "@id"   : node["@id"]
                   "@type" : node["@type"]
 
+                if node["sga:textIndentLevel"]?
+                  annotation.set
+                    "indent" : node["sga:textIndentLevel"]["@value"]
+                if node["sga:textAlignment"]?
+                  annotation.set
+                    "align" : node["sga:textAlignment"]
+
       # Now deal with highlights.
       # Each addition, deletion, etc., targets a scContentAnnotation
       # but we want to make sure we get any scContentAnnotation text
