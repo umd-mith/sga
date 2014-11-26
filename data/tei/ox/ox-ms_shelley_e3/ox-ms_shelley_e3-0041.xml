@@ -8,7 +8,6 @@
   <zone type="main">
     <line>And mighty suns, beyond the Night,</line>
     <line rend="indent1">Atoms of intensest light!</line>
-    <line/>
     <line>Even thy name is as a God</line>
     <line>Heaven! for thou art the abode</line>
     <line>Of that <mod>
@@ -24,7 +23,7 @@
     <milestone unit="tei:speaker" spanTo="#e3-0041.01"/>
     <line rend="center">a Remoter Voice</line>
     <anchor xml:id="e3-0041.01"/>
-    <line rend="center">&#8212;</line>
+    <line rend="center"><add><metamark>&#8212;</metamark></add></line>
     <line>Thou art but the <unclear reason="case">M</unclear>inds first <unclear reason="case"
         >C</unclear>hamber</line>
     <line>Round which its' <mod>

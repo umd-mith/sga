@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0062.jp2"/>
   <zone type="main">
     <milestone unit="tei:scene" spanTo="#e3-0062.03"/>
-    <line>Scene == <del rend="strikethrough">the</del>
+    <line>Scene = <del rend="strikethrough">the</del>
       <del rend="strikethrough">The <unclear reason="illegible">pat</unclear></del>
       <unclear reason="unclear">A</unclear> forest&#8212;</line>
     <line>in the background a Cavern&#8212;</line>
@@ -15,7 +15,7 @@
     <line>the Spirit of the Earth&#8212;</line>
     <anchor xml:id="e3-0062.03"/>
     <milestone unit="tei:speaker" spanTo="#e3-0062.01"/>
-    <line>Ione</line>
+    <line rend="center">Ione</line>
     <anchor xml:id="e3-0062.01"/>
     <line>Sister it is not Earthly . . . how it glides</line>
     <line>Under the leaves <mod>
@@ -34,7 +34,7 @@
     <line>The splendour drops in flakes upon the grass!</line>
     <line>Knowest thou it?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0062.02"/>
-    <line>Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e3-0062.02"/>
     <line rend="indent4">It is the delicate spirit</line>
     <line>T<retrace cause="clarify">h</retrace>at guides the earth thro Heaven. From afar</line>

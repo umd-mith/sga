@@ -9,7 +9,10 @@
     <line>Will make thy best glories seem</line>
     <line>But a dim &amp; noonday gleam</line>
     <line>From the shadow of a dream:</line>
+    <milestone unit="tei:speaker" spanTo="#e3-0043.02"/>
     <line rend="indent2">a louder &amp; still remoter Voice</line>
+    <anchor xml:id="e3-0043.02"/>
+    <line rend="indent3"><add><metamark>&#8212;</metamark></add></line>
     <line>Peace! the abyss is wreathed wi<retrace cause="clarify">th</retrace> scorn</line>
     <line>At your presumption, Atom-born!</line>
     <line>What is Heaven? &amp; what are ye</line>
@@ -22,7 +25,6 @@
     <line>Of which ye are but a part?</line>
     <line>Drops which Natures mighty heart</line>
     <line>Drives through thinnest veins. Depart!</line>
-    <line/>
     <line>What is Heaven? a globe of dew</line>
     <line>Filling in the morning new</line>
     <line>Some eyed flower whose young leaves waken</line>
