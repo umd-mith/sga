@@ -554,4 +554,34 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
       canvas.trigger 'fullsync'
 
+  importSearchResults = (graph, manifest) ->
+    # This method imports manifest level search data
+    manifest.ready ->
+
+      for node in graph
+        id_graph[node["@id"]] = node if node["@id"]?     
+
+      for id, node of graph
+
+        if node["@type"]? 
+          types = SGASharedCanvas.Utils.makeArray node["@type"]
+
+          if "sga:SearchAnnotation" in types
+            target = node["on"]
+            selector = id_graph[target]["selector"]            
+            
+            resource = manifest.resources.find (res) ->
+              res.get("resource") == id_graph[target]["full"]
+
+            if resource?
+              manifest.searchResults.add
+                "@id" : node["@id"]
+                "@type" : node["@type"]
+                "target": id_graph[target]["full"]
+                "beginOffset" : id_graph[selector]["beginOffset"]
+                "endOffset" : id_graph[selector]["endOffset"]
+                "canvas_id" : resource.get("on") # For slider component
+
+      manifest.searchResults.trigger 'sync'
+
 )()
