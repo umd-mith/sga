@@ -201,6 +201,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         top: "50%"
         left: "50%"
 
+      # Search Box
+      searchBox = new SGASharedCanvas.Component.SearchBox
+        el: "#sgaForm"
+
       @
 
   # Canvases view
