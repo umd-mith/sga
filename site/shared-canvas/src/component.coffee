@@ -235,4 +235,26 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
       # set css classes scope to be limited from HTML template
       @$el.find('input').each (i,e) =>
+
+  class SGASharedCanvas.Component.SearchBox extends ComponentView
+
+    events: 
+      'submit': 'search'
+      'click #searchbtn': 'submitForm'
+
+    search: (e) ->
+      e.preventDefault()
+      loc = Backbone.history.fragment
+
+      q = @$el.find("input#searchbox").val()
+
+      # remove search fragment if present
+      loc = loc.replace(/\/search\/f:[^\|]+\|q:[^\/]+/, "")
+
+      Backbone.history.navigate(loc+'/search/f:text|q:'+q, {trigger:true})
+
+    submitForm: (e) ->
+      e.preventDefault()
+      @$el.submit()
+      
 )()
