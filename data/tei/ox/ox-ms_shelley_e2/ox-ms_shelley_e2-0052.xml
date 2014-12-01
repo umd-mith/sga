@@ -37,7 +37,7 @@
         <add place="superlinear">melody.</add>
       </mod> . . .<anchor xml:id="e2-0052.02"/>
       <del rend="strikethrough">but</del>
-      <delSpan spanTo="#e2-0052.01"/>I heard</line>
+      <delSpan spanTo="#e2-0052.01" rend="strikethrough"/>I heard</line>
     <line>Among the many sounds, one word, thy name<anchor xml:id="e2-0052.01"/></line>
     <line>Ione wakened then, &amp; said to me</line>
     <line>"Canst thou divine what troubles me to night</line>
@@ -54,8 +54,10 @@
         <del rend="strikethrough">some</del>
         <add place="superlinear">thy</add>
       </mod> sp<retrace cause="clarify">ort</retrace>
-      <del rend="strikethrough">of thine</del><add place="superlinear">false <unclear reason="case"
-          >S</unclear>ister!</add></line>
+      <mod>
+        <del rend="strikethrough">of thine</del>
+        <add place="superlinear">false <unclear reason="case">S</unclear>ister!</add>
+      </mod></line>
     <line/>
     <line>"Thou hast discovered <mod>
         <restore type="underline"><del rend="strikethrough"><hi rend="underline"

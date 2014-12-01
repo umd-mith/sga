@@ -20,7 +20,8 @@
           <del rend="strikethrough"><add place="superlinear">waves</add></del>
         </mod>
       </mod> moan in inland cave<unclear reason="illegible">s</unclear></line>
-    <line>Darest thou observe how the fiends torture him <unclear reason="illegible">,&#8212;</unclear></line>
+    <line>Darest thou observe how the fiends torture him <unclear reason="illegible"
+        >,&#8212;</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e2-0014.01"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0014.01"/>
@@ -35,7 +36,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0014.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0014.03"/>
-    <line rend="indent4">a woeful sight &#8212; a youth</line>
+    <line rend="indent3">a woeful sight &#8212; a youth</line>
     <line>With patient looks nailed to a crucifix</line>
     <milestone unit="tei:speaker" spanTo="#e2-0014.04"/>
     <line rend="center">Ione</line>

@@ -31,6 +31,10 @@
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0062.04"/>
     <line rend="indent5">I hear.</line>
+    <line rend="indent3" rotate="180"><add><metamark function="count">125</metamark></add></line>
+    <line rend="indent2" rotate="180"><add><metamark function="count"><unclear reason="illegible"
+            >60</unclear></metamark></add></line>
+    <!-- Some faint and difficult to encode makrs here -->
     <milestone unit="tei:speaker" spanTo="#e2-0062.05"/>
     <line rend="center">Echoes</line>
     <anchor xml:id="e2-0062.05"/>
@@ -39,7 +43,7 @@
     <line rend="indent2">Thro the caverns hollow</line>
     <line rend="indent3">Where the forest spreadeth</line>
     <milestone unit="tei:stage" spanTo="#e2-0062.06"/>
-    <line rend="indent5"><add place="interlinear">More distant</add></line>
+    <line rend="indent5"><add>More distant</add></line>
     <anchor xml:id="e2-0062.06"/>
     <line rend="indent3">O follow follow</line>
     <line rend="indent3">Throughthe caverns hollow</line>

@@ -11,15 +11,14 @@
     <anchor xml:id="e2-0040.01"/>
     <line rend="indent5">Only a sense</line>
     <line>Remains of them, like the Omnipotence</line>
-    <line>Of music wh<damage type="inkblot">en</damage> the inspired voice &amp; lute</line>
+    <line>Of music when the inspired voice &amp; lute</line>
     <line>Languish, <mod>
         <del rend="strikethrough">though yet</del>
-        <add place="superlinear"><handShift medium="pencil">ere</handShift></add>
+        <add place="superlinear">ere</add>
       </mod> the <mod>
         <del rend="strikethrough">echoes are not</del>
-        <add place="superlinear">repon<handShift medium="pencil">ses are</handShift></add>
+        <add place="superlinear">reponses are</add>
       </mod> mute</line>
-    <!--"ere" and "ses are" in pencil; encode handshift, and adjust schema-->
     <line>Which th<del rend="smear">e</del>ro the deep &amp; labyrinthine soul</line>
     <line>Like echoes through long caverns wind &amp; roll</line>
     <milestone unit="tei:speaker" spanTo="#e2-0040.02"/>
@@ -40,7 +39,7 @@
     <line>Be what it is my destiny to be</line>
     <line>The <unclear reason="case">s</unclear>aviour &amp; the strength of suffering man</line>
     <line>Or sink into the original<unclear reason="illegible">,</unclear> gulph of things...
-      <unclear reason="illegible">.</unclear></line>
+        <unclear reason="illegible">.</unclear></line>
     <line>There is no agony &amp; no solace left</line>
     <line><add><metamark function="count">804</metamark></add></line>
   </zone>

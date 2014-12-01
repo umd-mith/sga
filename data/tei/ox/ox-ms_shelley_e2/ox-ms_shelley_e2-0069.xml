@@ -12,10 +12,9 @@
     <line>Let us make the best of it</line>
     <line rend="indent1">If love l<retrace cause="clarify">i</retrace>ves when pleasure dies</line>
     <line rend="indent1">We two will love, till in our eyes</line>
-    <line rend="indent1"><retrace cause="clarify" hand="#pbs">T</retrace>his hearts hell seem
-      Paradise</line>
+    <line rend="indent1"><retrace cause="clarify">T</retrace>his hearts hell seem Paradise</line>
     <line>Come be happy &#8212; lie thee down</line>
-    <line><retrace cause="clarify" hand="#pbs">O</retrace>n the fresh grass newly mown</line>
+    <line><retrace cause="clarify">O</retrace>n the fresh grass newly mown</line>
     <line>While the grasshopper doth sing</line>
     <line rend="indent1">Merrily&#8212;one joyous thing</line>
     <line rend="indent1">In a world oof sorrowing</line>
@@ -25,6 +24,6 @@
     <line><milestone unit="tei:seg" spanTo="#e2-0069.01" next="#e2-0069.02"/>lull<anchor
         xml:id="e2-0069.01"/></line>
     <line rend="indent1">Because they once were sweet, shall <anchor xml:id="e2-0069.02"/></line>
-    <line>Us</line>
+    <line><add>Us</add></line>
   </zone>
 </surface>
