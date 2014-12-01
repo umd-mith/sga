@@ -398,7 +398,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
                   if node["sga:textIndentLevel"]?
                     annotation.set
-                      "indent" : node["sga:textIndentLevel"]["@value"]
+                      "indent" : node["sga:textIndentLevel"]
                   if node["sga:textAlignment"]?
                     annotation.set
                       "align" : node["sga:textAlignment"]
@@ -542,13 +542,13 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                     needs_br = true
                   idx = modIds.indexOf id
                   modIds.splice idx, 1 if idx > -1
-                if needs_br and not br_pushed
-                  indent = null
-                  align = null
-                  if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
-                  if modInfo[id].get("align")? then align = modInfo[id].get "align"
-                  makeLinebreak pos, {"indent":indent, "align":align}
-                  br_pushed = true
+                  if needs_br and not br_pushed
+                    indent = null
+                    align = null
+                    if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
+                    if modInfo[id].get("align")? then align = modInfo[id].get "align"
+                    makeLinebreak pos, {"indent":indent, "align":align}
+                    br_pushed = true
                 last_pos = pos
             processNode last_pos, text.length
 
