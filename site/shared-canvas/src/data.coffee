@@ -154,10 +154,11 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
   class CanvasData extends Backbone.Model
     idAttribute : "@id"
     initialize: ->
-      @contents  = new Contents
-      @images    = new Images
-      @zones     = new Zones
-      @SGAannos  = new Annotations  
+      @contents   = new Contents
+      @images     = new Images
+      @zones      = new Zones
+      @SGAannos   = new Annotations  
+      @layerAnnos = new Layers
 
     # We override fetch, since we actually fetch and re-organize
     # data from the parent Manifest model
@@ -346,6 +347,10 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             # but we trigger change too often by setting attributes gradually. 
             # We could store attributes in an object and set them all together.
             canvas.contents.add content
+
+          # Get layer annotations
+          if node["sc:motivatedBy"]? and node["on"] == canvas_id
+            canvas.layerAnnos.add node
 
           # Get zones - *N.B. there are no zones in SGA*
           else if "sc:ZoneAnnotation" in types and graph[target]["full"] == canvas_id

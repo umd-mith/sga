@@ -214,6 +214,23 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       e.preventDefault()
       @manifests.trigger "readingMode", 'std'
 
+    setRdgMode: (e) ->
+      e.preventDefault()
+      @manifests.trigger "readingMode", 'std'
+
+      curCanvas = @manifests.first().canvasesData.first()
+
+      layerAnnos = curCanvas.layerAnnos.find (m) ->
+            return m.get("sc:motivatedBy")["@id"] == "sga:reading"
+
+      $.get layerAnnos.get("resource"), ( data ) ->    
+        d = $.parseHTML data
+        for e in d
+          if $(e).is('div')
+            text = e
+            curCanvas.trigger "addLayer", "Text", text
+
+
   class SGASharedCanvas.Component.LimitViewControls extends ComponentView
 
     initialize: (options) ->

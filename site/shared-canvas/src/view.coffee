@@ -132,6 +132,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           @model.ready -> 
             fetchCanvas n
 
+      # Deal with reading modes
       @listenTo SGASharedCanvas.Data.Manifests, 'readingMode', (m) ->
 
         @model.canvasesData.reset()
@@ -267,7 +268,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         new ViewerAreaView 
           model: @model
           el: area.el
-          types: area.types.split(" ")     
+          types: area.types.split(" ")
+          layers: layers     
       @
 
   # Canvas Meta view
@@ -317,9 +319,14 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # When rendering, we create sub-views for each type required
       @types = options.types      
 
+      # Deal with layers
+      @listenTo @model, 'addLayer', (area, content) -> 
+        if area in @types
+          @addLayer(content)  
+
       @render()
 
-    render: (container) ->
+    render: ->
       @$el.css 'overflow': 'hidden'
 
       container = $("<div></div>")
@@ -408,8 +415,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             addImages()
           when "Text"
             addText()
-
   
+    addLayer: (content) ->
+      @$el.children().html(content)
+
   #
   # TEXT VIEWS
   #
