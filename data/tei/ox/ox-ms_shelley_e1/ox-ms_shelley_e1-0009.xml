@@ -4,7 +4,9 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0009" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0009.jp2"/>
-  <zone type="library"><line>4</line></zone>
+  <zone type="library">
+    <line rend="right">4</line>
+  </zone>
   <zone type="main">
     <line>We have felt the wand of Power<add>,</add>
       <mod>
@@ -56,7 +58,7 @@
     <anchor xml:id="e1-0009.07"/>
     <line>Like the clouds &amp; the sunbeams unite</line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.03"/>
-    <line rend="right">a Voice</line>
+    <line rend="center">a Voice</line>
     <anchor xml:id="e1-0009.03"/>
     <line rend="right">Unite<unclear reason="illegible">!</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.04"/>

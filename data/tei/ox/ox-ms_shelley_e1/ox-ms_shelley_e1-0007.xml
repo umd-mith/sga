@@ -4,7 +4,9 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0007" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0007.jp2"/>
-  <zone type="library">3</zone>
+  <zone type="library">
+    <line rend="right">3</line>
+  </zone>
   <zone type="main">
     <line rend="indent1">They outspeeded the blast,</line>
     <line rend="indent1">While 'tis said, they are fled&#x2014;</line>
