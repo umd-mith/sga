@@ -35,18 +35,16 @@
         <del rend="overwritten">w</del>
         <add place="intralinear">v</add>
       </mod>ale</line>
-    <line>The scene of her sad exile&#8212;<mod spanTo="#e2-0042.08"/><delSpan rend="strikethrough"
-        spanTo="#e2-0042.09"/>tho her presence</line>
-    <milestone unit="tei:l" spanTo="#e2-0042.10"/>
+    <line>The scene of her sad exile&#8212;<anchor xml:id="e2-0042.08"/><delSpan
+        rend="strikethrough" spanTo="#e2-0042.09"/>tho her presence</line>
     <line>Makes fruits &amp; flowers &amp; sunwarm winds,<anchor xml:id="e2-0042.09"/>
       <mod>
         <del rend="strikethrough">&amp; sounds</del>
         <del rend="strikethrough"><add place="sublinear">smooth oer</add></del>
       </mod></line>
-    <line rend="indent5"><add>rugged once</add></line>
-    <anchor xml:id="e2-0042.10"/><anchor xml:id="e2-0042.08"/>
-    <line>And desolate &amp; fro<retrace cause="clarify" hand="#pbs">zen</retrace> like this
-      ravine;</line>
+    <line rend="indent5"><milestone unit="tei:seg" spanTo="#e2-0042.10" corresp="#e2-0042.08"
+        /><add>rugged once</add><anchor xml:id="e2-0042.10"/></line>
+    <line>And desolate &amp; fro<retrace cause="clarify">zen</retrace> like this ravine;</line>
     <line>But now invested with fair flowers &amp; herbs</line>
     <line>And haunted by sweet air's &amp; sounds, which flow</line>
     <line>Among the woods &amp; waters: from the ether</line>

@@ -18,16 +18,16 @@
     <milestone unit="tei:speaker" spanTo="#e2-0058.03"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0058.03"/>
-    <line rend="indent5">It disappears.</line>
+    <line rend="indent4">It disappears.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0058.04"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0058.04"/>
-    <line>It passes now into my mind. <mod spanTo="#e2-0058.05"/><del rend="strikethrough"
-        >methou</del>
-      <del rend="strikethrough" next="#e2-0058.06">it was</del><add place="sublinear"
-        >methought</add></line>
-    <line><del rend="strikethrough" xml:id="e2-0058.06">A dream of sprin</del></line><anchor
-      xml:id="e2-0058.05"/>
+    <line>It passes now into my mind. <del rend="strikethrough">methou</del>
+      <mod>
+        <del rend="strikethrough">it was</del>
+        <add place="sublinear">methought</add>
+      </mod></line>
+    <line><del rend="strikethrough">A dream of sprin</del></line>
     <line rend="indent1">As we sate here the flower-infolding buds</line>
     <line>Burst on yon lightning-blasted almond-tree</line>
     <line>When swift, from the white Scythian wilderness<add>,</add></line>
@@ -61,7 +61,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0058.08"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0058.08"/>
-    <line rend="indent4">As you speak your words</line>
+    <line rend="indent3">As you speak your words</line>
     <line>Fill, pause by pause mine own forgotten sleep</line>
     <line>With shapes ... methought among these lawns together</line>
     <line>We wandered, underneath the young grey dawn</line>

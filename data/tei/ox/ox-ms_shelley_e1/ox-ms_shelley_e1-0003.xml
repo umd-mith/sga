@@ -42,9 +42,12 @@
     <line>of you.&#x2014; When you recite some passages</line>
     <line>from an <hi rend="underline">Cantin<unclear reason="illegible">i</unclear></hi> epic poem
         <unclear unit="chars" extent="2"/></line>
-    <line>climb from a <del rend="strikethrough">la<unclear reason="illegible">ll</unclear></del>
-      ladder</line>
-    <line>Via</line>
-    <line>Piazza <del rend="strikethrough">dalle</del>/Strozzi</line>
+    <!-- Also rotate this 180 -->
+    <line>climb from &#922;&#913;&#953;&#956;&#945;&#958; a <del rend="strikethrough">la<unclear
+          reason="illegible">ll</unclear></del> ladder</line>
+    <line>Piazza <mod>
+        <del rend="strikethrough">dalle</del>
+        <add place="sublinear">Via</add>
+      </mod>/Strozzi</line>
   </zone>
 </surface>

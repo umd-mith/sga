@@ -69,8 +69,10 @@
     <line rend="center"><unclear reason="illegible">P</unclear>anthea</line>
     <anchor xml:id="e3-0016.05"/>
     <line>See, near the verge another chariot stays</line>
-    <line rend="indent1">An ivory shell inlaid with crimson fire</line>
-    <line><del rend="strikethrough">Like the</del></line>
+    <line><mod>
+        <del rend="strikethrough">Like the</del>
+        <add place="superlinear">An ivory</add>
+      </mod> shell inlaid with crimson fire</line>
     <milestone unit="tei:l" spanTo="#e3-0016.06"/>
     <line>Which <del rend="strikethrough">burns around</del> comes &amp; goes within its</line>
     <line rend="right">sculptured ruin</line>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0005" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0005" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0005.jp2"/>
 
   <zone type="library">2</zone>
@@ -14,39 +14,59 @@
 
   <zone type="main">
     <milestone unit="tei:act" spanTo="#e1-0005.01"/>
-    <line>Act 4<anchor xml:id="e1-0005.01"/>
-      <metamark function="sequence"> 1</metamark></line>
+    <line rend="center">Act 4<anchor xml:id="e1-0005.01"/>
+      <metamark> 1</metamark></line>
     <milestone unit="tei:stage" spanTo="#e1-0005.02"/>
     <milestone unit="tei:p" spanTo="#e1-0005.03"/>
-    <line>Scene <add place="superlinear">part of</add> a <del rend="strikethrough">beautiful</del>
-      forest near the cave</line>
+    <line>Scene a <anchor xml:id="e1-0005.08"/>
+      <mod>
+        <del rend="strikethrough">beautiful</del>
+        <add place="superlinear" next="#e1-0005.08">part of</add>
+      </mod> forest near the cave</line>
     <line>of Prometheus&#x2014; Panthea &#x26; Ione <del rend="strikethrough">are</del> are</line>
     <line><del rend="strikethrough">sitting beside a stream</del></line>
     <line><add place="intralinear" next="#e1-0005.06">sleeping&#x2014;</add>
-      <del rend="strikethrough"><unclear>dreaming</unclear>&#x2014;</del>
+      <del rend="strikethrough"><unclear reason="illegible">dreaming</unclear>&#x2014;</del>
       <add place="intralinear" xml:id="e1-0005.06" next="#e1-0005.07">they awaken
       gradually</add></line>
     <line><add place="intralinear" xml:id="e1-0005.07">during the first song.</add></line>
     <anchor xml:id="e1-0005.03"/><anchor xml:id="e1-0005.02"/>
     <milestone unit="tei:speaker" spanTo="#e1-0005.04"/>
-    <line rend="center">Voice of unseen Spirits</line><anchor xml:id="e1-0005.04"/>
+    <line rend="center"><mod>
+        <del rend="overwritten"><unclear reason="illegible">Song</unclear></del>
+        <add place="intralinear">Voice</add>
+      </mod> of unseen Spirits</line><anchor xml:id="e1-0005.04"/>
     <line rend="indent1">The pale Stars are gone,&#x2014;</line>
     <line rend="indent1">For the Sun thier swift Shepherd</line>
     <line rend="indent1">To their folds them compelling</line>
-    <line rend="indent1">In the depths of the Dawn</line>
-    <line>Hastes, in meteor-eclipsing array, &amp; they flee</line>
+    <line rend="indent1">In the de<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">p</add>
+      </mod>ths of the Dawn</line>
+    <line>Hastes, in meteor-eclipsing arra<retrace cause="clarify">y</retrace>, &amp; they
+      flee</line>
     <line rend="indent2">Beyond his blue dwelling,</line>
-    <line rend="indent2">As fawns flee the leopard. . .</line>
+    <line rend="indent2">As fawns flee the le<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">o</add>
+      </mod>p<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">a</add>
+      </mod>rd. . .</line>
     <line rend="indent3">But where are ye?</line>
-    <milestone unit="tei:stage" spanTo="#e1-0005.05"/>
+    <milestone unit="tei:stage" spanTo="#e1-0005.10"/>
+    <addSpan spanTo="#e1-0005.09"/>
     <line>a t<hi rend="underline">rain of dark forms &amp; shadows passes by</hi></line>
     <line><hi rend="underline">confusedly</hi> , singing&#x2014;</line>
-    <line rend="right">Panthea wakens</line><anchor xml:id="e1-0005.05"/>
-    <line rend="indent4">Here oh here!</line>
-    <line rend="indent4">We bear the bier</line>
+    <anchor xml:id="e1-0005.09"/><anchor xml:id="e1-0005.10"/>
+    <milestone unit="tei:stage" spanTo="#e1-0005.05"/>
+    <line rend="right">Panthea wakens</line>
+    <anchor xml:id="e1-0005.05"/>
+    <line rend="indent3">Here oh here!</line>
+    <line rend="indent3">We bear the bier</line>
     <line rend="indent1">Of the father of many a cancelled year</line>
-    <line rend="indent4">Spectres we</line>
-    <line rend="indent4">Of dead hours be</line>
+    <line rend="indent3">Spectres we</line>
+    <line rend="indent3">Of dead hours be</line>
     <line rend="indent1">We bear Time to his tomb in eternity</line>
   </zone>
 

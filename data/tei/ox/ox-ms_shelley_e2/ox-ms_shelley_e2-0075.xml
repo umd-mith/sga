@@ -34,7 +34,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0075.03"/>
     <line rend="center">2<hi rend="sup">d</hi>. Faun</line>
     <anchor xml:id="e2-0075.03"/>
-    <line rend="right">'Tis hard to tell&#8212;</line>
+    <line rend="indent5">'Tis hard to tell&#8212;</line>
     <line>I have heard those more skilled in spirits say</line>
     <line>The bubbles which the enchantment of the sun</line>
     <line>Sucks from the pale faint water-flowers, that pave</line>
@@ -47,7 +47,6 @@
         <add place="superlinear">tide</add>
       </mod> kindles through the woven leaves</line>
     <line>And when these burst, &amp; the thin fiery air</line>
-    <!--Encode the alternate readings, with David-->
     <line>The which they breathed within those <mod>
         <del rend="unmarked">lucid homes</del>
         <add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.06" xml:id="e2-0075.08"

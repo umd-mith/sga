@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0010" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0010.jp2"/>
   <zone type="main">
-    <line><add><unclear>Salt</unclear></add></line>
+    <line><add><unclear reason="illegible">Salt</unclear></add></line>
     <add><metamark function="separate">&#x2014;</metamark></add>
     <line>Were built, &amp; thro their snowlike columns flowed</line>
     <line>The warm winds, &amp; the azure aether shone</line>
@@ -24,7 +24,7 @@
     <milestone unit="tei:l" spanTo="#e3-0010.01"/>
     <line>Not Jove, <del rend="strikethrough">for</del> while<add place="superlinear">yet</add> his
       frown shook Heaven, aye</line>
-    <line>when</line>
+    <line rend="right">when</line>
     <anchor xml:id="e3-0010.01"/>
     <line>His adversary from adamantine chains</line>
     <line>Cursed him, he trembled like a slave: Declare</line>
@@ -32,8 +32,10 @@
     <milestone unit="tei:speaker" spanTo="#e3-0010.02"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0010.02"/>
+    <milestone unit="tei:l" spanTo="#e3-0010.04"/>
     <line>All spirits are enslaved which serve things</line>
-    <line>evil.</line>
+    <line rend="right">evil.</line>
+    <anchor xml:id="e3-0010.04"/>
     <line>Thou knowest if Jupiter be such or no.</line>
     <milestone unit="tei:speaker" spanTo="e3-0010.03"/>
     <line rend="center">Asia</line>

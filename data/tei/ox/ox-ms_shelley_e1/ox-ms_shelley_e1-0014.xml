@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0014" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0014" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0014.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0014.01"/>
     <line rend="center">Chorus of Hours</line>
     <anchor xml:id="e1-0014.01"/>
     <line>Break the dance, &amp; scatter the song</line>
-    <line>Let some depart &amp; some remain<unclear>,</unclear></line>
+    <line>Let some depart &amp; some remain<unclear reason="illegible">,</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e1-0014.02"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0014.02"/>
@@ -17,35 +17,46 @@
     <milestone unit="tei:speaker" spanTo="#e1-0014.03"/>
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e1-0014.03"/>
-    <line>Us<unclear>,</unclear> the inchantments of Earth retain&#x2014;</line>
+    <line><mod>
+        <del rend="overwritten">We</del>
+        <add place="intralinear">Us</add>
+      </mod><unclear reason="illegible">,</unclear> the inchantments of Earth retain&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0014.04"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0014.04"/>
     <line>Ceaseless &amp; rapid &amp; fierce &amp; free</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0014.08"/>With the Spirits which build a new
-      earth</line>
-    <line rend="right">&amp; sea<anchor xml:id="e1-0014.08"/></line>
-    <line>And a Heaven where yet Heaven c<hi rend="sup">d</hi>. never be&#x2014;</line>
+    <milestone unit="tei:l" spanTo="#e1-0014.08"/>
+    <line>With the <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>pirits which build a new earth</line>
+    <line rend="right">&amp; sea</line>
+    <anchor xml:id="e1-0014.08"/>
+    <line><unclear reason="case">A</unclear>nd a Heaven where yet Heaven c<hi rend="sup">d</hi>.
+      never be&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0014.05"/>
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e1-0014.05"/>
     <line>Solemn &amp; slow &amp; serene &amp; bright</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0014.09"/>Leading the day &amp; outspeeding the</line>
-    <line rend="right">night<anchor xml:id="e1-0014.09"/></line>
-    <line><metamark function="count">146 </metamark>With the Powers of a world of perfect
-      light&#x2014;</line>
+    <milestone unit="tei:l" spanTo="#e1-0014.09"/>
+    <line>Leading the day &amp; outspeeding the</line>
+    <line rend="right">night</line>
+    <anchor xml:id="e1-0014.09"/>
+    <line rend="left"><add><metamark function="count">146 </metamark></add>With the Powers of a
+      world of perfect light&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0014.06"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0014.06"/>
     <line>We whirl, singing loud, round the gathering sphere</line>
     <line>Till the trees &amp; the beasts, &amp; the clouds appear</line>
-    <line>From its chaos made calm by love, not fear<unclear>&#x2013;</unclear></line>
+    <line>From its chaos made calm by love, not fear<unclear reason="illegible"
+      >&#x2013;</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e1-0014.07"/>
     <line rend="center">Semichorus</line>
     <anchor xml:id="e1-0014.07"/>
     <line>We encircle the Oceans &amp; Mountains of Earth</line>
     <line>And the happy forms of its death &amp; birth</line>
-    <line>Change <damage type="inkblot"><unclear>to</unclear></damage> the music of our sweet
-      mirth</line>
+    <line>Change <damage type="inkblot"><unclear reason="illegible">to</unclear></damage> the music
+      of our <retrace cause="clarify">sweet</retrace> mirth</line>
   </zone>
 </surface>

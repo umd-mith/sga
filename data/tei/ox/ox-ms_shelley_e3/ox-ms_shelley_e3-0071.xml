@@ -64,6 +64,7 @@
     <milestone unit="tei:speaker" spanTo="#e3-0071.06"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0071.06"/>
-    <line>I hear &amp; see, but I must away</line>
+    <line>I hear &amp; see, </line>
+    <line rend="indent4">but I must away</line>
   </zone>
 </surface>

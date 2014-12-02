@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0006" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0006" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0006.jp2"/>
   <zone type="main">
     <line rend="indent1">Strew oh strew</line>
@@ -10,17 +10,18 @@
     <line>Wet the dusty pall with tears, not dew!</line>
     <line rend="indent1">Be the faded flowers</line>
     <line rend="indent1">Of Deaths bare bowers</line>
-    <line>Spread on the corpse of the King of Hours<unclear>!</unclear></line>
+    <line>Spread on the corpse of the King of Hours<unclear reason="illegible">!</unclear></line>
     <line rend="indent2">Haste, oh haste!</line>
     <line rend="indent2">As shades are chased</line>
-    <line>Trembling, by Day, from Heaven's blue waste<unclear>.</unclear></line>
+    <line>Trembling, b<retrace cause="clarify">y</retrace> Day, from Heaven's blue waste<unclear
+        reason="illegible">.</unclear></line>
     <line rend="indent2">We <mod>
         <del rend="strikethrough">flee</del>
         <add place="superlinear">melt</add>
       </mod> away</line>
     <line rend="indent2">Like dissolving spray</line>
-    <line>From the children of a diviner day<unclear>,</unclear>
-      <unclear>t</unclear></line>
+    <line>From the children of a diviner day<unclear reason="illegible">,</unclear>
+      <unclear reason="illegible">t</unclear></line>
     <addSpan spanTo="#e1-0006.06" place="interlinear"/>
     <line rend="indent2">With the lullaby</line>
     <line rend="indent2">Of winds that die</line>
@@ -29,9 +30,9 @@
         place="superlinear"><milestone unit="tei:stage" spanTo="#e1-0006.01"/><hi rend="underline"
           >they vanish</hi><anchor xml:id="e1-0006.01"/></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.02"/>
-    <line rend="center">Ione (<del rend="strikethrough">awakening</del>)</line><anchor
-      xml:id="e1-0006.02"/>
-    <line><metamark><unclear>/</unclear></metamark></line>
+    <line rend="center">Ione <del rend="strikethrough"><unclear reason="illegible"
+          >awakening</unclear></del></line><anchor xml:id="e1-0006.02"/>
+    <line><metamark><unclear reason="illegible">/</unclear></metamark></line>
     <line rend="indent2">What dark forns were they?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.03"/>
     <line rend="center">Panthea</line>

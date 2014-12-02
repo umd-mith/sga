@@ -11,7 +11,6 @@
     <anchor xml:id="e2-0017.01"/>
     <line>Behold, <del rend="strikethrough">behold how those who do endure</del></line>
     <line rend="indent2">an emblem&#8212;those who do endure</line>
-    <!-- Check the upper two lines as they might be the same-->
     <line rend="indent1"><mod>
         <del rend="strikethrough">Stripes</del>
         <del rend="strikethrough"><add place="superlinear">Wounds</add></del>
@@ -30,7 +29,7 @@
             de<unclear>s</unclear></add></del>, but heap</line>
     <line><del rend="strikethrough">Heap</del> Thousand-fold torment on themselves &amp; him.</line>
     <milestone unit="tei:stage" spanTo="#e2-0017.02"/>
-    <line rend="indent4">a <mod>
+    <line rend="indent3">a <mod>
         <del rend="strikethrough">shadow</del>
         <add place="superlinear">darkness</add>
       </mod> floats <del rend="strikethrough">flo</del> slowly across</line>

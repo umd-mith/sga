@@ -7,6 +7,6 @@
   <zone type="library"><line rend="right">6</line></zone>
   <zone type="main">
     <line rend="right"><milestone unit="tei:seg" spanTo="e3-0017.01" xml:id="e3-0017.02"
-        />image<anchor xml:id="e3-0017.01"/></line>
+        /><add>image</add><anchor xml:id="e3-0017.01"/></line>
   </zone>
 </surface>

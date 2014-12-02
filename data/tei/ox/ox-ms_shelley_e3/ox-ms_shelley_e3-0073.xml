@@ -13,9 +13,10 @@
           <del rend="strikethrough"><add place="superlinear">chariot</add></del>
         </mod>
       </mod><del rend="strikethrough">stands</del> within</line>
-    <line>A temple, <del rend="strikethrough">underneath its hollow <del rend="strikethrough"><add
-            place="superlinear">fretted</add></del>dome</del></line>
-    <delSpan spanTo="#e3-0073.04" rend="strikethrough"/>
+    <line>A temple, <delSpan spanTo="#e3-0073.04" rend="strikethrough"/>underneath its <mod>
+        <del rend="strikethrough">hollow</del>
+        <del rend="strikethrough"><add place="superlinear">fretted</add></del>
+      </mod>dome</line>
     <line>Poised on twelve columns of resplende<unclear reason="illegible">n</unclear>t
       stone,</line>
     <line>And Around stand Asia &amp; the Earth &amp; thou</line>

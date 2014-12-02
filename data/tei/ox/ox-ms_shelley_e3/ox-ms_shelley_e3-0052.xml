@@ -21,7 +21,9 @@
             be</line>
         <line>As thunder mingled with clear echoes &#8212; then</line>
         <line>Return &amp; thou shalt dwell beside our cave</line>
-        <line rend="indent3"><unclear reason="case">K</unclear>issing the ground</line>
+        <milestone unit="tei:stage" spanTo="#e3-0052.03"/>
+        <line rend="indent4"><unclear reason="case">K</unclear>issing the ground</line>
+        <anchor xml:id="e3-0052.03"/>
         <line>And thou o Mother Earth&#8212;</line>
         <milestone unit="tei:speaker" spanTo="#e3-0052.02"/>
         <line rend="center">The Earth</line>

@@ -21,6 +21,7 @@
     <line>to the progress &amp; development of <unclear reason="illegible">the</unclear></line>
     <line>same spirit; the sacred Milton was,</line>
     <line>let it ever be remembered, a Republican</line>
+    <!-- Need to add a metamark for displacement here -->
     <milestone unit="tei:seg" spanTo="#e3-0080.01" corresp="e3-0081.01"/>
     <line>The peculiar style of intense &amp; comprehensive</line>
     <line>imagery which distinguishes the modern</line>
@@ -28,6 +29,7 @@
     <line>general power the product of the imitation</line>
     <line>of any particular writer.</line>
     <anchor xml:id="e3-0080.01"/>
+    <!-- And here also -->
     <line>and a bold enquirer into <mod>
         <del rend="strikethrough">faiths</del>
         <add place="superlinear">morals &amp; religion</add>
@@ -35,8 +37,10 @@
     <line>great writers of our own age, are, we</line>
     <line>have reason to suppose <unclear reason="illegible">&#8212;</unclear> the companions</line>
     <line>or forerunners of some unimagined</line>
-    <line>change in our social condition, &amp; <add place="sublinear"><metamark function="insert"
-          >^</metamark></add><add place="superlinear">in</add> the</line>
+    <line>change in our social condition, &amp; <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">in</add>
+      </mod> the</line>
     <line>opinions which cement it. The cloud</line>
     <line>of mind is discharging its collected</line>
     <line>lightning, &amp; the equilibrium</line>

@@ -6,6 +6,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0037.jp2"/>
   <zone type="library"><line rend="right">16</line></zone>
   <zone type="main">
+    <!-- The First Paragraph of this page is littered with penciled in words on the background,
+      have to check with how to encode layers to correctly encode this section -->
     <milestone unit="tei:seg" spanTo="#e3-0037.01" corresp="e3-0036.05"/>
     <line>Gentle &amp; just &amp; <mod>
         <del rend="strikethrough">mild</del>
@@ -20,8 +22,10 @@
         >71</metamark></add></line>
     <line rend="indent1">We two shall sink <unclear reason="illegible">o</unclear>n the wide waves
       of ruin</line>
-    <line rend="indent2"><del rend="strikethrough">sink down upon the stream of ruin</del><del
-        rend="strikethrough"><add place="superlinear">Together then</add></del></line>
+    <line rend="indent2"><mod>
+        <del rend="strikethrough">sink down upon the stream of ruin</del>
+        <del rend="strikethrough"><add place="superlinear">Together then</add></del>
+      </mod></line>
     <line rend="indent1"><del rend="strikethrough"><mod>
           <del rend="overwritten">Sink</del>
           <add place="intralinear">Shall</add>
@@ -39,9 +43,6 @@
       </mod> , twisted in inextricable fight;</line>
     <line>Into a shoreless sea <unclear reason="illegible">.</unclear>&#8212;<anchor
         xml:id="e3-0037.02"/></line>
-    <line/>
-    <line/>
-    <line/>
     <milestone unit="tei:seg" spanTo="#e3-0037.03" corresp="e3-0036.07"/>
     <line>And like a cloud <mod>
         <del rend="strikethrough">mine</del>
@@ -49,12 +50,6 @@
       </mod>enemy above....</line>
     <line>Darkens my fall with victory&#8212; ai! ai!</line>
     <anchor xml:id="e3-0037.03"/>
-    <line/>
-    <line/>
-    <line/>
-    <line/>
-    <line/>
-    <line/>
     <line><milestone unit="tei:seg" spanTo="#e3-0037.04" corresp="e3-0036.08"/>made <del
         rend="strikethrough">pale</del> dim<anchor xml:id="e3-0037.04"/></line>
   </zone>

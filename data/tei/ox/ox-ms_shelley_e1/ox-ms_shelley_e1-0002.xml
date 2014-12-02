@@ -10,10 +10,13 @@
   </zone>
 
   <zone type="main" rotate="180">
-    <line rend="indent4">400 &#x2014; &#x2014; 23<hi rend="sup">d</hi> 163.</line>
-    <line rend="indent4"><hi rend="underline">163</hi></line>
+    <addSpan spanTo="#e1-0002.01"/>
+    <line rend="indent4"><metamark function="count">400</metamark> &#x2014; &#x2014; <metamark
+        function="count">23<hi rend="sup">d</hi> 163.</metamark></line>
+    <line rend="indent4"><hi rend="underline"><metamark function="count">163</metamark></hi></line>
     <line>excite your audience to the highest</line>
-    <line rend="indent4"><del rend="strikethrough"><hi rend="underline">500</hi></del></line>
+    <line rend="indent4"><del rend="strikethrough"><add><hi rend="underline"><metamark
+              function="count">500</metamark></hi></add></del></line>
     <!--use the "change" element or attribute to indicate layers of writing-->
     <line>degree; when for instance you sing of</line>
     <line>Ulysses leaping upon the threshold of</line>
@@ -37,6 +40,6 @@
         <add place="intralinear">or</add>
       </mod> whatever other place</line>
     <line>may be the scene of the epic</line>
-    <line>you recite? <metamark>X</metamark></line>
+    <line>you recite? <metamark function="separate">X</metamark></line>
   </zone>
 </surface>
