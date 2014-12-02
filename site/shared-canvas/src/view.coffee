@@ -269,7 +269,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           model: @model
           el: area.el
           types: area.types.split(" ")
-          layers: layers     
       @
 
   # Canvas Meta view
