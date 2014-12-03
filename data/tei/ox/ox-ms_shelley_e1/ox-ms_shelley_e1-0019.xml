@@ -9,7 +9,7 @@
   </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0019.01"/>
-    <line>Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e1-0019.01"/>
     <line>And from the other opening in the wood <add><metamark function="count"
         >200</metamark></add></line>
@@ -49,6 +49,7 @@
     <line>And the wild odour of the forest flowers</line>
     <line>The music of the living grass &amp; air</line>
     <line>The emerald light of leaf-entangled beams</line>
+    <!-- these lines are revised later in e3, how to encode this? -->
     <zone type="left_margin" rotate="270" corresp="#e1-0019.02">
       <line><add>Kindling with many</add></line>
     </zone>

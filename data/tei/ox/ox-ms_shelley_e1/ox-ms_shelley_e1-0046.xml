@@ -16,15 +16,18 @@
         <add place="intralinear">h</add>
       </mod>rieks of slaugter</line>
     <line rend="indent1">Thro' a city &#x26; a solitude!</line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0046.01"/>3<hi rend="sup">d</hi>.
-      Voice from the Air<anchor xml:id="e1-0046.01"/></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0046.01"/>
+    <line rend="center">3<hi rend="sup">d</hi>. Voice from the Air</line>
+    <anchor xml:id="e1-0046.01"/>
     <line>I had clothed since Earth uprose</line>
     <line rend="indent1">Its wastes in colours not their own,</line>
     <line>And oft had my serene repose</line>
     <line rend="indent1">Been cloven by many a rending groan</line>
     <line rend="indent1"><del rend="unmarked">And silence</del></line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0046.02"/>4<hi rend="sup">th</hi>
-      <add place="superlinear">Voice</add> from the Whirlwinds<anchor xml:id="e1-0046.02"/></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0046.02"/>
+    <line rend="center">4<hi rend="sup">th</hi>
+      <add place="superlinear">Voice</add> from the Whirlwinds</line>
+    <anchor xml:id="e1-0046.02"/>
     <line>We had soared beneath these mountains</line>
     <line rend="indent1">Unr<mod>
         <del rend="overwritten">s</del>

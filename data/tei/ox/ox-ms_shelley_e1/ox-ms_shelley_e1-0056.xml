@@ -7,10 +7,10 @@
   <zone type="main">
     <delSpan spanTo="#e1-0056.01" rend="strikethrough"/>
     <line>Blue thistles bloomed in cities, foodless toads</line>
-    <line><del rend="strikethrough">With<mod>
-          <del rend="overwritten">out</del>
-          <add place="intralinear">in</add>
-        </mod> voluptuous chambers panting crawled</del>,</line>
+    <line>With<mod>
+        <del rend="overwritten">out</del>
+        <add place="intralinear">in</add>
+      </mod> voluptuous chambers panting crawled,</line>
     <anchor xml:id="e1-0056.01"/>
     <line><mod>
         <del rend="strikethrough">And <mod>
@@ -52,7 +52,9 @@
         />mine<anchor xml:id="e1-0056.05"/></line>
     <line>And love, though fleeting; these may not be <anchor xml:id="e1-0056.06"/></line>
     <line>But mine own words, I pray, deny me not</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0056.07"/>
     <line rend="center">The Earth</line>
+    <anchor xml:id="e1-0056.07"/>
     <line>They shall be told&#8212;. Ere Babylon was dust</line>
     <line><add><metamark function="count">181</metamark></add></line>
   </zone>
