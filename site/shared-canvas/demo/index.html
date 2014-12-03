@@ -128,7 +128,14 @@
             <div class="detail-view-meta">
               <div class="row">
                 <div id="detail-view-citation" class="meta-data-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  
+                  <div class="well well-sm meta-data-item">
+                    <h3 class="meta-title">Citation</h3>
+                    <h4 class="cite-page"><i class="icon-desktop icon-fixed-width"></i> Cite This Page</h4>
+                    <div class="page-citation">
+                      <span id="cite-manifest"></span>
+                      <span id="cite-canvas"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,13 +204,11 @@
   </script>
 
   <script type="text/template" id="citation-tpl">
-    <div class="well well-sm meta-data-item">
-      <h3 class="meta-title">Citation</h3>
-      <h4 class="cite-page"><i class="icon-desktop icon-fixed-width"></i> Cite This Page</h4>
-      <div class="page-citation">
-        <span id="cite-author"></span> (<span id="cite-year"></span>). "<span id="cite-title"></span>", in <em>The Shelley-Godwin Archive</em>, <span id="cite-page"></span>. Retrieved from <span id="cite-url"></span>
-      </div>
-    </div>
+    <%=author%> (<%=year%>). "<%=title%>", in <em>The Shelley-Godwin Archive</em>,
+  </script>
+
+  <script type="text/template" id="citation_canvas-tpl">
+    <%=page%>. Retrieved from <%=url%>
   </script>
 
   <script src="js/main.js"></script>

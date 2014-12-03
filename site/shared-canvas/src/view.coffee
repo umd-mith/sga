@@ -98,8 +98,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Add views for child collections right away
       @canvasesView = new CanvasesView collection: @model.canvasesData
 
-      # When search results are requested through a Router, fetch the search data.
-
       # When a new canvas is requested through a Router, fetch the right canvas data.
       @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, search) ->
         # First of all, destroy any canvas already loaded. We do this for two reasons:
@@ -112,7 +110,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       # When search results are requested through a Router, fetch the search data.
         if search?          
-          @model.searchResults.fetch @model, search.filters, search.query, options.searchService          
+          @model.searchResults.fetch @model, search.filters, search.query, options.searchService
 
           @listenToOnce @model.searchResults, 'sync', ->
             searchResultsPositions = []
@@ -159,8 +157,26 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         escaped = escaped.replace(':', '')
         noColon[escaped] = v
       $('#SGAManifestMeta').html @metaTemplate(noColon)
-      noColon["url"] = document.URL
-      $('#detail-view-citation').html @citationTemplate(noColon)
+      
+      citation = {}
+        
+      if noColon["scagentLabel"]?
+        authorParts = noColon["scagentLabel"].split(" ")
+        last = authorParts[authorParts.length-1]
+        initials = ""
+        for parts in authorParts
+          initials += parts.substring(0,1) + ". "
+        citation["author"] = last + ", " + initials
+
+      if noColon["scdateLabel"]?
+        dateParts = noColon["scdateLabel"].split(" ")
+        citation["year"] = dateParts[dateParts.length-1]
+
+      if noColon["dctitle"]?
+        notebook = if noColon["label"]? then noColon["label"] else ""
+        citation["title"] = noColon["dctitle"] + " - " + notebook
+
+      $('#cite-manifest').html @citationTemplate(citation)
 
     render: ->
       # Manage UI components as subviews      
@@ -276,6 +292,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     initialize: ->
       @template = _.template($('#canvasMeta-tpl').html())
+      @citationTemplate = _.template($('#citation_canvas-tpl').html())
       @render()
 
     render: ->
@@ -285,7 +302,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Handle status metadata (at the moment not in manifest)
       noColon.trans = "green"
       noColon.meta = "green"
+      
       @$el.html @template(noColon)
+
+      citation =
+        "url" : document.URL
+        
+      if noColon["sgashelfmarkLabel"]? and noColon["sgafolioLabel"]?
+        citation["page"] = noColon["sgashelfmarkLabel"] + ", " + noColon["sgafolioLabel"]
+
+      $('#cite-canvas').html @citationTemplate(citation)
 
 
   # General area view, declaring variables that can be tracked with events
