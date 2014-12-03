@@ -58,7 +58,8 @@ module.exports = function(grunt) {
           'lib/vendor/google-prettify.js',
           'bower_components/underscore/underscore.js',
           'bower_components/backbone/backbone.js',
-          'bower_components/google-code-prettify/src/prettify.js'
+          'bower_components/google-code-prettify/src/prettify.js',
+          'bower_components/perfect-scrollbar/min/perfect-scrollbar.min.js'
         ], 
         dest: 'dist/dependencies.js'
       }
