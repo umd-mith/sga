@@ -227,8 +227,29 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
         d = $.parseHTML data
         for e in d
           if $(e).is('div')
-            text = e
-            curCanvas.trigger "addLayer", "Text", text
+            curCanvas.trigger "addLayer", "Text", e
+
+    setXmlMode: (e) ->
+      e.preventDefault()
+      @manifests.trigger "readingMode", 'std'
+
+      curCanvas = @manifests.first().canvasesData.first()
+
+      layerAnnos = curCanvas.layerAnnos.find (m) ->
+            return m.get("sc:motivatedBy")["@id"] == "sga:source"
+
+      $.get layerAnnos.get("resource"), ( data ) ->    
+        surface = data.getElementsByTagName 'surface'
+        serializer = new XMLSerializer()
+        txtdata = serializer.serializeToString surface[0] 
+        txtdata = txtdata.replace /\&/g, '&amp;'
+        txtdata = txtdata.replace /%/g, '&#37;'
+        txtdata = txtdata.replace /</g, '&lt;'
+        txtdata = txtdata.replace />/g, '&gt;'
+
+        xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
+        curCanvas.trigger "addLayer", "Text", xml
+        prettyPrint()
 
 
   class SGASharedCanvas.Component.LimitViewControls extends ComponentView
