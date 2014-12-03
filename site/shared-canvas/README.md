@@ -29,7 +29,11 @@ Then build the application:
 $ grunt
 ```
 
-And if you want to see the demo:
+If you want to see the demo you will probably need to make the XML files
+available. Fortunately they're available a few directories up from the 
+shared canvas application. So you need to:
+
+    ln -s ../data/tei /home/ed/Projects/sga tei
 
 ``` bash
 $ grunt run
