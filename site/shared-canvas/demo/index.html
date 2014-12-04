@@ -10,13 +10,13 @@
 
   <body class="page-node node-type-sharedcanvas">
     <div id ="content-main" class="container_12 clearfix" style="margin: auto">
-    <div class="grid_12 grid_main" id="SGASharedCanvasViewer" data-manifest="a.jsonld">
+    <div class="grid_12 grid_main">
     <div id="main-content">
       <h1 class="title" id="page-title">Example SGA Shared Canvas Viewer</h1>
       <div class="region region-content">
         <div id="block-system-main" class="block block-system">
           <div class="content">
-            <div class="detail-view-tools">
+            <div class="detail-view-tools" id="SGASharedCanvasViewer" data-manifest="a.jsonld">
               <form name="sgaDetails" id="sgaForm" class="well form-inline">
                 <fieldset class="meta-data-view">
                   <div class="noborder control-group row">
@@ -44,7 +44,7 @@
                               <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Search" id="searchbox" />
                                 <div class="input-group-btn">
-                                  <a type="button" class="btn btn-sm btn-default" tabindex="-1"><i class="icon-search icon-flip-horizontal" id="searchbtn"></i></a>
+                                  <a type="button" class="btn btn-sm btn-default" tabindex="-1" id="searchbtn"><i class="icon-search icon-flip-horizontal"></i></a>
                                   <a type="button" class="btn btn-sm btn-default dropdown-toggle accordion-toggle collapsed" data-toggle="collapse" tabindex="-1" data-parent="accordion-parent" title="Show Search Filter" href="#collapse-one"><i class="icon-chevron-up"></i></a>
                                 </div>
                               </div>

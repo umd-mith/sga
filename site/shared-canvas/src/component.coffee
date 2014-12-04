@@ -321,12 +321,24 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       e.preventDefault()
       loc = Backbone.history.fragment
 
-      q = @$el.find("input#searchbox").val()
+      fields_html = $(e.target).find('#limit-search input:checked')
+      fields = ""
+      if fields_html.length == 0
+        fields = "text"
+      else
+        for f,i in fields_html
+          fields += $(f).val()
+          if i+1 != fields_html.length
+            fields +=  ','
+      val = @$el.find("input#searchbox").val()
+      if !val.match '^\s*$'
+        q = "f:"+fields+"|q:"+val
 
-      # remove search fragment if present
-      loc = loc.replace(/\/search\/f:[^\|]+\|q:[^\/]+/, "")
+        # remove search fragment if present
+        loc = loc.replace(/\/search\/f:[^\|]+\|q:[^\/]+/, "")
 
-      Backbone.history.navigate(loc+'/search/f:text|q:'+q, {trigger:true})
+        Backbone.history.navigate(loc+'/search/'+q, {trigger:true})
+      false
 
     submitForm: (e) ->
       e.preventDefault()
