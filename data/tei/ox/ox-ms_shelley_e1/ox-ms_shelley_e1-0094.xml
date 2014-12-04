@@ -29,12 +29,14 @@
     <line>Vexing the self-content of wisest men &#8212;</line>
     <line>That we will be dread thought beneath thy brain</line>
     <line>And foul desire round thine astonished heart</line>
-    <line>thy</line>
     <line>And blood with<mod>
         <del rend="overwritten">out</del>
         <add place="intralinear">in</add>
       </mod>
-      <del rend="strikethrough">your</del> labyrithine veins</line>
+      <mod>
+        <del rend="strikethrough">your</del>
+        <add place="superlinear">thy</add>
+      </mod> labyrithine veins</line>
     <line>Crawling like agony</line>
     <line rend="indent5"><add><metamark function="count">X</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0094.02"/>

@@ -5,6 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0078" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0078.jp2"/>
   <zone type="main">
+    <!-- this whole page needs attention, how do we separatate the calculations? -->
     <line>20</line>
     <line>These shall perform your task <hi rend="underline">37</hi></line>
     <line>140</line>
@@ -21,7 +22,7 @@
     <line>69 37260 690</line>
     <line>10) <hi rend="underline">37260</hi>
       <milestone unit="tei:speaker" spanTo="#e1-0078.02"/>Mercury<anchor xml:id="e1-0078.02"/>
-      <hi rend="underline">54</hi> 37<hi rend="subscript">2</hi>460</line>
+      <hi rend="underline">54</hi> 372460</line>
     <line>Crouch then in silence.&#8212; 34 Awful Sufferer<unclear reason="illegible"
       >,</unclear>2760 <hi rend="underline">.20</hi></line>
     <line/>
@@ -56,7 +57,7 @@
         <add place="superlinear">the strange might of</add>
       </mod> unimagined pains</line>
     <line>The powers who scheme slow agonies in hell,</line>
-    <line>And my commission is{,} to lead them here</line>
+    <line>And my commission is<unclear reason="illegible">,</unclear> to lead them here</line>
     <line rend="right"><add><metamark function="count">355</metamark></add></line>
   </zone>
 </surface>

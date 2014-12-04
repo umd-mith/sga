@@ -31,6 +31,7 @@
     <line>And looks of <del rend="strikethrough">des</del> firm defiance, &#x26; calm hate</line>
     <line>And such despair as mocks itself with smiles</line>
     <line>Written as on a scroll...yet speak&#x2013;o speak..</line>
-    <!--Below the final line on this page there's a long curving line and a mark that almost looks like a comma but clearly isn't; I wasn't sure how to encode those-->
+    <line><add><metamark function="separate"
+        >&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</metamark></add></line>
   </zone>
 </surface>
