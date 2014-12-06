@@ -315,7 +315,7 @@ window.SGAsearch = {}
         # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
 
         r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/#{orig_id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
-        r.detailQuery = "s=f:#{fields}|q:#{query}"
+        r.detailQuery = "/search/f:#{fields}|q:#{query}"
 
         sr.set r
 

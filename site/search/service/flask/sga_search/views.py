@@ -2,7 +2,7 @@
 from flask import jsonify, request, make_response, abort, render_template, url_for, json
 from sga_search import sga_search, annotator, crossdomain
 
-import solr, urllib2, ast, uuid, re
+import solr, urllib2, ast, uuid, re, os
 
 
 sga_search.jinja_env.globals['static'] = (
@@ -25,6 +25,8 @@ def search():
     
     def do_search(s, f, q, start, fq, sort, pageLength=20):
         """ Send query to solr and prepare slimmed down JSON object for displaying results """
+
+        viewer = "/wwa/?mf="
 
         hl_simple_pre = '<em>'
         hl_simple_post = '</em>'
@@ -90,11 +92,16 @@ def search():
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
 
+            parts = res["id"].split('-')
+            viewer_url = "%s%s#/p%d/" % (viewer, parts[0], int(parts[1]))
+
+            res["viewer_url"] = viewer_url
+
             # metadata
             results["metadata"][res["shelfmark"]] = {
                 "shelf_label":res["shelf_label"],
                 "work":res["work"],
-                "viewer_url":res["viewer_url"],
+                "viewer_url":viewer_url,
                 "authors":res["authors"],
                 "attribution":res["attribution"]
             }
@@ -150,6 +157,7 @@ def annotate():
     def do_annotation(s, f, q):
         # This will probably stay hardcoded
         TEI_data = "http://shelleygodwinarchive.org/tei/ox/"
+        format = "jsonld"
         hl_simple_pre = '_#_'
         hl_simple_post = '_#_'
         annotations = []
@@ -188,13 +196,21 @@ def annotate():
         for i, TEI_id in enumerate(r["highlighting"]):            
             hl = r["highlighting"][TEI_id]["text"][0]
             
-            annotations += annotator.oa_annotations(hl, TEI_id, TEI_data, uid+":-"+str(i), hl_simple_pre, hl_simple_post)
-
+            annotations += annotator.oa_annotations(hl, TEI_id, TEI_data, uid+":-"+str(i), hl_simple_pre, hl_simple_post, format)
         # prepare a headless JSON
         final = {}
+
+        if format == "jsonld":
+            final["@context"] = "http://mith.um.edu/sc/context.json"
+            final["@graph"] = []
+
         for anno in annotations:
-            for a in anno:
-                final[a] = anno[a]
+            if format == "jsonld":
+                final["@graph"].append(anno)
+            else:
+                for a in anno:
+                    final[a] = anno[a]
+            
 
         return jsonify(final)
 
