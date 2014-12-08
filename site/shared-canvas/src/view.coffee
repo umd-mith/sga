@@ -895,6 +895,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       baseURL = @model.get("service") + "?url_ver=Z39.88-2004&rft_id=" + @model.get("@id")
 
       @setZoom = (z) ->
+        return
 
       zoomLevel = null
 
@@ -1244,8 +1245,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             setScale options.scale
 
           # Listen to Image Controls zoom value for updating
+          @variables.set "lastZoom", imageControls.variables.get 'zoom'
           @listenTo imageControls.variables, 'change:zoom', (z) ->
-            @setZoom z
+            if z != @variables.get "lastZoom" 
+              @variables.set "lastZoom", z
+              @setZoom z
       @
 
 )()
