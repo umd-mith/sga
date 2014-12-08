@@ -55,9 +55,26 @@ module.exports = function(grunt) {
           'bower_components/jquery/jquery.min.js',
           'bower_components/jquery-ui/ui/minified/jquery-ui.min.js',
           'bower_components/bootstrap/dist/js/bootstrap.min.js',
-          'lib/vendor/google-prettify.js',
           'bower_components/underscore/underscore.js',
           'bower_components/backbone/backbone.js',
+          'bower_components/google-code-prettify/src/prettify.js',
+          // 'bower_components/perfect-scrollbar/min/perfect-scrollbar-0.4.8.min.js'
+        ], 
+        dest: 'dist/dependencies.js'
+      },
+      drupal: {
+        options: {
+          separator: ';'
+        },
+        src: [
+          'bower_components/modernizr/modernizr.js',
+          'bower_components/jquery/jquery.min.js',
+          // 'bower_components/jquery-ui/ui/minified/jquery-ui.min.js',
+          // 'bower_components/bootstrap/dist/js/bootstrap.min.js',
+          'bower_components/underscore/underscore.js',
+          'bower_components/backbone/backbone.js',
+          'bower_components/google-code-prettify/src/prettify.js',
+          // 'bower_components/perfect-scrollbar/min/perfect-scrollbar-0.4.8.min.js'
         ], 
         dest: 'dist/dependencies.js'
       }
@@ -163,6 +180,16 @@ module.exports = function(grunt) {
     'bower', 
     'coffee', 
     'concat:js', 
+    'uglify', 
+    'less', 
+    'copy:install'
+  ]);
+
+  grunt.registerTask('drupal', [
+    'install-dependencies', 
+    'bower', 
+    'coffee', 
+    'concat:drupal', 
     'uglify', 
     'less', 
     'copy:install'

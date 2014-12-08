@@ -27,19 +27,31 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
     nextPage: (e) ->
       e.preventDefault()
       newPage = @variables.get("seqPage")+1
-      Backbone.history.navigate("#/page/"+newPage)
+      hash = "#/p"+newPage
+      if Backbone.history.location.hash.indexOf("#/p") > -1
+        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      Backbone.history.navigate hash
     prevPage: (e) ->
       e.preventDefault()
       newPage = @variables.get("seqPage")-1
-      Backbone.history.navigate("#/page/"+newPage)
+      hash = "#/p"+newPage
+      if Backbone.history.location.hash.indexOf("#/p") > -1
+        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      Backbone.history.navigate hash
     firstPage: (e) ->
       e.preventDefault()
       newPage = @variables.get("seqMin")
-      Backbone.history.navigate("#/page/"+newPage)
+      hash = "#/p"+newPage
+      if Backbone.history.location.hash.indexOf("#/p") > -1
+        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      Backbone.history.navigate hash
     lastPage: (e) ->
       e.preventDefault()
       newPage = @variables.get("seqMax")
-      Backbone.history.navigate("#/page/"+newPage)
+      hash = "#/p"+newPage
+      if Backbone.history.location.hash.indexOf("#/p") > -1
+        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      Backbone.history.navigate hash
 
     initialize: (options) ->
       super    
@@ -72,8 +84,6 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       @data = options.data
 
       @listenTo @variables, 'change:seqMax', (n) ->
-        # The value passed in is human readable. Remove 1.
-        n = n-1
 
         getLabel = (n) =>
           # For now we assume there is only one sequence.
@@ -83,7 +93,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
           canvases = sequence.get "canvases"
           canvasId = canvases[n]
           canvas = @data.canvasesMeta.get canvasId
-          canvas.get "label"
+          canvas.get "sga:folioLabel"
 
         try 
           if @$el.data( "ui-slider" ) # Is the container set?
@@ -97,20 +107,20 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
               min: @variables.get 'seqMin' 
               max: pages
               value: pages
-              step: 1
+              step: 0
               slide: ( event, ui ) ->
                 $(ui.handle).text(getLabel(pages - ui.value))
               stop: ( event, ui ) ->
-                # now update actual value, re-add 1 for human redeability.
-                newPage =  pages - ui.value + 1
-                Backbone.history.navigate("#/page/"+newPage)
+                newPage =  pages - ui.value
+                Backbone.history.navigate("#/p"+(newPage+1))
 
-            @$el.find("a").text( getLabel(0) )
+            @listenTo @variables, "change:seqPage", (n) ->
+              @$el.find("a").text( getLabel(n-1) )
         
             # Using the concept of "Event aggregation" (similar to the dispatcher in Angles)
             # cfr.: http://addyosmani.github.io/backbone-fundamentals/#event-aggregator
-            Backbone.on 'viewer:resize', (el) =>
-              @$el.height(el.height() + 'px')
+            Backbone.on 'viewer:resize', (options) =>
+              @$el.height(options.container.height() + 'px')
 
         catch e
           console.log e, "Unable to update maximum value of slider"
@@ -127,11 +137,34 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
         try 
           if @$el.data( "ui-slider" ) # Is the container set?
             @$el.slider
-              value: @variables.get('seqMax') - n
+              value: @variables.get('seqMax') - (n-1) # The value passed in is human readable. Remove 1.
           if options.getLabel?
             @$el.find("a").text(getLabel(n))
         catch e
           console.log e, "Unable to update value of slider"
+
+      # Draw search result indicators
+      # Backbone.on "viewer:searchResults", (results) =>
+      #   # Remove existing highlights, if any
+      #   @$el.find('.res').remove()
+
+      #   # Append highglights
+
+      #   pages = @variables.get "seqMax"
+
+      #   try
+      #     for r in results
+      #       r = r
+      #       res_height = @$el.height() / (pages)
+      #       res_h_perc = (pages) / 100
+      #       s_min = @$el.slider("option", "min")
+      #       s_max = @$el.slider("option", "max")
+      #       valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
+      #       adjustment = res_h_perc / 2
+      #       # console.log valPercent
+      #       @$el.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+      #   catch e
+      #     console.log "Unable to update slider with search results"
 
   class SGASharedCanvas.Component.ImageControls extends ComponentView
 
@@ -142,21 +175,173 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
     zoomReset: (e) ->
       e.preventDefault()
-      @variables.set "zoom", @variables.get("minZoom")
+      @variables.set "zoom", 0
+
 
     zoomIn: (e) ->
       e.preventDefault()
       zoom = @variables.get "zoom"
-      if Math.floor zoom+1 <= @variables.get "maxZoom"
+      range = @variables.get("maxZoom") - @variables.get("minZoom")
+      if Math.floor zoom+1 <= range
         @variables.set "zoom", Math.floor zoom+1
 
     zoomOut: (e) ->
       e.preventDefault()
       zoom = @variables.get "zoom"
-      minZoom = @variables.get "minZoom"
-      if Math.floor zoom-1 > minZoom
+      range = @variables.get("maxZoom") - @variables.get("minZoom")
+      if Math.floor zoom-1 > 0
         @variables.set "zoom", Math.floor zoom-1
-      else if Math.floor zoom-1 == Math.floor minZoom
-        @variables.set "zoom", minZoom
+      else 
+        @variables.set "zoom", 0
 
+  class SGASharedCanvas.Component.ReadingModeControls extends ComponentView
+
+    initialize: ->
+      super
+      @manifests = SGASharedCanvas.Data.Manifests
+
+    events: 
+      'click #img-only': 'setImgMode'
+      'click #mode-std': 'setStdMode'
+      'click #mode-rdg': 'setRdgMode'
+      'click #mode-xml': 'setXmlMode'
+
+    setImgMode: (e) ->
+      e.preventDefault()
+      @manifests.trigger "readingMode", 'img'
+
+    setStdMode: (e) ->
+      e.preventDefault()
+      @manifests.trigger "readingMode", 'std'
+
+    setRdgMode: (e) ->
+      e.preventDefault()
+      @manifests.trigger "readingMode", 'std'
+
+      curCanvas = @manifests.first().canvasesData.first()
+
+      layerAnnos = curCanvas.layerAnnos.find (m) ->
+            return m.get("sc:motivatedBy")["@id"] == "sga:reading"
+
+      $.get layerAnnos.get("resource"), ( data ) ->    
+        d = $.parseHTML data
+        for e in d
+          if $(e).is('div')
+            curCanvas.trigger "addLayer", "Text", e
+
+    setXmlMode: (e) ->
+      e.preventDefault()
+      @manifests.trigger "readingMode", 'std'
+
+      curCanvas = @manifests.first().canvasesData.first()
+
+      layerAnnos = curCanvas.layerAnnos.find (m) ->
+            return m.get("sc:motivatedBy")["@id"] == "sga:source"
+
+      $.get layerAnnos.get("resource"), ( data ) ->    
+        surface = data.getElementsByTagName 'surface'
+        serializer = new XMLSerializer()
+        txtdata = serializer.serializeToString surface[0] 
+        txtdata = txtdata.replace /\&/g, '&amp;'
+        txtdata = txtdata.replace /%/g, '&#37;'
+        txtdata = txtdata.replace /</g, '&lt;'
+        txtdata = txtdata.replace />/g, '&gt;'
+
+        xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
+        curCanvas.trigger "addLayer", "Text", xml
+        prettyPrint()
+
+
+  class SGASharedCanvas.Component.LimitViewControls extends ComponentView
+
+    initialize: (options) ->
+      super
+
+      # set css classes scope to be limited from options
+      @limitValues = [].concat options.include
+      # set colors for visible and limited objects
+      @colors = options.colors
+      @colors = {} if !@colors?
+      if !@colors.visible?
+        @colors.visible = '#a54647'
+      if !@colors.limited?
+        @colors.limited = '#D9D9D9'
+      # set a default limiter if specified. 
+      # elements outside of the classes scope will be kept visible when 
+      # the default limiter is selected.
+      @defLimiter = options.defLimiter
+
+      # set css classes scope to be limited from HTML template
+      @$el.find('input').each (i,e) =>
+        vals = $(e).val()
+        vals = vals.split /\s+/g
+        for v in vals
+          if v != 'all'
+            @limitValues.push v
+
+      # Apply css to limited and visible object according to selected class
+      @$el.change (e) =>
+        checked = $(e.target).val()
+        checked = checked.split /\s+/g
+
+        # Remove limit view css if present
+        $('#LimitViewControls_classes').remove()
+
+        if 'all' not in checked
+
+          css = ""
+          hide = ""
+
+          for c in checked
+            # Show
+            css += " .sharedcanvas[data-types] .#{c} { color: #{@colors.visible} }"          
+
+            # If this is the default delimiter, make elements outside of class scope visible.
+            # Also, create a css declaration for each limiter in the scope
+            if checked.length == 1 and c == @defLimiter
+              for limit in @limitValues
+                css += " .sharedcanvas[data-types] .#{limit} { color: #{@colors.limited} }"
+                css += " .sharedcanvas[data-types] *:not(.#{limit}) { color: #{@colors.visible} }"
+            # If not, then just hide everything that is not in our limiter's class
+            else
+              hide += ":not(.#{c})"              
+
+          css += " .sharedcanvas[data-types] *#{hide} { color: #{@colors.limited} }"
+          
+          # Append new style definitions to head
+          $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head")
+
+  class SGASharedCanvas.Component.SearchBox extends ComponentView
+
+    events: 
+      'submit': 'search'
+      'click #searchbtn': 'submitForm'
+
+    search: (e) ->
+      e.preventDefault()
+      loc = Backbone.history.fragment
+
+      fields_html = $(e.target).find('#limit-search input:checked')
+      fields = ""
+      if fields_html.length == 0
+        fields = "text"
+      else
+        for f,i in fields_html
+          fields += $(f).val()
+          if i+1 != fields_html.length
+            fields +=  ','
+      val = @$el.find("input#searchbox").val()
+      if !val.match '^\s*$'
+        q = "f:"+fields+"|q:"+val
+
+        # remove search fragment if present
+        loc = loc.replace(/\/search\/f:[^\|]+\|q:[^\/]+/, "")
+
+        Backbone.history.navigate(loc+'/search/'+q, {trigger:true})
+      false
+
+    submitForm: (e) ->
+      e.preventDefault()
+      @$el.submit()
+      
 )()
