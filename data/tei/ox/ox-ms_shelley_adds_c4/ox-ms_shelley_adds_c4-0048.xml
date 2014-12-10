@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="4966" lry="7248"
-  xml:id="ox-ms_shelley_adds_c4-0048" partOf="#ox-ms_shelley_adds_c4"
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0048" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="20r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0048.jp2"/>
+  <zone type="library"><line>20</line></zone>
+  <zone type="pagination"><line rend="indent2">3)</line></zone>
   <zone type="main">
-    <line>As</line>
-    <line><del rend="strikethrough">As</del> clear as when a veil of light is <del rend="strikethrough">spread</del> drawn</line>
+    <line><mod>
+        <del rend="strikethrough">As</del>
+        <add place="superlinear">As</add>
+      </mod> clear as when a veil of light is <del rend="strikethrough">spread</del> drawn</line>
     <line>O'er evening hills they glimmer; and I knew</line>
-    <line>That I had felt the freshness of that dawn</line>
-    <line>cold      brow &amp; hair</line>
-    <line>Bathed in the same <del rend="strikethrough">sweet</del> dew my <del rend="strikethrough">eyes</del></line>
-    <line>And sate as thus upon that slope of lawn</line>
+    <line rend="indent1">Th<mod>
+        <mod>
+          <del rend="overwritten">e</del>
+          <add place="intralinear">a</add>
+        </mod>
+        <add>t</add>
+      </mod> I had felt the freshness of that dawn</line>
+    <line>Bathed in the same <mod>
+        <del rend="strikethrough"><unclear reason="illegible">sweet</unclear></del>
+        <add place="superlinear">cold</add>
+      </mod> dew my <mod>
+        <del rend="strikethrough">eyes</del>
+        <add place="superlinear">brow &amp; hair</add>
+      </mod></line>
+    <line rend="indent1">And sate as thus upon that slope of <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">l</add>
+      </mod>awn</line>
     <line>Under the self same bough, &amp; heard as there</line>
-    <line>The birds the fountains &amp; the Ocean hold</line>
+    <line rend="indent1">The birds the fountains &amp; the Ocean hold</line>
     <line>Sweet talk in <del rend="strikethrough">the</del> music through the enamoured air.</line>
-    <line>And then a Vision on my brain was rolled ..</line>
+    <line rend="indent1">And then a Vision on my brain was rolled ..</line>
+    <line rend="center"><add><metamark>_____________</metamark></add></line>
+    <line rend="center"><add><metamark>___________________</metamark></add></line>
     <line><del rend="strikethrough">This was the</del></line>
     <line>As in that trance of wondrous thought I lay</line>
-    <line>This was the tenour of my waking dream.</line>
+    <line rend="indent1">This was the tenour of my waking dream.</line>
     <line>Methought I sate beside a public way</line>
-    <line>Thick strewn with summer dust, &amp; a great stream</line>
-    <line>Of people there was <del rend="strikethrough">hy</del> hurrying to &amp; fro</line>
-    <line>Numerous as gnats upon the evening gleam</line>
+    <line rend="indent1">Thick strewn with summer dust, &amp; a great stream</line>
+    <line>Of people <unclear reason="illegible">there</unclear> was <del rend="strikethrough"
+        >hy</del> hurrying to &amp; fro</line>
+    <line rend="indent1">Numerous as gnats upon the evening gleam</line>
     <line>All hastening onward yet none seemed to know</line>
-    <line>Whither he went, or whence he came, or why</line>
+    <line rend="indent1">Whither he went, or whence he came, or why</line>
   </zone>
 </surface>

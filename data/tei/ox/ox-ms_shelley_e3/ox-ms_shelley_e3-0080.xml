@@ -21,7 +21,8 @@
     <line>to the progress &amp; development of <unclear reason="illegible">the</unclear></line>
     <line>same spirit; the sacred Milton was,</line>
     <line>let it ever be remembered, a Republican</line>
-    <!-- Need to add a metamark for displacement here -->
+    <!-- Need to check the metamark for displacement here -->
+    <line><add><metamark function="displacement">&#9001;___________________</metamark></add></line>
     <milestone unit="tei:seg" spanTo="#e3-0080.01" corresp="e3-0081.01"/>
     <line>The peculiar style of intense &amp; comprehensive</line>
     <line>imagery which distinguishes the modern</line>
@@ -29,6 +30,7 @@
     <line>general power the product of the imitation</line>
     <line>of any particular writer.</line>
     <anchor xml:id="e3-0080.01"/>
+    <line><add><metamark function="displacement">______________________</metamark></add></line>
     <!-- And here also -->
     <line>and a bold enquirer into <mod>
         <del rend="strikethrough">faiths</del>
