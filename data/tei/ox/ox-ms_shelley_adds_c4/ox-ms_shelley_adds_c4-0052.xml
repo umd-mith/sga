@@ -1,46 +1,78 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="4966" lry="7248"
-  xml:id="ox-ms_shelley_adds_c4-0052" partOf="#ox-ms_shelley_adds_c4"
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0052" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="22r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0052.jp2"/>
+  <zone type="library"><line rend="right">22</line></zone>
   <zone type="main">
-    <line>told</line>
-    <line>Nor felt the breeze which from the forest <del rend="strikethrough">brought</del></line>
+    <line>Nor felt the breeze which from the forest <mod>
+        <del rend="strikethrough">brought</del>
+        <add place="superlinear">told</add>
+      </mod></line>
     <line><del rend="strikethrough">News of soft beds</del></line>
-    <line><del rend="strikethrough">glawn</del></line>
-    <line>Of grassy paths, &amp; wood lawns interspersed</line>
+    <line rend="indent1">Of grassy paths, &amp; wood <del rend="strikethrough"><add
+          place="superlinear"><mod>
+            <del rend="overwritten">green</del>
+            <add place="intralinear">lawn</add>
+          </mod></add></del> lawns interspersed</line>
+    <line rend="center"><add><metamark function="separate">____</metamark></add></line>
     <line>With overarching elms &amp; caverns cold</line>
-    <line>brood</line>
-    <line>And <del rend="strikethrough">glens</del> <del rend="strikethrough">banks of</del> sweet dreams <del rend="strikethrough">broods</del></line>
-    <line>Violet banks where <del rend="strikethrough">sweet sleep lives</del>, but they</line>
+    <line/>
+    <line rend="indent1">And <del rend="strikethrough">glens</del>
+      <mod>
+        <del rend="strikethrough">banks of</del>
+        <add place="sublinear">Violet banks where</add>
+        <del rend="strikethrough"><add place="sublinear">sweet sleep lives</add></del>
+      </mod> sweet dreams <mod>
+        <del rend="strikethrough">broods</del>
+        <add place="superlinear">brood</add>
+      </mod>
+      <add place="sublinear">, but they</add></line>
     <line>Pursued thier serious folly as of old ....</line>
-    <line><del rend="strikethrough">along</del></line>
-    <line>And as I gazed methought <del rend="strikethrough">upon</del> <del rend="strikethrough">the way</del></line>
-    <line>that in the way</line>
-    <line><del rend="strikethrough">There came a</del>           as the woods of June</line>
-    <line><del rend="strikethrough">waves &amp; woods</del></line>
-    <line>The throng grew wilder, <del rend="strikethrough">like the forest tops</del></line>
-    <line>When <del rend="strikethrough">the</del> <del rend="strikethrough">blast</del> the South wind <del rend="strikethrough">turns Heaven</del></line>
+    <line rend="center"><add><metamark function="count">______</metamark></add></line>
+    <line rend="indent1">And as I gazed methought <mod>
+        <del rend="strikethrough">upon</del>
+        <del rend="strikethrough"><add place="superlinear">along</add></del>
+      </mod>
+      <mod>
+        <del rend="strikethrough">the way</del>
+        <add place="sublinear">that in the way</add>
+      </mod></line>
+    <line><del rend="strikethrough">There came a</del></line>
+    <line>The throng grew wilder, <mod>
+        <del rend="strikethrough">like the forest tops</del>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">waves &amp; woods</add></del>
+          <add place="superlinear">as the woods of June</add>
+        </mod>
+      </mod></line>
+    <!-- Continue Here -->
+    <line>When <del rend="strikethrough">the</del>
+      <del rend="strikethrough">blast</del> the South wind <del rend="strikethrough">turns
+        Heaven</del></line>
     <line><del rend="strikethrough">makes the sad Heavens grey</del></line>
     <line>shakes the extinguished day.</line>
     <line>glare</line>
-    <line>And a cold <del rend="strikethrough">light</del> intenser than the <del rend="strikethrough">Sun</del> noon</line>
+    <line>And a cold <del rend="strikethrough">light</del> intenser than the <del
+        rend="strikethrough">Sun</del> noon</line>
     <line>obscured with</line>
-    <line>But icy cold, <del rend="strikethrough">with fascinating</del> light</line>
-    <line><del rend="strikethrough">Pierced</del> Heaven  &amp;  <del rend="strikethrough">covered earth</del>      Like young</line>
-    <line><del rend="strikethrough">filled the earth</del>,; <del rend="strikethrough">and</del> like the moon</line>
+    <line rend="indent1">But icy cold, <del rend="strikethrough">with fascinating</del> light</line>
+    <line><del rend="strikethrough">Pierced</del> Heaven &amp; <del rend="strikethrough">covered
+        earth</del> Like young</line>
+    <line><del rend="strikethrough">filled the earth</del>,; <del rend="strikethrough">and</del>
+      like the moon</line>
     <line>The Sun as he the stars.</line>
-    <line>When <del rend="strikethrough">on</del> on the <del rend="strikethrough">boun</del> <del rend="strikethrough">limits</del></line>
+    <line>When <del rend="strikethrough">on</del> on the <del rend="strikethrough">boun</del>
+      <del rend="strikethrough">limits</del></line>
     <line><del rend="strikethrough">limits of the day and <unclear>n</unclear></del></line>
     <line>sunlit limits of the night</line>
-    <line>Her white shell trembles amid crimson air</line>
+    <line rend="indent1">Her white shell trembles amid crimson air</line>
     <line>And whilst the sleeping tempest gathers might</line>
     <line>herald</line>
-    <line><del rend="strikethrough">Within her arms</del>            hape</line>
+    <line><del rend="strikethrough">Within her arms</del> hape</line>
     <line><del rend="strikethrough">When on</del></line>
-    <line>Doth, as a token of its coming, bear</line>
+    <line rend="indent1">Doth, as a token of its coming, bear</line>
   </zone>
 </surface>

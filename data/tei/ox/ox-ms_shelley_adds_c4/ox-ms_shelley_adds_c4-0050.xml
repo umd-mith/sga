@@ -1,40 +1,91 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="4966" lry="7248"
-  xml:id="ox-ms_shelley_adds_c4-0050" partOf="#ox-ms_shelley_adds_c4"
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0050" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="21r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0050.jp2"/>
   <zone type="main">
-    <line>for want of dew was soiled</line>
+    <delSpan spanTo="#c4-0050.01" rend="vertical_line"/>
+    <line rend="indent3">for want of dew was soiled</line>
     <line>And died within the hand that gathered it.&#8212;</line>
     <line>But few sought flowers there; they rather toiled</line>
+    <anchor xml:id="c4-0050.01"/>
+    <line rend="center"><add><metamark function="separate">___________</metamark></add></line>
     <line><del rend="strikethrough">A</del></line>
     <line><del rend="strikethrough">And more by</del></line>
     <line><del rend="strikethrough">Whither he came or</del></line>
     <line><del rend="strikethrough">And</del></line>
-    <line><del rend="strikethrough">Old men &amp; children</del></line>
+    <line><del rend="strikethrough">Old men &amp; children</del>
+      <del rend="strikethrough"><add><metamark function="count"
+      >L5000,0</metamark></add></del></line>
     <line><del rend="strikethrough">And by their motions they appeared to know</del></line>
-    <line>All <del rend="strikethrough">hurried on</del>, onward yet</line>
-    <line><del rend="strikethrough">And all seemed hurriedg</del>, <del rend="strikethrough">and</del> none seemed to know</line>
-    <line>Whither he went or whence he came, or why</line>
-    <line>He made one of the multitude, yet so</line>
-    <line>Was borne amid the crowd; as through the</line>
-    <line><del rend="strikethrough">the million</del>     <del rend="strikethrough">like</del>     sky</line>
-    <line>One of <del rend="strikethrough">an</del> <del rend="strikethrough">army</del> of <del rend="strikethrough">autumnal</del> leaves.&#8212;</line>
-    <line>summer's</line>
-    <line><del rend="strikethrough">leaves</del> million leaves <del rend="strikethrough">of autumns bier</del></line>
-    <line><del rend="strikethrough">Old age &amp; youth, manhood</del> &amp; infancy,</line>
-    <line><del rend="strikethrough">Which</del> <del rend="strikethrough"><unclear>On</unclear></del> <del rend="strikethrough">One of</del></line>
-    <line><del rend="strikethrough">Brought</del> <del rend="strikethrough">each</del> <del rend="strikethrough">his</del> <del rend="strikethrough">chariot</del></line>
+    <line> </line>
+    <line><mod>
+        <del rend="strikethrough">And all seemed</del>
+        <add place="superlinear">All</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">hurr<mod>
+            <del rend="overwritten">ying</del>
+            <add place="intralinear">ied</add>
+          </mod></del>
+        <del rend="strikethrough"><add place="superlinear">hurr<mod>
+              <del rend="overwritten">ying</del>
+              <add place="intralinear">ied</add>
+            </mod> on,</add></del>
+      </mod>, <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">onward yet</add>
+      </mod> none seemed to know</line>
+    <line rend="indent1">Whither he went or whence he came, or why</line>
+    <line>He made one of the multitude, yet so<del rend="smear"><unclear unit="chars" extent="1"
+        /></del></line>
+    <milestone unit="tei:l" spanTo="#c4-0050.02"/>
+    <line rend="indent1">Was borne amid the crowd; as <del rend="strikethrough"><add
+          place="sublinear">like</add></del> through the</line>
+    <line rend="right">sky</line>
+    <anchor xml:id="c4-0050.02"/>
+    <line>One of <mod>
+        <del rend="strikethrough">an</del>
+        <del rend="strikethrough">army</del>
+        <del rend="strikethrough"><add place="superlinear">the million</add></del>
+      </mod> of <del rend="strikethrough">autumnal</del> leaves.&#8212;</line>
+    <line><mod>
+        <del rend="strikethrough">Old age &amp; youth, manhood</del>
+        <del rend="strikethrough"><add place="superlinear">leaves</add></del>
+        <add place="superlinear">million leaves</add>
+      </mod> &amp; <mod>
+        <del rend="strikethrough"><add place="superlinear">of autumns bier</add></del>
+        <add place="superlinear">summer's</add>
+      </mod> infancy,</line>
+    <line><del rend="strikethrough">Which</del>
+      <del rend="strikethrough"><unclear reason="illegible">On</unclear></del>
+      <del rend="strikethrough">One of</del></line>
+    <line><del rend="strikethrough">Brought</del>
+      <del rend="strikethrough">each</del>
+      <del rend="strikethrough">his</del>
+      <del rend="strikethrough">chariot</del></line>
     <line><del rend="strikethrough">Each marshalled</del></line>
-    <line>[Each brought its &lt;?chariots&gt;: </line>
-    <line>[&lt;Were&gt;] mingled in one impulse], and [did] </line>
-    <line><del rend="strikethrough"><unclear>Were</unclear></del> <del rend="strikethrough"><unclear>Whirled</unclear></del> <del rend="strikethrough">Whirred</del> torrent</line>
-    <line>Mixed in one mighty <del rend="strikethrough">impulse</del> did appear</line>
-    <line><del rend="strikethrough">By</del></line>
-    <line><del rend="strikethrough">Some</del> flying from the thing they feared &amp; some</line>
-    <line><del rend="strikethrough">Some</del></line>
+    <line><del rend="strikethrough">Each brought its <unclear reason="illegible"
+        >chariots</unclear>:</del></line>
+    <line><del rend="strikethrough"><mod>
+          <del rend="overwritten">In</del>
+          <add place="intralinear">Were</add>
+        </mod> mingled in one impulse,</del> and <del><unclear reason="illegible"
+        >did</unclear></del></line>
+    <line><del rend="strikethrough"><unclear reason="illegible">Were</unclear></del>
+      <del rend="strikethrough"><unclear reason="illegible">Whirled</unclear></del>
+      <unclear reason="illegible">Whirred</unclear></line>
+    <line>Mixed in one mighty <mod>
+        <del rend="strikethrough">impulse</del>
+        <add place="superlinear">torrent</add>
+      </mod> did appear</line>
+    <line/>
+    <line><mod>
+        <del rend="strikethrough">Some</del>
+        <add place="superlinear"><unclear reason="illegible">By</unclear></add>
+      </mod> flying from the thing they feared &amp; some</line>
+    <line><unclear reason="illegible">Some</unclear></line>
   </zone>
 </surface>
