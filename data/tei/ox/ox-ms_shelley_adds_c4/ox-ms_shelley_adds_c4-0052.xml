@@ -18,7 +18,7 @@
             <add place="intralinear">lawn</add>
           </mod></add></del> lawns interspersed</line>
     <line rend="center"><add><metamark function="separate">____</metamark></add></line>
-    <line>With overarching elms &amp; caverns cold</line>
+    <line>With overarching elms <del rend="smear">,</del> &amp; caverns cold</line>
     <line/>
     <line rend="indent1">And <del rend="strikethrough">glens</del>
       <mod>
@@ -48,31 +48,58 @@
           <add place="superlinear">as the woods of June</add>
         </mod>
       </mod></line>
-    <!-- Continue Here -->
     <line>When <del rend="strikethrough">the</del>
-      <del rend="strikethrough">blast</del> the South wind <del rend="strikethrough">turns
-        Heaven</del></line>
-    <line><del rend="strikethrough">makes the sad Heavens grey</del></line>
-    <line>shakes the extinguished day.</line>
-    <line>glare</line>
-    <line>And a cold <del rend="strikethrough">light</del> intenser than the <del
-        rend="strikethrough">Sun</del> noon</line>
-    <line>obscured with</line>
-    <line rend="indent1">But icy cold, <del rend="strikethrough">with fascinating</del> light</line>
-    <line><del rend="strikethrough">Pierced</del> Heaven &amp; <del rend="strikethrough">covered
-        earth</del> Like young</line>
-    <line><del rend="strikethrough">filled the earth</del>,; <del rend="strikethrough">and</del>
-      like the moon</line>
-    <line>The Sun as he the stars.</line>
-    <line>When <del rend="strikethrough">on</del> on the <del rend="strikethrough">boun</del>
-      <del rend="strikethrough">limits</del></line>
-    <line><del rend="strikethrough">limits of the day and <unclear>n</unclear></del></line>
-    <line>sunlit limits of the night</line>
+      <del rend="strikethrough">blast</del> the South wind <mod>
+        <del rend="strikethrough">turns Heaven</del>
+        <mod>
+          <del rend="strikethrough"><add place="sublinear">makes the sad Heavens grey</add></del>
+          <add place="sublinear">shakes the extinguished day.</add>
+        </mod>
+      </mod></line>
+    <line rend="center"><add><metamark function="separate">_____</metamark></add></line>
+    <line>And a cold <mod>
+        <del rend="strikethrough">light</del>
+        <add place="superlinear">glare</add>
+      </mod> intenser than the <del rend="strikethrough">Sun</del> noon</line>
+    <line/>
+    <line rend="indent1">But icy cold, <mod>
+        <del rend="strikethrough">with fascinating</del>
+        <add place="superlinear">obscured with</add>
+      </mod> light</line>
+    <mod spanTo="#c4-0052.01"/>
+    <line><del rend="strikethrough">Pierced Heaven &amp;</del>
+      <mod>
+        <del rend="strikethrough">filled the</del>
+        <del rend="unmarked">earth</del>
+        <del rend="strikethrough"><add place="superlinear">covered earth</add></del>
+      </mod><del rend="unmarked">,;</del>
+      <anchor xml:id="c4-0052.03"/>
+      <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">Like</add>
+      </mod> like the <add place="superlinear">young</add> moon</line>
+    <line><milestone unit="tei:seg" spanTo="#c4-0052.02" corresp="#c4-0052.03"/><add>The Sun as he
+        the stars.</add><anchor xml:id="c4-0052.02"/></line>
+    <anchor xml:id="c4-0052.01"/>
+    <line>When <del rend="strikethrough">on</del> on the <mod>
+        <del rend="strikethrough">boun</del>
+        <del rend="strikethrough">limits</del>
+        <mod>
+          <del rend="strikethrough"><add place="sublinear">limits of the day and <unclear
+                reason="illegible">n</unclear></add></del>
+          <add place="sublinear">sunlit limits of the night</add>
+        </mod>
+      </mod></line>
     <line rend="indent1">Her white shell trembles amid crimson air</line>
     <line>And whilst the sleeping tempest gathers might</line>
-    <line>herald</line>
-    <line><del rend="strikethrough">Within her arms</del> hape</line>
+    <line rend="indent4"><add><metamark function="separate">_____</metamark></add></line>
+    <line rend="indent2"><add><milestone unit="tei:seg" spanTo="#c4-0052.04" xml:id="c4-0052.06"
+        />herald</add>
+      <add><unclear reason="illegible">hape</unclear></add></line>
+    <line><del rend="strikethrough">Within her arms</del></line>
     <line><del rend="strikethrough">When on</del></line>
-    <line rend="indent1">Doth, as a token of its coming, bear</line>
+    <line rend="indent1">Doth, as a <milestone unit="tei:seg" spanTo="#c4-0052.04"
+        xml:id="c4-0052.05"/>token<anchor xml:id="c4-0052.04"/> of its coming, bear <alt
+        targets="#c4-0052.05 #c4-0052.06" mode="excl" weights="0 1"/></line>
   </zone>
 </surface>

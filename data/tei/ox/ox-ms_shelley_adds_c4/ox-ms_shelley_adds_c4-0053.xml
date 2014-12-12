@@ -1,43 +1,93 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="4966" lry="7248"
-  xml:id="ox-ms_shelley_adds_c4-0053" partOf="#ox-ms_shelley_adds_c4"
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0053" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="22v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0053.jp2"/>
-  <zone type="main">
-    <line><del rend="strikethrough">The flowers which in the</del></line>
+  <zone type="main" rotate="180">
+    <delSpan spanTo="#c4-0053.02" rend="vertical_line"/>
+    <line rend="left"><del rend="strikethrough">The flowers which in the</del></line>
     <line><del rend="strikethrough">And Nor</del></line>
     <line><del rend="strikethrough">Yet it</del></line>
-    <line><del rend="strikethrough"><unclear>And</unclear></del> <del rend="strikethrough">None seemed his foes</del></line>
-    <line><del rend="strikethrough">Yet no one seemed</del>          vain</line>
-    <line>the <del rend="strikethrough">idle</del> wind could sow</line>
-    <line><del rend="strikethrough">As</del> And all the flowers which <del rend="strikethrough">idly dared to grow</del></line>
-    <line>way                     &amp; spoiled</line>
-    <line>Beside this <del rend="strikethrough">path</del> <del rend="strikethrough">were  bruised</del> &amp; Trampled down</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">all the rivulets which dared to flow</del></line>
-    <line><del rend="strikethrough">every little rill which dared to flow</del></line>
-    <line><del rend="strikethrough">And many sought <unclear>whic</unclear></del></line>
+    <line><del rend="strikethrough"><unclear reason="illegible">And</unclear></del>
+      <del rend="strikethrough">None seemed his foes</del></line>
+    <line rend="center"><add><metamark function="separate">_____</metamark></add></line>
+    <line><del rend="strikethrough">Yet no one seemed</del></line>
+    <line><del rend="strikethrough">As</del> And all the flowers which <mod>
+        <del rend="strikethrough">idly dared to grow</del>
+        <add place="superlinear">the</add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">idle</add></del>
+          <add place="superlinear">vain</add>
+        </mod>
+        <add place="superlinear"> wind could sow</add>
+      </mod></line>
+    <line>Beside this <mod>
+        <del rend="strikethrough">path</del>
+        <add place="superlinear">way</add>
+      </mod>
+      <del rend="strikethrough">were bruised</del> &amp; Trampled down <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">&amp; spoiled</add>
+      </mod></line>
+    <!-- "Trampled" probably not capitalized -->
+    <line><del rend="strikethrough">And</del>
+      <mod>
+        <del rend="strikethrough">all the rivulets which dared to flow</del>
+        <del rend="strikethrough"><add place="sublinear">every little rill which dared to
+          flow</add></del>
+      </mod></line>
+    <line/>
+    <line><del rend="strikethrough">And many sought <unclear reason="illegible"
+      >whic</unclear></del></line>
     <line><del rend="strikethrough">Beside it was choked</del></line>
-    <line><del rend="strikethrough">And on a <unclear>new</unclear></del></line>
-    <line><del rend="strikethrough">And any <unclear>there</unclear></del></line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">every all the wells &amp; rills</del></line>
-    <line><del rend="strikethrough">The <unclear>on</unclear></del> Not one among the many seemed to know</line>
-    <line>as</line>
-    <line><del rend="strikethrough">like</del> <del rend="strikethrough">grey</del></line>
-    <line><del rend="strikethrough">even as</del></line>
-    <line>His way, but <del rend="strikethrough">as <unclear>the</unclear></del> moths when grass is mown</line>
-    <line>Go blindly <del rend="strikethrough"><unclear>flutt</unclear></del> fluttering from the <unclear>moving heap</unclear></line>
+    <line><del rend="strikethrough">And on a <unclear reason="illegible">new</unclear></del></line>
+    <line><del rend="strikethrough">And any <unclear reason="illegible">there</unclear></del></line>
+    <line><del rend="strikethrough">And</del>
+      <del rend="strikethrough">every all the wells &amp; rills</del></line>
+    <delSpan spanTo="#c4-0053.01" rend="vertical_line"/>
+    <line><del rend="strikethrough">The <unclear reason="illegible">on</unclear></del> Not one among
+      the many seemed to know</line>
+    <line rend="center"><add><metamark function="insert">_____</metamark></add></line>
+    <line rend="center"><add><metamark function="insert">__</metamark></add></line>
+    <line>His way, but <mod>
+        <del rend="strikethrough">as <unclear reason="illegible">the</unclear></del>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">even as</add></del>
+          <mod>
+            <del rend="strikethrough"><add place="superlinear">like grey</add></del>
+            <add place="superlinear">as</add>
+          </mod>
+        </mod>
+      </mod> moths when grass is mown</line>
+    <line rend="indent1">Go blindly <del rend="strikethrough"><unclear reason="illegible"
+          >flutt</unclear></del> fluttering from the <unclear reason="illegible">moving
+        heap</unclear></line>
+    <!-- Probably a semicolon after "heap" -->
+    <anchor xml:id="c4-0053.01"/>
     <line><del rend="strikethrough">As old &amp; young</del></line>
-    <line><del rend="strikethrough">Or as the winged seeds ere</del></line>
+    <line rend="indent1"><del rend="strikethrough">Or as the winged seeds ere</del></line>
     <line>The heartsease, &amp; which where nothing else will grow</line>
-    <line>and to <unclear> </unclear> <del rend="strikethrough">so</del> <del rend="strikethrough">soiled</del></line>
-    <line>were bruised <del rend="strikethrough">was</del> <del rend="strikethrough">soiled</del></line>
-    <line>was <unclear> </unclear></line>
-    <line>Lives in old walls, <del rend="strikethrough">pale</del> <del rend="strikethrough"><unclear> </unclear></del> in the hand was soiled</line>
-    <line>was pale</line>
-    <line>were</line>
-    <line><del rend="strikethrough">And  except <unclear>one</unclear></del></line>
+    <line rend="center"><add><metamark function="insert">__</metamark></add></line>
+    <line> </line>
+    <line>Lives in old w<hi rend="underline">a</hi>lls, <mod>
+        <add place="superlinear">was <unclear unit="chars" extent="3"/></add>
+        <add place="superlinear">were bruised</add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">was soiled</add></del>
+          <add place="superlinear">and to <unclear unit="chars" extent="3"/></add>
+          <del rend="strikethrough"><add place="superlinear">so soiled</add></del>
+        </mod>
+      </mod>
+      <mod>
+        <del rend="strikethrough">pale</del>
+        <del rend="strikethrough"><unclear unit="chars" extent="3"/></del>
+        <add place="sublinear">was <add place="sublinear">were</add> pale</add>
+      </mod> in the hand was soiled</line>
+    <!-- "were" is probably "wan" -->
+    <line><del rend="strikethrough">And except <unclear reason="illegilbe"
+      >one</unclear></del></line>
+    <anchor xml:id="c4-0053.02"/>
   </zone>
 </surface>
