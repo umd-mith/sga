@@ -5,7 +5,8 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0042" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0042.jp2"/>
   <zone type="pagination">
-    <line rend="center">3</line></zone>
+    <line rend="center">3</line>
+  </zone>
   <zone type="main">
     <line rend="right"><add><metamark function="count">36</metamark></add></line>
     <line>To wrench the rivets from my quivering wounds</line>
@@ -32,7 +33,7 @@
     <line>From these pale feet, which then might</line>
     <line rend="indent5">trample thee</line>
     <anchor xml:id="e1-0042.04"/>
-    <line rend="right"><metamark function="separate">____</metamark></line>
+    <line rend="right"><add><metamark function="separate">____</metamark></add></line>
     <!-- Not sure how to encode separate mark above -->
     <line>If they disdained not such a prostrate slave. &#x2013;</line>
     <line>Disdain? a<mod>

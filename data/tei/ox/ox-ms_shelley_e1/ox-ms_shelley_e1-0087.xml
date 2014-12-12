@@ -11,7 +11,7 @@
     <line>some times <del rend="strikethrough">a long</del>
       <del rend="strikethrough">you</del> a long attached</line>
     <line>chain of rings &amp; irons may be <del rend="strikethrough">been</del></line>
-    <line><del rend="strikethrough">hanging</del> one to the other.-- <mod>
+    <line><del rend="strikethrough">hanging</del> one to the other.&#8212; <mod>
         <del rend="strikethrough">Through</del>
         <add place="superlinear">To</add>
       </mod></line>
@@ -35,8 +35,8 @@
         <del rend="overwritten">ing</del>
         <add place="intralinear">ed</add>
       </mod>, <hi rend="underline">communi</hi></line>
-    <line><hi rend="underline">cating</hi> to others the {<del rend="strikethrough">attr</del>}
-      influence</line>
+    <line><hi rend="underline">cating</hi> to others the <del rend="strikethrough"><unclear
+          reason="illegible">attr</unclear></del> influence</line>
     <line>of <unclear reason="illegible">the</unclear> first enthusiasm creates</line>
     <line>a ch<mod>
         <del rend="overwritten">ia</del>
@@ -46,9 +46,10 @@
         <del rend="strikethrough">great</del>
         <add place="superlinear">excellent</add>
       </mod> authors of poems</line>
-    <line>not disciplined into excellence</line>
-    <line>are <del rend="strikethrough">excellent not</del> by art, <del rend="strikethrough"
-        >but</del></line>
+    <line>are <mod>
+        <del rend="strikethrough">excellent not</del>
+        <add place="superlinear">not disciplined into excellence</add>
+      </mod> by art, <del rend="strikethrough">but</del></line>
     <line><del rend="strikethrough">because they are</del>
       <del rend="strikethrough">inspired &amp; possessed</del></line>
     <line>but they utter <del rend="strikethrough"><mod>
@@ -61,8 +62,8 @@
       </mod>
       <del rend="strikethrough">being</del></line>
     <line>inspired &amp; posesse<unclear reason="illegible">d</unclear><mod>
-        <metamark function="insert"><unclear reason="illegible">^</unclear></metamark>
-        <add place="superlinear">as it were by a spirit.--</add>
+        <add><metamark function="insert"><unclear reason="illegible">^</unclear></metamark></add>
+        <add place="superlinear">as it were by a spirit.&#8212;</add>
       </mod> And thus</line>
     <line>the composers of lyric poetry,</line>
     <line>like C<unclear reason="illegible">or</unclear>ybants <del rend="strikethrough">who

@@ -10,7 +10,7 @@
   </zone>
   <zone type="main">
     <!-- "a" is an option for "a poet" instead of "poets" below -->
-    <line rend="indent5">a</line>
+    <line rend="indent5"><add>a</add></line>
     <line>descended upon him.-- In other respects poets</line>
     <line>may be <unclear reason="illegible">su</unclear>fficiently ignorant &amp; incapable.</line>
     <line><mod>
@@ -25,9 +25,10 @@
       </mod></line>
     <line>any art which they have acquired, but</line>
     <line>from the impulse of the divinity</line>
-    <line>did</line>
-    <line>within them; for, <del rend="strikethrough">if</del> they <del rend="strikethrough"
-        >even</del> kn<mod>
+    <line>within them; for, <mod>
+        <del rend="strikethrough">if</del>
+        <add place="superlinear">did</add>
+      </mod> they <del rend="strikethrough">even</del> kn<mod>
         <del rend="overwritten">ew</del>
         <add place="intralinear">ow</add>
       </mod></line>
@@ -38,17 +39,17 @@
     <line>with respect to <del rend="strikethrough">any</del> all or any other<unclear
         reason="illegible">s</unclear>
       <del rend="strikethrough">subj</del></line>
-    <line>purposely</line>
+    <line/>
     <line>The <unclear reason="case">G</unclear>od <del rend="strikethrough">purposely</del> has
-      deprived all</line>
-    <line>to adapt them for</line>
-    <line>poets, prophets &amp; soothsayers, <del rend="strikethrough"><unclear reason="illegible"
-          >whom</unclear></del></line>
+        <add place="superlinear">purposely</add> deprived all</line>
+    <line>poets, prophets &amp; soothsayers, <mod>
+        <del rend="strikethrough"><unclear reason="illegible">whom</unclear></del>
+        <add place="superlinear">to adapt them for</add>
+      </mod></line>
     <line><mod>
         <del rend="overwritten">the</del>
         <add place="intralinear">their</add>
-      </mod> employ<hi rend="sub">ments</hi>as his ministers &amp;</line>
-    <!--check if subscript or just falling script -->
+      </mod> employmentsas his ministers &amp;</line>
     <line>interpreters, of every particle of reason</line>
     <line>&amp; understanding; in order that we</line>
     <line>their auditors may acknowledge, that</line>

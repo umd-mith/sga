@@ -70,15 +70,18 @@
         <del rend="strikethrough">they</del>
         <add place="superlinear">those poets</add>
       </mod> say of divination, <del rend="strikethrough">whether</del></line>
-    <line><del rend="strikethrough">those poets</del></line>
     <line>both as <mod>
-        <restore><del rend="strikethrough">they</del></restore>
+        <mod>
+          <restore><del rend="strikethrough">they</del></restore>
+        </mod>
+        <del rend="strikethrough"><add place="superlinear">those poets</add></del>
       </mod> agree &amp; as they differ.&#8212;</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0039.11"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0039.11"/> A diviner certainly. <milestone unit="tei:speaker"
         spanTo="#e1-0039.12"/>Soc.<anchor xml:id="e1-0039.12"/> If you</line>
     <line>were a diviner do</line>
-    <!-- This is supposed to be bracketed off -->
+    <line rend="indent3"><add><metamark function="separate">&#8968;<hi rend="sup"
+          >_______</hi></metamark></add></line>
     <milestone unit="tei:seg" spanTo="#e1-0039.13" corresp="e1-0038.01"/>
     <line rend="indent3"><add>these are mine empire.</add></line>
     <anchor xml:id="e1-0039.13"/>

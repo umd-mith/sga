@@ -15,7 +15,7 @@
         <del rend="strikethrough">Peace</del>
         <add place="superlinear">Joy</add>
       </mod>, Empire &#x26; Victory</line>
-    <line>5<unclear reason="illegible">33</unclear></line>
+    <line><add>5<unclear reason="illegible">33</unclear></add></line>
     <milestone unit="tei:p" spanTo="e1-0073.01"/>
     <line><unclear reason="illegible">T</unclear>hen my dear friend we should not</line>
     <line>err, <mod>
@@ -51,13 +51,17 @@
         rend="underline">Ion</hi>.<anchor xml:id="e1-0073.02"/> What</line>
     <line>then is the reason, Socrates, that</line>
     <line>when any <del rend="strikethrough"><hi rend="underline">other poet is</hi></del>
-      <milestone unit="tei:seg" spanTo="#e1-0073.04" xml:id="e1-0073.06"/><mod>
-        <restore type="underline"><del rend="strikethrough"><hi rend="underline">the
-            theme</hi></del></restore>
-      </mod><anchor xml:id="e1-0073.04"/>
-      <milestone unit="tei:seg" spanTo="#e1-0073.05" xml:id="e1-0073.07"/><add place="sublinear"
-        >subject</add><anchor xml:id="e1-0073.05"/><alt targets="#e1-0073.06 #e1-0073.07"
-        mode="excl" weights="0 1"/>
+      <mod>
+        <milestone unit="tei:seg" spanTo="#e1-0073.04" xml:id="e1-0073.06"/>
+        <mod>
+          <restore type="underline"><hi rend="underline"><del rend="strikethrough">the
+              theme</del></hi></restore>
+        </mod>
+        <anchor xml:id="e1-0073.04"/>
+        <milestone unit="tei:seg" spanTo="#e1-0073.05" xml:id="e1-0073.07"/>
+        <add place="sublinear">subject</add>
+        <anchor xml:id="e1-0073.05"/>
+      </mod><alt targets="#e1-0073.06 #e1-0073.07" mode="excl" weights="0 1"/>
     </line>
     <line>of conversation, I cannot <mod>
         <del rend="strikethrough">bend</del>

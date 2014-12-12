@@ -6,8 +6,8 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0076" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0076.jp2"/>
   <zone type="main">
-    <milestone unit="tei:stage" spanTo="e1-0076.01"/>
     <delSpan spanTo="#e1-0076.11" rend="vertical_line"/>
+    <milestone unit="tei:stage" spanTo="e1-0076.01"/>
     <line rend="indent1">Enter <mod>
         <del rend="overwritten">m</del>
         <add place="intralinear">M</add>
@@ -26,15 +26,17 @@
     <milestone unit="tei:speaker" spanTo="#e1-0076.04"/>
     <line rend="center">3<hi rend="sup">d</hi>.</line><anchor xml:id="e1-0076.04"/>
     <line>The hope of torturing him smells like <mod spanTo="#e1-0076.05"/>
-      <del rend="strikethrough">fresh</del>
-      <del rend="strikethrough">corpses</del>
-      <add place="superlinear" next="#e1-0076.06">a <del rend="strikethrough" instant="true"
-          >hap</del>heap</add></line>
-    <line rend="indent1"><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"
-        /><anchor xml:id="e1-0076.06"/></line>
-    <line>To a death-bird after battle!</line>
-    <milestone unit="tei:speaker" spanTo="#e1-0076.07"/>
+      <mod>
+        <del rend="strikethrough">fresh</del>
+        <del rend="strikethrough">corpses</del>
+        <add place="superlinear">a</add>
+        <del rend="strikethrough"><add place="superlinear">hap</add></del>
+        <add place="superlinear">heap</add>
+      </mod></line>
+    <line><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"/> To a death-bird
+      after battle!</line>
     <delSpan spanTo="#e1-0076.12" rend="vertical_line"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0076.07"/>
     <line rend="center">1<hi rend="sup">st</hi>.</line><anchor xml:id="e1-0076.07"/>
     <mod spanTo="#e1-0076.08"/><line rend="indent3">Herald of Gods</line>
     <line>Darest thou delay<mod>
@@ -49,8 +51,9 @@
     <line>Should make us food &#x26; sport? Who can please long</line>
     <line>The <unclear reason="case">O</unclear>mnipotent?</line><anchor xml:id="e1-0076.08"/>
     <anchor xml:id="e1-0076.12"/>
-    <milestone unit="tei:speaker" spanTo="e1-0076.10"/><line rend="center">Mercury</line><anchor
-      xml:id="e1-0076.10"/>
+    <milestone unit="tei:speaker" spanTo="e1-0076.10"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0076.10"/>
     <line rend="indent3">Back to your towers of iron</line>
     <line>And gnash, beside the streams of fire wail</line>
     <line>Your foodless teeth!.. Geryon arise &#x26; Gorgon</line>

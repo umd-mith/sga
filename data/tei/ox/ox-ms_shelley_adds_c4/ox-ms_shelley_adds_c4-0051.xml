@@ -1,41 +1,92 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
   type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
   href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="4966" lry="7248"
-  xml:id="ox-ms_shelley_adds_c4-0051" partOf="#ox-ms_shelley_adds_c4"
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="4966" lry="7248" xml:id="ox-ms_shelley_adds_c4-0051" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="21v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0051.jp2"/>
   <zone type="main">
-    <line>Seeking the object of <del rend="strikethrough">an</del>other's fear</line>
+    <line rend="left">Seeking the object of <del rend="strikethrough">an</del>other's fear</line>
+    <line rend="center"><add><metamark function="separate">____</metamark></add></line>
     <line><del rend="strikethrough">And others</del></line>
     <line>And others as with steps towards the tomb</line>
-    <line><del rend="strikethrough">Dragging his weary limbs</del> intent</line>
-    <line><del rend="strikethrough">Watched</del> Pored on</line>
-    <line><del rend="strikethrough">And others so</del>    trodden           beneath,</line>
-    <line><del rend="strikethrough">Watching</del>, the <del rend="strikethrough">mangled</del> worms that crawled <del rend="strikethrough">below</del></line>
-    <line>mournfully</line>
-    <line>And <del rend="strikethrough">some</del> others <del rend="strikethrough">miserably</del> within the gloom</line>
-    <line>own     walked,</line>
-    <line>Of their shadow <del rend="strikethrough">sate</del>, and called it death ...</line>
+    <line><del rend="strikethrough">Dragging his weary limbs</del>
+      <del rend="strikethrough">intent</del></line>
+    <line><mod>
+        <del rend="strikethrough">Watching,</del>
+        <mod>
+            <del rend="strikethrough"><add place="superlinear">And others so</add></del>
+            <del rend="strikethrough"><add place="superlinear">Watched</add></del>
+            <add place="superlinear">Pored on</add>
+          </mod>
+      </mod> the <mod>
+        <del rend="strikethrough">mangled</del>
+        <add place="superlinear">trodden</add>
+      </mod> worms that crawled <mod>
+        <del rend="strikethrough">below</del>
+        <add place="superlinear">beneath,</add>
+      </mod></line>
+    <line>And <del rend="strikethrough">some</del> others <mod>
+        <del rend="strikethrough">miserably</del>
+        <add place="superlinear">mournfully</add>
+      </mod> within the gloom</line>
+    <line rend="center"><add><metamark function="separate">_____</metamark></add></line>
+    <line> </line>
+    <line>Of their <add place="superlinear">own</add> shadow <mod>
+        <del rend="strikethrough">sate,</del>
+        <add place="superlinear">walked,</add>
+      </mod> and called it death ...</line>
     <line><del rend="strikethrough">And some</del></line>
     <line><del rend="strikethrough">But many more or slow or swift pursued</del></line>
     <line>And some fled from it as it were a ghost,</line>
     <line><del rend="strikethrough">The</del></line>
-    <line>Half fainting <del rend="strikethrough">with</del></line>
-    <line>in the affliction of vain breath.</line>
+    <line>Half fainting <mod>
+        <del rend="strikethrough">with</del>
+        <add place="interlinear">in the</add>
+      </mod> affliction of vain breath.</line>
     <line>But more with motions which each other crost</line>
-    <line>the clouds threw</line>
-    <line>Pursued or shunned the shadows <del rend="strikethrough">of pale</del></line>
+    <line rend="indent1">Pursued <mod>
+        <del rend="overwritten">th</del>
+        <add place="intralinear">or</add>
+      </mod> shunned the shadows <mod>
+        <del rend="strikethrough">of pale</del>
+        <add place="superlinear">the clouds threw</add>
+      </mod></line>
     <line>Or birds within the noonday ether lost,</line>
-    <line>&#8212;&#8212;-</line>
+    <line rend="center"><add><metamark function="separate"
+      >&#8212;&#8212;&#8212;</metamark></add></line>
     <line>Upon that path where flowers never grew;</line>
-    <line>And faint for thirst &amp; weary with vain toil</line>
-    <line>whose</line>
-    <line>Heard not the fountains <del rend="strikethrough">of</del> melodious dew</line>
-    <line>cells</line>
-    <line>mossy   <del rend="strikethrough">caves</del> forever</line>
-    <line>Out of thier <del rend="strikethrough">ivied</del> <del rend="strikethrough">caverns</del> <del rend="strikethrough">ever</del> burst</line>
-    <line><del rend="strikethrough">Nor saw the landscape on which they had perish</del></line>
+    <line rend="indent1">And <anchor xml:id="c4-0051.04"/>
+      <milestone unit="tei:seg" spanTo="#c4-0051.01" corresp="#c4-0051.03"/><hi rend="underline"
+        >faint for <add place="superlinear"><metamark function="transpose">2</metamark></add>
+        thirst</hi><anchor xml:id="c4-0051.01"/>
+      <hi rend="underline">&amp; <anchor xml:id="c4-0051.03"/>
+        <milestone unit="tei:seg" spanTo="#c4-0051.02" corresp="#c4-0051.04"/>weary <add
+          place="superlinear"><metamark function="transpose">1</metamark></add> with vain
+          toil<anchor xml:id="c4-0051.02"/></hi></line>
+    <line>Heard not the fountains <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear">whose</add>
+      </mod> melodious dew</line>
+    <line rend="center"><add><metamark function="separate">____</metamark></add></line>
+    <line/>
+    <line> </line>
+    <line>Out of thier <mod>
+        <del rend="strikethrough">ivied</del>
+        <add place="superlinear">mossy</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">caverns</del>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">caves</add></del>
+          <add place="superlinear">cells</add>
+        </mod>
+      </mod>
+      <mod>
+        <del rend="strikethrough">ever</del>
+        <add place="superlinear">forever</add>
+      </mod> burst</line>
+    <line rend="indent1"><del rend="strikethrough">Nor saw the landscape on which they had
+        perish</del></line>
   </zone>
 </surface>

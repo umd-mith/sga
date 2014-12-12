@@ -12,7 +12,7 @@
     <milestone unit="tei:l" spanTo="#e1-0077.01"/>
     <line><milestone unit="tei:speaker" spanTo="#e1-0077.03"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0077.03"/> As<hi rend="underline">sur</hi>edly <milestone unit="tei:speaker"
-        spanTo="#e1-0077.03"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0077.03"/> Yet <mod>
+        spanTo="#e1-0077.05"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0077.05"/> Yet <mod>
         <del rend="strikethrough">if</del>
         <del rend="strikethrough"><unclear reason="illegible">progress</unclear></del>
         <del rend="strikethrough"><add place="superlinear">in the</add></del>
@@ -28,12 +28,11 @@
         <add place="intralinear">&#8212;</add>
       </mod> the same</line>
     <line>mode of consideration must be</line>
-    <line>[admitted] with respect to all arts; do</line>
+    <line><unclear reason="illegible">admitted</unclear> with respect to all arts; do</line>
     <line>you desire to hear what I understand</line>
     <line>by this, o Ion? <milestone unit="tei:speaker" spanTo="#e1-0077.04"/><hi rend="underline"
         >Ion</hi>.<anchor xml:id="e1-0077.04"/>&#8212; Yes, by Jupiter</line>
     <line>o Socrates. I am delighted with listening</line>
-    <line/>
     <line>to you <del rend="strikethrough">philosophers</del><mod>
         <del rend="strikethrough">.</del>
         <add place="superlinear"><unclear reason="case">W</unclear>ise</add>
@@ -62,6 +61,8 @@
     <line>man, can only say that which I</line>
   </zone>
   <zone type="bottom">
+    <!-- This is a passage in which Shelley comments on a certain word choice on on the 
+      previous page (which is part of PU) -->
     <line><add><metamark>&#9001;</metamark></add>The contrast would have been completeter if the
       sentiment</line>
     <line>had been transposed: but wherefore sacrifize the philoso</line>
