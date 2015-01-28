@@ -33,8 +33,8 @@ type="application/relax-ng-compact-syntax"?> <?xml-stylesheet type="text/xsl" hr
           xml:id="e1-0054.07"/>moonlike<anchor xml:id="e1-0054.05"/></add>
       <milestone unit="tei:seg" spanTo="#e1-0054.08" xml:id="e1-0054.09"/>light<anchor
         xml:id="e1-0054.08"/> wane in wide Heaven, the <unclear reason="case">s</unclear>ea<alt
-        targets="#e1-0054.06 #e1-0054.07" mode="excl" weights="1 0"/><alt
-        targets="#e1-0054.09 #e1-0055.10" mode="excl" weights="1 0"/></line>
+        target="#e1-0054.06 #e1-0054.07" mode="excl" weights="1 0"/><alt
+        target="#e1-0054.09 #e1-0055.10" mode="excl" weights="1 0"/></line>
     <line/>
     <line>Was <mod>
         <del rend="strikethrough">shaken</del>

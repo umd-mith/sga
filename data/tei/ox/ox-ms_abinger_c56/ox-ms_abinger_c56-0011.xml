@@ -93,7 +93,7 @@
   </zone>
 
   <zone type="left_margin" ulx="0" uly="46" lrx="1289" lry="687"
-  mith:shelfmark="MS. Abinger c. 56" mith:folio="4r" corresp="#c56-0011.04">
+  corresp="#c56-0011.04">
     <addSpan spanTo="#c56-0011.05" hand="#pbs"/>
     <metamark function="displacement" spanTo="#c56-0011.06" xml:id="c56-0011.07"/>
     <line rend="right">X</line>
@@ -102,8 +102,7 @@
     <anchor xml:id="c56-0011.05"/>
   </zone>
 
-  <zone type="left_margin" corresp="#c56-0011.09" ulx="0" uly="811" lrx="1289" lry="1804"
-  mith:shelfmark="MS. Abinger c. 56" mith:folio="4r">
+  <zone type="left_margin" corresp="#c56-0011.09" ulx="0" uly="811" lrx="1289" lry="1804">
     <addSpan spanTo="#c56-0011.10" hand="#pbs"/>
     <line rend="right"><metamark>X</metamark> yet</line>
     <line>there was an</line>

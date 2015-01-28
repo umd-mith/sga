@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0034" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0034.jp2"/>
   <zone type="main">
-    <line rend="indent3">Awful Shape, wha<retrace cause="clarify">t</retrace> art thou? Speak</line>
+    <line rend="indent3">Awful Shape, wha<retrace cause="unclear">t</retrace> art thou? Speak</line>
     <milestone unit="tei:speaker" spanTo="#e3-0034.01"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0034.01"/>
@@ -19,7 +19,7 @@
         rend="underline">ghtier than the</hi>e<anchor xml:id="e3-0034.04"/> and we must dwell <mod>
         <del rend="strikethrough"><unclear reason="illegible">pent</unclear></del>
         <add place="sublinear">together</add>
-      </mod><alt targets="#e3-0034.05 #e3-0035.02" mode="excl" weights="1 0"/></line>
+      </mod><alt target="#e3-0034.05 #e3-0035.02" mode="excl" weights="1 0"/></line>
     <line>Henceforth in darkness&#8212;lift thy lightnings not&#8212;</line>
     <line>The tyranny of Heaven none may retain</line>
     <line>Or reassume, or hold succeeding thee ...</line>

@@ -17,7 +17,7 @@
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">animal life</add>
       </mod>
-      <retrace cause="clarify">a</retrace>nd though we can obscure not</line>
+      <retrace cause="unclear">a</retrace>nd though we can obscure not</line>
     <line>The soul which burns within that we will dwell</line>
     <line>Beside it, <mod>
         <del rend="overwritten">a</del>
@@ -50,7 +50,7 @@
     <line>From the ends of the Earth, from y.<hi rend="sup">e</hi> ends of the Earth</line>
     <line>Where the night has its grave &amp; the morning its birth</line>
     <line rend="indent2">Come, Come<unclear reason="illegible">,</unclear> Come</line>
-    <milestone unit="l" spanTo="#e1-0094.04"/>
+    <milestone unit="tei:l" spanTo="#e1-0094.04"/>
     <line>O ye who shake hills with the scream of your</line>
     <line rend="right">mirth</line>
     <anchor xml:id="e1-0094.04"/>

@@ -33,12 +33,12 @@
     <line rend="indent1"><milestone unit="tei:seg" spanTo="#e1-0062.03" xml:id="e1-0062.06"
         />Its<anchor xml:id="e1-0062.03"/>
       <milestone unit="tei:seg" spanTo="#e1-0062.04" xml:id="e1-0062.05"/>His<anchor
-        xml:id="e1-0062.04"/> veined hand doth hold<alt targets="#e1-0062.05 #e1-0062.06"
+        xml:id="e1-0062.04"/> veined hand doth hold<alt target="#e1-0062.05 #e1-0062.06"
         mode="excl" weights="1 0"/></line>
     <line rend="indent1">Cruel <milestone unit="tei:seg" spanTo="#e1-0062.07" xml:id="e1-0062.10"
         /><add place="superlinear">it</add><anchor xml:id="e1-0062.07"/><milestone unit="tei:seg"
         spanTo="#e1-0062.08" xml:id="e1-0062.09"/>he<anchor xml:id="e1-0062.08"/> looks but calm
-      &amp; strong<alt targets="#e1-0062.09 #e1-0062.10" mode="excl" weights="1 0"/></line>
+      &amp; strong<alt target="#e1-0062.09 #e1-0062.10" mode="excl" weights="1 0"/></line>
     <line rend="indent1">Like one who does, not suffers wrong</line>
     <milestone unit="tei:speaker" spanTo="#e1-0062.02"/>
     <line rend="center">Phantasm</line>

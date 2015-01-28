@@ -12,7 +12,7 @@
   <zone type="main">
     <line rend="center"><milestone unit="tei:head" spanTo="#c56-0119.01"/>Chap. 14<anchor xml:id="c56-0119.01"/></line>
     <milestone unit="tei:p"/>
-    <line><retrace cause="clarify">T</retrace>he next day, contrary to the prognostics of our</line>
+    <line><retrace cause="unclear">T</retrace>he next day, contrary to the prognostics of our</line>
     <line>guides, was fine although clouded. <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">We</add>
@@ -28,7 +28,7 @@
     <line>They elevated me from <add place="superlinear">all</add> littleness of feeling</line>
     <line>and although they <del rend="strikethrough">d</del> did not remove my</line>
     <line>grief they <del rend="strikethrough">t</del> subdued and tranquilized it.</line>
-    <line>In some degree<retrace cause="clarify" hand="#pbs">,</retrace> also they diverted my
+    <line>In some degree<retrace cause="unclear" hand="#pbs">,</retrace> also they diverted my
       mind</line>
     <line>from the thoughts <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
