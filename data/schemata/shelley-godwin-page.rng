@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2015-01-28T17:20:39Z. .
+Schema generated from ODD source 2015-02-02T12:47:39Z. .
 TEI Edition: Version 2.7.0. Last updated on
 	16th September 2014, revision 13036
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.7.0/
@@ -3595,11 +3595,11 @@ The @spanTo attribute of <name/> is required.</assert>
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:mod">
-                                    <sch:assert test="count(node()) gt 1">The mod element is
+                                    <sch:report test="not(@spanTo) and not(count(node()) gt 1)">The mod element is
                                         intended to group a series of related changes to the
                                         manuscript. Thus, mod must have more than one child
                                         element. If only a single addition or deletion is being
-                                        encoded, mod is not required.</sch:assert>
+                                        encoded, mod is not required.</sch:report>
                                 </sch:rule>
          </pattern>
          <ref name="sga-patt.global.attributes"/>
@@ -3826,7 +3826,7 @@ The @spanTo attribute of <name/> is required.</assert>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. ]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-link-linkTargets3-constraint-14">
+                  id="shelley-godwin-page-link-linkTargets3-constraint-13">
             <rule context="tei:link">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3893,7 +3893,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-join-joinTargets3-constraint-15">
+                  id="shelley-godwin-page-join-joinTargets3-constraint-14">
             <rule context="tei:join">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
