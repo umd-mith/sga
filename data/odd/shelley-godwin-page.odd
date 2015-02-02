@@ -573,6 +573,7 @@
                                     <valItem ident="superlinear"/>
                                     <valItem ident="intralinear"/>
                                     <valItem ident="sublinear"/>
+                                    <valItem ident="interlinear"/>
                                 </valList>
                             </attDef>
                             <attDef ident="type" mode="replace">
@@ -629,6 +630,8 @@
                                     <valItem ident="tei:seg"/>
                                     <valItem ident="tei:note"/>
                                     <valItem ident="tei:head"/>
+                                    <valItem ident="tei:div[@type='scene']"/>
+                                    <valItem ident="tei:div[@type='act']"/>
                                 </valList>
                             </attDef>
                         </attList>
