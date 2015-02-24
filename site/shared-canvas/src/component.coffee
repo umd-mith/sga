@@ -144,27 +144,23 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
           console.log e, "Unable to update value of slider"
 
       # Draw search result indicators
-      # Backbone.on "viewer:searchResults", (results) =>
-      #   # Remove existing highlights, if any
-      #   @$el.find('.res').remove()
+      Backbone.on "viewer:searchResults", (results) =>
+        # Remove existing highlights, if any
+        @$el.find('.res').remove()
 
-      #   # Append highglights
+        # Append highglights
 
-      #   pages = @variables.get "seqMax"
+        pages = @variables.get "seqMax"
 
-      #   try
-      #     for r in results
-      #       r = r
-      #       res_height = @$el.height() / (pages)
-      #       res_h_perc = (pages) / 100
-      #       s_min = @$el.slider("option", "min")
-      #       s_max = @$el.slider("option", "max")
-      #       valPercent = 100 - (( r - s_min ) / ( s_max - s_min )  * 100)
-      #       adjustment = res_h_perc / 2
-      #       # console.log valPercent
-      #       @$el.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
-      #   catch e
-      #     console.log "Unable to update slider with search results"
+        try
+          for r in results
+            r = parseInt(r)
+            res_height = @$el.height() / (pages)
+            valPercent = 100 - ((r * 100) / pages)
+            adjustment = 50/pages # adjust by .5% to position near middle of cursor (instead of top)
+            @$el.append("<div style='bottom:#{valPercent + adjustment}%; height:#{res_height}px' class='res ui-slider-range ui-widget-header ui-corner-all'> </div>")
+        catch e
+          console.log "Unable to update slider with search results"
 
   class SGASharedCanvas.Component.ImageControls extends ComponentView
 
