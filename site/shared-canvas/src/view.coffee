@@ -443,6 +443,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   
     addLayer: (content) ->
       @$el.children().html(content)
+      @$el.children().css("overflow", "auto")
 
   #
   # TEXT VIEWS
