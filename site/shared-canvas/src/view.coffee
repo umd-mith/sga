@@ -121,7 +121,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               @model.searchResults.forEach (res, i) ->
                 trg = res.get("canvas_id")
                 if trg in canvases
-                  searchResultsPositions.push ($.inArray trg, canvases)
+                  searchResultsPositions.push($.inArray(trg, canvases)+1)
 
               fetchCanvas n
               Backbone.trigger "viewer:searchResults", searchResultsPositions
