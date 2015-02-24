@@ -24,33 +24,28 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       'click #first-page': 'firstPage'
       'click #last-page': 'lastPage'
 
+    checkAndProceed: (newPage) ->
+      if Backbone.history.location.hash.match("#\/?p")?
+        hash = Backbone.history.location.hash.replace(/#\/?p\d+/, '#/p'+newPage)
+      else 
+        hash = "#/p"+newPage
+      return hash
+
     nextPage: (e) ->
       e.preventDefault()
-      newPage = @variables.get("seqPage")+1
-      hash = "#/p"+newPage
-      if Backbone.history.location.hash.indexOf("#/p") > -1
-        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      hash = @checkAndProceed @variables.get("seqPage")+1
       Backbone.history.navigate hash
     prevPage: (e) ->
       e.preventDefault()
-      newPage = @variables.get("seqPage")-1
-      hash = "#/p"+newPage
-      if Backbone.history.location.hash.indexOf("#/p") > -1
-        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      hash = @checkAndProceed @variables.get("seqPage")-1
       Backbone.history.navigate hash
     firstPage: (e) ->
       e.preventDefault()
-      newPage = @variables.get("seqMin")
-      hash = "#/p"+newPage
-      if Backbone.history.location.hash.indexOf("#/p") > -1
-        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      hash = @checkAndProceed @variables.get("seqMin")
       Backbone.history.navigate hash
     lastPage: (e) ->
       e.preventDefault()
-      newPage = @variables.get("seqMax")
-      hash = "#/p"+newPage
-      if Backbone.history.location.hash.indexOf("#/p") > -1
-        hash = Backbone.history.location.hash.replace(/#\/p\d+/, '#/p'+newPage)
+      hash = @checkAndProceed  @variables.get("seqMax")
       Backbone.history.navigate hash
 
     initialize: (options) ->
