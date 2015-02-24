@@ -25,8 +25,9 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       'click #last-page': 'lastPage'
 
     checkAndProceed: (newPage) ->
-      if Backbone.history.location.hash.match("#\/?p")?
-        hash = Backbone.history.location.hash.replace(/#\/?p\d+/, '#/p'+newPage)
+      hash = Backbone.history.location.hash
+      if hash.match("#\/?p")?
+        hash = hash.replace(/#\/?p\d+/, '#/p'+newPage)
       else 
         hash = "#/p"+newPage
       return hash
@@ -106,8 +107,13 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
               slide: ( event, ui ) ->
                 $(ui.handle).text(getLabel(pages - ui.value))
               stop: ( event, ui ) ->
-                newPage =  pages - ui.value
-                Backbone.history.navigate("#/p"+(newPage+1))
+                newPage = (pages - ui.value) + 1
+                hash = Backbone.history.location.hash
+                if hash.match("#\/?p")?
+                  hash = hash.replace(/#\/?p\d+/, '#/p'+newPage)
+                else 
+                  hash = "#/p"+newPage
+                Backbone.history.navigate hash
 
             @listenTo @variables, "change:seqPage", (n) ->
               @$el.find("a").text( getLabel(n-1) )
