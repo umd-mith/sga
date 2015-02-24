@@ -563,10 +563,12 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     # This method imports manifest level search data
     manifest.ready ->
 
-      for node in graph
+      id_graph = {}
+
+      for node in graph["@graph"]
         id_graph[node["@id"]] = node if node["@id"]?     
 
-      for id, node of graph
+      for id, node of id_graph
 
         if node["@type"]? 
           types = SGASharedCanvas.Utils.makeArray node["@type"]
