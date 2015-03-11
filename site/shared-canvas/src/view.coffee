@@ -677,9 +677,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               @lastRendering = annoEl
 
           else if /vertical-align: sub;/.test(model.get("css"))
-            additionLine = if not @currentLineEl.next().hasClass('below-line') \
-                           then $("<div class='below-line'></div>")\
-                           else @currentLineEl.next()
+            additionLine = null
+            if not @currentLineEl.next().hasClass('below-line')
+              additionLine = $("<div class='below-line'></div>")
+              indent = @currentLineEl.data('indent')
+              if indent?
+                additionLine.css
+                  'padding-left' : indent
+            else 
+              additionLine = @currentLineEl.next()
 
             textAnnoView = new TextAnnoView 
               model: model 
@@ -732,13 +738,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             o.remove()
             w_px / font_size
 
+          # store padding info to pass it on
+          padding = 0
+
           if model.get("align")?
               where = model.get("align")
               # Base alignment on longest previous line if possible.
               longestLength = 0
               longest = null
               for prevLine in @currentLineEl.prevAll()
-                console.log(prevLine)
                 prevLineLength = $.trim($(prevLine).text().replace(/\s+/g,' ')).length
                 if prevLineLength > longestLength
                   longestLength = prevLineLength
@@ -747,35 +755,38 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 longLineLength = _getTextWidth(longest)
                 curTextLength = _getTextWidth(@currentLineEl)
                 if where == "right"
-                  padding = longLineLength - curTextLength
+                  padding = (longLineLength - curTextLength) + "em"
                   @currentLineEl.css
-                    'padding-left': padding + "em"
+                    'padding-left': padding
                 else if where == "center"
-                  padding = (longLineLength / 2) - (curTextLength/2)
+                  padding = ((longLineLength / 2) - (curTextLength/2)) + "em"
                   @currentLineEl.css
-                    'padding-left': padding + "em"
+                    'padding-left': padding
               # still adjust centers to an approximate value (not great, but better results)
               else if where == "center"
+                  padding = "15ex"
                   @currentLineEl.css
-                    'padding-left': "15ex"
+                    'padding-left': padding
               else
                 @currentLineEl.css
                   'text-align': model.get("align")
           if model.get("indent")?
             indentSize = @$el.width() / 10
             indentNo = Math.floor(model.get("indent")) or 0
+            padding = (indentNo * indentSize) + "px"
             @currentLineEl.css
-              'padding-left': indentNo * indentSize + "px"
+              'padding-left': padding
 
             # Add indentation to interlinear additions, if present
-            al = @currentLineEl.prev('.above-line,.below-line')
-            if al
-              al.css
-                'padding-left': indentNo * indentSize + "px"
+            prev1 = @currentLineEl.prev()
+            if prev1.hasClass('above-line')
+              prev1.css
+                'padding-left': padding
 
           # Only now overwrite the @currentLineEl variable
           # and add a new line container that will be populated at the next run of addOne()
-          @currentLineEl = $("<div></div>")
+          @currentLineEl = $("<div></div>").data
+            "indent" : padding
           @$el.append @currentLineEl
 
           # Update currentLine count
