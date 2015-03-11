@@ -427,14 +427,17 @@
 
                     <!-- Custom macros -->
                     <macroSpec ident="sga:linerend" type="dt" mode="add">
-                        <desc>Simple datatype for indentation values.</desc>
+                        <desc>Simple datatype for indentation values.
+                        When the indentation is numbered, each value should correspond 
+                        roughly 1/10 of the page.
+                        </desc>
                         <content>
                             <rng:choice>
                                 <rng:value ident="right"/>
                                 <rng:value ident="center"/>
                                 <rng:value ident="left"/>
                                 <rng:data type="string">
-                                    <rng:pattern>indent\d+</rng:pattern>
+                                    <rng:pattern>indent\d</rng:pattern>
                                 </rng:data>
                             </rng:choice>
                         </content>
