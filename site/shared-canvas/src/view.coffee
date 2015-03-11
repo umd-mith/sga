@@ -714,11 +714,40 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # and must be processed now.          
 
           if model.get("align")?
-              @currentLineEl.css
-                'text-align': model.get("align")
+              where = model.get("align")
+              # Base alignment on longest previous line if possible.
+              longest = 0
+              for prevLine in @currentLineEl.prevAll()
+                prevLineLength = $.trim($(prevLine).text().replace(/\s+/g,' ')).length
+                if prevLineLength > longest
+                  longest = prevLineLength
+              if longest > 0
+                if where == "right"
+                  padding = longest - @currentLineEl.text().length
+                  @currentLineEl.css
+                    'padding-left': padding + "ex"
+                else if where == "center"
+                  padding = longest / 2 - @currentLineEl.text().length
+                  @currentLineEl.css
+                    'padding-left': padding + "ex"
+              # still adjust centers to an approximate value (not great, but better results)
+              else if where == "center"
+                  @currentLineEl.css
+                    'padding-left': "15ex"
+              else
+                @currentLineEl.css
+                  'text-align': model.get("align")
           if model.get("indent")?
+            indentSize = @$el.width() / 10
+            indentNo = Math.floor(model.get("indent")) or 0
             @currentLineEl.css
-              'padding-left': (Math.floor(model.get("indent")) or 0)+"em"
+              'padding-left': indentNo * indentSize + "px"
+
+            # Add indentation to interlinear additions, if present
+            al = @currentLineEl.prev('.above-line,.below-line')
+            if al
+              al.css
+                'padding-left': indentNo * indentSize + "px"
 
           # Only now overwrite the @currentLineEl variable
           # and add a new line container that will be populated at the next run of addOne()
@@ -1194,8 +1223,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # xTiles tells us how many tiles across
             # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
 
-            for j in [0..yTiles]
-              for i in [0..xTiles]
+	    for j in [0..yTiles]
+	      for i in [0..xTiles]
                 renderTile 
                   x: i
                   y: j
@@ -1217,7 +1246,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             if z != zoomLevel
               _setZoom(z)
               @variables.set "zoom", z
-         
+
           setScale = (s) ->
             divScale = s
             $(innerContainer).css
