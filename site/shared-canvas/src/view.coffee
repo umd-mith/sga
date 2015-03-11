@@ -654,7 +654,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           Backbone.on 'viewer:resize', (options) =>
             setScale options.scale
 
-      # Instiate different views depending on the type of annotation.
+      # Instantiate different views depending on the type of annotation.
       type = model.get "type"
       switch
         when "sgaAdditionAnnotation" in type
@@ -713,23 +713,47 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # For example, alignment and indentation are stored on the line break annotation
           # and must be processed now.          
 
+          _getTextWidth = (container) ->
+            container = $(container)
+            
+            o = container.clone()
+                  .css(
+                    'position': 'absolute'
+                    'float': 'left'
+                    'white-space': 'nowrap'
+                    'visibility': 'hidden'
+                  )
+                  .appendTo($('body'))
+            text = $.trim(o.text().replace(/\s+/g,' '))
+            o.text(text)
+            w_px = o.width()
+            font_size = o.css('font-size')
+            font_size = parseInt(font_size.substring(0, font_size.length - 2))
+            o.remove()
+            w_px / font_size
+
           if model.get("align")?
               where = model.get("align")
               # Base alignment on longest previous line if possible.
-              longest = 0
+              longestLength = 0
+              longest = null
               for prevLine in @currentLineEl.prevAll()
+                console.log(prevLine)
                 prevLineLength = $.trim($(prevLine).text().replace(/\s+/g,' ')).length
-                if prevLineLength > longest
-                  longest = prevLineLength
-              if longest > 0
+                if prevLineLength > longestLength
+                  longestLength = prevLineLength
+                  longest = prevLine
+              if longestLength > 0
+                longLineLength = _getTextWidth(longest)
+                curTextLength = _getTextWidth(@currentLineEl)
                 if where == "right"
-                  padding = longest - @currentLineEl.text().length
+                  padding = longLineLength - curTextLength
                   @currentLineEl.css
-                    'padding-left': padding + "ex"
+                    'padding-left': padding + "em"
                 else if where == "center"
-                  padding = longest / 2 - @currentLineEl.text().length
+                  padding = (longLineLength / 2) - (curTextLength/2)
                   @currentLineEl.css
-                    'padding-left': padding + "ex"
+                    'padding-left': padding + "em"
               # still adjust centers to an approximate value (not great, but better results)
               else if where == "center"
                   @currentLineEl.css
@@ -1223,8 +1247,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # xTiles tells us how many tiles across
             # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
 
-	    for j in [0..yTiles]
-	      for i in [0..xTiles]
+            for j in [0..yTiles]
+              for i in [0..xTiles]
                 renderTile 
                   x: i
                   y: j
