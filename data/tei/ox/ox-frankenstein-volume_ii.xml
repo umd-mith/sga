@@ -48,49 +48,47 @@
                         <idno type="Bod">MS. Abinger c. 57</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem type="#work">
+                        <msItem class="#work">
                             <bibl status="draft">
                                 <author>Mary Shelley</author>
                                 <title>Frankenstein</title>
                             </bibl>
-                            <msItem type="#miscellaneous">
+                            <msItem class="#miscellaneous">
                                 <locusGrp>
                                     <locus target="#ox-ms_abinger_c57-0189 #ox-ms_abinger_c57-0190"/>
                                 </locusGrp>
+                                <p>The folios at the given loci are not part of a volume or chapter.</p>
                             </msItem>
-                            <msItem type="#volume" n="II" xml:id="ox-frankenstein_volume_ii">
+                            <msItem class="#volume" n="II" xml:id="ox-frankenstein_volume_ii">
                                 <bibl>
                                     <title>Volume II</title>
                                     <date notBefore="1816-12" notAfter="1817-04">[?December] 1816-April 1817</date>
                                 </bibl>
-                                <msItem type="#chapter" n="1">
-                                    <bibl>
-                                        <title>Chapter 1</title>
-                                    </bibl>
+                                <msItem class="#chapter" n="1">
                                     <locusGrp>
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0001 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0002 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0003 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0004 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0005 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0006 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0007 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0008 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0009"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="2">
                                     <bibl>
-                                        <title>Chapter 2</title>
+                                        <title>Chapter 1</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="2">
                                     <locusGrp>
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0010 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0011 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0012 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0013 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0014 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0015 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0016 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0017"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="3">
                                     <bibl>
-                                        <title>Chapter 3</title>
+                                        <title>Chapter 2</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="3">
                                     <locusGrp>
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0018 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0019 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0020 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0021 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0022"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="5">
                                     <bibl>
-                                        <title>Chapter 5</title>
+                                        <title>Chapter 3</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="5">
                                     <locusGrp>
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0023"/>
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0024">first 4 lines</locus>
@@ -103,43 +101,43 @@
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0033">all but first third</locus>
                                         <locus target="ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0034 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0035 ox-frankenstein_notebook_a.xml#ox-ms_abinger_c57-0036"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="6">
                                     <bibl>
-                                        <title>Chapter 6</title>
+                                        <title>Chapter 5</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="6">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0037 #ox-ms_abinger_c57-0038 #ox-ms_abinger_c57-0039 #ox-ms_abinger_c57-0040 #ox-ms_abinger_c57-0041 #ox-ms_abinger_c57-0042 #ox-ms_abinger_c57-0043 #ox-ms_abinger_c57-0044"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="7">
                                     <bibl>
-                                        <title>Chapter 7</title>
+                                        <title>Chapter 6</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="7">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0045 #ox-ms_abinger_c57-0046 #ox-ms_abinger_c57-0047 #ox-ms_abinger_c57-0048 #ox-ms_abinger_c57-0049 #ox-ms_abinger_c57-0050 #ox-ms_abinger_c57-0051 #ox-ms_abinger_c57-0052 #ox-ms_abinger_c57-0053"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="8">
                                     <bibl>
-                                        <title>Chapter 8</title>
+                                        <title>Chapter 7</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="8">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0054 #ox-ms_abinger_c57-0055 #ox-ms_abinger_c57-0056 #ox-ms_abinger_c57-0057 #ox-ms_abinger_c57-0058 #ox-ms_abinger_c57-0059 #ox-ms_abinger_c57-0060 #ox-ms_abinger_c57-0061 #ox-ms_abinger_c57-0062"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="9">
                                     <bibl>
-                                        <title>Chapter 9</title>
+                                        <title>Chapter 8</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="9">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0063 #ox-ms_abinger_c57-0064 #ox-ms_abinger_c57-0065 #ox-ms_abinger_c57-0066 #ox-ms_abinger_c57-0067 #ox-ms_abinger_c57-0068 #ox-ms_abinger_c57-0069 #ox-ms_abinger_c57-0070 #ox-ms_abinger_c57-0071 #ox-ms_abinger_c57-0072 #ox-ms_abinger_c57-0073"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="10">
                                     <bibl>
-                                        <title>Chapter 10</title>
+                                        <title>Chapter 9</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="10">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0074">first 5 lines</locus>
                                         <locus target="#ox-ms_abinger_c57-0075 #ox-ms_abinger_c57-0076"/>
@@ -150,70 +148,73 @@
                                         <locus target="#ox-ms_abinger_c57-0080">all but first third</locus>
                                         <locus target="#ox-ms_abinger_c57-0087 #ox-ms_abinger_c57-0088 #ox-ms_abinger_c57-0089 #ox-ms_abinger_c57-0090 #ox-ms_abinger_c57-0091"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="11">
                                     <bibl>
-                                        <title>Chapter 11</title>
+                                        <title>Chapter 10</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="11">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0092 #ox-ms_abinger_c57-0093 #ox-ms_abinger_c57-0094 #ox-ms_abinger_c57-0095 #ox-ms_abinger_c57-0096 #ox-ms_abinger_c57-0097 #ox-ms_abinger_c57-0098 #ox-ms_abinger_c57-0099"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="12">
                                     <bibl>
-                                        <title>Chapter 12</title>
+                                        <title>Chapter 11</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="12">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0100 #ox-ms_abinger_c57-0101 #ox-ms_abinger_c57-0102 #ox-ms_abinger_c57-0103 #ox-ms_abinger_c57-0104 #ox-ms_abinger_c57-0105 #ox-ms_abinger_c57-0106 #ox-ms_abinger_c57-0107"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="13">
                                     <bibl>
-                                        <title>Chapter 13</title>
+                                        <title>Chapter 12</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="13">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0108 #ox-ms_abinger_c57-0109 #ox-ms_abinger_c57-0110 #ox-ms_abinger_c57-0111 #ox-ms_abinger_c57-0112 #ox-ms_abinger_c57-0113 #ox-ms_abinger_c57-0114 #ox-ms_abinger_c57-0115 #ox-ms_abinger_c57-0116"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="14">
                                     <bibl>
-                                        <title>Chapter 14</title>
+                                        <title>Chapter 13</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="14">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0117 #ox-ms_abinger_c57-0118 #ox-ms_abinger_c57-0119 #ox-ms_abinger_c57-0120 #ox-ms_abinger_c57-0121 #ox-ms_abinger_c57-0122 #ox-ms_abinger_c57-0123 #ox-ms_abinger_c57-0124 #ox-ms_abinger_c57-0125 #ox-ms_abinger_c57-0126 #ox-ms_abinger_c57-0127"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="15">
                                     <bibl>
-                                        <title>Chapter 15</title>
+                                        <title>Chapter 14</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="15">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0128 #ox-ms_abinger_c57-0129 #ox-ms_abinger_c57-0130 #ox-ms_abinger_c57-0131 #ox-ms_abinger_c57-0132 #ox-ms_abinger_c57-0133 #ox-ms_abinger_c57-0134 #ox-ms_abinger_c57-0135 #ox-ms_abinger_c57-0136 #ox-ms_abinger_c57-0137"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="16">
                                     <bibl>
-                                        <title>Chapter 16</title>
+                                        <title>Chapter 15</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="16">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0138 #ox-ms_abinger_c57-0139 #ox-ms_abinger_c57-0140 #ox-ms_abinger_c57-0141 #ox-ms_abinger_c57-0142 #ox-ms_abinger_c57-0143 #ox-ms_abinger_c57-0144 #ox-ms_abinger_c57-0145 #ox-ms_abinger_c57-0146"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="17">
                                     <bibl>
-                                        <title>Chapter 17</title>
+                                        <title>Chapter 16</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="17">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0147 #ox-ms_abinger_c57-0148 #ox-ms_abinger_c57-0149 #ox-ms_abinger_c57-0150 #ox-ms_abinger_c57-0151 #ox-ms_abinger_c57-0152 #ox-ms_abinger_c57-0153 #ox-ms_abinger_c57-0154 #ox-ms_abinger_c57-0155 #ox-ms_abinger_c57-0156"/>
                                     </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="18">
                                     <bibl>
-                                        <title>Chapter 18</title>
+                                        <title>Chapter 17</title>
                                     </bibl>
+                                </msItem>
+                                <msItem class="#chapter" n="18">
                                     <locusGrp>
                                         <locus target="#ox-ms_abinger_c57-0157 #ox-ms_abinger_c57-0158 #ox-ms_abinger_c57-0159 #ox-ms_abinger_c57-0160 #ox-ms_abinger_c57-0161 #ox-ms_abinger_c57-0162 #ox-ms_abinger_c57-0163 #ox-ms_abinger_c57-0164 #ox-ms_abinger_c57-0165 #ox-ms_abinger_c57-0166 #ox-ms_abinger_c57-0167 #ox-ms_abinger_c57-0168 #ox-ms_abinger_c57-0169 #ox-ms_abinger_c57-0170 #ox-ms_abinger_c57-0171 #ox-ms_abinger_c57-0172 #ox-ms_abinger_c57-0173 #ox-ms_abinger_c57-0174 #ox-ms_abinger_c57-0175 #ox-ms_abinger_c57-0176 #ox-ms_abinger_c57-0177 #ox-ms_abinger_c57-0178 #ox-ms_abinger_c57-0179 #ox-ms_abinger_c57-0180 #ox-ms_abinger_c57-0181 #ox-ms_abinger_c57-0182 #ox-ms_abinger_c57-0183 #ox-ms_abinger_c57-0184 #ox-ms_abinger_c57-0185 #ox-ms_abinger_c57-0186 #ox-ms_abinger_c57-0187 #ox-ms_abinger_c57-0188"/>
                                     </locusGrp>
+                                    <bibl>
+                                        <title>Chapter 18</title>
+                                    </bibl>
                                 </msItem>
                             </msItem>
                         </msItem>
@@ -227,9 +228,13 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
         <revisionDesc>
-            <change who="#RV" when="2014-01-22">Added metadata.</change>
+            <change who="#RV" when="2015-03-12">Made volume and chapter metadata valid.</change>
             <change who="#TB" when="2014-04-09">Added metadata about volumes and chapters.</change>
+            <change who="#RV" when="2014-01-22">Added metadata.</change>     
         </revisionDesc>
     </teiHeader>
     <sourceDoc>

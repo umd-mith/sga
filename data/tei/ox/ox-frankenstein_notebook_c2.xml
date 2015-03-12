@@ -45,42 +45,16 @@
                         <idno type="Bod">MS. Abinger c. 58</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem type="#work">
+                        <msItem class="#work">
                             <bibl status="fair_copy">
                                 <author>Mary Shelley</author>
                                 <title>Frankenstein</title>
                             </bibl>
-                            <msItem type="#volume" n="III" xml:id="ox-frankenstein_volume_iii">
+                            <msItem class="#volume" n="III" xml:id="ox-frankenstein_volume_iii">
                                 <bibl>
                                     <title>Volume III</title>
                                     <date notBefore="1816-12" notAfter="1817-04">18 April-[?13] May 1817</date>
                                 </bibl>
-                                <msItem type="#chapter" n="5">
-                                    <bibl>
-                                        <title>Chapter 5</title>
-                                    </bibl>
-                                    <locusGrp>
-                                        <locus target="#ox-ms_abinger_c58-0001 #ox-ms_abinger_c58-0002 #ox-ms_abinger_c58-0003 #ox-ms_abinger_c58-0004 #ox-ms_abinger_c58-0005 #ox-ms_abinger_c58-0006 #ox-ms_abinger_c58-0007 #ox-ms_abinger_c58-0008 #ox-ms_abinger_c58-0009 #ox-ms_abinger_c58-0010 #ox-ms_abinger_c58-0011 #ox-ms_abinger_c58-0012"/>
-                                    </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="6">
-                                    <bibl>
-                                        <title>Chapter 6</title>
-                                    </bibl>
-                                    <locusGrp>
-                                        <locus target="#ox-ms_abinger_c58-0013 #ox-ms_abinger_c58-0014 #ox-ms_abinger_c58-0015 #ox-ms_abinger_c58-0016 #ox-ms_abinger_c58-0017 #ox-ms_abinger_c58-0018 #ox-ms_abinger_c58-0019 #ox-ms_abinger_c58-0020 #ox-ms_abinger_c58-0021 #ox-ms_abinger_c58-0022 #ox-ms_abinger_c58-0023 #ox-ms_abinger_c58-0024 #ox-ms_abinger_c58-0025 #ox-ms_abinger_c58-0026 #ox-ms_abinger_c58-0027 #ox-ms_abinger_c58-0028 #ox-ms_abinger_c58-0029"/>
-                                    </locusGrp>
-                                </msItem>
-                                <msItem type="#chapter" n="7">
-                                    <bibl>
-                                        <title>Chapter 7</title>
-                                    </bibl>
-                                    <locusGrp>
-                                        <locus target="#ox-ms_abinger_c58-0030 #ox-ms_abinger_c58-0031 #ox-ms_abinger_c58-0032 #ox-ms_abinger_c58-0033 #ox-ms_abinger_c58-0034 #ox-ms_abinger_c58-0035 #ox-ms_abinger_c58-0036"/>
-                                        <locus target="ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0037">Beginning of second notebook</locus>
-                                        <locus target="ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0038 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0039 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0040 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0041 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0042 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0043 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0044 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0045 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0046 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0047 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0048 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0049 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0050 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0051 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0052 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0053 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0054 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0055 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0056 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0057 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0058 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0059 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0060 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0061 ox-frankenstein_notebook_c2.xml#ox-ms_abinger_c58-0062"/>
-                                    </locusGrp>
-                                </msItem>
                             </msItem>
                         </msItem>
                     </msContents>
@@ -93,7 +67,11 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
         <revisionDesc>
+            <change who="#RV" when="2015-03-12">Made metadata valid, removed chapter metadata.</change>
             <change who="#RV" when="2014-01-22">Added metadata.</change>
             <change who="#TB" when="2014-04-09">Added metadata about volumes and chapters.</change>
         </revisionDesc>
