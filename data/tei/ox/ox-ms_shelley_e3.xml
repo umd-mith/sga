@@ -46,13 +46,13 @@
                         <idno type="Bod">MS. Shelley e. 3</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem type="#work">
+                        <msItem class="#work">
                             <bibl status="draft">
                                 <author>Percy Shelley</author>
                                 <title>Prometheus Unbound (test)</title>
                             </bibl>
                             
-                            <msItem type="#volume">
+                            <msItem class="#volume">
                                 <bibl>
                                     <title>e1</title>
                                     <date notBefore="1816-08" notAfter="1816-12">TEST [August or September]-[?December] 1816</date>
