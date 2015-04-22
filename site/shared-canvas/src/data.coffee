@@ -407,6 +407,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   if node["sga:textAlignment"]?
                     annotation.set
                       "align" : node["sga:textAlignment"]
+                  if node["sga:spaceExt"]?
+                    annotation.set
+                      "ext" : node["sga:spaceExt"]
 
                   # Import search result annotations for this canvas, if they exist
                   if manifest.searchResults.length > 0
@@ -480,6 +483,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                 end: end
               if options.indent? then titem.set {indent : options.indent}
               if options.align? then titem.set {align : options.align}
+              if options.ext? then titem.set {ext : options.ext}
               contentAnno.textItems.add titem                
             
             processNode = (start, end) ->
@@ -527,6 +531,10 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               classes = [ "LineBreak" ]
               makeTextItems pos, pos, classes, [ "" ], options
 
+            makeEmptyLine = (pos, options) ->
+              classes = [ "EmptyLine" ]
+              makeTextItems pos, pos, classes, [ "" ], options
+
             #
             mstarts = modstart[source] || []
             mends = modend[source] || []
@@ -551,10 +559,11 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                     indent = null
                     align = null
                     if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
-                    if modInfo[id].get("align")? then align = modInfo[id].get "align"
                     makeLinebreak pos, {"indent":indent, "align":align}
                     br_pushed = true
                 last_pos = pos
+              else if "sga:SpaceAnnotation" in modInfo[id].get "@type"
+                makeEmptyLine pos, {"ext": modInfo[id].get("ext")}
             processNode last_pos, text.length
 
       canvas.trigger 'fullsync'
