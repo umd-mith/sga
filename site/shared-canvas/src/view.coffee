@@ -730,7 +730,13 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           annoEl = $ textAnnoView.render()?.el          
           @currentLineEl.append annoEl
           if annoEl.get(0)?
-            @lastRendering = annoEl 
+            @lastRendering = annoEl
+        when 'EmptyLine' in type
+          console.log model.get('ext')
+          ext = parseInt(model.get('ext'))
+          for br in [1..ext]
+            @currentLineEl.append("<br/>")
+          @$el.append @currentLineEl
         when "LineBreak" in type
 
           # Before creating a new line container, add other classes on the current one.
@@ -1260,12 +1266,20 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # xTiles tells us how many tiles across
             # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
 
-            for j in [0..yTiles]
-              for i in [0..xTiles]
-                renderTile 
-                  x: i
-                  y: j
-                  tileSize: tileSize
+            if rotation == 0
+              for j in [0..yTiles]
+                for i in [0..xTiles]
+                  renderTile 
+                    x: i
+                    y: j
+                    tileSize: tileSize
+            else
+              for j in [0..yTiles]
+                for i in [0..xTiles]
+                  renderTile 
+                    x: j
+                    y: i
+                    tileSize: tileSize
 
           _setZoom = (z) ->
             wrapper = (cb) -> cb()
