@@ -656,6 +656,24 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       # Instantiate different views depending on the type of annotation.
       type = model.get "type"
+      _getTextWidth = (container) ->
+            container = $(container)
+            
+            o = container.clone()
+                  .css(
+                    'position': 'absolute'
+                    'float': 'left'
+                    'white-space': 'nowrap'
+                    'visibility': 'hidden'
+                  )
+                  .appendTo($('body'))
+            text = $.trim(o.text().replace(/\s+/g,' '))
+            o.text(text)
+            w_px = o.width()
+            font_size = o.css('font-size')
+            font_size = parseInt(font_size.substring(0, font_size.length - 2))
+            o.remove()
+            w_px / font_size
       switch
         when "sgaAdditionAnnotation" in type
 
@@ -717,26 +735,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
           # Before creating a new line container, add other classes on the current one.
           # For example, alignment and indentation are stored on the line break annotation
-          # and must be processed now.          
-
-          _getTextWidth = (container) ->
-            container = $(container)
-            
-            o = container.clone()
-                  .css(
-                    'position': 'absolute'
-                    'float': 'left'
-                    'white-space': 'nowrap'
-                    'visibility': 'hidden'
-                  )
-                  .appendTo($('body'))
-            text = $.trim(o.text().replace(/\s+/g,' '))
-            o.text(text)
-            w_px = o.width()
-            font_size = o.css('font-size')
-            font_size = parseInt(font_size.substring(0, font_size.length - 2))
-            o.remove()
-            w_px / font_size
+          # and must be processed now. 
 
           # store padding info to pass it on
           padding = 0
@@ -774,14 +773,18 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             indentSize = @$el.width() / 10
             indentNo = Math.floor(model.get("indent")) or 0
             padding = (indentNo * indentSize) + "px"
-            @currentLineEl.css
-              'padding-left': padding
+            # @currentLineEl.css
+            #   'padding-left': padding
+            @currentLineEl.data
+                 'indent': model.get("indent")
 
             # Add indentation to interlinear additions, if present
             prev1 = @currentLineEl.prev()
             if prev1.hasClass('above-line')
-              prev1.css
-                'padding-left': padding
+              # prev1.css
+              #   'padding-left': padding
+              prev1.data
+                  'indent': model.get("indent")
 
           # Only now overwrite the @currentLineEl variable
           # and add a new line container that will be populated at the next run of addOne()
@@ -794,6 +797,23 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           
       if @variables.get('scrollWidth') != @el.scrollWidth
         @variables.set('scrollWidth', @el.scrollWidth)
+
+      # Adjust indentation to width of longest line so far      
+      lines = @$el.find('.sgaLineAnnotation')
+      arr = lines.map(-> 
+          return $(this).text().length
+      ).get()
+      longest_line = lines[arr.indexOf(Math.max.apply(Math,arr))]
+
+      if longest_line?
+        w = _getTextWidth(longest_line)
+        a = @$el.find('div').filter(->
+          return $(this).data('indent')
+        ).each(->
+          $(this).css
+            'padding-left': (w * $(this).data('indent')) / 10 + "em"
+        )
+        
 
       # Update scrollbar styling if plugin exists
       if @$el.parent().perfectScrollbar?
