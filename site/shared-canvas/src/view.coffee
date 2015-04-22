@@ -741,40 +741,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           padding = 0
 
           if model.get("align")?
-              where = model.get("align")
-              # Base alignment on longest previous line if possible.
-              longestLength = 0
-              longest = null
-              for prevLine in @currentLineEl.prevAll()
-                prevLineLength = $.trim($(prevLine).text().replace(/\s+/g,' ')).length
-                if prevLineLength > longestLength
-                  longestLength = prevLineLength
-                  longest = prevLine
-              if longestLength > 0
-                longLineLength = _getTextWidth(longest)
-                curTextLength = _getTextWidth(@currentLineEl)
-                if where == "right"
-                  padding = (longLineLength - curTextLength) + "em"
-                  @currentLineEl.css
-                    'padding-left': padding
-                else if where == "center"
-                  padding = ((longLineLength / 2) - (curTextLength/2)) + "em"
-                  @currentLineEl.css
-                    'padding-left': padding
-              # still adjust centers to an approximate value (not great, but better results)
-              else if where == "center"
-                  padding = "15ex"
-                  @currentLineEl.css
-                    'padding-left': padding
-              else
-                @currentLineEl.css
-                  'text-align': model.get("align")
+              @currentLineEl.data
+                'align' : model.get("align")
           if model.get("indent")?
-            indentSize = @$el.width() / 10
-            indentNo = Math.floor(model.get("indent")) or 0
-            padding = (indentNo * indentSize) + "px"
-            # @currentLineEl.css
-            #   'padding-left': padding
             @currentLineEl.data
                  'indent': model.get("indent")
 
@@ -798,7 +767,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       if @variables.get('scrollWidth') != @el.scrollWidth
         @variables.set('scrollWidth', @el.scrollWidth)
 
-      # Adjust indentation to width of longest line so far      
+      # Adjust indentation and alignment to width of longest line so far.
       lines = @$el.find('.sgaLineAnnotation')
       arr = lines.map(-> 
           return $(this).text().length
@@ -808,10 +777,22 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       if longest_line?
         w = _getTextWidth(longest_line)
         a = @$el.find('div').filter(->
-          return $(this).data('indent')
+          return $(this).data('indent') or $(this).data('align')
         ).each(->
-          $(this).css
-            'padding-left': (w * $(this).data('indent')) / 10 + "em"
+          l = $(this)
+          al = l.data('align')
+          ind = l.data('indent')
+          if al?
+            curTextLength = _getTextWidth(l)
+            if al == "right"
+              padding = (w - curTextLength) + "em"
+            else if al == "center"
+              padding = ((w / 2) - (curTextLength/2)) + "em"            
+            l.css
+              'padding-left': padding
+          else if ind?
+            l.css
+              'padding-left': (w * ind) / 10 + "em"
         )
         
 
@@ -1083,6 +1064,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               "svc.format=image/jpeg"
               "svc.level=#{z}"
               "svc.region=#{y * tileWidth},#{x * tileWidth},#{djatokaTileWidth},#{djatokaTileWidth}"
+              "svc.rotate=#{rotation}"
             ].join("&")
 
           screenCenter = ->
