@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0069" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0069" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0069.jp2"/>
   <zone type="library">32</zone>
   <zone type="main" rotate="180">
@@ -13,22 +13,32 @@
     <line>between Dryden &amp; Pope;&#8212;each has</line>
     <line>a <del rend="strikethrough">specific</del> generic resemblance under</line>
     <line>which thier specific distinctions are</line>
-    <line>arranged. If this similarity <unclear><del rend="strikethrough">is</del></unclear> be</line>
+    <line>arranged. If <mod>
+        <del rend="overwritten"><unclear reason="illegible">the</unclear></del>
+        <add place="intralinear">this</add>
+      </mod> similarity <del rend="strikethrough"><unclear reason="illegible">is</unclear></del>
+      be</line>
     <line>the result of imitation, I am willing</line>
-    <line>to confess that I have imitated <unclear>.&#8212;</unclear></line>
-    <line><mod><del rend="strikethrough">Concede to me</del><add place ="superlinear">Let be conceded to me</add></mod> this oportunity <add place="sublinear">^</add> of</line>
+    <line>to confess that I have imitated <unclear reason="illegible">.&#8212;</unclear></line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">Concede to me</del>
+        <add place="superlinear">Let </add>
+      </mod> this oportunity <add place="sublinear"><metamark function="insert"
+        >^</metamark></add><add place="superlinear">be conceded to me</add> of</line>
     <line>acknowledging <del rend="strikethrough">wha</del> that I have, what</line>
-    <line><mod><del rend="smear">a</del><add place ="superlinear">a</add></mod> Scotch philosopher characteristically</line>
+    <line><mod>
+        <del rend="smear">a</del>
+        <add place="superlinear">a</add>
+      </mod> Scotch philosopher characteristically</line>
     <line>terms, "a passion for reforming the</line>
-    <line>World." What passion incited him to</line>
+    <line><unclear reason="case">W</unclear>orld." What passion incited him to</line>
     <line>write &amp; publish his book, he omits</line>
     <line>to explain&#8212; <del rend="strikethrough">But</del> For my part, I</line>
     <line>had rather be damned with Plato &amp;</line>
     <line>Lord Bacon, than go to Heaven with</line>
     <line>Paley &amp; Malthus. But it is a</line>
-    <line>mistake to suppose that I dedicate</line>
+    <line><unclear reason="illegible">m</unclear>istake to suppose that I dedicate</line>
     <line>my poetical compositions solely to</line>
     <line>the direct inforcement of <del rend="strikethrough">that</del></line>
   </zone>
 </surface>
-

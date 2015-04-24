@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0045" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0045" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0045.jp2"/>
   <zone type="library">
     <line rend="right">22</line>
   </zone>
   <zone type="main">
-    <line rend="indent1">Wander happy paramours</line>
+    <line rend="indent1">Wander<del rend="strikethrough">s</del> happy paramours</line>
     <line>Less mighty, but as mild as those who keep</line>
     <line rend="indent2">Thy vales more deep.</line>
     <milestone unit="tei:speaker" spanTo="e1-0045.01"/>
@@ -17,23 +17,32 @@
     <line>As the dissolving warmth of Dawn may fold</line>
     <line>A half-unfrozen dewglobe, green &#x26; gold</line>
     <line>And chrystalline, till it becomes a winged mist</line>
-    <line>And wanders up the <del rend="strikethrough">path</del><add place="superlinear">vault</add> of the blue Day</line>
-    <line>Outlives the noon, &#x26; on the Sun's last ray</line>
-    <line>Hangs oer the Sea; a fleece of fire &#x26; amethyst&#x2014;</line>
-    <milestone unit="tei:note" spanTo="#e1-0045.02"/>
-    <line rend="indent5">400</line>
-    <anchor xml:id="e1-0045.02"/>
-    <!-- The above "400" appears to be Shelley's own line number.  How do we mark this in the text?  I've put it as a milestone "note," but I doubt that's correct. -->
+    <line rend="indent1">And wanders up the <mod>
+        <del rend="strikethrough">path</del>
+        <add place="superlinear">vault</add>
+      </mod> of the blue <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>ay</line>
+    <line rend="indent1">Outlives the noon, &#x26; <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">o</add>
+      </mod>n the Sun's last ray</line>
+    <line>Hang<add>s</add> oer the Sea; a fleece of fire &#x26; amethyst&#x2014;<add
+        place="sublinear"><unclear reason="illegible">.</unclear></add></line>
+    <line rend="indent5"><add><metamark function="count">400</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0045.03"/>
     <line rend="center">The Moon</line>
     <anchor xml:id="e1-0045.03"/>
     <line>Thou art folded, thou art lying</line>
-    <line>In the light which is undying</line>
+    <line rend="indent1">In the light which is undying</line>
     <line>Of thine own joy, &#x26; Heavens smile divine</line>
-    <line>All suns &#x26; constellations shower</line>
-    <line>On thee, a light a life a power</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0045.04"/>Which doth array thy sphere--thou</line>
-    <line rend="right">pourest thine<anchor xml:id="e1-0045.04"/></line>
+    <line rend="indent1">All suns &#x26; constellations shower</line>
+    <line rend="indent1">On thee, a light a life a power</line>
+    <milestone unit="tei:l" spanTo="#e1-0045.04"/>
+    <line>Which doth array thy sphere&#8212;thou</line>
+    <line rend="right">pourest thine</line>
+    <anchor xml:id="e1-0045.04"/>
     <line rend="indent2">On mine, on mine!</line>
   </zone>
 </surface>

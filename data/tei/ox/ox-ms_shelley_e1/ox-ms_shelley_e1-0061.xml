@@ -1,37 +1,60 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5384" lry="7248"
-  xml:id="ox-ms_shelley_e1-0061" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5384" lry="7248" xml:id="ox-ms_shelley_e1-0061" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0061.jp2"/>
+  <zone type="library">
+    <line rend="right">30</line>
+  </zone>
   <zone type="main">
-    <line>30</line>
-    <line>Panthea</line>
-    <line>Peace! Peace!-- a mighty Power, which is as Darkness</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0061.01"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0061.01"/>
+    <line>Peace! Peace!&#8212; a mighty Power, which is as Darkness</line>
     <line>Is rising out of Earth, &amp; from the sky</line>
-    <line>Is showered like Night, &amp; from within the air</line>
+    <line>Is showered like <mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">N</add>
+      </mod>ight, &amp; from within the air</line>
+    <milestone unit="tei:l" spanTo="#e1-0061.07"/>
     <line>Bursts, like eclipse which had been gathered</line>
-    <line>sun- up</line>
-    <line>Into the pores of light <del rend="strikethrough">&amp;</del> the bright Visions</line>
-    <line>^</line>
-    <line>Wherein the singing spirits rode &amp; shone</line>
+    <line rend="right">up</line>
+    <anchor xml:id="e1-0061.07"/>
+    <line>Into the pores of <mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">sun-</add>
+      </mod>light&#8212;<del rend="strikethrough">&amp;</del> the bright Visions</line>
+    <line>Whe<unclear reason="illegible">rein</unclear> the singing spirits rode &amp; shone</line>
     <line>Gleam like pale meteors thro' a watery mist</line>
-    <line>Ione</line>
-    <line>There is a sense of words upon mine ear--</line>
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0061.02"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0061.02"/>
+    <line>There is a sense of words upon mine ear&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0061.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0061.03"/>
     <line>An universal sound like words... o list</line>
-    <line>Demogorgon</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0061.04"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e1-0061.04"/>
     <line>Thou Earth, calm Empire of a happy Soul,</line>
-    <line>Sphere of divinest shapes &amp; harmonies</line>
+    <line rend="indent1">Sphere of divinest shapes &amp; harmonies</line>
     <line>Beautiful orb! gathering as thou dost roll</line>
-    <line>The Love which paves thy path along the</line>
-    <line>skies</line>
-    <line>The Earth</line>
-    <line>I hear,-- I am as a drop of dew that dies!</line>
-    <line>Demogorgon</line>
-    <line>Thou Moon which gazest on the nightly earth</line>
-    <line>With wonder, as it gazes upon thee</line>
+    <line rend="indent1">The Love which paves thy path along the skies</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0061.05"/>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e1-0061.05"/>
+    <line>I hear,&#8212; I am as a drop of dew that dies!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0061.06"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e1-0061.06"/>
+    <line>Thou Moon which gazest o<mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">n</add>
+      </mod> the nightly earth</line>
+    <line rend="indent1">With wonder, as it gazes upon thee</line>
     <line>Whilst each to men &amp; beasts &amp; the swift birth</line>
-    <line>Of birds, is beauty, love, calm, harmony</line>
+    <line rend="indent1">Of birds, is beauty, love, calm, harmony</line>
   </zone>
 </surface>

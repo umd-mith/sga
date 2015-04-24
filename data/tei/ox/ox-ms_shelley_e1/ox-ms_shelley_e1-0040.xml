@@ -1,33 +1,69 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0040" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0040" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0040.jp2"/>
-  <zone type="pagination">
-    <line rend="center">2</line>
+  <zone type="pagination"><line rend="center">
+      <add><metamark function="count">2</metamark></add></line>
   </zone>
   <zone type="main">
-    <line>More glorious far than <del rend="strikethrough">thine unenvied throne</del></line>
-    <line><del rend="strikethrough">Of gold &#x26; blood,</del> <del rend="strikethrough">are these</del> o Mighty God!</line>
+    <line>More glorious far than <mod spanTo="#e1-0040.06"/><delSpan rend="strikethrough"
+        spanTo="#e1-0040.04"/>thine unenvied throne</line>
+    <line>Of gold &#x26; blood,<anchor xml:id="e1-0040.04"/>
+      <del rend="strikethrough">are these</del><anchor xml:id="e1-0040.05"/><anchor
+        xml:id="e1-0040.06"/> o Mighty God!</line>
+    <!--text from 20r meant to replace deletion-->
     <line>Almighty, had I deigned to share the shame</line>
     <line>Of thine ill tyranny, and hung not here</line>
     <line>Nailed to this wall of eagle baffling mountain</line>
-    <line>Black, wintry, dead, unmeasured; without herb</line>
-    <line>Insect or beast, or shape or sound of life&#x2014;</line>
+    <line>B<mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">l</add>
+      </mod>ack, wintry, dead, unmeasured<unclear reason="illegible">;</unclear> without herb</line>
+    <line>Insect or beast, or shape <add place="sublinear"><metamark function="displacement"
+          >&#92;</metamark></add> or sound of life&#x2014;</line>
+    <anchor xml:id="e1-0040.07"/>
     <line>I ask the Earth, have not the mountains felt?</line>
-    <line>I ask yon <del rend="strikethrough">Sky</del><add place="superlinear">Heaven</add>&#x2014; the all-beholding Sun</line>
-    <line>Has it not seen? the Sea, in storm or calm</line>
-    <line><del rend="strikethrough">It's</del><add place="superlinear">Heaven's</add> ever changing Shadow, spread below<del rend="strikethrough">?</del>&#x2014;</line>
+    <line>I ask yon <mod>
+        <del rend="strikethrough">Sky</del>
+        <add place="superlinear">Heaven</add>
+      </mod>&#x2014; the all-beholding Sun</line>
+    <line>Has it not seen<mod>
+        <del rend="overwritten"><unclear reason="illegible">,</unclear></del>
+        <add place="intralinear">?</add>
+      </mod> the Sea, in stor<unclear reason="illegible">m</unclear> or calm</line>
+    <line><mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">An</del>
+            <add place="intralinear">It's</add>
+          </mod></del>
+        <add place="superlinear">Heaven's</add>
+      </mod> ever changing Shadow, spread below <mod>
+        <del rend="strikethrough"><unclear reason="illegible">?</unclear></del>
+        <add>&#x2014;</add>
+      </mod></line>
+    <anchor xml:id="e1-0040.08"/>
+    <anchor xml:id="e1-0040.09"/>
     <line>The crawling glaciers pierce me with the spears</line>
     <line>Of their moon-freezing chrystals, the bright chains</line>
     <line>Eat with their burning cold into my bones,</line>
     <line>Heaven's winged hound, polluting from thy lips</line>
-    <line>His beak in poison not it's own, tears up</line>
+    <line>His beak in poison not it's own, <unclear reason="illegilbe">tears</unclear> up</line>
     <line>My heart; &#x26; shapeless sights come wandering by</line>
-    <line>The <del rend="strikethrough">shapele</del> ghastly people of the realm of dream,</line>
-    <line><delSpan rend="strikethrough" spanTo="e1-0040.01"/>Where thou decends't each night with open eyes</line>
+    <line>The <del rend="strikethrough">shapele</del> ghastly people of the realm of <add
+        place="sublinear"><metamark function="displacement">&#8260;</metamark></add> dream<unclear
+        reason="illegible"><del rend="strikethrough">s</del>,</unclear></line>
+    <line><delSpan rend="strikethrough" spanTo="#e1-0040.01"/>Where thou decends't each night with
+      open eyes</line>
     <line>In torture, for a tyrant seldom sleeps,</line>
-    <line>Thou never;<anchor xml:id="e1-0040.01"/> &#x26; the Earthquake-fiends are<add place="superlinear">charged</add></line>
+    <milestone unit="tei:l" spanTo="#e1-0040.02"/>
+    <line rend="right" corresp="#e1-0040.03">charged</line>
+    <line>Thou never; <add place="sublinear"><metamark function="displacement"
+        >&#8745;</metamark></add>
+      <anchor xml:id="e1-0040.01"/>
+      <anchor xml:id="e1-0040.10"/> &#x26; the Earthquake-fiends are <anchor xml:id="e1-0040.03"
+      /></line>
+    <anchor xml:id="e1-0040.02"/>
   </zone>
 </surface>

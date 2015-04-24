@@ -1,37 +1,69 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0058" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0058" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0058.jp2"/>
   <zone type="main">
     <line>For through its grey robe gleams the golden dew</line>
     <line>Whose stars the noon has quenched not.</line>
-    <line>Dream</line>
-    <line>Follow, follow!</line>
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0058.01"/>
+    <line rend="center">Dream</line>
+    <anchor xml:id="e2-0058.01"/>
+    <line rend="indent4">Follow, follow!</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0058.02"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0058.02"/>
     <line>It is mine other dream&#8212;</line>
-    <line>Asia</line>
-    <line>It disappears.</line>
-    <line>Panthea</line>
-    <line>It passes now into my mind. <del rend="strikethrough">methou</del>  <del rend="strikethrough">it was</del></line>
-    <line>methought</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0058.03"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0058.03"/>
+    <line rend="indent4">It disappears.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0058.04"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0058.04"/>
+    <line>It passes now into my mind. <del rend="strikethrough">methou</del>
+      <mod>
+        <del rend="strikethrough">it was</del>
+        <add place="sublinear">methought</add>
+      </mod></line>
     <line><del rend="strikethrough">A dream of sprin</del></line>
-    <line>As we sate here the flower-infolding buds</line>
+    <line rend="indent1">As we sate here the flower-infolding buds</line>
     <line>Burst on yon lightning-blasted almond-tree</line>
-    <line>When swift, from the white Scythian wilderness,</line>
-    <line>A wind swept forth wrinkling the Earth with</line>
-    <line>frost ...</line>
-    <line>I looked, &amp; all the blossoms were blown down</line>
-    <line>But on each leaf was stamped&#8212;as the blue <del rend="strikethrough">of</del> bells</line>
-    <line>tell</line>
-    <line>Of Hyacinth <del rend="strikethrough">speak</del> Apollos written grief&#8212;</line>
+    <line>When swift, from the white Scythian wilderness<add>,</add></line>
+    <milestone unit="tei:l" spanTo="#e2-0058.07"/>
+    <line>A wind swep<mod>
+        <del rend="overwritten">th</del>
+        <add place="intralinear">t</add>
+      </mod> forth wrinkling the Earth with</line>
+    <line rend="right">frost ...</line>
+    <anchor xml:id="e2-0058.07"/>
+    <line>I looked, &amp; all the blo<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">s</add>
+      </mod>soms were blown down</line>
+    <line>But on each leaf was stamped&#8212;as the blue <del rend="strikethrough">o</del>
+      <mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">b</add>
+      </mod>ells</line>
+    <line>Of <mod>
+        <del rend="overwritten">the</del>
+        <add place="intralinear">Hy</add>
+      </mod>a<mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">c</add>
+      </mod>inth <mod>
+        <del rend="strikethrough">speak</del>
+        <add place="superlinear">tell</add>
+      </mod> Apollos written grief&#8212;</line>
     <line><hi rend="underline">O, follow, follow!</hi></line>
-    <line>Asia</line>
-    <line>As you speak your words</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0058.08"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0058.08"/>
+    <line rend="indent3">As you speak your words</line>
     <line>Fill, pause by pause mine own forgotten sleep</line>
     <line>With shapes ... methought among these lawns together</line>
     <line>We wandered, underneath the young grey dawn</line>
   </zone>
 </surface>
-

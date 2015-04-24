@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0046" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0046.jp2"/>
@@ -19,9 +19,9 @@
     <line>The eolian music of her seagreen plumes</line>
     <line>Winnowing the crimson dawn?</line>
     <milestone unit="tei:stage" spanTo="#e2-0046.01"/>
-    <line rend="indent5">Panthea enters</line>
+    <line rend="indent4">Panthea enters</line>
     <anchor xml:id="e2-0046.01"/>
-    <line rend="right">I feel, I see</line>
+    <line rend="indent5">I feel, I see</line>
     <line>Those eyes which burn thro smiles that fade in tears</line>
     <line>Like stars half quenched in mists of silver dew&#8212;</line>
     <line>Beloved &amp; most beautiful, who wearest</line>
@@ -32,7 +32,16 @@
     <milestone unit="tei:speaker" spanTo="#e2-0046.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0046.02"/>
-    <line>Pardon <unclear reason="case">g</unclear>reat Sister! but my wings were faint</line>
-    <line>With the delight of a remembered dream</line>
+    <line>Pardon <mod>
+        <del rend="overwritten">G</del>
+        <add place="intralinear">g</add>
+      </mod>reat <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>ister! but my wings were faint</line>
+    <line>With <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">t</add>
+      </mod>he delight of a remembered dream</line>
   </zone>
 </surface>

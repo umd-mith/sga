@@ -1,26 +1,45 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0079" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0079" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0079.jp2"/>
   <zone type="library">37</zone>
   <zone type="main">
+    <milestone unit="tei:seg" spanTo="#e3-0079.01" corresp="#e3-0078.10"/>
     <line>Dragged to</line>
-    <line>And slain amid<del rend="strikethrough">g</del> men's unreclaiming tears</line>
-    <line>Kindling with <mod><del rend="strikethrough">many</del><add place="superlinear">mingled</add></mod> sounds, &amp; <mod><del rend="strikethrough">mingled</del><add place="superlinear">many</add></mod>tones</line>
+    <anchor xml:id="e3-0079.01"/>
+    <milestone unit="tei:seg" spanTo="#e3-0079.02" corresp="#e3-0078.03"/>
+    <line>And slain am<mod>
+        <del rend="overwritten">on</del>
+        <add place="intralinear">id</add>
+      </mod><del rend="strikethrough">g</del> men's unreclaiming tears</line>
+    <anchor xml:id="e3-0079.02"/>
+    <!-- The next two lines are a revision from two margin lines in e1 9r (e1 19)
+    (Thus need to encode them there) -->
+    <line>Kindl<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>ng with <mod>
+        <del rend="strikethrough">many</del>
+        <add place="superlinear">mingled</add>
+      </mod> sounds, &amp; <mod>
+        <del rend="strikethrough">mingled</del>
+        <add place="superlinear">many</add>
+      </mod>tones</line>
     <line>Intelligible words &amp; music wild&#8212;</line>
-    <line>  40</line>
-    <line>  97</line>
+    <line> 40</line>
+    <line> 97</line>
     <line><hi rend="underline"> 553</hi></line>
     <line> 690</line>
     <line><hi rend="underline">1915</hi></line>
     <line>2605</line>
+    <milestone unit="tei:seg" spanTo="#e3-0079.03" corresp="#e3-0078.04"/>
     <line>The clogs of that which else might oversoar</line>
+    <anchor xml:id="e3-0079.03"/>
     <line>1915</line>
     <line><hi rend="underline"> 533</hi></line>
     <line>2448</line>
     <line>2</line>
   </zone>
 </surface>
-

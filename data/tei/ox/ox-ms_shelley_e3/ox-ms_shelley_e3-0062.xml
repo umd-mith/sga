@@ -1,39 +1,56 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0062" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0062" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0062.jp2"/>
   <zone type="main">
-    <line>Scene == <del rend="strikethrough">the</del> <del rend="strikethrough">The <unclear>pat</unclear></del> A forest&#8212;</line>
+    <milestone unit="tei:scene" spanTo="#e3-0062.03"/>
+    <line>Scene = <del rend="strikethrough">the</del>
+      <del rend="strikethrough">The <unclear reason="illegible">pat</unclear></del>
+      <unclear reason="unclear">A</unclear> forest&#8212;</line>
     <line>in the background a Cavern&#8212;</line>
-    <line>Ione <add place="superlinear">3</add> Panthea<add place="superlinear">4</add> Prometheus<add place="superlinear">1</add> Asia<add place="superlinear">2</add></line>
+    <line>Ione <add place="superlinear">3</add> Panthea<add place="superlinear">4</add>
+        Prometheus<add place="superlinear">1</add> Asia<add place="superlinear">2</add></line>
     <line>the Spirit of the Earth&#8212;</line>
+    <anchor xml:id="e3-0062.03"/>
     <milestone unit="tei:speaker" spanTo="#e3-0062.01"/>
-    <line>Ione</line>
+    <line rend="center">Ione</line>
     <anchor xml:id="e3-0062.01"/>
     <line>Sister it is not Earthly . . . how it glides</line>
-    <line>Under the leaves <unclear>!</unclear> <mod><del rend="strikethrough">&amp;</del><add place="superlinear">how</add></mod> on its head there burns</line>
+    <line>Under the leaves <mod>
+        <del rend="unmarked">,</del>
+        <add place="intralinear">!</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">&amp;</del>
+        <add place="superlinear">how</add>
+      </mod> on its <mod>
+        <del rend="overwritten">its</del>
+        <add place="intralinear">h</add>
+      </mod>ead there burns</line>
     <line>A light like a green star, whose emerald beams</line>
     <line>Are twined with its fair hair! how, as it moves</line>
     <line>The splendour drops in flakes upon the grass!</line>
     <line>Knowest thou it?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0062.02"/>
-    <line>Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e3-0062.02"/>
-    <line rend="indent3">It is the delicate spirit</line>
-    <line>That guides the earth thro Heaven. From afar</line>
+    <line rend="indent4">It is the delicate spirit</line>
+    <line>T<retrace cause="unclear">h</retrace>at guides the earth thro Heaven. From afar</line>
     <line>The populous constellations call that light</line>
     <line>The loveliest of the planets, and sometimes</line>
     <line>It floats along the spray of the salt sea <metamark function="count">320</metamark></line>
     <line>Or makes its chariot of a foggy cloud</line>
     <line>Or walks thro fields or cities while men sleep</line>
     <line>Or oer the mountain tops, or down the rivers,</line>
-    <line>Or through the green waste wilderness, as now <unclear>,</unclear></line>
+    <line>Or through the green waste wilderness, as now <mod>
+        <del rend="overwritten">;</del>
+        <add place="intralinear">,</add>
+      </mod></line>
     <line>Wondering at all it sees. Before Jove reigned</line>
     <line>It loved our sister Asia, &amp; it came</line>
     <line>Each leisure hour to drink the liquid light</line>
-    <line rend="right"><metamark function="count">318</metamark></line>
+    <line rend="right"><add><metamark function="count">318</metamark></add></line>
   </zone>
 </surface>
-

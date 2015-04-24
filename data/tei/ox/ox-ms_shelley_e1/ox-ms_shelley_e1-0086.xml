@@ -1,31 +1,46 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0086" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0086" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0086.jp2"/>
   <zone type="main">
-    <line>Mercury</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.01"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0086.01"/>
     <line>If thou might'st dwell among the Gods the while</line>
-    <line>Lapped in voluptuous joy?--</line>
-    <line>Prometheus</line>
+    <line>Lapped in voluptuous joy?&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.02"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0086.02"/>
     <line>I would not quit</line>
     <line>This bleak ravine, these unrepentant pains</line>
-    <line>Mercury</line>
-    <line>Alas I wonder at, yet pity thee</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.03"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0086.03"/>
+    <line>Alas I wonder at, yet pity thee<unclear reason="illegible">.</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.04"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0086.04"/>
     <line>Pity the self-despising slaves of Heaven</line>
     <line>Not me, within whose mind sits peace serene</line>
     <line>As light in the sun, throned ... how vain is talk!</line>
     <line>Call up the fiends</line>
     <line>(<del rend="strikethrough">thunder &amp; l</del>ightning)</line>
-    <line>Ione</line>
-    <line>O sister O sister look, white fire</line>
-    <line>Has cloven to the roots yon huge snow-loaded Cedar</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.05"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0086.05"/>
+    <line><del rend="smear">O sister</del> O sister look, white fire</line>
+    <line>Has cloven to the roots yon hug<retrace cause="unclear">e</retrace> snow-loaded
+      Cedar</line>
     <line>How fearfully God's thunder howls behind!</line>
-    <line>Mercury</line>
-    <line>I must obey his words &amp; thine--alas</line>
-    <line>Most</line>
-    <line><del rend="strikethrough">How</del> heavily remorse hangs at my heart!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0086.06"/>
+    <line rend="center">Mercury</line>
+    <anchor xml:id="e1-0086.06"/>
+    <line>I must obey his words &amp; thine&#8212;alas</line>
+    <line><mod>
+        <del rend="strikethrough">How</del>
+        <add place="superlinear">Most</add>
+      </mod> heavily remorse hangs at my heart!</line>
   </zone>
 </surface>

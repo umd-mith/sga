@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0009" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0009" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0009.jp2"/>
   <zone type="library"><line>4</line></zone>
   <zone type="main">
-    <line>We have felt the wand of Power, and leap&#x2014;</line>
+    <line>We have felt the wand of Power<add>,</add>
+      <mod>
+        <del rend="overwritten">&#x2014;</del>
+        <add place="intralinear">a</add>
+      </mod>nd leap&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.01"/>
     <line rend="center">Semichorus 2</line>
     <anchor xml:id="e1-0009.01"/>
@@ -17,41 +21,60 @@
     <anchor xml:id="e1-0009.02"/>
     <line>Weave the dance on the floor of the breeze,</line>
     <line>Pierce with song Heaven's silent light,</line>
-    <line>Enchant the Day that too swiftly flees</line>
+    <line>Enchant the <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>ay that too swiftly flees</line>
     <line>To <mod>
         <del rend="strikethrough">soothe</del>
         <add place="sublinear">check</add>
-      </mod> its flight, ere the cave of Night;</line>
-    <line>Once the hungry Hours were hounds</line>
+      </mod> its flight, ere the cave of <mod>
+        <del rend="overwritten">n</del>
+        <add place="intralinear">N</add>
+      </mod>ight;</line>
+    <line>Once the hungry <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>ours were hounds</line>
     <line>Which chased the Day, like a bleeding deer</line>
     <line>And it limped and stumbled with many wounds</line>
     <line>T<mod>
-        <add place="sublinear"><metamark function="insert">&#x2038;</metamark></add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">r</add>
       </mod>hough the nightly dells of the desart year</line>
-    <line>But now &#x2014; oh weave the mystic measure</line>
+    <line>But now &#x2014; o<unclear reason="illegible">h</unclear> weave the mystic measure</line>
     <line>Of music &amp; dance and shapes of light,</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0009.07"/>Let the Hours &amp; all Spirits of might
-      &amp;</line>
-    <line rend="right">pleasure<anchor xml:id="e1-0009.07"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0009.07"/>
+    <line>Let the <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>ours &amp; all <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>pirits of might &amp;</line>
+    <line rend="right">pleasure</line>
+    <anchor xml:id="e1-0009.07"/>
     <line>Like the clouds &amp; the sunbeams unite</line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.03"/>
     <line rend="right">a Voice</line>
     <anchor xml:id="e1-0009.03"/>
-    <line rend="right">Unite!</line>
+    <line rend="right">Unite<unclear reason="illegible">!</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.04"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e1-0009.04"/>
     <line>See where the Spirits of the human mind</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0009.08"/><mod>
+    <milestone unit="tei:l" spanTo="#e1-0009.08"/>
+    <line><mod>
         <del rend="strikethrough">Clothed</del>
         <add place="superlinear">Wrapt</add>
       </mod> in sweet <mod>
         <del rend="strikethrough">song</del>
         <add place="superlinear">sounds</add>
       </mod>, like radiant <mod spanTo="e1-0009.05"/><del rend="strikethrough" next="#e1-0009.06"
-        >garments,</del><add place="superlinear">veils, approach</add></line>
+          >garments<unclear reason="illegible">,</unclear></del><add place="superlinear">veils,
+        approach</add></line>
     <line rend="right"><del rend="strikethrough" xml:id="e1-0009.06">come</del><anchor
-        xml:id="e1-0009.05"/><anchor xml:id="e1-0009.08"/></line>
+        xml:id="e1-0009.05"/></line>
+    <anchor xml:id="e1-0009.08"/>
   </zone>
 </surface>

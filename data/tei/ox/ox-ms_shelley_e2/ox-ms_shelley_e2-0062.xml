@@ -1,36 +1,54 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0062" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0062" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0062.jp2"/>
   <zone type="main">
     <line>As they were spirit-tongued</line>
-    <line>Asia</line>
-    <line>It is some being</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0062.01"/>
+    <line rend="indent4">It is some being</line>
     <line>Around the crags &#8212; what fine clear sounds&#8212;o list</line>
-    <line>Echoes unseen</line>
-    <line>Echoes we&#8212;listen</line>
-    <line><del rend="strikethrough">As</del> We cannot stay</line>
-    <line>As dew-stars glisten</line>
-    <line>Then fade away</line>
-    <line>Child of Ocean!</line>
-    <line>Asia</line>
-    <line>liquid</line>
-    <line>Hark spirits speak! the <del rend="strikethrough">aerial</del> responses</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.02"/>
+    <line rend="center"><del rend="strikethrough" instant="true">V</del>Echoes unseen</line>
+    <anchor xml:id="e2-0062.02"/>
+    <line rend="indent1">Echoes we&#8212;listen</line>
+    <line rend="indent1"><del rend="strikethrough" instant="true">As</del> We cannot stay</line>
+    <line rend="indent1">As dew-stars glisten</line>
+    <line rend="indent2">Then fade away <unclear reason="illegible">&#8212;</unclear></line>
+    <line rend="indent2">Child of Ocean!</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.03"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0062.03"/>
+    <line>Hark spirits speak! the <mod>
+        <del rend="strikethrough">aerial</del>
+        <add place="superlinear">liquid</add>
+      </mod> responses</line>
     <line>Of thier aerial tongues yet sound&#8212;</line>
-    <line>Panthea I hear.</line>
-    <line>Echoes</line>
-    <line>O follow follow</line>
-    <line>As our voice recedeth</line>
-    <line>Thro the caverns hollow</line>
-    <line>Where the forest spreadeth</line>
-    <line>More distant</line>
-    <line>O follow follow</line>
-    <line>Throughthe caverns hollow</line>
-    <line>As the song floats, thou pursue</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0062.04"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0062.04"/>
+    <line rend="indent5">I hear.</line>
+    <line rend="indent3" rotate="180"><add><metamark function="count">125</metamark></add></line>
+    <line rend="indent2" rotate="180"><add><metamark function="count"><unclear reason="illegible"
+            >60</unclear></metamark></add></line>
+    <!-- Some faint and difficult to encode makrs here -->
+    <milestone unit="tei:speaker" spanTo="#e2-0062.05"/>
+    <line rend="center">Echoes</line>
+    <anchor xml:id="e2-0062.05"/>
+    <line rend="indent2">O follow follow</line>
+    <line rend="indent2">As our voice recedeth</line>
+    <line rend="indent2">Thro the caverns hollow</line>
+    <line rend="indent3">Where the forest spreadeth</line>
+    <milestone unit="tei:stage" spanTo="#e2-0062.06"/>
+    <line rend="indent5"><add>More distant</add></line>
+    <anchor xml:id="e2-0062.06"/>
+    <line rend="indent3">O follow follow</line>
+    <line rend="indent3">Throughthe caverns hollow</line>
+    <line>As the song floats<unclear reason="illegible">,</unclear> thou pursue</line>
     <line>Where the wild-bee never flew</line>
-    <line>173</line>
+    <line rend="right"><add><metamark function="count">173</metamark></add></line>
   </zone>
 </surface>
-

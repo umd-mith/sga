@@ -1,18 +1,22 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7478"
-  xml:id="ox-ms_shelley_e1-0002" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7478" xml:id="ox-ms_shelley_e1-0002" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0002.jp2"/>
   <zone type="library">
     <line rend="left">MS. Shelley e.1</line>
     <line rend="left">(31552)</line>
   </zone>
   <zone type="main" rotate="180">
-    <line rend="indent4">400 &#x2014; &#x2014; 23<hi rend="sup">d</hi> 163.</line>
-    <line rend="indent4"><hi rend="underline">163</hi></line>
+    <addSpan spanTo="#e1-0002.01"/>
+    <line rend="indent4"><metamark function="count">400</metamark> &#x2014; &#x2014; <metamark
+        function="count">23<hi rend="sup">d</hi> 163.</metamark></line>
+    <line rend="indent4"><hi rend="underline"><metamark function="count">163</metamark></hi></line>
     <line>excite your audience to the highest</line>
-    <line rend="indent4"><del rend="strikethrough"><hi rend="underline">500</hi></del></line>
+    <line rend="indent4"><del rend="strikethrough"><add><hi rend="underline"><metamark
+              function="count">500</metamark></hi></add></del></line>
+    <!--use the "change" element or attribute to indicate layers of writing-->
     <line>degree; when for instance you sing of</line>
     <line>Ulysses leaping upon the threshold of</line>
     <line>his home, <mod>
@@ -30,8 +34,11 @@
     <line>transported into the midst of</line>
     <line>the action which it paints in</line>
     <line>its enthusiasm, whether in Ithaca</line>
-    <line>or in Troy, or whatever other place</line>
+    <line>or in Troy, <mod>
+        <del rend="overwritten">&amp;</del>
+        <add place="intralinear">or</add>
+      </mod> whatever other place</line>
     <line>may be the scene of the epic</line>
-    <line>you recite? X</line>
+    <line>you recite? <metamark function="separate">X</metamark></line>
   </zone>
 </surface>

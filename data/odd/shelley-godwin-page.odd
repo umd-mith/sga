@@ -379,7 +379,6 @@
                     <classSpec ident="att.transcriptional" type="atts" mode="change">
                         <attList>
                             <attDef ident="status" mode="delete"/>
-                            <attDef ident="cause" mode="delete"/>
                             <attDef ident="hand" mode="replace">
                                 <valList type="closed" mode="replace">
                                     <valItem ident="#pbs">
@@ -393,6 +392,10 @@
                                     <valItem ident="#comp">
                                         <gloss>compositor's handwriting</gloss>
                                         <desc>Text written in an (unknown?) compositor's hand.</desc>
+                                    </valItem>
+                                    <valItem ident="#library">
+                                        <gloss>librarian's handwriting</gloss>
+                                        <desc>Text written in an (unknown?) librarian's hand.</desc>
                                     </valItem>
                                     <valItem ident="http://viaf.org/viaf/95159449"/>
                                 </valList>
@@ -421,6 +424,24 @@
                     <classSpec ident="att.global.change" type="atts" mode="delete"/>
                     <classSpec ident="att.declaring" type="atts" mode="delete"/>
                     <classSpec ident="att.responsibility" type="atts" mode="delete"/>
+
+                    <!-- Custom macros -->
+                    <macroSpec ident="sga:linerend" type="dt" mode="add">
+                        <desc>Simple datatype for indentation values.
+                        When the indentation is numbered, each value should correspond 
+                        roughly 1/10 of the page.
+                        </desc>
+                        <content>
+                            <rng:choice>
+                                <rng:value ident="right"/>
+                                <rng:value ident="center"/>
+                                <rng:value ident="left"/>
+                                <rng:data type="string">
+                                    <rng:pattern>indent\d</rng:pattern>
+                                </rng:data>
+                            </rng:choice>
+                        </content>
+                    </macroSpec>
 
                     <elementSpec ident="surface" module="transcr" mode="change">
                         <content>
@@ -459,13 +480,16 @@
 
                             <attDef ident="n" mode="change" usage="rec"/>
 
-                            <attDef ident="corresp" mode="change" usage="req">
+                            <attDef ident="corresp" mode="change" usage="opt">
                                 <altIdent>partOf</altIdent>
                                 <desc>Syntactic sugar attribute—should refer to the id of the
                                     sourceDoc element with which this surface should be
                                     associated</desc>
                             </attDef>
-
+                            
+                            <attDef ident="shelfmark" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt"/>
+                            <attDef ident="folio" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt"/>
+                            
                             <!-- See note above re: Whitman integration -->
                             <attDef ident="attachment" mode="delete"/>
                             <attDef ident="flipping" mode="delete"/>
@@ -500,16 +524,9 @@
                         </content>
                         <attList>
                             <attDef ident="rend" mode="replace" usage="opt">
-                                <valList type="closed" mode="replace">
-                                    <valItem ident="right"/>
-                                    <valItem ident="center"/>
-                                    <valItem ident="left"/>
-                                    <valItem ident="indent1"/>
-                                    <valItem ident="indent2"/>
-                                    <valItem ident="indent3"/>
-                                    <valItem ident="indent4"/>
-                                    <valItem ident="indent5"/>
-                                </valList>
+                                <datatype>
+                                    <rng:ref name="data.BOOLEAN"/>
+                                </datatype>
                             </attDef>
                         </attList>
                         <remarks>
@@ -542,6 +559,7 @@
                                     <valItem ident="caps"/>
                                     <valItem ident="italic"/>
                                     <valItem ident="sup"/>
+                                    <valItem ident="sub"/>
                                 </valList>
                             </attDef>
                         </attList>
@@ -558,6 +576,7 @@
                                     <valItem ident="superlinear"/>
                                     <valItem ident="intralinear"/>
                                     <valItem ident="sublinear"/>
+                                    <valItem ident="interlinear"/>
                                 </valList>
                             </attDef>
                             <attDef ident="type" mode="replace">
@@ -586,7 +605,7 @@
                     <elementSpec ident="del" module="core" mode="change">
                         <attList>
                             <attDef ident="rend" mode="replace">
-                                <valList type="semi" mode="replace">
+                                <valList type="closed" mode="replace">
                                     <valItem ident="strikethrough"/>
                                     <valItem ident="overwritten"/>
                                     <valItem ident="smear"/>
@@ -606,12 +625,16 @@
                                     <valItem ident="tei:div"/>
                                     <valItem ident="tei:p"/>
                                     <valItem ident="tei:lg"/>
+                                    <valItem ident="tei:l"/>
                                     <valItem ident="tei:date"/>
                                     <valItem ident="tei:speaker"/>
                                     <valItem ident="tei:q"/>
                                     <valItem ident="tei:stage"/>
                                     <valItem ident="tei:seg"/>
                                     <valItem ident="tei:note"/>
+                                    <valItem ident="tei:head"/>
+                                    <valItem ident="tei:div[@type='scene']"/>
+                                    <valItem ident="tei:div[@type='act']"/>
                                 </valList>
                             </attDef>
                         </attList>
@@ -631,6 +654,8 @@
                                     <rng:ref name="model.noteLike"/>
                                     <rng:ref name="model.global.edit"/>
                                     <rng:ref name="metamark"/>
+                                    <!-- cherry picked from model.global.meta -->
+                                    <rng:ref name="alt"/>
                                 </rng:choice>
                             </rng:zeroOrMore>
                         </content>
@@ -678,7 +703,9 @@
                                     <valItem ident="separate"/>
                                     <valItem ident="paragraph"/>
                                     <valItem ident="displacement"/>
-                                    <valItem ident="trasnpose"/>
+                                    <valItem ident="transpose"/>
+                                    <valItem ident="sequence"/>
+                                    <valItem ident="alternate"/>
                                 </valList>
                             </attDef>
                             <!--<attDef ident="target">
@@ -713,11 +740,11 @@
                         <constraintSpec scheme="isoschematron" ident="modContents">
                             <constraint>
                                 <sch:rule context="tei:mod">
-                                    <sch:assert test="count(node()) gt 1">The mod element is
+                                    <sch:report test="not(@spanTo) and not(count(node()) gt 1)">The mod element is
                                         intended to group a series of related changes to the
                                         manuscript. Thus, mod must have more than one child
                                         element. If only a single addition or deletion is being
-                                        encoded, mod is not required.</sch:assert>
+                                        encoded, mod is not required.</sch:report>
                                 </sch:rule>
                             </constraint>
                         </constraintSpec>
@@ -756,6 +783,7 @@
                                 <valList mode="replace" type="closed">
                                     <valItem ident="#pbs"/>
                                     <valItem ident="#mws"/>
+                                    <valItem ident="#library"/>
                                 </valList>
                             </attDef>
                         </attList>
@@ -789,6 +817,7 @@
                                 <valList mode="replace" type="closed">
                                     <valItem ident="#pbs"/>
                                     <valItem ident="#mws"/>
+                                    <valItem ident="#library"/>
                                 </valList>
                             </attDef>
                             <attDef ident="medium" mode="replace" usage="req">

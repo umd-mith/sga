@@ -1,47 +1,59 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5384" lry="7248" xml:id="ox-ms_shelley_e1-0020" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5384" lry="7248" xml:id="ox-ms_shelley_e1-0020" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0020.jp2"/>
   <zone type="main">
     <line>Round its intense, yet self-conflicting speed,</line>
     <line>Seem kneaded into one aerial mass</line>
-    <line>Which drowns the sense..within the Orb itself,</line>
+    <line>Which drowns <mod>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">t</add>
+      </mod>he sense..within the <unclear reason="case">O</unclear>rb itself,</line>
     <line>Pillowed upon its alabaster arms,</line>
     <line>Like a child overwearied with sweet toil,</line>
     <line><mod>
         <del rend="strikethrough">Within</del>
         <add place="superlinear">On</add>
       </mod> its <mod>
-        <add place="sublinear"><metamark>&#x2038;</metamark></add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">own</add>
       </mod> folded wings &amp; wavy hair</line>
-    <line>The Spirit of the Earth is laid asleep</line>
+    <line>The <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>pirit of the Earth is laid asleep</line>
     <line>And you can see its little lips are moving</line>
-    <line>Amid the changing light of thir own smiles</line>
-    <line>Like one who talks of what he loves in dream<unclear>.</unclear>&#x2014;</line>
+    <line>Amid the ch<mod>
+        <del rend="overwritten">il</del>
+        <add place="intralinear">a</add>
+      </mod>nging light of thir own smiles</line>
+    <line>Like one who talks of what he loves in dream<unclear reason="illegible"
+      >.</unclear>&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0020.01"/>
-    <line>Ione</line>
+    <line rend="center">Ione</line>
     <anchor xml:id="e1-0020.01"/>
     <line>'Tis only mocking the Orb's harmony ...</line>
     <milestone unit="tei:speaker" spanTo="#e1-0020.02"/>
-    <line>Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e1-0020.02"/>
     <line>And from a star upon its forehead, shoot,</line>
     <line>Like swords of azure fire, or golden spears</line>
-    <line>With tyrant-quelling myrtle overtwined,</line>
+    <line>With tyrant-quell<unclear reason="ilegible">i</unclear>ng myrtle overtwined,</line>
     <line>Embleming Heaven &amp; earth united now,</line>
     <line>Vast beams like spokes of some invisible wheel</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0020.03"/>Which whirl as the orb whirls, swifter
-      than</line>
-    <line rend="right">thought,<anchor xml:id="e1-0020.03"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0020.03"/>
+    <line>Which whirl as the <unclear reason="case">o</unclear>rb whirls, swifter than</line>
+    <line rend="right">thought,</line>
+    <anchor xml:id="e1-0020.03"/>
     <line>Filling the abyss with sunlike lightenings</line>
     <line><mod>
         <del rend="strikethrough">Which</del>
         <add place="superlinear">And</add>
       </mod> perpendicular now, &amp; now transverse</line>
     <line>Pierce the dark soil, &amp; as they pierce &amp; pass</line>
-    <line>Make bare the secrets of the Earths deep he<damage type="inkblot">ar</damage>t.</line>
+    <line>Make bare the secrets of the Earths deep heart<unclear reason="illegible"
+      >.</unclear></line>
   </zone>
 </surface>

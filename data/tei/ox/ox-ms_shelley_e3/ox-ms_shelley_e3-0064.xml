@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0064" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0064" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0064.jp2"/>
   <zone type="main">
     <line>Our of her eyes, for which it said it thirsted</line>
@@ -13,20 +13,23 @@
     <line>For whence it sprung it knew not nor do I&#8212;</line>
     <line>Mother dear Mother</line>
     <milestone unit="tei:speaker" spanTo="#e3-0064.01"/>
-    <line>The Spirit running to Asia</line>
+    <line rend="indent2">The Spirit running to Asia</line>
     <anchor xml:id="e3-0064.01"/>
     <line rend="indent3">Mother dearest Mother!</line>
-    <line>May I then talk with thee as I was wont? <metamark function="count">335</metamark></line>
+    <line>May I then talk with thee as I was wont? <add><metamark function="count"
+        >335</metamark></add></line>
     <line>May I then hide mine eyes in thy soft arms</line>
-    <line>After thy looks have made them tired of joy?</line>
+    <line><unclear reason="illegible">A</unclear>fter thy looks have made them tired of joy?</line>
     <line>May I then play beside thee the long noons</line>
     <line>When work is none in the bright silent air?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0064.02"/>
     <line>Asia</line>
     <anchor xml:id="e3-0064.02"/>
-    <line>I love thee gentlest being, and henceforth <metamark function="count">340</metamark></line>
+    <line>I love thee gentlest being, and henceforth <add><metamark function="count"
+        >340</metamark></add></line>
     <line>Can cherish thee unenvied&#8212; speak I pray</line>
-    <line>Thy <del rend="strikethrough"><unclear>p</unclear></del> simple talk once solaced ... now delights.</line>
+    <line>Thy <del rend="strikethrough"><unclear reason="illegible">p</unclear></del> simple talk
+      once solaced ... now delights.</line>
     <milestone unit="tei:speaker" spanTo="#e3-0064.03"/>
     <line>Spirit</line>
     <anchor xml:id="e3-0064.03"/>
@@ -34,8 +37,6 @@
     <line>Cannot be wise like thee, within this day</line>
     <line>And happier too, happier &amp; wiser both.</line>
     <line>Thou knowest that toads &amp; snakes &amp; loathly worms</line>
-    <line rend="right"><gap reason="illegible"/></line>
-    <line rend="right"><gap reason="illegible"/>7</line>
+    <line rend="right"><unclear reason="illegile">33</unclear>7</line>
   </zone>
 </surface>
-

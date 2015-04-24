@@ -1,22 +1,43 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0017" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0017" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0017.jp2"/>
+  <zone type="library"><line rend="right">8</line></zone>
   <zone type="main">
-    <line>8</line>
-    <line>Fury</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0017.01"/>
+    <line rend="center">Fury</line>
+    <anchor xml:id="e2-0017.01"/>
     <line>Behold, <del rend="strikethrough">behold how those who do endure</del></line>
-    <line>an emblem&#8212;those who do endure</line>
-    <line><del rend="strikethrough">Wounds</del>  Deep wrongs for man, <del rend="strikethrough">Wounds</del>  <del rend="strikethrough">&amp; de <unclear>s</unclear></del></line>
-    <line><del rend="strikethrough">Stripes</del>  <del rend="strikethrough">for mankind</del> , &amp; scorn <unclear>:</unclear> and chains, but heap</line>
-    <line>^</line>
-    <line><del rend="strikethrough">Heap</del>  Thousand-fold torment on themselves &amp; him.</line>
-    <line>darkness</line>
-    <line>a <del rend="strikethrough">shadow</del> floats <del rend="strikethrough">flo</del> slowly across</line>
-    <line><unclear>t</unclear>he  <unclear>s</unclear>cene</line>
+    <line rend="indent2">an emblem&#8212;those who do endure</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">Stripes</del>
+        <del rend="strikethrough"><add place="superlinear">Wounds</add></del>
+      </mod>
+      <mod>
+        <del rend="strikethrough">for mankind</del>
+        <add place="superlinear">Deep wrongs for man,</add>
+      </mod> , &amp; scorn <mod>
+        <del rend="overwritten">;</del>
+        <add place="intralinear">:</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">&amp;</del>
+        <del rend="strikethrough"><add place="superlinear">wound</add></del>
+      </mod> and chains <del rend="strikethrough"><add place="superlinear">&amp;
+            de<unclear>s</unclear></add></del>, but heap</line>
+    <line><del rend="strikethrough">Heap</del> Thousand-fold torment on themselves &amp; him.</line>
+    <milestone unit="tei:stage" spanTo="#e2-0017.02"/>
+    <line rend="indent3">a <mod>
+        <del rend="strikethrough">shadow</del>
+        <add place="superlinear">darkness</add>
+      </mod> floats <del rend="strikethrough">flo</del> slowly across</line>
+    <line><mod>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">t</add>
+      </mod>he <unclear reason="case">s</unclear>cene</line>
+    <anchor xml:id="e2-0017.02"/>
     <line>[PENCIL SKETCH OF FOLIAGE AND MARKS FROM PEN CLEARING BELOW]</line>
   </zone>
 </surface>
-

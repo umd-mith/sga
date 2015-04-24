@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0072" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0072" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0072.jp2"/>
   <zone type="main">
     <line>Where they henceforth will live exempt from toil.</line>
-    <line>Pasturing flowers of vegetable fire <del rend="strikethrough"><hi rend="underline">/</hi></del><metamark function="count">42<unclear>1</unclear></metamark></line>
+    <line>Pasturing flowers of vegetable fire <add><metamark function="displacement"
+          xml:id="e3-0072.01"><hi rend="underline">&#60;</hi></metamark></add><add>
+        <metamark function="count">42<unclear>1</unclear></metamark></add></line>
     <line>It was, as it is still, the pain of bliss</line>
     <line>To move, to breathe, to be; I wandering went</line>
     <line>Among the haunts &amp; dwellings of mankind</line>
     <line>And first was disappointed not to see</line>
     <line>Such mighty change as I had felt within</line>
     <line>Expressed in outward things; but soon I looked</line>
-    <line><metamark function="count">1790</metamark></line>
-    <line>And behold! thrones were kingless, &amp; men walked</line>
+    <line><add place="superlinear"><metamark function="count">1790</metamark></add>And beh<unclear
+        reason="illegible">o</unclear>ld! thrones were kingless, &amp; men walked</line>
     <line>One with the other even as spirits do,</line>
     <line>None frowned, none trampled, hate disdain or fear</line>
     <line>Self-love or self-contempt on human brows,</line>
@@ -22,12 +24,28 @@
     <line>"All hope abandon, ye who enter here"</line>
     <line>None fawned, none trembled, none with eager fear</line>
     <line>Gazed on anothers eye of cold command</line>
-    <line>Until the <mod><del rend="strikethrough">captive</del><add place="superlinear">subject</add> </mod>of a tyrants will</line>
-    <line>Became, worse fate, the <mod><del rend="strikethrough">subject</del><add place="superlinear">abject</add></mod>of his own</line>
-    <line><metamark function="count">1800</metamark></line>
+    <line>Until the <mod>
+        <milestone unit="tei:seg" spanTo="#e3-0072.02" xml:id="e3-0072.03"/>
+        <restore type="underline"><del rend="strikethrough"><mod>
+              <del rend="overwritten">s</del>
+              <add place="intralinear">c</add>
+            </mod>a<hi rend="underline">pt</hi>ive</del></restore>
+        <anchor xml:id="e3-0072.02"/>
+        <milestone unit="tei:seg" spanTo="#e3-0072.04" xml:id="e3-0072.05"/>
+        <add place="superlinear">subject</add>
+        <anchor xml:id="e3-0072.04"/>
+      </mod><alt target="#e3-0072.03 #e3-0072.05" mode="excl" weights="0 1"/> of a tyrants
+      will</line>
+    <line><add place="sublinear"><metamark function="count">1800</metamark></add>Became, worse fate,
+      the <mod>
+        <del rend="strikethrough">subject</del>
+        <add place="superlinear">abject</add>
+      </mod>of his own</line>
     <line>Which spurred him, like an outspent horse, to death&#8212;</line>
     <line>None wrought his lips in truth entangling lines</line>
     <line>Which smiled the lie his tongue disdained to speak</line>
+    <line rend="left"><add hand="#mws"><unclear><metamark function="alternate"
+          >?</metamark></unclear></add></line>
+    <!-- Need to add "alternate" to "metamark" or discard its use -->
   </zone>
 </surface>
-

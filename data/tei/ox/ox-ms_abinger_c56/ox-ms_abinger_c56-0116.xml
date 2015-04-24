@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c56-0116" ulx="0" uly="0" lrx="5364" lry="7104"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="55v" partOf="#ox-frankenstein_volume_i">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0116.jp2"/>
   <zone type="pagination" rend="bordered"><line>146</line></zone>
   <zone type="main">
-    <line>was I wa<retrace cause="clarify" hand="#pbs">s</retrace>
+    <line>was I wa<retrace cause="unclear" hand="#pbs">s</retrace>
       <add place="superlinear" hand="#pbs">somewhat</add> interrested <mod spanTo="#c56-0116.01"/>
       <del rend="strikethrough" next="#c56-0116.02">and sometimes</del><add hand="#pbs"
         place="superlinear" next="#c56-0116.03">in the scene..it sometimes</add></line>

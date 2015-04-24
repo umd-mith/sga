@@ -1,25 +1,51 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0085" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0085" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0085.jp2"/>
+  <zone type="library"><line rend="right">42</line></zone>
   <zone type="main">
-    <line>42</line>
-    <line>/Abandoned hope, &amp; love that turns to hate</line>
-    <line>\And Self-contempt, bitterer to drink than blood;</line>
-    <line>With the bright form beside thee&#8212;</line>
-    <line>Resist not the weakness&#8212;</line>
-    <line><del rend="strikethrough">For</del> strength is in meekness&#8212;</line>
-    <line>Such</line>
-    <line><hi rend="underline">That the Eternal the Immortal</hi></line>
-    <line><del rend="strikethrough">With the the key of life's portal</del></line>
-    <line>That the Eternal the Immortal</line>
-    <line><del rend="strikethrough">Will loose</del>  unloose thro life's portal</line>
-    <line><del rend="strikethrough">With</del>  Must <del rend="strikethrough">unchain, at</del></line>
-    <line>The<del rend="strikethrough">D <unclear>A</unclear></del> snake-like Doom coiled <del rend="strikethrough">up</del> underneath his</line>
-    <line>throne</line>
-    <line>By that alone!</line>
+    <milestone unit="tei:seg" spanTo="#e2-0085.02" xml:id="e2-0085.03" corresp="#e2-0084.09"/>
+    <line>Abandoned hope, &amp; love that turns to hate</line>
+    <anchor xml:id="e2-0085.02"/>
+    <line rend="left"><add place="interlinear"><metamark function="displacement"
+        >&#60;</metamark></add></line>
+    <milestone unit="tei:seg" spanTo="#e2-0085.04" next="#e2-0085.03"/>
+    <line>And Self-<mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">co</add>
+      </mod>ntempt, bitterer to drink than blood;</line>
+    <anchor xml:id="e2-0085.04"/>
+    <line rend="indent1">With <mod>
+        <del rend="overwritten">that</del>
+        <add place="intralinear">the</add>
+      </mod> bright form beside thee&#8212;</line>
+    <line rend="indent1">Resist not the weakness&#8212;</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">For</del>
+        <add place="sublinear">Such</add>
+      </mod> strength is in meekness&#8212;</line>
+    <line rend="indent1"><hi rend="underline">That the Eternal the Immortal</hi></line>
+    <line><mod>
+        <del rend="strikethrough">With the the key of life's portal</del>
+      </mod></line>
+    <line rend="indent1">That the Eternal the Immortal</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough"><add place="superlinear">Will loose</add></del>
+        <del rend="strikethrough">With </del>
+      </mod>Must <mod>
+        <del rend="strikethrough">unchain, at</del>
+        <add place="superlinear">unloose thro life's portal</add>
+      </mod></line>
+    <milestone unit="tei:l" spanTo="#e2-0085.01"/>
+    <line>The<del rend="strikethrough">D<unclear reason="illegible">A</unclear></del> snake-like <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>oom coiled <del rend="strikethrough">up</del> underneath his</line>
+    <line rend="right">throne</line>
+    <anchor xml:id="e2-0085.01"/>
+    <line rend="indent2">By that alone!</line>
     <line>[SKETCHES OF HARPS, IN PENCIL]</line>
     <line>45</line>
     <line>95 <hi rend="underline">50</hi></line>
@@ -28,4 +54,3 @@
     <line>125</line>
   </zone>
 </surface>
-

@@ -1,26 +1,34 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0052" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0052" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0052.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="e1-0052.01"/>
-    <line rend="center">The Earth <anchor xml:id="e1-0052.01"/></line>
+    <line rend="center">The Earth </line>
+    <anchor xml:id="e1-0052.01"/>
     <line rend="indent3">How canst thou hear</line>
     <line>Who knowest not the language of the dead?</line>
-    <line><del rend="smear">I d</del> <milestone unit="tei:speaker" spanTo="#e1-0052.02"/>Prometheus<anchor xml:id="e1-0052.02"/></line>
-    <!-- Note that "I d" is against the margin, but "Prometheus" is centered. How do we render these disparate placings within the same line? -->
+    <line><del rend="smear">I d</del>
+      <milestone unit="tei:speaker" spanTo="#e1-0052.02"/>Prometheus<anchor xml:id="e1-0052.02"
+      /></line>
     <line>Thou art a living spirit &#x2014; speak as they</line>
     <milestone unit="tei:speaker" spanTo="#e1-0052.03"/>
-    <line rend="center">The Earth <anchor xml:id="e1-0052.03"/></line>
-    <line>I dare not speak like life, lest Heaven's <del rend="strikethrough">fierce</del> King</line>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e1-0052.03"/>
+    <line>I dare not speak like life, lest Heaven's <del rend="strikethrough">fierce</del><anchor
+        xml:id="e1-0052.06"/> King</line>
     <line>Should hear, &#x26; link me to some wheel of pain</line>
-    <line>More torturing than the one whereon I roll.&#x2014;</line>
+    <line>More torturing than the one wher<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">e</add>
+      </mod>on I roll.&#x2014;</line>
     <line>Subtle thou art &#x26; good, &#x26; tho' the Gods</line>
+    <milestone unit="tei:l" spanTo="#e1-0052.07"/>
     <line>Hear not this voice &#x2014; yet thou art more than</line>
-    <line rend="indent5">God</line>
-    <!-- Should we be wrapping this line? -->
+    <line rend="right">God</line>
+    <anchor xml:id="e1-0052.07"/>
     <line>Being wise &#x26; kind &#x2014; earnestly hearken now&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0052.04"/>
     <line rend="center">Prometheus<anchor xml:id="e1-0052.04"/></line>
@@ -29,10 +37,15 @@
     <line>Faint, like one mingled in entwining love,</line>
     <line>Yet 'tis not pleasure</line>
     <milestone unit="tei:speaker" spanTo="#e1-0052.05"/>
-    <line rend="center">The Earth<anchor xml:id="e1-0052.05"/></line>
+    <line rend="center">The Earth</line>
+    <anchor xml:id="e1-0052.05"/>
     <line>No, thou canst not hear</line>
     <line>Thou art immortal, &#x26; this tongue is known</line>
-    <line>Only to those who die... I am the Earth</line>
+    <!-- the insert mark in the next line refers to the penciled in additions in e1-53 (e1 25v).
+      We will insert those later as the way those additions are encoded right now in e1-53 is
+      too fragmented-->
+    <line>Only to those who die... <add><metamark function="insert">^</metamark></add> I am the
+      Earth</line>
+    <line rend="left"><add><metamark function="count">144</metamark></add></line>
   </zone>
-  <zone type="pagination">144</zone>
 </surface>

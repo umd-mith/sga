@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c58-0006" ulx="0" uly="0" lrx="5408" lry="6680"
   mith:shelfmark="MS. Abinger c. 58" mith:folio="3v" partOf="#ox-frankenstein_volume_iii">
@@ -23,7 +22,7 @@
     <line><del rend="strikethrough">altho</del> although they might only serve as the decora-</line>
     <line>tions of my tragedy. A house was purchased for us</line>
     <line>near Cologny by which we should enjoy the plea-</line>
-    <line>sures of the country and yet be so near Gene<retrace cause="clarify">v</retrace>a</line>
+    <line>sures of the country and yet be so near Gene<retrace cause="unclear">v</retrace>a</line>
     <line>as to see my father every day; who would still</line>
     <line>reside within the walls for the benefit of Ernest that</line>
     <line>he might follow his studies at the schools.</line>

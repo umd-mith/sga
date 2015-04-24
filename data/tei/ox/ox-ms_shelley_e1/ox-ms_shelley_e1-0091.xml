@@ -1,38 +1,47 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0091" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0091" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0091.jp2"/>
+  <zone type="library"><line rend="right">45</line></zone>
   <zone type="main">
-    <line>45</line>
     <line>&amp; the honey flowing fountains of the Muses</line>
     <line>these souls</line>
     <line><del rend="strikethrough">they</del> return to us, laden with the</line>
-    <line>[?clo]</line>
-    <line>[?<hi rend="underline">arrayed</hi>] as they are</line>
-    <line>sweetness of melody--and they speak truth--</line>
+    <line/>
+    <line>sweetness of melody--and<add place="superlinear"><hi rend="underline"><unclear
+            reason="illegible">arrayed</unclear></hi><add place="superlinear"><unclear
+            reason="illegible">clo</unclear></add> as they are</add> they speak truth&#8212;</line>
     <line>indeed</line>
-    <line>For a poet is a thing Ã¦therially light</line>
+    <line>For a poet is a thing &#230;therially light</line>
     <line>winged &amp; sacred, nor is he capable</line>
     <line>of composing poetry <del rend="strikethrough">before</del> until he</line>
     <line>becomes inspired &amp; as it were mad,</line>
     <line>or whilst any reason remains in</line>
-    <line>[?<del rend="strikethrough">yet</del>] man yet</line>
-    <line>him. For whilst <del rend="strikethrough">man</del> <del rend="strikethrough">yet</del> retain</line>
+    <line>him. For whilst <mod>
+        <del rend="strikethrough">man</del>
+        <del rend="strikethrough">yet</del>
+        <del rend="strikethrough"><add place="superlinear">a</add></del>
+        <del rend="strikethrough"><add place="superlinear">yet</add></del>
+        <add place="superlinear"> man yet</add>
+      </mod> retain</line>
     <line>any portion of the thing called reason</line>
     <line>he is utterly incompetent to produce</line>
     <line>poetry or to vaticinate. Thus, those</line>
     <line><del rend="strikethrough">who do not compose poetry</del> who</line>
-    <line>declaim</line>
-    <line><del rend="strikethrough">like you,</del> <del rend="strikethrough">speak</del> various &amp; beautiful</line>
-    <line>&amp; beau</line>
-    <line>poetry upon any subject as</line>
-    <line>you upon Homer, are not ena&lt;bled&gt; to</line>
+    <line><mod>
+        <del rend="strikethrough">like you,</del>
+        <add place="superlinear">declaim</add>
+      </mod>
+      <del rend="strikethrough">speak</del> various &amp; beautiful</line>
+    <line>&amp; beau poetry upon any subject as</line>
+    <line>you upon Homer, are not enabled to</line>
     <line>do so by art or study: but every</line>
-    <line>whether be he [dythyrambic]</line>
-    <line>rhapsodist or poet{,} is capable in</line>
-    <line>encomiastic, [?<del rend="strikethrough">hyporchem</del>] choral, epic, or iambic</line>
+    <line>rhapsodist or poet<unclear reason="illegible">,</unclear><add place="superlinear">whether
+        be he <unclear reason="illegible">dythyrambic,</unclear></add><add place="sublinear"
+        >encomiastic, <del rend="strikethrough"><unclear reason="illegible"
+          >hyporchem?</unclear></del> choral, epic, or iambic</add> is capable in</line>
     <line>proportion to his participation in</line>
     <line>the divine influence, &amp; to the degree</line>
     <line>in which the Muse itself has</line>

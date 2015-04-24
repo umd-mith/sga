@@ -1,42 +1,57 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0054" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0054" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0054.jp2"/>
   <zone type="main">
     <line>[f. 24r is blank]</line>
-    <line><mod><del rend="strikethrough">Sucking</del><add place="superlinear">Draining</add></mod>the poison of despair, shall take</line>
+    <line><mod>
+        <del rend="strikethrough">Sucking</del>
+        <add place="superlinear">Draining</add>
+      </mod>the poison of despair, shall take</line>
     <line>And interchange sweet nutriment; to me</line>
     <line>Shall they become like sister-antelopes</line>
-    <line>By one fair dam, snowwhite &amp; swift as wind</line>
+    <line>By one fair dam, snowwhit<retrace cause="unclear">e</retrace> &amp; swift as wind</line>
     <line>Nursed among lilies near a brimming stream;</line>
     <line>The dew mists of my sunless sleep shall float</line>
     <line>Under the stars like balm, night-folded flowers</line>
-    <line>Shall suck unwithering <del rend="strikethrough">colours as they</del> <del rend="strikethrough">dream</del></line>
-    <line>And men &amp; beasts in happy dream<unclear>s</unclear> shall gather</line>
-    <line>Strength for the coming day &amp; all its joy <metamark function="count">240</metamark></line>
+    <line>Shall suck unwithering <del rend="strikethrough">colours as they</del>
+      <del rend="strikethrough">dream</del><anchor xml:id="e3-0054.04"/></line>
+    <line>And men &amp; beasts in happy dream<unclear reason="illegible">s</unclear> shall
+      gather</line>
+    <line>Strength for the coming day &amp; all its joy <add><metamark function="count"
+          >240</metamark></add></line>
     <line>And death shall be the last embrace of her</line>
     <line>Who takes the life she gave, even as a mother</line>
-    <line>Folding her child, says, leave me not again!</line>
+    <line>Folding her chi<unclear reason="illegible">l</unclear>d, says, leave me not again!</line>
     <milestone unit="tei:speaker" spanTo="#e3-0054.01"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0054.01"/>
-    <line>O mother wherefore speak the name of death <unclear>?</unclear></line>
-    <line>Cease they to love &amp; move &amp; breathe &amp; speak</line>
+    <line>O mother wherefore speak the name of death <mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">?</add>
+      </mod></line>
+    <line>Cease they to love &amp; move &amp; breath<unclear reason="illegible">e</unclear> &amp;
+      speak</line>
     <line>Who die?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0054.02"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e3-0054.02"/>
     <line rend="right"><del rend="strikethrough">The</del> It would avail not to reply</line>
     <line>Thou art immortal &amp; this tongue is known</line>
-    <line><mod><del rend="strikethrough">Only</del><add place="superlinear">But</add></mod>to the uncommunicating dead &#8212;</line>
+    <line><mod>
+        <del rend="strikethrough">Only</del>
+        <add place="superlinear">But</add>
+      </mod>to the uncommunicating dead &#8212;</line>
     <milestone unit="tei:l" spanTo="#e3-0054.03"/>
     <line>Death is the veil which those who live call</line>
     <line rend="right">life</line>
     <anchor xml:id="e3-0054.03"/>
-    <line><mod><del rend="strikethrough">Men</del><add place="superlinear">They</add></mod>sleep &#8212; &amp; it is lifted... &amp; meanwhile</line>
-    <line rend="indent4"><metamark function="count">242</metamark></line>
+    <line><mod>
+        <del rend="strikethrough">Men</del>
+        <retrace cause="unclear"><add place="superlinear">They</add></retrace>
+      </mod>sleep &#8212; &amp; it is lifted... &amp; meanwhile</line>
+    <line rend="indent4"><add><metamark function="count">242</metamark></add></line>
   </zone>
 </surface>
-

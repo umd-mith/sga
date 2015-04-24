@@ -1,7 +1,6 @@
 # Shelley-Godwin Archive
 
-This repository holds various software components and data of the Shelley-Godwin Archive
-(SGA) project. 
+This repository holds various software components and data of the Shelley-Godwin Archive (SGA) project. 
 
 ## Structure
 

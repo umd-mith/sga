@@ -1,32 +1,42 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0076" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0076" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0076.jp2"/>
   <zone type="main">
-    <line>Thrones altars judgment-seats &amp; prisons <unclear>;</unclear> wherein</line>
+    <line>Thrones altars judgment-seats &amp; prisons <unclear reason="illegible">;</unclear> where<mod>
+        <del rend="overwritten">o</del>
+        <add place="intralinear">i</add>
+      </mod>n</line>
     <line>And besides which, by wretrched men were borne</line>
     <line>Sceptres tiaras swords &amp; chains, &amp; tomes</line>
     <line>Of reasoned wrong glozed on by ignorance,</line>
-    <line>Were like those <del rend="strikethrough">hideous</del> <hi rend="underline">secret</hi>&amp; barbaric shapes</line>
+    <line>Were like those <del rend="strikethrough"><retrace cause="unclear">hideous</retrace></del>
+      <milestone unit="tei:seg" spanTo="#e3-0076.03" xml:id="e3-0076.04"/><hi rend="underline"
+        >secret</hi><anchor xml:id="e3-0076.03"/>&amp; barbaric shapes<alt
+        target="#e3-0076.04 #e3-0077.05" mode="excl" weights="0 1"/></line>
     <line>The ghosts of a no more remembered fame</line>
     <line>Which from their unworn obelisks look forth</line>
     <line>In triumph oer the palaces &amp; tombs</line>
     <line>Of those who were their conquerors, mouldering round</line>
     <line>These imaged to the pride of Kings &amp; priests</line>
     <line>A dark yet mighty faith, a power as wide</line>
-    <line>As is the world it wasted, and are now</line>
-    <line>But an astonishment <unclear>;</unclear> even so the tools</line>
-    <line>And emblems of it's last captivity</line>
-    <line>Amid the dwellings of the peopled Earth <unclear>,</unclear></line>
+    <line><milestone unit="tei:seg" spanTo="#e3-0076.01" xml:id="e3-0076.01"/>As is the world it
+        wasted<anchor xml:id="e3-0076.02"/>, and are now<alt target="#e3-0076.02 #e3-0077.03"
+        mode="excl" weights="1 0"/></line>
+    <line>But an astonishment <mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">;</add>
+      </mod> even so the tools</line>
+    <line>And emblems of it's last <unclear reason="case">c</unclear>aptivity</line>
+    <line>Amid the dwellings of the peopled Earth <unclear reason="illegible">,</unclear></line>
     <line>Stand, not o'erthrown, but unregarded now;</line>
-    <line>And those foul shapes, abhorred by God &amp; Man</line>
+    <line>And those foul shapes, abhorred by God &amp; <unclear reason="case">M</unclear>an</line>
     <line>Which under many a name &amp; many a form</line>
     <line>Strange, savage, ghastly, dark &amp; execrable</line>
     <line>Were Jupiter, the tyrant of the world</line>
     <line>And which the nations panic-stricken served</line>
-    <line rend="right"><metamark function="count">1854</metamark></line>
+    <line rend="right"><add><metamark function="count">1854</metamark></add></line>
   </zone>
 </surface>
-

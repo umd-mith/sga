@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0018" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0018" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0018.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0018.01"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0018.01"/>
     <line>My coursers are fed with the lightning</line>
-    <line>They drink of the whirlwind's stream</line>
+    <line><unclear reason="case">T</unclear>hey drink of the whirlwind's stream</line>
     <line>And when the red morning is brightning</line>
     <line>They bathe in the fresh sunbeam;</line>
     <line>They have strength for their swiftness I deem</line>
@@ -17,11 +17,12 @@
     <line>I desire &#8212; &amp; their speed makes night kindle;</line>
     <line>I fear &#8212; they outstrip the Typhoon;</line>
     <line>Ere the cloud piled on Atlas can dwindle</line>
-    <line rend="indent1">We encircle the earth &amp; the<del rend="strikethrough">e</del> moon <unclear>;</unclear></line>
+    <line rend="indent1">We encircle the earth &amp; the<del rend="strikethrough">e</del> moon
+        <unclear>;</unclear></line>
     <line rend="indent1">We shall rest from long labours ere noon <unclear>&#8212;</unclear></line>
     <line rend="indent1">Then ascend with me daughters of Ocean</line>
-    <milestone unit="tei:stage" spanTo="#e3-0018.02"/>
-    <line rend="indent2">Scene&#8212; The Car pauses within a</line>
+    <milestone unit="tei:scene" spanTo="#e3-0018.02"/>
+    <line rend="center">Scene&#8212; The Car pauses within a</line>
     <line>cloud on the top of a snowy mountain</line>
     <anchor xml:id="e3-0018.02"/>
     <milestone unit="tei:speaker" spanTo="#e3-0018.03"/>
@@ -34,4 +35,3 @@
     <line>They shall drink the hot speed of desire!</line>
   </zone>
 </surface>
-

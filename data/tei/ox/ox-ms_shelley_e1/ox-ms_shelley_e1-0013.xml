@@ -1,34 +1,46 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0013" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0013" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0013.jp2"/>
-  <zone type="library">6</zone>
+  <zone type="library">
+    <line rend="right">6</line>
+  </zone>
   <zone type="main">
-    <line rend="indent2">We'll pass the Eyes</line>
+    <line rend="indent2">We'<mod>
+        <del rend="overwritten">ve</del>
+        <add place="intralinear">ll</add>
+      </mod> pass the Eyes</line>
     <line rend="indent2">Of the starry skies</line>
     <line>Into the <mod>
         <del rend="strikethrough">old</del>
-        <add place="superlinear">hoar</add>
+        <add place="superlinear"><unclear reason="illegible">h</unclear>oar</add>
       </mod> Deep to colonize</line>
     <line rend="indent2">Death Chaos &amp; Night,</line>
     <line rend="indent2">From the sound of our flight</line>
     <line>Shall flee, like <mod>
         <del rend="strikethrough">mists</del>
-        <del rend="strikethrough"><hi rend="underline"><add place="superlinear"
-          >dust</add></hi></del>
+        <milestone unit="tei:seg" spanTo="#e1-0013.01" xml:id="e1-0013.03"/>
+        <mod>
+          <restore type="underline"><del rend="strikethrough"><hi rend="underline"><add
+                  place="superlinear">dust</add></hi></del></restore>
+          <anchor xml:id="e1-0013.01"/>
+        </mod>
+        <milestone unit="tei:seg" spanTo="#e1-0013.02" xml:id="e1-0013.04"/>
         <add place="superlinear">mist</add>
-      </mod> from a Tempests might</line>
+        <anchor xml:id="e1-0013.02"/>
+      </mod> from a Tempests might<alt target="#e1-0013.03 #e1-0013.04" mode="excl" weights="0 1"
+      /></line>
     <line rend="indent2">And earth air &amp; light</line>
     <line rend="indent2">And the Spirit of Might</line>
     <line>Which drives round the Stars in their fiery flight;</line>
     <line rend="indent2">And love, thought, &amp; breath</line>
     <line rend="indent2"><del rend="strikethrough">And</del> the powers that quell death,</line>
-    <line>Wherever we soar shall assemble beneath!</line>
+    <line>Wh<del rend="smear"><add>'</add></del>erever we soar shall assemble beneath!</line>
     <line rend="indent2">And our singing shall build</line>
     <line rend="indent2">In the Void's loose field,</line>
-    <line>A world for the spirit of Wisdom to weild<unclear>;</unclear></line>
+    <line>A world for the spirit of Wisdom to weild<unclear reason="illegible">;</unclear></line>
     <line rend="indent2">We will take our plan</line>
     <line rend="indent2">From the new world of man</line>
     <line>And our work shall be called the Promethean</line>

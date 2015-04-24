@@ -1,33 +1,53 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0081" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0081" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0081.jp2"/>
+  <zone type="library"><line rend="right">40</line></zone>
   <zone type="main">
-    <line>40</line>
-    <line>Song of Spirits</line>
-    <line>To the Deep, to the Deep</line>
-    <line>Down, Down!</line>
-    <line>Through the shade of Sleep</line>
-    <line>Through the cloudy strife</line>
-    <line>Of Death and of life</line>
-    <line>Through the viel &amp; the bar</line>
-    <line>Of things which seem &amp; are</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0081.01"/>
+    <line rend="center">Song of Spirits</line>
+    <anchor xml:id="e2-0081.01"/>
+    <line rend="indent1">To the Deep, to the Deep</line>
+    <line rend="indent2">Down, Down!</line>
+    <line rend="indent1">Through the shade of <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>leep</line>
+    <line rend="indent1">Through the cloudy strife</line>
+    <line rend="indent1">Of Death and of life</line>
+    <line rend="indent1">Through the viel &amp; the bar</line>
+    <line rend="indent1">Of things which seem &amp; are</line>
+    <milestone unit="tei:note" spanTo="#e2-0081.03"/>
     <line><del rend="strikethrough">Desideratum</del></line>
-    <line>the <del rend="strikethrough">threshold of the</del></line>
-    <line>Even to <del rend="strikethrough">Desideratur aliquid</del></line>
-    <line>steps of the remotest Throne</line>
-    <line>Down, Down!</line>
-    <line>While the sound, whirls around,</line>
-    <line>Down, Down!</line>
-    <line>As the fawn draws the hound</line>
-    <line>As the lightning the vapour</line>
-    <line>As a weak moth the taper</line>
-    <line>Death Despair, Love Sorrow</line>
-    <line>Time both, To-day to-morrow;</line>
-    <line>As steel obeys the Spirit of the stone</line>
-    <line>Down, Down</line>
+    <anchor xml:id="e2-0081.03"/>
+    <milestone unit="tei:l" spanTo="#e2-0081.02"/>
+    <line>Even to <mod>
+        <del rend="strikethrough"><add place="superlinear">Desideratur</add></del>
+      </mod>
+      <mod>
+        <del rend="strikethrough">Desideratur aliquid</del>
+        <add place="superlinear">the</add>
+        <del rend="strikethrough"><add place="superlinear"> threshold of the</add></del>
+      </mod></line>
+    <line rend="indent3">steps of the remotest Throne</line>
+    <anchor xml:id="e2-0081.02"/>
+    <line rend="indent2">Down, Down!</line>
+    <line rend="indent1">While the sound, whirls around,</line>
+    <line rend="indent2">Down, Down!</line>
+    <line rend="indent1">As the fawn draw<add>s</add> the hound</line>
+    <line rend="indent1">As the lightning the vapour</line>
+    <line rend="indent1">As a weak moth the taper</line>
+    <line rend="indent1">Death <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>espair, Love Sorrow</line>
+    <line rend="indent1">Time both, To-day to-morrow;</line>
+    <line>As steel obeys the <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>pirit of the stone</line>
+    <line rend="indent3">Down, Down</line>
   </zone>
 </surface>
-

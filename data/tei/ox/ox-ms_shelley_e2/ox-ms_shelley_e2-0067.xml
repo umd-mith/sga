@@ -1,30 +1,45 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0067" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0067" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0067.jp2"/>
-  <zone type="main">
+  <zone type="library"><line rend="right">33</line></zone>
+  <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>33</line>
-    <line>Ha! <del rend="strikethrough">fr <unclear>o</unclear></del> thy frozen pulses flutter</line>
-    <line>With a love thou darest not utter&#8212;</line>
+    <line>Ha! <del rend="strikethrough">fr <unclear reason="illegible">o</unclear></del> thy frozen
+      pulses flutter</line>
+    <line>With a love thou darest<del rend="unmarked"><unclear reason="illegible">'</unclear></del>
+      not utter&#8212;</line>
     <line>Thou art murmuring&#8212;thou art weeping&#8212;</line>
-    <line>Was thine icy <del rend="strikethrough">bosom then</del></line>
-    <line>bosom leaping</line>
-    <line>While my burning heart was sleeping?</line>
+    <line rend="left"><mod>
+        <del rend="overwritten">is</del>
+        <add place="intralinear">Was</add>
+      </mod> thine icy <mod>
+        <del rend="strikethrough">bosom then</del>
+        <add place="sublinear">bosom leaping</add>
+      </mod></line>
+    <line rend="indent1">While my burning heart was sleeping?</line>
+    <delSpan rend="strikethrough" spanTo="#e2-0067.01"/>
     <line>Kiss me &#8212; oh thy lips are cold&#8212;</line>
+    <milestone unit="tei:l" spanTo="#e2-0067.02"/>
     <line>Round my neck thine arms enfold</line>
-    <line>dead</line>
-    <line>They are soft&#8212;but chill &amp; <del rend="strikethrough">weak</del></line>
-    <line>weak</line>
-    <line>And thy tears upon my <del rend="strikethrough">cheek</del> head</line>
-    <line>Burn, as it were with frost&#8212;o speak</line>
-    <line>Kiss me <unclear>;</unclear>&#8212;oh thy lips are cold&#8212;</line>
+    <line rend="right">dead</line>
+    <anchor xml:id="e2-0067.02"/>
+    <line>They are soft&#8212;but <mod>
+        <del rend="overwritten">dead</del>
+        <add place="intralinear">chill</add>
+      </mod> &amp; <mod>
+        <del rend="strikethrough">weak</del>
+        <add place="sublinear">weak</add>
+      </mod></line>
+    <line rend="indent1">And thy tears upon my <del rend="strikethrough">cheek</del> head</line>
+    <line rend="indent1">Burn, as it were with frost&#8212;o speak</line>
+    <anchor xml:id="e2-0067.01"/>
+    <line>Kiss me <unclear reason="illegible">;</unclear>&#8212;oh thy lips are cold&#8212;</line>
     <line>Round my neck thine arms enfold&#8212;</line>
     <line>They are soft&#8212;but chill &amp; dead</line>
-    <line>And thy tears upon my head</line>
-    <line>Burn like points of frozen lead</line>
+    <line rend="indent1">And thy tears upon my head</line>
+    <line rend="indent1">Burn like points of frozen lead</line>
   </zone>
 </surface>
-

@@ -45,11 +45,17 @@
                         <idno type="Bod">MS. Abinger c. 58</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem type="#work">
+                        <msItem class="#work">
                             <bibl status="fair_copy">
                                 <author>Mary Shelley</author>
                                 <title>Frankenstein</title>
                             </bibl>
+                            <msItem class="#volume" n="III" xml:id="ox-frankenstein_volume_iii">
+                                <bibl>
+                                    <title>Volume III</title>
+                                    <date notBefore="1816-12" notAfter="1817-04">18 April-[?13] May 1817</date>
+                                </bibl>
+                            </msItem>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -61,7 +67,11 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
         <revisionDesc>
+            <change who="#RV" when="2015-03-12">Made metadata valid, removed chapter metadata.</change>
             <change who="#RV" when="2014-01-22">Added metadata.</change>
             <change who="#TB" when="2014-04-09">Added metadata about volumes and chapters.</change>
         </revisionDesc>

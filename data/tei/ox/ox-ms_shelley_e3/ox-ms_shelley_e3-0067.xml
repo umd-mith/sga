@@ -1,22 +1,27 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0067" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0067" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0067.jp2"/>
-  <zone type="library">31</zone>
+  <zone type="library"><line rend="right">31</line></zone>
   <zone type="main" rotate="180">
     <line>of <del rend="strikethrough">that</del> reform, or that I consider them</line>
-    <line>in any degree <add place="sublinear">^</add><add place="superlinear">as containing a</add> reasoned system on the</line>
+    <line>in any degree <add place="sublinear"><metamark function="insert">^</metamark></add><add
+        place="superlinear">as containing a</add> reasoned system on the</line>
     <line>theory of human life. Didactic poetry</line>
     <line>is my abhorrence; nothing can equally well</line>
     <line>be expressed in prose that is not tedious &amp;</line>
     <line>supererogatory in verse. My purpose has</line>
-    <line>hitherto been <mod><del rend="strikethrough">rather</del><add place="superlinear">simply</add></mod> to familiarize the</line>
+    <line>hitherto been <mod>
+        <del rend="strikethrough">rather</del>
+        <add place="superlinear">simply</add>
+      </mod> to familiarize the</line>
     <line><del rend="strikethrough">imagination of po</del> highly refined ima</line>
     <line>gination of the more select classes of</line>
     <line>poetical readers with beautiful ideali</line>
-    <line>sms of moral excellence; aware that <unclear>,</unclear> <metamark function="count"></metamark>360</line>
+    <line>sms of moral excellence; aware that <unclear reason="illegible">,</unclear>
+      <add><metamark function="count">360</metamark></add></line>
     <line>until the mind can love &amp; admire &amp;</line>
     <line>trust &amp; hope &amp; endure, <del rend="strikethrough">that</del> reasoned</line>
     <line>principles of moral conduct are seeds</line>
@@ -26,10 +31,26 @@
     <line>the harvest of his happiness. Should</line>
     <line>I live to accomplish what I purpose,</line>
     <line>that is, produce a systematical</line>
-    <line>developement of <mod><del rend="strikethrough">the principles which</del><add place="superlinear">what appear to me to be</add></mod></line>
-    <line><mod><del rend="strikethrough">should regulate human life</del><add place="superlinear">the genuine <del rend="strikethrough">elements of</del>sources of</add><add place="sublinear"><unclear>our</unclear> human society</add></mod> let not <add place="superlinear">the</add><metamark function="count">350</metamark></line>
-    <line>advocates of <mod><del rend="strikethrough">despotism</del> <add place="superlinear">injustice</add></mod> &amp; superstition</line>
-    <line><mod><del rend="strikethrough">assure</del><add place="superlinear">flatter</add></mod> themselves that I should</line>
+    <line>developement of <mod>
+        <del rend="strikethrough">the principles which</del>
+        <add place="superlinear">what appear to me to be</add>
+      </mod></line>
+    <line><mod>
+        <del rend="strikethrough">should regulate human life</del>
+        <add place="superlinear">the genuine </add>
+        <del rend="strikethrough"><add place="superlinear">elements of</add></del>
+        <add place="superlinear"><unclear reason="illegible">sources of</unclear></add>
+        <add place="sublinear"><unclear reason="illegible">our</unclear> human society</add>
+      </mod> let not <add place="superlinear">the</add><metamark function="count"
+      >350</metamark></line>
+    <!-- Metamark needs to be rotated in some way (180) -->
+    <line>advocates of <mod>
+        <del rend="strikethrough">despotism</del>
+        <add place="superlinear">injustice</add>
+      </mod> &amp; superstition</line>
+    <line><mod>
+        <del rend="smear">assure</del>
+        <add place="superlinear">flatter</add>
+      </mod> themselves that I should</line>
   </zone>
 </surface>
-

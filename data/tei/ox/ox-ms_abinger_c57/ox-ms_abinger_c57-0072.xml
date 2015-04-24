@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0072" ulx="0" uly="0" lrx="5138" lry="7032"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="36v">
@@ -26,7 +25,7 @@
     <line>shone at intervals as the <del rend="strikethrough">dark</del> clouds passed</line>
     <line>from over them &#x2014; The dark pines rose</line>
     <line>before me &amp; every here and there a broken</line>
-    <line>tre<retrace cause="clarify">e</retrace> lay <del rend="strikethrough">listless</del>
+    <line>tre<retrace cause="unclear">e</retrace> lay <del rend="strikethrough">listless</del>
       <mod>
         <del rend="strikethrough">of</del>
         <add place="sublinear"><metamark function="insert">^</metamark></add>

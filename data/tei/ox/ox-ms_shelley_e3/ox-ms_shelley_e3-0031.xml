@@ -1,25 +1,34 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0031" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0031" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0031.jp2"/>
-  <zone type="library">13</zone>
+  <zone type="library">
+    <line rend="right">13</line>
+  </zone>
   <zone type="main">
-    <line rend ="indent1">We have past Age's icy caves,</line>
-    <line rend ="indent1">And Manhood's dark &amp; tossing waves</line>
-    <line>And Youth's smooth ocean, smiling to betray;</line>
-    <line rend ="indent1">Beyond the glassy gulphs we flee</line>
-    <line rend ="indent1">Of shadow-peopled infancy,</line>
-    <line>Thro death &amp; birth, to a diviner day <unclear>;</unclear></line>
-    <line rend ="indent1">A Paradise of vaulted bowers</line>
-    <line rend ="indent1">Lit by downward-gazing flowers</line>
-    <line rend ="indent1">And watery paths that wind between</line>
-    <line><unclear>Eu</unclear> Wildernesses calm &amp; green</line>
+    <line rend="indent1">We have past Age's icy caves,</line>
+    <line rend="indent1">And <mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">M</add>
+      </mod>anhood's dark &amp; tossing waves</line>
+    <line>And <mod>
+        <del rend="overwritten">y</del>
+        <add place="intralinear">Y</add>
+      </mod>outh's smooth ocean, smiling to betray;</line>
+    <line rend="indent1">Beyond the glassy gulphs we flee</line>
+    <line rend="indent1">Of shadow-peopled infancy,</line>
+    <line>Thro death &amp; birth, to a diviner day <unclear reason="illegible">;</unclear></line>
+    <line rend="indent1">A Paradise of vaulted bowers</line>
+    <line rend="indent1">Lit by downward-gazing flowers</line>
+    <line rend="indent1">And watery paths that wind between</line>
+    <line><unclear reason="illegible">Eu</unclear> Wildernesses calm &amp; green</line>
     <line>Peopled by shapes too bright to see</line>
     <line>And rest, having beheld; somewhat like thee</line>
+    <milestone unit="tei:l" spanTo="#e3-0031.01"/>
     <line>Which walk upon the sea &amp; chaunt</line>
-    <line rend ="indent4">melodiously</line>
-    </zone>
+    <line rend="indent4">melodiously</line>
+    <anchor xml:id="e3-0031.01"/>
+  </zone>
 </surface>
-

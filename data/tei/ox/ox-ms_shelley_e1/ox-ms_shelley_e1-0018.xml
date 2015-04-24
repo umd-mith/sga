@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0018" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0018" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0018.jp2"/>
   <zone type="main">
     <line>Its wheels are solid clouds, azure &amp; gold,</line>
@@ -10,10 +10,14 @@
     <line>Pile on the floor of the illumined sea</line>
     <line>When the Sun rushes under it, they roll</line>
     <line>And move &amp; grow as with an inward wind.</line>
-    <line>Within it sits a winged Infant, <del rend="strikethrough">br</del> white</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0018.01"/>Its countenance like the whiteness of
-      bright</line>
-    <line rend="right">snow,<anchor xml:id="e1-0018.01"/></line>
+    <line>Within it sits a winged <mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">I</add>
+      </mod>nfant, <del rend="strikethrough">br</del> white</line>
+    <milestone unit="tei:l" spanTo="#e1-0018.01"/>
+    <line>Its countenance like the whiteness of bright</line>
+    <line rend="right">snow,</line>
+    <anchor xml:id="e1-0018.01"/>
     <line>Its plumes are <mod>
         <del rend="strikethrough">like</del>
         <add place="superlinear">as</add>
@@ -21,21 +25,26 @@
     <line>Its limbs gleam white, thro the wind-flowing folds</line>
     <line>Of its white robe, woof of &#xE6;therial pearl&#x2014;</line>
     <line>Its hair is white,&#x2014;the brightness of white light</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0018.02"/>Scattered in strings, yet its two eyes
-      are</line>
-    <line rend="right">Heavens<anchor xml:id="e1-0018.02"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0018.02"/>
+    <line>Scattered in strings, yet its two eyes are</line>
+    <line rend="right">Heavens</line>
+    <anchor xml:id="e1-0018.02"/>
     <line>Of liquid darkness, which the Deity</line>
     <line>Within, seems pouring, as a storm is poured</line>
     <line>From jagged clouds, out of their arrowy lashes</line>
     <line>Tempering the cold &amp; radiant air around</line>
     <line>With fire which is not brightness, in its hand</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0018.03"/>It sways a quivering moonbeam, from</line>
-    <line rend="right">whose point<anchor xml:id="e1-0018.03"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0018.03"/>
+    <line>It sways a quivering moonbeam, from</line>
+    <line rend="right">whose point</line>
+    <anchor xml:id="e1-0018.03"/>
     <line>A guiding power directs the chariots prow</line>
     <line>Over its wheeled clouds, which as they roll</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0018.04"/>Over the <del rend="strikethrough"
-        >bending</del> grass &amp; flowers &amp; waves, wake</line>
-    <line rend="right">sounds<anchor xml:id="e1-0018.04"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0018.04"/>
+    <line>Over the <del rend="strikethrough">bending</del> grass &amp; flowers &amp; waves,
+      wake</line>
+    <line rend="right">sounds</line>
+    <anchor xml:id="e1-0018.04"/>
     <line>Sweet as a singing rain of silver dew.</line>
   </zone>
 </surface>

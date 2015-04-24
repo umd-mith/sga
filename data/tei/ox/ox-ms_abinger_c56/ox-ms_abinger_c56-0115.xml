@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c56-0115" ulx="0" uly="0" lrx="5428" lry="7104"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="55r" partOf="#ox-frankenstein_volume_i">
@@ -15,7 +14,7 @@
     <line rend="indent1">She shed tears as she said this <add place="sublinear"
           ><metamark function="displacement" xml:id="c56-0115.01">^</metamark></add></line>
     <line><del rend="strikethrough">but</del><add place="intralinear" hand="#pbs">but</add> at the
-      same time <retrace hand="#pbs" cause="clarify">s</retrace>miled, that</line>
+      same time <retrace hand="#pbs" cause="unclear">s</retrace>miled, that</line>
     <line>she might chase away the fiend that</line>
     <line>lurked in my heart. My father who saw</line>
     <line>in the unhappiness that was painted in</line>

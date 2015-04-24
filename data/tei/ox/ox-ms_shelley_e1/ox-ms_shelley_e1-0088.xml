@@ -1,32 +1,46 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0088" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0088" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0088.jp2"/>
   <zone type="main">
-    <line>Panthea</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.01"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e1-0088.01"/>
     <line>See where the child of Heaven with winged feet</line>
     <line>Runs down the slanted sunlight of the dawn</line>
-    <line>Ione</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.02"/>
+    <line rend="center">Ione</line>
+    <anchor xml:id="e1-0088.02"/>
     <line>Dear sister close thy plumes over thine eyes</line>
     <line>Lest thou behold &amp; die--they come they come</line>
     <line>Blackening the birth of day with countless wings</line>
     <line>And hollow underneath like death</line>
-    <line>1<hi rend="superscript">t</hi> Fury</line>
-    <line>Prometheus!</line>
-    <line>2</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.03"/>
+    <line rend="center">1<hi rend="sup">st</hi>. Fury</line>
+    <anchor xml:id="e1-0088.03"/>
+    <line rend="indent5">Prometheus!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.04"/>
+    <line rend="center">2<hi rend="sup">d</hi>.</line>
+    <anchor xml:id="e1-0088.04"/>
     <line>Immortal Titan!</line>
-    <line>3 Champion of Heaven's slaves!</line>
-    <line>Prometheus</line>
+    <line rend="indent2"><milestone unit="tei:speaker" spanTo="#e1-0088.05"/>3<hi rend="sup">d</hi>.
+        <anchor xml:id="e1-0088.05"/>Champion of Heaven's slaves!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0088.06"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0088.06"/>
     <line>He whom some dreadful voice invokes, is here,</line>
     <line>Prometheus, the chained Titan.--Horrible forms</line>
     <line>What &amp; who are ye? never yet there came</line>
-    <line>Phantasms so foul thro monster-teeming Hell</line>
+    <line>Phantasms so foul thro monster-te<mod>
+        <del rend="overwritten"><unclear reason="illegible">m</unclear></del>
+        <add place="intralinear">e</add>
+      </mod>ming Hell</line>
     <line>From the all-miscreative brain of Jove;</line>
-    <line>Whilst I behold such execrable shapes {. .}</line>
+    <line>Whilst I behold such execrable shapes <unclear reason="illegible">. .</unclear></line>
     <line>Methinks I grow like what I contemplate</line>
-    <line>437</line>
+    <line rend="left"><add><metamark function="count">437</metamark></add></line>
     <line>And laugh &amp; stare in loathsome sympathy</line>
   </zone>
 </surface>

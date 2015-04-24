@@ -1,33 +1,41 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0008" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0008" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0008.jp2"/>
   <zone type="main">
-    <line>Which shook but fell not; and the harmonious mind</line>
+    <line>Which shook but fell not<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">;</add>
+      </mod> and the harmonious mind</line>
     <line>Poured itself forth in all-prophetic song,</line>
     <line>And music lifted up the listening spirit</line>
     <line>Until it walked, exempt from mortal care,</line>
     <line>Godlike, o'er the clear billows of sweet sound;</line>
     <line>And human hands first mimicked &amp; then mocked</line>
     <line>With moulded limbs more lovely than its own</line>
-    <line>The human form, until <del rend="strikethrough"><hi rend="underline">i</hi></del> <del rend="strikethrough">t</del> grew divine,</line>
-    <line>And mothers, gazing, drank the love men see</line>
-    <line>Reflected in their race &#8212; behold <unclear>,</unclear> &amp; perish &#8212;</line>
+    <line>The human form, until <del rend="strikethrough"><hi rend="underline">i</hi>t</del><anchor
+        xml:id="e3-0008.02"/> grew divine,</line>
+    <line>And mothers<mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">,</add>
+      </mod> gazing, drank the love men see</line>
+    <line>Reflected in their race &#8212; behold <unclear reason="unclear">,</unclear> &amp; perish
+      &#8212;</line>
     <line>He told the hidden power of herbs &amp; spings</line>
-    <milestone/> unit="tei:l" spanTo="#e3-0008.01"/>
+    <milestone unit="tei:l" spanTo="#e3-0008.01"/>
     <line>And Disease drank &amp; slept&#8212; Death grew like</line>
-    <line rend="right">sleep,&#8212;</line>
-    <anchor xml:id="id="e3-0008.01/>"
+    <line rend="right">sleep<add>,</add>&#8212;</line>
+    <anchor xml:id="e3-0008.01"/>
     <line>He taught the implicated orbits woven</line>
     <line>Of the wide-wandering stars, &amp; how the Sun</line>
-    <line>Changes his lair <unclear>s</unclear>  <unclear>&#8212;</unclear> &amp; by what secret spell</line>
+    <line>Changes his lair<unclear reason="unclear">s</unclear>
+      <unclear reason="unclear">&#8212;</unclear> &amp; by what secret spell</line>
     <line>The pale moon is transformed, when her broad eye</line>
-    <line>Gazes not on the interlunar Sea;</line>
+    <line>Gazes not on the interlunar <unclear reason="case">S</unclear>ea;</line>
     <line>He taught to rule, as life directs the limbs,</line>
     <line>The tempest-winged chariots of the Ocean</line>
     <line>And the Celt knew the Indian: Cities then</line>
   </zone>
 </surface>
-

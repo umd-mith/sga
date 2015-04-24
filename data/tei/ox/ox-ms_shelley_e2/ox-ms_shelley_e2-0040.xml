@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0040" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0040.jp2"/>
@@ -11,15 +11,15 @@
     <anchor xml:id="e2-0040.01"/>
     <line rend="indent5">Only a sense</line>
     <line>Remains of them, like the Omnipotence</line>
-    <line>Of music wh<damage type="inkblot">en</damage> the inspired voice &amp; lute</line>
+    <line>Of music when the inspired voice &amp; lute</line>
     <line>Languish, <mod>
         <del rend="strikethrough">though yet</del>
         <add place="superlinear">ere</add>
       </mod> the <mod>
         <del rend="strikethrough">echoes are not</del>
         <add place="superlinear">reponses are</add>
-      </mod> mute</line>  <!--"ere" and "ses are" in pencil; encode handshift-->
-    <line>Which thro the deep &amp; labyrinthine soul</line>
+      </mod> mute</line>
+    <line>Which th<del rend="smear">e</del>ro the deep &amp; labyrinthine soul</line>
     <line>Like echoes through long caverns wind &amp; roll</line>
     <milestone unit="tei:speaker" spanTo="#e2-0040.02"/>
     <line rend="center">Prometheus</line>
@@ -37,9 +37,9 @@
     <anchor xml:id="e2-0040.03"/>
     <line>If slumber were denied not .. I would fain</line>
     <line>Be what it is my destiny to be</line>
-    <line>The saviour &amp; the strength of suffering man</line>
-    <line>Or sink into the original<unclear>,</unclear> gulph of things...
-      <unclear>.</unclear></line>
+    <line>The <unclear reason="case">s</unclear>aviour &amp; the strength of suffering man</line>
+    <line>Or sink into the original<unclear reason="illegible">,</unclear> gulph of things...
+        <unclear reason="illegible">.</unclear></line>
     <line>There is no agony &amp; no solace left</line>
     <line><add><metamark function="count">804</metamark></add></line>
   </zone>

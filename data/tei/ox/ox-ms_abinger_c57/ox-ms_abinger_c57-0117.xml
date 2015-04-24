@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0117" ulx="0" uly="0" lrx="5138" lry="7032"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="59r" partOf="#ox-frankenstein_volume_ii">
@@ -29,7 +28,7 @@
         <add place="intralinear">.</add>
       </mod> about half a dozen</line>
     <line>men came forward and one being selected</line>
-    <line>by the magistrate <retrace cause="clarify">he</retrace> deposed that he had been</line>
+    <line>by the magistrate <retrace cause="unclear">he</retrace> deposed that he had been</line>
     <line>out fishing the night before with his son &#x26;</line>
     <line>his brother-in-law, Daniel Nugent, when</line>
     <line>about nine o clock they observed a strong</line>

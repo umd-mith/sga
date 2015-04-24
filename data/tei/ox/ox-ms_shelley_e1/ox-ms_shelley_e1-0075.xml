@@ -1,33 +1,61 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5394" lry="7260"
-  xml:id="ox-ms_shelley_e1-0075" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5394" lry="7260" xml:id="ox-ms_shelley_e1-0075" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0075.jp2"/>
+  <zone type="library">
+    <line rend="right">37</line>
+  </zone>
   <zone type="main">
-    <line>37</line>
-    <line>utterly unable to [?<del rend="strikethrough">put</del>] {?<del rend="strikethrough">d</del>} <del rend="strikethrough">compose</del></line>
-    <line>Enter Mer</line>
+    <line>utterly unable to <del rend="strikethrough"><unclear reason="illegible"
+        >put</unclear></del>
+      <del rend="strikethrough"><unclear reason="illegible">d</unclear></del>
+      <del rend="strikethrough">compose</del></line>
+    <line rend="indent1"><del rend="smear"><unclear reason="illegible">Enter
+      Mer</unclear></del></line>
     <line>improvise any thing worth speaking</line>
-    <line>of -- &amp; positively go to sleep;</line>
+    <line>of <mod>
+        <del rend="overwritten">,</del>
+        <add place="intralinear">&#8212;</add>
+      </mod> &amp; positively go to sleep;</line>
     <line>but when anyone reminds me of</line>
-    <line>instantly</line>
-    <line>Homer, I awaken as from a</line>
-    <line>trance, I [?<del rend="strikethrough">bend</del>] my<del rend="strikethrough">self</del> mind</line>
-    <line>apply</line>
+    <line>Homer, I <add place="superlinear">instantly</add>awaken as from a</line>
+    <line>trance, I <mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">bend</del>
+            <add place="intralinear">apply</add>
+          </mod></del>
+        <add place="sublinear">apply</add>
+      </mod> my<del rend="strikethrough">self</del>
+      <add>mind</add></line>
+    <line/>
     <line>without effort to the subject, &amp;</line>
     <line>feel a throng<del rend="strikethrough">ing</del> &amp; profusion of</line>
     <line>expressions suggest themselves</line>
-    <line>It</line>
-    <line>involuntarily.-- <hi rend="underline">Soc</hi> <del rend="strikethrough">The cause</del> is</line>
+    <line/>
+    <line>involuntarily.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0075.05"/><hi
+        rend="underline">Soc</hi><anchor xml:id="e1-0075.05"/>
+      <mod>
+        <del rend="strikethrough">The cause</del>
+        <add place="superlinear">It</add>
+      </mod> is</line>
     <line>not difficult to conjecture the cause.</line>
-    <line>You are evidently unable to speak</line>
-    <line>Edi{th} Sit{?}n{d}</line>
+    <line>You are evidently<add place="interlinear">Edi<unclear reason="illegible">th</unclear>
+          Sit<unclear reason="illegible">e</unclear>n<unclear reason="illegible">d</unclear></add>
+      unable to speak</line>
     <line>concerning Homer according to art or</line>
-    <line>{<del rend="strikethrough">kno}</del> <del rend="strikethrough">science</del> knowledge; for if you,</line>
-    <line>could speak according to <del rend="strikethrough">you{r}</del> art,</line>
-    <line>you would be equally <del rend="strikethrough underline">competent</del></line>
-    <line>capable of illustrating any of the</line>
+    <line><del rend="strikethrough">kno</del>
+      <del rend="strikethrough">science</del> knowledge; for if you,</line>
+    <line>could speak according to <del rend="strikethrough">you<unclear reason="illegible"
+          >r</unclear></del> art,</line>
+    <line>you would be equally <milestone unit="tei:seg" spanTo="#e1-0075.01" xml:id="e1-0075.03"/><mod>
+        <restore type="underline"><del rend="strikethrough"><hi rend="underline"
+            >competent</hi></del></restore>
+      </mod><anchor xml:id="e1-0075.01"/></line>
+    <line><milestone unit="tei:seg" spanTo="#e1-0075.02" xml:id="e1-0075.04"/>capable<anchor
+        xml:id="e1-0075.02"/> of illustrating <unclear reason="illegible">any</unclear> of the<alt
+        target="#e1-0075.03 #e1-0075.04" mode="excl" weights="0 1"/></line>
     <line>other poets; as the materials</line>
     <line>of their composition no less than</line>
     <line>the art <del rend="strikethrough">which</del> of criticism which</line>

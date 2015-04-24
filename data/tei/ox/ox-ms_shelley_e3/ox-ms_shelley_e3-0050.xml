@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0050" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0050" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0050.jp2"/>
   <zone type="main">
     <line>[f. 22r is blank]</line>
@@ -13,11 +13,11 @@
     <line>More fair &amp; soft as man grows wise &amp; kind</line>
     <line>And veil by veil evil &amp; error fall . . .</line>
     <line>Such virtue has the cave &amp; place around <unclear>.</unclear></line>
-    <milestone unit="tei:l" spanTo="#e3-0050.01"/>
-    <line rend="indent4">turning to the spirit of the</line>
-    <line rend="right">Hour</line>
+    <milestone unit="tei:stage" spanTo="#e3-0050.01"/>
+    <line rend="indent4">turning to the spirit of the Hour</line>
     <anchor xml:id="e3-0050.01"/>
-    <line>For thee fair Spirit one toil remains.<unclear>.</unclear>Ione <metamark function="count">200</metamark></line>
+    <line>For thee fair Spirit one toil remains.<unclear>.</unclear>Ione <add><metamark
+          function="count">200</metamark></add></line>
     <line>Give her that curved shell, which Proteus old</line>
     <line>Made Asia's nuptial boon, breathing within it</line>
     <line>A voice to be accomplished, &amp; which thou</line>
@@ -25,17 +25,20 @@
     <milestone unit="tei:speaker" spanTo="#e3-0050.02"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e3-0050.02"/>
-    <line>Thou most desired Hour, more loved &amp; lovely</line>
-    <line>Than all thy sisters <unclear>.</unclear> this the mystic shell</line>
+    <line>Thou most desired <mod>
+        <del rend="overwritten">h</del>
+        <add place="intralinear">H</add>
+      </mod>our, more loved &amp; lovely</line>
+    <line>Than all thy sisters <unclear reason="illegible">.</unclear> this the mystic shell</line>
     <line>See the pale azure fading into silver</line>
-    <line>Lining it with a soft yet glowing light <unclear>.</unclear></line>
-    <line>Looks it not like lulled music sleeping there?</line>
+    <line>Lining it with a soft yet glowing light <unclear reason="illegible">.</unclear></line>
+    <line>Looks it not like lulled music sleeping <unclear reason="illegible"
+      >there</unclear>?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0050.03"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0050.03"/>
-    <line>It seems in truth the fairest shell of Ocean <metamark>210</metamark></line>
+    <line>It seems in truth the fairest shell of Ocean <add><metamark>210</metamark></add></line>
     <line>It's sound must be at once both sweet &amp; strange</line>
-    <line rend="right"><metamark>203</metamark></line>
+    <line rend="right"><add><metamark>203</metamark></add></line>
   </zone>
 </surface>
-

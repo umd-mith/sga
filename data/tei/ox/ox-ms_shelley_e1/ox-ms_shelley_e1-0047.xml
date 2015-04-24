@@ -1,34 +1,60 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0047" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0047" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0047.jp2"/>
+  <zone type="library">
+    <line rend="right">23</line>
+  </zone>
   <zone type="main">
-    <line>23</line>
-    <line>And heard, <del rend="strikethrough">&amp; cried</del>, <del rend="strikethrough">ah woe is m</del>e!</line>
-    <line>And died--as the mad as the <del rend="strikethrough">wild w</del>aves be</line>
-    <line>3</line>
+    <delSpan spanTo="#e1-0047.01" rend="unnmarked"/>
+    <line>And heard, <del rend="strikethrough">&amp; cried</del>, <del rend="strikethrough">ah woe
+        is m</del>e!</line>
+    <line>And died&#8212;as the mad as the <del rend="strikethrough">wild w</del>aves be</line>
+    <line rend="center">3<hi rend="sup">.</hi>d</line>
     <line>[SKETCH IN INK OF CLOUDS OR TREES]</line>
-    <line>By such dread words from Earth {t}</line>
-    <line>wrought his <del rend="strikethrough">poetry</del> poem. <hi rend="underline">Ion</hi> Assuredly</line>
-    <line>o Socrates. <hi rend="underline">Soc</hi>. And the other</line>
+    <line>By such dread words from Earth <unclear reason="illegible">t</unclear></line>
+    <anchor xml:id="e1-0047.01"/>
+    <!-- There's a line cutting through the text here, separating PU and ION -->
+    <line>wrought his <del rend="strikethrough">poetry</del> poem. <milestone unit="tei:speaker"
+        spanTo="#e1-0047.02"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0047.02"/>
+      Assured-ly</line>
+    <line>o Socrates. <milestone unit="tei:speaker" spanTo="#e1-0047.03"/><mod>
+        <del rend="overwritten"><hi rend="underline">Ion.</hi></del>
+        <add place="intralinear">Soc.</add>
+      </mod><anchor xml:id="e1-0047.03"/> And the other</line>
     <line>Poets do they not treat of the same</line>
-    <line>matters?-- <hi rend="underline">Ion</hi> Certainly: but not like</line>
-    <line>Homer. <hi rend="underline">Soc</hi>. How, worse?-- Ion. Oh, far</line>
-    <line>is much</line>
-    <line>worse! <hi rend="underline">Soc</hi>. And Homer better than they?--</line>
-    <line><hi rend="underline">Ion</hi>. Oh Jupiter, how much better! <hi rend="underline">Soc</hi>.</line>
-    <line>Suppose</line>
-    <line><del rend="strikethrough">Still</del>, my dear friend Ion, <del rend="strikethrough">a [man]</del></line>
-    <line>several</line>
+    <line><unclear reason="case">m</unclear>atters?&#8212; <milestone unit="tei:speaker"
+        spanTo="#e1-0047.04"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0047.04"/> Certainly:
+      but not like</line>
+    <line>Homer. <milestone unit="tei:speaker" spanTo="#e1-0047.05"/><hi rend="underline"
+        >Soc</hi>.<anchor xml:id="e1-0047.05"/> How, worse?&#8212; <milestone unit="tei:speaker"
+        spanTo="#e1-0047.06"/>Ion.<anchor xml:id="e1-0047.06"/> Oh, far</line>
+    <line>worse! <milestone unit="tei:speaker" spanTo="#e1-0047.07"/><hi rend="underline"
+        >Soc</hi>.<anchor xml:id="e1-0047.07"/> And <add place="superlinear">is</add> Homer <add
+        place="superlinear">much</add> better than they?&#8212;</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0047.08"/><hi rend="underline">Ion</hi>.<anchor
+        xml:id="e1-0047.08"/> Oh Jupiter, how much better! <milestone unit="tei:speaker"
+        spanTo="#e1-0047.09"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0047.09"/></line>
+    <line><mod>
+        <del rend="strikethrough">Still</del>
+        <add place="superlinear"><unclear reason="illegible">Suppose</unclear></add>
+      </mod>, my dear friend Ion, <mod>
+        <del rend="strikethrough">a <unclear reason="illegible">man</unclear></del>
+        <add place="sublinear">several</add>
+      </mod></line>
     <line>persons are solving a problem a</line>
-    <line>problem in arithmetic, and one alone</line>
+    <line>problem in arithmetic, an<retrace cause="unclear">d</retrace> one alone</line>
     <line>does it correctly: a man might</line>
     <line>know who had given the true answer.</line>
-    <line><hi rend="underline">Ion</hi>. Certainly. <hi rend="underline">Soc</hi>--The same as had</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0047.10"/><hi rend="underline">Ion</hi>.<anchor
+        xml:id="e1-0047.10"/> Certainly. <milestone unit="tei:speaker" spanTo="#e1-0047.11"/><hi
+        rend="underline">Soc</hi><anchor xml:id="e1-0047.11"/>&#8212;The same as had</line>
     <line>been aware of those who had given</line>
-    <line>the false one, or not? <hi rend="underline">Ion</hi>. The same</line>
-    <line>clearly. <hi rend="underline">Soc</hi> That is, some one who understood</line>
+    <line>the false one, or not? <milestone unit="tei:speaker" spanTo="#e1-0047.12"/><hi
+        rend="underline">Ion</hi>.<anchor xml:id="e1-0047.12"/> The same</line>
+    <line>clearly. <milestone unit="tei:speaker" spanTo="#e1-0047.13"/><hi rend="underline"
+        >Soc</hi><anchor xml:id="e1-0047.13"/> That is, some one who understood</line>
   </zone>
 </surface>

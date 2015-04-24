@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0104" ulx="0" uly="0" lrx="5138" lry="7032"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="52v" partOf="#ox-frankenstein_volume_ii">
@@ -72,7 +71,7 @@
     <milestone unit="tei:p"/>
     <line rend="indent2">I left the room &amp; locking the door</line>
     <line>made a vow in my own heart never</line>
-    <line>to resume my labou<retrace cause="clarify">rs</retrace>; &amp; then with trem</line>
+    <line>to resume my labou<retrace cause="unclear">rs</retrace>; &amp; then with trem</line>
     <line>bling steps I sought my own appartment</line>
     <line>I <del rend="strikethrough">a</del> was alone. <del rend="strikethrough"><unclear
           reason="illegible">n</unclear></del> None were near me to</line>

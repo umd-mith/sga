@@ -1,18 +1,29 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0041" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0041" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0041.jp2"/>
-  <zone type="main">
+  <zone type="library">
     <line>20</line>
-    <line>that which thou surveyest</line>
+  </zone>
+  <zone type="main">
+    <addSpan spanTo="#e1-0041.01" corresp="#e1-0040.05"/>
+    <line rend="indent3">that which thou surveyest</line>
     <line>From thine unenvied throne</line>
+    <anchor xml:id="e1-0041.01"/>
     <line>[SKETCH IN PENCIL OF TREE]</line>
-    <line>Have it's deaf waves not heard my agony?</line>
-    <line>Ah me, alas, pain, pain ever forever!</line>
-    <line>No change, no pause, no hope!--yet I endure</line>
-    <line>Ah me alas pain ever forever</line>
-    <line>Mocking me</line>
+    <line><add><metamark function="displacement">&#60;</metamark></add></line>
+    <line><add next="#e1-0041.03" corresp="#e1-0040.08">Have it's deaf waves not heard my
+        agony?</add></line>
+    <addSpan spanTo="#e1-0041.02" corresp="#e1-0040.07"/>
+    <line rend="indent1">Ah me, alas, pain, pain ever forever!</line>
+    <line rend="indent1">No change, no pause, <mod>
+        <del rend="overwritten">and</del>
+        <add place="intralinear">no</add>
+      </mod> hope!--yet I endure</line>
+    <anchor xml:id="e1-0041.02"/>
+    <line><add xml:id="e1-0041.03" corresp="#e1-0040.09">Ah me alas pain ever forever</add></line>
+    <line><add corresp="#e1-0040.10">Mocking me</add></line>
   </zone>
 </surface>

@@ -1,37 +1,70 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0043" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0043" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0043.jp2"/>
+  <zone type="library">
+    <line rend="right">21</line>
+  </zone>
   <zone type="main">
-    <line>21</line>
-    <line>explain</line>
-    <line>you not think that you could <del rend="strikethrough">discourse</del></line>
+    <line>you not think that you could <mod>
+        <del rend="strikethrough">discourse</del>
+        <add place="superlinear">explain</add>
+      </mod></line>
     <line><del rend="strikethrough">respec</del> their discrepancies on the subject</line>
     <line>of your profession, if you understood</line>
-    <line>their agreements?-- <hi rend="underline">Ion</hi> Manifestly.</line>
-    <line>Soc. How then does it happen</line>
-    <line>that you are possessed of skill{s} to</line>
+    <line>their agreements?&#8212; <milestone unit="tei:speaker" spanTo="#e1-0043.01"/><hi
+        rend="underline">Ion</hi><anchor xml:id="e1-0043.01"/> Manifestly.</line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0043.02"/>Soc.<anchor xml:id="e1-0043.02"/> How
+      then does it happen</line>
+    <line>that you are possessed of skill<unclear reason="illegible">s</unclear> to</line>
+    <!-- the previous line is overwritten by "that" on the line above. In fact, the previous line is intralinear
+      to the above line, but it was overwritten without the intent to delete. It is an unused option for
+      "and yet" on 20v -->
+    <line><add><hi rend="underline"><milestone unit="tei:seg" spanTo="#e1-0043.08"
+            xml:id="e1-0043.09"/>and even<anchor xml:id="e1-0043.08"/></hi></add></line>
     <line>illustrate Homer &amp; not Hesiod or</line>
     <line>the other poets in an equal degree?</line>
     <line>Are the topics of Homer dissimilar</line>
     <line>from those of all the other poets?</line>
-    <line>principal</line>
-    <line>does he not treat <del rend="strikethrough">of</del> <del rend="strikethrough">much</del> of war</line>
+    <line/>
+    <line>does he not treat <mod>
+        <del rend="strikethrough">of</del>
+        <del rend="strikethrough">much</del>
+        <add place="superlinear">principal</add>
+      </mod> of war</line>
     <line><del rend="strikethrough">the</del> and the mutual intercourse of</line>
     <line>men, <del rend="strikethrough">the</del> and the distinct functions</line>
     <line>&amp; characters of the brave &amp; the coward</line>
-    <line>professional</line>
-    <line>the <del rend="strikethrough">priv</del> <del rend="strikethrough">professional</del> &amp; the private</line>
+    <line/>
+    <line>the <del rend="strikethrough">priv</del>
+      <mod>
+        <del rend="strikethrough">professional</del>
+        <add place="superlinear">professional</add>
+      </mod> &amp; the private</line>
     <line>person; the relation borne by men</line>
-    <line>to the gods &amp; the gods to men, &amp; the</line>
-    <line>mode of of</line>
-    <line>their communion; the proceedings of</line>
-    <line>^ &amp;</line>
-    <line>heaven, of hell, of the origin of <del rend="strikethrough">the</del></line>
-    <line>gods &amp; heroes{:}--are <del rend="strikethrough">the</del> not [these] the</line>
-    <line>mountains</line>
-    <line>materials from which Homer</line>
+    <line><mod>
+        <del rend="overwritten">&amp;</del>
+        <add place="intralinear">to</add>
+      </mod> the gods the gods to men, &amp; the</line>
+    <line> </line>
+    <line><add place="superlinear"><mod>
+          <del rend="overwritten"><unclear reason="illegible">Gods</unclear></del>
+          <add place="intralinear">mode</add>
+        </mod> of</add>their communion; <add place="superlinear">of</add> the proceedings of</line>
+    <line>heaven, of hell, of the origin <add place="superlinear"><milestone unit="tei:seg"
+          spanTo="#e1-0043.03" xml:id="e1-0043.06"/>&amp;<anchor xml:id="e1-0043.03"/></add>
+      <milestone unit="tei:seg" spanTo="#e1-0043.04" xml:id="e1-0043.05"/><mod>
+        <del rend="overwritten"><unclear reason="illegible">&amp;</unclear></del>
+        <add place="intralinear">o</add>
+      </mod>f<anchor xml:id="e1-0043.04"/>
+      <del rend="strikethrough">the</del><alt target="#e1-0043.05 #e1-0043.06" mode="excl"
+        weights="1 0"/></line>
+    <line>gods &amp; heroes<unclear reason="illegible">:</unclear>&#8212;are <del
+        rend="strikethrough">the</del> not <unclear reason="illegible">these</unclear> the</line>
+    <line><add><milestone unit="tei:seg" spanTo="#e1-0043.07" corresp="e1-0042.01"/>mountains<anchor
+          xml:id="e1-0043.07"/></add></line>
+    <line rend="indent1">materials from which Homer</line>
   </zone>
 </surface>

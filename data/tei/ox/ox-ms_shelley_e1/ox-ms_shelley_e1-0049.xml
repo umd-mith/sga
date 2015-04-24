@@ -1,26 +1,56 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0049" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0049" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0049.jp2"/>
-  <zone type="library">24</zone>
+  <zone type="library"><line rend="right">24</line></zone>
   <zone type="main">
+    <milestone unit="tei:seg" spanTo="#e1-0049.07" corresp="#e1-0048.06"/>
     <milestone unit="tei:speaker" spanTo="e1-0049.01"/>
-    <line rend="indent2">a Voice</line>
-    <line rend="indent1">The Earth <anchor xml:id="e1-0049.01"/><mod><del rend="strikethrough">hollows</del><add place="superlinear">caverns</add></mod> of the craggy hills</line>
-    <line rend="indent1">The tongueless <mod><del rend="strikethrough">clefts</del> <del rend="strikethrough">within the mountains then</del></mod></line>
-    <!-- The first two lines on this page include both a speaker ("The Earth") and a line of poetry 
-      ("The tongueless caverns of the craggy hills").  PBS presents the two in a mixed form across two lines.  
-      I have encoded these lines exactly as they appear on the page, but this will make the document 
-      unserachable for these lines. -->
-    <line rend="indent1">Cried Misery, <unclear extent="2"></unclear><add place="superlinear">then</add>the <mod><del rend="strikethrough">startled</del><add place="superlinear">hollow</add></mod> Heaven replied</line>
-    <line rend="indent1">Misery! And the Oceans purple waves,</line>
-    <line rend="indent1">Climbing the land, howled <del rend="strikethrough">it</del> to <mod><del rend="strikethrough">all</del><add place="superlinear"><unclear extent="4"></unclear>the lashing</add></mod> the winds.</line>
-    <!-- I think I'm encoding unclear tags incorrectly.  What should I put between the two tags? -->
-    <line rend="indent1">And the pale nations heard it,&#x2014;Misery!</line>
-    <line rend="indent2">&#x2014;Mother thy sons &#x26; thou</line>
+    <line rend="indent2"><add><milestone unit="tei:seg" spanTo="#e1-0049.03" xml:id="e1-0049.06"/>a
+          Voice<anchor xml:id="e1-0049.03"/></add></line>
+    <anchor xml:id="e1-0049.01"/>
+    <line rend="indent2"><milestone unit="tei:speaker" spanTo="e1-0049.02"/><milestone
+        unit="tei:seg" spanTo="#e1-0049.04" xml:id="e1-0049.05"/>The Earth<anchor
+        xml:id="e1-0049.04"/><anchor xml:id="e1-0049.02"/><mod>
+        <del rend="strikethrough">hollows</del>
+        <add place="superlinear">caverns</add>
+      </mod> of the craggy hills<alt target="#e1-0049.05 #" mode="excl" weights="1 0"/></line>
+    <line rend="indent1">The tongueless <mod>
+        <del rend="strikethrough">clefts</del>
+        <del rend="strikethrough">within the mountains then</del>
+      </mod></line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">S</del>
+        <add place="intralinear">C</add>
+      </mod>ried Misery<mod>
+        <del rend="strikethrough">!</del>
+        <add place="intralinear">,</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">&#38;</del>
+        <add place="superlinear">then</add>
+      </mod>the <mod>
+        <del rend="strikethrough">startled</del>
+        <add place="superlinear">hollow</add>
+      </mod> Heaven replied</line>
+    <line rend="indent1">Misery! <unclear reason="case">A</unclear>nd the Oceans purple
+      waves,</line>
+    <line rend="indent1">Climbing the land, howled <mod>
+        <del rend="strikethrough">it</del>
+        <add place="superlinear"><unclear reason="illegible">back</unclear></add>
+      </mod> to <mod>
+        <del rend="strikethrough">all</del>
+        <add place="superlinear"><unclear extent="4"/>the lashing</add>
+      </mod> the winds.</line>
+    <line rend="indent1">And the <unclear reason="illegible">p</unclear>ale nations heard
+      it,&#x2014;Misery!</line>
+    <anchor xml:id="e1-0049.07"/>
+    <milestone unit="tei:seg" spanTo="#e1-0049.08" corresp="#e1-0048.07"/>
+    <line rend="indent3">&#x2014;Mother<del rend="strikethrough">s</del> thy sons &#x26; thou</line>
     <line rend="indent1">Scorn him, without whose all-enduring will</line>
     <line rend="indent1">Beneath the fierce omnipotence of Jove</line>
+    <anchor xml:id="e1-0049.08"/>
   </zone>
 </surface>

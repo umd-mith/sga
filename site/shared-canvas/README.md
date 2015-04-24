@@ -6,7 +6,7 @@ SGA Shared Canvas
 How to build SGA Shared Canvas
 ---------------------------------------
 
-First, clone a copy of the SGA git repo by running `git clone git://github.com/umd_mith/sga.git`.
+First, clone a copy of the SGA git repo by running `git clone git://github.com/umd-mith/sga.git`.
 
 You will need to have installed [Node.js and npm](http://nodejs.org/) (a node package manager).
 
@@ -14,8 +14,7 @@ First use `npm` to install the `grunt` and `bower` tools globally
 (note that these commands must be run with superuser privileges):
 
 ``` bash
-# npm install -g grunt-cli
-# npm install -g bower
+# npm install -g grunt-cli bower
 ```
 
 Next get all node.js dependencies by running:
@@ -24,16 +23,28 @@ Next get all node.js dependencies by running:
 $ npm install
 ```
 
-Then get other dependencies (including those from Bower) by running:
+Next get all JS/CSS dependencies from bower by running:
 
 ``` bash
-$ grunt install
+$ bower install
 ```
 
-Finally, to compile run:
+Then build the application:
 
 ``` bash
 $ grunt
+```
+
+If you want to see the demo you will probably need to make the XML files
+available. Fortunately they're available a few directories up from the 
+shared canvas application. So you need to:
+
+    ln -s ../data/tei /home/ed/Projects/sga tei
+
+(Under Windows, you may have to copy the directory)
+
+``` bash
+$ grunt run
 ```
 
 Style Guide

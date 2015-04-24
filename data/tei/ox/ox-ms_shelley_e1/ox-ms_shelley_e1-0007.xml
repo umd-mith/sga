@@ -1,41 +1,51 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0007" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0007" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0007.jp2"/>
   <zone type="library">3</zone>
   <zone type="main">
-    <line>They outspeeded the blast,</line>
-    <line>While 'tis said, they are fled&#x2014;</line>
+    <line rend="indent1">They outspeeded the blast,</line>
+    <line rend="indent1">While 'tis said, they are fled&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0007.01"/>
     <line rend="indent2">Ione</line>
     <anchor xml:id="e1-0007.01"/>
-    <line>Whither, oh whither?</line>
+    <line rend="indent1">Whither, oh wh<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">i</add>
+      </mod>ther?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0007.02"/>
     <line rend="indent2">Panthea</line>
     <anchor xml:id="e1-0007.02"/>
-    <line>To the <mod spanTo="#e1-0007.03"/><del rend="strikethrough" instant="true"
+    <line rend="indent1">To the <mod spanTo="#e1-0007.03"/><del rend="strikethrough" instant="true"
         >cold,&#x2014;to</del></line>
-    <line><add place="intralinear">dark, to</add><anchor xml:id="e1-0007.03"/> the past, to the
-      dead.</line>
+    <line><add place="interlinear">dark, <retrace cause="unclear">t</retrace>o</add><anchor
+        xml:id="e1-0007.03"/> the past, to the dead.</line>
     <milestone unit="tei:speaker" spanTo="#e1-0007.04"/>
-    <line rend="indent2">Voice of unseen Spirits</line>
+    <line rend="center">Voice of unseen Spirits</line>
     <anchor xml:id="e1-0007.04"/>
     <line rend="indent1">Bright clouds float in Heaven,</line>
     <line rend="indent1">Dew-stars gleam on Earth,</line>
     <line rend="indent1">Waves assemble on Ocean,</line>
     <line rend="indent1">They are gathered &amp; driven</line>
-    <line>By the Storm of delight, by the panic of glee<unclear>.</unclear></line>
+    <line>By the Storm of delight, by the panic of glee<unclear reason="illegible"
+      >.</unclear></line>
     <line rend="indent1">They shake with emotion&#x2014;</line>
-    <line rend="indent1">They dance in their mirth<unclear>&#x2014;</unclear></line>
+    <line rend="indent1"><add>They dance in their mirth</add><unclear reason="illegible"
+            ><add><metamark function="insert">&lt;</metamark></add></unclear></line>
     <line rend="indent2">But where are ye?</line>
     <line rend="indent1">The pine-boughs are singing</line>
-    <line rend="indent1">Old songs with new gladness,</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">New</del>
+        <add place="intralinear">Old</add>
+      </mod> songs with new gladness,</line>
     <line rend="indent1">The billows &amp; fountains</line>
     <line rend="indent1">Fresh music are flinging</line>
-    <milestone unit="tei:l" spanTo="#e1-0007.05"/><line>Like the notes of a spirit from land &amp; from</line>
-      <line rend="right">Sea</line><anchor xml:id="e1-0007.05"/>
+    <milestone unit="tei:l" spanTo="#e1-0007.05"/>
+    <line>Like the notes of a spirit from land &amp; from</line>
+    <line rend="right"><unclear reason="case">S</unclear>ea</line>
+    <anchor xml:id="e1-0007.05"/>
     <line rend="indent1">The storms mock the mountains</line>
     <line rend="indent1"><mod>
         <del rend="strikethrough">Both howl in their</del>

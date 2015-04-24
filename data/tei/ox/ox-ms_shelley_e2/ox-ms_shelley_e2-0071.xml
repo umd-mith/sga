@@ -1,25 +1,35 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0071" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0071" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0071.jp2"/>
-  <zone type="main">
+  <zone type="library"><line rend="right">35</line></zone>
+  <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>35</line>
-    <line>Come, be happy, sit near <del rend="strikethrough">b <unclear>y</unclear></del> me</line>
-    <line>Shadow vested Misery!</line>
+    <line>Come, be happy, sit near <mod>
+        <del rend="strikethrough">b<unclear reason="illegible">y</unclear></del>
+      </mod> me</line>
+    <line>Shadow vested <mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">M</add>
+      </mod>isery!</line>
     <line>Coy unwilling silent bride</line>
-    <line>Mourning in thy robe of pride,</line>
-    <line>Desolation deified&#8212;</line>
+    <line rend="indent1">Mourning in thy robe of pride,</line>
+    <line rend="indent1">Desolation deified&#8212;</line>
     <line>Come be happy&#8212; sit near me</line>
     <line>Sad as I may seem to thee</line>
     <line>I am merrier yet than thou&#8212;</line>
-    <line>Lady, whose imperial brow</line>
-    <line>Is endiademed with woe&#8212;</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">W</del>
+        <add place="intralinear">L</add>
+      </mod>ady, whose imperial brow</line>
+    <line rend="indent1">Is endiademed with woe&#8212;</line>
     <line>Misery! we have known each other</line>
-    <line>Like a sister &amp; a brother</line>
+    <line><mod>
+        <del rend="overwritten">S</del>
+        <add place="intralinear">L</add>
+      </mod>ike a sister &amp; a brother</line>
     <line>Living in the same <del rend="strikethrough">dre</del> lone home</line>
   </zone>
 </surface>
-

@@ -1,32 +1,34 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0065" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0065" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0065.jp2"/>
-  <zone type="main">
+  <zone type="library"><line rend="right">32</line></zone>
+  <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>32</line>
     <line>Hasten to the bridal bed</line>
     <line>Underneath the grave tis spread</line>
     <line>In darkness may our love be hid&#8212;</line>
-    <line>Oblivion is our coverlid&#8212;</line>
-    <line>W<hi rend="underline">e m</hi>ay rest, &amp; none forbid&#8212;</line>
+    <line rend="indent1">Oblivion is our coverlid&#8212;</line>
+    <line rend="indent1">W<hi rend="underline">e m</hi>ay rest, &amp; none forbid&#8212;</line>
     <line>Clasp me, till our hearts be grown</line>
     <line>Like two lovers', into one</line>
     <line>Till this dreadful transport may</line>
     <line>Like a vapour, fade away</line>
-    <line><hi rend="underline">For</hi> the sleep which lasts alway</line>
+    <line><hi rend="underline">In </hi>the sleep which lasts alway</line>
+    <addSpan place="interlinear" spanTo="#e2-0065.01"/>
     <line>We may dream in that long sleep</line>
-    <line>That we are not those who weep;</line>
-    <line>Even as pleasure dreams of thee</line>
-    <line>Life-deserting Misery</line>
-    <line>Thou mayest dream of her with me</line>
+    <line>That we are not those who weep<add>;</add></line>
+    <line rend="indent1">Even as pleasure dreams of thee</line>
+    <line rend="indent1">Life-deserting Misery</line>
+    <line rend="indent1">Thou mayest dream of her with me</line>
+    <anchor xml:id="e2-0065.01"/>
     <line>Let us laugh &amp; make our mirth</line>
     <line>At all shadows on the Earth</line>
     <line>As dogs bay the moonlight clouds</line>
-    <line>Which <unclear>,</unclear> like spectres wrapt in shrouds</line>
-    <line>Pass oer night in multitudes</line>
+    <line rend="indent1">Which <unclear reason="illegible">,</unclear> like spectres wrapt in
+      shrouds</line>
+    <line rend="indent1">Pass oer night in multitudes</line>
   </zone>
 </surface>
-

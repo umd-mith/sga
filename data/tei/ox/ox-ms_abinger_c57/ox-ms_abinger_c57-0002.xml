@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0002" ulx="0" uly="0" lrx="5368" lry="7104"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="1" partOf="ox-frankenstein_notebook_b.xml#ox-frankenstein_volume_ii">
@@ -24,7 +23,7 @@
     <line>I saw, felt heard and smelt at the same</line>
     <line>time and it was indeed a long time be</line>
     <line>fore I learned to distinguish between the</line>
-    <line><anchor xml:id="c57-0002.01"/><del rend="unmarked"><retrace cause="clarify"
+    <line><anchor xml:id="c57-0002.01"/><del rend="unmarked"><retrace cause="unclear"
             ><unclear>op</unclear></retrace></del>operations of my various senses. By degrees</line>
     <line>I remember a stronger light pressed upon</line>
     <line>my nerves <del rend="strikethrough">and</del> so that I was obliged to close</line>
@@ -51,7 +50,7 @@
         xml:id="c57-0002.04"/><milestone unit="tei:seg" spanTo="#c57-0002.05" xml:id="c57-0002.03"
         /><add place="superlinear" hand="#pbs">recieve</add><anchor
         xml:id="c57-0002.05"/> shade. This was the forest near Ingolstadt,</line>
-    <alt mode="excl" targets="#c57-0002.02 #c57-0002.03" weights="0.5 0.5"/>
+    <alt mode="excl" target="#c57-0002.02 #c57-0002.03" weights="0.5 0.5"/>
     <line>and here by the side of a brook I lay <del rend="strikethrough">weary</del></line>
     <line>for some hours <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>

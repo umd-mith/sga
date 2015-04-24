@@ -1,35 +1,59 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0056" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0056" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0056.jp2"/>
   <zone type="main">
+    <delSpan spanTo="#e1-0056.01" rend="strikethrough"/>
     <line>Blue thistles bloomed in cities, foodless toads</line>
-    <line><del rend="strikethrough">Within voluptuous chambers panting crawled</del>,</line>
-    <line><del rend="strikethrough">lizards</del> for</line>
-    <line>And air-fed efts; <del rend="strikethrough">my withered breast was dry</del></line>
+    <line><del rend="strikethrough">With<mod>
+          <del rend="overwritten">out</del>
+          <add place="intralinear">in</add>
+        </mod> voluptuous chambers panting crawled</del>,</line>
+    <anchor xml:id="e1-0056.01"/>
+    <line><mod>
+        <del rend="strikethrough">And <mod>
+            <del rend="overwritten">wind</del>
+            <add place="intralinear">air</add>
+          </mod>-fed efts;</del>
+        <del rend="strikethrough"><add place="superlinear">lizards</add></del>
+        <del rend="unmarked"><add place="superlinear">for</add></del>
+      </mod>
+      <del rend="strikethrough">my withered br<unclear reason="illegible">ea</unclear>st was
+        dry</del></line>
+    <milestone unit="tei:l" spanTo="#e1-0056.02"/>
     <line>With grief, &amp; the thin air, my breath, was</line>
-    <line>stained</line>
+    <line rend="right">stained</line>
+    <anchor xml:id="e1-0056.02"/>
+    <milestone unit="tei:l" spanTo="#e1-0056.03"/>
     <line>With the contagion of a mothers hate</line>
-    <line>aye,</line>
-    <line>Breathed on her child's destroyer -- <del rend="strikethrough">for</del> I heard</line>
+    <line rend="indent5">aye,</line>
+    <anchor xml:id="e1-0056.03"/>
+    <line>Breathed on her child's destroyer &#8212; <del rend="strikethrough">for</del> I
+      heard</line>
     <line>Thy curse, the which if thou rememberst not</line>
-    <line>Yet my innumerable seas &amp; streams</line>
+    <line><mod>
+        <del rend="overwritten">T</del>
+        <add place="intralinear">Y</add>
+      </mod>et my innumerable seas &amp; streams</line>
     <line>Mountains &amp; caves &amp; winds, &amp; yon wide Air</line>
     <line>And the inarticulate people of the dead</line>
     <line>Preserve, a treasured spell. We meditate</line>
     <line>In secret joy &amp; hope those dreadful words</line>
     <line>But dare not speak them</line>
-    <line>Prometheus</line>
-    <line>Venerable Mother!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0056.04"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0056.04"/>
+    <line rend="indent4">Venerable Mother!</line>
     <line>All else who live &amp; suffer take from thee</line>
     <line>Some comfort; flowers &amp; fruits &amp; happy sounds</line>
-    <line>mine</line>
-    <line>And love, though fleeting; these may not be</line>
+    <line rend="right"><milestone unit="tei:seg" spanTo="#e1-0056.05" corresp="#e1-0056.06"
+        />mine<anchor xml:id="e1-0056.05"/></line>
+    <line>And love, though fleeting; these may not be <anchor xml:id="e1-0056.06"/></line>
     <line>But mine own words, I pray, deny me not</line>
-    <line>The Earth</line>
-    <line>They shall be told--. Ere Babylon was dust</line>
-    <line>181</line>
+    <line rend="center">The Earth</line>
+    <line>They shall be told&#8212;. Ere Babylon was dust</line>
+    <line><add><metamark function="count">181</metamark></add></line>
   </zone>
 </surface>

@@ -1,32 +1,47 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0083" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0083" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0083.jp2"/>
+  <zone type="library">
+    <line rend="right">41</line>
+  </zone>
   <zone type="main">
-    <line>41</line>
     <line>professing himself a judge of music</line>
-    <line><del rend="strikethrough">the s</del> song &amp; rhapsody{,} was</line>
+    <line><del rend="strikethrough">the s</del> song &amp; rhapsody<unclear reason="illegible"
+        >,</unclear> was</line>
     <line>competent to criticize Olympus</line>
-    <line><del rend="strikethrough">Th{\}</del> Thamyris, Orpheus, or Phemius</line>
+    <line><del rend="strikethrough">Th<unclear reason="illegible">\</unclear></del> Thamyris,
+      Orpheus, or Phemius</line>
     <line>Of Ithaca, the raphsodist; but</line>
-    <line>xthe moment he came to Ion the</line>
+    <line><unclear reason="illegible">x</unclear>the moment he came to Ion the</line>
     <line>Ephesian felt himself quite</line>
-    <line>He but requites me for his own misdeed{;}</line>
+    <line rend="indent1"><milestone unit="tei:seg" spanTo="#e1-0083.01" corresp="e1-0082.01"/>He but
+      requites me for his own misdeed<unclear reason="illegible">;</unclear><anchor
+        xml:id="e1-0083.01"/></line>
     <line>at a loss, &amp; utterly incompetent</line>
     <line>to determine whether he rhapso</line>
-    <line>-dized well or ill. <hi rend="underline">Ion</hi>. I cannot</line>
-    <line>refute you Socrates{;--} but of this</line>
+    <line>-dized well or ill. <milestone unit="tei:speaker" spanTo="#e1-0083.02"/><hi
+        rend="underline">Ion</hi>.<anchor xml:id="e1-0083.02"/> I cannot</line>
+    <line>refute you Socrates<unclear reason="illegible">;&#8212;</unclear> but of this</line>
     <line>I am conscious in myself that</line>
     <line>I excell all men in the profusion</line>
     <line>&amp; eloquence of my illustrations of</line>
     <line>Homer; <del rend="strikethrough">and</del> that all who hear</line>
-    <line>me will confess it; &amp; that with</line>
+    <line>me will confess <mod>
+        <del rend="overwritten">it's</del>
+        <add place="intralinear">it</add>
+      </mod>; &amp; that with</line>
     <line>respect to other poets, I am deserted</line>
     <line>by this power; it is for you to</line>
     <line>consider what may be the cause of</line>
-    <line>this. <hi rend="underline">Soc</hi>. <del rend="strikethrough">Methinks</del> I can <del rend="strikethrough">explain</del></line>
+    <line>th<mod>
+        <del rend="overwritten"><unclear reason="illegible">e</unclear></del>
+        <add place="intralinear">is</add>
+      </mod>. <milestone unit="tei:speaker" spanTo="#e1-0083.03"/><hi rend="underline"
+        >Soc</hi>.<anchor xml:id="e1-0083.03"/>
+      <del rend="strikethrough">Methinks</del> I can <del rend="strikethrough">explain</del></line>
     <line>unfold to you, o Ion, <del rend="strikethrough">what</del> my opinion</line>
   </zone>
 </surface>

@@ -1,37 +1,60 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5380" lry="7232" xml:id="ox-ms_shelley_e2-0084" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5380" lry="7232" xml:id="ox-ms_shelley_e2-0084" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0084.jp2"/>
   <zone type="main">
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.01"/>
+    <line rend="indent2">Asia</line>
+    <anchor xml:id="e2-0084.01"/>
     <line>And who made terror, madness, crime, remorse</line>
     <line>Which from the links of the great chain of things</line>
     <line>To every thought within the mind of man</line>
-    <line>Sway &amp; drag heavily &#8212; and each one reels</line>
+    <line><mod>
+        <del rend="overwritten">W</del>
+        <add place="intralinear">S</add>
+      </mod>way &amp; drag heavily &#8212; and each one reels</line>
     <line>Under the load towards the pit of death;</line>
-    <line>/</line>
-    <line>Pain whose unheeded &amp; familiar speech\</line>
+    <line rend="right"><add place="interlinear"><metamark function="displacement"
+          xml:id="e2-0084.09">&#60;</metamark></add></line>
+    <line>Pain whose unheeded &amp; familiar speech</line>
     <line>Is howling &amp; keen shrieks, day after day,</line>
-    <line>Or looks which tell that while the lips are calm</line>
-    <line>And the eyes cold <unclear>,</unclear> the spirit weeps within</line>
+    <delSpan spanTo="#e2-0084.02" rend="vertical_line"/>
+    <line>Or looks which tell that wh<mod>
+        <del rend="overwritten">en</del>
+        <add place="intralinear">ile</add>
+      </mod> the lips are calm</line>
+    <line>And the eyes cold <unclear reason="illegible">,</unclear> the spirit weeps within</line>
     <line>Tears like the sanguine sweat of agony;</line>
+    <anchor xml:id="e2-0084.02"/>
     <line>And Hell, or the sharp fear of Hell?</line>
-    <line>Demogorgon</line>
-    <line>He reigns</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.03"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e2-0084.03"/>
+    <line rend="indent5">He reigns</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.04"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0084.04"/>
     <line>Utter his name &#8212; a world pining in pain</line>
     <line>Asks but his name; curses shall drag him down.</line>
-    <line>Demogorgon</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.05"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e2-0084.05"/>
     <line>He reigns</line>
-    <line>Asia</line>
-    <line>I feel, I know it&#8212;who?</line>
-    <line>Demogorgon</line>
-    <line>He reigns.</line>
-    <line>Asia</line>
-    <line>Who reigns? thier was the Heaven &amp; Earth at first</line>
-    <line>351</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.06"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0084.06"/>
+    <line rend="indent2">I feel, I know it&#8212;who?</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.07"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e2-0084.07"/>
+    <line rend="right">He reigns.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0084.08"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0084.08"/>
+    <line>Who reigns? <unclear reason="illegible">thier</unclear> was the Heaven &amp; Earth at
+      first</line>
+    <line rend="indent3"><add><metamark function="count">351</metamark></add></line>
   </zone>
 </surface>
-

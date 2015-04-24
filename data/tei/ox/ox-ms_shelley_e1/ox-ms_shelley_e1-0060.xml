@@ -1,33 +1,54 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0060" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0060" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0060.jp2"/>
   <zone type="main">
-    <line>Typhon</line>
-    <line>or <del rend="strikethrough">Saturn</del> mightier <del rend="strikethrough">later</del></line>
-    <line>Hades, <del rend="strikethrough">Osiris</del> or what <del rend="strikethrough">later</del> Gods</line>
+    <line>Hades, <mod>
+        <del rend="strikethrough">Osiris</del>
+        <add place="superlinear">or</add>
+        <mod>
+          <del rend="strikethrough"><add place="superlinear">Saturn</add></del>
+          <add place="superlinear">Typhon</add>
+        </mod>
+      </mod> or what <mod>
+        <del rend="strikethrough">later</del>
+        <add place="superlinear"><retrace cause="unclear">mightier</retrace></add>
+      </mod> Gods<del rend="strikethrough"><add place="superlinear">later</add></del></line>
     <line>From all-prolific evil, since thy ruin</line>
-    <line>Have sprung, &amp; trampled on my prostrate sons--</line>
-    <line>Ask &amp; they must reply -- so the revenge</line>
+    <line>Have sprung, &amp; trampled on my prostrate sons&#8212;</line>
+    <line>Ask &amp; they must reply &#8212; so the revenge</line>
+    <milestone unit="tei:l" spanTo="#e1-0060.01"/>
     <line>Of the supreme <del rend="strikethrough">shall</del> may sweep through vacant</line>
-    <line>shades</line>
+    <line rend="right">shades</line>
+    <anchor xml:id="e1-0060.01"/>
     <line>As rainy wind through the abandoned gate</line>
     <line>Of a fallen palace</line>
-    <line>Prometheus</line>
-    <line>Mother, let not aught</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0060.02"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0060.02"/>
+    <line rend="indent2">Mother, let not aught</line>
     <line>Of that which may be evil, pass again</line>
-    <line>My lips, or those of aught resembling me--</line>
+    <line>My lips, or those of aught resembling <unclear reason="illegible"
+      >m</unclear>e&#8212;</line>
     <line>Phantasm of Jupiter arise appear!</line>
-    <line>The sound beneath as of earthquake &amp; the</line>
-    <line>driving of whirlwinds-- The Ravine is split, &amp;</line>
+    <delSpan spanTo="#e1-0060.05" rend="vertical_line"/>
+    <milestone unit="tei:stage" spanTo="#e1-0060.04"/>
+    <line rend="indent1">The sound beneath as of earthquake &amp; the</line>
+    <line>driving of whirlwinds&#8212; The Ravine is split, &amp;</line>
     <line>the Phantasm of Jupiter <del rend="strikethrough">appears</del> rises, surrounded</line>
     <line>by heavy clouds which dart forth lightning</line>
-    <line><del rend="strikethrough">Panthea</del> Ione</line>
-    <line>My wings are folded oer mine ears,</line>
-    <line>My wings are crossed over mine eyes,</line>
-    <line>Yet thro their silver shade appears</line>
-    <line>214</line>
+    <anchor xml:id="e1-0060.04"/><anchor xml:id="e1-0060.05"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0060.03"/>
+    <line rend="center"><mod>
+        <del rend="strikethrough">Panthea</del>
+        <add>Ione</add>
+      </mod></line>
+    <anchor xml:id="e1-0060.03"/>
+    <line rend="indent1">My wings are folded oer mine ears,</line>
+    <line rend="indent1">My wings are crossed over mine eyes,</line>
+    <line rend="indent1">Yet thro their silver shade appears</line>
+    <line rend="indent5"><add><metamark function="count">214</metamark></add></line>
   </zone>
 </surface>

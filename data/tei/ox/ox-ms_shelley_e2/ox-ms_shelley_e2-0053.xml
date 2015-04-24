@@ -1,19 +1,22 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0053" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0053.jp2"/>
   <zone type="library">
-    <line>26</line>
+    <line rend="right">26</line>
   </zone>
   <zone type="main">
     <line>[PENCIL SKETCH OF FOLIAGE, IN REVERSO</line>
-    <line rend="indent5">thy name,</line>
+    <milestone unit="tei:seg" spanTo="#e2-0053.01" corresp="#e2-0052.02"/><line rend="indent5">thy
+      name,</line>
     <line>Among the many sounds alone I heard</line>
     <line>Of what might be articulate; though still</line>
     <line>I listened through the night when sound was none.</line>
-    <!--gap of six lines separate these two sections; link them to their corresponding position in 25v (0052) -->
+    <anchor xml:id="e2-0053.01"/>
+    <milestone unit="tei:seg" spanTo="#e2-0053.02" corresp="e2-0052.03"/>
     <line>something sweet since it is sweet</line>
+    <anchor xml:id="e2-0053.02"/>
   </zone>
 </surface>

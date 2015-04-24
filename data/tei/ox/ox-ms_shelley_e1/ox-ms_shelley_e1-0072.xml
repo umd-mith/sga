@@ -1,21 +1,28 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5402" lry="7272"
-  xml:id="ox-ms_shelley_e1-0072" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5402" lry="7272" xml:id="ox-ms_shelley_e1-0072" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0072.jp2"/>
   <zone type="main">
-    <line rend="indent1">Wail, howl aloud Land &#x26; Sea</line>
+    <line rend="indent1">Wail, howl aloud <mod>
+        <del rend="overwritten">l</del>
+        <add place="intralinear">L</add>
+      </mod>and &#x26; Sea</line>
     <line rend="indent1">The Earths rent heart shall answer ye</line>
     <line>Howl spirits of the living &#x26; the dead</line>
-    <line><milestone unit="tei:l" spanTo="e1-0072.01"/>Your refuge, your defence lies fallen &#x26; vanq-</line>
-    <line rend="right">-uished<anchor xml:id="e1-0072.01"/></line>
+    <line><milestone unit="tei:l" spanTo="e1-0072.01"/>Your refuge, your defence lies fallen &#x26;
+      vanq-</line>
+    <line rend="indent5">-uished<anchor xml:id="e1-0072.01"/></line>
     <milestone unit="tei:speaker" spanTo="e1-0072.02"/>
-    <line rend="center">1<hi rend="sup">st</hi> Echo</line>
+    <line rend="center">1<hi rend="sup">st</hi> Ec<unclear reason="illegible">ho</unclear></line>
     <anchor xml:id="e1-0072.02"/>
-    <line><mod><del rend="strikethrough">Lies un</del><add place="superlinear">Lies</add></mod> Fallen &#x26; vanquished?</line>
+    <line rend="indent2"><mod>
+        <del rend="strikethrough">Lies un</del>
+        <add place="superlinear">Li<retrace cause="unclear">e</retrace>s</add>
+      </mod> Fallen &#x26; vanquished?</line>
     <milestone unit="tei:speaker" spanTo="e1-0072.03"/>
-    <line rend="center">2<hi rend="sup">d</hi> Echo</line>
+    <line rend="center">2<hi rend="sup">d</hi>. Echo</line>
     <anchor xml:id="e1-0072.03"/>
     <line rend="indent4">Fallen &#x26; vanquished!</line>
     <milestone unit="tei:speaker" spanTo="e1-0072.04"/>
@@ -23,10 +30,14 @@
     <anchor xml:id="e1-0072.04"/>
     <line rend="indent2">Fear not &#x2013; tis but some passing spasm</line>
     <line rend="indent2">The Titan is unvanquished still.</line>
-    <line rend="indent2">But see, where thro the azure chasm</line>
+    <line rend="indent2">But see, where thro <unclear reason="illegible">the</unclear> azure
+      chasm</line>
     <line rend="indent2">Of yon forked &#x26; snowy hill</line>
     <line rend="indent2">Trampling the slant winds on high</line>
-    <line rend="indent2">With <mod><del rend="strikethrough">un</del><add place="superlinear">golden-</add></mod>sandalled feet, that glow</line>
+    <line rend="indent2">With <mod>
+        <del rend="strikethrough">un</del>
+        <add place="superlinear">golden-</add>
+      </mod>sandalled feet, that glow</line>
     <line rend="indent2">Under plumes of purple dye</line>
     <line rend="indent2">Like rose-ensanguined ivory</line>
     <line rend="indent3">A Shape comes now</line>

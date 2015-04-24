@@ -1,34 +1,63 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0036" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0036" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0036.jp2"/>
   <zone type="main">
     <line>expounding Homer; neither Metrodorus of Lamp</line>
-    <line>sacus, nor Stesimbrotus the Thasian, nor</line>
-    <line>Glaucon, nor any other <del rend="strikethrough">existing</del> rhapsodist</line>
-    <line>of the present time, can <del rend="strikethrough">give [discourse]</del></line>
-    <line>so <del rend="strikethrough underline">variously &amp; beautifully respecting the</del></line>
-    <line><del rend="strikethrough underline">[meaning]</del> give so <del rend="strikethrough">ma</del>ny various &amp;</line>
-    <line>beautiful meanings to the verses of Homer as</line>
-    <line>I can--. <hi rend="underline">Socrates</hi>. I am persuaded of</line>
+    <line>sacus, nor Ste<unclear reason="illegible">si</unclear>mbrotus the Thasian, nor</line>
+    <line>Glau<unclear reason="illegible">co</unclear>n, nor any other <del rend="strikethrough"
+        >existing</del> rhapsodist</line>
+    <line>of the present time, can <del rend="strikethrough">give <unclear reason="illegible"
+          >discourse</unclear></del></line>
+    <line><del rend="unmarked">so</del>
+      <del rend="strikethrough">variously &amp; beautifully respecting the</del></line>
+    <line><hi rend="underline"><del rend="strikethrough"><unclear reason="illegible"
+            >meaning</unclear></del></hi> give so <del rend="strikethrough">ma</del><del
+        rend="unmarked">ny</del>
+      <unclear reason="illegible">va</unclear>rious &amp;</line>
+    <line>beautiful meanings to the <unclear reason="illegible">verses</unclear> of <unclear
+        reason="illegible">H</unclear>omer as</line>
+    <line>I can&#8212;. <milestone unit="tei:speaker" spanTo="#e1-0036.03"/><hi rend="underline"
+        >Socrates</hi>.<anchor xml:id="e1-0036.03"/> I am persuaded of</line>
     <line>your eminent skill, o Ion. You will not</line>
     <line>grudge me a proof &amp; explanation?</line>
-    <line>Ion. It is worth <del rend="strikethrough">your</del> while to hear <del rend="strikethrough">how</del></line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0036.04"/>Ion.<anchor xml:id="e1-0036.04"/> It
+      is worth <del rend="strikethrough">your</del> while to hear <del rend="strikethrough"
+        >how</del></line>
     <line><del rend="strikethrough">I have adorned</del> the manner in which I</line>
-    <line>the hidden beauties</line>
-    <line>illustrated [?<del rend="strikethrough">of</del>][?<del rend="strikethrough">from</del>]</line>
-    <line>have <del rend="strikethrough">added</del> <del rend="strikethrough">adorned</del> Homer, <del rend="strikethrough">[revealing] his</del></line>
-    <line><del rend="strikethrough">hidden beauties</del>: I deserve a golden crown</line>
-    <line>from his descendants{.--} <hi rend="underline">Soc</hi>. And I will</line>
-    <line>[?<del rend="strikethrough">make</del>] find leisure some day or other</line>
+    <line>have <del rend="strikethrough">added</del>
+      <mod>
+        <del rend="strikethrough">adorned</del>
+        <add place="superlinear">illustrated</add>
+      </mod> Homer<del rend="unmarked">,</del>
+      <mod spanTo="#e1-0036.02"/><delSpan spanTo="#e1-0036.01" rend="strikethrough"/><unclear
+        reason="illegible">revealing</unclear> his</line>
+    <line>hidden beauties<anchor xml:id="e1-0036.01"/><mod>
+        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
+            >of</unclear></add></del>
+        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
+              >from</unclear></add></del>
+        <add place="superlinear">the hidden beauties</add>
+      </mod><anchor xml:id="e1-0036.02"/><add>:</add> I deserve a golden crown</line>
+    <line>from his descendants<unclear reason="illegible">.&#8212;</unclear>
+      <milestone unit="tei:speaker" spanTo="#e1-0036.05"/><hi rend="underline">Soc</hi>.<anchor
+        xml:id="e1-0036.05"/> And I will</line>
+    <line><del rend="strikethrough"><mod>
+          <del rend="overwritten">seek</del>
+          <add place="intralinear">make</add>
+        </mod></del> find l<mod>
+        <del rend="overwritten">ie</del>
+        <add place="intralinear">ei</add>
+      </mod>sure some day or other</line>
     <line>to request you to give me a specimen</line>
-    <line><del rend="strikethrough">of this art</del>; at present [?<del rend="strikethrough">pres</del>] I will</line>
-    <line>only trouble you with one question.--</line>
+    <line><del rend="strikethrough">of this art</del>; at present <del rend="strikethrough"><unclear
+          reason="illegible">pres</unclear></del> I will</line>
+    <line>only trouble you with one question.&#8212;</line>
     <line>Are you <del rend="strikethrough">only powerful in</del> excellent</line>
-    <line>alone</line>
-    <line><del rend="strikethrough">alone</del> in explaining Homer, or are</line>
+    <line><del rend="strikethrough">alone</del> in explaining Homer <add place="superlinear"
+        >alone</add>, or are</line>
     <line>you conscious of the same power</line>
   </zone>
 </surface>

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0021" ulx="0" uly="0" lrx="5368" lry="7104"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="11r" partOf="ox-frankenstein_notebook_b.xml#ox-frankenstein_volume_ii">
@@ -15,7 +14,7 @@
     <line>their harsh <del rend="strikethrough">and rud</del> manners &amp; rude</line>
     <line>gait only enhanced to me <del rend="strikethrough">th</del>
       <del rend="strikethrough">my friends</del></line>
-    <line>the superior advantages of m<retrace hand="#pbs" cause="clarify">y</retrace>
+    <line>the superior advantages of m<retrace hand="#pbs" cause="unclear">y</retrace>
       friends.</line>
     <line>The <del rend="strikethrough">Father</del> old man, I could percieve,</line>
     <line>often endeavoured to encourage his</line>

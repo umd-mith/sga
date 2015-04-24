@@ -1,43 +1,58 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0025" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0025" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0025.jp2"/>
-  <zone type="library">12</zone>
+  <zone type="library">
+    <line rend="right">12</line>
+  </zone>
   <zone type="main">
     <line rend="indent1">A spirit from my heart bursts forth</line>
     <line rend="indent1">It clothes with unexpected birth</line>
     <line>My cold bare bosom&#x2014; oh, it must be thine</line>
     <line rend="indent2">On mine, on mine!</line>
     <line rend="indent1">Gazing on thee I feel I know</line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0025.01"/>Green stalks burst forth,
-      &amp; bright flowers</line>
-    <line rend="right">grow<anchor xml:id="e1-0025.01"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0025.01"/>
+    <line rend="indent1">Green stalks burst forth, &amp; bright flowers</line>
+    <line rend="right">grow</line>
+    <anchor xml:id="e1-0025.01"/>
     <line>And living shapes upon my bosom move</line>
     <line rend="indent1">Music is in the sea &amp; air</line>
     <line rend="indent1">Winged clouds soar here &amp; there</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0025.02"/>Dark with the rain new buds are
-      dreaming</line>
-    <line rend="right">of<anchor xml:id="e1-0025.02"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0025.02"/>
+    <line>Dark with the rain new buds are dreaming</line>
+    <line rend="right">of</line>
+    <anchor xml:id="e1-0025.02"/>
     <line rend="indent2">'Tis Love, all Love!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0025.03"/>
-    <line rend="center">The Earth</line>
+    <line rend="center"><hi rend="underline">The Earth</hi></line>
     <anchor xml:id="e1-0035.03"/>
     <line>It interpenetrates my granite mass</line>
     <line>Through tangled roots &amp; trodden clay doth pass</line>
-    <line>Into the utmost leaves &amp; delicat<unclear>es</unclear>t
-        flowers<unclear>&#x2014;</unclear></line>
+    <line>Into the <mod>
+        <del rend="overwritten">in</del>
+        <add place="intralinear">ut</add>
+      </mod>most leaves &amp; delicat<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">es</add>
+      </mod>t flowers<unclear reason="illegible">&#x2014;</unclear></line>
     <line rend="indent1">Upon the winds, among the clouds 'tis spread</line>
     <line rend="indent1">It wakes a life in the forgotten dead</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0025.04"/>They breathe a spirit up from their</line>
+    <milestone unit="tei:l" spanTo="#e1-0025.04"/>
+    <line>They breathe a spirit up from their</line>
     <line rend="right">obscurest <mod>
         <del rend="overwritten">p</del>
         <add place="intralinear">b</add>
-      </mod>owers<anchor xml:id="e1-0025.04"/></line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0025.05"/>And like a storm, bursting
-      its cloudy</line>
-    <line rend="right">prison<anchor xml:id="e1-0025.05"/></line>
-    <line rend="indent1">With thunder &amp; with whirlwind, has arisen</line>
+      </mod>owers</line>
+    <anchor xml:id="e1-0025.04"/>
+    <milestone unit="tei:l" spanTo="#e1-0025.05"/>
+    <line rend="indent1">And like a storm, bursting its cloudy</line>
+    <line rend="right">prison</line>
+    <anchor xml:id="e1-0025.05"/>
+    <milestone unit="tei:l" spanTo="#e1-0025.06"/>
+    <line rend="indent1">With thunder &amp; with whirlwind, has</line>
+    <line rend="right">arisen</line>
+    <anchor xml:id="e1-0025.06"/>
   </zone>
 </surface>

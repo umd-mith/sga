@@ -1,35 +1,50 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0044" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0044" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0044.jp2"/>
+  <zone type="pagination">
+    <line rend="center">4</line>
+  </zone>
   <zone type="main">
-    <line>4</line>
     <line>Whose many-voiced Echoes thro the mist</line>
     <line>Of cataracts, flung the thunder of that spell;</line>
     <line>Ye icy Springs stagnant with wrinkling frost</line>
     <line>Which vibrated to hear me, &amp; then crept</line>
-    <line>Shuddering through India; Thou <del rend="strikethrough">pure</del></line>
-    <line>serenest Air</line>
-    <line>Through which the Sun walks burning without</line>
-    <line>beams,</line>
+    <line>Shuddering through India; <del rend="strikethrough">&amp;</del>
+      <mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">T</add>
+      </mod>hou <mod>
+        <del rend="strikethrough">pure</del>
+        <add place="sublinear">serenest Air</add>
+      </mod></line>
+    <milestone unit="tei:l" spanTo="#e1-0044.01"/>
+    <line>Through which the <unclear reason="case">S</unclear>un walks burning without</line>
+    <line rend="right">beams,</line>
+    <anchor xml:id="e1-0044.01"/>
     <line>And ye swift Whirlwinds who on poised wings</line>
     <line>Hung mute &amp; moveless oer yon hushed abyss</line>
     <line>As thunder louder than your own made rock</line>
-    <line>The orbed world -- if then my words had power,</line>
-    <line>--Though I am changed so that aught evil wish</line>
+    <line>The orbed world &#8212; if then my words had power,</line>
+    <line>&#8212;Though I am changed so that aught evil wish</line>
     <line>Is dead within, although no memory be</line>
-    <line>Of what is hate -- let them not lose it now!</line>
+    <line>Of what is hate &#8212; let them not lose it now!</line>
     <line>What was that curse? for ye all heard me speak</line>
     <line>!</line>
-    <line>1<hi rend="superscript">t</hi> Voice from the Mountains</line>
-    <line>Thrice three hundred thousand years</line>
-    <line>Oe'r the Earthquakes couch we stood;</line>
-    <line>Oft as men convulsed with fears</line>
-    <line>We trembled in our multitude.</line>
-    <line>2 Voice from the Springs</line>
-    <line>Thunderbolts had parched our water,</line>
-    <line>78 We had been stained with bitter blood</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0044.02"/>
+    <line rend="center">1<hi rend="sup">st</hi>. Voice from the Mountains</line>
+    <anchor xml:id="e1-0044.02"/>
+    <line rend="indent1">Thrice three hundred thousand years</line>
+    <line rend="indent2">Oe'r the Earthquakes couch we stood;</line>
+    <line rend="indent1">Oft as men convulsed with fears</line>
+    <line rend="indent2">We trembled in our multitude.</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0044.03"/>
+    <line rend="center">2<hi rend="sup">d</hi>. Voice from the Springs</line>
+    <anchor xml:id="e1-0044.03"/>
+    <line rend="indent1">Thunderbolts had parched our water,</line>
+    <line rend="indent1"><add><metamark function="count">78</metamark></add> We had been stained
+      with bitter blood</line>
   </zone>
 </surface>

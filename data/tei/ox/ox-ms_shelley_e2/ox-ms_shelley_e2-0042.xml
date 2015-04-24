@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0042" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0042.jp2"/>
@@ -13,7 +13,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0042.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0042.02"/>
-    <line>Hast thou forgotten one who watches thee</line>
+    <line>Hast thou forgotten one who watch<retrace cause="unclear">es</retrace> thee</line>
     <line>The cold dark night, &amp; never sleeps but when</line>
     <line>The shadow of thy spirit<del rend="strikethrough">s</del> falls on her?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0042.03"/>
@@ -31,23 +31,25 @@
     <line rend="right"><del rend="strikethrough" xml:id="e2-0042.07">pale</del><anchor
         xml:id="e2-0042.06"/></line>
     <anchor xml:id="e2-0042.05"/>
-    <line>And Asia waits in that far Indian vale</line>
-    <line>The scene of her sad exile&#8212;<mod spanTo="#e2-0042.08"/><delSpan rend="strikethrough"
-        spanTo="#e2-0042.09"/>tho her presence</line>
-    <milestone unit="tei:l" spanTo="#e2-0042.10"/>
+    <line>And Asia waits in that far Indian <mod>
+        <del rend="overwritten">w</del>
+        <add place="intralinear">v</add>
+      </mod>ale</line>
+    <line>The scene of her sad exile&#8212;<anchor xml:id="e2-0042.08"/><delSpan
+        rend="strikethrough" spanTo="#e2-0042.09"/>tho her presence</line>
     <line>Makes fruits &amp; flowers &amp; sunwarm winds,<anchor xml:id="e2-0042.09"/>
       <mod>
         <del rend="strikethrough">&amp; sounds</del>
         <del rend="strikethrough"><add place="sublinear">smooth oer</add></del>
       </mod></line>
-    <line rend="indent5"><add>rugged once</add></line>
-    <anchor xml:id="e2-0042.10"/><anchor xml:id="e2-0042.08"/>
-    <line>And desolate &amp; frozen like this ravine;</line>
+    <line rend="indent5"><milestone unit="tei:seg" spanTo="#e2-0042.10" corresp="#e2-0042.08"
+        /><add>rugged once</add><anchor xml:id="e2-0042.10"/></line>
+    <line>And desolate &amp; fro<retrace cause="unclear">zen</retrace> like this ravine;</line>
     <line>But now invested with fair flowers &amp; herbs</line>
     <line>And haunted by sweet air's &amp; sounds, which flow</line>
     <line>Among the woods &amp; waters: from the ether</line>
     <line>Of her transforming presence&#8212;which would fade</line>
     <line>If it were mingled not with thine&#8212;farewell</line>
-    <line><add><metamark function="count">818.</metamark></add></line>
+    <line rend="left"><add><metamark function="count">818.</metamark></add></line>
   </zone>
 </surface>

@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0016" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0016" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0016.jp2"/>
   <zone type="main">
     <line rend="indent3"><del rend="smear">P.</del></line>
-    <line>How every pause is filled with under<unclear>-</unclear> notes</line>
+    <line>How every pause is filled with under<unclear reason="illegible">-</unclear> notes</line>
     <line>Clear, silver, icy, keen, awakening tones</line>
-    <line>Which pierce the sense &amp; live within the soul</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0016.01"/>As the sharp stars pierce Winters
-      chrystal</line>
-    <line rend="right">air<anchor xml:id="e1-0016.01"/></line>
+    <line>Which pierce the sense &amp; live within the <unclear reason="case">s</unclear>oul</line>
+    <milestone unit="tei:l" spanTo="#e1-0016.01"/>
+    <line>As the sharp stars pierce Winters chrystal</line>
+    <line rend="right">air</line>
+    <anchor xml:id="e1-0016.01"/>
     <line>And gaze upon themselves within the sea.</line>
-    <metamark><!--large double slash that extends to bottom left corner of page--></metamark>
+    <!--large double slash that extends to bottom left corner of page-->
   </zone>
 </surface>

@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0008" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0008" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0008.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0008.01"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0008.01"/>
-    <line>What charioteers are these</line> <milestone unit="tei:speaker" spanTo="#e1-0008.02"
-        />Panthea<anchor xml:id="e1-0008.02"/> 
-    <line rend="right">Where are their chariots?</line>
-    <milestone unit="tei:speaker" spanTo="#e1-0008.03"/>
-    <line rend="indent3"><del rend="strikethrough">Chorus o<metamark>&lt;</metamark></del></line>
-    <line rend="center">Semichorus of Hours. 1.</line>
+    <line>What charioteers are th<mod>
+        <del rend="overwritten">eye</del>
+        <add place="intralinear">ese</add>
+      </mod></line>
+    <line rend="indent4"><milestone unit="tei:speaker" spanTo="#e1-0008.02"/>Panthea<anchor
+        xml:id="e1-0008.02"/> Where are their chariots?</line>
+    <line rend="indent3"><del rend="strikethrough"><milestone unit="tei:speaker"
+          spanTo="#e1-0008.03"/>Chorus <unclear reason="illegible">o</unclear><anchor
+          xml:id="e1-0008.03"/><metamark function="insert">&lt;</metamark></del></line>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.10"/>
+    <line rend="center">Semichorus <mod>
+        <del rend="overwritten">1</del>
+        <add place="intralinear">o</add>
+      </mod>f Hours. 1.</line>
+    <anchor xml:id="e1-0008.10"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0008.11"/>
     <line rend="center"><del rend="strikethrough">Semichorus 1</del></line>
-    <anchor xml:id="e1-0008.03"/>
+    <anchor xml:id="e1-0008.11"/>
     <line rend="indent2">The voice of the Spirits of air &amp; earth</line>
     <line rend="indent2">Have drawn back the figured curtain of sleep</line>
     <line rend="indent2">Which covered our being &amp; darkened our birth</line>
@@ -23,11 +33,11 @@
     <milestone unit="tei:speaker" spanTo="#e1-0008.04"/>
     <line rend="center">a Voice</line>
     <anchor xml:id="e1-0008.04"/>
-    <line rend="indent4">In the deep?</line>
+    <line rend="indent3">In the deep?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0008.05"/>
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e1-0008.05"/>
-    <line rend="indent5">Oh below the deep</line>
+    <line rend="indent4">Oh below the deep</line>
     <milestone unit="tei:speaker" spanTo="#e1-0008.06"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0008.06"/>
@@ -36,7 +46,7 @@
         <del rend="strikethrough">dreams</del>
         <add place="superlinear">visions</add>
       </mod> of hate &amp; <del rend="strikethrough"><unclear unit="chars" extent="1"/></del>
-      care</line>
+        car<retrace cause="unclear">e</retrace></line>
     <line><milestone unit="tei:l" spanTo="#e1-0008.09"/>And each one who waked as his brother</line>
     <line rend="right">slept<anchor xml:id="e1-0008.09"/></line>
     <line>Found the truth&#x2014;</line>
@@ -47,7 +57,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0008.08"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0008.08"/>
-    <line>We have heard the lute of Hope in sleep</line>
+    <line>We have heard the lute of <note reason="case">H</note>ope in sleep</line>
     <line>We have known the voice of love in dream</line>
   </zone>
 </surface>

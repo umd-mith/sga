@@ -1,34 +1,50 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0085" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0085" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0085.jp2"/>
+  <zone type="library">
+    <line rend="right">42</line>
+  </zone>
   <zone type="main">
-    <line>42</line>
-    <line>on this diversity of power.</line>
+    <line><del rend="strikethrough">on this diversity of power.</del></line>
     <line>I will tell you o Ion what appears</line>
     <line>to me to be the cause of this</line>
     <line>inequality of power. It is not</line>
     <line>that you are possessed of any</line>
     <line>science for the illustration of Homer;</line>
     <line>but a divine influence moves</line>
-    <line>?</line>
-    <line>x Thou knowest not the period of Joves power?</line>
+    <line><add><metamark function="displacement">x</metamark><metamark><hi rend="sup"
+          >?</hi></metamark></add>
+      <milestone unit="tei:seg" spanTo="#e1-0085.03" corresp="#e1-0084.08"/>Thou knowest not the
+      period of Joves power?<anchor xml:id="e1-0085.03"/></line>
     <line><del rend="strikethrough">Thou canst not count thy years to come of pain?</del></line>
-    <line><hi rend="underline">Mer</hi>cury</line>
-    <line>alas,</line>
-    <line>xThou canst not count thy years to come of pain?</line>
-    <line>Prometheus</line>
+    <milestone unit="tei:seg" spanTo="#e1-0085.04" corresp="#e1-0084.09"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0085.02"/>
+    <line rend="center"><hi rend="underline">Mer</hi>cury</line>
+    <anchor xml:id="e1-0085.02"/>
+    <line rend="indent5">alas,</line>
+    <line><add><metamark function="displacement">x</metamark></add>Thou canst not count thy years to
+      come of pain?</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0085.01"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0085.01"/>
     <line>They last while Jove must reign, nor more nor less</line>
-    <line>Do I desire or fear{.}</line>
+    <line>Do I desire or fear<unclear reason="illegible">.</unclear></line>
+    <anchor xml:id="e1-0085.04"/>
     <line>you, a power like that which</line>
     <line><del rend="strikethrough">Euripides</del> resides in the stone called</line>
     <line>magnet by Euripides &amp; heracleia</line>
-    <line>by the people. For this stone <del rend="strikethrough">[?not]</del></line>
+    <line>by the people. For this stone <del rend="strikethrough"><unclear reason="illegible"
+          >not</unclear></del></line>
     <line><del rend="strikethrough">not</del> only attracts iron rings, but</line>
-    <line>[<del rend="strikethrough">in</del>] to them</line>
-    <line><del rend="strikethrough">endows</del> <del rend="strikethrough">them</del> communicates power</line>
-    <line>^</line>
+    <line><del rend="strikethrough">endows</del><del rend="strikethrough"><add place="superlinear"
+            ><unclear reason="illegible">in</unclear></add></del>
+      <del rend="strikethrough">them</del> communicates<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">to them</add>
+      </mod> power</line>
+    <line/>
   </zone>
 </surface>

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0006" ulx="0" uly="0" lrx="5368" lry="7104"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="3v" partOf="ox-frankenstein_notebook_b.xml#ox-frankenstein_volume_ii">
@@ -47,7 +46,7 @@
       </mod> lamented the</line>
     <line>loss of my fire&#x2013;I had obtained it <del rend="strikethrough">by</del> by
       strange</line>
-    <line>means and knew not how <add place="superlinear">to re</add><retrace cause="clarify"
+    <line>means and knew not how <add place="superlinear">to re</add><retrace cause="unclear"
         >p</retrace>roduce it. <del rend="strikethrough">by myself</del></line>
     <line><mod>
         <del rend="strikethrough">This</del>

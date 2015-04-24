@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0048" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0048" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0048.jp2"/>
   <zone type="pagination">
     <line rend="center">6</line>
-    </zone>
+  </zone>
   <zone type="main">
     <line>And heard, &#x26; cried &#x2014; ah woe is me!</line>
     <line>And died as mad as the wild waves be</line>
@@ -16,31 +16,69 @@
     <line>By such dread words from Earth to Heaven</line>
     <line>My still realm was never riven</line>
     <line rend="indent1">When its wound was closed, there stood</line>
-    <line rend="indent1">Darkness oer the Day, like blood.</line>
+    <line rend="indent1">Darkness oer the Day<unclear reason="illegible">,</unclear> like
+      blood.</line>
     <milestone unit="tei:speaker" spanTo="#e1-0048.02"/>
     <line rend="center">4</line>
     <anchor xml:id="e1-0048.02"/>
-    <line rend="indent1">And we shrank back &#x2014; for dreams of ruin</line>
+    <line rend="indent1">And we sh<unclear reason="illegible">ra</unclear>nk back &#x2014; for
+      dreams of ruin</line>
     <line rend="indent1">To frozen caves our flight pursuing</line>
-    <line rend="indent1">Made us keep silence&#x2014;thus&#x2014;&#x26; thus&#x2014;</line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0048.05"/>Though silence is as hell to us</line>
-    <line rend="right">they pass with a terrible sound<anchor xml:id="e1-0048.05"/></line>
+    <line rend="indent1">Ma<mod>
+        <del rend="overwritten">ke</del>
+        <add place="intralinear">de</add>
+      </mod> us keep silence&#x2014;thus&#x2014;&#x26; thus&#x2014;</line>
+    <line rend="indent1">Though silence is <unclear reason="illegible">as</unclear> hell to
+      us</line>
+    <milestone unit="tei:stage" spanTo="#e1-0048.05"/>
+    <line rend="indent2">they pass with a terrible sound</line>
+    <anchor xml:id="e1-0048.05"/>
+    <anchor xml:id="e1-0048.06"/>
     <milestone unit="tei:speaker" spanTo="#e1-0048.03"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0048.03"/>
     <line>I hear a sound of voices &#x2014; not the voice</line>
-    <line>Which I gave forth. <delSpan rend="strikethrough" spanTo="#e1-0048.04"/>O Mother dare thy sons</line>
+    <line>Which I gave forth. <delSpan rend="strikethrough" spanTo="#e1-0048.04"/>O Mother dare thy
+      sons</line>
     <line><del rend="strikethrough">under</del></line>
-    <line>Scorn him without whom, by<add place="superlinear"><del rend="strikethrough">under</del></add> the might of Jove<anchor xml:id="e1-0048.04"/></line>
-    <!-- Do we need an additional del tag within a delSpan for superlinear additions?  I woud think not, but since the delSpan isn't displaying, I put one in anyway.
-    I figured it was better to be redundant than incorrect. -->
+    <line>Scorn him without whom, by<add place="superlinear"><del rend="strikethrough"
+        >under</del></add> the might of Jove</line><anchor xml:id="e1-0048.04"/>
+    <anchor xml:id="e1-0048.07"/>
     <line>Both they &#x26; thou had vanished like thin mist</line>
-    <line>Unrolled on the morning wind<del rend="overwritten">?</del>!&#x2014;Know <del rend="strikethrough">they</del><add place="superlinear">ye me</add> not</line>
-    <line>The Titan, he who made his <del rend="strikethrough">su</del> <del rend="strikethrough">misery</del><add place="superlinear">agony</add></line>
-    <line>The barrier to <del rend="strikethrough">thier</del><add place="superlinear">your</add> else all conquering foe?</line>
-    <line><del rend="strikethrough">Ye</del><add place="superlinear">O</add> rock-embosomed Lawns &#x26; snow<del rend="strikethrough">ing</del><add place="superlinear">-fed</add> stream,</line>
+    <line>Unrolled on the morning wind<mod>
+        <del rend="overwritten">?</del>
+        <add place="intralinear">!</add>
+      </mod>&#x2014;<mod>
+        <del rend="overwritten">k</del>
+        <add place="intralinear">K</add>
+      </mod>now <mod>
+        <del rend="strikethrough">they</del>
+        <add place="superlinear">ye</add>
+      </mod> not<add place="superlinear">me</add></line>
+    <line>The Titan, he who made his <del rend="strikethrough">su</del>
+      <mod>
+        <del rend="strikethrough">misery</del>
+        <add place="superlinear">agony</add>
+      </mod></line>
+    <line>The barrier to <mod>
+        <del rend="strikethrough">thi<mod>
+            <del rend="overwritten">ne</del>
+            <add place="intralinear">er</add>
+          </mod></del>
+        <add place="superlinear"><mod>
+            <del rend="overwritten"><unclear reason="illegible">man</unclear></del>
+            <add place="intralinear">your</add>
+          </mod></add>
+      </mod> else all conquering foe?</line>
+    <line rend="left"><add><metamark function="count">113</metamark></add>
+      <mod>
+        <del rend="strikethrough">Ye</del>
+        <add place="superlinear">O</add>
+      </mod> rock-embosomed Law<unclear reason="illegible">n</unclear> &#x26; snow<del
+        rend="strikethrough">ing</del><add place="superlinear">-fed</add> stream<unclear
+        reason="illegible">s</unclear></line>
   </zone>
-  <zone type="pagination">
-    <line rend="left">113</line>
-  </zone>
+
+
+
 </surface>

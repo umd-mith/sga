@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c56-0077" ulx="0" uly="0" lrx="5364" lry="7104"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="36r" partOf="#ox-frankenstein_volume_i">
@@ -60,7 +59,7 @@
     <line>"for them time is the<del rend="vertical_line">ir</del> only consolation.</line>
     <line>"Those maxims of the stoics that death</line>
     <line>"was no evil and that the mind of man</line>
-    <line>"ought to be sup<retrace cause="clarify">er</retrace>ior to <del rend="strikethrough"
+    <line>"ought to be sup<retrace cause="unclear">er</retrace>ior to <del rend="strikethrough"
         >that</del> despair</line>
     <line>"on the eternal absence of a beloved</line>
     <line>"object ought not to be urged &#x2013; even</line>

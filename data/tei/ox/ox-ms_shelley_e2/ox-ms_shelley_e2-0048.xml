@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0048" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0048.jp2"/>
@@ -19,12 +19,18 @@
     <line>Locked then as now behind my dark moist hair</line>
     <line>While my shut eyes &amp; cheek were pressed within</line>
     <line>The folded depth of her life-breathing bosom . . .</line>
-    <line>But not as now since I am made the wind</line>
+    <line><mod>
+        <del rend="overwritten">Not</del>
+        <add place="intralinear">But</add>
+      </mod> not as now since I am made the wind</line>
     <line>Which fails beneath the music that I bear</line>
     <line>Of thy most wordless converse; since dissolved</line>
     <line>Into the sense with which love talks, my rest</line>
     <line>Was troubled &amp; yet sweet&#8212;my waking hours</line>
-    <line>Too full of care &amp; pain.</line>
+    <line>Too full of care &amp; <mod>
+        <del rend="overwritten">woe</del>
+        <add place="intralinear">pain</add>
+      </mod>.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0048.04"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0048.04"/>
@@ -35,7 +41,7 @@
     <anchor xml:id="e2-0048.05"/>
     <line rend="indent5">As I have said</line>
     <line>With our sea-sister at his feet I slept</line>
-    <line>The mountain-mists condensing at our voice</line>
+    <line>The mountain-mists condensing at our <unclear reason="case">v</unclear>oice</line>
     <line>Under the moon, had spread their snowy flakes</line>
     <line>From the keen ice sh <unclear reason="illegible">ei</unclear>lding our linked
       sleep....</line>

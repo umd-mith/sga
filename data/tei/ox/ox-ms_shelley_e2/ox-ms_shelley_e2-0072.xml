@@ -1,31 +1,37 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0072" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0072" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0072.jp2"/>
   <zone type="main">
-    <line>Semichorus 1.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0072.01"/>
+    <line rend="center">Semichorus 1.</line>
+    <anchor xml:id="e2-0072.01"/>
     <line>There those inchanted eddies play</line>
     <line>Of echoes music-tongued, which draw</line>
     <line>By Demogorgons mighty law</line>
     <line>With melting rapture or deep awe</line>
-    <line>All spirits on that secret way,</line>
+    <line>All <unclear reason="illegible">s</unclear>pirits on that secret way,</line>
     <line>As inland boats are driven to Ocean</line>
     <line>Down streams made strong with mountain thaw;</line>
     <line>And first there comes a gentle sound</line>
     <line>To those in talk or slumber bound</line>
     <line>And wakes the destined&#8212;soft emotion</line>
     <line>Attracts, impels them: those who saw</line>
-    <line>breathing</line>
-    <line>Say from the <del rend="strikethrough">steaming</del>  Earth behind</line>
-    <line>There steams a plume-uplifting wind</line>
-    <line>Which drives them on their path, while</line>
-    <line>they</line>
+    <line><unclear reason="illegible">S</unclear>ay from the <mod>
+        <del rend="strikethrough">steaming</del>
+        <add place="superlinear">breathing</add>
+      </mod> Earth behind</line>
+    <line><mod>
+        <del rend="overwritten">Th</del>
+        <add place="intralinear">Th<unclear reason="illegible">ere</unclear></add>
+      </mod> steams a plume-uplifting wind</line>
+    <line>Which drives them on their path, while they</line>
     <line>Believe their own swift wings &amp; feet</line>
     <line>The sweet desire <unclear>s</unclear> within obey</line>
-    <line>And so they float upon their way</line>
-    <line>Until still sweet but loud &amp; strong</line>
+    <line rend="indent1">And so they float upon their way</line>
+    <line rend="indent1">Until still sweet but loud &amp; st<retrace cause="unclear"
+      >r</retrace>ong</line>
   </zone>
 </surface>
-

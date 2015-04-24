@@ -1,45 +1,76 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0027" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0027" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0027.jp2"/>
-  <zone type="library">11</zone>
+  <zone type="library"><line rend="right">11</line></zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0027.01"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0027.01"/>
-    <line>You <del rend="strikethrough">say</del> said that Spirits <mod><del rend="strikethrough">speak</del> <add place="superlinear">spoke</add></mod>, but it was thee</line>
+    <line>You <del rend="strikethrough">say</del> said that Spirits <mod>
+        <del rend="strikethrough">speak</del>
+        <add place="superlinear">spoke</add>
+      </mod>, but it was thee</line>
     <line>Sweet sister, for even now thy curved lips</line>
     <line>Tremble as if the sound were dying there</line>
     <line>Not dead</line>
     <milestone unit="tei:speaker" spanTo="#e3-0027.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e3-0027.02"/>
-    <line rend="indent3">Alas it <mod><del rend="strikethrough">is</del><add place="superlinear">was</add></mod> Prometheus 
-      <mod><del rend="strikethrough">speaks</del><add place="superlinear">spoke</add></mod></line>
-    <line>Within me, <del rend="strikethrough">if I spoke</del>, &amp; <mod><del rend="strikethrough">even now it</del><add place="superlinear">and I know</add></mod> it must be so</line>  
-    <line>I mixed my own weak nature with his love</line>
-    <line>And</line>
+    <line rend="indent3">Alas it <mod>
+        <del rend="strikethrough">is</del>
+        <add place="superlinear">was</add>
+      </mod> Prometheus <mod>
+        <del rend="strikethrough">speaks</del>
+        <add place="superlinear">spoke</add>
+      </mod></line>
+    <line>Within me, <del rend="strikethrough">if I spoke</del>, &amp; <mod>
+        <del rend="strikethrough">even now it</del>
+        <add place="superlinear">and I know</add>
+      </mod> it must be so</line>
+    <line>I mixed my own weak nature with his <mod>
+        <del rend="overwritten">life</del>
+        <add place="intralinear">love</add>
+      </mod></line>
+    <line><add>An<retrace cause="unclear">d</retrace></add></line>
     <line rend="indent4">And my thoughts</line>
     <line rend="indent1">Are like the many forests of a vale</line>
     <line rend="indent1">Through which the might of whirlwind &amp; of rain</line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e3-0027.03"/>Ha<unclear>d</unclear> passed <del rend="strikethrough">bu</del> <del rend="strikethrough">and</del> they 
-      <mod><del rend="strikethrough">glimmer</del> <add place="superlinear">rest <del rend="smear">rest</del></add></mod></line>   
+    <milestone unit="tei:l" spanTo="#e3-0027.03"/>
+    <line rend="indent1">Ha<mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">d</add>
+      </mod> pas<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">sed</add>
+      </mod>
+      <del rend="strikethrough">bu</del>
+      <del rend="strikethrough">and</del> they <mod>
+        <del rend="strikethrough">glimmer</del>
+        <add place="superlinear">rest <del rend="smear">rest</del></add>
+      </mod></line>
     <line rend="indent4"><del rend="strikethrough">glimmer</del> through the</line>
-    <line rend="right">evening light</line><anchor xml:id="e3-0027.03"/> 
+    <line rend="right">evening light</line>
+    <anchor xml:id="e3-0027.03"/>
     <line rend="indent1">As Imine do now in thy beloved smile.</line>
     <milestone unit="tei:speaker" spanTo="#e3-0027.04"/>
     <line rend="center">Asia</line>
-    <anchor xml:id="e3-0027.04"/> 
+    <anchor xml:id="e3-0027.04"/>
     <line rend="indent1">My soul is an enchanted Boat</line>
-    <line rend="indent1">Which, like a sleeping swan, doth float</line>
+    <line rend="indent1">Which, li<mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">k</add>
+      </mod>e a sleeping swan, doth <unclear reason="illegible">f</unclear>loat</line>
     <line>Upon the silver waves of thy sweet singing,</line>
     <line rend="indent1">And thine doth like an Angel sit</line>
     <line rend="indent1">Beside the helm conducting it</line>
     <line>Whilst all the winds with melody are ringing</line>
-    <line>It seems to float ever&#8212;forever&#8212;</line>
-    <line rend="indent1"><mod><del rend="strikethrough">Betwee</del> <add place="superlinear">Upon</add></mod> that many winding River</line>
+    <line rend="indent1">It seems to float ever&#8212;forever&#8212;</line>
+    <line rend="indent1"><mod>
+        <del rend="strikethrough">Betwee</del>
+        <add place="superlinear">Upon</add>
+      </mod> that many winding River</line>
   </zone>
 </surface>
-

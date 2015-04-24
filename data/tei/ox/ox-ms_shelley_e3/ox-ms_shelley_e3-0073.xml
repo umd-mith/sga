@@ -1,36 +1,82 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0073" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0073" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0073.jp2"/>
-  <zone type="library">34</zone>
-  <zone type="main">
-    <line><del rend="strikethrough">chariot</del></line>
-    <line></line>
-    <line>And when my moonlike <mod><del rend="strikethrough">stands</del><add place="sublinear">^</add><add place="superlinear">car will stand<add place="superlinear"><del rend="strikethrough">chariot</del></add></add></mod>within</line>
-    <line>A temple, <del rend="strikethrough">underneath its hollow <add place="superlinear"><del rend="strikethrough">fretted</del></add>dome</del></line>
-    <line><del rend="strikethrough">Poised on twelve columns of resplendent stone,</del></line>
-    <line><del rend="strikethrough">And Around stand Asia &amp; the Earth &amp; thou</del></line>
-    <line><del rend="strikethrough">Prometheus, and the sisters of the Sea</del></line>
-    <line><del rend="strikethrough">In memory of the tidings it has borne</del></line>
-    <line><del rend="strikethrough">And</del> gazed upon by <mod><del rend="strikethrough">living statues</del><add place="superlinear">Phidian</add></mod> forms, <del rend="strikethrough">around</del></line>
-    <line>Of thee, and Asia &amp; the Earth, &amp; me</line>
-    <line>And<mod><del rend="strikethrough">thou</del><add place="sublinear">you</add></mod> fair nymphs, looking the love we feel</line>
-    <line>Beneath a dome <add place="superlinear"><del rend="strikethrough">which</del></add> fretted with <mod><del rend="strikethrough">carven</del><add place="superlinear">graven flowers</add></line>
-    <line>Poised on twelve columns of resplendent stone</line>
-    <line>And open to the <del rend="strikethrough"><unclear>all</unclear>-surrounding Heaven</del></line>
+  <zone type="library"><line rend="right">34</line></zone>
+  <zone type="main" corresp="#e3-0072.01">
+    <line><add><metamark function="displacement">&#60;</metamark></add>And when my moonlike<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <mod>
+          <add place="superlinear">car will stand</add>
+          <del rend="strikethrough"><add place="superlinear">chariot</add></del>
+        </mod>
+      </mod><del rend="strikethrough">stands</del> within</line>
+    <line>A temple, <delSpan spanTo="#e3-0073.04" rend="strikethrough"/>underneath its <mod>
+        <del rend="strikethrough">hollow</del>
+        <del rend="strikethrough"><add place="superlinear">fretted</add></del>
+      </mod>dome</line>
+    <line>Poised on twelve columns of resplende<unclear reason="illegible">n</unclear>t
+      stone,</line>
+    <line>And Around stand Asia &amp; the Earth &amp; thou</line>
+    <line>Prometheus, and the sisters of the Sea</line>
+    <line><mod>
+        <del rend="overwritten">For</del>
+        <add place="intralinear">In</add>
+      </mod> memory of the tidings it has borne</line>
+    <anchor xml:id="e3-0073.04"/>
+    <line><del rend="strikethrough">And</del> gazed upon by <mod>
+        <del rend="strikethrough">living statues</del>
+        <add place="superlinear">Phid<mod>
+            <del rend="overwritten">ine</del>
+            <add place="intralinear">ian</add>
+          </mod></add>
+      </mod> forms, <del rend="strikethrough">around</del></line>
+    <line>Of th<mod>
+        <del rend="overwritten">ou</del>
+        <add place="intralinear">ee</add>
+      </mod>, and <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>sia &amp; the Earth, &amp; me</line>
+    <line>A<unclear reason="illegible">n</unclear>d<mod>
+        <del rend="strikethrough">thou</del>
+        <add place="sublinear">yo<unclear reason="illegible">u</unclear></add>
+      </mod>
+      <mod>
+        <del rend="overwritten">y</del>
+        <add place="intralinear">f</add>
+      </mod>air nymphs,<del rend="strikethrough"><add place="sublinear">which</add></del> looking
+      the love we feel</line>
+    <anchor xml:id="e3-0073.03"/>
+    <line>Beneath a dome fretted with <mod>
+        <del rend="strikethrough">carven</del>
+        <add place="superlinear">graven flowers</add>
+      </mod></line>
+    <line>Poised on twelve columns of resplen<unclear reason="illegilbe">dent</unclear> stone</line>
+    <line rend="indent1">And open to the <del rend="strikethrough"><unclear reason="illegible"
+          >all</unclear>-surrounding Heaven</del><anchor xml:id="e3-0073.01"/></line>
+    <milestone unit="tei:seg" spanTo="#e3-0073.02" corresp="#e3-0073.03"/>
     <line>In memory of the tidings it has borne</line>
-    <line rend="indent1">Yoked to it by an amphisbaenic snake</line>
-    <line><metamark function="count">430</metamark><del rend="strikethrough">And Drawn by the likeness of those winged steeds</del></line>
+    <anchor xml:id="e3-0073.02"/>
+    <line rend="indent1">Yoked to it by an amphisb&#xE6;nic snake</line>
+    <line><add><metamark function="count">430</metamark></add><del rend="strikethrough">And</del>
+      <del rend="strikethrough">Drawn by the likeness of those <del rend="strikethrough">winged
+          steeds</del></del></line>
     <line>The likeness of those winged steeds will mock</line>
     <line>The flight from which they find repose&#8212;alas</line>
     <line><del rend="strikethrough">Withe</del> Wither has wandered now my partial tongue</line>
-    <line>When all remains unsaid which ye w.d hear!&#8212;</line>
+    <line>When all remains un<mod>
+        <del rend="overwritten">told</del>
+        <add place="intralinear">said</add>
+      </mod> which ye w.<hi rend="sup">d</hi> hear!&#8212;</line>
     <line>As I have said I floated to the Earth</line>
-    <line><hi rend="underline">?</hi> *</line>
-    <line><hi rend="underline">Yoked</hi></line>
-    </zone>
-  <zone type="left_margin" rotate="90">bright &amp; liquid sky</zone>
-</surface>
+    <line><add><metamark><hi rend="underline">? </hi>
+        </metamark><metamark function="separate">*</metamark></add></line></zone>
 
+  <zone type="bottom"><line>Y<hi rend="underline">oke</hi>d</line></zone>
+  <!-- Investigate what kind of encoding can describe a possible start-->
+
+  <zone type="left_margin" rotate="90" corresp="#e3-0073.01">bright &amp; liquid sky</zone>
+</surface>

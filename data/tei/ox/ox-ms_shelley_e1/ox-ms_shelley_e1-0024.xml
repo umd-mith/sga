@@ -1,40 +1,50 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0024" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0024" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0024.jp2"/>
   <zone type="main">
-    <line><milestone unit="tei:l" spanTo="#e1-0024.01"/>Threatenedst to muffle round with black
-      destruction,</line>
-    <line rend="right">sending<anchor xml:id="e1-0024.01"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0024.01"/>
+    <line>Threatenedst to muffle round with black destruction,</line>
+    <line rend="right">sending</line>
+    <anchor xml:id="e1-0024.01"/>
     <line rend="indent1">A solid cloud to rain hot thunderstones,</line>
     <line rend="indent1">And splinter &amp; knead down my childrens bones,</line>
     <line>All I bring forth, to one void mass battering &amp; blending</line>
     <line rend="indent1">Until each craglike tower &amp; storied column</line>
-    <line rend="indent1">Palace, &amp; <unclear>O</unclear>belisk &amp; Temple solemn</line>
+    <line rend="indent1">Palace, &amp; <unclear reason="case">O</unclear>belisk &amp; Temple
+      solemn</line>
     <line>My imperial mountains crowned with <mod>
         <del rend="strikethrough">ligh</del>
         <add place="sublinear">cloud &amp; snow &amp; fire,</add>
       </mod></line>
     <line rend="indent1">My sea-like forests, every blade &amp; blossom</line>
     <line rend="indent1">Which finds a grave or cradle on my bosom</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0024.02"/>Were stamped by thy strong hate into a
-      lifeless</line>
-    <line rend="right">mire<anchor xml:id="e1-0024.02"/></line>
-    <line><add><metamark function="separate">&#x2014;&#x2014;&#x2014;</metamark></add></line>
-    <line rend="indent1"><milestone unit="tei:l" spanTo="#e1-0024.03"/>How art thou sunk, withdrawn,
-      coverd&#x2014;</line>
-    <line rend="right">drunk up<anchor xml:id="e1-0024.03"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0024.02"/>
+    <line>Were stamped <unclear reason="illegible">b</unclear>y <mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">th</add>
+      </mod>y strong hate into a lifeless</line>
+    <line rend="right"><add><metamark function="separate">&#8970;</metamark></add>mire<anchor
+        xml:id="e1-0024.02"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0024.03"/>
+    <line rend="indent1">How art thou sunk, withdrawn, coverd&#x2014;</line>
+    <line rend="right">drunk up</line>
+    <anchor xml:id="e1-0024.03"/>
     <line rend="indent1">By thirsty nothing, as the brackish cup</line>
     <line>Drained by a Desart-troop&#x2014;a little drop for all!</line>
     <line rend="indent1">And from beneath, around, within, above,</line>
     <line rend="indent1">Filling thy void annihilation, Love</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0024.04"/>Bursts in like light on caves cloven
-      by</line>
-    <line rend="right">the thunderball<anchor xml:id="e1-0024.04"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0024.04"/>
+    <line>Bursts in like light on caves cloven by</line>
+    <line rend="right">the thunderball</line>
+    <anchor xml:id="e1-0024.04"/>
     <milestone unit="tei:speaker" spanTo="#e1-0024.05"/>
-    <line rend="indent3">The Moon</line>
+    <line rend="indent3">The <mod>
+        <del rend="overwritten">m</del>
+        <add place="intralinear">M</add>
+      </mod>oon</line>
     <anchor xml:id="e1-0034.05"/>
     <line rend="indent1">The Snow upon my lifeless mountains</line>
     <line rend="indent1">Is loosened into living fountains</line>

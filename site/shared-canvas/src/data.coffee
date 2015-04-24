@@ -85,6 +85,21 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
   class ParsedAnnos extends Backbone.Collection
     model: ParsedAnno
 
+  class SearchAnnos extends Annotations    
+    fetch : (manifest, filter, query, service="http://localhost:5000/annotate?")->
+      url = service + "f=" + filter + "&q=" + query
+      Backbone.ajax
+        url: url
+        type: 'GET'
+        contentType: 'application/json'
+        processData: false
+        dataType: 'json'
+        success: (data) => 
+          importSearchResults data, manifest
+        error: (e) -> 
+          throw new Error "Could not load search annotations"
+
+
   ## MANIFESTS ##
 
   class Manifest extends Backbone.Model
@@ -99,6 +114,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       @canvasesMeta = new CanvasesMeta
       @canvasesData = new CanvasesData
       @textFiles = new TextFiles
+      @resources = new Backbone.Collection
+      @searchResults = new SearchAnnos
 
     url : (u) ->
       return @get "url"
@@ -137,10 +154,11 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
   class CanvasData extends Backbone.Model
     idAttribute : "@id"
     initialize: ->
-      @contents  = new Contents
-      @images    = new Images
-      @zones     = new Zones
-      @SGAannos  = new Annotations  
+      @contents   = new Contents
+      @images     = new Images
+      @zones      = new Zones
+      @SGAannos   = new Annotations  
+      @layerAnnos = new Layers
 
     # We override fetch, since we actually fetch and re-organize
     # data from the parent Manifest model
@@ -208,13 +226,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         if "sc:Sequence" in types
           canvases = [node["first"]]
 
-          next_node = node
-          while next_node?
-            rest = next_node["rdf:rest"]
-            rest = [ rest ] if !$.isArray rest
-            next = rest[0]["@id"]
-            next_node = id_graph[next]
-            canvases.push next_node["first"] if next_node?
+          canvases = canvases.concat(node["rest"])
+
+          # next_node = node
+          # while next_node?
+          #   rest = next_node["rdf:rest"]
+          #   rest = [ rest ] if !$.isArray rest
+          #   next = rest[0]["@id"]
+          #   next_node = id_graph[next]
+          #   canvases.push next_node["first"] if next_node?
 
           manifest.sequences.add
             "@id"      : node["@id"]
@@ -226,7 +246,16 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           manifest.ranges.add node
 
         else if "sc:Canvas" in types
+          # also listing all sources of content annos targeting each canvas
+          # When the manifest gets split, we might need a specific list for this
           manifest.canvasesMeta.add node
+
+        else if "sc:ContentAnnotation" in types
+          manifest.resources.add 
+            "id" : node["@id"]
+            "on" : id_graph[node["on"]]["full"]
+            "resource" : id_graph[node["resource"]]["full"] 
+
 
   importCanvas = (canvas, manifest) ->
     # This method imports manifest level data and metadata   
@@ -263,12 +292,12 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           target : target["full"]
         if target["oa:hasStyle"]?
           styleItem = graph[target["oa:hasStyle"]["@id"]]
-          if "text/css" in styleItem["format"]
-            content.set
+          if "text/css" in SGASharedCanvas.Utils.makeArray(styleItem["format"])
+            model.set
               css : styleItem["chars"]
-        if target["oa:hasClass"]?
-          content.set
-            cssclass : target["oa:hasClass"]
+        if target["sga:hasClass"]?
+          model.set
+            cssclass : target["sga:hasClass"]
         extractSpatialConstraint model, target["selector"]
       else
         model.set
@@ -319,6 +348,10 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             # We could store attributes in an object and set them all together.
             canvas.contents.add content
 
+          # Get layer annotations
+          if node["sc:motivatedBy"]? and node["on"] == canvas_id
+            canvas.layerAnnos.add node
+
           # Get zones - *N.B. there are no zones in SGA*
           else if "sc:ZoneAnnotation" in types and graph[target]["full"] == canvas_id
             zone = new Zone
@@ -356,15 +389,33 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                 if s? and s not in sources
                   sources.push s
               
-              # filter annotations and store only those relevant to the current canvas
-              if graph[target]["full"] in sources
-                annotation = new Annotation
-                canvas.SGAannos.add annotation
+            # filter annotations and store only those relevant to the current canvas
+            # SGA
+      	    if graph[target]?
+              if graph[target].hasOwnProperty("full")
+                if graph[target]["full"] in sources
+                  annotation = new Annotation
+                  canvas.SGAannos.add annotation
+                  extractTextTarget annotation, target
+                  annotation.set 
+                    "@id"   : node["@id"]
+                    "@type" : node["@type"]
 
-                extractTextTarget annotation, target
-                annotation.set 
-                  "@id"   : node["@id"]
-                  "@type" : node["@type"]
+                  if node["sga:textIndentLevel"]?
+                    annotation.set
+                      "indent" : node["sga:textIndentLevel"]
+                  if node["sga:textAlignment"]?
+                    annotation.set
+                      "align" : node["sga:textAlignment"]
+                  if node["sga:spaceExt"]?
+                    annotation.set
+                      "ext" : node["sga:spaceExt"]
+
+                  # Import search result annotations for this canvas, if they exist
+                  if manifest.searchResults.length > 0
+                    manifest.searchResults.forEach (sa, i) ->
+                      if sa.get("target") in sources
+                        canvas.SGAannos.add sa
 
       # Now deal with highlights.
       # Each addition, deletion, etc., targets a scContentAnnotation
@@ -401,7 +452,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       loadedSources = manifest.textFiles
 
       for source in sources
-        do (source) ->
 
         # Store once the annotated text resource (TEI in SGA)
         loaded = loadedSources.where({target : target}).length > 0
@@ -421,7 +471,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             modIds = []
             br_pushed = false
 
-            pushTextItem = (classes, css, contentAnno, start, end, indent=null, aling=null) ->
+            pushTextItem = (classes, css, contentAnno, start, end, options) ->
               titem = new ParsedAnno
               titem.set 
                 type: classes
@@ -431,13 +481,15 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                 target: contentAnno.get("@id")
                 start: start
                 end: end
-              if indent? then titem.set {indent : indent}
-              if align? then titem.set {align : align}
+              if options.indent? then titem.set {indent : options.indent}
+              if options.align? then titem.set {align : options.align}
+              if options.ext? then titem.set {ext : options.ext}
               contentAnno.textItems.add titem                
             
             processNode = (start, end) ->
               classes = []
               css = []
+              options = {}
               for id in modIds
                 for t in SGASharedCanvas.Utils.makeArray modInfo[id].get "@type"
                   classes.push t.replace(":", "")
@@ -451,7 +503,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
               classes.push "Text" if classes.length == 0
 
-              makeTextItems start, end, classes, css
+              makeTextItems start, end, classes, css, options
 
             #
             # We run through each possible shared canvas
@@ -461,28 +513,32 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             # text source that the highlight is targeting in the
             # actual open annotation model.
             #
-            makeTextItems = (start, end, classes, css, indent, align) ->
+            makeTextItems = (start, end, classes, css, options) ->
               canvas.contents.forEach (c,i) ->
                 beginOffset = c.get "beginOffset"
                 endOffset = c.get "endOffset"
                 if start <= endOffset and end >= beginOffset
                   st = Math.min(Math.max(start, beginOffset), endOffset)
                   en = Math.max(Math.min(end, endOffset), beginOffset)
-                  pushTextItem classes, css, c, st, en, indent, align
+                  pushTextItem classes, css, c, st, en, options
               false
 
             #
             # A line break is just a zero-width annotation at
             # the given position.
             #
-            makeLinebreak = (pos, indent, align) ->
+            makeLinebreak = (pos, options) ->
               classes = [ "LineBreak" ]
-              makeTextItems pos, pos, classes, [ "" ], indent, align
+              makeTextItems pos, pos, classes, [ "" ], options
+
+            makeEmptyLine = (pos, options) ->
+              classes = [ "EmptyLine" ]
+              makeTextItems pos, pos, classes, [ "" ], options
 
             #
             mstarts = modstart[source] || []
             mends = modend[source] || []
-            last_pos = 0
+            last_pos = -1
             positions = (parseInt(p,10) for p of mstarts).concat(parseInt(p,10) for p of mends).sort (a,b) -> a-b
             for pos in positions
               if pos != last_pos
@@ -499,16 +555,49 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                     needs_br = true
                   idx = modIds.indexOf id
                   modIds.splice idx, 1 if idx > -1
-                if needs_br and not br_pushed
-                  indent = null
-                  align = null
-                  if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
-                  if modInfo[id].get("align")? then align = modInfo[id].get "align"
-                  makeLinebreak pos, indent, align
-                  br_pushed = true
+                  if needs_br and not br_pushed
+                    indent = null
+                    align = null
+                    if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
+                    makeLinebreak pos, {"indent":indent, "align":align}
+                    br_pushed = true
                 last_pos = pos
+              else if "sga:SpaceAnnotation" in modInfo[id].get "@type"
+                makeEmptyLine pos, {"ext": modInfo[id].get("ext")}
             processNode last_pos, text.length
 
       canvas.trigger 'fullsync'
+
+  importSearchResults = (graph, manifest) ->
+    # This method imports manifest level search data
+    manifest.ready ->
+
+      id_graph = {}
+
+      for node in graph["@graph"]
+        id_graph[node["@id"]] = node if node["@id"]?     
+
+      for id, node of id_graph
+
+        if node["@type"]? 
+          types = SGASharedCanvas.Utils.makeArray node["@type"]
+
+          if "sga:SearchAnnotation" in types
+            target = node["on"]
+            selector = id_graph[target]["selector"]            
+            
+            resource = manifest.resources.find (res) ->
+              res.get("resource") == id_graph[target]["full"]
+
+            if resource?
+              manifest.searchResults.add
+                "@id" : node["@id"]
+                "@type" : node["@type"]
+                "target": id_graph[target]["full"]
+                "beginOffset" : id_graph[selector]["beginOffset"]
+                "endOffset" : id_graph[selector]["endOffset"]
+                "canvas_id" : resource.get("on") # For slider component
+
+      manifest.searchResults.trigger 'sync'
 
 )()

@@ -1,21 +1,40 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0038" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0038" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0038.jp2"/>
   <zone type="main">
-    <line>Act 1</line>
-    <line>Night</line>
-    <line>Scene -- A Ravine of Icy Rocks in the</line>
+    <milestone unit="tei:act" spanTo="#e1-0038.07"/>
+    <line rend="center"><hi rend="underline">Act 1</hi></line>
+    <anchor xml:id="e1-0038.07"/>
+    <milestone unit="tei:stage" spanTo="#e1-0038.08"/>
+    <line rend="indent1">Scene -- <add place="superlinear">Night</add> A Ravine of Icy Rocks in
+      the</line>
     <line>Indian Caucasus. Prometheus is discovered</line>
     <line>bound to the precipice-- Panthea &amp; Ione</line>
     <line>are seated at his feet.</line>
-    <line>Prometheus</line>
-    <line>Monarch of Gods &amp; DÃ¦mons &amp; all Spirits</line>
+    <anchor xml:id="e1-0038.08"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0038.09"/>
+    <line rend="center">Prometheus</line>
+    <anchor xml:id="e1-0038.09"/>
+    <line>Monarch of Gods &amp; <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>&#230;mons &amp; all <mod>
+        <del rend="overwritten">s</del>
+        <add place="intralinear">S</add>
+      </mod>pirits</line>
     <line>But One, who throng those bright &amp; rolling Worlds</line>
-    <line>Which Thou &amp; I alone of living things , regard</line>
-    <line>Behold with sleepless eyes this Earth</line>
+    <line>Which Thou &amp; I alone of living things <add><metamark function="separate"
+          >&#166;</metamark></add>
+      <milestone unit="tei:seg" spanTo="#e1-0038.02" xml:id="e1-0038.04" corresp="#e1-0038.05"/>,
+        regard<anchor xml:id="e1-0038.02"/></line>
+    <line>Behold with sleepless eyes <add place="superlinear"><metamark function="displacement"
+          >&#8629;</metamark></add>
+      <anchor xml:id="e1-0038.05"/><anchor xml:id="e1-0038.06"/>
+      <milestone unit="tei:seg" spanTo="#e1-0038.03" next="#e1-0038.04" corresp="#e1-0038.06"/> this
+      Earth <anchor xml:id="e1-0038.03"/></line>
     <line>Made multitudinous with thy slaves, whom thou</line>
     <line>Requitest for knee-worship, prayer &amp; praise,</line>
     <line>And toil, &amp; hecatombs of broken hearts,</line>
@@ -26,6 +45,7 @@
     <line>Three thousand years of sleep-unsheltered hours</line>
     <line>And moments, aye divided by keen pangs</line>
     <line>Till they seem years, torture &amp; solitude,</line>
-    <line>Scorn &amp; despair--<del rend="strikethrough">more glorious than thy throne</del></line>
+    <line>Scorn &amp; despair--<del rend="strikethrough">more glorious than thy throne</del><anchor
+        xml:id="e1-0038.01"/></line>
   </zone>
 </surface>

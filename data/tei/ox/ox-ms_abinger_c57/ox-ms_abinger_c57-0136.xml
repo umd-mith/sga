@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0136" ulx="0" uly="0" lrx="5138" lry="7032"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="68v" partOf="#ox-frankenstein_volume_ii">
@@ -62,7 +61,7 @@
     <line>to fulfil the wishes of your parents</line>
     <line>although they opposed themselves to</line>
     <line>your inclinations. But this is false</line>
-    <line>resoning. <del rend="strikethrough">I lo</del> I confess to <retrace cause="clarify"
+    <line>resoning. <del rend="strikethrough">I lo</del> I confess to <retrace cause="unclear"
         >y</retrace>ou my</line>
     <line>cousin that I <del rend="strikethrough">have</del> love you &#x26;</line>
     <line>that in my airy castles of futurity</line>

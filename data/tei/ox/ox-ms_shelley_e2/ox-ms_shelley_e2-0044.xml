@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0044" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0044.jp2"/>
@@ -10,12 +10,14 @@
     <line rend="center">Act 2.</line>
     <anchor xml:id="e2-0044.01"/>
     <milestone unit="tei:stage" spanTo="#e2-0044.02"/>
-    <line rend="indent1">Scene Morning- -a <mod>
+    <line rend="indent1">S<retrace cause="unclear">cene</retrace> Morning- -<unclear reason="case"
+        >a</unclear>
+      <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">lovely</add>
       </mod>
       <unclear reason="case">V</unclear>ale in the Indian</line>
-    <line>Caucasus &#8212;. Asia alone</line>
+    <line>Caucasus &#8212;. Asia <add>alone</add></line>
     <anchor xml:id="e2-0044.02"/>
     <milestone unit="tei:speaker" spanTo="#e2-0044.03"/>
     <line rend="center">Asia.</line>
@@ -26,10 +28,16 @@
     <line>And beatings haunt the desolated heart</line>
     <line>Which should have learnt repose&#8212;thou hast descended</line>
     <line>Cradled in tempests thou dost wake o Spring</line>
-    <line>O child of many winds.. As suddenly</line>
+    <line>O child of many winds.. <mod>
+        <del rend="overwritten">a</del>
+        <add place="intralinear">A</add>
+      </mod>s suddenly</line>
     <line>Thou comest as the memory of a dream</line>
     <line>Which now is sad because it hath been sweet;</line>
-    <line>Like genius or like joy which riseth up</line>
+    <line>Like genius o<mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">r</add>
+      </mod> like joy which riseth up</line>
     <line>As from the Earth clothing with golden clouds</line>
     <line>The desart of our life....</line>
     <line>This is the season this the day the hour,</line>

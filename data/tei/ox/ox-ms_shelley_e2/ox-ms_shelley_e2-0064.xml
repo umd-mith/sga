@@ -1,36 +1,59 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5380" lry="7234" xml:id="ox-ms_shelley_e2-0064" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5380" lry="7234" xml:id="ox-ms_shelley_e2-0064" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0064.jp2"/>
   <zone type="main">
-    <line>Through the noontide darkness deep</line>
-    <line>By the odour breathing sleep</line>
-    <line>faint</line>
-    <line>Of <del rend="strikethrough">sweet</del> night <unclear>-</unclear>flowers, &amp; the waves</line>
-    <line>At the fountain-lighted caves</line>
-    <line>our</line>
-    <line>While <del rend="strikethrough">the</del> music wild &amp; sweet</line>
-    <line>Mocks thy gently-falling feet</line>
-    <line>Child of Ocean!</line>
-    <line>Asia</line>
-    <line>Shall we pursue the sound <unclear>?&#8212;</unclear> it grows more faint</line>
+    <line rend="indent1">Through the noontide darkness deep</line>
+    <line rend="indent1">By the odour breathing sleep</line>
+    <line rend="indent1">Of <mod>
+        <del rend="strikethrough">sweet</del>
+        <add place="superlinear">faint</add>
+      </mod> night <unclear reason="illegible">-</unclear>flowers, &amp; the waves</line>
+    <line rend="indent1"><mod>
+        <del rend="overwritten">Of</del>
+        <add place="intralinear">At</add>
+      </mod> the fountain-lighted caves</line>
+    <line rend="indent1">While <mod>
+        <del rend="smear">the</del>
+        <add place="superlinear">our</add>
+      </mod> music wild &amp; sweet</line>
+    <line rend="indent2">Mock<mod>
+        <del rend="overwritten">ed</del>
+        <add place="intralinear">s</add>
+      </mod> thy gently-falling feet</line>
+    <line rend="center">Child of Ocean!</line>
+    <milestone unit="tei:speaker" spanTo="e2-0064.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0064.01"/>
+    <line>Shall we pursue the sound <unclear reason="illegible">?&#8212;</unclear> it grows more
+      faint</line>
     <line>And distant</line>
-    <line>Panthea</line>
-    <line>list &#8212; the strain floats nearer now</line>
-    <line>Echo</line>
-    <line>In the world unknown</line>
-    <line>Sleeps a voice unspoken</line>
-    <line>By thy step alone</line>
-    <line>Can its rest be broken</line>
-    <line>Child of Ocean</line>
-    <line>Asia</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0064.02"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0064.02"/>
+    <line rend="indent3">list &#8212; <mod>
+        <del rend="overwritten">it</del>
+        <add place="intralinear">the strain</add>
+      </mod> floats nearer now</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0064.03"/>
+    <line rend="center">Echo</line>
+    <anchor xml:id="e2-0064.03"/>
+    <line rend="indent1">In the world unknown</line>
+    <line rend="indent1">Sleeps a voice unspoken</line>
+    <line rend="indent1">By thy step alone</line>
+    <line rend="indent2">Can its rest be broken</line>
+    <line rend="center">Child of Ocean</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0064.04"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0064.04"/>
     <line>How the notes sink upon the ebbing wind</line>
-    <line>Echo</line>
-    <line>O follow follow</line>
-    <line>Thro the caverns hollow</line>
-    <line>190</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0064.05"/>
+    <line rend="center"><retrace cause="unclear">E</retrace>cho</line>
+    <anchor xml:id="e2-0064.05"/>
+    <line rend="indent3">O follow follow</line>
+    <line rend="indent3">Thro the caverns hollow</line>
+    <line rend="right"><add><metamark function="count">190</metamark></add></line>
   </zone>
 </surface>
-

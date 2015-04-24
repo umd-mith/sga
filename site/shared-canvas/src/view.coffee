@@ -14,12 +14,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     initialize: (config={}) ->     
 
-      manifestUrl = $("#SGASharedCanvasViewer").data('manifest')
+      manifestUrl = config.manifest
+      searchService = config.searchService
       # manifest = SGASharedCanvas.Data.importFullJSONLD manifestUrl 
 
       # Instantiate manifests collection and view
       manifests = SGASharedCanvas.Data.Manifests
-      new ManifestsView collection : manifests
+      new ManifestsView 
+        collection : manifests
+        searchService : searchService
       # Add manifest from DOM. This triggers data collection and rendering.
       manifest = manifests.add
         url: manifestUrl
@@ -31,11 +34,14 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # Manifests view
   class ManifestsView extends Backbone.View
 
-    initialize: ->
+    initialize: (options) ->
+      @searchService = options.searchService
       @listenTo @collection, 'add', @addOne
 
     addOne: (model) ->
-      new ManifestView model: model
+      new ManifestView 
+        model: model
+        searchService: @searchService
 
     render: ->
       @
@@ -47,7 +53,31 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     # already present in the HTML.
     el: '#SGASharedCanvasViewer'
 
-    initialize: ->
+    initialize: (options) ->
+
+      fetchCanvas = (n) =>
+        # For now we assume there is only one sequence.
+        # Eventually this should be on a sequence view.
+        # From the sequence, we locate the correct canvas id
+        sequence = @model.sequences.first()
+
+        canvases = sequence.get "canvases"
+
+        @variables.set "seqMax", canvases.length
+        @variables.set "seqPage", parseInt(n)
+
+        n = canvases.length if n > canvases.length
+        canvasId = canvases[n-1]
+        # Create the view
+        canvas = @model.canvasesData.add
+          id : canvasId
+        # Finally fetch the data. This will cause the views to render.
+        canvas.fetch @model
+
+        # Render canvas metadata          
+        new CanvasMetaView 
+          el: "#SGACanvasMeta"
+          model: @model.canvasesMeta.get canvasId
 
       @model.ready = (cb) ->
         if @sequences.length > 0
@@ -63,44 +93,58 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       # Set templates
       @metaTemplate = _.template($('#manifestMeta-tpl').html())
+      @citationTemplate = _.template($('#citation-tpl').html())
 
       # Add views for child collections right away
-      new CanvasesView collection: @model.canvasesData
+      @canvasesView = new CanvasesView collection: @model.canvasesData
 
       # When a new canvas is requested through a Router, fetch the right canvas data.
-      @listenTo SGASharedCanvas.Data.Manifests, 'page', (n) ->
-
+      @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, search) ->
         # First of all, destroy any canvas already loaded. We do this for two reasons:
         # 1. it avoids piling up canvases data in the browser memory
         # 2. it causes previously instantiated views to destroy themselves and make room for the new one.
         @model.canvasesData.reset()
+        # Also clear search results, if any.
+        @model.searchResults.reset()
+        Backbone.trigger "viewer:searchResults", [] 
 
-        fetchCanvas = =>
-          # For now we assume there is only one sequence.
-          # Eventually this should be on a sequence view.
-          # From the sequence, we locate the correct canvas id
-          sequence = @model.sequences.first()
+      # When search results are requested through a Router, fetch the search data.
+        if search?          
+          @model.searchResults.fetch @model, search.filters, search.query, options.searchService
 
-          canvases = sequence.get "canvases"
+          @listenToOnce @model.searchResults, 'sync', ->
+            searchResultsPositions = []
 
-          @variables.set "seqMax", canvases.length
-          @variables.set "seqPage", parseInt(n)
+            @model.ready =>
+              canvases = @model.sequences.first().get "canvases"
 
-          n = canvases.length if n > canvases.length
-          canvasId = canvases[n-1]
-          # Create the view
-          canvas = @model.canvasesData.add
-            id : canvasId
-          # Finally fetch the data. This will cause the views to render.
-          canvas.fetch @model
+              @model.searchResults.forEach (res, i) ->
+                trg = res.get("canvas_id")
+                if trg in canvases
+                  searchResultsPositions.push($.inArray(trg, canvases)+1)
 
-          # Render canvas metadata          
-          new CanvasMetaView 
-            el: "#SGACanvasMeta"
-            model: @model.canvasesMeta.get canvasId
+              fetchCanvas n
+              Backbone.trigger "viewer:searchResults", searchResultsPositions
+        else
+          # Make sure manifest is loaded        
+          @model.ready -> 
+            fetchCanvas n
 
-        # Make sure manifest is loaded        
-        @model.ready fetchCanvas   
+      # Deal with reading modes
+      @listenTo SGASharedCanvas.Data.Manifests, 'readingMode', (m) ->
+
+        @model.canvasesData.reset()
+
+        filter = []
+
+        switch m
+          when "img" then filter.push "Image"
+          when "std" then filter.push "Image", "Text"
+          when "txt" then filter.push "Text"
+
+        @canvasesView.filter = filter
+
+        fetchCanvas @variables.get "seqPage"
 
       @render()
       @model.ready @renderMeta
@@ -109,8 +153,30 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Render Manifest Metadata
       noColon = {}
       for k,v of @model.toJSON()
-        noColon[k.replace(':', '')] = v
+        escaped = k.replace('http://www.tei-c.org/ns/1.0/idno', 'teiID')
+        escaped = escaped.replace(':', '')
+        noColon[escaped] = v
       $('#SGAManifestMeta').html @metaTemplate(noColon)
+      
+      citation = {}
+        
+      if noColon["scagentLabel"]?
+        authorParts = noColon["scagentLabel"].split(" ")
+        last = authorParts[authorParts.length-1]
+        initials = ""
+        for parts in authorParts
+          initials += parts.substring(0,1) + ". "
+        citation["author"] = last + ", " + initials
+
+      if noColon["scdateLabel"]?
+        dateParts = noColon["scdateLabel"].split(" ")
+        citation["year"] = dateParts[dateParts.length-1]
+
+      if noColon["dctitle"]?
+        notebook = if noColon["label"]? then noColon["label"] else ""
+        citation["title"] = noColon["dctitle"] + " - " + notebook
+
+      $('#cite-manifest').html @citationTemplate(citation)
 
     render: ->
       # Manage UI components as subviews      
@@ -134,6 +200,28 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         data: @model
 
       syncVarsFor slider
+
+      # Reading Mode Controls
+      readingModeControls = new SGASharedCanvas.Component.ReadingModeControls
+        el : '#mode-controls'
+
+      # Limit View Controls
+      limitViewControls = new SGASharedCanvas.Component.LimitViewControls
+        el : '#hand-view-controls'
+        include: ['hand-library', 'hand-comp']
+        defLimiter: 'hand-mws'
+
+      # Spinner (temp)
+      $('#loading-progress').css
+        position: "absolute"
+        "z-index": "10000"
+        top: "50%"
+        left: "50%"
+
+      # Search Box
+      searchBox = new SGASharedCanvas.Component.SearchBox
+        el: "#sgaForm"
+
       @
 
   # Canvases view
@@ -144,8 +232,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     addOne: (c) ->
       # Only trigger views once the model contains canvas data (but not subcollections yet)
-      @listenToOnce c, 'sync', ->
-        new CanvasView model: c
+      $('#loading-progress').show()
+      @listenToOnce c, 'sync', =>
+        $('#loading-progress').hide()
+        new CanvasView 
+          model: c
+          filter: @filter
 
     render: ->
       @
@@ -153,14 +245,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # Canvas view
   class CanvasView extends Backbone.View
 
-    initialize: ->
+    initialize: (options) ->
       @listenTo @model, 'remove', @remove
 
-      @render()         
+      @render(options["filter"])         
 
-    render: ->
+    render: (filter) ->
       # Here we collect data-types expressed in HTML and
       # we organize further collections according to them.
+
+      # filter is used to specify which areas to render (default: all)
 
       areas = []
 
@@ -169,7 +263,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       tpl.find('.sharedcanvas').each ->
         data = $(@).data()
         data["el"] = @
-        areas.push data
+        if filter?
+          if data.types in filter
+            areas.push data
+        else
+          areas.push data
 
       # Attach the template to #mainSharedCanvas (must be provided in the HTML)
       # Eventually we could take the destination div as a paramenter when initializing the app.
@@ -177,12 +275,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       $("#mainSharedCanvas").append @$el
 
       for area in areas        
+        # First, determine how many Bootstrap columns each area takes
+        col = parseInt(12 / areas.length)
+        $(area.el).addClass("col-xs-"+col)
+
         # We use canvas data to render views for the areas.
         # Each area is an independent view on the canvas data.
         new ViewerAreaView 
           model: @model
           el: area.el
-          types: area.types.split(" ")     
+          types: area.types.split(" ")
       @
 
   # Canvas Meta view
@@ -190,6 +292,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     initialize: ->
       @template = _.template($('#canvasMeta-tpl').html())
+      @citationTemplate = _.template($('#citation_canvas-tpl').html())
       @render()
 
     render: ->
@@ -199,7 +302,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Handle status metadata (at the moment not in manifest)
       noColon.trans = "green"
       noColon.meta = "green"
+      
       @$el.html @template(noColon)
+
+      citation =
+        "url" : document.URL
+        
+      if noColon["sgashelfmarkLabel"]? and noColon["sgafolioLabel"]?
+        citation["page"] = noColon["sgashelfmarkLabel"] + ", " + noColon["sgafolioLabel"]
+
+      $('#cite-canvas').html @citationTemplate(citation)
 
 
   # General area view, declaring variables that can be tracked with events
@@ -212,6 +324,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         x     : 0
         y     : 0
         scale : 0
+        scrollWidth: 0
 
       # Set values if provided
       if options.vars? and typeof options.vars == 'object'
@@ -231,35 +344,48 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # When rendering, we create sub-views for each type required
       @types = options.types      
 
+      # Deal with layers
+      @listenTo @model, 'addLayer', (area, content) -> 
+        if area in @types
+          @addLayer(content)  
+
       @render()
 
-    render: (container) ->
+    render: ->
       @$el.css 'overflow': 'hidden'
 
       container = $("<div></div>")
       @$el.append(container)
-      $(container).height(Math.floor(@$el.width() * 4 / 3))
+
+      gcd = (x, y) ->
+        [x, y] = [y, x%y] until y is 0
+        x
+
+      canvasWidth = @model.get("width")
+      canvasHeight = @model.get("height")
+
+      aspectRatio = gcd canvasWidth, canvasHeight      
+
+      $(container).height(Math.floor(@$el.width() * (canvasWidth / aspectRatio) / (canvasHeight / aspectRatio)))
       $(container).css
         'background-color': 'white'
         'z-index': 0
 
-      canvasWidth = null
-      canvasHeight = null
-
-      # Is this needed??
-      baseFontSize = 150 # in terms of the SVG canvas size - about 15pt
+      baseFontSize = 110 # in terms of the image size - about 15pt
       DivHeight = null
       DivWidth = Math.floor(@$el.width()*20/20)
-      @$el.height(Math.floor(@$el.width() * 4 / 3))
+      @$el.height(Math.floor(@$el.width() * (canvasWidth / aspectRatio) / (canvasHeight / aspectRatio)))
 
       # This figures out the scale for our further calculations.
       resizer = =>
+        aspectRatio = gcd canvasWidth, canvasHeight 
         DivWidth = Math.floor(@$el.width()*20/20,10)
-        if canvasWidth? and canvasWidth > 0
+        if canvasWidth? and canvasWidth > 0          
           @variables.set 'scale', DivWidth / canvasWidth
         if canvasHeight? and canvasHeight > 0
           @$el.height(DivHeight = Math.floor(canvasHeight * @variables.get 'scale'))
-        Backbone.trigger "viewer:resize", @$el
+        # Propagate to the rest of the viewer
+        Backbone.trigger "viewer:resize", {container: @$el, scale: @variables.get('scale')}
 
       $(window).on "resize", resizer
 
@@ -271,8 +397,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         if canvasWidth? and canvasHeight?
           DivHeight = Math.floor(canvasHeight * s)
         container.css
-          'font-size': (Math.floor(baseFontSize * s * 10) / 10) + "px"
-          'line-height': (Math.floor(baseFontSize * s * 11.5) / 10) + "px"
           'height': DivHeight
           'width': DivWidth
 
@@ -316,8 +440,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             addImages()
           when "Text"
             addText()
-
   
+    addLayer: (content) ->
+      @$el.children().html(content)
+      @$el.children().css("overflow", "auto")
+
   #
   # TEXT VIEWS
   #
@@ -364,11 +491,32 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       width = if @model.get("width")? then @model.get("width") else @variables.get("width") - x
       height = if @model.get("height")? then @model.get("height") else @variables.get("height") - y
 
-      $(@$el).css
+      @$el.css
         left: Math.floor(16 + x * @variables.get('scale')) + "px"
         top: Math.floor(y * @variables.get('scale')) + "px"
         width: Math.floor(width * @variables.get('scale')) + "px"
         height: Math.floor(height * @variables.get('scale')) + "px"
+
+      setScale = (s) =>
+        @$el.css
+          left: Math.floor(16 + x * s) + "px"
+          top: Math.floor(y * s) + "px"
+          width: Math.floor(width * s) + "px"
+          height: Math.floor(height * s) + "px"
+        if @$el.perfectScrollbar?
+          @$el.perfectScrollbar('update')
+      Backbone.on 'viewer:resize', (options) =>
+        setScale options.scale
+
+      # Style scrollbars if plugin is present
+
+      if @$el.perfectScrollbar?
+        @$el.css
+          overflow: 'hidden'
+        @$el.perfectScrollbar
+          suppressScrollX: true
+          includePadding: true
+          scrollYMarginOffset: 10
 
       #
       # Here we embed the text-based view.
@@ -389,72 +537,279 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       super
       @listenTo @collection, 'add', @addOne
 
-      @lastLine = -1
       @currentLine = 0
+
       @currentLineEl = $("<div></div>")
       @$el.append @currentLineEl
 
-      @render()
+      @lastRendering = null
+
+      @variables.on 'change:width', (w) =>
+        @$el.attr('width', w/10)
+
+      adjustFontSize = =>
+        # fix font size
+        fs = parseInt(@$el.css('font-size'))         
+        newfs = fs-1
+        @$el.css('font-size', newfs + 'px')
+        @variables.set 'fontSize', (fs-1) / @variables.get "scale"
+
+        # Reset line height to 1.5 (font size * 1.5)
+        adj = newfs * 1.5
+        @$el.css('line-height', adj + 'px')
+
+      @variables.on 'change:scrollWidth', (sw) =>       
+        if @$el.innerWidth() != 0        
+          adjustFontSize() while @$el.innerWidth() < @el.scrollWidth 
+
+      Backbone.on 'viewer:resize', (options) =>
+        if @variables.get('fontSize')?
+          @$el.css 'font-size', @variables.get('fontSize') * options.scale
 
     addOne: (model) ->
-      # console.log model
-      # Instiate different views depending on the type of annotation.
+
+      setPosition = (textAnnoView, annoEl) =>
+        # Calculate space needed
+        # This function may be buggy, would benefit from a better algorithm and tests
+        ourWidth = @variables.get("width") / 10
+        ourLeft = annoEl.offset().left
+        rendering_width = annoEl.width() / @variables.get("scale")
+        annoEl.css
+          width: Math.ceil(rendering_width * @variables.get("scale")) + "px"
+
+        if @lastRendering?.get(0)?
+
+          myOffset = annoEl.offset()
+          # Although sublinear insertions may influence the position of superlinear insertions,
+          # the opposite should not be true.
+          if (@lastRendering.data("place")? and annoEl.data("place")?) and @lastRendering.data("place") == "above" and annoEl.data("place") == "below"
+              middle = myOffset.left + annoEl.outerWidth(false)/2
+          else if @lastRendering.hasClass 'sgaDeletionAnnotation'
+            # If the previous is a deletion, stick it in the middle!
+            middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false)/2)
+          else
+            middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false))
+          myMiddle = myOffset.left + annoEl.outerWidth(false)/2
+          neededSpace = middle - myMiddle
+
+          # now we need to make sure we aren't overlapping with other text - if so, move to the right
+          prevSibling = annoEl.prev()
+          accOffset = 0
+          spacing = 0
+          if prevSibling? and prevSibling.size() > 0
+            prevOffset = prevSibling.offset()
+            accOffset = prevSibling.offset().left + prevSibling.outerWidth(false) - ourLeft
+            spacing = (prevOffset.left + prevSibling.outerWidth(false)) - myOffset.left
+            spacing = parseInt(prevSibling.css('left'),10) or 0 #(prevOffset.left) - myOffset.left
+
+            if spacing > neededSpace
+              neededSpace = spacing
+          
+          if neededSpace >= 0
+            if neededSpace + (myOffset.left - ourLeft) + accOffset + annoEl.outerWidth(false) > ourWidth
+
+              neededSpace = ourWidth - (myOffset.left - ourLeft) - accOffset - annoEl.outerWidth(false)
+
+          # if we need negative space, then we need to move to the left if we can
+          if neededSpace < 0
+            # we need to move some of the other elements on this line
+            if !prevSibling? or prevSibling.size() <= 0
+              neededSpace = 0
+            else
+              neededSpace = -neededSpace
+              prevSiblings = annoEl.prevAll()
+              availableSpace = 0
+              prevSiblings.each (i, x) ->
+                availableSpace += (parseInt($(x).css('left'),10) or 0)
+              if prevSibling.size() > 0
+                availableSpace -= (prevSibling.offset().left - ourLeft + prevSibling.outerWidth(false))
+              if availableSpace > neededSpace
+                usedSpace = 0
+                prevSiblings.each (i, s) ->
+                  oldLeft = parseInt($(s).css('left'), 10) or 0
+                  if availableSpace > 0
+                    useWidth = Math.floor(oldLeft * (neededSpace - usedSpace) / availableSpace)
+                    $(s).css('left', (oldLeft - useWidth - usedSpace) + "px")
+                    usedSpace += useWidth
+                    availableSpace -= oldLeft
+
+                neededSpace = -neededSpace
+              else
+                prevSiblings.each (i, s) -> $(s).css('left', "0px")                      
+                neededSpace = 0
+
+          if neededSpace > 0
+            if prevSibling.size() > 0
+              if neededSpace < parseInt(prevSibling.css('left'), 10)
+                neededSpace = parseInt(prevSibling.css('left'), 10)
+            annoEl.css
+                'position': 'relative'
+                'left': (neededSpace) + "px"
+          textAnnoView.variables.set "left", neededSpace / @variables.get("scale")
+          textAnnoView.variables.set "width", annoEl.width() / @variables.get("scale")
+          setScale = (s) =>
+            annoEl.css
+              'left': Math.floor(textAnnoView.variables.get("left") * s) + "px"
+              'width': Math.ceil(textAnnoView.variables.get("width") * s) + "px"
+          Backbone.on 'viewer:resize', (options) =>
+            setScale options.scale
+
+      # Instantiate different views depending on the type of annotation.
       type = model.get "type"
+      _getTextWidth = (container) ->
+            container = $(container)
+            
+            o = container.clone()
+                  .css(
+                    'position': 'absolute'
+                    'float': 'left'
+                    'white-space': 'nowrap'
+                    'visibility': 'hidden'
+                  )
+                  .appendTo($('body'))
+            text = $.trim(o.text().replace(/\s+/g,' '))
+            o.text(text)
+            w_px = o.width()
+            font_size = o.css('font-size')
+            font_size = parseInt(font_size.substring(0, font_size.length - 2))
+            o.remove()
+            w_px / font_size
       switch
-        when "Text" in type or "sgaLineAnnotation" in type or "sgaDeletionAnnotation" in type or "sgaSearchAnnotation" in type    
+        when "sgaAdditionAnnotation" in type
+
+          # Parse additions first, as they might require an extra line          
+          if /vertical-align: super;/.test(model.get("css"))
+            additionLine = if not @currentLineEl.prev().hasClass('above-line') \
+                           then $("<div class='above-line'></div>")\
+                           else @currentLineEl.prev()
+
+            textAnnoView = new TextAnnoView 
+              model: model 
+            annoEl = $ textAnnoView.render()?.el
+            annoEl.data "place", "above"
+            additionLine.append(annoEl).insertBefore(@currentLineEl)
+
+            # If the annotation is just empty space, skip
+            if annoEl.get(0)?
+              setPosition(textAnnoView, annoEl) 
+              @lastRendering = annoEl
+
+          else if /vertical-align: sub;/.test(model.get("css"))
+            additionLine = null
+            if not @currentLineEl.next().hasClass('below-line')
+              additionLine = $("<div class='below-line'></div>")
+              indent = @currentLineEl.data('indent')
+              if indent?
+                additionLine.css
+                  'padding-left' : indent
+            else 
+              additionLine = @currentLineEl.next()
+
+            textAnnoView = new TextAnnoView 
+              model: model 
+            annoEl = $ textAnnoView.render()?.el
+            annoEl.data "place", "below"
+            additionLine.append(annoEl).insertAfter(@currentLineEl)
+
+            if annoEl.get(0)?
+              setPosition(textAnnoView, annoEl) 
+              @lastRendering = annoEl
+
+          else
+            textAnnoView = new TextAnnoView 
+              model: model 
+            @lastRendering = annoEl = $ textAnnoView.render()?.el
+            @currentLineEl.append annoEl
+
+        when "Text" in type \
+        or "sgaLineAnnotation" in type \
+        or "sgaDeletionAnnotation" in type \
+        or "sgaSearchAnnotation" in type
           textAnnoView = new TextAnnoView 
             model: model 
-          @currentLineEl.append textAnnoView.render()?.el
-        #TODO: when "sgaAdditionAnnotation"
+          annoEl = $ textAnnoView.render()?.el          
+          @currentLineEl.append annoEl
+          if annoEl.get(0)?
+            @lastRendering = annoEl
+        when 'EmptyLine' in type
+          console.log model.get('ext')
+          ext = parseInt(model.get('ext'))
+          for br in [1..ext]
+            @currentLineEl.append("<br/>")
+          @$el.append @currentLineEl
         when "LineBreak" in type
-          # new line container
-          @currentLineEl = $("<div></div>")
+
+          # Before creating a new line container, add other classes on the current one.
+          # For example, alignment and indentation are stored on the line break annotation
+          # and must be processed now. 
+
+          # store padding info to pass it on
+          padding = 0
+
+          if model.get("align")?
+              @currentLineEl.data
+                'align' : model.get("align")
+          if model.get("indent")?
+            @currentLineEl.data
+                 'indent': model.get("indent")
+
+            # Add indentation to interlinear additions, if present
+            prev1 = @currentLineEl.prev()
+            if prev1.hasClass('above-line')
+              # prev1.css
+              #   'padding-left': padding
+              prev1.data
+                  'indent': model.get("indent")
+
+          # Only now overwrite the @currentLineEl variable
+          # and add a new line container that will be populated at the next run of addOne()
+          @currentLineEl = $("<div></div>").data
+            "indent" : padding
           @$el.append @currentLineEl
 
-    render: ->
-      @variables.on 'change:width', (w) ->
-        @$l.attr('width', w/10)
+          # Update currentLine count
+          @currentLine += 1
+          
+      if @variables.get('scrollWidth') != @el.scrollWidth
+        @variables.set('scrollWidth', @el.scrollWidth)
 
-      # SCALE?
+      # Adjust indentation and alignment to width of longest line so far.
+      lines = @$el.find('.sgaLineAnnotation')
+      arr = lines.map(-> 
+          return $(this).text().length
+      ).get()
+      longest_line = lines[arr.indexOf(Math.max.apply(Math,arr))]
 
-      #
-      # We draw each text span type the same way. We rely on the
-      # item.type to give us the CSS classes we need for the span
-      #
-      # lines = {}
-      # lineAlignments = {}
-      # lineIndents = {}
-      # scaleSettings = []
-      # currentLine = 0
+      if longest_line?
+        w = _getTextWidth(longest_line)
+        a = @$el.find('div').filter(->
+          return $(this).data('indent') or $(this).data('align')
+        ).each(->
+          l = $(this)
+          al = l.data('align')
+          ind = l.data('indent')
+          if al?
+            curTextLength = _getTextWidth(l)
+            if al == "right"
+              padding = (w - curTextLength) + "em"
+            else if al == "center"
+              padding = ((w / 2) - (curTextLength/2)) + "em"            
+            l.css
+              'padding-left': padding
+          else if ind?
+            l.css
+              'padding-left': (w * ind) / 10 + "em"
+        )
+        
 
-      #
-      # For now, we are dependent on the collection to retain the ordering
-      # of items based on insertion order.
-      #
-      # that.addLens 'AdditionAnnotation', additionLens
-      # that.addLens 'DeletionAnnotation', annoLens
-      # that.addLens 'SearchAnnotation', annoLens
-      # that.addLens 'LineAnnotation', annoLens
-      # that.addLens 'Text', -> #annoLens
+      # Update scrollbar styling if plugin exists
+      if @$el.parent().perfectScrollbar?
+        @$el.parent().perfectScrollbar('update')
 
-      #
-      # Line breaks are different. We just want to add an explicit
-      # break without any classes or styling.
-      #
-      # that.addLens 'LineBreak', (container, view, model, id) ->          
-      #   item = model.getItem id
-      #   if item.align?.length > 0
-      #     lineAlignments[currentLine] = item.align[0]
-      #   if item.indent?.length > 0
-      #     lineIndents[currentLine] = Math.floor(item.indent[0]) or 0
-      #   currentLine += 1
-        # null
-      @
-
-  class TextAnnoView extends Backbone.View
+  class TextAnnoView extends AreaView
     tagName: "span"
 
-    render: ->     
+    render: -> 
       @$el.css 'display', 'inline-block'
       @$el.text @model.get "text"
       @$el.addClass @model.get("type").join(" ")
@@ -542,13 +897,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         top: Math.floor(y * s)
         left: Math.floor(x * s)
 
-      # setScale = (s) ->
-      #   @$el.attr
-      #     height: Math.floor(height * s)
-      #     width: Math.floor(width * s)
-      #   @$el.css
-      #     top: Math.floor(y * s)
-      #     left: Math.floor(x * s)
+      setScale = (s) =>
+        @$el.attr
+          height: Math.floor(height * s)
+          width: Math.floor(width * s)
+        @$el.css
+          top: Math.floor(y * s)
+          left: Math.floor(x * s)
+      Backbone.on 'viewer:resize', (options) =>
+        setScale options.scale
       @
 
 
@@ -587,13 +944,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       djatokaTileWidth = 256
 
-      x = if @model.get('x')? then @model.get('x') else 0
-      y = if @model.get('y')? then @model.get('y') else 0
-      width = if @model.get('width')? then @model.get('width') else @variables.get("width") - x
-      height = if @model.get('height')? then @model.get('height') else @variables.get("height") - x
-
-      divWidth = @$el.width() || 1
-      divHeight = @$el.height() || 1
+      width = if @model.get('width')? then @model.get('width')
+      height = if @model.get('height')? then @model.get('height')
 
       divScale = @variables.get("scale")
       imgScale = divScale
@@ -613,9 +965,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @variables.set 'active', true
 
       baseURL = @model.get("service") + "?url_ver=Z39.88-2004&rft_id=" + @model.get("@id")
-      tempBaseURL = baseURL.replace(/http:\/\/tiles2\.bodleian\.ox\.ac\.uk:8080\//, '/')
 
       @setZoom = (z) ->
+        return
 
       zoomLevel = null
 
@@ -623,7 +975,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       offsetY = 0
 
       $.ajax
-        url: tempBaseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
+        url: baseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
         success: (metadata) =>
           # original{Width,Height} are the size of the full jp2 image - the maximum resolution            
           originalWidth = Math.floor(metadata.width) || 1
@@ -634,6 +986,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # div{Width,Height} are the size of the HTML <div/> in which we are rendering the image
           divWidth = @$el.width() || 1
           divHeight = @$el.height() || 1
+
           #divScale = @variables.get("scale")
           # {x,y}Tiles are how many whole times we can tile the <div/> with tiles _djatokaTileWidth_ wide
           xTiles = Math.floor(originalWidth * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
@@ -665,11 +1018,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           #xUnits * 2^8 = divWidth - divWidth % 2^8
           #xUnits * 2^(8+z) = originalWidth - originalWidth % 2^(8+z)
           recalculateBaseZoomLevel = =>
-            divWidth = @$el.width() || 1
             if @variables.get("scale")? > 0
               baseZoomLevel = Math.max(0, Math.ceil(-Math.log( @variables.get("scale") * imgScale )/Math.log(2)))
-              @variables.set 'minZoom', 0
-              @variables.set 'maxZoom', zoomLevels - baseZoomLevel
+              baseZoomLevel = Math.max(0, zoomLevels - baseZoomLevel) + 1
+              @variables.set 'minZoom', baseZoomLevel
+              @variables.set 'maxZoom', zoomLevels
 
           wrapWithImageReplacement = (cb) ->
             cb()
@@ -717,6 +1070,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               "svc.format=image/jpeg"
               "svc.level=#{z}"
               "svc.region=#{y * tileWidth},#{x * tileWidth},#{djatokaTileWidth},#{djatokaTileWidth}"
+              "svc.rotate=#{rotation}"
             ].join("&")
 
           screenCenter = ->
@@ -801,7 +1155,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             }
 
           renderTile = (o) =>
-            z = Math.ceil(zoomLevel + baseZoomLevel)                
+            z = Math.ceil(zoomLevel + baseZoomLevel)  
             topLeft = screenCoords(o.x, o.y)
             heightWidth = screenExtents(o.x, o.y)
 
@@ -912,12 +1266,20 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # xTiles tells us how many tiles across
             # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
 
-            for j in [0..yTiles]
-              for i in [0..xTiles]
-                renderTile 
-                  x: i
-                  y: j
-                  tileSize: tileSize
+            if rotation == 0
+              for j in [0..yTiles]
+                for i in [0..xTiles]
+                  renderTile 
+                    x: i
+                    y: j
+                    tileSize: tileSize
+            else
+              for j in [0..yTiles]
+                for i in [0..xTiles]
+                  renderTile 
+                    x: j
+                    y: i
+                    tileSize: tileSize
 
           _setZoom = (z) ->
             wrapper = (cb) -> cb()
@@ -935,7 +1297,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             if z != zoomLevel
               _setZoom(z)
               @variables.set "zoom", z
-         
+
           setScale = (s) ->
             divScale = s
             $(innerContainer).css
@@ -960,9 +1322,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
           zoomLevel = 0
 
+          Backbone.on 'viewer:resize', (options) =>
+            setScale options.scale
+
           # Listen to Image Controls zoom value for updating
+          @variables.set "lastZoom", imageControls.variables.get 'zoom'
           @listenTo imageControls.variables, 'change:zoom', (z) ->
-            @setZoom z
+            if z != @variables.get "lastZoom" 
+              @variables.set "lastZoom", z
+              @setZoom z
       @
 
 )()

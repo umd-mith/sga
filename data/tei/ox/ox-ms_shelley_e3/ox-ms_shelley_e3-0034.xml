@@ -1,24 +1,34 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0034" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0034" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0034.jp2"/>
   <zone type="main">
-    <line rend="indent2">Awful Shape, what art thou? Speak</line>
+    <line rend="indent3">Awful Shape, wha<retrace cause="unclear">t</retrace> art thou? Speak</line>
     <milestone unit="tei:speaker" spanTo="#e3-0034.01"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0034.01"/>
     <line>Eternity &#8212; demand no direr name.</line>
     <line>Descend, &amp; follow me down the abyss;</line>
-    <line>I am thy child, <mod><del rend="strikethrough">as thou art Saturn's...</del><add place="superlinear">as thou wert Saturn's child</add></mod></line>
-    <line rend="indent1">Mi<hi rend="underline">ghtier than the</hi>e and we must dwell <mod><del rend="strikethrough">pent</del><add place ="sublinear">together</add></mod></line>
+    <line>I am thy child, <mod>
+        <del rend="strikethrough">as thou art Saturn's...</del>
+        <add place="superlinear">as thou wert Saturn's child</add>
+      </mod></line>
+    <line rend="indent1"><milestone unit="tei:seg" spanTo="#e3-0034.04" xml:id="e3-0034.05"/>Mi<hi
+        rend="underline">ghtier than the</hi>e<anchor xml:id="e3-0034.04"/> and we must dwell <mod>
+        <del rend="strikethrough"><unclear reason="illegible">pent</unclear></del>
+        <add place="sublinear">together</add>
+      </mod><alt target="#e3-0034.05 #e3-0035.02" mode="excl" weights="1 0"/></line>
     <line>Henceforth in darkness&#8212;lift thy lightnings not&#8212;</line>
     <line>The tyranny of Heaven none may retain</line>
     <line>Or reassume, or hold succeeding thee ...</line>
-    <line>Yet if thou wilt&#8212;as tis the destiny <metamark function="count">60</metamark></line>
-    <line><milestone unit="tei:l" spanTo="#e3-0034.02"/> Of trodden worms to writhe till they are</line>
-    <line rend="right">dead&#8212;</line><anchor xml:id="e3-0034.02"/>
+    <line>Yet if thou wilt&#8212;as tis the destiny <add><metamark function="count"
+        >60</metamark></add></line>
+    <milestone unit="tei:l" spanTo="#e3-0034.02"/>
+    <line> Of trodden worms to writhe till they are</line>
+    <line rend="right">dead&#8212;</line>
+    <anchor xml:id="e3-0034.02"/>
     <line>Put forth thy might</line>
     <milestone unit="tei:speaker" spanTo="#e3-0034.03"/>
     <line rend="center">Jupiter</line>
@@ -26,12 +36,10 @@
     <line rend="indent4">Detested prodigy!</line>
     <line>Even thus beneath the deep Titanian prisons</line>
     <line>I trample thee! thou lingerest?</line>
-    <line></line>
-    <line></line>
     <line rend="indent4">Mercy, mercy</line>
-    <line>No <add place="superlinear"><metamark function="count">64</metamark></add>pity&#8212;no release, no respite! . . oh <metamark function="count">65</metamark></line>
-    <line>That thou wouldst make mine enemy my judge.</line>
+    <line><add place="superlinear"><metamark function="count">64</metamark></add>No pity&#8212;no
+      release, no respite! . . oh <add><metamark function="count">65</metamark></add></line>
+    <line>That thou wouldst make mine enemy my judge<unclear reason="illegible">.</unclear></line>
     <line>Even where he hangs, seared by my long revenge</line>
   </zone>
 </surface>
-

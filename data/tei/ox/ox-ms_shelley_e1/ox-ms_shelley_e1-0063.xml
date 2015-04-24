@@ -1,34 +1,68 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0063" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0063" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0063.jp2"/>
+  <zone type="library">
+    <line rend="right">31</line>
+  </zone>
   <zone type="main">
-    <line>31</line>
-    <line>I hear-- I am a leaf shaken by thee!</line>
-    <line>Demogorgon</line>
-    <line>Ye Kings of suns &amp; stars, DÃ¦mons &amp; Gods,</line>
-    <line>Ã†therial Dominations, who possess</line>
+    <line>I hear&#8212; I am a leaf shaken by thee!</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0063.01"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e1-0063.01"/>
+    <line>Ye Kings of suns &amp; stars, D<mod>
+        <del rend="overwritten">e</del>
+        <add place="intralinear">&#230;</add>
+      </mod>mons &amp; Gods,</line>
+    <line rend="indent1">&#198;therial Dominations, who po<add>s</add>sess</line>
     <line>Elysian, windless, fortunate abodes</line>
-    <line>Beyond Heavens constellated wilderness</line>
-    <line>A Voice from above</line>
-    <line>Our great Republic hears... We are blest, &amp; bless</line>
-    <line>Demogorgon</line>
-    <line>Ye happy Dead, whom beams of brightest verse</line>
-    <line>Are clouds to hide, not colours to pourtray</line>
+    <line rend="indent1">Beyond Heavens constellated wilderness</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0063.02"/>
+    <line rend="center">A Voice <add>from above</add></line>
+    <anchor xml:id="e1-0063.02"/>
+    <line>Our great <mod>
+        <del rend="overwritten">r</del>
+        <add place="intralinear">R</add>
+      </mod>epublic hears... We are blest, &amp; bless</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0063.03"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e1-0063.03"/>
+    <line>Ye happy <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>ead, whom beams of brightest verse</line>
+    <line rend="indent1">Are clouds to hide, not colours to pourtray</line>
     <line>Whether your nature is that Universe</line>
-    <line>Which once Ye saw &amp; suffered--</line>
-    <line>A Voice from beneath</line>
-    <line>we have left as</line>
-    <line>m or <del rend="strikethrough">like</del> they</line>
-    <line>Who <del rend="strikethrough">we</del> <del rend="strikethrough">hither haste</del>, we change &amp; pass away{.}--</line>
-    <line>Demogorgon</line>
+    <line rend="indent1">Which once <unclear reason="case">Y</unclear>e saw &amp;
+      suffered&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0063.04"/>
+    <line rend="center"><unclear reason="case">A</unclear>
+      <unclear reason="case">V</unclear>oice from beneath</line>
+    <anchor xml:id="e1-0063.04"/>
+    <line rend="indent4">or <mod>
+        <del rend="strikethrough">like</del>
+        <add place="superlinear">as</add>
+      </mod> they</line>
+    <line>Who<mod>
+        <del rend="strikethrough">m</del>
+        <add place="superlinear">m</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">we</del>
+        <del rend="strikethrough">h<unclear reason="illegible">it</unclear>her haste</del>
+        <add place="superlinear">we have left</add>
+      </mod>, we change &amp; pass away<unclear reason="illegible">.</unclear>&#8212;</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0063.05"/>
+    <line rend="center">Demogorgon</line>
+    <anchor xml:id="e1-0063.05"/>
     <line>Ye elemental Genii, who have homes</line>
-    <line>From mans high mind even to the central</line>
-    <line>stone</line>
-    <line>Of sullen lead, from Heavens star-fretted</line>
-    <line>domes</line>
-    <line>To the dull weed some sea-worm battens on--</line>
+    <milestone unit="tei:l" spanTo="#e1-0063.06"/>
+    <line rend="indent1">From mans high mind even to the central</line>
+    <line rend="right">stone</line>
+    <anchor xml:id="e1-0063.06"/>
+    <line>Of sullen lead, from Heavens star-fretted domes</line>
+    <line rend="indent1">To the dull weed some sea-worm battens on&#8212;</line>
   </zone>
 </surface>

@@ -1,20 +1,27 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0086" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0086" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0086.jp2"/>
   <zone type="main">
-    <line>And Light &amp; Love <unclear>;&#8212;</unclear> then Saturn, from whose throne</line>
+    <line>And Light &amp; Love <unclear reason="illegible">;&#8212;</unclear> then Saturn, from
+      whose throne</line>
     <line>Time fell, an envious shadow; such the state</line>
-    <line>Of the w<hi rend="underline">orl</hi>d's primal spirits beneath his sway</line>
+    <line>Of the <milestone unit="tei:seg" spanTo="#e2-0086.02" xml:id="e2-0086.03"/>w<hi
+        rend="underline">orl</hi>d's<anchor xml:id="e2-0086.02"/><alt
+        target="#e2-0086.03 #e2-0087.03" mode="excl" weights="0 1"/> primal spirits beneath his
+      sway</line>
     <line>As the calm joy of flowers &amp; living leaves</line>
+    <anchor xml:id="e2-0086.01"/>
     <line>And semivital worms; but he refused</line>
-    <line>knowledge &amp;</line>
-    <line><del rend="strikethrough">The spirit</del> birthrights of their being, <del rend="strikethrough">Wisdom &amp;</del> power,</line>
+    <line><del rend="strikethrough">The spirit</del> birthrights of their being, <mod>
+        <del rend="strikethrough">Wisdom &amp;</del>
+        <add place="superlinear">knowledge &amp;</add>
+      </mod> power,</line>
     <line>The skill which weilds the elements, the thought</line>
     <line>Which pieerces this dim Universe like light,</line>
-    <line>Self-empire &amp; the majesty of love <unclear>;</unclear></line>
+    <line>Self-empire &amp; the majesty of love <unclear reason="illegible">;</unclear></line>
     <line>For thirst of which they fainted; then Prometheus</line>
     <line>Gave wisdom, which is strength, to Jupiter</line>
     <line>And with this Law alone: let no man be free,</line>
@@ -28,4 +35,3 @@
     <line>With alternating shafts of frost &amp; fire</line>
   </zone>
 </surface>
-

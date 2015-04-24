@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0034" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0034" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0034.jp2"/>
   <zone type="main">
     <line rend="indent1">Nor heed nor see, what things they be</line>
@@ -11,21 +11,27 @@
     <line rend="indent1">Nurslings of immortality!&#8212;</line>
     <line rend="indent1">One of them awakened me</line>
     <line rend="indent1">And I sped to succour thee</line>
-    <line><add><metamark function="count">737</metamark></add></line>
+    <line rend="left"><add><metamark function="count">737</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e2-0034.01"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e2-0034.01"/>
     <line>Beholdst thou not two shapes from the East &amp; <unclear reason="case"
       >w</unclear>est</line>
-    <line>Come, as two doves to one beloved nest</line>
+    <line>Come, as <mod>
+        <del rend="overwritten">twin</del>
+        <add place="intralinear">two</add>
+      </mod> doves to one beloved nest</line>
     <line><del rend="strikethrough">Sink through the lapses of the yielding air?&#8212;</del></line>
+    <anchor xml:id="e2-0034.05"/>
     <line>And hark&#8212;their sweet sad voices<unclear reason="illegible">;</unclear>
       <unclear reason="illegible">'</unclear>tis despair</line>
     <line>Mingled with love, &amp; then dissolved in sound&#8212;</line>
     <milestone unit="tei:speaker" spanTo="#e2-0034.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0034.02"/>
-    <line>Canst thou speak sister? all my <del rend="strikethrough">words</del> are drowned</line>
+    <line>Canst thou speak sister? all my <mod>
+        <restore><del rend="strikethrough">wor</del><del rend="unmarked">ds</del></restore>
+      </mod> are drowned</line>
     <milestone unit="tei:speaker" spanTo="#e2-0034.03"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e2-0034.03"/>
@@ -35,9 +41,12 @@
       </mod>. See how they float</line>
     <line>On their sustaining wings of skiey grain</line>
     <line>Orange &amp; azure, deepening into gold</line>
-    <line>Thier soft smiles light the air like a star's fire</line>
+    <line>Thier <mod>
+        <del rend="overwritten">sad</del>
+        <add place="intralinear">soft</add>
+      </mod> smiles light the air like a star's fire</line>
     <milestone unit="tei:speaker" spanTo="#e2-0034.04"/>
-    <line><mod>
+    <line rend="center"><mod>
         <del rend="strikethrough">5<hi rend="sup">th</hi> Spirit</del>
         <add place="intralinear">Chorus of Spirits</add>
       </mod></line>

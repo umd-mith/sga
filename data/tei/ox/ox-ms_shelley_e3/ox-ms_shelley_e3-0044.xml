@@ -1,41 +1,44 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0044" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0044" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0044.jp2"/>
   <zone type="main">
     <line>Peace Monster&#8212;I come now! farewell</line>
     <milestone unit="tei:speaker" spanTo="#e3-0044.01"/>
     <line rend="center">Apollo</line>
     <anchor xml:id="e3-0044.01"/>
-    <line rend="indent3">Farewell!&#8212; <metamark function="count">135</metamark></line>
-    <milestone unit="tei:stage" spanTo="#e3-0044.02"/>
-    <line>Scene Caucasus, Prometheus, Hercules, Asia</line>
-    <line>borne by the spirit of the Hour</line>
-    <line>Panthea Ione, the Earth. Spirits&#8212;</line>
-    <line>Hercules unbinds Prometheus who descends</line>
+    <line rend="indent4">Farewell!&#8212; <add><metamark function="count"
+      >135</metamark></add></line>
+    <milestone unit="tei:scene" spanTo="#e3-0044.02"/>
+    <line rend="indent1">Scene Caucasus, Prometheus, Hercules, Asia</line>
+    <line rend="indent2">borne by the spirit of the Hour</line>
+    <line rend="indent1">Panthea Ione, the Earth. Spirits&#8212;</line>
+    <line rend="indent2">Hercules unbinds Prometheus who descends</line>
     <anchor xml:id="e3-0044.02"/>
     <milestone unit="tei:speaker" spanTo="#e3-0044.03"/>
     <line rend="center">Hercules</line>
     <anchor xml:id="e3-0044.03"/>
     <line>Most glorious among Spirits, thus doth strength</line>
-    <line>To wisdom courage &amp; long suffering love</line>
+    <line>To <unclear reason="case">w</unclear>isdom courage &amp; long suffering love</line>
     <line>And thee, who art the form they animate</line>
     <line>Minister, like a slave</line>
     <milestone unit="tei:speaker" spanTo="#e3-0044.04"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e3-0044.04"/>
-    <line rend="right">Thy gentle words</line>
-    <line>Are sweeter even than freedom long desired <metamark function="count">140</metamark></line>
+    <line rend="indent5">Thy gentle words</line>
+    <line>Are sweeter even tha<unclear reason="illegible">n</unclear> freedom long desired
+          <add><metamark function="count">140</metamark></add></line>
     <line>And long delayed. Asia, thou light of life,</line>
     <line>Shadow of beauty unbeheld, &amp; ye</line>
     <line>Fair sister-nymphs who make long years of pain</line>
     <line>Sweet to remember through your love &amp; care</line>
-    <line>Henceforth we will not part. There is a Cave</line>
+    <line>Henceforth <milestone unit="tei:seg" spanTo="#e3-0044.05" xml:id="e3-0044.07"/>we will
+        not<anchor xml:id="e3-0044.05"/> part. There is a Cave<alt target="#e3-0044.07 #e3-0045.02"
+        mode="excl" weights="1 0"/></line>
     <line>All overgrown with trailing odorous plants</line>
     <line>Which curtain out the day with leaves &amp; flowers</line>
-    <line><metamark function="count">140</metamark></line>
+    <line><add><metamark function="count">140</metamark></add></line>
   </zone>
 </surface>
-

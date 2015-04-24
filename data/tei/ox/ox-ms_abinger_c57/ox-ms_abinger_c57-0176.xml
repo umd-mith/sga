@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0176" ulx="0" uly="0" lrx="5148" lry="7030"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="88v" partOf="#ox-frankenstein_volume_ii">
@@ -21,7 +20,7 @@
     <line>Captain to the shame of a defeat to prove</line>
     <line>yourselves cowards. Oh be men or be <del rend="strikethrough">for</del></line>
     <line>more than men &#x2013; be steady to your pur</line>
-    <line>poses &amp; fir<retrace cause="clarify">m</retrace> as rock. this ice is not made</line>
+    <line>poses &amp; fir<retrace cause="unclear">m</retrace> as rock. this ice is not made</line>
     <line>of such stuff <add place="superlinear" hand="#pbs">as your hearts might be.</add> it is
       mutable &amp; cannot</line>
     <line>withand you if you say that it shall</line>

@@ -1,38 +1,74 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0080" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0080" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0080.jp2"/>
   <zone type="main">
     <line>[f. 39r is blank]</line>
-    <line>Round foodless men wrecked on an oozy isle</line>
-    <line>Asia</line>
+    <line>Round foodless men wre<mod>
+        <del rend="overwritten">k</del>
+        <add place="intralinear">c</add>
+      </mod>ked on an oozy isle</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0080.01"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0080.01"/>
     <line>The fragments of the cloud are scattered up&#8212;</line>
+    <milestone unit="tei:l" spanTo="#e2-0080.02"/>
     <line>The wind which lifts them disentwines my</line>
-    <line>hair&#8212;</line>
-    <line>Its' billows now sweep oer my eyes&#8212; my brain</line>
+    <line rend="right">hair&#8212;</line>
+    <anchor xml:id="e2-0080.02"/>
+    <line>Its' billows now s<mod>
+        <del rend="overwritten">t</del>
+        <add place="intralinear">w</add>
+      </mod>eep oer my eyes&#8212; my brain</line>
     <line>st those</line>
-    <line>Grows dizzy&#8212; see shapes within the mist <unclear>?</unclear></line>
-    <line>^</line>
-    <line>Panthea burns</line>
-    <line>A countenance with beckoning smiles&#8212;there</line>
-    <line>An<del rend="strikethrough"> <unclear>o</unclear></del> azure fire within its golden locks&#8212;</line>
+    <line>Grows dizzy&#8212; <del rend="strikethrough">I</del> see<mod>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
+        <add place="superlinear">st those</add>
+      </mod> shapes within the mist <unclear reason="illegible">?</unclear></line>
+    <milestone unit="tei:speaker" spanTo="#e2-0080.03"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0080.03"/>
+    <line>A countenance with beckoning smiles&#8212; there <add place="superlinear"
+      >burns</add></line>
+    <line>An<del rend="strikethrough">
+        <unclear>o</unclear></del> azure fire within its golden locks&#8212;</line>
     <line>Another &amp; another hark they speak!</line>
     <line>/</line>
     <line>\</line>
-    <line>Scene 4 the Cave of Demogorgon</line>
-    <line>Asia, Panthea, <del rend="strikethrough">Demogorgon</del>  <del rend="strikethrough">on his throne</del></line>
-    <line>Panthea</line>
-    <line><del rend="strikethrough">A veiled s</del> What veiled form sits on that ebon throne.</line>
-    <line>Asia</line>
+    <milestone unit="tei:scene" spanTo="#e2-0080.04"/>
+    <line rend="center">Scene 4 the Cave of Demogorgon</line>
+    <line>Asia, Panthea, <del rend="strikethrough">a</del>
+      <del rend="strikethrough">v</del>
+      <del rend="strikethrough">Demogorgon</del>
+      <del rend="strikethrough">on his throne</del>
+    </line><anchor xml:id="e2-0080.04"/>
+    <milestone unit="tei:speaker" spanTo="#e2-0080.06"/>
+    <line rend="center">Panthea</line>
+    <anchor xml:id="e2-0080.06"/>
+    <line><del rend="strikethrough">A veiled s</del> What veiled form sits on that ebon
+      throne.</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0080.07"/>
+    <line rend="center">Asia</line>
+    <anchor xml:id="e2-0080.07"/>
     <line>The veil has fallen!..</line>
+    <milestone unit="tei:speaker" spanTo="#e2-0080.08"/>
     <line>Panthea</line>
-    <line>I see a mighty Darkness</line>
+    <anchor xml:id="e2-0080.08"/>
+    <line rend="indent4">I see a mighty <mod>
+        <del rend="overwritten">d</del>
+        <add place="intralinear">D</add>
+      </mod>arkness</line>
     <line>the</line>
-    <line>Filling <del rend="strikethrough">that</del>  seat of power <unclear>;</unclear> and rays of gloom</line>
+    <line>Filling <mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">the</del>
+            <add place="intralinear">that</add>
+          </mod></del>
+        <add place="superlinear">the</add>
+      </mod> seat of power <unclear reason="illegible">;</unclear> and rays of gloom</line>
     <line>Dart round, as light from the meridian Sun</line>
     <line>Ungazed upon &amp; shapeless &#8212;.. neither limb</line>
   </zone>
 </surface>
-

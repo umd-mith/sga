@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0010" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0010" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0010.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0010.01"/>
@@ -20,16 +20,22 @@
     <line>Whence come<del rend="strikethrough">s</del> ye so wild &amp; so fleet</line>
     <line>For sandals of lightning are on your feet</line>
     <line>And your wings are soft &amp; swift as thought,</line>
-    <line>And your eyes are as Love which is veiled not<unclear>?</unclear></line>
+    <line>And your eyes are as Love which is veiled not<unclear reason="illegible"
+      >?</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e1-0010.03"/>
     <line rend="center">Chorus of spirits</line>
     <anchor xml:id="e1-0010.03"/>
     <line rend="indent1">We come from the mind</line>
     <line rend="indent1">Of human kind</line>
-    <line>Which was late so dusk &amp; obscene &amp; blind<unclear>;</unclear></line>
-    <line rend="indent1">Now tis an Ocean,</line>
+    <line>Which was late so dusk &amp; obscene &amp; blind<unclear reason="illegible"
+      >;</unclear></line>
+    <line rend="indent1">Now tis an <unclear reason="case">O</unclear>cean,</line>
     <line rend="indent1">Of clear emotion</line>
-    <line>A Heaven of serene &amp; mighty motion.</line>
+    <line><mod>
+        <del rend="overwritten">Of</del>
+        <add place="intralinear">A</add>
+      </mod>
+      <unclear reason="case">H</unclear>eaven of serene &amp; mighty motion.</line>
     <line rend="indent1">From that deep Abyss</line>
     <line rend="indent1">Of wonder &amp; bliss</line>
     <line>Whose caverns are chrystal palaces,</line>

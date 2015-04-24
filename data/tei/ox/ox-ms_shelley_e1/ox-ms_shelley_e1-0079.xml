@@ -1,33 +1,49 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0079" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0079" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0079.jp2"/>
+  <zone type="library">
+    <line rend="right">39</line>
+  </zone>
   <zone type="main">
-    <line>39</line>
-    <line>know&lt;&gt;, to be true. Observe <del rend="strikethrough">you</del> how</line>
+    <line>know<del rend="smear">s</del>, to be true. Observe <del rend="strikethrough">you</del>
+      how</line>
     <line>vulgar &amp; common and level to</line>
     <line>the comprehension of any one is</line>
     <line>the question I now ask, relative to</line>
-    <line>the same consideration belonging</line>
-    <line>to one entire art.-- Is not the art</line>
-    <line>of painting one whole system in</line>
-    <line>[?<del rend="strikethrough">in</del>]</line>
-    <line>itself?-- <hi rend="underline">Ion</hi>. Yes.-- <hi rend="underline">Soc</hi>. Are there</line>
+    <line>th<unclear reason="illegible">e</unclear> same consideration belonging</line>
+    <line>to one entire art.&#8212; Is not the art</line>
+    <line>of painting one whole system in<del rend="strikethrough"><add place="sublinear"><unclear
+            reason="illegible">in</unclear></add></del></line>
+    <line>itself?&#8212; <milestone unit="tei:speaker" spanTo="#e1-0079.01"/><hi rend="underline"
+        >Ion</hi>.<anchor xml:id="e1-0079.01"/> Yes.&#8212; <milestone unit="tei:speaker"
+        spanTo="#e1-0079.02"/><hi rend="underline">Soc.</hi><anchor xml:id="e1-0079.02"/> Are
+      there</line>
     <line>not &amp; have there not been, many</line>
-    <line>painters <del rend="strikethrough">both</del> good &amp; bad. <hi rend="underline">Ion</hi> .</line>
-    <line>Certainly. <hi rend="underline">Soc</hi>. Did you ever</line>
+    <line>painters <del rend="strikethrough">both</del> good &amp; bad. <milestone
+        unit="tei:speaker" spanTo="#e1-0079.03"/><hi rend="underline">Ion</hi>
+      <unclear reason="illegible">.</unclear><anchor xml:id="e1-0079.03"/></line>
+    <line>Certainly. <milestone unit="tei:speaker" spanTo="#e1-0079.04"/><hi rend="underline"
+        >Soc</hi>.<anchor xml:id="e1-0079.04"/> Did you ever</line>
     <line>know a person competent to determine</line>
-    <line>&lt;the&gt; merits of the paintings of Polyg{-}</line>
+    <line><unclear reason="illegible">the</unclear> merits of the paintings of Polyg<unclear
+        reason="illegible">-</unclear></line>
     <line>notus the son of Aglaophon, &amp; incom</line>
-    <line>-petent to <del rend="strikethrough">make</del> <del rend="strikethrough">determ</del> judge</line>
-    <line>production</line>
-    <line>the <del rend="strikethrough">painting</del>s of any other painter;</line>
-    <line>who, on the {<del rend="strikethrough">pa</del>} compositions of other</line>
+    <line>-petent to <del rend="strikethrough">d</del>
+      <del rend="strikethrough">make</del>
+      <del rend="strikethrough">determ</del> judge</line>
+    <line>the <mod>
+        <del rend="strikethrough">painting</del>
+        <del rend="unmarked">s</del>
+        <add place="superlinear">production</add>
+      </mod> of any other painter;</line>
+    <line>who, on the <del rend="strikethrough"><unclear reason="illegible">pa</unclear></del>
+      compositions of other</line>
     <line>painters being exhibited to him</line>
     <line>felt wholly at a loss &amp; very</line>
-    <line>much inclined to go to sleep,</line>
+    <line>much incline<add>d</add> to go to sleep,</line>
     <line>and <del rend="strikethrough">had no</del> lost all faculty of</line>
   </zone>
 </surface>

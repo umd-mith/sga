@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0013" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0013" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0013.jp2"/>
+  <zone type="library"><line rend="right">4</line></zone>
   <zone type="main">
-    <line>4</line>
+    <milestone unit="tei:seg" spanTo="#e3-0013.01" corresp="#e3-0012.06"/>
     <line>As my own soul would answer, did it know</line>
-    <line>That which I ask&#8212;</line>
-    <line><del rend="strikethrough">Nor dark nor dim</del></line>
+    <anchor xml:id="e3-0013.01"/>
+    <line><milestone unit="tei:seg" spanTo="#e3-0013.02" corresp="e3-0012.07"/>
+      <mod>
+        <del rend="strikethrough">Nor</del>
+        <del rend="overwritten">dark nor dim</del>
+        <add place="intralinear">That which I ask&#8212;</add>
+      </mod><anchor xml:id="e3-0013.02"/></line>
   </zone>
 </surface>
-

@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0017" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0017" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0017.jp2"/>
-  <zone type="library">8</zone>
+  <zone type="library">
+    <line rend="right">8</line>
+  </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0017.01"/>
-    <line rend="indent3">Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e1-0017.01"/>
-    <line><milestone unit="tei:l" spanTo="#e1-0017.03"/><mod>
+    <milestone unit="tei:l" spanTo="#e1-0017.03"/>
+    <line><mod>
         <del rend="strikethrough">And see</del>
         <add place="superlinear">But see</add>
       </mod>, where through two openings in the</line>
-    <line rend="right">forest<anchor xml:id="e1-0017.03"/></line>
+    <line rend="right">forest</line>
+    <anchor xml:id="e1-0017.03"/>
     <line>Which hanging branches overcanopy,</line>
     <line>And where two runnels of a rivulet</line>
     <line>Between the close moss violet-inwoven</line>
@@ -21,25 +25,32 @@
         <del rend="strikethrough">friends</del>
         <add place="superlinear">sisters</add>
       </mod></line>
-    <line><milestone unit="tei:l" spanTo="#e1-0017.04"/>Who part with sighs that they may
-      meet</line>
-    <line rend="right">in smiles<anchor xml:id="e1-0017.04"/></line>
-    <line>Turning their dear disunion to an isle</line>
+    <milestone unit="tei:l" spanTo="#e1-0017.04"/>
+    <line>Who part with sighs that they may meet</line>
+    <line rend="right">in smiles</line>
+    <anchor xml:id="e1-0017.04"/>
+    <line>T<mod>
+        <del rend="overwritten">i</del>
+        <add place="intralinear">u</add>
+      </mod>rning their dear disunion to an isle</line>
     <line>Of lovely grief, a wood of sweet sad thoughts</line>
     <line>Two visions of strange radiance float upon</line>
     <line>The Ocean-like inchantment of strong sound</line>
     <line>Which flows intenser <mod>
         <del rend="strikethrough">calmer</del>
-        <add place="superlinear">keener</add>
+        <add place="superlinear">keen<add>er</add></add>
       </mod> deeper yet</line>
     <line>Under the ground &amp; through the windless air</line>
     <milestone unit="tei:speaker" spanTo="#e1-0017.02"/>
-    <line rend="indent3">Ione</line>
+    <line rend="indent2">Ione</line>
     <anchor xml:id="e1-0017.02"/>
     <line>I see a chariot like that thinnest boat</line>
     <line>In which the Mother of the Months is borne</line>
     <line>By ebbing light into her western cave</line>
-    <line>When she upsprings from interlunar dreams,</line>
+    <line>When she upsprings from interlunar <mod>
+        <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
+        <add place="intralinear">d</add>
+      </mod>reams,</line>
     <line>Oer which is curved an orblike canopy</line>
     <line>Of gentle darkness, &amp; the hills &amp; woods</line>
     <line>Distinctly seen through that dusk aery veil</line>

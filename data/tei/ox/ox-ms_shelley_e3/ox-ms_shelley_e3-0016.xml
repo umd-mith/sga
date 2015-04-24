@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0016" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0016" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0016.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0016.01"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0016.01"/>
-    <line>I am the shadow of a destiny</line>
-    <line>More dread than is my aspect <unclear>&#8212;</unclear> ere yon planet</line>
+    <line>I am the <milestone unit="tei:seg" spanTo="#e3-0016.07" xml:id="e3-0016.08"/>shadow<anchor
+        xml:id="e3-0016.07"/> of a <retrace cause="unclear">destiny</retrace><alt
+        target="#e3-0016.08 #e3-0017.02" mode="excl" weights="1 0"/></line>
+    <line>More dread than is my aspect <unclear reason="illegible">&#8212;</unclear> ere yon
+      planet</line>
     <line>Has set, the Darkness which ascends with me</line>
     <line>Shall wrap in lasting night Heaven's kingless throne</line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.02"/>
@@ -19,32 +22,74 @@
     <milestone unit="tei:speaker" spanTo="#e3-0016.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e3-0016.03"/>
-    <line rend="indent4">The terrible shadow floats</line>
-    <line>Up from its throne, as <mod><del rend="strikethrough">doth</del><add place="superlinear">may</add></mod>the lurid <del rend="strikethrough">smoke</del> dust</line>
-    <line>Of earthquake-ruined cities <mod><del rend="strikethrough">to</del><add place="superlinear">oer</add></mod> the sea&#8212;</line>
+    <line rend="indent4"><mod>
+        <del rend="overwritten">That</del>
+        <add place="intralinear">The</add>
+      </mod> terrible s<mod>
+        <del rend="overwritten">p</del>
+        <add place="intralinear">h</add>
+      </mod>adow floats</line>
+    <line>Up from its throne, as <mod>
+        <del rend="strikethrough">doth</del>
+        <add place="superlinear">may</add>
+      </mod>the lurid <del rend="strikethrough">smoke</del> dust</line>
+    <line>Of earthquake-ruined cities <mod>
+        <del rend="strikethrough">to</del>
+        <add place="superlinear">oer</add>
+      </mod> the sea&#8212;</line>
     <line>Lo! it ascends the Car... the coursers fly</line>
-    <line>Terrified; &amp; <mod><del rend="strikethrough">its path darkens the night</del><add place="superlinear">watch its path among the stars</add></mod> &#8212;</line>
-    <line><mod><del rend="strikethrough">Darkening</del><add place="sublinear">Blackening</add></mod> the night</line>
+    <line>Terrified<mod>
+        <del rend="overwritten">.</del>
+        <add place="intralinear">;</add>
+      </mod>
+      <mod>
+        <del rend="unmarked">&amp;</del>
+        <del rend="strikethrough">its path darkens the night</del>
+        <add place="superlinear">watch its path among the stars</add>
+      </mod> &#8212;</line>
+    <line><mod>
+        <del rend="strikethrough"><mod>
+            <del rend="overwritten">Darkens</del>
+            <add place="intralinear">Darkening</add>
+          </mod></del>
+        <add place="sublinear">Blackening</add>
+      </mod> the night</line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.04"/>
     <line rend="center"> Asia</line>
     <anchor xml:id="e3-0016.04"/>
-    <line><del rend="strikethrough">But</del> <del rend="strikethrough">see</del> <del rend="strikethrough">See near the verge another chariot</del> <del rend="strikethrough">stays</del></line>
-    <line rend="indent3">Thus I am answered&#8212;strange!</line>
+    <line><del rend="strikethrough">But</del>
+      <del rend="strikethrough">see</del>
+      <del rend="strikethrough">See near the verge another chariot</del>
+      <del rend="strikethrough">stays</del></line>
+    <line rend="indent3">Thus I am answered&#8212;strange<mod>
+        <del rend="unmarked">.</del>
+        <add place="intralinear">!</add>
+      </mod></line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.05"/>
-    <line rend="center">Panthea</line>
+    <line rend="center"><unclear reason="illegible">P</unclear>anthea</line>
     <anchor xml:id="e3-0016.05"/>
     <line>See, near the verge another chariot stays</line>
-    <line>An ivory shell inlaid with crimson fire</line>
-    <line><del rend="strikethrough">Like the</del></line>
+    <line><mod>
+        <del rend="strikethrough">Like the</del>
+        <add place="superlinear">An ivory</add>
+      </mod> shell inlaid with crimson fire</line>
     <milestone unit="tei:l" spanTo="#e3-0016.06"/>
     <line>Which <del rend="strikethrough">burns around</del> comes &amp; goes within its</line>
     <line rend="right">sculptured ruin</line>
     <anchor xml:id="e3-0016.06"/>
-    <line>Of delicate strange tracery&#8212; the <del rend="strikethrough">fair</del> young Spirit</line>
-    <line><mod><del rend="strikethrough">Within it</del><add place="superlinear">That guides it,</add></mod>, has the dovelike eyes of hope.</line>
+    <line>Of delicate strange tracery&#8212; the <del rend="strikethrough">fair</del> young
+      Spirit</line>
+    <line><mod>
+        <del rend="strikethrough">Within it</del>
+        <add place="superlinear">That guides it,</add>
+      </mod>, has the dovelike eyes of hope.</line>
     <line>How its soft smiles attract the soul!&#8212;as light</line>
-    <line><mod><del rend="strikethrough">Leads</del><add place="sublinear"><del rend="strikethrough">Attracts</del></add></mod> winged insects thro the lampless air.</line>
-    <line>Lures</line>
+    <line><mod>
+        <del rend="strikethrough">Attracts</del>
+        <del rend="strikethrough"><add place="superlinear">Leads</add></del>
+        <add place="sublinear">Lures</add>
+      </mod>
+      <add place="superlinear">winged</add> insects thro the lampless air.</line>
+    <line/>
   </zone>
 </surface>
-

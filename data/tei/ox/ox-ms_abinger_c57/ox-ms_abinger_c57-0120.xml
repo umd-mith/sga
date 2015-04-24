@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-            type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-            href="../../../xsl/page-proof.xsl"
-        ?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
   xml:id="ox-ms_abinger_c57-0120" ulx="0" uly="0" lrx="5138" lry="7032"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="60v" partOf="#ox-frankenstein_volume_ii">
@@ -17,7 +16,7 @@
       </mod> lay</line>
     <line>&amp; was led up to the coffin. How can I describle<unclear>?</unclear></line>
     <line>my sensation. I feel yet parched with horror</line>
-    <line>nor can I ever reflect on that ter<retrace cause="clarify">r</retrace>ible</line>
+    <line>nor can I ever reflect on that ter<retrace cause="unclear">r</retrace>ible</line>
     <line>moment without shuddering &amp; agony that</line>
     <line><damage type="inkblot">fa</damage>intly reminds of the anguish of <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>

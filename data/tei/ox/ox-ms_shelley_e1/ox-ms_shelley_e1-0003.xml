@@ -1,19 +1,22 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0003" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0003" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0003.jp2"/>
   <zone type="main" rotate="180">
-    <line>in other respects</line>
-    <line>worst poet, seems to have been purposely</line>
+    <line>worst poet<add place="superlinear"> in other respects</add>, seems to have been
+      purposely</line>
     <line>afforded as a divine evidence of the</line>
-    <line>truth of this opinion<del rend="strikethrough">?</del>
+    <line>truth of this opinion<mod>
+        <del rend="strikethrough">?</del>
+        <add place="intralinear">.</add>
+      </mod>
       <del rend="strikethrough">Do I a</del> Do you</line>
     <line>think with me o Ion.&#x2014; <milestone unit="tei:speaker" spanTo="#e1-0003.01"/><hi
         rend="underline">Ion</hi><anchor xml:id="e1-0003.01"/> By Jupiter</line>
-    <line>as it were</line>
-    <line>Ido. You touch <add place="superlinear">as it were</add> my soul with your words</line>
+    <line>Ido. You touch <add place="superlinear">as it were</add> my soul with your wor<retrace
+        cause="unclear">d</retrace>s</line>
     <line>o Socrates. <del rend="strikethrough">Exce</del>
       <del rend="strikethrough">The great poets</del> The</line>
     <line>excellent poets appear to me to be divinely</line>
@@ -26,14 +29,25 @@
         /><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0003.04"/> You are then</line>
     <line>the interpreters of interpreters. <milestone unit="tei:speaker" spanTo="#e1-0003.05"/><hi
         rend="underline">Ion</hi>.<anchor xml:id="e1-0003.05"/></line>
+    <!--GREEK text follows. rotate 180; first stage -->
+    <line>&#916;&#953;&#948;&#945;&#963;&#954;&#945;&#955;&#8182;&#957;
+      &#955;&#959;&#947;&#959;&#953;&#963;&#953;
+      &#947;&#953;&#947;&#957;&#959;&#957;&#964;&#945;&#953; &#954;&#945;&#954;&#959;&#953;</line>
+    <line>&#959;&#7988;
+      &#948;&#8125;&#945;&#954;&#959;&#963;&#956;&#959;&#965;&#957;&#964;&#949;&#950;
+      &#946;&#961;&#959;&#964;&#969;&#957;</line>
     <line>Evidently.&#x2014; <milestone unit="tei:speaker" spanTo="#e1-0003.06"/><hi
         rend="underline">Soc</hi>.<anchor xml:id="e1-0003.06"/> Now confess the truth</line>
     <line>to me, Ion, &amp; conceal not what I ask</line>
     <line>of you.&#x2014; When you recite some passages</line>
-    <line>from an <hi rend="underline">Cantin{i}</hi> epic poem <unclear unit="chars" extent="2"
-      /></line>
-    <line>climb from a <del rend="strikethrough">la{ll}</del> ladder</line>
-    <line>Via</line>
-    <line>Piazza <del rend="strikethrough">dalle</del>/Strozzi</line>
+    <line>from an <hi rend="underline">Cantin<unclear reason="illegible">i</unclear></hi> epic poem
+        <unclear unit="chars" extent="2"/></line>
+    <!-- Also rotate this 180 -->
+    <line>climb from &#922;&#913;&#953;&#956;&#945;&#958; a <del rend="strikethrough">la<unclear
+          reason="illegible">ll</unclear></del> ladder</line>
+    <line>Piazza <mod>
+        <del rend="strikethrough">dalle</del>
+        <add place="sublinear">Via</add>
+      </mod>/Strozzi</line>
   </zone>
 </surface>

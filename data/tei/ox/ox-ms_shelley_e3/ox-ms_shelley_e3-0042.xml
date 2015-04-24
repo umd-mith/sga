@@ -1,36 +1,46 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0042" partOf="#ox-ms_shelley_e3">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0042" partOf="#ox-ms_shelley_e3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0042.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0042.01"/>
     <line rend="indent2">Apollo</line>
     <anchor xml:id="e3-0042.01"/>
-    <milestone unit="tei:l" spanTo="#e3-0042.02"/><line>And I shall gaze not on the deeds which</line>
+    <milestone unit="tei:l" spanTo="#e3-0042.02"/><line>And I shall gaze not on the deeds
+      which</line>
     <line rend="right">make</line><anchor xml:id="e3-0042.02"/>
-    <line>My mind obscure with sorrow, as Eclipse <metamark function="count">120</metamark></line>
+    <line>My mind obscure with sorrow, as Eclipse <add><metamark function="count"
+        >120</metamark></add></line>
     <line>Darkens the sphere I guide&#8212;but list, I hear</line>
     <line>The small clear silver lute of the young Spirit</line>
-    <line>That sits i<del>n</del> the Morning star &#8212;</line>
+    <line>That sits i<del rend="strikethrough">n</del> the Morning star &#8212;</line>
     <milestone unit="tei:speaker" spanTo="#e3-0042.03"/>
     <line rend="indent2">Ocean</line>
     <anchor xml:id="e3-0042.03"/>
-    <line rend="right">Thou must away?</line>
-    <line>Thy steeds will pause at <mod><del rend="strikethrough"><unclear>noon</unclear></del><add place="superlinear"><unclear>E</unclear>ven</add></mod>&#8212;till when, farewell</line>
+    <line rend="indent4">Thou must away?</line>
+    <line>Thy steeds will pause at <mod>
+        <del rend="strikethrough"><unclear reason="illegible">noon</unclear></del>
+        <add place="superlinear"><unclear reason="case">E</unclear>ven</add>
+      </mod>&#8212;till when, farewell</line>
     <line><del rend="strikethrough">Hark the loud Deep calls me home too, to feed it</del></line>
+    <anchor xml:id="e3-0042.05"/>
     <line>With azure calm out of the emerald urns</line>
     <line>Which stand forever pale beside my throne . . .</line>
-    <line>Behold the Nereids under the green <unclear>S</unclear>ea</line>
-    <milestone unit="tei:l" spanTo="#e3-0042.04"/><line>Their wavering limbs borne on the wind like</line>
-    <line rend="right">streams</line><anchor xml:id="e3-0042.04"/>
-    <line>Their white arms lifted oer their streaming hair <metamark function="count">130</metamark></line>
-    <line>With garlands pied &amp; starry sea-flower crowns <unclear>,</unclear></line>
+    <line>Behold the Nereids under the green <unclear reason="case">S</unclear>ea</line>
+    <milestone unit="tei:l" spanTo="#e3-0042.04"/><line>Th<add>i</add>er wavering limbs borne on the
+      wind like</line>
+    <line rend="right">stream<unclear reason="illegible">s</unclear></line>
+    <anchor xml:id="e3-0042.04"/>
+    <line>Their white arms lifted oer their streaming hair <add><metamark function="count"
+          >130</metamark></add></line>
+    <line>With garlands pied &amp; starry sea-flower crowns<unclear reason="illegible"
+      >,</unclear></line>
     <line>Hastening to grace their mighty Sisters joy</line>
     <line rend="right">The roar of waves is heard</line>
     <line>It is the unpastured Sea hungring for Calm</line>
-    <line><metamark function="count">1<unclear>35</unclear></metamark></line>
+    <line rend="right"><add><metamark function="count"
+      >1<unclear>2</unclear>6</metamark></add></line>
   </zone>
 </surface>
-

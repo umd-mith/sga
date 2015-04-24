@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276"
-  xml:id="ox-ms_shelley_e1-0068" partOf="#ox-ms_shelley_e1">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0068" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0068.jp2"/>
   <zone type="main">
-    <line>Its darkness over those I love:</line>
-    <line>On me &amp; mine I imprecate</line>
-    <line>The utmost torture of thy hate</line>
-    <line>And thus devote to sleepless agony</line>
+    <line rend="indent1">Its darkness over those I love:</line>
+    <line rend="indent1">On me &amp; mine I imprecate</line>
+    <line rend="indent1">The utmost torture of thy hate</line>
+    <line rend="indent1">And thus devote to sleepless agony</line>
+    <milestone unit="tei:l" spanTo="#e1-0068.01"/>
     <line>This undeclining head while thou must</line>
-    <line>reign on high</line>
-    <line>God</line>
-    <line>But thou who art the <del rend="strikethrough">King</del> &amp; Lord--o thou</line>
+    <line rend="indent5">reign <unclear reason="illegible">o</unclear>n high</line>
+    <anchor xml:id="e1-0068.01"/>
+    <line>But thou who art the <mod>
+        <del rend="strikethrough"><unclear reason="illegible">King</unclear></del>
+        <add place="superlinear">God</add>
+      </mod> &amp; Lord&#8212;o thou</line>
     <line>Who fillest with thy soul this world of woe</line>
     <line>To whom all things of Earth &amp; Heaven do bow</line>
     <line>In fear &amp; worship-- all-prevailing foe!</line>
-    <line>I curse thee! let a sufferer's curse</line>
-    <line>Clasp thee, his torturer, like remorse,</line>
-    <line>'Till thine Infinity shall be</line>
-    <line>A robe of envenomed agony</line>
+    <line rend="indent1">I curse thee! let a sufferer's curse</line>
+    <line rend="indent1">Clasp thee, his torturer, like remorse,</line>
+    <line rend="indent1">'Till thine Infinity shall be</line>
+    <line rend="indent1">A robe of envenomed agony</line>
     <line>And thine Omnipotence a crown of pain</line>
+    <milestone unit="tei:l" spanTo="#e1-0068.02"/>
     <line>To cling like burning gold round thy</line>
-    <line>dissolving brain.</line>
+    <line rend="indent4">dissolving brain.</line>
+    <anchor xml:id="e1-0068.02"/>
     <line>Heap on thy soul by virtue of this Curse</line>
+    <milestone unit="tei:l" spanTo="#e1-0068.03"/>
     <line>Ill deeds, then be thou damned, beholding</line>
-    <line>good</line>
-    <line>280</line>
+    <line rend="right">good</line>
+    <anchor xml:id="e1-0068.03"/>
+    <line><add><unclear reason="illegible">280</unclear></add></line>
   </zone>
 </surface>

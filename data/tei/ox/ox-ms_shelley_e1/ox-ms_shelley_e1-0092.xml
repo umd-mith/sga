@@ -1,42 +1,58 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0092" partOf="#ox-ms_shelley_e1">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0092.jp2"/>
-  <zone type="main">
-    <line>The aerial crimson falls, flushing her cheek&#x2013;</line>
-    <line>So from our victim's destined agony</line>
-    <line>The shade which is our <mod><del rend="strikethrough">shape</del><add place="superlinear"
-          >form</add></mod> invests us round</line>
-    <line>Else are we shapeless as our Mother <unclear reason="case">N</unclear>ight</line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.01"/>Prometheus<anchor
-        xml:id="e1-0092.01"/></line>
-    <line>I laugh your power &amp; his who sent you here</line>
-    <line>To lowest scorn.&#x2014; pour forth the cup of pain</line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.02"/>1.<hi rend="superscript"
-        >st</hi> Fury<anchor xml:id="e1-0092.02"/></line>
-    <line>Thou thinkest we will rend <mod><del rend="strikethrough">you</del><add
-          place="superlinear">thee</add></mod> bone from bone?</line>
-    <!-- See above; a Y is overwritten with the "T" in "Thou." -->
-    <line>And nerve from nerve, working like fire within?</line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.03"/>Prometheus<anchor
-        xml:id="e1-0092.03"/></line>
-    <line>Pain is my element as hate is thine</line>
-    <line>Ye rend me now, I care not&#x2014;</line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.04"/>2.<hi rend="superscript"
-        >d</hi> Fury<anchor xml:id="e1-0092.04"/></line>
-    <line rend="indent4"> Dost imagine</line>
-    <line>We will but laugh into <del rend="strikethrough" instant="true">your</del> thy lidless
-      eyes?</line>
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.05"/>Prometheus<anchor
-        xml:id="e1-0092.05"/></line>
-    <line>I weigh not what ye do, but what ye suffer</line>
-    <line>Being evil&#x2014;cruel was the Power which called</line>
-    <line>You, or aught else so wretched, into light</line>
-    <line rend="indent5">
-      <metamark function="count">4{6}8</metamark>
-    </line>
-    <!-- add "line count" to schema? -->
-  </zone>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+    uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0092" partOf="#ox-ms_shelley_e1">
+    <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0092.jp2"/>
+    <zone type="main">
+        <line>The aerial c<unclear reason="illegible">ri</unclear>mson falls, <unclear
+                reason="illegible">fl</unclear>ushing her cheek&#x2013;</line>
+        <line>So from our victim's destin<mod>
+                <del rend="overwritten">y</del>
+                <add place="intralinear">ed</add>
+            </mod> agony</line>
+        <line>The shade which is our <mod>
+                <del rend="strikethrough">shape</del>
+                <add place="superlinear">form</add>
+            </mod> invests us round</line>
+        <line>Else <mod>
+                <del rend="overwritten">s</del>
+                <add place="intralinear">a</add>
+            </mod>re we shapeless as our Mother <unclear reason="case">N</unclear>ight</line>
+        <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.01"/>Prometheus<anchor
+                xml:id="e1-0092.01"/></line>
+        <line>I laugh your power &amp; his who sent you here</line>
+        <line>To lowest scorn.&#x2014; pour forth the cup of pain</line>
+        <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.02"/>1.<hi rend="sup"
+                >st</hi> Fury<anchor xml:id="e1-0092.02"/></line>
+        <line><mod>
+                <del rend="smear">Y</del>
+                <add>T</add>
+            </mod>hou thinkest we will rend <mod>
+                <del rend="strikethrough">you</del>
+                <add place="superlinear">thee</add>
+            </mod> bone from bo<mod>
+                <del rend="overwritten">o</del>
+                <add place="intralinear">n</add>
+            </mod>e?</line>
+        <line>And nerve from nerve, working like fire within?</line>
+        <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.03"/>Prometheus<anchor
+                xml:id="e1-0092.03"/></line>
+        <line>Pain is my element as hate is thine</line>
+        <line>Ye rend me now, I care not&#x2014;</line>
+        <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.04"/>2.<hi rend="sup"
+                >d</hi> Fury<anchor xml:id="e1-0092.04"/></line>
+        <line rend="indent4"> Dost imagine</line>
+        <line>We will but laugh into <del rend="strikethrough" instant="true">your</del> thy lidless
+            eyes?</line>
+        <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.05"/>Prometheus<anchor
+                xml:id="e1-0092.05"/></line>
+        <line>I weigh not what ye do, but what ye suffer</line>
+        <line>Being evil&#x2014;cruel was the Power which called</line>
+        <line>You, or aught else so wretched, into light</line>
+        <line rend="indent5">
+            <metamark function="count">4<unclear rend="illegible">6</unclear>8</metamark>
+        </line>
+        <!-- add "line count" to schema? -->
+    </zone>
 </surface>

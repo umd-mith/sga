@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
-  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
-  href="../../../xsl/page-proof.xsl"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  ulx="0" uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0012" partOf="#ox-ms_shelley_e2">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0012" partOf="#ox-ms_shelley_e2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0012.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0012.01" xml:id="Semichorus1"/>
@@ -10,9 +10,12 @@
     <anchor xml:id="e2-0012.01"/>
     <line rend="indent1"><del rend="strikethrough" instant="true">Hah, agony-drops</del></line>
     <line rend="indent1">Drops of bloody agony flow</line>
-    <line rend="indent1"><del rend="strikethrough" instant="true">Fast</del> From his <del
-        rend="strikethrough" instant="true">qui</del> white &amp; quivering brow<unclear
-        reason="illegible">,</unclear></line>
+    <line rend="indent1"><del rend="strikethrough" instant="true">Fast</del>
+      <mod>
+        <del rend="overwritten">f</del>
+        <add place="intralinear">F</add>
+      </mod>rom his <del rend="strikethrough" instant="true">qui</del> white &amp; quivering
+        brow<unclear reason="illegible">,</unclear></line>
     <line rend="indent1">Grant a little respite now&#8212;</line>
     <line rend="indent1">See a <del rend="strikethrough" instant="true">dien</del> disenchanted
       Nation</line>
@@ -33,10 +36,16 @@
     <milestone unit="tei:l" spanTo="#e2-0012.03"/>
     <line>The struggling World&#8212;which slaves &amp; tyrants</line>
     <line rend="right">win</line><anchor xml:id="e2-0012.03"/>
-    <line><metamark function="count">561</metamark>
-      <space unit="chars" extent="14"/>
-      <milestone unit="tei:speaker" spanTo="#e2-0012.04"/><del rend="strikethrough"
-        >Panthea</del><add place="superlinear">Ione</add><anchor xml:id="e2-0012.04"/></line>
-    <line>Hark sister, what a low yet dreadful groan</line>
+    <anchor xml:id="e2-0012.05"/>
+    <line><metamark function="count">561</metamark></line>
+    <line><milestone unit="tei:speaker" spanTo="#e2-0012.04"/><mod>
+        <del rend="strikethrough">Panthea</del>
+        <add place="superlinear">Ione</add>
+      </mod><anchor xml:id="e2-0012.04"/>
+    </line>
+    <line><mod>
+        <del rend="overwritten">Hear</del>
+        <add place="intralinear">Hark</add>
+      </mod> sister, what a low yet dreadful groan</line>
   </zone>
 </surface>
