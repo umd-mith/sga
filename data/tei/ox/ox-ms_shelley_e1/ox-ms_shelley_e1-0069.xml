@@ -32,8 +32,8 @@
     <line>Man who wert once a despot &#x26; a slave,&#x2013;</line>
     <line>A dupe or a deciever,&#x2013;a Decay</line>
     <line>A Traveller from the cradle to the grave</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0069.05"/>Through the dim night of this immortal</line>
-    <line rend="right">Day<anchor xml:id="e1-0069.05"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0069.05"/><line>Through the dim night of this immortal</line>
+    <line rend="right">Day</line><anchor xml:id="e1-0069.05"/>
     <milestone unit="tei:speaker" spanTo="#e1-0069.06"/><line rend="center">All</line><anchor
       xml:id="e1-0069.06"/>
     <line>Speak&#x2014;thy strong words may never pass away</line>

@@ -13,8 +13,9 @@
         <del rend="overwritten">s</del>
         <add place="intralinear">a</add>
       </mod>ir&#8212;</line>
+    <milestone unit="tei:stage" spanTo="#e2-0010.01"/>
     <line rend="indent1"><del rend="strikethrough">Hark</del>
-      <milestone unit="tei:stage" spanTo="#e2-0010.01"/><delSpan rend="vertical_line"
+      <delSpan rend="vertical_line"
         spanTo="#e2-0010.02"/>a shadow passes over the scene</line>
     <line>&amp; a piercing shriek is heard</line><anchor xml:id="e2-0010.02"/><anchor
       xml:id="e2-0010.01"/>

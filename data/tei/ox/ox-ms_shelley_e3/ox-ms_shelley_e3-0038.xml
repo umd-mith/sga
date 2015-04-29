@@ -7,11 +7,13 @@
   <zone type="main">
     <line>The orb I rule, &amp; shook the solid stars.</line>
     <line>The terrors of his eye illumined Heaven</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.01"/>With <mod>
+    <milestone unit="tei:l" spanTo="#e3-0038.01"/>
+    <line>With <mod>
         <del rend="strikethrough">crimson</del>
         <add place="sublinear">sanguine></add>
       </mod>light, thro the thick ragged</line>
-    <line rend="right">skirts</line><anchor xml:id="e3-0038.01"/>
+    <line rend="right">skirts</line>
+    <anchor xml:id="e3-0038.01"/>
     <line>Of the victorious Darkness, as he fell; <add><metamark function="count"
         >90</metamark></add></line>
     <line>Like the last glare of day's red agony</line>
@@ -32,12 +34,15 @@
       </mod> his thunder-baffled wings</line>
     <line><unclear reason="illegible">E</unclear>ntangled in the whirlwind, &amp; his eyes</line>
     <line>Which gazed on the undazzling sun, now blinded</line>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.04"/>By the white lightning, <mod>
+    <milestone unit="tei:l" spanTo="#e3-0038.04"/>
+    <line>By the white lightning, <mod>
         <del rend="overwritten">when</del>
         <add place="intralinear">while</add>
       </mod> the ponderous</line>
-    <line rend="right">hail</line><anchor xml:id="e3-0038.04"/>
-    <line><milestone unit="tei:l" spanTo="#e3-0038.05"/>Beats on his struggling form which
+    <line rend="right">hail</line>
+    <anchor xml:id="e3-0038.04"/>
+    <milestone unit="tei:l" spanTo="#e3-0038.05"/>
+    <line>Beats on his struggling form which
       sinks</line>
     <line rend="right">at length</line>
     <anchor xml:id="e3-0038.05"/>

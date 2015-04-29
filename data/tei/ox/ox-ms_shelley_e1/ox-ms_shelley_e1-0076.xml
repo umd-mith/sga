@@ -5,15 +5,16 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0076" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0076.jp2"/>
-  <zone type="main">
-    <milestone unit="tei:stage" spanTo="#e1-0076.01"/>
+  <zone type="main">    
     <delSpan spanTo="#e1-0076.11" rend="vertical_line"/>
+    <milestone unit="tei:stage" spanTo="#e1-0076.01"/>
     <line rend="indent1">Enter <mod>
         <del rend="overwritten">m</del>
         <add place="intralinear">M</add>
       </mod>ercury followed by the Furies</line>
-    <line>whom he represses with his wand.</line><anchor xml:id="e1-0076.11"/><anchor
-      xml:id="e1-0076.01"/>
+    <line>whom he represses with his wand.</line>
+    <anchor xml:id="e1-0076.01"/>
+    <anchor xml:id="e1-0076.11"/>
     <milestone unit="tei:speaker" spanTo="#e1-0076.02"/>
     <line rend="center">1<hi rend="sup">st</hi>. Fury</line><anchor xml:id="e1-0076.02"/>
     <line>Ha I <mod>
@@ -32,9 +33,9 @@
           >hap</del>heap</add></line>
     <line rend="indent1"><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"
         /><anchor xml:id="e1-0076.06"/></line>
-    <line>To a death-bird after battle!</line>
-    <milestone unit="tei:speaker" spanTo="#e1-0076.07"/>
+    <line>To a death-bird after battle!</line>    
     <delSpan spanTo="#e1-0076.12" rend="vertical_line"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0076.07"/>
     <line rend="center">1<hi rend="sup">st</hi>.</line><anchor xml:id="e1-0076.07"/>
     <mod spanTo="#e1-0076.08"/><line rend="indent3">Herald of Gods</line>
     <line>Darest thou delay<mod>
