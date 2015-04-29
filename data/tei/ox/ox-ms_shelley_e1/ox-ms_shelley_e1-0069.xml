@@ -6,11 +6,11 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0069.jp2"/>
   <zone type="library"><line rend="right">34</line></zone>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="e1-0069.01"/><line rend="center"><add><unclear
+    <milestone unit="tei:speaker" spanTo="#e1-0069.01"/><line rend="center"><add><unclear
           reason="case">a</unclear>
         <unclear reason="case">c</unclear>onfused Voice</add></line><anchor xml:id="e1-0069.01"/>
     <line>We hear&#x2014;thy words waken Oblivion.</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.02"/><line rend="center">Demogorgon</line>
+    <milestone unit="tei:speaker" spanTo="#e1-0069.02"/><line rend="center">Demogorgon</line>
     <anchor xml:id="e1-0069.02"/>
     <line><add place="interlinear"><metamark function="count"><unclear reason="illegible"
             >500</unclear></metamark></add>Spirits whose homes are flesh&#x2013;ye beasts &#x26;
@@ -24,20 +24,20 @@
         <del rend="strikethrough">throng</del>
         <add>feed</add>
       </mod> Air<unclear reason="illegible">'</unclear>s solitudes</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.03"/><line rend="center">a Voice</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0069.03"/><line rend="center">a Voice</line><anchor
       xml:id="e1-0069.03"/>
     <line>Thy voice to us is wind among still woods</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.04"/><line rend="center">Demogorgon</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0069.04"/><line rend="center">Demogorgon</line><anchor
       xml:id="e1-0069.04"/>
     <line>Man who wert once a despot &#x26; a slave,&#x2013;</line>
     <line>A dupe or a deciever,&#x2013;a Decay</line>
     <line>A Traveller from the cradle to the grave</line>
-    <line><milestone unit="tei:l" spanTo="e1-0069.05"/>Through the dim night of this immortal</line>
+    <line><milestone unit="tei:l" spanTo="#e1-0069.05"/>Through the dim night of this immortal</line>
     <line rend="right">Day<anchor xml:id="e1-0069.05"/></line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.06"/><line rend="center">All</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0069.06"/><line rend="center">All</line><anchor
       xml:id="e1-0069.06"/>
     <line>Speak&#x2014;thy strong words may never pass away</line>
-    <milestone unit="tei:speaker" spanTo="e1-0069.07"/><line rend="center">Demogorgon</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0069.07"/><line rend="center">Demogorgon</line><anchor
       xml:id="e1-0069.07"/>
     <line>This is the Day which down the void Abysm</line>
     <line>At the Earthborn's spell yawns for Heavens Despotism</line>

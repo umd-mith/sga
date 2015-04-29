@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0052" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0052.jp2"/>
   <zone type="main">
-    <milestone unit="tei:speaker" spanTo="e1-0052.01"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0052.01"/>
     <line rend="center">The Earth </line>
     <anchor xml:id="e1-0052.01"/>
     <line rend="indent3">How canst thou hear</line>

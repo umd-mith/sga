@@ -35,7 +35,9 @@
         <del rend="overwritten">s</del>
         <add place="intralinear">es</add>
       </mod>ome road</line>
+    <milestone unit="tei:l" spanTo="#a"/>
     <line rend="indent2">"doth walk in fear and dread</line>
+    <anchor xml:id="a"/>
     <line rend="indent2">"and having once turned round</line>
     <line rend="right"><metamark>L</metamark>walks on</line><!--text is contained within an "L" bracket to indicate line runover-->
     <line rend="indent2">"<del rend="smear">wal</del>And turns no more his

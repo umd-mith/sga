@@ -10,7 +10,7 @@
   </zone>
 
   <zone type="main" rotate="180">
-    <addSpan spanTo="#e1-0002.01"/>
+    <!--<addSpan spanTo="#e1-0002.01"/>-->
     <line rend="indent4"><metamark function="count">400</metamark> &#x2014; &#x2014; <metamark
         function="count">23<hi rend="sup">d</hi> 163.</metamark></line>
     <line rend="indent4"><hi rend="underline"><metamark function="count">163</metamark></hi></line>

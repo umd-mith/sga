@@ -10,7 +10,7 @@
   <zone type="main">
     <line>And heard, &#x26; cried &#x2014; ah woe is me!</line>
     <line>And died as mad as the wild waves be</line>
-    <milestone unit="tei:speaker" spanTo="e1-0048.01"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0048.01"/>
     <line rend="center">3</line>
     <anchor xml:id="e1-0048.01"/>
     <line>By such dread words from Earth to Heaven</line>

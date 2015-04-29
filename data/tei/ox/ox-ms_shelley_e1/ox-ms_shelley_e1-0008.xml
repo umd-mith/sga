@@ -47,8 +47,8 @@
         <add place="superlinear">visions</add>
       </mod> of hate &amp; <del rend="strikethrough"><unclear unit="chars" extent="1"/></del>
         car<retrace cause="unclear">e</retrace></line>
-    <line><milestone unit="tei:l" spanTo="#e1-0008.09"/>And each one who waked as his brother</line>
-    <line rend="right">slept<anchor xml:id="e1-0008.09"/></line>
+    <milestone unit="tei:l" spanTo="#e1-0008.09"/><line>And each one who waked as his brother</line>
+    <line rend="right">slept</line><anchor xml:id="e1-0008.09"/>
     <line>Found the truth&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0008.07"/>
     <line rend="center">Semichorus 2.</line>

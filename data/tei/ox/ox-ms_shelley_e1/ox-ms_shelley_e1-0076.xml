@@ -6,7 +6,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0076" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0076.jp2"/>
   <zone type="main">
-    <milestone unit="tei:stage" spanTo="e1-0076.01"/>
+    <milestone unit="tei:stage" spanTo="#e1-0076.01"/>
     <delSpan spanTo="#e1-0076.11" rend="vertical_line"/>
     <line rend="indent1">Enter <mod>
         <del rend="overwritten">m</del>
@@ -14,7 +14,7 @@
       </mod>ercury followed by the Furies</line>
     <line>whom he represses with his wand.</line><anchor xml:id="e1-0076.11"/><anchor
       xml:id="e1-0076.01"/>
-    <milestone unit="tei:speaker" spanTo="e1-0076.02"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0076.02"/>
     <line rend="center">1<hi rend="sup">st</hi>. Fury</line><anchor xml:id="e1-0076.02"/>
     <line>Ha I <mod>
         <del rend="strikethrough">smell</del>
@@ -43,13 +43,13 @@
       </mod> take cheer, <del rend="strikethrough">a richer prey</del></line>
     <line><mod>
         <del rend="strikethrough">Children of Hell</del>
-        <add place="superlinear"><milestone unit="tei:stage" spanTo="e1-0076.09"/>He pauses<unclear
+        <add place="superlinear"><milestone unit="tei:stage" spanTo="#e1-0076.09"/>He pauses<unclear
             reason="illegible">.</unclear><anchor xml:id="e1-0076.09"/></add>
       </mod> If the Son of Maia soon</line>
     <line>Should make us food &#x26; sport? Who can please long</line>
     <line>The <unclear reason="case">O</unclear>mnipotent?</line><anchor xml:id="e1-0076.08"/>
     <anchor xml:id="e1-0076.12"/>
-    <milestone unit="tei:speaker" spanTo="e1-0076.10"/><line rend="center">Mercury</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0076.10"/><line rend="center">Mercury</line><anchor
       xml:id="e1-0076.10"/>
     <line rend="indent3">Back to your towers of iron</line>
     <line>And gnash, beside the streams of fire wail</line>

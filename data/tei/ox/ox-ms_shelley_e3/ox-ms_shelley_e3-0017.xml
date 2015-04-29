@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0017.jp2"/>
   <zone type="library"><line rend="right">6</line></zone>
   <zone type="main">
-    <line rend="right"><milestone unit="tei:seg" spanTo="e3-0017.01" xml:id="e3-0017.02"
+    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0017.01" xml:id="e3-0017.02"
         /><add>image</add><anchor xml:id="e3-0017.01"/></line>
   </zone>
 </surface>

@@ -9,7 +9,7 @@
   <zone type="pagination" rend="bordered"><line>130</line></zone>
   
   <zone type="main">
-    <line rend="indent3"><milestone unit="tei:head" spanTo="c56-0100.01"/>Chapter 1<mod><del rend="overwritten">1</del><add place="intralinear">2</add></mod><anchor xml:id="c56-0100.01"/></line>
+    <line rend="indent3"><milestone unit="tei:head" spanTo="#c56-0100.01"/>Chapter 1<mod><del rend="overwritten">1</del><add place="intralinear">2</add></mod><anchor xml:id="c56-0100.01"/></line>
     <milestone unit="tei:p"/>
     <line rend="indent1">I cannot attempt to describe what I</line>
     <line>then felt &#x2013; I had <mod>
