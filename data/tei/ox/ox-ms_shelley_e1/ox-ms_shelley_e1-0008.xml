@@ -11,9 +11,8 @@
     <line>What charioteers are th<mod>
         <del rend="overwritten">eye</del>
         <add place="intralinear">ese</add>
-      </mod></line>
-    <line rend="indent4"><milestone unit="tei:speaker" spanTo="#e1-0008.02"/>Panthea<anchor
-        xml:id="e1-0008.02"/> Where are their chariots?</line>
+      </mod><milestone unit="tei:speaker" spanTo="#e1-0008.02"/>Panthea<anchor
+        xml:id="e1-0008.02"/>Where are their chariots?</line>
     <line rend="indent3"><del rend="strikethrough"><milestone unit="tei:speaker"
           spanTo="#e1-0008.03"/>Chorus <unclear reason="illegible">o</unclear><anchor
           xml:id="e1-0008.03"/><metamark function="insert">&lt;</metamark></del></line>
@@ -22,6 +21,7 @@
         <del rend="overwritten">1</del>
         <add place="intralinear">o</add>
       </mod>f Hours. 1.</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <anchor xml:id="e1-0008.10"/>
     <milestone unit="tei:speaker" spanTo="#e1-0008.11"/>
     <line rend="center"><del rend="strikethrough">Semichorus 1</del></line>
@@ -38,6 +38,7 @@
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e1-0008.05"/>
     <line rend="indent4">Oh below the deep</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <milestone unit="tei:speaker" spanTo="#e1-0008.06"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0008.06"/>
