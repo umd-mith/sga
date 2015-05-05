@@ -14,6 +14,7 @@
     <line rend="indent1">As the flying-fish leap</line>
     <line rend="indent1">From the Indian deep,</line>
     <line>And mix with the sea birds half asleep.</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:speaker" spanTo="#e1-0010.02"/>
     <line rend="center">Chorus of Hours</line>
     <anchor xml:id="e1-0010.02"/>
@@ -22,6 +23,7 @@
     <line>And your wings are soft &amp; swift as thought,</line>
     <line>And your eyes are as Love which is veiled not<unclear reason="illegible"
       >?</unclear></line>
+    <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:speaker" spanTo="#e1-0010.03"/>
     <line rend="center">Chorus of spirits</line>
     <anchor xml:id="e1-0010.03"/>
@@ -36,6 +38,7 @@
         <add place="intralinear">A</add>
       </mod>
       <unclear reason="case">H</unclear>eaven of serene &amp; mighty motion.</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">From that deep Abyss</line>
     <line rend="indent1">Of wonder &amp; bliss</line>
     <line>Whose caverns are chrystal palaces,</line>
