@@ -48,13 +48,12 @@
         <add place="superlinear">visions</add>
       </mod> of hate &amp; <del rend="strikethrough"><unclear unit="chars" extent="1"/></del>
         car<retrace cause="unclear">e</retrace></line>
-    <milestone unit="tei:l" spanTo="#e1-0008.09"/><line>And each one who waked as his brother</line>
-    <line rend="right">slept</line><anchor xml:id="e1-0008.09"/>
+    <line>And each one who waked as his brother <add place="sublinear">slept</add></line>
     <line>Found the truth&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0008.07"/>
     <line rend="center">Semichorus 2.</line>
     <anchor xml:id="e1-0008.07"/>
-    <line rend="indent3">Worse than his visions were</line>
+    <line rend="indent4">Worse than his visions were</line>
     <milestone unit="tei:speaker" spanTo="#e1-0008.08"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0008.08"/>
