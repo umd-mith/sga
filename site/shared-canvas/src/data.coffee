@@ -559,6 +559,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                     indent = null
                     align = null
                     if modInfo[id].get("indent")? then indent = modInfo[id].get "indent"
+                    if modInfo[id].get("align")? then align = modInfo[id].get "align"
                     makeLinebreak pos, {"indent":indent, "align":align}
                     br_pushed = true
                 last_pos = pos
