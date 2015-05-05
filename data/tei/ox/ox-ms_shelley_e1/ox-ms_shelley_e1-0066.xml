@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0066.jp2"/>
   <zone type="main">
     <line>Darkens above.</line>
-    <milestone unit="tei:speaker" spanTo="e1-0066.01"/><line rend="center">Ione</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0066.01"/><line rend="center">Ione</line><anchor
       xml:id="e1-0066.01"/>
     <line>He speaks! <mod>
         <del rend="strikethrough">O sister</del>
@@ -14,7 +14,7 @@
       </mod> shelter me&#x2014;</line>
     <line rend="indent5"><add><metamark function="displacement" xml:id="e1-0066.02"
         >&#60;</metamark></add></line>
-    <milestone unit="tei:speaker" spanTo="e1-0066.03"/><line rend="center">Phantasm</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0066.03"/><line rend="center">Phantasm</line><anchor
       xml:id="e1-0066.03"/>
     <line>Fiend I defy thee, with a calm fixed mind</line>
     <line rend="indent1">All that thou canst inflict I bid thee do</line>

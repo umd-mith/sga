@@ -54,12 +54,14 @@
           </mod></add>
       </mod></line>
     <!--The composition sequence of the following line is uncertain.-->
-    <line><delSpan spanTo="#e1.0015.09" rend="strikethrough"/>To the <mod>
+    <delSpan spanTo="#e1.0015.09" rend="strikethrough"/>
+    <line>To the <mod>
         <del rend="strikethrough">pale</del>
         <add place="sublinear">unpavili</add>
       </mod> sky, my</line>
     <line>unpavili <milestone unit="tei:speaker" spanTo="#e1-0015.010"/>Ione<anchor
-        xml:id="e1-0015.10"/><anchor xml:id="e1.0015.09"/></line>
+      xml:id="e1-0015.010"/></line>
+    <anchor xml:id="e1.0015.09"/>
     <line>To the unpavilioned sky<mod>
         <del rend="unmarked">,</del>
         <add>!</add>

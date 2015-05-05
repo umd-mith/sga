@@ -21,11 +21,11 @@
     <line>Supreme, &#x26; with the groans of pining slaves</line>
     <line>Fills your dim glens &#x26; liquid wildernesses?</line>
     <line>Why answer ye not, still? brethren!</line>
-    <milestone unit="tei:speaker" spanTo="e1-0050.01"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0050.01"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0050.01"/>
     <line rend="indent4">They dare not</line>
-    <milestone unit="tei:speaker" spanTo="e1-0050.02"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0050.02"/>
     <line rend="center">Prometheus</line><anchor xml:id="e1-0050.02"/>
     <line>Who dares? for I would hear that curse again....</line>
     <line><unclear reason="illegible">H</unclear>a, what an awful whisper rises up!</line>

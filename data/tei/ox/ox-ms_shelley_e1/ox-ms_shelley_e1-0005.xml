@@ -12,16 +12,15 @@
       </figure></add>
   </zone>
 
-  <zone type="main">
-    <milestone unit="tei:act" spanTo="#e1-0005.01"/>
-    <line rend="center">Act 4<anchor xml:id="e1-0005.01"/>
+  <zone type="main">    
+    <line rend="center"><milestone unit="tei:head" spanTo="#e1-0005.01"/>Act 4<anchor xml:id="e1-0005.01"/>
       <metamark> 1</metamark></line>
     <milestone unit="tei:stage" spanTo="#e1-0005.02"/>
     <milestone unit="tei:p" spanTo="#e1-0005.03"/>
-    <line>Scene a <anchor xml:id="e1-0005.08"/>
+    <line>Scene a 
       <mod>
         <del rend="strikethrough">beautiful</del>
-        <add place="superlinear" next="#e1-0005.08">part of</add>
+        <add place="superlinear">part of</add>
       </mod> forest near the cave</line>
     <line>of Prometheus&#x2014; Panthea &#x26; Ione <del rend="strikethrough">are</del> are</line>
     <line><del rend="strikethrough">sitting beside a stream</del></line>

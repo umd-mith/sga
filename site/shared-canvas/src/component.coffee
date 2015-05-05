@@ -224,6 +224,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
         d = $.parseHTML data
         for e in d
           if $(e).is('div')
+            $(e).addClass("readingText")
             curCanvas.trigger "addLayer", "Text", e
 
     setXmlMode: (e) ->

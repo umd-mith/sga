@@ -31,7 +31,8 @@
     <line>Such art thou now, nor is it I alone</line>
     <line>Thy sister thy companion, thine own chosen one</line>
     <line>But the whole world which seeks thy sympathy.</line>
-    <line><milestone unit="tei:l" spanTo="#e1-0022.01"/>Hearest thou not sound<add>s</add> i the air
+    <milestone unit="tei:l" spanTo="#e1-0022.01"/>
+    <line>Hearest thou not sound<add>s</add> i the air
       which speak</line>
     <line rend="right">the <unclear reason="case">l</unclear>ove</line>
     <anchor xml:id="e1-0022.01"/>
@@ -43,7 +44,7 @@
     <milestone unit="tei:stage" spanTo="#e3-0022.02"/>
     <line rend="right">Music</line>
     <anchor xml:id="e3-0022.02"/>
-    <milestone unit="tei:speaker" spanTo="e3-0022.03"/>
+    <milestone unit="tei:speaker" spanTo="#e3-0022.03"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0022.03"/>
     <line>Thy words are sweeter than aught else but his</line>
