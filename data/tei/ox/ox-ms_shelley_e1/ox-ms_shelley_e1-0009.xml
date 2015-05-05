@@ -14,7 +14,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0009.01"/>
     <line rend="center">Semichorus 2</line>
     <anchor xml:id="e1-0009.01"/>
-    <line><del rend="strikethrough">And leap,</del></line>
+    <line rend="indent8"><del rend="strikethrough">And leap,</del></line>
     <line>As the billows leap in the morning beam</line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.02"/>
     <line rend="center">Chorus</line>
@@ -56,7 +56,7 @@
     <anchor xml:id="e1-0009.07"/>
     <line>Like the clouds &amp; the sunbeams unite</line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.03"/>
-    <line rend="right">a Voice</line>
+    <line rend="center">a Voice</line>
     <anchor xml:id="e1-0009.03"/>
     <line rend="right">Unite<unclear reason="illegible">!</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e1-0009.04"/>

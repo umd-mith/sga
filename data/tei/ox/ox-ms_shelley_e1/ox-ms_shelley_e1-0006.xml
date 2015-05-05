@@ -11,6 +11,7 @@
     <line rend="indent1">Be the faded flowers</line>
     <line rend="indent1">Of Deaths bare bowers</line>
     <line>Spread on the corpse of the King of Hours<unclear reason="illegible">!</unclear></line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent2">Haste, oh haste!</line>
     <line rend="indent2">As shades are chased</line>
     <line>Trembling, b<retrace cause="unclear">y</retrace> Day, from Heaven's blue waste<unclear
@@ -20,8 +21,7 @@
         <add place="superlinear">melt</add>
       </mod> away</line>
     <line rend="indent2">Like dissolving spray</line>
-    <line>From the children of a diviner day<unclear reason="illegible">,</unclear>
-      <unclear reason="illegible">t</unclear></line>
+    <line>From the children of a diviner day,<del rend ="strikethrough">t</del></line>
     <addSpan spanTo="#e1-0006.06" place="interlinear"/>
     <line rend="indent2">With the lullaby</line>
     <line rend="indent2">Of winds that die</line>
@@ -30,9 +30,9 @@
         place="superlinear"><milestone unit="tei:stage" spanTo="#e1-0006.01"/><hi rend="underline"
           >they vanish</hi><anchor xml:id="e1-0006.01"/></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.02"/>
-    <line rend="center">Ione <del rend="strikethrough"><unclear reason="illegible"
-          >awakening</unclear></del></line><anchor xml:id="e1-0006.02"/>
-    <line><metamark><unclear reason="illegible">/</unclear></metamark></line>
+    <line rend="center">Ione (<del rend="strikethrough"><unclear reason="illegible"
+          >awakening</unclear></del>)</line><anchor xml:id="e1-0006.02"/>
+    <line rend="center"><metamark><unclear reason="illegible">/</unclear></metamark></line>
     <line rend="indent2">What dark forns were they?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.03"/>
     <line rend="center">Panthea</line>
