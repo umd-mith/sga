@@ -33,12 +33,11 @@
     <line>Come, swift Spirits of might &amp; of pleasure,</line>
     <line>Fill the dance &amp; the music of mirth,</line>
     <milestone unit="tei:l" spanTo="#e1-0012.03"/>
-    <line>As the waves of a thousand streams rush</line>
-    <line rend="right">by</line>
+    <line>As the waves of a thousand streams rush <add place="sublinear">by</add></line>
     <anchor xml:id="e1-0012.03"/>
     <line>To an Ocean of splendour &amp; harmony!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0012.02"/>
-    <line>Chorus o<hi rend="underline">f S</hi>pirits</line>
+    <line rend="center">Chorus o<hi rend="underline">f S</hi>pirits</line>
     <anchor xml:id="e1-0012.02"/>
     <line rend="indent1"><del rend="strikethrough" instant="true">Away, away!</del></line>
     <line rend="indent1"><del rend="strikethrough" instant="true">We aw</del></line>

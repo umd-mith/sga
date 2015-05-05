@@ -16,9 +16,9 @@
     <line>Wherever we fly we lead along</line>
     <line>In leashes, like starbeams, soft yet strong</line>
     <line>The clouds that are heavy with Loves sweet rain</line>
-    <line rend="left"><metamark function="count">1<unclear>5</unclear>7</metamark></line>
+    <line><metamark function="count">1<unclear>5</unclear>7</metamark></line>
     <milestone unit="tei:stage" spanTo="#e1-0015.08"/>
-    <line rend="indent5"><hi rend="underline">they depart</hi></line>
+    <line rend="indent7"><hi rend="underline">they depart</hi></line>
     <anchor xml:id="e1-0015.08"/>
     <milestone unit="tei:speaker" spanTo="#e1-0015.02"/>
     <line rend="indent3"><mod>
@@ -30,7 +30,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0015.03"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0015.03"/>
-    <line rend="indent4">Yet feel you no delight</line>
+    <line rend="indent6">Yet feel you no delight</line>
     <line>From the past sweetness?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0015.04"/>
     <line rend="center">Panthea</line>
@@ -57,9 +57,9 @@
     <delSpan spanTo="#e1.0015.09" rend="strikethrough"/>
     <line>To the <mod>
         <del rend="strikethrough">pale</del>
-        <add place="sublinear">unpavili</add>
-      </mod> sky, my</line>
-    <line>unpavili <milestone unit="tei:speaker" spanTo="#e1-0015.010"/>Ione<anchor
+      <add place="sublinear"><del rend="strikethrough">unpavili Ione</del></add>
+    </mod><del rend="strikethrough">sky, my</del></line>
+    <line><milestone unit="tei:speaker" spanTo="#e1-0015.010"/>Ione<anchor
       xml:id="e1-0015.010"/></line>
     <anchor xml:id="e1.0015.09"/>
     <line>To the unpavilioned sky<mod>
@@ -69,7 +69,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0015.05"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0015.05"/>
-    <line rend="indent4">Even whilst we speak</line>
+    <line rend="indent6">Even whilst we speak</line>
     <line>New notes arise . . . what is that awful sound</line>
     <milestone unit="tei:speaker" spanTo="#e1-0015.06"/>
     <line rend="center">Panthea</line>
