@@ -39,10 +39,9 @@
     <anchor xml:id="e1-0014.05"/>
     <line>Solemn &amp; slow &amp; serene &amp; bright</line>
     <milestone unit="tei:l" spanTo="#e1-0014.09"/>
-    <line>Leading the day &amp; outspeeding the</line>
-    <line rend="right">night</line>
+    <line>Leading the day &amp; outspeeding the <add place="sublinear">night</add></line>
     <anchor xml:id="e1-0014.09"/>
-    <line rend="left"><add><metamark function="count">146 </metamark></add>With the Powers of a
+    <line><add><metamark function="count">146 </metamark></add>With the Powers of a
       world of perfect light&#x2014;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0014.06"/>
     <line rend="center">Semichorus 1.</line>
