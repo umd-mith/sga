@@ -11,13 +11,10 @@
     <milestone unit="tei:speaker" spanTo="#e1-0017.01"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e1-0017.01"/>
-    <milestone unit="tei:l" spanTo="#e1-0017.03"/>
     <line><mod>
         <del rend="strikethrough">And see</del>
         <add place="superlinear">But see</add>
-      </mod>, where through two openings in the</line>
-    <line rend="right">forest</line>
-    <anchor xml:id="e1-0017.03"/>
+      </mod>, where through two openings in the <add place="sublinear">forest</add></line>
     <line>Which hanging branches overcanopy,</line>
     <line>And where two runnels of a rivulet</line>
     <line>Between the close moss violet-inwoven</line>
@@ -25,10 +22,7 @@
         <del rend="strikethrough">friends</del>
         <add place="superlinear">sisters</add>
       </mod></line>
-    <milestone unit="tei:l" spanTo="#e1-0017.04"/>
-    <line>Who part with sighs that they may meet</line>
-    <line rend="right">in smiles</line>
-    <anchor xml:id="e1-0017.04"/>
+    <line>Who part with sighs that they may meet <add place="sublinear">in smiles</add></line>
     <line>T<mod>
         <del rend="overwritten">i</del>
         <add place="intralinear">u</add>
@@ -42,7 +36,7 @@
       </mod> deeper yet</line>
     <line>Under the ground &amp; through the windless air</line>
     <milestone unit="tei:speaker" spanTo="#e1-0017.02"/>
-    <line rend="indent2">Ione</line>
+    <line rend="center">Ione</line>
     <anchor xml:id="e1-0017.02"/>
     <line>I see a chariot like that thinnest boat</line>
     <line>In which the Mother of the Months is borne</line>

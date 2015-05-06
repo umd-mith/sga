@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0007" partOf="#ox-ms_shelley_e1">
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0007" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0007.jp2"/>
   <zone type="library">3</zone>
   <zone type="main">
     <line rend="indent1">They outspeeded the blast,</line>
-    <line rend="indent1">While 'tis said, they are fled&#x2014;</line>
+    <line rend="indent1">While 'tis said, they are fled—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0007.01"/>
-    <line rend="indent2">Ione</line>
+    <line rend="center">Ione</line>
     <anchor xml:id="e1-0007.01"/>
     <line rend="indent1">Whither, oh wh<mod>
-        <del rend="overwritten">e</del>
-        <add place="intralinear">i</add>
-      </mod>ther?</line>
+      <del rend="overwritten">e</del>
+      <add place="intralinear">i</add>
+    </mod>ther?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0007.02"/>
-    <line rend="indent2">Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e1-0007.02"/>
-    <line rend="indent1">To the <del rend="strikethrough"> cold,&#x2014;to</del></line>
+    <line rend="indent1">To the <del rend="strikethrough"> cold,—to</del></line>
     <line rend="indent2">dark,to the past, to the dead.</line>
     <milestone unit="tei:speaker" spanTo="#e1-0007.04"/>
     <line rend="center">Voice of unseen Spirits</line>
@@ -27,29 +26,24 @@
     <line rend="indent1">Dew-stars gleam on Earth,</line>
     <line rend="indent1">Waves assemble on Ocean,</line>
     <line rend="indent1">They are gathered &amp; driven</line>
-    <line>By the Storm of delight, by the panic of glee<unclear reason="illegible"
-      >.</unclear></line>
-    <line rend="indent1">They shake with emotion&#x2014;</line>
-    <line rend="indent1"><add>They dance in their mirth</add><unclear reason="illegible"
-            ><add><metamark function="insert">&lt;</metamark></add></unclear></line>
+    <line>By the Storm of delight, by the panic of glee<unclear reason="illegible">.</unclear></line>
+    <line rend="indent1">They shake with emotion—</line>
+    <line rend="indent1"><add>They dance in their mirth</add><unclear reason="illegible"><add><metamark function="insert">&lt;</metamark></add></unclear></line>
     <line rend="indent2">But where are ye?</line>
-    <space dim="vertical" unit="lines" extent="1" />
+    <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent1">The pine-boughs are singing</line>
     <line rend="indent1"><mod>
-        <del rend="overwritten">New</del>
-        <add place="intralinear">Old</add>
-      </mod> songs with new gladness,</line>
+      <del rend="overwritten">New</del>
+      <add place="intralinear">Old</add>
+    </mod> songs with new gladness,</line>
     <line rend="indent1">The billows &amp; fountains</line>
     <line rend="indent1">Fresh music are flinging</line>
-    <milestone unit="tei:l" spanTo="#e1-0007.05"/>
-    <line>Like the notes of a spirit from land &amp; from</line>
-    <line rend="right"><unclear reason="case">S</unclear>ea</line>
-    <anchor xml:id="e1-0007.05"/>
+    <line>Like the notes of a spirit from land &amp; from <add place="sublinear">Sea</add></line>
     <line rend="indent1">The storms mock the mountains</line>
     <line rend="indent1"><mod>
-        <del rend="strikethrough">Both howl in their</del>
-        <add place="superlinear">With the thunder of</add>
-      </mod> gladness.</line>
+      <del rend="strikethrough">Both howl in their</del>
+      <add place="superlinear">With the thunder of</add>
+    </mod> gladness.</line>
     <line rend="indent2">But where are ye?</line>
   </zone>
 </surface>
