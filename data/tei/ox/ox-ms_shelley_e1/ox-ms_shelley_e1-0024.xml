@@ -5,13 +5,11 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0024" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0024.jp2"/>
   <zone type="main">
-    <milestone unit="tei:l" spanTo="#e1-0024.01"/>
-    <line>Threatenedst to muffle round with black destruction,</line>
-    <line rend="right">sending</line>
-    <anchor xml:id="e1-0024.01"/>
+    <line>Threatenedst to muffle round with black destruction, <add place="sublinear">sending</add></line>
     <line rend="indent1">A solid cloud to rain hot thunderstones,</line>
     <line rend="indent1">And splinter &amp; knead down my childrens bones,</line>
     <line>All I bring forth, to one void mass battering &amp; blending</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">Until each craglike tower &amp; storied column</line>
     <line rend="indent1">Palace, &amp; <unclear reason="case">O</unclear>belisk &amp; Temple
       solemn</line>
@@ -21,27 +19,19 @@
       </mod></line>
     <line rend="indent1">My sea-like forests, every blade &amp; blossom</line>
     <line rend="indent1">Which finds a grave or cradle on my bosom</line>
-    <milestone unit="tei:l" spanTo="#e1-0024.02"/>
     <line>Were stamped <unclear reason="illegible">b</unclear>y <mod>
         <del rend="overwritten">m</del>
         <add place="intralinear">th</add>
-      </mod>y strong hate into a lifeless</line>
-    <line rend="right"><add><metamark function="separate">&#8970;</metamark></add>mire</line>
-    <anchor xml:id="e1-0024.02"/>
-    <milestone unit="tei:l" spanTo="#e1-0024.03"/>
-    <line rend="indent1">How art thou sunk, withdrawn, coverd&#x2014;</line>
-    <line rend="right">drunk up</line>
-    <anchor xml:id="e1-0024.03"/>
+    </mod>y strong hate into a lifeless <add place="sublinear"><metamark function="separate">&#8970;</metamark>mire</add></line>
+    <space dim="vertical" unit="lines" extent="1" />
+    <line rend="indent1">How art thou sunk, withdrawn, coverd&#x2014; <add place="sublinear">drunk up</add></line>
     <line rend="indent1">By thirsty nothing, as the brackish cup</line>
     <line>Drained by a Desart-troop&#x2014;a little drop for all!</line>
     <line rend="indent1">And from beneath, around, within, above,</line>
     <line rend="indent1">Filling thy void annihilation, Love</line>
-    <milestone unit="tei:l" spanTo="#e1-0024.04"/>
-    <line>Bursts in like light on caves cloven by</line>
-    <line rend="right">the thunderball</line>
-    <anchor xml:id="e1-0024.04"/>
+    <line>Bursts in like light on caves cloven by <add place="sublinear">the thunderball</add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0024.05"/>
-    <line rend="indent3">The <mod>
+    <line rend="center">The <mod>
         <del rend="overwritten">m</del>
         <add place="intralinear">M</add>
       </mod>oon</line>
