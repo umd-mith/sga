@@ -27,13 +27,9 @@
       </mod>
       <mod>
         <del rend="strikethrough">see, as they flas</del>
-        <del rend="strikethrough"><add place="sublinear">as</add></del>
-        <add place="sublinear"> the beams flash</add>
-        <mod>
-          <del rend="strikethrough">deep</del>
-          <add place="superlinear">on</add>
-        </mod>
-      </mod><add place="sublinear"><metamark function="count">250</metamark></add></line>
+        <add place="sublinear"><del rend="strikethrough">as</del>the beams flash<del rend="strikethrough">deep</del>on</add></mod>
+      <metamark function="count">250</metamark>    
+    </line>
     <line><mod>
         <del rend="strikethrough">They</del>
         <add place="superlinear">And</add>
