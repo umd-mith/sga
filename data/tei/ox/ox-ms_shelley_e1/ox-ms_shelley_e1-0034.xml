@@ -22,7 +22,7 @@
     <line/>
     <line>contest of <mod>
         <del rend="strikethrough">raphsodists</del>
-        <add place="intralinear">rhapsodists</add>
+        <add place="superlinear">rhapsodists</add>
       </mod> to the honor of the god<mod>
         <del rend="overwritten">&#8212;</del>
         <add place="intralinear">?</add>
@@ -31,9 +31,8 @@
       not that alone, but <retrace cause="unclear">c</retrace>ontests in</line>
     <line>every species of <del rend="strikethrough">mus</del> musical art. <milestone
         unit="tei:speaker" spanTo="#e1-0034.07"/>Soc.<anchor xml:id="e1-0034.07"/></line>
-    <delSpan spanTo="#e1-0034.01" rend="strikethrough"/>
-    <line>And what prize didst thou gain, &amp; how</line>
-    <line>did you gain it?<anchor xml:id="e1-0034.01"/> And into what contest</line>
+    <line><del rend="strikethrough">And what prize didst thou gain, &amp; how</del></line>
+    <line><del rend="strikethrough">did you gain it?</del> And into what contest</line>
     <line>did you enter, &amp; what was the event of</line>
     <line>you<retrace cause="unclear">r</retrace> efforts. <milestone unit="tei:speaker"
         spanTo="#e1-0034.08"/>Ion.<anchor xml:id="e1-0034.08"/> I carried the first prize</line>
@@ -72,8 +71,8 @@
       <add place="superlinear">for</add>
       <del rend="unmarked"><add place="superlinear">for</add></del> it <unclear reason="illegible"
         >im</unclear>poses on you</line>
-    <line><add place="superlinear"><unclear reason="illegible">first</unclear></add>the <del
-        rend="strikethrough">ni<unclear reason="illegible">c</unclear>est</del> nicest care of your
+    <line> the <add place="superlinear"><unclear reason="illegible">first</unclear></add>
+      <del rend="strikethrough">ni<unclear reason="illegible">c</unclear>est</del> nicest care of your
       persons</line>
     <line>&amp; the most studied elegance of dress</line>
     <line>so that you must <del rend="strikethrough">appear most</del></line>
