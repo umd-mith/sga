@@ -12,18 +12,13 @@
     <line rend="indent1">It clothes with unexpected birth</line>
     <line>My cold bare bosom&#x2014; oh, it must be thine</line>
     <line rend="indent2">On mine, on mine!</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">Gazing on thee I feel I know</line>
-    <milestone unit="tei:l" spanTo="#e1-0025.01"/>
-    <line rend="indent1">Green stalks burst forth, &amp; bright flowers</line>
-    <line rend="right">grow</line>
-    <anchor xml:id="e1-0025.01"/>
+    <line rend="indent1">Green stalks burst forth, &amp; bright flowers <add place="sublinear">grow</add></line>
     <line>And living shapes upon my bosom move</line>
     <line rend="indent1">Music is in the sea &amp; air</line>
     <line rend="indent1">Winged clouds soar here &amp; there</line>
-    <milestone unit="tei:l" spanTo="#e1-0025.02"/>
-    <line>Dark with the rain new buds are dreaming</line>
-    <line rend="right">of</line>
-    <anchor xml:id="e1-0025.02"/>
+    <line>Dark with the rain new buds are dreaming<add place="sublinear">of</add></line>
     <line rend="indent2">'Tis Love, all Love!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0025.03"/>
     <line rend="center"><hi rend="underline">The Earth</hi></line>
@@ -39,20 +34,9 @@
       </mod>t flowers<unclear reason="illegible">&#x2014;</unclear></line>
     <line rend="indent1">Upon the winds, among the clouds 'tis spread</line>
     <line rend="indent1">It wakes a life in the forgotten dead</line>
-    <milestone unit="tei:l" spanTo="#e1-0025.04"/>
-    <line>They breathe a spirit up from their</line>
-    <line rend="right">obscurest <mod>
-        <del rend="overwritten">p</del>
-        <add place="intralinear">b</add>
-      </mod>owers</line>
-    <anchor xml:id="e1-0025.04"/>
-    <milestone unit="tei:l" spanTo="#e1-0025.05"/>
-    <line rend="indent1">And like a storm, bursting its cloudy</line>
-    <line rend="right">prison</line>
-    <anchor xml:id="e1-0025.05"/>
-    <milestone unit="tei:l" spanTo="#e1-0025.06"/>
-    <line rend="indent1">With thunder &amp; with whirlwind, has</line>
-    <line rend="right">arisen</line>
-    <anchor xml:id="e1-0025.06"/>
-  </zone>
+    <line>They breathe a spirit up from their <add place="sublinear">obscurest <mod>
+      <del rend="overwritten">p</del><add place="intralinear">b</add></mod>owers</add></line>
+    <line rend="indent1">And like a storm, bursting its cloudy <add place="sublinear">prison</add></line>
+    <line rend="indent1">With thunder &amp; with whirlwind, has <add place="sublinear">arisen</add></line>
+    </zone>
 </surface>
