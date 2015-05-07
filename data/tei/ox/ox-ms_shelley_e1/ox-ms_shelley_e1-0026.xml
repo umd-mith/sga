@@ -6,27 +6,19 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0026.jp2"/>
   <zone type="main">
     <line>Out of the lampless caves of unimagined being</line>
-    <milestone unit="tei:l" spanTo="#e1-0026.01"/>
-    <line rend="indent1">With earthquake shook &amp; swiftness making</line>
-    <line rend="right">shiver</line>
-    <anchor xml:id="e1-0026.01"/>
+    <line rend="indent1">With earthquake shook &amp; swiftness making<add place="sublinear">shiver</add></line>
     <line rend="indent1"><mod>
         <del rend="overwritten">E<unclear reason="illegible">ar</unclear></del>
         <add place="intralinear">Th</add>
       </mod>ought's stagnant chaos, unremoved forever,</line>
-    <milestone unit="tei:l" spanTo="#e1-0026.02"/>
-    <line>Till Hate &amp; Fear &amp; Pain, light-vanquished</line>
-    <line rend="right">shadows, fleeing</line>
-    <anchor xml:id="e1-0026.02"/>
+    <line>Till Hate &amp; Fear &amp; Pain, light-vanquished <add place="sublinear">shadows, fleeing</add></line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">Leav<mod>
         <del rend="overwritten">es</del>
         <add place="intralinear">e</add>
       </mod> Man, who was a manysided mirror</line>
     <line rend="indent1">Which could distort to many a shape of error</line>
-    <milestone unit="tei:l" spanTo="#e1-0026.03"/>
-    <line>This true fair world of things&#x2014;a Sea reflecting</line>
-    <line rend="right">Love;</line>
-    <anchor xml:id="e1-0026.03"/>
+    <line>This true fair world of things&#x2014;a Sea reflecting <add place="sublinear">Love;</add></line>
     <line rend="indent1">Which over all his kind, as the Suns Heaven</line>
     <line rend="indent1">Gliding oer Ocean <mod>
         <del rend="strikethrough"><mod>
@@ -35,35 +27,21 @@
           </mod></del>
         <add place="superlinear">smooth</add>
       </mod>, serene &amp; even,</line>
-    <milestone unit="tei:l" spanTo="#e1-0026.04"/>
-    <line>Darting from starry depths radiance &amp;</line>
-    <line rend="right">life, doth move<unclear reason="illegible">.</unclear></line>
-    <anchor xml:id="e1-0026.04"/>
+    <line>Darting from starry depths radiance &amp; <add place="sublinear">life, doth move<unclear reason="illegible">.</unclear></add></line>
     <line rend="indent1">Leav<mod>
         <del rend="overwritten">es</del>
         <add place="intralinear">e</add>
       </mod> Man, even as a leprous child is left</line>
-    <milestone unit="tei:l" spanTo="#e1-0026.05"/>
-    <line rend="indent1">Who follows <mod>
+     <line rend="indent1">Who follows <mod>
         <del rend="strikethrough">some</del>
         <add place="superlinear">a</add>
       </mod> sick beast to <mod>
         <del rend="strikethrough">a</del>
         <add place="superlinear">some</add>
-      </mod> warm</line>
-    <line rend="right">cleft</line>
-    <anchor xml:id="e1-0026.05"/>
-    <milestone unit="tei:l" spanTo="#e1-0026.06"/>
-    <line>Of rocks, through which the might of</line>
-    <line rend="right">healing springs is poured</line>
-    <anchor xml:id="e1-0026.06"/>
-    <!-- Check this separate mark -->
-    <line rend="indent4"><add><metamark function="separate">L______________</metamark></add></line>
+      </mod> warm <add place="sublinear">cleft</add></line>
+    <line>Of rocks, through which the might of <add place="sublinear"><metamark function="separate">&#8970;</metamark>healing springs is poured</add></line>
     <line rend="indent1">Then when it wanders home with rosy smile</line>
     <line rend="indent1">Unconscious, &amp; its mother fears awhile</line>
-    <milestone unit="tei:l" spanTo="#e1-0026.07"/>
-    <line>It is a Spirit&#x2014;then, weeps on her child</line>
-    <line rend="right"><unclear reason="illegible">res</unclear>tored.</line>
-    <anchor xml:id="e1-0026.07"/>
-  </zone>
+    <line>It is a Spirit&#x2014;then, weeps on her child <add place="sublinear"><unclear reason="illegible">res</unclear>tored.</add></line>
+    </zone>
 </surface>
