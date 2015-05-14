@@ -5,8 +5,9 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0040" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0040.jp2"/>
   <zone type="main">
-    <line>More glorious far <add place="superlinear"><metamark function="count">2</metamark></add>than <del rend="strikethrough">thine unenvied throne</del></line>
-    <line><del rend="strikethrough">Of gold &#x26; blood,</del><del rend="strikethrough">are these</del> o Mighty God!</line>
+    <line>More glorious far <add place="superlinear"><metamark function="count">2</metamark></add>than <delSpan rend="strikethrough" spanTo="#e1-0040.04"/>thine unenvied throne</line>
+    <line>Of gold &amp; blood,<anchor xml:id="e1-0040.04"/>
+      <del rend="strikethrough">are these</del><anchor xml:id="e1-0040.05"/><anchor xml:id="e1-0040.06"/> o Mighty God!</line>
     <!--text from 20r meant to replace deletion-->
     <line>Almighty, had I deigned to share the shame</line>
     <line>Of thine ill tyranny, and hung not here</line>
@@ -16,6 +17,7 @@
         <add place="intralinear">l</add>
       </mod>ack, wintry, dead, unmeasured<unclear reason="illegible">;</unclear> without herb</line>
     <line>Insect or beast, or shape or sound of life&#x2014;</line>
+    <anchor xml:id="e1-0040.07"/>
     <line>I ask the Earth, have not the mountains felt?</line>
     <line>I ask yon <mod>
         <del rend="strikethrough">Sky</del>
