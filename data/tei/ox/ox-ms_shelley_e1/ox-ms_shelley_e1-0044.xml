@@ -20,10 +20,7 @@
         <del rend="strikethrough">pure</del>
         <add place="sublinear">serenest Air</add>
       </mod></line>
-    <milestone unit="tei:l" spanTo="#e1-0044.01"/>
-    <line>Through which the <unclear reason="case">S</unclear>un walks burning without</line>
-    <line rend="right">beams,</line>
-    <anchor xml:id="e1-0044.01"/>
+    <line>Through which the <unclear reason="case">S</unclear>un walks burning without <add place="sublinear">beams</add></line>
     <line>And ye swift Whirlwinds who on poised wings</line>
     <line>Hung mute &amp; moveless oer yon hushed abyss</line>
     <line>As thunder louder than your own made rock</line>
@@ -44,7 +41,7 @@
     <line rend="center">2<hi rend="sup">d</hi>. Voice from the Springs</line>
     <anchor xml:id="e1-0044.03"/>
     <line rend="indent1">Thunderbolts had parched our water,</line>
-    <line rend="indent1"><add><metamark function="count">78</metamark></add> We had been stained
+    <line rend="indent1"><add><metamark function="count">78</metamark></add>    We had been stained
       with bitter blood</line>
   </zone>
 </surface>
