@@ -4,8 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0040" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0040.jp2"/>
+  <zone type="pagination"><line rend="center">
+    <add><metamark function="count">2</metamark></add></line>
+  </zone>
   <zone type="main">
-    <line>More glorious far <add place="superlinear"><metamark function="count">2</metamark></add>than <delSpan rend="strikethrough" spanTo="#e1-0040.04"/>thine unenvied throne</line>
+    <line>More glorious far than <delSpan rend="strikethrough" spanTo="#e1-0040.04"/>thine unenvied throne</line>
     <line>Of gold &amp; blood,<anchor xml:id="e1-0040.04"/>
       <del rend="strikethrough">are these</del><anchor xml:id="e1-0040.05"/><anchor xml:id="e1-0040.06"/> o Mighty God!</line>
     <!--text from 20r meant to replace deletion-->
