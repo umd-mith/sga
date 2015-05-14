@@ -45,10 +45,7 @@
         <del rend="overwritten">l</del>
         <add place="intralinear">r</add>
       </mod>ifted mountains of bright snow</line>
-    <milestone unit="tei:l" spanTo="#e1-0054.02"/>
-    <line>Shook its portentous hair beneath Heaven's</line>
-    <line rend="right">frown;</line>
-    <anchor xml:id="e1-0054.02"/>
+    <line>Shook its portentous hair beneath Heaven's <add place="sublinear">frown;</add></line>
     <line>Lightning &#x26; Inundation vexed the plains</line>
     <line rend="right"><add><metamark function="displacement" xml:id="e1-0054.03"
         >&#60;</metamark></add></line>
