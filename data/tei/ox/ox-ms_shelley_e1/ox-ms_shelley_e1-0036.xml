@@ -14,9 +14,7 @@
     <line><del rend="unmarked">so</del>
       <del rend="strikethrough">variously &amp; beautifully respecting the</del></line>
     <line><hi rend="underline"><del rend="strikethrough"><unclear reason="illegible"
-            >meaning</unclear></del></hi> give so <del rend="strikethrough">ma</del><del
-        rend="unmarked">ny</del>
-      <unclear reason="illegible">va</unclear>rious &amp;</line>
+            >meaning</unclear></del></hi> give so <del rend="strikethrough">ma</del>ny<unclear reason="illegible">va</unclear>rious &amp;</line>
     <line>beautiful meanings to the <unclear reason="illegible">verses</unclear> of <unclear
         reason="illegible">H</unclear>omer as</line>
     <line>I can&#8212;. <milestone unit="tei:speaker" spanTo="#e1-0036.03"/><hi rend="underline"
@@ -31,17 +29,12 @@
       <mod>
         <del rend="strikethrough">adorned</del>
         <add place="superlinear">illustrated</add>
-      </mod> Homer<del rend="unmarked">,</del>
-      <mod spanTo="#e1-0036.02"/><delSpan spanTo="#e1-0036.01" rend="strikethrough"/><unclear
-        reason="illegible">revealing</unclear> his</line>
-    <line>hidden beauties<anchor xml:id="e1-0036.01"/><mod>
-        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
-            >of</unclear></add></del>
-        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
-              >from</unclear></add></del>
-        <add place="superlinear">the hidden beauties</add>
-      </mod><anchor xml:id="e1-0036.02"/><add>:</add> I deserve a golden crown</line>
-    <line>from his descendants<unclear reason="illegible">.&#8212;</unclear>
+      </mod> Homer, 
+      <mod>
+        <del rend="strikethrough">revaling his</del>
+        <add place="superlinear">the hidden <del rend="strikethrough"><unclear>of from</unclear></del>beauties</add></mod></line>
+     <line><del rend="strikethrough">hiden beauties</del>: I deserve a golden crown</line>
+     <line>from his descendants<unclear reason="illegible">.&#8212;</unclear>
       <milestone unit="tei:speaker" spanTo="#e1-0036.05"/><hi rend="underline">Soc</hi>.<anchor
         xml:id="e1-0036.05"/> And I will</line>
     <line><del rend="strikethrough"><mod>
