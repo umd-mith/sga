@@ -16,9 +16,9 @@
         <del rend="overwritten">e</del>
         <add place="intralinear">&#230;</add>
       </mod>mons &amp; Gods,</line>
-    <line rend="indent1">&#198;therial Dominations, who po<add>s</add>sess</line>
+    <line>&#198;therial Dominations, who po<add>s</add>sess</line>
     <line>Elysian, windless, fortunate abodes</line>
-    <line rend="indent1">Beyond Heavens constellated wilderness</line>
+    <line>Beyond Heavens constellated wilderness</line>
     <milestone unit="tei:speaker" spanTo="#e1-0063.02"/>
     <line rend="center">A Voice <add>from above</add></line>
     <anchor xml:id="e1-0063.02"/>
@@ -33,15 +33,15 @@
         <del rend="overwritten">d</del>
         <add place="intralinear">D</add>
       </mod>ead, whom beams of brightest verse</line>
-    <line rend="indent1">Are clouds to hide, not colours to pourtray</line>
+    <line>Are clouds to hide, not colours to pourtray</line>
     <line>Whether your nature is that Universe</line>
-    <line rend="indent1">Which once <unclear reason="case">Y</unclear>e saw &amp;
+    <line>Which once <unclear reason="case">Y</unclear>e saw &amp;
       suffered&#8212;</line>
     <milestone unit="tei:speaker" spanTo="#e1-0063.04"/>
     <line rend="center"><unclear reason="case">A</unclear>
       <unclear reason="case">V</unclear>oice from beneath</line>
     <anchor xml:id="e1-0063.04"/>
-    <line rend="indent4">or <mod>
+    <line rend="indent8">or <mod>
         <del rend="strikethrough">like</del>
         <add place="superlinear">as</add>
       </mod> they</line>
@@ -58,11 +58,8 @@
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e1-0063.05"/>
     <line>Ye elemental Genii, who have homes</line>
-    <milestone unit="tei:l" spanTo="#e1-0063.06"/>
-    <line rend="indent1">From mans high mind even to the central</line>
-    <line rend="right">stone</line>
-    <anchor xml:id="e1-0063.06"/>
+    <line>From mans high mind even to the central <add place="sublinear">stone</add></line>
     <line>Of sullen lead, from Heavens star-fretted domes</line>
-    <line rend="indent1">To the dull weed some sea-worm battens on&#8212;</line>
+    <line>To the dull weed some sea-worm battens on&#8212;</line>
   </zone>
 </surface>
