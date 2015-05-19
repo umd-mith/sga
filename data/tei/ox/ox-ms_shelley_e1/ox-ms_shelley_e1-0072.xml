@@ -5,15 +5,13 @@
   uly="0" lrx="5402" lry="7272" xml:id="ox-ms_shelley_e1-0072" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0072.jp2"/>
   <zone type="main">
-    <line rend="indent1">Wail, howl aloud <mod>
+    <line> Wail, howl aloud <mod>
         <del rend="overwritten">l</del>
         <add place="intralinear">L</add>
       </mod>and &#x26; Sea</line>
-    <line rend="indent1">The Earths rent heart shall answer ye</line>
+    <line>The Earths rent heart shall answer ye</line>
     <line>Howl spirits of the living &#x26; the dead</line>
-    <milestone unit="tei:l" spanTo="#e1-0072.01"/><line>Your refuge, your defence lies fallen &#x26;
-      vanq-</line>
-    <line rend="indent5">-uished></line><anchor xml:id="e1-0072.01"/>
+    <line>Your refuge, your defence lies fallen <add place="sublinear">-uished</add> &#x26; vanq-</line>
     <milestone unit="tei:speaker" spanTo="#e1-0072.02"/>
     <line rend="center">1<hi rend="sup">st</hi> Ec<unclear reason="illegible">ho</unclear></line>
     <anchor xml:id="e1-0072.02"/>
@@ -24,24 +22,24 @@
     <milestone unit="tei:speaker" spanTo="#e1-0072.03"/>
     <line rend="center">2<hi rend="sup">d</hi>. Echo</line>
     <anchor xml:id="e1-0072.03"/>
-    <line rend="indent4">Fallen &#x26; vanquished!</line>
+    <line rend="indent5">Fallen &#x26; vanquished!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0072.04"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0072.04"/>
-    <line rend="indent2">Fear not &#x2013; tis but some passing spasm</line>
-    <line rend="indent2">The Titan is unvanquished still.</line>
-    <line rend="indent2">But see, where thro <unclear reason="illegible">the</unclear> azure
+    <line rend="indent1">Fear not &#x2013; tis but some passing spasm</line>
+    <line rend="indent1">The Titan is unvanquished still.</line>
+    <line rend="indent1">But see, where thro <unclear reason="illegible">the</unclear> azure
       chasm</line>
-    <line rend="indent2">Of yon forked &#x26; snowy hill</line>
-    <line rend="indent2">Trampling the slant winds on high</line>
-    <line rend="indent2">With <mod>
+    <line rend="indent1">Of yon forked &#x26; snowy hill</line>
+    <line rend="indent1">Trampling the slant winds on high</line>
+    <line rend="indent1">With <mod>
         <del rend="strikethrough">un</del>
         <add place="superlinear">golden-</add>
       </mod>sandalled feet, that glow</line>
-    <line rend="indent2">Under plumes of purple dye</line>
-    <line rend="indent2">Like rose-ensanguined ivory</line>
-    <line rend="indent3">A Shape comes now</line>
-    <line rend="indent2">Stretching on high from his right hand</line>
-    <line rend="indent3">A serpent-cinctured wand</line>
+    <line rend="indent1">Under plumes of purple dye</line>
+    <line rend="indent1">Like rose-ensanguined ivory</line>
+    <line rend="indent2">A Shape comes now</line>
+    <line rend="indent1">Stretching on high from his right hand</line>
+    <line rend="indent2">A serpent-cinctured wand</line>
   </zone>
 </surface>
