@@ -5,13 +5,13 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0062" partOf="#ox-ms_shelley_e1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0062.jp2"/>
   <zone type="main">
-    <line rend="indent1">And through their lulling plumes <mod>
+    <line>And through their lulling plumes <mod>
         <del rend="strikethrough">up</del>
         <add place="superlinear">a</add>
       </mod>rise</line>
-    <line rend="indent2">A Shape, a throng of sounds:</line>
-    <line rend="indent3">May it be, no ill to thee</line>
-    <line rend="indent2">O thou of many wounds</line>
+    <line rend="indent1">A Shape, a throng of sounds:</line>
+    <line rend="indent1">May it be, no ill to thee</line>
+    <line rend="indent1">O thou of many wounds</line>
     <line>Near whom for our sweet sister's sake</line>
     <line>Ever thus we watch &amp; wake</line>
     <milestone unit="tei:speaker" spanTo="#e1-0062.01"/>
