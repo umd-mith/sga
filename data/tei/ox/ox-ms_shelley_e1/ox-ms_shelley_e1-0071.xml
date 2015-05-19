@@ -21,10 +21,7 @@
         <del rend="overwritten">w</del>
         <add place="intralinear">sh</add>
       </mod>ould free</line>
-    <milestone unit="tei:l" spanTo="#e1-0071.01"/>
-    <line>The serpent that would clasp her with his</line>
-    <line rend="right">length,&#8212;</line>
-    <anchor xml:id="e1-0071.01"/>
+    <line>The serpent that would clasp her with his <add place="sublinear">length,&#8212;</add></line>
     <line>These are the sp<retrace cause="unclear">e</retrace>lls by which to reassume</line>
     <line>An empire o<retrace cause="unclear">'e</retrace>r that <mod>
         <del rend="overwritten">D</del>
@@ -33,6 +30,7 @@
         <del rend="overwritten">d</del>
         <add place="intralinear">D</add>
       </mod>oom</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line>To suffer woes which Hope thinks infinite</line>
     <line>To forgive wrongs darker than Death or Night<unclear reason="illegible">;</unclear></line>
     <line>To defy Power, which seems Omnipotent;</line>
