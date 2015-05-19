@@ -35,15 +35,13 @@
     <line rend="indent1">On new pangs to be fed?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0074.05"/><line rend="center">Panthea</line>
     <anchor xml:id="e1-0074.05"/>
-    <milestone unit="tei:l" spanTo="#e1-0074.06"/><line><del rend="strikethrough">Yes. but</del>
+    <line><del rend="strikethrough">Yes. but</del>
       <mod>
         <del rend="overwritten">t</del>
         <add place="intralinear">T</add>
       </mod>he Titan looks<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">as ever</add>
-      </mod> firm, <del rend="strikethrough">though</del> not</line>
-    <line rend="right">proud.</line>
-    <anchor xml:id="e1-0074.06"/>
-  </zone>
+      </mod> firm, <del rend="strikethrough">though</del> not <add place="sublinear">proud</add></line>
+      </zone>
 </surface>
