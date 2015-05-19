@@ -13,32 +13,24 @@
     <line rend="indent1">Come, when thou must appear to be</line>
     <line rend="indent1">That which thou art internally</line>
     <line>And after many a false &#x26; fruitless crime</line>
-    <milestone unit="tei:l" spanTo="#e1-0070.01"/><line>Scorn track thy lagging fall thro
-      boundless</line>
-    <line rend="indent5"><unclear reason="case">S</unclear>pace &#x26; time</line>
-    <anchor xml:id="e1-0070.01"/>
+    <line>Scorn track thy lagging fall thro boundless <add place ="sublinear"><unclear reason="case">S</unclear>pace &#x26; time</add></line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0070.02"/>Prometheus<anchor
-        xml:id="e1-0070.02"/><milestone unit="tei:stage" spanTo="#e1-0070.03"/><add><hi
+        xml:id="e1-0070.02"/><milestone unit="tei:stage" spanTo="#e1-0070.03"/><add place ="superlinear"><hi
           rend="underline">the Phantasm vanishes</hi></add><anchor xml:id="e1-0070.03"/></line>
     <line>Were these my words o Parent?</line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0070.04"/>The Earth<anchor
         xml:id="e1-0070.04"/></line>
-    <line rend="indent4">They were thine</line>
+    <line rend="indent6">They were thine</line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0070.05"/>Prometheus<anchor
         xml:id="e1-0070.05"/></line>
     <line>It doth repent me<del rend="overwritten">,</del><add place="intralinear">:</add> words are
       quick &#x26; vain;</line>
     <line>Grief for awhile is blind, &#x26; so was mine</line>
-    <line>I wish no living thing to suffer pain.</line>
-    <line rend="indent4"><del rend="strikethrough">he bends his head as in pain</del></line>
+    <line>I wish no living thing to suffer pain. <add place="sublinear"><del rend="strikethrough">he bends his head as in pain</del></add></line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0070.06"/>The Earth<anchor
         xml:id="e1-0070.06"/></line>
     <line rend="indent1">Misery o misery to me</line>
-    <milestone unit="tei:l" spanTo="#e1-0070.07"/>
-    <line rend="indent1">That Jove at length should
-      vanquish</line>
-    <line rend="right">thee</line>
-    <anchor xml:id="e1-0070.07"/>
-    <line rend="left"><add><metamark function="count">294</metamark></add></line>
+    <line rend="indent1">That Jove at length should vanquish <add place="sublinear">thee</add></line>
+    <line><add><metamark function="count">294</metamark></add></line>
   </zone>
 </surface>
