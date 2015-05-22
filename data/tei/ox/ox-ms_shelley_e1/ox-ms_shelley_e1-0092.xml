@@ -42,17 +42,14 @@
         <line>Ye rend me now, I care not&#x2014;</line>
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.04"/>2.<hi rend="sup"
                 >d</hi> Fury<anchor xml:id="e1-0092.04"/></line>
-        <line rend="indent4"> Dost imagine</line>
+        <line rend="indent7"> Dost imagine</line>
         <line>We will but laugh into <del rend="strikethrough" instant="true">your</del> thy lidless
             eyes?</line>
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.05"/>Prometheus<anchor
                 xml:id="e1-0092.05"/></line>
         <line>I weigh not what ye do, but what ye suffer</line>
         <line>Being evil&#x2014;cruel was the Power which called</line>
-        <line>You, or aught else so wretched, into light</line>
-        <line rend="indent5">
-            <metamark function="count">4<unclear rend="illegible">6</unclear>8</metamark>
-        </line>
+        <line>You, or aught else so wretched, into light <add place ="sublinear"><metamark function="count">4<unclear rend="illegible">6</unclear>8</metamark></add></line>
         <!-- add "line count" to schema? -->
     </zone>
 </surface>
