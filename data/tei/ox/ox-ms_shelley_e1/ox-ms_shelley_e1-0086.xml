@@ -13,7 +13,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0086.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0086.02"/>
-    <line>I would not quit</line>
+    <line rend="indent7">I would not quit</line>
     <line>This bleak ravine, these unrepentant pains</line>
     <milestone unit="tei:speaker" spanTo="#e1-0086.03"/>
     <line rend="center">Mercury</line>
@@ -26,7 +26,7 @@
     <line>Not me, within whose mind sits peace serene</line>
     <line>As light in the sun, throned ... how vain is talk!</line>
     <line>Call up the fiends</line>
-    <line>(<del rend="strikethrough">thunder &amp; l</del>ightning)</line>
+    <milestone unit ="tei:stage"><line rend="indent7">(<del rend="strikethrough">thunder &amp; l</del>ightning)</line></milestone>
     <milestone unit="tei:speaker" spanTo="#e1-0086.05"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0086.05"/>
