@@ -20,13 +20,14 @@
     <milestone unit="tei:speaker" spanTo="#e1-0088.03"/>
     <line rend="center">1<hi rend="sup">st</hi>. Fury</line>
     <anchor xml:id="e1-0088.03"/>
-    <line rend="indent5">Prometheus!</line>
+    <line rend="indent7">Prometheus!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0088.04"/>
     <line rend="center">2<hi rend="sup">d</hi>.</line>
     <anchor xml:id="e1-0088.04"/>
     <line>Immortal Titan!</line>
-    <line rend="indent2"><milestone unit="tei:speaker" spanTo="#e1-0088.05"/>3<hi rend="sup">d</hi>.
-        <anchor xml:id="e1-0088.05"/>Champion of Heaven's slaves!</line>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0088.05"/>3<hi rend="sup">d</hi>.
+        <anchor xml:id="e1-0088.05"/></line>
+    <line rend="indent5">Champion of Heaven's slaves!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0088.06"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0088.06"/>
@@ -40,7 +41,6 @@
     <line>From the all-miscreative brain of Jove;</line>
     <line>Whilst I behold such execrable shapes <unclear reason="illegible">. .</unclear></line>
     <line>Methinks I grow like what I contemplate</line>
-    <line rend="left"><add><metamark function="count">437</metamark></add></line>
-    <line>And laugh &amp; stare in loathsome sympathy</line>
+    <line>And <add place ="superlinear"><metamark function="count">437</metamark></add>laugh &amp; stare in loathsome sympathy</line>
   </zone>
 </surface>
