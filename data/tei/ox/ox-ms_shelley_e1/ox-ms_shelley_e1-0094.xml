@@ -29,31 +29,29 @@
     <line>Vexing the self-content of wisest men &#8212;</line>
     <line>That we will be dread thought beneath thy brain</line>
     <line>And foul desire round thine astonished heart</line>
-    <line>thy</line>
     <line>And blood with<mod>
         <del rend="overwritten">out</del>
         <add place="intralinear">in</add>
       </mod>
-      <del rend="strikethrough">your</del> labyrithine veins</line>
+      <mod><del rend="strikethrough">your</del><add place="superlinear">thy</add></mod> labyrithine veins</line>
     <line>Crawling like agony</line>
-    <line rend="indent5"><add><metamark function="count">X</metamark></add></line>
+    <line rend="right"><add><metamark function="count">X</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0094.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0094.02"/>
-    <line rend="indent3">Why, ye are thus now</line>
+    <line rend="indent5">Why, ye are thus now</line>
     <line>Yet am I king over myself &amp; rule</line>
     <line>The torturing &amp; conflicting throngs within</line>
     <line>As Jove rules you when Hell grows mutinous</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:speaker" spanTo="#e1-0094.03"/>
     <line rend="center">Chorus of Furies</line>
     <anchor xml:id="e1-0094.03"/>
     <line>From the ends of the Earth, from y.<hi rend="sup">e</hi> ends of the Earth</line>
     <line>Where the night has its grave &amp; the morning its birth</line>
     <line rend="indent2">Come, Come<unclear reason="illegible">,</unclear> Come</line>
-    <milestone unit="tei:l" spanTo="#e1-0094.04"/>
-    <line>O ye who shake hills with the scream of your</line>
+    <line>O ye who shake hills with the scream of your <add place="sublinear">mirth</add></line>
     <line rend="right">mirth</line>
-    <anchor xml:id="e1-0094.04"/>
-    <line><add><metamark function="count">483</metamark></add></line>
+    <line rend="indent2"><metamark function="count">483</metamark></line>
   </zone>
 </surface>
