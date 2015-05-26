@@ -29,12 +29,19 @@
       <mod>
         <del rend="strikethrough">adorned</del>
         <add place="superlinear">illustrated</add>
-      </mod> Homer, 
-      <mod>
-        <del rend="strikethrough">revaling his</del>
-        <add place="superlinear">the hidden <del rend="strikethrough"><unclear>of from</unclear></del>beauties</add></mod></line>
-     <line><del rend="strikethrough">hiden beauties</del>: I deserve a golden crown</line>
-     <line>from his descendants<unclear reason="illegible">.&#8212;</unclear>
+      </mod> Homer<del rend="unmarked">,</del>
+      <mod spanTo="#e1-0036.01"/><delSpan spanTo="#e1-0036.01"/>
+      <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">the hidden</del>
+          <add place="sublinear">
+            <del rend="strikethrough"><unclear reason="illegible">of</unclear></del>
+            <del rend="strikethrough"><unclear reason="illegible">from</unclear></del>
+          </add>
+        </mod> beauties</add>
+      revealing his</line>
+    <line>inner beauties<anchor xml:id="e1-0036.01"/>: I deserve a golden crown</line>
+    <line>from his descendants<unclear reason="illegible">.&#8212;</unclear>
       <milestone unit="tei:speaker" spanTo="#e1-0036.05"/><hi rend="underline">Soc</hi>.<anchor
         xml:id="e1-0036.05"/> And I will</line>
     <line><del rend="strikethrough"><mod>
