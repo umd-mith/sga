@@ -28,17 +28,14 @@
     <milestone unit="tei:speaker" spanTo="#e2-0012.02"/>
     <line rend="center">Semichorus 2</line>
     <anchor xml:id="e2-0012.02"/>
-    <line rend="indent5">'Tis another's&#8212;</line>
+    <line rend="indent6">'Tis another's&#8212;</line>
     <line rend="indent1">See how kindred murder kin</line>
     <line rend="indent1">Tis the vintage-time for Death &amp; Sin</line>
     <line rend="indent1">Blood, like new Wine, bubbles within</line>
     <line rend="indent1">Till Despair smothers</line>
-    <milestone unit="tei:l" spanTo="#e2-0012.03"/>
-    <line>The struggling World&#8212;which slaves &amp; tyrants</line>
-    <line rend="right">win</line><anchor xml:id="e2-0012.03"/>
-    <anchor xml:id="e2-0012.05"/>
+    <line>The struggling World&#8212;which slaves &amp; tyrants <add place="sublinear">win</add></line>
     <line><metamark function="count">561</metamark></line>
-    <line><milestone unit="tei:speaker" spanTo="#e2-0012.04"/><mod>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="#e2-0012.04"/><mod>
         <del rend="strikethrough">Panthea</del>
         <add place="superlinear">Ione</add>
       </mod><anchor xml:id="e2-0012.04"/>
