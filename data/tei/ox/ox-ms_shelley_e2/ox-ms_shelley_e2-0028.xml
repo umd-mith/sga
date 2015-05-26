@@ -9,7 +9,7 @@
     <line rend="indent1">Twas the hope the prophecy</line>
     <line rend="indent1">Which begins &amp; ends in thee</line>
     <milestone unit="tei:speaker" spanTo="#e2-0028.01"/>
-    <line rend="center">2.<hi rend="sup">d</hi>Spirit</line>
+    <line rend="center">2.<hi rend="sup">d</hi> Spirit</line>
     <anchor xml:id="e2-0028.01"/>
     <delSpan rend="vertical_line" spanTo="#e2-0028.02"/>
     <line>I leaped on the wings of the Earth-star damp</line>
@@ -44,7 +44,7 @@
       </mod><hi rend="sup">d</hi> Spirit</line>
     <anchor xml:id="e2-0028.03"/>
     <line>A rainbows arch stood on the sea</line>
-    <line rend="left"><add><metamark function="count">708</metamark></add></line>
+    <line><add><metamark function="count">708</metamark></add></line>
     <line>Which rocked beneath, immoveably;</line>
   </zone>
 </surface>
