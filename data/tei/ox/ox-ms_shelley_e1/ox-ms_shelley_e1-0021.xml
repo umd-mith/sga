@@ -25,10 +25,16 @@
         <del rend="overwritten">:</del>
         <add place="intralinear">;</add>
       </mod>
-      <mod>
+     <mod>
         <del rend="strikethrough">see, as they flas</del>
-        <add place="sublinear"><del rend="strikethrough">as</del>the beams flash<del rend="strikethrough">deep</del>on</add></mod>
-      <metamark function="count">250</metamark>    
+        <add place="sublinear"><del rend="strikethrough">as</del> the beams flash
+          <mod>
+            <del rend="strikethrough">deep</del>
+            <add>on</add>
+          </mod>
+        </add>
+      </mod>
+      <add place="sublinear"><metamark function="count">250</metamark></add>
     </line>
     <line><mod>
         <del rend="strikethrough">They</del>
