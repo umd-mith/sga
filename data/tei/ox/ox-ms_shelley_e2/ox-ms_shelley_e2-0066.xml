@@ -2,7 +2,7 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5378" lry="7232" xml:id="ox-ms_shelley_e2-0066" partOf="#ox-ms_shelley_e2">
+  uly="0" lrx="5378" lry="7232" xml:id="ox-ms_shelley_e2-0066" partOf="#ox-ms_shelley_e2" mith:folio="32v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0066.jp2"/>
   <zone type="main">
     <line rend="indent1">As the song floats, thou pursue</line>
