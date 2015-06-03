@@ -243,6 +243,15 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
     initialize: (options) ->
       super
 
+      @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, options) =>
+        if options?
+          if options.mode?
+            if options.mode != "std"
+              @disable()
+              @reset()
+            else
+              @enable()
+
       # set css classes scope to be limited from options
       @limitValues = [].concat options.include
       # set colors for visible and limited objects
@@ -296,6 +305,26 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
           
           # Append new style definitions to head
           $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head")
+
+    reset: ->
+      $('#LimitViewControls_classes').remove()
+      @$el.find('input').each (i,e) =>
+        vals = $(e).val()
+        vals = vals.split /\s+/g
+        for v in vals
+          if v == 'all'
+            $(e).prop('checked', true)
+          else
+            $(e).prop('checked', false)
+
+    disable: ->
+      console.log('dis')
+      @$el.find('input').each (i,e) =>
+        $(e).attr("disabled", true)
+
+    enable: ->
+      @$el.find('input').each (i,e) =>
+        $(e).removeAttr("disabled")
 
   class SGASharedCanvas.Component.SearchBox extends ComponentView
 
