@@ -35,19 +35,19 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
     nextPage: (e) ->
       e.preventDefault()
       hash = @checkAndProceed @variables.get("seqPage")+1
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
     prevPage: (e) ->
       e.preventDefault()
       hash = @checkAndProceed @variables.get("seqPage")-1
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
     firstPage: (e) ->
       e.preventDefault()
       hash = @checkAndProceed @variables.get("seqMin")
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
     lastPage: (e) ->
       e.preventDefault()
       hash = @checkAndProceed  @variables.get("seqMax")
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
 
     initialize: (options) ->
       super    
@@ -194,13 +194,15 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
   class SGASharedCanvas.Component.ReadingModeControls extends ComponentView
 
     initialize: (options) ->
-      super    
+      super          
       @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, options) ->
         if options?
           if options.mode?
             switch options.mode
               when "img" then @$el.find("#img-only").button("toggle")
               else @$el.find("#mode-"+options.mode).button("toggle")
+          else
+            @$el.find("#mode-std").button("toggle")
 
     events: 
       'click #img-only': 'setImgMode'
@@ -210,6 +212,8 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
     checkAndProceed: (m) ->
       hash = Backbone.history.location.hash
+      # remove search fragment if present
+      hash = hash.replace(/\/search\/f:[^\|]+\|q:[^\/]+/, "")      
       if hash.match("\/mode\/")?
         hash = hash.replace(/mode\/\w{3}/, 'mode/'+m)
       else 
@@ -219,20 +223,19 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
     setImgMode: (e) ->
       e.preventDefault()
       hash = @checkAndProceed "img"
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
     setStdMode: (e) ->
       e.preventDefault()
       hash = @checkAndProceed "std"
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
     setRdgMode: (e) ->
       e.preventDefault()
       hash = @checkAndProceed "rdg"
-      Backbone.history.navigate hash
+      Backbone.history.navigate(hash, {trigger:true})
     setXmlMode: (e) ->
       e.preventDefault()
       hash = @checkAndProceed "xml"
-      Backbone.history.navigate hash
-
+      Backbone.history.navigate(hash, {trigger:true})
 
 
   class SGASharedCanvas.Component.LimitViewControls extends ComponentView

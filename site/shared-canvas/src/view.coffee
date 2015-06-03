@@ -99,7 +99,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @canvasesView = new CanvasesView collection: @model.canvasesData
 
       # When a new canvas is requested through a Router, fetch the right canvas data.
-      @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, search) ->
+      @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, paras) ->
         # First of all, destroy any canvas already loaded. We do this for two reasons:
         # 1. it avoids piling up canvases data in the browser memory
         # 2. it causes previously instantiated views to destroy themselves and make room for the new one.
@@ -108,43 +108,76 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         @model.searchResults.reset()
         Backbone.trigger "viewer:searchResults", [] 
 
-      # When search results are requested through a Router, fetch the search data.
-        if search?          
-          @model.searchResults.fetch @model, search.filters, search.query, options.searchService
+        if paras? 
+          if paras.mode?
 
-          @listenToOnce @model.searchResults, 'sync', ->
-            searchResultsPositions = []
+            filter = []
+
+            switch paras.mode
+              when "img" then filter.push "Image"
+              when "std", "rdg", "xml" then filter.push "Image", "Text"
+              when "txt" then filter.push "Text"
+
+            @canvasesView.filter = filter
 
             @model.ready =>
-              canvases = @model.sequences.first().get "canvases"
+              fetchCanvas n              
 
-              @model.searchResults.forEach (res, i) ->
-                trg = res.get("canvas_id")
-                if trg in canvases
-                  searchResultsPositions.push($.inArray(trg, canvases)+1)
+              if paras.mode == "rdg"
 
-              fetchCanvas n
-              Backbone.trigger "viewer:searchResults", searchResultsPositions
+                curCanvas = @model.canvasesData.first()
+
+                layerAnnos = curCanvas.layerAnnos.find (m) ->
+                  return m.get("sc:motivatedBy")["@id"] == "sga:reading"
+
+                $.get layerAnnos.get("resource"), ( data ) ->    
+                  d = $.parseHTML data
+                  for e in d
+                    if $(e).is('div')
+                      $(e).addClass("readingText")
+                      curCanvas.trigger "addLayer", "Text", e
+
+              else if paras.mode == "xml"
+
+                curCanvas = @model.canvasesData.first()
+
+                layerAnnos = curCanvas.layerAnnos.find (m) ->
+                  return m.get("sc:motivatedBy")["@id"] == "sga:source"
+
+                $.get layerAnnos.get("resource"), ( data ) ->    
+                  surface = data.getElementsByTagName 'surface'
+                  serializer = new XMLSerializer()
+                  txtdata = serializer.serializeToString surface[0] 
+                  txtdata = txtdata.replace /\&/g, '&amp;'
+                  txtdata = txtdata.replace /%/g, '&#37;'
+                  txtdata = txtdata.replace /</g, '&lt;'
+                  txtdata = txtdata.replace />/g, '&gt;'
+
+                  xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
+                  curCanvas.trigger "addLayer", "Text", xml
+                  prettyPrint()
+
+          # When search results are requested through a Router, fetch the search data.
+          if paras.query?          
+            @model.searchResults.fetch @model, paras.filters, paras.query, options.searchService
+
+            @listenToOnce @model.searchResults, 'sync', ->
+              searchResultsPositions = []
+
+              @model.ready =>
+                canvases = @model.sequences.first().get "canvases"
+
+                @model.searchResults.forEach (res, i) ->
+                  trg = res.get("canvas_id")
+                  if trg in canvases
+                    searchResultsPositions.push($.inArray(trg, canvases)+1)
+
+                fetchCanvas n
+                Backbone.trigger "viewer:searchResults", searchResultsPositions
         else
           # Make sure manifest is loaded        
-          @model.ready -> 
+          @model.ready => 
             fetchCanvas n
-
-      # Deal with reading modes
-      @listenTo SGASharedCanvas.Data.Manifests, 'readingMode', (m) ->
-
-        @model.canvasesData.reset()
-
-        filter = []
-
-        switch m
-          when "img" then filter.push "Image"
-          when "std" then filter.push "Image", "Text"
-          when "txt" then filter.push "Text"
-
-        @canvasesView.filter = filter
-
-        fetchCanvas @variables.get "seqPage"
 
       @render()
       @model.ready @renderMeta
@@ -204,6 +237,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Reading Mode Controls
       readingModeControls = new SGASharedCanvas.Component.ReadingModeControls
         el : '#mode-controls'
+        vars: @variables.variables
+
+      syncVarsFor readingModeControls
 
       # Limit View Controls
       limitViewControls = new SGASharedCanvas.Component.LimitViewControls
@@ -732,7 +768,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           if annoEl.get(0)?
             @lastRendering = annoEl
         when 'EmptyLine' in type
-          console.log model.get('ext')
           ext = parseInt(model.get('ext'))
           for br in [1..ext]
             @currentLineEl.append("<br/>")
@@ -1070,7 +1105,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               "svc.format=image/jpeg"
               "svc.level=#{z}"
               "svc.region=#{y * tileWidth},#{x * tileWidth},#{djatokaTileWidth},#{djatokaTileWidth}"
-              "svc.rotate=#{rotation}"
             ].join("&")
 
           screenCenter = ->
@@ -1266,20 +1300,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # xTiles tells us how many tiles across
             # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
 
-            if rotation == 0
-              for j in [0..yTiles]
-                for i in [0..xTiles]
-                  renderTile 
-                    x: i
-                    y: j
-                    tileSize: tileSize
-            else
-              for j in [0..yTiles]
-                for i in [0..xTiles]
-                  renderTile 
-                    x: j
-                    y: i
-                    tileSize: tileSize
+            for j in [0..yTiles]
+              for i in [0..xTiles]
+                renderTile 
+                  x: i
+                  y: j
+                  tileSize: tileSize
 
           _setZoom = (z) ->
             wrapper = (cb) -> cb()
