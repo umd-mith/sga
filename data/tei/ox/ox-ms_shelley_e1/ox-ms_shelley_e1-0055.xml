@@ -85,8 +85,8 @@
     <line><milestone unit="tei:speaker" spanTo="#e1-0055.06"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0055.06"/> So it should seem. <milestone unit="tei:speaker" spanTo="#e1-0055.07"
         /><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0055.07"/> Then</line>
-  </zone>
-  <zone type="bottom" corresp="#e1-0054.03"><line>&lt; Blue thistles bloomed in cities; foodless
+    <!--<zone type="bottom" corresp="#e1-0054.03">-->
+    <line>&lt; Blue thistles bloomed in cities; foodless
       toads</line>
     <line>Within voluptuous chambers panting crawled;</line>
     <line><mod>
@@ -104,5 +104,6 @@
       </mod></line>
     <line rend="indent1">Teemed ineradicable poisonous weeds</line>
     <line rend="indent1">Draining their growth, for my wan breast was dry</line>
+  <!-- </zone> -->
   </zone>
 </surface>

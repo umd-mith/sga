@@ -48,10 +48,11 @@
     <line rend="indent1"><retrace cause="unclear">One brotherhood&#8212;delighful strains which
         cheer</retrace></line>
     <anchor xml:id="e2-0077.04"/>
+    <!--<zone type="bottom">-->
+      <milestone unit="tei:seg" spanTo="#e2-0077.02" corresp="#e2-0076.03"/>
+      <line>mountains</line>
+      <anchor xml:id="e2-0077.02"/>
+    <!--</zone>-->
   </zone>
-  <zone type="bottom">
-    <milestone unit="tei:seg" spanTo="#e2-0077.02" corresp="#e2-0076.03"/>
-    <line>mountains</line>
-    <anchor xml:id="e2-0077.02"/>
-  </zone>
+  
 </surface>

@@ -73,10 +73,12 @@
       </mod> which ye w.<hi rend="sup">d</hi> hear!&#8212;</line>
     <line>As I have said I floated to the Earth</line>
     <line><add><metamark><hi rend="underline">? </hi>
-        </metamark><metamark function="separate">*</metamark></add></line></zone>
+        </metamark><metamark function="separate">*</metamark></add></line>
+    <!--<zone type="bottom">--><line>Y<hi rend="underline">oke</hi>d</line><!--</zone>-->
+    <!-- Investigate what kind of encoding can describe a possible start-->
+  </zone>
 
-  <zone type="bottom"><line>Y<hi rend="underline">oke</hi>d</line></zone>
-  <!-- Investigate what kind of encoding can describe a possible start-->
+  
 
   <zone type="left_margin" rotate="90" corresp="#e3-0073.01">bright &amp; liquid sky</zone>
 </surface>
