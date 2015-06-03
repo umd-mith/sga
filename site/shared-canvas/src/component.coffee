@@ -169,6 +169,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       'click #zoom-reset': 'zoomReset'
       'click #zoom-in': 'zoomIn'
       'click #zoom-out': 'zoomOut'
+      'click #rotate-180': 'rotate'
 
     zoomReset: (e) ->
       e.preventDefault()
@@ -190,6 +191,14 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
         @variables.set "zoom", Math.floor zoom-1
       else 
         @variables.set "zoom", 0
+
+    rotate: (e) ->
+      e.preventDefault()
+      rotation = @variables.get "rotation"
+      if rotation == 0
+        @variables.set "rotation", 180
+      else
+        @variables.set "rotation", 0
 
   class SGASharedCanvas.Component.ReadingModeControls extends ComponentView
 

@@ -955,6 +955,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @variables.set "maxZoom", 0
       @variables.set "minZoom", 0
       @variables.set "imgPosition", {}
+      @variables.set "rotation", 0
 
     render: ->
       #
@@ -1004,7 +1005,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @setZoom = (z) ->
         return
 
+      @setRotation = (r) ->
+        return
+
       zoomLevel = null
+      rotation = 0
 
       offsetX = 0
       offsetY = 0
@@ -1090,7 +1095,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # level 5 => zoomed in such that   - 2px in image = 1px on screen
             #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004
             #&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,2048,256,256
-          imageURL = (x,y,z) ->
+          imageURL = (x,y,z,r) ->
             # we want (x,y) to be the tiling for the screen -- it should be fairly constant, but should be
             # divided into 256x256 pixel tiles
 
@@ -1098,6 +1103,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # the tileWidth is the amount of space in the full size jpeg2000 image represented by the tile
             #
             tileWidth = Math.pow(2.0, zoomLevels - z) * djatokaTileWidth
+
             [ 
               baseURL
               "svc_id=info:lanl-repo/svc/getRegion"
@@ -1105,6 +1111,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               "svc.format=image/jpeg"
               "svc.level=#{z}"
               "svc.region=#{y * tileWidth},#{x * tileWidth},#{djatokaTileWidth},#{djatokaTileWidth}"
+              "svc.rotate=#{r}"
             ].join("&")
 
           screenCenter = ->
@@ -1198,7 +1205,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
             # If we've already created the image at this zoom level, then we'll just use it and adjust the
             # size/position on the screen.
-            if tiles[z]?[o.x]?[o.y]?
+            if @variables.get('lastRotation') == o.r and tiles[z]?[o.x]?[o.y]?
               imgEl = tiles[z][o.x][o.y]
 
             # If the image is off the view area, we just hide it.
@@ -1218,7 +1225,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 'data-y': o.y
                 'data-z': z
                 border: 'none'
-                src: imageURL(o.x, o.y, z)
+                src: imageURL(o.x, o.y, z, o.r)
               tiles[z] ?= []
               tiles[z][o.x] ?= []
               tiles[z][o.x][o.y] = imgEl
@@ -1306,6 +1313,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                   x: i
                   y: j
                   tileSize: tileSize
+                  r: rotation
 
           _setZoom = (z) ->
             wrapper = (cb) -> cb()
@@ -1319,10 +1327,20 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               zoomLevel = z
               wrapper renderTiles
 
+          _setRotation = (r) ->
+            wrapper = (cb) -> cb()
+            rotation = r
+            wrapper renderTiles
+
           @setZoom = (z) =>
             if z != zoomLevel
               _setZoom(z)
               @variables.set "zoom", z
+
+          @setRotation = (r) =>
+            if r != rotation
+              _setRotation(r)
+              @variables.set "rotation", r
 
           setScale = (s) ->
             divScale = s
@@ -1357,6 +1375,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             if z != @variables.get "lastZoom" 
               @variables.set "lastZoom", z
               @setZoom z
+
+          @listenTo imageControls.variables, 'change:rotation', (r) =>
+            if r != @variables.get "lastRotation" 
+              @variables.set "lastRotation", r
+              @setRotation r
       @
 
 )()
