@@ -193,9 +193,14 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
   class SGASharedCanvas.Component.ReadingModeControls extends ComponentView
 
-    initialize: ->
-      super
-      @manifests = SGASharedCanvas.Data.Manifests
+    initialize: (options) ->
+      super    
+      @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, options) ->
+        if options?
+          if options.mode?
+            switch options.mode
+              when "img" then @$el.find("#img-only").button("toggle")
+              else @$el.find("#mode-"+options.mode).button("toggle")
 
     events: 
       'click #img-only': 'setImgMode'
@@ -203,51 +208,31 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       'click #mode-rdg': 'setRdgMode'
       'click #mode-xml': 'setXmlMode'
 
+    checkAndProceed: (m) ->
+      hash = Backbone.history.location.hash
+      if hash.match("\/mode\/")?
+        hash = hash.replace(/mode\/\w{3}/, 'mode/'+m)
+      else 
+        hash = hash.replace(/(#\/?p\d+)/, '$1/mode/'+m)
+      return hash
+
     setImgMode: (e) ->
       e.preventDefault()
-      @manifests.trigger "readingMode", 'img'
-
+      hash = @checkAndProceed "img"
+      Backbone.history.navigate hash
     setStdMode: (e) ->
       e.preventDefault()
-      @manifests.trigger "readingMode", 'std'
-
+      hash = @checkAndProceed "std"
+      Backbone.history.navigate hash
     setRdgMode: (e) ->
       e.preventDefault()
-      @manifests.trigger "readingMode", 'std'
-
-      curCanvas = @manifests.first().canvasesData.first()
-
-      layerAnnos = curCanvas.layerAnnos.find (m) ->
-            return m.get("sc:motivatedBy")["@id"] == "sga:reading"
-
-      $.get layerAnnos.get("resource"), ( data ) ->    
-        d = $.parseHTML data
-        for e in d
-          if $(e).is('div')
-            $(e).addClass("readingText")
-            curCanvas.trigger "addLayer", "Text", e
-
+      hash = @checkAndProceed "rdg"
+      Backbone.history.navigate hash
     setXmlMode: (e) ->
       e.preventDefault()
-      @manifests.trigger "readingMode", 'std'
+      hash = @checkAndProceed "xml"
+      Backbone.history.navigate hash
 
-      curCanvas = @manifests.first().canvasesData.first()
-
-      layerAnnos = curCanvas.layerAnnos.find (m) ->
-            return m.get("sc:motivatedBy")["@id"] == "sga:source"
-
-      $.get layerAnnos.get("resource"), ( data ) ->    
-        surface = data.getElementsByTagName 'surface'
-        serializer = new XMLSerializer()
-        txtdata = serializer.serializeToString surface[0] 
-        txtdata = txtdata.replace /\&/g, '&amp;'
-        txtdata = txtdata.replace /%/g, '&#37;'
-        txtdata = txtdata.replace /</g, '&lt;'
-        txtdata = txtdata.replace />/g, '&gt;'
-
-        xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
-        curCanvas.trigger "addLayer", "Text", xml
-        prettyPrint()
 
 
   class SGASharedCanvas.Component.LimitViewControls extends ComponentView
@@ -334,6 +319,9 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
         # remove search fragment if present
         loc = loc.replace(/\/search\/f:[^\|]+\|q:[^\/]+/, "")
+
+        # remove mode fragment if present
+        loc = loc.replace(/\/mode\/\w{3}/, "")
 
         Backbone.history.navigate(loc+'/search/'+q, {trigger:true})
       false
