@@ -47,7 +47,7 @@ module.exports = function(grunt) {
     concat: {
       js: {
         options: {
-          separator: ';'
+          separator: ';\n'
         },
         src: [
           'bower_components/modernizr/modernizr.js',
@@ -57,6 +57,8 @@ module.exports = function(grunt) {
           'bower_components/underscore/underscore.js',
           'bower_components/backbone/backbone.js',
           'bower_components/google-code-prettify/src/prettify.js',
+          'bower_components/openseadragon/built-openseadragon/openseadragon/openseadragon.min.js',
+          'lib/vendor/djtilesource.js',
           // 'bower_components/perfect-scrollbar/min/perfect-scrollbar-0.4.8.min.js'
         ], 
         dest: 'dist/dependencies.js'
@@ -73,6 +75,8 @@ module.exports = function(grunt) {
           'bower_components/underscore/underscore.js',
           'bower_components/backbone/backbone.js',
           'bower_components/google-code-prettify/src/prettify.js',
+          'bower_components/openseadragon/built-openseadragon/openseadragon/openseadragon.min.js',
+          'lib/vendor/djtilesource.js',
           // 'bower_components/perfect-scrollbar/min/perfect-scrollbar-0.4.8.min.js'
         ], 
         dest: 'dist/dependencies.js'
