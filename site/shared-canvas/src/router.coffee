@@ -11,10 +11,14 @@ SGASharedCanvas.Router = SGASharedCanvas.Router or {}
 
   class Main extends Backbone.Router
     routes:
-      "" : "page"
+      "" : "pageOne"
       "p:n" : "page"
       "p:n/mode/:mode" : "mode"
       "p:n/search/f\::filters|q\::query" : "search"
+
+    pageOne: ->
+      loc = Backbone.history.location.hash + "#/p1"
+      Backbone.history.navigate(loc, {trigger:true})
 
     page: (n) ->
       n = 1 if !n? or n<1
