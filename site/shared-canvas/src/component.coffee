@@ -169,36 +169,26 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
       'click #zoom-reset': 'zoomReset'
       'click #zoom-in': 'zoomIn'
       'click #zoom-out': 'zoomOut'
-      'click #rotate-180': 'rotate'
+      'click #rotate-r': 'rotateRight'
+      'click #rotate-l': 'rotateLeft'
 
     zoomReset: (e) ->
       e.preventDefault()
       @variables.set "zoom", 0
 
-
     zoomIn: (e) ->
       e.preventDefault()
-      zoom = @variables.get "zoom"
-      range = @variables.get("maxZoom") - @variables.get("minZoom")
-      if Math.floor zoom+1 <= range
-        @variables.set "zoom", Math.floor zoom+1
+      @variables.set "zoom", 1
 
     zoomOut: (e) ->
       e.preventDefault()
-      zoom = @variables.get "zoom"
-      range = @variables.get("maxZoom") - @variables.get("minZoom")
-      if Math.floor zoom-1 > 0
-        @variables.set "zoom", Math.floor zoom-1
-      else 
-        @variables.set "zoom", 0
+      @variables.set "zoom", -1
 
-    rotate: (e) ->
-      e.preventDefault()
-      rotation = @variables.get "rotation"
-      if rotation == 0
-        @variables.set "rotation", 180
-      else
-        @variables.set "rotation", 0
+    rotateRight: (e) ->
+      @variables.set "rotation", 1
+
+    rotateLeft: (e) ->
+      @variables.set "rotation", -1
 
   class SGASharedCanvas.Component.ReadingModeControls extends ComponentView
 
@@ -327,7 +317,6 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
             $(e).prop('checked', false)
 
     disable: ->
-      console.log('dis')
       @$el.find('input').each (i,e) =>
         $(e).attr("disabled", true)
 
@@ -370,5 +359,12 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
     submitForm: (e) ->
       e.preventDefault()
       @$el.submit()
+
+  class SGASharedCanvas.Component.OpenSeadragon extends ComponentView
+
+    initialize: ->
+      super
+
+
       
 )()

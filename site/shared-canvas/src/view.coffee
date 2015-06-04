@@ -949,15 +949,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     initialize: (options) ->
       super
 
-      # Extend view properties
-      @variables.set "active", false
-      @variables.set "zoom", 0
-      @variables.set "maxZoom", 0
-      @variables.set "minZoom", 0
-      @variables.set "imgPosition", {}
-      @variables.set "rotation", 0
-
-    render: ->
       #
       # Manage UI components as subviews
       #
@@ -970,446 +961,87 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Image Controls
       imageControls = new SGASharedCanvas.Component.ImageControls 
         el : '#img-controls'
-        vars: @variables.variables
 
-      syncVarsFor imageControls      
+      @listenTo imageControls.variables, 'change:zoom', (z) ->        
+        if @dragon?
+          switch z
+            when 0 then @dragon.viewport.goHome()
+            when 1 then @zoomIn()
+            when -1 then @zoomIn()
+            else @dragon.viewport.goHome()
 
-      # 
-      # Render tiled image, add interaction.
-      #
+      @listenTo imageControls.variables, 'change:rotation', (r) ->        
+        if @dragon?
+          switch r
+            when 1 then @rotateRight()
+            when -1 then @rotateLeft()
+            else @dragon.viewport.goHome()
 
-      djatokaTileWidth = 256
+    zoomIn: ->
+      if @dragon?
+        max = @dragon.viewport.getMaxZoom()
+        z = @dragon.viewport.getZoom()
 
-      width = if @model.get('width')? then @model.get('width')
-      height = if @model.get('height')? then @model.get('height')
+        if max > z
+          @dragon.viewport.zoomTo z+1
 
-      divScale = @variables.get("scale")
-      imgScale = divScale
+    zoomOut: ->
+      if @dragon?
+        min = @dragon.viewport.getMinZoom()
+        z = @dragon.viewport.getZoom()
 
-      innerContainer = $("<div></div>")
-      @$el.append innerContainer
+        if min < z
+          @dragon.viewport.zoomTo z+1
 
-      $(innerContainer).css
-        'overflow': 'hidden'
-        'position': "absolute"
-        'top': 0
-        'left': '16px'
+    rotateRight: ->
+      if @dragon?
+        r = @dragon.viewport.getRotation()
 
-      imgContainer = $("<div></div>")
-      $(innerContainer).append(imgContainer)
+        newr = r + 90
+        if newr > 360
+          @dragon.viewport.setRotation 0
+        else
+          @dragon.viewport.setRotation newr
 
-      @variables.set 'active', true
+    rotateLeft: ->
+      if @dragon?
+        r = @dragon.viewport.getRotation()
 
-      baseURL = @model.get("service") + "?url_ver=Z39.88-2004&rft_id=" + @model.get("@id")
+        newr = r - 90
+        @dragon.viewport.setRotation newr
+        if newr < -360
+          @dragon.viewport.setRotation 0
+        else
+          @dragon.viewport.setRotation newr
 
-      @setZoom = (z) ->
-        return
+    render: ->
+      if OpenSeadragon? and OpenSeadragon.DjatokaTileSource
 
-      @setRotation = (r) ->
-        return
+        width = if @model.get('width')? then @model.get('width')
+        height = if @model.get('height')? then @model.get('height')
+        divScale = @variables.get("scale")
 
-      zoomLevel = null
-      rotation = 0
+        innerContainer = $("<div id='osd-container'></div>")
+        innerContainer.css
+          "width": width * divScale
+          "height": height * divScale
 
-      offsetX = 0
-      offsetY = 0
+        @$el.html(innerContainer)
 
-      $.ajax
-        url: baseURL + "&svc_id=info:lanl-repo/svc/getMetadata"
-        success: (metadata) =>
-          # original{Width,Height} are the size of the full jp2 image - the maximum resolution            
-          originalWidth = Math.floor(metadata.width) || 1
-          originalHeight = Math.floor(metadata.height) || 1
-          imgScale = width / originalWidth
-          # zoomLevels are how many different times we can divide the resolution in half
-          zoomLevels = Math.floor(metadata.levels)
-          # div{Width,Height} are the size of the HTML <div/> in which we are rendering the image
-          divWidth = @$el.width() || 1
-          divHeight = @$el.height() || 1
+        service = @model.get("service") 
+        id = @model.get("@id")
+        settings = {tileSize: 210, tileOverlap: 0};
+        tileSource = new OpenSeadragon.DjatokaTileSource(service, id, settings);
 
-          #divScale = @variables.get("scale")
-          # {x,y}Tiles are how many whole times we can tile the <div/> with tiles _djatokaTileWidth_ wide
-          xTiles = Math.floor(originalWidth * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
-          yTiles = Math.floor(originalHeight * divScale * Math.pow(2.0, zoomLevel) / djatokaTileWidth)
-          inDrag = false
-          
-          # If at all needed, this should be handled with Backbone, not jQuery
-          # so that we can dispose of bindings when the view is removed.
-          # mouseupHandler = (e) ->
-          #  if inDrag
-          #    e.preventDefault()
-          #    inDrag = false
-          # $(document).mouseup mouseupHandler
-          # Unbind event when the view is removed.
-          #   $(document).unbind 'mouseup', mouseupHandler
+        # create the OpenSeadragon Viewer with the TileSource
+        @dragon = OpenSeadragon
+          id: "osd-container"
+          prefixUrl: "images/"
+          tileSources: [tileSource]
+          animationTime: 0
+          showNavigationControl: false
 
-          startX = 0
-          startY = 0
-          startoffsetX = offsetX
-          startoffsetY = offsetY
-          # Initially, center the image in the view area
-          offsetX = 0
-          offsetY = 0
-          baseZoomLevel = 0 # this is the amount needed to render full width of the div - can change with a window resize
-          
-          # if we want all of the image to show up on the screen, then we need to pick the zoom level that
-          # is one step larger than the screen
-          # so if image is 1024 px and we want to fit in 256 px, then image = 2^(n) * fit
-          #xUnits * 2^8 = divWidth - divWidth % 2^8
-          #xUnits * 2^(8+z) = originalWidth - originalWidth % 2^(8+z)
-          recalculateBaseZoomLevel = =>
-            if @variables.get("scale")? > 0
-              baseZoomLevel = Math.max(0, Math.ceil(-Math.log( @variables.get("scale") * imgScale )/Math.log(2)))
-              baseZoomLevel = Math.max(0, zoomLevels - baseZoomLevel) + 1
-              @variables.set 'minZoom', baseZoomLevel
-              @variables.set 'maxZoom', zoomLevels
-
-          wrapWithImageReplacement = (cb) ->
-            cb()
-            currentZ = Math.ceil(zoomLevel + baseZoomLevel)
-            $(imgContainer).find("img").each (idx, elm) ->
-              img = $(elm)
-              x = img.data 'x'
-              y = img.data 'y'
-              z = img.data 'z'
-              if z != currentZ
-                img.css
-                  "z-index": -10
-              else
-                img.css
-                  "z-index": 0         
-
-          updateImageControlPosition = =>
-            @variables.set 'imgPosition',
-              topLeft: 
-                x: offsetX * imgScale
-                y: offsetY * imgScale
-
-          recalculateBaseZoomLevel()
-
-          tiles = []
-          for i in [0..zoomLevels]
-            tiles[i] = []
-
-            # level 6 => zoomed in all the way - 1px = 1px
-            # level 5 => zoomed in such that   - 2px in image = 1px on screen
-            #http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004
-            #&rft_id=http://shelleygodwinarchive.org/images/ox/ox-ms_abinger_c56-0005.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=3&svc.region=0,2048,256,256
-          imageURL = (x,y,z,r) ->
-            # we want (x,y) to be the tiling for the screen -- it should be fairly constant, but should be
-            # divided into 256x256 pixel tiles
-
-            #
-            # the tileWidth is the amount of space in the full size jpeg2000 image represented by the tile
-            #
-            tileWidth = Math.pow(2.0, zoomLevels - z) * djatokaTileWidth
-
-            [ 
-              baseURL
-              "svc_id=info:lanl-repo/svc/getRegion"
-              "svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000"
-              "svc.format=image/jpeg"
-              "svc.level=#{z}"
-              "svc.region=#{y * tileWidth},#{x * tileWidth},#{djatokaTileWidth},#{djatokaTileWidth}"
-              "svc.rotate=#{r}"
-            ].join("&")
-
-          screenCenter = ->
-            original2screen(offsetX , offsetY)
-
-          # we want to map 256 pixels from the Djatoka server onto 128-256 pixels on our screen
-          calcJP2KTileSize = ->
-            Math.pow(2.0, zoomLevels - Math.ceil(zoomLevel + baseZoomLevel)) * djatokaTileWidth
-
-          calcTileSize = ->
-            Math.floor(Math.pow(2.0, zoomLevel) * divScale * imgScale * calcJP2KTileSize())
-
-          # returns the screen coordinates for the top/left position of the screen tile at the (x,y) position
-          # takes into account the center{X,Y} and zoom level
-          screenCoords = (x, y, percSize) ->
-            tileSize = calcTileSize()
-            relSize = tileSize * percSize
-            if y == 0
-              top = 0
-            else
-              top = relSize + (Math.max(0,y-1) * tileSize) 
-            left = x * tileSize
-            center = screenCenter()
-            return {
-              top: top + center.top
-              left: left + center.left
-            }
-
-          original2screen = (ox, oy) ->
-            return {
-              left: ox * divScale * imgScale * Math.pow(2.0, zoomLevel)
-              top: oy * divScale * imgScale * Math.pow(2.0, zoomLevel)
-            }
-
-          screen2original = (ox, oy) ->
-            return {
-              left: ox / divScale / imgScale / Math.pow(2.0, zoomLevel)
-              top: oy / divScale / imgScale / Math.pow(2.0, zoomLevel)
-            }
-
-          # make sure we aren't too far right/left/up/down
-          constrainCenter = ->
-            # we don't want the top-left corner to move into the div space
-            # we don't want the bottom-right corner to move into the div space
-            changed = false
-            if zoomLevel == 0
-              changed = true unless offsetX == 0 and offsetY == 0
-              offsetX = 0
-              offsetY = 0
-            else
-              sizes = screen2original(divWidth, divHeight)
-              if offsetX > 0
-                changed = true
-                offsetX = 0
-              if offsetY > 0
-                changed = true
-                offsetY = 0
-              if offsetX < -originalWidth + sizes.left
-                changed = true
-                offsetX = -originalWidth + sizes.left
-              if offsetY < -originalHeight + sizes.top
-                changed = true
-                offsetY = -originalHeight + sizes.top
-            changed
-
-          # returns the width/height of the screen tile at the (x,y) position
-          screenExtents = (x, y) ->
-            tileSize = calcTileSize()
-            # when at full zoom in, we're using djatokaTileWidth == tileSize
-            jp2kTileSize = calcJP2KTileSize()
-
-            if (x + 1) * jp2kTileSize > originalWidth
-              width = originalWidth - x * jp2kTileSize
-            else
-              width = jp2kTileSize
-            if (y + 1) * jp2kTileSize > originalHeight              
-              height = originalHeight - y * jp2kTileSize
-            else              
-              height = jp2kTileSize
-
-            scale = tileSize / jp2kTileSize
-
-            return {
-              width: Math.max(0, width * scale)
-              height: Math.max(0, height * scale)
-            }
-
-          yAdjustmentPerc = 1
-          renderTile = (o) =>
-            # Only deal with y adjustments in rotated mode
-            if o.r == 0
-              yAdjustmentPerc = 1
-            z = Math.ceil(zoomLevel + baseZoomLevel)
-            fullTileSizes = screenExtents(0,0)
-            heightWidth = screenExtents(o.orderX, o.y)
-            topLeft = screenCoords(o.orderX, o.orderY, yAdjustmentPerc)
-
-            # Adjust relative tile size at the end of a row if needed when rotated
-            relativeHeight = heightWidth.height / fullTileSizes.height
-            if relativeHeight < 1 and o.orderX == o.totX and o.lastY != o.y
-              yAdjustmentPerc = relativeHeight
-
-            if heightWidth.height == 0 or heightWidth.width == 0
-              return
-
-            # If the image is off the view area, we just hide it.
-            if topLeft.left + heightWidth.width < 0 or topLeft.left > divWidth or topLeft.top + heightWidth.height < 0 or topLeft.top > divHeight
-              if imgEl?
-                imgEl.hide()
-              return # don't render the image if off the top of left
-
-            # If we have a cached image, we make sure it isn't hidden.
-            if imgEl?
-              imgEl.show()
-            else
-              imgEl = $("<img></img>")
-              $(imgContainer).append(imgEl)
-              imgEl.attr
-                'data-x': o.orderX
-                'data-y': o.orderY
-                'data-z': z
-                border: 'none'
-                src: imageURL(o.x, o.y, z, o.r)
-              tiles[z] ?= []
-              tiles[z][o.orderX] ?= []
-              tiles[z][o.orderX][o.orderY] = imgEl
-
-              do (imgEl) =>
-                imgEl.bind 'mousedown', (evt) ->
-                  if not inDrag
-                    evt.preventDefault()
-
-                    startX = null
-                    startY = null
-                    startoffsetX = offsetX
-                    startoffsetY = offsetY
-                    inDrag = true
-                    SGASharedCanvas.Utils.mouse.capture (type) ->
-                      e = @
-                      switch type
-                        when "mousemove"
-                          if !startX? or !startY?
-                            startX = e.pageX
-                            startY = e.pageY
-                          scoords = screen2original(startX - e.pageX, startY - e.pageY)
-                          offsetX = startoffsetX - scoords.left
-                          offsetY = startoffsetY - scoords.top
-                          renderTiles()
-                          updateImageControlPosition()
-
-                        when "mouseup"
-                          inDrag = false
-                          SGASharedCanvas.Utils.mouse.uncapture()
-
-                imgEl.bind 'mousewheel DOMMouseScroll MozMousePixelScroll', (e) =>
-                  e.preventDefault()
-                  inDrag = false
-                
-                  x = e.originalEvent.offsetX + parseInt($(imgEl).css('left'), 10)
-                  y = e.originalEvent.offsetY + parseInt($(imgEl).css('top'), 10)
-                
-                  # we want to change centerX/centerY so that scrollPoint is constant after the zoom
-                  z = zoomLevel
-                  oldOffsetX = offsetX
-                  oldOffsetY = offsetY
-                  scrollPoint = screen2original(x, y)
-                  oldOffsetX -= scrollPoint.left
-                  oldOffsetY -= scrollPoint.top
-                  if z >= 0 and z <= zoomLevels - baseZoomLevel
-                    @setZoom (z + 1) * (1 + e.originalEvent.wheelDeltaY / 500) - 1
-                    # we only update the cursor position if we're in the same zoomLevel as the image after zooming in/out
-                    if $(imgEl).data('z') == Math.ceil(zoomLevel + baseZoomLevel) 
-                      scrollPoint = screen2original(x, y)
-                      oldOffsetX += scrollPoint.left
-                      oldOffsetY += scrollPoint.top
-                      offsetX = oldOffsetX
-                      offsetY = oldOffsetY
-                      renderTiles()
-
-            imgEl.css
-              position: 'absolute'
-              top: topLeft.top
-              left: topLeft.left
-              width: heightWidth.width
-              height: heightWidth.height
-
-          renderTiles = =>
-            divWidth = @$el.width() || 1
-            divHeight = @$el.height() || 1
-            if constrainCenter()
-              updateImageControlPosition()
-
-            # the tileSize is the size of the area tiled by the image. It should be between 1/2 and 1 times the djatokaTileWidth
-            tileSize = calcTileSize()
-            # xTiles and yTiles are how many of these tileSize tiles will cover the zoomed in image
-            xTiles = Math.floor(originalWidth * divScale * imgScale * Math.pow(2.0, zoomLevel) / tileSize)
-            yTiles = Math.floor(originalHeight * divScale * imgScale * Math.pow(2.0, zoomLevel) / tileSize)
-            
-            # x,y,width,height are in terms of canvas extents - not screen pixels
-            # s gives us the conversion to screen pixels
-            # for now, we're mapping full images, so we don't need to worry about offsets into the image
-            # xTiles tells us how many tiles across
-            # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
-
-            if rotation == 180
-              orderY = 0
-              for j in [yTiles..0]
-                orderX = 0  
-                for i in [xTiles..0]                  
-                  renderTile 
-                    x: i
-                    orderX: orderX
-                    y: j
-                    orderY: orderY
-                    tileSize: tileSize
-                    r: rotation
-                    lastY: j-1
-                    totX: xTiles
-                  orderX += 1                
-                orderY += 1
-            else
-              for j in [0..yTiles]
-                for i in [0..xTiles]
-                  renderTile 
-                    x: i
-                    orderX: i
-                    y: j
-                    orderY: j
-                    tileSize: tileSize
-                    r: rotation
-                    lastY: j-1
-                    totX: xTiles
-
-          _setZoom = (z) ->
-            wrapper = (cb) -> cb()
-            if z < 0
-              z = 0
-            if z > zoomLevels - baseZoomLevel
-              z = zoomLevels - baseZoomLevel
-            if z != zoomLevel
-              if zoomLevel? and Math.ceil(z) != Math.ceil(zoomLevel)
-                wrapper = wrapWithImageReplacement
-              zoomLevel = z
-              wrapper renderTiles
-
-          _setRotation = (r) ->
-            wrapper = (cb) -> cb()
-            rotation = r
-            wrapper renderTiles
-
-          @setZoom = (z) =>
-            if z != zoomLevel
-              _setZoom(z)
-              @variables.set "zoom", z
-
-          @setRotation = (r) =>
-            if r != rotation
-              _setRotation(r)
-              @variables.set "rotation", r
-
-          setScale = (s) ->
-            divScale = s
-            $(innerContainer).css
-              width: originalWidth * divScale * imgScale
-              height: originalHeight * divScale * imgScale
-
-            oldZoom = baseZoomLevel
-            recalculateBaseZoomLevel()
-            if oldZoom != baseZoomLevel
-              zoomLevel = zoomLevel - baseZoomLevel + oldZoom
-              if zoomLevel > zoomLevels - baseZoomLevel
-                zoomLevel = zoomLevels - baseZoomLevel
-              if zoomLevel < 0
-                zoomLevel = 0
-
-              wrapper = wrapWithImageReplacement
-            else
-              wrapper = (cb) -> cb()
-            wrapper renderTiles
-
-          setScale divScale
-
-          zoomLevel = 0
-
-          Backbone.on 'viewer:resize', (options) =>
-            setScale options.scale
-
-          # Listen to Image Controls zoom value for updating
-          @variables.set "lastZoom", imageControls.variables.get 'zoom'
-          @listenTo imageControls.variables, 'change:zoom', (z) ->
-            if z != @variables.get "lastZoom" 
-              @variables.set "lastZoom", z
-              @setZoom z
-
-          @listenTo imageControls.variables, 'change:rotation', (r) =>
-            if r != @variables.get "lastRotation" 
-              @variables.set "lastRotation", r
-              @setRotation r
-      @
+      else
+        throw new Error "Could not load OpenSeadragon to render JP2 image."
 
 )()

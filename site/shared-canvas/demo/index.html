@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>Example SGA Shared Canvas Viewer</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/dependencies.min.js"></script>
+    <script src="js/dependencies.js"></script>
     <script src="js/SGASharedCanvas.min.js"></script>
   </head>
 
@@ -16,7 +16,7 @@
       <div class="region region-content">
         <div id="block-system-main" class="block block-system">
           <div class="content">
-            <div class="detail-view-tools" id="SGASharedCanvasViewer" data-manifest="example-manifest.jsonld">
+            <div class="detail-view-tools" id="SGASharedCanvasViewer" data-manifest="e1.jsonld">
               <form name="sgaDetails" id="sgaForm" class="well form-inline">
                 <fieldset class="meta-data-view">
                   <div class="noborder control-group row">
@@ -33,9 +33,19 @@
                     <div class="accordion-group">
                       <div class="well">
                         <div class="btn-toolbar pull-left" id="view-controls">
-                          <!--<div class="btn-group"><a class="btn btn-sm" title="Show/Hide Marquee"  id="marquee-sh"><i class="icon-red icon-marquee"></i></a></div>-->
-                          <div class="btn-group" id="img-controls"><a class="btn btn-sm" title="Reset Zoom" id="zoom-reset"><i class="icon-red icon-search"></i></a><a class="btn btn-sm" title="Zoom In" id="zoom-in"><i class="icon-red icon-zoom-in"></i></a><a class="btn btn-sm" title="Zoom Out" id="zoom-out"><i class="icon-red icon-zoom-out"></i></a></div>             
-                          <div class="btn-group" id="mode-controls" data-toggle="buttons"><a class="btn btn-sm" title="View Image Only" id="img-only"><input type="radio" name="options"><i class="icon-red icon-picture"></i></a><a class="btn btn-sm active" title="Standard View" id="mode-std"><input type="radio" name="options"><i class="icon-red icon-pause"></i></a><a class="btn btn-sm" title="View Reading Text" id="mode-rdg"><input type="radio" name="options"><i class="icon-red icon-align-left"></i></a><a class="btn btn-sm" title="View TEI" id="mode-xml"><input type="radio" name="options"><i class="icon-red icon-code"></i></a></div>
+                          <div class="btn-group" id="img-controls">
+                            <a class="btn btn-sm" title="Reset Zoom" id="zoom-reset"><i class="icon-red icon-search"></i></a>
+                            <a class="btn btn-sm" title="Zoom In" id="zoom-in"><i class="icon-red icon-zoom-in"></i></a>
+                            <a class="btn btn-sm" title="Zoom Out" id="zoom-out"><i class="icon-red icon-zoom-out"></i></a>
+                            <a class="btn btn-sm" title="Rotate Left" id="rotate-l"><i class="icon-red icon-rotate-left"></i></a>
+                            <a class="btn btn-sm" title="Rotate Right" id="rotate-r"><i class="icon-red icon-rotate-right"></i></a>
+                          </div>             
+                          <div class="btn-group" id="mode-controls" data-toggle="buttons">
+                            <a class="btn btn-sm" title="View Image Only" id="img-only"><input type="radio" name="options"><i class="icon-red icon-picture"></i></a>
+                            <a class="btn btn-sm active" title="Standard View" id="mode-std"><input type="radio" name="options"><i class="icon-red icon-pause"></i></a>
+                            <a class="btn btn-sm" title="View Reading Text" id="mode-rdg"><input type="radio" name="options"><i class="icon-red icon-align-left"></i></a>
+                            <a class="btn btn-sm" title="View TEI" id="mode-xml"><input type="radio" name="options"><i class="icon-red icon-code"></i></a>
+                          </div>
                         </div>
                         <!-- /view-controls -->
                         
