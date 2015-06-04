@@ -967,7 +967,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           switch z
             when 0 then @dragon.viewport.goHome()
             when 1 then @zoomIn()
-            when -1 then @zoomIn()
+            when -1 then @zoomOut()
             else @dragon.viewport.goHome()
 
       @listenTo imageControls.variables, 'change:rotation', (r) ->        
@@ -991,7 +991,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         z = @dragon.viewport.getZoom()
 
         if min < z
-          @dragon.viewport.zoomTo z+1
+          @dragon.viewport.zoomTo z-1
 
     rotateRight: ->
       if @dragon?
