@@ -1126,9 +1126,13 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
           # returns the screen coordinates for the top/left position of the screen tile at the (x,y) position
           # takes into account the center{X,Y} and zoom level
-          screenCoords = (x, y) ->
+          screenCoords = (x, y, percSize) ->
             tileSize = calcTileSize()
-            top = y * tileSize
+            relSize = tileSize * percSize
+            if y == 0
+              top = 0
+            else
+              top = relSize + (Math.max(0,y-1) * tileSize) 
             left = x * tileSize
             center = screenCenter()
             return {
@@ -1183,9 +1187,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               width = originalWidth - x * jp2kTileSize
             else
               width = jp2kTileSize
-            if (y + 1) * jp2kTileSize > originalHeight
+            if (y + 1) * jp2kTileSize > originalHeight              
               height = originalHeight - y * jp2kTileSize
-            else
+            else              
               height = jp2kTileSize
 
             scale = tileSize / jp2kTileSize
@@ -1195,18 +1199,23 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               height: Math.max(0, height * scale)
             }
 
+          yAdjustmentPerc = 1
           renderTile = (o) =>
-            z = Math.ceil(zoomLevel + baseZoomLevel)  
-            topLeft = screenCoords(o.x, o.y)
-            heightWidth = screenExtents(o.x, o.y)
+            # Only deal with y adjustments in rotated mode
+            if o.r == 0
+              yAdjustmentPerc = 1
+            z = Math.ceil(zoomLevel + baseZoomLevel)
+            fullTileSizes = screenExtents(0,0)
+            heightWidth = screenExtents(o.orderX, o.y)
+            topLeft = screenCoords(o.orderX, o.orderY, yAdjustmentPerc)
+
+            # Adjust relative tile size at the end of a row if needed when rotated
+            relativeHeight = heightWidth.height / fullTileSizes.height
+            if relativeHeight < 1 and o.orderX == o.totX and o.lastY != o.y
+              yAdjustmentPerc = relativeHeight
 
             if heightWidth.height == 0 or heightWidth.width == 0
               return
-
-            # If we've already created the image at this zoom level, then we'll just use it and adjust the
-            # size/position on the screen.
-            if @variables.get('lastRotation') == o.r and tiles[z]?[o.x]?[o.y]?
-              imgEl = tiles[z][o.x][o.y]
 
             # If the image is off the view area, we just hide it.
             if topLeft.left + heightWidth.width < 0 or topLeft.left > divWidth or topLeft.top + heightWidth.height < 0 or topLeft.top > divHeight
@@ -1221,14 +1230,14 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               imgEl = $("<img></img>")
               $(imgContainer).append(imgEl)
               imgEl.attr
-                'data-x': o.x
-                'data-y': o.y
+                'data-x': o.orderX
+                'data-y': o.orderY
                 'data-z': z
                 border: 'none'
                 src: imageURL(o.x, o.y, z, o.r)
               tiles[z] ?= []
-              tiles[z][o.x] ?= []
-              tiles[z][o.x][o.y] = imgEl
+              tiles[z][o.orderX] ?= []
+              tiles[z][o.orderX][o.orderY] = imgEl
 
               do (imgEl) =>
                 imgEl.bind 'mousedown', (evt) ->
@@ -1307,13 +1316,34 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # xTiles tells us how many tiles across
             # yTiles tells us how many tiles down    fit in the view window - e.g., when zoomed in
 
-            for j in [0..yTiles]
-              for i in [0..xTiles]
-                renderTile 
-                  x: i
-                  y: j
-                  tileSize: tileSize
-                  r: rotation
+            if rotation == 180
+              orderY = 0
+              for j in [yTiles..0]
+                orderX = 0  
+                for i in [xTiles..0]                  
+                  renderTile 
+                    x: i
+                    orderX: orderX
+                    y: j
+                    orderY: orderY
+                    tileSize: tileSize
+                    r: rotation
+                    lastY: j-1
+                    totX: xTiles
+                  orderX += 1                
+                orderY += 1
+            else
+              for j in [0..yTiles]
+                for i in [0..xTiles]
+                  renderTile 
+                    x: i
+                    orderX: i
+                    y: j
+                    orderY: j
+                    tileSize: tileSize
+                    r: rotation
+                    lastY: j-1
+                    totX: xTiles
 
           _setZoom = (z) ->
             wrapper = (cb) -> cb()
