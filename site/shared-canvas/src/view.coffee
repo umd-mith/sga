@@ -781,18 +781,23 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # store padding info to pass it on
           padding = 0
 
+          prev1 = @currentLineEl.prev()
+
           if model.get("align")?
-              @currentLineEl.data
-                'align' : model.get("align")
+            @currentLineEl.data
+              'align' : model.get("align")
+
+            # Add alignment to interlinear additions, if present
+            if prev1.hasClass('above-line')
+              prev1.data
+                  'align': model.get("align")
+
           if model.get("indent")?
             @currentLineEl.data
                  'indent': model.get("indent")
 
-            # Add indentation to interlinear additions, if present
-            prev1 = @currentLineEl.prev()
+            # Add indentation to interlinear additions, if present            
             if prev1.hasClass('above-line')
-              # prev1.css
-              #   'padding-left': padding
               prev1.data
                   'indent': model.get("indent")
 
