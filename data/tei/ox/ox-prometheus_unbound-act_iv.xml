@@ -68,9 +68,14 @@
                     </msIdentifier>
                     <msContents>
                         <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_b">
-                            <locusGrp>
-                                <locus target="#ox-ms_shelley_e3-0079"/>
-                            </locusGrp>
+                            <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1">
+                                <locusGrp>
+                                    <locus target="#ox-ms_shelley_e3-0079"/>
+                                </locusGrp>
+                                <bibl>
+                                    <title>Scene 1</title>
+                                </bibl>
+                            </msItem>
                             <bibl>
                                 <title>Act IV</title>
                                 <date>September 1819-Fall/Winter 1819</date>

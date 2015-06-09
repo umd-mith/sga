@@ -52,15 +52,21 @@
                             </bibl>
                         </msItem>
                         <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_a">
-                            <locusGrp>
-                                <locus
-                                    target="#ox-ms_shelley_e1-0038 #ox-ms_shelley_e1-0039 #ox-ms_shelley_e1-0040 #ox-ms_shelley_e1-0041 #ox-ms_shelley_e1-0042 #ox-ms_shelley_e1-0043 #ox-ms_shelley_e1-0044 #ox-ms_shelley_e1-0046 #ox-ms_shelley_e1-0047 #ox-ms_shelley_e1-0048 #ox-ms_shelley_e1-0049 #ox-ms_shelley_e1-0050 #ox-ms_shelley_e1-0052 #ox-ms_shelley_e1-0053 #ox-ms_shelley_e1-0054 #ox-ms_shelley_e1-0055 #ox-ms_shelley_e1-0056 #ox-ms_shelley_e1-0058 #ox-ms_shelley_e1-0060 #ox-ms_shelley_e1-0062 #ox-ms_shelley_e1-0064 #ox-ms_shelley_e1-0065 #ox-ms_shelley_e1-0066 #ox-ms_shelley_e1-0067 #ox-ms_shelley_e1-0068 #ox-ms_shelley_e1-0070 #ox-ms_shelley_e1-0072 #ox-ms_shelley_e1-0074 #ox-ms_shelley_e1-0075 #ox-ms_shelley_e1-0076 #ox-ms_shelley_e1-0077 #ox-ms_shelley_e1-0078 #ox-ms_shelley_e1-0080 #ox-ms_shelley_e1-0081 #ox-ms_shelley_e1-0082 #ox-ms_shelley_e1-0083 #ox-ms_shelley_e1-0084 #ox-ms_shelley_e1-0085 #ox-ms_shelley_e1-0086 #ox-ms_shelley_e1-0088 #ox-ms_shelley_e1-0090 #ox-ms_shelley_e1-0092 #ox-ms_shelley_e1-0094"
-                                />
-                            </locusGrp>
                             <bibl status="fair_copy">
                                 <title>Act I</title>
                                 <date>End of March 1819-End of April 1819</date>
                             </bibl>
+                            <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1">
+                                <locusGrp>
+                                    <locus
+                                        target="#ox-ms_shelley_e1-0038 #ox-ms_shelley_e1-0039 #ox-ms_shelley_e1-0040 #ox-ms_shelley_e1-0041 #ox-ms_shelley_e1-0042 #ox-ms_shelley_e1-0043 #ox-ms_shelley_e1-0044 #ox-ms_shelley_e1-0046 #ox-ms_shelley_e1-0047 #ox-ms_shelley_e1-0048 #ox-ms_shelley_e1-0049 #ox-ms_shelley_e1-0050 #ox-ms_shelley_e1-0052 #ox-ms_shelley_e1-0053 #ox-ms_shelley_e1-0054 #ox-ms_shelley_e1-0055 #ox-ms_shelley_e1-0056 #ox-ms_shelley_e1-0058 #ox-ms_shelley_e1-0060 #ox-ms_shelley_e1-0062 #ox-ms_shelley_e1-0064 #ox-ms_shelley_e1-0065 #ox-ms_shelley_e1-0066 #ox-ms_shelley_e1-0067 #ox-ms_shelley_e1-0068 #ox-ms_shelley_e1-0070 #ox-ms_shelley_e1-0072 #ox-ms_shelley_e1-0074 #ox-ms_shelley_e1-0075 #ox-ms_shelley_e1-0076 #ox-ms_shelley_e1-0077 #ox-ms_shelley_e1-0078 #ox-ms_shelley_e1-0080 #ox-ms_shelley_e1-0081 #ox-ms_shelley_e1-0082 #ox-ms_shelley_e1-0083 #ox-ms_shelley_e1-0084 #ox-ms_shelley_e1-0085 #ox-ms_shelley_e1-0086 #ox-ms_shelley_e1-0088 #ox-ms_shelley_e1-0090 #ox-ms_shelley_e1-0092 #ox-ms_shelley_e1-0094"
+                                    />
+                                </locusGrp>
+                                <bibl status="fair_copy">
+                                    <title>Scene 1</title>
+                                </bibl>                                
+                            </msItem>
+                                                        
                         </msItem>
 
                     </msContents>
