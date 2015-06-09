@@ -616,13 +616,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         if @lastRendering?.get(0)?
 
           myOffset = annoEl.offset()
-          # Although sublinear insertions may influence the position of superlinear insertions,
-          # the opposite should not be true.
           if (@lastRendering.data("place")? and annoEl.data("place")?) and @lastRendering.data("place") == "above" and annoEl.data("place") == "below"
+              # Although sublinear insertions may influence the position of superlinear insertions,
+              # the opposite should not be true.
               middle = myOffset.left + annoEl.outerWidth(false)/2
           else if @lastRendering.hasClass 'sgaDeletionAnnotation'
             # If the previous is a deletion, stick it in the middle!
             middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false)/2)
+          else if @lastRendering.data("line")? and @lastRendering.data("line") < @currentLine
+            # If the last rendered item is in the previous line, set middle to offset left
+            middle = myOffset.left
           else
             middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false))
           myMiddle = myOffset.left + annoEl.outerWidth(false)/2
@@ -723,8 +726,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               model: model 
             annoEl = $ textAnnoView.render()?.el
             annoEl.data "place", "above"
+            annoEl.data "line", @currentLine
             additionLine.append(annoEl).insertBefore(@currentLineEl)
-
+            
             # If the annotation is just empty space, skip
             if annoEl.get(0)?
               setPosition(textAnnoView, annoEl) 
@@ -745,6 +749,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               model: model 
             annoEl = $ textAnnoView.render()?.el
             annoEl.data "place", "below"
+            annoEl.data "line", @currentLine
             additionLine.append(annoEl).insertAfter(@currentLineEl)
 
             if annoEl.get(0)?
@@ -754,7 +759,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           else
             textAnnoView = new TextAnnoView 
               model: model 
-            @lastRendering = annoEl = $ textAnnoView.render()?.el
+            annoEl = $ textAnnoView.render()?.el
+            annoEl.data "line", @currentLine
+            @lastRendering = annoEl
             @currentLineEl.append annoEl
 
         when "Text" in type \
@@ -763,7 +770,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         or "sgaSearchAnnotation" in type
           textAnnoView = new TextAnnoView 
             model: model 
-          annoEl = $ textAnnoView.render()?.el          
+          annoEl = $ textAnnoView.render()?.el
+          annoEl.data "line", @currentLine          
           @currentLineEl.append annoEl
           if annoEl.get(0)?
             @lastRendering = annoEl
@@ -853,6 +861,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @$el.css 'display', 'inline-block'
       @$el.text @model.get "text"
       @$el.addClass @model.get("type").join(" ")
+      @$el.addClass @model.get("id")
 
       icss = @model.get "css"
       if icss? and not /^\s*$/.test(icss) then @$el.attr "style", icss
