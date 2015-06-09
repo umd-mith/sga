@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="ox-ms_prometheus_unbound_act_iv">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Prometheus Unbound, Act IV</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editors</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                    <name xml:id="DR">Dave Rettenmaier</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2015</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Oxford University</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records
+                            for the Shelley-Godwin Archive have waived all copyright and related or
+                            neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Shelley e. 1</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_a">
+                            <locusGrp>
+                                <locus
+                                    target="#ox-ms_shelley_e1-0005 #ox-ms_shelley_e1-0006 #ox-ms_shelley_e1-0007 #ox-ms_shelley_e1-0008 #ox-ms_shelley_e1-0009 #ox-ms_shelley_e1-0010 #ox-ms_shelley_e1-0011 #ox-ms_shelley_e1-0012 #ox-ms_shelley_e1-0013 #ox-ms_shelley_e1-0014 #ox-ms_shelley_e1-0015 #ox-ms_shelley_e1-0016 #ox-ms_shelley_e1-0017 #ox-ms_shelley_e1-0018 #ox-ms_shelley_e1-0019 #ox-ms_shelley_e1-0020 #ox-ms_shelley_e1-0021 #ox-ms_shelley_e1-0022 #ox-ms_shelley_e1-0023 #ox-ms_shelley_e1-0024 #ox-ms_shelley_e1-0025 #ox-ms_shelley_e1-0026 #ox-ms_shelley_e1-0027 #ox-ms_shelley_e1-0028 #ox-ms_shelley_e1-0045 #ox-ms_shelley_e1-051 #ox-ms_shelley_e1-0057 #ox-ms_shelley_e1-0059 #ox-ms_shelley_e1-0061 #ox-ms_shelley_e1-0063 #ox-ms_shelley_e1-0069 #ox-ms_shelley_e1-0069 #ox-ms_shelley_e1-0071 #ox-ms_shelley_e1-0073"/>
+                                
+                            </locusGrp>
+                            <bibl>
+                                <title>Act IV</title>
+                                <date>September 1819-Fall/Winter 1819</date>
+                            </bibl>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Shelley e. 3</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_b">
+                            <locusGrp>
+                                <locus target="#ox-ms_shelley_e3-0079"/>
+                            </locusGrp>
+                            <bibl>
+                                <title>Act IV</title>
+                                <date>September 1819-Fall/Winter 1819</date>
+                            </bibl>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote scribeRef="#pbs"/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <sourceDoc>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0005.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0006.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0007.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0008.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0009.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0010.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0011.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0012.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0013.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0014.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0015.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0016.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0017.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0018.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0019.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0020.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0021.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0022.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0023.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0024.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0025.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0026.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0027.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0028.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0045.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0051.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0057.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0059.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0061.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0063.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0069.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0069.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0071.xml"/>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0073.xml"/>
+<xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0079.xml"/>
+    </sourceDoc>
+</TEI>
