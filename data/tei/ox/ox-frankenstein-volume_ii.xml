@@ -5,7 +5,7 @@
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xi="http://www.w3.org/2001/XInclude"
-     xml:id="ox-frankenstein_notebook_b">
+     xml:id="ox-frankenstein_volume_ii">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -59,7 +59,7 @@
                                 </locusGrp>
                                 <p>The folios at the given loci are not part of a volume or chapter.</p>
                             </msItem>
-                            <msItem class="#volume" n="II" xml:id="ox-frankenstein_volume_ii">
+                            <msItem class="#volume" n="II">
                                 <bibl>
                                     <title>Volume II</title>
                                     <date notBefore="1816-12" notAfter="1817-04">[?December] 1816-April 1817</date>

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<!-- temporary until chapter sequence has been verified -->
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xi="http://www.w3.org/2001/XInclude"
-     xml:id="ox-frankenstein_notebook_c1">
+     xml:id="ox-frankenstein_volume_iii">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -53,7 +51,7 @@
                                 <author>Mary Shelley</author>
                                 <title>Frankenstein</title>
                             </bibl>
-                            <msItem class="#volume" n="III" xml:id="ox-frankenstein_volume_iii">
+                            <msItem class="#volume" n="III">
                                 <bibl>
                                     <title>Volume III</title>
                                     <date notBefore="1816-12" notAfter="1817-04">18 April-[?13] May 1817</date>
