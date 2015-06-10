@@ -30,24 +30,21 @@
     <line>the interpreters of interpreters. <milestone unit="tei:speaker" spanTo="#e1-0003.05"/><hi
         rend="underline">Ion</hi>.<anchor xml:id="e1-0003.05"/></line>
     <!--GREEK text follows. rotate 180; first stage -->
-    <line>&#916;&#953;&#948;&#945;&#963;&#954;&#945;&#955;&#8182;&#957;
-      &#955;&#959;&#947;&#959;&#953;&#963;&#953;
-      &#947;&#953;&#947;&#957;&#959;&#957;&#964;&#945;&#953; &#954;&#945;&#954;&#959;&#953;</line>
-    <line>&#959;&#7988;
-      &#948;&#8125;&#945;&#954;&#959;&#963;&#956;&#959;&#965;&#957;&#964;&#949;&#950;
-      &#946;&#961;&#959;&#964;&#969;&#957;</line>
+      <line rend="right">οἱ δ᾽ακοσμουντες βροτων</line>
+      <line>Διδασκάλῶν λογοισι γιγνονται κακοι</line>    
     <line>Evidently.&#x2014; <milestone unit="tei:speaker" spanTo="#e1-0003.06"/><hi
         rend="underline">Soc</hi>.<anchor xml:id="e1-0003.06"/> Now confess the truth</line>
     <line>to me, Ion, &amp; conceal not what I ask</line>
     <line>of you.&#x2014; When you recite some passages</line>
-    <line>from an <hi rend="underline">Cantin<unclear reason="illegible">i</unclear></hi> epic poem
+    <line>from an <space unit="chars" extent="8"/> epic poem
         <unclear unit="chars" extent="2"/></line>
     <!-- Also rotate this 180 -->
-    <line>climb from &#922;&#913;&#953;&#956;&#945;&#958; a <del rend="strikethrough">la<unclear
+      <line>climb from κλιμαξ a <del rend="strikethrough">la<unclear
           reason="illegible">ll</unclear></del> ladder</line>
-    <line>Piazza <mod>
+    <line rend="center">Piazza <mod>
         <del rend="strikethrough">dalle</del>
-        <add place="sublinear">Via</add>
+        <add place="interlinear">Via</add>
       </mod>/Strozzi</line>
+     <line rend="center"><hi rend="underline">Cantin<unclear reason="illegible">i</unclear></hi></line>
   </zone>
 </surface>
