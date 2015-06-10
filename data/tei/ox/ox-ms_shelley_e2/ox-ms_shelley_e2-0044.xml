@@ -13,8 +13,8 @@
     <line rend="indent1">S<retrace cause="unclear">cene</retrace> Morning- -<unclear reason="case"
         >a</unclear>
       <mod>
-        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">lovely</add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
       </mod>
       <unclear reason="case">V</unclear>ale in the Indian</line>
     <line>Caucasus &#8212;. Asia <add>alone</add></line>
@@ -42,9 +42,8 @@
     <line>The desart of our life....</line>
     <line>This is the season this the day the hour,</line>
     <line>At sunrise thou shouldst come sweet sister mine ...</line>
-    <line>Too long<del rend="strikethrough">-</del>desired too long delaying come . ..</line>
-    <line rend="right"><add place="interlinear"><metamark function="displacement"
-          xml:id="e2-0044.04">&#12296;</metamark></add></line>
+    <line>Too long<del rend="strikethrough">-</del>desired too long delaying come . .. <add place="sublinear"><metamark function="displacement"
+      xml:id="e2-0044.04">&#12296;</metamark></add></line>
     <line>The point of one white star is quivering still</line>
     <line><add><metamark function="count">16</metamark></add></line>
   </zone>
