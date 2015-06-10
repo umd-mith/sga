@@ -9,7 +9,7 @@
       <add><metamark function="count">2</metamark></add></line>
     <line>More glorious far than <delSpan rend="strikethrough" spanTo="#e1-0040.04"/>thine unenvied throne</line>
     <line>Of gold &amp; blood,<anchor xml:id="e1-0040.04"/>
-      <del rend="strikethrough">are these</del><anchor xml:id="e1-0040.05"/><anchor xml:id="e1-0040.06"/> o Mighty God!</line>
+      <del rend="strikethrough">are these</del><anchor xml:id="e1-0040.05"/> o Mighty God!</line>
     <!--text from 20r meant to replace deletion-->
     <line>Almighty, had I deigned to share the shame</line>
     <line>Of thine ill tyranny, and hung not here</line>
@@ -50,8 +50,8 @@
     <line>The <del rend="strikethrough">shapele</del> ghastly people of the realm of <add
         place="sublinear"><metamark function="displacement">&#8260;</metamark></add> dream<unclear
         reason="illegible"><del rend="strikethrough">s</del>,</unclear></line>
-    <line><del rend="strikethrough">Where thou decends't each night with open eyes</del></line>
-    <line><del rend="strikethrough">In torture, for a tyrant seldom sleeps,</del></line>
-    <line><del rend="strikethrough">Thou never;</del> &#x26; the Earthquake-fiends are <add place="superlinear">charged</add></line>
+    <line><delSpan rend="strikethrough" spanTo="#e1-0040.01"/>Where thou decends't each night with open eyes</line>
+    <line>In torture, for a tyrant seldom sleeps,</line>
+    <line>Thou never;<anchor xml:id="e1-0040.01"/> &#x26; the Earthquake-fiends are <add place="superlinear">charged</add></line>
   </zone>
 </surface>
