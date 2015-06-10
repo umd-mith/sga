@@ -16,7 +16,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0020.03"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e2-0020.03"/>
-    <line rend="indent4">ah woe <del rend="strikethrough">is me</del></line>
+    <line rend="indent6">ah woe <del rend="strikethrough">is me</del></line>
     <line>Ah woe! alas! pain pain ever forever<unclear reason="illegible">?</unclear></line>
     <line>I close my tearless eyes, but see more clear</line>
     <line>Thy works within my woe-illumed mind</line>
@@ -31,10 +31,7 @@
             <add place="intralinear">F</add>
           </mod>ierce King</add>
       </mod>not <unclear reason="case">V</unclear>ictory! <del rend="strikethrough">to</del></line>
-    <milestone unit="tei:l" spanTo="#e2-0020.04"/>
-    <line>The sights with which thou torturest gird</line>
-    <line rend="right">my soul</line>
-    <anchor xml:id="e2-0020.04"/>
+    <line>The sights with which thou torturest gird <add place="sublinear">my soul</add></line>
     <line>With new endurance, till the hour arrives</line>
     <line>When they shall be no types of things which are</line>
     <milestone unit="tei:speaker" spanTo="#e2-0020.05"/>
@@ -45,7 +42,7 @@
     <line rend="center">Prometheus</line>
     <anchor xml:id="e2-0020.06"/>
     <line>[SKETCH OF FOLIAGE]</line>
-    <line rend="indent4">There are two woes</line>
+    <line rend="indent6">There are two woes</line>
     <line>To speak and to behold; thou spare me one</line>
     <line>Names are there, Natures sacred watchwords&#8212;They</line>
     <line>Were borne aloft in bright emblazonry</line>

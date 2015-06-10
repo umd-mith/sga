@@ -34,17 +34,14 @@
         <del rend="overwritten">g</del>
         <add place="intralinear">s</add>
       </mod>pirits gather</line>
-    <line rend="left"><add><metamark function="count">649</metamark></add></line>
+    <line><add><metamark function="count">649</metamark></add></line>
     <line>Like flocks of clouds in spring's delighful weather</line>
     <line>Thronging in the blue air&#8212;</line>
     <milestone unit="tei:speaker" spanTo="#e2-0022.03"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e2-0022.03"/>
-    <line rend="indent4">And see more come</line>
-    <milestone unit="tei:l" spanTo="#e2-0022.04"/>
-    <line>Like fountain-vapours when the winds are</line>
-    <line rend="right">dumb</line>
-    <anchor xml:id="e2-0022.04"/>
+    <line rend="indent6">And see more come</line>
+    <line>Like fountain-vapours when the winds are <add place="sublinear">dumb</add></line>
     <anchor/>
   </zone>
 </surface>

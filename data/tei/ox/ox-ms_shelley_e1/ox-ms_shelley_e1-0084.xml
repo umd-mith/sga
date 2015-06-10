@@ -18,10 +18,9 @@
     <milestone unit="tei:speaker" spanTo="#e1-0084.01"/>
     <line rend="center">Mercury</line>
     <anchor xml:id="e1-0084.01"/>
-    <line>O that we might be spared&#8212;|I to inflict</line>
+    <line>O that we might be spared <del rend="strikethrough">&#8212;</del>I to inflict</line>
     <line>And thou to suffer! once more answer me</line>
-    <line><del rend="strikethrough">Thou knowest not when</del></line>
-    <line><del rend="strikethrough">When sayest thou</del>
+    <line><mod><del rend="strikethrough">When sayest thou</del><add place="superlinear"><del rend="strikethrough">Thou knowest not when</del></add></mod>
       <del rend="unmarked">the</del><del rend="strikethrough"> destined change
         arrives</del><metamark function="displacement">x</metamark></line>
     <anchor xml:id="e1-0084.08"/>
@@ -52,17 +51,12 @@
     <line>Seems but a point, and the reluctant mind</line>
     <line>Flags wearily in its' unending flight</line>
     <line>Till it sink, dizzy, blind, lost, shelterless;</line>
-    <milestone unit="tei:l" spanTo="#e1-0084.03"/>
-    <line>Perchance it has not numbered the slow</line>
-    <line rend="right">years</line>
-    <anchor xml:id="e1-0084.03"/>
+    <line>Perchance it has not numbered the slow <add place="sublinear">years</add></line>
     <line>Which thou must spend in torture, unreprieved.</line>
-    <milestone unit="tei:l" spanTo="#e1-0084.05"/>
+    <milestone unit="tei:speaker" spanTo="#e1-0084.05"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0084.05"/>
-    <line><milestone unit="tei:seg" spanTo="#e1-0084.06" corresp="#e1-0084.07"/>pass<anchor
-        xml:id="e1-0084.06"/></line>
-    <line>Perchance no thought can count them&#8212;yet they<anchor xml:id="e1-0084.07"/></line>
-    <line rend="indent5"><add><metamark function="count">410</metamark></add></line>
+    <line>Perchance no thought can count them&#8212;yet they <add place="superlinear">pass</add></line>
+    <line rend="indent7"><add><metamark function="count">410</metamark></add></line>
   </zone>
 </surface>

@@ -26,6 +26,7 @@
         <add place="superlinear">a</add>
       </mod> throng</line>
     <line>Of thoughts &amp; forms, which else senseless &amp; shapeless were</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">The Lightning is his slave; Heavens utmost deep</line>
     <line rend="indent1"><mod>
         <del rend="overwritten">H</del>
@@ -33,17 +34,11 @@
       </mod>ives up her stars, &amp; like a flock of sheep</line>
     <line>They pass before his eye, are numbered, &amp; roll on!</line>
     <line rend="indent1">The Tempest is his steed,&#x2014;he strides the air!</line>
-    <milestone unit="tei:l" spanTo="#e1-0028.01"/>
     <line rend="indent1">And the abyss shouts from her <unclear reason="illegible"
-      >d</unclear>epth</line>
-    <line rend="right">laid bare</line>
-    <anchor xml:id="e1-0028.01"/>
-    <line><del rend="unmarked" instant="true">Wh</del><del rend="strikethrough" instant="true">at
-        secrets hast thou Heaven</del><del instant="true" rend="ummarked">?</del></line>
-    <milestone unit="tei:l" spanTo="#e1-0028.02"/>
-    <line>Heaven, hast thou secrets? Man unveils me, I</line>
-    <line rend="right">have none</line>
-    <anchor xml:id="e1-0028.02"/>
+      >d</unclear>epth <add place="sublinear">laid bare</add></line>
+    <line>Wh<del rend="strikethrough" instant="true">at secrets hast thou Heaven</del><del instant="true" rend="ummarked">?</del></line>
+    <line>Heaven, hast thou secrets? Man unveils me, I <add place="sublinear">have none</add></line>
+    <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:speaker" spanTo="#e1-0028.05"/>
     <line rend="center">The Moon</line>
     <anchor xml:id="e1-0028.05"/>

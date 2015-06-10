@@ -9,10 +9,7 @@
     <line rend="indent1">On me &amp; mine I imprecate</line>
     <line rend="indent1">The utmost torture of thy hate</line>
     <line rend="indent1">And thus devote to sleepless agony</line>
-    <milestone unit="tei:l" spanTo="#e1-0068.01"/>
-    <line>This undeclining head while thou must</line>
-    <line rend="indent5">reign <unclear reason="illegible">o</unclear>n high</line>
-    <anchor xml:id="e1-0068.01"/>
+    <line>This undeclining head while thou must <add place="sublinear">reign <unclear reason="illegible">o</unclear>n high</add></line>
     <line>But thou who art the <mod>
         <del rend="strikethrough"><unclear reason="illegible">King</unclear></del>
         <add place="superlinear">God</add>
@@ -25,15 +22,9 @@
     <line rend="indent1">'Till thine Infinity shall be</line>
     <line rend="indent1">A robe of envenomed agony</line>
     <line>And thine Omnipotence a crown of pain</line>
-    <milestone unit="tei:l" spanTo="#e1-0068.02"/>
-    <line>To cling like burning gold round thy</line>
-    <line rend="indent4">dissolving brain.</line>
-    <anchor xml:id="e1-0068.02"/>
+    <line>To cling like burning gold round thy <add place="sublinear">dissolving brain.</add></line>
     <line>Heap on thy soul by virtue of this Curse</line>
-    <milestone unit="tei:l" spanTo="#e1-0068.03"/>
-    <line>Ill deeds, then be thou damned, beholding</line>
-    <line rend="right">good</line>
-    <anchor xml:id="e1-0068.03"/>
+    <line>Ill deeds, then be thou damned, beholding <add place="sublinear">good</add></line>
     <line><add><unclear reason="illegible">280</unclear></add></line>
   </zone>
 </surface>

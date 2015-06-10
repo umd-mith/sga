@@ -22,19 +22,16 @@
     <line rend="indent1">Thro' isles forever calm;</line>
     <line>Oh Gentle <mod>
         <del rend="overwritten">m</del>
-        <add place="superlinear">M</add>
+        <add place="intralinear">M</add>
       </mod>oon, thy chrystal accents pierce</line>
     <line>The caverns of my Pride's deep Universe</line>
-    <milestone unit="tei:l" spanTo="#e1-0059.02"/>
     <line>Charming the <mod>
         <del rend="overwritten">t</del>
         <add place="intralinear">T</add>
       </mod>yger <mod>
         <del rend="overwritten">j</del>
         <add place="intralinear">J</add>
-      </mod>oy, whose tramplings</line>
-    <line rend="right">fierce</line>
-    <anchor xml:id="e1-0059.02"/>
+      </mod>oy, whose tramplings <add place="sublinear">fierce</add></line>
     <line rend="indent1">Made wounds, which need thy balm</line>
     <line rend="right"><add><metamark function="count">457</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0059.03"/>
@@ -46,7 +43,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0059.04"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0059.04"/>
-    <line rend="indent3">Ah me, sweet sister</line>
+    <line rend="indent6">Ah me, sweet sister</line>
     <line>The stream of sound<del rend="strikethrough">s</del> has ebbed away from us</line>
     <line>And you pretend to rise out of its wave</line>
     <line>Because your words <mod>

@@ -9,13 +9,10 @@
     <line rend="center">Prometheus</line>
     <anchor xml:id="e2-0016.01"/>
     <line>Remit the anguish of that lighted stare&#8212;</line>
-    <milestone unit="tei:l" spanTo="#e2-0016.02"/>
     <line>Close <del rend="strikethrough" instant="true">that</del> those wan lips <mod>
         <del rend="overwritten">;</del>
         <add place="intralinear">&#8212;</add>
-      </mod> let that thorn-wounded</line>
-    <line rend="right">brow</line>
-    <anchor xml:id="e2-0016.02"/>
+      </mod> let that thorn-wounded <add place="sublinear">brow</add></line>
     <line>Stream not with blood&#8212;it mingles with thy tears!</line>
     <line><mod>
         <add place="intralinear" xml:id="e2-0016.03">Fix</add>
@@ -37,6 +34,6 @@
     <line>Float by my feet like sea-uprooted isles</line>
     <line>Whose sons are kneaded down in common blood</line>
     <line>By the red light of thier own burning homes&#x2014;</line>
-    <line rend="indent5"><add><metamark function="count">599</metamark></add></line>
+    <line rend="indent6"><add><metamark function="count">599</metamark></add></line>
   </zone>
 </surface>

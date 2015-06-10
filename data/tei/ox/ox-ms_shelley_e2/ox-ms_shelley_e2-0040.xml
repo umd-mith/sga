@@ -9,7 +9,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0040.01"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0040.01"/>
-    <line rend="indent5">Only a sense</line>
+    <line rend="indent6">Only a sense</line>
     <line>Remains of them, like the Omnipotence</line>
     <line>Of music when the inspired voice &amp; lute</line>
     <line>Languish, <mod>
@@ -31,10 +31,7 @@
     <line>Which else had sunk into the thirsty dust</line>
     <line>All things are still&#8212;alas how heavily</line>
     <line>This quiet morning weighs upon my heart;</line>
-    <milestone unit="tei:l" spanTo="#e2-0040.03"/>
-    <line>Though I should dream, I could even sleep with</line>
-    <line rend="right">grief</line>
-    <anchor xml:id="e2-0040.03"/>
+    <line>Though I should dream, I could even sleep with <add place="sublinear">grief</add></line>
     <line>If slumber were denied not .. I would fain</line>
     <line>Be what it is my destiny to be</line>
     <line>The <unclear reason="case">s</unclear>aviour &amp; the strength of suffering man</line>

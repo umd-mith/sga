@@ -13,13 +13,10 @@
     <line>Which points into the Heavens, dreaming delight</line>
     <line>Murmuring victorious joy in my enchanted sleep<unclear reason="illegible"
       >;</unclear></line>
-    <line rend="indent1">As a youth lulled in love-drea<unclear reason="illegible">ms</unclear>,
+    <line>As a youth lulled in love-drea<unclear reason="illegible">ms</unclear>,
       faintly sighing,</line>
-    <line rend="indent1">Under the shadow of his beauty lying</line>
-    <milestone unit="tei:l" spanTo="#e1-0051.03"/>
-    <line>Which <del rend="strikethrough">a</del>round his rest a watch of light &#x26;</line>
-    <line rend="indent4">warmth doth keep</line>
-    <anchor xml:id="e1-0051.03"/>
+    <line>Under the shadow of his beauty lying</line>
+    <line>Which <del rend="strikethrough">a</del>round his rest a watch of light &#x26; <add place="sublinear">warmth doth keep</add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0051.02"/>
     <line rend="center">The <hi rend="underline">Moon</hi></line>
     <anchor xml:id="e1-0051.02"/>

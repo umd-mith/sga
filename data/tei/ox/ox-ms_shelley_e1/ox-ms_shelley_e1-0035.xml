@@ -7,11 +7,9 @@
   <zone type="library">
     <line rend="right">17</line>
   </zone>
-  <zone type="pagination">
-    <line rend="center">2</line>
-  </zone>
   <zone type="main">
-    <line>excell the beautiful in beauty; &amp; secondly</line>
+    <line><metamark function=""></metamark></line>
+    <line>excell the beautiful <add place="superlinear"><metamark function="count"></metamark>2</add> in beauty; &amp; secondly</line>
     <line>a familiarity with <mod>
         <del rend="strikethrough">the best</del>
         <add place="sublinear">many &amp; excellent</add>
@@ -35,9 +33,8 @@
       not merely to remember</line>
     <line>the verses, but to fathom the deepest</line>
     <line>meaning of this king of melody: for</line>
-    <line><add place="superlinear">rhap</add><del rend="unmarked">i</del><del rend="strikethrough">t
-        is the office of the</del>
-      <del rend="strikethrough"><unclear reason="illegible">rap</unclear></del> he is no</line>
+    <line>it<add place="superlinear">rhap</add> <del rend="strikethrough">is the office of the 
+      <unclear reason="illegible">rap</unclear></del> he is no</line>
     <line>rhapsodist who does not understand</line>
     <line>the whole <del rend="strikethrough">purpose &amp;</del> scope &amp; intention</line>
     <line>of the poet, &amp; is not capable of</line>

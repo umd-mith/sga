@@ -10,19 +10,11 @@
   <zone type="main">
     <line rend="indent1">Man, oh not men; a chain of linked thought</line>
     <line rend="indent1">Of love &amp; might to be divided not</line>
-    <milestone unit="tei:l" spanTo="#e1-0027.01"/>
-    <line>Compelling the elements with adamantine</line>
-    <line rend="right">stress&#x2014;</line>
-    <anchor xml:id="e1-0027.01"/>
-    <milestone unit="tei:l" spanTo="#e1-0027.02"/>
-    <line rend="indent1">As the Sun rules, even with a tyrants</line>
-    <line rend="right">gaze</line>
-    <anchor xml:id="e1-0027.02"/>
+    <line>Compelling the elements with adamantine <add place="sublinear">stress&#x2014;</add></line>
+    <line rend="indent1">As the Sun rules, even with a tyrants <add place="sublinear">gaze</add></line>
     <line rend="indent1">The unquiet Republic of the maze</line>
-    <milestone unit="tei:l" spanTo="#e1-0027.03"/>
-    <line>Of Planets, struggling fierce towards Heavens</line>
-    <line>free wild<add place="superlinear">er</add>ness.</line>
-    <anchor xml:id="e1-0027.03"/>
+    <line>Of Planets, struggling fierce towards Heavens <add place="sublinear">free wilderness.</add></line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">Man, one harmonious Soul of many a soul</line>
     <line rend="indent1">Whose nature is it's own divine controul</line>
     <line>Where all things flow to all, as rivers to the <unclear reason="case"
@@ -33,34 +25,19 @@
         </restore>
         <del rend="strikethrough"><add place="superlinear">by</add></del>
       </mod> love</line>
-    <milestone unit="tei:l" spanTo="#e1-0027.04"/>
     <line rend="indent1">Labour &amp; Pain &amp; <unclear reason="case">G</unclear>rief <mod>
         <del rend="strikethrough">through</del>
         <add place="superlinear">in</add>
-      </mod> life's green</line>
-    <line rend="right">grove</line>
-    <anchor xml:id="e1-0027.04"/>
-    <milestone unit="tei:l" spanTo="#e1-0027.05"/>
-    <line>Sport like tame beasts&#x2014;none knew how</line>
-    <line rend="right"><add><metamark>(</metamark></add>gentle they could
-          be<add><metamark>)</metamark></add></line>
-    <anchor xml:id="e1-0027.05"/>
-    <line rend="indent5"
-      ><add><metamark>&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;</metamark></add></line>
-    <!--The encoding for the metamarks needs to be revisited.-->
-    <line rend="indent1">His Will, with all mean passions, bad delight<unclear reason="illegible"
-        >s</unclear></line>
+      </mod> life's green <add place="sublinear">grove</add></line>
+    <line>Sport like tame beasts&#x2014;none knew how <add place="sublinear">(ge<hi rend="underline">ntle they cou</hi>ld be)</add></line>
+    <space dim="vertical" unit="lines" extent="1" />
+    <line rend="indent1">His Will, with all mean passions, bad delight<unclear reason="illegible">s</unclear></line>
     <line rend="indent1">And selfish cares, its trembling satellites,</line>
     <line>A spirit ill to guide, but mighty to obey<unclear reason="illegible">;</unclear></line>
     <line rend="indent1">Is as a tempest-winged ship, whose helm</line>
-    <milestone unit="tei:l" spanTo="#e1-0027.06"/>
-    <line rend="indent1">Love rules, through waves which dare</line>
-    <line rend="right">not overwhelm</line>
-    <anchor xml:id="e1-0027.06"/>
+    <line rend="indent1">Love rules, through waves which dare <add place="sublinear">not overwhelm</add></line>
     <milestone unit="tei:l" spanTo="#e1-0027.07"/>
-    <line>Forcing Life's wildest shores to own its sovereign<unclear>s</unclear></line>
-    <line rend="indent5">sway</line>
-    <anchor xml:id="e1-0027.07"/>
+    <line>Forcing Life's wildest shores to own its sovereign<unclear>s</unclear> <add place="sublinear">sway</add></line>
     <line><add><metamark function="count">375</metamark></add></line>
   </zone>
 </surface>

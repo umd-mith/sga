@@ -13,7 +13,9 @@
     <line>From thine unenvied throne</line>
     <anchor xml:id="e1-0041.01"/>
     <line>[SKETCH IN PENCIL OF TREE]</line>
+    <space dim="vertical" unit="lines" extent="9" />
     <line><add><metamark function="displacement">&#60;</metamark></add></line>
+    <space dim="vertical" unit="lines" extent="5" />
     <line><add next="#e1-0041.03" corresp="#e1-0040.08">Have it's deaf waves not heard my
         agony?</add></line>
     <addSpan spanTo="#e1-0041.02" corresp="#e1-0040.07"/>
@@ -24,6 +26,7 @@
       </mod> hope!--yet I endure</line>
     <anchor xml:id="e1-0041.02"/>
     <line><add xml:id="e1-0041.03" corresp="#e1-0040.09">Ah me alas pain ever forever</add></line>
+    <space dim="vertical" unit="lines" extent="6"/>
     <line><add corresp="#e1-0040.10">Mocking me</add></line>
   </zone>
 </surface>

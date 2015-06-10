@@ -9,17 +9,14 @@
   </zone>
   <zone type="main">
     <line>illustrates them, must be the same.&#8212;</line>
-    <milestone unit="tei:l" spanTo="#e1-0077.01"/>
+    
     <line><milestone unit="tei:speaker" spanTo="#e1-0077.03"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0077.03"/> As<hi rend="underline">sur</hi>edly <milestone unit="tei:speaker"
         spanTo="#e1-0077.x"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0077.x"/> Yet <mod>
         <del rend="strikethrough">if</del>
         <del rend="strikethrough"><unclear reason="illegible">progress</unclear></del>
         <del rend="strikethrough"><add place="superlinear">in the</add></del>
-      </mod></line>
-    <line rend="right"><hi rend="underline"><unclear reason="illegible">of</unclear> spe</hi>ak
-      of</line>
-    <anchor xml:id="e1-0077.01"/>
+        </mod> <add place="sublinear"><hi rend="underline"><unclear reason="illegible">of</unclear> spe</hi>ak of</add></line>
     <line><del rend="strikethrough">consider<add>ation</add></del><mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear"><unclear reason="illegible">of</unclear></add>
@@ -28,7 +25,7 @@
         <add place="intralinear">&#8212;</add>
       </mod> the same</line>
     <line>mode of consideration must be</line>
-    <line>[admitted] with respect to all arts; do</line>
+    <line><unclear reason="illegible">admitted</unclear> with respect to all arts; do</line>
     <line>you desire to hear what I understand</line>
     <line>by this, o Ion? <milestone unit="tei:speaker" spanTo="#e1-0077.04"/><hi rend="underline"
         >Ion</hi>.<anchor xml:id="e1-0077.04"/>&#8212; Yes, by Jupiter</line>
@@ -46,7 +43,7 @@
       </mod> wise, o Ion. The raphsodists,</line>
     <line>the actors, &amp; the authors</line>
     <line><del rend="strikethrough">Children of Hell</del></line>
-    <line rend="indent1"><del rend="strikethrough">Herald of Gods darest thou delay</del>
+    <line rend="indent2"><del rend="strikethrough">Herald of Gods darest thou delay</del>
       <del rend="unmarked">...</del></line>
     <line>Darest thou delay o Herald! <mod>
         <del rend="overwritten"><unclear reason="illegible">c</unclear></del>

@@ -15,7 +15,8 @@
         <del rend="strikethrough">Peace</del>
         <add place="superlinear">Joy</add>
       </mod>, Empire &#x26; Victory</line>
-    <line>5<unclear reason="illegible">33</unclear></line>
+    <line rend="center"><metamark function="count">5<unclear reason="illegible">33</unclear></metamark></line>
+    <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:p" spanTo="#e1-0073.01"/>
     <line><unclear reason="illegible">T</unclear>hen my dear friend we should not</line>
     <line>err, <mod>
@@ -34,12 +35,10 @@
     <line>other poets; especially as he confesses</line>
     <line>that the same person must be</line>
     <line><unclear reason="illegible">es</unclear>teemed a competent judge of</line>
-    <line><mod>
-        <del rend="strikethrough">others</del>
-      </mod>: all <mod>
-        <del rend="strikethrough">that is said respecting</del>
+    <line><del rend="strikethrough">others</del> : all 
+      <del rend="strikethrough">that
         <add place="superlinear"><unclear reason="illegible">those</unclear></add>
-      </mod></line>
+        is said respecting</del></line>
     <line>who speak of the same <mod>
         <del rend="strikethrough">things</del>
         <add place="sublinear">subjects</add>

@@ -9,7 +9,7 @@
     <line rend="indent1">We make there, our liquid lair</line>
     <line rend="indent1">Voyaging cloudlike &amp; <unclear reason="illegible"><del
           rend="strikethrough">pe</del></unclear> unpent</line>
-    <line>Thro the boundless element&#8212;</line>
+    <line rend="indent1">Thro the boundless element&#8212;</line>
     <line rend="indent1">Thence we bear the prophecy</line>
     <line rend="indent1">Which begins &amp; ends in thee!</line>
     <milestone unit="tei:speaker" spanTo="#e2-0026.01"/>
@@ -18,7 +18,7 @@
     <line>More yet come, one by one, the air around them</line>
     <line>Looks radiant like the air around a star</line>
     <milestone unit="tei:speaker" spanTo="#e2-0026.02"/>
-    <line rend="center">1.<hi rend="sup">st</hi>Spirit</line>
+    <line rend="center">1.<hi rend="sup">st</hi> Spirit</line>
     <anchor xml:id="e2-0026.02"/>
     <line><del rend="strikethrough" instant="true">On</del> On a battle-trumpet's blast</line>
     <line rend="indent1">I fled hither fast fast fast</line>
@@ -32,6 +32,6 @@
     <line rend="indent1">And one sound, above around</line>
     <line rend="indent1">One sound beneath around above</line>
     <line rend="indent1">Was moving; twas the soul of love</line>
-    <line rend="left"><add><metamark function="count">690</metamark></add></line>
+    <line><add><metamark function="count">690</metamark></add></line>
   </zone>
 </surface>
