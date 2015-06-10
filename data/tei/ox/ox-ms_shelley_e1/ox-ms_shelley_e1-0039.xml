@@ -80,7 +80,7 @@
     <line>were a diviner do</line>
     <!-- This is supposed to be bracketed off -->
     <milestone unit="tei:seg" spanTo="#e1-0039.13" corresp="e1-0038.01"/>
-    <line rend="indent3"><add>these are mine empire.</add></line>
+    <line xml:id="e1-0039-pu_line_0" rend="indent3"><add>these are mine empire.</add></line>
     <anchor xml:id="e1-0039.13"/>
   </zone>
 </surface>

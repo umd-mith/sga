@@ -22,7 +22,7 @@
     <!-- the previous line is overwritten by "that" on the line above. In fact, the previous line is intralinear
       to the above line, but it was overwritten without the intent to delete. It is an unused option for
       "and yet" on 20v -->
-    <line><add><hi rend="underline"><milestone unit="tei:seg" spanTo="#e1-0043.08"
+    <line xml:id="e1-0043-pu_line_0"><add><hi rend="underline"><milestone unit="tei:seg" spanTo="#e1-0043.08"
             xml:id="e1-0043.09"/>and even<anchor xml:id="e1-0043.08"/></hi></add></line>
     <line>illustrate Homer &amp; not Hesiod or</line>
     <line>the other poets in an equal degree?</line>
@@ -63,7 +63,7 @@
         weights="1 0"/></line>
     <line>gods &amp; heroes<unclear reason="illegible">:</unclear>&#8212;are <del
         rend="strikethrough">the</del> not <unclear reason="illegible">these</unclear> the</line>
-    <line><add><milestone unit="tei:seg" spanTo="#e1-0043.07" corresp="e1-0042.01"/>mountains<anchor
+    <line xml:id="e1-0043-pu_line_1"><add><milestone unit="tei:seg" spanTo="#e1-0043.07" corresp="e1-0042.01"/>mountains<anchor
           xml:id="e1-0043.07"/></add></line>
     <line rend="indent1">materials from which Homer</line>
   </zone>

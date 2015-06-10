@@ -5,70 +5,67 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0080" partOf="#ox-ms_shelley_e2" mith:folio="39v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0080.jp2"/>
   <zone type="main">
-    <line>[f. 39r is blank]</line>
-    <line>Round foodless men wre<mod>
+    <line xml:id="e2-0080_pu_line_0">Round foodless men wre<mod>
         <del rend="overwritten">k</del>
         <add place="intralinear">c</add>
       </mod>ked on an oozy isle</line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.01"/>
-    <line rend="center">Asia</line>
+    <line xml:id="e2-0080_pu_line_1" rend="center">Asia</line>
     <anchor xml:id="e2-0080.01"/>
-    <line>The fragments of the cloud are scattered up&#8212;</line>
+    <line xml:id="e2-0080_pu_line_2">The fragments of the cloud are scattered up&#8212;</line>
     <milestone unit="tei:l" spanTo="#e2-0080.02"/>
-    <line>The wind which lifts them disentwines my</line>
-    <line rend="right">hair&#8212;</line>
+    <line xml:id="e2-0080_pu_line_3">The wind which lifts them disentwines my</line>
+    <line xml:id="e2-0080_pu_line_4" rend="right">hair&#8212;</line>
     <anchor xml:id="e2-0080.02"/>
-    <line>Its' billows now s<mod>
+    <line xml:id="e2-0080_pu_line_5">Its' billows now s<mod>
         <del rend="overwritten">t</del>
         <add place="intralinear">w</add>
       </mod>eep oer my eyes&#8212; my brain</line>
-    <line>st those</line>
-    <line>Grows dizzy&#8212; <del rend="strikethrough">I</del> see<mod>
+    <line xml:id="e2-0080_pu_line_6">st those</line>
+    <line xml:id="e2-0080_pu_line_7">Grows dizzy&#8212; <del rend="strikethrough">I</del> see<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">st those</add>
       </mod> shapes within the mist <unclear reason="illegible">?</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.03"/>
-    <line rend="center">Panthea</line>
+    <line xml:id="e2-0080_pu_line_8" rend="center">Panthea</line>
     <anchor xml:id="e2-0080.03"/>
-    <line>A countenance with beckoning smiles&#8212; there <add place="superlinear"
+    <line xml:id="e2-0080_pu_line_9">A countenance with beckoning smiles&#8212; there <add place="superlinear"
       >burns</add></line>
-    <line>An<del rend="strikethrough">
+    <line xml:id="e2-0080_pu_line_10">An<del rend="strikethrough">
         <unclear>o</unclear></del> azure fire within its golden locks&#8212;</line>
-    <line>Another &amp; another hark they speak!</line>
-    <line>/</line>
-    <line>\</line>
+    <line xml:id="e2-0080_pu_line_11">Another &amp; another hark they speak!</line>
     <milestone unit="tei:stage" spanTo="#e2-0080.04"/>
-    <line rend="center">Scene 4 the Cave of Demogorgon</line>
-    <line>Asia, Panthea, <del rend="strikethrough">a</del>
+    <line xml:id="e2-0080_pu_line_12" rend="center">Scene 4 the Cave of Demogorgon</line>
+    <line xml:id="e2-0080_pu_line_13">Asia, Panthea, <del rend="strikethrough">a</del>
       <del rend="strikethrough">v</del>
       <del rend="strikethrough">Demogorgon</del>
       <del rend="strikethrough">on his throne</del>
     </line><anchor xml:id="e2-0080.04"/>
     <milestone unit="tei:speaker" spanTo="#e2-0080.06"/>
-    <line rend="center">Panthea</line>
+    <line xml:id="e2-0080_pu_line_14" rend="center">Panthea</line>
     <anchor xml:id="e2-0080.06"/>
-    <line><del rend="strikethrough">A veiled s</del> What veiled form sits on that ebon
+    <line xml:id="e2-0080_pu_line_15"><del rend="strikethrough">A veiled s</del> What veiled form sits on that ebon
       throne.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.07"/>
-    <line rend="center">Asia</line>
+    <line xml:id="e2-0080_pu_line_16" rend="center">Asia</line>
     <anchor xml:id="e2-0080.07"/>
-    <line>The veil has fallen!..</line>
+    <line xml:id="e2-0080_pu_line_17">The veil has fallen!..</line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.08"/>
-    <line>Panthea</line>
+    <line xml:id="e2-0080_pu_line_18">Panthea</line>
     <anchor xml:id="e2-0080.08"/>
-    <line rend="indent4">I see a mighty <mod>
+    <line xml:id="e2-0080_pu_line_19" rend="indent4">I see a mighty <mod>
         <del rend="overwritten">d</del>
         <add place="intralinear">D</add>
       </mod>arkness</line>
-    <line>the</line>
-    <line>Filling <mod>
+    <line xml:id="e2-0080_pu_line_20">the</line>
+    <line xml:id="e2-0080_pu_line_21">Filling <mod>
         <del rend="strikethrough"><mod>
             <del rend="overwritten">the</del>
             <add place="intralinear">that</add>
           </mod></del>
         <add place="superlinear">the</add>
       </mod> seat of power <unclear reason="illegible">;</unclear> and rays of gloom</line>
-    <line>Dart round, as light from the meridian Sun</line>
-    <line>Ungazed upon &amp; shapeless &#8212;.. neither limb</line>
+    <line xml:id="e2-0080_pu_line_22">Dart round, as light from the meridian Sun</line>
+    <line xml:id="e2-0080_pu_line_23">Ungazed upon &amp; shapeless &#8212;.. neither limb</line>
   </zone>
 </surface>

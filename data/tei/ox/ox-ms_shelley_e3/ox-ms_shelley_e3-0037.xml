@@ -9,48 +9,48 @@
     <!-- The First Paragraph of this page is littered with penciled in words on the background,
       have to check with how to encode layers to correctly encode this section -->
     <milestone unit="tei:seg" spanTo="#e3-0037.01" corresp="e3-0036.05"/>
-    <line>Gentle &amp; just &amp; <mod>
+    <line xml:id="e3-0037-pu_line_0">Gentle &amp; just &amp; <mod>
         <del rend="strikethrough">mild</del>
         <add place="superlinear">dreadless</add>
       </mod>
       <del rend="strikethrough">if</del>
       <del rend="strikethrough">he is now</del> is he not</line>
-    <line>The monarch of the world&#8212; what then art thou?</line>
+    <line xml:id="e3-0037-pu_line_1">The monarch of the world&#8212; what then art thou?</line>
     <anchor xml:id="e3-0037.01"/>
     <milestone unit="tei:seg" spanTo="#e3-0037.02" corresp="#e3-0036.06"/>
-    <line rend="indent3">Sink with me then&#8212; <add><metamark function="count"
+    <line xml:id="e3-0037-pu_line_2" rend="indent3">Sink with me then&#8212; <add><metamark function="count"
         >71</metamark></add></line>
-    <line rend="indent1">We two shall sink <unclear reason="illegible">o</unclear>n the wide waves
+    <line xml:id="e3-0037-pu_line_3" rend="indent1">We two shall sink <unclear reason="illegible">o</unclear>n the wide waves
       of ruin</line>
-    <line rend="indent2"><mod>
+    <line xml:id="e3-0037-pu_line_4" rend="indent2"><mod>
         <del rend="strikethrough">sink down upon the stream of ruin</del>
         <del rend="strikethrough"><add place="superlinear">Together then</add></del>
       </mod></line>
-    <line rend="indent1"><del rend="strikethrough"><mod>
+    <line xml:id="e3-0037-pu_line_5" rend="indent1"><del rend="strikethrough"><mod>
           <del rend="overwritten">Sink</del>
           <add place="intralinear">Shall</add>
         </mod> we</del><del rend="strikethrough"><add place="superlinear">Into</add></del>
       <del rend="strikethrough"> be drowned</del>
       <del rend="strikethrough">in ruin</del>
       <del rend="strikethrough">fathomless</del></line>
-    <line rend="indent1">Even <mod>
+    <line xml:id="e3-0037-pu_line_6" rend="indent1">Even <mod>
         <del rend="strikethrough">like</del>
         <add place="superlinear">as</add>
       </mod>a vulture &amp; a snake outspent</line>
-    <line rend="indent1"><mod>
+    <line xml:id="e3-0037-pu_line_7" rend="indent1"><mod>
         <del rend="strikethrough">Sink</del>
         <add place="superlinear">Drop</add>
       </mod> , twisted in inextricable fight;</line>
-    <line>Into a shoreless sea <unclear reason="illegible">.</unclear>&#8212;</line>
+    <line xml:id="e3-0037-pu_line_8">Into a shoreless sea <unclear reason="illegible">.</unclear>&#8212;</line>
     <anchor xml:id="e3-0037.02"/>
     <milestone unit="tei:seg" spanTo="#e3-0037.03" corresp="e3-0036.07"/>
-    <line>And like a cloud <mod>
+    <line xml:id="e3-0037-pu_line_9">And like a cloud <mod>
         <del rend="strikethrough">mine</del>
         <add place="superlinear">the</add>
       </mod>enemy above....</line>
-    <line>Darkens my fall with victory&#8212; ai! ai!</line>
+    <line xml:id="e3-0037-pu_line_10">Darkens my fall with victory&#8212; ai! ai!</line>
     <anchor xml:id="e3-0037.03"/>
-    <line><milestone unit="tei:seg" spanTo="#e3-0037.04" corresp="e3-0036.08"/>made <del
+    <line xml:id="e3-0037-pu_line_11"><milestone unit="tei:seg" spanTo="#e3-0037.04" corresp="e3-0036.08"/>made <del
         rend="strikethrough">pale</del> dim<anchor xml:id="e3-0037.04"/></line>
   </zone>
 </surface>

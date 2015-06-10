@@ -10,14 +10,14 @@
     <line>Dragged to</line>
     <anchor xml:id="e3-0079.01"/>
     <milestone unit="tei:seg" spanTo="#e3-0079.02" corresp="#e3-0078.03"/>
-    <line>And slain am<mod>
+    <line xml:id="e3-0079-pu_line_0">And slain am<mod>
         <del rend="overwritten">on</del>
         <add place="intralinear">id</add>
       </mod><del rend="strikethrough">g</del> men's unreclaiming tears</line>
     <anchor xml:id="e3-0079.02"/>
     <!-- The next two lines are a revision from two margin lines in e1 9r (e1 19)
     (Thus need to encode them there) -->
-    <line>Kindl<mod>
+    <line xml:id="e3-0079-pu_line_1">Kindl<mod>
         <del rend="overwritten">e</del>
         <add place="intralinear">i</add>
       </mod>ng with <mod>
@@ -27,7 +27,7 @@
         <del rend="strikethrough">mingled</del>
         <add place="superlinear">many</add>
       </mod>tones</line>
-    <line>Intelligible words &amp; music wild&#8212;</line>
+    <line xml:id="e3-0079-pu_line_2">Intelligible words &amp; music wild&#8212;</line>
     <line> 40</line>
     <line> 97</line>
     <line><hi rend="underline"> 553</hi></line>
@@ -35,7 +35,7 @@
     <line><hi rend="underline">1915</hi></line>
     <line>2605</line>
     <milestone unit="tei:seg" spanTo="#e3-0079.03" corresp="#e3-0078.04"/>
-    <line>The clogs of that which else might oversoar</line>
+    <line xml:id="e3-0079-pu_line_3">The clogs of that which else might oversoar</line>
     <anchor xml:id="e3-0079.03"/>
     <line>1915</line>
     <line><hi rend="underline"> 533</hi></line>

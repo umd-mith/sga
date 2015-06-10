@@ -5,34 +5,33 @@
   uly="0" lrx="5382" lry="7236" xml:id="ox-ms_shelley_e2-0074" partOf="#ox-ms_shelley_e2" mith:folio="36v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0074.jp2"/>
   <zone type="main">
-    <line>[f. 36r is blank]</line>
-    <line rend="indent1">The storm of sound is driven <unclear reason="illegible"
+    <line xml:id="e2-0074_pu_line_0" rend="indent1">The storm of sound is driven <unclear reason="illegible"
       >a</unclear>long</line>
-    <line rend="indent1">Sucked up &amp; hurrying&#8212;as they fleet</line>
-    <line rend="indent1">Behind its gathering billows meet</line>
-    <line rend="indent1">And to the fatal mountain bear</line>
-    <line rend="indent1">Like clouds amid the yielding air</line>
+    <line xml:id="e2-0074_pu_line_1" rend="indent1">Sucked up &amp; hurrying&#8212;as they fleet</line>
+    <line xml:id="e2-0074_pu_line_2" rend="indent1">Behind its gathering billows meet</line>
+    <line xml:id="e2-0074_pu_line_3" rend="indent1">And to the fatal mountain bear</line>
+    <line xml:id="e2-0074_pu_line_4" rend="indent1">Like clouds amid the yielding air</line>
     <line rend="left"><add><metamark function="count">264</metamark></add></line>
-    <line><add><metamark function="displacement" xml:id="e2-0074.03">&#60;</metamark></add></line>
+    <!--<line><add><metamark function="displacement" xml:id="e2-0074.03">&#60;</metamark></add></line>-->
     <milestone unit="tei:stage" spanTo="#e2-0074.01"/>
-    <line rend="center">Scene 3. A pinnacle of rock among</line>
-    <line>Mountains &#8212; <add>Asia &amp; Panthea</add></line>
+    <line xml:id="e2-0074_pu_line_5" rend="center">Scene 3. A pinnacle of rock among</line>
+    <line xml:id="e2-0074_pu_line_6">Mountains &#8212; <add>Asia &amp; Panthea</add></line>
     <anchor xml:id="e2-0074.01"/>
     <milestone unit="tei:speaker" spanTo="#e2-0074.02"/>
-    <line rend="center">Panthea</line>
+    <line xml:id="e2-0074_pu_line_7" rend="center">Panthea</line>
     <anchor xml:id="e2-0074.02"/>
-    <line>Hither the sound has borne us&#8212; <mod>
+    <line xml:id="e2-0074_pu_line_8">Hither the sound has borne us&#8212; <mod>
         <del rend="overwritten"><unclear reason="illegible">'tis</unclear></del>
         <add place="intralinear">to</add>
       </mod> the realm</line>
-    <line>Of Demogorgon, &amp; the mighty portal</line>
-    <line>Like a Volcano's meteor-breathing chasm</line>
-    <line>Whence the oracular vapour is breathed up</line>
-    <line>Which lonely men drink wandering in their youth</line>
-    <line>And call truth, virtue, love, genius or joy</line>
-    <line>That maddening wine of life, whose dregs they drain</line>
-    <line>To deep intoxication, &amp; uplift</line>
-    <line>Like Maenads who cry loud Evoe! Evoe!</line>
-    <line>The voice which is contagion to the world.</line>
+    <line xml:id="e2-0074_pu_line_9">Of Demogorgon, &amp; the mighty portal</line>
+    <line xml:id="e2-0074_pu_line_10">Like a Volcano's meteor-breathing chasm</line>
+    <line xml:id="e2-0074_pu_line_11">Whence the oracular vapour is breathed up</line>
+    <line xml:id="e2-0074_pu_line_12">Which lonely men drink wandering in their youth</line>
+    <line xml:id="e2-0074_pu_line_13">And call truth, virtue, love, genius or joy</line>
+    <line xml:id="e2-0074_pu_line_14">That maddening wine of life, whose dregs they drain</line>
+    <line xml:id="e2-0074_pu_line_15">To deep intoxication, &amp; uplift</line>
+    <line xml:id="e2-0074_pu_line_16">Like Maenads who cry loud Evoe! Evoe!</line>
+    <line xml:id="e2-0074_pu_line_17">The voice which is contagion to the world.</line>
   </zone>
 </surface>

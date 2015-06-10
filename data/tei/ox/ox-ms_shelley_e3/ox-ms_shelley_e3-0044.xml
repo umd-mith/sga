@@ -5,40 +5,40 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0044" partOf="#ox-ms_shelley_e3" mith:folio="21v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0044.jp2"/>
   <zone type="main">
-    <line>Peace Monster&#8212;I come now! farewell</line>
+    <line xml:id="e3-0044-pu_line_0">Peace Monster&#8212;I come now! farewell</line>
     <milestone unit="tei:speaker" spanTo="#e3-0044.01"/>
-    <line rend="center">Apollo</line>
+    <line xml:id="e3-0044-pu_line_1" rend="center">Apollo</line>
     <anchor xml:id="e3-0044.01"/>
-    <line rend="indent4">Farewell!&#8212; <add><metamark function="count"
+    <line xml:id="e3-0044-pu_line_2" rend="indent4">Farewell!&#8212; <add><metamark function="count"
       >135</metamark></add></line>
-    <milestone unit="tei:scene" spanTo="#e3-0044.02"/>
-    <line rend="indent1">Scene Caucasus, Prometheus, Hercules, Asia</line>
-    <line rend="indent2">borne by the spirit of the Hour</line>
-    <line rend="indent1">Panthea Ione, the Earth. Spirits&#8212;</line>
-    <line rend="indent2">Hercules unbinds Prometheus who descends</line>
+    <milestone unit="tei:stage" spanTo="#e3-0044.02"/>
+    <line xml:id="e3-0044-pu_line_3" rend="indent1">Scene Caucasus, Prometheus, Hercules, Asia</line>
+    <line xml:id="e3-0044-pu_line_4" rend="indent2">borne by the spirit of the Hour</line>
+    <line xml:id="e3-0044-pu_line_5" rend="indent1">Panthea Ione, the Earth. Spirits&#8212;</line>
+    <line xml:id="e3-0044-pu_line_6" rend="indent2">Hercules unbinds Prometheus who descends</line>
     <anchor xml:id="e3-0044.02"/>
     <milestone unit="tei:speaker" spanTo="#e3-0044.03"/>
-    <line rend="center">Hercules</line>
+    <line xml:id="e3-0044-pu_line_7" rend="center">Hercules</line>
     <anchor xml:id="e3-0044.03"/>
-    <line>Most glorious among Spirits, thus doth strength</line>
-    <line>To <unclear reason="case">w</unclear>isdom courage &amp; long suffering love</line>
-    <line>And thee, who art the form they animate</line>
-    <line>Minister, like a slave</line>
+    <line xml:id="e3-0044-pu_line_8">Most glorious among Spirits, thus doth strength</line>
+    <line xml:id="e3-0044-pu_line_9">To <unclear reason="case">w</unclear>isdom courage &amp; long suffering love</line>
+    <line xml:id="e3-0044-pu_line_10">And thee, who art the form they animate</line>
+    <line xml:id="e3-0044-pu_line_11">Minister, like a slave</line>
     <milestone unit="tei:speaker" spanTo="#e3-0044.04"/>
-    <line rend="center">Prometheus</line>
+    <line xml:id="e3-0044-pu_line_12" rend="center">Prometheus</line>
     <anchor xml:id="e3-0044.04"/>
-    <line rend="indent5">Thy gentle words</line>
-    <line>Are sweeter even tha<unclear reason="illegible">n</unclear> freedom long desired
+    <line xml:id="e3-0044-pu_line_13" rend="indent5">Thy gentle words</line>
+    <line xml:id="e3-0044-pu_line_14">Are sweeter even tha<unclear reason="illegible">n</unclear> freedom long desired
           <add><metamark function="count">140</metamark></add></line>
-    <line>And long delayed. Asia, thou light of life,</line>
-    <line>Shadow of beauty unbeheld, &amp; ye</line>
-    <line>Fair sister-nymphs who make long years of pain</line>
-    <line>Sweet to remember through your love &amp; care</line>
-    <line>Henceforth <milestone unit="tei:seg" spanTo="#e3-0044.05" xml:id="e3-0044.07"/>we will
+    <line xml:id="e3-0044-pu_line_15">And long delayed. Asia, thou light of life,</line>
+    <line xml:id="e3-0044-pu_line_16">Shadow of beauty unbeheld, &amp; ye</line>
+    <line xml:id="e3-0044-pu_line_17">Fair sister-nymphs who make long years of pain</line>
+    <line xml:id="e3-0044-pu_line_18">Sweet to remember through your love &amp; care</line>
+    <line xml:id="e3-0044-pu_line_19">Henceforth <milestone unit="tei:seg" spanTo="#e3-0044.05" xml:id="e3-0044.07"/>we will
         not<anchor xml:id="e3-0044.05"/> part. There is a Cave<alt target="#e3-0044.07 #e3-0045.02"
         mode="excl" weights="1 0"/></line>
-    <line>All overgrown with trailing odorous plants</line>
-    <line>Which curtain out the day with leaves &amp; flowers</line>
-    <line><add><metamark function="count">140</metamark></add></line>
+    <line xml:id="e3-0044-pu_line_20">All overgrown with trailing odorous plants</line>
+    <line xml:id="e3-0044-pu_line_21">Which curtain out the day with leaves &amp; flowers</line>
+    <line xml:id="e3-0044-pu_line_22"><add><metamark function="count">140</metamark></add></line>
   </zone>
 </surface>

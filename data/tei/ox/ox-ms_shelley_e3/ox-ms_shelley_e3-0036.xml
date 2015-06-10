@@ -5,56 +5,56 @@
   uly="0" lrx="5406" lry="7054" xml:id="ox-ms_shelley_e3-0036" partOf="#ox-ms_shelley_e3" mith:folio="17v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0036.jp2"/>
   <zone type="main">
-    <line>On Caucasus&#8212;he would not doom me thus&#8212;</line>
+    <line xml:id="e3-0036-pu_line_0">On Caucasus&#8212;he would not doom me thus&#8212;</line>
     <anchor xml:id="e3-0036.05"/>
-    <line>No <mod>
+    <line xml:id="e3-0036-pu_line_1">No <mod>
         <del rend="strikethrough">respite</del>
         <add place="superlinear">refuge</add>
       </mod>, no appeal&#8212; . . .</line>
-    <line rend="indent5"><del rend="strikethrough">Defiance</del></line>
-    <line rend="indent4"><del rend="strikethrough">then shall we sink</del></line>
-    <line rend="indent4"><anchor xml:id="e3-0036.06"/>Let <del rend="strikethrough">loose <unclear
+    <line xml:id="e3-0036-pu_line_2" rend="indent5"><del rend="strikethrough">Defiance</del></line>
+    <line xml:id="e3-0036-pu_line_3" rend="indent4"><del rend="strikethrough">then shall we sink</del></line>
+    <line xml:id="e3-0036-pu_line_4" rend="indent4"><anchor xml:id="e3-0036.06"/>Let <del rend="strikethrough">loose <unclear
           reason="illegible">o</unclear></del> Hell unlock <add><metamark function="count"
           >75</metamark></add></line>
-    <line><mod>
+    <line xml:id="e3-0036-pu_line_5"><mod>
         <del rend="strikethrough">Thy</del>
         <add place="superlinear">Its</add>
       </mod> mounded Oceans of tempestuous fire</line>
-    <line><del rend="strikethrough">Swallow</del> And <mod>
+    <line xml:id="e3-0036-pu_line_6"><del rend="strikethrough">Swallow</del> And <mod>
         <del rend="strikethrough">let</del>
         <add place="superlinear">whelm on</add>
       </mod>them into the bottomless void</line>
-    <line>The desolated world &amp; thou &amp; me</line>
-    <line>The conqueror &amp; the conquered, &amp; the wreck</line>
-    <line><unclear reason="illegible">O</unclear>f that for which they combated . . .Ai,
+    <line xml:id="e3-0036-pu_line_7">The desolated world &amp; thou &amp; me</line>
+    <line xml:id="e3-0036-pu_line_8">The conqueror &amp; the conquered, &amp; the wreck</line>
+    <line xml:id="e3-0036-pu_line_9"><unclear reason="illegible">O</unclear>f that for which they combated . . .Ai,
           ai,<add><metamark function="count">80</metamark></add></line>
-    <line>The elements obey me not . . . I sink . . .</line>
-    <line><mod>
+    <line xml:id="e3-0036-pu_line_10">The elements obey me not . . . I sink . . .</line>
+    <line xml:id="e3-0036-pu_line_11"><mod>
         <del rend="strikethrough">Down down down down dizzily, far <anchor xml:id="e3-0036.09"
           /></del>
         <add place="superlinear">Dizzily down &#8212; ever, forever, down</add>
         <add><metamark function="count">82</metamark></add>
       </mod></line>
-    <line rend="right"><del rend="strikethrough" next="#e3-0036.09"><add place="sublinear">&amp;
+    <line xml:id="e3-0036-pu_line_12" rend="right"><del rend="strikethrough" next="#e3-0036.09"><add place="sublinear">&amp;
           deep</add></del></line>
     <anchor xml:id="e3-0036.07"/>
-    <line><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
+    <line xml:id="e3-0036-pu_line_13"><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
     <milestone unit="tei:stage" spanTo="#e3-0036.01"/>
-    <line rend="indent2">Scene The mouth of a great</line>
-    <line>River in the island of Atlantis &#8212; Ocean</line>
-    <line>is discovered reclining near the shore&#8212;</line>
-    <line>Apollo stands beside him&#8212;</line>
+    <line xml:id="e3-0036-pu_line_14" rend="indent2">Scene The mouth of a great</line>
+    <line xml:id="e3-0036-pu_line_15">River in the island of Atlantis &#8212; Ocean</line>
+    <line xml:id="e3-0036-pu_line_16">is discovered reclining near the shore&#8212;</line>
+    <line xml:id="e3-0036-pu_line_17">Apollo stands beside him&#8212;</line>
     <anchor xml:id="e3-0036.01"/>
     <milestone unit="tei:speaker" spanTo="#e3-0036.02"/>
-    <line rend="center">Ocean</line>
+    <line xml:id="e3-0036-pu_line_18" rend="center">Ocean</line>
     <anchor xml:id="e3-0036.02"/>
     <milestone unit="tei:l" spanTo="#e3-0036.03"/>
-    <line>He fell thou sayest beneath his Conque</line>
-    <line rend="right">rors frown?</line>
+    <line xml:id="e3-0036-pu_line_19">He fell thou sayest beneath his Conque</line>
+    <line xml:id="e3-0036-pu_line_20" rend="right">rors frown?</line>
     <anchor xml:id="e3-0036.03"/>
     <milestone unit="tei:speaker" spanTo="#e3-0036.04"/>
-    <line rend="center">Apollo</line>
+    <line xml:id="e3-0036-pu_line_21" rend="center">Apollo</line>
     <anchor xml:id="e3-0036.04"/>
-    <line>Aye, when the strife was ended which <anchor xml:id="e3-0036.08"/></line>
+    <line xml:id="e3-0036-pu_line_22">Aye, when the strife was ended which <anchor xml:id="e3-0036.08"/></line>
   </zone>
 </surface>
