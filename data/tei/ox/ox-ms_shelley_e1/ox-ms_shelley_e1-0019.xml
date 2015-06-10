@@ -9,7 +9,7 @@
   </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0019.01"/>
-    <line>Panthea</line>
+    <line rend="center">Panthea</line>
     <anchor xml:id="e1-0019.01"/>
     <line>And from the other opening in the wood <add><metamark function="count"
         >200</metamark></add></line>
@@ -38,9 +38,9 @@
     <line>Intensely slowly solemnly ro<mod>
         <del rend="overwritten">lls</del>
         <add place="intralinear">ll</add>
-      </mod> on&#x2014;</line>
-    <line><space unit="chars" extent="33"/><mod spanTo="#e1-0019.04"/><add place="sublinear"
-          ><metamark function="insert">&#x2014;&#x2014;&#x2014;</metamark></add></line>
+    </mod> on&#x2014;</line>
+    <line><space unit="chars" extent="33"/><mod spanTo="#e1-0019.04"/><add place="sublinear">
+      <metamark function="insert">&#x2014;&#x2014;&#x2014;</metamark></add></line>
     <line><anchor xml:id="e1-0019.02"/></line>
     <line><anchor xml:id="e1-0019.03"/></line><anchor xml:id="e1-0019.04"/>
     <line>With mighty whirl the multitudinous Orb</line>
@@ -49,11 +49,11 @@
     <line>And the wild odour of the forest flowers</line>
     <line>The music of the living grass &amp; air</line>
     <line>The emerald light of leaf-entangled beams</line>
-    <zone type="left_margin" rotate="270" corresp="#e1-0019.02">
-      <line><add>Kindling with many</add></line>
-    </zone>
-    <zone type="left_margin" rotate="270" corresp="#e1-0019.03">
-      <line><add>Intelligible words &amp; music wild</add></line>
-    </zone>
+   </zone>
+  <zone type="left_margin" rotate="270" corresp="#e1-0019.02">
+    <line><add>Kindling with many</add></line>
+  </zone>
+  <zone type="left_margin" rotate="270" corresp="#e1-0019.03">
+    <line><add>Intelligible words &amp; music wild</add></line>
   </zone>
 </surface>

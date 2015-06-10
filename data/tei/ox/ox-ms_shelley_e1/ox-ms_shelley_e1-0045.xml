@@ -29,8 +29,7 @@
         <add place="intralinear">o</add>
       </mod>n the Sun's last ray</line>
     <line>Hang<add>s</add> oer the Sea; a fleece of fire &#x26; amethyst&#x2014;<add
-        place="sublinear"><unclear reason="illegible">.</unclear></add></line>
-    <line rend="indent5"><add><metamark function="count">400</metamark></add></line>
+      place="sublinear"><metamark function="count">400</metamark><unclear reason="illegible">.</unclear></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0045.03"/>
     <line rend="center">The Moon</line>
     <anchor xml:id="e1-0045.03"/>
@@ -39,10 +38,7 @@
     <line>Of thine own joy, &#x26; Heavens smile divine</line>
     <line rend="indent1">All suns &#x26; constellations shower</line>
     <line rend="indent1">On thee, a light a life a power</line>
-    <milestone unit="tei:l" spanTo="#e1-0045.04"/>
-    <line>Which doth array thy sphere&#8212;thou</line>
-    <line rend="right">pourest thine</line>
-    <anchor xml:id="e1-0045.04"/>
+    <line>Which doth array thy sphere&#8212;thou <add place="sublinear">pourest thine</add></line>
     <line rend="indent2">On mine, on mine!</line>
   </zone>
 </surface>

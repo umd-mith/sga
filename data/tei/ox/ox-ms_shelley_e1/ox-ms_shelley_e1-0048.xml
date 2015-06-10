@@ -15,20 +15,20 @@
     <anchor xml:id="e1-0048.01"/>
     <line>By such dread words from Earth to Heaven</line>
     <line>My still realm was never riven</line>
-    <line rend="indent1">When its wound was closed, there stood</line>
-    <line rend="indent1">Darkness oer the Day<unclear reason="illegible">,</unclear> like
+    <line>When its wound was closed, there stood</line>
+    <line>Darkness oer the Day<unclear reason="illegible">,</unclear> like
       blood.</line>
     <milestone unit="tei:speaker" spanTo="#e1-0048.02"/>
     <line rend="center">4</line>
     <anchor xml:id="e1-0048.02"/>
     <line rend="indent1">And we sh<unclear reason="illegible">ra</unclear>nk back &#x2014; for
       dreams of ruin</line>
-    <line rend="indent1">To frozen caves our flight pursuing</line>
-    <line rend="indent1">Ma<mod>
+    <line>To frozen caves our flight pursuing</line>
+    <line>Ma<mod>
         <del rend="overwritten">ke</del>
         <add place="intralinear">de</add>
       </mod> us keep silence&#x2014;thus&#x2014;&#x26; thus&#x2014;</line>
-    <line rend="indent1">Though silence is <unclear reason="illegible">as</unclear> hell to
+    <line>Though silence is <unclear reason="illegible">as</unclear> hell to
       us</line>
     <milestone unit="tei:stage" spanTo="#e1-0048.05"/>
     <line rend="indent2">they pass with a terrible sound</line>
@@ -40,7 +40,6 @@
     <line>I hear a sound of voices &#x2014; not the voice</line>
     <line>Which I gave forth. <delSpan rend="strikethrough" spanTo="#e1-0048.04"/>O Mother dare thy
       sons</line>
-    <line><del rend="strikethrough">under</del></line>
     <line>Scorn him without whom, by<add place="superlinear"><del rend="strikethrough"
         >under</del></add> the might of Jove</line><anchor xml:id="e1-0048.04"/>
     <anchor xml:id="e1-0048.07"/>
@@ -70,7 +69,7 @@
             <add place="intralinear">your</add>
           </mod></add>
       </mod> else all conquering foe?</line>
-    <line rend="left"><add><metamark function="count">113</metamark></add>
+    <line><add><metamark function="count">113</metamark></add>
       <mod>
         <del rend="strikethrough">Ye</del>
         <add place="superlinear">O</add>
@@ -78,7 +77,4 @@
         rend="strikethrough">ing</del><add place="superlinear">-fed</add> stream<unclear
         reason="illegible">s</unclear></line>
   </zone>
-
-
-
 </surface>

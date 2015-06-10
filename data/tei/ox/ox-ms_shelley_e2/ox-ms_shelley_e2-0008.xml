@@ -7,7 +7,7 @@
   <zone type="main">
     <line rend="indent1">Which must bend the Invincible</line>
     <line rend="indent1">The stern of thought</line>
-    <line>He yet defies the deepest power of Hell</line>
+    <line rend="indent1">He yet defies the deepest power of Hell</line>
     <milestone unit="tei:speaker" spanTo="#e2-0008.01"/>
     <line rend="indent2"><mod>
         <del rend="strikethrough">Another</del>
@@ -24,23 +24,17 @@
     <milestone unit="tei:speaker" spanTo="#e2-0008.03"/>
     <line rend="center">Another Fury</line>
     <anchor xml:id="e2-0008.03"/>
-    <line rend="indent4">It is torn!</line>
+    <line rend="indent5">It is torn!</line>
     <milestone unit="tei:speaker" spanTo="#e2-0008.04"/>
     <line rend="center">Chorus</line>
     <anchor xml:id="e2-0008.04"/>
-    <line rend="indent5">The pale stars of the morn</line>
+    <line rend="indent6">The pale stars of the morn</line>
     <line>Shine on <mod>
         <del rend="overwritten">n</del>
         <add place="intralinear">a</add>
       </mod> misery dire to be born<unclear reason="illegible">e</unclear></line>
-    <milestone unit="tei:l" spanTo="#e2-0008.05"/>
-    <line>Dost thou faint mighty Titan? We laugh thee</line>
-    <line rend="right">to scorn</line>
-    <anchor xml:id="e2-0008.05"/>
-    <milestone unit="tei:l" spanTo="#e2-0008.06"/>
-    <line>Dost thou boast the clear knowledge thou wakenedst</line>
-    <line rend="indent5">for man?</line>
-    <anchor xml:id="e2-0008.06"/>
+    <line>Dost thou faint mighty Titan? We laugh thee <add place="sublinear">to scorn</add></line>
+    <line>Dost thou boast the clear knowledge thou wakenedst <add place="sublinear">for man?</add></line>
     <line>Then was kindled within him a thirst which outran</line>
     <line>Those perishing waters, a thirst of fierce fever</line>
     <line>Hope love doubt desire &#8212; which consume him forever.</line>

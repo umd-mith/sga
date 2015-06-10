@@ -60,19 +60,14 @@
         <add place="superlinear">I feel that</add>
       </mod> I could explain them.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0039.10"
         />Soc.<anchor xml:id="e1-0039.10"/></line>
-    <line>
-      <del rend="unmarked">you</del>
-      <del rend="strikethrough">do</del>
-      <del rend="strikethrough">imagine</del><del rend="unmarked">, that</del></line>
-    <line>But whether or not you or a diviner</line>
-    <line><add place="superlinear">would</add>make the best exposition respecting</line>
+    <line>But whether <add place="superlinear">you <del rend="strikethrough">do imagine</del>, that</add>or not you or a diviner</line>
+    <line>make<add place="superlinear">would</add>the best exposition respecting</line>
     <line>all that <mod>
         <del rend="strikethrough">they</del>
         <add place="superlinear">those poets</add>
       </mod> say of divination, <del rend="strikethrough">whether</del></line>
-    <line><del rend="strikethrough">those poets</del></line>
     <line>both as <mod>
-        <restore><del rend="strikethrough">they</del></restore>
+      <restore><del rend="strikethrough">they</del></restore><add place="superlinear"><del rend="strikethrough">those poets</del></add>
       </mod> agree &amp; as they differ.&#8212;</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0039.11"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0039.11"/> A diviner certainly. <milestone unit="tei:speaker"

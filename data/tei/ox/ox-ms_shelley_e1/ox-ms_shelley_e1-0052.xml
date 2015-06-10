@@ -8,11 +8,10 @@
     <milestone unit="tei:speaker" spanTo="#e1-0052.01"/>
     <line rend="center">The Earth </line>
     <anchor xml:id="e1-0052.01"/>
-    <line rend="indent3">How canst thou hear</line>
+    <line rend="indent6">How canst thou hear</line>
     <line>Who knowest not the language of the dead?</line>
     <line><del rend="smear">I d</del>
-      <milestone unit="tei:speaker" spanTo="#e1-0052.02"/>Prometheus<anchor xml:id="e1-0052.02"
-      /></line>
+      <milestone unit="tei:speaker" spanTo="#e1-0052.02"/>Prometheus<anchor xml:id="e1-0052.02"/></line>
     <line>Thou art a living spirit &#x2014; speak as they</line>
     <milestone unit="tei:speaker" spanTo="#e1-0052.03"/>
     <line rend="center">The Earth</line>
@@ -25,10 +24,7 @@
         <add place="intralinear">e</add>
       </mod>on I roll.&#x2014;</line>
     <line>Subtle thou art &#x26; good, &#x26; tho' the Gods</line>
-    <milestone unit="tei:l" spanTo="#e1-0052.07"/>
-    <line>Hear not this voice &#x2014; yet thou art more than</line>
-    <line rend="right">God</line>
-    <anchor xml:id="e1-0052.07"/>
+    <line>Hear not this voice &#x2014; yet thou art more than <add place="sublinear">God</add></line>
     <line>Being wise &#x26; kind &#x2014; earnestly hearken now&#x2014;</line>    
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0052.04"/>Prometheus<anchor xml:id="e1-0052.04"/></line>
     <line>Obscurely through my brain like shadows dim</line>
@@ -45,6 +41,6 @@
       too fragmented-->
     <line>Only to those who die... <add><metamark function="insert">^</metamark></add> I am the
       Earth</line>
-    <line rend="left"><add><metamark function="count">144</metamark></add></line>
+    <line><add><metamark function="count">144</metamark></add></line>
   </zone>
 </surface>

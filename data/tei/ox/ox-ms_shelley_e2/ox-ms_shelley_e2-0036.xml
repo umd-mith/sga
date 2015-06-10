@@ -6,9 +6,10 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0036.jp2"/>
   <zone type="main">
     <!-- Check to see if this page is meant to be displaced somewhere else -->
-    <line><milestone unit="tei:speaker" spanTo="#e2-0036.01"/>5<hi rend="sup">th</hi> Spirit<anchor
-        xml:id="e2-0036.01"/>
-      <mod>
+    <line rend="indent5"><milestone unit="tei:speaker" spanTo="#e2-0036.01"/>5<hi rend="sup">th</hi> Spirit
+      <anchor xml:id="e2-0036.01"/>
+    <space dim="horizontal" unit="chars" extent="10"/>
+    <mod>
         <del rend="overwritten">a</del>
         <add place="intralinear">A</add>
       </mod>s over wide dominions</line>
@@ -17,20 +18,17 @@
         <del rend="overwritten">s</del>
         <add place="intralinear">S</add>
       </mod>hape swiftly on lightning-braided pinions</line>
-    <line rend="indent1"><mod>
+    <line><mod>
         <del rend="overwritten">Scattered</del>
         <add place="intralinear">Scattering</add>
       </mod> the liquid joy of life from his ambrosial tresses:</line>
-    <milestone unit="tei:l" spanTo="#e2-0036.02"/>
     <line>His footsteps paved the world with light <mod>
         <del rend="overwritten">?</del>
         <add place="intralinear">&#8212;</add>
-      </mod> but as I past 'twas</line>
-    <line rend="right">fading</line>
-    <anchor xml:id="e2-0036.02"/>
-    <line rend="indent1">And hollow Ruin yawned behind &#8212; great Sages bound in madness</line>
+      </mod> but as I past 'twas <add place="sublinear">fading</add></line>
+    <line>And hollow Ruin yawned behind &#8212; great Sages bound in madness</line>
     <line>And headless patriots &amp; pale youths who perished unupbraiding</line>
-    <line rend="indent1">Gleamed in the <unclear reason="case">N</unclear>ight I wandered o'er
+    <line>Gleamed in the <unclear reason="case">N</unclear>ight I wandered o'er
       &#8212; till thou o King of sadness</line>
     <line>Turned by thy smile the worst I said to recollected gladness</line>
     <milestone unit="tei:speaker" spanTo="#e2-0036.03"/>
@@ -55,22 +53,20 @@
     <line rend="right">we greet</line>
     <anchor xml:id="e2-0036.04"/>
     <milestone unit="tei:speaker" spanTo="#e2-0036.05"/>
-    <line rend="center"><mod>
+    <line rend="center">
         <del rend="strikethrough"><hi rend="underline">5</hi><hi rend="underline"><hi rend="sup"
-              >th</hi></hi></del>
-        <add place="sublinear">Chorus</add>
-      </mod></line>
+              >th</hi></hi></del></line>
+    <line rend="center">Chorus</line>
     <anchor xml:id="e2-0036.05"/>
-    <line rend="indent4"><add><metamark><unclear reason="illegible"
-      >X</unclear></metamark></add></line>
+    <line rend="indent4"><add><metamark><unclear reason="illegible">X</unclear></metamark></add></line>
     <line rend="indent1">Though Ruin now <mod>
         <del rend="overwritten">loves</del>
         <add place="intralinear">Loves</add>
       </mod> shadow be</line>
     <line rend="indent1">Following him, destroyingly</line>
-    <line rend="indent2">On Death's white &amp; winged steed</line>
-    <line rend="indent2">Which the fleetest cannot flee&#8212;</line>
-    <line rend="indent2">Trampling down both flower &amp; weed</line>
-    <line rend="left"><add><metamark function="count">769</metamark></add></line>
+    <line rend="indent1">On Death's white &amp; winged steed</line>
+    <line rend="indent1">Which the fleetest cannot flee&#8212;</line>
+    <line rend="indent1">Trampling down both flower &amp; weed</line>
+    <line><add><metamark function="count">769</metamark></add></line>
   </zone>
 </surface>

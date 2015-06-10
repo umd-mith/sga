@@ -17,11 +17,9 @@
     <line>one single painter you please, awoke,</line>
     <line>paid attention to the subject, &amp;</line>
     <line><del rend="strikethrough">discussed</del> it with great eloquence.</line>
-    <line><milestone unit="tei:seg" spanTo="#e1-0081.07" corresp="#e1-0080.02"/>it clasp<anchor
-        xml:id="e1-0081.07"/></line>
     <line>illustrat<mod>
         <del rend="unmarked">ion</del>
-        <add><hi rend="sup">ed</hi></add>
+        <add><hi rend="sup">ed</hi></add><add place="superlinear">it clasp</add>
       </mod></line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0081.03"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0081.03"/> Never, by Jupiter.&#8212; <milestone unit="tei:speaker"
@@ -29,8 +27,8 @@
     <line>you ever know any one very skilful</line>
     <line>in disscussing th<unclear reason="illegible">e</unclear> merits of <del
         rend="strikethrough">any</del></line>
-    <line><del rend="strikethrough">one great {s}</del> D&#230;ldalus the son of</line>
-    <line><add place="superlinear"><unclear reason="illegible">one</unclear></add>Metion, <unclear
+    <line><del rend="strikethrough">one great <unclear>s</unclear> </del> D&#230;ldalus the son of</line>
+      <line>Metion,<add place="superlinear"><unclear reason="illegible">one</unclear></add><unclear
         reason="illegible">Epeius</unclear>
       <del rend="strikethrough">of</del> Panopeus, Theo</line>
     <line>dorus the Samian or any other</line>

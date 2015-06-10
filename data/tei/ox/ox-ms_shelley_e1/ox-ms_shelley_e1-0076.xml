@@ -21,23 +21,22 @@
         <del rend="strikethrough">smell</del>
         <add place="superlinear">scent</add>
       </mod>life!</line>
-    <milestone unit="tei:speaker" spanTo="#e1-0076.03"/><line>2 <hi rend="sup">d</hi>.</line><anchor
+    <milestone unit="tei:speaker" spanTo="#e1-0076.03"/><line rend="center">2 <hi rend="sup">d</hi>.</line><anchor
       xml:id="e1-0076.03"/>
-    <line rend="indent3">Let me but look in his eyes!</line>
+    <line rend="indent4">Let me but look in his eyes!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0076.04"/>
     <line rend="center">3<hi rend="sup">d</hi>.</line><anchor xml:id="e1-0076.04"/>
     <line>The hope of torturing him smells like <mod spanTo="#e1-0076.05"/>
-      <del rend="strikethrough">fresh</del>
-      <del rend="strikethrough">corpses</del>
+      <del rend="strikethrough">fresh corpses</del>
       <add place="superlinear" next="#e1-0076.06">a <del rend="strikethrough" instant="true"
           >hap</del>heap</add></line>
-    <line rend="indent1"><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"
-        /><anchor xml:id="e1-0076.06"/></line>
+    <line><add place="superlinear">Of corpses</add><anchor xml:id="e1-0076.05"/>
+      <anchor xml:id="e1-0076.06"/></line>
     <line>To a death-bird after battle!</line>    
     <delSpan spanTo="#e1-0076.12" rend="vertical_line"/>
     <milestone unit="tei:speaker" spanTo="#e1-0076.07"/>
     <line rend="center">1<hi rend="sup">st</hi>.</line><anchor xml:id="e1-0076.07"/>
-    <mod spanTo="#e1-0076.08"/><line rend="indent3">Herald of Gods</line>
+    <mod spanTo="#e1-0076.08"/><line rend="indent6">Herald of Gods</line>
     <line>Darest thou delay<mod>
         <del rend="overwritten">,</del>
         <add place="intralinear">?</add>
@@ -52,7 +51,7 @@
     <anchor xml:id="e1-0076.12"/>
     <milestone unit="tei:speaker" spanTo="#e1-0076.10"/><line rend="center">Mercury</line><anchor
       xml:id="e1-0076.10"/>
-    <line rend="indent3">Back to your towers of iron</line>
+    <line rend="indent5">Back to your towers of iron</line>
     <line>And gnash, beside the streams of fire wail</line>
     <line>Your foodless teeth!.. Geryon arise &#x26; Gorgon</line>
     <line>Chim&#x00e6;ra &#x26; thou Spinx subtlest of fiends</line>

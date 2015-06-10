@@ -19,12 +19,12 @@
       </mod></line>
     <line>Although no thought inform thine empty voice</line>
     <milestone unit="tei:speaker" spanTo="#e1-0064.03"/>
-    <line>The Earth</line>
+    <line rend="center">The Earth</line>
     <anchor xml:id="e1-0064.03"/>
     <line>Listen! and though your echoes must be mute</line>
     <line>Grey mountains &amp; old woods &amp; haunted springs</line>
     <line>Prophetic caves &amp; isle-surrounding streams</line>
-    <line><del rend="unmarked">Lis</del><del rend="strikethrough">ten,</del>
+    <line>Lis<del rend="strikethrough">ten,</del>
       <del rend="strikethrough">and though ye weep, rejoicing know</del></line>
     <line><del rend="strikethrough">That</del>
       <del rend="strikethrough">our strong curse cannot be unfulfilled.</del></line>
@@ -41,6 +41,6 @@
         <del rend="strikethrough">Look</del>
         <add place="superlinear"><unclear reason="illegible">See</unclear></add>
       </mod> how he lifts his mighty looks, the Heaven</line>
-    <line rend="indent5"><add><metamark function="count">247</metamark></add></line>
+    <line rend="indent7"><add><metamark function="count">247</metamark></add></line>
   </zone>
 </surface>

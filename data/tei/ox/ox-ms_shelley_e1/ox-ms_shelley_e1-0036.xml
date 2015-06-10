@@ -14,9 +14,7 @@
     <line><del rend="unmarked">so</del>
       <del rend="strikethrough">variously &amp; beautifully respecting the</del></line>
     <line><hi rend="underline"><del rend="strikethrough"><unclear reason="illegible"
-            >meaning</unclear></del></hi> give so <del rend="strikethrough">ma</del><del
-        rend="unmarked">ny</del>
-      <unclear reason="illegible">va</unclear>rious &amp;</line>
+            >meaning</unclear></del></hi> give so <del rend="strikethrough">ma</del>ny<unclear reason="illegible">va</unclear>rious &amp;</line>
     <line>beautiful meanings to the <unclear reason="illegible">verses</unclear> of <unclear
         reason="illegible">H</unclear>omer as</line>
     <line>I can&#8212;. <milestone unit="tei:speaker" spanTo="#e1-0036.03"/><hi rend="underline"
@@ -32,15 +30,17 @@
         <del rend="strikethrough">adorned</del>
         <add place="superlinear">illustrated</add>
       </mod> Homer<del rend="unmarked">,</del>
-      <mod spanTo="#e1-0036.02"/><delSpan spanTo="#e1-0036.01" rend="strikethrough"/><unclear
-        reason="illegible">revealing</unclear> his</line>
-    <line>hidden beauties<anchor xml:id="e1-0036.01"/><mod>
-        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
-            >of</unclear></add></del>
-        <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
-              >from</unclear></add></del>
-        <add place="superlinear">the hidden beauties</add>
-      </mod><anchor xml:id="e1-0036.02"/><add>:</add> I deserve a golden crown</line>
+      <mod spanTo="#e1-0036.01"/><delSpan spanTo="#e1-0036.01"/>
+      <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">the hidden</del>
+          <add place="sublinear">
+            <del rend="strikethrough"><unclear reason="illegible">of</unclear></del>
+            <del rend="strikethrough"><unclear reason="illegible">from</unclear></del>
+          </add>
+        </mod> beauties</add>
+      revealing his</line>
+    <line>inner beauties<anchor xml:id="e1-0036.01"/>: I deserve a golden crown</line>
     <line>from his descendants<unclear reason="illegible">.&#8212;</unclear>
       <milestone unit="tei:speaker" spanTo="#e1-0036.05"/><hi rend="underline">Soc</hi>.<anchor
         xml:id="e1-0036.05"/> And I will</line>

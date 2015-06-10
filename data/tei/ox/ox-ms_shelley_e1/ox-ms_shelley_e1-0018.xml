@@ -14,10 +14,7 @@
         <del rend="overwritten">i</del>
         <add place="intralinear">I</add>
       </mod>nfant, <del rend="strikethrough">br</del> white</line>
-    <milestone unit="tei:l" spanTo="#e1-0018.01"/>
-    <line>Its countenance like the whiteness of bright</line>
-    <line rend="right">snow,</line>
-    <anchor xml:id="e1-0018.01"/>
+    <line>Its countenance like the whiteness of bright <add place="sublinear">snow,</add></line>
     <line>Its plumes are <mod>
         <del rend="strikethrough">like</del>
         <add place="superlinear">as</add>
@@ -25,26 +22,17 @@
     <line>Its limbs gleam white, thro the wind-flowing folds</line>
     <line>Of its white robe, woof of &#xE6;therial pearl&#x2014;</line>
     <line>Its hair is white,&#x2014;the brightness of white light</line>
-    <milestone unit="tei:l" spanTo="#e1-0018.02"/>
-    <line>Scattered in strings, yet its two eyes are</line>
-    <line rend="right">Heavens</line>
-    <anchor xml:id="e1-0018.02"/>
+    <line>Scattered in strings, yet its two eyes are <add place="sublinear">Heavens</add></line>
     <line>Of liquid darkness, which the Deity</line>
     <line>Within, seems pouring, as a storm is poured</line>
     <line>From jagged clouds, out of their arrowy lashes</line>
     <line>Tempering the cold &amp; radiant air around</line>
     <line>With fire which is not brightness, in its hand</line>
-    <milestone unit="tei:l" spanTo="#e1-0018.03"/>
-    <line>It sways a quivering moonbeam, from</line>
-    <line rend="right">whose point</line>
-    <anchor xml:id="e1-0018.03"/>
+    <line>It sways a quivering moonbeam, from <add place="sublinear">whose point</add></line>
     <line>A guiding power directs the chariots prow</line>
     <line>Over its wheeled clouds, which as they roll</line>
-    <milestone unit="tei:l" spanTo="#e1-0018.04"/>
     <line>Over the <del rend="strikethrough">bending</del> grass &amp; flowers &amp; waves,
-      wake</line>
-    <line rend="right">sounds</line>
-    <anchor xml:id="e1-0018.04"/>
+      wake <add place="sublinear">sounds</add></line>
     <line>Sweet as a singing rain of silver dew.</line>
   </zone>
 </surface>

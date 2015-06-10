@@ -22,7 +22,7 @@
     <line/>
     <line>contest of <mod>
         <del rend="strikethrough">raphsodists</del>
-        <add place="intralinear">rhapsodists</add>
+        <add place="superlinear">rhapsodists</add>
       </mod> to the honor of the god<mod>
         <del rend="overwritten">&#8212;</del>
         <add place="intralinear">?</add>
@@ -72,8 +72,8 @@
       <add place="superlinear">for</add>
       <del rend="unmarked"><add place="superlinear">for</add></del> it <unclear reason="illegible"
         >im</unclear>poses on you</line>
-    <line><add place="superlinear"><unclear reason="illegible">first</unclear></add>the <del
-        rend="strikethrough">ni<unclear reason="illegible">c</unclear>est</del> nicest care of your
+    <line> the <add place="superlinear"><unclear reason="illegible">first</unclear></add>
+      <del rend="strikethrough">ni<unclear reason="illegible">c</unclear>est</del> nicest care of your
       persons</line>
     <line>&amp; the most studied elegance of dress</line>
     <line>so that you must <del rend="strikethrough">appear most</del></line>

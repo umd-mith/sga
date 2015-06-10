@@ -48,11 +48,10 @@
         <del rend="overwritten">&amp;</del>
         <add place="intralinear">to</add>
       </mod> the gods the gods to men, &amp; the</line>
-    <line> </line>
-    <line><add place="superlinear"><mod>
-          <del rend="overwritten"><unclear reason="illegible">Gods</unclear></del>
-          <add place="intralinear">mode</add>
-        </mod> of</add>their communion; <add place="superlinear">of</add> the proceedings of</line>
+    <line>their <add place="superlinear"><mod>
+      <del rend="overwritten"><unclear reason="illegible">Gods</unclear></del>
+      <add place="intralinear">mode</add>
+    </mod> of</add> communion; <add place="superlinear">of</add> the proceedings of</line>
     <line>heaven, of hell, of the origin <add place="superlinear"><milestone unit="tei:seg"
           spanTo="#e1-0043.03" xml:id="e1-0043.06"/>&amp;<anchor xml:id="e1-0043.03"/></add>
       <milestone unit="tei:seg" spanTo="#e1-0043.04" xml:id="e1-0043.05"/><mod>
@@ -65,6 +64,6 @@
         rend="strikethrough">the</del> not <unclear reason="illegible">these</unclear> the</line>
     <line xml:id="e1-0043-pu_line_1"><add><milestone unit="tei:seg" spanTo="#e1-0043.07" corresp="e1-0042.01"/>mountains<anchor
           xml:id="e1-0043.07"/></add></line>
-    <line rend="indent1">materials from which Homer</line>
+    <line rend="indent3">materials from which Homer</line>
   </zone>
 </surface>

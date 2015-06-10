@@ -13,11 +13,11 @@
         <del rend="overwritten">s</del>
         <add place="intralinear">a</add>
       </mod>ir&#8212;</line>
-    <milestone unit="tei:stage" spanTo="#e2-0010.01"/>
     <line rend="indent1"><del rend="strikethrough">Hark</del>
-      <delSpan rend="vertical_line"
-        spanTo="#e2-0010.02"/>a shadow passes over the scene</line>
-    <line>&amp; a piercing shriek is heard</line><anchor xml:id="e2-0010.02"/><anchor
+    <milestone unit="tei:stage" spanTo="#e2-0010.01"/>
+      a shadow <delSpan rend="vertical_line"
+        spanTo="#e2-0010.02"/>passes<anchor xml:id="e2-0010.02"/> over the scene</line>
+    <line>&amp; a piercing shriek is heard</line><anchor
       xml:id="e2-0010.01"/>
     <line rend="indent1">Hark that outcry of despair</line>
     <line rend="indent1">Tis his mild &amp; gentle ghost</line>
@@ -27,7 +27,7 @@
     <line rend="indent1">To a glow-worm's lamp have dwindled</line>
     <line rend="indent1">The survivors round the embers</line>
     <line rend="indent2">Gather in dread</line>
-    <line rend="indent3">Joy, Joy, Joy,</line>
+    <line rend="indent2">Joy, Joy, Joy,</line>
     <line>Past ages crowd on thee but each one remembers,</line>
     <line>And the future is dark and the present is spread</line>
     <line>Like a pillow of thorns for thy slumberless head.</line>

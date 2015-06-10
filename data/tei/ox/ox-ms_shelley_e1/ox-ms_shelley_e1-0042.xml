@@ -28,12 +28,7 @@
     <line>&#x2014;As some dark Priest hales the reluctant victim<retrace cause="unclear"
         >&#x2014;</retrace></line>
     <line>Shall drag thee, cruel King, to kiss the blood</line>
-    <milestone unit="tei:l" spanTo="#e1-0042.04"/>
-    <line>From these pale feet, which then might</line>
-    <line rend="indent5">trample thee</line>
-    <anchor xml:id="e1-0042.04"/>
-    <line rend="right"><metamark function="separate">____</metamark></line>
-    <!-- Not sure how to encode separate mark above -->
+    <line>From these pale feet, which then might <add place="sublinear"><metamark function="separate">&#8970;</metamark>trample thee</add></line>
     <line>If they disdained not such a prostrate slave. &#x2013;</line>
     <line>Disdain? a<mod>
         <del rend="overwritten">las</del>

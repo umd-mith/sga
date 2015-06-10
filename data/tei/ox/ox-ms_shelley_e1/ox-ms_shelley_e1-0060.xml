@@ -19,23 +19,20 @@
     <line>From all-prolific evil, since thy ruin</line>
     <line>Have sprung, &amp; trampled on my prostrate sons&#8212;</line>
     <line>Ask &amp; they must reply &#8212; so the revenge</line>
-    <milestone unit="tei:l" spanTo="#e1-0060.01"/>
-    <line>Of the supreme <del rend="strikethrough">shall</del> may sweep through vacant</line>
-    <line rend="right">shades</line>
-    <anchor xml:id="e1-0060.01"/>
+    <line>Of the supreme <del rend="strikethrough">shall</del> may sweep through vacant <add place="sublinear">shades</add></line>
     <line>As rainy wind through the abandoned gate</line>
     <line>Of a fallen palace</line>
     <milestone unit="tei:speaker" spanTo="#e1-0060.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0060.02"/>
-    <line rend="indent2">Mother, let not aught</line>
+    <line rend="indent5">Mother, let not aught</line>
     <line>Of that which may be evil, pass again</line>
     <line>My lips, or those of aught resembling <unclear reason="illegible"
       >m</unclear>e&#8212;</line>
     <line>Phantasm of Jupiter arise appear!</line>
     <delSpan spanTo="#e1-0060.05" rend="vertical_line"/>
     <milestone unit="tei:stage" spanTo="#e1-0060.04"/>
-    <line rend="indent1">The sound beneath as of earthquake &amp; the</line>
+    <line>The sound beneath as of earthquake &amp; the</line>
     <line>driving of whirlwinds&#8212; The Ravine is split, &amp;</line>
     <line>the Phantasm of Jupiter <del rend="strikethrough">appears</del> rises, surrounded</line>
     <line>by heavy clouds which dart forth lightning</line>
@@ -49,6 +46,6 @@
     <line rend="indent1">My wings are folded oer mine ears,</line>
     <line rend="indent1">My wings are crossed over mine eyes,</line>
     <line rend="indent1">Yet thro their silver shade appears</line>
-    <line rend="indent5"><add><metamark function="count">214</metamark></add></line>
+    <line rend="indent7"><add><metamark function="count">214</metamark></add></line>
   </zone>
 </surface>

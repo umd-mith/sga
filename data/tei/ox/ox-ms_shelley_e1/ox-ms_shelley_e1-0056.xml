@@ -5,13 +5,11 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0056" partOf="#ox-ms_shelley_e1"   mith:folio="27v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0056.jp2"/>
   <zone type="main">
-    <delSpan spanTo="#e1-0056.01" rend="strikethrough"/>
-    <line>Blue thistles bloomed in cities, foodless toads</line>
+    <line><del rend="strikethrough">Blue thistles bloomed in cities, foodless toads</del></line>
     <line><del rend="strikethrough">With<mod>
           <del rend="overwritten">out</del>
           <add place="intralinear">in</add>
         </mod> voluptuous chambers panting crawled</del>,</line>
-    <anchor xml:id="e1-0056.01"/>
     <line><mod>
         <del rend="strikethrough">And <mod>
             <del rend="overwritten">wind</del>
@@ -22,16 +20,9 @@
       </mod>
       <del rend="strikethrough">my withered br<unclear reason="illegible">ea</unclear>st was
         dry</del></line>
-    <milestone unit="tei:l" spanTo="#e1-0056.02"/>
-    <line>With grief, &amp; the thin air, my breath, was</line>
-    <line rend="right">stained</line>
-    <anchor xml:id="e1-0056.02"/>
-    <milestone unit="tei:l" spanTo="#e1-0056.03"/>
-    <line>With the contagion of a mothers hate</line>
-    <line rend="indent5">aye,</line>
-    <anchor xml:id="e1-0056.03"/>
-    <line>Breathed on her child's destroyer &#8212; <del rend="strikethrough">for</del> I
-      heard</line>
+    <line>With grief, &amp; the thin air, my breath, was <add place ="sublinear">stained</add></line>
+    <line>With the contagion of a mothers hate <add place ="sublinear">aye,</add></line>
+    <line>Breathed on her child's destroyer &#8212; <del rend="strikethrough">for</del> I heard</line>
     <line>Thy curse, the which if thou rememberst not</line>
     <line><mod>
         <del rend="overwritten">T</del>
@@ -45,15 +36,14 @@
     <milestone unit="tei:speaker" spanTo="#e1-0056.04"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0056.04"/>
-    <line rend="indent4">Venerable Mother!</line>
+    <line rend="indent7">Venerable Mother!</line>
     <line>All else who live &amp; suffer take from thee</line>
-    <line>Some comfort; flowers &amp; fruits &amp; happy sounds</line>
-    <line rend="right"><milestone unit="tei:seg" spanTo="#e1-0056.05" corresp="#e1-0056.06"
-        />mine<anchor xml:id="e1-0056.05"/></line>
+    <line>Some comfort; flowers &amp; fruits &amp; happy sounds <add place ="sublinear">mine</add></line>
+    
     <line>And love, though fleeting; these may not be <anchor xml:id="e1-0056.06"/></line>
     <line>But mine own words, I pray, deny me not</line>
     <line rend="center">The Earth</line>
     <line>They shall be told&#8212;. Ere Babylon was dust</line>
-    <line><add><metamark function="count">181</metamark></add></line>
+    <line rend="indent1"><add><metamark function="count">181</metamark></add></line>
   </zone>
 </surface>
