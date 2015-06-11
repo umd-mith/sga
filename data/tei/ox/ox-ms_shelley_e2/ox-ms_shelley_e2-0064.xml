@@ -19,7 +19,7 @@
         <del rend="smear">the</del>
         <add place="superlinear">our</add>
       </mod> music wild &amp; sweet</line>
-    <line rend="indent2">Mock<mod>
+    <line rend="indent1">Mock<mod>
         <del rend="overwritten">ed</del>
         <add place="intralinear">s</add>
       </mod> thy gently-falling feet</line>
@@ -40,9 +40,9 @@
     <milestone unit="tei:speaker" spanTo="#e2-0064.03"/>
     <line rend="center">Echo</line>
     <anchor xml:id="e2-0064.03"/>
-    <line rend="indent1">In the world unknown</line>
-    <line rend="indent1">Sleeps a voice unspoken</line>
-    <line rend="indent1">By thy step alone</line>
+    <line rend="indent2">In the world unknown</line>
+    <line rend="indent2">Sleeps a voice unspoken</line>
+    <line rend="indent2">By thy step alone</line>
     <line rend="indent2">Can its rest be broken</line>
     <line rend="center">Child of Ocean</line>
     <milestone unit="tei:speaker" spanTo="#e2-0064.04"/>
