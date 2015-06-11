@@ -38,31 +38,27 @@
                     <msIdentifier>
                         <settlement>Oxford</settlement>
                         <repository>Bodleian Library, University of Oxford</repository>
-                        <!-- TODO: Notebook A includes pages from both c. 56 and c. 57.
-                             I (TB) don't want to make the decision about to handle this.
-                             Similar issues arise in all other top-level TEI files for
-                             Frankenstein.
-                          -->
                         <idno type="Bod">MS. Shelley e. 2</idno>
                     </msIdentifier>
                     <msContents>
                         <msItem class="#work">
                             <bibl status="draft">
                                 <author>Percy Shelley</author>
-                                <title>Prometheus Unbound (test)</title>
+                                <title>Prometheus Unbound and other fragments.</title>
                             </bibl>
                             
                             <msItem class="#volume">
                                 <bibl>
-                                    <title>e1</title>
-                                    <date notBefore="1816-08" notAfter="1816-12">TEST [August or September]-[?December] 1816</date>
+                                    <title>e2</title>
+                                    <date notBefore="1819-03" notAfter="1819-09">
+                                        End of March 1819-Beginning of September 1819
+                                    </date>
                                 </bibl>
                             </msItem>
                         </msItem>
                     </msContents>
                     <physDesc>
                         <handDesc>
-                            <handNote xml:id="mws"><persName>Mary Shelley</persName></handNote>
                             <handNote xml:id="pbs"><persName>Percy Shelley</persName></handNote>
                         </handDesc>
                     </physDesc>
