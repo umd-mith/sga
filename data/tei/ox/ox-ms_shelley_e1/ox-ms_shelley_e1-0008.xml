@@ -11,7 +11,7 @@
       <del rend="overwritten">eye</del>
       <add place="intralinear">ese</add>
     </mod><milestone unit="tei:speaker" spanTo="#e1-0008.02"/>Panthea<anchor xml:id="e1-0008.02"/> Where are their chariots?</line>
-    <line rend="indent3"><del rend="strikethrough"><milestone unit="tei:speaker" spanTo="#e1-0008.03"/>Chorus <unclear reason="illegible">o</unclear><anchor xml:id="e1-0008.03"/><metamark function="insert">&lt;</metamark></del></line>
+    <line rend="indent3"><del rend="strikethrough"><milestone unit="tei:speaker" spanTo="#e1-0008.03"/>Chorus <unclear reason="illegible">o</unclear><anchor xml:id="e1-0008.03"/><metamark function="insert" rend="left_caret"/></del></line>
     <milestone unit="tei:speaker" spanTo="#e1-0008.10"/>
     <line rend="center">Semichorus <mod>
       <del rend="overwritten">1</del>
@@ -53,7 +53,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0008.08"/>
     <line rend="center">Semichorus 1.</line>
     <anchor xml:id="e1-0008.08"/>
-    <line>We have heard the lute of <note reason="case">H</note>ope in sleep</line>
+    <line>We have heard the lute of Hope in sleep</line>
     <line>We have known the voice of love in dream</line>
   </zone>
 </surface>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<!-- editing begun, not yet complete amstauff dmw and sas -->
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0076" partOf="#ox-ms_shelley_e1"   mith:folio="37v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0076.jp2"/>
@@ -46,15 +45,15 @@
         <add place="superlinear"><milestone unit="tei:stage" spanTo="#e1-0076.09"/>He pauses<unclear
             reason="illegible">.</unclear><anchor xml:id="e1-0076.09"/></add>
       </mod> If the Son of Maia soon</line>
-    <line>Should make us food &#x26; sport? Who can please long</line>
+    <line>Should make us food &amp; sport? Who can please long</line>
     <line>The <unclear reason="case">O</unclear>mnipotent?</line><anchor xml:id="e1-0076.08"/>
     <anchor xml:id="e1-0076.12"/>
     <milestone unit="tei:speaker" spanTo="#e1-0076.10"/><line rend="center">Mercury</line><anchor
       xml:id="e1-0076.10"/>
     <line rend="indent5">Back to your towers of iron</line>
     <line>And gnash, beside the streams of fire wail</line>
-    <line>Your foodless teeth!.. Geryon arise &#x26; Gorgon</line>
-    <line>Chim&#x00e6;ra &#x26; thou Spinx subtlest of fiends</line>
+    <line>Your foodless teeth!.. Geryon arise &amp; Gorgon</line>
+    <line>Chim&#x00e6;ra &amp; thou Spinx subtlest of fiends</line>
     <line>Who ministered to Thebes Heaven's poisoned wine</line>
     <line>Unnatural <mod>
         <del rend="strikethrough"><mod>
@@ -62,6 +61,6 @@
             <add place="intralinear">hate</add>
           </mod></del>
         <add place="superlinear">love</add>
-      </mod>&#x26; more unnatural hate</line>
+      </mod>&amp; more unnatural hate</line>
   </zone>
 </surface>

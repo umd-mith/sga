@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0084.jp2"/>
   <zone type="main">
     <line>Enduring thus the retributive hour</line>
-    <line>Which since we spake is even nearer now&#8212;</line>
+    <line>Which since we spake is even nearer now—</line>
     <line>But hark the hell-hounds clamour, fear delay</line>
     <line>Behold Heaven <mod>
         <del rend="strikethrough">scowls</del>
@@ -18,7 +18,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0084.01"/>
     <line rend="center">Mercury</line>
     <anchor xml:id="e1-0084.01"/>
-    <line>O that we might be spared <del rend="strikethrough">&#8212;</del>I to inflict</line>
+    <line>O that we might be spared <del rend="strikethrough">—</del>I to inflict</line>
     <line>And thou to suffer! once more answer me</line>
     <line><mod><del rend="strikethrough">When sayest thou</del><add place="superlinear"><del rend="strikethrough">Thou knowest not when</del></add></mod>
       <del rend="unmarked">the</del><del rend="strikethrough"> destined change
@@ -27,13 +27,11 @@
     <milestone unit="tei:speaker" spanTo="#e1-0084.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0084.02"/>
-    <line rend="right"><metamark function="count">190</metamark></line>
     <line>I know but this, that <mod>
         <del rend="strikethrough"><unclear reason="illegible">they</unclear></del>
         <add place="superlinear">it</add>
-      </mod> must come <hi rend="underline"><metamark function="count">176</metamark></hi></line>
-    <line rend="indent5"><metamark function="displacement">x</metamark>
-      <hi rend="underline"><metamark function="count">14</metamark></hi></line>
+      </mod> must come</line>
+    <line rend="indent5"><metamark function="displacement">x</metamark></line>
     <anchor xml:id="e1-0084.09"/>
     <line rend="indent3"><hi rend="sub"><milestone unit="tei:speaker" spanTo="#e1-0084.04"
           />Mercury<anchor xml:id="e1-0084.04"/></hi> Yet pause, &amp; <mod>
@@ -56,7 +54,14 @@
     <milestone unit="tei:speaker" spanTo="#e1-0084.05"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0084.05"/>
-    <line>Perchance no thought can count them&#8212;yet they <add place="superlinear">pass</add></line>
+    <line>Perchance no thought can count them—yet they <add place="superlinear">pass</add></line>
     <line rend="indent7"><add><metamark function="count">410</metamark></add></line>
+  </zone>
+  
+  <zone type="calculation">
+    <line>190</line>
+    <line>176</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line><hi rend="underline">14</hi></line>
   </zone>
 </surface>

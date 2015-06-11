@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0073" partOf="#ox-ms_shelley_e1"   mith:folio="36r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0073.jp2"/>
   <zone type="library">
-    <line rend="right">36</line>
+    <line>36</line>
   </zone>
   <zone type="main">
     <line>This is alone <mod>
@@ -14,7 +14,7 @@
       </mod>, <mod>
         <del rend="strikethrough">Peace</del>
         <add place="superlinear">Joy</add>
-      </mod>, Empire &#x26; Victory</line>
+      </mod>, Empire &amp; Victory</line>
     <line rend="center"><metamark function="count">5<unclear reason="illegible">33</unclear></metamark></line>
     <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:p" spanTo="#e1-0073.01"/>
@@ -31,7 +31,7 @@
         <del rend="strikethrough">same</del>
         <add place="superlinear">like</add>
       </mod> power of</line>
-    <line>illustration respecting Homer &#x26; all</line>
+    <line>illustration respecting Homer &amp; all</line>
     <line>other poets; especially as he confesses</line>
     <line>that the same person must be</line>
     <line><unclear reason="illegible">es</unclear>teemed a competent judge of</line>

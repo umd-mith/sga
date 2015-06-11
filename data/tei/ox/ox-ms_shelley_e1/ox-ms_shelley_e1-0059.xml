@@ -5,16 +5,16 @@
   uly="0" lrx="5366" lry="7226" xml:id="ox-ms_shelley_e1-0059" partOf="#ox-ms_shelley_e1"   mith:folio="29r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0059.jp2"/>
   <zone type="library">
-    <line rend="right">29</line>
+    <line>29</line>
   </zone>
   <zone type="main">
     <line rend="indent1">As a lover or<add place="superlinear">a</add> cameleon</line>
     <line rend="indent1">G<mod>
         <del rend="overwritten">a</del>
         <add place="intralinear">r</add>
-      </mod>ows like wh<unclear reason="illegible">a</unclear>t it gazes on&#8212;</line>
+      </mod>ows like wh<unclear reason="illegible">a</unclear>t it gazes on—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0059.01"/>
-    <line rend="center"><add><unclear reason="illegible">Gaz</unclear></add> The Earth</line>
+    <line rend="center"><add><unclear reason="illegible">Gaia</unclear></add> The Earth</line>
     <anchor xml:id="e1-0059.01"/>
     <line>O Gentle moon, the voice of thy delight</line>
     <line>Falls on me like thy clear &amp; tender light</line>
@@ -39,7 +39,7 @@
     <anchor xml:id="e1-0059.03"/>
     <line>I rise as from a bath of sparkling water,</line>
     <line>A bath of azure light, among dark rocks,</line>
-    <line>Out of the stream of sound&#8212;</line>
+    <line>Out of the stream of sound—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0059.04"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0059.04"/>

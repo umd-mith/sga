@@ -13,7 +13,7 @@
         <add place="intralinear">.</add>
       </mod>
       <del rend="strikethrough">Do I a</del> Do you</line>
-    <line>think with me o Ion.&#x2014; <milestone unit="tei:speaker" spanTo="#e1-0003.01"/><hi
+    <line>think with me o Ion.— <milestone unit="tei:speaker" spanTo="#e1-0003.01"/><hi
         rend="underline">Ion</hi><anchor xml:id="e1-0003.01"/> By Jupiter</line>
     <line>Ido. You touch <add place="superlinear">as it were</add> my soul with your wor<retrace
         cause="unclear">d</retrace>s</line>
@@ -21,7 +21,7 @@
       <del rend="strikethrough">The great poets</del> The</line>
     <line>excellent poets appear to me to be divinely</line>
     <line>commissioned as interpreters between the</line>
-    <line>gods &amp; us.&#x2014; <milestone unit="tei:speaker" spanTo="#e1-0003.02"/><hi
+    <line>gods &amp; us.— <milestone unit="tei:speaker" spanTo="#e1-0003.02"/><hi
         rend="underline">Soc</hi>.<anchor xml:id="e1-0003.02"/> Do not you rhapso</line>
     <line>-dists interpret the creations of the poets</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0003.03"/><hi rend="underline">Ion</hi>.<anchor
@@ -32,10 +32,10 @@
     <!--GREEK text follows. rotate 180; first stage -->
       <line rend="right">οἱ δ᾽ακοσμουντες βροτων</line>
       <line>Διδασκάλῶν λογοισι γιγνονται κακοι</line>    
-    <line>Evidently.&#x2014; <milestone unit="tei:speaker" spanTo="#e1-0003.06"/><hi
+    <line>Evidently.— <milestone unit="tei:speaker" spanTo="#e1-0003.06"/><hi
         rend="underline">Soc</hi>.<anchor xml:id="e1-0003.06"/> Now confess the truth</line>
     <line>to me, Ion, &amp; conceal not what I ask</line>
-    <line>of you.&#x2014; When you recite some passages</line>
+    <line>of you.— When you recite some passages</line>
     <line>from an <space unit="chars" extent="8"/> epic poem
         <unclear unit="chars" extent="2"/></line>
     <!-- Also rotate this 180 -->

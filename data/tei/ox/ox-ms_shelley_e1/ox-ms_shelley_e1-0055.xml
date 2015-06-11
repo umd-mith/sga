@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0055" partOf="#ox-ms_shelley_e1"   mith:folio="27r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0055.jp2"/>
   <zone type="library">
-    <line rend="right">27</line>
+    <line>27</line>
   </zone>
   <zone type="main">
     <line>incompetent to determine<add place="superlinear"> also</add> on <mod>
@@ -18,9 +18,9 @@
       <milestone unit="tei:speaker" spanTo="#e1-0055.02"/><hi rend="underline">Soc</hi><anchor
         xml:id="e1-0055.02"/></line>
     <line>The same person then is competent to</line>
-    <line>both<unclear reason="illegible">.</unclear><unclear reason="illegible">&#8212;</unclear>
+    <line>both<unclear reason="illegible">.</unclear><unclear reason="illegible">—</unclear>
       <milestone unit="tei:speaker" spanTo="#e1-0055.03"/><hi rend="underline"
-        >Ion</hi>&#8212;<anchor xml:id="e1-0055.03"/> Yes. <milestone unit="tei:speaker"
+        >Ion</hi>—<anchor xml:id="e1-0055.03"/> Yes. <milestone unit="tei:speaker"
         spanTo="#e1-0055.04"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0055.04"/> And yet
       you</line>
     <line>say that <mod>
@@ -45,12 +45,12 @@
     <line>Hesiod &amp; Archilochus is unequal<del rend="strikethrough"><unclear reason="illegible"
           >;</unclear></del></line>
     <line>&amp; that you <unclear reason="illegible">can</unclear> illustrate this</line>
-    <line>poet <add place="sublinear"><metamark function="displacement">?</metamark></add>better
+    <line>poet <add place="sublinear">?</add>better
       &amp; th<mod>
         <del rend="smear">at</del>
         <add place="superlinear">ose</add>
       </mod> worse. <milestone unit="tei:speaker" spanTo="#e1-0055.05"/><hi rend="underline"
-        >Ion</hi>&#8212;<anchor xml:id="e1-0055.05"/> And</line>
+        >Ion</hi>—<anchor xml:id="e1-0055.05"/> And</line>
     <!-- "almighty" here is a used alternative or replacement for canceled "invisible" on 26v. On 
     top of that, we've encoded here as having its own line, but it is really overwritten by "better" on the
     line above, but not to cancel-->
@@ -80,13 +80,12 @@
         <del rend="strikethrough"><unclear reason="illegible">in</unclear> the composition <unclear
             reason="illegible">of</unclear>
           <unclear reason="illegible">their</unclear></del>
-        <add place="sublinear">inasmuch as it is inferior.&#8212;</add>
+        <add place="sublinear">inasmuch as it is inferior.—</add>
       </mod></line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0055.06"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0055.06"/> So it should seem. <milestone unit="tei:speaker" spanTo="#e1-0055.07"
         /><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0055.07"/> Then</line>
-    <!--<zone type="bottom" corresp="#e1-0054.03">-->
-    <line>&lt; Blue thistles bloomed in cities; foodless
+    <line><metamark function="unclear" rend="left_caret"/> Blue thistles bloomed in cities; foodless
       toads</line>
     <line>Within voluptuous chambers panting crawled;</line>
     <line><mod>
@@ -98,12 +97,11 @@
         <add place="intralinear">P</add>
       </mod>lague had fallen</line>
     <line rend="indent1"><del rend="strikethrough"><add>The corn</add></del></line>
-    <line rend="indent1"><add><metamark function="insert">&#9001;</metamark></add><mod>
+    <line rend="indent1"><add><metamark function="insert" rend="short_vertical_line"/></add><mod>
         <del rend="strikethrough">The corn fields &amp; the vineyards &amp; the meadows</del>
         <add place="superlinear">And in the corn, &amp; vines &amp; meadow grass</add>
       </mod></line>
     <line rend="indent1">Teemed ineradicable poisonous weeds</line>
     <line rend="indent1">Draining their growth, for my wan breast was dry</line>
-  <!-- </zone> -->
   </zone>
 </surface>

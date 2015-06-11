@@ -26,7 +26,7 @@
         <del rend="overwritten"><unclear reason="illegible">v</unclear></del>
         <add place="intralinear">a</add>
       </mod> vain loud multitude</line>
-    <line>Vexing the self-content of wisest men &#8212;</line>
+    <line>Vexing the self-content of wisest men —</line>
     <line>That we will be dread thought beneath thy brain</line>
     <line>And foul desire round thine astonished heart</line>
     <line>And blood with<mod>
@@ -35,7 +35,7 @@
       </mod>
       <mod><del rend="strikethrough">your</del><add place="superlinear">thy</add></mod> labyrithine veins</line>
     <line>Crawling like agony</line>
-    <line rend="right"><add><metamark function="count">X</metamark></add></line>
+    <line rend="right"><add><metamark function="displacement">X</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0094.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0094.02"/>
@@ -51,7 +51,6 @@
     <line>Where the night has its grave &amp; the morning its birth</line>
     <line rend="indent2">Come, Come<unclear reason="illegible">,</unclear> Come</line>
     <line>O ye who shake hills with the scream of your <add place="sublinear">mirth</add></line>
-    <line rend="right">mirth</line>
     <line rend="indent2"><metamark function="count">483</metamark></line>
   </zone>
 </surface>

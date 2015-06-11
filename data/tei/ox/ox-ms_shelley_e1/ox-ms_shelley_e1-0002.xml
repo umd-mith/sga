@@ -10,7 +10,7 @@
   </zone>
   <zone type="main" rotate="180">
     <!--<addSpan spanTo="#e1-0002.01"/>-->
-    <line rend="indent4"><metamark function="count">400</metamark> &#x2014; &#x2014; <metamark
+    <line rend="indent4"><metamark function="count">400</metamark> — — <metamark
         function="count">23<hi rend="sup">d</hi> 163.</metamark></line>
     <line rend="indent4"><hi rend="underline"><metamark function="count">163</metamark></hi></line>
     <line>excite your audience to the highest</line>
@@ -39,6 +39,6 @@
         <add place="intralinear">or</add>
       </mod> whatever other place</line>
     <line>may be the scene of the epic</line>
-    <line>you recite? <metamark function="separate">X</metamark></line>
+    <line>you recite? <metamark function="separate" rend="X"/></line>
   </zone>
 </surface>

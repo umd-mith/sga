@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0029" partOf="#ox-ms_shelley_e1"   mith:folio="14r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0029.jp2"/>
   <zone type="library">
-    <line rend="right">14</line>
+    <line>14</line>
   </zone>
   <zone type="main">
     <line rend="center">Preface</line>
@@ -22,12 +22,12 @@
     <line>w<hi rend="sup">d</hi>. have amounted to a resignation of</line>
     <line>those claims to preference over their</line>
     <line>competitors which incited the com-</line>
-    <line>-position. The <add place="superlinear">Violet</add> Agamenmonian story</line>
-    <!--"Violet" was written on the page before PBS began drafting the Preface-->
+    <line rend="indent2">Violet</line>
+    <line>-position. The Agamenmonian story</line>
     <line>was exhibited on the Athenian theatre</line>
     <line>with as many variations as dramas.</line>
     <line rend="indent1">I have presumed to employ a similar</line>
-    <line>license&#x2014; The "Prometheus unbound" of</line>
+    <line>license— The "Prometheus unbound" of</line>
     <line>&#xC6;schylus, supposed the reconciliation of</line>
     <line>Jupiter with his victim as the</line>
     <line>price of the disclosure of the</line>

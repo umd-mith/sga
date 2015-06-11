@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0011" partOf="#ox-ms_shelley_e1"   mith:folio="5r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0011.jp2"/>
   <zone type="library">
-    <line rend="right">5</line>
+    <line>5</line>
   </zone>
   <zone type="main">
     <line rend="indent2">From those skiey towers</line>
@@ -26,7 +26,7 @@
         <milestone unit="tei:seg" spanTo="#e1-0011.02" xml:id="e1-0011.04"/>
         <add place="superlinear"><unclear reason="illegible">sliding</unclear></add>
         <anchor xml:id="e1-0011.02"/>
-      </mod> tresses<unclear reason="illegible">,</unclear>&#x2014;<alt
+      </mod> tresses<unclear reason="illegible">,</unclear>—<alt
         target="#e1-0011.03 #e1-0011.04" mode="excl" weights="1 0"/></line>
     <line rend="indent2">From the azure isles</line>
     <line rend="indent2">Where sweet Wisdom smiles</line>

@@ -22,8 +22,8 @@
     <line>To which the tortuous strength of thi<mod>
         <del rend="overwritten">r</del>
         <add place="intralinear">er</add>
-    </mod> last <add place="sublinear"><metamark function="separate">&#8970;</metamark>pangs</add></line>
-    <line>Had crushed the iron crags;&#x2014;&amp; over these</line>
+    </mod> last <add place="sublinear"><metamark function="separate" rend="left_bracket_short_line"/>pangs</add></line>
+    <line>Had crushed the iron crags;—&amp; over these</line>
     <line>The jagged alligator &amp; the might</line>
     <line>Of earth-convulsing behemoth, wh<mod>
         <del rend="overwritten">o</del>
@@ -36,9 +36,9 @@
     <line>Wrapt Deluge round it like a cloak, &amp; they</line>
     <line><del rend="strikethrough">Gasped</del><del rend="unmarked">,</del> Yelled, gaspt &amp;
       were abolished; <unclear reason="illegible">or</unclear> some God</line>
-    <line>Whose throne was in a Comet, past, &amp; cried&#8212;</line>
-    <line><metamark function="count">280</metamark>Be not! &#x2014;
-      &amp; like my words they were no <add place="sublinear"><metamark function="separate" rend="&#x2014;"/>more</add></line>
+    <line>Whose throne was in a Comet, past, &amp; cried—</line>
+    <line><metamark function="count">280</metamark>Be not! —
+      &amp; like my words they were no <add place="sublinear"><metamark function="separate" rend="short_line"/>more</add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0022.01"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0022.01"/>

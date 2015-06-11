@@ -4,11 +4,9 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0048" partOf="#ox-ms_shelley_e1"   mith:folio="23v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0048.jp2"/>
-  <zone type="pagination">
-    <line rend="center">6</line>
-  </zone>
   <zone type="main">
-    <line>And heard, &#x26; cried &#x2014; ah woe is me!</line>
+    <line rend="center">6</line>
+    <line>And heard, &amp; cried — ah woe is me!</line>
     <line>And died as mad as the wild waves be</line>
     <milestone unit="tei:speaker" spanTo="#e1-0048.01"/>
     <line rend="center">3</line>
@@ -21,13 +19,13 @@
     <milestone unit="tei:speaker" spanTo="#e1-0048.02"/>
     <line rend="center">4</line>
     <anchor xml:id="e1-0048.02"/>
-    <line rend="indent1">And we sh<unclear reason="illegible">ra</unclear>nk back &#x2014; for
+    <line rend="indent1">And we sh<unclear reason="illegible">ra</unclear>nk back — for
       dreams of ruin</line>
     <line>To frozen caves our flight pursuing</line>
     <line>Ma<mod>
         <del rend="overwritten">ke</del>
         <add place="intralinear">de</add>
-      </mod> us keep silence&#x2014;thus&#x2014;&#x26; thus&#x2014;</line>
+      </mod> us keep silence—thus—&amp; thus—</line>
     <line>Though silence is <unclear reason="illegible">as</unclear> hell to
       us</line>
     <milestone unit="tei:stage" spanTo="#e1-0048.05"/>
@@ -37,17 +35,17 @@
     <milestone unit="tei:speaker" spanTo="#e1-0048.03"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0048.03"/>
-    <line>I hear a sound of voices &#x2014; not the voice</line>
+    <line>I hear a sound of voices — not the voice</line>
     <line>Which I gave forth. <delSpan rend="strikethrough" spanTo="#e1-0048.04"/>O Mother dare thy
       sons</line>
     <line>Scorn him without whom, by<add place="superlinear"><del rend="strikethrough"
         >under</del></add> the might of Jove</line><anchor xml:id="e1-0048.04"/>
     <anchor xml:id="e1-0048.07"/>
-    <line>Both they &#x26; thou had vanished like thin mist</line>
+    <line>Both they &amp; thou had vanished like thin mist</line>
     <line>Unrolled on the morning wind<mod>
         <del rend="overwritten">?</del>
         <add place="intralinear">!</add>
-      </mod>&#x2014;<mod>
+      </mod>—<mod>
         <del rend="overwritten">k</del>
         <add place="intralinear">K</add>
       </mod>now <mod>
@@ -73,7 +71,7 @@
       <mod>
         <del rend="strikethrough">Ye</del>
         <add place="superlinear">O</add>
-      </mod> rock-embosomed Law<unclear reason="illegible">n</unclear> &#x26; snow<del
+      </mod> rock-embosomed Law<unclear reason="illegible">n</unclear> &amp; snow<del
         rend="strikethrough">ing</del><add place="superlinear">-fed</add> stream<unclear
         reason="illegible">s</unclear></line>
   </zone>

@@ -6,36 +6,30 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0005.jp2"/>
 
   <zone type="library">2</zone>
-  <zone type="library">
-    <add><figure>
-        <figDesc>stamp reads "BIBLIOTHECA BODLEIANA</figDesc>
-      </figure></add>
-  </zone>
 
   <zone type="main">    
     <line rend="center"><milestone unit="tei:head" spanTo="#e1-0005.01"/>Act 4<anchor xml:id="e1-0005.01"/>
       <metamark> 1</metamark></line>
     <milestone unit="tei:stage" spanTo="#e1-0005.02"/>
-    <milestone unit="tei:p" spanTo="#e1-0005.03"/>
     <line>Scene a 
       <mod>
         <del rend="strikethrough">beautiful</del>
         <add place="superlinear">part of</add>
       </mod> forest near the cave</line>
-    <line>of Prometheus&#x2014; Panthea &#x26; Ione <del rend="strikethrough">are</del> are</line>
+    <line>of Prometheus— Panthea &amp; Ione <del rend="strikethrough">are</del> are</line>
     <line><del rend="strikethrough">sitting beside a stream</del></line>
-    <line><add place="intralinear" next="#e1-0005.06">sleeping&#x2014;</add>
-      <del rend="strikethrough"><unclear reason="illegible">dreaming</unclear>&#x2014;</del>
+    <line><add place="intralinear" next="#e1-0005.06">sleeping—</add>
+      <del rend="strikethrough"><unclear reason="illegible">dreaming</unclear>—</del>
       <add place="intralinear" xml:id="e1-0005.06" next="#e1-0005.07">they awaken
       gradually</add></line>
     <line><add place="intralinear" xml:id="e1-0005.07">during the first song.</add></line>
-    <anchor xml:id="e1-0005.03"/><anchor xml:id="e1-0005.02"/>
+    <anchor xml:id="e1-0005.02"/>
     <milestone unit="tei:speaker" spanTo="#e1-0005.04"/>
     <line rend="center"><mod>
         <del rend="overwritten"><unclear reason="illegible">Song</unclear></del>
         <add place="intralinear">Voice</add>
       </mod> of unseen Spirits</line><anchor xml:id="e1-0005.04"/>
-    <line rend="indent1">The pale Stars are gone,&#x2014;</line>
+    <line rend="indent1">The pale Stars are gone,—</line>
     <line rend="indent1">For the Sun thier swift Shepherd</line>
     <line rend="indent1">To their folds them compelling</line>
     <line rend="indent1">In the de<mod>
@@ -56,7 +50,7 @@
     <milestone unit="tei:stage" spanTo="#e1-0005.10"/>
     <addSpan spanTo="#e1-0005.09"/>
     <line>a t<hi rend="underline">rain of dark forms &amp; shadows passes by</hi></line>
-    <line><hi rend="underline">confusedly</hi> , singing&#x2014;</line>
+    <line><hi rend="underline">confusedly</hi> , singing—</line>
     <anchor xml:id="e1-0005.09"/><anchor xml:id="e1-0005.10"/>
     <milestone unit="tei:stage" spanTo="#e1-0005.05"/>
     <line rend="right">Panthea wakens</line>

@@ -12,20 +12,20 @@
     <line rend="indent3">that which thou surveyest</line>
     <line>From thine unenvied throne</line>
     <anchor xml:id="e1-0041.01"/>
-    <line>[SKETCH IN PENCIL OF TREE]</line>
+    <zone type="sketch"></zone>
     <space dim="vertical" unit="lines" extent="9" />
-    <line><add><metamark function="displacement">&#60;</metamark></add></line>
+    <line><add><metamark function="displacement" rend="top_left_bracket"/></add></line>
     <space dim="vertical" unit="lines" extent="5" />
     <line><add next="#e1-0041.03" corresp="#e1-0040.08">Have it's deaf waves not heard my
         agony?</add></line>
     <addSpan spanTo="#e1-0041.02" corresp="#e1-0040.07"/>
-    <line rend="indent1">Ah me, alas, pain, pain ever forever!</line>
+    <line rend="indent1"><metamark function="displacement" rend="top_left_bracket"/>Ah me, alas, pain, pain ever forever!</line>
     <line rend="indent1">No change, no pause, <mod>
         <del rend="overwritten">and</del>
         <add place="intralinear">no</add>
       </mod> hope!--yet I endure</line>
     <anchor xml:id="e1-0041.02"/>
-    <line><add xml:id="e1-0041.03" corresp="#e1-0040.09">Ah me alas pain ever forever</add></line>
+    <line><add xml:id="e1-0041.03" corresp="#e1-0040.09"><metamark function="displacement" rend="top_left_bracket"/>Ah me alas pain ever forever</add></line>
     <space dim="vertical" unit="lines" extent="6"/>
     <line><add corresp="#e1-0040.10">Mocking me</add></line>
   </zone>

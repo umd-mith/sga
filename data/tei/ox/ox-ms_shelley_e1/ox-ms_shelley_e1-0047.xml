@@ -5,18 +5,19 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0047" partOf="#ox-ms_shelley_e1"   mith:folio="23r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0047.jp2"/>
   <zone type="library">
-    <line rend="right">23</line>
+    <line>23</line>
   </zone>
   <zone type="main">
-    <delSpan spanTo="#e1-0047.01" rend="unnmarked"/>
+    <delSpan spanTo="#e1-0047.01" rend="unmarked"/>
     <line>And heard, <del rend="strikethrough">&amp; cried</del>, <del rend="strikethrough">ah woe
         is m</del>e!</line>
-    <line>And died&#8212;as the mad as the <del rend="strikethrough">wild w</del>aves be</line>
+    <line><del rend="strikethrough">And died—as the mad</del> as the <del rend="strikethrough">wild w</del>aves be</line>
     <line rend="center">3<hi rend="sup">.</hi>d</line>
-    <line>[SKETCH IN INK OF CLOUDS OR TREES]</line>
+    <zone type="sketch"></zone>
     <line>By such dread words from Earth <unclear reason="illegible">t</unclear></line>
     <anchor xml:id="e1-0047.01"/>
-    <!-- There's a line cutting through the text here, separating PU and ION -->
+    <metamark function="separate" rend="line"/>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line>wrought his <del rend="strikethrough">poetry</del> poem. <milestone unit="tei:speaker"
         spanTo="#e1-0047.02"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0047.02"/>
       Assured-ly</line>
@@ -25,15 +26,15 @@
         <add place="intralinear">Soc.</add>
       </mod><anchor xml:id="e1-0047.03"/> And the other</line>
     <line>Poets do they not treat of the same</line>
-    <line><unclear reason="case">m</unclear>atters?&#8212; <milestone unit="tei:speaker"
+    <line><unclear reason="case">m</unclear>atters?— <milestone unit="tei:speaker"
         spanTo="#e1-0047.04"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0047.04"/> Certainly:
       but not like</line>
     <line>Homer. <milestone unit="tei:speaker" spanTo="#e1-0047.05"/><hi rend="underline"
-        >Soc</hi>.<anchor xml:id="e1-0047.05"/> How, worse?&#8212; <milestone unit="tei:speaker"
+        >Soc</hi>.<anchor xml:id="e1-0047.05"/> How, worse?— <milestone unit="tei:speaker"
         spanTo="#e1-0047.06"/>Ion.<anchor xml:id="e1-0047.06"/> Oh, far</line>
     <line>worse! <milestone unit="tei:speaker" spanTo="#e1-0047.07"/><hi rend="underline"
         >Soc</hi>.<anchor xml:id="e1-0047.07"/> And <add place="superlinear">is</add> Homer <add
-        place="superlinear">much</add> better than they?&#8212;</line>
+        place="superlinear">much</add> better than they?—</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0047.08"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0047.08"/> Oh Jupiter, how much better! <milestone unit="tei:speaker"
         spanTo="#e1-0047.09"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0047.09"/></line>
@@ -50,7 +51,7 @@
     <line>know who had given the true answer.</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0047.10"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0047.10"/> Certainly. <milestone unit="tei:speaker" spanTo="#e1-0047.11"/><hi
-        rend="underline">Soc</hi><anchor xml:id="e1-0047.11"/>&#8212;The same as had</line>
+        rend="underline">Soc</hi><anchor xml:id="e1-0047.11"/>—The same as had</line>
     <line>been aware of those who had given</line>
     <line>the false one, or not? <milestone unit="tei:speaker" spanTo="#e1-0047.12"/><hi
         rend="underline">Ion</hi>.<anchor xml:id="e1-0047.12"/> The same</line>

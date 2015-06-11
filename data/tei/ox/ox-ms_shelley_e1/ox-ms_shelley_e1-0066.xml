@@ -11,20 +11,19 @@
     <line rend="indent1">He speaks! <mod>
         <del rend="strikethrough">O sister</del>
         <add place="superlinear">O</add>
-      </mod> shelter me&#x2014;</line>
-    <line rend="indent5"><add><metamark function="displacement" xml:id="e1-0066.02"
-        >&#60;</metamark></add></line>
+    </mod> shelter me—
+      <add place="sublinear"><metamark function="displacement" xml:id="e1-0066.02" rend="left_caret"/></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0066.03"/><line rend="center">Phantasm</line><anchor
       xml:id="e1-0066.03"/>
     <line>Fiend I defy thee, with a calm fixed mind</line>
     <line>All that thou canst inflict I bid thee do</line>
-    <line>Foul Tyrant both of Gods &#x26; Humankind</line>
+    <line>Foul Tyrant both of Gods &amp; Humankind</line>
     <line>One only being shalt thou not subdue</line>
     <line rend="indent1">Rain then thy plagues upon me here</line>
-    <line rend="indent1">Ghastly disease &#x26; frenzying fear</line>
-    <line rend="indent1">And let alternate frost &#x26; fire</line>
-    <line rend="indent1">Eat into me, &#x26; be thine ire</line>
-    <line>Lightning &#x26; cutting hail and legioned forms</line>
+    <line rend="indent1">Ghastly disease &amp; frenzying fear</line>
+    <line rend="indent1">And let alternate frost &amp; fire</line>
+    <line rend="indent1">Eat into me, &amp; be thine ire</line>
+    <line>Lightning &amp; cutting hail and legioned forms</line>
     <line>Of furies, driving by upon the wounding storms</line>
     <space dim="vertical" unit="lines" extent="1" />
     <line>Aye do thy worst. Thou art Omnipotent</line>
@@ -34,7 +33,7 @@
         <del rend="overwritten">p</del>
         <add place="intralinear">t</add>
       </mod>ower</line>
-    <line><add place="interlinear"><metamark function="count">263</metamark></add>Let thy malignant
+    <line rend="indent1"><add place="sublinear"><metamark function="count">263</metamark></add>Let thy malignant
       spirit move</line>
   </zone>
 </surface>

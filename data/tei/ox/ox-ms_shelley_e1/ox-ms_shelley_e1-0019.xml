@@ -5,7 +5,7 @@
   uly="0" lrx="5346" lry="7200" xml:id="ox-ms_shelley_e1-0019" partOf="#ox-ms_shelley_e1"   mith:folio="9r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0019.jp2"/>
   <zone type="library">
-    <line rend="right">9</line>
+    <line>9</line>
   </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0019.01"/>
@@ -22,7 +22,7 @@
     <line>Flow, as through empty space, music &amp; light</line>
     <line>Ten thousand orbs involving &amp; involved</line>
     <line>Purple &amp; azure, <mod>
-        <add place="sublinear"><metamark>^</metamark></add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">white &amp; green &amp;</add>
       </mod> golden <mod>
         <del rend="strikethrough">white &amp; green</del>
@@ -38,9 +38,9 @@
     <line>Intensely slowly solemnly ro<mod>
         <del rend="overwritten">lls</del>
         <add place="intralinear">ll</add>
-    </mod> on&#x2014;</line>
+    </mod> on—</line>
     <line><space unit="chars" extent="33"/><mod spanTo="#e1-0019.04"/><add place="sublinear">
-      <metamark function="insert">&#x2014;&#x2014;&#x2014;</metamark></add></line>
+      <metamark function="insert" rend="short_line"/></add></line>
     <anchor xml:id="e1-0019.02"/>
     <anchor xml:id="e1-0019.03"/>
     <anchor xml:id="e1-0019.04"/>

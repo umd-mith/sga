@@ -6,17 +6,18 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0082.jp2"/>
   <zone type="main">
     <line>The chrystal-winged snow cling<del rend="strikethrough">s</del> round my
-      hair&#x2014;</line>
+      hair—</line>
     <line>Whilst my beloved ra<retrace cause="unclear">c</retrace>e is tr<mod>
         <del rend="overwritten">ample</del>
         <add place="intralinear">dodden</add>
       </mod> down</line>
     <line>By his thought-executing ministers.</line>
-    <line>Such is the tyrants recompense&#x2014;'tis just:</line>
+    <line>Such is the tyrants recompense—'tis just:</line>
     <line>He who is evil can recieve no good</line>
     <line>And for a world bestowed or a friend lost</line>
-    <line rend="left">He Can feel hate, fear, shame&#x2014;not gratitude</line>
-    <line rend="right"><add><metamark function="displacement">&#60;</metamark></add></line>
+    <line rend="left">He Can feel hate, fear, shame—not gratitude
+      <add place="sublinear"><metamark function="displacement" rend="left_caret"/></add>
+    </line>
     <anchor xml:id="e1-0082.01"/>
     <line>Kindness to such is keen reproach which breaks</line>
     <line>With bitter stings the light sleep of Reveng<unclear reason="illegible"
@@ -29,8 +30,8 @@
         <add place="intralinear">Like</add>
       </mod> the Sicilians hair-suspended sword</line>
     <line>Which trembles oer his crown, would he accept<unclear reason="illegible"
-      >&#8212;</unclear></line>
-    <line>Or could I yield?&#x2014;which yet I will not y<mod>
+      >—</unclear></line>
+    <line>Or could I yield?—which yet I will not y<mod>
         <del rend="overwritten">e</del>
         <add place="intralinear">i</add>
       </mod>eld.</line>

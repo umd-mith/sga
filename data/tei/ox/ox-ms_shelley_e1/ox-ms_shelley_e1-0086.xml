@@ -9,7 +9,7 @@
     <line rend="center">Mercury</line>
     <anchor xml:id="e1-0086.01"/>
     <line>If thou might'st dwell among the Gods the while</line>
-    <line>Lapped in voluptuous joy?&#8212;</line>
+    <line>Lapped in voluptuous joy?—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0086.02"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0086.02"/>
@@ -26,7 +26,8 @@
     <line>Not me, within whose mind sits peace serene</line>
     <line>As light in the sun, throned ... how vain is talk!</line>
     <line>Call up the fiends</line>
-    <milestone unit ="tei:stage"><line rend="indent7">(<del rend="strikethrough">thunder &amp; l</del>ightning)</line></milestone>
+    <milestone unit="tei:stage" spanTo="#e1-0086.99"/><line rend="indent7">(<del rend="strikethrough">thunder &amp;</del> lightning)</line>
+    <anchor xml:id="e1-0086.99"/>
     <milestone unit="tei:speaker" spanTo="#e1-0086.05"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0086.05"/>
@@ -37,7 +38,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0086.06"/>
     <line rend="center">Mercury</line>
     <anchor xml:id="e1-0086.06"/>
-    <line>I must obey his words &amp; thine&#8212;alas</line>
+    <line>I must obey his words &amp; thine—alas</line>
     <line><mod>
         <del rend="strikethrough">How</del>
         <add place="superlinear">Most</add>

@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0039" partOf="#ox-ms_shelley_e1"   mith:folio="19r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0039.jp2"/>
-  <zone type="library"><line rend="right">19</line></zone>
+  <zone type="library"><line>19</line></zone>
   <zone type="main">
     <line><mod>
         <del rend="strikethrough">respecting</del>
@@ -15,7 +15,7 @@
         <add place="superlinear">posess</add>
       </mod></line>
     <line>this high degree of skill respecting Homer alone;</line>
-    <line>and I consider that sufficient.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0039.04"
+    <line>and I consider that sufficient.— <milestone unit="tei:speaker" spanTo="#e1-0039.04"
         /><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0039.04"/>
       <del rend="strikethrough"><unclear reason="illegible">B</unclear>ut</del></line>
     <line><mod>
@@ -28,9 +28,8 @@
       <del rend="strikethrough">subjects</del> any topics concerng which</line>
     <line rend="indent2"><del rend="strikethrough"><add>During the scene morning slowly
           breaks.</add></del></line>
-    <line>Homer &amp; Hesiod say the same <add place="superlinear"><metamark function="displacement"
-          >&#8594;</metamark></add>
-      <del rend="strikethrough">things</del>?&#8212;<milestone unit="tei:speaker"
+    <line>Homer &amp; Hesiod say the same
+      <del rend="strikethrough">things?</del>—<milestone unit="tei:speaker"
         spanTo="#e1-0039.05"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0039.05"/></line>
     <line>Many, as it seems to <unclear reason="illegible">me</unclear><add>.</add>
       <milestone unit="tei:speaker" spanTo="#e1-0039.06"/><mod>
@@ -44,12 +43,11 @@
       <del rend="strikethrough"><unclear reason="illegible">Should</unclear></del></line>
     <line>you <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
             >should</unclear></add></del> illustrate these topics better</line>
-    <line>as treated by <retrace cause="unclear">H</retrace>omer or Hesiod?&#8212; <milestone
+    <line>as treated by <retrace cause="unclear">H</retrace>omer or Hesiod?— <milestone
         unit="tei:speaker" spanTo="#e1-0039.07"/><hi rend="underline">Ion</hi>.<anchor
-        xml:id="e1-0039.07"/>&#8212;</line>
+        xml:id="e1-0039.07"/>—</line>
     <line>In the same manner doubtless inasmuch</line>
-    <line>as they say the same<add place="interlinear"><metamark>X</metamark></add> words<add
-        place="interlinear"><metamark>X</metamark></add> with respect</line>
+    <line>as they say the same words with respect</line>
     <line>to the same things. <milestone unit="tei:speaker" spanTo="#e1-0039.08"/><hi
         rend="underline">Soc</hi>.<anchor xml:id="e1-0039.08"/> But with</line>
     <line>regard to those things in which they</line>
@@ -58,7 +56,7 @@
     <line>Certainly <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">I feel that</add>
-      </mod> I could explain them.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0039.10"
+      </mod> I could explain them.— <milestone unit="tei:speaker" spanTo="#e1-0039.10"
         />Soc.<anchor xml:id="e1-0039.10"/></line>
     <line>But whether <add place="superlinear">you <del rend="strikethrough">do imagine</del>, that</add>or not you or a diviner</line>
     <line>make<add place="superlinear">would</add>the best exposition respecting</line>
@@ -68,7 +66,7 @@
       </mod> say of divination, <del rend="strikethrough">whether</del></line>
     <line>both as <mod>
       <restore><del rend="strikethrough">they</del></restore><add place="superlinear"><del rend="strikethrough">those poets</del></add>
-      </mod> agree &amp; as they differ.&#8212;</line>
+      </mod> agree &amp; as they differ.—</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0039.11"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0039.11"/> A diviner certainly. <milestone unit="tei:speaker"
         spanTo="#e1-0039.12"/>Soc.<anchor xml:id="e1-0039.12"/> If you</line>

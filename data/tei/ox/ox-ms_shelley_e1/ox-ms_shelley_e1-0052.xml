@@ -10,36 +10,33 @@
     <anchor xml:id="e1-0052.01"/>
     <line rend="indent6">How canst thou hear</line>
     <line>Who knowest not the language of the dead?</line>
-    <line><del rend="smear">I d</del>
+    <line rend="center"><del rend="smear">I d</del>
       <milestone unit="tei:speaker" spanTo="#e1-0052.02"/>Prometheus<anchor xml:id="e1-0052.02"/></line>
-    <line>Thou art a living spirit &#x2014; speak as they</line>
+    <line>Thou art a living spirit — speak as they</line>
     <milestone unit="tei:speaker" spanTo="#e1-0052.03"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0052.03"/>
     <line>I dare not speak like life, lest Heaven's <del rend="strikethrough">fierce</del><anchor
         xml:id="e1-0052.06"/> King</line>
-    <line>Should hear, &#x26; link me to some wheel of pain</line>
+    <line>Should hear, &amp; link me to some wheel of pain</line>
     <line>More torturing than the one wher<mod>
         <del rend="overwritten">o</del>
         <add place="intralinear">e</add>
-      </mod>on I roll.&#x2014;</line>
-    <line>Subtle thou art &#x26; good, &#x26; tho' the Gods</line>
-    <line>Hear not this voice &#x2014; yet thou art more than <add place="sublinear">God</add></line>
-    <line>Being wise &#x26; kind &#x2014; earnestly hearken now&#x2014;</line>    
+      </mod>on I roll.—</line>
+    <line>Subtle thou art &amp; good, &amp; tho' the Gods</line>
+    <line>Hear not this voice — yet thou art more than <add place="sublinear">God</add></line>
+    <line>Being wise &amp; kind — earnestly hearken now—</line>    
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0052.04"/>Prometheus<anchor xml:id="e1-0052.04"/></line>
     <line>Obscurely through my brain like shadows dim</line>
-    <line>Sweep awful thoughts rapid &#x26; thick&#x2014;I feel</line>
+    <line>Sweep awful thoughts rapid &amp; thick—I feel</line>
     <line>Faint, like one mingled in entwining love,</line>
     <line>Yet 'tis not pleasure</line>
     <milestone unit="tei:speaker" spanTo="#e1-0052.05"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0052.05"/>
     <line>No, thou canst not hear</line>
-    <line>Thou art immortal, &#x26; this tongue is known</line>
-    <!-- the insert mark in the next line refers to the penciled in additions in e1-53 (e1 25v).
-      We will insert those later as the way those additions are encoded right now in e1-53 is
-      too fragmented-->
-    <line>Only to those who die... <add><metamark function="insert">^</metamark></add> I am the
+    <line>Thou art immortal, &amp; this tongue is known</line>
+    <line>Only to those who die... <add place="sublinear"><metamark function="insert">^</metamark></add> I am the
       Earth</line>
     <line><add><metamark function="count">144</metamark></add></line>
   </zone>

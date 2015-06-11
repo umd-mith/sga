@@ -5,7 +5,7 @@
   uly="0" lrx="5394" lry="7260" xml:id="ox-ms_shelley_e1-0075" partOf="#ox-ms_shelley_e1"   mith:folio="37r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0075.jp2"/>
   <zone type="library">
-    <line rend="right">37</line>
+    <line>37</line>
   </zone>
   <zone type="main">
     <line xml:id="e1-0075-pu_line_0">utterly unable <add place="sublinear"><del rend="smear"><unclear reason="illegible">Enter
@@ -16,7 +16,7 @@
     <line>improvise any thing worth speaking</line>
     <line>of <mod>
         <del rend="overwritten">,</del>
-        <add place="intralinear">&#8212;</add>
+        <add place="intralinear">—</add>
       </mod> &amp; positively go to sleep;</line>
     <line>but when anyone reminds me of</line>
     <line>Homer, I awaken<add place="superlinear">instantly</add> as from a</line>
@@ -33,14 +33,13 @@
     <line>feel a throng<del rend="strikethrough">ing</del> &amp; profusion of</line>
     <line>expressions suggest themselves</line>
     <line/>
-    <line>involuntarily.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0075.05"/><hi
+    <line>involuntarily.— <milestone unit="tei:speaker" spanTo="#e1-0075.05"/><hi
         rend="underline">Soc</hi><anchor xml:id="e1-0075.05"/>
       <mod>
         <del rend="strikethrough">The cause</del>
         <add place="superlinear">It</add>
       </mod> is</line>
-    <line>not difficult to conjecture the cause.</line>
-    <!--Underneath the text is an image of a face and the words "Edi{th} Sit{?}n{d} below it in pencil-->
+    <line>not difficult to conjecture the cause.</line>    
     <line>You are evidently unable to speak</line>
     <line>concerning Homer according to art or</line>
     <line><del rend="strikethrough">kno</del>
@@ -58,4 +57,5 @@
     <line>of their composition no less than</line>
     <line>the art <del rend="strikethrough">which</del> of criticism which</line>
   </zone>
+  <zone type="sketch"><add>Edi<unclear reason="illegible">th</unclear> Sit<unclear reason="illegible">na</unclear></add></zone>
 </surface>

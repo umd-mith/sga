@@ -6,7 +6,7 @@
     <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0092.jp2"/>
     <zone type="main">
         <line>The aerial c<unclear reason="illegible">ri</unclear>mson falls, <unclear
-                reason="illegible">fl</unclear>ushing her cheek&#x2013;</line>
+                reason="illegible">fl</unclear>ushing her cheek–</line>
         <line>So from our victim's destin<mod>
                 <del rend="overwritten">y</del>
                 <add place="intralinear">ed</add>
@@ -22,7 +22,7 @@
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.01"/>Prometheus<anchor
                 xml:id="e1-0092.01"/></line>
         <line>I laugh your power &amp; his who sent you here</line>
-        <line>To lowest scorn.&#x2014; pour forth the cup of pain</line>
+        <line>To lowest scorn.— pour forth the cup of pain</line>
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.02"/>1.<hi rend="sup"
                 >st</hi> Fury<anchor xml:id="e1-0092.02"/></line>
         <line><mod>
@@ -39,7 +39,7 @@
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.03"/>Prometheus<anchor
                 xml:id="e1-0092.03"/></line>
         <line>Pain is my element as hate is thine</line>
-        <line>Ye rend me now, I care not&#x2014;</line>
+        <line>Ye rend me now, I care not—</line>
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.04"/>2.<hi rend="sup"
                 >d</hi> Fury<anchor xml:id="e1-0092.04"/></line>
         <line rend="indent7"> Dost imagine</line>
@@ -48,7 +48,7 @@
         <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0092.05"/>Prometheus<anchor
                 xml:id="e1-0092.05"/></line>
         <line>I weigh not what ye do, but what ye suffer</line>
-        <line>Being evil&#x2014;cruel was the Power which called</line>
+        <line>Being evil—cruel was the Power which called</line>
         <line>You, or aught else so wretched, into light <add place ="sublinear"><metamark function="count">4<unclear rend="illegible">6</unclear>8</metamark></add></line>
         <!-- add "line count" to schema? -->
     </zone>

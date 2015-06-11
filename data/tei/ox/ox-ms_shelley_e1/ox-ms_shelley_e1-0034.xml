@@ -5,26 +5,26 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0034" partOf="#ox-ms_shelley_e1"   mith:folio="16v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0034.jp2"/>
   <zone type="pagination">
-    <line rend="indent2"><add>\ \ \ \ \ \</add> 1</line>
+    <line>1</line>
   </zone>
   <zone type="main">
     <line><del rend="unmarked"><add place="superlinear"><milestone unit="tei:speaker"
             spanTo="#e1-0034.02"/>So<anchor xml:id="e1-0034.02"/></add></del><milestone
-        unit="tei:speaker" spanTo="#e1-0034.03"/>Soc.<anchor xml:id="e1-0034.03"/>&#8212;Hail to
+        unit="tei:speaker" spanTo="#e1-0034.03"/>Soc.<anchor xml:id="e1-0034.03"/>—Hail to
       thee <milestone unit="tei:speaker" spanTo="#e1-0034.04"/>Ion<anchor xml:id="e1-0034.04"/>, <mod>
         <del rend="strikethrough">comest thou</del>
         <add place="sublinear">whence returnest thou</add>
       </mod></line>
     <line>amongst us; from thine own native Ephesus?</line>
-    <line>Ion&#8212;From Epidauras, o Socrates, of the &#198;scula</line>
-    <line>-pians.&#8212;<milestone unit="tei:speaker" spanTo="#e1-0034.05"/>S.<anchor
+    <line>Ion—From Epidauras, o Socrates, of the &#198;scula</line>
+    <line>-pians.—<milestone unit="tei:speaker" spanTo="#e1-0034.05"/>S.<anchor
         xml:id="e1-0034.05"/> Had the Epidaurians instituted a</line>
     <line/>
     <line>contest of <mod>
         <del rend="strikethrough">raphsodists</del>
         <add place="superlinear">rhapsodists</add>
       </mod> to the honor of the god<mod>
-        <del rend="overwritten">&#8212;</del>
+        <del rend="overwritten">—</del>
         <add place="intralinear">?</add>
       </mod></line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0034.06"/>Ion.<anchor xml:id="e1-0034.06"/> And
@@ -48,7 +48,7 @@
       </mod></line>
     <line>bear away the Panath<unclear reason="illegible">e</unclear>nea, <del rend="strikethrough"
           ><unclear reason="illegible">too</unclear></del>
-      <del rend="strikethrough">next</del>.&#8212;</line>
+      <del rend="strikethrough">next</del>.—</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0034.10"/>Ion.<anchor xml:id="e1-0034.10"/> That
       also may happen if the <mod>
         <del rend="overwritten">g</del>

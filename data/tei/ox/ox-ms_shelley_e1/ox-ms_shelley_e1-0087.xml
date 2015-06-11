@@ -4,14 +4,14 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0087" partOf="#ox-ms_shelley_e1"   mith:folio="43r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0087.jp2"/>
-  <zone type="library"><line rend="right">43</line></zone>
+  <zone type="library"><line>43</line></zone>
   <zone type="main">
     <line rend="indent1">like that which it<add>self</add> possesses</line>
     <line>of attracting other rings, so that <del rend="strikethrough">even</del></line>
     <line>some times <del rend="strikethrough">a long</del>
       <del rend="strikethrough">you</del> a long attached</line>
     <line>chain of rings &amp; irons may be <del rend="strikethrough">been</del></line>
-    <line><del rend="strikethrough">hanging</del> one to the other.-- <mod>
+    <line><del rend="strikethrough">hanging</del> one to the other.— <mod>
         <del rend="strikethrough">Through</del>
         <add place="superlinear">To</add>
       </mod></line>
@@ -60,8 +60,8 @@
       </mod>
       <del rend="strikethrough">being</del></line>
     <line>inspired &amp; posesse<unclear reason="illegible">d</unclear><mod>
-        <metamark function="insert"><unclear reason="illegible">^</unclear></metamark>
-        <add place="superlinear">as it were by a spirit.--</add>
+        <add place="sublinear"><metamark function="insert"><unclear reason="illegible">^</unclear></metamark></add>
+      <add place="superlinear">as it were by a spirit.—</add>
       </mod> And thus</line>
     <line>the composers of lyric poetry,</line>
     <line>like C<unclear reason="illegible">or</unclear>ybants <del rend="strikethrough">who

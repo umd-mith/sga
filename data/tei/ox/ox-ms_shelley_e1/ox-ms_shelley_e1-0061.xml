@@ -5,13 +5,13 @@
   uly="0" lrx="5384" lry="7248" xml:id="ox-ms_shelley_e1-0061" partOf="#ox-ms_shelley_e1"   mith:folio="30r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0061.jp2"/>
   <zone type="library">
-    <line rend="right">30</line>
+    <line>30</line>
   </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0061.01"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e1-0061.01"/>
-    <line>Peace! Peace!&#8212; a mighty Power, which is as Darkness</line>
+    <line>Peace! Peace!— a mighty Power, which is as Darkness</line>
     <line>Is rising out of Earth, &amp; from the sky</line>
     <line>Is showered like <mod>
         <del rend="overwritten">n</del>
@@ -21,13 +21,13 @@
     <line>Into the pores of <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">sun-</add>
-      </mod>light&#8212;<del rend="strikethrough">&amp;</del> the bright Visions</line>
+    </mod>light<del rend="strikethrough">— &amp;</del> the bright Visions</line>
     <line>Whe<unclear reason="illegible">rein</unclear> the singing spirits rode &amp; shone</line>
     <line>Gleam like pale meteors thro' a watery mist</line>
     <milestone unit="tei:speaker" spanTo="#e1-0061.02"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0061.02"/>
-    <line>There is a sense of words upon mine ear&#8212;</line>
+    <line>There is a sense of words upon mine ear—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0061.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e1-0061.03"/>
@@ -42,7 +42,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0061.05"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0061.05"/>
-    <line>I hear,&#8212; I am as a drop of dew that dies!</line>
+    <line>I hear,— I am as a drop of dew that dies!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0061.06"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e1-0061.06"/>

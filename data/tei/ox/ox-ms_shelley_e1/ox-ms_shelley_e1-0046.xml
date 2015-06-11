@@ -4,10 +4,8 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0046" partOf="#ox-ms_shelley_e1"   mith:folio="22v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0046.jp2"/>
-  <zone type="pagination">
-    <line rend="center">5</line>
-  </zone>
   <zone type="main">
+    <line rend="center">5</line>
     <line>And had ran mute <mod>
         <del rend="strikethrough">thro</del>
         <add place="superlinear">'mid</add>
@@ -15,21 +13,21 @@
         <del rend="overwritten">k</del>
         <add place="intralinear">h</add>
       </mod>rieks of slaugter</line>
-    <line rend="indent1">Thro' a city &#x26; a solitude!</line>
+    <line rend="indent1">Thro' a city &amp; a solitude!</line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0046.01"/>3<hi rend="sup">d</hi>.
       Voice from the Air<anchor xml:id="e1-0046.01"/></line>
     <line>I had clothed since Earth uprose</line>
     <line rend="indent1">Its wastes in colours not their own,</line>
     <line>And oft had my serene repose</line>
     <line rend="indent1">Been cloven by many a rending groan</line>
-    <line rend="indent1"><del rend="unmarked">And silence</del></line>
+    <line rend="indent1">And silence</line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0046.02"/>4<hi rend="sup">th</hi>
       <add place="superlinear">Voice</add> from the Whirlwinds<anchor xml:id="e1-0046.02"/></line>
     <line>We had soared beneath these mountains</line>
     <line rend="indent1">Unr<mod>
         <del rend="overwritten">s</del>
         <add place="intralinear">e</add>
-      </mod>sting ages;&#x2013;nor had thunder</line>
+      </mod>sting ages;–nor had thunder</line>
     <line>Nor yon Volcano's f<mod>
         <del rend="overwritten">i</del>
         <add place="intralinear">l</add>
@@ -39,14 +37,14 @@
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0046.03"/>1<hi rend="sup">t</hi>
         Voice<anchor xml:id="e1-0046.03"/></line>
     <line>But never bowed our snowy crest</line>
-    <line>As at the voice of thine unrest&#x2014;</line>
+    <line>As at the voice of thine unrest—</line>
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0046.04"/>2<hi rend="sup"
         >d</hi><anchor xml:id="e1-0046.04"/></line>
     <line>Never such a sound before</line>
     <line>To the Indian waves we <mod>
         <del rend="overwritten">w</del>
         <add place="intralinear">b</add>
-      </mod>ore.&#x2014;</line>
+      </mod>ore.—</line>
     <line>A pilot asleep on the howling sea</line>
     <line><add><metamark function="count">95</metamark></add> Leaped up from the deck in
       agony</line>

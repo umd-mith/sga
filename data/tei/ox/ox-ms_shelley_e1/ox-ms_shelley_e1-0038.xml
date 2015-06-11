@@ -9,10 +9,10 @@
     <line rend="center"><hi rend="underline">Act 1</hi></line>
     <anchor xml:id="e1-0038.07"/>
     <milestone unit="tei:stage" spanTo="#e1-0038.08"/>
-    <line rend="indent1">Scene &#x2014;<add place="superlinear">Night</add> A Ravine of Icy Rocks in
+    <line rend="indent1">Scene —<add place="superlinear">Night</add> A Ravine of Icy Rocks in
       the</line>
     <line>Indian Caucasus. Prometheus is discovered</line>
-    <line>bound to the precipice&#x2014; Panthea &amp; Ione</line>
+    <line>bound to the precipice— Panthea &amp; Ione</line>
     <line>are seated at his feet.</line>
     <anchor xml:id="e1-0038.08"/>
     <milestone unit="tei:speaker" spanTo="#e1-0038.09"/>
@@ -26,9 +26,9 @@
         <add place="intralinear">S</add>
       </mod>pirits</line>
     <line>But One, who throng those bright &amp; rolling Worlds</line>
-    <line>Which Thou &amp; I alone of living <add place="sublinear"><metamark function="displacement">&#8629;</metamark></add>things
-      <add><metamark function="separate">&#166;</metamark></add>regard</line>
-    <line>Behold with sleepless eyes         this Earth</line>
+    <line>Which Thou &amp; I alone of living things <metamark rend="short_vertical_line" function="insert"/> 
+      <add place="sublinear">Behold with sleepless eyes</add> 
+      regard<add place="sublinear">this Earth</add></line>
     <line>Made multitudinous with thy slaves, whom thou</line>
     <line>Requitest for knee-worship, prayer &amp; praise,</line>
     <line>And toil, &amp; hecatombs of broken hearts,</line>
@@ -39,6 +39,6 @@
     <line>Three thousand years of sleep-unsheltered hours</line>
     <line>And moments, aye divided by keen pangs</line>
     <line>Till they seem years, torture &amp; solitude,</line>
-    <line>Scorn &amp; despair &#x2014; &#x2014;<del rend="strikethrough">more glorious than thy throne</del></line>
+    <line>Scorn &amp; despair — —<del rend="strikethrough">more glorious than thy throne</del></line>
   </zone>
 </surface>

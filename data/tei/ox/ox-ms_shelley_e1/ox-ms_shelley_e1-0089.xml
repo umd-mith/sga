@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0089" partOf="#ox-ms_shelley_e1"   mith:folio="44r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0089.jp2"/>
-  <zone type="library"><line rend="right">44</line></zone>
+  <zone type="library"><line>44</line></zone>
   <zone type="main">
     <line><unclear><del rend="strikethrough">Corbay</del></unclear> Corybants who <del rend="strikethrough"
         >have</del> dance <del rend="strikethrough">w</del></line>
@@ -42,8 +42,8 @@
       </mod>aw honey &amp; milk from the</line>
     <line><mod>
         <del rend="strikethrough">deep rivers</del>
-        <add place="superlinear">streams&#8212;</add>
-      </mod>,&#8212; <mod>
+        <add place="superlinear">streams—</add>
+      </mod>,— <mod>
         <del rend="strikethrough"><unclear reason="illegible">e</unclear>nd <unclear
             reason="illegible">o</unclear>f <unclear reason="illegible">deception</unclear></del>
         <del rend="strikethrough"><add place="superlinear"><unclear reason="illegible"
@@ -72,7 +72,7 @@
     <line><del rend="strikethrough">do this</del> have this peculiar minis&#8211;</line>
     <line/>
     <line>&#8211;tration in the <mod>
-        <del rend="overwritten">word&#8212;</del>
+        <del rend="overwritten">word—</del>
         <add place="intralinear">world</add>
       </mod>; <mod>
         <del rend="strikethrough">for Poets</del>

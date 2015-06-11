@@ -5,10 +5,10 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0063" partOf="#ox-ms_shelley_e1"   mith:folio="31r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0063.jp2"/>
   <zone type="library">
-    <line rend="right">31</line>
+    <line>31</line>
   </zone>
   <zone type="main">
-    <line>I hear&#8212; I am a leaf shaken by thee!</line>
+    <line>I hear— I am a leaf shaken by thee!</line>
     <milestone unit="tei:speaker" spanTo="#e1-0063.01"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e1-0063.01"/>
@@ -36,15 +36,11 @@
     <line>Are clouds to hide, not colours to pourtray</line>
     <line>Whether your nature is that Universe</line>
     <line>Which once <unclear reason="case">Y</unclear>e saw &amp;
-      suffered&#8212;</line>
+      suffered—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0063.04"/>
     <line rend="center"><unclear reason="case">A</unclear>
       <unclear reason="case">V</unclear>oice from beneath</line>
     <anchor xml:id="e1-0063.04"/>
-    <line rend="indent8">or <mod>
-        <del rend="strikethrough">like</del>
-        <add place="superlinear">as</add>
-      </mod> they</line>
     <line>Who<mod>
         <del rend="strikethrough">m</del>
         <add place="superlinear">m</add>
@@ -53,13 +49,16 @@
         <del rend="strikethrough">we</del>
         <del rend="strikethrough">h<unclear reason="illegible">it</unclear>her haste</del>
         <add place="superlinear">we have left</add>
-      </mod>, we change &amp; pass away<unclear reason="illegible">.</unclear>&#8212;</line>
+      </mod>, we change <add place="superlinear">or <mod>
+        <del rend="strikethrough">like</del>
+        <add place="superlinear">as</add>
+      </mod> they</add>&amp; pass away<unclear reason="illegible">.</unclear>—</line>
     <milestone unit="tei:speaker" spanTo="#e1-0063.05"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e1-0063.05"/>
     <line>Ye elemental Genii, who have homes</line>
     <line>From mans high mind even to the central <add place="sublinear">stone</add></line>
     <line>Of sullen lead, from Heavens star-fretted domes</line>
-    <line>To the dull weed some sea-worm battens on&#8212;</line>
+    <line>To the dull weed some sea-worm battens on—</line>
   </zone>
 </surface>

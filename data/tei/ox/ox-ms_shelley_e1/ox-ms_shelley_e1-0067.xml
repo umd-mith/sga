@@ -5,13 +5,13 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0067" partOf="#ox-ms_shelley_e1"   mith:folio="33r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0067.jp2"/>
   <zone type="library">
-    <line rend="right">33</line>
+    <line>33</line>
   </zone>
   <zone type="main" corresp="#e1-0066.02">
     <milestone unit="tei:speaker" spanTo="#e1-0067.01"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e1-0067.01"/>
-    <line>I see the curse on gestures <mod>
+    <line><add place="sublinear"><metamark function="displacement" rend="left_caret"/></add>I see the curse on gestures <mod>
         <milestone unit="tei:seg" spanTo="#e1-0067.02" xml:id="e1-0067.04"/>
         <mod>
           <restore type="underline"><hi rend="underline"><del rend="strikethrough"
@@ -24,13 +24,13 @@
           <add place="superlinear"><unclear extent="3"/>proud</add>
           <anchor xml:id="e1-0067.03"/>
         </mod>
-      </mod> &#x26; cold<alt target="#e1-0067.04 #e1-0067.05" mode="excl" weights="0 1"/></line>
-      <line><del rend="strikethrough">Written as on a scroll...yet speak o speak</del>
-      <add place ="superlinear"><metamark function="displacement">&#60;</metamark></add><del rend="strikethrough">And
-      looks of firm defiance, &#x26;</del></line>
-    <line>And looks of <del rend="strikethrough">des</del> firm defiance, &#x26; calm hate</line>
+      </mod> &amp; cold<alt target="#e1-0067.04 #e1-0067.05" mode="excl" weights="0 1"/></line>
+    <line><del rend="strikethrough">Written <add place="superlinear"><del rend="strikethrough">And
+      looks of firm defiance, &amp;</del></add>as on a scroll...yet speak o speak</del>
+      </line>
+    <line>And looks of <del rend="strikethrough">des</del> firm defiance, &amp; calm hate</line>
     <line>And such despair as mocks itself with smiles</line>
-    <line>Written as on a scroll...yet speak&#x2013;o speak..</line>
-    <!--Below the final line on this page there's a long curving line and a mark that almost looks like a comma but clearly isn't; I wasn't sure how to encode those-->
+    <line>Written as on a scroll...yet speak–o speak..</line>
+    <metamark function="separate" rend="line"/>
   </zone>
 </surface>

@@ -5,10 +5,10 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0077" partOf="#ox-ms_shelley_e1"   mith:folio="38r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0077.jp2"/>
   <zone type="library">
-    <line rend="right">38</line>
+    <line>38</line>
   </zone>
   <zone type="main">
-    <line>illustrates them, must be the same.&#8212;</line>
+    <line>illustrates them, must be the same.—</line>
     
     <line><milestone unit="tei:speaker" spanTo="#e1-0077.03"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0077.03"/> As<hi rend="underline">sur</hi>edly <milestone unit="tei:speaker"
@@ -16,19 +16,19 @@
         <del rend="strikethrough">if</del>
         <del rend="strikethrough"><unclear reason="illegible">progress</unclear></del>
         <del rend="strikethrough"><add place="superlinear">in the</add></del>
-        </mod> <add place="sublinear"><hi rend="underline"><unclear reason="illegible">of</unclear> spe</hi>ak of</add></line>
+        </mod> </line>
     <line><del rend="strikethrough">consider<add>ation</add></del><mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear"><unclear reason="illegible">of</unclear></add>
       </mod> any other art<mod>
         <del rend="overwritten">;</del>
-        <add place="intralinear">&#8212;</add>
-      </mod> the same</line>
+        <add place="intralinear">—</add>
+      </mod> <add place="superlinear"><del><unclear reason="illegible">of</unclear> speak</del> of</add> the same</line>
     <line>mode of consideration must be</line>
     <line><unclear reason="illegible">admitted</unclear> with respect to all arts; do</line>
     <line>you desire to hear what I understand</line>
     <line>by this, o Ion? <milestone unit="tei:speaker" spanTo="#e1-0077.04"/><hi rend="underline"
-        >Ion</hi>.<anchor xml:id="e1-0077.04"/>&#8212; Yes, by Jupiter</line>
+        >Ion</hi>.<anchor xml:id="e1-0077.04"/>— Yes, by Jupiter</line>
     <line>o Socrates. I am delighted with listening</line>
     <line/>
     <line>to you <del rend="strikethrough">philosophers</del><mod>
@@ -50,23 +50,21 @@
         <add place="intralinear">t</add>
       </mod>ake cheer <unclear reason="case">H</unclear>ounds</line>
     <milestone unit="tei:l" spanTo="#e1-0077.02"/>
-    <line>Of Hell &#8212; what if the Son of Maia soon</line>
+    <line>Of Hell — what if the Son of Maia soon</line>
     <line rend="indent1">Sh<hi rend="sup">d</hi>. make</line>
     <anchor xml:id="e1-0077.02"/>
     <line>Of <unclear reason="illegible">those</unclear> poems which you recite. <del
         rend="strikethrough"><unclear>&amp;</unclear></del></line>
     <line>I, like an unprofessional &amp; private</line>
     <line>man, can only say that which I</line>
-    <!--<zone type="bottom">-->
-      <line><add><metamark>&#9001;</metamark></add>The contrast would have been completeter if the
-        sentiment</line>
-      <line>had been transposed: but wherefore sacrifize the philoso</line>
-      <line>phical truth, that love however monstrous in its expression</line>
-      <line>is still less worthy of <unclear reason="illegible">horror</unclear> than hatred <unclear
-        reason="illegible">&#8212;</unclear>
-        <del rend="strikethrough"><unclear reason="illegible">the</unclear></del> perhaps in</line>
-      <line><unclear reason="illegible">whatever degree</unclear></line>
-    <!--</zone>-->
+    <line><add><metamark function="unclear" rend="short_vertical_line"/></add>The contrast would have been completeter if the
+      sentiment</line>
+    <line>had been transposed: but wherefore sacrifize the philoso</line>
+    <line>phical truth, that love however monstrous in its expression</line>
+    <line>is still less worthy of <unclear reason="illegible">horror</unclear> than hatred <unclear
+      reason="illegible">—</unclear>
+      <del rend="strikethrough"><unclear reason="illegible">the</unclear></del> perhaps in</line>
+    <line><unclear reason="illegible">whatever degree</unclear></line>
   </zone>
   
 </surface>

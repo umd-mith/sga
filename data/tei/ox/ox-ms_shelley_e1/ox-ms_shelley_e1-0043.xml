@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0043" partOf="#ox-ms_shelley_e1"   mith:folio="21r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0043.jp2"/>
   <zone type="library">
-    <line rend="right">21</line>
+    <line>21</line>
   </zone>
   <zone type="main">
     <line>you not think that you could <mod>
@@ -14,16 +14,12 @@
       </mod></line>
     <line><del rend="strikethrough">respec</del> their discrepancies on the subject</line>
     <line>of your profession, if you understood</line>
-    <line>their agreements?&#8212; <milestone unit="tei:speaker" spanTo="#e1-0043.01"/><hi
+    <line>their agreements?— <milestone unit="tei:speaker" spanTo="#e1-0043.01"/><hi
         rend="underline">Ion</hi><anchor xml:id="e1-0043.01"/> Manifestly.</line>
     <line><milestone unit="tei:speaker" spanTo="#e1-0043.02"/>Soc.<anchor xml:id="e1-0043.02"/> How
       then does it happen</line>
-    <line>that you are possessed of skill<unclear reason="illegible">s</unclear> to</line>
-    <!-- the previous line is overwritten by "that" on the line above. In fact, the previous line is intralinear
-      to the above line, but it was overwritten without the intent to delete. It is an unused option for
-      "and yet" on 20v -->
-    <line xml:id="e1-0043-pu_line_0"><add><hi rend="underline"><milestone unit="tei:seg" spanTo="#e1-0043.08"
-            xml:id="e1-0043.09"/>and even<anchor xml:id="e1-0043.08"/></hi></add></line>
+    <line><add place="intralinear"><hi rend="underline"><milestone xml:id="e1-0043-pu_line_0" unit="tei:seg" spanTo="#e1-0043.08"/>
+      and even<anchor xml:id="e1-0043.08"/></hi></add> that you are possessed of skill<unclear reason="illegible">s</unclear> to</line>
     <line>illustrate Homer &amp; not Hesiod or</line>
     <line>the other poets in an equal degree?</line>
     <line>Are the topics of Homer dissimilar</line>
@@ -60,7 +56,7 @@
       </mod>f<anchor xml:id="e1-0043.04"/>
       <del rend="strikethrough">the</del><alt target="#e1-0043.05 #e1-0043.06" mode="excl"
         weights="1 0"/></line>
-    <line>gods &amp; heroes<unclear reason="illegible">:</unclear>&#8212;are <del
+    <line>gods &amp; heroes<unclear reason="illegible">:</unclear>—are <del
         rend="strikethrough">the</del> not <unclear reason="illegible">these</unclear> the</line>
     <line xml:id="e1-0043-pu_line_1"><add><milestone unit="tei:seg" spanTo="#e1-0043.07" corresp="e1-0042.01"/>mountains<anchor
           xml:id="e1-0043.07"/></add></line>

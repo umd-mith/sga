@@ -5,13 +5,13 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0015" partOf="#ox-ms_shelley_e1"   mith:folio="7r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0015.jp2"/>
   <zone type="library">
-    <line rend="right">7</line>
+    <line>7</line>
   </zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0015.01"/>
     <line rend="center">Chorus of Hours &amp; Spirits</line>
     <anchor xml:id="e1-0015.01"/>
-    <line>Break the dance &amp; scatter the song&#x2014;</line>
+    <line>Break the dance &amp; scatter the song—</line>
     <line>Let some depart &amp; some remain</line>
     <line>Wherever we fly we lead along</line>
     <line>In leashes, like starbeams, soft yet strong</line>
@@ -75,7 +75,7 @@
     <anchor xml:id="e1-0015.06"/>
     <line>Tis the deep music of the rolling world</line>
     <line>Kindling within the strings of the waved air</line>
-    <line>&#xC6;olian modulations</line>
+    <line>Æolian modulations</line>
     <milestone unit="tei:speaker" spanTo="#e1-0015.07"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e1-0015.07"/>

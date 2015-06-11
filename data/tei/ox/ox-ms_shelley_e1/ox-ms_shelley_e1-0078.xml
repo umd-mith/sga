@@ -5,36 +5,26 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0078" partOf="#ox-ms_shelley_e1"   mith:folio="38v" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0078.jp2"/>
   <zone type="main">
-    <line>These shall perform your task <hi rend="underline">37</hi><add place="superlinear">20</add><add place="sublinear">140</add></line>
-    <line>37)37000 <milestone unit="tei:speaker" spanTo="#e1-0078.01"/>1<hi rend="sup"
-        >st</hi>.<anchor xml:id="e1-0078.01"/><hi rend="sup">20</hi><hi rend="underline"
-      >60</hi></line>
-    <line rend="indent4">O mercy<unclear reason="illegible">!</unclear> mercy</line>
-    <line>500</line>
-    <line><hi rend="underline">5,0)00</hi><del rend="strikethrough">0,0</del>
-      <hi rend="underline">500</hi></line>
-    <line><del rend="strikethrough">25</del><del rend="strikethrough">0,</del><hi rend="underline"
-        >000</hi></line>
-    <line>We die with our desire&#8212;drive us not back!</line>
-    <line>69 37260 690</line>
-    <line>10) <hi rend="underline">37260</hi>
+    <line>These shall perform your task</line>
+    <line rend="center"> 
+      <milestone unit="tei:speaker" spanTo="#e1-0078.01"/>1<hi rend="sup"
+        >st</hi>.<anchor xml:id="e1-0078.01"/> <hi rend="sup">20</hi></line>
+    <line rend="indent5">O mercy<unclear reason="illegible">!</unclear> mercy</line>   
+    <line>We die with our desire—drive us not back!</line>    
+    <line rend="center">
       <milestone unit="tei:speaker" spanTo="#e1-0078.02"/>Mercury<anchor xml:id="e1-0078.02"/>
-      <hi rend="underline">54</hi> 37<hi rend="sub">2</hi>460</line>
-    <line>Crouch then in silence.&#8212; 34 Awful Sufferer<unclear reason="illegible"
-      >,</unclear>2760 <hi rend="underline">.20</hi></line>
-    <line/>
-    <line>37,260</line>
-    <line/>
+      </line>
+    <line>Crouch then in silence.— Awful Sufferer<unclear reason="illegible"
+      >,</unclear></line>
     <line>To <mod>
         <del rend="strikethrough">one</del>
         <add place="superlinear">thee</add>
       </mod> unwilling, most unwillingly</line>
     <line>I come<unclear reason="illegible">,</unclear> by the great Father's will driven
       down</line>
-    <line><del rend="strikethrough">20,000</del></line>
-    <line>To execute a doom of new revenge.</line>
+    <line>To execute a doom of new revenge.<add place="superlinear"><del rend="strikethrough">20,000</del></add></line>
     <line>Alas I pity thee, and hate myself</line>
-    <line>That I can do more&#8212; aye from thy sight</line>
+    <line>That I can do more— aye from thy sight</line>
     <line>Returning, for a season, heaven seems hell<unclear reason="illegible">.</unclear></line>
     <line>So thy worn form pursues me night &amp; day,</line>
     <line>Smiling reproach. Wise art thou firm &amp; go&lt;od&gt;</line>
@@ -42,7 +32,7 @@
     <line>Against the Omnipotent, as yon clear lamps</line>
     <line>That measure &amp; divide the weary year<retrace cause="unclear">s</retrace></line>
     <line>From which there is no refuge, long have taught</line>
-    <line>And long must teach &#8212; thy<mod>
+    <line>And long must teach — thy<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">even now </add>
         <del rend="strikethrough"><add place="superlinear">mighty</add></del>
@@ -54,7 +44,49 @@
         <add place="superlinear">the strange might of</add>
       </mod> unimagined pains</line>
     <line>The powers who scheme slow agonies in hell,</line>
-    <line>And my commission is{,} to lead them here</line>
-    <line rend="right"><add><metamark function="count">355</metamark></add></line>
+    <line>And my commission is<unclear>,</unclear> to lead them <add place="sublinear"><metamark function="count">355</metamark></add>here</line>
+  </zone>
+  
+  <zone type="calculation">
+    <line>20</line>
+    <line>37</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line>140</line>
+    <line>60</line>
+    <metamark function="separate" rend="short_line"/>
+  </zone>
+  <zone type="calculation">
+    <line>500</line>
+    <line>500</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line><del rend="strikethrough">250,000</del></line>
+  </zone>
+  <zone type="calculation">
+    <line>37)37000</line>
+    <line><del rend="strikethrough">50)0000</del></line>
+  </zone>
+  <zone type="calculation">
+    <line rend="indent2">37260</line>
+    <line>69</line>
+    <line>10) <hi rend="underline">37260</hi></line>
+  </zone>
+  
+  <zone type="calculation">
+    <line>690</line>
+    <line>54</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line>2760</line>
+    <line>3450</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line>37,260</line>
+  </zone>
+  
+  <zone type="calculation">
+    <line>37260</line>
+    <line>.20</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line>7452,00</line>
+    <metamark function="math_operation" rend="short_line"/>
+    <line>10</line>
   </zone>
 </surface>

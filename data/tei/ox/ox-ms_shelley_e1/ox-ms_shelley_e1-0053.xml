@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0053" partOf="#ox-ms_shelley_e1"   mith:folio="26r" mith:shelfmark="MS. Shelley e. 1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0053.jp2"/>
   <zone type="library">
-    <line rend="right">26</line>
+    <line>26</line>
   </zone>
   <zone type="main">
     <line>arithmetic<retrace cause="unclear">?</retrace>
@@ -52,7 +52,7 @@
     <line><mod>
         <del rend="overwritten"><unclear unit="chars" extent="2"/></del>
         <add place="intralinear">bo</add>
-      </mod>th.&#8212; <milestone unit="tei:speaker" spanTo="#e1-0053.03"/><hi rend="underline"
+      </mod>th.— <milestone unit="tei:speaker" spanTo="#e1-0053.03"/><hi rend="underline"
         >Ion</hi><anchor xml:id="e1-0053.03"/>
       <unclear reason="illegible">T</unclear>he same evidently. <milestone unit="tei:speaker"
         spanTo="#e1-0053.04"/><hi rend="underline">Soc</hi><anchor xml:id="e1-0053.04"/></line>
@@ -69,19 +69,19 @@
     <line>is asserted on the same topic; and</line>
     <line>it is manifest that <del rend="strikethrough"><unclear reason="illegible"
         >if</unclear></del> he <add place="superlinear">who</add> cannot</line>
-    <!-- There are our lines here which are written in pencil and correspond to PU, Shelley
-      added them later and we will encode them later (I have not encoded some of them as speaker
-     designations yet in order to avoid clutter-->
-    <line rend="center"><add>Prometheus</add></line>
-    <line rend="indent3"><add>And wh<mod>
+    <line>judge respecting the falshood or unfitness</line>
+    <line rend="indent1">what is said on a given subject</line>
+    <line>of <del rend="strikethrough">any assertion</del> what <del rend="strikethrough">is
+      said,</del> is</line>
+    
+    <addSpan spanTo="#e1-0053.99"/>
+    <line rend="center">Prometheus</line>
+    <line rend="indent5">And wh<mod>
           <del rend="overwritten">o</del>
           <add place="intralinear">at</add>
-        </mod> art thou</add></line>
-    <line>judge respecting the falshood or unfitness</line>
-    <line><add>O melancholy voice</add></line>
-    <line rend="indent1">what is said on a given subject</line>
-    <line rend="center">The Earth</line>
-    <line>of <del rend="strikethrough">any assertion</del> what <del rend="strikethrough">is
-        said,</del> is</line>
+        </mod> art thou</line>
+    <line>O melancholy voice</line>    
+    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0053.98"/>The Earth<anchor xml:id="e1-0053.98"/></line><anchor xml:id="e1-0053.99"/>
+    
   </zone>
 </surface>
