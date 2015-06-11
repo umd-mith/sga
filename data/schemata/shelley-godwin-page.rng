@@ -3,10 +3,10 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2015-02-02T14:19:34Z. .
-TEI Edition: Version 2.7.0. Last updated on
-	16th September 2014, revision 13036
-TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.7.0/
+Schema generated from ODD source 2015-06-11T13:18:00Z. .
+TEI Edition: Version 2.8.0. Last updated on
+	6th April 2015, revision 13197
+TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
   
 --><!--This work is copyright Trevor Muñoz and Maryland Institute for Technology in the Humanities and licensed under a Creative Commons Attribution 3.0 Unported License.-->
    <define name="sga-pmacro.paraContent">
@@ -152,7 +152,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.7.0/
       <data type="Name"/>
    </define>
    <define name="sga-pdata.enumerated">
-      <ref name="sga-pdata.name"/>
+      <ref name="sga-pdata.word"/>
    </define>
    <define name="sga-patt.ascribed.attributes">
       <ref name="sga-patt.ascribed.attribute.who"/>
@@ -571,8 +571,33 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
          </attribute>
       </optional>
    </define>
+   <define name="sga-patt.global.responsibility.attributes">
+      <ref name="sga-patt.global.responsibility.attribute.cert"/>
+      <ref name="sga-patt.global.responsibility.attribute.resp"/>
+   </define>
+   <define name="sga-patt.global.responsibility.attribute.cert">
+      <optional>
+         <attribute name="cert">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(certainty) signifies the degree of certainty associated with the intervention or interpretation.</a:documentation>
+            <ref name="sga-pdata.certainty"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="sga-patt.global.responsibility.attribute.resp">
+      <optional>
+         <attribute name="resp">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <ref name="sga-pdata.pointer"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
    <define name="sga-patt.editLike.attributes">
       <ref name="sga-patt.dimensions.attributes"/>
+      <ref name="sga-patt.source.attributes"/>
       <ref name="sga-patt.editLike.attribute.evidence"/>
       <ref name="sga-patt.editLike.attribute.instant"/>
    </define>
@@ -607,17 +632,56 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
          </attribute>
       </optional>
    </define>
+   <define name="sga-patt.global.rendition.attributes">
+      <ref name="sga-patt.global.rendition.attribute.rend"/>
+      <ref name="sga-patt.global.rendition.attribute.style"/>
+      <ref name="sga-patt.global.rendition.attribute.rendition"/>
+   </define>
+   <define name="sga-patt.global.rendition.attribute.rend">
+      <optional>
+         <attribute name="rend">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) indicates how the element in question was rendered or presented in the source text.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <ref name="sga-pdata.word"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="sga-patt.global.rendition.attribute.style">
+      <optional>
+         <attribute name="style">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text</a:documentation>
+            <ref name="sga-pdata.text"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="sga-patt.global.rendition.attribute.rendition">
+      <optional>
+         <attribute name="rendition">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a description of the rendering or presentation used for this element in the source text.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <ref name="sga-pdata.pointer"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
    <define name="sga-patt.global.attributes">
+      <ref name="sga-patt.global.rendition.attributes"/>
       <ref name="sga-patt.global.linking.attributes"/>
       <ref name="sga-patt.global.facs.attributes"/>
+      <ref name="sga-patt.global.responsibility.attributes"/>
       <ref name="sga-patt.global.attribute.el-target"/>
       <ref name="sga-patt.global.attribute.att-target"/>
       <ref name="sga-patt.global.attribute.att-value"/>
       <ref name="sga-patt.global.attribute.xmlid"/>
       <ref name="sga-patt.global.attribute.n"/>
-      <ref name="sga-patt.global.attribute.rend"/>
-      <ref name="sga-patt.global.attribute.style"/>
+      <ref name="sga-patt.global.attribute.xmllang"/>
       <ref name="sga-patt.global.attribute.xmlbase"/>
+      <ref name="sga-patt.global.attribute.xmlspace"/>
    </define>
    <define name="sga-patt.global.attribute.el-target">
       <optional>
@@ -659,23 +723,11 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
          </attribute>
       </optional>
    </define>
-   <define name="sga-patt.global.attribute.rend">
+   <define name="sga-patt.global.attribute.xmllang">
       <optional>
-         <attribute name="rend">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) indicates how the element in question was rendered or presented in the source text.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <ref name="sga-pdata.word"/>
-               </oneOrMore>
-            </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="sga-patt.global.attribute.style">
-      <optional>
-         <attribute name="style">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text</a:documentation>
-            <ref name="sga-pdata.text"/>
+         <attribute name="xml:lang">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) indicates the language of the element content using a tag generated according to BCP 47.</a:documentation>
+            <ref name="sga-pdata.language"/>
          </attribute>
       </optional>
    </define>
@@ -684,6 +736,19 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
          <attribute name="xml:base">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a base URI reference with which applications can resolve relative URI references into absolute URI references.</a:documentation>
             <ref name="sga-pdata.pointer"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="sga-patt.global.attribute.xmlspace">
+      <optional>
+         <attribute name="xml:space">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signals an intention about how white space should be managed by applications.</a:documentation>
+            <choice>
+               <value>default</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signals that the application's default white-space processing modes are acceptable</a:documentation>
+               <value>preserve</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the intent that applications preserve all white space</a:documentation>
+            </choice>
          </attribute>
       </optional>
    </define>
@@ -2035,7 +2100,9 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       </choice>
    </define>
    <define name="sga-pmodel.imprintPart">
-      <notAllowed/>
+      <choice>
+         <ref name="sga-pbiblScope"/>
+      </choice>
    </define>
    <define name="sga-pmodel.addressLike">
       <notAllowed/>
@@ -2199,6 +2266,21 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    <define name="sga-pmodel.div1Like">
       <notAllowed/>
    </define>
+   <define name="sga-patt.source.attributes">
+      <ref name="sga-patt.source.attribute.source"/>
+   </define>
+   <define name="sga-patt.source.attribute.source">
+      <optional>
+         <attribute name="source">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a pointer to the bibliographical source from which a quotation or citation is drawn.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <ref name="sga-pdata.pointer"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
    <define name="sga-patt.personal.attributes">
       <ref name="sga-patt.naming.attributes"/>
       <ref name="sga-patt.personal.attribute.full"/>
@@ -2231,7 +2313,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="sga-pforeign">
       <element name="foreign">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a word or phrase as belonging to some language other than that of the surrounding text. [3.3.2.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a word or phrase as belonging to some language other than that of the surrounding text. [3.3.2.1. Foreign Words or Expressions]</a:documentation>
          <ref name="sga-pmacro.phraseSeq"/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -2239,7 +2321,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="sga-pemph">
       <element name="emph">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [3.3.2.2.  3.3.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -2247,19 +2329,24 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="sga-phi">
       <element name="hi">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [3.3.2.2.  3.3.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attribute.el-target"/>
          <ref name="sga-patt.global.attribute.att-target"/>
          <ref name="sga-patt.global.attribute.att-value"/>
          <ref name="sga-patt.global.attribute.xmlid"/>
          <ref name="sga-patt.global.attribute.n"/>
-         <ref name="sga-patt.global.attribute.style"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
          <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
          <ref name="sga-patt.global.linking.attribute.corresp"/>
          <ref name="sga-patt.global.linking.attribute.next"/>
          <ref name="sga-patt.global.linking.attribute.prev"/>
          <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.global.responsibility.attribute.resp"/>
          <attribute name="rend">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
@@ -2286,7 +2373,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="sga-pdesc">
       <element name="desc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description) contains a brief description of the object documented by its parent element, including its intended usage, purpose, or application where this is appropriate. [22.4.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description) contains a brief description of the object documented by its parent element, including its intended usage, purpose, or application where this is appropriate. [22.4.1. Description of Components]</a:documentation>
          <ref name="sga-pmacro.limitedContent"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.translatable.attributes"/>
@@ -2296,7 +2383,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="sga-pterm">
       <element name="term">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.3.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.3.4. Terms, Glosses, Equivalents, and Descriptions]</a:documentation>
          <ref name="sga-pmacro.phraseSeq"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.pointing.attributes"/>
@@ -2309,7 +2396,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
    </define>
    <define name="sga-pgap">
       <element name="gap">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [3.4.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="sga-pmodel.descLike"/>
@@ -2346,19 +2433,24 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="sga-padd">
       <element name="add">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(addition) contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector. [3.4.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(addition) contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attribute.el-target"/>
          <ref name="sga-patt.global.attribute.att-target"/>
          <ref name="sga-patt.global.attribute.att-value"/>
          <ref name="sga-patt.global.attribute.xmlid"/>
          <ref name="sga-patt.global.attribute.n"/>
-         <ref name="sga-patt.global.attribute.style"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
          <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
          <ref name="sga-patt.global.linking.attribute.corresp"/>
          <ref name="sga-patt.global.linking.attribute.next"/>
          <ref name="sga-patt.global.linking.attribute.prev"/>
          <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.global.responsibility.attribute.resp"/>
          <ref name="sga-patt.transcriptional.attributes"/>
          <ref name="sga-patt.typed.attribute.subtype"/>
          <optional>
@@ -2390,19 +2482,23 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="sga-pdel">
       <element name="del">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, or a previous annotator or corrector. [3.4.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attribute.el-target"/>
          <ref name="sga-patt.global.attribute.att-target"/>
          <ref name="sga-patt.global.attribute.att-value"/>
          <ref name="sga-patt.global.attribute.xmlid"/>
          <ref name="sga-patt.global.attribute.n"/>
-         <ref name="sga-patt.global.attribute.style"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
          <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
          <ref name="sga-patt.global.linking.attribute.corresp"/>
          <ref name="sga-patt.global.linking.attribute.next"/>
          <ref name="sga-patt.global.linking.attribute.prev"/>
          <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
          <ref name="sga-patt.transcriptional.attribute.cause"/>
          <ref name="sga-patt.transcriptional.attribute.seq"/>
          <ref name="sga-patt.editLike.attribute.evidence"/>
@@ -2417,6 +2513,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <ref name="sga-patt.ranging.attribute.min"/>
          <ref name="sga-patt.ranging.attribute.max"/>
          <ref name="sga-patt.ranging.attribute.confidence"/>
+         <ref name="sga-patt.source.attribute.source"/>
          <ref name="sga-patt.typed.attributes"/>
          <optional>
             <attribute name="rend">
@@ -2440,7 +2537,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="sga-punclear">
       <element name="unclear">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source. [11.3.3.1.  3.4.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source. [11.3.3.1. Damage, Illegibility, and Supplied Text 3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.editLike.attributes"/>
@@ -2472,7 +2569,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="sga-pname">
       <element name="name">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name, proper noun) contains a proper noun or noun phrase. [3.5.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name, proper noun) contains a proper noun or noun phrase. [3.5.1. Referring Strings]</a:documentation>
          <ref name="sga-pmacro.phraseSeq"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.personal.attributes"/>
@@ -2484,17 +2581,19 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="sga-prs">
       <element name="rs">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. [13.2.1.  3.5.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. [13.2.1. Personal Names 3.5.1. Referring Strings]</a:documentation>
          <ref name="sga-pmacro.phraseSeq"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.naming.attributes"/>
          <ref name="sga-patt.typed.attributes"/>
+         <ref name="sga-patt.source.attributes"/>
          <empty/>
       </element>
    </define>
    <define name="sga-pnum">
       <element name="num">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) contains a number, written in any form. [3.5.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) contains a number, written in any form. [3.5.3. Numbers and
+Measures]</a:documentation>
          <ref name="sga-pmacro.phraseSeq"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.ranging.attributes"/>
@@ -2526,7 +2625,7 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
    </define>
    <define name="sga-pmeasureGrp">
       <element name="measureGrp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(measure group) contains a group of dimensional specifications which relate to the same object, for example the height and width of a manuscript page. [10.3.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(measure group) contains a group of dimensional specifications which relate to the same object, for example the height and width of a manuscript page. [10.3.4. Dimensions]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -2542,7 +2641,8 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
    </define>
    <define name="sga-pdate">
       <element name="date">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a date in any format. [3.5.4.  2.2.4.  2.5.  3.11.2.4.  15.2.3.  13.3.6. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a date in any format. [3.5.4. Dates and Times 2.2.4. Publication, Distribution,
+Licensing, etc. 2.5. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.6. Dates and Times]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -2560,7 +2660,7 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
    </define>
    <define name="sga-pptr">
       <element name="ptr">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.6.  16.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="shelley-godwin-page-ptr-ptrAtts-constraint-1">
@@ -2581,7 +2681,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    </define>
    <define name="sga-pref">
       <element name="ref">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6.  16.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="shelley-godwin-page-ref-refAtts-constraint-2">
@@ -2603,7 +2703,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    </define>
    <define name="sga-plist">
       <element name="list">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains any sequence of items organized as a list. [3.7. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains any sequence of items organized as a list. [3.7. Lists]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -2645,6 +2745,15 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                </group>
             </zeroOrMore>
          </group>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="shelley-godwin-page-list-gloss-list-must-have-labels-constraint-5">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:list[@type='gloss']">
+	              <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.sortable.attributes"/>
          <ref name="sga-patt.typed.attribute.subtype"/>
@@ -2672,7 +2781,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-pitem">
       <element name="item">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains one component of a list. [3.7.  2.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains one component of a list. [3.7. Lists 2.5. The Revision Description]</a:documentation>
          <ref name="sga-pmacro.specialPara"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.sortable.attributes"/>
@@ -2681,11 +2790,12 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-pnote">
       <element name="note">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1.  2.2.6.  3.11.2.8.  9.3.5.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
          <ref name="sga-pmacro.specialPara"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.placement.attributes"/>
          <ref name="sga-patt.pointing.attributes"/>
+         <ref name="sga-patt.source.attributes"/>
          <ref name="sga-patt.typed.attributes"/>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
@@ -2710,7 +2820,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-pindex">
       <element name="index">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(index entry) marks a location to be indexed for whatever purpose. [3.8.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(index entry) marks a location to be indexed for whatever purpose. [3.8.2. Index Entries]</a:documentation>
          <zeroOrMore>
             <group>
                <ref name="sga-pterm"/>
@@ -2732,7 +2842,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-pmedia">
       <element name="media">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of any form of external media such as an audio or video clip etc. [3.9. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of any form of external media such as an audio or video clip etc. [3.9. Graphics and Other Non-textual Components]</a:documentation>
          <zeroOrMore>
             <ref name="sga-pmodel.descLike"/>
          </zeroOrMore>
@@ -2756,7 +2866,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-pgraphic">
       <element name="graphic">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of an inline graphic, illustration, or figure. [3.9. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of an inline graphic, illustration, or figure. [3.9. Graphics and Other Non-textual Components]</a:documentation>
          <zeroOrMore>
             <ref name="sga-pmodel.descLike"/>
          </zeroOrMore>
@@ -2768,7 +2878,8 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-pmilestone">
       <element name="milestone">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.10.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.10.3. Milestone
+Elements]</a:documentation>
          <empty/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.typed.attributes"/>
@@ -2811,7 +2922,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-prespStmt">
       <element name="respStmt">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [3.11.2.2.  2.2.1.  2.2.2.  2.2.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply. May also be used to encode information about individuals or organizations which have played a role in the production or distribution of a bibliographic work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.2. The Edition Statement 2.2.5. The Series Statement]</a:documentation>
          <choice>
             <group>
                <oneOrMore>
@@ -2837,7 +2948,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-presp">
       <element name="resp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [3.11.2.2.  2.2.1.  2.2.2.  2.2.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.2. The Edition Statement 2.2.5. The Series Statement]</a:documentation>
          <ref name="sga-pmacro.phraseSeq.limited"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.canonical.attributes"/>
@@ -2847,7 +2958,7 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="sga-ptitle">
       <element name="title">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a title for any kind of work. [3.11.2.2.  2.2.1.  2.2.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a title for any kind of work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.canonical.attributes"/>
@@ -2879,9 +2990,18 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
          <empty/>
       </element>
    </define>
+   <define name="sga-pbiblScope">
+      <element name="biblScope">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
+         <ref name="sga-pmacro.phraseSeq"/>
+         <ref name="sga-patt.global.attributes"/>
+         <ref name="sga-patt.citing.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="sga-pcitedRange">
       <element name="citedRange">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(cited range) defines the range of cited content, often represented by pages or other units [3.11.2.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(cited range) defines the range of cited content, often represented by pages or other units [3.11.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
          <ref name="sga-pmacro.phraseSeq"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.pointing.attributes"/>
@@ -2891,7 +3011,7 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
    </define>
    <define name="sga-pbibl">
       <element name="bibl">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [3.11.1.  2.2.7.  15.3.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [3.11.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -2915,7 +3035,7 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
    </define>
    <define name="sga-prelatedItem">
       <element name="relatedItem">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [3.11.2.7. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains or references some other bibliographic item which is related to the present one in some specified manner, for example as a constituent or alternative version of it. [3.11.2.7. Related Items]</a:documentation>
          <optional>
             <choice>
                <ref name="sga-pmodel.biblLike"/>
@@ -2934,7 +3054,7 @@ relatedItem element must be empty</sch:report>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-relatedItem-targetorcontent1-constraint-5">
+                  id="shelley-godwin-page-relatedItem-targetorcontent1-constraint-6">
             <rule context="tei:relatedItem">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2956,7 +3076,7 @@ relatedItem element must be empty</sch:report>
    </define>
    <define name="sga-pstage">
       <element name="stage">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.12.2.  3.12.  7.2.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.12.2. Core Tags for Drama 3.12. Passages of Verse or Drama 7.2.4. Stage Directions]</a:documentation>
          <ref name="sga-pmacro.specialPara"/>
          <ref name="sga-patt.ascribed.attributes"/>
          <ref name="sga-patt.global.attributes"/>
@@ -3071,7 +3191,7 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
    </define>
    <define name="sga-psurface">
       <element name="surface">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a written surface as a two-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and transcriptions of the writing within them. [11.1.  11.2.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a written surface as a two-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and transcriptions of the writing within them. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <group>
             <zeroOrMore>
                <ref name="sga-pmodel.glossLike"/>
@@ -3093,12 +3213,17 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
          <ref name="sga-patt.global.attribute.el-target"/>
          <ref name="sga-patt.global.attribute.att-target"/>
          <ref name="sga-patt.global.attribute.att-value"/>
-         <ref name="sga-patt.global.attribute.rend"/>
-         <ref name="sga-patt.global.attribute.style"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
          <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.rend"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
          <ref name="sga-patt.global.linking.attribute.next"/>
          <ref name="sga-patt.global.linking.attribute.prev"/>
          <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.global.responsibility.attribute.resp"/>
          <ref name="sga-patt.coordinated.attribute.start"/>
          <ref name="sga-patt.coordinated.attribute.points"/>
          <ref name="sga-patt.typed.attributes"/>
@@ -3155,7 +3280,7 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
    </define>
    <define name="sga-psurfaceGrp">
       <element name="surfaceGrp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines any kind of useful grouping of written surfaces, for example the recto and verso of a single leaf, which the encoder wishes to treat as a single unit. [11.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines any kind of useful grouping of written surfaces, for example the recto and verso of a single leaf, which the encoder wishes to treat as a single unit. [11.1. Digital Facsimiles]</a:documentation>
          <oneOrMore>
             <choice>
                <ref name="sga-pmodel.global"/>
@@ -3170,7 +3295,7 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
    </define>
    <define name="sga-pzone">
       <element name="zone">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines any two-dimensional area within a surface element. [11.1.  11.2.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines any two-dimensional area within a surface element. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -3199,8 +3324,10 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">For segments of a page where page numbers have been added in one or more original hands; distinct from later additions by librarians/collectors</a:documentation>
                <value>library</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A zone of writing which appears to have been added by librarians/collectors at a later date—often page numbers</a:documentation>
-               <value>bottom</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A zone of writing which is not part of the main text block and appears at the bottom of a page</a:documentation>
+               <value>sketch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A zone identifying a sketch or doodle</a:documentation>
+               <value>calculation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A zone identifying a written calculation</a:documentation>
             </choice>
          </attribute>
          <optional>
@@ -3216,10 +3343,10 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
    </define>
    <define name="sga-paddSpan">
       <element name="addSpan">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also add). [11.3.1.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also add). [11.3.1.4. Additions and Deletions]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-addSpan-spanTo-constraint-6">
+                  id="shelley-godwin-page-addSpan-spanTo-constraint-7">
             <rule context="tei:addSpan">
                <sch:assert xmlns:s="http://www.ascc.net/xml/schematron"
                            xmlns="http://www.tei-c.org/ns/1.0"
@@ -3229,7 +3356,7 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-addSpan-spanTo_fr-constraint-7">
+                  id="shelley-godwin-page-addSpan-spanTo_fr-constraint-8">
             <rule context="tei:addSpan">
                <sch:assert xmlns:s="http://www.ascc.net/xml/schematron"
                            xmlns="http://www.tei-c.org/ns/1.0"
@@ -3248,19 +3375,24 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
    </define>
    <define name="sga-pdamage">
       <element name="damage">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an area of damage to the text witness. [11.3.3.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an area of damage to the text witness. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attribute.el-target"/>
          <ref name="sga-patt.global.attribute.att-target"/>
          <ref name="sga-patt.global.attribute.att-value"/>
          <ref name="sga-patt.global.attribute.xmlid"/>
          <ref name="sga-patt.global.attribute.n"/>
-         <ref name="sga-patt.global.attribute.style"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
          <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
          <ref name="sga-patt.global.linking.attribute.corresp"/>
          <ref name="sga-patt.global.linking.attribute.next"/>
          <ref name="sga-patt.global.linking.attribute.prev"/>
          <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.global.responsibility.attribute.resp"/>
          <ref name="sga-patt.typed.attributes"/>
          <ref name="sga-patt.damaged.attributes"/>
          <optional>
@@ -3281,10 +3413,10 @@ Suggested values include: 1] setting; 2] entrance; 3] exit; 4] business; 5] nove
    </define>
    <define name="sga-pdamageSpan">
       <element name="damageSpan">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(damaged span of text) marks the beginning of a longer sequence of text which is damaged in some way but still legible. [11.3.3.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(damaged span of text) marks the beginning of a longer sequence of text which is damaged in some way but still legible. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-damageSpan-spanTo-constraint-8">
+                  id="shelley-godwin-page-damageSpan-spanTo-constraint-9">
             <rule context="tei:damageSpan">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3293,7 +3425,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-damageSpan-spanTo_fr-constraint-9">
+                  id="shelley-godwin-page-damageSpan-spanTo_fr-constraint-10">
             <rule context="tei:damageSpan">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3309,10 +3441,10 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pdelSpan">
       <element name="delSpan">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deleted span of text) marks the beginning of a longer sequence of text deleted, marked as deleted, or otherwise signaled as superfluous or spurious by an author, scribe, annotator, or corrector. [11.3.1.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deleted span of text) marks the beginning of a longer sequence of text deleted, marked as deleted, or otherwise signaled as superfluous or spurious by an author, scribe, annotator, or corrector. [11.3.1.4. Additions and Deletions]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-delSpan-spanTo-constraint-10">
+                  id="shelley-godwin-page-delSpan-spanTo-constraint-11">
             <rule context="tei:delSpan">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3320,7 +3452,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-delSpan-spanTo_fr-constraint-11">
+                  id="shelley-godwin-page-delSpan-spanTo_fr-constraint-12">
             <rule context="tei:delSpan">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3335,7 +3467,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-phandShift">
       <element name="handShift">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks the beginning of a sequence of text written in a new hand, or the beginning of a scribal stint. [11.3.2.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks the beginning of a sequence of text written in a new hand, or the beginning of a scribal stint. [11.3.2.1. Document Hands]</a:documentation>
          <empty/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.handFeatures.attribute.scribe"/>
@@ -3343,6 +3475,7 @@ The @spanTo attribute of <name/> is required.</assert>
          <ref name="sga-patt.handFeatures.attribute.script"/>
          <ref name="sga-patt.handFeatures.attribute.scriptRef"/>
          <ref name="sga-patt.handFeatures.attribute.scope"/>
+         <ref name="sga-patt.source.attributes"/>
          <attribute name="medium">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
@@ -3368,7 +3501,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-prestore">
       <element name="restore">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates restoration of text to an earlier state by cancellation of an editorial or authorial marking or instruction. [11.3.1.6. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates restoration of text to an earlier state by cancellation of an editorial or authorial marking or instruction. [11.3.1.6. Cancellation of Deletions and Other Markings]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.transcriptional.attributes"/>
@@ -3391,15 +3524,42 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pspace">
       <element name="space">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of a significant space in the copy text. [11.5.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of a significant space in the text. [11.5.1. Space]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="sga-pmodel.descLike"/>
                <ref name="sga-pmodel.certLike"/>
             </choice>
          </zeroOrMore>
-         <ref name="sga-patt.global.attributes"/>
+         <ref name="sga-patt.global.attribute.el-target"/>
+         <ref name="sga-patt.global.attribute.att-target"/>
+         <ref name="sga-patt.global.attribute.att-value"/>
+         <ref name="sga-patt.global.attribute.xmlid"/>
+         <ref name="sga-patt.global.attribute.n"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
+         <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.rend"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
+         <ref name="sga-patt.global.linking.attribute.corresp"/>
+         <ref name="sga-patt.global.linking.attribute.next"/>
+         <ref name="sga-patt.global.linking.attribute.prev"/>
+         <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.typed.attributes"/>
          <ref name="sga-patt.dimensions.attributes"/>
+         <ref name="sga-patt.source.attributes"/>
+         <optional>
+            <attribute name="resp">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) (responsible party) indicates the individual responsible for identifying and measuring the space</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <ref name="sga-pdata.pointer"/>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="dim">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(dimension) indicates whether the space is horizontal or vertical.</a:documentation>
@@ -3416,7 +3576,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-psubst">
       <element name="subst">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(substitution) groups one or more deletions with one or more additions when the combination is to be regarded as a single intervention in the text. [11.3.1.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(substitution) groups one or more deletions with one or more additions when the combination is to be regarded as a single intervention in the text. [11.3.1.5. Substitutions]</a:documentation>
          <oneOrMore>
             <choice>
                <ref name="sga-padd"/>
@@ -3425,7 +3585,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-subst-substContents1-constraint-12">
+                  id="shelley-godwin-page-subst-substContents1-constraint-13">
             <rule context="tei:subst">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3447,6 +3607,7 @@ The @spanTo attribute of <name/> is required.</assert>
          <ref name="sga-patt.ranging.attribute.min"/>
          <ref name="sga-patt.ranging.attribute.max"/>
          <ref name="sga-patt.ranging.attribute.confidence"/>
+         <ref name="sga-patt.source.attribute.source"/>
          <optional>
             <attribute name="hand">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3476,7 +3637,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-psubstJoin">
       <element name="substJoin">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(substitution join) identifies a series of possibly fragmented additions, deletions or other revisions on a manuscript that combine to make up a single intervention in the text [11.3.1.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(substitution join) identifies a series of possibly fragmented additions, deletions or other revisions on a manuscript that combine to make up a single intervention in the text [11.3.1.5. Substitutions]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="sga-pmodel.descLike"/>
@@ -3491,7 +3652,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pline">
       <element name="line">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the transcription of a topographic line in the source document [11.2.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the transcription of a topographic line in the source document [11.2.2. Embedded Transcription]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -3516,12 +3677,17 @@ The @spanTo attribute of <name/> is required.</assert>
          <ref name="sga-patt.global.attribute.att-value"/>
          <ref name="sga-patt.global.attribute.xmlid"/>
          <ref name="sga-patt.global.attribute.n"/>
-         <ref name="sga-patt.global.attribute.style"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
          <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
          <ref name="sga-patt.global.linking.attribute.corresp"/>
          <ref name="sga-patt.global.linking.attribute.next"/>
          <ref name="sga-patt.global.linking.attribute.prev"/>
          <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.global.responsibility.attribute.resp"/>
          <ref name="sga-patt.coordinated.attributes"/>
          <optional>
             <attribute name="rend">
@@ -3533,7 +3699,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-plistTranspose">
       <element name="listTranspose">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a list of transpositions, each of which is indicated at some point in a document typically by means of metamarks. [11.3.4.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a list of transpositions, each of which is indicated at some point in a document typically by means of metamarks. [11.3.4.5. Transpositions]</a:documentation>
          <oneOrMore>
             <ref name="sga-ptranspose"/>
          </oneOrMore>
@@ -3543,11 +3709,51 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pmetamark">
       <element name="metamark">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains or describes any kind of graphic or written signal within a document the function of which is to determine how it should be read rather than forming part of the actual content of the document. [11.3.4.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains or describes any kind of graphic or written signal within a document the function of which is to determine how it should be read rather than forming part of the actual content of the document. [11.3.4.2. Metamarks]</a:documentation>
          <ref name="sga-pmacro.specialPara"/>
          <ref name="sga-patt.spanning.attributes"/>
          <ref name="sga-patt.placement.attributes"/>
-         <ref name="sga-patt.global.attributes"/>
+         <ref name="sga-patt.global.attribute.el-target"/>
+         <ref name="sga-patt.global.attribute.att-target"/>
+         <ref name="sga-patt.global.attribute.att-value"/>
+         <ref name="sga-patt.global.attribute.xmlid"/>
+         <ref name="sga-patt.global.attribute.n"/>
+         <ref name="sga-patt.global.attribute.xmllang"/>
+         <ref name="sga-patt.global.attribute.xmlbase"/>
+         <ref name="sga-patt.global.attribute.xmlspace"/>
+         <ref name="sga-patt.global.rendition.attribute.style"/>
+         <ref name="sga-patt.global.rendition.attribute.rendition"/>
+         <ref name="sga-patt.global.linking.attribute.corresp"/>
+         <ref name="sga-patt.global.linking.attribute.next"/>
+         <ref name="sga-patt.global.linking.attribute.prev"/>
+         <ref name="sga-patt.global.facs.attribute.facs"/>
+         <ref name="sga-patt.global.responsibility.attribute.cert"/>
+         <ref name="sga-patt.global.responsibility.attribute.resp"/>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+Suggested values include: 1] line; 2] short_line; 3] left_bracket_short_line; 4] short_vertical_line; 5] top_left_bracket; 6] caret; 7] left_caret; 8] cross</a:documentation>
+               <choice>
+                  <value>line</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A line, often used to separate content.</a:documentation>
+                  <value>short_line</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A short line, similar to an underline, but often used to separate content, not for emphasis (in which case hi[@rend="underline"] is used</a:documentation>
+                  <value>left_bracket_short_line</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A line wrapping some text starting from the top left corner, then curving to underline the text. Often used to separate content.</a:documentation>
+                  <value>short_vertical_line</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A short vertical line, often used inline to separate words or to indicate insertion.</a:documentation>
+                  <value>top_left_bracket</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A corner bracket located in the top left of a word.</a:documentation>
+                  <value>caret</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A caret pointing upwards. This is often encoded literally in SGA for convenience. This value provides an alternative way of encoding it.</a:documentation>
+                  <value>left_caret</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A caret pointing left.</a:documentation>
+                  <value>cross</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross, often used for displacement. This is often encoded literally in SGA for convenience. This value provides an alternative way of encoding it.</a:documentation>
+                  <data type="Name"/>
+               </choice>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="function">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3568,6 +3774,10 @@ The @spanTo attribute of <name/> is required.</assert>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>alternate</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>unclear</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>math_operation</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Perform a mathematical operation (e.g. a sum). Usually rendered a as line</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -3586,7 +3796,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pmod">
       <element name="mod">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">represents any kind of modification identified within a single document. [11.3.4.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">represents any kind of modification identified within a single document. [11.3.4.1. Generic Modification]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="sga-pmodel.gLike"/>
@@ -3596,7 +3806,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-mod-modContents-constraint-5">
+                  id="shelley-godwin-page-mod-modContents-constraint-6">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3628,7 +3838,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pretrace">
       <element name="retrace">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a sequence of writing which has been retraced, for example by over-inking, to clarify or fix it. [11.3.4.3. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a sequence of writing which has been retraced, for example by over-inking, to clarify or fix it. [11.3.4.3. Fixation and Clarification]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.spanning.attributes"/>
@@ -3638,7 +3848,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-ptranspose">
       <element name="transpose">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes a single textual transposition as an ordered list of at least two pointers specifying the order in which the elements indicated should be re-combined. [11.3.4.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes a single textual transposition as an ordered list of at least two pointers specifying the order in which the elements indicated should be re-combined. [11.3.4.5. Transpositions]</a:documentation>
          <group>
             <ref name="sga-pptr"/>
             <oneOrMore>
@@ -3651,7 +3861,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pg">
       <element name="g">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character or glyph) represents a glyph, or a non-standard character. [5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character or glyph) represents a glyph, or a non-standard character. [5. Characters, Glyphs, and Writing Modes]</a:documentation>
          <text/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.typed.attributes"/>
@@ -3666,7 +3876,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pchar">
       <element name="char">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) provides descriptive information about a character. [5.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) provides descriptive information about a character. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
          <group>
             <optional>
                <ref name="sga-pcharName"/>
@@ -3696,7 +3906,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pcharName">
       <element name="charName">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character name) contains the name of a character, expressed following Unicode conventions. [5.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character name) contains the name of a character, expressed following Unicode conventions. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
          <text/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -3704,7 +3914,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pcharProp">
       <element name="charProp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character property) provides a name and value for some property of the parent character or glyph. [5.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character property) provides a name and value for some property of the parent character or glyph. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
          <group>
             <choice>
                <ref name="sga-punicodeName"/>
@@ -3719,7 +3929,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pglyph">
       <element name="glyph">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character glyph) provides descriptive information about a character glyph. [5.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character glyph) provides descriptive information about a character glyph. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
          <group>
             <optional>
                <ref name="sga-pglyphName"/>
@@ -3749,7 +3959,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pglyphName">
       <element name="glyphName">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character glyph name) contains the name of a glyph, expressed following Unicode conventions for character names. [5.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character glyph name) contains the name of a glyph, expressed following Unicode conventions for character names. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
          <text/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -3757,7 +3967,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-plocalName">
       <element name="localName">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(locally-defined property name) contains a locally defined name for some property. [5.2.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(locally-defined property name) contains a locally defined name for some property. [5.2.1. Character Properties]</a:documentation>
          <text/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -3765,7 +3975,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pmapping">
       <element name="mapping">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character mapping) contains one or more characters which are related to the parent character or glyph in some respect, as specified by the type attribute. [5.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character mapping) contains one or more characters which are related to the parent character or glyph in some respect, as specified by the type attribute. [5.2. Markup Constructs for Representation of Characters and Glyphs]</a:documentation>
          <ref name="sga-pmacro.xtext"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.typed.attributes"/>
@@ -3774,7 +3984,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-punicodeName">
       <element name="unicodeName">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unicode property name) contains the name of a registered Unicode normative or informative property. [5.2.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unicode property name) contains the name of a registered Unicode normative or informative property. [5.2.1. Character Properties]</a:documentation>
          <text/>
          <ref name="sga-patt.global.attributes"/>
          <optional>
@@ -3788,7 +3998,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pvalue">
       <element name="value">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single value for some property, attribute, or other analysis. [5.2.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single value for some property, attribute, or other analysis. [5.2.1. Character Properties]</a:documentation>
          <ref name="sga-pmacro.xtext"/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -3829,10 +4039,10 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-plink">
       <element name="link">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. Links]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-link-linkTargets3-constraint-13">
+                  id="shelley-godwin-page-link-linkTargets3-constraint-14">
             <rule context="tei:link">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3849,7 +4059,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-plinkGrp">
       <element name="linkGrp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(link group) defines a collection of associations or hypertextual links. [16.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(link group) defines a collection of associations or hypertextual links. [16.1. Links]</a:documentation>
          <oneOrMore>
             <choice>
                <ref name="sga-plink"/>
@@ -3863,7 +4073,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-panchor">
       <element name="anchor">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2.  16.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2. Synchronization and Overlap 16.4. Correspondence and Alignment]</a:documentation>
          <empty/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.typed.attributes"/>
@@ -3872,11 +4082,12 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pseg">
       <element name="seg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbitrary segment) represents any segmentation of text below the chunk level. [16.3.  6.2.  7.2.5. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(arbitrary segment) represents any segmentation of text below the chunk level. [16.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.segLike.attributes"/>
          <ref name="sga-patt.typed.attribute.subtype"/>
+         <ref name="sga-patt.source.attributes"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3891,7 +4102,7 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="sga-pjoin">
       <element name="join">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a possibly fragmented segment of text, by pointing at the possibly discontiguous elements which compose it. [16.7. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a possibly fragmented segment of text, by pointing at the possibly discontiguous elements which compose it. [16.7. Aggregation]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="sga-pmodel.descLike"/>
@@ -3899,7 +4110,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="shelley-godwin-page-join-joinTargets3-constraint-14">
+                  id="shelley-godwin-page-join-joinTargets3-constraint-15">
             <rule context="tei:join">
                <assert xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3935,7 +4146,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pjoinGrp">
       <element name="joinGrp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(join group) groups a collection of join elements and possibly pointers. [16.7. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(join group) groups a collection of join elements and possibly pointers. [16.7. Aggregation]</a:documentation>
          <group>
             <zeroOrMore>
                <ref name="sga-pmodel.glossLike"/>
@@ -3960,7 +4171,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-palt">
       <element name="alt">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(alternation) identifies an alternation or a set of choices among elements or passages. [16.8. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(alternation) identifies an alternation or a set of choices among elements or passages. [16.8. Alternation]</a:documentation>
          <empty/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.pointing.attribute.targetLang"/>
@@ -4006,7 +4217,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pfigure">
       <element name="figure">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups elements representing or containing graphic information such as an illustration, formula, or figure. [14.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups elements representing or containing graphic information such as an illustration, formula, or figure. [14.4. Specific Elements for Graphic Images]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="sga-pmodel.headLike"/>
@@ -4025,7 +4236,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pfigDesc">
       <element name="figDesc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of figure) contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it. [14.4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of figure) contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it. [14.4. Specific Elements for Graphic Images]</a:documentation>
          <ref name="sga-pmacro.limitedContent"/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -4033,7 +4244,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pbody">
       <element name="body">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. Default Text Structure]</a:documentation>
          <group>
             <zeroOrMore>
                <ref name="sga-pmodel.global"/>
@@ -4151,7 +4362,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pdiv">
       <element name="div">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text division) contains a subdivision of the front, body, or back of a text. [4.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text division) contains a subdivision of the front, body, or back of a text. [4.1. Divisions of the Body]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -4210,7 +4421,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-ptrailer">
       <element name="trailer">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a closing title or footer appearing at the end of a division of a text. [4.2.4.  4.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a closing title or footer appearing at the end of a division of a text. [4.2.4. Content of Textual Divisions 4.2. Elements Common to All Divisions]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -4228,7 +4439,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pdateline">
       <element name="dateline">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer. [4.2.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a brief description of the place, date, time, etc. of production of a letter, newspaper story, or other work, prefixed or suffixed to it as a kind of heading or trailer. [4.2.2. Openers and Closers]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -4243,7 +4454,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-popener">
       <element name="opener">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups together dateline, byline, salutation, and similar phrases appearing as a preliminary group at the start of a division, especially of a letter. [4.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups together dateline, byline, salutation, and similar phrases appearing as a preliminary group at the start of a division, especially of a letter. [4.2. Elements Common to All Divisions]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -4261,7 +4472,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pcloser">
       <element name="closer">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2.  4.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups together salutations, datelines, and similar phrases appearing as a final group at the end of a division, especially of a letter. [4.2.2. Openers and Closers 4.2. Elements Common to All Divisions]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -4279,7 +4490,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-psalute">
       <element name="salute">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(salutation) contains a salutation or greeting prefixed to a foreword, dedicatory epistle, or other division of a text, or the salutation in the closing of a letter, preface, etc. [4.2.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(salutation) contains a salutation or greeting prefixed to a foreword, dedicatory epistle, or other division of a text, or the salutation in the closing of a letter, preface, etc. [4.2.2. Openers and Closers]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -4287,7 +4498,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-psigned">
       <element name="signed">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text. [4.2.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text. [4.2.2. Openers and Closers]</a:documentation>
          <ref name="sga-pmacro.paraContent"/>
          <ref name="sga-patt.global.attributes"/>
          <empty/>
@@ -4295,7 +4506,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-ppostscript">
       <element name="postscript">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a postscript, e.g. to a letter. [4.2. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a postscript, e.g. to a letter. [4.2. Elements Common to All Divisions]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -4327,7 +4538,7 @@ You must supply at least two values for @target on <name/>
    </define>
    <define name="sga-pc">
       <element name="c">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) represents a character. [17.1. ]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(character) represents a character. [17.1. Linguistic Segment Categories]</a:documentation>
          <ref name="sga-pmacro.xtext"/>
          <ref name="sga-patt.global.attributes"/>
          <ref name="sga-patt.segLike.attributes"/>

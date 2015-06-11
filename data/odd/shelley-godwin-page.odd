@@ -268,7 +268,7 @@
                             descriptive attributes to record their placement on the page. This
                             information will be supplied by coordinates when the transcriptions and
                             page images are linked.</p>
-                        <p>SGA does use <att>@type</att> on <tag>zone</tag> with a controlled list
+                        <p>SGA does use <att>type</att> on <tag>zone</tag> with a controlled list
                             of descriptive values such as <q>top</q>, <q>pagination</q>,
                             <q>main</q>, etc. These are most for the benefit of processing tools and
                             are secondary to the coordinates for positioning a zone with respect to
@@ -353,10 +353,6 @@
                         <!-- Class-level modifications -->
                     <classSpec ident="att.global" type="atts" mode="change">
                         <attList>
-                            <attDef ident="xml:lang" mode="delete"/>
-                            <!--<attDef ident="xml:base" mode="delete"/>-->
-                            <attDef ident="xml:space" mode="delete"/>
-                            <attDef ident="rendition" mode="delete"/>
                             <attDef ident="el-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
                                 <desc>A convenience attribute for indicating what text-centric
                                     element a document-centric element should be transformed
@@ -685,9 +681,11 @@
                                             librarians/collectors at a later date—often page
                                             numbers</desc>
                                     </valItem>
-                                    <valItem ident="bottom">
-                                        <desc>A zone of writing which is not part of the main text
-                                            block and appears at the bottom of a page</desc>
+                                    <valItem ident="sketch">
+                                        <desc>A zone identifying a sketch or doodle</desc>
+                                    </valItem>
+                                    <valItem ident="calculation">
+                                        <desc>A zone identifying a written calculation</desc>
                                     </valItem>
                                 </valList>
                             </attDef>
@@ -706,6 +704,42 @@
                                     <valItem ident="transpose"/>
                                     <valItem ident="sequence"/>
                                     <valItem ident="alternate"/>
+                                    <valItem ident="unclear"/>
+                                    <valItem ident="math_operation">
+                                        <desc>Perform a mathematical operation (e.g. a sum). Usually rendered a as line</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rend" mode="replace">
+                                <valList type="semi" mode="replace">
+                                    <valItem ident="line">
+                                        <desc>A line, often used to separate content.</desc>
+                                    </valItem>
+                                    <valItem ident="short_line">
+                                        <desc>A short line, similar to an underline, but often used to
+                                        separate content, not for emphasis (in which case hi[@rend="underline"] is used</desc>
+                                    </valItem>
+                                    <valItem ident="left_bracket_short_line">
+                                        <desc>A line wrapping some text starting from the top left corner, then curving
+                                            to underline the text. Often used to separate content.</desc>
+                                    </valItem>
+                                    <valItem ident="short_vertical_line">
+                                        <desc>A short vertical line, often used inline to separate words or to indicate insertion.</desc>
+                                    </valItem>
+                                    <valItem ident="top_left_bracket">
+                                        <desc>A corner bracket located in the top left of a word.</desc>
+                                    </valItem>
+                                    <valItem ident="caret">
+                                        <desc>A caret pointing upwards. This is often encoded literally in SGA for convenience.
+                                        This value provides an alternative way of encoding it.</desc>
+                                    </valItem>
+                                    <valItem ident="left_caret">
+                                        <desc>A caret pointing left.</desc>
+                                    </valItem>
+                                    <valItem ident="cross">
+                                        <desc>A cross, often used for displacement. This is often encoded literally in SGA for convenience.
+                                            This value provides an alternative way of encoding it.</desc>
+                                    </valItem>
                                 </valList>
                             </attDef>
                             <!--<attDef ident="target">
@@ -832,7 +866,7 @@
                     
                     <specGrpRef target="#modules"/>
                     <moduleRef key="core"
-                        except="abbr addrLine address analytic author biblScope biblStruct 
+                        except="abbr addrLine address analytic author biblStruct 
                         binaryObject cb choice cit distinct divGen editor email expan gb gloss 
                         head headItem headLabel imprint l label lb listBibl lg measure 
                         meeting mentioned monogr p pb postBox postCode pubPlace publisher 
