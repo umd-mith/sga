@@ -7,29 +7,32 @@
   <zone type="library"><line rend="right">35</line></zone>
   <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>Come, be happy, sit near <mod>
+    <space dim="vertical" unit="lines" extent="6"/>
+    <line rend="indent1">Come, be happy, sit near <mod>
         <del rend="strikethrough">b<unclear reason="illegible">y</unclear></del>
       </mod> me</line>
-    <line>Shadow vested <mod>
+    <line rend="indent1">Shadow vested <mod>
         <del rend="overwritten">m</del>
         <add place="intralinear">M</add>
       </mod>isery!</line>
-    <line>Coy unwilling silent bride</line>
+    <line rend="indent1">Coy unwilling silent bride</line>
     <line rend="indent1">Mourning in thy robe of pride,</line>
     <line rend="indent1">Desolation deified&#8212;</line>
-    <line>Come be happy&#8212; sit near me</line>
-    <line>Sad as I may seem to thee</line>
-    <line>I am merrier yet than thou&#8212;</line>
+    <space dim="vertical" unit="lines" extent="1" />
+    <line rend="indent1">Come be happy&#8212; sit near me</line>
+    <line rend="indent1">Sad as I may seem to thee</line>
+    <line rend="indent1">I am merrier yet than thou&#8212;</line>
     <line rend="indent1"><mod>
         <del rend="overwritten">W</del>
         <add place="intralinear">L</add>
       </mod>ady, whose imperial brow</line>
     <line rend="indent1">Is endiademed with woe&#8212;</line>
-    <line>Misery! we have known each other</line>
-    <line><mod>
+    <space dim="vertical" unit="lines" extent="1" />
+    <line rend="indent1">Misery! we have known each other</line>
+    <line rend="indent1"><mod>
         <del rend="overwritten">S</del>
         <add place="intralinear">L</add>
       </mod>ike a sister &amp; a brother</line>
-    <line>Living in the same <del rend="strikethrough">dre</del> lone home</line>
+    <line rend="indent1">Living in the same <del rend="strikethrough">dre</del> lone home</line>
   </zone>
 </surface>
