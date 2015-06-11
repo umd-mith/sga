@@ -798,7 +798,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # Add alignment to interlinear additions, if present
             if prev1.hasClass('above-line')
               prev1.data
-                  'align': model.get("align")
+                  'align_addition': 'with_below'
 
           if model.get("indent")?
             @currentLineEl.data
@@ -807,7 +807,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             # Add indentation to interlinear additions, if present            
             if prev1.hasClass('above-line')
               prev1.data
-                  'indent': model.get("indent")
+                  'align_addition': 'with_below'
 
           # Only now overwrite the @currentLineEl variable
           # and add a new line container that will be populated at the next run of addOne()
@@ -848,6 +848,21 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             l.css
               'padding-left': (w * ind) / 10 + "em"
         )
+        # Now align additions with their main line
+        a = @$el.find('div').filter(->
+          return $(this).data('align_addition')
+        ).each(->
+          l = $(this)
+          where = l.data('align_addition')
+          if where == 'with_below'
+            padding = l.next().css('padding-left')
+            l.css
+              'padding-left': padding
+          else 
+            padding = l.prev().css('padding-left')
+            l.css
+              'padding-left': padding
+        )
         
 
       # Update scrollbar styling if plugin exists
@@ -861,7 +876,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @$el.css 'display', 'inline-block'
       @$el.text @model.get "text"
       @$el.addClass @model.get("type").join(" ")
-      @$el.addClass @model.get("id")
 
       icss = @model.get "css"
       if icss? and not /^\s*$/.test(icss) then @$el.attr "style", icss
