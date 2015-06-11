@@ -7,9 +7,9 @@
   <zone type="library">
     <line rend="right">37</line></zone>
   <zone type="main" corresp="#e2-0074.03">
-    <metamark function="displacement">&#60;</metamark>
-    <milestone unit="tei:stage" spanTo="#e2-0075.01"/>
-    <line><del rend="unmarked">ente</del><del rend="strikethrough">r two young</del>
+    <line><metamark function="displacement">&#60;</metamark><milestone unit="tei:stage" spanTo="#e2-0075.01"/>
+      <space dim="horizontal" unit="chars" extent="10"></space>
+      <del rend="unmarked">ente</del><del rend="strikethrough">r two young</del>
       <del rend="strikethrough"><hi rend="underline">female</hi></del>
       <del rend="unmarked">Fa<mod>
           <del rend="overwritten">wns</del>
@@ -34,14 +34,13 @@
     <milestone unit="tei:speaker" spanTo="#e2-0075.03"/>
     <line rend="center">2<hi rend="sup">d</hi>. Faun</line>
     <anchor xml:id="e2-0075.03"/>
-    <line rend="indent5">'Tis hard to tell&#8212;</line>
+    <line rend="indent7">'Tis hard to tell&#8212;</line>
     <line>I have heard those more skilled in spirits say</line>
     <line>The bubbles which the enchantment of the sun</line>
     <line>Sucks from the pale faint water-flowers, that pave</line>
     <line>The oozy bottom of clear lakes &amp; pools</line>
     <line>Are the pavilions where such dwell, &amp; float</line>
     <line>Under the green &amp; golden atmosphere</line>
-    <line>tide</line>
     <line>Which <unclear reason="illegible">the</unclear> noon<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">tide</add>
@@ -57,14 +56,15 @@
       <unclear reason="illegible">,</unclear><alt target="#e2-0075.08 #e2-0075.09" mode="excl"
         weights="0 1"/></line>
     <line>Ascends to flow like meteors through the night <unclear>&#8212;</unclear></line>
-    <line>They ride on <del rend="strikethrough">it</del>
+    <line><mod><del rend="unmarked">They rein</del><add place="superlinear">They ride on 
+      <del rend="strikethrough">it</del>
       <del rend="strikethrough">&amp;</del>
-      <del rend="strikethrough"><unclear reason="illegible">their</unclear></del> &amp; in
-      fire</line>
-    <line rend="indent1">They rein <del rend="strikethrough">its</del> their headlong speed, &amp;
-      glide <del rend="strikethrough">with it</del></line>
-    <line rend="indent2">And bow thier burning crests</line>
-    <line rend="indent1"><mod>
+      <del rend="strikethrough"><unclear reason="illegible">their</unclear></del> &amp;</add>
+      <add place="sublinear">And bow thier burning crests</add>
+    </mod>
+    <del rend="strikethrough">its</del> their headlong speed, &amp; glide 
+      <mod><del rend="strikethrough">with it</del><add place="superlinear">in fire</add></mod></line>  
+    <line><mod>
         <del rend="strikethrough">If</del>
         <del rend="strikethrough">Into</del>
         <add place="sublinear">Under</add>
