@@ -42,72 +42,78 @@
                         <idno type="Bod">MS. Shelley e. 1</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem class="#dramatis_personae"
-                            xml:id="ox-ms_prometheus_unbound_dramatis_personae">
-                            <locusGrp>
-                                <locus target="#ox-ms_shelley_e1-0037"/>
-                            </locusGrp>
+                        <msItem class="#work">
                             <bibl status="fair_copy">
-                                <title>Dramatis Personae</title>
+                                <author>Percy Shelley</author>
+                                <title>Prometheus Unbound</title>
                             </bibl>
-                        </msItem>
-                        <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_a">
-                            <bibl status="fair_copy">
-                                <title>Act I</title>
-                                <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
-                            </bibl>
-                            <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1">
+                            <msItem class="#dramatis_personae"
+                                xml:id="ox-ms_prometheus_unbound_dramatis_personae">
                                 <locusGrp>
-                                    <locus target="#ox-ms_shelley_e1-0038" /> 
-                                    <locus target="#e1-0039-pu_line_0"/> 
-                                    <locus target="#ox-ms_shelley_e1-0040 
-                                                   #ox-ms_shelley_e1-0041 
-                                                   #ox-ms_shelley_e1-0042" /> 
-                                    <locus target="#e1-0043-pu_line_0 #e1-0043-pu_line_1"/> 
-                                    <locus target="#ox-ms_shelley_e1-0044"/> 
-                                    <locus target="#ox-ms_shelley_e1-0046 
-                                                    #ox-ms_shelley_e1-0047 
-                                                    #ox-ms_shelley_e1-0048 
-                                                    #ox-ms_shelley_e1-0049 
-                                                    #ox-ms_shelley_e1-0050" /> 
-                                    <locus target="#ox-ms_shelley_e1-0052
-                                                   #ox-ms_shelley_e1-0053
-                                                   #ox-ms_shelley_e1-0054
-                                                   #ox-ms_shelley_e1-0055
-                                                   #ox-ms_shelley_e1-0056" /> 
-                                    <locus target="#ox-ms_shelley_e1-0058" /> 
-                                    <locus target="#ox-ms_shelley_e1-0060" /> 
-                                    <locus target="#ox-ms_shelley_e1-0062" />
-                                    <locus target="#ox-ms_shelley_e1-0064 
-                                                   #ox-ms_shelley_e1-0065
-                                                   #ox-ms_shelley_e1-0066
-                                                   #ox-ms_shelley_e1-0067
-                                                   #ox-ms_shelley_e1-0068" />
-                                    <locus target="#ox-ms_shelley_e1-0070"/>
-                                    <locus target="#ox-ms_shelley_e1-0072" />
-                                    <locus target="#ox-ms_shelley_e1-0074" /> 
-                                    <locus target="#e1-0075-pu_line_0" /> 
-                                    <locus target="#ox-ms_shelley_e1-0076 
-                                                   #ox-ms_shelley_e1-0077 
-                                                   #ox-ms_shelley_e1-0078" /> 
-                                    <locus target="#ox-ms_shelley_e1-0080
-                                                   #ox-ms_shelley_e1-0081
-                                                   #ox-ms_shelley_e1-0082
-                                                   #ox-ms_shelley_e1-0083 
-                                                   #ox-ms_shelley_e1-0084 
-                                                   #ox-ms_shelley_e1-0085 
-                                                   #ox-ms_shelley_e1-0086" />
-                                    <locus target="#ox-ms_shelley_e1-0088"/> 
-                                    <locus target="#ox-ms_shelley_e1-0090"/> 
-                                    <locus target="#ox-ms_shelley_e1-0092" /> 
-                                    <locus target="#ox-ms_shelley_e1-0094"/>
-
+                                    <locus target="#ox-ms_shelley_e1-0037"/>
                                 </locusGrp>
                                 <bibl status="fair_copy">
-                                    <title>Scene 1</title>
-                                </bibl>                                
+                                    <title>Dramatis Personae</title>
+                                </bibl>
                             </msItem>
-                                                        
+                            <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_a">
+                                <bibl status="fair_copy">
+                                    <title>Act I</title>
+                                    <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
+                                </bibl>
+                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1">
+                                    <locusGrp>
+                                        <locus target="#ox-ms_shelley_e1-0038" /> 
+                                        <locus target="#e1-0039-pu_line_0"/> 
+                                        <locus target="#ox-ms_shelley_e1-0040 
+                                                       #ox-ms_shelley_e1-0041 
+                                                       #ox-ms_shelley_e1-0042" /> 
+                                        <locus target="#e1-0043-pu_line_0 #e1-0043-pu_line_1"/> 
+                                        <locus target="#ox-ms_shelley_e1-0044"/> 
+                                        <locus target="#ox-ms_shelley_e1-0046 
+                                                        #ox-ms_shelley_e1-0047 
+                                                        #ox-ms_shelley_e1-0048 
+                                                        #ox-ms_shelley_e1-0049 
+                                                        #ox-ms_shelley_e1-0050" /> 
+                                        <locus target="#ox-ms_shelley_e1-0052
+                                                       #ox-ms_shelley_e1-0053
+                                                       #ox-ms_shelley_e1-0054
+                                                       #ox-ms_shelley_e1-0055
+                                                       #ox-ms_shelley_e1-0056" /> 
+                                        <locus target="#ox-ms_shelley_e1-0058" /> 
+                                        <locus target="#ox-ms_shelley_e1-0060" /> 
+                                        <locus target="#ox-ms_shelley_e1-0062" />
+                                        <locus target="#ox-ms_shelley_e1-0064 
+                                                       #ox-ms_shelley_e1-0065
+                                                       #ox-ms_shelley_e1-0066
+                                                       #ox-ms_shelley_e1-0067
+                                                       #ox-ms_shelley_e1-0068" />
+                                        <locus target="#ox-ms_shelley_e1-0070"/>
+                                        <locus target="#ox-ms_shelley_e1-0072" />
+                                        <locus target="#ox-ms_shelley_e1-0074" /> 
+                                        <locus target="#e1-0075-pu_line_0" /> 
+                                        <locus target="#ox-ms_shelley_e1-0076 
+                                                       #ox-ms_shelley_e1-0077 
+                                                       #ox-ms_shelley_e1-0078" /> 
+                                        <locus target="#ox-ms_shelley_e1-0080
+                                                       #ox-ms_shelley_e1-0081
+                                                       #ox-ms_shelley_e1-0082
+                                                       #ox-ms_shelley_e1-0083 
+                                                       #ox-ms_shelley_e1-0084 
+                                                       #ox-ms_shelley_e1-0085 
+                                                       #ox-ms_shelley_e1-0086" />
+                                        <locus target="#ox-ms_shelley_e1-0088"/> 
+                                        <locus target="#ox-ms_shelley_e1-0090"/> 
+                                        <locus target="#ox-ms_shelley_e1-0092" /> 
+                                        <locus target="#ox-ms_shelley_e1-0094"/>
+    
+                                    </locusGrp>
+                                    <bibl status="fair_copy">
+                                        <title>Scene 1</title>
+                                    </bibl>                                
+                                </msItem>
+                                                            
+                            </msItem>
                         </msItem>
 
                     </msContents>
@@ -124,37 +130,43 @@
                         <idno type="Bod">MS. Shelley e. 2</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_b">
-                            <locusGrp>
-                                <locus target="#ox-ms_shelley_e2-0004"/>
-                                <locus target="#ox-ms_shelley_e2-0006 
-                                               #ox-ms_shelley_e2-0007
-                                               #ox-ms_shelley_e2-0008"/> 
-                                <locus target="#ox-ms_shelley_e2-0010"/> 
-                                <locus target="#ox-ms_shelley_e2-0012 
-                                               #ox-ms_shelley_e2-0013 
-                                               #ox-ms_shelley_e2-0014"/> 
-                                <locus target="#ox-ms_shelley_e2-0017"/>
-                                <locus target="#ox-ms_shelley_e2-0016"/> 
-                                <locus target="#ox-ms_shelley_e2-0018"/>
-                                <locus target="#ox-ms_shelley_e2-0020"/>
-                                <locus target="#ox-ms_shelley_e2-0022"/>
-                                <locus target="#ox-ms_shelley_e2-0024"/> 
-                                <locus target="#ox-ms_shelley_e2-0026"/> 
-                                <locus target="#ox-ms_shelley_e2-0028"/>
-                                <locus target="#ox-ms_shelley_e2-0030"/>
-                                <locus target="#ox-ms_shelley_e2-0032"/>
-                                <locus target="#ox-ms_shelley_e2-0034 
-                                               #ox-ms_shelley_e2-0035
-                                               #ox-ms_shelley_e2-0036"/>
-                                <locus target="#ox-ms_shelley_e2-0038"/>
-                                <locus target="#ox-ms_shelley_e2-0040"/>
-                                <locus target="#ox-ms_shelley_e2-0042"/>
-                            </locusGrp>
+                        <msItem class="#work">
                             <bibl status="fair_copy">
-                                <title>Act I</title>
-                                <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
+                                <author>Percy Shelley</author>
+                                <title>Prometheus Unbound</title>
                             </bibl>
+                            <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_b">
+                                <locusGrp>
+                                    <locus target="#ox-ms_shelley_e2-0004"/>
+                                    <locus target="#ox-ms_shelley_e2-0006 
+                                        #ox-ms_shelley_e2-0007
+                                        #ox-ms_shelley_e2-0008"/> 
+                                    <locus target="#ox-ms_shelley_e2-0010"/> 
+                                    <locus target="#ox-ms_shelley_e2-0012 
+                                        #ox-ms_shelley_e2-0013 
+                                        #ox-ms_shelley_e2-0014"/> 
+                                    <locus target="#ox-ms_shelley_e2-0017"/>
+                                    <locus target="#ox-ms_shelley_e2-0016"/> 
+                                    <locus target="#ox-ms_shelley_e2-0018"/>
+                                    <locus target="#ox-ms_shelley_e2-0020"/>
+                                    <locus target="#ox-ms_shelley_e2-0022"/>
+                                    <locus target="#ox-ms_shelley_e2-0024"/> 
+                                    <locus target="#ox-ms_shelley_e2-0026"/> 
+                                    <locus target="#ox-ms_shelley_e2-0028"/>
+                                    <locus target="#ox-ms_shelley_e2-0030"/>
+                                    <locus target="#ox-ms_shelley_e2-0032"/>
+                                    <locus target="#ox-ms_shelley_e2-0034 
+                                        #ox-ms_shelley_e2-0035
+                                        #ox-ms_shelley_e2-0036"/>
+                                    <locus target="#ox-ms_shelley_e2-0038"/>
+                                    <locus target="#ox-ms_shelley_e2-0040"/>
+                                    <locus target="#ox-ms_shelley_e2-0042"/>
+                                </locusGrp>
+                                <bibl status="fair_copy">
+                                    <title>Act I</title>
+                                    <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
+                                </bibl>
+                            </msItem>
                         </msItem>
                     </msContents>
                     <physDesc>

@@ -42,48 +42,55 @@
                         <idno type="Bod">MS. Shelley e. 1</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_a">
-                            <locusGrp>
-                                <locus target="#ox-ms_shelley_e1-0005
-                                               #ox-ms_shelley_e1-0006 
-                                               #ox-ms_shelley_e1-0007 
-                                               #ox-ms_shelley_e1-0008 
-                                               #ox-ms_shelley_e1-0009 
-                                               #ox-ms_shelley_e1-0010 
-                                               #ox-ms_shelley_e1-0011 
-                                               #ox-ms_shelley_e1-0012 
-                                               #ox-ms_shelley_e1-0013 
-                                               #ox-ms_shelley_e1-0014 
-                                               #ox-ms_shelley_e1-0015 
-                                               #ox-ms_shelley_e1-0016 
-                                               #ox-ms_shelley_e1-0017 
-                                               #ox-ms_shelley_e1-0018 
-                                               #ox-ms_shelley_e1-0019 
-                                               #ox-ms_shelley_e1-0020 
-                                               #ox-ms_shelley_e1-0021 
-                                               #ox-ms_shelley_e1-0022 
-                                               #ox-ms_shelley_e1-0023 
-                                               #ox-ms_shelley_e1-0024 
-                                               #ox-ms_shelley_e1-0025 
-                                               #ox-ms_shelley_e1-0026 
-                                               #ox-ms_shelley_e1-0027 
-                                               #ox-ms_shelley_e1-0028"/> 
-                                <locus target="#ox-ms_shelley_e1-0045"/>
-                                <locus target="#ox-ms_shelley_e1-0051"/>
-                                <locus target="#ox-ms_shelley_e1-0057"/>
-                                <locus target="#ox-ms_shelley_e1-0059"/>
-                                <locus target="#ox-ms_shelley_e1-0061"/>
-                                <locus target="#ox-ms_shelley_e1-0063"/>
-                                <locus target="#ox-ms_shelley_e1-0069"/>
-                                <locus target="#ox-ms_shelley_e1-0071"/>
-                                <locus target="#ox-ms_shelley_e1-0073"/>
-                                
-                            </locusGrp>
-                            <bibl>
-                                <title>Act IV</title>
-                                <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
+                        <msItem class="#work">
+                            <bibl status="fair_copy">
+                                <author>Percy Shelley</author>
+                                <title>Prometheus Unbound</title>
                             </bibl>
+                            <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_a">
+                                <locusGrp>
+                                    <locus target="#ox-ms_shelley_e1-0005
+                                        #ox-ms_shelley_e1-0006 
+                                        #ox-ms_shelley_e1-0007 
+                                        #ox-ms_shelley_e1-0008 
+                                        #ox-ms_shelley_e1-0009 
+                                        #ox-ms_shelley_e1-0010 
+                                        #ox-ms_shelley_e1-0011 
+                                        #ox-ms_shelley_e1-0012 
+                                        #ox-ms_shelley_e1-0013 
+                                        #ox-ms_shelley_e1-0014 
+                                        #ox-ms_shelley_e1-0015 
+                                        #ox-ms_shelley_e1-0016 
+                                        #ox-ms_shelley_e1-0017 
+                                        #ox-ms_shelley_e1-0018 
+                                        #ox-ms_shelley_e1-0019 
+                                        #ox-ms_shelley_e1-0020 
+                                        #ox-ms_shelley_e1-0021 
+                                        #ox-ms_shelley_e1-0022 
+                                        #ox-ms_shelley_e1-0023 
+                                        #ox-ms_shelley_e1-0024 
+                                        #ox-ms_shelley_e1-0025 
+                                        #ox-ms_shelley_e1-0026 
+                                        #ox-ms_shelley_e1-0027 
+                                        #ox-ms_shelley_e1-0028"/> 
+                                    <locus target="#ox-ms_shelley_e1-0045"/>
+                                    <locus target="#ox-ms_shelley_e1-0051"/>
+                                    <locus target="#ox-ms_shelley_e1-0057"/>
+                                    <locus target="#ox-ms_shelley_e1-0059"/>
+                                    <locus target="#ox-ms_shelley_e1-0061"/>
+                                    <locus target="#ox-ms_shelley_e1-0063"/>
+                                    <locus target="#ox-ms_shelley_e1-0069"/>
+                                    <locus target="#ox-ms_shelley_e1-0071"/>
+                                    <locus target="#ox-ms_shelley_e1-0073"/>
+                                    
+                                </locusGrp>
+                                <bibl>
+                                    <title>Act IV</title>
+                                    <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
+                                </bibl>
+                            </msItem>
                         </msItem>
+                        
                     </msContents>
                     <physDesc>
                         <handDesc>
@@ -98,21 +105,28 @@
                         <idno type="Bod">MS. Shelley e. 3</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_b">
-                            <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1">
-                                <locusGrp>
-                                    <locus target="#e3-0079-pu_line_1
-                                                   #e3-0079-pu_line_2"/>
-                                </locusGrp>
+                        <msItem class="#work">
+                            <bibl status="fair_copy">
+                                <author>Percy Shelley</author>
+                                <title>Prometheus Unbound</title>
+                            </bibl>
+                            <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_b">
+                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1">
+                                    <locusGrp>
+                                        <locus target="#e3-0079-pu_line_1
+                                            #e3-0079-pu_line_2"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 1</title>
+                                    </bibl>
+                                </msItem>
                                 <bibl>
-                                    <title>Scene 1</title>
+                                    <title>Act IV</title>
+                                    <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
                                 </bibl>
                             </msItem>
-                            <bibl>
-                                <title>Act IV</title>
-                                <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
-                            </bibl>
                         </msItem>
+                        
                     </msContents>
                     <physDesc>
                         <handDesc>
