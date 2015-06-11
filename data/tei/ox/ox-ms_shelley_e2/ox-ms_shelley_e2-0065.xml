@@ -7,9 +7,9 @@
   <zone type="library"><line rend="right">32</line></zone>
   <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>Hasten to the bridal bed</line>
-    <line>Underneath the grave tis spread</line>
-    <line>In darkness may our love be hid&#8212;</line>
+    <line rend="indent1">Hasten to the bridal bed</line>
+    <line rend="indent1">Underneath the grave tis spread</line>
+    <line rend="indent1">In darkness may our love be hid&#8212;</line>
     <line rend="indent1">Oblivion is our coverlid&#8212;</line>
     <line rend="indent1">W<hi rend="underline">e m</hi>ay rest, &amp; none forbid&#8212;</line>
     <line>Clasp me, till our hearts be grown</line>
@@ -18,15 +18,16 @@
     <line>Like a vapour, fade away</line>
     <line><hi rend="underline">In </hi>the sleep which lasts alway</line>
     <addSpan place="interlinear" spanTo="#e2-0065.01"/>
-    <line>We may dream in that long sleep</line>
-    <line>That we are not those who weep<add>;</add></line>
+    <line rend="indent1">We may dream in that long sleep</line>
+    <line rend="indent1">That we are not those who weep<add>;</add></line>
     <line rend="indent1">Even as pleasure dreams of thee</line>
     <line rend="indent1">Life-deserting Misery</line>
     <line rend="indent1">Thou mayest dream of her with me</line>
+    <space dim="vertical" unit="lines" extent="2"/>
     <anchor xml:id="e2-0065.01"/>
-    <line>Let us laugh &amp; make our mirth</line>
-    <line>At all shadows on the Earth</line>
-    <line>As dogs bay the moonlight clouds</line>
+    <line rend="indent1">Let us laugh &amp; make our mirth</line>
+    <line rend="indent1">At all shadows on the Earth</line>
+    <line rend="indent1">As dogs bay the moonlight clouds</line>
     <line rend="indent1">Which <unclear reason="illegible">,</unclear> like spectres wrapt in
       shrouds</line>
     <line rend="indent1">Pass oer night in multitudes</line>
