@@ -777,8 +777,13 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             @lastRendering = annoEl
         when 'EmptyLine' in type
           ext = parseInt(model.get('ext'))
-          for br in [1..ext]
-            @currentLineEl.append("<br/>")
+          for br in [1..ext+1]
+            # Find the first line that is not an above insertion
+            l = @currentLineEl.prev('div:not(.above-line)')
+            if l.get(0)?           
+              l.append("<br/>")
+            else
+              @$el.prepend("<br/>")
           @$el.append @currentLineEl
         when "LineBreak" in type
 
