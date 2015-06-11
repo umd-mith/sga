@@ -45,7 +45,7 @@
                         <msItem class="#act" n="III">
                             <bibl>
                                 <title>Act III</title>
-                                <date>End of March 1819-End of April 1819</date>
+                                <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
                             </bibl>
                             <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iii_scene_1">
                                     <locusGrp>
