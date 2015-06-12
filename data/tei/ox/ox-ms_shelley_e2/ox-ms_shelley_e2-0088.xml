@@ -17,15 +17,10 @@
         <del rend="overwritten">a</del>
         <add place="intralinear">A</add>
       </mod>maranth, fadeless blooms;</line>
-    <milestone unit="tei:l" spanTo="#e2-0088.01"/>
-    <line>That they might hide with thin &amp; rainbow</line>
-    <line rend="right">wings</line><anchor xml:id="e2-0088.01"/>
+    <line>That they might hide with thin &amp; rainbow <add place="sublinear">wings</add></line>
     <line>The shape of death, and love be sent to bind</line>
     <line>The disunited tendrils of that vine</line>
-    <milestone unit="tei:l" spanTo="#e2-0088.02"/>
-    <line>Which bears the wine of life, the human</line>
-    <line rend="right">heart;</line>
-    <anchor xml:id="e2-0088.02"/>
+    <line>Which bears the wine of life, the human <add place="sublinear">heart;</add></line>
     <line>And he tamed fire, which like some beast of <unclear reason="illegible"
       >chase</unclear></line>
     <line>Most terrible, but lovely, played beneath</line>
@@ -35,10 +30,7 @@
     <line>Hidden beneath the mountains &amp; the waves</line>
     <line>He gave man speech, &amp; speech created thought</line>
     <line>Which is the measure of the Universe</line>
-    <milestone unit="tei:l" spanTo="#e2-0088.03"/>
-    <line>And Science struck the thrones of Earth</line>
-    <line rend="right">&amp; Heaven</line>
-    <anchor xml:id="e2-0088.03"/>
+    <line>And Science struck the thrones of Earth <add place="sublinear">&amp; Heaven</add></line>
     <line><add><metamark function="count">392</metamark></add></line>
   </zone>
 </surface>
