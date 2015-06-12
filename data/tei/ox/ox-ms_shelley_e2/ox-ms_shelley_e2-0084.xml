@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0084.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0084.01"/>
-    <line rend="indent2">Asia</line>
+    <line rend="center">Asia</line>
     <anchor xml:id="e2-0084.01"/>
     <line>And who made terror, madness, crime, remorse</line>
     <line>Which from the links of the great chain of things</line>
@@ -15,9 +15,8 @@
         <del rend="overwritten">W</del>
         <add place="intralinear">S</add>
       </mod>way &amp; drag heavily &#8212; and each one reels</line>
-    <line>Under the load towards the pit of death;</line>
-    <line rend="right"><add place="interlinear"><metamark function="displacement"
-          xml:id="e2-0084.09">&#60;</metamark></add></line>
+    <line>Under the load towards the pit of death; <add place="sublinear"><metamark function="displacement"
+      xml:id="e2-0084.09">&#60;</metamark></add></line>
     <line>Pain whose unheeded &amp; familiar speech</line>
     <line>Is howling &amp; keen shrieks, day after day,</line>
     <delSpan spanTo="#e2-0084.02" rend="vertical_line"/>
@@ -32,7 +31,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0084.03"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e2-0084.03"/>
-    <line rend="indent5">He reigns</line>
+    <line rend="indent7">He reigns</line>
     <milestone unit="tei:speaker" spanTo="#e2-0084.04"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0084.04"/>
@@ -49,7 +48,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0084.07"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e2-0084.07"/>
-    <line rend="right">He reigns.</line>
+    <line rend="indent7">He reigns.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0084.08"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0084.08"/>
