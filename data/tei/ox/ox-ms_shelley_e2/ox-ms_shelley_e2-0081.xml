@@ -19,21 +19,15 @@
     <line rend="indent1">Of Death and of life</line>
     <line rend="indent1">Through the viel &amp; the bar</line>
     <line rend="indent1">Of things which seem &amp; are</line>
-    <milestone unit="tei:note" spanTo="#e2-0081.03"/>
-    <line><del rend="strikethrough">Desideratum</del></line>
-    <anchor xml:id="e2-0081.03"/>
-    <milestone unit="tei:l" spanTo="#e2-0081.02"/>
-    <line>Even to <mod>
-        <del rend="strikethrough"><add place="superlinear">Desideratur</add></del>
-      </mod>
+   
+    <line>Even <add place="superlinear"><del rend="strikethrough">Desideratum</del></add> to
       <mod>
         <del rend="strikethrough">Desideratur aliquid</del>
-        <add place="superlinear">the</add>
-        <del rend="strikethrough"><add place="superlinear"> threshold of the</add></del>
+        <add place="superlinear">the <del rend="strikethrough">threshold of the</del></add>
       </mod></line>
     <line rend="indent3">steps of the remotest Throne</line>
-    <anchor xml:id="e2-0081.02"/>
     <line rend="indent2">Down, Down!</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent1">While the sound, whirls around,</line>
     <line rend="indent2">Down, Down!</line>
     <line rend="indent1">As the fawn draw<add>s</add> the hound</line>
