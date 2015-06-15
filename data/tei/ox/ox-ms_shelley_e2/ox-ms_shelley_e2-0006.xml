@@ -5,7 +5,6 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0006" partOf="#ox-ms_shelley_e2" mith:folio="2v" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0006.jp2"/>
   <zone type="main">
-    <line>[f. 2r is blank]</line>
     <line>And we burthen the blasts of the atmosphere</line>
     <line>But vainly we toil till ye come here</line>
     <delSpan rend="vertical_line" spanTo="#e2-0006.01"/>
@@ -29,11 +28,11 @@
     <milestone unit="tei:speaker" spanTo="#e2-0006.04"/>
     <line rend="center">2.<hi rend="sup">d</hi></line>
     <anchor xml:id="e2-0006.04"/>
-    <line rend="indent1">From wide cities famine-wasted&#8212;</line>
+    <line rend="indent1">From wide cities famine-wasted—</line>
     <milestone unit="tei:speaker" spanTo="#e2-0006.05"/>
     <line rend="center">3</line>
     <anchor xml:id="e2-0006.05"/>
-    <line rend="indent1">Groans half heard, &amp; blood untasted&#8212;</line>
+    <line rend="indent1">Groans half heard, &amp; blood untasted—</line>
     <milestone unit="tei:speaker" spanTo="#e2-0006.06"/>
     <line rend="center">4</line>
     <anchor xml:id="e2-0006.06"/>
@@ -43,11 +42,11 @@
     <line rend="center">5</line>
     <anchor xml:id="e2-0006.07"/>
     <line rend="indent1">From the furnace white &amp; hot</line>
-    <line rend="indent1">In which&#8212;</line>
+    <line rend="indent1">In which—</line>
     <milestone unit="tei:speaker" spanTo="#e2-0006.08"/>
     <line rend="center"><unclear reason="case">a</unclear> Fury</line>
     <anchor xml:id="e2-0006.08"/>
-    <line rend="indent5">Speak not&#8212;whisper not</line>
+    <line rend="indent5">Speak not—whisper not</line>
     <line rend="indent1">I know all that ye would tell</line>
     <line><metamark function="count">518.</metamark> But to speak might break the spell</line>
   </zone>

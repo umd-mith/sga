@@ -5,7 +5,6 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0042" partOf="#ox-ms_shelley_e2" mith:folio="20v" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0042.jp2"/>
   <zone type="main">
-    <line>[f. 20r is blank]</line>
     <line>Earth can console, Heaven can torment no <add place="sublinear">more</add></line>
     <milestone unit="tei:speaker" spanTo="#e2-0042.02"/>
     <line rend="center">Panthea</line>
@@ -16,18 +15,18 @@
     <milestone unit="tei:speaker" spanTo="#e2-0042.03"/>
     <line rend="center">Prometheus</line>
     <anchor xml:id="e2-0042.03"/>
-    <line>I said all hope was vain but love&#8212;thou lovest...</line>
+    <line>I said all hope was vain but love—thou lovest...</line>
     <line><del rend="strikethrough">But the eastern star is pale</del></line>
     <milestone unit="tei:speaker" spanTo="#e2-0042.04"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0042.04"/>
-    <line><add place="superlinear">Deeply</add>In truth <del rend="strikethrough">most deeply</del>&#8212; but the Eastern star 
+    <line><add place="superlinear">Deeply</add>In truth <del rend="strikethrough">most deeply</del>— but the Eastern star 
       <mod><del rend="strikethrough">is <add place="sublinear">pale</add></del><add place="superlinear">looks wan</add></mod></line>  
     <line>And Asia waits in that far Indian <mod>
         <del rend="overwritten">w</del>
         <add place="intralinear">v</add>
       </mod>ale</line>
-    <line>The scene of her sad exile&#8212;<anchor xml:id="e2-0042.08"/><delSpan
+    <line>The scene of her sad exile—<anchor xml:id="e2-0042.08"/><delSpan
         rend="strikethrough" spanTo="#e2-0042.09"/>tho her presence</line>
     <line>Makes fruits &amp; flowers &amp; sunwarm winds,<anchor xml:id="e2-0042.09"/>
       <mod>
@@ -40,8 +39,8 @@
     <line>But now invested with fair flowers &amp; herbs</line>
     <line>And haunted by sweet air's &amp; sounds, which flow</line>
     <line>Among the woods &amp; waters: from the ether</line>
-    <line>Of her transforming presence&#8212;which would fade</line>
-    <line>If it were mingled not with thine&#8212;farewell</line>
-    <line rend="left"><add><metamark function="count">818.</metamark></add></line>
+    <line>Of her transforming presence—which would fade</line>
+    <line>If it were mingled not with thine—farewell</line>
+    <line><add><metamark function="count">818.</metamark></add></line>
   </zone>
 </surface>

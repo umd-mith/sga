@@ -5,9 +5,9 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0075" partOf="#ox-ms_shelley_e2" mith:folio="37r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0075.jp2"/>
   <zone type="library">
-    <line rend="right">37</line></zone>
+    <line>37</line></zone>
   <zone type="main" corresp="#e2-0074.03">
-    <line><metamark function="displacement">&#60;</metamark><milestone unit="tei:stage" spanTo="#e2-0075.01"/>
+    <line><metamark function="displacement" rend="left_caret"/><milestone unit="tei:stage" spanTo="#e2-0075.01"/>
       <space dim="horizontal" unit="chars" extent="10"></space>
       <del rend="unmarked">ente</del><del rend="strikethrough">r two young</del>
       <del rend="strikethrough"><hi rend="underline">female</hi></del>
@@ -34,7 +34,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0075.03"/>
     <line rend="center">2<hi rend="sup">d</hi>. Faun</line>
     <anchor xml:id="e2-0075.03"/>
-    <line rend="indent7">'Tis hard to tell&#8212;</line>
+    <line rend="indent7">'Tis hard to tell—</line>
     <line>I have heard those more skilled in spirits say</line>
     <line>The bubbles which the enchantment of the sun</line>
     <line>Sucks from the pale faint water-flowers, that pave</line>
@@ -55,7 +55,7 @@
       </mod>
       <unclear reason="illegible">,</unclear><alt target="#e2-0075.08 #e2-0075.09" mode="excl"
         weights="0 1"/></line>
-    <line>Ascends to flow like meteors through the night <unclear>&#8212;</unclear></line>
+    <line>Ascends to flow like meteors through the night <unclear>—</unclear></line>
     <line><mod><del rend="unmarked">They rein</del><add place="superlinear">They ride on 
       <del rend="strikethrough">it</del>
       <del rend="strikethrough">&amp;</del>

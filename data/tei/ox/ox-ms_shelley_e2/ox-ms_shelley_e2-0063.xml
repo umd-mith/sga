@@ -4,14 +4,13 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0063" partOf="#ox-ms_shelley_e2" mith:folio="31r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0063.jp2"/>
-  <zone type="library"><line rend="right">31</line></zone>
+  <zone type="library"><line>31</line></zone>
   <zone rotate="180" type="main">
-    <line>[<hi rend="underline">reverso</hi>]</line>
     <space dim="vertical" unit="lines" extent="18" />
     <line rend="left"><unclear reason="illegible">A</unclear></line>
     <line>All the wide world beside us</line>
     <line>Are like multitudinous</line>
-    <line>Shadows passing from a scene&#8212;</line>
+    <line>Shadows passing from a scene—</line>
     <line rend="indent1">What but mockery can they mean</line>
     <line rend="indent1">Where <del rend="strikethrough"><mod>
           <del rend="overwritten">t</del>

@@ -7,10 +7,10 @@
   <zone type="library"><line rend="right">42</line></zone>
   <zone type="main">
     <milestone unit="tei:seg" spanTo="#e2-0085.02" xml:id="e2-0085.03" corresp="#e2-0084.09"/>
-    <line><add place="superlinear"><metamark function="displacement">/</metamark></add>Abandoned hope, &amp; love that turns to hate</line>
+    <line><add place="superlinear"><metamark function="displacement" rend="left_caret"/></add>Abandoned hope, &amp; love that turns to hate</line>
     <anchor xml:id="e2-0085.02"/>
     <milestone unit="tei:seg" spanTo="#e2-0085.04" next="#e2-0085.03"/>
-    <line><add place="sublinear"><metamark function="displacement">\</metamark></add>And Self-<mod>
+    <line>And Self-<mod>
         <del rend="overwritten">d</del>
         <add place="intralinear">co</add>
       </mod>ntempt, bitterer to drink than blood;</line>
@@ -19,12 +19,12 @@
     <line rend="indent1">With <mod>
         <del rend="overwritten">that</del>
         <add place="intralinear">the</add>
-      </mod> bright form beside thee&#8212;</line>
-    <line rend="indent1">Resist not the weakness&#8212;</line>
+      </mod> bright form beside thee—</line>
+    <line rend="indent1">Resist not the weakness—</line>
     <line rend="indent1"><mod>
         <del rend="strikethrough">For</del>
         <add place="sublinear">Such</add>
-      </mod> strength is in meekness&#8212;</line>
+      </mod> strength is in meekness—</line>
     <line rend="indent1"><hi rend="underline">That the Eternal the Immortal</hi></line>
     <line><mod>
         <del rend="strikethrough">With the the key of life's portal</del>
@@ -42,11 +42,15 @@
         <add place="intralinear">D</add>
       </mod>oom coiled <del rend="strikethrough">up</del> underneath his <add place="sublinear">throne</add></line>
        <line rend="indent2">By that alone!</line>
-    <line>[SKETCHES OF HARPS, IN PENCIL]</line>
-    <line>45</line>
-    <line>95 <hi rend="underline">50</hi></line>
-    <line>95</line>
-    <line><hi rend="underline">30</hi></line>
-    <line>125</line>
+    <zone type="sketch"></zone>
+    <zone type="calculation">
+      <line>45</line>
+      <line>50</line>
+      <metamark rend="short_line" function="math_operation"/>
+      <line>95</line>
+      <line>30</line>
+      <metamark rend="short_line" function="math_operation"/>
+      <line>125</line>
+    </zone>
   </zone>
 </surface>

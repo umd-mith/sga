@@ -5,7 +5,6 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0028" partOf="#ox-ms_shelley_e2" mith:folio="13v" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0028.jp2"/>
   <zone type="main">
-    <line>[f. 13r blank]</line>
     <line rend="indent1">Twas the hope the prophecy</line>
     <line rend="indent1">Which begins &amp; ends in thee</line>
     <milestone unit="tei:speaker" spanTo="#e2-0028.01"/>
@@ -14,7 +13,7 @@
     <delSpan rend="vertical_line" spanTo="#e2-0028.02"/>
     <line>I leaped on the wings of the Earth-star damp</line>
     <line>As it rose <unclear reason="illegible">i</unclear>n the steam of a slaughtered
-      camp&#8212;</line>
+      camp—</line>
     <line>The sleeping newt heard not our tramp</line>
     <line>As swift <mod>
         <del rend="strikethrough">and silent we did pass</del>
@@ -39,8 +38,8 @@
     <anchor xml:id="e2-0028.02"/>
     <milestone unit="tei:speaker" spanTo="#e2-0028.03"/>
     <line rend="center"><mod>
-        <del rend="overwritten">3</del>
-        <add place="intralinear">2</add>
+        <del rend="overwritten">2</del>
+        <add place="intralinear">3</add>
       </mod><hi rend="sup">d</hi> Spirit</line>
     <anchor xml:id="e2-0028.03"/>
     <line>A rainbows arch stood on the sea</line>

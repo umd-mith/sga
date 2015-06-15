@@ -5,7 +5,7 @@
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0077" partOf="#ox-ms_shelley_e2" mith:folio="38r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0077.jp2"/>
   <zone type="library">
-    <line rend="right">38</line>
+    <line>38</line>
   </zone>
   <zone type="main" corresp="#e2-0075.05">
     <line>Of meadow flowers, or <mod>
@@ -46,14 +46,13 @@
     <line><retrace cause="unclear">And love</retrace>, <retrace cause="unclear">&amp;
         the chained Titans woful doom</retrace></line>
     <line><retrace cause="unclear">And how he shall be loosed, &amp; make the Earth</retrace></line>
-    <line><retrace cause="unclear">One brotherhood&#8212;delighful strains which
+    <line><retrace cause="unclear">One brotherhood—delighful strains which
         cheer</retrace></line>
     <anchor xml:id="e2-0077.04"/>
-    <!--<zone type="bottom">-->
+    <space unit="lines" dim="vertical" extent="7"/>
       <milestone unit="tei:seg" spanTo="#e2-0077.02" corresp="#e2-0076.03"/>
       <line>mountains</line>
       <anchor xml:id="e2-0077.02"/>
-    <!--</zone>-->
   </zone>
   
 </surface>

@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0083" partOf="#ox-ms_shelley_e2" mith:folio="41r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0083.jp2"/>
-  <zone type="library"><line rend="right">41</line></zone>
+  <zone type="library"><line>41</line></zone>
   <zone type="main">
     <line rend="indent1">Through the grey void Abysm</line>
     <line rend="indent2">Down, Down!</line>
@@ -39,9 +39,9 @@
       </mod>, but <mod>
         <del rend="strikethrough">for</del>
         <add place="superlinear">from</add>
-      </mod> thee alone&#8212;</line>
+      </mod> thee alone—</line>
     <line rend="indent2">Down Down<mod>
-        <del rend="overwritten">&#8212;</del>
+        <del rend="overwritten">—</del>
         <add place="intralinear">!</add>
       </mod></line>
     <space dim="vertical" unit="lines" extent="1"/>

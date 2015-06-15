@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0081" partOf="#ox-ms_shelley_e2" mith:folio="40r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0081.jp2"/>
-  <zone type="library"><line rend="right">40</line></zone>
+  <zone type="library"><line>40</line></zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0081.01"/>
     <line rend="center">Song of Spirits</line>

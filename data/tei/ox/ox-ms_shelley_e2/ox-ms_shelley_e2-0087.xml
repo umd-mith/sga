@@ -4,8 +4,8 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0087" partOf="#ox-ms_shelley_e2" mith:folio="43r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0087.jp2"/>
-  <zone type="library"><line rend="right">43</line>
-    <line rend="right">(ult.)</line></zone>
+  <zone type="library"><line>43</line>
+    <line>(ult.)</line></zone>
   <zone type="main">
     <space dim="vertical" unit="lines" extent="2" />
     <line rend="left"><milestone unit="tei:seg" spanTo="#e2-0087.02" xml:id="e2-0087.03"

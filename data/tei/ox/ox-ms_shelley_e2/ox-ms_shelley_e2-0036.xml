@@ -6,10 +6,10 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0036.jp2"/>
   <zone type="main">
     <!-- Check to see if this page is meant to be displaced somewhere else -->
-    <line rend="indent5"><milestone unit="tei:speaker" spanTo="#e2-0036.01"/>5<hi rend="sup">th</hi> Spirit
-      <anchor xml:id="e2-0036.01"/>
-    <space dim="horizontal" unit="chars" extent="10"/>
-    <mod>
+    <line rend="center"><milestone unit="tei:speaker" spanTo="#e2-0036.01"/>5<hi rend="sup">th</hi> Spirit
+      <anchor xml:id="e2-0036.01"/></line>
+    <line rend="right">
+      <mod>
         <del rend="overwritten">a</del>
         <add place="intralinear">A</add>
       </mod>s over wide dominions</line>
@@ -24,12 +24,12 @@
       </mod> the liquid joy of life from his ambrosial tresses:</line>
     <line>His footsteps paved the world with light <mod>
         <del rend="overwritten">?</del>
-        <add place="intralinear">&#8212;</add>
+        <add place="intralinear">—</add>
       </mod> but as I past 'twas <add place="sublinear">fading</add></line>
-    <line>And hollow Ruin yawned behind &#8212; great Sages bound in madness</line>
+    <line>And hollow Ruin yawned behind — great Sages bound in madness</line>
     <line>And headless patriots &amp; pale youths who perished unupbraiding</line>
     <line>Gleamed in the <unclear reason="case">N</unclear>ight I wandered o'er
-      &#8212; till thou o King of sadness</line>
+      — till thou o King of sadness</line>
     <line>Turned by thy smile the worst I said to recollected gladness</line>
     <milestone unit="tei:speaker" spanTo="#e2-0036.03"/>
     <line rend="center">6.<hi rend="sup">th</hi> Spirit</line>
@@ -46,7 +46,7 @@
     <line>And the music-stirring motion of its soft &amp; busy feet,</line>
     <line>Dream visions of aerial joy, &amp; call the monster, Love</line>
     <milestone unit="tei:l" spanTo="#e2-0036.04"/>
-    <line>And wake, and find their shadow Pain&#8212;as <mod>
+    <line>And wake, and find their shadow Pain—as <mod>
         <del rend="strikethrough">him</del>
         <add place="intralinear">he</add>
       </mod> whom now</line>
@@ -58,14 +58,14 @@
               >th</hi></hi></del></line>
     <line rend="center">Chorus</line>
     <anchor xml:id="e2-0036.05"/>
-    <line rend="indent4"><add><metamark><unclear reason="illegible">X</unclear></metamark></add></line>
+    <line rend="indent4"><add><metamark function="unclear" rend="cross"><unclear reason="illegible">X</unclear></metamark></add></line>
     <line rend="indent1">Though Ruin now <mod>
         <del rend="overwritten">loves</del>
         <add place="intralinear">Loves</add>
       </mod> shadow be</line>
     <line rend="indent1">Following him, destroyingly</line>
     <line rend="indent1">On Death's white &amp; winged steed</line>
-    <line rend="indent1">Which the fleetest cannot flee&#8212;</line>
+    <line rend="indent1">Which the fleetest cannot flee—</line>
     <line rend="indent1">Trampling down both flower &amp; weed</line>
     <line><add><metamark function="count">769</metamark></add></line>
   </zone>

@@ -4,14 +4,13 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0067" partOf="#ox-ms_shelley_e2" mith:folio="33r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0067.jp2"/>
-  <zone type="library"><line rend="right">33</line></zone>
+  <zone type="library"><line>33</line></zone>
   <zone rotate="180" type="main">
-    <line>[<hi rend="underline">reverso</hi>]</line>
     <line rend="indent1">Ha! <del rend="strikethrough">fr <unclear reason="illegible">o</unclear></del> thy frozen
       pulses flutter</line>
     <line rend="indent1">With a love thou darest<del rend="unmarked"><unclear reason="illegible">'</unclear></del>
-      not utter&#8212;</line>
-    <line rend="indent1">Thou art murmuring&#8212;thou art weeping&#8212;</line>
+      not utter—</line>
+    <line rend="indent1">Thou art murmuring—thou art weeping—</line>
     <line><mod>
         <del rend="overwritten">is</del>
         <add place="intralinear">Was</add>
@@ -21,9 +20,9 @@
       </mod></line>
     <line rend="indent1">While my burning heart was sleeping?</line>
     <delSpan rend="strikethrough" spanTo="#e2-0067.01"/>
-    <line rend="indent1">Kiss me &#8212; oh thy lips are cold&#8212;</line>
+    <line rend="indent1">Kiss me — oh thy lips are cold—</line>
     <line rend="indent1">Round my neck thine arms enfold <add place="sublinear">dead</add></line>
-    <line rend="indent1">They are soft&#8212;but <mod>
+    <line rend="indent1">They are soft—but <mod>
         <del rend="overwritten">dead</del>
         <add place="intralinear">chill</add>
       </mod> &amp; <mod>
@@ -31,11 +30,11 @@
         <add place="sublinear">weak</add>
       </mod></line>
     <line rend="indent1">And thy tears upon my <del rend="strikethrough">cheek</del> head</line>
-    <line rend="indent1">Burn, as it were with frost&#8212;o speak</line>
+    <line rend="indent1">Burn, as it were with frost—o speak</line>
     <anchor xml:id="e2-0067.01"/>
-    <line rend="indent1">Kiss me <unclear reason="illegible">;</unclear>&#8212;oh thy lips are cold&#8212;</line>
-    <line rend="indent1">Round my neck thine arms enfold&#8212;</line>
-    <line rend="indent1">They are soft&#8212;but chill &amp; dead</line>
+    <line rend="indent1">Kiss me <unclear reason="illegible">;</unclear>—oh thy lips are cold—</line>
+    <line rend="indent1">Round my neck thine arms enfold—</line>
+    <line rend="indent1">They are soft—but chill &amp; dead</line>
     <line rend="indent1">And thy tears upon my head</line>
     <line rend="indent1">Burn like points of frozen lead</line>
   </zone>

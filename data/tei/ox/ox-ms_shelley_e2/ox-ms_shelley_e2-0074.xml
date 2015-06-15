@@ -7,20 +7,20 @@
   <zone type="main">
     <line xml:id="e2-0074_pu_line_0" rend="indent1">The storm of sound is driven <unclear reason="illegible"
       >a</unclear>long</line>
-    <line xml:id="e2-0074_pu_line_1" rend="indent1">Sucked up &amp; hurrying&#8212;as they fleet</line>
+    <line xml:id="e2-0074_pu_line_1" rend="indent1">Sucked up &amp; hurrying—as they fleet</line>
     <line xml:id="e2-0074_pu_line_2" rend="indent1">Behind its gathering billows meet</line>
     <line xml:id="e2-0074_pu_line_3" rend="indent1">And to the fatal mountain bear</line>
     <line xml:id="e2-0074_pu_line_4" rend="indent1">Like clouds amid the yielding air</line>
-    <line rend="left"><add><metamark function="count">264</metamark></add></line>
-    <!--<line><add><metamark function="displacement" xml:id="e2-0074.03">&#60;</metamark></add></line>-->
+    <line rend="left"><add><metamark function="count">264</metamark></add>
+      <add place="sublinear"><metamark function="displacement" xml:id="e2-0074.03" rend="left_caret"/></add></line>
     <milestone unit="tei:stage" spanTo="#e2-0074.01"/>
     <line xml:id="e2-0074_pu_line_5" rend="center">Scene 3. A pinnacle of rock among</line>
-    <line xml:id="e2-0074_pu_line_6">Mountains &#8212; <add>Asia &amp; Panthea</add></line>
+    <line xml:id="e2-0074_pu_line_6">Mountains — <add>Asia &amp; Panthea</add></line>
     <anchor xml:id="e2-0074.01"/>
     <milestone unit="tei:speaker" spanTo="#e2-0074.02"/>
     <line xml:id="e2-0074_pu_line_7" rend="center">Panthea</line>
     <anchor xml:id="e2-0074.02"/>
-    <line xml:id="e2-0074_pu_line_8">Hither the sound has borne us&#8212; <mod>
+    <line xml:id="e2-0074_pu_line_8">Hither the sound has borne us— <mod>
         <del rend="overwritten"><unclear reason="illegible">'tis</unclear></del>
         <add place="intralinear">to</add>
       </mod> the realm</line>

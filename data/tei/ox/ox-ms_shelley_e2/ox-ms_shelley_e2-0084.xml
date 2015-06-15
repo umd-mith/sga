@@ -14,9 +14,9 @@
     <line><mod>
         <del rend="overwritten">W</del>
         <add place="intralinear">S</add>
-      </mod>way &amp; drag heavily &#8212; and each one reels</line>
+      </mod>way &amp; drag heavily — and each one reels</line>
     <line>Under the load towards the pit of death; <add place="sublinear"><metamark function="displacement"
-      xml:id="e2-0084.09">&#60;</metamark></add></line>
+      xml:id="e2-0084.09" rend="left_caret"/></add></line>
     <line>Pain whose unheeded &amp; familiar speech</line>
     <line>Is howling &amp; keen shrieks, day after day,</line>
     <delSpan spanTo="#e2-0084.02" rend="vertical_line"/>
@@ -35,7 +35,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0084.04"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0084.04"/>
-    <line>Utter his name &#8212; a world pining in pain</line>
+    <line>Utter his name — a world pining in pain</line>
     <line>Asks but his name; curses shall drag him down.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0084.05"/>
     <line rend="center">Demogorgon</line>
@@ -44,7 +44,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0084.06"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0084.06"/>
-    <line rend="indent2">I feel, I know it&#8212;who?</line>
+    <line rend="indent2">I feel, I know it—who?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0084.07"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e2-0084.07"/>

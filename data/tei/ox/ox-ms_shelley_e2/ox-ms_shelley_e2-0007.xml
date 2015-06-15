@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0007" partOf="#ox-ms_shelley_e2" mith:folio="3r" mith:shelfmark="MS. Shelley e. 2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0007.jp2"/>
-  <zone type="library"><line rend="right">3</line>
+  <zone type="library"><line>3</line>
   </zone>
   <zone type="main" corresp="#e2.0006.09">
     <milestone unit="tei:speaker" spanTo="#e2-0007.01"/>
@@ -27,7 +27,7 @@
             <add place="intralinear">r</add>
           </mod></add>
       </mod> with the sound</line>
-    <line>Even as the tremulous air &#8212; <mod>
+    <line>Even as the tremulous air — <mod>
         <del rend="strikethrough"><unclear reason="case">L</unclear>ook not I pray</del>
         <add place="sublinear">Thier shadows make</add>
       </mod></line>

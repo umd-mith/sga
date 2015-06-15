@@ -19,7 +19,7 @@
       <del rend="strikethrough">A</del><del rend="unmarked">n</del>And through the windless
       ivy-boughs</line>
     <line>Sick with sweet love, droops dying away</line>
-    <line>On its mates music-panting bosom&#8212;</line>
+    <line>On its mates music-panting bosom—</line>
     <line>Another from the swinging blossom</line>
     <line>Watching to catch the languid <mod>
         <del rend="strikethrough">strain</del>
@@ -33,18 +33,19 @@
         <del rend="overwritten">strain</del>
         <add place="intralinear">stream</add>
       </mod> of feeling bear</line>
-    <line><add><metamark>?</metamark></add><unclear reason="illegible">T</unclear>he song <unclear reason="illegible">,</unclear>
+    <line><add><metamark function="unclear">?</metamark></add><unclear reason="illegible">T</unclear>he song <unclear reason="illegible">,</unclear>
       &amp; all the woods are mute;</line>
     <line>When there is heard thro' the dim air</line>
-    <line>The rush of wings <unclear>&#8212;</unclear>, &amp; rising there</line>
+    <line>The rush of wings <unclear>—</unclear>, &amp; rising there</line>
     <line>Like many a lake-surrounded flute</line>
     <line>Sounds overflow the listeners brain</line>
     <line>So sweet, that joy is almost pain.</line>
   </zone>
-  <zone type="left_margin">
+  <zone type="left_margin" subtype="calculation">
     <space dim="vertical" unit="lines" extent="16"/>
     <line>818</line>
     <line><hi rend="underline">241</hi></line>
+    <metamark rend="short_line" function="math_operation"/>
     <line>1059</line>
     <space dim="vertical" unit="lines" extent="1"/>
     <line><metamark function="count">241</metamark></line>
