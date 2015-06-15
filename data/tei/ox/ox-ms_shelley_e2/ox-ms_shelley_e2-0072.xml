@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0072.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0072.01"/>
-    <line rend="center">Semichorus 1.</line>
+    <line rend="indent2">Semichorus 1.</line>
     <anchor xml:id="e2-0072.01"/>
     <line>There those inchanted eddies play</line>
     <line>Of echoes music-tongued, which draw</line>
@@ -30,8 +30,8 @@
     <line>Which drives them on their path, while they</line>
     <line>Believe their own swift wings &amp; feet</line>
     <line>The sweet desire <unclear>s</unclear> within obey</line>
-    <line rend="indent1">And so they float upon their way</line>
-    <line rend="indent1">Until still sweet but loud &amp; st<retrace cause="unclear"
+    <line>And so they float upon their way</line>
+    <line>Until still sweet but loud &amp; st<retrace cause="unclear"
       >r</retrace>ong</line>
   </zone>
 </surface>

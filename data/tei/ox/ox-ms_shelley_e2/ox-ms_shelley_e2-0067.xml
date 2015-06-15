@@ -7,12 +7,12 @@
   <zone type="library"><line rend="right">33</line></zone>
   <zone rotate="180" type="main">
     <line>[<hi rend="underline">reverso</hi>]</line>
-    <line>Ha! <del rend="strikethrough">fr <unclear reason="illegible">o</unclear></del> thy frozen
+    <line rend="indent1">Ha! <del rend="strikethrough">fr <unclear reason="illegible">o</unclear></del> thy frozen
       pulses flutter</line>
-    <line>With a love thou darest<del rend="unmarked"><unclear reason="illegible">'</unclear></del>
+    <line rend="indent1">With a love thou darest<del rend="unmarked"><unclear reason="illegible">'</unclear></del>
       not utter&#8212;</line>
-    <line>Thou art murmuring&#8212;thou art weeping&#8212;</line>
-    <line rend="left"><mod>
+    <line rend="indent1">Thou art murmuring&#8212;thou art weeping&#8212;</line>
+    <line><mod>
         <del rend="overwritten">is</del>
         <add place="intralinear">Was</add>
       </mod> thine icy <mod>
@@ -21,12 +21,9 @@
       </mod></line>
     <line rend="indent1">While my burning heart was sleeping?</line>
     <delSpan rend="strikethrough" spanTo="#e2-0067.01"/>
-    <line>Kiss me &#8212; oh thy lips are cold&#8212;</line>
-    <milestone unit="tei:l" spanTo="#e2-0067.02"/>
-    <line>Round my neck thine arms enfold</line>
-    <line rend="right">dead</line>
-    <anchor xml:id="e2-0067.02"/>
-    <line>They are soft&#8212;but <mod>
+    <line rend="indent1">Kiss me &#8212; oh thy lips are cold&#8212;</line>
+    <line rend="indent1">Round my neck thine arms enfold <add place="sublinear">dead</add></line>
+    <line rend="indent1">They are soft&#8212;but <mod>
         <del rend="overwritten">dead</del>
         <add place="intralinear">chill</add>
       </mod> &amp; <mod>
@@ -36,9 +33,9 @@
     <line rend="indent1">And thy tears upon my <del rend="strikethrough">cheek</del> head</line>
     <line rend="indent1">Burn, as it were with frost&#8212;o speak</line>
     <anchor xml:id="e2-0067.01"/>
-    <line>Kiss me <unclear reason="illegible">;</unclear>&#8212;oh thy lips are cold&#8212;</line>
-    <line>Round my neck thine arms enfold&#8212;</line>
-    <line>They are soft&#8212;but chill &amp; dead</line>
+    <line rend="indent1">Kiss me <unclear reason="illegible">;</unclear>&#8212;oh thy lips are cold&#8212;</line>
+    <line rend="indent1">Round my neck thine arms enfold&#8212;</line>
+    <line rend="indent1">They are soft&#8212;but chill &amp; dead</line>
     <line rend="indent1">And thy tears upon my head</line>
     <line rend="indent1">Burn like points of frozen lead</line>
   </zone>

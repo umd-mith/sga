@@ -13,10 +13,7 @@
     <line xml:id="e2-0080_pu_line_1" rend="center">Asia</line>
     <anchor xml:id="e2-0080.01"/>
     <line xml:id="e2-0080_pu_line_2">The fragments of the cloud are scattered up&#8212;</line>
-    <milestone unit="tei:l" spanTo="#e2-0080.02"/>
-    <line xml:id="e2-0080_pu_line_3">The wind which lifts them disentwines my</line>
-    <line xml:id="e2-0080_pu_line_4" rend="right">hair&#8212;</line>
-    <anchor xml:id="e2-0080.02"/>
+    <line xml:id="e2-0080_pu_line_3">The wind which lifts them disentwines my <add place="sublinear">hair</add></line>
     <line xml:id="e2-0080_pu_line_5">Its' billows now s<mod>
         <del rend="overwritten">t</del>
         <add place="intralinear">w</add>
@@ -33,7 +30,7 @@
       >burns</add></line>
     <line xml:id="e2-0080_pu_line_10">An<del rend="strikethrough">
         <unclear>o</unclear></del> azure fire within its golden locks&#8212;</line>
-    <line xml:id="e2-0080_pu_line_11">Another &amp; another hark they speak!</line>
+    <line xml:id="e2-0080_pu_line_11">Another &amp; another hark they speak! <add place="sublinear"><metamark>&#60;</metamark></add></line>
     <milestone unit="tei:stage" spanTo="#e2-0080.04"/>
     <line xml:id="e2-0080_pu_line_12" rend="center">Scene 4 the Cave of Demogorgon</line>
     <line xml:id="e2-0080_pu_line_13">Asia, Panthea, <del rend="strikethrough">a</del>
@@ -51,13 +48,12 @@
     <anchor xml:id="e2-0080.07"/>
     <line xml:id="e2-0080_pu_line_17">The veil has fallen!..</line>
     <milestone unit="tei:speaker" spanTo="#e2-0080.08"/>
-    <line xml:id="e2-0080_pu_line_18">Panthea</line>
+    <line xml:id="e2-0080_pu_line_18" rend="center">Panthea</line>
     <anchor xml:id="e2-0080.08"/>
     <line xml:id="e2-0080_pu_line_19" rend="indent4">I see a mighty <mod>
         <del rend="overwritten">d</del>
         <add place="intralinear">D</add>
       </mod>arkness</line>
-    <line xml:id="e2-0080_pu_line_20">the</line>
     <line xml:id="e2-0080_pu_line_21">Filling <mod>
         <del rend="strikethrough"><mod>
             <del rend="overwritten">the</del>

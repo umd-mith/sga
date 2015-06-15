@@ -9,49 +9,41 @@
     <line>A living Spirit</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.01"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.01"/>
-    <line rend="indent4"><unclear reason="case">A</unclear>sk what thou wouldst know</line>
+    <line rend="indent5"><unclear reason="case">A</unclear>sk what thou wouldst know</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.02"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.02"/>
     <line>What canst thou tell?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.03"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.03"/>
-    <line rend="indent4">All things thou darest demand</line>
+    <line rend="indent6">All things thou darest demand</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.04"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.04"/>
     <line>Who made the living world?</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.05"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.05"/>
-    <line rend="indent4">God.</line>    
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e2-0082.11"/>Asia<anchor xml:id="e2-0082.11"/> Who made all</line>
-    <milestone unit="tei:l" spanTo="#e2-0082.12"/>
+    <line rend="indent5">God.</line>    
+    <line rend="indent4"><milestone unit="tei:speaker" spanTo="#e2-0082.11"/>Asia<anchor xml:id="e2-0082.11"/> <space dim="horizontal" unit="chars" extent="10" />Who made all</line>
     <line>That it contains &#8212; <mod>
         <del rend="strikethrough">
           <unclear reason="case">S</unclear>ense</del>
         <add place="superlinear">thought,</add>
       </mod> passion, reason, will,</line>
     <line>Imagination?</line>
-    <anchor xml:id="e2-0082.12"/>
     <milestone unit="tei:speaker" spanTo="#e2-0082.06"/>
     <line rend="center">Demogorgon</line><anchor xml:id="e2-0082.06"/>
-    <line rend="indent4">God, Almighty God.</line>
+    <line rend="indent6">God, Almighty God.</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.07"/>
     <line rend="center">Asia</line><anchor xml:id="e2-0082.07"/>
-    <milestone unit="tei:l" spanTo="#e2-0082.08"/>
-    <line>Who made that sense which when the winds</line>
-    <line rend="right">of sp<unclear>r</unclear>ing</line>
-    <anchor xml:id="e2-0082.08"/>
+    <line>Who made that sense which when the winds <add place="sublinear">of sp<unclear>r</unclear>ing</add></line>
     <line>In rarest visitation, or the voice</line>
     <line>Of one beloved heard in youth alone</line>
-    <milestone unit="tei:l" spanTo="#e2-0082.09"/>
-    <line>Fills the faint eyes with falling tears, which</line>
-    <line rend="right">dim</line>
-    <anchor xml:id="e2-0082.09"/>
+    <line>Fills the faint eyes with falling tears, which <add place="sublinear">dim</add></line>
     <line>The radiant looks of unbewailing flowers</line>
     <line>And leaves this peopled earth a solitude</line>
     <line>When it returns no more</line>
     <milestone unit="tei:speaker" spanTo="#e2-0082.10"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e2-0082.10"/>
-    <line rend="indent4">Merciful God</line>
+    <line rend="indent6">Merciful God</line>
   </zone>
 </surface>

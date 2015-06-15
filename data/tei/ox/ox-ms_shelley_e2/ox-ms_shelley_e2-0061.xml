@@ -9,6 +9,7 @@
   </zone>
   <zone type="main" corresp="#e2-0060.02">
     <addSpan spanTo="#e2-0061.01"/>
+    <space dim="vertical" unit="lines" extent="18" />
     <line rend="indent2"><del rend="unmarked">Vo</del><del rend="strikethrough">ice</del>
       Echo</line>
     <line rend="indent3">Follow, follow!</line>

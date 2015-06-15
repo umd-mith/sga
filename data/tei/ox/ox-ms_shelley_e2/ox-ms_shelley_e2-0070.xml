@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0070.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0070.01"/>
-    <line rend="center">Semichorus 2.</line>
+    <line rend="indent2">Semichorus 2.</line>
     <anchor xml:id="e2-0070.01"/>
     <line><del rend="unmarked"><unclear reason="illegible">T</unclear></del>There the voluptuous
       nightingales</line>
@@ -33,14 +33,20 @@
         <del rend="overwritten">strain</del>
         <add place="intralinear">stream</add>
       </mod> of feeling bear</line>
-    <line><unclear reason="illegible">T</unclear>he song <unclear reason="illegible">,</unclear>
+    <line><add><metamark>?</metamark></add><unclear reason="illegible">T</unclear>he song <unclear reason="illegible">,</unclear>
       &amp; all the woods are mute;</line>
     <line>When there is heard thro' the dim air</line>
     <line>The rush of wings <unclear>&#8212;</unclear>, &amp; rising there</line>
     <line>Like many a lake-surrounded flute</line>
-    <line><add><metamark>818</metamark></add> Sounds overflow the listeners brain</line>
-    <line><add><metamark><hi rend="underline">241</hi></metamark></add></line>
-    <line><add><metamark>1059</metamark></add> So sweet, that joy is almost pain.</line>
-    <line rend="left"><add><metamark function="count">241</metamark></add></line>
+    <line>Sounds overflow the listeners brain</line>
+    <line>So sweet, that joy is almost pain.</line>
+  </zone>
+  <zone type="left_margin">
+    <space dim="vertical" unit="lines" extent="16"/>
+    <line>818</line>
+    <line><hi rend="underline">241</hi></line>
+    <line>1059</line>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line><metamark function="count">241</metamark></line>
   </zone>
 </surface>

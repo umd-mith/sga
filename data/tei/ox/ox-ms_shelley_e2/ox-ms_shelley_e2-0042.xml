@@ -6,10 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0042.jp2"/>
   <zone type="main">
     <line>[f. 20r is blank]</line>
-    <milestone unit="tei:l" spanTo="#e2-0042.01"/>
-    <line>Earth can console, Heaven can torment no</line>
-    <line rend="right">more</line>
-    <anchor xml:id="e2-0042.01"/>
+    <line>Earth can console, Heaven can torment no <add place="sublinear">more</add></line>
     <milestone unit="tei:speaker" spanTo="#e2-0042.02"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0042.02"/>
@@ -24,13 +21,8 @@
     <milestone unit="tei:speaker" spanTo="#e2-0042.04"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0042.04"/>
-    <milestone unit="tei:l" spanTo="#e2-0042.05"/>
-    <line><add place="superlinear">Deeply </add>In truth <del rend="strikethrough">most deeply</del>
-      &#8212; but the Eastern star <mod spanTo="#e2-0042.06"/><del rend="strikethrough"
-        next="#e2-0042.07">is</del><add place="superlinear">looks wan</add></line>
-    <line rend="right"><del rend="strikethrough" xml:id="e2-0042.07">pale</del><anchor
-        xml:id="e2-0042.06"/></line>
-    <anchor xml:id="e2-0042.05"/>
+    <line><add place="superlinear">Deeply</add>In truth <del rend="strikethrough">most deeply</del>&#8212; but the Eastern star 
+      <mod><del rend="strikethrough">is <add place="sublinear">pale</add></del><add place="superlinear">looks wan</add></mod></line>  
     <line>And Asia waits in that far Indian <mod>
         <del rend="overwritten">w</del>
         <add place="intralinear">v</add>

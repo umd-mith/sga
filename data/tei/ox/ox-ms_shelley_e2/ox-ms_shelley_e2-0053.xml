@@ -9,12 +9,14 @@
   </zone>
   <zone type="main">
     <line>[PENCIL SKETCH OF FOLIAGE, IN REVERSO</line>
+    <space dim="vertical" unit="lines" extent="7" />
     <milestone unit="tei:seg" spanTo="#e2-0053.01" corresp="#e2-0052.02"/><line rend="indent5">thy
       name,</line>
     <line>Among the many sounds alone I heard</line>
     <line>Of what might be articulate; though still</line>
     <line>I listened through the night when sound was none.</line>
     <anchor xml:id="e2-0053.01"/>
+    <space dim="vertical" unit="lines" extent="5"/>
     <milestone unit="tei:seg" spanTo="#e2-0053.02" corresp="e2-0052.03"/>
     <line>something sweet since it is sweet</line>
     <anchor xml:id="e2-0053.02"/>

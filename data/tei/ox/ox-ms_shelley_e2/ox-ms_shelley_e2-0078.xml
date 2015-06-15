@@ -17,15 +17,9 @@
     <line>Satiates the listening wind, continuous, vast,</line>
     <line>Awful as silence&#8212;hark! the rushing snow</line>
     <line>The sun-awakened avalanche, whose mass</line>
-    <line>Thrice sifted by the storm <mod>
-        <del rend="overwritten">s</del>
-        <add place="intralinear">h</add>
-      </mod>ad gathered there</line>
+    <line>Thrice sifted by the storm had gathered there</line>
     <line>Flake after flake: in Heaven-defying minds</line>
-    <milestone unit="tei:l" spanTo="#e2-0078.01"/>
-    <line>As thought by thought is piled, till some great</line>
-    <line rend="right">truth</line>
-    <anchor xml:id="e2-0078.01"/>
+    <line>As thought by thought is piled, till some great <add place="sublinear">truth</add></line>
     <line>Is loosened, &amp; the <mod>
         <del rend="strikethrough">mountains</del>
         <add place="superlinear">nations</add>
@@ -38,6 +32,6 @@
       breaking</line>
     <line rend="indent1">In crimson foam even at our feet&#8212;it rises</line>
     <line rend="indent1">As Ocean at the inchantment of the moon</line>
-    <line rend="left"><add><metamark function="count">310</metamark></add></line>
+    <line><add><metamark function="count">310</metamark></add></line>
   </zone>
 </surface>

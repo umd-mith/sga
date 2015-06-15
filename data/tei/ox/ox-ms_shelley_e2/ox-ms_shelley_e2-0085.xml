@@ -7,16 +7,15 @@
   <zone type="library"><line rend="right">42</line></zone>
   <zone type="main">
     <milestone unit="tei:seg" spanTo="#e2-0085.02" xml:id="e2-0085.03" corresp="#e2-0084.09"/>
-    <line>Abandoned hope, &amp; love that turns to hate</line>
+    <line><add place="superlinear"><metamark function="displacement">/</metamark></add>Abandoned hope, &amp; love that turns to hate</line>
     <anchor xml:id="e2-0085.02"/>
-    <line rend="left"><add place="interlinear"><metamark function="displacement"
-        >&#60;</metamark></add></line>
     <milestone unit="tei:seg" spanTo="#e2-0085.04" next="#e2-0085.03"/>
-    <line>And Self-<mod>
+    <line><add place="sublinear"><metamark function="displacement">\</metamark></add>And Self-<mod>
         <del rend="overwritten">d</del>
         <add place="intralinear">co</add>
       </mod>ntempt, bitterer to drink than blood;</line>
     <anchor xml:id="e2-0085.04"/>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">With <mod>
         <del rend="overwritten">that</del>
         <add place="intralinear">the</add>
@@ -38,14 +37,11 @@
         <del rend="strikethrough">unchain, at</del>
         <add place="superlinear">unloose thro life's portal</add>
       </mod></line>
-    <milestone unit="tei:l" spanTo="#e2-0085.01"/>
-    <line>The<del rend="strikethrough">D<unclear reason="illegible">A</unclear></del> snake-like <mod>
+     <line>The<del rend="strikethrough">D<unclear reason="illegible">A</unclear></del> snake-like <mod>
         <del rend="overwritten">d</del>
         <add place="intralinear">D</add>
-      </mod>oom coiled <del rend="strikethrough">up</del> underneath his</line>
-    <line rend="right">throne</line>
-    <anchor xml:id="e2-0085.01"/>
-    <line rend="indent2">By that alone!</line>
+      </mod>oom coiled <del rend="strikethrough">up</del> underneath his <add place="sublinear">throne</add></line>
+       <line rend="indent2">By that alone!</line>
     <line>[SKETCHES OF HARPS, IN PENCIL]</line>
     <line>45</line>
     <line>95 <hi rend="underline">50</hi></line>

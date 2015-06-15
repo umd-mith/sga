@@ -9,7 +9,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0062.01"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e2-0062.01"/>
-    <line rend="indent4">It is some being</line>
+    <line rend="indent6">It is some being</line>
     <line>Around the crags &#8212; what fine clear sounds&#8212;o list</line>
     <milestone unit="tei:speaker" spanTo="#e2-0062.02"/>
     <line rend="center"><del rend="strikethrough" instant="true">V</del>Echoes unseen</line>
@@ -30,7 +30,7 @@
     <milestone unit="tei:speaker" spanTo="#e2-0062.04"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e2-0062.04"/>
-    <line rend="indent5">I hear.</line>
+    <line rend="indent7">I hear.</line>
     <line rend="indent3" rotate="180"><add><metamark function="count">125</metamark></add></line>
     <line rend="indent2" rotate="180"><add><metamark function="count"><unclear reason="illegible"
             >60</unclear></metamark></add></line>
@@ -38,15 +38,14 @@
     <milestone unit="tei:speaker" spanTo="#e2-0062.05"/>
     <line rend="center">Echoes</line>
     <anchor xml:id="e2-0062.05"/>
-    <line rend="indent2">O follow follow</line>
-    <line rend="indent2">As our voice recedeth</line>
-    <line rend="indent2">Thro the caverns hollow</line>
-    <line rend="indent3">Where the forest spreadeth</line>
-    <milestone unit="tei:stage" spanTo="#e2-0062.06"/>
-    <line rend="indent5"><add>More distant</add></line>
-    <anchor xml:id="e2-0062.06"/>
     <line rend="indent3">O follow follow</line>
-    <line rend="indent3">Throughthe caverns hollow</line>
+    <line rend="indent3">As our voice recedeth</line>
+    <line rend="indent3">Thro the caverns hollow</line>
+    <line rend="indent4">Where the forest spreadeth <add place="sublinear"><milestone unit="tei:stage" spanTo="#e2-0062.06"/>
+      <add>More distant</add>
+      <anchor xml:id="e2-0062.06"/></add></line>
+    <line rend="indent4">O follow follow</line>
+    <line rend="indent4">Throughthe caverns hollow</line>
     <line>As the song floats<unclear reason="illegible">,</unclear> thou pursue</line>
     <line>Where the wild-bee never flew</line>
     <line rend="right"><add><metamark function="count">173</metamark></add></line>
