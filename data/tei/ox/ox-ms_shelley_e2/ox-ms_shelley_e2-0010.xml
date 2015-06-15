@@ -14,11 +14,10 @@
         <add place="intralinear">a</add>
       </mod>ir—</line>
     <line rend="indent1"><del rend="strikethrough">Hark</del>
-    <milestone unit="tei:stage" spanTo="#e2-0010.01"/>
-      a shadow <delSpan rend="vertical_line"
-        spanTo="#e2-0010.02"/>passes<anchor xml:id="e2-0010.02"/> over the scene</line>
-    <line>&amp; a piercing shriek is heard</line><anchor
-      xml:id="e2-0010.01"/>
+      <delSpan rend="vertical_line" spanTo="#e2-0010.01"/>
+      a shadow passes over the scene</line>
+    <line>&amp; a piercing shriek is heard<anchor
+      xml:id="e2-0010.01"/></line>
     <line rend="indent1">Hark that outcry of despair</line>
     <line rend="indent1">Tis his mild &amp; gentle ghost</line>
     <line rend="indent1">Wailing for the faith he kindled</line>
