@@ -5,5 +5,31 @@
     uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0024" partOf="#ox-ms_shelley_e2" mith:folio="11v" mith:shelfmark="MS. Shelley e. 2">
     <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0024.jp2"/>
     <zone type="main">
+        <line>That climb up the ravine in scattered lines</line>
+        <line>And hark<unclear>!</unclear> is it the music of the pines?</line>
+        <line>Is it the lake? is it the water fall?</line>
+        <milestone unit="tei:speaker" spanTo="#e2-0024.01"/>
+        <line rend="center">Panthea</line>
+        <anchor xml:id="e2-0024.01"/>
+        <line>'Tis something sadder, sweeter far than all.</line>
+        <milestone unit="tei:speaker" spanTo="#e2-0024.02"/>
+        <line rend="center">Chorus of Spirits</line>
+        <anchor xml:id="e2-0024.02"/>
+        <line>From unremembered ages we</line>
+        <line>Gentle guides &amp; guardians be</line>
+        <line>Of Heaven-oppressed <del rend="strikethrough">m</del>mortality—</line>
+        <line>And we breathe, &amp; sicken not,</line>
+        <line>The atmosphere of human thought:</line>
+        <line>Be it dim &amp; dank &amp; grey</line>
+        <line>Like a storm-extinguished day</line>
+        <line>Travelled oer by dying gleams;</line>
+        <line>Be it bright as all between</line>
+        <line>Cloudless skies &amp; windless streans</line>
+        <line>Silent liquid &amp; serene —</line>
+        <line>As the birds within the wind</line>
+        <line>As the fish within the wave</line>
+        <line>As the thoughts of man's own mind</line>
+        <line>Float through all above the grave</line>
+        <line><metamark function="count">671</metamark></line>
     </zone>
 </surface>
