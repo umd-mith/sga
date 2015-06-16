@@ -7,7 +7,8 @@
   <zone type="library">
     <line>37</line></zone>
   <zone type="main" corresp="#e2-0074.03">
-    <line><metamark function="displacement" rend="left_caret"/><milestone unit="tei:stage" spanTo="#e2-0075.01"/>
+    <milestone unit="tei:stage" spanTo="#e2-0075.01"/>
+    <line><metamark function="displacement" rend="left_caret"/>
       <space dim="horizontal" unit="chars" extent="10"></space>
       <del rend="unmarked">ente</del><del rend="strikethrough">r two young</del>
       <del rend="strikethrough"><hi rend="underline">female</hi></del>
