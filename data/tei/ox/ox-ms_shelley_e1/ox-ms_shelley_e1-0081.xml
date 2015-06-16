@@ -8,43 +8,44 @@
     <line>40</line>
   </zone>
   <zone type="main">
-    <line>reasoning upon the subject; but who,</line>
-    <line>when his opinion was required</line>
-    <line><mod>
+    <line xml:id="e1-0081-ion_line_0">reasoning upon the subject; but who,</line>
+    <line xml:id="e1-0081-ion_line_1">when his opinion was required</line>
+    <line xml:id="e1-0081-ion_line_3"><mod>
         <del rend="strikethrough">respecting</del>
         <add place="superlinear">of</add>
       </mod> Polygnotus<unclear reason="illegible">,</unclear> or any</line>
-    <line>one single painter you please, awoke,</line>
-    <line>paid attention to the subject, &amp;</line>
-    <line><del rend="strikethrough">discussed</del> it with great eloquence.</line>
-    <line>illustrat<mod>
+    <line xml:id="e1-0081-ion_line_4">one single painter you please, awoke,</line>
+    <line xml:id="e1-0081-ion_line_5">paid attention to the subject, &amp;</line>
+    <line xml:id="e1-0081-ion_line_6"><del rend="strikethrough">discussed</del> it with great eloquence.</line>
+    <line xml:id="e1-0081-pu_line_0">it clasp</line>
+    <line xml:id="e1-0081-ion_line_7">illustrat<mod>
         <del rend="unmarked">ion</del>
-        <add><hi rend="sup">ed</hi></add><add place="superlinear">it clasp</add>
+        <add><hi rend="sup">ed</hi></add>
       </mod></line>
-    <line><milestone unit="tei:speaker" spanTo="#e1-0081.03"/><hi rend="underline">Ion</hi>.<anchor
+    <line xml:id="e1-0081-ion_line_8"><milestone unit="tei:speaker" spanTo="#e1-0081.03"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0081.03"/> Never, by Jupiter.— <milestone unit="tei:speaker"
         spanTo="#e1-0081.04"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0081.04"/> Did</line>
-    <line>you ever know any one very skilful</line>
-    <line>in disscussing th<unclear reason="illegible">e</unclear> merits of <del
+    <line xml:id="e1-0081-ion_line_9">you ever know any one very skilful</line>
+    <line xml:id="e1-0081-ion_line_10">in disscussing th<unclear reason="illegible">e</unclear> merits of <del
         rend="strikethrough">any</del></line>
-    <line><del rend="strikethrough">one great <unclear>s</unclear> </del> D&#230;ldalus the son of</line>
-      <line>Metion,<add place="superlinear"><unclear reason="illegible">one</unclear></add><unclear
+    <line xml:id="e1-0081-ion_line_11"><del rend="strikethrough">one great <unclear>s</unclear> </del> D&#230;ldalus the son of</line>
+    <line xml:id="e1-0081-ion_line_12">Metion,<add place="superlinear"><unclear reason="illegible">one</unclear></add><unclear
         reason="illegible">Epeius</unclear>
       <del rend="strikethrough">of</del> Panopeus, Theo</line>
-    <line>dorus the Samian or any other</line>
-    <line>great sculptor, who immediately</line>
-    <line>went to sleep &amp; became at a</line>
-    <line>loss the moment any other sculp<anchor xml:id="e1-0081.02"/></line>
-    <line><del rend="strikethrough">To be the Sun of gladness to all life</del></line>
-    <line rend="indent5"><milestone unit="tei:seg" spanTo="#e1-0081.01" corresp="e1-0081.02"/>tor
+    <line xml:id="e1-0081-ion_line_13">dorus the Samian or any other</line>
+    <line xml:id="e1-0081-ion_line_14">great sculptor, who immediately</line>
+    <line xml:id="e1-0081-ion_line_15">went to sleep &amp; became at a</line>
+    <line xml:id="e1-0081-ion_line_16">loss the moment any other sculp<anchor xml:id="e1-0081.02"/></line>
+    <line xml:id="e1-0081-pu_line_1"><del rend="strikethrough">To be the Sun of gladness to all life</del></line>
+    <line xml:id="e1-0081-ion_line_17" rend="indent5"><milestone unit="tei:seg" spanTo="#e1-0081.01" corresp="e1-0081.02"/>tor
         was<anchor xml:id="e1-0081.01"/></line>
-    <line><del rend="strikethrough">To be the sun of joy to the dark world</del></line>
-    <line>mentioned. <milestone unit="tei:speaker" spanTo="#e1-0081.05"/><hi rend="underline"
+    <line xml:id="e1-0081-pu_line_2"><del rend="strikethrough">To be the sun of joy to the dark world</del></line>
+    <line xml:id="e1-0081-ion_line_18">mentioned. <milestone unit="tei:speaker" spanTo="#e1-0081.05"/><hi rend="underline"
         >Ion</hi>.<anchor xml:id="e1-0081.05"/> I never met</line>
-    <line>with such a person certainly.</line>
-    <line><milestone unit="tei:speaker" spanTo="#e1-0081.06"/><hi rend="underline">Soc</hi>.<anchor
+    <line xml:id="e1-0081-ion_line_19">with such a person certainly.</line>
+    <line xml:id="e1-0081-ion_line_20"><milestone unit="tei:speaker" spanTo="#e1-0081.06"/><hi rend="underline">Soc</hi>.<anchor
         xml:id="e1-0081.06"/> Nor do I think you ever</line>
-    <line>saw a man who <del rend="strikethrough">having</del>
+    <line xml:id="e1-0081-ion_line_21">saw a man who <del rend="strikethrough">having</del>
       <del rend="strikethrough">studied</del></line>
   </zone>
 </surface>

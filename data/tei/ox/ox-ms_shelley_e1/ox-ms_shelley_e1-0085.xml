@@ -8,43 +8,42 @@
     <line>42</line>
   </zone>
   <zone type="main">
-    <line><del rend="strikethrough">on this diversity of power.</del></line>
-    <line>I will tell you o Ion what appears</line>
-    <line>to me to be the cause of this</line>
-    <line>inequality of power. It is not</line>
-    <line>that you are possessed of any</line>
-    <line>science for the illustration of Homer;</line>
-    <line>but a divine influence moves</line>
-    <line><add><metamark function="displacement">x</metamark><metamark><hi rend="sup"
+    <line xml:id="e1-0085-ion_line_0"><del rend="strikethrough">on this diversity of power.</del></line>
+    <line xml:id="e1-0085-ion_line_1">I will tell you o Ion what appears</line>
+    <line xml:id="e1-0085-ion_line_2">to me to be the cause of this</line>
+    <line xml:id="e1-0085-ion_line_3">inequality of power. It is not</line>
+    <line xml:id="e1-0085-ion_line_4">that you are possessed of any</line>
+    <line xml:id="e1-0085-ion_line_5">science for the illustration of Homer;</line>
+    <line xml:id="e1-0085-ion_line_6">but a divine influence moves</line>
+    <line xml:id="e1-0085-pu_line_0"><add><metamark function="displacement">x</metamark><metamark><hi rend="sup"
           >?</hi></metamark></add>
       <milestone unit="tei:seg" spanTo="#e1-0085.03" corresp="#e1-0084.08"/>Thou knowest not the
       period of Joves power?<anchor xml:id="e1-0085.03"/></line>
-    <line><del rend="strikethrough">Thou canst not count thy years to come of pain?</del></line>
+    <line xml:id="e1-0085-pu_line_1"><del rend="strikethrough">Thou canst not count thy years to come of pain?</del></line>
     <milestone unit="tei:seg" spanTo="#e1-0085.04" corresp="#e1-0084.09"/>
     <milestone unit="tei:speaker" spanTo="#e1-0085.02"/>
-    <line rend="center"><hi rend="underline">Mer</hi>cury</line>
+    <line  xml:id="e1-0085-pu_line_2" rend="center"><hi rend="underline">Mer</hi>cury</line>
     <anchor xml:id="e1-0085.02"/>
-    <line rend="indent8">alas,</line>
-    <line><add><metamark function="displacement">x</metamark></add>Thou canst not count thy years to
+    <line xml:id="e1-0085-pu_line_3" rend="indent8">alas,</line>
+    <line xml:id="e1-0085-pu_line_4"><add><metamark function="displacement">x</metamark></add>Thou canst not count thy years to
       come of pain?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0085.01"/>
-    <line rend="center">Prometheus</line>
+    <line xml:id="e1-0085-pu_line_5" rend="center">Prometheus</line>
     <anchor xml:id="e1-0085.01"/>
-    <line>They last while Jove must reign, nor more nor less</line>
-    <line>Do I desire or fear<unclear reason="illegible">.</unclear></line>
+    <line xml:id="e1-0085-pu_line_6">They last while Jove must reign, nor more nor less</line>
+    <line xml:id="e1-0085-pu_line_7">Do I desire or fear<unclear reason="illegible">.</unclear></line>
     <anchor xml:id="e1-0085.04"/>
-    <line>you, a power like that which</line>
-    <line><del rend="strikethrough">Euripides</del> resides in the stone called</line>
-    <line>magnet by Euripides &amp; heracleia</line>
-    <line>by the people. For this stone <del rend="strikethrough"><unclear reason="illegible"
+    <line xml:id="e1-0085-ion_line_7">you, a power like that which</line>
+    <line xml:id="e1-0085-ion_line_8"><del rend="strikethrough">Euripides</del> resides in the stone called</line>
+    <line xml:id="e1-0085-ion_line_9">magnet by Euripides &amp; heracleia</line>
+    <line xml:id="e1-0085-ion_line_10">by the people. For this stone <del rend="strikethrough"><unclear reason="illegible"
           >not</unclear></del></line>
-    <line><del rend="strikethrough">not</del> only attracts iron rings, but</line>
-    <line><del rend="strikethrough">endows</del><del rend="strikethrough"><add place="superlinear"
+    <line xml:id="e1-0085-ion_line_11"><del rend="strikethrough">not</del> only attracts iron rings, but</line>
+    <line xml:id="e1-0085-ion_line_12"><del rend="strikethrough">endows</del><del rend="strikethrough"><add place="superlinear"
             ><unclear reason="illegible">in</unclear></add></del>
       <del rend="strikethrough">them</del> communicates<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">to them</add>
       </mod> power</line>
-    <line/>
   </zone>
 </surface>

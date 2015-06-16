@@ -8,21 +8,21 @@
     <line>36</line>
   </zone>
   <zone type="main">
-    <line>This is alone <mod>
+    <line xml:id="e1-0073-pu_line_0">This is alone <mod>
         <del rend="strikethrough">Peace</del>
         <add place="superlinear">Life</add>
       </mod>, <mod>
         <del rend="strikethrough">Peace</del>
         <add place="superlinear">Joy</add>
       </mod>, Empire &amp; Victory</line>
-    <line rend="center"><metamark function="count">5<unclear reason="illegible">33</unclear></metamark></line>
+    <line xml:id="e1-0073-ion_line_0" rend="center"><metamark function="count">5<unclear reason="illegible">33</unclear></metamark></line>
     <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:p" spanTo="#e1-0073.01"/>
-    <line><unclear reason="illegible">T</unclear>hen my dear friend we should not</line>
-    <line>err, <mod>
+    <line xml:id="e1-0073-ion_line_1"><unclear reason="illegible">T</unclear>hen my dear friend we should not</line>
+    <line xml:id="e1-0073-ion_line_2">err, <mod>
         <del rend="strikethrough">in our</del>
       </mod> if we asserted that Ion</line>
-    <line><add xml:id="e1-0073.03">p</add><del rend="smear" next="#e1-0073.03"><unclear
+    <line xml:id="e1-0073-ion_line_3"><add xml:id="e1-0073.03">p</add><del rend="smear" next="#e1-0073.03"><unclear
           reason="illegible">p</unclear></del>ossessed <mod>
         <del rend="strikethrough">the</del>
         <add place="superlinear">a</add>
@@ -31,25 +31,25 @@
         <del rend="strikethrough">same</del>
         <add place="superlinear">like</add>
       </mod> power of</line>
-    <line>illustration respecting Homer &amp; all</line>
-    <line>other poets; especially as he confesses</line>
-    <line>that the same person must be</line>
-    <line><unclear reason="illegible">es</unclear>teemed a competent judge of</line>
-    <line><del rend="strikethrough">others</del> : all 
+    <line xml:id="e1-0073-ion_line_4">illustration respecting Homer &amp; all</line>
+    <line xml:id="e1-0073-ion_line_5">other poets; especially as he confesses</line>
+    <line xml:id="e1-0073-ion_line_6">that the same person must be</line>
+    <line xml:id="e1-0073-ion_line_7"><unclear reason="illegible">es</unclear>teemed a competent judge of</line>
+    <line xml:id="e1-0073-ion_line_8"><del rend="strikethrough">others</del> : all 
       <del rend="strikethrough">that
         <add place="superlinear"><unclear reason="illegible">those</unclear></add>
         is said respecting</del></line>
-    <line>who speak of the same <mod>
+    <line xml:id="e1-0073-ion_line_9">who speak of the same <mod>
         <del rend="strikethrough">things</del>
         <add place="sublinear">subjects</add>
       </mod>,</line>
-    <line>inasmuch as <hi rend="underline">those</hi> subjects are under</line>
-    <line>stood by him, when spoken of by one;</line>
-    <line>and the subject matter of almost</line>
-    <line>all the poets is the same. <milestone unit="tei:speaker" spanTo="#e1-0073.02"/><hi
+    <line xml:id="e1-0073-ion_line_10">inasmuch as <hi rend="underline">those</hi> subjects are under</line>
+    <line xml:id="e1-0073-ion_line_11">stood by him, when spoken of by one;</line>
+    <line xml:id="e1-0073-ion_line_12">and the subject matter of almost</line>
+    <line xml:id="e1-0073-ion_line_13">all the poets is the same. <milestone unit="tei:speaker" spanTo="#e1-0073.02"/><hi
         rend="underline">Ion</hi>.<anchor xml:id="e1-0073.02"/> What</line>
-    <line>then is the reason, Socrates, that</line>
-    <line>when any <del rend="strikethrough"><hi rend="underline">other poet is</hi></del>
+    <line xml:id="e1-0073-ion_line_14">then is the reason, Socrates, that</line>
+    <line xml:id="e1-0073-ion_line_15">when any <del rend="strikethrough"><hi rend="underline">other poet is</hi></del>
       <milestone unit="tei:seg" spanTo="#e1-0073.04" xml:id="e1-0073.06"/><mod>
         <restore type="underline"><del rend="strikethrough"><hi rend="underline">the
             theme</hi></del></restore>
@@ -58,10 +58,10 @@
         >subject</add><anchor xml:id="e1-0073.05"/><alt target="#e1-0073.06 #e1-0073.07"
         mode="excl" weights="0 1"/>
     </line>
-    <line>of conversation, I cannot <mod>
+    <line xml:id="e1-0073-ion_line_16">of conversation, I cannot <mod>
         <del rend="strikethrough">bend</del>
       </mod></line>
-    <line>compel my attention, and I feel</line>
+    <line xml:id="e1-0073-ion_line_17">compel my attention, and I feel</line>
     <anchor xml:id="e1-0073.01"/>
   </zone>
 </surface>

@@ -8,22 +8,22 @@
     <line>27</line>
   </zone>
   <zone type="main">
-    <line>incompetent to determine<add place="superlinear"> also</add> on <mod>
+    <line xml:id="e1-0055-ion_line_0">incompetent to determine<add place="superlinear"> also</add> on <mod>
         <del rend="strikethrough">the</del>
         <add place="superlinear">its</add>
       </mod> truth</line>
-    <line>or beauty. <del rend="strikethrough">of</del>
+    <line xml:id="e1-0055-ion_line_1">or beauty. <del rend="strikethrough">of</del>
       <milestone unit="tei:speaker" spanTo="#e1-0055.01"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0055.01"/> Assuredly. <del rend="strikethrough">The</del>
       <milestone unit="tei:speaker" spanTo="#e1-0055.02"/><hi rend="underline">Soc</hi><anchor
         xml:id="e1-0055.02"/></line>
-    <line>The same person then is competent to</line>
-    <line>both<unclear reason="illegible">.</unclear><unclear reason="illegible">—</unclear>
+    <line xml:id="e1-0055-ion_line_2">The same person then is competent to</line>
+    <line xml:id="e1-0055-ion_line_3">both<unclear reason="illegible">.</unclear><unclear reason="illegible">—</unclear>
       <milestone unit="tei:speaker" spanTo="#e1-0055.03"/><hi rend="underline"
         >Ion</hi>—<anchor xml:id="e1-0055.03"/> Yes. <milestone unit="tei:speaker"
         spanTo="#e1-0055.04"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0055.04"/> And yet
       you</line>
-    <line>say that <mod>
+    <line xml:id="e1-0055-ion_line_4">say that <mod>
         <del rend="strikethrough">in your</del>
         <del rend="unmarked"><add place="superlinear">you</add></del>
       </mod>
@@ -36,16 +36,16 @@
           </mod><del rend="smear">on</del></del>
         <del rend="strikethrough"><add place="superlinear">can judge &amp; explain</add></del>
       </mod></line>
-    <line>Homer<add place="superlinear"> power of explaining</add> &amp; <del rend="strikethrough"
+    <line xml:id="e1-0055-ion_line_5">Homer<add place="superlinear"> power of explaining</add> &amp; <del rend="strikethrough"
         >the</del> other poets,<add place="superlinear"> &amp;</add> amongst<add place="superlinear"
       /> your <mod>
         <del rend="strikethrough">whom</del>
         <add place="sublinear">them</add>
       </mod></line>
-    <line>Hesiod &amp; Archilochus is unequal<del rend="strikethrough"><unclear reason="illegible"
+    <line xml:id="e1-0055-ion_line_6">Hesiod &amp; Archilochus is unequal<del rend="strikethrough"><unclear reason="illegible"
           >;</unclear></del></line>
-    <line>&amp; that you <unclear reason="illegible">can</unclear> illustrate this</line>
-    <line>poet <add place="sublinear">?</add>better
+    <line xml:id="e1-0055-ion_line_7">&amp; that you <unclear reason="illegible">can</unclear> illustrate this</line>
+    <line xml:id="e1-0055-ion_line_8">poet <add place="sublinear">?</add>better
       &amp; th<mod>
         <del rend="smear">at</del>
         <add place="superlinear">ose</add>
@@ -54,16 +54,16 @@
     <!-- "almighty" here is a used alternative or replacement for canceled "invisible" on 26v. On 
     top of that, we've encoded here as having its own line, but it is really overwritten by "better" on the
     line above, but not to cancel-->
-    <line rend="indent1"><add><milestone unit="tei:seg" spanTo="#e1-0055.08" corresp="#e1-0054.01"
+    <line xml:id="e1-0055-pu_line_0" rend="indent1"><add><milestone unit="tei:seg" spanTo="#e1-0055.08" corresp="#e1-0054.01"
           />almighty<anchor xml:id="e1-0055.08"/></add></line>
-    <line>I speak tru<mod>
+    <line xml:id="e1-0055-ion_line_9">I speak tru<mod>
         <del rend="overwritten">th</del>
         <add place="intralinear">e</add>
       </mod>.<del rend="unmarked"><unclear reason="illegible">;</unclear></del>
       <milestone unit="tei:speaker" spanTo="#e1-0055.x"/><hi rend="underline">Soc</hi>.<anchor
         xml:id="e1-0055.x"/> Yet if you</line>
-    <line>would <del rend="strikethrough">judge</del> determine that which is</line>
-    <line><mod>
+    <line xml:id="e1-0055-ion_line_10">would <del rend="strikethrough">judge</del> determine that which is</line>
+    <line xml:id="e1-0055-ion_line_11"><mod>
         <del rend="strikethrough"><del rend="smear">judge</del>
           <unclear unit="chars" extent="2"/> beautiful</del>
         <add place="superlinear">excellen<mod>
@@ -72,23 +72,28 @@
           </mod></add>
       </mod> in <add place="superlinear"> is<add place="superlinear"><unclear reason="illegible"
             >is</unclear></add></add> one, you must</line>
-    <line>also know that which is <add place="superlinear">expressed</add> inferior in</line>
+    <line xml:id="e1-0055-ion_line_12">also know that which is <add place="superlinear">expressed</add> inferior in</line>
     <!-- "bier" is an unused option for "light" in e1 26v line 26 -->
-    <line>another, <add place="superlinear"><milestone unit="tei:seg" spanTo="#e1-0055.09"
-          xml:id="e1-0055.10"/><unclear reason="illegible">bier</unclear><anchor xml:id="e1-0055.09"
-        /></add><mod>
+    <line><milestone unit="tei:seg" xml:id="e1-0055-ion_line_13a" spanTo="#e1-0055.99"/>another, <anchor xml:id="e1-0055.99"/>
+      <add place="superlinear"><milestone unit="tei:seg" spanTo="#e1-0055.09"
+      xml:id="e1-0055-pu_line_1"/><unclear reason="illegible">bier</unclear><anchor xml:id="e1-0055.09"
+        /></add>
+      <milestone unit="tei:seg" xml:id="e1-0055-ion_line_13b" spanTo="#e1-0055.98"/>
+      <mod>
         <del rend="strikethrough"><unclear reason="illegible">in</unclear> the composition <unclear
             reason="illegible">of</unclear>
           <unclear reason="illegible">their</unclear></del>
         <add place="sublinear">inasmuch as it is inferior.—</add>
-      </mod></line>
-    <line><milestone unit="tei:speaker" spanTo="#e1-0055.06"/><hi rend="underline">Ion</hi><anchor
+      </mod>
+      <anchor xml:id="e1-0055.98"/>
+    </line>
+    <line xml:id="e1-0055-ion_line_14"><milestone unit="tei:speaker" spanTo="#e1-0055.06"/><hi rend="underline">Ion</hi><anchor
         xml:id="e1-0055.06"/> So it should seem. <milestone unit="tei:speaker" spanTo="#e1-0055.07"
         /><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0055.07"/> Then</line>
-    <line><metamark function="unclear" rend="left_caret"/> Blue thistles bloomed in cities; foodless
+    <line xml:id="e1-0055-pu_line_2"><metamark function="unclear" rend="left_caret"/> Blue thistles bloomed in cities; foodless
       toads</line>
-    <line>Within voluptuous chambers panting crawled;</line>
-    <line><mod>
+    <line xml:id="e1-0055-pu_line_3">Within voluptuous chambers panting crawled;</line>
+    <line xml:id="e1-0055-pu_line_4"><mod>
         <del rend="strikethrough">For</del>
         <add place="sublinear">When</add>
       </mod>
@@ -96,12 +101,12 @@
         <del rend="overwritten">p</del>
         <add place="intralinear">P</add>
       </mod>lague had fallen</line>
-    <line rend="indent1"><del rend="strikethrough"><add>The corn</add></del></line>
-    <line rend="indent1"><add><metamark function="insert" rend="short_vertical_line"/></add><mod>
+    <line xml:id="e1-0055-pu_line_5" rend="indent1"><del rend="strikethrough"><add>The corn</add></del></line>
+    <line xml:id="e1-0055-pu_line_6" rend="indent1"><add><metamark function="insert" rend="short_vertical_line"/></add><mod>
         <del rend="strikethrough">The corn fields &amp; the vineyards &amp; the meadows</del>
         <add place="superlinear">And in the corn, &amp; vines &amp; meadow grass</add>
       </mod></line>
-    <line rend="indent1">Teemed ineradicable poisonous weeds</line>
-    <line rend="indent1">Draining their growth, for my wan breast was dry</line>
+    <line xml:id="e1-0055-pu_line_7" rend="indent1">Teemed ineradicable poisonous weeds</line>
+    <line xml:id="e1-0055-pu_line_8" rend="indent1">Draining their growth, for my wan breast was dry</line>
   </zone>
 </surface>

@@ -8,19 +8,29 @@
     <line>37</line>
   </zone>
   <zone type="main">
-    <line xml:id="e1-0075-pu_line_0">utterly unable <add place="sublinear"><del rend="smear"><unclear reason="illegible">Enter
-      Mer</unclear></del></add> to <del rend="strikethrough"><unclear reason="illegible"
+    <line>
+      <milestone unit="tei:seg" xml:id="e1-0075-ion_line_0a" spanTo="#e1-0075.98"/>
+      utterly unable 
+      <anchor xml:id="e1-0075.98"/>
+      <add place="sublinear">
+      <milestone unit="tei:seg" xml:id="e1-0075-pu_line_0" spanTo="#e1-0075.99"/>
+      <del rend="smear"><unclear reason="illegible">Enter
+      Mer</unclear></del><anchor xml:id="e1-0075.99"/></add>
+      <milestone unit="tei:seg" xml:id="e1-0075-ion_line_0b" spanTo="#e1-0075.97"/>
+      to <del rend="strikethrough"><unclear reason="illegible"
         >put</unclear></del>
       <del rend="strikethrough"><unclear reason="illegible">d</unclear></del>
-      <del rend="strikethrough">compose</del></line>
-    <line>improvise any thing worth speaking</line>
-    <line>of <mod>
+      <del rend="strikethrough">compose</del>
+      <anchor xml:id="e1-0075.97"/>
+    </line>
+    <line xml:id="e1-0075-ion_line_1">improvise any thing worth speaking</line>
+    <line xml:id="e1-0075-ion_line_2">of <mod>
         <del rend="overwritten">,</del>
         <add place="intralinear">—</add>
       </mod> &amp; positively go to sleep;</line>
-    <line>but when anyone reminds me of</line>
-    <line>Homer, I awaken<add place="superlinear">instantly</add> as from a</line>
-    <line>trance, I <mod>
+    <line xml:id="e1-0075-ion_line_3">but when anyone reminds me of</line>
+    <line xml:id="e1-0075-ion_line_4">Homer, I awaken<add place="superlinear">instantly</add> as from a</line>
+    <line xml:id="e1-0075-ion_line_5">trance, I <mod>
         <del rend="strikethrough"><mod>
             <del rend="overwritten">bend</del>
             <add place="intralinear">apply</add>
@@ -28,34 +38,32 @@
         <add place="sublinear">apply</add>
       </mod> my<del rend="strikethrough">self</del>
       <add>mind</add></line>
-    <line/>
-    <line>without effort to the subject, &amp;</line>
-    <line>feel a throng<del rend="strikethrough">ing</del> &amp; profusion of</line>
-    <line>expressions suggest themselves</line>
-    <line/>
-    <line>involuntarily.— <milestone unit="tei:speaker" spanTo="#e1-0075.05"/><hi
+    <line xml:id="e1-0075-ion_line_6">without effort to the subject, &amp;</line>
+    <line xml:id="e1-0075-ion_line_7">feel a throng<del rend="strikethrough">ing</del> &amp; profusion of</line>
+    <line xml:id="e1-0075-ion_line_8">expressions suggest themselves</line>
+    <line xml:id="e1-0075-ion_line_9">involuntarily.— <milestone unit="tei:speaker" spanTo="#e1-0075.05"/><hi
         rend="underline">Soc</hi><anchor xml:id="e1-0075.05"/>
       <mod>
         <del rend="strikethrough">The cause</del>
         <add place="superlinear">It</add>
       </mod> is</line>
-    <line>not difficult to conjecture the cause.</line>    
-    <line>You are evidently unable to speak</line>
-    <line>concerning Homer according to art or</line>
-    <line><del rend="strikethrough">kno</del>
+    <line xml:id="e1-0075-ion_line_10">not difficult to conjecture the cause.</line>    
+    <line xml:id="e1-0075-ion_line_11">You are evidently unable to speak</line>
+    <line xml:id="e1-0075-ion_line_12">concerning Homer according to art or</line>
+    <line xml:id="e1-0075-ion_line_13"><del rend="strikethrough">kno</del>
       <del rend="strikethrough">science</del> knowledge; for if you,</line>
-    <line>could speak according to <del rend="strikethrough">you<unclear reason="illegible"
+    <line xml:id="e1-0075-ion_line_14">could speak according to <del rend="strikethrough">you<unclear reason="illegible"
           >r</unclear></del> art,</line>
-    <line>you would be equally <milestone unit="tei:seg" spanTo="#e1-0075.01" xml:id="e1-0075.03"/><mod>
+    <line xml:id="e1-0075-ion_line_15">you would be equally <milestone unit="tei:seg" spanTo="#e1-0075.01" xml:id="e1-0075.03"/><mod>
         <restore type="underline"><del rend="strikethrough"><hi rend="underline"
             >competent</hi></del></restore>
       </mod><anchor xml:id="e1-0075.01"/></line>
-    <line><milestone unit="tei:seg" spanTo="#e1-0075.02" xml:id="e1-0075.04"/>capable<anchor
+    <line xml:id="e1-0075-ion_line_16"><milestone unit="tei:seg" spanTo="#e1-0075.02" xml:id="e1-0075.04"/>capable<anchor
         xml:id="e1-0075.02"/> of illustrating <unclear reason="illegible">any</unclear> of the<alt
         target="#e1-0075.03 #e1-0075.04" mode="excl" weights="0 1"/></line>
-    <line>other poets; as the materials</line>
-    <line>of their composition no less than</line>
-    <line>the art <del rend="strikethrough">which</del> of criticism which</line>
+    <line xml:id="e1-0075-ion_line_17">other poets; as the materials</line>
+    <line xml:id="e1-0075-ion_line_18">of their composition no less than</line>
+    <line xml:id="e1-0075-ion_line_19">the art <del rend="strikethrough">which</del> of criticism which</line>
   </zone>
   <zone type="sketch"><add>Edi<unclear reason="illegible">th</unclear> Sit<unclear reason="illegible">na</unclear></add></zone>
 </surface>

@@ -2,27 +2,26 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0053" partOf="#ox-ms_shelley_e1"   mith:folio="26r" mith:shelfmark="MS. Shelley e. 1">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e1-0053.jp2"/>
+  uly="0" lrx="5406" lry="7276" xml:id="e1-0053" partOf="#ox-ms_shelley_e1"   mith:folio="26r" mith:shelfmark="MS. Shelley e. 1">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/e1-0053.jp2"/>
   <zone type="library">
     <line>26</line>
   </zone>
   <zone type="main">
-    <line>arithmetic<retrace cause="unclear">?</retrace>
+    <line xml:id="e1-0053-ion_line_0">arithmetic<retrace cause="unclear">?</retrace>
       <milestone unit="tei:speaker" spanTo="#e1-0053.01"/>Ion.<anchor xml:id="e1-0053.01"/>
       Certainly. <milestone unit="tei:speaker" spanTo="#e1-0053.02"/>Soc.<anchor xml:id="e1-0053.02"/>
       <del rend="strikethrough">Suppose</del></line>
-    <line>among <unclear reason="illegible">s</unclear>everal people <mod>
+    <line xml:id="e1-0053-ion_line_1">among <unclear reason="illegible">s</unclear>everal people <mod>
         <del rend="strikethrough">deciding</del>
         <del rend="strikethrough"><unclear reason="illegible">respect</unclear></del>
         <add place="superlinear">giving their opinions</add>
       </mod></line>
-    <line><mod>
+    <line xml:id="e1-0053-ion_line_2"><mod>
         <del rend="strikethrough">on</del>
         <add place="superlinear">upon</add>
       </mod> the wholesomeness of different foods</line>
-    <line/>
-    <line>whether would <mod>
+    <line xml:id="e1-0053-ion_line_3">whether would <mod>
         <del rend="strikethrough">one</del>
         <add place="superlinear">one</add>
       </mod> person <mod>
@@ -33,55 +32,54 @@
         <del rend="strikethrough"><add place="superlinear">be competent to <unclear
               reason="illegible">pronounce</unclear></add></del>
       </mod> the</line>
-    <line/>
-    <line><mod>
+    <line xml:id="e1-0053-ion_line_4"><mod>
         <del rend="strikethrough"><mod>
             <del rend="overwritten">which</del>
             <add place="intralinear">rectitude</add>
           </mod> of</del>
         <del rend="strikethrough">W<unclear unit="chars" extent="3"/></del>
       </mod> rectitude of the opinion<del rend="strikethrough">s</del></line>
-    <line>of those who judged rightly, and another</line>
+    <line xml:id="e1-0053-ion_line_5">of those who judged rightly, and another</line>
     <!-- "pass" overwrites "fell" from PU in the fascimile, for now just encoding "fell" in another
       line as an addition -->
-    <line><unclear reason="illegible">pass</unclear> upon the erroneousness of those</line>
-    <line><add><milestone unit="tei:seg" spanTo="#e1-0053.07" corresp="#e1-0052.06"/>fell<anchor
+    <line xml:id="e1-0053-ion_line_6"><unclear reason="illegible">pass</unclear> upon the erroneousness of those</line>
+    <line xml:id="e1-0053-ion_line_7"><add><milestone unit="tei:seg" spanTo="#e1-0053.07" corresp="#e1-0052.06"/>fell<anchor
           xml:id="e1-0053.07"/></add></line>
-    <line>which were incorrect, or would the same</line>
-    <line>person be competent to decide respecting</line>
-    <line><mod>
+    <line xml:id="e1-0053-ion_line_8">which were incorrect, or would the same</line>
+    <line xml:id="e1-0053-ion_line_9">person be competent to decide respecting</line>
+    <line xml:id="e1-0053-ion_line_10"><mod>
         <del rend="overwritten"><unclear unit="chars" extent="2"/></del>
         <add place="intralinear">bo</add>
       </mod>th.— <milestone unit="tei:speaker" spanTo="#e1-0053.03"/><hi rend="underline"
         >Ion</hi><anchor xml:id="e1-0053.03"/>
       <unclear reason="illegible">T</unclear>he same evidently. <milestone unit="tei:speaker"
         spanTo="#e1-0053.04"/><hi rend="underline">Soc</hi><anchor xml:id="e1-0053.04"/></line>
-    <line>What should you call that person. <milestone unit="tei:speaker" spanTo="#e1-0053.05"/><hi
+    <line xml:id="e1-0053-ion_line_11">What should you call that person. <milestone unit="tei:speaker" spanTo="#e1-0053.05"/><hi
         rend="underline">Ion</hi><anchor xml:id="e1-0053.05"/></line>
-    <line><unclear reason="illegible"><unclear reason="case">a</unclear></unclear>
+    <line xml:id="e1-0053-ion_line_12"><unclear reason="illegible"><unclear reason="case">a</unclear></unclear>
       <unclear reason="case">a</unclear> physician. <milestone unit="tei:speaker"
         spanTo="#e1-0053.06"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0053.06"/> We may
       then</line>
-    <line>assert universally, that the same</line>
-    <line>person who is competent to judge</line>
-    <line>of the truth is competent also to</line>
-    <line>determine the falshood of whatever</line>
-    <line>is asserted on the same topic; and</line>
-    <line>it is manifest that <del rend="strikethrough"><unclear reason="illegible"
+    <line xml:id="e1-0053-ion_line_13">assert universally, that the same</line>
+    <line xml:id="e1-0053-ion_line_14">person who is competent to judge</line>
+    <line xml:id="e1-0053-ion_line_15">of the truth is competent also to</line>
+    <line xml:id="e1-0053-ion_line_16">determine the falshood of whatever</line>
+    <line xml:id="e1-0053-ion_line_17">is asserted on the same topic; and</line>
+    <line xml:id="e1-0053-ion_line_18">it is manifest that <del rend="strikethrough"><unclear reason="illegible"
         >if</unclear></del> he <add place="superlinear">who</add> cannot</line>
-    <line>judge respecting the falshood or unfitness</line>
-    <line rend="indent1">what is said on a given subject</line>
-    <line>of <del rend="strikethrough">any assertion</del> what <del rend="strikethrough">is
+    <line xml:id="e1-0053-ion_line_19">judge respecting the falshood or unfitness</line>
+    <line xml:id="e1-0053-ion_line_20" rend="indent1">what is said on a given subject</line>
+    <line xml:id="e1-0053-ion_line_21">of <del rend="strikethrough">any assertion</del> what <del rend="strikethrough">is
       said,</del> is</line>
     
     <addSpan spanTo="#e1-0053.99"/>
-    <line rend="center">Prometheus</line>
-    <line rend="indent5">And wh<mod>
+    <line xml:id="e1-0053-pu_line_0" rend="center">Prometheus</line>
+    <line xml:id="e1-0053-pu_line_1" rend="indent5">And wh<mod>
           <del rend="overwritten">o</del>
           <add place="intralinear">at</add>
         </mod> art thou</line>
-    <line>O melancholy voice</line>    
-    <line rend="center"><milestone unit="tei:speaker" spanTo="#e1-0053.98"/>The Earth<anchor xml:id="e1-0053.98"/></line><anchor xml:id="e1-0053.99"/>
+    <line xml:id="e1-0053-pu_line_2">O melancholy voice</line>    
+    <line xml:id="e1-0053-pu_line_3" rend="center"><milestone unit="tei:speaker" spanTo="#e1-0053.98"/>The Earth<anchor xml:id="e1-0053.98"/></line><anchor xml:id="e1-0053.99"/>
     
   </zone>
 </surface>
