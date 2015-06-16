@@ -6,6 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0009.jp2"/>
   <zone type="library"><line rend="right">2</line></zone>
   <zone type="main">
+    <space dim="vertical" unit="lines" extent="7"/>
     <line><milestone unit="tei:seg" spanTo="#e3-0009.01" corresp="#e3-0008.02"/><add>till
         marble</add><anchor xml:id="e3-0009.01"/></line>
   </zone>
