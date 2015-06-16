@@ -10,10 +10,7 @@
     <anchor xml:id="e3-0014.01"/>
     <line>The rocks are cloven, &amp; through the purple night</line>
     <line>I see Cars drawn by rainbow-winged steeds</line>
-    <milestone unit="tei:l" spanTo="#e3-0014.02"/>
-    <line>Which trample the dim winds <unclear reason="illegible">:</unclear> in each there</line>
-    <line rend="right">stands</line>
-    <anchor xml:id="e3-0014.02"/>
+    <line>Which trample the dim winds <unclear reason="illegible">:</unclear> in each there <add place="sublinear">stands</add></line>
     <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight <unclear
         reason="illegible">.</unclear></line>
     <line>Some look behind, as fiends pursued them there</line>
@@ -33,7 +30,7 @@
     <milestone unit="tei:speaker" spanTo="#e3-0014.03"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0014.03"/>
-    <line rend="indent2">These are the immortal Hours</line>
+    <line rend="indent4">These are the immortal Hours</line>
     <line>Of whom thou didst demand&#8212;one waits for thee</line>
     <milestone unit="tei:speaker" spanTo="#e3-0014.04"/>
     <line rend="center">Asia</line>
@@ -44,10 +41,7 @@
         <add place="superlinear"><unclear reason="illegible">Ch</unclear></add>
       </mod><anchor xml:id="e3-0014.06"/> chariot by the craggy gulph</line>
     <line>Unlike thy brethren &#8212; ghastly charioteer</line>
-    <milestone unit="tei:l" spanTo="#e3-0014.05"/>
-    <line>What art thou? whither wouldst thou bear me</line>
-    <line rend="right">?</line>
-    <anchor xml:id="e3-0014.05"/>
-    <line rend="indent5"><del rend="strikethrough">Speak.</del></line>
+    <line>What art thou? whither wouldst thou bear me <add place="sublinear">?</add></line>
+    <line rend="indent6"><del rend="strikethrough">Speak.</del></line>
   </zone>
 </surface>
