@@ -6,7 +6,9 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0033.jp2"/>
   <zone type="library"><line rend="right">14</line></zone>
   <zone type="main">
+    <space dim="vertical" unit="lines" extent="4"/>
     <line><add><metamark function="displacement">&#60;</metamark></add></line>
-    <line rend="left"><add><metamark function="count">40</metamark></add></line>
+    <space dim="vertical" unit="lines" extent="4"/>
+    <line><add><metamark function="count">40</metamark></add></line>
   </zone>
 </surface>
