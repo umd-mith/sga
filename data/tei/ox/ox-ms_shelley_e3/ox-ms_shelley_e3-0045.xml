@@ -6,20 +6,20 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0045.jp2"/>
   <zone type="library"><line rend="right">20</line></zone>
   <zone type="main">
-    <line>Orbits measureless, are furled</line>
-    <line>In that frail &amp; fading sphere</line>
-    <line><mod>
+    <line xml:id="e3-0045-oth_line_0">Orbits measureless, are furled</line>
+    <line xml:id="e3-0045-oth_line_1">In that frail &amp; fading sphere</line>
+    <line xml:id="e3-0045-oth_line_2"><mod>
         <del rend="overwritten">D</del>
         <add place="intralinear">W</add>
       </mod>ith ten million gathered there</line>
-    <line>To tremble, gleam, &amp; dissappear!&#8212;</line>
-    <!--<zone type="bottom">-->
-      <line><milestone unit="tei:seg" spanTo="#e3-0045.01" xml:id="e3-0045.02"/>let us not<anchor
+    <line xml:id="e3-0045-oth_line_3">To tremble, gleam, &amp; dissappear!&#8212;</line>
+    <line xml:id="e3-0045-pu_line_0"><milestone unit="tei:seg" spanTo="#e3-0045.01" xml:id="e3-0045.02"/>let us not<anchor
         xml:id="e3-0045.01"/></line>
+    <zone type="calculation">
       <line rend="indent3">12)<hi rend="underline">8000</hi></line>
       <line rend="indent3">20)<hi rend="underline">666</hi>- 8</line>
       <line rend="indent3">33</line>
-    <!--</zone>-->
+    </zone>
   </zone>
   
 </surface>
