@@ -270,10 +270,10 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
         vals = $(e).val()
         vals = vals.split /\s+/g
         for v in vals
-          if v != 'all'
+          if v != 'default'
             @limitValues.push v
 
-      # Apply css to limited and visible object according to selected class
+      # Apply css to limited and visible object according to selected class      
       @$el.change (e) =>
         checked = $(e.target).val()
         checked = checked.split /\s+/g
@@ -281,7 +281,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
         # Remove limit view css if present
         $('#LimitViewControls_classes').remove()
 
-        if 'all' not in checked
+        if 'default' not in checked
 
           css = ""
           hide = ""
@@ -305,13 +305,16 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
           # Append new style definitions to head
           $("<style type='text/css' id='LimitViewControls_classes'>#{css}</style>").appendTo("head")
 
+      # Simulate clicking default value at initialization to activate default colors.
+      @$el.find('input:checked').change()
+
     reset: ->
       $('#LimitViewControls_classes').remove()
       @$el.find('input').each (i,e) =>
         vals = $(e).val()
         vals = vals.split /\s+/g
         for v in vals
-          if v == 'all'
+          if v == 'default'
             $(e).prop('checked', true)
           else
             $(e).prop('checked', false)
