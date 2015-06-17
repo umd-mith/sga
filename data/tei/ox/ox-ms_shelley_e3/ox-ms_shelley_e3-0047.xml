@@ -6,9 +6,11 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0047.jp2"/>
   <zone type="library"><line rend="right">21</line></zone>
   <zone type="main">
+    <space dim="vertical" unit="lines" extent="5"/>
     <milestone unit="tei:seg" spanTo="#e3-0047.03" xml:id="e3-0047.04"/>
     <line>Cling pendent</line>
     <anchor xml:id="e3-0047.03"/>
+    <space dim="vertical" unit="lines" extent="12"/>
     <milestone unit="tei:seg" spanTo="#e3-0047.02" corresp="#e3-0046.04"/>
     <line rend="right"><add><metamark function="displacement">&#8212;</metamark></add> &amp;
       beams</line>
