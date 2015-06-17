@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="ox-ms_prometheus_unbound_act_iv">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Misery.—A Fragment</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editors</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                    <name xml:id="DR">Dave Rettenmaier</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2015</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Oxford University</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records
+                            for the Shelley-Godwin Archive have waived all copyright and related or
+                            neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Shelley e. 2</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="#ox-ms_shelley_e2-0071"/>
+                                <locus target="#ox-ms_shelley_e2-0069"/>
+                                <locus target="#ox-ms_shelley_e2-0067"/>
+                                <locus target="#ox-ms_shelley_e2-0065"/>
+                                <locus target="#ox-ms_shelley_e2-0063"/> 
+                            </locusGrp>
+                            <bibl status="draft">
+                                <author>Percy Shelley</author>
+                                <title type="main">Misery.--A Fragment</title>
+                                <date notBefore="1819-03" notAfter="1819-12">March 1819-[?December 1819]</date>
+                            </bibl>
+                        </msItem>
+                        
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <sourceDoc>
+<xi:include href="ox-ms_shelley_e2/ox-ms_shelley_e2-0071.xml"/>
+<xi:include href="ox-ms_shelley_e2/ox-ms_shelley_e2-0069.xml"/>
+<xi:include href="ox-ms_shelley_e2/ox-ms_shelley_e2-0067.xml"/>
+<xi:include href="ox-ms_shelley_e2/ox-ms_shelley_e2-0065.xml"/>
+<xi:include href="ox-ms_shelley_e2/ox-ms_shelley_e2-0063.xml"/>
+    </sourceDoc>
+</TEI>
