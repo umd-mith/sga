@@ -22,20 +22,17 @@
     <milestone unit="tei:speaker" spanTo="#e3-0024.01"/>
     <line rend="center"><del rend="strikethrough">Panthea</del></line>
     <anchor xml:id="e3-0024.01"/>
-    <line rend="indent4">list, spirits speak <unclear reason="illegible">.</unclear></line>
+    <line rend="indent6">list, spirits speak <unclear reason="illegible">.</unclear></line>
     <milestone unit="tei:speaker" spanTo="#e3-0024.02"/>
-    <line rend="center"><mod>
-        <del rend="strikethrough">Song of an enamoured Spirit</del>
-        <add place="sublinear">Voice in the Air</add>
-      </mod></line>
+    <line rend="center">Voice in the Air <add place="superlinear"><del rend="strikethrough">Song of an enamoured Spirit</del></add></line>
     <anchor xml:id="e3-0024.02"/>
     <line>Life of life! thy lips enkindle</line>
     <line>With their love the breath beteen them</line>
     <line>And thy smiles before they dwindle</line>
     <line>Make the cold air fire; then screen them</line>
-    <line rend="indent1">In those looks where whoso gazes</line>
-    <line rend="indent1">Faints, entangled in their mazes</line>
-    <line/>
+    <line>In those looks where whoso gazes</line>
+    <line>Faints, entangled in their mazes</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line>Child of Light! thy limbs are burning</line>
     <line>Thro the vest which seems to hide them</line>
   </zone>
