@@ -1865,9 +1865,9 @@ ul.circle-yes li:before { background-color: #a54647; }
 .meta-data-filter .accordion-inner .control-group:last-child { margin-bottom: 0; }
 
 /* ___ Limit View ____________________________________________________*/
-#hand-view-controls { max-height: 30px; margin-top: -2px; }
-#hand-view-controls .control-label { text-transform:uppercase; color: #a54647; font-weight: normal; font-size: 0.75em; line-height: normal; }
-#hand-view-controls .radio-inline { font-size: 0.75em; font-weight: normal; line-height: 14px; padding-left: 0; }
+#limit-view-controls { max-height: 30px; margin-top: -2px; }
+#limit-view-controls .control-label { text-transform:uppercase; color: #a54647; font-weight: normal; font-size: 0.75em; line-height: normal; }
+#limit-view-controls .radio-inline { font-size: 0.75em; font-weight: normal; line-height: 14px; padding-left: 0; }
 
 /* ___ Detail View Results __________________________________________*/
 .detail-view-results .col-xs-12 { float: left; }
