@@ -243,7 +243,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       # Limit View Controls
       limitViewControls = new SGASharedCanvas.Component.LimitViewControls
-        el : '#hand-view-controls'
+        el : '#limit-view-controls'
         include: ['hand-library', 'hand-comp']
         defLimiter: 'hand-mws'
 
@@ -795,12 +795,16 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           padding = 0
 
           prev1 = @currentLineEl.prev()
+          next1 = @currentLineEl.next()
 
           if model.get("align")?
             @currentLineEl.data
               'align' : model.get("align")
 
             # Add alignment to interlinear additions, if present
+            if next1.hasClass('below-line')
+              next1.data
+                  'align_addition': 'with_above'
             if prev1.hasClass('above-line')
               prev1.data
                   'align_addition': 'with_below'
@@ -809,7 +813,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             @currentLineEl.data
                  'indent': model.get("indent")
 
-            # Add indentation to interlinear additions, if present            
+            # Add indentation to interlinear additions, if present   
+            if next1.hasClass('below-line')
+              next1.data
+                  'align_addition': 'with_above'
             if prev1.hasClass('above-line')
               prev1.data
                   'align_addition': 'with_below'
