@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xml:id="ox-ms_prometheus_unbound_act_iv">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Ode to Heaven</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editors</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                    <name xml:id="DR">Dave Rettenmaier</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2015</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Oxford University</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records
+                            for the Shelley-Godwin Archive have waived all copyright and related or
+                            neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Shelley e. 2</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="#ox-ms_shelley_e3-0039"/>
+                                <locus target="#ox-ms_shelley_e3-0041"/>
+                                <locus target="#e3-0043_oth_line_0
+                                    #e3-0043_oth_line_1
+                                    #e3-0043_oth_line_2
+                                    #e3-0043_oth_line_3
+                                    #e3-0043_oth_line_4
+                                    #e3-0043_oth_line_5
+                                    #e3-0043_oth_line_6
+                                    #e3-0043_oth_line_7
+                                    #e3-0043_oth_line_8
+                                    #e3-0043_oth_line_9
+                                    #e3-0043_oth_line_10
+                                    #e3-0043_oth_line_11
+                                    #e3-0043_oth_line_12
+                                    #e3-0043_oth_line_13
+                                    #e3-0043_oth_line_14
+                                    #e3-0043_oth_line_15
+                                    #e3-0043_oth_line_16
+                                    #e3-0043_oth_line_17
+                                    #e3-0043_oth_line_18"/>
+                                <locus target="#e3-0045_oth_line_0
+                                    #e3-0045_oth_line_1
+                                    #e3-0045_oth_line_2
+                                    #e3-0045_oth_line_3"/>
+                            </locusGrp>
+                            <bibl status="draft">
+                                <author>Percy Shelley</author>
+                                <title type="main">Ode to Heaven</title>
+                                <date notAfter="1819-12">late 1819</date>
+                            </bibl>
+                        </msItem>
+                        
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <sourceDoc>
+        <xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0039.xml"/>
+        <xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0041.xml"/>
+        <xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0043.xml"/>
+        <xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0045.xml"/>
+    </sourceDoc>
+</TEI>
