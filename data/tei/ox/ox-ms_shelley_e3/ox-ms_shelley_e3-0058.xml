@@ -27,7 +27,7 @@
     <line>Inspiring calm &amp; happy thoughts, like mine</line>
     <line>Now thou art thus restored ... that Cave is thine</line>
     <milestone unit="tei:stage" spanTo="#e3-0058.01"/>
-    <line rend="indent2">A Spirit arises in the likeness of a winged child</line>
+    <line rend="indent3">A Spirit arises in the likeness of a winged child</line>
     <anchor xml:id="e3-0058.01"/>
     <line>Arise! appear! this is my torch-bearer</line>
     <line>Who let his lamp out in old time with gazing</line>
@@ -38,7 +38,6 @@
         <add place="intralinear">i</add>
       </mod>s that within thine own &#8212; run <anchor xml:id="e3-0058.04"/></line>
     <line>And guide this company beyond the peak</line>
-    <line>Of Bacchic Nysa, M&#230;nad-haunted mountain.</line>
-    <line rend="right"><add><metamark function="count">282</metamark></add></line>
-  </zone>
+    <line>Of Bacchic Nysa, M&#230;nad-haunted mountain.<add place="sublinear"><metamark function="count">282</metamark></add></line>
+   </zone>
 </surface>
