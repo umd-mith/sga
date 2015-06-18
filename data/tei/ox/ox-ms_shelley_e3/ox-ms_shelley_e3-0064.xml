@@ -13,9 +13,9 @@
     <line>For whence it sprung it knew not nor do I&#8212;</line>
     <line>Mother dear Mother</line>
     <milestone unit="tei:speaker" spanTo="#e3-0064.01"/>
-    <line rend="indent2">The Spirit running to Asia</line>
+    <line rend="indent4">The Spirit running to Asia</line>
     <anchor xml:id="e3-0064.01"/>
-    <line rend="indent3">Mother dearest Mother!</line>
+    <line rend="indent6">Mother dearest Mother!</line>
     <line>May I then talk with thee as I was wont? <add><metamark function="count"
         >335</metamark></add></line>
     <line>May I then hide mine eyes in thy soft arms</line>
@@ -23,7 +23,7 @@
     <line>May I then play beside thee the long noons</line>
     <line>When work is none in the bright silent air?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0064.02"/>
-    <line>Asia</line>
+    <line rend="center">Asia</line>
     <anchor xml:id="e3-0064.02"/>
     <line>I love thee gentlest being, and henceforth <add><metamark function="count"
         >340</metamark></add></line>
@@ -31,12 +31,11 @@
     <line>Thy <del rend="strikethrough"><unclear reason="illegible">p</unclear></del> simple talk
       once solaced ... now delights.</line>
     <milestone unit="tei:speaker" spanTo="#e3-0064.03"/>
-    <line>Spirit</line>
+    <line rend="center">Spirit</line>
     <anchor xml:id="e3-0064.03"/>
     <line>Mother, I am grown wiser though a child</line>
     <line>Cannot be wise like thee, within this day</line>
     <line>And happier too, happier &amp; wiser both.</line>
-    <line>Thou knowest that toads &amp; snakes &amp; loathly worms</line>
-    <line rend="right"><unclear reason="illegile">33</unclear>7</line>
+    <line>Thou knowest that toads &amp; snakes &amp; loathly <add place="sublinear"><metamark function="count"><unclear reason="illegile">33</unclear>7</metamark></add>worms</line>
   </zone>
 </surface>
