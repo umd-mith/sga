@@ -885,12 +885,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     tagName: "span"
 
     render: -> 
-      @$el.css 'display', 'inline-block'
+      @$el.css 
+        'display': 'inline-block'
       @$el.text @model.get "text"
       @$el.addClass @model.get("type").join(" ")
 
       icss = @model.get "css"
-      if icss? and not /^\s*$/.test(icss) then @$el.attr "style", icss
+      if icss? and not /^\s*$/.test(icss) 
+        cur_style = @$el.attr("style")
+        @$el.attr("style", cur_style + " " + icss)
       
       content = @model.get("text").replace(/\s+/g, " ")
       if content == " "
@@ -900,22 +903,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       if charWidth == 0
         return null
-
-      # lines[currentLine] ?= []
-      # lines[currentLine].push rendering
-      # rendering.line = currentLine
-      # rendering.positioned = false
-      # rendering.setScale = (s) ->
-      
-      # rendering.afterLayout = ->
-      #   rendering.width = rendering.$el.width() / that.getScale()
-      
-      # rendering.remove = ->
-      #   el.remove()
-      #   lines[rendering.line] = (r for r in lines[rendering.line] when r != rendering)
-
-      # rendering.update = (item) ->
-      #   el.text item.text[0]
       @
 
   #
