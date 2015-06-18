@@ -6,14 +6,18 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0059.jp2"/>
   <zone type="library"><line rend="right">27</line></zone>
   <zone type="main">
-    <line><unclear reason="illegible">Sped past</unclear><milestone unit="tei:seg"
+    <space dim="vertical" unit="lines" extent="3"/>
+    <line><unclear reason="illegible">Sped past </unclear><milestone unit="tei:seg"
         spanTo="#e3-0059.01" corresp="#e3-0058.02"/>Which star<anchor xml:id="e3-0059.01"/></line>
     <milestone unit="tei:seg" spanTo="#e3-0059.02" corresp="e3-0058.03"/>
+    <space dim="vertical" unit="lines" extent="6"/>
     <line>waving wings of noonday dreams</line>
     <anchor xml:id="e3-0059.02"/>
+    <space dim="vertical" unit="lines" extent="7"/>
     <milestone unit="tei:seg" spanTo="#e3-0059.03" corresp="#e3-0058.04"/>
     <line>Wayward!</line>
     <anchor xml:id="e3-0059.03"/>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line><add><metamark function="count">290</metamark></add></line>
   </zone>
 </surface>
