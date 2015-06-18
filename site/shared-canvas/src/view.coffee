@@ -197,7 +197,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         authorParts = noColon["scagentLabel"].split(" ")
         last = authorParts[authorParts.length-1]
         initials = ""
-        for parts in authorParts
+        for parts in authorParts[...-1]
           initials += parts.substring(0,1) + ". "
         citation["author"] = last + ", " + initials
 
