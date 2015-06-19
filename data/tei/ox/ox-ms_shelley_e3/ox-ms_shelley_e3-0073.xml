@@ -54,13 +54,11 @@
         <del rend="strikethrough">carven</del>
         <add place="superlinear">graven flowers</add>
       </mod></line>
-    <line>Poised on twelve columns of resplen<unclear reason="illegilbe">dent</unclear> stone</line>
-    <line rend="indent1">And open to the <del rend="strikethrough"><unclear reason="illegible"
-          >all</unclear>-surrounding Heaven</del><anchor xml:id="e3-0073.01"/></line>
+    <line>Poised on twelve columns of resplen<unclear reason="illegilbe">dent</unclear> stone <add place="sublinear">And open to the <del rend="strikethrough"><unclear reason="illegible"
+      >all</unclear>-surrounding Heaven</del><anchor xml:id="e3-0073.01"/></add></line>
     <milestone unit="tei:seg" spanTo="#e3-0073.02" corresp="#e3-0073.03"/>
-    <line>In memory of the tidings it has borne</line>
+    <line>In memory of the tidings it has borne <add place="sublinear">Yoked to it by an amphisb&#xE6;nic snake</add></line>
     <anchor xml:id="e3-0073.02"/>
-    <line rend="indent1">Yoked to it by an amphisb&#xE6;nic snake</line>
     <line><add><metamark function="count">430</metamark></add><del rend="strikethrough">And</del>
       <del rend="strikethrough">Drawn by the likeness of those <del rend="strikethrough">winged
           steeds</del></del></line>
@@ -72,13 +70,11 @@
         <add place="intralinear">said</add>
       </mod> which ye w.<hi rend="sup">d</hi> hear!&#8212;</line>
     <line>As I have said I floated to the Earth</line>
-    <line><add><metamark><hi rend="underline">? </hi>
+    <line><add><metamark><hi rend="underline">? </hi><space dim="horizontal" unit="chars" extent="20"/>
         </metamark><metamark function="separate">*</metamark></add></line>
-    <!--<zone type="bottom">--><line>Y<hi rend="underline">oke</hi>d</line><!--</zone>-->
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line><hi rend="underline">145</hi><add place ="sublinear">9</add><space dim="horizontal" unit="chars" extent="3"/>Y<hi rend="underline">oke</hi>d</line>
     <!-- Investigate what kind of encoding can describe a possible start-->
   </zone>
-
-  
-
   <zone type="left_margin" rotate="90" corresp="#e3-0073.01">bright &amp; liquid sky</zone>
 </surface>
