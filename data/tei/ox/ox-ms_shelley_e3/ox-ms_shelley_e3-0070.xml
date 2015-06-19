@@ -28,34 +28,25 @@
     <milestone unit="tei:speaker" spanTo="#e3-0070.03"/>
     <line rend="center">Spirit</line>
     <anchor xml:id="e3-0070.03"/>
-    <milestone unit="tei:l" spanTo="#e3-0070.04"/>
-    <line>Soon as the <del rend="strikethrough">thu</del> sound had ceased whose thunder</line>
-    <line rend="right">filled</line>
-    <anchor xml:id="e3-0070.04"/>
+    <line>Soon as the <del rend="strikethrough">thu</del> sound had ceased whose thunder <add place="sublinear">filled</add></line>
     <line>The abysses <add place="sublinear"><metamark function="insert">^</metamark></add><add
         place="superlinear">of</add> the <mod>
         <del rend="strikethrough">air</del>
         <add place="superlinear">skies</add>
-      </mod>, &amp; the wide earth; <add><metamark function="count">410</metamark></add></line>
+        </mod>, &amp; the wide earth; <space dim="horizontal" unit="chars" extent="5"/><add><metamark function="count">410</metamark></add></line>
     <line>There was a change...the impalpable thin air</line>
-    <milestone unit="tei:l" spanTo="#e3-0070.05"/>
-    <line><del rend="strikethrough">The light</del> And the all-circling sunlight were</line>
-    <line rend="right">transformed</line>
-    <anchor xml:id="e3-0070.05"/>
+    <line><del rend="strikethrough">The light</del> And the all-circling sunlight were <add place="sublinear">transformed</add></line>
     <line>As if the sense of love dissolved in them</line>
     <line>And folded itself round the sphered world.</line>
     <line>My vision then grew clear &amp; I could see</line>
     <line>Into the mysteries of the Universe</line>
     <line>Dizzy as with delight I floated down</line>
-    <milestone unit="tei:l" spanTo="#e3-0070.06"/>
-    <line>Winnowing the lightsome air with languid</line>
-    <line rend="right">plumes</line>
-    <anchor xml:id="e3-0070.06"/>
+    <line>Winnowing the lightsome air with languid <add place="sublinear">plumes</add></line>
     <line>My coursers sought their <mod>
         <del rend="strikethrough">pastures</del>
         <add place="superlinear">birthplace</add>
       </mod> in the sun</line>
-    <line rend="indent4"><add><metamark function="count">401 </metamark><metamark function="count"
+    <line rend="indent5"><add><metamark function="count">401 </metamark><space dim="horizontal" unit="chars" extent="3"/><metamark function="count"
           >1778</metamark></add></line>
   </zone>
 </surface>
