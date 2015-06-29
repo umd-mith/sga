@@ -5,7 +5,9 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0010" partOf="#ox-ms_shelley_e3" mith:folio="2v" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0010.jp2"/>
   <zone type="main">
-    <line><add><hi rend="underline"><unclear reason="illegible">Salt</unclear></hi></add></line>
+    <line><add><unclear reason="illegible">Salt</unclear></add>
+      <metamark function="separate" rend="short_line"/>
+    </line>
     <line>Were built, &amp; thro their snowlike columns flowed</line>
     <line>The warm winds, &amp; the azure aether shone</line>
     <line>And the blue sea &amp; shadowy hills were seen ...</line>
