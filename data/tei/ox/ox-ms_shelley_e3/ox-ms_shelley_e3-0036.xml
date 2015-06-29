@@ -39,6 +39,7 @@
           deep</add></del></line>
     <anchor xml:id="e3-0036.07"/>
     <line xml:id="e3-0036-pu_line_13"><hi rend="underline">Ever</hi><del rend="strikethrough">ever</del> d</line>
+    <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:stage" spanTo="#e3-0036.01"/>
     <line xml:id="e3-0036-pu_line_14" rend="indent2">Scene The mouth of a great</line>
     <line xml:id="e3-0036-pu_line_15">River in the island of Atlantis &#8212; Ocean</line>
@@ -48,10 +49,7 @@
     <milestone unit="tei:speaker" spanTo="#e3-0036.02"/>
     <line xml:id="e3-0036-pu_line_18" rend="center">Ocean</line>
     <anchor xml:id="e3-0036.02"/>
-    <milestone unit="tei:l" spanTo="#e3-0036.03"/>
-    <line xml:id="e3-0036-pu_line_19">He fell thou sayest beneath his Conque</line>
-    <line xml:id="e3-0036-pu_line_20" rend="right">rors frown?</line>
-    <anchor xml:id="e3-0036.03"/>
+    <line xml:id="e3-0036-pu_line_19">He fell thou sayest beneath his Conque<add place="sublinear">rors frown?</add></line>
     <milestone unit="tei:speaker" spanTo="#e3-0036.04"/>
     <line xml:id="e3-0036-pu_line_21" rend="center">Apollo</line>
     <anchor xml:id="e3-0036.04"/>

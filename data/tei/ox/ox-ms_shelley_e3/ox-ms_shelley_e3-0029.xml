@@ -10,20 +10,18 @@
       <mod>
         <del rend="strikethrough">forests</del>
         <add place="superlinear">mountains, woods</add>
-      </mod> abysses,</line>
-    <line xml:id="e3-0029-pu_line_1" rend="indent2">A Paradise of wildernesses<retrace cause="unclear">,</retrace></line>
-    <line xml:id="e3-0029-pu_line_2" rend="indent2">Till like one in slumber bound</line>
+      </mod> <space dim="horizontal" unit="chars" extent="5"/>abysses,</line>
+    <line xml:id="e3-0029-pu_line_1" rend="indent1">A Paradise of wildernesses<retrace cause="unclear">,</retrace></line>
+    <line xml:id="e3-0029-pu_line_2" rend="indent1">Till like one in slumber bound</line>
     <line xml:id="e3-0029-pu_line_3">Borne to the Ocean, I float, down, around,</line>
     <line xml:id="e3-0029-pu_line_4">Into a Sea profound, of ever-<mod>
         <del rend="strikethrough">flowing</del>
         <add place="sublinear">spreading</add>
       </mod>sound</line>
-    <line xml:id="e3-0029-pu_line_5" rend="indent2">Meanwhile thy Spirit lifts its pinions</line>
-    <line xml:id="e3-0029-pu_line_6" rend="indent2">In Music's most serene dominions</line>
-    <milestone unit="tei:l" spanTo="#e3-0029.01"/>
-    <line xml:id="e3-0029-pu_line_7">Catching the winds that fan that</line>
-    <line xml:id="e3-0029-pu_line_8" rend="right">happy Heaven</line>
-    <anchor xml:id="e3-0029.01"/>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line xml:id="e3-0029-pu_line_5" rend="indent1">Meanwhile thy Spirit lifts its pinions</line>
+    <line xml:id="e3-0029-pu_line_6" rend="indent1">In Music's most serene dominions</line>
+    <line xml:id="e3-0029-pu_line_7">Catching the winds that fan that <add place="sublinear">happy Heaven</add></line>
     <line xml:id="e3-0029-pu_line_9" rend="indent1">And we sail on, away, afar,</line>
     <line xml:id="e3-0029-pu_line_10" rend="indent1">Without a course&#8212;without a star&#8212;</line>
     <line xml:id="e3-0029-pu_line_11">But by the instinct of sweet Music driven</line>
@@ -32,15 +30,11 @@
       <milestone unit="tei:seg" spanTo="#e2-0028.99" xml:id="e3-0029-pu_line_13a"/>By thee <unclear reason="illegible">,</unclear> most<anchor xml:id="e2-0028.99"/>
       <milestone unit="tei:seg" xml:id="e3-0029-pu_line_13c" spanTo="#e3-0029.03" corresp="#e3-0028.10"/><add place="intralinear">hurling up</add><anchor xml:id="e3-0029.03"/>
       <milestone unit="tei:seg" spanTo="#e2-0028.98" xml:id="e3-0029-pu_line_13b"/> beautiful of pilots,<anchor xml:id="e2-0028.98"/>
-    </line>
-    <line xml:id="e3-0029-pu_line_14"><del rend="strikethrough">The masks of a rebellion</del></line>
+      <line xml:id="e3-0029-pu_line_14"><del rend="strikethrough">The masks of a rebellion</del></line>
     <line xml:id="e3-0029-pu_line_15" rend="indent1">Where never mortal pinnace glided</line>
     <line xml:id="e3-0029-pu_line_16" rend="indent1">The boat of my desire is guided&#8212;</line>
     <line xml:id="e3-0029-pu_line_17" rend="indent1">Realms where the air we breathe is Love</line>
-    <milestone unit="tei:l" spanTo="#e3-0029.02"/>
-    <line xml:id="e3-0029-pu_line_18">Which<del rend="strikethrough">Which</del> in the winds &amp; on the waves</line>
-    <line xml:id="e3-0029-pu_line_19" rend="right">doth move<unclear reason="illegible">,</unclear></line>
-    <anchor xml:id="e3-0029.02"/>
+    <line xml:id="e3-0029-pu_line_18">Which<del rend="strikethrough">Which</del> in the winds &amp; on the waves <add place="sublinear">doth move<unclear reason="illegible">,</unclear></add></line>
     <line xml:id="e3-0029-pu_line_20">Harmonizing this Earth with what we feel above</line>
     <milestone unit="tei:seg" spanTo="#e3-0029.04" corresp="#e3-0028.11"/>
     <line xml:id="e3-0029-pu_line_21">night</line>

@@ -22,7 +22,7 @@
     <milestone unit="tei:speaker" spanTo="#e3-0016.03"/>
     <line rend="center">Panthea</line>
     <anchor xml:id="e3-0016.03"/>
-    <line rend="indent4"><mod>
+    <line rend="indent5"><mod>
         <del rend="overwritten">That</del>
         <add place="intralinear">The</add>
       </mod> terrible s<mod>
@@ -73,10 +73,7 @@
         <del rend="strikethrough">Like the</del>
         <add place="superlinear">An ivory</add>
       </mod> shell inlaid with crimson fire</line>
-    <milestone unit="tei:l" spanTo="#e3-0016.06"/>
-    <line>Which <del rend="strikethrough">burns around</del> comes &amp; goes within its</line>
-    <line rend="right">sculptured ruin</line>
-    <anchor xml:id="e3-0016.06"/>
+    <line>Which <del rend="strikethrough">burns around</del> comes &amp; goes within its <add place="sublinear">sculptured ruin</add></line>
     <line>Of delicate strange tracery&#8212; the <del rend="strikethrough">fair</del> young
       Spirit</line>
     <line><mod>

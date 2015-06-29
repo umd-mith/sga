@@ -6,11 +6,14 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0057.jp2"/>
   <zone type="library"><line rend="right">26</line></zone>
   <zone type="main">
+    <space dim="vertical" unit="lines" extent="10"/>
     <line><milestone unit="tei:seg" spanTo="#e3-0057.02" corresp="#e3-0056.04"/><add><metamark
           function="count">260</metamark></add><anchor xml:id="e3-0057.02"/></line>
+    <space dim="vertical" unit="lines" extent="6"/>
     <milestone unit="tei:seg" spanTo="#e3-0057.01" corresp="#e3-0056.04"/>
     <line><retrace cause="unclear">Which breath now rises</retrace></line>
     <anchor xml:id="e3-0057.01"/>
+    <space dim="vertical" unit="lines" extent="3"/>
     <line><add><metamark function="count">270</metamark></add></line>
   </zone>
 </surface>

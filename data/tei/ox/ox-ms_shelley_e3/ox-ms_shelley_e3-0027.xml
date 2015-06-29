@@ -35,10 +35,10 @@
         <add place="intralinear">love</add>
       </mod></line>
     <line><add>An<retrace cause="unclear">d</retrace></add></line>
-    <line rend="indent4">And my thoughts</line>
+    <space dim="vertical" unit="lines" extent="2"/>
+    <line rend="indent5">And my thoughts</line>
     <line rend="indent1">Are like the many forests of a vale</line>
     <line rend="indent1">Through which the might of whirlwind &amp; of rain</line>
-    <milestone unit="tei:l" spanTo="#e3-0027.03"/>
     <line rend="indent1">Ha<mod>
         <del rend="overwritten">s</del>
         <add place="intralinear">d</add>
@@ -50,11 +50,10 @@
       <del rend="strikethrough">and</del> they <mod>
         <del rend="strikethrough">glimmer</del>
         <add place="superlinear">rest <del rend="smear">rest</del></add>
+        <add place="sublinear"><del rend="strikethrough">glimmer</del> through the<add place="sublinear">evening light</add></add>
       </mod></line>
-    <line rend="indent4"><del rend="strikethrough">glimmer</del> through the</line>
-    <line rend="right">evening light</line>
-    <anchor xml:id="e3-0027.03"/>
     <line rend="indent1">As Imine do now in thy beloved smile.</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <milestone unit="tei:speaker" spanTo="#e3-0027.04"/>
     <line rend="center">Asia</line>
     <anchor xml:id="e3-0027.04"/>

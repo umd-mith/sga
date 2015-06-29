@@ -8,11 +8,8 @@
     <milestone unit="tei:speaker" spanTo="#e3-0042.01"/>
     <line rend="indent2">Apollo</line>
     <anchor xml:id="e3-0042.01"/>
-    <milestone unit="tei:l" spanTo="#e3-0042.02"/><line>And I shall gaze not on the deeds
-      which</line>
-    <line rend="right">make</line><anchor xml:id="e3-0042.02"/>
-    <line>My mind obscure with sorrow, as Eclipse <add><metamark function="count"
-        >120</metamark></add></line>
+    <line>And I shall gaze not on the deeds which <add place="sublinear">make</add></line>
+    <line>My mind obscure with sorrow, as Eclipse <add><metamark function="count">120</metamark></add></line>
     <line>Darkens the sphere I guide&#8212;but list, I hear</line>
     <line>The small clear silver lute of the young Spirit</line>
     <line>That sits i<del rend="strikethrough">n</del> the Morning star &#8212;</line>
@@ -24,23 +21,17 @@
         <del rend="strikethrough"><unclear reason="illegible">noon</unclear></del>
         <add place="superlinear"><unclear reason="case">E</unclear>ven</add>
       </mod>&#8212;till when, farewell</line>
-    <line><del rend="strikethrough">Hark the loud Deep calls me home too, to feed it</del></line>
+    <line><del rend="strikethrough">Hark the loud Deep calls me home too, to feed</del><del rend="unmarked">it</del></line>
     <anchor xml:id="e3-0042.05"/>
     <line>With azure calm out of the emerald urns</line>
     <line>Which stand forever pale beside my throne . . .</line>
     <line>Behold the Nereids under the green <unclear reason="case">S</unclear>ea</line>
-    <milestone unit="tei:l" spanTo="#e3-0042.04"/><line>Th<add>i</add>er wavering limbs borne on the
-      wind like</line>
-    <line rend="right">stream<unclear reason="illegible">s</unclear></line>
-    <anchor xml:id="e3-0042.04"/>
-    <line>Their white arms lifted oer their streaming hair <add><metamark function="count"
-          >130</metamark></add></line>
-    <line>With garlands pied &amp; starry sea-flower crowns<unclear reason="illegible"
-      >,</unclear></line>
+    <line>Th<add>i</add>er wavering limbs borne on the wind like <add place="sublinear">stream<unclear reason="illegible">s</unclear></add></line>
+    <line>Their white arms lifted oer their streaming hair <add><metamark function="count">130</metamark></add></line>
+    <line>With garlands pied &amp; starry sea-flower crowns<unclear reason="illegible">,</unclear></line>
     <line>Hastening to grace their mighty Sisters joy</line>
     <line rend="right">The roar of waves is heard</line>
     <line>It is the unpastured Sea hungring for Calm</line>
-    <line rend="right"><add><metamark function="count"
-      >1<unclear>2</unclear>6</metamark></add></line>
+    <line rend="right"><add><metamark function="count">1<unclear>2</unclear>6</metamark></add></line>
   </zone>
 </surface>

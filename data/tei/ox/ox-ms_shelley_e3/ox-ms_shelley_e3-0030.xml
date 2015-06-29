@@ -49,14 +49,11 @@
         <del rend="strikethrough">Let the</del>
         <add place="superlinear">Ye all</add>
       </mod>triumphant harmonies arise</line>
-    <milestone unit="tei:l" spanTo="#e3-0030.01"/>
     <line>As dew from <del rend="strikethrough"
         >the</del> Earth <mod>
         <del rend="strikethrough">beneath</del>
         <add place="superlinear">under</add>
-      </mod>the twilight</line>
-    <line rend="right">stars;</line>
-    <anchor xml:id="e3-0030.01"/>
+        </mod>the twilight <add place="sublinear">stars;</add></line>
     <line>Drink, be the nectar <mod>
         <del rend="strikethrough">living</del>
         <add place="superlinear">circling</add>

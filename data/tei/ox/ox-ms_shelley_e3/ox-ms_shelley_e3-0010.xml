@@ -5,8 +5,7 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0010" partOf="#ox-ms_shelley_e3" mith:folio="2v" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0010.jp2"/>
   <zone type="main">
-    <line><add><unclear reason="illegible">Salt</unclear></add></line>
-    <add><metamark function="separate">&#x2014;</metamark></add>
+    <line><add><hi rend="underline"><unclear reason="illegible">Salt</unclear></hi></add></line>
     <line>Were built, &amp; thro their snowlike columns flowed</line>
     <line>The warm winds, &amp; the azure aether shone</line>
     <line>And the blue sea &amp; shadowy hills were seen ...</line>
@@ -21,21 +20,15 @@
         <del rend="erased">?</del>
         <add place="intralinear">,</add>
       </mod> the abandoned, the alone?&#8212;</line>
-    <milestone unit="tei:l" spanTo="#e3-0010.01"/>
     <line>Not Jove, <del rend="strikethrough">for</del> while<add place="superlinear">yet</add> his
-      frown shook Heaven, aye</line>
-    <line rend="right">when</line>
-    <anchor xml:id="e3-0010.01"/>
+      frown shook Heaven, aye <add place="sublinear">when</add></line>
     <line>His adversary from adamantine chains</line>
     <line>Cursed him, he trembled like a slave: Declare</line>
     <line>Who is his master? is he too a slave?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0010.02"/>
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e3-0010.02"/>
-    <milestone unit="tei:l" spanTo="#e3-0010.04"/>
-    <line>All spirits are enslaved which serve things</line>
-    <line rend="right">evil.</line>
-    <anchor xml:id="e3-0010.04"/>
+    <line>All spirits are enslaved which serve things <add place="sublinear">evil.</add></line>
     <line>Thou knowest if Jupiter be such or no.</line>
     <milestone unit="tei:speaker" spanTo="#e3-0010.03"/>
     <line rend="center">Asia</line>
