@@ -22,13 +22,13 @@
         <line>As thunder mingled with clear echoes &#8212; then</line>
         <line>Return &amp; thou shalt dwell beside our cave</line>
         <milestone unit="tei:stage" spanTo="#e3-0052.03"/>
-        <line rend="indent4"><unclear reason="case">K</unclear>issing the ground</line>
+        <line rend="indent5"><unclear reason="case">K</unclear>issing the ground</line>
         <anchor xml:id="e3-0052.03"/>
         <line>And thou o Mother Earth&#8212;</line>
         <milestone unit="tei:speaker" spanTo="#e3-0052.02"/>
         <line rend="center">The Earth</line>
         <anchor xml:id="e3-0052.02"/>
-        <line rend="right">I hear&#8212;I feel&#8212;<add><metamark function="count"
+        <line rend="indent5">I hear&#8212;I feel&#8212;<add><metamark function="count"
                 >220</metamark></add></line>
         <line>Thy lips are on me, <retrace cause="unclear">&amp;</retrace> their touch runs
             down</line>
@@ -40,8 +40,6 @@
         <line>Folded in my sustaining arms; all plants</line>
         <line>And creeping forms, &amp; insects rainbow-winged</line>
         <line>And birds &amp; beasts &amp; fish &amp; human shapes</line>
-        <line>Which drew disease &amp; pain from my wan bosom</line>
-        <line rend="right"><add><metamark function="count">230</metamark><metamark function="count"
-                    >222</metamark></add></line>
-    </zone>
+        <line>Which drew disease &amp; pain from my wan bosom <add place="sublinear"><metamark function="count">230  222</metamark></add></line>
+     </zone>
 </surface>

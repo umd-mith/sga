@@ -6,13 +6,14 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0028.jp2"/>
   <zone type="main">
     <milestone unit="tei:head" spanTo="#e3-0028.01"/>
-    <line>Act 3<hi rend="sup">d</hi>.</line><anchor xml:id="e3-0028.01"/>    
+    <line rend="center">Act 3<hi rend="sup">d</hi>.</line><anchor xml:id="e3-0028.01"/>    
     <milestone unit="tei:stage" spanTo="#e3-0028.02"/>
-    <line>Scene &#8212; Heaven. Jupiter on his throne</line>
+    <space dim="vertical" unit="lines" extent="5"/>
+    <line>Scene &#8212; Heaven.<space dim="horizontal" unit="chars" extent="5"/>Jupiter on his throne</line>
     <line><add>Thetis &amp;</add> The other Deities assembled &#8212;</line>
     <anchor xml:id="e3-0028.02"/>
     <milestone unit="tei:speaker" spanTo="#e3-0028.03"/>
-    <line><mod>
+    <line rend="center"><mod>
         <del rend="overwritten">Jupiter</del>
         <add place="intralinear">Jupiter</add>
       </mod></line>
@@ -25,14 +26,8 @@
         <del rend="overwritten">had</del>
         <add place="intralinear">has</add>
       </mod> been s<add place="intralinear">u</add>bdued to me &#8212; alone</line>
-    <line>The soul of man, like unextinguished fire <add><metamark function="count"
-        >5</metamark></add></line>
-    <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0028.05" corresp="#e3-0028.06"
-        /><add>doubt</add><anchor xml:id="e3-0028.05"/></line>
-    <line><milestone unit="tei:seg" spanTo="#e3-0028.09"/>Yet burns towards Heaven with fierce
-      reproach &amp; <anchor xml:id="e3-0028.09"/><anchor xml:id="e3-0028.06"/></line>
-    <line>Yet burns towards Heaven with fierce reproach &amp; <add place="superlinear"
-      >doubt</add></line>
+    <line>The soul of man, like unextinguished fire <add><metamark function="count">5</metamark></add></line>
+    <line>Yet burns towards Heaven with fierce reproach &amp; <add place="superlinear">doubt</add></line>
     <line>And lamentation &amp; reluctant prayer</line>
     <line><del rend="strikethrough">In tameless</del><anchor xml:id="e3-0028.10"/> insurrection,
       which might make</line>

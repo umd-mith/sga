@@ -44,10 +44,7 @@
         <del rend="strikethrough">Only</del>
         <add place="superlinear">But</add>
       </mod>to the uncommunicating dead &#8212;</line>
-    <milestone unit="tei:l" spanTo="#e3-0054.03"/>
-    <line>Death is the veil which those who live call</line>
-    <line rend="right">life</line>
-    <anchor xml:id="e3-0054.03"/>
+    <line>Death is the veil which those who live call <add place="sublinear">life</add></line>
     <line><mod>
         <del rend="strikethrough">Men</del>
         <retrace cause="unclear"><add place="superlinear">They</add></retrace>

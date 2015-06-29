@@ -9,12 +9,11 @@
     <milestone unit="tei:speaker" spanTo="#e3-0044.01"/>
     <line xml:id="e3-0044-pu_line_1" rend="center">Apollo</line>
     <anchor xml:id="e3-0044.01"/>
-    <line xml:id="e3-0044-pu_line_2" rend="indent4">Farewell!&#8212; <add><metamark function="count"
-      >135</metamark></add></line>
+    <line xml:id="e3-0044-pu_line_2" rend="indent4">Farewell!&#8212; <space dim="horizontal" unit="chars" extent="5"/><add><metamark function="count">135</metamark></add></line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <milestone unit="tei:stage" spanTo="#e3-0044.02"/>
     <line xml:id="e3-0044-pu_line_3" rend="indent1">Scene Caucasus, Prometheus, Hercules, Asia</line>
-    <line xml:id="e3-0044-pu_line_4" rend="indent2">borne by the spirit of the Hour</line>
-    <line xml:id="e3-0044-pu_line_5" rend="indent1">Panthea Ione, the Earth. Spirits&#8212;</line>
+    <line xml:id="e3-0044-pu_line_5" rend="indent1">Panthea Ione, the Earth. Spirits&#8212; <add place="superlinear">borne by the spirit of the Hour</add></line>
     <line xml:id="e3-0044-pu_line_6" rend="indent2">Hercules unbinds Prometheus who descends</line>
     <anchor xml:id="e3-0044.02"/>
     <milestone unit="tei:speaker" spanTo="#e3-0044.03"/>
@@ -27,10 +26,10 @@
     <milestone unit="tei:speaker" spanTo="#e3-0044.04"/>
     <line xml:id="e3-0044-pu_line_12" rend="center">Prometheus</line>
     <anchor xml:id="e3-0044.04"/>
-    <line xml:id="e3-0044-pu_line_13" rend="indent5">Thy gentle words</line>
+    <line xml:id="e3-0044-pu_line_13" rend="indent6">Thy gentle words</line>
     <line xml:id="e3-0044-pu_line_14">Are sweeter even tha<unclear reason="illegible">n</unclear> freedom long desired
           <add><metamark function="count">140</metamark></add></line>
-    <line xml:id="e3-0044-pu_line_15">And long delayed. Asia, thou light of life,</line>
+    <line xml:id="e3-0044-pu_line_15">And long delayed. <space dim="horizontal" unit="chars" extent="5"/> Asia, thou light of life,</line>
     <line xml:id="e3-0044-pu_line_16">Shadow of beauty unbeheld, &amp; ye</line>
     <line xml:id="e3-0044-pu_line_17">Fair sister-nymphs who make long years of pain</line>
     <line xml:id="e3-0044-pu_line_18">Sweet to remember through your love &amp; care</line>

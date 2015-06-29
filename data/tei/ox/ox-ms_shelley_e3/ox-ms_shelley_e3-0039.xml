@@ -9,8 +9,7 @@
     <milestone unit="tei:speaker" spanTo="#e3-0039.01"/>
     <line>Chorus of Spirits</line>
     <anchor xml:id="e3-0039.01"/>
-    <line rend="indent2"><add><metamark>____</metamark></add><metamark function="count"
-        >40</metamark></line>
+      <line rend="indent2"><add><metamark>____</metamark></add><space dim="horizontal" unit="chars" extent="10"/><metamark function="count">40</metamark></line>
     <anchor xml:id="e3-0039.03"/>
     <line><add><metamark function="transpose">2</metamark></add>Paradise of golden lights</line>
     <line><add><metamark function="transpose">1</metamark></add><milestone unit="tei:seg"
@@ -18,14 +17,15 @@
         xml:id="e3-0039.02"/></line>
     <line>Deep, Immeasurable, Vast <unclear reason="illegible">,</unclear></line>
     <line>Which art now, &amp; which wert then;</line>
-    <line rend="indent1">Of the present &amp; the past</line>
-    <line rend="indent1">Of the eternal Where &amp; When</line>
-    <line rend="indent1">Presence chamber, Temple, <mod>
+    <line>Of the present &amp; the past</line>
+    <line>Of the eternal Where &amp; When</line>
+    <line>Presence chamber, Temple, <mod>
         <del rend="overwritten">D</del>
         <add place="intralinear">H</add>
       </mod>ome,</line>
-    <line rend="indent1">Ever canopying Dome</line>
-    <line rend="indent1">Of acts &amp; ages yet to come!</line>
+    <line>Ever canopying Dome</line>
+    <line>Of acts &amp; ages yet to come!</line>
+      <space dim="vertical" unit="lines" extent="2"/>  
     <line>Glorious shapes have life in thee</line>
     <line>Earth &amp; all Earth's company</line>
     <line>Living globes which ever throng</line>

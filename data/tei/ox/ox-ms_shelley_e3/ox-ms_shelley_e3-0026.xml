@@ -10,12 +10,13 @@
     <line>Through the clouds ere they divide them</line>
     <line>And this atmosphere divinest</line>
     <line>Shrouds thee whereso'er thou shinest</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <delSpan spanTo="#e3-0026.01" rend="strikethrough"/>
     <line>Lamp of Earth<mod>
         <del rend="unmarked">,</del>
         <add place="intralinear">!</add>
       </mod> where'er thou movest</line>
-    <line rend="indent1">Its' dim shapes are clad with brightness</line>
+    <line>Its' dim shapes are clad with brightness</line>
     <line>And the sou</line>
     <anchor xml:id="e3-0026.01"/>
     <line rend="indent1">Fair are others;&#8212;none beholds thee,</line>
@@ -23,11 +24,11 @@
     <line rend="indent1">Like the fairest &#8212;for it folds thee</line>
     <line rend="indent1">From the sight that liquid splendour</line>
     <line rend="indent1">And all feel, yet see thee never</line>
-    <line rend="indent1">As I feel now, lost forever! <add place="superlinear"><metamark
+    <line rend="indent1">As I feel now, lost forever! <add place="intralinear"><metamark
           function="count">555</metamark></add></line>
+    <space dim="vertical" unit="lines" extent="1" />
     <line rend="indent1">Lamp of Earth! where'er thou movest</line>
     <line rend="indent1">Its dim shapes are clad with brightness</line>
-    <line rend="indent1"><unclear reason="illegible">those</unclear></line>
     <line rend="indent1">And the souls of whom <add place="superlinear">those</add> thou
       lovest</line>
     <line rend="indent1">Walk upon the winds with lightness</line>

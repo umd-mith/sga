@@ -48,14 +48,11 @@
         <add place="superlinear">though</add>
       </mod> ruling them like slaves,</line>
     <line>From chance &amp; death &amp; mutability</line>
-    <milestone unit="tei:l" spanTo="#e3-0078.01"/>
     <line><del rend="strikethrough">Which</del>
       <del rend="strikethrough"><mod>
           <del rend="overwritten">T</del>
           <add place="intralinear">W</add>
-        </mod>hich clog that spirit, else which might</del></line>
-    <line rend="right"><del rend="strikethrough">outsoar</del></line>
-    <anchor xml:id="e3-0078.01"/>
+      </mod>hich clog that spirit, else which might <add place="sublinear"><del rend="strikethrough">outsoar</del></add></del></line>
     <anchor xml:id="e3-0078.04"/>
     <line>The loftiest star of unascended Heaven</line>
     <line>Pinnacled dim in the intense inane.</line>
@@ -65,6 +62,7 @@
     <anchor xml:id="e3-0078.02"/>
   </zone>
   <zone type="left_margin">
+    <space dim="vertical" unit="lines" extent="12"/>
     <line>1866</line>
     <line><hi rend="underline"> 5</hi></line>
     <line>1871</line>

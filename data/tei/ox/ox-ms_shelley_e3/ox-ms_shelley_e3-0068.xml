@@ -5,7 +5,7 @@
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0068" partOf="#ox-ms_shelley_e3" mith:folio="31v" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0068.jp2"/>
   <zone type="main">
-    <line>Out of their rest, &amp; gathered in the streets <metamark function="count"
+    <line>Out of their rest, &amp; gathered in the streets <space dim="horizontal" unit="chars" extent="5"/><metamark function="count"
       >370</metamark></line>
     <line>Looking in wonder up to Heaven, while yet</line>
     <line>The music pealed along; I hid myself</line>
@@ -19,20 +19,13 @@
     <line>Of which I spoke as having wrought me pain</line>
     <line>Past floating thro' the air, &amp; fading still</line>
     <line>Into the winds that scatter them, &amp; those</line>
-    <milestone unit="tei:l" spanTo="#e3-0068.01"/>
-    <line>From whom they passed seemed mild &amp; lovely <add><metamark function="count"
-          >380</metamark></add></line>
-    <line rend="right">forms</line>
-    <anchor xml:id="e3-0068.01"/>
+    <line>From whom they passed seemed mild &amp; lovely <add place="sublinear">forms</add><add><metamark function="count">380</metamark></add></line>
     <line>After some foul disguise had fallen &#8212; &amp; all</line>
     <line><unclear reason="illegible">Were</unclear> somewhat changed &#8212; and after brief
       surprise</line>
     <line>And greetings of delighted wonder, all</line>
     <line>Went to their sleep again &#8212; and when the dawn</line>
-    <milestone unit="tei:l" spanTo="#e3-0068.02"/>
-    <line>Came &#8212; wouldst thou think that toads &amp; snakes</line>
-    <line rend="right">&amp; efts</line>
-    <anchor xml:id="e3-0068.02"/>
+    <line>Came &#8212; wouldst thou think that toads &amp; snakes <add place="sublinear">&amp; efts</add></line>
     <line>Could e'er be beautiful <hi rend="sup">?</hi>&#8212; yet so they were</line>
     <line>And that with little change of shape or hue</line>
     <line>All things had put their evil nature off</line>
@@ -40,7 +33,6 @@
       <del rend="strikethrough">&amp;</del>
       <del rend="strikethrough">overworn</del></line>
     <line>I cannot tell my joy, when oer a lake,</line>
-    <line>Upon a drooping bough with nightshade twined</line>
-    <line><add><metamark function="count">383</metamark></add></line>
+    <line><add place="sublinear"><metamark function="count">383</metamark></add>Upon a drooping bough with nightshade twined</line>
   </zone>
 </surface>

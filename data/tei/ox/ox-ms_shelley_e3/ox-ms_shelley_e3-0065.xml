@@ -49,13 +49,8 @@
         <add place="superlinear">may possess</add>
       </mod> to amuse or instruct others, be they</line>
     <line><unclear reason="case">E</unclear>ver so inconsiderable, he is yet bound</line>
-    <line>to exert them; <mod>
-        <del rend="strikethrough">if he cannot amuse</del>
-        <add place="sublinear">if his <mod>
-            <del rend="strikethrough">efforts</del>
-            <add place="superlinear">attempt</add>
-          </mod> be ineffectual</add>
-      </mod></line>
+    <line>to exert them; <del rend="strikethrough">if he cannot amuse</del></line>
+    <line rend="indent5">if his <mod><del rend="strikethrough">efforts<add place="superlinear">attempt</add></del></mod> be ineffectual</line> 
     <line><add place="superlinear">let</add> the punishment of an <del rend="strikethrough"
         >acc</del> unaccomplished</line>
     <line><mod>
@@ -64,13 +59,16 @@
       </mod> have been sufficient, let no<mod spanTo="#e3-0065.01"/><add>ne</add></line>
     <line><del rend="strikethrough">one</del><anchor xml:id="e3-0065.01"/> trouble themselves to
       heap the dust</line>
-    <line>of Oblivion upon his <del rend="strikethrough">hopes</del> efforts.&#8212;</line>
+    <line>of Oblivion upon his <del rend="strikethrough">hopes</del> efforts.&#8212; <unclear reason="case">t</unclear>he</line>
     <!-- figure out how to encode different layers of writting on the same page,
       specifically the lines starting with pile and which-->
-    <line>pile they raise will betray <del rend="strikethrough">the spot</del> his<add
-        place="superlinear"><unclear reason="case">t</unclear>he</add> grave</line>
-    <line rotate="180">Asia &amp; the spirit have entered the cave</line>
+    <line>pile they raise will betray <del rend="strikethrough">the spot</del> his grave</line>
+    <!-- Rotate the following line 180 -->
+    <line>Asia &amp; the spirit have entered the cave</line>
     <line>which might otherwise have been unknown</line>
     <line>is <del rend="strikethrough">already trembling upon</del><unclear>.</unclear></line>
+    <space dim="vertical" unit="lines" extent="2"/>
+    <!-- Rotate the following line 180 -->
+    <line rend="right"><metamark function="count">330</metamark></line>
   </zone>
 </surface>
