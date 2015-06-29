@@ -851,6 +851,14 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           if al?
             curTextLength = _getTextWidth(l)
             if al == "right"
+              if lines.length == 1
+                l.css
+                  'text-align' : 'right',
+                  'padding-right' : '4em',
+              else
+                l.css
+                  'text-align' : 'left',
+                  'padding-right' : '0em'
               padding = (w - curTextLength) + "em"
             else if al == "center"
               padding = ((w / 2) - (curTextLength/2)) + "em"            
