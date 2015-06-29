@@ -719,6 +719,10 @@
                                         <desc>A short line, similar to an underline, but often used to
                                         separate content, not for emphasis (in which case hi[@rend="underline"] is used</desc>
                                     </valItem>
+                                    <valItem ident="wavey_short_line">
+                                        <desc>A wavey short line, similar to an underline, but often used to
+                                            separate content, not for emphasis (in which case hi[@rend="underline"] is used</desc>
+                                    </valItem>
                                     <valItem ident="left_bracket_short_line">
                                         <desc>A line wrapping some text starting from the top left corner, then curving
                                             to underline the text. Often used to separate content.</desc>
@@ -738,6 +742,10 @@
                                     </valItem>
                                     <valItem ident="cross">
                                         <desc>A cross, often used for displacement. This is often encoded literally in SGA for convenience.
+                                            This value provides an alternative way of encoding it.</desc>
+                                    </valItem>
+                                    <valItem ident="star">
+                                        <desc>A star or asterisk, often used for displacement. This is often encoded literally in SGA for convenience.
                                             This value provides an alternative way of encoding it.</desc>
                                     </valItem>
                                 </valList>

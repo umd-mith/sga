@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2015-06-11T13:18:00Z. .
+Schema generated from ODD source 2015-06-29T16:58:10Z. .
 TEI Edition: Version 2.8.0. Last updated on
 	6th April 2015, revision 13197
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -3732,12 +3732,14 @@ The @spanTo attribute of <name/> is required.</assert>
          <optional>
             <attribute name="rend">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] line; 2] short_line; 3] left_bracket_short_line; 4] short_vertical_line; 5] top_left_bracket; 6] caret; 7] left_caret; 8] cross</a:documentation>
+Suggested values include: 1] line; 2] short_line; 3] wavey_short_line; 4] left_bracket_short_line; 5] short_vertical_line; 6] top_left_bracket; 7] caret; 8] left_caret; 9] cross; 10] star</a:documentation>
                <choice>
                   <value>line</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A line, often used to separate content.</a:documentation>
                   <value>short_line</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A short line, similar to an underline, but often used to separate content, not for emphasis (in which case hi[@rend="underline"] is used</a:documentation>
+                  <value>wavey_short_line</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A wavey short line, similar to an underline, but often used to separate content, not for emphasis (in which case hi[@rend="underline"] is used</a:documentation>
                   <value>left_bracket_short_line</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A line wrapping some text starting from the top left corner, then curving to underline the text. Often used to separate content.</a:documentation>
                   <value>short_vertical_line</value>
@@ -3750,6 +3752,8 @@ Suggested values include: 1] line; 2] short_line; 3] left_bracket_short_line; 4]
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A caret pointing left.</a:documentation>
                   <value>cross</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross, often used for displacement. This is often encoded literally in SGA for convenience. This value provides an alternative way of encoding it.</a:documentation>
+                  <value>star</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A star or asterisk, often used for displacement. This is often encoded literally in SGA for convenience. This value provides an alternative way of encoding it.</a:documentation>
                   <data type="Name"/>
                </choice>
             </attribute>
