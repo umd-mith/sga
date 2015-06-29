@@ -4,10 +4,10 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0021" partOf="#ox-ms_shelley_e3" mith:folio="8r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0021.jp2"/>
-  <zone type="library"><line rend="right">8</line></zone>
-  <zone type="main">    
-  </zone>
-  <space dim="vertical" unit="lines" extent="11"/>
-  <zone type="indent1">?</zone>
+  <zone type="library"><line>8</line></zone>
+  <zone type="main">
+    <space dim="vertical" unit="lines" extent="11"/>
+    <line>?</line>
+  </zone>  
 </surface>
 
