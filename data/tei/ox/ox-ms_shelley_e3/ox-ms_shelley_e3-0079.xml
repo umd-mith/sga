@@ -29,20 +29,29 @@
         <del rend="strikethrough">mingled</del>
         <add place="superlinear">many</add>
       </mod>tones</line>
-    <line rend="indent1" xml:id="e3-0079-pu_line_2">Intelligible words &amp; music wild&#8212;</line>
+    <line rend="indent1" xml:id="e3-0079-pu_line_2">Intelligible words &amp; music wild—</line>
     <space dim="vertical" unit="lines" extent="5"/>
-    <line rend="indent1"> 40</line>
-    <line rend="indent1"> 97</line>
-    <line rend="indent1"><hi rend="underline"> 553</hi></line>
-    <line rend="indent1"> 690</line>
-    <line rend="indent1"><hi rend="underline">1915</hi></line>
-    <line rend="indent1">2605</line>
+    <zone type="calculation">
+      <line rend="indent1"> 40</line>
+      <line rend="indent1"> 97</line>
+      <line rend="indent1"> 553</line>
+      <metamark function="math_operation" rend="short_line"/>
+      <line rend="indent1"> 690</line>
+      <line rend="indent1">1915</line>
+      <metamark function="math_operation" rend="short_line"/>
+      <line rend="indent1">2605</line>
+    </zone>
+    
     <milestone unit="tei:seg" spanTo="#e3-0079.03" corresp="#e3-0078.04"/>
     <line xml:id="e3-0079-pu_line_3">The clogs of that which else might oversoar</line>
     <anchor xml:id="e3-0079.03"/>
-    <line rend="indent1">1915</line>
-    <line rend="indent1"><hi rend="underline"> 533</hi></line>
-    <line rend="indent1">2448</line>
-    <line rend="indent1">2</line>
+    
+    <zone type="calculation">
+      <line rend="indent1">1915</line>
+      <line rend="indent1">533</line>
+      <metamark function="math_operation" rend="short_line"/>
+      <line rend="indent1">2448</line>
+      <line rend="indent1">2</line>
+    </zone>
   </zone>
 </surface>

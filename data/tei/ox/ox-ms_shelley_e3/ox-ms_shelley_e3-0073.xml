@@ -4,9 +4,9 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0073" partOf="#ox-ms_shelley_e3" mith:folio="34r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0073.jp2"/>
-  <zone type="library"><line rend="right">34</line></zone>
+  <zone type="library"><line>34</line></zone>
   <zone type="main" corresp="#e3-0072.01">
-    <line><add><metamark function="displacement">&#60;</metamark></add>And when my moonlike<mod>
+    <line><add><metamark function="displacement" rend="left_caret"/></add>And when my moonlike<mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <mod>
           <add place="superlinear">car will stand</add>
@@ -54,7 +54,8 @@
         <del rend="strikethrough">carven</del>
         <add place="superlinear">graven flowers</add>
       </mod></line>
-    <line>Poised on twelve columns of resplen<unclear reason="illegilbe">dent</unclear> stone <add place="sublinear">And open to the <del rend="strikethrough"><unclear reason="illegible"
+    <line>Poised on twelve columns of resplen<unclear reason="illegilbe">dent</unclear> stone</line> 
+    <line><add place="sublinear">And open to the <del rend="strikethrough"><unclear reason="illegible"
       >all</unclear>-surrounding Heaven</del><anchor xml:id="e3-0073.01"/></add></line>
     <milestone unit="tei:seg" spanTo="#e3-0073.02" corresp="#e3-0073.03"/>
     <line>In memory of the tidings it has borne <add place="sublinear">Yoked to it by an amphisb&#xE6;nic snake</add></line>
@@ -63,15 +64,15 @@
       <del rend="strikethrough">Drawn by the likeness of those <del rend="strikethrough">winged
           steeds</del></del></line>
     <line>The likeness of those winged steeds will mock</line>
-    <line>The flight from which they find repose&#8212;alas</line>
+    <line>The flight from which they find repose—alas</line>
     <line><del rend="strikethrough">Withe</del> Wither has wandered now my partial tongue</line>
     <line>When all remains un<mod>
         <del rend="overwritten">told</del>
         <add place="intralinear">said</add>
-      </mod> which ye w.<hi rend="sup">d</hi> hear!&#8212;</line>
+      </mod> which ye w.<hi rend="sup">d</hi> hear!—</line>
     <line>As I have said I floated to the Earth</line>
     <line><add><metamark><hi rend="underline">? </hi><space dim="horizontal" unit="chars" extent="20"/>
-        </metamark><metamark function="separate">*</metamark></add></line>
+        </metamark><metamark function="separate" rend="star">*</metamark></add></line>
     <space dim="vertical" unit="lines" extent="1"/>
     <line><hi rend="underline">145</hi><add place ="sublinear">9</add><space dim="horizontal" unit="chars" extent="3"/>Y<hi rend="underline">oke</hi>d</line>
     <!-- Investigate what kind of encoding can describe a possible start-->

@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0045" partOf="#ox-ms_shelley_e3" mith:folio="20r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0045.jp2"/>
-  <zone type="library"><line rend="right">20</line></zone>
+  <zone type="library"><line>20</line></zone>
   <zone type="main">
     <line xml:id="e3-0045-oth_line_0">Orbits measureless, are furled</line>
     <line xml:id="e3-0045-oth_line_1">In that frail &amp; fading sphere</line>
@@ -12,7 +12,7 @@
         <del rend="overwritten">D</del>
         <add place="intralinear">W</add>
       </mod>ith ten million gathered there</line>
-    <line xml:id="e3-0045-oth_line_3">To tremble, gleam, &amp; dissappear!&#8212;</line>
+    <line xml:id="e3-0045-oth_line_3">To tremble, gleam, &amp; dissappear!—</line>
     <space dim="vertical" unit="lines" extent="15"/>
     <line xml:id="e3-0045-pu_line_0"><milestone unit="tei:seg" spanTo="#e3-0045.01" xml:id="e3-0045.02"/>let us not<anchor
         xml:id="e3-0045.01"/></line>

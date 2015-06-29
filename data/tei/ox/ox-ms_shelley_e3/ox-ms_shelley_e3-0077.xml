@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0077" partOf="#ox-ms_shelley_e3" mith:folio="36r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0077.jp2"/>
-  <zone type="library"><line rend="right">36</line></zone>
+  <zone type="library"><line>36</line></zone>
   <zone type="main" rotate="180">
     <line>is now restoring, or <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
@@ -53,7 +53,7 @@
     <line rend="right" rotate="180"><milestone unit="tei:seg" spanTo="#e3-0077.04"
         xml:id="e3-0077.05"/>monstrous<anchor xml:id="e3-0077.04"/></line>
     <line>mirror of <del rend="strikethrough">th</del> all that is lovely <unclear
-        reason="illegible">&#8212;</unclear>in</line>
+        reason="illegible">—</unclear>in</line>
     <line>the visible universe, as <mod>
         <del rend="strikethrough">that he would</del>
         <add place="superlinear"><del rend="strikethrough"><unclear reason="illegible"

@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0041" partOf="#ox-ms_shelley_e3" mith:folio="18r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0041.jp2"/>
-  <zone type="library"><line rend="right">18</line></zone>
+  <zone type="library"><line>18</line></zone>
   <zone type="main">
     <line>And mighty suns, beyond the Night,</line>
     <line>Atoms of intensest light!</line>
@@ -15,16 +15,16 @@
         <del rend="overwritten">p</del>
         <add place="intralinear">P</add>
       </mod>ower which is the glass</line>
-    <line>Wherein man his nature sees <unclear>;&#8212;</unclear></line>
+    <line>Wherein man his nature sees <unclear>;—</unclear></line>
     <line>Generations as they pass</line>
-    <line>Worship thee with bended knees&#8212;</line>
+    <line>Worship thee with bended knees—</line>
     <line>Thier unremaining Gods &amp; they</line>
-    <line>Like a river roll away&#8212;</line>
-    <line>Thou remainest such &#8212; alway!&#8212;</line>
+    <line>Like a river roll away—</line>
+    <line>Thou remainest such — alway!—</line>
     <milestone unit="tei:speaker" spanTo="#e3-0041.01"/>
     <line rend="center">a Remoter Voice</line>
     <anchor xml:id="e3-0041.01"/>
-    <line rend="center"><add><metamark>&#8212;</metamark></add></line>
+    <line rend="center"><metamark function="separate" rend="short_line"/></line>
     <line>Thou art but the <unclear reason="case">M</unclear>inds first <unclear reason="case"
         >C</unclear>hamber</line>
     <line>Round which its' <mod>

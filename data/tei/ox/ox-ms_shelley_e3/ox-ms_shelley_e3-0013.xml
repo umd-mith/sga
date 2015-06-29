@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0013" partOf="#ox-ms_shelley_e3" mith:folio="4r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0013.jp2"/>
-  <zone type="library"><line rend="right">4</line></zone>
+  <zone type="library"><line>4</line></zone>
   <zone type="main">
     <space dim="vertical" unit="lines" extent="17"/>
     <milestone unit="tei:seg" spanTo="#e3-0013.01" corresp="#e3-0012.06"/>
@@ -14,7 +14,7 @@
       <mod>
         <del rend="strikethrough">Nor</del>
         <del rend="overwritten">dark nor dim</del>
-        <add place="intralinear">That which I ask&#8212;</add>
+        <add place="intralinear">That which I ask—</add>
       </mod><anchor xml:id="e3-0013.02"/></line>
   </zone>
 </surface>

@@ -4,14 +4,15 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0011" partOf="#ox-ms_shelley_e3" mith:folio="3r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0011.jp2"/>
-  <zone type="library"><line rend="right">3</line></zone>
+  <zone type="library"><line>3</line></zone>
   <zone type="main">
     <space dim="vertical" unit="lines" extent="9"/>
-    <line><metamark function="displacement">&#60;</metamark></line>
-    <line>[SKETCHES OF ?KITE AND HARP OR SAIL, IN PENCIL]</line>
+    <line><metamark function="displacement" rend="left_caret"/></line>
+    <zone type="sketch"></zone>
     <space dim="vertical" unit="lines" extent="4"/>
-    <line>x</line>
-    <line>[SPINDLY WRITTEN LETTERS OR SKETCH, IN PEN]</line>
-    <line>[SKETCH OF ?CLOUDS, IN PEN]</line>
+    <line><metamark function="displacement" rend="cross"/></line>
+    <zone type="sketch"></zone>
   </zone>
+  
+  
 </surface>

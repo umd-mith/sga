@@ -4,11 +4,11 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
     uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0075" partOf="#ox-ms_shelley_e3" mith:folio="35r" mith:shelfmark="MS. Shelley e. 3">
     <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0075.jp2"/>
-    <zone type="library"><line rend="right">35</line></zone>
+    <zone type="library"><line>35</line></zone>
     <zone type="main" rotate="180">
         <line>contemporary. The pretence of doing it</line>
         <line>would be a presumption in <del rend="strikethrough">all</del> any but</line>
-        <line rend="right" rotate="180"><milestone unit="tei:seg" spanTo="#e3-0075.01"
+        <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0075.01"
                 corresp="e3-0074.01"/>pride<anchor xml:id="e3-0075.01"/></line>
         <line>the greatest, the effect even in him</line>
         <line><del rend="strikethrough">could he accomplish s<unclear reason="illegible"

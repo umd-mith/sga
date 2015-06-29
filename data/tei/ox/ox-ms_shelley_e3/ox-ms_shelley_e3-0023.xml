@@ -4,15 +4,26 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
   lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0023" partOf="#ox-ms_shelley_e3" mith:folio="9r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0023.jp2"/>
-    <zone type="library"><line rend="right">9</line></zone>
+    <zone type="library"><line>9</line></zone>
     <zone type="main">
-    <line>510</line>
-    <line><hi rend="underline">818</hi></line>
-    <line>132<unclear>8</unclear></line>
+      <zone type="calculation">
+        <line>510</line>
+        <line>818</line>
+        <metamark function="math_operation" rend="short_line"/>
+        <line>132<unclear>8</unclear></line>
+      </zone>
+    
       <space dim="vertical" unit="lines" extent="4"/>
-    <line rend="indent6"><del rend="strikethrough"><hi rend="underline">1328</hi></del></line>
+      
+      <zone type="calculation">
+        <line rend="indent6"><del rend="strikethrough"><hi rend="underline">1328</hi></del></line>
+      </zone>
+    
       <space dim="vertical" unit="lines" extent="4"/>
-      <line rend="indent6">28 <space dim="horizontal" unit="chars" extent="5" />10</line>
+      
+      <zone type="calculation">
+        <line rend="indent6">28 <space dim="horizontal" unit="chars" extent="5" />10</line>
+      </zone>      
   </zone>
 </surface>
 

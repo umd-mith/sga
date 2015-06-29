@@ -8,11 +8,12 @@
     <milestone unit="tei:stage" spanTo="#e3-0062.03"/>
     <line>Scene<space dim="horizontal" unit="chars" extent="3"/> = <space dim="horizontal" unit="chars" extent="3"/><del rend="strikethrough">the<space dim="horizontal" unit="chars" extent="2"/></del>
       <del rend="strikethrough">The <unclear reason="illegible">pat</unclear></del>
-      <unclear reason="unclear">A</unclear> forest&#8212;</line>
-    <line>in the background a Cavern&#8212;</line>
+      <unclear reason="unclear">A</unclear> forest—</line>
+    <line>in the background a Cavern—</line>
+    <!-- Should be encoded as transposition -->
     <line>Ione <add place="superlinear">3</add> Panthea<add place="superlinear">4</add>
         Prometheus<add place="superlinear">1</add> Asia<add place="superlinear">2</add></line>
-    <line>the Spirit of the Earth&#8212;</line>
+    <line>the Spirit of the Earth—</line>
     <anchor xml:id="e3-0062.03"/>
     <milestone unit="tei:speaker" spanTo="#e3-0062.01"/>
     <line rend="center">Ione</line>

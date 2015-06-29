@@ -4,10 +4,10 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0061" partOf="#ox-ms_shelley_e3" mith:folio="28r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0061.jp2"/>
-  <zone type="library"><line rend="right">28</line></zone>
+  <zone type="library"><line>28</line></zone>
   <zone type="main">
     <space dim="vertical" unit="lines" extent="15"/>
-    <line rend="right">The beginning of Platos Republic&#8212;</line>
+    <line rend="right">The beginning of Platos Republic—</line>
     <milestone unit="tei:seg" spanTo="#e3-0061.01" corresp="#e3-0060.01"/>
     <space dim="vertical" unit="lines" extent="2"/>
     <line>As thou hast borne it most triumphantly</line>

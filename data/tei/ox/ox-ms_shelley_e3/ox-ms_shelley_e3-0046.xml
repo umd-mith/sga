@@ -25,8 +25,8 @@
     <line>And the rough walls are clothed with long soft <add place="sublinear">grass</add></line>
     <line>A simple dwelling, which shall be our own</line>
     <line>Where we will sit &amp; talk of time &amp; change</line>
-    <line>As the world ebbs &amp; flows, ourselves unchanged&#8212;</line>
-    <line><del rend="strikethrough">For</del> What can hide man from Mutability?&#8212;
+    <line>As the world ebbs &amp; flows, ourselves unchanged—</line>
+    <line><del rend="strikethrough">For</del> What can hide man from Mutability?—
           <add><metamark function="count">160</metamark></add></line>
     <line>And <add place="sublinear"><metamark function="insert">^</metamark></add><add
         place="superlinear">if</add> ye sigh, then I will smile, &amp; thou</line>
@@ -34,7 +34,7 @@
     <line>Until I weep, when ye shall smile away</line>
     <line>The tears she brought, which yet were sweet to <add place="sublinear">shed;</add></line>
     <line>We will entangle buds &amp; flowers,<add place="superlinear"><metamark
-          function="displacement">&#x2014;&#x2014;</metamark></add>
+          function="displacement" rend="short_line"/></add>
       <milestone unit="tei:seg" spanTo="#e3-0046.03" corresp="#e3-0047.01"/>&amp; make<anchor
         xml:id="e3-0046.03"/><anchor xml:id="e3-0046.04"/></line>
     <line>Strange combinations out of common things</line>

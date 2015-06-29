@@ -6,8 +6,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0072.jp2"/>
   <zone type="main">
     <line>Where they henceforth will live exempt from toil.</line>
-    <line>Pasturing flowers of vegetable fire <add><metamark function="displacement"
-      xml:id="e3-0072.01"><del rend="strikethrough">&#60;</del></metamark></add><add><space dim="horizontal" unit="chars" extent="3"/>
+    <line>Pasturing flowers of vegetable fire <add><del rend="strikethrough"><metamark function="displacement"
+      xml:id="e3-0072.01" rend="left_caret"/></del></add><add><space dim="horizontal" unit="chars" extent="3"/>
         <metamark function="count">42<unclear>1</unclear></metamark></add></line>
     <line>It was, as it is still, the pain of bliss</line>
     <line>To move, to breathe, to be; I wandering went</line>
@@ -41,11 +41,10 @@
         <del rend="strikethrough">subject</del>
         <add place="superlinear">abject</add>
       </mod>of his own</line>
-    <line>Which spurred him, like an outspent horse, to death&#8212;</line>
+    <line>Which spurred him, like an outspent horse, to death—</line>
     <line>None wrought his lips in truth entangling lines</line>
     <line>Which smiled the lie his tongue disdained to speak</line>
     <line rend="left"><add hand="#mws"><unclear><metamark function="alternate"
           >?</metamark></unclear></add></line>
-    <!-- Need to add "alternate" to "metamark" or discard its use -->
   </zone>
 </surface>

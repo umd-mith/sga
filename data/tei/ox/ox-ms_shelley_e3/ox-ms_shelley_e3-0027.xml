@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0027" partOf="#ox-ms_shelley_e3" mith:folio="11r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0027.jp2"/>
-  <zone type="library"><line rend="right">11</line></zone>
+  <zone type="library"><line>11</line></zone>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0027.01"/>
     <line rend="center">Asia</line>
@@ -66,7 +66,7 @@
     <line rend="indent1">And thine doth like an Angel sit</line>
     <line rend="indent1">Beside the helm conducting it</line>
     <line>Whilst all the winds with melody are ringing</line>
-    <line rend="indent1">It seems to float ever&#8212;forever&#8212;</line>
+    <line rend="indent1">It seems to float ever—forever—</line>
     <line rend="indent1"><mod>
         <del rend="strikethrough">Betwee</del>
         <add place="superlinear">Upon</add>

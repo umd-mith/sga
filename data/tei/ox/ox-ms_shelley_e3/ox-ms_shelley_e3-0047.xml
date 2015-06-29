@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0047" partOf="#ox-ms_shelley_e3" mith:folio="21r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0047.jp2"/>
-  <zone type="library"><line rend="right">21</line></zone>
+  <zone type="library"><line>21</line></zone>
   <zone type="main">
     <space dim="vertical" unit="lines" extent="5"/>
     <milestone unit="tei:seg" spanTo="#e3-0047.03" xml:id="e3-0047.04"/>
@@ -12,7 +12,7 @@
     <anchor xml:id="e3-0047.03"/>
     <space dim="vertical" unit="lines" extent="12"/>
     <milestone unit="tei:seg" spanTo="#e3-0047.02" corresp="#e3-0046.04"/>
-    <line rend="right"><add><metamark function="displacement">&#8212;</metamark></add> &amp;
+    <line rend="right"><add><metamark function="displacement" rend="line"/></add> &amp;
       beams</line>
     <line>Which twinkle on the fountain's brim <anchor xml:id="e3-0047.01"/></line>
     <anchor xml:id="e3-0047.02"/>

@@ -18,23 +18,23 @@
       </mod>mouldering fast, <mod>
         <del rend="overwritten">on</del>
         <add place="intralinear">oer</add>
-      </mod> their abandoned shrines <unclear reason="illegible">&#8212;</unclear></line>
+      </mod> their abandoned shrines <unclear reason="illegible">—</unclear></line>
     <line>The painted veil by those who were, called life,</line>
     <line>Which mimicked, as with colours idly spread,</line>
-    <line>All men believed or hoped, is torn aside&#8212;</line>
+    <line>All men believed or hoped, is torn aside—</line>
     <line>The loathsome mask has fallen, the man remains</line>
     <line>Sceptreless, free, uncircumscribed <mod>
         <del rend="overwritten">,</del>
-        <add place="intralinear"><unclear>:</unclear>&#8212;</add>
+        <add place="intralinear"><unclear>:</unclear>—</add>
       </mod> but man <unclear reason="illegible">:</unclear></line>
     <line>Equal, unclassed, tribeless, &amp; nationless</line>
-    <line>Exempt from awe <unclear reason="illegible">,</unclear> worship, degree,&#8212; the
+    <line>Exempt from awe <unclear reason="illegible">,</unclear> worship, degree,— the
       King</line>
     <line>Over himself; just, gentle, wise <mod>
         <del rend="overwritten">,</del>
-        <add place="intralinear"><unclear>:</unclear>&#8212;</add>
+        <add place="intralinear"><unclear>:</unclear>—</add>
       </mod>but man:</line>
-    <line>Passionless <unclear reason="illegible">?</unclear> no &#8212; <mod>
+    <line>Passionless <unclear reason="illegible">?</unclear> no — <mod>
         <del rend="strikethrough">but</del>
         <add place="superlinear">yet</add>
       </mod> free from guilt or pain</line>
@@ -61,13 +61,17 @@
     <line rend="center">Prometheus</line>
     <anchor xml:id="e3-0078.02"/>
   </zone>
-  <zone type="left_margin">
+  <zone type="left_margin">    
     <space dim="vertical" unit="lines" extent="12"/>
-    <line>1866</line>
-    <line><hi rend="underline"> 5</hi></line>
-    <line>1871</line>
-    <line><hi rend="underline"> 29</hi></line>
-    <line>1900</line>
-    <line> 15</line>
+    <zone type="calculation">
+       <line>1866</line>
+       <line>5</line>
+       <metamark function="math_operation" rend="short_line"/>
+       <line>1871</line>
+       <line> 29</line>
+      <metamark function="math_operation" rend="short_line"/>
+       <line>1900</line>
+       <line> 15</line>
+    </zone>
   </zone>
 </surface>

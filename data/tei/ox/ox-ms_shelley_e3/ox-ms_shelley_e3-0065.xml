@@ -4,7 +4,7 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
   uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0065" partOf="#ox-ms_shelley_e3" mith:folio="30r" mith:shelfmark="MS. Shelley e. 3">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e3-0065.jp2"/>
-  <zone type="library"><line rend="right">30</line></zone>
+  <zone type="library"><line>30</line></zone>
   <zone type="top"><add><metamark function="count">330</metamark></add></zone>
   <zone type="main" rotate="180">
     <line>take <mod>
@@ -15,7 +15,7 @@
         <del rend="strikethrough"><add place="superlinear">Euclid</add></del>
         <add place="sublinear">Plato</add>
       </mod>as</line>
-    <line>my model <unclear reason="illegible">.&#8212;</unclear></line>
+    <line>my model <unclear reason="illegible">.—</unclear></line>
     <line rend="indent1">The having spoken of myself with</line>
     <line>unaffected freedom will need little</line>
     <line>apology <mod>
@@ -43,7 +43,7 @@
         <add place="superlinear"><del rend="strikethrough">les</del>less than</add>
       </mod>their own</line>
     <line>hearts &amp; minds, by <del rend="strikethrough">calumny</del> misrepre</line>
-    <line>sentation.&#8212; Whatever talents a person</line>
+    <line>sentation.— Whatever talents a person</line>
     <line><mod>
         <del rend="strikethrough">has</del>
         <add place="superlinear">may possess</add>
@@ -59,7 +59,7 @@
       </mod> have been sufficient, let no<mod spanTo="#e3-0065.01"/><add>ne</add></line>
     <line><del rend="strikethrough">one</del><anchor xml:id="e3-0065.01"/> trouble themselves to
       heap the dust</line>
-    <line>of Oblivion upon his <del rend="strikethrough">hopes</del> efforts.&#8212; <unclear reason="case">t</unclear>he</line>
+    <line>of Oblivion upon his <del rend="strikethrough">hopes</del> efforts.— <unclear reason="case">t</unclear>he</line>
     <!-- figure out how to encode different layers of writting on the same page,
       specifically the lines starting with pile and which-->
     <line>pile they raise will betray <del rend="strikethrough">the spot</del> his grave</line>
