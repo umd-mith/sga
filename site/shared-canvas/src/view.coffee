@@ -894,7 +894,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     render: -> 
       @$el.css 
-        'display': 'inline-block'
+        'display': 'inline'
       @$el.text @model.get "text"
       @$el.addClass @model.get("type").join(" ")
 
@@ -904,13 +904,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         @$el.attr("style", cur_style + " " + icss)
       
       content = @model.get("text").replace(/\s+/g, " ")
-      if content == " "
-        charWidth = 0
-      else
-        charWidth = content.length
-
-      if charWidth == 0
-        return null
       @
 
   #
