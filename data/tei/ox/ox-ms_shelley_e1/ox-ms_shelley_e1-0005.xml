@@ -39,13 +39,9 @@
     <line>Hastes, in meteor-eclipsing arra<retrace cause="unclear">y</retrace>, &amp; they
       flee</line>
     <line rend="indent2">Beyond his blue dwelling,</line>
-    <line rend="indent2">As fawns flee the le<mod>
-        <del rend="overwritten">a</del>
-        <add place="intralinear">o</add>
-      </mod>p<mod>
-        <del rend="overwritten">o</del>
-        <add place="intralinear">a</add>
-      </mod>rd. . .</line>
+    <line xml:space="preserve" rend="indent2">As fawns flee the 
+      le<mod><del rend="overwritten">a</del><add place="intralinear">o</add></mod>p<mod><del rend="overwritten">o</del><add place="intralinear">a</add></mod>rd.
+      . .</line>
     <line rend="indent3">But where are ye?</line>
     <milestone unit="tei:stage" spanTo="#e1-0005.10"/>
     <addSpan spanTo="#e1-0005.09"/>
