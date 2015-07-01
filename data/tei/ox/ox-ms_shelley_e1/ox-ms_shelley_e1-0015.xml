@@ -54,11 +54,8 @@
       </mod></line>
     <!--The composition sequence of the following line is uncertain.-->
     <delSpan spanTo="#e1.0015.09" rend="strikethrough"/>
-    <line>To the <mod>
-        <del rend="strikethrough">pale</del>
-      <add place="sublinear"><del rend="strikethrough">unpavili Ione</del></add>
-    </mod><del rend="strikethrough">sky, my</del></line>
-    <line><milestone unit="tei:speaker" spanTo="#e1-0015.010"/>Ione<anchor
+    <line>To the pale sky, my</line>
+    <line rend="indent3">unpavili <milestone unit="tei:speaker" spanTo="#e1-0015.010"/>Ione<anchor
       xml:id="e1-0015.010"/></line>
     <anchor xml:id="e1.0015.09"/>
     <line>To the unpavilioned sky<mod>
