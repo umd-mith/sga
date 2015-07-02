@@ -75,12 +75,13 @@ window.SGAranges = {}
       thisEl = @$el
       thisFlat = @model.attributes.flat
       thisTemplate = @template
+      url = @model.attributes.url
       $.ajax
-        url: @model.attributes.url
+        url: url
         type: 'GET'
         dataType: 'json'
         processData: false
-        success: (data) -> SGAranges.processManifest data, thisFlat, thisEl, thisTemplate
+        success: (data) -> SGAranges.processManifest data, url, thisFlat, thisEl, thisTemplate
       @
 
     remove: ->
@@ -149,7 +150,7 @@ window.SGAranges = {}
       @$el.remove()
       @
 
-  SGAranges.processCanvas = (canv, data, pos=null) =>
+  SGAranges.processCanvas = (canv, id_graph, metadata, pos=null) =>
       canvas = canv["@id"]
       c = new SGAranges.Canvas()
       @clv.collection.add c
@@ -157,12 +158,12 @@ window.SGAranges = {}
       # This might need to change when/if we'll have more than one sequence 
       # We only need to address the "canonical" sequence here, which we're assuming
       # is in first position.
-      c_pos = if pos? then pos else $.inArray(canvas, data.sequences[0].canvases) + 1
-      sc_url = data.service
+      # c_pos = if pos? then pos else $.inArray(canvas, metadata.sequences[0].canvases) + 1
+      sc_url = metadata["sc:service"]
 
       img_url = ""
 
-      for i in data.images
+      for i in metadata.images
         if i.on == canvas
           i_url = i.resource["@id"]  
           if i.resource.service?
@@ -177,31 +178,35 @@ window.SGAranges = {}
       c.set
         "id"       : canvas_safe_id
         "label"    : canv.label
-        "position" : c_pos
+        # "position" : c_pos
         "scUrl"    : canv.service
         "imgUrl"   : img_url
         "status"   : {t: "grn", m: "grn"}
 
-  SGAranges.processManifest = (data, flat, el, template) =>
-      w_id = data["@id"]
-      work_safe_id = w_id.replace(/[:\/\.]/g, "_")
- 
+  SGAranges.processManifest = (data, url, flat, el, template) =>
+      id_graph = {}
+      for node in data["@graph"]
+        id_graph[node["@id"]] = node if node["@id"]? 
+      work_safe_id = url.replace(/[:\/\.]/g, "_")
+      metadata = id_graph[url]
       el.html template(
         "id"     : work_safe_id
-        "title"  : if data.metadata.title? then data.metadata.title + " - " + data.label else data.label
-        "meta"   : data.metadata
+        # "title"  : if metadata["dc:title"]? then metadata["dc:title"] + " - " + metadata.label else metadata.label
+        "title"  : metadata.label
+        "meta"   : metadata
       )
     
       @rl = new SGAranges.RangeList()
       @rlv = new SGAranges.RangeListView collection: @rl
 
-      for struct in data.structures
+      for struct_id in metadata.structures
+
+        struct = id_graph[struct_id]
 
         r = new SGAranges.Range()
         @rlv.collection.add r
 
-        s_id = struct["@id"]
-        range_safe_id = s_id.replace(/[:\/\.]/g, "_")
+        range_safe_id = struct_id.replace(/[:\/\.]/g, "_")
 
         r.set
           "id"    : range_safe_id
@@ -214,29 +219,31 @@ window.SGAranges = {}
         @cl = new SGAranges.CanvasList()
         @clv = new SGAranges.CanvasListView collection: @cl  
 
-        for canv in data.canvases
-          SGAranges.processCanvas canv, data
+        canvases = [struct["first"]]
+        canvases = canvases.concat(struct["rest"])
+        for canvas_id in canvases
+          canvas = id_graph[canvas_id]
+          SGAranges.processCanvas canvas, id_graph, metada
 
         @clv.render '#' + work_safe_id + ' .panel-body'
 
       else
-        for struct in data.structures
+        for struct_id in metadata.structures
+
+          struct = id_graph[struct_id]
 
           @cl = new SGAranges.CanvasList()
           @clv = new SGAranges.CanvasListView collection: @cl  
 
-          s_id = struct["@id"]
-          range_safe_id = s_id.replace(/[:\/\.]/g, "_")
+          range_safe_id = struct_id.replace(/[:\/\.]/g, "_")
 
           cur_pos = 0
-          for canvas in struct.canvases
+          canvases = [struct["first"]]
+          canvases = canvases.concat(struct["rest"])
+          for canvas_id in canvases
             cur_pos += 1
-            for canv in data.canvases
-              if canv["@id"] == canvas           
-                SGAranges.processCanvas canv, data, cur_pos
-                # This avoids rendering more than once
-                # canvases that are included in multiple ranges
-                break
+            canvas = id_graph[canvas_id]
+            SGAranges.processCanvas canvas, id_graph, metadata, cur_pos
 
           @clv.render '#' + range_safe_id + ' .row'
 
@@ -244,39 +251,4 @@ window.SGAranges = {}
 
 )(jQuery,window.SGAranges,_,Backbone)
 
-# Work it, make it, do it, makes us
-( ($) ->
-  wl = new SGAranges.WorkList([
-    id: "ox-frankenstein-notebook_a"
-    url: "/data/ox/ox-frankenstein-notebook_a/Manifest-index.jsonld"
-    flat: true
-  ,
-    id: "ox-frankenstein-notebook_b"
-    url: "/data/ox/ox-frankenstein-notebook_b/Manifest-index.jsonld"
-    flat: true
-  ,
-    id: "ox-frankenstein-notebook_c1"
-    url: "/data/ox/ox-frankenstein-notebook_c1/Manifest-index.jsonld"
-    flat: true
-  ,
-    id: "ox-frankenstein-notebook_c2"
-    url: "/data/ox/ox-frankenstein-notebook_c2/Manifest-index.jsonld"
-    flat: true
-  ,
-    id: "ox-frankenstein-volume_i"
-    url: "/data/ox/ox-frankenstein-volume_i/Manifest-index.jsonld"
-    flat: false
-  ,
-    id: "ox-frankenstein-volume_ii"
-    url: "/data/ox/ox-frankenstein-volume_ii/Manifest-index.jsonld"
-    flat: false
-  ,
-    id: "ox-frankenstein-volume_iii"
-    url: "/data/ox/ox-frankenstein-volume_iii/Manifest-index.jsonld"
-    flat: false
-  ])
-
-  wlv = new SGAranges.WorkListView collection: wl
-  wlv.render "#ranges_wrapper"
-)(jQuery)
 
