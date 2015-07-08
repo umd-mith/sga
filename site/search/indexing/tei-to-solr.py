@@ -2,11 +2,62 @@
 # coding=UTF-8
 """ Index fields from SGA TEI to a Solr instance"""
 
-import os, sys
+import os, sys, re
 import solr
 import xml.sax, json
+from xml.etree import ElementTree as etree
+from six.moves.urllib.parse import urljoin
+
+TEI  =  'http://www.tei-c.org/ns/1.0'
+MITH =  'http://mith.umd.edu/sc/ns1#'
+XML  =  'http://www.w3.org/XML/1998/namespace'
+XI   =  'http://www.w3.org/2001/XInclude'
+
+class TeiData :
+    def __init__(self, path_to_tei):
+
+        # Connect to solr instance
+        s = solr.SolrConnection('http://localhost:8080/solr/sga')
+        ns = {'tei': TEI, 'xi': XI, 'xml': XML}
+
+        tei = etree.parse(path_to_tei).getroot()
+
+        # First get metadata that will need to be added to each solr doc 
+        # (There is one solr doc per surface)   
+
+        root_viewer_url = "http://shelleygodwinarchive.org/sc/"
+        preserve_titles = ["ms_shelley", "prometheus_unbound"]
+
+        tei_id = tei.get('{%s}id' % XML)
+        esc_title_id = tei_id
+
+        for i, title in enumerate(preserve_titles):
+            esc_title_id = esc_title_id.replace(title, '{#title'+str(i)+"#}")
+
+        esc_title_id = re.sub(r'[-_]', '/', esc_title_id)
+
+        base_viewer_url = re.sub(
+                            r'\{#title(\d+)#\}',
+                            lambda m: preserve_titles[int(m.group(1))],
+                            esc_title_id)
+        base_viewer_url = base_viewer_url.replace("ox/", "oxford/")        
+
+        self.base_viewer_url = root_viewer_url + base_viewer_url
+        self.work = tei.find('.//{%(tei)s}msItem[@class="#work"][0]/{%(tei)s}bibl/{%(tei)s}title' % ns).text
+        self.authors = tei.find('.//{%(tei)s}msItem[@class="#work"][0]/{%(tei)s}bibl/{%(tei)s}author' % ns).text
+        self.attribution = tei.find('.//{%(tei)s}repository' % ns).text
+        self.shelfmark = tei.find('.//{%(tei)s}idno' % ns).text
+
+        # load each surface document
+        for i, inc in enumerate(tei.findall('.//{%(tei)s}sourceDoc/{%(xi)s}include' % ns)):
+            filename = urljoin(path_to_tei, inc.attrib['href'])
+            self.position = str(i)
+
+            source = open(filename)
+            xml.sax.parse(source, GSAContentHandler(s, self, filename))
+            source.close()
  
-class Doc :
+class SurfaceDoc :
     def __init__(self, 
         solr="", 
         shelfmark="",
@@ -66,10 +117,11 @@ class Doc :
         self.solr.commit()
 
 class GSAContentHandler(xml.sax.ContentHandler):
-    def __init__(self, s, filename):
+    def __init__(self, s, tei_data, filename):
         xml.sax.ContentHandler.__init__(self)
 
         self.solr = s
+        self.tei_data = tei_data
         self.pos = 0
         self.hands = ["mws"]        
         self.latest_hand = self.hands[-1]
@@ -84,7 +136,7 @@ class GSAContentHandler(xml.sax.ContentHandler):
         self.filename = filename
 
         # Initialize doc
-        self.doc = Doc(
+        self.doc = SurfaceDoc(
             solr = self.solr)
 
         print self.doc
@@ -113,16 +165,14 @@ class GSAContentHandler(xml.sax.ContentHandler):
                 # self.doc.shelfmark = partOf[1:] if partOf[0] == "#" else partOf
             self.doc.doc_id = attrs["xml:id"]
 
-            # Find my manifest and populate metadata
-            for mk in manifests:
-                for c in manifests[mk]["canvases"]:                
-                    if c["sga:hasTeiSource"].endswith(self.filename):
-                        self.doc.shelf_label = c["label"]
-                        self.doc.viewer_url = c["service"]
-                        self.doc.work = manifests[mk]["dc:title"]
-                        self.doc.authors = manifests[mk]["metadata"][0]["value"]
-                        self.doc.attribution = manifests[mk]["attribution"]
-                        self.doc.shelfmark = manifests[mk]["label"]
+            # Add metadata
+
+            self.doc.shelf_label = attrs["mith:shelfmark"]+", "+attrs["mith:folio"]
+            self.doc.viewer_url = self.tei_data.base_viewer_url + "#/p" + self.tei_data.position
+            self.doc.work = self.tei_data.work
+            self.doc.authors = self.tei_data.authors
+            self.doc.attribution = self.tei_data.attribution
+            self.doc.shelfmark = self.tei_data.shelfmark
 
         if "hand" in attrs:
             hand = attrs["hand"]
@@ -236,30 +286,8 @@ class GSAContentHandler(xml.sax.ContentHandler):
  
 if __name__ == "__main__":
 
-    if len(sys.argv) != 3:
-        print 'Usage: ./tei-to-solr.py path_to_tei path_to_manifests'
-        sys.exit(1)
+    if len(sys.argv) != 2:
+        print 'Usage: ./tei-to-solr.py path_to_tei'
+        sys.exit(1)    
 
-    # Connect to solr instance
-    s = solr.SolrConnection('http://localhost:8080/solr/sga')
-
-    # Walk provided directory for manifests; parse them and store them
-    man_dir = os.path.normpath(sys.argv[2]) + os.sep
-
-    manifests = {}
-
-    for d in os.listdir(man_dir):
-        if os.path.isdir(man_dir + d):
-            for f in os.listdir(man_dir + d):
-                if f.endswith('.jsonld'):
-                    json_data=open(man_dir + os.sep + d + os.sep + f)
-                    data = json.load(json_data)
-                    manifests[d] = data
-
-    # Walk provided directory for xml files; parse them and create/commit documents
-    xml_dir = os.path.normpath(sys.argv[1]) + os.sep
-    for f in os.listdir(xml_dir):
-        if f.endswith('.xml'):
-            source = open(xml_dir + f)
-            xml.sax.parse(source, GSAContentHandler(s, f))
-            source.close()
+    TeiData(sys.argv[1])
