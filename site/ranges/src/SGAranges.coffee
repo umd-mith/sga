@@ -81,7 +81,7 @@ window.SGAranges = {}
         type: 'GET'
         dataType: 'json'
         processData: false
-        success: (data) -> SGAranges.processManifest data, url, thisFlat, thisEl, thisTemplate
+        success: (data) -> SGAranges.processMetadata data, url, thisFlat, thisEl, thisTemplate
       @
 
     remove: ->
@@ -158,17 +158,17 @@ window.SGAranges = {}
       # This might need to change when/if we'll have more than one sequence 
       # We only need to address the "canonical" sequence here, which we're assuming
       # is in first position.
-      # c_pos = if pos? then pos else $.inArray(canvas, metadata.sequences[0].canvases) + 1
-      sc_url = metadata["sc:service"]
+      c_pos = if pos? then pos else $.inArray(canvas, metadata.canvases) + 1
+      sc_url = metadata["sc:service"]["@id"]
 
       img_url = ""
 
-      for i in metadata.images
+      for img_id in metadata.images
+        i = id_graph[img_id]
         if i.on == canvas
-          i_url = i.resource["@id"]  
-          if i.resource.service?
-            resolver = i.resource.service["@id"]
-            img_url = resolver + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
+          i_url = i.resource
+          if id_graph[i_url].service?
+            img_url = id_graph[i_url].service + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
           else 
             img_url = i_url
 
@@ -178,12 +178,12 @@ window.SGAranges = {}
       c.set
         "id"       : canvas_safe_id
         "label"    : canv.label
-        # "position" : c_pos
-        "scUrl"    : canv.service
+        "position" : c_pos
+        "scUrl"    : sc_url + "#/p" + c_pos
         "imgUrl"   : img_url
         "status"   : {t: "grn", m: "grn"}
 
-  SGAranges.processManifest = (data, url, flat, el, template) =>
+  SGAranges.processMetadata = (data, url, flat, el, template) =>
       id_graph = {}
       for node in data["@graph"]
         id_graph[node["@id"]] = node if node["@id"]? 
@@ -193,24 +193,25 @@ window.SGAranges = {}
         "id"     : work_safe_id
         # "title"  : if metadata["dc:title"]? then metadata["dc:title"] + " - " + metadata.label else metadata.label
         "title"  : metadata.label
-        "meta"   : metadata
+        "meta"   : [{"label": "author", "value":metadata["sc:agentLabel"]}] # This may need to be revised.
       )
     
       @rl = new SGAranges.RangeList()
       @rlv = new SGAranges.RangeListView collection: @rl
 
-      for struct_id in metadata.structures
+      if metadata.structures?
+        for struct_id in metadata.structures
 
-        struct = id_graph[struct_id]
+          struct = id_graph[struct_id]
 
-        r = new SGAranges.Range()
-        @rlv.collection.add r
+          r = new SGAranges.Range()
+          @rlv.collection.add r
 
-        range_safe_id = struct_id.replace(/[:\/\.]/g, "_")
+          range_safe_id = struct_id.replace(/[:\/\.]/g, "_")
 
-        r.set
-          "id"    : range_safe_id
-          "label" : struct.label              
+          r.set
+            "id"    : range_safe_id
+            "label" : struct.label              
 
       if !flat then @rlv.render '#' + work_safe_id + ' .panel-body'
 
@@ -219,11 +220,9 @@ window.SGAranges = {}
         @cl = new SGAranges.CanvasList()
         @clv = new SGAranges.CanvasListView collection: @cl  
 
-        canvases = [struct["first"]]
-        canvases = canvases.concat(struct["rest"])
-        for canvas_id in canvases
+        for canvas_id in metadata.canvases
           canvas = id_graph[canvas_id]
-          SGAranges.processCanvas canvas, id_graph, metada
+          SGAranges.processCanvas canvas, id_graph, metadata
 
         @clv.render '#' + work_safe_id + ' .panel-body'
 
@@ -243,7 +242,7 @@ window.SGAranges = {}
           for canvas_id in canvases
             cur_pos += 1
             canvas = id_graph[canvas_id]
-            SGAranges.processCanvas canvas, id_graph, metadata, cur_pos
+            SGAranges.processCanvas canvas, id_graph, metadata
 
           @clv.render '#' + range_safe_id + ' .row'
 
@@ -251,4 +250,24 @@ window.SGAranges = {}
 
 )(jQuery,window.SGAranges,_,Backbone)
 
+# Main: Get manifests from DOM and initialize
+( ($) ->
 
+  base_url = "http://54.166.84.180/data/ox/"
+  # base_url = "http://localhost:8888/demo/"
+  works = []
+  manifests = $("#ranges_wrapper").data("manifests").split(" ")
+  flatness  = $("#ranges_wrapper").data("flat").toString().split(" ")
+  for m, i in manifests
+    data = 
+      id : m
+      url: "#{base_url}#{m}/Manifest-index.jsonld" 
+      flat: JSON.parse(flatness[i])
+
+    works.push data
+
+  wl = new SGAranges.WorkList(works)
+
+  wlv = new SGAranges.WorkListView collection: wl
+  wlv.render "#ranges_wrapper"
+)(jQuery)
