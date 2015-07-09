@@ -48,6 +48,13 @@ class TeiData :
         self.attribution = tei.find('.//{%(tei)s}repository' % ns).text
         self.shelfmark = tei.find('.//{%(tei)s}idno' % ns).text
 
+        sole_hand = tei.find('.//{%(tei)s}handNote[@scope="sole"]' % ns)
+        major_hand = tei.find('.//{%(tei)s}handNote[@scope="major"]' % ns)
+        if sole_hand is None:
+            self.default_hand = major_hand.get('{%s}id' % XML)
+        else:
+            self.default_hand = sole_hand.get('{%s}id' % XML)
+
         # load each surface document
         for i, inc in enumerate(tei.findall('.//{%(tei)s}sourceDoc/{%(xi)s}include' % ns)):
             filename = urljoin(path_to_tei, inc.attrib['href'])
@@ -123,7 +130,7 @@ class GSAContentHandler(xml.sax.ContentHandler):
         self.solr = s
         self.tei_data = tei_data
         self.pos = 0
-        self.hands = ["mws"]        
+        self.hands = [tei_data.default_hand]        
         self.latest_hand = self.hands[-1]
         self.hand_start = 0
         self.path = [] # name, hand
