@@ -221,8 +221,8 @@
                     </msContents>
                     <physDesc>
                         <handDesc>
-                            <handNote xml:id="mws"><persName>Mary Shelley</persName></handNote>
-                            <handNote xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                            <handNote scope="major" xml:id="mws"><persName>Mary Shelley</persName></handNote>
+                            <handNote scope="minor" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
