@@ -71,7 +71,7 @@
 
     <field name="shelf_label" type="string" indexed="true" stored="true" required="true" />
     <field name="viewer_url" type="string" indexed="true" stored="true" required="true" />
-    <field name="work" type="string" indexed="true" stored="true" required="true" />
+    <field name="work" type="string" indexed="true" stored="true" required="false" />
     <field name="authors" type="string" indexed="true" stored="true" required="true" />
     <field name="attribution" type="string" indexed="true" stored="true" required="true" />
 
@@ -81,6 +81,7 @@
     <field indexed="true" multiValued="false" name="text" stored="true" type="text"/>
 
     <dynamicField name="hand_*" type="text_hand" multiValued="false" indexed="true" stored="true" required="false"/>
+    <dynamicField name="work_*" type="text_hand" multiValued="false" indexed="true" stored="true" required="false"/>
     <dynamicField name="*_pos" multiValued="true" type="string" indexed="true" stored="true" required="false"/>
 
     <field name="_version_" type="long" indexed="true" stored="true"/>
