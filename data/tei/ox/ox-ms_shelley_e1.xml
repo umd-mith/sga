@@ -44,16 +44,363 @@
                         <msItem class="#work">
                             <bibl status="fair_copy">
                                 <author>Percy Shelley</author>
-                                <title>Prometheus Unbound and other fragments.</title>
+                                <title>Prometheus Unbound</title>
                             </bibl>
-                            <msItem class="#volume">
-                                <bibl>
-                                    <title>e1</title>
-                                    <date notBefore="1819-03" notAfter="1819-12">
-                                        End of March 1819-late-November/early-December 1819
-                                    </date>
+                            <msItem class="#dramatis_personae"
+                                xml:id="ox-ms_prometheus_unbound_dramatis_personae">
+                                <locusGrp>
+                                    <locus target="#ox-ms_shelley_e1-0037"/>
+                                </locusGrp>
+                                <bibl status="fair_copy">
+                                    <title>Dramatis Personae</title>
                                 </bibl>
                             </msItem>
+                            <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i">
+                                <bibl status="fair_copy">
+                                    <title>Act I</title>
+                                    <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
+                                </bibl>
+                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1">
+                                    <locusGrp>
+                                        <locus target="#ox-ms_shelley_e1-0038" /> 
+                                        <locus target="#e1-0039-pu_line_0"/> 
+                                        <locus target="#ox-ms_shelley_e1-0040 
+                                            #ox-ms_shelley_e1-0041 
+                                            #ox-ms_shelley_e1-0042" /> 
+                                        <locus target="#e1-0043-pu_line_0 #e1-0043-pu_line_1"/> 
+                                        <locus target="#ox-ms_shelley_e1-0044"/> 
+                                        <locus target="#ox-ms_shelley_e1-0046 
+                                            #ox-ms_shelley_e1-0047 
+                                            #ox-ms_shelley_e1-0048 
+                                            #ox-ms_shelley_e1-0049 
+                                            #ox-ms_shelley_e1-0050" /> 
+                                        <locus target="#ox-ms_shelley_e1-0052"/>
+                                        <locus target="#e1-0053-pu_line_0
+                                            #e1-0053-pu_line_1
+                                            #e1-0053-pu_line_2
+                                            #e1-0053-pu_line_3"/>
+                                        <locus target="#ox-ms_shelley_e1-0054"/>
+                                        <locus target="#e1-0055-pu_line_0
+                                            #e1-0055-pu_line_1
+                                            #e1-0055-pu_line_2
+                                            #e1-0055-pu_line_3
+                                            #e1-0055-pu_line_4
+                                            #e1-0055-pu_line_5
+                                            #e1-0055-pu_line_6
+                                            #e1-0055-pu_line_7
+                                            #e1-0055-pu_line_8"/>
+                                        <locus target="#ox-ms_shelley_e1-0056" /> 
+                                        <locus target="#ox-ms_shelley_e1-0058" /> 
+                                        <locus target="#ox-ms_shelley_e1-0060" /> 
+                                        <locus target="#ox-ms_shelley_e1-0062" />
+                                        <locus target="#ox-ms_shelley_e1-0064 
+                                            #ox-ms_shelley_e1-0065
+                                            #ox-ms_shelley_e1-0066
+                                            #ox-ms_shelley_e1-0067
+                                            #ox-ms_shelley_e1-0068" />
+                                        <locus target="#ox-ms_shelley_e1-0070"/>
+                                        <locus target="#ox-ms_shelley_e1-0072" />
+                                        <locus target="#ox-ms_shelley_e1-0074" /> 
+                                        <locus target="#e1-0075-pu_line_0" /> 
+                                        <locus target="#ox-ms_shelley_e1-0076"/> 
+                                        <locus target="#e1-0077-pu_line_0
+                                            #e1-0077-pu_line_1
+                                            #e1-0077-pu_line_2
+                                            #e1-0077-pu_line_3
+                                            #e1-0077-pu_line_4"/>
+                                        <locus target="#ox-ms_shelley_e1-0078" /> 
+                                        <locus target="#ox-ms_shelley_e1-0080"/>
+                                        <locus target="#e1-0081-pu_line_0
+                                            #e1-0081-pu_line_1
+                                            #e1-0081-pu_line_2"/>
+                                        <locus target="#ox-ms_shelley_e1-0082"/>
+                                        <locus target="#e1-0083-pu_line_0"/> 
+                                        <locus target="#ox-ms_shelley_e1-0084"/> 
+                                        <locus target="#e1-0085-pu_line_0
+                                            #e1-0085-pu_line_1
+                                            #e1-0085-pu_line_2
+                                            #e1-0085-pu_line_3
+                                            #e1-0085-pu_line_4
+                                            #e1-0085-pu_line_5
+                                            #e1-0085-pu_line_6
+                                            #e1-0085-pu_line_7"/> 
+                                        <locus target="#ox-ms_shelley_e1-0086" />
+                                        <locus target="#ox-ms_shelley_e1-0088"/> 
+                                        <locus target="#ox-ms_shelley_e1-0090"/> 
+                                        <locus target="#ox-ms_shelley_e1-0092" /> 
+                                        <locus target="#ox-ms_shelley_e1-0094"/>
+                                        
+                                    </locusGrp>
+                                    <bibl status="fair_copy">
+                                        <title>Scene 1</title>
+                                    </bibl>                                
+                                </msItem>
+                            </msItem>
+                            <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv">
+                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1">
+                                    <locusGrp>
+                                        <locus target="#ox-ms_shelley_e1-0005
+                                            #ox-ms_shelley_e1-0006 
+                                            #ox-ms_shelley_e1-0007 
+                                            #ox-ms_shelley_e1-0008 
+                                            #ox-ms_shelley_e1-0009 
+                                            #ox-ms_shelley_e1-0010 
+                                            #ox-ms_shelley_e1-0011 
+                                            #ox-ms_shelley_e1-0012 
+                                            #ox-ms_shelley_e1-0013 
+                                            #ox-ms_shelley_e1-0014 
+                                            #ox-ms_shelley_e1-0015 
+                                            #ox-ms_shelley_e1-0016 
+                                            #ox-ms_shelley_e1-0017 
+                                            #ox-ms_shelley_e1-0018 
+                                            #ox-ms_shelley_e1-0019 
+                                            #ox-ms_shelley_e1-0020 
+                                            #ox-ms_shelley_e1-0021 
+                                            #ox-ms_shelley_e1-0022 
+                                            #ox-ms_shelley_e1-0023 
+                                            #ox-ms_shelley_e1-0024 
+                                            #ox-ms_shelley_e1-0025 
+                                            #ox-ms_shelley_e1-0026 
+                                            #ox-ms_shelley_e1-0027 
+                                            #ox-ms_shelley_e1-0028"/> 
+                                        <locus target="#ox-ms_shelley_e1-0045"/>
+                                        <locus target="#ox-ms_shelley_e1-0051"/>
+                                        <locus target="#ox-ms_shelley_e1-0057"/>
+                                        <locus target="#ox-ms_shelley_e1-0059"/>
+                                        <locus target="#ox-ms_shelley_e1-0061"/>
+                                        <locus target="#ox-ms_shelley_e1-0063"/>
+                                        <locus target="#ox-ms_shelley_e1-0069"/>
+                                        <locus target="#ox-ms_shelley_e1-0071"/>
+                                        <locus target="#e1-0073-pu_line_0"/>
+                                        
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 1</title>
+                                    </bibl>
+                                </msItem>
+                                <bibl>
+                                    <title>Act IV</title>
+                                    <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
+                                </bibl>
+                            </msItem>
+                        </msItem>
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="#ox-ms_shelley_e1-0035
+                                    #ox-ms_shelley_e1-0036"/> 
+                                
+                                <locus target="
+                                    #e1-0039-ion_line_0
+                                    #e1-0039-ion_line_1
+                                    #e1-0039-ion_line_2
+                                    #e1-0039-ion_line_3
+                                    #e1-0039-ion_line_4
+                                    #e1-0039-ion_line_5
+                                    #e1-0039-ion_line_6
+                                    #e1-0039-ion_line_7
+                                    #e1-0039-ion_line_8
+                                    #e1-0039-ion_line_9
+                                    #e1-0039-ion_line_10
+                                    #e1-0039-ion_line_11
+                                    #e1-0039-ion_line_12
+                                    #e1-0039-ion_line_13
+                                    #e1-0039-ion_line_14
+                                    #e1-0039-ion_line_15
+                                    #e1-0039-ion_line_16
+                                    #e1-0039-ion_line_17
+                                    #e1-0039-ion_line_18
+                                    #e1-0039-ion_line_19
+                                    #e1-0039-ion_line_20"/>
+                                <locus target="#e1-0043-ion_line_0
+                                    #e1-0043-ion_line_1
+                                    #e1-0043-ion_line_2
+                                    #e1-0043-ion_line_3
+                                    #e1-0043-ion_line_4
+                                    #e1-0043-ion_line_5
+                                    #e1-0043-ion_line_6
+                                    #e1-0043-ion_line_7
+                                    #e1-0043-ion_line_8
+                                    #e1-0043-ion_line_9
+                                    #e1-0043-ion_line_10
+                                    #e1-0043-ion_line_11
+                                    #e1-0043-ion_line_12
+                                    #e1-0043-ion_line_13
+                                    #e1-0043-ion_line_14
+                                    #e1-0043-ion_line_15
+                                    #e1-0043-ion_line_16
+                                    #e1-0043-ion_line_17
+                                    #e1-0043-ion_line_18
+                                    #e1-0043-ion_line_19
+                                    #e1-0043-ion_line_20"/>
+                                <locus target="#ox-ms_shelley_e1-0047"/>
+                                <locus target="#e1-0053-ion_line_0
+                                    #e1-0053-ion_line_0
+                                    #e1-0053-ion_line_1
+                                    #e1-0053-ion_line_2
+                                    #e1-0053-ion_line_3
+                                    #e1-0053-ion_line_4
+                                    #e1-0053-ion_line_5
+                                    #e1-0053-ion_line_6
+                                    #e1-0053-ion_line_7
+                                    #e1-0053-ion_line_8
+                                    #e1-0053-ion_line_9
+                                    #e1-0053-ion_line_10
+                                    #e1-0053-ion_line_11
+                                    #e1-0053-ion_line_12
+                                    #e1-0053-ion_line_13
+                                    #e1-0053-ion_line_14
+                                    #e1-0053-ion_line_15
+                                    #e1-0053-ion_line_16
+                                    #e1-0053-ion_line_17
+                                    #e1-0053-ion_line_18
+                                    #e1-0053-ion_line_19
+                                    #e1-0053-ion_line_20
+                                    #e1-0053-ion_line_21"/>
+                                <locus target="#e1-0055-ion_line_0
+                                    #e1-0055-ion_line_1
+                                    #e1-0055-ion_line_2
+                                    #e1-0055-ion_line_3
+                                    #e1-0055-ion_line_4
+                                    #e1-0055-ion_line_5
+                                    #e1-0055-ion_line_6
+                                    #e1-0055-ion_line_7
+                                    #e1-0055-ion_line_8
+                                    #e1-0055-ion_line_9
+                                    #e1-0055-ion_line_10
+                                    #e1-0055-ion_line_11
+                                    #e1-0055-ion_line_12
+                                    #e1-0055-ion_line_13a
+                                    #e1-0055-ion_line_13b
+                                    #e1-0055-ion_line_14"/>
+                                <locus target="#e1-0073-ion_line_0
+                                    #e1-0073-ion_line_1
+                                    #e1-0073-ion_line_2
+                                    #e1-0073-ion_line_3
+                                    #e1-0073-ion_line_4
+                                    #e1-0073-ion_line_5
+                                    #e1-0073-ion_line_6
+                                    #e1-0073-ion_line_7
+                                    #e1-0073-ion_line_8
+                                    #e1-0073-ion_line_9
+                                    #e1-0073-ion_line_10
+                                    #e1-0073-ion_line_11
+                                    #e1-0073-ion_line_12
+                                    #e1-0073-ion_line_13
+                                    #e1-0073-ion_line_14
+                                    #e1-0073-ion_line_15
+                                    #e1-0073-ion_line_16
+                                    #e1-0073-ion_line_17"/>
+                                <locus target="#e1-0075-ion_line_0a
+                                    #e1-0075-ion_line_0b
+                                    #e1-0075-ion_line_1
+                                    #e1-0075-ion_line_2
+                                    #e1-0075-ion_line_3
+                                    #e1-0075-ion_line_4
+                                    #e1-0075-ion_line_5
+                                    #e1-0075-ion_line_6
+                                    #e1-0075-ion_line_7
+                                    #e1-0075-ion_line_8
+                                    #e1-0075-ion_line_9
+                                    #e1-0075-ion_line_10
+                                    #e1-0075-ion_line_11
+                                    #e1-0075-ion_line_12
+                                    #e1-0075-ion_line_13
+                                    #e1-0075-ion_line_14
+                                    #e1-0075-ion_line_15
+                                    #e1-0075-ion_line_16
+                                    #e1-0075-ion_line_17
+                                    #e1-0075-ion_line_18
+                                    #e1-0075-ion_line_19"/>
+                                <locus target="#e1-0077-ion_line_0
+                                    #e1-0077-ion_line_1
+                                    #e1-0077-ion_line_2
+                                    #e1-0077-ion_line_3
+                                    #e1-0077-ion_line_4
+                                    #e1-0077-ion_line_5
+                                    #e1-0077-ion_line_6
+                                    #e1-0077-ion_line_7
+                                    #e1-0077-ion_line_8
+                                    #e1-0077-ion_line_9
+                                    #e1-0077-ion_line_10
+                                    #e1-0077-ion_line_11
+                                    #e1-0077-ion_line_12
+                                    #e1-0077-ion_line_13
+                                    #e1-0077-ion_line_14
+                                    #e1-0077-ion_line_15
+                                    #e1-0077-ion_line_16
+                                    #e1-0077-ion_line_17
+                                    #e1-0077-ion_line_18
+                                    #e1-0077-ion_line_19"/>
+                                <locus target="#ox-ms_shelley_e1-0079"/>
+                                <locus target="#e1-0081-ion_line_0
+                                    #e1-0081-ion_line_1
+                                    #e1-0081-ion_line_2
+                                    #e1-0081-ion_line_3
+                                    #e1-0081-ion_line_4
+                                    #e1-0081-ion_line_5
+                                    #e1-0081-ion_line_6
+                                    #e1-0081-ion_line_7
+                                    #e1-0081-ion_line_8
+                                    #e1-0081-ion_line_9
+                                    #e1-0081-ion_line_10
+                                    #e1-0081-ion_line_11
+                                    #e1-0081-ion_line_12
+                                    #e1-0081-ion_line_13
+                                    #e1-0081-ion_line_14
+                                    #e1-0081-ion_line_15
+                                    #e1-0081-ion_line_16
+                                    #e1-0081-ion_line_17
+                                    #e1-0081-ion_line_18
+                                    #e1-0081-ion_line_19
+                                    #e1-0081-ion_line_20
+                                    #e1-0081-ion_line_21"/>
+                                <locus target="#e1-0083-ion_line_0
+                                    #e1-0083-ion_line_1
+                                    #e1-0083-ion_line_2
+                                    #e1-0083-ion_line_3
+                                    #e1-0083-ion_line_4
+                                    #e1-0083-ion_line_5
+                                    #e1-0083-ion_line_6
+                                    #e1-0083-ion_line_7
+                                    #e1-0083-ion_line_8
+                                    #e1-0083-ion_line_9
+                                    #e1-0083-ion_line_10
+                                    #e1-0083-ion_line_11
+                                    #e1-0083-ion_line_12
+                                    #e1-0083-ion_line_13
+                                    #e1-0083-ion_line_14
+                                    #e1-0083-ion_line_15
+                                    #e1-0083-ion_line_16
+                                    #e1-0083-ion_line_17
+                                    #e1-0083-ion_line_18
+                                    #e1-0083-ion_line_19
+                                    #e1-0083-ion_line_20"/>
+                                <locus target="#e1-0085-ion_line_0
+                                    #e1-0085-ion_line_1
+                                    #e1-0085-ion_line_2
+                                    #e1-0085-ion_line_3
+                                    #e1-0085-ion_line_4
+                                    #e1-0085-ion_line_5
+                                    #e1-0085-ion_line_6
+                                    #e1-0085-ion_line_7
+                                    #e1-0085-ion_line_8
+                                    #e1-0085-ion_line_9
+                                    #e1-0085-ion_line_10
+                                    #e1-0085-ion_line_11
+                                    #e1-0085-ion_line_12"/>
+                                <locus target="#ox-ms_shelley_e1-0087"/>
+                                <locus target="#ox-ms_shelley_e1-0089"/>
+                                <locus target="#ox-ms_shelley_e1-0091"/>
+                                <locus target="#ox-ms_shelley_e1-0093"/>
+                                <locus target="#ox-ms_shelley_e1-0004"/>
+                                <locus target="#ox-ms_shelley_e1-0003"/>
+                                <locus target="#ox-ms_shelley_e1-0002"/>
+                            </locusGrp>
+                            <bibl status="draft">
+                                <author>Percy Shelley</author>
+                                <title type="main">Plato's Ion</title>
+                                <date notBefore="1819-12" notAfter="1820-08">December 1819 - August 1820</date>
+                            </bibl>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -61,6 +408,11 @@
                             <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
                         </handDesc>
                     </physDesc>
+                    <history>
+                        <origin notBefore="1819-03" notAfter="1819-12">
+                           End of March 1819-late-November/early-December 1819
+                        </origin>
+                    </history>
                 </msDesc>
             </sourceDesc>
         </fileDesc>

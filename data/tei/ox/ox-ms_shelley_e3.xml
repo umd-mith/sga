@@ -44,17 +44,272 @@
                         <msItem class="#work">
                             <bibl status="fair_copy">
                                 <author>Percy Shelley</author>
-                                <title>Prometheus Unbound and other fragments.</title>
+                                <title>Prometheus Unbound</title>
                             </bibl>
-                            
-                            <msItem class="#volume">
+                            <msItem class="#act" n="II" xml:id="ox-ms_prometheus_unbound_act_ii_b">
                                 <bibl>
-                                    <title>e1</title>
-                                    <date notBefore="1819-03" notAfter="1819-09">
-                                        End of March 1819-Beginning of September 1819
-                                    </date>
+                                    <title>Act II</title>
+                                    <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
                                 </bibl>
+                                <msItem class="#scene" n="4" xml:id="ox-ms_shelley_e3_scene_4">
+                                    <locusGrp>
+                                        <locus target="#ox-ms_shelley_e3-0008
+                                            #ox-ms_shelley_e3-0009
+                                            #ox-ms_shelley_e3-0010"/>
+                                        <locus target="#ox-ms_shelley_e3-0012
+                                            #ox-ms_shelley_e3-0013
+                                            #ox-ms_shelley_e3-0014
+                                            #ox-ms_shelley_e3-0015
+                                            #ox-ms_shelley_e3-0016
+                                            #ox-ms_shelley_e3-0017"/>
+                                        <locus target="#e3-0018-pu_line_0
+                                            #e3-0018-pu_line_1
+                                            #e3-0018-pu_line_2
+                                            #e3-0018-pu_line_3
+                                            #e3-0018-pu_line_4
+                                            #e3-0018-pu_line_5
+                                            #e3-0018-pu_line_6
+                                            #e3-0018-pu_line_7
+                                            #e3-0018-pu_line_8
+                                            #e3-0018-pu_line_9
+                                            #e3-0018-pu_line_10
+                                            #e3-0018-pu_line_11
+                                            #e3-0018-pu_line_12"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 4</title>
+                                    </bibl>
+                                </msItem>
+                                <msItem class="#scene" n="5" xml:id="ox-ms_shelley_e3_scene_5">
+                                    <locusGrp>
+                                        <locus target="#e3-0018-pu_line_13
+                                            #e3-0018-pu_line_14
+                                            #e3-0018-pu_line_15
+                                            #e3-0018-pu_line_16
+                                            #e3-0018-pu_line_17
+                                            #e3-0018-pu_line_18
+                                            #e3-0018-pu_line_19
+                                            #e3-0018-pu_line_20"/>
+                                        <locus target="#ox-ms_shelley_e3-0020"/> 
+                                        <locus target="#ox-ms_shelley_e3-0022"/>
+                                        <locus target="#ox-ms_shelley_e3-0024"/>
+                                        <locus target="#ox-ms_shelley_e3-0026
+                                            #ox-ms_shelley_e3-0027"/>
+                                        <locus target="#e3-0029-pu_line_0
+                                            #e3-0029-pu_line_1
+                                            #e3-0029-pu_line_2
+                                            #e3-0029-pu_line_3
+                                            #e3-0029-pu_line_4
+                                            #e3-0029-pu_line_5
+                                            #e3-0029-pu_line_6
+                                            #e3-0029-pu_line_7
+                                            #e3-0029-pu_line_8
+                                            #e3-0029-pu_line_9
+                                            #e3-0029-pu_line_10
+                                            #e3-0029-pu_line_11
+                                            #e3-0029-pu_line_12
+                                            #e3-0029-pu_line_13a
+                                            #e3-0029-pu_line_13b
+                                            #e3-0029-pu_line_14
+                                            #e3-0029-pu_line_15
+                                            #e3-0029-pu_line_16
+                                            #e3-0029-pu_line_17
+                                            #e3-0029-pu_line_18
+                                            #e3-0029-pu_line_19
+                                            #e3-0029-pu_line_20"/>
+                                        <locus target="#ox-ms_shelley_e3-0031"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 5</title>
+                                    </bibl>
+                                </msItem>
                             </msItem>
+                            <msItem class="#act" n="III">
+                                <bibl>
+                                    <title>Act III</title>
+                                    <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
+                                </bibl>
+                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iii_scene_1">
+                                    <locusGrp>
+                                        <locus target="#ox-ms_shelley_e3-0028"/>
+                                        <locus target="#e3-0029-pu_line_13c
+                                            #e3-0029-pu_line_21"/>
+                                        <locus target="#ox-ms_shelley_e3-0030"/>
+                                        <locus target="#ox-ms_shelley_e3-0032
+                                            #ox-ms_shelley_e3-0033 
+                                            #ox-ms_shelley_e3-0034 
+                                            #ox-ms_shelley_e3-0035"/>
+                                        <locus target="#e3-0036-pu_line_0
+                                            #e3-0036-pu_line_1
+                                            #e3-0036-pu_line_2
+                                            #e3-0036-pu_line_3
+                                            #e3-0036-pu_line_4
+                                            #e3-0036-pu_line_5
+                                            #e3-0036-pu_line_6
+                                            #e3-0036-pu_line_7
+                                            #e3-0036-pu_line_8
+                                            #e3-0036-pu_line_9
+                                            #e3-0036-pu_line_10
+                                            #e3-0036-pu_line_11
+                                            #e3-0036-pu_line_12
+                                            #e3-0036-pu_line_13"/>
+                                        
+                                        <locus target="#e3-0037-pu_line_0
+                                            #e3-0037-pu_line_1
+                                            #e3-0037-pu_line_2
+                                            #e3-0037-pu_line_3
+                                            #e3-0037-pu_line_4
+                                            #e3-0037-pu_line_5
+                                            #e3-0037-pu_line_6
+                                            #e3-0037-pu_line_7
+                                            #e3-0037-pu_line_8
+                                            #e3-0037-pu_line_9
+                                            #e3-0037-pu_line_10"/>
+                                        <locus target="#ox-ms_shelley_e3-0037"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 1</title>
+                                    </bibl>
+                                </msItem>
+                                <msItem class="#scene" n="2" xml:id="ox-ms_prometheus_unbound_act_iii_scene_2">
+                                    <locusGrp>
+                                        <locus target="#e3-0036-pu_line_14
+                                            #e3-0036-pu_line_15
+                                            #e3-0036-pu_line_16
+                                            #e3-0036-pu_line_17
+                                            #e3-0036-pu_line_18
+                                            #e3-0036-pu_line_19
+                                            #e3-0036-pu_line_20
+                                            #e3-0036-pu_line_21
+                                            #e3-0036-pu_line_22"/>
+                                        <locus target="#e3-0037-pu_line_11"/>
+                                        <locus target="#ox-ms_shelley_e3-0038"/> 
+                                        <locus target="#ox-ms_shelley_e3-0040"/>
+                                        <locus target="#ox-ms_shelley_e3-0042"/>
+                                        <locus target="#e3-0043-pu_line_0"/>
+                                        <locus target="#e3-0044-pu_line_0
+                                            #e3-0044-pu_line_1
+                                            #e3-0044-pu_line_2"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 2</title>
+                                    </bibl>
+                                </msItem>
+                                <msItem class="#scene" n="3" xml:id="ox-ms_prometheus_unbound_act_iii_scene_3">
+                                    <locusGrp>
+                                        <locus target="#e3-0044-pu_line_3
+                                            #e3-0044-pu_line_4
+                                            #e3-0044-pu_line_5
+                                            #e3-0044-pu_line_6
+                                            #e3-0044-pu_line_7
+                                            #e3-0044-pu_line_8
+                                            #e3-0044-pu_line_9
+                                            #e3-0044-pu_line_10
+                                            #e3-0044-pu_line_11
+                                            #e3-0044-pu_line_12
+                                            #e3-0044-pu_line_13
+                                            #e3-0044-pu_line_14
+                                            #e3-0044-pu_line_15
+                                            #e3-0044-pu_line_16
+                                            #e3-0044-pu_line_17
+                                            #e3-0044-pu_line_18
+                                            #e3-0044-pu_line_19
+                                            #e3-0044-pu_line_20
+                                            #e3-0044-pu_line_21
+                                            #e3-0044-pu_line_22"/>
+                                        <locus target="#e3-0045-pu_line_0"/>
+                                        <locus target="#ox-ms_shelley_e3-0046
+                                            #ox-ms_shelley_e3-0047
+                                            #ox-ms_shelley_e3-0048"/>
+                                        <locus target="#ox-ms_shelley_e3-0050"/>
+                                        <locus target="#ox-ms_shelley_e3-0052"/>
+                                        <locus target="#ox-ms_shelley_e3-0054"/>
+                                        <locus target="#ox-ms_shelley_e3-0055
+                                            #ox-ms_shelley_e3-0056
+                                            #ox-ms_shelley_e3-0057
+                                            #ox-ms_shelley_e3-0058
+                                            #ox-ms_shelley_e3-0059
+                                            #ox-ms_shelley_e3-0060
+                                            #ox-ms_shelley_e3-0061"/>
+                                        <locus target="#ox-ms_shelley_e3-0063"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 3</title>
+                                    </bibl>                                    
+                                </msItem>
+                                <msItem class="#scene" n="4" xml:id="ox-ms_prometheus_unbound_act_iii_scene_4">
+                                    <locusGrp>
+                                        <locus target="#ox-ms_shelley_e3-0062
+                                            #ox-ms_shelley_e3-0064
+                                            #ox-ms_shelley_e3-0065
+                                            #ox-ms_shelley_e3-0066"/>
+                                        <locus target="#ox-ms_shelley_e3-0068"/>
+                                        <locus target="#ox-ms_shelley_e3-0070
+                                            #ox-ms_shelley_e3-0071
+                                            #ox-ms_shelley_e3-0072
+                                            #ox-ms_shelley_e3-0073
+                                            #ox-ms_shelley_e3-0074
+                                            #ox-ms_shelley_e3-0075
+                                            #ox-ms_shelley_e3-0076
+                                            #ox-ms_shelley_e3-0077
+                                            #ox-ms_shelley_e3-0078"/>
+                                        <locus target="#e3-0079-pu_line_0
+                                            #e3-0079-pu_line_3"/>
+                                    </locusGrp>
+                                    <bibl>
+                                        <title>Scene 4</title>
+                                    </bibl>                                    
+                                </msItem>
+                                <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv">
+                                    <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1">
+                                        <locusGrp>
+                                            <locus target="#e3-0079-pu_line_1
+                                                #e3-0079-pu_line_2"/>
+                                        </locusGrp>
+                                        <bibl>
+                                            <title>Scene 1</title>
+                                        </bibl>
+                                    </msItem>
+                                    <bibl>
+                                        <title>Act IV</title>
+                                        <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
+                                    </bibl>
+                                </msItem>
+                            </msItem>
+                        </msItem>
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="#ox-ms_shelley_e3-0039"/>
+                                <locus target="#ox-ms_shelley_e3-0041"/>
+                                <locus target="#e3-0043-oth_line_0
+                                    #e3-0043-oth_line_1
+                                    #e3-0043-oth_line_2
+                                    #e3-0043-oth_line_3
+                                    #e3-0043-oth_line_4
+                                    #e3-0043-oth_line_5
+                                    #e3-0043-oth_line_6
+                                    #e3-0043-oth_line_7
+                                    #e3-0043-oth_line_8
+                                    #e3-0043-oth_line_9
+                                    #e3-0043-oth_line_10
+                                    #e3-0043-oth_line_11
+                                    #e3-0043-oth_line_12
+                                    #e3-0043-oth_line_13
+                                    #e3-0043-oth_line_14
+                                    #e3-0043-oth_line_15
+                                    #e3-0043-oth_line_16
+                                    #e3-0043-oth_line_17
+                                    #e3-0043-oth_line_18"/>
+                                <locus target="#e3-0045-oth_line_0
+                                    #e3-0045-oth_line_1
+                                    #e3-0045-oth_line_2
+                                    #e3-0045-oth_line_3"/>
+                            </locusGrp>
+                            <bibl status="fair_copy">
+                                <author>Percy Shelley</author>
+                                <title type="main">Ode to Heaven</title>
+                                <date notAfter="1819-12">late 1819</date>
+                            </bibl>
                         </msItem>
                     </msContents>
                     <physDesc>
@@ -62,6 +317,11 @@
                             <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
                         </handDesc>
                     </physDesc>
+                    <history>
+                        <origin notBefore="1819-03" notAfter="1819-09">
+                            End of March 1819-Beginning of September 1819
+                        </origin>
+                    </history>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
