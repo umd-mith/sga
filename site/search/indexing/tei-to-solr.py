@@ -2,7 +2,7 @@
 # coding=UTF-8
 """ Index fields from SGA TEI to a Solr instance"""
 
-import os, sys, re
+import os, sys, re, string
 import solr
 import xml.sax, json
 from xml.etree import ElementTree as etree
@@ -43,8 +43,7 @@ class TeiData :
         base_viewer_url = base_viewer_url.replace("ox/", "oxford/")        
 
         self.base_viewer_url = root_viewer_url + base_viewer_url
-        self.work = tei.find('.//{%(tei)s}msItem[@class="#work"][0]/{%(tei)s}bibl/{%(tei)s}title' % ns).text
-        self.authors = tei.find('.//{%(tei)s}msItem[@class="#work"][0]/{%(tei)s}bibl/{%(tei)s}author' % ns).text
+        self.authors = tei.find('.//{%(tei)s}msItem[@class="#work"]/{%(tei)s}bibl/{%(tei)s}author' % ns).text
         self.attribution = tei.find('.//{%(tei)s}repository' % ns).text
         self.shelfmark = tei.find('.//{%(tei)s}idno' % ns).text
 
@@ -54,6 +53,23 @@ class TeiData :
             self.default_hand = major_hand.get('{%s}id' % XML)
         else:
             self.default_hand = sole_hand.get('{%s}id' % XML)
+
+        # Get information about location of works
+        self.works = []
+        self.work_loci = {}
+        for work in tei.findall('.//{%(tei)s}msItem[@class="#work"]' % ns):
+            w_title = work.find('./{%(tei)s}bibl/{%(tei)s}title' % ns).text
+            w_title = w_title.strip()
+            w_title = w_title.lower()
+            w_title = re.sub(r"["+string.punctuation+r"\s]", "_", w_title)
+            self.works.append(w_title)
+            for locus in work.findall('.//{%(tei)s}locus' % ns):
+                if locus.attrib.get('target'):
+                    targets = re.split(r'\s+', locus.attrib.get('target').strip())
+                    for target in targets:
+                        target = target.lstrip("#")
+                        self.work_loci[target] = w_title
+
 
         # load each surface document
         for i, inc in enumerate(tei.findall('.//{%(tei)s}sourceDoc/{%(xi)s}include' % ns)):
@@ -70,12 +86,12 @@ class SurfaceDoc :
         shelfmark="",
         shelf_label="",
         viewer_url="",
-        work="",
         authors="",
         attribution="",
         doc_id=None, 
         text="", 
-        hands={"mws":"","pbs":"", "comp":"", "library":""}, 
+        hands={"mws":"","pbs":"", "comp":"", "library":""},
+        works={}, 
         mod={"add":[],"del":[]}, 
         hands_pos={"mws":[], "pbs":[], "comp":[], "library":[]}, 
         hands_tei_pos={"mws":[], "pbs":[], "comp":[], "library":[]},
@@ -93,6 +109,7 @@ class SurfaceDoc :
         # Do the same with their positions.
         self.text = text
         self.hands = hands
+        self.works = works
         self.mod = mod
         self.hands_pos = hands_pos
         self.hands_tei_pos = hands_tei_pos
@@ -101,26 +118,33 @@ class SurfaceDoc :
 
     def commit(self):
         # print "id: %s\nshelf: %s\ntext: %s\nhands: %s\nmod: %s\nhands_pos: %s\nmod_pos: %s\n" % (self.doc_id, self.shelfmark, self.text, self.hands, self.mod, self.hands_pos, self.mod_pos)
-        self.solr.add(id=self.doc_id, 
-            shelfmark=self.shelfmark, 
-            shelf_label=self.shelf_label,
-            viewer_url = self.viewer_url,
-            work=self.work,
-            authors=self.authors,
-            attribution=self.attribution,
-            text=self.text, 
-            hand_mws=self.hands["mws"], 
-            hand_pbs=self.hands["pbs"], 
-            hand_comp=self.hands["comp"],
-            hand_library=self.hands["library"], 
-            added=self.mod["add"], 
-            deleted=self.mod["del"],
-            mws_pos=self.hands_pos["mws"], 
-            pbs_pos=self.hands_pos["pbs"],
-            comp_pos=self.hands_pos["comp"],
-            library_pos=self.hands_pos["library"],
-            add_pos=self.mod_pos["add"], 
-            del_pos=self.mod_pos["del"])
+
+        paras = {"id" : self.doc_id, 
+                "shelfmark" : self.shelfmark, 
+                "shelf_label" : self.shelf_label,
+                "viewer_url" : self.viewer_url,
+                # "work" : self.work,
+                "authors" : self.authors,
+                "attribution" : self.attribution,
+                "text" : self.text, 
+                "hand_mws" : self.hands["mws"], 
+                "hand_pbs" : self.hands["pbs"], 
+                "hand_comp" : self.hands["comp"],
+                "hand_library" : self.hands["library"], 
+                "added" : self.mod["add"], 
+                "deleted" : self.mod["del"],
+                "mws_pos" : self.hands_pos["mws"], 
+                "pbs_pos" : self.hands_pos["pbs"],
+                "comp_pos" : self.hands_pos["comp"],
+                "library_pos" : self.hands_pos["library"],
+                "add_pos" : self.mod_pos["add"], 
+                "del_pos" : self.mod_pos["del"]}
+
+        for w in self.works:
+            key = "work_" + w
+            paras[key] = self.works[w]
+
+        self.solr.add_many([paras])
         self.solr.commit()
 
 class GSAContentHandler(xml.sax.ContentHandler):
@@ -137,26 +161,32 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
         self.addSpan = {"id": "", "hand": None}
         self.delSpan = None
+        self.milestone = None
+        self.cur_work = []
 
         self.handShift = False
 
         self.filename = filename
 
+        self.works = {}
+        for work in self.tei_data.works:
+            self.works[work] = ""
+
         # Initialize doc
-        self.doc = SurfaceDoc(
-            solr = self.solr)
+        self.doc = SurfaceDoc(solr = self.solr, works=self.works)
 
         print self.doc
         #purge 
         self.doc.shelfmark=""
         shelf_label=""
         viewer_url = ""
-        work=""
         authors=""
         attribution=""
         self.doc.doc_id=None
         self.doc.text=""
         self.doc.hands={"mws":"","pbs":"", "comp":"", "library":""}
+        for work in self.tei_data.works:
+            self.doc.works[work] = ""
         self.doc.mod={"add":[],"del":[]}
         self.doc.hands_pos={"mws":[], "pbs":[], "comp":[], "library":[]}
         self.doc.hands_tei_pos={"mws":[], "pbs":[], "comp":[], "library":[]}
@@ -165,6 +195,15 @@ class GSAContentHandler(xml.sax.ContentHandler):
     def startElement(self, name, attrs):
         # add element to path stack
         self.path.append([name, self.hands[-1]])
+
+        def _is_in_work(xmlid):
+            if self.tei_data:
+                if xmlid:
+                    xmlid = xmlid.strip()
+                    if xmlid in self.tei_data.work_loci.keys():
+                        return self.tei_data.work_loci[xmlid]
+                else:
+                    return False
 
         if name == "surface":
             if "partOf" in attrs:
@@ -176,10 +215,39 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
             self.doc.shelf_label = attrs["mith:shelfmark"]+", "+attrs["mith:folio"]
             self.doc.viewer_url = self.tei_data.base_viewer_url + "#/p" + self.tei_data.position
-            self.doc.work = self.tei_data.work
+            
             self.doc.authors = self.tei_data.authors
             self.doc.attribution = self.tei_data.attribution
             self.doc.shelfmark = self.tei_data.shelfmark
+
+            work = _is_in_work(attrs["xml:id"])    
+            print "surface:", work, attrs["xml:id"]        
+            if work:
+                if len(self.cur_work) == 0:
+                    self.cur_work.append(work)
+                elif self.cur_work[-1] != work:
+                    self.cur_work.append(work)
+
+        if name == "line":
+            if attrs.get("xml:id"):
+                work = _is_in_work(attrs["xml:id"])
+                print "line:", work, attrs["xml:id"]
+                if work:
+                    if len(self.cur_work) == 0:
+                        self.cur_work.append(work)
+                    elif self.cur_work[-1] != work:
+                        self.cur_work.append(work)
+
+        if name == "milestone":
+            if attrs.get('unit') == 'tei:seg' and attrs.get("xml:id"):
+                work = _is_in_work(attrs["xml:id"])
+                if work:
+                    self.milestone = attrs["spanTo"][1:]
+                    self.doc.work = work
+                    if len(self.cur_work) == 0:
+                        self.cur_work.append(work)
+                    elif self.cur_work[-1] != work:
+                        self.cur_work.append(work)
 
         if "hand" in attrs:
             hand = attrs["hand"]
@@ -227,6 +295,10 @@ class GSAContentHandler(xml.sax.ContentHandler):
                 if attrs["xml:id"] == self.delSpan:
                     self.delSpan = None
                     self.doc.mod_pos["del"][-1] += str(self.pos)
+                if attrs["xml:id"] == self.milestone:
+                    self.milestone = None
+                    if len(self.cur_work) > 1:
+                        self.cur_work.pop()
 
         if name == "handShift":
             if "new" in attrs:
@@ -254,6 +326,10 @@ class GSAContentHandler(xml.sax.ContentHandler):
                 
         # Remove the element from element stack
         self.path.pop()
+
+        if name == "line":
+            if len(self.cur_work) > 1:
+                self.cur_work.pop()
 
         if name == "surface":
             self.doc.end = self.pos
@@ -286,6 +362,9 @@ class GSAContentHandler(xml.sax.ContentHandler):
 
         # Add text to current hand and to full-text field
         self.doc.hands[self.hands[-1]] += content
+        # if a work has been identified, add content
+        if len(self.cur_work) > 0:
+            self.doc.works[self.cur_work[-1]] += content
         self.doc.text += content
 
         # Update current position
