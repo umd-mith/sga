@@ -45,7 +45,8 @@
                     <msContents>
                         <msItem class="#work">
                             <locusGrp>
-                                <locus target="#ox-ms_shelley_e1-0035
+                                <locus target="#ox-ms_shelley_e1-0034
+                                               #ox-ms_shelley_e1-0035
                                                #ox-ms_shelley_e1-0036"/> 
 
                                 <locus target="
@@ -274,6 +275,7 @@
         </fileDesc>
     </teiHeader>
     <sourceDoc>
+<xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0034.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0035.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0036.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0039.xml"/>
