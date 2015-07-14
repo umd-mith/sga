@@ -46,6 +46,19 @@
                                 <author>Percy Shelley</author>
                                 <title>Prometheus Unbound</title>
                             </bibl>
+                            <msItem class="#preface"
+                                xml:id="ox-ms_prometheus_unbound_preface">
+                                <locusGrp>
+                                    <locus target="#ox-ms_shelley_e1-0029
+                                        #ox-ms_shelley_e1-0030
+                                        #ox-ms_shelley_e1-0031
+                                        #ox-ms_shelley_e1-0032
+                                        #ox-ms_shelley_e1-0033"/>
+                                </locusGrp>
+                                <bibl status="fair_copy">
+                                    <title>Dramatis Personae</title>
+                                </bibl>
+                            </msItem>
                             <msItem class="#dramatis_personae"
                                 xml:id="ox-ms_prometheus_unbound_dramatis_personae">
                                 <locusGrp>
@@ -186,7 +199,8 @@
                         </msItem>
                         <msItem class="#work">
                             <locusGrp>
-                                <locus target="#ox-ms_shelley_e1-0035
+                                <locus target="#ox-ms_shelley_e1-0034
+                                    #ox-ms_shelley_e1-0035
                                     #ox-ms_shelley_e1-0036"/> 
                                 
                                 <locus target="
