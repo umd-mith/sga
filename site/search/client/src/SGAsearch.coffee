@@ -371,13 +371,18 @@ window.SGAsearch = {}
       # create models and add them to collection in the right order
       for w in orderedWs
         if works[w] > 0
+
+          # Rebuild title (ish)
+          title = w.replace("work_", "").replace(/_/g, " ").replace(/\ss\s/g, "'s ")
+          title = title.replace(/\w\S*/g, (txt) -> txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+
           f_w = new SGAsearch.Facet()
           @w_flv.collection.add f_w
 
           f_w.set
             "type" : "work"
             "field" : w
-            "name" : w
+            "name" : title
             "num" : works[w]   
 
       @w_flv.render $(facets).find('#r-list-work'), srcOptions
