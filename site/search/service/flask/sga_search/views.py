@@ -4,6 +4,7 @@ from sga_search import sga_search, annotator, crossdomain
 
 import solr, urllib2, ast, uuid, re, os
 
+SOLR = "http://localhost:8080/solr/sga"
 
 sga_search.jinja_env.globals['static'] = (
     lambda filename: url_for('static', filename=filename))
@@ -24,9 +25,7 @@ def index():
 def search():
     
     def do_search(s, f, q, start, fq, sort, pageLength=20):
-        """ Send query to solr and prepare slimmed down JSON object for displaying results """
-
-        viewer = "/wwa/?mf="
+        """ Send query to solr and prepare slimmed down JSON object for displaying results """        
 
         hl_simple_pre = '<em>'
         hl_simple_post = '</em>'
@@ -41,8 +40,18 @@ def search():
         if fq != '':
             fqs.append(fq.split(","))
         
+        # Get list of works loaded in the index.
+        # We need this to use them as facets
+        luke_req = urllib2.urlopen(SOLR+"/admin/luke?numTerms=0").read()
+        work_fields = re.findall(r'lst name="(work_[^"]+)"', luke_req)
+
         # facets
         fcts = ['added:'+q,'deleted:'+q,'hand_pbs:'+q,'hand_mws:'+q]
+
+        for w in work_fields:
+            fcts.append("{0}:{1}".format(w, q))
+
+        print fcts
 
         # send query, filter by fields (AND only at the moment), return highlights on text field.
         # text field is the only one that keeps all the text with all the whitespace
@@ -63,7 +72,7 @@ def search():
             hl_snippets=10,
             facet='true',
             facet_field='shelfmark',
-            facet_query=fcts,)
+            facet_query=fcts)
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
@@ -92,19 +101,17 @@ def search():
         for res_orig in r["response"]["docs"]:
             res = res_orig.copy()
 
-            parts = res["id"].split('-')
-            viewer_url = "%s%s#/p%d/" % (viewer, parts[0], int(parts[1]))
-
-            res["viewer_url"] = viewer_url
-
             # metadata
             results["metadata"][res["shelfmark"]] = {
                 "shelf_label":res["shelf_label"],
-                "work":res["work"],
-                "viewer_url":viewer_url,
+                "viewer_url": res["viewer_url"],
                 "authors":res["authors"],
                 "attribution":res["attribution"]
             }
+
+            # Work is now optional
+            if res.get("work"):
+                results["metadata"][res["shelfmark"]]["work"] = res["work"]
 
             ident = res["id"]            
 
@@ -129,7 +136,7 @@ def search():
     # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
     if 2 <= len(request.args) <= 5 and "f" in request.args and "q" in request.args:
         
-        s = solr.SolrConnection("http://localhost:8080/solr/collection1")
+        s = solr.SolrConnection(SOLR)
 
         # try:
         s.conn.connect()
@@ -164,8 +171,6 @@ def annotate():
 
         # Create a UUID for this iteration
         uid = str(uuid.uuid4())
-
-        print f, q
 
         # get solr fields from request
         fields = f.split(",")
@@ -219,7 +224,7 @@ def annotate():
     # q: the string that will be queryed across the fields
     if len(request.args) == 2 and "f" in request.args and "q" in request.args:
         
-        s = solr.SolrConnection("http://localhost:8080/solr/collection1")
+        s = solr.SolrConnection(SOLR)
 
         # try:
         s.conn.connect()
