@@ -71,12 +71,15 @@
 <!--/r-header-->
 <div class="row">
   <div class="col-lg-3 refine-results" id="refine-results">
-    <!--/panel -->
-    <div class="panel" id="r-list-notebook">
-      <div class="panel-heading">Notebook</div>
+    <div class="panel" id="r-list-work">
+      <div class="panel-heading">Work</div>
       <div class="list-group"> </div>
     </div>
     <!--/panel -->
+    <div class="panel" id="r-list-notebook">
+      <div class="panel-heading">Manuscript</div>
+      <div class="list-group"> </div>
+    </div>
     <!--/panel -->
     <div class="panel" id="r-list-hand">
       <div class="panel-heading">Hand</div>
@@ -199,7 +202,9 @@
     </a>
     <div class="media-body">
       <div class="r-description">
-        <span class="r-work"><%= work %></span> -
+        <% if (work != "") { %>
+          <span class="r-work"><%= work %></span> -
+        <% } %>
         <span class="r-shelfmark"><%= shelfmark %></span>.
         <span class="r-shelf_label"><em><%= shelf_label %></em></span>
         <span class="r-authors"><%= authors %></span>

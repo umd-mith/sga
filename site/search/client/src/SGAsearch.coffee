@@ -323,7 +323,7 @@ window.SGAsearch = {}
 
       # Facets
 
-      ## Notebooks
+      ## Manuscripts
 
       if @nb_flv?
         @nb_flv.clear()
@@ -348,6 +348,39 @@ window.SGAsearch = {}
           "num" : res.facets.notebooks[nb]
 
       @nb_flv.render $(facets).find('#r-list-notebook'), srcOptions
+
+      ## Works
+
+      if @w_flv?
+        @w_flv.clear()
+
+      @w_fl = new SGAsearch.Facetlist()
+      @w_flv = new SGAsearch.FacetListView collection: @w_fl       
+
+      # Get work facets
+      works = {}
+      for fct, v of res.facets
+        if fct.match(/^work_/)
+          works[fct] = v
+
+      # sort work facet by frequency
+      orderedWs = ([k, v] for k, v of works).sort (a, b) ->
+        b[1] - a[1]
+      .map (n) -> n[0]
+
+      # create models and add them to collection in the right order
+      for w in orderedWs
+        if works[w] > 0
+          f_w = new SGAsearch.Facet()
+          @w_flv.collection.add f_w
+
+          f_w.set
+            "type" : "work"
+            "field" : w
+            "name" : w
+            "num" : works[w]   
+
+      @w_flv.render $(facets).find('#r-list-work'), srcOptions
 
       ## Hand
 
