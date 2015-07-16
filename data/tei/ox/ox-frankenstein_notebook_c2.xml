@@ -51,6 +51,34 @@
                                 <title>Frankenstein</title>
                             </bibl>
                             <msItem class="#volume" n="III" xml:id="ox-frankenstein_volume_iii">
+                                <locusGrp>
+                                    <locus target="#ox-ms_abinger_c58-0037
+                                        #ox-ms_abinger_c58-0038
+                                        #ox-ms_abinger_c58-0039
+                                        #ox-ms_abinger_c58-0040
+                                        #ox-ms_abinger_c58-0041
+                                        #ox-ms_abinger_c58-0042
+                                        #ox-ms_abinger_c58-0043
+                                        #ox-ms_abinger_c58-0044
+                                        #ox-ms_abinger_c58-0045
+                                        #ox-ms_abinger_c58-0046
+                                        #ox-ms_abinger_c58-0047
+                                        #ox-ms_abinger_c58-0048
+                                        #ox-ms_abinger_c58-0049
+                                        #ox-ms_abinger_c58-0050
+                                        #ox-ms_abinger_c58-0051
+                                        #ox-ms_abinger_c58-0052
+                                        #ox-ms_abinger_c58-0053
+                                        #ox-ms_abinger_c58-0054
+                                        #ox-ms_abinger_c58-0055
+                                        #ox-ms_abinger_c58-0056
+                                        #ox-ms_abinger_c58-0057
+                                        #ox-ms_abinger_c58-0058
+                                        #ox-ms_abinger_c58-0059
+                                        #ox-ms_abinger_c58-0060
+                                        #ox-ms_abinger_c58-0061
+                                        #ox-ms_abinger_c58-0062"/>
+                                </locusGrp>
                                 <bibl>
                                     <title>Volume III</title>
                                     <date notBefore="1816-12" notAfter="1817-04">18 April-[?13] May 1817</date>
@@ -70,11 +98,6 @@
         <encodingDesc>
             <xi:include href="../shared/classDecl.xml" />
         </encodingDesc>
-        <revisionDesc>
-            <change who="#RV" when="2015-03-12">Made metadata valid, removed chapter metadata.</change>
-            <change who="#RV" when="2014-01-22">Added metadata.</change>
-            <change who="#TB" when="2014-04-09">Added metadata about volumes and chapters.</change>
-        </revisionDesc>
     </teiHeader>
     <sourceDoc>
         <xi:include href="ox-ms_abinger_c58/ox-ms_abinger_c58-0037.xml" />
