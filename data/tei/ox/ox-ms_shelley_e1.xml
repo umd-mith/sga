@@ -430,6 +430,9 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
     </teiHeader>
     <sourceDoc>
         <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0002.xml" />
