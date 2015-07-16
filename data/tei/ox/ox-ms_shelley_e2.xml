@@ -44,7 +44,7 @@
                         <msItem class="#work">
                             <bibl status="fair_copy">
                                 <author>Percy Shelley</author>
-                                <title>Prometheus Unbound.</title>
+                                <title>Prometheus Unbound</title>
                             </bibl>
                             <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i">
                                 <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1">
@@ -223,6 +223,9 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
     </teiHeader>
     <sourceDoc>
         <xi:include href="ox-ms_shelley_e2/ox-ms_shelley_e2-0003.xml" />
