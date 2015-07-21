@@ -5,6 +5,8 @@ import re, uuid
 def oa_annotations(hl, TEI_id, source_dir, uid, hl_simple_pre, hl_simple_post, serialize):
   """ This function returns an ao:Annotation for highlighted text """
   
+  TEI_subdir = TEI_id[0:-5] + '/'
+
   annos = []
   # A field can contain multiple highlights; loop on them and add the resulting
   # annotations to annos.
@@ -27,7 +29,7 @@ def oa_annotations(hl, TEI_id, source_dir, uid, hl_simple_pre, hl_simple_post, s
       target = { "@id" : "_:"+uid+"-"+str(i)+":-hT",
         "@type" : "oa:SpecificResource",
         "selector" : "_:"+uid+"-"+str(i)+":-hS",
-        "full" : source_dir + TEI_id + ".xml"
+        "full" : source_dir + TEI_subdir + TEI_id + ".xml"
       }
         
       selector = { "@id" : "_:"+uid+"-"+str(i)+":-hS",
@@ -54,7 +56,7 @@ def oa_annotations(hl, TEI_id, source_dir, uid, hl_simple_pre, hl_simple_post, s
               }
       target = {"_:"+uid+"-"+str(i)+":-hT" : 
                 { "http://www.w3.org/ns/openannotation/core/hasSource" : [ { "type" : "uri" ,
-                  "value" : source_dir + TEI_id + ".xml"
+                  "value" : source_dir + TEI_subdir + TEI_id + ".xml"
                 }],
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri" ,
                   "value" : "http://www.w3.org/ns/openannotation/core/SpecificResource"
