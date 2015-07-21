@@ -605,6 +605,7 @@
                                     <valItem ident="strikethrough"/>
                                     <valItem ident="overwritten"/>
                                     <valItem ident="smear"/>
+                                    <valItem ident="erased"/>
                                     <valItem ident="vertical_line"/>
                                     <valItem ident="unmarked"/>
                                 </valList>
@@ -782,7 +783,7 @@
                         <constraintSpec scheme="isoschematron" ident="modContents">
                             <constraint>
                                 <sch:rule context="tei:mod">
-                                    <sch:report test="not(@spanTo) and not(count(node()) gt 1)">The mod element is
+                                    <sch:report test="not(@spanTo) and not(tei:restore) and not(count(node()) gt 1)">The mod element is
                                         intended to group a series of related changes to the
                                         manuscript. Thus, mod must have more than one child
                                         element. If only a single addition or deletion is being
