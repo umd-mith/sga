@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
-    xml:id="ox-misery_e2_frag">
+    xml:id="ox-misery_e2_fair">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -52,7 +52,7 @@
                             </locusGrp>
                             <bibl status="fair_copy">
                                 <author>Percy Shelley</author>
-                                <title type="main">Misery.--A Fragment</title>
+                                <title type="main">Misery.—A Fragment</title>
                                 <date notBefore="1819-03" notAfter="1819-12">March 1819-[?December 1819]</date>
                             </bibl>
                         </msItem>
