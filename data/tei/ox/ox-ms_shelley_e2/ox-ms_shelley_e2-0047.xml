@@ -2,7 +2,24 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-    uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0047" partOf="#ox-ms_shelley_e2" mith:folio="22r" mith:shelfmark="MS. Shelley e. 2">
+    uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0047" partOf="#ox-ms_shelley_e2" mith:folio="23r" mith:shelfmark="MS. Shelley e. 2">
     <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0047.jp2"/>
-    <zone type="main"></zone>
+    <zone type="library">
+        <line>23</line>
+    </zone>
+    <zone type="main">
+        <line>When a Nation 
+            <mod><del rend="strikethrough">cries</del><add place="superlinear">screams</add></mod>
+            aloud
+        </line>
+        <line>Like and eagle from the cloud</line>
+        <line>When a</line>
+        <zone type="sketch"/>
+        <space dim="vertical" unit="lines" extent="2"/>
+        <line rend="indent1"><del rend="strikethrough">When <add place="superlinear">a</add>the right</del></line>
+        <space dim="vertical" unit="lines" extent="2"/>
+        <line rend="indent2">Watch the look askance &amp; cold–</line>
+        <line rend="indent2">See neglect, &amp; falshood fold</line>
+        <zone type="sketch"/>
+    </zone>
 </surface>
