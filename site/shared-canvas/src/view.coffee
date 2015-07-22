@@ -63,6 +63,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
         canvases = sequence.get "canvases"
 
+        # filter out undefined canvases
+        canvases = _.filter canvases, (c) ->
+          return c != undefined
+
         @variables.set "seqMax", canvases.length
         @variables.set "seqPage", parseInt(n)
 
