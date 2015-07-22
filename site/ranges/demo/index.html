@@ -42,9 +42,11 @@
           </a>
         </h3>
         <div class="meta-wk">
-        <% if (physical !== undefined) {%>
+        <% if (!_.isNull(physical)) {%>
           <a href="<%=physical%>"><i class="icon-book"></i> <strong>Read in physical order</strong></a> (<%=shelfmarks.join(", ")%>) &nbsp;
-        <%} %>        
+        <%} else { %>
+          <strong>Shelfmark</strong>: <%=shelfmarks.join(", ")%>
+        <% } %>        
       </div>    
       <div id="<%=id%>" class="panel-collapse collapse">
         <div class="panel-body">
