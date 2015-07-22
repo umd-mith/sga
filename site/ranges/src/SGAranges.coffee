@@ -204,11 +204,8 @@ window.SGAranges = {}
         "title"  : metadata.label
         "state" : SGAranges.Utils.toTitleCase(metadata["sga:stateLabel"])
         "shelfmarks" : shelfmarks    
-
-      if attributes.get("physical")?
-        tpl_data["physical"] = attributes.get("physical")
-      if attributes.get("logical")?
-        tpl_data["logical"] = attributes.get("logical")
+        "physical" : attributes.get("physical")
+        "logical" : attributes.get("logical")
 
       el.html template(tpl_data)
     
