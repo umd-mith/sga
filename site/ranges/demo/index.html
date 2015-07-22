@@ -30,7 +30,7 @@
 
 <body>
 
-<div id="ranges_wrapper"></div>
+<div id="ranges_wrapper" data-works='[{"title" : "ox-frankenstein-volume_i","flat" : false,"physical" : "/contents/frankenstein","logical" : null},{"title" : "ox-frankenstein-volume_ii","flat" : false,"physical" : "/contents/frankenstein","logical" : null}]'></div>
 
 <script type="text/template" id="work-template">
   <div class="panel-group" id="accordion">
@@ -96,26 +96,6 @@
 </script>
 
 <script type="text/javascript" src="js/SGAranges.js"></script>
-
-<script>
-  // Main: Get manifests from DOM and initialize
-  works = [
-     {
-      "title" : "ox-frankenstein-volume_i",
-      "flat" : false,
-      "physical" : "/contents/frankenstein",
-      "logical" : null
-     },
-     {
-      "title" : "ox-frankenstein-volume_ii",
-      "flat" : false,
-      "physical" : "/contents/frankenstein",
-      "logical" : null
-     }
-   ];
-
-   SGAranges.render(works);
-</script>
 
 </body>
 </html>

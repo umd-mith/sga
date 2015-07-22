@@ -285,3 +285,11 @@ window.SGAranges = {}
 
 
 )(jQuery,window.SGAranges,_,Backbone)
+
+# Main: Get manifests from DOM and initialize
+( ($) ->
+
+  works = $("#ranges_wrapper").data("works")
+  SGAranges.render(works)
+
+)(jQuery)
