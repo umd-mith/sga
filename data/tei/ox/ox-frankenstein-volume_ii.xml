@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<!-- temporary until chapter sequence has been verified -->
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xi="http://www.w3.org/2001/XInclude"
      xml:id="ox-frankenstein_volume_ii">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Frankenstein, Volume II Draft in Chapter Sequence</title>
+                <title type="main">Frankenstein, Volume II</title>
                 <title type="sub">An electronic transcription</title>
                 <respStmt xml:id="md_editor">
                     <resp>Metadata editor</resp>
