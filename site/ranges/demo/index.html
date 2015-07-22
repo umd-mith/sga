@@ -30,22 +30,21 @@
 
 <body>
 
-<div id="ranges_wrapper" data-manifests="ox-frankenstein-volume_i" data-flat="false"></div>
+<div id="ranges_wrapper"></div>
 
 <script type="text/template" id="work-template">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default group-wk">
       <div class="panel-heading">
-        <h3 class="panel-title">
+        <h3 class="panel-title">          
           <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#<%=id%>">
-            <%=title%>
+            <%=title%> (<%=state%>)
           </a>
         </h3>
         <div class="meta-wk">
-        <% _.each(meta, function(m){ %>
-          <strong><%=m.label%></strong>: <%=m.value%> &nbsp;
-        <% }); %>
-        </div>
+        <% if (physical !== undefined) {%>
+          <a href="<%=physical%>"><i class="icon-book"></i> <strong>Read in physical order</strong></a> (<%=shelfmarks.join(", ")%>) &nbsp;
+        <%} %>        
       </div>    
       <div id="<%=id%>" class="panel-collapse collapse">
         <div class="panel-body">
@@ -97,7 +96,26 @@
 </script>
 
 <script type="text/javascript" src="js/SGAranges.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+  // Main: Get manifests from DOM and initialize
+  works = [
+     {
+      "title" : "ox-frankenstein-volume_i",
+      "flat" : false,
+      "physical" : "/contents/frankenstein",
+      "logical" : null
+     },
+     {
+      "title" : "ox-frankenstein-volume_ii",
+      "flat" : false,
+      "physical" : "/contents/frankenstein",
+      "logical" : null
+     }
+   ];
+
+   SGAranges.render(works);
+</script>
 
 </body>
 </html>

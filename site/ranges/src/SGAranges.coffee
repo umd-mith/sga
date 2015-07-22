@@ -4,6 +4,11 @@ window.SGAranges = {}
 
 (($,SGAranges,_,Backbone) ->
 
+  ## UTILS ##
+  SGAranges.Utils = {}
+  SGAranges.Utils.toTitleCase = (str) ->
+    str.replace(/\w\S*/g, (txt) -> txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+
   ## MODELS ##
 
   # Work
@@ -73,7 +78,6 @@ window.SGAranges = {}
 
     render: ->
       thisEl = @$el
-      thisFlat = @model.attributes.flat
       thisTemplate = @template
       url = @model.attributes.url
       $.ajax
@@ -81,7 +85,7 @@ window.SGAranges = {}
         type: 'GET'
         dataType: 'json'
         processData: false
-        success: (data) -> SGAranges.processMetadata data, url, thisFlat, thisEl, thisTemplate
+        success: (data) => SGAranges.processMetadata data, url, @model, thisEl, thisTemplate
       @
 
     remove: ->
@@ -183,18 +187,30 @@ window.SGAranges = {}
         "imgUrl"   : img_url
         "status"   : {t: "grn", m: "grn"}
 
-  SGAranges.processMetadata = (data, url, flat, el, template) =>
+  SGAranges.processMetadata = (data, url, attributes, el, template) =>
+      flat = attributes.get("flat")
       id_graph = {}
       for node in data["@graph"]
         id_graph[node["@id"]] = node if node["@id"]? 
       work_safe_id = url.replace(/[:\/\.]/g, "_")
       metadata = id_graph[url]
-      el.html template(
+      shelfmarks = []      
+      for canvas_id in metadata.canvases
+          canvas = id_graph[canvas_id]
+          if canvas["sga:shelfmarkLabel"] not in shelfmarks
+            shelfmarks.push canvas["sga:shelfmarkLabel"]
+      tpl_data = 
         "id"     : work_safe_id
-        # "title"  : if metadata["dc:title"]? then metadata["dc:title"] + " - " + metadata.label else metadata.label
         "title"  : metadata.label
-        "meta"   : [{"label": "author", "value":metadata["sc:agentLabel"]}] # This may need to be revised.
-      )
+        "state" : SGAranges.Utils.toTitleCase(metadata["sga:stateLabel"])
+        "shelfmarks" : shelfmarks    
+
+      if attributes.get("physical")?
+        tpl_data["physical"] = attributes.get("physical")
+      if attributes.get("logical")?
+        tpl_data["logical"] = attributes.get("logical")
+
+      el.html template(tpl_data)
     
       @rl = new SGAranges.RangeList()
       @rlv = new SGAranges.RangeListView collection: @rl
@@ -246,28 +262,26 @@ window.SGAranges = {}
 
           @clv.render '#' + range_safe_id + ' .row'
 
+  SGAranges.render = (works) ->
+    base_url = "http://54.166.84.180/data/ox/"
+    # base_url = "http://localhost:8888/demo/"
+
+    works_data = []
+
+    for w in works
+      data = 
+        id : w.title
+        url: "#{base_url}#{w.title}/Manifest-index.jsonld" 
+        flat: w.flat
+        physical: w.physical
+        logical: w.logical
+
+      works_data.push data
+
+    wl = new SGAranges.WorkList(works_data)
+
+    wlv = new SGAranges.WorkListView collection: wl
+    wlv.render "#ranges_wrapper"
 
 
 )(jQuery,window.SGAranges,_,Backbone)
-
-# Main: Get manifests from DOM and initialize
-( ($) ->
-
-  base_url = "http://54.166.84.180/data/ox/"
-  # base_url = "http://localhost:8888/demo/"
-  works = []
-  manifests = $("#ranges_wrapper").data("manifests").split(" ")
-  flatness  = $("#ranges_wrapper").data("flat").toString().split(" ")
-  for m, i in manifests
-    data = 
-      id : m
-      url: "#{base_url}#{m}/Manifest-index.jsonld" 
-      flat: JSON.parse(flatness[i])
-
-    works.push data
-
-  wl = new SGAranges.WorkList(works)
-
-  wlv = new SGAranges.WorkListView collection: wl
-  wlv.render "#ranges_wrapper"
-)(jQuery)
