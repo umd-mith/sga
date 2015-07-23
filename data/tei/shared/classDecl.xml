@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classDecl xmlns="http://www.tei-c.org/ns/1.0">
+    <taxonomy>
+        <category xml:id="work">
+            <catDesc>A work in the Shelley-Godwin Archive, e.g. Frankenstein</catDesc>
+        </category>
+        <category xml:id="notebook">
+            <catDesc>A manuscript notebook containing one or more works in the Shelley-Godwin
+                Archive, e.g. Frankenstein Notebook A</catDesc>
+        </category>
+        <category xml:id="volume">
+            <catDesc>The volume of a work in the Shelley-Godwin Archive, e.g. Frankenstein Vol
+                I</catDesc>
+        </category>
+        <category xml:id="chapter">
+            <catDesc>The chapter in a volume of a work in the Shelley-Godwin Archive, e.g.
+                Frankenstein Vol I, Chapter 1</catDesc>
+        </category>
+        <category xml:id="miscellaneous">
+            <catDesc>A part of a manuscript in the Shelley-Godwin Archive that does not fit in other
+                categories of this taxonomy.</catDesc>
+        </category>
+    </taxonomy>
+</classDecl>
