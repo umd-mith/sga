@@ -1,0 +1,23 @@
+{
+  "name": "shelleygodwinarchive.org",
+  "repository": "https://github.com/umd-mith/sga",
+  "version": "1.0.0",
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "coffee-script": "^1.9.3",
+    "font-awesome": "^4.3.0",
+    "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5",
+    "modernizr": "^3.0.0-alpha.4",
+    "napa": "^1.2.0",
+    "openseadragon": "git://github.com/openseadragon/openseadragon.git#v2.0.0",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "install": "napa google/code-prettify",
+    "build": "npm run build:viewer && npm run build:search && npm run build:toc",
+    "build:viewer": "coffee -j js/SGAviewer.js -c components/viewer/src/intro.coffee components/viewer/src/utils.coffee components/viewer/src/data.coffee components/viewer/src/component.coffee components/viewer/src/view.coffee components/viewer/src/router.coffee",
+    "build:search": "coffee -o js -c components/search/SGAsearch.coffee",
+    "build:toc": "coffee -o js -c components/toc/SGAtoc.coffee"
+  }
+}
