@@ -195,6 +195,8 @@ window.SGAranges = {}
       work_safe_id = url.replace(/[:\/\.]/g, "_")
       metadata = id_graph[url]
       shelfmarks = []      
+      contained_works = metadata["sga:containedWorks"]
+      contained_works = [ contained_works ] if !$.isArray contained_works
       for canvas_id in metadata.canvases
           canvas = id_graph[canvas_id]
           if canvas["sga:shelfmarkLabel"] not in shelfmarks
@@ -203,9 +205,10 @@ window.SGAranges = {}
         "id"     : work_safe_id
         "title"  : metadata.label
         "state" : SGAranges.Utils.toTitleCase(metadata["sga:stateLabel"])
-        "shelfmarks" : shelfmarks    
+        "shelfmarks" : shelfmarks
+        "contained_works" : contained_works
         "physical" : attributes.get("physical")
-        "logical" : attributes.get("logical")
+        "linear" : attributes.get("linear")
 
       el.html template(tpl_data)
     
@@ -271,7 +274,7 @@ window.SGAranges = {}
         url: "#{base_url}#{w.title}/Manifest-index.jsonld" 
         flat: w.flat
         physical: w.physical
-        logical: w.logical
+        linear: w.linear
 
       works_data.push data
 
