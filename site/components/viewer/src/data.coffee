@@ -14,7 +14,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
   class TextFile extends Backbone.Model
     idAttribute : "target"
     url : (u) ->
-      return @get "target"
+      # We replace the full URL here for a realtive one.
+      full_url = @get "target"
+      return full_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
     # We override sync, since the data to be fetched is not JSON
     sync : (method, model, options) ->
       if method == 'read'
@@ -104,6 +106,11 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
   class Manifest extends Backbone.Model
     idAttribute : "url"
+    url : (u) ->
+      # Manifests should always contain URIs to shelleygodwinarchive.org, make sure they do.
+      u = u.replace(/^http:\/\/.*?(:\d+)?\//, "/")
+      
+      return "http://shelleygodwinarchive.org" + u
 
     # Using initialize instead of defaults for nested collections
     # is recommended by the Backbone FAQs:
@@ -227,14 +234,6 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           canvases = [node["first"]]
 
           canvases = canvases.concat(node["rest"])
-
-          # next_node = node
-          # while next_node?
-          #   rest = next_node["rdf:rest"]
-          #   rest = [ rest ] if !$.isArray rest
-          #   next = rest[0]["@id"]
-          #   next_node = id_graph[next]
-          #   canvases.push next_node["first"] if next_node?
 
           manifest.sequences.add
             "@id"      : node["@id"]
