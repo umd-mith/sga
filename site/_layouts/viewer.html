@@ -1,0 +1,255 @@
+---
+layout: component
+extra_css:
+  - /css/SGAviewer.css
+---
+
+<script type="text/javascript" src="/js/openseadragon.min.js"></script>
+<script type="text/javascript" src="/js/djtilesource.js"></script>
+
+<div class="content node-type-sharedcanvas">
+  <div id="content-main" class="container_12 clearfix">
+    <div class="grid_12 grid_main">
+      <div id="main-content">
+        <h1 class="title" id="page-title">{{page.title}}</h1>
+        <div class="region region-content">
+          <div id="block-system-main" class="block block-system">
+            <div class="content">
+              <div class="detail-view-tools" id="SGASharedCanvasViewer" data-manifest="{{page.manifest}}">
+              <form name="sgaDetails" id="sgaForm" class="well form-inline">
+                <fieldset class="meta-data-view">
+                  <div class="noborder control-group row">
+                    <span id="SGAManifestMeta">
+
+                    </span>
+                    <span id="SGACanvasMeta">
+
+                    </span>                                   
+                  </div>
+                </fieldset>
+                <fieldset class="detail-view-controls row">
+                  <div class="accordion col-xs-12" id="accordion-parent">
+                    <div class="accordion-group">
+                      <div class="well">
+                        <div class="btn-toolbar pull-left" id="view-controls">
+                          <div class="btn-group" id="img-controls">
+                            <a class="btn btn-sm" title="Reset Zoom" id="zoom-reset"><i class="fa fa-red fa-search"></i></a>
+                            <a class="btn btn-sm" title="Zoom In" id="zoom-in"><i class="fa fa-red fa-search-plus"></i></a>
+                            <a class="btn btn-sm" title="Zoom Out" id="zoom-out"><i class="fa fa-red fa-search-minus"></i></a>
+                            <a class="btn btn-sm" title="Rotate Left" id="rotate-l"><i class="fa fa-red fa-rotate-left"></i></a>
+                            <a class="btn btn-sm" title="Rotate Right" id="rotate-r"><i class="fa fa-red fa-rotate-right"></i></a>
+                          </div>             
+                          <div class="btn-group" id="mode-controls" data-toggle="buttons">
+                            <a class="btn btn-sm" title="View Image Only" id="img-only"><input type="radio" name="options"><i class="fa fa-red fa-picture-o"></i></a>
+                            <a class="btn btn-sm active" title="Standard View" id="mode-std"><input type="radio" name="options"><i class="fa fa-red fa-pause"></i></a>
+                            <a class="btn btn-sm" title="View Reading Text" id="mode-rdg"><input type="radio" name="options"><i class="fa fa-red fa-align-left"></i></a>
+                            <a class="btn btn-sm" title="View TEI" id="mode-xml"><input type="radio" name="options"><i class="fa fa-red fa-code"></i></a>
+                          </div>
+                        </div>
+                        <!-- /view-controls -->
+                        
+                        <div class="pull-left" id="search-form-block">
+                          <div class="accordion-heading">               
+                              <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Search" id="searchbox" />
+                                <div class="input-group-btn">
+                                  <a type="button" class="btn btn-sm btn-default" tabindex="-1" id="searchbtn"><i class="fa fa-search fa-flip-horizontal"></i></a>
+                                  <a type="button" class="btn btn-sm btn-default dropdown-toggle accordion-toggle collapsed" data-toggle="collapse" tabindex="-1" data-parent="accordion-parent" title="Show Search Filter" href="#collapse-one"><i class="fa fa-chevron-up"></i></a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- /search-form-block -->
+                        
+                        <div class="btn-toolbar pull-right" id="sequence-nav">
+                          <div class="btn-group" id="pager-controls"><a class="btn btn-sm" id="first-page"><i class="fa fa-red fa-step-backward"></i></a><a class="btn btn-sm" id="prev-page"><i class="fa fa-red fa-chevron-left" ></i></a><a class="btn btn-sm" id="next-page"><i class="fa fa-red fa-chevron-right"></i></a><a class="btn btn-sm" id="last-page"><i class="fa fa-red fa-step-forward"></i></a></div>
+                        </div>
+                        <!-- /sequence-nav --> 
+               
+                        {% if page.limit_view != "none" %}
+                        <div class="pull-left" id="limit-view-controls">
+                          <div class="control-group">
+                            <div class="control-label">Limit View:</div>
+
+                            {% if page.limit_view == "work" %}
+                              <label class="radio-inline">
+                              <input type="radio" name="work-view" value="default" id="hand-view_0" />
+                              No Highlight</label>
+                            <label class="radio-inline">
+                              <input type="radio" name="work-view" value="work-prometheus_unbound" id="hand-view_1" checked="checked" />
+                              Highlight work</label>
+                            {% endif %}
+
+                            {% if page.limit_view == "hands" %}
+                              <label class="radio-inline">
+                              <input type="radio" name="hand-view" value="default" id="hand-view_0" checked="checked" />
+                              All</label>
+                              <label class="radio-inline">
+                                <input type="radio" name="hand-view" value="hand-mws" id="hand-view_1" />
+                                Mary Shelley</label>
+                              <label class="radio-inline">
+                                <input type="radio" name="hand-view" value="hand-pbs" id="hand-view_2" />
+                                Percy Shelley</label>
+                            {% endif %}
+                            
+                          </div>
+                        </div>
+                        <!--/hand-view-controls-->
+                        {% endif %}
+                                 
+                      </div>
+                      <!-- /well -->
+                      <div id="collapse-one" class="accordion-body collapse meta-data-filter">
+                        <div class="accordion-inner well well-sm">
+                          <div class="controls meta-data-group" id="limit-search">
+                            <h3>Limit Search <span>Only Show Terms Found In:</span></h3>
+                            <div class="control-group">
+                              <label class="control-label">Text Type(s) <span>|</span></label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox1" value="added">
+                                added passages</label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox2" value="deleted">
+                                deleted passages</label>
+                            </div>
+                            {% if page.limit_view == "hands" %}
+                            <div class="control-group">
+                              <label class="control-label">Hand(s) <span>|</span></label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox1" value="hand_msw">
+                                Mary Shelley</label>
+                              <label class="checkbox inline meta-data-item">
+                                <input type="checkbox" id="inlineCheckbox2" value="hand_pbs">
+                                Percy Bysshe Shelley</label>
+                             {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /well /accordion-inner --> 
+                      </div>
+                      <!-- accordion-body --> 
+                    </div>
+                    <!-- /accordion-group--> 
+                  </div>
+                  <!-- /accordion -->
+                </fieldset>
+                <!-- /detail-view-controls control-group -->
+              </form>
+            </div>
+            <!-- /detail-view-tools -->
+
+            <div class="detail-view-results">
+              <div class="shadow-top"></div>
+              <div class="row">
+                <div class="loader" id="loading-progress"><i class="fa fa-spinner fa-spin fa fa-3x"></i></div>
+                <div id="mainSharedCanvas">
+                </div>
+                <div class="page-location-bar">
+                  <div id="page-location"></div>
+               </div>
+              </div>
+            </div>
+            <!-- /detail-view-results -->
+
+            <div class="detail-view-meta">
+              <div class="row">
+                <div id="detail-view-citation" class="meta-data-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="well well-sm meta-data-item">
+                    <h3 class="meta-title">Citation</h3>
+                    <h4 class="cite-page"><i class="fa fa-desktop fa-fixed-width"></i> Cite This Page</h4>
+                    <div class="page-citation">
+                      <span id="cite-manifest"></span>
+                      <span id="cite-canvas"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /detail-view-meta -->
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/template" id="canvas-tpl">
+    <div>
+      <div class="sharedcanvas" data-types="Image"></div>
+    </div>
+    <div>
+      <div class="sharedcanvas" data-types="Text"></div>
+      <div id="ModeLayers"></div>
+    </div>
+  </script>
+
+  <script type="text/template" id="manifestMeta-tpl">
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span><%=scagentLabel%></span></li>      
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workDate">Date Written&nbsp;</label><span><%=scdateLabel%></span></li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>   
+    </ul>
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workNotebook">View&nbsp;</label><span><%=label%></span></li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workState">State&nbsp;</label><span><%=sgastateLabel%></span></li>
+        <li class="meta-data-item">
+        <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span><%=attribution%></span></li>
+    </ul>
+  </script>
+
+  <script type="text/template" id="canvasMeta-tpl">
+    <ul class="meta-data-group controls col-lg-3">
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workHands">Hand(s)&nbsp;</label><span><%=sgahandLabel%></span>
+      </li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workShelfmark">Shelfmark&nbsp;</label><span><%=sgashelfmarkLabel%></span>
+      </li>
+      <li class="meta-data-item">
+        <label class="meta-label" id="meta-workFolio">Folio&nbsp;</label><span><%=label%></span>
+      </li>
+    </ul>
+    <div class="meta-data-group col-lg-3 controls" id="status-block">
+      <div class="well well-sm">
+        <div class="meta-data-item circle-yes" id="status-transcription">
+          <label class="meta-label">Transcription Status</label>
+          <span class="badge-red"><i class="fa fa-circle <% if (trans=='red') { %>active<%}%>"></i></span>
+          <span class="badge-yellow"><i class="fa fa-circle <% if (trans=='yellow') { %>active<%}%>"></i></span>
+          <span class="badge-green"><i class="fa fa-circle <% if (trans=='green') { %>active<%}%>"></i></span></div>
+        <div class="meta-data-item circle-yes" id="status-metadata">
+          <label class="meta-label">Metadata Status</label>
+          <span class="badge-red"><i class="fa fa-circle <% if (meta=='red') { %>active<%}%>"></i></span>
+          <span class="badge-yellow"><i class="fa fa-circle <% if (meta=='yellow') { %>active<%}%>"></i></span>
+          <span class="badge-green"><i class="fa fa-circle <% if (meta=='green') { %>active<%}%>"></i></span></div>
+      </div>             
+    </div>
+  </script>
+
+  <script type="text/template" id="citation-tpl">
+    <%=author%> "<%=title%>", in <em>The Shelley-Godwin Archive</em>,
+  </script>
+
+  <script type="text/template" id="citation_canvas-tpl">
+    <%=page%>. Retrieved from <%=url%>
+  </script>
+
+<script type="text/javascript" src="/js/viewer_deps.js"></script>
+<script type="text/javascript" src="/js/SGAviewer.js"></script>
+
+<script type="text/javascript">
+  (function ($) { 
+  'use strict';
+
+    var manifestURL = $("#SGASharedCanvasViewer").data("manifest");
+
+    var sc = new SGASharedCanvas.Application({"manifest":manifestURL, "searchService":"{{site.searchservice}}"});
+
+  })(jQuery);
+</script>

@@ -1,0 +1,25 @@
+---
+extra_dependencies:
+  - /js/component_deps.js
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="page-wrapper" class="{% if page.front != true %} not-front {% endif %}">
+
+      {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+
+    </div>
+
+  </body>
+
+</html>
