@@ -16,7 +16,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       manifestUrl = config.manifest
       searchService = config.searchService
-      # manifest = SGASharedCanvas.Data.importFullJSONLD manifestUrl 
 
       # Instantiate manifests collection and view
       manifests = SGASharedCanvas.Data.Manifests
@@ -148,7 +147,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 layerAnnos = curCanvas.layerAnnos.find (m) ->
                   return m.get("sc:motivatedBy")["@id"] == "sga:source"
 
-                $.get layerAnnos.get("resource"), ( data ) ->    
+                # Make full URL to XML relative
+                xml_url = layerAnnos.get("resource")
+                xml_url = xml_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
+
+                $.get xml_url, ( data ) ->    
                   surface = data.getElementsByTagName 'surface'
                   serializer = new XMLSerializer()
                   txtdata = serializer.serializeToString surface[0] 
