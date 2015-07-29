@@ -103,7 +103,6 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
               min: @variables.get 'seqMin' 
               max: pages
               value: pages
-              step: 0
               slide: ( event, ui ) ->
                 $(ui.handle).text(getLabel(pages - ui.value))
               stop: ( event, ui ) ->
@@ -116,7 +115,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
                 Backbone.history.navigate hash
 
             @listenTo @variables, "change:seqPage", (n) ->
-              @$el.find("a").text( getLabel(n-1) )
+              @$el.find(".ui-slider-handle").text( getLabel(n-1) )
         
             # Using the concept of "Event aggregation" (similar to the dispatcher in Angles)
             # cfr.: http://addyosmani.github.io/backbone-fundamentals/#event-aggregator
@@ -140,7 +139,7 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
             @$el.slider
               value: @variables.get('seqMax') - (n-1) # The value passed in is human readable. Remove 1.
           if options.getLabel?
-            @$el.find("a").text(getLabel(n))
+            @$el.find(".ui-slider-handle").text(getLabel(n))
         catch e
           console.log e, "Unable to update value of slider"
 
