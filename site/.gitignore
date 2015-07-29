@@ -1,4 +1,11 @@
 node_modules
-js/*
 _site
 .jekyll-metadata
+tei
+js/*
+css/SGAviewer.css
+css/default.css
+
+# Do not ignore these files
+!js/home.js
+!js/search_main.js
