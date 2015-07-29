@@ -1,1 +1,1 @@
-This directory contains JavaScript libraries that we could not find in bower, or were not contributed to bower by the original creators.
+This directory contains JavaScript libraries that we could not find in npm, or were not contributed to npm by the original creators.
