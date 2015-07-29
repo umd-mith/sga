@@ -1,23 +1,135 @@
 ---
 layout: default
+front: true
 ---
 
-<div class="home">
+<div id="banner">
+  <!--#banner-inside-->
+  <div id="banner-inside" class="container_12">
+    <div class="grid_12">
+      <!--#slideshow-->
+      <div id="slideshow" style="display: block;">
+        <div class="region region-home-slider">
+          <div id="block-block-8" class="block block-block"> 
+            <div class="content">
+              <!--slides-->
+              <div class="slides" style="position: relative; height: 240px;">
+                <!--slider-item-->
+                <div class="slider-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0; width: 940px;">
+                  <div class="slider-item-image"><img src="/images/local/slide_ch7.jpg" alt="Frankenstein - Draft Notebook A. c. 56, fol. 21r Mary Shelley"></div>
+                  <div class="slider-item-title">Frankenstein - Draft Notebook A. c. 56, fol. 21r</div>
+                </div>
+                <!--EOF:slider-item-->
+                <!--slider-item-->
+                <div class="slider-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0; width: 940px;">
+                  <div class="slider-item-image"><img src="/images/local/slide_ffront.jpg" alt="Engraving on Frontispiece to the revised edition of Frankenstein"></div>
+                  <div class="slider-item-title">Engraving on Frontispiece to the revised edition of <em>Frankenstein</em></div>
+                </div>
+                <!--EOF:slider-item-->
+                <!--slider-item-->
+                <div class="slider-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0; width: 940px;">
+                    <div class="slider-item-image"><img src="/images/local/slide_pbs.jpg" alt="Percy Bysshe Shelley by Alfred Clint, after Amelia Curran, and Edward Ellerker Williams (National Portrait Gallery, London)"></div>
+                    <div class="slider-item-title">Percy Bysshe Shelley</div>
+                </div>
+                <!--EOF:slider-item-->
+                <!--slider-item-->
+                <div class="slider-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0; width: 940px;">
+                    <div class="slider-item-image"><img src="/images/local/slide_wg.jpg" alt="William Godwin by James Northcote (National Portrait Gallery, London); Letter by William Godwin (Bodleian Library, University of Oxford)"></div>
+                    <div class="slider-item-title">William Godwin</div>
+                </div>
+                <!--EOF:slider-item-->
+                <!--slider-item-->
+                <div class="slider-item" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0; width: 940px;">
+                    <div class="slider-item-image"><img src="/images/local/slide_mws.jpg" alt="Mary Wollstonecraft Shelley by Richard Rothwell (National Portrait Gallery, London)"></div>
+                    <div class="slider-item-title">Mary Wollstonecraft Shelley</div>
+                </div>
+                <!--EOF:slider-item-->
+                <!--slider-item-->
+                <div class="slider-item current" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 7; opacity: 1; width: 940px;">
+                    <div class="slider-item-image"><img src="/images/local/slide_mw.jpg" alt="Mary Wollstonecraft by John Opie (National Portrait Gallery, London)"></div>
+                    <div class="slider-item-title">Mary Wollstonecraft</div>
+                </div>
+                <!--EOF:slider-item-->
+              </div> 
+              <!--EOF:slides-->
 
-  <h1 class="page-heading">Posts</h1>
+              <!--slide-control-->
+              <div class="slide-control">
+                  <div id="prev" href="#"><span class="websymbols">&lt;</span></div>
+                  <div id="next" href="#"><span class="websymbols">&gt;</span></div>
+              </div>
+              <!--EOF:slide-control-->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+              <!--#slide-nav-->
+              <ul id="slide-nav">
+                  <li class=""><a href="#"></a></li>
+                  <li class=""><a href="#"></a></li>
+                  <li class=""><a href="#"></a></li>
+                  <li class=""><a href="#"></a></li>
+                  <li class=""><a href="#"></a></li>
+                  <li class="activeSlide"><a href="#"></a></li>
+              </ul> 
+              <!--EOF:#slide-nav-->      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--EOF:#slideshow-->
+    </div>
+  </div>
+  <!--EOF:#banner-inside-->
 </div>
+
+<div id="content">
+  <div class="container_12">
+    <!--#content-inside-->
+    <div id="content_inside" class="clearfix">
+      <div class="grid_12">
+        <!--#featured-->
+        <div id="featured" class="clearfix">
+          <div class="grid_6 alpha">
+            <div class="region region-home-left">
+              <div id="block-block-7" class="block block-block">
+                <h2>About the Archive</h2>
+                <div class="content">
+                  <p>The Shelley-Godwin Archive will provide the digitized manuscripts of Percy Bysshe Shelley, Mary Wollstonecraft Shelley, William Godwin, and Mary Wollstonecraft, bringing together online for the first time ever the widely dispersed handwritten legacy of this uniquely gifted <a href="about#firstfamily">family of writers</a>. The result of a partnership between the New York Public Library and the Maryland Institute for Technology in the Humanities, in cooperation with Oxford’s Bodleian Library, the S-GA also includes key contributions from the Huntington Library, the British Library, and the Houghton Library.  In total, these partner libraries contain over 90% of all known relevant manuscripts.</p>
+                  <a type="button" class="btn btn-default" href="/about">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                                    
+          <div class="grid_6 omega">
+            <div class="region region-home-right">
+              <div id="block-block-11" class="block block-block">
+                <h2>S-GA in the News</h2>
+                <div class="content">
+                  <p>
+                    <span class="news-date">October 30, 2013</span><br>
+                    <span class="news-pub"><em>The New York Times</em> Arts Beat</span><br>
+                    <a href="http://artsbeat.blogs.nytimes.com/2013/10/30/frankenstein-manuscript-comes-alive-in-online-shelley-archive/?_r=1" target="_blank"><em>‘Frankenstein’ Manuscript Comes Alive in Online Shelley Archive</em></a><br>
+                    <span class="news-by">by Jennifer Schuessler</span>
+                  </p>
+                  <p>
+                    <span class="news-date">November 12, 2013</span><br>
+                    <span class="news-pub"><em>Library Journal</em>: Digital Content</span><br>
+                    <a href="http://lj.libraryjournal.com/2013/11/digital-content/shelley-godwin-archive-aims-to-help-citizen-humanists-crowd-source-digital-humanities/#_" target="_blank"><em>Shelley-Godwin Archive Aims to Help ‘Citizen Humanists’ Crowd Source Digital Humanities</em></a><br>
+                    <span class="news-by">by Matt Enis</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--EOF:#featured-->
+      </div>
+      <div class="grid_12">
+        <div class="breadcrumb-wrapper"> </div>
+      </div>
+    </div>
+    <!--EOF:#content-inside-->
+  </div>
+<!-- EOF:.container_12 -->
+</div>
+
+<script type="text/javascript" src="/js/home.js"></script>
