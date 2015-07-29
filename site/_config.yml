@@ -1,17 +1,41 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Shelley-Godwin Archive
+email: info@shelleygodwinarchive.org
+description: > # The Shelley-Godwin Archive will provide the digitized manuscripts of Percy Bysshe Shelley, 
+  Mary Wollstonecraft Shelley, William Godwin, and Mary Wollstonecraft, bringing together online for the first 
+  time ever the widely dispersed handwritten legacy of this uniquely gifted family of writers.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://shelleygodwinarchive.org" # the base hostname & protocol for your site
+twitter_username: shelleygodwin
+github_username:  mith_umd
+
+# S-GA Specific Global Variables
+searchservice: "http://107.20.241.32/annotate?"
 
 # Build settings
 markdown: kramdown
+highligher: pygments
 
-# Exclude JS component apps
-exclude: [components]
+# Top nav
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Manuscripts
+   url: /manuscripts
+ - title: Works
+   url: /works
+ - title: Search
+   url: /search
+ - title: Using the Archive
+   url: /using-the-archive
+
+# Includes
+include: ['_pages']
+
+# Excludes
+exclude: [components, node_modules]
+
+kramdown:
+  input: GFM
