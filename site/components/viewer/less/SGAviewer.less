@@ -1,3 +1,5 @@
+@import (less) "components/viewer/lib/vendor/prettify.min.css";
+
 /**********************
        CONSTANTS
 ***********************/
@@ -85,4 +87,14 @@ svg body {
   .italic {font-style:italic}
   .sup {vertical-align:super}
   .lb { color:grey }
+}
+
+#limit-view-controls { 
+  max-height: 30px; margin-top: -2px; 
+  .control-label { text-transform:uppercase; color: #a54647; font-weight: normal; font-size: 0.75em; line-height: normal; }
+  .radio-inline { font-size: 0.75em; font-weight: normal; line-height: 14px; padding-left: 0; }
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{
+  position: static;
 }
