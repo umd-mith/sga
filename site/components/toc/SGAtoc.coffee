@@ -165,6 +165,9 @@ window.SGAranges = {}
       c_pos = if pos? then pos else $.inArray(canvas, metadata.canvases) + 1
       sc_url = metadata["sc:service"]["@id"]
 
+      # Make URL relative so that it will work on dev, stg, and live
+      sc_url = sc_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
+
       img_url = ""
 
       for img_id in metadata.images
@@ -193,7 +196,7 @@ window.SGAranges = {}
       for node in data["@graph"]
         id_graph[node["@id"]] = node if node["@id"]? 
       work_safe_id = url.replace(/[:\/\.]/g, "_")
-      metadata = id_graph[url]
+      metadata = id_graph["http://shelleygodwinarchive.org"+url]
       shelfmarks = []      
       contained_works = metadata["sga:containedWorks"]
       contained_works = [ contained_works ] if !$.isArray contained_works
@@ -263,8 +266,7 @@ window.SGAranges = {}
           @clv.render '#' + range_safe_id + ' .row'
 
   SGAranges.render = (works) ->
-    base_url = "http://54.166.84.180/data/ox/"
-    # base_url = "http://localhost:8888/demo/"
+    base_url = "/manifests/ox/"
 
     works_data = []
 
@@ -289,7 +291,7 @@ window.SGAranges = {}
 # Main: Get manifests from DOM and initialize
 ( ($) ->
 
-  works = $("#ranges_wrapper").data("works")
+  works = $("#ranges_wrapper").data("toc")
   SGAranges.render(works)
 
 )(jQuery)
