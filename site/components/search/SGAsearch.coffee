@@ -4,8 +4,47 @@ window.SGAsearch = {}
 
 (($,SGAsearch,_,Backbone) ->
 
-  #bbq no escape for "pretty" search fragment
-  $.param.fragment.noEscape ':,/'
+## HISTORY UTILS ##
+
+  # This may be better implemented with a router, eventualy.
+  SGAsearch.History = {}
+
+  SGAsearch.History.getState = (s) ->
+    current = Backbone.history.getFragment()
+    re = new RegExp s+"=([^&]+)" 
+    state = re.exec(current)
+    
+    if state? then state[1] else state
+
+  SGAsearch.History.setState = (states, trigger=true) ->
+    # Set new fragment with new parameters
+    hash = "#"
+    for k, v of states
+      if hash != "#"
+        hash += "&"
+      hash += k + "=" + v
+    Backbone.history.navigate(hash, {"trigger" : trigger})
+
+  SGAsearch.History.pushState = (states, trigger=true) ->
+    # Append new or replace existing fragment parameter 
+    hash = Backbone.history.getFragment()
+    for k, v of states
+      newparam = if hash != "" then "&" else ""
+      newparam += k + "=" + v
+      re = new RegExp "(&?"+k+"=)[^&]+"
+      current = re.exec(hash)
+      if current?
+        hash = hash.replace(re, newparam)
+      else
+        hash += newparam
+    Backbone.history.navigate(hash, {"trigger" : trigger})
+
+  SGAsearch.History.removeState = (s, trigger=true) ->
+    # Remove existing fragment parameter
+    hash = Backbone.history.getFragment()
+    re = new RegExp "&?"+s+"=[^&]+"
+    hash = hash.replace(re, "")
+    Backbone.history.navigate(hash, {"trigger" : trigger})
 
 ## MODELS ##
 
@@ -116,7 +155,10 @@ window.SGAsearch = {}
         if view.model.attributes.type == 'notebook'
           o.filters = "shelfmark:%22#{view.model.attributes.name}%22"
         else
-          o.fields += ",#{view.model.attributes.field}"
+          # Append field if new
+          re = new RegExp view.model.attributes.field
+          if o.fields.search(re) == -1
+            o.fields += ",#{view.model.attributes.field}"          
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
       view.$el.find('span.label-danger').click (e) ->
@@ -156,12 +198,13 @@ window.SGAsearch = {}
 
     doSearch = ->
 
-      q = $.bbq.getState('q')
-      f = $.bbq.getState('f')
-      p = $.bbq.getState('p')
-      nb = $.bbq.getState('nb')
+      current = Backbone.history.getFragment()
+      q = SGAsearch.History.getState("q")
+      f = SGAsearch.History.getState("f")
+      p = SGAsearch.History.getState("p")
+      nb = SGAsearch.History.getState("nb")
       # Leaving sorting out
-      # s = $.bbq.getState('s') 
+      s = SGAsearch.History.getState("s")
 
       if q? and f?
         if !p? then p = 0 else p -= 1 
@@ -204,12 +247,10 @@ window.SGAsearch = {}
     if sort?
       url += "&sort=#{sort}"
 
-    # console.log url
-
     setHistory = () ->
-      $.bbq.pushState
-        f: fields
-        q: query
+      SGAsearch.History.pushState
+        "f": fields
+        "q": query
 
     bindSort = () ->
       sortBy = $(".r-sorting").find('[name=r-sortby]')
@@ -273,26 +314,26 @@ window.SGAsearch = {}
       view.$el.find('.nav-first')
 
     setHistory = () ->
-      cur_q = $.bbq.getState('q')
-      cur_f = $.bbq.getState('f')
-      cur_p = $.bbq.getState('p')
-      cur_nb = parseInt $.bbq.getState('nb') - 1
+      cur_q = SGAsearch.History.getState('q')
+      cur_f = SGAsearch.History.getState('f')
+      cur_p = SGAsearch.History.getState('p')
+      cur_nb = parseInt SGAsearch.History.getState('nb') - 1
       if cur_q != query or cur_f != fields
-        $.bbq.pushState
-          q: query
-          f: fields
+        SGAsearch.History.pushState
+          "q": query
+          "f": fields
       if cur_p != page
         if page > 0
-          $.bbq.pushState
-            p: page + 1
+          SGAsearch.History.pushState
+            "p": page + 1
         else 
-          $.bbq.removeState('p')
+          SGAsearch.History.removeState('p')
       if cur_nb != filters
         if filters?
-          $.bbq.pushState
-            nb: filters
+          SGAsearch.History.pushState
+            "nb": filters
         else
-          $.bbq.removeState('nb')
+          SGAsearch.History.removeState('nb')
 
     updateResults = (res) =>
       # Results
