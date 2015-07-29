@@ -1,21 +1,41 @@
 # Site
 
-Software components used for shelleygodwinarchive.org, including a JavaScript Shared Canvas viewer.
+Jekyll static site for shelleygodwinarchive.org.
 
-## Shared Canvas
+## Components
 
-SGA uses Shared Canvas to produce the facsimile edition. This viewer is built
-on the MITHGrid framework to provide a flexible, extensible Shared Canvas
-viewer that can respond to faceted browsing of annotations and text features.
+The `components` directory hosts three JavaScript Backbone applications:
 
-## Search
+* SGAsearch: a client to our solr search server
+* SGAtoc: an one-page app to browse through one or more table of contents of the archive's items
+* SGAviewer: a one-page app to display our flavor of Shared Canvas manifests
 
-Code for indexing our TEI files in Solr, a web service for querying them, and an example UI.
+## Installation
 
-## Ranges
+Requirements:
 
-Code for dealing with Shared Canvas Ranges and for building a TOC from a Shared Canvas manifest.
+* Jekyll ^2.5.3
+* npm
 
-## Drupal
+To build:
 
-Modules and theme for shelleygodwinarchive.org (this is a mirror and may not be exactly the same as what is on the live site).
+```
+$ npm install
+$ npm build
+$ jekyll build
+```
+You can serve the site locally with:
+
+```
+$ jekyll serve
+```
+
+## Getting manifests and TEI data to work
+
+The manifests `manifests/ox/ox-frankenstein_notebook_a/Manifest.json` and `manifests/ox/ox-frankenstein_notebook_a/Manifest-index.json` are provided as example. 
+
+But to have a fully functional website:
+
+* use [Unbind](github.com/umd-mith/unbind) to generate our Shared Canvas manifests and place them in `/manifests/`
+* symlink or copy `../data/tei/` to `tei`
+* use [sg-readingTEI](https://github.com/umd-mith/sg-readingTEI) to generate reading views of the TEI and place them in `../data/tei/readingTEI/html`
