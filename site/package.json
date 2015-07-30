@@ -19,7 +19,7 @@
     "grunt": "~0.4.5"
   },
   "scripts": {
-    "install": "napa malsup/cycle",
+    "install": "napa malsup/cycle && npm run build && jekyll build",
     "build": "npm run build:components && npm run build:dependencies && npm run build:assets",
 
     "build:components": "npm run build:viewer && npm run build:search && npm run build:toc",
