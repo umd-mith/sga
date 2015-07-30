@@ -21,8 +21,6 @@ To build:
 
 ```
 $ npm install
-$ npm build
-$ jekyll build
 ```
 You can serve the site locally with:
 
@@ -32,10 +30,8 @@ $ jekyll serve
 
 ## Getting manifests and TEI data to work
 
-The manifests `manifests/ox/ox-frankenstein_notebook_a/Manifest.json` and `manifests/ox/ox-frankenstein_notebook_a/Manifest-index.json` are provided as example. 
-
 But to have a fully functional website:
 
-* use [Unbind](github.com/umd-mith/unbind) to generate our Shared Canvas manifests and place them in `/manifests/`
 * symlink or copy `../data/tei/` to `tei`
+* use [Unbind](github.com/umd-mith/unbind) to generate our Shared Canvas manifests and place them in `/manifests/`
 * use [sg-readingTEI](https://github.com/umd-mith/sg-readingTEI) to generate reading views of the TEI and place them in `../data/tei/readingTEI/html`
