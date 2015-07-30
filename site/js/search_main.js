@@ -1,3 +1,5 @@
+{% include site.searchservice %}
+
 (function ($, Backbone) { 
 
     Backbone.history.start();
@@ -5,7 +7,8 @@
     $('#all-results').hide();
 
     // var service = "http://localhost:5000/search";
-    var service = "http://54.166.24.46/search";
+    // var service = "http://54.166.24.46/search";
+    var service = "search"
     var options = $('#refine-results');
     var destination = $('#results-grid ul');
 
