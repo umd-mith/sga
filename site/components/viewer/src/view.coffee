@@ -598,7 +598,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         @variables.set 'fontSize', (fs-1) / @variables.get "scale"
 
         # Reset line height to 1.5 (font size * 1.5)
-        adj = newfs * 1.5
+        adj = newfs * 2.0
         @$el.css('line-height', adj + 'px')
 
       @variables.on 'change:scrollWidth', (sw) =>       
