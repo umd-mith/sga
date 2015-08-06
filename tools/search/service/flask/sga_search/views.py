@@ -163,8 +163,7 @@ def annotate():
     
     def do_annotation(s, f, q):
         # This will probably stay hardcoded
-        # TEI_data = "http://shelleygodwinarchive.org/tei/ox/"
-        TEI_data = "http://localhost:8000/tei/ox/"
+        TEI_data = "http://shelleygodwinarchive.org/tei/ox/"
         format = "jsonld"
         hl_simple_pre = '_#_'
         hl_simple_post = '_#_'
