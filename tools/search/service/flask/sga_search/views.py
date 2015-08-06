@@ -46,7 +46,7 @@ def search():
         work_fields = re.findall(r'lst name="(work_[^"]+)"', luke_req)
 
         # facets
-        fcts = ['added:'+q,'deleted:'+q,'hand_pbs:'+q,'hand_mws:'+q]
+        fcts = ['added:'+q,'deleted:'+q,'hand_pbs:'+q,'hand_mws:'+q,'has_figure:true']
 
         for w in work_fields:
             fcts.append("{0}:{1}".format(w, q))
@@ -58,7 +58,7 @@ def search():
         # so all the positions are extracted from there.
         response = s.raw_query(q=fields[0]+":"+q, 
             q_op='AND',
-            fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label', 
+            fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure', 
             fq=fqs, 
             wt='json', 
             start=start,

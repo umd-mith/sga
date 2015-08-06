@@ -1,5 +1,7 @@
 # # Full Text Search
 
+## HTML TEMPLATES LOCATED AT /_pages/search.html
+
 window.SGAsearch = {}
 
 (($,SGAsearch,_,Backbone) ->
@@ -152,26 +154,40 @@ window.SGAsearch = {}
     bindFacetControls: (view, o) ->
       view.$el.click (e) ->
         e.preventDefault()
+        f = ""
         if view.model.attributes.type == 'notebook'
-          o.filters = "shelfmark:%22#{view.model.attributes.name}%22"
+          f = "shelfmark:%22#{view.model.attributes.name}%22"
+        else if view.model.attributes.type == 'sketch'
+          f = "has_figure:true"
         else
           # Append field if new
           re = new RegExp view.model.attributes.field
           if o.fields.search(re) == -1
             o.fields += ",#{view.model.attributes.field}"          
+
+        if !o.filters? 
+            o.filters = f 
+          else 
+            o.filters += ",#{f}"
+
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
       view.$el.find('span.label-danger').click (e) ->
         e.preventDefault()
         e.stopPropagation()
+        f = ""
         if view.model.attributes.type == 'notebook'
           f = "NOT%20shelfmark:%22#{view.model.attributes.name}%22"
-          if !o.filters? 
+        else if view.model.attributes.type == 'sketch'
+          f = "has_figure:false"
+        else
+          o.fields += ",NOT%20#{view.model.attributes.field}"
+
+        if !o.filters? 
             o.filters = f 
           else 
             o.filters += ",#{f}"
-        else
-          o.fields += ",NOT%20#{view.model.attributes.field}"
+
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
 
     clear: -> 
@@ -202,14 +218,14 @@ window.SGAsearch = {}
       q = SGAsearch.History.getState("q")
       f = SGAsearch.History.getState("f")
       p = SGAsearch.History.getState("p")
-      nb = SGAsearch.History.getState("nb")
+      fl = SGAsearch.History.getState("fl")
       # Leaving sorting out
       s = SGAsearch.History.getState("s")
 
       if q? and f?
         if !p? then p = 0 else p -= 1 
-        if !nb? then nb = null
-        SGAsearch.search(service, q, facets, destination, f, p, nb)
+        if !fl? then fl = null
+        SGAsearch.search(service, q, facets, destination, f, p, fl)
         $('#all-results').show()
 
     doSearch()
@@ -317,7 +333,7 @@ window.SGAsearch = {}
       cur_q = SGAsearch.History.getState('q')
       cur_f = SGAsearch.History.getState('f')
       cur_p = SGAsearch.History.getState('p')
-      cur_nb = parseInt SGAsearch.History.getState('nb') - 1
+      cur_fl = parseInt SGAsearch.History.getState('fl') - 1
       if cur_q != query or cur_f != fields
         SGAsearch.History.pushState
           "q": query
@@ -328,12 +344,12 @@ window.SGAsearch = {}
             "p": page + 1
         else 
           SGAsearch.History.removeState('p')
-      if cur_nb != filters
+      if cur_fl != filters
         if filters?
           SGAsearch.History.pushState
-            "nb": filters
+            "fl": filters
         else
-          SGAsearch.History.removeState('nb')
+          SGAsearch.History.removeState('fl')
 
     updateResults = (res) =>
       # Results
@@ -483,6 +499,25 @@ window.SGAsearch = {}
           "num"  : res.facets.deleted      
 
       @r_flv.render $(facets).find('#r-list-rev'), srcOptions
+
+      ## Sketches
+
+      if @sk_flv?
+        @sk_flv.clear()
+
+      @sk_fl = new SGAsearch.Facetlist()
+      @sk_flv = new SGAsearch.FacetListView collection: @sk_fl       
+
+      if parseInt(res.facets.has_figure) > 0
+        f_sk = new SGAsearch.Facet()
+        @sk_flv.collection.add f_sk
+        f_sk.set 
+          "type" : "sketch"
+          "field" : "sketch"
+          "name" : "Pages with sketches"
+          "num"  : res.facets.has_figure
+
+      @sk_flv.render $(facets).find('#r-list-sketches'), srcOptions
 
       # Connect UI components
       bindPagination res.numFound

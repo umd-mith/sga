@@ -5,6 +5,7 @@
     <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
     <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
     <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="boolean" class="solr.BoolField" omitNorms="true"/>
 
     <fieldType name="string" class="solr.StrField" 
       sortMissingLast="true" omitNorms="true"/>
@@ -79,6 +80,8 @@
     <field name="deleted" type="text" multiValued="true" indexed="true" stored="true" required="false"/>
     
     <field indexed="true" multiValued="false" name="text" stored="true" type="text"/>
+
+    <field name="has_figure" type="boolean" indexed="true" stored="true" required="true" />
 
     <dynamicField name="hand_*" type="text_hand" multiValued="false" indexed="true" stored="true" required="false"/>
     <dynamicField name="work_*" type="text_hand" multiValued="false" indexed="true" stored="true" required="false"/>

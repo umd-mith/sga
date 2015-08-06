@@ -88,7 +88,8 @@ class SurfaceDoc :
         viewer_url="",
         authors="",
         attribution="",
-        doc_id=None, 
+        doc_id=None,
+        has_figure=False, 
         text="", 
         hands={"mws":"","pbs":"", "comp":"", "library":""},
         works={}, 
@@ -114,6 +115,7 @@ class SurfaceDoc :
         self.hands_pos = hands_pos
         self.hands_tei_pos = hands_tei_pos
         self.mod_pos = mod_pos
+        self.has_figure = has_figure
 
 
     def commit(self):
@@ -138,7 +140,8 @@ class SurfaceDoc :
                 "comp_pos" : self.hands_pos["comp"],
                 "library_pos" : self.hands_pos["library"],
                 "add_pos" : self.mod_pos["add"], 
-                "del_pos" : self.mod_pos["del"]}
+                "del_pos" : self.mod_pos["del"],
+                "has_figure" : self.has_figure}
 
         for w in self.works:
             key = "work_" + w
@@ -227,6 +230,10 @@ class GSAContentHandler(xml.sax.ContentHandler):
                     self.cur_work.append(work)
                 elif self.cur_work[-1] != work:
                     self.cur_work.append(work)
+
+        if name == "zone":
+            if attrs.get("type") == "sketch":
+                self.doc.has_figure = True
 
         if name == "line":
             if attrs.get("xml:id"):
