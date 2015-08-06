@@ -116,6 +116,8 @@ window.SGAsearch = {}
       @
 
     addOne: (model) =>
+      # Make viewer_url relative
+      model.set("viewer_url", model.get("viewer_url").replace(/^http:\/\/.*?(:\d+)?\//, "/"))
       view = new SGAsearch.SearchResultView {model: model}
       $(@target).append view.render().$el
 
