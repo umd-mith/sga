@@ -74,7 +74,7 @@ class TeiData :
         # load each surface document
         for i, inc in enumerate(tei.findall('.//{%(tei)s}sourceDoc/{%(xi)s}include' % ns)):
             filename = urljoin(path_to_tei, inc.attrib['href'])
-            self.position = str(i)
+            self.position = str(i+1)
 
             source = open(filename)
             xml.sax.parse(source, GSAContentHandler(s, self, filename))
