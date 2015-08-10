@@ -133,7 +133,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 layerAnnos = curCanvas.layerAnnos.find (m) ->
                   return m.get("sc:motivatedBy")["@id"] == "sga:reading"
 
-                $.get layerAnnos.get("resource"), ( data ) ->    
+                # Make full URL to XML relative
+                html_url = layerAnnos.get("resource")
+                html_url = html_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
+
+                $.get html_url, ( data ) ->    
                   d = $.parseHTML data
                   for e in d
                     if $(e).is('div')
