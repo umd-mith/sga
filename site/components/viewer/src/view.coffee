@@ -591,6 +591,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       @lastRendering = null
 
+      # Caret insertions determine the position of the following insertion.
+      # So we need a flag to know when they're rendered.
+      @caret = null
+
       @variables.on 'change:width', (w) =>
         @$el.attr('width', w/10)
 
@@ -631,6 +635,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               # Although sublinear insertions may influence the position of superlinear insertions,
               # the opposite should not be true.
               middle = myOffset.left + annoEl.outerWidth(false)/2
+          else if @caret
+            middle = @caret.offset().left - annoEl.outerWidth(false)/2
           else if @lastRendering.hasClass 'sgaDeletionAnnotation'
             # If the previous is a deletion, stick it in the middle!
             middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false)/2)
@@ -704,6 +710,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           Backbone.on 'viewer:resize', (options) =>
             setScale options.scale
 
+        # reset caret
+        if @caret?
+          @caret = null
+
       # Instantiate different views depending on the type of annotation.
       type = model.get "type"
       _getTextWidth = (container) ->
@@ -740,7 +750,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             annoEl.data "line", @currentLine
             additionLine.append(annoEl).insertBefore(@currentLineEl)
             
-            # If the annotation is just empty space, skip
             if annoEl.get(0)?
               setPosition(textAnnoView, annoEl) 
               @lastRendering = annoEl
@@ -766,6 +775,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             if annoEl.get(0)?
               setPosition(textAnnoView, annoEl) 
               @lastRendering = annoEl
+
+            # Flag caret
+            if textAnnoView.model.attributes.text.replace(/\s+/g, "") == "^"
+              @caret = annoEl
 
           else
             textAnnoView = new TextAnnoView 
