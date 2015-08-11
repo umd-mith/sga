@@ -35,10 +35,9 @@
     <milestone unit="tei:speaker" spanTo="#e2-0034.03"/>
     <line rend="center">Ione</line>
     <anchor xml:id="e2-0034.03"/>
-    <line>Thier beauty gives me <mod>
-        <del rend="strikethrough">words</del>
-        <add place="superlinear">voice</add>
-      </mod>. See how they float</line>
+    <line>Thier beauty gives me <mod xml:space="preserve">
+      <del rend="strikethrough">words</del><add place="superlinear">voice</add></mod>.
+      See how they float</line>
     <line>On their sustaining wings of skiey grain</line>
     <line>Orange &amp; azure, deepening into gold</line>
     <line>Thier <mod>

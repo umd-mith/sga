@@ -6,15 +6,13 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0063.jp2"/>
   <zone type="library"><line>31</line></zone>
   <zone rotate="180" type="main">
-    <space dim="vertical" unit="lines" extent="18" />
     <line rend="left"><unclear reason="illegible">A</unclear></line>
     <line>All the wide world beside us</line>
     <line>Are like multitudinous</line>
     <line>Shadows passing from a scene—</line>
     <line rend="indent1">What but mockery can they mean</line>
-    <line rend="indent1">Where <del rend="strikethrough"><mod>
-          <del rend="overwritten">t</del>
-          <add place="intralinear">T</add>
-        </mod>hou</del> I am, where Thou has been <unclear reason="illegible">.</unclear></line>
+    <line rend="indent1" xml:space="preserve">Where <del rend="strikethrough"><mod>
+          <del rend="overwritten">t</del><add place="intralinear">T</add></mod>hou</del>
+      I am, where Thou has been <unclear reason="illegible">.</unclear></line>
   </zone>
 </surface>

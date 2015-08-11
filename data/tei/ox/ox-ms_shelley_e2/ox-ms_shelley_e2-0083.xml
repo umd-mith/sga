@@ -12,18 +12,16 @@
     <line rend="indent1">And the moon &amp; stars are not</line>
     <line rend="indent1">And the cavern-crags wear not</line>
     <line rend="indent1"> The radiance of Heaven,</line>
-    <line rend="indent1">Nor the gloom to <mod>
-        <del rend="overwritten">e</del>
-        <add place="intralinear">E</add>
-      </mod>arth given;</line>
-    <line>Where there is <mod>
-        <del rend="overwritten">o</del>
-        <add place="intralinear">O</add>
-      </mod>ne pervading, <mod>
-        <del rend="overwritten">o</del>
-        <add place="intralinear">O</add>
-      </mod>ne alone <unclear reason="illegible">,</unclear></line>
+    <line rend="indent1" xml:space="preserve">Nor the gloom to 
+      <mod><del rend="overwritten">e</del><add place="intralinear">E</add></mod>arth 
+      given;</line>
+    <line xml:space="preserve">Where there is <mod>
+        <del rend="overwritten">o</del><add place="intralinear">O</add></mod>ne 
+      pervading, <mod>
+        <del rend="overwritten">o</del><add place="intralinear">O</add></mod>ne 
+      alone <unclear reason="illegible">,</unclear></line>
     <line rend="indent2">Down, Down!</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent1">In the depth of the Deep</line>
     <line rend="indent2">Down, Down!</line>
     <line rend="indent1">Like veil<mod>
@@ -40,10 +38,7 @@
         <del rend="strikethrough">for</del>
         <add place="superlinear">from</add>
       </mod> thee alone—</line>
-    <line rend="indent2">Down Down<mod>
-        <del rend="overwritten">—</del>
-        <add place="intralinear">!</add>
-      </mod></line>
+    <line rend="indent2">Down Down!</line>
     <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent1">We have bound thee, we guide thee</line>
     <line rend="indent2">Down Down!</line>

@@ -23,7 +23,7 @@
         <add place="intralinear">Scattering</add>
       </mod> the liquid joy of life from his ambrosial tresses:</line>
     <line>His footsteps paved the world with light <mod>
-        <del rend="overwritten">?</del>
+        <del rend="overwritten">!</del>
         <add place="intralinear">—</add>
       </mod> but as I past 'twas <add place="sublinear">fading</add></line>
     <line>And hollow Ruin yawned behind — great Sages bound in madness</line>
@@ -48,7 +48,7 @@
     <milestone unit="tei:l" spanTo="#e2-0036.04"/>
     <line>And wake, and find their shadow Pain—as <mod>
         <del rend="strikethrough">him</del>
-        <add place="intralinear">he</add>
+        <add place="superlinear">he</add>
       </mod> whom now</line>
     <line rend="right">we greet</line>
     <anchor xml:id="e2-0036.04"/>

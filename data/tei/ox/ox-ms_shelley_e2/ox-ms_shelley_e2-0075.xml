@@ -47,10 +47,9 @@
         <add place="superlinear">tide</add>
       </mod> kindles through the woven leaves</line>
     <line>And when these burst, &amp; the thin fiery air</line>
-    <line>The which they breathed within those <mod>
+    <line><add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.06" xml:id="e2-0075.08"
+    />shining <unclear reason="unclear">h</unclear>omes<anchor xml:id="e2-0075.06"/></add>The which they breathed within those <mod>
         <del rend="unmarked">lucid homes</del>
-        <add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.06" xml:id="e2-0075.08"
-          />shining <unclear reason="unclear">h</unclear>omes<anchor xml:id="e2-0075.06"/></add>
         <add place="superlinear"><milestone unit="tei:seg" spanTo="#e2-0075.07" xml:id="e2-0075.09"
           />lucent domes<anchor xml:id="e2-0075.07"/></add>
       </mod>

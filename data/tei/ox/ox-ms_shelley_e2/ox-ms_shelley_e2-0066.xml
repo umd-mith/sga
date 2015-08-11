@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0066.jp2"/>
   <zone type="main">
     <line rend="indent1">As the song floats, thou pursue</line>
-    <line rend="indent1">By the woodland noontide dew</line>
+    <line rend="indent1">By the wood land noontide dew</line>
     <line rend="indent1">By the forests lakes &amp; fountains</line>
     <line rend="indent1">Thro the many-folded mountains</line>
     <line rend="indent1">To the rents &amp; gulphs &amp; chasms</line>
@@ -20,6 +20,7 @@
     <anchor xml:id="e2-0066.01"/>
     <line>Come sweet Panthea—link thine hand in mine</line>
     <line>And follow, ere the voices fade away</line>
+    <space dim="vertical" unit="lines" extent="1"/>
     <milestone unit="tei:stage" spanTo="#e2-0066.02"/>
     <line rend="center">Scene 2.</line>
     <line>A forest <del rend="strikethrough">surrounded by Mountains</del> intermingled</line>

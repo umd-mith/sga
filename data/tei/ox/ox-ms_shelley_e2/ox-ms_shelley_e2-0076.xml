@@ -15,13 +15,14 @@
         <del rend="strikethrough">must</del>
         <add place="superlinear">should be</add>
       </mod></line>
+    <line rend="indent4"><add>Like its creation</add></line>
     <line><mod>
         <del rend="strikethrough"><retrace cause="unclear">Like</retrace> all we love</del>
-        <mod>
+        <!--<mod>-->
           <del rend="strikethrough"><add place="superlinear">As <unclear reason="illegible"
                 >thou</unclear> perchance</add></del>
-          <add place="superlinear">Like its creation</add>
-        </mod>
+          <!--<add place="superlinear">Like its creation</add>-->
+        <!--</mod>-->
       </mod>, weak <mod>
         <del rend="strikethrough">although</del>
         <add place="superlinear">yet</add>
@@ -38,7 +39,7 @@
     <line>With azure waves which burst in silver light</line>
     <line>Some Indian vale...behold it, rolling on</line>
     <line>Under the curdling winds, &amp; islanding</line>
-    <line>The peak whereon we stand—<add>midway, around</add></line>
+    <line>The peak whereon we stand—midway, around</line>
     <line>Encinctured by the dark &amp; blooming forests</line>
     <line>Dim twilight lawns &amp; stream-illumed caves</line>
     <line>And wind-inchanted shapes of wandering mist</line>

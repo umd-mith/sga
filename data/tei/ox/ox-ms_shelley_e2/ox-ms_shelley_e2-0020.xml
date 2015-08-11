@@ -6,7 +6,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_e2-0020.jp2"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0020.01"/>
-    <line rend="center">Fury</line>
+    <line rend="indent3">Fury</line>
     <anchor xml:id="e2-0020.01"/>
     <line>Thou pitiest them? I speak no<del rend="strikethrough">t!</del> more!</line>
     <milestone unit="tei:stage" spanTo="#e2-0020.02"/>
