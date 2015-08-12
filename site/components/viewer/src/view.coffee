@@ -644,9 +644,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           myMiddle = myOffset.left + annoEl.outerWidth(false)/2
           neededSpace = middle - myMiddle
 
-          if textAnnoView.model.attributes.text == 'sightless'
-            console.log @lastRenderingNonEmpty, middle, myMiddle
-
           # now we need to make sure we aren't overlapping with other text - if so, move to the right
           prevSibling = annoEl.prev()
           accOffset = 0
