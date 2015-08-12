@@ -590,10 +590,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @$el.append @currentLineEl
 
       @lastRendering = null
-
-      # Caret insertions determine the position of the following insertion.
-      # So we need a flag to know when they're rendered.
-      @caret = null
+      # Keet track of the last rendering with non-space text
+      @lastRenderingNonEmpty = null
 
       @variables.on 'change:width', (w) =>
         @$el.attr('width', w/10)
@@ -628,25 +626,26 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         annoEl.css
           width: Math.ceil(rendering_width * @variables.get("scale")) + "px"
 
-        if @lastRendering?.get(0)?
+        if @lastRenderingNonEmpty?.get(0)?
 
           myOffset = annoEl.offset()
-          if (@lastRendering.data("place")? and annoEl.data("place")?) and @lastRendering.data("place") == "above" and annoEl.data("place") == "below"
+          if (@lastRenderingNonEmpty.data("place")? and annoEl.data("place")?) and @lastRenderingNonEmpty.data("place") == "above" and annoEl.data("place") == "below"
               # Although sublinear insertions may influence the position of superlinear insertions,
               # the opposite should not be true.
               middle = myOffset.left + annoEl.outerWidth(false)/2
-          else if @caret
-            middle = @caret.offset().left - annoEl.outerWidth(false)/2
-          else if @lastRendering.hasClass 'sgaDeletionAnnotation'
+          else if @lastRenderingNonEmpty.hasClass 'sgaDeletionAnnotation'
             # If the previous is a deletion, stick it in the middle!
-            middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false)/2)
-          else if @lastRendering.data("line")? and @lastRendering.data("line") < @currentLine
+            middle = @lastRenderingNonEmpty.offset().left + (@lastRenderingNonEmpty.outerWidth(false)/2)
+          else if @lastRenderingNonEmpty.data("line")? and @lastRenderingNonEmpty.data("line") < @currentLine
             # If the last rendered item is in the previous line, set middle to offset left
             middle = myOffset.left
           else
-            middle = @lastRendering.offset().left + (@lastRendering.outerWidth(false))
+            middle = @lastRenderingNonEmpty.offset().left + (@lastRenderingNonEmpty.outerWidth(false))
           myMiddle = myOffset.left + annoEl.outerWidth(false)/2
           neededSpace = middle - myMiddle
+
+          if textAnnoView.model.attributes.text == 'sightless'
+            console.log @lastRenderingNonEmpty, middle, myMiddle
 
           # now we need to make sure we aren't overlapping with other text - if so, move to the right
           prevSibling = annoEl.prev()
@@ -710,10 +709,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           Backbone.on 'viewer:resize', (options) =>
             setScale options.scale
 
-        # reset caret
-        if @caret?
-          @caret = null
-
       # Instantiate different views depending on the type of annotation.
       type = model.get "type"
       _getTextWidth = (container) ->
@@ -753,6 +748,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             if annoEl.get(0)?
               setPosition(textAnnoView, annoEl) 
               @lastRendering = annoEl
+              if textAnnoView.model.attributes.text.replace(/\s+/, '') != ''
+                @lastRenderingNonEmpty = annoEl
 
           else if /vertical-align: sub;/.test(model.get("css"))
             additionLine = null
@@ -775,10 +772,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             if annoEl.get(0)?
               setPosition(textAnnoView, annoEl) 
               @lastRendering = annoEl
-
-            # Flag caret
-            if textAnnoView.model.attributes.text.replace(/\s+/g, "") == "^"
-              @caret = annoEl
+              if textAnnoView.model.attributes.text.replace(/\s+/, '') != ''
+                @lastRenderingNonEmpty = annoEl
 
           else
             textAnnoView = new TextAnnoView 
@@ -786,6 +781,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             annoEl = $ textAnnoView.render()?.el
             annoEl.data "line", @currentLine
             @lastRendering = annoEl
+            if textAnnoView.model.attributes.text.replace(/\s+/, '') != ''
+                @lastRenderingNonEmpty = annoEl
             @currentLineEl.append annoEl
 
         when "Text" in type \
@@ -799,6 +796,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           @currentLineEl.append annoEl
           if annoEl.get(0)?
             @lastRendering = annoEl
+            if textAnnoView.model.attributes.text.replace(/\s+/, '') != ''
+                @lastRenderingNonEmpty = annoEl
         when 'EmptyLine' in type
           ext = parseInt(model.get('ext'))
           for br in [1..ext+1]
