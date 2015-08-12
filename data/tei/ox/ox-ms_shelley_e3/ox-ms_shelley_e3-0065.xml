@@ -9,11 +9,11 @@
   <zone type="main" rotate="180">
     <line>take <mod>
         <del rend="strikethrough">Euclid</del>
-        <add place="superlinear">&#198;schylus</add>
+      <add place="superlinear">Æschylus</add>
       </mod>rather than <mod>
-        <del rend="strikethrough">&#198;schylus</del>
-        <del rend="strikethrough"><add place="superlinear">Euclid</add></del>
+        <del rend="strikethrough">Æschylus</del>
         <add place="sublinear">Plato</add>
+        <del rend="strikethrough"><add place="superlinear">Euclid</add></del>        
       </mod>as</line>
     <line>my model <unclear reason="illegible">.—</unclear></line>
     <line rend="indent1">The having spoken of myself with</line>

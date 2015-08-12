@@ -8,9 +8,10 @@
     <zone type="main" rotate="180">
         <line>contemporary. The pretence of doing it</line>
         <line>would be a presumption in <del rend="strikethrough">all</del> any but</line>
-        <line rend="right"><milestone unit="tei:seg" spanTo="#e3-0075.01"
-                corresp="e3-0074.01"/>pride<anchor xml:id="e3-0075.01"/></line>
-        <line>the greatest, the effect even in him</line>
+        <line>the greatest, the effect even in him
+            <add place="superlinear"><milestone unit="tei:seg" spanTo="#e3-0075.01"
+                corresp="e3-0074.01"/>pride<anchor xml:id="e3-0075.01"/></add>
+        </line>
         <line><del rend="strikethrough">could he accomplish s<unclear reason="illegible"
                 >u</unclear>ch</del> would be strained <unclear reason="illegible"
             >,</unclear></line>
