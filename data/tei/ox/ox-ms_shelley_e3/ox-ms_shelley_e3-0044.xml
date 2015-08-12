@@ -7,9 +7,9 @@
   <zone type="main">
     <line xml:id="e3-0044-pu_line_0">Peace Monster—I come now! farewell</line>
     <milestone unit="tei:speaker" spanTo="#e3-0044.01"/>
-    <line xml:id="e3-0044-pu_line_1" rend="center">Apollo</line>
+    <line xml:id="e3-0044-pu_line_1" rend="indent3">Apollo</line>
     <anchor xml:id="e3-0044.01"/>
-    <line xml:id="e3-0044-pu_line_2" rend="indent4">Farewell!— <space dim="horizontal" unit="chars" extent="5"/><add><metamark function="count">135</metamark></add></line>
+    <line xml:id="e3-0044-pu_line_2" rend="indent5">Farewell!— <space dim="horizontal" unit="chars" extent="5"/><add><metamark function="count">135</metamark></add></line>
     <space dim="vertical" unit="lines" extent="1"/>
     <milestone unit="tei:stage" spanTo="#e3-0044.02"/>
     <line xml:id="e3-0044-pu_line_3" rend="indent1">Scene Caucasus, Prometheus, Hercules, Asia</line>

@@ -11,8 +11,8 @@
     <line>The rocks are cloven, &amp; through the purple night</line>
     <line>I see Cars drawn by rainbow-winged steeds</line>
     <line>Which trample the dim winds <unclear reason="illegible">:</unclear> in each there <add place="sublinear">stands</add></line>
-    <line>A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del> flight <unclear
-        reason="illegible">.</unclear></line>
+    <line xml:space="preserve">A wild-eyed charioteer, urging their <del rend="strikethrough">speed</del>
+      flight<unclear reason="illegible">,</unclear></line>
     <line>Some look behind, as fiends pursued them there</line>
     <line>And yet I see no shapes but the keen stars</line>
     <line>Others with burning eyes lean forth, &amp; drink</line>
@@ -20,11 +20,11 @@
     <line>As if the thing they loved fled on before</line>
     <line>And now—even now they clasped it; their bright hair</line>
     <line>Streams <mod>
-        <del rend="strikethrough">on the blast like meteors &amp; they</del>
-        <add place="superlinear">like a comets</add>
-        <del rend="strikethrough"><add place="superlinear">scattered hair <unclear unit="chars"
-              extent="1"/></add></del>
-        <add place="superlinear"> &amp;</add>
+        <add place="superlinear">like a comets
+          <del rend="strikethrough">scattered hair <unclear unit="chars"
+            extent="1"/></del>
+          &amp;</add>
+        <del rend="strikethrough">on the blast like meteors &amp; they</del>        
       </mod> all</line>
     <line>Sweep onward—</line>
     <milestone unit="tei:speaker" spanTo="#e3-0014.03"/>

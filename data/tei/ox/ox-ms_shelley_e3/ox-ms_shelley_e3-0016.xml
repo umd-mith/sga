@@ -16,7 +16,7 @@
     <line>Has set, the Darkness which ascends with me</line>
     <line>Shall wrap in lasting night Heaven's kingless throne</line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.02"/>
-    <line rend="center">Asia</line>
+    <line rend="indent4">Asia</line>
     <anchor xml:id="e3-0016.02"/>
     <line>What meanest thou?</line>
     <milestone unit="tei:speaker" spanTo="#e3-0016.03"/>
@@ -33,7 +33,7 @@
         <del rend="strikethrough">doth</del>
         <add place="superlinear">may</add>
       </mod>the lurid <del rend="strikethrough">smoke</del> dust</line>
-    <line>Of earthquake-ruined cities <mod>
+    <line>Of earthquake ruined cities <mod>
         <del rend="strikethrough">to</del>
         <add place="superlinear">oer</add>
       </mod> the sea—</line>
