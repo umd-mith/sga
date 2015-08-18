@@ -25,9 +25,10 @@
     <line rend="indent1">A sceptre of <mod>
         <del rend="strikethrough"><mod>
             <del rend="overwritten">proud</del>
+             <add place="superlinear">pale</add>
             <add place="intralinear">pale</add>
           </mod></del>
-        <add place="superlinear">pale</add>
+        
       </mod> gold</line>
     <line rend="indent1">To stay steps proud, oer the slow cloud</line>
     <line rend="indent1"><milestone unit="tei:seg" spanTo="#e1-0062.03" xml:id="e1-0062.06"

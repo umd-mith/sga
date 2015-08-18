@@ -8,6 +8,7 @@
     <line>18</line>
   </zone>
   <zone type="main">
+    <space dim="vertical" unit="lines" extent="3" />
     <line rend="center">Prometheus Unbound</line>
     <space dim="vertical" unit="lines" extent="1" />
     <line rend="center">a Lyrical Drama</line>

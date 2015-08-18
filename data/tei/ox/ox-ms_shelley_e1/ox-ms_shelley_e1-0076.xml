@@ -51,16 +51,13 @@
     <milestone unit="tei:speaker" spanTo="#e1-0076.10"/><line rend="center">Mercury</line><anchor
       xml:id="e1-0076.10"/>
     <line rend="indent5">Back to your towers of iron</line>
-    <line>And gnash, beside the streams of fire wail</line>
+    <line>And gnash, beside the streams of fire &amp; wail</line>
     <line>Your foodless teeth!.. Geryon arise &amp; Gorgon</line>
     <line>Chim&#x00e6;ra &amp; thou Spinx subtlest of fiends</line>
     <line>Who ministered to Thebes Heaven's poisoned wine</line>
     <line>Unnatural <mod>
-        <del rend="strikethrough"><mod>
-            <del rend="overwritten">love</del>
-            <add place="intralinear">hate</add>
-          </mod></del>
-        <add place="superlinear">love</add>
-      </mod>&amp; more unnatural hate</line>
+            <del rend="strikethrough">hate</del>
+            <add place="superlinear">love</add>
+          </mod> &amp; more unnatural hate</line>
   </zone>
 </surface>

@@ -36,9 +36,9 @@
     <line rend="center">Demogorgon</line>
     <anchor xml:id="e1-0061.04"/>
     <line>Thou Earth, calm Empire of a happy Soul,</line>
-    <line>Sphere of divinest shapes &amp; harmonies</line>
+    <line rend="indent1">Sphere of divinest shapes &amp; harmonies</line>
     <line>Beautiful orb! gathering as thou dost roll</line>
-    <line>The Love which paves thy path along the skies</line>
+    <line rend="indent1">The Love which paves thy path along the skies</line>
     <milestone unit="tei:speaker" spanTo="#e1-0061.05"/>
     <line rend="center">The Earth</line>
     <anchor xml:id="e1-0061.05"/>
@@ -50,8 +50,8 @@
         <del rend="overwritten">f</del>
         <add place="intralinear">n</add>
       </mod> the nightly earth</line>
-    <line>With wonder, as it gazes upon thee</line>
+    <line rend="indent1">With wonder, as it gazes upon thee</line>
     <line>Whilst each to men &amp; beasts &amp; the swift birth</line>
-    <line>Of birds, is beauty, love, calm, harmony</line>
+    <line rend="indent1">Of birds, is beauty, love, calm, harmony</line>
   </zone>
 </surface>

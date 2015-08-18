@@ -22,7 +22,7 @@
         <add place="intralinear">i</add>
       </mod>ch <mod>
         <del rend="strikethrough">throng</del>
-        <add>feed</add>
+        <add place="superlinear">feed</add>
       </mod> Air<unclear reason="illegible">'</unclear>s solitudes</line>
     <milestone unit="tei:speaker" spanTo="#e1-0069.03"/><line rend="center">a Voice</line><anchor
       xml:id="e1-0069.03"/>

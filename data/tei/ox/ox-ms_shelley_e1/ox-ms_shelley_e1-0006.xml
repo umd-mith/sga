@@ -14,8 +14,8 @@
     <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent2">Haste, oh haste!</line>
     <line rend="indent2">As shades are chased</line>
-    <line>Trembling, b<retrace cause="unclear">y</retrace> Day, from Heaven's blue waste<unclear
-        reason="illegible">.</unclear></line>
+    <line>Trembling, b<retrace cause="unclear">y</retrace> Day, from Heaven's blue waste<!--<unclear
+        reason="illegible">.</unclear>--></line>
     <line rend="indent2">We <mod>
         <del rend="strikethrough">flee</del>
         <add place="superlinear">melt</add>
@@ -32,6 +32,7 @@
     <milestone unit="tei:speaker" spanTo="#e1-0006.02"/>
     <line rend="center">Ione (<del rend="strikethrough"><unclear reason="illegible"
           >awakening</unclear></del>)</line><anchor xml:id="e1-0006.02"/>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent2">What dark forns were they?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.03"/>
     <line rend="center">Panthea</line>

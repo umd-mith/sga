@@ -28,9 +28,9 @@
     <line><del rend="strikethrough">Written <add place="superlinear"><del rend="strikethrough">And
       looks of firm defiance, &amp;</del></add>as on a scroll...yet speak o speak</del>
       </line>
-    <line>And looks of <del rend="strikethrough">des</del> firm defiance, &amp; calm hate</line>
-    <line>And such despair as mocks itself with smiles</line>
-    <line>Written as on a scroll...yet speak–o speak..</line>
+    <line rend="indent1">And looks of <del rend="strikethrough">des</del> firm defiance, &amp; calm hate</line>
+    <line rend="indent1">And such despair as mocks itself with smiles</line>
+    <line rend="indent1">Written as on a scroll...yet speak–o speak..</line>
     <metamark function="separate" rend="line"/>
   </zone>
 </surface>

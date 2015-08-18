@@ -40,7 +40,7 @@
     <line>Heaven, hast thou secrets? Man unveils me, I <add place="sublinear">have none</add></line>
     <space dim="vertical" unit="lines" extent="1" />
     <milestone unit="tei:speaker" spanTo="#e1-0028.05"/>
-    <line rend="center">The Moon</line>
+    <line rend="indent3">The Moon</line>
     <anchor xml:id="e1-0028.05"/>
     <line rend="indent1">The shadow of white Death ha<mod>
         <del rend="overwritten">s</del>

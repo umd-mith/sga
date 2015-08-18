@@ -33,18 +33,16 @@
               reason="illegible">pronounce</unclear></add></del>
       </mod> the</line>
     <line xml:id="e1-0053-ion_line_4"><mod>
-        <del rend="strikethrough"><mod>
-            <del rend="overwritten">which</del>
+        <del rend="strikethrough">
             <add place="intralinear">rectitude</add>
-          </mod> of</del>
-        <del rend="strikethrough">W<unclear unit="chars" extent="3"/></del>
+           of</del>
+        <add place="superlinear"><del rend="strikethrough">W<unclear unit="chars" extent="3"/></del></add>
       </mod> rectitude of the opinion<del rend="strikethrough">s</del></line>
     <line xml:id="e1-0053-ion_line_5">of those who judged rightly, and another</line>
     <!-- "pass" overwrites "fell" from PU in the fascimile, for now just encoding "fell" in another
       line as an addition -->
-    <line xml:id="e1-0053-ion_line_6"><unclear reason="illegible">pass</unclear> upon the erroneousness of those</line>
-    <line xml:id="e1-0053-ion_line_7"><add><milestone unit="tei:seg" spanTo="#e1-0053.07" corresp="#e1-0052.06"/>fell<anchor
-          xml:id="e1-0053.07"/></add></line>
+    <line xml:id="e1-0053-ion_line_6"><add><milestone xml:id="e1-0053-pu_line_00" unit="tei:seg" spanTo="#e1-0053.07" corresp="#e1-0052.06"/>fell <anchor
+      xml:id="e1-0053.07"/></add><unclear reason="illegible">pass</unclear> upon the erroneousness of those</line>
     <line xml:id="e1-0053-ion_line_8">which were incorrect, or would the same</line>
     <line xml:id="e1-0053-ion_line_9">person be competent to decide respecting</line>
     <line xml:id="e1-0053-ion_line_10"><mod>
