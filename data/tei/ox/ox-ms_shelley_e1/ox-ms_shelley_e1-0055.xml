@@ -27,25 +27,23 @@
         <del rend="strikethrough">in your</del>
         <del rend="unmarked"><add place="superlinear">you</add></del>
       </mod>
-      <mod>
+      <mod xml:space="preserve">
         <del rend="strikethrough">are</del>
-        <del rend="unmarked">yo</del>
-        <del rend="strikethrough">u can illustrat<mod>
-            <del rend="overwritten">i</del>
-            <add place="intralinear">e</add>
+        <del rend="unmarked">yo</del><del rend="strikethrough">u 
+          can illustrat<mod><del rend="overwritten">i</del><add place="intralinear">e</add>
           </mod><del rend="smear">on</del></del>
+        <add place="sublinear"> your </add>
         <del rend="strikethrough"><add place="superlinear">can judge &amp; explain</add></del>
       </mod></line>
-    <line xml:id="e1-0055-ion_line_5">Homer<add place="superlinear"> power of explaining</add> &amp; <del rend="strikethrough"
-        >the</del> other poets,<add place="superlinear"> &amp;</add> amongst<add place="superlinear"
-      > your </add> <mod>
+    <line xml:id="e1-0055-ion_line_5"><add place="superlinear"> power of explaining</add> Homer &amp; <del rend="strikethrough"
+        >the</del> other poets,<add place="superlinear"> &amp;</add> amongst <mod>
         <del rend="strikethrough">whom</del>
         <add place="sublinear">them</add>
       </mod></line>
     <line xml:id="e1-0055-ion_line_6">Hesiod &amp; Archilochus is unequal<del rend="strikethrough"><unclear reason="illegible"
           >;</unclear></del></line>
     <line xml:id="e1-0055-ion_line_7">&amp; that you <unclear reason="illegible">can</unclear> illustrate this</line>
-    <line xml:id="e1-0055-ion_line_8">poet <add place="sublinear">?</add>better
+    <line xml:id="e1-0055-ion_line_8">poet <add place="sublinear">?</add> better
       &amp; th<mod>
         <del rend="smear">at</del>
         <add place="superlinear">ose</add>
@@ -82,7 +80,7 @@
         <del rend="strikethrough"><unclear reason="illegible">in</unclear> the composition <unclear
             reason="illegible">of</unclear>
           <unclear reason="illegible">their</unclear></del>
-        <add place="sublinear">inasmuch as it is inferior.—</add>
+        <add place="sublinear"> inasmuch as it is inferior.—</add>
       </mod>
       <anchor xml:id="e1-0055.98"/>
     </line>
@@ -94,7 +92,7 @@
     <line xml:id="e1-0055-pu_line_3">Within voluptuous chambers panting crawled;</line>
     <line xml:id="e1-0055-pu_line_4"><mod>
         <del rend="strikethrough">For</del>
-        <add place="sublinear">When</add>
+        <add place="sublinear">When </add>
       </mod>
       <mod>
         <del rend="overwritten">p</del>

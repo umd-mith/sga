@@ -15,7 +15,7 @@
       by one</line>
     <line>Like <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
-        <add place="superlinear">animal life</add>
+        <add place="superlinear">animal life </add>
       </mod>
       <retrace cause="unclear">a</retrace>nd though we can obscure not</line>
     <line>The soul which burns within that we will dwell</line>
@@ -33,7 +33,7 @@
         <del rend="overwritten">out</del>
         <add place="intralinear">in</add>
       </mod>
-      <mod><del rend="strikethrough">your</del><add place="superlinear">thy</add></mod> labyrithine veins</line>
+      <mod><del rend="strikethrough">your</del><add place="superlinear"> thy</add></mod> labyrithine veins</line>
     <line>Crawling like agony</line>
     <line rend="right"><add><metamark function="displacement">X</metamark></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0094.02"/>

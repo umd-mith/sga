@@ -30,8 +30,8 @@
         place="superlinear"><milestone unit="tei:stage" spanTo="#e1-0006.01"/><hi rend="underline"
           >they vanish</hi><anchor xml:id="e1-0006.01"/></add></line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.02"/>
-    <line rend="center">Ione (<del rend="strikethrough"><unclear reason="illegible"
-          >awakening</unclear></del>)</line><anchor xml:id="e1-0006.02"/>
+    <line rend="center">Ione <del rend="unmarked">(</del><del rend="strikethrough"><unclear reason="illegible"
+      >awakening</unclear></del><del rend="unmarked">)</del></line><anchor xml:id="e1-0006.02"/>
     <space dim="vertical" unit="lines" extent="1"/>
     <line rend="indent2">What dark forns were they?</line>
     <milestone unit="tei:speaker" spanTo="#e1-0006.03"/>

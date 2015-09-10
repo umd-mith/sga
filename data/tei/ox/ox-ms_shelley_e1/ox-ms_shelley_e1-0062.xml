@@ -38,7 +38,7 @@
         mode="excl" weights="1 0"/></line>
     <line rend="indent1">Cruel <milestone unit="tei:seg" spanTo="#e1-0062.07" xml:id="e1-0062.10"
         /><add place="superlinear">it</add><anchor xml:id="e1-0062.07"/><milestone unit="tei:seg"
-        spanTo="#e1-0062.08" xml:id="e1-0062.09"/>he<anchor xml:id="e1-0062.08"/> looks but calm
+        spanTo="#e1-0062.08" xml:id="e1-0062.09"/><del rend="unmarked">he</del><anchor xml:id="e1-0062.08"/> looks but calm
       &amp; strong<alt target="#e1-0062.09 #e1-0062.10" mode="excl" weights="1 0"/></line>
     <line rend="indent1">Like one who does, not suffers wrong</line>
     <milestone unit="tei:speaker" spanTo="#e1-0062.02"/>
