@@ -16,16 +16,16 @@
         <del rend="strikethrough"><add place="superlinear">Wounds</add></del>
       </mod>
       <mod>
-        <del rend="strikethrough">for mankind</del>
+        <del rend="strikethrough">for mankind,</del>
         <add place="superlinear">Deep wrongs for man,</add>
-      </mod> , &amp; scorn <mod>
+      </mod> &amp; scorn <del rend="unmarked"><mod>
         <del rend="overwritten">;</del>
         <add place="intralinear">:</add>
-      </mod>
+      </mod></del>
       <mod>
         <del rend="strikethrough">&amp;</del>
         <del rend="strikethrough"><add place="superlinear">Wounds</add></del>
-      </mod> and chains <del rend="strikethrough"><add place="superlinear">&amp;
+      </mod> and chains<del rend="strikethrough"><add place="superlinear"> &amp;
             de<unclear>s</unclear></add></del>, but heap</line>
     <line><del rend="strikethrough">Heap</del> Thousand-fold torment on themselves &amp; him.</line>
     <milestone unit="tei:stage" spanTo="#e2-0017.02"/>

@@ -7,8 +7,8 @@
   <zone type="main">
     <line>Quite unsuppressed is tearing up the heart</line>
     <line>Of the good Titan—as storms tear the <mod>
-        <restore type="underline"><del rend="strikethrough"><hi rend="underline"
-          >deep</hi></del></restore>
+        <restore type="underline"><del rend="strikethrough"><restore><hi rend="underline"
+          >deep</hi></restore></del></restore>
         <mod>
           <del rend="smear"><add place="superlinear">sea</add></del>
         </mod>
