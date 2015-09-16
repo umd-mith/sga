@@ -26,8 +26,8 @@
         <add place="superlinear">one</add>
       </mod> person <mod>
         <mod>
-          <restore type="underline"><hi rend="underline"><del rend="strikethrough"
-            >know</del></hi></restore>
+          <hi rend="underline"><del rend="strikethrough"
+            ><restore>know</restore></del></hi>
         </mod>
         <del rend="strikethrough"><add place="superlinear">be competent to <unclear
               reason="illegible">pronounce</unclear></add></del>

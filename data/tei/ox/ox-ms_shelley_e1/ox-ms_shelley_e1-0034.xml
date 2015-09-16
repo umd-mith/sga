@@ -39,9 +39,10 @@
         spanTo="#e1-0034.08"/>Ion.<anchor xml:id="e1-0034.08"/> I carried the first prize</line>
     <line>o Socrates. <milestone unit="tei:speaker" spanTo="#e1-0034.09"/>Socrates.<anchor
         xml:id="e1-0034.09"/> Well done, <mod>
+          <add place="superlinear"
+            >you have only to consider </add>
         <del rend="strikethrough"><unclear reason="illegible">how</unclear></del>
-        <add place="intralinear"><unclear reason="illegible">how</unclear><add place="superlinear"
-            >you have only to consider</add></add>
+        <add place="intralinear"><unclear reason="illegible">how</unclear></add>
       </mod> you <mod>
         <del rend="strikethrough">will</del>
         <add place="sublinear"><unclear reason="illegible">shall</unclear></add>
