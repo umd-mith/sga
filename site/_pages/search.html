@@ -2,175 +2,137 @@
 permalink: "/search/"
 layout: component
 ---
-
 <div id="content">
-  <div class="container_12">
-    <!--#content-inside-->
-    <div id="content_inside" class="clearfix">
-      <div class="grid_12">
-        <div class="breadcrumb-wrapper"> </div>
-      </div>
-    </div>
-    <!--EOF:#content-inside-->
-  </div>
-  <!-- EOF:.container_12 -->
-  <div id="content-main" class="container_12 clearfix">
-    <div class="grid_12 grid_main">    
-      <!--#main-content-->
-      <div id="main-content">
-        <h1 class="title" id="page-title">Search</h1>
-        <div class="tabs"></div>
-        <div class="region region-content">
-          <div id="block-system-main" class="block block-system">
-            <div class="content">
-              <div id="node-8" class="node node-search">
-                <div class="content">
-                  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                    <div class="field-items">
-                      <div class="field-item even" property="content:encoded">
-                        <div class="row">
-                          <div class="col-xs-5" id="search-bar">
-                            <div class="input-group">
-                              <form><input type="text" class="form-control input-medium" placeholder="Search"></form>
-                              <span class="input-group-btn"><a class="btn btn-medium" title="Search"><i class="fa fa-search fa fa-flip-horizontal"></i></a> </span>
-                            </div>
-                          </div>
-                          <div class="col-xs-7" id="search-instructions">
-                            <h4>How To Search</h4>
-                            <p>Write a query in the search field. All words must appear on a page to be returned. Use <em>OR</em> (capitalized) between words to look for any of the words. Enclose a phrase within quotation marks to search for words occurring together.</p>
-                          </div>
-                        </div>
-                        <div id="all-results" style="display: none;">
-                          <div class="row r-header">
-                            <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
-                            <div class="col-xs-3 clearfix" id="results-refine-header">
-                              <div class="results-refine-header">Refine Results</div>
-                            </div>
-                            <!--/col-->
-                            <div class="col-xs-9 clearfix" id="results-info-sort">
-                              <div class="results-info-sort">
-                                <form class="form-inline">
-                                  <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
-                                  <div class="r-sorting pull-left">
-                                    <div class="form-group">
-                                      <label for="r-sorting" class="control-label">Sort:</label>
-                                      <div class="input-group">
-                                        <select class="form-control" name="r-sortby" size="1">
-                                          <option value="score" selected="selected">Relevance</option>
-                                          <option value="shelfmark">Alphabetical</option>
-                                          <!-- <option value="date">Date</option> -->
-                                        </select>
-                                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> 
-                                      </div>
-                                      <div class="input-group">
-                                        <select class="form-control" name="r-sort" size="1">
-                                          <option value="asc" selected="">Ascending</option>
-                                          <option value="desc">Decending</option>
-                                        </select>
-                                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> 
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="r-nav pull-right">
-                                    <ul class="pagination pagination-sm">
-                                    </ul>
-                                  </div>
-                                </form>
-                              </div>
-                              <!--/results-info-sort--> 
-                            </div>
-                            <!--/col--> 
-                          </div>
-                          <!--/r-header-->
-                          <div class="row">
-                            <div class="col-xs-3 refine-results" id="refine-results">
-                              <div class="panel" id="r-list-work">
-                                <div class="panel-heading">Work</div>
-                                <div class="list-group"> </div>
-                              </div>
-                              <!--/panel -->
-                              <div class="panel" id="r-list-notebook">
-                                <div class="panel-heading">Manuscript</div>
-                                <div class="list-group"> </div>
-                              </div>
-                              <!--/panel -->
-                              <div class="panel" id="r-list-hand">
-                                <div class="panel-heading">Hand</div>
-                                <div class="list-group"></div>
-                              </div>
-                              <!--/panel -->
-                              <div class="panel" id="r-list-rev">
-                                <div class="panel-heading">Revisions</div>
-                                <div class="list-group"></div>
-                              </div>
-                              <!--/panel --> 
-                              <div class="panel" id="r-list-sketches">
-                                <div class="panel-heading">Sketches</div>
-                                <div class="list-group"> </div>
-                              </div>
-                              <!--/panel -->
-                            </div>
-
-                            <div class="col-xs-9" id="usr-msg"> <span class="alert alert-info"></span> </div>
-
-                            <div class="col-xs-9 results-grid" id="results-grid">
-                              <div class="panel">
-                              <ul class="media-list list-group"> </ul>
-                              </div>
-                              <!-- /panel -->
-                            </div>
-                          </div>
-                          <div class="row r-footer">
-                            <div class="col-xs-9 col-xs-offset-3" id="results-info-sort">
-                              <div class="results-info-sort">
-                                <form class="form-inline">
-                                  <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
-                                  <div class="r-sorting pull-left">
-                                    <div class="form-group">
-                                      <label for="r-sorting" class="control-label">Sort:</label>
-                                      <div class="input-group">
-                                        <select class="form-control" name="r-sortby" size="1">
-                                          <option value="rele" selected="selected">Relevance</option>
-                                          <option value="freq">Frequency</option>
-                                          <option value="date">Date</option>
-                                        </select>
-                                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
-                                      <div class="input-group">
-                                        <select class="form-control" name="r-sort" size="1">
-                                          <option value="asc">Ascending</option>
-                                          <option value="dec">Decending</option>
-                                        </select>
-                                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
-                                    </div>
-                                  </div>
-                                  <div class="r-nav pull-right">
-                                    <ul class="pagination pagination-sm">
-                                      
-                                    </ul>
-                                  </div>
-                                </form>
-                              </div> 
-                            </div>
-                            <!--/results-info-sort--> 
-                          </div>
-                          <!--/r-footer-->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div id="content-main" class="container clearfix">
+    <div id="main-content" class="row">
+      <h1 class="title col-sm-12" id="page-title">Search</h1>
+      <div class="content">
+        <div class="node node-search">
+          <div class="col-sm-5" id="search-bar">
+            <div class="input-group">
+              <form>
+                <input type="text" class="form-control input-medium" placeholder="Search">
+              </form>
+              <span class="input-group-btn"><a class="btn btn-medium" title="Search"><i class="fa fa-search fa fa-flip-horizontal"></i></a> </span> </div>
+          </div>
+          <div class="col-sm-7" id="search-instructions">
+            <h4>How To Search</h4>
+            <p>Write a query in the search field. All words must appear on a page to be returned. Use <em>OR</em> (capitalized) between words to look for any of the words. Enclose a phrase within quotation marks to search for words occurring together.</p>
           </div>
         </div>
+        <div id="all-results" style="display: none;">
+          <div class="r-header">
+            <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
+            <div class="col-xs-3 clearfix" id="results-refine-header">
+              <div class="results-refine-header">Refine Results</div>
+            </div>
+            <!--/col-->
+            <div class="col-xs-9 clearfix" id="results-info-sort">
+              <div class="results-info-sort">
+                <form class="form-inline">
+                  <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
+                  <div class="r-sorting pull-left">
+                    <div class="form-group">
+                      <label for="r-sorting" class="control-label">Sort:</label>
+                      <div class="input-group">
+                        <select class="form-control" name="r-sortby" size="1">
+                          <option value="score" selected="selected">Relevance</option>
+                          <option value="shelfmark">Alphabetical</option>
+                          <!-- <option value="date">Date</option> -->
+                        </select>
+                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                      <div class="input-group">
+                        <select class="form-control" name="r-sort" size="1">
+                          <option value="asc" selected="">Ascending</option>
+                          <option value="desc">Decending</option>
+                        </select>
+                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                    </div>
+                  </div>
+                  <div class="r-nav pull-right">
+                    <ul class="pagination pagination-sm">
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <!--/results-info-sort--> 
+            </div>
+            <!--/col--> 
+          </div>
+          <!--/r-header-->
+          <div class="col-xs-3 refine-results" id="refine-results">
+            <div class="panel" id="r-list-work">
+              <div class="panel-heading">Work</div>
+              <div class="list-group"> </div>
+            </div>
+            <!--/panel -->
+            <div class="panel" id="r-list-notebook">
+              <div class="panel-heading">Manuscript</div>
+              <div class="list-group"> </div>
+            </div>
+            <!--/panel -->
+            <div class="panel" id="r-list-hand">
+              <div class="panel-heading">Hand</div>
+              <div class="list-group"></div>
+            </div>
+            <!--/panel -->
+            <div class="panel" id="r-list-rev">
+              <div class="panel-heading">Revisions</div>
+              <div class="list-group"></div>
+            </div>
+            <!--/panel -->
+            <div class="panel" id="r-list-sketches">
+              <div class="panel-heading">Sketches</div>
+              <div class="list-group"> </div>
+            </div>
+            <!--/panel --> 
+          </div>
+          <div class="col-xs-9" id="usr-msg"> <span class="alert alert-info"></span> </div>
+          <div class="col-xs-9 results-grid" id="results-grid">
+            <div class="panel">
+              <ul class="media-list list-group">
+              </ul>
+            </div>
+            <!-- /panel --> 
+          </div>
+          <div class="row r-footer">
+            <div class="col-xs-9 col-xs-offset-3" id="results-info-sort">
+              <div class="results-info-sort">
+                <form class="form-inline">
+                  <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
+                  <div class="r-sorting pull-left">
+                    <div class="form-group">
+                      <label for="r-sorting" class="control-label">Sort:</label>
+                      <div class="input-group">
+                        <select class="form-control" name="r-sortby" size="1">
+                          <option value="rele" selected="selected">Relevance</option>
+                          <option value="freq">Frequency</option>
+                          <option value="date">Date</option>
+                        </select>
+                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                      <div class="input-group">
+                        <select class="form-control" name="r-sort" size="1">
+                          <option value="asc">Ascending</option>
+                          <option value="dec">Decending</option>
+                        </select>
+                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                    </div>
+                  </div>
+                  <div class="r-nav pull-right">
+                    <ul class="pagination pagination-sm">
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!--/results-info-sort--> 
+          </div>
+          <!--/r-footer--> 
+        </div>
       </div>
-    <!--EOF:#main-content-->
     </div>
-  <!--EOF#grid_*-->
   </div>
-<!-- EOF:.container_12 -->           
 </div>
-
 <script type="text/template" id="pagi-template">
   <li>
     <a href="#" class="nav-first <%= first %>"><i class="fa fa-red fa fa-step-backward"></i></a>
@@ -212,16 +174,14 @@ layout: component
   <li>
     <a href="#" class="nav-last <%= last %>"><i class="fa fa-red fa fa-step-forward"></i></a>
   </li>
-</script>
-
+</script> 
 <script type="text/template" id="facet-template">
   <a href="#" class="list-group-item">
     <span class="label label-danger"><i class="fa fa-remove"></i></span>
     <span class="badge"><%= num %></span>
     <%= name %>
   </a>
-</script>
-
+</script> 
 <script type="text/template" id="result-template">
   <li class="media list-group-item"> 
     <span class="label label-info"><%= num %></span> 
@@ -244,9 +204,8 @@ layout: component
       </div>
     </div>
   </li>
-</script>
-
-<script type="text/javascript" src="/js/SGAsearch.js"></script>
+</script> 
+<script type="text/javascript" src="/js/SGAsearch.js"></script> 
 <script type="text/javascript">
   (function ($, Backbone) { 
 
