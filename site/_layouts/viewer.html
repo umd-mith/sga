@@ -18,46 +18,47 @@ extra_css:
           <div class="container">
             <div class="row">
               <div class="detail-view-tools col-sm-12" id="SGASharedCanvasViewer" data-manifest="{{page.manifest}}">
-                <form name="sgaDetails" id="sgaForm" class="well form-inline">
+                <form name="sgaDetails" id="sgaForm" class="form-inline">
                   <fieldset class="meta-data-view">
                     <div class="noborder control-group row"> <span id="SGAManifestMeta"> </span> <span id="SGACanvasMeta"> </span> </div>
                   </fieldset>
                   <fieldset class="detail-view-controls row">
-                    <div class="accordion col-xs-12 " id="accordion-parent">
-                      <div class="accordion-group">
-                        <div class="well">
+                    <div class="col-xs-12">
+                        <div class="well well-sm clearfix">
                           <div class="btn-toolbar pull-left" id="view-controls">
                             <div class="btn-group" id="img-controls">
-                            <a class="btn btn-sm" title="Reset Zoom" id="zoom-reset"><i class="fa fa-red fa-search fa-flip-horizontal"></i></a>
-                            <a class="btn btn-sm" title="Zoom In" id="zoom-in"><i class="fa fa-red fa-search-plus fa-flip-horizontal"></i></a>
-                            <a class="btn btn-sm" title="Zoom Out" id="zoom-out"><i class="fa fa-red fa-search-minus fa-flip-horizontal"></i></a>
-                            <a class="btn btn-sm" title="Rotate Left" id="rotate-l"><i class="fa fa-red fa-rotate-left"></i></a>
-                            <a class="btn btn-sm" title="Rotate Right" id="rotate-r"><i class="fa fa-red fa-rotate-right"></i></a>
+                            <a class="btn btn-sm" title="Reset Zoom" id="zoom-reset"><i class="fa fa-search fa-flip-horizontal"></i></a>
+                            <a class="btn btn-sm" title="Zoom In" id="zoom-in"><i class="fa fa-search-plus fa-flip-horizontal"></i></a>
+                            <a class="btn btn-sm" title="Zoom Out" id="zoom-out"><i class="fa fa-search-minus fa-flip-horizontal"></i></a>
+                            <a class="btn btn-sm" title="Rotate Left" id="rotate-l"><i class="fa fa-rotate-left"></i></a>
+                            <a class="btn btn-sm" title="Rotate Right" id="rotate-r"><i class="fa fa-rotate-right"></i></a>
                             </div>
                             <div class="btn-group" id="mode-controls" data-toggle="buttons"> <a class="btn btn-sm" title="View Image Only" id="img-only">
                               <input type="radio" name="options">
-                              <i class="fa fa-red fa-picture-o"></i></a> <a class="btn btn-sm active" title="Standard View" id="mode-std">
+                              <i class="fa fa-picture-o"></i></a> <a class="btn btn-sm active" title="Standard View" id="mode-std">
                               <input type="radio" name="options">
-                              <i class="fa fa-red fa-pause"></i></a> <a class="btn btn-sm" title="View Reading Text" id="mode-rdg">
+                              <i class="fa fa-pause"></i></a> <a class="btn btn-sm" title="View Reading Text" id="mode-rdg">
                               <input type="radio" name="options">
-                              <i class="fa fa-red fa-align-left"></i></a> <a class="btn btn-sm" title="View TEI" id="mode-xml">
+                              <i class="fa fa-align-left"></i></a> <a class="btn btn-sm" title="View TEI" id="mode-xml">
                               <input type="radio" name="options">
-                              <i class="fa fa-red fa-code"></i></a> </div>
+                              <i class="fa fa-code"></i></a>
+                            </div>
                           </div>
                           <!-- /view-controls -->
                           
                           <div class="pull-left" id="search-form-block">
-                            <div class="accordion-heading">
                               <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Search" id="searchbox" />
-                                <div class="input-group-btn"> <a type="button" class="btn btn-sm btn-default" tabindex="-1" id="searchbtn"><i class="fa fa-search fa-flip-horizontal"></i></a> <a type="button" class="btn btn-sm btn-default dropdown-toggle accordion-toggle collapsed" data-toggle="collapse" tabindex="-1" data-parent="accordion-parent" title="Show Search Filter" href="#collapse-one"><i class="fa fa-chevron-up"></i></a> </div>
+                                <div class="input-group-btn">
+                                    <a type="button" class="btn btn-sm btn-default" tabindex="-1" id="searchbtn"><i class="fa fa-search"></i></a>
+                                    <a role="button" data-toggle="collapse" href="#collapseBar" aria-expanded="false" aria-controls="collapseBar" class="btn btn-sm btn-default" tabindex="-1" data-parent="accordion-parent" title="Show Search Filter"><i class="fa fa-chevron-down"></i></a>
+                                </div>
                               </div>
-                            </div>
                           </div>
                           <!-- /search-form-block -->
                           
                           <div class="btn-toolbar pull-right" id="sequence-nav">
-                            <div class="btn-group" id="pager-controls"><a class="btn btn-sm" id="first-page"><i class="fa fa-red fa-step-backward"></i></a><a class="btn btn-sm" id="prev-page"><i class="fa fa-red fa-chevron-left" ></i></a><a class="btn btn-sm" id="next-page"><i class="fa fa-red fa-chevron-right"></i></a><a class="btn btn-sm" id="last-page"><i class="fa fa-red fa-step-forward"></i></a></div>
+                            <div class="btn-group" id="pager-controls"><a class="btn btn-sm" id="first-page"><i class="fa fa-step-backward"></i></a><a class="btn btn-sm" id="prev-page"><i class="fa fa-chevron-left" ></i></a><a class="btn btn-sm" id="next-page"><i class="fa fa-chevron-right"></i></a><a class="btn btn-sm" id="last-page"><i class="fa fa-step-forward"></i></a></div>
                           </div>
                           <!-- /sequence-nav --> 
                           
@@ -89,38 +90,35 @@ extra_css:
                           <!--/hand-view-controls--> 
                           {% endif %} </div>
                         <!-- /well -->
-                        <div id="collapse-one" class="accordion-body collapse meta-data-filter">
-                          <div class="accordion-inner well well-sm">
+                        <div id="collapseBar" class="collapse meta-data-filter">
+                          <div class="well well-sm clearfix">
                             <div class="controls meta-data-group" id="limit-search">
                               <h3>Limit Search <span>Only Show Terms Found In:</span></h3>
-                              <div class="control-group">
-                                <label class="control-label">Text Type(s) <span>|</span></label>
-                                <label class="checkbox inline meta-data-item">
-                                  <input type="checkbox" id="inlineCheckbox1" value="added">
-                                  added passages</label>
-                                <label class="checkbox inline meta-data-item">
-                                  <input type="checkbox" id="inlineCheckbox2" value="deleted">
-                                  deleted passages</label>
-                              </div>
-                              {% if page.limit_view == "hands" %}
-                              <div class="control-group">
-                                <label class="control-label">Hand(s) <span>|</span></label>
-                                <label class="checkbox inline meta-data-item">
-                                  <input type="checkbox" id="inlineCheckbox1" value="hand_msw">
-                                  Mary Shelley</label>
-                                <label class="checkbox inline meta-data-item">
-                                  <input type="checkbox" id="inlineCheckbox2" value="hand_pbs">
-                                  Percy Bysshe Shelley</label>
-                                {% endif %} </div>
-                            </div>
+                              <div class="row">
+                                  <div class="control-group col-md-5 col-sm-6">
+                                    <label class="control-label">Text Type(s) <span>|</span></label>
+                                    <label class="checkbox checkbox-inline meta-data-item">
+                                      <input type="checkbox" id="inlineCheckbox1" value="added">added passages</label>
+                                    <label class="checkbox checkbox-inline meta-data-item">
+                                      <input type="checkbox" id="inlineCheckbox2" value="deleted">deleted passages</label>
+                                  </div>
+                                  {% if page.limit_view == "hands" %}
+                                  <div class="control-group col-md-5 col-sm-6">
+                                    <label class="control-label">Hand(s) <span>|</span></label>
+                                    <label class="checkbox checkbox-inline meta-data-item">
+                                      <input type="checkbox" id="inlineCheckbox1" value="hand_msw">
+                                      Mary Shelley</label>
+                                    <label class="checkbox checkbox-inline meta-data-item">
+                                      <input type="checkbox" id="inlineCheckbox2" value="hand_pbs">
+                                      Percy Bysshe Shelley</label>
+                                    {% endif %} </div>
+                            	</div>
+                                </div>
                           </div>
-                          <!-- /well /accordion-inner --> 
+                          <!-- /well--> 
                         </div>
-                        <!-- accordion-body --> 
-                      </div>
-                      <!-- /accordion-group--> 
+                        <!-- /collapseBar --> 
                     </div>
-                    <!-- /accordion -->
                   </fieldset>
                   <!-- /detail-view-controls control-group -->
                 </form>
@@ -170,7 +168,7 @@ extra_css:
     </div>
   </script> 
 <script type="text/template" id="manifestMeta-tpl">
-    <ul class="meta-data-group controls col-lg-3">
+    <ul class="meta-data-group controls col-md-3 col-sm-6">
       <li class="meta-data-item">
         <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span><%=scagentLabel%></span></li>      
       <li class="meta-data-item">
@@ -178,7 +176,7 @@ extra_css:
       <li class="meta-data-item">
         <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>   
     </ul>
-    <ul class="meta-data-group controls col-lg-3">
+    <ul class="meta-data-group controls col-md-3 col-sm-6">
       <li class="meta-data-item">
         <label class="meta-label" id="meta-workNotebook">View&nbsp;</label><span><%=label%></span></li>
       <li class="meta-data-item">
@@ -188,7 +186,7 @@ extra_css:
     </ul>
   </script> 
 <script type="text/template" id="canvasMeta-tpl">
-    <ul class="meta-data-group controls col-lg-3">
+    <ul class="meta-data-group controls col-md-3 col-sm-6">
       <li class="meta-data-item">
         <label class="meta-label" id="meta-workHands">Hand(s)&nbsp;</label><span><%=sgahandLabel%></span>
       </li>
@@ -199,7 +197,7 @@ extra_css:
         <label class="meta-label" id="meta-workFolio">Folio&nbsp;</label><span><%=label%></span>
       </li>
     </ul>
-    <div class="meta-data-group col-lg-3 controls" id="status-block">
+    <div class="meta-data-group col-md-3 col-sm-6 controls" id="status-block">
       <div class="well well-sm">
         <div class="meta-data-item circle-yes" id="status-transcription">
           <label class="meta-label">Transcription Status</label>
