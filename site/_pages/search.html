@@ -118,10 +118,10 @@ layout: component
                         <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
                     </div>
                   </div>
-                  <div class="r-nav pull-right">
+                  <nav class="r-nav pull-right">
                     <ul class="pagination pagination-sm">
                     </ul>
-                  </div>
+                  </nav>
                 </form>
               </div>
             </div>
@@ -135,10 +135,10 @@ layout: component
 </div>
 <script type="text/template" id="pagi-template">
   <li>
-    <a href="#" class="nav-first <%= first %>"><i class="fa fa-red fa fa-step-backward"></i></a>
+    <a href="#" aria-label="First" class="nav-first <%= first %>"><i class="fa fa-red fa-step-backward"></i></a>
   </li>
   <li>
-    <a href="#" class="nav-prev <%= prev %>"><i class="fa fa-red fa fa-chevron-left"></i></a>
+    <a href="#" aria-label="Previous" class="nav-prev <%= prev %>"><i class="fa fa-red fa-chevron-left"></i></a>
   </li>
   <% 
     var start = 1;
@@ -169,10 +169,10 @@ layout: component
     }
   %>
   <li>
-    <a href="#" class="nav-next <%= next %>"><i class="fa fa-red fa fa-chevron-right"></i></a>
+    <a href="#" aria-label="Next" class="nav-next <%= next %>"><i class="fa fa-red fa-chevron-right"></i></a>
   </li>
   <li>
-    <a href="#" class="nav-last <%= last %>"><i class="fa fa-red fa fa-step-forward"></i></a>
+    <a href="#" aria-label="Last" class="nav-last <%= last %>"><i class="fa fa-red fa-step-forward"></i></a>
   </li>
 </script> 
 <script type="text/template" id="facet-template">
