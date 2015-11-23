@@ -22,12 +22,8 @@
 
 /* 0. Fonts
 _______________________________________________________________________*/
-@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700');
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700');
-@import url('fonts.css'); /* Borgia Pro */
-/* entypo */
-@import url('http://weloveiconfonts.com/api/?family=entypo');
-[class*="entypo-"]:before { font-family: 'entypo', sans-serif; }
+@import url('fonts.css'); 
+
 /* 1. General
 _______________________________________________________________________*/
 body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 18px; background: url("../images/bg-page.png") repeat 0 0; color: #212121; }
@@ -67,8 +63,8 @@ a:hover { color: #642326; text-decoration: none; }
 a:focus { outline: none !important; }
 /* 4. Headings
 _______________________________________________________________________*/
-h1, h2, h3, h4, h5, h6 { color: #a54647; font-family: 'Borgia Pro', Georgia, serif; text-rendering: optimizelegibility; }
-#page-wrapper h1 a, #page-wrapper h2 a, #page-wrapper h3 a, #page-wrapper h4 a, #page-wrapper h5 a, #page-wrapper h6 a { color: #a54647; font-family: 'Borgia Pro', Georgia, serif; font-style: normal; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { color: #a54647; font-family: 'BorgiaPro', Georgia, serif; text-rendering: optimizelegibility; }
+#page-wrapper h1 a, #page-wrapper h2 a, #page-wrapper h3 a, #page-wrapper h4 a, #page-wrapper h5 a, #page-wrapper h6 a { color: #a54647; font-family: 'BorgiaPro', Georgia, serif; font-style: normal; text-decoration: none; }
 h1#page-title { border-bottom: 1px solid #eeeeee; padding-bottom: 20px; }
 /* 5. Lists
 _______________________________________________________________________
@@ -265,11 +261,10 @@ _______________________________________________________________________*/
 /*
 17B. Works / Manuscripts Pages
 _______________________________________________________________________*/
-#ranges_wrapper { border-top: 1px dashed #C7C7C7; margin-top: 30px; }
+#ranges_wrapper { border-top: 1px dashed #C7C7C7; margin-top: 30px; padding-top: 30px; }
 .view { margin-bottom: 15px; -webkit-backface-visibility: hidden; }
-h3.group-title, h3.panel-title { font-size: 24px; margin: 0 0 5px 0; }
-h3.group-title > a, h3.panel-title > a { font-style: italic !important; }
-h4.group-title, h4.panel-title { margin: 0 0 5px 0; }
+h3.group-title { font-size: 24px; line-height:24px; }
+h4.group-title { margin: 0 0 5px 0; }
 .view .img-thumbnail { width: 100%; }
 .view .mask { opacity: 0; background-color: rgba(255,255,255, 0.7); transition: all 0.4s ease-in-out; position: absolute; overflow: hidden; bottom: 0; left: 15px; right: 15px; text-align: center; pointer-events: none; }
 .view h6 { opacity: 0; transition: all 0.2s ease-in-out; text-transform: uppercase; position: relative; font-size: 14px; padding: 0; margin: 5px 0; color: #494949; }
@@ -280,13 +275,14 @@ h4.group-title, h4.panel-title { margin: 0 0 5px 0; }
 .pg-s .yel { color: #FC0; }
 .pg-s .grn { color: #390; }
 .pg-s .fa-circle { width: 1.1428571428571428em; padding: 0 0.2857142857142857em; }
+
 .group-wk, .group-nb, .group-ms { border-width: 0; background: transparent; -webkit-box-shadow: none; box-shadow: none; }
-.group-wk .panel-heading, .group-nb .panel-heading { padding: 10px 0; background-color: transparent; }
-.group-wk .accordion-toggle.collapsed:after, .group-nb .accordion-toggle.collapsed:after { font-family: "Fontawesome"; content: "\f078"; font-style: normal !important; }
-.group-wk .accordion-toggle:after, .group-nb .accordion-toggle:after { font-family: "Fontawesome"; content: "\f077"; padding-left: 10px; font-size: 14px; color: #666; font-weight: normal; font-style: normal !important; }
-.group-nb .accordion-toggle.collapsed:after { font-family: "Fontawesome"; content: "\f078"; }
-.group-nb .accordion-toggle:after { font-family: "Fontawesome"; content: "\f077"; padding-left: 10px; font-size: 14px; color: #666; font-weight: normal; }
-.progress { height: 10px; width: 90px; }
+.group-wk h3.group-title a, .group-ms h3.group-title a { display: block; margin:0; padding:8px 0 8px 12px; background-color: #f3f3f3; border-left: 2px solid #C6C6C6; line-height: 25px;}
+.group-wk h4.group-title a { display:block; border-bottom: 1px dashed #ddd; margin-bottom: 5px; padding-bottom: 3px; }
+.group-wk a[role="button"] i { font-size: 14px; border-left: #A8A8A8 1px dotted; border-radius:0; padding:12px; margin-top:-8px;}
+.group-wk h4.group-title a[role="button"] i { font-size: 12px; line-height: 9px; border-left: 0; }
+.group-wk .group-title a[aria-expanded="true"] i { transform: rotate(180deg); border-left:0; border-right: #a8a8a8 1px dotted; }
+.progress { height: 10px; width: 90px; margin-bottom:0; vertical-align:middle; display: inline-block;}
 /*
 19. About Page
 _______________________________________________________________________*/

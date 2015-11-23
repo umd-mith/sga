@@ -8,30 +8,38 @@ layout: component
       <div class="content"> {{content}} </div>
     </div>
   </div>
-<script type="text/template" id="work-template">
-<div class="group-wk">
-<h3 class="group-title" style="display:none;"><%=title%> (<%=state%>)</h3>
-    <div id="<%=id%>">
-      <div class="panel-body">
-      
-      </div>
+  <script type="text/template" id="work-template">
+  <div class="group-wk">
+    <h3 class="group-title">
+	  <a class="collapse-toggle" role="button" data-toggle="collapse" href="#<%=id%>" aria-expanded="false" aria-controls="accordion">
+	    <%=title%> (<%=state%>)  
+		<div class="progress" style="display:none;">
+        	<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> <span class="sr-only">30% Complete</span> </div>
+        </div>
+		<i class="toggle-btn btn fa fa-chevron-down pull-right"></i></a>
+	</h3>
+    <div class="meta-wk" style="display:none;">
+      <% if (physical !== undefined) { %>
+      <%=shelfmarks.join(", ")%> &nbsp;
+      <%} %>
     </div>
-</div>
-</script> 
+    <div class="collapse" id="<%=id%>">
+      <div class="panel-body">
+	  
+	  </div>
+    </div>
+  </div>
+  </script> 
   <script type="text/template" id="range-template">
   <div class="panel-group" id="<%=id%>-range">
-    <div class="panel panel-default group-nb">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a class="accordion-toggle collapsed" data-toggle="collapse" href="#<%=id%>">
-            <%=label%>
-          </a>
+    <div class="group-nb">
+        <h4 class="group-title">
+          <a class="collapse-toggle" role="button" data-toggle="collapse" href="#<%=id%>" aria-expanded="false" aria-controls="accordion"><%=label%> <i class="toggle-btn btn fa fa-chevron-down pull-right"></i></a>
         </h4>
         <div class="meta-nb">
           <%=meta%>
         </div>
-      </div>
-      <div id="<%=id%>" class="panel-collapse collapse">
+      <div class="collapse" id="<%=id%>">
         <div class="row">
           
         </div>
@@ -58,13 +66,17 @@ layout: component
 </script> 
   <script>
 (function($){
-$('a.accordion-toggle').click(function(){
+$('a.collapse-toggle').click(function(){
    me = $(this);
    href = me.attr('href');
 
    if (!$(href).hasClass('in')) {
       me.text('Read Less');
    }     else { me.text('Read More'); }
+   
+   if (!$(this).hasClass('collapsed')) {
+	  $(this).find('.toggle-button').addClass('fa-flip-vertical');
+   }
 });
 })(jQuery);
 
