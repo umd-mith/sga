@@ -1,10 +1,17 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700');
+@import url('http://weloveiconfonts.com/api/?family=entypo'); /* Entypo */
+@import url('font-awesome.min.css');
+
+[class*="entypo-"]:before { font-family: 'entypo', sans-serif; }
+
 @font-face { 
 	font-family: 'WebSymbolsRegular';
-	src: url('../fonts/websymbols/websymbols-regular-webfont.eot');
-	src: url('../fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
-	url('../fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
-	url('../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+	src: url('../fonts/websymbols-regular-webfont.eot');
+	src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+	url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+	url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
     }
 .websymbols {
     font-family: 'WebSymbolsRegular';
@@ -30,7 +37,7 @@
  * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
  * distributing this font software.
  *
- * (c) 2010-2012 Fontspring
+ * (c) 2010-2015 Fontspring
  *
  *
  *
@@ -38,53 +45,51 @@
  * The fonts included are copyrighted by the vendor listed below.
  *
  * Vendor:      FontSite Inc.
- * License URL: http://www.fontspring.com/fflicense/fontsite
+ * License URL: http://www.fontspring.com/licenses/fontsite/webfont
  *
  *
  */
-
-@font-face {
-    font-family: 'Borgia Pro';
+ @font-face {
+    font-family: 'BorgiaPro-Regular';
     src: url('../fonts/BorgiaPro-Regular-webfont.eot');
     src: url('../fonts/BorgiaPro-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/BorgiaPro-Regular-webfont.woff') format('woff'),
-	url('../fonts/BorgiaPro-Regular-webfont.ttf') format('truetype'),
-	url('../fonts/BorgiaPro-Regular-webfont.svg#borgia_proregular') format('svg');
+         url('../fonts/BorgiaPro-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/BorgiaPro-Regular-webfont.woff') format('woff'),
+         url('../fonts/BorgiaPro-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/BorgiaPro-Regular-webfont.svg#borgia_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
-    font-family: 'Borgia Pro Italic';
+    font-family: 'BorgiaPro-Italic';
     src: url('../fonts/BorgiaPro-Italic-webfont.eot');
     src: url('../fonts/BorgiaPro-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/BorgiaPro-Italic-webfont.woff') format('woff'),
-	url('../fonts/BorgiaPro-Italic-webfont.ttf') format('truetype'),
-	url('../fonts/BorgiaPro-Italic-webfont.svg#borgia_proitalic') format('svg');
+         url('../fonts/BorgiaPro-Italic-webfont.woff2') format('woff2'),
+         url('../fonts/BorgiaPro-Italic-webfont.woff') format('woff'),
+         url('../fonts/BorgiaPro-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/BorgiaPro-Italic-webfont.svg#borgia_proitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
-    font-family: 'Borgia Pro Bold';
+    font-family: 'BorgiaPro-Bold';
     src: url('../fonts/BorgiaPro-Bold-webfont.eot');
     src: url('../fonts/BorgiaPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/BorgiaPro-Bold-webfont.woff') format('woff'),
-	url('../fonts/BorgiaPro-Bold-webfont.ttf') format('truetype'),
-	url('../fonts/BorgiaPro-Bold-webfont.svg#borgia_probold') format('svg');
+         url('../fonts/BorgiaPro-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/BorgiaPro-Bold-webfont.woff') format('woff'),
+         url('../fonts/BorgiaPro-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/BorgiaPro-Bold-webfont.svg#borgia_probold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
-    font-family: 'Borgia Pro Bold Italic';
+    font-family: 'BorgiaPro-BoldItalic';
     src: url('../fonts/BorgiaPro-BoldItalic-webfont.eot');
     src: url('../fonts/BorgiaPro-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/BorgiaPro-BoldItalic-webfont.woff') format('woff'),
-	url('../fonts/BorgiaPro-BoldItalic-webfont.ttf') format('truetype'),
-	url('../fonts/BorgiaPro-BoldItalic-webfont.svg#borgia_probold_italic') format('svg');
+         url('../fonts/BorgiaPro-BoldItalic-webfont.woff2') format('woff2'),
+         url('../fonts/BorgiaPro-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/BorgiaPro-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/BorgiaPro-BoldItalic-webfont.svg#borgia_probold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-

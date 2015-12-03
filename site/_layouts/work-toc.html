@@ -1,0 +1,85 @@
+---
+layout: component
+---
+<div id="content">
+  <div id="content-main" class="container clearfix">
+    <div id="main-content" class="row">
+      <h1 class="title col-md-12" id="page-title">{{page.title}}</h1>
+      <div class="content"> {{content}} </div>
+    </div>
+  </div>
+  <script type="text/template" id="work-template">
+  <div class="group-wk">
+    <h3 class="group-title">
+	  <a class="collapse-toggle" role="button" data-toggle="collapse" href="#<%=id%>" aria-expanded="false" aria-controls="accordion">
+	    <%=title%> (<%=state%>)  
+		<div class="progress" style="display:none;">
+        	<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 50%"> <span class="sr-only">30% Complete</span> </div>
+        </div>
+		<i class="toggle-btn btn fa fa-chevron-down pull-right"></i></a>
+	</h3>
+    <div class="meta-wk" style="display:none;">
+      <% if (physical !== undefined) { %>
+      <%=shelfmarks.join(", ")%> &nbsp;
+      <%} %>
+    </div>
+    <div class="collapse" id="<%=id%>">
+      <div class="panel-body">
+	  
+	  </div>
+    </div>
+  </div>
+  </script> 
+  <script type="text/template" id="range-template">
+  <div class="panel-group" id="<%=id%>-range">
+    <div class="group-nb">
+        <h4 class="group-title">
+          <a class="collapse-toggle" role="button" data-toggle="collapse" href="#<%=id%>" aria-expanded="false" aria-controls="accordion"><%=label%> <i class="toggle-btn btn fa fa-chevron-down pull-right"></i></a>
+        </h4>
+        <div class="meta-nb">
+          <%=meta%>
+        </div>
+      <div class="collapse" id="<%=id%>">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</script> 
+  <script type="text/template" id="canvas-template">
+  <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-4">          
+    <a href="<%=scUrl%>"><img class="img-thumbnail" src="<%=imgUrl%>"/></a>
+    <div class="mask">
+      <h6 class="pg-n"><%=label%></h6>
+        <p class="pg-s"><i class="fa fa-circle <%=status.t%>" title="Transcription Status"></i><i class="fa fa-circle <%=status.m%>" title="Metadata Status"></i></p>
+    </div>    
+  </div>
+  <% if (position % 6 == 0) { %>
+      <div class="clearfix visible-lg visible-sm visible-xs"></div>
+      <div class="clearfix visible-sm visible-xs"></div>    
+    <% } else if (position % 4 == 0) { %>
+      <div class="clearfix visible-md"></div>
+    <% } else if (position % 3 == 0) { %>
+      <div class="clearfix visible-sm visible-xs"></div>
+    <% } %>
+</script> 
+  <script>
+(function($){
+$('a.collapse-toggle').click(function(){
+   me = $(this);
+   href = me.attr('href');
+
+   if (!$(href).hasClass('in')) {
+      me.text('Read Less');
+   }     else { me.text('Read More'); }
+   
+   if (!$(this).hasClass('collapsed')) {
+	  $(this).find('.toggle-button').addClass('fa-flip-vertical');
+   }
+});
+})(jQuery);
+
+</script> 
+  <script type="text/javascript" src="/js/SGAtoc.js"></script> 
+</div>
