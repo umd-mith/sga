@@ -22,8 +22,7 @@
 
 /* 0. Fonts
 _______________________________________________________________________*/
-@import url('fonts.css'); 
-
+@import url('fonts.css');
 /* 1. General
 _______________________________________________________________________*/
 body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 18px; background: url("../images/bg-page.png") repeat 0 0; color: #212121; }
@@ -109,6 +108,11 @@ _______________________________________________________________________*/
 .nav>li>a:focus, .nav>li>a:hover { color: #a54647; background-color: transparent; }
 /* 9. Slideshow
 _______________________________________________________________________*/
+#carousel-home { margin-bottom: 25px; }
+.carousel-indicators { bottom: -35px; }
+.carousel-indicators li { width: 30px; height: 8px; border-radius: 2px; vertical-align: middle; }
+.carousel-indicators .active { width: 30px; height: 8px; moz-box-shadow: 0px 1px 1px #787878; -webkit-box-shadow: 0px 1px 1px #787878; box-shadow: 0px 1px 1px #787878; border: 1px solid #680022; border-radius: 2px; }
+.carousel-caption { left: 0; bottom: 0; right: inherit; padding: 15px 0 15px 40px; background: rgba(0, 0, 0, 0.2); width: 100%; text-align: left; text-transform: uppercase; }
 /* 10. Content Area
 _______________________________________________________________________*/
 .node-type-sharedcanvas #content-main.container { width: 90%; }
@@ -154,7 +158,7 @@ label.meta-label { display: inline-block; font-weight: 600; margin-right: 5px; m
 #status-block .badge-green .fa-circle.active { color: #390; }
 /* ___ Controls ________________________________________________________*/
 .detail-view-controls { margin-bottom: 30px; }
-.detail-view-controls .well { margin-bottom: 0; border-radius: 0px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
+.detail-view-controls .well { margin-bottom: 0; border-radius: 0px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 .detail-view-controls .btn-sm { border: 1px solid #b8b8b8; background-color: #fbfbfb; }
 .detail-view-controls .btn-toolbar { margin-right: 10px; }
 .detail-view-controls #sequence-nav.btn-toolbar { margin-right: 0; }
@@ -176,27 +180,27 @@ ul.circle-yes li:before { background-color: #a54647; }
 .meta-data-filter .control-label span { padding: 0 5px; font-weight: 600; }
 .meta-data-filter .control-group:last-child { margin-bottom: 0; }
 .meta-data-filter .checkbox-inline { padding-left: 5px; }
-.meta-data-filter .checkbox-inline input[type="checkbox"] { margin-left: 0; margin-top:1px; margin-right: 3px; }
+.meta-data-filter .checkbox-inline input[type="checkbox"] { margin-left: 0; margin-top: 1px; margin-right: 3px; }
+
 @media (max-width: 768px) {
-	.meta-data-filter .control-group { margin-bottom:5px; }	
+.meta-data-filter .control-group { margin-bottom: 5px; }
 }
 /* ___ Limit View ____________________________________________________*/
 #limit-view-controls { max-height: 30px; margin-top: -2px; line-height: 1; }
 #limit-view-controls .control-label { text-transform: uppercase; color: #a54647; font-weight: normal; font-size: 0.75em; }
 #limit-view-controls .radio-inline { font-size: 0.75em; font-weight: normal; line-height: 14px; padding-left: 0; }
 #limit-view-controls .radio-inline input[type="radio"] { margin-left: 0; margin-right: 3px; }
-
 /*Results*/
 	/* ___ Slider Bar __________________________________________________*/
 .page-location-bar { float: right; width: .5em; margin-right: -1.2em; padding-top: 4.880597014925373px; background: #FFFFFF; border: 1px solid #333333; }
 #page-location { width: 100%; }
-#page-location .ui-widget-header { background: none; }
+/*#page-location .ui-widget-header { background: none; }
 .ui-corner-all { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-right-radius: 0; border-top-left-radius: 0; }
 .ui-widget-content { border: 0; background: transparent; }
 #page-location .res { background-color: transparent; border-bottom: 1px solid #fff; border-top: 2px solid #a54647; }
 #page-location .ui-slider-handle { opacity: 0.9; left: 12px; border: none; font-size: 10px; color: #494949; background: transparent; text-decoration: none; padding: 2px 5px 0px 2px; line-height: 18px; height: 2.2em; }
 #page-location .ui-slider-handle:before { font-family: "Fontawesome"; content: "\f0d9"; color: #999999; font-size: 16px; display: inline; position: relative; left: -7px; top: 2px; line-height: 18px; }
-#page-location .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active { opacity: 1; }
+#page-location .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active { opacity: 1; }*/
 /*Meta */
 .detail-view-meta .row:first-child { padding-top: 1.25em; }
 .detail-view-meta h3 { font-size: 1.2em; margin-top: 0; }
@@ -205,7 +209,6 @@ ul.circle-yes li:before { background-color: #a54647; }
 /*
 14C. Search Results
 _______________________________________________________________________*/
-
 #search-bar .btn { background: #a54647; border-color: #a54647; }
 #search-bar .btn i { color: #ffffff; }
 #search-instructions { font-size: 0.9em; }
@@ -260,14 +263,17 @@ _______________________________________________________________________*/
 /*
 17A. Explore Page
 _______________________________________________________________________*/
-.explore-group ul li a { padding: 5px 0; display: block; }
-.explore-group ul li i { padding-right: 3px; }
+.explore-group ul { padding:0; margin:0; list-style-type:none;}
+.explore-group ul li { padding:0; margin:0; }
+.explore-group ul li a { padding: 8px 10px; display: block; margin-bottom:10px; border: 1px solid #D4D4D4}
+.explore-group ul li a:hover { background-color:  rgba(177,177,177,0.2); }
+.explore-group i { vertical-align:middle; display:inline-block; width:35px;}
 /*
 17B. Works / Manuscripts Pages
 _______________________________________________________________________*/
 #ranges_wrapper { border-top: 1px dashed #C7C7C7; margin-top: 30px; padding-top: 30px; }
 .view { margin-bottom: 15px; -webkit-backface-visibility: hidden; }
-h3.group-title { font-size: 24px; line-height:24px; }
+h3.group-title { font-size: 24px; line-height: 24px; }
 h4.group-title { margin: 0 0 5px 0; }
 .view .img-thumbnail { width: 100%; }
 .view .mask { opacity: 0; background-color: rgba(255,255,255, 0.7); transition: all 0.4s ease-in-out; position: absolute; overflow: hidden; bottom: 0; left: 15px; right: 15px; text-align: center; pointer-events: none; }
@@ -279,14 +285,13 @@ h4.group-title { margin: 0 0 5px 0; }
 .pg-s .yel { color: #FC0; }
 .pg-s .grn { color: #390; }
 .pg-s .fa-circle { width: 1.1428571428571428em; padding: 0 0.2857142857142857em; }
-
 .group-wk, .group-nb, .group-ms { border-width: 0; background: transparent; -webkit-box-shadow: none; box-shadow: none; }
-.group-wk h3.group-title a, .group-ms h3.group-title a { display: block; margin:0; padding:8px 0 8px 12px; background-color: #f3f3f3; border-left: 2px solid #C6C6C6; line-height: 25px;}
-.group-wk h4.group-title a { display:block; border-bottom: 1px dashed #ddd; margin-bottom: 5px; padding-bottom: 3px; }
-.group-wk a[role="button"] i { font-size: 14px; border-left: #A8A8A8 1px dotted; border-radius:0; padding:12px; margin-top:-8px;}
+.group-wk h3.group-title a, .group-ms h3.group-title a { display: block; margin: 0; padding: 8px 0 8px 12px; background-color: #f3f3f3; border-left: 2px solid #C6C6C6; line-height: 25px; }
+.group-wk h4.group-title a { display: block; border-bottom: 1px dashed #ddd; margin-bottom: 5px; padding-bottom: 3px; }
+.group-wk a[role="button"] i { font-size: 14px; border-left: #A8A8A8 1px dotted; border-radius: 0; padding: 12px; margin-top: -8px; }
 .group-wk h4.group-title a[role="button"] i { font-size: 12px; line-height: 9px; border-left: 0; }
-.group-wk .group-title a[aria-expanded="true"] i { transform: rotate(180deg); border-left:0; border-right: #a8a8a8 1px dotted; }
-.progress { height: 10px; width: 90px; margin-bottom:0; vertical-align:middle; display: inline-block;}
+.group-wk .group-title a[aria-expanded="true"] i { transform: rotate(180deg); border-left: 0; border-right: #a8a8a8 1px dotted; }
+.progress { height: 10px; width: 90px; margin-bottom: 0; vertical-align: middle; display: inline-block; }
 /*
 19. About Page
 _______________________________________________________________________*/
@@ -311,7 +316,6 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 .indented { padding-left: 30px; }
 #page-wrapper #intro0 .indented { line-height: 125%; }
 #intro1 table, #intro1 table span { background-color: #f7f7f8; }
-
 /*
 22. Responsive
 _______________________________________________________________________*/
