@@ -80,12 +80,15 @@ window.SGAranges = {}
       thisEl = @$el
       thisTemplate = @template
       url = @model.attributes.url
-      $.ajax
+      deferred = $.ajax
         url: url
         type: 'GET'
         dataType: 'json'
         processData: false
         success: (data) => SGAranges.processMetadata data, url, @model, thisEl, thisTemplate
+      deferred.done =>
+        if @model == @model.collection.last()
+          Backbone.trigger("load_completed");
       @
 
     remove: ->
@@ -195,8 +198,9 @@ window.SGAranges = {}
       id_graph = {}
       for node in data["@graph"]
         id_graph[node["@id"]] = node if node["@id"]? 
-      work_safe_id = url.replace(/[:\/\.]/g, "_")
       metadata = id_graph["http://shelleygodwinarchive.org"+url]
+      service_url = metadata["sc:service"]["@id"]
+      work_safe_id = service_url.substr(service_url.indexOf("sc/")+3, service_url.length).replace(/[:\/\.]/g, "_")
       shelfmarks = []      
       contained_works = metadata["sga:containedWorks"]
       contained_works = [ contained_works ] if !$.isArray contained_works

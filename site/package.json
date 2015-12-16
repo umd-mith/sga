@@ -26,18 +26,18 @@
     "build:viewer": "npm run less:viewer && npm run concat:js:viewer_deps && npm run concat:js:viewer && coffee -o js js/SGAviewer.coffee",
     "build:search": "coffee -o js -c components/search/SGAsearch.coffee",
     "build:toc": "coffee -o js -c components/toc/SGAtoc.coffee",
-    "build:assets": "npm run concat:css:default && npm run copy:fonts",
+    "build:assets": "npm run copy:css:jqueryui && npm run copy:fonts",
     "build:dependencies": "npm run concat:js:dependencies && npm run concat:js:component_deps && npm run concat:js:viewer_deps && npm run build:openseadragon",
     "build:openseadragon": "npm run setup:openseadragon && grunt --base node_modules/OpenSeadragon/ --gruntfile node_modules/OpenSeadragon/Gruntfile.js --force && npm run copy:openseadragon",
     "setup:openseadragon": "npm --prefix ./node_modules/OpenSeadragon install ./node_modules/OpenSeadragon",
 
     "copy:openseadragon": "n-copy --source node_modules/OpenSeadragon/build/openseadragon/ --destination js openseadragon.min.js",     
     "copy:fonts": "n-copy --source node_modules/font-awesome/fonts/ --destination fonts fontawesome-webfont.woff fontawesome-webfont.woff2 fontawesome-webfont.ttf",
+    "copy:css:jqueryui": "n-copy --source node_modules/jquery-ui-bundle/ --destination css jquery-ui.min.css",
 
     "less:viewer": "lessc components/viewer/less/SGAviewer.less css/SGAviewer.css",
 
     "concat:js:viewer": "n-concat components/viewer/src/intro.coffee components/viewer/src/utils.coffee components/viewer/src/data.coffee components/viewer/src/component.coffee components/viewer/src/view.coffee components/viewer/src/router.coffee > js/SGAviewer.coffee",
-    "concat:css:default": "n-concat css/reset.css node_modules/bootstrap/dist/css/bootstrap.min.css node_modules/font-awesome/css/font-awesome.min.css node_modules/jquery-ui-bundle/jquery-ui.min.css > css/default.css",
     "concat:js:dependencies": "n-concat node_modules/jquery/dist/jquery.min.js node_modules/jquery-ui-bundle/jquery-ui.js node_modules/cycle/jquery.cycle.all.js node_modules/bootstrap/dist/js/bootstrap.min.js > js/dependencies.js",
     "concat:js:component_deps": "n-concat node_modules/underscore/underscore-min.js node_modules/backbone/backbone-min.js > js/component_deps.js",
     "concat:js:viewer_deps": "n-concat components/viewer/lib/vendor/google-prettify.js components/viewer/lib/vendor/djtilesource.js > js/viewer_deps.js"

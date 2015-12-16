@@ -292,6 +292,13 @@ h4.group-title { margin: 0 0 5px 0; }
 .group-wk h4.group-title a[role="button"] i { font-size: 12px; line-height: 9px; border-left: 0; }
 .group-wk .group-title a[aria-expanded="true"] i { transform: rotate(180deg); border-left: 0; border-right: #a8a8a8 1px dotted; }
 .progress { height: 10px; width: 90px; margin-bottom: 0; vertical-align: middle; display: inline-block; }
+.sources-table {width: 100%; margin-left: auto; margin-right: auto; background: white; padding: 0.5em;}
+.sources-table div {text-align: left;}
+.sources-table span {display:inline-block; padding-left: 0.5em;}
+.sources-table .sources-header {text-align: left; background-color: #e6e6e6; padding-bottom: 0.5em; padding-top: 0.5em;}
+.sources-table .sources-label {background-color: White; position: relative; z-index: 10;}
+.sources-table .sources-header .sources-label {background-color: #e6e6e6; position: relative; z-index: 10;}
+.sources-table hr {margin: 0px; bottom: .6em; border: 1px solid black; position: relative; z-index: 1;}
 /*
 19. About Page
 _______________________________________________________________________*/

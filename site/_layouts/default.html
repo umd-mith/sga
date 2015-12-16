@@ -15,6 +15,13 @@
 
     </div>
 
+    <script type="text/javascript">
+	if(window.location.hash) {
+	  var dest = $(window.location.hash).find("a").attr("href");
+	  $(dest).collapse("show");
+	}
+	</script>
+
   </body>
 
 </html>
