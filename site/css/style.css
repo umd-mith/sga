@@ -3,7 +3,6 @@
 
 /*  Table of contents */
 
-/*  0. fonts
 /*  1. general
 /*  2. text
 /*  3. links
@@ -20,9 +19,6 @@
 /* 	14. Forms
 */
 
-/* 0. Fonts
-_______________________________________________________________________*/
-@import url('fonts.css');
 /* 1. General
 _______________________________________________________________________*/
 body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 18px; background: url("../images/bg-page.png") repeat 0 0; color: #212121; }
@@ -105,7 +101,7 @@ _______________________________________________________________________*/
 .navbar-nav > li { float: none; display: inline-block; }
 .navbar-nav a { color: #494949; }
 .navbar-nav a.active { color: #a54647; }
-.nav>li>a:focus, .nav>li>a:hover { color: #a54647; background-color: transparent; }
+.navbar-nav>li>a:focus, .navbar-nav>li>a:hover { color: #a54647; background-color: transparent; }
 /* 9. Slideshow
 _______________________________________________________________________*/
 #carousel-home { margin-bottom: 25px; }
@@ -143,7 +139,7 @@ _______________________________________________________________________*/
 14B. Detail View
 _______________________________________________________________________*/
 
-/*Tools*/
+/* ___ Tools ____________________________________________________*/
 .meta-data-view .meta-data-group .meta-label:after { content: ":" }
 .meta-data-filter .meta-data-item, .meta-data-view .meta-data-item { font-weight: 300; line-height: normal; margin: 0; font-size: 0.9em; list-style: none; }
 .meta-data-view .meta-data-item { margin-bottom: 0.25em }
@@ -263,11 +259,11 @@ _______________________________________________________________________*/
 /*
 17A. Explore Page
 _______________________________________________________________________*/
-.explore-group ul { padding:0; margin:0; list-style-type:none;}
-.explore-group ul li { padding:0; margin:0; }
-.explore-group ul li a { padding: 8px 10px; display: block; margin-bottom:10px; border: 1px solid #D4D4D4}
-.explore-group ul li a:hover { background-color:  rgba(177,177,177,0.2); }
-.explore-group i { vertical-align:middle; display:inline-block; width:35px;}
+.explore-group ul { padding: 0; margin: 0; list-style-type: none; }
+.explore-group ul li { padding: 0; margin: 0; }
+.explore-group ul li a { padding: 8px 10px; display: block; margin-bottom: 10px; border: 1px solid #D4D4D4 }
+.explore-group ul li a:hover { background-color: rgba(177,177,177,0.2); }
+.explore-group i { vertical-align: middle; display: inline-block; width: 35px; }
 /*
 17B. Works / Manuscripts Pages
 _______________________________________________________________________*/
@@ -288,19 +284,19 @@ h4.group-title { margin: 0 0 5px 0; }
 .group-wk, .group-nb, .group-ms { border-width: 0; background: transparent; -webkit-box-shadow: none; box-shadow: none; }
 .group-wk h3.group-title a, .group-ms h3.group-title a { display: block; margin: 0; padding: 8px 0 8px 12px; background-color: #f3f3f3; border-left: 2px solid #C6C6C6; line-height: 25px; }
 .group-wk h4.group-title a { display: block; border-bottom: 1px dashed #ddd; margin-bottom: 5px; padding-bottom: 3px; }
-.group-wk a[role="button"] i { font-size: 14px; border-left: #A8A8A8 1px dotted; border-radius: 0; padding: 12px; margin-top: -8px; }
+.group-wk a[role="button"] i { font-size: 14px; border-left: #A8A8A8 1px dotted; border-radius: 0; padding: 9px 12px; margin-top: -8px; }
 .group-wk h4.group-title a[role="button"] i { font-size: 12px; line-height: 9px; border-left: 0; }
 .group-wk .group-title a[aria-expanded="true"] i { transform: rotate(180deg); border-left: 0; border-right: #a8a8a8 1px dotted; }
 .progress { height: 10px; width: 90px; margin-bottom: 0; vertical-align: middle; display: inline-block; }
-.sources-table {width: 100%; margin-left: auto; margin-right: auto; background: white; padding: 0.5em;}
-.sources-table div {text-align: left;}
-.sources-table span {display:inline-block; padding-left: 0.5em;}
-.sources-table .sources-header {text-align: left; background-color: #e6e6e6; padding-bottom: 0.5em; padding-top: 0.5em;}
-.sources-table .sources-label {background-color: White; position: relative; z-index: 10;}
-.sources-table .sources-header .sources-label {background-color: #e6e6e6; position: relative; z-index: 10;}
-.sources-table hr {margin: 0px; bottom: .6em; border: 1px solid black; position: relative; z-index: 1;}
+.sources-table { width: 100%; margin-left: auto; margin-right: auto; background: white; padding: 0.5em; }
+.sources-table div { text-align: left; }
+.sources-table span { display: inline-block; padding-left: 0.5em; }
+.sources-table .sources-header { text-align: left; background-color: #e6e6e6; padding-bottom: 0.5em; padding-top: 0.5em; }
+.sources-table .sources-label { background-color: White; position: relative; z-index: 10; }
+.sources-table .sources-header .sources-label { background-color: #e6e6e6; position: relative; z-index: 10; }
+.sources-table hr { margin: 0px; bottom: .6em; border: 1px solid black; position: relative; z-index: 1; }
 /*
-19. About Page
+19. About Page & Intro Pages
 _______________________________________________________________________*/
 .group-contributors .row { line-height: 20px !important; }
 .group-contributors .row [class^="fa-"], .group-contributors .row [class*=" fa-"] { background-position: left top; background-repeat: no-repeat; }
@@ -323,6 +319,18 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 .indented { padding-left: 30px; }
 #page-wrapper #intro0 .indented { line-height: 125%; }
 #intro1 table, #intro1 table span { background-color: #f7f7f8; }
+.nav#toc li a { border: 1px solid #a54647; margin-bottom:20px; margin-right:10px; }
+.intro-subgp { margin-left: 30px; }
+.intro-title a {display: block;
+    margin: 0;
+    padding: 8px 0 8px 12px;
+    background-color: #f3f3f3;
+    border-left: 2px solid #C6C6C6;
+    line-height: 25px;
+}
+.intro-title a i { line-height: 30px; margin-top: -9px; }
+.intro-title a[aria-expanded="true"] i { transform: rotate(180deg); }
+
 /*
 22. Responsive
 _______________________________________________________________________*/
