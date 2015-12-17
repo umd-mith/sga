@@ -19,15 +19,15 @@ highligher: pygments
 # Top nav
 navigation:
  - title: Home
-   url: /index.html
+   url: /
  - title: About
-   url: /about
+   url: /about/
  - title: Explore the Archive
-   url: /explore
+   url: /explore/
  - title: Search
-   url: /search
+   url: /search/
  - title: Using the Archive
-   url: /using-the-archive
+   url: /using-the-archive/
 
 # Includes
 include: ['_pages']
