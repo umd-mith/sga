@@ -381,8 +381,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           # Could this be moved into its own project-specific module at some point?
           else 
             sgaTypes = (f.substr(4) for f in types when f.substr(0,4) == "sga:" and f.substr(f.length-10) == "Annotation")
-            if sgaTypes.length > 0
-              sources = []
+            sources = []
+            if sgaTypes.length > 0              
               canvas.contents.forEach (c,i) ->
                 s = c.get("source")
                 if s? and s not in sources
