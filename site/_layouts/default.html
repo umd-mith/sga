@@ -15,10 +15,24 @@
 
     </div>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
+
+  var collapseNearest = function (el) {
+    var $el = $(el);
+    var dest = $el.find("a[data-toggle=collapse]");
+    if (!dest.get(0)) {
+      if ($el.parent()){
+        collapseNearest($el.parent());
+      }
+      else return null;
+    }
+    else {
+      return $(dest.attr("href")).collapse("show");
+    }
+  }
+
 	if(window.location.hash) {
-	  var dest = $(window.location.hash).find("a").attr("href");
-	  $(dest).collapse("show");
+    collapseNearest(window.location.hash);
 	}
 	</script>
 
