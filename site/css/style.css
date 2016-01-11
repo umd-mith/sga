@@ -9,20 +9,23 @@
 /*  4. headings
 /*  5. lists
 /*  6. tables
-/*  7. #header
-/*  8. #main-menu
-/*  9. #slideshow
-/*  10. #content
-/*  11. #footer
-/*  12. Drupal styles override
-/*  13. Responsive layout
-/* 	14. Forms
+/*  7. Header
+/*  8. Navigation
+/*  9. Slideshow
+/*  10. Content Area
+/*  11. Footer
+/*  12. Viewer
+/*  13. Search
+/* 	14. Explore
+/* 	15. Works/Manuscripts
+/*	16. About/Intro
+/*	17. Responsive
 */
 
 /* 1. General
 _______________________________________________________________________*/
 body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 18px; background: url("../images/bg-page.png") repeat 0 0; color: #212121; }
-#page-wrapper { background: url("../images/bg-gradient.png") repeat-x -40px 200px; }
+#page-wrapper { background: url("../images/bg-gradient.png") repeat-x -40px 187px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
 
 @media (min-width:768px) {
@@ -43,13 +46,13 @@ _______________________________________________________________________*/
 #page-wrapper pre, code { font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
 #page-wrapper blockquote { border-left: 3px solid #B17373; }
 #page-wrapper blockquote p { padding: 3px 36px 0px 24px; color: #505050; font-size: 14px; }
-#page-wrapper fieldset { padding: 12px; border: 1px solid #A7A7A7; }
-#page-wrapper fieldset.collapsed { border-top: 1px solid #A7A7A7; border-left: none; border-bottom: none; border-right: none; }
+#page-wrapper fieldset {  }
+#page-wrapper fieldset.collapsed {  }
 #page-wrapper fieldset legend { padding: 0 6px; color: #707070; }
 .main-content strong { font-weight: 600; }
 .main-content h4 { display: inline; float: left; margin: 0 5px 0 0; }
 .main-content small { display: block; margin-bottom: 12px; font-size: 90%; }
-.footnotes a { display: none; }
+.footnotes a {  }
 .btn-fa-list button { margin: 5px 0; }
 /* 3. Links
 _______________________________________________________________________*/
@@ -63,8 +66,6 @@ h1, h2, h3, h4, h5, h6 { color: #a54647; font-family: 'BorgiaPro', Georgia, seri
 h1#page-title { border-bottom: 1px solid #eeeeee; padding-bottom: 20px; }
 /* 5. Lists
 _______________________________________________________________________
-ul, ol { padding: 0 0 0 40px; margin: 0 0 9px 0; }
-ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; margin-top: 12px; }*/
 
 /* 6. Tables
 _______________________________________________________________________*/
@@ -87,7 +88,7 @@ table.noborder td, table.noborder th, table.noborder tr { border: none; }
 .node-page .table-condensed { line-height: 150%; }
 .node-page .table-striped>tbody>tr:nth-child(odd)>td, .node-page .table-striped>tbody>tr:nth-child(odd)>th { background-color: #f2dede; border-color: #eed3d7; }
 table.no-border tbody>tr>td { border: 0; padding: 0; }
-/* 7. #header
+/* 7. Header
 _______________________________________________________________________*/
 #header { padding-top: 15px; padding-bottom: 0px; background: #f9f9f9; }
 #header #logo { float: none; text-align: center; text-shadow: none; background-color: transparent; border: 0; margin: 0px auto; padding: 5px 0; }
@@ -124,7 +125,7 @@ _______________________________________________________________________*/
 .node-meta .field-item { margin-right: 6px; }
 .main-content .accordion-toggle.collapsed:after { font-family: "Fontawesome"; content: "\f078"; font-style: normal !important; }
 .main-content .accordion-toggle:after { font-family: "Fontawesome"; content: "\f077"; padding-left: 10px; font-size: 19px; color: #666; font-weight: normal; font-style: normal !important; }
-/* 11. #footer
+/* 11. Footer
 _______________________________________________________________________*/
 #footer { padding-bottom: 20px; margin-top: 5em; }
 .footer-top { margin-bottom: 12px; padding-top: 30px; border-top: 1px solid #c5beaa; }
@@ -135,10 +136,9 @@ _______________________________________________________________________*/
 #footer .credits a:hover { color: #122B2B; }
 #footer .col-xs-3, #footer .col-xs-4, #footer .col-xs-2 { text-align: center; }
 .footer-top img.footer-logo { margin-bottom: 20px; }
-/*
-14B. Detail View
+/* 12. Viewer
 _______________________________________________________________________*/
-
+.detail-view-results { width: 95%; margin: 0px auto; }
 /* ___ Tools ____________________________________________________*/
 .meta-data-view .meta-data-group .meta-label:after { content: ":" }
 .meta-data-filter .meta-data-item, .meta-data-view .meta-data-item { font-weight: 300; line-height: normal; margin: 0; font-size: 0.9em; list-style: none; }
@@ -158,7 +158,7 @@ label.meta-label { display: inline-block; font-weight: 600; margin-right: 5px; m
 .detail-view-controls .btn-sm { border: 1px solid #b8b8b8; background-color: #fbfbfb; }
 .detail-view-controls .btn-toolbar { margin-right: 10px; }
 .detail-view-controls #sequence-nav.btn-toolbar { margin-right: 0; }
-.detail-view-controls .btn-toolbar .btn-sm, .detail-view-controls #search-form-block .btn-sm { padding-left: 8px; padding-right: 8px; }
+.detail-view-controls .btn-toolbar .btn-sm, .detail-view-controls #search-form-block .btn-sm { padding: 7px 8px; line-height: 1;}
 .detail-view-controls .btn-group + .btn-group { margin-left: 10px !important; }
 .detail-view-controls a.btn { color: #a54647 !important; }
 .detail-view-controls .input-group { max-width: 250px; margin-right: 10px; }
@@ -177,7 +177,6 @@ ul.circle-yes li:before { background-color: #a54647; }
 .meta-data-filter .control-group:last-child { margin-bottom: 0; }
 .meta-data-filter .checkbox-inline { padding-left: 5px; }
 .meta-data-filter .checkbox-inline input[type="checkbox"] { margin-left: 0; margin-top: 1px; margin-right: 3px; }
-
 @media (max-width: 768px) {
 .meta-data-filter .control-group { margin-bottom: 5px; }
 }
@@ -196,14 +195,13 @@ ul.circle-yes li:before { background-color: #a54647; }
 #page-location .res { background-color: transparent; border-bottom: 1px solid #fff; border-top: 2px solid #a54647; }
 #page-location .ui-slider-handle { opacity: 0.9; left: 12px; border: none; font-size: 10px; color: #494949; background: transparent; text-decoration: none; padding: 2px 5px 0px 2px; line-height: 18px; height: 2.2em; }
 #page-location .ui-slider-handle:before { font-family: "Fontawesome"; content: "\f0d9"; color: #999999; font-size: 16px; display: inline; position: relative; left: -7px; top: 2px; line-height: 18px; }
-#page-location .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active { opacity: 1; }*/
+#page-location .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active { opacity: 1; }
 /*Meta */
 .detail-view-meta .row:first-child { padding-top: 1.25em; }
 .detail-view-meta h3 { font-size: 1.2em; margin-top: 0; }
 .detail-view-meta h4 { font-size: 0.95em; text-transform: uppercase; margin: 1.2em 0 .3em 0; color: #414042; font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; font-weight: 600; }
-.detail-view-meta .page-citation, .detail-view-meta .work-citation { color: #414042; font-weight: 300; }
-/*
-14C. Search Results
+.detail-view-meta .page-citation, .detail-view-meta .work-citation { color: #414042; font-weight: 300; font-size:12px;}
+/* 13. Search Results
 _______________________________________________________________________*/
 #search-bar .btn { background: #a54647; border-color: #a54647; }
 #search-bar .btn i { color: #ffffff; }
@@ -256,16 +254,14 @@ _______________________________________________________________________*/
 .r-date:before, .r-folio:before { content: ' '; }
 .r-summary { margin-top: 5px; }
 .r-summary em { background: #fcf8e3; font-style: normal; }
-/*
-17A. Explore Page
+/* 14. Explore Page
 _______________________________________________________________________*/
 .explore-group ul { padding: 0; margin: 0; list-style-type: none; }
 .explore-group ul li { padding: 0; margin: 0; }
 .explore-group ul li a { padding: 8px 10px; display: block; margin-bottom: 10px; border: 1px solid #D4D4D4 }
 .explore-group ul li a:hover { background-color: rgba(177,177,177,0.2); }
 .explore-group i { vertical-align: middle; display: inline-block; width: 35px; }
-/*
-17B. Works / Manuscripts Pages
+/* 15. Works / Manuscripts Pages
 _______________________________________________________________________*/
 #ranges_wrapper { border-top: 1px dashed #C7C7C7; margin-top: 30px; padding-top: 30px; }
 .view { margin-bottom: 15px; -webkit-backface-visibility: hidden; }
@@ -295,8 +291,7 @@ h4.group-title { margin: 0 0 5px 0; }
 .sources-table .sources-label { background-color: White; position: relative; z-index: 10; }
 .sources-table .sources-header .sources-label { background-color: #e6e6e6; position: relative; z-index: 10; }
 .sources-table hr { margin: 0px; bottom: .6em; border: 1px solid black; position: relative; z-index: 1; }
-/*
-19. About Page & Intro Pages
+/* 16. About Page & Intro Pages
 _______________________________________________________________________*/
 .group-contributors .row { line-height: 20px !important; }
 .group-contributors .row [class^="fa-"], .group-contributors .row [class*=" fa-"] { background-position: left top; background-repeat: no-repeat; }
@@ -332,8 +327,7 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 .intro-title a i { line-height: 30px; margin-top: -9px; }
 .intro-title a[aria-expanded="true"] i { transform: rotate(180deg); }
 
-/*
-22. Responsive
+/* 17. Responsive
 _______________________________________________________________________*/
 @media (max-width: 980px) {
 #view-controls, #search-form-block { margin-bottom: 10px; }
