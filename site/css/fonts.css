@@ -92,10 +92,10 @@
 .fa-pause:before {
   content: "\e00c";
 }
-.fa-repeat:before {
+.fa-repeat:before, .fa-rotate-right:before {
   content: "\e00d";
 }
-.fa-undo:before {
+.fa-undo:before, .fa-rotate-left:before {
   content: "\e00e";
 }
 .fa-search:before {
