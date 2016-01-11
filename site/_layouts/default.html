@@ -34,6 +34,17 @@
 	if(window.location.hash) {
     collapseNearest(window.location.hash);
 	}
+	
+	(function($){
+	$('a.accordion-toggle').click(function(){
+	   me = $(this);
+	   href = me.attr('href');
+	
+	   if (!$(href).hasClass('in')) {
+		  me.text('Read Less');
+	   }     else { me.text('Read More'); }
+	});
+	})(jQuery);
 	</script>
 
   </body>
