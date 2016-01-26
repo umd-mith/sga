@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../derivatives/brown_odds.isosch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
     xmlns:sch="http://purl.oclc.org/dsdl/schematron">
     <teiHeader>
@@ -357,17 +357,26 @@
                                 <desc>A convenience attribute for indicating what text-centric
                                     element a document-centric element should be transformed
                                     to</desc>
+                                <datatype>
+                                    <rng:ref name="data.text"/>
+                                </datatype>
                             </attDef>
                             <attDef ident="att-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
                                 <desc>A convenience attribute for indicating what attribute should
                                     be added in transforming from document- to text-centric markup.
                                     By convention the attribute is placed on the element specified
                                     in a preceding el-target attribute</desc>
+                                <datatype>
+                                    <rng:ref name="data.text"/>
+                                </datatype>
                             </attDef>
                             <attDef ident="att-value" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
                                 <desc>If an attribute created during a document- to text-centric
                                     markup conversion should have a particular value, please
                                     indicate</desc>
+                                <datatype>
+                                    <rng:ref name="data.text"/>
+                                </datatype>
                             </attDef>
                         </attList>
                     </classSpec>
@@ -422,18 +431,18 @@
                     <classSpec ident="att.responsibility" type="atts" mode="delete"/>
 
                     <!-- Custom macros -->
-                    <macroSpec ident="sga:linerend" type="dt" mode="add">
+                    <macroSpec ident="sga_linerend" type="dt" mode="add">
                         <desc>Simple datatype for indentation values.
                         When the indentation is numbered, each value should correspond 
                         roughly 1/10 of the page.
                         </desc>
                         <content>
                             <rng:choice>
-                                <rng:value ident="right"/>
-                                <rng:value ident="center"/>
-                                <rng:value ident="left"/>
+                                <rng:value>right</rng:value>
+                                <rng:value>center</rng:value>
+                                <rng:value>left</rng:value>
                                 <rng:data type="string">
-                                    <rng:pattern>indent\d</rng:pattern>
+                                    <rng:param name="pattern">indent\d</rng:param>
                                 </rng:data>
                             </rng:choice>
                         </content>
@@ -442,9 +451,6 @@
                     <elementSpec ident="surface" module="transcr" mode="change">
                         <content>
                             <rng:group>
-                                <rng:zeroOrMore>
-                                    <rng:ref name="model.glossLike"/>
-                                </rng:zeroOrMore>
                                 <rng:oneOrMore>
                                     <rng:ref name="model.graphicLike"/>
                                 </rng:oneOrMore>
@@ -483,8 +489,16 @@
                                     associated</desc>
                             </attDef>
                             
-                            <attDef ident="shelfmark" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt"/>
-                            <attDef ident="folio" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt"/>
+                            <attDef ident="shelfmark" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt">
+                                <datatype>
+                                    <rng:ref name="data.text"/>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="folio" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt">
+                                <datatype>
+                                    <rng:ref name="data.text"/>
+                                </datatype>
+                            </attDef>
                             
                             <!-- See note above re: Whitman integration -->
                             <attDef ident="attachment" mode="delete"/>
@@ -521,7 +535,7 @@
                         <attList>
                             <attDef ident="rend" mode="replace" usage="opt">
                                 <datatype>
-                                    <rng:ref name="data.BOOLEAN"/>
+                                    <rng:ref name="sga_linerend"/>
                                 </datatype>
                             </attDef>
                         </attList>
@@ -712,6 +726,9 @@
                                 </valList>
                             </attDef>
                             <attDef ident="rend" mode="replace">
+                                <datatype>
+                                    <rng:ref name="data.text"/>
+                                </datatype>
                                 <valList type="semi" mode="replace">
                                     <valItem ident="line">
                                         <desc>A line, often used to separate content.</desc>
