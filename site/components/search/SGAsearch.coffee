@@ -354,8 +354,10 @@ window.SGAsearch = {}
           SGAsearch.History.removeState('p')
       if cur_fl != filters
         if filters?
-          SGAsearch.History.pushState
-            "fl": filters
+          if filters.replace(/^\s*|\s*$/g, "") != ""
+            console.log(filters)
+            SGAsearch.History.pushState
+              "fl": filters
         else
           SGAsearch.History.removeState('fl')
 
