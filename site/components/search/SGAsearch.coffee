@@ -165,11 +165,12 @@ window.SGAsearch = {}
           # Append field if new
           re = new RegExp view.model.attributes.field
           if o.fields.search(re) == -1
-            o.fields += ",#{view.model.attributes.field}"          
+            o.fields += ",#{view.model.attributes.field}"         
 
         if !o.filters? 
             o.filters = f 
-          else 
+        else 
+          if o.filters.indexOf(decodeURI("#{f}")) == -1
             o.filters += ",#{f}"
 
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
@@ -187,7 +188,8 @@ window.SGAsearch = {}
 
         if !o.filters? 
             o.filters = f 
-          else 
+        else 
+          if o.filters.indexOf(decodeURI("#{f}")) == -1
             o.filters += ",#{f}"
 
         SGAsearch.search(o.service, o.query, o.facets, o.destination, o.fields, 0, o.filters)
@@ -273,6 +275,10 @@ window.SGAsearch = {}
     bindSort = () ->
       sortBy = $(".r-sorting").find('[name=r-sortby]')
       order = $(".r-sorting").find('[name=r-sort]')
+
+      # Unbound if already bound
+      sortBy.unbind()
+      order.unbind()
 
       sortSearch = ->
         sv = sortBy.val()
