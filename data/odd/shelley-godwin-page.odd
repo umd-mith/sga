@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://teijenkins.hcmc.uvic.ca/job/TEIP5-Pure-ODD/lastStableBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://teijenkins.hcmc.uvic.ca/job/TEIP5-Pure-ODD/lastStableBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
     xmlns:sch="http://purl.oclc.org/dsdl/schematron">
     <teiHeader>
@@ -358,7 +358,7 @@
                                     element a document-centric element should be transformed
                                     to</desc>
                                 <datatype>
-                                    <rng:ref name="data.text"/>
+                                    <dataRef key="string"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="att-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
@@ -367,7 +367,7 @@
                                     By convention the attribute is placed on the element specified
                                     in a preceding el-target attribute</desc>
                                 <datatype>
-                                    <rng:ref name="data.text"/>
+                                    <dataRef key="string"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="att-value" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
@@ -375,7 +375,7 @@
                                     markup conversion should have a particular value, please
                                     indicate</desc>
                                 <datatype>
-                                    <rng:ref name="data.text"/>
+                                    <dataRef key="string"/>
                                 </datatype>
                             </attDef>
                         </attList>
@@ -431,41 +431,49 @@
                     <classSpec ident="att.responsibility" type="atts" mode="delete"/>
 
                     <!-- Custom macros -->
-                    <macroSpec ident="sga_linerend" type="dt" mode="add">
+                    <dataSpec ident="sga_linerend" mode="add">
                         <desc>Simple datatype for indentation values.
-                        When the indentation is numbered, each value should correspond 
-                        roughly 1/10 of the page.
+                            When the indentation is numbered, each value should correspond 
+                            roughly 1/10 of the page.
                         </desc>
                         <content>
-                            <rng:choice>
-                                <rng:value>right</rng:value>
-                                <rng:value>center</rng:value>
-                                <rng:value>left</rng:value>
-                                <rng:data type="string">
-                                    <rng:param name="pattern">indent\d</rng:param>
-                                </rng:data>
-                            </rng:choice>
+                            <alternate>
+                                <valList>
+                                    <valItem ident="right"/>
+                                    <valItem ident="center"/>
+                                    <valItem ident="left"/>
+                                </valList>
+                                <dataRef name="string" restriction="indent\d"/>
+                            </alternate>                            
                         </content>
-                    </macroSpec>
+                    </dataSpec>
 
                     <elementSpec ident="surface" module="transcr" mode="change">
                         <content>
-                            <rng:group>
-                                <rng:oneOrMore>
-                                    <rng:ref name="model.graphicLike"/>
-                                </rng:oneOrMore>
-                                <rng:zeroOrMore>
-                                    <rng:choice>
-                                        <rng:ref name="zone"/>
-                                        <!--<rng:ref name="surface"/>
-                                        <rng:ref name="surfaceGrp"/>-->
-                                        <!-- Temporarily removing the case of paste-ins, etc. -->
-                                        <rng:ref name="model.global"/>
-                                        <rng:ref name="line"/>
-                                    </rng:choice>
-                                </rng:zeroOrMore>
-                            </rng:group>
+                            <sequence>
+                                
+                                <alternate minOccurs="0" maxOccurs="unbounded">
+                                    <classRef key="model.global"/>
+                                    <!--<classRef key="model.labelLike"/>-->
+                                    <classRef key="model.graphicLike"/>
+                                </alternate>
+                                
+                                <sequence minOccurs="0" maxOccurs="unbounded">
+                                    
+                                    <alternate>
+                                        <elementRef key="zone"/>
+                                        <elementRef key="line"/>
+                                        <!--<elementRef key="surface"/>-->
+                                        <!--<elementRef key="surfaceGrp"/>-->
+                                    </alternate>
+                                    
+                                    
+                                    <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
+                                    
+                                </sequence>
+                            </sequence>
                         </content>
+                        
                         <constraintSpec scheme="isoschematron" ident="add-ns-for-schema-fragment">
                             <constraint>
                                 <sch:ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
@@ -491,12 +499,12 @@
                             
                             <attDef ident="shelfmark" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt">
                                 <datatype>
-                                    <rng:ref name="data.text"/>
+                                    <dataRef key="string"/>
                                 </datatype>
                             </attDef>
                             <attDef ident="folio" ns="http://mith.umd.edu/sc/ns1#" mode="add" usage="opt">
                                 <datatype>
-                                    <rng:ref name="data.text"/>
+                                    <dataRef key="string"/>
                                 </datatype>
                             </attDef>
                             
@@ -511,31 +519,34 @@
                         see http://tei-l.970651.n3.nabble.com/Content-model-of-lt-line-gt-td3647279.html -->
                     <elementSpec ident="line" module="transcr" mode="change">
                         <content>
-                            <rng:zeroOrMore>
-                                <rng:choice>
-                                    <rng:text/>
-                                    <rng:ref name="model.global"/>
-                                    <rng:ref name="model.segLike"/>
-                                    <rng:ref name="model.hiLike"/>
-                                    <rng:ref name="choice"/>
-                                    <rng:ref name="zone"/>
-                                    <rng:ref name="line"/>
-                                    <!-- What follows is only a subset of model.pPart.transcriptional -->
-                                    <rng:ref name="add"/>
-                                    <rng:ref name="del"/>
-                                    <rng:ref name="add"/>
-                                    <rng:ref name="unclear"/>
-                                    <rng:ref name="damage"/>
-                                    <rng:ref name="handShift"/>
-                                    <rng:ref name="mod"/>
-                                    <rng:ref name="retrace"/>
-                                </rng:choice>
-                            </rng:zeroOrMore>
+                            
+                            <alternate minOccurs="0" maxOccurs="unbounded">
+                                <textNode/>
+                                <classRef key="model.global"/>
+                                <!--<classRef key="model.gLike"/>-->
+                                <!--<classRef key="model.linePart"/>-->
+                                <classRef key="model.segLike"/>
+                                <classRef key="model.hiLike"/>
+                                <elementRef key="choice"/>
+                                <elementRef key="zone"/>
+                                <elementRef key="line"/>
+                                <!-- What follows is only a subset of model.pPart.transcriptional -->
+                                <elementRef key="add"/>
+                                <elementRef key="del"/>
+                                <elementRef key="add"/>
+                                <elementRef key="unclear"/>
+                                <elementRef key="damage"/>
+                                <elementRef key="handShift"/>
+                                <elementRef key="mod"/>
+                                <elementRef key="retrace"/>
+                            </alternate>
+                            
                         </content>
+                        
                         <attList>
                             <attDef ident="rend" mode="replace" usage="opt">
                                 <datatype>
-                                    <rng:ref name="sga_linerend"/>
+                                    <dataRef key="sga_linerend"/>
                                 </datatype>
                             </attDef>
                         </attList>
@@ -653,23 +664,24 @@
 
                     <elementSpec ident="zone" module="transcr" mode="change">
                         <content>
-                            <rng:zeroOrMore>
-                                <rng:choice>
-                                    <rng:text/>
-                                    <!--<rng:ref name="surface"/>-->
-                                    <!-- Temporarily removing this option pre-Whitman -->
-                                    <rng:ref name="model.linePart"/>
-                                    <rng:ref name="model.graphicLike"/>
-                                    <!-- The following represent only a subset of model.global -->
-                                    <rng:ref name="model.milestoneLike"/>
-                                    <rng:ref name="model.noteLike"/>
-                                    <rng:ref name="model.global.edit"/>
-                                    <rng:ref name="metamark"/>
-                                    <!-- cherry picked from model.global.meta -->
-                                    <rng:ref name="alt"/>
-                                </rng:choice>
-                            </rng:zeroOrMore>
+                            
+                            <alternate minOccurs="0" maxOccurs="unbounded">
+                                <textNode/>
+                                <classRef key="model.graphicLike"/>
+                                <!--<classRef key="model.global"/>-->
+                                <!-- The following represent only a subset of model.global -->
+                                <classRef key="model.milestoneLike"/>
+                                <classRef key="model.noteLike"/>
+                                <classRef key="model.global.edit"/>
+                                <elementRef key="metamark"/>
+                                <!--<elementRef key="surface"/>-->
+                                <classRef key="model.linePart"/>
+                                <!-- cherry picked from model.global.meta -->
+                                <elementRef key="alt"/>
+                            </alternate>
+                            
                         </content>
+                        
                         <attList>
                             <attDef ident="type" mode="replace" usage="req">
                                 <valList type="closed" mode="replace">
@@ -727,7 +739,7 @@
                             </attDef>
                             <attDef ident="rend" mode="replace">
                                 <datatype>
-                                    <rng:ref name="data.text"/>
+                                    <dataRef key="string"/>
                                 </datatype>
                                 <valList type="semi" mode="replace">
                                     <valItem ident="line">
@@ -788,14 +800,12 @@
                     <elementSpec ident="mod" module="transcr" mode="change">
                         <content>
                             <!-- mod must have only element children so the below is a subset of macro.paraContent -->
-                            <rng:zeroOrMore>
-                                <rng:choice>
-                                    <rng:ref name="model.gLike"/>
-                                    <rng:ref name="model.phrase"/>
-                                    <rng:ref name="model.inter"/>
-                                    <rng:ref name="model.global"/>
-                                </rng:choice>
-                            </rng:zeroOrMore>
+                            <alternate minOccurs="0" maxOccurs="unbounded">
+                                <classRef key="model.gLike"/>
+                                <classRef key="model.phrase"/>
+                                <classRef key="model.inter"/>
+                                <classRef key="model.global"/>
+                            </alternate>
                         </content>
                         <constraintSpec scheme="isoschematron" ident="modContents">
                             <constraint>
