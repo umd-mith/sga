@@ -27,7 +27,16 @@
       else return null;
     }
     else {
-      return $(dest.attr("href")).collapse("show");
+      console.log(dest.hasClass("special"));
+      if (dest.attr("role") == "button") {
+        var d = $(dest.attr("data-target"));
+      }
+      else {
+        var d = $(dest.attr("href"));
+      }
+      
+      d.collapse("show");
+      d.next('a.read-toggle').text('Read Less');
     }
   }
 
