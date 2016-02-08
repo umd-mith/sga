@@ -97,11 +97,12 @@ _______________________________________________________________________*/
 .not-front #header #logo a img { max-height: 110px; }
 /* 8. Menu
 _______________________________________________________________________*/
-#main-menu { margin-bottom: 0px; background-color: #f9f9f9; border-top: 1px solid #EEEEEE; text-transform: uppercase; font-weight: 600; font-family: Arial, 'Liberation Sans', FreeSans, sans-serif; }
+#main-menu { margin-bottom: 0px; background-color: #f9f9f9; border-top: 1px solid #EEEEEE; text-transform: uppercase; font-weight: 600; font-family: Arial, 'Liberation Sans', FreeSans, sans-serif; border-left: 0; border-right: 0; }
 #shadow-bottom { background-image: url(../images/shadow-bottom-thin.png); background-repeat: no-repeat; background-position: center bottom; height: 18px; margin: 0; padding: 0 }
 .menu-toggle { display: none; }
+.navbar-default .navbar-collapse { }
 .navbar-nav { width: 100%; text-align: center; }
-.navbar-nav > li { float: none; display: inline-block; }
+@media (min-width: 768px) { .navbar-nav > li { float: none; display: inline-block; } }
 .navbar-nav a { color: #494949; }
 .navbar-nav a.active { color: #a54647; }
 .navbar-nav>li>a:focus, .navbar-nav>li>a:hover { color: #a54647; background-color: transparent; }
@@ -127,6 +128,9 @@ _______________________________________________________________________*/
 .node-meta .field-item { margin-right: 6px; }
 .main-content .accordion-toggle.collapsed:after { font-family: "Fontawesome"; content: "\f078"; font-style: normal !important; }
 .main-content .accordion-toggle:after { font-family: "Fontawesome"; content: "\f077"; padding-left: 10px; font-size: 19px; color: #666; font-weight: normal; font-style: normal !important; }
+.explore-work { text-transform:uppercase; font-size: 12px; color: #999; display:block; text-align: right; width: 90%; margin-top: 10px; }
+.col-sm-6 .feat-item { background: #888; text-align: center; padding: 8px; width: 100%; }
+.feat-item h4, #page-wrapper .feat-item h4 a {color: #f9f9f9}
 /* 11. Footer
 _______________________________________________________________________*/
 #footer { padding-bottom: 20px; margin-top: 5em; }
