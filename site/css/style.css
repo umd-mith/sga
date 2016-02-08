@@ -100,7 +100,6 @@ _______________________________________________________________________*/
 #main-menu { margin-bottom: 0px; background-color: #f9f9f9; border-top: 1px solid #EEEEEE; text-transform: uppercase; font-weight: 600; font-family: Arial, 'Liberation Sans', FreeSans, sans-serif; border-left: 0; border-right: 0; }
 #shadow-bottom { background-image: url(../images/shadow-bottom-thin.png); background-repeat: no-repeat; background-position: center bottom; height: 18px; margin: 0; padding: 0 }
 .menu-toggle { display: none; }
-.navbar-default .navbar-collapse { }
 .navbar-nav { width: 100%; text-align: center; }
 @media (min-width: 768px) { .navbar-nav > li { float: none; display: inline-block; } }
 .navbar-nav a { color: #494949; }
@@ -136,12 +135,12 @@ _______________________________________________________________________*/
 #footer { padding-bottom: 20px; margin-top: 5em; }
 .footer-top { margin-bottom: 12px; padding-top: 30px; border-top: 1px solid #c5beaa; }
 .footer-bottom { font-size: 12px; text-align: center; line-height: 18px; }
-.footer-bottom .disclaimer { font-size: 10px; font-style: italic; color: #666; display: block; margin: 5px 0; }
+.footer-bottom .disclaimer { font-size: 10px; font-style: italic; color: #666; display: block; margin-top:5px; margin-bottom:5px; }
 #footer .credits { font-size: 11px; color: #6F6F6F; margin-top: 18px; text-shadow: 1px 1px #f3f3f3; }
 #footer .credits a { color: #A39B82; }
 #footer .credits a:hover { color: #122B2B; }
 #footer .col-xs-3, #footer .col-xs-4, #footer .col-xs-2 { text-align: center; }
-.footer-top img.footer-logo { margin-bottom: 20px; }
+.footer-top img.footer-logo { margin-bottom: 40px; }
 /* 12. Viewer
 _______________________________________________________________________*/
 .detail-view-results { width: 95%; margin: 0px auto; }
@@ -337,6 +336,7 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 }
 .intro-title a i { line-height: 30px; margin-top: -9px; }
 .intro-title a[aria-expanded="true"] i { transform: rotate(180deg); }
+h2 i.fa-paragraph { font-size: 70%; }
 
 /* 17. Responsive
 _______________________________________________________________________*/
