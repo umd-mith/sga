@@ -30,6 +30,7 @@ body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif;
 
 @media (min-width:768px) {
 .container { width: 750px }
+.col-sm-4 h4 { margin-top: 0; }
 }
 
 @media (min-width:992px) {
@@ -61,8 +62,9 @@ a:hover { color: #642326; text-decoration: none; }
 a:focus { outline: none !important; }
 /* 4. Headings
 _______________________________________________________________________*/
-h1, h2, h3, h4, h5, h6 { color: #a54647; font-family: 'BorgiaPro', Georgia, serif; text-rendering: optimizelegibility; }
-#page-wrapper h1 a, #page-wrapper h2 a, #page-wrapper h3 a, #page-wrapper h4 a, #page-wrapper h5 a, #page-wrapper h6 a { color: #a54647; font-family: 'BorgiaPro', Georgia, serif; font-style: normal; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { color: #a54647; font-family: 'BorgiaPro-Regular', Georgia, serif; text-rendering: optimizelegibility; }
+#page-wrapper h1 a, #page-wrapper h2 a, #page-wrapper h3 a, #page-wrapper h4 a, #page-wrapper h5 a, #page-wrapper h6 a { color: #a54647; font-family: 'BorgiaPro-Regular', Georgia, serif; font-style: normal; text-decoration: none; }
+#page-wrapper h1 em, #page-wrapper h2 em, #page-wrapper h3 em, #page-wrapper h4 em, #page-wrapper h5 em, #page-wrapper h6 em { font-family: 'BorgiaPro-Italic', Georgia, serif; }
 h1#page-title { border-bottom: 1px solid #eeeeee; padding-bottom: 20px; }
 /* 5. Lists
 _______________________________________________________________________
@@ -278,19 +280,24 @@ h4.group-title { margin: 0 0 5px 0; }
 .pg-s .grn { color: #390; }
 .pg-s .fa-circle { width: 1.1428571428571428em; padding: 0 0.2857142857142857em; }
 .group-wk, .group-nb, .group-ms { border-width: 0; background: transparent; -webkit-box-shadow: none; box-shadow: none; }
+.group-wk h3.group-title, .group-ms h3.group-title, .group-wk h4.group-title { display:block; clear:both; }
 .group-wk h3.group-title a, .group-ms h3.group-title a { display: block; margin: 0; padding: 8px 0 8px 12px; background-color: #f3f3f3; border-left: 2px solid #C6C6C6; line-height: 25px; }
 .group-wk h4.group-title a { display: block; border-bottom: 1px dashed #ddd; margin-bottom: 5px; padding-bottom: 3px; }
 .group-wk a[role="button"] i { font-size: 14px; border-left: #A8A8A8 1px dotted; border-radius: 0; padding: 9px 12px; margin-top: -8px; }
 .group-wk h4.group-title a[role="button"] i { font-size: 12px; line-height: 9px; border-left: 0; }
 .group-wk .group-title a[aria-expanded="true"] i { transform: rotate(180deg); border-left: 0; border-right: #a8a8a8 1px dotted; }
 .progress { height: 10px; width: 90px; margin-bottom: 0; vertical-align: middle; display: inline-block; }
-.sources-table { width: 100%; margin-left: auto; margin-right: auto; background: white; padding: 0.5em; }
+
+.sources-table { width: 100%; margin-left: auto; margin-right: auto; margin-bottom:0; background: white; padding: 0.5em; }
 .sources-table div { text-align: left; }
 .sources-table span { display: inline-block; padding-left: 0.5em; }
-.sources-table .sources-header { text-align: left; background-color: #e6e6e6; padding-bottom: 0.5em; padding-top: 0.5em; }
+.sources-table .sources-header { text-align: left; background-color: #e6e6e6; }
 .sources-table .sources-label { background-color: White; position: relative; z-index: 10; }
 .sources-table .sources-header .sources-label { background-color: #e6e6e6; position: relative; z-index: 10; }
 .sources-table hr { margin: 0px; bottom: .6em; border: 1px solid black; position: relative; z-index: 1; }
+.sources-table tfoot { display:none; }
+@media (max-width:660px) { .sources-table { font-size: 80%; } }
+@media (max-width:540px) { .sources-table { font-size: 60%; } }
 /* 16. About Page & Intro Pages
 _______________________________________________________________________*/
 .group-contributors .row { line-height: 20px !important; }
