@@ -125,7 +125,21 @@
 .fa-chevron-up:before {
   content: "\e014";
 }
-
+.fa-angle-right:before {
+  content: "\e015";
+}
+.fa-angle-left:before {
+  content: "\e016";
+}
+.fa-sort-asc:before {
+  content: "\e017";
+}
+.fa-sort-desc:before {
+  content: "\e018";
+}
+.fa-paragraph:before {
+  content: "\e019";
+}
 
 
 /*
