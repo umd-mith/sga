@@ -21,14 +21,42 @@ layout: component
           </div>
         </div>
         <div id="all-results" style="display: none;">
-          <div class="r-header">
+          <div class="r-grid">
             <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
-            <div class="col-xs-3 clearfix" id="results-refine-header">
-              <div class="results-refine-header">Refine Results</div>
+            <div class="col-sm-3 col-xs-7 clearfix">
+              <div id="results-refine-header" class="results-refine-header r-header">Refine Results</div>
+              <div class="refine-results" id="refine-results">
+                <div class="panel" id="r-list-work">
+                  <div class="panel-heading">Work</div>
+                  <div class="list-group"> </div>
+                </div>
+                <!--/panel -->
+                <div class="panel" id="r-list-notebook">
+                  <div class="panel-heading">Manuscript</div>
+                  <div class="list-group"> </div>
+                </div>
+                <!--/panel -->
+                <div class="panel" id="r-list-hand">
+                  <div class="panel-heading">Hand</div>
+                  <div class="list-group"></div>
+                </div>
+                <!--/panel -->
+                <div class="panel" id="r-list-rev">
+                  <div class="panel-heading">Revisions</div>
+                  <div class="list-group"></div>
+                </div>
+                <!--/panel -->
+                <div class="panel" id="r-list-sketches">
+                  <div class="panel-heading">Sketches</div>
+                  <div class="list-group"> </div>
+                </div>
+                <!--/panel --> 
+              </div>
             </div>
             <!--/col-->
-            <div class="col-xs-9 clearfix" id="results-info-sort">
-              <div class="results-info-sort">
+            <div class="col-sm-9 col-xs-12">
+          <div class="" id="usr-msg"> <span class="alert alert-info"></span> </div>
+            <div id="results-info-sort" class="results-info-sort r-header">
                 <form class="form-inline">
                   <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
                   <div class="r-sorting pull-left">
@@ -56,48 +84,20 @@ layout: component
                 </form>
               </div>
               <!--/results-info-sort--> 
-            </div>
-            <!--/col--> 
-          </div>
-          <!--/r-header-->
-          <div class="col-xs-3 refine-results" id="refine-results">
-            <div class="panel" id="r-list-work">
-              <div class="panel-heading">Work</div>
-              <div class="list-group"> </div>
-            </div>
-            <!--/panel -->
-            <div class="panel" id="r-list-notebook">
-              <div class="panel-heading">Manuscript</div>
-              <div class="list-group"> </div>
-            </div>
-            <!--/panel -->
-            <div class="panel" id="r-list-hand">
-              <div class="panel-heading">Hand</div>
-              <div class="list-group"></div>
-            </div>
-            <!--/panel -->
-            <div class="panel" id="r-list-rev">
-              <div class="panel-heading">Revisions</div>
-              <div class="list-group"></div>
-            </div>
-            <!--/panel -->
-            <div class="panel" id="r-list-sketches">
-              <div class="panel-heading">Sketches</div>
-              <div class="list-group"> </div>
-            </div>
-            <!--/panel --> 
-          </div>
-          <div class="col-xs-9" id="usr-msg"> <span class="alert alert-info"></span> </div>
-          <div class="col-xs-9 results-grid" id="results-grid">
+               <div class="results-grid" id="results-grid">
             <div class="panel">
               <ul class="media-list list-group">
               </ul>
             </div>
             <!-- /panel --> 
+          </div>              
+            </div>
+            <!--/col--> 
           </div>
-          <div class="row r-footer">
-            <div class="col-xs-9 col-xs-offset-3" id="results-info-sort">
-              <div class="results-info-sort">
+
+          <div class="r-footer">
+            <div class="col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+            <div id="results-info-sort-footer" class="results-info-sort results-info-sort-footer">
                 <form class="form-inline">
                   <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div>
                   <div class="r-sorting pull-left">
@@ -125,7 +125,6 @@ layout: component
                 </form>
               </div>
             </div>
-            <!--/results-info-sort--> 
           </div>
           <!--/r-footer--> 
         </div>

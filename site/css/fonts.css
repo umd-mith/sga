@@ -140,6 +140,10 @@
 .fa-paragraph:before {
   content: "\e019";
 }
+.fa-times:before, .fa-remove:before {
+  content: "\e01a";
+}
+
 
 
 /*

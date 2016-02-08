@@ -211,7 +211,8 @@ _______________________________________________________________________*/
 #search-bar .btn { background: #a54647; border-color: #a54647; }
 #search-bar .btn i { color: #ffffff; }
 #search-instructions { font-size: 0.9em; }
-#search-instructions h4 { margin-top: 0; margin-bottom: 0.5em; }
+#search-instructions h4 { margin-bottom: 0.5em; }
+@media (min-width: 768px) { #search-instructions h4 { margin-top: 0; } }
 #usr-msg { display: none; border: none; font-size: larger; text-align: center; }
 #usr-msg span { display: block; }
 #usr-msg.error { background-image: none; }
@@ -220,7 +221,7 @@ _______________________________________________________________________*/
 .r-header { margin-top: 2em; margin-bottom: 1em; }
 .r-header .r-results-header { background: #ececec; margin-right: 15px; width: 100%; }
 .r-footer { margin-top: 1em; }
-.results-refine-header { text-transform: uppercase; height: 3.5em; background: #ececec; padding: 10px 15px; z-index: 1; }
+.results-refine-header { text-transform: uppercase; overflow: auto; margin-bottom:10px; background: #ececec; padding: 10px 15px; z-index: 1; }
 .results-info-sort { height: 3.5em; background: #ececec; padding: 10px 15px; z-index: 1; }
 .results-info-sort .pull-left { margin-right: 15px; }
 .results-info-sort .pagination { margin: 0; }
