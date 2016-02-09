@@ -42,7 +42,7 @@
                         <idno type="Bod">MS. Shelley e.2</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem class="#work">
+                        <msItem class="#work_part">
                             <bibl status="fair_copy">
                                 <author>Percy Shelley</author>
                                 <title>Prometheus Unbound</title>
@@ -172,7 +172,7 @@
                         <idno type="Bod">MS. Shelley e. 3</idno>
                     </msIdentifier>
                     <msContents>
-                        <msItem class="#work">
+                        <msItem class="#work_part">
                             <bibl status="fair_copy">
                                 <author>Percy Shelley</author>
                                 <title>Prometheus Unbound</title>

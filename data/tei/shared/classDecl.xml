@@ -4,6 +4,9 @@
         <category xml:id="work">
             <catDesc>A work in the Shelley-Godwin Archive, e.g. Frankenstein</catDesc>
         </category>
+        <category xml:id="work_part">
+            <catDesc>Metadata about a work in the Shelley-Godwin Archive split across multiple manuscripts</catDesc>
+        </category>
         <category xml:id="notebook">
             <catDesc>A manuscript notebook containing one or more works in the Shelley-Godwin
                 Archive, e.g. Frankenstein Notebook A</catDesc>
