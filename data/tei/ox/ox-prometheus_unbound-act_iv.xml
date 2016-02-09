@@ -39,7 +39,7 @@
                     <msIdentifier>
                         <settlement>Oxford</settlement>
                         <repository>Bodleian Library, University of Oxford</repository>
-                        <idno type="Bod">MS. Shelley e.1</idno>
+                        <idno type="Bod">MS. Shelley e.1, e.3</idno>
                     </msIdentifier>
                     <msContents>
                         <msItem class="#work">
@@ -47,8 +47,7 @@
                                 <author>Percy Shelley</author>
                                 <title>Prometheus Unbound</title>
                             </bibl>
-                            <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_a">
-                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1a">
+                            <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv">
                                     <locusGrp>
                                         <locus target="#ox-ms_shelley_e1-0005
                                             #ox-ms_shelley_e1-0006 
@@ -64,8 +63,11 @@
                                             #ox-ms_shelley_e1-0016 
                                             #ox-ms_shelley_e1-0017 
                                             #ox-ms_shelley_e1-0018 
-                                            #ox-ms_shelley_e1-0019 
-                                            #ox-ms_shelley_e1-0020 
+                                            #ox-ms_shelley_e1-0019"/>
+                                        <!-- THESE TWO LINES FROM E3 -->
+                                        <locus target="#e3-0079-pu_line_1
+                                            #e3-0079-pu_line_2"/>
+                                        <locus target="#ox-ms_shelley_e1-0020 
                                             #ox-ms_shelley_e1-0021 
                                             #ox-ms_shelley_e1-0022 
                                             #ox-ms_shelley_e1-0023 
@@ -82,13 +84,8 @@
                                         <locus target="#ox-ms_shelley_e1-0063"/>
                                         <locus target="#ox-ms_shelley_e1-0069"/>
                                         <locus target="#ox-ms_shelley_e1-0071"/>
-                                        <locus target="#e1-0073-pu_line_0"/>
-                                        
+                                        <locus target="#ox-ms_shelley_e1-0073"/>
                                     </locusGrp>
-                                    <bibl>
-                                        <title>Scene 1A</title>
-                                    </bibl>
-                                </msItem>
                                 <bibl>
                                     <title>Act IV</title>
                                     <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
@@ -100,42 +97,6 @@
                     <physDesc>
                         <handDesc>
                             <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
-                        </handDesc>
-                    </physDesc>
-                </msDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Oxford</settlement>
-                        <repository>Bodleian Library, University of Oxford</repository>
-                        <idno type="Bod">MS. Shelley e. 3</idno>
-                    </msIdentifier>
-                    <msContents>
-                        <msItem class="#work">
-                            <bibl status="fair_copy">
-                                <author>Percy Shelley</author>
-                                <title>Prometheus Unbound</title>
-                            </bibl>
-                            <msItem class="#act" n="IV" xml:id="ox-ms_prometheus_unbound_act_iv_b">
-                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_iv_scene_1b">
-                                    <locusGrp>
-                                        <locus target="#e3-0079-pu_line_1
-                                            #e3-0079-pu_line_2"/>
-                                    </locusGrp>
-                                    <bibl>
-                                        <title>Scene 1B</title>
-                                    </bibl>
-                                </msItem>
-                                <bibl>
-                                    <title>Act IV</title>
-                                    <date notBefore="1819-09" notAfter="1819-12">September 1819-Fall/Winter 1819</date>
-                                </bibl>
-                            </msItem>
-                        </msItem>
-                        
-                    </msContents>
-                    <physDesc>
-                        <handDesc>
-                            <handNote scope="sole" scribeRef="#pbs"/>
                         </handDesc>
                     </physDesc>
                 </msDesc>
@@ -158,6 +119,7 @@
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0017.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0018.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0019.xml"/>
+<xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0079.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0020.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0021.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0022.xml"/>
@@ -176,6 +138,5 @@
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0069.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0071.xml"/>
 <xi:include href="ox-ms_shelley_e1/ox-ms_shelley_e1-0073.xml"/>
-<xi:include href="ox-ms_shelley_e3/ox-ms_shelley_e3-0079.xml"/>
     </sourceDoc>
 </TEI>

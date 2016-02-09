@@ -57,11 +57,8 @@
                                 </bibl>
                             </msItem>
                             <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_a">
-                                <bibl status="fair_copy">
-                                    <title>Act I</title>
-                                    <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
-                                </bibl>
-                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1a">
+                                
+                                <!--<msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1a">-->
                                     <locusGrp>
                                         <locus target="#ox-ms_shelley_e1-0038" /> 
                                         <locus target="#e1-0039-pu_line_0"/> 
@@ -131,38 +128,7 @@
                                         <locus target="#ox-ms_shelley_e1-0090"/> 
                                         <locus target="#ox-ms_shelley_e1-0092" /> 
                                         <locus target="#ox-ms_shelley_e1-0094"/>
-    
-                                    </locusGrp>
-                                    <bibl status="fair_copy">
-                                        <title>Scene 1A</title>
-                                    </bibl>                                
-                                </msItem>
-                                                            
-                            </msItem>
-                        </msItem>
-
-                    </msContents>
-                    <physDesc>
-                        <handDesc>
-                            <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
-                        </handDesc>
-                    </physDesc>
-                </msDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Oxford</settlement>
-                        <repository>Bodleian Library, University of Oxford</repository>
-                        <idno type="Bod">MS. Shelley e. 2</idno>
-                    </msIdentifier>
-                    <msContents>
-                        <msItem class="#work">
-                            <bibl status="fair_copy">
-                                <author>Percy Shelley</author>
-                                <title>Prometheus Unbound</title>
-                            </bibl>
-                            <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i_b">
-                                <msItem class="#scene" n="1" xml:id="ox-ms_prometheus_unbound_act_i_a_scene_1b">
-                                    <locusGrp>
+                                        <!-- E2 from here on -->
                                         <locus target="#ox-ms_shelley_e2-0004"/>
                                         <locus target="#ox-ms_shelley_e2-0006 
                                             #ox-ms_shelley_e2-0007
@@ -188,23 +154,25 @@
                                         <locus target="#ox-ms_shelley_e2-0040"/>
                                         <locus target="#ox-ms_shelley_e2-0042"/>
                                     </locusGrp>
-                                    <bibl status="fair_copy">
-                                        <title>Scene 1B</title>
-                                    </bibl>
-                                </msItem>
+                                    <!--<bibl status="fair_copy">
+                                        <title>Scene 1A</title>
+                                    </bibl>-->                                
+                                <!--</msItem>-->
                                 <bibl status="fair_copy">
                                     <title>Act I</title>
                                     <date notBefore="1819-03" notAfter="1819-04">End of March 1819-End of April 1819</date>
-                                </bibl>
+                                </bibl>                  
                             </msItem>
                         </msItem>
+
                     </msContents>
                     <physDesc>
                         <handDesc>
-                            <handNote scope="sole" scribeRef="#pbs" />
+                            <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
+                
             </sourceDesc>
         </fileDesc>
     </teiHeader>
