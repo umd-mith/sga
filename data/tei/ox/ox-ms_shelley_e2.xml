@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">MS Shelley E2</title>
+                <title type="main">Prometheus Unbound and others, MS. Shelley e.2</title>
                 <title type="sub">An electronic transcription</title>
                 <respStmt xml:id="md_editor">
                     <resp>Metadata editor</resp>
@@ -43,7 +43,7 @@
                     <msContents>
                         <msItem class="#work">
                             <bibl status="fair_copy">
-                                <author>Percy Shelley</author>
+                                <author>Percy Bysshe Shelley</author>
                                 <title>Prometheus Unbound</title>
                             </bibl>
                             <msItem class="#act" n="I" xml:id="ox-ms_prometheus_unbound_act_i">
@@ -203,7 +203,7 @@
                                 <locus target="#ox-ms_shelley_e2-0063"/> 
                             </locusGrp>
                             <bibl status="fair_copy">
-                                <author>Percy Shelley</author>
+                                <author>Percy Bysshe Shelley</author>
                                 <title type="main">Misery.--A Fragment</title>
                                 <date notBefore="1819-03" notAfter="1819-12">March 1819-[?December 1819]</date>
                             </bibl>

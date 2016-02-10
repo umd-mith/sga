@@ -5,8 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Plato's Ion</title>
-                <title type="sub">Translated by Percy Shelley</title>
+                <title type="main">Percy Shelley's translation of Plato's <title>Ion</title></title>
                 <title type="sub">An electronic transcription</title>
                 <respStmt xml:id="md_editor">
                     <resp>Metadata editors</resp>
@@ -257,7 +256,7 @@
                                 <locus target="#ox-ms_shelley_e1-0002"/>
                             </locusGrp>
                             <bibl status="draft">
-                                <author>Percy Shelley</author>
+                                <author>Percy Bysshe Shelley</author>
                                 <title type="main">Plato's Ion</title>
                                 <date notBefore="1819-12" notAfter="1820-08">December 1819 - August 1820</date>
                             </bibl>

@@ -47,7 +47,7 @@
                     <msContents>
                         <msItem class="#work">
                             <bibl status="draft">
-                                <author>Mary Shelley</author>
+                                <author>Mary Wollstonecraft Shelley</author>
                                 <title>Frankenstein</title>
                             </bibl>
                             <msItem class="#miscellaneous">
@@ -222,7 +222,7 @@
                     </msContents>
                     <physDesc>
                         <handDesc>
-                            <handNote scope="major" xml:id="mws"><persName>Mary Shelley</persName></handNote>
+                            <handNote scope="major" xml:id="mws"><persName>Mary Wollstonecraft Shelley</persName></handNote>
                             <handNote scope="minor" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
                         </handDesc>
                     </physDesc>

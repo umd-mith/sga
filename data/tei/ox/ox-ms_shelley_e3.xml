@@ -6,7 +6,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">MS Shelley E3</title>
+                <title type="main">Prometheus Unbound and others, MS. Shelley e.3</title>
                 <title type="sub">An electronic transcription</title>
                 <respStmt xml:id="md_editor">
                     <resp>Metadata editor</resp>
@@ -43,7 +43,7 @@
                     <msContents>
                         <msItem class="#work">
                             <bibl status="fair_copy">
-                                <author>Percy Shelley</author>
+                                <author>Percy Bysshe Shelley</author>
                                 <title>Prometheus Unbound</title>
                             </bibl>
                             <msItem class="#act" n="II" xml:id="ox-ms_prometheus_unbound_act_ii_b">
@@ -306,7 +306,7 @@
                                     #e3-0045-oth_line_3"/>
                             </locusGrp>
                             <bibl status="fair_copy">
-                                <author>Percy Shelley</author>
+                                <author>Percy Bysshe Shelley</author>
                                 <title type="main">Ode to Heaven</title>
                                 <date notAfter="1819-12">late 1819</date>
                             </bibl>
