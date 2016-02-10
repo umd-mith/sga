@@ -217,8 +217,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         citation["year"] = dateParts[dateParts.length-1]
 
       if noColon["dctitle"]?
-        notebook = if noColon["label"]? then noColon["label"] else ""
-        citation["title"] = noColon["dctitle"] + " - " + notebook
+        citation["title"] = if noColon["label"]? then noColon["label"] else ""
 
       $('#cite-manifest').html @citationTemplate(citation)
 
