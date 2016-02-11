@@ -101,6 +101,8 @@ _______________________________________________________________________*/
 #header { padding-top: 15px; padding-bottom: 0px; background: #f9f9f9; }
 #header #logo { float: none; text-align: center; text-shadow: none; background-color: transparent; border: 0; margin: 0px auto; padding: 5px 0; }
 .not-front #header #logo a img { max-height: 110px; }
+.gen-editors { text-align: center; font-weight: 200; font-family: "BorgiaPro Regular", 'Georgia', serif; color: #959393; padding: 10px 0; font-size: 12px; }
+.gen-editors span { font-style: italic; }
 /* 8. Menu
 _______________________________________________________________________*/
 #main-menu { margin-bottom: 0px; background-color: #f9f9f9; border-top: 1px solid #EEEEEE; text-transform: uppercase; font-weight: 600; font-family: Arial, 'Liberation Sans', FreeSans, sans-serif; border-left: 0; border-right: 0; }
