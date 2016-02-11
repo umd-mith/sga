@@ -63,15 +63,7 @@ layout: component
       <h6 class="pg-n"><%=label%></h6>
         <p class="pg-s"><i class="fa fa-circle <%=status.t%>" title="Transcription Status"></i><i class="fa fa-circle <%=status.m%>" title="Metadata Status"></i></p>
     </div>    
-  </div>
-  <% if (position % 6 == 0) { %>
-      <div class="clearfix visible-lg visible-sm visible-xs"></div>
-      <div class="clearfix visible-sm visible-xs"></div>    
-    <% } else if (position % 4 == 0) { %>
-      <div class="clearfix visible-md"></div>
-    <% } else if (position % 3 == 0) { %>
-      <div class="clearfix visible-sm visible-xs"></div>
-    <% } %>
+  </div>  
 </script>
 <script>
 (function($){
