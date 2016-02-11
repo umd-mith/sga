@@ -24,7 +24,13 @@
 
 /* 1. General
 _______________________________________________________________________*/
-body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 18px; background: url("../images/bg-page.png") repeat 0 0; color: #212121; }
+body { font-family: 'Open Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; line-height: 1.5; background: url("../images/bg-page.png") repeat 0 0; color: #212121; }
+@media only screen and (min-width:999px) { 
+body { font-size: 15px; } 
+}
+@media only screen and (max-width:768px) {
+body { font-size: 15px; }
+}
 #page-wrapper { background: url("../images/bg-gradient.png") repeat-x -40px 187px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
 
