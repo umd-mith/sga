@@ -143,6 +143,12 @@
 .fa-times:before, .fa-remove:before {
   content: "\e01a";
 }
+.fa-caret-left:before {
+  content: "\e01b";
+}
+.fa-caret-right:before {
+  content: "\e01c";
+}
 
 
 

@@ -133,8 +133,8 @@ _______________________________________________________________________*/
 .node-meta .field-name-field-tags, .node-meta .field-label, .node-meta .field-items, .node-meta .field-item { display: inline-block; }
 .node-meta .field-label { font-size: 12px; font-weight: normal; margin-left: 24px; }
 .node-meta .field-item { margin-right: 6px; }
-.main-content .accordion-toggle.collapsed:after { font-family: "Fontawesome"; content: "\f078"; font-style: normal !important; }
-.main-content .accordion-toggle:after { font-family: "Fontawesome"; content: "\f077"; padding-left: 10px; font-size: 19px; color: #666; font-weight: normal; font-style: normal !important; }
+/*#main-content .accordion-toggle.collapsed:after { font-family: "mith-icons"; content: "\e017"; font-style: normal !important; }
+#main-content .accordion-toggle:after { font-family: "mith-icons"; content: "\e018"; padding-left: 10px; font-size: 19px; color: #666; font-weight: normal; font-style: normal !important; }*/
 .explore-work { text-transform:uppercase; font-size: 12px; color: #999; display:block; text-align: right; width: 90%; margin-top: 10px; }
 .col-sm-6 .feat-item { background: #888; text-align: center; padding: 8px; width: 100%; }
 .feat-item h4, #page-wrapper .feat-item h4 a {color: #f9f9f9}
@@ -207,7 +207,7 @@ ul.circle-yes li:before { background-color: #a54647; }
 .ui-widget-content { border: 0; background: transparent; }
 #page-location .res { background-color: transparent; border-bottom: 1px solid #fff; border-top: 2px solid #a54647; }
 #page-location .ui-slider-handle { opacity: 0.9; left: 12px; border: none; font-size: 10px; color: #494949; background: transparent; text-decoration: none; padding: 2px 5px 0px 2px; line-height: 18px; height: 2.2em; }
-#page-location .ui-slider-handle:before { font-family: "Fontawesome"; content: "\f0d9"; color: #999999; font-size: 16px; display: inline; position: relative; left: -7px; top: 2px; line-height: 18px; }
+#page-location .ui-slider-handle:before { font-family: "mith-icons"; content: "\e01b"; color: #999999; font-size: 16px; display: inline; position: relative; left: -7px; top: 2px; line-height: 18px; }
 #page-location .ui-slider-handle.ui-state-hover, .ui-slider-handle.ui-state-active { opacity: 1; }
 /*Meta */
 .detail-view-meta .row:first-child { padding-top: 1.25em; }
