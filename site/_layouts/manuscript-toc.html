@@ -41,7 +41,7 @@ layout: component
 </script> 
   <script type="text/template" id="canvas-template">
   <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-4">          
-    <a href="<%=scUrl%>"><img class="img-thumbnail" src="<%=imgUrl%>"/></a>
+    <a href="<%=scUrl%>"><img class="img-thumbnail" src="<%=imgUrl%>" onerror="this.src='https://placeholdit.imgix.net/~text?txtsize=30&txt=Image+temporarily+unavailable&w=170&h=215&txttrack=0';"/></a>
     <div class="mask">
       <h6 class="pg-n"><%=label%></h6>
         <p class="pg-s"><i class="fa fa-circle <%=status.t%>" title="Transcription Status"></i><i class="fa fa-circle <%=status.m%>" title="Metadata Status"></i></p>
