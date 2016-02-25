@@ -101,7 +101,7 @@ _______________________________________________________________________*/
 #header { padding-top: 15px; padding-bottom: 0px; background: #f9f9f9; }
 #header #logo { float: none; text-align: center; text-shadow: none; background-color: transparent; border: 0; margin: 0px auto; padding: 5px 0; }
 .not-front #header #logo a img { max-height: 110px; }
-.gen-editors { text-align: center; font-weight: 200; font-family: "BorgiaPro Regular", 'Georgia', serif; color: #646464; padding-top: 10px; font-size: 16px; }
+.gen-editors { text-align: center; font-weight: 600; font-family: "BorgiaPro Regular", 'Georgia', serif; color: #646464; padding-top: 10px; font-size: 16px; }
 .gen-editors span { font-style: italic; }
 /* 8. Menu
 _______________________________________________________________________*/
