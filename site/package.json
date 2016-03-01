@@ -3,25 +3,25 @@
   "repository": "https://github.com/umd-mith/sga",
   "version": "1.0.0",
   "devDependencies": {
+    "OpenSeadragon": "git+https://openseadragon@github.com/openseadragon/openseadragon.git#v2.1.0",
+    "backbone": "~1.2.1",
     "bootstrap": "^3.3.5",
     "coffee-script": "^1.9.3",
     "font-awesome": "^4.3.0",
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
     "jquery": "^2.1.4",
+    "jquery-ui-bundle": "~1.11.4",
+    "less": "~2.5.1",
     "modernizr": "^3.0.0-alpha.4",
     "napa": "^1.2.0",
-    "openseadragon": "git://github.com/openseadragon/openseadragon.git#v2.0.0",
-    "underscore": "~1.8.3",
     "npm-build-tools": "~2.1.1",
-    "jquery-ui-bundle": "~1.11.4",
-    "backbone": "~1.2.1",
-    "less": "~2.5.1",
-    "grunt-cli": "~0.1.13",
-    "grunt": "~0.4.5"
+    "openseadragon": "git://github.com/openseadragon/openseadragon.git#v2.1.0",
+    "underscore": "~1.8.3"
   },
   "scripts": {
-    "install": "napa malsup/cycle && npm run build && jekyll build",
+    "install": "napa malsup/cycle && npm run build",
     "build": "npm run build:components && npm run build:dependencies && npm run build:assets",
-
     "build:components": "npm run build:viewer && npm run build:search && npm run build:toc",
     "build:viewer": "npm run less:viewer && npm run concat:js:viewer_deps && npm run concat:js:viewer && coffee -o js js/SGAviewer.coffee",
     "build:search": "coffee -o js -c components/search/SGAsearch.coffee",
@@ -30,16 +30,13 @@
     "build:dependencies": "npm run concat:js:dependencies && npm run concat:js:component_deps && npm run concat:js:viewer_deps && npm run build:openseadragon",
     "build:openseadragon": "npm run setup:openseadragon && grunt --base node_modules/OpenSeadragon/ --gruntfile node_modules/OpenSeadragon/Gruntfile.js --force && npm run copy:openseadragon",
     "setup:openseadragon": "npm --prefix ./node_modules/OpenSeadragon install ./node_modules/OpenSeadragon",
-
-    "copy:openseadragon": "n-copy --source node_modules/OpenSeadragon/build/openseadragon/ --destination js openseadragon.min.js",     
+    "copy:openseadragon": "n-copy --source node_modules/OpenSeadragon/build/openseadragon/ --destination js openseadragon.min.js",
     "copy:fonts": "n-copy --source node_modules/font-awesome/fonts/ --destination fonts fontawesome-webfont.woff fontawesome-webfont.woff2 fontawesome-webfont.ttf",
     "copy:css:jqueryui": "n-copy --source node_modules/jquery-ui-bundle/ --destination css jquery-ui.min.css",
-
     "less:viewer": "lessc components/viewer/less/SGAviewer.less css/SGAviewer.css",
-
     "concat:js:viewer": "n-concat components/viewer/src/intro.coffee components/viewer/src/utils.coffee components/viewer/src/data.coffee components/viewer/src/component.coffee components/viewer/src/view.coffee components/viewer/src/router.coffee > js/SGAviewer.coffee",
     "concat:js:dependencies": "n-concat node_modules/jquery/dist/jquery.min.js node_modules/jquery-ui-bundle/jquery-ui.js node_modules/cycle/jquery.cycle.all.js node_modules/bootstrap/dist/js/bootstrap.min.js > js/dependencies.js",
     "concat:js:component_deps": "n-concat node_modules/underscore/underscore-min.js node_modules/backbone/backbone-min.js > js/component_deps.js",
-    "concat:js:viewer_deps": "n-concat components/viewer/lib/vendor/google-prettify.js components/viewer/lib/vendor/djtilesource.js > js/viewer_deps.js"
+    "concat:js:viewer_deps": "n-concat components/viewer/lib/vendor/google-prettify.js > js/viewer_deps.js"
   }
 }
