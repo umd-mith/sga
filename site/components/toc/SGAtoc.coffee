@@ -177,8 +177,13 @@ window.SGAranges = {}
         i = id_graph[img_id]
         if i.on == canvas
           i_url = i.resource
+          i_fname = i_url.replace(/^.*?\/([^\/]+.jp2)$/, "$1")
+          if i_fname.includes('ms_abinger_c')
+            i_fname = "frankenstein/" + i_fname
+          else
+            i_fname = "other/" + i_fname
           if id_graph[i_url].service?
-            img_url = id_graph[i_url].service + "?url_ver=Z39.88-2004&rft_id=" + i_url + "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=1"
+            img_url = id_graph[i_url].service + i_fname + "/full/!100,215/0/default.jpg"
           else 
             img_url = i_url
 

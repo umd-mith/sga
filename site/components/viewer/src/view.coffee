@@ -1062,7 +1062,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           @dragon.viewport.setRotation newr
 
     render: ->
-      if OpenSeadragon? and OpenSeadragon.DjatokaTileSource
+      if OpenSeadragon? and OpenSeadragon.IIIFTileSource?
 
         width = if @model.get('width')? then @model.get('width')
         height = if @model.get('height')? then @model.get('height')
@@ -1075,16 +1075,31 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
         @$el.html(innerContainer)
 
-        service = @model.get("service") 
+        service = @model.get("service")
         id = @model.get("@id")
-        settings = {tileSize: 210, tileOverlap: 0};
-        tileSource = new OpenSeadragon.DjatokaTileSource(service, id, settings);
+        img = id.replace(/^.*?\/([^\/]+.jp2)$/, "$1")
+        if img.includes('ms_abinger_c')
+          service += "frankenstein/"
+        else
+          service += "other/"
+        settings =
+          "@context": "http://iiif.io/api/image/2/context.json",
+          "@id": service + img,
+          "height": height,
+          "width": width,
+          "profile": "http://iiif.io/api/image/2/level1.json",
+          "protocol": "http://iiif.io/api/image",
+          "tiles": [
+            "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+            "width": 256
+          ]
 
         # create the OpenSeadragon Viewer with the TileSource
         @dragon = OpenSeadragon
-          id: "osd-container"
-          prefixUrl: "images/"
-          tileSources: [tileSource]
+          id: 'osd-container'
+          minZoomLevel:       1
+          defaultZoomLevel:   1
+          tileSources: [settings]
           animationTime: 0
           showNavigationControl: false
 
