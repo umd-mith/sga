@@ -266,6 +266,8 @@ SGASharedCanvas.Component = SGASharedCanvas.Component or {}
 
       # set css classes scope to be limited from HTML template
       @$el.find('input').each (i,e) =>
+        if $(e).attr("name") == "work-view"
+          @colors.visible = '#000'
         vals = $(e).val()
         vals = vals.split /\s+/g
         for v in vals
