@@ -9,53 +9,53 @@
   </zone>
   <zone type="main">
     <delSpan spanTo="#e1-0047.01" rend="unmarked"/>
-    <line>And heard, <del rend="strikethrough">&amp; cried</del>, <del rend="strikethrough">ah woe
+      <line xml:id="e1-0047-pu_line_0">And heard, <del rend="strikethrough">&amp; cried</del>, <del rend="strikethrough">ah woe
         is m</del>e!</line>
-    <line><del rend="strikethrough">And died—as the mad</del> as the <del rend="strikethrough">wild w</del>aves be</line>
-    <line rend="center">3<hi rend="sup">d.</hi></line>
-    <zone type="sketch"></zone>
-    <line>By such dread words from Earth <unclear reason="illegible">t</unclear></line>
+      <line xml:id="e1-0047-pu_line_1"><del rend="strikethrough">And died—as the mad</del> as the <del rend="strikethrough">wild w</del>aves be</line>
+      <line rend="center" xml:id="e1-0047-pu_line_2">3<hi rend="sup">d.</hi></line>
+      <zone type="sketch" xml:id="e1-0047-pu_line_3"></zone>
+      <line xml:id="e1-0047-pu_line_4">By such dread words from Earth <unclear reason="illegible">t</unclear></line>
     <anchor xml:id="e1-0047.01"/>
     <metamark function="separate" rend="line"/>
     <space dim="vertical" unit="lines" extent="1"/>
-    <line>wrought his <del rend="strikethrough">poetry</del> poem. <milestone unit="tei:speaker"
+      <line xml:id="e1-0047-ion_line_0">wrought his <del rend="strikethrough">poetry</del> poem. <milestone unit="tei:speaker"
         spanTo="#e1-0047.02"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0047.02"/>
       Assuredly</line>
-    <line>o Socrates. <milestone unit="tei:speaker" spanTo="#e1-0047.03"/><mod>
+      <line xml:id="e1-0047-ion_line_1">o Socrates. <milestone unit="tei:speaker" spanTo="#e1-0047.03"/><mod>
         <del rend="overwritten"><hi rend="underline">Ion.</hi></del>
         <add place="intralinear">Soc.</add>
       </mod><anchor xml:id="e1-0047.03"/> And the other</line>
-    <line>Poets do they not treat of the same</line>
-    <line><unclear reason="case">m</unclear>atters?— <milestone unit="tei:speaker"
+      <line xml:id="e1-0047-ion_line_2">Poets do they not treat of the same</line>
+      <line xml:id="e1-0047-ion_line_3"><unclear reason="case">m</unclear>atters?— <milestone unit="tei:speaker"
         spanTo="#e1-0047.04"/><hi rend="underline">Ion</hi><anchor xml:id="e1-0047.04"/> Certainly:
       but not like</line>
-    <line>Homer. <milestone unit="tei:speaker" spanTo="#e1-0047.05"/><hi rend="underline"
+      <line xml:id="e1-0047-ion_line_4">Homer. <milestone unit="tei:speaker" spanTo="#e1-0047.05"/><hi rend="underline"
         >Soc</hi>.<anchor xml:id="e1-0047.05"/> How, worse?— <milestone unit="tei:speaker"
         spanTo="#e1-0047.06"/>Ion.<anchor xml:id="e1-0047.06"/> Oh, far</line>
-    <line>worse! <milestone unit="tei:speaker" spanTo="#e1-0047.07"/><hi rend="underline"
+      <line xml:id="e1-0047-ion_line_5">worse! <milestone unit="tei:speaker" spanTo="#e1-0047.07"/><hi rend="underline"
         >Soc</hi>.<anchor xml:id="e1-0047.07"/> And <add place="superlinear">is</add> Homer <add
         place="superlinear">much</add> better than they?—</line>
-    <line><milestone unit="tei:speaker" spanTo="#e1-0047.08"/><hi rend="underline">Ion</hi>.<anchor
+      <line xml:id="e1-0047-ion_line_6"><milestone unit="tei:speaker" spanTo="#e1-0047.08"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0047.08"/> Oh Jupiter, how much better! <milestone unit="tei:speaker"
         spanTo="#e1-0047.09"/><hi rend="underline">Soc</hi>.<anchor xml:id="e1-0047.09"/></line>
-    <line><mod>
+      <line xml:id="e1-0047-ion_line_7"><mod>
         <del rend="strikethrough">Still</del>
         <add place="superlinear"><unclear reason="illegible">Suppose</unclear></add>
       </mod>, my dear friend Ion, <mod>
         <del rend="strikethrough">a <unclear reason="illegible">man</unclear></del>
         <add place="sublinear">several</add>
       </mod></line>
-    <line>persons are solving a problem a</line>
-    <line>problem in arithmetic, an<retrace cause="unclear">d</retrace> one alone</line>
-    <line>does it correctly: a man might</line>
-    <line>know who had given the true answer.</line>
-    <line><milestone unit="tei:speaker" spanTo="#e1-0047.10"/><hi rend="underline">Ion</hi>.<anchor
+      <line xml:id="e1-0047-ion_line_8">persons are solving a problem a</line>
+      <line xml:id="e1-0047-ion_line_9">problem in arithmetic, an<retrace cause="unclear">d</retrace> one alone</line>
+      <line xml:id="e1-0047-ion_line_10">does it correctly: a man might</line>
+      <line xml:id="e1-0047-ion_line_11">know who had given the true answer.</line>
+      <line xml:id="e1-0047-ion_line_12"><milestone unit="tei:speaker" spanTo="#e1-0047.10"/><hi rend="underline">Ion</hi>.<anchor
         xml:id="e1-0047.10"/> Certainly. <milestone unit="tei:speaker" spanTo="#e1-0047.11"/><hi
         rend="underline">Soc</hi><anchor xml:id="e1-0047.11"/>—The same as had</line>
-    <line>been aware of those who had given</line>
-    <line>the false one, or not? <milestone unit="tei:speaker" spanTo="#e1-0047.12"/><hi
+      <line xml:id="e1-0047-ion_line_13">been aware of those who had given</line>
+      <line xml:id="e1-0047-ion_line_14">the false one, or not? <milestone unit="tei:speaker" spanTo="#e1-0047.12"/><hi
         rend="underline">Ion</hi>.<anchor xml:id="e1-0047.12"/> The same</line>
-    <line>clearly. <milestone unit="tei:speaker" spanTo="#e1-0047.13"/><hi rend="underline"
+      <line xml:id="e1-0047-ion_line_15">clearly. <milestone unit="tei:speaker" spanTo="#e1-0047.13"/><hi rend="underline"
         >Soc</hi><anchor xml:id="e1-0047.13"/> That is, some one who understood</line>
   </zone>
 </surface>

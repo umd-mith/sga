@@ -531,7 +531,7 @@
                                 <elementRef key="zone"/>
                                 <elementRef key="line"/>
                                 <!-- What follows is only a subset of model.pPart.transcriptional -->
-                                <elementRef key="add"/>
+                                <!--<elementRef key="add"/>-->
                                 <elementRef key="del"/>
                                 <elementRef key="add"/>
                                 <elementRef key="unclear"/>
