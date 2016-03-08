@@ -380,8 +380,10 @@ window.SGAsearch = {}
         r.num = (res.results.indexOf(r) + 1) + page*20
         r.id = r.id.substr r.id.length - 4
         # r.shelfmark = r.shelfmark.substr r.shelfmark.length - 3
-
-        r.imageURL = "http://tiles2.bodleian.ox.ac.uk:8080/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://shelleygodwinarchive.org/images/ox/#{orig_id}.jp2&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level=0&svc.region=0,0,100,75"
+        img_sub_dir = "other/"
+        if orig_id.includes('ms_abinger_c')
+          img_sub_dir = "frankenstein/"
+        r.imageURL = "http://digital.bodleian.ox.ac.uk/fcgi-bin/iipsrv.fcgi?IIIF=/data/images/delivery/jp2s/shelleygodwin/#{img_sub_dir}/#{orig_id}.jp2/full/75,/0/native.jpg"
         r.detailQuery = "/search/f:#{fields}|q:#{query}"
 
         sr.set r
