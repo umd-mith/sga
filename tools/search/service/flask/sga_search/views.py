@@ -49,7 +49,7 @@ def search():
         fcts = ['added:'+q,'deleted:'+q,'hand_pbs:'+q,'hand_mws:'+q,'has_figure:true']
 
         for w in work_fields:
-            fcts.append("{0}:{1}".format(w, q))
+            fcts.append("{0}:({1})".format(w, q))
 
         print fcts
 
