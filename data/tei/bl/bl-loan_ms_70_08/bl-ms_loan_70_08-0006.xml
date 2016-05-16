@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2151" lry="1474" xml:id="bl-loan_ms_70_08-0006" partOf="#bl-loan_ms_70_08"   mith:folio="2v" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-2v.jp2"/>
+  <zone type="main">
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line rend="center">3</line>
+    <line>No voice from some sublimer world hath ever </line>
+    <line rend="indent1">To wisest poets these responses given</line>
+    <line rend="indent1">Therefore the name of God &#x26; Ghosts &#x26; Heaven</line>
+    <line>Remain yet records of their vain Endeavour—</line>
+    <line>Frail spells, whose uttered charm might not <add place="sublinear"><metamark>[</metamark>avail to sever</add></line>
+    <line rend="indent1">From what we feel &#x26; what we see </line>
+    <line rend="indent1">Doubt, Chance &#x26; mutability.</line>
+    <line>Thy shade alone like mists <mod><del rend="strikethrough">from</del><add place="superlinear">o’er</add></mod> mountains driv<add place="sublinear"><metamark>[</metamark>en</add></line>
+    <line rend="indent1">Or music by the night-wind sent</line>
+    <line rend="indent1">Thro’ strings of some mute instrument</line>
+    <line>Or moonlight on a forest stream </line>
+    <line>Gives truth &#x26; grace to life’s tumultuous dream.<!-- I see no evidence of a period in ms and it also appears the "d" is capitalized [DR] --></line>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line rend="center">4</line>
+    <line>Love, hope &#x26; self-esteem like clouds depart—</line>
+    <line rend="indent1">And come, for some uncertain moments lent.—</line>
+    <line rend="indent1">Man were immortal &#x26; omnipotent</line>
+    <line>Didst thou, unknown &#x26; awful as thou art </line>
+    <line>Keep with this glorious train firm state within <add place="sublinear"><metamark>[</metamark>his heart.</add></line>
+    <line rend="indent1">Thou messenger of sympathies</line>
+    <line rend="indent1">That wax &#x26; wane in lover's eyes</line>
+    <line>Thou that to the poets thought art nourishment</line>
+    <line rend="indent1">As darkness to a dying flame </line>
+    <line>Depart not as thy shadow came! </line>
+    <line>Depart not!—lest the grave should be</line>
+    <line>Like life &#x26; fear a dark reality </line>
+  </zone>
+</surface>

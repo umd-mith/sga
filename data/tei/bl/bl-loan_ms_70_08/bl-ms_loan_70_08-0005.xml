@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2118" lry="1444" xml:id="bl-loan_ms_70_08-0005" partOf="#bl-loan_ms_70_08"   mith:folio="2r" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-2r.jp2"/>
+  <zone type="library">
+    <line>2</line>
+  </zone>
+  <zone type="main">
+    <milestone unit="tei:head" spanTo="#loan_ms_70_08-0005.01"/>
+    <line rend="right">Hymn to Intellectual Beauty</line>
+    <anchor xml:id="loan_ms_70_08-0005.01"/>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line rend="center">1</line>
+    <line>The Lovely shadow of some awful Power</line>
+    <line rend="indent1">Walks though unseen amongst us, visiting</line>
+    <line rend="indent1">This peopled world with as inconstant wing</line>
+    <line>As summer winds that creep from flower to flower,</line>
+    <line><mod><add place="intralinear">Like</add><del rend="strikethrough">As</del></mod> moonbeams that behind some piny moun<add place="sublinear"><metamark>[</metamark>tain shower</add> </line>
+    <line rend="indent1">It visits with a wavering glance</line>
+    <line rend="indent1">Each human heart &#x26; countenance;—</line>
+    <line>Like hues and harmonies of evening—</line>
+    <line rend="indent1">Like clouds in starlight widely spread</line>
+    <line rend="indent1">Like memory of music fled </line>
+    <line rend="indent1">Like aught that for its grace might be</line>
+    <line>Dear, &#x26; yet dearer for its mystery. </line>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line rend="center">2</line>
+    <line>Shadow of Beauty!—that doth consecrate</line>
+    <line rend="indent1">With thine own hues all thou dost fall upon</line>
+    <line rend="indent1">Of human thought or form, Where art thou gone </line>
+    <line>Why dost thou pass away &#x26; leave our state </line>
+    <line>A dark deep vale of tears, vacant &#x26; desolate?</line>
+    <line rend="indent1">Ask why the sun light not forever</line>
+    <line rend="indent1">Weaves rainbows o’er yon mountain river</line>
+    <line>Ask why aught fades away that once is shewn </line>
+    <line rend="indent1">Ask wherefore dream &#x26; death &#x26; birth</line>
+    <line rend="indent1">Cast on the daylight of this earth</line>
+    <line>Such gloom,—why man has such a scope</line>
+    <line>For love &#x26; joy despondency &#x26; hope. </line>
+  </zone>
+</surface>

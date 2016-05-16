@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2082" lry="1444" xml:id="bl-loan_ms_70_08-0016" partOf="#bl-loan_ms_70_08"   mith:folio="7v" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-7v.jp2"/>
+  <zone type="main">
+    <line>And what were thou &#x26; Earth &#x26; Stars &#x26; Sea</line>
+    <line>If to the human minds imaginings</line>
+    <line>Silence &#x26; solitude were Vacancy  </line>
+  </zone>
+</surface>

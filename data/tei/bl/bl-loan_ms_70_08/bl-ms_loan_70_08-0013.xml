@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2118" lry="1444" xml:id="bl-loan_ms_70_08-0013" partOf="#bl-loan_ms_70_08"   mith:folio="6r" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-6r.jp2"/>
+  <zone type="library">
+    <line>6</line>
+  </zone>
+  <zone type="main">
+    <line>Ye have a <mod><del rend="strikethrough">lang</del><add place="interlinear">doctrine</add></mod>, Mountains to repeal </line>
+    <line>Large codes of fraud &#x26; woe—not understood </line>
+    <line>By all, but which the wise &#x26; great &#x26; good</line>
+    <line>Interpret, or make felt, or deeply feel. </line>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line>The fields, the lakes, the forests &#x26; the streams </line>
+    <line>Ocean, &#x26; all the living things that dwell</line>
+    <line>Within the dædal Earth, lightning &#x26; rain,</line>
+    <line>Earthquake &#x26; lava flood<!-- There is a mark here in the ms but not recorded in CPPBS; may be incidental; may be a struck-through comma? [DR] --> &#x26; hurricane— </line>
+    <line>The torpor of the year, when feeble dreams</line>
+    <line>Visit the hidden buds, or dreamless sleep  </line>
+    <line>Holds every future leaf &#x26; flower—the bound</line>
+    <line>With which from that detested trance they <add place="sublinear">leap;</add></line>
+    <line>The works &#x26; ways of man, thier death &#x26; birth </line>
+    <line>And that of him, &#x26; all that his may be,</line>
+    <line>All things that move &#x26; breathe with toil &#x26; sound  </line>
+    <line>Are born &#x26; die, revolve subside &#x26; swell—</line>
+    <line>Power dwells apart in deep tranquillity,</line>
+    <line>Remote, sublime, &#x26; inaccessible, </line>
+    <line>And this, the naked countenance of Earth </line>
+    <line>On which I gaze—even these prim&#xE6;val mountains </line>
+  </zone>
+</surface>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2170" lry="1485" xml:id="bl-loan_ms_70_08-0015" partOf="#bl-loan_ms_70_08"   mith:folio="7r" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-7r.jp2"/>
+  <zone type="library">
+    <line>7</line>
+  </zone>
+  <zone type="main">
+    <line>Shine in the gushing torrents’ restless gleam</line>
+    <line>Which from those secret chasms in tumult welling</line>
+    <line>Meet in the vale—&#x26; one majestic river</line>
+    <line>The breath &#x26; blood of distant lands, forever  </line>
+    <line>Rolls its loud waters to the Ocean waves</line>
+    <line>Breathes its swift vapours to the circling air. </line>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line>Mont Blanc yet gleams on high—the Power is there </line>
+    <line>The still &#x26; solemn Power of many sights</line>
+    <line>And many sounds, &#x26; much of life &#x26; death.  </line>
+    <line>In the calm darkness of the moonless nights </line>
+    <line>Or the lone light of day the snows descend</line>
+    <line>Upon that mountain—none beholds them there—</line>
+    <line>Nor when the sunset wraps thier flakes in fire</line>
+    <line>Or the starbeams dart thro them—winds contend  </line>
+    <line>Silently there, &#x26; heap the snows, with breath</line>
+    <line>Blasting &#x26; swift—but silently—its home </line>
+    <line>The voiceless lightning in these solitudes</line>
+    <line>Keeps innocently, &#x26; like vapour broods </line>
+    <line>Over the snow. the secret strength of things  </line>
+    <line>Which governs thought, &#x26; to the infinite dome</line>
+    <line>Of Heaven is as a collumn, rests on thee,</line>
+  </zone>
+</surface>

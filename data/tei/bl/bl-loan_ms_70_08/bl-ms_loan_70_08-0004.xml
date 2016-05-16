@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2151" lry="1474" xml:id="bl-loan_ms_70_08-0004" partOf="#bl-loan_ms_70_08"   mith:folio="1v" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-1v.jp2"/>
+  <zone type="main">
+    <milestone unit="tei:head" spanTo="#loan_ms_70_08-0004.02"/>
+    <line rend="indent2">To Laughter—</line>
+    <anchor xml:id="loan_ms_70_08-0004.02"/>
+    <line>Thy friends were never mine thou heartless <add place="sublinear">fiend:</add></line>
+    <line>Silence and solitude &#x26; calm &#x26; storm,</line>
+    <line>Hope, before whose veiled shrine all <add place="sublinear">spirits bend</add></line>
+    <line>In worship, &#x26; the rainbow vested form</line>
+    <line>Of concience, that within thy hollow heart </line>
+    <line>Can find no throne—the love of such great <add place="sublinear">powers</add> </line>
+    <line>Which ha<mod><del rend="overwritten">ve</del><add place="intralinear">s</add></mod> requited mine in many hours</line>
+    <line>Of loneliness, thou ne’er hast felt; depart!</line>
+    <line>Thou canst not bear the moons great eye, thou <add place="sublinear">fearest</add></line>
+    <line>A fair child clothed in smiles—aught that is high </line>
+    <line>Or good or beautiful.—Thy voice is dearest</line>
+    <line>To those who mock at truth &#x26; Innocency</line>
+    <line>I, now alone, weep without shame to see</line>
+    <line>How many broken hearts lie bare to thee.</line>
+  </zone>
+</surface>

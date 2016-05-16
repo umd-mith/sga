@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2118" lry="1444" xml:id="bl-loan_ms_70_08-0007" partOf="#bl-loan_ms_70_08"   mith:folio="3r" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-3r.jp2"/>
+  <zone type="library">
+    <line>3</line>
+  </zone>
+  <zone type="main">
+    <line rend="center">5</line>
+    <line>While yet a boy I sought for Ghosts, &#x26; sped</line>
+    <line rend="indent1">Thro’ many a lonely chamber, vault &#x26; ruin </line>
+    <line rend="indent1">And starlight wood, with fearful step pursuing</line>
+    <line>Hopes of strange converse with the storied dead</line>
+    <line>I called on that false name with which our youth is <add place="sublinear"><metamark>[</metamark>fed</add></line>
+    <line rend="indent1">He heard me not—I saw them not—</line>
+    <line rend="indent1">When musing deeply on the lot </line>
+    <line>Of Life, at that sweet time when winds are wooing </line>
+    <line rend="indent1">All vocal things that live to bring</line>
+    <line rend="indent1">News of buds &#x26; blossoming—</line>
+    <line rend="indent1">Sudden thy shadow fell on me</line>
+    <line>I shrieked &#x26; clasped my hands in extasy.  </line>
+    <line rend="center">6</line>
+    <line>I vowed that I would dedicate my powers </line>
+    <line rend="indent1">To thee &#x26; thine—have I not kept the vow?</line>
+    <line rend="indent1">With streaming eyes &#x26; panting heart even now</line>
+    <line>I call the spectres of a thousand hours</line>
+    <line>Each from his voiceless grave, who have in visioned <add place="sublinear"><metamark>[</metamark>bowers</add> </line>
+    <line rend="indent1">Of studious zeal or love’s delight</line>
+    <line rend="indent1">Out watched with me the waning night</line>
+    <line>To tell that never joy illumed my brow </line>
+    <line rend="indent1">Unlinked with hope that thou wouldst <add place="sublinear"><metamark>[</metamark>free</add></line>
+    <line rend="indent1">This world from its dark slavery </line>
+    <line rend="indent1">That thou, O, awful Loveliness!</line>
+    <line>Would give whate’er these words cannot express. </line>
+    <line rend="center">7</line>
+    <line>The day becomes more solemn &#x26; serene</line>
+    <line rend="indent1">When noon is past—there is a harmony</line>
+  </zone>
+</surface>
