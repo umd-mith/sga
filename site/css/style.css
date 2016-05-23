@@ -349,7 +349,7 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 .intro-title a i { line-height: 30px; margin-top: -9px; }
 .intro-title a[aria-expanded="true"] i { transform: rotate(180deg); }
 h2 i.fa-paragraph { font-size: 70%; }
-#intro-vid + p {
+p.video {
 	text-align:center;
 }
 
