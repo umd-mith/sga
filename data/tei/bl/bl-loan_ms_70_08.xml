@@ -43,66 +43,61 @@
           </msIdentifier>
           <msContents>
             <msItem class="#work">
+              <locusGrp>
+                <locus target="#bl-loan_ms_70_08-0003"/>
+              </locusGrp>
               <bibl status="fair_copy">
                 <author>Percy Bysshe Shelley</author>
                 <!-- In the hand of MWS. Where to add here? -->
                 <title>"Upon the wandering winds that thro' the sky"</title>
-              </bibl>
-              <msItem>
-                <locusGrp>
-                  <locus target="#bl-loan_ms_70_08-0003"/>
-                </locusGrp>
-              </msItem>
+              </bibl>                
             </msItem>
             <msItem class="#work">
+              <locusGrp>
+                <locus target="#bl-loan_ms_70_08-0004"/>
+              </locusGrp>
               <bibl status="fair_copy">
                 <author>Percy Bysshe Shelley</author>
                 <!-- In the hand of MWS. Where to add here? -->
                 <title>"To Laughter"</title>
               </bibl>
-              <msItem>
-                <locusGrp>
-                  <locus target="#bl-loan_ms_70_08-0004"/>
-                </locusGrp>
-              </msItem>
             </msItem>
             <msItem class="#work">
+              <locusGrp>
+                <locus target="#bl-loan_ms_70_08-0005
+                  #bl-loan_ms_70_08-0006
+                  #bl-loan_ms_70_08-0007
+                  #bl-loan_ms_70_08-0008"/>
+              </locusGrp>
               <bibl status="fair_copy">
                 <author>Percy Bysshe Shelley</author>
                 <!-- In the hand of MWS -->
                 <title>Hymn to Intellectual Beauty</title>
               </bibl>
-              <msItem>
-                <locusGrp>
-                  <locus target="#bl-loan_ms_70_08-0005
-                    #bl-loan_ms_70_08-0006
-                    #bl-loan_ms_70_08-0007
-                    #bl-loan_ms_70_08-0008"/>
-                </locusGrp>
-              </msItem>
             </msItem>
             <msItem class="#work">
+              <locusGrp>
+                <locus target="#bl-loan_ms_70_08-0009
+                  #bl-loan_ms_70_08-0012
+                  #bl-loan_ms_70_08-0011
+                  #bl-loan_ms_70_08-0010
+                  #bl-loan_ms_70_08-0013
+                  #bl-loan_ms_70_08-0014
+                  #bl-loan_ms_70_08-0015
+                  #bl-loan_ms_70_08-0016"/>
+              </locusGrp>
               <bibl status="fair_copy">
                 <author>Percy Bysshe Shelley</author>
                 <!-- In the hand of PBS -->
                 <title>Scene—Pont Pellisier in the Vale of Servox [Mont Blanc]</title>
               </bibl>
-              <msItem>
-                <locusGrp>
-                  <locus target="#bl-loan_ms_70_08-0009
-                    #bl-loan_ms_70_08-0012
-                    #bl-loan_ms_70_08-0011
-                    #bl-loan_ms_70_08-0010
-                    #bl-loan_ms_70_08-0013
-                    #bl-loan_ms_70_08-0014
-                    #bl-loan_ms_70_08-0015
-                    #bl-loan_ms_70_08-0016"/>
-                </locusGrp>
-              </msItem>
             </msItem>
           </msContents>
-          <handNote scope="major" xml:id="mws"><persName>Mary Shelley</persName></handNote>
-          <handNote scope="minor" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+          <physDesc>
+            <handDesc>
+              <handNote scope="major" xml:id="mws"><persName>Mary Shelley</persName></handNote>
+              <handNote scope="minor" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+            </handDesc>
           </physDesc>
           <history>
             <origin notBefore="1816-01" notAfter="1816-12">1816</origin>
@@ -115,19 +110,19 @@
     </encodingDesc>
   </teiHeader>
   <sourceDoc>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0003.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0004.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0005.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0006.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0007.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0008.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0009.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0010.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0011.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0012.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0013.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0014.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0015.xml"/>
-    <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0016.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0003.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0004.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0005.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0006.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0007.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0008.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0009.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0010.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0011.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0012.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0013.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0014.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0015.xml"/>
+    <xi:include href="bl-loan_ms_70_08/bl-ms_loan_70_08-0016.xml"/>
   </sourceDoc>
 </TEI>
