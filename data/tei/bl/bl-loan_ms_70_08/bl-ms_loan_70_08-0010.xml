@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2170" lry="1485" xml:id="bl-loan_ms_70_08-0010" partOf="#bl-loan_ms_70_08"   mith:folio="4v" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-4v.jp2"/>
+  <zone type="main">
+    <line>That vanishes among the viewless gales.—  </line>
+    <line>Far, far above, piercing the infinite sky</line>
+    <line>Mont Blanc appears, still, snowy &#x26; serene,</line>
+    <line>Its subject mountains their unearthly forms</line>
+    <line>Pile round it—ice &#x26; rock—broad chasms between </line>
+    <line>Of frozen waves, unfathomable deeps  </line>
+    <line>Blue as the overhanging Heaven, that spread </line>
+    <line>And wind among the accumulated steeps,</line>
+    <line>Vast desarts, peopled by the storms alone</line>
+    <line>Save when the eagle brings some hunter’s bone </line>
+    <line>And the wolf watches her—how hideously  </line>
+    <line>Its rocks are heaped around, rude bare &#x26; high</line>
+    <line>Ghastly &#x26; scarred &#x26; riven!—is this the scene</line>
+    <line>Where the old Earth quake demon taught her <add place="sublinear">young</add></line>
+    <line>Ruin? were these thier toys? or did a sea</line>
+    <line>Of fire envelope once this silent snow?  </line>
+    <line>None can reply—all seems eternal now.</line>
+    <line>This wilderness has a mysterious tongue</line>
+    <line>Which teaches awful doubt, or faith so mild</line>
+    <line>So simple, so serene that man may be </line>
+    <line>In such a faith with Nature reconciled.  </line>
+  </zone>
+</surface>

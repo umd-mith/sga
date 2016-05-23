@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2118" lry="1444" xml:id="bl-loan_ms_70_08-0009" partOf="#bl-loan_ms_70_08"   mith:folio="4r" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-4r.jp2"/>
+  <zone type="library">
+    <line>4</line>
+  </zone>
+  <zone type="main">
+    <handShift new="#pbs" medium="pen"/>
+    <milestone unit="tei:head" spanTo="#loan_ms_70_08-0009.01"/>
+    <line rend="indent2">Scene—Pont Pellisier in the vale of Servox</line>
+    <anchor xml:id="loan_ms_70_08-0009.01"/>
+    <line>In day the eternal universe of things</line>
+    <line>Flows through the mind, &#x26; rolls its rapid waves</line>
+    <line>Now dark, now glittering; now reflecting gloom</line>
+    <line>Now lending splendour, where, from secret caves</line>
+    <line>The source of human thought its tribute brings  </line>
+    <line>Of waters, with a sound not all it<unclear>'</unclear><!-- Flagging because not sure how to indicate that there may be an apostrophe here, according to CPPBS III 78 [DR] -->s own:</line>
+    <line>Such as a feeble brook will oft assume</line>
+    <line>In the wild woods among the mountains lone</line>
+    <line>Where waterfalls around it leap forever </line>
+    <line>Where winds &#x26; woods contend, &#x26; a vast river  </line>
+    <line>Over its rocks ceaselessly bursts and raves</line>
+    <space dim="vertical" unit="lines" extent="1"/>
+    <line>Thus thou Ravine of Arve, dark deep ravine,</line>
+    <line>Thou many coloured, many voiced vale!</line>
+    <line>Over whose rocks &#x26; pines &#x26; caverns sail</line>
+    <line>Fast cloud shadows &#x26; sunbeams—awful scene,  </line>
+    <line>Where Power in likeness of the Arve comes down </line>
+    <line>From the ice gulphs that gird his secret throne</line>
+  </zone>
+</surface>

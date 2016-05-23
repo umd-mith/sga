@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
+  uly="0" lrx="2118" lry="1444" xml:id="bl-loan_ms_70_08-0011" partOf="#bl-loan_ms_70_08"   mith:folio="5r" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-5r.jp2"/>
+  <zone type="library">
+    <line>5</line>
+  </zone>
+  <zone type="main">
+    <line>My own, my human mind . . which passively</line>
+    <line>Now renders &#x26; recieves fast influencings  </line>
+    <line>Holding an unforeseeing interchange</line>
+    <line>With the clear universe of things around: </line>
+    <line>A legion of swift thoughts, whose wandering wings</line>
+    <line>Now float above thy darkness, &#x26; now rest</line>
+    <line>Near the still cave of the witch Poesy </line>
+    <line>Seeking among the shadows that pass by,</line>
+    <line>Ghosts of the things that are, some form like thee, </line>
+    <line>Some spectre, some faint image; till the breast</line>
+    <line>From which they fled recalls them—thou art there </line>
+    <line>Some say that gleams of a remoter world  </line>
+    <line>Visit the soul in sleep—that death is slumber </line>
+    <line>And that its shapes the busy thoughts outnumber</line>
+    <line>Of those who wake &#x26; live. I look on high</line>
+    <line>Has some unknown omnipotence unfurled</line>
+    <line>The vail of life &#x26; death? or do I lie  </line>
+    <line>In dream, &#x26; does the mightier world of sleep</line>
+    <line>Spread far around, &#x26; inaccessibly</line>
+    <line>Its circles?—for the very spirit fails</line>
+    <line>Driven like a homeless cloud from steep to steep </line>
+  </zone>
+</surface>
