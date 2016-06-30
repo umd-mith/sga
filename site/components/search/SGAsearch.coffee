@@ -383,7 +383,26 @@ window.SGAsearch = {}
         img_sub_dir = "other/"
         if orig_id.includes('ms_abinger_c')
           img_sub_dir = "frankenstein/"
-        r.imageURL = "http://digital.bodleian.ox.ac.uk/fcgi-bin/iipsrv.fcgi?IIIF=/data/images/delivery/jp2s/shelleygodwin/#{img_sub_dir}/#{orig_id}.jp2/full/75,/0/native.jpg"
+        r.imageURL = "http://digital.bodleian.ox.ac.uk/fcgi-bin/iipsrv.fcgi?IIIF=/data/images/delivery/jp2s/shelleygodwin/#{img_sub_dir}/#{orig_id}.jp2/full/75,/0/default.jpg"
+
+
+        #                                                                       ox-ms_abinger_c56-0054
+        static_fallback_full_url = "https://s3.amazonaws.com/sga-tiles/" + orig_id.replace(/^(\w+)-([^\/]+?)-(\w+?)$/, "$1/$2/$2-$3")
+
+        $.ajax
+          url: r.imageURL,
+          type:     'GET',
+          async: false,
+          complete: (xhr) =>
+            if xhr.status != 200
+              # Figure out available sizes
+              $.ajax 
+                url: static_fallback_full_url+"/info.json"
+                type: 'GET'
+                async: false
+                success: (data) ->                       
+                  r.imageURL = static_fallback_full_url + "/full/"+data.sizes[1].width+","+data.sizes[1].height+"/0/default.jpg"
+
         r.detailQuery = "/search/f:#{fields}|q:#{query}"
 
         sr.set r

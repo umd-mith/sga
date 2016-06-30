@@ -1076,21 +1076,41 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         @$el.html(innerContainer)
 
         service = @model.get("service")
+        static_fallback_service = "https://s3.amazonaws.com/sga-tiles/"
+
         id = @model.get("@id")
         img = id.replace(/^.*?\/([^\/]+.jp2)$/, "$1")
-        if img.includes('ms_abinger_c')
-          service += "frankenstein/"
-        else
-          service += "other/"
+
+        full_url = service + img
+        static_fallback_full_url = static_fallback_service + id.replace(/^.*?\/(\w+)-([^\/]+?)-(\w+?).jp2$/, "$1/$2/$2-$3")
+        # ex: http://192.168.1.219/ox/ms_abinger_c56/ms_abinger_c56-0001
+
+        scaleFactors = [ 1, 2, 4, 8, 16]
+
+        # Check that URL is reacheable, otherwise fall back to our static tiles.
+        $.ajax
+          url: full_url,
+          type:     'GET',
+          async: false,
+          complete: (xhr) ->
+            if xhr.status == 200
+              scaleFactors.push 32
+              if img.includes('ms_abinger_c')
+                service += "frankenstein/"
+              else
+                service += "other/"
+            else 
+              full_url = static_fallback_full_url         
+        
         settings =
           "@context": "http://iiif.io/api/image/2/context.json",
-          "@id": service + img,
+          "@id": full_url,
           "height": height,
           "width": width,
           "profile": "http://iiif.io/api/image/2/level1.json",
           "protocol": "http://iiif.io/api/image",
           "tiles": [
-            "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+            "scaleFactors": scaleFactors,
             "width": 256
           ]
 

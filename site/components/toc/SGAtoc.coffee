@@ -8,6 +8,7 @@ window.SGAranges = {}
   SGAranges.Utils = {}
   SGAranges.Utils.toTitleCase = (str) ->
     str.replace(/\w\S*/g, (txt) -> txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+  SGAranges._imgTrouble = false
 
   ## MODELS ##
 
@@ -158,6 +159,7 @@ window.SGAranges = {}
       @
 
   SGAranges.processCanvas = (canv, id_graph, metadata, pos=null) =>
+
       canvas = canv["@id"]
       c = new SGAranges.Canvas()
       @clv.collection.add c
@@ -171,32 +173,75 @@ window.SGAranges = {}
       # Make URL relative so that it will work on dev, stg, and live
       sc_url = sc_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
 
+      static_fallback_service = "https://s3.amazonaws.com/sga-tiles/"
+
       img_url = ""
 
-      for img_id in metadata.images
+      _process = (img_url) => 
+        c_id = canv["@id"]
+        canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
+
+        c.set
+          "id"       : canvas_safe_id
+          "label"    : canv.label
+          "position" : c_pos
+          "scUrl"    : sc_url + "#/p" + c_pos
+          "imgUrl"   : img_url
+          "status"   : {t: "grn", m: "grn"} 
+
+      for img_id, index in metadata.images
         i = id_graph[img_id]
         if i.on == canvas
           i_url = i.resource
           i_fname = i_url.replace(/^.*?\/([^\/]+.jp2)$/, "$1")
           if i_fname.includes('ms_abinger_c')
-            i_fname = "frankenstein/" + i_fname
+            i_fname_prefixed = "frankenstein/" + i_fname
           else
-            i_fname = "other/" + i_fname
+            i_fname_prefixed = "other/" + i_fname
           if id_graph[i_url].service?
-            img_url = id_graph[i_url].service + i_fname + "/full/!100,215/0/default.jpg"
+
+            full_url = id_graph[i_url].service + i_fname_prefixed
+            static_fallback_full_url = static_fallback_service + i_fname.replace(/^.*?\/?(\w+)-([^\/]+?)-(\w+?).jp2$/, "$1/$2/$2-$3")
+            # ex: http://192.168.1.219/ox/ms_abinger_c56/ms_abinger_c56-0001
+
+            w = id_graph[i_url].width
+            tilesize = 256
+            thumbsizes = []
+
+            for level in [0..20]
+              factor = Math.pow(2.0, level)
+              sw = parseInt(w / factor + 0.5)
+              if sw < tilesize
+                  if sw < 1
+                      break
+                  thumbsizes.push(sw)
+
+            # At the first image, check that URL is reacheable, otherwise fall back to our static tiles.
+            if index == 0
+              $.ajax
+                url: full_url,
+                type:     'GET',
+                async: false,
+                complete: (xhr) =>
+                  if xhr.status != 200
+                    SGAranges._imgTrouble = true
+                    # Figure out available sizes
+                    img_url = static_fallback_full_url + "/full/"+thumbsizes[0]+",/0/default.jpg"
+                    _process(img_url)
+                  else
+                    img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
+                    _process(img_url)
+
+            else if SGAranges._imgTrouble
+              img_url = static_fallback_full_url + "/full/"+thumbsizes[0]+",/0/default.jpg"
+              _process(img_url)
+            else
+              img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
+              _process(img_url)
           else 
             img_url = i_url
-
-      c_id = canv["@id"]
-      canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
-
-      c.set
-        "id"       : canvas_safe_id
-        "label"    : canv.label
-        "position" : c_pos
-        "scUrl"    : sc_url + "#/p" + c_pos
-        "imgUrl"   : img_url
-        "status"   : {t: "grn", m: "grn"}
+            _process(img_url)
+      
 
   SGAranges.processMetadata = (data, url, attributes, el, template) =>
       flat = attributes.get("flat")
