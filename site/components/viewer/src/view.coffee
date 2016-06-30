@@ -1088,40 +1088,63 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         scaleFactors = [ 1, 2, 4, 8, 16]
 
         # Check that URL is reacheable, otherwise fall back to our static tiles.
-        $.ajax
-          url: full_url,
-          type:     'GET',
-          async: false,
-          complete: (xhr) ->
-            if xhr.status == 200
-              scaleFactors.push 32
-              if img.includes('ms_abinger_c')
-                service += "frankenstein/"
-              else
-                service += "other/"
-            else 
-              full_url = static_fallback_full_url         
-        
-        settings =
-          "@context": "http://iiif.io/api/image/2/context.json",
-          "@id": full_url,
-          "height": height,
-          "width": width,
-          "profile": "http://iiif.io/api/image/2/level1.json",
-          "protocol": "http://iiif.io/api/image",
-          "tiles": [
-            "scaleFactors": scaleFactors,
-            "width": 256
-          ]
+        if !SGASharedCanvas.imageTrouble
+          $.ajax
+            url: full_url,
+            type:     'GET',
+            complete: (xhr) ->
+              if xhr.status == 200
+                scaleFactors.push 32
+                if img.includes('ms_abinger_c')
+                  service += "frankenstein/"
+                else
+                  service += "other/"
+              else 
+                SGASharedCanvas.imageTrouble = true
+                full_url = static_fallback_full_url         
+          
+              settings =
+                "@context": "http://iiif.io/api/image/2/context.json",
+                "@id": full_url,
+                "height": height,
+                "width": width,
+                "profile": "http://iiif.io/api/image/2/level1.json",
+                "protocol": "http://iiif.io/api/image",
+                "tiles": [
+                  "scaleFactors": scaleFactors,
+                  "width": 256
+                ]
 
-        # create the OpenSeadragon Viewer with the TileSource
-        @dragon = OpenSeadragon
-          id: 'osd-container'
-          minZoomLevel:       1
-          defaultZoomLevel:   1
-          tileSources: [settings]
-          animationTime: 0
-          showNavigationControl: false
+              # create the OpenSeadragon Viewer with the TileSource
+              @dragon = OpenSeadragon
+                id: 'osd-container'
+                minZoomLevel:       1
+                defaultZoomLevel:   1
+                tileSources: [settings]
+                animationTime: 0
+                showNavigationControl: false
+
+        else
+          settings =
+            "@context": "http://iiif.io/api/image/2/context.json",
+            "@id": static_fallback_full_url,
+            "height": height,
+            "width": width,
+            "profile": "http://iiif.io/api/image/2/level1.json",
+            "protocol": "http://iiif.io/api/image",
+            "tiles": [
+              "scaleFactors": scaleFactors,
+              "width": 256
+            ]
+
+          # create the OpenSeadragon Viewer with the TileSource
+          @dragon = OpenSeadragon
+            id: 'osd-container'
+            minZoomLevel:       1
+            defaultZoomLevel:   1
+            tileSources: [settings]
+            animationTime: 0
+            showNavigationControl: false
 
       else
         throw new Error "Could not load OpenSeadragon to render JP2 image."
