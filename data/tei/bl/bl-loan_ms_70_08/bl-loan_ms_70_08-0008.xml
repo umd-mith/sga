@@ -3,8 +3,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?oxygen RNGSchema="../../../schemata/shelley-godwin-page.rng" type="xml"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="2169" lry="1484" xml:id="bl-loan_ms_70_08-0008" partOf="#bl-loan_ms_70_08"   mith:folio="3v" mith:shelfmark="Loan MS. 70 08">
-  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-3v.jp2"/>
+  uly="0" lrx="5896" lry="8602" xml:id="bl-loan_ms_70_08-0008" partOf="#bl-loan_ms_70_08"   mith:folio="3v" mith:shelfmark="Loan MS. 70 08">
+  <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-003v.jp2"/>
   <zone type="main">
     <line rend="indent1">In Autumn &#x26; a lustre in the sky </line>
     <line>Which thro’ the summer is not heard or seen<unclear>.</unclear><!-- Flagging because not sure how to indicate that there may be a period here, according to CPPBS III 78 [DR] --> </line>
