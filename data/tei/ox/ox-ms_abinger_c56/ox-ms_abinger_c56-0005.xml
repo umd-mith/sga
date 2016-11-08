@@ -29,10 +29,7 @@
     <line>regulated my fate I <mod>
         <del rend="strikethrough">wish</del>
         <add hand="#pbs" place="superlinear">desire</add>
-      </mod> the<mod>
-        <del rend="overwritten">ir</del>
-        <add place="intralinear">refore</add>
-      </mod> in this account</line>
+      </mod> the<mod xml:space="preserve"><del rend="overwritten">ir</del><add place="intralinear">refore</add></mod> in this account</line>
     <line>of my early years to state those facts which</line>
     <line>led to my<mod>
         <del rend="strikethrough">love</del>
@@ -56,7 +53,7 @@
       <del rend="strikethrough">obil</del>
       <del rend="strikethrough">obliged by the rain</del>
       <del rend="strikethrough">and</del>
-      <mod>
+      <mod xml:space="preserve">
         <del rend="overwritten">t</del>
         <add place="intralinear" hand="#pbs">T</add>
       </mod>he inclemen</line>
