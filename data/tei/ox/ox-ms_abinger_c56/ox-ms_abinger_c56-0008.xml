@@ -42,13 +42,8 @@
     <milestone unit="tei:p"/>
     <line rend="indent1">The natural ph&#xE6;nonema that takes</line>
     <line>place every day before our eyes did not</line>
-    <line>escape my exa<mod>
-        <del rend="overwritten">n</del>
-        <add place="intralinear" hand="#pbs">m</add>
-      </mod>i<mod>
-        <del rend="overwritten">m</del>
-        <add place="intralinear" hand="#pbs">n</add>
-      </mod>ations. <del rend="strikethrough">I remember</del>
+    <line>escape my exa<mod xml:space="preserve"><del rend="overwritten">n</del><add place="intralinear" hand="#pbs">m</add></mod>i<mod><del rend="overwritten">m</del><add place="intralinear" hand="#pbs">n</add></mod>ations. 
+	<del rend="strikethrough">I remember</del>
       <del rend="strikethrough">The</del></line>
     <line><del rend="strikethrough">fermentation</del>
       <del rend="strikethrough">of liquors</del> &#x2013; <del rend="strikethrough">di</del><hi
@@ -73,10 +68,8 @@
       </mod> by a gentleman whom </line>
     <line>we were in the habit of visiting.</line>
     <milestone unit="tei:p"/>
-    <line rend="indent1">The ignorance of my philosopher<mod>
-        <del rend="overwritten">es</del>
-        <add place="intralinear" hand="#pbs">s</add>
-      </mod> on these</line>
+    <line rend="indent1">The ignorance of my philosopher<mod xml:space="preserve"><del rend="overwritten">es</del><add place="intralinear" hand="#pbs">s</add></mod>
+	on these</line>
     <line>and several other points, served to decrease</line>
     <damage/>
   </zone>
