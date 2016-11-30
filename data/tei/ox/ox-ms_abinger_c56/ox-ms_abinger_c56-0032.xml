@@ -88,11 +88,7 @@
   </zone>
   <zone type="left_margin" corresp="#c-56.0032.04">
     <addSpan spanTo="#c-56.0032.05" hand="#pbs"/>
-    <line>and ha<mod>
-        <del rend="overwritten">v</del>
-        <add place="intralinear">d</add>
-        <del rend="unmarked">ng</del>
-      </mod> learned</line>
+    <line>and ha<mod xml:space="preserve"><del rend="overwritten">v</del><add place="intralinear">d</add><del rend="unmarked">ng</del></mod> learned</line>
     <line>all the professors</line>
     <line>at Ingolstadt were</line>
     <line>qualified to teach</line>

@@ -36,10 +36,7 @@
         >was</del><add place="superlinear" hand="#pbs">the</add><anchor xml:id="c56-0012.03"
         /></line>
     <line><del rend="strikethrough" xml:id="c56-0012.02">knew how</del><anchor xml:id="c56-0012.01"
-      /> pleas<mod>
-        <del type="overwritten">ed</del>
-        <add place="intralinear" hand="#pbs">ing</add>
-      </mod> her Aunt <delSpan spanTo="#c56-0012.04" rend="strikethrough"/>would</line>
+      /> pleas<mod xml:space="preserve"><del type="overwritten">ed</del><add place="intralinear" hand="#pbs">ing</add></mod> her Aunt <delSpan spanTo="#c56-0012.04" rend="strikethrough"/>would</line>
     <line>be<anchor xml:id="c56-0012.04"/> by <mod>
         <del rend="strikethrough">a painting</del>
         <add place="superlinear" hand="#pbs">the representation</add>
@@ -49,10 +46,7 @@
     <line>English <mod>
         <del rend="strikethrough">to</del>
         <add place="superlinear" hand="#pbs">that we might</add>
-      </mod> read the writ<mod>
-        <del type="overwritten">ers</del>
-        <add place="intralinear" hand="#pbs">ings</add>
-      </mod>
+      </mod> read the writ<mod xml:space="preserve"><del type="overwritten">ers</del><add place="intralinear" hand="#pbs">ings</add></mod>
       <mod>
         <del rend="strikethrough">of</del>
         <add place="superlinear" hand="#pbs">in</add>

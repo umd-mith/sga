@@ -36,9 +36,7 @@
     <line>Yet I was not <del rend="strikethrough">n</del> so mild or yielding.</line>
     <line>My application was of longer endurance</line>
     <line><del rend="strikethrough">than hers</del> but it was not so severe</line>
-    <line><del rend="strikethrough">as hers</del> whil<mod>
-        <del type="overwritten">e</del>
-        <add place="intralinear" hand="#pbs">st</add>
+    <line><del rend="strikethrough">as hers</del> whil<mod xml:space="preserve"><del type="overwritten">e</del><add place="intralinear" hand="#pbs">st</add>
       </mod> it <mod>
         <del rend="strikethrough">lasted</del>
         <add place="superlinear" hand="#pbs">endured</add>
@@ -81,10 +79,7 @@
         <add place="sublinear" xml:id="c56-0011.15" hand="#pbs">remember that</add>
       </mod> we used to</line>
     <line>act plays composed by him out of</line>
-    <line>th<mod>
-        <del rend="overwritten">is</del>
-        <add place="intralinear" hand="#pbs">ese</add>
-      </mod>
+    <line>th<mod xml:space="preserve"><del rend="overwritten">is</del><add place="intralinear" hand="#pbs">ese</add></mod>
       <del rend="strikethrough">favourite</del> books, the principal</line>
     <line><del rend="strikethrough" instant="true">car</del>characters of which were Orlando</line>
     <line>Robin Hood, Amadis and St. George&#x2013;</line>
