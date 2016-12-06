@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<schema name="sga" version="1.5">
+<schema name="sga" version="1.6">
   <types>
     <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
     <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
@@ -7,13 +7,13 @@
     <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
     <fieldType name="boolean" class="solr.BoolField" omitNorms="true"/>
 
-    <fieldType name="string" class="solr.StrField" 
+    <fieldType name="string" class="solr.StrField"
       sortMissingLast="true" omitNorms="true"/>
 
     <fieldType class="solr.TextField" name="text" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.WhitespaceTokenizerFactory" />
-        <filter class="solr.StopFilterFactory" enablePositionIncrements="true" ignoreCase="true"
+        <filter class="solr.StopFilterFactory" ignoreCase="true"
           words="stopwords.txt" />
         <filter catenateAll="0" catenateNumbers="1" catenateWords="1"
           class="solr.WordDelimiterFilterFactory" generateNumberParts="1" generateWordParts="1"
@@ -26,7 +26,7 @@
         <tokenizer class="solr.WhitespaceTokenizerFactory" />
         <filter class="solr.SynonymFilterFactory" expand="true" ignoreCase="true"
           synonyms="synonyms.txt" />
-        <filter class="solr.StopFilterFactory" enablePositionIncrements="true" ignoreCase="true"
+        <filter class="solr.StopFilterFactory" ignoreCase="true"
           words="stopwords.txt" />
         <filter catenateAll="0" catenateNumbers="0" catenateWords="0"
           class="solr.WordDelimiterFilterFactory" generateNumberParts="1" generateWordParts="1"
@@ -40,7 +40,7 @@
     <fieldType class="solr.TextField" name="text_hand" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.WhitespaceTokenizerFactory" />
-        <filter class="solr.StopFilterFactory" enablePositionIncrements="true" ignoreCase="true"
+        <filter class="solr.StopFilterFactory" ignoreCase="true"
           words="stopwords.txt" />
         <filter catenateAll="0" catenateNumbers="1" catenateWords="1"
           class="solr.WordDelimiterFilterFactory" generateNumberParts="1" generateWordParts="1"
@@ -53,7 +53,7 @@
         <tokenizer class="solr.WhitespaceTokenizerFactory" />
         <filter class="solr.SynonymFilterFactory" expand="true" ignoreCase="true"
           synonyms="synonyms.txt" />
-        <filter class="solr.StopFilterFactory" enablePositionIncrements="true" ignoreCase="true"
+        <filter class="solr.StopFilterFactory" ignoreCase="true"
           words="stopwords.txt" />
         <filter catenateAll="0" catenateNumbers="0" catenateWords="0"
           class="solr.WordDelimiterFilterFactory" generateNumberParts="1" generateWordParts="1"
@@ -64,10 +64,38 @@
       </analyzer>
     </fieldType>
 
+    <!-- A general text field that has reasonable, generic
+         cross-language defaults: it tokenizes with StandardTokenizer,
+	       removes stop words from case-insensitive "stopwords.txt"
+	       (empty by default), and down cases.  At query time only, it
+	       also applies synonyms.
+	  -->
+    <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100" multiValued="true">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <fieldType name="booleans" class="solr.BoolField" sortMissingLast="true" multiValued="true"/>
+    <fieldType name="tdates" class="solr.TrieDateField" docValues="true" precisionStep="6" positionIncrementGap="0" multiValued="true"/>
+    <fieldType name="tlongs" class="solr.TrieLongField" docValues="true" precisionStep="8" positionIncrementGap="0" multiValued="true"/>
+    <fieldType name="tdoubles" class="solr.TrieDoubleField" docValues="true" precisionStep="8" positionIncrementGap="0" multiValued="true"/>
+
   </types>
 
   <fields>
-    <field name="id" type="string" indexed="true" stored="true" required="true" /> 
+    <field name="id" type="string" indexed="true" stored="true" required="true" />
     <field name="shelfmark" type="string" indexed="true" stored="true" required="true" />
 
     <field name="shelf_label" type="string" indexed="true" stored="true" required="true" />
@@ -78,7 +106,7 @@
 
     <field name="added" type="text" multiValued="true" indexed="true" stored="true" required="false"/>
     <field name="deleted" type="text" multiValued="true" indexed="true" stored="true" required="false"/>
-    
+
     <field indexed="true" multiValued="false" name="text" stored="true" type="text"/>
 
     <field name="has_figure" type="boolean" indexed="true" stored="true" required="true" />
@@ -88,9 +116,9 @@
     <dynamicField name="*_pos" multiValued="true" type="string" indexed="true" stored="true" required="false"/>
 
     <field name="_version_" type="long" indexed="true" stored="true"/>
+    <field name="_text_" type="text_general" indexed="true" stored="false" multiValued="true"/>
 
   </fields>
 
   <uniqueKey>id</uniqueKey>
 </schema>
-
