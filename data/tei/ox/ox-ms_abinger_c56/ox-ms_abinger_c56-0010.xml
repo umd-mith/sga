@@ -74,9 +74,7 @@
       </mod> some of the</line>
     <line>easiest greek authors. &#x2013;I <add place="superlinear">also</add> understood English
       &#x26;</line>
-    <line>german perfectly: th<mod>
-        <del rend="overwritten">ese</del>
-        <add place="intralinear">is</add>
+    <line>german perfectly: th<mod xml:space="preserve"><del rend="overwritten">ese</del><add place="intralinear">is</add>
         <del rend="strikethrough">are</del>
         <add place="superlinear">is</add>
       </mod> list of my accom-</line>
