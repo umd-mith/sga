@@ -8,6 +8,7 @@
 				<respStmt xml:id="md_editor">
 					<resp>Metadata editor</resp>
 					<name xml:id="DD">Devin Doherty</name>
+				    <name xml:id="RV">Raffaele Viglianti</name>
 				</respStmt>
 			</titleStmt>
             <editionStmt>
@@ -15,7 +16,7 @@
                 </edition>
             </editionStmt>
             <publicationStmt>
-                <distributor>Oxford University</distributor>
+                <distributor>University of Maryland</distributor>
                 <address>
                     <addrLine>
                         <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
@@ -28,7 +29,7 @@
                             have waived all copyright and related or neighboring rights to this work.</p>
                     </licence>
                 </availability>
-                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+                <pubPlace>College Park, MD</pubPlace>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -38,25 +39,29 @@
                         </altIdentifier>
                     </msIdentifier>
                     <msContents>
-                        <msItem>
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="hu-hm2177-fb045v
+                                    hu-hm2177-fb046r
+                                    hu-hm2177-fb046v" />
+                            </locusGrp>
                             <bibl>
 								<author>Percy Bysshe Shelley</author>
                                 <title>To William</title>
-								<locusGrp>
-									<locus target="hu-hm2177-fb045v
-									hu-hm2177-fb046r
-									hu-hm2177-fb046v" />
-								</locusGrp>
 							</bibl>
+                            
                         </msItem>
                     </msContents>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
     </teiHeader>
     <sourceDoc>
-        <xi:include href="hu-hm2177-fb045v.xml" />
-        <xi:include href="hu-hm2177-fb046r.xml" />
-        <xi:include href="hu-hm2177-fb046v.xml" />
+        <xi:include href="hm2177/hu-hm2177-fb045v.xml" />
+        <xi:include href="hm2177/hu-hm2177-fb046r.xml" />
+        <xi:include href="hm2177/hu-hm2177-fb046v.xml" />
     </sourceDoc>
 </TEI>
