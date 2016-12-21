@@ -9,11 +9,11 @@
 	</zone>
 	<zone type="main">
 		<line><del rend="strikethrough">A melancholoy gladness</line>
-		<line>Let me think that thro low seeds</line>
-		<line>Of the <mod><del rend="strikethrough">living</del> <del rend="strikethrough">breathing</del> <add place="sublinear">sweet flowers &amp scents may pass</add></mod></line>
-		<line>A portion</line>
+		<line rend="indent1">Let me think that thro low seeds</line>
+		<line rend="indent1">Of the <mod><del rend="strikethrough">living</del> <del rend="strikethrough">breathing</del> <add place="sublinear">sweet flowers &amp scents may pass</add></mod></line>
+		<line rend="indent2">A portion</line>
 	</zone>	
-	<zone>	<!-- Following is flipped 90 degrees-->
+	<zone>	<!-- Following is flipped 90 degrees reproduced here as it appears on page-->
 		<line>A resemblance</line>
 		<line>does not consist only in avoiding<line>
 		<line>which have gone before, it</line>

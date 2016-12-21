@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title></title>
-            </titleStmt>
+                <title type="main">To William</title>
+				<respStmt xml:id="md_editor">
+					<resp>Metadata editor</resp>
+					<name xml:id="DD">Devin Doherty</name>
+				</respStmt>
+			</titleStmt>
             <editionStmt>
-                <edition>Shelley-Godwin Archive edition, <date>2015</date>
+                <edition>Shelley-Godwin Archive edition, <date>2016</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -36,8 +40,14 @@
                     <msContents>
                         <msItem>
                             <bibl>
-                                <title></title>
-                            </bibl>
+								<author>Percy Bysshe Shelley</author>
+                                <title>To William</title>
+								<locusGrp>
+									<locus target="hu-hm2177-fb045v
+									hu-hm2177-fb046r
+									hu-hm2177-fb046v" />
+								</locusGrp>
+							</bibl>
                         </msItem>
                     </msContents>
                 </msDesc>
