@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="schema/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="hu-hm2177-fb045v" ulx="0" uly="0" lrx="5412" lry="7216">
+    <graphic url="../../images/hu-hm2177-fb045v.jpg"/>
+    <zone type ="library">
+		<line rend="right">*45v.</line>
+	</zone>
+	<zone type="left_margin" rotate="90">
+		<line>Think not gold or flattery vile.</line>
+	</zone>
+	<zone type="main">
+		<line>Thou art not... if a thing divine</line>
+		<line>Like thee, can die — thy funeral shrine</line>
+		<line rend="indent1">Is thy mother's <mod><mod><del rend="strikethrough">heart</del> <add place="sublinear">grief</add></mod> <add place="superlinear">heart</add></mod> &amp; mine</line>
+		<space dim="vertical" unit="lines" extent="4"/>
+		<line><!--Greek Characters Here-->μνημη των αγαθων αeι θαλης</line> 
+		<line><unclear reason="illegible"></unclear></line>
+	</zone>
+</surface>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="schema/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="hu-hm2177-fb046r" ulx="0" uly="0" lrx="5412" lry="7216">
+    <graphic url="../../images/hu-hm2177-fb046r.jpg"/>
+    <zone type="library">
+	<line>*46r</line>
+	</zone>
+	<zone type="main">
+		<line>With what truth I may say</line>
+		<line>Roma Roma Roma</line>
+		<line>non e piu come era prima</line>
+		<line>My lost William,</line>
+		<line><mod><del rend="strikethrough">Ruined</del> <del rend="strikethrough">creature</del></mod> thou in whom</line>
+		<line rend="indent1">Some <del rend="strikethrough">sweet<del><add place="superlinear">bright</add> spirit lived, & did</line>
+		<line>That decaying robe consume</line>
+		<line rend="indent1">Which its <del rend="strikethrough">gentle lus</del> hid</line>
+		<line><del rend="strikethrough">In the</del> T<del rend="strikethrough">hy remains</del></line>
+		<line rend="indent2">Here its ashes find a tomb</line>
+		<line rend="indent2">But be</line>
+		<delSpan spanTo="#anchor1"/><line rend="indent2"><del rend="strikethrough">Under</del><add place="superlinear">But be</add>neath this pyramid</line>
+		<line rend="indent2"><del rend="strikethrough">Lie thy bones - if thou canst die</del></line>
+		<line rend="indent2">Rest thy bones- there is a shrine</line>
+		<line>Fr<unclear reason="illegible">om</unclear> thy</line><anchor xml:id="anchor1"/>
+		<line rend="indent3">Where art thou <del rend="strikethrough">gone</del> my gentle <add place="superlinear">child</add><del rend="strikethrough">boy<del></line>
+		<line rend="indent3"><mod><del rend="strikethrough">Disolved intothethe living weeds</del></line>
+		<line rend="indent3"><del rend="strikethrough">Whose</del> <del rend="strikethrough">Child I</del>Let me think thy spirit feeds</line>
+		<line rend="indent3">Within its <mod><del rend="strikethrough">young</del><add place="superlinear">life <del rend="strikethrough">small</del></add><del rend="strikethrough"><unclear reason="illegible"></unclear></del></mod> life intense</line>
+		<line rend="indent3">The <del rend="strikethrough">grass</del> <del rend="strikethrough">living</del> <add place="superlinear">love</add> of living <del rend="strikethrough">flowers</del> <add place="superlinear">leaves</add> <add place="sublinear">&amp; weeds</add>
+		<line rend="indent4">Among these tombs &amp; ruins wild</line>
+		<line rend="indent4"><del rend="strikethrough">Could I believe that</del></line>
+	</zone>
+</surface>
