@@ -7,7 +7,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-006v.jp2"/>
   <zone type="main">
     <line>Teach the adverting mind.—the Glaciers creep</line>
-    <line>Like snakes that watch thier prey, from their far <add place="sublinear">fountains</add></line>
+    <line>Like snakes that watch thier prey, from their far</line>
+    <line rend="indent6">fountains</line>
     <line>Slow rolling on:—there, many a precipice</line>
     <line>Frost &#x26; the Sun in scorn of human power</line>
     <line>Have piled<unclear>—</unclear><!-- CPPBS III p. 86 records this as possible colon. How to encode? [DR] -->dome, pyramid &#x26; pinnacle  </line>
@@ -15,7 +16,7 @@
     <line>And wall impregnable of shining ice. . . .</line>
     <line>A city’s <mod><del rend="strikethrough">spectre</del><add place="superlinear">phantom</add></mod><!-- This change not recorded in CPPBS but clear in ms --> . . but a flood of ruin</line>
     <line>Is there, that from the boundaries of the sky</line>
-    <line>Rolls its eternal stream . . vast pines are <del rend="strikethrough"><unclear unit="char" extent="6"></unclear></del><!-- This change also not recorded in CPPBS. May be "shewing" misspelled initially and re-written on line below. --><add place="sublinear">strewing</add> </line>
+    <line>Rolls its eternal stream . . vast pines are <mod><del rend="strikethrough"><unclear unit="char" extent="6"></unclear></del><!-- This change also not recorded in CPPBS. May be "shewing" misspelled initially and re-written on line below. --><add place="sublinear">strewing</add></mod> </line>
     <line>Its destined path, or in the mangled soil</line>
     <line>Branchless &#x26; shattered stand—the rocks drawn down</line>
     <line>From yon remotest waste have overthrown</line>
