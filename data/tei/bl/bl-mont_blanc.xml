@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:id="bl-mont_blanc">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Scene—Pont Pellisier in the vale of Servox [Mont Blanc]</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editor</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                </respStmt>                
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2012-2016</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>University of Maryland</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive 
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>London, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>London</settlement>
+                        <repository>British Library</repository>
+                        <idno type="BL">Loan MS 70/8</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="#bl-loan_ms_70_08-0010"/>
+                                <locus target="#bl-loan_ms_70_08-0011"/>
+                                <locus target="#bl-loan_ms_70_08-0012"/>
+                                <locus target="#bl-loan_ms_70_08-0013"/>
+                                <locus target="#bl-loan_ms_70_08-0014"/>
+                                <locus target="#bl-loan_ms_70_08-0015"/>
+                                <locus target="#bl-loan_ms_70_08-0016"/>
+                                <locus target="#bl-loan_ms_70_08-0017"/>
+                            </locusGrp>
+                            <bibl status="fair_copy">
+                                <author>Percy Bysshe Shelley</author>
+                                <title>Scene—Pont Pellisier in the vale of Servox</title>
+                                <date notBefore="1816-07-21" notAfter="1816-07-27">Between 21 and 27 July 2816.</date>
+                            </bibl>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote scope="sole" xml:id="pbs"><persName>Percy Bysshe Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
+        <revisionDesc>
+            <change who="#RV" when="2016-01-24">Added metadata.</change>          
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0010.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0011.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0012.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0013.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0014.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0015.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0016.xml" />
+        <xi:include href="bl-loan_ms_70_08/bl-loan_ms_70_08-0017.xml" />
+    </sourceDoc>
+</TEI>

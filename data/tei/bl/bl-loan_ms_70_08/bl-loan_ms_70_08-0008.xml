@@ -7,13 +7,13 @@
   <graphic url="http://shelleygodwinarchive.org/images/bl/bl-loan_ms_70_08-003v.jp2"/>
   <zone type="main">
     <line rend="indent1">In Autumn &#x26; a lustre in the sky </line>
-    <line>Which thro’ the summer is not heard or seen<unclear>.</unclear><!-- Flagging because not sure how to indicate that there may be a period here, according to CPPBS III 78 [DR] --> </line>
+    <line>Which thro’ the summer is not heard or seen<unclear>.</unclear></line>
     <line>As if it could not be—as if it had not been—</line>
     <line rend="indent1">Thus let thy shade—which like the truth</line>
     <line rend="indent1">Of Nature on my passive youth</line>
-    <line>Descended, to my <mod><del rend="strikethrough">out</del><add place="superlinear">on</add></mod>ward life supply </line>
-    <line rend="indent1">Its hues, <del rend="strikethrough">as on</del><!-- Flagging because the two deletions appear in different places, one superlinear, the other intralinear. How to encode? [DR?] -->to one that worships thee</line>
-    <line rend="indent1">And every form containing thee</line>
+    <line>Descended<add place="intralinear" hand="#pbs">,</add> to my <mod><del rend="strikethrough">out</del><add place="superlinear">on</add></mod>ward life supply </line>
+    <line rend="indent1">Its hues, <mod><del rend="strikethrough">as</del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><del rend="strikethrough">on</del> <add place="intralinear" hand="#pbs">to</add></add></mod> one that worships thee</line>
+    <line rend="indent1">And every form <add place="intralinear" hand="#pbs">containing</add> thee</line>
     <line rend="indent1">Whom fleeting power! thy spells did bind</line>
     <line>To fear himself &#x26; love all human Kind.</line>
   </zone>

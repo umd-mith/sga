@@ -11,8 +11,9 @@
   <zone type="main">
     <handShift new="#pbs" medium="pen"/>
     <milestone unit="tei:head" spanTo="#loan_ms_70_08-0009.01"/>
-    <line rend="indent2">Scene—Pont Pellisier in the vale of Servox</line>
+    <line rend="indent1">Scene—Pont Pellisier in the vale of Servox</line>
     <anchor xml:id="loan_ms_70_08-0009.01"/>
+    <space dim="vertical" unit="lines" extent="1"/>
     <line>In day the eternal universe of things</line>
     <line>Flows through the mind, &#x26; rolls its rapid waves</line>
     <line>Now dark, now glittering; now reflecting gloom</line>
