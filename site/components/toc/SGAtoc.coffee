@@ -226,14 +226,14 @@ window.SGAranges = {}
                   if xhr.status != 200
                     SGAranges._imgTrouble = true
                     # Figure out available sizes
-                    img_url = static_fallback_full_url + "/full/"+thumbsizes[0]+",/0/default.jpg"
+                    img_url = static_fallback_full_url + "/full/"+thumbsizes[1]+",/0/default.jpg"
                     _process(img_url)
                   else
                     img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
                     _process(img_url)
 
             else if SGAranges._imgTrouble
-              img_url = static_fallback_full_url + "/full/"+thumbsizes[0]+",/0/default.jpg"
+              img_url = static_fallback_full_url + "/full/"+thumbsizes[1]+",/0/default.jpg"
               _process(img_url)
             else
               img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
@@ -320,7 +320,7 @@ window.SGAranges = {}
           @clv.render '#' + range_safe_id + ' .row'
 
   SGAranges.render = (works) ->
-    base_url = "/manifests/ox/"
+    base_url = "/manifests/"
 
     works_data = []
 
