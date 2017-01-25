@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xi="http://www.w3.org/2001/XInclude">
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:id="hu-hm2177">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">To William</title>
+                <title type="main">Huntington MS HM 2177 (ff. *45v–*46v)</title>
+                <title type="sub">An electronic transcription</title>
 				<respStmt xml:id="md_editor">
-					<resp>Metadata editor</resp>
+					<resp>Metadata editors</resp>
 					<name xml:id="DD">Devin Doherty</name>
 				    <name xml:id="RV">Raffaele Viglianti</name>
 				</respStmt>
@@ -16,7 +18,7 @@
                 </edition>
             </editionStmt>
             <publicationStmt>
-                <distributor>University of Maryland</distributor>
+                <distributor>Huntington Library</distributor>
                 <address>
                     <addrLine>
                         <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
@@ -34,24 +36,34 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <altIdentifier>
-                            <idno></idno>
-                        </altIdentifier>
+                        <settlement>San Marino, California</settlement>
+                        <repository>Huntington Library</repository>
+                        <idno type="HU">MS HM 2177</idno>
                     </msIdentifier>
                     <msContents>
                         <msItem class="#work">
                             <locusGrp>
                                 <locus target="hu-hm2177-fb045v
                                     hu-hm2177-fb046r
-                                    hu-hm2177-fb046v" />
+                                    hm2177-fb046v-1
+                                    hm2177-fb046v-2
+                                    hm2177-fb046v-3
+                                    hm2177-fb046v-4" />
                             </locusGrp>
-                            <bibl>
+                            <bibl status="draft">
 								<author>Percy Bysshe Shelley</author>
                                 <title>To William</title>
-							</bibl>
-                            
+							</bibl>                            
                         </msItem>
                     </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin notBefore="1819-06-07">Not before 7 June 1819</origin>
+                    </history>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
@@ -60,8 +72,8 @@
         </encodingDesc>
     </teiHeader>
     <sourceDoc>
-        <xi:include href="hm2177/hu-hm2177-fb045v.xml" />
-        <xi:include href="hm2177/hu-hm2177-fb046r.xml" />
-        <xi:include href="hm2177/hu-hm2177-fb046v.xml" />
+        <xi:include href="hu-hm2177/hu-hm2177-fb045v.xml" />
+        <xi:include href="hu-hm2177/hu-hm2177-fb046r.xml" />
+        <xi:include href="hu-hm2177/hu-hm2177-fb046v.xml" />
     </sourceDoc>
 </TEI>
