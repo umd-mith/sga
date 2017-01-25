@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="schema/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-    xml:id="hu-hm2177-fb046v" ulx="0" uly="0" lrx="5412" lry="7216">
-    <graphic url="../../images/hu-hm2177-fb046v.jpg"/>
+	xml:id="hu-hm_2177-fb046v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="46v (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hu-hm_2177-fb046v.jp2"/>
     <zone type="library">
-	<line>*46v</line>
+		<line>*46v</line>
 	</zone>
 	<zone type="main">
-		<line xml:id="hm2177-fb046v-1"><del rend="strikethrough">A melancholoy gladness</del></line>
-		<line xml:id="hm2177-fb046v-2" rend="indent1">Let me think that thro low seeds</line>
-		<line xml:id="hm2177-fb046v-3" rend="indent1">Of the <mod><del rend="strikethrough">living</del> <del rend="strikethrough">breathing</del> <add place="sublinear">sweet flowers &amp; scents may pass</add></mod></line>
-		<line xml:id="hm2177-fb046v-4" rend="indent2">A portion</line>
-	</zone>	
-	<zone>	<!-- Following is flipped 90 degrees reproduced here as it appears on page-->
-		<line>A resemblance</line>
-		<line>does not consist only in avoiding</line>
-		<line>which have gone before, it</line>
-		<line>language different from those</line>
-		<line>or combination of metre &amp;</line>
+		<line xml:id="hm_2177-fb046v-1"><del rend="strikethrough">A melancholoy gladness</del></line>
+		<line xml:id="hm_2177-fb046v-2">Let me think that thro low seeds</line>
+		<line xml:id="hm_2177-fb046v-3">Of the <mod><del rend="strikethrough">living</del> <del rend="strikethrough">breathing</del> <add place="sublinear">sweet flowers &amp; sunny grass</add></mod></line>
+		<line xml:id="hm_2177-fb046v-4" rend="indent1">An unknown power may</line>
+		<line xml:id="hm_2177-fb046v-5" rend="indent1">Into these hues &amp; scents may pass</line>
+		<line xml:id="hm_2177-fb046v-6" rend="indent1">A portion</line>
+		
+		<!-- Following is flipped 90 degrees reproduced here as it appears on page-->
+		<space dim="vertical" unit="lines" extent="2"/>
+		<line>Originality does not consist</line>		
 		<line><del rend="strikethrough">in words &amp; names, or stories</del></line>
-		<line>Originality does not consist</line>
+		<line>or combination of metre &amp;</line>
+		<line>language different from those</line>
+		<line>which have gone before, it</line>
+		<line>does not consist only in avoiding</line>
+		<line>a resemblance</line>
+		
 	</zone>
 </surface>
