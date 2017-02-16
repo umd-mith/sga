@@ -57,8 +57,8 @@ def search():
         # text field is the only one that keeps all the text with all the whitespace
         # so all the positions are extracted from there.
         response = urllib2.urlopen(SOLR+"/select?wt=json&q="+q
-            +"&q_op=AND
-            +'&fl=shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure"
+            +"&q_op=AND"
+            +'&fl=shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure'
             +'&fq='+fqs.join(",")
             +'&start='+start
             +'&rows='+pageLength
