@@ -26,7 +26,7 @@ class TeiData :
         # (There is one solr doc per surface)   
 
         root_viewer_url = "http://shelleygodwinarchive.org/sc/"
-        preserve_titles = ["ms_shelley", "prometheus_unbound", "ms_abinger"]
+        preserve_titles = ["ms_shelley", "prometheus_unbound", "ms_abinger", "loan_ms_70_08"]
 
         tei_id = tei.get('{%s}id' % XML)
         esc_title_id = tei_id
