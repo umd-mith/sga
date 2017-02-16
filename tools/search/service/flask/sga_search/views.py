@@ -56,39 +56,39 @@ def search():
         # send query, filter by fields (AND only at the moment), return highlights on text field.
         # text field is the only one that keeps all the text with all the whitespace
         # so all the positions are extracted from there.
-        response = urllib2.urlopen(SOLR+"/select?wt=json&q="+q
-            +"&q_op=AND"
-            +'&fl=shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure'
-            +'&fq='+",".join(fqs)
-            +'&start='+start
-            +'&rows='+pageLength
-            +"&sort="+sort
-            +"&hl=true"
-            +"&hl_fl=text"
-            +"&hl_fragsize=250"
-            +"&hl_simple_pre="+hl_simple_pre
-            +"&hl_simple_post="+hl_simple_post
-            +"&hl_snippets=10"
-            +"&facet=true"
-            +"&facet_field=shelfmark"
-            +"&facet_query="+",".join(fcts)).read()
-        # response = s.raw_query(q=fields[0]+":"+q,
-        #     q_op='AND',
-        #     fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure',
-        #     fq=fqs,
-        #     wt='json',
-        #     start=start,
-        #     rows=pageLength,
-        #     sort=sort,
-        #     hl='true',
-        #     hl_fl="text",
-        #     hl_fragsize='250',
-        #     hl_simple_pre=hl_simple_pre,
-        #     hl_simple_post=hl_simple_post,
-        #     hl_snippets=10,
-        #     facet='true',
-        #     facet_field='shelfmark',
-        #     facet_query=fcts)
+        # response = urllib2.urlopen(SOLR+"/select?wt=json&q="+q
+        #     +"&q_op=AND"
+        #     +'&fl=shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure'
+        #     +'&fq='+",".join(fqs)
+        #     +'&start='+start
+        #     +'&rows='+pageLength
+        #     +"&sort="+sort
+        #     +"&hl=true"
+        #     +"&hl_fl=text"
+        #     +"&hl_fragsize=250"
+        #     +"&hl_simple_pre="+hl_simple_pre
+        #     +"&hl_simple_post="+hl_simple_post
+        #     +"&hl_snippets=10"
+        #     +"&facet=true"
+        #     +"&facet_field=shelfmark"
+        #     +"&facet_query="+",".join(fcts)).read()
+        response = s.raw_query(q=fields[0]+":"+q,
+            q_op='AND',
+            fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure',
+            fq=fqs,
+            wt='json',
+            start=start,
+            rows=pageLength,
+            sort=sort,
+            hl='true',
+            hl_fl="text",
+            hl_fragsize='250',
+            hl_simple_pre=hl_simple_pre,
+            hl_simple_post=hl_simple_post,
+            hl_snippets=10,
+            facet='true',
+            facet_field='shelfmark',
+            facet_query=fcts)
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
