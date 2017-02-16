@@ -23,9 +23,9 @@ def index():
 @sga_search.route('/search', methods = ['GET'])
 @crossdomain.crossdomain(origin='*')
 def search():
-    
+
     def do_search(s, f, q, start, fq, sort, pageLength=20):
-        """ Send query to solr and prepare slimmed down JSON object for displaying results """        
+        """ Send query to solr and prepare slimmed down JSON object for displaying results """
 
         hl_simple_pre = '<em>'
         hl_simple_post = '</em>'
@@ -39,7 +39,7 @@ def search():
 
         if fq != '':
             fqs.append(fq.split(","))
-        
+
         # Get list of works loaded in the index.
         # We need this to use them as facets
         luke_req = urllib2.urlopen(SOLR+"/admin/luke?numTerms=0").read()
@@ -56,28 +56,44 @@ def search():
         # send query, filter by fields (AND only at the moment), return highlights on text field.
         # text field is the only one that keeps all the text with all the whitespace
         # so all the positions are extracted from there.
-        response = s.raw_query(q=fields[0]+":"+q, 
-            q_op='AND',
-            fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure', 
-            fq=fqs, 
-            wt='json', 
-            start=start,
-            rows=pageLength,
-            sort=sort,
-            hl='true', 
-            hl_fl="text", 
-            hl_fragsize='250',
-            hl_simple_pre=hl_simple_pre,
-            hl_simple_post=hl_simple_post,
-            hl_snippets=10,
-            facet='true',
-            facet_field='shelfmark',
-            facet_query=fcts)
+        response = urllib2.urlopen(SOLR+"/select?wt=json&q="+q
+            +"&q_op=AND
+            +'&fl=shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure"
+            +'&fq='+fqs.join(",")
+            +'&start='+start
+            +'&rows='+pageLength
+            +"&sort="+sort
+            +"&hl=true"
+            +"&hl_fl=text"
+            +"&hl_fragsize=250"
+            +"&hl_simple_pre="+hl_simple_pre
+            +"&hl_simple_post="+hl_simple_post
+            +"&hl_snippets=10"
+            +"&facet=true"
+            +"&facet_field=shelfmark"
+            +"&facet_query="+fcts,join(",")).read()
+        # response = s.raw_query(q=fields[0]+":"+q,
+        #     q_op='AND',
+        #     fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure',
+        #     fq=fqs,
+        #     wt='json',
+        #     start=start,
+        #     rows=pageLength,
+        #     sort=sort,
+        #     hl='true',
+        #     hl_fl="text",
+        #     hl_fragsize='250',
+        #     hl_simple_pre=hl_simple_pre,
+        #     hl_simple_post=hl_simple_post,
+        #     hl_snippets=10,
+        #     facet='true',
+        #     facet_field='shelfmark',
+        #     facet_query=fcts)
         r = json.loads(response)
 
         # Start new object that will be the simplified JSON response
-        results = {            
-            "numFound": r["response"]["numFound"], 
+        results = {
+            "numFound": r["response"]["numFound"],
             "results":[],
             "facets":{ "notebooks":{} },
             "metadata": {}
@@ -113,7 +129,7 @@ def search():
             if res.get("work"):
                 results["metadata"][res["shelfmark"]]["work"] = res["work"]
 
-            ident = res["id"]            
+            ident = res["id"]
 
             res["hls"] = []
 
@@ -121,7 +137,7 @@ def search():
                 # replacing unwanted unicode chars (like ^ and other metamarks)
                 hl = " ".join(snip.replace(u"\u2038", u"").replace(u"\u2014", u"").replace(u"\u2013", u"").split())
                 res["hls"].append(hl)
-            
+
             results["results"].append(res)
 
         return jsonify(results)
@@ -132,10 +148,10 @@ def search():
     #
     # And one optional paramenter:
     # s: the starting point for the results (pagination)
-    # 
+    #
     # Eventually we might include another parameter for page size (now it's hardcoded to 20 results)
     if 2 <= len(request.args) <= 5 and "f" in request.args and "q" in request.args:
-        
+
         s = solr.SolrConnection(SOLR)
 
         # try:
@@ -143,27 +159,28 @@ def search():
         start = 0
         sort = "shelfmark asc, id asc"
         fq = ""
-        if "s" in request.args: 
+        if "s" in request.args:
             start = request.args["s"]
-        if "filters" in request.args: 
+        if "filters" in request.args:
             fq = request.args["filters"]
-        if "sort" in request.args: 
+        if "sort" in request.args:
             sort = request.args["sort"]
         return do_search(s, request.args["f"], request.args["q"], start, fq, sort)
         # except:
         #     abort(500)
 
     else:
-        abort(400)   
+        abort(400)
 
 
 @sga_search.route('/annotate', methods = ['GET'])
 @crossdomain.crossdomain(origin='*')
 def annotate():
-    
+
     def do_annotation(s, f, q):
         # This will probably stay hardcoded
-        TEI_data = "http://shelleygodwinarchive.org/tei/ox/"
+        TEI_data = "http://shelleygodwinarchive.org/tei/"
+        libraries = ["ox/", "bl/"]
         format = "jsonld"
         hl_simple_pre = '_#_'
         hl_simple_post = '_#_'
@@ -183,25 +200,26 @@ def annotate():
         # text field is the only one that keeps all the text with all the whitespace
         # so all the positions are extracted from there.
         #
-        # hl_fragsize=0 is important to calculate correct positions that SC will understand. 
-        response = s.raw_query(q=fields[0]+":"+q, 
-            fl='shelfmark,id', 
-            fq=fqs, 
-            wt='json', 
+        # hl_fragsize=0 is important to calculate correct positions that SC will understand.
+        response = s.raw_query(q=fields[0]+":"+q,
+            fl='shelfmark,id',
+            fq=fqs,
+            wt='json',
             start=0,
-            rows=9999, 
-            hl='true', 
-            hl_fl="text", 
+            rows=9999,
+            hl='true',
+            hl_fl="text",
             hl_fragsize='0',
             hl_simple_pre=hl_simple_pre,
             hl_simple_post=hl_simple_post)
         r = json.loads(response)
 
         # Find all the highlights and make them into OA annotations
-        for i, TEI_id in enumerate(r["highlighting"]):            
+        for i, TEI_id in enumerate(r["highlighting"]):
             hl = r["highlighting"][TEI_id]["text"][0]
-            
-            annotations += annotator.oa_annotations(hl, TEI_id, TEI_data, uid+":-"+str(i), hl_simple_pre, hl_simple_post, format)
+
+            for library in libraries:
+                annotations += annotator.oa_annotations(hl, TEI_id, TEI_data + library, uid+":-"+str(i), hl_simple_pre, hl_simple_post, format)
         # prepare a headless JSON
         final = {}
 
@@ -215,7 +233,7 @@ def annotate():
             else:
                 for a in anno:
                     final[a] = anno[a]
-            
+
 
         return jsonify(final)
 
@@ -223,7 +241,7 @@ def annotate():
     # f: a comma separated list of solr fields
     # q: the string that will be queryed across the fields
     if len(request.args) == 2 and "f" in request.args and "q" in request.args:
-        
+
         s = solr.SolrConnection(SOLR)
 
         # try:
@@ -233,4 +251,4 @@ def annotate():
         #     abort(500)
 
     else:
-        abort(400) 
+        abort(400)
