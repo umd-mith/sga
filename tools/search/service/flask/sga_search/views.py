@@ -71,7 +71,7 @@ def search():
             +"&hl_snippets=10"
             +"&facet=true"
             +"&facet_field=shelfmark"
-            +"&facet_query="+fcts,join(",")).read()
+            +"&facet_query="+fcts.join(",")).read()
         # response = s.raw_query(q=fields[0]+":"+q,
         #     q_op='AND',
         #     fl='shelfmark,id,work,viewer_url,authors,attribution,shelf_label,has_figure',
