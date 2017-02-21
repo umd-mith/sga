@@ -1082,7 +1082,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         img = id.replace(/^.*?\/([^\/]+.jp2)$/, "$1")
 
         full_url = service + img
-        static_fallback_full_url = static_fallback_service + id.replace(/^.*?\/(\w+)-([^\/]+?)-(\w+?).jp2$/, "$1/$2/$2-$3")
+        static_fallback_full_url = static_fallback_service + id.replace(/^.*images\/(.*?)\.jp2/, "$1")
         # ex: http://192.168.1.219/ox/ms_abinger_c56/ms_abinger_c56-0001
 
         scaleFactors = [ 1, 2, 4, 8, 16]

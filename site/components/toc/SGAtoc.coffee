@@ -201,7 +201,7 @@ window.SGAranges = {}
           if id_graph[i_url].service?
 
             full_url = id_graph[i_url].service + i_fname_prefixed
-            static_fallback_full_url = static_fallback_service + i_fname.replace(/^.*?\/?(\w+)-([^\/]+?)-(\w+?).jp2$/, "$1/$2/$2-$3")
+            static_fallback_full_url = static_fallback_service + i_url.replace(/^.*images\/(.*?)\.jp2/, "$1")
             # ex: http://192.168.1.219/ox/ms_abinger_c56/ms_abinger_c56-0001
 
             w = id_graph[i_url].width
