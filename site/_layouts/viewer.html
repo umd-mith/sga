@@ -146,6 +146,10 @@ extra_css:
                   <h3 class="meta-title">Citation</h3>
                   <h4 class="cite-page"><i class="fa fa-desktop fa-fixed-width"></i> Cite This Page</h4>
                   <div class="page-citation"> <span id="cite-manifest"></span> <span id="cite-canvas"></span> </div>
+                  {% if page.classroom %}
+                  <h3 class="meta-title" style="margin-top:2em">Credits</h3>
+                  <div class="page-citation">Encoding produced as classroom work by <a href="/about/#{{page.classroom}}">{{page.classroom}}</a></div>
+                  {% endif %}
                 </div>
               </div>
             </div>
