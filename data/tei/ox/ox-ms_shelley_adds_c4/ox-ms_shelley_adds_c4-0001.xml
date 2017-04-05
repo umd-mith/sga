@@ -7,7 +7,9 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="Notes written on front of first fasicule">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_c4-0001.jp2"/>
   <zone type="library"><line rend="right">Shelley-Rolls Folders 1-4</line></zone>
-  <zone type="left_margin"><line>*clasp</line><line>added</line><line>19-iii-1986</line></zone>
+  <zone type="left_margin">
+    <space dim="vertical" unit="lines" extent="15"/>
+    <line>*clasp</line><line>added</line><line>19-iii-1986</line></zone>
   <zone type="main">
   <line>When Sir John Shelley-Rolls presented MS. Shelley adds. C. 4 to the Bodleian in 1946,</line>
   <line>it comprised a leather box and a series of 'folders' (foolscap bifolia of lined paper)</line>
