@@ -11,7 +11,10 @@
   Folder 1.  
   </zone>
   <zone type="main">
-    <line>2 pages. 9" x 7 &fract12;"</line>
-    <line>2 <space extent="2" unit="chars">"<space extent="2" unit="chars">. 7 &fract34; x 6"</line>  
+    <line>2 pages. 9" x 7 1/2"</line>
+    <line>2 " . 7 3/4 x 6"</line>
+    
+    <line>TEST TEST TEST</line>
+    
   </zone>
 </surface>
