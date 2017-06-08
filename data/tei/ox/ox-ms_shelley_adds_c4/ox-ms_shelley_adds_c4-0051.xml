@@ -11,13 +11,15 @@
     <line><del rend="strikethrough">And others</del></line>
     <line>And others as with steps towards the tomb</line>
     <line><del rend="strikethrough">Dragging his weary limbs intent</del></line>
-    <line><del rend="strikethrough">Watched</del> Pored on</line>
-    <line><del rend="strikethrough">And others so</del>    trodden           beneath,</line>
-    <line><del rend="strikethrough">Watching</del>, the <del rend="strikethrough">mangled</del> worms that crawled <del rend="strikethrough">below</del></line>
-    <line>mournfully</line>
-    <line>And <del rend="strikethrough">some</del> others <del rend="strikethrough">miserably</del> within the gloom</line>
-    <line>own     walked,</line>
-    <line>Of their shadow <del rend="strikethrough">sate</del>, and called it death ...</line>
+    <line><del rend="strikethrough">And others</del>
+    <add place="superlinear"><del rend="strikethrough">Watched</del> Pored on</add></line>
+    <line><del rend="strikethrough">Watching</del>, the
+    <mod><del rend="strikethrough">mangled</del><add place="superlinear">trodden</add></mod>
+    worms that crawled <del rend="strikethrough">below</del><add place="superlinear">beaneath,</add></line>
+    <line>And <del rend="strikethrough">some</del> others
+    <del rend="strikethrough">miserably</del><add place="superlinear">mournfully</add> within the gloom</line>
+    <line>Of their <add place="superlinear">own</add>shadow
+    <mod><del rend="strikethrough">sate</del><add place="superlinear">walked</add></mod>, and called it death ...</line>
     <line><del rend="strikethrough">And some</del></line>
     <line><del rend="strikethrough">But many more or slow or swift pursued</del></line>
     <line>And some fled from it as it were a ghost,</line>
