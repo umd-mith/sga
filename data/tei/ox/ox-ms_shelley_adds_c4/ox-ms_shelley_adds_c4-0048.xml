@@ -6,9 +6,10 @@
   xml:id="ox-ms_shelley_adds_c4-0048" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="20r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0048.jp2"/>
+  <zone type="pagination">3)</zone>
   <zone type="main">
-    <line>As</line>
-    <line><del rend="strikethrough">As</del> clear as when a veil of light is <del rend="strikethrough">spread</del> drawn</line>
+    <line><mod><del rend="strikethrough">As</del><add place="superlinear">As</add></mod>
+     clear as when a veil of light is <del rend="strikethrough">spread</del> drawn</line>
     <line>O'er evening hills they glimmer; and I knew</line>
     <line>That I had felt the freshness of that dawn</line>
     <line>cold      brow &amp; hair</line>
