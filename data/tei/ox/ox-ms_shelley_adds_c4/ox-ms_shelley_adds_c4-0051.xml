@@ -36,7 +36,11 @@
     <line>Heard not the fountains<mod><add place="superlinear">whose</add> <del rend="strikethrough">of</del> </mod>melodious dew</line>
     <line>cells</line>
     <line>mossy   <del rend="strikethrough">caves</del> forever</line>
-    <line>Out of thier <mod><add place="superlinear">mossy</add> <del rend="strikethrough">ivied</del></mod> <del rend="strikethrough">caverns</del> <del rend="strikethrough">ever</del> burst</line>
-    <line><del rend="strikethrough">Nor saw the landscape on which they had perish</del></line>
+    <line>Out of thier <mod><add place="superlinear">mossy</add> <del rend="strikethrough">ivied</del></mod>
+    <mod><del rend="strikethrough">caverns</del>
+    <add place="superlinear"><del rend="strikethrough">caves</del></add>
+    <add place="superlinear">cells</add></mod>
+    <del rend="strikethrough">ever</del> burst</line>
+    <line><del rend="strikethrough">Nor saw the landscape on which they had perished</del></line>
   </zone>
 </surface>
