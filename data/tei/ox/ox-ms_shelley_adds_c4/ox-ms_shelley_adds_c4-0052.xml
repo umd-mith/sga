@@ -6,13 +6,13 @@
   xml:id="ox-ms_shelley_adds_c4-0052" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="22r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0052.jp2"/>
+<zone type="library">22</zone>
   <zone type="main">
-
     <line>Nor felt the breeze which from the forest
       <mod><add place="superlinear">told</add><del rend="strikethrough">brought</del></mod></line>
     <line><del rend="strikethrough">News of soft beds</del></line>
-    <line><del rend="strikethrough">glawn</del></line>
-    <line>Of grassy paths, &amp; wood lawns interspersed</line>
+    <line>Of grassy paths, &amp;<add place="superlinear"><retrace>lawn</retrace></add>
+    wood interspersed</line>
     <line>With overarching elms &amp; caverns cold</line>
     <line>brood</line>
     <line>And <del rend="strikethrough">glens</del> <del rend="strikethrough">banks of</del> sweet dreams <del rend="strikethrough">broods</del></line>
