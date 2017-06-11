@@ -43,9 +43,11 @@
      <add place="sublinear">makes
        <add place="sublinear">shakes the extinguished day</add>
         the sad Heavens grey</add></mod></line>
-
-    <line>glare</line>
-    <line>And a cold <del rend="strikethrough">light</del> intenser than the <del rend="strikethrough">Sun</del> noon</line>
+    <line>And a cold
+      <mod><add place="superlinear">glare</add>
+       <del rend="strikethrough">light</del></mod>
+        intenser than the
+        <mod> <del rend="strikethrough">Sun</del><add>Moon</add></mod></line>
     <line>obscured with</line>
     <line>But icy cold, <del rend="strikethrough">with fascinating</del> light</line>
     <line><del rend="strikethrough">Pierced</del> Heaven  &amp;  <del rend="strikethrough">covered earth</del>      Like young</line>
