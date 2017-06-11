@@ -28,8 +28,9 @@
         <add place="sublinear">that in the way</add>
         <del rend="strikethrough">the way</del>
       </mod></line>
-    <line><del rend="strikethrough">There came a</del>           as the woods of June</line>
-    <line><del rend="strikethrough">waves &amp; woods</del></line>
+    <line><del rend="strikethrough">There came a</del>
+    as the woods <add place="sublinear">
+    <del rend="strikethrough">waves &amp; woods</del></add> of June</line>
     <line>The throng grew wilder, <del rend="strikethrough">like the forest tops</del></line>
     <line>When <del rend="strikethrough">the</del> <del rend="strikethrough">blast</del> the South wind <del rend="strikethrough">turns Heaven</del></line>
     <line><del rend="strikethrough">makes the sad Heavens grey</del></line>
