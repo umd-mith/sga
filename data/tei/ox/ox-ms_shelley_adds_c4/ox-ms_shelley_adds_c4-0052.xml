@@ -24,8 +24,10 @@
     <line>And as I gazed methought <mod>
       <add place="superlinear">
         <del rend="strikethrough">along</del></add>
-        <del rend="strikethrough">upon</del> <del rend="strikethrough">the way</del></mod></line>
-    <line>that in the way</line>
+        <del rend="strikethrough">upon</del>
+        <add place="sublinear">that in the way</add>
+        <del rend="strikethrough">the way</del>
+      </mod></line>
     <line><del rend="strikethrough">There came a</del>           as the woods of June</line>
     <line><del rend="strikethrough">waves &amp; woods</del></line>
     <line>The throng grew wilder, <del rend="strikethrough">like the forest tops</del></line>
