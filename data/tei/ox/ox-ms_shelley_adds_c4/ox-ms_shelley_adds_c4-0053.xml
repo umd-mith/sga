@@ -24,8 +24,13 @@
     <mod><add place="superlinear">way</add><del rend="strikethrough">path</del></mod>
     <del rend="strikethrough">were  bruised</del>
     <add place="superlinear">&amp; spoiled</add>> &amp; trampled down</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">all the rivulets which dared to flow</del></line>
-    <line><del rend="strikethrough">every little rill which dared to flow</del></line>
+
+    <line>
+    <del rend="strikethrough">And</del>
+    <mod><add place="sublinear">
+    <del rend="strikethrough">every little rill which dared to flow</del></add>
+     <del rend="strikethrough">all the rivulets which dared to flow</del></mod></line>
+
     <line><del rend="strikethrough">And many sought <unclear>whic</unclear></del></line>
     <line><del rend="strikethrough">Beside it was choked</del></line>
     <line><del rend="strikethrough">And on a <unclear>new</unclear></del></line>
