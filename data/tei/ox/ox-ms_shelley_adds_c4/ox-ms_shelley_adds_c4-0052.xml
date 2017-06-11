@@ -69,11 +69,10 @@
 
     <line>Her white shell trembles amid crimson air</line>
     <line>And whilst the sleeping tempest gathers might</line>
-    <line>herald</line>
-    <line><mod><del rend="strikethrough">Joy Within her arms</del>
-    <add place="superlinear">her all</add></mod>
-                hape</line>
-    <line><del rend="strikethrough">When on</del></line>
-    <line>Doth, as a token of its coming, bear</line>
+    <line><mod><add place="sublinear">When in</add>
+    <del rend="strikethrough">Within her arms</del>
+    <add place="superlinear">her all</add></mod></line>
+    <line>Doth, as a <del rend="strikethrough">token</del> of its coming,
+    <add place="superlinear">hope</add>bear</line>
   </zone>
 </surface>
