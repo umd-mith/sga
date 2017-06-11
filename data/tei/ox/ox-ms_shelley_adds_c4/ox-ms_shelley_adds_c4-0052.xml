@@ -48,8 +48,9 @@
        <del rend="strikethrough">light</del></mod>
         intenser than the
         <mod> <del rend="strikethrough">Sun</del><add>Moon</add></mod></line>
-    <line>obscured with</line>
-    <line>But icy cold, <del rend="strikethrough">with fascinating</del> light</line>
+    <line>But icy cold,
+      <mod><add place="superlinear">obscured with</add>
+      <del rend="strikethrough">with fascinating</del></mod> light</line>
     <line><del rend="strikethrough">Pierced</del> Heaven  &amp;  <del rend="strikethrough">covered earth</del>      Like young</line>
     <line><del rend="strikethrough">filled the earth</del>,; <del rend="strikethrough">and</del> like the moon</line>
     <line>The Sun as he the stars.</line>
