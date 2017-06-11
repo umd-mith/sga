@@ -30,11 +30,11 @@
       </mod></line>
     <line><del rend="strikethrough">There came a</del></line>
     <line>The throng grew wilder,
-    <mod><del rend="strikethrough">like the forest tops</del>
-  <add place="superlinear">
-    <del rend="strikethrough">waves
-      <add place="superlinear">as the woods of June</add>
-       &amp; woods</del></add></mod></line>
+    <mod><del rend="strikethrough">like  <add place="superlinear">
+        <del rend="strikethrough">waves
+          <add place="superlinear">as the woods of June</add>
+           &amp; woods</del></add> the forest tops</del>
+         </mod></line>
 
     <line>When <del rend="strikethrough">the</del> <del rend="strikethrough">blast</del> the South wind <del rend="strikethrough">turns Heaven</del></line>
     <line><del rend="strikethrough">makes the sad Heavens grey</del></line>
