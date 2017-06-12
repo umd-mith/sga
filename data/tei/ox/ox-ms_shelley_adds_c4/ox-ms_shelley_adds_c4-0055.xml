@@ -8,12 +8,18 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0055.jp2"/>
   <zone type="main">
     <line>The music of their ever moving wings</line>
-    <line><del rend="strikethrough">The Janus vi</del></line>
-    <line><del rend="strikethrough">And</del> the four faces of that charioteer</line>
-    <line>All</line>
-    <line><del rend="strikethrough">Were bound</del></line>
-    <line><del rend="strikethrough">Had all thier eyes banded</del></line>
-    <line><del rend="strikethrough">And</del> Had their eyes banded... <del rend="strikethrough">ill</del>          brings</line>
+
+    <line>
+    <mod><add place="superlinear"><del rend="strikethrough">The Janus vi</del></add>
+    <del rend="strikethrough">And</del><add place="sublinear">All</add></mod>
+     the four faces of that charioteer</line>
+    <line>
+    <mod><add place="sublinear">
+      <del rend="strikethrough">Had
+        <add place="sublinear"><del rend="strikethrough">And</del>
+        Had their eyes banded...<del rend="strikethrough">i<add place="sublinear">light</add>ll</del></add> 
+        all their eyes banded</del></add>
+      <del rend="strikethrough">Were bound</del></mod></line>
     <line><del rend="strikethrough">light</del> profit <del rend="strikethrough">springs</del></line>
     <line>little <del rend="strikethrough">good</del></line>
     <line>Speed in the van &amp; blindness in the rear</line>
