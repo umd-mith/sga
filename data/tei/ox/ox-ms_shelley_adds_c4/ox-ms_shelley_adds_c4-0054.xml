@@ -6,10 +6,13 @@
   xml:id="ox-ms_shelley_adds_c4-0054" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="23r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0054.jp2"/>
+<zone type="library">23</zone>
   <zone type="main">
-    <line>the old moon</line>
-    <line><unclear>her</unclear> dead</line>
-    <line>The ghost of <del rend="strikethrough">its</del> <del rend="strikethrough">old</del> Mother, whose dim form</line>
+    <line>The ghost of <mod><add place="superlinear">his</add>
+    <del rend="strikethrough">its</del></mod>
+    <mod><add place="superlinear">de<add place="superlinear">the old dead moon</add>
+    ad</add><del rend="strikethrough">old</del></mod>
+    Mother, whose dim form</line>
     <line>Bends in dark <del rend="strikethrough">air</del>               her infants</line>
     <line>ether from <del rend="strikethrough">the silver</del> chair</line>
     <line>silent</line>
