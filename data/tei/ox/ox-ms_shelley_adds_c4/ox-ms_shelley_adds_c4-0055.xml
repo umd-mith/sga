@@ -50,11 +50,13 @@
     <line><del rend="strikethrough">Of the to come the present &amp; the past</del></line>
     <line><del rend="strikethrough">So was that chariot guided</del></line>
     <line>Of all that is, has been, or will be done.&#8212;</line>
-    <line>ill was the car guided</line>
-    <line>So <del rend="strikethrough"><unclear>was</unclear> this chariot guided</del>, but it past</line>
-    <line><del rend="strikethrough">In its</del></line>
-    <line><del rend="strikethrough">In <unclear>  </unclear> &amp;</del>             majestically    on ...</line>
-    <line>With solemn speed</line>
+    <line>So
+    <mod><add place="superlinear">ill was the car guided</add>
+      <del rend="strikethrough">was this chariot guided</del></mod>, but it past</line>
+
+    <line><mod><add place="superlinear"><del rend="strikethrough">In its</del></add>
+    <add place="sublinear">With</add>
+    <del rend="strikethrough">In</del></mod> solemn speed majestically on...</line>
     <line>aghast</line>
     <line>The crowd gave way, &amp; I arose <del rend="strikethrough">in haste</del></line>
     <line><del rend="strikethrough">So mighty was the Vision</del></line>
