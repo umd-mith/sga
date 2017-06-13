@@ -26,9 +26,10 @@
     <line>
     <del rend="strikethrough">And  light  around  which  cannot  teach  to</del>
   <add place="sublinear">see</add></line>
-    <line><mod><add place="superlinear"><del rend="strikethrough">eyes</del></add>
-    <del rend="strikethrough">And sight within</del></mod></line>
-    <line><unclear>eyes</unclear></line>
+    <line><mod>
+    <del rend="strikethrough">And
+      <add place="superlinear"><del rend="strikethrough">eyes</del></add>sight within</del></mod></line>
+
     <line><del rend="strikethrough">Or light around, or sight within</del></line>
     <line> <del rend="strikethrough">Yet so was</del></line>
     <line><del rend="strikethrough">And</del></line>
