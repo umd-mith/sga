@@ -43,8 +43,9 @@
     <line>Or that
     <add place="sublinear">their</add>
     <del rend="strikethrough">eyes</del> banded eyes
-    <mod><add place="superlinear">pierce</add>
-    <del rend="strikethrough">could scan the sphere</del></mod></line>
+    <mod>
+    <del rend="strikethrough">could <add place="superlinear">pierce</add>
+    scan the sphere</del></mod></line>
 
     <line><del rend="strikethrough">Of the to come the present &amp; the past</del></line>
     <line><del rend="strikethrough">So was that chariot guided</del></line>
