@@ -36,11 +36,16 @@
     <line>Nor then avails that
     <mod><add place="superlinear">Light is around<del rend="strikethrough">
       <add place="superlinear">them</add>him</del>cast</add>
+      <add place="sublinear">beams that quench the Sun</add>
      <del rend="strikethrough">there is light around</del></mod></line>
-    <line>beams that quench the Sun</line>
-    <line>Or [sight within its pierce            pierce </line>
-    <line>Or that <del rend="strikethrough">these</del> <del rend="strikethrough">eyes banded</del> eyes <del rend="strikethrough">could scan the sphere</del></line>
-    <line>their</line>
+
+    <line>Or sight within to pierce </line>
+    <line>Or that
+    <add place="sublinear">their</add>
+    <del rend="strikethrough">eyes</del> banded eyes
+    <mod><add place="superlinear">pierce</add>
+    <del rend="strikethrough">could scan the sphere</del></mod></line>
+
     <line><del rend="strikethrough">Of the to come the present &amp; the past</del></line>
     <line><del rend="strikethrough">So was that chariot guided</del></line>
     <line>Of all that is, has been, or will be done.&#8212;</line>
