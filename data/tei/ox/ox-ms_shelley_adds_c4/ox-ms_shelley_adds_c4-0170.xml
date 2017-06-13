@@ -13,6 +13,7 @@
     <line>As dogs bay the moonlight clouds</line>
     <line>Which like spectres wrapt in shrouds</line>
     <line>Fleet o'er Night in multitudes.</line>
+    <space quantity="2" unit="lines"/>
     <line><del rend="strikethrough">For</del> All the wide world, beside us</line>
     <line>Shews like multitudinous</line>
 
@@ -21,8 +22,11 @@
     <line>What but mockery can they mean</line>
 
     <line>Where I am - where thou hast been<add place="superlinear">?</add> </line>
-      <line> x    x    x    x    x </line>
-      <line> x    x    x    x    x </line>
-      <line> x    x    x    x    x </line>
+    <space quantity="1" unit="line"/>
+      <line> xxxxx </line>
+  <space quantity="2" unit="lines"/>
+      <line> xxxxx</line>
+    <space quantity="2" unit="lines"/>
+      <line> xxxxx</line>
   </zone>
 </surface>
