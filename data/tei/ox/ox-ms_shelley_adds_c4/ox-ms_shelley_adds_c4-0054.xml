@@ -8,10 +8,16 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0054.jp2"/>
 <zone type="library">23</zone>
   <zone type="main">
-    <line>The ghost of <mod><add place="superlinear">his</add>
+    <line>The ghost of
+      <mod><seg><mod><add place="superlinear">her</add>
     <del rend="strikethrough">its</del></mod>
-    <mod><add place="superlinear">de<add place="superlinear">the old dead moon</add>ad</add><del rend="strikethrough">old</del></mod>
-    Mother, whose dim form</line>
+    <mod><del rend="strikethrough">old</del>
+    <add place="superlinear">dead</add></mod>
+Mother</seg>
+      <add place="superlinear">the old dead moon</add></mod>
+
+      
+    , whose dim form</line>
     <line>Bends in dark <mod><add place="sublinear">ether</add><del rend="strikethrough">
     air</del></mod> form <mod><add place="superlinear">her infants</add>
     <del rend="strikethrough">the silver</del></mod> chair</line>
