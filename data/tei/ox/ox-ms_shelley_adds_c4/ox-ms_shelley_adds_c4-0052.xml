@@ -67,7 +67,7 @@
     <mod><add place="superlinear">Like</add><del rend="strikethrough">and</del></mod>
     like the <add place="superlinear">young</add> Moon</line>
 
-    <line>When
+    <line rend="indent5">When
       <mod><del rend="strikethrough">on</del><add>on</add></mod>
       the
     <mod><seg><mod><del rend="strikethrough">boun limits</del>
@@ -75,12 +75,15 @@
       <del rend="strikethrough">limits of the day and the</del></add></mod></seg>
     <add place="sublinear">sunlit limits of the night</add></mod></line>
 
-    <line>Her white shell trembles amid crimson air</line>
-    <line>And whilst the sleeping tempest gathers might</line>
-    <line><mod><add place="sublinear"><del rend="strikethrough">When in</del></add>
-    <del rend="strikethrough">Within her arms</del>
-    <add place="superlinear">her all</add></mod></line>
-    <line>Doth, as a <del rend="strikethrough">token</del> of its coming,
-    <add place="superlinear">hope</add>bear</line>
+    <line rend="indent6">Her white shell trembles amid crimson air</line>
+    <line rend="indent5">And whilst the sleeping tempest gathers might</line>
+    <line rend="indent7">
+      <mod><del rend="strikethrough">Within her arms</del>
+      <add place="sublinear"><del rend="strikethrough">When in</del></add>
+    <add place="superlinear">herald</add></mod></line>
+    <line rend="indent6">Doth, as a
+      <mod><del rend="strikethrough">token</del><add place="superlinear">hope</add></mod>
+       of its coming, bear</line>
+    
   </zone>
 </surface>
