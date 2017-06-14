@@ -15,10 +15,18 @@
       <add place="superlinear"><retrace>grass</retrace></add>awn</del></add>
     wood interspersed</line>
     <line>With overarching elms &amp; caverns cold</line>
-    <line>And <del rend="strikethrough">glens </del><del rend="strikethrough">banks of</del>
-    <add place="sublinear">Violet banks where</add><add place="sublinear">
-    <del rend="strikethrough">s<add place="superlinear">sweet dreams brood
-    </add>weet sleep lives,</del>but they</add></line>
+
+<line>And
+<mod><del rend="strikethrough">glens </del><del rend="strikethrough">banks of</del>
+<add place="sublinear">Violet banks where</add></mod>
+<mod><add place="sublinear"><del rend="strikethrough">sweet sleep </del></add>
+<add place="superlinear">sweet dreams</add></mod>
+<mod><seg><mod><add place="sublinear"><del rend="strikethrough">lives</del></add>
+<add place="superlinear"><del rend="strikethrough">broods</del></add></mod></seg>
+<add place="superlinear">brood</add></mod>, but they</line>
+
+
+
     <line>Pursued their serious folly as of old...</line>
 
     <line>And as I gazed methought <mod>
