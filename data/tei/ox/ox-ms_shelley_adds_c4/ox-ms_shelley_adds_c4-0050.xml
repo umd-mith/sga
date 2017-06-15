@@ -30,13 +30,25 @@
     <line rend="indent3">Was borne amid the crowd; as
     <add place="sublinear"><del rend="strikethrough">like</del></add> through the
     <add place="sublinear">sky</add></line>
-    <line rend="indent3">One of
-    <mod><seg><mod><add place="superlinear">
-      <del rend="strikethrough">the million</del></add><del rend="strikethrough">an army</del></mod></seg>
-<add place="sublinear"><del rend="strikethrough">leaves</del> million leaves</add></mod>
-<mod><seg>of<del rend="strikethrough">autumnal</del>leaves.&#8212;</seg>
-  <mod><del rend="strikethrough"><add place="sublinear">of autumns bier</add></del>
-    <add place="superlinear">summer's</add></mod></mod></line>
+    <line rend="indent3">
+   One of
+   <mod>
+      <del rend="strikethrough">an army</del>
+      <add place="superlinear"><del rend="strikethrough">the million</del></add>
+      <add place="sublinear"><del rend="strikethrough">leaves</del> million leaves</add>
+   </mod>
+   of
+   <mod>
+      <del rend="strikethrough">autumnal</del>
+      <add place="sublinear">
+         <mod>
+            <del rend="strikethrough">of autumns bier</del>
+            <add place="superlinear">summer's</add>
+         </mod>
+      </add>
+   </mod>
+   leaves.&#8212;
+</line>
 
 
     <line rend="indent3"><del rend="strikethrough">Old age &amp; youth, manhood</del> &amp; infancy,</line>
