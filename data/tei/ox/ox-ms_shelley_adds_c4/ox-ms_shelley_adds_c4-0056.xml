@@ -12,25 +12,44 @@
     <line><del rend="strikethrough">And</del></line>
     <line rend="indent1">Or seemed to rise, so mighty was the trance</line>
     <line rend="indent2">And saw like clouds upon the thunder blast</line>
-    <line>with fierce song</line>
     <space quantity="1" unit="line"/>
     <line>The million
       <mod><del rend="strikethrough">in a fierce</del>
       <add place="superlinear">with fierce song</add>
     </mod>
      and maniac dance</line>
-    <line>Raging around</line>
-    <line>Follow<del rend="strikethrough">ed</del> <del rend="strikethrough">And</del> <del rend="strikethrough">And  headlong joy around the charioted</del></line>
-    <line><del rend="strikethrough">Rushing behind it, and a moving arch</del></line>
-    <line>Such  as <del rend="strikethrough">the rainbow moulds, in its advance</del></line>
-    <line><del rend="strikethrough">it</del> <del rend="strikethrough">methought the</del> jubilee</line>
-    <line><del rend="strikethrough">Can speed</del>             such seemed the</line>
-    <line>Was <del rend="strikethrough">such as Rome</del></line>
-    <line>As <del rend="strikethrough">when Rome might have</del></line>
-    <line>As when to greet some <del rend="strikethrough">conquerors</del> advance</line>
-    <line>living</line>
-    <line><unclear>st</unclear></line>
-    <line>Imperial Rome <del rend="strikethrough"><unclear>pou</unclear></del> <del rend="strikethrough">might</del> poured forth her <del rend="strikethrough">foul</del> sea</line>
+
+    <line rend="indent1">Follow<del rend="strikethrough">ed</del>
+    <mod>
+      <del rend="strikethrough">And</del>
+      <add place="superlinear">Raging around</add>
+    </mod>
+     <del rend="strikethrough">And  headlong joy around the charioted</del></line>
+    <line rend="indent2"><del rend="strikethrough">Rushing behind it, and a moving arch</del></line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Such as the rainbow moulds, in its advance</del>
+        <add place="sublinear"><del rend="strikethrough">its methought the </del>
+        <add place="sublinear">such seemed the</add>
+        jubilee</add>
+      </mod>
+      </line>
+
+    <line rend="indent1"><del rend="strikethrough">Can speed</del></line>
+    <line rend="indent1"><del rend="strikethrough">Was such as Rome</del></line>
+    <line rend="indent2"><del rend="strikethrough">As when Rome might have</del></line>
+    <line rend="indent2">As when to greet some <del rend="strikethrough">conquerors</del> advance</line>
+    <line rend="indent2">Imperial Rome
+      <del rend="strikethrough"><unclear>pou</unclear></del> <del rend="strikethrough">might</del>
+       poured forth her
+       <mod>
+         <del rend="strikethrough">foul</del>
+         <add place="superlinear">living
+           <add place="sublinear"><del rend="strikethrough">st</del></add>
+         </add>
+       </mod>
+          sea</line>
     <line><del rend="strikethrough">Of senators &amp; gladiators and slaves</del></line>
     <line>From senatehouse &amp; prison &amp; theatre</line>
     <line><del rend="strikethrough">When Freedom left those who would not be free</del></line>
