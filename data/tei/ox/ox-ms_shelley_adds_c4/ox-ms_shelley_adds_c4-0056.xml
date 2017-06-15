@@ -6,13 +6,19 @@
   xml:id="ox-ms_shelley_adds_c4-0056" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="24r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0056.jp2"/>
+<zone type="library">24</zone>
   <zone type="main">
     <line><del rend="strikethrough">And <unclear>saw</unclear></del></line>
     <line><del rend="strikethrough">And</del></line>
-    <line>Or seemed to rise, so mighty was the trance</line>
-    <line>And saw like clouds upon the thunder blast</line>
+    <line rend="indent1">Or seemed to rise, so mighty was the trance</line>
+    <line rend="indent2">And saw like clouds upon the thunder blast</line>
     <line>with fierce song</line>
-    <line>The million <del rend="strikethrough">in a fierce</del> and maniac dance</line>
+    <space quantity="1" unit="line"/>
+    <line>The million
+      <mod><del rend="strikethrough">in a fierce</del>
+      <add place="superlinear">with fierce song</add>
+    </mod>
+     and maniac dance</line>
     <line>Raging around</line>
     <line>Follow<del rend="strikethrough">ed</del> <del rend="strikethrough">And</del> <del rend="strikethrough">And  headlong joy around the charioted</del></line>
     <line><del rend="strikethrough">Rushing behind it, and a moving arch</del></line>
