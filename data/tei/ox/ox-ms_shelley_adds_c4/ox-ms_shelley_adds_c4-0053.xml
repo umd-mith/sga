@@ -43,27 +43,36 @@
     <line rend="indent2"><del rend="strikethrough">The <unclear>on</unclear></del> Not one among the many seemed to know</line>
 
     <line rend="indent1">His way, but
-<mod><mod>
+<mod>
+  <mod>
   <del rend="strikethrough">even as</del>
 </mod>
 <mod>  <add place="superlinear"><del rend="strikethrough">like</del> grey</add>
   <add place="superlinear">as</add>
-</mod></mod>
-
+  </mod>
+</mod>
+moths when grass is mown</line>
 
     <line rend="indent2">Go blindly
       <del rend="strikethrough"><unclear>flutt</unclear></del>
-      fluttering from the <unclear>moving heap</unclear></line>
+      fluttering from the <unclear>moving heap,</unclear></line>
+
     <line rend="indent1"><del rend="strikethrough">As old &amp; young</del></line>
     <line rend="indent2"><del rend="strikethrough">Or as the winged seeds ere</del></line>
     <line rend="indent1">The heartsease, <del rend="strikethrough">&amp;</del>
      which where nothing else will grow</line>
 
-    <line rend="indent1">Lives in old walls,<add place="superlinear">were bruised
-      <del rend="strikethrough">was soiled</del></add><add place="sublinear">
-    <del><unclear>wa<add place="sublinear">were</add>s pale</unclear></del></add>
-      <del rend="strikethrough">pale</del>in the hand <del rend="strikethrough">
-      was soiled</del></line>
+    <line rend="indent1">Lives in old walls,
+      <mod>
+        <del rend="strikethrough">pale <unclear>[   ]</unclear></del>
+          <mod> <add place="superlinear"><del rend="strikethrough">was <unclear>[ ]</unclear></del></add><mod>
+        <add place="superlinear">were bruised <space quantity="3" unit="characters"/></add></mod>
+      <mod>  <add place="superlinear"><del rend="strikethrough">and to <unclear>grow</unclear> so soiled</del></add></mod>
+          <mod><add place="sublinear">was pale</add> </mod>
+          <add place="sublinear">were</add> </mod>
+        </mod>
+      in the hand was soiled</line>
+
 
       <line rend="indent2"><del rend="strikethrough">And <unclear>sought</unclear></del> me</line>
 
