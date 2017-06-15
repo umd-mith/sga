@@ -9,15 +9,23 @@
 <zone type="library">22</zone>
   <zone type="main">
     <line>Nor felt the breeze which from the forest
-      <mod><add place="superlinear">told</add><del rend="strikethrough">brought</del></mod></line>
+      <mod>
+        <add place="superlinear">told</add><del rend="strikethrough">brought</del></mod>
+      </line>
+
     <line rend="indent1"><del rend="strikethrough">News of soft beds</del></line>
-    <line rend="indent3">Of grassy paths, &amp;<add place="superlinear"><del rend="strikethrough">l
-      <add place="superlinear"><retrace>grass</retrace></add>awn</del></add>
-    wood interspersed</line>
+
+    <line rend="indent3">Of grassy paths, &amp;
+      <add place="superlinear">
+        <del rend="strikethrough">lawn</del></add>
+    wood interspersed
+  </line>
     <line rend="indent2">With overarching elms &amp; caverns cold</line>
 
 <line rend="indent3">And
-<mod><del rend="strikethrough">glens </del><del rend="strikethrough">banks of</del>
+<mod>
+  <mod><del rend="strikethrough">glens </del>
+  <add><del rend="strikethrough">banks of</del></add></mod>
 <add place="sublinear">Violet banks where</add></mod>
 <mod><add place="sublinear"><del rend="strikethrough">sweet sleep </del></add>
 <add place="superlinear">sweet dreams</add></mod>
@@ -84,6 +92,6 @@
     <line rend="indent6">Doth, as a
       <mod><del rend="strikethrough">token</del><add place="superlinear">hope</add></mod>
        of its coming, bear</line>
-    
+
   </zone>
 </surface>
