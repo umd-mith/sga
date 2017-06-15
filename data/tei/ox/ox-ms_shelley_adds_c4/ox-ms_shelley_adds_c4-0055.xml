@@ -9,19 +9,37 @@
   <zone type="main">
     <line>The music of their ever moving wings</line>
 
-    <line>
+    <line rend="indent1">
     <mod><add place="superlinear"><del rend="strikethrough">The Janus vi</del></add>
     <del rend="strikethrough">And</del><add place="sublinear">All</add></mod>
      the four faces of that charioteer</line>
-    <line>
-      <mod><add place="superlinear"><del rend="strikethrough">Were bound</del></add>
-      <del rend="strikethrough">Had all their eyes banded</del></mod></line>
-  <line><del rend="strikethrough">And</del> Had their eyes banded...
-    <mod><add place="sublinear"><del rend="strikethrough">li
-      <add place="sublinear">little
-  <del rend="strikethrough">go<add place="superlinear">profit
-  <del rend="strikethrough">spri<add place="superlinear">brings</add>ngs</del></add>od</del></add>ght</del></add>
-    <del rend="strikethrough">ill</del></mod></line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Had all their eyes banded</del>
+        <add place="superlinear"><del rend="strikethrough">Were bound</del></add>
+      </mod>
+    </line>
+
+  <line rend="indent1">
+  <del rend="strikethrough">And</del>
+  Had their eyes banded...
+  <mod><del rend="strikethrough">ill</del>
+  <add place="sublinear">
+    <del rend="strikethrough">light<add place="sublinear">little
+      <del rend="strikethrough">good<add place="superlinear">profit
+        <del rend="strikethrough"> springs
+          <add place="superlinear">brings</add></del></add></del></add></del></add>
+        </mod>
+        </line>
+
+
+
+
+
+
+
+
     <line>Speed in the van &amp; blindness in the rear</line>
     <line>
     <del rend="strikethrough">And  light  around  which  cannot  teach  to</del>
