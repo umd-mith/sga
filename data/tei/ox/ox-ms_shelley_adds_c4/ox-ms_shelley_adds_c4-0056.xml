@@ -50,18 +50,52 @@
          </add>
        </mod>
           sea</line>
-    <line><del rend="strikethrough">Of senators &amp; gladiators and slaves</del></line>
-    <line>From senatehouse &amp; prison &amp; theatre</line>
-    <line><del rend="strikethrough">When Freedom left those who would not be free</del></line>
-    <line>upon the free</line>
-    <line><del rend="strikethrough">The semblance of</del></line>
-    <line>Hung chains <del rend="strikethrough">they <unclear>p</unclear></del></line>
-    <line>In      <del rend="strikethrough">which soon they not disdained to wear</del></line>
-    <line>Had bound</line>
-    <line><del rend="strikethrough">Fastened</del> a yoke which soon they stooped to bear.</line>
-    <line><del rend="strikethrough">likeness</del></line>
-    <line>Nor wanted here the <del rend="strikethrough">semblance more  express</del></line>
-    <line><del rend="strikethrough">just</del> true similitude</line>
-    <line>Of <del rend="strikethrough">triumph</del> a triumphant pageant, for where'eer</line>
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">Of senators &amp; gladiators and slaves</del>
+        <add place="sublinear">=From senatehouse &amp; prison &amp; theatre</add>
+      </mod>
+    </line>
+
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">When Freedom left those who would not be free</del>
+        <add place="sublinear">Upon the free</add>
+      </mod>
+      </line>
+
+    <line rend="indent3"><del rend="strikethrough">The semblance of</del></line>
+    <line rend="indent3">
+      The Hung chains
+      <mod>
+        <del rend="strikethrough">they <unclear>p</unclear></del>
+        <add place="sublinear"><del rend="strikethrough">which soon they will disdained to wear</del></add>
+      </mod>
+      </line>
+
+    <line rend="indent4">
+      <mod>
+        <del rend="strikethrough">Fastened</del>
+        <add place="superlinear">Had bound</add>
+      </mod>
+      a yoke which soon they stooped to bear.
+    </line>
+
+
+    <line rend="indent4">Nor wanted here the
+      <mod>
+        <del rend="strikethrough">semblance more  express</del>
+      <add place="superlinear"><del rend="strikethrough">likeness</del></add>
+      <add place="sublinear"><del rend="strikethrough">just</del> true similitude</add>
+    </mod>
+  </line>
+
+    <line rend="indent3">Of
+      <mod>
+        <del rend="strikethrough">triumph</del>
+        <add>a triumphal</add>
+      </mod>
+    pageant, for where'eer
+</line>
   </zone>
 </surface>
