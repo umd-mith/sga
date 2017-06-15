@@ -8,35 +8,116 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0057.jp2"/>
   <zone type="main">
     <line>The chariot rolled a captive multitude</line>
-    <line><del rend="strikethrough">Mitred or sceptred or arrayed  in arms</del></line>
-    <line><del rend="strikethrough">in  golden  arms</del> &amp;</line>
-    <line>Follow</line>
-    <line><del rend="strikethrough">Arrayed &amp; swords which</del></line>
-    <line>Was driven; althose who had grown old in power</line>
-    <line>Or misery,&#8212; all who have thier <del rend="strikethrough">world</del> subdued,</line>
-    <line>age</line>
-    <line>on</line>
-    <line><del rend="strikethrough">And</del> whom <del rend="strikethrough">the world had looked to their last hour</del></line>
-    <line>Or <del rend="strikethrough">whom the world had</del></line>
-    <line>and</line>
-    <line>By action or by suffering, <del rend="strikethrough">or</del> whose hour</line>
+    <line rend="indent1">
+      <del rend="strikethrough">Mitred or sceptred or</del>
+      <mod>
+        <del rend="strikethrough"> arrayed  in arms</del>
+      <add place="sublinear"><del rend="strikethrough">in golden arms</del> &amp;</add>
+    </mod>
+  </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Arrayed &amp; swords which</del>
+      <add place="superlinear">Follow</add>
+    </mod>
+  </line>
+
+    <line rend="indent1">Was driven; althose who had grown old in power</line>
+
+    <line>Or misery,&#8212; all who have thier
+      <mod>
+        <del rend="strikethrough">world</del>
+        <add place="sublinear">age</add>
+      </mod>
+           subdued,
+         </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear">On</add>
+      </mod>
+        <mod>
+          <del rend="strikethrough"> whom the world had looked to their last hour</del>
+        <add place="sublinear">Or<del rend="strikethrough">whom the world had</del></add>
+      </mod>
+    </line>
+
+    <line>By action or by suffering,
+      <mod>
+        <del rend="strikethrough">or</del>
+        <add place="superlinear">and</add>
+      </mod>
+      whose hour</line>
     <line>Was drained to its last sand in weal or woe,</line>
     <line>So that the trunk survived both fruit &amp; flower;</line>
-    <line>126 Who have <del rend="strikethrough">enjoyed &amp; suffered all hi</del></line>
+    <zone type="calculation">
+      <line>42</line>
+      <line>3</line>
+      <line>_____</line>
+      <line>126</line>
+    </zone>
+    <line><del rend="strikethrough"> Who have enjoyed &amp; suffered all hi</del></line>
     <line>All those whose fame or infamy must grow</line>
     <line>lay</line>
-    <line>Till the great winter <del rend="strikethrough">kills them with the name</del></line>
-    <line><del rend="strikethrough">lays</del> the form &amp; name</line>
-    <line><del rend="strikethrough">wraps</del></line>
-    <line><del rend="strikethrough">Of the green</del> <unclear>living</unclear></line>
-    <line><del rend="strikethrough">green</del></line>
-    <line>Of thier green earth <del rend="strikethrough">in deep darkness</del>;</line>
-    <line>with them forever low <del rend="strikethrough">,</del></line>
-    <line>All but the cannot</line>
-    <line><del rend="strikethrough">Except those</del> sacred few who<del rend="strikethrough">m</del> could not tame</line>
-    <line>Conqueror<del rend="strikethrough">s</del> as</line>
-    <line>Thier <del rend="strikethrough">spirits</del> to the <del rend="strikethrough">yoke</del>, but soon</line>
-    <line>44</line>
-    <line>3   As they had touched the world with living flame</line>
+    <line>Till the great winter
+      <mod>
+        <del rend="strikethrough">kills</del>
+        <add place="sublinear"><del rend="strikethrough">lays</del>
+            <add place="sublinear"><del rend="strikethrough">wraps</del></add>
+            </add>
+            <add place="superlinear">lay</add>
+          </mod>
+        <mod>
+          <del rend="strikethrough"> them with the name</del>
+          <add place="sublinear">the form &amp; name</add>
+        </mod>
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Of the green</del>
+        <add place="sublinear"><del rend="strikethrough">green</del></add>
+      </mod>
+      <del rend="strikethrough"> <unclear>lawn</unclear></del></line>
+    <line>Of thier green earth
+      <mod>
+        <del rend="strikethrough">in deep darkness;</del>
+        <add place="sublinear"> with them forever low,</add>
+        </mod>
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Except those</del>
+        <add place="superlinear">All but the</add>
+      </mod>
+       sacred few who<del rend="strikethrough">m</del>
+       <mod>
+         <del>couldn not</del>
+         <add place="superlinear">cannot</add>
+       </mod>
+       tame
+     </line>
+
+
+    <line>Thier <del rend="strikethrough">spirits</del> to the
+    <mod>
+      <del rend="strikethrough">yoke</del>
+      <add place="superlinear">Conquerors</add>
+    </mod>
+    , but
+    <add place="superlinear">as</add>
+    soon</line>
+
+    <line>As they had touched the world with living flame</line>
+    
+<zone type="calculation">
+  <line>44</line>
+  <line>3</line>
+  <line>_____</line>
+  <line>132</line>
+</zone>
   </zone>
 </surface>
