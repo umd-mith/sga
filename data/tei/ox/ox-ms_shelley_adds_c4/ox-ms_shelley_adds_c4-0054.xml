@@ -30,31 +30,32 @@
 </mod>
 chair
 </line>
-    <line>So came a chariot on the
+    <line rend="indent1">So came a chariot on the
     <mod>
       <del rend="strikethrough">invisible</del>
     <add place="superlinear">silent</add>
   </mod>
     storm
   </line>
-    <line>Of its own
+    <line rend="indent2">Of its own
     <mod>
     <del rend="strikethrough"><unclear>joy</unclear></del>
   <add place="superlinear">rushing</add>
 </mod>
      splendour, and a Shape
    </line>
-    <line>So sate within
+    <line rend="indent2">So sate within
     <mod>
     <del rend="strikethrough">like</del>
     <add place="superlinear">as</add>
   </mod>
      one whom years deform
    </line>
-    <line>
+   <space quantity="1" unit="line"/>
+    <line rend="indent2">
       Beneath a dusky hood &amp; double cape
     </line>
-    <line>
+    <line rend="indent3">
       <mod>
         <del rend="strikethrough">Sitting within the</del>
         <add place="superlinear">
@@ -65,14 +66,19 @@ chair
     <del rend="strikethrough">shadow of a tomb</del>
   </line>
 
-    <line><del rend="strikethrough">For all
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">For all over it was bent in</del>
     <add place="sublinear"><del rend="strikethrough">Bending, behind</del></add>
-     over it was bent in</del></line>
-    <line>Crouching <del rend="strikethrough">within</del> the shadow of a tomb</line>
+  </mod>
+   </line>
+    <line rend="indent4">Crouching
+      <del rend="strikethrough">within</del> the shadow of a tomb
+    </line>
 
-  <line>
+  <line rend="indent4">
     <mod>
-      <del rend="strikethrough">over it, like a widows</del>
+      <del rend="strikethrough">And over it, like a widows</del>
     <add place="superlinear">oer,what seemed the head</add>
   </mod>
 
@@ -81,26 +87,31 @@ chair
   </mod>
   crape
 </line>
-    <line>Was bent a dun &amp; faint aetherial gloom</line>
+<space quantity="3" unit="lines"/>
+    <line rend="indent5">Was bent a dun &amp; faint aetherial gloom</line>
 
-    <line>
+    <line rend="indent5">
     <mod>
     <del rend="strikethrough">Obscure amid the light...</del>
       <add place="superlinear">Softening Tempering</add>
   </mod>
     <del rend="strikethrough">the <unclear>cars</unclear></del>
   </line>
-    <line>
+    <line rend="indent5">
       <del rend="strikethrough">Amid</del> the light;
       <del rend="strikethrough">out</del> upon the chariots beam
     </line>
-    <line>
+    <line rend="indent5">
       <del rend="strikethrough">Sate</del>
       <del rend="strikethrough">There sate</del>
        a <hi rend="underline">Janus</hi>-visaged Shadow did assume
      </line>
-    <line>
-      The guidance of that
+    <line rend="indent5">
+    The
+    <mod>
+      <del rend="strikethrough">rule of the</del>
+      <add place="superlinear">guidance of that </add>
+    </mod>
       <mod>
         <del rend="strikethrough">lightning</del>
       <add place="superlinear"><del rend="strikethrough">whirlwind</del>
@@ -108,8 +119,9 @@ chair
       </add>
     </mod>
     winged team
-    <line>
+  </line>
 
+    <line rend="indent5">
 <mod>
   <add place="sublinear">The shapes which</add>
 <del rend="strikethrough">But</del>
@@ -120,7 +132,7 @@ chair
 <mod><add place="superlinear">in thick lightnings</add>
 <del rend="strikethrough">lost in the thick light</del></mod></line>
 
-    <line><retrace>Were</retrace> lost: I heard
+    <line rend="indent5"><retrace>Were</retrace> lost: I heard
 <mod><add place="superlinear">alone on</add><del rend="strikethrough">upon</del></mod>
  the airs
 <mod><add place="sublinear">soft</add><del rend="strikethrough">slow</del></mod>
