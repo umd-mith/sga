@@ -25,7 +25,7 @@
 
     <line rend="indent1">Was driven; althose who had grown old in power</line>
 
-    <line>Or misery,&#8212; all who have thier
+    <line rend="indent1">Or misery,&#8212; all who have thier
       <mod>
         <del rend="strikethrough">world</del>
         <add place="sublinear">age</add>
@@ -50,13 +50,13 @@
       </mod>
     </line>
 
-    <line>By action or by suffering,
+    <line rend="indent1">By action or by suffering,
       <mod>
         <del rend="strikethrough">or</del>
         <add place="superlinear">and</add>
       </mod>
       whose hour</line>
-    <line>Was drained to its last sand in weal or woe,</line>
+    <line rend="indent1">Was drained to its last sand in weal or woe,</line>
     <line>So that the trunk survived both fruit &amp; flower;</line>
     <zone type="calculation">
       <line>42</line>
@@ -66,7 +66,7 @@
     </zone>
     <space quantity="2" unit="lines"/>
     <line><del rend="strikethrough"> Who have enjoyed &amp; suffered all hi</del></line>
-    <line>All those whose fame or infamy must grow</line>
+    <line rend="indent1">All those whose fame or infamy must grow</line>
     <line>lay</line>
     <line>Till the great winter
       <mod>
@@ -82,20 +82,20 @@
         </mod>
       </line>
 
-    <line>
+    <line rend="indent2">
       <mod>
         <del rend="strikethrough">Of the green</del>
         <add place="sublinear"><del rend="strikethrough">green</del></add>
       </mod>
       <del rend="strikethrough"> <unclear>lawn</unclear></del></line>
-    <line>Of thier green earth
+    <line rend="indent2">Of thier green earth
       <mod>
         <del rend="strikethrough">in deep darkness;</del>
         <add place="sublinear"> with them forever low,</add>
         </mod>
       </line>
 
-    <line>
+    <line rend="indent2">
       <mod>
         <del rend="strikethrough">Except those</del>
         <add place="superlinear">All but the</add>
@@ -109,7 +109,7 @@
      </line>
 
 
-    <line>Thier <del rend="strikethrough">spirits</del> to the
+    <line rend="indent2">Thier <del rend="strikethrough">spirits</del> to the
     <mod>
       <del rend="strikethrough">yoke</del>
       <add place="superlinear">Conquerors</add>
@@ -118,7 +118,7 @@
     <add place="superlinear">as</add>
     soon</line>
 
-    <line>As they had touched the world with living flame</line>
+    <line rend="indent1">As they had touched the world with living flame</line>
 
 <zone type="calculation">
   <line>44</line>
