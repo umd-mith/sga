@@ -7,33 +7,98 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="25v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0059.jp2"/>
   <zone type="main">
-    <line>fleet</line>
-    <line>Who lead it, <del rend="strikethrough">swift</del> as shadows on the green,</line>
-    <line><del rend="strikethrough">Who</del> Bright <del rend="strikethrough">youths  &amp;  maidens  beautiful  &amp;  gay</del></line>
-    <line><del rend="strikethrough">Seemed  tortured  into  agonizing  motion</del></line>
-    <line>To <del rend="strikethrough">those</del>  <del rend="strikethrough">wild</del> <del rend="strikethrough">steps sing notes of wilder</del></line>
-    <line>Out<del rend="strikethrough">speed the</del> <del rend="strikethrough">sun, that chases them</del></line>
-    <line><del rend="strikethrough">chariot in their stormy measure</del></line>
-    <line>Or <del rend="strikethrough">winged flies that never</del></line>
-    <line><del rend="strikethrough">Or Baltic waves that</del>         stormy</line>
-    <line>ring        stormy</line>
-    <line><del rend="strikethrough">Mingle with one another in the</del></line>
-    <line>Outspeed the chariot &amp; without repose</line>
-    <line>Mix with each other in tempestuous measure</line>
-    <line>To</line>
-    <line><del rend="strikethrough">Singing</del> <del rend="strikethrough">savage</del> <del rend="strikethrough">music</del> .... wilder as it grows,</line>
-    <line><del rend="strikethrough"><unclear>wonder</unclear></del></line>
-    <line>They, tortured by their agonizing pleasure,</line>
-    <line>rapid</line>
-    <line>Convulsed &amp; on the <del rend="strikethrough">ceaseless</del> whirlwinds</line>
-    <line><del rend="strikethrough">mighty</del>     <unclear>tried</unclear></line>
-    <line>spun</line>
-    <line><del rend="strikethrough">Of the dark spirit whose</del></line>
-    <line>fierce</line>
-    <line>Of that <del rend="strikethrough">stormy</del> spirit, whose unholy leisure</line>
-    <line>Was soothed by mischief since the world begun:;</line>
-    <line><del rend="strikethrough">Is soothed tumult</del></line>
-    <line>Throw back their heads &amp; loose their streaming</line>
+
+    <line>Who lead it,
+      <mod>
+        <del rend="strikethrough">swift</del>
+        <add place="superlinear">fleet</add>
+      </mod>
+       as shadows on the green,
+     </line>
+     <space quantity="1" unit="line"/>
+     <line>-----</line>
+    <line rend="indent1">
+      <del rend="strikethrough">Who</del> Bright
+      <del rend="strikethrough">youths  &amp;  maidens  beautiful  &amp;  gay</del>
+    </line>
+    <line rend="indent2"><del rend="strikethrough">Seemed  tortured  into  agonizing  motion</del></line>
+    <line rend="indent3">To <del rend="strikethrough">those</del>  <del rend="strikethrough">wild</del> <del rend="strikethrough">steps sing notes of wilder</del></line>
+    <line rend="indent2">
+      <del rend="strikethrough">Outspeed the</del>
+      <mod>
+        <del rend="strikethrough">sun, that chases them</del>
+      <add place="sublinear"><del rend="strikethrough">chariot in their stormy measure</del></add>
+    </mod>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">Or winged flies that never</del>
+    </line>
+    <line rend="indent2">
+      <del rend="strikethrough">Or Baltic waves that</del>
+    </line>
+    <line rend="indent3">
+      <del rend="strikethrough">Mingle with one another </del>
+      <mod>
+        <del rend="strikethrough">in the</del>
+      <add place="superlinear">ring</add>
+    </mod>
+    stormy
+    <add place="superlinear">stormy</add>
+  </line>
+    <line rend="indent3">
+      Outspeed
+      <unclear>the</unclear> chariot &amp; without repose</line>
+    <line rend="indent4">Mix with each other in tempestuous measure</line>
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">Singing</del>
+        <add place="superlinear">To</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">savage </del>
+         <add place="sublinear">
+           <del rend="strikethrough"><unclear>wonder</unclear></del></add>
+         </mod>
+        music.... wilder as it grows,
+      </line>
+
+    <line rend="indent3">They, tortured by their agonizing pleasure,</line>
+    <line rend="indent4">
+      Convulsed &amp; on the
+      <mod>
+        <del rend="strikethrough">ceaseless </del>
+        <add place="superlinear">rapid</add>
+        <add place="sublinear"><del rend="strikethrough">mighty</del></add>
+      </mod>
+         whirlwinds
+       <add place="sublinear"><del rend="strikethrough"><unclear>tried</unclear></del>
+     <add place="sublinear">spun</add>
+   </add>
+     </line>
+
+
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">Of that stormy spirit, </del>
+      <add place="superlinear"><del rend="strikethrough">Of the dark spirit whose</del>
+    <add place="sublinear">fierce</add>
+  </add>
+</mod>
+whose unholy leisure
+</line>
+<space quantity="1" unit="line"/>
+<line rend="indent6"> _____</line>
+
+    <line rend="indent4">
+    <mod>
+    <del rend="strikethrough">Is soothed tumult</del>
+    <add place="superlinear">Was soothed by mischief since the world began:,</add>
+  </mod>
+</line>
+<space quantity="1" unit="line"/>
+    <line rend="indent4">Throw back their heads &amp; loose their streaming
+    <add place="sublinear">hair</add>
+  </line>
     <line>hair</line>
   </zone>
 </surface>
