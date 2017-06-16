@@ -6,9 +6,16 @@
   xml:id="ox-ms_shelley_adds_c4-0058" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="25r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0058.jp2"/>
+<zone type="library">25</zone>
   <zone type="main">
-    <line><del rend="strikethrough">swoon</del></line>
-    <line>Fled back like eagles to their native noon</line>
+
+    <line>Fled back like eagles to their native
+      <mod>
+        <del rend="strikethrough">noon</del>
+      <add place="superlinear"><del rend="strikethrough">swoon</del></add>
+    </mod>
+  </line>
+
     <line>Or those who <del rend="strikethrough">kept long their spirits</del></line>
     <line>put aside the diadem till the last one</line>
     <line>Of earthly thrones or <del rend="strikethrough">jewels</del> gems, <del rend="strikethrough">till the last swoon</del>;</line>
