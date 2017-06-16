@@ -16,13 +16,35 @@
     </mod>
   </line>
 
-    <line>Or those who <del rend="strikethrough">kept long their spirits</del></line>
-    <line>put aside the diadem till the last one</line>
-    <line>Of earthly thrones or <del rend="strikethrough">jewels</del> gems, <del rend="strikethrough">till the last swoon</del>;</line>
-    <line><del rend="strikethrough">The twi</del> Were there;</line>
-    <line><del rend="strikethrough">For they</del> of Athens &amp; Jerusalem,</line>
-    <line>For                   <del rend="strikethrough">crowd</del></line>
-    <line><del rend="strikethrough">Were not among the crew</del>    <del rend="strikethrough">loud was the rage</del></line>
+    <line>Or those who
+      <mod>
+        <del rend="strikethrough">kept long their spirits</del>
+        <add place="sublinear"> put aside the diadem till the last one</add>
+      </mod>
+    </line>
+    <line>
+      Of earthly thrones or
+      <del rend="strikethrough">jewels</del> gems,
+      <del rend="strikethrough">till the last swoon</del>;
+    </line>
+    <line>
+      <del rend="strikethrough">The twi</del> Were there;
+    </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">For they</del>
+        <add place="sublinear">For</add>
+      </mod>
+       of Athens &amp; Jerusalem,
+    </line>
+
+    <line>
+      <del rend="strikethrough">Were not among the</del>
+      <mod>
+        <del rend="strikethrough">crew</del>
+        <add place="superlinear"><del rend="strikethrough">crowd</del></add>
+      </mod>
+          <del rend="strikethrough">loud was the rage</del></line>
     <line><del rend="strikethrough">obscene &amp; strange</del></line>
     <line><del rend="strikethrough">The exhultation</del>           <del rend="strikethrough">strange &amp; obscene</del></line>
     <line><del rend="strikethrough"><unclear>Passions</unclear></del>         <del rend="strikethrough">the</del> <del rend="strikethrough">loud</del> <del rend="strikethrough">war</del></line>
