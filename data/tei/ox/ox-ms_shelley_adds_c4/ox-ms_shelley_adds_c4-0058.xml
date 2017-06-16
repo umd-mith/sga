@@ -44,7 +44,23 @@
         <del rend="strikethrough">crew</del>
         <add place="superlinear"><del rend="strikethrough">crowd</del></add>
       </mod>
-          <del rend="strikethrough">loud was the rage</del></line>
+      <space quantity="4" unit="characters"/>
+      <mod>
+        <del rend="strikethrough">loud was the rage</del>
+      <add place="sublinear"><del rend="strikethrough">obscene &amp; strange</del>
+      <add place="sublinear"><del rend="strikethrough">strange &amp; obscene</del>
+    <add place="sublinear"><del rend="strikethrough">the loud war</del>
+    <add place="sublinear"><del rend="strikethrough">as they</del>
+  <add place="sublinear"><del rend="strikethrough">loud &amp; more loud</del></add>
+<add place="sublinear">still I <del rend="strikethrough">gazed</del></add>
+      </add>
+    </add>
+  </add>
+</add>
+</mod>
+
+
+  </line>
     <line><del rend="strikethrough">obscene &amp; strange</del></line>
     <line><del rend="strikethrough">The exhultation</del>           <del rend="strikethrough">strange &amp; obscene</del></line>
     <line><del rend="strikethrough"><unclear>Passions</unclear></del>         <del rend="strikethrough">the</del> <del rend="strikethrough">loud</del> <del rend="strikethrough">war</del></line>
