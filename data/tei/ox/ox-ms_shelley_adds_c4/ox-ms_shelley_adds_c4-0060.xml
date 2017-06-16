@@ -9,36 +9,97 @@
 <zone type="library">26</zone>
   <zone type="main">
     <line>And in thier dance round her who dims the Sun</line>
-    <line>fling          wild</line>
-    <line>Maidens &amp; youths <del rend="strikethrough">cast</del> their <del rend="strikethrough">bare</del> arms in air</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">Their</del> And their feet twinkle like</line>
-    <line><del rend="strikethrough">And  now  approach  &amp;  now  recede</del>, and now</line>
-    <line><del rend="strikethrough"><unclear> ? </unclear></del> now</line>
-    <line>As their feet twinkle; <del rend="strikethrough">now</del> <del rend="strikethrough">they</del> recede</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent6"> &#8212;</line>
+    <line>Maidens &amp; youths
+      <mod>
+        <del rend="strikethrough">cast </del>
+        <add place="superlinear">fling</add>
+      </mod>
+         their
+         <mod>
+           <del rend="strikethrough">bare</del>
+           <add place="superlinear">wild</add>
+         </mod>
+            arms in air
+          </line>
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">And now approach &amp; now recede,</del>
+      <add place="superlinear"><del rend="strikethrough">And Their</del>
+      And their feet twinkle like</add>
+      <add place="sublinear">As their feet twinkle;
+        <mod><del rend="strikethrough">now they</del>
+        <add place="superlinear">now</add>
+      </mod>
+      recede</add>
+    </mod>
+    <space quantity="2" unit="character"/>
+    and now
+  </line>
+
     <line>Bending within each others atmosphere</line>
-    <line>Kindle invisibly; and as they glow</line>
-    <line><del rend="strikethrough">Attracted &amp; repulsed</del></line>
-    <line><del rend="strikethrough">Like moths in light</del>  attracted &amp; repelled,</line>
-    <line><del rend="strikethrough">Hover a space</del></line>
-    <line><del rend="strikethrough">And the quick pulses of their being them</del></line>
-    <line><del rend="strikethrough">Hover a space</del></line>
-    <line><del rend="strikethrough">Who ere they plunge     , oft come &amp; go</del></line>
-    <line>Oft</line>
-    <line>Like moths by light attracted &amp; repelled,</line>
-    <line><del rend="strikethrough">Hover awhile, then meet</del></line>
-    <line><del rend="strikethrough">touch &amp; consume</del>.</line>
-    <line><del rend="strikethrough">Before they plunge in</del></line>
-    <line><del rend="strikethrough">By the bright</del>,</line>
-    <line>Oft to <del rend="strikethrough">the</del> bright destruction come &amp; go.</line>
-    <line>new</line>
-    <line><del rend="strikethrough">Ere</del> Till</line>
-    <line><del rend="strikethrough">Embrace</del></line>
-    <line><del rend="strikethrough">Then</del> like two clouds into one vale impelled</line>
-    <line>That shake the mountains when their lightnings mingle</line>
-    <line><del rend="strikethrough">Then</del></line>
-    <line><del rend="strikethrough">And weep their strength in raindrops</del></line>
-    <line><del rend="strikethrough">akin   fire</del></line>
-    <line>And die in rain   <del rend="strikethrough">so is the band which held</del></line>
-    <line>the fiery band which held</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent2">Kindle invisibly; and as they glow</line>
+    <line rend="indent3"><del rend="strikethrough">Attracted &amp; repulsed</del></line>
+    <line rend="indent4"><del rend="strikethrough">Like moths in light attracted &amp; repelled,</del></line>
+    <line rend="indent5"><del rend="strikethrough">Hover a space</del></line>
+    <line rend="indent2"><del rend="strikethrough">And the quick pulses of their being them</del></line>
+    <line rend="indent3"><del rend="strikethrough">Hover a space</del></line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">
+      <del rend="strikethrough">Who ere they plunge
+        <space quantity="5" unit="characters"/>
+        , oft come &amp; go</del></line>
+    <line rend="indent4">
+      <add place="superlinear">Oft</add>
+      Like moths by light attracted &amp; repelled,</line>
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">Hover awhile, then meet</del>
+      <add place="sublinear"><del rend="strikethrough">touch &amp; consume</del></add>
+    </mod>
+  </line>
+
+    <line rend="indent2"><del rend="strikethrough">Before they plunge in</del></line>
+    <line rend="indent2"><del rend="strikethrough">By the bright</del>,</line>
+    <line rend="indent2">Oft to
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="sublinear">new</add>
+      </mod> bright destruction come &amp; go.</line>
+  <zone type="calculation">
+     999999
+  </zone>
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">Embrace </del>
+        <add place="sublinear"><del rend="strikethrough">Then</del></add>
+        <add place="superlinear"><del rend="strikethrough">Ere</del></add>
+        <add place="superlinear">Till</add>
+      </mod>
+      like two clouds into one vale impelled
+    </line>
+    <line rend="indent2">That shake the mountains when their lightnings mingle</line>
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">And </del>
+        <add place="superlinear"><del rend="strikethrough">Then</del></add>
+      </mod>
+      <del rend="strikethrough"> weep their strength in raindrops</del>
+      </line>
+
+
+    <line>And die in rain
+      <mod>
+        <del rend="strikethrough">so is</del>
+        <add place="superlinear"><del rend="strikethrough">akin</del></add>
+      </mod>
+    <mod>
+        <del rend="strikethrough">the band which held</del>
+        <add place="superlinear">fire</add>
+        <add place="sublinear">the fiery band which held</add>
+      </mod>
+    </line>
   </zone>
 </surface>
