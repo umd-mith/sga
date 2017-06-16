@@ -58,28 +58,64 @@
   </add>
 </add>
 </mod>
+</line>
+<line>
+  <mod>
+    <del rend="strikethrough">The exhultation</del>
+    <add place="sublinear"><unclear>Passion</unclear>
+  <add place="sublinear"><del rend="strikethrough">The</del></add>
+</add>
+</mod>
+</line>
+<del rend="strikethrough">The yoke </del>
+<del rend="strikethrough">came next<space quantity="2" unit="characters"/> The</del>
 
-
+<line>
+  <del rend="strikethrough">The <unclear>other</unclear> spirit of Babel</del>
+  <mod>
+    <del rend="strikethrough">seemed to</del>
+    <add place="sublinear">fell <unclear>[  ]</unclear></add>
+  </mod>
+</line>
+    <line>Were neither mid the mighty captives
+      <mod>
+        <del rend="strikethrough">there</del>
+      <add place="superlinear">seen</add>
+    </mod>
   </line>
-    <line><del rend="strikethrough">obscene &amp; strange</del></line>
-    <line><del rend="strikethrough">The exhultation</del>           <del rend="strikethrough">strange &amp; obscene</del></line>
-    <line><del rend="strikethrough"><unclear>Passions</unclear></del>         <del rend="strikethrough">the</del> <del rend="strikethrough">loud</del> <del rend="strikethrough">war</del></line>
-    <line><del rend="strikethrough">The</del>                     <del rend="strikethrough">as they</del></line>
-    <line><unclear> ? </unclear> <unclear></unclear> <del rend="strikethrough">loud &amp; more loud</del></line>
-    <line>still I <del rend="strikethrough">gazed</del></line>
-    <line><del rend="strikethrough">The yoke</del>   <del rend="strikethrough">Came <unclear>next</unclear></del>   <del rend="strikethrough">The</del> <unclear>Fri</unclear></line>
-    <line><unclear> ? </unclear></line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">a</del> <del rend="strikethrough">The spirit of Babel seemed to f</del></line>
-    <line>fell <del rend="strikethrough"><unclear> ? </unclear></del> seen</line>
-    <line>Were neither mid the mighty captives <del rend="strikethrough">there</del></line>
-    <line>Nor mid the <del rend="strikethrough"><unclear> ?</unclear></del> ribald crowd that followed them ...</line>
-    <line>The <del rend="strikethrough">dance grew wilder <unclear> ? </unclear></del></line>
-    <line><del rend="strikethrough">Meanwhile</del> <del rend="strikethrough">the dance grew wild, &amp; more obscene</del></line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">The youths &amp; maidens near the rushing car</del></line>
-    <line>The                <del rend="strikethrough">near the car appeared</del></line>
-    <line>With Melancholy</line>
-    <line><del rend="strikethrough">Seemed</del> <del rend="strikethrough"><unclear>farther and</unclear></del> <del rend="strikethrough">lay</del> <del rend="strikethrough">a</del>            fierce</line>
-    <line><del rend="strikethrough">Caught</del> Or fled before.. Now Swift fierce &amp; obscene</line>
+    <line>Nor mid the
+      <del rend="strikethrough"><unclear>th </unclear></del>
+       ribald crowd that followed them ...</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Meanwhile the dance grew wild, &amp; more obscene</del>
+        <add place="superlinear"><del rend="strikethrough">The dance grew wilder___</del></add>
+      </mod>
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="sublinear">The</add>
+      </mod>
+       <del rend="strikethrough">The youths &amp; maidens</del>
+      <mod>
+        <del rend="strikethrough"> near the rushing car</del>
+      <add place="sublinear"><del rend="strikethrough">near the car appeared</del></add>
+    </mod>
+  </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Seemed <unclear>farther and</unclear> lay a </del>
+        <add place="superlinear">With Melancholy</add>
+      </mod>
+    </line>
+
+    <line>
+      <del rend="strikethrough">Caught Or fled before...</del>
+      <space quantity="2" unit="characters"/>
+       Now Swift fierce &amp; obscene</line>
     <line>Nor  <del rend="strikethrough">those who went before</del> ...      <del rend="strikethrough">the dance</del></line>
     <line><del rend="strikethrough"><unclear>madden</unclear></del>               <del rend="strikethrough">strains</del></line>
     <line><del rend="strikethrough">The maniac dance, the dithyrambic hymn</del></line>
