@@ -113,12 +113,30 @@
     </line>
 
     <line>
-      <del rend="strikethrough">Caught Or fled before...</del>
+      <mod>
+        <del rend="strikethrough">Nor those who went before...</del>
+        <add place="superlinear"><del rend="strikethrough">Caught or fled before...</del></add>
+        <add place="superlinear"> Now swift </add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">the dance</del>
+        <add place="superlinear">firece and obscene
+        <add place="superlinear"><del rend="strikethrough">fierce</del></add>
+      </add>
       <space quantity="2" unit="characters"/>
-       Now Swift fierce &amp; obscene</line>
-    <line>Nor  <del rend="strikethrough">those who went before</del> ...      <del rend="strikethrough">the dance</del></line>
-    <line><del rend="strikethrough"><unclear>madden</unclear></del>               <del rend="strikethrough">strains</del></line>
-    <line><del rend="strikethrough">The maniac dance, the dithyrambic hymn</del></line>
+    </mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The maniac </del>
+        <add place="superlinear"><del rend="strikethrough">madden</del></add>
+      </mod>
+      <del rend="strikethrough">dance, the dithyrambic ,</del>
+      <mod>
+        <del rend="strikethrough">hymn</del>
+        <add place="superlinear"><del rend="strikethrough">strains</del></add>
+      </mod>
+    </line>
     <line>The wild dance maddens in the van, &amp; those</line>
   </zone>
 </surface>
