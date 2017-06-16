@@ -19,7 +19,8 @@
     </mod>
      and maniac dance</line>
 
-    <line rend="indent1">Follow<del rend="strikethrough">ed</del>
+    <line rend="indent1">
+      <del rend="strikethrough">Followed</del>
     <mod>
       <del rend="strikethrough">And</del>
       <add place="superlinear">Raging around</add>
@@ -53,7 +54,7 @@
     <line rend="indent3">
       <mod>
         <del rend="strikethrough">Of senators &amp; gladiators and slaves</del>
-        <add place="sublinear">=From senatehouse &amp; prison &amp; theatre</add>
+        <add place="sublinear">from senatehouse &amp; prison &amp; theatre</add>
       </mod>
     </line>
 
@@ -69,7 +70,7 @@
       The Hung chains
       <mod>
         <del rend="strikethrough">they <unclear>p</unclear></del>
-        <add place="sublinear"><del rend="strikethrough">which soon they will disdained to wear</del></add>
+        <add place="sublinear"><del rend="strikethrough">which soon they will disdain to wear</del></add>
       </mod>
       </line>
 
@@ -84,8 +85,8 @@
 
     <line rend="indent4">Nor wanted here the
       <mod>
+          <add place="superlinear"><del rend="strikethrough">likeness</del></add>
         <del rend="strikethrough">semblance more  express</del>
-      <add place="superlinear"><del rend="strikethrough">likeness</del></add>
       <add place="sublinear"><del rend="strikethrough">just</del> true similitude</add>
     </mod>
   </line>
