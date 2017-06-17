@@ -96,16 +96,26 @@
    </mod>
    wrath
  </line>
-    <line>Is spent upon the desert shore. &#8212; <del rend="strikethrough">The</del></line>
+    <space quantity="2" unit="lines"/>
+    <zone type="sketch">sail boat</zone>
     <line>R</line>
-    <line>The earthquake is rocking</line>
+    <line><del rend="strikethrough">The</del> earthquake is rocking</line>
     <line>The corpse in its cradle within the grave</line>
     <line>The thunder is mocking</line>
-    <line>The <del rend="strikethrough">yell</del> of the earth from its cloudy cave</line>
-    <line>spasm</line>
-    <line><del rend="strikethrough">The</del> The clear air awakes</line>
-    <line>Ricetti</line>
-    <line>Ricetti</line>
-    <line>Ricetti Ricetti</line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">yell</del>
+        <add place="sublinear">spasm</add>
+      </mod>
+       of the earth from its cloudy cave</line>
+
+    <line>
+      <del rend="strikethrough">The</del> The clear air awakes
+    </line>
+    <line rend="indent8"><hi rend="underline">Ricetti</hi></line>
+    <space quantity="3" unit="lines"/>
+
+    <line rend="indent6">Ricetti<space quantity="2" unit="characters"/> Ricetti
+    <space quantity="8" unit="characters"/> Ricetti</line>
   </zone>
 </surface>
