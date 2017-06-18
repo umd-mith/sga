@@ -20,7 +20,7 @@
     <del rend="strikethrough">though</del>
   </line>
 
-    <line>And
+    <line rend="indent1">And
       <del rend="strikethrough">dance behind</del>
        &amp; seek
        <mod>
@@ -40,7 +40,7 @@
       <unclear>Limp</unclear> in the dance car of light
   </line>
 
-    <line>
+    <line rend="indent1">
       <del rend="strikethrough">Seeking</del>
        to reach the
       <mod>
@@ -48,18 +48,18 @@
         <add place="superlinear"><del rend="strikethrough">car</del></add>
       </mod>
        which leaves them still</line>
-    <line>
+    <line rend="indent1">
       Far<del rend="strikethrough">ther</del> behind &amp; deeper in the shade
     </line>
-    <line>
+    <line rend="indent2">
       But not the less with impotence of will
     </line>
-    <line>
+    <line rend="indent1">
       <del rend="strikethrough">They shake their fleshless bones without repose</del>
     </line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">The mocking youth with vain &amp; wanton will</del></line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">And frost in these performs what fire in </del>
       <mod>
         <del rend="strikethrough"><unclear>them</unclear></del>
@@ -67,7 +67,7 @@
     </mod>
   </line>
 
-    <line>They
+    <line rend="indent3">They
       <mod>
         <del rend="strikethrough">dance</del>
         <add place="superlinear">wheel</add>
@@ -76,28 +76,28 @@
        though ghostly shadows interpose
      </line>
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough">Mocking</del>
       <add place="superlinear">And</add>
     </mod>
         <del rend="strikethrough"><unclear>the</unclear> <unclear></unclear> youthful band</del>
       </line>
-    <line>Round them &amp; round each other, and fulfill</line>
+    <line rend="indent2">Round them &amp; round each other, and fulfill</line>
 
-    <line>
+    <line rend="indent2">
       <mod>
         <del rend="strikethrough">Thier part &amp;</del>
         <add place="superlinear">Their work and</add>
       </mod>
         <del rend="strikethrough"> sink  to the dust</del>
       </line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">And sink into</del>
        the dust whence they arose
      </line>
 
-    <line>
+    <line rend="indent3">
       <add place="superlinear"><del rend="strikethrough">And</del></add>
       Sink &amp;
       <mod>
@@ -106,6 +106,6 @@
       </mod>
            veils them as they lie
          </line>
-    <line>And frost in these performs what fire in those</line>
+    <line rend="indent3">And frost in these performs what fire in those</line>
   </zone>
 </surface>
