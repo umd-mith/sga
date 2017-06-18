@@ -10,7 +10,7 @@
   <zone type="main">
     <line rend="indent3">&#8212;</line>
     <line>Struck to the heart by this sad pageantry</line>
-    <line>Half to my self I said, and what is this</line>
+    <line rend="indent1">Half to my self I said, and what is this</line>
     <line><del rend="strikethrough">And</del>
     <del rend="strikethrough">who</del>
     <mod>
@@ -19,7 +19,7 @@
     </mod>
      <del rend="strikethrough"> the mistress of the mystery</del> ?
    </line>
-    <line>
+    <line rend="indent1">
         <del rend="strikethrough">And who</del>
       <mod>
       <del rend="strikethrough"> she,</del>
@@ -27,29 +27,29 @@
       </mod>
        <del rend="strikethrough">and a voice made reply</del>
      </line>
-    <line>
+    <line rend="indent1">
       <del rend="strikethrough">And a voice said Life!</del>
     </line>
-    <line>
+    <line rend="indent1">
       And who
       <add place="sublinear"><del rend="strikethrough">is</del></add>
       <del rend="strikethrough"> the mistress of the mystery</del>
     </line>
 
-    <line>
+    <line rend="indent1">
       <del rend="strikethrough">And a voice said Life</del> ...
     </line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">Life</del>
       <del rend="strikethrough">And life...</del>
   </line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">And said...</del>
   </line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">And who is she</del>
     </line>
-    <line>
+    <line rend="indent2">
       <del rend="strikethrough">And</del> whose shape is that within the car? &amp; why &#8212;
     </line>
     <space quantity="1" unit="line"/>
@@ -63,7 +63,7 @@
       </mod>
          is all here amiss?
        </line>
-    <line>
+    <line rend="indent1">
       But a voice answered..Life...
     <mod>
         <del rend="strikethrough">
@@ -86,7 +86,7 @@
      <line rend="indent3">&#8212;</line>
      <space quantity="1" unit="line"/>
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough"> What I had</del>
         <add place="sublinear">That what I thought
@@ -97,14 +97,14 @@
 </line>
 
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough">Out of the hi</del>
       <add place="sublinear">o strange distortion out of the hill side</add>
     </mod>
   </line>
 
-    <line>Was indeed one of that
+    <line rend="indent1">Was indeed one of that
       <mod>
         <del>deluded</del>
         <add place="superlinear">degraded</add>
@@ -113,7 +113,7 @@
       crew
     </line>
 
-    <line>
+    <line rend="indent1">
       <del rend="strikethrough">And that the grass which methought </del>
  <mod>
   <del rend="strikethrough"> grew </del>
