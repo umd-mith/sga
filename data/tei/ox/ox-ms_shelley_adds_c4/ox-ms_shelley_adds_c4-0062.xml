@@ -9,33 +9,103 @@
 <zone type="library">27</zone>
   <zone type="main">
     <line>Old men, and women foully disarrayed</line>
-    <line>Shake their grey hair in the <del rend="strikethrough">distempered</del> wind</line>
-    <line>insulting</line>
-    <line><del rend="strikethrough">And  follow  in the dance,</del> <del rend="strikethrough">though</del></line>
-    <line><del rend="strikethrough"><unclear>to find</unclear></del></line>
-    <line>And <del rend="strikethrough">dance behind</del> &amp; seek <del rend="strikethrough">with steps</del></line>
-    <line>strain</line>
-    <line>To seek to reach <unclear>the</unclear> <del rend="strikethrough"><unclear>chariot</unclear></del> with limbs decayed</line>
-    <line><unclear>Limp</unclear> in the dance car of light</line>
-    <line><del rend="strikethrough">car</del></line>
-    <line>Seeking to reach the <del rend="strikethrough">chariot</del> which leaves them still</line>
-    <line>Far<del rend="strikethrough">ther</del> behind &amp; deeper in the shade</line>
-    <line>But not the less with impotence of will</line>
-    <line><unclear> ? ty</unclear></line>
-    <line><del rend="strikethrough">They shake their fleshless bones without repose</del></line>
-    <line><del rend="strikethrough">The mocking youth with vain &amp; wanton will</del></line>
-    <line><del rend="strikethrough">And frost in these performs what fire in <unclear>them</unclear></del></line>
-    <line>wheel                                   those</line>
-    <line>They <del rend="strikethrough">dance</del> though ghostly shadows interpose</line>
-    <line>move</line>
-    <line>And</line>
-    <line><del rend="strikethrough">Mocking <unclear>the</unclear> <unclear></unclear> youthful band</del></line>
+    <line>Shake their grey hair in the
+      <mod><del rend="strikethrough">distempered</del>
+      <add place="sublinear">insulting</add>
+    </mod>
+       wind</line>
+<space quantity="1" unit="line"/>
+<line rend="indent5">--------</line>
+    <line><del rend="strikethrough">And  follow  in the dance,</del>
+    <del rend="strikethrough">though</del>
+  </line>
+
+    <line>And
+      <del rend="strikethrough">dance behind</del>
+       &amp; seek
+       <mod>
+       <del rend="strikethrough">with steps</del>
+       <add place="superlinear"><del rend="strikethrough"><unclear>to find</unclear></del></add>
+       <add place="sublinear">strain</add>
+     </mod>
+     </line>
+
+    <line>
+      To seek to reach
+      <unclear>the</unclear>
+      <del rend="strikethrough"><unclear>chariot</unclear></del>
+       with limbs decayed
+     </line>
+    <line>
+      <unclear>Limp</unclear> in the dance car of light
+  </line>
+
+    <line>
+      <del rend="strikethrough">Seeking</del>
+       to reach the
+      <mod>
+        <del rend="strikethrough">chariot</del>
+        <add place="superlinear"><del rend="strikethrough">car</del></add>
+      </mod>
+       which leaves them still</line>
+    <line>
+      Far<del rend="strikethrough">ther</del> behind &amp; deeper in the shade
+    </line>
+    <line>
+      But not the less with impotence of will
+    </line>
+    <line>
+      <del rend="strikethrough">They shake their fleshless bones without repose</del>
+    </line>
+    <line>
+      <del rend="strikethrough">The mocking youth with vain &amp; wanton will</del></line>
+    <line>
+      <del rend="strikethrough">And frost in these performs what fire in </del>
+      <mod>
+        <del rend="strikethrough"><unclear>them</unclear></del>
+      <add place="sublinear">those</add>
+    </mod>
+  </line>
+
+    <line>They
+      <mod>
+        <del rend="strikethrough">dance</del>
+        <add place="superlinear">wheel</add>
+        <add place="sublinear">move</add>
+      </mod>
+       though ghostly shadows interpose
+     </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Mocking</del>
+      <add place="superlinear">And</add>
+    </mod>
+        <del rend="strikethrough"><unclear>the</unclear> <unclear></unclear> youthful band</del>
+      </line>
     <line>Round them &amp; round each other, and fulfill</line>
-    <line>Their work and</line>
-    <line><del rend="strikethrough">Thier part &amp; sink  to the dust</del></line>
-    <line><del rend="strikethrough">And sink into</del> the dust whence they arose</line>
-    <line><del rend="strikethrough">And        in</del> <del rend="strikethrough">scorn</del></line>
-    <line>Sink &amp; corruption veils them as they lie</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Thier part &amp;</del>
+        <add place="superlinear">Their work and</add>
+      </mod>
+        <del rend="strikethrough"> sink  to the dust</del>
+      </line>
+    <line>
+      <del rend="strikethrough">And sink into</del>
+       the dust whence they arose
+     </line>
+
+    <line>
+      <add place="superlinear"><del rend="strikethrough">And</del></add>
+      Sink &amp;
+      <mod>
+        <del>corruption</del>
+        <add place="superlinear"><del rend="strikethrough">in scorn</del></add>
+      </mod>
+           veils them as they lie
+         </line>
     <line>And frost in these performs what fire in those</line>
   </zone>
 </surface>
