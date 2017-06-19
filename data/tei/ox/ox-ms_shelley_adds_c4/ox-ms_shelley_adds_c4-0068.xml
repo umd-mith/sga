@@ -10,10 +10,15 @@
 <zone type="calculation">8</zone>
   <zone type="main">
     <line>Or <del rend="strikethrough">that which of it yet</del></line>
-    <line>dregs</line>
-    <line>Or those gross <del rend="strikethrough">shadow</del> of it which yet remained</line>
-    <line><del rend="strikethrough">smoke</del></line>
-    <line>they     should</line>
+
+    <line rend="indent1">Or those gross
+      <mod>
+        <del rend="strikethrough">shadow</del>
+        <add place="sublinear"><del rend="strikethrough">smoke</del></add>
+        <add place="superlinear">dregs</add>
+      </mod>
+       of it which yet remained
+     </line>
     <line>Out of the grave to which <del rend="strikethrough">it</del> tends, <del rend="strikethrough">did</del> I</line>
     <line>may</line>
     <line><del rend="strikethrough">Seek to distinguished</del> any who <del rend="strikethrough">have</del> stained</line>
