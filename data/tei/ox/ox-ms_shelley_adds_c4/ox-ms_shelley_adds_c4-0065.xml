@@ -51,7 +51,7 @@
         supplied
       </line>
 
-    <line rend="indent2">Corruption would not now
+    <line rend="indent1">Corruption would not now
       <mod>
       <del rend="strikethrough">so </del>
       <add place="superlinear">thus</add>
@@ -61,7 +61,7 @@
     <line>Of what was once Rousseau &#8212;<del rend="strikethrough">I leave</del>
   </line>
 
-    <line rend="indent2">
+    <line rend="indent1">
       Stained
     <mod>
         <del rend="strikethrough">the pure</del>
@@ -74,19 +74,47 @@
          </add>
        </add>
       </mod>
-    <line>that <del rend="strikethrough">which should    disdain</del></line>
-    <line><unclear></unclear> which ought to have disdained to wear <unclear></unclear></line>
-    <line><del rend="strikethrough">If I have been extinguished, yet <unclear>there then</unclear> rise</del></line>
-    <line><del rend="strikethrough">A thousand beacons from the spark I bore</del>.&#8212;</line>
-    <line><del rend="strikethrough">And then the shape turned that which mi</del></line>
-    <line><del rend="strikethrough">what might be its eyes</del></line>
-    <line>And who are those chained to the the car? the Wise</line>
-    <line>they who wore</line>
-    <line>great the unforgotten <del rend="strikethrough">the supreme</del></line>
-    <line>The <del rend="strikethrough">mighty the immortal</del></line>
-    <line><del rend="strikethrough">Such were they called; and their wisdom</del></line>
-    <line>Mitres &amp; helms &amp; crowns, or wreathes of light</line>
-    <line>Signs of</line>
-    <line><del rend="strikethrough">Of the</del> <del rend="strikethrough">soul</del> thoughts empire over thought,</line>
+    </line>
+
+    <line>
+      <del rend="strikethrough">If I have been extinguished, yet
+        <unclear>there then</unclear> rise</del>
+      </line>
+    <line rend="indent1">
+      <del rend="strikethrough">A thousand beacons from the spark I bore</del>.&#8212;
+    </line>
+    <line rend="indent1"><del rend="strikethrough">And then the shape turned</del>
+    <mod>
+      <del rend="strikethrough"> that which mi</del>
+    <add place="sublinear"><del rend="strikethrough">what might be its eyes</del></add>
+  </mod>
+</line>
+
+    <line rend="indent1">
+      And who are those chained to the the car? the Wise
+    </line>
+    <line>
+      The
+      <mod>
+        <del rend="strikethrough">mighty the immortal</del>
+      <add place="superlinear">great the unforgotten</add>
+    </mod>
+<mod>
+    <del rend="strikethrough">the supreme</del>
+  <add place="superlinear">they who wore</add>
+</mod>
+</line>
+    <line rend="indent1"><del rend="strikethrough">Such were they called; and their wisdom</del>
+  </line>
+    <line rend="indent2">Mitres &amp; helms &amp; crowns, or wreathes of light</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Of the</del>
+        <add place="superlinear">Signs of</add>
+      </mod>
+       <del rend="strikethrough">soul </del>
+        thoughts empire over thought,
+      </line>
   </zone>
 </surface>
