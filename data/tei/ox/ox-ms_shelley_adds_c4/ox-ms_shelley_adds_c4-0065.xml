@@ -8,18 +8,49 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0065.jp2"/>
 <zone type="library">8</zone>
   <zone type="main">
-    <line>He paused, and ere he could resume, I cried</line>
-    <line>First who art thou... before thy memory</line>
-    <line>feared</line>
-    <line>loved <del rend="strikethrough">&amp;</del> hated</line>
-    <line>I <del rend="strikethrough">did acted, suffered</del>, suffered, did, &amp; died</line>
-    <line>And if the <del rend="strikethrough">flame</del> <del rend="strikethrough">which</del></line>
-    <line>spark with which Heaven lit my</line>
-    <line>spirit</line>
-    <line>had with with purer nutriment      <del rend="strikethrough">soul</del></line>
-    <line><del rend="strikethrough">Had from a purer flask</del>                <del rend="strikethrough">oil</del></line>
-    <line>Earth <del rend="strikethrough">from</del> <del rend="strikethrough">a purer       flask</del> <del rend="strikethrough">had</del> supplied</line>
-    <line>thus</line>
+    <line>
+      He paused, and ere he could resume, I cried
+    </line>
+    <line rend="indent1">
+      First who art thou... before thy memory
+    </line>
+
+    <line>I
+      <mod>
+        <del rend="strikethrough">did acted, suffered,</del>
+        <add place="superlinear">loved &amp; hated
+        <add place="superlinear">feared</add>
+      </add>
+    </mod>
+     suffered, did, &amp; died
+   </line>
+    <line rend="indent1">And if the
+      <mod>
+        <del rend="strikethrough">flame which</del>
+        <add place="sublinear">spark with which Heaven lit my spirit</add>
+      </mod>
+    </line>
+    <line>
+    <mod>
+      <del rend="strikethrough">Had from a purer flask</del>
+      <add place="superlinear">had with purer nutriment</add>
+    </mod>
+  </line>
+  <line rend="indent1">
+    Earth
+
+        <del rend="strikethrough">from a purer
+          <space quantity="5" unit="characters"/> flask had</del>
+        <mod>
+            <add place="superlinear"><del rend="strikethrough">oil</del>
+          <add place="superlinear"><del rend="strikethrough">soul</del>
+          <add place="superlinear">spirit</add>
+        </add>
+          </add>
+        </mod>
+        supplied
+      </line>
+
     <line>Corruption would not now <del rend="strikethrough">so</del> much inherit</line>
     <line>Of what was once Rousseau      <del rend="strikethrough">I leave</del></line>
     <line>nor this disguise</line>
