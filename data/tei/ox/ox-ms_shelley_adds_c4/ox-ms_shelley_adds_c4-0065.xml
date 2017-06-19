@@ -51,11 +51,29 @@
         supplied
       </line>
 
-    <line>Corruption would not now <del rend="strikethrough">so</del> much inherit</line>
-    <line>Of what was once Rousseau      <del rend="strikethrough">I leave</del></line>
-    <line>nor this disguise</line>
-    <line>within which still disdains</line>
-    <line>Stained <del rend="strikethrough">the pure</del>                   to wear it.</line>
+    <line rend="indent2">Corruption would not now
+      <mod>
+      <del rend="strikethrough">so </del>
+      <add place="superlinear">thus</add>
+    </mod>
+    much inherit
+  </line>
+    <line>Of what was once Rousseau &#8212;<del rend="strikethrough">I leave</del>
+  </line>
+
+    <line rend="indent2">
+      Stained
+    <mod>
+        <del rend="strikethrough">the pure</del>
+        <add place="superlinear">within which still disdains to wear it.&#8212;</add>
+         <add place="sublinear">that <del rend="strikethrough">which </del>
+        should <space quantity="8" unit="characters"/> disdain
+          <add place="sublinear">which ought to have disdained to wear
+          <add place="superlinear"><del rend="strikethrough">disdain </del>
+           to wear it</add>
+         </add>
+       </add>
+      </mod>
     <line>that <del rend="strikethrough">which should    disdain</del></line>
     <line><unclear></unclear> which ought to have disdained to wear <unclear></unclear></line>
     <line><del rend="strikethrough">If I have been extinguished, yet <unclear>there then</unclear> rise</del></line>
