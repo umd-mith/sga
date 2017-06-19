@@ -8,10 +8,20 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0069.jp2"/>
   <zone type="main">
     <line><del rend="strikethrough">Of thought</del></line>
-    <line>met side by side</line>
-    <line><del rend="strikethrough">reign</del>...<del rend="strikethrough">and</del> <del rend="strikethrough">reigned</del></line>
-    <line>Where Plato &amp; his pupil <del rend="strikethrough">sanctified</del>   cried</line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">Reigned where they met in their</del>   <del rend="strikethrough">he flew</del></line>
+    <line>Where Plato &amp; his pupil
+      <mod>
+        <del rend="strikethrough">sanctified</del>
+        <add place="superlinear"><del rend="strikethrough">reign and...</del>
+        <add><del rend="strikethrough">reigned</del></add>
+        <add place="superlinear">met side by side</add>
+    </add>
+  </mod>
+cried
+</line>
+    <line rend="indent1">
+      <del rend="strikethrough">The</del> <del rend="strikethrough">Reigned where they met in their</del>
+      <space quantity="5" unit="characters"/>
+      <del rend="strikethrough">he flew</del></line>
     <line><del rend="strikethrough">in the spot</del> <del rend="strikethrough">on which they met,</del> <del rend="strikethrough">each</del> <del rend="strikethrough">one</del></line>
     <line>In their blind flight from the circumference</line>
     <line>And centre of the reign of thought</line>
