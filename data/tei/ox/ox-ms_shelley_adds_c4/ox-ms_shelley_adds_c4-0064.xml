@@ -6,10 +6,28 @@
   xml:id="ox-ms_shelley_adds_c4-0064" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="28r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0064.jp2"/>
+<zone type="library">28</zone>
   <zone type="main">
-    <line><del rend="strikethrough">locks</del></line>
-    <line>thin discoloured <del rend="strikethrough">hair</del></line>
-    <line>And white, was but his <del rend="strikethrough">hair</del>; <del rend="strikethrough">and</del> <del rend="strikethrough">that</del> <del rend="strikethrough">two</del> hair<del rend="strikethrough">s</del></line>
+    <line>And white, was but his
+      <mod>
+        <del rend="strikethrough">hair;</del>
+        <add place="superlinear">thin</add>
+      </mod>
+        <mod>
+          <del rend="strikethrough">and that two</del>
+        <add place="superlinear">discoloured
+        <del rend="strikethrough">hair</del></add>
+      </mod>
+
+      <mod>
+        <del>hairs</del>
+        <add place="superlinear">
+          <del rend="strikethrough">locks</del>
+        </add>
+      </mod>
+    </line>
+
+
     <line><del rend="strikethrough">they</del></line>
     <line>And that <del rend="strikethrough">great</del> the holes <del rend="strikethrough">they</del> <del rend="strikethrough">it</del> vainly sought to hide</line>
     <line>it</line>
