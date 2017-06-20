@@ -7,16 +7,30 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="31v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0073.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">and I bow go</del></line>
-    <line><del rend="strikethrough">To fling</del>               <del rend="strikethrough">an</del> I know the place assigned</line>
-    <line><del rend="strikethrough">gate</del></line>
-    <line>To such as sweep the threshold of the <del rend="strikethrough">fane</del></line>
-    <line><del rend="strikethrough">portal</del></line>
-    <line>When truth &amp; its <del rend="strikethrough">creators</del> sit enshrined..</line>
-    <line>inventors</line>
+    <line rend="indent8"><del rend="strikethrough">and I bow go</del>
+  </line>
+  <line rend="indent8"><del rend="strikethrough">an/del> I know the place assigned</del>
+  </line>
+    <line><del rend="strikethrough">To fling</del>
+  </line>
+    <line>To such as sweep the threshold of the
+      <mod>
+        <del rend="strikethrough">fane</del>
+        <add place="superlinear"><del rend="strikethrough">gate</del></add>
+      <add place="sublinear"><del rend="strikethrough">portal</del></add>
+    </mod>
+  </line>
+
+    <line>When truth &amp; its
+      <mod>
+        <del rend="strikethrough">creators</del>
+        <add place="sublinear">inventors</add>
+      </mod>
+       sit enshrined..</line>
+<space quantity="1" unit="line"/>
+<line rend="indent4">&#8212;</line>
     <line><del rend="strikethrough">And that is ours</del>       <del rend="strikethrough">dishonour</del></line>
-    <line><del rend="strikethrough">At past &amp; present pain</del></line>
-    <line><del rend="strikethrough">And we sought</del></line>
+    <line rend="indent7"><del rend="strikethrough">At past &amp; present pain</del></line> spanTo=""  <line><del rend="strikethrough">And we sought</del></line>
     <line><del rend="strikethrough">We have</del> <del rend="strikethrough">And</del>       <del rend="strikethrough">with</del></line>
     <line><del rend="strikethrough">Yet even we who sweep</del></line>
     <line>Yet we           <del rend="strikethrough">brush</del></line>
