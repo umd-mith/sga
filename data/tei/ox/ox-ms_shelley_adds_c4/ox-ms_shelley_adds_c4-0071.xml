@@ -7,35 +7,126 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="30v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0071.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">Nor pain nor years</del> <del rend="strikethrough">pleasure</del></line>
-    <line><del rend="strikethrough">infamy, nor now the tomb</del></line>
-    <line>Nor tears nor infamy nor now the tomb</line>
-    <line><del rend="strikethrough">Could model to the</del>  its <del rend="strikethrough"><unclear>planet</unclear></del></line>
-    <line>Could temper to <del rend="strikethrough">the spirit</del> <del rend="strikethrough">the</del> <del rend="strikethrough">Let</del> <del rend="strikethrough">them</del></line>
-    <line>its object. <del rend="strikethrough">let them pass</del></line>
-    <line>I said in <del rend="strikethrough">scorn, the world has not become</del></line>
-    <line><del rend="strikethrough">Frail <unclear>ruin</unclear></del></line>
-    <line><del rend="strikethrough">I</del> <del rend="strikethrough">said, and follow thou</del>      let them pass</line>
-    <line>I cried &#8212; the world &amp; its mysterious doom</line>
-    <line>Is not <del rend="strikethrough">not</del> so much more glorious than it</line>
-    <line>was</line>
-    <line><del rend="strikethrough">would worship</del> <del rend="strikethrough">those</del></line>
-    <line>That I <del rend="strikethrough">desire to</del>              <del rend="strikethrough">threw</del></line>
-    <line><del rend="strikethrough">would</del> wonder at the                <del rend="strikethrough">drew</del></line>
-    <line>desire to worship those who   drew</line>
-    <line>New</line>
-    <line>New figures on <del rend="strikethrough">its frail delusive</del>  <del rend="strikethrough">glass</del></line>
-    <line><del rend="strikethrough">brittle sphere of</del></line>
-    <line><del rend="strikethrough">Beyond the other <unclear>ea th</unclear></del></line>
-    <line><del rend="strikethrough">Look onward then.  .. I looked &amp; knew</del></line>
-    <line>The <del rend="strikethrough">antique</del> its'</line>
-    <line>figures      false &amp; fragile glass</line>
-    <line>New <del rend="strikethrough">colours</del> on <del rend="strikethrough">that</del> <del rend="strikethrough">bubble</del>      <del rend="strikethrough">like the</del></line>
-    <line><del rend="strikethrough">Fresh</del></line>
-    <line>X      <unclear>Figures</unclear></line>
-    <line>As the old faded.   <del rend="strikethrough">of among the crew</del></line>
-    <line><del rend="strikethrough">Any delight</del> <del rend="strikethrough">&amp;</del> <del rend="strikethrough">Colours</del> ever new</line>
-    <line>them</line>
-    <line>Rise on the bubble paint <del rend="strikethrough">it</del> how you may</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Nor pain nor years</del>
+    <del rend="strikethrough">pleasure</del>
+    <add place="sublinear"><del rend="strikethrough">infamy, nor now the tomb</del></add>
+  </mod>
+  </line>
+    <line>
+      Nor tears nor infamy nor now the tomb
+    </line>
+    <line>
+      <del rend="strikethrough">Could model to the</del>  its
+    <mod>
+      <del rend="strikethrough"> <unclear>planet</unclear></del>
+    <add place="sublinear">Could temper to
+    <del rend="strikethrough">the spirit:</del>
+    <add>
+  <mod>
+      <space quantity="5" unit="characters"/>
+    <del rend="strikethrough">The Let them</del>
+    <add place="sublinear">let them pass</add>
+  </mod>
+  </add>
+  <add place="sublinear">its object.</add>
+</add>
+</mod>
+</line>
+    <line>
+      <del rend="strikethrough">I said in scorn, the world has not become</del>
+    </line>
+    <line>
+      <del rend="strikethrough">Frail <unclear>ruin</unclear></del>
+    </line>
+    <line>
+      <del rend="strikethrough">I</del> <del rend="strikethrough">said, and follow thou</del>
+      <space quantity="10" unit="characters"/>
+      let them pass
+    </line>
+    <line>
+      I cried &#8212; the world &amp; its mysterious doom
+    </line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+    <space quantity="1" unit="line"/>
+    <line>
+      Is not
+      <del rend="strikethrough">not</del>
+       so much more glorious than it
+       <add place="sublinear">was</add>
+     </line>
+    <line>That I
+      <mod>
+        <del rend="strikethrough">desire to</del>
+        <add place="superlinear"><del rend="strikethrough">would worship those</del></add>
+        <add place="sublinear"><del rend="strikethrough">would</del> wonder at the
+      <add place="sublinear">desire to worship those who drew
+      <del rend="strikethrough">drew</del>
+      <add place="sublinear">drew</add>
+    <add place="superlinear"><del rend="strikethrough">threw</del></add>
+  </add>
+</add>
+      </mod>
+    </line>
+    <line>
+      <add place="superlinear"><del rend="strikethrough">New</del></add>
+      New <del rend="strikethrough">figures</del>
+       on
+       <mod>
+         <del rend="strikethrough">its frail delusive glass</del>
+       <add place="sublinear"><del rend="strikethrough">brittle sphere of</del></add>
+     </mod>
+   </line>
+    <line>
+      <del rend="strikethrough">Beyond the other <unclear>ea th</unclear></del>
+  </line>
+    <line>
+      <del rend="strikethrough">Look onward then.  .. I looked &amp; knew</del>
+    </line>
+    <line>
+      The <del rend="strikethrough">antique</del>
+  </line>
+    <line>
+      New
+      <add place="sublinear"><del rend="strikethrough">Fresh</del></add>
+      <mod>
+        <del rend="strikethrough">colours</del>
+        <add place="superlinear">figures</add>
+      </mod>
+         on
+         <add place="superlinear">it's</add>
+         <mod>
+           <del rend="strikethrough">that bubble</del>
+           <add place="superlinear">false &amp; fragile glass
+           <add place="sublinear"><del rend="strikethrough">like the</del></add>
+         </add>
+         </mod>
+            </line>
+<space quantity="1" unit="line"/>
+<line rend="indent4"> X </line>
+<space quantity="1" unit="line"/>
+
+    <line>As the old faded.
+      <mod>
+        <del rend="strikethrough">of among the crew</del>
+      <add place="superlinear"><unclear>Figures</unclear></add>
+    </mod>
+  </line>
+    <line>
+      <del rend="strikethrough">Any delight</del>
+      <space quantity="3" unit="chracters"/>
+       <del rend="strikethrough">&amp;</del>
+       <space quantity="3" unit="characters"/>
+        <del rend="strikethrough">Colours</del> ever new
+      </line>
+    <line>Rise on the bubble paint
+      <mod>
+        <del rend="strikethrough">it</del>
+        <add place="superlinear">them</add>
+      </mod>
+       how you may
+     </line>
   </zone>
 </surface>
