@@ -9,29 +9,72 @@
 <zone type="library">32</zone>
   <zone type="main">
     <line><del rend="strikethrough">Egypt &amp; Babylon  had</del></line>
-    <line>you</line>
-    <line>Or as <del rend="strikethrough">we</del> passed <del rend="strikethrough">away</del> I interrupted, &#8212; thus</line>
+
+    <line>Or as
+      <mod>
+        <del rend="strikethrough">we</del>
+        <add place="superlinear">you</add>
+         passed <del rend="strikethrough">away</del> I interrupted, &#8212; thus</line>
     <line><del rend="strikethrough">An infant child</del></line>
     <line>One who awakes within a ship would say</line>
-    <line>stars</line>
-    <line>That the <del rend="strikethrough">clouds</del> move<del rend="strikethrough">;</del> as it appears to us</line>
-    <line>So is it not, however it may be. &#8212;-</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+    <space quantity="1" unit="line"/>
+
+
+    <line>That the
+      <mod>
+        <del rend="strikethrough">clouds</del>
+        <add place="superlinear">stars</add>
+      </mod>
+       move<del rend="strikethrough">;</del> as it appears to us
+     </line>
+    <line rend="indent1">So is it not, however it may be. &#8212;
+    </line>
     <line><del rend="strikethrough">Web,</del> <del rend="strikethrough">Veil within veil the multitudinous</del></line>
     <line><del rend="strikethrough">Veil after veil</del></line>
     <line><del rend="strikethrough">See ye not</del>   <del rend="strikethrough">there the multitudinous</del></line>
-    <line><del rend="strikethrough">Truths</del> beings</line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">last</del> <del rend="strikethrough">of</del> <del rend="strikethrough">Natures</del> <del rend="strikethrough">multitudinous</del></line>
-    <line><del rend="strikethrough">Phantoms of those who</del></line>
-    <line><del rend="strikethrough">Veils Veils</del></line>
-    <line>For <del rend="strikethrough">mark the phantoms of it</del></line>
-    <line><del rend="strikethrough"><unclear>For</unclear></del> <del rend="strikethrough">But mark</del> how chained to the triumphal chair</line>
-    <line>But mark <del rend="strikethrough">where</del></line>
-    <line><unclear>the</unclear></line>
-    <line>The mighty famtoms phantoms of an elder day</line>
-    <line>is</line>
-    <line>All that <del rend="strikethrough">was</del> mortal of great Plato<del rend="strikethrough">'s spirit</del></line>
-    <line><del rend="strikethrough">shares</del></line>
-    <line>the                there</line>
+
+    <line><del rend="strikethrough">The</del> <del rend="strikethrough">last</del>
+    <del rend="strikethrough">of</del>
+    <mod>
+      <del rend="strikethrough">Natures</del>
+      <add place="superlinear"><del rend="strikethrough">Truths</del>
+      <add place="superlinear">beings</add>
+    </mod>
+       <del rend="strikethrough">multitudinous</del>
+     </line>
+    <line rend="indent2"><del rend="strikethrough">Phantoms of those who</del></line>
+    <line rend="indent2"><del rend="strikethrough">Veils Veils</del></line>
+    <line rend="indent2">For <del rend="strikethrough">mark the phantoms of it</del></line>
+    <line rend="indent2">
+      <del rend="strikethrough"><unclear>For</unclear></del>
+      <mod>
+        <del rend="strikethrough">But mark</del>
+        <add place="sublinear">But mark
+          <del rend="strikethrough">where</del>
+        </add>
+      </mod>
+       how chained to the triumphal chair
+     </line>
+
+
+    <line rend="indent2">The mighty famtoms
+      <add place="superlinear"><unclear>the</unclear></add>
+       phantoms of an elder day &#8212;
+     </line>
+    <line rend="indent1">All that
+      <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear">is</add> mortal of great Plato<del rend="strikethrough">'s</del>
+        <mod>
+          <del rend="strikethrough"> spirit</del>
+        <add place="sublinear"><del rend="strikethrough">shares</del>
+      <add place="sublinear">there</add>
+    </add>
+  </mod>
+</line>
+  
     <line><del rend="strikethrough">Walks,</del> Expiates <del rend="strikethrough">the</del> joy &amp; woe his master knew not</line>
     <line><unclear>That</unclear> star that ruled his <del rend="strikethrough">life</del></line>
     <line><del rend="strikethrough">The star of his Heaven</del>           doom    far</line>
