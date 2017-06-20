@@ -7,7 +7,9 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="34v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0069.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">Of thought</del></line>
+<line>
+  <del rend="strikethrough">Of thought</del>
+</line>
     <line>Where Plato &amp; his pupil
       <mod>
         <del rend="strikethrough">sanctified</del>
@@ -19,34 +21,111 @@
 cried
 </line>
     <line rend="indent1">
-      <del rend="strikethrough">The</del> <del rend="strikethrough">Reigned where they met in their</del>
+      <del rend="strikethrough">The</del> <del rend="strikethrough">Reigned</del>
+      <mod>
+        <del rend="strikethrough"> where they met in their</del>
+        <add place="sublinear"><del rend="strikethrough">in the spot</del> <del rend="strikethrough">on which they met,</del>
+        <del rend="strikethrough">each</del> <del rend="strikethrough">one</del></add>
+      </mod>
       <space quantity="5" unit="characters"/>
-      <del rend="strikethrough">he flew</del></line>
-    <line><del rend="strikethrough">in the spot</del> <del rend="strikethrough">on which they met,</del> <del rend="strikethrough">each</del> <del rend="strikethrough">one</del></line>
-    <line>In their blind flight from the circumference</line>
-    <line>And centre of the reign of thought</line>
-    <line>Plato &amp; his pupil side by side</line>
-    <line>Met in the               and</line>
-    <line><del rend="strikethrough">Reigned</del> <del rend="strikethrough">from the centre to the circumference</del></line>
-    <line><del rend="strikethrough">from</del> the core</line>
-    <line><del rend="strikethrough"><unclear>Reyn</unclear></del>     in their flight</line>
-    <line><del rend="strikethrough">Of thought</del></line>
-    <line>spied</line>
-    <line>Of thought; till <del rend="strikethrough">mighty</del> Bacon<del rend="strikethrough">s</del>, great as either,</line>
-    <line>The spot <unclear>on</unclear> which they met and said from hence</line>
-    <line>but</line>
-    <line>I soar into a loftier throne.  <del rend="strikethrough">and</del> we I &#8212;</line>
-    <line>O World, who<del rend="strikethrough">se aged</del> full urns, dost still dispense</line>
-    <line>from <del rend="strikethrough">thy</del></line>
-    <line><del rend="strikethrough">The</del> Blind as thy fortune, fame &amp; infamy</line>
-    <line>think</line>
-    <line><del rend="strikethrough">Wh</del> I who sought both, prize neither, <del rend="strikethrough">now</del>; I <del rend="strikethrough">knew</del></line>
-    <line>I knew</line>
-    <line><del rend="strikethrough">What names</del> <del rend="strikethrough"><unclear>grow</unclear></del> dim</line>
-    <line>have died within I</line>
-    <line>What names were <del rend="strikethrough">blotted</del> <del rend="strikethrough">from</del> thy memory</line>
-    <line>still live</line>
-    <line>are</line>
-    <line>Which ones <del rend="strikethrough">were</del> yet recorded;</line>
+      <del rend="strikethrough">he flew</del>
+    </line>
+    <line rend="indent1">
+      In their blind flight from the circumference
+    </line>
+    <line>
+      And centre of the reign of thought
+    </line>
+    <space quantity="1" unit="line"/>
+    <zone type="sketch"></zone>
+    <line>
+      <del rend="strikethrough">Plato &amp; his pupil</del> side by side
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Reigned</del>
+        <add place="sublinear"><unclear>Reyn</unclear></add>
+        <add place="superlinear">Met in the</add>
+      </mod>
+       <del rend="strikethrough">from the centre</del>
+       <mod>
+       <del rend="strikethrough"> to</del>
+       <add place="superlinear">and</add>
+     </mod>
+    <mod>
+       <del rend="strikethrough">the circumference</del>
+       <add place="sublinear">
+         <del rend="strikethrough">from </del> the core
+       <add place="sublinear">in their flight</add>
+     </add>
+   </mod>
+   </line>
+
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough">Of thought</del>
+      </add>
+        Of thought; till
+        <del rend="strikethrough">mighty</del> Bacon<del rend="strikethrough">s</del>,
+        great
+        <add place="superlinear">spied</add>
+           as either,
+         </line>
+         <space quantity="1" unit="line"/>
+    <line>
+      The spot <unclear>on</unclear> which they met and said from hence
+    </line>
+
+    <line>
+      I soar into a loftier throne.
+      <mod>
+        <del rend="strikethrough">and</del>
+        <add place="superlinear">but</add>
+      </mod>
+         we I &#8212;
+       </line>
+    <line>O World, who
+      <mod>
+        <del rend="strikethrough">se aged</del>
+        <add place="sublinear">from <del rend="strikethrough">thy</del></add>
+      </mod>
+       full urns, dost still dispense
+  </line>
+  <space quantity="1" unit="line"/>
+    <line>
+      <del rend="strikethrough">The</del> Blind as thy fortune, fame &amp; infamy
+    </line>
+    <line>
+      <del rend="strikethrough">Wh</del> I who sought both, prize neither,
+      <del rend="strikethrough">now</del>; I
+      <mod>
+        <del rend="strikethrough">knew</del>
+      <add place="superlinear">think</add>
+    <add place="sublinear">I knew</add>
+  </mod>
+</line>
+
+    <line>
+    <mod>
+        <del rend="strikethrough">What names</del>
+      <del rend="strikethrough"><unclear>grow</unclear></del>
+      <del rend="unmarked"> dim</del>
+      <add place="sublinear">have died within</add>
+    </mod>
+  </line>
+    <line>What names were <del rend="strikethrough">blotted</del>
+    <del rend="strikethrough">from</del> thy memory
+  </line>
+    <line>
+      Which ones
+      <mod>
+        <del rend="strikethrough">were</del>
+        <add place="superlinear">are
+        <add place="superlinear">still live</add>
+      </add>
+    </mod>
+         yet recorded;
+       </line>
   </zone>
 </surface>
