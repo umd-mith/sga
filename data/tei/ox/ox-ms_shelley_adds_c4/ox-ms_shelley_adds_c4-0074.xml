@@ -14,7 +14,9 @@
       <mod>
         <del rend="strikethrough">we</del>
         <add place="superlinear">you</add>
-         passed <del rend="strikethrough">away</del> I interrupted, &#8212; thus</line>
+      </mod>
+         passed <del rend="strikethrough">away</del> I interrupted, &#8212; thus
+       </line>
     <line><del rend="strikethrough">An infant child</del></line>
     <line>One who awakes within a ship would say</line>
     <space quantity="1" unit="line"/>
@@ -39,7 +41,7 @@
     <del rend="strikethrough">of</del>
     <mod>
       <del rend="strikethrough">Natures</del>
-      <add place="superlinear"><del rend="strikethrough">Truths</del>
+      <add place="superlinear"><del rend="strikethrough">Truths</del></add>
       <add place="superlinear">beings</add>
     </mod>
        <del rend="strikethrough">multitudinous</del>
@@ -66,7 +68,9 @@
     <line rend="indent1">All that
       <mod>
         <del rend="strikethrough">was</del>
-        <add place="superlinear">is</add> mortal of great Plato<del rend="strikethrough">'s</del>
+        <add place="superlinear">is</add>
+      </mod>
+       mortal of great Plato<del rend="strikethrough">'s</del>
         <mod>
           <del rend="strikethrough"> spirit</del>
         <add place="sublinear"><del rend="strikethrough">shares</del>
@@ -74,13 +78,38 @@
     </add>
   </mod>
 </line>
-  
-    <line><del rend="strikethrough">Walks,</del> Expiates <del rend="strikethrough">the</del> joy &amp; woe his master knew not</line>
-    <line><unclear>That</unclear> star that ruled his <del rend="strikethrough">life</del></line>
-    <line><del rend="strikethrough">The star of his Heaven</del>           doom    far</line>
-    <line><del rend="strikethrough">And that</del> <del rend="strikethrough">his ruling star</del> <del rend="strikethrough">which</del> was too fair &#8212;</line>
-    <line>flower of Heaven <unclear>not</unclear></line>
-    <line><del rend="strikethrough">For</del> And Life, where long that <del rend="strikethrough">breathy</del> <del rend="strikethrough">blossom</del> grew</line>
-    <line>Conquered the heart by love which gold or pain</line>
+
+    <line rend="indent2">
+      <del rend="strikethrough">Walks,</del>
+       Expiates <del rend="strikethrough">the</del> joy &amp; woe his master knew not
+     </line>
+    <line rend="indent1">
+    <mod>
+      <del rend="strikethrough">The star of his Heaven</del>
+      <add place="superlinear">That star that ruled his
+        <mod>
+          <del rend="strikethrough">life</del>
+          <add place="sublinear">doom</add>
+        </mod>
+    </add>
+    </mod>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">And that</del>
+      <del rend="strikethrough">his ruling star</del>
+      <del rend="strikethrough">which</del> was
+      <add place="superlinear">far</add>
+       too fair &#8212;</line>
+    <line rend="indent1">
+      <del rend="strikethrough">For</del>
+       And Life, where long that
+       <mod>
+         <del rend="strikethrough">breathy blossom</del>
+         <add place="superlinear">flower of Heaven</add>
+       </mod>
+    <add place="superlinear"><unclear>cut</unclear></add>
+     grew
+   </line>
+    <line rend="indent2">Conquered the heart by love which gold or pain</line>
   </zone>
 </surface>
