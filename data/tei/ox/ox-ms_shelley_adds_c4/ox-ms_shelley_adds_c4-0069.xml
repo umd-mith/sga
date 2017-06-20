@@ -39,10 +39,10 @@ cried
     <space quantity="1" unit="line"/>
     <zone type="sketch"></zone>
     <line>
-      <del rend="strikethrough">Plato &amp; his pupil</del> side by side
+      <del rend="strikethrough">Where Plato &amp; his pupil</del> side by side
     </line>
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough">Reigned</del>
         <add place="sublinear"><unclear>Reyn</unclear></add>
@@ -77,7 +77,7 @@ cried
       The spot <unclear>on</unclear> which they met and said from hence
     </line>
 
-    <line>
+    <line rend="indent1">
       I soar into a loftier throne.
       <mod>
         <del rend="strikethrough">and</del>
@@ -85,7 +85,7 @@ cried
       </mod>
          we I &#8212;
        </line>
-    <line>O World, who
+    <line rend="indent1">O World, who
       <mod>
         <del rend="strikethrough">se aged</del>
         <add place="sublinear">from <del rend="strikethrough">thy</del></add>
@@ -96,7 +96,7 @@ cried
     <line>
       <del rend="strikethrough">The</del> Blind as thy fortune, fame &amp; infamy
     </line>
-    <line>
+    <line rend="indent1">
       <del rend="strikethrough">Wh</del> I who sought both, prize neither,
       <del rend="strikethrough">now</del>; I
       <mod>
@@ -106,7 +106,7 @@ cried
   </mod>
 </line>
 
-    <line>
+    <line rend="indent1">
     <mod>
         <del rend="strikethrough">What names</del>
       <del rend="strikethrough"><unclear>grow</unclear></del>
@@ -114,10 +114,10 @@ cried
       <add place="sublinear">have died within</add>
     </mod>
   </line>
-    <line>What names were <del rend="strikethrough">blotted</del>
+    <line rend="indent2">What names were <del rend="strikethrough">blotted</del>
     <del rend="strikethrough">from</del> thy memory
   </line>
-    <line>
+    <line rend="indent2">
       Which ones
       <mod>
         <del rend="strikethrough">were</del>
