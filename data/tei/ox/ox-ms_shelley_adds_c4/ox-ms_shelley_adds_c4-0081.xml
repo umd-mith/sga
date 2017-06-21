@@ -7,50 +7,82 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="36v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0081.jp2"/>
   <zone type="main">
-    <zone type="library">37</zone>
+    <line>And <del rend="strikethrough">the warmth of day had</del>
+     <mod>
+       <del rend="strikethrough"> strewn</del>
+     <add place="superlinear">
+     <del rend="strikethrough">left</del>
+   </add>
+ </mod>
+ ></line>
+     <line>
+       <mod>
+         <del rend="strikethrough">With</del>
+       <add place="superlinear"><del rend="strikethrough">With</del></add>
+     </mod>
+   </line>
+     <line><del rend="strikethrough">And the breath of night</del></line>
+     <line>And the scent of sleeping flowers</line>
+     <line>And the coldness of the hours</line>
+     <line>Of dew, &amp; the <del rend="strikethrough">light</del> sweet warmth of day</line>
+     <line>Was scattered oer the twinkling bay</line>
+     <line><del rend="strikethrough">Which</del></line>
+     <line>
+       <mod>
+         <del rend="strikethrough">I saw the dark roc</del>
+         <add place="superlinear"><del rend="strikethrough">Which</del></add>
+       </mod>
+   </line>
+     <line>And the fisher<del rend="strikethrough">smen</del> with
+     <mod>
+       <del rend="strikethrough">their</del>
+       <add place="superlinear">his</add>
+     </mod>
+        lamp
+      </line>
+     <line>In <del rend="strikethrough">the dark rocks
+       <space quantity="10" unit="characters"/>
+       damp</del>
+     </line>
+     <line>And spear, about the low rocks damp</line>
+     <line><del rend="strikethrough">Watching to destroy the</del></line>
+     <line>Crept, and struck the fish who came</line>
+     <line>To worship the delusive flame</line>
+     <line><del rend="strikethrough">Poor things its beauty</del></line>
 
-<space quantity="2" unit="lines"/>
-  <line rend="indent1"> The
-    <del rend="strikethrough">days are flying fast away</del>
-  </line>
-  <line rend="indent2">
-    <hi rend="underline">Pleasure</hi>
-</line>
-<line rend="indent3">The hours are flying</line>
-<line rend="indent3">And joys are dying</line>
-<line rend="indent3">And hope is sighing</line>
-<zone type="library">Bodledian Library Stamp</zone>
-<line rend="indent2">June 4</line>
-<line rend="indent2">July 4</line>
-<line rend="indent3">Time is flying</line>
-<line rend="indent3">
-  <mod>
-    <del rend="strikethrough">Joy</del>
-  <add place="sublinear"><unclear>Occasion</unclear></add>
-</mod>
-is dying</line>
-<line rend="indent3">Hope is sighing</line>
-<line rend="indent4">For
-  <mod>
-    <del rend="strikethrough">she knows</del>
-    <add place="superlinear">
-      <del rend="strikethrough">sees</del>
-    </add>
-    <add place="sublinear">there is</add>
-  </mod>
-</line>
-<line rend="indent4">Far more to fear</line>
-<line rend="indent4">In the coming year</line>
-<line rend="indent4">Than desire
-  <del rend="strikethrough">can <unclear>hear</unclear></del></line>
-<line rend="indent5"> In this.</line>
-<space quantity="2" unit="lines"/>
-<zone type="calculation">
-  899<space quantity="1" unit="line"/>
-  <del rend="strikethrough">60</del><space quantity="1" unit="line"/>
-  129
-</zone>
+     <line>Too happy,
+       <mod>
+         <del rend="strikethrough">who</del>
+         <add place="superlinear">
+           <mod>
+             <del rend="strikethrough">these</del>
+       <add>they</add>
+     </mod>
+     </add>
+   </mod>
+          one
+          <mod>
+            <del rend="strikethrough">the</del>
+            <add place="superlinear">whose</add>
+          </mod>
+           pleasure sought
+         </line>
+     <line>Extinguishes all sense &amp; thought</line>
+     <line>Of the regret that pleasure</line>
 
-
-  </zone>
-</surface>
+     <line>
+       <mod>
+         <del rend="strikethrough">Destroying</del>
+         <add place="sublinear">Seeking</add>
+       </mod> life
+     <mod>
+       <del rend="strikethrough">not peace:</del>
+     <add place="superlinear">alone</add>
+   </mod>
+ </line>
+     <line>Seeking</line>
+     <space quantity="2" unit="lines"/>
+     <line><del rend="strikethrough">She left me when the moon was</del></line>
+     <line><del rend="strikethrough">The moon was</del></line>
+   </zone>
+ </surface>
