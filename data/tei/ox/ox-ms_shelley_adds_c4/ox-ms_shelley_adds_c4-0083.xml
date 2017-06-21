@@ -8,13 +8,31 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0083.jp2"/>
   <zone type="main">
     <line>These <del rend="strikethrough">the creators, the destroyers they</del> &#8212;</line>
-    <line><del rend="strikethrough">And than</del>   By  words <del rend="strikethrough">&amp; such as thee</del></line>
+    <line><del rend="strikethrough">And than</del>
+    <hi rend="underline">By  words &#8212;</hi>
+    <del rend="strikethrough">&amp; such as thee</del>
+  </line>
     <line><del rend="strikethrough">And  both  both  or  neither</del></line>
-    <line><del rend="strikethrough">Are</del> <del rend="strikethrough">both</del> <del rend="strikethrough">or neither</del></line>
-    <line>not as</line>
-    <line><del rend="strikethrough">but</del></line>
-    <line>Even as the deeds of others &#8212; <del rend="strikethrough">even</del> as theirs</line>
-    <line><del rend="strikethrough">And then</del> he pointed to acompany</line>
+    <line>
+      <del rend="strikethrough">Are</del>
+          <del rend="strikethrough">both</del>
+              <del rend="strikethrough">Or neither</del>
+            </line>
+
+
+    <line rend="indent1">Even as the deeds of others &#8212;
+      <mod>
+        <del rend="strikethrough">even</del>
+        <add place="superlinear">
+          <mod>
+            <del rend="strikethrough">but</del>
+        <add place="superlinear">not as</add>
+      </mod>
+      </add>
+    </mod> as theirs
+  </line>
+    <line rend="indent1">
+      <del rend="strikethrough">And then</del> he pointed to acompany</line>
     <line>I said    recognized      amid</line>
     <line>In which     <del rend="strikethrough">him</del> <del rend="strikethrough">of</del> <del rend="strikethrough">the</del></line>
     <line><del rend="strikethrough">all who had been the</del> heirs</line>
