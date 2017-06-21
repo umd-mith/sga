@@ -7,27 +7,148 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="37r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0082.jp2"/>
   <zone type="main">
-    <line>The <del rend="strikethrough">days are flying fast away</del></line>
-    <line>Pleasure</line>
-    <line>The hours are flying</line>
-    <line>And joys are dying</line>
-    <line>And hope is sighing</line>
-    <line>June 4</line>
-    <line>July 4</line>
-    <line>Might</line>
-    <line>Time is flying      <del rend="strikethrough">Can</del> I say that sorrow</line>
-    <line>No</line>
-    <line><del rend="strikethrough">Joy</del> is dying      <del rend="strikethrough"><unclear>Every</unclear></del> mask cd borrow</line>
-    <line><unclear>Occasion</unclear>      If</line>
-    <line>Hope is sighing      <del rend="strikethrough">Lest</del> today like tomorrow</line>
-    <line><del rend="strikethrough">sees</del>     Wd remain</line>
-    <line>For <del rend="strikethrough">she  knows</del></line>
-    <line>there is</line>
-    <line>Far more to fear      And between short is bliss</line>
-    <line>And a state such as this</line>
-    <line>In the coming year     Would</line>
-    <line>250 crowns</line>
-    <line>899 Than desire <del rend="strikethrough">can <unclear>hear</unclear></del></line>
-    <line>In this.</line>
+    <zone type="library">37</zone>
+
+    <space quantity="2" unit="lines"/>
+    <line rend="indent1"> The
+    <del rend="strikethrough">days are flying fast away</del>
+    </line>
+    <line rend="indent2">
+    <hi rend="underline">Pleasure</hi>
+    </line>
+    <line rend="indent3">The hours are flying</line>
+    <line rend="indent3">And joys are dying</line>
+    <line rend="indent3">And hope is sighing</line>
+    <zone type="library">Bodledian Library Stamp</zone>
+    <line rend="indent2">June 4</line>
+    <line rend="indent2">July 4</line>
+    <line rend="indent3">Time is flying</line>
+    <line rend="indent3">
+    <mod>
+    <del rend="strikethrough">Joy</del>
+    <add place="sublinear"><unclear>Occasion</unclear></add>
+    </mod>
+    is dying</line>
+    <line rend="indent3">Hope is sighing</line>
+    <line rend="indent4">For
+    <mod>
+    <del rend="strikethrough">she knows</del>
+    <add place="superlinear">
+      <del rend="strikethrough">sees</del>
+    </add>
+    <add place="sublinear">there is</add>
+    </mod>
+    </line>
+    <line rend="indent4">Far more to fear</line>
+    <line rend="indent4">In the coming year</line>
+    <line rend="indent4">Than desire
+    <del rend="strikethrough">can <unclear>hear</unclear></del></line>
+    <line rend="indent5"> In this.</line>
+    <space quantity="2" unit="lines"/>
+    <zone type="calculation">
+    <line>899</line>
+    <line>60</line>
+    <line>_____</line>
+    <line>129</line>
+    <line rend="indent3">60</line>
+    <line rend="indent3">20</line>
+    <line rend="indent3">45</line>
+    <line rend="indent3">______</line>
+    <line rend="indent3">500 &#8212;</line>
+  </zone>
+  <line rend="indent2">Might</line>
+  <line rend="indent1"><del rend="strikethrough">Can</del> I say that sorrow</line>
+  <line rend="indent1">
+    <mod>
+      <del rend="strikethrough"><unclear>Every</unclear></del>
+      <add place="superlinear">No</add>
+    </mod>
+    mask cd borrow
+  </line>
+  <line rend="indent1">
+    <mod>
+      <del rend="strikethrough">Lest</del>
+      <add place="superlinear">If</add>
+    </mod>
+    to day like tomorrow
+</line>
+<line rend="indent2"> Wd remain</line>
+<space quantity="1" unit="line"/>
+<line rend="indent2" >And between short is bliss</line>
+<line rend="indent2">And a state such as this</line>
+<line rend="indent3">Would</line>
+<line rend="indent5">___</line>
+<line rend="indent5">____</line>
+<line rend="indent5">_____</line>
+<line rend="indent5">______</line>
+<zone type="calculation">
+<line>250 crowns</line>
+<line>6.</line>
+
+<zone type="calculation">
+  <line>June 4.</line>
+  <line rend="indent3">130</line>
+  <line rend="indent3">370</line>
+  <line rend="indent3">____</line>
+  <line rend="indent3">500</line>
+  <line rend="indent3">250</line>
+  <line rend="indent3">____</line>
+  <line rend="indent3">250</line>
+  <line rend="indent3">100</line>
+  <line rend="indent3">____</line>
+  <line rend="indent3">150</line>
+</zone>
+<zone type="calculation">
+  <line>33</line>
+  <line>10 <del rend="strikethrough">60</del></line>
+  <line>_____</line>
+  <line>43</line>
+  <line rend="indent1"><unclear>4</unclear></line>
+  <line>20</line>
+</zone>
+<zone type="calculation">
+  <line>July 15</line>
+  <line rend="indent3">1000</line>
+  <line rend="indent3"><del rend="strikethrough">720</del></line>
+  <line rend="indent3">______</line>
+  <line rend="indent3">300</line>
+  <line rend="indent3">______</line>
+  <line rend="indent3">210</line>
+  <line rend="indent3">10</line>
+  <line rend="indent3">_______</line>
+  <line rend="indent3">220</line>
+  <line rend="indent3">30</line>
+  <line rend="indent3">_______</line>
+  <line rend="indent3">250</line>
+</zone>
+<zone type="calculation">
+  <line>70</line>
+    <line>26</line>
+  <line>20</line>
+    <line>_____</line>
+      <line>126</line>
+        <line>200</line>
+          <line>360</line>
+            <line>______</line>
+              <line>686</line>
+            </zone>
+
+<zone type="calculation">
+    <line>180</line>
+      <line>30</line>
+        <line>______</line>
+          <line>210</line>
+        </zone>
+
+<zone type="calculation">
+    <line>120</line>
+      <line>3</line>
+        <line>______</line>
+          <line>360</line>
+    </zone>
+
+
+
+
   </zone>
 </surface>
