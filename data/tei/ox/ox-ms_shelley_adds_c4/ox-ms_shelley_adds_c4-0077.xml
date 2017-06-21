@@ -8,33 +8,110 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0077.jp2"/>
   <zone type="main">
     <line>then</line>
-    <line>To the strings without soul had given</line>
-    <line><unclear>hour</unclear> Its own.</line>
-    <line>If the    shall</line>
-    <line><del rend="strikethrough">The</del> stars <del rend="strikethrough">will</del> still tremble</line>
-    <line>feeling are</line>
-    <line><del rend="strikethrough">And the moon</del>         When moonlight &amp; music &amp; one</line>
-    <line><del rend="strikethrough">Though the moon rise a full</del></line>
-    <line>Though the moon rise a full hour later <del rend="strikethrough">tonight</del></line>
-    <line>Tonight</line>
-    <line>Oh do not seek <del rend="strikethrough">to resemble</del></line>
-    <line><del rend="strikethrough"><unclear></unclear> <unclear> ? </unclear> <unclear>so</unclear></del></line>
-    <line>The <del rend="strikethrough">stars will awaken</del>  long</line>
-    <line>an hour <del rend="strikethrough">more in</del> the Ocean</line>
-    <line><del rend="strikethrough">Though the moon will not rise from the mountain</del></line>
-    <line><del rend="strikethrough">So soon</del>.  <del rend="strikethrough">Will sleep</del></line>
-    <line>The <del rend="strikethrough">will</del> stars will awaken,</line>
-    <line><del rend="strikethrough">Though</del>         sleep</line>
-    <line><del rend="strikethrough">And</del> the moon, <del rend="strikethrough">though</del> a full hour later,</line>
-    <line>Tonight &#8212;-</line>
-    <line><del rend="strikethrough">Sing</del>  <del rend="strikethrough">From</del>  <del rend="strikethrough">The Air will not be</del></line>
-    <line><del rend="strikethrough">Nigh</del></line>
-    <line><del rend="strikethrough">Sing again whilst <unclear>I</unclear></del> <del rend="strikethrough">be shaken</del></line>
-    <line><unclear>Not a leaf</unclear> will    <del rend="strikethrough">scatter</del> <del rend="strikethrough">delig</del></line>
-    <line>The <del rend="strikethrough">dewy air</del></line>
-    <line>The <del rend="strikethrough">dewy air</del>   <del rend="strikethrough">sweet birds</del></line>
-    <line>Whilst <del rend="strikethrough">like</del> the dews of your melody scatter</line>
+    <line>To the strings without soul had
+      <add place="superlinear">then</add>
+       given
+     </line>
+    <line rend="indent3">
+      <del rend="strikethrough"><unclear>hour</unclear></del>
+       Its own.
+     </line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="superlinear">If the</add>
+      </mod>
+       stars
+       <mod>
+         <del rend="strikethrough">will</del>
+         <add place="superlinear">shall</add>
+       </mod>
+          still tremble
+        </line>
+<line rend="indent6">
+  When the moonlight &amp; music &amp; feeling are one
+</line>
+    <line rend="indent1">
+      <del rend="strikethrough">And the moon</del>
+    </line>
+    <line rend="indent1">
+      <del rend="strikethrough">Though the moon rise a full</del>
+    </line>
+    <line rend="indent1">Though the moon rise a full hour later
+      <del rend="strikethrough">tonight</del>
+    </line>
+    <line rend="indent3">
+      Tonight
+    </line>
+    <line rend="indent1">
+      <del rend="strikethrough">Oh do not seek to resemble</del>
+    </line>
+    <space quantity="1" unit="line"/>
+
+    <line rend="indent3">
+      <add place="superlinear">
+        <gap quantity="1" unit="characters"/>
+      <gap quantity="2" unit="characters"/>
+      <del rend="strikethrough">so</del>
+    </add>
+    The <del rend="strikethrough">stars will awaken</del>
+  </line>
+    <line><del rend="strikethrough">Though the moon</del>
+    <mod>
+      <del rend="strikethrough"> will not rise from the mountain</del>
+    <add place="superlinear">an hour
+  <mod>
+      <del rend="strikethrough">more in</del>
+  <add place="superlinear">long</add>
+</mod>
+</add>
+</mod>
+</line>
+    <line rend="indent3">
+      <del rend="strikethrough">So soon.</del>
+      <space quantity="3" unit="characters"/>
+          <del rend="strikethrough">Will sleep</del>
+        </line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent3">The <del rend="strikethrough">will</del> stars will awaken,
+  </line>
+
+    <line rend="indent2">
+      <add place="superlinear">Though</add>
+      <del rend="strikethrough">And</del>
+       the moon,
+       <mod>
+         <del rend="strikethrough">though</del>
+         <add place="superlinear">sleep</add>
+       </mod>
+          a full hour later,
+        </line>
+    <line rend="indent3">Tonight &#8212;</line>
+    <line rend="indent2"><del rend="strikethrough">Sing</del>
+    <del rend="strikethrough">From</del>  <del rend="strikethrough">The Air will not be</del></line>
+
+    <line rend="indent1">
+      <del rend="strikethrough">Sing</del>
+      <mod>
+        <del rend="strikethrough"> again </del>
+        <add place="superlinear">nigh</add>
+      </mod>
+        <del rend="strikethrough"> whilst</del>
+        <add place="sublinear"><unclear> Not a leaf will</unclear></add>
+          <del rend="strikethrough"> <unclear>I be shaken</unclear></del>
+        <add place="sublinear"><del rend="strikethrough">scatter delig</del></add>
+    </line>
+
+    <line rend="indent1">
+      The <del rend="strikethrough">dewy air</del>
+    </line>
+    <line rend="indent1">
+      The <del rend="strikethrough">dewy air</del>
+      <del rend="strikethrough">sweet birds</del>
+    </line>
+    <line rend="indent1">Whilst <del rend="strikethrough">like</del> the dews of your melody scatter</line>
     <line>Delight.&#8212;</line>
-    <line>Sing</line>
+    <line rend="indent3">Sing</line>
   </zone>
 </surface>
