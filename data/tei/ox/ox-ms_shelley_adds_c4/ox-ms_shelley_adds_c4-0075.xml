@@ -16,7 +16,7 @@
         </mod>
         </line>
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough">And near</del>
         <add place="superlinear"><unclear>For</unclear></add>
@@ -26,11 +26,11 @@
          twain
        </line>
 
-    <line>The tutor &amp; his pupil,
+    <line rend="indent1">The tutor &amp; his pupil,
       <add place="superlinear">Srumfredevi</add>
       <del rend="strikethrough">&amp;</del> whom Dominion
     </line>
-    <line>Followed as tame as
+    <line rend="indent1">Followed as tame as
       <mod>
         <del rend="strikethrough">panther</del>
         <add place="sublinear">vulture</add>
@@ -41,7 +41,7 @@
 <line rend="indent4">&#8212;</line>
 <space quantity="1" unit="line"/>
 
-    <line>The world was
+    <line rend="indent2">The world was
       <mod>
          <del rend="strikethrough">shadowed</del>
          <add place="superlinear">darkened</add>
@@ -52,11 +52,11 @@
         </mod>
          either pinion
        </line>
-    <line>Of
+    <line rend="indent2">Of
       <del rend="strikethrough"><unclear>Aris</unclear></del>
        him whom from the flock of conquerors
      </line>
-    <line>Fame
+    <line rend="indent2">Fame
       <mod>
          <del rend="strikethrough">nourished</del>
          <add place="superlinear">singled</add>
@@ -66,7 +66,7 @@
         <space quantity="1" unit="line"/>
         <line rend="indent4">&#8212;</line>
 
-    <line>The other long outlived
+    <line rend="indent3">The other long outlived
       <mod>
         <del rend="strikethrough">both the</del>
         <add place="superlinear">both</add>
@@ -76,7 +76,7 @@
        <add> woes &amp; wars</add>
      </mod>
         </line>
-    <line>
+    <line rend="indent3">
       <del rend="strikethrough">Of</del>
        Throned in the
        <add place="superlinear">new</add>
@@ -84,7 +84,7 @@
         <add place="superlinear">at the gate</add>
          and still had kept
        </line>
-    <line>
+    <line rend="indent3">
       The jealous keys of truths eternal doors
     </line>
 
@@ -92,21 +92,21 @@
     <space quantity="1" unit="line"/>
 
 
-    <line>
+    <line rend="indent4">
       <mod>
         <del rend="strikethrough">Had not</del>
     <add place="superlinear">Porter's</add>
   </mod>
 </line>
-    <line>
+    <line rend="indent4">
       <del rend="strikethrough">Had not</del> <del rend="strikethrough">that</del>
        <del rend="strikethrough">shadow which</del>
      </line>
-    <line>
+    <line rend="indent4">
       <del rend="strikethrough">If Bacon's spirit</del>
     </line>
 
-    <line>
+    <line rend="indent4">
       <del rend="strikethrough">Like lightning</del>
        <del rend="strikethrough">out of darkness;</del>
 
@@ -118,14 +118,14 @@
       </mod>
     </line>
 
-    <line>
+    <line rend="indent4">
       <mod>
         <del rend="strikethrough">The Proteus Nature</del>
         <add place="superlinear"><del rend="strikethrough">If that</del></add>
       </mod>
              <del rend="strikethrough">Nature</del>____
 </line>
-<line>
+<line rend="indent5">
   <mod>
     <del rend="strikethrough">The Proteus Nature</del>
     <add place="superlinear"><del rend="strikethrough">If that</del></add>
@@ -138,7 +138,7 @@
 </line>
 
 
-    <line>
+    <line rend="indent5">
       <mod>
         <del rend="strikethrough">To yeild a pasage</del>
         <add place="superlinear">To wake &amp; to
@@ -151,17 +151,17 @@
     to the caves that held
        </line>
 
-    <line>
+    <line rend="indent5">
       The treasure of the secrets of its reign_____
     </line>
 
-    <line>
+    <line rend="indent5">
       <del rend="strikethrough">See  Caesar
         <gap quantity="4" unit="characters" reason="illegible"/></del>
         <add place="superlinear">who, <del rend="strikethrough">when</del></add>
         <del rend="strikethrough">the slave who quelled</del>
       </line>
-    <line>
+    <line rend="indent5">
       <unclear>Natures</unclear> shapes <del rend="strikethrough">to <unclear>follow</unclear></del>.</line>
 
     <zone type="left_margin">
@@ -169,7 +169,6 @@
     <line>Sir Humphrey Davy
     <add place="sublinear">Davi</add>
   </line>
-
   </zone>
-  </zone>
+</zone>
 </surface>
