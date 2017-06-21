@@ -9,16 +9,35 @@
 <zone type="library">36</zone>
   <zone type="main">
 
-    <line>In my <del rend="strikethrough">weak</del> heart .. I dare not <del rend="strikethrough">tell</del> speak</line>
+    <line>In my
+      <mod>
+        <del rend="strikethrough">weak</del>
+        <add place="superlinear">faint</add>
+      </mod>
+       heart .. I dare not
+         <del rend="strikethrough">tell</del> speak
+       </line>
     <line><del rend="strikethrough">The</del> My thoughts; but thus disturbed &amp; weak</line>
     <line>I sate and watched the vessels glide</line>
     <line>Along the Ocean bright &amp; wide</line>
     <line>oer</line>
-    <line><del rend="strikethrough">Like chariots of an element</del></line>
+    <line><del rend="strikethrough">Like chariots</del>
+    <mod>
+      <del rend="strikethrough"> of</del>
+      <add place="superlinear">oer</add>
+    </mod>
+    <del rend="strikethrough"> an element</del>
+  </line>
     <line><del rend="strikethrough"><unclear>Elysian boats</unclear></del></line>
     <line>Like spirit winged chariots sent</line>
-    <line>serenest</line>
-    <line>Oer some <del rend="strikethrough">diviner</del> element</line>
+
+    <line>Oer some
+      <mod>
+        <del rend="strikethrough">diviner</del>
+        <add place="superlinear">serenest</add>
+      </mod>
+       element
+     </line>
     <line>To ministrations strange &amp; far;</line>
     <line>As if to some Elysian star</line>
     <line>They <del rend="strikethrough">went for some clear</del></line>
@@ -30,9 +49,20 @@
     <line>From the land came fresh &amp; light</line>
     <line>So <del rend="strikethrough">on</del> that on the sifted sand</line>
     <line>Which divided sea &amp; land</line>
-    <line>Like <unclear>silver</unclear></line>
-    <line><del rend="strikethrough">Only</del> a thread of moonlight <del rend="strikethrough">lay</del></line>
-    <line><del rend="strikethrough"><unclear>Upon</unclear></del> On the <del rend="strikethrough">disentangled spray</del></line>
-    <line><unclear>murmuring</unclear></line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Only</del>
+        <add place="superlinear">Like <unclear>silver</unclear></add>
+      </mod>
+       a thread of moonlight <del rend="strikethrough">lay</del></line>
+    <line><del rend="strikethrough"><unclear>Upon</unclear></del> On the
+    <mod>
+      <del rend="strikethrough">disentangled</del>
+      <add place="sublinear"><unclear>murmuring</unclear></add>
+    </mod>
+    <del rend="strikethrough"> spray</del>
+  </line>
+
   </zone>
 </surface>
