@@ -49,11 +49,19 @@
     <line><del rend="strikethrough">While you</del></line>
     <line><del rend="strikethrough">Sing again</del></line>
     <line><del rend="strikethrough">Sing again</del> Though the sound overpowers</line>
-    <line>Sing again &#8212; for thy voice is     revealing</line>
-    <line>A tone</line>
-    <line><del rend="strikethrough">this one</del></line>
-    <line>Of some world far from <del rend="strikethrough">ours</del></line>
+    <line>
+      Sing again &#8212; for thy voice is
+      <space quantity="5" unit="characters"/>revealing
+    </line>
+    <line rend="indent4">A tone</line>
+
+    <line>Of some world far from
+      <mod>
+        <del rend="strikethrough">ours</del>
+      <add place="superlinear"><del rend="strikethrough">this one</del></add>
+    </mod>
+    </line>
     <line>Where moonlight <del rend="strikethrough">&amp;</del> music &amp; feeling</line>
-    <line>Are won</line>
+    <line rend="indent4">Are won</line>
   </zone>
 </surface>
