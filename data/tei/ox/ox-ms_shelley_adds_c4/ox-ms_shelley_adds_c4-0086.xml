@@ -11,40 +11,150 @@
     <line><del rend="strikethrough">And I from thee may then the secret</del></line>
     <line>And what thou wouldst be taught I then may learn</line>
 
-    <line>From thee   <del rend="strikethrough">There is a cavern</del> <del rend="strikethrough">years</del> <del rend="strikethrough">sweet</del> prime</line>
+    <line>From thee
+      <mod>
+         <del rend="strikethrough">There is a cavern</del>
+         <add place="sublinear">&#8212; now listen...</add>
+       </mod>
+        <mod>
+          <del rend="strikethrough">years sweet</del>
+          <add place="sublinear"><del rend="strikethrough">In </del> In
+          <del rend="strikethrough">the season</del></add>
+          <add place="superlinear">In April</add>
+        </mod> prime
+      </line>
     <line>Now listen . . . <del rend="strikethrough">In</del> In the <del rend="strikethrough">season</del></line>
-    <line>When all the <del rend="strikethrough">willow</del> <del rend="strikethrough">buds</del></line>
-    <line>forest tops began to burn</line>
-    <line>azure</line>
-    <line><del rend="strikethrough">starry</del></line>
-    <line>With kindling green touched by the <del rend="strikethrough">azure</del> clime</line>
-    <line>year     found myself</line>
-    <line><del rend="strikethrough">Of the</del> young season I was laid asleep</line>
-    <line>Of the <del rend="strikethrough">dawning</del> year<unclear>'s</unclear> dawn</line>
-    <line><del rend="strikethrough">Under a mountain</del> which from <del rend="strikethrough">antient</del> time</line>
-    <line>unknown</line>
-    <line>yawned</line>
-    <line>Had <del rend="strikethrough">yawned</del> into a cavern high &amp; deep</line>
-    <line><del rend="strikethrough">And near me  through the flowers</del></line>
-    <line><del rend="strikethrough">From which a</del></line>
+    <line>When all the
+      <mod>
+        <del rend="strikethrough">willow</del> <del rend="strikethrough">buds</del>
+      <add place="sublinear">forest tops began to burn</add>
+    </mod>
+  </line>
+  <space quantity="1" unit="line"/>
+<line rend="indent3">&#8212;</line>
+
+    <line>With kindling green touched by the
+    <mod>
+      <del rend="strikethrough">azure</del>
+      <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">starry</del>
+      <add place="superlinear">azure</add>
+    </mod>
+    </add>
+  </mod>
+  clime
+</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Of the</del>
+  <add place="sublinear">O' the <del rend="strikethrough">dawning</del> year's dawn</add>
+</mod>
+    young season
+    <add place="superlinear">year</add>
+     I was
+     <add place="superlinear">found myself</add>
+      laid asleep
+    </line>
+
+    <line>
+      <del rend="strikethrough">Under a mountain</del>
+       which from
+       <mod>
+         <del rend="strikethrough">antient</del>
+         <add place="sublinear">unknown</add>
+       </mod>
+        time
+      </line>
+      <space quantity="1" unit="line"/>
+      <line rend="indent3">&#8212;</line>
+    <line>Had
+      <mod>
+        <del rend="strikethrough">yawned</del>
+        <add place="superlinear">yawned</add>
+      </mod>
+       into a cavern high &amp; deep
+     </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">From which a</del>
+      <add place="superlinear">
+      <del rend="strikethrough">And near me through the flowers</del>
+    </add>
+  </mod>
+</line>
     <line>came</line>
-    <line>And from it <del rend="strikethrough">crept</del> a gentle rivulet</line>
-    <line><del rend="strikethrough">Which the</del> <del rend="strikethrough">cold</del> <del rend="strikethrough">moisture</del></line>
-    <line><del rend="strikethrough">From whose</del> <del rend="strikethrough">cold</del> <del rend="strikethrough">dew</del>, the <del rend="strikethrough">bene</del>      sweep</line>
-    <line><unclear> ? </unclear> <del rend="strikethrough">Into the woods</del>   thier way   they</line>
-    <line><del rend="strikethrough">Which <unclear>  </unclear> <unclear>which</unclear></del> With waves as            creep</line>
-    <line><del rend="strikethrough">Which</del> <del rend="strikethrough">As beneath the aged boughs did</del></line>
-    <line>clear &amp; in its sweep</line>
-    <line>Whose <del rend="strikethrough">lucid waves</del> water like <del rend="strikethrough">mild</del> air <del rend="strikethrough">in</del> <del rend="strikethrough">its</del> calm</line>
-    <line>soft</line>
-    <line>Bent the <del rend="strikethrough">green</del> grass &amp; kept for ever wet</line>
+    <line>And from it
+      <mod>
+        <del rend="strikethrough">crept</del>
+        <add place="superlinear">came</add>
+      </mod>
+       a gentle rivulet
+     </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">From whose cold dew</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Which the cold moisture</del>
+        </add>
+      </mod>
+  </line>
+    <line>
+      <add place="superlinear"><del rend="strikethrough">Which</del></add>
+      <del rend="strikethrough">Which</del>
+    <mod>
+        <del rend="strikethrough">As beneath the aged boughs did</del>
+    <add place="superlinear"><del rend="strikethrough">which</del>
+  With waves as their way they creep
+<add place="superlinear">sweep</add>
+</add>
+</mod>
+</line>
+    <line>Whose <del rend="strikethrough">lucid waves</del>
+     water like
+     <mod>
+       <del rend="strikethrough">mild</del>
+       <add place="superlinear">clear</add>
+     </mod>
+      air
+      <mod>
+        <del rend="strikethrough">in its</del>
+        <add place="superlinear">&amp; and in its sweep</add>
+      </mod> calm
+    </line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent3">---</line>
+    <line>
+      Bent the
+      <mod>
+        <del rend="strikethrough">green</del>
+        <add place="superlinear">soft</add>
+      </mod>
+       grass &amp; kept for ever wet
+     </line>
     <line>the sweet flowers, <del rend="strikethrough">whose</del> <del rend="strikethrough">eyes</del> <del rend="strikethrough">for</del> <del rend="strikethrough">ever</del></line>
-    <line>The stems of <del rend="strikethrough">the</del> <unclear>  </unclear> jonquil</line>
-    <line>And filled the <del rend="strikethrough">wood</del></line>
-    <line><del rend="strikethrough">Wept Heavens dew in it like that never <unclear>  </unclear></del> place</line>
-    <line><del rend="strikethrough">Wept</del> <del rend="strikethrough">Heaven's dew on it; the violet</del></line>
+    <line>The stems of
+      <mod>
+        <del rend="strikethrough">the jonquil</del>
+        <add place="superlinear">the sweet flowers,
+          <del rend="strikethrough">whose eyes for ever</del>
+          <add place="sublinear">And filled the
+          <mod>
+              <del rend="strikethrough">wood></del>
+          <add place="sublinear">place</add>
+        </mod>
+        </add>
+        </add>
+      </mod>
+  </line>
+    <line>
+      <del rend="strikethrough">Wept Heavens dew in it like that never
+        <gap quantity="3" unit="characters"/></del>
+      </line>
+    <line>
+      <del rend="strikethrough">Wept</del>
+      <del rend="strikethrough">Heaven's dew on it; the violet</del></line>
     <line>With <del rend="strikethrough">music, that even</del>   W</line>
-    <line><del rend="strikethrough"><unclear> </unclear></del></line>
     <line><del rend="strikethrough">sweet oblivious</del> sound, <del rend="strikethrough">that even now</del></line>
   </zone>
 </surface>
