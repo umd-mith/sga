@@ -7,18 +7,73 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="39v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0087.jp2"/>
   <zone type="main">
-    <line>such</line>
-    <line><del rend="strikethrough">With murmur dull</del></line>
-    <line>whoso      must needs forget</line>
-    <line>With sounds which <del rend="strikethrough">all who</del> hear<del rend="strikethrough">s</del>   <del rend="strikethrough">by force</del></line>
-    <line><del rend="strikethrough">Past pain &amp; pleasure</del></line>
-    <line>All pleasure &amp; all pain    all hate &amp; love</line>
-    <line>before that drowsy hour</line>
-    <line>Which they had known <del rend="strikethrough">before</del> <del rend="strikethrough">they  rested  there</del></line>
-    <line>ere <del rend="strikethrough">sleep surprized them there</del></line>
-    <line><del rend="strikethrough">To</del> <del rend="strikethrough">that</del>     before that hour of rest</line>
-    <line><del rend="strikethrough">dull</del>     <del rend="strikethrough">notes</del></line>
-    <line><del rend="strikethrough">Such drowsy music in that</del>   <del rend="strikethrough">under that</del></line>
+
+    <line><del rend="strikethrough">With</del>
+    <mod>
+      <del rend="strikethrough"> murmur</del>
+      <add place="superlinear">such</add>
+    </mod>
+    <del rend="strikethrough"> dull</del>
+  </line>
+
+    <line>With sounds which
+      <mod>
+        <del rend="strikethrough">all who</del>
+        <add place="superlinear">whoso</add>
+      </mod>
+       hear<del rend="strikethrough">s</del>
+       <mod>
+         <del rend="strikethrough">by force</del>
+     <add place="superlinear">must needs forget</add>
+   </mod>
+   </line>
+    <line>
+      <del rend="strikethrough">Past pain &amp; pleasure</del>
+  </line>
+    <line>
+      All pleasure &amp; all pain    all hate &amp; love
+    </line>
+
+    <line>Which they had known
+      <mod>
+        <del rend="strikethrough">before they  rested  there</del>
+        <add place="sublinear">ere
+        <mod>
+            <del rend="strikethrough">sleep surprized them there</del>
+      <add place="sublinear">before that hour of rest</add>
+    </mod>
+    </add>
+      <add place="superlinear">before that drowsy hour</add>
+    </mod>
+  </line>
+    <line>
+      <del rend="strikethrough">Such</del>
+      <mod>
+        <del rend="strikethrough"> drowsy</del>
+        <add place="superlinear">
+        <mod>
+            <del rend="strikethrough">dull</del>
+          <add place="superlinear">
+            <del rend="strikethrough">To that</del>
+          </add>
+        </mod>
+        </add>
+      </mod>
+      <mod>
+        <del rend="strikethrough"> music</del>
+        <add place="superlinear"><del rend="strikethrough">notes</del></add>
+      </mod>
+       <mod>
+         <del rend="strikethrough"> in that</del>
+         <add><del rend="strikethrough">under that</del></add>
+       <add place="sublinear">
+       <del rend="strikethrough">upon that slow stre</del>
+     <add place="sublinear"><del rend="strikethrough">upon that streamlet move</del></add>
+   </add>
+ </mod>
+</line>
+<space quantity="1" unit="line"/>
+
     <line><del rend="strikethrough">upon that</del> <del rend="strikethrough">slow <unclear>stre</unclear></del></line>
     <line><del rend="strikethrough">upon that streamlet move</del></line>
     <line><del rend="strikethrough">Those who ha</del></line>
