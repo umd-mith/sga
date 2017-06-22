@@ -7,16 +7,45 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="38v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0085.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">See   Aur</del></line>
-    <line><del rend="strikethrough">Caesar Aurunzebe &amp;</del>  <del rend="strikethrough">Tamerlane</del></line>
-    <line>See <del rend="strikethrough">Aurunze</del></line>
-    <line><unclear>thou</unclear></line>
-    <line>the   even     seest <del rend="strikethrough">there not the <unclear>throng</unclear></del></line>
-    <line><del rend="strikethrough"><unclear>There</unclear> the</del> creators, <del rend="strikethrough">near them a dr</del></line>
-    <line>in</line>
-    <line>Of the destroyers, <del rend="strikethrough">of</del> one victory</line>
+<line>
+  <del rend="strikethrough">See Aur</del>
+</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">See Aurunze</del>
+      <add place="superlinear">
+        <del rend="strikethrough">Caesar Arunzebe &amp; and Tamerlane</del>
+    </add>
+  </mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough"><unclear>There</unclear> the</del>
+        <add place="superlinear">the even</add>
+      </mod>
+       creators,
+       <mod>
+         <del rend="strikethrough">near them a dr</del>
+       <add place="superlinear">seest
+        <mod>
+           <del rend="strikethrough">there not the <unclear>throng</unclear></del>
+       <add place="superlinear"><unclear>thou</unclear></add>
+     </mod>
+     </add>
+       </mod>
+     </line>
+    <line>
+      Of the destroyers,
+      <mod>
+        <del rend="strikethrough">of</del>
+        <add place="superlinear">in</add>
+      </mod>
+         one victory
+       </line>
     <line><del rend="strikethrough">Both swell the pageant now</del></line>
     <line><del rend="strikethrough"><unclear>These</unclear> hearts were confounded</del></line>
+<space quantity="8" unit="lines"/>
+
     <line><del rend="strikethrough">While you</del></line>
     <line><del rend="strikethrough">Sing again</del></line>
     <line><del rend="strikethrough">Sing again</del> Though the sound overpowers</line>
