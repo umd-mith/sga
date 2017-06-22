@@ -154,7 +154,12 @@
     <line>
       <del rend="strikethrough">Wept</del>
       <del rend="strikethrough">Heaven's dew on it; the violet</del></line>
-    <line>With <del rend="strikethrough">music, that even</del>   W</line>
-    <line><del rend="strikethrough">sweet oblivious</del> sound, <del rend="strikethrough">that even now</del></line>
+    <line>With <del rend="strikethrough">music, that even</del>
+    <space quantity="2" unit="characters"/> W
+  </line>
+    <line>
+      <del rend="strikethrough">sweet oblivious</del>
+       sound, <del rend="strikethrough">that even now</del>
+     </line>
   </zone>
 </surface>
