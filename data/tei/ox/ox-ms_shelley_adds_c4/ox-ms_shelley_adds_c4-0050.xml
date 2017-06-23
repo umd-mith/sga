@@ -7,15 +7,18 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="21r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0050.jp2"/>
 <zone type="library">21</zone>
-  <zone type="top">
-    <line rend="indent7"> <del rend="vertical_line">for want of dew was soiled</del></line>
-    <line><del rend="vertical_line">And died within the hand that gathered it.&#8212;</del></line>
-    <line rend="indent1"><del rend="vertical_line">But few sought flowers there; they rather toiled</del></line>
-  </zone>
+
+
+
   <zone type="calculation">
     <line rend="indent8"><del rend="strikethrough">1,5000,0</del></line>
   </zone>
   <zone type="main">
+    <delSpan rend="vertical_line" spanTo="#c4-50.4"/>
+      <line rend="indent7">for want of dew was soiled</line>
+      <line>And died within the hand that gathered it.&#8212;</line>
+      <line rend="indent1">But few sought flowers there; they rather toiled</line>
+      <anchor xml:id="c4-50.4"/>
     <line><del rend="strikethrough">A</del></line>
     <line><del rend="strikethrough">And more by</del></line>
     <line rend="indent1"><del rend="strikethrough">Whither he came or</del></line>
