@@ -8,7 +8,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0074.jp2"/>
 <zone type="library">32</zone>
   <zone type="main">
-    <line><del rend="strikethrough">Egypt &amp; Babylon  had</del></line>
+    <delSpan rend="vertical_line" spanTo="#c4-74.15"/>
+      <line><del rend="strikethrough">Egypt &amp; Babylon  had</del></line>
 
     <line>Or as
       <mod>
@@ -48,6 +49,7 @@
      </line>
     <line rend="indent2"><del rend="strikethrough">Phantoms of those who</del></line>
     <line rend="indent2"><del rend="strikethrough">Veils Veils</del></line>
+    <anchor xml:id="c4-74.15"/>
     <line rend="indent2">For <del rend="strikethrough">mark the phantoms of it</del></line>
     <line rend="indent2">
       <del rend="strikethrough"><unclear>For</unclear></del>
