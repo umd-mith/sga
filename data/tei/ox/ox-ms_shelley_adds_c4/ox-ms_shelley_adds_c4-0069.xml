@@ -7,7 +7,8 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="34v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0069.jp2"/>
   <zone type="main">
-<line>
+<delSpan rend="vertical_line" spanTo="#c4-69.6"/>
+  <line>
   <del rend="strikethrough">Of thought</del>
 </line>
     <line>Where Plato &amp; his pupil
@@ -36,6 +37,8 @@ cried
     <line>
       And centre of the reign of thought
     </line>
+    <anchor xml:id="c4-69.6"/>
+
     <space quantity="1" unit="line"/>
     <zone type="sketch"></zone>
     <line>
