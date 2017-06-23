@@ -92,6 +92,7 @@
     </del> <del rend="strikethrough">said</del>
     <unclear>mid</unclear>
   </line>
+    <delSpan rend="vertical_line" spanTo="#c4-67.28"/>
     <line rend="indent2"><unclear>Nor</unclear> of the many shapes around him chained</line>
     <line>Pale with
       <mod>
@@ -112,5 +113,6 @@
          </mod>
           <del rend="strikethrough">grave to which it tends</del>
         </line>
+        <anchor xml:id="c4-67.28"/>
   </zone>
 </surface>
