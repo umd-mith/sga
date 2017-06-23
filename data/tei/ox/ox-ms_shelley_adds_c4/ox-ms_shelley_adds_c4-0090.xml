@@ -6,18 +6,49 @@
   xml:id="ox-ms_shelley_adds_c4-0090" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="41r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0090.jp2"/>
+<zone type="library">41</zone>
   <zone type="main">
-    <line><del rend="strikethrough">Like a <unclear>bro</unclear> bright</del></line>
+    <line>
+      <del rend="strikethrough">Like a <unclear>bro</unclear> bright</del>
+  </line>
+  <line rend="indent4">&#8212;</line>
     <line>A shape all light, which with one hand did fling</line>
     <line>earth, as if she were the Dawn</line>
-    <line><del rend="strikethrough">Dew on the</del> <del rend="strikethrough">grass</del> <del rend="strikethrough">path</del></line>
-    <line><del rend="strikethrough">world</del> <del rend="strikethrough">Waters &amp; the w</del></line>
-    <line><del rend="strikethrough">earth</del></line>
-    <line><del rend="strikethrough">grass &amp; Waters</del></line>
-    <line><del rend="strikethrough">As if</del>   <del rend="strikethrough">Until the woods &amp; waters seemed to ring</del></line>
-    <line><del rend="strikethrough">And all the boughs &amp; leaves</del></line>
-    <line><del rend="strikethrough">flowers &amp; grass &amp;</del></line>
-    <line><del rend="strikethrough">Every leaf</del>   <del rend="strikethrough">&amp; herb began to sing</del></line>
+    <line>
+      <del rend="strikethrough">Dew on the</del>
+      <mod>
+        <del rend="strikethrough">grass path</del>
+        <add place="superlinear">earth,as if she were the Dawn</add>
+      </mod>
+    </line>
+
+    <line>
+      <del rend="strikethrough">As if</del>
+    <mod>
+        <del rend="strikethrough">Until the woods &amp; waters</del>
+      <add place="superlinear">
+        <del rend="strikethrough">grass &amp; Waters</del>
+        <add place="superlinear">
+          <del rend="strikethrough">earth</del>
+          <add place="superlinear">
+            <del rend="strikethrough">world Waters &amp; the w</del>
+          </add>
+        </add>
+      </add>
+    </mod>
+      <del rend="strikethrough"> seemed to ring</del>
+    </line>
+    <line><del rend="strikethrough">And all</del>
+    <mod>
+      <del rend="strikethrough"> the boughs &amp; leaves</del>
+    <add place="sublinear">
+      <del rend="strikethrough">flowers &amp; grass &amp;</del>
+    </add>
+    </mod>
+  </line>
+
+    <line>
+      <del rend="strikethrough">Every leaf</del>   <del rend="strikethrough">&amp; herb began to sing</del></line>
     <line>And in <del rend="strikethrough">the herbs &amp; young green leafits sing</del></line>
     <line>grass <del rend="strikethrough">&amp;  budding  beeches</del></line>
     <line><del rend="strikethrough">In April rain drops   showers</del></line>
