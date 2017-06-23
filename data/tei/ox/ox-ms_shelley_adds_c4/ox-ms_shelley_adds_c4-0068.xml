@@ -9,7 +9,8 @@
 <zone type="library">34</zone>
 <zone type="calculation">8</zone>
   <zone type="main">
-   <line>Or <del rend="strikethrough">that which of it yet</del></line>
+  <delSpan rend="vertical_line" spanTo="#c4-68.21"/>
+     <line>Or <del rend="strikethrough">that which of it yet</del></line>
 
     <line rend="indent1">Or those gross
       <mod>
@@ -118,5 +119,6 @@
       <del rend="strikethrough">As from the centre &amp;
       <del rend="strikethrough">from</del> circumference</del>
     </line>
+    <anchor xml:id="c4-68.21"/>
   </zone>
 </surface>
