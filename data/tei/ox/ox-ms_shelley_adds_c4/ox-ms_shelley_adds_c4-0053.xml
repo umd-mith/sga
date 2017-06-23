@@ -7,6 +7,10 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="22v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0053.jp2"/>
   <zone type="main">
+    <note>
+      entire page appears reverso in MS
+    </note>
+    <delSpan rend="vertical_line" spanTo="#c4-53.32"/>
     <line><del rend="strikethrough">The flowers which in the</del></line>
     <line rend="indent1"><del rend="strikethrough">And Nor</del></line>
     <line rend="indent1"><del rend="strikethrough">Yet it</del></line>
@@ -75,6 +79,6 @@ moths when grass is mown</line>
 
 
       <line rend="indent2"><del rend="strikethrough">And <unclear>except</unclear></del><unclear>one</unclear></line>
-
+<anchor xml:id="c4-53.32"/>
   </zone>
 </surface>
