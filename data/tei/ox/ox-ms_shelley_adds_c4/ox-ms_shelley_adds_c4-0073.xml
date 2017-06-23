@@ -32,6 +32,8 @@
 <line rend="indent4">&#8212;</line>
     <line><del rend="strikethrough">And that is ours</del>       <del rend="strikethrough">dishonour</del></line>
     <line rend="indent7"><del rend="strikethrough">At past &amp; present pain</del></line>
+
+      <delSpan rend="vertical_line" spanTo="#c4-73.21"/>
       <line rend="indent1">
           <del rend="strikethrough">And we sought</del>
         </line>
@@ -84,6 +86,7 @@
       <add place="superlinear"><del rend="strikethrough">labour wd. be vain</del></add>
     </mod>
   </line>
+  <anchor xml:id="c4-73.21"/>
   <space quantity="1" unit="line"/>
 
 
