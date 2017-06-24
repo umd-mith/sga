@@ -21,6 +21,7 @@
         <add place="superlinear">earth,as if she were the Dawn</add>
       </mod>
     </line>
+    <space quantity="1" unit="line"/>
 
     <line>
       <del rend="strikethrough">As if</del>
@@ -46,17 +47,63 @@
     </add>
     </mod>
   </line>
+  <space quantity="1" unit="line"/>
+
+    <line> And in
+      <mod>
+        <del rend="strikethrough">the herbs</del>
+        <add place="superlinear">
+           <del rend="strikethrough">Every leaf</del>
+         </add>
+       </mod>
+        <mod>
+          <del rend="strikethrough">&amp; herb began to sing</del>
+      <add place="superlinear">
+        <del rend="strikethrough">&amp; and herb began to sing</del>
+      </add>
+    </mod>
+  </line>
 
     <line>
-      <del rend="strikethrough">Every leaf</del>   <del rend="strikethrough">&amp; herb began to sing</del></line>
-    <line>And in <del rend="strikethrough">the herbs &amp; young green leafits sing</del></line>
-    <line>grass <del rend="strikethrough">&amp;  budding  beeches</del></line>
-    <line><del rend="strikethrough">In April rain drops   showers</del></line>
-    <line>Whose <unclear>invisible</unclear> <unclear>rain</unclear> forever seemed to</line>
-    <line><del rend="strikethrough">And</del>  <del rend="strikethrough">the invisible</del>     <del rend="strikethrough">rain</del> <del rend="strikethrough">did  ever</del> sing</line>
-    <line>music <del rend="strikethrough">melody</del></line>
-    <line>A silver <del rend="strikethrough">melody upon</del>   mossy</line>
-    <line><del rend="strikethrough">tune</del> upon, the <del rend="strikethrough">flowery</del> lawn</line>
+      <del rend="strikethrough">In April rain </del>
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear">Whose</add>
+      </mod>
+      <mod>
+          <del rend="strikethrough">the invisible rain</del>
+          <add place="superlinear"><unclear>invisible rain forever</unclear></add>
+        </mod>
+        <mod>
+            <del rend="strikethrough">did  ever</del>
+            <add place="superlinear">seemed to</add>
+          </mod>
+           sing
+         </line>
+
+    <line>A silver
+      <mod>
+        <del rend="strikethrough">melody upon</del>
+        <add place="superlinear">
+          <del rend="strikethrough">music</del>
+        </add>
+        <add place="superlinear">
+          <del rend="strikethrough">melody</del>
+        </add>
+        <add place="sublinear">
+          <del rend="strikethrough">tune upon the</del>
+          <mod>
+            <del rend="strikethrough"> flowery</del>
+          <add place="superlinear">mossy</add>
+        </mod>
+        <del rend="strikethrough"> lawn</del>
+        </add>
+      </mod>
+  </line>
+
     <line>And <del rend="strikethrough">ever</del> still before <unclear>her</unclear> on the dusky <del rend="strikethrough">scene</del></line>
     <line><del rend="strikethrough">And underneath the darkness of</del>      <del rend="strikethrough">dell</del></line>
     <line><del rend="strikethrough">And still before her steps</del>      grass</line>
