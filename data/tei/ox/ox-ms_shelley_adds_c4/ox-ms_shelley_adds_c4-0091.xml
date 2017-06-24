@@ -7,41 +7,149 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="41v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0091.jp2"/>
   <zone type="main">
-    <line>of the hollow mountain</line>
-    <line><del rend="strikethrough">Out of the shadow of the crags</del></line>
-    <line>deep</line>
-    <line><del rend="strikethrough">Out</del> of the cavern, <del rend="strikethrough">&amp;</del> with palms so tender,</line>
-    <line>They violated the   <del rend="strikethrough">foam light  foam  of</del></line>
-    <line>&amp;</line>
-    <line><del rend="strikethrough">Their tread</del>      its billow stream</line>
-    <line>Thier tread broke not the mirror of <del rend="strikethrough">the</del> <del rend="strikethrough">rill</del></line>
-    <line><del rend="strikethrough">river</del></line>
-    <line>Glided along   river</line>
-    <line>She moved <del rend="strikethrough">up</del>on the <del rend="strikethrough">waters</del>, and did bend her</line>
-    <line>dark</line>
-    <line>Head under the <del rend="strikethrough">low</del> boughs, till like a willow</line>
-    <line>fair hair</line>
-    <line>Her <del rend="strikethrough">long</del> <del rend="strikethrough">hair</del> swept the bosom of the stream</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Out of the shadow of the crags</del>
+      <add place="superlinear">>of the hollow mountain</add>
+    </mod>
+  </line>
+
+    <line>
+      <del rend="strikethrough">Out</del> of the
+      <add place="superlinear">deep</add>
+       cavern, <del rend="strikethrough">&amp;</del>
+        with palms so tender,
+      </line>
+    <line>
+       <del rend="strikethrough">They violated the
+
+          foam light  foam  of</del></line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Their tread &amp;</del>
+      <add place="sublinear">Thier tread broke not the mirror of
+      <mod>
+        <del rend="strikethrough">the</del> <del rend="strikethrough">rill</del>
+      <add place="superlinear">its billow stream</add>
+    </mod>
+      </add>
+    </mod>
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">She moved</del>
+        <add place="superlinear">Glided along</add>
+      </mod>
+       upon the
+       <mod>
+         <del rend="strikethrough">waters,</del>
+         <add place="superlinear">river</add>
+       </mod>
+        and did bend her
+      </line>
+
+    <line>Head under the
+      <mod>
+        <del rend="strikethrough">low</del>
+        <add place="superlinear">dark</add>
+      </mod>
+       boughs, till like a willow
+     </line>
+
+    <line>Her
+      <mod>
+        <del rend="strikethrough">long</del> <del rend="strikethrough">hair</del>
+        <add place="superlinear">fair hair</add>
+      </mod>
+       swept the bosom of the stream
+     </line>
     <line>That whispered with delight to be their pillow. &#8212;-</line>
+    <space quantity="1" unit="line"/>
     <line>Swift As one enamoured, is upborne in dream</line>
-    <line><unclear>flowery</unclear> lily-paven lakes <del rend="strikethrough">a</del>mid <del rend="strikethrough">soft</del> silver mist</line>
-    <line>Oer <del rend="strikethrough">lakes &amp; flowery meadows amid</del> <del rend="strikethrough">silver</del> <del rend="strikethrough">clouds</del></line>
-    <line><del rend="strikethrough">planetary</del> <del rend="strikethrough">wondrous</del></line>
-    <line>To <del rend="strikethrough">sweetest</del> <del rend="strikethrough">music</del>, so <del rend="strikethrough">this shape</del> might seem</line>
-    <line><del rend="strikethrough"><unclear>angel</unclear></del></line>
-    <line>ands      <del rend="strikethrough">music</del></line>
-    <line>music</line>
-    <line><del rend="strikethrough">To mus</del></line>
-    <line>Half floating &amp; with feet <unclear>whose</unclear></line>
-    <line><del rend="strikethrough">This</del></line>
-    <line>Partly to <del rend="strikethrough">move upon the foam</del></line>
-    <line>palms</line>
-    <line>tread the waves with feet which kist</line>
-    <line>along</line>
-    <line>The dancing foam, partly to glide <del rend="strikethrough">upon</del></line>
-    <line><unclear>dewy</unclear></line>
-    <line><unclear>roughened</unclear> roughened the <del rend="strikethrough">moist</del></line>
-    <line>The airs that <del rend="strikethrough">which</del> which <unclear> ? </unclear></line>
-    <line><del rend="strikethrough">amethyst</del></line>
+
+    <line>Oer
+      <mod>
+        <del rend="strikethrough">lakes &amp; flowery meadows amid</del>
+        <del rend="strikethrough">silver</del>
+        <del rend="strikethrough">clouds</del>
+      <add place="superlinear">
+        <unclear>flowery</unclear> lily-paven lakes
+      <del rend="strikethrough">a</del>mid <del rend="strikethrough">soft</del> silver mist
+    </add>
+  </mod>
+    </line>
+
+    <line>To
+      <mod>
+        <del rend="strikethrough">sweetest</del> <del rend="strikethrough">music,</del>
+        <add place="superlinear">
+          <del rend="strikethrough">planetary wondrous</del>
+        </add>
+      </mod>
+
+      <mod>
+          <add place="sublinear">
+        <del rend="strikethrough">angel</del>
+      <add place="sublinear">
+        <del rend="strikethrough">music</del>
+      <add place="sublinear">music</add>
+      </add>
+      </add>
+    </mod>
+     so <del rend="strikethrough">this shape</del> might seem
+   </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">To mus</del>
+      <add place="sublinear">Half floating &amp; with feet <unclear>whose</unclear></add>
+    </mod>
+  </line>
+
+
+    <line>Partly
+      <add place="superlinear">
+        <del rend="strikethrough">This</del>
+      </add>
+       to
+       <mod>
+      <del rend="strikethrough">move upon the foam</del>
+     <add place="sublinear">tread the waves with feet
+     <add place="superlinear">palms</add>
+   which kist</add>
+ </mod>
+   </line>
+
+
+    <line>The dancing foam, partly to glide
+      <mod>
+        <del rend="strikethrough">upon</del>
+      <add place="superlinear">along</add>
+    </mod>
+  </line>
+
+    <line>
+</line>
+    <line>The airs that
+      <mod>
+        <del rend="strikethrough">which</del>
+        <add place="superlinear"><unclear>roughened</unclear></add>
+      </mod>
+      which
+    <add place="superlinear">
+      roughened the
+      <mod>
+        <del rend="strikethrough">moist</del>
+        <add place="sublinear">
+          <del rend="strikethrough">amethyst</del>
+        </add>
+    <add place="superlinear">dewy</add>
+    </mod>
+  </add>
+    </line>
   </zone>
 </surface>
