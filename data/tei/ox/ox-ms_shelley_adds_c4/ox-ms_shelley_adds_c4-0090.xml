@@ -104,24 +104,82 @@
       </mod>
   </line>
 
-    <line>And <del rend="strikethrough">ever</del> still before <unclear>her</unclear> on the dusky <del rend="strikethrough">scene</del></line>
-    <line><del rend="strikethrough">And underneath the darkness of</del>      <del rend="strikethrough">dell</del></line>
-    <line><del rend="strikethrough">And still before her steps</del>      grass</line>
-    <line><del rend="strikethrough">Iris her</del>   many coloured scarf had drawn.&#8212;-</line>
-    <line>&#8212; devi</line>
+    <line></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">And underneath the darkness of</del>
+        <add place="sublinear">
+            <del rend="strikethrough">And still before her steps</del>
+        </add>
+        <add place="superlinear">
+          And <del rend="strikethrough">ever</del> still before
+          <unclear>her</unclear> on the dusky
+          <mod>
+            <del rend="strikethrough">scene</del>
+            <add place="sublinear">
+              <mod>
+                <del rend="strikethrough">dell</del>
+                <add place="sublinear">grass</add>
+              </mod>
+            </add>
+            </mod>
+        </add>
+      </mod>
+    </line>
+
+    <line>
+      <del rend="strikethrough">Iris her</del>
+      many coloured scarf had drawn.&#8212;
+    </line>
+    <line rend="indent5">&#8212; devi</line>
     <line><del rend="strikethrough">And in the other</del></line>
-    <line><del rend="strikethrough">And in other hand she bore</del>    chrystal</line>
-    <line>In her right hand she</line>
-    <line><del rend="strikethrough">And in the other hand she</del> bore a glass</line>
-    <line><del rend="strikethrough">Sparkling with purple liquor</del>   fierce splendour</line>
-    <line><unclear>every drink</unclear></line>
-    <line><unclear>strong spirits</unclear></line>
-    <line>Mantling with <del rend="strikethrough">starry liquor</del>;&#8212; the <del rend="strikethrough"><unclear>fallen</unclear></del> <del rend="strikethrough">light</del></line>
-    <line>bright Nepenthe</line>
-    <line>veil by</line>
-    <line>Fell from her   <del rend="strikethrough">like</del>  <del rend="strikethrough">a</del> veil as   <del rend="strikethrough">She did pass</del></line>
-    <line>as she moved under the mass</line>
-    <line>Out of the cavern</line>
-    <line><del rend="strikethrough">Out of the caverns</del></line>
+    <line><del rend="strikethrough">And in other hand she bore</del>
+  </line>
+
+    <line>
+    <mod>
+        <add place="superlinear">And in her right hand she</add>
+      <del rend="strikethrough">And in the other hand she</del>
+    </mod> bore a glass
+  <add place="superlinear">crystal</add>
+</line>
+    <line><del rend="strikethrough">Sparkling with</del>
+    <mod>
+      <del rend="strikethrough"> purple liquor</del>
+      <add place="sublinear"><unclear>every drink</unclear>
+    <add place="sublinear"><unclear>strong spirits</unclear></add>
+  </add>
+    </mod>
+       fierce splendour
+     </line>
+
+    <line>Mantling with
+      <mod>
+        <del rend="strikethrough">starry liquor;</del>
+        <add place="sublinear">bright Nepenthe</add>
+      </mod>
+        &#8212; the
+        <del rend="strikethrough"><unclear>fallen</unclear></del>
+        <del rend="strikethrough">light</del>
+      </line>
+
+
+    <line>Fell from her
+      <mod>
+        <del rend="strikethrough">like</del>
+        <add place="superlinear">veil by</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough"> veil as she did pass</del>
+    <add place="sublinear">as she moved under the mass</add>
+  </mod>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Out of the caverns</del>
+      <add place="superlinear">Out of the cavern</add>
+    </mod>
+  </line>
   </zone>
 </surface>
