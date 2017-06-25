@@ -8,34 +8,112 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0097.jp2"/>
   <zone type="main">
     <line><del rend="strikethrough">Whilst</del> <del rend="strikethrough">With that calm sphere smiling  with light,</del></line>
-    <line><del rend="strikethrough">Under</del> <del rend="strikethrough">that</del> <del rend="strikethrough">star</del>                    the <del rend="strikethrough">air</del></line>
-    <line>In that stars smile, whose light is like <del rend="strikethrough">sweet</del> <del rend="strikethrough">sound</del></line>
-    <line>scent</line>
-    <line>Of <del rend="strikethrough">some <unclear>lut</unclear></del></line>
-    <line><del rend="strikethrough">music, and</del></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Under</del> <del rend="strikethrough">that</del> <del rend="strikethrough">star</del>
+        <add place="sublinear">
+          In that stars smile, whose light is like
+          <del rend="strikethrough">sweet</del> <del rend="strikethrough">sound</del>
+      <mod>
+          <add place="superlinear">
+            <del rend="strikethrough">the air</del>
+        </add>
+        <add place="sublinear">scent</add>
+      </mod>
+      </add>
+    </mod>
+</line>
+    <line>Of
+      <mod>
+        <del rend="strikethrough">some <unclear>lut</unclear></del>
+      <add place="sublinear">
+        <del rend="strikethrough">music, and</del>
+      </add>
+      </mod>
+    </line>
+
     <line>Of a jonquil when evening breezes fan it</line>
-    <line><del rend="strikethrough">sweet melody</del>      <del rend="strikethrough">stirs</del></line>
-    <line>Or <del rend="strikethrough">the</del> <del rend="strikethrough">soft</del> <del rend="strikethrough">music</del>  <del rend="strikethrough">which  which</del></line>
-    <line>soft tune     <del rend="strikethrough"><unclear> </unclear></del>      dear</line>
-    <line>the <del rend="strikethrough">sweet</del> <del rend="strikethrough">notes</del> in which his <del rend="strikethrough">sweet</del> lament</line>
-    <line><unclear>w</unclear>hose note</line>
-    <line>The Brescian shepherd breathes,or <del rend="strikethrough">his dear</del> kiss</line>
-    <line>the caress</line>
+    <line rend="indent4"/>
+
+    <line>Or
+      <mod>
+        <del rend="strikethrough">the</del> <del rend="strikethrough">soft</del> <del rend="strikethrough">music</del>
+        <add place="superlinear">
+          <del rend="strikethrough">sweet melody</del>
+        </add>
+      </mod>
+        <del rend="strikethrough">which  which</del>
+      <add place="superlinear">
+        <del rend="strikethrough">stirs</del>
+      </add>
+    <add place="sublinear">the
+      <mod>
+        <del rend="strikethrough">sweet notes</del>
+        <add place="superlinear">soft tune</add>
+        <add place="sublinear">whose note</add>
+      </mod>
+       in which his
+       <mod>
+         <del rend="strikethrough">sweet</del>
+         <add place="superlinear">dear</add>
+       </mod>
+        lament
+    </add>
+      </line>
+
+    <line>The Brescian shepherd breathes,or
+      <mod>
+        <del rend="strikethrough">his dear</del>
+        <add place="sublinear">the caress</add>
+      </mod>
+       kiss
+     </line>
+
     <line><del rend="strikethrough">Whose magic turned</del></line>
     <line><del rend="strikethrough">That turned his</del></line>
     <line>That turned his weary slumber to content.</line>
-    <line>I                light's</line>
-    <line>So <del rend="strikethrough">did I</del>  knew in that severe excess</line>
-    <line><del rend="strikethrough">shape,     which</del></line>
-    <line>Of <del rend="strikethrough">light the presence of that form      still</del></line>
-    <line><unclear>forever</unclear></line>
-    <line>The presence of that shape which on the stream</line>
-    <line><del rend="strikethrough">Has been my guide across the wilderness</del></line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+    <line>So
+      <mod>
+        <del rend="strikethrough">did I</del>
+        <add place="superlinear">I</add>
+      </mod>
+        knew in that
+        <add place="superlinear">light's</add>
+         severe excess
+       </line>
+  <line>Of <del rend="strikethrough">light the presence of that</del>
+  <mod>
+    <del rend="strikethrough"> form</del>
+    <add place="superlinear">
+      <del rend="strikethrough">shape,</del>
+    </add>
+  </mod>
+  <add place="superlinear">
+    <del rend="strikethrough">which</del>
+  </add>
+  <del rend="strikethrough"> still</del>
+  <add place="sublinear"><unclear>forever</unclear></add>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Has been my guide across the wilderness</del>
+      <add place="superlinear">The presence of that shape which on the stream</add>
+    </mod>
+  </line>
     <line><del rend="strikethrough">Fled like a herald oer the wilderness</del></line>
+    <space quantity="1" unit="line"/>
     <line>Moved, as I moved along the wilderness,</line>
     <line><del rend="strikethrough">As aery</del> <del rend="strikethrough">Obscurer than</del></line>
-    <line>dimly</line>
-    <line>More <del rend="strikethrough">faint</del> than a day appearing dream</line>
+    <line>More
+      <mod>
+        <del rend="strikethrough">faint</del>
+        <add place="superlinear">dimly</add>
+      </mod>
+       than a day appearing dream
+     </line>
     <line>The ghost of a forgotten form of sleep</line>
   </zone>
 </surface>
