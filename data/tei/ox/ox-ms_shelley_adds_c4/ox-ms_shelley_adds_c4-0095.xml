@@ -18,35 +18,131 @@
     <line><del rend="strikethrough">So mighty</del></line>
     <line><del rend="strikethrough">All</del> <del rend="strikethrough">every thing</del> <del rend="strikethrough">all forms &amp; feelings</del></line>
     <line>all the</line>
-    <line>And <del rend="strikethrough">every form that peopling the busy mind</del></line>
-    <line>Before,                  were</line>
-    <line><del rend="strikethrough">Like  stars at sunrise, are forgot</del></line>
-    <line><del rend="strikethrough">As if the</del>    <del rend="strikethrough">she trod</del>,</line>
-    <line><del rend="strikethrough">the gazer's mind was strewn beneath</del></line>
+    <line>And
+      <mod>
+        <del rend="strikethrough">every form</del>
+        <add place="superlinear">all the</add>
+      </mod>
+        <del rend="strikethrough"> that peopling the busy mind</del>
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Like</del>
+        <add place="superlinear">Before,</add>
+      </mod>
+      <del rend="strikethrough"> stars at sunrise,</del>
+      <mod>
+        <del rend="strikethrough"> are forgot</del>
+      <add place="superlinear">were</add>
+    </mod>
+  </line>
+    <line><del rend="strikethrough">As if the</del>
+    <mod>
+      <del rend="strikethrough">she trod,</del>
+    <add place="sublinear">
+      <del rend="strikethrough">the gazer's mind was stewn beneath</del>
+    </add>
+  </mod>
+</line>
+
     <line><del rend="strikethrough">Her path, and</del></line>
-    <line>The gazers mind was strewn <del rend="strikethrough">beneath her feet</del></line>
-    <line><del rend="strikethrough">She trampled out its        thoughts</del></line>
-    <line>waning</line>
-    <line><del rend="strikethrough">Like fading ashes</del>, &amp; she, thought by thought</line>
-    <line>embers</line>
-    <line>Her feet like <del rend="strikethrough">ashes</del></line>
-    <line>fires</line>
-    <line>Trampled its <del rend="strikethrough">sparks</del> into the dust of death</line>
-    <line><del rend="strikethrough">stars</del></line>
-    <line><del rend="strikethrough"><unclear>on</unclear> the threshold of the</del></line>
-    <line>As <del rend="strikethrough">morning</del> <del rend="strikethrough">treads upon the</del></line>
-    <line>Dawn     <del rend="strikethrough">on</del> <del rend="strikethrough">limits on threshold of the east</del></line>
-    <line><del rend="strikethrough">Nights</del> <del rend="strikethrough">thousand</del> <del rend="strikethrough">pyramid</del></line>
-    <line>fires</line>
-    <line><del rend="strikethrough">Treads out the sparks of night     with</del></line>
-    <line><del rend="strikethrough">lamps</del>      <del rend="strikethrough">with panting breath</del></line>
+    <line>
+      The gazers mind was strewn <del rend="strikethrough">beneath her feet</del>
+    </line>
+    <line>
+      <del rend="strikethrough">She trampled out its</del>
+  </line>
+
+    <line><del rend="strikethrough">Like</del>
+    <mod>
+    <del rend="strikethrough"> fading</del>
+    <add place="superlinear">waning</add>
+  </mod>
+  <del rend="strikethrough"> ashes</del>, &amp; she, thought
+  <add place="superlinear">
+    <del rend="strikethrough">thoughts</del>
+  </add>
+   by thought
+ </line>
+ <line rend="indent6">&#8212;</line>
+
+    <line>Her feet like
+      <mod>
+        <del rend="strikethrough">ashes</del>
+      <add place="superlinear">embers</add>
+    </mod>
+  </line>
+
+    <line>Trampled its
+      <mod>
+        <del rend="strikethrough">sparks</del>
+        <mod>
+          <add place="sublinear">
+            <del rend="strikethrough">stars</del>
+        </add>
+        <add place="superlinear">fires</add>
+      </mod>
+    </mod>
+      into the dust of death
+    </line>
+
+
+    <line>As
+      <mod>
+        <del rend="strikethrough">morning</del>
+        <add place="sublinear">Dawn</add>
+      </mod>
+       <del rend="strikethrough">treads </del>
+       <mod>
+         <del rend="strikethrough">upon the</del>
+
+         <add place="superlinear">
+      <mod>
+          <del rend="strikethrough"><unclear>on</unclear> the threshold of the the</del>
+          <add place="sublinear">
+          <del rend="strikethrough">on limits on threshold of the east</del>
+        </add>
+      </mod>
+      </add>
+    </mod>
+  </line>
+
+
+    <line><del rend="strikethrough">Treads out the</del>
+    <mod>
+      <del rend="strikethrough"> sparks</del>
+      <add place="sublinear">
+    <del rend="strikethrough">lamps</del>
+      </add>
+      <add place="superlinear">fires</add>
+    </mod>
+    <mod>
+      <del rend="strikethrough"> of night with</del>
+      <add place="sublinear">
+        <del rend="strikethrough">with panting breath</del>
+      </add>
+    </mod>
+  </line>
+
     <line>As <del rend="strikethrough">Morning treads the s</del></line>
     <line><del rend="strikethrough">And Veins that beat</del></line>
     <line>As <del rend="strikethrough">Morning, on the threshold of the</del></line>
-    <line>Day upon</line>
-    <line>As <del rend="strikethrough">Morning</del> on the threshold of the east</line>
-    <line>lamps</line>
-    <line>Treads out the <del rend="strikethrough">sparks</del> of night, until the breath</line>
+
+    <line>As
+      <mod>
+        <del rend="strikethrough">Morning on</del>
+        <add place="superlinear">Day upon</add>
+      </mod>
+        the threshold of the east
+      </line>
+
+    <line>Treads out the
+      <mod>
+        <del rend="strikethrough">sparks</del>
+        <add place="superlinear">lamps</add>
+      </mod>
+           of night, until the breath</line>
     <line>Of darkness reillumines even the least</line>
   </zone>
 </surface>
