@@ -15,9 +15,9 @@
   <zone type="main">
 
     <line><del rend="strikethrough">And</del> <del rend="strikethrough">nothing ere</del></line>
-    <line><del rend="strikethrough">So mighty</del></line>
-    <line><del rend="strikethrough">All</del> <del rend="strikethrough">every thing</del> <del rend="strikethrough">all forms &amp; feelings</del></line>
-    <line>all the</line>
+    <line rend="indent1"><del rend="strikethrough">So mighty</del></line>
+    <line rend="indent1"><del rend="strikethrough">All</del> <del rend="strikethrough">every thing</del> <del rend="strikethrough">all forms &amp; feelings</del></line>
+
     <line>And
       <mod>
         <del rend="strikethrough">every form</del>
@@ -88,7 +88,7 @@
     </line>
 
 
-    <line>As
+    <line rend="indent1">As
       <mod>
         <del rend="strikethrough">morning</del>
         <add place="sublinear">Dawn</add>
@@ -125,11 +125,11 @@
     </mod>
   </line>
 
-    <line>As <del rend="strikethrough">Morning treads the s</del></line>
+    <line rend="indent1">As <del rend="strikethrough">Morning treads the s</del></line>
     <line><del rend="strikethrough">And Veins that beat</del></line>
     <line>As <del rend="strikethrough">Morning, on the threshold of the</del></line>
 
-    <line>As
+    <line rend="indent1">As
       <mod>
         <del rend="strikethrough">Morning on</del>
         <add place="superlinear">Day upon</add>
