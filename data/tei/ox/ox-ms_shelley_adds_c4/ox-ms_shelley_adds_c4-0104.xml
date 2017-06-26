@@ -9,13 +9,38 @@
 <zone type="library">48</zone>
   <zone type="main">
     <line>Behold a wonder worthy of the <del rend="strikethrough">rime</del> rhyme</line>
-    <line>Of him <del rend="strikethrough">who sang the</del></line>
-    <line><del rend="strikethrough">how</del></line>
-    <line><del rend="strikethrough">how in the depths of Hell</del></line>
-    <line><del rend="strikethrough">how  the  fabled  depths  of Hell</del></line>
-    <line>The <del rend="strikethrough">serpent &amp;</del></line>
-    <line><del rend="strikethrough">Sinner &amp; the</del></line>
-    <line><del rend="strikethrough">Who o</del></line>
+    <line rend="indent4">&#8212;</line>
+    <line>Of him
+      <mod>
+        <del rend="strikethrough">who sang the</del>
+        <add place="sublinear">
+          <mod>
+            <del rend="strikethrough">how</del>
+            <add place="sublinear">
+            <mod>
+              <del rend="strikethrough">how in the depths of Hell</del>
+              <add place="sublinear">
+                <del rend="strikethrough">how the fabled depths of Hell</del>
+              </add>
+            </mod>
+            </add>
+          </mod>
+      </add>
+    </mod>
+</line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">serpent &amp;</del>
+  <add place="sublinear">
+    <del rend="strikethrough">Sinner &amp; the</del>
+  <add place="sublinear">
+    <del rend="strikethrough">Who o</del>
+  </add>
+  </add>
+</mod>
+</line>
+
+
     <line><del rend="strikethrough">Ascended</del> from the lowest depths of Hell</line>
     <line>Through every Paradise &amp; through all glory</line>
     <line><del rend="strikethrough">Love  led</del></line>
