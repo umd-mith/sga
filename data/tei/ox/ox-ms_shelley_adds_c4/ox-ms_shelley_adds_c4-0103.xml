@@ -98,18 +98,22 @@
     </add>
   </mod>
 </add>
-
-
        airs too fierce
       <add place="sublinear">soon deform</add>
+</line>
 
-
-
-      airs too <unclear>fierce</unclear></line>
-    
-    <line><del rend="strikethrough">I</del></line>
-    <line><del rend="strikethrough">spi</del>      March      12</line>
-    <line>Before the chariot had begun to climb</line>
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough">spi</del>
+        <add place="sublinear">
+          <del rend="strikethrough">I</del>
+        </add>
+      </add>Before the
+      <add place="superlinear">March</add>
+      chariot had
+      <add place="superlinear">12</add>
+      begun to climb
+    </line>
     <line>The opposing steep of that mysterious dell</line>
   </zone>
 </surface>
