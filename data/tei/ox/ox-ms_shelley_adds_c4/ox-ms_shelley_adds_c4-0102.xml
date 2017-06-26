@@ -6,24 +6,71 @@
   xml:id="ox-ms_shelley_adds_c4-0102" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="47r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0102.jp2"/>
-  <zone type="main">
+<zone type="library">47</zone>
+<zone type="main">
+  <delSpan rend="strikethrough" spanTo="#c4-102.2"/>
+  <line>Dear Roberts</line>
+  <line rend="indent2">Williams and I <unclear>saild are</unclear></line>
+  <anchor xml:id="c4-102.2"/>
     <line><del rend="strikethrough">Others before it</del></line>
-    <line>Others stood gazing till within the shade</line>
-    <line>dim</line>
-    <line>Of the great mountain its light left them <del rend="strikethrough">dark</del>. &#8212;</line>
-    <line>Others outspeeded it, <del rend="strikethrough">but</del> and others made</line>
-    <line>it     the clouds that swim</line>
-    <line>Circles around like <del rend="strikethrough">rapid</del></line>
-    <line>high             bright of air</line>
-    <line><del rend="strikethrough">Around</del> Round the <del rend="strikethrough">white</del> moon in a <del rend="strikethrough">wild</del> Sea</line>
-    <line>And</line>
-    <line><del rend="strikethrough">But</del> more did follow, with <del rend="strikethrough">exulting</del> hymn</line>
+    <line rend="indent1">Others stood gazing till within the shade</line>
+
+    <line>Of the great mountain its light left them
+      <mod>
+        <del rend="strikethrough">dark.</del>
+        <add place="superlinear">dim</add>
+      </mod>
+       &#8212;
+     </line>
+    <line rend="indent1">Others outspeeded it, <del rend="strikethrough">but</del> and others made</line>
+
+    <line>Circles around
+      <add place="superlinear">it</add>
+       like
+       <mod>
+         <del rend="strikethrough">rapid</del>
+       <add place="superlinear">the</add>
+     </mod>
+       </line>
+
+    <line rend="indent1">
+        <del rend="strikethrough">Around</del>
+       Round the
+       <mod>
+         <del rend="strikethrough">white</del>
+         <add place="superlinear">high</add>
+       </mod>
+        moon in a
+        <mod>
+          <del rend="strikethrough">wild</del>
+          <add place="superlinear">bright of air</add>
+        </mod>
+         Sea
+       </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">But</del>
+        <add place="superlinear">And</add>
+      </mod>
+       more did follow, with <del rend="strikethrough">exulting</del> hymn
+     </line>
     <line>The chariot &amp; the captives fettered there</line>
-    <line><del rend="strikethrough">And I who had made one of every band</del></line>
-    <line><del rend="strikethrough">Half phantoms</del> <del rend="strikethrough">&amp; some</del></line>
-    <line><del rend="strikethrough">Phantoms &amp; men &amp; shadows in</del></line>
-    <line>But                            flood</line>
-    <line><del rend="strikethrough">And</del> all like bubbles on an eddying <del rend="strikethrough">river</del></line>
+    <line rend="indent1"><del rend="strikethrough">And I who had made one of every band</del></line>
+    <line rend="indent1"><del rend="strikethrough">Half phantoms</del> <del rend="strikethrough">&amp; some</del></line>
+    <line rend="indent1"><del rend="strikethrough">Phantoms &amp; men &amp; shadows in</del></line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear">But</add>
+      </mod>
+       all like bubbles on an eddying 
+       <mod>
+         <del rend="strikethrough">river</del>
+       <add place="superlinear">flood</add>
+     </mod>
+   </line>
     <line>Fell into the same track at last.&#8212; <del rend="strikethrough">&amp;</del> were</line>
   </zone>
 </surface>
