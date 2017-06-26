@@ -73,11 +73,39 @@
     </mod>
   </line>
 
+    <line>
+      <del rend="strikethrough">Whose blasts soon make</del>
+      <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">the limbs</del>
+      <add place="sublinear">
 
-    <line><del rend="strikethrough">Was made made naked to the</del></line>
-    <line>bare <del rend="strikethrough">to the</del> cold clime</line>
-    <line>Of that cold light, whose <del rend="strikethrough">breath</del></line>
-    <line><del rend="strikethrough">Whose blasts soon make</del> airs too <unclear>fierce</unclear></line>
+          <del rend="strikethrough">brow</del>
+      <add place="sublinear">
+
+        <del rend="strikethrough">shape they</del>
+      </add>
+    </add>
+  </mod>
+</add>
+<add place="superlinear">whose
+  <mod>
+    <del rend="strikethrough">breath</del>
+    <add place="superlinear">
+      <del rend="strikethrough">Was made naked to the</del>
+      <add place="sublinear">bare <del rend="strikethrough">to the</del> cold clime
+    </add>
+    </add>
+  </mod>
+</add>
+
+
+       airs too fierce
+      <add place="sublinear">soon deform</add>
+
+
+
+      airs too <unclear>fierce</unclear></line>
     <line><del rend="strikethrough">limbs</del></line>
     <line>, <del rend="strikethrough">the</del> <del rend="strikethrough">brow</del></line>
     <line><del rend="strikethrough">shape they      soon deform</del></line>
