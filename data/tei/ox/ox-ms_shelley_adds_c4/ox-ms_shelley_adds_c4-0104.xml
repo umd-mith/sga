@@ -8,7 +8,12 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0104.jp2"/>
 <zone type="library">48</zone>
   <zone type="main">
-    <line>Behold a wonder worthy of the <del rend="strikethrough">rime</del> rhyme</line>
+    <line>Behold a wonder worthy of the
+      <mod>
+        <del rend="strikethrough">rime</del>
+        <add>rhyme</add>
+        </mod>
+        </line>
     <line rend="indent4">&#8212;</line>
     <line>Of him
       <mod>
@@ -47,21 +52,44 @@
     <line><del rend="strikethrough">Ascended on love thoughts</del></line>
     <line>Love led serene, &amp; who returned to tell</line>
     <line>mate        st</line>
-    <line><del rend="strikethrough">How</del> to to      1. July</line>
+    <line><del rend="strikethrough">How</del> to to </line>
     <line><del rend="strikethrough">How <unclear>forever</unclear></del></line>
     <line><del rend="strikethrough">To <unclear>ease</unclear> that</del></line>
     <line><del rend="strikethrough">How</del>  <del rend="strikethrough">Its power upon</del></line>
     <line><del rend="strikethrough">How from the highest Heaven unto the hoary</del></line>
     <line><del rend="strikethrough">Abyss, of whirling rain</del></line>
     <line><del rend="strikethrough"><unclear>soar</unclear> doth Love alone eternal reign</del></line>
-    <line><unclear>dusked</unclear>                      awe</line>
-    <line>In words of hate &amp; <del rend="strikethrough">the</del> <del rend="strikethrough">fear</del> the wondrous story</line>
-    <line><del rend="strikethrough">Of strange tr</del></line>
-    <line>How all things are transfigured, except Love</line>
-    <line><del rend="strikethrough">For the world,</del> <del rend="strikethrough">deaf even</del>               hoary</line>
-    <line>For deaf as is a sea which wrath makes</line>
-    <line>1st. July</line>
-    <line>can</line>
-    <line>The world <del rend="strikethrough">can</del> hear not the sweet notes that move</line>
+
+    <line>In words of hate &amp; <del rend="strikethrough">the</del>
+    <mod>
+      <del rend="strikethrough">fear</del>
+    <add place="superlinear">awe</add>
+  </mod>
+   the wondrous story</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Of strange tr</del>
+      <add place="sublinear">How all things are transfigured, except Love</add>
+    </mod>
+  </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">For the world,</del>
+        <del rend="strikethrough">deaf even</del>
+      <add place="sublinear">For deaf as is a sea which wrath makes
+      <add place="sublinear">hoary</add>
+    </add>
+    </mod>
+  </line>
+
+
+    <line>The world
+      <mod>
+        <del rend="strikethrough">can</del>
+        <add place="superlinear">can</add>
+      </mod>
+           hear not the sweet notes that move
+         </line>
   </zone>
 </surface>
