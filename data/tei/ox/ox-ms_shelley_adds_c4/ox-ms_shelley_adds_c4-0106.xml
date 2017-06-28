@@ -9,7 +9,7 @@
   <zone type="main">
     <line>The sphere whose light is melody to lovers. &#8212;</line>
     <line><del rend="strikethrough">Behold I say a wonder, for the grove</del></line>
-    <line>A wonder worthy of <del rend="strikethrough">that</del> his rhyme &#8212;
+    <line rend="indent1">A wonder worthy of <del rend="strikethrough">that</del> his rhyme &#8212;
     <del rend="strikethrough">the</del>
     <mod>
       <del rend="strikethrough">grove</del>
@@ -48,7 +48,7 @@
        with shadows, <del rend="strikethrough">as a</del></line>
 
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough">From every</del>
         <add place="superlinear">
@@ -57,7 +57,7 @@
       </mod>
         <del rend="strikethrough">was</del>
       </line>
-    <line>The earth was grey with phantoms, &amp; the
+    <line rend="indent1">The earth was grey with phantoms, &amp; the
       <mod>
         <del rend="strikethrough"><unclear>sky</unclear></del>
       <add place="sublinear">
