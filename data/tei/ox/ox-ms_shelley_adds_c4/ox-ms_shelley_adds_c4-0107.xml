@@ -8,17 +8,58 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0107.jp2"/>
   <zone type="main">
     <line><del rend="strikethrough">Across the <unclear>forests</unclear></del></line>
-    <line>like eaglets on the wing</line>
-    <line><del rend="strikethrough">Before them</del> them, some     <del rend="strikethrough">the cranes on</del></line>
-    <line>Behind <del rend="strikethrough">them, others like</del>      <del rend="strikethrough">wild birds on wing</del></line>
-    <line>the</line>
-    <line>Were lost in <del rend="strikethrough">the excess</del> <unclear>fiery</unclear></line>
-    <line>white <del rend="strikethrough">beams</del> others like elves</line>
-    <line>blaze</line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Before them</del>
+        <add place="sublinear">
+          Behind
+          <mod>
+            <del rend="strikethrough">them, others, like</del>
+          <add place="superlinear">them, some</add>
+          <mod>
+            <del rend="strikethrough">wild birds on wing</del>
+          <add place="superlinear">
+            <mod>
+              <del rend="strikethrough">the cranes on</del>
+        <add place="superlinear">like eaglets on the wing</add>
+      </mod>
+      </add>
+        </mod>
+        </mod>
+        </add>
+      </mod>
+    </line>
+
+    <line>Were lost in
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">the</add>
+        <add place="sublinear">white</add>
+      </mod>
+
+    <mod>
+      <del rend="strikethrough"> excess</del>
+    <add>fiery</add>
+    <add place="sublinear">
+      <mod><del rend="strikethrough">beams</del>
+      <add place="sublinear">blaze</add></mod>
+    </add>
+  </mod>
+  others like elves
+</line>
+
     <line>Danced in a thousand unimagined shapes</line>
     <line>Upon the sunny streams &amp; grassy shelves;</line>
-    <line>restless</line>
-    <line>And other sate chattering like <del rend="strikethrough">filthy</del> apes</line>
+
+    <line>And other sate chattering like
+      <mod>
+        <del rend="strikethrough">filthy</del>
+        <add place="sublinear">restless</add>
+    </mod>
+     apes
+   </line>
     <line><unclear>On</unclear> <del rend="strikethrough"><unclear>On</unclear></del> vulgar <unclear>paws</unclear> <del rend="strikethrough">or made</del></line>
     <line><del rend="strikethrough">Upon the boughs,</del> <del rend="strikethrough">and on</del> <del rend="strikethrough">the shoulders</del>    <del rend="strikethrough">leapt</del></line>
     <line><del rend="strikethrough"><unclear>oblivious</unclear></del> <del rend="strikethrough"><unclear>over</unclear> shoulders</del> fire</line>
