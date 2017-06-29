@@ -60,26 +60,100 @@
     </mod>
      apes
    </line>
-    <line><unclear>On</unclear> <del rend="strikethrough"><unclear>On</unclear></del> vulgar <unclear>paws</unclear> <del rend="strikethrough">or made</del></line>
-    <line><del rend="strikethrough">Upon the boughs,</del> <del rend="strikethrough">and on</del> <del rend="strikethrough">the shoulders</del>    <del rend="strikethrough">leapt</del></line>
-    <line><del rend="strikethrough"><unclear>oblivious</unclear></del> <del rend="strikethrough"><unclear>over</unclear> shoulders</del> fire</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Upon</del>
+        <add place="superlinear">On
+          <del rend="strikethrough"><unclear>On</unclear></del>
+        </add>
+      </mod>
+    <mod>
+        <del rend="strikethrough">the boughs,</del>
+        <add place="sublinear">
+          <del rend="strikethrough"><unclear>oblivious</unclear></del>
+        </add>
+      <add place="superlinear">vulgar <unclear>paws,</unclear></add>
+    </mod>
+    <mod>
+       <del rend="strikethrough">and on</del>
+       <add place="superlinear">
+         <del rend="strikethrough">or made</del>
+       </add>
+     </mod>
+      <mod>
+        <del rend="strikethrough">the shoulders</del>
+        <add place="sublinear">
+          <del rend="strikethrough"><unclear>ever</unclear> shoulders</del>
+        </add>
+      </mod>
+          <mod>
+            <del rend="strikethrough">leapt</del>
+          <add place="sublinear">fire</add>
+        </mod>
+      </line>
+
     <line>Some <del rend="strikethrough">With motions wild</del></line>
     <line><del rend="strikethrough">Or</del> Made a cradle of the ermined capes</line>
-    <line>upon</line>
-    <line>Of kingly mantles, or <del rend="strikethrough">sate &amp; wept</del></line>
-    <line>across</line>
-    <line>some <del rend="strikethrough">within</del> the tiars</line>
-    <line><del rend="strikethrough">Within the</del>      rode   sate like vultures played</line>
-    <line>Of pontiffs, <del rend="strikethrough">hunched</del> like daemons, others <del rend="strikethrough">sate</del></line>
-    <line><del rend="strikethrough">sate</del></line>
-    <line>cowered</line>
-    <line><del rend="strikethrough">Within</del> <del rend="strikethrough">Upon</del> the crown which <del rend="strikethrough"><unclear>st</unclear></del></line>
-    <line><unclear>Under</unclear>     girt with</line>
-    <line>empire</line>
+    <space quantity="1" unit="line"/>
+
+    <line>Of kingly mantles, or
+      <mod>
+        <del rend="strikethrough">sate &amp; wept</del>
+      <add place="superlinear">upon</add>
+      <add place="sublinear">some
+        <mod>
+          <del rend="strikethrough">within</del>
+      <add place="superlinear"> across</add>
+    </mod>
+    <add place="superlinear">the tiars</add>
+    </add>
+    </mod>
+  </line>
+
+
+    <line><del rend="strikethrough">Within the</del></line>
+
+    <line>Of pontiffs,
+      <mod>
+        <del rend="strikethrough">hunched</del>
+        <add place="superlinear">rode</add>
+      </mod>
+       like daemons,
+       <add place="superlinear">sate like vultures</add>
+        others
+        <mod>
+          <del rend="strikethrough">sate</del>
+        <add place="sublinear">
+          <mod>
+            <del rend="strikethrough">sate</del>
+          <add place="sublinear">cowered</add>
+        </mod>
+        </add>
+        <add place="superlinear">played</add>
+      </mod>
+    </line>
+
+    <line><del rend="strikethrough">Within</del>
+    <mod>
+      <del rend="strikethrough">Upon</del>
+      <add place="sublinear"><unclear>under</unclear></add>
+    </mod>
+     the crown which
+     <mod>
+       <del rend="strikethrough"><unclear>st</unclear></del>
+     <add place="sublinear">girt with empire</add>
+   </mod>
+ </line>
+
+
     <line><del rend="strikethrough">Like The lord of many <unclear>lands</unclear></del></line>
     <line><del rend="strikethrough">A head</del>   <del rend="strikethrough">Heads</del></line>
     <line><del rend="strikethrough">The head</del> <del rend="strikethrough">An idiot head</del></line>
-    <line><del rend="strikethrough">Like skeletons, &amp; mocked the empty</del></line>
-    <line>sta&lt; </line>
+    <line><del rend="strikethrough">Like skeletons, &amp; mocked the empty</del>
+    <add place="sublinear">sta&lt;</add>
+  </line>
+  <zone type="sketch"></zone>
+
   </zone>
 </surface>
