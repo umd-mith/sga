@@ -9,15 +9,45 @@
   <zone type="main">
     <line><del rend="strikethrough">Or in the likeness</del></line>
     <line><del rend="strikethrough">Or multip</del></line>
-    <line>small</line>
-    <line>Or like <del rend="strikethrough">the</del> gnats &amp; flies <del rend="strikethrough">that</del> as thick as mist</line>
-    <line>thronged about the brow</line>
-    <line>On evening marshes<del rend="strikethrough">,</del> <del rend="strikethrough">dazzled their weak sight</del></line>
-    <line><del rend="strikethrough">Or like the               serpents twist</del></line>
-    <line>Of lawyers statesman priest &amp; theorist,</line>
-    <line><del rend="strikethrough">hoary</del> <del rend="strikethrough">living</del></line>
-    <line>And others <del rend="strikethrough">fell</del> like <del rend="strikethrough">rain</del> flakes of snow</line>
-    <line>discoloured</line>
+
+    <line>Or like
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">small</add>
+      </mod>
+       gnats &amp; flies <del rend="strikethrough">that</del> as thick as mist</line>
+
+    <line>On evening marshes<del rend="strikethrough">,</del>
+    <mod>
+       <del rend="strikethrough">dazzled their weak sight</del>
+     <add place="superlinear">thronged about the brow</add>
+   </mod>
+ </line>
+    <line><del rend="strikethrough">Or like the</del></line>
+    <line>Of lawyers statesman
+      <add place="superlinear">
+        <del rend="strikethrough">serpents twist</del>
+      </add>
+       priest &amp; theorist,</line>
+       <line rend="indent4">&#8212;</line>
+
+    <line>And others <del rend="strikethrough">fell</del> like
+    <mod>
+      <del rend="strikethrough">rain</del>
+    <mod>
+      <add place="superlinear">
+        <del rend="strikethrough">hoary</del>
+      </add>
+      <mod>
+        <add place="superlinear">
+        <del rend="strikethrough">living</del>
+      </add>
+        <add place="sublinear">discoloured</add>
+      </mod>
+    </mod>
+  </mod> flakes of snow
+</line>
+
     <line><del rend="strikethrough">Or <unclear></unclear></del>   <del rend="strikethrough">Serpents &amp; bats</del></line>
     <line><del rend="strikethrough">Among our</del></line>
     <line>Fell at our feet, <del rend="strikethrough">and others with the</del></line>
