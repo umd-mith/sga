@@ -8,19 +8,61 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0112.jp2"/>
 <zone type="library">52</zone>
   <zone type="main">
-    <line>With <del rend="strikethrough">thought, and eyes</del>                      shone</line>
-    <line><del rend="strikethrough">desire burned where</del>     <del rend="strikethrough">?shon</del></line>
-    <line>Care, and in the eyes <del rend="strikethrough">whose</del> which once hope <del rend="strikethrough">lit</del></line>
-    <line>Desire <del rend="strikethrough">glowed</del> like a lioness bereft</line>
-    <line><del rend="strikethrough">sate</del></line>
-    <line>Of <del rend="strikethrough">her</del> its last cub, glared ere it <del rend="strikethrough">died; turned to stone</del></line>
-    <line>each one</line>
-    <line><del rend="strikethrough">turned to stone</del></line>
+    <line>With <del rend="strikethrough">thought, </del>
+    <mod>
+      <del rend="strikethrough">and eyes</del>
+      <add place="sublinear">
+      <mod>
+          <del rend="strikethrough">desire burned where</del>
+        <add place="sublinear">Care, in the eyes wheriech once hope
+        <mod>
+            <del rend="strikethrough">lit</del>
+            <add place="superlinear">shone</add>
+      </mod>
+    </add>
+      </mod>
+      </add>
+    </mod>
+</line>
+
+
+    <line>Desire
+      <mod>
+        <del rend="strikethrough">glowed</del>
+        <add place="sublinear">
+          <del rend="strikethrough">sate</del>
+        </add>
+      </mod>
+       like a lioness bereft
+     </line>
+     <line rend="indent4">&#8212;</line>
+
+    <line>Of
+      <mod>
+        <del rend="strikethrough">her</del>
+        <add place="superlinear">its</add>
+      </mod>
+       last cub, glared ere it
+       <mod>
+         <del rend="strikethrough">died; turned to stone</del>
+       <add place="sublinear">
+        <del rend="strikethrough">tunred to stone</del>
+        <add place="superlinear">each one</add>
+      </add>
+      </mod>
+    </line>
+
+
     <line><del rend="strikethrough">Its object &amp; itself</del></line>
     <line><del rend="strikethrough">Sent forth a thousand shadows</del></line>
     <line>Of that great crowd sent forth incessantly</line>
-    <line>These     <del rend="strikethrough">as</del> numerous as the</line>
-    <line><del rend="strikethrough">A thousand</del> shad<del rend="strikethrough">ow</del>s, <del rend="strikethrough">of himself &amp;</del></line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">A</del>
+        <add place="superlinear">These</add>
+      </mod>
+     thousand</del> shad<del rend="strikethrough">ows</del> <del rend="strikethrough">of himself &amp;</del></line>
     <line><del rend="strikethrough">like the</del> dead leaves blown</line>
     <line><del rend="strikethrough">Oer</del> In Autumn evening <del rend="strikethrough">out of</del> a poplar tree &#8212;</line>
     <line>from</line>
