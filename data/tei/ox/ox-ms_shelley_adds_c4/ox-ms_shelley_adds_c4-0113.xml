@@ -12,29 +12,81 @@
     <line><del rend="strikethrough">Compelling them</del></line>
     <line>With <del rend="strikethrough"><unclear>reversed</unclear> beams  curdling  the shapeless mass</del></line>
     <line><del rend="strikethrough"><unclear>So</unclear> distinct</del></line>
-    <line>thus, on the way</line>
+    <line rend="indent6">thus, on the way</line>
     <line>Mask after mask fell from the countenance</line>
-    <line><del rend="strikethrough">And form of every pilgrim</del></line>
-    <line><unclear>long</unclear></line>
-    <line><del rend="strikethrough">So when</del></line>
-    <line>And form of all, and before the day</line>
+    <line><del rend="strikethrough">And from of every pilgrim</del></line>
+
+
+    <line>And form of all,
+      <mod>
+        <del rend="strikethrough">So when</del>
+        <add place="superlinear"><unclear>long</unclear></add>
+      <add place="sublinear"> and before the day</add>
+    </mod>
+  </line>
     <line>waked      glance</line>
-    <line>Was old the joy which <del rend="strikethrough">was</del> like Heavens</line>
+    <line>Was old the joy which
+      <mod>
+        <del rend="strikethrough">was</del>
+        <add place="superlinear">waked</add>
+      </mod>
+         like Heavens
+       <add place="superlinear">glance</add>
+     </line>
     <line><del rend="strikethrough">Perished</del> The sleepers in the oblivious valley, died</line>
-    <line>some</line>
-    <line>And <del rend="strikethrough">most</del> grew weary of the ghastly dance</line>
-    <line>And <del rend="strikethrough">sank</del> fell, as I have fallen by the</line>
-    <line>way side</line>
-    <line>Alas I kiss you <unclear> </unclear></line>
-    <line>Those soonest, <del rend="strikethrough">from whose limbs the</del></line>
-    <line>from whose forms most shadows</line>
-    <line>past</line>
-    <line>strength</line>
-    <line>And least of <del rend="strikethrough">beauty</del> &amp; beauty did abide.&#8212;-</line>
-    <line>Then,      said</line>
-    <line><del rend="strikethrough">And</del> what is Life I <del rend="strikethrough">cried</del>... <del rend="strikethrough">the cripple cast</del></line>
-    <line>His</line>
-    <line><del rend="strikethrough">An</del> eye upon the <del rend="strikethrough">distant car</del> of <del rend="strikethrough">beams</del></line>
+
+    <line>And
+      <mod>
+        <del rend="strikethrough">most</del>
+        <add place="superlinear">some</add>
+      </mod>
+       grew weary of the ghastly dance</line>
+    <line>And
+       <mod>
+         <del rend="strikethrough">sank</del>
+         <add> fell,</add>
+       </mod>
+        as I have fallen by the
+      <add place="sublinear">way side</add>
+    </line>
+
+    <line rend="indent6">Alas I kiss you <unclear>Julia</unclear></line>
+    <line>Those soonest,
+      <mod>
+        <del rend="strikethrough">from whose limbs the</del>
+      <add place="sublinear">from whose forms most shadows
+        <add place="sublinear">past</add>
+      </add>
+    </mod>
+    </line>
+
+    <line>And least of
+      <mod>
+         <del rend="strikethrough">beauty</del>
+         <add place="superlinear">strength</add>
+       </mod>
+        &amp; beauty did abide.&#8212;
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear">Then,</add>
+      </mod>
+      what is Life I
+      <mod>
+        <del rend="strikethrough">cried</del>
+        <add place="superlinear">said</add>
+      </mod>
+      ... <del rend="strikethrough">the cripple cast</del></line>
+      <zone type="library">53</zone>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">An</del>
+        <add place="superlinear">His</add>
+      </mod>
+       eye upon the <del rend="strikethrough">distant car</del> of <del rend="strikethrough">beams</del></line>
     <line>car which now had rolled</line>
     <line>Onward, as if that look must be the last</line>
     <line>And answered . . . . Happy those for whom the fold</line>
