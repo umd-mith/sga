@@ -62,27 +62,120 @@
         <del rend="strikethrough">A</del>
         <add place="superlinear">These</add>
       </mod>
-     thousand</del> shad<del rend="strikethrough">ows</del> <del rend="strikethrough">of himself &amp;</del></line>
-    <line><del rend="strikethrough">like the</del> dead leaves blown</line>
-    <line><del rend="strikethrough">Oer</del> In Autumn evening <del rend="strikethrough">out of</del> a poplar tree &#8212;</line>
-    <line>from</line>
+    <del rend="strikethrough"> thousand</del>
+  shadows,
+  <mod>
+     <del rend="strikethrough">of himself &amp;</del>
+   <add place="sublinear">
+    <mod>
+      <del rend="strikethrough">like the</del>
+      <add place="superlinear"><del rend="strikethrough">as</del> numerous as the</add>
+    </mod>
+       dead leaves blown</add>
+  </mod>
+</line>
+
+    <line><del rend="strikethrough">Oer</del>
+    In Autumn evening
+    <mod>
+      <del rend="strikethrough">out of</del>
+      <add place="sublinear">from</add>
+    </mod>
+     a poplar tree &#8212;
+  </line>
+
     <line>Each, like himself &amp; like each other were,</line>
     <line>At first, but soon distorted seemed to be</line>
-    <line><del rend="strikethrough"><unclear>alike</unclear>  vapour</del></line>
-    <line><del rend="strikethrough">clouds</del></line>
-    <line><del rend="strikethrough">Like <unclear>mounts</unclear></del>    moulded by the casual air</line>
-    <line>Obscure clouds                      ray</line>
-    <line><del rend="strikethrough">Chariots  car</del></line>
-    <line><del rend="strikethrough">And left behind <unclear>the</unclear> <unclear>car</unclear></del>   <del rend="strikethrough"><unclear>sp?  </unclear></del></line>
-    <line>cars creative <del rend="strikethrough">light</del></line>
-    <line>And of this stuff the <del rend="strikethrough">light of</del> <del rend="strikethrough">that</del> Vision</line>
-    <line>&lt;busy&gt; that [&lt;were&gt;] [like] &gt; </line>
-    <line>Wrought all the phantoms, <del rend="strikethrough"><unclear>fluttering</unclear></del> <del rend="strikethrough">there</del></line>
-    <line><del rend="strikethrough">&amp; on its far flight</del></line>
-    <line>As the sun shapes the clouds <del rend="strikethrough">&amp; in derision</del></line>
-    <line>form            mighty</line>
-    <line>[Wither Changes their shape &lt;at his whim&gt; at his will]] </line>
-    <line>So                <del rend="strikethrough">by his prevailing ray</del></line>
-    <line><del rend="strikethrough">From</del></line>
+    <line rend="indent5">&#8212;</line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Like <unclear>mounts</unclear></del>
+        <add place="superlinear">
+        <mod>
+            <del rend="strikethrough">clouds</del>
+          <add place="superlinear">
+            <del rend="strikethrough">Like vapour</del>
+          </add>
+        </mod>
+        </add>
+        <add place="sublinear">Obscure clouds</add>
+      </mod>
+      moulded by the casual air
+    </line>
+
+
+    <line>
+      <del rend="strikethrough">And left behind <unclear>the</unclear> <unclear>car</unclear></del>
+         <mod>
+           <del rend="strikethrough"><unclear>sp<gap quantity="2" unit="chars"/> </unclear></del>
+         <add place="superlinear">
+           <del rend="strikethrough">Chariots</del>
+         <add>
+        <mod>
+          <del rend="strikethrough">car</del>
+           <add place="superlinear">ray</add>
+         </mod>
+       </add>
+     </add>
+   </mod>
+       </line>
+
+    <line>And of this stuff the
+      <mod>
+        <del rend="strikethrough">light of</del> <del rend="strikethrough">that Vision</del>
+      <add place="superlinear"> cars creative
+        <del rend="strikethrough">light</del>
+      </add>
+    </mod>
+  </line>
+
+    <line>Wrought all the
+      <add place="superlinear">
+        <unclear>busy</unclear>
+      </add>
+       phantoms,
+       <add place="superlinear">
+         that <del rend="strikethrough">were</del>
+       </add>
+       <del rend="strikethrough"><unclear>fluttering</unclear></del>
+       <mod>
+          <del rend="strikethrough">there</del>
+        <add place="superlinear">
+          <del rend="strikethrough">like</del>
+        </add>
+      </mod>
+    </line>
+
+    <line>As the sun shapes the clouds
+      <mod>
+        <del rend="strikethrough">&amp; in derision</del>
+      <add place="superlinear">
+      <del rend="strikethrough">&amp; on its far flight</del>
+      </add>
+      <add place="sublinear">mighty</add>
+    </mod>
+  </line>
+
+    <line>
+      <del rend="strikethrough">Wither Changes their</del>
+    <mod>
+      <del rend="strikethrough"> shape</del>
+      <add place="superlinear">form</add>
+    </mod>
+    <mod>
+      <del rend="strikethrough"> <unclear>&lt;at his whim&gt; at his will</unclear></del>
+      <add place="sublinear">
+                  <del rend="strikethrough">by his prevailing ray</del>
+                </add>
+              </mod>
+            </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">From</del>
+      <add place="superlinear">So</add>
+    </mod>
+  </line>
   </zone>
 </surface>
