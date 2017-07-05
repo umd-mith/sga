@@ -86,8 +86,13 @@
         <del rend="strikethrough">An</del>
         <add place="superlinear">His</add>
       </mod>
-       eye upon the <del rend="strikethrough">distant car</del> of <del rend="strikethrough">beams</del></line>
-    <line>car which now had rolled</line>
+       eye upon the
+       <mod>
+         <del rend="strikethrough">distant car of beams</del>
+       <add place="sublinear">car which no had rolled</add>
+     </mod>
+   </line>
+
     <line>Onward, as if that look must be the last</line>
     <line>And answered . . . . Happy those for whom the fold</line>
     <line>Of</line>
