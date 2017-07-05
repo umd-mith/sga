@@ -48,32 +48,132 @@
   </mod> flakes of snow
 </line>
 
-    <line><del rend="strikethrough">Or <unclear></unclear></del>   <del rend="strikethrough">Serpents &amp; bats</del></line>
-    <line><del rend="strikethrough">Among our</del></line>
-    <line>Fell at our feet, <del rend="strikethrough">and others with the</del></line>
-    <line><del rend="strikethrough">And soon were trampled down</del></line>
-    <line><del rend="strikethrough">Fell on</del></line>
-    <line><del rend="strikethrough">Into a grey</del></line>
-    <line><del rend="strikethrough">Were w</del>   <del rend="strikethrough">Were tangled in the hair of those <unclear>f? </unclear></del></line>
+    <line><del rend="strikethrough">Or <unclear>I</unclear></del>
+    <del rend="strikethrough">Serpents &amp; bats</del>
+  </line>
+    <line rend="indent1"><del rend="strikethrough">Among our</del></line>
+    <line rend="indent1"><hi rend="underline">Fell at our feet,</hi>
+    <mod>
+       <del rend="strikethrough">and others with the</del>
+     <add place="sublinear">
+      <del rend="strikethrough">And soon were trampled down</del>
+    </add>
+  </mod>
+</line>
+<space quantity="2" unit="lines"/>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Were w</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Into a grey</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Fell on</del></add>
+        </add>
+      </mod>
+         <del rend="strikethrough">Were tangled in the hair of those <gap quantity="4" unit="chars"/></del>
+       </line>
     <line><del rend="strikethrough">Caught</del> On fairest <del rend="strikethrough">bosoms, &amp; the sunniest hair tresses</del></line>
     <line>Fell, and were melted by the youthful glow</line>
-    <line>Which they extinguished; <del rend="strikethrough">even and their vapours</del></line>
-    <line><del rend="strikethrough">tears whi</del></line>
-    <line><del rend="strikethrough">and</del> like tears, they were</line>
-    <line>for</line>
-    <line><del rend="strikethrough">on whom</del></line>
-    <line>A veil to those <del rend="strikethrough">whose,</del> <del rend="strikethrough">were</del>      rained</line>
-    <line><del rend="strikethrough">mourning</del> lids they <del rend="strikethrough">fell</del></line>
-    <line>from whose faint <del rend="strikethrough">eyes</del></line>
-    <line>In drops of sorrow. &#8212;- <del rend="strikethrough">Wonder</del> I became aware</line>
-    <line><del rend="strikethrough">Wonder</del></line>
-    <line>forms       thus</line>
-    <line>Of where those <del rend="strikethrough">phan</del> proceeded which <del rend="strikethrough">had</del> stained</line>
-    <line>track                           out of the</line>
-    <line>The <del rend="strikethrough">space</del> <del rend="strikethrough">with uncouth imagery</del></line>
-    <line>in which we moved; <del rend="strikethrough">from every one</del></line>
-    <line>images              <del rend="strikethrough">the shadows came</del></line>
-    <line><del rend="strikethrough">Came his own likeness, &amp; the</del></line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+    <space quantity="1" unit="line"/>
+    <line>Which they extinguished;
+      <mod>
+        <del rend="strikethrough">even and their vapours</del>
+      <add place="sublinear">
+      <mod>
+        <del rend="strikethrough">tears whi</del>
+        <add place="sublinear">
+          <del rend="strikethrough">and</del> like tears, they were</add>
+        </mod>
+      </add>
+    </mod>
+  </line>
+
+    <line>A veil to those
+      <mod>
+        <del rend="strikethrough">whose,</del>
+        <add place="superlinear">
+          <mod>
+            <del rend="strikethrough">on whom</del>
+          <add place="superlinear">for</add>
+        </mod>
+        </add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">were</del>
+         <add place="sublinear">
+            <mod>
+                <del rend="strikethrough">mourning</del>
+              <add place="sublinear">from whose faint
+              <mod>
+                <del rend="strikethrough">eyes</del>
+              <add place="superlinear">lids they
+                <mod>
+                  <del rend="strikethrough">fell</del>
+                <add place="superlinear">rained</add>
+              </mod>
+            </add>
+            </mod>
+          </add>
+        </mod>
+      </add>
+    </mod>
+  </line>
+
+
+    <line>In drops of sorrow. &#8212;
+      <mod>
+        <del rend="strikethrough">Wonder</del>
+        <add place="sublinear">
+            <del rend="strikethrough">Wonder</del>
+          </add>
+        </mod>
+          I became aware
+        </line>
+  <line rend="indent5">&#8212;</line>
+
+    <line>Of where those
+      <mod>
+        <del rend="strikethrough">phan</del>
+        <add place="superlinear">forms</add>
+      </mod>
+       proceeded which
+       <mod>
+         <del rend="strikethrough">had</del>
+         <add place="superlinear">thus</add>
+       </mod>
+        stained
+      </line>
+
+    <line>The
+      <mod>
+        <del rend="strikethrough">space</del>
+        <add place="superlinear">track</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">with uncouth imagery</del>
+       <add place="sublinear">in which we moved;
+        <mod>
+           <del rend="strikethrough">from every one</del>
+       <add place="sublinear">
+        <mod>
+           <del rend="strikethrough">the shadows came</del>
+       <add place="superlinear">out of the</add>
+     </mod>
+     </add>
+     </mod>
+   </add>
+     </mod>
+   </line>
+
+
+    <line><del rend="strikethrough">Came his own likeness,
+      <add place="superlinear">
+        <del rend="strikethrough">images</del>
+      </add>
+       &amp; the</del></line>
     <line><del rend="strikethrough">A mask &amp;</del></line>
   </zone>
 </surface>
