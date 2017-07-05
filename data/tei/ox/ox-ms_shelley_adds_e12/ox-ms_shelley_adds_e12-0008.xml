@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0008" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="6">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0008.jp2"/>
+  <zone type="main">
+    <line>That boiled within their chasm-like path</line>
+    <line>With streaming roar their toilsom speed</line>
+    <line>assauging</line>
+    <line>And with the struggling rocks a deathless</line>
+    <line>battle waging</line>
+    <line>And sky &amp; sea, but two, which move</line>
+    <line>And <del rend="strikethrough">All else All All</del></line>
+    <line>as</line>
+    <line>And form all others life &amp; love. &#8212;</line>
+    <line><del rend="strikethrough">All others <unclear>were</unclear></del></line>
+  </zone>
+</surface>

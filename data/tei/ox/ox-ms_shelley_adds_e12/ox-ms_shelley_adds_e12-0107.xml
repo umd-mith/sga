@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0107" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="104">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0107.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">Remember me,</del></line>
+    <line>happy</line>
+    <line>Wilt thou forget the <del rend="strikethrough">buried</del> hours</line>
+    <line>Which We <del rend="strikethrough"><unclear>strew</unclear></del> have buried in <del rend="strikethrough">Loves</del> loves sweet bowers</line>
+    <line><del rend="strikethrough">Heaping over their balmy ruin</del></line>
+    <line><del rend="strikethrough"><unclear>Mak</unclear></del> Heaping over their corpses cold</line>
+    <line>Blossoms &amp; leaves instead of mould</line>
+    <line>Blossoms which were the <del rend="strikethrough">hopes</del> that</line>
+    <line>joys   fell</line>
+    <line>And <del rend="strikethrough"><unclear>j</unclear></del> leaves, the hopes <del rend="strikethrough">which</del> <del rend="strikethrough">that</del> yet remain &#8212;</line>
+    <line><del rend="strikethrough">Know</del></line>
+    <line><del rend="strikethrough">They who forget the dead will die</del></line>
+    <line><del rend="strikethrough">And their ghosts be without a memory</del></line>
+    <line><del rend="strikethrough">Ye who love</del> Forget the dead, the past? o</line>
+    <line><unclear>Thirst</unclear>                             yet</line>
+    <line>that may</line>
+    <line>These are ghosts <del rend="strikethrough">which</del> take revenge for it</line>
+    <line><del rend="strikethrough">that</del></line>
+    <line>Memories <del rend="strikethrough">which</del> make the heart a tomb</line>
+    <line>Regrets which glide through the spirits</line>
+    <line><unclear>parting</unclear> whispers gloom</line>
+    <line>And <del rend="strikethrough">We</del> And with <del rend="strikethrough">acccents</del> tell</line>
+    <line>That joy, once <del rend="strikethrough">left</del> lost, is pain</line>
+  </zone>
+</surface>

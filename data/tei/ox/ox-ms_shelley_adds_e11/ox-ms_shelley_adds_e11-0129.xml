@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5418" lry="7110"
+  xml:id="ox-ms_shelley_adds_e11-0129" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="128">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0129.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">This reluctance would naturally</del></line>
+    <line><del rend="strikethrough">diminishes as as we approach</del></line>
+    <line>towards dissolution, <del rend="strikethrough">and such</del></line>
+    <line><del rend="strikethrough">is yet the case with those <unclear>who</unclear></del></line>
+    <line><del rend="strikethrough">are yet in harmony with thems<del rend="strikethrough">elves</del></del></line>
+    <line><del rend="strikethrough">-elves. But</del></line>
+  </zone>
+</surface>

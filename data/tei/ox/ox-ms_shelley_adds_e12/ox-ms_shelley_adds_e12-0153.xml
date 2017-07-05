@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0153" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="149">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0153.jp2"/>
+  <zone type="main">
+    <line>O that I may</line>
+    <line>Be melted away</line>
+    <line>Like a mist in the <unclear>warmth</unclear> of <unclear> </unclear></line>
+    <line>Come, dat una avita quercia</line>
+    <line><unclear>      </unclear></line>
+    <line><unclear>coming day</unclear></line>
+    <line>Due carnacchia vote suonono il loro</line>
+    <line>With the lullaby      corno</line>
+    <line><del rend="strikethrough"><unclear></unclear></del> Urlo per urlo, &amp;</line>
+    <line>Of winds that die</line>
+    <line>Quando sentono l'odore, mezzog</line>
+    <line>On the bosom of their own harmony</line>
+    <line>He has made</line>
+    <line>The wilderness a city of <unclear>paradis</unclear></line>
+    <line>And <del rend="strikethrough">fr</del> <unclear>veil</unclear> by <del rend="strikethrough">the</del> veil, the crimson folds</line>
+    <line><del rend="strikethrough">There</del> <del rend="strikethrough">That</del></line>
+  </zone>
+</surface>

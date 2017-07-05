@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0074" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="72">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0074.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">As the sun rules,</del></line>
+    <line>The great Sun rules as with a tyrants gaze</line>
+    <line>The unquiet republic of the maze</line>
+    <line>Of ever wandering Planets &#8212;&#8212;</line>
+    <line>On which our souls <unclear>are</unclear> <del rend="strikethrough">charioted</del></line>
+    <line>If change or time should ever bring thee low</line>
+    <line>&#8212; I</line>
+    <line>I dare not dream <del rend="strikethrough">that</del> I could below</line>
+    <line><del rend="strikethrough"><unclear>further</unclear></del></line>
+    <line>The half of all that thou &#8212; hast been for</line>
+    <line>me</line>
+    <line>cloud</line>
+    <line>a <del rend="strikethrough">fire</del> by <del rend="strikethrough"><unclear>nigh</unclear></del> day</line>
+    <line>A light in darkness for my desart way</line>
+    <line><unclear> </unclear></line>
+    <line><unclear>Whose foes</unclear> assure me with <unclear>of</unclear> <unclear> </unclear> nod</line>
+    <line>That you are <unclear>faultness</unclear> &#8212; as I wd. to God</line>
+  </zone>
+</surface>

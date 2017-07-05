@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0110" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="107">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0110.jp2"/>
+  <zone type="main">
+    <line>M. <unclear>Cattoanna</unclear> Fiele</line>
+    <line>Canto della Mazina</line>
+    <line>lawny</line>
+    <line>There was a little <del rend="strikethrough">mossy</del> islet</line>
+    <line>By anemone &amp; violet</line>
+    <line><del rend="strikethrough">Fair</del> Like mosaic paven &#8212;</line>
+    <line>And its roof was flowers &amp; leaves</line>
+    <line>Which the summers breath enweaves</line>
+    <line><del rend="strikethrough">Th</del> Where no <del rend="strikethrough">s</del> Sun, nor shower nor breeze</line>
+    <line>Through</line>
+    <line><del rend="strikethrough"><unclear>And</unclear></del> <del rend="strikethrough">On the branches</del></line>
+    <line>Pierce <del rend="strikethrough">Of</del> the pines &amp; tulip trees</line>
+    <line>a</line>
+    <line>Each gem<del rend="strikethrough">s</del> engraven</line>
+    <line>many an azure wave</line>
+    <line>Girt by <del rend="strikethrough"><unclear>thes</unclear></del></line>
+    <line>With which the clouds &amp; mountains</line>
+    <line><del rend="strikethrough"><unclear>A &amp;</unclear></del> <unclear>The</unclear> lakes blue chasm</line>
+    <line>pave</line>
+  </zone>
+</surface>

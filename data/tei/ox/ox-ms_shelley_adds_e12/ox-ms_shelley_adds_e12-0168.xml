@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0168" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="163">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0168.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough"><unclear>G</unclear></del> <unclear>His</unclear>       into</line>
+    <line>The dashing of the <del rend="strikethrough">stream</del> is as the voices</line>
+    <line>Of the lulled city murmuring in its dream</line>
+    <line>Even as a maiden slumbers &amp; rejoices</line>
+    <line>Less often</line>
+    <line>sound</line>
+    <line>And the heavy &amp; the heavy breath</line>
+    <line>And the solemn motions of passing death</line>
+    <line>The <del rend="strikethrough">sound was of steps of</del></line>
+    <line><del rend="strikethrough">A cold &amp; mortal smell there came</del></line>
+    <line>And a smell cold &amp; deathy &amp; danks</line>
+    <line>Came through the chinks of the</line>
+    <line>coffin plank</line>
+    <line>Broad</line>
+    <line><del rend="strikethrough">The</del> water lilies lay tremulously</line>
+    <line>starry</line>
+    <line><del rend="strikethrough">And</del> <del rend="strikethrough">the</del> starry river buds glimmered by</line>
+    <line><del rend="strikethrough">As</del> <del rend="strikethrough">And</del></line>
+    <line><del rend="strikethrough">Flowing</del> <del rend="strikethrough">shone</del>       moved <del rend="strikethrough">thro</del></line>
+    <line>And the soft stream moved</line>
+    <line>With a motion of splendour &amp; harmony</line>
+  </zone>
+</surface>

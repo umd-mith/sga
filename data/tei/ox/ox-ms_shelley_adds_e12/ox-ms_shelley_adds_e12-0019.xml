@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0019" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="17">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0019.jp2"/>
+  <zone type="main">
+    <line>day</line>
+    <line>Some say            <del rend="strikethrough">is</del></line>
+    <line><del rend="strikethrough">And other</del> when the night<del rend="strikethrough">s</del> <del rend="strikethrough">are</del> cl</line>
+    <line>ear</line>
+    <line>And the death dews sleep on the morass</line>
+    <line><del rend="strikethrough">And the dews of death sleep on the</del></line>
+    <line><del rend="strikethrough">Strange</del> Sweet whispers are heard by the traveller</line>
+    <line><del rend="strikethrough">grass</del></line>
+    <line>A <del rend="strikethrough"><del rend="strikethrough">sound</del> solemn</del> voice is heard <del rend="strikethrough">by the traveller</del></line>
+    <line>Which make<del rend="strikethrough">s</del> night day &#8212;</line>
+    <line><del rend="strikethrough">a silver</del>                     pass</line>
+    <line>And <del rend="strikethrough">a winged</del> shape like his early love doth</line>
+    <line><unclear>with</unclear></line>
+    <line><del rend="strikethrough">But</del> <del rend="strikethrough">Before his eyes</del> is borne by her wild &amp; glittering</line>
+    <line><del rend="strikethrough">But winged</del> <del rend="strikethrough">A Spirit</del>                             hair</line>
+    <line><del rend="strikethrough">eyes</del></line>
+    <line>Before <del rend="strikethrough"><del rend="strikethrough"><unclear>her</unclear></del> his</del> <del rend="strikethrough"><unclear>whirled</unclear> with</del></line>
+    <line>after <unclear>dream</unclear></line>
+    <line>And when he awakes on the fragrant grass</line>
+    <line>He finds night day</line>
+  </zone>
+</surface>

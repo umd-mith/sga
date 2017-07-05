@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0124" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="123">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0124.jp2"/>
+  <zone type="main">
+    <line>Not that the <del rend="strikethrough">author thinks</del> I think this</line>
+    <line>familiar style ought in any <unclear>case</unclear></line>
+    <line>to be applied to ideal poetry</line>
+    <line>or to such parts of familiar <unclear>poetry</unclear></line>
+    <line>as <unclear> ? </unclear> <unclear> ? </unclear> the ideal</line>
+    <line>The gentleness of rain was in the wind</line>
+    <line>And the dry thorns were driven <unclear>here</unclear> &amp; <unclear>there</unclear></line>
+  </zone>
+</surface>

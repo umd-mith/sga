@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0118" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="115">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0118.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">I kiss</del></line>
+    <line>fairest</line>
+    <line>Fear not my kisses <del rend="strikethrough">gentle</del> maiden</line>
+    <line>I fear thy kisses gentle maiden &#8212;</line>
+    <line>Thou needest not fear mine</line>
+    <line>spirit</line>
+    <line>My spirit is too deeply laden</line>
+    <line>Ever to burthen thine;</line>
+    <line>How wouldst thou walk beneath the load</line>
+    <line>Which I bear smiling. the load</line>
+  </zone>
+</surface>

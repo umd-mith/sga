@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0074" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="72">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0074.jp2"/>
+  <zone type="main">
+    <line><unclear>B</unclear></line>
+    <line>Alas <unclear>O</unclear> that I were not alone</line>
+    <line>Alone - for I have nor</line>
+    <line><unclear></unclear> <del rend="strikethrough">Nor <unclear>I</unclear> have neither</del> <del rend="strikethrough">hope</del> nor health</line>
+    <line>Nor peace within, nor calm around</line>
+    <line><del rend="strikethrough">within</del></line>
+    <line>Nor that <del rend="strikethrough"><unclear>  ?   </unclear></del> surpassing wealth</line>
+    <line>content</line>
+    <line>The sage in meditation <unclear>found</unclear></line>
+    <line><del rend="strikethrough">Who lived</del> <del rend="strikethrough">alone</del> <del rend="strikethrough">&amp; <unclear>wept</unclear> <unclear>not</unclear></del> <del rend="strikethrough"><unclear> ?  </unclear></del></line>
+    <line><del rend="strikethrough"><unclear>called</unclear></del></line>
+    <line>&amp; called it pleasure</line>
+    <line><del rend="strikethrough">Nor fame, nor power nor love nor leisure</del></line>
+    <line>glory</line>
+    <line>And walked, with inward <del rend="strikethrough">Empire</del> <unclear>crowned</unclear></line>
+    <line>Nor fame nor power nor love nor leisure;</line>
+    <line>Others I see whom these surround</line>
+    <line>They <del rend="strikethrough">smiling</del> <del rend="strikethrough">live</del>, live<del rend="strikethrough">s</del> &amp; call life pleasure</line>
+    <line>To me <unclear>the</unclear> cup has been dealt with another</line>
+    <line>measure</line>
+  </zone>
+</surface>

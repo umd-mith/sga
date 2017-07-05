@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0237" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="231">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0237.jp2"/>
+  <zone type="main">
+    <line>Even then beneath the weltering waters bear</line>
+    <line>The staggering ship &#8212; they suddenly appear</line>
+    <line>With</line>
+    <line>On yellow wings rushing athwart the sky</line>
+    <line>And lull the blasts in<del rend="strikethrough">to</del> mute tranquillity</line>
+    <line>on</line>
+    <line>And strew the waves <del rend="strikethrough">on</del> the white Oceans</line>
+    <line><unclear>   </unclear> <del rend="strikethrough">bed</del> &#8212;</line>
+    <line>1 2 the</line>
+    <line>Fair omen of the voyage, <del rend="strikethrough">th</del> from toil &amp; dread</line>
+    <line>The sailors rest, rejoicing in the sight,</line>
+    <line>And plough the quiet sea in safe delight.</line>
+  </zone>
+</surface>

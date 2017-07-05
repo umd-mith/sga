@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0015" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="13">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0015.jp2"/>
+  <zone type="main">
+    <line>The good die first &#8212;-</line>
+    <line><del rend="strikethrough">Two genii stood before me in a dream</del></line>
+    <line>The Two Spirits &#8212; an Allegory</line>
+    <line><unclear>Ia o</unclear></line>
+    <line><del rend="strikethrough">Wert thou not the shades of even</del></line>
+    <line>1st Spirit</line>
+    <line><del rend="strikethrough"><unclear>From</unclear></del></line>
+    <line>O Thou who plumed with strong desire</line>
+    <line>Would    <del rend="strikethrough">oer</del> above</line>
+    <line>Float<del rend="strikethrough">est</del> above the Earth &#8212; beware!</line>
+    <line><del rend="strikethrough">A</del> shadow tracks thy flight of</line>
+    <line>fire</line>
+    <line>Night is coming</line>
+    <line>Bright</line>
+    <line><del rend="strikethrough">Wide</del> are the regions of the <del rend="strikethrough">aer</del> air</line>
+    <line>th<unclear></unclear>er when winds &amp; beams</line>
+    <line><del rend="strikethrough"><unclear>rush</unclear> <unclear>moan</unclear></del></line>
+    <line><del rend="strikethrough">And <unclear>Beware</unclear> that when winds</del></line>
+    <line><del rend="strikethrough">Delight</del> D<unclear>  </unclear> soft to it</line>
+    <line>Did gently</line>
+    <line>It <unclear>were</unclear> delight to wander there</line>
+    <line>Night is coming!</line>
+    <line><del rend="strikethrough">O what</del> <del rend="strikethrough">What I have I to do with</del></line>
+    <line><del rend="strikethrough">O <del rend="strikethrough">O</del> what storm &amp; darkness what <unclear>avenge</unclear></del></line>
+    <line><del rend="strikethrough">There are the golden</del></line>
+  </zone>
+</surface>

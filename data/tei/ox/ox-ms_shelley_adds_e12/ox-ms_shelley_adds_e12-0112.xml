@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0112" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="109">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0112.jp2"/>
+  <zone type="main">
+    <line><unclear>Mus </unclear> m</line>
+    <line>I am</line>
+    <line>I have drunken deep of the sweet sweet</line>
+    <line>sound</line>
+    <line>Like <del rend="strikethrough">l</del> a spirit of love it folds</line>
+    <line>pant</line>
+    <line>I <del rend="strikethrough">thirst</del> for the music which is divin</line>
+    <line>heart in its     is</line>
+    <line>My <del rend="strikethrough">hart</del> is <del rend="strikethrough">athirst</del> <del rend="strikethrough">like</del> a dying flower;</line>
+    <line>Pour forth the sound like an enchanted wine</line>
+    <line><del rend="strikethrough">Rain down</del>         in</line>
+    <line>Loosen the notes <del rend="strikethrough">like</del> a silver shower</line>
+    <line><del rend="strikethrough">Let the</del></line>
+    <line>Like a <unclear>herbless</unclear> plain till the gentle</line>
+    <line>rain</line>
+    <line>I gasp, I faint, till they <del rend="strikethrough">rise</del> again</line>
+    <line>wake</line>
+  </zone>
+</surface>

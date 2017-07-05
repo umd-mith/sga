@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0127" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="124">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0127.jp2"/>
+  <zone type="main">
+    <line>To <unclear>sway</unclear> <del rend="strikethrough">p</del> Passion &#8212; Reason</line>
+    <line>I</line>
+    <line>Neither among the living &amp; the dead</line>
+    <line>Many   an</line>
+    <line><del rend="strikethrough">Who<unclear>m</unclear> shall be</del> <del rend="strikethrough">find</del> found like unto Ethelred</line>
+    <line>Like we may say in <del rend="strikethrough">v</del> Voice &amp; lineaments</line>
+    <line><del rend="strikethrough">And outward</del> g</line>
+    <line>And</line>
+    <line>a</line>
+    <line>When a friend deserts</line>
+    <line><unclear>   </unclear></line>
+    <line>&amp;</line>
+  </zone>
+</surface>

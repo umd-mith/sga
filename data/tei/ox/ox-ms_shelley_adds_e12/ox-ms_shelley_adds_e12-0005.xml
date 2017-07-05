@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0005" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="3">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0005.jp2"/>
+  <zone type="main">
+    <line>Thy gentle <del rend="strikethrough">face</del> voice, Emilla dear</line>
+    <line>f</line>
+    <line>At night</line>
+    <line><del rend="strikethrough">No <unclear>dream</unclear></del> seems hanging over mine</line>
+    <line>trembling</line>
+    <line>I feel thy <del rend="strikethrough">quivering</del> lips &#8212; I hear</line>
+    <line>The murmurs of thy voice <unclear>divine</unclear></line>
+    <line>O God why come<unclear>s</unclear> the morning blame</line>
+    <line><unclear>truth</unclear></line>
+    <line>To quench in <del rend="strikethrough">day</del> this <unclear>dream</unclear></line>
+    <line>&#8212;&#8212;&#8212;&#8212; of <unclear>peace</unclear></line>
+    <line>From <unclear>which</unclear> the joys my being <unclear>drank</unclear></line>
+    <line>Yet quiver thro my burning f<unclear>ace</unclear></line>
+  </zone>
+</surface>

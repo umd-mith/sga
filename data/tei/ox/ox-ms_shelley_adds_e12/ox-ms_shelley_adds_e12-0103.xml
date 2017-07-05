@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0103" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="101">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0103.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">some remain, some</del> . . .</line>
+    <line><del rend="strikethrough"><unclear>Let</unclear></del>    2</line>
+    <line>Break the dance, &amp; scatter the song</line>
+    <line>Let some <del rend="strikethrough">remain</del> depart &amp; some remain</line>
+    <line>2 <unclear>Dsap</unclear></line>
+    <line><del rend="strikethrough">haste</del></line>
+    <line><del rend="strikethrough">We with the Spirits will      along</del></line>
+    <line><del rend="strikethrough"><unclear>Us</unclear> the desart will</del></line>
+    <line>2        <unclear>un</unclear></line>
+    <line><del rend="strikethrough">We will encompass</del> the</line>
+    <line><del rend="strikethrough">We will</del> beyond Heavens 2</line>
+    <line>Genii</line>
+    <line><del rend="strikethrough">In</del> We <del rend="strikethrough">with the Spirits</del> are driven along</line>
+    <line>Us the enchantments of Earth retain</line>
+    <line><del rend="strikethrough">We will</del></line>
+    <line>fierce</line>
+    <line><del rend="strikethrough">Ceaseless</del> &amp; rapid, &amp; <del rend="strikethrough">wild</del> &amp; free</line>
+    <line>With the spirits that build a new</line>
+    <line>earth &amp; sea</line>
+    <line>one</line>
+    <line>And a Heaven, where till now it could</line>
+    <line>never</line>
+    <line>be &#8212;</line>
+    <line>s.</line>
+    <line>Solemn &amp; slow &amp; serene &amp; bright</line>
+    <line>Leading the day &amp; outspeeding the night</line>
+    <line>With the Powers of a world of perfect light &#8212;</line>
+  </zone>
+</surface>

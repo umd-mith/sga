@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0238" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="232">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0238.jp2"/>
+  <zone type="main">
+    <line>Athene        Athenae</line>
+    <line>Ye wild eyed Muses sing the twins of Jove</line>
+    <line>the fair ancled       moxed</line>
+    <line>Whom           Leda, <del rend="strikethrough">having mingled</del> <del rend="strikethrough">in sweet</del> love</line>
+    <line>With mighty Saturns heaven-obscuring Child</line>
+    <line>On Taygetus, that lofty mountain wild,</line>
+    <line>Brought forth in joy, mild Pollux void</line>
+    <line>of blame</line>
+    <line>And steed subduing Castor, heirs of fame.</line>
+    <line>These are the powers who earthborn mortals</line>
+    <line>save</line>
+    <line>And ships, whose flight is swift along</line>
+    <line>the <del rend="strikethrough">way</del> wave</line>
+    <line>When wintry tempests in the savage sea</line>
+    <line>Are raging, &amp; the sailors tremblingly</line>
+    <line>Call on the twins of Jove with prayer &amp;</line>
+    <line>vow</line>
+    <line>Gathered in fear upon the lofty prow</line>
+    <line>with</line>
+    <line>And sacrifice <del rend="strikethrough">of</del> Snow white lambs,&#8212;</line>
+    <line>the</line>
+    <line>wind</line>
+    <line>And the huge billow bursting close behind</line>
+  </zone>
+</surface>

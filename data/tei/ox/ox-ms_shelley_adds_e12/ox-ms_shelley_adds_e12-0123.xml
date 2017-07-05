@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0123" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="120">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0123.jp2"/>
+  <zone type="main">
+    <line>smile</line>
+    <line><unclear>of</unclear></line>
+    <line>&#8212;- Let us <del rend="strikethrough">laugh</del>, &amp; make our mirth</line>
+    <line><del rend="strikethrough">Of</del></line>
+    <line>At the shadows of the Earth</line>
+    <line><del rend="strikethrough">If has the laughter though it be</del></line>
+    <line><unclear>As</unclear> <del rend="strikethrough"><unclear>m</unclear></del></line>
+    <line>Oers mad dogs howl at moonlight</line>
+    <line><del rend="strikethrough">Even as madmen laugh at clouds</del></line>
+    <line>spectres wrapt</line>
+    <line>Which <del rend="strikethrough">pass</del> like <del rend="strikethrough">corpses</del> in their</line>
+    <line>shrouds</line>
+    <line><del rend="strikethrough">Athwart Heaven in</del> multitudes</line>
+    <line>Pass oer Heaven</line>
+  </zone>
+</surface>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0120" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="117">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0120.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">There is a spirit, be it God, or Love</del></line>
+    <line>There is a Spirit, whose inconstant</line>
+    <line>, home</line>
+    <line>Is in the Spirit of inconstant Man . . . .</line>
+    <line>Sometimes over our Nation it will come</line>
+    <line>Like a soft cloud of <del rend="strikethrough">splendour</del></line>
+    <line>night, which</line>
+    <line>Polluting darkness <unclear>perilously</unclear> <unclear>given</unclear></line>
+    <line><del rend="strikethrough">grew</del> <unclear>feeling</unclear></line>
+    <line><del rend="strikethrough">Raining</del> a killing blight upon the <del rend="strikethrough">Earth</del></line>
+    <line>And bloody snow <del rend="strikethrough">into the</del>       rivers</line>
+    <line>which through the</line>
+    <line>Is melted from the mountains &#8212;</line>
+  </zone>
+</surface>

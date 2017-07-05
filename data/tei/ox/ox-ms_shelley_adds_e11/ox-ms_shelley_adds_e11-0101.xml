@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0101" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="99">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0101.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">And thou who</del></line>
+    <line>And <unclear>o</unclear> thou</line>
+    <line><del rend="strikethrough">Is it you</del>, Laura, sitting at my side?</line>
+    <line><del rend="strikethrough"><unclear>O</unclear> thou who sittest silent at</del> <unclear>side</unclear></line>
+    <line><unclear>Pale</unclear> <unclear>are</unclear> <unclear>you</unclear></line>
+    <line><del rend="strikethrough">Thou pale,</del> <del rend="strikethrough">as if</del> deaths dedicated bride</line>
+    <line>I pale as <del rend="strikethrough">if bid</del> <del rend="strikethrough">to the festival</del></line>
+    <line><del rend="strikethrough">as</del> as if <del rend="strikethrough"><unclear>bid</unclear> <unclear>to</unclear> your the festival</del></line>
+    <line>bid to <del rend="strikethrough">the</del> wedding ball</line>
+    <line>When friends &amp; foes will meet as one &amp; all</line>
+    <line>To <del rend="strikethrough">see</del> the ghastly paramour for whom</line>
+    <line>greet <unclear>have</unclear></line>
+    <line><del rend="strikethrough">Thou hast</del> deserted me &amp; made the <unclear>tomb</unclear></line>
+    <line><unclear>You</unclear>                               thy</line>
+    <line><del rend="strikethrough"><unclear>Thy</unclear></del> bridal bed, whilst I, beside <del rend="strikethrough">your</del> feet</line>
+    <line>Shall</line>
+    <line><del rend="strikethrough"><unclear>Will</unclear></del> sleep, &amp; watch <del rend="strikethrough">thee</del> from my winding <unclear>sheet</unclear></line>
+    <line>you</line>
+    <line><unclear>free</unclear></line>
+    <line>The heart <unclear>still</unclear> <unclear>leaves</unclear> <unclear>the</unclear> <unclear>understanding</unclear></line>
+    <line>Or it would sink <unclear>in</unclear> <unclear>the</unclear> <unclear>keen</unclear> <unclear>agony</unclear></line>
+  </zone>
+</surface>

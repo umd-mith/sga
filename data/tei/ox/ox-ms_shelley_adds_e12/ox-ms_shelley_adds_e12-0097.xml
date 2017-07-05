@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0097" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="95">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0097.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">And our voices are</del></line>
+    <line><del rend="strikethrough">Like a            star</del></line>
+    <line><del rend="strikethrough">In</del>        accents</line>
+    <line>are</line>
+    <line>Whose <del rend="strikethrough">voices</del>     beams of a</line>
+    <line>the    <del rend="strikethrough">sphered</del></line>
+    <line>Like <del rend="strikethrough">a</del> skies</line>
+    <line>Whose <unclear>beaming</unclear> <del rend="strikethrough"><unclear>seems</unclear></del> <unclear>in</unclear> clear music</line>
+    <line>That <del rend="strikethrough">sound as <unclear>billows</unclear> <unclear>  </unclear></del> beams afar</line>
+    <line>Which <unclear>would be</unclear> <del rend="strikethrough">was</del> like <del rend="strikethrough">clear</del> music is</line>
+    <line>Like the <unclear>lullaby</unclear></line>
+    <line>Mixed with the sigh</line>
+    <line>Of winds that <unclear>die</unclear></line>
+    <line>In the bosom of their own harmony</line>
+    <line><unclear>But</unclear> now from <del rend="strikethrough">the</del> bright</line>
+  </zone>
+</surface>

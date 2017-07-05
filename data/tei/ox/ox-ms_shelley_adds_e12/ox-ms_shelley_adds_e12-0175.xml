@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0175" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="170">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0175.jp2"/>
+  <zone type="main">
+    <line>Gather from the uttermost</line>
+    <line>Ends of our nation</line>
+    <line><del rend="strikethrough">As <del rend="strikethrough">On</del> The While</del></line>
+    <line>O thou power, the swiftest</line>
+    <line>Of the powers of feeling &#8212;</line>
+    <line><del rend="strikethrough">Thou whose</del> Who, in    upliftest</line>
+    <line>The cavern</line>
+    <line>As if a noonday ghost</line>
+    <line><del rend="strikethrough">nation</del></line>
+    <line>Walked <del rend="strikethrough">thro</del> the <del rend="strikethrough">glo</del></line>
+    <line>city</line>
+    <line><del rend="strikethrough">It</del> The <del rend="strikethrough">ri</del> running stream was <del rend="strikethrough">hidden</del> dank</line>
+    <line>By <unclear>white</unclear> made <del rend="strikethrough"><unclear>track</unclear></del> thick</line>
+    <line><del rend="strikethrough">And <unclear>rotten</unclear></del> weeds    a leprous</line>
+    <line><del rend="strikethrough">And the river was choked up</del></line>
+    <line>rank</line>
+    <line><unclear>free</unclear>                <del rend="strikethrough"><unclear>slough</unclear></del></line>
+    <line>The <del rend="strikethrough">plashy</del> stream with a <unclear>leprous</unclear> <del rend="strikethrough">scum</del></line>
+    <line>snakes</line>
+    <line><del rend="strikethrough">Of spawn and weeds <unclear>across</unclear></del></line>
+    <line>flags huge</line>
+    <line>And at its <del rend="strikethrough">outlet</del> <del rend="strikethrough">huge weeds like</del> stakes</line>
+    <line>Dammed it up with roots knotted <del rend="strikethrough">like</del></line>
+  </zone>
+</surface>

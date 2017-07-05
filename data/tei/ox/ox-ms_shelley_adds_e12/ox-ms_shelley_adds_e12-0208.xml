@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0208" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="202b">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0208.jp2"/>
+  <zone type="main">
+    <line>you</line>
+    <line>O Mary dear that <del rend="strikethrough">thou</del> <del rend="strikethrough">wert</del> were here</line>
+    <line>With your brown eyes bright &amp; clear</line>
+    <line>And your sweet voice, like a bird</line>
+    <line>Singing love to its lorn mate</line>
+    <line>In the ivy bower disconsolate &#8212;</line>
+    <line>Voice the sweetest ever heard.</line>
+    <line>And you <unclear>were</unclear> <unclear>mine</unclear></line>
+    <line><unclear>Than</unclear> the red evening sky</line>
+    <line>Of this azure Italy</line>
+    <line>Mary dear come to me soon</line>
+    <line>I am not well whilst thou art far</line>
+    <line>As sunset to the sphered moon</line>
+    <line>twilight</line>
+    <line>As <del rend="strikethrough">evening</del> to the western star</line>
+    <line>Thou beloved art to me.</line>
+    <line>O Mary dear that you were here</line>
+    <line>The Castles echo whispers "here"</line>
+  </zone>
+</surface>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0161" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="156">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0161.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">Consider if you</del></line>
+    <line><del rend="strikethrough">For <del rend="strikethrough">o</del> if reads a bou reads a book</del></line>
+    <line>this     the</line>
+    <line>If you enjoy <del rend="strikethrough">some</del>     you look around</line>
+    <line>For <del rend="strikethrough">whe</del> one <del rend="strikethrough">to</del> w         though seldom found</line>
+    <line>And finding not your joy is turned to grief</line>
+    <line>you</line>
+    <line>And then one turns around and seeks relief</line>
+    <line>For fancying Nature has a soul, &amp; that she</line>
+    <line>Feels with her children, everlastingly</line>
+    <line>But this being imperfect</line>
+  </zone>
+</surface>

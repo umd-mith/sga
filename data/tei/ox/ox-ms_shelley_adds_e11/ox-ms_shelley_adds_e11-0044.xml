@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5428" lry="7238"
+  xml:id="ox-ms_shelley_adds_e11-0044" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="42">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0044.jp2"/>
+  <zone type="main">
+    <line><unclear>mangled</unclear></line>
+    <line>none trembled    <unclear>awe</unclear></line>
+    <line>None <unclear>fawned</unclear>, &#8212; none with eag<unclear>er</unclear> <del rend="strikethrough">fear</del></line>
+    <line>Gazed on anothers eye of cold command</line>
+  </zone>
+</surface>

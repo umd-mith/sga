@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5398" lry="7086"
+  xml:id="ox-ms_shelley_adds_e11-0013" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="11">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0013.jp2"/>
+  <zone type="main">
+    <line>Heraclids &#8212; of whom Agron was</line>
+    <line>the first &amp; Kandaules the last reigned</line>
+    <line>over Lydia 505 years. 22 genera<del rend="strikethrough">tions</del></line>
+    <line>-tions of men &#8212;-</line>
+    <line>The story of <unclear>K</unclear>andaules Gyges &amp; his</line>
+    <line>wife.</line>
+    <line>Gyges sends gifts to Delphos &#8212; the first</line>
+    <line>who <unclear>did</unclear> so after Midas of Phrygia. <unclear>Ardys</unclear></line>
+    <line>The barbariain</line>
+    <line>Reigns <unclear>42</unclear> years.</line>
+  </zone>
+</surface>

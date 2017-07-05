@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0115" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="113">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0115.jp2"/>
+  <zone type="main">
+    <line>Voice</line>
+    <line>Follow, follow</line>
+    <line>Panthea</line>
+    <line>crags</line>
+    <line>The <del rend="strikethrough">rocks</del><unclear>;</unclear> this bright spring morning</line>
+    <line>they             mock our voices</line>
+    <line>As if they <del rend="strikethrough">lived</del> were spirit-tongued       being</line>
+    <line>Asia          it is some <del rend="strikethrough"><unclear>spirit</unclear></del></line>
+    <line><del rend="strikethrough">Oh no</del> list list,     <del rend="strikethrough">I <unclear>pray</unclear></del></line>
+    <line>clear</line>
+    <line>Around the crags, &#8212; what <del rend="strikethrough">clear</del> small sound &#8212;</line>
+    <line>Voice                      <unclear>o</unclear> list</line>
+    <line>O follow follow</line>
+    <line>our</line>
+    <line>As <del rend="strikethrough">the</del> voice recedeth</line>
+    <line>Thro the caverns hollow</line>
+    <line><unclear>O</unclear></line>
+    <line>Where the forest spreadeth</line>
+    <line><del rend="strikethrough"><unclear>the</unclear></del> <unclear>follow</unclear></line>
+    <line><del rend="strikethrough">Where the woods <unclear>are</unclear> <unclear>spreadeth</unclear></del></line>
+    <line>Thro</line>
+    <line><del rend="strikethrough">Under caverns hollow</del></line>
+    <line><del rend="strikethrough">As the voice recedeth</del></line>
+    <line><unclear>Th</unclear> <del rend="strikethrough">Child of Ocean</del></line>
+  </zone>
+</surface>

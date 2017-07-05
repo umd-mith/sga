@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0095" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="93">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0095.jp2"/>
+  <zone type="main">
+    <line>S. chorus</line>
+    <line>Leave Man my latest born,</line>
+    <line><del rend="strikethrough">From mind to mind</del></line>
+    <line><del rend="strikethrough">Where mind to</del></line>
+    <line><del rend="strikethrough">Where dis</del> &#8212;</line>
+    <line><del rend="strikethrough">We come the bowers</del></line>
+    <line><del rend="strikethrough">Where</del> P</line>
+    <line><del rend="strikethrough">From the source</del></line>
+    <line><del rend="strikethrough">many <unclear>bowers</unclear></del></line>
+    <line><del rend="strikethrough">Where mind with mind</del></line>
+    <line>that</line>
+    <line><del rend="strikethrough">A</del> From     deep Abyss</line>
+    <line>Of wonder &amp; bliss</line>
+    <line>caverns</line>
+    <line>Whose <del rend="strikethrough">chambers</del> are chrystal palaces</line>
+    <line><del rend="strikethrough">From the shade of bowers</del></line>
+    <line><del rend="strikethrough">Of Paradise</del> flowers &#8212;</line>
+    <line>From <del rend="strikethrough">the</del> those skiey towers</line>
+    <line>Where Thoughts crowned Powers</line>
+    <line>&amp;</line>
+    <line>Are watching yr. dance yr. happy hours</line>
+  </zone>
+</surface>

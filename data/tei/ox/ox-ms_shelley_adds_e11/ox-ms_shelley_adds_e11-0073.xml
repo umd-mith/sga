@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5398" lry="7086"
+  xml:id="ox-ms_shelley_adds_e11-0073" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="71">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0073.jp2"/>
+  <zone type="main">
+    <line>discord now or sorrow,</line>
+    <line>And who feels <del rend="strikethrough">pain</del></line>
+    <line>Or loneliness<unclear>,</unclear> <del rend="strikethrough"><unclear>or</unclear> love now is God</del></line>
+    <line><unclear>Or</unclear>             ; love is God to day</line>
+    <line>And these <del rend="strikethrough"><unclear>dark</unclear></del> slaves of dim Tomorrow</line>
+    <line>its</line>
+    <line><del rend="strikethrough">Follow <unclear>upon</unclear> <unclear>path</unclear> where far away</del></line>
+    <line><del rend="strikethrough">It stalks</del></line>
+    <line><unclear>Track</unclear> that great shade which far</line>
+    <line>away</line>
+    <line>Beckons, betrayed &amp; to betray</line>
+    <line>Love</line>
+  </zone>
+</surface>

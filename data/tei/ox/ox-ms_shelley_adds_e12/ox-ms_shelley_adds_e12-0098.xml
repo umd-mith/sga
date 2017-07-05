@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0098" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="96">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e12-0098.jp2"/>
+  <zone type="main">
+    <line>Mr Boster</line>
+    <line>Sopra il Casino</line>
+    <line>dei Nobile</line>
+    <line>primo piano</line>
+    <line>Sts. Trinita</line>
+    <line>Then weave the web of the mystic measure</line>
+    <line>From the ends of the Earth &amp; the depths</line>
+    <line>of sky</line>
+    <line>Come swift Spirits of might &amp; of Pleasure</line>
+    <line>As <del rend="strikethrough">Like</del> <del rend="strikethrough">T</del> the waves of a thousand</line>
+    <line>streams</line>
+    <line><del rend="strikethrough">To the Ocean</del></line>
+    <line>rush by</line>
+    <line><del rend="strikethrough">With their own light &amp; melody</del></line>
+    <line>To an Ocean of light &amp; <del rend="strikethrough">Music</del></line>
+    <line>harmony,</line>
+  </zone>
+</surface>

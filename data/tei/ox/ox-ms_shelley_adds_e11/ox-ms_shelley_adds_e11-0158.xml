@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0158" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="155">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ox-ms_shelley_adds_e11-0158.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">Silent, I see</del></line>
+    <line><unclear>It</unclear> is</line>
+    <line>Silence; oh well are Death &amp; Sleep &amp; <unclear>thou</unclear></line>
+    <line><del rend="strikethrough">three <unclear>g</unclear></del> gloomy winged</line>
+    <line>Three brethren named - the guardians</line>
+    <line>Of one abyss where <del rend="strikethrough">hope &amp; life</del></line>
+    <line>life &amp; truth &amp; joy</line>
+    <line>spirit</line>
+    <line>Are swallowed up &#8212; <del rend="strikethrough">pity fear <unclear>e</unclear> me</del> <unclear>o</unclear> pity <unclear>me</unclear></line>
+    <line><unclear>Yet</unclear> spare me, <del rend="strikethrough">ye</del></line>
+    <line>Until the sounds I hear become my soul</line>
+    <line>And it has left these faint &amp; weary limbs</line>
+    <line><del rend="strikethrough">To dwell <unclear>s</unclear> where thy</del></line>
+    <line><del rend="strikethrough">To follow on the <unclear>w</unclear></del></line>
+    <line>To track, along the lapses of the air</line>
+    <line>This wandering melody, until it rest</line>
+    <line>Among lone mountains in some</line>
+  </zone>
+</surface>
