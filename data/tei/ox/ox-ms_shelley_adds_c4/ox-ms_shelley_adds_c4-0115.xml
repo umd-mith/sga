@@ -7,26 +7,76 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="54r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0115.jp2"/>
   <zone type="main">
-    <line>The Triumph of Life</line>
-    <line>Swift as a Spirit hastening to <del rend="strikethrough">his</del> its <del rend="strikethrough">dai</del> task</line>
-    <line>sprang</line>
-    <line>Of glory &amp; of good, the Sun <del rend="strikethrough">came</del> forth</line>
+    <line rend="indent3">The Triumph of Life</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+    <space quantity="1" unit="line"/>
+
+    <line>Swift as a Spirit hastening to
+      <mod>
+        <del rend="strikethrough">his</del>
+        <add>its</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">dai</del>
+         <add> task</add>
+       </mod>
+     </line>
+
+    <line>Of glory &amp; of good, the Sun
+      <mod>
+        <del rend="strikethrough">came</del>
+        <add place="superlinear">sprang</add>
+      </mod>
+       forth</line>
     <line>Rejoicing in his splendour; &amp; the mask</line>
     <line>Of darkness fell from the awakened earth;</line>
     <line>The smokeless altars of the mountain snows</line>
-    <line>above</line>
-    <line>Flamed <del rend="strikethrough">amid</del> crimson clouds, and <unclear>at</unclear> the birth</line>
+
+    <line>Flamed
+      <mod>
+        <del rend="strikethrough">amid</del>
+        <add place="superlinear">above</add>
+      </mod>
+       crimson clouds, and <unclear>at</unclear> the birth</line>
     <line>Of light the Ocean's orison arose</line>
-    <line>birds of day</line>
-    <line><del rend="strikethrough">Mixed</del> Amid the music of <del rend="strikethrough">the morning birds</del>.</line>
-    <line>All      which     which</line>
-    <line><del rend="strikethrough">The</del> flowers in field or forest <del rend="strikethrough">did</del> unclose</line>
-    <line><del rend="strikethrough">beneath the breath</del> of <unclear>day</unclear> kiss</line>
-    <line>tepid</line>
-    <line>in the to the days the  breeze of dawn</line>
-    <line><del rend="strikethrough">swing <unclear>below</unclear></del></line>
-    <line>to the <unclear>mists</unclear> in the clear ray</line>
-    <line>Their <del rend="strikethrough"><unclear>dewy</unclear></del> lids, <del rend="strikethrough">and in the air of dawn day</del></line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Mixed</del>
+        <add>Amid the music of</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">the morning birds.</del>
+       <add place="superlinear">birds of day</add>
+     </mod>
+   </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="superlinear">All</add>
+      </mod> flowers in
+      <add place="superlinear">all</add>
+       field or forest
+       <mod>
+         <del rend="strikethrough">did</del>
+         <add place="superlinear">which</add>
+       </mod>
+        unclose</line>
+
+    <line>Their
+      <del rend="strikethrough"><unclear>dewy</unclear></del> lids,
+      <mod>
+        <del rend="strikethrough">and in the air of dawn day</del>
+      <add place="sublinear">
+    <del rend="strikethrough">to the young sapphire air</del>
+      </add>
+      <add place="superlinear">to the mists in the clear ray</add>
+
+    </mod>
+
+  </line>
     <line><del rend="strikethrough">to the young sapphire air</del></line>
     <line>Veiled lids in dew <unclear>north</unclear></line>
     <line><del rend="strikethrough">Swinging their painted censers</del>            element</line>
