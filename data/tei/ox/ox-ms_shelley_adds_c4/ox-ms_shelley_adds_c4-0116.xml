@@ -7,41 +7,173 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="54v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0116.jp2"/>
   <zone type="main">
-    <line>to   smiling <del rend="strikethrough">sky</del></line>
-    <line>Thier odorous sighs up the <del rend="strikethrough">laughing</del> <del rend="strikethrough">air</del>. &#8212;-</line>
-    <line>And <del rend="strikethrough">slowly rose</del> sea isle &amp; <del rend="strikethrough">continent</del></line>
+
+    <line>Thier odorous sighs up
+      <add place="superlinear">to</add>
+       the
+       <mod>
+         <del rend="strikethrough">laughing</del> <del rend="strikethrough">air.</del>
+         <add place="superlinear">smiling <del rend="strikethrough">sky</del></add>
+       </mod>
+        &#8212;
+      </line>
+    <line>And <del rend="strikethrough">slowly rose sea isle &amp; continent</del></line>
     <line>And in succession slow, did Continent</line>
-    <line><del rend="strikethrough"><unclear>Circ</unclear></del> <del rend="strikethrough"><unclear>Interfluo</unclear></del></line>
-    <line>Ocean <del rend="strikethrough">island &amp; cave &amp;</del> the</line>
-    <line>Circumfluous isle &amp; caves               within</line>
-    <line>And <del rend="strikethrough">island,</del>   <del rend="strikethrough">and all things</del> that <del rend="strikethrough">in</del> them wear</line>
-    <line><unclear>The</unclear> <del rend="strikethrough">A</del></line>
-    <line><del rend="strikethrough">The</del> form and <del rend="strikethrough">body of</del></line>
-    <line>character of mortal mould</line>
-    <line>Rise as the<del rend="strikethrough">ir</del> Sun their father rose, to bear</line>
+    <line>And
+      <mod>
+        <del rend="strikethrough">island,</del>   <del rend="strikethrough">and all things</del>
+        <add place="superlinear">
+          <del rend="strikethrough"><unclear>Cire Interfluo</unclear></del>
+          <mod>
+            <add place="sublinear">Ocean <del rend="strikethrough">island &amp; cave &amp; the</del>
+          <add place="superlinear">Circumfluous isle &amp; caves</add>
+        </add>
+      </mod>
+        </add>
+      </mod>
+      that
+      <mod>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear">within</add>
+      </mod>
+      them wear
+    </line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+      <mod>
+        <add place="superlinear">
+          <del rend="strikethrough">A</del>
+        </add>
+        <add place="superlinear"><unclear>The</unclear></add>
+      </mod>
+      </mod>
+       form and
+       <mod>
+         <del rend="strikethrough">body of</del>
+       <add place="sublinear">character of mortal mould</add>
+     </mod>
+       </line>
+
+    <line>Rise as <del rend="strikethrough">their</del> Sun their father rose, to bear</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
     <line>Their portion in the toil which he of old,</line>
-    <line>Has <del rend="strikethrough">made</del>                  then imposed</line>
-    <line>Accepted <del rend="strikethrough">as his own</del>                them.</line>
-    <line>Took as his own, &amp; <del rend="strikethrough">doth impose</del> on <del rend="strikethrough">theirs.</del></line>
-    <line>I too <del rend="strikethrough">awake</del></line>
-    <line>But I, whom thoughts which must remain</line>
-    <line>untold,</line>
-    <line>as <del rend="strikethrough">wide</del> wakeful as</line>
-    <line><del rend="strikethrough">even</del></line>
-    <line>kept <del rend="strikethrough">awake</del> <del rend="strikethrough">even</del> as <del rend="strikethrough">the</del> stars which gem</line>
-    <line><del rend="strikethrough">Had kept awa</del></line>
-    <line><del rend="strikethrough">while</del></line>
-    <line>Had <del rend="strikethrough">made a watcher; ere</del> the <del rend="strikethrough">morning's gem</del>:</line>
+    <line>
+      <mod>
+         <del rend="strikethrough">Has made</del>
+       <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">Accepted as his own</del>
+         <add place="sublinear">Took as his own,&amp;
+           <mod>
+             <del rend="strikethrough">doth impose</del>
+           <add place="superlinear">then imposed</add>
+         </mod> on
+        <mod>
+           <del rend="strikethrough">theirs.</del>
+       <add place="superlinear">them.</add>
+     </mod></add>
+       </mod>
+       </add>
+     </mod>
+     </line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">I too awake</del>
+      <add place="sublinear">But I, whom thoughts which must remain
+      <add place="sublinear">untold</add>
+    </add>
+    </mod>
+   </line>
+
+<space quantity="1" unit="line"/>
+
+  <line>
+    <mod>
+      <del rend="strikethrough">Had ketp awa</del>
+      <add place="superlinear">kept <del rend="strikethrough">awake</del>
+    <add place="superlinear">as
+    <mod>
+        <del rend="strikethrough">wide</del>
+    <add>wakeful as</add>
+  </mod>
+</add>
+</add>
+</mod>
+<mod>
+  <del rend="strikethrough">even</del>
+  <add place="superlinear">
+    <del rend="strikethrough">even</del>
+  </add>
+</mod>
+ as <del rend="strikethrough">the</del> stars which gem
+    </line>
+
+
+    <line>Had <del rend="strikethrough">made a watcher; </del>
+    <mod>
+      <del rend="strikethrough">ere</del>
+      <add place="superlinear">
+        <del rend="strikethrough">while</del>
+      </add>
+    </mod>
+      <del rend="strikethrough">the morning's gem:</del></line>
     <line>were</line>
-    <line><del rend="strikethrough">Yet burned within the violet,</del> <del rend="strikethrough">me</del>    laid</line>
-    <line><del rend="strikethrough">had</del></line>
-    <line>The cone of night, now they <del rend="strikethrough">were</del> <del rend="strikethrough">fallen</del> asleep</line>
-    <line>Stretched my faint limbs beneath the <del rend="strikethrough">hoary</del> stem</line>
-    <line><del rend="strikethrough">mossy</del></line>
-    <line>Which              flings athwart</line>
-    <line><del rend="strikethrough">Of</del> an old <del rend="strikethrough">pine</del> chesnut <del rend="strikethrough">on</del> the <del rend="strikethrough">savage</del> steep</line>
-    <line>Of the</line>
-    <line><del rend="strikethrough">Of a</del> <del rend="strikethrough">a</del> <del rend="strikethrough">riven</del> Apennine &#8212; <del rend="strikethrough">above me rose</del></line>
-    <line>green</line>
+    <line><del rend="strikethrough">Yet burned within the violet,</del>
+    <del rend="strikethrough">me</del>
+  <add place="superlinear">were</add>
+      laid
+    </line>
+
+    <line>The cone of night, now they
+      <mod>
+        <del rend="strikethrough">were</del>
+        <add place="superlinear">
+          <del rend="strikethrough">had</del>
+        </add>
+      </mod>
+       <del rend="strikethrough">fallen</del> asleep
+     </line>
+    <line>Stretched my faint limbs beneath the
+      <mod>
+        <del rend="strikethrough">hoary</del>
+        <add place="sublinear">
+          <del rend="strikethrough">mossy</del>
+        </add>
+      </mod>
+       stem
+     </line>
+     <line rend="indent4">&#8212;</line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Of</del>
+        <add place="superlinear">Which</add>
+      </mod>
+       an old <del rend="strikethrough">pine</del> chesnut <del rend="strikethrough">on</del>
+       <add place="superlinear">flings athwart</add> the
+       <del rend="strikethrough">savage</del>
+        steep
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Of a</del>
+        <add place="superlinear">Of the</add>
+      </mod>
+       <del rend="strikethrough">a</del>
+       <mod>
+         <del rend="strikethrough">riven</del>
+         <add place="sublinear">green</add>
+       </mod>
+       Apennine &#8212;
+       <del rend="strikethrough">above me rose</del></line>
+
   </zone>
 </surface>
