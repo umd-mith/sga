@@ -66,25 +66,43 @@
         unclose</line>
 
     <line>Their
-      <del rend="strikethrough"><unclear>dewy</unclear></del> lids,
+      <mod>
+        <del rend="strikethrough"><unclear>dewy</unclear></del>
+          <add place="sublinear">Veiled lids <del rend="strikethrough">in</del> dew <unclear>north</unclear></add>
+        </mod>
+        lids,
       <mod>
         <del rend="strikethrough">and in the air of dawn day</del>
       <add place="sublinear">
     <del rend="strikethrough">to the young sapphire air</del>
       </add>
       <add place="superlinear">to the mists in the clear ray</add>
-
     </mod>
-
   </line>
-    <line><del rend="strikethrough">to the young sapphire air</del></line>
-    <line>Veiled lids in dew <unclear>north</unclear></line>
-    <line><del rend="strikethrough">Swinging their painted censers</del>            element</line>
-    <line>in</line>
-    <line>Swinging their <del rend="strikethrough">painted</del> censers <del rend="strikethrough">to</del> the <del rend="strikethrough">wind</del></line>
-    <line>touched by</line>
-    <line>With orient incense <del rend="strikethrough">touched by the new ray</del></line>
-    <line>kindled</line>
+
+    <line><del rend="strikethrough">Swinging their painted censers</del> </line>
+
+
+    <line>Swinging their <del rend="strikethrough">painted</del> censers
+    <mod>
+      <del rend="strikethrough">to</del>
+      <add place="superlinear">in</add>
+    </mod>
+     the
+     <mod>
+       <del rend="strikethrough">wind</del>
+     <add place="superlinear">element</add>
+   </mod>
+ </line>
+
+    <line>With orient incense
+      <mod>
+        <del rend="strikethrough">touched by the new ray</del>
+      <add place="sublinear">kindled</add>
+    <add place="superlinear">touched by</add>
+  </mod>
+</line>
+
     <line>Burned slow &amp; inconsumably &amp; sent</line>
   </zone>
 </surface>
