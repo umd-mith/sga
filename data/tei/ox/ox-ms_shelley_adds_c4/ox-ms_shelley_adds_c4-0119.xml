@@ -10,38 +10,137 @@
   <zone type="main">
     <line><del rend="strikethrough">Unfold their cups</del></line>
     <line>on high to gre<unclear>et</unclear></line>
-    <line>Lift <del rend="strikethrough">up</del>  <del rend="strikethrough">Extolled their</del> painted       swing <del rend="strikethrough">on</del> <del rend="strikethrough">hi<unclear>gh</unclear></del></line>
-    <line>Their <del rend="strikethrough">many-coloured</del> censers                  <del rend="strikethrough">in</del> <del rend="strikethrough">whi<unclear>ch</unclear></del></line>
-    <line>Lift up <del rend="strikethrough">their many-coloured cups,    which</del></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Lift up</del>
+      <add>
+          <del rend="strikethrough">Extolled their painted</del>
+          <add place="sublinear">Their <del rend="strikethrough">many coloured</del> censers</add>
+        </add>
+      </mod>
+    </line>
+    <line>
+      <del rend="strikethrough">Lift up their many coloured cups</del>
+    <mod>  <del rend="strikethrough">which</del>
+      <add place="superlinear">
+        <del rend="strikethrough">in which</del>
+        <add place="superlinear">swing
+            <del rend="strikethrough">on high</del>
+          </add>
+      <add place="superlinear">on high to greet</add>
+      </add>
+    </mod>
+  </line>
+
     <line>The presence of the God whose smile first ga<unclear>ve</unclear></line>
-    <line>The <del rend="strikethrough">Orient</del> <del rend="strikethrough">incense</del></line>
-    <line><del rend="strikethrough"><unclear>Whose</unclear> Orient incense</del></line>
-    <line>sw<unclear>eet</unclear></line>
-    <line>The light which kindled them . . . . their odours</line>
-    <line>And orient incense touched by that mild <del rend="strikethrough">beam</del></line>
-    <line>ray</line>
-    <line>slow &amp;</line>
-    <line>Burn<del rend="strikethrough">s</del> inconsumably <del rend="strikethrough">within</del> <del rend="strikethrough">,</del> <del rend="strikethrough">and meet</del></line>
-    <line>&amp; meet</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough"><unclear>Whose</unclear> Orient incense</del>
+      <add place="superlinear">The
+        <del rend="strikethrough">Orient incense</del>
+    </add>
+    </mod>
+  </line>
+    <line>The light which kindled them . . . . their odours
+    <add place="superlinear"><unclear>sweet</unclear></add>
+  </line>
+    <line>And orient incense touched by that mild
+      <mod>
+        <del rend="strikethrough">beam</del>
+      <add place="sublinear">ray</add>
+    </mod>
+
+    </line>
+
+
+    <line>Burn<del rend="strikethrough">s</del>
+      <add place="superlinear">slow &amp;</add>
+       inconsumably <del rend="strikethrough">within,</del>
+  <mod>
+     <del rend="strikethrough">and meet</del>
+   <add place="sublinear">&amp; meet</add>
+ </mod>
+</line>
+  <!--The following text is printed vertically in the MS-->
     <line><del rend="strikethrough">brig</del> keen</line>
-    <line>were</line>
-    <line>The stars <del rend="strikethrough">are</del> twinkling</line>
-    <line>fair                         <unclear>Jane</unclear></line>
-    <line>And the moon was rising among them <del rend="strikethrough">bright</del></line>
-    <line>was             <del rend="strikethrough"><unclear>Dear</unclear> Jane</del></line>
-    <line>The guitar <del rend="strikethrough">is</del> tinkling</line>
+
+    <line>The stars
+      <mod>
+        <del rend="strikethrough">are</del>
+        <add place="superlinear">were</add>
+      </mod>
+       twinkling
+     </line>
+
+    <line>And the
+      <add place="superlinear">fair</add>
+       moon was rising among them
+       <mod>
+         <del rend="strikethrough">bright</del>
+      <mod>
+         <add place="sublinear">
+      <del rend="strikethrough"><unclear>Dear Jane</unclear></del>
+      </add>
+      <add place="superlinear">Jane</add>
+    </mod>
+    </mod>
+  </line>
+
+    <line>The guitar
+      <mod>
+         <del rend="strikethrough">is</del>
+         <add place="superlinear">was</add>
+       </mod>
+        tinkling
+      </line>
     <line><del rend="strikethrough">And the voice to its notes is like clear</del></line>
-    <line>a                                    you</line>
-    <line>But <del rend="strikethrough">the</del> notes were not sweet till <del rend="strikethrough">she</del> sang them</line>
-    <line>Again</line>
-    <line>As <del rend="strikethrough">the moon showers</del></line>
-    <line><del rend="strikethrough">As moonlight</del></line>
-    <line>As the moon's soft splendour,</line>
-    <line>faint</line>
-    <line>O'er the cold <del rend="strikethrough">dim</del> cold starlight of Heaven</line>
-    <line>Is thrown</line>
-    <line>your</line>
-    <line>So <del rend="strikethrough">thy</del> voice sweet &amp; tender</line>
+
+    <line>But
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">a</add>
+      </mod>
+       notes were not sweet till
+       <mod>
+         <del rend="strikethrough">she</del>
+         <add place="superlinear">you</add>
+       </mod>
+        sang them
+      </line>
+
+    <line>As
+      <mod>
+        <del rend="strikethrough">the moon showers</del>
+      <add place="superlinear">Again</add>
+      <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">As moonlight</del>
+        <add place="sublinear">As the moon's soft spendour,</add>
+      </mod>
+      </add>
+  </mod>
+</line>
+
+
+    <line>O'er the cold
+      <mod>
+        <del rend="strikethrough">dim</del>
+        <add place="superlinear">faint</add>
+      </mod>
+       cold starlight of Heaven
+     </line>
+    <line rend="indent5">Is thrown</line>
+
+    <line>So
+      <mod>
+        <del rend="strikethrough">thy</del>
+        <add place="superlinear">your</add>
+      </mod>
+       voice sweet &amp; tender
+     </line>
+     <space quantity="2" unit="lines"/>
+     <!--The following lines are printed horizontal in the MS.-->
     <line>Concerts which no one</line>
     <line>Can <unclear>conceive</unclear></line>
   </zone>
