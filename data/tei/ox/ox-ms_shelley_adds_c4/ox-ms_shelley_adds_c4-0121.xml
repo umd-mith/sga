@@ -7,19 +7,96 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="57r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0121.jp2"/>
   <zone type="main">
-    <line>waned</line>
-    <line><del rend="strikethrough">kindle their</del>   <del rend="strikethrough">waning</del>         below</line>
-    <line>The <del rend="strikethrough">caverns</del> <del rend="strikethrough">fl</del> buds which <del rend="strikethrough">pave</del> hang their <del rend="strikethrough">pallid</del> lamps</line>
+  <zone type="library">57</zone>
+
+    <line>The <del rend="strikethrough">caverns</del> <del rend="strikethrough">fl</del> buds which
+    <mod>
+      <del rend="strikethrough">pave</del>
+    <mod>
+        <add place="superlinear">
+          <del rend="strikethrough">kindle their</del>
+      </add>
+        <add>hang their</add>
+      </mod>
+    </mod>
+    <mod>
+        <del rend="strikethrough">pallid</del>
+        <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">waning</del>
+          <add place="superlinear">waned</add>
+        </mod>
+        </add>
+      </mod>
+      lamps
+      <add place="superlinear">below</add>
+    </line>
+
+
     <line><del rend="strikethrough">lit</del> <del rend="strikethrough"><unclear> ? </unclear></del> sea, half spent</line>
-    <line>The emerald twilight of the <del rend="strikethrough">Ocean's</del> <del rend="strikethrough">dells</del>    <del rend="strikethrough">day</del></line>
-    <line>dawn</line>
+    <line>The emerald twilight of the
+      <add place="superlinear">
+        <del rend="strikethrough">lit <gap quantity="4" unit="chars"/></del> sea,
+      </add>
+      <mod>
+        <del rend="strikethrough">Ocean's</del> <del rend="strikethrough">dells</del>
+        <add place="superlinear">half spent</add>
+      </mod>
+    <mod>
+      <del rend="strikethrough">day</del>
+    <add place="sublinear">dawn</add>
+  </mod>
+</line>
+
     <line><del rend="strikethrough">Glowed</del></line>
-    <line><del rend="strikethrough">Were fed</del>  <del rend="strikethrough">Burst into</del>      and in the sapphire</line>
-    <line><del rend="strikethrough"><unclear>The</unclear> fled like</del> <del rend="strikethrough">morning</del> <del rend="strikethrough">beams</del>      <del rend="strikethrough">their censers glow</del></line>
-    <line>Glimmered <del rend="strikethrough">with</del> <del rend="strikethrough">morning</del> <del rend="strikethrough">light.</del>    <del rend="strikethrough">the  hills of <unclear> ? </unclear></del> <del rend="strikethrough">glow</del></line>
-    <line>matin</line>
-    <line><del rend="strikethrough">Renewed their</del> <unclear>part</unclear>;     <del rend="strikethrough">their swinging censers</del></line>
-    <line>morning glow</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Were fed</del>
+        <add>
+          <del rend="strikethrough">Burst into</del>
+        </add>
+      </mod>
+    </line>
+    <line>
+      <del rend="strikethrough"><unclear>The</unclear> fled like</del>
+
+    <line>Glimmered
+      <del rend="strikethrough">with</del>
+      <mod>
+        <del rend="strikethrough">morning</del>
+        <add place="superlinear">
+          <del rend="strikethrough">morning</del>
+        </add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">light.</del>
+         <add place="superlinear">
+           <del rend="strikethrough">beams</del>
+         </add>
+       </mod>
+       <mod>
+        <del rend="strikethrough">the  hills of <gap quantity="4" unit="chars"/> glow></del>
+        <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">their censers glow</del>
+        <add place="superlinear">and in the sapphire</add>
+      </mod>
+      </add>
+      </mod>
+
+    <line><del rend="strikethrough">Renewed their</del> <unclear>part</unclear>;
+
+      <del rend="strikethrough">their</del>
+      <mod>
+        <del rend="strikethrough"> swinging</del>
+    <mod>
+          <add place="superlinear">matin</add>
+    </mod>
+      <del rend="strikethrough">censers</del>
+      <add place="sublinear">morning glow</add>
+  </mod>
+</line>
+
     <line><del rend="strikethrough">Like smokeless altars on the horizon</del></line>
     <line>Touched</line>
     <line><del rend="strikethrough">In wave or win</del>        <del rend="strikethrough">in forest glen or in lawn</del></line>
