@@ -87,7 +87,7 @@
     </mod>
   </line>
 
-    <line>The guitar
+    <line rend="indent1">The guitar
       <mod>
          <del rend="strikethrough">is</del>
          <add place="superlinear">was</add>
@@ -109,7 +109,7 @@
         sang them
       </line>
 
-    <line>As
+    <line rend="indent2">As
       <mod>
         <del rend="strikethrough">the moon showers</del>
       <add place="superlinear">Again</add>
@@ -130,9 +130,9 @@
       </mod>
        cold starlight of Heaven
      </line>
-    <line rend="indent5">Is thrown</line>
+    <line rend="indent3">Is thrown</line>
 
-    <line>So
+    <line rend="indent2">So
       <mod>
         <del rend="strikethrough">thy</del>
         <add place="superlinear">your</add>
@@ -140,7 +140,7 @@
        voice sweet &amp; tender
      </line>
      <space quantity="2" unit="lines"/>
-     <!--The following lines are printed horizontal in the MS.-->
+     <!--The following lines are printed horizontally in the MS.-->
     <line>Concerts which no one</line>
     <line>Can <unclear>conceive</unclear></line>
   </zone>
