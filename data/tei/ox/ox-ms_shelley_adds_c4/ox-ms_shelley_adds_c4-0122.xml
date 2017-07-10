@@ -152,11 +152,37 @@
           <del rend="strikethrough">Yet</del>
         </add>
       </mod>
-
-    <del rend="strikethrough">Its hopes &amp; joys</del> hopes <del rend="strikethrough"><unclear>whose</unclear> painted boats</del></line>
-    <line><del rend="strikethrough">Looks gay</del> with <del rend="strikethrough">anchored hopes &amp;</del>    <del rend="strikethrough">that</del> <del rend="strikethrough">glow</del></line>
-    <line>lake <del rend="strikethrough">sea</del></line>
-    <line>In the false wind &amp; oer the fl<unclear>u</unclear>ttering <del rend="strikethrough">wave</del></line>
-    <line>Unconscious of <del rend="strikethrough">the</del> buried wrecks below</line>
+    <del rend="strikethrough">Its hopes &amp; joys</del>
+    <add place="superlinear">anchored</add>
+     hopes
+     <mod>
+       <del rend="strikethrough"><unclear>whose</unclear></del>
+       <add place="superlinear">&amp; joys,</add>
+     </mod>
+        <mod>
+          <del rend="strikethrough">painted boats</del>
+        <add place="superlinear">whose pennons glow</add>
+      </mod>
+    </line>
+    <line>
+      <del rend="strikethrough">Looks gay</del> with
+      <del rend="strikethrough">anchored hopes &amp;</del>
+      <del rend="strikethrough">that</del> <del rend="strikethrough">glow</del>
+    </line>
+    <line>In the false wind &amp; oer the fl<unclear>u</unclear>ttering
+    <mod>
+      <del rend="strikethrough">wave</del>
+    <add place="superlinear">
+      <del rend="strikethrough">sea</del>
+    </add>
+  <add place="superlinear">lake</add>
+</mod>
+</line>
+    <line>
+      <del rend="strikethrough">
+        Unconscious of the
+      buried wrecks below
+    </del>
+  </line>
   </zone>
 </surface>
