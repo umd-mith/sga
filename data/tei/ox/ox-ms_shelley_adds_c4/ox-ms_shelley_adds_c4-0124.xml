@@ -7,6 +7,13 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="58v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0124.jp2"/>
   <zone type="main">
+    <!--the following is a separate note in the MS-->
+    <line rend="indent8">
+      <unclear>Tis</unclear>
+    </line>
+    <line rend="indent8">
+      the King
+    </line>
     <!--In the MS, the following is printed in verso-->
     <space quantity="5" unit="line"/>
     <line>Swift as a Spirit hastening to its task,</line>
