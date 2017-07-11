@@ -7,31 +7,120 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="58v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0124.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">Tis</del></line>
-    <line>the King</line>
+    <!--In the MS, the following is printed in verso-->
+    <space quantity="5" unit="line"/>
     <line>Swift as a Spirit hastening to its task,</line>
     <line>Of glory &amp; of good, the Sun came forth,</line>
-    <line>Rejoicing in his splendour and</line>
-    <line>Out of the East &amp; <del rend="strikethrough">stript</del> the <del rend="strikethrough">various</del> mask</line>
-    <line>darkness fell</line>
-    <line>Of <del rend="strikethrough">night and</del> from the awakened earth.</line>
-    <line>Whilst     fairest</line>
-    <line><del rend="strikethrough">It was the season when</del></line>
-    <line><del rend="strikethrough">And</del> she, the <del rend="strikethrough">loveliest</del> of the wandering Seven,</line>
-    <line>Laughed <del rend="strikethrough">at his sport in her clear morning mirth</del></line>
-    <line>to behold how in their <unclear>highest</unclear> mirth</line>
-    <line><del rend="strikethrough">latest</del></line>
-    <line>highest &#8212;                      fiery</line>
-    <line><del rend="strikethrough">clearest</del> clearest</line>
-    <line>The <del rend="strikethrough">brightest</del> Stars were blotted out of Heaven</line>
-    <line>While             <del rend="strikethrough">palest</del> <unclear>waning</unclear>         brow</line>
-    <line><del rend="strikethrough">And</del> every <del rend="strikethrough"><unclear>pallid</unclear></del> flower on her own <del rend="strikethrough">vest</del></line>
-    <line><unclear>Shone</unclear>                  dewy <del rend="strikethrough">light drops</del> &#8212; <del rend="strikethrough">even</del></line>
-    <line><del rend="strikethrough">Glowed</del>, diamonded with <del rend="strikethrough">light &amp; dew  . . . . and even</del></line>
-    <line>splendour   and even</line>
-    <line>beams</line>
-    <line><del rend="strikethrough">The blind stone of the mine drank</del></line>
+
+    <line>
+      <add place="superlinear">Rejoicing in his splendour and</add>
+      Out of the East &amp;
+      <del rend="strikethrough">stript</del> the
+      <del rend="strikethrough">various</del> mask
+    </line>
+    <line rend="indent5">&#8212;</line>
+
+    <line>Of
+    <mod>
+      <del rend="strikethrough">night and</del>
+      <add place="superlinear">darkness</add>
+    </mod>
+    <add place="superlinear">fell</add>
+     from the awakened earth.__
+   </line>
+
+
+    <line>
+      <add place="superlinear">Whilst</add>
+      <del rend="strikethrough">It was the season</del>
+    <add place="superlinear">fairest</add>
+    <del rend="strikethrough"> when</del>
+  </line>
+    <line>
+      <del rend="strikethrough">And</del>
+      she, the <del rend="strikethrough">loveliest</del>
+      of the wandering Seven,
+    </line>
+    <line>
+      Laughed
+      <mod>
+        <del rend="strikethrough">at his sport in her clear morning mirth</del>
+    <add place="sublinear">
+    to behold how in their <unclear>highest</unclear>
+    <add place="sublinear">
+        <del rend="strikethrough">latest</del>
+        <add place="sublinear">fiery</add>
+      </add>
+  </add>
+</mod>
+</line>
+
+    <line>
+      The
+      <mod>
+        <del rend="strikethrough">brightest</del>
+        <add place="superlinear">
+        <mod>
+      <mod>
+        <del rend="strikethrough">clearest</del>
+          <add>clearest</add>
+        </mod>
+          <add place="superlinear">highest&#8212;</add>
+        </mod>
+        </add>
+      </mod>
+       Stars were blotted out of Heaven</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear">While</add>
+      </mod>
+       every
+       <mod>
+         <del rend="strikethrough"><unclear>pallid</unclear></del>
+         <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">palest</del>
+           <add>waning</add>
+         </mod>
+         </add>
+       </mod>
+          flower on her own
+          <mod>
+            <del rend="strikethrough">vest</del>
+          <add place="superlinear">brow</add>
+        </mod>
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Glowed,</del>
+        <add place="superlinear">
+          <unclear>Shone</unclear>
+        </add>
+      </mod>
+       diamonded with
+       <mod>
+         <del rend="strikethrough">light &amp; dew  . . . . and even</del>
+       <add place="superlinear">
+       dewy <del rend="strikethrough">light drops even</del>
+     </add>
+   <add place="sublinear">splendour and even</add>
+ </mod>
+</line>
+  <line rend="indent5">&#8212;</line>
+
+    <line><del rend="strikethrough">The blind stone of the mine drank beams</del></line>
     <line><del rend="strikethrough">birds</del></line>
-    <line><del rend="strikethrough">The Ocean flowers beneath the</del></line>
+    <line><del rend="strikethrough">The Ocean</del>
+    <mod>
+      <del rend="strikethrough"> flowers</del>
+    <add place="superlinear">
+      <del rend="strikethrough">birds</del>
+    </add>
+  </mod>
+    <del rend="strikethrough"> beneath the</del>
+</line>
   </zone>
 </surface>
