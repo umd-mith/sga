@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0093" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="91">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0093.jp2"/>
+  <zone type="main">
+    <line>a</line>
+    <line>I stood upon <del rend="strikethrough">the</del> mountain of our land</line>
+    <line>Which heaves itself into the wintry air</line>
+    <line><del rend="strikethrough">As slumber fell upon</del></line>
+    <line><del rend="strikethrough">A deep oblivion of all</del></line>
+    <line>And looked upon the Ocean &amp; its rivers</line>
+    <line>Its lakes, the mirrors of the eternal</line>
+    <line>Heaven</line>
+    <line>Its cornfields &amp; its <del rend="strikethrough">cities</del> &amp; its woods</line>
+    <line>meadows</line>
+    <line>And <del rend="strikethrough">its</del> saw in</line>
+  </zone>
+</surface>

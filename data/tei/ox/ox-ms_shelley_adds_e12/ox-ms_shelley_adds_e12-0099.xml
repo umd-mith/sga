@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0099" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="97">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0099.jp2"/>
+  <zone type="main">
+    <line>Away; away!</line>
+    <line>We are melted away <del rend="strikethrough">by hot</del></line>
+    <line>by</line>
+    <line>Like mists <del rend="strikethrough">of</del> the warmth of the <del rend="strikethrough">widening</del> day</line>
+    <line><del rend="strikethrough">That</del> Like the lullaby</line>
+    <line>Of winds that die</line>
+    <line>On the bosom of their own harmony</line>
+    <line>Our task is done</line>
+    <line>Our spoil is won</line>
+    <line><del rend="strikethrough">We are free to dive or soar or run</del></line>
+    <line>Beyond <del rend="strikethrough">&amp;</del> or <del rend="strikethrough">a</del>round</line>
+    <line><unclear>Of</unclear> or within bound</line>
+    <line><del rend="strikethrough">The <unclear>speeding</unclear> <unclear>   </unclear></del></line>
+    <line>clips the <unclear>world</unclear>         around</line>
+    <line>Which <del rend="strikethrough"><unclear>      </unclear></del> <del rend="strikethrough">walls <unclear>   </unclear></del> world <del rend="strikethrough">like</del> as a wall</line>
+    <line>Join the dance &amp; the music of mirth</line>
+    <line>Via Mozza</line>
+  </zone>
+</surface>

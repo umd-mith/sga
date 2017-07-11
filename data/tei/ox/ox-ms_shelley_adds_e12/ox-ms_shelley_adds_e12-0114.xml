@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0114" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="111">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0114.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">I drink</del></line>
+    <line><del rend="strikethrough">I have drunk the wine of</del></line>
+    <line>spirit of the sweet sound</line>
+    <line>Let me drink of the <del rend="strikethrough">sweet</del></line>
+    <line>More, oh more &#8212; I am thirsting yet. .</line>
+    <line><del rend="strikethrough">serpent</del></line>
+    <line>It loosens the <del rend="strikethrough">burthens</del> which care had</line>
+    <line>bound</line>
+    <line><unclear>T</unclear> <del rend="strikethrough">Over</del> my heart to <del rend="strikethrough">stifle</del> it</line>
+    <line><del rend="strikethrough">It</del> Upon</line>
+    <line><del rend="strikethrough">It</del></line>
+    <line><del rend="strikethrough">It flows like a</del></line>
+    <line>The dissolving strain thro every vein</line>
+    <line><del rend="strikethrough">Passes into my <unclear>breas</unclear></del></line>
+    <line><del rend="strikethrough">Like</del></line>
+    <line>As when the sun has withered up</line>
+    <line>A violet</line>
+    <line>scent     withered up</line>
+    <line>As the <del rend="strikethrough">odour</del> of a violet <del rend="strikethrough">pale</del></line>
+    <line>the</line>
+    <line>Which grew <del rend="strikethrough">beside</del> by of a silver</line>
+    <line>brink          lake</line>
+    <line><del rend="strikethrough">stream</del></line>
+    <line>Where the hot noon had drained its</line>
+    <line><del rend="strikethrough">mist</del></line>
+    <line>And <del rend="strikethrough">cloud</del> there was none      dewy</line>
+    <line><unclear>drink</unclear>      its thirst</line>
+    <line>to cup</line>
+    <line>slake</line>
+  </zone>
+</surface>

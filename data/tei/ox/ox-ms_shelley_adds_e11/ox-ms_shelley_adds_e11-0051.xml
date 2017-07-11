@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5398" lry="7086"
+  xml:id="ox-ms_shelley_adds_e11-0051" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="49">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0051.jp2"/>
+  <zone type="main">
+    <line>and</line>
+    <line>Lady</line>
+    <line>I am drunk with the honey-wine</line>
+    <line>moon-unfolded</line>
+    <line>Of the <del rend="strikethrough">pale</del> <del rend="strikethrough">dew-scented</del> eglantine</line>
+    <line>Which fairies catch in hyacinth bowls &#8212;</line>
+    <line>The bats &amp; the dormice &amp; the moles</line>
+    <line>Sleep in the walls, or under the sward</line>
+    <line>desolate</line>
+    <line>Of the <del rend="strikethrough">ruined</del> castle yard</line>
+    <line>And when <unclear>tis</unclear></line>
+    <line><del rend="strikethrough">When this wine</del> <del rend="strikethrough">is</del> spilt on the summer</line>
+    <line>earth</line>
+    <line>Or its fumes arise among the dew</line>
+    <line>Thier jocund dreams are full of mirth</line>
+    <line><del rend="strikethrough">I heard them</del></line>
+    <line>And they gibber their joy in sleep, for</line>
+    <line>few</line>
+    <line>Of the fairies bear those bowls so <unclear>new</unclear></line>
+    <line>That</line>
+  </zone>
+</surface>

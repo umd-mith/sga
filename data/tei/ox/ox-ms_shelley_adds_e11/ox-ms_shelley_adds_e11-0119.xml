@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0119" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="117">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0119.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">grief was <unclear>fine</unclear> &amp; high</del> <unclear>For</unclear> the wild language of his</line>
+    <line>grief is high</line>
+    <line>And I <unclear>remember</unclear> one remark that</line>
+    <line>Maddalo made . . . he said</line>
+    <line>suffering</line>
+    <line><unclear> ? </unclear></line>
+  </zone>
+</surface>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5398" lry="7086"
+  xml:id="ox-ms_shelley_adds_e11-0077" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="75">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0077.jp2"/>
+  <zone type="main">
+    <line><unclear>Lake</unclear> <unclear>Leman</unclear> 1787</line>
+    <line>kind</line>
+    <line>eagle spirit blind</line>
+    <line><del rend="strikethrough">And some such thought I spoke,</del> <del rend="strikethrough">while the <unclear>sunlight</unclear></del></line>
+    <line>And so I <unclear>said</unclear> &#8212; when the <del rend="strikethrough">Suns</del> <del rend="strikethrough">orbed light</del></line>
+    <line><unclear>it</unclear> did smite</line>
+    <line>Meanwhile the sun paused ere it should alight</line>
+    <line>make <unclear>thy</unclear></line>
+    <line>Your spirit as a lamp, &amp; from verse</line>
+    <line>to dissolve <unclear>unkind</unclear></line>
+    <line>It has <unclear>dimmed</unclear> by that it shd. <unclear>disperse</unclear></line>
+  </zone>
+</surface>

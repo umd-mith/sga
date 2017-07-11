@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5398" lry="7086"
+  xml:id="ox-ms_shelley_adds_e11-0063" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="61">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0063.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">&amp; because the</del> to excuse the former because</line>
+    <line>the latter exceed all mea<unclear>sure</unclear>. In the minds</line>
+    <line>of those who read that magnificent</line>
+    <line>fiction with a religious feeling it</line>
+    <line>engenders something worse</line>
+  </zone>
+</surface>

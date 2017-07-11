@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5428" lry="7238"
+  xml:id="ox-ms_shelley_adds_e11-0064" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="62">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0064.jp2"/>
+  <zone type="main">
+    <line><unclear>The : i</unclear></line>
+    <line><unclear>Their</unclear></line>
+    <line><unclear>spray</unclear></line>
+    <line>the salt breeds</line>
+    <line>Such as from from Earths embrace <del rend="strikethrough"><unclear>  ?  </unclear> <unclear>Ocean</unclear></del></line>
+    <line>Is this long island; <del rend="strikethrough">and little</del></line>
+    <line><del rend="strikethrough">And some old</del></line>
+    <line><del rend="strikethrough">No object breaks the waves</del></line>
+    <line><del rend="strikethrough">stands above the waste but trees</del></line>
+    <line>Is this, an uninhabited sea-<del rend="strikethrough">side</del>, <del rend="strikethrough">shore</del></line>
+    <line><del rend="strikethrough">Where people seldom come</del>, &amp;</line>
+    <line>Which the lone fisher when <unclear>his</unclear> nets are dried</line>
+    <line><del rend="strikethrough">Abandons</del>, <del rend="strikethrough">and no object tree or</del></line>
+    <line><del rend="strikethrough">Leaves</del>, and no other object breaks</line>
+    <line><del rend="strikethrough">The uniform <unclear>w</unclear></del></line>
+    <line>The waste, but one dwarf tree, &amp; some few</line>
+    <line>stakes</line>
+  </zone>
+</surface>

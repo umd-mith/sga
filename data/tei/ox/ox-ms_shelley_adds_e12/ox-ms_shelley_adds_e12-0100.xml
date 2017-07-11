@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0100" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="98">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0100.jp2"/>
+  <zone type="main">
+    <line>We will pass the eyes</line>
+    <line>the</line>
+    <line>Of starry skies</line>
+    <line>Into the abyss to colonize</line>
+    <line>And the sound of our flight</line>
+    <line>Will make Chaos &amp; Nigh</line>
+    <line>Flee like a lake from the Earthquake</line>
+    <line>And <del rend="strikethrough">the atoms of light</del></line>
+    <line><del rend="strikethrough">And of earth &amp; the might</del></line>
+    <line>earth</line>
+    <line>And <del rend="strikethrough">fires</del> air &amp; light</line>
+    <line>And the Spirit of might</line>
+    <line>Which drives round the stars in</line>
+    <line>fiery</line>
+    <line>their <del rend="strikethrough">aery</del> flight</line>
+    <line><del rend="strikethrough">And the shadows of mind</del></line>
+    <line><del rend="strikethrough">Desire</del></line>
+    <line><del rend="strikethrough">Hope</del> <del rend="strikethrough">Fear</del> <del rend="strikethrough">Love</del></line>
+    <line><del rend="strikethrough"><unclear>Hope fear</unclear> love</del></line>
+    <line>Whereever we float shall assemble</line>
+    <line><del rend="strikethrough">behind</del></line>
+    <line>beneath</line>
+  </zone>
+</surface>

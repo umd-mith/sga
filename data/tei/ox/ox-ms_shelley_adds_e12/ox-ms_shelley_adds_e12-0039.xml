@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0039" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="37">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0039.jp2"/>
+  <zone type="main">
+    <line><unclear>Niphates</unclear></line>
+    <line>his tempest baffled wings</line>
+    <line>Entangled in the whirlwind, <del rend="strikethrough">while</del> and his eyes</line>
+    <line>undazzling</line>
+    <line>on            blind</line>
+    <line>Which gazed <del rend="strikethrough">undazzled on the</del> sun, now <del rend="strikethrough"><unclear>stone</unclear></del></line>
+    <line>By the white lightning, while the ponderous</line>
+    <line>hail</line>
+    <line>Beats on his struggling form, which sinks at</line>
+    <line>length</line>
+    <line>Prone; and the aerial ice clings over it</line>
+    <line>And the white dew on the new-bladed</line>
+    <line>corn</line>
+    <line><unclear>Over</unclear> piercing         the dark Earth</line>
+    <line><del rend="strikethrough">Nel semper admirare, te S</del></line>
+    <line><unclear>nostr amore</unclear></line>
+    <line>Sul altare del <del rend="strikethrough">mio core</del>, a te, Sorella</line>
+    <line>Io <del rend="strikethrough">offerisco</del> questi pallidi fiori</line>
+  </zone>
+</surface>

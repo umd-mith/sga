@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0144" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="141">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0144.jp2"/>
+  <zone type="main">
+    <line>And the</line>
+    <line>When a nation has plucked down</line>
+    <line>Fraud from her ancestral throne</line>
+    <line>And a thousand nations cry</line>
+    <line>Chaind &amp; dungeoned as they lie</line>
+    <line>Liberty oh liberty!</line>
+    <line>Laugh aloud &#8212; <del rend="strikethrough">for desolation</del></line>
+    <line>war will come</line>
+    <line>From</line>
+  </zone>
+</surface>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0186" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="181">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0186.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">When a glorious morning</del></line>
+    <line>When soft winds &amp; sunny skies</line>
+    <line>With the green <del rend="strikethrough">world</del> earth harmonize</line>
+    <line>And the young &amp; dewy dawn</line>
+    <line><del rend="strikethrough">Fearless as a</del></line>
+    <line>F <del rend="strikethrough">Comes</del> Bold as an unhunted fawn</line>
+    <line><del rend="strikethrough"><del rend="strikethrough">Form</del> From its mothers side is gone</del></line>
+    <line>Up the windless heaven is gone</line>
+    <line>Laugh &#8212; for ambushed in the day</line>
+    <line>Clouds &amp; whirlwinds watch thier</line>
+    <line>prey &#8212;</line>
+    <line><del rend="strikethrough">And the dying</del></line>
+    <line>Smile like thee a dying</line>
+    <line>If</line>
+  </zone>
+</surface>

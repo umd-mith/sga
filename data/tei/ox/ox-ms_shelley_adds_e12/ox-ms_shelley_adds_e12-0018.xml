@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0018" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="16">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0018.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">Some</del></line>
+    <line>Some say</line>
+    <line><del rend="strikethrough">Tis said</del> <del rend="strikethrough">There</del> <del rend="strikethrough">that</del> there is a preci<del rend="strikethrough">pice</del></line>
+    <line>-pice</line>
+    <line><del rend="strikethrough">On the Alpine <unclear>mount</unclear> overhangs</del></line>
+    <line><del rend="strikethrough">Which a frozen pine oerhanging</del></line>
+    <line><unclear>hans</unclear></line>
+    <line>Where one vast pine is frozen to</line>
+    <line><del rend="strikethrough"><unclear>Mid</unclear></del>                         ruin</line>
+    <line><del rend="strikethrough">Mid</del> piles <del rend="strikethrough">of snow &amp; chasms of</del></line>
+    <line><del rend="strikethrough">ice</del></line>
+    <line><del rend="strikethrough">In Alpine</del></line>
+    <line><del rend="strikethrough">Mid</del></line>
+    <line><del rend="strikethrough">And alpine</del></line>
+    <line>Oer piles of snow &amp; chasms of ice</line>
+    <line>Mid Alpine mountains</line>
+    <line>languid storm</line>
+    <line><del rend="strikethrough">And that the languid storm storm</del></line>
+    <line>storm     <del rend="strikethrough">pursuing</del></line>
+    <line><del rend="strikethrough">That winged shape</del></line>
+    <line>That <del rend="strikethrough"><unclear>Trag</unclear></del> winged shape forever</line>
+    <line>That                             flies</line>
+    <line>hoar</line>
+    <line>F ARound those branches, aye renewing</line>
+    <line>Its aery fountains.</line>
+  </zone>
+</surface>

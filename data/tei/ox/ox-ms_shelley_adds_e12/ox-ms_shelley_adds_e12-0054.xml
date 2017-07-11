@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0054" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="52">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0054.jp2"/>
+  <zone type="main">
+    <line>limbs</line>
+    <line>Although the <del rend="strikethrough">frame</del> which it inhabits</line>
+    <line>Her beauty ever wakes &amp;          sleep</line>
+    <line>watches her</line>
+    <line>Like an immortal lamp <unclear>has</unclear></line>
+    <line>within a</line>
+    <line>tomb</line>
+    <line>By the cold slumbers of a coffined</line>
+    <line>King,</line>
+    <line>To the        of his</line>
+    <line>Beyond his blue dwelling</line>
+    <line>light</line>
+    <line>Comes, in robes of in <del rend="strikethrough">array</del></line>
+    <line>Hastes, in <del rend="strikethrough">purple</del> &amp; golden array<del rend="strikethrough">, &amp;</del></line>
+    <line>Meteor-eclipsing</line>
+  </zone>
+</surface>

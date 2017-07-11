@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0206" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="201">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0206.jp2"/>
+  <zone type="main">
+    <line>Diotima</line>
+    <line>At the hour of noon on the</line>
+    <line><del rend="strikethrough">The Coliseum</del>      <del rend="strikethrough">In a radiant noon</del></line>
+    <line>feast after passover</line>
+    <line><del rend="strikethrough">Towards the close of November</del> an old man</line>
+    <line><del rend="strikethrough">With hair &amp; beard as white as snow</del></line>
+    <line>a</line>
+    <line>Accompanied by girl <del rend="strikethrough">apparently</del> his daughter</line>
+    <line>Entered the Coliseum at Rome. They immediately</line>
+    <line>were <unclear>seeking</unclear></line>
+    <line>past thro the arena, &amp; <del rend="strikethrough"><unclear>reaching</unclear></del> a solitary chasm</line>
+    <line>among the arches of the southern part of the</line>
+    <line>ruin selected a fallen column for their seat</line>
+    <line>And clasping each others hands sate as in</line>
+    <line>silent contemplation of the scene. But the eyes</line>
+    <line>of the girl were fixed upon her father's lips" <del rend="strikethrough">as</del></line>
+    <line>his countenance, sublime &amp; sweet, but motionless</line>
+    <line>as some Praxitelean image of the greatest</line>
+    <line>of poets filled the silent air with smiles</line>
+    <line>reflected</line>
+    <line><del rend="strikethrough">not</del> <del rend="strikethrough">unborrrowed</del> from external forms.</line>
+    <line>It was the great feast of the resurrec<del rend="strikethrough">tion,</del></line>
+  </zone>
+</surface>

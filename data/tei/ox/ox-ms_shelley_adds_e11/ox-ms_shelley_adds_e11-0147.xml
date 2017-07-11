@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5418" lry="7110"
+  xml:id="ox-ms_shelley_adds_e11-0147" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="146">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0147.jp2"/>
+  <zone type="main">
+    <line>hear them speak, or see them</line>
+    <line>move. If they have sensations</line>
+    <line>or apprehensions, we no longer</line>
+    <line>participate in them. <del rend="strikethrough">All that</del></line>
+    <line>We know no more than that</line>
+    <line>those external organs, &amp;</line>
+    <line>all that fine texture of material</line>
+    <line>frame, without which we have</line>
+    <line>no experience that life or</line>
+    <line>thought can subsist, are</line>
+    <line>dissolved &amp; scattered abroad.</line>
+    <line><del rend="strikethrough">All that</del> The body is placed</line>
+    <line><del rend="strikethrough">in the earth</del> under the</line>
+    <line>earth<unclear>,</unclear> <del rend="strikethrough">&amp; in a few</del> <del rend="strikethrough">its' functions</del></line>
+    <line>after a certain period</line>
+    <line><del rend="strikethrough">it</del> and in a <del rend="strikethrough">few years</del> there</line>
+    <line>remains no vestige even of</line>
+  </zone>
+</surface>

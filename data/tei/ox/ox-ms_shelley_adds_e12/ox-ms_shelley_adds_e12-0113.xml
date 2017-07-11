@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0113" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="110">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0113.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">M</del></line>
+    <line>Like</line>
+    <line>Like the kiss of love when the heart is full</line>
+    <line>Like the hope of youth, when the heart</line>
+    <line>is high</line>
+    <line><unclear>so</unclear></line>
+    <line>Like <del rend="strikethrough"><unclear>anything pleasant so</unclear></del> beloved &amp; beautiful</line>
+    <line>Which</line>
+    <line>I float on its Ocean serene &amp; even</line>
+    <line><unclear>bird</unclear>. . .</line>
+    <line>Like <del rend="strikethrough">th</del> a wandering <del rend="strikethrough">spirit</del> with azure <del rend="strikethrough">wings</del></line>
+    <line>Which winnows its way between earth &amp; <del rend="strikethrough">Earth</del></line>
+    <line>Heaven</line>
+    <line>On the plavement of the tremulous wind</line>
+    <line>DECA</line>
+  </zone>
+</surface>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0160" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="155">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0160.jp2"/>
+  <zone type="main">
+    <line>dead</line>
+    <line><del rend="strikethrough">And</del> if I were a leaf thou mightest bear</line>
+    <line>were</line>
+    <line>If I a swift cloud to fly with thee</line>
+    <line>A wave to pant beneath thy power, &amp;</line>
+    <line>share</line>
+    <line><del rend="strikethrough">The</del> <del rend="strikethrough">The impulse of thy strength, only less</del></line>
+    <line><del rend="strikethrough">free</del></line>
+    <line>The impulse of thy strength, only less free</line>
+    <line>Than thou, o Uncontroulable &#8212; if even</line>
+    <line>early grave</line>
+    <line>Thy <del rend="strikethrough">spirit were</del>              in me</line>
+    <line><del rend="strikethrough">power</del> spirit &#8212; had found no</line>
+    <line>Heaven</line>
+    <line><del rend="strikethrough">Which rode with thine in visions</del>. youth</line>
+    <line><unclear>As I</unclear>   <del rend="strikethrough">with</del> the splendour of its shadow,</line>
+    <line>wrapt</line>
+    <line>The naked world of life, when it had striven</line>
+    <line><unclear> 00</unclear></line>
+    <line>Whence it escaped victoriously! oh now</line>
+  </zone>
+</surface>

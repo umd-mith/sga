@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0135" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="132">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0135.jp2"/>
+  <zone type="main">
+    <line>With the hues which sweet Nature</line>
+    <line>has made divine</line>
+    <line>Green strength, azure hope, &amp; <del rend="strikethrough">az</del> eternity &#8212;</line>
+    <line>But let not the pansy among them be</line>
+    <line>Ye were injured &#8212; &amp; that means memory</line>
+  </zone>
+</surface>

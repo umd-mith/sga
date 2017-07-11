@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5398" lry="7086"
+  xml:id="ox-ms_shelley_adds_e11-0067" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="65">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0067.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">But <unclear>fled</unclear> like busy bees from the flowers, to flowers</del></line>
+    <line><del rend="strikethrough">Charged</del> <del rend="strikethrough">w</del> <del rend="strikethrough">But Flew from brain to brain</del></line>
+    <line><del rend="strikethrough">But flew from lip to lip &amp; brain to brain</del></line>
+    <line>But flew from brain to brain, such glee was</line>
+    <line>ours</line>
+    <line>Charged <del rend="strikethrough">like</del> with light memories of remembered</line>
+    <line><unclear>hours</unclear></line>
+    <line><del rend="strikethrough">Such pleasant <unclear>term</unclear> <unclear>   ?   </unclear> <unclear>as</unclear> those</del></line>
+    <line><unclear>shore</unclear>      oh,</line>
+    <line>How beautiful is sunset when the <del rend="strikethrough">glow</del> <unclear>flow</unclear></line>
+    <line>Of Heaven is spread above a land like thee &#8212;</line>
+    <line><del rend="strikethrough">Tower          shade of</del></line>
+    <line><del rend="strikethrough">Thy mountains &amp; thy towers</del>    <del rend="strikethrough"><unclear>crested</unclear></del> Italy</line>
+  </zone>
+</surface>

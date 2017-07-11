@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0187" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="182">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0187.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">A Mad</del>   <unclear> ? </unclear></line>
+    <line>An old, mad, blind, despised &amp; dying King;</line>
+    <line>Princes, the dregs of thier dull race, who flow</line>
+    <line>Through public scorn,&#8212; mud from a muddy</line>
+    <line>spring;</line>
+    <line>Rulers who neither see nor feel nor know</line>
+    <line>But leechlike to their fainting country cling</line>
+    <line>Till they drop, blind in blood, without a blow.</line>
+    <line>A people starved &amp; stabbed on th'untilled field,</line>
+    <line>An army <del rend="strikethrough">which</del> whom liberticide &amp; prey</line>
+    <line>Makes as a two-edged sword to all who</line>
+    <line>weild;</line>
+    <line>Golden &amp; sanguine laws which tempt &amp;</line>
+    <line>slay;</line>
+    <line>Religion Christless, Godless, a book seald,</line>
+    <line><del rend="strikethrough">A cloak of lies worn on Powe'rs holiday,</del></line>
+    <line>Are graves from which a glorious Phantom</line>
+    <line>may</line>
+    <line>Burst, to illumine our tempestuous day</line>
+    <line>A <del rend="strikethrough">senate full of lies</del></line>
+    <line>A senate, T<del rend="strikethrough">i</del>m Times <del rend="strikethrough">worst</del> statute, unrepealed</line>
+    <line><unclear>H </unclear></line>
+  </zone>
+</surface>

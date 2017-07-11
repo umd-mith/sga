@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5428" lry="7238"
+  xml:id="ox-ms_shelley_adds_e11-0058" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="56">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0058.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">The story of</del></line>
+    <line>The Greek tragic writers were accustomed</line>
+    <line>to choose a subject well known to thier</line>
+    <line>auditors &amp; often treated by their</line>
+    <line><del rend="strikethrough">contemporaries &amp; rivals</del> &#8212;-</line>
+    <line>The Greek tragic writers <del rend="strikethrough">in their</del></line>
+    <line>in selecting <unclear>thier</unclear></line>
+    <line><del rend="strikethrough">treatment of</del> <del rend="strikethrough">when they</del> <del rend="strikethrough">choosing</del> as <del rend="strikethrough">a</del></line>
+    <line>subject any portion of the history or</line>
+    <line>mythology of their nation, employed</line>
+    <line>in their treatment of it, a certain</line>
+    <line>arbitrary discretion. They by no means</line>
+    <line>felt themselves obliged to adhere to the</line>
+    <line>common interpretation, or to imitate</line>
+    <line>in story, as in title their <del rend="strikethrough"><unclear> ? </unclear></del> <unclear>rivals</unclear></line>
+    <line>&amp; predecessors. Such a plan would</line>
+    <line>have been no more than <del rend="strikethrough">to <unclear>s</unclear></del> the</line>
+    <line>resignation of those claims to <del rend="strikethrough"><unclear>emulation</unclear></del></line>
+  </zone>
+</surface>

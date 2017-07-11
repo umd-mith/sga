@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0228" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="222">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0228.jp2"/>
+  <zone type="main">
+    <line>Hail King, propitious grant a life <unclear>serene</unclear></line>
+    <line><del rend="strikethrough"><unclear></unclear></del> shall my song</line>
+    <line>With the beginning, <del rend="strikethrough">the</del> <del rend="strikethrough">by</del></line>
+    <line>The demigods &amp; heroes shall make known</line>
+    <line>Where deeds to mortals by the Gods were shown.</line>
+    <line>radiant</line>
+    <line><del rend="strikethrough">beaming</del> glory bright</line>
+    <line>To the Sun</line>
+    <line><del rend="strikethrough">Muse</del> Offspring of Jove, Calliope, once more</line>
+    <line>To the bright Sun thy hymns of music pour;</line>
+    <line>Whom to the Child of starclad Heaven &amp; Earth</line>
+    <line>gave birth</line>
+    <line><del rend="strikethrough">brought forth</del></line>
+    <line>Euryphaessa, large eyed nymph, <del rend="strikethrough">ga</del></line>
+    <line>Euryphaessa, <del rend="strikethrough">the</del> famed sister fair</line>
+    <line>divine</line>
+    <line>Of great Hyperion, who to him did bear</line>
+    <line>A race of loveliest children, young</line>
+    <line><del rend="strikethrough">Children most beautiful, the youthful</del></line>
+    <line>Morn,</line>
+    <line>born</line>
+    <line>Whose arms are like twin roses newly</line>
+  </zone>
+</surface>

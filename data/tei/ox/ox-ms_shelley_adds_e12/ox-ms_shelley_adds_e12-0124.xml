@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0124" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="121">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0124.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">When</del> Why to recount the melancholy end</line>
+    <line>Of <del rend="strikethrough">Strong</del> <unclear>Strength</unclear> &amp; happy feelings in my friend</line>
+    <line>A task for which I am the most unfit</line>
+    <line>of all who live . . . <del rend="strikethrough">I've</del></line>
+    <line>Well but yet venture</line>
+    <line>it</line>
+    <line><del rend="strikethrough">And mine</del></line>
+    <line>There our tent shall be the willow</line>
+    <line>And mine arm shall be thy pillow</line>
+    <line>And thou around my neck <del rend="strikethrough">the</del></line>
+    <line>Kiss me with thy kisses cold</line>
+    <line>Round my neck thine arms enfold</line>
+    <line>Thy soft arms, white long &amp; chill</line>
+    <line>As a lady all the night</line>
+    <line>Still caresses her delight</line>
+  </zone>
+</surface>

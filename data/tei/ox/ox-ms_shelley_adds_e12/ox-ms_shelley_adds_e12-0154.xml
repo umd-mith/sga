@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0154" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="150">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0154.jp2"/>
+  <zone type="main">
+    <line>Sir</line>
+    <line>I observe<unclear>d</unclear> in the Sep. No. of the</line>
+    <line>Review which is</line>
+    <line>a                        the Author of</line>
+    <line>that article, after deprecating the</line>
+    <line>tenets of a Poem written by me</line>
+    <line>asserts that what he now knows</line>
+    <line>to the disadvantage</line>
+    <line><del rend="strikethrough">of my</del> personal character affords</line>
+    <line>an unanswerable comment<unclear>s</unclear> on the</line>
+    <line>text, either of his review <del rend="strikethrough">of</del> <unclear>for</unclear> my</line>
+    <line>poem &#8212; I hereby call upon <del rend="strikethrough">from</del></line>
+    <line>the Author of that Article or</line>
+    <line>you as his responsible agent <del rend="strikethrough">to</del></line>
+    <line>publickly to produce your proofs</line>
+    <line>of <del rend="strikethrough">that</del> assertion, <del rend="strikethrough">so, as</del></line>
+  </zone>
+</surface>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0095" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="93">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0095.jp2"/>
+  <zone type="main">
+    <line>was</line>
+    <line>Nay this <del rend="strikethrough">is</del> kind of you &#8212; he had no claim</line>
+    <line>As the world says</line>
+    <line><del rend="strikethrough">Upon you <unclear> ? </unclear></del> <unclear>,</unclear> none but the very same</line>
+    <line>That I on all mankind were I as he</line>
+    <line>Fallen to such sad reverse</line>
+    <line>I will <unclear>dispose</unclear> you where</line>
+    <line>You can observe him unobserved</line>
+    <line>made</line>
+  </zone>
+</surface>

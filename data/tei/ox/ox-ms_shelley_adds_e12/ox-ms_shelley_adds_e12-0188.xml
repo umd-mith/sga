@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0188" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="183">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0188.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough"><del rend="strikethrough">W</del> When the <del rend="strikethrough"><unclear>Father</unclear></del> <unclear>faith</unclear></del></line>
+    <line>When the faith of heart &amp; hand</line>
+    <line>When</line>
+    <line>When Priests howl</line>
+    <line><del rend="strikethrough">plan was</del></line>
+    <line><del rend="strikethrough">I felt as if this Paradise</del></line>
+    <line><del rend="strikethrough">And I a s</del></line>
+    <line>When a Priest with inward smile</line>
+    <line>Taking gold &amp; giving guile</line>
+    <line>Laugh</line>
+    <line>Laugh the grave will echo ye</line>
+  </zone>
+</surface>

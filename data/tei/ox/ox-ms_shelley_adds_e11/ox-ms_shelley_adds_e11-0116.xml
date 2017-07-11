@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5408" lry="7098"
+  xml:id="ox-ms_shelley_adds_e11-0116" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="114">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0116.jp2"/>
+  <zone type="main">
+    <line>Shelley</line>
+    <line>Percy</line>
+    <line>Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></line>
+    <line>O follow follow</line>
+    <line><del rend="strikethrough">Round</del> Thro the caverns hollow</line>
+    <line>As the song floats, thou pursue</line>
+    <line>wild bee</line>
+    <line>Where the <del rend="strikethrough">night bird</del> never flew</line>
+    <line>Thro <del rend="strikethrough">the</del> the noontide darkness deep,</line>
+    <line>By the odour-breathing sleep</line>
+    <line>faint                   &amp;</line>
+    <line>Of <del rend="strikethrough">sweet</del> night-flowers, <del rend="strikethrough">by</del> the waves</line>
+    <line>Of the fountain lighted caves</line>
+    <line><del rend="strikethrough">And</del> Thro And the <del rend="strikethrough">woven</del></line>
+    <line>As the music wild &amp; sweet</line>
+    <line>Answers to <unclear>thy</unclear>   soft <unclear>light</unclear></line>
+    <line><del rend="strikethrough">Echoes your</del> thine <del rend="strikethrough">aerial</del> feet</line>
+    <line>Child of Ocean</line>
+  </zone>
+</surface>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0144" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="143">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0144.jp2"/>
+  <zone type="main">
+    <line>of the faded flower abide, or</line>
+    <line>broken</line>
+    <line>the music of the <del rend="strikethrough">suspended</del> lyre</line>
+    <line>seek <del rend="strikethrough"><unclear>the</unclear></del> life among the <unclear>d</unclear>ead.</line>
+    <line><del rend="strikethrough">Such are the <unclear>impre</unclear></del> Such <del rend="strikethrough">is</del></line>
+    <line><del rend="strikethrough">the language of the common</del></line>
+    <line><del rend="strikethrough">obs</del> are the anxious &amp; fearful</line>
+    <line>contemplations</line>
+    <line><del rend="strikethrough">thoughts</del> of the common observer<unclear>:</unclear></line>
+    <line>though the <del rend="strikethrough">religion</del> popular</line>
+    <line>religion often prevents him from</line>
+    <line>confessing them even to himself.-</line>
+    <line>The Natural philosopher, in addition</line>
+    <line>to the <del rend="strikethrough">sensations</del> <del rend="strikethrough">apprehensions</del></line>
+    <line>sensations common to all men</line>
+    <line>inspired by <del rend="strikethrough">this</del> the event of death,</line>
+    <line>believes that he sees with more</line>
+    <line>that it is attended with the</line>
+    <line>certainty <del rend="strikethrough">the</del> annihilation of</line>
+    <line>sentiment &amp; thought.- He observes</line>
+  </zone>
+</surface>

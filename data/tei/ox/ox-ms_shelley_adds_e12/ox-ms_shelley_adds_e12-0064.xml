@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0064" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="62">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0064.jp2"/>
+  <zone type="main">
+    <line><unclear>Rousseau</unclear></line>
+    <line>The sentiment of a rascally</line>
+    <line>Italian <unclear>domestis or di piazzas</unclear></line>
+    <line>bruised &amp; broken</line>
+    <line>Vipers have been <del rend="strikethrough">crushed</del> &amp; <del rend="strikethrough">jarred</del></line>
+    <line>By <del rend="strikethrough"><unclear>which</unclear></del> the kill which they have stung</line>
+    <line><del rend="strikethrough">mashed to oil</del></line>
+    <line><del rend="strikethrough">Scorpions</del> <del rend="strikethrough">killed</del></line>
+    <line><del rend="strikethrough">Scorpions</del> <del rend="strikethrough">bruised into a token</del></line>
+    <line>mashed</line>
+    <line><del rend="strikethrough">Which</del></line>
+    <line>Of the danger, <del rend="strikethrough">which is spoken</del></line>
+    <line>Even</line>
+    <line>Sera</line>
+  </zone>
+</surface>

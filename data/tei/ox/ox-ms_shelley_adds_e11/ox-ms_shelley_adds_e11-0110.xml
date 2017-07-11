@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5408" lry="7098"
+  xml:id="ox-ms_shelley_adds_e11-0110" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="108">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0110.jp2"/>
+  <zone type="main">
+    <line>Be closed &amp; ceared over their memory</line>
+    <line>As <del rend="strikethrough">some</del> the mute marble where their corpses lie."</line>
+    <line>I urged &amp; questioned still</line>
+    <line><del rend="strikethrough">I questioned of thier fate</del> she told me how</line>
+    <line>All happened &#8212; but the cold world shall not know.</line>
+    <line><del rend="strikethrough"><unclear>That</unclear> <unclear>made</unclear> <unclear>him</unclear></del></line>
+  </zone>
+</surface>

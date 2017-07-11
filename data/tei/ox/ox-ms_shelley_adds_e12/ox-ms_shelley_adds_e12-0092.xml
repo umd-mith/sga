@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0092" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="90">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0092.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">The winds</del></line>
+    <line><del rend="strikethrough">song</del></line>
+    <line>We join the <del rend="strikethrough">dance</del></line>
+    <line>and the <del rend="strikethrough"><unclear>song</unclear></del> throng,</line>
+    <line><unclear>or</unclear></line>
+    <line>By the whirlwind of gladness borne along</line>
+    <line><unclear>fish</unclear></line>
+    <line>flying leap</line>
+    <line><del rend="strikethrough">As a <unclear>m tn</unclear> with</del></line>
+    <line>As <del rend="strikethrough"><unclear>the</unclear></del>     <del rend="strikethrough">flee</del></line>
+    <line>From the Indian <del rend="strikethrough"><unclear>sea</unclear></del> deep</line>
+    <line>And mix with the sea-birds, half asleep</line>
+    <line>Whence come ye, so wild &amp; fleet</line>
+    <line><del rend="strikethrough">Like</del> For sandals of lightning are on yr.</line>
+    <line>feet</line>
+    <line>And yr. wings are soft &amp; swift as thought</line>
+    <line>And your eyes are Love which is veiled not</line>
+  </zone>
+</surface>

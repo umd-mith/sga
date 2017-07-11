@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0050" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="48">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0050.jp2"/>
+  <zone type="main">
+    <line>a thousand millions</line>
+    <line>Nothing more <unclear>exactly</unclear> proved <unclear>of the</unclear></line>
+    <line>fallacy of the <unclear>whole</unclear> scheme that</line>
+    <line>the impossibility not only of paying</line>
+    <line>in gold, but even the interest</line>
+    <line>Till <del rend="strikethrough">beneath</del> the stars <del rend="strikethrough">her</del> like a golden star</line>
+    <line>It droops on all leaves &amp; flowers that are</line>
+    <line>And trembles</line>
+    <line><unclear>vote</unclear></line>
+  </zone>
+</surface>

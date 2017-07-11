@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0116" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="113">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0116.jp2"/>
+  <zone type="main">
+    <line>It was &amp; is not &amp; let this be</line>
+    <line>Thine epitaph &amp; mine poor flower</line>
+    <line>Our fortunes are alike, poor blossom</line>
+    <line><del rend="strikethrough">when</del></line>
+    <line><del rend="strikethrough">Poor flower, our fortunes are alike</del></line>
+    <line>My place &amp; <del rend="strikethrough">thou</del> thine together</line>
+    <line><del rend="strikethrough">And</del>             <del rend="strikethrough">left her</del> bosom</line>
+    <line>time <del rend="strikethrough">thou I</del></line>
+    <line>For from the <del rend="strikethrough">moment</del> thou wert</line>
+    <line>we left her <del rend="strikethrough">gathered</del></line>
+    <line>We both began to wither<del rend="strikethrough">d</del></line>
+    <line>Thy heart</line>
+    <line>Must envy</line>
+    <line>For</line>
+    <line><del rend="strikethrough">And</del> thus, my friend, must that</line>
+    <line>become</line>
+    <line><del rend="strikethrough">When</del> When I remember not</line>
+  </zone>
+</surface>

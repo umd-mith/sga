@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5426" lry="7120"
+  xml:id="ox-ms_shelley_adds_e11-0140" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="139">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0140.jp2"/>
+  <zone type="main">
+    <line>of these is subject to change &amp; to</line>
+    <line>decay &amp; to conversion into other</line>
+    <line>forms</line>
+    <line><del rend="strikethrough">principles</del>. Yet the difference between</line>
+    <line>light &amp; earth is scarcely <del rend="strikethrough">dif</del> greater</line>
+    <line>than that which exists between</line>
+    <line><del rend="strikethrough">thought &amp;</del> life or thought<unclear>,</unclear> &amp; fire.</line>
+    <line>The difference between the two</line>
+    <line>former was never alledged as</line>
+    <line>an argument for the eternal</line>
+    <line>in</line>
+    <line>permanence of either <del rend="strikethrough">under</del> that</line>
+    <line>form under which they first</line>
+    <line>might offer themselves to our</line>
+    <line>notice. Why should the difference</line>
+    <line>between the two latter substances</line>
+    <line>be an argument for the</line>
+    <line>prolongation of the existence of</line>
+  </zone>
+</surface>

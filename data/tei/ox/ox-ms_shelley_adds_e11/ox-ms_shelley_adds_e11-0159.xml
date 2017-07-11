@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5418" lry="7110"
+  xml:id="ox-ms_shelley_adds_e11-0159" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="156">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0159.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">You desire to hear the</del></line>
+    <line>We spent the entire day in winding</line>
+    <line>among the savage &amp; solitary mountains</line>
+    <line>I <del rend="strikethrough">had no conception</del> Sometimes the path</line>
+    <line>conducts along the brink of an overhanging</line>
+    <line>precipice, sometimes thro the shade of</line>
+    <line>a forest of pines impenetrably deep.</line>
+    <line><del rend="strikethrough">Then we</del></line>
+    <line>It is because they act the parts themselves</line>
+    <line>And learn through suffering what they speak in song</line>
+  </zone>
+</surface>

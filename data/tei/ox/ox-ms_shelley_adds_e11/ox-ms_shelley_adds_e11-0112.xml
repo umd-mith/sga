@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5408" lry="7098"
+  xml:id="ox-ms_shelley_adds_e11-0112" partOf="#ox-ms_shelley_adds_e11"
+  mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="110">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0112.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">Along the</del> Voice <unclear>more</unclear> distant</line>
+    <line>O follow follow</line>
+    <line>Thro the caverns hollow</line>
+    <line><del rend="strikethrough">H<unclear>u</unclear>nt the <unclear>w</unclear></del></line>
+    <line>While the storms</line>
+    <line><unclear>To</unclear> <del rend="strikethrough"><unclear>their</unclear> cradling mountains</del></line>
+    <line>As the song floats, thou pursue &#8212;</line>
+    <line>By the woodland noontide dew</line>
+    <line>By the forests &amp; the fountains</line>
+    <line><unclear>X</unclear> By the <del rend="strikethrough">caverns &amp; the</del> <del rend="strikethrough">chasms</del> chasms</line>
+    <line>gulphs &amp; rents &amp;</line>
+    <line>Where the Earth reposed from spasm</line>
+    <line><del rend="strikethrough"><unclear>When</unclear> the</del></line>
+    <line><del rend="strikethrough">And</del> On the day when he &amp; thou</line>
+    <line>Parted<unclear>;</unclear> to commingle now &#8212;</line>
+    <line>Child of Ocean</line>
+    <line>Asia</line>
+    <line><unclear>Link</unclear> my hand in thine</line>
+    <line>Come sweet Panthea - <del rend="strikethrough"><unclear>Link</unclear></del> <del rend="strikethrough"><unclear>thine</unclear></del></line>
+    <line><unclear> ? </unclear></line>
+    <line>And follow, ere the voices fade away</line>
+  </zone>
+</surface>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-model href="../../../schemata/shelley-godwin-page.rnc"
+  type="application/relax-ng-compact-syntax"?><?xml-stylesheet type="text/xsl"
+  href="../../../xsl/page-proof.xsl"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  ulx="0" uly="0" lrx="5242" lry="6886"
+  xml:id="ox-ms_shelley_adds_e12-0053" partOf="#ox-ms_shelley_adds_e12"
+  mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="51">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0053.jp2"/>
+  <zone type="main">
+    <line><del rend="strikethrough">Swift</del> Bright</line>
+    <line>float</line>
+    <line><del rend="strikethrough">The</del> clouds <del rend="strikethrough">are</del> in Heaven</line>
+    <line>Dew        <del rend="strikethrough">Drops</del> <del rend="strikethrough">are</del></line>
+    <line><del rend="strikethrough">They</del> <del rend="strikethrough">The</del> <del rend="strikethrough">dew</del> <del rend="strikethrough">is</del> on Earth</line>
+    <line><unclear>stars</unclear> gleam</line>
+    <line><del rend="strikethrough"><unclear></unclear></del> The waves assemble on Ocean &#8212;</line>
+    <line>are gathered</line>
+    <line><del rend="strikethrough">Their</del> They <del rend="strikethrough">legions are</del> driven</line>
+    <line>By the blast of <unclear>the</unclear> <del rend="strikethrough">storm of delight by</del></line>
+    <line>By the panic of glee &#8212;</line>
+    <line>They <del rend="strikethrough">It</del> shakes with emotion</line>
+    <line>They dance in their mirth</line>
+    <line>But where are ye?</line>
+    <line>The pine-boughs are singing</line>
+    <line>Old songs with new <del rend="strikethrough">gladness</del> joyance</line>
+    <line><del rend="strikethrough">And</del> The <del rend="strikethrough">riv</del> fountains &amp; billows</line>
+    <line>Fresh <del rend="strikethrough">Their</del> music are flinging</line>
+    <line>Like the notes of a spirit</line>
+    <line>From land &amp; from sea</line>
+    <line>The streams &amp; the mountains</line>
+    <line><del rend="strikethrough">Beams <unclear>start</unclear> from their pillows</del></line>
+    <line>Are laughing with madness</line>
+    <line>But where are ye</line>
+    <line>The Serpent &amp; Dove</line>
+    <line>Are at play in the cedars</line>
+    <line>Entwining enfolding</line>
+    <line>Their</line>
+  </zone>
+</surface>
