@@ -6,34 +6,91 @@
   xml:id="ox-ms_shelley_adds_c4-0072" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="31r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0072.jp2"/>
+<zone type="library">31</zone>
   <zone type="main">
     <line><del rend="strikethrough">Wilt thou admire those</del></line>
-    <line><del rend="strikethrough">The withered <unclear> ? </unclear></del></line>
-    <line><del rend="strikethrough">They are the heirs of</del></line>
-    <line><del rend="strikethrough">And we like they of old</del>       threw &#8212;</line>
-    <line>but          those before us,</line>
-    <line><del rend="strikethrough">And</del> we have thrown, as <del rend="strikethrough">elder</del></line>
-    <line>Our shadows on it as it past away</line>
-    <line><del rend="strikethrough">See</del> <del rend="strikethrough">chained the sophists who for good or ill <unclear>it</unclear></del></line>
-    <line><del rend="strikethrough">Not oer</del> <del rend="strikethrough">us</del> <del rend="strikethrough">alone &amp;</del></line>
-    <line><del rend="strikethrough">For <unclear>the</unclear> not ours alone,  but the great Past</del></line>
-    <line><del rend="strikethrough">From</del> <del rend="strikethrough"><unclear></unclear> Babylon</del>    <del rend="strikethrough">O</del></line>
-    <line><del rend="strikethrough">Babel darkest</del></line>
-    <line><del rend="strikethrough">From</del> <del rend="strikethrough">For the</del></line>
-    <line>See all the mighty &amp; the wise enchained</line>
-    <line>For See</line>
-    <line>From ages Zoroaster, Solomon and those</line>
-    <line>to whom</line>
-    <line>Great forms <del rend="strikethrough">from</del> <del rend="strikethrough">whom</del> Egypt &amp; India</line>
-    <line>Owed <del rend="strikethrough">both their birth</del>    <unclear></unclear></line>
-    <line>what they were &amp; are; <del rend="strikethrough">but no repose</del></line>
-    <line><del rend="strikethrough">Found these in the creation or the ruin</del><del rend="strikethrough">:</del></line>
-    <line><del rend="strikethrough">wreck</del></line>
-    <line><del rend="strikethrough">See</del> <del rend="strikethrough">all</del> <del rend="strikethrough">that</del></line>
-    <line><del rend="strikethrough">See</del> <del rend="strikethrough">all of Plato</del>            in</line>
-    <line><del rend="strikethrough">On which they spent their fate of joy &amp; woes</del></line>
-    <line><del rend="strikethrough">The phantoms</del></line>
-    <line><del rend="strikethrough">See him for whom  Paradise</del></line>
-    <line><del rend="strikethrough">See which</del>   they</line>
+    <line rend="indent1"><del rend="strikethrough">The withered <unclear> ? </unclear></del></line>
+    <line rend="indent1"><del rend="strikethrough">They are the heirs of</del></line>
+    <line rend="indent1"><del rend="strikethrough">And we like they of old</del></line>
+    <line rend="indent1"><del rend="strikethrough">
+      And</del> we have
+      <add place="superlinear">but</add>
+       thrown, as
+       <mod>
+         <del rend="strikethrough">elder</del>
+       <add place="superlinear">those before us,
+       <add place="superlinear">threw</add>
+     </add>
+   </mod>
+   </line>
+   <space quantity="1" unit="line"/>
+   <line rend="indent4">&#8212;</line>
+   <space quantity="1" unit="line"/>
+
+    <line rend="indent1">Our shadows on it as it past away</line>
+    <line rend="indent2">
+      <del rend="strikethrough">See</del> <del rend="strikethrough">
+      chained the sophists who for good or ill <unclear>it</unclear></del>
+    </line>
+    <line rend="indent3"><del rend="strikethrough">Not oer</del> <del rend="strikethrough">us</del> <del rend="strikethrough">alone &amp;</del></line>
+    <line rend="indent3"><del rend="strikethrough">For <unclear>the</unclear> not ours alone,  but the great Past</del></line>
+    <line rend="indent1">
+      <del rend="strikethrough">From</del>
+      <mod>
+        <del rend="strikethrough"><unclear></unclear> Babylon</del>
+        <add place="sublinear"><del rend="strikethrough">Babel darkest</del></add>
+      </mod>
+      <space quantity="4" unit="characters"/>
+      <del rend="strikethrough">O</del></line>
+
+    <line rend="indent2"><del rend="strikethrough">From</del> <del rend="strikethrough">For the</del></line>
+    <line rend="indent3">See all the mighty &amp; the wise enchained
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">From ages</del>
+        <add place="superlinear">For See</add>
+      </mod>
+         Zoroaster, Solomon and those
+       </line>
+
+    <line>Great forms
+      <mod>
+        <del rend="strikethrough">from whom</del>
+        <add place="superlinear">to whom</add>
+      </mod>
+          Egypt &amp; India
+        </line>
+    <line rend="indent1">Owed
+      <mod>
+        <del rend="strikethrough">both their birth</del>
+        <add place="sublinear">what they were &amp; are;
+          <del rend="strikethrough">but not repose</del>
+        </add>
+      </mod>
+    </line>
+    <line rend="indent1">
+      <del rend="strikethrough">Found these in the creation or the ruin : &#8212;</del>
+    <add place="sublinear"><del rend="strikethrough">wreek</del></add>
+  </line>
+    <line>
+      <del rend="strikethrough">See</del>
+      <del rend="strikethrough">all</del>
+      <del rend="strikethrough">that</del>
+    </line>
+    <line rend="indent1">
+      <del rend="strikethrough">See</del> <del rend="strikethrough">all of Plato</del>
+    </line>
+    <line><del rend="strikethrough">On which they spent their fate</del>
+    <mod>
+      <del rend="strikethrough"> of</del>
+    <add place="superlinear">in</add>
+  </mod>
+  <del rend="strikethrough"> joy &amp; woes &#8212;</del>
+</line>
+    <line rend="indent3"><del rend="strikethrough">The phantoms</del></line>
+    <line rend="indent2"><del rend="strikethrough">See him for whom  Paradise</del></line>
+    <line rend="indent3"><del rend="strikethrough">See which</del>   they</line>
   </zone>
 </surface>

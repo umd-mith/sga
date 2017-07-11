@@ -7,27 +7,84 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="46r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0100.jp2"/>
   <zone type="main">
-    <line>Fiercely extolled the fortune of her star.</line>
-    <line>A moving arch of victory, the vermilion</line>
-    <line>plumes</line>
-    <line>And green &amp; azure <del rend="strikethrough">wings</del> of Iris had</line>
-    <line>Built high over her wind-winged pavilion</line>
-    <line>And underneath aetherial glory clad</line>
-    <line>The <del rend="strikethrough">forest</del> wilderness, and far before her flew</line>
-    <line><del rend="strikethrough">A path</del></line>
-    <line>The tempest of the splendour which forbade</line>
-    <line><del rend="strikethrough">The shadows of the <unclear>wars</unclear></del></line>
-    <line>Shadow to fall from leaf or stone<del rend="strikethrough">;</del> the</line>
-    <line>crew</line>
+    <line>
+      Fiercely extolled the fortune of her star.
+    </line>
+    <space quantity="1" unit="line"/>
+    <line>
+      A moving arch of victory, the vermilion
+    </line>
+
+    <line>
+      And green &amp; azure
+      <mod>
+        <del rend="strikethrough">wings</del>
+        <add place="superlinear">plumes</add>
+      </mod>
+       of Iris had
+     </line>
+    <line>
+      Built high over her wind-winged pavilion
+    </line>
+    <line>
+      And underneath aetherial glory clad
+    </line>
+    <line>
+      The <del rend="strikethrough">forest</del> wilderness, and far before her flew
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">A path</del>
+        <add place="sublinear">The tempest of the splendour which forbade</add>
+      </mod>
+    </line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The shadows of the <unclear>wars</unclear></del>
+      <add place="sublinear">Shadow to fall from leaf or stone<del rend="strikethrough">;</del> the
+    <add place="sublinear">crew</add>
+  </add>
+</mod>
+</line>
+
     <line><del rend="strikethrough">Who</del> Seemed in that light like atomies that dance</line>
     <line><del rend="strikethrough">Within a ray that dimly struggles through</del></line>
-    <line>Within a sun beam; &#8212; some upon the new</line>
-    <line><del rend="strikethrough">In cranny of a chamber</del></line>
-    <line>Embroidery</line>
-    <line><del rend="strikethrough">Investitures</del> of flowers that did enhance</line>
-    <line>desart</line>
-    <line>The grassy vesture of the <del rend="strikethrough">forest</del>, played,</line>
-    <line><del rend="strikethrough">fleet</del></line>
-    <line>Forgetful of the chariot's <del rend="strikethrough">swift</del> advance</line>
+    <line>
+      Within a sun beam; &#8212; some upon the new
+    </line>
+
+    <line>
+      <del rend="strikethrough">In cranny of a chamber</del>
+  </line>
+
+    <space quantity="1" unit="line"/>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Investitures</del>
+        <add place="superlinear">Embroidery</add>
+      </mod>
+       of flowers that did enhance
+     </line>
+
+    <line>The grassy vesture of the
+      <mod>
+        <del rend="strikethrough">forest,</del>
+        <add place="superlinear">desart</add>
+      </mod> played,
+    </line>
+
+    <line>Forgetful of the chariot's
+      <mod>
+        <del rend="strikethrough">swift</del>
+        <add place="superlinear">
+          <del rend="strikethrough">fleet</del>
+        </add>
+      </mod>
+       advance
+     </line>
   </zone>
 </surface>

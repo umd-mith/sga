@@ -6,40 +6,137 @@
   xml:id="ox-ms_shelley_adds_c4-0054" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="23r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0054.jp2"/>
+<zone type="library">23</zone>
   <zone type="main">
-    <line>the old moon</line>
-    <line><unclear>her</unclear> dead</line>
-    <line>The ghost of <del rend="strikethrough">its</del> <del rend="strikethrough">old</del> Mother, whose dim form</line>
-    <line>Bends in dark <del rend="strikethrough">air</del>               her infants</line>
-    <line>ether from <del rend="strikethrough">the silver</del> chair</line>
-    <line>silent</line>
-    <line>So came a chariot on the <del rend="strikethrough">invisible</del> storm</line>
-    <line>rushing</line>
-    <line>Of its own <del rend="strikethrough"><unclear>roy</unclear></del> splendour, and a Shape</line>
-    <line>as</line>
-    <line>So sate within <del rend="strikethrough">like</del> one whom years deform</line>
-    <line>Beneath a dusky hood &amp; double cape</line>
-    <line>Crouching <del rend="strikethrough">within beneath</del></line>
-    <line><del rend="strikethrough">Sitting</del> <del rend="strikethrough">within the</del> <del rend="strikethrough">shadow</del> <del rend="strikethrough">of</del> <del rend="strikethrough">a</del> <del rend="strikethrough">tomb</del></line>
-    <line><del rend="strikethrough">in</del> <del rend="strikethrough">shadow</del>, <unclear>fo</unclear></line>
-    <line><del rend="strikethrough">For all over it was bent the</del></line>
-    <line><del rend="strikethrough">Bending</del> <del rend="strikethrough">x</del> <del rend="strikethrough">behind</del></line>
-    <line>Crouching <del rend="strikethrough">within</del> the shadow of a tomb</line>
-    <line>oer what seemed the head a cloud like</line>
-    <line>And <del rend="strikethrough">over it, like a widows</del> <del rend="strikethrough">veil</del> <del rend="strikethrough">of</del> crape</line>
-    <line>Was bent a dun &amp; faint aetherial gloom</line>
-    <line>Softening Tempering</line>
-    <line><del rend="strikethrough">Obscure amid the light...</del> <del rend="strikethrough">the <unclear>cars</unclear></del></line>
-    <line><del rend="strikethrough">Amid</del> the light; <del rend="strikethrough">out</del> upon the chariots beam</line>
-    <line><del rend="strikethrough">Sate</del> <del rend="strikethrough">There sate</del> a Janus-visaged Shadow did assume</line>
-    <line><del rend="strikethrough">whirlwind</del></line>
-    <line>wonder</line>
-    <line>guidance of that <del rend="strikethrough">lightning</del> winged team</line>
-    <line>The <del rend="strikethrough">rule</del> <del rend="strikethrough">of</del> <del rend="strikethrough">the</del></line>
-    <line>in thick lightnings</line>
-    <line>B <unclear>For</unclear>  <del rend="strikethrough">those</del> who drew it <del rend="strikethrough">lost in the thick light</del></line>
-    <line>The Shapes which         alone on</line>
-    <line><unclear>E</unclear> Were lost: I heard upon the airs <del rend="strikethrough">slow</del> stream</line>
-    <line>soft</line>
+    <line>
+      The ghost of
+      <mod>
+        <del rend="strikethrough">its old </del>
+        <add place="superlinear"><unclear>her</unclear>dead
+        <add place="superlinear">the old dead moon</add>
+      </add>
+    </mod> Mother, whose dim form
+  </line>
+
+    <line>Bends in dark
+      <mod>
+        <del rend="strikethrough">air</del>
+        <add place="sublinear">ether</add>
+      </mod>
+     form
+     <mod>
+    <del rend="strikethrough">the silver</del>
+  <add place="superlinear">her infants</add>
+</mod>
+chair
+</line>
+    <line rend="indent1">So came a chariot on the
+    <mod>
+      <del rend="strikethrough">invisible</del>
+    <add place="superlinear">silent</add>
+  </mod>
+    storm
+  </line>
+    <line rend="indent2">Of its own
+    <mod>
+    <del rend="strikethrough"><unclear>joy</unclear></del>
+  <add place="superlinear">rushing</add>
+</mod>
+     splendour, and a Shape
+   </line>
+    <line rend="indent2">So sate within
+    <mod>
+    <del rend="strikethrough">like</del>
+    <add place="superlinear">as</add>
+  </mod>
+     one whom years deform
+   </line>
+   <space quantity="1" unit="line"/>
+    <line rend="indent2">
+      Beneath a dusky hood &amp; double cape
+    </line>
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">Sitting within the</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Crouching within beneath</del>
+      </add>
+  <add place="sublinear"><del rend="strikethrough">in shadow,</del></add>
+</mod>
+    <del rend="strikethrough">shadow of a tomb</del>
+  </line>
+
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">For all over it was bent in</del>
+    <add place="sublinear"><del rend="strikethrough">Bending, behind</del></add>
+  </mod>
+   </line>
+    <line rend="indent4">Crouching
+      <del rend="strikethrough">within</del> the shadow of a tomb
+    </line>
+
+  <line rend="indent4">
+    <mod>
+      <del rend="strikethrough">And over it, like a widows</del>
+    <add place="superlinear">oer,what seemed the head</add>
+  </mod>
+
+  <mod><del rend="strikethrough">veil of </del>
+    <add place="superlinear">cloud like</add>
+  </mod>
+  crape
+</line>
+<space quantity="3" unit="lines"/>
+    <line rend="indent5">Was bent a dun &amp; faint aetherial gloom</line>
+
+    <line rend="indent5">
+    <mod>
+    <del rend="strikethrough">Obscure amid the light...</del>
+      <add place="superlinear">Softening Tempering</add>
+  </mod>
+    <del rend="strikethrough">the <unclear>cars</unclear></del>
+  </line>
+    <line rend="indent5">
+      <del rend="strikethrough">Amid</del> the light;
+      <del rend="strikethrough">out</del> upon the chariots beam
+    </line>
+    <line rend="indent5">
+      <del rend="strikethrough">Sate</del>
+      <del rend="strikethrough">There sate</del>
+       a <hi rend="underline">Janus</hi>-visaged Shadow did assume
+     </line>
+    <line rend="indent5">
+    The
+    <mod>
+      <del rend="strikethrough">rule of the</del>
+      <add place="superlinear">guidance of that </add>
+    </mod>
+      <mod>
+        <del rend="strikethrough">lightning</del>
+      <add place="superlinear"><del rend="strikethrough">whirlwind</del>
+          <add place="sublinear">wonder</add>
+      </add>
+    </mod>
+    winged team
+  </line>
+
+    <line rend="indent5">
+<mod>
+  <add place="sublinear">The shapes which</add>
+<del rend="strikethrough">But</del>
+<add> <del rend="strikethrough">For</del></add>
+      <del rend="strikethrough">those</del>
+    </mod>
+      who drew it
+<mod><add place="superlinear">in thick lightnings</add>
+<del rend="strikethrough">lost in the thick light</del></mod></line>
+
+    <line rend="indent5"><retrace>Were</retrace> lost: I heard
+<mod><add place="superlinear">alone on</add><del rend="strikethrough">upon</del></mod>
+ the airs
+<mod><add place="sublinear">soft</add><del rend="strikethrough">slow</del></mod>
+ stream</line>
+
   </zone>
 </surface>

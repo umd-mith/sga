@@ -6,32 +6,122 @@
   xml:id="ox-ms_shelley_adds_c4-0092" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="42r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0092.jp2"/>
+<zone type="library">42</zone>
   <zone type="main">
     <line>Or the slant morning beams that fell among</line>
     <line>The trees, or the soft shadows <del rend="strikethrough">interposed</del> of the trees</line>
-    <line>And <del rend="strikethrough">ever   her slow slow feet</del>      M  .</line>
-    <line><del rend="strikethrough">to the ever unreposing</del> song</line>
-    <line><del rend="strikethrough">her <unclear>gri</unclear> feet</del> <del rend="strikethrough">to</del> the</line>
-    <line>opiate <unclear>song</unclear></line>
-    <line>And her feet ever to the <del rend="strikethrough">ceaseless</del> song</line>
+    <line>And
+      <mod>
+        <del rend="strikethrough">ever her slow slow feet</del>
+      <add place="sublinear">
+        <del rend="strikethrough">to the ever unreposing</del> song
+        <space quantity="2" unit="characters"/>
+        <hi rend="underline">M.</hi>
+        <add place="sublinear">
+          <del rend="strikethrough">her <unclear>gri</unclear> feet to the</del>
+        </add>
+      </add>
+    </mod>
+  </line>
+  <line> And her feet ever to the
+    <mod>
+      <del rend="strikethrough">ceaseless</del>
+      <add place="superlinear">opiate</add>
+    </mod>
+    song
+    <add place="superlinear">song</add>
+  </line>
+  <line rend="indent4">&#8212;</line>
+    <space quantity="1" unit="line"/>
     <line>Of leaves &amp; winds &amp; waves &amp; birds &amp; bees</line>
-    <line><unclear>dancing</unclear> drops                      new</line>
-    <line>And falling dew moved in a measure <del rend="strikethrough">strange</del></line>
-    <line>sweet             summer <unclear>evening</unclear></line>
-    <line>Yet <del rend="strikethrough">beautiful</del>, as on the <del rend="strikethrough">invisible</del> breeze</line>
-    <line>shape</line>
-    <line><del rend="strikethrough">Moves</del> Up from the lake a <del rend="strikethrough">cloud</del> of golden dew</line>
-    <line>a      planet</line>
-    <line>Moves <del rend="strikethrough">twixt</del> two rocks athwart <del rend="strikethrough">the</del> rising <del rend="strikethrough">moon</del></line>
-    <line>Between up the east,</line>
-    <line><del rend="strikethrough">Moves</del> <del rend="strikethrough">in wild</del></line>
-    <line><del rend="strikethrough">And tram</del></line>
-    <line><del rend="strikethrough">Tramples the wind</del> where eagle never flew. &#8212;</line>
-    <line>Dances i' the</line>
-    <line><del rend="strikethrough">And still her</del> <del rend="strikethrough">first in beauty</del></line>
-    <line>feet no less than the sweet tune</line>
-    <line>blot</line>
-    <line>To which they moved, seemed as they moved, to <del rend="strikethrough">darken</del></line>
+
+    <line>And falling
+      <add place="superlinear"><unclear>dancing</unclear></add>
+       <mod>
+         <del rend="strikethrough">dew</del>
+         <add place="superlinear">drops</add>
+       </mod>
+        moved in a measure
+        <mod>
+          <del rend="strikethrough">strange</del>
+        <add place="superlinear">new</add>
+      </mod>
+    </line>
+
+    <line>Yet
+      <mod>
+        <del rend="strikethrough">beautiful,</del>
+        <add place="superlinear">sweet</add>
+      </mod>
+       as on the
+       <mod>
+         <del rend="strikethrough">invisible</del>
+         <add place="superlinear">summer</add>
+         <add place="superlinear"><unclear>evening</unclear></add>
+       </mod>
+        breeze
+      </line>
+      <line rend="indent4">&#8212;</line>
+      <space quantity="1" unit="line"/>
+
+
+    <line>
+      <del rend="strikethrough">Moves</del> Up from the lake a
+      <mod>
+        <del rend="strikethrough">cloud</del>
+        <add place="superlinear">shape</add>
+      </mod>
+       of golden dew
+     </line>
+
+    <line>
+      <mod>
+         <del rend="strikethrough">Moves twixt</del>
+         <add place="sublinear">Between up the east,
+         <add place="sublinear">
+          <del rend="strikethrough">Moves in wild</del>
+        </add>
+      </add>
+         </mod>
+         two rocks athwart
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">a</add>
+      </mod>
+       rising
+       <mod>
+         <del rend="strikethrough">moon</del>
+       <add place="superlinear">planet</add>
+     </mod>
+   </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And tram</del>
+        <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">Tramples the wind</del>
+          <add place="sublinear">Dances i' the</add>
+        </mod>
+           where eagle never flew. &#8212;
+        </add>
+      </mod>
+      </line>
+  <space quantity="1" unit="line"/>
+    <line>
+      <del rend="strikethrough">And still her</del>
+      <mod>
+        <del rend="strikethrough">feet in beauty</del>
+        <add place="sublinear">feet no less than the sweet tun</add>
+      </mod>
+    </line>
+
+    <line>To which they moved, seemed as they moved, to
+      <mod>
+        <del rend="strikethrough">darken</del>
+      <add place="superlinear">blot</add>
+    </mod>
+  </line>
     <line>The thoughts of him who gazed on them, &amp; soon</line>
     <line><del rend="strikethrough">No</del> All that was seemed as if it had been not &#8212;</line>
   </zone>

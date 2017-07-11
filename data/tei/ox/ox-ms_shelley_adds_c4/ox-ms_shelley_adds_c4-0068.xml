@@ -6,38 +6,124 @@
   xml:id="ox-ms_shelley_adds_c4-0068" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="34r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0068.jp2"/>
+<zone type="library">34</zone>
+<zone type="calculation">8</zone>
   <zone type="main">
-    <line>Or <del rend="strikethrough">that which of it yet</del></line>
-    <line>dregs</line>
-    <line>Or those gross <del rend="strikethrough">shadow</del> of it which yet remained</line>
-    <line><del rend="strikethrough">smoke</del></line>
-    <line>they     should</line>
-    <line>Out of the grave to which <del rend="strikethrough">it</del> tends, <del rend="strikethrough">did</del> I</line>
-    <line>may</line>
-    <line><del rend="strikethrough">Seek to distinguished</del> any who <del rend="strikethrough">have</del> stained</line>
-    <line>Have sought to <del rend="strikethrough">mark</del></line>
-    <line>with words or deeds <del rend="strikethrough">the doubtful</del></line>
-    <line><del rend="strikethrough">Of gilt they new youngest a</del></line>
-    <line><del rend="strikethrough">birth</del></line>
-    <line><del rend="strikethrough">birth</del> of <del rend="strikethrough">the</del> <del rend="strikethrough">the</del></line>
-    <line>rise    the new tide of time</line>
-    <line><del rend="strikethrough">But my <unclear>obscure</unclear> guide said</del>...</line>
-    <line>Or have adorned the doubtful progeny</line>
-    <line>Of the new birth of this new tide of time</line>
-    <line><del rend="strikethrough">So</del></line>
-    <line><del rend="strikethrough">Had not my guide said</del>  <del rend="strikethrough">that is  Voltaire, &amp; he</del></line>
-    <line>fathers lived                    <del rend="strikethrough">we</del></line>
-    <line>In which our <del rend="strikethrough">fathers were born</del> &amp; we shall die</line>
-    <line><del rend="strikethrough">Sought</del></line>
-    <line>And <del rend="strikethrough">And would</del> <del rend="strikethrough">have</del></line>
-    <line><del rend="strikethrough"><unclear>But</unclear> my guide said</del>...</line>
-    <line>And <del rend="strikethrough">others tell, in</del></line>
-    <line>to tell</line>
-    <line><del rend="strikethrough">And</del> others <del rend="strikethrough">tell</del> our sons in prose or rhyme</line>
-    <line>Whilst</line>
-    <line>The manhood of the child; unless my guide</line>
-    <line>Had said behold Voltaire &#8212; We two would climb</line>
-    <line><del rend="strikethrough">Where Plato &amp; his pupil side by side</del></line>
-    <line><del rend="strikethrough">As from the centre &amp; from circumference</del></line>
+  <delSpan rend="vertical_line" spanTo="#c4-68.21"/>
+     <line>Or <del rend="strikethrough">that which of it yet</del></line>
+
+    <line rend="indent1">Or those gross
+      <mod>
+        <del rend="strikethrough">shadow</del>
+        <add place="sublinear"><del rend="strikethrough">smoke</del></add>
+        <add place="superlinear">dregs</add>
+      </mod>
+       of it which yet remained
+     </line>
+    <line rend="indent1">
+      Out of the grave to which
+      <mod>
+        <del rend="strikethrough">it </del>
+        <add place="superlinear">they</add>
+      </mod>
+     tends,
+     <mod>
+       <del rend="strikethrough">did </del>
+       <add place="superlinear">should</add>
+     </mod>
+      I
+    </line>
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Seek to distinguished</del>
+        <add place="sublinear">Have sought to
+          <del rend="strikethrough">mark</del>
+        </add>
+      </mod>
+       any who
+       <add place="sublinear">may</add>
+        <del rend="strikethrough">have</del> stained
+      </line>
+
+    <line rend="indent1"><del rend="strikethrough">Of gilt thee</del>
+    <mod>
+      <del rend="strikethrough">new youngest a</del>
+    <add place="superlinear">with words or deeds
+    <del rend="strikethrough">the doubtful</del>
+  <add place="sublinear"><del rend="strikethrough">birth</del>
+<add place="sublinear"><del rend="strikethrough">birth of the the</del>
+<add place="sublinear">rise of the new tide of time</add>
+</add>
+ </add>
+  </add>
+  </mod>
+</line>
+
+    <line rend="indent1"><del rend="strikethrough">But my <unclear>obscure</unclear> guide said</del>...</line>
+    <line rend="indent1">Or have adorned the doubtful progeny</line>
+    <line rend="indent2">Of the new birth of this new tide of time</line>
+
+    <line>
+      <del rend="strikethrough">Had not my guide said</del>
+  <mod>
+    <del rend="strikethrough">that is</del>
+    <add place="superlinear">so</add>
+  </mod>
+<del rend="strikethrough"> Voltaire, &amp; he</del>
+<add place="sublinear"><del rend="strikethrough">we</del></add>
+</line>
+
+    <line rend="indent1">In which our
+      <mod>
+        <del rend="strikethrough">fathers were born </del>
+        <add place="superlinear">fathers lived</add>
+      </mod>
+       &amp; we shall die
+     </line>
+    <line rend="indent2"><del rend="strikethrough">Sought</del></line>
+    <space quantity="1" unit="line"/>
+    <zone type="sketch">
+      <!--sailboat sketch-->
+
+
+  </zone>
+    <line rend="indent4"> &#8212;</line>
+    <line>
+      <del rend="strikethrough">And</del>
+      <del rend="strikethrough">And would</del>
+    <del rend="strikethrough">have</del>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough"><unclear>But</unclear> my guide said</del>...
+    </line>
+    <line>And <del rend="strikethrough">others</del>
+    <mod>
+      <del rend="strikethrough"> tell, in</del>
+    <add place="sublinear">to tell</add>
+  </mod>
+</line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="sublinear">Whilst</add>
+      </mod>
+       others <del rend="strikethrough">tell</del> our sons in prose or rhyme
+     </line>
+
+    <line rend="indent1">
+      The manhood of the child; unless my guide
+    </line>
+    <line rend="indent1">
+      Had said behold Voltaire &#8212; We two would climb
+    </line>
+    <line rend="indent1">
+      <del rend="strikethrough">Where Plato &amp; his pupil side by side</del>
+  </line>
+    <line rend="indent1">
+      <del rend="strikethrough">As from the centre &amp;
+      <del rend="strikethrough">from</del> circumference</del>
+    </line>
+    <anchor xml:id="c4-68.21"/>
   </zone>
 </surface>

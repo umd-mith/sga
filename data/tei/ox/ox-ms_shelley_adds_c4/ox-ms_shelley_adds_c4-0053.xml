@@ -7,37 +7,78 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="22v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0053.jp2"/>
   <zone type="main">
+    <note>
+      entire page appears reverso in MS
+    </note>
+    <delSpan rend="vertical_line" spanTo="#c4-53.32"/>
     <line><del rend="strikethrough">The flowers which in the</del></line>
-    <line><del rend="strikethrough">And Nor</del></line>
-    <line><del rend="strikethrough">Yet it</del></line>
-    <line><del rend="strikethrough"><unclear>And</unclear></del> <del rend="strikethrough">None seemed his foes</del></line>
-    <line><del rend="strikethrough">Yet no one seemed</del>          vain</line>
-    <line>the <del rend="strikethrough">idle</del> wind could sow</line>
-    <line><del rend="strikethrough">As</del> And all the flowers which <del rend="strikethrough">idly dared to grow</del></line>
-    <line>way                     &amp; spoiled</line>
-    <line>Beside this <del rend="strikethrough">path</del> <del rend="strikethrough">were  bruised</del> &amp; Trampled down</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">all the rivulets which dared to flow</del></line>
-    <line><del rend="strikethrough">every little rill which dared to flow</del></line>
-    <line><del rend="strikethrough">And many sought <unclear>whic</unclear></del></line>
-    <line><del rend="strikethrough">Beside it was choked</del></line>
-    <line><del rend="strikethrough">And on a <unclear>new</unclear></del></line>
-    <line><del rend="strikethrough">And any <unclear>there</unclear></del></line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">every all the wells &amp; rills</del></line>
-    <line><del rend="strikethrough">The <unclear>on</unclear></del> Not one among the many seemed to know</line>
-    <line>as</line>
-    <line><del rend="strikethrough">like</del> <del rend="strikethrough">grey</del></line>
-    <line><del rend="strikethrough">even as</del></line>
-    <line>His way, but <del rend="strikethrough">as <unclear>the</unclear></del> moths when grass is mown</line>
-    <line>Go blindly <del rend="strikethrough"><unclear>flutt</unclear></del> fluttering from the <unclear>moving heap</unclear></line>
-    <line><del rend="strikethrough">As old &amp; young</del></line>
-    <line><del rend="strikethrough">Or as the winged seeds ere</del></line>
-    <line>The heartsease, &amp; which where nothing else will grow</line>
-    <line>and to <unclear> </unclear> <del rend="strikethrough">so</del> <del rend="strikethrough">soiled</del></line>
-    <line>were bruised <del rend="strikethrough">was</del> <del rend="strikethrough">soiled</del></line>
-    <line>was <unclear> </unclear></line>
-    <line>Lives in old walls, <del rend="strikethrough">pale</del> <del rend="strikethrough"><unclear> </unclear></del> in the hand was soiled</line>
-    <line>was pale</line>
-    <line>were</line>
-    <line><del rend="strikethrough">And  except <unclear>one</unclear></del></line>
+    <line rend="indent1"><del rend="strikethrough">And Nor</del></line>
+    <line rend="indent1"><del rend="strikethrough">Yet it</del></line>
+    <line rend="indent2"><del rend="strikethrough"><unclear>And</unclear></del>
+    <del rend="strikethrough">None seemed his foes-</del></line>
+    <line rend="indent2"><del rend="strikethrough">Yet no one seemed</del></line>
+    <line rend="indent2">the <del rend="strikethrough"> idle </del> wind could sow</line>
+
+    <line rend="indent2"><del rend="strikethrough">As</del>
+    And all the flowers which
+<mod><del rend="strikethrough">idly dared to grow</del>
+<mod> <add place="superlinear">the<del rend="strikethrough">idle</del>wind could sow</add></mod>
+  <add place="superlinear">vain</add></mod></line>
+
+
+    <line rend="indent2">Beside this
+    <mod><add place="superlinear">way</add><del rend="strikethrough">path</del></mod>
+    <del rend="strikethrough">were  bruised</del>
+    &amp; trampled down<add place="superlinear">&amp; spoiled</add></line>
+
+    <line rend="indent2">
+    <del rend="strikethrough">And</del>
+    <mod><del rend="strikethrough">all the rivulets which dared to flow</del>
+  <add place="sublinear"><del rend="strikethrough">every little rill which dared to flow</del></add>
+     </mod></line>
+
+    <line rend="indent2"><del rend="strikethrough">And many sought <unclear>whic</unclear></del></line>
+    <line rend="indent2"><del rend="strikethrough">Beside it was choked</del></line>
+    <line rend="indent2"><del rend="strikethrough">And on a <unclear>new</unclear></del></line>
+    <line rend="indent2"><del rend="strikethrough">And any <unclear>there</unclear></del></line>
+    <line rend="indent2"><del rend="strikethrough">And</del>
+    <del rend="strikethrough">every all the wells &amp; rills</del></line>
+
+    <line rend="indent2"><del rend="strikethrough">The <unclear>on</unclear></del> Not one among the many seemed to know</line>
+
+    <line rend="indent1">His way, but
+<mod>
+  <mod>
+  <del rend="strikethrough">even as</del>
+</mod>
+<mod>  <add place="superlinear"><del rend="strikethrough">like</del> grey</add>
+  <add place="superlinear">as</add>
+  </mod>
+</mod>
+moths when grass is mown</line>
+
+    <line rend="indent2">Go blindly
+      <del rend="strikethrough"><unclear>flutt</unclear></del>
+      fluttering from the <unclear>moving heap,</unclear></line>
+
+    <line rend="indent1"><del rend="strikethrough">As old &amp; young</del></line>
+    <line rend="indent2"><del rend="strikethrough">Or as the winged seeds ere</del></line>
+    <line rend="indent1">The heartsease, <del rend="strikethrough">&amp;</del>
+     which where nothing else will grow</line>
+
+    <line rend="indent1">Lives in old walls,
+      <mod>
+        <del rend="strikethrough">pale <unclear>[   ]</unclear></del>
+          <mod> <add place="superlinear"><del rend="strikethrough">was <unclear>[ ]</unclear></del></add><mod>
+        <add place="superlinear">were bruised <space quantity="3" unit="characters"/></add></mod>
+      <mod>  <add place="superlinear"><del rend="strikethrough">and to <unclear>grow</unclear> so soiled</del></add></mod>
+          <mod><add place="sublinear">was pale</add> </mod>
+          <add place="sublinear">were</add> </mod>
+        </mod>
+      in the hand was soiled</line>
+
+
+      <line rend="indent2"><del rend="strikethrough">And <unclear>except</unclear></del><unclear>one</unclear></line>
+<anchor xml:id="c4-53.32"/>
   </zone>
 </surface>

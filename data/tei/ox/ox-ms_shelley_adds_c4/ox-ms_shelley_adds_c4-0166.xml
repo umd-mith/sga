@@ -6,22 +6,25 @@
   xml:id="ox-ms_shelley_adds_c4-0166" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="79v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0166.jp2"/>
+<zone type="pagination"> 2 </zone>
   <zone type="main">
-    <line>The moon made thy lips pale, beloved</line>
-    <line>The wind made thy bosom chill;</line>
+    <line>The moon made thy lips pale, beloved-</line>
+    <line rend="indent1">The wind made thy bosom chill;</line>
     <line>The night did shed on thy dear head</line>
     <line>Its frozen dew, &amp; thou didst lie</line>
-    <line>Where the bitter breath of th<del rend="strikethrough">e</del>e naked sky</line>
-    <line>Might visit thee at will.</line>
-    <line>Misery.- a fragment</line>
+    <line>Where the bitter breath of th<retrace>e</retrace> naked sky</line>
+    <line rend="indent1">Might visit thee at will...</line>
+    <space quantity="4" unit="lines"/>
+    <line rend="indent2">Misery.- a fragment</line>
     <line>Come, be happy, sit near me</line>
     <line>Shadow-vested Misery.</line>
     <line>Coy, unwilling silent bride,</line>
     <line>Mourning in thy robe of pride,</line>
-    <line>Desolation deified.</line>
+    <line rend="indent1">Desolation deified.</line>
+    <space quantity="2" unit="lines"/>
     <line>Come, be happy; sit near me:</line>
     <line>Sad as I may seem to thee</line>
     <line>I am merrier yet than thou,</line>
-    <line>Lady, whose imperial brow</line>
+    <line rend="indent1">Lady, whose imperial brow</line>
   </zone>
 </surface>

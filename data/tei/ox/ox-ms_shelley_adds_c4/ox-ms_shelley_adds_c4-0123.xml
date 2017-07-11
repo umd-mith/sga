@@ -6,35 +6,120 @@
   xml:id="ox-ms_shelley_adds_c4-0123" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="58r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0123.jp2"/>
+<zone type="library">58</zone>
   <zone type="main">
+    <zone type="sketch">
+      <!--sketch of tree-->
+    </zone>
     <line><del rend="strikethrough">When <unclear>Aprils</unclear> twin sister May</del></line>
     <line><del rend="strikethrough">When with sad countenance and steps;</del></line>
-    <line>When I unconscious <del rend="strikethrough">of the wrecks below</del></line>
-    <line><del rend="strikethrough">A pilgrim</del>         <del rend="strikethrough">Day</del>      how     slow</line>
-    <line>to the <del rend="strikethrough">Dawn</del>, <del rend="strikethrough"><unclear>saw</unclear></del></line>
-    <line>When I went forth <del rend="strikethrough">with silent steps &amp; slow</del></line>
-    <line><del rend="strikethrough">Lift itself</del> <del rend="strikethrough"><unclear>winged</unclear></del> &#8212;-</line>
+    <line>
+      <del rend="strikethrough">When I unconscious of the wrecks below</del>
+    </line>
+    <line rend="indent5">&#8212;</line>
+
+    <line>
+      <del rend="strikethrough">A pilgrim</del>
+  </line>
+
+    <line>When I went forth
+<mod>
+  <del rend="strikethrough">with silent steps &amp; slow</del>
+    <add place="superlinear">to the
+      <mod><del rend="strikethrough">Dawn,</del>
+      <add place="superlinear">
+        <del rend="strikethrough">Day</del>
+      </add>
+    </mod>
+    <mod>   <del rend="strikethrough">saw</del>
+     <add place="superlinear">how slow</add></mod>
+   </add>
+ </mod>
+ </line>
+
+    <line>
+      <del rend="strikethrough">Lift itself</del>
+      <del rend="strikethrough"><unclear>winged</unclear>
+    </del> &#8212;
+  </line>
     <line><del rend="strikethrough">Rise</del> <del rend="strikethrough">like a Spirit from the grave</del></line>
-    <line>To see the morning oer <del rend="strikethrough">the mountains break</del></line>
-    <line>It   She rose in glory from <del rend="strikethrough">the</del> her billowy grave</line>
-    <line>I stood <del rend="strikethrough">upon a pine rocky Apennine</del></line>
-    <line><del rend="strikethrough"><unclear>to</unclear></del></line>
-    <line>Before  <del rend="strikethrough">me rose, the Day, behind</del> <del rend="strikethrough">me sunk</del></line>
-    <line><unclear>No</unclear> <unclear>I</unclear> <unclear>alone</unclear> <unclear>wish</unclear>       <del rend="strikethrough">the night</del></line>
-    <line>I trod upon <unclear> ? </unclear> <del rend="strikethrough">Apennine</del>, the day</line>
-    <line><del rend="strikethrough">Before me rose,  the</del> <del rend="strikethrough">night</del></line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">Behind  was</del></line>
+    <line>
+      <del rend="strikethrough">To see the morning oer the mountains break</del>
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">I stood upon a pine rocky Apennine</del>
+      <add place="superlinear">She rose in glory from
+      <mod>
+          <del rend="strikethrough">the</del>
+        <add> her</add>
+      </mod>
+         billowy grave
+       </add>
+    </mod>
+    </line>
+
+    <line>
+        <del rend="strikethrough">Before me rose, the Day, behind</del>
+        <del rend="strikethrough">me sunk</del>
+      <add place="sublinear">
+        <del rend="strikethrough">the night</del>
+      </add>
+    </line>
+    <line>
+      <add place="superlinear">
+        <unclear>No I alone wish</unclear>
+      </add>
+      I trod upon <gap quantity="4" unit="chars"/>
+      <del rend="strikethrough">Apennine,</del>
+       the day
+     </line>
+    <line>
+      <del rend="strikethrough">Before me rose,
+        <space quantity="3" unit="chars"/>
+      the
+    </del>
+    <del rend="strikethrough">night</del>
+  </line>
+    <line>
+      <del rend="strikethrough">The</del> <del rend="strikethrough">Behind  was</del>
+    </line>
     <line>rose</line>
-    <line><del rend="strikethrough">Before me sank the day, behind</del></line>
-    <line><del rend="strikethrough">I lay upon</del></line>
-    <line><del rend="strikethrough">Before me was the day, behind the night</del></line>
-    <line>its <del rend="strikethrough">cloudless</del></line>
-    <line><del rend="strikethrough">cave</del></line>
-    <line><del rend="strikethrough">The Heaven above me, and the</del> <del rend="strikethrough"><unclear>sapphire</unclear></del></line>
-    <line>Was <del rend="strikethrough">mirrored in the ocean at my feet</del></line>
-    <line>And <del rend="strikethrough">I <unclear>alike had</unclear></del></line>
+    <line><del rend="strikethrough">Before me </del>
+    <mod>
+      <del rend="strikethrough">sank</del>
+    <add place="superlinear">rose</add>
+  </mod>
+  <del rend="strikethrough"> the day, behind</del>
+</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">I lay upon</del>
+      <add place="sublinear">
+        <del rend="strikethrough">Before me was the day, behind the night</del>
+      </add>
+      </mod>
+    </line>
+
+    <line>
+      <del rend="strikethrough">The Heaven above me, and </del>
+      <mod>
+        <del rend="strikethrough">the <unclear>sapphire</unclear></del>
+      <add place="superlinear">
+        <del rend="strikethrough">its cloudless cave</del>
+      </add>
+    </mod>
+  </line>
+    <line>
+      <del rend="strikethrough">Was mirrored in the ocean at my feet</del>
+    </line>
+    <line>
+       <del rend="strikethrough">And I <unclear>alike had</unclear></del>
+     </line>
     <line><del rend="strikethrough">Reversed</del></line>
     <line>And</line>
+    <!--the following is printed vertically along the left edge of the MS page-->
     <line>15 June 15th June</line>
     <line>15th June</line>
     <line>15 June</line>

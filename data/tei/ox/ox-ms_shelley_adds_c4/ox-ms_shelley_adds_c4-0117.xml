@@ -6,27 +6,86 @@
   xml:id="ox-ms_shelley_adds_c4-0117" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="55r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0117.jp2"/>
+<zone type="library">53</zone>
   <zone type="main">
-    <line>Out of the eas</line>
-    <line>Swift as a spirit hastening to its <del rend="strikethrough">task</del> <del rend="strikethrough">work</del></line>
-    <line>Of glory or of good, <del rend="strikethrough">o from</del> <del rend="strikethrough">of</del> <del rend="strikethrough">out of</del></line>
-    <line>out of the gloom</line>
-    <line>Of daily life; when <del rend="strikethrough">casting off the</del> mask</line>
-    <line>through its mortal</line>
+
+    <line>
+      <del rend="strikethrough">Out of the eas</del>
+    </line>
+    <line>Swift as a spirit hastening to its
+      <mod>
+        <del rend="strikethrough">task</del>
+        <add> <del rend="strikethrough">work</del>
+      </add>
+    </mod>
+    </line>
+    <line>Of glory or of good,
+      <mod>
+        <del rend="strikethrough">o from</del> <del rend="strikethrough">of</del> <del rend="strikethrough">out of</del>
+      <add place="sublinear">out of the gloom</add>
+    </mod>
+  </line>
+  
+    <line>Of daily life; when
+    <mod>
+      <del rend="strikethrough">casting off the</del>
+      <add place="sublinear">through its mortal</add>
+    </mod>
+     mask
+   </line>
+
     <line><del rend="strikethrough">It burn</del></line>
     <line><del rend="strikethrough">Its</del> <del rend="strikethrough">Its  mortal vesture</del></line>
-    <line><del rend="strikethrough">Of <unclear>fo</unclear></del>    till body <del rend="strikethrough">almost has</del> become</line>
-    <line>It burns, <del rend="strikethrough">till that doth almost reassume</del></line>
-    <line>until the world it treads assumes</line>
-    <line>beauty     presence            bright</line>
-    <line>The <del rend="strikethrough">radiance</del> of the <del rend="strikethrough">power</del> which makes <del rend="strikethrough">it pale</del></line>
+    <line>
+        <del rend="strikethrough">Of <unclear>fo</unclear></del>
+        <del rend="strikethrough">till body almost has become</del>
+      </line>
+      <line>It burns,
+      <mod>
+        <del rend="strikethrough">till that doth almost reassume</del>
+        <add place="sublinear">until the world it treads assumes</add>
+      </mod>
+    </line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">radiance</del>
+        <add place="superlinear">beauty</add>
+      </mod>
+       of the
+       <mod>
+         <del rend="strikethrough">power</del>
+         <add place="superlinear">presence</add>
+       </mod>
+        which makes
+        <mod>
+          <del rend="strikethrough">it pale</del>
+        <add place="superlinear">bright</add>
+      </mod>
+    </line>
+
     <line><del rend="strikethrough">The sun came forth, out of his  nightly tomb</del></line>
+    <space quantity="1" unit="line"/>
     <line><del rend="strikethrough">And with the</del></line>
     <line>Its dark <del rend="strikethrough">recesses</del></line>
     <line>Its desarts from the cradle to the tomb</line>
+    <line rend="indent4">&#8212;</line>
     <line>So came the Sun out of the shade of night</line>
-    <line><del rend="strikethrough">amid</del> oer              crimson</line>
-    <line>And <del rend="strikethrough">through</del> the clouds of <del rend="strikethrough">purple</del> gold &amp; snow</line>
+
+    <line>And
+      <mod>
+        <del rend="strikethrough">through</del>
+        <add place="superlinear">
+        <mod>  <del rend="strikethrough">amid</del>
+          <add>oer</add>
+        </mod>
+      </add>
+    </mod>
+       the clouds of
+       <mod>
+         <del rend="strikethrough">purple</del>
+         <add place="superlinear">crimson</add>
+       </mod>
+        gold &amp; snow</line>
     <line>Which <unclear>form</unclear> the limits of the realm of ligh<unclear>t</unclear></line>
   </zone>
 </surface>

@@ -6,35 +6,120 @@
   xml:id="ox-ms_shelley_adds_c4-0063" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="27v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0063.jp2"/>
+<zone type="library">27</zone>
   <zone type="main">
+    <line rend="indent3">&#8212;</line>
     <line>Struck to the heart by this sad pageantry</line>
-    <line>Half to my self I said, and what is this</line>
-    <line>is</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">who is the mistress of the mystery</del> ?</line>
-    <line>is <del rend="strikethrough">she</del></line>
-    <line><del rend="strikethrough">And who she,</del> <del rend="strikethrough">and a voice made reply</del></line>
-    <line><del rend="strikethrough">And a voice said Life!</del></line>
-    <line>And who the mistress of the mystery</line>
-    <line><del rend="strikethrough">is</del></line>
-    <line><del rend="strikethrough">And a voice said Life</del> ...</line>
-    <line><del rend="strikethrough">Life</del> <del rend="strikethrough">And life</del>...</line>
-    <line><del rend="strikethrough">And said</del> ...</line>
-    <line><del rend="strikethrough">And who is she</del></line>
-    <line><del rend="strikethrough">And</del> whose shape is that within the car? &amp; why</line>
-    <line>added</line>
-    <line>I would have <del rend="strikethrough">said</del> <del rend="strikethrough">murmured</del> is all here amiss?</line>
-    <line><del rend="strikethrough">I saw</del> I turned &amp; <del rend="strikethrough">saw</del></line>
-    <line>But a voice answered . . Life... <del rend="strikethrough">and then I <del rend="strikethrough">kn saw</del></del>...</line>
-    <line>knew.</line>
-    <line>Heaven</line>
-    <line>(O <del rend="strikethrough">God</del> have mercy on such wretchedness!)</line>
-    <line><del rend="strikethrough">What I had</del>     was an old root which</line>
-    <line>That what I thought <del rend="strikethrough">which</del> <del rend="strikethrough">grew</del>     grew</line>
-    <line><del rend="strikethrough">Out of the hi</del></line>
-    <line>To strange distortion out of the hill side</line>
-    <line>degraded <del rend="strikethrough">?unnatural</del></line>
-    <line>Was indeed one of that deluded crew</line>
-    <line>hung</line>
-    <line><del rend="strikethrough">And that the grass which methought grew so wide</del></line>
+    <line rend="indent1">Half to my self I said, and what is this</line>
+    <line><del rend="strikethrough">And</del>
+    <del rend="strikethrough">who</del>
+    <mod>
+      <del rend="strikethrough"> is</del>
+      <add place="superlinear">is</add>
+    </mod>
+     <del rend="strikethrough"> the mistress of the mystery</del> ?
+   </line>
+    <line rend="indent1">
+        <del rend="strikethrough">And who</del>
+      <mod>
+      <del rend="strikethrough"> she,</del>
+        <add place="superlinear">is <del rend="strikethrough">she</del></add>
+      </mod>
+       <del rend="strikethrough">and a voice made reply</del>
+     </line>
+    <line rend="indent1">
+      <del rend="strikethrough">And a voice said Life!</del>
+    </line>
+    <line rend="indent1">
+      And who
+      <add place="sublinear"><del rend="strikethrough">is</del></add>
+      <del rend="strikethrough"> the mistress of the mystery</del>
+    </line>
+
+    <line rend="indent1">
+      <del rend="strikethrough">And a voice said Life</del> ...
+    </line>
+    <line rend="indent2">
+      <del rend="strikethrough">Life</del>
+      <del rend="strikethrough">And life...</del>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">And said...</del>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">And who is she</del>
+    </line>
+    <line rend="indent2">
+      <del rend="strikethrough">And</del> whose shape is that within the car? &amp; why &#8212;
+    </line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent3">&#8212;</line>
+
+    <line>I would have
+      <mod>
+        <del rend="strikethrough">said</del>
+        <add> <del rend="strikethrough">murmured</del></add>
+        <add place="superlinear">added</add>
+      </mod>
+         is all here amiss?
+       </line>
+    <line rend="indent1">
+      But a voice answered..Life...
+    <mod>
+        <del rend="strikethrough">
+        and then I <unclear>kn<space quantity="3" unit="characters"/></unclear>
+      </del>
+      <add place="superlinear"><del rend="strikethrough">I saw></del></add>
+      <add place="superlinear">I turned &amp; <del rend="strikethrough">saw</del></add>
+      <add place="sublinear">knew.</add>
+    </mod>
+  </line>
+    <line>() O
+      <mod>
+        <del rend="strikethrough">God</del>
+        <add place="superlinear">Heaven</add>
+      </mod>
+       have mercy on such wretchedness!)
+     </line>
+
+     <space quantity="1" unit="line"/>
+     <line rend="indent3">&#8212;</line>
+     <space quantity="1" unit="line"/>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough"> What I had</del>
+        <add place="sublinear">That what I thought
+        <del rend="strikethrough">which grew</del>
+      <add place="superlinear">was an old root which grew</add>
+    </add>
+  </mod>
+</line>
+
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Out of the hi</del>
+      <add place="sublinear">o strange distortion out of the hill side</add>
+    </mod>
+  </line>
+
+    <line rend="indent1">Was indeed one of that
+      <mod>
+        <del>deluded</del>
+        <add place="superlinear">degraded</add>
+      </mod>
+      <add place="superlinear"><unclear>unnatural</unclear></add>
+      crew
+    </line>
+
+    <line rend="indent1">
+      <del rend="strikethrough">And that the grass which methought </del>
+ <mod>
+  <del rend="strikethrough"> grew </del>
+  <add place="superlinear"> hung</add>
+</mod>
+   <del rend="strikethrough">so wide</del>
+ </line>
   </zone>
 </surface>

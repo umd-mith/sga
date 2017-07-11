@@ -7,34 +7,99 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="31v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0073.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">and I bow go</del></line>
-    <line><del rend="strikethrough">To fling</del>               <del rend="strikethrough">an</del> I know the place assigned</line>
-    <line><del rend="strikethrough">gate</del></line>
-    <line>To such as sweep the threshold of the <del rend="strikethrough">fane</del></line>
-    <line><del rend="strikethrough">portal</del></line>
-    <line>When truth &amp; its <del rend="strikethrough">creators</del> sit enshrined..</line>
-    <line>inventors</line>
+    <line rend="indent8"><del rend="strikethrough">and I bow go</del>
+  </line>
+  <line rend="indent8">
+    <del rend="strikethrough">an</del> I know the place assigned
+  </line>
+    <line><del rend="strikethrough">To fling</del>
+  </line>
+    <line>To such as sweep the threshold of the
+      <mod>
+        <del rend="strikethrough">fane</del>
+        <add place="superlinear"><del rend="strikethrough">gate</del></add>
+      <add place="sublinear"><del rend="strikethrough">portal</del></add>
+    </mod>
+  </line>
+
+    <line>When truth &amp; its
+      <mod>
+        <del rend="strikethrough">creators</del>
+        <add place="sublinear">inventors</add>
+      </mod>
+       sit enshrined..</line>
+<space quantity="1" unit="line"/>
+<line rend="indent4">&#8212;</line>
     <line><del rend="strikethrough">And that is ours</del>       <del rend="strikethrough">dishonour</del></line>
-    <line><del rend="strikethrough">At past &amp; present pain</del></line>
-    <line><del rend="strikethrough">And we sought</del></line>
-    <line><del rend="strikethrough">We have</del> <del rend="strikethrough">And</del>       <del rend="strikethrough">with</del></line>
-    <line><del rend="strikethrough">Yet even we who sweep</del></line>
-    <line>Yet we           <del rend="strikethrough">brush</del></line>
-    <line><del rend="strikethrough">Yet  even we who  sweep</del></line>
-    <line><del rend="strikethrough">And if they</del></line>
-    <line><del rend="strikethrough">And if I sought</del>    that joy<del rend="strikethrough">s</del> which now are</line>
-    <line>And if I <del rend="strikethrough">past from pleasure into</del>         pain</line>
-    <line>is captive to the car</line>
-    <line><del rend="strikethrough">And</del> if he <del rend="strikethrough">made his strength the slave</del> of life</line>
-    <line><del rend="strikethrough">labour</del> <del rend="strikethrough">wd.</del> <del rend="strikethrough">be</del> <del rend="strikethrough">vain</del></line>
-    <line><del rend="strikethrough">'Twas that we feared our lost world</del></line>
-    <line><del rend="strikethrough">And</del></line>
-    <line><del rend="strikethrough">Enough of yo</del></line>
-    <line><del rend="strikethrough">O painted insects</del></line>
-    <line><del rend="strikethrough">But we fin</del></line>
-    <line><del rend="strikethrough">Are as we find</del>....</line>
-    <line>I answered not, but <del rend="strikethrough">for</del> contemplated long</line>
-    <line><del rend="strikethrough">The forms</del> mighty</line>
-    <line>The phantoms which old India</line>
+    <line rend="indent7"><del rend="strikethrough">At past &amp; present pain</del></line>
+
+      <delSpan rend="vertical_line" spanTo="#c4-73.21"/>
+      <line rend="indent1">
+          <del rend="strikethrough">And we sought</del>
+        </line>
+    <line rend="indent1">
+      <del rend="strikethrough">We have And</del>
+    </line>
+
+  <line rend="indent2">
+
+        <del rend="strikethrough">Yet  even we </del>
+
+        <del rend="strikethrough">who </del>
+    <mod>
+      <del rend="strikethrough"> sweep</del>
+    <add place="superlinear"><del rend="strikethrough">with</del></add>
+  </mod>
+</line>
+<line rend="indent2">
+  <mod>
+    <del rend="strikethrough">Yet even we </del>
+    <add place="superlinear">Yet we</add>
+  </mod>
+  <del rend="strikethrough">who</del>
+  <mod>
+    <del rend="strikethrough">sweep</del>
+  <add place="superlinear">brush</add>
+</mod>
+</line>
+
+    <line rend="indent2">
+      <del rend="strikethrough">And if they</del></line>
+    <line rend="indent2">
+      <del rend="strikethrough">And if I sought</del> that joy<del rend="strikethrough">s</del> which now are
+    <add place="sublinear">pain</add>
+    </line>
+    <line rend="indent2">
+      And if I <del rend="strikethrough">past from pleasure into</del>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">And</del> if he
+      <mod>
+        <del rend="strikethrough">made his strength the slave</del>
+        <add place="superlinear">is captive to the car</add>
+      </mod>
+         of life
+       </line>
+    <line rend="indent2">
+    <mod>
+      <del rend="strikethrough">'Twas that we feared our lost world</del>
+      <add place="superlinear"><del rend="strikethrough">labour wd. be vain</del></add>
+    </mod>
+  </line>
+  <anchor xml:id="c4-73.21"/>
+  <space quantity="1" unit="line"/>
+
+
+    <line rend="indent2"><del rend="strikethrough">And</del></line>
+    <line rend="indent2"><del rend="strikethrough">Enough of yo</del></line>
+    <line rend="indent2"><del rend="strikethrough">O painted insects</del></line>
+    <line rend="indent2"><del rend="strikethrough">But we fin</del></line>
+    <line rend="indent2"><del rend="strikethrough">Are as we find</del>....</line>
+    <line rend="indent2">I answered not, but <del rend="strikethrough">for</del> contemplated long</line>
+
+    <line rend="indent1">The
+      <add place="superlinear"><del rend="strikethrough">The forms</del> mighty</add>
+      phantoms which old India
+    </line>
   </zone>
 </surface>

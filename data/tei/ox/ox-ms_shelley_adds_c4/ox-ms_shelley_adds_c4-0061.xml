@@ -7,39 +7,121 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="26v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0061.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">lives</del></line>
-    <line><del rend="strikethrough">Is <unclear>sna</unclear></del> <del rend="strikethrough">Their hearts in opposition</del></line>
-    <line>Their natures, <del rend="strikethrough">in a leash while</del>  still may</line>
-    <line>snaps . . . <del rend="strikethrough">ere</del> the shock <del rend="strikethrough">cease</del> to tingle</line>
-    <line>One falls and then another in the <del rend="strikethrough">dust</del> path</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">The icy</del></line>
-    <line><del rend="strikethrough">And over them</del></line>
-    <line><del rend="strikethrough">And rain after</del></line>
-    <line>And the cold desolation is <del rend="strikethrough">not single</del></line>
-    <line>Senseless</line>
-    <line><del rend="strikethrough">And</del> Nor is the desolation   single</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">And  over  them  the  light</del></line>
-    <line>can</line>
-    <line>Yet ere <del rend="strikethrough">I</del> <del rend="strikethrough">could</del> say where the chariot hath</line>
-    <line>I find</line>
-    <line>Past over them; nor other<del rend="strikethrough">s</del> trace <del rend="strikethrough">of</del> <del rend="strikethrough">remained</del></line>
-    <line>foam   <del rend="strikethrough">when</del> <del rend="strikethrough">as</del>   <del rend="strikethrough">torrents</del></line>
-    <line><unclear>Oceans</unclear> wrath</line>
-    <line>But as of <del rend="strikethrough">smoke</del> upon the <del rend="strikethrough">stream</del>.</line>
-    <line>after the Oceans</line>
-    <line><del rend="strikethrough">rain<unclear>bows</unclear></del>        roar waves</line>
-    <line><del rend="strikethrough">?Sun &amp; ,</del></line>
-    <line>behind.</line>
-    <line>Is spent upon the desert shore. &#8212; <del rend="strikethrough">The</del></line>
+
+    <line>
+      <del rend="strikethrough">Is <unclear>sna </unclear></del>
+      <del rend="strikethrough">Their </del>
+    <mod>
+      <del rend="strikethrough"> hearts</del>
+      <add place="superlinear"><del rend="strikethrough">lives in opposition</del></add>
+    </mod>
+  </line>
+    <line>Their natures,
+      <mod>
+        <del rend="strikethrough">in a leash while</del>
+      <add place="sublinear">snaps . . .
+        <del rend="strikethrough">ere</del> the shock
+        <mod>
+          <del rend="strikethrough">cease</del>
+          <add place="superlinear">still may</add>
+        </mod>
+         to tingle</add>
+      </mod>
+    </line>
+
+    <line>One falls and then another in the
+      <mod>
+        <del rend="strikethrough">dust</del>
+        <add> path</add>
+      </mod>
+    </line>
+    <line>
+      <mod><del rend="strikethrough">And</del> <del rend="strikethrough">The icy</del>
+    <add place="sublinear"><del rend="strikethrough">And over them</del>
+  <add place="sublinear"><del rend="strikethrough">And rain after</del>
+<add place="sublinear"><del rend="strikethrough">And the cold desolation is not single</del></add>
+</add>
+</add>
+</mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">And </del>
+        <add place="superlinear">senseless</add>
+      </mod>
+       Nor is the desolation single
+     </line>
+     <space quantity="1" unit="line"/>
+     <line rend="indent6">------</line>
+    <line>
+      <del rend="strikethrough">And</del> <del rend="strikethrough">And  over  them  the  light</del></line>
+    <line>Yet ere <del rend="strikethrough">I</del>
+    <mod>
+      <del rend="strikethrough">could </del>
+      <add place="superlinear">can</add>
+    </mod>
+    say <hi rend="underline">where the chariot</hi> hath
+  </line>
+
+    <line>Past over them; nor other<del rend="strikethrough">s</del> trace
+    <mod>
+      <del rend="strikethrough">of</del> <del rend="strikethrough">remained</del>
+    <add place="superlinear">I find</add>
+  </mod>
+</line>
+    <line>But as of
+      <mod>
+        <del rend="strikethrough">smoke </del>
+        <add place="superlinear">foam</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">upon the</del>
+        <add place="sublinear">after the
+        <add place="sublinear"><unclear><del rend="strikethrough">rainbow</del></unclear>
+      <add place="sublinear"><unclear>Sun &amp;,</unclear>
+    <add place="sublinear">Is spent upon the desert shore.---
+    <mod>
+      <del rend="strikethrough">The</del>
+      <add place="superlinear">behind</add>
+    </mod>
+  </add>
+  </add>
+    </add>
+      </add>
+      </mod>
+       <mod>
+         <del rend="strikethrough">stream.</del>
+       <add place="superlinear"><del rend="strikethrough">torrents</del></add>
+     <add place="sublinear">Oceans </add>
+   </mod>
+   wrath
+ </line>
+    <space quantity="2" unit="lines"/>
+    <zone type="sketch">
+    <!--sailboat sketch-->
+  </zone>
     <line>R</line>
-    <line>The earthquake is rocking</line>
+    <line><del rend="strikethrough">The</del> earthquake is rocking</line>
     <line>The corpse in its cradle within the grave</line>
     <line>The thunder is mocking</line>
-    <line>The <del rend="strikethrough">yell</del> of the earth from its cloudy cave</line>
-    <line>spasm</line>
-    <line><del rend="strikethrough">The</del> The clear air awakes</line>
-    <line>Ricetti</line>
-    <line>Ricetti</line>
-    <line>Ricetti Ricetti</line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">yell</del>
+        <add place="sublinear">spasm</add>
+      </mod>
+       of the earth from its cloudy cave</line>
+
+    <line>
+      <del rend="strikethrough">The</del> The clear air awakes
+    </line>
+    <line rend="indent8"><hi rend="underline">Ricetti</hi></line>
+    <space quantity="3" unit="lines"/>
+
+    <line rend="indent6">Ricetti<space quantity="2" unit="characters"/> Ricetti
+    <space quantity="8" unit="characters"/> Ricetti</line>
+    <zone type="sketch">
+    <!--aerial sketch of sailboat-->
+  </zone>
+
   </zone>
 </surface>

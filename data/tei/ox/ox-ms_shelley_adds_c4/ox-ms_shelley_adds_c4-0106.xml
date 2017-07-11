@@ -9,32 +9,115 @@
   <zone type="main">
     <line>The sphere whose light is melody to lovers. &#8212;</line>
     <line><del rend="strikethrough">Behold I say a wonder, for the grove</del></line>
-    <line>A wonder worthy of <del rend="strikethrough">that</del> his rhyme &#8212; <del rend="strikethrough">the</del> <del rend="strikethrough">grove</del></line>
-    <line><del rend="strikethrough">Was as</del>                                <del rend="strikethrough">above</del></line>
-    <line><del rend="strikethrough">Became</del>                                the grove</line>
-    <line><del rend="strikethrough">Behind</del> <del rend="strikethrough">grew dark</del></line>
+    <line rend="indent1">A wonder worthy of <del rend="strikethrough">that</del> his rhyme &#8212;
+    <del rend="strikethrough">the</del>
+    <mod>
+      <del rend="strikethrough">grove</del>
+    <add place="sublinear">
+      <mod>
+        <del rend="strikethrough">above</del>
+      <add place="sublinear">the grove</add>
+    </mod>
+    </add>
+  </mod>
+  </line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Behind</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Became</del>
+        </add>
+      </mod>
+       <del rend="strikethrough">grew dark</del>
+     </line>
     <line><del rend="strikethrough">The Heaven grew dark</del></line>
-    <line><del rend="strikethrough">Around, among, like tempest when it covers</del></line>
-    <line>to its inmost covers</line>
-    <line><del rend="strikethrough">Grew dark</del> with shadows, <del rend="strikethrough">as a</del></line>
-    <line>Grew dense</line>
-    <line><del rend="strikethrough">The air</del></line>
-    <line><del rend="strikethrough">From every</del>  <del rend="strikethrough">was</del></line>
-    <line>The earth was grey with phantoms, &amp; the <del rend="strikethrough"><unclear>sky</unclear></del></line>
-    <line>air air</line>
-    <line><del rend="strikethrough">sky</del></line>
+    <line><del rend="strikethrough">Around, among, like tempest</del>
+    <mod>
+      <del rend="strikethrough"> when it covers</del>
+    <add place="sublinear">to its inmost cover</add>
+  </mod>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Grew dark</del>
+        <add place="sublinear">Grew dense</add>
+      </mod>
+       with shadows, <del rend="strikethrough">as a</del></line>
+
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">From every</del>
+        <add place="superlinear">
+          <del rend="strikethrough">the air</del>
+        </add>
+      </mod>
+        <del rend="strikethrough">was</del>
+      </line>
+    <line rend="indent1">The earth was grey with phantoms, &amp; the
+      <mod>
+        <del rend="strikethrough"><unclear>sky</unclear></del>
+      <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">sky</del>
+        <add place="superlinear">air</add>
+      </mod>
+      </add>
+    </mod>
+    </line>
+
+
     <line><del rend="strikethrough">Grew</del> <del rend="strikethrough">Became   like  In</del></line>
+
     <line>Was peopled <del rend="strikethrough">with</del> dim forms, as when there hovers</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
     <line>A flock of vampire bats before the glow</line>
-    <line>tropic              <del rend="strikethrough">strange</del></line>
-    <line><del rend="strikethrough">evening</del>                 <del rend="strikethrough">a</del> <del rend="strikethrough">night</del></line>
-    <line>Of the <del rend="strikethrough">declining</del> sun, bringing</line>
-    <line>pale     <del rend="strikethrough">before</del> ere evening</line>
-    <line><del rend="strikethrough">On In Upon  some Indian islet,</del>      thus were</line>
-    <line>Strange night upon some Indian isle<del rend="strikethrough">t, these</del></line>
+
+
+    <line>Of the
+      <mod>
+        <del rend="strikethrough">declining</del>
+        <add place="superlinear">
+          <mod>
+            <del rend="strikethrough">evening</del>
+          <add place="superlinear">tropic</add>
+        </mod>
+        </add>
+      </mod>
+      <add place="sublinear">pale</add>
+       sun, bringing
+       <mod>
+         <del rend="strikethrough">before</del>
+         <add place="superlinear">
+           <mod>
+             <del rend="strikethrough">a night</del>
+           <add place="superlinear">
+             <del rend="strikethrough">strange</del>
+           </add>
+         </mod>
+         </add>
+       </mod>
+        ere evening
+     </line>
+
+    <line><del rend="strikethrough">On In Upon  some Indian islet,</del> </line>
+    <line>Strange night upon some Indian islet,
+      <mod>
+        <del rend="strikethrough"> these</del>
+      <add place="superlinear">thus were</add>
+    </mod>
+      </line>
     <line><del rend="strikethrough">Shadows &amp; phantoms &amp;</del></line>
-    <line>Phantoms</line>
-    <line><del rend="strikethrough">Shadows</del> diffused around, &amp; some did fling</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Shadows</del>
+        <add place="superlinear">Phantoms</add>
+      </mod>
+       diffused around, &amp; some did fling</line>
     <line>Shadows of shadows, yet unlike themselves</line>
   </zone>
 </surface>

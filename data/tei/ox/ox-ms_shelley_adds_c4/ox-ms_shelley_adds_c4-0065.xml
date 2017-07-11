@@ -6,37 +6,115 @@
   xml:id="ox-ms_shelley_adds_c4-0065" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="28v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0065.jp2"/>
+<zone type="library">8</zone>
   <zone type="main">
-    <line>He paused, and ere he could resume, I cried</line>
-    <line>First who art thou... before thy memory</line>
-    <line>feared</line>
-    <line>loved <del rend="strikethrough">&amp;</del> hated</line>
-    <line>I <del rend="strikethrough">did acted, suffered</del>, suffered, did, &amp; died</line>
-    <line>And if the <del rend="strikethrough">flame</del> <del rend="strikethrough">which</del></line>
-    <line>spark with which Heaven lit my</line>
-    <line>spirit</line>
-    <line>had with with purer nutriment      <del rend="strikethrough">soul</del></line>
-    <line><del rend="strikethrough">Had from a purer flask</del>                <del rend="strikethrough">oil</del></line>
-    <line>Earth <del rend="strikethrough">from</del> <del rend="strikethrough">a purer       flask</del> <del rend="strikethrough">had</del> supplied</line>
-    <line>thus</line>
-    <line>Corruption would not now <del rend="strikethrough">so</del> much inherit</line>
-    <line>Of what was once Rousseau      <del rend="strikethrough">I leave</del></line>
-    <line>nor this disguise</line>
-    <line>within which still disdains</line>
-    <line>Stained <del rend="strikethrough">the pure</del>                   to wear it.</line>
-    <line>that <del rend="strikethrough">which should    disdain</del></line>
-    <line><unclear></unclear> which ought to have disdained to wear <unclear></unclear></line>
-    <line><del rend="strikethrough">If I have been extinguished, yet <unclear>there then</unclear> rise</del></line>
-    <line><del rend="strikethrough">A thousand beacons from the spark I bore</del>.&#8212;</line>
-    <line><del rend="strikethrough">And then the shape turned that which mi</del></line>
-    <line><del rend="strikethrough">what might be its eyes</del></line>
-    <line>And who are those chained to the the car? the Wise</line>
-    <line>they who wore</line>
-    <line>great the unforgotten <del rend="strikethrough">the supreme</del></line>
-    <line>The <del rend="strikethrough">mighty the immortal</del></line>
-    <line><del rend="strikethrough">Such were they called; and their wisdom</del></line>
-    <line>Mitres &amp; helms &amp; crowns, or wreathes of light</line>
-    <line>Signs of</line>
-    <line><del rend="strikethrough">Of the</del> <del rend="strikethrough">soul</del> thoughts empire over thought,</line>
+    <line>
+      He paused, and ere he could resume, I cried
+    </line>
+    <line rend="indent1">
+      First who art thou... before thy memory
+    </line>
+
+    <line>I
+      <mod>
+        <del rend="strikethrough">did acted, suffered,</del>
+        <add place="superlinear">loved &amp; hated
+        <add place="superlinear">feared</add>
+      </add>
+    </mod>
+     suffered, did, &amp; died
+   </line>
+    <line rend="indent1">And if the
+      <mod>
+        <del rend="strikethrough">flame which</del>
+        <add place="sublinear">spark with which Heaven lit my spirit</add>
+      </mod>
+    </line>
+    <line>
+    <mod>
+      <del rend="strikethrough">Had from a purer flask</del>
+      <add place="superlinear">had with purer nutriment</add>
+    </mod>
+  </line>
+  <line rend="indent1">
+    Earth
+
+        <del rend="strikethrough">from a purer
+          <space quantity="5" unit="characters"/> flask had</del>
+        <mod>
+            <add place="superlinear"><del rend="strikethrough">oil</del>
+          <add place="superlinear"><del rend="strikethrough">soul</del>
+          <add place="superlinear">spirit</add>
+        </add>
+          </add>
+        </mod>
+        supplied
+      </line>
+
+    <line rend="indent1">Corruption would not now
+      <mod>
+      <del rend="strikethrough">so </del>
+      <add place="superlinear">thus</add>
+    </mod>
+    much inherit
+  </line>
+    <line>Of what was once Rousseau &#8212;<del rend="strikethrough">I leave</del>
+  </line>
+
+    <line rend="indent1">
+      Stained
+    <mod>
+        <del rend="strikethrough">the pure</del>
+        <add place="superlinear">within which still disdains to wear it.&#8212;</add>
+         <add place="sublinear">that <del rend="strikethrough">which </del>
+        should <space quantity="8" unit="characters"/> disdain
+          <add place="sublinear">which ought to have disdained to wear
+          <add place="superlinear"><del rend="strikethrough">disdain </del>
+           to wear it</add>
+         </add>
+       </add>
+      </mod>
+    </line>
+
+    <line>
+      <del rend="strikethrough">If I have been extinguished, yet
+        <unclear>there then</unclear> rise</del>
+      </line>
+    <line rend="indent1">
+      <del rend="strikethrough">A thousand beacons from the spark I bore</del>.&#8212;
+    </line>
+    <line rend="indent1"><del rend="strikethrough">And then the shape turned</del>
+    <mod>
+      <del rend="strikethrough"> that which mi</del>
+    <add place="sublinear"><del rend="strikethrough">what might be its eyes</del></add>
+  </mod>
+</line>
+
+    <line rend="indent1">
+      And who are those chained to the the car? the Wise
+    </line>
+    <line>
+      The
+      <mod>
+        <del rend="strikethrough">mighty the immortal</del>
+      <add place="superlinear">great the unforgotten</add>
+    </mod>
+<mod>
+    <del rend="strikethrough">the supreme</del>
+  <add place="superlinear">they who wore</add>
+</mod>
+</line>
+    <line rend="indent1"><del rend="strikethrough">Such were they called; and their wisdom</del>
+  </line>
+    <line rend="indent2">Mitres &amp; helms &amp; crowns, or wreathes of light</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Of the</del>
+        <add place="superlinear">Signs of</add>
+      </mod>
+       <del rend="strikethrough">soul </del>
+        thoughts empire over thought,
+      </line>
   </zone>
 </surface>

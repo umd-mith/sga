@@ -6,36 +6,97 @@
   xml:id="ox-ms_shelley_adds_c4-0098" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="45r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0098.jp2"/>
+<zone type="library">45</zone>
   <zone type="main">
     <line><del rend="strikethrough"><unclear>Un</unclear></del> Till with</line>
-    <line><unclear>b b</unclear></line>
+    <line rend="indent4"><unclear>b b</unclear></line>
     <line><del rend="strikethrough">Moved</del></line>
     <line><del rend="strikethrough"><unclear>Moves</unclear></del></line>
     <line><del rend="strikethrough">Amid the darkness</del> <del rend="strikethrough">of the</del></line>
-    <line>Heaven</line>
-    <line><del rend="strikethrough">In beautiful</del>,    whose  half</line>
+
+    <line><del rend="strikethrough">In beautiful,</del><space quantity="5" unit="characters"/>
+    <add place="superlinear">Heaven</add>
+    whose  half
+  </line>
     <line><del rend="strikethrough">Beckoning</del></line>
     <line>A light from <del rend="strikethrough">Paradise</del></line>
     <line><del rend="strikethrough">Which glimmers like a</del> <del rend="strikethrough">smoke</del>-extinguished beam</line>
     <line><del rend="strikethrough">Amid the waking world</del></line>
-    <line>sick</line>
-    <line><del rend="strikethrough">Upon</del> Through the <del rend="strikethrough">pale</del> day in which we wake to weep</line>
+  <space quantity="1" unit="line"/>
+  <line rend="indent4">&#8212;</line>
+
+    <line><del rend="strikethrough">Upon</del> Through the
+    <mod>
+      <del rend="strikethrough">pale</del>
+      <add place="superlinear">sick</add>
+    </mod>
+     day in which we wake to weep
+   </line>
+   <space quantity="1" unit="line"/>
+   <line rend="indent4">&#8212;</line>
     <line><del rend="strikethrough">Or</del> <del rend="strikethrough">And</del> <del rend="strikethrough">paler glows more pale as the day grows more old</del></line>
     <line><del rend="strikethrough">Half seen, forever sought &amp; ever lost</del></line>
-    <line>Tormenting</line>
-    <line><del rend="strikethrough">So in the</del></line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">So in the</del>
+      <add place="superlinear">tormenting</add>
+    </mod>
+  </line>
     <line>Glimmers, forever sought, forever lost.</line>
     <line>So did that shape its obscure tenour keep</line>
-    <line>Beside</line>
-    <line><del rend="strikethrough">Before</del> my <del rend="strikethrough">path</del> path <del rend="strikethrough">as</del> <del rend="strikethrough">I</del> as silent as a ghost;</line>
-    <line>its cold bright car</line>
-    <line>But the new Vision, and <del rend="strikethrough">the car of beams</del></line>
-    <line>savage music                       crost.</line>
-    <line>With <del rend="strikethrough">music</del> <del rend="strikethrough">new</del> <del rend="strikethrough">solemn speed &amp;</del> stunning music <del rend="strikethrough">past</del></line>
-    <line><del rend="strikethrough">music</del></line>
-    <line>dread</line>
-    <line>The forest, and as if from some <del rend="strikethrough">new</del> war</line>
-    <line>Triumphantly returning the loud million</line>
-    <line><del rend="strikethrough">The millions in her train</del></line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">&#8212;</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Before</del>
+        <add place="superlinear">Beside</add>
+      </mod>
+       my <del rend="strikethrough">path</del> path
+       <del rend="strikethrough">as</del> <del rend="strikethrough">I</del> as silent as a ghost;
+     </line>
+
+    <line>But the new Vision, and
+      <mod>
+        <del rend="strikethrough">the car of beams</del>
+      <add place="superlinear">its cold bright car</add>
+    </mod>
+  </line>
+
+    <line>With
+      <mod>
+        <del rend="strikethrough">music</del>
+        <add place="superlinear">
+          <del rend="strikethrough">savage music</del>
+        </add>
+      <add place="sublinear">
+        <del rend="strikethrough">music</del>
+      </add>
+    </mod>
+     <del rend="strikethrough">new</del> <del rend="strikethrough">solemn speed &amp;
+   </del> stunning music
+   <mod>
+     <del rend="strikethrough">past</del>
+   <add place="superlinear">crost.</add>
+ </mod>
+</line>
+    <line><del rend="strikethrough">music</del>
+  </line>
+
+    <line>The forest, and as if from some
+      <mod>
+        <del rend="strikethrough">new</del>
+        <add place="superlinear">dread</add>
+      </mod>
+       war
+     </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">The millions in her train</del>
+      <add place="superlinear">Triumphantly returning the loud million</add>
+    </mod>
+  </line>
   </zone>
 </surface>

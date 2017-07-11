@@ -7,43 +7,168 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="32v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0075.jp2"/>
   <zone type="main">
-    <line>Or age or <del rend="strikethrough">sloth</del> sloth or slavery</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">Slavery &amp; age</del>, or <del rend="strikethrough">sloth</del>      could subdue not.&#8212;</line>
-    <line><unclear>For</unclear></line>
-    <line><del rend="strikethrough">And near</del> walk the         twain</line>
-    <line>Srumfredevi</line>
-    <line>The tutor &amp; his pupil, <del rend="strikethrough">&amp;</del> whom Dominion</line>
-    <line>Followed as tame as <del rend="strikethrough">panther</del> in a chain. &#8212;</line>
-    <line>vulture</line>
-    <line>darkened beneath</line>
-    <line>The world was <del rend="strikethrough">shadowed</del> <del rend="strikethrough">under</del> either pinion</line>
-    <line>Of <del rend="strikethrough"><unclear>Aris</unclear></del> him whom from the flock of conquerors</line>
-    <line>singled</line>
-    <line>Fame <del rend="strikethrough">nourished</del> as her thunder bearing minion ;</line>
-    <line>both</line>
-    <line>The other long outlived <del rend="strikethrough">both</del> <del rend="strikethrough">the</del> <del rend="strikethrough">wars</del> woes &amp; wars</line>
-    <line>new                     at the gate</line>
-    <line><del rend="strikethrough">Of</del> Throned in the thoughts of men, and still had kept</line>
-    <line>The jealous keys of truths eternal doors</line>
-    <line>Porter's</line>
-    <line><del rend="strikethrough">Had not</del></line>
-    <line><del rend="strikethrough">Had not</del> <del rend="strikethrough">that</del> <del rend="strikethrough">shadow which</del></line>
-    <line><del rend="strikethrough">If Bacon's spirit</del>          <del rend="strikethrough">had not leapt</del></line>
-    <line>he compelled</line>
-    <line><del rend="strikethrough">Like lightning</del> <del rend="strikethrough">out of darkness;</del> <del rend="strikethrough">and</del> <del rend="strikethrough">unveiled</del></line>
-    <line><del rend="strikethrough">If that</del></line>
-    <line><del rend="strikethrough">The Proteus Nature</del>     <del rend="strikethrough">Nature</del></line>
-    <line><del rend="strikethrough">Had</del>   <del rend="strikethrough"><unclear>guard</unclear></del> shape of Nature's as it slept</line>
-    <line>To wake &amp; to <del rend="strikethrough">?thus</del> unbar<unclear> ? </unclear></line>
-    <line><del rend="strikethrough">yield a passage</del> to the caves that held</line>
-    <line><del rend="strikethrough">To resign a</del></line>
-    <line><del rend="strikethrough">Unveil</del> <del rend="strikethrough">half</del></line>
-    <line>The treasure of the secrets of its reign</line>
-    <line><del rend="strikethrough">who, when</del></line>
-    <line><del rend="strikethrough">See  Caesar  <unclear> ? </unclear>  the slave who quelled</del></line>
-    <line><unclear>Natures</unclear> shapes <del rend="strikethrough">to <unclear>follow</unclear></del>.</line>
-    <line>Srumfredevi</line>
-    <line>Sir Humphrey Davy</line>
-    <line>Davi</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And Slavery &amp; age, or sloth</del>
+        <add place="superlinear">Or age or
+          <del rend="strikethrough">sloth</del> sloth or slavery could subdue not.&#8212;</add>
+        </mod>
+        </line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">And near</del>
+        <add place="superlinear"><unclear>For</unclear></add>
+      </mod>
+         walk the
+         <space quantity="10" unit="characters"/>
+         twain
+       </line>
+
+    <line rend="indent1">The tutor &amp; his pupil,
+      <add place="superlinear">Srumfredevi</add>
+      <del rend="strikethrough">&amp;</del> whom Dominion
+    </line>
+    <line rend="indent1">Followed as tame as
+      <mod>
+        <del rend="strikethrough">panther</del>
+        <add place="sublinear">vulture</add>
+      </mod>
+ in a chain. &#8212;
+</line>
+<space quantity="1" unit="line"/>
+<line rend="indent4">&#8212;</line>
+<space quantity="1" unit="line"/>
+
+    <line rend="indent2">The world was
+      <mod>
+         <del rend="strikethrough">shadowed</del>
+         <add place="superlinear">darkened</add>
+       </mod>
+       <mod>
+          <del rend="strikethrough">under</del>
+          <add place="superlinear">beneath</add>
+        </mod>
+         either pinion
+       </line>
+    <line rend="indent2">Of
+      <del rend="strikethrough"><unclear>Aris</unclear></del>
+       him whom from the flock of conquerors
+     </line>
+    <line rend="indent2">Fame
+      <mod>
+         <del rend="strikethrough">nourished</del>
+         <add place="superlinear">singled</add>
+       </mod>
+          as her thunder bearing minion;
+        </line>
+        <space quantity="1" unit="line"/>
+        <line rend="indent4">&#8212;</line>
+
+    <line rend="indent3">The other long outlived
+      <mod>
+        <del rend="strikethrough">both the</del>
+        <add place="superlinear">both</add>
+      </mod>
+    <mod>
+       <del rend="strikethrough">wars</del>
+       <add> woes &amp; wars</add>
+     </mod>
+        </line>
+    <line rend="indent3">
+      <del rend="strikethrough">Of</del>
+       Throned in the
+       <add place="superlinear">new</add>
+        thoughts of men,
+        <add place="superlinear">at the gate</add>
+         and still had kept
+       </line>
+    <line rend="indent3">
+      The jealous keys of truths eternal doors
+    </line>
+
+    <line rend="indent4">&#8212;</line>
+    <space quantity="1" unit="line"/>
+
+
+    <line rend="indent4">
+      <mod>
+        <del rend="strikethrough">Had not</del>
+    <add place="superlinear">Porter's</add>
+  </mod>
+</line>
+    <line rend="indent4">
+      <del rend="strikethrough">Had not</del> <del rend="strikethrough">that</del>
+       <del rend="strikethrough">shadow which</del>
+     </line>
+    <line rend="indent4">
+      <del rend="strikethrough">If Bacon's spirit</del>
+    </line>
+
+    <line rend="indent4">
+      <del rend="strikethrough">Like lightning</del>
+       <del rend="strikethrough">out of darkness;</del>
+
+       <mod>
+          <del rend="strikethrough">and unveiled</del>
+        <add place="superlinear">he compelled
+          <add place="superlinear"><del rend="strikethrough">had not leapt</del></add>
+        </add>
+      </mod>
+    </line>
+
+    <line rend="indent4">
+      <mod>
+        <del rend="strikethrough">The Proteus Nature</del>
+        <add place="superlinear"><del rend="strikethrough">If that</del></add>
+      </mod>
+             <del rend="strikethrough">Nature</del>____
+</line>
+<line rend="indent5">
+  <mod>
+    <del rend="strikethrough">The Proteus Nature</del>
+    <add place="superlinear"><del rend="strikethrough">If that</del></add>
+    <add place="sublinear">
+      <unclear><del rend="strikethrough">guard</del></unclear>
+      shape of Nature's
+      <add place="superlinear"><del rend="strikethrough">Nature_____</del></add>
+    </add>
+  </mod>
+</line>
+
+
+    <line rend="indent5">
+      <mod>
+        <del rend="strikethrough">To yeild a pasage</del>
+        <add place="superlinear">To wake &amp; to
+          <unclear>thus unbar</unclear></add>
+      <add place="sublinear">
+        <del rend="strikethrough">resign a</del>
+        <add place="sublinear"><del rend="strikethrough">Unveil half</del></add>
+      </add>
+    </mod>
+    to the caves that held
+       </line>
+
+    <line rend="indent5">
+      The treasure of the secrets of its reign_____
+    </line>
+
+    <line rend="indent5">
+      <del rend="strikethrough">See  Caesar
+        <gap quantity="4" unit="characters" reason="illegible"/></del>
+        <add place="superlinear">who, <del rend="strikethrough">when</del></add>
+        <del rend="strikethrough">the slave who quelled</del>
+      </line>
+    <line rend="indent5">
+      <unclear>Natures</unclear> shapes <del rend="strikethrough">to <unclear>follow</unclear></del>.</line>
+
+    <zone type="left_margin">
+      <line>Srumfredevi</line>
+    <line>Sir Humphrey Davy
+    <add place="sublinear">Davi</add>
+  </line>
   </zone>
+</zone>
 </surface>

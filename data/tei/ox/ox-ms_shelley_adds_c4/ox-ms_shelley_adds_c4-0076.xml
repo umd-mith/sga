@@ -8,37 +8,131 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0076.jp2"/>
   <zone type="main">
     <line><del rend="strikethrough">Democritus was</del></line>
-    <line><del rend="strikethrough">Diogenes was</del></line>
-    <line><del rend="strikethrough">Diog</del></line>
-    <line><del rend="strikethrough">are</del></line>
-    <line><del rend="strikethrough">And mighty bards were there</del></line>
-    <line><del rend="strikethrough">See Homer &amp; his brethren, men who quelled</del></line>
-    <line>old            inly</line>
-    <line>See the great bards of <del rend="strikethrough">elder</del> <del rend="strikethrough">time</del> who quelled</line>
-    <line>The passions which they sung; as by their strain</line>
-    <line>May well be known, <del rend="strikethrough">by</del> <del rend="strikethrough">their</del> <del rend="strikethrough">infection  flows</del></line>
-    <line>for th<unclear>eir</unclear> <del rend="strikethrough">sweet sigh music</del> ever</line>
-    <line><del rend="strikethrough">their  living  melody</del></line>
-    <line>their <unclear>soft</unclear> <unclear>tune</unclear></line>
-    <line>its own</line>
-    <line><del rend="strikethrough">With</del> Tempers <del rend="strikethrough">the</del> <del rend="strikethrough">soft</del> contagion to the vein</line>
-    <line><del rend="strikethrough"><unclear> ? </unclear></del></line>
-    <line>are infected with it &#8212;-  <del rend="strikethrough">but</del> I</line>
-    <line>Of those who <del rend="strikethrough">hear</del>... <del rend="strikethrough">and</del> <del rend="strikethrough">so miserable  they</del></line>
-    <line>I <del rend="strikethrough">sung</del> wrote</line>
-    <line>Have suffered what <del rend="strikethrough">they</del> <del rend="strikethrough">paint</del>, or viler pain!&#8212;</line>
-    <line>So <del rend="strikethrough">have my words</del> been <del rend="strikethrough">seeds</del> <del rend="strikethrough">of misery</del></line>
-    <line>And so      were          <del rend="strikethrough">But I</del></line>
-    <line><del rend="strikethrough">Thus have</del> my words <del rend="strikethrough">been</del> seeds of misery &#8212;-</line>
-    <line><del rend="strikethrough">And if they walk</del></line>
-    <line><del rend="strikethrough">Still Be enough I said</del>.</line>
-    <line><del rend="strikethrough">See the des</del></line>
-    <line><del rend="strikethrough">These the creators,  the  destroyers those</del></line>
-    <line><del rend="strikethrough">Who walk stalk before, <unclear>elect</unclear> one captivity</del></line>
-    <line><del rend="strikethrough">victory</del></line>
-    <line><del rend="strikethrough">of one tyranny</del></line>
-    <line><del rend="strikethrough">slaves of one victory</del></line>
-    <line><del rend="strikethrough">All swell the pomp</del></line>
-    <line><del rend="strikethrough">Mocks of a single pageant</del></line>
+    <line rend="indent1"><del rend="strikethrough">Diogenes was</del></line>
+    <line rend="indent1"><del rend="strikethrough">Diog</del></line>
+
+    <line rend="indent2"><del rend="strikethrough">And mighty bards</del>
+    <mod>
+      <del rend="strikethrough"> were </del>
+      <add place="superlinear"><del rend="strikethrough">are</del></add>
+    </mod>
+    <del rend="strikethrough">there</del>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">See Homer &amp; his brethren, men who quelled</del>inly
+    </line>
+
+    <line rend="indent2">
+      See the great bards of
+      <mod>
+        <del rend="strikethrough">elder</del>
+        <add place="superlinear">old</add>
+      </mod>
+         <del rend="strikethrough">time</del> who quelled
+       </line>
+    <line rend="indent2">
+      The passions which they sung; as by their strain
+    </line>
+    <line>May well be known,
+      <mod>
+        <del rend="strikethrough">by their</del>
+        <add place="sublinear">for their</add>
+      </mod>
+    <mod>
+      <del rend="strikethrough">infection  flows</del>
+    <add place="sublinear">sweet high music forever
+    <add place="sublinear">
+    <del rend="strikethrough">their living melody</del>
+  <add place="sublinear">their <unclear>soft </unclear> <unclear> tune</unclear></add>
+</add>
+  </add>
+</mod>
+</line>
+
+    <line rend="indent1">
+      <del rend="strikethrough">With</del>
+       Tempers <del rend="strikethrough">the soft</del>
+       <add place="superlinear">its own</add>
+        contagion to the vein
+      </line>
+
+    <line rend="indent2">Of those who
+      <mod>
+        <del rend="strikethrough">hear...</del>
+        <add place="superlinear">are infected with it &#8212;</add>
+      </mod>
+          <space quantity="5" unit="characters"/>
+           <del rend="strikethrough">and</del>
+           <del rend="strikethrough">so miserable</del>
+           <mod>
+             <del rend="strikethrough">they</del>
+           <add place="superlinear"><del rend="strikethrough">but</del> I</add>
+         </mod>
+       </line>
+    <line>
+      Have suffered what
+      <mod>
+        <del rend="strikethrough">they</del>
+        <add place="superlinear">I</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">paint,</del>
+           <add place="superlinear">
+           <mod>
+             <del rend="strikethrough">sung</del>
+         <add>wrote</add>
+       </mod>
+       </add>
+     </mod>
+          or viler pain!&#8212;
+        </line>
+    <line>
+      So
+      <del rend="strikethrough">have my words</del>
+       been <del rend="strikethrough">seeds</del>
+        <del rend="strikethrough">of misery</del>
+      </line>
+
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">Thus have</del>
+        <add place="superlinear">And so</add>
+      </mod>
+       my words
+       <mod>
+         <del rend="strikethrough">been</del>
+         <add place="superlinear">were</add>
+       </mod>
+          seeds of misery &#8212;
+        <add place="superlinear">
+          <del rend="strikethrough">But I</del>
+        </add>
+      </line>
+    <line rend="indent3">
+      <del rend="strikethrough">And if they walk</del>
+    </line>
+    <line rend="indent3">
+      <del rend="strikethrough">Still Be enough I said.</del>
+    </line>
+    <line rend="indent4"><del rend="strikethrough">See the des</del></line>
+    <line rend="indent3"><del rend="strikethrough">These the creators,  the  destroyers those</del></line>
+    <line rend="indent2">
+      <del rend="strikethrough">Who walk stalk before,
+        <unclear>elect</unclear> one</del>
+        <mod>
+          <del rend="strikethrough"> captivity</del>
+        <add place="sublinear"><del rend="strikethrough">victory</del>
+      <add place="sublinear"><del rend="strikethrough">of one tyranny</del>
+    <add place="sublinear"><del rend="strikethrough">slaves of one victory</del></add>
+  </add>
+    </add>
+      </mod>
+    </line>
+    <line rend="indent3">
+      <del rend="strikethrough">All swell the pomp</del>
+    </line>
+    <line rend="indent3">
+      <del rend="strikethrough">Mocks of a single pageant</del>
+    </line>
   </zone>
 </surface>

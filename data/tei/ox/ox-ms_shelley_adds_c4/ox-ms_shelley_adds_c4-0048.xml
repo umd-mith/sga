@@ -6,26 +6,36 @@
   xml:id="ox-ms_shelley_adds_c4-0048" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="20r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0048.jp2"/>
+  <zone type="pagination">3)</zone>
+  <zone type="library">28</zone>
   <zone type="main">
-    <line>As</line>
-    <line><del rend="strikethrough">As</del> clear as when a veil of light is <del rend="strikethrough">spread</del> drawn</line>
+    <line>
+      <mod><del rend="strikethrough">As</del><add place="superlinear">As</add></mod>
+     clear as when a veil of light is
+     <mod><del rend="strikethrough">spread</del><add> drawn</add></mod></line>
     <line>O'er evening hills they glimmer; and I knew</line>
-    <line>That I had felt the freshness of that dawn</line>
-    <line>cold      brow &amp; hair</line>
-    <line>Bathed in the same <del rend="strikethrough">sweet</del> dew my <del rend="strikethrough">eyes</del></line>
-    <line>And sate as thus upon that slope of lawn</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent1">That I had felt the freshness of that dawn</line>
+    <line>Bathed in the same
+      <mod><del rend="strikethrough">sweet</del><add place="superlinear">cold</add></mod>
+     dew my
+     <mod><del rend="strikethrough"> eyes</del><add place="superlinear">brow &amp; hair</add></mod></line>
+    <line rend="indent1">And sate as thus upon that slope of <retrace cause="fix">l</retrace>awn</line>
     <line>Under the self same bough, &amp; heard as there</line>
-    <line>The birds the fountains &amp; the Ocean hold</line>
+    <line rend="indent1">The birds the fountains &amp; the Ocean hold</line>
     <line>Sweet talk in <del rend="strikethrough">the</del> music through the enamoured air.</line>
-    <line>And then a Vision on my brain was rolled ..</line>
+    <line rend="indent1">And then a Vision on my brain was rolled ..</line>
+    <space quantity="3" unit="line"/>
     <line><del rend="strikethrough">This was the</del></line>
-    <line>As in that trance of wondrous thought I lay</line>
-    <line>This was the tenour of my waking dream.</line>
-    <line>Methought I sate beside a public way</line>
-    <line>Thick strewn with summer dust, &amp; a great stream</line>
+    <line rend="indent1">As in that trance of wondrous thought I lay</line>
+    <line rend="indent2">This was the tenour of my waking dream.</line>
+    <line rend="indent1">Methought I sate beside a public way</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent1">Thick strewn with summer dust, &amp; a great stream</line>
     <line>Of people there was <del rend="strikethrough">hy</del> hurrying to &amp; fro</line>
-    <line>Numerous as gnats upon the evening gleam</line>
+    <line rend="indent1">Numerous as gnats upon the evening gleam</line>
+    <space quantity="1" unit="line"/>
     <line>All hastening onward yet none seemed to know</line>
-    <line>Whither he went, or whence he came, or why</line>
+    <line rend="indent1">Whither he went, or whence he came, or why</line>
   </zone>
 </surface>

@@ -6,40 +6,132 @@
   xml:id="ox-ms_shelley_adds_c4-0066" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="29r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0066.jp2"/>
+<zone type="library">29</zone>
   <zone type="main">
-    <line>; their lore</line>
-    <line>their might</line>
-    <line>Taught them not this &#8212; to know themselves; <del rend="strikethrough">night</del></line>
-    <line>repress</line>
-    <line>Could not restrain the <del rend="strikethrough">rebels in their heart</del></line>
-    <line>mutiny within,</line>
-    <line><del rend="strikethrough">And for the morn of truth</del> they feigned, deep night</line>
-    <line><del rend="strikethrough">Caught</del></line>
-    <line><del rend="strikethrough">Followed them   last</del>     <del rend="strikethrough">slave who</del></line>
-    <line><del rend="strikethrough">Covered</del>      <del rend="strikethrough">See the slave sought to win</del></line>
-    <line>Caught them ere evening</line>
-    <line>An <del rend="strikethrough">empire</del>      <del rend="strikethrough">he, whose walks with</del></line>
-    <line>Who is he with <del rend="strikethrough">his stern</del> chin</line>
-    <line><del rend="strikethrough">captive</del></line>
-    <line>Upon his breast?... <del rend="strikethrough">The latest victim hero</del></line>
-    <line><del rend="strikethrough">he decks the triumph well.</del></line>
-    <line><del rend="strikethrough">A slave who sought</del> <del rend="strikethrough">and</del> hands <del rend="strikethrough">folded</del> in <del rend="strikethrough">sorrow</del></line>
-    <line><del rend="strikethrough">A willing slave who sought</del>    crost on his chain?</line>
-    <line><del rend="strikethrough">his</del></line>
-    <line><del rend="strikethrough">The latest victim</del></line>
-    <line><del rend="strikethrough">That is Napoleon</del></line>
-    <line><del rend="strikethrough">He</del> <del rend="strikethrough">The last is he</del>: <del rend="strikethrough">a crown he sought to win</del></line>
-    <line><del rend="strikethrough">This is a</del>                      <del rend="strikethrough">he</del></line>
-    <line><del rend="strikethrough">This was th</del> The Child of a fierce hour; He sought to win</line>
-    <line><del rend="strikethrough">And lost</del></line>
-    <line>all               did</line>
-    <line>The world, and lost <del rend="strikethrough">more than</del> it <del rend="strikethrough">doth</del> contain</line>
-    <line><del rend="strikethrough">Of glory in the birth of its new dawn</del></line>
-    <line>Of greatness, <del rend="strikethrough">in a tyrants</del></line>
-    <line>in its hope destroyed; &amp; more</line>
-    <line>&amp; peace                           can</line>
-    <line>fame    than Virtues self <del rend="strikethrough">could</del> gain</line>
-    <line>Of <del rend="strikethrough">peace &amp; fame</del></line>
+
+    <line rend="indent4">&#8212;</line>
+    <line>
+      Taught them not this &#8212; to know themselves;
+      <mod>
+        <del rend="strikethrough">night</del>
+      <add place="superlinear">their might
+      <add place="superlinear">;their lore</add>
+    </add>
+  </mod>
+</line>
+
+    <line rend="indent1">Could not
+      <mod>
+        <del>restrain</del>
+          <add place="superlinear">repress</add>
+        </mod>
+         the
+         <mod>
+           <del rend="strikethrough">rebels in their heart</del>
+         <add place="sublinear">mutiny within,</add>
+       </mod>
+     </line>
+
+    <line rend="indent1">
+      <del rend="strikethrough">And for the morn of truth</del> they feigned, deep night
+    </line>
+    <line rend="indent4">
+      &#8212;
+    </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Followed</del>
+      <add place="superlinear">Caught</add>
+      <add place="sublinear"><del rend="strikethrough">Covered</del></add>
+    </mod>
+    them...
+    <mod>
+      <del rend="strikethrough">last slave who</del>
+      <add place="sublinear">See the slave sought to win</add>
+    </mod>
+  </line>
+    <line>Caught them ere evening
+<add place="sublinear"><del rend="strikethrough">An Empire</del></add>
+    <add place="sublinear">
+      <mod>
+        <del rend="strikethrough">he, whose walks with</del>
+  <add place="sublinear">Who is he with <del rend="strikethrough">his stern </del> chin</add>
+</mod>
+</add>
+  </line>
+
+    <line rend="indent2">Upon his breast?...
+        <del rend="strikethrough">The latest</del>
+        <mod>
+          <del rend="strikethrough"> victim </del>
+          <add place="superlinear"><del rend="strikethrough">captive</del></add>
+        </mod>
+        <del rend="strikethrough">hero</del>
+        <add place="sublinear">he decks the triumph well.</add>
+      </line>
+
+    <line rend="indent2">
+      <del rend="strikethrough">A slave who sought</del>
+      <del rend="strikethrough">and</del>
+      hands
+      <mod>
+        <del rend="strikethrough">folded in sorrow</del>
+        <add place="sublinear">crost on his chain?</add>
+      </mod>
+    </line>
+    <line rend="indent2">
+      <del rend="strikethrough">A willing slave who
+        <add place="sublinear">
+          <del rend="strikethrough">his</del>
+        </add> sought</del>
+      </line>
+    <line rend="indent2"><del rend="strikethrough">The latest victim</del></line>
+    <line rend="indent2"><del rend="strikethrough">That is Napoleon</del></line>
+    <line rend="indent2">
+      <del rend="strikethrough">He</del>
+      <del rend="strikethrough">The last is he</del>:
+      <del rend="strikethrough">a crown he sought to win</del>
+    </line>
+    <line rend="indent2"><del rend="strikethrough">This is a</del>
+  </line>
+    <line rend="indent2">
+      <del rend="strikethrough">This was th</del> The Child of a fierce
+      <add place="superlinear"><del rend="strikethrough">he</del></add>
+       hour; He sought to win</line>
+    <line rend="indent2">
+      <del rend="strikethrough">And lost</del>
+  </line>
+
+    <line rend="indent2">The world, and lost
+      <mod>
+        <del rend="strikethrough">more than</del>
+        <add place="superlinear">all</add>
+      </mod>
+         it
+         <mod>
+           <del rend="strikethrough">doth</del>
+           <add place="superlinear">did</add>
+         </mod>
+          contain
+        </line>
+    <line rend="indent2"><del rend="strikethrough">Of glory in the birth of its new dawn</del></line>
+    <line rend="indent2">Of greatness,
+      <mod>
+        <del rend="strikethrough">in a tyrants</del>
+      <add place="sublinear">in its hope destroyed; &amp; more</add>
+    </mod>
+  </line>
+    <line rend="indent2">Of
+      <mod>
+        <del rend="strikethrough">peace &amp; of fame</del>
+      <add place="superlinear">fame &amp; peace than Virtues self
+        <mod>
+          <del rend="strikethrough">could</del>
+          <add place="superlinear">can</add>
+        </mod>
+         gain</add>
+    </mod>
+  </line>
     <line>Without the opportunity which bore</line>
   </zone>
 </surface>

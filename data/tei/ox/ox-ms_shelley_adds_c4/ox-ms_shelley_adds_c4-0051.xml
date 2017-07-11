@@ -10,32 +10,37 @@
     <line>Seeking the object of <del rend="strikethrough">an</del>other's fear</line>
     <line><del rend="strikethrough">And others</del></line>
     <line>And others as with steps towards the tomb</line>
-    <line><del rend="strikethrough">Dragging his weary limbs</del> intent</line>
-    <line><del rend="strikethrough">Watched</del> Pored on</line>
-    <line><del rend="strikethrough">And others so</del>    trodden           beneath,</line>
-    <line><del rend="strikethrough">Watching</del>, the <del rend="strikethrough">mangled</del> worms that crawled <del rend="strikethrough">below</del></line>
-    <line>mournfully</line>
-    <line>And <del rend="strikethrough">some</del> others <del rend="strikethrough">miserably</del> within the gloom</line>
-    <line>own     walked,</line>
-    <line>Of their shadow <del rend="strikethrough">sate</del>, and called it death ...</line>
+    <line><del rend="strikethrough">Dragging his weary limbs intent</del></line>
+    <line><del rend="strikethrough">And others</del>
+    <add place="superlinear"><del rend="strikethrough">Watched</del> Pored on</add></line>
+    <line><del rend="strikethrough">Watching</del>, the
+    <mod><del rend="strikethrough">mangled</del><add place="superlinear">trodden</add></mod>
+    worms that crawled <del rend="strikethrough">below</del><add place="superlinear">beaneath,</add></line>
+    <line>And <del rend="strikethrough">some</del> others
+    <mod><del rend="strikethrough">miserably</del><add place="superlinear">mournfully</add> </mod>
+    within the gloom</line>
+    <line>Of their <add place="superlinear">own</add>shadow
+    <mod><del rend="strikethrough">sate</del><add place="superlinear">walked</add></mod>, and called it death ...</line>
     <line><del rend="strikethrough">And some</del></line>
     <line><del rend="strikethrough">But many more or slow or swift pursued</del></line>
     <line>And some fled from it as it were a ghost,</line>
     <line><del rend="strikethrough">The</del></line>
-    <line>Half fainting <del rend="strikethrough">with</del></line>
-    <line>in the affliction of vain breath.</line>
+    <line>Half fainting<mod><add place="sublinear">in the affliction of vain breath.</add> <del rend="strikethrough">with</del></mod>
+    </line>
     <line>But more with motions which each other crost</line>
-    <line>the clouds threw</line>
-    <line>Pursued or shunned the shadows <del rend="strikethrough">of pale</del></line>
+    <line>Pursued or shunned the shadows
+    <mod><del rend="strikethrough">of pale</del><add place="superlinear">the clouds threw</add></mod></line>
     <line>Or birds within the noonday ether lost,</line>
     <line>&#8212;&#8212;-</line>
     <line>Upon that path where flowers never grew;</line>
     <line>And faint for thirst &amp; weary with vain toil</line>
-    <line>whose</line>
-    <line>Heard not the fountains <del rend="strikethrough">of</del> melodious dew</line>
-    <line>cells</line>
-    <line>mossy   <del rend="strikethrough">caves</del> forever</line>
-    <line>Out of thier <del rend="strikethrough">ivied</del> <del rend="strikethrough">caverns</del> <del rend="strikethrough">ever</del> burst</line>
-    <line><del rend="strikethrough">Nor saw the landscape on which they had perish</del></line>
+    <line>Heard not the fountains<mod><add place="superlinear">whose</add>
+     <del rend="strikethrough">of</del> </mod>melodious dew</line>
+    <line>Out of thier <mod><add place="superlinear">mossy</add> <del rend="strikethrough">ivied</del>
+    <del rend="strikethrough">cav<add place="superlinear">
+      <del rend="strikethrough">c<add place="superlinear">cells</add>aves</del></add>erns</del>
+    </mod>
+    <del rend="strikethrough">ever</del> burst</line>
+    <line><del rend="strikethrough">Nor saw the landscape on which they had perished</del></line>
   </zone>
 </surface>

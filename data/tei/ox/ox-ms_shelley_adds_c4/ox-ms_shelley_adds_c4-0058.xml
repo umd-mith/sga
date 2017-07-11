@@ -6,38 +6,137 @@
   xml:id="ox-ms_shelley_adds_c4-0058" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="25r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0058.jp2"/>
+<zone type="library">25</zone>
   <zone type="main">
-    <line><del rend="strikethrough">swoon</del></line>
-    <line>Fled back like eagles to their native noon</line>
-    <line>Or those who <del rend="strikethrough">kept long their spirits</del></line>
-    <line>put aside the diadem till the last one</line>
-    <line>Of earthly thrones or <del rend="strikethrough">jewels</del> gems, <del rend="strikethrough">till the last swoon</del>;</line>
-    <line><del rend="strikethrough">The twi</del> Were there;</line>
-    <line><del rend="strikethrough">For they</del> of Athens &amp; Jerusalem,</line>
-    <line>For                   <del rend="strikethrough">crowd</del></line>
-    <line><del rend="strikethrough">Were not among the crew</del>    <del rend="strikethrough">loud was the rage</del></line>
-    <line><del rend="strikethrough">obscene &amp; strange</del></line>
-    <line><del rend="strikethrough">The exhultation</del>           <del rend="strikethrough">strange &amp; obscene</del></line>
-    <line><del rend="strikethrough"><unclear>Passions</unclear></del>         <del rend="strikethrough">the</del> <del rend="strikethrough">loud</del> <del rend="strikethrough">war</del></line>
-    <line><del rend="strikethrough">The</del>                     <del rend="strikethrough">as they</del></line>
-    <line><unclear> ? </unclear> <unclear></unclear> <del rend="strikethrough">loud &amp; more loud</del></line>
-    <line>still I <del rend="strikethrough">gazed</del></line>
-    <line><del rend="strikethrough">The yoke</del>   <del rend="strikethrough">Came <unclear>next</unclear></del>   <del rend="strikethrough">The</del> <unclear>Fri</unclear></line>
-    <line><unclear> ? </unclear></line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">a</del> <del rend="strikethrough">The spirit of Babel seemed to f</del></line>
-    <line>fell <del rend="strikethrough"><unclear> ? </unclear></del> seen</line>
-    <line>Were neither mid the mighty captives <del rend="strikethrough">there</del></line>
-    <line>Nor mid the <del rend="strikethrough"><unclear> ?</unclear></del> ribald crowd that followed them ...</line>
-    <line>The <del rend="strikethrough">dance grew wilder <unclear> ? </unclear></del></line>
-    <line><del rend="strikethrough">Meanwhile</del> <del rend="strikethrough">the dance grew wild, &amp; more obscene</del></line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">The youths &amp; maidens near the rushing car</del></line>
-    <line>The                <del rend="strikethrough">near the car appeared</del></line>
-    <line>With Melancholy</line>
-    <line><del rend="strikethrough">Seemed</del> <del rend="strikethrough"><unclear>farther and</unclear></del> <del rend="strikethrough">lay</del> <del rend="strikethrough">a</del>            fierce</line>
-    <line><del rend="strikethrough">Caught</del> Or fled before.. Now Swift fierce &amp; obscene</line>
-    <line>Nor  <del rend="strikethrough">those who went before</del> ...      <del rend="strikethrough">the dance</del></line>
-    <line><del rend="strikethrough"><unclear>madden</unclear></del>               <del rend="strikethrough">strains</del></line>
-    <line><del rend="strikethrough">The maniac dance, the dithyrambic hymn</del></line>
-    <line>The wild dance maddens in the van, &amp; those</line>
+
+    <line>Fled back like eagles to their native
+      <mod>
+        <del rend="strikethrough">noon</del>
+      <add place="superlinear"><del rend="strikethrough">swoon</del></add>
+    </mod>
+  </line>
+
+    <line rend="indent1">Or those who
+      <mod>
+        <del rend="strikethrough">kept long their spirits</del>
+        <add place="sublinear"> put aside the diadem till the last one</add>
+      </mod>
+    </line>
+    <line rend="indent1">
+      Of earthly thrones or
+      <del rend="strikethrough">jewels</del> gems,
+      <del rend="strikethrough">till the last swoon</del>;
+    </line>
+    <line rend="indent1">
+      <del rend="strikethrough">The twi</del> Were there;
+    </line>
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">For they</del>
+        <add place="sublinear">For</add>
+      </mod>
+       of Athens &amp; Jerusalem,
+    </line>
+
+    <line rend="indent2">
+      <del rend="strikethrough">Were not among the</del>
+      <mod>
+        <del rend="strikethrough">crew</del>
+        <add place="superlinear"><del rend="strikethrough">crowd</del></add>
+      </mod>
+      <space quantity="4" unit="characters"/>
+      <mod>
+        <del rend="strikethrough">loud was the rage</del>
+      <add place="sublinear"><del rend="strikethrough">obscene &amp; strange</del>
+      <add place="sublinear"><del rend="strikethrough">strange &amp; obscene</del>
+    <add place="sublinear"><del rend="strikethrough">the loud war</del>
+    <add place="sublinear"><del rend="strikethrough">as they</del>
+  <add place="sublinear"><del rend="strikethrough">loud &amp; more loud</del></add>
+<add place="sublinear">still I <del rend="strikethrough">gazed</del></add>
+      </add>
+    </add>
+  </add>
+</add>
+</mod>
+</line>
+<line rend="indent1">
+  <mod>
+    <del rend="strikethrough">The exhultation</del>
+    <add place="sublinear"><unclear>Passion</unclear>
+  <add place="sublinear"><del rend="strikethrough">The</del></add>
+</add>
+</mod>
+</line>
+<del rend="strikethrough">The yoke </del>
+<del rend="strikethrough">came next<space quantity="2" unit="characters"/> The</del>
+
+<line rend="indent1">
+  <del rend="strikethrough">The <unclear>other</unclear> spirit of Babel</del>
+  <mod>
+    <del rend="strikethrough">seemed to</del>
+    <add place="sublinear">fell <unclear>[  ]</unclear></add>
+  </mod>
+</line>
+    <line rend="indent2">Were neither mid the mighty captives
+      <mod>
+        <del rend="strikethrough">there</del>
+      <add place="superlinear">seen</add>
+    </mod>
+  </line>
+    <line rend="indent1">Nor mid the
+      <del rend="strikethrough"><unclear>th </unclear></del>
+       ribald crowd that followed them ...</line>
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">Meanwhile the dance grew wild, &amp; more obscene</del>
+        <add place="superlinear"><del rend="strikethrough">The dance grew wilder___</del></add>
+      </mod>
+    </line>
+
+    <line rend="indent2">
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="sublinear">The</add>
+      </mod>
+       <del rend="strikethrough">The youths &amp; maidens</del>
+      <mod>
+        <del rend="strikethrough"> near the rushing car</del>
+      <add place="sublinear"><del rend="strikethrough">near the car appeared</del></add>
+    </mod>
+  </line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Seemed <unclear>farther and</unclear> lay a </del>
+        <add place="superlinear">With Melancholy</add>
+      </mod>
+    </line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Nor those who went before...</del>
+        <add place="superlinear"><del rend="strikethrough">Caught or fled before...</del></add>
+        <add place="superlinear"> Now swift </add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">the dance</del>
+        <add place="superlinear">firece and obscene
+        <add place="superlinear"><del rend="strikethrough">fierce</del></add>
+      </add>
+      <space quantity="2" unit="characters"/>
+    </mod>
+  </line>
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">The maniac </del>
+        <add place="superlinear"><del rend="strikethrough">madden</del></add>
+      </mod>
+      <del rend="strikethrough">dance, the dithyrambic ,</del>
+      <mod>
+        <del rend="strikethrough">hymn</del>
+        <add place="superlinear"><del rend="strikethrough">strains</del></add>
+      </mod>
+    </line>
+    <line rend="indent2">The wild dance maddens in the van, &amp; those</line>
   </zone>
 </surface>

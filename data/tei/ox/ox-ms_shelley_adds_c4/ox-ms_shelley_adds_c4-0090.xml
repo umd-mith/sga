@@ -6,44 +6,180 @@
   xml:id="ox-ms_shelley_adds_c4-0090" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="41r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0090.jp2"/>
+<zone type="library">41</zone>
   <zone type="main">
-    <line><del rend="strikethrough">Like a <unclear>bro</unclear> bright</del></line>
+    <line>
+      <del rend="strikethrough">Like a <unclear>bro</unclear> bright</del>
+  </line>
+  <line rend="indent4">&#8212;</line>
     <line>A shape all light, which with one hand did fling</line>
     <line>earth, as if she were the Dawn</line>
-    <line><del rend="strikethrough">Dew on the</del> <del rend="strikethrough">grass</del> <del rend="strikethrough">path</del></line>
-    <line><del rend="strikethrough">world</del> <del rend="strikethrough">Waters &amp; the w</del></line>
-    <line><del rend="strikethrough">earth</del></line>
-    <line><del rend="strikethrough">grass &amp; Waters</del></line>
-    <line><del rend="strikethrough">As if</del>   <del rend="strikethrough">Until the woods &amp; waters seemed to ring</del></line>
-    <line><del rend="strikethrough">And all the boughs &amp; leaves</del></line>
-    <line><del rend="strikethrough">flowers &amp; grass &amp;</del></line>
-    <line><del rend="strikethrough">Every leaf</del>   <del rend="strikethrough">&amp; herb began to sing</del></line>
-    <line>And in <del rend="strikethrough">the herbs &amp; young green leafits sing</del></line>
-    <line>grass <del rend="strikethrough">&amp;  budding  beeches</del></line>
-    <line><del rend="strikethrough">In April rain drops   showers</del></line>
-    <line>Whose <unclear>invisible</unclear> <unclear>rain</unclear> forever seemed to</line>
-    <line><del rend="strikethrough">And</del>  <del rend="strikethrough">the invisible</del>     <del rend="strikethrough">rain</del> <del rend="strikethrough">did  ever</del> sing</line>
-    <line>music <del rend="strikethrough">melody</del></line>
-    <line>A silver <del rend="strikethrough">melody upon</del>   mossy</line>
-    <line><del rend="strikethrough">tune</del> upon, the <del rend="strikethrough">flowery</del> lawn</line>
-    <line>And <del rend="strikethrough">ever</del> still before <unclear>her</unclear> on the dusky <del rend="strikethrough">scene</del></line>
-    <line><del rend="strikethrough">And underneath the darkness of</del>      <del rend="strikethrough">dell</del></line>
-    <line><del rend="strikethrough">And still before her steps</del>      grass</line>
-    <line><del rend="strikethrough">Iris her</del>   many coloured scarf had drawn.&#8212;-</line>
-    <line>&#8212; devi</line>
+    <line>
+      <del rend="strikethrough">Dew on the</del>
+      <mod>
+        <del rend="strikethrough">grass path</del>
+        <add place="superlinear">earth,as if she were the Dawn</add>
+      </mod>
+    </line>
+    <space quantity="1" unit="line"/>
+
+    <line>
+      <del rend="strikethrough">As if</del>
+    <mod>
+        <del rend="strikethrough">Until the woods &amp; waters</del>
+      <add place="superlinear">
+        <del rend="strikethrough">grass &amp; Waters</del>
+        <add place="superlinear">
+          <del rend="strikethrough">earth</del>
+          <add place="superlinear">
+            <del rend="strikethrough">world Waters &amp; the w</del>
+          </add>
+        </add>
+      </add>
+    </mod>
+      <del rend="strikethrough"> seemed to ring</del>
+    </line>
+    <line><del rend="strikethrough">And all</del>
+    <mod>
+      <del rend="strikethrough"> the boughs &amp; leaves</del>
+    <add place="sublinear">
+      <del rend="strikethrough">flowers &amp; grass &amp;</del>
+    </add>
+    </mod>
+  </line>
+  <space quantity="1" unit="line"/>
+
+    <line> And in
+      <mod>
+        <del rend="strikethrough">the herbs</del>
+        <add place="superlinear">
+           <del rend="strikethrough">Every leaf</del>
+         </add>
+       </mod>
+        <mod>
+          <del rend="strikethrough">&amp; herb began to sing</del>
+      <add place="superlinear">
+        <del rend="strikethrough">&amp; and herb began to sing</del>
+      </add>
+    </mod>
+  </line>
+
+    <line>
+      <del rend="strikethrough">In April rain </del>
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="superlinear">Whose</add>
+      </mod>
+      <mod>
+          <del rend="strikethrough">the invisible rain</del>
+          <add place="superlinear"><unclear>invisible rain forever</unclear></add>
+        </mod>
+        <mod>
+            <del rend="strikethrough">did  ever</del>
+            <add place="superlinear">seemed to</add>
+          </mod>
+           sing
+         </line>
+
+    <line>A silver
+      <mod>
+        <del rend="strikethrough">melody upon</del>
+        <add place="superlinear">
+          <del rend="strikethrough">music</del>
+        </add>
+        <add place="superlinear">
+          <del rend="strikethrough">melody</del>
+        </add>
+        <add place="sublinear">
+          <del rend="strikethrough">tune upon the</del>
+          <mod>
+            <del rend="strikethrough"> flowery</del>
+          <add place="superlinear">mossy</add>
+        </mod>
+        <del rend="strikethrough"> lawn</del>
+        </add>
+      </mod>
+  </line>
+
+    <line></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">And underneath the darkness of</del>
+        <add place="sublinear">
+            <del rend="strikethrough">And still before her steps</del>
+        </add>
+        <add place="superlinear">
+          And <del rend="strikethrough">ever</del> still before
+          <unclear>her</unclear> on the dusky
+          <mod>
+            <del rend="strikethrough">scene</del>
+            <add place="sublinear">
+              <mod>
+                <del rend="strikethrough">dell</del>
+                <add place="sublinear">grass</add>
+              </mod>
+            </add>
+            </mod>
+        </add>
+      </mod>
+    </line>
+
+    <line>
+      <del rend="strikethrough">Iris her</del>
+      many coloured scarf had drawn.&#8212;
+    </line>
+    <line rend="indent5">&#8212; devi</line>
     <line><del rend="strikethrough">And in the other</del></line>
-    <line><del rend="strikethrough">And in other hand she bore</del>    chrystal</line>
-    <line>In her right hand she</line>
-    <line><del rend="strikethrough">And in the other hand she</del> bore a glass</line>
-    <line><del rend="strikethrough">Sparkling with purple liquor</del>   fierce splendour</line>
-    <line><unclear>every drink</unclear></line>
-    <line><unclear>strong spirits</unclear></line>
-    <line>Mantling with <del rend="strikethrough">starry liquor</del>;&#8212; the <del rend="strikethrough"><unclear>fallen</unclear></del> <del rend="strikethrough">light</del></line>
-    <line>bright Nepenthe</line>
-    <line>veil by</line>
-    <line>Fell from her   <del rend="strikethrough">like</del>  <del rend="strikethrough">a</del> veil as   <del rend="strikethrough">She did pass</del></line>
-    <line>as she moved under the mass</line>
-    <line>Out of the cavern</line>
-    <line><del rend="strikethrough">Out of the caverns</del></line>
+    <line><del rend="strikethrough">And in other hand she bore</del>
+  </line>
+
+    <line>
+    <mod>
+        <add place="superlinear">And in her right hand she</add>
+      <del rend="strikethrough">And in the other hand she</del>
+    </mod> bore a glass
+  <add place="superlinear">crystal</add>
+</line>
+    <line><del rend="strikethrough">Sparkling with</del>
+    <mod>
+      <del rend="strikethrough"> purple liquor</del>
+      <add place="sublinear"><unclear>every drink</unclear>
+    <add place="sublinear"><unclear>strong spirits</unclear></add>
+  </add>
+    </mod>
+       fierce splendour
+     </line>
+
+    <line>Mantling with
+      <mod>
+        <del rend="strikethrough">starry liquor;</del>
+        <add place="sublinear">bright Nepenthe</add>
+      </mod>
+        &#8212; the
+        <del rend="strikethrough"><unclear>fallen</unclear></del>
+        <del rend="strikethrough">light</del>
+      </line>
+
+
+    <line>Fell from her
+      <mod>
+        <del rend="strikethrough">like</del>
+        <add place="superlinear">veil by</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough"> veil as she did pass</del>
+    <add place="sublinear">as she moved under the mass</add>
+  </mod>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Out of the caverns</del>
+      <add place="superlinear">Out of the cavern</add>
+    </mod>
+  </line>
   </zone>
 </surface>

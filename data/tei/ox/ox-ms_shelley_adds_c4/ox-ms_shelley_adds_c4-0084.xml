@@ -6,32 +6,101 @@
   xml:id="ox-ms_shelley_adds_c4-0084" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="38r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0084.jp2"/>
+<zone type="library">38</zone>
+<zone type="pagination">5</zone>
   <zone type="main">
-    <line>leader &#8212;-</line>
-    <line>replied the <del rend="strikethrough">guide</del>, <del rend="strikethrough">but</del> I</line>
-    <line>But to destroy: <del rend="strikethrough">but I am</del> one of these</line>
-    <line>Who <del rend="strikethrough">have created</del></line>
-    <line>Am one of those who have created, even</line>
-    <line>If it be but a world of agony.</line>
+
+    <line>But to destroy: 
+      <mod>
+        <del rend="strikethrough">but I am</del>
+        <add place="superlinear">replied the
+          <mod>
+            <del rend="strikethrough">guide, but I</del>
+      <add place="superlinear">leader</add>
+    </mod>
+</add>
+    </mod>
+  one of these</line>
+
+    <line>
+      <mod>
+         <del rend="strikethrough">Who have created</del>
+         <add place="sublinear">Am one of those who created, even</add>
+       </mod>
+     </line>
+     <space quantity="1" unit="line"/>
+
+    <line>If it be but a world of agony.&#8212;&#8212;</line>
     <line>Whence camest thou &amp; whither goest thou</line>
-    <line>did</line>
-    <line><del rend="strikethrough">Where</del> <del rend="strikethrough">When</del> How <del rend="strikethrough">began</del> thy course begin, I said, &amp; why?</line>
-    <line><del rend="strikethrough"><unclear>bad dream   </unclear></del></line>
-    <line>Mine eyes are sick of this perpetual flow</line>
-    <line>one    thought</line>
-    <line>Of people &amp; my heart of <del rend="strikethrough">these</del> sad <del rend="strikethrough">thoughts</del>.&#8212;</line>
-    <line>Speak. &#8212;- Whence I came partly I seem to know</line>
-    <line>dread <del rend="strikethrough">misery</del></line>
-    <line>And <del rend="strikethrough">how to this sad</del>                  brought</line>
-    <line><del rend="strikethrough">by</del> how &amp; by what paths I have been</line>
-    <line>thou mayst</line>
-    <line>To <del rend="strikethrough">what &amp; where I am I not even</del></line>
-    <line>dread      methinks even <del rend="strikethrough">you may</del></line>
-    <line>To this <del rend="strikethrough">sad</del> pass, <del rend="strikethrough">I fear</del>   <del rend="strikethrough">I</del>      guess</line>
+
+    <line><del rend="strikethrough">Where</del> <del rend="strikethrough">When</del> How
+    <mod>
+      <del rend="strikethrough">began</del>
+      <add place="superlinear">did</add>
+    </mod>
+       thy course begin, I said, &amp; why?
+     </line>
+     <space quantity="1" unit="line"/>
+    <line>
+      Mine eyes are sick of this perpetual flow
+    <add place="superlinear">
+      <del rend="strikethrough"><unclear>bad dream</unclear></del>
+    </add>
+  </line>
+    <line>
+      Of people &amp; my heart of
+      <mod>
+        <del rend="strikethrough">these</del>
+        <add place="superlinear">one</add>
+      </mod>
+       sad
+        <mod>
+          <del rend="strikethrough">thoughts. &#8212;</del>
+          <add place="superlinear">thought</add>
+        </mod>
+      </line>
+    <line>Speak. &#8212; Whence I came partly I seem to know</line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent4">__________</line>
+    <line>
+      And <del rend="strikethrough">how to this</del>
+      <mod>
+        <del rend="strikethrough"> sad</del>
+        <add place="superlinear">dread <del rend="strikethrough">misery</del></add>
+      </mod>
+      been
+      <add place="superlinear">brought</add>
+    </line>
+    <space quantity="1" unit="line"/>
+    <line rend="indent5">X</line>
+    <line>
+      To
+      <del rend="strikethrough">what &amp; where I am I not even</del>
+    </line>
+    <line>To this
+      <mod>
+        <del rend="strikethrough">sad</del>
+        <add place="superlinear">dread</add>
+      </mod>
+       pass,
+       <mod>
+         <del rend="strikethrough">I fear I</del>
+         <add place="superlinear">methinks even
+         <mod>
+           <del rend="strikethrough">you may</del>
+       <add place="superlinear">thou mayest</add>
+     </mod> guess
+     </add>
+   </mod>
+ </line>
     <line>Why this should be my mind can compass not</line>
+    <space quantity="1" unit="line"/>
     <line>iv      devi</line>
-    <line>me</line>
-    <line>Whither the conqueror hurries still less</line>
+
+    <line>Whither the conqueror hurries
+      <add place="superlinear">me</add>
+       still less
+     </line>
     <line>But follow thou, &amp; from spectator turn</line>
     <line>Actor or victim in this wretchedness</line>
   </zone>

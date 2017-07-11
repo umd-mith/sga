@@ -7,36 +7,113 @@
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="47v">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0103.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">Hurried</del> <del rend="strikethrough">into the</del></line>
-    <line><del rend="strikethrough">to</del></line>
+    <line><del rend="strikethrough">Hurried</del>
+    <mod>
+      <del rend="strikethrough">into</del>
+      <add place="sublinear">
+        <del rend="strikethrough">to</del>
+      </add>
+      </mod>
+    <del rend="strikethrough"> the</del>
+   </line>
+    <line rend="indent4">&#8212;</line>
     <line>Borne onward. &#8212; I, among the multitude</line>
-    <line><del rend="strikethrough">After</del>  <del rend="strikethrough">Was one</del>  <del rend="strikethrough">whom neither fairest</del></line>
-    <line><del rend="strikethrough">whom sweetest flowers delayed</del></line>
+    <line><del rend="strikethrough">After</del>  <del rend="strikethrough">Was one</del>
+    <mod>
+      <del rend="strikethrough">whom neither fairest</del>
+    <add place="sublinear">
+      <del rend="strikethrough">whom sweetest flowers delayed</del>
+    </add>
+  </mod>
+</line>
+
     <line>Was swept; me sweetest flowers delayed not long</line>
     <line>Me not the shadow nor the solitude,</line>
-    <line><del rend="strikethrough">streams</del></line>
-    <line>Me not the <del rend="strikethrough">forests</del> <del rend="strikethrough">fair</del></line>
-    <line>falling stream's Lethean song</line>
+
+    <line>Me not the
+      <mod>
+        <del rend="strikethrough">forests</del>
+        <add place="superlinear">streams</add>
+      </mod>
+       <del rend="strikethrough">fair</del>
+       <add place="sublinear">falling stream's Lethean song</add>
+     </line>
+
     <line><del rend="strikethrough">Me not that fairest shape</del></line>
-    <line>Me, <del rend="strikethrough">delayed not that</del></line>
-    <line>Not the phantom of that early form</line>
-    <line>Which</line>
-    <line><del rend="strikethrough">That</del> moved upon its motion, &#8212;&#8212;- but among</line>
+    <line>Me,
+      <mod>
+        <del rend="strikethrough">delayed not that</del>
+  <add place="sublinear">Not the phantom of that early form</add>
+</mod>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">That</del>
+        <add place="superlinear">Which</add>
+      </mod>
+       moved upon its motion, &#8212;&#8212;- but among</line>
     <line>The thickest billows of thet living storm</line>
-    <line>I plunged, and <del rend="strikethrough">saw was</del> <del rend="strikethrough">thus among the rest I</del></line>
-    <line><del rend="strikethrough">thus became</del>              <del rend="strikethrough">grew</del></line>
-    <line>bared my bosom to</line>
-    <line><del rend="strikethrough">on the <unclear>frail</unclear> gulph of that</del></line>
-    <line><del rend="strikethrough">Was made made naked to the</del></line>
-    <line>bare <del rend="strikethrough">to the</del> cold clime</line>
-    <line>Of that cold light, whose <del rend="strikethrough">breath</del></line>
-    <line><del rend="strikethrough">Whose blasts soon make</del> airs too <unclear>fierce</unclear></line>
-    <line><del rend="strikethrough">limbs</del></line>
-    <line>, <del rend="strikethrough">the</del> <del rend="strikethrough">brow</del></line>
-    <line><del rend="strikethrough">shape they      soon deform</del></line>
-    <line><del rend="strikethrough">I</del></line>
-    <line><del rend="strikethrough">spi</del>      March      12</line>
-    <line>Before the chariot had begun to climb</line>
+    <line>I plunged, and
+      <del rend="strikethrough">saw was</del>
+    <mod>
+      <del rend="strikethrough">thus among the rest I grew</del>
+
+        <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">thus became</del>
+        <add place="sublinear">
+          <mod>
+            <del rend="strikethrough">on the frail gulph of that</del>
+            <add place="superlinear">bare my bosom to</add>
+          </mod>
+          </add>
+        </mod>
+      </add>
+    </mod>
+  </line>
+
+    <line>
+      <del rend="strikethrough">Whose blasts soon make</del>
+      <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">the limbs</del>
+      <add place="sublinear">
+
+          <del rend="strikethrough">brow</del>
+      <add place="sublinear">
+
+        <del rend="strikethrough">shape they</del>
+      </add>
+    </add>
+  </mod>
+</add>
+<add place="superlinear">whose
+  <mod>
+    <del rend="strikethrough">breath</del>
+    <add place="superlinear">
+      <del rend="strikethrough">Was made naked to the</del>
+      <add place="sublinear">bare <del rend="strikethrough">to the</del> cold clime
+    </add>
+    </add>
+  </mod>
+</add>
+       airs too fierce
+      <add place="sublinear">soon deform</add>
+</line>
+
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough">spi</del>
+        <add place="sublinear">
+          <del rend="strikethrough">I</del>
+        </add>
+      </add>Before the
+      <add place="superlinear">March</add>
+      chariot had
+      <add place="superlinear">12</add>
+      begun to climb
+    </line>
     <line>The opposing steep of that mysterious dell</line>
   </zone>
 </surface>

@@ -6,21 +6,49 @@
   xml:id="ox-ms_shelley_adds_c4-0108" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="50r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0108.jp2"/>
+
+  <zone type="library">50</zone>
   <zone type="main">
-    <line><del rend="strikethrough">whom</del> <del rend="strikethrough">whose state</del></line>
-    <line>A baby's or an idiots brow, <del rend="strikethrough">and lowered</del> <del rend="strikethrough">&amp;</del></line>
-    <line><del rend="strikethrough">whose</del>    <del rend="strikethrough"><unclear>lowered</unclear></del></line>
-    <line><del rend="strikethrough">or <unclear> ? </unclear> lowered</del></line>
-    <line>&amp;  <del rend="strikethrough">ate</del>    made</line>
-    <line><del rend="strikethrough">With vulture wings</del>              <del rend="strikethrough">&amp; ate</del></line>
-    <line><del rend="strikethrough">Over their steps;</del></line>
-    <line><del rend="strikethrough">With demon wings over their path</del>,</line>
-    <line><del rend="strikethrough">The hearts</del> <del rend="strikethrough">What seemed to be the hearts of them</del></line>
-    <line><del rend="strikethrough">the</del></line>
-    <line><del rend="strikethrough">Upon their path with demons wings, &amp;</del></line>
-    <line><del rend="strikethrough">What seemed to be</del></line>
-    <line>Their nests, in it; the old anatomies</line>
+
+    <line>A baby's or an idiots brow,
+      <mod>
+        <del rend="strikethrough">and lowered &amp;</del>
+        <add place="superlinear">
+          <del rend="strikethrough">whom</del>
+        <del rend="strikethrough">whose state</del>
+        </add>
+      </mod>
+  <mod>
+    <add place="sublinear">
+    <del rend="strikethrough">whose</del>
+    <add place="sublinear">
+      <del rend="strikethrough"> whose lowered</del>
+      <add place="sublinear">
+        <del rend="strikethrough">or <gap quantity="4" unit="chars"/> lowered</del>
+        <add place="sublinear"><del rend="strikethrough">&amp; ate </del>
+      <add place="sublinear"><del rend="strikethrough">&amp; ate</del></add>
+    </add>
+      </add>
+    </add>
+  </add>
+</mod>
+</line>
+
+
+    <line rend="indent1"><del rend="strikethrough">With vulture wings</del></line>
+
+    <line rend="indent1"><del rend="strikethrough">Over their steps;</del></line>
+    <line rend="indent1"><del rend="strikethrough">With demon wings over their path</del>,</line>
+    <line rend="indent1"><del rend="strikethrough">The hearts</del> <del rend="strikethrough">What seemed to be the hearts of them</del></line>
+
+    <line rend="indent1"><del rend="strikethrough">Upon their path with</del>
+      <add place="superlinear">
+        <del rend="strikethrough">the</del>
+      </add>
+      <del rend="strikethrough"> demons wings, &amp;</del></line>
+    <line rend="indent1"><del rend="strikethrough">What seemed to be</del></line>
+    <line rend="indent1">Their nests, in it; the old anatomies</line>
     <line><del rend="strikethrough">Brooded o'er</del></line>
-    <line>Sate hatching their <unclear>base</unclear> broods under the shade</line>
+    <line rend="indent1">Sate hatching their <unclear>base</unclear> broods under the shade</line>
   </zone>
 </surface>

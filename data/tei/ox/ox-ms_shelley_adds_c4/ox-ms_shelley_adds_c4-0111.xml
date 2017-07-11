@@ -10,33 +10,101 @@
     <line><del rend="strikethrough">Of</del> <del rend="strikethrough">Shadows</del></line>
     <line><del rend="strikethrough">Aerial</del> <del rend="strikethrough">Fell shadowy masks</del></line>
     <line><del rend="strikethrough">Came shadows, &amp; the</del>     <del rend="strikethrough">countenances waned</del></line>
-    <line>and</line>
-    <line><del rend="strikethrough">From which they fell, scarce</del></line>
+    <line rend="indent4">&#8212;</line>
+
+    <line><del rend="strikethrough">From which they fell, </del>
+    <mod>
+      <del rend="strikethrough">scarce</del>
+    <add place="superlinear">and</add>
+  </mod>
+</line>
     <line><del rend="strikethrough">With form &amp; countenance which <unclear>ever waned</unclear></del></line>
-    <line><del rend="strikethrough">Sent forth dense fast images</del></line>
-    <line><del rend="strikethrough">shadows, of himself which</del></line>
+    <line rend="indent4">&#8212;</line>
+    <line><del rend="strikethrough">Sent forth dense fast </del>
+    <mod>
+      <del rend="strikethrough">images</del>
+    <add place="sublinear">
+      <del rend="strikethrough">shadows, of himself which</del>
+    </add>
+  </mod>
+  </line>
+
     <line><del rend="strikethrough"><unclear>Sent</unclear> the</del></line>
-    <line><del rend="strikethrough">for every one</del></line>
-    <line>for <del rend="strikethrough">these</del></line>
-    <line>from</line>
-    <line><del rend="strikethrough">for every</del></line>
-    <line><del rend="strikethrough">for every one</del></line>
-    <line><del rend="strikethrough">for I</del> <del rend="strikethrough">beheld</del></line>
-    <line><del rend="strikethrough">percieved</del></line>
-    <line><del rend="strikethrough">Of</del></line>
-    <line><del rend="strikethrough">That from</del> <del rend="strikethrough">they <unclear>were</unclear></del></line>
-    <line><del rend="strikethrough">pallid</del>  <del rend="strikethrough">weary as the moon when she has</del></line>
-    <line>brief      <del rend="strikethrough">waned</del></line>
-    <line><del rend="strikethrough">That these strange shadows</del> after <del rend="strikethrough">short</del> <del rend="strikethrough">space</del>. &#8212;-</line>
-    <line>From every <del rend="strikethrough">countenance</del></line>
-    <line>form the <del rend="strikethrough">beauty</del> slowly waned</line>
-    <line><del rend="strikethrough">manliest</del></line>
-    <line>firmest limb</line>
-    <line>From every <del rend="strikethrough">fairest form</del> &amp; fairest face</line>
-    <line>freshness</line>
-    <line>The strength &amp; <del rend="strikethrough">beauty</del> fell like dust, &amp; left</line>
-    <line><del rend="strikethrough">A <unclear></unclear></del> The  <del rend="strikethrough">m</del>  <del rend="strikethrough">accidents &amp;</del></line>
-    <line>action &amp; the shape without the grace</line>
+    <line rend="indent6"><del rend="strikethrough">for every one</del></line>
+    <line rend="indent6"> <del rend="strikethrough"> for these</del></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">for</del>
+        <add place="superlinear">from</add>
+      </mod>
+        <del rend="strikethrough"> every</del>
+      </line>
+
+    <line rend="indent7"><del rend="strikethrough">for every one</del></line>
+    <line rend="indent7"><del rend="strikethrough">for I</del>
+    <mod>
+      <del rend="strikethrough">beheld</del>
+    <add place="sublinear">
+      <del rend="strikethrough">perceived</del>
+    </add>
+  </mod>
+</line>
+
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough">Of</del>
+      </add>
+      <del rend="strikethrough">That from</del>
+      <mod>
+    <del rend="strikethrough">they <unclear>were</unclear></del>
+  <add place="sublinear">
+    <del rend="strikethrough">pallid weary as the moon when she has waned</del>
+  </add>
+</mod>
+</line>
+
+    <line><del rend="strikethrough">That these strange shadows</del> after
+    <mod>
+      <del rend="strikethrough">short</del>
+      <add place="superlinear">brief</add>
+    </mod>
+     <del rend="strikethrough">space</del>. &#8212;-</line>
+    <line>From every
+      <mod>
+        <del rend="strikethrough">countenance</del>
+      <add place="sublinear">form the <del rend="strikethrough">beauty</del>
+     slowly waned</add>
+   </mod>
+ </line>
+ <line rend="indent5">&#8212;</line>
+
+    <line>From every
+      <mod>
+        <del rend="strikethrough">fairest form</del>
+        <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">manliest</del>
+          <add place="sublinear">firmest limb</add>
+      </mod>
+    </add>
+        </mod>
+    </line>
+
+    <line>The strength &amp;
+      <mod>
+        <del rend="strikethrough">beauty</del>
+        <add place="superlinear">freshness</add>
+      </mod>
+       fell like dust, &amp; left</line>
+    <line><del rend="strikethrough">A <unclear>nother</unclear></del>
+    The  <del rend="strikethrough">m</del>
+    <mod>
+      <del rend="strikethrough">accidents &amp;</del>
+      <add place="sublinear">action &amp; the shape without the grace</add>
+    </mod>
+  </line>
+  <line rend="indent5">&#8212;</line>
+
     <line>Of life, the marble brow of youth was cleft</line>
   </zone>
 </surface>

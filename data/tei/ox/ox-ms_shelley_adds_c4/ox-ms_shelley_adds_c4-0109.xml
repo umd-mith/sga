@@ -8,14 +8,26 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0109.jp2"/>
   <zone type="main">
     <line>Of demon wings, <del rend="strikethrough">in</del> and laughed from their dead eyes</line>
-    <line>To reassume the delegated power</line>
-    <line><del rend="strikethrough">In which the</del></line>
-    <line>Arrayed in which these worms did monarchize</line>
-    <line>Who make this <del rend="strikethrough">earth</del> theier charnel &#8212;-</line>
-    <line><del rend="strikethrough"><unclear>dark troop</unclear></del></line>
-    <line>Of  <del rend="strikethrough">which these shapes were shadows</del>. &#8212; others more</line>
-    <line>Humble, <del rend="strikethrough">around</del> like falcons sate upon the fist</line>
-    <line><del rend="strikethrough">Lowly,</del> <del rend="strikethrough">in shapes,</del> <del rend="strikethrough">of like shapes</del></line>
-    <line>Of common men, and round their heads did soar</line>
+    <line rend="indent1">To reassume the delegated power</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">In which the</del>
+      <add place="sublinear">Arrayed in which these worms did monarchize</add>
+    </mod>
+  </line>
+
+    <line rend="indent1">Who make this
+      <mod>
+        <del rend="strikethrough">earth</del>
+        <add place="sublinear">
+          <del rend="strikethrough">dark troop</del>
+        </add>
+      </mod>
+       theier charnel &#8212;-</line>
+
+    <line rend="indent1">Of  <del rend="strikethrough">which these shapes were shadows</del>. &#8212; others more</line>
+    <line rend="indent1">Humble, <del rend="strikethrough">around</del> like falcons sate upon the fist</line>
+    <line rend="indent1"><del rend="strikethrough">Lowly,</del> <del rend="strikethrough">in shapes,</del> <del rend="strikethrough">of like shapes</del></line>
+    <line rend="indent1">Of common men, and round their heads did soar</line>
   </zone>
 </surface>

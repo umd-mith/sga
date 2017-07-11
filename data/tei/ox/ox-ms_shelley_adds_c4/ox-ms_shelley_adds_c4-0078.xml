@@ -6,32 +6,74 @@
   xml:id="ox-ms_shelley_adds_c4-0078" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="35r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0078.jp2"/>
+<zone type="library">35</zone>
+<zone type="pagination"><del rend="strikethrough">8</del></zone>
   <zone type="main">
-    <line>fair coquette of Heaven,</line>
-    <line>Bright wanderer, <del rend="strikethrough">lovely</del> <del rend="strikethrough"><unclear>charge</unclear></del></line>
+
+    <line>Bright wanderer,
+      <mod>
+        <del rend="strikethrough">lovely <unclear>charge</unclear></del>
+        <add place="superlinear">fair coquette of Heaven,</add>
+      </mod>
+  </line>
     <line>To whom alone it has been given</line>
     <line>To change &amp; be adored for ever.........</line>
-    <line>Envy not this dim world, for never</line>
-    <line>But once within its shadow grew</line>
-    <line>One fair as you but far more true</line>
+    <line>Envy not this dim world, for never
+    <add place="sublinear">But once within its shadow grew
+    <add place="sublinear">
+    One fair as you but far more true</add>
+  </add>
+  </line>
+
+
     <line>She left me at the silent time</line>
-    <line>When the moon had <del rend="strikethrough">cli</del> ceased to climb</line>
-    <line><del rend="strikethrough">path</del></line>
-    <line>The azure <del rend="strikethrough">dome</del> of Heaven's <del rend="strikethrough">deep</del>, steep</line>
+    <line>When the moon had
+      <del rend="strikethrough">cli</del> ceased to climb
+    </line>
+
+    <line>The azure
+      <mod>
+        <del rend="strikethrough">dome</del>
+        <add place="superlinear">path</add>
+           </mod>
+         of Heaven's
+    <mod>
+           <del rend="strikethrough">deep,</del>
+           <add> steep</add>
+         </mod>
+       </line>
     <line>And like an albatross asleep</line>
     <line><del rend="strikethrough">Hovers</del> Balanced on her wings of light</line>
     <line>Hovered in the purple night &#8212;</line>
     <line><del rend="strikethrough">And I, who sate beside her feet</del></line>
-    <line>sought her ocean</line>
-    <line>Ere she <del rend="strikethrough">flew to seek her</del> nest,</line>
+
+    <line>Ere she
+      <mod>
+        <del rend="strikethrough">flew to seek her</del>
+        <add place="superlinear">sought her ocean</add>
+      </mod>
+       nest,
+     </line>
     <line>In the chambers of the west.&#8212;</line>
-    <line>staid</line>
-    <line>She left me, and I <del rend="strikethrough">sate</del> alone</line>
+
+    <line>She left me, and I
+      <mod>
+        <del rend="strikethrough">sate</del>
+        <add place="superlinear">staid</add>
+      </mod>
+       alone
+     </line>
     <line>Thinking over every tone,</line>
     <line>Which though now silent to the ear</line>
     <line>The enchanted heart could hear</line>
-    <line>past</line>
-    <line><del rend="strikethrough">Like music pauses which <unclear>ce</unclear></del></line>
+
+    <line><del rend="strikethrough">Like music</del>
+    <mod>
+      <del rend="strikethrough"> pauses</del>
+      <add place="superlinear">past</add>
+    </mod>
+      <del rend="strikethrough"> which <unclear>ce</unclear></del>
+    </line>
     <line>Like notes which die when born, but still</line>
     <line>Haunt the echoes of the hill:</line>
     <line>And <del rend="strikethrough">the</del> feeling ever &#8212; o too much</line>

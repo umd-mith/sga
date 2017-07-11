@@ -6,35 +6,70 @@
   xml:id="ox-ms_shelley_adds_c4-0050" partOf="#ox-ms_shelley_adds_c4"
   mith:shelfmark="MS. Shelley adds. c. 4" mith:folio="21r">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_c4/ms_shelley_adds_c4-0050.jp2"/>
+<zone type="library">21</zone>
+
+
+
+  <zone type="calculation">
+    <line rend="indent8"><del rend="strikethrough">1,5000,0</del></line>
+  </zone>
   <zone type="main">
-    <line>for want of dew was soiled</line>
-    <line>And died within the hand that gathered it.&#8212;</line>
-    <line>But few sought flowers there; they rather toiled</line>
+    <delSpan rend="vertical_line" spanTo="#c4-50.4"/>
+      <line rend="indent7">for want of dew was soiled</line>
+      <line>And died within the hand that gathered it.&#8212;</line>
+      <line rend="indent1">But few sought flowers there; they rather toiled</line>
+      <anchor xml:id="c4-50.4"/>
     <line><del rend="strikethrough">A</del></line>
     <line><del rend="strikethrough">And more by</del></line>
-    <line><del rend="strikethrough">Whither he came or</del></line>
-    <line><del rend="strikethrough">And</del></line>
-    <line><del rend="strikethrough">Old men &amp; children</del></line>
-    <line><del rend="strikethrough">And by their motions they appeared to know</del></line>
-    <line>All <del rend="strikethrough">hurried on</del>, onward yet</line>
-    <line><del rend="strikethrough">And all seemed hurriedg</del>, <del rend="strikethrough">and</del> none seemed to know</line>
-    <line>Whither he went or whence he came, or why</line>
-    <line>He made one of the multitude, yet so</line>
-    <line>Was borne amid the crowd; as through the</line>
-    <line><del rend="strikethrough">the million</del>     <del rend="strikethrough">like</del>     sky</line>
-    <line>One of <del rend="strikethrough">an</del> <del rend="strikethrough">army</del> of <del rend="strikethrough">autumnal</del> leaves.&#8212;</line>
-    <line>summer's</line>
-    <line><del rend="strikethrough">leaves</del> million leaves <del rend="strikethrough">of autumns bier</del></line>
-    <line><del rend="strikethrough">Old age &amp; youth, manhood</del> &amp; infancy,</line>
-    <line><del rend="strikethrough">Which</del> <del rend="strikethrough"><unclear>On</unclear></del> <del rend="strikethrough">One of</del></line>
-    <line><del rend="strikethrough">Brought</del> <del rend="strikethrough">each</del> <del rend="strikethrough">his</del> <del rend="strikethrough">chariot</del></line>
-    <line><del rend="strikethrough">Each marshalled</del></line>
-    <line>[Each brought its &lt;?chariots&gt;: </line>
-    <line>[&lt;Were&gt;] mingled in one impulse], and [did] </line>
-    <line><del rend="strikethrough"><unclear>Were</unclear></del> <del rend="strikethrough"><unclear>Whirled</unclear></del> <del rend="strikethrough">Whirred</del> torrent</line>
-    <line>Mixed in one mighty <del rend="strikethrough">impulse</del> did appear</line>
-    <line><del rend="strikethrough">By</del></line>
-    <line><del rend="strikethrough">Some</del> flying from the thing they feared &amp; some</line>
-    <line><del rend="strikethrough">Some</del></line>
+    <line rend="indent1"><del rend="strikethrough">Whither he came or</del></line>
+    <line rend="indent2"><del rend="strikethrough">And</del></line>
+    <line rend="indent3"><del rend="strikethrough">Old men &amp; children</del></line>
+    <line rend="indent4"><del rend="strikethrough">And by their motions they appeared to know</del></line>
+    <line rend="indent5"><del rend="strikethrough">And all seemed
+    <add place="superlinear"><del rend="strikethrough">hurried on</del> onward yet </add> hurried, and</del>
+    none seemed to know</line>
+    <line rend="indent3">Whither he went or whence he came, or why</line>
+    <line rend="indent2">He made one of the multitude, yet so</line>
+    <line rend="indent3">Was borne amid the crowd; as
+    <add place="sublinear"><del rend="strikethrough">like</del></add> through the
+    <add place="sublinear">sky</add></line>
+    <line rend="indent3">
+   One of
+   <mod>
+      <del rend="strikethrough">an army</del>
+      <add place="superlinear"><del rend="strikethrough">the million</del></add>
+      <add place="sublinear"><del rend="strikethrough">leaves</del> million leaves</add>
+   </mod>
+   of
+   <mod>
+      <del rend="strikethrough">autumnal</del>
+      <add place="sublinear">
+         <mod>
+            <del rend="strikethrough">of autumns bier</del>
+            <add place="superlinear">summer's</add>
+         </mod>
+      </add>
+   </mod>
+   leaves.&#8212;
+</line>
+
+
+    <line rend="indent3"><del rend="strikethrough">Old age &amp; youth, manhood</del> &amp; infancy,</line>
+    <line rend="indent4"><del rend="strikethrough">Which</del> <del rend="strikethrough"><unclear>On</unclear></del> <del rend="strikethrough">One of</del></line>
+    <line rend="indent4"><del rend="strikethrough">Brought</del> <del rend="strikethrough">each</del> <del rend="strikethrough">his</del> <del rend="strikethrough">chariot</del></line>
+    <line rend="indent4"><del rend="strikethrough">Each marshalled</del></line>
+    <line rend="indent5">Each brought its <unclear>chariots</unclear>:</line>
+    <line rend="indent5"><del rend="strikethrough">Were mingled in one impulse</del>,and
+    <del rend="strikethrough">did</del></line>
+    <line rend="indent5"><del rend="strikethrough"><unclear>Were</unclear></del>
+
+    <line rend="indent5"><mod><seg>Mixed</seg>
+    <add place="superlinear"><del rend="strikethrough">
+    <unclear>Were Whirled</unclear></del>Whirred</add></mod></line>
+    in one mighty
+    <mod><del rend="strikethrough">impulse</del><add place="superlinear">torrent</add></mod>
+     did appear</line>
+    <line rend="indent6"><mod><del rend="strikethrough">Some</del><add place="superlinear">By</add></mod>
+    flying from the thing they feared &amp; some</line>
   </zone>
 </surface>
