@@ -97,7 +97,9 @@
    wrath
  </line>
     <space quantity="2" unit="lines"/>
-    <zone type="sketch">sail boat</zone>
+    <zone type="sketch">
+    <!--sailboat sketch-->
+  </zone>
     <line>R</line>
     <line><del rend="strikethrough">The</del> earthquake is rocking</line>
     <line>The corpse in its cradle within the grave</line>
@@ -118,6 +120,6 @@
     <line rend="indent6">Ricetti<space quantity="2" unit="characters"/> Ricetti
     <space quantity="8" unit="characters"/> Ricetti</line>
     <zone type="sketch">aerial sketch of boat</zone>
-  
+
   </zone>
 </surface>
