@@ -16,7 +16,17 @@
     <line>What is Love? - ask him who lives</line>
     <line>what is life; ask him who adores</line>
     <line>what is God.</line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">We</del> I know not <del rend="strikethrough">how</del> the internal</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add>
+        <mod>   <del rend="strikethrough">We</del>
+         </add>
+         <add> I
+         </add>
+       </mod>
+       </mod>
+       know not <del rend="strikethrough">how</del> the internal</line>
     <line>constitution of other men, or even of</line>
     <line>thine whom I now address. I see that</line>
     <line><del rend="strikethrough">some</del> in some external attributes they</line>
