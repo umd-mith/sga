@@ -7,12 +7,20 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="4">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0006.jp2"/>
   <zone type="main">
-    <line>best</line>
-    <line>and burning with the hearts blood.</line>
+
+    <line>and burning with the hearts
+      <add place="superlinear">best</add>
+       blood.
+     </line>
     <line>This is Love. <del rend="strikethrough">All else is vanity.</del></line>
     <line><del rend="strikethrough">Every living being</del> This is the</line>
-    <line><del rend="strikethrough">the</del></line>
-    <line>bond &amp; the sanction <del rend="strikethrough">of social</del></line>
+
+    <line>bond &amp; the sanction <del rend="strikethrough">of
+      <add place="superlinear">
+        <del rend="strikethrough">the</del>
+      </add>
+       social</del>
+     </line>
     <line><del rend="strikethrough">life</del> <del rend="strikethrough">-</del> - <del rend="strikethrough">state</del> which connects not</line>
     <line>only man with man, but with</line>
     <line>every thing which exists. We</line>
@@ -23,7 +31,14 @@
     <line>It is probably in correspondence</line>
     <line>with this law that the infant</line>
     <line>draws milk from the bosom of</line>
-    <line>its mother. <del rend="strikethrough">So soon as</del> <del rend="strikethrough">As the</del></line>
+    <line>its mother.
+      <mod>
+        <del rend="strikethrough">So soon as</del>
+        <add>
+           <del rend="strikethrough">As the</del>
+         </add>
+         </mod>
+       </line>
     <line><del rend="strikethrough">our nature becomes developed</del> this</line>
     <line>propensity developes itself with</line>
   </zone>
