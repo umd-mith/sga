@@ -7,16 +7,29 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="6">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0008.jp2"/>
   <zone type="main">
-    <line>that</line>
-    <line><del rend="strikethrough">which</del> <del rend="strikethrough">to</del> <del rend="strikethrough">draws</del> describes a circle</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">which</del>
+        <add place="superlinear">
+          <del rend="strikethrough">that</del>
+        </add>
+      </mod>
+       <del rend="strikethrough">to</del> <del rend="strikethrough">draws</del> describes a circle</line>
     <line>around its proper Paradise which</line>
-    <line>&amp; sorrow</line>
-    <line>pain <del rend="strikethrough">&amp;</del> <del rend="strikethrough">disgust or</del> evil dare</line>
+
+    <line>pain <del rend="strikethrough">&amp;</del>
+    <add place="superlinear"> &amp; sorrow</add>
+     <del rend="strikethrough">disgust or</del> evil dare
+   </line>
     <line>eagerly</line>
-    <line>not overleap. To this we</line>
+    <line>not overleap. To this
+          <add place="superlinear">eagerly</add>
+           we
+  </line>
     <line>refer all sensations, thirsting</line>
     <line>that they should resemble or</line>
-    <line>correspond with it. The disco<del rend="strikethrough">very</del></line>
+    <line>correspond with it. The disco</line>
     <line>-very of its antitype: the <del rend="strikethrough">finding</del></line>
     <line><del rend="strikethrough">of</del> meeting with an understanding</line>
     <line>capable of clearly estimating the</line>
