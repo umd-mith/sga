@@ -78,7 +78,11 @@
     <gap quantity="6" unit="chars"/>
   </del>
 </line>
-    <line xml:id="e11-0045-pu_line_18"><del rend="strikethrough">And <unclear>so</unclear> they all were lovely, and I</del></line>
-    <line>Thus <unclear>mingled</unclear></line>
+    <line xml:id="e11-0045-pu_line_18"><del rend="strikethrough">And <unclear>so</unclear>
+    <add place="sublinear">
+      Thus <unclear>mingled</unclear>
+    </add>
+    they all were lovely, and I</del></line>
+
   </zone>
 </surface>
