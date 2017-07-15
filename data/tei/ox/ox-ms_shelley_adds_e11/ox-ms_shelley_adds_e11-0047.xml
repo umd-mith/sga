@@ -7,16 +7,40 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="45">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0047.jp2"/>
   <zone type="main">
+    <zone type="library">45</zone>
     <line>And behold thrones were kingless &amp; men walked</line>
     <line>One with the other, even as spirits do</line>
-    <line>None <unclear>frowned</unclear>, none <unclear>trampled</unclear>; <del rend="strikethrough"><unclear>none</unclear></del>       <unclear>fear</unclear></line>
-    <line>hate, disdain <unclear>nor</unclear></line>
-    <line><del rend="strikethrough"><unclear>  ?   </unclear></del></line>
-    <line><del rend="strikethrough">No</del> self love, or self contempt, <del rend="strikethrough"><unclear> ?  </unclear> <unclear> ?  </unclear></del></line>
-    <line><unclear>on</unclear> <unclear>human</unclear> <del rend="strikethrough"><unclear>looks</unclear></del></line>
-    <line><unclear>brows</unclear></line>
-    <line>No more inscribed; <del rend="strikethrough">as oer a <unclear>tyrants</unclear></del></line>
-    <line>as oer the gate of hell</line>
+    <line>
+      None
+      <unclear>frowned</unclear>, none <unclear>trampled</unclear>;
+      <del rend="strikethrough"><unclear>none</unclear></del>
+    <add place="sublinear"><unclear>hate, disdain nor fear</unclear></add></line>
+
+
+    <line>
+      <del rend="strikethrough">No</del>
+       self love, or self contempt,
+    <mod>
+         <del rend="strikethrough">
+         <gap quantity="4" unit="chars"/>  <gap quantity="4" unit="chars"/>
+       </del>
+       <add place="sublinear">
+         <unclear>on human </unclear>
+       </add>
+     </mod>
+     <mod>
+        <del rend="strikethrough"><unclear>looks</unclear></del>
+        <add place="sublinear"><unclear>brows</unclear></add>
+     </mod>
+     </line>
+
+    <line>No more inscribed;
+      <mod>
+        <del rend="strikethrough">as oer a <unclear>tyrants</unclear></del>
+      <add place="sublinear">as oer the gate of hell</add>
+    </mod>
+  </line>
+
     <line>"All hope abandon ye who enter here"</line>
     <line>None wrought his lips <unclear>in</unclear> <unclear>truth</unclear> <unclear>entangling</unclear> <unclear>lines</unclear></line>
     <line>Which smile<unclear>d</unclear> <unclear>the</unclear> <unclear>lie</unclear>, his tongue disdained to speak</line>
@@ -24,12 +48,36 @@
     <line>The sparks of <unclear>love</unclear> <unclear>&amp;</unclear> <unclear>hope</unclear>, till <unclear>there</unclear> <unclear>remained</unclear></line>
     <line>Those bitter ashes, a soul self consumed</line>
     <line>And the wretch crept, a <unclear>vampire</unclear> among <unclear>men</unclear></line>
-    <line>Infecting all with <unclear>his</unclear> <unclear>own</unclear> <unclear>ill;</unclear> none talked</line>
-    <line><unclear> ?  </unclear> <unclear> ?  </unclear> <unclear>cold</unclear></line>
-    <line>The common vain <unclear>false</unclear> <del rend="strikethrough">yet</del> <del rend="strikethrough"><unclear> ?  </unclear> <unclear>  ?   </unclear></del> talk</line>
-    <line>Which makes <unclear>the</unclear> <unclear>soul</unclear> <unclear>deny</unclear> the yes <unclear>it</unclear> breathes</line>
-    <line>Yet question <unclear>the</unclear> <unclear>unmeant</unclear> <unclear>hypocrisy</unclear> <unclear>  ?  </unclear></line>
-    <line><unclear>With</unclear> <unclear>such</unclear> <unclear>distrust</unclear> <unclear>as</unclear> <unclear>  ?   </unclear> <del rend="strikethrough"><unclear>   ?   </unclear></del></line>
+    <line>Infecting all with
+      <unclear>his</unclear> <unclear>own</unclear> <unclear>ill;</unclear>
+       none talked</line>
+
+    <line>
+      The common vain
+       <unclear>false</unclear>
+    <mod>
+         <del rend="strikethrough">yet</del>
+         <del rend="strikethrough">
+         <gap quantity="4" unit="chars"/><gap quantity="6" unit="chars"/>
+       </del>
+       <add place="superlinear">
+         <unclear>bitter hollow</unclear>
+       </add>
+     </mod>
+         talk
+       </line>
+    <line>Which makes
+      <unclear>the</unclear> <unclear>soul</unclear> <unclear>deny</unclear> the yes <unclear>it</unclear> breathes</line>
+    <line>
+      Yet question <unclear>the</unclear> <unclear>unmeant</unclear> <unclear>hypocrisy</unclear>
+    <unclear>voice</unclear>
+  </line>
+    <line><unclear>With</unclear> <unclear>such</unclear> <unclear>distrust</unclear>
+    <unclear>as</unclear> <unclear>naught</unclear>
+    <del rend="strikethrough">
+    <gap quantity="6" unit="chars"/>
+  </del>
+</line>
     <line><del rend="strikethrough">And <unclear>so</unclear> they all were lovely, and I</del></line>
     <line>Thus <unclear>mingled</unclear></line>
   </zone>
