@@ -8,44 +8,44 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0048.jp2"/>
   <zone type="main">
     <zone type="library">46</zone>
-    <line>But being so made Earth like Heaven &#8212;
+    <line xml:id="e11-0046-pu_line_1">But being so made Earth like Heaven &#8212;
     <add place="sublinear">nor <unclear> pride</unclear></add>
   </line>
 
-    <line>Thrones altars judgement seats &amp; prisons wherein</line>
-    <line>And beside which by wretched men were <unclear>borne</unclear></line>
-    <line>Sceptres tiaras swords &amp; chains, &amp; tomes</line>
-    <line>Of reasoned wrong glozed on by ignorance</line>
+    <line xml:id="e11-0046-pu_line_2">Thrones altars judgement seats &amp; prisons wherein</line>
+    <line xml:id="e11-0046-pu_line_3">And beside which by wretched men were <unclear>borne</unclear></line>
+    <line xml:id="e11-0046-pu_line_4">Sceptres tiaras swords &amp; chains, &amp; tomes</line>
+    <line xml:id="e11-0046-pu_line_5">Of reasoned wrong glozed on by ignorance</line>
 
-    <line>Were like those hideous &amp; barbaric
+    <line xml:id="e11-0046-pu_line_6">Were like those hideous &amp; barbaric
       <mod>
         <del rend="strikethrough"><unclear>shapes</unclear></del>
       <add place="superlinear">forms</add>
     </mod>
   </line>
 
-    <line>The
+    <line xml:id="e11-0046-pu_line_7">The
       <mod>
         <del rend="strikethrough">spectres of an</del>
         <add place="superlinear">ghosts of a nor more</add>
       </mod> <del rend="strikethrough">un</del>remembered fame
     </line>
 
-    <line>Which from their unworn obelisks,
+    <line xml:id="e11-0046-pu_line_8">Which from their unworn obelisks,
       <add place="superlinear">yet</add>
        look forth
      </line>
-    <line>In triuph oer the palaces &amp; <unclear>tombs</unclear></line>
+    <line xml:id="e11-0046-pu_line_9">In triuph oer the palaces &amp; <unclear>tombs</unclear></line>
     <line>Of those who <unclear>were</unclear> <unclear>their</unclear> conquerors, crumbling
   <add place="sublinear">round;</add>
 </line>
 
-    <line>
+    <line xml:id="e11-0046-pu_line_10">
       <del rend="strikethrough">Which Kings &amp; Priests <unclear>once</unclear>
       destined <unclear>to</unclear> <unclear>outlast</unclear></del>
     </line>
 
-    <line>
+    <line xml:id="e11-0046-pu_line_11">
       <del rend="strikethrough">Yet</del> <unclear>these</unclear>
       which
       <mod>
@@ -56,7 +56,7 @@
     </del>
     </line>
 
-    <line>
+    <line xml:id="e11-0046-pu_line_12">
       <mod>
         <del rend="strikethrough"><unclear>The</unclear></del>
         <add place="superlinear"><unclear>A</unclear></add>
@@ -65,7 +65,9 @@
        <del rend="strikethrough"><unclear>receeded</unclear> <unclear>there</unclear></del>
      <add place="superlinear"><unclear>exempt</unclear></add>
    </line>
-    <line>And world-wide <del rend="strikethrough"><unclear>desolation</unclear></del></line>
-    <line>Not overthrown, but unregarded, there.</line>
+    <line xml:id="e11-0046-pu_line_13">And world-wide
+      <del rend="strikethrough"><unclear>desolation</unclear></del>
+    </line>
+    <line xml:id="e11-0046-pu_line_14">Not overthrown, but unregarded, there.</line>
   </zone>
 </surface>
