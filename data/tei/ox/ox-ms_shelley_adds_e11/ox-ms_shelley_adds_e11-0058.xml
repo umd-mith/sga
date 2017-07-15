@@ -7,13 +7,19 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="56">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0058.jp2"/>
   <zone type="main">
+    <zone type="library">56</zone>
     <line><del rend="strikethrough">The story of</del></line>
-    <line>The Greek tragic writers were accustomed</line>
+    <line rend="indent1">The Greek tragic writers were accustomed</line>
     <line>to choose a subject well known to thier</line>
     <line>auditors &amp; often treated by their</line>
     <line><del rend="strikethrough">contemporaries &amp; rivals</del> &#8212;-</line>
-    <line>The Greek tragic writers <del rend="strikethrough">in their</del></line>
-    <line>in selecting <unclear>thier</unclear></line>
+    <line rend="indent1">The Greek tragic writers
+      <mod>
+         <del rend="strikethrough">in their</del>
+       <add place="sublinear">in selecting <unclear>their</unclear></add>
+     </mod>
+   </line>
+
     <line><del rend="strikethrough">treatment of</del> <del rend="strikethrough">when they</del> <del rend="strikethrough">choosing</del> as <del rend="strikethrough">a</del></line>
     <line>subject any portion of the history or</line>
     <line>mythology of their nation, employed</line>
