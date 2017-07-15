@@ -7,20 +7,47 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="59">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0061.jp2"/>
   <zone type="main">
+    <zone type="library">59</zone>
     <line>drama of Aechylus, an ambition which,</line>
     <line>if my preference to this mode of treating</line>
     <line>the subject had incited me to cherish, the</line>
-    <line><unclear>thought</unclear>         high</line>
-    <line><del rend="strikethrough">consideration</del> of the <del rend="strikethrough">unfavourable</del> comparison</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">consideration</del>
+        <add place="superlinear">
+          <unclear>thought</unclear>
+        </add>
+      </mod>
+       of the
+       <mod>
+         <del rend="strikethrough">unfavourable</del>
+         <add place="superlinear">high</add>
+       </mod>
+        comparison
+      </line>
     <line>I <del rend="strikethrough"><unclear>challenged</unclear></del>, should so challenge might well</line>
     <line>abate. But in truth I was averse from</line>
-    <line>a <del rend="strikethrough">conclusion so <unclear>uni</unclear></del> a catastrophe so feeble</line>
+    <line>
+      <!--with these words, page shifts to ink for next five lines-->
+      a <del rend="strikethrough">conclusion so <unclear>uni</unclear></del> a catastrophe so feeble</line>
     <line>as that of <unclear>reconcliling</unclear> the champion, with</line>
     <line>the oppressor, of mankind <del rend="strikethrough">and</del> nor can I</line>
-    <line><unclear>scene</unclear></line>
-    <line>imagine how such a <del rend="strikethrough">story</del> could ever have</line>
+
+    <line>imagine how such a
+      <mod>
+        <del rend="strikethrough">story</del>
+        <add place="superlinear">
+          <unclear>scene</unclear>
+        </add>
+      </mod>
+       could ever have
+     </line>
     <line><del rend="strikethrough">been exhibited without</del> <unclear>exciited</unclear> any thing</line>
     <line>do not speak</line>
     <line>like a death<unclear>s</unclear>  <unclear></unclear></line>
+    <zone type="sketch">
+      <!--sketch of tree-->
+    </zone>
   </zone>
 </surface>
