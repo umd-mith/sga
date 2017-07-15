@@ -7,26 +7,112 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="44">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0046.jp2"/>
   <zone type="main">
-    <line>32      = = Field=Place</line>
-    <line>Nor jealousy nor envy nor ill shame</line>
-    <line><del rend="strikethrough"><unclear>shame</unclear> <unclear>or</unclear> <unclear>the</unclear></del></line>
-    <line>The bitterest of <del rend="strikethrough">drops</del> those drops of treasured gall</line>
-    <line><del rend="strikethrough"><unclear>Spoilt</unclear> not the <unclear>sweet</unclear> taste</del> <del rend="strikethrough">the</del> nepenthe, love</line>
-    <line>the sweet taste of earths</line>
-    <line><unclear>Spoilt</unclear> <del rend="strikethrough"><unclear>not</unclear> <unclear>the</unclear></del></line>
-    <line>And women too frank beautiful &amp; kind</line>
-    <line>wide     which</line>
-    <line>As the <del rend="strikethrough">blue</del> heaven raining fresh light &amp; dew</line>
-    <line>On the <unclear>free</unclear> earth; past, <unclear>gen</unclear>tle radiant</line>
-    <line><unclear>forms</unclear></line>
-    <line>From custom's <unclear>evil</unclear> <del rend="strikethrough"><unclear></unclear></del> taint exempt &amp; <unclear>pure</unclear></line>
-    <line>Speaking     wisdom              could</line>
-    <line><del rend="strikethrough">Looking</del> the <del rend="strikethrough">knowledge</del> once they <del rend="strikethrough"><unclear>dared</unclear></del> not <unclear>think</unclear></line>
-    <line><unclear>feared</unclear> <unclear>to</unclear> <unclear>feel</unclear></line>
-    <line><unclear>Looking</unclear> emotions once they <del rend="strikethrough"><unclear>feared</unclear> <unclear>not</unclear></del> <del rend="strikethrough"><unclear>have</unclear></del></line>
-    <line><del rend="strikethrough"><unclear>Speaking</unclear></del>                               dared <unclear>feel</unclear></line>
-    <line>not <unclear>be</unclear></line>
-    <line><unclear>And</unclear> changed to all which once they <del rend="strikethrough"><unclear>to</unclear></del></line>
-    <line><del rend="strikethrough"><unclear>feared</unclear></del></line>
+    <zone type="library">44</zone>
+  <zone type="pagination">32</zone>
+
+    <line>= = Field=Place
+    <!--this text is written in using an ink pen; appears darker than the rest of text on page-->
+  </line>
+    <line xml:id="e11-0044-pu_line_1">Nor jealousy nor envy nor ill shame
+
+    </line>
+
+    <line xml:id="e11-0044-pu_line_2">The bitterest of
+      <mod>
+        <del rend="strikethrough">drops</del>
+        <add place="superlinear">
+          <del rend="strikethrough">shame</del>
+        </add>
+      </mod>
+        <add place="superlinear">
+          <del rend="strikethrough"><unclear>or</unclear></del>
+
+            <del rend="strikethrough"><unclear>the</unclear></del>
+          </add>
+      those drops of treasured gall
+    </line>
+    <line xml:id="e11-0044-pu_line_3">
+      <del rend="strikethrough"><unclear>Spoilt</unclear> not the <unclear>sweet</unclear> taste</del>
+      </line>
+
+    <line xml:id="e11-0044-pu_line_4">
+      <unclear>Spoilt</unclear>
+      <del rend="strikethrough"><unclear>not</unclear> <unclear>the</unclear></del>
+    <add place="superlinear">the sweet taste of earths
+      <add place="superlinear"><del rend="strikethrough">the</del> nepenthe, love</add>
+    </add>
+</line>
+<space quantity="1" unit="line"/>
+<line>_________________________________________________________________________</line>
+    <line xml:id="e11-0044-pu_line_5">And women too frank beautiful &amp; kind</line>
+
+    <line xml:id="e11-0044-pu_line_6">As the
+      <mod>
+        <del rend="strikethrough">blue</del>
+        <add place="superlinear">wide</add>
+      </mod>
+       heaven
+       <add place="superlinear">which</add>
+        raining fresh light &amp; dew
+      </line>
+    <line xml:id="e11-044-pu_line_7">On the <unclear>free</unclear> earth; past, <unclear>gen</unclear>tle radiant
+  <add place="sublinear"><unclear>forms</unclear></add>
+</line>
+
+    <line xml:id="e11-0044-pu_line_8">
+      From custom's <unclear>evil</unclear>
+      <gap quantity="3" unit="chars"/>
+       taint exempt &amp; <unclear>pure</unclear>
+     </line>
+
+    <line xml:id="e11-0044-pu_line_9">
+      <mod>
+        <del rend="strikethrough">Looking</del>
+        <add place="superlinear">Speaking</add>
+      </mod>
+       the
+       <mod>
+         <del rend="strikethrough">knowledge</del>
+         <add place="superlinear">wisdom</add>
+       </mod>
+       once they
+       <mod>
+         <del rend="strikethrough"><unclear>dared</unclear></del>
+         <add place="superlinear">could</add>
+       </mod>
+        not
+       <unclear>think</unclear>
+     </line>
+
+
+    <line xml:id="e11-0044-pu_line_10">
+      <mod>
+        <unclear>Looking</unclear>
+        <add place="sublinear">
+          <del rend="strikethrough">Speaking</del>
+        </add>
+      </mod>
+       emotions once they
+       <mod>
+         <del rend="strikethrough">
+           <unclear>feared</unclear> <unclear>not</unclear><unclear>have</unclear>
+         </del>
+         <add place="superlinear">
+           <unclear>feared to feel</unclear>
+         </add>
+       </mod>
+       <add place="sublinear">dared <unclear>feel</unclear>
+      </add>
+   </line>
+
+    <line xml:id="e11-0044-pu_line_11">
+      <unclear>And</unclear> changed to all which once they
+    <add place="sublinear">
+      <del rend="strikethrough">feared</del>
+    </add>
+    <del rend="strikethrough"><unclear>to</unclear></del>
+  <add place="superlinear">not <unclear>be</unclear></add>
+</line>
+
   </zone>
 </surface>
