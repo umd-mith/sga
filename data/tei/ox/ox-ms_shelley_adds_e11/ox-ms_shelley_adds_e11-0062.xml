@@ -7,27 +7,42 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="60">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0062.jp2"/>
   <zone type="main">
-    <line>on the <unclear>  ?  </unclear></line>
-    <line>but dissappointment. The moral interest</line>
-    <line>of the fable so powerful in the sufferings</line>
-    <line><del rend="strikethrough">of Prometheus</del> &amp; the endurance of Prometheus,</line>
-    <line><del rend="strikethrough">is annih</del> would be annihilated if we</line>
-    <line>could concieve of him as unsaying his</line>
-    <line>high language, and <unclear>qualing</unclear> before his</line>
-    <line>perfidious &amp; successful adversary. Prome<del rend="strikethrough">theus</del></line>
-    <line>-theus is I think a more poetical</line>
-    <line>character than Satan, because in</line>
-    <line>addition to <del rend="strikethrough">hi</del> courage, &amp; majesty &amp;</line>
-    <line>&amp;                                    firm</line>
-    <line>patient opposition to omnipotent force</line>
-    <line>he is susceptible of being described as</line>
-    <line>exempt from the taints of ambition</line>
-    <line>&amp; revenge &amp; injustice which in the hero</line>
-    <line>of Paradise Lost perpetually interfere</line>
-    <line>with the interest   Satan engenders in</line>
-    <line>the mind a pernicious casuistry which</line>
-    <line>weigh</line>
-    <line>leads us to <del rend="strikethrough">excuse</del> his faults <del rend="strikethrough">in</del></line>
-    <line><del rend="strikethrough">return for his</del> with his wrongs</line>
+    <zone type="library">60</zone>
+
+    <line xml:id="e11-0060-pu_line_1">but dissappointment.
+      <add place="superlinear">
+        on the <unclear>state</unclear>
+      </add>
+       The moral interest
+     </line>
+    <line xml:id="e11-0060-pu_line_2">of the fable so powerful in the sufferings</line>
+    <line xml:id="e11-0060-pu_line_3"><del rend="strikethrough">of Prometheus</del> &amp; the endurance of Prometheus,</line>
+    <line xml:id="e11-0060-pu_line_4"><del rend="strikethrough">is annih</del> would be annihilated if we</line>
+    <line xml:id="e11-0060-pu_line_5">could concieve of him as unsaying his</line>
+    <line xml:id="e11-0060-pu_line_6">high language, and <unclear>qualing</unclear> before his</line>
+    <line xml:id="e11-0060-pu_line_7">perfidious &amp; successful adversary. Prome<del rend="strikethrough">theus</del></line>
+    <line xml:id="e11-0060-pu_line_8">-theus is I think a more poetical</line>
+    <line xml:id="e11-0060-pu_line_9">character than Satan, because in</line>
+    <line xml:id="e11-0060-pu_line_10">addition to <del rend="strikethrough">hi</del> courage, &amp; majesty &amp;
+  <add place="sublinear">firm</add>
+</line>
+
+    <line xml:id="e11-0060-pu_line_11">
+      <add place="superlinear">&amp;</add>
+      patient opposition to omnipotent force</line>
+    <line xml:id="e11-0060-pu_line_12">he is susceptible of being described as</line>
+    <line xml:id="e11-0060-pu_line_13">exempt from the taints of ambition</line>
+    <line xml:id="e11-0060-pu_line_14">&amp; revenge &amp; injustice which in the hero</line>
+    <line xml:id="e11-0060-pu_line_15">of Paradise Lost perpetually interfere</line>
+    <line xml:id="e11-0060-pu_line_16">with the interest   Satan engenders in</line>
+    <line xml:id="e11-0060-pu_line_17">the mind a pernicious casuistry which</line>
+
+    <line xml:id="e11-0060-pu_line_18">leads us to
+      <mod>
+        <del rend="strikethrough">excuse</del>
+        <add place="superlinear">weigh</add>
+      </mod>
+       his faults <del rend="strikethrough">in</del></line>
+    <line xml:id="e11-0060-pu_line_19"><del rend="strikethrough">return for his</del> with his wrongs</line>
   </zone>
 </surface>
