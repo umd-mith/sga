@@ -8,11 +8,11 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0115.jp2"/>
   <zone type="main">
     <!--the following is printed upside down on verso of MS-->
-    <line rend="indent4">Voice</line>
-    <line rend="indent5">Follow, follow</line>
-    <line rend="indent4">Panthea</line>
+    <line rend="indent4" xml:id="e11-0113-pu_line_1">Voice</line>
+    <line rend="indent5" xml:id="e11-0113-pu_line_2">Follow, follow</line>
+    <line rend="indent4" xml:id="e11-0113-pu_line_3">Panthea</line>
 
-    <line>The
+    <line xml:id="e11-0113-pu_line_4">The
       <mod>
         <del rend="strikethrough">rocks</del>
         <add place="superlinear">crags</add>
@@ -20,16 +20,16 @@
       <unclear>;</unclear> this bright spring morning
     <add place="sublinear">mock our voices</add>
   </line>
-    <line>As if they
+    <line xml:id="e11-0113-pu_line_5">As if they
       <mod>
         <del rend="strikethrough">lived</del>
       <add place="superlinear">they</add>
     </mod>
      were spirit-tongued</line>
-    <line rend="indent4">
+    <line rend="indent4" xml:id="e11-0113-pu_line_6">
       Asia
     </line>
-    <line rend="indent5">
+    <line rend="indent5" xml:id="e11-0113-pu_line_7">
       <del rend="strikethrough">Oh no</del>
        list list,
        <add place="superlinear">it is some
@@ -40,41 +40,41 @@
      </add>
          <del rend="strikethrough">I <unclear>pray</unclear></del>
     </line>
-    <line>
+    <line xml:id="e11-0113-pu_line_8">
       Around the crags, &#8212; what
       <del rend="strikethrough">clear</del> small
       <add place="superlinear">clear</add>
       sound &#8212;
     <add place="sublinear">O list</add>
   </line>
-    <line rend="indent4">Voice
+    <line rend="indent4" xml:id="e11-0113-pu_line_9">Voice
     </line>
-    <line rend="indent3">O follow follow</line>
+    <line rend="indent3" xml:id="e11-0113-pu_line_10">O follow follow</line>
 
-    <line rend="indent3">As
+    <line rend="indent3" xml:id="e11-0113-pu_line_11">As
       <mod>
         <del rend="strikethrough">the</del>
         <add place="superlinear">the</add>
       </mod>
        voice recedeth
      </line>
-    <line rend="indent3">Thro the caverns hollow</line>
+    <line rend="indent3" xml:id="e11-0113-pu_line_12">Thro the caverns hollow</line>
 
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-0113-pu_line_13">
       <unclear>O</unclear>
        Where the forest spreadeth
      </line>
-    <line rend="indent3"><del rend="strikethrough"><unclear>the</unclear></del> <unclear>follow</unclear></line>
-    <line rend="indent3"><del rend="strikethrough">Where the woods <unclear>are</unclear> <unclear>spreadeth</unclear></del></line>
+    <line rend="indent3" xml:id="e11-0113-pu_line_14"><del rend="strikethrough"><unclear>the</unclear></del> <unclear>follow</unclear></line>
+    <line rend="indent3" xml:id="e11-0113-pu_line_15"><del rend="strikethrough">Where the woods <unclear>are</unclear> <unclear>spreadeth</unclear></del></line>
 
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-0113-pu_line_16">
       <mod>
         <del rend="strikethrough">Under</del>
       <add place="superlinear">Thro</add>
     </mod>
      <del rend="strikethrough">caverns hollow</del>
    </line>
-    <line rend="indent3"><del rend="strikethrough">As the voice recedeth</del></line>
-    <line><unclear>Th</unclear> <del rend="strikethrough">Child of Ocean</del></line>
+    <line rend="indent3" xml:id="e11-0113-pu_line_17"><del rend="strikethrough">As the voice recedeth</del></line>
+    <line xml:id="e11-0113-pu_line_18"><unclear>Th</unclear> <del rend="strikethrough">Child of Ocean</del></line>
   </zone>
 </surface>
