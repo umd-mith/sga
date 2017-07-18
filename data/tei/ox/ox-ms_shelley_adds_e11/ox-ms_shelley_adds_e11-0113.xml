@@ -10,10 +10,10 @@
     <zone type="library">111</zone>
     <!--first few lines seem to be written in darker
      pencil on top of earlier lighter lines only partially rubbed out or erased-->
-    <line rend="indent4">
+    <line rend="indent4" xml:id="e11-00111-pu_line_1">
       <del rend="strikethrough">Asia</del> Panthea
   </line>
-    <line>Shall we pursue the sound &#8212; it
+    <line xml:id="e11-00111-pu_line_2">Shall we pursue the sound &#8212; it
       <del rend="strikethrough">is</del> more
       <add place="superlinear">faint
       <add place="superlinear">grows <unclear>more</unclear>
@@ -21,13 +21,13 @@
   </add>
   </line>
 
-    <line>
+    <line xml:id="e11-00111-pu_line_3">
       And distant. <unclear>a</unclear> <unclear>th</unclear>
     </line>
-    <line rend="indent5">
+    <line rend="indent5" xml:id="e11-00111-pu_line_4">
       Asia
     </line>
-    <line rend="indent4">
+    <line rend="indent4" xml:id="e11-00111-pu_line_5">
       <unclear unit="chars" extent="3" /> <unclear>Hark</unclear>
       the strain<unclear>s
     <add place="superlinear"><unclear>when</unclear></add>
@@ -35,7 +35,7 @@
       <add place="superlinear">nearer now</add>
       <unclear>unknown</unclear>
     </line>
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-00111-pu_line_6">
     <mod>
         <del rend="strikethrough"><unclear>Unknown</unclear></del>
       <add place="sublinear">
@@ -46,10 +46,10 @@
     </mod>
   </line>
 
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-00111-pu_line_7">
       <del rend="strikethrough">Beyond the world of being</del> <del rend="strikethrough"><unclear>nature</unclear></del>
     </line>
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-00111-pu_line_8">
       <mod>
         <del rend="strikethrough">In the shade of shadows</del>
       <add place="sublinear">
@@ -62,23 +62,23 @@
     </mod>
   </line>
 
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-00111-pu_line_9">
       <del rend="strikethrough">Thro</del> By thy step alone</line>
-    <line rend="indent4">
+    <line rend="indent4" xml:id="e11-00111-pu_line_10">
       Can its rest be broken
     </line>
-    <line rend="indent4">
+    <line rend="indent4" xml:id="e11-00111-pu_line_11">
       Child of Ocean !
     </line>
-    <line rend="indent3">
+    <line rend="indent3" xml:id="e11-00111-pu_line_12">
       <del rend="strikethrough">Follow</del>
      <del rend="strikethrough">O follow follow</del>
    </line>
-    <line>
+    <line xml:id="e11-00111-pu_line_13">
       <del rend="strikethrough">Thro the caverns hollow</del>
     </line>
 
-    <line>
+    <line xml:id="e11-00111-pu_line_14">
       <del rend="strikethrough">H<unclear>u</unclear>nt</del>
       <mod>
         <del rend="strikethrough"> the bubbling &amp; of the </del>
@@ -86,7 +86,7 @@
       </mod>
     <del rend="strikethrough">fountains</del>
   </line>
-    <line>
+    <line xml:id="e11-00111-pu_line_15">
       To
       <mod>
        <del rend="strikethrough"> their cradles in</del>
@@ -95,13 +95,13 @@
      <del rend="strikethrough"> the mountains</del>
      </line>
 
-    <line>
+    <line xml:id="e11-00111-pu_line_16">
       <del rend="strikethrough">Where on Demogorgons throne</del>
     </line>
-    <line>
+    <line xml:id="e11-00111-pu_line_17">
       A <del rend="strikethrough">veiled darkness sits alone</del>
     </line>
-    <line>
+    <line xml:id="e11-00111-pu_line_18">
       X Thro the labyrinthine mountains
     </line>
   </zone>
