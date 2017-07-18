@@ -7,29 +7,74 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="113">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0115.jp2"/>
   <zone type="main">
-    <line>Voice</line>
-    <line>Follow, follow</line>
-    <line>Panthea</line>
-    <line>crags</line>
-    <line>The <del rend="strikethrough">rocks</del><unclear>;</unclear> this bright spring morning</line>
-    <line>they             mock our voices</line>
-    <line>As if they <del rend="strikethrough">lived</del> were spirit-tongued       being</line>
-    <line>Asia          it is some <del rend="strikethrough"><unclear>spirit</unclear></del></line>
-    <line><del rend="strikethrough">Oh no</del> list list,     <del rend="strikethrough">I <unclear>pray</unclear></del></line>
-    <line>clear</line>
-    <line>Around the crags, &#8212; what <del rend="strikethrough">clear</del> small sound &#8212;</line>
-    <line>Voice                      <unclear>o</unclear> list</line>
-    <line>O follow follow</line>
-    <line>our</line>
-    <line>As <del rend="strikethrough">the</del> voice recedeth</line>
-    <line>Thro the caverns hollow</line>
-    <line><unclear>O</unclear></line>
-    <line>Where the forest spreadeth</line>
-    <line><del rend="strikethrough"><unclear>the</unclear></del> <unclear>follow</unclear></line>
-    <line><del rend="strikethrough">Where the woods <unclear>are</unclear> <unclear>spreadeth</unclear></del></line>
-    <line>Thro</line>
-    <line><del rend="strikethrough">Under caverns hollow</del></line>
-    <line><del rend="strikethrough">As the voice recedeth</del></line>
+    <!--the following is printed upside down on verso of MS-->
+    <line rend="indent4">Voice</line>
+    <line rend="indent5">Follow, follow</line>
+    <line rend="indent4">Panthea</line>
+
+    <line>The
+      <mod>
+        <del rend="strikethrough">rocks</del>
+        <add place="superlinear">crags</add>
+      </mod>
+      <unclear>;</unclear> this bright spring morning
+    <add place="sublinear">mock our voices</add>
+  </line>
+    <line>As if they
+      <mod>
+        <del rend="strikethrough">lived</del>
+      <add place="superlinear">they</add>
+    </mod>
+     were spirit-tongued</line>
+    <line rend="indent4">
+      Asia
+    </line>
+    <line rend="indent5">
+      <del rend="strikethrough">Oh no</del>
+       list list,
+       <add place="superlinear">it is some
+         <mod>
+           <del rend="strikethrough"><unclear>spirit</unclear></del>
+         <add place="superlinear">being</add>
+       </mod>
+     </add>
+         <del rend="strikethrough">I <unclear>pray</unclear></del>
+    </line>
+    <line>
+      Around the crags, &#8212; what
+      <del rend="strikethrough">clear</del> small
+      <add place="superlinear">clear</add>
+      sound &#8212;
+    <add place="sublinear">O list</add>
+  </line>
+    <line rend="indent4">Voice
+    </line>
+    <line rend="indent3">O follow follow</line>
+
+    <line rend="indent3">As
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">the</add>
+      </mod>
+       voice recedeth
+     </line>
+    <line rend="indent3">Thro the caverns hollow</line>
+
+    <line rend="indent3">
+      <unclear>O</unclear>
+       Where the forest spreadeth
+     </line>
+    <line rend="indent3"><del rend="strikethrough"><unclear>the</unclear></del> <unclear>follow</unclear></line>
+    <line rend="indent3"><del rend="strikethrough">Where the woods <unclear>are</unclear> <unclear>spreadeth</unclear></del></line>
+
+    <line rend="indent3">
+      <mod>
+        <del rend="strikethrough">Under</del>
+      <add place="superlinear">Thro</add>
+    </mod>
+     <del rend="strikethrough">caverns hollow</del>
+   </line>
+    <line rend="indent3"><del rend="strikethrough">As the voice recedeth</del></line>
     <line><unclear>Th</unclear> <del rend="strikethrough">Child of Ocean</del></line>
   </zone>
 </surface>
