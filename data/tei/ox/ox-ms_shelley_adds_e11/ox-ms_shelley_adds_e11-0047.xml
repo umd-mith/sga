@@ -58,7 +58,7 @@
     <mod>
          <del rend="strikethrough">yet</del>
          <del rend="strikethrough">
-         <gap quantity="4" unit="chars"/><gap quantity="6" unit="chars"/>
+         <unclear unit="chars" extent="4" /><unclear unit="chars" extent="6" />
        </del>
        <add place="superlinear">
          <unclear>bitter hollow</unclear>
@@ -75,7 +75,7 @@
     <line xml:id="e11-0045-pu_line_17"><unclear>With</unclear> <unclear>such</unclear> <unclear>distrust</unclear>
     <unclear>as</unclear> <unclear>naught</unclear>
     <del rend="strikethrough">
-    <gap quantity="6" unit="chars"/>
+    <unclear unit="chars" extent="6" />
   </del>
 </line>
     <line xml:id="e11-0045-pu_line_18"><del rend="strikethrough">And <unclear>so</unclear>
