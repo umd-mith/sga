@@ -7,6 +7,7 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="7">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0009.jp2"/>
   <zone type="main">
+    <zone type="library">7</zone>
     <line>with a frame whose nerves, like</line>
     <line>the chords of two exquisite lyres</line>
     <line>stru<unclear>n</unclear>g to the accompaniment <unclear> ? </unclear></line>
@@ -21,8 +22,13 @@
     <line>tends; &amp; to attain which it</line>
     <line><del rend="strikethrough">sends forth</del> urges forth the powers</line>
     <line>of man to arrest the faintest</line>
-    <line>the</line>
-    <line>shadow of that without <del rend="strikethrough"><unclear>whom</unclear></del></line>
+
+    <line>shadow of that without
+      <mod>
+        <del rend="strikethrough"><unclear>whom</unclear></del>
+      <add place="superlinear">the</add>
+    </mod>
+  </line>
     <line><del rend="strikethrough"><unclear>In</unclear></del> posession of which there is no</line>
   </zone>
 </surface>
