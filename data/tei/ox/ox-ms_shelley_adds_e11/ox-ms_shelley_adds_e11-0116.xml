@@ -11,32 +11,32 @@
       <!--sketch of foliage-->
     </zone>
     <!--the following two lines (author's name) are overwritten in pen-->
-    <line>Shelley</line>
-    <line>Percy</line>
-    <line>
+    <line xml:id="e11-116-pu_line_1">Shelley</line>
+    <line xml:id="e11-116-pu_line_2">Percy</line>
+    <line xml:id="e11-116-pu_line_3">
       <del rend="strikethrough">Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></del>
     </line>
-    <line rend="indent4">O follow follow</line>
-    <line>
+    <line rend="indent4" xml:id="e11-114-pu_line_4">O follow follow</line>
+    <line xml:id="e11-116-pu_line_5">
       <mod>
         <del rend="strikethrough">Round</del>
         <add>Thro</add>
       </mod>
        the caverns hollow
      </line>
-    <line>As the song floats, thou pursue</line>
+    <line xml:id="e11-116-pu_line_6">As the song floats, thou pursue</line>
 
-    <line>Where the
+    <line xml:id="e11-116-pu_line_7">Where the
       <mod>
         <del rend="strikethrough">night bird</del>
         <add place="superlinear">wild bee</add>
       </mod>
        never flew
      </line>
-    <line>Thro <del rend="strikethrough">the</del> the noontide darkness deep,</line>
+    <line xml:id="e11-116-pu_line_8">Thro <del rend="strikethrough">the</del> the noontide darkness deep,</line>
     <line>By the odour-breathing sleep</line>
 
-    <line>Of
+    <line xml:id="e11-116-pu_line_9">Of
       <mod>
          <del rend="strikethrough">sweet</del>
          <add place="superlinear">faint</add>
@@ -48,11 +48,11 @@
         </mod>
          the waves
        </line>
-    <line>Of the fountain lighted caves</line>
-    <line><del rend="strikethrough">And</del> Thro And the <del rend="strikethrough">woven</del></line>
-    <line>As the music wild &amp; sweet</line>
+    <line xml:id="e11-116-pu_line_10">Of the fountain lighted caves</line>
+    <line xml:id="e11-116-pu_line_11"><del rend="strikethrough">And</del> Thro And the <del rend="strikethrough">woven</del></line>
+    <line xml:id="e11-116-pu_line_12">As the music wild &amp; sweet</line>
 
-    <line>
+    <line xml:id="e11-116-pu_line_13">
       <mod>
         <del rend="strikethrough">Echoes your thine</del>
         <add place="superlinear">Answer to <unclear>thy</unclear></add>
@@ -63,6 +63,6 @@
       </mod>
        feet
      </line>
-    <line rend="indent4">Child of Ocean</line>
+    <line rend="indent4" xml:id="e11-116-pu_line_14">Child of Ocean</line>
   </zone>
 </surface>
