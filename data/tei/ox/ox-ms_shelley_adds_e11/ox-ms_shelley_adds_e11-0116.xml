@@ -17,19 +17,52 @@
       <del rend="strikethrough">Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></del>
     </line>
     <line rend="indent4">O follow follow</line>
-    <line><del rend="strikethrough">Round</del> Thro the caverns hollow</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Round</del>
+        <add>Thro</add>
+      </mod>
+       the caverns hollow
+     </line>
     <line>As the song floats, thou pursue</line>
-    <line>wild bee</line>
-    <line>Where the <del rend="strikethrough">night bird</del> never flew</line>
+
+    <line>Where the
+      <mod>
+        <del rend="strikethrough">night bird</del>
+        <add place="superlinear">wild bee</add>
+      </mod>
+       never flew
+     </line>
     <line>Thro <del rend="strikethrough">the</del> the noontide darkness deep,</line>
     <line>By the odour-breathing sleep</line>
-    <line>faint                   &amp;</line>
-    <line>Of <del rend="strikethrough">sweet</del> night-flowers, <del rend="strikethrough">by</del> the waves</line>
+
+    <line>Of
+      <mod>
+         <del rend="strikethrough">sweet</del>
+         <add place="superlinear">faint</add>
+       </mod>
+        night-flowers,
+        <mod>
+          <del rend="strikethrough">by</del>
+          <add place="superlinear">&amp;</add>
+        </mod>
+         the waves
+       </line>
     <line>Of the fountain lighted caves</line>
     <line><del rend="strikethrough">And</del> Thro And the <del rend="strikethrough">woven</del></line>
     <line>As the music wild &amp; sweet</line>
-    <line>Answers to <unclear>thy</unclear>   soft <unclear>light</unclear></line>
-    <line><del rend="strikethrough">Echoes your</del> thine <del rend="strikethrough">aerial</del> feet</line>
-    <line>Child of Ocean</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Echoes your thine</del>
+        <add place="superlinear">Answer to <unclear>thy</unclear></add>
+      </mod>
+      <mod>
+          <del rend="strikethrough">aerial</del>
+        <add place="superlinear">soft <unclear>light</unclear></add>
+      </mod>
+       feet
+     </line>
+    <line rend="indent4">Child of Ocean</line>
   </zone>
 </surface>
