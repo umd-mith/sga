@@ -7,10 +7,16 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="114">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0116.jp2"/>
   <zone type="main">
+    <zone type="sketch">
+      <!--sketch of foliage-->
+    </zone>
+    <!--the following two lines (author's name) are overwritten in pen-->
     <line>Shelley</line>
     <line>Percy</line>
-    <line>Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></line>
-    <line>O follow follow</line>
+    <line>
+      <del rend="strikethrough">Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></del>
+    </line>
+    <line rend="indent4">O follow follow</line>
     <line><del rend="strikethrough">Round</del> Thro the caverns hollow</line>
     <line>As the song floats, thou pursue</line>
     <line>wild bee</line>
