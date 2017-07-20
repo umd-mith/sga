@@ -8,15 +8,22 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0019.jp2"/>
   <zone type="main">
     <zone type="library">17</zone>
-    <line>A Discourse on the manners of the</line>
+    <line rend="indent2">A Discourse on the manners of the</line>
     <line>Antient Greeks relative to the subject of</line>
-    <line>Love.</line>
+    <line rend="indent4">Love.</line>
     <line>The <del rend="strikethrough">A</del> period which intervened between the</line>
     <line><del rend="strikethrough">birth of Pericles</del> to the death of <del rend="strikethrough">Aristotle</del>,</line>
     <line>is undoubtedly, whether considered <del rend="strikethrough">with</del></line>
     <line>in itself, or with reference to the</line>
-    <line>had             subsequent</line>
-    <line>effects which it produced upon the <del rend="strikethrough">future</del></line>
+
+    <line>effects which it
+      <add place="superlinear">had</add>
+       produced upon the
+       <mod>
+         <del rend="strikethrough">future</del>
+       <add place="superlinear">subsequent</add>
+     </mod>
+   </line>
     <line>destinies of civilised man, the most</line>
     <line>memorable in the history of the world.</line>
     <line>What was the combination of moral</line>
@@ -26,12 +33,23 @@
     <line>why that progress so rapid &amp; so sustained</line>
     <line><del rend="strikethrough">met with</del> <del rend="strikethrough">dwindled into</del> so soon recieved</line>
     <line>a check &amp; became retrograde are</line>
-    <line>left <del rend="strikethrough"><unclear></unclear></del> to the wonder &amp; conjecture of posterity</line>
-    <line>problems <del rend="strikethrough">which</del> the wrecks &amp; fragments</line>
-    <line>of those <del rend="strikethrough">mighty philosophers &amp; poets</del></line>
-    <line><del rend="strikethrough"><unclear>fro</unclear></del></line>
-    <line>subtle &amp; profound minds which</line>
-    <line><del rend="strikethrough"><unclear>obscurel</unclear></del> like the ruins of a fine statue</line>
+
+    <line>problems
+      <mod>
+        <del rend="strikethrough">which</del>
+        <add place="superlinear">left <unclear>but</unclear> to the wonder &amp; conjecture of posterity</add>
+      </mod>
+       the wrecks &amp; fragments
+     </line>
+    <line>of those <del rend="strikethrough">mighty philosophers &amp; poets</del>
+  <add place="sublinear">
+    <del rend="strikethrough"><unclear>fro</unclear></del>
+  </add>
+</line>
+
+    <line><del rend="strikethrough"><unclear>obscurel</unclear>
+  <add place="superlinear">subtle &amp; profound minds which</add>
+</del> like the ruins of a fine statue</line>
     <line>obscurely suggest to us the grandeur &amp;</line>
   </zone>
 </surface>
