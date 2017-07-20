@@ -7,23 +7,47 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="8">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0010.jp2"/>
   <zone type="main">
+    <zone type="library">8</zone>
     <line>rest or respite to <del rend="strikethrough">its</del> the heart over</line>
     <line>which it rules. Hence in <del rend="strikethrough">the</del></line>
     <line>solitude, or in that deserted</line>
     <line>state when we are surrounded</line>
     <line>by human beings &amp; yet they</line>
     <line>sympathise not with us, we love</line>
-    <line>the</line>
-    <line>the flowers the grass &amp; waters &amp;</line>
-    <line>sky</line>
-    <line>the <del rend="strikethrough">air</del>. In the motion of the</line>
+
+    <line>the flowers the grass &amp;
+      <add place="superlinear">the</add>
+       waters &amp;</line>
+
+    <line>the
+      <mod>
+        <del rend="strikethrough">air</del>
+        <add place="superlinear">sky</add>
+      </mod>
+          . In the motion of the</line>
     <line>very leaves of spring in the blue</line>
     <line>air there is then found a secret</line>
     <line>correspondence with our heat.</line>
     <line>There is eloquence in the tongue<del rend="strikethrough">less</del></line>
     <line>-less wind <del rend="strikethrough">&amp; the</del> a melody in the</line>
-    <line><del rend="strikethrough"><unclear> ? </unclear></del> <del rend="strikethrough"><unclear> ? </unclear></del></line>
-    <line>flowing of <del rend="strikethrough">water</del> brooks &amp; the</line>
+
+    <line>flowing of
+      <mod>
+        <del rend="strikethrough">water</del>
+        <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">
+            <unclear unit="chars" extent="4"/>
+          </del>
+          <add>
+            <del rend="strikethrough">
+              <unclear unit="chars" extent="4"/>
+            </del>
+          </add>
+        </mod>
+        </add>
+      </mod>
+       brooks &amp; the</line>
     <line>rustling of the reeds beside them</line>
     <line>which by their inconcievable</line>
     <line>relation to <del rend="strikethrough">th</del> something within</line>
