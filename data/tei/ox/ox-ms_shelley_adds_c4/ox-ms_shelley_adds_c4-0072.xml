@@ -23,9 +23,9 @@
      </add>
    </mod>
    </line>
-   <space quantity="1" unit="line"/>
+   <space extent="1" unit="line"/>
    <line rend="indent4">&#8212;</line>
-   <space quantity="1" unit="line"/>
+   <space extent="1" unit="line"/>
 
     <line rend="indent1">Our shadows on it as it past away</line>
     <line rend="indent2">
@@ -40,7 +40,7 @@
         <del rend="strikethrough"><unclear></unclear> Babylon</del>
         <add place="sublinear"><del rend="strikethrough">Babel darkest</del></add>
       </mod>
-      <space quantity="4" unit="characters"/>
+      <space extent="4" unit="characters"/>
       <del rend="strikethrough">O</del></line>
 
     <line rend="indent2"><del rend="strikethrough">From</del> <del rend="strikethrough">For the</del></line>

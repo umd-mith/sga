@@ -44,7 +44,7 @@
         <del rend="strikethrough">crew</del>
         <add place="superlinear"><del rend="strikethrough">crowd</del></add>
       </mod>
-      <space quantity="4" unit="characters"/>
+      <space extent="4" unit="characters"/>
       <mod>
         <del rend="strikethrough">loud was the rage</del>
       <add place="sublinear"><del rend="strikethrough">obscene &amp; strange</del>
@@ -68,7 +68,7 @@
 </mod>
 </line>
 <del rend="strikethrough">The yoke </del>
-<del rend="strikethrough">came next<space quantity="2" unit="characters"/> The</del>
+<del rend="strikethrough">came next<space extent="2" unit="characters"/> The</del>
 
 <line rend="indent1">
   <del rend="strikethrough">The <unclear>other</unclear> spirit of Babel</del>
@@ -123,7 +123,7 @@
         <add place="superlinear">firece and obscene
         <add place="superlinear"><del rend="strikethrough">fierce</del></add>
       </add>
-      <space quantity="2" unit="characters"/>
+      <space extent="2" unit="characters"/>
     </mod>
   </line>
     <line rend="indent1">

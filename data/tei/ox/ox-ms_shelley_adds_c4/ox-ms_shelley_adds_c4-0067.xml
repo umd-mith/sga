@@ -34,9 +34,9 @@
       <add place="sublinear">From which a thousand climbers have before</add>
     </mod>
   </line>
-  <space quantity="1" unit="line"/>
+  <space extent="1" unit="line"/>
   <line rend="indent4">&#8212;</line>
-  <space quantity="1" unit="line"/>
+  <space extent="1" unit="line"/>
 
     <line>Fall'n as Napoleon fell &#8212;
       <mod>
@@ -60,7 +60,7 @@
     </add>
   </mod>
 </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 <line rend="indent4">&#8212;</line>
     <line rend="indent1"><del rend="strikethrough">That every pygmy king who</del>
     <add place="sublinear">kicked it.&#8212;

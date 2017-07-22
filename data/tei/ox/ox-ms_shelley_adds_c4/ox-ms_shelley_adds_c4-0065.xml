@@ -40,7 +40,7 @@
     Earth
 
         <del rend="strikethrough">from a purer
-          <space quantity="5" unit="characters"/> flask had</del>
+          <space extent="5" unit="characters"/> flask had</del>
         <mod>
             <add place="superlinear"><del rend="strikethrough">oil</del>
           <add place="superlinear"><del rend="strikethrough">soul</del>
@@ -67,7 +67,7 @@
         <del rend="strikethrough">the pure</del>
         <add place="superlinear">within which still disdains to wear it.&#8212;</add>
          <add place="sublinear">that <del rend="strikethrough">which </del>
-        should <space quantity="8" unit="characters"/> disdain
+        should <space extent="8" unit="characters"/> disdain
           <add place="sublinear">which ought to have disdained to wear
           <add place="superlinear"><del rend="strikethrough">disdain </del>
            to wear it</add>

@@ -28,7 +28,7 @@ cried
         <add place="sublinear"><del rend="strikethrough">in the spot</del> <del rend="strikethrough">on which they met,</del>
         <del rend="strikethrough">each</del> <del rend="strikethrough">one</del></add>
       </mod>
-      <space quantity="5" unit="characters"/>
+      <space extent="5" unit="characters"/>
       <del rend="strikethrough">he flew</del>
     </line>
     <line rend="indent1">
@@ -39,7 +39,7 @@ cried
     </line>
     <anchor xml:id="c4-69.6"/>
 
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <zone type="sketch">
     <!--sailboat sketches-->
   </zone>
@@ -77,7 +77,7 @@ cried
         <add place="superlinear">spied</add>
            as either,
          </line>
-         <space quantity="1" unit="line"/>
+         <space extent="1" unit="line"/>
     <line>
       The spot <unclear>on</unclear> which they met and said from hence
     </line>
@@ -97,7 +97,7 @@ cried
       </mod>
        full urns, dost still dispense
   </line>
-  <space quantity="1" unit="line"/>
+  <space extent="1" unit="line"/>
     <line>
       <del rend="strikethrough">The</del> Blind as thy fortune, fame &amp; infamy
     </line>

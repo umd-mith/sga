@@ -39,7 +39,7 @@
   </line>
     <line>The emerald twilight of the
       <add place="superlinear">
-        <del rend="strikethrough">lit <gap quantity="4" unit="chars"/></del> sea,
+        <del rend="strikethrough">lit <gap extent="4" unit="chars"/></del> sea,
       </add>
       <mod>
         <del rend="strikethrough">Ocean's</del> <del rend="strikethrough">dells</del>
@@ -79,7 +79,7 @@
          </add>
        </mod>
        <mod>
-        <del rend="strikethrough">the  hills of <gap quantity="4" unit="chars"/> glow></del>
+        <del rend="strikethrough">the  hills of <gap extent="4" unit="chars"/> glow></del>
         <add place="superlinear">
         <mod>
           <del rend="strikethrough">their censers glow</del>
@@ -187,7 +187,7 @@
 
     <line>
       <del rend="strikethrough">The
-        <gap quantity="5" unit="chars"/>All</del>
+        <gap extent="5" unit="chars"/>All</del>
         <del rend="strikethrough">the</del> <del rend="strikethrough">inhabitants</del>
         <add place="sublinear">tribes
           <del rend="strikethrough">of and</del>

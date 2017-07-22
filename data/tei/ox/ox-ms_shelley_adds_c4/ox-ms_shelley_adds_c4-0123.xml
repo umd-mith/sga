@@ -71,13 +71,13 @@
       <add place="superlinear">
         <unclear>No I alone wish</unclear>
       </add>
-      I trod upon <gap quantity="4" unit="chars"/>
+      I trod upon <gap extent="4" unit="chars"/>
       <del rend="strikethrough">Apennine,</del>
        the day
      </line>
     <line>
       <del rend="strikethrough">Before me rose,
-        <space quantity="3" unit="chars"/>
+        <space extent="3" unit="chars"/>
       the
     </del>
     <del rend="strikethrough">night</del>

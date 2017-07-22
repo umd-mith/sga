@@ -51,7 +51,7 @@
       </mod>
        Nor is the desolation single
      </line>
-     <space quantity="1" unit="line"/>
+     <space extent="1" unit="line"/>
      <line rend="indent6">------</line>
     <line>
       <del rend="strikethrough">And</del> <del rend="strikethrough">And  over  them  the  light</del></line>
@@ -96,7 +96,7 @@
    </mod>
    wrath
  </line>
-    <space quantity="2" unit="lines"/>
+    <space extent="2" unit="lines"/>
     <zone type="sketch">
     <!--sailboat sketch-->
   </zone>
@@ -115,10 +115,10 @@
       <del rend="strikethrough">The</del> The clear air awakes
     </line>
     <line rend="indent8"><hi rend="underline">Ricetti</hi></line>
-    <space quantity="3" unit="lines"/>
+    <space extent="3" unit="lines"/>
 
-    <line rend="indent6">Ricetti<space quantity="2" unit="characters"/> Ricetti
-    <space quantity="8" unit="characters"/> Ricetti</line>
+    <line rend="indent6">Ricetti<space extent="2" unit="characters"/> Ricetti
+    <space extent="8" unit="characters"/> Ricetti</line>
     <zone type="sketch">
     <!--aerial sketch of sailboat-->
   </zone>

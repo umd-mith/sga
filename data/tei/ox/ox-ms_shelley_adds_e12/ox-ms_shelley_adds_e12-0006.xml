@@ -7,12 +7,16 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="4">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0006.jp2"/>
   <zone type="main">
-    <line>Asia <unclear>Gk: gynaike Prometheos</unclear></line>
+    <zone type="library">4</zone>
+    <line rend="indent4">Asia <unclear>Gk: gynaike Prometheos</unclear></line>
     <line>One sung of thee who left the tale untold &#8212;</line>
-    <line>Like the false dawn<unclear>s</unclear> which perish on the bursting <unclear>&amp;:</unclear></line>
+    <line rend="indent1">Like the false dawn<unclear>s</unclear> which perish on the bursting <unclear>&amp;:</unclear></line>
     <line>Like empty cups of wrought &amp; dadail gold</line>
-    <line>Which mock the lips with air when they <unclear>are</unclear></line>
-    <line>se</line>
+    <line rend="indent1">Which mock the lips with air when they
+      <add place="sublinear">se</add>
+       <unclear>are</unclear></line>
+       <line rend="indent3">..........</line>
+
     <line>Lest The mo</line>
     <line>For though they</line>
   </zone>

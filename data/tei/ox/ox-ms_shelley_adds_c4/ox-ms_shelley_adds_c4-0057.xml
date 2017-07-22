@@ -32,11 +32,11 @@
       </mod>
            subdued,
          </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 <line rend="indent6">
   ______________
 </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 
 
     <line>
@@ -64,7 +64,7 @@
       <line>_____</line>
       <line>126</line>
     </zone>
-    <space quantity="2" unit="lines"/>
+    <space extent="2" unit="lines"/>
     <line><del rend="strikethrough"> Who have enjoyed &amp; suffered all hi</del></line>
     <line rend="indent1">All those whose fame or infamy must grow</line>
     <line>lay</line>

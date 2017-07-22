@@ -41,7 +41,7 @@
         lamp
       </line>
      <line>In <del rend="strikethrough">the dark rocks
-       <space quantity="10" unit="characters"/>
+       <space extent="10" unit="characters"/>
        damp</del>
      </line>
      <line>And spear, about the low rocks damp</line>
@@ -81,7 +81,7 @@
    </mod>
  </line>
      <line>Seeking</line>
-     <space quantity="2" unit="lines"/>
+     <space extent="2" unit="lines"/>
      <line><del rend="strikethrough">She left me when the moon was</del></line>
      <line><del rend="strikethrough">The moon was</del></line>
    </zone>

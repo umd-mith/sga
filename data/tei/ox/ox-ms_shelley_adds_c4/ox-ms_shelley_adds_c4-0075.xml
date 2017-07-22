@@ -22,7 +22,7 @@
         <add place="superlinear"><unclear>For</unclear></add>
       </mod>
          walk the
-         <space quantity="10" unit="characters"/>
+         <space extent="10" unit="characters"/>
          twain
        </line>
 
@@ -37,9 +37,9 @@
       </mod>
  in a chain. &#8212;
 </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 <line rend="indent4">&#8212;</line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 
     <line rend="indent2">The world was
       <mod>
@@ -63,7 +63,7 @@
        </mod>
           as her thunder bearing minion;
         </line>
-        <space quantity="1" unit="line"/>
+        <space extent="1" unit="line"/>
         <line rend="indent4">&#8212;</line>
 
     <line rend="indent3">The other long outlived
@@ -89,7 +89,7 @@
     </line>
 
     <line rend="indent4">&#8212;</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
 
 
     <line rend="indent4">
@@ -157,7 +157,7 @@
 
     <line rend="indent5">
       <del rend="strikethrough">See  Caesar
-        <gap quantity="4" unit="characters" reason="illegible"/></del>
+        <gap extent="4" unit="characters" reason="illegible"/></del>
         <add place="superlinear">who, <del rend="strikethrough">when</del></add>
         <del rend="strikethrough">the slave who quelled</del>
       </line>

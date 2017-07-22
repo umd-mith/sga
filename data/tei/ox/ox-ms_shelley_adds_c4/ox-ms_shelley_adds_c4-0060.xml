@@ -9,7 +9,7 @@
 <zone type="library">26</zone>
   <zone type="main">
     <line>And in thier dance round her who dims the Sun</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent6"> &#8212;</line>
     <line>Maidens &amp; youths
       <mod>
@@ -34,22 +34,22 @@
       </mod>
       recede</add>
     </mod>
-    <space quantity="2" unit="character"/>
+    <space extent="2" unit="character"/>
     and now
   </line>
 
     <line>Bending within each others atmosphere</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent2">Kindle invisibly; and as they glow</line>
     <line rend="indent3"><del rend="strikethrough">Attracted &amp; repulsed</del></line>
     <line rend="indent4"><del rend="strikethrough">Like moths in light attracted &amp; repelled,</del></line>
     <line rend="indent5"><del rend="strikethrough">Hover a space</del></line>
     <line rend="indent2"><del rend="strikethrough">And the quick pulses of their being them</del></line>
     <line rend="indent3"><del rend="strikethrough">Hover a space</del></line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent4">
       <del rend="strikethrough">Who ere they plunge
-        <space quantity="5" unit="characters"/>
+        <space extent="5" unit="characters"/>
         , oft come &amp; go</del></line>
     <line rend="indent4">
       <add place="superlinear">Oft</add>

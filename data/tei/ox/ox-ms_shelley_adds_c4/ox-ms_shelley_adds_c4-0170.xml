@@ -13,7 +13,7 @@
     <line rend="indent1">As dogs bay the moonlight clouds</line>
     <line rend="indent1">Which like spectres wrapt in shrouds</line>
     <line rend="indent1">Fleet o'er Night in multitudes.</line>
-    <space quantity="2" unit="lines"/>
+    <space extent="2" unit="lines"/>
     <line><del rend="strikethrough">For</del> All the wide world, beside us</line>
     <line>Shews like multitudinous</line>
 
@@ -22,26 +22,26 @@
     <line rend="indent1">What but mockery can they mean</line>
 
     <line rend="indent1">Where I am - where thou hast been<add place="superlinear">?</add> </line>
-    <space quantity="1" unit="line"/>
-      <line rend="indent2"> x<space quantity="3" unit="characters"/>
-      x<space quantity="3" unit="characters"/>
-      x<space quantity="3" unit="characters"/>
-      x<space quantity="3" unit="characters"/>x
-    <space quantity="3" unit="characters"/>
+    <space extent="1" unit="line"/>
+      <line rend="indent2"> x<space extent="3" unit="characters"/>
+      x<space extent="3" unit="characters"/>
+      x<space extent="3" unit="characters"/>
+      x<space extent="3" unit="characters"/>x
+    <space extent="3" unit="characters"/>
    </line>
-  <space quantity="2" unit="lines"/>
-  <line rend="indent2"> x<space quantity="3" unit="characters"/>
-  x<space quantity="3" unit="characters"/>
-  x<space quantity="3" unit="characters"/>
-  x<space quantity="3" unit="characters"/>x
-<space quantity="3" unit="characters"/>
+  <space extent="2" unit="lines"/>
+  <line rend="indent2"> x<space extent="3" unit="characters"/>
+  x<space extent="3" unit="characters"/>
+  x<space extent="3" unit="characters"/>
+  x<space extent="3" unit="characters"/>x
+<space extent="3" unit="characters"/>
 </line>
-    <space quantity="2" unit="lines"/>
-    <line rend="indent2"> x<space quantity="3" unit="characters"/>
-    x<space quantity="3" unit="characters"/>
-    x<space quantity="3" unit="characters"/>
-    x<space quantity="3" unit="characters"/>x
-  <space quantity="3" unit="characters"/>
+    <space extent="2" unit="lines"/>
+    <line rend="indent2"> x<space extent="3" unit="characters"/>
+    x<space extent="3" unit="characters"/>
+    x<space extent="3" unit="characters"/>
+    x<space extent="3" unit="characters"/>x
+  <space extent="3" unit="characters"/>
  </line>
   </zone>
 </surface>
