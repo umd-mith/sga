@@ -12,14 +12,25 @@
     <line>Which is the shadow of a gentle mind &#8212;</line>
     <line>I walk into the air, but no relief</line>
     <line>To seek, or haply if I sought to find &#8212;</line>
-    <line>for:</line>
-    <line>It comes unsought . . . <del rend="strikethrough"><unclear>no</unclear></del> wonder that a chief</line>
-    <line>Like thee</line>
-    <line><del rend="strikethrough">Among you</del>, mid spirits, should be cold &amp; blind</line>
-    <line>And &#8212;</line>
+
+    <line>It comes unsought
+      <add place="superlinear">for:</add>
+       . . . <del rend="strikethrough"><unclear>no</unclear></del> wonder that a chief</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Among you</del>
+        <add place="superlinear">Like thee</add>
+      </mod>
+      ", mid spirits, should be cold &amp; blind</line>
+    <line>And
+      <space unit="chars" extent="10"/>
+       &#8212;</line>
     <line>F</line>
-    <line>the</line>
-    <line>1 The path by which that lovely twain</line>
+
+    <line>1 The path by
+      <add place="superlinear">the</add>
+       which that lovely twain</line>
     <line>2 Has past to a by by myrtle pines &amp; yew</line>
     <line>3 Through aisles asled dark forest <unclear>that</unclear> ever grew</line>
     <line><unclear> </unclear></line>
@@ -30,10 +41,32 @@
     <line><unclear> </unclear></line>
     <line><del rend="strikethrough">Neither</del> wind <del rend="strikethrough">nor</del> <del rend="strikethrough">sun</del> nor <del rend="strikethrough"><unclear> </unclear></del> rain</line>
     <line>bowers</line>
-    <line>its          <del rend="strikethrough">shades</del></line>
-    <line>Can pierce <del rend="strikethrough"><del rend="strikethrough">that</del> those</del> interwoven <del rend="strikethrough">leaves</del></line>
-    <line><unclear>purling</unclear></line>
-    <line>Save when some cloud of <del rend="strikethrough">wandering</del> dew</line>
+
+    <line>Can pierce
+      <mod>
+        <del rend="strikethrough"><del rend="strikethrough">that</del> those</del>
+        <add place="superlinear">its</add>
+      </mod>
+       interwoven
+       <mod>
+         <del rend="strikethrough">leaves</del>
+       <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">shades</del>
+        <add place="superlinear">bowers</add>
+      </mod>
+      </add>
+    </mod>
+    </line>
+
+    <line>Save when some cloud of
+      <mod>
+        <del rend="strikethrough">wandering</del>
+        <add place="superlinear">
+          <unclear>purling</unclear>
+        </add>
+      </mod>
+       dew</line>
     <line><del rend="strikethrough">Is</del> Slow driven on the earth <unclear>caressing</unclear> breeze</line>
     <line>Between the trunks of the hoar trees</line>
     <line><del rend="strikethrough">one pearl</del> each a pearl</line>
