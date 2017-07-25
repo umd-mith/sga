@@ -165,8 +165,10 @@
         <del rend="strikethrough">And</del>
         <add place="intralinear">When</add>
       </mod>
-       <del rend="strikethrough"><unclear>tear</unclear></del> there is heard <del rend="strikethrough">the</del> thro the</line>
-    <line>still air</line>
+       <del rend="strikethrough"><unclear>tear</unclear>
+     </del> there is heard <del rend="strikethrough">the</del> thro the still air
+ </line>
+
     <line>The rush of wings, &amp; rising there <del rend="strikethrough">of</del></line>
     <line>Like Many a lake surrounded flute</line>
     <line><del rend="strikethrough"><unclear>Such</unclear>  melody <unclear>Ten</unclear></del></line>
@@ -174,7 +176,7 @@
     <line>Sounds overflow the listeners brain</line>
     <line><del rend="strikethrough">Till like that aye renewed strain</del></line>
     <line>So sweet that joy is almost pain</line>
-    <line><del rend="strikethrough">?He dies away</del></line>
+    <line rend="indent2"><del rend="strikethrough"><unclear>He</unclear> dies away</del></line>
     <line><del rend="strikethrough">Till chan</del></line>
     <line>I</line>
   </zone>
