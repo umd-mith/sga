@@ -7,12 +7,24 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="5">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0007.jp2"/>
   <zone type="main">
+    <zone type="calculation">
+    <!--top half of page contains sums-->
+  </zone>
+  <zone type="pagination">4</zone>
     <line>A mountain in the utmost wildernesses</line>
-    <line>Of Indian Scythia, whose smooth snowy steep</line>
-    <line><unclear>ness</unclear></line>
+    <line>Of Indian Scythia, whose smooth snowy steep
+    <add place="sublinear"><unclear>ness</unclear></add>
+  </line>
+
     <line>Only the footstep of the blast impresses &#8212;</line>
     <line>Which, on one side, cleft to the very deepness</line>
     <line><unclear> de </unclear>             waters</line>
-    <line>Hung high oer a ravine of raging</line>
+    <line>Hung
+      <add place="superlinear">
+        <unclear>de</unclear>
+      </add>
+       high oer a ravine of
+        <add place="superlinear">waters</add>
+         raging</line>
   </zone>
 </surface>
