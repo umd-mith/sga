@@ -7,22 +7,57 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="27">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0029.jp2"/>
   <zone type="main">
+    <zone type="sketch">
+      <!--sketch of two faces-->
+    </zone>
     <line><del rend="strikethrough">Thou blushing wh</del> <del rend="strikethrough">vine</del></line>
     <line>Flourishing Vine, whose kindling clusters glow</line>
-    <line>Beneath the autumnal sun &#8212; <del rend="strikethrough">sweet Violet</del></line>
-    <line>none taste of thee &#8212;</line>
-    <line>shroud</line>
-    <line>For thou dost      a ruin, &amp; below</line>
-    <line><del rend="strikethrough"><unclear>loves</unclear></del> dead</line>
-    <line><del rend="strikethrough">Dead</del> The rotting <del rend="strikethrough">bones</del> of <del rend="strikethrough"><unclear>thy</unclear></del> antiquity</line>
+    <line>Beneath the autumnal sun &#8212;
+      <mod>
+        <del rend="strikethrough">sweet Violet</del>
+      <add place="sublinear">none taste of thee &#8212;</add>
+    </mod>
+  </line>
+
+
+    <line>For thou dost
+      <add place="superlinear">shroud</add>
+      a ruin, &amp; below</line>
+
+    <line><del rend="strikethrough">Dead</del> The rotting
+    <mod>
+      <del rend="strikethrough">bones</del>
+      <add place="superlinear">
+        <unclear>lives</unclear>
+      </add>
+    </mod>
+     of
+     <mod>
+       <del rend="strikethrough"><unclear>thy</unclear></del>
+     <add place="superlinear">dead</add>
+   </mod>
+  antiquity
+</line>
     <line>Alas this is not what I thought life was &#8212;</line>
     <line>I knew that there were crimes &amp; evil men</line>
     <line>Misery and hate &#8212; nor did I hope to pass</line>
-    <line>rugged</line>
-    <line>Untouched by suffering thro the <del rend="strikethrough">gl</del> glen</line>
-    <line>heart</line>
-    <line>In mine own <del rend="strikethrough">soul</del> I saw as in a glass</line>
-    <line><del rend="strikethrough">be</del> so</line>
-    <line>The hearts of others; <del rend="strikethrough">and I</del>      and when</line>
+
+    <line>Untouched by suffering thro the <del rend="strikethrough">gl</del>
+    <add place="superlinear">rugged</add>
+     glen
+   </line>
+    <line>In mine own
+      <mod>
+        <del rend="strikethrough">soul</del>
+        <add place="superlinear">heart</add>
+      </mod>
+       I saw as in a glass</line>
+
+    <line>The hearts of others;
+      <add place="superlinear">be so</add>
+       <del rend="strikethrough">and I</del>
+       <space unit="chars" extent="4"/>
+        and when
+      </line>
   </zone>
 </surface>
