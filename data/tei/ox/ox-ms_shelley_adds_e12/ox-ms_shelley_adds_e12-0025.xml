@@ -7,39 +7,169 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="23">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0025.jp2"/>
   <zone type="main">
+  <zone type="library">23</zone>
     <line>As rainy winds thro the abandoned gate</line>
     <line>Of a fallen palace &#8212;</line>
-    <line><del rend="strikethrough">men decieved</del></line>
-    <line><del rend="strikethrough">Lift</del>                 <del rend="strikethrough">those</del>  <del rend="strikethrough">those who live</del></line>
-    <line><del rend="strikethrough">Tear</del> not the painted veil which <del rend="strikethrough">men</del> <del rend="strikethrough">who live</del></line>
-    <line><del rend="strikethrough">men</del>, <del rend="strikethrough">vain</del> those who live</line>
-    <line>unreal            be</line>
-    <line>Call life &#8212; tho <del rend="strikethrough">many idle</del> shapes <del rend="strikethrough"><del rend="strikethrough"><unclear>are</unclear></del> <unclear>be</unclear></del> pictured there</line>
-    <line>but            would</line>
-    <line>And it <del rend="strikethrough">can</del> mimic<del rend="strikethrough">s</del> all <del rend="strikethrough">that</del> we believe</line>
-    <line><del rend="strikethrough"><unclear>lurk</unclear></del> lurk</line>
-    <line>With colours idly spread &#8212; <del rend="strikethrough">doubt</del> behind <del rend="strikethrough">is</del> fear</line>
-    <line>twin Destinies x</line>
-    <line>And hope, <del rend="strikethrough">the</del> <del rend="strikethrough">spectres, &amp;</del> forever weave</line>
+
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Tear</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Lift</del>
+        </add>
+      </mod>
+       not the painted veil which
+       <mod>
+         <del rend="strikethrough">men</del>
+         <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">those</del>
+           <add place="superlinear">
+             <del rend="strikethrough">men decieved</del>
+           </add>
+         </mod>
+         </add>
+       </mod>
+      <mod>
+        <del rend="strikethrough">who live</del>
+        <add place="superlinear">
+          <del rend="strikethrough">those who live</del>
+        </add>
+      </mod>
+      <add place="sublinear">
+        <del rend="strikethrough">men, vain</del>
+        those who live
+      </add>
+    </line>
+
+
+    <line>Call life &#8212; tho
+      <mod>
+        <del rend="strikethrough">many idle</del>
+        <add place="superlinear">unreal</add>
+      </mod>
+       shapes
+       <mod>
+         <del rend="strikethrough"><unclear>are</unclear></del>
+         <mod>
+         <add place="intralinear">
+           <del rend="strikethrough"> <unclear>be</unclear></del>
+       </add>
+       <add place="superlinear">be</add>
+     </mod>
+  </mod>
+        pictured there</line>
+
+    <line>And it
+      <mod>
+        <del rend="strikethrough">can</del>
+        <add place="superlinear">but</add>
+      </mod>
+       mimic<del rend="strikethrough">s</del>
+        all <del rend="strikethrough">that</del> we
+        <add place="superlinear">would</add>
+         believe
+       </line>
+
+    <line>With colours idly spread &#8212; <del rend="strikethrough">doubt</del> behind
+    <mod>
+      <del rend="strikethrough">is</del>
+      <add place="superlinear">
+        <unclear>lurk</unclear>
+      </add>
+    </mod>
+     fear
+   </line>
+
+    <line>And hope,
+      <mod>
+        <del rend="strikethrough">the</del> <del rend="strikethrough">spectres, &amp;</del>
+        <add place="superlinear">twin Destinies x</add>
+      </mod>
+       forever weave
+     </line>
     <line>Thier shadow<del rend="strikethrough">s</del> oer that chasm, sightless &amp; drear</line>
-    <line><del rend="strikethrough">defied</del></line>
-    <line>knew                  he sought</line>
-    <line>I <del rend="strikethrough">met</del> one who had lifted it &#8212; <del rend="strikethrough">ah me</del></line>
-    <line><del rend="strikethrough"><unclear>gentle</unclear></del></line>
-    <line>For his lost heart was tender, things to love,</line>
-    <line>found them not:                     aught</line>
-    <line><del rend="strikethrough">But nor himself</del> nor <del rend="strikethrough">his own soul not any</del></line>
-    <line>friends <del rend="strikethrough">nor foes</del></line>
-    <line><del rend="strikethrough">The world contains, nor power</del>         <del rend="strikethrough">could</del></line>
-    <line><del rend="strikethrough">move</del></line>
-    <line>crowd,</line>
-    <line><del rend="strikethrough"><unclear>In</unclear> men, <unclear>he</unclear> on</del> Among <del rend="strikethrough">his</del> the careless <del rend="strikethrough">kind</del> but found</line>
-    <line>them</line>
-    <line><del rend="strikethrough">With his sad &amp; bitter smiles</del>                         not</line>
-    <line><del rend="strikethrough">He walked</del> <del rend="strikethrough">His <unclear>languid</unclear> <unclear>limb</unclear></del></line>
-    <line><del rend="strikethrough">His languid</del> <del rend="strikethrough">With</del> Like an unheeded shadow he did move</line>
-    <line>a <del rend="strikethrough"><unclear>  </unclear></del> <unclear>blight</unclear> blot</line>
-    <line><del rend="strikethrough">Find</del> Cast on the <del rend="strikethrough">sunny</del> world,&#8212;</line>
-    <line>gloomy      a wave</line>
+    <space unit="lines" extent="1"/>
+    <zone type="sketch">
+      <!--sketch of tree-->
+    </zone>
+
+
+    <line>I
+      <mod>
+        <del rend="strikethrough">met</del>
+        <add place="superlinear">knew</add>
+      </mod>
+       one who had lifted
+       <add place="superlinear">
+         <del rend="strikethrough">deified</del>
+       </add>
+        it &#8212;
+        <mod>
+          <del rend="strikethrough">ah me</del>
+          <add place="superlinear">he sought,</add>
+        </mod>
+      </line>
+
+    <line>For his lost heart was tender,
+      <add place="superlinear">
+        <del rend="strikethrough"><unclear>gentle</unclear></del>
+      </add>
+       things to love,
+     </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">But nor himself</del>
+        <add place="superlinear">found them not</add>
+      </mod>
+       nor <del rend="strikethrough">his own soul not any</del>
+     <add place="superlinear">aught</add>
+   </line>
+
+    <line><del rend="strikethrough">The world contains, nor power</del>
+    <add place="superlinear">
+      <del rend="strikethrough">friends nor foes could move</del>
+    </add>
+  </line>
+
+    <line>
+      <del rend="strikethrough"><unclear>In</unclear> men,
+      <unclear>he</unclear> on</del> Among <del rend="strikethrough">his</del> the careless
+      <mod>
+        <del rend="strikethrough">kind</del>
+        <add place="superlinear">crowd,</add>
+      </mod> but found them
+      <add place="sublinear">not</add>
+    </line>
+
+    <line>
+      <del rend="strikethrough">With his sad &amp; bitter smiles</del>
+  </line>
+    <line>
+      <del rend="strikethrough">He walked</del> <del rend="strikethrough">His <unclear>languid</unclear>
+      <unclear>limb</unclear></del>
+    </line>
+    <line>
+      <del rend="strikethrough">His languid</del>
+      <del rend="strikethrough">With</del> Like an unheeded shadow he did move
+    </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Find</del>
+        <add place="intralinear">Cast</add>
+      </mod>
+       on the
+       <mod>
+         <del rend="strikethrough">sunny</del>
+         <add place="sublinear">gloomy</add>
+       </mod>
+       <add place="superlinear">a <unclear>bright</unclear> blot</add>
+        world,&#8212;
+        <add place="sublinear">a wave</add>
+     </line>
+
   </zone>
 </surface>
