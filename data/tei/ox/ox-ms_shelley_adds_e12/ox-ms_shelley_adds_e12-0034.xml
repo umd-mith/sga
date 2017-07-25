@@ -7,36 +7,165 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="32">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0034.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">And</del> There the voluptuous nightingale<del rend="strikethrough">s</del></line>
-    <line><del rend="strikethrough">through</del> thro the</line>
-    <line>Is <unclear>so</unclear></line>
-    <line><del rend="strikethrough">Are all</del> awake <del rend="strikethrough">in</del> broad noonday</line>
+    <zone type="library">32</zone>
+<line>
+      <del rend="strikethrough">
+        And
+      </del>
+       There the voluptuous nightingale<del rend="strikethrough">s</del></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Are</del>
+        <add place="superlinear">Is</add>
+      </mod>
+      <mod>
+      <del rend="strikethrough"> all</del>
+      <add place="superlinear">
+        <unclear>so</unclear>
+      </add>
+    </mod>
+    awake
+    <mod>
+      <del rend="strikethrough">in</del>
+      <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">through</del>
+        <add place="intralinear">thro the</add>
+      </mod>
+      </add>
+    </mod>
+     broad noonday</line>
     <line>When one with bliss or sadness fails</line>
-    <line>And <del rend="strikethrough">Heaven</del></line>
-    <line>thro</line>
-    <line>f boughs</line>
-    <line>And <del rend="strikethrough">in</del> the windless ivy <del rend="strikethrough">leaves</del> no</line>
-    <line>sick as   <del rend="strikethrough">Lost</del>      sweet droops dying</line>
-    <line>with</line>
-    <line>Drops <del rend="strikethrough">Each</del> Drops <del rend="strikethrough">thro the</del> deep love <del rend="strikethrough">away</del> away</line>
+    <line>
+       <del rend="strikethrough">And Heaven</del>
+     </line>
+
+
+    <line>And
+      <mod>
+        <del rend="strikethrough">in</del>
+        <add place="superlinear">thro</add>
+      </mod>
+       the windless ivy
+       <mod>
+         <del rend="strikethrough">leaves</del>
+         <add place="superlinear">
+              <unclear>fboughs</unclear>
+            </add>
+          </mod>
+          no
+        </line>
+
+
+    <line>Drops
+      <add place="superlinear">sick as</add>
+      <mod>
+        <del rend="strikethrough">Each</del>
+      <add place="intralinear">
+        <del rend="strikethrough">Drops</del>
+       </add>
+    </mod>
+      <mod>
+        <del rend="strikethrough">thro the</del>
+        <add place="superlinear">
+          <del rend="strikethrough">lost with</del>
+        </add>
+      </mod>
+      <add place="superlinear">sweet droops dying</add>
+       deep love <del rend="strikethrough">away</del> away
+     </line>
     <line>On its mates music-panting bosom;</line>
-    <line>from   swinging</line>
-    <line>Another <del rend="strikethrough">on</del> the <del rend="strikethrough">laurel</del> blossom</line>
-    <line><unclear>ing</unclear>       languid close</line>
-    <line>Watches to catch the dying <del rend="strikethrough">song</del></line>
-    <line>its</line>
-    <line>Of <del rend="strikethrough">the</del> last strain, <del rend="strikethrough"><unclear>echoes</unclear></del> and <del rend="strikethrough">lifts</del> on high</line>
-    <line>wings of the heart</line>
-    <line>The <del rend="strikethrough">Heaven   upclimbing</del> melody</line>
-    <line><del rend="strikethrough">New</del> <del rend="strikethrough">Till new delights are</del>   <del rend="strikethrough"><unclear>dr</unclear></del></line>
-    <line>Till some new streams of feeling <del rend="strikethrough">bears</del></line>
-    <line>bear</line>
-    <line><del rend="strikethrough">To <unclear> </unclear></del>   till and all the woods</line>
-    <line>like like          are</line>
-    <line><del rend="strikethrough">Beyond our</del>                          mute</line>
-    <line><del rend="strikethrough">To</del> That song p <del rend="strikethrough"><unclear>mute</unclear> and it is almost</del></line>
-    <line><del rend="strikethrough">mute</del></line>
-    <line><del rend="strikethrough">And</del> When <del rend="strikethrough"><unclear>tear</unclear></del> there is heard <del rend="strikethrough">the</del> thro the</line>
+
+    <line>Another
+      <mod>
+        <del rend="strikethrough">on</del>
+        <add place="superlinear">from</add>
+      </mod>
+         the
+         <mod>
+           <del rend="strikethrough">laurel</del>
+           <add place="superlinear">swinging</add>
+         </mod>
+          blossom
+        </line>
+
+    <line>Watch
+      <mod>
+        <del rend="strikethrough">es</del>
+        <add place="superlinear">ing</add>
+      </mod>
+       to catch the
+      <mod>
+         <del rend="strikethrough">dying song</del>
+         <add place="superlinear">languid close</add>
+       </mod>
+     </line>
+
+    <line>Of
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">its</add>
+      </mod>
+       last strain,
+       <mod>
+         <del rend="strikethrough"><unclear>echoes</unclear></del>
+       <add place="intralinear"><del rend="strikethrough">lifts</del></add>
+       <!--strikethrough on lifts was done later in pencil-->
+     </mod>
+      on high
+    </line>
+
+    <line>The
+    <mod>
+      <del rend="strikethrough">Heaven   upclimbing</del>
+      <add place="superlinear">wings of the heart</add>
+    </mod>
+     melody
+   </line>
+    <line><del rend="strikethrough">New</del> <del rend="strikethrough">Till new delights are</del>
+    <del rend="strikethrough"><unclear>dr</unclear></del></line>
+    <line>Till some new streams of feeling
+      <mod>
+        <del rend="strikethrough">bears</del>
+      <add place="sublinear">bear</add>
+    </mod>
+  </line>
+
+    <line><del rend="strikethrough">To <unclear> </unclear></del>   till and all the woods
+  <add place="sublinear">are mute</add>
+</line>
+
+
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough">Beyond our</del>
+        <add place="superlinear">
+          <del rend="strikethrough">To <unclear>her</unclear></del>
+        </add>
+      </add>
+        <del rend="strikethrough">To</del> That song
+        <unclear>p</unclear>
+         <mod>
+           <del rend="strikethrough"><unclear>mute</unclear></del>
+         <add place="superlinear">
+            <mod>
+              <del rend="strikethrough">like</del>
+              <add place="superlinear">like</add>
+            </mod>
+            </add>
+          </mod>
+        <del rend="strikethrough">and it is almost</del>
+        <add place="sublinear">
+          <del rend="strikethrough">mute</del>
+        </add>
+      </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="intralinear">When</add>
+      </mod>
+       <del rend="strikethrough"><unclear>tear</unclear></del> there is heard <del rend="strikethrough">the</del> thro the</line>
     <line>still air</line>
     <line>The rush of wings, &amp; rising there <del rend="strikethrough">of</del></line>
     <line>Like Many a lake surrounded flute</line>
