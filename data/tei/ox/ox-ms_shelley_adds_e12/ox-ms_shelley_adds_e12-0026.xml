@@ -32,15 +32,27 @@
       <add place="superlinear">the</add>
        which that lovely twain</line>
     <line>2 Has past to a by by myrtle pines &amp; yew</line>
-    <line>3 Through aisles asled dark forest <unclear>that</unclear> ever grew</line>
-    <line><unclear> </unclear></line>
-    <line>4 Is curtained out from Heavens wide blue</line>
+    <line>
+      <del rend="strikethrough">3 Through aisles asled dark forest <unclear>that</unclear> ever grew</del>
+    </line>
+
+    <line>
+      <add place="superlinear"><unclear></unclear></add>
+      4 Is curtained out from Heavens wide blue</line>
     <line><del rend="strikethrough">An</del></line>
-    <line>moon</line>
-    <line>5 Nor sun nor nor <del rend="strikethrough">star</del></line>
-    <line><unclear> </unclear></line>
-    <line><del rend="strikethrough">Neither</del> wind <del rend="strikethrough">nor</del> <del rend="strikethrough">sun</del> nor <del rend="strikethrough"><unclear> </unclear></del> rain</line>
-    <line>bowers</line>
+
+    <line>5 Nor sun nor nor
+      <mod>
+        <del rend="strikethrough">star</del>
+      <add place="superlinear">moon</add>
+    </mod>
+  </line>
+
+    <line><del rend="strikethrough">Neither</del> wind <del rend="strikethrough">nor</del>
+     <del rend="strikethrough">sun</del>
+     <add place="superlinear"><unclear unit="chars" extent="4"/></add>
+      nor <del rend="strikethrough"><unclear> </unclear></del> rain</line>
+
 
     <line>Can pierce
       <mod>
@@ -69,15 +81,48 @@
        dew</line>
     <line><del rend="strikethrough">Is</del> Slow driven on the earth <unclear>caressing</unclear> breeze</line>
     <line>Between the trunks of the hoar trees</line>
-    <line><del rend="strikethrough">one pearl</del> each a pearl</line>
-    <line><del rend="strikethrough">And</del> hangs <del rend="strikethrough">all drops</del> in the white flowers</line>
-    <line>Of <del rend="strikethrough">the</del> green laurel <del rend="strikethrough"><unclear>born</unclear></del> blown anew dies silently</line>
-    <line>bends &#8212; and then <del rend="strikethrough">fades</del></line>
-    <line>Or <del rend="strikethrough">weighs</del> And <del rend="strikethrough"><unclear>su</unclear></del> bends    <del rend="strikethrough"><del rend="strikethrough">as</del> so it passes by</del></line>
-    <line><del rend="strikethrough">The</del> pale &amp; fair anemone</line>
-    <line>One</line>
-    <line><del rend="strikethrough">That <unclear>sky</unclear> <unclear>a    </unclear></del></line>
-    <line><del rend="strikethrough">The</del>   <del rend="strikethrough">are mossy &amp;</del></line>
+
+    <line><del rend="strikethrough">And</del> hangs
+    <mod>
+      <del rend="strikethrough">all drops</del>
+      <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">one pearl</del>
+        <add>each a pearl</add>
+      </mod>
+      </add>
+    </mod>
+     in the white flowers</line>
+    <line>
+      Of <del rend="strikethrough">the</del> green laurel
+      <del rend="strikethrough"><unclear>bend</unclear></del><unclear>blown</unclear> anew dies silently
+    </line>
+
+    <line>
+      Or
+      <del rend="strikethrough">weighs</del>
+      And <del rend="strikethrough"><unclear>su</unclear></del> bends
+      <add place="superlinear">bends</add>
+      <space unit="chars" extent="7"/>
+      <add place="superlinear">and then</add>
+      <mod>
+        <del rend="strikethrough"><del rend="strikethrough">as</del> so it passes by</del>
+      <add place="superlinear">
+        <del rend="strikethrough">fades</del>
+      </add>
+    </mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="sublinear">One</add>
+      </mod>
+       pale &amp; fair anemone</line>
+
+    <line><del rend="strikethrough">That <unclear>sky</unclear> a<unclear unit="chars" extent="3"/></del></line>
+    <line><del rend="strikethrough">The</del>
+    <space unit="chars" extent="4"/>
+      <del rend="strikethrough">are mossy &amp;</del></line>
     <line><del rend="strikethrough">That are the</del></line>
   </zone>
 </surface>
