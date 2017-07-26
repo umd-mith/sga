@@ -7,47 +7,194 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="34">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0036.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">And</del> There sleepless brooks there ever</line>
-    <line>And   <del rend="strikethrough">hundred</del>         <del rend="strikethrough">rivers</del></line>
-    <line><del rend="strikethrough">And</del> A <del rend="strikethrough">thousand</del> <del rend="strikethrough">sleepless</del> <del rend="strikethrough">fountains</del> <unclear>run</unclear></line>
-    <line>From their crystalline mines below</line>
-    <line>And sink before they <del rend="strikethrough">the</del> see the sun</line>
-    <line>Or</line>
+  <zone type="library">34</zone>
+    <line>
+      <mod>
+        <del rend="overwritten">And</del>
+         <add place="intralinear">There</add>
+       </mod>
+        sleepless brooks there ever
+      </line>
+    <line>
+      <mod>
+        <add place="intralinear">
+          <del rend="strikethrough">And</del>
+        </add>
+        <add place="superlinear">And</add>
+      </mod>
+      A
+      <mod>
+           <del rend="strikethrough">thousand</del>
+           <add place="superlinear">
+             <del rend="strikethrough">hundred</del>
+           </add>
+         </mod>
+         <del rend="strikethrough">sleepless</del>
+         <del rend="strikethrough">fountains</del>
+         <add place="superlinear">
+           <del rend="strikethrough">rivers</del>
+         </add>
+         <unclear>run</unclear>
+      </line>
+
+    <line>From their crystall
+      <add place="sublinear">ine</add>
+       mines below</line>
+    <line>
+      <mod>
+      <del rend="overwritten">And</del>
+      <add place="intralinear">Or</add>
+    </mod>
+    sink before they
+    <del rend="strikethrough">the</del> see the sun
+  </line>
     <line><del rend="strikethrough">And Indus feeds them as they flow</del></line>
-    <line><del rend="strikethrough">Into their <unclear>fathers</unclear></del></line>
-    <line>India's <del rend="strikethrough">Into the <unclear>Indus</unclear></del> <unclear>Lahor's</unclear></line>
-    <line>And <del rend="strikethrough">Into the</del> diamond vaulted caves</line>
-    <line>thro Earth's     . . . onward <unclear>Gange </unclear></line>
-    <line>To feed great <del rend="strikethrough">Indus</del> <del rend="strikethrough">as</del> <del rend="strikethrough">they</del> <del rend="strikethrough">flow</del></line>
-    <line><del rend="strikethrough"><unclear>  </unclear></del> These</line>
-    <line><del rend="strikethrough">These</del> <del rend="strikethrough">And</del> leap like meteor kindled showers</line>
+    <line>
+
+        <del rend="strikethrough">Into their <unclear>fathers</unclear></del>
+      </line>
+    <line>
+      <add place="intralinear">India's</add>
+        <del rend="strikethrough">Into the <unclear>Indus</unclear></del> <unclear>Lahor's</unclear>
+    </line>
+    <line>And
+      <mod>
+        <del rend="strikethrough">Into the</del>
+        <add place="superlinear">thro Earth's</add>
+      </mod>
+       diamond vaulted caves
+     </line>
+    <line>To feed great
+      <del rend="strikethrough">Indus</del>
+      <del rend="strikethrough">as</del> <del rend="strikethrough">they</del> <del rend="strikethrough">flow</del>
+    <add place="superlinear">onward <unclear>Gange</unclear></add>
+  </line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">These</del>
+      <mod>
+          <add place="intralinear">
+            <del rend="strikethrough">And</del>
+          </add>
+        <add place="superlinear"><unclear>These</unclear></add>
+      </mod>
+    </mod>
+          leap like meteor kindled showers
+        </line>
     <line>And light the pale &amp; starless <del rend="strikethrough">flower</del></line>
-    <line><del rend="strikethrough">glassy</del></line>
-    <line>glimmering <del rend="strikethrough">Which</del> overhang their <del rend="strikethrough">glimmering</del> waves</line>
-    <line><del rend="strikethrough"><unclear>  </unclear></del> for <del rend="strikethrough"><unclear>savage</unclear></del> <del rend="strikethrough">Earths great</del> Earth's <unclear>unbound</unclear></line>
-    <line>With <del rend="strikethrough"><unclear>ever</unclear></del> <del rend="strikethrough">unborrowed</del> <unclear>b </unclear> beams</line>
-    <line><del rend="strikethrough">Their own bright</del> sands &amp; lucid</line>
-    <line>streams</line>
-    <line>From their own</line>
-    <line>their</line>
-    <line>their</line>
-    <line>The <del rend="strikethrough">voice of man immortal</del> <del rend="strikethrough"><unclear>springs</unclear></del></line>
-    <line><del rend="strikethrough">waters</del></line>
-    <line><del rend="strikethrough">Is heard by shepherds on their hills</del></line>
-    <line><del rend="strikethrough">mountaineers</del></line>
-    <line><del rend="strikethrough">amid</del> <del rend="strikethrough">by those who dwell in mount</del></line>
-    <line>Is <del rend="strikethrough">heard like thunder among mountains</del></line>
-    <line><del rend="strikethrough">And</del></line>
-    <line><del rend="strikethrough">And from their caves to Indus brings</del></line>
-    <line><unclear>rumble</unclear> earthy</line>
-    <line><del rend="strikethrough">Earthquake</del></line>
-    <line><unclear>bussence</unclear> shakes like <del rend="strikethrough"><unclear>thunder</unclear></del></line>
-    <line><del rend="strikethrough">rocky</del></line>
-    <line><del rend="strikethrough">Thier</del> <del rend="strikethrough">Shakes</del> <del rend="strikethrough">thier place</del> thunder</line>
-    <line><del rend="strikethrough">ly</del></line>
-    <line>caves</line>
-    <line><del rend="strikethrough">And from deep</del> to <del rend="strikethrough">Indies</del> brings</line>
-    <line><del rend="strikethrough">Loud as</del> <del rend="strikethrough">his</del> <del rend="strikethrough">his own</del> <del rend="strikethrough">loud</del></line>
-    <line><del rend="strikethrough">murmurings</del></line>
+
+    <line>
+    <add place="intralinear">
+       <hi rend="underline">glimmering</hi>
+     </add>
+       <del rend="strikethrough">Which</del> overhang their
+       <mod>
+         <del rend="strikethrough">glimmering</del>
+         <add place="superlinear">
+           <del rend="strikethrough">glassy</del>
+         </add>
+       </mod>
+        waves
+      </line>
+    <line>
+      With
+      <mod>
+        <del rend="strikethrough"><unclear>ever</unclear></del>
+        <add place="superlinear">
+          <unclear>for</unclear>
+        </add>
+      </mod>
+          <add place="superlinear">
+            <mod>
+              <del rend="strikethrough">savage </del>
+              <add place="intralinear"> great</add>
+            </mod>
+            Earth's
+          </add>
+            <space unit="chars" extent="6"/>
+              <mod>
+                <del rend="strikethrough">unborrowed</del>
+                <add place="superlinear">
+                  <unclear>unbound</unclear>
+                </add>
+              </mod>
+               <unclear>b </unclear> beams
+             </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Their own bright</del>
+        <add place="sublinear">From their own</add>
+      </mod>
+       sands &amp; lucid
+       <add place="sublinear">streams</add>
+     </line>
+
+
+    <line>The <del rend="strikethrough">voice of man</del>
+      <add place="superlinear">their
+        <add place="superlinear">their</add>
+    </add>
+    immortal
+<mod>
+  <del rend="strikethrough"><unclear>springs</unclear></del>
+<add place="sublinear">
+  <del rend="strikethrough">waters</del>
+</add>
+</mod>
+</line>
+<line>
+  <del rend="strikethrough">
+    Is heard by shepherds on their hills
+  </del>
+  </line>
+    <line>Is
+      <mod>
+        <del rend="strikethrough">heard like thunder among mountains</del>
+        <add place="superlinear">
+      <mod>
+         <del rend="strikethrough">amid those who dweel in mountains</del>
+          <add place="superlinear"><del rend="strikethrough">mountaineers</del></add>
+        </mod>
+        </add>
+      </mod>
+    </line>
+
+    <line>
+      <mod>
+        <add place="superlinear">
+          <del rend="strikethrough">And</del>
+        </add>
+        <del rend="strikethrough">And</del>
+      </mod>
+       <del rend="strikethrough">from their caves to Indus brings</del>
+     </line>
+
+    <line><del rend="strikethrough">Earthquake</del>
+  <add place="superlinear">
+  <unclear>rumble</unclear> earthy</add>
+  <add place="sublinear">
+    <del rend="strikethrough">rocky</del><unclear>bussence</unclear> shakes like <unclear>thunder</unclear>
+  </add>
+</line>
+    <line><del rend="strikethrough">Thier</del> <del rend="strikethrough">Shakes</del> <del rend="strikethrough">thier </del>
+    <mod>
+      <del rend="strikethrough">place</del>
+    <add place="sublinear">caves</add>
+  </mod>
+     thunder
+   </line>
+    <line>
+      <del rend="strikethrough">And from deep</del>
+    <add place="superlinear">ly</add>
+     to <del rend="strikethrough">Indies</del> brings</line>
+    <line>
+      <del rend="strikethrough">Loud as</del>
+      <del rend="strikethrough">his</del> <del rend="strikethrough">his own</del>
+      <del rend="strikethrough">loud
+      <add place="sublinear">
+        <del rend="strikethrough">murmurings</del></add>
+    </del>
+    </line>
   </zone>
 </surface>
