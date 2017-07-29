@@ -7,22 +7,79 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="43">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0045.jp2"/>
   <zone type="main">
-    <line>human</line>
-    <line>Seraph of Heaven, too gentle to be</line>
-    <line>beneath limbs <unclear>radiant</unclear> and</line>
-    <line>woman</line>
-    <line><del rend="strikethrough">Who</del> Veiling <del rend="strikethrough">beneath</del> <del rend="strikethrough">that</del></line>
-    <line>T All that is insupportable in thee</line>
-    <line>inland</line>
-    <line>Of <del rend="strikethrough">light</del></line>
-    <line>As <del rend="strikethrough">the woodmen's</del> boats are driven to Ocean</line>
-    <line>Of                      duty &#8212;</line>
-    <line>Friend, sister &#8212; if a holier</line>
+  <zone type="library">43</zone>
+    <line>
+      <handShift medium="pen" new="#pbs"/>
+      Seraph of Heaven, too gentle to be
+    <add place="superlinear">human</add>
+  </line>
+    <line>
+        <del rend="strikethrough">Who</del>
+       Veiling
+       <mod>
+         <del rend="strikethrough">beneath</del>
+       <del rend="strikethrough">that</del>
+       <add place="superlinear">beneath limbs <unclear>randiant</unclear> and
+     <add place="sublinear">woman</add>
+   </add>
+ </mod>
+     </line>
+    <line>
+      <mod>
+        <del rend="overwritten">T</del>
+      <add place="intralinear"> All</add>
+    </mod>
+         that is insupportable in thee
+       </line>
+    <line xml:id="e12-045-pu_line_1">
+      <handShift medium="pencil" new="#pbs"/>
+      As
+      <mod>
+        <del rend="overwritten">the woodmen's</del>
+        <add place="intralinear">
+          <handShift medium="pen" new="#pbs"/>
+          Of
+        <mod>
+          <del rend="strikethrough">light</del>
+          <add place="superlinear">
+            <handShift medium="pencil" new="#pbs"/>
+            inland
+          </add>
+      </mod>
+    </add>
+      </mod>
+      boats are driven
+      <add place="sublinear">
+        <handShift medium="pen" new="#pbs"/>
+        duty &#8212;
+      </add>
+      <handShift medium="pencil" new="#pbs"/>
+       to Ocean
+    </line>
+
+    <line>
+      <handShift medium="pen" new="#pbs"/>
+      Friend, sister &#8212; if a holier</line>
     <line>Dear Spirit winging</line>
-    <line><del rend="strikethrough"><unclear>A</unclear></del> Be <del rend="strikethrough">Thou</del> <del rend="strikethrough">Sweet winged spirit winged</del></line>
+    <line>
+      <mod>
+        <del rend="overwritten"><unclear>A</unclear></del>
+      <add place="intralinear"> Be</add>
+    </mod>
+       <del rend="strikethrough">Thou</del> <del rend="strikethrough">Sweet winged spirit winged</del>
+     </line>
+     <space unit="lines" extent="2"/>
     <line>Thou single star amid a sky of clouds</line>
-    <line>with soft emotion</line>
-    <line>Thou living form among the dead,</line>
+
+    <line xml:id="e12-045-pu_line_2">
+
+      Thou living form among the dead,
+    <add place="superlinear">
+      <handShift medium="pencil" new="#pbs"/>
+      <!--only the following pencil portion of this line belongs to Prometheus-->
+   with soft emotion
+    </add>
+</line>
     <line><unclear> Gi ers </unclear></line>
     <line><del rend="strikethrough">with soft</del> Emotion</line>
     <line>Thou <del rend="strikethrough">The wanderers</del></line>
