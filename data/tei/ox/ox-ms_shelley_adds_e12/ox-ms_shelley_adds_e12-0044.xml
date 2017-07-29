@@ -132,16 +132,49 @@
         </add>
       </mod>
        sad yet sweet,
-       <del rend="strikethrough">and wherever it</del>
+      <mod>
+         <del rend="strikethrough">and </del>
+       <add place="sublinear">
+         <del rend="strikethrough">and</del>
+       </add>
+     </mod>
+      <del rend="strikethrough">wherever it crept</del>
      </line>
-    <line><del rend="strikethrough">and</del>   for         crept</line>
-    <line>11 <del rend="strikethrough"><unclear>Pursued</unclear> <del rend="strikethrough">in</del> on beyond</del> <del rend="strikethrough"><unclear>where</unclear> we saw</del></line>
-    <line>for I saw</line>
-    <line>rad          <del rend="strikethrough">sisters cast</del></line>
-    <line>12 <del rend="strikethrough">The T Those radiant sisters</del> <del rend="strikethrough">shapes</del></line>
-    <line><del rend="strikethrough">When In</del> <del rend="strikethrough">light</del> <del rend="strikethrough">Which</del> <unclear>those</unclear> bright</line>
-    <line>Grow <del rend="strikethrough"><unclear>clear freh</unclear></del></line>
-    <line><del rend="strikethrough">Vanish as it past</del></line>
-    <line><del rend="strikethrough">with soft emotion</del></line>
+    <line>11
+      <del rend="strikethrough"><unclear>Pursued</unclear>
+      <mod>
+        <del rend="overwritten">in</del>
+      <add place="intralinear"> on</add>
+    </mod>
+    beyond
+  </del>
+  <mod>
+    <del rend="strikethrough"><unclear>where</unclear>
+    <add place="superlinear">for</add>
+    we saw
+  </del>
+<add place="sublinear">for I saw</add>
+</mod>
+</line>
+    <line>12
+      <del rend="strikethrough">The T Those radiant
+        <add place="superlinear">rad</add>
+         sisters</del> <del rend="strikethrough">shapes</del>
+       <add place="superlinear">
+        <del rend="strikethrough">sisters cast</del>
+      </add>
+    </line>
+    <line>
+      <add place="interlinear">
+        <del rend="strikethrough">When In</del> <del rend="strikethrough">light</del>
+        <del rend="strikethrough">Which</del> <unclear>those</unclear> bright
+      </add>
+    </line>
+    <line>Grow <del rend="strikethrough"><unclear>clear freh</unclear></del>
+  <add place="sublinear">
+    <del rend="strikethrough">Vanish as it past</del>
+    <add place="sublinear"><del rend="strikethrough">with soft emotion</del></add>
+  </add>
+</line>
   </zone>
 </surface>
