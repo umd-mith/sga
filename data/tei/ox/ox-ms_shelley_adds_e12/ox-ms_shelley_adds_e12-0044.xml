@@ -113,14 +113,25 @@
 <add place="intralinear">comes</add>
 </mod>
  a
+ <add place="superlinear">faint slow</add>
  <mod>
    <del rend="strikethrough">sound</del>
    <add place="superlinear">sound</add>
  </mod>
  <del rend="strikethrough">so low</del></line>
-    <line>9 Which like the twilight shade around</line>
-    <line><del rend="strikethrough">Was</del>. &#8212;&#8212;</line>
-    <line>10 <del rend="strikethrough">Is</del> sad yet sweet, <del rend="strikethrough">and wherever it</del></line>
+    <line>9 Which
+      <del rend="strikethrough">like</del>
+       the twilight shade around
+     </line>
+
+    <line>10
+      <mod>
+        <del rend="strikethrough">Is</del>
+        <add place="superlinear">
+          <del rend="strikethrough">Was</del>
+        </add>
+      </mod>
+       sad yet sweet, <del rend="strikethrough">and wherever it</del></line>
     <line><del rend="strikethrough">and</del>   for         crept</line>
     <line>11 <del rend="strikethrough"><unclear>Pursued</unclear> <del rend="strikethrough">in</del> on beyond</del> <del rend="strikethrough"><unclear>where</unclear> we saw</del></line>
     <line>for I saw</line>
