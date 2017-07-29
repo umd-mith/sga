@@ -8,27 +8,116 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0044.jp2"/>
   <zone type="main">
   <zone type="library">42</zone>
-    <line><del rend="strikethrough"><unclear>this</unclear></del> those eddies play</line>
-    <line>1 These enchanted <del rend="strikethrough">echoes <del rend="strikethrough"><unclear>swift</unclear></del> <unclear>dwell</unclear></del></line>
-    <line>Of echoes,</line>
-    <line>2 <del rend="strikethrough">Which draw</del>    music, tongued which draw</line>
-    <line>3 <del rend="strikethrough">And</del></line>
-    <line><del rend="strikethrough">With</del> By Demogorgon's mighty law</line>
-    <line><del rend="strikethrough">&amp;</del> <del rend="strikethrough">of</del></line>
-    <line>4 With melting raptures or <unclear>strange</unclear> awe</line>
-    <line>on that trackless way</line>
-    <line>5 All Spirits <del rend="strikethrough">carried by the way</del></line>
-    <line><del rend="strikethrough">As</del> <del rend="strikethrough">are</del> <del rend="strikethrough">the</del> swift leaves <del rend="strikethrough">swept</del></line>
-    <line>6 <del rend="strikethrough">Which So <unclear>Indian</unclear></del></line>
-    <line><del rend="strikethrough">As so light boats are driven &amp;</del></line>
-    <line>Down</line>
-    <line>7 <del rend="strikethrough">By</del> streams made strong with mountain</line>
-    <line>thaw</line>
-    <line><del rend="strikethrough">8</del> <del rend="strikethrough">And first the sound is like the</del></line>
-    <line><del rend="strikethrough"><unclear>truths</unclear></del></line>
-    <line><del rend="strikethrough">9</del> <del rend="strikethrough"><unclear>Felt</unclear> melancholy</del>     faint slow</line>
-    <line>sound</line>
-    <line>8 <del rend="strikethrough"><unclear>  </unclear></del> And first there <del rend="strikethrough">came</del> comes a <del rend="strikethrough">sound</del> <del rend="strikethrough">so low</del></line>
+  <handShift medium="pencil" new="#pbs"/>
+    <line>1 These
+      <mod><add place="superlinear">
+        <mod>
+          <del rend="overwritten"><unclear>this</unclear></del>
+          <add place="intralinear">those</add>
+        </mod>
+      </add>
+    </mod>
+       enchanted
+       <mod>
+         <del rend="strikethrough">echoes
+           <mod><del rend="overwritten"><unclear>swift</unclear></del>
+           <add place="intralinear">dwell</add>
+         </mod>
+        </del>
+         <add place="superlinear">eddies play</add>
+       </mod>
+         </line>
+
+    <line>2
+      <mod>
+        <del rend="strikethrough">Which draw</del>
+        <add place="superlinear">Of echoes,</add>
+      </mod>
+          music, tongued which draw
+        </line>
+    <line>3
+      <mod>
+        <del rend="strikethrough">And</del>
+        <add place="intralinear">
+          <mod>
+            <del rend="strikethrough">With</del>
+            <add place="intralinear">By</add>
+        </mod>
+        </add>
+      </mod>
+      Demogorgon's mighty law
+      </line>
+
+    <line>4 With melting raptures or
+      <add place="superlinear">
+        <del rend="strikethrough">&amp;</del>
+        <del rend="strikethrough">of</del>
+      </add>
+      <unclear>strange</unclear>
+      awe
+    </line>
+    <line>5 All Spirits
+      <mod>
+        <del rend="strikethrough">carried by the way</del>
+      <add place="superlinear">on that trackless way</add>
+    </mod>
+</line>
+    <line>6
+      <mod>
+        <del rend="strikethrough">Which So <unclear>Indian</unclear></del>
+      <add place="superlinear">
+        <del rend="strikethrough">As are the</del>
+      </add>
+      <add place="sublinear">
+        <del rend="strikethrough">As so light boats are driven &amp;</del>
+      </add>
+      <add place="superlinear">
+        swift leaves
+        <del rend="strikethrough">swept</del>
+      </add>
+    </mod>
+  </line>
+    <line>7
+      <mod>
+        <del rend="strikethrough">By</del>
+        <add place="superlinear">Down</add>
+      </mod>
+       streams made strong with mountain
+  <add place="sublinear">thaw</add>
+</line>
+    <line rend="indent6">........</line>
+    <line>
+      <del rend="strikethrough">8</del>
+      <del rend="strikethrough">And first the sound is like the</del>
+      <add place="sublinear">
+        <del rend="strikethrough"><unclear>truths</unclear></del>
+      </add>
+    </line>
+
+    <line>
+      <del rend="strikethrough">9</del>
+       <del rend="strikethrough">
+         <unclear>Felt</unclear>
+         melancholy
+      </del>
+  </line>
+
+    <line>8
+      <mod>
+        <del rend="overwritten"><unclear unit="chars" extent="3"/></del>
+      <add place="intralinear"> And</add>
+    </mod>
+    first there
+<mod>
+  <del rend="overwritten">came</del>
+<add place="intralinear">comes</add>
+</mod>
+ a
+ <mod>
+   <del rend="strikethrough">sound</del>
+   <add place="superlinear">sound</add>
+ </mod>
+ <del rend="strikethrough">so low</del></line>
     <line>9 Which like the twilight shade around</line>
     <line><del rend="strikethrough">Was</del>. &#8212;&#8212;</line>
     <line>10 <del rend="strikethrough">Is</del> sad yet sweet, <del rend="strikethrough">and wherever it</del></line>
