@@ -8,14 +8,51 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0046.jp2"/>
   <zone type="main">
     <zone type="library">44</zone>
-    <line>And so they float upon their sway</line>
-    <line>17 <del rend="strikethrough">And as they pasr</del></line>
-    <line>still</line>
-    <line>18 Until <del rend="strikethrough">most</del> sweet, but loud &amp; <del rend="strikethrough">strong</del> x</line>
-    <line>is driven</line>
-    <line>19 The storm of <del rend="strikethrough">sound</del> carries along x</line>
-    <line>and hurrying; as they fleet</line>
-    <line>20 <del rend="strikethrough">Sucked in, <unclear>the those</unclear> dominions</del></line>
+
+    <line xml:id="e12-046-pu_line_1">
+      17
+      <mod>
+        <del rend="strikethrough">And as they pasr</del>
+      <add place="superlinear">And so they float upon their way</add>
+    </mod>
+  </line>
+
+    <line xml:id="e12-046-pu_line_2">
+      18 Until
+      <mod>
+        <del rend="strikethrough">most</del>
+        <add place="superlinear">
+          <handShift medium="pen" new="#pbs"/>
+          still
+        </add>
+      </mod>
+        <handShift medium="pencil" new="#pbs"/>
+         sweet, but loud &amp; <del rend="strikethrough">strong</del> x
+       </line>
+
+    <line xml:id="e12-046-pu_line_3">
+      19 The storm of
+      <del rend="strikethrough">
+        <!--struck through later with pen-->
+        sound
+      </del>
+      <mod>
+        <del rend="strikethrough">carries</del>
+        <add place="superlinear">is driven</add>
+      </mod>
+           along x
+         </line>
+
+    <line xml:id="e12-046-pu_line_4">
+      20
+      Sucked in,
+      <add place="superlinear"> and hurrying; as they fleet</add>
+      <del rend="strikethrough">
+       <unclear>the those</unclear>
+       <space unit="chars" extent="9"/>
+        dominions
+     </del>
+ </line>
     <line><del rend="strikethrough">When</del> Behind its</line>
     <line>21 <del rend="strikethrough">Along its billows</del> gathering billows meet</line>
     <line>22 <del rend="strikethrough">As winds amid the yielding air</del></line>
