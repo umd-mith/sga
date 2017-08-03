@@ -66,21 +66,58 @@
       </mod>
          war
        </line>
+       <!--the following three lines appear to be first written in pencil and retraced in pen-->
     <line>
-      <unclear>And multitudes</unclear>
-      <add place="superlinear">of</add>
-       <unclear>white fleecy</unclear></line>
-    <line>And multitudes of white &amp; fleecy clouds</line>
-    <line><del rend="strikethrough"><unclear>  </unclear></del> <del rend="strikethrough">fleecy</del> clouds</line>
-    <line>thick</line>
-    <line>Were creeping in     <unclear>thick flocks</unclear></line>
-    <line>Were creeping in thick flocks along</line>
-    <line>along <del rend="strikethrough">the</del> the mountains</line>
-    <line>Shepherded by <unclear>a</unclear> slow <unclear>unwilling</unclear></line>
-    <line>Shepherded by the slow unwilling wind</line>
-    <line>wind</line>
-    <line>Upon the giddy chasm, upon</line>
-    <line>The</line>
+      <mod>
+      <del rend="overwritten">
+        <handShift medium="pencil" new="#pbs"/>
+        <unclear>And multitudes</unclear>
+      of
+       <unclear>white fleecy</unclear>
+     </del>
+   <add place="intralinear">
+     <handShift medium="pen" new="#pbs"/>
+     And multitudes of white &amp; fleecy clouds
+   </add>
+ </mod>
+</line>
+
+    <line>
+    <del rend="overwritten">
+      <handShift medium="pencil" new="#pbs"/>
+        Were creeping in
+      <add place="superlinear">thick</add>
+           <unclear>thick flocks</unclear>
+         </del>
+       <add place="intralinear">
+         <handShift medium="pen" new="#pbs"/>
+       Were creeping in thick flocks along
+     <add place="sublinear">
+       <handShift medium="pencil" new="#pbs"/>
+      <del rend="overwritten"> along the mountains</del>
+     </add>
+   <add place="intralinear">
+     <handShift medium="pen" new="#pbs"/>
+     the mountains
+   </add>
+ </add>
+ </line>
+
+    <line>
+      <del rend="overwritten">
+      <handShift medium="pencil" new="#pbs"/>
+        Shepherded by <unclear>a</unclear> slow <unclear>unwilling</unclear>
+      </del>
+    <add place="intralinear">
+      <handShift medium="pen" new="#pbs"/>
+      Shepherded by the slow unwilling wind
+    </add>
+  </line>
+<space unit="line" extent="1"/>
+    <line rend="indent1">Upon the giddy chasm, upon</line>
+    <line rend="indent1">
+      <del rend="strikethrough">The</del>
+    </line>
     <zone type="calculation">
     <!-- various sums-->
   </zone>
