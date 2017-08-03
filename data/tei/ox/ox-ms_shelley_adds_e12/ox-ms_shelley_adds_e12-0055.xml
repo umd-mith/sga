@@ -7,27 +7,58 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="53">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0055.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">The moon</del></line>
-    <line>The moon</line>
-    <line>Brother mine, calm Wanderer</line>
-    <line>Happy globe of land &amp; air</line>
+  <zone type="library">53</zone>
+  <zone type="sketch">
+    <!--sketch of tree-->
+  </zone>
+    <line rend="indent4"><del rend="strikethrough">The moon</del></line>
+    <space unit="lines" extent="3"/>
+    <line rend="indent5">The moon</line>
+    <line rend="indent3">Brother mine, calm Wanderer</line>
+    <line rend="indent3">Happy globe of land &amp; air</line>
     <line>Some spirit wraps thine atmosphere &amp; thee</line>
-    <line>Which penetrates <del rend="strikethrough">thy</del> my frozen frame</line>
-    <line>And pulses with the warmth of flame</line>
+    <line rend="indent3">Which penetrates
+      <mod>
+        <del rend="overwritten">thy</del>
+      <add place="intralinear">my</add>
+    </mod>
+       frozen frame</line>
+    <line rend="indent3">And pulses with the warmth of flame</line>
     <line>With love &amp; odour &amp; deep melody</line>
     <line>Thro me, through me</line>
-    <line>And splinter &amp; knead down my childrens</line>
-    <line>bone<unclear>s</unclear></line>
-    <line>void</line>
-    <line>All I bring forth to one <del rend="strikethrough">black</del> mass battering</line>
-    <line>&amp; blending</line>
+    <space unit="lines" extent="2"/>
+    <line>And splinter &amp; knead down my childrens
+    bone<unclear>s</unclear>
+  </line>
+    <line>All I bring forth to one
+      <mod>
+        <del rend="strikethrough">black</del>
+        <add place="superlinear">void</add>
+      </mod>
+       mass battering
+     <add place="sublinear">&amp; blending</add>
+   </line>
+   <space unit="line" extent="1"/>
     <line>Until each craglike tower &amp; storied column</line>
     <line>Palace, &amp; Obelisk &amp; Temple solemn</line>
-    <line><del rend="strikethrough">Each</del> My imperial mountains crowned with cloud</line>
-    <line>&amp; snow &amp; fire</line>
-    <line>My sea like forests, every blade &amp; blossom</line>
-    <line>Which finds a grave &amp; cradle on <del rend="strikethrough">thy</del> my bosom</line>
-    <line>Were stamped by t thy strong hate into a lifeless</line>
-    <line>mire</line>
+    <line>
+      <mod>
+        <del rend="overwritten">Each</del>
+      <add place="intralinear"> My</add>
+    </mod>
+    imperial mountains crowned with cloud
+    <add place="sublinear">>&amp; snow &amp; fire</add>
+  </line>
+    <line rend="indent2">My sea like forests, every blade &amp; blossom</line>
+    <line rend="indent2">Which finds a grave &amp; cradle on
+      <mod>
+        <del rend="overwritten">thy</del>
+        <add place="intralinear">my</add>
+      </mod>
+       bosom
+     </line>
+    <line>Were stamped by thy strong hate into a lifeless
+    <add place="sublinear">mire</add>
+  </line>
   </zone>
 </surface>
