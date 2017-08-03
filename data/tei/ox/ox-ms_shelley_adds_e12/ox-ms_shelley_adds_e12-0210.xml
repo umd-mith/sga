@@ -7,19 +7,69 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="204">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0210.jp2"/>
   <zone type="main">
-    <line>mind</line>
-    <line><del rend="strikethrough">o</del> A mighty <del rend="strikethrough">spirit</del>, in whose deep stream, this age</line>
+  <zone type="library">204</zone>
+  <!--text on page is inverted-->
+  <zone type="sketch">
+    <!--sketch of tree upper right hand-->
+  </zone>
+    <line>
+      <mod>
+        <del rend="overwritten">O</del>
+        <add place="intralinear"> A</add>
+      </mod>
+       mighty
+       <mod>
+         <del rend="strikethrough">spirit</del>
+         <add place="superlinear">mind</add>
+       </mod>
+       , in whose deep stream, this age
+     </line>
     <line>Shakes like a reed in the unheeding storm &#8212;</line>
     <line>Why dost thou rule not thine own sacred rage</line>
-    <line><del rend="strikethrough">By S<unclear>    ing</unclear></del> <unclear>           </unclear></line>
-    <line><del rend="strikethrough">And stamp upon thy work some</del></line>
-    <line>thy work</line>
-    <line><del rend="strikethrough">Clothe</del> thy prowess in some eternal form</line>
-    <line><del rend="strikethrough">Like that</del>      <del rend="strikethrough">spirit</del> which might</line>
-    <line>From thine eternal soul <del rend="strikethrough">thus</del> war</line>
-    <line>depths</line>
-    <line>of</line>
-    <line><unclear>And multitudes</unclear> <unclear>white fleecy</unclear></line>
+    <line>
+    <mod>
+      <handShift medium="pencil" new="#pbs"/>
+        <del rend="overwritten">By S<unclear>    ing</unclear> <unclear unit="words" extent="2"/></del>
+    <handShift medium="pen" new="#pbs"/>
+      <add place="superlinear">
+    <!--darker than pen in lines 1-3-->
+    <mod>
+      <del rend="strikethrough">And stamp upon thy work some</del>
+    <add place="sublinear">And clothe thy prowess
+      <add place="superlinear">thy work</add>
+       in some eternal form</add>
+     </mod>
+    </add>
+  </mod>
+</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Like that</del>
+        <add place="sublinear">From thine</add>
+        </mod>
+         eternal
+         <mod>
+           <del rend="strikethrough">soul</del>
+         <add place="superlinear">
+           <del rend="strikethrough">spirit</del>
+         </add>
+         <add place="sublinear">depths</add>
+       </mod>
+        <mod>
+          <del rend="strikethrough">thus</del>
+          <add place="superlinear">
+            <mod>
+              <del rend="strikethrough">which</del>
+            <add place="intralinear">might</add>
+          </mod>
+          </add>
+      </mod>
+         war
+       </line>
+    <line>
+      <unclear>And multitudes</unclear>
+      <add place="superlinear">of</add>
+       <unclear>white fleecy</unclear></line>
     <line>And multitudes of white &amp; fleecy clouds</line>
     <line><del rend="strikethrough"><unclear>  </unclear></del> <del rend="strikethrough">fleecy</del> clouds</line>
     <line>thick</line>
@@ -31,5 +81,8 @@
     <line>wind</line>
     <line>Upon the giddy chasm, upon</line>
     <line>The</line>
+    <zone type="calculation">
+    <!-- various sums-->
+  </zone>
   </zone>
 </surface>
