@@ -7,35 +7,68 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="54">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0056.jp2"/>
   <zone type="main">
-    <line>drunk up</line>
-    <line>How art thou sunk, withdrawn, covered,&#8212;</line>
+  <zone type="library">54</zone>
+    <line>How art thou sunk, withdrawn, covered,&#8212;
+    <add place="superlinear">drunk up</add>
+  </line>
     <line>By thirsty Nothing, as the brackish cup</line>
-    <line>Drained by a desart- <del rend="strikethrough"><unclear>tribe</unclear></del> troop, a little drop for</line>
-    <line>all &#8212;</line>
+    <line>Drained by a desart- <del rend="strikethrough"><unclear>tribe</unclear></del> troop, a little drop for
+    <add place="sublinear">all &#8212;</add>
+  </line>
     <line>And from beneath around within, above</line>
     <line>Filling thy void annihilation, Love</line>
-    <line>Bursts in, like light on caves cloven</line>
-    <line>by the thunderbolt.</line>
-    <line>Z</line>
+    <line>Bursts in, like light on caves cloven
+    <add place="sublinear">by the thunderbolt.</add>
+  </line>
+    <line rend="indent6">Z</line>
     <line>It interpenetrates my granite mass</line>
     <line>Through tangled roots &amp; trodden clay</line>
-    <line>doth</line>
-    <line>Into the utmost leaves &amp; delicatest flowers pass</line>
+
+    <line>Into the utmost leaves &amp; delicatest
+      <add place="sublinear">flowers</add>
+      <add place="superlinear">doth</add>
+       pass
+     </line>
     <line>A Upon the winds among the clouds 'tis spread</line>
     <line>It wakes a life in the forgotten dead</line>
-    <line>They breathe a spirit up from their obscurest</line>
-    <line>bowers</line>
-    <line>Which like a storm bursting its</line>
-    <line>cloudy prison</line>
+    <line>They breathe a spirit up from their obscurest
+    <add place="sublinear">bowers</add>
+  </line>
+    <space unit="line" extent="1"/>
+    <line>Which like a storm bursting its
+    <add place="sublinear">cloudy prison</add>
+  </line>
+
     <line>With thunder &amp; with whirlwind, has arisen</line>
     <line>Out of the lampless caves of unimagined being</line>
-    <line>With earthquake shock &amp; swiftness making</line>
-    <line>quiver</line>
-    <line>x Thoughts stagnant chaos unremoved <unclear>forever</unclear></line>
-    <line>F          light</line>
-    <line>Till Hate &amp; <del rend="strikethrough">Death</del> &amp; Pain, <del rend="strikethrough">like wind</del>-vanquished</line>
-    <line><del rend="strikethrough">vapours</del></line>
-    <line>shadows</line>
-    <line>fleeling</line>
+    <line>With earthquake shock &amp; swiftness making
+    <add place="sublinear">quiver</add>
+  </line>
+    <line>x Thoughts stagnant chaos unremoved
+       <unclear>forever</unclear>
+     </line>
+
+    <line>Till Hate &amp;
+      <del rend="strikethrough">Death</del>
+      <add place="superlinear">F</add>
+       &amp; Pain,
+       <mod>
+          <del rend="strikethrough">like</del>
+       <add place="superlinear">light</add>
+     </mod>
+      <mod>
+         <del rend="strikethrough">wind</del>
+       <add place="sublinear">hed
+         <del rend="strikethrough">vapours</del>
+       </add>
+     </mod>
+       -vanquished
+       <add place="sublinear">
+         shadows
+       </add>
+       <add place="sublinear">fleeling</add>
+     </line>
+
+
   </zone>
 </surface>
