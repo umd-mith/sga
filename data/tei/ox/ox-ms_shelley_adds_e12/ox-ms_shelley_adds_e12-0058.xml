@@ -7,14 +7,33 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="56">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0058.jp2"/>
   <zone type="main">
-    <line>The shadow of white Death <del rend="strikethrough">had</del> <del rend="strikethrough">has past</del></line>
-    <line>at last</line>
+  <zone type="library">56</zone>
+    <line>The shadow of white Death
+      <mod>
+        <del rend="overwritten">had</del>
+      <add place="intralinear"><del rend="strikethrough">has past</del></add>
+    <add place="sublinear">at last</add>
+  </mod>
+  </line>
     <line>From my path in Heaven has past</line>
     <line>The cold still shadow of an icy sleep</line>
-    <line>frost &amp; nought</line>
-    <line>Which made the</line>
-    <line>clinging     solid   <del rend="strikethrough">snow</del></line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">solid</del> shroud of <del rend="strikethrough">clinging</del></line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And</del> <del rend="strikethrough">solid</del>
+        <add place="superlinear">Which made the
+          <add place="sublinear">clinging</add>
+        </add>
+      </mod>
+       shroud of
+       <mod>
+         <del rend="strikethrough">clinging</del>
+       <add place="superlinear">solid</add>
+     </mod>
+     <add place="superlinear">
+      <del rend="strikethrough">snow</del>
+    </add>
+  </line>
     <line>Whi</line>
     <line>warmth</line>
     <line>As the dissolving <del rend="strikethrough">light</del> of Dawn may fold</line>
