@@ -34,41 +34,97 @@
       <del rend="strikethrough">The or</del>
       The waves are in
       <add place="superlinear">on</add>
-      in Ocean
+       Ocean
     </add>
     aTheir legions are shriven
   </line>
-    <line><del rend="strikethrough">Every</del></line>
-    <line><unclear>wi as</unclear></line>
-    <line>By the panic of gle</line>
-    <line>The</line>
-    <line><del rend="strikethrough">Rejoicing</del> <del rend="strikethrough">They</del> <del rend="strikethrough">I</del></line>
-    <line><del rend="strikethrough">It shakes with emotion</del></line>
-    <line>They s</line>
-    <line>In the whiteness</line>
-    <line>Of brightness</line>
+
+    <line>
+      <del rend="strikethrough">Rejoicing</del>
+      <add place="superlinear">The</add>
+       <del rend="strikethrough">They I</del>
+       <add place="sublinear">They I</add>
+<mod>
+  <del rend="strikethrough">It shakes with emotion</del>
+  <add place="superlinear">By the panic of gle</add>
+</mod>
+</line>
+<space unit="lines" extent="3"/>
+    <line rend="indent4">In the whiteness</line>
+    <line rend="indent4">Of brightness</line>
+<space unit="lines" extent="6"/>
+<zone type="left_margin">
+  <!--written vertically in the left margin-->
+<line>
+    The
+  <del rend="overwritten">s</del>
+  <add place="intralinear">thin</add>
+  moon is hanging
+</line>
+<line>
+  <del rend="strikethrough">As one dying</del>
+  <add place="superlinear">weak &amp;</add>
+  waning
+</line>
+<line>
+  <del rend="strikethrough">With With pleasure</del>
+</line>
+<line>O<unclear>n</unclear></line>
+</zone>
+<zone type="calculation">
+  <!--tally marks-->
+</zone>
+
     <line>Thou art folded, thou art lying</line>
     <line>In the light which is undying</line>
-    <line><unclear>     </unclear> <unclear>     </unclear></line>
-    <line>Of thine own joy, &amp; the <del rend="strikethrough">sweet</del> smile <del rend="strikethrough">of Heaven</del></line>
-    <line>Heavens smile divinest</line>
-    <line><del rend="strikethrough">surrounded</del></line>
-    <line>I</line>
-    <line><unclear>showe </unclear></line>
-    <line><del rend="strikethrough">On thee a light a life a power</del></line>
-    <line><del rend="strikethrough">The Sun &amp; constella<unclear>tions</unclear></del>   shower</line>
-    <line>suns &amp;</line>
-    <line>All <del rend="strikethrough">Heaven</del> constellations <del rend="strikethrough">power</del></line>
-    <line><del rend="strikethrough">In</del> On thee a light a life a power</line>
-    <line>doth array thy <unclear>sphere</unclear></line>
-    <line><del rend="strikethrough">But</del> In which <del rend="strikethrough">thou movest, bright</del> &#8212;</line>
-    <line>thou pourest</line>
-    <line>On mine on mine</line>
-    <line>thine</line>
-    <line>The thin moon is hanging</line>
-    <line>weak &amp;</line>
-    <line><del rend="strikethrough">As one dying</del>   waning</line>
-    <line><del rend="strikethrough">With  With pleasure</del></line>
-    <line>O<unclear>n</unclear></line>
+    <line>Of thine own joy, &amp; the
+      <mod>
+        <del rend="strikethrough">sweet smile of Heaven</del>
+        <add place="sublinear">Heavens smile divin<del rend="strikethrough">est</del></add>
+      </mod>
+      <add place="sublinear">
+        <del rend="strikethrough">surrounded</del>
+      </add>
+    </line>
+
+    <line>
+      <del rend="overwritten">I</del>
+      <del rend="strikethrough">On thee a light a life a power</del>
+    <add place="superlinear"><unclear>showe</unclear></add>
+  </line>
+    <line>
+      <del rend="strikethrough">The Sun &amp; constella<unclear>tions</unclear></del>
+  </line>
+    <line>All
+      <mod>
+        <del rend="strikethrough">Heaven</del>
+        <add place="superlinear">suns &amp;</add>
+      </mod>
+       constellations
+       <mod>
+         <del rend="strikethrough">power</del>
+       <add place="superlinear">shower</add>
+     </mod>
+   </line>
+    <line>
+      <mod>
+        <del rend="overwritten">In</del>
+        <add place="intralinear">On</add>
+      </mod>
+     thee a light a life a power
+   </line>
+
+    <line>
+      <del rend="strikethrough">But</del> In which
+      <mod>
+        <del rend="strikethrough">thou movest, bright</del>
+        <add place="superlinear">doth array thy <unclear>sphere</unclear></add>
+      </mod>
+         &#8212;
+         <add place="sublinear">thou pourest
+           <add place="sublinear">thine</add>
+         </add>
+       </line>
+    <line rend="indent2">On mine on mine</line>
   </zone>
 </surface>
