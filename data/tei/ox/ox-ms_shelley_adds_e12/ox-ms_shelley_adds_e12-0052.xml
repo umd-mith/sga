@@ -7,12 +7,37 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="50">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0052.jp2"/>
   <zone type="main">
-    <line>clouds</line>
-    <line>The <del rend="strikethrough">stars</del> are in Heaven</line>
-    <line><del rend="strikethrough">The waves are in ocean</del></line>
-    <line>The dew is <del rend="strikethrough">on</del> Earth          on</line>
-    <line>There <del rend="strikethrough">The or</del> The waves are in Ocean</line>
-    <line><del rend="strikethrough">The <del rend="strikethrough"><unclear>waves</unclear></del> waters</del> a Their legions are shriven</line>
+<zone type="library">50</zone>
+    <line>The
+      <mod>
+        <del rend="strikethrough">stars</del>
+        <add place="superlinear">clouds</add>
+      </mod>
+       are in Heaven
+       <add place="interlinear">
+         <del rend="strikethrough">The waves are in the ocean</del>
+       </add>
+     </line>
+    <line>The dew is <del rend="strikethrough">on</del> Earth</line>
+    <line>
+      <del rend="strikethrough">Every</del>
+      <add place="superlinear">
+        <del rend="strikethrough">The</del>
+      </add>
+    <mod>
+      <del rend="overwritten"><unclear>waves</unclear></del>
+      <add place="intralinear">
+        <del rend="strikethrough"><unclear>water</unclear></del>
+      </add>
+    </mod>
+    <add place="superlinear">
+      <del rend="strikethrough">The or</del>
+      The waves are in
+      <add place="superlinear">on</add>
+      in Ocean
+    </add>
+    aTheir legions are shriven
+  </line>
     <line><del rend="strikethrough">Every</del></line>
     <line><unclear>wi as</unclear></line>
     <line>By the panic of gle</line>
