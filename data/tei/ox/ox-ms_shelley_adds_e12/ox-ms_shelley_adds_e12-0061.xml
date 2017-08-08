@@ -7,8 +7,7 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="59">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0061.jp2"/>
   <zone type="main">
-
-
+  <zone type="library">59</zone>
     <line>The bright
       <mod>
         <del rend="strikethrough">stars</del>
@@ -41,6 +40,9 @@
   </mod>
       their old Shepheard
     </line>
+    <zone type="calculation">
+      <!--sums inverted throughout lower half of page-->
+    </zone>
     <line><del rend="strikethrough"><unclear>shep</unclear></del> <unclear>Sun</unclear></line>
     <line>To the folds them compelling</line>
     <line><del rend="strikethrough">When Arctos is rocking</del></line>
