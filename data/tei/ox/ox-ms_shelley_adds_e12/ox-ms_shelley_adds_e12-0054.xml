@@ -7,20 +7,73 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="52">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0054.jp2"/>
   <zone type="main">
-    <line>limbs</line>
-    <line>Although the <del rend="strikethrough">frame</del> which it inhabits</line>
-    <line>Her beauty ever wakes &amp;          sleep</line>
-    <line>watches her</line>
-    <line>Like an immortal lamp <unclear>has</unclear></line>
-    <line>within a</line>
-    <line>tomb</line>
-    <line>By the cold slumbers of a coffined</line>
-    <line>King,</line>
-    <line>To the        of his</line>
-    <line>Beyond his blue dwelling</line>
-    <line>light</line>
-    <line>Comes, in robes of in <del rend="strikethrough">array</del></line>
-    <line>Hastes, in <del rend="strikethrough">purple</del> &amp; golden array<del rend="strikethrough">, &amp;</del></line>
-    <line>Meteor-eclipsing</line>
+  <zone type="library">52</zone>
+  <!--first eight lines in pencil-->
+  <line>
+    <handShift medium="pencil" new="#pbs"/>
+    <unclear> maes andque dome elesensir</unclear>
+    </line>
+    <line>
+      <unclear>Esta di vela la femina mia</unclear>
+    </line>
+    <line>Although the
+      <mod>
+        <del rend="strikethrough">frame</del>
+        <add place="superlinear">limbs</add>
+      </mod>
+       which it inhabits</line>
+    <line>Her beauty ever wakes &amp;
+      <add place="sublinear"> watches her</add>
+     sleep
+     </line>
+
+    <line>Like an immortal lamp <unclear>has</unclear>
+    <add place="sublinear">within a
+      <add place="sublinear">tomb</add>
+  </add>
+  </line>
+
+    <line>By the cold slumbers of a coffined
+    <add place="sublinear">King,</add>
+  </line>
+
+
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough">
+        To the
+      </del>
+    </add>
+      Beyond his
+      <add place="superlinear">
+        <del rend="strikethrough">of his</del>
+      </add>
+       blue dwelling
+     </line>
+
+    <line>
+      <handShift medium="pen" new="#pbs"/>
+      Comes, in robes of
+      <space unit="chars" extent="3"/>
+       in
+       <space unit="chars" extent="6"/>
+       <mod>
+         <del rend="strikethrough">array</del>
+       <add place="superlinear">light</add>
+     </mod>
+     </line>
+    <line>Hastes,
+  <del rend="strikethrough">in purple</del>
+  <add place="sublinear">
+    <handShift medium="pen" new="#pbs"/>
+    <!--fine black ink emendation, likely made same time as calculations-->
+    Meteor-eclipsing</add>
+   <handShift medium="pen" new="#pbs"/>
+   &amp; golden array, &amp;
+ </line>
+ <zone type="calculation">
+   <!--sums at bottom of page in fine black ink-->
+ </zone>
+
   </zone>
 </surface>
