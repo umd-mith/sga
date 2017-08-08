@@ -9,8 +9,17 @@
   <zone type="main">
   <zone type="library">51</zone>
   <!--later edits in lighter ink where indicated-->
-    <line><del rend="strikethrough">Swift</del> Bright</line>
-    <line><del rend="strikethrough">The</del> clouds
+
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="superlinear">
+          <mod>
+            <del rend="strikethrough">Swift</del>
+          <add place="intralinear">Bright</add>
+        </mod>
+        </add>
+      </mod> clouds
     <mod>
       <del rend="strikethrough">are</del>
       <add place="superlinear">
@@ -22,7 +31,7 @@
     <!--return to fine point pen-->
      in Heaven</line>
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="overwritten">They</del>
         <add place="intralinear"><del rend="strikethrough">The</del></add>
@@ -42,11 +51,11 @@
     <!--return to fine point pen-->
       on Earth
   </line>
-    <line>
+    <line rend="indent1">
         <del rend="overwritten"><unclear>The</unclear></del>
          waves assemble on Ocean &#8212;
        </line>
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="overwritten">Their</del>
         <add place="intralinear"> They</add>
@@ -68,7 +77,7 @@
         By the blast of <unclear>the</unclear> <del rend="strikethrough">storm of delight by</del>
       </add>
       </line>
-    <line>
+    <line rend="indent1">
       <handShift medium="pen" new="#pbs"/>
       <!--return to fine point pen-->
       By the panic of glee &#8212;</line>
@@ -76,7 +85,7 @@
     <line rend="indent1">They dance in their mirth</line>
     <line rend="indent2">But where are ye?</line>
     <line>The pine-boughs are singing</line>
-    <line>Old songs with new
+    <line rend="indent1">Old songs with new
       <mod>
         <del rend="strikethrough">gladness</del>
         <add place="intralinear">
@@ -85,7 +94,7 @@
           joyance</add>
       </mod>
       </line>
-    <line>
+    <line rend="indent1">
       <handShift medium="pen" new="#pbs"/>
       <!--return to fine point pen-->
       <del rend="strikethrough">And</del> The
@@ -106,7 +115,7 @@
       <!--return to fine point pen-->
       From land &amp; from sea</line>
 
-    <line>
+    <line rend="indent1">
       <mod>
         <del rend="strikethrough">Beams <unclear>start</unclear> from their pillows</del>
       <add place="superlinear">
@@ -115,8 +124,8 @@
   </add>
 </mod>
 </line>
-    <line>Are laughing with madness</line>
-    <line>But where are ye</line>
+    <line rend="indent1">Are laughing with madness</line>
+    <line rend="indent2">But where are ye</line>
     <space unit="line" extent="1"/>
     <line>The Serpent &amp; Dove</line>
     <line>Are at play in the cedars</line>
