@@ -7,36 +7,134 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="73">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0075.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">lie</del> spin</line>
-    <line>I <del rend="strikethrough">roll</del> beneath my pyramid of night</line>
-    <line>Which points into the Heavens, dreaming</line>
-    <line>victorious                       delight</line>
-    <line><del rend="strikethrough">melodious</del> joy in my enchanted</line>
-    <line><del rend="strikethrough">And</del> murmuring <del rend="strikethrough">in my sleep, the</del>     sleep</line>
-    <line><del rend="strikethrough">boy</del> youth</line>
-    <line>As a <del rend="strikethrough">maid</del>     lulled in love dreams, faintly sighing</line>
-    <line>Under the shadow of <del rend="strikethrough">her</del> his beauty lying</line>
-    <line>Which oer his rest a watch of light &amp;</line>
-    <line>warmth doth keep</line>
-    <line>Moon</line>
-    <line>As in</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">like</del> the soft &amp; sweet eclipse</line>
-    <line>When soul meets soul on lovers' lips</line>
-    <line>High hearts are calm</line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">dark</del></line>
-    <line>And brightest eyes are dull, &amp; <del rend="strikethrough">highest hearts</del></line>
-    <line><del rend="strikethrough">are</del></line>
-    <line>So when thy shadow falls on me</line>
-    <line><del rend="strikethrough">Though</del>                         <del rend="strikethrough">calm</del></line>
-    <line><del rend="strikethrough"><unclear>And</unclear></del> <unclear>So</unclear> Then I am dark &amp; <del rend="strikethrough">calm</del>,    by thee</line>
-    <line>mute still</line>
-    <line><unclear>covered</unclear> of      <del rend="strikethrough">thine</del> thy love   orb most beautiful</line>
-    <line>oh</line>
-    <line><del rend="strikethrough">Is</del> full, too full</line>
-    <line>I measure</line>
-    <line>seeking out <unclear> </unclear></line>
-    <line>The world of thoughts to <del rend="strikethrough">find out</del> things</line>
-    <line>like thee</line>
+  <zone type="library">73</zone>
+    <line>I
+      <mod>
+        <del rend="strikethrough">roll</del>
+        <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">lie</del>
+          <add place="intralinear">spin</add>
+        </mod>
+        </add>
+      </mod>
+       beneath my pyramid of night</line>
+    <line>Which points into the Heavens, dreaming
+    <add place="sublinear">delight</add>
+  </line>
+    <line>
+      <del rend="strikethrough">And</del>
+       murmuring
+       <add place="superlinear">
+      <mod>
+         <del rend="strikethrough">melodious</del>
+         <add place="superlinear">victorious</add>
+       </mod>
+     </add>
+     <mod>
+       <del rend="strikethrough">in my sleep, the</del>
+      <add place="superlinear">joy in my enchanted sleep</add>
+    </mod>
+  </line>
+
+    <line>As a
+      <mod>
+        <del rend="strikethrough">maid</del>
+      <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">boy</del>
+        <add place="intralinear">youth</add>
+      </mod>
+    </add>
+    </mod>
+         lulled in love dreams, faintly sighing</line>
+    <line>Under the shadow of
+      <mod>
+        <del rend="overwritten">her</del>
+      <add place="intralinear"> his</add>
+    </mod>
+       beauty lying
+     </line>
+    <line>Which oer his rest a
+      <mod>
+        <del rend="overwritten">li</del>
+      <add place="intralinear">patch</add>
+    </mod>
+     of light &amp;
+<add place="sublinear">warmth doth keep</add>
+</line>
+<space unit="line" extent="1"/>
+    <line rend="indent3">Moon</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And like</del>
+        <add place="superlinear">As in</add>
+      </mod>
+     the soft &amp; sweet eclipse</line>
+    <line>When soul meets soul on lovers' lips
+    <add place="interlinear">High hearts are calm</add>
+  </line>
+<line>
+  <mod>
+      <del rend="strikethrough">And dark</del>
+      <add place="sublinear">And brightest eyes are dull, &amp;
+      <del rend="strikethrough">highest hearts</del>
+    <del rend="strikethrough"><add place="sublinear">are</add>
+  <add place="sublinear">calm</add></del>
+</add>
+</mod>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Though</del>
+      <add place="sublinear">
+        <del rend="strikethrough">So</del>
+      </add>
+      <add place="intralinear">So</add>
+    </mod>
+       when thy shadow falls on me
+     </line>
+
+    <line>
+      Then I am dark
+      <add place="sublinear">mute</add>
+       &amp;
+      <mod>
+        <del rend="strikethrough">calm</del>
+        <add place="sublinear">still</add>
+      </mod>
+      ,by thee
+    <add place="sublinear">orb most beautiful</add>
+  </line>
+    <line>
+      <mod>
+        <del rend="overwritten"><unclear>I</unclear></del>
+      <add place="intralinear"><unclear>covered</unclear></add>
+    </mod>
+       of
+       <mod>
+         <del rend="overwritten">thine</del>
+       <add place="intralinear">thy</add>
+     </mod>
+      love
+    </line>
+    <line rend="indent2">
+      <del rend="strikethrough">Is</del>
+       full,
+       <add place="superlinear">oh</add>
+        too full</line>
+    <line>The world of thoughts to
+      <mod>
+        <del rend="strikethrough">find out</del>
+        <add place="superlinear">seeking out
+        <add place="superlinear">I measure</add>
+      </add>
+      </mod>
+      things
+      <add place="sublinear">like thee</add>
+    </line>
     <line>And only find mine own infirmity</line>
   </zone>
 </surface>
