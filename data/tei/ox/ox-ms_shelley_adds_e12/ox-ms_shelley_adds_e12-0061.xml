@@ -81,7 +81,7 @@
     <line>In the depths of the Dawn</line>
     <line>Comes forth in his mantle of light</line>
     <line><del rend="strikethrough">Has arisen &amp;</del> they flee</line>
-    <line><del rend="strikethrough">As</del> <del rend="strikethrough">As</del>
+    <line rend="indent1"><del rend="strikethrough">As</del> <del rend="strikethrough">As</del>
      <del rend="strikethrough">the</del> And the blue
      <mod>
        <del rend="strikethrough">day</del>
@@ -89,8 +89,8 @@
      </mod>
       shuts
     </line>
-    <line>As fawns flee the leopard</line>
-    <line>But where are ye</line>
+    <line rend="indent1">As fawns flee the leopard</line>
+    <line rend="indent2">But where are ye</line>
 
   <zone type="left_margin">
     <!--the following shopping list or inventory inverted along left margin with calcuations-->
