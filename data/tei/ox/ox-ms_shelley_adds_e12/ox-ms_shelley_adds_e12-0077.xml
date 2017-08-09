@@ -7,28 +7,77 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="75">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0077.jp2"/>
   <zone type="main">
+  <zone type="library">75</zone>
     <line><del rend="strikethrough">Which leaps around</del> curved</line>
     <line><del rend="strikethrough">Leave</del> Oer which there is an orblike canopy</line>
-    <line>forests</line>
-    <line>Of gentle darkness, &amp; the hills &amp; <del rend="strikethrough">caverns</del></line>
-    <line>more distinctly          <unclear>thes</unclear></line>
-    <line>thro that <del rend="strikethrough"><unclear>tres</unclear></del></line>
-    <line>Seen <del rend="strikethrough">through that</del>              <del rend="strikethrough">fine thin</del></line>
-    <line>mist</line>
-    <line>Regard, like shapes in an enchanters</line>
-    <line>glass</line>
-    <line><del rend="strikethrough">A Chariot</del>                     &amp; gold</line>
-    <line>Its wheels are solid clouds, azure</line>
+    <line>Of gentle darkness, &amp; the hills &amp;
+      <mod>
+        <del rend="strikethrough">caverns</del>
+      <add place="superlinear">forests</add>
+    </mod>
+  </line>
+    <line>Seen
+      <mod>
+        <del rend="strikethrough">through that</del>
+        <add place="superlinear">more distinctly</add>
+      </mod>
+      thro that
+    <mod>  <del rend="strikethrough"><unclear>thes</unclear></del>
+      <add place="sublinear">
+        <del rend="strikethrough">fine thin</del>
+        <add place="sublinear">mist</add>
+      </add>
+    </mod>
+      <add place="superlinear"><unclear>thes</unclear></add>
+  </line>
+    <line>Regard, like shapes in an enchanters
+    <add place="sublinear">>glass</add>
+  </line>
+    <line><del rend="strikethrough">A Chariot</del></line>
+    <line>Its wheels are solid clouds, azure
+    <add place="superlinear">&amp; gold</add>
+  </line>
     <line>Such as the genii of the thunderstorm</line>
     <line>Pile on the floor of the illumined sea</line>
-    <line>When the sun <del rend="strikethrough">rolls</del> rushes under it, they roll</line>
-    <line>dear</line>
-    <line>Turning their <del rend="strikethrough">sweet</del> disunion to an isle</line>
-    <line><del rend="strikethrough">Which</del> <del rend="strikethrough">Of</del> <del rend="strikethrough">talk</del>, <del rend="strikethrough">whose shades were</del> forever</line>
-    <line>whose sweet shad with</line>
-    <line>Of <del rend="strikethrough">gen</del> <del rend="strikethrough">talk, whose</del> <del rend="strikethrough">whose</del> <unclear>humankind</unclear> <del rend="strikethrough">boughs entwine</del></line>
-    <line>lovely <del rend="strikethrough">talk whose mocks <unclear>oeer</unclear> each other</del></line>
-    <line><del rend="strikethrough">grief solace sweet</del></line>
+    <line>When the sun
+      <mod>
+        <del rend="strikethrough">rolls</del>
+        <add place="intralinear">rushes</add>
+      </mod>
+       under it, they roll</line>
+    <line>Turning their
+      <mod>
+        <del rend="strikethrough">sweet</del>
+        <add place="superlinear">dear</add>
+      </mod>
+       disunion to an isle</line>
+    <line><del rend="strikethrough">Which</del>
+    <del rend="strikethrough">Of</del> <del rend="strikethrough">talk</del>,
+    <mod>
+      <del rend="strikethrough">whose shades were</del>
+      <add place="sublinear">whose sweet shad</add>
+    </mod> forever
+  </line>
+    <line>Of
+      <del rend="strikethrough">gen</del>
+      <mod>
+        <del rend="strikethrough">talk, whose</del>
+        <add place="sublinear">lovely
+          <mod>
+            <del rend="strikethrough">talk</del>
+        <add place="intralinear">grief</add>
+      </mod>
+      </add>
+    </mod>
+    <add place="superlinear">whose sweet shad with
+     <del rend="strikethrough">whose</del>
+     <add place="sublinear">
+       <del rend="strikethrough">whose mocks <unclear>oeer</unclear> each other</del>
+     </add>
+      <unclear>humankind</unclear> <del rend="strikethrough">boughs entwine</del>
+    </line>
+
+
     <line><del rend="strikethrough">whose</del>                <del rend="strikethrough">thoughts</del></line>
     <line>a labyrinth of sweets <unclear>a a wood</unclear> of sweet sad</line>
     <line>And move &amp; grow as with an inward wind</line>
