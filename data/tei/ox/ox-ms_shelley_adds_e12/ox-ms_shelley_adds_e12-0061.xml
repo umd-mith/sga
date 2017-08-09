@@ -31,6 +31,12 @@
       <del rend="strikethrough">With</del>
     <mod>
       <del rend="strikethrough"><unclear>swift</unclear></del>
+      <add place="sublinear"><del rend="strikethrough">Daw</del>
+    <add place="sublinear">
+      <del rend="strikethrough"><unclear>shep</unclear></del>
+       <unclear>Sun</unclear>
+     </add>
+  </add>
       <add place="superlinear">
         <mod>
           <del rend="overwritten"><unclear unit="chars" extent="4"/></del>
@@ -38,34 +44,61 @@
       </mod>
     </add>
   </mod>
-      their old Shepheard
+      their
+      <mod>
+        <del rend="strikethrough">old</del>
+        <add place="sublinear">grey</add>
+      </mod>
+       Shepheard
     </line>
     <zone type="calculation">
       <!--sums inverted throughout lower half of page-->
     </zone>
-    <line><del rend="strikethrough"><unclear>shep</unclear></del> <unclear>Sun</unclear></line>
-    <line>To the folds them compelling</line>
-    <line><del rend="strikethrough">When Arctos is rocking</del></line>
-    <line><del rend="strikethrough">Constellations</del>   <del rend="strikethrough">to</del>    <del rend="strikethrough">slumber</del></line>
-    <line>Their Thier</line>
-    <line><del rend="strikethrough">The <unclear>   </unclear> <unclear>mirrors</unclear></del></line>
-    <line><del rend="strikethrough">Where</del> In the depths of the dawn</line>
-    <line><del rend="strikethrough">They are there</del>         sea</line>
-    <line>Arctos</line>
+    <line rend="indent1">To the folds them compelling</line>
+    <line rend="indent1"><del rend="strikethrough">When Arctos is rocking</del></line>
+    <line rend="indent2"><del rend="strikethrough">Constellations</del>
+    <del rend="strikethrough">to</del>
+    <del rend="strikethrough">slumber</del></line>
+    <line rend="indent2">
+      <del rend="overwritten">Thier Thier</del>
+      <add place="intralinear">
+        <del rend="strikethrough">
+          <unclear>Thier</unclear>
+      <unclear>mirrors</unclear>
+    </del>
+    </add>
+  </line>
+    <line rend="indent2"><del rend="strikethrough">Where</del> In the depths of the dawn</line>
+  <space unit="line" extent="3"/>
+    <line rend="indent4">Arctos</line>
+    <space unit="line" extent="3"/>
     <line>The pale stars are gone</line>
-    <line>For <del rend="strikethrough">d</del> Dawn the Sun their swift shepherd</line>
+    <line>For
+      <del rend="overwritten">d</del>
+      <add place="intralinear">Dawn</add>
+       the Sun their swift shepherd</line>
     <line>To their folds them compelling</line>
     <line>In the depths of the Dawn</line>
     <line>Comes forth in his mantle of light</line>
     <line><del rend="strikethrough">Has arisen &amp;</del> they flee</line>
-    <line>sky</line>
-    <line><del rend="strikethrough">As</del> <del rend="strikethrough">As</del> <del rend="strikethrough">the</del> And the blue day shuts</line>
+    <line><del rend="strikethrough">As</del> <del rend="strikethrough">As</del>
+     <del rend="strikethrough">the</del> And the blue
+     <mod>
+       <del rend="strikethrough">day</del>
+       <add place="superlinear">sky</add>
+     </mod>
+      shuts
+    </line>
     <line>As fawns flee the leopard</line>
     <line>But where are ye</line>
-    <line>writing case 11-</line>
+
+  <zone type="left_margin">
+    <!--the following shopping list or inventory inverted along left margin with calcuations-->
+      <line>writing case 11-</line>
     <line>feathers 3-6</line>
     <line><unclear>bracelets</unclear> 6-</line>
     <line><unclear>banzer tray</unclear> 5</line>
     <line><del rend="strikethrough">Paints</del> 5</line>
+  </zone>
   </zone>
 </surface>
