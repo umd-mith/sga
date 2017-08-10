@@ -69,34 +69,83 @@
       </mod>
       </add>
     </mod>
-    <add place="superlinear">whose sweet shad with
+    <add place="superlinear">whose sweet shad with</add>
      <del rend="strikethrough">whose</del>
      <add place="sublinear">
        <del rend="strikethrough">whose mocks <unclear>oeer</unclear> each other</del>
      </add>
       <unclear>humankind</unclear> <del rend="strikethrough">boughs entwine</del>
     </line>
-
-
-    <line><del rend="strikethrough">whose</del>                <del rend="strikethrough">thoughts</del></line>
-    <line>a labyrinth of sweets <unclear>a a wood</unclear> of sweet sad</line>
+    <line>a labyrinth of sweets
+      <unclear>a a wood</unclear> of sweet sad
+    <add place="superlinear">
+      <del rend="strikethrough">thoughts</del>
+    </add>
+  </line>
     <line>And move &amp; grow as with an inward wind</line>
-    <line><unclear>Its</unclear></line>
-    <line><del rend="strikethrough">And scarcely bend</del></line>
+
+    <line><del rend="strikethrough">And
+      <add place="superlinear">
+        <unclear>Its</unclear>
+      </add>
+       scarcely bend</del>
+     </line>
     <line><del rend="strikethrough">fairer than</del></line>
-    <line>And in it sits a <del rend="strikethrough">winged child</del> <del rend="strikethrough">Infant</del>, white</line>
-    <line>Its countenance, like the whiteness of bright</line>
-    <line>snow</line>
+    <line>And in it sits a
+      <mod>
+        <del rend="strikethrough">winged child</del>
+      <add place="superlinear">
+        <del rend="strikethrough">fairer than</del>
+      </add>
+  <add place="intralinear">Infant</add>
+</mod>, white
+</line>
+    <line>Its countenance, like the whiteness of bright
+    <add place="sublinear">snow</add>
+  </line>
     <line>Its plumes are like <del rend="strikethrough">the</del> feathers of sunny frost</line>
-    <line><del rend="strikethrough">And its</del>            as</line>
-    <line>Its limbs gleam white thro the wind-flowing</line>
-    <line>white      woof         <del rend="strikethrough">threads</del> folds</line>
-    <line><del rend="strikethrough">Of <unclear>vapours</unclear></del> Of its <del rend="strikethrough"><unclear>find</unclear></del> robe, of aetherial pearl</line>
-    <line><del rend="strikethrough">Of</del></line>
-    <line><del rend="strikethrough">It<unclear>s</unclear></del> hair is white, the brightness of white light</line>
-    <line>Scattered in <del rend="strikethrough">finest</del> strings; <del rend="strikethrough">like gentle gossamer</del></line>
-    <line><del rend="strikethrough">its scattered</del></line>
-    <line><del rend="strikethrough">and in its delicate hand</del></line>
+    <line>
+      <add place="superlinear">And its</add>
+      Its limbs gleam
+      <add place="superlinear">as</add>
+      white thro the wind-flowing
+    <mod>
+        <add place="sublinear">
+        <del rend="overwritten">threads</del>
+        <add place="intralinear">folds</add>
+      </add>
+      </mod>
+    </line>
+    <line>
+    <mod>
+       <del rend="strikethrough">Of <unclear>vapours</unclear></del>
+    <add place="intralinear">  Of its </add>
+    </mod>
+      <mod>
+        <del rend="strikethrough"><unclear>find</unclear></del>
+        <add place="superlinear">white</add>
+      </mod>
+       robe, of aetherial pearl
+     </line>
+    <line>
+      <add place="superlinear">Of</add>
+      <mod>
+        <del rend="overwritten">It<unclear>s</unclear></del>
+      <add place="intralinear">hair</add>
+    </mod>
+     is white, the brightness of white light</line>
+    <line>Scattered in
+      <del rend="strikethrough">finest</del> strings;
+      <mod>
+        <del rend="strikethrough">like gentle gossamer</del>
+    <add place="sublinear">
+      <del rend="strikethrough">its scattered</del>
+    <add place="sublinear">
+      <del rend="strikethrough">and in its delicate hand</del>
+    </add>
+  </add>
+</mod>
+</line>
     <line>It <del rend="strikethrough">bears a gleaming moonbeam for a wand</del></line>
   </zone>
 </surface>
