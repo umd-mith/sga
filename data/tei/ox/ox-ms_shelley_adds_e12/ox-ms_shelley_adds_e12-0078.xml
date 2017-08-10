@@ -7,40 +7,142 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="76">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0078.jp2"/>
   <zone type="main">
-    <line><unclear>sun</unclear>less</line>
-    <line>its eyes <unclear>seem</unclear> full seem spread</line>
+  <zone type="library">76</zone>
+    <line>its eyes <unclear>seems</unclear> full
+    <add place="superlinear"><unclear>sunless</unclear></add>
+    seem spread
+  </line>
     <line>but <del rend="strikethrough">its</del> eyes <del rend="strikethrough">are like</del></line>
-    <line>liquid         which      pour</line>
-    <line>Two Heavens of azure darkness, <del rend="strikethrough">&amp;</del> they <del rend="strikethrough">roll</del></line>
-    <line>From forth</line>
-    <line><del rend="strikethrough">Under</del> their arrowy lashes, <del rend="strikethrough">black &amp; keen</del></line>
-    <line><unclear>wide</unclear> &amp; deep</line>
-    <line><del rend="strikethrough">And</del> tempering the cold &amp; radiant air around</line>
-    <line>brightness &#8212;</line>
-    <line>With fire which is not light &#8212; it its hand</line>
-    <line>sways, quivering</line>
-    <line>It <del rend="strikethrough">bears</del> a <del rend="strikethrough">gleaming</del> moonbeam, &amp; whereer</line>
-    <line><unclear>he</unclear> shakes and outstrips <del rend="strikethrough">is</del> cleaves</line>
-    <line>It points, the prow of its keen chariot &amp; <del rend="strikethrough"><unclear>amid</unclear></del></line>
-    <line>whose beams it     rides</line>
-    <line>Upon <del rend="strikethrough">its</del> The stream of clouds, <del rend="strikethrough">which oer the</del> <del rend="strikethrough">little</del></line>
-    <line><unclear>upon</unclear></line>
-    <line><del rend="strikethrough">waters</del></line>
-    <line>Through rivulets, &amp; amid    rivulets wan</line>
-    <line>And oer the flowers &amp; grass <del rend="strikethrough">&amp; rocks &amp;</del></line>
-    <line>it        a sound        <del rend="strikethrough">leaves</del></line>
-    <line>Wakes as <del rend="strikethrough">they</del> <del rend="strikethrough">there</del> rolls <del rend="strikethrough">Aeolian</del> <del rend="strikethrough">symphony</del></line>
-    <line>singing a <del rend="strikethrough">silver</del></line>
-    <line>rain of Yet silver dew</line>
-    <line><del rend="strikethrough"><unclear>Like asl</unclear></del> Sweet as a <unclear>clanging</unclear> <del rend="strikethrough"><unclear>sunny</unclear></del></line>
-    <line><del rend="strikethrough">I</del> And from the other opening in the forest</line>
+    <line>Two Heavens of
+      <mod>
+        <del rend="strikethrough">azure</del>
+      <add place="superlinear">liquid</add>
+    </mod>
+     darkness,
+     <mod>
+       <del rend="strikethrough">&amp;</del>
+       <add place="superlinear">which</add>
+     </mod>
+      they
+      <mod>
+        <del rend="strikethrough">roll</del>
+      <add place="superlinear">pour</add>
+    </mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Under</del>
+      <add place="superlinear">From forth</add>
+    </mod>
+     their arrowy lashes,
+     <mod>
+       <del rend="strikethrough">black &amp; keen</del>
+       <add place="sublinear"><unclear>wide</unclear> &amp; deep</add>
+     </mod>
+   </line>
+    <line>
+      <del rend="strikethrough">And</del> tempering the cold &amp; radiant air around</line>
+
+    <line>With fire which is not light &#8212;
+      <add place="superlinear">brightness &#8212;</add>
+       it its hand
+     </line>
+    <line>It
+      <mod>
+        <del rend="strikethrough">bears</del>
+      <add place="superlinear">sways,</add>
+    </mod>
+     a
+     <mod>
+       <del rend="strikethrough">gleaming</del>
+       <add place="superlinear">quivering</add>
+     </mod>
+      moonbeam, &amp; whereer
+    <add place="sublinear">
+      <unclear>he</unclear> shakes and outstrips
+      <del rend="strikethrough">ie</del>
+      cleaves
+    </add>
+  </line>
+    <line>It points, the prow of its keen chariot &amp;
+      <del rend="strikethrough"><unclear>amid</unclear></del>
+      <add place="sublinear">whose beams it rides</add>
+    </line>
+    <line>Upon
+      <mod>
+        <del rend="overwritten">its</del>
+      <add place="intralinear">The</add>
+    </mod>
+    The stream of clouds,
+    <mod>
+      <del rend="strikethrough">which oer the</del> <del rend="strikethrough">little</del>
+    <add place="superlinear">rides</add>
+  <add place="sublinear"><unclear>upon</unclear>
+<add place="sublinear">
+  <mod><del rend="strikethrough">waters</del>
+  <add place="sublinear">rivulets</add></mod>
+</add>
+</add>
+</mod>
+</line>
+    <line>And
+      <mod>
+      <del rend="strikethrough">
+         oer
+       </del>
+     <add place="superlinear">through</add>
+   </mod>
+    the
+    <add place="superlinear">rivulets,</add>
+    flowers
+    <add place="superlinear">&amp; amid</add>
+     &amp; grass
+     <del rend="strikethrough">&amp; rocks &amp; leaves</del>
+   </line>
+
+    <line>Wakes as
+      <mod>
+        <del rend="strikethrough">they</del>
+        <add place="superlinear">it</add>
+      </mod>
+  rolls
+  <del rend="strikethrough">Aeolian</del> <del rend="strikethrough">symphony</del>
+</line>
+    <line>
+      <mod>
+      <del rend="overwritten"><unclear>Like asl</unclear></del>
+      <add place="intralinear"> Sweet as a</add>
+    </mod>
+    <add place="superlinear">rain of Yet
+    <add place="superlinear">
+      singing a <del rend="strikethrough"> silver</del></add>
+  </add>
+     <unclear>clanging</unclear>
+     <add place="superlinear">silver dew</add>
+     <del rend="strikethrough"><unclear>sunny</unclear></del>
+   </line>
+    <line>
+      <mod>
+        <del rend="overwritten">I</del>
+        <add place="intralinear"> And</add>
+      </mod>
+       from the other opening in the forest
+     </line>
     <line>Rushes with loud &amp; whirlwind harmony</line>
-    <line><del rend="strikethrough">green</del></line>
-    <line><del rend="strikethrough">A sphere, whose beams</del> &amp;       <del rend="strikethrough">beams</del></line>
-    <line>bright</line>
-    <line><del rend="strikethrough">Like the green spokes of some invisible</del> wheel</line>
-    <line><unclear>As</unclear>              threw</line>
-    <line><del rend="strikethrough">Pierce <unclear>and</unclear> thousands</del>    a thousand</line>
+    <line><del rend="strikethrough">A sphere, whose beams</del> &amp;
+    <add place="superlinear">green</add>
+           <del rend="strikethrough">beams</del>
+         </line>
+    <line>
+      <del rend="strikethrough">Like the</del>
+      <mod><del rend="strikethrough"> green</del>
+          <add place="superlinear">bright</add></mod>
+          <del rend="strikethrough"> spokes of some invisible</del>
+          wheel
+   </line>
+    <line><
+      <mod>
+        <del rend="strikethrough">Pierce <unclear>and</unclear> thousands</del>    a thousand</line>
     <line><del rend="strikethrough">A</del> The sphere, which is as             <unclear>spheres</unclear></line>
     <line>azure          white</line>
     <line><del rend="strikethrough">Azure</del> Purple &amp; <del rend="strikethrough">green</del> golden <del rend="strikethrough">&amp;</del> <del rend="strikethrough">grey</del> green</line>
