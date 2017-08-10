@@ -7,37 +7,120 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="77">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0079.jp2"/>
   <zone type="main">
-    <line>in the midst</line>
-    <line>Pillowed upon its alabaster arms</line>
-    <line><del rend="strikethrough">Like</del> As <del rend="strikethrough"><unclear>a</unclear></del> in a child overwearied with sweet toil</line>
-    <line><unclear>his s</unclear>                   wavy</line>
-    <line>Within its folded wings &amp; scattered hair</line>
+  <zone type="library">77</zone>
+    <line>Pillowed upon its alabaster arms
+    <add place="superlinear">in the midst</add>
+  </line>
+    <line>
+      <mod>
+        <del rend="overwritten">Like</del>
+      <add place="intralinear">As</add>
+    </mod>
+    <mod>
+       <del rend="overwritten"><unclear>a</unclear></del>
+     <add place="intralinear"> in</add>
+   </mod> a child overwearied with sweet toil</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Within</del>
+      <add place="superlinear"><unclear>In</unclear></add>
+    </mod> its folded wings &amp;
+      <mod>
+        <del rend="strikethrough">scattered</del>
+      <add place="superlinear">wavy</add>
+    </mod>
+     hair
+   </line>
     <line>The Spirit of the Earth is laid asleep</line>
     <line>And you can see its little lips are moving</line>
-    <line>Amid the changing light of their own smiles</line>
-    <line><del rend="strikethrough">Like As the</del>    <del rend="strikethrough"><unclear>smi</unclear></del></line>
-    <line><unclear>W </unclear> Like one who talks of what it loves in dream</line>
-    <line>and they whirl</line>
-    <line>Over each other <del rend="strikethrough"><unclear>er</unclear></del> with a thousand motions</line>
-    <line><del rend="strikethrough">Each has</del> Kindling with many tones &amp; many</line>
-    <line><del rend="strikethrough"><unclear>songs</unclear></del></line>
-    <line>Intelligible words &amp; music soft    sounds</line>
-    <line>With mighty whirl</line>
-    <line><del rend="strikethrough">And in its progress</del> that multitudinous orb</line>
-    <line>crimson o</line>
-    <line>Grinds the <del rend="strikethrough">blue</del> <del rend="strikethrough">rivulet</del> to <del rend="strikethrough">a</del> an <del rend="strikethrough">green</del> mist</line>
-    <line>bright brooklet   azure</line>
-    <line>subtlety,    like light</line>
-    <line>Of elemental <del rend="strikethrough">thinness</del></line>
-    <line>And <del rend="strikethrough">thru</del> the <del rend="strikethrough">sweet smell</del> of the <del rend="strikethrough">forest</del></line>
-    <line><del rend="strikethrough">wild odour</del></line>
-    <line>flowers</line>
-    <line>A thousand orbs involving &amp; involved</line>
-    <line>all its mass,</line>
-    <line>Solid as chrystal, <del rend="strikethrough">ye</del> yet thro all <del rend="strikethrough">things</del></line>
+    <line><del rend="strikethrough">Like As the</del>
+    <add place="superlinear">Amid the changing light of their own smiles</add>
+  </line>
+    <line>
+      <del rend="overwritten"><unclear>W </unclear></del>
+       Like one who talks of what it loves in dream
+       <add place="sublinear">and they whirl</add>
+     </line>
+    <line>Over each other <del rend="overwritten"><unclear>er</unclear></del> with a thousand motions</line>
+    <line><del rend="strikethrough">Each has</del> Kindling with many tones &amp; many
+  <add place="sublinear">sounds</add>
+</line>
+    <line>Intelligible words
+      <add place="superlinear">
+        <del rend="strikethrough">songs</del>
+      </add>
+       &amp; music soft</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">And in its progress</del>
+        <add place="superlinear">With mighty whirl</add>
+      </mod>
+       that multitudinous orb
+     </line>
+
+    <line>Grinds the
+      <mod>
+        <del rend="strikethrough">blue rivulet</del>
+        <add place="sublinear">bright brooklet</add>
+      </mod>
+       to <del rend="overwritten">a</del>
+       <add place="intralinear">an</add>
+       <mod>
+          <del rend="strikethrough">green</del>
+        <mod>  <add place="superlinear">
+            <del rend="strikethrough">crimson</del>
+          </add>
+          <add place="sublinear">azure</add>
+        </mod>
+      </mod>
+         mist
+       </line>
+
+
+    <line>Of elemental
+      <mod>
+        <del rend="strikethrough">thinness</del>
+      <add place="superlinear">subtlety</add>
+    </mod>
+  <add place="superlinear">like light</add>
+</line>
+    <line>And <del rend="strikethrough">thru</del> the
+    <mod>
+      <del rend="strikethrough">sweet smell</del>
+      <add place="sublinear">
+        <del rend="strikethrough">wild odour</del>
+      </add>
+    </mod>
+     of the <del rend="strikethrough">forest</del></line>
+    <line>A thousand orbs involving &amp; involved
+    <add place="superlinear">flowers</add>
+  </line>
+<space unit="lines" extent="3"/>
+    <line>Solid as chrystal, <del rend="strikethrough">ye</del> yet thro all
+    <del rend="strikethrough">things</del>
+  <add place="superlinear">all its mass,</add>
+</line>
     <line>Music &amp; light flow<del rend="strikethrough">ed</del> as thro empty air</line>
-    <line><del rend="strikethrough">Such as were</del>                       <del rend="strikethrough">centre</del></line>
-    <line>Such as we dream <del rend="strikethrough">inhabit the</del>         <unclear>deep</unclear></line>
-    <line>dwell in the lampless <del rend="strikethrough"><unclear>earth</unclear></del></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Such as were</del>
+      <add place="intralinear">Such as we</add>
+    </mod>
+     dream
+     <mod>
+       <del rend="strikethrough">inhabit the</del>
+       <add place="sublinear"> dwell in the lampless
+       <mod>
+         <del rend="strikethrough"><unclear>earth</unclear></del>
+         <add place="superlinear"><unclear>deep</unclear>
+       <add place="superlinear">
+          <del rend="strikethrough">centre</del>
+        </add>
+      </add>
+     </mod>
+   </add>
+ </mod>
+ </line>
   </zone>
 </surface>
