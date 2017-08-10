@@ -12,7 +12,9 @@
     <add place="superlinear"><unclear>sunless</unclear></add>
     seem spread
   </line>
-    <line>but <del rend="strikethrough">its</del> eyes <del rend="strikethrough">are like</del></line>
+    <line>
+      but <del rend="strikethrough">its</del> eyes <del rend="strikethrough">are like</del>
+    </line>
     <line>Two Heavens of
       <mod>
         <del rend="strikethrough">azure</del>
@@ -41,7 +43,8 @@
      </mod>
    </line>
     <line>
-      <del rend="strikethrough">And</del> tempering the cold &amp; radiant air around</line>
+      <del rend="strikethrough">And</del> tempering the cold &amp; radiant air around
+    </line>
 
     <line>With fire which is not light &#8212;
       <add place="superlinear">brightness &#8212;</add>
@@ -64,7 +67,8 @@
       cleaves
     </add>
   </line>
-    <line>It points, the prow of its keen chariot &amp;
+    <line>
+      It points, the prow of its keen chariot &amp;
       <del rend="strikethrough"><unclear>amid</unclear></del>
       <add place="sublinear">whose beams it rides</add>
     </line>
@@ -140,19 +144,57 @@
           <del rend="strikethrough"> spokes of some invisible</del>
           wheel
    </line>
-    <line><
+    <line>
       <mod>
-        <del rend="strikethrough">Pierce <unclear>and</unclear> thousands</del>    a thousand</line>
-    <line><del rend="strikethrough">A</del> The sphere, which is as             <unclear>spheres</unclear></line>
-    <line>azure          white</line>
-    <line><del rend="strikethrough">Azure</del> Purple &amp; <del rend="strikethrough">green</del> golden <del rend="strikethrough">&amp;</del> <del rend="strikethrough">grey</del> green</line>
-    <line><del rend="strikethrough">soars</del></line>
-    <line>Of Sphere within sphere, <del rend="strikethrough">&amp; so enclosing</del></line>
-    <line><del rend="strikethrough"><unclear>Many</unclear></del></line>
-    <line><del rend="strikethrough">and</del> <del rend="strikethrough">all</del> the <del rend="strikethrough">shapes</del></line>
-    <line>every</line>
-    <line>space<del rend="strikethrough">s</del> between</line>
-    <line>Peopled with unimaginable shapes</line>
+      <del rend="overwritten">As</del>
+      <add place="intralinear">
+        <del rend="strikethrough">Pierce</del>
+      </add>
+    </mod>
+    <del rend="strikethrough">thousands</del>
+  </line>
+    <line>
+      <mod>
+        <del rend="overwritten">A</del>
+        <add place="intralinear"> The</add>
+      </mod>
+       sphere, which is as
+       <add place="superlinear">threw a thousand</add>
+                  <unclear>spheres</unclear>
+                </line>
+
+    <line>
+      <del rend="strikethrough">Azure</del>
+       Purple &amp;
+       <mod>
+         <del rend="strikethrough">green</del>
+         <add place="superlinear">azure</add>
+       </mod>
+       golden
+       <mod>
+         <del rend="strikethrough">&amp;</del> <del rend="strikethrough">grey</del>
+         <add place="superlinear">white</add>
+       </mod>
+          green
+        </line>
+
+    <line>
+      <mod>
+        <del rend="overwritten">Of</del>
+      <add place="intralinear"> Sphere</add>
+    </mod>
+    within sphere,
+    <del rend="strikethrough">&amp; so enclosing</del>
+  </line>
+    <line>Peopled with unimaginable shapes
+    <add place="superlinear">
+      <del rend="strikethrough"><unclear>Many</unclear></del>
+    <add place="sublinear">
+      <del rend="strikethrough">and all the shapes</del>
+    </add>
+  <add place="sublinear">every space between</add>
+</add>
+</line>
     <line>Yet each intertranspicuous &#8212;</line>
   </zone>
 </surface>
