@@ -7,34 +7,72 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="78">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0080.jp2"/>
   <zone type="main">
-    <line>living</line>
-    <line>The music of the <del rend="strikethrough">breathing earth &amp; air</del></line>
+  <zone type="library">78</zone>
+    <line>The music of the
+      <mod>
+        <del rend="strikethrough">breathing earth &amp; air</del>
+      <add place="superlinear">living</add>
+    </mod>
+  </line>
     <line>The emerald <unclear>tinted</unclear> <del rend="strikethrough">sunbeams of a far wood</del></line>
-    <line><del rend="strikethrough">The <unclear>ges</unclear></del></line>
-    <line><del rend="strikethrough">Seem kneaded and uneath its solemn</del></line>
-    <line><del rend="strikethrough">speed</del></line>
+    <line>
+      <del rend="strikethrough">The <unclear>ges</unclear></del>
+      <del rend="strikethrough">Seem kneaded and uneath its solemn</del>
+    <add place="sublinear">
+      <del rend="strikethrough">solemn</del>
+    </add>
+  </line>
+  <space unit="line" extent="1"/>
     <line><del rend="strikethrough">Into one mass of</del></line>
     <line><del rend="strikethrough">And with keen beams</del></line>
     <line>The emerald splendours of the wood sunbeams <unclear>wild?</unclear></line>
     <line>yet self delaying</line>
-    <line>Beneath around its intense         <del rend="strikethrough">solemn</del> speed</line>
+    <line>Beneath around its intense
+      <add place="superlinear">yet self delyaing</add>
+               <del rend="strikethrough">solemn</del> speed
+             </line>
     <line>Seems kneaded into one aerial mass</line>
-    <line><unclear>Panthea</unclear></line>
+    <space unit="line" extent="1"/>
+    <line rend="indent3"><unclear>Panthea</unclear></line>
     <line>sunlike</line>
-    <line>Filling the abyss with <del rend="strikethrough">flashing</del> lightenings</line>
+    <line>Filling the abyss with
+      <mod>
+        <del rend="strikethrough">flashing</del>
+        <add place="superlinear">sunlike</add>
+      </mod>
+       lightenings
+     </line>
+     <space unit="lines" extent="2"/>
     <line>And caverns of columnar stone, like jet</line>
     <line>With vegetable silver <del rend="strikethrough"><unclear>spread</unclear></del> <del rend="strikethrough">overspread</del></line>
-    <line><del rend="strikethrough">Which mocks the frost</del> <unclear> </unclear></line>
-    <line>self</line>
-    <line>And with the force of <del rend="strikethrough">this</del> conflicting</line>
-    <line>swiftness</line>
+    <line><del rend="strikethrough">Which mocks the frost</del></line>
+    <line>And with the force of
+      <mod>
+        <del rend="strikethrough">this</del>
+        <add place="superlinear">self</add>
+      </mod>
+       conflicting
+       <add place="sublinear">swiftness</add>
+     </line>
     <line><del rend="strikethrough">Spinning upon</del></line>
-    <line>a      sightless</line>
-    <line>Upon <del rend="strikethrough">oer</del> a thousand <del rend="strikethrough">magnetic</del> axles spinning</line>
-    <line>Which solemnly intensely slowly on</line>
-    <line><del rend="strikethrough">ships &amp; beaks of ships</del></line>
-    <line>Which mocks the frost <del rend="strikethrough">w</del> <del rend="strikethrough">that</del></line>
-    <line>as</line>
-    <line>vast metropolees</line>
+    <line>Upon
+      <mod>
+        <del rend="overwritten">oer</del>
+        <add place="intralinear">a</add>
+      </mod>
+       thousand
+       <mod>
+         <del rend="strikethrough">magnetic</del>
+         <add place="superlinear">sightless</add>
+       </mod>
+        axles spinning</line>
+    <line>Which solemnly intensely slowly on
+    <add place="sublinear">><del rend="strikethrough">ships &amp; beaks of ships</del></add>
+  </line>
+    <line>Which
+      <add place="sublinear">As</add>
+       mocks the frost <del rend="overwritten">w</del> <del rend="strikethrough">that</del></line>
+<space unit="lines" extent="2"/>
+    <line rend="indent6">vast metropolees</line>
   </zone>
 </surface>
