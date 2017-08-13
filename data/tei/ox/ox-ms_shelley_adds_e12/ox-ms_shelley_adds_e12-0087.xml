@@ -7,40 +7,99 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="85">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0087.jp2"/>
   <zone type="main">
-    <line>The Spirits of the</line>
-    <line><unclear>&amp; ruin</unclear>          imperial</line>
-    <line><del rend="strikethrough">D</del> <del rend="strikethrough">From</del> &amp; <del rend="strikethrough">Desolation</del>, rend thy robe &amp; <unclear>blood</unclear></line>
+  <zone type="library">85</zone>
+    <line rend="indent4">The Spirits of the</line>
+    <line>
+      <mod>
+        <del rend="overwritten">D</del>
+    <add place="intralinear">
+      <del rend="strikethrough">From</del>
+    </add>
+  </mod>
+   &amp;
+   <mod>
+     <del rend="strikethrough">Desolation</del>
+     <add place="superlinear"> &amp; ruin</add>
+   </mod>
+   , rend thy
+   <add place="superlinear">imperial</add>
+    robe &amp; <unclear>blood</unclear></line>
     <line><del rend="strikethrough">I am the Present, gathered next to me</del></line>
-    <line>rapid</line>
-    <line>chainless</line>
-    <line>The <del rend="strikethrough">living</del> hours are      are kingless</line>
-    <line><unclear>error</unclear></line>
-    <line>you, <unclear>Nitrite</unclear>,</line>
-    <line>They will not pay <del rend="strikethrough">thee</del>           blood &amp; tears</line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">living</del>
+        <add place="superlinear">rapid</add>
+      </mod>
+       hours are
+       <add place="superlinear">chainless</add>
+            are kingless
+          </line>
+
+    <line>They will not pay
+      <mod>
+        <del rend="strikethrough">thee</del>
+        <add place="superlinear">you</add>
+      </mod>
+      <unclear>Nitrite</unclear>, blood &amp; tears
+      <add place="superlinear">
+        <unclear>error</unclear>
+      </add>
+    </line>
     <line>The <del rend="strikethrough">bitter fruits of <unclear>thine</unclear></del> uncultured years.</line>
-    <line>For Thy <unclear>sea</unclear> <unclear>solvely</unclear> <unclear> </unclear> uncultured years</line>
+    <line>For Thy <unclear>sea</unclear> <unclear>solvely</unclear> <unclear unit="chars" extent="3"/> uncultured years</line>
     <line><unclear>      </unclear></line>
     <line><unclear>Save</unclear> <unclear>Save</unclear> <unclear>the</unclear> <unclear>g    </unclear> &amp;</line>
     <line><unclear> while all this   </unclear></line>
     <line><del rend="strikethrough">Assemble</del></line>
-    <line>Semichorus</line>
+    <line rend="indent4">Semichorus</line>
     <line>We <del rend="strikethrough">are gathering up from the</del></line>
-    <line>mighty <unclear>king</unclear></line>
-    <line>The voice of the Son of Earth</line>
+
+    <line>The voice of the
+      <add place="superlinear">mighty</add>
+       Son
+       <add place="superlinear">
+         <unclear>king</unclear>
+       </add>
+        of Earth</line>
     <line>the     death &amp;</line>
-    <line>Has drawn back <del rend="strikethrough"><unclear>one</unclear></del> curtain</line>
-    <line>of sleep</line>
-    <line>Which covered our <del rend="strikethrough">dream<unclear>less</unclear></del> <del rend="strikethrough"><unclear>birth</unclear></del></line>
-    <line>dreamy      birth</line>
-    <line>The</line>
-    <line>In the deep &#8212;</line>
-    <line>in the deep?</line>
-    <line><unclear>Semi</unclear></line>
-    <line>Oh below the</line>
-    <line>deep</line>
-    <line><unclear>de   </unclear></line>
-    <line><del rend="strikethrough">We were dreaming of <unclear>some</unclear> sweet</del></line>
-    <line><del rend="strikethrough"><unclear>sent sen </unclear></del></line>
+    <line>Has drawn back
+      <mod>
+        <del rend="strikethrough"><unclear>one</unclear></del>
+        <add place="superlinear">the</add>
+      </mod>
+       curtain
+     <add place="superlinear"> death &amp;</add>
+   <add place="sublinear">of sleep</add>
+ </line>
+    <line>Which covered our
+      <mod>
+        <del rend="strikethrough">dream<unclear>less</unclear></del>
+        <add place="sublinear">dreamy</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough"><unclear>birth</unclear></del>
+       <add place="sublinear">birth</add>
+     </mod>
+   </line>
+
+    <line>In the
+      <add place="superlinear">the</add>
+       deep
+       <add place="sublinear"><unclear>Semi</unclear></add>
+     <add place="sublinear">
+     &#8212; in the deep?
+   </add>
+ </line>
+    <line rend="indent6">Oh below the
+    <add place="sublinear">deep
+    <add place="sublinear"><del rend="strikethrough">de</del></add>
+  </add>
+  </line>
+    <line><del rend="strikethrough">We were dreaming of <unclear>some</unclear> sweet</del>
+    <add place="sublinear">
+      <del rend="strikethrough"><unclear>sent sen </unclear></del>
+    </add>
+  </line>
     <line>From the children of a diviner day</line>
   </zone>
 </surface>
