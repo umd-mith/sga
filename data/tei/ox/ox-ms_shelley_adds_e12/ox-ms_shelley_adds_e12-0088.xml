@@ -7,29 +7,68 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="86">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0088.jp2"/>
   <zone type="main">
+  <zone type="library">86</zone>
     <line><del rend="strikethrough">And we with</del> Have <unclear>deramed</unclear></line>
     <line><del rend="strikethrough"><unclear>kept</unclear></del></line>
-    <line><del rend="strikethrough">For a</del> hundred <del rend="strikethrough">ages we had        slept</del></line>
-    <line>Dreaming of hate ruin &amp;</line>
-    <line><del rend="strikethrough">Of</del> <del rend="strikethrough">care</del> death &amp; <del rend="strikethrough">ruin</del> &amp; <del rend="strikethrough">pain</del> &amp; <del rend="strikethrough">g</del> care</line>
-    <line>And each one who waked as his brother</line>
-    <line>slept</line>
+    <line><del rend="strikethrough">For a</del> hundred <del rend="strikethrough">ages we had </del>
+  <mod>
+  <del rend="strikethrough">slept</del>
+<add place="superlinear">
+  <del rend="strikethrough"><unclear>kept</unclear></del>
+</add>
+</mod>
+</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Of</del> <del rend="strikethrough">care death &amp; ruin</del>
+    <add place="superlinear">Dreaming of hate</add>
+  </mod>
+   &amp;
+    <mod>
+      <del rend="strikethrough">pain</del>
+      <add place="superlinear">ruin &amp;</add>
+    </mod>
+     &amp; care</line>
+    <line>And each one who waked as his brother
+    <add place="sublinear">slept</add>
+  </line>
+
     <line>Found the truth</line>
-    <line>Semi</line>
-    <line><del rend="strikethrough">Worse</del> than <del rend="strikethrough">the</del> his</line>
-    <line>more dread</line>
-    <line>visions</line>
-    <line>were</line>
-    <line><del rend="strikethrough">We <unclear>pass</unclear> my</del></line>
-    <line><unclear>lute</unclear> of hope in</line>
-    <line><unclear>We</unclear> have heard the <del rend="strikethrough">harps</del></line>
-    <line>sleep</line>
-    <line>We have known the voice of love</line>
-    <line>in dreams</line>
-    <line>We have felt the touch of</line>
-    <line>Power, &amp; leap</line>
-    <line>Semi</line>
-    <line>As the billows leap in the morning</line>
-    <line>beams</line>
+    <line rend="indent4">Semi</line>
+    <line rend="indent5">
+      <mod>
+        <del rend="strikethrough">Worse</del>
+        <add place="sublinear">more dread</add>
+      </mod>
+           than
+           <mod>
+             <del rend="overwritten">the</del>
+           <add place="intralinear"> his</add>
+         </mod>
+         <add place="sublinear">were</add>
+       </line>
+    <line>
+      <add place="superlinear">
+        <del rend="strikethrough"><unclear>They</unclear> pass my</del>
+      </add>
+      <unclear>We</unclear> have heard the
+      <mod>
+        <del rend="strikethrough">harps</del>
+      <add place="superlinear"><unclear>lute</unclear> of hope in</add>
+    </mod>
+    sleep
+  </line>
+    <line>We have known the voice of love
+    <add place="sublinear">in dreams</add>
+    </line>
+    <line>We have felt the touch of
+    <add place="sublinear">Power, &amp; leap</add>
+  </line>
+    <line rend="indent4">Semi</line>
+    <line>As the billows leap in
+      <del rend="strikethrough">the</del>
+       morning
+     <add place="sublinear">beams</add>
+   </line>
   </zone>
 </surface>
