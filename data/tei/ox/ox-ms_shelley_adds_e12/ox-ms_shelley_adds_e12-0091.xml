@@ -7,28 +7,54 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="89">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0091.jp2"/>
   <zone type="main">
+  <zone type="library">89</zone>
     <line>And it limped &amp; stumbled with many wounds</line>
     <line><del rend="strikethrough">From night to night thro the desart</del> year</line>
-    <line>Thro the mighty dells of the</line>
-    <line>rugged</line>
-    <line>blaze</line>
-    <line>For thy <del rend="strikethrough">Light</del> of thy glory Titan</line>
-    <line>vapourous</line>
-    <line>Like the sunlight upon the sea</line>
-    <line>pierce</line>
-    <line>Descends       to awaken enlighten</line>
-    <line>the light of</line>
-    <line>And our glory</line>
-    <line>Semi</line>
-    <line>&#8212; Is thine, <del rend="strikethrough">as</del> is thee!</line>
-    <line><del rend="strikethrough"><unclear>  o</unclear></del> <del rend="strikethrough"><unclear>for</unclear></del> <unclear>who</unclear> <unclear>as</unclear></line>
-    <line><del rend="strikethrough">Let</del> let the Hours &amp; the Spirits</line>
-    <line>of might <unclear>&amp;</unclear> of <unclear>pleasure</unclear></line>
-    <line><del rend="strikethrough"><unclear></unclear></del> Like the <del rend="strikethrough">beams with the</del></line>
+    <line>Thro the
+      <add place="sublinear">rugged</add>
+       mighty dells of the</line>
+    <space unit="lines" extent="3"/>
+    <line>For thy
+      <mod>
+        <del rend="strikethrough">Light</del>
+        <add place="superlinear">blaze</add>
+      </mod>
+       of thy glory Titan
+</line>
+    <line>Like the sunlight upon the
+      <add place="superlinear">vapourous</add>
+       sea</line>
+    <line>Descends
+      <add place="superlinear">pierce</add>
+             to awaken enlighten</line>
+    <line>And
+      <add place="superlinear">the light of</add>
+       our glory
+     </line>
+    <line rend="indent4">Semi</line>
+    <line rend="indent5">&#8212; Is thine,
+      <mod>
+        <del rend="overwritten">as</del>
+        <add place="intralinear"> is </add>
+      </mod>
+      thee!</line>
+    <line>
+      <del rend="strikethrough"><unclear>  o</unclear></del>
+      <del rend="strikethrough"><unclear>for</unclear></del> <unclear>who</unclear> <unclear>as</unclear>
+    </line>
+    <line><del rend="strikethrough">Let</del> let the Hours &amp; the Spirits
+    <add place="sublinear">of might <unclear>&amp;</unclear> of <unclear>pleasure</unclear></add>
+  </line>
+    <line>
+      <unclear>Like</unclear>
+       the <del rend="strikethrough">beams with the</del>
+     <add place="sublinear">
+        <del rend="strikethrough">bitter</del>
+      </add>
+    </line>
     <line><del rend="strikethrough"><unclear>bitter</unclear></del></line>
-    <line>cloud &amp; the sun &amp; <unclear>winds</unclear></line>
-    <line><unclear>ind</unclear></line>
-    <line>A Voice</line>
-    <line>Un<unclear>ite</unclear></line>
+    <line rend="indent4">cloud &amp; the sun &amp; <unclear>winds</unclear></line>
+    <line rend="indent4">A Voice</line>
+    <line rend="indent5">Un<unclear>ite</unclear></line>
   </zone>
 </surface>
