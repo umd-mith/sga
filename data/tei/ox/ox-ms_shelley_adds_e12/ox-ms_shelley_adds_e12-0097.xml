@@ -8,7 +8,8 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0097.jp2"/>
   <zone type="main">
   <zone type="library">95</zone>
-    <line rend="indent2"><del rend="strikethrough">And our voices are</del></line>
+    <delSpan spanTo="#pu95"/>
+      <line rend="indent2"><del rend="strikethrough">And our voices are</del></line>
     <line rend="indent2"><del rend="strikethrough">Like a            star</del></line>
     <line rend="indent2">
       <add place="superlinear">
@@ -45,5 +46,6 @@
     <line rend="indent2">Of winds that <unclear>die</unclear></line>
     <line>In the bosom of their own harmony</line>
     <line rend="indent2"><unclear>But</unclear> now from <del rend="strikethrough">the</del> bright</line>
+  <anchor xml:id="pu95"/>
   </zone>
 </surface>
