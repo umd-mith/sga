@@ -7,21 +7,41 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="96">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0098.jp2"/>
   <zone type="main">
-    <line>Mr Boster</line>
-    <line>Sopra il Casino</line>
-    <line>dei Nobile</line>
-    <line>primo piano</line>
-    <line>Sts. Trinita</line>
-    <line>Then weave the web of the mystic measure</line>
-    <line>From the ends of the Earth &amp; the depths</line>
-    <line>of sky</line>
-    <line>Come swift Spirits of might &amp; of Pleasure</line>
-    <line>As <del rend="strikethrough">Like</del> <del rend="strikethrough">T</del> the waves of a thousand</line>
-    <line>streams</line>
-    <line><del rend="strikethrough">To the Ocean</del></line>
-    <line>rush by</line>
-    <line><del rend="strikethrough">With their own light &amp; melody</del></line>
-    <line>To an Ocean of light &amp; <del rend="strikethrough">Music</del></line>
-    <line>harmony,</line>
+  <zone type="library">96</zone>
+    <line rend="indent2">Mr Boster</line>
+    <line rend="indent2">Sopra il Casino</line>
+    <line rend="indent2">dei Nobile</line>
+    <line rend="indent2">primo piano</line>
+    <line rend="indent2">Sts. Trinita</line>
+    <line> _______________________________</line>
+    <space unit="line" extent="1"/>
+    <zone type="sketch">
+      <!--sketch of clouds and moutains-->
+    </zone>
+    <line xml:id="e12-096-pu_line_1">Then weave the web of the mystic measure</line>
+    <line xml:id="e12-096-pu_line_2">From the ends of the Earth &amp; the depths
+    <add place="sublinear">of sky</add>
+  </line>
+    <line xml:id="e12-096-pu_line_3">Come swift Spirits of might &amp; of Pleasure</line>
+    <line xml:id="e12-096-pu_line_4">
+      <mod>
+        <add place="intralinear">As</add>
+         <del rend="strikethrough">Like</del>
+       </mod>
+        <del rend="overwritten">T</del> the waves of a thousand
+    <add place="sublinear">streams
+    <add place="sublinear">rush by</add>
+  </add>
+  </line>
+    <line rend="indent1" xml:id="e12-096-pu_line_5"><del rend="strikethrough">To the Ocean</del></line>
+
+    <line rend="indent1" xml:id="e12-096-pu_line_6"><del rend="strikethrough">With their own light &amp; melody</del></line>
+    <line rend="indent1" xml:id="e12-096-pu_line_7">To an Ocean of light &amp;
+      <mod>
+        <del rend="strikethrough">Music</del>
+      <add place="sublinear">harmony</add>
+    </mod>
+  </line>
+
   </zone>
 </surface>
