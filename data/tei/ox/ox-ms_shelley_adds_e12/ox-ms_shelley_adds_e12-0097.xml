@@ -7,19 +7,42 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="95">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0097.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">And our voices are</del></line>
-    <line><del rend="strikethrough">Like a            star</del></line>
-    <line><del rend="strikethrough">In</del>        accents</line>
-    <line>are</line>
-    <line>Whose <del rend="strikethrough">voices</del>     beams of a</line>
-    <line>the    <del rend="strikethrough">sphered</del></line>
-    <line>Like <del rend="strikethrough">a</del> skies</line>
+  <zone type="library">95</zone>
+    <line rend="indent2"><del rend="strikethrough">And our voices are</del></line>
+    <line rend="indent2"><del rend="strikethrough">Like a            star</del></line>
+    <line rend="indent2">
+      <add place="superlinear">
+        <del rend="strikethrough">In</del>
+      </add>
+      Whose
+      <mod>
+        <del rend="strikethrough">voices</del>
+        <add place="superlinear">accents</add>
+      </mod>
+      <add place="superlinear">are</add>
+          beams of a</line>
+    <line rend="indent2">Like
+      <mod>
+         <del rend="strikethrough">a</del>
+         <add place="superlinear">the</add>
+       </mod>
+       <add place="superlinear">
+         <del rend="strikethrough">sphered</del>
+       </add>
+        skies
+      </line>
     <line>Whose <unclear>beaming</unclear> <del rend="strikethrough"><unclear>seems</unclear></del> <unclear>in</unclear> clear music</line>
     <line>That <del rend="strikethrough">sound as <unclear>billows</unclear> <unclear>  </unclear></del> beams afar</line>
-    <line>Which <unclear>would be</unclear> <del rend="strikethrough">was</del> like <del rend="strikethrough">clear</del> music is</line>
-    <line>Like the <unclear>lullaby</unclear></line>
-    <line>Mixed with the sigh</line>
-    <line>Of winds that <unclear>die</unclear></line>
+    <line>Which <unclear>would be</unclear>
+    <mod>
+      <del rend="overwritten">was</del>
+      <add place="intralinear">like</add>
+    </mod>
+     <del rend="strikethrough">clear</del> music is</line>
+    <line rend="indent2">Like the <unclear>lullaby</unclear>
+    <add place="sublinear">Mixed with the sigh</add>
+  </line>
+    <line rend="indent2">Of winds that <unclear>die</unclear></line>
     <line>In the bosom of their own harmony</line>
     <line><unclear>But</unclear> now from <del rend="strikethrough">the</del> bright</line>
   </zone>
