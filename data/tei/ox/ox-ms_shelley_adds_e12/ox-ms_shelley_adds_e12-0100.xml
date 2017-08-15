@@ -7,27 +7,49 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="98">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0100.jp2"/>
   <zone type="main">
-    <line>We will pass the eyes</line>
-    <line>the</line>
-    <line>Of starry skies</line>
+  <zone type="library">98</zone>
+    <line rend="indent1">We will pass the eyes</line>
+    <line rend="indent1">Of
+      <add place="superlinear">the</add>
+      starry skies
+    </line>
     <line>Into the abyss to colonize</line>
-    <line>And the sound of our flight</line>
-    <line>Will make Chaos &amp; Nigh</line>
+    <line rend="indent1">And the sound of our flight</line>
+    <line rend="indent1">Will make Chaos &amp; Nigh</line>
     <line>Flee like a lake from the Earthquake</line>
-    <line>And <del rend="strikethrough">the atoms of light</del></line>
-    <line><del rend="strikethrough">And of earth &amp; the might</del></line>
-    <line>earth</line>
-    <line>And <del rend="strikethrough">fires</del> air &amp; light</line>
-    <line>And the Spirit of might</line>
-    <line>Which drives round the stars in</line>
-    <line>fiery</line>
-    <line>their <del rend="strikethrough">aery</del> flight</line>
-    <line><del rend="strikethrough">And the shadows of mind</del></line>
-    <line><del rend="strikethrough">Desire</del></line>
-    <line><del rend="strikethrough">Hope</del> <del rend="strikethrough">Fear</del> <del rend="strikethrough">Love</del></line>
-    <line><del rend="strikethrough"><unclear>Hope fear</unclear> love</del></line>
+    <line rend="indent1">And <del rend="strikethrough">the atoms of light</del></line>
+    <line rend="indent1"><del rend="strikethrough">And of earth &amp; the might</del></line>
+    <line rend="indent1">And
+      <mod>
+        <del rend="strikethrough">fires</del>
+        <add place="superlinear">earth</add>
+      </mod>
+       air &amp; light
+     </line>
+    <line rend="indent1">And the Spirit of might</line>
+    <line>Which drives round the stars in
+    <add place="sublinear">their
+      <mod>
+        <del rend="strikethrough">aery</del>
+        <add place="superlinear">fiery</add>
+      </mod>
+       flight
+     </add>
+</line>
+    <line rend="indent1"><del rend="strikethrough">And the shadows of mind</del></line>
+    <line rend="indent1"><del rend="strikethrough">Hope</del> <del rend="strikethrough">Fear</del>
+    <add place="superlinear">
+      <del rend="strikethrough">Desire</del>
+    </add>
+     <del rend="strikethrough">Love</del>
+   </line>
+    <line rend="indent1"><del rend="strikethrough"><unclear>Hope fear</unclear> love</del></line>
     <line>Whereever we float shall assemble</line>
-    <line><del rend="strikethrough">behind</del></line>
-    <line>beneath</line>
+    <line rend="indent6">
+      <mod>
+        <del rend="strikethrough">behind</del>
+      <add place="sublinear">beneath</add>
+    </mod>
+    </line>
   </zone>
 </surface>
