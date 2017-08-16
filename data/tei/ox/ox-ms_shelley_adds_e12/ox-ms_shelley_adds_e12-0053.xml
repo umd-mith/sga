@@ -23,11 +23,11 @@
     <mod>
       <del rend="strikethrough">are</del>
       <add place="superlinear">
-        <handShift medium="pen" new="#pbs"/>
+
         <!--lighter ink emendation-->
         float</add>
     </mod>
-    <handShift medium="pen" new="#pbs"/>
+
     <!--return to fine point pen-->
      in Heaven</line>
 
@@ -43,11 +43,11 @@
            <del rend="strikethrough">Drops are</del>
          </add>
          <add place="sublinear">
-           <handShift medium="pen" new="#pbs"/>
+
            <!--lighter ink emendation-->
            <unclear>stars</unclear> gleam</add>
        </mod>
-    <handShift medium="pen" new="#pbs"/>
+
     <!--return to fine point pen-->
       on Earth
   </line>
@@ -63,22 +63,22 @@
       <mod>
          <del rend="strikethrough">legions are</del>
          <add place="superlinear">
-           <handShift medium="pen" new="#pbs"/>
+
            <!--lighter ink emendation-->
            are gathered</add>
        </mod>
-      <handShift medium="pen" new="#pbs"/>
+
       <!--return to fine point pen-->
         driven</line>
     <line>
       <add place="interlinear">
-        <handShift medium="pen" new="#pbs"/>
+
         <!--lighter ink emendation-->
         By the blast of <unclear>the</unclear> <del rend="strikethrough">storm of delight by</del>
       </add>
       </line>
     <line rend="indent1">
-      <handShift medium="pen" new="#pbs"/>
+
       <!--return to fine point pen-->
       By the panic of glee &#8212;</line>
     <line>They <del rend="strikethrough">It</del> shakes with emotion</line>
@@ -89,13 +89,13 @@
       <mod>
         <del rend="strikethrough">gladness</del>
         <add place="intralinear">
-          <handShift medium="pen" new="#pbs"/>
+
           <!--lighter ink emendation-->
           joyance</add>
       </mod>
       </line>
     <line rend="indent1">
-      <handShift medium="pen" new="#pbs"/>
+
       <!--return to fine point pen-->
       <del rend="strikethrough">And</del> The
       <mod>
@@ -106,12 +106,12 @@
      </line>
     <line>Fresh <del rend="strikethrough">Their</del> music are flinging</line>
     <line>
-      <handShift medium="pen" new="#pbs"/>
+
       <!--lighter ink emendation-->
       Like the notes of a spirit
     </line>
     <line>
-      <handShift medium="pen" new="#pbs"/>
+
       <!--return to fine point pen-->
       From land &amp; from sea</line>
 
@@ -119,7 +119,7 @@
       <mod>
         <del rend="strikethrough">Beams <unclear>start</unclear> from their pillows</del>
       <add place="superlinear">
-      <handShift medium="pen" new="#pbs"/>
+      
     The streams &amp; the mountains
   </add>
 </mod>
