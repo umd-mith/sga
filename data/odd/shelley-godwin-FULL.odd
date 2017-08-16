@@ -1,0 +1,619 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Shelley Godwin Archive Customization</title>
+        <author xml:id="tmunoz">Trevor Muñoz</author>
+        <author xml:id="rviglian">Raffaele Viglianti</author>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>Shelley Godwin Archive (via website)</distributor>
+        <address>
+          <addrLine>mith@umd.edu</addrLine>
+        </address>
+        <date when="2011-10-17">October 17, 2011</date>
+        <availability status="restricted">
+          <p>This code was updated by Elisa Beshero-Bondar, building on work copyrighted by Trevor Muñoz, Raffaele Viglianti, and Maryland Institute for Technology in the
+            Humanities and licensed under a <ref target="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0
+              Unported License</ref>.</p>
+        </availability>
+        <pubPlace>College Park, MD USA</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Based on <name type="file">geneticTEI.xml</name>, which can be found <ref target="http://tei.svn.sourceforge.net/viewvc/tei/trunk/P5/">Sourceforge</ref>.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2011-10-16" who="tmunoz">First draft</change>
+      <change when="2011-11-14" who="tmunoz">Temporarily removing Genetic Editions stuff</change>
+      <change when="2011-11-21" who="tmunoz">Making additional header elements required</change>
+      <change when="2014-01-21" who="rviglian">Restructured to validate master files (metadata + xinlcluded content)</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Rationale</head>
+        <p>To be added</p>
+      </div>
+      <div>
+        <head>Shelley Godwin ODD</head>
+        <p>The prefix in this schema stands for <expan>Shelley Godwin Archive</expan>, the project
+          for which this customization was developed.</p>
+        <schemaSpec ident="shelley_godwin_odd" prefix="sga" start="TEI">
+
+          <specGrp xml:base="shelley-godwin-page.odd" xml:id="modules">
+                        <moduleRef key="tei"></moduleRef>
+                        
+                        
+                        <moduleRef except="am ex fw supplied surplus redo undo" key="transcr"></moduleRef>
+                        <moduleRef key="gaiji"></moduleRef>
+                        <moduleRef except="ab altGrp timeline" key="linking"></moduleRef>
+                        
+                        <moduleRef include="figure figDesc" key="figures"></moduleRef>
+                        
+                        
+                        <elementRef key="c"></elementRef>
+                    </specGrp>
+          <specGrp xml:base="shelley-godwin-page.odd" xml:id="mainSpec">
+                        
+                    <classSpec ident="att.global" mode="change" type="atts">
+                        <attList>
+                            <attDef ident="el-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
+                                <desc>A convenience attribute for indicating what text-centric
+                                    element a document-centric element should be transformed
+                                    to</desc>
+                                <datatype>
+                                    <dataRef key="string"></dataRef>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="att-target" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
+                                <desc>A convenience attribute for indicating what attribute should
+                                    be added in transforming from document- to text-centric markup.
+                                    By convention the attribute is placed on the element specified
+                                    in a preceding el-target attribute</desc>
+                                <datatype>
+                                    <dataRef key="string"></dataRef>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="att-value" mode="add" ns="http://shelleygodwinarchive.org/ns/1.0">
+                                <desc>If an attribute created during a document- to text-centric
+                                    markup conversion should have a particular value, please
+                                    indicate</desc>
+                                <datatype>
+                                    <dataRef key="string"></dataRef>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                    </classSpec>
+
+              <classSpec ident="att.transcriptional" type="atts" mode="change">
+                  <attList>
+                      <attDef ident="status" mode="delete"/>
+                      
+                  </attList>
+              </classSpec>
+              <!--2017-08-15 ebb: To resolve an error in the output RNG, I moved the specs for @hand from the pattern defining att.transcriptional to a new one, below, for its specific att class in the TEI. If we don't do this, we generate a duplicate rule for @hand in att.written and in att.transcriptional.-->
+              <classSpec ident="att.written" type="atts" mode="change">
+                  <attList> <attDef ident="hand" mode="replace">
+                      <valList type="closed" mode="replace">
+                          <valItem ident="#pbs">
+                              <gloss>Percy Shelley's handwriting</gloss>
+                              <desc>Text written in Percy Shelley's hand.</desc>
+                          </valItem>
+                          <valItem ident="#mws">
+                              <gloss>Mary Shelley's handwriting</gloss>
+                              <desc>Text written in Mary Shelley's hand.</desc>
+                          </valItem>
+                          <valItem ident="#comp">
+                              <gloss>compositor's handwriting</gloss>
+                              <desc>Text written in an (unknown?) compositor's hand.</desc>
+                          </valItem>
+                          <valItem ident="#library">
+                              <gloss>librarian's handwriting</gloss>
+                              <desc>Text written in an (unknown?) librarian's hand.</desc>
+                          </valItem>
+                          <valItem ident="http://viaf.org/viaf/95159449"/>
+                      </valList>
+                  </attDef></attList>
+              </classSpec>
+
+                    <classSpec ident="att.global.linking" mode="change" type="atts">
+                        <attList>
+                            <attDef ident="synch" mode="delete"></attDef>
+                            <attDef ident="sameAs" mode="delete"></attDef>
+                            <attDef ident="copyOf" mode="delete"></attDef>
+                            <attDef ident="exclude" mode="delete"></attDef>
+                            <attDef ident="select" mode="delete"></attDef>
+                        </attList>
+                    </classSpec>
+
+                    <classSpec ident="att.coordinated.attributes" mode="change" type="atts">
+                        <attList>
+                            <attDef ident="start" mode="delete"></attDef>
+                        </attList>
+                    </classSpec>
+
+                    
+                    <classSpec ident="att.global.analytic" mode="delete" type="atts"></classSpec>
+                    <classSpec ident="att.global.change" mode="delete" type="atts"></classSpec>
+                    <classSpec ident="att.declaring" mode="delete" type="atts"></classSpec>
+                    <classSpec ident="att.responsibility" mode="delete" type="atts"></classSpec>
+
+                    
+                    <dataSpec ident="sga_linerend" mode="add">
+                        <desc>Simple datatype for indentation values.
+                            When the indentation is numbered, each value should correspond 
+                            roughly 1/10 of the page.
+                        </desc>
+                        <content>
+                            <alternate>
+                                <valList>
+                                    <valItem ident="right"></valItem>
+                                    <valItem ident="center"></valItem>
+                                    <valItem ident="left"></valItem>
+                                </valList>
+                                <dataRef name="string" restriction="indent\d"></dataRef>
+                            </alternate>                            
+                        </content>
+                    </dataSpec>
+
+                    <elementSpec ident="surface" mode="change" module="transcr">
+                        <content>
+                            <sequence>
+                                
+                                <alternate maxOccurs="unbounded" minOccurs="0">
+                                    <classRef key="model.global"></classRef>
+                                    
+                                    <classRef key="model.graphicLike"></classRef>
+                                </alternate>
+                                
+                                <sequence maxOccurs="unbounded" minOccurs="0">
+                                    
+                                    <alternate>
+                                        <elementRef key="zone"></elementRef>
+                                        <elementRef key="line"></elementRef>
+                                        
+                                        
+                                    </alternate>
+                                    
+                                    
+                                    <classRef key="model.global" maxOccurs="unbounded" minOccurs="0"></classRef>
+                                    
+                                </sequence>
+                            </sequence>
+                        </content>
+                        
+                        <constraintSpec ident="add-ns-for-schema-fragment" scheme="isoschematron">
+                            <constraint>
+                                <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" prefix="tei" uri="http://www.tei-c.org/ns/1.0"></sch:ns>
+                            </constraint>
+                        </constraintSpec>
+                        <attList>
+                            <attDef ident="xml:id" mode="change" usage="req"></attDef>
+
+                            
+                            <attDef ident="ulx" mode="change" usage="req"></attDef>
+                            <attDef ident="uly" mode="change" usage="req"></attDef>
+                            <attDef ident="lrx" mode="change" usage="req"></attDef>
+                            <attDef ident="lry" mode="change" usage="req"></attDef>
+
+                            <attDef ident="n" mode="change" usage="rec"></attDef>
+
+                            <attDef ident="corresp" mode="change" usage="opt">
+                                <altIdent>partOf</altIdent>
+                                <desc>Syntactic sugar attribute—should refer to the id of the
+                                    sourceDoc element with which this surface should be
+                                    associated</desc>
+                            </attDef>
+                            
+                            <attDef ident="shelfmark" mode="add" ns="http://mith.umd.edu/sc/ns1#" usage="opt">
+                                <datatype>
+                                    <dataRef key="string"></dataRef>
+                                </datatype>
+                            </attDef>
+                            <attDef ident="folio" mode="add" ns="http://mith.umd.edu/sc/ns1#" usage="opt">
+                                <datatype>
+                                    <dataRef key="string"></dataRef>
+                                </datatype>
+                            </attDef>
+                            
+                            
+                            <attDef ident="attachment" mode="delete"></attDef>
+                            <attDef ident="flipping" mode="delete"></attDef>
+                        </attList>
+                    </elementSpec>
+
+                    
+                    <elementSpec ident="line" mode="change" module="transcr">
+                        <content>
+                            
+                            <alternate maxOccurs="unbounded" minOccurs="0">
+                                <textNode></textNode>
+                                <classRef key="model.global"></classRef>
+                                
+                                
+                                <classRef key="model.segLike"></classRef>
+                                <classRef key="model.hiLike"></classRef>
+                                <elementRef key="choice"></elementRef>
+                                <elementRef key="zone"></elementRef>
+                                <elementRef key="line"></elementRef>
+                                
+                                
+                                <elementRef key="del"></elementRef>
+                                <elementRef key="add"></elementRef>
+                                <elementRef key="unclear"></elementRef>
+                                <elementRef key="damage"></elementRef>
+                                <elementRef key="handShift"></elementRef>
+                                <elementRef key="mod"></elementRef>
+                                <elementRef key="retrace"></elementRef>
+                            </alternate>
+                            
+                        </content>
+                        
+                        <attList>
+                            <attDef ident="rend" mode="replace" usage="opt">
+                                <datatype>
+                                    <dataRef key="sga_linerend"></dataRef>
+                                </datatype>
+                            </attDef>
+                        </attList>
+                        <remarks>
+                            <p>For the purposes of diplomatic transcriptions, the content model of
+                                line has been restricted to remove more interpretive elements such
+                                as &lt;sic&gt;, and &lt;reg&gt;</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="damage" mode="change" module="transcr">
+                        <attList>
+                            <attDef ident="rend" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="inkblot"></valItem>
+                                    <valItem ident="tear"></valItem>
+                                    <valItem ident="cut"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="hi" mode="change" module="core">
+                        <attList>
+                            <attDef ident="rend" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="hyphenated"></valItem>
+                                    <valItem ident="underline"></valItem>
+                                    <valItem ident="double-underline"></valItem>
+                                    <valItem ident="bold"></valItem>
+                                    <valItem ident="caps"></valItem>
+                                    <valItem ident="italic"></valItem>
+                                    <valItem ident="sup"></valItem>
+                                    <valItem ident="sub"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                        <remarks>
+                            <p>Attribute values adapted from the TEI P5 specification for the ENRICH
+                                project, http://enrich.manuscriptorium.com/</p>
+                        </remarks>
+                    </elementSpec>
+
+                    <elementSpec ident="add" mode="change" module="core">
+                        <attList>
+                            <attDef ident="place" mode="replace">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="superlinear"></valItem>
+                                    <valItem ident="intralinear"></valItem>
+                                    <valItem ident="sublinear"></valItem>
+                                    <valItem ident="interlinear"></valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="type" mode="replace">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="alternative"></valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rend" mode="delete"></attDef>
+                            
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="addSpan" mode="change" module="transcr">
+                        <classes mode="change">
+                            <memberOf key="att.responsibility" mode="add"></memberOf>
+                        </classes>
+                    </elementSpec>
+
+                    <elementSpec ident="delSpan" mode="change" module="transcr">
+                        <classes mode="change">
+                            <memberOf key="att.transcriptional" mode="delete"></memberOf>
+                            <memberOf key="att.responsibility" mode="add"></memberOf>
+                        </classes>
+                    </elementSpec>
+
+                    <elementSpec ident="del" mode="change" module="core">
+                        <attList>
+                            <attDef ident="rend" mode="replace">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="strikethrough"></valItem>
+                                    <valItem ident="overwritten"></valItem>
+                                    <valItem ident="smear"></valItem>
+                                    <valItem ident="erased"></valItem>
+                                    <valItem ident="vertical_line"></valItem>
+                                    <valItem ident="unmarked"></valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="resp" mode="delete"></attDef>
+                            <attDef ident="hand" mode="delete"></attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="milestone" mode="change" module="core">
+                        <attList>
+                            <attDef ident="unit" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="tei:div"></valItem>
+                                    <valItem ident="tei:p"></valItem>
+                                    <valItem ident="tei:lg"></valItem>
+                                    <valItem ident="tei:l"></valItem>
+                                    <valItem ident="tei:date"></valItem>
+                                    <valItem ident="tei:speaker"></valItem>
+                                    <valItem ident="tei:q"></valItem>
+                                    <valItem ident="tei:stage"></valItem>
+                                    <valItem ident="tei:seg"></valItem>
+                                    <valItem ident="tei:note"></valItem>
+                                    <valItem ident="tei:head"></valItem>
+                                    <valItem ident="tei:div[@type='scene']"></valItem>
+                                    <valItem ident="tei:div[@type='act']"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="zone" mode="change" module="transcr">
+                        <content>
+                            
+                            <alternate maxOccurs="unbounded" minOccurs="0">
+                                <textNode></textNode>
+                                <classRef key="model.graphicLike"></classRef>
+                                
+                                
+                                <classRef key="model.milestoneLike"></classRef>
+                                <classRef key="model.noteLike"></classRef>
+                                <classRef key="model.global.edit"></classRef>
+                                <elementRef key="metamark"></elementRef>
+                                
+                                <classRef key="model.linePart"></classRef>
+                                
+                                <elementRef key="alt"></elementRef>
+                            </alternate>
+                            
+                        </content>
+                        
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="top">
+                                        <desc>Material that can appear at the top of a manuscript
+                                            page—like headings or notes</desc>
+                                    </valItem>
+                                    <valItem ident="left_margin">
+                                        <desc>Zone for marginal additions, deletions, and other
+                                            modifications. More than one zone with this type may
+                                            appear in a document if marginal zones are distinct
+                                            interventions.</desc>
+                                    </valItem>
+                                    <valItem ident="main">
+                                        <desc>The main block of text on a page</desc>
+                                    </valItem>
+                                    <valItem ident="pagination">
+                                        <desc>For segments of a page where page numbers have been
+                                            added in one or more original hands; distinct from later
+                                            additions by librarians/collectors</desc>
+                                    </valItem>
+                                    <valItem ident="library">
+                                        <desc>A zone of writing which appears to have been added by
+                                            librarians/collectors at a later date—often page
+                                            numbers</desc>
+                                    </valItem>
+                                    <valItem ident="sketch">
+                                        <desc>A zone identifying a sketch or doodle</desc>
+                                    </valItem>
+                                    <valItem ident="calculation">
+                                        <desc>A zone identifying a written calculation</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="metamark" mode="change" module="transcr">
+                        <attList>
+                            <attDef ident="function" mode="replace">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="count"></valItem>
+                                    <valItem ident="insert"></valItem>
+                                    <valItem ident="separate"></valItem>
+                                    <valItem ident="paragraph"></valItem>
+                                    <valItem ident="displacement"></valItem>
+                                    <valItem ident="transpose"></valItem>
+                                    <valItem ident="sequence"></valItem>
+                                    <valItem ident="alternate"></valItem>
+                                    <valItem ident="unclear"></valItem>
+                                    <valItem ident="math_operation">
+                                        <desc>Perform a mathematical operation (e.g. a sum). Usually rendered a as line</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="rend" mode="replace">
+                                <datatype>
+                                    <dataRef key="string"></dataRef>
+                                </datatype>
+                                <valList mode="replace" type="semi">
+                                    <valItem ident="line">
+                                        <desc>A line, often used to separate content.</desc>
+                                    </valItem>
+                                    <valItem ident="short_line">
+                                        <desc>A short line, similar to an underline, but often used to
+                                        separate content, not for emphasis (in which case hi[@rend="underline"] is used</desc>
+                                    </valItem>
+                                    <valItem ident="wavey_short_line">
+                                        <desc>A wavey short line, similar to an underline, but often used to
+                                            separate content, not for emphasis (in which case hi[@rend="underline"] is used</desc>
+                                    </valItem>
+                                    <valItem ident="left_bracket_short_line">
+                                        <desc>A line wrapping some text starting from the top left corner, then curving
+                                            to underline the text. Often used to separate content.</desc>
+                                    </valItem>
+                                    <valItem ident="short_vertical_line">
+                                        <desc>A short vertical line, often used inline to separate words or to indicate insertion.</desc>
+                                    </valItem>
+                                    <valItem ident="top_left_bracket">
+                                        <desc>A corner bracket located in the top left of a word.</desc>
+                                    </valItem>
+                                    <valItem ident="caret">
+                                        <desc>A caret pointing upwards. This is often encoded literally in SGA for convenience.
+                                        This value provides an alternative way of encoding it.</desc>
+                                    </valItem>
+                                    <valItem ident="left_caret">
+                                        <desc>A caret pointing left.</desc>
+                                    </valItem>
+                                    <valItem ident="cross">
+                                        <desc>A cross, often used for displacement. This is often encoded literally in SGA for convenience.
+                                            This value provides an alternative way of encoding it.</desc>
+                                    </valItem>
+                                    <valItem ident="star">
+                                        <desc>A star or asterisk, often used for displacement. This is often encoded literally in SGA for convenience.
+                                            This value provides an alternative way of encoding it.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                            
+                        </attList>
+                        <exemplum xml:lang="no"><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <line><seg xml:id="tp-ib01">bör</seg><metamark function="transposition" place="above" rend="underline" target="#tp-ib01">2.</metamark>
+                                og <seg xml:id="tp-ib02">hör</seg><metamark function="transposition" place="above" rend="underline" target="#tp-ib02">1.</metamark></line></egXML></exemplum>
+                        
+                    </elementSpec>
+
+                    <elementSpec ident="mod" mode="change" module="transcr">
+                        <content>
+                            
+                            <alternate maxOccurs="unbounded" minOccurs="0">
+                                <classRef key="model.gLike"></classRef>
+                                <classRef key="model.phrase"></classRef>
+                                <classRef key="model.inter"></classRef>
+                                <classRef key="model.global"></classRef>
+                            </alternate>
+                        </content>
+                        <constraintSpec ident="modContents" scheme="isoschematron">
+                            <constraint>
+                                <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:mod">
+                                    <sch:report test="not(@spanTo) and not(tei:restore) and not(count(node()) gt 1)">The mod element is
+                                        intended to group a series of related changes to the
+                                        manuscript. Thus, mod must have more than one child
+                                        element. If only a single addition or deletion is being
+                                        encoded, mod is not required.</sch:report>
+                                </sch:rule>
+                            </constraint>
+                        </constraintSpec>
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="additions"></valItem>
+                                    <valItem ident="deletions"></valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="xml:space" mode="replace" usage="opt">
+                                    <valList mode="replace" type="closed">
+                                        <valItem ident="preserve"/>
+                                    </valList>
+                                </attDef>
+                            
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec ident="ptr" mode="change" module="core">
+                        <constraintSpec ident="verify-ptr-targets" scheme="isoschematron">
+                            <constraint>
+                                
+                            </constraint>
+                        </constraintSpec>
+                    </elementSpec>
+                    
+               <elementSpec ident="subst" mode="change" module="transcr">
+                        <attList>
+                            <attDef ident="cause" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="clarify"></valItem>
+                                    <valItem ident="fix"></valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="hand" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="#pbs"></valItem>
+                                    <valItem ident="#mws"></valItem>
+                                    <valItem ident="#library"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec ident="restore" mode="change" module="transcr">
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="stetdots"></valItem>
+                                    <valItem ident="smear_strikethrough"></valItem>
+                                    <valItem ident="underline"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec ident="seg" mode="change" module="linking">
+                        <attList>
+                            <attDef ident="type" mode="replace" usage="opt">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="alternative"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec ident="handShift" mode="change" module="transcr">
+                        <attList>
+                            <attDef ident="new" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="#pbs"></valItem>
+                                    <valItem ident="#mws"></valItem>
+                                    <valItem ident="#library"></valItem>
+                                </valList>
+                            </attDef>
+                            <attDef ident="medium" mode="replace" usage="req">
+                                <valList mode="replace" type="closed">
+                                    <valItem ident="pen"></valItem>
+                                    <valItem ident="pencil"></valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>                
+                    </specGrp>
+          
+          <specGrpRef target="#modules"></specGrpRef>
+          <moduleRef except="abbr analytic biblScope biblStruct              binaryObject cb choice cit distinct divGen editor email expan gb gloss              head headItem headLabel imprint l label lb listBibl lg measure              meeting mentioned monogr pb postBox postCode publisher              q quote said series soCalled sp street teiCorpus textLang time sic corr reg orig" key="core"></moduleRef>
+          <moduleRef key="header"></moduleRef>
+          <moduleRef key="textstructure"></moduleRef>
+          <moduleRef key="msdescription"></moduleRef>
+          <moduleRef key="namesdates"></moduleRef>
+          <specGrpRef target="#mainSpec"></specGrpRef>
+
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>

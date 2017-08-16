@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../derivatives/brown_odds.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href="../derivatives/brown_odds.isosch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="../derivatives/brown_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../derivatives/brown_odds.isosch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
   xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
   xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:ge="http://www.tei-c.org/ns/geneticEditions">
+  <!--2017-08-15 ebb: Updated ODD file for continued work on SGA file with Pgh-Frankenstein project. -->
   <teiHeader>
     <fileDesc>
       <titleStmt>

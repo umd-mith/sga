@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://teijenkins.hcmc.uvic.ca/job/TEIP5-Pure-ODD/lastStableBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://teijenkins.hcmc.uvic.ca/job/TEIP5-Pure-ODD/lastStableBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--<?xml-model href="http://teijenkins.hcmc.uvic.ca/job/TEIP5-Pure-ODD/lastStableBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://teijenkins.hcmc.uvic.ca/job/TEIP5-Pure-ODD/lastStableBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
     xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <!--2017-08-15 ebb: Updated ODD file for continued work on SGA file with Pgh-Frankenstein project. -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Encoding Guidelines</title>
-                <author>
-                    <persName xml:id="tmunoz">Trevor Mu&#241;oz</persName>
+                <author xml:id="tmunoz">
+                    Trevor Mu&#241;oz
                 </author>
             </titleStmt>
             <publicationStmt>
@@ -384,7 +388,11 @@
                     <classSpec ident="att.transcriptional" type="atts" mode="change">
                         <attList>
                             <attDef ident="status" mode="delete"/>
-                            <attDef ident="hand" mode="replace">
+                            
+                        </attList>
+                    </classSpec>
+                        <classSpec ident="att.written" type="atts" mode="change">
+                           <attList> <attDef ident="hand" mode="replace">
                                 <valList type="closed" mode="replace">
                                     <valItem ident="#pbs">
                                         <gloss>Percy Shelley's handwriting</gloss>
@@ -404,9 +412,8 @@
                                     </valItem>
                                     <valItem ident="http://viaf.org/viaf/95159449"/>
                                 </valList>
-                            </attDef>
-                        </attList>
-                    </classSpec>
+                            </attDef></attList>
+                        </classSpec>
 
                     <classSpec ident="att.global.linking" type="atts" mode="change">
                         <attList>
