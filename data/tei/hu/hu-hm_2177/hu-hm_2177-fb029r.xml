@@ -2,10 +2,27 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-fb029r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="29r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb029r.jp2"/>
+
 	<zone type="main">
-		
+		<line>
+			to action perpetually change.
+		</line>
+		<line>
+			We owe,
+			<del rend="strikethrough">
+				probably to the Reformation
+			</del>
+		</line>
+		<line>
+			the great writers of the
+			<del rend="strikethrough">
+				age of
+			</del>
+		</line>
+		<line>
+			Elizebeth age to the
+		</line>
 	</zone>
 </surface>
