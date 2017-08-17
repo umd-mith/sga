@@ -2,10 +2,58 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-fb027v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="27v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027vr.jp2"/>
 	<zone type="main">
-		
+<line>
+	the peculiarity of the moral
+</line>
+<line>
+	&amp; intellectual
+	<mod>
+		<del rend="strikethrough">education</del>
+	<add place="intralinear">condition</add>
+</mod>
+</line>
+<line>
+	of the minds among which
+</line>
+<line>
+	they were produced. Thus
+</line>
+<line>
+	a number of writers have the
+</line>
+<line>
+	form, whilst they want the
+</line>
+<line>
+	spirit of those whom they are
+	<add place="superlinear">it is alledged</add>
+</line>
+<line>
+	supposed
+<add place="superlinear">they</add>
+to imitate;
+<del rend="strikethrough">and it</del>
+</line>
+<line>
+	<del rend="strikethrough">is not because</del>
+	because the former
+</line>
+<line>
+	is the endowment of the age
+</line>
+<line>
+	in which they live, &amp; the latter
+</line>
+<line>
+	must be
+	<add place="superlinear">the</add>
+	uncommunicated
+</line>
+<line>
+	lightning of their own mind
+</line>
 	</zone>
 </surface>
