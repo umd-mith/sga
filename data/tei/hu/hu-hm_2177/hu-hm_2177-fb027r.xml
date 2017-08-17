@@ -2,10 +2,81 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
+	xml:id="hu-hm_2177-fb027r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="27r (rev.)" mith:shelfmark="MS HM 2177">
 	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+
+
 	<zone type="main">
-		
+
+<line>
+	It is impossible that any one
+</line>
+<line>
+	<del rend="strikethrough">person</del>
+	<del rend="strikethrough">writer</del>
+	contemporary
+</line>
+<line>
+	with such writers as
+	<add place="superlinear">stand in the</add>
+	<del rend="strikethrough">L.B.</del>
+	<add place="sublinear">
+		<del rend="strikethrough">Coleridge</del>
+		&amp; Coleridge
+	</add>
+</line>
+<line>
+	<del rend="strikethrough">&amp; Words.</del>
+	can conscienciously
+</line>
+<line>
+	ru ranks of literature of the present day
+</line>
+<line>
+	assure themselves or others
+</line>
+<line>
+	that thier language &amp; tone
+</line>
+<line>
+	of thought may not have been modified by the study of the
+	<mod>
+		<del rend="strikethrough">writings</del>
+	<add place="intralinear">productions</add>
+</mod>
+</line>
+<line>
+	of these extraordinary intellects
+</line>
+<line>
+	It is true that,
+	<mod>
+		<del rend="strikethrough">they</del>
+	<add place="sublinear">the spirit of</add>
+</mod>
+	not
+</line>
+<line>
+	their genius,
+	<del rend="strikethrough">but</del>
+	but the
+</line>
+<line>
+	forms in which it has
+</line>
+<line>
+	manifested itself
+	<mod>
+		<del rend="strikethrough">is</del>
+		<add place="superlinear">are</add>
+	</mod>
+	due
+</line>
+<line>
+	less to the peculiarity of
+</line>
+<line>
+	their own minds than to
+</line>
 	</zone>
 </surface>
