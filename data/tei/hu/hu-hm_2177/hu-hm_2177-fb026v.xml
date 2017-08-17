@@ -2,10 +2,49 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb026v” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“26r” mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb046r.jp2"/>
+	xml:id="hu-hm_2177-fb026vr" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="26v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb026v.jp2"/>
+
 
 	<zone type="main">
-
-			</zone>
+		<!--upper 2/3 of page is torn away and tear runs into first line-->
+		<line>the great w
+			<unclear unit="words" extent="2"/>
+			ges
+		</line>
+		<line>
+			<unclear>or</unclear>
+			from the impuslses of that
+		</line>
+		<line>
+			universal nature
+			<unclear> which is</unclear>
+		</line>
+		<line>
+			the book
+			<unclear>of</unclear>
+			from which
+			<add place="superlinear">all</add>
+			poetry
+		</line>
+		<line>
+			greatest is only beautiful &amp; true
+		</line>
+		<line>
+			is a transcript
+		</line>
+		<line>
+			inasmuch as it is
+			<add place="sublinear">in candour</add>
+		</line>
+		<line>
+			One word on the manner in
+		</line>
+		<line>
+			which the study of contemporar
+		</line>
+		<line>
+			writing may have modified
+		</line>			
+	</zone>
 </surface>
