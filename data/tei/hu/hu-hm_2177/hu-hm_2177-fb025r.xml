@@ -2,10 +2,20 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-fb025r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="25r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb025r.jp2"/>
 	<zone type="main">
-		
+		<!--the following is inverted-->
+		<line>They are the productions indeed</line>
+		<line>of a person who
+			<add place="superlinear">verily</add>
+			believes him
+		</line>
+		<line>self to posess some thing like</line>
+		<line>a reasoned system
+			<del rend="strikethrough">on the</del>
+		</line>
+
+
 	</zone>
 </surface>
