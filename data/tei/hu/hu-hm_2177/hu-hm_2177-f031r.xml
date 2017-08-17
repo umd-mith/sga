@@ -2,10 +2,33 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-f031r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="31r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f031r.jp2"/>
+
 	<zone type="main">
-		
-	</zone>
-</surface>
+		<delSpan spanTo="#pu_31r"/>
+		<line>
+			There is one mistake
+		</line>
+		<line>
+			I have heard one mistake
+		</line>
+		<line>
+			expressed concerning my
+		</line>
+		<line>
+			writing It has been alledge
+		</line>
+		<line>
+			that my writings are
+		</line>
+		<line>
+			destined consecrated by me
+		</line>
+		<line>
+			to the working of a gre
+		</line>
+		<anchor xml:id="pu_31r"/>
+
+		</zone>
+	</surface>
