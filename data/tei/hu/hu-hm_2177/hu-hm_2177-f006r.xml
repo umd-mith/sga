@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-f006v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="6v" mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f006v.jp2"/>
+	xml:id="hu-hm_2177-f006r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="6r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f006r.jp2"/>
 	<zone type="main">
 		<line>To the deep to the deep</line>
 		<line rend="indent3">Down, Down!</line>
@@ -28,6 +28,6 @@
 		</line>
 		<line rend="indent3">Down Down</line>
 		<line> <del rend="strikethrough">Tra</del> Track the, sound, which</line>
-		
+
 	</zone>
 </surface>
