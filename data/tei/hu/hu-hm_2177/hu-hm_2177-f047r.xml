@@ -2,10 +2,34 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-fb047r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="47r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb047r.jp2"/>
+
 	<zone type="main">
-		
+<line>
+	<unclear> It </unclear>
+	I
+	<mod>
+		<del rend="strikethrough">am <unclear>troubled</unclear> with</del>
+		<add place="superlinear">Let me take this opportunity</add>
+	</mod>
+</line>
+<line>of acknowledging that I have</line>
+<line>what a Scotch Philosopher</line>
+<line>characteristically calls a "</line>
+<line> Passion for reforming the world"</line>
+<line>What passion incited him</line>
+<line>to write his book he does not</line>
+<line> explains. My comfort is, that</line>
+<line>I shall be damned in good company</line>
+<line><del rend="strikethrough">Plato, Lord Bacon, Milton.</del></line>
+<line><del rend="strikethrough">Rousseau</del> But it is a mistake</line>
+<line>to suppose that I dedicate</line>
+<line>my poetical compositions</line>
+<line>solely to the direct inforcement</line>
+<line>of that reform, or that I con-</line>
+<line>sider them in any degree</line>
+<line>a reasoned system on theory</line>
+<line>forms of human life</line>
 	</zone>
 </surface>
