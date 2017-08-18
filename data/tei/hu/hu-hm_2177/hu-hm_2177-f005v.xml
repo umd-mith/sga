@@ -2,10 +2,33 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-f005v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="5v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f005v.jp2"/>
 	<zone type="main">
-		
+	<line> I <del rend="strikethrough">am</del></line>
+	<line><del rend="strikethrough">As the</del></line>
+	<line>While the sound,
+		<mod>
+			<del rend="strikethrough">eddies</del>
+			<add place="superlinear">whirls around</add>
+		</mod>
+		round
+	</line>
+	<line rend="indent3">Down Down!</line>
+	<line> As
+		<mod>
+			<del rend="strikethrough">the <unclear>gle</unclear> the <unclear>s</unclear></del>
+			<add place="sublinear">As <unclear>d</unclear> As a stag draws</add>
+		</mod>
+		<add place="superlinear">the hound</add>
+	</line>
+	<line>A <del rend="strikethrough">the</del> lightning a vapour</line>
+	<line>is a weak moth the taper</line>
+	<line>Death despair, Love sorrow</line>
+	<line>Time both, to day tomorrow</line>
+	<line> As steel obeys the spirit of a
+		<add place="superlinear">the</add>
+		stone</line>
+		<line rend="indent3"> Down, Down!</line>
 	</zone>
 </surface>
