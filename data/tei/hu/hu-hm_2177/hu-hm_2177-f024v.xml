@@ -2,10 +2,19 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-fb027r” ulx="0" uly="0" lrx="5412" lry="7216" mith:folio=“27r (rev.)“ mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027r.jp2"/>
-   
+	xml:id="hu-hm_2177-fb024v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="24v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb024v.jp2"/>
 	<zone type="main">
-		
+		<line>Didactic Poetry is my abhorrence</line>
+		<line>Nothing can equally well be</line>
+		<line>expressed in prose, <del rend="strikethrough">ought to be</del></line>
+		<line><del rend="strikethrough">expressed in verse</del>. but is tedious</line>
+		<line>&amp; superarogatory in verse.</line>
+		<line>They are attempts to</line>
+		<line>familiarize the imagination</line>
+		<line>of poetical readers with</line>
+		<line><del rend="strikethrough">the</del> beautiful idealisms</line>
+		<line>of moral excellence. <del rend="strikethrough">Of</del></line>
+		<line><del rend="strikethrough">course if I designed I</del></line>
 	</zone>
 </surface>
