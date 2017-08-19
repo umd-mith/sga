@@ -71,6 +71,16 @@
 			</add>
 		</line>
 		<line>
-			<del rend="strikethrough">Like a <unclear>
+			<del rend="strikethrough">Like a </del>
+			<mod>
+				<del rend="strikethrough"><unclear>diamond</unclear></del>
+				<add place="sublinear">star</add>
+			</mod>
+			 which</line>
+			<line>
+				<del rend="strikethrough">Like</del></line>
+				<line>
+					Over sepuchral wealth, a
+				</line>
 	</zone>
 </surface>
