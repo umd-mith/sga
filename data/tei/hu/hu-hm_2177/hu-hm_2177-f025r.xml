@@ -28,6 +28,24 @@
 <line rend="indent3">Down, Down</line>
 <line>With thy bright form beside thee</line>
 <line>Resist not the weakness-</line>
-<line><del rend="strikethrough">For</del> strength is in meekness</line>
+<line>
+	<mod>
+		<del rend="strikethrough">For</del>
+		<add place="superlinear">Such</add>
+	</mod>
+	 strength is in meekness</line>
+	 <line>
+		 <del rend="strikethrough">Though</del>
+		 <del rend="strikethrough">Thoug the graves rocky portal</del>
+	 </line>
+	 <line>
+		 <del rend="strikethrough">The Eternal the</del>
+	 </line>
+	 <line> The
+		 <del rend="strikethrough">serpent spel coiled</del>
+		 for thy alone
+	 </line>
+	 <line rend="indent3">Down, Down</line>
+
 	</zone>
 </surface>
