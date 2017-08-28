@@ -2,19 +2,47 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-f003v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="3v" mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f003v.jp2"/>
+	xml:id="hu-hm_2176-fb025vr" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="25r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb025r.jp2"/>
 
 	<zone type="main">
-		<line>
-			<mod>
-				<del rend="strikethrough">There</del>
-				<add place="sublinear">Where <del rend="strikethrough">these</del> these Depths are unveiled</add>
-			</mod>
-		</line>
-		<line rend="indent3">Down Down</line>
-		<line><del rend="strikethrough">Where</del></line>
-
-
+	<line>Leave many my latest born <del rend="strikethrough">my most beloved</del>
+	<add place="sublinear">
+		<del rend="strikethrough">my gar</del>
+	</add>
+</line>
+<line>The <del rend="strikethrough">image of the Power by</del> which is moved</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Reflecting</del>
+		<add place="superlinear">Which imaged</add>
+	</mod>
+	many a monstrous shape of error
+</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Like</del>
+	<add place="intralinear">As</add>
+</mod>
+<mod>
+	<del rend="strikethrough">the</del>
+	<add place="superlinear">a</add>
+</mod>
+calm
+<mod>
+	<del rend="strikethrough">lake</del>
+	<add place="superlinear">sea</add>
+</mod>
+the
+<mod>
+	<del rend="strikethrough">Heavens</del>
+	<add place="superlinear">sky,</add>
+</mod>
+reflecting
+<add place="sublinear">
+	<del rend="strikethrough">thee great Titan</del>
+	<add place="sublinear">Love, bright love</add>
+</add>
+</line> 
 	</zone>
 </surface>
