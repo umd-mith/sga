@@ -2,18 +2,15 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-f003v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="3v" mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f003v.jp2"/>
+	xml:id="hu-hm_2176-fb026v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="26v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb026v.jp2"/>
 
 	<zone type="main">
-		<line>
-			<mod>
-				<del rend="strikethrough">There</del>
-				<add place="sublinear">Where <del rend="strikethrough">these</del> these Depths are unveiled</add>
-			</mod>
-		</line>
-		<line rend="indent3">Down Down</line>
-		<line><del rend="strikethrough">Where</del></line>
+<line>Green &amp; azure wanderer</line>
+<line>Happy globe of land &amp; air</line>
+<line><del rend="strikethrough">A spirit</del></line>
+<line><del rend="strikethrough">Glide</del>A spirit is</line>
+
 
 
 	</zone>
