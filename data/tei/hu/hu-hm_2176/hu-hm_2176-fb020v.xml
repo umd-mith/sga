@@ -2,18 +2,37 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-f003v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="3v" mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f003v.jp2"/>
+	xml:id="hu-hm_2176-fb020v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="20v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb020v.jp2"/>
 
 	<zone type="main">
-		<line>
-			<mod>
-				<del rend="strikethrough">There</del>
-				<add place="sublinear">Where <del rend="strikethrough">these</del> these Depths are unveiled</add>
-			</mod>
-		</line>
-		<line rend="indent3">Down Down</line>
-		<line><del rend="strikethrough">Where</del></line>
+<line>And from beneath within,
+	<add place="superlinear">above</add>
+	around
+</line>
+<line>Filling thy void annihilation, Love</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Like sunlight fills</del>
+	<add place="sublinear">As sunlight on a prison which sudden earthquake rend</add>
+</mod>
+</line>
+<line>Burst in, like light on
+	<mod>
+		<del rend="strikethrough">prisons</del>
+		<add place="superlinear">caves</add>
+	</mod>
+	cloven
+</line>
+<line><del rend="strikethrough">Fills it in, as light</del> by the thunderball</line>
+<line>As <del rend="strikethrough">lightning fills</del> a
+<mod>
+	<del rend="strikethrough">caver</del>
+	<add place="sublinear"><del rend="strikethrough">prison</del></add>
+</mod>
+<del rend="strikethrough">cloven</del>
+</line>
+
 
 
 	</zone>
