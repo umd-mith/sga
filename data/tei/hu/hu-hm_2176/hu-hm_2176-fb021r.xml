@@ -45,7 +45,54 @@
 	<add place="sublinear">cloud &amp; snow &amp; fire</add>
 	 light &amp; snow &amp; stillness
  </line>
-
+ <line> My
+	 <mod>
+		 <del rend="strikethrough">mighty</del>
+		 <add place="superlinear">sea like</add>
+	 </mod>
+	 forests...
+	 <mod>
+		 <del rend="strikethrough">every blossom</del>
+		 <add place="sublinear">
+			 <del rend="strikethrough">and</del>
+		 </add>
+			 <add place="superlinear">every blade &amp; blossom</add>
+		 </mod>
+		 </line>
+		 <line>Of
+			 <mod>
+				 <del rend="strikethrough">life that feeds from my fond bosom</del>
+				 <add place="sublinear">That finds a grave &amp; cradle on my bosom</add>
+			 </mod>
+		 </line>
+		 <line><del rend="strikethrough">Should</del></line>
+		 <line>Were stamped
+			 <mod>
+				 <del rend="strikethrough">into a mire of lifeless</del>
+				 <add place="superlinear">by thy strong wrath into a</add>
+			 </mod>
+				 mire
+				 <add place="sublinear"><del rend="strikethrough">blank</del> &amp; lifeless</add>
+			 </line>
+			 <line>How artt thou sunk,
+				 <add place="superlinear">withdrawn,</add>
+				 <del rend="strikethrough">covered,</del>
+				 <add place="superlinear">covered,</add>
+				 &#8212; drunken up
+			 </line>
+			 <line>By <del rend="strikethrough">thirsty</del> Nothing, as the
+			 <mod>
+				 <del rend="strikethrough">half drained</del>
+				 <add place="sublinear">
+					 <del rend="strikethrough">unreplenished</del>
+				 </add>
+				 <add place="superlinear">brackish</add>
+			 </mod>
+			 cup
+		 </line>
+		 <line><del rend="strikethrough">A little drop</del> an desart tribe a little drop for all</line>
+		 <line>Drained by a <del rend="strikethrough">thirsty</del></line>
+		 <line>Drained by the desart wandering Band</line>
 
 	</zone>
 </surface>
