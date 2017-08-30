@@ -11,6 +11,30 @@
 		<add place="superlinear">the</add>
 		<del rend="strikethrough">steep</del>
 		Dawn with wings
+		<mod>
+			<del rend="strikethrough">azure &amp; white</del>
+			<add place="sublinear"><del rend="strikethrough">purple</del>
+		<add place="sublinear">
+		<del rend="strikethrough">obscure</del>
+	</add>
+</add>
+<add place="superlinear">shadowy</add>
+</mod>
+&amp; golden
+</line>
+<line> WHich over all his kind,
+	<mod>
+		<del rend="strikethrough">like</del>
+		<add place="superlinear">a</add>
+	</mod>
+		 the
+		 <mod>
+			 <del rend="strikethrough">great</del>
+			 <add place="superlinear">Sun's</add>
+		 </mod>
+		 Heaven
+	 </line>
+	 
 
 	</zone>
 </surface>
