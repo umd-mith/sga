@@ -2,18 +2,44 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-f003v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="3v" mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f003v.jp2"/>
+	xml:id="hu-hm_2176-fb027r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="27r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb027r.jp2"/>
 
 	<zone type="main">
-		<line>
-			<mod>
-				<del rend="strikethrough">There</del>
-				<add place="sublinear">Where <del rend="strikethrough">these</del> these Depths are unveiled</add>
-			</mod>
-		</line>
-		<line rend="indent3">Down Down</line>
-		<line><del rend="strikethrough">Where</del></line>
+<line><del rend="strikethrough">And his own heart is</del></line>
+<line><del rend="strikethrough">The earth</del> Man</line>
+<line><del rend="strikethrough">My sons are as</del> one
+<add place="superlinear">harmonious</add>
+soul of many a soul
+</line>
+<line><del rend="strikethrough">Subject to one</del></line>
+<line>Whose
+	<add place="superlinear">
+		<del rend="strikethrough">Conscious</del>
+	</add>
+	 Love is
+	 <mod>
+		 <del rend="strikethrough">their</del>
+		 <add place="superlinear">its</add>
+	 </mod>
+	 own law, &amp;
+ </line>
+ <line>
+	 <mod>
+		 <del rend="strikethrough">And all the forms of life</del>
+		 <add place="sublinear">
+			 <del rend="strikethrough">things flow to</del>
+		 </add>
+ <add place="superlinear">To which all things flow</add>
+ </mod>
+ all as Rivers to the sea
+ </line>
+ <line>
+	 <mod>
+		 <add place="superlinear">
+			 <del rend="strikethrough">Sweet</del>
+		 </add>
+		 
 
 
 	</zone>
