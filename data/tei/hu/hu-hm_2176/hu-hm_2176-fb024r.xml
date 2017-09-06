@@ -95,5 +95,18 @@ marble,
 	 </add>
  </add>
  </line>
+ <line>
+	 <add place="superlinear">Ruling</add>
+	 <del rend="strikethrough">Which builds</del>
+	 rules with mighty harmony, the throng
+ </line>
+ <line>Of
+	 <mod>
+		 <del rend="strikethrough">feeling &amp;</del>
+		 <add place="superlinear">thoughts</add>
+	 </mod>
+	 of forms, which else senseless &amp; shapeless were
+ </line>
+
 	</zone>
 </surface>
