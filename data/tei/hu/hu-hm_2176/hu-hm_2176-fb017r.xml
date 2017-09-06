@@ -6,6 +6,9 @@
 	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb017r.jp2"/>
 
 	<zone type="main">
+		<!--the following two lines are unused-->
+		<line><del rend="strikethrough">The solid heart of my glad universe</del></line>
+		<line>The caverns of my Pride's deep universe</line>
 	<line>Hark to the
 		<mod>
 			<del rend="strikethrough">awf</del>
@@ -49,6 +52,18 @@
 	</mod>
 </line>
 <line>And gaze upon themselves within the sea</line>
-
+<!--the following two lines are unused-->
+<line>Sooth<del rend="strikethrough">ing the eagle
+	<add place="superlinear">tyger</add>
+	joy, which <unclear>g</unclear></del>
+	<add place="sublinear">whose
+		<add place="sublinear">trampling fierce</add>
+	</add>
+</line>
+<line>Makes wounds which need thy balm
+	<add place="sublinear">
+		<del rend="strikethrough">balm</del>
+	</add>
+</line>
 	</zone>
 </surface>
