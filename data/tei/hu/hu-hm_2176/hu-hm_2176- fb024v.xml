@@ -26,12 +26,28 @@
 		<del rend="strikethrough">Binding</del>
 		<add place="intralinear">Compelling</add>
 	</mod>
-	 the elements with adamantine
+	 the elements with adaman
+	 <add place="sublinear">tine</add>
  <mod>
- <del rend="strikethrough">sway</del>
+ <add place="sublinear">
+	 <del rend="strikethrough">sway</del>
 <add place="superlinear">stress</add>
+</add>
 </mod>
-</line>	
+</line>
+<line>As the Sun rules even with a tyrants gaze</line>
+<line>The unquiet Republic of the maze</line>
+<line>Of
+	<add place="superlinear">world</add>
+	<del rend="strikethrough">everw wandering</del>
+	<add place="sublinear"><del rend="strikethrough">strug Planets</del>, struggling
+<add place="sublinear">whilst <del rend="strikethrough">woul</del> Heaven
+<add place="superlinear">keepless wilderness</add>
+<add place="sublinear">struggling to seek</add>
+</add>
+</add>
+</line>
+
 <line> Which over all his kind,
 	<mod>
 		<del rend="strikethrough">like</del>
