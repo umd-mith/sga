@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb015v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="15v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb015v.jp2"/>
+
+	<zone type="main">
+<line>
+	<delSpan spanTo="#pu15v"/>
+	Ye Hours, that speed or linger as ye
+		<mod>
+			<del rend="strikethrough">will</del>
+			<add place="superlinear">wist</add>
+		</mod>
+
+	</line>
+	<line>Chainless as winds,
+		<mod>
+			<del rend="strikethrough">rich as</del>
+			<add place="superlinear">bright as</add>
+		</mod>
+		illumined bees
+	</line>
+	<line>Which flee from flower to flower to seek their
+		<add place="sublinear"> fill</add>
+		<anchor xml:id="pu15v"/>
+	</line>
+		<line>Ye spirits who kept watch
+			<mod>
+				<del rend="strikethrough">within</del>
+				<add place="superlinear">besides</add>
+			</mod>
+			<del rend="strikethrough">that deep</del>
+		</line>
+		<line>
+			<del rend="strikethrough">The</del>
+			<add place="superlinear">Of human</add>
+			human heart, until its <del rend="strikethrough">bars</del> frozen
+			<mod>
+				<del rend="strikethrough">bars</del>
+				<add place="sublinear"><del rend="strikethrough">gates</del></add>
+				<add place="superlinear">prison</add>
+			</mod>
+		</line>
+			<line>Were</line>
+			<line>Who make
+				<del rend="strikethrough">thier</del> life, with the instinct of their sleep</line>
+	</zone>
+</surface>
