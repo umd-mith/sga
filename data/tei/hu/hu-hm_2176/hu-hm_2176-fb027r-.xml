@@ -35,12 +35,30 @@ soul of many a soul
  all as Rivers to the sea
  </line>
  <line>
-	 <mod>
-		 <add place="superlinear">
-			 <del rend="strikethrough">Sweet</del>
-		 </add>
-		 
-
+	Familiar
+	<add place="superlinear">
+		<del rend="strikethrough">Sweet</del>
+	</add>
+	<mod>
+		<del rend="strikethrough">things</del>
+		<add place="superlinear">acts</add>
+	</mod>
+	are beautiful thro love
+</line>
+<line>
+	<del rend="strikethrough">And toil, &amp; Thought</del> thro life's green grove
+</line>
+<line>Labour &amp; Pain, &amp; grief <del rend="strikethrough">with solemn</del></line>
+<line><del rend="strikethrough">Like beasts that once were wild</del></line>
+<line>
+	<mod>
+		<del rend="strikethrough">Wander like
+	<add place="superlinear"><unclear>as</unclear></add>
+	beasts made</del>
+	<add place="sublinear">Walk like tame beasts &#8212; none knew</add>
+</mod>
+	&#8212; how gentle they could be
+</line>
 
 	</zone>
 </surface>
