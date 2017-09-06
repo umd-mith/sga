@@ -2,19 +2,31 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-	xml:id="hu-hm_2177-f003v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="3v" mith:shelfmark="MS HM 2177">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f003v.jp2"/>
+	xml:id="hu-hm_2176-fb018r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="18r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb018r.jp2"/>
 
 	<zone type="main">
-		<line>
-			<mod>
-				<del rend="strikethrough">There</del>
-				<add place="sublinear">Where <del rend="strikethrough">these</del> these Depths are unveiled</add>
-			</mod>
-		</line>
-		<line rend="indent3">Down Down</line>
-		<line><del rend="strikethrough">Where</del></line>
-
-
+		<zone type="sketch">
+			<!-- sketch of tress at top of page-->
+		</zone>
+<line><del rend="strikethrough">I th</del>
+</line>
+<line>And I,
+	<mod>
+		<del rend="strikethrough">an</del>
+		<add place="superlinear">
+			<mod><del rend="strikethrough">like</del>
+			<add place="superlinear">as</add></mod>
+		</add>
+	</mod>
+	an
+</line>
+<line>
+	<del rend="strikethrough">Like a most</del> enamoured maiden</line>
+	<line>Whose weak
+		<add place="superlinear">brain</add>
+		is overladen</line>
+		<line>With the pleasure of her love</line>
+		<line>LManiac like around thee moving</line>		
 	</zone>
 </surface>
