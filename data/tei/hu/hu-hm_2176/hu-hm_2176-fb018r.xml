@@ -3,7 +3,7 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
 	xml:id="hu-hm_2176-fb018r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="18r" mith:shelfmark="MS HM 2176">
-	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb018r.jp2"/>
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb018r.jp2"/>
 
 	<zone type="main">
 		<zone type="sketch">
@@ -27,6 +27,6 @@
 		<add place="superlinear">brain</add>
 		is overladen</line>
 		<line>With the pleasure of her love</line>
-		<line>LManiac like around thee moving</line>		
+		<line>LManiac like around thee moving</line>
 	</zone>
 </surface>
