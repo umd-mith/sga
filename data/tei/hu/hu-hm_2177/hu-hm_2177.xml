@@ -27,7 +27,7 @@
                 <availability status="free">
                     <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
                         <p>CC0 1.0 Universal.</p>
-                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive 
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive
                             have waived all copyright and related or neighboring rights to this work.</p>
                     </licence>
                 </availability>
@@ -41,6 +41,72 @@
                         <idno type="HU">MS HM 2177</idno>
                     </msIdentifier>
                     <msContents>
+                      <msItem class="work">
+                        <bibl status="draft">
+                          <author>Percy Bysshe Shelley</author>
+                          <title>Prometheus Unbound</title>
+                        </bibl>
+                        <msItem class="#preface"
+                          xml:id="hu-hm_2177_prometheus_ubound_preface">
+                            <locusGrp>
+                              <locus target="#hm_2177_pu_preface_1
+                            #hm_2177_pu_preface_26v_2
+                            #hm_2177_pu_preface_26v_3
+                            #hm_2177_pu_preface_26v_4
+                            #hm_2177_pu_preface_26v_5
+                            #hm_2177_pu_preface_26v_6
+                            #hm_2177_pu_preface_26v_7
+                            #hm_2177_pu_preface_26v_8
+                            #hm_2177_pu_preface_26v_9
+                            #hm_2177_pu_preface_26v_10
+                            #hm_2177_pu_preface_27r_1
+                            #hm_2177_pu_preface_27r_2
+                            #hm_2177_pu_preface_27r_3
+                            #hm_2177_pu_preface_27r_4
+                            #hm_2177_pu_preface_27r_5
+                            #hm_2177_pu_preface_27r_6
+                            #hm_2177_pu_preface_27r_7
+                            #hm_2177_pu_preface_27r_8
+                            #hm_2177_pu_preface_27r_9
+                            #hm_2177_pu_preface_27r_10
+                            #hm_2177_pu_preface_27r_11
+                            #hm_2177_pu_preface_27r_12
+                            #hm_2177_pu_preface_27r_13
+                            #hm_2177_pu_preface_27r_14
+                            #hm_2177_pu_preface_27r_15
+                            #hm_2177_pu_preface_27v_1
+                            #hm_2177_pu_preface_27v_2
+                            #hm_2177_pu_preface_27v_3
+                            #hm_2177_pu_preface_27v_4
+                            #hm_2177_pu_preface_27v_5
+                            #hm_2177_pu_preface_27v_6
+                            #hm_2177_pu_preface_27v_7
+                            #hm_2177_pu_preface_27v_8
+                            #hm_2177_pu_preface_27v_9
+                            #hm_2177_pu_preface_27v_10
+                            #hm_2177_pu_preface_27v_11
+                            #hm_2177_pu_preface_27v_12
+                            #hm_2177_pu_preface_27v_13
+                            #hm_2177_pu_preface_27v_14
+                            #hm_2177_pu_preface_27v_15
+                            #hm_2177_pu_preface_27v_16
+                            #hm_2177_pu_preface_27v_17
+                            #hm_2177_pu_preface_27v_18
+                            #hm_2177_pu_preface_28r_1
+                            #hm_2177_pu_preface_28r_2
+                            #hm_2177_pu_preface_28r_3
+                            #hm_2177_pu_preface_28r_4
+                            #hm_2177_pu_preface_28r_5
+                            #hm_2177_pu_preface_28r_6
+                            #hm_2177_pu_preface_28r_7
+                            #hm_2177_pu_preface_28r_8
+                            #hm_2177_pu_preface_28r_9
+                            #hm_2177_pu_preface_28r_10
+                            #hm_2177_pu_preface_28r_11
+                            #hm_2177_pu_preface_28r_12
+                            #hm_2177_pu_preface_28r_13"                  
+                            />
+
                         <msItem class="#work">
                             <locusGrp>
                                 <locus target="hu-hm_2177-fb045v
@@ -55,7 +121,7 @@
                             <bibl status="draft">
 								<author>Percy Bysshe Shelley</author>
                                 <title>My lost William (To William Shelley)</title>
-							</bibl>                            
+							</bibl>
                         </msItem>
                     </msContents>
                     <physDesc>
