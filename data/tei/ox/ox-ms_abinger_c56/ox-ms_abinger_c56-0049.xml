@@ -44,7 +44,7 @@
       head</line>
     <line rend="indent2">"Because he knows a frightful</line>
     <line rend="right"><metamark>L</metamark>fiend</line><!--text is contained within an "L" bracket to indicate line runover-->
-    <line rend="indent2">"doth close behind him tread."<metamark>*</metamark></line>
+    <line rend="indent2">"doth close behind him tread."<metamark xml:id="c56-0049.02">*</metamark></line>
     <anchor xml:id="c56-0049.01"/>
     <line>Continueing thus, I came at lenght</line>
     <line><mod>
@@ -64,7 +64,7 @@
     <line>was the Swiss diligence; it stopped</line>
     <line>just where I was standing, and on</line>
   </zone>
-  <zone type="left_margin">
+  <zone type="left_margin" corresp="#c56-0049.02">
     <line><metamark>_______________</metamark></line>
     <milestone unit="tei:note" spanTo="#c56-0049.03"/>
       <line><metamark>*</metamark>Coleridge's</line>
