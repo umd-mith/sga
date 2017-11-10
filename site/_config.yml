@@ -1,8 +1,8 @@
 # Site settings
 title: Shelley-Godwin Archive
 email: info@shelleygodwinarchive.org
-description: > # The Shelley-Godwin Archive will provide the digitized manuscripts of Percy Bysshe Shelley, 
-  Mary Wollstonecraft Shelley, William Godwin, and Mary Wollstonecraft, bringing together online for the first 
+description: > # The Shelley-Godwin Archive will provide the digitized manuscripts of Percy Bysshe Shelley,
+  Mary Wollstonecraft Shelley, William Godwin, and Mary Wollstonecraft, bringing together online for the first
   time ever the widely dispersed handwritten legacy of this uniquely gifted family of writers.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://shelleygodwinarchive.org" # the base hostname & protocol for your site
@@ -33,7 +33,7 @@ navigation:
 include: ['_pages']
 
 # Excludes
-exclude: [components, node_modules]
+exclude: [components, node_modules, offline]
 
 kramdown:
   input: GFM

@@ -1,6 +1,6 @@
 # # Data Management
 # This file contains Backbone models and collections.
-# Also, supplies logic for populating models and collections 
+# Also, supplies logic for populating models and collections
 # when a JSONLD manifest comes all in one file.
 
 SGASharedCanvas.Data = SGASharedCanvas.Data or {}
@@ -19,25 +19,37 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       return full_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
     # We override sync, since the data to be fetched is not JSON
     sync : (method, model, options) ->
-      if method == 'read'
-        Backbone.ajax
-          url: @url()
-          method: 'GET'
-          dataType: 'xml'
-          success: (data) =>
-            @set
-              data : data.documentElement.textContent
-            @trigger "sync"
-          error: (e) -> 
-            throw new Error "Could not load text data."
+      # offline mode
+      if (window.mapping)
+        console.log('Offline mode: reading text file from mapping')
+        t = @get "target"
+        if t.endsWith('html')
+          mimetype = 'text/html'
+        else
+          mimetype = 'text/xml'
+        @set
+          data : new DOMParser().parseFromString(window.mapping[t], mimetype).documentElement.textContent
+        @trigger "sync"
       else
-        # Call the default sync method for other sync methods
-        Backbone.Model.prototype.sync.apply @, args...
+        if method == 'read'
+          Backbone.ajax
+            url: @url()
+            method: 'GET'
+            dataType: 'xml'
+            success: (data) =>
+              @set
+                data : data.documentElement.textContent
+              @trigger "sync"
+            error: (e) ->
+              throw new Error "Could not load text data."
+        else
+          # Call the default sync method for other sync methods
+          Backbone.Model.prototype.sync.apply @, args...
 
   # The following models are populated directly from the manifest
   # Eventually they will populated in a restful way.
 
-  # idAttribute is used to map JSONLD @id to Backbone id  
+  # idAttribute is used to map JSONLD @id to Backbone id
 
   class Sequence extends Backbone.Model
     idAttribute : "@id"
@@ -49,7 +61,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     idAttribute : "@id"
 
   class Zone extends Backbone.Model
-    idAttribute : "@id"  
+    idAttribute : "@id"
 
   class Annotation extends Backbone.Model
     idAttribute : "@id"
@@ -87,7 +99,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
   class ParsedAnnos extends Backbone.Collection
     model: ParsedAnno
 
-  class SearchAnnos extends Annotations    
+  class SearchAnnos extends Annotations
     fetch : (manifest, filter, query, service="http://localhost:5000/annotate?")->
       url = service + "f=" + filter + "&q=" + query
       Backbone.ajax
@@ -96,9 +108,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         contentType: 'application/json'
         processData: false
         dataType: 'json'
-        success: (data) => 
+        success: (data) =>
           importSearchResults data, manifest
-        error: (e) -> 
+        error: (e) ->
           throw new Error "Could not load search annotations"
 
 
@@ -109,7 +121,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     url : (u) ->
       # Manifests should always contain URIs to shelleygodwinarchive.org, make sure they do.
       u = u.replace(/^http:\/\/.*?(:\d+)?\//, "/")
-      
+
       return "http://shelleygodwinarchive.org" + u
 
     # Using initialize instead of defaults for nested collections
@@ -129,23 +141,29 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
     # We override sync, since we want to re-organize some of the JSON data
     sync : (method, model, options) ->
-      if method == 'read'
-        Backbone.ajax
-          url: @url()
-          type: 'GET'
-          contentType: 'application/json'
-          processData: false
-          dataType: 'json'
-          #beforeSend: (jqXHR) ->
-          #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
-          success: (data) => 
-            importManifest data, @
-            @trigger 'sync'
-          error: (e) -> 
-            throw new Error "Could not load the manifest"
+      # offline mode
+      if (window.manifest)
+        console.log('Offline mode: reading window.manifest')
+        importManifest window.manifest, @
+        @trigger 'sync'
       else
-        # Call the default sync method for other sync methods
-        Backbone.Model.prototype.sync.apply @, args...
+        if method == 'read'
+          Backbone.ajax
+            url: @url()
+            type: 'GET'
+            contentType: 'application/json'
+            processData: false
+            dataType: 'json'
+            #beforeSend: (jqXHR) ->
+            #  jqXHR.setRequestHeader 'Accept-Encoding', 'gzip,deflate'
+            success: (data) =>
+              importManifest data, @
+              @trigger 'sync'
+            error: (e) ->
+              throw new Error "Could not load the manifest"
+        else
+          # Call the default sync method for other sync methods
+          Backbone.Model.prototype.sync.apply @, args...
 
   class Manifests extends Backbone.Collection
     model: Manifest
@@ -156,7 +174,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     idAttribute : "@id"
 
   class CanvasesMeta extends Backbone.Collection
-    model: CanvasMeta  
+    model: CanvasMeta
 
   class CanvasData extends Backbone.Model
     idAttribute : "@id"
@@ -164,17 +182,17 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       @contents   = new Contents
       @images     = new Images
       @zones      = new Zones
-      @SGAannos   = new Annotations  
+      @SGAannos   = new Annotations
       @layerAnnos = new Layers
 
     # We override fetch, since we actually fetch and re-organize
     # data from the parent Manifest model
-    fetch : (manifest) ->    
+    fetch : (manifest) ->
       importCanvas @, manifest
 
   class CanvasesData extends Backbone.Collection
-    model: CanvasData   
-    # BackBone's reset() removes model silently. 
+    model: CanvasData
+    # BackBone's reset() removes model silently.
     # We want it to tell its models that they're going to die
     # (so that their views know that they need to go too)
     reset: (models=[], options={}) ->
@@ -186,7 +204,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
       @_reset()
       @add @models, _.extend({silent: true}, options)
-      if !options.silent 
+      if !options.silent
         @trigger 'reset', @, options
       @
 
@@ -214,7 +232,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     id_graph = {}
 
     for node in graph
-      id_graph[node["@id"]] = node if node["@id"]?              
+      id_graph[node["@id"]] = node if node["@id"]?
 
     # Store the full manifest for further processing at canvas level
     manifest.set
@@ -223,10 +241,10 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
     for id, node of id_graph
 
       # Organize nodes by type
-      if node["@type"]? 
+      if node["@type"]?
         types = node["@type"]
         types = [ types ] if !$.isArray types
-        
+
         if "sc:Manifest" in types
           manifest.set node
 
@@ -250,14 +268,14 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           manifest.canvasesMeta.add node
 
         else if "sc:ContentAnnotation" in types
-          manifest.resources.add 
+          manifest.resources.add
             "id" : node["@id"]
             "on" : id_graph[node["on"]]["full"]
-            "resource" : id_graph[node["resource"]]["full"] 
+            "resource" : id_graph[node["resource"]]["full"]
 
 
   importCanvas = (canvas, manifest) ->
-    # This method imports manifest level data and metadata   
+    # This method imports manifest level data and metadata
 
     extractSpatialConstraint = (model, id) ->
       return unless id?
@@ -277,7 +295,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           model.set
             beginOffset : parseInt constraint["beginOffset"]
         if constraint["endOffset"]?
-          model.set 
+          model.set
             endOffset : parseInt constraint["endOffset"]
       # TODO: handle other shape constraints (rectangles, ellipses)
       # TODO: handle music notation constraints
@@ -328,11 +346,11 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       # find content annotations right away. You'll need these before creating parsing other annos
       for id, node of graph
 
-        if node["@type"]? 
+        if node["@type"]?
           types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           target = node["on"]
-          body = node["resource"]          
+          body = node["resource"]
 
           # Get content annotations
           if "sc:ContentAnnotation" in types and graph[target]["full"] == canvas_id
@@ -343,7 +361,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             extractTextBody content, body
 
             # Adding triggers the view. Alternatively, we could have the view listen to change,
-            # but we trigger change too often by setting attributes gradually. 
+            # but we trigger change too often by setting attributes gradually.
             # We could store attributes in an object and set them all together.
             canvas.contents.add content
 
@@ -361,7 +379,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
       for id, node of graph
 
-        if node["@type"]? 
+        if node["@type"]?
           types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           target = node["on"]
@@ -369,25 +387,25 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
           # Get images
           if "oa:Annotation" in types and node["@id"] in manifest.get("images") and target == canvas_id
-            image = new Image            
+            image = new Image
             image.set graph[node["resource"]]
 
             # Adding triggers the view. Alternatively, we could have the view listen to change,
-            # but we trigger change too often by setting attributes gradually. 
+            # but we trigger change too often by setting attributes gradually.
             # We could store attributes in an object and set them all together.
             canvas.images.add image
 
           # Get everything else (including project-specific annotations!) for this canvas
           # Could this be moved into its own project-specific module at some point?
-          else 
+          else
             sgaTypes = (f.substr(4) for f in types when f.substr(0,4) == "sga:" and f.substr(f.length-10) == "Annotation")
             sources = []
-            if sgaTypes.length > 0              
+            if sgaTypes.length > 0
               canvas.contents.forEach (c,i) ->
                 s = c.get("source")
                 if s? and s not in sources
                   sources.push s
-              
+
             # filter annotations and store only those relevant to the current canvas
             # SGA
       	    if graph[target]?
@@ -396,7 +414,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
                   annotation = new Annotation
                   canvas.SGAannos.add annotation
                   extractTextTarget annotation, target
-                  annotation.set 
+                  annotation.set
                     "@id"   : node["@id"]
                     "@type" : node["@type"]
 
@@ -458,12 +476,11 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
         if not loaded
           s = new TextFile
           loadedSources.add s
-          s.set 
+          s.set
            target : source
           s.fetch()
 
-          s.once 'sync', ->
-
+          process = () ->
             text = s.get("data")
 
             # Split annotations according to their start/end offsets to avoid overlap
@@ -472,7 +489,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
             pushTextItem = (classes, css, contentAnno, start, end, options) ->
               titem = new ParsedAnno
-              titem.set 
+              titem.set
                 type: classes
                 css: css.join(" ")
                 text: text[start ... end]
@@ -483,8 +500,8 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               if options.indent? then titem.set {indent : options.indent}
               if options.align? then titem.set {align : options.align}
               if options.ext? then titem.set {ext : options.ext}
-              contentAnno.textItems.add titem                
-            
+              contentAnno.textItems.add titem
+
             processNode = (start, end) ->
               classes = []
               css = []
@@ -565,6 +582,10 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               else if "sga:SpaceAnnotation" in modInfo[id].get "@type"
                 makeEmptyLine pos, {"ext": modInfo[id].get("ext")}
             processNode last_pos, text.length
+          s.once 'sync', process
+          # offline mode needs manual triggering
+          if window.mapping
+            process()
 
       canvas.trigger 'fullsync'
 
@@ -575,17 +596,17 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
       id_graph = {}
 
       for node in graph["@graph"]
-        id_graph[node["@id"]] = node if node["@id"]?     
+        id_graph[node["@id"]] = node if node["@id"]?
 
       for id, node of id_graph
 
-        if node["@type"]? 
+        if node["@type"]?
           types = SGASharedCanvas.Utils.makeArray node["@type"]
 
           if "sga:SearchAnnotation" in types
             target = node["on"]
-            selector = id_graph[target]["selector"]            
-            
+            selector = id_graph[target]["selector"]
+
             resource = manifest.resources.find (res) ->
               res.get("resource") == id_graph[target]["full"]
 

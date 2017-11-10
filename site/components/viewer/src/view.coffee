@@ -8,24 +8,28 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   # MAIN APPLICATION VIEW
 	class SGASharedCanvas.Application extends Backbone.View
 
-    # This is the top-level piece of UI, 
+    # This is the top-level piece of UI,
     # so we bind it to an element already present in the HTML.
     el: '#main-content'
 
-    initialize: (config={}) ->     
+    initialize: (config={}) ->
 
       manifestUrl = config.manifest
       searchService = config.searchService
 
       # Instantiate manifests collection and view
       manifests = SGASharedCanvas.Data.Manifests
-      new ManifestsView 
+      new ManifestsView
         collection : manifests
         searchService : searchService
       # Add manifest from DOM. This triggers data collection and rendering.
       manifest = manifests.add
         url: manifestUrl
-      manifest.fetch()
+      if manifestUrl == "#local"
+        manifest.parse window.manifest
+        manifest.sync()
+      else
+        manifest.fetch()
 
       # Activate Routers
       Backbone.history.start()
@@ -38,7 +42,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @listenTo @collection, 'add', @addOne
 
     addOne: (model) ->
-      new ManifestView 
+      new ManifestView
         model: model
         searchService: @searchService
 
@@ -77,8 +81,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         # Finally fetch the data. This will cause the views to render.
         canvas.fetch @model
 
-        # Render canvas metadata          
-        new CanvasMetaView 
+        # Render canvas metadata
+        new CanvasMetaView
           el: "#SGACanvasMeta"
           model: @model.canvasesMeta.get canvasId
 
@@ -89,7 +93,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           @once "sync", cb
 
       # Set view properties
-      @variables = new SGASharedCanvas.Utils.AudibleProperties 
+      @variables = new SGASharedCanvas.Utils.AudibleProperties
         seqPage: 0
         seqMin: 1
         seqMax: 0
@@ -109,9 +113,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         @model.canvasesData.reset()
         # Also clear search results, if any.
         @model.searchResults.reset()
-        Backbone.trigger "viewer:searchResults", [] 
+        Backbone.trigger "viewer:searchResults", []
 
-        if paras? 
+        if paras?
           if paras.mode?
 
             filter = []
@@ -124,7 +128,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             @canvasesView.filter = filter
 
             @model.ready =>
-              fetchCanvas n              
+              fetchCanvas n
 
               if paras.mode == "rdg"
 
@@ -135,14 +139,22 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
                 # Make full URL to XML relative
                 html_url = layerAnnos.get("resource")
-                html_url = html_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
-
-                $.get html_url, ( data ) ->    
-                  d = $.parseHTML data
+                # offline mode
+                if window.mapping
+                  d = $.parseHTML window.mapping[html_url]
                   for e in d
                     if $(e).is('div')
                       $(e).addClass("readingText")
                       curCanvas.trigger "addLayer", "Text", e
+                else
+                  html_url = html_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
+
+                  $.get html_url, ( data ) ->
+                    d = $.parseHTML data
+                    for e in d
+                      if $(e).is('div')
+                        $(e).addClass("readingText")
+                        curCanvas.trigger "addLayer", "Text", e
 
               else if paras.mode == "xml"
 
@@ -155,10 +167,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 xml_url = layerAnnos.get("resource")
                 xml_url = xml_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
 
-                $.get xml_url, ( data ) ->    
+                $.get xml_url, ( data ) ->
                   surface = data.getElementsByTagName 'surface'
                   serializer = new XMLSerializer()
-                  txtdata = serializer.serializeToString surface[0] 
+                  txtdata = serializer.serializeToString surface[0]
                   txtdata = txtdata.replace /\&/g, '&amp;'
                   txtdata = txtdata.replace /%/g, '&#37;'
                   txtdata = txtdata.replace /</g, '&lt;'
@@ -169,7 +181,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                   prettyPrint()
 
           # When search results are requested through a Router, fetch the search data.
-          if paras.query?          
+          if paras.query?
             @model.searchResults.fetch @model, paras.filters, paras.query, options.searchService
 
             @listenToOnce @model.searchResults, 'sync', ->
@@ -186,8 +198,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 fetchCanvas n
                 Backbone.trigger "viewer:searchResults", searchResultsPositions
         else
-          # Make sure manifest is loaded        
-          @model.ready => 
+          # Make sure manifest is loaded
+          @model.ready =>
             fetchCanvas n
 
       @render()
@@ -201,9 +213,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         escaped = escaped.replace(':', '')
         noColon[escaped] = v
       $('#SGAManifestMeta').html @metaTemplate(noColon)
-      
+
       citation = {}
-        
+
       if noColon["scagentLabel"]?
         authorParts = noColon["scagentLabel"].split(" ")
         last = authorParts[authorParts.length-1]
@@ -222,15 +234,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       $('#cite-manifest').html @citationTemplate(citation)
 
     render: ->
-      # Manage UI components as subviews      
+      # Manage UI components as subviews
       syncVarsFor = (component) =>
 
         component.listenTo @variables, 'change', (p) ->
-          for k,v of @variables.variables 
+          for k,v of @variables.variables
             component.variables.set k, p[k]
 
       # Pager
-      pager = new SGASharedCanvas.Component.Pager 
+      pager = new SGASharedCanvas.Component.Pager
         el : '#sequence-nav'
         vars: @variables.variables
 
@@ -281,7 +293,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       $('#loading-progress').show()
       @listenToOnce c, 'sync', =>
         $('#loading-progress').hide()
-        new CanvasView 
+        new CanvasView
           model: c
           filter: @filter
 
@@ -294,7 +306,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     initialize: (options) ->
       @listenTo @model, 'remove', @remove
 
-      @render(options["filter"])         
+      @render(options["filter"])
 
     render: (filter) ->
       # Here we collect data-types expressed in HTML and
@@ -320,21 +332,21 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @$el.append tpl
       $("#mainSharedCanvas").append @$el
 
-      for area in areas        
+      for area in areas
         # First, determine how many Bootstrap columns each area takes
         col = parseInt(12 / areas.length)
         $(area.el).addClass("col-xs-"+col)
 
         # We use canvas data to render views for the areas.
         # Each area is an independent view on the canvas data.
-        new ViewerAreaView 
+        new ViewerAreaView
           model: @model
           el: area.el
           types: area.types.split(" ")
       @
 
   # Canvas Meta view
-  class CanvasMetaView extends Backbone.View    
+  class CanvasMetaView extends Backbone.View
 
     initialize: ->
       @template = _.template($('#canvasMeta-tpl').html())
@@ -348,12 +360,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Handle status metadata (at the moment not in manifest)
       noColon.trans = "green"
       noColon.meta = "green"
-      
+
       @$el.html @template(noColon)
 
       citation =
         "url" : document.URL
-        
+
       if noColon["sgashelfmarkLabel"]? and noColon["sgafolioLabel"]?
         citation["page"] = noColon["sgashelfmarkLabel"] + ", " + noColon["sgafolioLabel"]
 
@@ -364,7 +376,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   class AreaView extends Backbone.View
     initialize: (options) ->
       # Set view properties
-      @variables = new SGASharedCanvas.Utils.AudibleProperties 
+      @variables = new SGASharedCanvas.Utils.AudibleProperties
         height: 0
         width : 0
         x     : 0
@@ -378,9 +390,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           @variables.set k, v
 
       # Example of listeners
-      # @variables.on 
+      # @variables.on
       #   'change:width' : -> console.log 'w'
-      #   'change:height' : -> console.log 'h'   
+      #   'change:height' : -> console.log 'h'
 
   # ViewerArea View
   class ViewerAreaView extends AreaView
@@ -388,12 +400,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     initialize: (options) ->
       super
       # When rendering, we create sub-views for each type required
-      @types = options.types      
+      @types = options.types
 
       # Deal with layers
-      @listenTo @model, 'addLayer', (area, content) -> 
+      @listenTo @model, 'addLayer', (area, content) ->
         if area in @types
-          @addLayer(content)  
+          @addLayer(content)
 
       @render()
 
@@ -410,7 +422,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       canvasWidth = @model.get("width")
       canvasHeight = @model.get("height")
 
-      aspectRatio = gcd canvasWidth, canvasHeight      
+      aspectRatio = gcd canvasWidth, canvasHeight
 
       $(container).height(Math.floor(@$el.width() * (canvasWidth / aspectRatio) / (canvasHeight / aspectRatio)))
       $(container).css
@@ -424,9 +436,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       # This figures out the scale for our further calculations.
       resizer = =>
-        aspectRatio = gcd canvasWidth, canvasHeight 
+        aspectRatio = gcd canvasWidth, canvasHeight
         DivWidth = Math.floor(@$el.width()*20/20,10)
-        if canvasWidth? and canvasWidth > 0          
+        if canvasWidth? and canvasWidth > 0
           @variables.set 'scale', DivWidth / canvasWidth
         if canvasHeight? and canvasHeight > 0
           @$el.height(DivHeight = Math.floor(canvasHeight * @variables.get 'scale'))
@@ -460,7 +472,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @
 
     renderSub: (container) ->
-      # In each area, create sub-view for the content required 
+      # In each area, create sub-view for the content required
 
       addText = =>
         container.append new ContentsView(
@@ -476,17 +488,17 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         ).render().el
 
       for type in @types
-      # Accepted data-types "All", "Image", "Text". 
+      # Accepted data-types "All", "Image", "Text".
       # Eventually Audio, Video, NotatedMusic...
         switch type
-          when "All"              
+          when "All"
             addText()
             addImages()
           when "Image"
             addImages()
           when "Text"
             addText()
-  
+
     addLayer: (content) ->
       @$el.children().html(content)
       @$el.children().css("overflow", "auto")
@@ -503,9 +515,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       @listenTo @collection, 'add', @addOne
 
     addOne: (model) ->
-      @$el.append new ContentView( 
-        model: model 
-        vars: @variables 
+      @$el.append new ContentView(
+        model: model
+        vars: @variables
       ).render().el
 
     render: ->
@@ -568,7 +580,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Here we embed the text-based view.
       # Any text-based positioning will have to be handled by
       # the TextContent view.
-      #      
+      #
       new TextAnnotationsView
         collection: @model.textItems
         el: rootEl
@@ -597,7 +609,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       adjustFontSize = =>
         # fix font size
-        fs = parseInt(@$el.css('font-size'))         
+        fs = parseInt(@$el.css('font-size'))
         newfs = fs-1
         @$el.css('font-size', newfs + 'px')
         @variables.set 'fontSize', (fs-1) / @variables.get "scale"
@@ -606,9 +618,9 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         adj = newfs * 2.0
         @$el.css('line-height', adj + 'px')
 
-      @variables.on 'change:scrollWidth', (sw) =>       
-        if @$el.innerWidth() != 0        
-          adjustFontSize() while @$el.innerWidth() < @el.scrollWidth 
+      @variables.on 'change:scrollWidth', (sw) =>
+        if @$el.innerWidth() != 0
+          adjustFontSize() while @$el.innerWidth() < @el.scrollWidth
 
       Backbone.on 'viewer:resize', (options) =>
         if @variables.get('fontSize')?
@@ -655,7 +667,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
             if spacing > neededSpace
               neededSpace = spacing
-          
+
           if neededSpace >= 0
             if neededSpace + (myOffset.left - ourLeft) + accOffset + annoEl.outerWidth(false) > ourWidth
 
@@ -686,7 +698,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
                 neededSpace = -neededSpace
               else
-                prevSiblings.each (i, s) -> $(s).css('left', "0px")                      
+                prevSiblings.each (i, s) -> $(s).css('left', "0px")
                 neededSpace = 0
 
           if neededSpace > 0
@@ -709,7 +721,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       type = model.get "type"
       _getTextWidth = (container) ->
             container = $(container)
-            
+
             o = container.clone()
                   .css(
                     'position': 'absolute'
@@ -728,21 +740,21 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       switch
         when "sgaAdditionAnnotation" in type
 
-          # Parse additions first, as they might require an extra line          
+          # Parse additions first, as they might require an extra line
           if /vertical-align: super;/.test(model.get("css"))
             additionLine = if not @currentLineEl.prev().hasClass('above-line') \
                            then $("<div class='above-line'></div>")\
                            else @currentLineEl.prev()
 
-            textAnnoView = new TextAnnoView 
-              model: model 
+            textAnnoView = new TextAnnoView
+              model: model
             annoEl = $ textAnnoView.render()?.el
             annoEl.data "place", "above"
             annoEl.data "line", @currentLine
             additionLine.append(annoEl).insertBefore(@currentLineEl)
-            
+
             if annoEl.get(0)?
-              setPosition(textAnnoView, annoEl) 
+              setPosition(textAnnoView, annoEl)
               @lastRendering = annoEl
               if textAnnoView.model.attributes.text.replace(/\s+/, '') != ''
                 @lastRenderingNonEmpty = annoEl
@@ -755,25 +767,25 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
               if indent?
                 additionLine.css
                   'padding-left' : indent
-            else 
+            else
               additionLine = @currentLineEl.next()
 
-            textAnnoView = new TextAnnoView 
-              model: model 
+            textAnnoView = new TextAnnoView
+              model: model
             annoEl = $ textAnnoView.render()?.el
             annoEl.data "place", "below"
             annoEl.data "line", @currentLine
             additionLine.append(annoEl).insertAfter(@currentLineEl)
 
             if annoEl.get(0)?
-              setPosition(textAnnoView, annoEl) 
+              setPosition(textAnnoView, annoEl)
               @lastRendering = annoEl
               if textAnnoView.model.attributes.text.replace(/\s+/, '') != ''
                 @lastRenderingNonEmpty = annoEl
 
           else
-            textAnnoView = new TextAnnoView 
-              model: model 
+            textAnnoView = new TextAnnoView
+              model: model
             annoEl = $ textAnnoView.render()?.el
             annoEl.data "line", @currentLine
             @lastRendering = annoEl
@@ -785,10 +797,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         or "sgaLineAnnotation" in type \
         or "sgaDeletionAnnotation" in type \
         or "sgaSearchAnnotation" in type
-          textAnnoView = new TextAnnoView 
-            model: model 
+          textAnnoView = new TextAnnoView
+            model: model
           annoEl = $ textAnnoView.render()?.el
-          annoEl.data "line", @currentLine          
+          annoEl.data "line", @currentLine
           @currentLineEl.append annoEl
           if annoEl.get(0)?
             @lastRendering = annoEl
@@ -799,7 +811,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           for br in [1..ext+1]
             # Find the first line that is not an above insertion
             l = @currentLineEl.prev('div:not(.above-line)')
-            if l.get(0)?           
+            if l.get(0)?
               l.append("<br/>")
             else
               @$el.prepend("<br/>")
@@ -808,7 +820,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
           # Before creating a new line container, add other classes on the current one.
           # For example, alignment and indentation are stored on the line break annotation
-          # and must be processed now. 
+          # and must be processed now.
 
           # store padding info to pass it on
           padding = 0
@@ -832,7 +844,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             @currentLineEl.data
                  'indent': model.get("indent")
 
-            # Add indentation to interlinear additions, if present   
+            # Add indentation to interlinear additions, if present
             if next1.hasClass('below-line')
               next1.data
                   'align_addition': 'with_above'
@@ -848,13 +860,13 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
           # Update currentLine count
           @currentLine += 1
-          
+
       if @variables.get('scrollWidth') != @el.scrollWidth
         @variables.set('scrollWidth', @el.scrollWidth)
 
       # Adjust indentation and alignment to width of longest line so far.
       lines = @$el.find('.sgaLineAnnotation')
-      arr = lines.map(-> 
+      arr = lines.map(->
           return $(this).text().length
       ).get()
       longest_line = lines[arr.indexOf(Math.max.apply(Math,arr))]
@@ -880,7 +892,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                   'padding-right' : '0em'
               padding = (w - curTextLength) + "em"
             else if al == "center"
-              padding = ((w / 2) - (curTextLength/2)) + "em"            
+              padding = ((w / 2) - (curTextLength/2)) + "em"
             l.css
               'padding-left': padding
           else if ind?
@@ -897,12 +909,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             padding = l.next().css('padding-left')
             l.css
               'padding-left': padding
-          else 
+          else
             padding = l.prev().css('padding-left')
             l.css
               'padding-left': padding
         )
-        
+
 
       # Update scrollbar styling if plugin exists
       if @$el.parent().perfectScrollbar?
@@ -911,17 +923,17 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
   class TextAnnoView extends AreaView
     tagName: "span"
 
-    render: -> 
-      @$el.css 
+    render: ->
+      @$el.css
         'display': 'inline'
       @$el.text @model.get "text"
       @$el.addClass @model.get("type").join(" ")
 
       icss = @model.get "css"
-      if icss? and not /^\s*$/.test(icss) 
+      if icss? and not /^\s*$/.test(icss)
         cur_style = @$el.attr("style")
         @$el.attr("style", cur_style + " " + icss)
-      
+
       content = @model.get("text").replace(/\s+/g, " ")
       @
 
@@ -939,15 +951,15 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
     addOne: (model) ->
       # This viewer supports JP2 if a DJATOKA service is provided
       if model.get("format") == "image/jp2" and model.get("service")?
-        new ImageDjatokaView( 
+        new ImageDjatokaView(
           el: @$el
-          model: model 
-          vars: @variables 
+          model: model
+          vars: @variables
         ).render()
       else
-        @$el.append new ImageView( 
-          model: model 
-          vars: @variables 
+        @$el.append new ImageView(
+          model: model
+          vars: @variables
         ).render().el
         # Set the image container to relative to properly float img elements within.
         @$el.css
@@ -1002,14 +1014,14 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       syncVarsFor = (component) =>
 
         component.listenTo @variables, 'change', (p) ->
-          for k,v of @variables.variables 
+          for k,v of @variables.variables
             component.variables.set k, p[k]
 
       # Image Controls
-      imageControls = new SGASharedCanvas.Component.ImageControls 
+      imageControls = new SGASharedCanvas.Component.ImageControls
         el : '#img-controls'
 
-      @listenTo imageControls.variables, 'change:zoom', (z) ->        
+      @listenTo imageControls.variables, 'change:zoom', (z) ->
         if @dragon?
           switch z
             when 0 then @dragon.viewport.goHome()
@@ -1017,7 +1029,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             when -1 then @zoomOut()
             else @dragon.viewport.goHome()
 
-      @listenTo imageControls.variables, 'change:rotation', (r) ->        
+      @listenTo imageControls.variables, 'change:rotation', (r) ->
         if @dragon?
           switch r
             when 1 then @rotateRight()
@@ -1063,7 +1075,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     render: ->
       if OpenSeadragon? and OpenSeadragon.IIIFTileSource?
-
         width = if @model.get('width')? then @model.get('width')
         height = if @model.get('height')? then @model.get('height')
         divScale = @variables.get("scale")
@@ -1086,65 +1097,89 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         # ex: http://192.168.1.219/ox/ms_abinger_c56/ms_abinger_c56-0001
 
         scaleFactors = [ 1, 2, 4, 8, 16]
-
-        # Check that URL is reacheable, otherwise fall back to our static tiles.
-        if !SGASharedCanvas.imageTrouble
-          $.ajax
-            url: full_url,
-            type:     'GET',
-            complete: (xhr) ->
-              if xhr.status == 200
-                scaleFactors.push 32
-                if img.includes('ms_abinger_c')
-                  service += "frankenstein/"
-                else
-                  service += "other/"
-              else 
-                SGASharedCanvas.imageTrouble = true
-                full_url = static_fallback_full_url         
-          
-              settings =
-                "@context": "http://iiif.io/api/image/2/context.json",
-                "@id": full_url,
-                "height": height,
-                "width": width,
-                "profile": "http://iiif.io/api/image/2/level1.json",
-                "protocol": "http://iiif.io/api/image",
-                "tiles": [
-                  "scaleFactors": scaleFactors,
-                  "width": 256
-                ]
-
-              # create the OpenSeadragon Viewer with the TileSource
-              @dragon = OpenSeadragon
-                id: 'osd-container'
-                minZoomLevel:       1
-                defaultZoomLevel:   1
-                tileSources: [settings]
-                animationTime: 0
-                showNavigationControl: false
-
-        else
-          settings =
-            "@context": "http://iiif.io/api/image/2/context.json",
-            "@id": static_fallback_full_url,
-            "height": height,
-            "width": width,
-            "profile": "http://iiif.io/api/image/2/level1.json",
-            "protocol": "http://iiif.io/api/image",
-            "tiles": [
-              "scaleFactors": scaleFactors,
-              "width": 256
-            ]
-
-          # create the OpenSeadragon Viewer with the TileSource
+        # Offline mode (embedded)
+        if window.mapping
           @dragon = OpenSeadragon
             id: 'osd-container'
-            minZoomLevel:       1
-            defaultZoomLevel:   1
-            tileSources: [settings]
+            tileSources:
+              type: 'image'
+              url: window.mapping[id]
+              crossOriginPolicy: 'Anonymous'
             animationTime: 0
+            minZoomLevel: 1
+            defaultZoomLevel: 1
             showNavigationControl: false
+        # Offline mode (local)
+        else if full_url.startsWith('./')
+          @dragon = OpenSeadragon
+            id: 'osd-container'
+            tileSources:
+              type: 'image'
+              url: full_url
+              crossOriginPolicy: 'Anonymous'
+            animationTime: 0
+            minZoomLevel: 1
+            defaultZoomLevel: 1
+            showNavigationControl: false
+        else
+          # Check that URL is reacheable, otherwise fall back to our static tiles.
+          if !SGASharedCanvas.imageTrouble
+            $.ajax
+              url: full_url,
+              type:     'GET',
+              complete: (xhr) ->
+                if xhr.status == 200
+                  scaleFactors.push 32
+                  if img.includes('ms_abinger_c')
+                    service += "frankenstein/"
+                  else
+                    service += "other/"
+                else
+                  SGASharedCanvas.imageTrouble = true
+                  full_url = static_fallback_full_url
+
+                settings =
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": full_url,
+                  "height": height,
+                  "width": width,
+                  "profile": "http://iiif.io/api/image/2/level1.json",
+                  "protocol": "http://iiif.io/api/image",
+                  "tiles": [
+                    "scaleFactors": scaleFactors,
+                    "width": 256
+                  ]
+
+                # create the OpenSeadragon Viewer with the TileSource
+                @dragon = OpenSeadragon
+                  id: 'osd-container'
+                  minZoomLevel:       1
+                  defaultZoomLevel:   1
+                  tileSources: [settings]
+                  animationTime: 0
+                  showNavigationControl: false
+
+          else
+            settings =
+              "@context": "http://iiif.io/api/image/2/context.json",
+              "@id": static_fallback_full_url,
+              "height": height,
+              "width": width,
+              "profile": "http://iiif.io/api/image/2/level1.json",
+              "protocol": "http://iiif.io/api/image",
+              "tiles": [
+                "scaleFactors": scaleFactors,
+                "width": 256
+              ]
+
+            # create the OpenSeadragon Viewer with the TileSource
+            @dragon = OpenSeadragon
+              id: 'osd-container'
+              minZoomLevel:       1
+              defaultZoomLevel:   1
+              tileSources: [settings]
+              animationTime: 0
+              showNavigationControl: false
 
       else
         throw new Error "Could not load OpenSeadragon to render JP2 image."

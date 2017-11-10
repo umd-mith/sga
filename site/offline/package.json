@@ -1,0 +1,18 @@
+{
+  "name": "offline",
+  "version": "0.0.1",
+  "description": "Scripts for generating self contained data for S-GA offline",
+  "main": "offline.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raff Viglianti",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "archiver": "^2.1.0",
+    "async": "^2.6.0",
+    "ncp": "^2.0.0",
+    "request": "^2.83.0",
+    "xmldom": "^0.1.27"
+  }
+}
