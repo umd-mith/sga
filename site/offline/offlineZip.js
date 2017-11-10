@@ -108,6 +108,9 @@ if (fs.existsSync(manifestPath)) {
         let imgName = part.resource.split('/').splice(-1)[0].split('.jp2')[0]+'.jpg'
         part.resource = 'images/'+imgName
       }
+      if (part.resource.endsWith('.xml')) {
+        part.resource = 'tei/' + part.resource.split('/').splice(-1)[0]
+      }
     }
   })
 

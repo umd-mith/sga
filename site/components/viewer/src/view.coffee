@@ -165,20 +165,30 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
                 # Make full URL to XML relative
                 xml_url = layerAnnos.get("resource")
-                xml_url = xml_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
-
-                $.get xml_url, ( data ) ->
-                  surface = data.getElementsByTagName 'surface'
-                  serializer = new XMLSerializer()
-                  txtdata = serializer.serializeToString surface[0]
+                if window.mapping
+                  txtdata = window.mapping[xml_url]
                   txtdata = txtdata.replace /\&/g, '&amp;'
                   txtdata = txtdata.replace /%/g, '&#37;'
                   txtdata = txtdata.replace /</g, '&lt;'
                   txtdata = txtdata.replace />/g, '&gt;'
-
                   xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
                   curCanvas.trigger "addLayer", "Text", xml
                   prettyPrint()
+                else
+                  xml_url = xml_url.replace(/^http:\/\/.*?(:\d+)?\//, "/")
+                  callback = ( data ) ->
+                    surface = data.getElementsByTagName 'surface'
+                    serializer = new XMLSerializer()
+                    txtdata = serializer.serializeToString surface[0]
+                    txtdata = txtdata.replace /\&/g, '&amp;'
+                    txtdata = txtdata.replace /%/g, '&#37;'
+                    txtdata = txtdata.replace /</g, '&lt;'
+                    txtdata = txtdata.replace />/g, '&gt;'
+
+                    xml = "<pre class='prettyprint'><code class='language-xml'>"+txtdata+"</code></pre>"
+                    curCanvas.trigger "addLayer", "Text", xml
+                    prettyPrint()
+                  $.get xml_url, callback, 'xml'
 
           # When search results are requested through a Router, fetch the search data.
           if paras.query?
