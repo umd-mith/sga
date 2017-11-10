@@ -12,11 +12,11 @@
     "grunt-cli": "~0.1.13",
     "jquery": "^2.1.4",
     "jquery-ui-bundle": "~1.11.4",
-    "less": "~2.5.1",
+    "less": "2.7.3",
     "modernizr": "^3.0.0-alpha.4",
     "napa": "^1.2.0",
     "npm-build-tools": "~2.1.1",
-    "openseadragon": "git://github.com/openseadragon/openseadragon.git#v2.1.0",
+    "openseadragon": "git://github.com/openseadragon/openseadragon.git#v2.3.1",
     "underscore": "~1.8.3"
   },
   "scripts": {
