@@ -2,9 +2,8 @@
 layout: component
 extra_css:
   - /css/SGAviewer.css
---- 
+---
 <script type="text/javascript" src="/js/openseadragon.min.js"></script> 
-<script type="text/javascript" src="/js/djtilesource.js"></script>
 <div id="content">
   <div id="content-main" class="container-fluid clearfix">
     <div id="main-content">
@@ -45,7 +44,7 @@ extra_css:
                             </div>
                           </div>
                           <!-- /view-controls -->
-                          
+
                           <div class="pull-left" id="search-form-block">
                               <div class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Search" id="searchbox" />
@@ -56,17 +55,17 @@ extra_css:
                               </div>
                           </div>
                           <!-- /search-form-block -->
-                          
+
                           <div class="btn-toolbar pull-right" id="sequence-nav">
                             <div class="btn-group" id="pager-controls"><a class="btn btn-sm" id="first-page"><i class="fa fa-step-backward"></i></a><a class="btn btn-sm" id="prev-page"><i class="fa fa-chevron-left" ></i></a><a class="btn btn-sm" id="next-page"><i class="fa fa-chevron-right"></i></a><a class="btn btn-sm" id="last-page"><i class="fa fa-step-forward"></i></a></div>
                           </div>
-                          <!-- /sequence-nav --> 
-                          
+                          <!-- /sequence-nav -->
+
                           {% if page.limit_view != "none" %}
                           <div class="pull-left" id="limit-view-controls">
                             <div class="control-group">
                               <div class="control-label">Limit View:</div>
-                              {% if page.limit_view == "work" %}                              
+                              {% if page.limit_view == "work" %}
                               <label class="radio-inline">
                                 <input type="radio" name="work-view" value="work-{{page.limit_class}}" id="hand-view_1" checked="checked" />
                                 Work only</label>
@@ -74,7 +73,7 @@ extra_css:
                                 <input type="radio" name="work-view" value="default" id="hand-view_0" />
                                 All text</label>
                               {% endif %}
-                              
+
                               {% if page.limit_view == "hands" %}
                               <label class="radio-inline">
                                 <input type="radio" name="hand-view" value="default" id="hand-view_0" checked="checked" />
@@ -87,7 +86,7 @@ extra_css:
                                 Percy Shelley</label>
                               {% endif %} </div>
                           </div>
-                          <!--/hand-view-controls--> 
+                          <!--/hand-view-controls-->
                           {% endif %} </div>
                         <!-- /well -->
                         <div id="collapseBar" class="collapse meta-data-filter">
@@ -115,9 +114,9 @@ extra_css:
                             	</div>
                                 </div>
                           </div>
-                          <!-- /well--> 
+                          <!-- /well-->
                         </div>
-                        <!-- /collapseBar --> 
+                        <!-- /collapseBar -->
                     </div>
                   </fieldset>
                   <!-- /detail-view-controls control-group -->
@@ -126,7 +125,7 @@ extra_css:
             </div>
           </div>
           <!-- /detail-view-tools -->
-          
+
           <div class="detail-view-results row">
             <div class="shadow-top"></div>
             <div class="col-sm-12">
@@ -138,7 +137,7 @@ extra_css:
             </div>
           </div>
           <!-- /detail-view-results -->
-          
+
           <div class="container">
             <div class="detail-view-meta row">
               <div class="col-sm-12">
@@ -153,7 +152,7 @@ extra_css:
                 </div>
               </div>
             </div>
-            <!-- /detail-view-meta --> 
+            <!-- /detail-view-meta -->
           </div>
         </div>
     </div>
@@ -167,15 +166,15 @@ extra_css:
       <div class="sharedcanvas" data-types="Text"></div>
       <div id="ModeLayers"></div>
     </div>
-  </script> 
+  </script>
 <script type="text/template" id="manifestMeta-tpl">
     <ul class="meta-data-group controls col-md-3 col-sm-6">
       <li class="meta-data-item">
-        <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span><%=scagentLabel%></span></li>      
+        <label class="meta-label" id="meta-workAuthor">Author(s)&nbsp;</label><span><%=scagentLabel%></span></li>
       <li class="meta-data-item">
         <label class="meta-label" id="meta-workDate">Date Written&nbsp;</label><span><%=scdateLabel%></span></li>
       <li class="meta-data-item">
-        <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>   
+        <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>
     </ul>
     <ul class="meta-data-group controls col-md-3 col-sm-6">
       <li class="meta-data-item">
@@ -183,7 +182,7 @@ extra_css:
         <li class="meta-data-item">
         <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span><%=attribution%></span></li>
     </ul>
-  </script> 
+  </script>
 <script type="text/template" id="canvasMeta-tpl">
     <ul class="meta-data-group controls col-md-3 col-sm-6">
       <li class="meta-data-item">
@@ -208,19 +207,19 @@ extra_css:
           <span class="badge-red"><i class="fa fa-circle <% if (meta=='red') { %>active<%}%>"></i></span>
           <span class="badge-yellow"><i class="fa fa-circle <% if (meta=='yellow') { %>active<%}%>"></i></span>
           <span class="badge-green"><i class="fa fa-circle <% if (meta=='green') { %>active<%}%>"></i></span></div>
-      </div>             
+      </div>
     </div>
-  </script> 
+  </script>
 <script type="text/template" id="citation-tpl">
     <%=author%> "<%=title%>", in <em>The Shelley-Godwin Archive</em>,
-  </script> 
+  </script>
 <script type="text/template" id="citation_canvas-tpl">
     <%=page%>. Retrieved from <%=url%>
-  </script> 
-<script type="text/javascript" src="/js/viewer_deps.js"></script> 
-<script type="text/javascript" src="/js/SGAviewer.js"></script> 
+  </script>
+<script type="text/javascript" src="/js/viewer_deps.js"></script>
+<script type="text/javascript" src="/js/SGAviewer.js"></script>
 <script type="text/javascript">
-  (function ($) { 
+  (function ($) {
   'use strict';
 
     var manifestURL = $("#SGASharedCanvasViewer").data("manifest");
@@ -228,6 +227,6 @@ extra_css:
     var sc = new SGASharedCanvas.Application({"manifest":manifestURL, "searchService":"{{site.searchservice}}annotate?"});
 
   })(jQuery);
-</script> 
+</script>
 
 {% include ga.html %}
