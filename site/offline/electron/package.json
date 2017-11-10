@@ -1,0 +1,54 @@
+{
+  "name": "sga-offline",
+  "author": "Raff Viglianti <rviglian@umd.edu>",
+  "version": "1.0.0",
+  "description": "Shelley Godwin Archive Offline",
+  "main": "main.js",
+  "repository": "https://github.com/umd-mith/sga",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-builder": "^19.45.4"
+  },
+  "dependencies": {},
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "shelleygodwinarchive",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS"
+    }
+  }
+
+}
