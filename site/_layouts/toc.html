@@ -2,7 +2,7 @@
 layout: component
 ---
 <div id="content">
-  <div id="content-main" class="container clearfix"> 
+  <div id="content-main" class="container clearfix">
     <div id="main-content" class="row">
       <h1 class="title col-md-12" id="page-title">{{page.title}}</h1>
 		<div class="content">
@@ -15,7 +15,7 @@ layout: component
   <div class="panel-group" id="accordion">
     <div class="panel panel-default group-wk">
       <div class="panel-heading">
-        <h3 class="panel-title">          
+        <h3 class="panel-title">
           <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#<%=id%>">
             <%=title%> (<%=state%>)
           </a>
@@ -23,11 +23,11 @@ layout: component
         <div class="meta-wk">
         <% if (physical !== undefined) { %>
           <a href="<%=physical%>"><i class="fa fa-book"></i> <strong>Read in physical order</strong></a> (<%=shelfmarks.join(", ")%>) &nbsp;
-        <%} %>        
-      </div>    
+        <%} %>
+      </div>
       <div id="<%=id%>" class="panel-collapse collapse">
         <div class="panel-body">
-          
+
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@ layout: component
       </div>
       <div id="<%=id%>" class="panel-collapse collapse">
         <div class="row">
-          
+
         </div>
       </div>
     </div>
@@ -57,13 +57,13 @@ layout: component
 </script>
 
 <script type="text/template" id="canvas-template">
-  <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-4">          
-    <a href="<%=scUrl%>"><img class="img-thumbnail" src="<%=imgUrl%>" onerror="this.src='https://placeholdit.imgix.net/~text?txtsize=30&txt=Image+temporarily+unavailable&w=170&h=215&txttrack=0';"/></a>
+  <div class="view col-lg-2 col-md-3 col-sm-4 col-xs-4">
+    <a href="<%=scUrl%>"><img class="img-thumbnail" src="<%=imgUrl%>" height="<%=height%>" onerror="this.src='https://placeholdit.imgix.net/~text?txtsize=30&txt=Image+temporarily+unavailable&w=170&h=215&txttrack=0';"/></a>
     <div class="mask">
       <h6 class="pg-n"><%=label%></h6>
         <p class="pg-s"><i class="fa fa-circle <%=status.t%>" title="Transcription Status"></i><i class="fa fa-circle <%=status.m%>" title="Metadata Status"></i></p>
-    </div>    
-  </div>  
+    </div>
+  </div>
 </script>
 <script>
 (function($){

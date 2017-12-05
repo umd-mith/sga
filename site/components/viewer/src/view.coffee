@@ -369,6 +369,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         noColon[k.replace(':', '')] = v
       # Handle status metadata (at the moment not in manifest)
       noColon.trans = "green"
+      if @model.get("sga:shelfmarkLabel").startsWith("Forster")
+        noColon.trans = "red"
       noColon.meta = "green"
 
       @$el.html @template(noColon)

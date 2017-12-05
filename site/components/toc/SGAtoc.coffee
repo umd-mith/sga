@@ -164,7 +164,7 @@ window.SGAranges = {}
       c = new SGAranges.Canvas()
       @clv.collection.add c
 
-      # This might need to change when/if we'll have more than one sequence 
+      # This might need to change when/if we'll have more than one sequence
       # We only need to address the "canonical" sequence here, which we're assuming
       # is in first position.
       c_pos = if pos? then pos else $.inArray(canvas, metadata.canvases) + 1
@@ -177,9 +177,14 @@ window.SGAranges = {}
 
       img_url = ""
 
-      _process = (img_url) => 
+      _process = (img_url) =>
         c_id = canv["@id"]
         canvas_safe_id = c_id.replace(/[:\/\.]/g, "_")
+
+        # TODO: this is an ugly patch!
+        transcription = "grn"
+        if i_fname.startsWith("forster_ms")
+          transcription = "red"
 
         c.set
           "id"       : canvas_safe_id
@@ -187,7 +192,7 @@ window.SGAranges = {}
           "position" : c_pos
           "scUrl"    : sc_url + "#/p" + c_pos
           "imgUrl"   : img_url
-          "status"   : {t: "grn", m: "grn"} 
+          "status"   : {t: transcription, m: "grn"}
 
       for img_id, index in metadata.images
         i = id_graph[img_id]
@@ -238,27 +243,27 @@ window.SGAranges = {}
             else
               img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
               _process(img_url)
-          else 
+          else
             img_url = i_url
             _process(img_url)
-      
+
 
   SGAranges.processMetadata = (data, url, attributes, el, template) =>
       flat = attributes.get("flat")
       id_graph = {}
       for node in data["@graph"]
-        id_graph[node["@id"]] = node if node["@id"]? 
+        id_graph[node["@id"]] = node if node["@id"]?
       metadata = id_graph["http://shelleygodwinarchive.org"+url]
       service_url = metadata["sc:service"]["@id"]
       work_safe_id = service_url.substr(service_url.indexOf("sc/")+3, service_url.length).replace(/[:\/\.]/g, "_")
-      shelfmarks = []      
+      shelfmarks = []
       contained_works = metadata["sga:containedWorks"]
       contained_works = [ contained_works ] if !$.isArray contained_works
       for canvas_id in metadata.canvases
           canvas = id_graph[canvas_id]
           if canvas["sga:shelfmarkLabel"] not in shelfmarks
             shelfmarks.push canvas["sga:shelfmarkLabel"]
-      tpl_data = 
+      tpl_data =
         "id"     : work_safe_id
         "title"  : metadata.label
         "state" : SGAranges.Utils.toTitleCase(metadata["sga:stateLabel"])
@@ -268,7 +273,7 @@ window.SGAranges = {}
         "linear" : attributes.get("linear")
 
       el.html template(tpl_data)
-    
+
       @rl = new SGAranges.RangeList()
       @rlv = new SGAranges.RangeListView collection: @rl
 
@@ -284,14 +289,14 @@ window.SGAranges = {}
 
           r.set
             "id"    : range_safe_id
-            "label" : struct.label              
+            "label" : struct.label
 
       if !flat then @rlv.render '#' + work_safe_id + ' .panel-body'
 
       if flat
 
         @cl = new SGAranges.CanvasList()
-        @clv = new SGAranges.CanvasListView collection: @cl  
+        @clv = new SGAranges.CanvasListView collection: @cl
 
         for canvas_id in metadata.canvases
           canvas = id_graph[canvas_id]
@@ -305,7 +310,7 @@ window.SGAranges = {}
           struct = id_graph[struct_id]
 
           @cl = new SGAranges.CanvasList()
-          @clv = new SGAranges.CanvasListView collection: @cl  
+          @clv = new SGAranges.CanvasListView collection: @cl
 
           range_safe_id = struct_id.replace(/[:\/\.]/g, "_")
 
@@ -325,9 +330,9 @@ window.SGAranges = {}
     works_data = []
 
     for w in works
-      data = 
+      data =
         id : w.title
-        url: "#{base_url}#{w.title}/Manifest-index.jsonld" 
+        url: "#{base_url}#{w.title}/Manifest-index.jsonld"
         flat: w.flat
         physical: w.physical
         linear: w.linear
