@@ -280,11 +280,6 @@ _______________________________________________________________________*/
 /* 15. Works / Manuscripts Pages
 _______________________________________________________________________*/
 #ranges_wrapper { border-top: 1px dashed #C7C7C7; margin-top: 30px; padding-top: 30px; }
-/*#ranges_wrapper .panel-body .view { overflow: hidden; }
-#ranges_wrapper .panel-body .view.col-lg-2 { height: 100px; }
-#ranges_wrapper .panel-body .view.col-md-3 { height: 225px; }
-#ranges_wrapper .panel-body .view.col-sm-4 { height: 190px; }
-#ranges_wrapper .panel-body .view.col-xs-4 { height: 140px; }*/
 .view { margin-bottom: 15px; -webkit-backface-visibility: hidden; }
 h3.group-title { font-size: 24px; line-height: 24px; }
 h4.group-title { margin: 0 0 5px 0; }
@@ -356,6 +351,9 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 h2 i.fa-paragraph { font-size: 70%; }
 p.video {
 	text-align:center;
+}
+.table-clear>tbody>tr>td {
+  border-top: none;
 }
 
 /* 17. Responsive

@@ -177,8 +177,10 @@ extra_css:
         <label class="meta-label" id="meta-workTitle">Title/Literary Work&nbsp;</label><span><%=dctitle%></span></li>
     </ul>
     <ul class="meta-data-group controls col-md-3 col-sm-6">
+      <% if (sgastateLabel !== 'none') { %>
       <li class="meta-data-item">
         <label class="meta-label" id="meta-workState">State&nbsp;</label><span><%=sgastateLabel%></span></li>
+      <% } %>
         <li class="meta-data-item">
         <label class="meta-label" id="meta-workInstitution">Institution&nbsp;</label><span><%=attribution%></span></li>
     </ul>

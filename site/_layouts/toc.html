@@ -17,7 +17,7 @@ layout: component
       <div class="panel-heading">
         <h3 class="panel-title">
           <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#<%=id%>">
-            <%=title%> (<%=state%>)
+            <%=title%> <% if (state !== 'None') { %> (<%=state%>) <% } %>
           </a>
         </h3>
         <div class="meta-wk">
