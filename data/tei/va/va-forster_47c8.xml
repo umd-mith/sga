@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:id="va-forster_47c8">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Political Justice, Vol III, V&amp;A Forster 47.C.8</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editor</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2012-2017</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>University of Maryland</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <settlement>London</settlement>
+                    <repository>Victoria &amp; Albert Museum</repository>
+                    <idno type="va">Forster 47.C.8</idno>
+                </msIdentifier>
+                <msContents>
+                    <msItem class="#work">
+                        <bibl>
+                            <author>William Godwin</author>
+                            <title>Political Justice Vol III</title>
+                            <date notBefore="1791-09" notAfter="1793-02">September 1791 - February 1793</date>
+                        </bibl>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <handDesc>
+                        <handNote scope="major" xml:id="wg"><persName>William Godwin</persName></handNote>
+                    </handDesc>
+                </physDesc>
+            </msDesc>
+        </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+    <sourceDoc>
+        <!--<xi:include href="va-forster_47c8/va-forster_47c8-001.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-002.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-003.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-004.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-005.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-006.xml" />-->
+        <xi:include href="va-forster_47c8/va-forster_47c8-007.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-008.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-009.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-010.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-011.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-012.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-013.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-014.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-015.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-016.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-017.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-018.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-019.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-020.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-021.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-022.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-023.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-024.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-025.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-026.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-027.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-028.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-029.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-030.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-031.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-032.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-033.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-034.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-035.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-036.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-037.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-038.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-039.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-040.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-041.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-042.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-043.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-044.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-045.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-046.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-047.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-048.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-049.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-050.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-051.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-052.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-053.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-054.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-055.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-056.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-057.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-058.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-059.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-060.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-061.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-062.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-063.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-064.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-065.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-066.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-067.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-068.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-069.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-070.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-071.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-072.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-073.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-074.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-075.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-076.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-077.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-078.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-079.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-080.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-081.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-082.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-083.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-084.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-085.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-086.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-087.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-088.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-089.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-090.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-091.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-092.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-093.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-094.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-095.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-096.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-097.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-098.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-099.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-100.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-101.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-102.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-103.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-104.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-105.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-106.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-107.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-108.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-109.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-110.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-111.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-112.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-113.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-114.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-115.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-116.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-117.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-118.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-119.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-120.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-121.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-122.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-123.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-124.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-125.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-126.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-127.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-128.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-129.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-130.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-131.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-132.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-133.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-134.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-135.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-136.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-137.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-138.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-139.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-140.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-141.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-142.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-143.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-144.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-145.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-146.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-147.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-148.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-149.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-150.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-151.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-152.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-153.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-154.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-155.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-156.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-157.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-158.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-159.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-160.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-161.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-162.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-163.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-164.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-165.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-166.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-167.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-168.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-169.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-170.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-171.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-172.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-173.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-174.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-175.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-176.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-177.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-178.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-179.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-180.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-181.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-182.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-183.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-184.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-185.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-186.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-187.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-188.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-189.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-190.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-191.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-192.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-193.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-194.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-195.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-196.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-197.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-198.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-199.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-200.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-201.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-202.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-203.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-204.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-205.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-206.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-207.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-208.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-209.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-210.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-211.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-212.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-213.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-214.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-215.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-216.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-217.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-218.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-219.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-220.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-221.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-222.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-223.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-224.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-225.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-226.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-227.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-228.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-229.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-230.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-231.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-232.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-233.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-234.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-235.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-236.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-237.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-238.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-239.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-240.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-241.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-242.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-243.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-244.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-245.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-246.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-247.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-248.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-249.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-250.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-251.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-252.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-253.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-254.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-255.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-256.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-257.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-258.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-259.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-260.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-261.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-262.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-263.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-264.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-265.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-266.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-267.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-268.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-269.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-270.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-271.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-272.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-273.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-274.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-275.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-276.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-277.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-278.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-279.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-280.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-281.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-282.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-283.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-284.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-285.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-286.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-287.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-288.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-289.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-290.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-291.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-292.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-293.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-294.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-295.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-296.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-297.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-298.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-299.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-300.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-301.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-302.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-303.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-304.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-305.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-306.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-307.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-308.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-309.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-310.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-311.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-312.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-313.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-314.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-315.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-316.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-317.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-318.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-319.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-320.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-321.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-322.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-323.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-324.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-325.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-326.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-327.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-328.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-329.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-330.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-331.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-332.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-333.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-334.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-335.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-336.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-337.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-338.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-339.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-340.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-341.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-342.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-343.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-343.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-343.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-344.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-345.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-346.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-347.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-348.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-349.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-350.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-351.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-352.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-353.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-354.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-355.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-356.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-357.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-358.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-359.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-360.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-361.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-362.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-363.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-364.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-365.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-366.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-367.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-368.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-369.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-370.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-371.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-372.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-373.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-374.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-375.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-376.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-377.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-378.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-379.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-380.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-381.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-382.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-383.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-384.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-385.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-386.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-387.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-388.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-389.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-390.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-391.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-392.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-393.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-394.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-395.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-396.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-397.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-398.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-399.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-400.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-401.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-402.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-403.xml" />
+        <!--<xi:include href="va-forster_47c8/va-forster_47c8-404.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-405.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-406.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-407.xml" />
+        <xi:include href="va-forster_47c8/va-forster_47c8-408.xml" />-->
+    </sourceDoc>
+</TEI>
