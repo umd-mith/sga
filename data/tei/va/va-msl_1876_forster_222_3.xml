@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:id="va-msl_1876_forster_222_3">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Political Justice, Vol III, V&amp;A MSL/1876/Forster/222/3</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editor</resp>
+                    <name xml:id="RV">Raffaele Viglianti</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2012-2017</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>University of Maryland</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+            <msDesc>
+                <msIdentifier>
+                    <settlement>London</settlement>
+                    <repository>Victoria &amp; Albert Museum</repository>
+                    <idno type="va">MSL/1876/Forster/222/3</idno>
+                </msIdentifier>
+                <msContents>
+                    <msItem class="#work">
+                        <bibl>
+                            <author>William Godwin</author>
+                            <title>Political Justice Vol III</title>
+                            <date notBefore="1791-09-15" notAfter="1793-01-29">15 September 1791 - 29 January 1793</date>
+                        </bibl>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <handDesc>
+                        <handNote scope="major" xml:id="wg"><persName>William Godwin</persName></handNote>
+                    </handDesc>
+                </physDesc>
+            </msDesc>
+        </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+    <sourceDoc>
+        <!--<xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-001.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-002.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-003.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-004.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-005.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-006.xml" />-->
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-007.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-008.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-009.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-010.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-011.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-012.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-013.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-014.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-015.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-016.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-017.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-018.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-019.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-020.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-021.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-022.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-023.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-024.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-025.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-026.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-027.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-028.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-029.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-030.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-031.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-032.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-033.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-034.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-035.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-036.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-037.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-038.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-039.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-040.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-041.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-042.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-043.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-044.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-045.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-046.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-047.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-048.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-049.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-050.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-051.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-052.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-053.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-054.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-055.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-056.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-057.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-058.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-059.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-060.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-061.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-062.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-063.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-064.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-065.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-066.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-067.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-068.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-069.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-070.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-071.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-072.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-073.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-074.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-075.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-076.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-077.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-078.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-079.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-080.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-081.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-082.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-083.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-084.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-085.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-086.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-087.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-088.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-089.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-090.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-091.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-092.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-093.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-094.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-095.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-096.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-097.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-098.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-099.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-100.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-101.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-102.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-103.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-104.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-105.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-106.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-107.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-108.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-109.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-110.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-111.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-112.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-113.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-114.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-115.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-116.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-117.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-118.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-119.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-120.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-121.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-122.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-123.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-124.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-125.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-126.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-127.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-128.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-129.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-130.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-131.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-132.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-133.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-134.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-135.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-136.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-137.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-138.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-139.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-140.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-141.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-142.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-143.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-144.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-145.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-146.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-147.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-148.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-149.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-150.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-151.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-152.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-153.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-154.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-155.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-156.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-157.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-158.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-159.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-160.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-161.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-162.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-163.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-164.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-165.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-166.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-167.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-168.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-169.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-170.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-171.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-172.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-173.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-174.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-175.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-176.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-177.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-178.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-179.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-180.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-181.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-182.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-183.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-184.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-185.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-186.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-187.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-188.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-189.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-190.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-191.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-192.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-193.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-194.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-195.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-196.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-197.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-198.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-199.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-200.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-201.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-202.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-203.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-204.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-205.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-206.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-207.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-208.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-209.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-210.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-211.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-212.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-213.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-214.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-215.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-216.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-217.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-218.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-219.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-220.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-221.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-222.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-223.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-224.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-225.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-226.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-227.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-228.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-229.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-230.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-231.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-232.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-233.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-234.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-235.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-236.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-237.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-238.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-239.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-240.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-241.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-242.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-243.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-244.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-245.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-246.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-247.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-248.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-249.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-250.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-251.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-252.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-253.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-254.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-255.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-256.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-257.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-258.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-259.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-260.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-261.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-262.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-263.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-264.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-265.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-266.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-267.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-268.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-269.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-270.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-271.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-272.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-273.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-274.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-275.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-276.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-277.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-278.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-279.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-280.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-281.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-282.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-283.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-284.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-285.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-286.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-287.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-288.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-289.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-290.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-291.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-292.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-293.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-294.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-295.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-296.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-297.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-298.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-299.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-300.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-301.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-302.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-303.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-304.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-305.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-306.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-307.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-308.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-309.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-310.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-311.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-312.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-313.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-314.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-315.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-316.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-317.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-318.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-319.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-320.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-321.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-322.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-323.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-324.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-325.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-326.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-327.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-328.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-329.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-330.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-331.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-332.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-333.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-334.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-335.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-336.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-337.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-338.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-339.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-340.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-341.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-342.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-343.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-343a.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-344.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-345.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-346.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-347.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-348.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-349.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-350.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-351.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-352.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-353.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-354.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-355.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-356.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-357.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-358.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-359.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-360.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-361.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-362.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-363.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-364.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-365.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-366.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-367.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-368.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-369.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-370.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-371.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-372.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-373.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-374.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-375.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-376.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-377.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-378.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-379.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-380.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-381.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-382.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-383.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-384.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-385.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-386.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-387.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-388.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-389.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-390.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-391.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-392.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-393.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-394.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-395.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-396.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-397.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-398.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-399.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-400.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-401.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-402.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-403.xml" />
+        <!--<xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-404.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-405.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-406.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-407.xml" />
+        <xi:include href="va-msl_1876_forster_222_3/va-msl_1876_forster_222_3-408.xml" />-->
+    </sourceDoc>
+</TEI>
