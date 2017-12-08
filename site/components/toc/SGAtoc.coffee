@@ -183,7 +183,7 @@ window.SGAranges = {}
 
         # TODO: this is an ugly patch!
         transcription = "grn"
-        if i_fname.startsWith("forster_ms")
+        if i_fname.includes("forster")
           transcription = "red"
 
         c.set
