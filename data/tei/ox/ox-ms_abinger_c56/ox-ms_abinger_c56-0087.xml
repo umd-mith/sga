@@ -36,8 +36,8 @@
         <del rend="strikethrough">was so</del>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear" hand="#pbs">has been <del rend="strikethrough">such</del> so</add>
-      </mod> confused <add place="sublinear"><metamark function="displacement" xml:id="c56-0087.05"
-          >^</metamark></add> but she</line>
+      </mod> confused <add place="sublinear"><metamark function="displacement"
+          >^</metamark></add><anchor xml:id="c56-0087.05"/> but she</line>
     <line>"will tried today and you will then hear</line>
     <line>"all?"</line>
     <milestone unit="tei:p"/>

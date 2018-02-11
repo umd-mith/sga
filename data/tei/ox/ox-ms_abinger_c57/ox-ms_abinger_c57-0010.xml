@@ -6,7 +6,7 @@
   mith:shelfmark="MS. Abinger c. 57" mith:folio="5v" partOf="ox-frankenstein_notebook_b.xml#ox-frankenstein_volume_ii">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0010.jp2"/>
   <zone type="pagination" rend="bordered"><line>9</line></zone>
-  
+
   <zone type="main">
     <line rend="center"><milestone unit="tei:head" spanTo="#c57-0010.02"/>Chap. 2<anchor xml:id="c57-0010.02"/></line>
     <milestone unit="tei:p"/>
@@ -39,8 +39,8 @@
     <line>in but now <del rend="strikethrough">with stones and wood</del> I cover</line>
     <line>ed every crevice <add corresp="#c57-0010.01" place="superlinear">with stones &#x26;
         wood</add> by which I might be</line>
-    <line>discovered <add place="sublinear"><metamark function="displacement" xml:id="c57-0010.01"
-          >^</metamark></add> yet in such a manner</line>
+    <line>discovered <add place="sublinear"><metamark function="displacement"
+          >^</metamark></add><anchor xml:id="c57-0010.01"/> yet in such a manner</line>
     <line>that I could move the<mod>
         <del rend="overwritten">n</del>
         <add place="intralinear">m</add>

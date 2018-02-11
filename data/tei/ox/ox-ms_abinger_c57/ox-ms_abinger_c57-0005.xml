@@ -28,8 +28,9 @@
     <line>had been left by some wandering beg</line>
     <line>gars and was over come with delight<mod>
         <del rend="overwritten">.</del>
-        <add place="intralinear"><metamark function="displacement" xml:id="c57-0005.02"
+        <add place="intralinear"><metamark function="displacement"
           >X</metamark></add>
+        <anchor xml:id="c57-0005.02"/>
       </mod></line>
     <line>In my joy I thrust my hand into the</line>
     <line>live embers but quickly drew it away <mod spanTo="#c57-0005.04"/><add place="superlinear"
@@ -95,7 +96,7 @@
   <zone type="left_margin" corresp="#c57.0005.05">
     <line><add>of </add></line>
   </zone>
-  
+
   <zone type="left_margin" corresp="#c57-0005.06">
     <line><add>inflamed.</add></line>
   </zone>

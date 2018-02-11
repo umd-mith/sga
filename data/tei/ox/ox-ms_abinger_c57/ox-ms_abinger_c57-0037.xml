@@ -26,8 +26,9 @@
                             >prom</unclear></del><del rend="strikethrough">it fr</del></add>
             </mod> I learned <mod>
                 <add place="superlinear">from <del rend="strikethrough">it</del></add>
-                <add place="sublinear"><metamark function="displacement" xml:id="c57-0037.02"
+                <add place="sublinear"><metamark function="displacement"
                         >^</metamark></add>
+                <anchor xml:id="c57-0037.02"/>
             </mod> to admire</line>
         <line>their virtues &amp; to deprecate the vices of mankind.</line>
         <line><del rend="strikethrough">But crimes were distant</del>
@@ -105,7 +106,8 @@
             <add place="superlinear">of</add> these treasures</line>
         <line><mod>
                 <del rend="strikethrough">which</del>
-                <add><metamark function="displacement" xml:id="c57-0037.08">X</metamark></add>
+                <add><metamark function="displacement">X</metamark></add>
+                <anchor xml:id="c57-0037.08"/>
             </mod> I could <del rend="strikethrough">now</del> continually study</line>
         <line>and <mod>
                 <del rend="strikethrough">occupy</del>

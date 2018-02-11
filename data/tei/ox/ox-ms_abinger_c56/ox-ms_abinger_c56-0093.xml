@@ -48,8 +48,8 @@
         <add place="superlinear" hand="#pbs">but</add>
       </mod> she looked</line>
     <line>very <del rend="strikethrough">stang</del> strangely and only returned a</line>
-    <line>confused <add place="sublinear"><metamark function="displacement" xml:id="c56-0093.04"
-          >^</metamark></add> answer<del rend="strikethrough">e</del>. <mod>
+    <line>confused <add place="sublinear"><metamark function="displacement"
+          >^</metamark></add><anchor xml:id="c56-0093.04"/> answer<del rend="strikethrough">e</del>. <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <del rend="strikethrough">S</del>
         <add place="superlinear">She</add>

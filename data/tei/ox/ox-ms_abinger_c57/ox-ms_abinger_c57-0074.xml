@@ -9,7 +9,7 @@
   <zone type="pagination" rend="bordered">
     <line>98</line>
   </zone>
-  
+
   <zone type="main">
     <line rend="center"><milestone unit="tei:head" spanTo="#c57-0074.06"/>Chap. 10<hi rend="underline">th</hi><anchor xml:id="c57-0074.06"/></line>
     <line>Day after day, week after week passed <add place="superlinear">away</add> on</line>
@@ -22,8 +22,8 @@
       </mod> overcome my repugnance <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear" hand="#pbs">to the task</add>
-      </mod>. <add place="intralinear"><metamark function="displacement" xml:id="c57-0074.01"><hi
-            rend="sup">X</hi>1</metamark></add></line>
+      </mod>. <add place="intralinear"><metamark function="displacement"><hi
+            rend="sup">X</hi>1</metamark></add><anchor xml:id="c57-0074.01"/></line>
     <line>My health <del rend="strikethrough">also</del> which had hitherto declined</line>
     <line>was now much restored, &amp; my spirits when</line>
     <line>unchecked by the memory of my unhappy</line>
