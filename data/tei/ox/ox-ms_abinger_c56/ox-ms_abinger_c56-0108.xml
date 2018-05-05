@@ -6,19 +6,18 @@
   mith:shelfmark="MS. Abinger c. 56" mith:folio="51v" partOf="#ox-frankenstein_volume_i">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0108.jp2"/>
   <zone type="pagination" rend="bordered"><line>138</line></zone>
- 
+
 
   <zone type="main">
     <line rend="indent3"><milestone unit="tei:head" spanTo="#c56-0108.08"/>Chap. 13<hi rend="underline"><hi rend="sup">th</hi></hi><anchor xml:id="c56-0108.08"/></line>
     <line rend="indent1">Nothing is more painful <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
-        <add place="superlinear" hand="#pbs">than</add>
+        <add place="superlinear" hand="#pbs">than</add><anchor xml:id="c56-0108.02"/>
       </mod> when the</line>
     <line>mind has been worked up by a <add place="intralinear">quick</add></line>
     <line><del rend="strikethrough">S</del> succession of events, <mod spanTo="#c56-0108.05"
         /><delSpan spanTo="#c56-0108.01" rend="strikethrough"/>for a dead calm</line>
-    <line>of inaction and certainty to<anchor xml:id="c56-0108.01"/><anchor xml:id="c56-0108.02"
-        /><anchor xml:id="c56-0108.05"/> follow<add place="intralinear" hand="#pbs">s</add>
+    <line>of inaction and certainty to<anchor xml:id="c56-0108.01"/><anchor xml:id="c56-0108.05"/> follow<add place="intralinear" hand="#pbs">s</add>
       <mod>
         <del rend="strikethrough">which</del>
         <add place="superlinear" hand="#pbs">and</add>
