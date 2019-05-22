@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0014" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="7r">
+    <zone type="library"><line>7</line></zone>
+    <zone type="main">
+        <line>for the frost has been of long continuance</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I am in a <del rend="strikethrough">Mathilda</del> strange state of mind.</line>
+        <line>I am alone – quite alone – in the world – the blight</line>
+        <line>of misfortune has passed over me and withered me;</line>
+        <line>I know that I am about to die and <del rend="strikethrough">yet</del> I feel</line>
+        <line>happy – joyous. – . I feel my pulse; its beats fast:</line>
+        <line>I place my thin hand on my cheek; it burns: there</line>
+        <line>is a slight, quick spirit within me which is now</line>
+        <line>emitting its last sparks. I shall never see the snows</line>
+        <line>of a nother winter – <add place="superlinear">Chapter </add>I <add place="superlinear"
+                >I</add> do believe that I shall</line>
+        <line><del rend="strikethrough">v</del> never
+            again feel the vivifying warmth of</line>
+        <line>another summer sun; and it is in this per-</line>
+        <line>suasion that I begin to write my tragic history.</line>
+        <line>Perhaps a history such as mine had better</line>
+        <line>die with me, but a<del rend="strikethrough">n</del>
+            <add place="sublinear"><metamark function="insert">^</metamark></add><add
+                place="sublinear"><metamark function="insert">^</metamark></add><add
+                place="superlinear">feeling</add>
+            <add place="superlinear">that</add> I cannot</line>
+        <line>define leads me on and I am too weak both in</line>
+        <line>body and mind to resist <del rend="strikethrough">any</del> the slightest
+            impulse.</line>
+        <line>While life was strong within me I thought indeed</line>
+        <line>that there was a sacred horror in my tale that</line>
+        <line>rendered it unfit for utterance, and now about</line>
+        <line>to die I pollute its mystic terrors. It is as the</line>
+        <line>wood of the Eumenides none but the dying may</line>
+        <line>enter; and Oedipus is about to die.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">What am I writing? – I must collect my thoughts.</line>
+        <line>I do not know that any will peruse these pages</line>
+        <line>except you, my friend, who will receive them at my</line>
+        <line>death. I do not address them to you alone because it will</line>
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0013" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="6v">
+
+<zone type="main">
+    <milestone unit="tei:head" spanTo="#d33-0013.07"/>
+    
+<line rend="center"><hi rend="underline">Mathilda</hi></line>
+
+<line rend="center"><hi rend="underline">Chap. I</hi></line>
+    <anchor xml:id="d33-0013.07"/>
+    
+    <milestone unit="tei:p"/>
+<line>Florence. Nov 9th 1819</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent1">It is only four o’clock; but it is winter</line>
+<line>and the sun has already set: there are no</line>
+<line>clouds in the clear, frosty sky to reflect its</line>
+<line>slant beams, but the air itself is tinged with a</line>
+<line>slight roseate colour which is again reflected on</line>
+<line>the snow that covers the ground. I live in</line>
+<line>a lone cottage on <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">a</add>solitary, wide heath: no</line>
+<line>voice of life reaches me. I see the desolate plain</line>
+<line>covered with white, save a few black patches </line>
+<line>that the noonday sun has made at the top</line>
+<line>of those sharp pointed hillocks <mod><del rend="strikethrough">on</del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">from</add></mod> which</line>
+<line>the snow, sliding as it fell, lay thinner</line>
+<line>than on the plain ground: a few birds</line>
+<line>are pecking at the hard ice that covers the pools –</line>
+          
+    </zone>
+</surface>
+            
