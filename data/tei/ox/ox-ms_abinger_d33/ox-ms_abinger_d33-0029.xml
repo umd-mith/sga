@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0029" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="16v">
+    <zone type="pagination"><line>18</line></zone>
+    
+    <zone type="main">
+        <line>the uneasiness I have unavoidably given</line>
+        <line>you: but while in that unhappy island,</line>
+        <line>where every <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">thing</add> breathes her spirit whom</line>
+        <line>I have lost for ever, a spell held me.</line>
+        <line>It is broken: I have quitted England for</line>
+        <line>many years, perhaps for ever. But to</line>
+        <line>convince you that <del rend="strikethrough">I</del> selfish feeling does</line>
+        <line>not entirely engross me I shall remain in</line>
+        <line>this town untill you have made by letter</line>
+        <line>every arrangement <del rend="strikethrough">with</del> <del rend="strikethrough">me</del> that you</line>
+        <line>judge necessary. When I leave this place</line>
+        <line>do not expect to hear from me: I must</line>
+        <line>break all ties that at present exist.</line>
+        <line>I shall become a wanderer, a misera</line>
+        <line>ble out cast – alone! alone!" – In</line>
+        <line>another part of the letter he men</line>
+        <line>tioned me – "As for that unhappy</line>
+        <line>little being whom I could not see, and</line>
+        <line>hardly dare mention, I leave her</line>
+        <line>under your protection. Take care of her</line>
+        <line>and cherish her: one day I may claim</line>
+        <line>her at your hands; but futurity is dark,</line>
+        <line>make the present happy to her."</line>
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">My father remained three months</line>
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0018" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="10r">
+    <zone type="pagination"><line>7</line></zone>
+    <zone type="library"><line>10</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I do not say that if his own desires</line>
+        <line>had been put in competition with those </line>
+        <line>of others that he would have displayed</line>
+        <line>undue selfishness, but this trial was</line>
+        <line>never made. He was nurtured in prospe</line>
+        <line>rity and attended by all its advantages;</line>
+        <line>everyone loved him and wished to gra-</line>
+        <line>tify him. He was ever employed in</line>
+        <line>promoting the <del rend="strikethrough">h</del> pleasures of his compa-</line>
+        <line>nions – <del rend="strikethrough">th</del> but their pleasures were his;</line>
+        <line>and if he bestowed more attention upon</line>
+        <line>the feelings of others than is usual with</line>
+        <line>schoolboys it was because his social</line>
+        <line>temper could never enjoy itself if every</line>
+        <line>brow was not as free from care as his</line>
+        <line>own. <del rend="strikethrough">While at</del></line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">While at school, emulation and</line>
+        <line>his own natural abilities made him</line>
+        <line>hold a conspicuous rank in the forms</line>
+        <line>among his equals; At <del rend="strikethrough">colled</del> college</line>
+        <line>he discarded books; he believed that he</line>
+        <line>had other lessons to learn than those</line>
+    </zone>
+</surface>

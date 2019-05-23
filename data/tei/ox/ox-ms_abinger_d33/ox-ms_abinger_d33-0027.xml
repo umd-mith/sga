@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0027" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="15v">
+    <zone type="pagination"><line>16</line></zone>
+    
+    <zone type="main">
+        <line>all human beings seem<del rend="strikethrough">e</del> destined to encounter,</line>
+        <line>to the very topmost pinacle of happiness:</line>
+        <line>Around him was sunshine; and clouds <add place="superlinear">X</add> <del rend="strikethrough">hid</del></line>
+        <line><del rend="strikethrough">all below</del>. From this dizzy point he</line>
+        <line>was dashed at once as he unawares con-</line>
+        <line>-gratulated himself on his felicity. Fifteen</line>
+        <line>months after their marriage I was born,</line>
+        <line>and my mother died a few days after my <del rend="strikethrough">h</del></line>
+        <line>birth.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">A sister of my father was with him</line>
+        <line>at this period. She was nearly fifteen years</line>
+        <line>older than he, and was the offspring of a</line>
+        <line>former marriage of his father. When <mod><del rend="strikethrough">this</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod></line>
+        <line>latter died this sister was taken by her</line>
+        <line>maternal relations: they had seldom seen</line>
+        <line>one another, and were quite unlike in</line>
+        <line>disposition. This aunt, to whose care I was</line>
+        <line>afterwards consigned, has often related to me</line>
+        <line>the effect that this catastrophe had on</line>
+        <line>my father’s strong and susceptible charac.</line>
+        <line>ter. From the moment of my mother’s</line>
+        <line>death untill his departure she never</line>
+        <line>heard him utter a single word: buried</line>
+        <line>in the deepest melancholy he took no</line>
+
+        
+    </zone>
+    <zone type="left_margin">
+        <line>X whose shapes of beauty made the prospect divine <del rend="strikethrough">hid</del> concealed</line>
+        <line>from him the barren reality which <del rend="strikethrough">was</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">lay</add> hidden below them</line>
+        
+    </zone>
+</surface>

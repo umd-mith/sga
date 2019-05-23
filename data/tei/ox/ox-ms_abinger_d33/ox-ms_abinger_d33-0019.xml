@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0019" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="10v">
+    <zone type="pagination"><line>8</line></zone>
+    
+    <zone type="main">
+        <line>which they could teach him. He was now</line>
+        <line>to enter into life and he was still young</line>
+        <line>enough to consider study as a school-boy</line>
+        <line>shackle, employed merely to keep the unru</line>
+        <line>-ly out of mischief but as having no real</line>
+        <line>connexion with life – whose wisdom<del rend="strikethrough">e</del></line>
+        <line>of riding – gaming &amp;c. he considered <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">with</add> <del rend="strikethrough">of</del> far</line>
+        <line>deeper interest – So he quickly entered</line>
+        <line><del rend="strikethrough">in a</del> into all college follies <del rend="strikethrough">yet</del> <del rend="strikethrough">without</del></line>
+        <line>although his heart was too well moulded</line>
+        <line>to be contaminated by them – it might</line>
+        <line>be light but it was never cold. He was</line>
+        <line>a sincere and sympathizing friend – but</line>
+        <line>he had met with none who superior or</line>
+        <line>equal to himself could aid him in unfolding</line>
+        <line>his mind, or make him seek for fresh stores</line>
+        <line>of thought by exhausting the old ones. He</line>
+        <line>felt himself superior in quickness of</line>
+        <line><del rend="strikethrough">jed</del> judg<del rend="strikethrough">e</del>ment <del rend="strikethrough">V</del> to those around him: his</line>
+        <line>talents, his rank and wealth made him the</line>
+        <line>chief of his party, and in that station he</line>
+        <line>rested not only contented but glorying, con</line>
+    </zone>
+</surface>
