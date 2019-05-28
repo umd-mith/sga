@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0038" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="21r">
+    <zone type="pagination"><line>27</line></zone>
+    <zone type="library"><line>21</line></zone>
+    
+    <zone type="main">
+        <line>it occurred to my aunt that I ought to</line>
+        <line>learn music; she herself played upon</line>
+        <line>the harp. It was with great hesitation</line>
+        <line>that she persuaded herself to under</line>
+        <line>take my instruction; yet believing</line>
+        <line>this accomplishment a necessary part</line>
+        <line>of my education, and balancing the</line>
+        <line>evils of this measure or of having</line>
+        <line>some one in the house to instruct me</line>
+        <line>she submitted to the inconvenience. A</line>
+        <line>harp was sent for that my playing</line>
+        <line>might not interfere with hers, and I</line>
+        <line>began: she found me a docile and</line>
+        <line>when I had conquered the first rudiments</line>
+        <line>a very apt scholar. I <mod><del rend="strikethrough">found</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">had acquired X in</add></mod> my harp a</line>
+        <anchor xml:id="d33-0038.01"/><line>companion in rainy days; a sweet soother</line>
+        <line>of my feelings when any untoward accident</line>
+        <line>ruffled them: I often addressed it as my</line>
+        <line>only friend; I could pour forth to it my</line>
+        <line>hopes and loves, and I fancied that its</line>
+        <line>sweet accents <del rend="strikethrough">am</del> answered me. I have</line>
+        <line>now mentioned all my studies.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I was a solitary being, and from my</line>
+        <line>infant years, ever since my dear nurse</line>
+        <line>left me, I had been a dreamer. I brought</line>
+        <line>Rosalind and Miranda and the <del rend="strikethrough">wild</del></line>
+    </zone>
+    
+    <zone type="left_margin" corresp="#d33-0038.01">
+        <line><add><add place="superlinear">X</add> had acquired </add></line>
+    </zone>
+</surface>

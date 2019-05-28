@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0048" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="26r">
+    <zone type="pagination"><line>37</line></zone>
+    <zone type="library"><line>26</line></zone>
+    
+    <zone type="main">
+        <line>impatience became in the highest</line>
+        <line>degree painful. I dared not think</line>
+        <line>that the sun should shine and the</line>
+        <line>moon rise not on your living form</line>
+        <line>but on your grave. But, no, it is</line>
+        <line>not so; I have my Mathilda, my conso</line>
+        <line>lation, and my hope."–</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">My father was very little chang</line>
+        <line>-ed from what he described himself</line>
+        <line>to be before his misfortunes. It is in</line>
+        <line>tercourse with civilized society; it is</line>
+        <line>the disappointment of cherished hopes,</line>
+        <line>the falsehood of friends, or the perpetual</line>
+        <line>clash of mean passions that changes</line>
+        <line>the heart and damps the ardour of</line>
+        <line>youthful feelings; long wanderings</line>
+        <line>in a wild country among people of</line>
+        <line>simple or savage manners may inure</line>
+        <line>the body but will not tame the</line>
+        <line>soul, or extinguish the ardour and</line>
+        <line>freshness of feeling incident to youth.</line>
+        <line>The burning sun of India, and the</line>
+    </zone>
+</surface>

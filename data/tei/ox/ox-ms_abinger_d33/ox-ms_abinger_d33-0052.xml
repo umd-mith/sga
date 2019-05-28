@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0052" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="28r">
+    <zone type="pagination"><line>41</line></zone>
+    <zone type="library"><line>28</line></zone>
+    
+    <zone type="main">
+        <line>and had about me all the freshness and</line>
+        <line>life of a new being: I was, as it were,</line>
+        <line>transported since his arrival from</line>
+        <line>a narrow spot of earth into a universe</line>
+        <line>boundless to the imagination and the</line>
+        <line>understanding. My life had been before</line>
+        <line>as a pleasing country rill, never destin-</line>
+        <line>-ed to leave its native fields, but when</line>
+        <line>its task was fulfilled quietly to be</line>
+        <line>absorbed, and leave no trace. Now</line>
+        <line>it seemed to me to be as a various</line>
+        <line>river <del rend="strikethrough">,</del> flowing <del rend="strikethrough">thou</del> through a fertile</line>
+        <line>and lovely lanscape, everchanging and</line>
+        <line>ever beautiful. Alas! I knew not the</line>
+        <line>desart it was about to reach; the</line>
+        <line>rocks that would tear its waters, and</line>
+        <line>the hideous scene that would be reflec-</line>
+        <line>ted in a more distorted manner in</line>
+        <line>its waves. Life was then brilliant; I</line>
+        <line>began to learn to hope and what</line>
+        <line>brings a more bitter despair to the</line>
+        <line>heart than hope destroyed?</line>
+    </zone>
+</surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0040" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="22r">
+    <zone type="pagination"><line>29</line></zone>
+    <zone type="library"><line>22</line></zone>
+    
+    <zone type="main">
+        <line>I grew up I would leave my aunt, whose</line>
+        <line>coldness lulled my conscience, and disguised</line>
+        <line>like a boy I would seek my father</line>
+        <line>through the world. My imagination</line>
+        <line>hung upon the scene of recognition; his</line>
+        <line>miniature, which I should continually</line>
+        <line>wear <del rend="strikethrough">expo</del> exposed on my breast, would</line>
+        <line>be the means and I imaged the moment</line>
+        <line>to my mind a thousand and a thousand</line>
+        <line>times, perpetually varying the circum-</line>
+        <line>stances. Sometimes it would be in a</line>
+        <line>desart; in a populous city; at a ball;</line>
+        <line>we should perhaps meet in a vessel;</line>
+        <line>and his first words constantly were,</line>
+        <line>"My daughter, I love thee"! What</line>
+        <line>extactic moments have I passed</line>
+        <line>in these dreams! How many tears I</line>
+        <line>have shed; how often have I <del rend="strikethrough">laughed</del></line>
+        <line>laughed aloud.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">This <del rend="strikethrough">wa</del> was my life for</line>
+        <line>sixteen years. At fourteen and fifteen</line>
+        <line>I often thought that the time was</line>
+        <line>come when I should commence my</line>
+        <line><del rend="strikethrough">W</del> pilgrimage, which I had cheated my</line>
+    </zone>
+</surface>

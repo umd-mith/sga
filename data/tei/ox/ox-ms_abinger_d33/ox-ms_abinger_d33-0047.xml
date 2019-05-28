@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0047" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="25v">
+    <zone type="pagination"><line>36</line></zone>
+    
+    <zone type="main">
+        <line>life.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">The voice of affection was so new to</line>
+        <line>me that I hung with delight upon</line>
+        <line>his words when he told me what he</line>
+        <line>had felt concerning me during these</line>
+        <line>long years of apparent forgetfulness.</line>
+        <line>"At first" – said he, "I could not bear to</line>
+        <line>think of my poor little girl; but after-</line>
+        <line>-wards as grief wore off and hope again</line>
+        <line>revisited me I could only turn to her,</line>
+        <line>and amidst cities and desarts her</line>
+        <line>little fairy form, such as I imagined</line>
+        <line>it, for ever flitted before me. The</line>
+        <line>northern <del rend="strikethrough">brez</del> breeze as it refreshed me</line>
+        <line>was sweeter and more balmy for it</line>
+        <line>seemed to carry some of your spirit</line>
+        <line>along with it. I often thought that I</line>
+        <line>would instantly return and take you</line>
+        <line>along with me to some fertile island</line>
+        <line>where we should live at peace for</line>
+        <line>ever. As I returned my fervent hopes</line>
+        <line>were dashed by so many fears; my</line>    
+    </zone>
+</surface>

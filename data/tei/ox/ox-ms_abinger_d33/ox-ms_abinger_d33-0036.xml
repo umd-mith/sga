@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0036" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="20r">
+    <zone type="pagination"><line>25</line></zone>
+    <zone type="library"><line>20</line></zone>
+    
+    <zone type="main">
+        <line>tended from our park to the neighbouring</line><line>country. Our house was situated on the</line>
+        <line>shores of the lake and the lawn came</line>
+        <line>down to the water’s edge. I rambled</line>
+        <line>amidst the wild scenery of this lovely</line>
+        <line>country and became a complete moun</line>
+        <line>taineer. I passed hours on the steep</line>
+        <line>brow of a mountain that overhung a</line>
+        <line>waterfall - or rowed myself in a little</line>
+        <line>skiff to <del rend="strikethrough">one</del> some one of the islands.</line>
+        <line>I wandered for ever about these lovely</line>
+        <line>solitudes, gathering flower after flower</line>
+        <line>Ond’ era pinta tutta la mia via <add place="superlinear">X</add></line>
+        <anchor xml:id="d33-0036.01"/><line><del rend="strikethrough">and</del> singing as I might the wild melodies</line>
+        <line>of <mod><del rend="strikethrough">this</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> country, or occupied by pleasant</line>
+        <line>day dreams. My greatest pleasure was the</line>
+        <line>enjoyment of a serene sky amidst these</line>
+        <line>verdant woods: yet I loved all the changes</line>
+        <line>of Nature; and rain, and storm, and the</line>
+        <line>beautiful clouds of heaven brought their</line>
+        <line>delights with them. When rocked by the waves</line>
+        <line>of the lake my spirits rose in triumph as</line>
+        <line>a horseman feels with pride the motions</line>
+        <line>of his high fed steed. <del rend="strikethrough">But my pleasures were</del></line>
+    </zone>
+    
+    <zone type="left_margin" corresp="#d33-0036.01">
+        <line><add><hi rend="sup">X</hi> Dante </add></line>
+    </zone>
+    
+</surface>
