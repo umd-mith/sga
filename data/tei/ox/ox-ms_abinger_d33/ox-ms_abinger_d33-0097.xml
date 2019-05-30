@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0097" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="50v">
+    <zone type="pagination"><line>86</line></zone>
+    
+    <zone type="main">
+        <line>grief Sigismunda over the heart</line>
+        <line>of Guiscardo, I sat with my hands</line>
+        <line><del rend="strikethrough">folding</del> folded, silently letting fall a</line>
+        <line>perpetual stream from my eyes.</line>
+        <line>Such was the depth of my emotion that</line>
+        <line>I had no feeling of what caused my</line>
+        <line>distress, my thoughts even wandered to</line>
+        <line>many indifferent objects; but still</line>
+        <line>neither moving limb or feature my</line>
+        <line><del rend="strikethrough">le</del> <del rend="strikethrough">I wept w</del> tears fell untill, as if the</line>
+        <line>fountains were exhausted, they gra-</line>
+        <line>dually subsided, and I awoke to life</line>
+        <line>as from a dream</line>
+        <milestone unit="tei:p"/><line rend="indent2">When I had ceased to weep</line>
+        <line>reason and memory returned upon</line>
+        <line>me, and I began to reflect with</line>
+        <line>greater calmness on what had <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">happened,</add> <del rend="strikethrough">passed,</del></mod></line>
+        <line>and how it became me to act – A few</line>
+        <line>hours <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">only</add> had passed but a mighty revo-</line>
+        <line>lution had taken place with regard</line>
+        <line>to me – the natural work of years</line>
+        <line><del rend="strikethrough">was over since</del> had been tra<zone type="library"><line><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">n</add></line></zone>sacted</line>
+        <line>since the morning: my father was as</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0063" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="33v">
+    <zone type="pagination"><line>52</line></zone>
+
+    
+    <zone type="main">
+        <line>with a cry of joy and would have thrown myself</line>
+        <line>into his arms, but he pushed me roughly from</line>
+        <line>him and left me. And even from this slight</line>
+        <line>incident he contracted fresh gloom and an</line>
+        <line>ad<mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">d</add></mod>itional severity of manner.</line>
+        <milestone unit="tei:p"/><line rend="indent2">There are many incidents that I</line>
+        <line>might relate which shewed the diseased yet</line>
+        <line>incomprehensible state of his mind; but I will</line>
+        <line>me<mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">n</add></mod>tion one that occurred while we were</line>
+        <line>in company with several other persons. On this</line>
+        <line>occasion I chanced to say that I thought Myr-</line>
+        <line>rha the best of Alfieri’s tragedies; as I said this</line>
+        <line>I chanced to cast my eyes on my father and</line>
+        <line>met his: for the first time the expression</line>
+        <line>of those beloved eyes displeased me, and I saw</line>
+        <line>with affright that his whole frame shook</line>
+        <line>with some concealed emotion that in spite</line>
+        <line>of his efforts half conquered him: as this</line>
+        <line>tempest faded from his soul he became</line>
+        <line>melancholy and silent. Every day some <del rend="strikethrough">I</del> new</line>
+        <line>scene occured and displayed in him a mind</line>
+        <line>working as were with <mod><del rend="strikethrough">some</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">an</add></mod> unknown horror</line>
+        <line>that now he could master but which at</line>
+        <line>times threatened to overturn his reason, and</line>
+        <line>to throw the bright seat of his intelligence</line>
+        
+    </zone>
+</surface>

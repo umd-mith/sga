@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0054" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="29v">
+    <zone type="pagination"><line>44</line></zone>
+    
+    <zone type="main">
+        <line>then tore <mod><del rend="strikethrough">my</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">his</add></mod> feelings he gave his words</line>
+        <line>the impress of life so vividly that <del rend="strikethrough">yo</del> I</line>
+        <line>believed while I trembled. I wondered</line>
+        <line>how he could ever again have entered</line>
+        <line>into the offices of life after his wild</line>
+        <line>thoughts seemed to have given him</line>
+        <line>affinity with the unearthly; while</line>
+        <line>he spoke so tremendous were the ideas</line>
+        <line><del rend="strikethrough">Ni</del> which he conveyed that it <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">appeared</add> <del rend="strikethrough">seemed</del></mod></line>
+        <line>as if the human heart were far</line>
+        <line>too bounded for their conception. His</line>
+        <line>feelings seemed better fitted for a spirit</line>
+        <line>whose habitation is the earthquake</line>
+        <line>and the volcano than for one confined</line>
+        <line>to a mortal body and human linea-</line>
+        <line>ments. But these were merely</line>
+        <line>memories; he was changed since then.</line>
+        <line>He was now all love, all softness: and</line>
+        <line>when I raised my eyes in wonder at</line>
+        <line>him as he spoke the smile on</line>
+        <line>his lips told me that his heart was</line>
+        <line>possessed by the gentlest passions.</line>
+        <milestone unit="tei:p"/><line rend="indent2">Two months after my aunt’s</line>
+        
+    </zone>
+</surface>

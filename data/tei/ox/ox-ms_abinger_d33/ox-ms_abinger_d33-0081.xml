@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0081" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="42v">
+    <zone type="pagination"><line>70</line></zone>
+    
+    <zone type="main">
+        <line>died entirely away while a few birds</line>
+        <line>flew <del rend="strikethrough">paf</del> past us to their evening</line>
+        <line>rest.</line>
+        <milestone unit="tei:p"/><line rend="indent2">Well it was here we sat together,</line>
+        <line>and when you hear all that past –</line>
+        <line>all that of <del rend="strikethrough">terrb</del> terrible tore our</line>
+        <line>souls even in this placid spot,</line>
+        <line>which but for strange passions might</line>
+        <line>have been a paradise to us, you will</line>
+        <line>not wonder that I remember it as</line>
+        <line>I looked on it that its calm might</line>
+        <line>give me calm, and inspire me not</line>
+        <line>only with courage but with persua-</line>
+        <line>sive words. I saw all these things</line>
+        <line>and in a vacant manner noted them</line>
+        <line>in my mind while I endeavoured to</line>
+        <line><del rend="strikethrough">ara</del> arrange my thoughts in fitting</line>
+        <line>order for my attempt. My heart</line>
+        <line>beat fast as I worked myself up to</line>
+        <line>speak to him, for I was determined not</line>
+        <line>to be repulsed but I trembled to ima-</line>
+        <line>gine what effect my words might</line>
+        <line>have on him; at length, with much</line>
+        
+    </zone>
+</surface>

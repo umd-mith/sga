@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0077" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="40v">
+    <zone type="pagination"><line>66</line></zone>
+
+    <zone type="main">
+        <line>but it was a mere conjecture <del rend="strikethrough">w</del> unfound</line>
+        <line>ed on any fact: Could there be guilt in</line>
+        <line>it? He was too upright and noble to do</line>
+        <line>aught that his conscience could not</line>
+        <line>approve; I did not yet know of the</line>
+        <line>crime there may be in involuntary</line>
+        <line>feeling and therefore ascribed <del rend="strikethrough">wholly</del></line>
+        <line><del rend="strikethrough">to struggles</del> his <del rend="strikethrough">tumultrous</del> tumultuous</line>
+        <line>starts and gloomy looks wholly to the</line>
+        <line>struggles of his mind<del rend="strikethrough">e</del> and not any</line>
+        <line>as they were partly due to the worst</line>
+        <line>fiend of all – Remorse.</line>
+        <milestone unit="tei:p"/><line rend="indent2">But still do I flatter myself that</line>
+        <line>this would have passed away. His</line>
+        <line>parox<del rend="strikethrough">y</del>isms of passion were terrific</line>
+        <line>but his soul bore him through</line>
+        <line>them triumphant though almost</line>
+        <line>destroyed by victory; but the day</line>
+        <line>would finally have been won had</line>
+        <line>not I, foolish and presumptuous</line>
+        <line><del rend="strikethrough">wrecl</del> wretch! Hurried him on untill</line>
+        <line>there was no recall, no hope. My</line>
+        
+    </zone>
+</surface>

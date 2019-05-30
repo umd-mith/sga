@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0064" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="34r">
+    <zone type="pagination"><line>53</line></zone>
+    <zone type="library"><line>34</line></zone>
+    
+    <zone type="main">
+        <line>into a perpetual chaos.</line>
+        <milestone unit="tei:p"/><line rend="indent2">I will not dwell longer than I need</line>
+        <line>on these disastrous circumstances. I might</line>
+        <line>waste days in describing <del rend="strikethrough">to you</del> how anxiously</line>
+        <line>I watched every change or fleeting circum</line>
+        <line>stance that promised better days,  and with</line>
+        <line>what despair I found that each effort of</line>
+        <line>mine aggravated his seeming madness. To</line>
+        <line>tell <del rend="strikethrough">you</del> all my grief I might as well attempt</line>
+        <line>to count the tears that have fallen from</line>
+        <line>these eyes, or every sigh that has torn</line>
+        <line>my heart. I will be brief for there is <del rend="strikethrough">a</del> in</line>
+        <line>all this a horror that will not bear</line>
+        <line>many words, and I sink almost a second</line>
+        <line>time to death while I recall these sad</line>
+        <line>scenes to my memory. Oh, my beloved father!</line>
+        <line>Indeed you made me miserable beyond</line>
+        <line>all words, but how truly did I even then</line>
+        <line>forgive you, and how entirely did you</line>
+        <line>possess my <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">whole</add></mod> heart while I endeavoured, as a</line>
+        <line>rainbow gleams upon a cataract, <add place="superlinear">X</add><anchor xml:id="d33-0064.01"/> to soften</line>
+        <line>thy tremendous sorrows.</line>
+        <zone type="left_margin" corresp="#d33-0031.01">
+            <line><add>apparent </add></line>
+        </zone>Thus did this change come about.</line>
+        <milestone unit="tei:p"/><line rend="indent2">I seem perhaps to have dashed too sudden</line>
+        
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0064.01">
+        <line><add place="superlinear">X</add> Lord Byron.</line>
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0066" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="35r">
+    <zone type="pagination"><line>55</line></zone>
+    <zone type="library"><line>35</line></zone>
+    
+    <zone type="main">
+        <line>my slightest motion. His accents whenever</line>
+        <line>he addressed me were cold and constrained</line>
+        <line>although his voice would tremble when</line>
+        <line>he<del rend="strikethrough">r</del> perceived that my full heart</line>
+        <line>choked the answer to <del rend="strikethrough">his</del> words proffered</line>
+        <line><del rend="strikethrough">in way sle yet</del> with a mien yet new</line>
+        <line>to me.</line>
+        <milestone unit="tei:p"/><line rend="indent2">But days of peaceful melancholy</line>
+        <line>were of rare occurence they were often</line>
+        <line>broken in upon by gusts of passion</line>
+        <line>that drove me as a weak boat on a</line>
+        <line>stormy sea to seek a cove for shelter;</line>
+        <line>but the winds blew from my native</line>
+        <line>harbour and I was cast far, far out</line>
+        <line>untill shattered I perished when the</line>
+        <line>tempest had passed and the sea was</line>
+        <line>apparently calm. I do not know that</line>
+        <line>I can describe his emotions <del rend="strikethrough">to you</del>:</line>
+        <line>sometimes he only betrayed them by a</line>
+        <line>word or gesture, and then retired to his</line>
+        <line>chamber and I crept as near it as I</line>
+        <line>dared and listened with fear to every sound,</line>
+        <line>yet still more dreading a sudden silence</line>
+        
+    </zone>
+</surface>

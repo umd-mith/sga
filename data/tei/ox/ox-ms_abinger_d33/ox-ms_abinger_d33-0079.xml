@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0079" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="41v">
+    <zone type="pagination"><line>68</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head"/><line rend="center">Chapter V</line>
+        <milestone unit="tei:p"/>
+            <line rend="indent2">Nearly a year had past since</line>
+            <line>my father’s return, and the seasons</line>
+            <line>had almost finished their round – It was</line>
+            <line>now the end of May; the woods were clothed</line>
+            <line>in their freshest verdure, and the</line>
+            <line>sweet smell of the new mown grass</line>
+            <line>was in the fields. I thought that the</line>
+            <line>balmy air and the lovely face of Na-</line>
+            <line>-ture might aid me in inspiring</line>
+            <line>him with mild sensations, and give</line>
+            <line>him gentle feelings of peace and love</line>
+            <line>preparatory to the confidence I</line>
+            <line>determined to win from him.</line>
+            <line><anchor xml:id="d33-0079.01"/>ose therefore <del rend="strikethrough">In</del> the evening of one of these</line>
+            <line>days <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">for my attempt.</add> I invited him to walk with me,</line>
+            <line>and led him to a neighbouring wood of</line>
+            <line>beech trees whose light shade shielded us</line>
+            <line>from the <del rend="strikethrough">from</del> <del rend="strikethrough">the</del> slant and daz-</line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0079.01">
+        <line>I ch</line></zone>
+</surface>

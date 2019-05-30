@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0080" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="42r">
+    <zone type="pagination"><line>69</line></zone>
+    <zone type="library"><line>42</line></zone>
+    
+    <zone type="main">
+        <line>zling beams of <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add> descending sun – After</line>
+        <line>walking for some time in silence</line>
+        <line>I seated my self with him on a mossy</line>
+        <line>hillock – It is strange but even</line>
+        <line>now I seem to see the spot – the slim</line>
+        <line><del rend="strikethrough">trunk</del> and smooth trunks were many</line>
+        <line>of them wound round by <del rend="strikethrough">dark</del> ivy <del rend="strikethrough">and</del></line>
+        <line><del rend="strikethrough">their</del> <add place="superlinear">whose</add> shining leaves of <del rend="strikethrough">almost a</del> the</line>
+        <line>darkest green cont<add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">r</add>asted with the</line>
+        <line>white bark and the light leaves of the</line>
+        <line><del rend="strikethrough">yung</del> young sprouts of beech that</line>
+        <line>grew from their parent trunks – the</line>
+        <line>short grass was mingled with moss and</line>
+        <line><anchor xml:id="d33-0080.01"/> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0080.02"/> by</add> the dead leaves of <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add> last autumn that</line>
+        <line>driven by the winds had here and</line>
+        <line>there collected in little hillocks <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">there were</add> – a few</line>
+        <line>moss grown stumps about – The</line>
+        <line>leaves were gently moved by the breeze</line>
+        <line>and through their green canopy you</line>
+        <line>could see the bright blue sky – As evening</line>
+        <line>came on the distant trunks were</line>
+        <line>reddened by the sun and the wind</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0080.01">
+        <line>was partly </line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0080.02">
+        <line>covered </line>
+    </zone>
+</surface>

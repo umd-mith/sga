@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0099" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="51v">
+    <zone type="pagination"><line>88</line></zone>
+    
+    <zone type="main">
+        <line>there find solitude where I might weep,</line>
+        <line>and the voices of life might never</line>
+        <line>reach me.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">But my father; my beloved and</line>
+        <line>most wretched father? Would he die? Would</line>
+        <line><anchor xml:id="d33-0099.01"/>overcome <mod><del rend="strikethrough">this</del> <del rend="strikethrough">fierce</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> fierce passion that</line>
+        <line>now held <del rend="strikethrough">pityless</del> pityless dominion</line>
+        <line>over him? Might he not many, many</line>
+        <line>years hence, when age had <del rend="strikethrough">destroyed</del></line>
+        <line><anchor xml:id="d33-0099.02"/>the burning sensations that he now</line>
+        <line>experienced, <del rend="strikethrough">l</del> might he not then be</line>
+        <line>again a father to me? This reflection</line>
+        <line>unwrinkled my brow, and I could feel</line>
+        <line>(and I wept to feel it) a half melan</line>
+        <line>choly smile draw <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">from</add> my lips <del rend="strikethrough">from</del> their</line>
+        <line>expression of suffering: I dared</line>
+        <line>indulge better hopes for my future</line>
+        <line>life; years must pass but they would</line>
+        <line>speed lightly away winged by hope,</line>
+        <line>or if they passed heavily, still they</line>
+        <line>would pass and <del rend="strikethrough">once</del> I had not lost</line>
+        <line>my father for ever. Let him spend</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0099.01">
+        <line>he never </line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0099.02">
+        <line>quenched </line>
+    </zone>
+</surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0057" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="30v">
+    <zone type="pagination"><line>46</line></zone>
+
+    
+    <zone type="main">
+        <line>chance to arise, I was always happy when</line>
+        <line>near my father. It was a subject of</line>
+        <line>regret to me whenever we were joined</line>
+        <line>by a third person, yet if I turned with a</line>
+        <line>disturbed look towards my father, his eyes</line>
+        <line>fixed on me and beaming with tender-</line>
+        <line>-ness instantly restored joy to my heart.</line>
+        <line>O, hours of intense delight! Short as</line>
+        <line>ye were ye are made as long to me</line>
+        <line>as a whole life when looked back</line>
+        <line>upon through the mist of grief that</line>
+        <line>rose immediately after as if to shut</line>
+        <line>ye from my view. Alas! ye were the</line>
+        <line>last of happiness that I ever enjoyed;</line>
+        <line>a few, a very few weeks and all was</line>
+        <line>destroyed. Like Psyche I lived for a-</line>
+        <line>-while in an enchanted <del rend="strikethrough">rock</del> <del rend="strikethrough">co</del> palace,</line>
+        <line>amidst odours, and <mod><del rend="strikethrough">flowers</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">music</add></mod>, and every</line>
+        <line>luxurious delight; when suddenly I</line>
+        <line>was left on a barren rock; a wide ocean</line>
+        <line>of despair rolled around me: above</line>
+        <line>all was black, and my eyes closed while</line>
+        <line>I still inhabited a universal death.</line>
+        <line>Still I would not hurry on; I would</line>
+        
+    </zone>
+</surface>

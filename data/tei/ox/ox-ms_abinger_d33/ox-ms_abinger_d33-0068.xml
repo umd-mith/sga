@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0068" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="36r">
+    <zone type="pagination"><line>58</line></zone>
+    <zone type="library"><line>36</line></zone>
+    
+    <zone type="main">
+        <line><del rend="strikethrough">bitter</del> recollection’s elsewhere, <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">yet</add> he would</line>
+        <line>never dare visit the spot where he</line>
+        <line>had enjoyed her society or trust himself</line>
+        <line>to see the rooms that so many years</line>
+        <line>ago they had inhabited together; her favou</line>
+        <line>rite walks and the gardens the flowers of</line>
+        <line>which she had delighted to cultivate. And</line>
+        <line>now while he suffered intense</line>
+        <line>misery he determined to plunge [large inkblot on right side of page]</line>
+        <line>into still <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">more intense</add> <del rend="strikethrough">greater grief</del></mod>, and strove</line>
+        <line>for greater emotion than that which</line>
+        <line><del rend="strikethrough">atready</del> already tore him. I was perplexed,</line>
+        <line>and most anxious to know what this</line>
+        <line>portended; ah, what could it potend but</line>
+        <line>ruin!</line>
+        <milestone unit="tei:p"/><line rend="indent2">I saw little of my father during this</line>
+        <line>interval, but he appeared calmer although</line>
+        <line>not less unhappy than before. On the</line>
+        <line>morning of the third day <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he informed me</add></mod> that he had</line>
+        <line>determined to go to Yorkshire first alone,</line>
+        <line>and that I should follow him in a <del rend="strikethrough">week</del></line>
+        <line><anchor xml:id="d33-0068.01"/>unless I heard any thing from him in the</line>
+        <line></line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0068.01">
+        <line>fortnight </line>
+    </zone>
+</surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0084" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="44r">
+    <zone type="pagination">73<line></line></zone>
+    <zone type="library">44<line></line></zone>
+    
+    <zone type="main">
+        <line>I paused fixing my earnest eyes on</line>
+        <line>my father, after I had dashed away the</line>
+        <line>intrusive tears that dimmed them. He</line>
+        <line>did not raise his, but after a short</line>
+        <line>silence he replied to me in a low voice:</line>
+        <line>"You are indeed presumptuous, Mathilda,</line>
+        <line>presumptuous and very rash. In the</line>
+        <line>heart of one like me there are secret</line>
+        <line>thoughts working, and secret tortures</line>
+        <line>which you ought not to seek to disco</line>
+        <line>-ver. I cannot tell you how it adds to</line>
+        <line>my grief to know that I am the cause</line>
+        <line>of uneasiness to you; but this will pass</line>
+        <line>away, <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and</add> I hope that soon we shall be</line>
+        <line>as we were a few months ago. Restrain</line>
+        <line>your impatience or you may mar</line>
+        <line>what you attempt to alleviate. <del rend="strikethrough">N</del> Do</line>
+        <line>not again speak to me in this strain; but</line>
+        <line>wait in submissive patience the event</line>
+        <line>of what is passing around you."</line>
+        <milestone unit="tei:p"/><line rend="indent2">"Oh, yes!" I passionately replied, "I will</line>
+        <line>be very patient; I will not <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add> rash or pre</line>
+        <line>sumptuous: I will see the agonies, and</line>
+        <line>tears, and despair of my <del rend="strikethrough">beloved</del> father,</line>
+        
+    </zone>
+</surface>

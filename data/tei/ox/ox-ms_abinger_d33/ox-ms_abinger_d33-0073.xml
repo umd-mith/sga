@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0073" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="38v">
+    <zone type="pagination"><line>61</line></zone>
+    
+    <zone type="main">
+        <line>music, and leant over me as I read or</line>
+        <line>painted. When he conversed with me his</line>
+        <line>manner was cold and constrained; his</line>
+        <line>eyes only seemed to speak, and as <del rend="strikethrough">N</del> he</line>
+        <line>turned their black, full lustre towards</line>
+        <line>me they expressed a living sadness. There</line>
+        <line>was somthing in those dark deep orbs</line>
+        <line>so liquid, <del rend="strikethrough">so</del> and intense that even in</line>
+        <line>happiness I could never meet their full</line>
+        <line>gaze that <del rend="strikethrough">mind</del> mine did not over-</line>
+        <line>flow. <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Yet it was</add> with <del rend="strikethrough">tears,</del> <del rend="strikethrough">then</del> <mod><del rend="strikethrough">those</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">my</add></mod> <del rend="strikethrough">tears were</del></line>
+        <line>sweet <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">tears</add></mod>; <mod><del rend="strikethrough">but</del> <add place="superlinear">Not f</add></mod> now there was a depth</line>
+        <line>of affliction in their gentle appeal</line>
+        <line>that rent my heart with sympathy;</line>
+        <line>they seemed to desire peace for me;</line>
+        <line>for himself a <del rend="strikethrough">patient</del> heart <del rend="strikethrough">to</del> <del rend="strikethrough">hears</del></line>
+        <line>patient to suffer; a craving for</line>
+        <line>sympathy, yet a perpetual self</line>
+        <line>denial. It was only when he was</line>
+        <line>absent from <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">me</add></mod> that his passion sub-</line>
+        <line>dued him, – that he clenched his</line>
+        <line>hands – knit his brows – and with</line>
+        <line>haggard looks called for death to his</line>
+        
+    </zone>
+</surface>

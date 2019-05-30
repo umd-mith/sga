@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0083" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="43v">
+    <zone type="pagination"><line>72</line></zone>
+    
+    <zone type="main">
+        <line>mit me to win this secret from you.</line>
+        <line>Tell me, can I do nothing? You well</line>
+        <line>know that on the whole earth there is</line>
+        <line>no sacrifise that I would not make,</line>
+        <line>no labour that I would not undergo</line>
+        <line>with the mere hope that I might bring</line>
+        <line>you ease. But if no endeavour on</line>
+        <line>my part can contribute to your happi</line>
+        <line>ness, let me at least know your</line>
+        <line>sorrow, and surely my earnest love and</line>
+        <line>deep sympathy must soothe your despair.</line>
+        <milestone unit="tei:p"/><line rend="indent2">"I fear that I speak in a constrained</line>
+        <line>manner: my heart is overflowing with</line>
+        <line>the ardent desire I have of bringing calm</line>
+        <line>once more to your thoughts and looks;</line>
+        <line>but I fear to aggravate your grief, or to</line>
+        <line>raise that in you which is death to</line>
+        <line>me, anger and distaste. Do not then</line>
+        <line>continue to fix your eyes on the earth;</line>
+        <line>raise them on me for I can read</line>
+        <line>your soul in them: speak to me to</line>
+        <line>me, and pardon my presumption. Alas!</line>
+        <line>I am a most unhappy creature!"</line>
+        <milestone unit="tei:p"/><line rend="indent2">I was breathless with emotion, and</line>
+        
+    </zone>
+</surface>
