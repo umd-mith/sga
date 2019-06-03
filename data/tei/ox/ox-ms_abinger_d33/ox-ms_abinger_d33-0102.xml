@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0102" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="52v">
+    <zone type="pagination"><line>91</line></zone>
+    <zone type="library"><line>53</line></zone>
+    
+    <zone type="main">
+        <line>at my door, but after a few moments</line>
+        <line>they again receeded, <del rend="strikethrough">and</del> descended the</line>
+        <line>stairs and I heard no more.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">This slight incident gave rise</line>
+        <line>in me to the most painful reflections;</line>
+        <line>nor do I now dare express the emotions</line>
+        <line>I felt. That he should be restless I</line>
+        <line>understood; that he should wander as an</line>
+        <line>unlaid ghost and find no quiet from</line>
+        <line>the burning hell that consumed his heart.</line>
+        <line>By <handShift medium="pencil" new="#mws"/><add place="superlinear">ut</add> <handShift medium="pen" new="#mws"/>why approach my chamber? Was not</line>
+        <line>that sacred? I felt almost ready to faint</line>
+        <line>while he had stood there, but I had not</line>
+        <line>betrayed my wakefulness by the slightest</line>
+        <line>motion, although I had heard my own</line>
+        <line>heart beat with violent fear. He had</line>
+        <line><del rend="strikethrough">thus He had</del> withdrawn. Oh, never, ne-</line>
+        <line>ver, may I see him again! Tomorrow</line>
+        <line>night the same roof may not cover</line>
+        <line>us; he or I must depart. The mu-</line>
+        <line>-tual link of our destinies is broken; we</line>
+        <line>must be divided by seas – by land.</line>
+        <line>The stars and the sun must not</line>
+    </zone>
+</surface>
