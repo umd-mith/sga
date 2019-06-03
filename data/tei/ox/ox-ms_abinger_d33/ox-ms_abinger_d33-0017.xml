@@ -11,8 +11,8 @@
         <milestone unit="tei:p"/>
         <del rend="strikethrough">W</del>
         <line rend="indent2">Under the influence of these circum.</line>
-        <line>stances his passions found <add place="sublinear"><metamark function="insert">^</metamark></add>
-            <add place="superlinear">a</add><del rend="strikethrough">a</del> deep soil wherein</line>
+        <line>stances his passions found <mod><add place="sublinear"><metamark function="insert">^</metamark></add>
+            <add place="superlinear">a</add><del rend="strikethrough">a</del></mod> deep soil wherein</line>
         <line>they might strike their roots and flourish either</line>
         <line>as flowers or weeds as was their nature. By</line>
         <line>being always allowed to act for himself his</line>
@@ -26,9 +26,9 @@
         <line>apparent energy he dignified with the</line>
         <line>name of passions, often displayed itself in</line>
         <line>unbounded generosity. Yet while he earn</line>
-        <line>-estly <add place="sublinear"><metamark function="insert">^</metamark></add><add
+        <line>-estly <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add
                 place="sublinear"><metamark function="insert">^</metamark></add><add
-                place="superlinear">occupied himself</add> about the wants of others his own</line>
+                place="superlinear">occupied himself</add></mod> about the wants of others his own</line>
         <line>desires were gratified to their fullest</line>
         <line>extent. He gave his money, but none</line>
         <line>of his own wishes were <del rend="strikethrough">sat</del> sacrifised</line>

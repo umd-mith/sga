@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-    xml:id="ox-ms_abinger_d33-00" ulx="0" uly="0" lrx="5368" lry="7104"
-    mith:shelfmark="MS. Abinger d. 33" mith:folio="">
+    xml:id="ox-ms_abinger_d33-0023" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="13v">
     <zone type="pagination"><line>12</line></zone>
 
     <line>infant vows.</line>
@@ -14,7 +14,7 @@
     <line>had become entwined with every faculty</line>
     <line>and every sentiment and only to be lost</line>
     <line>with life. <del rend="strikethrough">All</del> None knew of their love</line>
-    <line>except their own two hearts; <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">yet</add> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and</add> <del rend="strikethrough">and</del> <del rend="strikethrough">yet</del> al-</line>
+    <line>except their own two hearts; <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">yet</add><del rend="strikethrough">and</del></mod> <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><del rend="strikethrough">and</del></add> <del rend="strikethrough">yet</del></mod> al-</line>
     <line>though in all things else, and even in this</line>
     <line>he dreaded the censure of his companions,</line>
     <line>for thus truly loving one inferior to him in</line>
