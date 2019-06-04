@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0227" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="">
+    <zone type="pagination"><line>216</line></zone>
+    
+    <zone type="main">
+        <line>on <del rend="strikethrough">your</del> thy bosom</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"Rolled round in earth’s diurnal course</line>
+        <line rend="indent1">With <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">rocks</add> <del rend="strikethrough">stocks</del></mod>, and stones, and trees.</line>
+        <line rend="indent2">"For it will be the same</line>
+        <line>with thee, who art called our Universal</line>
+        <line>Mother, when I am gone. I have loved</line>
+        <line>thee; and in my days both of happi</line>
+        <line>-ness and sorrow I <del rend="strikethrough">ha</del> have peopled</line>
+        <line>your <del rend="strikethrough">soti</del> solitudes with wild fancies</line>
+        <line>of my own creation. The woods,</line>
+        <line>and lakes, and mountains which I</line>
+        <line>have loved, have for me a thou</line>
+        <line>sand associations; and thou, Oh, Sun!</line>
+        <line><anchor xml:id="d33-0227.01"/><del rend="strikethrough">have</del> smiled upon, and borne your</line>
+        <line>part in many imaginations that</line>
+        <line>sprung to life in my soul alone,</line>
+        <line>and which will die with me.</line>
+        <line>Your solitudes, sweet land, your</line>
+        <line>trees and waters will still exist,</line>
+        <line>moved by your winds, or still</line>
+        <line>beneath the eye of noon; though</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0227.01">
+        <line>hast</line>
+    </zone>
+</surface>

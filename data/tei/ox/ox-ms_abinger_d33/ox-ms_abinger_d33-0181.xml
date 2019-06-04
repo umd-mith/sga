@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0181" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="94v">
+    <zone type="pagination"><line>170</line></zone>
+    
+    <zone type="main">
+        <line>been and what they were, and when</line>
+        <line>reason could no longer guide <del rend="strikethrough">them</del></line>
+        <line>him, his imagination as if inspired</line>
+        <line>shed light on the obscurity that veils</line>
+        <line>the past and the future. <del rend="strikethrough">D</del> He loved</line>
+        <line>to dwell on what might have been</line>
+        <line>the state of the earth before man</line>
+        <line>lived on it, and how he first arose</line>
+        <line>and gradually became the <del rend="strikethrough">slan</del></line>
+        <line>strange, complicated, but as he said,</line>
+        <line>the glorious creature he now is.</line>
+        <line><del rend="strikethrough">I</del> Covering the earth with their</line>
+        <line>creations and forming by the power</line>
+        <line>of their minds another world more</line>
+        <line>lovely than <mod><del rend="strikethrough">this,</del> <add place="sublinear">^</add><add place="superlinear">the visible frame of things,</add></mod> even all the world</line>
+        <line>that we find in their writings.</line>
+        <line>A beautiful <del rend="strikethrough">wo</del> creation, he would</line>
+        <line>say, which may claim this superiori</line>
+        <line>-ty to its model, that good and</line>
+        <line>evil is more easily <del rend="strikethrough">sper</del> separated</line>
+        <line>the good rewarded in the way they</line>
+        
+    </zone>
+</surface>

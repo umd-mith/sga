@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0196" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="103r">
+    <zone type="pagination"><line><del rend="strikethrough">193</del>185</line></zone>
+    <zone type="library"><line>103</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head" spanTo="#d33-0196.01"/>
+        
+        <line rend="center">Chapter XI</line>
+        <anchor xml:id="d33-0196.01"/>
+        
+        <milestone unit="tei:p"/>
+            <line rend="indent1">It is a strange circumstance but</line>
+            <line>it often occurs that blessings by their</line>
+            <line>use turn to curses; and that I who</line>
+            <line>in solitude had desired sympathy as</line>
+            <line>the only relief I could enjoy should now</line>
+            <line>find <del rend="strikethrough">that</del> it <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">an additional</add> <del rend="strikethrough">was</del></mod> torture to me. Du-</line>
+            <line>ring my father’s life time I had always</line>
+            <line>been of an affectionate and forbearing</line>
+            <line>disposition, but <mod><del rend="strikethrough">now</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">since those days of joy</add></mod> alas! I was much</line>
+            <line>changed. I had become arrogant, peevish,</line>
+            <line>and above all suspicious. Although</line>
+            <line><del rend="strikethrough">now</del> the real interest of my narration is</line>
+        <line><anchor xml:id="d33-0196.02"/>ended and I ought quickly to wind up its</line>
+            <line>melancholy catastrophe, yet I will</line>
+            <line>relate one instance of my sad suspicion</line>
+            <line>and despair and how <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> with the</line>
+            <line>goodness and almost the power of an</line>
+            <line>angel, softened my rugged feelings and</line>
+            <line>led me back to gentleness.</line>
+        <milestone unit="tei:p"/>
+            <line rend="indent2">He had promised to spend some hours</line>
+            <line>with me one afternoon <mod><add place="superlinear">but</add> <del rend="strikethrough">when</del></mod> a</line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0196.02">
+        <line>now</line>
+    </zone>
+</surface>

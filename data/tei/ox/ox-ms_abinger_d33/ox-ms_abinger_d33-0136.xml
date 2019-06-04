@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0136" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="71r">
+    <zone type="pagination"><line>125</line></zone>
+    <zone type="library"><line>71</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head" spanTo="#d33-0136.01"/>
+        
+        <line rend="center">Chapter <del rend="strikethrough">IX</del> VIII</line>
+        <anchor xml:id="d33-0136.01"/>
+        
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I was carried to the next town: fever</line>
+            <line>succeeded to convulsions and faintings, &amp;</line>
+            <line>for some weeks my unhappy spirit</line>
+            <line>hovered on the very verge of death. But</line>
+            <line>life was yet strong within me; I recovered:</line>
+            <line>nor did it a <del rend="strikethrough">lettele</del> little aid my</line>
+            <line>returning health that my recollections</line>
+            <line>were at first vague, and that I</line>
+            <line>was too weak to feel any violent emotion.</line>
+            <line>I often said to myself, My father is dead.</line>
+            <line>He loved me with a guilty passion, and</line>
+            <line>stung by remorse and despair he killed</line>
+            <line>himself. Why is it that I feel no horror?</line>
+            <line>Are these circumstances not dreadful?</line>
+            <line>Is it not enough that I shall never</line>
+            <line>more meet the eyes of my beloved</line>
+            <line>father; never more hear his voice;</line>
+            <line>no caress, no look? All cold, and stiff, and</line>
+            <line>dead! Alas! I am quite callous: the</line>
+            <line>night I was out in was fearful and the</line>
+            
+        
+    </zone>
+</surface>

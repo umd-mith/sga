@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0205" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="108v">
+    <zone type="pagination"><line>194</line></zone>
+    
+    <zone type="main">
+        <line>has himself nurtured desperate</line>
+        <line>thoughts, and longed with impatient</line>
+        <line>desire for death, but who has at</line>
+        <line>length trampled the phantom under</line>
+        <line>foot, and crushed his sting.. Come, as</line>
+        <line>you have played Despair with me</line>
+        <line>I will play the part of Una with you</line>
+        <line>and bring you hurtless from his dark</line>
+        <line>cavern. Listen to me, and let yourself</line>
+        <line>be softened by words in which no</line>
+        <line>selfish passion lingers.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"We know not what<del rend="strikethrough">t</del> all this</line>
+        <line>wide world means; its strange mixture</line>
+        <line>of good and evil. But we have been</line>
+        <line>placed here and bid live and hope.</line>
+        <line>I know not what we are to hope;</line>
+        <line>but there is some good beyond us</line>
+        <line>that we must seek; and that is our</line>
+        <line>earthly task. If misfortune come against</line>
+        <line>us we must fight with her; we must</line>
+        <line>cast her aside, and still go on to find</line>
+        
+    </zone>
+</surface>

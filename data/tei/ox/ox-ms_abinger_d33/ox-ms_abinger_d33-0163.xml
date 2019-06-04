@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0163" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="85v">
+    <zone type="pagination"><line>152</line></zone>
+    
+    <zone type="main">
+        <line>he was. He was like a poet of old</line>
+        <line>whom the muses had crowned in his</line>
+        <line>cradle, and on whose lips bees had</line>
+        <line>fed. As he walked among other men</line>
+        <line>he seemed encompassed with a hea</line>
+        <line>venly halo that divided him from</line>
+        <line>and lifted him above them. It was</line>
+        <line>his surpassing beauty, the dazzling fire</line>
+        <line>of his eyes, and his words whose rich</line>
+        <line>accents wrapt the listener in mute</line>
+        <line>and extactic wonder, that made him</line>
+        <line>transcend all others so that before</line>
+        <line>him they appeared only formed to</line>
+        <line>minister to his superior excellence.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">He was glorious from his youth.</line>
+        <line>Every one loved him; no shadow of</line>
+        <line>envy or hate cast even from <del rend="strikethrough">f</del> the</line>
+        <line>meanest mind ever fell upon him:</line>
+        <line>He was, as one the peculiar delight</line>
+        <line>of the Gods, railed and fenced in by his</line>
+        <line>own divinity, so that nought but</line>
+        <line>love and admiration could approach</line>
+        
+    </zone>
+</surface>

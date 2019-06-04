@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0235" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="123v">
+    <zone type="pagination"><line>224</line></zone>
+    
+    <zone type="main">
+        <line>and to know they would soon be chill ––</line>
+        <line>I will not continue to trace this frightful</line>
+        <line>picture; you suffered this torture once; I never</line>
+        <line>did. And <del rend="strikethrough">its sre</del> the remembrance <del rend="strikethrough">still</del></line>
+        <line>fills your heart sometimes with bitter</line>
+        <line>despair when otherwise <del rend="strikethrough">a soft sorrow</del></line>
+        <line>your feelings would have melted into soft</line>
+        <line>sorrow.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">So day by day I become weaker, and life</line>
+        <line>flickers in my wasting form, as a lamp</line>
+        <line>about to loose its vivifying oil. I now be</line>
+        <line>hold the glad sun of May. It was May,</line>
+        <line>four years ago, that I first saw my</line>
+        <line>beloved father; it was in May, three years</line>
+        <line>ago that my folly destroyed the only being I</line>
+        <line>was doomed to love. May is returned, and I</line>
+        <line>die. Three days ago, the anniversary of</line>
+        <line>our meeting; and, alas! of our eternal se</line>
+        <line>peration, after a day of killing emotion, I</line>
+        <line>caused myself to be led once more to behold</line>
+        <line>the face of nature. I caused myself to be</line>
+        <line>carried to some meadows some miles distant</line>
+        
+    </zone>
+</surface>

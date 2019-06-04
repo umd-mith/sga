@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0177" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="92v">
+    <zone type="pagination"><line>166</line></zone>
+    
+    <zone type="main">
+        <line>I had before endured. These were dread-</line>
+        <line>ful fears and they even haunted my</line>
+        <line>dreams.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I was one day seated on the verge</line>
+        <line>of the clump of pines when <del rend="strikethrough">Herbert</del></line>
+        <line><anchor xml:id="d33-0177.01"/>rode past. As soon as I perceived him</line>
+        <line>I suddenly rose to escape from his obser</line>
+        <line>vation by entering among the trees.</line>
+        <line>My rising startled his horse; he reared</line>
+        <line>and plunged and the Rider was at</line>
+        <line>length thrown. The horse then ga</line>
+        <line>lopped swiftly across the heath and</line>
+        <line>the <del rend="strikethrough">rider</del> stranger remained on</line>
+        <line>the ground stunned by his fall. He</line>
+        <line>was not materially hurt, a little</line>
+        <line>fresh water soon <mod><del rend="strikethrough">revived</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">recovered</add></mod> him.</line>
+        <line>I was struck by his exceeding beauty,</line>
+        <line>and as he spoke to thank me the</line>
+        <line>sweet but melancholy cadence of</line>
+        <line>his voice brought tears into my</line>
+        <line>eyes. <del rend="strikethrough">A sho</del></line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">A short conversation passed be-</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0177.01">
+        <line>Woodville</line>
+    </zone>
+</surface>

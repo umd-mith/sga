@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0201" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="106v">
+    <zone type="pagination"><line>190</line></zone>
+    
+    <zone type="main">
+        <line>let us drink it together and willingly &amp;</line>
+        <line>joyfully quit this hated round of daily life</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"You <del rend="strikethrough">ter</del> turn frome me;</line>
+        <line>yet before you deny me reflect,</line>
+        <line><anchor xml:id="d33-0201.01"/><del rend="strikethrough">Lovel</del> <del rend="strikethrough">Herbert,</del> how sweet it were to</line>
+        <line>cast off the load of tears and misery under</line>
+        <line>which we now labour: and surely we</line>
+        <line>shall find light after we have passed</line>
+        <line>the dark valley. That drink will plunge</line>
+        <line>us in a sweet slumber, and when</line>
+        <line>we awaken <del rend="strikethrough">from it</del> what joy will be</line>
+        <line>ours to find all our sorrows and</line>
+        <line>fears past. <hi rend="underline">A little patience, and all</hi></line>
+        <line><hi rend="underline">will be over</hi>; aye, a very little patience;</line>
+        <line>for, look, there is the key of our prison;</line>
+        <line>we hold it in our own hands, and are</line>
+        <line>we more debased than slaves to cast</line>
+        <line>it <del rend="strikethrough">to</del> away and give ourselves up to</line>
+        <line>voluntary bondage? Even now if we had</line>
+        <line>courage we might be free. Behold,</line>
+        <line>my cheek is flushed with pleasure at</line>
+        <line>the imagination of death; all that</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0201.01">
+        <line>Woodville</line>
+    </zone>
+</surface>

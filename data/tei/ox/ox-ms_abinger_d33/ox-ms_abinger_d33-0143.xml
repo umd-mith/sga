@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0143" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="74r">
+    <zone type="pagination"><line>132</line></zone>
+    <zone type="library"><line>74</line></zone>
+    
+    <zone type="main">
+        <line>what loathsome shifts must I be</line>
+        <line>driven? <del rend="strikethrough">And</del> yet a whole life of false-</line>
+        <line>hood was otherwise my portion: and</line>
+        <line>when remorse at being the contriver of</line>
+        <line>any cheat made me shrink from my</line>
+        <line>design I was irrisistably led back and</line>
+        <line>confirmed in it by the visit of some</line>
+        <line><del rend="strikethrough">at</del> Aunt or cousin, who would tell me</line>
+        <line>that death was the end of all men.</line>
+        <line>And then say that my father had sure</line>
+        <line>ly lost his wits ever since my mother’s</line>
+        <line>death; that he was mad and that I</line>
+        <line>was fortunate, for in one of his fits</line>
+        <line>he might have killed me instead of</line>
+        <line>destroying his own crazed being. And all</line>
+        <line>this, to be sure, was delicately put; not</line>
+        <line>in broad words for my feelings might</line>
+        <line>be hurt but <del rend="strikethrough">in far</del></line>
+        <line rend="indent3"><del rend="strikethrough">In dark hint,</del></line>
+        <line rend="indent4">Whispered so and so</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">In dark hint soft and low <add place="superlinear">X </add></line>
+        <anchor xml:id="d33-0143.01"/>
+            <line>with downcast eyes, and sympathizing</line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0143.01">
+        <line><add place="superlinear">X</add>Coleridge’s Fire, Famine and Slaughter.</line>
+    </zone>
+
+</surface>

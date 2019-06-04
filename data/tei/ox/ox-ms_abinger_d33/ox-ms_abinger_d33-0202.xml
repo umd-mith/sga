@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0202" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="107r">
+    <zone type="pagination"><line>191</line></zone>
+    <zone type="library"><line>107</line></zone>
+    
+    <zone type="main">
+        <line>we love are dead. Come, give me your</line>
+        <line>hand, one look of joyous sympathy and</line>
+        <line>we will go together and seek them; a lulling</line>
+        <line>journey; where our arrival will bring</line>
+        <line>bliss and our waking be that of angels.</line>
+        <line>Do you delay? Are you a coward,</line>
+        <line><anchor xml:id="d33-0202.01"/><del rend="strikethrough">Herbert</del>? Oh fie! Cast off this blank</line>
+        <line>look of human melancholy. Oh! that</line>
+        <line>I had words to express the luxury of</line>
+        <line>death that I might win you. I tell</line>
+        <line>you we are no longer miserable</line>
+        <line>mortals; we are about to become</line>
+        <line>Gods; spirits free <del rend="strikethrough">l</del> and happy as gods.</line>
+        <line>What fool on a bleak shore, seeing a</line>
+        <line>flowery isle <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">on the other side</add></mod> with his lost love beckon</line>
+        <line>ing to him from it would pause because</line>
+        <line>the wave is dark and turbid?</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"What if some little payne the passage have</line>
+        <line rend="indent1">That makes frayle <del rend="strikethrough">fles</del> flesh to fear</line>
+        <line rend="center">the bitter wave?</line>
+        <anchor xml:id="d33-0202.02"/>
+        <line rend="indent1">Is not short payne well borne that brings long</line>
+        <line rend="center">ease,</line>
+        <line rend="indent1">And lays the soul to sleep in quiet grave?</line>
+        <line rend="right">?</line>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0202.01">
+        <line>Woodville</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0202.02">
+        <line>Spencer’s</line>
+        <line>Faery Queen</line>
+        <line>Book I – Canto</line>
+    </zone>
+</surface>

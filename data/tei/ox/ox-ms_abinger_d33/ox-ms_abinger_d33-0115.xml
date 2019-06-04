@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0115" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="60v">
+    <zone type="pagination"><line>104</line></zone>
+    
+    <zone type="main">
+        <line>exclusive affection you felt for me.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"But when I saw you become the</line>
+        <line>object of another’s love; when I imagined</line>
+        <line>that you might be loved otherwise</line>
+        <line>than as a sacred type and image</line>
+        <line>of loveliness and excellence; or that you</line>
+        <line><del rend="strikethrough">y</del> might love another with a more</line>
+        <line>ardent affection than that which</line>
+        <line>you bore to me, then the fiend awoke</line>
+        <line>within me; I dismissed your lover;</line>
+        <line>and from that moment I have known</line>
+        <line>no peace. I have sought in vain for</line>
+        <line>sleep and rest; my <del rend="strikethrough">ld</del> lids refused to close,</line>
+        <line>and my blood was for ever in a tumult.</line>
+        <line>I awoke to a new life as one who dies</line>
+        <line>in hope might wake in Hell. I will</line>
+        <line>not sully your imagination <del rend="strikethrough">with</del> by</line>
+        <line>recounting my combats, my self-anger</line>
+        <line>and my despair. Let a veil be drawn</line>
+        <line>over the <mod><del rend="strikethrough">unspeakable</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">unimaginable</add></mod> sensations of</line>
+        <line>a guilty father; the secrets of so agonized</line>
+        
+    </zone>
+</surface>

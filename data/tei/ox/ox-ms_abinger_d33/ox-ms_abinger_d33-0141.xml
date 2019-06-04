@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0141" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="73v">
+    <zone type="pagination"><line>130</line></zone>
+
+    <zone type="main">
+        <line>– Or after life – No, no, I will not per-</line>
+        <line>suade myself to die, I may not, dare not.</line>
+        <line>And then I wept; yes, warm tears once</line>
+        <line>more struggled into my eyes soothing</line>
+        <line>yet bitter; and after I had wept much</line>
+        <line>and called with unavailing anguish,</line>
+        <line>with outstretched arms, for my cruel</line>
+        <line>father; after my weak frame was</line>
+        <line>exhausted by <del rend="strikethrough">var</del> all variety of plaint</line>
+        <line>I sank once more into reverie, and</line>
+        <line>once more reflected on how I might</line>
+        <line><anchor xml:id="d33-0141.01"/> that which I most desired; dear to</line>
+        <line>me if aught were dear, a death-</line>
+        <line>like solitude.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I dared not die, but I might</line>
+        <line>feign death, and thus escape from my</line>
+        <line>comforters: they will believe me united to</line>
+        <line>my father, and so indeed I shall be.</line>
+        <line>For alone, when no voice can disturb</line>
+        <line>my dream, and no cold eye meet mine</line>
+        <line>to check its fire, then I may commune</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0141.01">
+        <line>find</line>
+    </zone>
+</surface>

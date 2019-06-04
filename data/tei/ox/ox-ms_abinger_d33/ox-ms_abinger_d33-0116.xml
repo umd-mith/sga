@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0116" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="61r">
+    <zone type="pagination"><line>105</line></zone>
+    <zone type="library"><line>61</line></zone>
+    
+    <zone type="main">
+        <line>a heart may not be made vulgar.</line>
+        <line>All was uproar, crime, <del rend="strikethrough">remore</del> remorse</line>
+        <line>and hate, yet still the tenderest love,</line>
+        <line>and what first awoke me to the</line>
+        <line>firm resolve of conquering my passion</line>
+        <line>and of restoring her father to my child</line>
+        <line>was the sight of your bitter and sympa-</line>
+        <line>thizing sorrows. It was this that led me</line>
+        <line>here: I thought that if I could again</line>
+        <line>awaken in <del rend="strikethrough">me</del> my <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">heart the</add></mod> grief <mod><del rend="strikethrough">for</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">I had felt at</add></mod> the loss</line>
+        <line>of your mother, and the many associations</line>
+        <line>with her memory which had been</line>
+        <line>laid to sleep for seventeen years, that</line>
+        <line>all love for her child would become</line>
+        <line>extinct. In a fit of heroism I deter-</line>
+        <line>mined to go alone; to quit you, the</line>
+        <line>life of my life, and not to see you</line>
+        <line>again untill I might guiltlessly.</line>
+        <line>But it would not do: I rated my forti-</line>
+        <line>tude too high, or my love too low. I</line>
+        <line>should certainly have died if you had</line>
+        <line>not hastened to me. Would that I</line>
+        <line>had then been indeed extinguished!</line>
+        
+    </zone>
+</surface>

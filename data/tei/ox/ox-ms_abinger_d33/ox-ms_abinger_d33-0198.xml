@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0198" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="105r">
+    <zone type="pagination"><line>187</line></zone>
+    <zone type="library"><line>105</line></zone>
+    
+    <zone type="main">
+        <line><del rend="strikethrough">an</del> amusement; and when he does not</line>
+        <line>know what else to do he passes his lazy</line>
+        <line>hours here, and calls this friendship –</line>
+        <milestone unit="tei:div"/>
+        <milestone unit="tei:p"/>
+        <line>It is true that his presence is a consolation to me; <zone type="library"><line>105</line></zone></line>
+        <line>and that his words are sweet, and, when he will</line>
+        <line>he can pour forth thoughts that win me from</line>
+        <line>despair. His words are sweet, – and so, truly, is the</line>
+        <line>honey of the bee, but the bee has a sting, and</line>
+        <line>unkindness <del rend="strikethrough">form</del> <del rend="strikethrough">is</del> is a worse smart <del rend="strikethrough">that</del> than</line>
+        <line>that received from an insect’s venom. I will</line>
+        <milestone unit="tei:div"/>
+        <milestone unit="tei:p"/>
+        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0198.02"/>ut him to <add place="sublinear"><metamark function="insert">^</metamark></add>the proof.</add></mod> He says all hope is dead to him, and</line>
+        <line>I know that it is dead to me, so we are</line>
+        <line>both equally fitted for death. Let me</line>
+        <line>try if he will die with me; and as I</line>
+        <line>fear to die alone, if he will accompa</line>
+        <line>ny to cheer me, and thus he can shew</line>
+        <line><del rend="strikethrough">hins</del> himself <del rend="strikethrough">f</del> my friend in the only</line>
+        <line>manner my misery will permit.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">It was madness I believe, but I</line>
+        <line>so worked myself up to this idea that I</line>
+        <line>could think of nothing else. If he dies</line>
+        <line>with me it is well, and there will be an</line>
+        <anchor xml:id="d33-0198.01"/>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0198.01">
+        <line><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">X</add> <del rend="strikethrough">It is true</del></line>
+        <line><del rend="strikethrough">consolati</del></line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0198.02">
+        <line>p</line>
+    </zone>
+</surface>

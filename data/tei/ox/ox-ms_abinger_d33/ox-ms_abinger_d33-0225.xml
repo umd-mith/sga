@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0225" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="118v">
+    <zone type="pagination"><line>214</line></zone>
+    
+    <zone type="main">
+        <line>and my sunken cheek, before pale,</line>
+        <line>burned with a hectic fever. One by</line>
+        <line>one these symptoms struck me; &amp;</line>
+        <line>I became convinced that the moment</line>
+        <line>I had so much desired was about to</line>
+        <line>arrive and that I was dying. I</line>
+        <line>was sitting by my fire, the physician</line>
+        <line>who had attended me ever since</line>
+        <line>my fever had just left me, and I</line>
+        <line>looked over his prescription in</line>
+        <line>which digitalis was the prominent</line>
+        <line>medecine. "Yes," I said, "I see how</line>
+        <line>this is, and it is strange that I</line>
+        <line>should have deceived myself so long;</line>
+        <line>I am about to die an innocent</line>
+        <line>death, and it will be sweeter even</line>
+        <line>than that which the opium pro-</line>
+        <line>mised."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I rose and walked slowly to the</line>
+        <line>window; the <del rend="strikethrough">wind</del> wide heath</line>
+        <line><del rend="strikethrough">a</del> was covered by snow which spark</line>
+        
+    </zone>
+</surface>

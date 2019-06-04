@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0167" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="87v">
+    <zone type="pagination"><line>156</line></zone>
+    
+    <zone type="main">
+        <line>exquisite beauty who lived under the care</line>
+        <line>of her guardian; From the moment they</line>
+        <line>were seen together they appeared formed</line>
+        <line>for each other. Elinor had not the</line>
+        <line>genius of <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> <mod><del rend="strikethrough">was</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">but</add></mod> she was gene</line>
+        <line>-rous and noble, and exalted by her</line>
+        <line>youth and the love that she</line>
+        <line>every where excited above the know</line>
+        <line>ledge of aught but virtue and excel</line>
+        <line>lence. She was lovely; her manners</line>
+        <line>were frank and simple; her deep</line>
+        <line>blue eyes swam in a lustre which</line>
+        <line>could only be given by <del rend="strikethrough">by</del> sensibility</line>
+        <line>joined to wisdom.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">They were formed for<del rend="strikethrough">e</del> one another</line>
+        <line>and they soon loved. <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> for the</line>
+        <line>first time felt the delight of love;</line>
+        <line>and Elinor was enraptured in</line>
+        <line>possessing the heart of one so beau</line>
+        <line>tiful and glorious among his fellow</line>
+        <line>men. Could any thing but unmixed joy</line>
+        <line>flow from such a union?</line>
+        <line><anchor xml:id="d33-0167.01"/><del rend="strikethrough">dville</del> Lovel <del rend="strikethrough">Wo</del> <del rend="strikethrough">Herbert</del> was a Poet –</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0167.01">
+        <line><del rend="strikethrough">Woo</del></line>
+    </zone>
+</surface>

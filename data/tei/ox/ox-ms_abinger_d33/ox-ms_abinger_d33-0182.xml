@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0182" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="95r">
+    <zone type="pagination"><line>171</line></zone>
+    <zone type="library"><line>95</line></zone>
+    
+    <zone type="main">
+        <line>themselves desire; the evil punished</line>
+        <line>as all things evil ought to be pu-</line>
+        <line>nished, not by pain which is revol-</line>
+        <line>ting to all philanthropy to consider</line>
+        <line>but by quiet obscurity, which simply</line>
+        <line>deprives them of their harmful</line>
+        <line>qualities; Why kill the serpent when</line>
+        <line>you have extracted his fangs?</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">The poetry of his language and</line>
+        <line>ideas which my words ill convey held</line>
+        <line>me enchained to his discourses. It</line>
+        <line>was a melancholy pleasure to me</line>
+        <line>to listen to his inspired words; to</line>
+        <line>catch for a <del rend="strikethrough">for</del> moment the light</line>
+        <line>of his eyes to feel <del rend="strikethrough">sympathy</del> a tran</line>
+        <line>-sient sympathy and then to awaken</line>
+        <line>from the delusion, again to know</line>
+        <line>that all this was nothing, – a dream –</line>
+        <line>a shadow for that there was no reallity</line>
+        <line>for me; my father had for ever</line>
+        <line>deserted me, leaving me only memories</line>
+        
+    </zone>
+</surface>

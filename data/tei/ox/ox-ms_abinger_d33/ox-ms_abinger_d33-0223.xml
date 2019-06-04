@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0223" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="117v">
+    <zone type="pagination"><line>212</line></zone>
+    
+    <zone type="main">
+        <line>shower; as my dank hair clung to</line>
+        <line>my neck and partly covered my face,</line>
+        <line>I had hardly strength to part with</line>
+        <line>my fingers, the long strait locks</line>
+        <line>that fell before my eyes. The dark</line>
+        <line>ness was much dissipated and in</line>
+        <line>the east where the clouds were</line>
+        <line>least dense the moon was</line>
+        <line>visible behind the thin grey</line>
+        <line>cloud –</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">The moon is behind, and at the full</line>
+        <line rend="indent1">And yet she looks both small <del rend="strikethrough">&amp; dull</del></line>
+        <line rend="center">and dull.</line>
+        <milestone unit="tei:p"/>
+        <line><del rend="strikethrough">but</del> Its presence gave me a hope</line>
+        <line>that by its means <del rend="strikethrough">Imi</del> I might</line>
+        <line>find my home. But I was languid</line>
+        <line>and many hours passed before I</line>
+        <line>could reach the cottage, dragging as</line>
+        <line>I did my <del rend="strikethrough">l</del> slow steps, and often</line>
+        <line>resting on the wet earth unable to</line>
+        <line>proceed.</line>
+        
+    </zone>
+</surface>

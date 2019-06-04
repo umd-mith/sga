@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0188" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="98r">
+    <zone type="pagination"><line>177</line></zone>
+    <zone type="library"><line>98</line></zone>
+    
+    <zone type="main">
+        <line>You have cast yourself from among</line>
+        <line>us and you wither on this wild <del rend="strikethrough">pla</del> plain</line>
+        <line>folorn and helpless: some dreadful calamity</line>
+        <line>must have befallen you. Do not turn</line>
+        <line>from <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">me</add></mod>; I do not ask you to reveal it: I only</line>
+        <line>entreat you to listen to me and to</line>
+        <line>become familiar with the voice of</line>
+        <line>consolation and kindness. If pity, and</line>
+        <line>admiration, and <del rend="strikethrough">gentlle</del> gentle affection</line>
+        <line>can wean you from despair let me</line>
+        <line>attempt the task. I cannot see your look</line>
+        <line>of deep grief without endeavouring to</line>
+        <line>restore you to happier feelings. Unbend</line>
+        <line>your brow; relax the stern melancholy</line>
+        <line>of your regard; permit a friend, a sin</line>
+        <line>cere, affectionate friend, I will be one,</line>
+        <line>to convey some relief, some momentary</line>
+        <line>pause to your sufferings</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"Do not think that I would intrude</line>
+        <line>upon your confidence: I only ask your</line>
+        <line>patience. Do not for ever look sorrow and</line>
+        <line>never speak it; utter one word of bitter</line>
+        
+    </zone>
+</surface>

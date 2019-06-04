@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-00" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="">
+    <zone type="pagination"><line><del rend="strikethrough">191</del> 183</line></zone>
+    <zone type="library"><line>102</line></zone>
+    
+    <zone type="main">
+        <line>returned; the work of consolation was</line>
+        <line>183 [in left margin] ever to begin anew. I often desired his</line>
+        <line>entire absence; for I found that I</line>
+        <line>was grown out of the ways of life</line>
+        <line>and that by long seclusion, although</line>
+        <line>I could support my accustomed grief,</line>
+        <line>and drink the bitter daily draught</line>
+        <line>with some degree of patience, yet</line>
+        <line>I had become unfit for the slightest</line>
+        <line>novelty of feeling. Expectation, and</line>
+        <line>hopes, and affection were all too</line>
+        <line>much for me. I knew this, but at</line>
+        <line>other times I was unreasonable and</line>
+        <line>laid the blame upon him, who was</line>
+        <line>most blameless, and pevishly thought</line>
+        <line><anchor xml:id="d33-0194.01"/>if his <del rend="strikethrough">more</del> gentle soul were more</line>
+        <line>gentle, if his intense sympathy were</line>
+        <line>more intense, he could drive the fiend</line>
+        <line>from my soul and make me more</line>
+        <line>human. I am, I thought, a tragedy; a</line>
+        <line>character that he comes to see act:</line>
+        <line>now and then he gives me <del rend="strikethrough">h</del> my cue</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0194.01">
+        <line>that</line>
+    </zone>
+</surface>

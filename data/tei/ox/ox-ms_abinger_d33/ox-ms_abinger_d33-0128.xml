@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0128" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="">
+    <zone type="pagination"><line>117</line></zone>
+    <zone type="library"><line>67</line></zone>
+    
+    <zone type="main">
+        <line>blood became intolerable. The <del rend="strikethrough">shu sw</del></line>
+        <line><del rend="strikethrough">mids</del> summer sun shone in an</line>
+        <line>unclouded sky; the air was close but</line>
+        <line>all was cool to me except my own</line>
+        <line>scorching skin. Towards evening dark</line>
+        <line>thunder clouds arose above the horizon</line>
+        <line>and I heard its distant roll – after</line>
+        <line>sunset they darkened the whole sky</line>
+        <line>and it began to rain <del rend="strikethrough">and</del> <del rend="strikethrough">the storm</del></line>
+        <line><del rend="strikethrough">ther</del> <del rend="strikethrough">the lightning and thunder</del> the</line>
+        <line>lightning lighted up the whole country</line>
+        <line>and the thunder drowned the noise of</line>
+        <line>our carriage. At the <del rend="strikethrough">nexet</del> next</line>
+        <line><del rend="strikethrough">inu</del> inn my father had not taken</line>
+        <line>horses; he had left a box there saying</line>
+        <line>he would return, and had walked</line>
+        <line>over the fields to the town of ––– a</line>
+        <line>seacost town eight miles off. <del rend="strikethrough">For</del></line>
+        <line><del rend="strikethrough">a moment</del></line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">For a moment I was almost</line>
+        <line>paralized by fear; but my energy</line>
+        <line>returned and I demanded a guide to</line>
+        
+    </zone>
+</surface>

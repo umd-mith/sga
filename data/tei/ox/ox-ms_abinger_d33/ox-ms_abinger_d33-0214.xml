@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0214" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="113r">
+    <zone type="pagination">
+        <line><del rend="strikethrough">204</del></line>
+        <line>203</line></zone>
+    <zone type="library"><line>113</line></zone>
+    
+    <zone type="main">
+        <line> been the source of guilt that wants</line>
+        <line>a name?</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">This was <del rend="strikethrough">superstion</del> superstition.</line>
+        <line>I did not feel thus franticly when</line>
+        <line>first I knew that the holy name of</line>
+        <line>father was become a curse to me:</line>
+        <line>but my lonely life inspired me with</line>
+        <line>wild thoughts; and <del rend="strikethrough">and</del> then when</line>
+        <line>I saw <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add> <del rend="strikethrough">Herbert</del></mod> &amp; day after day he tried</line>
+        <line><del rend="strikethrough">he</del> to win my confidence and I <del rend="strikethrough">I</del> never</line>
+        <line>dared give words to my dark tale, I was</line>
+        <line>impressed more strongly with the withering</line>
+        <line>fear that I was in truth a marked</line>
+        <line>creature, a pariah, only fit for death.</line>
+        
+    </zone>
+</surface>

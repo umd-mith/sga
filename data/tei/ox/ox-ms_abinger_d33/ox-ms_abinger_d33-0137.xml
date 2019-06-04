@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0137" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="71v">
+    <zone type="pagination"><line>126</line></zone>
+    
+    <zone type="main">
+        <line>cold rain that <del rend="strikethrough">that</del> fell about my heart</line>
+        <line>has acted like the waters of the <mod><del rend="strikethrough">fountain</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">cavern</add></mod></line>
+        <line>of Antiparos and has changed <mod><del rend="strikethrough">my heart</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">it</add></mod></line>
+        <line>to stone. I do not weep or sigh; but I</line>
+        <line>must reason with myself, and force</line>
+        <line>myself to feel sorrow and despair. This is</line>
+        <line>not resignation that I feel, for I am dead</line>
+        <line>to all regret</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2"><del rend="strikethrough">Thus</del> I communed <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">in this manner</add></mod> with myself,</line>
+        <line>but I was silent to all around me. I</line>
+        <line>hardly replied to the <del rend="strikethrough">stig</del> slightest ques</line>
+        <line>tion, and was uneasy when I saw a</line>
+        <line>human creature near me. I was</line>
+        <line>surrounded by my female relations, but</line>
+        <line>they were all of them nearly strangers to</line>
+        <line>me: I did not listen to their consola-</line>
+        <line>tions; and so little did they work their</line>
+        <line>designed effect that they seemed to</line>
+        <line>me to be spoken in an unknown</line>
+        <line>tongue. I found if sorrow <mod><del rend="strikethrough">were</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">was</add></mod> dead</line>
+        <line>within me, so was love and <add place="superlinear">the</add> desire of</line>
+        
+    </zone>
+</surface>

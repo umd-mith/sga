@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0123" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="64v">
+    <zone type="pagination"><line>112</line></zone>
+    
+    <zone type="main">
+        <line>by which he had dissuaded me from</line>
+        <line>this step were those that determined</line>
+        <line>me. Why did he write them? He</line>
+        <line>must know that if I believed that</line>
+        <line>his intention was merely to absent</line>
+        <line>himself from me that instead of</line>
+        <line>opposing him it <del rend="strikethrough">what</del> would be</line>
+        <line>that which I should myself re-</line>
+        <line>-quire – or if he thought that any</line>
+        <line>lurking feeling, yet he could not think</line>
+        <line>that, should lead me to him would</line>
+        <line>he endeavour to overthrow the only</line>
+        <line>hope he could <del rend="strikethrough">e</del> have of ever</line>
+        <line>seeing me again; a lover, there was</line>
+        <line>madness in the thought, yet he was</line>
+        <line>my lover, would not act thus. No, he</line>
+        <line>had determined to die, and he wished</line>
+        <line>to spare me the misery of knowing</line>
+        <line>it. The few ineffectual words he</line>
+        <line>had said <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">concerning his duty</add></mod> were to me a further</line>
+        <line><del rend="strikethrough">poroo</del> proof – and the more I studied</line>
+        <line>the letter the more did I perceive</line>
+        
+    </zone>
+</surface>

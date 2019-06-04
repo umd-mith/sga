@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0147" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="77v">
+    <zone type="pagination"><line>136</line></zone>
+    
+    <zone type="main">
+        <line>Nature I unawares, called down a bles</line>
+        <line>sing on my own soul. But in a</line>
+        <line>city all is closed shut like a</line>
+        <line>prison, a wiry prison from which</line>
+        <line>you can peep at the sky only. I can</line>
+        <line>not describe to you what were the</line>
+        <line>frantic <del rend="strikethrough">naut</del> nature of my sensations</line>
+        <line><del rend="strikethrough">there</del> while I resided there; I was often</line>
+        <line>on the verge of madness. Nay, when</line>
+        <line>I look back on many of my wild thoughts,</line>
+        <line>thoughts with which actions some-</line>
+        <line>times endeavoured to keep pace;</line>
+        <line>When I tossed my hands high cal-</line>
+        <line>ling down the cope of heaven to fall</line>
+        <line>on me and bury me; when I tore</line>
+        <line>my hair and throwing it to the</line>
+        <line>winds cried, "Ye are free, go seek my</line>
+        <line>father!" And then, like the unfortu</line>
+        <line>nate Constance, catching at them</line>
+        <line>again, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and tying them up</add></mod> that nought might <del rend="strikethrough">femd</del></line>
+        <line>find him if I might not. How, on</line>
+        <line>my knees I have <del rend="strikethrough">co</del> fancied myself</line>
+        <line>close to my father’s grave and struck</line>
+        
+    </zone>
+</surface>

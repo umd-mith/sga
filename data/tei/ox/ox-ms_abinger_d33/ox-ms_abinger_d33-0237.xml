@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0237" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="124v">
+    <zone type="pagination"><line>226</line></zone>
+    
+    <zone type="main">
+        <line>be green on my grave; and the violets will</line>
+        <line>bloom on it. <hi rend="underline">There</hi> is <del rend="strikethrough">my</del> my hope and my</line>
+        <line>expectation; your’s are in this world; may</line>
+        <line>they be fulfilled.</line>
+        
+    </zone>
+</surface>

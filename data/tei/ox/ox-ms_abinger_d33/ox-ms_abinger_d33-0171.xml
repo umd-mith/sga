@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0171" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="89v">
+    <zone type="pagination"><line>160</line></zone>
+    
+    <zone type="main">
+        <line>to her. His heart, he knew not why</line>
+        <line>prognosticated misfortune; he had not</line>
+        <line>heard from her again; he feared she</line>
+        <line>might be worse and this fear made</line>
+        <line>him <del rend="strikethrough">p</del> impatient and restless for the</line>
+        <line>moment of beholding her once more</line>
+        <line>stand before him <del rend="strikethrough">in health</del> arrayed</line>
+        <line>in health and beauty; for a sinister</line>
+        <line>voice seemed always to whisper to him,</line>
+        <line>"You will never more behold her as</line>
+        <line>she was."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">When he arrived at her habitation</line>
+        <line>all was silent in it: he made his way</line>
+        <line>through several rooms; in one he saw</line>
+        <line>a servant weeping bitterly: he was</line>
+        <line>faint with fear and could hardly</line>
+        <line>ask, "Is she dead?" And just listened</line>
+        <line>to the dreadful answer, "Not Yet."</line>
+        <line>These astounding words came on him</line>
+        <line>as <add place="superlinear">X</add> those which he had expected; and to</line>
+        <line>learn that she was still in being,</line>
+        <anchor xml:id="d33-0171.01"/>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0171.01">
+        <line>of less fearful <del rend="strikethrough">than</del> import than</line>
+    </zone>
+</surface>

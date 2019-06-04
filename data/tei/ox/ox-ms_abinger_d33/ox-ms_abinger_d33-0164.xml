@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0164" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="86r">
+    <zone type="pagination"><line>153</line></zone>
+    <zone type="library"><line>86</line></zone>
+    
+    <zone type="main">
+        <line>His heart was simple like a child,</line>
+        <line><anchor xml:id="d33-0164.01"/><mod><del rend="strikethrough">no </del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">not</add></mod> stained <del rend="strikethrough">of</del> <del rend="strikethrough">arro</del> by arrogance or vanity.</line>
+        <line>He mingled in society unknowing of his</line>
+        <line>superiority over his companions, not</line>
+        <line>because he undervalued himself but</line>
+        <line>because he did not perceive the inferiori</line>
+        <line>-ty of others. He seemed incapable of</line>
+        <line>conceiving of the full <del rend="strikethrough">o</del> extent of the</line>
+        <line>power that selfishness &amp; vice</line>
+        <line>possesses in the world: when I knew</line>
+        <line>him, although he had suffered disap</line>
+        <line>pointment in his dearest hopes, he</line>
+        <line>had <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">not experienced</add> <del rend="strikethrough">suffered</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">any</add> <del rend="strikethrough">none</del></mod> any that arose from</line>
+        <line>the meaness and self love of men <add place="superlinear">X</add>: it</line>
+        <line>is one of the blessings of a moderate</line>
+        <line>fortune, that by preventing the</line>
+        <line>possessor from confering pecuniary</line>
+        <line>favours it prevents him also from</line>
+        <line>diving into the <del rend="strikethrough">soul</del> arcana of human</line>
+        <line>weakness or malice – To bestow on</line>
+        <line>your fellow men is a Godlike attri</line>
+        <line>bute – So indeed it is and as such not</line>
+        <line>one fit for mortality; – <del rend="strikethrough">And</del> <del rend="strikethrough">of</del> the giver</line>
+        <anchor xml:id="d33-0164.02"/>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0164.01">
+        <line>un<del rend="strikethrough">it was</del></line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0164.02">
+        <line>his station was too <del rend="strikethrough">low</del> high to allow of his suffering <del rend="strikethrough">thou</del> through</line>
+        <line>their <del rend="strikethrough">heart</del> <del rend="strikethrough">had</del> hardheartedness; and too low for him to have experienced</line>
+        <line>ingratitude and encroaching <del rend="strikethrough">meaness</del> selfishness</line>
+    </zone>
+</surface>

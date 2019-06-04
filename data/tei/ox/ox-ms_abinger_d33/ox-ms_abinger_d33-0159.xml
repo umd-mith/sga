@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0159" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="83v">
+    <zone type="pagination"><line>148</line></zone>
+    
+    <zone type="main">
+        <line>affection; smiles to cheer me and</line>
+        <line><del rend="strikethrough">I</del> gentle words of <del rend="strikethrough">consolation and</del> comfort.</line>
+        <line><anchor xml:id="d33-0159.01"/>one heart in which I could pour</line>
+        <line>unrestrained my plaints, and by the</line>
+        <line>heavenly nature of the soil blessed</line>
+        <line>fruit might <mod><del rend="strikethrough">come</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">spring</add></mod> from such bad</line>
+        <line>seed. <add place="superlinear">X</add> <del rend="strikethrough">Friendship</del> The love that is</line>
+        <line>the soul of friendship is a soft spirit</line>
+        <line>seldom found except when two amia</line>
+        <line>-ble creatures are knit from early youth,</line>
+        <line>or when bound by mutual suffering</line>
+        <line>and pursuits; it comes to some of the</line>
+        <line>elect <del rend="strikethrough">a</del> unsought and unaware; it</line>
+        <line>descends as gentle dew <del rend="strikethrough">and soft flowers</del></line>
+        <line>on chosen spots which however</line>
+        <line>barren they were before become under</line>
+        <line>its <del rend="strikethrough">swee</del> benign influence fertile in</line>
+        <line>all sweet plants; but when desired</line>
+        <line>it flies; it <del rend="strikethrough">so</del> scoffs at <del rend="strikethrough">prayers</del> the</line>
+        <line>prayers of its <del rend="strikethrough">vobra</del> votaries; it will</line>
+        <line>bestow, but not be sought.</line>
+        <anchor xml:id="d33-0159.02"/>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0159.01">
+        <line>I wished for</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0159.02">
+        <line>x Yet how could I find this?</line>
+    </zone>
+</surface>

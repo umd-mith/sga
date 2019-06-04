@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0125" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="65v">
+    <zone type="pagination"><line>114</line></zone>
+    
+    <zone type="main">
+        <line>I did not weep, but I wiped the perpi</line>
+        <line>-ration from my brow, and tried to</line>
+        <line>still my brain and heart beating</line>
+        <line>almost to madness. Oh! I must not</line>
+        <line>be mad when I see him; or perhaps it</line>
+        <line>were as well that I should be, my</line>
+        <line>distraction might calm <mod><del rend="strikethrough">him</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">his,</add></mod> and</line>
+        <line>recall him to the endurance of</line>
+        <line>life. Yet untill I find him I must</line>
+        <line>force reason to keep her seat, and I</line>
+        <line>pressed my forehead hard with my</line>
+        <line>hands – Oh do not leave me; or I</line>
+        <line>shall forget what I am about – in</line>
+        <line><del rend="strikethrough">sbea</del> stead of driving on as we ought</line>
+        <line>with the speed of lightning they will</line>
+        <line>attend to me, and we shall be too</line>
+        <line>late. Oh! God help me! Let him be</line>
+        <line>alive! It is all I ask; in my abject</line>
+        <line>misery I demand no more: no hope,</line>
+        <line>no good: only passion, and guilt, and</line>
+        <line>horror; but alive! Alive! My sensations</line>
+        
+    </zone>
+</surface>

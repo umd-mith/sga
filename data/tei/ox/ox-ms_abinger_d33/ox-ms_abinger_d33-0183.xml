@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0183" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="95v">
+    <zone type="pagination"><line>172</line></zone>
+    
+    <zone type="main">
+        <line>which set an eternal barrier between</line>
+        <line>me and my fellow creatures. I was</line>
+        <line>indeed fellow to none. He – <del rend="strikethrough">Herbert</del></line>
+        <line><anchor xml:id="d33-0183.01"/>mourned the loss of his bride: others</line>
+        <line>wept the various forms of misery</line>
+        <line>as they visited them: but infamy and</line>
+        <line>guilt was mingled with my portion;</line>
+        <line>unlawful and detestable passion</line>
+        <line>had poured its poison into my ears</line>
+        <line>and changed all my blood, so that it</line>
+        <line>was no longer the kindly stream</line>
+        <line>that supports life but a cold fountain</line>
+        <line>of bitterness corrupted in its very source.</line>
+        <line>It must be the excess of madness</line>
+        <line>that could make me imagine that</line>
+        <line>I could ever be aught but one</line>
+        <line>alone; struck off from humanity;</line>
+        <line>bearing no affinity to man or woman;</line>
+        <line>a wretch on whom Nature had</line>
+        <line>set her ban.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Sometimes <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> talked to me</line>
+        <line>of himself. He <del rend="strikethrough">l</del> related his history brief</line>
+        <line></line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0183.01">
+        <line>Woodville, </line>
+    </zone>
+</surface>

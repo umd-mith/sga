@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0145" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="75v">
+    <zone type="pagination"><line>134</line></zone>
+
+    <zone type="main">
+        <line>altered semblance. As grief might change</line>
+        <line>Constance <handShift medium="pencil" new="#mws"/><add place="superlinear">the little
+                Arthur</add>
+            <handShift medium="pen" new="#mws"/>so would deceit change me</line>
+        <line>untill in heaven you would say, "This</line>
+        <line>is not my child" – My father, to be</line>
+        <line>happy both now and when again we</line>
+        <line>meet I must fly from all this life</line>
+        <line>which is mockery to one like me. In</line>
+        <line>solitude only shall I be myself; in</line>
+        <line>solitude I shall be thine</line>
+        
+        <zone type="library"><line>76<hi rend="sup">v</hi></line></zone>
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Alas! I even now look back with disgust at my</line>
+        <line><del rend="strikethrough">co</del> artifices and contrivances by which, after
+            many</line>
+        <line>painful struggles, I effected my retreat. I might enter</line>
+        <line>into a long detail of the means I used, first to secure</line>
+        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">myself</add></mod> a slight maintenance for the remainder of my</line>
+        <line>life, and afterwards to ensure the conviction of</line>
+        <line>my death: I might, but I will not. I even now</line>
+        <line>blush at the falsehoods I uttered; my heart sickens:</line>
+        <line>I will leave this complication of what I hope I</line>
+        <line>may in a manner call innocent deceit to be</line>
+        <line>imagined by the reader. The remembrance haunts</line>
+        <line>me like a crime – I know that if I were to</line>
+        <line>endeavour to relate it my tale would at length <del rend="strikethrough"
+            >be</del></line>
+        <line>remain unfinished. I was</line>
+    </zone>
+</surface>

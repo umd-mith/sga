@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0176" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="92r">
+    <zone type="pagination"><line>165</line></zone>
+    <zone type="library"><line>92</line></zone>
+    
+    <zone type="main">
+        <line>voured to cast off this terrible remembrance,</line>
+        <line>it still hung on him untill memory</line>
+        <line>was too great a burthen for his loaded</line>
+        <line>soul, but when <mod><add place="sublinear"><metamark function="insert">^^</metamark></add><add place="superlinear">on horseback</add></mod> the spell that seeming-</line>
+        <line>ly held him to this idea was<del rend="strikethrough">r</del> snapt;</line>
+        <line>then if he thought of his lost bride</line>
+        <line>he pictured her radiant in beauty;</line>
+        <line>he could hear her voice, and fancy her</line>
+        <line>"a sylvan Huntress by his side," while</line>
+        <line>his <del rend="strikethrough">o</del> eyes brightened as he thought he</line>
+        <line>gazed on her cherished form. I had</line>
+        <line>had several times seen him ride</line>
+        <line><del rend="strikethrough">ar</del> across the heath and felt angry that</line>
+        <line>my solitude should be disturbed. It</line>
+        <line>was so long I had spoken to any but</line>
+        <line>peasants that I felt a disagreable</line>
+        <line>sensation at being gazed on by one</line>
+        <line>of superior rank. I feared also that</line>
+        <line>it might be some one who had seen</line>
+        <line><del rend="strikethrough">b</del> me before: I might be recognized; my</line>
+        <line>impostures discovered and I dragged back</line>
+        <line>to a life of worse torture than that</line>
+        
+    </zone>
+</surface>

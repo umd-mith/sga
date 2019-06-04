@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0175" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="91v">
+    <zone type="pagination"><line>164</line></zone>
+    
+    <zone type="main">
+        <line>that could remind him of what he</line>
+        <line>had been; but as time softened his</line>
+        <line>grief like a true child of Nature he</line>
+        <line>sought in the enjoyment of her</line>
+        <line>beauties for a consolation in his</line>
+        <line>unhappiness. He came to a part of</line>
+        <line>the country where <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he</add></mod> was entirely un</line>
+        <line>known and where in the deepest soli</line>
+        <line>tude he could <del rend="strikethrough">o</del> converse only with his</line>
+        <line>own heart. He found a relief to his im</line>
+        <line>patient grief in the breezes of heaven</line>
+        <line>and in the sound of waters and woods:</line>
+        <line>He became fond of riding; this exercise</line>
+        <line>distracted his mind and <mod><del rend="strikethrough">raised</del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">elevated</add></mod> his <del rend="strikethrough">spirt</del></line>
+        <line>spirits; on a swift horse he could for</line>
+        <line>a moment gain respite from the</line>
+        <line>image that else for ever followed</line>
+        <line>him; Elinor on her death bed, her</line>
+        <line>sweet features changed, and the soft</line>
+        <line>spirit that animated her gradually</line>
+        <line>waning into extinction. For many</line>
+        <line>months <mod><del rend="strikethrough">Herbert</del><add place="sublinear"><metamark function="insert">|</metamark></add><add place="superlinear">Woodville</add></mod> had in vain endea</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0195" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="102v">
+    <zone type="pagination"><line><del rend="strikethrough">192</del>184</line></zone>
+    
+    <zone type="main">
+        <line>that I may make a speech more to</line>
+        <line>his purpose: perhaps he is already</line>
+        <line>planning a poem in which I am to</line>
+        <line>figure. I am a farce and play to him,</line>
+        <line>but to me this is all dreary reality:</line>
+        <line>he takes all the profit and I bear</line>
+        <line>all the burthen.</line>
+        
+    </zone>
+</surface>

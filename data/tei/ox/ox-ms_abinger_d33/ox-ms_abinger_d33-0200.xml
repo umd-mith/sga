@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0200" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="106r">
+    <zone type="pagination"><line>189</line></zone>
+    <zone type="library"><line>106</line></zone>
+    
+    <zone type="main">
+        <line>ing the misery which hourly I do endure,</line>
+        <line>and I will throw it off. What slave</line>
+        <line>will not, if he may, escape from his chains?</line>
+        <line>Look, I weep: for more than two years</line>
+        <line>I have never enjoyed one moment</line>
+        <line>free from anguish. I have often</line>
+        <line>desired to die; but, <del rend="strikethrough">Herbert</del>, I am a</line>
+        <line>very coward. It is hard for one so young</line>
+        <line>who was once so happy as I was;</line>
+        <line>voluntarily to divest themselves of all</line>
+        <line>sensation and to go alone to the dreary</line>
+        <line>grave; I dare not. I must die, yet</line>
+        <line>my fear chills me; I pause and</line>
+        <line>shudder and then for months I <del rend="strikethrough">shall</del></line>
+        <line>endure my excess of wretchedness. But</line>
+        <line>now the time is come when I may</line>
+        <line>quit life, I have a friend who will not</line>
+        <line><anchor xml:id="d33-0200.01"/><del rend="strikethrough">not</del> to accompany me in this dark</line>
+        <line>journey; such is my request: earnestly</line>
+        <line>do I entreat and implore you to die</line>
+        <line>with me – Then we shall find Elinor</line>
+        <line>and what I have lost. Look, I am</line>
+        <line>prepared; there is the death draught</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0200.01">
+        <line>refuse</line>
+    </zone>
+</surface>

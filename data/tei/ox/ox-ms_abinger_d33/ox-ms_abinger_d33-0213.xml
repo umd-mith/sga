@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0213" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="112v">
+    <zone type="pagination"><line>202</line></zone>
+    <zone type="library"><line></line></zone>
+    
+    <zone type="main">
+        <line>feeling; this monster with whom<del rend="strikethrough">e</del></line>
+        <line>none might mingle in converse and</line>
+        <line>love; why had she not from that</line>
+        <line>fatal and most accursed moment,</line>
+        <line>shrouded me in thick mists and placed</line>
+        <line>real darkness between me and my</line>
+        <line>fellows so that I might never more be</line>
+        <line>seen?, and as I passed, like a murky</line>
+        <line>cloud loaded with blight, they might only</line>
+        <line>perceive me by the cold chill I should</line>
+        <line>cast upon them; telling them, how</line>
+        <line>truly, that something unholy was near?</line>
+        <line>Then I should have lived upon this</line>
+        <line>dreary heath unvisited, and blasting none</line>
+        <line>by my unhallowed gaze. Alas! I <del rend="strikethrough">very</del></line>
+        <line>verily believe that if <add place="superlinear">X</add> I <del rend="strikethrough">had lived much</del></line>
+        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add> <add place="superlinear">if day after day I had tho dwelt on these dreadful sentiments</add></mod></line>
+        <line><del rend="strikethrough">longer on the unhappy earth</del> I should</line>
+        <line>have become mad, and should have</line>
+        <line>fancied myself a living pestilence: so</line>
+        <line>horrible to my own solitary thoughts</line>
+        <line>did this form, this voice, and all this</line>
+        <line>wretched self appear; for had it not</line>
+        <anchor xml:id="d33-0213.01"/>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0213.01">
+        <line>X the <del rend="strikethrough">prospect</del> near prospect of death did not dull &amp; soften my <del rend="strikethrough">bu</del> bitter</line>
+        <line>feelings, if for a few months longer I had continued to live as I then</line>
+        <line>lived, strong in body, but my soul corrupted to its core by a deadly cancer</line>
+    </zone>
+</surface>

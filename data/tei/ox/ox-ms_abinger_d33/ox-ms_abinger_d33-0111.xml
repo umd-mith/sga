@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0111" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="57v">
+    <zone type="pagination"><line>100</line></zone>
+    
+    <zone type="main">
+        <line>your compassion.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"I entreat you to call to your</line>
+        <line>remembrance our first happy life</line>
+        <line>on the shores of Loch Lomond. I had</line>
+        <line>arrived from a weary wandering of</line>
+        <line>sixteen years, during which, although</line>
+        <line>I <mod><del rend="strikethrough">gav</del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">had</add></mod> gone through many dangers</line>
+        <line>and misfortunes, my affections had</line>
+        <line>been an entire blank. If I grieved it</line>
+        <line>was for your mother, if I loved it was</line>
+        <line>your image; <del rend="strikethrough">only that</del> these sole</line>
+        <line>emotions filled my heart in quietness.</line>
+        <line>– <del rend="strikethrough">it was never called</del> The human</line>
+        <line>creatures around me excited in me</line>
+        <line>no sympathy and I <del rend="strikethrough">therefore</del> thought</line>
+        <line>that the mighty change that the</line>
+        <line>death of your mother had wrought <del rend="strikethrough">in</del></line>
+        <line><del rend="strikethrough">me</del> within me had rendered me cal</line>
+        <line>lous to any future impression. I saw</line>
+        <line>the lovely and I did not love, I ima</line>
+        <line><anchor xml:id="d33-0111.01"/> therefore that all warmth was extin</line>
+        <line>guished <del rend="strikethrough">within</del> <del rend="strikethrough">me</del> in my heart</line>
+        <line></line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0111.01">
+        <line>gined</line>
+    </zone>
+</surface>

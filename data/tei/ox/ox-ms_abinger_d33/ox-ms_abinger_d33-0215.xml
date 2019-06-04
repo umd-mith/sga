@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0215" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="113v">
+    <zone type="pagination"><line>204</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head" spanTo="#d33-0215.01"/>
+        
+        <line rend="center">Chapter XII</line>
+        <anchor xml:id="d33-0215.01"/>
+        
+        <milestone unit="tei:p"/>
+            <line rend="indent1">As I was perpetually haunted by these</line>
+            <line>ideas, you may imagine that the</line>
+            <line>influence of <mod><del rend="strikethrough">Herbert’s</del> <add place="superlinear">Woodville’s</add></mod> words was</line>
+            <line>very temporary; and that although I</line>
+            <line>did not again accuse him of unkind-</line>
+            <line>ness, yet I soon became as unhappy as</line>
+            <line><del rend="strikethrough">bef</del> before. Soon after this incident</line>
+            <line>we parted. He heard that his mother</line>
+            <line>was ill, and he hastened to her. He</line>
+            <line>came to take leave of me, and we</line>
+            <line>walked together on the heath for the</line>
+            <line>last time. He promised that he</line>
+            <line>would come and see me again; and</line>
+            <line>bade me take cheer, and to encou</line>
+            <line>rage what happy thoughts I could,</line>
+            <line>untill time and fortitude should over</line>
+            <line>come my misery, and I could again</line>
+            <line>mingle in society.</line>
+            
+    </zone>
+</surface>

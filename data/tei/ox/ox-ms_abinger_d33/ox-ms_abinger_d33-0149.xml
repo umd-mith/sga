@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0149" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="78v">
+    <zone type="pagination"><line>138</line></zone>
+
+    
+    <zone type="main">
+        <line>saw a poor girl broken in spirit; who</line>
+        <line>spoke <del rend="strikethrough">only</del> in a low and gentle voice,</line>
+        <line>and from underneath whose downcast</line>
+        <line>lids tears would sometimes steal which</line>
+        <line>she strove to hide. One who loved to</line>
+        <line>be alone, and shrunk from observation;</line>
+        <line>who never smiled; Oh, No! I never smiled</line>
+        <line>– and that was all.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Well, I escaped. I left my guar-</line>
+        <line>dian’s house and I was never heard</line>
+        <line>of again; it was believed from the</line>
+        <line>letters that I left and other circum</line>
+        <line>stances that I planned that I had</line>
+        <line>destroyed myself. I was sought after</line>
+        <line>therefore with less care than would</line>
+        <line>otherwise have been the case; and</line>
+        <line>soon all trace and memory of me</line>
+        <line>was lost. I left London in a small</line>
+        <line>vessel bound for a port in the north</line>
+        <line>of England. And now having succeeded</line>
+        <line>in my attempt, and being quite alone</line>
+        <line>peace returned to me. The sea was</line>
+        
+    </zone>
+</surface>
