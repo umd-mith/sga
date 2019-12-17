@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0026" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="15r">
+    <zone type="pagination"><line>15</line></zone>
+    <zone type="library"><line>15</line></zone>
+    
+    <zone type="main">
+        <line>his fellow collegiates or how for a moment</line>
+        <line>he had feared the censure of such as these.</line>
+        <line>He <del rend="strikethrough">soon</del> discarded <del rend="strikethrough">therefore</del> his old friend<del rend="strikethrough">s</del></line>
+        <line>ships not from fickleness but because they</line>
+        <line>were indeed unworthy of him. Diana filled up</line>
+        <line>all his heart: he felt as if by his union with</line>
+        <line>her he had received a new and better soul.</line>
+        <line>She was his monitress as he learned what</line>
+        <line>were the true ends of life. It was through</line>
+        <line>her beloved lessons that he cast off his old</line>
+        <line>pursuits and gradually formed himself to</line>
+        <line>become one among his fellow men; a</line>
+        <line>distinguished member of society; a Patriot;</line>
+        <line>and an enlightened lover of truth and</line>
+        <line>virtue. – He loved her for her beauty and</line>
+        <line>for her amiable disposition but he</line>
+        <line>seemed to love her more for what he</line>
+        <line>considered her superior wisdom. They</line>
+        <line>studied, they rode together; they were never</line>
+        <line>seperate and seldom admitted a third to</line>
+        <line>their society.</line>
+        
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Thus my father, born in affluence,</line>
+        <line>and always prosperous, clombe without the</line>
+        <line>difficulty and various disappointments that</line>
+    </zone>
+</surface>

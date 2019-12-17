@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0199" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="104v">
+    <zone type="pagination"><line>188</line></zone>
+    <zone type="library"><line>104<hi rend="sup">v</hi></line></zone>
+    
+    <zone type="main">
+        <line>end of two miserable beings; and if he</line>
+        <line>will not, then will I scoff at his</line>
+        <line>friendship and drink the poison before</line>
+        <line>him to shame his cowardise. I plan</line>
+        <line>ned the <del rend="strikethrough">wh</del> whole scene with an</line>
+        <line>earnest heart and franticly set my soul</line>
+        <line>on this project. I procured Laudanum</line>
+        <line>and placing it in two glasses on the</line>
+        <line>table, filled my room with flowers and</line>
+        <line><del rend="strikethrough">tried to</del> decorated </line>
+        <line>the last scene of my tragedy<add place="superlinear">with the nicest care</add> As the</line>
+        <line>hour for his coming <del rend="strikethrough">app</del> approached</line>
+        <line>my heart softened and I wept; not that I</line>
+        <line>gave up my plan, but even when</line>
+        <line>resolved the mind must undergo</line>
+        <line>several revolutions of feeling before</line>
+        <line>it can drink its death.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Now all was ready and <del rend="strikethrough">Herbert</del></line>
+        <line><anchor xml:id="d33-0199.01"/>came. I received him at the door of</line>
+        <line>my cottage and leading him solemnly</line>
+        <line>into the room, I said: "My friend, I</line>
+        <line>wish to die. I am quite weary of endur</line>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0199.01">
+        <line>Woodville</line>
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0230" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="121r">
+    <zone type="pagination"><line>219</line></zone>
+    <zone type="library"><line>121</line></zone>
+    
+    <zone type="main">
+        <line>love with death; no maiden ever took more</line>
+        <line>pleasure in the contemplation of her bridal</line>
+        <line>attire than I in fancying my limbs al-</line>
+        <line>ready enwrapt in their shroud: is it not</line>
+        <line>my marriage dress? Alone it will unite</line>
+        <line>me to my father when in an eternal</line>
+        <line>mental union we shall never part.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I will not dwell on the last changes</line>
+        <line>that I feel in the final decay of nature.</line>
+        <line>It is rapid but without pain: I feel a</line>
+        <line>strange pleasure in it. For long years</line>
+        <line>these are the first days of peace that</line>
+        <line>have visited me. I no longer exhaust</line>
+        <line>my miserable heart by bitter tears and</line>
+        <line>frantic complaints; I no longer the reproach</line>
+        <line>the sun, the earth, the air, for pain</line>
+        <line>and wretchedness. I wait in quiet expecta</line>
+        <line>tion for the closing hours of a life which</line>
+        <line>has been to me most sweet &amp; bitter.</line>
+        <line>I do not die not having enjoyed life; for</line>
+        <line>sixteen years I was happy: during the</line>
+        <line>first months of my father’s return I had</line>
+        
+    </zone>
+</surface>

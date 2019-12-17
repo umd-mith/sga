@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0134" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="70r">
+    <zone type="pagination"><line>123</line></zone>
+    <zone type="library"><line>70</line></zone>
+    
+    <zone type="main">
+        <line>with excess of weariness; every limb trembled.</line>
+        <line>I was silent: all was silent except the</line>
+        <line>roaring of the sea which became louder</line>
+        <line>and more dreadful. Yet we advanced</line>
+        <line>slowly: sometimes I thought that we</line>
+        <line>should never arrive; that the sound</line>
+        <line>of waves would still allure us, and that</line>
+        <line>we should walk on for ever and ever:</line>
+        <line>field succeeding field, never would our</line>
+        <line>weary journey <del rend="strikethrough">end</del> cease, nor night nor</line>
+        <line>day; but still we should hear the</line>
+        <line>dashing of the sea, and to all this there</line>
+        <line>would be no end. Wild beyond the imagi</line>
+        <line>nation of the happy are the thoughts</line>
+        <line>bred by misery and despair.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">At length we reached the over-</line>
+        <line>hanging beach; a cottage stood beside</line>
+        <line>the path; we knocked at the door and</line>
+        <line>it was opened: the bed within instantly</line>
+        <line>caught my eye; something stiff and</line>
+        <line>straight lay on it, covered by a sheet;</line>
+        <line><del rend="strikethrough">Il</del> the cottagers looked aghast. The first</line>
+        
+    </zone>
+</surface>

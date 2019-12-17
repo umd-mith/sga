@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0046" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="">
+    <zone type="pagination"><line>35</line></zone>
+    <zone type="library"><line>25</line></zone>
+    
+    <zone type="main">
+        <line>And now I began to live. All around</line>
+        <line>me was changed from a dull uniformity</line>
+        <line>to the brightest scene of joy and</line>
+        <line>delight. The happiness I enjoyed in</line>
+        <line>the company of my father far ex-</line>
+        <line>ceeded my sanguine expectations. We</line>
+        <line>were for ever together; and the</line>
+        <line>subjects of our conversations were</line>
+        <line>inexhaustible. He had passed the</line>
+        <line>sixteen years of absence among <del rend="strikethrough">nations</del></line>
+        <line>nations nearly unknown to Europe; he</line>
+        <line>had wandered through Persia, Arabia</line>
+        <line>and the north of India and had</line>
+        <line>penetrated among the habitations of the</line>
+        <line>natives <del rend="strikethrough">in a way few Europeans had</del></line>
+        <line><del rend="strikethrough">been allowed</del> with a <del rend="strikethrough">fred</del> freedom</line>
+        <line>permitted to few Europeans. His rela.</line>
+        <line>tions of their manners, his anecdotes</line>
+        <line>and descriptions of scenery whiled away</line>
+        <line>delicious hours, when we were tired</line>
+        <line>of talking of our own plans of future</line>
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0043" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="23v">
+    <zone type="pagination"><line>32</line></zone>
+
+    
+    <zone type="main">
+        <line>but I am necessarily detained a week</line>
+        <line>and I write because if you come here</line>
+        <line>I may see you somewhat sooner."– I</line>
+        <line>read these words with devouring eyes;</line>
+        <line>I kissed them, wept over them and</line>
+        <line>exclaimed, "He will love me!" –</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">My aunt would not undertake so</line>
+        <line>long a journey, and in a fortnight we</line>
+        <line>had another letter from my father, it</line>
+        <line>was dated Edinburgh: he <mod><del rend="strikethrough">said</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">wrote</add></mod> that</line>
+        <line>he should be with us in three days.</line>
+        <line>"As he approached his desire of seeing</line>
+        <line>me," he said, "became more and more</line>
+        <line>ardent, and he felt that the moment</line>
+        <line>when he should first clasp me in</line>
+        <line>his arms would be the happiest</line>
+        <line>of his life."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">How irksome were these three</line>
+        <line>days to me! <del rend="strikethrough">I</del> All sleep and appetite</line>
+        <line>fled from me; I could only read <del rend="strikethrough">and</del></line>
+        <line>and re-read his letter, and in the</line>
+        <line>solitude of the woods imagine the</line>
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0104" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="54r">
+    <zone type="pagination"><line>93</line></zone>
+    <zone type="library"><line>54</line></zone>
+    
+    <zone type="main">
+        <line>risen and went to seek my father to</line>
+        <line>inform him of my determination to</line>
+        <line>seperate myself from him. I sought him</line>
+        <line>in the house, in the park, and then in</line>
+        <line>the fields and the woods, but I could not</line>
+        <line>find him. At length I saw him at</line>
+        <line>some distance, <del rend="strikethrough">from me</del>, seated</line>
+        <line>under a tree, and when he perceived</line>
+        <line>me he waved his hand several times,</line>
+        <line>beckoning me to approach; there</line>
+        <line>was something unearthly in his mien</line>
+        <line>that awed and chilled me, but I drew</line>
+        <line>near. When at short distance from</line>
+        <line>him I saw that he was deadlily pale,</line>
+        <line>and clothed in flowing garments of white.</line>
+        <line>Suddenly he started up and fled from</line>
+        <line>me; I pursued him: we sped over</line>
+        <line>the fields, and by the skirts of woods,</line>
+        <line>and on the banks of rivers; he flew</line>
+        <line>fast and I followed. We came at</line>
+        <line>last, methought, to the brow of a</line>
+        <line>huge cliff that over hung the sea</line>
+        <line>which, troubled by the winds, dashed</line>
+        
+    </zone>
+</surface>

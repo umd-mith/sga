@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0075" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="39v">
+    <zone type="pagination"><line>64</line></zone>
+    
+    <zone type="main">
+        <line>he wept; But during all this time</line>
+        <line>he spoke no word by which I</line>
+        <line>might guess the cause of his unhap-</line>
+        <line>-piness; If I ventured to enquire he</line>
+        <line>would either leave me or press his</line>
+        <line>finger on his lips, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and</add></mod> with a deprecating</line>
+        <line>look that I could not resist, turn</line>
+        <line><del rend="strikethrough">away</del> away. If I wept he would gaze</line>
+        <line>on me in silence but he was no longer</line>
+        <line>harsh and although he repulsed every</line>
+        <line>caress yet it was with gentleness.</line>
+        <milestone unit="tei:p"/><line rend="indent2">He seemed to cherish a mild</line>
+        <line>grief and softer emotions although sad</line>
+        <line>as a relief from despair – He contrived</line>
+        <line>in many ways to nurse his melancho-</line>
+        <line>ly as an antidote to wilder passion:</line>
+        <line>He perpetually frequented the walks that</line>
+        <line>had been favourites with <del rend="strikethrough">them</del> him</line>
+        <line>when he and my mother wandered</line>
+        <line>together talking of love <del rend="strikethrough">h</del> and happiness;</line>
+        <line>he collected every relick that remained</line>
+        <line>of her and always <del rend="strikethrough">st</del> sat opposite her</line>
+        
+    </zone>
+</surface>

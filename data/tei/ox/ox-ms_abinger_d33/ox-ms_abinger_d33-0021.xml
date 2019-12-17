@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0021" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="11v">
+    <zone type="pagination"><line>10</line></zone>
+
+    <zone type="main">
+        <line>meet with the approbation of his companions.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Yet he had one secret hidden from these</line>
+        <line>dear friends; a secret he had nurtured from</line>
+        <line>his earliest years, and although he loved his</line>
+        <line>fellow collegiates he would not trust <mod>
+                <add place="sublinear"><metamark function="insert">^</metamark></add>
+                <add place="superlinear">it</add>
+            </mod> to the</line>
+        <line>delicacy or sympathy of any one among them.</line>
+        <line>He loved. He feared that the intensity of his</line>
+        <line>passion might become the subject of their</line>
+        <line>ridicule; and he could not bear that they</line>
+        <line>should blaspheme it by considering that</line>
+        <line>trivial and transitory which he felt was</line>
+        <line>the life of his life.</line>
+        <milestone unit="tei:div"/>
+        <zone type="library"><line>12<hi rend="sup">v</hi></line></zone>
+        <line>There was a gentleman of small fortune who</line>
+        <line>lived near his family mansion who had <del rend="strikethrough">a</del></line>
+        <line>three lovely daughters. The eldest was far</line>
+        <line>the most beautiful, but her beauty was</line>
+        <line>only an addition to <mod><add place="sublinear"><metamark function="insert"
+                >^</metamark></add><add place="superlinear">to</add></mod> her other qualities –
+            her</line>
+        <line>understanding was clear &amp; strong and her</line>
+        <line>disposition angelically gentle. She and my father</line>
+        <line>had been playmates from infancy: Diana, even</line>
+        <line>in her childhood had been a favourite with <del rend="strikethrough">this</del>
+            his</line>
+        <line>mother; <del rend="strikethrough">and</del> this partiality encreased with the</line>
+        <line>years of this beautiful and lively girl and thus</line>
+        <line>during his school &amp; colledge vacations</line>
+    </zone>
+</surface>

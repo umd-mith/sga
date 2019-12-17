@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0103" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="53v">
+    <zone type="pagination"><line>92</line></zone>
+    
+    <zone type="main">
+        <line>rise at the same period to us: he</line>
+        <line>must not say, looking at the setting</line>
+        <line><del rend="strikethrough">moo</del> crescent of the moon, "Mathilda</line>
+        <line>now watches its fall." – No, all must be</line>
+        <line>changed. Be it light with him when</line>
+        <line>it is darkness with me! Let him feel</line>
+        <line>the sun of summer while I am chilled</line>
+        <line>by the snows of winter! Let there be</line>
+        <line>the distance of the antipodes between</line>
+        <line>us!</line>
+        <line>At length the east began to brighten,</line>
+        <line>and the comfortable light of morning</line>
+        <line>streamed into my <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">room</add></mod>. I was weary <del rend="strikethrough">w</del> with</line>
+        <line>watching and for some time I had</line>
+        <line>combated with the heavy sleep that</line>
+        <line>weighed down my eyelids: but now, no</line>
+        <line>longer fearful, I threw myself on my</line>
+        <line>bed. I sought for repose although I</line>
+        <line>did not hope for forgetfulness; I knew</line>
+        <line>I should be pursued by dreams, but did</line>
+        <line>not dread the frightful one that I</line>
+        <line>really <del rend="strikethrough">hand</del> had. I thought that I had</line>
+    </zone>
+</surface>

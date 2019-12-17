@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0076" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="40r">
+    <zone type="pagination"><line>65</line></zone>
+    <zone type="library"><line>40</line></zone>
+    
+    <zone type="main">
+        <line>picture which hung in the room fix-</line>
+        <line><del rend="strikethrough">ing</del> ing on it a look of sad dispair – </line>
+        <line><del rend="strikethrough">He</del> <del rend="strikethrough">Yet he spok</del> and all this was</line>
+        <line>done in a mystic and awful <del rend="strikethrough">sil</del></line>
+        <line>silence. If his passion subdued him</line>
+        <line>he locked himself in his room; and</line>
+        <line><anchor xml:id="d33-0076.01"/>when he wandered restlessly about the</line>
+        <line>house, it was when every other crea</line>
+        <line>-ture slept.</line>
+        <milestone unit="tei:p"/><line rend="indent2">It <del rend="strikethrough">You</del> may easily <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add></mod> imagined that</line>
+        <line>I wearied myself with conjecture to</line>
+        <line>guess the cause of his sorrow. The solu-</line>
+        <line>tion that seemed to me the most</line>
+        <line>probable was that during his resi-</line>
+        <line>-dence in London he had fallen in</line>
+        <line>love with some <del rend="strikethrough">unvo</del> unworthy per-</line>
+        <line>son, and that his passion mastered.</line>
+        <line>him although he would not gratify</line>
+        <line>it: he loved me too well to sacrifise</line>
+        <line>me to this inclination, and that he</line>
+        <line>had now visited this house that by</line>
+        <line>reviving the memory of my mother</line>
+        <line>whom he so passionately adored he</line>
+        <line>might weaken the present impres-</line>
+        <line>sion. This was possible; <del rend="strikethrough">yet several</del></line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0076.01">
+        <line><add>at night </add></line>
+    </zone>
+</surface>

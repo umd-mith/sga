@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0148" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="78r">
+    <zone type="pagination"><line>137</line></zone>
+    <zone type="library"><line>78</line></zone>
+    
+    <zone type="main">
+        <line>the ground in anger that it should cover</line>
+        <line>him from me. Oft when I have listen</line>
+        <line>ed with gasping attention for the</line>
+        <line>sound of the ocean mingled with my</line>
+        <line>father’s groans, and then wept untill</line>
+        <line>my strength was gone and I was calm</line>
+        <line>and faint, when I have recollected</line>
+        <line>all this I have asked myself if this</line>
+        <line>were not madness. While in London</line>
+        <line>these and many other dreadful thoughts</line>
+        <line>too harrowing for words were my</line>
+        <line>portion: I lost all this suffering when</line>
+        <line>I was free; when I saw the wild</line>
+        <line>heath around me, and the evening</line>
+        <line>star in the west, then I could weep,</line>
+        <line>gently weep, and be at peace.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Do not mistake me; I never</line>
+        <line>was really mad: I was always conscious</line>
+        <line>of my state when my wild thoughts</line>
+        <line>seemed to drive me to insanity, and</line>
+        <line>never betrayed them to aught but</line>
+        <line>silence and solitude. The people around</line>
+        <line>me saw nothing of all this. They only</line>
+        
+    </zone>
+</surface>

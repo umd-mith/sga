@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0165" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="86v">
+    <zone type="pagination"><line>154</line></zone>
+    
+    <zone type="main">
+        <line>like Adam and Prometheus, must</line>
+        <line>pay the penalty of rising <del rend="strikethrough">abou</del> a</line>
+        <line>bove his nature by being the martyr</line>
+        <line>to his own excellence. <del rend="strikethrough">or ambition</del></line>
+        <line><anchor xml:id="d33-0165.01"/><del rend="strikethrough">Herbert</del> was free from all these</line>
+        <line>evils; and if slight examples did</line>
+        <line>come across him he did not notice</line>
+        <line>them but passed on in his course</line>
+        <line>as an angel with winged feet might</line>
+        <line>glide along the earth unimpeded by</line>
+        <line>all those little obstacles over which</line>
+        <line><anchor xml:id="d33-0165.02"/>of earthly origin stumble. He was</line>
+        <line>a believer in the divinity of genius</line>
+        <line>and always opposed a stern disbelief</line>
+        <line>to <del rend="strikethrough">those petty</del> the objections of those</line>
+        <line>petty cavillers and minor critics who</line>
+        <line><anchor xml:id="d33-0165.03"/><del rend="strikethrough">which</del> to reduce all men to <del rend="strikethrough">they</del> their</line>
+        <line>own miserable level – "I will make</line>
+        <line>a <del rend="strikethrough">be</del> scientific simile" he would say,</line>
+        <line>"In the manner, if you will, of D.<add place="superlinear">r</add>.</line>
+        <line>Darwin – I consider the alledged</line>
+        <line>errors of a man of genius as the</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0165.01">
+        <line>Woodville</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0165.02">
+        <line>we</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0165.03">
+        <line>wish</line>
+    </zone>
+</surface>

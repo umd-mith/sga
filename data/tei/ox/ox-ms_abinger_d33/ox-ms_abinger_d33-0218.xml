@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0218" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="115r">
+    <zone type="pagination"><line>207</line></zone>
+    <zone type="library"><line>115</line></zone>
+    
+    <zone type="main">
+        <line>farewell, I followed him far with my</line>
+        <line>eyes until<del rend="strikethrough">l</del> they saw the last of <del rend="strikethrough">the</del> my</line>
+        <line>earthly comforter. I had insisted on</line>
+        <line>accompanying him across the heath</line>
+        <line>towards the town where <mod><del rend="strikethrough">we</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he</add></mod> dwelt:</line>
+        <line><del rend="strikethrough">The</del> sun was yet high when <mod><del rend="strikethrough">we</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he</add></mod></line>
+        <line>left me, and I turned my steps</line>
+        <line>towards my cottage. It was at the</line>
+        <line>latter <del rend="strikethrough">or</del> end of the month of Sep-</line>
+        <line>tember when the nights have become</line>
+        <line>chill. But the weather was serene,</line>
+        <line>and <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">as</add></mod> I walked on I fell into no</line>
+        <line>unpleasing reveries. I thought of <del rend="strikethrough">Her</del></line>
+        <line><anchor xml:id="d33-0218.01"/><del rend="strikethrough">bert</del> with gratitude and kindness</line>
+        <line>and did not, I know not why, regret</line>
+        <line>his departure with any bitterness. It</line>
+        <line>seemed that after one great shock</line>
+        <line>all other change was trivial to me;</line>
+        <line>And I walked on wondering when the</line>
+        <line>time would come when we should</line>
+        <line>all four, my dearest father restored</line>
+        <line>to me, meet in some <mod><del rend="strikethrough">lovely</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">sweet</add></mod> Paradise</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0218.01">
+        <line>Woodville</line>
+    </zone>
+</surface>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0109" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="56v">
+    <zone type="pagination"><line>98</line></zone>
+    
+    <zone type="main">
+        <line>pure mind destroyed; memory will bring</line>
+        <line>to you frightful images of guilt, and the</line>
+        <line>anguish of innocent love betrayed. Yet</line>
+        <line>I who draw down all this misery upon</line>
+        <line>you; I who cast you forth <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and</add></mod> remorselessly</line>
+        <line>have set the seal of distrust and agony</line>
+        <line>on the heart and brow of my own child,</line>
+        <line>who with devilish levity have endeavoured</line>
+        <line>to steal away her loveliness to place in its</line>
+        <line>stead the foul deformity of sin; I, in the</line>
+        <line>overflowing anguish of my heart, suppli</line>
+        <line>cate you to forgive me.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"I do not ask your pity; you must</line>
+        <line>and do abhor me: but pardon me,</line>
+        <line>Mathilda, and let not your thoughts</line>
+        <line>follow me in my banishment with</line>
+        <line>unrelenting anger. I must never more</line>
+        <line>behold you; never more hear your</line>
+        <line>voice; but the <del rend="strikethrough">the</del> soft whisperings</line>
+        <line>of your forgiveness will reach me and</line>
+        <line><del rend="strikethrough">col</del> cool the burning of my disordered</line>
+        <line>brain and heart; <del rend="strikethrough">even in my grave</del></line>
+        
+    </zone>
+</surface>

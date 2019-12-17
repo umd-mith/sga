@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0226" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="119r">
+    <zone type="pagination"><line>215</line></zone>
+    <zone type="library"><line>119</line></zone>
+    
+    <zone type="main">
+        <line>led <del rend="strikethrough">un</del> under the beams <del rend="strikethrough">of the beams</del></line>
+        <line>of the sun that shone brightly thro’</line>
+        <line>the <del rend="strikethrough">ll</del> pure, frosty air: a few</line>
+        <line>birds were pecking some crumbs</line>
+        <line>under my window. I smiled with</line>
+        <line>quiet joy; and in my thoughts, which</line>
+        <line>through long habit would for ever</line>
+        <line>connect themselves into one train, as</line>
+        <line>if I shaped them into words, I thus</line>
+        <line><del rend="strikethrough">o</del> addressed the scene before me:</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"I salute thee, beautiful Sun,</line>
+        <line>and thou, white Earth, fair and cold!</line>
+        <line>Perhaps I shall never see thee</line>
+        <line>again covered with green, and the</line>
+        <line>sweet flowers of the coming spring</line>
+        <line>will blossom on my grave. I am</line>
+        <line>about to leave thee: soon this living</line>
+        <line>spirit which is ever busy among</line>
+        <line>strange shapes and ideas, which</line>
+        <line>belong not to thee, soon it will have</line>
+        <line>flown to other regions and this</line>
+        <line>emaciated body will rest insensate</line>
+        
+    </zone>
+</surface>

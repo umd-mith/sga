@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0152" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="80r">
+    <zone type="pagination"><line>141</line></zone>
+    <zone type="library"><line>80</line></zone>
+    
+    <zone type="main">
+        <line>pines <del rend="strikethrough">trees</del> the only trees to be seen for</line>
+        <line>many miles: I had a path cut through</line>
+        <line>the furze from my door to this little</line>
+        <line>wood, from whose topmost branches the</line>
+        <line><del rend="strikethrough">bu</del> birds saluted the rising sun and</line>
+        <line>awoke me to my daily meditation. My</line>
+        <line>view was bounded only by the horizon</line>
+        <line>except on one side where a distant</line>
+        <line>wood made a black spot on the heath,</line>
+        <line>that every where else stretched out</line>
+        <line>its faint hues as far as the eye could</line>
+        <line>reach, wide and very desolate. Here I could</line>
+        <line>mark the net work of the clouds as they</line>
+        <line>wove themselves into thick masses: I</line>
+        <line>could <del rend="strikethrough">wal</del> watch the slow rise of the heavy</line>
+        <line>thunder clouds and could see the rack</line>
+        <line>as it was driven across the heavens,</line>
+        <line>or under the pine trees I could enjoy</line>
+        <line>the stillness of the azure sky.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">My life was very peaceful. I had</line>
+        <line>one <del rend="strikethrough">fena</del> female servant who spent</line>
+        <line>the greater part of the day at a village</line>
+        <line>two miles off. My amusements were</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0118" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="62r">
+    <zone type="pagination"><line>107</line></zone>
+    <zone type="library"><line>62</line></zone>
+    
+    <zone type="main">
+        <line>in me to burn untill <del rend="strikethrough">oll</del> all be cold,</line>
+        <line>and stiff, and dead. Yet I will not die;</line>
+        <line>alas: <del rend="strikethrough">I dare I</del> how dare I go where</line>
+        <line>I may meet Diana, when I have</line>
+        <line>disobeyed her last request; <del rend="strikethrough">o</del> <del rend="strikethrough">th</del> her</line>
+        <line>last words said in a faint voice when</line>
+        <line>all feeling but love, which survives</line>
+        <line>all things else was already dead, <del rend="strikethrough">when</del></line>
+        <line>she <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">then</add></mod> <del rend="strikethrough">told n</del> <mod><del rend="strikethrough">told</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">bade</add></mod> me <del rend="strikethrough">to</del> make her child</line>
+        <line>happy: that thought alones gives a</line>
+        <line>double sting to death. I will wander</line>
+        <line>away from you, away from all life</line>
+        <line>– in the solitude I shall seek I alone</line>
+        <line>shall breathe of human kind. I must</line>
+        <line>endure life; and as it is my duty so</line>
+        <line>I shall untill the grave dreaded yet</line>
+        <line>desired, receive me free from pain:</line>
+        <line><del rend="strikethrough">While I</del> for while I feel it will be</line>
+        <line>pain that must make up the</line>
+        <line>whole sum of my sensations. Is not</line>
+        <line>this a fearful curse that I labour</line>
+        <line>under? Do I not look forward to a</line>
+        <line>miserable futurity? My child, if after</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0211" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="111v">
+    <zone type="pagination"><line>200</line></zone>
+    
+    <zone type="main">
+        <line>your lips quivering; your hands trem</line>
+        <line>bled violently when I took them; but</line>
+        <line>now all is tranquil and soft. You</line>
+        <line>are grieved and there is grief in</line>
+        <line>the expression of your countenance</line>
+        <line>but it is gentle and sweet. You allow</line>
+        <line>me to throw away this cursed drink;</line>
+        <line>you smile; Oh! Congratulate me,</line>
+        <line>hope is triumphant, and I have</line>
+        <line>done some good."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">These words are shadowy as</line>
+        <line>I repeat them but they were indeed</line>
+        <line>words of fire and produced <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">a</add></mod> warm hope</line>
+        <line>in me (I, miserable wretch, to hope!)</line>
+        <line>that tingled <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">like pleasure</add></mod> in my veins. He did not</line>
+        <line>leave me for many hours; not</line>
+        <line>until he had improved the spark</line>
+        <line>that he had kindled, and with an</line>
+        <line>angelic hand fostered the return of</line>
+        <line>somthing that seemed like joy. He</line>
+        <line>left me but I still was calm, and</line>
+        
+    </zone>
+</surface>

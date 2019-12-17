@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0139" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="72v">
+    <zone type="pagination"><line>128</line></zone>
+
+    
+    <zone type="main">
+        <line>history and the never ending feelings and</line>
+        <line>remembrances arising from it is known</line>
+        <line>to no living soul. There was too deep</line>
+        <line>a horror in my tale for confidence; I</line>
+        <line>was on earth the sole depository of my</line>
+        <line>own secret. I might tell it to the winds</line>
+        <line>and to the desart heaths but I must</line>
+        <line>never among my fellow creatures, either</line>
+        <line>by word or look give allowance to the</line>
+        <line>smallest conjecture <del rend="strikethrough">concerning</del> of the</line>
+        <line>dread reality: I must shrink before</line>
+        <line>the eye of man lest he should read</line>
+        <line>my father’s guilt in my glazed eyes: I</line>
+        <line>must be silent lest my faltering</line>
+        <line>voice should betray unimagined horrors.</line>
+        <line>Over the deep grave of my secret</line>
+        <line>I must heap an impenetrable heap</line>
+        <line>of false smiles and words: cunning frauds,</line>
+        <line>treacherous laughter and a mixture</line>
+        <line>of all light deceits would form a mist</line>
+        <line>to blind others and be as the poisonous</line>
+        
+    </zone>
+</surface>

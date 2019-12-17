@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0178" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="93r">
+    <zone type="pagination"><line>167</line></zone>
+    <zone type="library"><line>93</line></zone>
+    
+    <zone type="main">
+        <line>tween us, but the next day he again</line>
+        <line>stopped at my cottage and by degrees an</line>
+        <line>intimacy grew between us. It was <del rend="strikethrough">l</del> strange</line>
+        <line>to him to see a female in <del rend="strikethrough">the first</del></line>
+        <line><anchor xml:id="d33-0178.01"/><del rend="strikethrough">bloom of</del> youth, I was not yet twenty,</line>
+        <line>evidently belonging to the first classes</line>
+        <line>of society &amp; possessing every accomplish-</line>
+        <line>ment an excellent education could</line>
+        <line>bestow, living alone on a desolate</line>
+        <line>health – One on whose forehead the</line>
+        <line>impress of grief was strongly marked, and</line>
+        <line>whose words and motions betrayed that</line>
+        <line>her thoughts did not follow them but</line>
+        <line>were intent on <del rend="strikethrough">on</del> far other ideas;</line>
+        <line>bitter and overwhelming miseries. <del rend="strikethrough">b</del> I was</line>
+        <line>dressed also in a whimsical <del rend="strikethrough">manner –</del></line>
+        <line><del rend="strikethrough">covered f</del> <del rend="strikethrough">A close nunlike gown of</del></line>
+        <line><del rend="strikethrough">black silk covered me</del> <del rend="strikethrough">in</del> nunlike</line>
+        <line><anchor xml:id="d33-0178.02"/><del rend="strikethrough">dres</del> which denoted that I did not retire</line>
+        <line>to solitude from necessity, but that I</line>
+        <line>might indulge in a luxury of grief, and</line>
+        <line>fanciful seclusion.</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0178.01">
+        <line>extreme</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0178.02">
+        <line>habit</line>
+    </zone>
+</surface>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0121" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="63v">
+    <zone type="pagination"><line>110</line></zone>
+    
+    <zone type="main">
+        <line>rise from under my blighting influence</line>
+        <line>as no flower so <del rend="strikethrough">sweed</del> sweet ever did</line>
+        <line>rise from beneath so much evil</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"You will never hear from</line>
+        <line>me again: receive these then as the</line>
+        <line>last words of mine that will ever reach</line>
+        <line>you; and although I have forfeited your</line>
+        <line>filial love, yet regard them I conjure</line>
+        <line>you as a father’s command. Reso</line>
+        <line>-lutely shake of the wretchedness that</line>
+        <line>this first misfortune in early life</line>
+        <line>must occasion you. Bear boldly up</line>
+        <line>against the storm: continue wise</line>
+        <line>and mild, but believe it, and indeed it</line>
+        <line>is, your duty to be happy. You are</line>
+        <line>very young; let not this check for more</line>
+        <line>than a moment retard your glorious</line>
+        <line>course; hold on, beloved one. The sun</line>
+        <line>of youth is not set for you; it will</line>
+        <line>restore vigour and life to you; do</line>
+        <line>not resist with obstinate grief its</line>
+        
+    </zone>
+</surface>

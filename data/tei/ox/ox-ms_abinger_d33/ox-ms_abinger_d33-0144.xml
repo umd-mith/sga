@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0144" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="75r">
+    <zone type="pagination"><line>133</line></zone>
+    <zone type="library"><line>75</line></zone>
+    
+    <zone type="main">
+        <line>smiles or whimpers; and I listened with</line>
+        <line>quiet countenance while every nerve</line>
+        <line>trembled; I that dared not utter aye or</line>
+        <line>no to all this blasphemy. Oh, this was</line>
+        <line>a delicious life quite void of guile!</line>
+        <line>I with my dove’s look and fox<del rend="strikethrough">e</del>’s heart:</line>
+        <line>for indeed I felt only the degradation</line>
+        <line>of falsehood, and <del rend="strikethrough">an</del> not any sacred</line>
+        <line>sentiment of <del rend="strikethrough">conscuoi</del> conscious inno-</line>
+        <line>cence that might redeem it. I who</line>
+        <line>had before clothed myself in the bright</line>
+        <line>garb of sincerity must now borrow</line>
+        <line>one of divers colours: it might sit</line>
+        <line>awkwardly at first, but use would</line>
+        <line>enable me to place it in elegant</line>
+        <line>folds, to lie with grace. Aye, I might</line>
+        <line>die my <del rend="strikethrough">sould</del> soul with falsehood un-</line>
+        <line>till I had quite hid its native colour.</line>
+        <line>Oh, beloved father! Accept the pure</line>
+        <line>heart of your unhappy <del rend="strikethrough">father</del> daughter;</line>
+        <line>permit me to join you unspotted as</line>
+        <line>I was or you will not recognize my</line>
+        
+    </zone>
+</surface>

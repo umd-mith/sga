@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0158" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="83r">
+    <zone type="pagination"><line>147</line></zone>
+    <zone type="library"><line>83</line></zone>
+    
+    <zone type="main">
+        <line>so. For the sympathy that I desired must</line>
+        <line>be so pure, so divested of influence from</line>
+        <line>outward circumstances that in the</line>
+        <line>world I could not fail of being balked</line>
+        <line>by the gross materials that perpetually</line>
+        <line>mingle even with its best feelings. Be</line>
+        <line>lieve me, I was then less fitted for <del rend="strikethrough">my fel</del></line>
+        <line>any communion with my fellow crea-</line>
+        <line>tures than before. When I left them</line>
+        <line>they had tormented me but it was</line>
+        <line>in the same way as pain and sickness</line>
+        <line>may torment; <del rend="strikethrough">l</del> somthing extraneous to</line>
+        <line>the mind that galled it, and that I</line>
+        <line>wished to cast aside. But now I should</line>
+        <line>have desired <del rend="strikethrough">sympally</del> sympathy; I showu</line>
+        <line>wish to knit my soul to some one of</line>
+        <line>theirs, and should have prepared for</line>
+        <line>myself plentiful draughts of disappoint-</line>
+        <line>ment and suffering; for I was tender as</line>
+        <line>the sensitive plant, all nerve. I <del rend="strikethrough">could not</del></line>
+        <line><del rend="strikethrough">live for ambition, or</del> did not desire</line>
+        <line>sympathy and aid in ambition or</line>
+        <line>wisdom, but <del rend="strikethrough">in</del> sweet and mutual</line>
+        
+    </zone>
+</surface>

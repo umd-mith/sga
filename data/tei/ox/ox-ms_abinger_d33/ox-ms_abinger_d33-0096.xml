@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0096" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="50r">
+    <zone type="pagination"><line>85</line></zone>
+    <zone type="library"><line>50</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head"/><line rend="center">Chapter VI</line>
+            <milestone unit="tei:p"/>
+        <line rend="indent2">My chamber was in a retired part of</line>
+            <line>the house, and looked upon the garden</line>
+            <line>so that no sound of the other inhabitants</line>
+            <line>could reach it; and here in perfect</line>
+            <line>solitude I wept for several hours.</line>
+            <line>When a servant came to ask me if I</line>
+            <line>would take food I <del rend="strikethrough">leant</del> learnt from</line>
+            <line>him that my father had returned, and</line>
+            <line>was apparently well and this relieved me</line>
+            <line>from a load of anxiety, yet I did not</line>
+            <line>cease to weep bitterly. As first, as the</line>
+            <line>memory of former happiness contrasted</line>
+            <line>to my present despair came across me,</line>
+            <line>I gave relief to the oppression of heart</line>
+            <line>that I felt by <mod><del rend="strikethrough">sighs</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">words,</add></mod> and groans, and</line>
+            <line>heart rending sighs: but nature</line>
+            <line>became wearied, and this more violent</line>
+            <line>grief gave place to a passionate but</line>
+            <line><mod><del rend="strikethrough">a</del> <del rend="strikethrough">silent</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">mute</add></mod> flood of tears: my whole soul</line>
+            <line><del rend="strikethrough">di</del> seemed to dissolve them. I did</line>
+            <line>not wring my hands, or tear my hair,</line>
+            <line>or utter wild exclamations, but as</line>
+            <line>Boccacio describes the intense and quiet</line>
+            
+    </zone>
+</surface>

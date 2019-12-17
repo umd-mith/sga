@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0035" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="19v">
+    <zone type="pagination"><line>24</line></zone>
+    
+    <zone type="main">
+        
+        <line>covering of ice; I should cut my hands in</line>
+        <line>endeavouring to get at it. So I was entirely</line>
+        <line>thrown upon my own resourses. The</line>
+        <line>neighbouring minister was engaged to give</line>
+        <line>me lessons in reading, writing and french,</line>
+        <line>but he was without family and his man-</line>
+        <line>ners even to me were always perfectly</line>
+        <line>characteristic of the profession in the</line>
+        <line>exercise of whose functions he chiefly</line>
+        <line>shone, that of a schoolmaster. I <del rend="strikethrough">of</del></line>
+        <line>sometimes strove to form friendships</line>
+        <line>with the most attractive of the girls who</line>
+        <line>inhabited the neighbouring village; but I</line>
+        <line>believe I should never have succeeded</line>
+        <line>had not my Aunt interposed her authority</line>
+        <line>to prevent all intercourse between me</line>
+        <line>and the peasantry; for she was fearful</line>
+        <line>lest I should acquire the scotch accent</line>
+        <line>and dialect; a little <del rend="strikethrough">lettle</del> of it I had,</line>
+        <line>although great pains was taken that</line>
+        <line>my tongue should <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">not</add></mod> disgrace my English</line>
+        <line>origin.</line>
+        <milestone unit="tei:p"/>
+        <line rendition="indent2">As I grew older my liberty increased</line>
+        <line>with my desires, and my wanderings ex</line>
+        
+    </zone>
+</surface>

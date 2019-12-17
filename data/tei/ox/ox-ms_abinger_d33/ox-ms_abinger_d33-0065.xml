@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0065" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="34v">
+    <zone type="pagination"><line>54</line></zone>
+    
+    <zone type="main">
+        <line>ly into the description, but thus suddenly</line>
+        <line>did it happen. In one sentence I have</line>
+        <line>passed from the idea of unspeakable happi</line>
+        <line>ness to that of unspeakable grief but they</line>
+        <line>were thus closely linked together. We had</line>
+        <line>remained five months in London three</line>
+        <line>of joy and two of sorrow. My father and I</line>
+        <line>were now seldom alone or if we were</line>
+        <line>he generally kept silence with his <del rend="strikethrough">de</del></line>
+        <line>eyes fixed on the ground – the<mod><del rend="strikethrough">ir</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">dark full</add></mod> orbs in</line>
+        <line>which before I delighted to <del rend="strikethrough">se a</del> read</line>
+        <line>all sweet and gentle feeling shadowed from</line>
+        <line>my <del rend="strikethrough">then</del> sight by their lids and the long</line>
+        <line>lashes that fringed them. When we were</line>
+        <line>in company he affected gaiety <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">but I wept to hear</add> <del rend="strikethrough">and</del></mod> his</line>
+        <line>hollow laugh – begun by an empty</line>
+        <line>smile and <del rend="strikethrough">endin</del> often ending in a</line>
+        <line>bitter sneer such as <mod><del rend="strikethrough">never</del> <add place="superlinear">never</add></mod> <del rend="strikethrough">fe</del> before</line>
+        <line>this fatal period had <del rend="strikethrough">ever</del> wrinkled</line>
+        <line>his lips <del rend="strikethrough">made me weep to hear</del> When</line>
+        <line>others were there he often spoke to .</line>
+        <line>me and his eyes perpetually followed</line>
+        
+    </zone>
+</surface>

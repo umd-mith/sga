@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0236" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="124r">
+    <zone type="pagination"><line>225</line></zone>
+    <zone type="library"><line>124</line></zone>
+    
+    <zone type="main">
+        <line>from my cottage; the grass was being mowed,</line>
+        <line>and there was the scent of hay in the <zone type="library"><line>124</line></zone></line>
+        <line>fields; all the earth look fresh and its</line>
+        <line>inhabitants happy. Evening approached</line>
+        <line>and I beheld the sun set. <del rend="strikethrough">I haeed</del> Three years</line>
+        <line>ago and on that day and hour it shone</line>
+        <line>through the <del rend="strikethrough">leaves</del> branches <del rend="strikethrough">of</del> and leaves</line>
+        <line>of the beech wood and its beams flickered</line>
+        <line>upon the countenance of him whom I then</line>
+        <line>beheld for the last time. I now saw that</line>
+        <line>divine orb, gilding all the clouds with un</line>
+        <line>wonted splendour, sink behind the horizon;</line>
+        <line><del rend="strikethrough">he</del> it disappeared from a world where</line>
+        <line>he whom I would seek exists not; it ap</line>
+        <line>proached a world where he exists not; Why</line>
+        <line>do I weep so bitterly;? Why my does my</line>
+        <line>heart heave with vain endeavour to</line>
+        <line>cast <del rend="strikethrough">al</del> aside the bitter anguish that</line>
+        <line>covers it "as the waters cover the sea."</line>
+        <line>I go from this world where he is no longer</line>
+        <line>and soon I shall meet him in another.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Farewell, Woodville; the turf will soon</line>
+        
+    </zone>
+</surface>

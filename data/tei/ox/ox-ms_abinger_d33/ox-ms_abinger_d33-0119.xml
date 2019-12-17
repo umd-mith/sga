@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0119" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="62v">
+    <zone type="pagination"><line>108</line></zone>
+    
+    <zone type="main">
+        <line>this life I am permitted to see you again,</line>
+        <line>if pain can purify the heart, mine</line>
+        <line>will be pure: if remorse may expiate</line>
+        <line>guilt, I shall be guiltless.</line>
+        <line rend="center">––––––––––––––</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I have been at the door of your</line>
+        <line>chamber: every thing is silent. You</line>
+        <line>sleep. Do you indeed sleep, Mathilda?</line>
+        <line>Spirits of Good, behold the tears of my</line>
+        <line>earnest prayer! Bless my child!</line>
+        <line>Protect her from the selfish among</line>
+        <line><del rend="strikethrough">the</del> her fellow creatures: protect her</line>
+        <line>from the agonies of passion, and the</line>
+        <line>despair of disappointment! Peace,</line>
+        <line>Hope and Love be thy guardians,</line>
+        <line>Oh, thou soul of my soul; thou in</line>
+        <line>whom I breathe!</line>
+        <line rend="center">––––––––––––––</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I <mod><del rend="strikethrough">have</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">dare</add></mod> not read my letter over</line>
+        <line>for I have no time to write another,</line>
+        <line>and yet I fear that some expressi</line>
+        <line></line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0216" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="114r">
+    <zone type="pagination"><line>206</line></zone>
+    <zone type="library"><line>114</line></zone>
+    
+    <zone type="main">
+        <line>
+            <milestone unit="tei:p"/>
+            <line rend="indent2">"Above all other admonition on</line>
+            <line>my part," he said, "cherish and follow</line>
+            <line>this one: Do not Despair. That is the</line>
+            <line>most dangerous gulph on which</line>
+            <line>you perpetually totter; but you</line>
+            <line>must reassure your steps, and take</line>
+            <line>hope to guide you. Hope, and your</line>
+            <line>wounds will be <del rend="strikethrough">atready</del> <del rend="strikethrough">h</del> already <del rend="strikethrough">half</del></line>
+            <line>half healed: but if you obstinately despair,</line>
+            <line>there never more will be comfort for</line>
+            <line>you. Believe me, my dearest friend,</line>
+            <line>that there is a joy that the sun and</line>
+            <line>earth and all its beauties can bestow</line>
+            <line>that you will one day feel. The refreshing</line>
+            <line>bliss of Love will again visit your</line>
+            <line>heart, and undo the spell that binds you</line>
+            <line>to woe, untill you wonder how your</line>
+            <line>eyes could be closed in the long <del rend="strikethrough">ni</del> night</line>
+            <line>that burthens you. I dare not hope</line>
+            <line>that I have inspired you with sufficient</line>
+            <line><del rend="strikethrough">y</del> interest that the thought of me, and</line>
+            <line>the affection that I shall ever bear</line>
+            <line>you, will soften your melancholy and</line>
+            
+    </zone>
+</surface>

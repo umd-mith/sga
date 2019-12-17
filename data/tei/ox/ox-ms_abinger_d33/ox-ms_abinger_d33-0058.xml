@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0058" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="31r">
+    <zone type="pagination"><line>47</line></zone>
+    <zone type="library"><line>31</line></zone>
+    
+    <zone type="main">
+        <line>pause for ever on the recollections of these</line>
+        <line>happy weeks; I would repeat every word, and</line>
+        <line>how many do I remember, record every enchant</line>
+        <line>ment of the faery habitation. But, no,</line>
+        <line>my tale must not pause; it must be</line>
+        <line>as rapid as was my fate – I can only</line>
+        <line>describe in short although strong expres</line>
+        <line>sions my precipitate and irremediable</line>
+        <line>change from happiness to despair.</line>
+        
+    </zone>
+</surface>

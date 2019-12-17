@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0209" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="110v">
+    <zone type="pagination"><line>198</line></zone>
+    
+    <zone type="main">
+        <line>it is happiness you seek but you despair</line>
+        <line>of obtaining it. But if you can bestow</line>
+        <line>happiness on another; if you can give</line>
+        <line>one other person only one hour of joy</line>
+        <line>ought you not to live to do it? And</line>
+        <line>every one has it in their power to do</line>
+        <line>that. The inhabitants of this world</line>
+        <line>suffer so much pain. In crowded</line>
+        <line>cities, among cultivated <mod><del rend="strikethrough">fields</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">plains</add></mod>, or on</line>
+        <line>the desart mountains, pain is thickly</line>
+        <line>sown, and if we can tear up but one</line>
+        <line>of these noxious weeds, or more, if in</line>
+        <line>its <del rend="strikethrough">stread</del> stead we can sow one seed of</line>
+        <line>corn, or <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">plant</add></mod> one fair flower, let that be</line>
+        <line>motive sufficient against suicide.</line>
+        <line>Let us not desert our task while there</line>
+        <line>is the slightest hope that we may in</line>
+        <line>a future day do this.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"Indeed I dare not die. I have a</line>
+        <line>Mother whose support and hope I am.</line>
+        <line>I have a friend who loves me as his</line>
+        <line>life, and in whose breast I should infix</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0106" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="55r">
+    <zone type="pagination"><line>95</line></zone>
+    <zone type="library"><line>55</line></zone>
+    
+    <zone type="main">
+        <line>to bring my breakfast to my room, and</line>
+        <line>was again left alone – yet still I</line>
+        <line>could make no resolve, but only</line>
+        <line>thought that I might write a <del rend="strikethrough">letter</del></line>
+        <line>note to my father to beg his permission</line>
+        <line>to pay a visit to a relation who lived</line>
+        <line>about thirty miles off, and who had</line>
+        <line>before invited me to her house, but</line>
+        <line>I had refused for then I could not</line>
+        <line>quit my suffering father. When the</line>
+        <line>servant came back she gave me</line>
+        <line>a letter.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"From whom is this letter," I asked</line>
+        <line>tembling.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"Your father left it, Madam,</line>
+        <line>with his servant, to be given to you</line>
+        <line>when you should rise."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"My father left it! Where is he?</line>
+        <line>Is he not here?"</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"No; he quitted the house <del rend="strikethrough">f</del> before</line>
+        <line>four this morning."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"Good God! He is gone! But tell</line>
+        
+    </zone>
+</surface>

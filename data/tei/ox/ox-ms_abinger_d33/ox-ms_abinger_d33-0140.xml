@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0140" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="73r">
+    <zone type="pagination"><line>129</line></zone>
+    <zone type="library"><line>73</line></zone>
+    
+    <zone type="main">
+        <line>simoon to me. I, the offspring of love, the</line>
+        <line>child of the woods; the nursling of</line>
+        <line>ture’s bright self was to submit to this? I</line>
+        <line>dared not.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">How must I escape? I was rich and</line>
+        <line>young, and had a <del rend="strikethrough">gua</del> guardian appointed</line>
+        <line>for me; and all about me would act</line>
+        <line>as if I were one of their great society,</line>
+        <line>while I must keep the secret that I really</line><line>was cut off from them for ever. If I</line>
+        <line>fled I should be pursued; in life there</line>
+        <line>was no escape for me: Why then I must</line>
+        <line>die. I shuddered; I dared not die even</line>
+        <line>though the cold grave held all I loved; al</line>
+        <line>though I might <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">say</add></mod> with Job</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Where is now my hope? For my hope</line>
+        <line>who shall see it?</line>
+            <milestone unit="tei:p"/>
+            <line rend="indent2">They shall go down together to the</line>
+        <line>bars of the pit, when our rest together</line>
+        <line>is in the dust –</line>
+        <line>Yes <del rend="strikethrough">Yes</del> my hope <del rend="strikethrough">co</del> was corruption and</line>
+        <line>dust and all to which death brings us.</line>
+        
+    </zone>
+</surface>

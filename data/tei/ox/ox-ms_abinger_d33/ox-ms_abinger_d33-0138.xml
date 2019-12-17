@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0138" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="72r">
+    <zone type="pagination"><line>127</line></zone>
+    <zone type="library"><line>72</line></zone>
+    
+    <zone type="main">
+        <line>sympathy. Yet sorrow only slept to revive</line>
+        <line>more fierce, but love never <del rend="strikethrough">wok</del> woke</line>
+        <line>again – its ghost, ever hovering over</line>
+        <line>my father’s grave, alone survived –</line>
+        <line>since his death all the world was to</line>
+        <line>me a blank except where woe had</line>
+        <line>stampt its burning words telling me</line>
+        <line>to <mod><del rend="strikethrough">weep</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">smile</add></mod> no more – <del rend="strikethrough">to</del> the living were</line>
+        <line>not fit companions for me, and I was</line>
+        <line>ever meditating by what means I</line>
+        <line><del rend="strikethrough">mgh</del> might shake them all off, and</line>
+        <line>never be heard of again.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">My convalescence rapidly advanc</line>
+        <line>ed, yet this was the thought that haunted</line>
+        <line>me, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and</add> <del rend="strikethrough">as</del></mod> I was for <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">ever</add></mod> forming plans how</line>
+        <line>I might hereafter contrive <del rend="strikethrough">ho</del> to escape</line>
+        <line>the tortures that were prepared for</line>
+        <line>me when I should mix in society, and to</line>
+        <line>find that <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">solitude</add></mod> which alone could suit one</line>
+        <line>whom an untold grief seperated from her</line>
+        <line>fellow creatures. Who can be more solitary</line>
+        <line>even in a crowd than one whose</line>
+        
+    </zone>
+</surface>

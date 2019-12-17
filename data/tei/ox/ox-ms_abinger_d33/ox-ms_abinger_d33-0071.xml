@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0071" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="37v">
+    <zone type="pagination"><line>60</line></zone>
+    
+    <zone type="main">
+        <line>that must not be; you must not</line>
+        <line>read Dante. Do you choose a book." I</line>
+        <line>took up Spencer and read the descent</line>
+        <line>of Sir Guyon to the halls of Avarice;</line>
+        <line>While he listened his eyes fixed on me</line>
+        <line>in sad profound silence.</line>
+        <milestone unit="tei:p"/><line rend="indent2">I heard the next morning from</line>
+        <line>the steward that upon his <del rend="strikethrough">first</del> arri-</line>
+        <line>val he had been in a most terrible</line>
+        <line>state of mind: he had passed the first</line>
+        <line>night in the garden lying on the damp</line>
+        <line>grass; <del rend="strikethrough">but</del> he did not sleep but</line>
+        <line>groaned perpetually. "Alas!" said the</line>
+        <line>old man; <mod><add place="sublinear"><metamark function="insert">^</metamark></add> <add place="superlinear">who gave me this account with tears in his eyes,</add></mod> it wrings my heart to see</line>
+        <line>my lord in this state: when I heard</line>
+        <line>that he was coming down here with</line>
+        <line>you, my young lady, I thought we</line>
+        <line>should have the happy days <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">over</add></mod> again that</line>
+        <line>we enjoyed during the short life of my</line>
+        <line>lady your mother – But that would</line>
+        <line>be too much happiness for us poor</line>
+        <line>creatures born to tears – <add place="superlinear">X</add><anchor xml:id="d33-0071.01"/> She was too</line>
+        <line>beautiful and good for us: It was a</line>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0071.01">
+        <line>X and that was why she was taken from us so soon:</line>
+    </zone>
+</surface>

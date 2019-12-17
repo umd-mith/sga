@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0234" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="123r">
+    <zone type="pagination"><line>223</line></zone>
+    <zone type="library"><line>123</line></zone>
+    
+    <zone type="main">
+        <line>a flower, and lay it to your heart; <del rend="strikethrough">the only</del></line>
+        <line>for your heart is the <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">only</add></mod> tomb in which</line>
+        <line>my memory will be enterred.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">My death is rapidly approaching and</line>
+        <line>you are not near to watch the flitting</line>
+        <line>and vanishing <mod><del rend="strikethrough">and</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">of</add></mod> my spirit. Do no regret</line>
+        <line>this; for death is a too terrible an object</line>
+        <line>for the living. It is one of those adversities</line>
+        <line>which hurt insteads of purifying the</line>
+        <line>heart; for it is so intense a misery</line>
+        <line>that it hardens <del rend="strikethrough">the he</del> &amp; dulls the <del rend="strikethrough">heart</del></line>
+        <line>feelings. Dreadful as the time was when I</line>
+        <line>pursued my father towards the ocean, &amp;</line>
+        <line>found their only his lifeless corpse; yet for</line>
+        <line>my own sake I should <del rend="strikethrough">pe</del> prefer that to</line>
+        <line>the watching one by one his senses fade;</line>
+        <line>his <del rend="strikethrough">ple</del> pulse weaken – and sleeplessly</line>
+        <line>as it were devour his life in gazing. To</line>
+        <line>see life in his limbs &amp; to know that</line>
+        <line>soon life would no longer be there; to see</line>
+        <line>the warm breath issue from his lips</line>
+        
+    </zone>
+</surface>

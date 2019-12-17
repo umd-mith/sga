@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0203" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="107v">
+    <zone type="pagination"><line>192</line></zone>
+    
+    <zone type="main">
+        <line><anchor xml:id="d33-0203.01"/>you mark "<mod><del rend="strikethrough">Listen,</del> <add place="sublinear"><metamark function="insert">^^</metamark></add><add place="superlinear">my words</add></mod>; I have learned the lan</line>
+        <line>guage of despair: <del rend="strikethrough">And a strange being</del></line>
+        <line><del rend="strikethrough">am I, joyous, triumphant Despair</del></line>
+        <line>I have it all by heart, for I am</line>
+        <line>Despair; and a strange being am I,</line>
+        <line>joyous, triumphant Despair. But</line>
+        <line>those words are false, for the wave</line>
+        <line>may be dark but it is not bitter. We</line>
+        <line>lie down, <del rend="strikethrough">and down</del> and close our eyes</line>
+        <line>with a gentle good night, and when</line>
+        <line>we wake, we are free. Come then, no</line>
+        <line>more delay, thou tardy one! Behold the</line>
+        <line>pleasant potion! Look, I am a spirit</line>
+        <line>of good, and not a human maid that</line>
+        <line>invites thee, and with winning accents;</line>
+        <line>(Oh, that they would win thee!) says,</line>
+        <line>Come and drink."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">As I spoke I fixed my eyes upon</line>
+        <line>his countenance, and his exquisite</line>
+        <line>beauty, <del rend="strikethrough">and</del> the <del rend="strikethrough">exq</del> heavenly compassion</line>
+        <line>that beamed from his eyes, his gentle</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0203.01">
+        <line>"Do</line>
+    </zone>
+</surface>

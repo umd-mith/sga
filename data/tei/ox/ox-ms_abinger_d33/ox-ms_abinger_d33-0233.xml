@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0233" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="122v">
+    <zone type="pagination"><line>222</line></zone>
+    
+    <zone type="main">
+        <line>sole tie that binds me to existence, and</line>
+        <line>now I break it: It gives me no pain to leave</line>
+        <line>you; nor can <del rend="strikethrough">it</del> <del rend="strikethrough">l</del> <del rend="strikethrough">y</del>our seperation</line>
+        <line>give you much. You never regarded me</line>
+        <line>as <del rend="strikethrough">one</del> <del rend="strikethrough">a being of</del> one of this world, but</line>
+        <line>rather as a being, <del rend="strikethrough">who</del> for some penance</line>
+        <line>was sent from the Kingdom of Shadows; and</line>
+        <line>she passed a few days weeping on the earth</line>
+        <line>and longing to return to her native soil. You</line>
+        <line>will weep but they will be tears of gentle</line>
+        <line>ness. I would, if I thought that it would</line>
+        <line>lessen your regret, tell you to smile and</line>
+        <line>congratulate me on my departure from</line>
+        <line>the misery you beheld me endure. I would</line>
+        <line>say; Woodville, rejoice with your friend, I</line>
+        <line>triumph now and am most happy. But</line>
+        <line>I check these expressions; these may not be</line>
+        <line>the <del rend="strikethrough">cousa</del> consolations of the living; they weep</line>
+        <line>for their own misery, and not for that</line>
+        <line>of the being they have lost. No; shed a few</line>
+        <line>natural tears due to my memory: and if</line>
+        <line><anchor xml:id="d33-0233.01"/>ever <del rend="strikethrough">you</del> visit my grave, pluck from thence</line>
+        <line></line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0233.01">
+        <line>you</line>
+    </zone>
+</surface>

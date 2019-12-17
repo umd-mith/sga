@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0078" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="41r">
+    <zone type="pagination"><line>67</line></zone>
+    <zone type="library"><line>41</line></zone>
+    
+    <zone type="main">
+        <line>rashness gave the victory <del rend="strikethrough">to his adversiary</del></line>
+        <line>in this dreadful fight to the enemy</line>
+        <line>who triumphed over him as he lay</line>
+        <line>fallen and vanquished. I! I alone</line>
+        <line>was the cause of his defeat and justly</line>
+        <line>did I pay the fearful penalty. I said</line>
+        <line>to myself, let him receive sympathy</line>
+        <line>and these struggles will cease. Let him</line>
+        <line>confide his misery to another heart</line>
+        <line>and half the weight of it will be</line>
+        <line>lightened. I will win him to me; he</line>
+        <line>shall not deny his grief to me and</line>
+        <line>when I know his secret then will I</line>
+        <line>pour <mod><del rend="strikethrough">the</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">a</add></mod> balm into his soul and again</line>
+        <line>I shall enjoy the ravishing delight</line>
+        <line>of beholding his smile, and of again</line>
+        <line>seeing his eyes beam if not with plea-</line>
+        <line>sure at least with gentle love and</line>
+        <line>thankfulness. This will I do, I said. Half</line>
+        <line>I accomplished; I gained his secret and</line>
+        <line>we were both lost for ever.</line>
+        
+    </zone>
+</surface>

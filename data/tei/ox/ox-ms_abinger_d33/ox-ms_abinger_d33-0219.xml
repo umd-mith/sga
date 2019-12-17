@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0219" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="115v">
+    <zone type="pagination"><line>208</line></zone>
+    
+    <zone type="main">
+        <line>I pictured to myself <del rend="strikethrough">some</del> a lovely river</line>
+        <line>such as that on whose banks Dante</line>
+        <line>describes Mathilda gathering flowers,</line>
+        <line>which ever flows</line>
+        <line rend="indent2">––––––– bruna, bruna,</line>
+        <line rend="indent1">Sotto l’ombra perpetua, che mai</line>
+        <line rend="indent1">Raggiar non lascia sole ivi, nè Luna.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">And then I repeated to myself all</line>
+        <line>that lovely passage that relates the</line>
+        <line>entrance of Dante into the terrestrial</line>
+        <line>Paradise; and thought it would be</line>
+        <line>sweet when I wandered on those lovely</line>
+        <line>banks to see the car of light descend</line>
+        <line>with my long lost parent to be restored</line>
+        <line>to me. As I waited there in expectation</line>
+        <line>of that moment, I thought how, of the</line>
+        <line>lovely flowers that <del rend="strikethrough">gree</del> grew there,</line>
+        <line>I would wind myself a chaplet and</line>
+        <line>crown myself for joy: I would sing</line>
+        <line><hi rend="underline">sul’ margine d’un rio</hi>, my father’s favourite</line>
+        <line>song, and that my voice gliding through</line>
+        <line>the windless air would announce to him</line>
+        
+    </zone>
+</surface>

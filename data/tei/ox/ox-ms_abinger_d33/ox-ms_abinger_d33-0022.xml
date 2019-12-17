@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0022" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="13r">
+    <zone type="pagination"><line>11</line></zone>
+    <zone type="library"><line>13</line></zone>
+
+    <zone type="main">
+        <anchor xml:id="d33-0022.01"/>
+        <line><del rend="strikethrough">and thus</del> <del rend="strikethrough">during his school vacations</del> they were</line>
+        <line>perpetually together. Novels and all the</line>
+        <line>various methods by which youth in civilized</line>
+        <line>life are led to <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">a</add></mod> knowledge of the existence</line>
+        <line>of passions before they really feel them, had</line>
+        <line><del rend="strikethrough">ha</del> produced a strong effect on him who</line>
+        <line>was so peculiarly susceptible of every imp<mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">r</add></mod>ession.</line>
+        <line>At <del rend="strikethrough">eve</del> eleven years of age Diana was his</line>
+        <line>favourite playmate but he already talked the</line>
+        <line>language of love. Although she was <del rend="strikethrough">two</del></line>
+        <line>elder than he by nearly two years the</line>
+        <line>nature of her education made her more</line>
+        <line>childish at least in the knowledge and</line>
+        <line>expression of feeling; she received his warm</line>
+        <line>protestations with innocence, and returned them</line>
+        <line>unknowing of what they meant. She had read</line>
+        <line>no novels and <del rend="strikethrough">saw no society</del> associated only</line>
+        <line>with her younger sisters, what could she know</line>
+        <line>of the difference between love and friendship?</line>
+        <line>And when <del rend="strikethrough">age developed the t</del> the devolope</line>
+        <line>ment of her understanding disclosed the true</line>
+        <line>nature of this intercourse to her, her affec-</line>
+        <line>tions were already engaged to her friend,</line>
+        <line>and all she feared was lest other attractions</line>
+        <line>and fickleness might make him break his</line>
+
+    </zone>
+    <zone type="left_margin" corresp="#d33-0022.01">
+        <line>X</line>
+        <line><del rend="strikethrough">an angelic disposition and a quick, penetrating understanding</del> –</line>
+        <line><del rend="strikethrough">her visits </del><add place="sublinear"><metamark function="insert">^</metamark></add> <del rend="strikethrough">at</del> <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">to his mother</add></mod> <del rend="strikethrough">the family his house were long &amp; frequent and there</del></line>
+        
+    </zone>
+</surface>

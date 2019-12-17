@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0050" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="26v">
+    <zone type="pagination"><line>39</line></zone>
+    <zone type="library"><line>27</line></zone>
+    
+    <zone type="main">
+        <line>curious feeling of unreality attached by him</line>
+        <line>to his foreign life in comparison with</line>
+        <line><del rend="strikethrough">that</del> the years <del rend="strikethrough">had passed</del> of <del rend="strikethrough">ye</del> his</line>
+        <line>youth. All the time <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he had</add></mod> passed <del rend="strikethrough">away</del> out</line>
+        <line>of England was as a dream, and all the</line>
+        <line>interest of his soul all his affections</line>
+        <line>belonged to events which had happened</line>
+        <line>and persons who had existed sixteen</line>
+        <line>years before. It was strange when</line>
+        <line>you heard him talk to see how he</line>
+        <line>passed over this lapse of time as a</line>
+        <line>night of visions; while the remembrances</line>
+        <line>of his youth standing seperate as they</line>
+        <line>did from his after life had lost none</line>
+        <line>of their <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">vigour</add> <del rend="strikethrough">vividness</del></mod>. He talked of my</line>
+        <line>Mother as if she had lived but a</line>
+        <line>few weeks before; not that he ex-</line>
+        <line>pressed poignant grief, but his discrip</line>
+        <line>tion of her person, and his relation</line>
+        <line>of all anecdotes connected with her was</line>
+        <line>thus fervent and vivid.</line>
+    </zone>
+</surface>

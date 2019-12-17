@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0105" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="54v">
+    <zone type="pagination"><line>94</line></zone>
+    
+    <zone type="main">
+        <line>against its base, at a distance. I heard</line>
+        <line>the roar of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> waters: he held <del rend="strikethrough">right</del> his</line>
+        <line>course right on <add place="superlinear">X </add>and I became breath-</line>
+        <line>less with fear lest he should plunge</line>
+        <line>down the dreadful precipi<del rend="strikethrough">e</del>ce; I tried</line>
+        <line>to augment my speed, but my knees</line>
+        <line>failed beneath me, yet I had just</line>
+        <line>reached him; just caught a part of</line>
+        <line>his flowing robe, when he leapt down</line>
+        <line>and I awoke with a violent scream.</line>
+        <line>[I was trembling and my pillow was</line>
+        <line>wet with my tears; for a few moments</line>
+        <line>my heart beat hard, but the bright</line>
+        <line>beams of the sun and the chirping</line>
+        <line>of the birds quickly restored me to</line>
+        <line>myself, and I rose with a languid</line>
+        <line>spirit, yet wondering what events</line>
+        <line>the day would bring forth. Some</line>
+        <line>time passed before I summoned cou</line>
+        <line>-rage to ring the bell for my servant,</line>
+        <line>and when she came I still dared not</line>
+        <line>utter my father’s name. I ordered her</line>
+        <anchor xml:id="d33-0105.01"/>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0105.01">
+        <line>x towards the brink</line>
+    </zone>
+</surface>

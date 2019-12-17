@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0129" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="67v">
+    <zone type="pagination"><line>118</line></zone>
+    
+    <zone type="main">
+        <line>accompany <mod><add place="superlinear">me in</add> <del rend="strikethrough">to</del></mod> following his steps. The night was</line>
+        <line>tempestuous but my bribe was high and I</line>
+        <line>easily procured a countryman. We passed</line>
+        <line>through many lanes and over fields and</line>
+        <line>wild downs; the rain poured down in torrents,</line>
+        <line>and the loud thunder broke in terrible crashes</line>
+        <line>over our heads. Oh! What a night it was!</line>
+        <line>And I passed on with quick ste<del rend="strikethrough">l</del>ps among the</line>
+        <line>high, dank grass amid the rain and tem-</line>
+        <line>pest. My dream was for ever in my thoughts,</line>
+        <line>and with a kind of half insanity that often</line>
+        <line>possesses the mind in despair, I said aloud;</line>
+        <line>"Courage! We are not <del rend="strikethrough">yet</del> near the sea;</line>
+        <line>we are yet several miles from the ocean" –</line>
+        <line>Yet it was towards the sea that our direc</line>
+        <line>tion lay and that heightened the confusion</line>
+        <line>of my ideas. Once, overcome by fatigue, I</line>
+        <line>sunk on the wet earth; about two hun</line>
+        <line>dred yards distant, alone in a large</line>
+        <line>meadow stood a magnificent oak; the</line>
+        
+    </zone>
+</surface>

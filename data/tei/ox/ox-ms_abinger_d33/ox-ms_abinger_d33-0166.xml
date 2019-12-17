@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0166" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="87r">
+    <zone type="pagination"><line>155</line></zone>
+    <zone type="library"><line>87</line></zone>
+    
+    <zone type="main">
+        <line>aberrations of the fixed stars. It is our</line>
+        <line>distance from them and our imper-</line>
+        <line>fect means of communication that</line>
+        <line>makes them appear to move; in <del rend="strikethrough">ll</del></line>
+        <line>truth they always remain stationary,</line>
+        <line>a glorious centre, <del rend="strikethrough">leach</del> giving us</line>
+        <line>a fine lesson of modesty if we would</line>
+        <line>thus receive it." –</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I have said that he was a poet:</line>
+        <line>When he was three and twenty years</line>
+        <line>of age he first published a poem, and</line>
+        <line>it was hailed by the whole nation</line>
+        <line>with enthusiasm and delight: His</line>
+        <line>good star perpetually shone upon</line>
+        <line>him; a reputation had never before</line>
+        <line>been made so rapidly: it was uni</line>
+        <line>versal. The multitude extolled the</line>
+        <line>same poems that formed the wonder</line>
+        <line>of the sage in his closet: there was not</line>
+        <line>one dissentient voice.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">It was at this time, in the height</line>
+        <line>of his glory, that he became acquainted</line>
+        <line>with Elinor. She was a young heiress of</line>
+        
+    </zone>
+</surface>

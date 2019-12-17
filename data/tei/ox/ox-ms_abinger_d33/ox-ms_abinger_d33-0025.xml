@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0025" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="14v">
+    <zone type="pagination"><line>14</line></zone>
+    
+    <zone type="main">
+        <line>received all his consolation from her sweet</line>
+        <line>voice and dearer caresses. This short sepera.</line>
+        <line>tion from his companions gave him courage</line>
+        <line>to assert his independance. He had a feeling</line>
+        <line>that however they might express ridicule</line>
+        <line>of his intended marriage they would not</line>
+        <line>dare display it when it had taken place;</line>
+        <line>therefore seeking the consent of his guardian</line>
+        <line>which with some difficulty he obtained,</line>
+        <line>and of the father of his mistress which</line>
+        <line>was more easily given, without acquaint-</line>
+        <line>-ing any one else of his intention, by the</line>
+        <line>time he had attained his twentieth birthday</line>
+        <line>he had become the husband of Diana.</line>
+        
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">He loved her with passion and</line>
+        <line>her tenderness had a charm for him that</line>
+        <line>would not permit him to think of aught</line>
+        <line>but her. He invited some of his college</line>
+        <line>friends to see him but their frivolity dis-</line>
+        <line>gusted him. Diana had torn the veil</line>
+        <line>which had before kept him in his</line>
+        <line>boyhood: he was become a man and he</line>
+        <line>was surprised how he could ever have</line>
+        <line>joined in the cant words and ideas of</line>
+    </zone>
+</surface>

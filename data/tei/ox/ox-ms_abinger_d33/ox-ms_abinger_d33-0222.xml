@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0222" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="117r">
+    <zone type="pagination"><line>211</line></zone>
+    <zone type="library"><line>117</line></zone>
+    
+    <zone type="main">
+        <line>wanderings.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I lay upon the grass surrounded</line>
+        <line>by a darkness which not the slightest</line>
+        <line>beam of light penetrated – There</line>
+        <line>was no sound for the deep night</line>
+        <line>had laid to sleep the insects, the</line>
+        <line>only creatures that lived on the</line>
+        <line>lone spot where no tree or shrub</line>
+        <line>could afford shelter to <del rend="strikethrough">ay</del> aught else –</line>
+        <line>There was a wondrous silence in</line>
+        <line>the air that calmed my senses</line>
+        <line>yet which enlivened my soul,</line>
+        <line>my <mod><del rend="strikethrough">soul</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">mind</add></mod> hurried from image to</line>
+        <line>image and seemed to grasp an</line>
+        <line>eternity <del rend="strikethrough">of time</del> All in my heart</line>
+        <line>was shadowy yet calm, untill my</line>
+        <line>ideas became confused and at length</line>
+        <line>died away in sleep.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">When I awoke it rained: I was</line>
+        <line>already quite wet, and my limbs were</line>
+        <line><anchor xml:id="d33-0222.01"/><mod><add place="superlinear"><del rend="strikethrough">stiff</del></add> <del rend="strikethrough">still</del></mod> and my head giddy with the chill</line>
+        <line>of night. It was a drizzling, penetrating</line>
+        <line></line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0222.01">
+        <line>stiff <del rend="strikethrough">chill</del></line>
+    </zone>
+</surface>

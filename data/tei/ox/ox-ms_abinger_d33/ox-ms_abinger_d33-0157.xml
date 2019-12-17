@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0157" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="82v">
+    <zone type="pagination"><line>146</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head" spanTo="#d33-0157.01"/>
+        
+        <line rend="center">Chapter IX</line>
+        <anchor xml:id="d33-0157.01"/>
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Thus I passed two years. Day</line>
+        <line>after day so many hundreds wore
+            <del rend="strikethrough">away</del> on; they brought no out ward</line>
+        <line>changes with them, but some few</line>
+        <line>slowly operated on my mind as I</line>
+        <line>glided on towards death. I began to</line>
+        <line><del rend="strikethrough">slu</del> study more; to sympathize more</line>
+        <line>in the thoughts of others as expressed</line>
+        <line>in books; to read history, and to lose</line>
+        <line>my individuallity among the crowd</line>
+        <line>that had existed before me. Thus</line>
+        <line>perhaps as the sensation of immediate</line>
+        <line>suffering wore off, I became more</line>
+        <line>human. Solitude also lost to me <del rend="strikethrough">sol</del></line>
+        <line>some of its charms: I began again to</line>
+        <line>wish for sympathy; not that I was ever</line>
+        <line>tempted <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">to seek</add></mod> the crowd, but I wished for one</line>
+        <line>friend to love me. You will say</line>
+        <line>perhaps that I gradually became</line>
+        <line>fitted to return to society. I do not think</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0031" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="17v">
+    <zone type="pagination"><line>20</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head"/><line rend="center">Chapter II</line>
+        <milestone unit="tei:p"/><line rend="indent2">I now <del rend="strikethrough">I</del> come to my <del rend="strikethrough">oun</del> own story.</line>
+            <line>During the early part of my life there is</line>
+            <line>little to relate, and I will be brief; but I</line>
+            <line><del rend="strikethrough">you</del> must <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add></mod> allowed<del rend="strikethrough">me</del> to dwell a little on</line>
+            <line>the years of my childhood that <mod><del rend="strikethrough">you</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">it</add></mod> may <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add></mod> <del rend="strikethrough">the</del></line>
+        <line><anchor xml:id="d33-0031.01"/><del rend="strikethrough">better judge</del> <del rend="strikethrough">ho</del> how when one hope failed</line>
+            <line><del rend="strikethrough">me</del> all life was to be a <del rend="strikethrough">bland</del> blank; and</line>
+            <line>how when the <del rend="strikethrough">l</del> only affection I was per-</line>
+            <line>mitted to cherish was blasted my existence</line>
+            <line>was extinguished with it.</line>
+            <line>I have have said that <del rend="strikethrough">w</del> my aunt</line>
+            <line>was very unlike my father. I believe</line>
+            <line>that without the slightest tinge of a</line>
+            <line>bad heart she had the coldest that</line>
+            <line>ever filled a human breast: <del rend="strikethrough">She</del> <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">it</add></mod> was</line>
+            <line>totally incapable of any affection She</line>
+            <line>took me under her protection because</line>
+            <line>she considered it her duty; but <del rend="strikethrough">h</del> she had</line>
+        <line>lived alone <anchor xml:id="d33-0031.02"/> <del rend="strikethrough">too long</del> and undisturbed by the</line>
+            <line>noise and prattle of children to allow</line>
+            <line>that I should disturb her quiet. She</line>
+            <line>had never been married, and for the last</line>
+    </zone>
+    
+    <zone type="left_margin" corresp="#d33-0031.01">
+        <line><add>apparent </add></line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0031.02">
+        <line><add>too long</add></line>
+    </zone>
+</surface>

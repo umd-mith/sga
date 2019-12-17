@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0054" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="29r">
+    <zone type="pagination"><line>43</line></zone>
+    <zone type="library"><line>29</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Three months passed away in this</line>
+            <line>delightful intercourse, when my aunt</line>
+            <line>fell ill. I passed a whole month in</line>
+            <line>her chamber nursing her, but her</line>
+            <line>disease was mortal and she died, leav-</line>
+            <line>ing me <del rend="strikethrough">in</del> for some time inconsolable.</line>
+            <line>Death is so dreadful to the living; the</line>
+            <line>chains of habit are so strong even when</line>
+            <line>affection does not link them that</line>
+            <line>the heart must be agonized when</line>
+            <line>they break. But my father was beside</line>
+            <line>me to console me and to drive away</line>
+            <line>bitter memories by bright hopes: me-</line>
+            <line>-thought that it was sweet to grieve</line>
+            <line>that he might dry my tears.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Then again he distracted my</line>
+            <line>thoughts from my sorrow by comparing</line>
+            <line>it with his despair when he lost</line>
+            <line>my mother. Even <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">at that time</add> <del rend="strikethrough">then</del></mod> I shuddered</line>
+            <line>at the picture he drew of his passions:</line>
+            <line>he had the imagination of <del rend="strikethrough">a</del> poet, and</line>
+            <line>when he described the whirlwind that</line>
+            
+    </zone>
+</surface>

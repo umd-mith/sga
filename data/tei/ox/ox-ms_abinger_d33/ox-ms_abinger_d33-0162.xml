@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0162" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="85r">
+    <zone type="pagination">151<line></line></zone>
+    <zone type="library"><line>85</line></zone>
+    
+    <zone type="main">
+        <line>from over him, shine forth brighter</line>
+        <line>and happier than before.</line>
+        <line><anchor xml:id="d33-0162.01"/>odville <del rend="strikethrough">Herbert</del> was the son of a poor</line>
+        <line>clergyman and had received a classi</line>
+        <line>cal education. He was one of those</line>
+        <line><anchor xml:id="d33-0162.02"/>few whom fortune favours from their</line>
+        <line>birth; on whom she bestows all gifts</line>
+        <line>of intellect and person <del rend="strikethrough">wl</del> with a</line>
+        <line>profusion that knew no bounds, and</line>
+        <line>whom under her peculiar <del rend="strikethrough">attention</del></line>
+        <line>protection, no imperfection however</line>
+        <line>slight, or disappointment however</line>
+        <line>transitory has leave to touch. She</line>
+        <line>seemed to have formed his mind of</line>
+        <line>that excellence which no dross can</line>
+        <line>tarnish, and his understanding was</line>
+        <line>such that no error could pervert.</line>
+        <line>His genius was transcendant, and when</line>
+        <line>it rose as a bright star in the east</line>
+        <line>all eyes <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">were</add></mod> turned towards it in admiration.</line>
+        <line>He was a Poet. That name has so often</line>
+        <line>been degraded <del rend="strikethrough">than on the earth</del> <add place="superlinear">that</add> it</line>
+        <line>will not convey the idea of all that</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0162.01">
+        <line>Wo</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0162.02">
+        <line>very</line>
+    </zone>
+</surface>

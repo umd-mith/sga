@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0098" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="51r">
+    <zone type="pagination"><line>87</line></zone>
+    <zone type="library"><line>51</line></zone>
+    
+    <zone type="main">
+        <line>dead to me, and I felt for a moment</line>
+        <line>as if he with white hairs were laid</line>
+        <line>in his coffin and I – youth vanished</line>
+        <line>in approaching age, were weeping</line>
+        <line>at his <del rend="strikethrough">departure</del> timely dissolution.</line>
+        <line>But it was not so, I was yet young,</line>
+        <line>Oh! far too young, nor was he dead to</line>
+        <line>others; but I, most miserable, must</line>
+        <line>never see or speak to him again. I</line>
+        <line>must fly from him with more earnest-</line>
+        <line>ness than from my greatest enemy: in</line>
+        <line>solitude or in cities I must never</line>
+        <line>more behold him. That consideration</line>
+        <line>made me breathless with anguish, and</line>
+        <line>impressing itself on my imagination</line>
+        <line>I was unable <del rend="strikethrough">to fo</del> for a time to follow</line>
+        <line>up any train of ideas. Ever after this,</line>
+        <line>I thought, I would live in the most</line>
+        <line>dreary seclusion. I would retire to the</line>
+        <line>Continent and become a nun; not</line>
+        <line>for religion’s sake, for I was not a</line>
+        <line>Catholic, but that I might be for ever</line>
+        <line>shut out from the world. I should</line>
+        
+    </zone>
+</surface>

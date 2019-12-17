@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0089" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="46v">
+    <zone type="pagination">78<line></line></zone>
+    
+    <zone type="main">
+        <line>well weighing his replies: I was <del rend="strikethrough">hurried</del> led</line>
+        <line><del rend="strikethrough">on</del> by passion and drew him with</line>
+        <line>frantic heedlessness into the abyss</line>
+        <line>that he so fearfully avoided <del rend="strikethrough">him</del> –</line>
+        <line>I replied to his terrific words: "You fill</line>
+        <line>me with affright it is true, <del rend="strikethrough">de</del> dearest</line>
+        <line>father, but you only <del rend="strikethrough">bu</del> confirm</line>
+        <line>my resolution to put an end to this</line>
+        <line>state of doubt. I will not be put off</line>
+        <line>thus: do you think that I can live</line>
+        <line>thus fearfully from day to day – the</line>
+        <line>sword in my bosom yet kept from</line>
+        <line>its mortal wound by a hair – a word! –</line>
+        <line>I demand that dreadful word; though</line>
+        <line>it be as <del rend="strikethrough">l</del> a flash of lightning to destroy</line>
+        <line>me, speak it.</line>
+        <milestone unit="tei:p"/><line rend="indent2">"Alas! Alas! What am I become?</line>
+        <line>But a few months have elapsed since</line>
+        <line>I believed that I was all the world to you;</line>
+        <line>and that there was no happiness or</line>
+        <line>grief for you on earth unshared by your</line>
+        <line>Mathilda – your child: that happy time</line>
+        
+    </zone>
+</surface>

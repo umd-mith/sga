@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0087" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="45v">
+    <zone type="pagination"><line>76</line></zone>
+    
+    <zone type="main">
+        <line><del rend="strikethrough">and more</del>, yet that word is hovering on</line>
+        <line>my lips. Oh! There is a fearful chasm;</line>
+        <line>but I adjure you to beware!"</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"Ah, dearest <mod><del rend="strikethrough">father</del> <add place="sublinear">friend</add></mod>!" I cried, "do not</line>
+        <line>fear! Speak that word; it will bring</line>
+        <line>peace, not death. If there is a chasm</line>
+        <line><anchor xml:id="d33-0087.01"/><del rend="strikethrough">a</del> mutual love <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">will</add></mod> give us wings to pass</line>
+        <line>it, and we shall find flowers, and</line>
+        <line>verdure, and delight on the <del rend="strikethrough">t</del> other</line>
+        <line>side." I threw myself at his feet, and</line>
+        <line>took his hand, "Yes, speak, and we shall</line>
+        <line>be happy; there will no longer be</line>
+        <line>doubt, no dreadful <del rend="strikethrough">in</del> uncertainty; trust</line>
+        <line>me, my affection will soothe your</line>
+        <line>sorrow; speak that word and all dan-</line>
+        <line>-ger will be past, and we shall</line>
+        <line>love each other as before, and</line>
+        <line><del rend="strikethrough">be</del> for ever."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">He snatched his hand from me,</line>
+        <line>and rose in violent disorder: "What</line>
+        <line>do <handShift medium="pencil" new="#mws"/><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">you</add></mod> <handShift medium="pen" new="#mws"/>mean? You know not what you</line>
+        <line>mean. Why do you bring me out,</line>
+        <line>and <del rend="strikethrough">then</del> torture, me, <del rend="strikethrough">tempt</del> and</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0087.01">
+        <line><add>our </add></line>
+    </zone>
+</surface>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0135" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="70v">
+    <zone type="pagination"><line>124</line></zone>
+    
+    <zone type="main">
+        <line>124 [in left margin] words that they uttered confirmed what</line>
+        <line>I before knew. I did not feel shocked</line>
+        <line>or overcome: I believe that I asked</line>
+        <line>one or two questions and listened to</line>
+        <line>the answers. I harly know, but in a</line>
+        <line>few moments I sank lifeless to the</line>
+        <line>ground; and so would that then all</line>
+        <line>had been at an end!</line>
+        
+            
+    </zone>
+</surface>

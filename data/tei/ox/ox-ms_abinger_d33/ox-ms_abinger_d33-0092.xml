@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0092" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="48r">
+    <zone type="pagination"><line>81</line></zone>
+    <zone type="library"><line>48</line></zone>
+    
+    <zone type="main">
+        <line>surely a new soul <del rend="strikethrough">wihin</del> within me,</line>
+        <line>and my blood riots through my veins:</line>
+        <line>I am burnt up with fever. But</line>
+        <line>these are precious moments; devil</line>
+        <line>as I am become, yet that is my Ma-</line>
+        <line>thilda before me whom I love as</line>
+        <line>one was never before loved: And she</line>
+        <line>knows it now; she listens to these</line>
+        <line>words which I thought, fool as I was,</line>
+        <line>would blast her to death. Come, come,</line>
+        <line>the worst is past: no more grief, tears</line>
+        <line>or despair; were not those the words</line>
+        <line>you uttered? – We have leapt the</line>
+        <line>chasm<del rend="strikethrough">e</del> I told you of, and now, mark</line>
+        <line>me, Mathilda, we are to find flowers,</line>
+        <line>and verdure and delight; or is it hell,</line>
+        <line>and fire, and tortures? Oh! Beloved</line>
+        <line>One, I am borne away; I can no longer</line>
+        <line>sustain myself; surely this is death that</line>
+        <line>is coming. Let me lay my head near</line>
+        <line>your heart; let me die in your arms!" –</line>
+        <line>He sunk to the earth fainting, while I,</line>
+        <line>nearly as lifeless, gazed on him in</line>
+        <line>despair.</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0074" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="39r">
+    <zone type="pagination"><line>62</line></zone>
+    <zone type="library"><line>39</line></zone>
+    
+    <zone type="main">
+        <line>despair, raving wildly, untill exhausted</line>
+        <line>he sank down nor was revived untill</line>
+        <line>I joined him.</line>
+        <milestone unit="tei:p"/><line rend="indent2">While we were in London there</line>
+        <line>was a harshness and sulleness in his</line>
+        <line>sorrow which had now entirely disap</line>
+        <line>peared. There I <del rend="strikethrough">shrung</del> shrunk and fled</line>
+        <line>from him, now I only wished to be with</line>
+        <line>him that I might soothe him to</line>
+        <line>peace. When he was silent I tried to</line>
+        <line>divert him, and when sometimes I</line>
+        <line>stole to him during the energy of his</line>
+        <line>passion I wept but did not desire</line>
+        <line>to leave him. Yet he suffered fearful</line>
+        <line>agony; during the day he was more</line>
+        <line>calm, but at night when I could not</line>
+        <line>be with him <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he</add> <del rend="strikethrough">to</del></mod> seemed to give the</line>
+        <line>reins to his grief: he often passed his</line>
+        <line>nights either on the floor in my</line>
+        <line>mother’s room, or in the garden; and</line>
+        <line>when in the morning he saw me</line>
+        <line>view with poignant grief his ex</line>
+        <line>-hausted frame, and his person languid</line>
+        <line>almost to death with <del rend="strikethrough">wall</del> watching</line>
+        
+    </zone>
+</surface>

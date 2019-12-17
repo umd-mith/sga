@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0122" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="64r">
+    <zone type="pagination"><line>111</line></zone>
+    <zone type="library"><line>64</line></zone>
+    
+    <zone type="main">
+        <line>beneficent influence, oh, my, child!, bless</line>
+        <line>me with the hope that I have not</line>
+        <line>utterly destroyed you</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"Farewell, Mathilda. I go with</line>
+        <line>the belief that I have your pardon.</line>
+        <line>Your gentle nature would not per-</line>
+        <line>mit you to hate your greatest enemy</line>
+        <line>and though I be he, although I have</line>
+        <line>rent happiness from your grasp; though</line>
+        <line>I have passed over your young love</line>
+        <line>and hopes as the angel of destruction, find</line>
+        <line>ing beauty and joy, and leaving blight</line>
+        <line>and despair, yet you will forgive me,</line>
+        <line>and with eyes overflowing with tears I</line>
+        <line>thank you; my beloved one, I accept your</line>
+        <line>pardon with a gratitude that will</line>
+        <line>never die, and that will, <del rend="strikethrough">outlive,</del> in</line>
+        <line>-deed it will, outlive guilt and remorse.</line>
+        <line rend="center">"Farewell for ever!"</line>
+        <line><del rend="strikethrough">Chapter VIII</del></line>
+        <line>The moment I finished this letter</line>
+        <line>I ordered the carriage and prepared to</line>
+        <line>follow my father. The words of his letter</line>
+        
+    </zone>
+</surface>
