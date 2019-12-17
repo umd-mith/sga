@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0042" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="23r">
+    <zone type="pagination"><line>31</line></zone>
+
+    <zone type="main">
+        <milestone unit="tei:head"/>
+        <line rend="center">III</line>
+        
+        <line>It was on my <del rend="strikethrough">is</del> sixteenth birthday</line>
+        <line>that my Aunt received a letter from</line>
+        <line>my father. I cannot describe the</line>
+        <line>tumult of emotions that arose within</line>
+        <line>me as I read it. It was dated from</line>
+        <line>London; he had returned! I could only</line>
+        <line>relieve my transports by tears, tears</line>
+        <line>of unmingled joy. He had returned, and</line>
+        <line>he wrote to <del rend="strikethrough">my</del>
+            <del rend="strikethrough">aunt</del> know whether my</line>
+        <line>aunt would come to London or whether</line>
+        <line>he should visit her in Scotland. How</line>
+        <line>delicious to me were the words of his letter</line>
+        <line>that concerned me: "I cannot tell you"</line>
+        <line>it said, "how ardently I desire to see</line>
+        <line>my Mathilda. I look on her as the</line>
+        <line>creature who will form the happiness</line>
+        <line>of my future life: She is all that</line>
+        <line>exists on earth that interests me.</line>
+        <line>I can hardly prevent myself from</line>
+        <line>hastening <del rend="strikethrough">inn</del> immediately to you</line>
+    </zone>
+</surface>

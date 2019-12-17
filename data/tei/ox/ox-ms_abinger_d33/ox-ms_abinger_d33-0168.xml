@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0168" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="88r">
+    <zone type="pagination"><line>157</line></zone>
+    <zone type="library"><line>88</line></zone>
+    
+    <zone type="main">
+        <line>he was sought for by every society and</line>
+        <line>all eyes were turned on him alone</line>
+    <line>when he appeared; but he was the</line>
+    <line>son of a poor clergyman and Elinor</line>
+    <line>was a rich heiress. Her guardian was</line>
+    <line>not displeased with their mutual affect</line>
+    <line>tion: The merit of <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> was too</line>
+    <line>eminent <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">to admit</add></mod> of cavil on account of his</line>
+    <line>inferior wealth; but the dying will</line>
+    <line>of her father did not allow her to</line>
+    <line>marry before she was of age and</line>
+    <line>her fortune depended upon <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">her</add> <del rend="strikethrough">he</del></mod> obey-</line>
+    <line>-[in left margin]ing this injunction. She had just</line>
+    <line>entered her twentieth year, and she</line>
+    <line>and her lover were obliged to submit</line>
+    <line>to this delay. But they were ever together</line>
+    <line>and their happiness seemed that of</line>
+    <line>Paradise: they studied together: formed</line>
+    <line>plans of future occupations, and drinking</line>
+    <line>in <del rend="strikethrough">from</del> love and joy from each other’s</line>
+    <line>eyes and words they hardly repined at the</line>
+    <line>delay to their entire union. <del rend="strikethrough">Herbert</del> Woodville</line>
+    
+    </zone>
+</surface>

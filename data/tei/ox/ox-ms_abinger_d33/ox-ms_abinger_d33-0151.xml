@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0151" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="79v">
+    <zone type="pagination"><line>140</line></zone>
+    
+    <zone type="main">
+        <line>I slept too undisturbed by dreams, and</line>
+        <line>awoke refreshed to again enjoy my</line>
+        <line>tranquil freedom.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">In four days we arrived at</line>
+        <line>the harbour to which we were</line>
+        <line>bound. I would not remain on the sea</line>
+        <line><del rend="strikethrough">cosl</del> coast, but proceeded immediately</line>
+        <line>inland. I had already planned the</line>
+        <line>situation where I would live. It</line>
+        <line>should be a solitary house on a</line>
+        <line>wide plain near no other habita</line>
+        <line>tion: where I could behold the whole</line>
+        <line>horizon, and wander far without</line>
+        <line>molestation from the sight of my fel-</line>
+        <line>low creatures. I was not <del rend="strikethrough">y</del> mysanthropic,</line>
+        <line>but I felt that the gentle current</line>
+        <line>of my feelings depended upon my being</line>
+        <line>alone. I fixed myself on a wide</line>
+        <line>solitude. On a dreary heath bestrewen</line>
+        <line>with stones, among which short grass</line>
+        <line>grew, and here and there a few rushes</line>
+        <line>beside a little pool. Not far from</line>
+        <line>my cottage was a small cluster of</line>
+        
+    </zone>
+</surface>

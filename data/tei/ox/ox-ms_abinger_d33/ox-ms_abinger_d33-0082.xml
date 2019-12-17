@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0082" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="43r">
+    <zone type="pagination"><line>71</line></zone>
+    <zone type="library"><line>43</line></zone>
+    
+    <zone type="main">
+        <line>hesitation I began:</line>
+        <milestone unit="tei:p"/><line rend="indent2">"Your kindness to me, my dearest</line>
+        <line>father, and the affection – the excessive</line>
+        <line>affection – that you had for me when</line>
+        <line>you first returned will I hope excuse</line>
+        <line>me in your eyes that I dare <del rend="strikethrough">to</del> speak</line>
+        <line>to you, although with <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> tender affection</line>
+        <line>of a daughter, yet <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">also</add></mod> with the freedom of</line>
+        <line>a friend and equal. But pardon me,</line>
+        <line>I entreat you and listen to me: do not</line>
+        <line>turn away from me; do not be impa-</line>
+        <line>tient; you may easily intimidate me</line>
+        <line>into silence, but my heart is bursting,</line>
+        <line>nor can I willingly consent to endure</line>
+        <line>for one moment longer the agony of</line>
+        <line><anchor xml:id="d33-0082.01"/> which for the last four months has</line>
+        <line>been my portion.</line>
+        <milestone unit="tei:p"/><line rend="indent2">"Listen to me, dearest friend, and per-</line>
+        <line>mit me to gain your confidence.</line>
+        <line>Are the happy days of mutual love</line>
+        <line>which have passed <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">to be to us me</add></mod> as a dream never to</line>
+        <line>return? Alas! You have a secret grief</line>
+        <line>that destroys us both: but you must per-</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0082.01">
+        <line><add>uncertitude </add></line>
+    </zone>
+</surface>

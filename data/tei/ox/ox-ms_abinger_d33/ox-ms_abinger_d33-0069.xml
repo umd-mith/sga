@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0069" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="36v">
+    <zone type="pagination"><line>58</line></zone>
+    
+    <zone type="main">
+        <line>mean time that should contradict this</line>
+        <line>command. He departed the same day, and</line>
+        <line>four days afterwards I received a letter from</line>
+        <line>his steward telling me in his name to</line>
+        <line>join him with as little delay as possible.</line>
+        <line>After travelling day and night I arrived</line>
+        <line>with an anxious, yet a hoping heart, for</line>
+        <line>why should he send for me if it [this line and next indented to avoid a large inkblot on the left side of the page]</line>
+        <line rend="indent2">were only to avoid me and to treat</line>
+        <line>me with the apparent aversion <del rend="strikethrough">as</del></line>
+        <line>that he had in London. I met him</line>
+        <line>at the distance of thirty miles from</line>
+        <line>our mansion. His demeanour was sad; <del rend="strikethrough">&amp;</del></line>
+        <line><del rend="strikethrough">silent</del> <del rend="strikethrough">silent</del> for a moment he appeared</line>
+        <line>glad to see me and then he checked</line>
+        <line>himself as if unwilling to betray his feelings.</line>
+        <line>He was silent during our ride, yet his</line>
+        <line>manner was kinder than before and</line>
+        <line>I thought I beheld a softness in his eye</line>
+        <line>that gave me hope;</line>
+        <milestone unit="tei:p"/><line rend="indent2">When we arrived, after a little</line>
+        <line>rest, he led me over the house and</line>
+        
+    </zone>
+</surface>

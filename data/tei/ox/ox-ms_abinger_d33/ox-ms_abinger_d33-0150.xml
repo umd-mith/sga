@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0150" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="79r">
+    <zone type="pagination"><line>139</line></zone>
+    <zone type="library"><line>79</line></zone>
+    
+    <zone type="main">
+        <line>calm and the vessel moved gently onwards,</line>
+        <line>I sat upon deck under the open canopy</line>
+        <line>of heaven and methought I was an</line>
+        <line>altered <del rend="strikethrough">cre</del> creature. Not the wild,</line>
+        <line>raving &amp; most miserable Mathilda</line>
+        <line>but a youthful Hermitess dedicated</line>
+        <line>to seclusion and whose bosom she</line>
+        <line>must <del rend="strikethrough">strif</del> strive to keep free from</line>
+        <line>all tumult and <del rend="strikethrough">unlo</del> unholy despair</line>
+        <line>– The fanciful nun like dress that</line>
+        <line>I had <mod><del rend="strikethrough">chosen</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">adopted</add></mod>; <del rend="strikethrough">the belief of my death</del></line>
+        <line><del rend="strikethrough">that was abroad in my world</del> – the</line>
+        <line>knowledge that my very existence</line>
+        <line>was a secret known only to myself;</line>
+        <line>the solitude to which I <del rend="strikethrough">wave</del> was</line>
+        <line><anchor xml:id="d33-0150.01"/> hereafter destined nursed gentle</line>
+        <line>thoughts in my wounded heart. The</line>
+        <line><del rend="strikethrough">gentle</del> breeze that played in my</line>
+        <line>hair revived me, and I watched</line>
+        <line>with quiet eyes the sunbeams that</line>
+        <line>glittered on the waves, and the birds</line>
+        <line>that coursed each other <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">over then waters</add></mod> just brush<del rend="strikethrough">n</del></line>
+        <line>ing them <del rend="strikethrough">waters</del> with their plumes.</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0150.01">
+        <line>for ever</line>
+    </zone>
+</surface>

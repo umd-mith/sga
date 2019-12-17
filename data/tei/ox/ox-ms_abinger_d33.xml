@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schemata/shelley_godwin_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:id="ox-ms_abinger_d33">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Mathilda, MS. Abinger D. 33</title>
+                <title type="sub">An electronic transcription</title>
+                <respStmt xml:id="md_editor">
+                    <resp>Metadata editor</resp>
+                    <name xml:id="RV">Luca Guariento</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Oxford University</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive 
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>Oxford, UK, and College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library, University of Oxford</repository>
+                        <idno type="Bod">MS. Abinger d.33</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem class="#work">
+                            <bibl status="fair_copy">
+                                <author>Mary Wollstonecraft Shelley</author>
+                                <title>Mathilda</title>
+                            </bibl>
+                            <msItem class="#work" xml:id="ox-mathilda">
+                                <locusGrp>
+                                    <locus target="#ox-ms_abinger_d33-0001
+                                        #ox-ms_abinger_d33-0002
+                                        #ox-ms_abinger_d33-0003
+                                        #ox-ms_abinger_d33-0004
+                                        #ox-ms_abinger_d33-0005
+                                        #ox-ms_abinger_d33-0006
+                                        #ox-ms_abinger_d33-0007
+                                        #ox-ms_abinger_d33-0008
+                                        #ox-ms_abinger_d33-0009
+                                        #ox-ms_abinger_d33-0010
+                                        #ox-ms_abinger_d33-0011
+                                        #ox-ms_abinger_d33-0012
+                                        #ox-ms_abinger_d33-0013
+                                        #ox-ms_abinger_d33-0014
+                                        #ox-ms_abinger_d33-0015
+                                        #ox-ms_abinger_d33-0016
+                                        #ox-ms_abinger_d33-0017
+                                        #ox-ms_abinger_d33-0018
+                                        #ox-ms_abinger_d33-0019
+                                        #ox-ms_abinger_d33-0020
+                                        #ox-ms_abinger_d33-0021
+                                        #ox-ms_abinger_d33-0022
+                                        #ox-ms_abinger_d33-0023
+                                        #ox-ms_abinger_d33-0024
+                                        #ox-ms_abinger_d33-0025
+                                        #ox-ms_abinger_d33-0026
+                                        #ox-ms_abinger_d33-0027
+                                        #ox-ms_abinger_d33-0028
+                                        #ox-ms_abinger_d33-0029
+                                        #ox-ms_abinger_d33-0030
+                                        #ox-ms_abinger_d33-0031
+                                        #ox-ms_abinger_d33-0032
+                                        #ox-ms_abinger_d33-0033
+                                        #ox-ms_abinger_d33-0034
+                                        #ox-ms_abinger_d33-0035
+                                        #ox-ms_abinger_d33-0036
+                                        #ox-ms_abinger_d33-0037
+                                        #ox-ms_abinger_d33-0038
+                                        #ox-ms_abinger_d33-0039
+                                        #ox-ms_abinger_d33-0040
+                                        #ox-ms_abinger_d33-0041
+                                        #ox-ms_abinger_d33-0042
+                                        #ox-ms_abinger_d33-0043
+                                        #ox-ms_abinger_d33-0044
+                                        #ox-ms_abinger_d33-0045
+                                        #ox-ms_abinger_d33-0046
+                                        #ox-ms_abinger_d33-0047
+                                        #ox-ms_abinger_d33-0048
+                                        #ox-ms_abinger_d33-0049
+                                        #ox-ms_abinger_d33-0050
+                                        #ox-ms_abinger_d33-0051
+                                        #ox-ms_abinger_d33-0052
+                                        #ox-ms_abinger_d33-0053
+                                        #ox-ms_abinger_d33-0054
+                                        #ox-ms_abinger_d33-0055
+                                        #ox-ms_abinger_d33-0056
+                                        #ox-ms_abinger_d33-0057
+                                        #ox-ms_abinger_d33-0058
+                                        #ox-ms_abinger_d33-0059
+                                        #ox-ms_abinger_d33-0060
+                                        #ox-ms_abinger_d33-0061
+                                        #ox-ms_abinger_d33-0062
+                                        #ox-ms_abinger_d33-0063
+                                        #ox-ms_abinger_d33-0064
+                                        #ox-ms_abinger_d33-0065
+                                        #ox-ms_abinger_d33-0066
+                                        #ox-ms_abinger_d33-0067
+                                        #ox-ms_abinger_d33-0068
+                                        #ox-ms_abinger_d33-0069
+                                        #ox-ms_abinger_d33-0070
+                                        #ox-ms_abinger_d33-0071
+                                        #ox-ms_abinger_d33-0072
+                                        #ox-ms_abinger_d33-0073
+                                        #ox-ms_abinger_d33-0074
+                                        #ox-ms_abinger_d33-0075
+                                        #ox-ms_abinger_d33-0076
+                                        #ox-ms_abinger_d33-0077
+                                        #ox-ms_abinger_d33-0078
+                                        #ox-ms_abinger_d33-0079
+                                        #ox-ms_abinger_d33-0080
+                                        #ox-ms_abinger_d33-0081
+                                        #ox-ms_abinger_d33-0082
+                                        #ox-ms_abinger_d33-0083
+                                        #ox-ms_abinger_d33-0084
+                                        #ox-ms_abinger_d33-0085
+                                        #ox-ms_abinger_d33-0086
+                                        #ox-ms_abinger_d33-0087
+                                        #ox-ms_abinger_d33-0088
+                                        #ox-ms_abinger_d33-0089
+                                        #ox-ms_abinger_d33-0090
+                                        #ox-ms_abinger_d33-0091
+                                        #ox-ms_abinger_d33-0092
+                                        #ox-ms_abinger_d33-0093
+                                        #ox-ms_abinger_d33-0094
+                                        #ox-ms_abinger_d33-0095
+                                        #ox-ms_abinger_d33-0096
+                                        #ox-ms_abinger_d33-0097
+                                        #ox-ms_abinger_d33-0098
+                                        #ox-ms_abinger_d33-0099
+                                        #ox-ms_abinger_d33-0100
+                                        #ox-ms_abinger_d33-0101
+                                        #ox-ms_abinger_d33-0102
+                                        #ox-ms_abinger_d33-0103
+                                        #ox-ms_abinger_d33-0104
+                                        #ox-ms_abinger_d33-0105
+                                        #ox-ms_abinger_d33-0106
+                                        #ox-ms_abinger_d33-0107
+                                        #ox-ms_abinger_d33-0108
+                                        #ox-ms_abinger_d33-0109
+                                        #ox-ms_abinger_d33-0110
+                                        #ox-ms_abinger_d33-0111
+                                        #ox-ms_abinger_d33-0112
+                                        #ox-ms_abinger_d33-0113
+                                        #ox-ms_abinger_d33-0114
+                                        #ox-ms_abinger_d33-0115
+                                        #ox-ms_abinger_d33-0116
+                                        #ox-ms_abinger_d33-0117
+                                        #ox-ms_abinger_d33-0118
+                                        #ox-ms_abinger_d33-0119
+                                        #ox-ms_abinger_d33-0120
+                                        #ox-ms_abinger_d33-0121
+                                        #ox-ms_abinger_d33-0122
+                                        #ox-ms_abinger_d33-0123
+                                        #ox-ms_abinger_d33-0124
+                                        #ox-ms_abinger_d33-0125
+                                        #ox-ms_abinger_d33-0126
+                                        #ox-ms_abinger_d33-0127
+                                        #ox-ms_abinger_d33-0128
+                                        #ox-ms_abinger_d33-0129
+                                        #ox-ms_abinger_d33-0130
+                                        #ox-ms_abinger_d33-0131
+                                        #ox-ms_abinger_d33-0132
+                                        #ox-ms_abinger_d33-0133
+                                        #ox-ms_abinger_d33-0134
+                                        #ox-ms_abinger_d33-0135
+                                        #ox-ms_abinger_d33-0136
+                                        #ox-ms_abinger_d33-0137
+                                        #ox-ms_abinger_d33-0138
+                                        #ox-ms_abinger_d33-0139
+                                        #ox-ms_abinger_d33-0140
+                                        #ox-ms_abinger_d33-0141
+                                        #ox-ms_abinger_d33-0142
+                                        #ox-ms_abinger_d33-0143
+                                        #ox-ms_abinger_d33-0144
+                                        #ox-ms_abinger_d33-0145
+                                        #ox-ms_abinger_d33-0146
+                                        #ox-ms_abinger_d33-0147
+                                        #ox-ms_abinger_d33-0148
+                                        #ox-ms_abinger_d33-0149
+                                        #ox-ms_abinger_d33-0150
+                                        #ox-ms_abinger_d33-0151
+                                        #ox-ms_abinger_d33-0152
+                                        #ox-ms_abinger_d33-0153
+                                        #ox-ms_abinger_d33-0154
+                                        #ox-ms_abinger_d33-0155
+                                        #ox-ms_abinger_d33-0156
+                                        #ox-ms_abinger_d33-0157
+                                        #ox-ms_abinger_d33-0158
+                                        #ox-ms_abinger_d33-0159
+                                        #ox-ms_abinger_d33-0160
+                                        #ox-ms_abinger_d33-0161
+                                        #ox-ms_abinger_d33-0162
+                                        #ox-ms_abinger_d33-0163
+                                        #ox-ms_abinger_d33-0164
+                                        #ox-ms_abinger_d33-0165
+                                        #ox-ms_abinger_d33-0166
+                                        #ox-ms_abinger_d33-0167
+                                        #ox-ms_abinger_d33-0168
+                                        #ox-ms_abinger_d33-0169
+                                        #ox-ms_abinger_d33-0170
+                                        #ox-ms_abinger_d33-0171
+                                        #ox-ms_abinger_d33-0172
+                                        #ox-ms_abinger_d33-0173
+                                        #ox-ms_abinger_d33-0174
+                                        #ox-ms_abinger_d33-0175
+                                        #ox-ms_abinger_d33-0176
+                                        #ox-ms_abinger_d33-0177
+                                        #ox-ms_abinger_d33-0178
+                                        #ox-ms_abinger_d33-0179
+                                        #ox-ms_abinger_d33-0180
+                                        #ox-ms_abinger_d33-0181
+                                        #ox-ms_abinger_d33-0182
+                                        #ox-ms_abinger_d33-0183
+                                        #ox-ms_abinger_d33-0184
+                                        #ox-ms_abinger_d33-0185
+                                        #ox-ms_abinger_d33-0186
+                                        #ox-ms_abinger_d33-0187
+                                        #ox-ms_abinger_d33-0188
+                                        #ox-ms_abinger_d33-0189
+                                        #ox-ms_abinger_d33-0190
+                                        #ox-ms_abinger_d33-0191
+                                        #ox-ms_abinger_d33-0192
+                                        #ox-ms_abinger_d33-0193
+                                        #ox-ms_abinger_d33-0194
+                                        #ox-ms_abinger_d33-0195
+                                        #ox-ms_abinger_d33-0196
+                                        #ox-ms_abinger_d33-0197
+                                        #ox-ms_abinger_d33-0198
+                                        #ox-ms_abinger_d33-0199
+                                        #ox-ms_abinger_d33-0200
+                                        #ox-ms_abinger_d33-0201
+                                        #ox-ms_abinger_d33-0202
+                                        #ox-ms_abinger_d33-0203
+                                        #ox-ms_abinger_d33-0204
+                                        #ox-ms_abinger_d33-0205
+                                        #ox-ms_abinger_d33-0206
+                                        #ox-ms_abinger_d33-0207
+                                        #ox-ms_abinger_d33-0208
+                                        #ox-ms_abinger_d33-0209
+                                        #ox-ms_abinger_d33-0210
+                                        #ox-ms_abinger_d33-0211
+                                        #ox-ms_abinger_d33-0212
+                                        #ox-ms_abinger_d33-0213
+                                        #ox-ms_abinger_d33-0214
+                                        #ox-ms_abinger_d33-0215
+                                        #ox-ms_abinger_d33-0216
+                                        #ox-ms_abinger_d33-0217
+                                        #ox-ms_abinger_d33-0218
+                                        #ox-ms_abinger_d33-0219
+                                        #ox-ms_abinger_d33-0220
+                                        #ox-ms_abinger_d33-0221
+                                        #ox-ms_abinger_d33-0222
+                                        #ox-ms_abinger_d33-0223
+                                        #ox-ms_abinger_d33-0224
+                                        #ox-ms_abinger_d33-0225
+                                        #ox-ms_abinger_d33-0226
+                                        #ox-ms_abinger_d33-0227
+                                        #ox-ms_abinger_d33-0228
+                                        #ox-ms_abinger_d33-0229
+                                        #ox-ms_abinger_d33-0230
+                                        #ox-ms_abinger_d33-0231
+                                        #ox-ms_abinger_d33-0232
+                                        #ox-ms_abinger_d33-0233
+                                        #ox-ms_abinger_d33-0234
+                                        #ox-ms_abinger_d33-0235
+                                        #ox-ms_abinger_d33-0236
+                                        #ox-ms_abinger_d33-0237
+                                        #ox-ms_abinger_d33-0238
+                                        #ox-ms_abinger_d33-0239
+                                        #ox-ms_abinger_d33-0240
+                                        #ox-ms_abinger_d33-0241
+                                        #ox-ms_abinger_d33-0242
+                                        #ox-ms_abinger_d33-0243
+                                        #ox-ms_abinger_d33-0244
+                                        #ox-ms_abinger_d33-0245
+                                        #ox-ms_abinger_d33-0246
+                                        #ox-ms_abinger_d33-0247
+                                        #ox-ms_abinger_d33-0248
+                                        #ox-ms_abinger_d33-0249
+                                        #ox-ms_abinger_d33-0250
+                                        #ox-ms_abinger_d33-0251
+                                        #ox-ms_abinger_d33-0252
+                                        #ox-ms_abinger_d33-0253
+                                        #ox-ms_abinger_d33-0254
+                                        #ox-ms_abinger_d33-0255
+                                        #ox-ms_abinger_d33-0256
+                                        #ox-ms_abinger_d33-0257
+                                        #ox-ms_abinger_d33-0258
+                                        #ox-ms_abinger_d33-0259
+                                        #ox-ms_abinger_d33-0260
+                                        #ox-ms_abinger_d33-0261
+                                        #ox-ms_abinger_d33-0262
+                                        #ox-ms_abinger_d33-0263
+                                        #ox-ms_abinger_d33-0264
+                                        #ox-ms_abinger_d33-0265
+                                        #ox-ms_abinger_d33-0266
+                                        #ox-ms_abinger_d33-0267"/>
+                                </locusGrp>
+                                <bibl>
+                                    <title>Volume I</title>
+                                    <date></date>
+                                </bibl>
+                            </msItem>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!-- <handDesc>
+                            <handNote scope="major" xml:id="mws"><persName>Mary Shelley</persName></handNote>
+                            <handNote scope="minor" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                            </handDesc> -->
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
+    </teiHeader>
+    <sourceDoc>
+        
+        
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0001.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0002.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0003.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0004.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0005.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0006.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0007.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0008.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0009.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0010.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0011.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0012.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0013.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0014.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0015.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0016.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0017.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0018.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0019.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0020.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0021.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0022.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0023.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0024.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0025.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0026.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0027.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0028.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0029.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0030.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0031.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0032.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0033.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0034.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0035.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0036.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0037.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0038.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0039.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0040.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0041.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0042.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0043.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0044.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0045.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0046.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0047.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0048.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0049.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0050.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0051.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0052.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0053.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0054.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0055.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0056.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0057.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0058.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0059.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0060.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0061.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0062.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0063.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0064.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0065.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0066.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0067.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0068.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0069.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0070.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0071.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0072.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0073.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0074.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0075.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0076.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0077.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0078.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0079.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0080.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0081.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0082.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0083.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0084.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0085.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0086.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0087.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0088.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0089.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0090.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0091.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0092.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0093.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0094.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0095.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0096.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0097.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0098.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0099.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0100.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0101.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0102.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0103.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0104.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0105.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0106.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0107.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0108.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0109.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0110.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0111.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0112.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0113.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0114.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0115.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0116.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0117.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0118.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0119.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0120.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0121.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0122.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0123.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0124.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0125.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0126.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0127.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0128.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0129.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0130.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0131.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0132.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0133.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0134.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0135.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0136.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0137.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0138.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0139.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0140.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0141.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0142.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0143.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0144.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0145.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0146.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0147.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0148.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0149.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0150.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0151.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0152.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0153.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0154.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0155.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0156.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0157.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0158.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0159.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0160.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0161.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0162.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0163.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0164.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0165.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0166.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0167.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0168.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0169.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0170.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0171.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0172.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0173.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0174.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0175.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0176.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0177.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0178.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0179.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0180.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0181.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0182.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0183.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0184.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0185.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0186.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0187.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0188.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0189.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0190.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0191.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0192.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0193.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0194.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0195.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0196.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0197.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0198.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0199.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0200.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0201.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0202.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0203.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0204.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0205.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0206.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0207.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0208.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0209.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0210.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0211.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0212.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0213.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0214.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0215.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0216.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0217.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0218.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0219.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0220.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0221.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0222.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0223.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0224.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0225.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0226.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0227.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0228.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0229.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0230.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0231.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0232.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0233.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0234.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0235.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0236.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0237.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0238.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0239.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0240.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0241.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0242.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0243.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0244.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0245.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0246.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0247.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0248.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0249.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0250.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0251.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0252.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0253.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0254.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0255.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0256.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0257.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0258.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0259.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0260.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0261.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0262.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0263.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0264.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0265.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0266.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0267.xml" />
+    </sourceDoc>
+</TEI>

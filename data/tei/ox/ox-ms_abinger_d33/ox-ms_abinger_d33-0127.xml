@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0127" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="66v">
+    <zone type="pagination"><line>116</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/>
+        <line rend="indent2">When I had arrived at the nearest</line>
+            <line>town I took post horses and <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">followed</add> <del rend="strikethrough">folled</del></mod> the</line>
+            <line>road my father had taken. At every</line>
+            <line>inn where we changed horses <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">we</add></mod> <del rend="strikethrough">I</del> <del rend="strikethrough">heard</del></line>
+            <line>heard of him, and I was possessed</line>
+            <line>by <del rend="strikethrough">aller</del> alternate hope and fear.</line>
+            <line>A length I <del rend="strikethrough">foumd</del> found that he</line>
+            <line>had altered his route; at first he</line>
+            <line>had followed the London road; but</line>
+            <line>now he changed it, and upon enqui</line>
+            <line>ry I found that the one which he</line>
+            <line>now pursued led towards the sea. My</line>
+            <line>dream recurred to my thoughts; I was</line>
+            <line>not usually superstitious but in</line>
+            <line>wretchedness every one is so. The sea</line>
+            <line>was fifty miles off, yet it was towards</line>
+            <line>it that he fled. The idea was terrible</line>
+            <line>to my half crazed imagination, and</line>
+            <line>almost overturned the little <del rend="strikethrough">l</del> self</line>
+            <line>possession that still remained to me.</line>
+            <line>I journied all day; every moment my</line>
+            <line>misery encreased and the fever of my</line>
+            
+    </zone>
+</surface>

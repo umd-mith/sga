@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0189" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="98v">
+    <zone type="pagination"><line>178</line></zone>
+    
+    <zone type="main">
+        <line>complaint and I will reprove it with</line>
+        <line>gentle exhortation and pour on you</line>
+        <line>the balm of compassion. You must not</line>
+        <line>shut me from all communion with</line>
+        <line>you: do not tell me why you grieve</line>
+        <line>but only say the words, "I am unhappy’,</line>
+        <line>and you will feel relieved as if for</line>
+        <line>some time <del rend="strikethrough">you were</del> excluded from all</line>
+        <line>intercourse by some magic spell</line>
+        <line>you should suddenly enter again the</line>
+        <line>pale of human sympathy: I entreat you</line>
+        <line>to believe in my <mod><del rend="strikethrough">friendship</del> <add place="sublinear"><metamark function="insert">^^</metamark></add><add place="superlinear">most sincere professions</add></mod> and to</line>
+        <line>treat me as an old and tried friend:</line>
+        <line>promise me never to forget me,</line>
+        <line>never causelessly to banish me; but</line>
+        <line>to try to love me as one who would</line>
+        <line>devote all his energies to make you</line>
+        <line>happy. Give me the name of friend;</line>
+        <line>I will fulfill its duties; and if for a</line>
+        <line>moment complaint and sorrow would</line>
+        <line>shape themselves into words let me be</line>
+        <line>near to speak peace to your vext soul".</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I repeat his <del rend="strikethrough">persuale</del> persuasions</line>
+        
+    </zone>
+</surface>

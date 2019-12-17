@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0072" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="38r">
+    <zone type="pagination"><line>61</line></zone>
+    <zone type="library"><line>38</line></zone>
+    
+    <zone type="main">
+        <line>happy day as we all thought it <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">so</add></mod> when</line>
+        <line>my lord married her: I knew her when</line>
+        <line>she was a child and many a good</line>
+        <line>turn has she done <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">for</add> <del rend="strikethrough">with</del></mod> me <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">in</add> <del rend="strikethrough">with</del></mod></line>
+        <line><mod><del>the</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">my</add></mod> old lady’s time – You are <del rend="strikethrough">not</del></line>
+        <line><del rend="strikethrough">much</del> like her although there is</line>
+        <line>more of my lord in you – But has he</line>
+        <line>been thus ever since his return? All</line>
+        <line>my joy turned to sorrow when I first</line>
+        <line>beheld him with that melancholy</line>
+        <line>countenance enter these doors <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">as</add> <del rend="strikethrough">af</del></mod> it</line>
+        <line>were the day after my lady’s funeral –</line>
+        <line>He seemed to recover himself a little</line>
+        <line>after he had bidden me write to</line>
+        <line>you – but still it is a woful thing</line>
+        <line>to see him so unhappy." These were</line>
+        <line>the feelings of an<del rend="strikethrough">d</del> old, faithful servant:</line>
+        <line>what must be those of an affectio</line>
+        <line>nate daughter. Alas! Even then my</line>
+        <line>heart was almost broken.</line>
+        <milestone unit="tei:p"/><line rend="indent2">We spent two months together in</line>
+        <line>this house. My father spent the greater</line>
+        <line>part of his time with me; he accompa-</line>
+        <line>nied me in <del rend="strikethrough">my</del> my walks, listened to my</line>
+        
+    </zone>
+</surface>

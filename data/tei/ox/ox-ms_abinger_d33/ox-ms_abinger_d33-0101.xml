@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0101" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="52v">
+    <zone type="pagination"><line>90</line></zone>
+    
+    <zone type="main">
+        <line>emotion. Go, devoted one and return</line>
+        <line>thus! – This is my curse, a daughter’s</line>
+        <line>curse: go, and return pure to thy child,</line>
+        <line>who will never love aught but thee.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">These were my <del rend="strikethrough">l</del> thoughts; and</line>
+        <line>with trembling hands I <del rend="strikethrough">be</del> prepared to</line>
+        <line>begin a letter to my unhappy parent.</line>
+        <line>I had now spent many hours in</line>
+        <line>tears and mournful meditation;</line>
+        <line>it was <del rend="strikethrough">now</del> past twelve o’clock; all</line>
+        <line>was at peace in the house, and</line>
+        <line>the gentle air that stole in at my</line>
+        <line>window did not rustle the leaves</line>
+        <line>of the twining plants that shadowed</line>
+        <line>it. I felt the entire tranquillity of</line>
+        <line>the hour when my own breath</line>
+        <line>and involuntary sobs were all the</line>
+        <line>sounds that struck upon the air.</line>
+        <line>On a sudden I heard a gentle step ascend</line>
+        <line>ing the stairs; I paused breathless, and</line>
+        <line>as it approached glided into an obscure</line>
+        <line>corner of the room; the steps paused</line>
+    </zone>
+</surface>

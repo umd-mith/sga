@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0160" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="84r">
+    <zone type="pagination"><line>149</line></zone>
+    <zone type="library"><line>84</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I knew all this and did not go to</line>
+            <line>seek sympathy; but there on my</line>
+            <line>solitary heath, under my lowly roof</line>
+            <line>where all around was desart, it came</line>
+            <line><del rend="strikethrough">came</del> to me as a sun beam in</line>
+            <line>winter <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0160.01"/> adorn while it helps to dissolve the  drifted res snow.</add></mod> – <del rend="strikethrough">but</del> alas the sun shone</line>
+            <line>on blighted fruit; I did not <del rend="strikethrough">revuve</del> re-</line>
+            <line>vive under its radiance for I was</line>
+            <line>too utterly undone to feel its kindly</line>
+            <line>power. My father had been and his</line>
+            <line>memory was the life of my life. I</line>
+            <line>might feel gratitude to another</line>
+            <line>but I never more could love or hope</line>
+            <line>as I had done; it was all suffering; even</line>
+            <line>my pleasures were endured, not enjoyed</line>
+            <line>I was as a solitary spot among moun</line>
+            <line>tains shut <mod><del rend="strikethrough">nu</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">out</add> <add place="superlinear">in</add></mod> on all sides <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">by steep black precipices</add></mod>; where</line>
+            <line>no ray of heat could penetrate; and from</line>
+            <line>which there was no <del rend="strikethrough">ut</del> outlet to sunnier</line>
+            <line>fields. And thus it was that although the</line>
+            <line>spirit of friendship soothed me for a while</line>
+            <line>it could not restore me. It came as some</line>
+            <line>gentle visitation; it went and I hardly</line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0160.01">
+        <line>to enlighten</line>
+    </zone>
+</surface>

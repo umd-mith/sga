@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0142" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="74r">
+    <zone type="pagination"><line>131</line></zone>
+    <zone type="library"><line>74</line></zone>
+
+    <zone type="main">
+        <line>with his spirit; <del rend="strikethrough">on the</del> on a lone heath,</line>
+        <line>at noon or at midnight, still I should</line><line>be near him. His last injunction
+            to</line><line>me was that I should be happy; perhaps</line><line>he did not mean the
+            shadowy happiness</line><line>that I promised myself, yet it was that</line><line>alone
+            which I could taste. He did not</line><line>conceive that ever again I could
+            make</line><line>one of the smiling hunters that go</line>
+        <line>coursing after bub<del rend="strikethrough">f</del>les that break
+            to</line><line>nothing when caught, and then after</line><line>a new one with brighter
+            colours; my</line><line>hope also had proved a buble, but it</line><line>had been so
+            lovely, so adorned that I</line><line>saw none that could attract me</line><line>after
+            it; besides I was wearied with</line><line>the pursuit, nearly dead with
+            weariness.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I would feign to die; my content</line>
+        <line>ed heirs would seize upon my wealth,</line><line>and I should purchase freedom.
+            But</line><line>then my plan must be laid with</line><line>art; I would not be left
+            destitute, I</line><line>must secure some money. Alas! to</line><line/>
+    </zone>
+</surface>

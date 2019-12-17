@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0185" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="96v">
+    <zone type="pagination"><line>174</line></zone>
+    
+    <zone type="main">
+        <line>for one moment <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">like</add> <del rend="strikethrough">light</del></mod> nought beside</line>
+        <line>on earth, more lovely than a <del rend="strikethrough">b</del> sun</line>
+        <line>beam, slighter, quicker than the</line>
+        <line>waving plumage of a bird, dazzling as</line>
+        <line>lightning and like it giving <del rend="strikethrough">night to day</del></line>
+        <line>day to night, yet mild and faint, that</line>
+        <line>smile came; it went, and then there</line>
+        <line>was an end of all joy to me."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Thus his own sorrows, or the</line>
+        <line>shapes copied from nature that</line>
+        <line>dwelt in his mind with beauty greater</line>
+        <line>than their own, occupied our talk</line>
+        <line><del rend="strikethrough">m</del> while I railed in my own griefs with</line>
+        <line>cautious secresy. If for a moment he</line>
+        <line>shewed curiosity, my eyes fell, my voice</line>
+        <line>died away and my evident suffering</line>
+        <line>made him quickly endeavour to banish</line>
+        <line>the ideas he had <del rend="strikethrough">raised</del> awakened; yet</line>
+        <line>he for ever mingled consolation in</line>
+        <line>his talk, and tried to soften my despair</line>
+        <line>by demonstrations of deep sympathy and</line>
+        <line>compassion. "We are both unhappy –" he</line>
+        
+    </zone>
+</surface>

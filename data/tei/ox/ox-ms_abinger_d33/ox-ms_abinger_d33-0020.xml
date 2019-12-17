@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0020" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="11r">
+    <zone type="pagination"><line>9</line></zone>
+    <zone type="library"><line>11</line></zone>
+    <zone type="main">
+        <line>ceiving it to be the only <del rend="strikethrough">p</del> ambition</line>
+        <line>worthy for him to aim at in the world.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">By a strange narrowness of ideas</line>
+        <line>he viewed all the world in connexion only,</line>
+        <line>as it was or was not related to his little</line>
+        <line>society. He considered queer and out of</line>
+        <line>fashion all opinions that were</line>
+        <line>exploded <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">by</add> <del rend="strikethrough">in</del></mod> his circle of <del rend="strikethrough">fr</del> intimates,</line>
+        <line>and he became at the same time</line>
+        <line>dogmatic and yet fearful of not coin</line>
+        <line>ciding with the only <mod><del rend="strikethrough">feelings</del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">sentiments</add></mod> he could</line>
+        <line>consider orthodox. To the generality of</line>
+        <line><del rend="strikethrough">spectatior</del> spectators he appeared careless</line>
+        <line>of censure, and with high disdain</line>
+        <line>to throw aside all dependance <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">on</add> <del rend="strikethrough">to</del></mod> public</line>
+        <line>prejudices; but at the same time that</line>
+        <line>he strode with a triumphant stride</line>
+        <line>over the rest of the world, he cowered,</line>
+        <line>with self disguised lowliness, to his own</line>
+        <line>party, and although its [big inklot over chi]ef, <del rend="strikethrough">he</del> never</line>
+        <line>dared express an opi<del rend="strikethrough">o</del>nion or a feeling</line>
+        <line>until<del rend="strikethrough">l</del> he was assured that it would</line>
+    </zone>
+</surface>

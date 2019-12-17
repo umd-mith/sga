@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0186" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="97r">
+    <zone type="pagination"><line>175</line></zone>
+    <zone type="library"><line>97</line></zone>
+    
+    <zone type="main">
+        <line>would say to me; "I have told you my</line>
+        <line>melancholy tale and we have wept</line>
+        <line>together <del rend="strikethrough">fo</del> the loss of that lovely spi</line>
+        <line>rit that has so cruelly deserted me;</line>
+        <line>but you hide your griefs: I do not ask</line>
+        <line>you to <del rend="strikethrough">diasl</del> disclose them, but tell me if</line>
+        <line>I may not console you. It seems to me</line>
+        <line>a wild adventure to find in this desart one</line>
+        <line>like you quite solitary: you are young</line>
+        <line>and lovely; your manners are refined and</line>
+        <line>attractive; yet there is in your settled</line>
+        <line>melancholy, and something, I know not</line>
+        <line>what, in your expressive eyes that seems</line>
+        <line>to seperate you from your kind: you</line>
+        <line>shudder; pardon me, I entreat you</line>
+        <line>but I cannot help expressing this once</line>
+        <line>at least the lively interest I feel in</line>
+        <line>your destiny.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"You never smile: your voice is</line>
+        <line><anchor xml:id="d33-0186.01"/>and you <del rend="strikethrough">llu</del> utter your words as if you</line>
+        <line>were afraid of the slight sound they <del rend="strikethrough">l</del> would</line>
+        <line>produce: the expression of awful and</line>
+        <line>intense sorrow never for a moment</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0186.01">
+        <line>low,</line>
+    </zone>
+</surface>

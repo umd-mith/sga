@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0132" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="69r">
+    <zone type="pagination"><line>121</line></zone>
+    <zone type="library"><line>69</line></zone>
+    
+    <zone type="main">
+        <line>commence: this town was five miles</line>
+        <line>off. We hired a chaise here, and with</line>
+        <line>four <del rend="strikethrough">hour</del> horses drove with speed</line>
+        <line>through the storm. My garments were</line>
+        <line>wet and clung around me, and my hair</line>
+        <line>hung in straight locks on my neck</line>
+        <line>when not blown aside by the wind. I</line>
+        <line>shivered, yet my pulse was high with</line>
+        <line>fever. Great God! What agony I endured.</line>
+        <line>I shed no tears but my eyes wild and</line>
+        <line>inflamed were starting from my head; I</line>
+        <line>could hardly support the weight that</line>
+        <line>pressed upon my brain. We arrived at</line>
+        <line>the town of — in a little more than</line>
+        <line>half an hour. When my father had arriv</line>
+        <line>ed the storm had already begun, but</line>
+        <line>he had refused to stop and <del rend="strikethrough">leading</del> leaving</line>
+        <line>his horse there he walked on – towards</line>
+        <line>the sea. Alas! It was double cruelty</line>
+        <line>in him to have chosen the sea</line>
+        <line>for <del rend="strikethrough">th</del> his fatal resolve; <del rend="strikethrough">to me</del> it</line>
+        <line>was adding madness to <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">my</add></mod> despair.</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0146" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="77r">
+    <zone type="pagination"><line>135</line></zone>
+    <zone type="library"><line>77</line></zone>
+    
+    <zone type="main">
+        <line>led to London, and had to endure for</line>
+        <line>some weeks cold looks, cold words and</line>
+        <line>colder consolations: but I escaped; they</line>
+        <line>tried to bind <del rend="strikethrough">th</del> me with fetters that</line>
+        <line>they thought silken, yet which</line>
+        <line>weighed on me like iron, although</line>
+        <line>I broke them more easily than a</line>
+        <line>girth formed of a single straw and</line>
+        <line>fled to freedom.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">The few weeks that I spent in</line>
+        <line>London were the most miserable</line>
+        <line>of my life: A great city is a frightful</line>
+        <line>habitation to one sorrowing. The</line>
+        <line>sunset and the gentle moon, the</line>
+        <line>blessed motion of the leaves and the</line>
+        <line>murmuring of waters are all sweet</line>
+        <line>physicians to a distempered mind. The</line>
+        <line>soul is expanded and drinks in quiet</line>
+        <line><del rend="strikethrough">and l</del>, a lulling medecine – to me</line>
+        <line>it was as the sight of the lovely</line>
+        <line>water snakes to the bewitched mari</line>
+        <line>ner – in <del rend="strikethrough">blessing</del> loving and blessing</line>
+        
+    </zone>
+</surface>

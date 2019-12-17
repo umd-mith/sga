@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0093" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="48v">
+    <zone type="pagination"><line>82</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/><line rend="indent2">Yes it was despair I felt; for the</line>
+            <line>first time that phantom seized me;</line>
+            <line>the first and only time for it <del rend="strikethrough">woule</del></line>
+            <line><anchor xml:id="d33-0093.01"/><del rend="strikethrough">was</del> never <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">since</add> <del rend="strikethrough">after</del></mod> <mod><del rend="strikethrough">to leave</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">left</add></mod> me – After</line>
+            <line>the first moments of speechless agony</line>
+            <line>I felt her fangs on my heart: I tore</line>
+            <line>my <del rend="strikethrough">h</del> hair; I raved aloud; at one</line>
+            <line>moment in pity for his sufferings</line>
+            <line>I would have clasped my father in</line>
+            <line>my arms; and then starting back with</line>
+            <line>horror I spurned him with my foot;</line>
+            <line>I felt as if stung by a serpent, as if</line>
+            <line>scourged by a whip of scorpions which</line>
+            <line>drove me – Ah! Whither – Whither?</line>
+        <milestone unit="tei:p"/><line rend="indent2">Well, this could not last. One</line>
+            <line>idea rushed on my mind; never, never</line>
+            <line>may I speak to him again. As this</line>
+            <line>terrible conviction came upon him</line>
+            <line>it melted my soul to tenderness and</line>
+            <line>love – I gazed <del rend="strikethrough">om</del> on <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">him</add></mod> as to take</line>
+            <line>my last farewell – he lay <del rend="strikethrough">insenl</del></line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0031.01">
+        <line>has</line>
+    </zone>
+</surface>

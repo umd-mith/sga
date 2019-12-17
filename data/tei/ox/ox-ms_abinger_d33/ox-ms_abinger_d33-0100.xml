@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0100" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="52r">
+    <zone type="pagination"><line>89</line></zone>
+    <zone type="library"><line>52</line></zone>
+    
+    <zone type="main">
+        <line>another sixteen years of desolate</line>
+        <line>wandering: let him once more utter</line>
+        <line>his wild complaints to the vast woodsand</line>
+        <line>the tremendous cataracts of another clime:</line>
+        <line>let him again undergo fearful dan-</line>
+        <line>ger and soul-quelling hardships: let</line>
+        <line>the hot sun of the south again burn</line>
+        <line><del rend="strikethrough">el</del> his passion worn cheeks and the</line>
+        <line>cold night rains fall on him and</line>
+        <line>chill his blood.</line>
+        <milestone unit="tei:p"/><line rend="indent2">To this life, miserable father, I</line>
+        <line>devote thee! – Go! – <del rend="strikethrough">be</del> Be thy days passed</line>
+        <line>with savages, and thy nights under the</line>
+        <line>cope of heaven! Be thy limbs worn</line>
+        <line>and thy heart chilled, and all youth</line>
+        <line>be dead within thee! Let thy hairs be</line>
+        <line>as snow; thy walk trembling and thy</line>
+        <line>voice have lost its <del rend="strikethrough">me</del> mellow tones!</line>
+        <line>Let the liquid <del rend="strikethrough">lustre</del> lustre of thine</line>
+        <line>eyes be quenched; and <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">then</add></mod> return to me,</line>
+        <line><del rend="strikethrough">to</del> return to <mod><del rend="strikethrough">your</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">thy</add></mod> Mathilda, thy child,</line>
+        <line>who may then be clasped in thy <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">loved</add></mod> arms,</line>
+        <line>while thy heart beats with sinless</line>
+        
+    </zone>
+</surface>

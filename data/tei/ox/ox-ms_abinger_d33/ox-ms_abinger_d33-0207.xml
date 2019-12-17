@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0207" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="109v">
+    <zone type="pagination"><line>196</line></zone>
+    
+    <zone type="main">
+        <line>of others; I will do my best to extir</line>
+        <line>pate evil and if the spirit who</line>
+        <line>protects ill should so <del rend="strikethrough">act</del> l influence</line>
+        <line>circumstances that I should suffer</line>
+        <line><anchor xml:id="d33-0207.01"/>my endeavour, yet while there is</line>
+        <line>hope, and hope there ever must</line>
+        <line>be, of success, cheerfully do I gird my</line>
+        <line>self to my task.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"I have powers; my countrymen</line>
+        <line>think well of them. Do you you think</line>
+        <line>I sow my seed in the barren air, &amp;</line>
+        <line>have no end in what I do? Believe</line>
+        <line>me, I will never desert life untill</line>
+        <line>this last hope is torn from my bosom,</line>
+        <line>that in some way my labours may</line>
+        <line>form a link in the chain of gold</line>
+        <line><anchor xml:id="d33-0207.02"/>which we ought all to strive to drag</line>
+        <line>Happiness from where <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">she sits</add> <del rend="strikethrough">is in</del></mod> enthroned</line>
+        <line><del rend="strikethrough">abou</del> above the clouds, now far <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">beyond</add> <del rend="strikethrough">above</del></mod></line>
+        <line>our reach, to inhabit the earth</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0207.01">
+        <line>through</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0207.02">
+        <line>with</line>
+    </zone>
+</surface>

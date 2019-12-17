@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0229" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="120v">
+    <zone type="pagination"><line>218</line></zone>
+    
+    <zone type="main">
+        <line>even in death, as I bless thee, and let me</line>
+        <line>sleep at peace in my quiet grave."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I feel death to be near at hand and</line>
+        <line>I am calm. I no longer despair, but look</line>
+        <line>on all around me with placid affection. I</line>
+        <line>find it sweet to watch the progressive decay</line>
+        <line>of my strength, and to repeat to myself, ano</line>
+        <line>-ther day and yet another, but again I</line>
+        <line>shall not see the red leaves of autumn; be-</line>
+        <line>fore that time I shall be with my father</line>
+        <line>I am glad Woodville is not with me for</line>
+        <line>perhaps he would grieve, and I desire to</line>
+        <line>see smiles alone during the last scene</line>
+        <line>of my life; When I last wrote to him I</line>
+        <line>told him of my ill health but not of its</line>
+        <line>mortal tendency, lest he should <del rend="strikethrough">come to me,</del></line>
+        <line><del rend="strikethrough">and</del> conceive it <del rend="strikethrough">is</del> to be his duty to come</line>
+        <line>to me for I fear lest the tears of friend</line>
+        <line>ship should destroy the <del rend="strikethrough">bel</del> blessed calm of</line>
+        <line>my mind. I take a pleasure in arranging all</line>
+        <line>the little details which will occur when I <del rend="strikethrough">am</del></line>
+        <line><del rend="strikethrough">gone</del> shall no longer be. In truth I am in</line>
+        
+    </zone>
+</surface>

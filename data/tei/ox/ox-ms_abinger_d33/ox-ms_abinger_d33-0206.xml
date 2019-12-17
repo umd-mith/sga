@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0206" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="109r">
+    <zone type="pagination"><line>195</line></zone>
+    <zone type="library"><line>109</line></zone>
+    
+    <zone type="main">
+        <line>out that which it is our nature to</line>
+        <line>desire. Whether this prospect of future</line>
+        <line>good be the preparation for another</line>
+        <line>existence I know not; or whether</line>
+        <line>that it is merely that we, as workmen</line>
+        <line>in God’s vineyard, must lend a hand to</line>
+        <line>smooth the way for our posterity. If</line>
+        <line>it indeed be that; if the efforts of the</line>
+        <line>virtuous now, are to make the future</line>
+        <line>inhabitants of this fair world more</line>
+        <line>happy; if the labours of those who</line>
+        <line>cast aside selfishness, and try to know</line>
+        <line>the truth of things, are to free the</line>
+        <line>men of ages, now far distant but</line>
+        <line><anchor xml:id="d33-0206.01"/>will <del rend="strikethrough">wu</del> one day come, from the</line>
+        <line>burthen under which those who</line>
+        <line>now live groan, and like you weep</line>
+        <line>bitterly; if they free them but from</line>
+        <line>one of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">what are now</add></mod> the <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">necessary</add></mod> evils <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">of life</add></mod>, truly I will not fail</line>
+        <line>but will <del rend="strikethrough">will</del> with my whole soul</line>
+        <line>aid the work. From my youth I</line>
+        <line>have said, I will be virtuous; I</line>
+        <line>will dedicate my life for the good</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0206.01">
+        <line>which</line>
+    </zone>
+</surface>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0120" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="63r">
+    <zone type="pagination"><line>109</line></zone>
+    <zone type="library"><line>63</line></zone>
+    
+    <zone type="main">
+        <line>ons in it might displease me. Since</line>
+        <line>I last saw you I have been constantly</line>
+        <line>employed in writing letters, and have</line>
+        <line>several more to write; for I do not</line>
+        <line>intend that any one shall hear</line>
+        <line>of me after I depart. I need not</line>
+        <line>conjure you to look upon me as <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">one</add></mod> of</line>
+        <line>whom all links that once existed</line>
+        <line>between us are broken. <del rend="strikethrough">Your ob</del> Your</line>
+        <line>own delicacy will not <mod><del rend="strikethrough">permit</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">allow</add></mod> you, I</line>
+        <line>am convinced, to attempt to trace me –</line>
+        <line>It is far<del rend="strikethrough">e</del> better for your peace</line>
+        <line>that you should be ignorant of my</line>
+        <line>destination. You will not follow me,</line>
+        <line>for <del rend="strikethrough">my</del> when I bannish myself</line>
+        <line>would you nourish guilt by obtru</line>
+        <line>ding yourself upon me? You will not</line>
+        <line>do this, I know you will not. You</line>
+        <line>must forget me and all the evil that</line>
+        <line>I have taught you. Cast off the</line>
+        <line>only gift that I have bestowed</line>
+        <line>upon you, your <del rend="strikethrough">misery</del> grief, and</line>
+        
+    </zone>
+</surface>

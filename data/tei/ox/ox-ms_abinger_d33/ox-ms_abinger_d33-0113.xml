@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0113" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="59v">
+    <zone type="pagination"><line>102</line></zone>
+    
+    <zone type="main">
+        <line>it was only what you derived from the</line>
+        <line>beauty of the world; you seemed to</line>
+        <line>have gained a grace from the moun</line>
+        <line>tain breezes – the waterfalls and the</line>
+        <line>lake; and this was all of earthly ex-</line>
+        <line>cept your affections that you had; there</line>
+        <line>was no dross, no bad feeling in the composi</line>
+        <line>tion, – You yet even have not seen</line>
+        <anchor xml:id="d33-0113.01"/>
+
+        <zone type="pagination"><line>59<hi rend="sup">v</hi></line></zone>
+        <line>enough of the world to know the stupendous difference</line>
+        <line>that exists between the women we meet in dayly</line>
+        <line>life and a nymph of the woods such as you were;</line>
+        <line>in whose eyes <del rend="strikethrough">m</del> alone mankind may study for</line>
+        <line>centuries &amp; grow wiser &amp; purer. Those divine lights</line>
+        <line>which shone on <del rend="strikethrough">as</del> me as did those of Beatrice</line>
+        <line><del rend="strikethrough">did</del> upon Dante, and well <del rend="strikethrough">l</del> might I say with</line>
+        <line>him yet with what different feelings</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">E quasi mi perdei con gli occhi chini.</line>
+            <line>Can <del rend="strikethrough">Can</del> you wonder, Mathilda, that I dwelt on</line>
+            <line>your looks, your words, your motions, &amp; drank in</line>
+            <line>unmixed delight?</line>
+        <anchor xml:id="d33-0113.02"/>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"But I am afraid that I wan-</line>
+            <line>der from my purpose. I must be</line>
+            <line>more brief for night draws on</line>
+            <line>apace and all my hours in this</line>
+
+
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0113.01">
+        <line><del rend="strikethrough">I wept [indecipherable] your looks</del></line>
+        <line><del rend="strikethrough">[indecipherable] delight</del></line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0113.02">
+        <line>Canto IV</line>
+        <line>Vers</line>
+        <line>Ult.</line>
+    </zone>
+</surface>

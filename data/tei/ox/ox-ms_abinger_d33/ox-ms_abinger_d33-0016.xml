@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0016" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="8r">
+    <zone type="pagination" rend="bordered"><line>5</line></zone>
+    <zone type="library"><line>9</line></zone>
+    <zone type="main">
+        <line>misery only to be ended, and now about to</line>
+        <line>be ended, in death. But I forget myself, my</line>
+        <line>tale is yet untold. I will pause a few moments,</line>
+        <line>wipe my dim eyes, and <del rend="strikethrough">to</del>
+            <del rend="strikethrough">b</del> endeavour to</line>
+        <line>lose the present obscure but heavy feeling</line>
+        <line>of unhappiness in the <del rend="strikethrough">em</del> more acute emo</line>
+        <line>tions of the past.</line>
+        <line>––</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I was born in England. My father was</line>
+        <line>a man of rank: he had lost his father</line>
+        <line>early, and was educated by a weak mother</line>
+        <line>with all the indulgence she thought due</line>
+        <line>to a nobleman of wealth. He was sent</line>
+        <line>to Eton and afterwards to colledge, &amp; allowed</line>
+        <line>from childhood the free use of large sums of</line>
+        <line>money; thus enjoying from his earliest <del rend="strikethrough">child</del></line>
+        <line><del rend="strikethrough">hood</del> youth the independance which a boy with</line>
+        <line>these advantages, always acquires at a public school.</line>
+
+        <anchor xml:id="c56-0016.01"/>
+    </zone>
+    <zone type="left_margin">
+        <line>I will have a few moments; wipe my dim</line>
+    </zone>
+</surface>

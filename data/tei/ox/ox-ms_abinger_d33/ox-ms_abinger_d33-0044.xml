@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0044" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="24r">
+    <zone type="pagination"><line>33</line></zone>
+    <zone type="library"><line>24</line></zone>
+    
+    <zone type="main">
+        <line>moment of our meeting. On the eve</line>
+        <line>of the third day I retired early to my</line>
+        <line>room; I could not sleep but paced</line>
+        <line>all night about my chamber and,</line>
+        <line>as you may in Scotland at midsummer,</line>
+        <line>watched the <del rend="strikethrough">track</del> crimson track</line>
+        <line>of the sun as it almost skirted the</line>
+        <line>northern horizon. At day break I</line>
+        <line>hastened to the woods; the hours past</line>
+        <line>on while I indulged in wild dreams</line>
+        <line>that <del rend="strikethrough">cheated</del> gave wings to the sloth-</line>
+        <line>ful steps of time, and beguiled my</line>
+        <line>eager impatience. My father was</line>
+        <line>expected at noon but when I wished</line>
+        <line>to return to met him I <del rend="strikethrough">fou</del> <del rend="strikethrough">I</del> found</line>
+        <line>that I had lost my way: It seemed</line>
+        <line>that in every attempt to find it</line>
+        <line>I only became more involved in the</line>
+        <line>intricacies of the woods, and the trees</line>
+        <line>hid all trace by which I might be guided.</line>
+        <line>I grew impatient, I wept; <del rend="strikethrough">I</del> and wrung</line>
+        <line>my hands but still I could not discover</line>
+        <line>my path.</line>
+    </zone>
+</surface>

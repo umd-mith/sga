@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0170" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="89r">
+    <zone type="pagination"><line>159</line></zone>
+    <zone type="library"><line>89</line></zone>
+    
+    <zone type="main">
+        <line>bringing misery must have been broken</line>
+        <line><anchor xml:id="d33-0170.01"/><del rend="strikethrough">but</del> the malignant fate that presides</line>
+        <line><del rend="strikethrough">des of</del> over it would not permit this. <add place="superlinear">X</add></line>
+        <line>But why should I repine at this? Misery</line>
+        <line>was my element, and nothing but what</line>
+        <line>was miserable could approach me; if</line>
+        <line><anchor xml:id="d33-0170.02"/>le <del rend="strikethrough">Herbert</del> had been happy I should never</line>
+        <line><anchor xml:id="d33-0170.03"/>known him. And can I who for many</line>
+        <line>years was <del rend="strikethrough">nourished</del> fed by tears, and</line>
+        <line>nourished under the dew of grief, can</line>
+        <line>I pause to relate a tale of woe and</line>
+        <line>death?.</line>
+        <milestone unit="tei:p"/>
+        <line><anchor xml:id="d33-0170.04"/><del rend="strikethrough">Herbert</del> was obliged to make a journey</line>
+        <line>into the country and was detained from</line>
+        <line>day to day in irksome absence from</line>
+        <line>his lovely bride. He received a letter from</line>
+        <line>her to say that she was slightly ill, but</line>
+        <line>telling him to hasten to her, <del rend="strikethrough">and</del> that</line>
+        <line>from his eyes she would receive health</line>
+        <line>and that his company would be her</line>
+        <line><anchor xml:id="d33-0170.05"/><del rend="strikethrough">sweetest</del> medecine. He was detained</line>
+        <line>three days longer and then he hastened</line>
+        <anchor xml:id="d33-0170.06"/>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0170.01">
+        <line>and</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0170.02">
+        <line>Woodvil</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0170.03">
+        <line>have</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0170.04">
+        <line>Woodv</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0170.05">
+        <line>surest</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0170.06">
+        <line>x breach of her eternal laws.</line>
+    </zone>
+</surface>

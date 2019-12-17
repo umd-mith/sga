@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0030" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="17r">
+    <zone type="pagination"><line>19</line></zone>
+    <zone type="library"><line>17</line></zone>
+    
+    <zone type="main">
+        <line>at Hamburgh; when he quitted it he</line>
+        <line>changed his name, <del rend="strikethrough">but</del> my aunt could</line>
+        <line>never discover that which he <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">adopted</add> <del rend="strikethrough">took</del></mod> and</line>
+        <line>only by faint hints, could conjecture that</line>
+        <line>he had taken the road of Germany and</line>
+        <line>Hungary to Turkey.</line>
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Thus this towering spirit who</line>
+        <line>had excited interest and high expectation</line>
+        <line>in all who knew <del rend="strikethrough">him</del> and could value him</line>
+        <line>became <del rend="strikethrough">all</del> at once, as it were, extinct.</line>
+        <line>He existed from this moment for <del rend="strikethrough">himsef</del></line>
+        <line>himself only. His friends remembered him</line>
+        <line>as a brilliant vision which would never</line>
+        <line>again return to <del rend="strikethrough">him</del> them. The memory</line>
+        <line>of what he had been faded away as</line>
+        <line>years passed; and he who before had</line>
+        <line>been as a part of themselves and of</line>
+        <line>their hopes was now no longer counted</line>
+        <line>among the living.</line>
+    </zone>
+</surface>

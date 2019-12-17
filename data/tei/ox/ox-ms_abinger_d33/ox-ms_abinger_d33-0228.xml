@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0228" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="120r">
+    <zone type="pagination"><line>217</line></zone>
+    <zone type="library"><line>120</line></zone>
+    
+    <zone type="main">
+        <line>What I have felt about ye, and all my dreams, which</line>
+        <line>have often strangely deformed thee, will die with</line>
+        <line>me. You will exist to reflect other images in</line>
+        <line>other minds, and ever will remain the same,</line>
+        <line>although your reflected semblance <del rend="strikethrough">vay</del> vary in</line>
+        <line>a thousand ways, changeable as the hearts of</line>
+        <line>those who view thee. One of these fragile</line>
+        <line>mirrors, that ever doted on thine image,</line>
+        <line>is about to be broken, crumbled to dust. But</line>
+        <line>ever-teeming Nature will create another and</line>
+        <line>another, and thou wilt loose nought by</line>
+        <line>my destruction.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"Thou wilt ever be the same. Recieve</line>
+        <line>then the grateful farewell of a fleeting shadow</line>
+        <line>who is about to disappear, who joyfully</line>
+        <line>leaves thee, yet with a last look of affectio</line>
+        <line>-nate thankfulness. Farewell! Sky, and fields</line>
+        <line>and woods; the lovely flowers <del rend="strikethrough">of</del> that grow</line>
+        <line>on thee; thy mountains &amp; thy rivers; to the</line>
+        <line>balmy air and the strong wind of the north,</line>
+        <line>to all, a <del rend="strikethrough">l</del> last farewell. I shall shed no</line>
+        <line>more tears for my task is almost fulfilled,</line>
+        <line>and I am about to be rewarded for long and</line>
+        <line>most burthensome suffering. Bless thy child even</line>
+        
+    </zone>
+</surface>

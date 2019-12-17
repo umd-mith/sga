@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0108" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="56r">
+    <zone type="pagination"><line>97</line></zone>
+    <zone type="library"><line>56</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:head" spanTo="#d33-0108.01"/>
+        
+        <line rend="center">Chap. VII</line>
+        <anchor xml:id="d33-0108.01"/>
+        
+        <milestone unit="tei:p"/>
+        <line rend="indent2">With a beating heart and fearful,</line>
+            <line>I knew not why, I dismissed the servant</line>
+            <line>and locking my door, sat down to read my</line>
+            <line>father’s letter. These are the words that it</line>
+            <line>contained.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"My dear Child</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"I have betrayed your confidence;</line>
+            <line>I have endeavoured to pollute your mind,</line>
+            <line>and have made your innocent heart</line>
+            <line>acquainted with the looks and language</line>
+            <line>of unlawful and monstrous passion. I</line>
+            <line>must expiate these crimes, and must</line>
+            <line>endeavour in some degree to proportio</line>
+            <line>nate my punishment to my guilt. You</line>
+            <line>are I doubt not prepared for what I</line>
+            <line>am about to announce; we must</line>
+            <line>seperate and be divided for ever.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">"I deprive you of your parent</line>
+            <line>and only friend. You are cast out</line>
+            <line>shelterless on the world: your hopes are</line>
+            <line>blasted; the peace and security of your</line>
+            
+    </zone>
+</surface>

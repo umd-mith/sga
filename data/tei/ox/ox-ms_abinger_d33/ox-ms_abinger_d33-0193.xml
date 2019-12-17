@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0193" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="101v">
+    <zone type="pagination"><line><del rend="strikethrough">190</del> 182</line></zone>
+    
+    <zone type="main">
+        <line>When I saw him</line>
+        <line rend="indent1">Gli occhi drizzo ver me con quel sembiante</line>
+            <line rend="indent1"><anchor xml:id="d33-0193.01"/>Che madre fa sopra figlioul deliro</line>
+                <line>I wept and said, "Oh, pardon me! You</line>
+                <line>are good and kind but I am not fit</line>
+                <line>for life: Why am I obliged to live? To</line>
+                <line>drag hour after hour, to <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">see</add></mod> the trees wave</line>
+                <line>their branches restlessly, to feel the</line>
+                <line><zone type="library">101<hi rend="sup">v</hi></zone> air, &amp; to suffer in all I feel keenest agony. My frame</line>
+    <line>is strong, but my soul sinks beneath this endurance</line>
+    <line>of living anguish. Death is the goal that I would</line>
+    <line>attain, but, alas! I do not even see the end</line>
+    <line>of the course. Do you, my compassionate friend,</line>
+    <line>tell me how to die peacefully and inno-</line>
+    <line>cently and I will bless you: all that</line>
+    <line>I, poor wretch, can desire is a painless</line>
+    <line>death."</line>
+        <milestone unit="tei:p"/>
+    <line rend="indent2">But <mod><del rend="strikethrough">Le</del> <del rend="strikethrough">Herbert’s</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville’s</add></mod> words had magic</line>
+    <line>in them, when beginning with the</line>
+    <line>sweetest pity, he would <del rend="strikethrough">sa</del> raise me</line>
+    <line>by degrees out of myself and my sorrows</line>
+    <line>until<del rend="strikethrough">l</del> I wondered at my own selfish-</line>
+    <line>ness: but he <del rend="strikethrough">f</del> left me and despair</line>
+    
+    </zone>
+    <zone type="left_margin" corresp="#d33-0193.01">
+        <line>Pradiso. C 1.</line>
+    </zone>
+</surface>

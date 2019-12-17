@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0184" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="96r">
+    <zone type="pagination"><line></line></zone>
+    <zone type="library"><line>96</line></zone>
+    
+    <zone type="main">
+        <line>in happiness and woe and dwelt with</line>
+        <line>passion on his and Elinor’s mutual love.</line>
+        <line>"She was, he said, "the brightest vision that</line>
+        <line>ever came upon the earth: there</line>
+        <line>was somthing in her frank countenance,</line>
+        <line>in her voice, and in every motion of her</line>
+        <line>graceful form <del rend="strikethrough">somthing</del> that overpowered</line>
+        <line>me, as if it were a celestial creature</line>
+        <line>that deigned to mingle with me in</line>
+        <line>intercourse more sweet than man</line>
+        <line>had ever before enjoyed. Sorrow fled</line>
+        <line>before her; and her smile seemed to</line>
+        <line>possess an influence like light to</line>
+        <line>irradiate all mental darkness. It was</line>
+        <line>not like a human loveliness that these</line>
+        <line>gentle smiles went and came; but as</line>
+        <line>a sunbeam on a lake, now light and</line>
+        <line>now obscure, flitting before as you <del rend="strikethrough">stove</del></line>
+        <line>strove to catch them, and fold them for</line>
+        <line>ever to your heart. I saw this smile</line>
+        <line>fade for ever. Alas! I <del rend="strikethrough">v</del> could never</line>
+        <line>have believed that it was indeed Elinor</line>
+        <line>that died if once when I spoke she had</line>
+        <line>not lifted her almost benighted eyes, and</line>
+        
+    </zone>
+</surface>

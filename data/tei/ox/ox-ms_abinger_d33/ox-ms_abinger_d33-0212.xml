@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0212" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="112r">
+    <zone type="pagination"><line>201</line></zone>
+    <zone type="library"><line>112</line></zone>
+    
+    <zone type="main">
+        <line>after I had saluted the starry sky and</line>
+        <line>dewy earth with eyes of love and a conten</line>
+        <line>ted good night, I slept sweetly, visited by</line>
+        <line>dreams, the first of pleasure I had had</line>
+        <line>for many long months.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">But this was only a momentary</line>
+        <line>relief and my old habits of feeling return</line>
+        <line>ed. <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">X</add></mod> I believed myself to be polluted by</line>
+        <line>the unnatural love I had inspired,</line>
+        <line>and that I was a creature cursed and</line>
+        <line>set apart by nature. I thought that</line>
+        <line>like another Cain, I had a mark set</line>
+        <line>on my forehead to shew mankind</line>
+        <line>that there was a barrier between</line>
+        <line>me and they. <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> had told me</line>
+        <line>that there was in <del rend="strikethrough">the expression of</del></line>
+        <line>my countenance an expression as</line>
+        <line>if I belonged to another world; so he had</line>
+        <line>seen that sign: and there it lay a</line>
+        <line>gloomy mark to tell the world that</line>
+        <line>there was that within my soul that</line>
+        <line>no silence <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">could</add> <del rend="strikethrough">would</del></mod> render sufficiently</line>
+        <line>obscure. Why when fate drove me</line>
+        <line>to become this outcast from human</line>
+        <anchor xml:id="d33-0212.01"/>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0212.01">
+        <line>X for I was doomed while in life to grieve, and to the natural</line>
+        <line>sorrow of my father’s death and its most terrific cause, immagi-</line>
+        <line>-nation added a tenfold weight of woe.</line>
+    </zone>
+</surface>

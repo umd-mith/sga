@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0094" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="49r">
+    <zone type="pagination"><line>83</line></zone>
+    <zone type="library"><line>49</line></zone>
+    
+    <zone type="main">
+        <line>insensible – his <del rend="strikethrough">ey</del> eyes closed as his cheeks</line>
+        <line>deathly pale – Above, the leaves <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">of</add></mod> the</line>
+        <line>beech wood cast a <del rend="strikethrough">clict</del> flickering</line>
+        <line>shadow on his face, and waved in</line>
+        <line>mournful melody over him – I saw</line>
+        <line>all these things and <del rend="strikethrough">say</del> said, "Aye, this</line>
+        <line>is his grave!" And then I wept aloud,</line>
+        <line>and raised my eyes to heaven to entreat</line>
+        <line>for a <del rend="strikethrough">sl</del> respite to my despair and</line>
+        <line>an <del rend="strikethrough">af</del> alleviation for his unnatural</line>
+        <line>suffering – the tears that gushed in</line>
+        <line>a warm &amp; healing stream from my</line>
+        <line>eyes relieved the burthen that oppressed</line>
+        <line>my heart almost to madness. I wept</line>
+        <line>for a long time untill I saw him about</line>
+        <line>to revive, when <mod><del rend="strikethrough">terror</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">horror</add></mod> and misery</line>
+        <line>again recurred, and the tide of my</line>
+        <line>sensations rolled back to their former</line>
+        <line>channel: With a terror I could not</line>
+        <line><del rend="strikethrough">constrain</del> restrain – I sprung up and</line>
+        <line>fled, with winged speed, along the paths</line>
+        <line>of the wood and across the fields untill</line>
+        <line>nearly dead I reached our house and just</line>
+        
+    </zone>
+</surface>

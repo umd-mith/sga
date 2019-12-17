@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0032" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="18r">
+    <zone type="pagination"><line>21</line></zone>
+    <zone type="library"><line>18</line></zone>
+    
+    <zone type="main">
+        <line>five years had lived perfectly alone on an</line>
+        <line>estate, that had descended to her through</line>
+        <line>her mother, on the shores of Loch Lomond</line>
+        <line>in Scotland. My father had expressed a</line>
+        <line>wish in his letters that she should reside</line>
+        <line>with me at his family mansion which</line>
+        <line>was situated in a beautiful country near</line>
+        <line>Richmond in Yorkshire. She would not</line>
+        <line>consent to this proposition, but as soon as</line>
+        <line>she had arranged the affairs which her</line>
+        <line>brother’s departure had caused to fall to her</line>
+        <line>care, she quitted England and took me</line>
+        <line>with her to her scotch estate.</line>
+        
+        <milestone unit="tei:p"/>
+        <line rendition="indent2">The care of me while a baby, and</line>
+        <line>afterwards untill I had reached my <del rend="strikethrough">eit</del></line>
+        <line>eighth year devolved on a servant of</line>
+        <line>my mother’s, who had accompanied us</line>
+        <line>in our retirement for that purpose.</line>
+        <line>I was placed in a remote part of the</line>
+        <line>house, and only <del rend="strikethrough">visited</del> saw my aunt</line>
+        <line>at stated hours. These occurred twice</line>
+        <line>a day; once about noon she came to</line>
+        <line>my nursery, and once after her dinner</line>
+        <line>I was taken to her. She never caressed</line>
+    </zone>
+</surface>

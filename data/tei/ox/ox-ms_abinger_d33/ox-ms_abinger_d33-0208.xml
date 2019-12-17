@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0208" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="110r">
+    <zone type="pagination"><line>197</line></zone>
+    <zone type="library"><line>110</line></zone>
+    
+    <zone type="main">
+        <line>with us. Let us suppose that Socrates,</line>
+        <line>or Shakespear, or Rousseau had</line>
+        <line>been seized with Despair and died in</line>
+        <line>youth when they were as young as I</line>
+        <line>am; do you think that we and all</line>
+        <line>the world should not have lost incalcu</line>
+        <line>lable improvement in our good fee</line>
+        <line>lings and <del rend="strikethrough">hou</del> our happiness <del rend="strikethrough">by</del> thro’</line>
+        <line>their destruction. I am not like one</line>
+        <line>of these; they influenced millions: but if</line>
+        <line>I can influence but a hundred, but</line>
+        <line>ten, but one solitary individual,</line>
+        <line><del rend="strikethrough">l</del> so as in any way to lead him from</line>
+        <line>ill to good, that will <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be a joy to</add></mod> repay me for</line>
+        <line>all my sufferings, though they were</line>
+        <line>a million times multiplied; and that</line>
+        <line>hope will support me to bear them</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"And those who do not work for</line>
+        <line>posterity; or working, as may be my case,</line>
+        <line>will not be known by it; yet they,</line>
+        <line>believe me, have also their duties. You</line>
+        <line>grieve because you are unhappy</line>
+        
+    </zone>
+</surface>

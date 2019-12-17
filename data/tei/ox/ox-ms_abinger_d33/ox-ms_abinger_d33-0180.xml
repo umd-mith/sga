@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0180" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="94r">
+    <zone type="pagination"><line>169</line></zone>
+    <zone type="library"><line>94</line></zone>
+    
+    <zone type="main">
+        <line><del rend="strikethrough">ble</del> <del rend="strikethrough">brilliant for me too</del> dazzling for me.</line>
+        <line>When we were together I spoke little</line>
+        <line>yet my selfish mind was sometimes</line>
+        <line>borne away by the rapid course of</line>
+        <line>his ideas; I would lift my eyes <del rend="strikethrough">s</del> with</line>
+        <line>momentary brilliancy until memo-</line>
+        <line>ries that never died and seldom slept</line>
+        <line>would recur, and a tear would dim</line>
+        <line>them.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2"><anchor xml:id="d33-0180.01"/><del rend="strikethrough">Herbert</del> for ever tried to lead me</line>
+        <line>to the contemplation of what is</line>
+        <line>beautiful and happy in the world.</line>
+        <line>His own mind was constitunially</line>
+        <line>bent to <del rend="strikethrough">the beholding</del> a former</line>
+        <line>belief in good <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">than</add> <del rend="strikethrough">and</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">in</add></mod> evil and this</line>
+        <line>feeling which must even exhili-</line>
+        <line>rate the hopeless ever shone forth</line>
+        <line>in his words. <del rend="strikethrough">Sometimes when he strove</del></line>
+        <line><del rend="strikethrough">in vain with my obstinate melancholy</del></line>
+        <line><del rend="strikethrough">he</del> He would talk of the wonderful</line>
+        <line>powers of man; of their present state</line>
+        <line>and of their hopes: Of what they had</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0180.01">
+        <line>Wood</line>
+    </zone>
+</surface>

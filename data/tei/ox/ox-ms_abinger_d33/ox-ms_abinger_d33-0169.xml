@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0169" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="88v">
+    <zone type="pagination"><line>158</line></zone>
+
+    
+    <zone type="main">
+        <line>for ever rose in glory; and Elinor be-</line>
+        <line>came more lovely and wise under</line>
+        <line>the lessons of her accomplished lover.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">In two months Elinor would be</line>
+        <line>twenty one: every thing was <del rend="strikethrough">pe</del> prepared</line>
+        <line>for their union. How shall I relate the</line>
+        <line>catastrophe to so much joy; but the</line>
+        <line>earth would not be the earth it is</line>
+        <line>covered with blight and sorrow if one</line>
+        <line>such pair as these angelic creatures</line>
+        <line>had been suffered to exist for one</line>
+        <line>another: search through the world</line>
+        <line>and you will not find the perfect</line>
+        <line>happiness which their marriage</line>
+        <line>would have caused them to enjoy;</line>
+        <line><del rend="strikethrough">their</del> there must have been a</line>
+        <line>revolution in the order of things</line>
+        <line>as established among us miserable</line>
+        <line>earth-dwellers to have admitted of</line>
+        <line>such <del rend="strikethrough">com</del> consummate joy. <del rend="strikethrough">But</del></line>
+        <line>The chain of necessity <del rend="strikethrough">must</del> ever</line>
+        
+    </zone>
+</surface>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0015" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="7v">
+
+    <zone type="main">
+        <line>give me pleasure to dwell upon our friendship in a way</line>
+        <line>that would be needless if you alone read what I shall</line>
+        <line>write. I shall relate my tale therefore as if <del rend="strikethrough">it were</del>
+            I</line>
+        <line>wrote for strangers. You have often asked me the</line>
+        <line>cause of my solitary life; my tears; and above all of my</line>
+        <line>impenetrable and <del rend="strikethrough">unaffecte</del> unkind silence. In life
+            I</line>
+        <line>dared not; <del rend="strikethrough">I</del> in death I unveil the mystery.
+            Others</line>
+        <line>will toss these pages lightly over: to you, Woodville,</line>
+        <line>kind, affectionate friend, they will be dear – the</line>
+        <line>precious memorials of a heart-broken girl who,</line>
+        <line>dying, is still warmed by gratitude towards you:</line>
+        <line>your tears will fall on the words that record my</line>
+        <line>misfortunes; I know they will – and while I have</line>
+        <line>life I thank you for your sympathy.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent1">But enough of this: I will begin my tale: <del rend="strikethrough">I</del>it is</line>
+        <line>my last task, and I hope I <del rend="strikethrough">shall</del> have strength</line>
+        <line>sufficient to fulfill it. I record no crimes; my faults</line>
+        <line>may easily be pardoned; for they proceeded not from evil</line>
+        <line>motive but from want of judgement; and I believe</line>
+        <line>few would say that they could, by a different conduct</line>
+        <line>and superior wisdom, have avoided the misfor</line>
+        <line>tunes to which I am the victim. My fate has</line>
+        <line>been governed by necessity, a hideous necessity.</line>
+        <line>It required hands stronger than mine; stronger,</line>
+        <line>I do believe than any human force to break</line>
+        <line>the thick, adamantine chain that has bound</line>
+        <line>me, once breathing nothing but joy, ever possess</line>
+        <line>ed <del rend="strikethrough">by</del> by a warm love &amp; delight in goodness, ––
+            to</line>
+    </zone>
+</surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0070" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="37r">
+    <zone type="pagination"><line>59</line></zone>
+    <zone type="library"><line>37</line></zone>
+    
+    <zone type="main">
+        <line>pointed out to me the rooms which my</line>
+        <line>mother had inhabited. Although more</line>
+        <line>than sixteen years had passed since</line>
+        <line>her death nothing had been changed;</line>
+        <line>her work box, her writing desk were still</line>
+        <line>there and in her room a book lay open</line>
+        <line>on the table as she had left it. My fa-</line>
+        <line>ther pointed out these circumstances</line>
+        <line>with a serious and unaltered mien,</line>
+        <line>only now and then fixing his deep and</line>
+        <line>liquid eyes upon me; there was som-</line>
+        <line>thing strange and awful in his look that</line>
+        <line>overcame me, and in <del rend="strikethrough">spight</del> spite of</line>
+        <line>myself I wept, – nor did he attempt to</line>
+        <line>console me, but I saw his lips quiver</line>
+        <line>and the muscles of his countenance</line>
+        <line>seemed convulsed.</line>
+        <milestone unit="tei:p"/><line rend="indent2">We walked together in the gardens</line>
+        <line>and in the evening when I would have</line>
+        <line>retired he asked me to stay and read to</line>
+        <line>him; and first said, "When I was last</line>
+        <line>here your mother read Dante to me;</line>
+        <line>you shall go on where she left off." –</line>
+        <line>And then in a moment he said, "No, –</line>
+        
+    </zone>
+</surface>

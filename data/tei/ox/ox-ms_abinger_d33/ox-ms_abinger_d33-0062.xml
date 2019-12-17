@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0062" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="33r">
+    <zone type="pagination"><line>51</line></zone>
+    <zone type="library"><line>33</line></zone>
+    
+    <zone type="main">
+        <line>to earth as a silly sparrow when pounced</line>
+        <line>on by a hawk; my eyes swam and my</line>
+        <line>head was bewildered by the sudden appari</line>
+        <line>tion of grief. Day after day passed marked</line>
+        <line>only by my complaints and my tears; often</line>
+        <line>I lifted my soul in vain prayer for a</line>
+        <line>softer descent from joy to woe, or if that</line>
+        <line>were denied me that I might be allowed</line>
+        <line>to die, and fade for ever under the</line>
+        <line>cruel blast that swept over me</line>
+        <milestone unit="tei:p"/><line rend="indent3">  ̶ ̶̶̶ ̶̶  for what should I do here,</line>
+        <line>Like a decaying flower, still withering</line>
+        <line>Under his bitter words, whose kindly heat</line>
+        <line>Should give my poor heart life? <add place="superlinear">X</add><anchor xml:id="d33-0062.01"/></line>
+        <milestone unit="tei:p"/><line rend="indent3">Sometimes I said to myself, this is</line>
+        <line>an enchantment, and I must strive</line>
+        <line>against it. My father is blinded by some</line>
+        <line>malignant vision which I must remove.</line>
+        <line>And then, like David, I would try music</line>
+        <line>to win the evil spirit from him; and</line>
+        <line>once while singing I lifted my eyes towards</line>
+        <line>him and saw his fixed <del rend="strikethrough">once</del> on me and</line>
+        <line>filled with tears; all his muscles seemed</line>
+        <line>relaxed to softness. I sprung towards him</line>
+        
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0062.01">
+        <line><add place="superlinear">X</add> Fletcher’s comedy of the Captain.</line>
+    </zone>
+</surface>

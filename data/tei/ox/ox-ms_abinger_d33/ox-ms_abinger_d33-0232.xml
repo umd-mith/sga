@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0232" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="122r">
+    <zone type="pagination"><line>221</line></zone>
+    <zone type="library"><line>122</line></zone>
+    
+    <zone type="main">
+        <line>the transporting and soul-reviving era of</line>
+    <line>my existence: my father returned and I</line>
+    <line>could pour my warm affections <del rend="strikethrough">of a</del> on a</line>
+    <line>human heart; there was a new sun</line>
+    <line>and a new earth created to me; the waters</line>
+    <line>of existence sparkled: joy! joy! but, alas!</line>
+    <line>what grief! My bliss was more rapid</line>
+    <line>than the progress of a sunbeam on a</line>
+    <line>mountain, which discloses its glades &amp;</line>
+    <line>woods, and then leaves <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">it</add></mod> dark &amp; blank; to</line>
+    <line>my happiness <del rend="strikethrough">fl</del> followed madness and</line>
+    <line>agony, closed by despair.</line>
+        <milestone unit="tei:p"/>
+    <line rend="indent2">This was the drama of my life which</line>
+    <line>I have <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">now</add></mod> depicted upon paper. During three</line>
+    <line>months I have been employed in this task.</line>
+    <line>The memory of sorrow has brought tears;</line>
+    <line>the memory of happiness a <del rend="strikethrough">level</del> warm glow</line>
+    <line>the lively shadow of that joy. Now my tears</line>
+    <line>are dried; the glow has faded from my cheeks,</line>
+    <line>and with a few words of farewell to you, Wood</line>
+    <line>ville, I close my work: the last that I shall</line>
+    <line>perform.</line>
+    <line>Farewell, my only living friend; you are the</line>
+    
+    </zone>
+</surface>

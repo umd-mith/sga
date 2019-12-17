@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0060" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="32r">
+    <zone type="pagination"><line>49</line></zone>
+    <zone type="library"><line>32</line></zone>
+    
+    <zone type="main">
+        <line>that to remember makes me shudder</line>
+        <line>and then filled me with the deepest</line>
+        <line>grief. There were no degrees which</line>
+        <line>could break my fall from happiness to</line>
+        <line>misery; it was as the stroke of</line>
+        <line><del rend="strikethrough">lightneg</del> lightning – sudden and</line>
+        <line>entire. Alas! I now met frowns where</line>
+        <line>before I had been welcomed only with</line>
+        <line>smiles: he, my beloved father, shunned</line>
+        <line>me, and either treated me with harsh-</line>
+        <line>ness or a more heart-breaking coldness.</line>
+        <line>We took no more sweet counsel toge-</line>
+        <line>ther; and when I tried to win him</line>
+        <line>again to me, his anger, and the terri-</line>
+        <line>-ble emotions that he exhibited drove</line>
+        <line>me to silence and tears.</line>
+        <line>And this was sudden. The day</line>
+        <line>before we had passed alone together</line>
+        <line>in the country; <add place="superlinear">X</add><anchor xml:id="d33-0060.01"/> and now the next day,</line>
+        <line>the next hour, I saw his brows contrac</line>
+        <line>ted; his eyes fixed in sullen fierceness</line>
+        <line>on the ground, and his voice so gentle</line>
+        <line>and so dear made me <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">shiver</add> <del rend="strikethrough">shudder</del></mod> when he</line>
+        
+    </zone>
+    
+    <zone type="left_margin" corresp="#d33-0060.01">
+        <line>X  I remember we had talked of future travels that we <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">should under</add></mod> take together –.</line>
+        <line>there was an eager delight in our tones and gestures that could only spring</line>
+        <line>from <del rend="strikethrough">the</del> deep &amp; mutual love joined to the most unrestrained confidence</line>
+    </zone>
+</surface>

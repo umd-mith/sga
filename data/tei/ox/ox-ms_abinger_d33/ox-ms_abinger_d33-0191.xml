@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0191" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="99v">
+    <zone type="pagination"><line>180</line></zone>
+    
+    <zone type="main">
+        <line>that shewed how far too deep my wounds</line>
+        <line>were for any cure.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">But now also I began to reap the</line>
+        <line>fruits of my perfect solitude. I had become</line>
+        <line>unfit for any intercourse, even with</line>
+        <line><anchor xml:id="d33-0191.01"/><del rend="strikethrough">Herbert</del> the most gentle and sympathi</line>
+        <line>zing <del rend="strikethrough">cleo</del> creature that existed. I had</line>
+        <line>become captious and unreasonable:</line>
+        <line>my temper was utterly spoilt. I called</line>
+        <line>him my friend but I viewed all he</line>
+        <line>did with jealous eyes. If he did not</line>
+        <line><anchor xml:id="d33-0191.02"/><del rend="strikethrough">come</del> at the appointed <del rend="strikethrough">l</del> hour I was</line>
+        <line>angry, very angry, and told him that</line>
+        <line>if indeed he did feel interest in me</line>
+        <line>it was cold, and could not be fitted for</line>
+        <line>me, a poor worn creature, whose</line>
+        <line>deep unhappiness demanded much more</line>
+        <line>than his worldly heart could give. When</line>
+        <line>for a moment I imagined that his</line>
+        <line>manner was cold I would fretfully</line>
+        <line>say to him – "I was at peace before</line>
+        <line>you came; why have you disturbed me?</line>
+        <line>You have given me new wants and</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0191.01">
+        <line>Woodville</line>
+    </zone>
+    <zone type="left_margin" corresp="#d33-0191.02">
+        <line>visit me</line>
+    </zone>
+</surface>

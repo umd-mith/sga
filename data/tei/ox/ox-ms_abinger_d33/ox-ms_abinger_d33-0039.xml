@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0039" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="">
+    <zone type="pagination"><line>28</line></zone>
+
+    
+    <zone type="main">
+        <line>lady of Comus to life to be my companions,</line>
+        <line>or on my isle acted over their parts</line>
+        <line>imagining myself to be in their situations.</line>
+        <line>Then I wandered from the fancies of others</line>
+        <line>and formed affections <del rend="strikethrough">and</del> and intimacies</line>
+        <line>with the aerial creations of my own brain-</line>
+        <line>but still clinging to reality I gave a name</line>
+        <line>to these conceptions and nursed them in</line>
+        <line>the hope of realization. I clung to the</line>
+        <line>memory of my parents; my mother I</line>
+        <line>should never see, she was dead: but the</line>
+        <line>idea of unhappy, wandering father</line>
+        <line>was the idol of my imagination. I</line>
+        <line>bestowed on him all my affections;</line>
+        <line>there was a miniature of him that</line>
+        <line>I gazed on continually; I copied his last</line>
+        <line>letter and read it again and again.</line>
+        <line>Sometimes it made me weep; and</line>
+        <line>at other I repeated with transport</line>
+        <line>those words, – "One day I may claim her</line>
+        <line>at your hands." I was to be his conso</line>
+        <line>ler, his companion in after years.</line>
+        <line>My favourite vision was that when</line>
+    </zone>
+</surface>

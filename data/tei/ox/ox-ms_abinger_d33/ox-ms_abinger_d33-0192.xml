@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0192" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="100r">
+    <zone type="pagination"><line>181</line></zone>
+    <zone type="library"><line>100</line></zone>
+    
+    <zone type="main">
+        <line>now you trifle with me as if my heart</line>
+        <line>were as whole <mod><del rend="strikethrough">in</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">as</add></mod> yours, as if I were</line>
+        <line>not in truth a <mod><del rend="strikethrough">torn</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">shorn</add> <del rend="strikethrough">lap</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">lamb</add></mod> thrust out</line>
+        <line>on the bleak hill side, tortured by every</line>
+        <line>blast. I wished for no friend, no sympathy</line>
+        <line>I avoided you, you know I did, but</line>
+        <line>you forced yourself upon me and</line>
+        <line>gave me those wants which you</line>
+        <line>see with triump gives you power</line>
+        <line>over me. Oh the brave power of</line>
+        <line>the bitter North Wind which freezes</line>
+        <line>the tears it has caused to shed! But</line>
+        <line>I will not bear this; go: the <del rend="strikethrough">ru</del> sun</line>
+        <line>will rise and set as before you came,</line>
+        <line>and I <del rend="strikethrough">will</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">shall</add> sit among the pines or</line>
+        <line>wander on the heath weeping and</line>
+        <line>complaining without wishing for you</line>
+        <line>to listen. You are cruel, very cruel, to</line>
+        <line>treat me who bleed at every pore in</line>
+        <line>this rough manner."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">And then, when in answer</line>
+        <line>to my peevish words, I saw his counte</line>
+        <line>nance bent with living pity on me</line>
+        
+    </zone>
+</surface>

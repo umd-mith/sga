@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0061" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="32v">
+    <zone type="pagination"><line>50</line></zone>
+    
+    <zone type="main">
+        <line>addressed me. Often, when my wandering</line>
+        <line>fancy brought by its various images now</line>
+        <line>consolation and now aggravation of grief to</line>
+        <line>my heart, I have compared myself to</line>
+        <line>Proserpine who was gaily and heedlessly</line>
+        <line>gathering flowers on the sweet plain</line>
+        <line>of Enna, when the King of Hell snatched</line>
+        <line>her away to the abodes of death and misery.</line>
+        <line>Alas! I who so lately knew of nought but</line>
+        <line>the joy of life; who had slept only to dream</line>
+        <line>sweet dreams and awoke to incomparable</line>
+        <line>happiness, I now <del rend="strikethrough">mus</del> passed my days and</line>
+        <line>nights in tears. I who sought <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">and had found</add> <del rend="strikethrough">for</del></mod> joy</line>
+        <line>in the love-breathing countenance of my</line>
+        <line><del rend="strikethrough">mo</del> father now when I <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">dared fix</add> <del rend="strikethrough">raised</del> <del rend="strikethrough">my eyes</del></mod> on</line>
+        <line>him a supplicating look it was ever</line>
+        <line>answered by an angry <mod><del rend="strikethrough">brow</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">frown</add></mod>. I dared</line>
+        <line>not speak to him; and when sometimes</line>
+        <line>I had worked up courage to meet him</line>
+        <line><del rend="strikethrough">w</del> and to <del rend="strikethrough">dem</del> ask an<del rend="strikethrough">d</del> explanation one</line>
+        <line>glance <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">at</add> <del rend="strikethrough">of</del></mod> his face where a chaos of</line>
+        <line>mighty passion seemed for ever strug-</line>
+        <line>gling made me tremble and shrink to</line>
+        <line>silence. I was dashed down from heaven</line>
+        
+    </zone>
+</surface>

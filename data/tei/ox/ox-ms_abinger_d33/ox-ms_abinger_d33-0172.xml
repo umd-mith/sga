@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0172" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="90r">
+    <zone type="pagination"><line>161</line></zone>
+    <zone type="library"><line>90</line></zone>
+    
+    <zone type="main">
+        <line>and that he might still hope was an</line>
+        <line>alleviation to him. He remembered</line>
+        <line>the words of her letter and he indulged</line>
+        <line>the wild idea that his kisses breathing</line>
+        <line>warm love and life would infuse</line>
+        <line>new spirit into her, and that with</line>
+        <line>him near her she could not die; that</line>
+        <line>his presence was the talisman of her</line>
+        <line>life.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">He hastened to her sick room; she</line>
+        <line>lay, her cheeks burning with fever,</line>
+        <line>yet her eyes were closed and she</line>
+        <line>was seemingly senseless. He wrapt</line>
+        <line>her in his arms; he imprinted</line>
+        <line>breathless kisses on her burning lips;</line>
+        <line><del rend="strikethrough">In a voi</del> he called to her in a voice</line>
+        <line>of subdued <mod><del rend="strikethrough">agony</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">anguish</add></mod> by the tenderest</line>
+        <line>names; "Return Elinor; I am with</line>
+        <line>you<del rend="strikethrough">r</del>; your life, your love. Return,</line>
+        <line>dearest one, you promised <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">me</add></mod> this boon,</line>
+        <line>that I should bring you health. Let</line>
+        <line>you<zone type="library"><line>r</line></zone> sweet spirit revive; you cannot</line>
+        
+    </zone>
+</surface>

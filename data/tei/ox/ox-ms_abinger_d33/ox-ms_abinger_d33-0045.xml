@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0045" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="24v">
+    <zone type="pagination"><line>34</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/>
+        <line rend="indent2">It was past two o’clock when</line>
+            <line>by a sudden turn I found myself close</line>
+            <line>to <mod><del rend="strikethrough">a</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> lake near a <del rend="strikethrough">littl</del> cove where</line>
+            <line>a little skiff was moored – It was</line>
+            <line>not far from our house and I</line>
+            <line>saw my father and Aunt <del rend="strikethrough">walk</del></line>
+            <line>walking on the lawn. I jumped into</line>
+            <line>the boat, and well accustomed to such</line>
+            <line>feats, I pushed it <del rend="strikethrough">it</del> from shore,</line>
+            <line>and exerted all my strength to row</line>
+            <line>swiftly across. As I came, dressed</line>
+            <line>in White, covered only by my tartan</line>
+            <line>rachan, my hair streaming on</line>
+            <line>my shoulders, and shooting across with</line>
+            <line>greater speed than it could be supposed</line>
+            <line>I could give to my boat, my father</line>
+            <line>has often told me that I looked</line>
+            <line>more like a spirit than a human</line>
+            <line>maid. I approached the shore, my</line>
+            <line>father held the boat, I leapt lightly</line>
+            <line>out, and in a moment was in his</line>
+    </zone>
+</surface>

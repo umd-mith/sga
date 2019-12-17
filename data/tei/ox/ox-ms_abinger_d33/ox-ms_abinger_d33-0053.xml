@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0053" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="28v">
+    <zone type="pagination"><line>42</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/><line rend="indent2">Is it not strange that grief</line>
+            <line>should quickly follow so divine a</line>
+            <line>happiness? I drank of an enchanted</line>
+            <line>cup but gall was at the bottom of</line>
+            <line>its long drawn sweetness. My heart</line>
+            <line>was full of deep affection, but it</line>
+            <line>was calm from its very depth and</line>
+            <line>fulness. I <del rend="strikethrough">cou</del> had no idea that misery</line>
+            <line>could arise from love, and this lesson</line>
+            <line>that all at last <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">must</add></mod> learn was taught</line>
+            <line>me in a manner few are obliged</line>
+            <line>to receive it. I lament now, I must</line>
+            <line>ever lament, those few short months</line>
+            <line>of Paradisaical bliss; I disobeyed no</line>
+            <line>command, I ate no apple, and yet I</line>
+            <line>was ruthlessly driven from it. Alas!</line>
+            <line>my companion did, and I was preci</line>
+            <line>-pitated in his fall. But I <del rend="strikethrough">return</del></line>
+            <line>wander from my relation – let woe</line>
+            <line>come at its appointed time; I may</line>
+            <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><anchor xml:id="d33-0053.01"/><add place="superlinear"> stage of my story</add></mod> still talk of happiness.</line>
+
+    </zone>
+    
+    <zone type="left_margin" corresp="#d33-0053.01">
+        <line><add>at this </add></line>
+    </zone>
+</surface>

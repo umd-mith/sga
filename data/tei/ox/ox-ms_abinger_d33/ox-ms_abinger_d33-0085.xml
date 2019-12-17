@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0085" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="44v">
+    <zone type="pagination"><line>74</line></zone>
+    
+    <zone type="main">
+        <line>my only friend, my hope, my shelter, I</line>
+        <line>will [in left margin] see it all with folded arms and down</line>
+        <line>cast eyes. You do not treat me with</line>
+        <line>candour; it is not true what you say;</line>
+        <line>this will not soon pass away, it will</line>
+        <line>last forever if you deign not to speak to</line>
+        <line>me; to admit my consolations.</line>
+        <milestone unit="tei:p"/><line rend="indent2">"Dearest, dearest father, pity me –</line>
+        <line><anchor xml:id="d33-0085.01"/> pardon me: I entreat you do not drive</line>
+        <line>me to despair; indeed I must not be</line>
+        <line>repulsed; there is one thing that <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">which</add></mod> although</line>
+        <line>although it may torture me to know,</line>
+        <line>yet that you must tell me. I de-</line>
+        <line>-mand, and most solemnly I demand if</line>
+        <line>in any way I am the cause of your</line>
+        <line>unhappiness. Do you not see my tears</line>
+        <line>which I in vain strive against – You</line>
+        <line>hear unmoved my voice broken by sobs –</line>
+        <line><del rend="strikethrough">Fell</del> Feel how my hand trembles: my</line>
+        <line>whole heart is in the words I speak</line>
+        <line>and you must not endeavour to si-</line>
+        <line>lence me by mere words <mod><del rend="strikethrough">void</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">barren</add></mod> of</line>
+        <line>meaning: the agony of my doubt hurries</line>
+        <line>me on, and you must reply. I beseech</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0085.01">
+        <line>and </line>
+    </zone>
+</surface>

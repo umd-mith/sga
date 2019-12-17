@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0224" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="118r">
+    <zone type="pagination"><line>213</line></zone>
+    <zone type="library"><line>118</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/><line rend="indent2">I particularly mark this night,</line>
+            <line>for it was that <del rend="strikethrough">on</del> which <add place="superlinear">has</add> hurried</line>
+            <line>on the last scene of my tragedy,</line>
+            <line>which else might have dwindled on</line>
+            <line>through long years of <del rend="strikethrough">restless sorrow</del></line>
+            <line>listless sorrow. I was very ill when</line>
+            <line>I arrived and quite incapable of</line>
+            <line>taking off my wet clothes that clung</line>
+            <line>about me. In the morning, on</line>
+            <line>her return, my<del rend="strikethrough">s</del> servant found</line>
+            <line>me almost lifeless, while possess</line>
+            <line>ed by a high fever I was lying on</line>
+            <line>the floor of my <del rend="strikethrough">cottage</del> room.</line>
+        <milestone unit="tei:p"/>
+            <line rend="indent2">I was very ill for a long time,</line>
+            <line>and when I recovered from the im</line>
+            <line>mediate danger of fever, every symp</line>
+            <line>tom of a rapid consumption declared</line>
+            <line>itself. I was for some time ignorant</line>
+            <line>of this and thought that my excessive</line>
+            <line>weakness was the consequence of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> fever;</line>
+        <line><anchor xml:id="d33-0224.01"/><del rend="strikethrough">but</del> my strength became less and less;</line>
+            <line>as winter came on I had a cough;</line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0224.01">
+        <line>But</line>
+    </zone>
+</surface>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0156" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="82r">
+    <zone type="pagination"><line>145</line></zone>
+    <zone type="library"><line>82</line></zone>
+    
+    <zone type="main">
+        <milestone unit="tei:p"/><line rend="indent2">Before I see another day</line>
+        <line rend="indent2">Oh, let this body die away!</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">
+            <anchor xml:id="d33-0156.01"/><del rend="strikethrough">Do</del> not <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add></mod> reproached <del rend="strikethrough">me</del> then with inu</line>
+            <line>-tility. <mod><del rend="strikethrough">In life we</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">I</add></mod> believed that by sui</line>
+            <line>cide <mod><del rend="strikethrough">we</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">I should</add></mod> violate a divine law, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">of nature</add></mod> and</line>
+            <line><del rend="strikethrough">there</del> I thought that I <del rend="strikethrough">had</del> sufficiently</line>
+            <line>fulfilled my part in <del rend="strikethrough">enduring it.</del></line>
+            <line><del rend="strikethrough">the hard</del> submitting to the hard task of</line>
+            <line>enduring the crawling hours &amp; <del rend="strikethrough">minul</del></line>
+            <line>minutes – in bearing the load of time</line>
+            <line>that weighed miserably upon me</line>
+            <line>and that in abstaining from what I</line>
+            <line>in my calm <del rend="strikethrough">co</del> moments / <del rend="strikethrough">for often I</del></line>
+            <line><del rend="strikethrough">dared despair I and to doubt the</del></line>
+            <line><del rend="strikethrough">reality of all law &amp; crime</del> / considered a</line>
+            <line>crime, I deserved the reward of virtue.</line>
+            <line>There were <mod><del rend="strikethrough">moments,</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">periods</add></mod> dreadful ones, <del rend="strikethrough">in un</del></line>
+            <line>during which I despaired – &amp; doubted the</line>
+            <line><del rend="strikethrough">rea</del> existence of all duty &amp; the reality</line>
+            <line>of crime – but I shudder, and turn from</line>
+            <line>the rememberance.</line>
+            
+    </zone>
+    <zone type="left_margin" corresp="#d33-0156.01">
+        <line>let me</line>
+    </zone>
+</surface>

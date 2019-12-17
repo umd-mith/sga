@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0221" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="116v">
+    <zone type="pagination"><line>210</line></zone>
+    
+    <zone type="main">
+        <line><anchor xml:id="d33-0221.01"/>I looked around me and saw no object</line>
+        <line>that told me where I was; I had lost</line>
+        <line>myself, and in vain attempted to find</line>
+        <line>my path. I wandered on, and the</line>
+        <line>coming darkness made every trace</line>
+        <line>indistinct by which I might be</line>
+        <line>guided. At length <del rend="strikethrough">I was v</del> all was</line>
+        <line>veiled in the deep obscurity of black</line>
+        <line>est night; I became weary and</line>
+        <line><del rend="strikethrough">p</del> knowing that my servant was</line>
+        <line>to sleep that night at the neigh-</line>
+        <line>bouring village, so that my absence</line>
+        <line>would alarm no one; and that I</line>
+        <line>was safe in this wild spot from every</line>
+        <line>intruder, I resolved to spend the</line>
+        <line>night where I was. Indeed I was</line>
+        <line>too weary to walk further: the air</line>
+        <line>was chill but I was careless of bodily</line>
+        <line>inconvenience, and I thought that I</line>
+        <line>was well inured to the weather during</line>
+        <line>my two years of solitude, when no change</line>
+        <line>of seasons prevented my perpetual</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0221.01">
+        <line>the plain,</line>
+    </zone>
+</surface>

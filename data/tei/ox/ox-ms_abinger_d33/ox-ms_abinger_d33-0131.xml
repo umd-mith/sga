@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0131" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="68v">
+    <zone type="pagination"><line>120</line></zone>
+    
+    <zone type="main">
+        <line>a tremendous peal of thunder descended on</line>
+        <line>it; and when my eyes recovered <del rend="strikethrough">its</del> their</line>
+        <line>sight after the dazzling light, the oak</line>
+        <line>no longer stood in the <del rend="strikethrough">field</del> meadow – The</line>
+        <line>old man uttered a wild exclamation of</line>
+        <line>horror when he saw so sudden an inter</line>
+        <line>-pretation given to my prophesy. I start-</line>
+        <line>-ed up, my strength <del rend="strikethrough">my terror</del> returned;</line>
+        <line><anchor xml:id="d33-0131.01"/>I cried, "Oh, God! Is this thy decree? Yet</line>
+        <line>perhaps I shall not be too late."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Although still several miles dis</line>
+        <line>tant we continued <del rend="strikethrough">a</del> to approach the</line>
+        <line>sea. <del rend="strikethrough">At an inn</del> We came at last</line>
+        <line>to the road that led to town of —</line>
+        <line>and at an inn there we heard that</line>
+        <line>my father had passed by somewhat</line>
+        <line>before sunset; he had observed the ap-</line>
+        <line>proaching storm and had hired a</line>
+        <line>horse <mod><del rend="strikethrough">from</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">for</add></mod> the next town which was</line>
+        <line>situated a mile from the sea that</line>
+        <line>he might arrive there before it should</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0131.01">
+        <line>with my <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">terror;</add></mod></line>
+    </zone>
+    </surface>

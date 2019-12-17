@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0155" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="81v">
+    <zone type="pagination"><line>144</line></zone>
+
+    
+    <zone type="main">
+        <line>solitary creature ever pondering on</line>
+        <line>my regrets and faded hopes.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Mine was an idle, useless <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">life</add></mod>; it</line>
+        <line>was so; but say not to the lily laid pros-</line>
+        <line>trate by the storm arise, and bloom</line>
+        <line>as before. My heart was bleeding from</line>
+        <line>its death’s wound; I could live no other-</line>
+        <line>wise – Often amid apparent calm</line>
+        <line>I was visited by despair and melancholy;</line>
+        <line>gloom that nought could dissipate or</line>
+        <line>overcome; a hatred of life; a careless-</line>
+        <line>ness <del rend="strikethrough">for</del> of beauty; all these would</line>
+        <line>by fits hold me nearly annihilated</line>
+        <line>by their powers. Never for one mo-</line>
+        <line>ment when most placid did I</line>
+        <line>cease to pray for death. I could be</line>
+        <line>found in no state of mind which</line>
+        <line>I would not willingly have exchanged</line>
+        <line>for nothingness. And morning and evening</line>
+        <line>my tearful eyes raised to heaven, my</line>
+        <line>hands clasped tight in the energy of</line>
+        <line>prayer, I have repeated with the poet –</line>
+        
+    </zone>
+</surface>

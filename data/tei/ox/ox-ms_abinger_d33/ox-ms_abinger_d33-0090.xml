@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0090" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="47r">
+    <zone type="pagination"><line>79</line></zone>
+    <zone type="library"><line>47</line></zone>
+    
+    <zone type="main">
+        <line>is no longer, and what I most dreaded in</line>
+        <line>this world is come upon me. In the</line>
+        <line>despair of my heart I see what you</line>
+        <line>cannot conceal: you no longer love</line>
+        <line>me. I adjure you, my father, has not</line>
+        <line>an unnatural passion seized upon</line>
+        <line>your heart? Am I not the most mise-</line>
+        <line>rable worm that crawls? Do I not</line>
+        <line>embrace your knees, and you most</line>
+        <line>cruelly repulse me? I know it – I see</line>
+        <line>it – you hate me!"</line>
+        <milestone unit="tei:p"/><line rend="indent2">I was transported by violent</line>
+        <line>emotion, and rising from his feet, at</line>
+        <line>which I had thrown myself, I leant</line>
+        <line>against a tree, wildly raising my eyes</line>
+        <line>to heaven. He began to answer with</line>
+        <line>violence: "Yes, yes, I hate you! You</line>
+        <line>are my bane, my poison, my disgust!"</line>
+        <line><anchor xml:id="d33-0090.01"/> And then his manner changed, and</line>
+        <line>fixing his eyes on me with an expression</line>
+        <line>that convulsed every nerve and member</line>
+        <line>of my frame – "you are none of all</line>
+        <line>these; you are my light, my only one,</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0090.01">
+        <line>Oh! No," </line>
+    </zone>
+</surface>

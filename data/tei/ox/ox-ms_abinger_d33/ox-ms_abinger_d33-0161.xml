@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0161" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="84v">
+    <zone type="pagination"><line>150</line></zone>
+    
+    <zone type="main">
+        <line>felt the loss. The <del rend="strikethrough">spuret</del> spirit of existence</line>
+        <line>was dead within me; be not surprised</line>
+        <line>therefore that when it came I welcomed</line>
+        <line>not more gladly, or when it departed I</line>
+        <line>lamented not more bitterly the best gift</line>
+        <line>of heaven – a friend.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">The name of my friend was <del rend="strikethrough">Her</del>-</line>
+        <line><anchor xml:id="d33-0161.01"/><del rend="strikethrough">bert</del>. I will briefly relate his history</line>
+        <line>that you may judge how cold my</line>
+        <line>heart must have been not to be</line>
+        <line>warmed <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">by</add></mod> his eloquent words and tender</line>
+        <line>sympathy; and how he also being most</line>
+        <line>unhappy we were well fitted to <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add></mod> a</line>
+        <line>mutual consolation to each other,</line>
+        <line>if I had <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">not</add></mod> been hardened to stone by</line>
+        <line>the Medusa head of Misery. The</line>
+        <line>misfortunes of <del rend="strikethrough">Loe</del> <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> were</line>
+        <line>not of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> hearts core <del rend="strikethrough">lk</del> like mine; his</line>
+        <line>was a natural grief<del rend="strikethrough">;</del> <del rend="strikethrough">but</del> not to destroy</line>
+        <line>but purify the heart and from which</line>
+        <line>he might, when its shadow had passed</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0161.01">
+        <line>Woodville.</line>
+    </zone>
+</surface>

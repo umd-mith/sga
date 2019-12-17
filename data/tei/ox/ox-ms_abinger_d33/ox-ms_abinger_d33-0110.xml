@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0110" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="57r">
+    <zone type="pagination"><line>99</line></zone>
+    <zone type="library"><line>57</line></zone>
+    
+    <zone type="main">
+        <line>I am sure I should feel it even in</line>
+        <line>my grave. And I dare enforce this re-</line>
+        <line>quest by <del rend="strikethrough">telling</del> relating how <del rend="strikethrough">unknowing</del></line>
+        <line><del rend="strikethrough">I was of the</del> <del rend="strikethrough">w</del> <del rend="strikethrough">unwary</del> miserably</line>
+        <line>I was betrayed into this net of fiery</line>
+        <line>anguish and all my <del rend="strikethrough">endeavours</del></line>
+        <line>struggles to release myself: indeed if</line>
+        <line>your soul were less pure and bright</line>
+        <line>I would not attempt to exculpate my-</line>
+        <line>self to you; I should fear that if I led</line>
+        <line>you to regard me with less abhorrence</line>
+        <line>you might hate vice less: but in ad-</line>
+        <line>dressing you I feel as if I appealed to an</line>
+        <line>angelic judge. I cannot depart without</line>
+        <line>your forgiveness and I must endeavour</line>
+        <line>to gain it, or I must despair. I conjure</line>
+        <line>you therefore to listen to my words, and</line>
+        <line>if with the good guilt may be in any</line>
+        <line>degree extenuated by <del rend="strikethrough">l</del> sharp agony, and</line>
+        <line>remorse that rends the brain as mad-</line>
+        <line>ness perhaps you may <del rend="strikethrough">theng</del> think, though</line>
+        <line>I dare not, that I have some claim to</line>
+        
+    </zone>
+</surface>

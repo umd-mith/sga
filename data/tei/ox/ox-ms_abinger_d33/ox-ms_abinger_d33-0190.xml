@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0190" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="99r">
+    <zone type="pagination"><line>179</line></zone>
+    <zone type="library"><line>99</line></zone>
+    
+    <zone type="main">
+        <line>in faint terms and cannot give you at</line>
+        <line>the same time the tone and gesture that</line>
+        <line>animated them. Like a refreshing shower</line>
+        <line>on an arid soil they revived me, and</line>
+        <line>although <del rend="strikethrough">l</del> I still kept their cause secret</line>
+        <line>he led me <del rend="strikethrough">me</del> <del rend="strikethrough">to shape my griefs in</del></line>
+        <line><del rend="strikethrough">words and</del> to pour forth my bitter complaints</line>
+        <line>and to clothe my woe in words of gall and</line>
+        <line>fire. With all the energy of desperate</line>
+        <line>grief I told him how I had fallen at</line>
+        <line>once from bliss to misery; how that</line>
+        <line>for me now there was no joy, no</line>
+        <line>hope; that death however bitter would</line>
+        <line>be the welcome seal to all my</line>
+        <line>pangs; death the <del rend="strikethrough">sk</del> skeleton was to me</line>
+        <line>beautiful as love. I know not why but</line>
+        <line>I found it sweet to utter these words</line>
+        <line>to human ears; and though I <del rend="strikethrough">laughed</del></line>
+        <line><mod><del rend="strikethrough">with bitter derision at</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">derided</add></mod> all consolation</line>
+        <line>yet I was pleased to see it offered me</line>
+        <line>with gentleness and kindness. I listened</line>
+        <line>quietly, and when he paused would again</line>
+        <line>pour out my misery in expressions</line>
+        
+    </zone>
+</surface>

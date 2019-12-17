@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0197" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="103v">
+    <zone type="pagination"><line>186</line></zone>
+    
+    <zone type="main">
+        <line><add place="superlinear">X</add> <del rend="strikethrough">violent thunder storm came on</del></line>
+        <line><del rend="strikethrough">and</del> prevented him. I was alone the</line>
+        <line>whole evening. I had passed two whole</line>
+        <line>years alone unrepining, but now I was</line>
+        <line>miserable. He could not really care</line>
+        <line>for me, I thought, for if he did the</line>
+        <line>storm would rather have made him</line>
+        <line>come even if I <mod><del rend="strikethrough">did</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">had</add></mod> not expected him, than,</line>
+        <line>as it did, prevent a promised visit. He</line>
+        <line>would well know that this drear sky</line>
+        <line>and gloomy rain would load my spirit</line>
+        <line>almost to madness: if the weather had been</line>
+        <line>fine I should not have regretted his</line>
+        <line>absence as heavily as I necessarily must</line>
+        <line>shut up in this miserable cottage with</line>
+        <line>no companions but my own wretched</line>
+        <line>thoughts. If he were truly my friend he</line>
+        <line>would have calculated all this; and</line>
+        <line>let me now calculate this boasted</line>
+        <line>friendship, and <mod><del rend="strikethrough">see</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">discover</add></mod> <del rend="strikethrough">what</del> it’s <mod><del rend="strikethrough">w</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">real</add></mod> worth.</line>
+        <line>He got over his grief for Elinor, and</line>
+        <line>the country became dull to him,</line>
+        <line>so he was glad to find even me for</line>
+        <anchor xml:id="d33-0197.01"/>
+
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0197.01">
+        <line><add place="superlinear">X</add> violent and continual rain</line>
+    </zone>
+</surface>

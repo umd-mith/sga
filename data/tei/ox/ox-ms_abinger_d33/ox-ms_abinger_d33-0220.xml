@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0220" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="116r">
+    <zone type="pagination"><line>219</line></zone>
+    <zone type="library"><line>116</line></zone>
+    
+    <zone type="main">
+        <line>in whatever bower he sat expecting the</line>
+        <line>moment of our union, that his daugh</line>
+        <line>ter was come. Then the mark of</line>
+        <line>misery would have faded from my</line>
+        <line><del rend="strikethrough">forehead</del> brow, and I should raise my</line>
+        <line>eyes fearlessly to meet his, which ever</line>
+        <line>beamed with the soft lustre of innocent</line>
+        <line>love. When I reflected on the magic</line>
+        <line>look of those deep eyes I wept, but</line>
+        <line>gently, lest my sobs should disturb the</line>
+        <line>fairy scene.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">I was so entirely wrapt in this</line>
+        <line>reverie that I wandered on, taking</line>
+        <line>no heed of my steps until I actually</line>
+        <line>stooped down to gather a <del rend="strikethrough">flow</del> flower</line>
+        <line>for my wreath on that bleak plain</line>
+        <line>where no flower grew, when I awoke</line>
+        <line>from my day dream and found myself</line>
+        <line>I knew not where.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">The sun had set and the</line>
+        <line>roseate hue which the clouds had</line>
+        <line>caught from him in his descent had</line>
+        <line>nearly died away. A wind <del rend="strikethrough">spept</del> <add place="superlinear">swept</add> across</line>
+        
+    </zone>
+</surface>

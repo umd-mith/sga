@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0217" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="114v">
+    <zone type="pagination"><line>206</line></zone>
+    
+    <zone type="main">
+        <line>decrease the bitterness of your tears:</line>
+        <line>But if my friendship can make</line>
+        <line>you look on life with less disgust, be-</line>
+        <line>ware how you injure it with suspicion</line>
+        <line>Love is a delicate sprite and easily hurt</line>
+        <line>by rough jealousy. Guard, I entreat you,</line>
+        <line>a firm persuasion of my sincerity in</line>
+        <line>the inmost recesses of your heart <del rend="strikethrough">not</del></line>
+        <line><mod><del rend="strikethrough">to be</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">out of the reach</add> <del rend="strikethrough">my</del> <del rend="strikethrough">touched by</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">of</add></mod> the <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">casual</add></mod> winds that</line>
+        <line>may disturb its surface. Your temper is</line>
+        <line>made unequal by suffering, and the</line>
+        <line>tenor of your mind is, I fear, sometimes</line>
+        <line>shaken by unworthy <del rend="strikethrough">mi</del> causes; but</line>
+        <line>let your confidence in my sympathy</line>
+        <line>and love be deeper far, and incapable</line>
+        <line>of being <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">reached</add> <del rend="strikethrough">touched</del></mod> by these agitations that</line>
+        <line>come and go, and if they touch not</line>
+        <line>your affections leave you uninjured."</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">These were some of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville’s</add> <del rend="strikethrough">Herbert’s</del></mod> last</line>
+        <line>lessons. I wept as I listened to him; and</line>
+        <line>after we had taken an affectionate</line>
+        
+    </zone>
+</surface>

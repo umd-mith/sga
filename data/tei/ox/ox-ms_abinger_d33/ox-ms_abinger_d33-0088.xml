@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0088" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="46r">
+    <zone type="pagination"><line>77</line></zone>
+    <zone type="library"><line>46</line></zone>
+    
+    <zone type="main">
+        <line>tempt me, and kill me – Much happier</line>
+        <line>would be for you and for me if in your</line>
+        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0088.01"/>sity</add> <del rend="strikethrough">wild insanity</del></mod> you tore my heart from</line>
+        <line>my breast and tried to read <del rend="strikethrough">in it</del> its</line>
+        <line>secrets <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">in it</add></mod> as its life’s blood was dropping</line>
+        <line>from it. <del rend="strikethrough">That would be</del> <del rend="strikethrough">e</del> Thus you</line>
+        <line>may console me by reducing me to</line>
+        <line>nothing – but your words I cannot</line>
+        <line>bear; soon they <del rend="strikethrough">m</del> will make</line>
+        <line>me <del rend="strikethrough">quite</del> mad, quite mad, and then</line>
+        <line>I shall utter strange <del rend="strikethrough">thing</del> words, and</line>
+        <line>you will believe them, and we shall</line>
+        <line>be both lost for ever. I tell you</line>
+        <line>I am on the very verge of insanity,</line>
+        <line>Why, cruel girl, do you drive me on:</line>
+        <line>you will repent and I shall die."</line>
+        <milestone unit="tei:p"/><line rend="indent2">When I repeat his words I wonder</line>
+        <line>at my pertinacious folly; <del rend="strikethrough">but I was</del></line>
+        <line><del rend="strikethrough">hurried on by</del> <del rend="strikethrough">the</del> I hardly know</line>
+        <line>what feelings <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><del rend="strikethrough">impelled</del></add> <del rend="strikethrough">hurried</del> <add place="superlinear">resistessly impelled</add></mod> me <del rend="strikethrough">on</del>. I be-</line>
+        <line>lieve it was that coming out</line>
+        <line>with a determination not to be repulsed</line>
+        <line>I went right <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">forward</add> <del rend="strikethrough">on</del></mod> to my object without</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0088.01">
+        <line>frantic curio</line>
+    </zone>
+</surface>

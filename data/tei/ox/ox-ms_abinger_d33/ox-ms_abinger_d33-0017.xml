@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0017" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="8v">
+    <zone type="pagination">6<line/></zone>
+    <zone type="pagination">8v<line/></zone>
+
+    <zone type="main">
+        <milestone unit="tei:p"/>
+        <del rend="strikethrough">W</del>
+        <line rend="indent2">Under the influence of these circum.</line>
+        <line>stances his passions found <mod><add place="sublinear"><metamark function="insert">^</metamark></add>
+            <add place="superlinear">a</add><del rend="strikethrough">a</del></mod> deep soil wherein</line>
+        <line>they might strike their roots and flourish either</line>
+        <line>as flowers or weeds as was their nature. By</line>
+        <line>being always allowed to act for himself his</line>
+        <line>character became strongly and early marked</line>
+        <line>and exhibited a various surface on which</line>
+        <line>a quick sighted observer might see the</line>
+        <line>seeds of virtues and of misfortunes. His careless</line>
+        <line>extravagance, which made him squan</line>
+        <line>-der immense sums <del rend="strikethrough">to go</del> of money to</line>
+        <line>satisfy passing whims, which from their</line>
+        <line>apparent energy he dignified with the</line>
+        <line>name of passions, often displayed itself in</line>
+        <line>unbounded generosity. Yet while he earn</line>
+        <line>-estly <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add
+                place="sublinear"><metamark function="insert">^</metamark></add><add
+                place="superlinear">occupied himself</add></mod> about the wants of others his own</line>
+        <line>desires were gratified to their fullest</line>
+        <line>extent. He gave his money, but none</line>
+        <line>of his own wishes were <del rend="strikethrough">sat</del> sacrifised</line>
+        <line>to his gifts; he gave his time, which</line>
+        <line>he did not value, and his affections</line>
+        <line>which he was happy inany manner to</line>
+        <line>have called into action.</line>
+    </zone>
+</surface>

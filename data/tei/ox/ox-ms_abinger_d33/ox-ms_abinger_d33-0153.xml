@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0153" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="80v">
+    <zone type="pagination"><line>142</line></zone>
+    
+    <zone type="main">
+        <line>were simple and very innocent; I fed</line>
+        <line>the birds who built on the pines or</line>
+        <line>among the ivy that covered the wall of</line>
+        <line>my little garden, and they soon knew</line>
+        <line>me: the bolder ones pecked the crumbs</line>
+        <line>from my hands and perched on my</line>
+        <line>fingers to sing their thankfulness.</line>
+        <line>When I had lived here some time</line>
+        <line>other animals visited me and <del rend="strikethrough">f</del> a</line>
+        <line>fox came every day for a portion of</line>
+        <line>food appropriated for him &amp; would</line>
+        <line>suffer me to pat his head. – I had</line>
+        <line>besides many books and a harp with</line>
+        <line>which when despairing I could soothe</line>
+        <line>my spirits, and raise myself to sym-</line>
+        <line>pathy and love.</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">Love! What had I to love? Oh</line>
+        <line>many things: there was the moon</line>
+        <line>shine, and the bright stars; the breezes</line>
+        <line>and the refreshing rains; there was the</line>
+        <line>whole earth and the sky that covers it.</line>
+        <line>All lovely forms that visited my imagi</line>
+        
+    </zone>
+</surface>

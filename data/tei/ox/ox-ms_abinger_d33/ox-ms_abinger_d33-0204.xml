@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+    xml:id="ox-ms_abinger_d33-0204" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="108r">
+    <zone type="pagination"><line>193</line></zone>
+    <zone type="library"><line>108</line></zone>
+    
+    <zone type="main">
+        <line>yet earnest look of deprecation and</line>
+        <line>wonder even before he spoke wrought</line>
+        <line>a change in my high strained feelings</line>
+        <line>taking from me all the sterness of despair</line>
+        <line>and filling me only with the <del rend="strikethrough">gentlest</del></line>
+        <line><anchor xml:id="d33-0204.01"/>grief. I saw his eyes humid also as he</line>
+        <line>took both my hands in his; and sitting</line>
+        <line>down near me, he said: "</line>
+        <milestone unit="tei:p"/>
+        <line rend="indent2">"This is a sad deed to which you</line>
+        <line>would lead me<del rend="strikethrough">,</del> <mod><del rend="strikethrough">dearing</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">dearest</add></mod> friend, and your</line>
+        <line>woe must indeed be deep that could fill</line>
+        <line>you with these unhappy thoughts. You</line>
+        <line>long for death and yet you fear it</line>
+        <line>and wish me to be your companion.</line>
+        <line>But I have less courage than you</line>
+        <line>and even thus accompanied I dare not</line>
+        <line>die. Listen to me, and then <del rend="strikethrough">fl</del> reflect</line>
+        <line>if you ought to win me to your project,</line>
+        <line>even if with the overbearing eloquence</line>
+        <line>of despair <del rend="strikethrough">w</del> you could make black</line>
+        <line>death so inviting that the fair heaven</line>
+        <line>should appear darkness: Listen I</line>
+        <line>entreat you to the words of one who</line>
+        
+    </zone>
+    <zone type="left_margin" corresp="#d33-0204.01">
+        <line>softest</line>
+    </zone>
+</surface>
