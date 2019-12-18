@@ -324,10 +324,9 @@
                         </msItem>
                     </msContents>
                     <physDesc>
-                        <!-- <handDesc>
+                         <handDesc>
                             <handNote scope="major" xml:id="mws"><persName>Mary Shelley</persName></handNote>
-                            <handNote scope="minor" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
-                            </handDesc> -->
+                        </handDesc> 
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -339,7 +338,7 @@
     <sourceDoc>
         
         
-        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0001.xml" />
+        <!--<xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0001.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0002.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0003.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0004.xml" />
@@ -350,7 +349,7 @@
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0009.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0010.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0011.xml" />
-        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0012.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0012.xml" />-->
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0013.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0014.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0015.xml" />
@@ -576,7 +575,7 @@
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0235.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0236.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0237.xml" />
-        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0238.xml" />
+        <!--<xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0238.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0239.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0240.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0241.xml" />
@@ -605,6 +604,6 @@
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0264.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0265.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0266.xml" />
-        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0267.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0267.xml" />-->
     </sourceDoc>
 </TEI>
