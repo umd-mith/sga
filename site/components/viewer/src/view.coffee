@@ -16,6 +16,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       manifestUrl = config.manifest
       searchService = config.searchService
+      mode = ["Image", "Text"]
+
+      if config.mode
+        mode = config.mode
 
       # Instantiate manifests collection and view
       manifests = SGASharedCanvas.Data.Manifests
@@ -25,6 +29,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Add manifest from DOM. This triggers data collection and rendering.
       manifest = manifests.add
         url: manifestUrl
+        mode: mode
       if manifestUrl == "#local"
         manifest.parse window.manifest
         manifest.sync()
@@ -105,6 +110,11 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       # Add views for child collections right away
       @canvasesView = new CanvasesView collection: @model.canvasesData
 
+      # if the viewer is initalized in a certain mode, filter views
+      mode = SGASharedCanvas.Data.Manifests.first().get 'mode'
+      if mode
+        @canvasesView.filter = mode
+
       # When a new canvas is requested through a Router, fetch the right canvas data.
       @listenTo SGASharedCanvas.Data.Manifests, 'page', (n, paras) ->
         # First of all, destroy any canvas already loaded. We do this for two reasons:
@@ -119,7 +129,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           if paras.mode?
 
             filter = []
-
             switch paras.mode
               when "img" then filter.push "Image"
               when "std", "rdg", "xml" then filter.push "Image", "Text"

@@ -408,7 +408,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
 
             # filter annotations and store only those relevant to the current canvas
             # SGA
-      	    if graph[target]?
+            if graph[target]?
               if graph[target].hasOwnProperty("full")
                 if graph[target]["full"] in sources
                   annotation = new Annotation

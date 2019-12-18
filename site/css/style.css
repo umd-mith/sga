@@ -290,6 +290,8 @@ h4.group-title { margin: 0 0 5px 0; }
 .view p { opacity: 0; transition: all 0.2s ease-in-out; padding: 0px; }
 .view:hover .mask { opacity: 1; }
 .view:hover h6, .view:hover p { opacity: 1; }
+.view .fixedmask { opacity: 1; }
+.view .fixedmask * { opacity: 1; }
 .pg-s .red { color: #C00; }
 .pg-s .yel { color: #FC0; }
 .pg-s .grn { color: #390; }
