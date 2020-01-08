@@ -10,7 +10,7 @@
                 <title type="sub">An electronic transcription</title>
                 <respStmt xml:id="md_editor">
                     <resp>Metadata editor</resp>
-                    <name xml:id="RV">Luca Guariento</name>
+                    <name xml:id="LG">Luca Guariento</name>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -338,7 +338,7 @@
     <sourceDoc>
         
         
-        <!--<xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0001.xml" />
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0001.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0002.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0003.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0004.xml" />
@@ -349,7 +349,7 @@
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0009.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0010.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0011.xml" />
-        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0012.xml" />-->
+        <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0012.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0013.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0014.xml" />
         <xi:include href="ox-ms_abinger_d33/ox-ms_abinger_d33-0015.xml" />
