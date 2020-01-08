@@ -1113,7 +1113,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         id = @model.get("@id")
         img = id.replace(/^.*?\/([^\/]+.jp2)$/, "$1")
 
-        full_url = service + img
+        # full_url = service + img
+        full_url = img
         static_fallback_full_url = static_fallback_service + id.replace(/^.*images\/(.*?)\.jp2/, "$1")
         # ex: http://192.168.1.219/ox/ms_abinger_c56/ms_abinger_c56-0001
 
@@ -1146,8 +1147,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           # Check that URL is reacheable, otherwise fall back to our static tiles.
           if !SGASharedCanvas.imageTrouble
             $.ajax
-              url: full_url,
-              type:     'GET',
+              url: full_url + '/info.json',
+              type: 'GET',
               complete: (xhr) ->
                 if xhr.status == 200
                   scaleFactors.push 32
