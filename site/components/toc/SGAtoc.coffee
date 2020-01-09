@@ -224,24 +224,24 @@ window.SGAranges = {}
             # At the first image, check that URL is reacheable, otherwise fall back to our static tiles.
             if index == 0
               $.ajax
-                url: full_url,
-                type:     'GET',
+                url: id_graph[i_url]["@id"] + "/info.json",
+                type: 'GET',
                 async: false,
-                complete: (xhr) =>
+                complete: (xhr) =>                
                   if xhr.status != 200
                     SGAranges._imgTrouble = true
                     # Figure out available sizes
                     img_url = static_fallback_full_url + "/full/"+thumbsizes[1]+",/0/default.jpg"
                     _process(img_url)
                   else
-                    img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
+                    img_url = id_graph[i_url]["@id"] + "/full/!100,215/0/default.jpg"
                     _process(img_url)
 
             else if SGAranges._imgTrouble
               img_url = static_fallback_full_url + "/full/"+thumbsizes[1]+",/0/default.jpg"
               _process(img_url)
             else
-              img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
+              img_url = id_graph[i_url]["@id"] + "/full/!100,215/0/default.jpg"
               _process(img_url)
           else
             img_url = i_url
