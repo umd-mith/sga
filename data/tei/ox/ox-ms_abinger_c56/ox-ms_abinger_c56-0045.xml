@@ -7,7 +7,7 @@
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0045.jp2"/>
   <zone type="pagination" rend="bordered"><line>75</line></zone>
   <zone type="library"><line>21</line></zone>
-  
+
   <zone type="main">
     <line rend="center"><milestone unit="tei:head" spanTo="#c56-0045.04"/>Chapter 7<hi rend="sup"><hi rend="underline">th</hi></hi><anchor xml:id="c56-0045.04"/></line>
     <milestone unit="tei:p"/>
@@ -64,7 +64,8 @@
       </mod> skin scarcely covered the work of</line>
     <line>muscles and arteries beneath; his hair</line>
     <line>was<mod>
-      <add place="sublinear"><metamark function="displacement" xml:id="c56-0045.03">^</metamark></add>
+      <add place="sublinear"><metamark function="displacement">^</metamark></add>
+      <anchor xml:id="c56-0045.03"/>
         </mod> flowing and his teeth of a pearly white</line>
     <line>ness but these luxurianc<add place="intralinear">i</add>es only <del rend="strikethrough"
         >fomed</del></line>

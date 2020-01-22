@@ -44,7 +44,7 @@
     <line>more beautiful &#x26; verdant appear</line>
     <line>ance &#x2013; Ruined castles <mod>
         <del rend="strikethrough">on</del>
-        <add place="sublinear">^</add>
+        <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear" hand="#pbs"><mod>
             <del rend="strikethrough">built</del>
             <add place="superlinear">hanging</add>

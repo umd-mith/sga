@@ -52,8 +52,9 @@
     <line>tion I can only say what our visitors</line>
     <line>say a thousand times a day&#x2013;'He is too</line>
     <line>pretty for a boy'.<mod>
-        <add place="superlinear"><metamark function="displacement" xml:id="c56-0063.03"
+        <add place="superlinear"><metamark function="displacement"
           >X</metamark></add>
+        <anchor xml:id="c56-0063.03"/>
       </mod></line>
     <milestone unit="tei:p"/>
     <line rend="indent1"><del rend="strikethrough">Miss Mansfeld</del> Now, dear
@@ -74,7 +75,7 @@
     <line>a pretty little</line>
     <line>girl of five years old <del rend="strikethrough">to</del></line>
     <anchor xml:id="c56-0063.04"/>
-    <!-- Here there is a line to differentiate between left margin zone and 
+    <!-- Here there is a line to differentiate between left margin zone and
       main zone since the "years old to" crosses into the main zone -->
   </zone>
 </surface>

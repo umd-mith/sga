@@ -5,7 +5,7 @@
   xml:id="ox-ms_abinger_c56-0031" ulx="0" uly="0" lrx="5364" lry="7104"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="14r" partOf="#ox-frankenstein_volume_i">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0031.jp2"/>
-  
+
   <zone type="pagination" rend="bordered"><line>61</line></zone>
   <zone type="library"><line>14</line></zone>
   <zone type="main">
@@ -45,7 +45,8 @@
       </mod> than an intrinsic</line>
     <line>love for the science itself. But this</line>
     <line><mod>
-      <add place="intralinear"><metamark function="displacement" xml:id="c56-0031.03">X</metamark></add>
+      <add place="intralinear"><metamark function="displacement">X</metamark></add>
+      <anchor xml:id="c56-0031.03"/>
         <del rend="strikethrough">was</del></mod> only in the first steps towards</line> the <line>knowledge; <mod>
         <del rend="strikethrough">as</del>
         <add place="superlinear" hand="#pbs">the more fully</add>

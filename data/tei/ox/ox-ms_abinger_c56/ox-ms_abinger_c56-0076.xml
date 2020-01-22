@@ -16,8 +16,8 @@
       </mod>&#x26; accuses herself</line>
     <line><del rend="strikethrough">of all how u</del>
       <del rend="strikethrough">so</del> unjustly <mod>
-        <add place="sublinear"><metamark function="displacement" xml:id="c56-0076.01"
-            >^</metamark></add> <del rend="strikethrough">and</del></mod> yet her words</line>
+        <add place="sublinear"><metamark function="displacement"
+            >^</metamark></add><anchor xml:id="c56-0076.01"/> <del rend="strikethrough">and</del></mod> yet her words</line>
     <line><add place="interlinear" hand="#pbs" corresp="#c56-0076.01"><del rend="strikethrough">of th</del> as the cause of his death&#x2014;</add></line>
     <line>pierce my heart. We are all unhappy</line>
     <line>but <del rend="strikethrough">that</del> will not that be an additio</line>
@@ -68,5 +68,5 @@
     <line rend="indent1">"My dear Frankenstien," exclaimed</line>
     <line><del rend="strikethrough">hen</del> Henry when he saw me weep with</line>
   </zone>
-  
+
 </surface>

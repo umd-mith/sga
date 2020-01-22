@@ -17,7 +17,7 @@
     <line>how Cornelius Agrippa went on<mod>
         <add place="intralinear" hand="#pbs">;</add>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
-        <anchor xml:id="c-56.0032.01"/>
+        <anchor xml:id="c56-0032.01"/>
       </mod> Two</line>
     <line>years passed in this manner during</line>
     <line>which I paid no visit to Geneva, but</line>
@@ -51,15 +51,16 @@
       </mod> one</line>
     <line><mod>
         <del rend="strikethrough">thing</del>
-        <add place="superlinear" hand="#pbs">object </add><anchor xml:id="c-56.0032.03"/>
+        <add place="superlinear" hand="#pbs">object </add>
       </mod> and <add place="superlinear" hand="#pbs">was</add> wra<mod>
         <del rend="overwritten"><unclear unit="chars" extent="2"/></del>
         <add place="intralinear" hand="#pbs">pt</add>
       </mod> up <del rend="strikethrough">as I was</del> in this <add place="intralinear"
         hand="#pbs">sole</add></line>
+    <anchor xml:id="c56-0032.03"/>
     <line><del rend="strikethrough">I</del> improved so rapidly that at the end</line>
     <line>of the two years I made <mod spanTo="#c56-0032.06"/><del rend="strikethrough"
-        next="#c-56.0032.07">one or two</del>
+        next="#c56-0032.07">one or two</del>
       <add place="intralinear" hand="#pbs">some</add></line>
     <line><del rend="strikethrough" xml:id="c56-0032.07">trifling</del><anchor xml:id="c56-0032.06"
       /> discoveries in the improvement</line>
@@ -70,28 +71,28 @@
     <line>cured me great esteem and admiration</line>
     <line>at the university. When I arrived at</line>
     <line>this <add place="sublinear"><metamark function="insert">^</metamark></add>point, <anchor
-          xml:id="c-56.0032.04"/><del rend="strikethrough">that</del> m<mod>
+          xml:id="c56-0032.04"/><del rend="strikethrough">that</del> m<mod>
         <del rend="overwritten"><unclear unit="chars" extent="1"/></del>
         <add place="intralinear">y</add>
       </mod> residence <del rend="strikethrough">at In</del></line>
   </zone>
-  <zone type="left_margin" corresp="#c-56.0032.01">
-    <addSpan spanTo="#c-56.0032.02" hand="#pbs"/>
+  <zone type="left_margin" corresp="#c56-0032.01">
+    <addSpan spanTo="#c56-0032.02" hand="#pbs"/>
     <line>while M. Waldham</line>
     <line>expressed the most</line>
     <line>heartfelt exultation</line>
     <line>in my progress.</line>
-    <anchor xml:id="c-56.0032.02"/>
+    <anchor xml:id="c56-0032.02"/>
   </zone>
-  <zone type="left_margin" corresp="#c-56.0032.03">
+  <zone type="left_margin" corresp="#c56-0032.03">
     <line><add hand="#pbs">pursuit</add></line>
   </zone>
-  <zone type="left_margin" corresp="#c-56.0032.04">
-    <addSpan spanTo="#c-56.0032.05" hand="#pbs"/>
+  <zone type="left_margin" corresp="#c56-0032.04">
+    <addSpan spanTo="#c56-0032.05" hand="#pbs"/>
     <line>and ha<mod xml:space="preserve"><del rend="overwritten">v</del><add place="intralinear">d</add><del rend="unmarked">ng</del></mod> learned</line>
     <line>all the professors</line>
     <line>at Ingolstadt were</line>
     <line>qualified to teach</line>
-    <anchor xml:id="c-56.0032.05"/>
+    <anchor xml:id="c56-0032.05"/>
   </zone>
 </surface>

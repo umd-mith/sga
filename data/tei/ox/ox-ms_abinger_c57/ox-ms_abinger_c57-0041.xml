@@ -55,8 +55,8 @@
         <add place="superlinear">related</add>
       </mod>
       <del rend="strikethrough"><unclear reason="illegible" unit="chars" extent="1"/>i</del> in
-        them<add place="sublinear"><metamark function="displacement" xml:id="c57-0041.02"
-          >^</metamark></add>
+        them<add place="sublinear"><metamark function="displacement"
+          >^</metamark></add><anchor xml:id="c57-0041.02"/>
       <mod spanTo="#c57-0041.04"/><del rend="strikethrough">&amp; every</del><add
         place="superlinear" hand="#pbs">the whole detail of that</add>
       <del rend="unmarked">disgus</del></line>
@@ -69,7 +69,7 @@
     <line>the minutest description <del rend="strikethrough"><add place="superlinear">is
         given</add></del> of my</line>
     <line>odious &amp; loathsome person.<add hand="#pbs" place="superlinear"> is <metamark
-          function="displacement" xml:id="c57-0041.05">X</metamark></add>. I</line>
+          function="displacement">X</metamark></add><anchor xml:id="c57-0041.05"/>. I</line>
     <line>sickened as I read &#x2013; <del rend="strikethrough">the papers.</del>
       <del rend="strikethrough">One</del></line>
     <line>Hateful day when I received life, I</line>
@@ -107,7 +107,7 @@
   <zone type="left_margin" corresp="#c57-0041.08">
     <add>the characters in </add>
   </zone>
-  
+
   <zone type="left_margin" corresp="#c57-0041.02">
     <addSpan spanTo="#c57-0041.03" hand="#pbs"/>
     <line>

@@ -30,7 +30,8 @@
         For, although</add></line>
     <line>was a great dissimilitude in our</line>
     <line>characters.<mod>
-        <add hand="#pbs"><metamark function="displacement" xml:id="c56-0011.09">X</metamark></add>
+        <add hand="#pbs"><metamark function="displacement">X</metamark></add>
+        <anchor xml:id="c56-0011.09"/>
       </mod> I was more calm and phi</line>
     <line>losphical than my companion</line>
     <line>Yet I was not <del rend="strikethrough">n</del> so mild or yielding.</line>
@@ -46,8 +47,8 @@
     <line>were studying old books of chemistry</line>
     <line>and natural magic those of Elizabeth were</line>
     <line>dra wing &#38; music.<space unit="char" extent="3"/><anchor xml:id="c56-0011.12"/><add
-        place="superlinear" hand="#pbs"><metamark function="displacement" xml:id="c56-0011.13"
-          >X</metamark></add><anchor xml:id="c56-0011.11"/></line>
+        place="superlinear" hand="#pbs"><metamark function="displacement"
+          >X</metamark></add><anchor xml:id="c56-0011.13"/><anchor xml:id="c56-0011.11"/></line>
     <milestone unit="tei:p"/>
     <line rend="indent1"><del rend="strikethrough" instant="true">When I</del>
       <del rend="strikethrough" instant="true">I had</del> My brothers were consi</line>
@@ -89,11 +90,12 @@
   <zone type="left_margin" ulx="0" uly="46" lrx="1289" lry="687"
   corresp="#c56-0011.04">
     <addSpan spanTo="#c56-0011.05" hand="#pbs"/>
-    <metamark function="displacement" spanTo="#c56-0011.06" xml:id="c56-0011.07"/>
+    <metamark function="displacement" spanTo="#c56-0011.06"/>
     <line rend="right">X</line>
     <line rend="right">X</line>
     <anchor xml:id="c56-0011.06"/>
     <anchor xml:id="c56-0011.05"/>
+    <anchor xml:id="c56-0011.07"/>
   </zone>
 
   <zone type="left_margin" corresp="#c56-0011.09" ulx="0" uly="811" lrx="1289" lry="1804">
