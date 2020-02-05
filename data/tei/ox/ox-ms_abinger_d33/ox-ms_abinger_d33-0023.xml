@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/54574198-8019-443b-8910-507c67006c40"/>
     <zone type="pagination"><line>12</line></zone>
 
-    <line>infant vows.</line>
+    <zone type="main"><line>infant vows.</line>
     <milestone unit="tei:p"/>
     <line rend="indent2">But they became every day more</line>
     <line>ardent and tender. It was a passion</line>
@@ -34,9 +34,5 @@
     <line>on her own integrity and a belief in</line>
     <line>that of others. She had from her birth lived</line>
     <line>a retired life. She had lost her mother when</line>
-    <line>very young, but her father had devoted him</line>
-    
-    <zone type="main">
-        
-    </zone>
+    <line>very young, but her father had devoted him</line></zone>
 </surface>

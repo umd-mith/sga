@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0036" partOf="#ox-ms_shelley_e2" mith:folio="17v" mith:shelfmark="MS. Shelley e. 2">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e2/ms_shelley_e2-0036.jp2"/>
+  uly="0" lrx="5410" lry="6872" xml:id="ox-ms_shelley_e2-0036" partOf="#ox-ms_shelley_e2" mith:folio="17v" mith:shelfmark="MS. Shelley e. 2">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/0a9afdcb-75a7-44eb-8ab9-18bc7cdd4b11"/>
   <zone type="main">
     <!-- Check to see if this page is meant to be displaced somewhere else -->
     <line rend="center"><milestone unit="tei:speaker" spanTo="#e2-0036.01"/>5<hi rend="sup">th</hi> Spirit

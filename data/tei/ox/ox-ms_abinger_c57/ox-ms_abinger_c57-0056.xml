@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c57-0056" ulx="0" uly="0" lrx="5138" lry="7032"
+  xml:id="ox-ms_abinger_c57-0056" ulx="0" uly="0" lrx="5138" lry="6832"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="28v" partOf="#ox-frankenstein_volume_ii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0056.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/7c3a1c51-7929-4e5a-867b-69cdb2d55e5d"/>
   <zone type="pagination" rend="bordered"><line>81</line></zone>
   <zone type="main">
     <line>exquisite beauty of the Arabian &#x2014; these thoughts</line>

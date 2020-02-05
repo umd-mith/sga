@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0"
-  lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0021" partOf="#ox-ms_shelley_e3" mith:folio="8r" mith:shelfmark="MS. Shelley e. 3">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e3/ms_shelley_e3-0021.jp2"/>
+  lrx="5406" lry="6852" xml:id="ox-ms_shelley_e3-0021" partOf="#ox-ms_shelley_e3" mith:folio="8r" mith:shelfmark="MS. Shelley e. 3">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/4ab1f6bf-fe2a-467f-a14c-ee61860001c4"/>
   <zone type="library"><line>8</line></zone>
   <zone type="main">
     <space dim="vertical" unit="lines" extent="11"/>

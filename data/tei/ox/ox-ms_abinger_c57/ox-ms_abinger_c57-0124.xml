@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c57-0124" ulx="0" uly="0" lrx="5138" lry="7032"
+  xml:id="ox-ms_abinger_c57-0124" ulx="0" uly="0" lrx="5138" lry="6832"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="62v" partOf="#ox-frankenstein_volume_ii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0124.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/f33fc3c7-e8e8-4d2d-a730-2c55282e196f"/>
   <zone type="pagination"><line>140</line></zone>
   <zone type="main">
     <line><anchor xml:id="c57-0124.01"/>and my cheeks livid like those of death I was</line>

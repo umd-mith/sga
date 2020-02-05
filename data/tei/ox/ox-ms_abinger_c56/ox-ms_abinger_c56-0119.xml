@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c56-0119" ulx="0" uly="0" lrx="5364" lry="7104"
+  xml:id="ox-ms_abinger_c56-0119" ulx="0" uly="0" lrx="5364" lry="6904"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="57r" partOf="#ox-frankenstein_volume_i">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0119.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/3d6aaf52-0ef0-48bc-a185-59b76b51a03a"/>
   <zone type="pagination" rend="bordered"><line>149</line></zone>
   <zone type="library"><line>57</line></zone>
   

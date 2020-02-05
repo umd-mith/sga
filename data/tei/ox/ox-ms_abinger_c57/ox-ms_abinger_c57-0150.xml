@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c57-0150" ulx="0" uly="0" lrx="5138" lry="7032"
+  xml:id="ox-ms_abinger_c57-0150" ulx="0" uly="0" lrx="5138" lry="6832"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="75v" partOf="#ox-frankenstein_volume_ii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0150.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d842d873-24fc-412d-abe0-9a79ebd4d8e1"/>
   <zone type="pagination" rend="bordered"><line>66</line></zone>
   <zone type="main">
     <line>the shutters had been thrown back and with</line>

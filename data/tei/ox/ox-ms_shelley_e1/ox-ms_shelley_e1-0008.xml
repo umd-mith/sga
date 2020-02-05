@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0008" partOf="#ox-ms_shelley_e1"   mith:folio="3v" mith:shelfmark="MS. Shelley e. 1">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e1/ms_shelley_e1-0008.jp2"/>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0" uly="0" lrx="5406" lry="6876" xml:id="ox-ms_shelley_e1-0008" partOf="#ox-ms_shelley_e1"   mith:folio="3v" mith:shelfmark="MS. Shelley e. 1">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/06c3b3ca-a0af-401d-ad55-4c1975240613"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0008.01"/>
     <line rend="center">Ione</line>

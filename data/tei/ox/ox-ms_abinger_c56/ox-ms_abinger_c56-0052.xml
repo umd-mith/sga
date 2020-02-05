@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c56-0052" ulx="0" uly="0" lrx="5364" lry="7104"
+  xml:id="ox-ms_abinger_c56-0052" ulx="0" uly="0" lrx="5364" lry="6904"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="24v" partOf="#ox-frankenstein_volume_i">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0052.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/69b1f35c-a08d-46f9-98b8-6879ce26a496"/>
   <zone type="pagination" rend="bordered"><line>82</line></zone>
   <zone type="main">
     <line>"see<add place="intralinear" hand="#pbs">;</add> but I hope<add place="intralinear"

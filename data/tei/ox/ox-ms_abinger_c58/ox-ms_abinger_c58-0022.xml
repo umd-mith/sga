@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c58-0022" ulx="0" uly="0" lrx="5408" lry="6680"
+  xml:id="ox-ms_abinger_c58-0022" ulx="0" uly="0" lrx="5408" lry="6480"
   mith:shelfmark="MS. Abinger c. 58" mith:folio="11v" partOf="#ox-frankenstein_volume_iii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c58/ms_abinger_c58-0022.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/23dc2bbd-0b45-4718-ba72-a9e2be22c22c"/>
   <zone type="pagination"><line>12<mod><del rend="overwritten">2</del><add place="intralinear">4</add></mod></line></zone>
   <zone type="main">
     <line>dents that followed this last overwhelming event.</line>
