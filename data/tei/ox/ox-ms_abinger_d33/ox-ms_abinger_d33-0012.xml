@@ -2,10 +2,10 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-    xml:id="ox-ms_abinger_d33-0012" ulx="0" uly="0" lrx="5368" lry="7104"
+    xml:id="ox-ms_abinger_d33-0012" ulx="0" uly="0" lrx="6368" lry="6389"
     mith:shelfmark="MS. Abinger d. 33" mith:folio="6r">
 <zone type="pagination"><line>12</line></zone>
-    
+
     <line>infant vows.</line>
     <milestone unit="tei:p"/>
     <line rend="indent2">But they became every day more</line>
@@ -24,7 +24,7 @@
     <line>as he could muster courage <del rend="strikethrough">to</del> sufficient</line>
     <line>to meet those difficulties he was determined</line>
     <line>to surmount.</line>
-    
+
     <milestone unit="tei:p"/>
     <line rend="indent2">Diana was fully worthy of his deepest</line>
     <line>affection. There were few who could boast</line>
@@ -34,8 +34,8 @@
     <line>that of others. She had from her birth lived</line>
     <line>a retired life. She had lost her mother when</line>
     <line>very young, but her father had devoted him</line>
-    
+
     <zone type="main">
-        
+
     </zone>
 </surface>

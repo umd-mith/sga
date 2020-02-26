@@ -158,7 +158,7 @@ window.SGAranges = {}
       @$el.remove()
       @
 
-  SGAranges.processCanvas = (canv, id_graph, metadata, pos=null) =>
+  SGAranges.processCanvas = (canv, id_graph, metadata, pos=null, fixedmask=false) =>
 
       canvas = canv["@id"]
       c = new SGAranges.Canvas()
@@ -185,13 +185,13 @@ window.SGAranges = {}
         transcription = "grn"
         if i_fname.includes("forster")
           transcription = "red"
-
         c.set
           "id"       : canvas_safe_id
           "label"    : canv.label
           "position" : c_pos
           "scUrl"    : sc_url + "#/p" + c_pos
           "imgUrl"   : img_url
+          "fixedmask": fixedmask
           "status"   : {t: transcription, m: "grn"}
 
       for img_id, index in metadata.images
@@ -224,24 +224,24 @@ window.SGAranges = {}
             # At the first image, check that URL is reacheable, otherwise fall back to our static tiles.
             if index == 0
               $.ajax
-                url: full_url,
-                type:     'GET',
+                url: id_graph[i_url]["@id"] + "/info.json",
+                type: 'GET',
                 async: false,
-                complete: (xhr) =>
+                complete: (xhr) =>                
                   if xhr.status != 200
                     SGAranges._imgTrouble = true
                     # Figure out available sizes
                     img_url = static_fallback_full_url + "/full/"+thumbsizes[1]+",/0/default.jpg"
                     _process(img_url)
                   else
-                    img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
+                    img_url = id_graph[i_url]["@id"] + "/full/!100,215/0/default.jpg"
                     _process(img_url)
 
             else if SGAranges._imgTrouble
               img_url = static_fallback_full_url + "/full/"+thumbsizes[1]+",/0/default.jpg"
               _process(img_url)
             else
-              img_url = id_graph[i_url].service + i_fname_prefixed + "/full/!100,215/0/default.jpg"
+              img_url = id_graph[i_url]["@id"] + "/full/!100,215/0/default.jpg"
               _process(img_url)
           else
             img_url = i_url
@@ -250,6 +250,7 @@ window.SGAranges = {}
 
   SGAranges.processMetadata = (data, url, attributes, el, template) =>
       flat = attributes.get("flat")
+      fixedmask = attributes.get("fixedmask")
       id_graph = {}
       for node in data["@graph"]
         id_graph[node["@id"]] = node if node["@id"]?
@@ -300,7 +301,7 @@ window.SGAranges = {}
 
         for canvas_id in metadata.canvases
           canvas = id_graph[canvas_id]
-          SGAranges.processCanvas canvas, id_graph, metadata
+          SGAranges.processCanvas canvas, id_graph, metadata, null, fixedmask
 
         @clv.render '#' + work_safe_id + ' .panel-body'
 
@@ -320,7 +321,7 @@ window.SGAranges = {}
           for canvas_id in canvases
             cur_pos += 1
             canvas = id_graph[canvas_id]
-            SGAranges.processCanvas canvas, id_graph, metadata
+            SGAranges.processCanvas canvas, id_graph, metadata, null, fixedmask
 
           @clv.render '#' + range_safe_id + ' .row'
 
@@ -334,6 +335,7 @@ window.SGAranges = {}
         id : w.title
         url: "#{base_url}#{w.title}/Manifest-index.jsonld"
         flat: w.flat
+        fixedmask: w.fixedmask
         physical: w.physical
         linear: w.linear
 

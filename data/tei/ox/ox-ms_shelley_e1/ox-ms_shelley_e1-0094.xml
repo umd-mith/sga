@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5406" lry="7276" xml:id="ox-ms_shelley_e1-0094" partOf="#ox-ms_shelley_e1"   mith:folio="46v" mith:shelfmark="MS. Shelley e. 1">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e1/ms_shelley_e1-0094.jp2"/>
+  uly="0" lrx="5406" lry="6876" xml:id="ox-ms_shelley_e1-0094" partOf="#ox-ms_shelley_e1"   mith:folio="46v" mith:shelfmark="MS. Shelley e. 1">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/61c150c8-a460-42a2-a35c-de7ad54ac1a8"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e1-0094.01"/>
     <line rend="center">3.<hi rend="sup">d</hi> Fury</line>

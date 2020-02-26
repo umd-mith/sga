@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c56-0064" ulx="0" uly="0" lrx="5364" lry="7104"
+  xml:id="ox-ms_abinger_c56-0064" ulx="0" uly="0" lrx="5364" lry="6904"
   mith:shelfmark="MS. Abinger c. 56" mith:folio="29v" partOf="#ox-frankenstein_volume_i">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0064.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/3bec6fe5-4798-4f83-8a27-20d28eb346c9"/>
   <zone type="pagination" rend="bordered"><line>94</line></zone>
   <zone type="main">
     <line>say <del rend="strikethrough">I</del> you wish to be indulged in a little</line>

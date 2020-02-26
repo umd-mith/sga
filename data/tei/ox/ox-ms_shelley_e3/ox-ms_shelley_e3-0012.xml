@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0012" partOf="#ox-ms_shelley_e3" mith:folio="3v" mith:shelfmark="MS. Shelley e. 3">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e3/ms_shelley_e3-0012.jp2"/>
+  uly="0" lrx="5406" lry="6852" xml:id="ox-ms_shelley_e3-0012" partOf="#ox-ms_shelley_e3" mith:folio="3v" mith:shelfmark="MS. Shelley e. 3">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/2f1fddff-6007-495c-9e92-a92568306b3b"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0012.01"/>
     <line rend="center">Demogorgon</line>

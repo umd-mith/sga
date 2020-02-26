@@ -2,14 +2,14 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0072" ulx="0" uly="0" lrx="5138" lry="7032"
+  partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0072" ulx="0" uly="0" lrx="5138" lry="6832"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="36v">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0072.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/b927e771-b500-463b-8fa5-60e7ec057242"/>
   <zone type="pagination" rend="bordered"><line>96</line></zone>
   <zone type="library"><line>B</line></zone>
   <zone type="main">
     <line>in darkness. But my heart was heavy, and</line>
-    <line>mys steps slow. The labour of winding a</line>
+    <line>my steps slow. The labour of winding a</line>
     <line>mong the little paths and fixing my feet</line>
     <line>firmly <del rend="strikethrough">a</del> as I advanced teazed me occupied</line>
     <line>as I was by the feelings <mod>

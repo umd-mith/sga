@@ -2,8 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-    xml:id="ox-ms_abinger_d33-0202" ulx="0" uly="0" lrx="5368" lry="7104"
+    xml:id="ox-ms_abinger_d33-0202" ulx="0" uly="0" lrx="6374" lry="6389"
     mith:shelfmark="MS. Abinger d. 33" mith:folio="107r">
+<graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/90a91d52-37b3-42a5-9478-fe522137c64a"/>
     <zone type="pagination"><line>191</line></zone>
     <zone type="library"><line>107</line></zone>
     

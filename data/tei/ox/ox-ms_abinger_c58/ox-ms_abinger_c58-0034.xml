@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c58-0034" ulx="0" uly="0" lrx="5316" lry="6772"
+  xml:id="ox-ms_abinger_c58-0034" ulx="0" uly="0" lrx="5316" lry="6572"
   mith:shelfmark="MS. Abinger c. 58" mith:folio="17v" partOf="#ox-frankenstein_volume_iii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c58/ms_abinger_c58-0034.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/06708519-ad48-4473-bf5a-97b6353d866b"/>
   <zone type="pagination"><line>136</line></zone>
   <zone type="main">
     <line>have been possessed by frenzy and have destroyed my</line>

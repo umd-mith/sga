@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0065" partOf="#ox-ms_shelley_e2" mith:folio="32r" mith:shelfmark="MS. Shelley e. 2">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e2/ms_shelley_e2-0065.jp2"/>
+  uly="0" lrx="5410" lry="6872" xml:id="ox-ms_shelley_e2-0065" partOf="#ox-ms_shelley_e2" mith:folio="32r" mith:shelfmark="MS. Shelley e. 2">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/8734bd12-637f-4226-9d2a-258167a264ba"/>
   <zone type="library"><line>32</line></zone>
   <zone rotate="180" type="main">
     <line rend="indent1">Hasten to the bridal bed</line>

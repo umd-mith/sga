@@ -290,6 +290,8 @@ h4.group-title { margin: 0 0 5px 0; }
 .view p { opacity: 0; transition: all 0.2s ease-in-out; padding: 0px; }
 .view:hover .mask { opacity: 1; }
 .view:hover h6, .view:hover p { opacity: 1; }
+.view .fixedmask { opacity: 1; }
+.view .fixedmask * { opacity: 1; }
 .pg-s .red { color: #C00; }
 .pg-s .yel { color: #FC0; }
 .pg-s .grn { color: #390; }
@@ -331,6 +333,7 @@ ul.img-list li[class*=icon-] { background-repeat: no-repeat; }
 .icon-cuny { background-image: url(../images/icon-cuny.png); }
 .icon-qm { background-image: url(../images/icon-qm.png); }
 .icon-umd { background-image: url(../images/icon-umd.png); }
+.icon-uman { background-image: url(../images/icon-uman.png); }
 .group-body { padding-bottom: 1em; margin-bottom: 1em; border-bottom: 1px solid #d8d8d8; }
 .group-body .group-body { border-bottom-style: dashed; }
 .group-heading .btn.accordion-toggle { margin-top: 0.5em; }

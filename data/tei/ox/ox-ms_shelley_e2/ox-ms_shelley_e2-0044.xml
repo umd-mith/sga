@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0044" partOf="#ox-ms_shelley_e2" mith:folio="21v" mith:shelfmark="MS. Shelley e. 2">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e2/ms_shelley_e2-0044.jp2"/>
+  uly="0" lrx="5410" lry="6872" xml:id="ox-ms_shelley_e2-0044" partOf="#ox-ms_shelley_e2" mith:folio="21v" mith:shelfmark="MS. Shelley e. 2">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/0770aa6c-0f2d-4303-b5c3-ce9b42090c85"/>
   <zone type="main">
     <milestone unit="tei:head" spanTo="#e2-0044.01"/>
     <line rend="center">Act 2.</line>

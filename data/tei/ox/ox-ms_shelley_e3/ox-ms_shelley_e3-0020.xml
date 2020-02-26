@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0020" partOf="#ox-ms_shelley_e3" mith:folio="7v" mith:shelfmark="MS. Shelley e. 3">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e3/ms_shelley_e3-0020.jp2"/>
+  uly="0" lrx="5406" lry="6852" xml:id="ox-ms_shelley_e3-0020" partOf="#ox-ms_shelley_e3" mith:folio="7v" mith:shelfmark="MS. Shelley e. 3">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/1d2d9aaa-4fc2-4b6f-bbd5-9910c9b4ef5d"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e3-0020.01"/>
     <line rend="center">Asia</line>

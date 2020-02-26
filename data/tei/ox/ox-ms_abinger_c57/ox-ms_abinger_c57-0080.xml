@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0080" ulx="0" uly="0" lrx="5138" lry="7032"
+  partOf="#ox-frankenstein_volume_ii" xml:id="ox-ms_abinger_c57-0080" ulx="0" uly="0" lrx="5138" lry="6832"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="40v">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0080.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d1f7ef89-a956-43d5-8240-3de88da3886b"/>
   <zone type="pagination" rend="bordered"><line>102</line></zone>
   <zone type="main">
     <delSpan rend="vertical_line" spanTo="#c57-0080.01"/>
@@ -53,7 +53,7 @@
         <del rend="strikethrough">where</del>
         <add place="sublinear"><metamark function="insert">^</metamark></add>
         <add place="superlinear">whither</add>
-      </mod> I was going &amp; carless of</line>
+      </mod> I was going &amp; careless of</line>
     <line>what was passing around. I remembered</line>
     <line>only, and it was with a bitter anguish</line>
     <line>that I reflected on it, to order that my</line>

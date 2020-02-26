@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5410" lry="7272" xml:id="ox-ms_shelley_e2-0048" partOf="#ox-ms_shelley_e2" mith:folio="23v" mith:shelfmark="MS. Shelley e. 2">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e2/ms_shelley_e2-0048.jp2"/>
+  uly="0" lrx="5410" lry="6872" xml:id="ox-ms_shelley_e2-0048" partOf="#ox-ms_shelley_e2" mith:folio="23v" mith:shelfmark="MS. Shelley e. 2">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/eff33eb2-15e2-4a84-ad9e-ce3d0f5c31cf"/>
   <zone type="main">
     <line>As are the noontide plumes of summer winds</line>
     <line>Satiate with sweet flowers. <mod spanTo="#e2-0048.01"/><anchor xml:id="e2-0048.02"

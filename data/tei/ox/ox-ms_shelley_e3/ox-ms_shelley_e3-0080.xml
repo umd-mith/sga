@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5406" lry="7052" xml:id="ox-ms_shelley_e3-0080" partOf="#ox-ms_shelley_e3" mith:folio="37v" mith:shelfmark="MS. Shelley e. 3">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e3/ms_shelley_e3-0080.jp2"/>
+  uly="0" lrx="5406" lry="6852" xml:id="ox-ms_shelley_e3-0080" partOf="#ox-ms_shelley_e3" mith:folio="37v" mith:shelfmark="MS. Shelley e. 3">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/b3885e8b-a3c9-4ab6-a445-4ddb7c7625d1"/>
   <zone type="main" rotate="180">
     <line>never been surpassed. <mod>
         <del rend="overwritten">w</del>

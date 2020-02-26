@@ -2,8 +2,8 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#" ulx="0"
-  uly="0" lrx="5394" lry="7250" xml:id="ox-ms_shelley_e2-0070" partOf="#ox-ms_shelley_e2" mith:folio="34v" mith:shelfmark="MS. Shelley e. 2">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_e2/ms_shelley_e2-0070.jp2"/>
+  uly="0" lrx="5394" lry="6850" xml:id="ox-ms_shelley_e2-0070" partOf="#ox-ms_shelley_e2" mith:folio="34v" mith:shelfmark="MS. Shelley e. 2">
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/24c913a8-4849-4e48-9e00-f2530a851e33"/>
   <zone type="main">
     <milestone unit="tei:speaker" spanTo="#e2-0070.01"/>
     <line rend="indent2">Semichorus 2.</line>

@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c57-0158" ulx="0" uly="0" lrx="5138" lry="7032"
+  xml:id="ox-ms_abinger_c57-0158" ulx="0" uly="0" lrx="5138" lry="6832"
   mith:shelfmark="MS. Abinger c. 57" mith:folio="79v" partOf="#ox-frankenstein_volume_ii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0158.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/f19403da-2157-41c4-beec-878364173e2d"/>
   <zone type="pagination" rend="bordered">
     <line>174</line>
   </zone>
@@ -16,7 +16,7 @@
     <line>way to rage &amp; despair &#x2013; They were dead and I lived &#x2013; Their</line>
     <line>murderer also lived &amp; to destroy him I must drag</line>
     <line>out my <del rend="strikethrough">we</del> weary existence. I knelt on the earth</line>
-    <line>and with <del rend="strikethrough">a</del> quir<del rend="strikethrough">v</del>ering lips
+    <line>and with <del rend="strikethrough">a</del> quir<add>v</add>ering lips
       exclaimed &#x2013; By the</line>
     <line>Sacred earth <mod>
         <add place="sublinear"><metamark function="insert">^</metamark></add>

@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-  xml:id="ox-ms_abinger_c58-0010" ulx="0" uly="0" lrx="5408" lry="6680"
+  xml:id="ox-ms_abinger_c58-0010" ulx="0" uly="0" lrx="5408" lry="6480"
   mith:shelfmark="MS. Abinger c. 58" mith:folio="5v" partOf="#ox-frankenstein_volume_iii">
-  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c58/ms_abinger_c58-0010.jp2"/>
+  <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/26ae827b-b25f-4970-8e97-b7e473c97f25"/>
   <zone type="pagination"><line>112</line></zone>
   <zone type="main">
     <line>that this one day at least permits me to enjoy.</line>

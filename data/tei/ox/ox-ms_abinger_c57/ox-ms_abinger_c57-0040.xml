@@ -2,9 +2,9 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-    xml:id="ox-ms_abinger_c57-0040" ulx="0" uly="0" lrx="5138" lry="7032"
+    xml:id="ox-ms_abinger_c57-0040" ulx="0" uly="0" lrx="5138" lry="6832"
     mith:shelfmark="MS. Abinger c. 57" mith:folio="20v" partOf="#ox-frankenstein_volume_ii">
-    <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c57/ms_abinger_c57-0040.jp2"/>
+    <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/72d75e8e-dea7-448d-91cc-c2985770198e"/>
     <zone type="pagination" rend="bordered"><line>65</line></zone>
     <zone type="main">
         <line>for glory and slaughter I should have</line>
@@ -67,7 +67,7 @@
         <line>like him when I viewed the</line>
         <line>bliss of my protectors the bitter</line>
         <line>gall of envy rose within me.</line>
-        <line><del rend="strikethrough">But I would not distrub their</del></line>
+        <line><del rend="strikethrough">But I would not disturb their</del></line>
         <line><del rend="strikethrough"><unclear unit="chars" extent="2"/>he</del>
             <milestone unit="tei:p"/> Another circumstance</line>
         <line>strengthened and confirmed these</line>
