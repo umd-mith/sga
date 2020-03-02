@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="37v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/69f2b1a0-6ce5-4d5e-b49f-df105af6a05a"/>
     <zone type="pagination"><line>60</line></zone>
-    
+
     <zone type="main">
         <line>that must not be; you must not</line>
         <line>read Dante. Do you choose a book." I</line>
@@ -32,9 +32,10 @@
         <line>creatures born to tears – <add place="superlinear">X</add><anchor xml:id="d33-0071.01"/> She was too</line>
         <line>beautiful and good for us: It was a</line>
 
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0071.01">
+            <space dim="vertical" extent="21" />
         <line>X and that was why she was taken from us so soon:</line>
     </zone>
 </surface>

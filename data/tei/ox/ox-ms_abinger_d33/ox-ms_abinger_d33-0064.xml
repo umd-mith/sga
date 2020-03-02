@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d85c57b2-df08-4c69-85ad-9275f0c9a3bd"/>
     <zone type="pagination"><line>53</line></zone>
     <zone type="library"><line>34</line></zone>
-    
+
     <zone type="main">
         <line>into a perpetual chaos.</line>
         <milestone unit="tei:p"/><line rend="indent2">I will not dwell longer than I need</line>
@@ -34,10 +34,11 @@
         <anchor xml:id="d33-0031.01"/>
         <milestone unit="tei:p"/><line rend="indent2">Thus did this change come about.</line>
             <line>I seem perhaps to have dashed too sudden</line>
-        
-        
+
+
     </zone>
     <zone type="left_margin" corresp="#d33-0064.01">
+            <space dim="vertical" extent="23" />
         <line><add place="superlinear">X</add> Lord Byron.</line>
     </zone>
 </surface>

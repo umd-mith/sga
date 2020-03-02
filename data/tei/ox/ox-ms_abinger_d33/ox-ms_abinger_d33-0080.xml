@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/c282bb37-2062-4d79-87dc-6319327966e7"/>
     <zone type="pagination"><line>69</line></zone>
     <zone type="library"><line>42</line></zone>
-    
+
     <zone type="main">
         <line>zling beams of <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add> descending sun – After</line>
         <line>walking for some time in silence</line>
@@ -31,12 +31,11 @@
         <line>could see the bright blue sky – As evening</line>
         <line>came on the distant trunks were</line>
         <line>reddened by the sun and the wind</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0080.01">
-        <line>was partly </line>
+            <space dim="vertical" extent="13"/>
+        <line>was partly<mod><anchor xml:id="d33-0080.03"/><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0080.02"/>covered</add></mod></line>
     </zone>
-    <zone type="left_margin" corresp="#d33-0080.02">
-        <line>covered </line>
-    </zone>
+
 </surface>

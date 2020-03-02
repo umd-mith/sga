@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/6e211c45-f347-4278-8427-e7dfca6ff9ac"/>
     <zone type="pagination"><line>23</line></zone>
     <zone type="library"><line>19</line></zone>
-    
+
     <zone type="main">
         <line>anguish. I cannot number the birds that</line>
         <line>I have saved during the long and severe</line>
@@ -37,6 +37,7 @@
         <line>she was as a plant beneath a thick</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0034.01">
+            <space dim="vertical" extent="19"/>
         <line><add place="superlinear">X Wordsworth</add></line>
     </zone>
 </surface>

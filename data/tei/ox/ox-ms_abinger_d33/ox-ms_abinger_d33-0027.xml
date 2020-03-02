@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="15v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/2cf8546a-1171-43ce-9a9e-d0e4a8e3293d"/>
     <zone type="pagination"><line>16</line></zone>
-    
+
     <zone type="main">
         <line>all human beings seem<del rend="strikethrough">e</del> destined to encounter,</line>
         <line>to the very topmost pinacle of happiness:</line>
@@ -37,8 +37,9 @@
         <anchor xml:id="d33-0027.01"/>
     </zone>
     <zone type="left_margin" corresp="#d33-0027.01">
+            <space dim="vertical" extent="23" />
         <line>X whose shapes of beauty made the prospect divine <del rend="strikethrough">hid</del> concealed</line>
         <line>from him the barren reality which <mod><del rend="strikethrough">was</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">lay</add></mod> hidden below them</line>
-        
+
     </zone>
 </surface>

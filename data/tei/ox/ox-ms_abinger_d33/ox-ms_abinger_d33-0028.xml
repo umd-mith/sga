@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/ce4559db-d502-4248-aba2-ece267ad7b12"/>
     <zone type="pagination"><line>17</line></zone>
     <zone type="library"><line>16</line></zone>
-    
+
     <zone type="main">
         <line>no notice of any one; <del rend="strikethrough">or</del> often for hours</line>
         <line><anchor xml:id="d33-0028.01"/>streamed tears or a more fearful gloom</line>
@@ -29,16 +29,17 @@
         <line>of his intentions. My aunt was only relieved</line>
         <line>of her anxiety concerning his fate by a</line>
         <line>letter from him dated Hamburgh.</line>
-        
+
         <milestone unit="tei:p"/>
         <line rend="indent2">How often have I wept over</line>
         <line>that letter which untill I was sixteen</line>
         <line>was the only relick I had to remind me</line>
         <line>of my parents. "Pardon me," it said, "for</line>
     </zone>
-    
+
     <zone type="left_margin" corresp="#d33-0028.01">
+            <space dim="vertical" extent="1"/>
         <line><add>his eyes </add></line>
     </zone>
-    
+
 </surface>

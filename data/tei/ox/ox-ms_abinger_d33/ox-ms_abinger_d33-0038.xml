@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/acf9f616-b17a-4371-be77-e6624f16464c"/>
     <zone type="pagination"><line>27</line></zone>
     <zone type="library"><line>21</line></zone>
-    
+
     <zone type="main">
         <line>it occurred to my aunt that I ought to</line>
         <line>learn music; she herself played upon</line>
@@ -37,8 +37,9 @@
         <line>left me, I had been a dreamer. I brought</line>
         <line>Rosalind and Miranda and the <del rend="strikethrough">wild</del></line>
     </zone>
-    
+
     <zone type="left_margin" corresp="#d33-0038.01">
+            <space dim="vertical" extent="14"/>
         <line><add><add place="superlinear">X</add> had acquired </add></line>
     </zone>
 </surface>

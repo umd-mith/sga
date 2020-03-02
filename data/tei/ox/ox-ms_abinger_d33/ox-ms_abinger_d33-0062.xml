@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/16a5e96d-7022-4e5f-a196-46a4337cdfcb"/>
     <zone type="pagination"><line>51</line></zone>
     <zone type="library"><line>33</line></zone>
-    
+
     <zone type="main">
         <line>to earth as a silly sparrow when pounced</line>
         <line>on by a hawk; my eyes swam and my</line>
@@ -33,10 +33,11 @@
         <line>him and saw his fixed <del rend="strikethrough">once</del> on me and</line>
         <line>filled with tears; all his muscles seemed</line>
         <line>relaxed to softness. I sprung towards him</line>
-        
-        
+
+
     </zone>
     <zone type="left_margin" corresp="#d33-0062.01">
+            <space dim="vertical" extent="20" />
         <line><add place="superlinear">X</add> Fletcher’s comedy of the Captain.</line>
     </zone>
 </surface>

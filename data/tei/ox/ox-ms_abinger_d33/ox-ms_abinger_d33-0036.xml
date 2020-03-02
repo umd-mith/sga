@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/0b5b177d-e340-43dc-8c7e-3666d8754dc3"/>
     <zone type="pagination"><line>25</line></zone>
     <zone type="library"><line>20</line></zone>
-    
+
     <zone type="main">
         <line>tended from our park to the neighbouring</line><line>country. Our house was situated on the</line>
         <line>shores of the lake and the lawn came</line>
@@ -33,9 +33,10 @@
         <line>a horseman feels with pride the motions</line>
         <line>of his high fed steed. <del rend="strikethrough">But my pleasures were</del></line>
     </zone>
-    
+
     <zone type="left_margin" corresp="#d33-0036.01">
+            <space dim="vertical" extent="12"/>
         <line><add><hi rend="sup">X</hi> Dante </add></line>
     </zone>
-    
+
 </surface>

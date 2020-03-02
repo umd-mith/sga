@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/1573d2ae-96ea-44b4-bf77-5bdefeffe481"/>
     <zone type="pagination"><line>45</line></zone>
     <zone type="library"><line>30</line></zone>
-    
+
     <zone type="main">
         <line>death we removed to London where I</line>
         <line>was led by my father to attend to deeper</line>
@@ -34,9 +34,10 @@
     <line>pictures, or sometimes for no object</line>
     <line>but to seek amusement as it might</line>
     <line></line>
-    
+
     </zone>
     <zone type="left_margin" corresp="#d33-0056.01">
+            <space dim="vertical" extent="7"/>
         <line><add>day</add></line>
     </zone>
 </surface>

@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="54v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/2e1a4356-a3df-461b-a831-3542d2902e0b"/>
     <zone type="pagination"><line>94</line></zone>
-    
+
     <zone type="main">
         <line>against its base, at a distance. I heard</line>
         <line>the roar of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> waters: he held <del rend="strikethrough">right</del> his</line>
@@ -31,9 +31,10 @@
         <line>and when she came I still dared not</line>
         <line>utter my father’s name. I ordered her</line>
         <anchor xml:id="d33-0105.01"/>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0105.01">
+            <space dim="vertical" extent="11" />
         <line>x towards the brink</line>
     </zone>
 </surface>

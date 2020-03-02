@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/66728e4b-8b82-4c24-88ff-d1edb4d2b49a"/>
     <zone type="pagination"><line>49</line></zone>
     <zone type="library"><line>32</line></zone>
-    
+
     <zone type="main">
         <line>that to remember makes me shudder</line>
         <line>and then filled me with the deepest</line>
@@ -32,10 +32,11 @@
         <line>ted; his eyes fixed in sullen fierceness</line>
         <line>on the ground, and his voice so gentle</line>
         <line>and so dear made me <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">shiver</add> <del rend="strikethrough">shudder</del></mod> when he</line>
-        
+
     </zone>
-    
+
     <zone type="left_margin" corresp="#d33-0060.01">
+            <space dim="vertical" extent="22" />
         <line>X  I remember we had talked of future travels that we <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">should under</add></mod> take together –.</line>
         <line>there was an eager delight in our tones and gestures that could only spring</line>
         <line>from <del rend="strikethrough">the</del> deep &amp; mutual love joined to the most unrestrained confidence</line>

@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d9fd799d-dea4-476e-90ce-f500e0cfebd7"/>
     <zone type="pagination"><line>65</line></zone>
     <zone type="library"><line>40</line></zone>
-    
+
     <zone type="main">
         <line>picture which hung in the room fix-</line>
         <line><del rend="strikethrough">ing</del> ing on it a look of sad dispair – </line>
@@ -34,9 +34,10 @@
         <line>whom he so passionately adored he</line>
         <line>might weaken the present impres-</line>
         <line>sion. This was possible; <del rend="strikethrough">yet several</del></line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0076.01">
-        <line><add>at night </add></line>
+            <space dim="vertical" extent="6"/>
+        <line><add>at night</add></line>
     </zone>
 </surface>
