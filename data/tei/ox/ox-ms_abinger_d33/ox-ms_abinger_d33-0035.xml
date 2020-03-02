@@ -6,9 +6,9 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="19v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/e447815b-8833-4cc2-98b9-0e0d59e7a403"/>
     <zone type="pagination"><line>24</line></zone>
-    
+
     <zone type="main">
-        
+
         <line>covering of ice; I should cut my hands in</line>
         <line>endeavouring to get at it. So I was entirely</line>
         <line>thrown upon my own resourses. The</line>
@@ -32,8 +32,8 @@
         <line>my tongue should <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">not</add></mod> disgrace my English</line>
         <line>origin.</line>
         <milestone unit="tei:p"/>
-        <line rendition="indent2">As I grew older my liberty increased</line>
+        <line rend="indent2">As I grew older my liberty increased</line>
         <line>with my desires, and my wanderings ex</line>
-        
+
     </zone>
 </surface>

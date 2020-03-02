@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/93c0ab52-ecb1-4c66-a742-72e8a4b296e5"/>
     <zone type="pagination"><line>211</line></zone>
     <zone type="library"><line>117</line></zone>
-    
+
     <zone type="main">
         <line>wanderings.</line>
         <milestone unit="tei:p"/>
@@ -34,9 +34,10 @@
         <line><anchor xml:id="d33-0222.01"/><mod><add place="superlinear"><del rend="strikethrough">stiff</del></add> <del rend="strikethrough">still</del></mod> and my head giddy with the chill</line>
         <line>of night. It was a drizzling, penetrating</line>
         <line></line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0222.01">
+            <space dim="vertical" extent="20" />
         <line>stiff <del rend="strikethrough">chill</del></line>
     </zone>
 </surface>

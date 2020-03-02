@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/e3778316-3b29-42f3-bdef-c19a604cf88f"/>
     <zone type="pagination"><line>202</line></zone>
     <zone type="library"><line></line></zone>
-    
+
     <zone type="main">
         <line>feeling; this monster with whom<del rend="strikethrough">e</del></line>
         <line>none might mingle in converse and</line>
@@ -33,9 +33,10 @@
         <line>did this form, this voice, and all this</line>
         <line>wretched self appear; for had it not</line>
         <anchor xml:id="d33-0213.01"/>
-        
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0213.01">
+    <zone type="left_margin" rotate='270' corresp="#d33-0213.01">
+            <space dim="vertical" extent="21" />
         <line>X the <del rend="strikethrough">prospect</del> near prospect of death did not dull &amp; soften my <del rend="strikethrough">bu</del> bitter</line>
         <line>feelings, if for a few months longer I had continued to live as I then</line>
         <line>lived, strong in body, but my soul corrupted to its core by a deadly cancer</line>

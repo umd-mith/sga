@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="87v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/275e15e0-774a-4ce6-ab20-b0e545f98147"/>
     <zone type="pagination"><line>156</line></zone>
-    
+
     <zone type="main">
         <line>exquisite beauty who lived under the care</line>
         <line>of her guardian; From the moment they</line>
@@ -32,9 +32,10 @@
         <line>men. Could any thing but unmixed joy</line>
         <line>flow from such a union?</line>
         <line><anchor xml:id="d33-0167.01"/><del rend="strikethrough">dville</del> Lovel <del rend="strikethrough">Wo</del> <del rend="strikethrough">Herbert</del> was a Poet –</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0167.01">
+            <space dim="vertical" extent="22" />
         <line><del rend="strikethrough">Woo</del></line>
     </zone>
 </surface>

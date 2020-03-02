@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/ee7dd229-dff8-4363-be91-75b6c854cbe0"/>
     <zone type="pagination"><line>113</line></zone>
     <zone type="library"><line>65</line></zone>
-    
+
     <zone type="main">
         <line>a thousand slight expressions that</line>
         <line>could only indicate a knowledge</line>
@@ -32,9 +32,9 @@
         <line>my courage: yet I had a dreadful</line>
         <line>ride. Hope only supported me, the</line>
         <line>hope that I should not be too late</line>
-        
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0124.01">
+    <zone type="left_margin" corresp="#d33-0124.01"><space dim="vertical" extent="7" />
         <line>walked</line>
     </zone>
 </surface>

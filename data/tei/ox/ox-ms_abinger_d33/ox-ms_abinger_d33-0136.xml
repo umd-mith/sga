@@ -7,14 +7,15 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/01edef3c-8c43-461a-bb88-bf9f0f045671"/>
     <zone type="pagination"><line>125</line></zone>
     <zone type="library"><line>71</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head" spanTo="#d33-0136.01"/>
-        
+
         <line rend="center">Chapter <del rend="strikethrough">IX</del> VIII</line>
+        <space dim="vertical" extent="1" />
         <anchor xml:id="d33-0136.01"/>
-        
-        
+
+
         <milestone unit="tei:p"/>
         <line rend="indent2">I was carried to the next town: fever</line>
             <line>succeeded to convulsions and faintings, &amp;</line>
@@ -36,7 +37,7 @@
             <line>no caress, no look? All cold, and stiff, and</line>
             <line>dead! Alas! I am quite callous: the</line>
             <line>night I was out in was fearful and the</line>
-            
-        
+
+
     </zone>
 </surface>

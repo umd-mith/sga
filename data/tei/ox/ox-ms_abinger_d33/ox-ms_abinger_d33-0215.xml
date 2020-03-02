@@ -6,13 +6,14 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="113v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/9ca513c8-d3d1-4d31-b1a8-7d44f71ba920"/>
     <zone type="pagination"><line>204</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head" spanTo="#d33-0215.01"/>
-        
+
         <line rend="center">Chapter XII</line>
+        <space dim="vertical" extent="1" />
         <anchor xml:id="d33-0215.01"/>
-        
+
         <milestone unit="tei:p"/>
             <line rend="indent1">As I was perpetually haunted by these</line>
             <line>ideas, you may imagine that the</line>
@@ -32,6 +33,6 @@
             <line>untill time and fortitude should over</line>
             <line>come my misery, and I could again</line>
             <line>mingle in society.</line>
-            
+
     </zone>
 </surface>

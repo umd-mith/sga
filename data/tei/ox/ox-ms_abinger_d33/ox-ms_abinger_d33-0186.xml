@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/8f442a79-37ee-44f6-b860-4a828cf4fffa"/>
     <zone type="pagination"><line>175</line></zone>
     <zone type="library"><line>97</line></zone>
-    
+
     <zone type="main">
         <line>would say to me; "I have told you my</line>
         <line>melancholy tale and we have wept</line>
@@ -33,9 +33,10 @@
         <line>were afraid of the slight sound they <del rend="strikethrough">l</del> would</line>
         <line>produce: the expression of awful and</line>
         <line>intense sorrow never for a moment</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0186.01">
-        <line>low,</line>
+            <space dim="vertical" extent="19" />
+        <line>low, </line>
     </zone>
 </surface>

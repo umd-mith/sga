@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="106v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/e3c65a66-2ab3-426e-8dee-d810ff44f2eb"/>
     <zone type="pagination"><line>190</line></zone>
-    
+
     <zone type="main">
         <line>let us drink it together and willingly &amp;</line>
         <line>joyfully quit this hated round of daily life</line>
@@ -31,9 +31,10 @@
         <line>courage we might be free. Behold,</line>
         <line>my cheek is flushed with pleasure at</line>
         <line>the imagination of death; all that</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0201.01">
+            <space dim="vertical" extent="4" />
         <line>Woodville</line>
     </zone>
 </surface>

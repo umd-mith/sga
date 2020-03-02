@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/856f6df7-bb92-432c-aac8-f6f4495ea644"/>
     <zone type="pagination"><line>169</line></zone>
     <zone type="library"><line>94</line></zone>
-    
+
     <zone type="main">
         <line><del rend="strikethrough">ble</del> <del rend="strikethrough">brilliant for me too</del> dazzling for me.</line>
         <line>When we were together I spoke little</line>
@@ -32,9 +32,10 @@
         <line><del rend="strikethrough">he</del> He would talk of the wonderful</line>
         <line>powers of man; of their present state</line>
         <line>and of their hopes: Of what they had</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0180.01">
+            <space dim="vertical" extent="9" />
         <line>Wood</line>
     </zone>
 </surface>

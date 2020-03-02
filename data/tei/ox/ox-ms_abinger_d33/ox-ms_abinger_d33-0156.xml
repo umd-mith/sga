@@ -7,12 +7,12 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/93c28f3d-e21f-40eb-b79c-c6796a43f376"/>
     <zone type="pagination"><line>145</line></zone>
     <zone type="library"><line>82</line></zone>
-    
+
     <zone type="main">
-        <milestone unit="tei:p"/><line rend="indent2">Before I see another day</line>
-        <line rend="indent2">Oh, let this body die away!</line>
+        <milestone unit="tei:p"/><line rend="indent1">Before I see another day</line>
+        <line rend="indent1">Oh, let this body die away!</line>
         <milestone unit="tei:p"/>
-        <line rend="indent2">
+        <line rend="indent1">
             <anchor xml:id="d33-0156.01"/><del rend="strikethrough">Do</del> not <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">be</add></mod> reproached <del rend="strikethrough">me</del> then with inu</line>
             <line>-tility. <mod><del rend="strikethrough">In life we</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">I</add></mod> believed that by sui</line>
             <line>cide <mod><del rend="strikethrough">we</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">I should</add></mod> violate a divine law, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">of nature</add></mod> and</line>
@@ -32,9 +32,10 @@
             <line><del rend="strikethrough">rea</del> existence of all duty &amp; the reality</line>
             <line>of crime – but I shudder, and turn from</line>
             <line>the rememberance.</line>
-            
+
     </zone>
     <zone type="left_margin" corresp="#d33-0156.01">
+            <space dim="vertical" extent="2" />
         <line>let me</line>
     </zone>
 </surface>

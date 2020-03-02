@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/f4640106-5507-4964-b7fe-5f1c21a24753"/>
     <zone type="pagination"><line>187</line></zone>
     <zone type="library"><line>105</line></zone>
-    
+
     <zone type="main">
         <line><del rend="strikethrough">an</del> amusement; and when he does not</line>
         <line>know what else to do he passes his lazy</line>
@@ -38,13 +38,15 @@
         <line>with me it is well, and there will be an</line>
         <anchor xml:id="d33-0198.01"/>
 
-        
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0198.01">
+    <zone type="left_margin" rotate="270" corresp="#d33-0198.01">
+            <space dim="vertical" extent="13" />
         <line><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">X</add> <del rend="strikethrough">It is true</del></line>
         <line><del rend="strikethrough">consolati</del></line>
     </zone>
     <zone type="left_margin" corresp="#d33-0198.02">
+            <space dim="vertical" extent="10" />
         <line>p</line>
     </zone>
 </surface>

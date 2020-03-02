@@ -7,13 +7,14 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/3bf87807-0642-4d26-abd1-50281dd1c8e5"/>
     <zone type="pagination"><line><del rend="strikethrough">193</del>185</line></zone>
     <zone type="library"><line>103</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head" spanTo="#d33-0196.01"/>
-        
+
         <line rend="center">Chapter XI</line>
+        <space dim="vertical" extent="1" />
         <anchor xml:id="d33-0196.01"/>
-        
+
         <milestone unit="tei:p"/>
             <line rend="indent1">It is a strange circumstance but</line>
             <line>it often occurs that blessings by their</line>
@@ -37,9 +38,10 @@
         <milestone unit="tei:p"/>
             <line rend="indent2">He had promised to spend some hours</line>
             <line>with me one afternoon <mod><add place="superlinear">but</add> <del rend="strikethrough">when</del></mod> a</line>
-            
+
     </zone>
     <zone type="left_margin" corresp="#d33-0196.02">
+            <space dim="vertical" extent="13" />
         <line>now</line>
     </zone>
 </surface>

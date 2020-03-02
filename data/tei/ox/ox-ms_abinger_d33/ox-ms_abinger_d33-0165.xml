@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="86v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/4b2ce44f-6a30-49c5-bbd2-9f569e3b297d"/>
     <zone type="pagination"><line>154</line></zone>
-    
+
     <zone type="main">
         <line>like Adam and Prometheus, must</line>
         <line>pay the penalty of rising <del rend="strikethrough">abou</del> a</line>
@@ -30,15 +30,18 @@
         <line>"In the manner, if you will, of D.<add place="superlinear">r</add>.</line>
         <line>Darwin – I consider the alledged</line>
         <line>errors of a man of genius as the</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0165.01">
+            <space dim="vertical" extent="4" />
         <line>Woodville</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0165.02">
+            <space dim="vertical" extent="11" />
         <line>we</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0165.03">
+            <space dim="vertical" extent="16" />
         <line>wish</line>
     </zone>
 </surface>

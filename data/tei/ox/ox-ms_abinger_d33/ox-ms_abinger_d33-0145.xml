@@ -19,9 +19,9 @@
         <line>which is mockery to one like me. In</line>
         <line>solitude only shall I be myself; in</line>
         <line>solitude I shall be thine</line>
-        
-        <zone type="library"><line>76<hi rend="sup">v</hi></line></zone>
-        
+
+        <add hand="#library" place="superlinear"><line>76<hi rend="sup">v</hi></line></add>
+
         <milestone unit="tei:p"/>
         <line rend="indent2">Alas! I even now look back with disgust at my</line>
         <line><del rend="strikethrough">co</del> artifices and contrivances by which, after

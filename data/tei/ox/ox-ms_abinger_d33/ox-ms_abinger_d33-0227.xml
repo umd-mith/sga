@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="119v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/cdb6deda-c60a-4c1c-b0fb-185f46788d30"/>
     <zone type="pagination"><line>216</line></zone>
-    
+
     <zone type="main">
         <line>on <del rend="strikethrough">your</del> thy bosom</line>
         <milestone unit="tei:p"/>
@@ -30,9 +30,10 @@
         <line>trees and waters will still exist,</line>
         <line>moved by your winds, or still</line>
         <line>beneath the eye of noon; though</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0227.01">
+            <space dim="vertical" extent="13" />
         <line>hast</line>
     </zone>
 </surface>

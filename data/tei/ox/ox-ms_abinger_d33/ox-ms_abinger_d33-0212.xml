@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/7609e743-77e9-46d1-8d85-5fb0ef4db574"/>
     <zone type="pagination"><line>201</line></zone>
     <zone type="library"><line>112</line></zone>
-    
+
     <zone type="main">
         <line>after I had saluted the starry sky and</line>
         <line>dewy earth with eyes of love and a conten</line>
@@ -35,9 +35,10 @@
         <line>obscure. Why when fate drove me</line>
         <line>to become this outcast from human</line>
         <anchor xml:id="d33-0212.01"/>
-        
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0212.01">
+    <zone type="left_margin" rotate="270" corresp="#d33-0212.01">
+            <space dim="vertical" extent="23" />
         <line>X for I was doomed while in life to grieve, and to the natural</line>
         <line>sorrow of my father’s death and its most terrific cause, immagi-</line>
         <line>-nation added a tenfold weight of woe.</line>

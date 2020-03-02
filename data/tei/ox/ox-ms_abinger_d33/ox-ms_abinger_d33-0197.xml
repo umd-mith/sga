@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="103v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/0aa13514-09f8-4c80-9c82-e74dc1447a56"/>
     <zone type="pagination"><line>186</line></zone>
-    
+
     <zone type="main">
         <line><add place="superlinear">X</add> <del rend="strikethrough">violent thunder storm came on</del></line>
         <line><del rend="strikethrough">and</del> prevented him. I was alone the</line>
@@ -33,9 +33,10 @@
         <line>so he was glad to find even me for</line>
         <anchor xml:id="d33-0197.01"/>
 
-        
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0197.01">
+    <zone type="left_margin" rotate="270" corresp="#d33-0197.01">
+            <space dim="vertical" extent="12" />
         <line><add place="superlinear">X</add> violent and continual rain</line>
     </zone>
 </surface>

@@ -7,13 +7,14 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/716bc3c8-71aa-46dc-ba8b-4d19731e87cd"/>
     <zone type="pagination"><line>163</line></zone>
     <zone type="library"><line>91</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head" spanTo="#d33-0174.01"/>
-        
+
         <line rend="center">Chapter X</line>
+        <space dim="vertical" extent="1" />
         <anchor xml:id="d33-0174.01"/>
-        
+
         <milestone unit="tei:p"/>
         <line rend="indent1">It was six months after this miserable</line>
         <line>conclusion to his long nursed hopes that</line>
@@ -35,7 +36,7 @@
         <line><del rend="strikethrough">tooking</del> looking on the light of heaven</line>
         <line>but <del rend="strikethrough">shrou</del> shrouding his eyes in a</line>
         <line>perpetual darkness <del rend="strikethrough">far f</del> far from all</line>
-        
-        
+
+
     </zone>
 </surface>

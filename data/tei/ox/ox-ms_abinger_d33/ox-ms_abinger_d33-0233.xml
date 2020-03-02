@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="122v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/e416085a-99d1-41d5-8454-4d444407497f"/>
     <zone type="pagination"><line>222</line></zone>
-    
+
     <zone type="main">
         <line>sole tie that binds me to existence, and</line>
         <line>now I break it: It gives me no pain to leave</line>
@@ -31,9 +31,10 @@
         <line>natural tears due to my memory: and if</line>
         <line><anchor xml:id="d33-0233.01"/>ever <del rend="strikethrough">you</del> visit my grave, pluck from thence</line>
         <line></line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0233.01">
+            <space dim="vertical" extent="21" />
         <line>you</line>
     </zone>
 </surface>

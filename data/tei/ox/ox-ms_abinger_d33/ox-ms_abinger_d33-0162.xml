@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/07c11af6-1678-42a9-911c-cadd0f293d77"/>
     <zone type="pagination">151<line></line></zone>
     <zone type="library"><line>85</line></zone>
-    
+
     <zone type="main">
         <line>from over him, shine forth brighter</line>
         <line>and happier than before.</line>
@@ -32,12 +32,14 @@
         <line>He was a Poet. That name has so often</line>
         <line>been degraded <del rend="strikethrough">than on the earth</del> <add place="superlinear">that</add> it</line>
         <line>will not convey the idea of all that</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0162.01">
+            <space dim="vertical" extent="2" />
         <line>Wo</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0162.02">
+            <space dim="vertical" extent="5" />
         <line>very</line>
     </zone>
 </surface>

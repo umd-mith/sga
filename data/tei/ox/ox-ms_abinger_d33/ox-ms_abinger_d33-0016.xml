@@ -16,7 +16,9 @@
         <line>lose the present obscure but heavy feeling</line>
         <line>of unhappiness in the <del rend="strikethrough">em</del> more acute emo</line>
         <line>tions of the past.</line>
+        <space dim="vertical" extent="3" />
         <line>––</line>
+        <space dim="vertical" extent="3" />
         <milestone unit="tei:p"/>
         <line rend="indent2">I was born in England. My father was</line>
         <line>a man of rank: he had lost his father</line>
@@ -31,7 +33,8 @@
 
         <anchor xml:id="c56-0016.01"/>
     </zone>
-    <zone type="left_margin">
+    <zone type="left_margin" rotate="270" >
+            <space dim="vertical" extent="8" />
         <line>I will have a few moments; wipe my dim</line>
     </zone>
 </surface>

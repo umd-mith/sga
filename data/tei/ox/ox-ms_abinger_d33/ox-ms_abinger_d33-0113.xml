@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="59v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d5f14ed8-fc33-4af2-8b9c-568a645af96b"/>
     <zone type="pagination"><line>102</line></zone>
-    
+
     <zone type="main">
         <line>it was only what you derived from the</line>
         <line>beauty of the world; you seemed to</line>
@@ -18,7 +18,7 @@
         <line>tion, – You yet even have not seen</line>
         <anchor xml:id="d33-0113.01"/>
 
-        <zone type="pagination"><line>59<hi rend="sup">v</hi></line></zone>
+        <add hand="#library"place="superlinear"><line>59<hi rend="sup">v</hi></line></add>
         <line>enough of the world to know the stupendous difference</line>
         <line>that exists between the women we meet in dayly</line>
         <line>life and a nymph of the woods such as you were;</line>
@@ -40,13 +40,15 @@
             <line>apace and all my hours in this</line>
 
 
-            
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0113.01">
+    <zone type="left_margin" rotate="270" corresp="#d33-0113.01">
+            <space dim="vertical" extent="8" />
         <line><del rend="strikethrough">I wept [indecipherable] your looks</del></line>
         <line><del rend="strikethrough">[indecipherable] delight</del></line>
     </zone>
     <zone type="left_margin" corresp="#d33-0113.02">
+            <space dim="vertical" extent="20" />
         <line>Canto IV</line>
         <line>Vers</line>
         <line>Ult.</line>

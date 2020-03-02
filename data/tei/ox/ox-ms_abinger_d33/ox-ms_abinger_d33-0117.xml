@@ -33,6 +33,7 @@
 
     </zone>
     <zone type="left_margin" corresp="#d33-0117.01">
-        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">house, these</add></mod></line>
+            <space dim="vertical" extent="5" />
+        <line>house, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">these</add></mod></line>
     </zone>
 </surface>
