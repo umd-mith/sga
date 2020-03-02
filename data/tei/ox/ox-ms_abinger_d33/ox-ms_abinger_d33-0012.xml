@@ -4,9 +4,38 @@
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
     xml:id="ox-ms_abinger_d33-0012" ulx="0" uly="0" lrx="6368" lry="6389"
     mith:shelfmark="MS. Abinger d. 33" mith:folio="6r">
-<graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/5f723d35-0986-4d52-ba98-da92f82c380e"/>
+<zone type="pagination"><line>12</line></zone>
+
+    <line>infant vows.</line>
+    <milestone unit="tei:p"/>
+    <line rend="indent2">But they became every day more</line>
+    <line>ardent and tender. It was a passion</line>
+    <line>that had grown with his growth; <del rend="strikethrough">a</del> it</line>
+    <line>had become entwined with every faculty</line>
+    <line>and every sentiment and only to be lost</line>
+    <line>with life. <del rend="strikethrough">All</del> None knew of their love</line>
+    <line>except their own two hearts; <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">yet</add><del rend="strikethrough">and</del></mod> <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><del rend="strikethrough">and</del></add> <del rend="strikethrough">yet</del></mod> al-</line>
+    <line>though in all things else, and even in this</line>
+    <line>he dreaded the censure of his companions,</line>
+    <line>for thus truly loving one inferior to him in</line>
+    <line>fortune, <del rend="strikethrough">yet</del> nothing was ever able <del rend="strikethrough">to</del> for</line>
+    <line><del rend="strikethrough">shake</del> a moment to <del rend="strikethrough">sk</del> shake his pur.</line>
+    <line>pose of uniting himself to her as soon</line>
+    <line>as he could muster courage <del rend="strikethrough">to</del> sufficient</line>
+    <line>to meet those difficulties he was determined</line>
+    <line>to surmount.</line>
+
+    <milestone unit="tei:p"/>
+    <line rend="indent2">Diana was fully worthy of his deepest</line>
+    <line>affection. There were few who could boast</line>
+    <line>of so pure a heart, and so much real</line>
+    <line>humbleness of soul joined to a firm reliance</line>
+    <line>on her own integrity and a belief in</line>
+    <line>that of others. She had from her birth lived</line>
+    <line>a retired life. She had lost her mother when</line>
+    <line>very young, but her father had devoted him</line>
 
     <zone type="main">
-        
+
     </zone>
 </surface>

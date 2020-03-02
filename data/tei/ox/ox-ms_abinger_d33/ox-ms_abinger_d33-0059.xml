@@ -6,12 +6,13 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="31v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/1b124f8c-71f7-4236-9c64-e3cebbf2509b"/>
     <zone type="pagination"><line>48</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head"/>
         <line rend="center">Chapter IV</line>
+        <space dim="vertical" extent="1" />
         <milestone unit="tei:p"/>
-            <line rend="indent2">Among our most assiduous visitors</line>
+            <line rend="indent1">Among our most assiduous visitors</line>
             <line>was a young man of rank, well informed,</line>
             <line>and agreable in his person. After we</line>
             <line>had spent a few weeks in London</line>
@@ -32,6 +33,6 @@
             <line>visits suddenly ceased altogether, but</line>
             <line>from that moment I must date</line>
             <line>the change of my father: a change</line>
-            
+
     </zone>
 </surface>

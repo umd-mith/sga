@@ -6,11 +6,11 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="25v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/4ec9747d-cff7-4467-847e-2bdbb4853206"/>
     <zone type="pagination"><line>36</line></zone>
-    
+
     <zone type="main">
         <line>life.</line>
         <milestone unit="tei:p"/>
-        <line rend="indent2">The voice of affection was so new to</line>
+        <line rend="indent1">The voice of affection was so new to</line>
         <line>me that I hung with delight upon</line>
         <line>his words when he told me what he</line>
         <line>had felt concerning me during these</line>
@@ -30,6 +30,6 @@
         <line>along with me to some fertile island</line>
         <line>where we should live at peace for</line>
         <line>ever. As I returned my fervent hopes</line>
-        <line>were dashed by so many fears; my</line>    
+        <line>were dashed by so many fears; my</line>
     </zone>
 </surface>

@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="28v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/adea3ad7-64bc-4434-8bad-3b67e07afba9"/>
     <zone type="pagination"><line>42</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:p"/><line rend="indent2">Is it not strange that grief</line>
             <line>should quickly follow so divine a</line>
@@ -31,8 +31,9 @@
             <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><anchor xml:id="d33-0053.01"/><add place="superlinear"> stage of my story</add></mod> still talk of happiness.</line>
 
     </zone>
-    
+
     <zone type="left_margin" corresp="#d33-0053.01">
+            <space dim="vertical" extent="20"/>
         <line><add>at this </add></line>
     </zone>
 </surface>

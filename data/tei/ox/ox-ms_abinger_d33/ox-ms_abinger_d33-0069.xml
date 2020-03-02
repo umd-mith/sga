@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="36v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/4f730fea-090b-45e9-acf7-6fa6b2235e5a"/>
     <zone type="pagination"><line>58</line></zone>
-    
+
     <zone type="main">
         <line>mean time that should contradict this</line>
         <line>command. He departed the same day, and</line>
@@ -15,7 +15,7 @@
         <line>join him with as little delay as possible.</line>
         <line>After travelling day and night I arrived</line>
         <line>with an anxious, yet a hoping heart, for</line>
-        <line>why should he send for me if it [this line and next indented to avoid a large inkblot on the left side of the page]</line>
+        <line rend="indent2">why should he send for me if it</line>
         <line rend="indent2">were only to avoid me and to treat</line>
         <line>me with the apparent aversion <del rend="strikethrough">as</del></line>
         <line>that he had in London. I met him</line>
@@ -30,6 +30,6 @@
         <line>that gave me hope;</line>
         <milestone unit="tei:p"/><line rend="indent2">When we arrived, after a little</line>
         <line>rest, he led me over the house and</line>
-        
+
     </zone>
 </surface>

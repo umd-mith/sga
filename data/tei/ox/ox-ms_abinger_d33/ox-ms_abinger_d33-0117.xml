@@ -2,11 +2,10 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
-    xml:id="ox-ms_abinger_d33-0117" ulx="0" uly="0" lrx="6281" lry="6389"
-    mith:shelfmark="MS. Abinger d. 33" mith:folio="6v">
-<graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/6ebfa655-7dc1-4133-bd5f-593e43dc0fd0"/>
+    xml:id="ox-ms_abinger_d33-0117" ulx="0" uly="0" lrx="5368" lry="7104"
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="61v">
     <zone type="pagination"><line>106</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:p"/><line rend="indent2">"And now, Mathilda I must</line>
             <line>make you my last confession. I have</line>
@@ -31,9 +30,10 @@
             <line>Since my arrival here I have not</line>
             <line>for a moment <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">ceased</add></mod> to feel the hell of</line>
             <line>passion which has been implanted</line>
-            
+
     </zone>
     <zone type="left_margin" corresp="#d33-0117.01">
-        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">house, these</add></mod></line>
+            <space dim="vertical" extent="5" />
+        <line>house, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">these</add></mod></line>
     </zone>
 </surface>

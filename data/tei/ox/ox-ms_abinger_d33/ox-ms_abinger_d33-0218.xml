@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/b3ee071d-b6de-41dc-afea-58fc9272e9eb"/>
     <zone type="pagination"><line>207</line></zone>
     <zone type="library"><line>115</line></zone>
-    
+
     <zone type="main">
         <line>farewell, I followed him far with my</line>
         <line>eyes until<del rend="strikethrough">l</del> they saw the last of <del rend="strikethrough">the</del> my</line>
@@ -31,9 +31,10 @@
         <line>time would come when we should</line>
         <line>all four, my dearest father restored</line>
         <line>to me, meet in some <mod><del rend="strikethrough">lovely</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">sweet</add></mod> Paradise</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0218.01">
+            <space dim="vertical" extent="13" />
         <line>Woodville</line>
     </zone>
 </surface>

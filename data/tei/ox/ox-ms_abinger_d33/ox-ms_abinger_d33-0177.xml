@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="92v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/78afcc1e-e450-445a-8ef5-5d3b18e11cfa"/>
     <zone type="pagination"><line>166</line></zone>
-    
+
     <zone type="main">
         <line>I had before endured. These were dread-</line>
         <line>ful fears and they even haunted my</line>
@@ -32,9 +32,10 @@
         <line>eyes. <del rend="strikethrough">A sho</del></line>
         <milestone unit="tei:p"/>
         <line rend="indent2">A short conversation passed be-</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0177.01">
+            <space dim="vertical" extent="5" />
         <line>Woodville</line>
     </zone>
 </surface>

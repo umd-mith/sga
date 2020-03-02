@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="45v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/680535f7-d999-4f05-96ef-66fc61bea775"/>
     <zone type="pagination"><line>76</line></zone>
-    
+
     <zone type="main">
         <line><del rend="strikethrough">and more</del>, yet that word is hovering on</line>
         <line>my lips. Oh! There is a fearful chasm;</line>
@@ -33,9 +33,10 @@
         <line>do <handShift medium="pencil" new="#mws"/><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">you</add></mod> <handShift medium="pen" new="#mws"/>mean? You know not what you</line>
         <line>mean. Why do you bring me out,</line>
         <line>and <del rend="strikethrough">then</del> torture, me, <del rend="strikethrough">tempt</del> and</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0087.01">
-        <line><add>our </add></line>
+            <space dim="vertical" extent="6" />
+        <line><add>our</add></line>
     </zone>
 </surface>

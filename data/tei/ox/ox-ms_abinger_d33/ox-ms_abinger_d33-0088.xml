@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/04688883-dc10-40da-96bd-90e6448ce9b7"/>
     <zone type="pagination"><line>77</line></zone>
     <zone type="library"><line>46</line></zone>
-    
+
     <zone type="main">
         <line>tempt me, and kill me – Much happier</line>
         <line>would be for you and for me if in your</line>
@@ -32,9 +32,10 @@
         <line>lieve it was that coming out</line>
         <line>with a determination not to be repulsed</line>
         <line>I went right <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">forward</add> <del rend="strikethrough">on</del></mod> to my object without</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0088.01">
-        <line>frantic curio</line>
+            <space dim="vertical" extent="2" />
+        <line>frantic <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">curio</add></mod></line>
     </zone>
 </surface>

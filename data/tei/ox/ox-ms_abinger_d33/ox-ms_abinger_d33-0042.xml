@@ -9,9 +9,9 @@
 
     <zone type="main">
         <milestone unit="tei:head"/>
-        <line rend="center">III</line>
-        
-        <line>It was on my <del rend="strikethrough">is</del> sixteenth birthday</line>
+        <line rend="center">Chapter III</line>
+<space dim="vertical" extent="1" />
+        <line rend='indent1'>It was on my <del rend="strikethrough">is</del> sixteenth birthday</line>
         <line>that my Aunt received a letter from</line>
         <line>my father. I cannot describe the</line>
         <line>tumult of emotions that arose within</line>

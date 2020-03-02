@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/03821f6a-98d2-4769-afe6-549bbf84026c"/>
     <zone type="pagination"><line>115</line></zone>
     <zone type="library"><line>66</line></zone>
-    
+
     <zone type="main">
         <line>choked me – No tears fell yet I sobbed,</line>
         <line>and breathed short and <del rend="strikethrough">quick</del> hard; one</line>
@@ -16,7 +16,7 @@
     <line>ing was perpetually on my lips; Alive!</line>
     <line>Alive! –</line>
         <milestone unit="tei:p"/>
-        <line rend="indent2">I had taken the steward with me</line>
+        <line rend="indent1">I had taken the steward with me</line>
     <line>for he, much better than, I could</line>
     <line>make the <mod><del rend="strikethrough">right</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">requisite</add></mod> enquiries – the</line>
     <line>poor old man could not restrain his</line>
@@ -32,9 +32,10 @@
     <line>father <mod><del rend="strikethrough">had been</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">were</add></mod> as he is – decrepid</line>
     <line>&amp; hoary – <del rend="strikethrough">them</del> then I should be spared</line>
     <line>this pain –</line>
-    
+
     </zone>
     <zone type="left_margin" corresp="#d33-0126.01">
+            <space dim="vertical" extent="12" />
         <line>uttered</line>
     </zone>
 </surface>

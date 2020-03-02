@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="83v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/a3d2fd50-4610-4e48-826b-09bfa6f0bdc2"/>
     <zone type="pagination"><line>148</line></zone>
-    
+
     <zone type="main">
         <line>affection; smiles to cheer me and</line>
         <line><del rend="strikethrough">I</del> gentle words of <del rend="strikethrough">consolation and</del> comfort.</line>
@@ -31,12 +31,14 @@
         <line>bestow, but not be sought.</line>
         <anchor xml:id="d33-0159.02"/>
 
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0159.01">
+            <space dim="vertical" extent="2" />
         <line>I wished for</line>
     </zone>
-    <zone type="left_margin" corresp="#d33-0159.02">
+    <zone type="left_margin" rotate="270" corresp="#d33-0159.02">
+            <space dim="vertical" extent="13" />
         <line>x Yet how could I find this?</line>
     </zone>
 </surface>

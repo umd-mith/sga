@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="48v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/77e5b45d-ee46-4cd0-b7c8-dabd3ad71036"/>
     <zone type="pagination"><line>82</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:p"/><line rend="indent2">Yes it was despair I felt; for the</line>
             <line>first time that phantom seized me;</line>
@@ -29,9 +29,10 @@
             <line>it melted my soul to tenderness and</line>
             <line>love – I gazed <del rend="strikethrough">om</del> on <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">him</add></mod> as to take</line>
             <line>my last farewell – he lay <del rend="strikethrough">insenl</del></line>
-            
+
     </zone>
     <zone type="left_margin" corresp="#d33-0031.01">
+            <space dim="vertical" extent="3" />
         <line>has</line>
     </zone>
 </surface>

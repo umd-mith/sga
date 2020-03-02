@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="89v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/7174f80d-e9c3-42f7-9ee0-662fe7dda176"/>
     <zone type="pagination"><line>160</line></zone>
-    
+
     <zone type="main">
         <line>to her. His heart, he knew not why</line>
         <line>prognosticated misfortune; he had not</line>
@@ -32,9 +32,10 @@
         <line>learn that she was still in being,</line>
         <anchor xml:id="d33-0171.01"/>
 
-        
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0171.01">
+    <zone type="left_margin" rotate="270" corresp="#d33-0171.01">
+            <space dim="vertical" extent="20" />
         <line>of less fearful <del rend="strikethrough">than</del> import than</line>
     </zone>
 </surface>

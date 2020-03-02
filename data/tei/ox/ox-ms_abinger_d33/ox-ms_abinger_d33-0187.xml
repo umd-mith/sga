@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="97v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/0fa38685-8917-43f3-8199-2f89d1f219a1"/>
     <zone type="pagination"><line>176</line></zone>
-    
+
     <zone type="main">
         <line>fades from your countenance. I have</line>
         <line>lost for ever the loveliest companion</line>
@@ -31,9 +31,10 @@
         <line>sympathy your voice expresses when I</line>
         <line>speak of my lesser sorrows add to my</line>
         <line>interest for you. You stand here shelterless</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0187.01">
-        <line>accident</line>
+            <space dim="vertical" extent="5" />
+        <line>accident </line>
     </zone>
 </surface>

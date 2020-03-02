@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="109v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/2e04bebe-5ecf-4499-9a96-0b11cfca2a92"/>
     <zone type="pagination"><line>196</line></zone>
-    
+
     <zone type="main">
         <line>of others; I will do my best to extir</line>
         <line>pate evil and if the spirit who</line>
@@ -29,12 +29,14 @@
         <line>Happiness from where <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">she sits</add> <del rend="strikethrough">is in</del></mod> enthroned</line>
         <line><del rend="strikethrough">abou</del> above the clouds, now far <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">beyond</add> <del rend="strikethrough">above</del></mod></line>
         <line>our reach, to inhabit the earth</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0207.01">
+            <space dim="vertical" extent="4" />
         <line>through</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0207.02">
+            <space dim="vertical" extent="16" />
         <line>with</line>
     </zone>
 </surface>

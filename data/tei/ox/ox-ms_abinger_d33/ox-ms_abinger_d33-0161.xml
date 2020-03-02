@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="84v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/f7139b51-5eab-4718-ab70-107c22fe8f0c"/>
     <zone type="pagination"><line>150</line></zone>
-    
+
     <zone type="main">
         <line>felt the loss. The <del rend="strikethrough">spuret</del> spirit of existence</line>
         <line>was dead within me; be not surprised</line>
@@ -30,9 +30,10 @@
         <line>was a natural grief<del rend="strikethrough">;</del> <del rend="strikethrough">but</del> not to destroy</line>
         <line>but purify the heart and from which</line>
         <line>he might, when its shadow had passed</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0161.01">
+            <space dim="vertical" extent="7" />
         <line>Woodville.</line>
     </zone>
 </surface>

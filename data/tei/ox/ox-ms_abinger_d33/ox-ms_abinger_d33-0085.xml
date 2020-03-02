@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="44v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/f733b988-c9b5-479f-a846-73f0debf7aa0"/>
     <zone type="pagination"><line>74</line></zone>
-    
+
     <zone type="main">
         <line>my only friend, my hope, my shelter, I</line>
         <line>will [in left margin] see it all with folded arms and down</line>
@@ -32,9 +32,10 @@
         <line>lence me by mere words <mod><del rend="strikethrough">void</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">barren</add></mod> of</line>
         <line>meaning: the agony of my doubt hurries</line>
         <line>me on, and you must reply. I beseech</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0085.01">
-        <line>and </line>
+            <space dim="vertical" extent="8" />
+        <line>and</line>
     </zone>
 </surface>

@@ -3,11 +3,11 @@
 <?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
     xml:id="ox-ms_abinger_d33-0143" ulx="0" uly="0" lrx="6315" lry="6389"
-    mith:shelfmark="MS. Abinger d. 33" mith:folio="74r">
+    mith:shelfmark="MS. Abinger d. 33" mith:folio="74v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d574f076-ae78-4fae-a914-dc92b65e67af"/>
     <zone type="pagination"><line>132</line></zone>
     <zone type="library"><line>74</line></zone>
-    
+
     <zone type="main">
         <line>what loathsome shifts must I be</line>
         <line>driven? <del rend="strikethrough">And</del> yet a whole life of false-</line>
@@ -33,9 +33,10 @@
         <line rend="indent1">In dark hint soft and low <add place="superlinear">X </add></line>
         <anchor xml:id="d33-0143.01"/>
             <line>with downcast eyes, and sympathizing</line>
-            
+
     </zone>
-    <zone type="left_margin" corresp="#d33-0143.01">
+    <zone type="left_margin" rotate="270" corresp="#d33-0143.01">
+            <space dim="vertical" extent="20" />
         <line><add place="superlinear">X</add>Coleridge’s Fire, Famine and Slaughter.</line>
     </zone>
 

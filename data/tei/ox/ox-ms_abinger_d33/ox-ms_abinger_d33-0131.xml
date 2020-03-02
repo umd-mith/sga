@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="68v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/bc92c317-fb63-4e02-b0ff-2810e50c161d"/>
     <zone type="pagination"><line>120</line></zone>
-    
+
     <zone type="main">
         <line>a tremendous peal of thunder descended on</line>
         <line>it; and when my eyes recovered <del rend="strikethrough">its</del> their</line>
@@ -30,9 +30,10 @@
         <line>horse <mod><del rend="strikethrough">from</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">for</add></mod> the next town which was</line>
         <line>situated a mile from the sea that</line>
         <line>he might arrive there before it should</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0131.01">
+            <space dim="vertical" extent="8" />
         <line>with my <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">terror;</add></mod></line>
     </zone>
     </surface>

@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="27v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/e193895d-e830-49c8-b1b4-9be4b3ff981b"/>
     <zone type="pagination"><line>40</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:p"/><line rend="indent2">In all this there was a strange</line>
             <line>ness that attracted and enchanted me.</line>
@@ -32,6 +32,7 @@
             <line>-sation. I felt as if I were <mod><del rend="strikethrough">new</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">re</add></mod>created</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0051.01">
+            <space dim="vertical" extent="14"/>
         <line><add>beloved </add></line>
     </zone>
 </surface>

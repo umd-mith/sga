@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/525a0e75-a62e-44a6-9d84-028f4fea9f48"/>
     <zone type="pagination"><line>153</line></zone>
     <zone type="library"><line>86</line></zone>
-    
+
     <zone type="main">
         <line>His heart was simple like a child,</line>
         <line><anchor xml:id="d33-0164.01"/><mod><del rend="strikethrough">no </del><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">not</add></mod> stained <del rend="strikethrough">of</del> <del rend="strikethrough">arro</del> by arrogance or vanity.</line>
@@ -33,12 +33,14 @@
         <line>bute – So indeed it is and as such not</line>
         <line>one fit for mortality; – <del rend="strikethrough">And</del> <del rend="strikethrough">of</del> the giver</line>
         <anchor xml:id="d33-0164.02"/>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0164.01">
+            <space dim="vertical" extent="1" />
         <line>un<del rend="strikethrough">it was</del></line>
     </zone>
-    <zone type="left_margin" corresp="#d33-0164.02">
+    <zone type="left_margin" rotate="270" corresp="#d33-0164.02">
+            <space dim="vertical" extent="22" />
         <line>his station was too <del rend="strikethrough">low</del> high to allow of his suffering <del rend="strikethrough">thou</del> through</line>
         <line>their <del rend="strikethrough">heart</del> <del rend="strikethrough">had</del> hardheartedness; and too low for him to have experienced</line>
         <line>ingratitude and encroaching <del rend="strikethrough">meaness</del> selfishness</line>

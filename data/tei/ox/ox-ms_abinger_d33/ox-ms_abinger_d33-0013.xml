@@ -8,12 +8,13 @@
 
 <zone type="main">
     <milestone unit="tei:head" spanTo="#d33-0013.01"/>
-    
-<line rend="center"><hi rend="underline">Mathilda</hi></line>
 
+<line rend="center"><hi rend="underline">Mathilda</hi></line>
+<space dim="vertical" extent="4" />
 <line rend="center"><hi rend="underline">Chap. I</hi></line>
+<space dim="vertical" extent="1" />
     <anchor xml:id="d33-0013.01"/>
-    
+
     <milestone unit="tei:p"/>
 <line>Florence. Nov 9th 1819</line>
     <milestone unit="tei:p"/>
@@ -31,7 +32,6 @@
 <line>the snow, sliding as it fell, lay thinner</line>
 <line>than on the plain ground: a few birds</line>
 <line>are pecking at the hard ice that covers the pools –</line>
-          
+
     </zone>
 </surface>
-            

@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/6e211c45-f347-4278-8427-e7dfca6ff9ac"/>
     <zone type="pagination"><line>23</line></zone>
     <zone type="library"><line>19</line></zone>
-    
+
     <zone type="main">
         <line>anguish. I cannot number the birds that</line>
         <line>I have saved during the long and severe</line>
@@ -16,7 +16,7 @@
         <line>attacks of our dogs, or have nursed when</line>
         <line>accidentally wounded.</line>
         <milestone unit="tei:p"/>
-        <line rendition="indent2">When I was seven years of age my</line>
+        <line rend="indent2">When I was seven years of age my</line>
         <line>nurse left me. I now forget the cause</line>
         <line>of her departure if indeed I ever knew it.</line>
         <line>She returned to England, and <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add> <del rend="strikethrough">the</del> <add place="superlinear">he</add></mod> bitter</line>
@@ -29,7 +29,7 @@
         <line>affections. I lived in a desolate country</line>
         <line>where</line>
         <milestone unit="tei:p"/>
-        <line rendition="indent2">____ there were none to praise</line>
+        <line rend="indent2">____ there were none to praise</line>
         <line>And very few to love. <add place="superlinear">X</add> <anchor xml:id="d33-0034.01"/></line>
         <line>It is true that I now saw a little more</line>
         <line>of my Aunt, but she was in every way</line>
@@ -37,6 +37,7 @@
         <line>she was as a plant beneath a thick</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0034.01">
+            <space dim="vertical" extent="19"/>
         <line><add place="superlinear">X Wordsworth</add></line>
     </zone>
 </surface>

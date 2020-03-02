@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="35v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/a97143f9-d574-4409-a884-4a988cf09473"/>
     <zone type="pagination"><line>56</line></zone>
-    
+
     <zone type="main">
         <line>– dreading I knew not what, but ever full</line>
         <line>of fear.</line>
@@ -31,9 +31,10 @@
         <line>had often told me that however</line>
         <line>he might appear weaned from</line>
         <line>his widow sorrow, and free from bitter</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0067.01">
+            <space dim="vertical" extent="16"/>
         <line>which</line>
     </zone>
 </surface>

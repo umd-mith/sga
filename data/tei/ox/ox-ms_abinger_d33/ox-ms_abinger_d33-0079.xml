@@ -6,9 +6,10 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="41v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/10c378e8-f303-4030-98be-40795e931710"/>
     <zone type="pagination"><line>68</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head"/><line rend="center">Chapter V</line>
+        <space dim="vertical" extent="1" />
         <milestone unit="tei:p"/>
             <line rend="indent2">Nearly a year had past since</line>
             <line>my father’s return, and the seasons</line>
@@ -28,8 +29,9 @@
             <line>and led him to a neighbouring wood of</line>
             <line>beech trees whose light shade shielded us</line>
             <line>from the <del rend="strikethrough">from</del> <del rend="strikethrough">the</del> slant and daz-</line>
-            
+
     </zone>
     <zone type="left_margin" corresp="#d33-0079.01">
+            <space dim="vertical" extent="14"/>
         <line>I ch</line></zone>
 </surface>

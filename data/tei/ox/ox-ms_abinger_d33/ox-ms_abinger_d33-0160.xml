@@ -7,10 +7,10 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/ee3b54b0-d0a2-4a08-af59-712e9f853865"/>
     <zone type="pagination"><line>149</line></zone>
     <zone type="library"><line>84</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:p"/>
-        <line rend="indent2">I knew all this and did not go to</line>
+        <line rend="indent1">I knew all this and did not go to</line>
             <line>seek sympathy; but there on my</line>
             <line>solitary heath, under my lowly roof</line>
             <line>where all around was desart, it came</line>
@@ -33,9 +33,10 @@
             <line>spirit of friendship soothed me for a while</line>
             <line>it could not restore me. It came as some</line>
             <line>gentle visitation; it went and I hardly</line>
-            
+
     </zone>
     <zone type="left_margin" corresp="#d33-0160.01">
-        <line>to enlighten</line>
+            <space dim="vertical" extent="4" />
+        <line><del rend="strikethrough">to enlighten</del></line>
     </zone>
 </surface>

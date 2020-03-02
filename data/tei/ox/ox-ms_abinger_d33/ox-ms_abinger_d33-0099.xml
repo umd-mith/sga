@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="51v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/42c92759-a5dd-4cef-b632-382e3203bb72"/>
     <zone type="pagination"><line>88</line></zone>
-    
+
     <zone type="main">
         <line>there find solitude where I might weep,</line>
         <line>and the voices of life might never</line>
@@ -31,12 +31,14 @@
         <line>or if they passed heavily, still they</line>
         <line>would pass and <del rend="strikethrough">once</del> I had not lost</line>
         <line>my father for ever. Let him spend</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0099.01">
+            <space dim="vertical" extent="5" />
         <line>he never </line>
     </zone>
     <zone type="left_margin" corresp="#d33-0099.02">
+            <space dim="vertical" extent="9" />
         <line>quenched </line>
     </zone>
 </surface>

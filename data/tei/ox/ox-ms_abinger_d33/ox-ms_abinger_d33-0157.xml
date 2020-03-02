@@ -6,13 +6,14 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="82v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/356681e5-c5ef-42fc-905f-75620136a23d"/>
     <zone type="pagination"><line>146</line></zone>
-    
+
     <zone type="main">
         <milestone unit="tei:head" spanTo="#d33-0157.01"/>
-        
+
         <line rend="center">Chapter IX</line>
+        <space dim="vertical" extent="1" />
         <anchor xml:id="d33-0157.01"/>
-        
+
         <milestone unit="tei:p"/>
         <line rend="indent2">Thus I passed two years. Day</line>
         <line>after day so many hundreds wore
@@ -34,6 +35,6 @@
         <line>friend to love me. You will say</line>
         <line>perhaps that I gradually became</line>
         <line>fitted to return to society. I do not think</line>
-        
+
     </zone>
 </surface>

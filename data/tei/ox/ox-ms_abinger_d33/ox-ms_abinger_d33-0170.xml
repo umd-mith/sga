@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/d50417ee-6f97-4f99-9e97-6fa699c436e6"/>
     <zone type="pagination"><line>159</line></zone>
     <zone type="library"><line>89</line></zone>
-    
+
     <zone type="main">
         <line>bringing misery must have been broken</line>
         <line><anchor xml:id="d33-0170.01"/><del rend="strikethrough">but</del> the malignant fate that presides</line>
@@ -33,24 +33,30 @@
         <line><anchor xml:id="d33-0170.05"/><del rend="strikethrough">sweetest</del> medecine. He was detained</line>
         <line>three days longer and then he hastened</line>
         <anchor xml:id="d33-0170.06"/>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0170.01">
+            <space dim="vertical" extent="1" />
         <line>and</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0170.02">
+            <space dim="vertical" extent="6" />
         <line>Woodvil</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0170.03">
+            <space dim="vertical" extent="7" />
         <line>have</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0170.04">
+            <space dim="vertical" extent="12" />
         <line>Woodv</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0170.05">
+            <space dim="vertical" extent="20" />
         <line>surest</line>
     </zone>
-    <zone type="left_margin" corresp="#d33-0170.06">
+    <zone type="left_margin" rotate="270" corresp="#d33-0170.06">
+            <space dim="vertical" extent="10" />
         <line>x breach of her eternal laws.</line>
     </zone>
 </surface>

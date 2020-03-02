@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/137954ac-5e29-4eb8-ae0f-384dcb4e567c"/>
     <zone type="pagination"><line>58</line></zone>
     <zone type="library"><line>36</line></zone>
-    
+
     <zone type="main">
         <line><del rend="strikethrough">bitter</del> recollection’s elsewhere, <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">yet</add></mod> he would</line>
         <line>never dare visit the spot where he</line>
@@ -24,7 +24,7 @@
         <line>and most anxious to know what this</line>
         <line>portended; ah, what could it potend but</line>
         <line>ruin!</line>
-        <milestone unit="tei:p"/><line rend="indent2">I saw little of my father during this</line>
+        <milestone unit="tei:p"/><line rend="indent1">I saw little of my father during this</line>
         <line>interval, but he appeared calmer although</line>
         <line>not less unhappy than before. On the</line>
         <line>morning of the third day <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">he informed me</add></mod> that he had</line>
@@ -32,9 +32,10 @@
         <line>and that I should follow him in a <del rend="strikethrough">week</del></line>
         <line><anchor xml:id="d33-0068.01"/>unless I heard any thing from him in the</line>
         <line></line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0068.01">
-        <line>fortnight </line>
+            <space dim="vertical" extent="21"/>
+        <line>fortnight</line>
     </zone>
 </surface>

@@ -6,7 +6,7 @@
     mith:shelfmark="MS. Abinger d. 33" mith:folio="95v">
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/f9e56485-f3b8-40ad-88e8-26d70076fc75"/>
     <zone type="pagination"><line>172</line></zone>
-    
+
     <zone type="main">
         <line>which set an eternal barrier between</line>
         <line>me and my fellow creatures. I was</line>
@@ -32,9 +32,10 @@
         <line rend="indent2">Sometimes <mod><del rend="strikethrough">Herbert</del> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">Woodville</add></mod> talked to me</line>
         <line>of himself. He <del rend="strikethrough">l</del> related his history brief</line>
         <line></line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0183.01">
+            <space dim="vertical" extent="3" />
         <line>Woodville, </line>
     </zone>
 </surface>

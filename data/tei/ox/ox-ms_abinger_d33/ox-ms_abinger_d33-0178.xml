@@ -7,7 +7,7 @@
 <graphic url="https://iiif.bodleian.ox.ac.uk/iiif/image/5251fb1a-edc1-4775-9aeb-7b6ff86f7d04"/>
     <zone type="pagination"><line>167</line></zone>
     <zone type="library"><line>93</line></zone>
-    
+
     <zone type="main">
         <line>tween us, but the next day he again</line>
         <line>stopped at my cottage and by degrees an</line>
@@ -31,12 +31,14 @@
         <line>to solitude from necessity, but that I</line>
         <line>might indulge in a luxury of grief, and</line>
         <line>fanciful seclusion.</line>
-        
+
     </zone>
     <zone type="left_margin" corresp="#d33-0178.01">
+            <space dim="vertical" extent="4" />
         <line>extreme</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0178.02">
+            <space dim="vertical" extent="18" />
         <line>habit</line>
     </zone>
 </surface>
