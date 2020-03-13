@@ -290,6 +290,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
             y      : parseInt(bits[1],10)
             width  : parseInt(bits[2],10)
             height : parseInt(bits[3],10)
+          if constraint["sc:rotation"]
+            model.set
+              rotation: parseInt(constraint["sc:rotation"],10)
       else
         if constraint["beginOffset"]?
           model.set

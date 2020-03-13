@@ -3,7 +3,7 @@
 """ Index fields from SGA TEI to a Solr instance"""
 
 import os, sys, re, string
-import solr
+# import solr
 import xml.sax, json
 from xml.etree import ElementTree as etree
 from six.moves.urllib.parse import urljoin
@@ -17,7 +17,7 @@ class TeiData :
     def __init__(self, path_to_tei):
 
         # Connect to solr instance
-        s = solr.SolrConnection('http://localhost:8080/solr/sga')
+        # s = solr.SolrConnection('http://localhost:8080/solr/sga')
         ns = {'tei': TEI, 'xi': XI, 'xml': XML}
 
         tei = etree.parse(path_to_tei).getroot()
@@ -77,12 +77,11 @@ class TeiData :
             self.position = str(i+1)
 
             source = open(filename)
-            xml.sax.parse(source, GSAContentHandler(s, self, filename))
+            xml.sax.parse(source, GSAContentHandler(self, filename))
             source.close()
  
 class SurfaceDoc :
     def __init__(self, 
-        solr="", 
         shelfmark="",
         shelf_label="",
         viewer_url="",
@@ -99,7 +98,7 @@ class SurfaceDoc :
         mod_pos={"add":[],"del":[]}):
       
         # Solr connection
-        self.solr = solr
+        # self.solr = solr
 
         # General fields
         self.shelfmark = shelfmark
@@ -147,14 +146,16 @@ class SurfaceDoc :
             key = "work_" + w
             paras[key] = self.works[w]
 
-        self.solr.add_many([paras])
-        self.solr.commit()
+        print json.dumps(paras)
+
+        # self.solr.add_many([paras])
+        # self.solr.commit()
 
 class GSAContentHandler(xml.sax.ContentHandler):
-    def __init__(self, s, tei_data, filename):
+    def __init__(self, tei_data, filename):
         xml.sax.ContentHandler.__init__(self)
 
-        self.solr = s
+        # self.solr = s
         self.tei_data = tei_data
         self.pos = 0
         self.hands = [tei_data.default_hand]        
@@ -176,7 +177,7 @@ class GSAContentHandler(xml.sax.ContentHandler):
             self.works[work] = ""
 
         # Initialize doc
-        self.doc = SurfaceDoc(solr = self.solr, works=self.works)
+        self.doc = SurfaceDoc(works=self.works)
 
         print self.doc
         #purge 

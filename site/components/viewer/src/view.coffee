@@ -556,7 +556,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       rootEl = $("<div></div>")
       $(rootEl).addClass("text-content")
       $(rootEl).attr("id", @model.get("@id"))
-      $(rootEl).css
+      rootCss =
         "white-space": "nowrap"
 
       @$el.append(rootEl)
@@ -570,11 +570,24 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       width = if @model.get("width")? then @model.get("width") else @variables.get("width") - x
       height = if @model.get("height")? then @model.get("height") else @variables.get("height") - y
 
-      @$el.css
+      css =
         left: Math.floor(16 + x * @variables.get('scale')) + "px"
         top: Math.floor(y * @variables.get('scale')) + "px"
         width: Math.floor(width * @variables.get('scale')) + "px"
         height: Math.floor(height * @variables.get('scale')) + "px"
+
+      if (@model.get("rotation"))
+        rootCss.transform = "rotate("+@model.get("rotation")+"deg)"
+        rootCss.fontSize = "14px"
+        rootCss.position = "absolute"
+
+        if (height > @variables.get("height") / 2)
+          rootCss.right = "-8em"
+        else
+          rootCss.right = "2em"
+
+      $(rootEl).css rootCss
+      @$el.css css
 
       setScale = (s) =>
         @$el.css
@@ -640,7 +653,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         @$el.css('line-height', adj + 'px')
 
       @variables.on 'change:scrollWidth', (sw) =>
-        if @$el.innerWidth() != 0
+        if @$el.innerWidth() != 0 && !@$el.closest('.text-content').css('transform')
           adjustFontSize() while @$el.innerWidth() < @el.scrollWidth
 
       Backbone.on 'viewer:resize', (options) =>
@@ -829,14 +842,17 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 @lastRenderingNonEmpty = annoEl
         when 'EmptyLine' in type
           ext = parseInt(model.get('ext'))
-          for br in [1..ext+1]
-            # Find the first line that is not an above insertion
-            l = @currentLineEl.prev('div:not(.above-line)')
-            if l.get(0)?
-              l.append("<br/>")
-            else
-              @$el.prepend("<br/>")
-          @$el.append @currentLineEl
+          if @$el.closest('.text-content').css('transform')
+            @$el.css('top', ext+'em')
+          else
+            for br in [1..ext+1]
+              # Find the first line that is not an above insertion
+              l = @currentLineEl.prev('div:not(.above-line)')
+              if l.get(0)?
+                l.append("<br/>")
+              else
+                @$el.prepend("<br/>")
+            @$el.append @currentLineEl
         when "LineBreak" in type
 
           # Before creating a new line container, add other classes on the current one.

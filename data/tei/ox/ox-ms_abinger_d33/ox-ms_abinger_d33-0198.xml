@@ -23,7 +23,7 @@
         <line>that received from an insect’s venom. I will</line>
         <milestone unit="tei:div"/>
         <milestone unit="tei:p"/>
-        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0198.02"/>ut him to <add place="sublinear"><metamark function="insert">^</metamark></add>the proof.</add></mod> He says all hope is dead to him, and</line>
+        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">put him to <add place="sublinear"><metamark function="insert">^</metamark></add>the proof.</add></mod> He says all hope is dead to him, and</line>
         <line>I know that it is dead to me, so we are</line>
         <line>both equally fitted for death. Let me</line>
         <line>try if he will die with me; and as I</line>
@@ -41,12 +41,10 @@
 
     </zone>
     <zone type="left_margin" rotate="270" corresp="#d33-0198.01">
-            <space dim="vertical" extent="13" />
+            <space dim="vertical" extent="17" />
         <line><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">X</add> <del rend="strikethrough">It is true</del></line>
         <line><del rend="strikethrough">consolati</del></line>
     </zone>
-    <zone type="left_margin" corresp="#d33-0198.02">
-            <space dim="vertical" extent="10" />
-        <line>p</line>
-    </zone>
+    <!-- This fake zone is needed, do not remove. -->
+    <zone type="left_margin"/>
 </surface>
