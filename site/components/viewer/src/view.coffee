@@ -842,7 +842,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
                 @lastRenderingNonEmpty = annoEl
         when 'EmptyLine' in type
           ext = parseInt(model.get('ext'))
-          if @$el.closest('.text-content').css('transform')
+          t = @$el.closest('.text-content').css('transform')
+          if t && t != 'none'
             @$el.css('top', ext+'em')
           else
             for br in [1..ext+1]
