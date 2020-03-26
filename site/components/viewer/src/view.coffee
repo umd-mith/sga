@@ -579,12 +579,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       if (@model.get("rotation"))
         rootCss.transform = "rotate("+@model.get("rotation")+"deg)"
         rootCss.fontSize = "14px"
-        rootCss.position = "absolute"
-
-        if (height > @variables.get("height") / 2)
-          rootCss.right = "-8em"
-        else
-          rootCss.right = "2em"
+        css.overflow = "visible"
 
       $(rootEl).css rootCss
       @$el.css css
@@ -844,9 +839,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           ext = parseInt(model.get('ext'))
           t = @$el.closest('.text-content').css('transform')
           if t && t != 'none'
-            @$el.css('top', ext+'em')
+            @$el.css('margin-top', ext+'em')
           else
-            for br in [1..ext+1]
+            pad = 1
+            if ext == 1
+              pad = 0
+            for br in [1..ext+pad]
               # Find the first line that is not an above insertion
               l = @currentLineEl.prev('div:not(.above-line)')
               if l.get(0)?
