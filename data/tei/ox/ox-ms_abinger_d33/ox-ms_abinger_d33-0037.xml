@@ -9,7 +9,7 @@
     
     <zone type="main">
             <milestone unit="tei:p"/>
-            <line rend="indent2">But my pleasures arose from</line>
+            <line rend="indent1">But my pleasures arose from</line>
             <line>the contemplation of nature <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">alone</add></mod>, I had no</line>
             <line>companion: my warm affections finding</line>
             <line>no return from any other human heart</line>
@@ -31,6 +31,6 @@
             <line>others highly interesting <del rend="strikethrough">b</del> which I had</line>
             <line>before neglected as dull.</line>
         <milestone unit="tei:p"/>
-        <line rend="indent2">When I was <del rend="strikethrough">twlev</del> twelve years old</line>
+        <line rend="indent1">When I was <del rend="strikethrough">twlev</del> twelve years old</line>
     </zone>
 </surface>
