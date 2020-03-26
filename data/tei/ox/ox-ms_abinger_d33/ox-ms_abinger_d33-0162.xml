@@ -11,7 +11,7 @@
     <zone type="main">
         <line>from over him, shine forth brighter</line>
         <line>and happier than before.</line>
-        <line><anchor xml:id="d33-0162.01"/>odville <del rend="strikethrough">Herbert</del> was the son of a poor</line>
+        <line><mod><add place="interlinear">Woodville</add> <del rend="strikethrough">Herbert</del></mod> was the son of a poor</line>
         <line>clergyman and had received a classi</line>
         <line>cal education. He was one of those</line>
         <line><anchor xml:id="d33-0162.02"/>few whom fortune favours from their</line>
@@ -33,13 +33,9 @@
         <line>been degraded <del rend="strikethrough">than on the earth</del> <add place="superlinear">that</add> it</line>
         <line>will not convey the idea of all that</line>
 
-    </zone>
-    <zone type="left_margin" corresp="#d33-0162.01">
-            <space dim="vertical" extent="2" />
-        <line>Wo</line>
-    </zone>
+    </zone>    
     <zone type="left_margin" corresp="#d33-0162.02">
-            <space dim="vertical" extent="5" />
+            <space dim="vertical" extent="4" />
         <line>very</line>
     </zone>
 </surface>

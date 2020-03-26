@@ -11,7 +11,7 @@
     <zone type="main">
         <line>tempt me, and kill me – Much happier</line>
         <line>would be for you and for me if in your</line>
-        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0088.01"/>sity</add> <del rend="strikethrough">wild insanity</del></mod> you tore my heart from</line>
+        <line><mod><add place="sublinear"><metamark function="insert">^</metamark></add><anchor xml:id="d33-0088.01"/> <del rend="strikethrough">wild insanity</del></mod> you tore my heart from</line>
         <line>my breast and tried to read <del rend="strikethrough">in it</del> its</line>
         <line>secrets <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">in it</add></mod> as its life’s blood was dropping</line>
         <line>from it. <del rend="strikethrough">That would be</del> <del rend="strikethrough">e</del> Thus you</line>
@@ -35,7 +35,7 @@
 
     </zone>
     <zone type="left_margin" corresp="#d33-0088.01">
-            <space dim="vertical" extent="2" />
-        <line>frantic <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">curio</add></mod></line>
+            <space dim="vertical" extent="1" />
+        <line>frantic <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">curiosity</add></mod></line>
     </zone>
 </surface>

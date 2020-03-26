@@ -37,11 +37,14 @@
         <line>Woodville</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0165.02">
-            <space dim="vertical" extent="11" />
+            <space dim="vertical" extent="2" />
         <line>we</line>
     </zone>
     <zone type="left_margin" corresp="#d33-0165.03">
-            <space dim="vertical" extent="16" />
+            <space dim="vertical" extent="1" />
         <line>wish</line>
+    </zone>
+    <zone type="left_margin">
+        <!-- keep -->
     </zone>
 </surface>

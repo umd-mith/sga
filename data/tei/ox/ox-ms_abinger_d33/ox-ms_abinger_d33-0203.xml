@@ -8,7 +8,7 @@
     <zone type="pagination"><line>192</line></zone>
     
     <zone type="main">
-        <line><anchor xml:id="d33-0203.01"/>you mark "<mod><del rend="strikethrough">Listen,</del> <add place="sublinear"><metamark function="insert">^^</metamark></add><add place="superlinear">my words</add></mod>; I have learned the lan</line>
+        <line><mod><add place="interlinear">"Do you mark</add><del rend="strikethrough">"Listen,</del> <add place="sublinear"><metamark function="insert">^^</metamark></add><add place="superlinear">my words</add></mod>; I have learned the lan</line>
         <line>guage of despair: <del rend="strikethrough">And a strange being</del></line>
         <line><del rend="strikethrough">am I, joyous, triumphant Despair</del></line>
         <line>I have it all by heart, for I am</line>
@@ -32,7 +32,5 @@
         <line>that beamed from his eyes, his gentle</line>
         
     </zone>
-    <zone type="left_margin" corresp="#d33-0203.01">
-        <line>"Do</line>
-    </zone>
+    
 </surface>

@@ -41,10 +41,8 @@
 
     </zone>
     <zone type="left_margin" rotate="270" corresp="#d33-0198.01">
-            <space dim="vertical" extent="17" />
+            <space dim="vertical" extent="13" />
         <line><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">X</add> <del rend="strikethrough">It is true</del></line>
         <line><del rend="strikethrough">consolati</del></line>
     </zone>
-    <!-- This fake zone is needed, do not remove. -->
-    <zone type="left_margin"/>
 </surface>

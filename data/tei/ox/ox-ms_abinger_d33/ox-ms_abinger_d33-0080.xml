@@ -22,7 +22,7 @@
         <line><del rend="strikethrough">yung</del> young sprouts of beech that</line>
         <line>grew from their parent trunks – the</line>
         <line>short grass was mingled with moss and</line>
-        <line><mod><anchor xml:id="d33-0080.01"/> <add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0080.02"/> by</add></mod> the dead leaves of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> last autumn that</line>
+        <line><mod><anchor xml:id="d33-0080.01"/> <add place="sublinear"><metamark function="insert">^</metamark></add><anchor xml:id="d33-0080.02"/></mod> the dead leaves of <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">the</add></mod> last autumn that</line>
         <line>driven by the winds had here and</line>
         <line>there collected in little hillocks <mod><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear">there were</add></mod> – a few</line>
         <line>moss grown stumps about – The</line>
@@ -34,8 +34,8 @@
 
     </zone>
     <zone type="left_margin" corresp="#d33-0080.01">
-            <space dim="vertical" extent="13"/>
-        <line>was partly<mod><anchor xml:id="d33-0080.03"/><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0080.02"/>covered</add></mod></line>
+            <space dim="vertical" extent="15"/>
+        <line>was partly<mod><anchor xml:id="d33-0080.03"/><add place="sublinear"><metamark function="insert">^</metamark></add><add place="superlinear"><anchor xml:id="d33-0080.02"/>covered by</add></mod></line>
     </zone>
 
 </surface>

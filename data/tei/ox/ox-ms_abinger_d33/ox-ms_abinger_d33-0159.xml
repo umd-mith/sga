@@ -34,11 +34,14 @@
 
     </zone>
     <zone type="left_margin" corresp="#d33-0159.01">
-            <space dim="vertical" extent="2" />
+            <space dim="vertical" extent="1" />
         <line>I wished for</line>
     </zone>
     <zone type="left_margin" rotate="270" corresp="#d33-0159.02">
-            <space dim="vertical" extent="13" />
+        <space dim="vertical" extent="1" />
         <line>x Yet how could I find this?</line>
+    </zone>
+    <zone type="left_margin">
+        <!-- keep -->
     </zone>
 </surface>

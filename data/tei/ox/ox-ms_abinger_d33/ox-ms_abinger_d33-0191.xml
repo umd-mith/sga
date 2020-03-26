@@ -35,11 +35,14 @@
 
     </zone>
     <zone type="left_margin" corresp="#d33-0191.01">
-            <space dim="vertical" extent="5" />
+            <space dim="vertical" extent="4" />
         <line>Woodville </line>
     </zone>
     <zone type="left_margin" corresp="#d33-0191.02">
-            <space dim="vertical" extent="11" />
+            <space dim="vertical" extent="1" />
         <line>visit me </line>
+    </zone>
+    <zone type="left_margin">
+        <!-- keep -->
     </zone>
 </surface>

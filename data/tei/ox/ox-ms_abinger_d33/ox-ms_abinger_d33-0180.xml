@@ -19,7 +19,7 @@
         <line>would recur, and a tear would dim</line>
         <line>them.</line>
         <milestone unit="tei:p"/>
-        <line rend="indent2"><anchor xml:id="d33-0180.01"/><del rend="strikethrough">Herbert</del> for ever tried to lead me</line>
+        <line><mod><add place="interlinear">Woodville</add><del rend="strikethrough">Herbert</del></mod> for ever tried to lead me</line>
         <line>to the contemplation of what is</line>
         <line>beautiful and happy in the world.</line>
         <line>His own mind was constitunially</line>
@@ -34,8 +34,5 @@
         <line>and of their hopes: Of what they had</line>
 
     </zone>
-    <zone type="left_margin" corresp="#d33-0180.01">
-            <space dim="vertical" extent="9" />
-        <line>Wood</line>
-    </zone>
+    
 </surface>
