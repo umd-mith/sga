@@ -497,6 +497,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       addText = =>
         container.append new ContentsView(
+          origin: @model.get 'id'
           collection: @model.contents
           el: container
           vars: @variables.variables # Pass on variables set in this view
@@ -532,11 +533,13 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
     initialize: (options) ->
       # Pass on properties set on the ViewerArea
+      @origin = options.origin
       @variables = options.vars
       @listenTo @collection, 'add', @addOne
 
     addOne: (model) ->
       @$el.append new ContentView(
+        origin: @origin
         model: model
         vars: @variables
       ).render().el
@@ -547,6 +550,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
   class ContentView extends AreaView
 
+    initialize: (options) ->
+      super
+      @origin = options.origin
+
     render: ->
       @$el.css
         overflow: 'auto'
@@ -555,6 +562,8 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
 
       rootEl = $("<div></div>")
       $(rootEl).addClass("text-content")
+      if @model.get('isMargin')? and !@model.get('rotation')?
+        $(rootEl).addClass("left_margin")
       $(rootEl).attr("id", @model.get("@id"))
       rootCss =
         "white-space": "nowrap"
@@ -577,9 +586,10 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         height: Math.floor(height * @variables.get('scale')) + "px"
 
       if (@model.get("rotation"))
-        rootCss.transform = "rotate("+@model.get("rotation")+"deg)"
+        rootEl.get(0).dataset.rotate = @model.get("rotation") 
+        # rootCss.transform = "rotate("+@model.get("rotation")+"deg)"
         rootCss.fontSize = "14px"
-        css.overflow = "visible"
+        css.overflow = "auto"
 
       $(rootEl).css rootCss
       @$el.css css
@@ -614,6 +624,12 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         collection: @model.textItems
         el: rootEl
         vars : @variables.variables # Pass on properties set in this view
+
+      Backbone.on 'fullsync', (id) =>
+        console.log('sync', id, @origin)
+        if (@model.get("rotation"))
+          $(rootEl).css
+            'transform': "rotate("+@model.get("rotation")+"deg)"
 
       @
 
@@ -841,17 +857,21 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
           if t && t != 'none'
             @$el.css('margin-top', ext+'em')
           else
-            pad = 1
-            if ext == 1
-              pad = 0
-            for br in [1..ext+pad]
-              # Find the first line that is not an above insertion
-              l = @currentLineEl.prev('div:not(.above-line)')
-              if l.get(0)?
-                l.append("<br/>")
-              else
-                @$el.prepend("<br/>")
-            @$el.append @currentLineEl
+            rot = @$el.closest("*[data-rotate]")
+            if rot.length == 0
+              pad = 1
+              if ext == 1
+                pad = 0
+              for br in [1..ext+pad]
+                # Find the first line that is not an above insertion
+                l = @currentLineEl.prev('div:not(.above-line)')
+                if l.get(0)?
+                  l.append("<br/>")
+                else
+                  @$el.prepend("<br/>")
+              @$el.append @currentLineEl
+            else
+              @$el.css('margin-top', ext+'em')
         when "LineBreak" in type
 
           # Before creating a new line container, add other classes on the current one.

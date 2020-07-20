@@ -293,6 +293,9 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
           if constraint["sc:rotation"]
             model.set
               rotation: parseInt(constraint["sc:rotation"],10)
+          if 'sc:left_margin' in SGASharedCanvas.Utils.makeArray(constraint["@type"])
+            model.set
+              isMargin: true
       else
         if constraint["beginOffset"]?
           model.set
@@ -585,6 +588,7 @@ SGASharedCanvas.Data = SGASharedCanvas.Data or {}
               else if "sga:SpaceAnnotation" in modInfo[id].get "@type"
                 makeEmptyLine pos, {"ext": modInfo[id].get("ext")}
             processNode last_pos, text.length
+            Backbone.trigger 'fullsync', canvas.get 'id'
           s.once 'sync', process
           # offline mode needs manual triggering
           if window.mapping
