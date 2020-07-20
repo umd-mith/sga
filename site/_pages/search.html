@@ -3,166 +3,168 @@ permalink: "/search/"
 layout: component
 ---
 <div id="content">
-  <div id="content-main" class="container clearfix">
-    <div id="main-content" class="row">
-      <h1 class="title col-sm-12" id="page-title">Search</h1>
-      <div class="content">
-        <div class="node node-search">
-          <div class="col-sm-5" id="search-bar">
-            <div class="input-group">
-              <form>
-                <input type="text" class="form-control input-medium" placeholder="Search">
-              </form>
-              <span class="input-group-btn"><a class="btn btn-medium" title="Search"><i class="fa fa-search fa fa-flip-horizontal"></i></a> </span> </div>
-          </div>
-          <div class="col-sm-7" id="search-instructions">
-            <h4>How To Search</h4>
-            <p>Write a query in the search field. All words must appear on a page to be returned. Use <em>OR</em> (capitalized) between words to look for any of the words. Enclose a phrase within quotation marks to search for words occurring together.</p>
-          </div>
-        </div>
-        <div id="all-results" style="display: none;">
-          <div class="r-grid">
-            <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
-            <div class="col-sm-3 col-xs-7 clearfix">
-              <div id="results-refine-header" class="results-refine-header r-header">Refine Results
-                <div class="r-qty pull-right num-results"><span class="badge">0</span></div>
-              </div>
-              <div class="refine-results" id="refine-results">
-                <div class="panel" id="r-list-work">
-                  <div class="panel-heading">Work</div>
-                  <div class="list-group"> </div>
-                </div>
-                <!--/panel -->
-                <div class="panel" id="r-list-notebook">
-                  <div class="panel-heading">Manuscript</div>
-                  <div class="list-group"> </div>
-                </div>
-                <!--/panel -->
-                <div class="panel" id="r-list-hand">
-                  <div class="panel-heading">Hand</div>
-                  <div class="list-group"></div>
-                </div>
-                <!--/panel -->
-                <div class="panel" id="r-list-rev">
-                  <div class="panel-heading">Revisions</div>
-                  <div class="list-group"></div>
-                </div>
-                <!--/panel -->
-                <div class="panel" id="r-list-sketches">
-                  <div class="panel-heading">Sketches</div>
-                  <div class="list-group"> </div>
-                </div>
-                <!--/panel --> 
-              </div>
-            </div>
-            <!--/col-->
-            <div class="col-sm-9 col-xs-12">
-          <div class="" id="usr-msg"> <span class="alert alert-info"></span> </div>
-            <div id="results-info-sort" class="results-info-sort r-header">
-                <form class="form-inline">
-                  <!-- <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div> -->
-                  <div class="r-sorting pull-left">
-                    <div class="form-group">
-                      <label for="r-sorting" class="control-label">Sort:</label>
-                      <div class="input-group">
-                        <select class="form-control" name="r-sortby" size="1">
-                          <option value="score" selected="selected">Relevance</option>
-                          <option value="shelfmark">Alphabetical</option>
-                          <!-- <option value="date">Date</option> -->
-                        </select>
-                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
-                      <div class="input-group">
-                        <select class="form-control" name="r-sort" size="1">
-                          <option value="asc" selected="">Ascending</option>
-                          <option value="desc">Descending</option>
-                        </select>
-                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+    <div id="content-main" class="container clearfix">
+        <div id="main-content" class="row">
+            <h1 class="title col-sm-12" id="page-title">Search</h1>
+            <div class="content">
+              <h2>The search function is currently turned off</h2>
+              <h3>while we switch to a different system. Thank you for your patience!</h3>
+               <!-- <div class="node node-search">
+                    <div class="col-sm-5" id="search-bar">
+                        <div class="input-group">
+                            <form>
+                                <input type="text" class="form-control input-medium" placeholder="Search">
+                            </form>
+                            <span class="input-group-btn"><a class="btn btn-medium" title="Search"><i class="fa fa-search fa fa-flip-horizontal"></i></a> </span> </div>
                     </div>
-                  </div>
-                  <div class="r-nav pull-right">
-                    <ul class="pagination pagination-sm">
-                    </ul>
-                  </div>
-                </form>
-              </div>
-              <!--/results-info-sort--> 
-               <div class="results-grid" id="results-grid">
-            <div class="panel">
-              <ul class="media-list list-group">
-              </ul>
-            </div>
-            <!-- /panel --> 
-          </div>              
-            </div>
-            <!--/col--> 
-          </div>
-
-          <div class="r-footer">
-            <div class="col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-0">
-            <div id="results-info-sort-footer" class="results-info-sort results-info-sort-footer">
-                <form class="form-inline">
-                  <!-- <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div> -->
-                  <div class="r-sorting pull-left">
-                    <div class="form-group">
-                      <label for="r-sorting" class="control-label">Sort:</label>
-                      <div class="input-group">
-                        <select class="form-control" name="r-sortby" size="1">
-                          <option value="rele" selected="selected">Relevance</option>
-                          <option value="freq">Frequency</option>
-                          <option value="date">Date</option>
-                        </select>
-                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
-                      <div class="input-group">
-                        <select class="form-control" name="r-sort" size="1">
-                          <option value="asc">Ascending</option>
-                          <option value="dec">Descending</option>
-                        </select>
-                        <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                    <div class="col-sm-7" id="search-instructions">
+                        <h4>How To Search</h4>
+                        <p>Write a query in the search field. All words must appear on a page to be returned. Use <em>OR</em> (capitalized) between words to look for any of the words. Enclose a phrase within quotation marks to search for words occurring together.</p>
                     </div>
-                  </div>
-                  <nav class="r-nav pull-right">
-                    <ul class="pagination pagination-sm">
-                    </ul>
-                  </nav>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!--/r-footer--> 
+                </div>
+                <div id="all-results" style="display: none;">
+                    <div class="r-grid">
+                        <div class="div-sep sep-single" style="margin-bottom: 2em;"></div>
+                        <div class="col-sm-3 col-xs-7 clearfix">
+                            <div id="results-refine-header" class="results-refine-header r-header">Refine Results
+                                <div class="r-qty pull-right num-results"><span class="badge">0</span></div>
+                            </div>
+                            <div class="refine-results" id="refine-results">
+                                <div class="panel" id="r-list-work">
+                                    <div class="panel-heading">Work</div>
+                                    <div class="list-group"> </div>
+                                </div>
+                                <!-\-/panel -\->
+                                <div class="panel" id="r-list-notebook">
+                                    <div class="panel-heading">Manuscript</div>
+                                    <div class="list-group"> </div>
+                                </div>
+                                <!-\-/panel -\->
+                                <div class="panel" id="r-list-hand">
+                                    <div class="panel-heading">Hand</div>
+                                    <div class="list-group"></div>
+                                </div>
+                                <!-\-/panel -\->
+                                <div class="panel" id="r-list-rev">
+                                    <div class="panel-heading">Revisions</div>
+                                    <div class="list-group"></div>
+                                </div>
+                                <!-\-/panel -\->
+                                <div class="panel" id="r-list-sketches">
+                                    <div class="panel-heading">Sketches</div>
+                                    <div class="list-group"> </div>
+                                </div>
+                                <!-\-/panel -\-> 
+                            </div>
+                        </div>
+                        <!-\-/col-\->
+                        <div class="col-sm-9 col-xs-12">
+                            <div class="" id="usr-msg"> <span class="alert alert-info"></span> </div>
+                            <div id="results-info-sort" class="results-info-sort r-header">
+                                <form class="form-inline">
+                                    <!-\- <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div> -\->
+                                    <div class="r-sorting pull-left">
+                                        <div class="form-group">
+                                            <label for="r-sorting" class="control-label">Sort:</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="r-sortby" size="1">
+                                                    <option value="score" selected="selected">Relevance</option>
+                                                    <option value="shelfmark">Alphabetical</option>
+                                                    <!-\- <option value="date">Date</option> -\->
+                                                </select>
+                                                <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                                            <div class="input-group">
+                                                <select class="form-control" name="r-sort" size="1">
+                                                    <option value="asc" selected="">Ascending</option>
+                                                    <option value="desc">Descending</option>
+                                                </select>
+                                                <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="r-nav pull-right">
+                                        <ul class="pagination pagination-sm">
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-\-/results-info-sort-\-> 
+                            <div class="results-grid" id="results-grid">
+                                <div class="panel">
+                                    <ul class="media-list list-group">
+                                    </ul>
+                                </div>
+                                <!-\- /panel -\-> 
+                            </div>              
+                        </div>
+                        <!-\-/col-\-> 
+                    </div>
+                    
+                    <div class="r-footer">
+                        <div class="col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+                            <div id="results-info-sort-footer" class="results-info-sort results-info-sort-footer">
+                                <form class="form-inline">
+                                    <!-\- <div class="r-qty pull-left num-results"><span class="badge">0</span> Results</div> -\->
+                                    <div class="r-sorting pull-left">
+                                        <div class="form-group">
+                                            <label for="r-sorting" class="control-label">Sort:</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="r-sortby" size="1">
+                                                    <option value="rele" selected="selected">Relevance</option>
+                                                    <option value="freq">Frequency</option>
+                                                    <option value="date">Date</option>
+                                                </select>
+                                                <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                                            <div class="input-group">
+                                                <select class="form-control" name="r-sort" size="1">
+                                                    <option value="asc">Ascending</option>
+                                                    <option value="dec">Descending</option>
+                                                </select>
+                                                <span class="input-group-addon"><i class="fa fa-caret-down"></i></span> </div>
+                                        </div>
+                                    </div>
+                                    <nav class="r-nav pull-right">
+                                        <ul class="pagination pagination-sm">
+                                        </ul>
+                                    </nav>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-\-/r-footer-\-> 
+                </div>
+            </div>-->
         </div>
-      </div>
     </div>
-  </div>
 </div>
 <script type="text/template" id="pagi-template">
-  <li>
+    <li>
     <a href="#" aria-label="First" class="nav-first <%= first %>"><i class="fa fa-red fa-step-backward"></i></a>
-  </li>
-  <li>
+    </li>
+    <li>
     <a href="#" aria-label="Previous" class="nav-prev <%= prev %>"><i class="fa fa-red fa-chevron-left"></i></a>
-  </li>
-  <% 
+    </li>
+    <% 
     var start = 1;
     var end = pages + 1;
     if (pages > 3) {
       start = Math.max(1, current - 1);
       start = pages == current ? Math.max(1, current - 2) : start;
       end = Math.min(end, start + 3);
-
+      
       if (current > 2) {
         %><li><a class="dots">…</a></li><%
       }
     } 
   %>
   <% _.each(_.range(start,end), function(p){ %>
-    <li>
-    <a href="#" <% if (p == current) { %>
-      class="pg" 
-    <% } %> name="<%= p %>" >
-    <%= p %> 
-    <% if (p == current) { %>
-      <span class="sr-only">(current)</span>
-    <% } %> </a></li>
+  <li>
+  <a href="#" <% if (p == current) { %>
+  class="pg" 
+  <% } %> name="<%= p %>" >
+  <%= p %> 
+  <% if (p == current) { %>
+  <span class="sr-only">(current)</span>
+  <% } %> </a></li>
   <% }); %>
   <%  
     if (pages > 3 && current < pages-1) {
@@ -170,68 +172,68 @@ layout: component
     }
   %>
   <li>
-    <a href="#" aria-label="Next" class="nav-next <%= next %>"><i class="fa fa-red fa-chevron-right"></i></a>
+  <a href="#" aria-label="Next" class="nav-next <%= next %>"><i class="fa fa-red fa-chevron-right"></i></a>
   </li>
   <li>
-    <a href="#" aria-label="Last" class="nav-last <%= last %>"><i class="fa fa-red fa-step-forward"></i></a>
+  <a href="#" aria-label="Last" class="nav-last <%= last %>"><i class="fa fa-red fa-step-forward"></i></a>
   </li>
 </script> 
 <script type="text/template" id="facet-template">
-  <a href="#" class="list-group-item">
+    <a href="#" class="list-group-item">
     <span class="label label-danger"><i class="fa fa-remove"></i></span>
     <span class="badge"><%= num %></span>
     <%= name %>
-  </a>
+    </a>
 </script> 
 <script type="text/template" id="result-template">
-  <li class="media list-group-item"> 
+    <li class="media list-group-item"> 
     <span class="label label-info"><%= num %></span> 
     <a class="pull-left" href="<%= viewer_url %><% if (detailQuery!='') { %><%=detailQuery%><% }%>
     "> 
-      <img class="media-object r-img" src="<%=imageURL%>" alt="<%= shelfmark %>" width="75" height="100"
-      onerror="this.src='http://placehold.it/75x100';"> 
+    <img class="media-object r-img" src="<%=imageURL%>" alt="<%= shelfmark %>" width="75" height="100"
+    onerror="this.src='http://placehold.it/75x100';"> 
     </a>
     <div class="media-body">
-     <div class="r-description">
-        <% if (work != "") { %>
-          <span class="r-work"><%= work %></span> -
-        <% } %>
-        <span class="r-shelfmark"><%= shelfmark %></span>.
-        <span class="r-shelf_label"><em><%= shelf_label %></em></span>
-        <span class="r-authors"><%= authors %></span>
-      </div>
-      <div class="r-summary">
-        <% _.each(hls, function(i) { %>  <p>…<%= i %>…</p> <% }); %>
-      </div>
+    <div class="r-description">
+    <% if (work != "") { %>
+    <span class="r-work"><%= work %></span> -
+    <% } %>
+    <span class="r-shelfmark"><%= shelfmark %></span>.
+    <span class="r-shelf_label"><em><%= shelf_label %></em></span>
+    <span class="r-authors"><%= authors %></span>
     </div>
-  </li>
+    <div class="r-summary">
+    <% _.each(hls, function(i) { %>  <p>…<%= i %>…</p> <% }); %>
+    </div>
+    </div>
+    </li>
 </script> 
 <script type="text/javascript" src="/js/SGAsearch.js"></script> 
 <script type="text/javascript">
-  (function ($, Backbone) { 
-
+    (function ($, Backbone) { 
+    
     Backbone.history.start();
-
+    
     $('#all-results').hide();
-
+    
     var service = "{{site.searchservice}}search";
     var options = $('#refine-results');
     var destination = $('#results-grid ul');
-
+    
     SGAsearch.updateSearch(service, options, destination);
-
+    
     $('#search-bar a').click( function() {
-      $('#search-bar form').submit();
+    $('#search-bar form').submit();
     });
     $('#search-bar form').submit( function (e) {
-      e.preventDefault();
-      /* We reset manually all fields in one go: using removeState() causes
-         a troublesome extra hashchange */
-
-      hash = "#q=" + $('#search-bar input').val() + "&f=text"
-      Backbone.history.navigate(hash)
-
-      return false;
+    e.preventDefault();
+    /* We reset manually all fields in one go: using removeState() causes
+    a troublesome extra hashchange */
+    
+    hash = "#q=" + $('#search-bar input').val() + "&f=text"
+    Backbone.history.navigate(hash)
+    
+    return false;
     });
-})(jQuery, Backbone);
+    })(jQuery, Backbone);
 </script>
