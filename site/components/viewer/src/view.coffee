@@ -626,7 +626,6 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
         vars : @variables.variables # Pass on properties set in this view
 
       Backbone.on 'fullsync', (id) =>
-        console.log('sync', id, @origin)
         if (@model.get("rotation"))
           $(rootEl).css
             'transform': "rotate("+@model.get("rotation")+"deg)"
@@ -1077,7 +1076,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
       imageControls = new SGASharedCanvas.Component.ImageControls
         el : '#img-controls'
 
-      @listenTo imageControls.variables, 'change:zoom', (z) ->
+      @listenTo imageControls.variables, 'change:zoom', (z) =>
         if @dragon?
           switch z
             when 0 then @dragon.viewport.goHome()
@@ -1184,7 +1183,7 @@ SGASharedCanvas.View = SGASharedCanvas.View or {}
             $.ajax
               url: full_url + '/info.json',
               type: 'GET',
-              complete: (xhr) ->
+              complete: (xhr) =>
                 if xhr.status == 200
                   scaleFactors.push 32
                   if img.includes('ms_abinger_c')
