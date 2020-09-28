@@ -7,30 +7,107 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="57">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0059.jp2"/>
   <zone type="main">
-    <line>on</line>
-    <line>O <del rend="strikethrough">mighty Spirit</del>, <del rend="strikethrough">whom</del>      unawakened</line>
-    <line>Thou       who to our <del rend="strikethrough">cradling</del> Nation</line>
-    <line><del rend="strikethrough">O mighty</del> Mind, <del rend="strikethrough">on whom thine inspiration</del></line>
-    <line>Hast been as is the <del rend="strikethrough">hidden</del>         sways</line>
-    <line><del rend="strikethrough">Hung like a night flowers unseen</del> power which</line>
+  <zone type="library">57</zone>
+
+    <line>
+      O
+      <del rend="strikethrough">mighty Spirit</del>, <del rend="strikethrough">whom</del>
+      <add place="superlinear">on</add>
+    </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">O mighty</del>
+        <add place="superlinear">Thou</add>
+      </mod>
+         Mind,
+         <mod>
+           <del rend="strikethrough">on whom thine inspiration</del>
+       <add place="superlinear">Who to our
+         <mod>
+           <del rend="strikethrough">cradling</del>
+         <add place="superlinear">unawakened</add>
+       </mod>
+        Nation</add>
+      </mod>
+     </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Hung like a night flowers</del>
+        <add place="superlinear">Hast been as is the
+      <mod>
+        <del rend="strikethrough">hidden</del>
+        <add place="sublinear">unseen</add>
+      </mod>
+      </add>
+    </mod>
+     power which
+     <add place="superlinear">sways</add>
+   </line>
     <line>The moving world, and with them inspiration</line>
-    <line>Hast</line>
-    <line><del rend="strikethrough">The</del> If <del rend="strikethrough">the</del> <del rend="strikethrough">gr</del></line>
-    <line><del rend="strikethrough">Wh</del> If whatever face thou paintest.</line>
-    <line>The snow upon <del rend="strikethrough">the</del> my s lifeless</line>
-    <line>mountains</line>
-    <line>Is <del rend="strikethrough">melting</del> melted into living fountains</line>
-    <line>Oceans flow &amp; leap</line>
-    <line>My <del rend="strikethrough"><unclear>orac</unclear></del> solid <del rend="strikethrough">Oceans</del></line>
-    <line><del rend="strikethrough">seas &amp; lakes flow</del> &amp; shine</line>
-    <line>A Spirit from my heart bursts</line>
-    <line>forth</line>
-    <line>fills</line>
-    <line>And <del rend="strikethrough">clothes</del> with unexpected birth</line>
-    <line><del rend="strikethrough">dark breast</del></line>
-    <line>My cold <del rend="strikethrough">hard</del> bosom &#8212; <del rend="strikethrough">I feel that</del> it is thine,</line>
-    <line>void</line>
-    <line>oh it must be</line>
-    <line>On mine, on mine</line>
+    <line rend="indent1">Hast</line>
+    <space unit="lines" extent="3"/>
+    <line>
+      <del rend="strikethrough">The</del> If <del rend="strikethrough">the</del>
+      <del rend="strikethrough">gr</del>
+    </line>
+    <line>
+      <del rend="strikethrough">Wh</del>
+       If whatever face thou paintest.
+     </line>
+    <line rend="indent2">
+    
+      <!--following lines are in darker ink-->
+      The snow upon <del rend="strikethrough">the</del> my s lifeless
+    <add place="sublinear">mountains</add>
+  </line>
+    <line rend="indent2">Is
+    melt
+    <mod>
+      <del rend="overwritten">ing</del>
+    <add place="intralinear">ed</add>
+  </mod>
+    into living fountains</line>
+
+    <line>
+      My <del rend="strikethrough"><unclear>orac</unclear></del> solid
+      <mod>
+        <del rend="strikethrough">Oceans</del>
+        <mod>
+          <add place="sublinear">
+            <del rend="strikethrough">seas &amp; lakes flow &amp; shine</del>
+          </add>
+        <add place="superlinear">Oceans flow &amp; leap</add>
+      </mod>
+    </mod>
+
+  </line>
+  <line rend="indent4">&#8212;</line>
+    <line rend="indent2">A Spirit from my heart bursts
+    <add place="sublinear">forth</add>
+  </line>
+    <line rend="indent2">And
+      <mod>
+        <del rend="strikethrough">clothes</del>
+        <add place="superlinear">fills</add>
+      </mod>
+         with unexpected birth
+       </line>
+
+    <line>My cold
+      <mod>
+        <del rend="strikethrough">hard</del>
+        <mod>
+          <add place="superlinear">
+          <del rend="strikethrough">dark breast</del>
+        </add>
+        <add place="sublinear">void</add>
+        <add place="intralinear">bosom</add>
+      </mod>
+      </mod> &#8212;
+      <del rend="strikethrough">I feel that</del>
+      <add place="sublinear">oh it must be</add>
+       it is thine,
+     </line>
+    <line rend="indent3">On mine, on mine</line>
   </zone>
 </surface>

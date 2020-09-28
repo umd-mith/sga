@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb026r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="26r (rev.)" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2176-fb026r.jp2"/>
+
+	<zone type="main">
+<line>We have past Ages icy caves</line>
+<line>And Manhoods dak &amp; tossing waves</line>
+<line>And youth's delusive sea which smiles but to betray</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Into</del>
+	<add place="sublinear">Of</add>
+</mod>
+Beyond the sunny
+<add place="sublinear">glassy Infancy</add>
+we flee
+</line>
+<line>Which
+	<add place="superlinear">could</add>
+	did distort to many a shape
+	<add place="superlinear">of error</add>
+</line>
+<line>This true
+	<mod>
+		<del rend="strikethrough">&amp; lovely</del>
+		<add place="superlinear">fair</add>
+	</mod>
+	world of things, a Sea reflecting Love.
+</line>
+
+
+	</zone>
+</surface>

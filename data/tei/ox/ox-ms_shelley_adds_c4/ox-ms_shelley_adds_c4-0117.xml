@@ -25,7 +25,7 @@
       <add place="sublinear">out of the gloom</add>
     </mod>
   </line>
-  
+
     <line>Of daily life; when
     <mod>
       <del rend="strikethrough">casting off the</del>
@@ -64,7 +64,7 @@
     </line>
 
     <line><del rend="strikethrough">The sun came forth, out of his  nightly tomb</del></line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line><del rend="strikethrough">And with the</del></line>
     <line>Its dark <del rend="strikethrough">recesses</del></line>
     <line>Its desarts from the cradle to the tomb</line>

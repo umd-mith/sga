@@ -6,11 +6,26 @@
   xml:id="ox-ms_shelley_adds_e11-0003" partOf="#ox-ms_shelley_adds_e11"
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="1">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0003.jp2"/>
+<zone type="calculation"></zone>
+<zone type="library">
+  <line>1</line>
+  <line>Box 5</line>
+  <line>Book 2</line>
+</zone>
   <zone type="main">
     <line>What is Love? - ask him who lives</line>
     <line>what is life; ask him who adores</line>
     <line>what is God.</line>
-    <line><del rend="strikethrough">The</del> <del rend="strikethrough">We</del> I know not <del rend="strikethrough">how</del> the internal</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add>
+          <del rend="strikethrough">We</del>
+         </add>
+         <add> I
+         </add>
+       </mod>
+       know not <del rend="strikethrough">how</del> the internal</line>
     <line>constitution of other men, or even of</line>
     <line>thine whom I now address. I see that</line>
     <line><del rend="strikethrough">some</del> in some external attributes they</line>

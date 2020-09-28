@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-fb024v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="24v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb024v.jp2"/>
+	<zone type="main">
+		<line>Didactic Poetry is my abhorrence</line>
+		<line>Nothing can equally well be</line>
+		<line>expressed in prose, <del rend="strikethrough">ought to be</del></line>
+		<line><del rend="strikethrough">expressed in verse</del>. but is tedious</line>
+		<line>&amp; superarogatory in verse.</line>
+		<line>Until
+			<mod>
+				<del rend="strikethrough">a heart</del>
+				<add place="superlinear">the mind</add>
+			</mod>
+			can love &amp;</line>
+			<line>admire &amp; trust &amp; hope
+				<add place="superlinear">&amp; endure</add>
+				to</line>
+				<line>what end would you propose</line>
+				<line>principles of moral conduct?</line>
+				<line><del rend="strikethrough">When</del> They are seeds thrown</line>
+				<line>upon the highway of life, &amp;</line>
+				<line>the
+					<del rend="strikethrough">passenger tramples the on to</del></line>
+					<line>
+						<del rend="strikethrough">dust</del>. hungry</line>
+	</zone>
+</surface>

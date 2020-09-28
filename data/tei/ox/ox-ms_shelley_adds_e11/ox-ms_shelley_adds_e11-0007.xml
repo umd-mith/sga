@@ -7,27 +7,61 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="5">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0007.jp2"/>
   <zone type="main">
+    <zone type="library">5</zone>
     <line>the developement of our nature. We</line>
-    <line>see dimly see     x</line>
-    <line><del rend="strikethrough">feel within our hearts</del> <del rend="strikethrough">see</del> within</line>
-    <line>a</line>
-    <line>our intellectual nature <del rend="strikethrough">the</del> miniature</line>
-    <line>yet</line>
-    <line>as it were of <del rend="strikethrough">our</del> our entire self, <del rend="strikethrough"><unclear>most</unclear></del></line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">feel within our hearts</del>
+        <add place="superlinear">see dimly</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">see</del>
+         <add place="superlinear">see</add>
+       </mod>
+        within
+      </line>
+
+    <line>our intellectual nature
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">a</add>
+      </mod>
+      miniature
+    </line>
+
+    <line>as it were of <del rend="strikethrough">our</del> our entire self,
+    <mod>
+      <del rend="strikethrough"><unclear>most</unclear></del>
+    <add place="superlinear">yet</add>
+  </mod>
+</line>
     <line>deprived of all that we condemn</line>
     <line>or despise, the ideal prototype of</line>
-    <line>every thing</line>
-    <line><del rend="strikethrough">all that of</del> excellent or lovely</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">all that of</del>
+        <add place="superlinear">every thing</add>
+      </mod>
+       excellent or lovely
+     </line>
     <line>that we are capable of concieving</line>
-    <line>nature of man.</line>
-    <line>as belonging to the. Not only the</line>
+
+    <line>as belonging to the
+      <add place="superlinear">nature of man.</add>
+      . Not only the
+    </line>
     <line><del rend="strikethrough"><unclear>m</unclear></del> portrait of our external being,</line>
     <line>but an assemblage of the minutest</line>
     <line>particulars of which our nature</line>
     <line>is composed: a mirror whose surface</line>
-    <line>the</line>
-    <line>reflects only forms of purity &amp;</line>
+
+    <line>reflects only
+      <add place="superlinear">the</add>
+       forms of purity &amp;</line>
     <line>brightness : a soul within our soul</line>
+    <line>_________________________________________________</line>
     <line>x These words inefficient &amp; metaphorical</line>
     <line>- Most words so - No help -</line>
   </zone>

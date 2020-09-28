@@ -48,12 +48,12 @@
       <del rend="strikethrough">Oh do not seek to resemble</del>
     </line>
     <anchor xml:id="c4-77.11"/>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
 
     <line rend="indent3">
       <add place="superlinear">
-        <gap quantity="1" unit="characters"/>
-      <gap quantity="2" unit="characters"/>
+        <gap extent="1" unit="characters"/>
+      <gap extent="2" unit="characters"/>
       <del rend="strikethrough">so</del>
     </add>
     The <del rend="strikethrough">stars will awaken</del>
@@ -71,10 +71,10 @@
 </line>
     <line rend="indent3">
       <del rend="strikethrough">So soon.</del>
-      <space quantity="3" unit="characters"/>
+      <space extent="3" unit="characters"/>
           <del rend="strikethrough">Will sleep</del>
         </line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent3">The <del rend="strikethrough">will</del> stars will awaken,
   </line>
 

@@ -7,29 +7,97 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="38">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0040.jp2"/>
   <zone type="main">
-    <line>While from houses &amp; lawns</line>
+
+    <!--following three lines in pencil-->
+    <line>
+
+      While from houses &amp; lawns</line>
     <line>Ridges &amp; <unclear>lanes</unclear> overshadowed</line>
-    <line>To the noble lady</line>
-    <line>by oak trees</line>
-    <line>V<unclear> </unclear></line>
-    <line><del rend="strikethrough">To Em</del> Teresa <del rend="strikethrough">A<unclear>milia</unclear></del> Emilia <del rend="strikethrough">Viv</del></line>
-    <line>Viviani</line>
-    <line>Asia &#8212;&#8212;&#8212;</line>
-    <line>the</line>
-    <line>In <del rend="strikethrough">my</del> hearts temple I suspend to thee</line>
-    <line>This funeral wreath of <del rend="strikethrough"><unclear>far</unclear></del> withered</line>
-    <line>memory</line>
-    <line>orphan one</line>
-    <line><del rend="strikethrough">wronged</del></line>
-    <line>Sweet Spirit, Sister of that <del rend="strikethrough"><unclear>lone</unclear></del></line>
-    <line>the name thou weepest on</line>
-    <line><del rend="strikethrough">Whose empire <unclear>is</unclear></del></line>
-    <line>Whose empire <del rend="strikethrough">are <del rend="strikethrough"><unclear>  </unclear></del> <unclear>this</unclear></del></line>
-    <line>is this form <del rend="strikethrough">this</del></line>
-    <line><del rend="strikethrough">Poor nightingale in</del></line>
-    <line>The <del rend="strikethrough"><unclear>erring</unclear></del> dying rose may offer to the <unclear>d </unclear></line>
-    <line>Its <del rend="strikethrough"><unclear>ine</unclear></del></line>
-    <line><del rend="strikethrough">fragrant</del></line>
-    <line><del rend="strikethrough">breath of its</del></line>
+    <line>by oak trees
+    <add place="intralinear">
+      
+      To the noble lady
+    </add>
+</line>
+    <line>
+      <del rend="strikethrough">To Em</del>
+      <del rend="overwritten">
+        <unclear>V</unclear>
+      </del>
+         Teresa
+         <mod>
+           <del rend="overwritten">A<unclear>milia</unclear></del>
+         <add place="intralinear">Emilia</add>
+       </mod>
+        <mod>
+          <del rend="strikethrough">Viv</del>
+        <add place="sublinear">Viviani</add>
+      </mod>
+    </line>
+
+    <line xml:id="e12-038-pu_line_1">Asia &#8212;&#8212;&#8212;</line>
+    <space unit="lines" extent="2"/>
+    <line xml:id="e12-038-pu_line_2">In
+      <mod>
+        <del rend="strikethrough">my</del>
+        <add place="superlinear">the</add>
+      </mod>
+       hearts temple I suspend to thee</line>
+    <line xml:id="e12-038-pu_line_3">This funeral wreath of <del rend="strikethrough"><unclear>far</unclear></del> withered
+memory
+</line>
+<space unit="lines" extent="2"/>
+    <line xml:id="e12-038-pu_line_4">Sweet Spirit, Sister of that
+      <mod>
+        <del rend="strikethrough"><unclear>lone</unclear></del>
+      <add place="superlinear">
+    <mod>
+        <del rend="strikethrough">wronged</del>
+      <add place="superlinear">orphan one</add>
+    </mod>
+    </add>
+  </mod>
+   </line>
+
+    <line xml:id="e12-038-pu_line_5">
+      <del rend="strikethrough">Whose empire</del>
+      <del rend="overwritten">
+        <unclear>is</unclear>
+      </del>
+    <add place="intralinear">
+    <del rend="strikethrough">is</del>
+  </add>
+  <add place="superlinear">the name thou seepest on</add>
+</line>
+    <line xml:id="e12-038-pu_line_6">Whose empire
+      <mod>
+        <del rend="strikethrough">are</del>
+        <add place="sublinear">is</add>
+      </mod>
+       <del rend="strikethrough">
+        <mod> <del rend="overwritten"><unclear unit="chars" extent="4"/></del>
+       <add place="intralinear"> <unclear>this</unclear></add>
+     </mod>
+     </del>
+     <add place="sublinear">this form
+       <del rend="strikethrough">this</del>
+   </add>
+     </line>
+    <line xml:id="e12-038-pu_line_7"><del rend="strikethrough">Poor nightingale in</del></line>
+    <line xml:id="e12-038-pu_line_8">The
+      <mod>
+        <del rend="strikethrough"><unclear>erring</unclear></del>
+        <add place="intralinear">dying</add>
+      </mod>
+       rose may offer to the
+    <unclear unit="chars" extent="3"/>
+  </line>
+
+    <line xml:id="e12-038-pu_line_9"><del rend="strikethrough">fragrant</del>
+  <add place="superlinear">
+    <unclear>ine</unclear>
+  </add>
+  <add place="sublinear">breath of its</add>
+</line>
   </zone>
 </surface>

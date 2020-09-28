@@ -23,12 +23,12 @@
       <add place="sublinear">Every successive region slowly rose</add>
     </mod>
     </line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent5">&#8212;</line>
 
     <line>Out of the death of daily life,
       <mod>
-        <del rend="strikethrough">and <gap quantity="3" unit="chars"/> bore</del>
+        <del rend="strikethrough">and <gap extent="3" unit="chars"/> bore</del>
       <add place="superlinear">and bore</add>
     </mod>
   </line>

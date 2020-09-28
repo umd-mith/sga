@@ -7,23 +7,63 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="114">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0116.jp2"/>
   <zone type="main">
-    <line>Shelley</line>
-    <line>Percy</line>
-    <line>Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></line>
-    <line>O follow follow</line>
-    <line><del rend="strikethrough">Round</del> Thro the caverns hollow</line>
-    <line>As the song floats, thou pursue</line>
-    <line>wild bee</line>
-    <line>Where the <del rend="strikethrough">night bird</del> never flew</line>
-    <line>Thro <del rend="strikethrough">the</del> the noontide darkness deep,</line>
+    <!--the following is inverted in MS-->
+    <zone type="sketch">
+      <!--sketch of foliage-->
+    </zone>
+    <!--the following two lines (author's name) are overwritten in pen-->
+    <line xml:id="e11-116-pu_line_1">Shelley</line>
+    <line xml:id="e11-116-pu_line_2">Percy</line>
+    <line xml:id="e11-116-pu_line_3">
+      <del rend="strikethrough">Till the <unclear>dark</unclear> gloom like midnight <unclear>grew</unclear></del>
+    </line>
+    <line rend="indent4" xml:id="e11-114-pu_line_4">O follow follow</line>
+    <line xml:id="e11-116-pu_line_5">
+      <mod>
+        <del rend="strikethrough">Round</del>
+        <add>Thro</add>
+      </mod>
+       the caverns hollow
+     </line>
+    <line xml:id="e11-116-pu_line_6">As the song floats, thou pursue</line>
+
+    <line xml:id="e11-116-pu_line_7">Where the
+      <mod>
+        <del rend="strikethrough">night bird</del>
+        <add place="superlinear">wild bee</add>
+      </mod>
+       never flew
+     </line>
+    <line xml:id="e11-116-pu_line_8">Thro <del rend="strikethrough">the</del> the noontide darkness deep,</line>
     <line>By the odour-breathing sleep</line>
-    <line>faint                   &amp;</line>
-    <line>Of <del rend="strikethrough">sweet</del> night-flowers, <del rend="strikethrough">by</del> the waves</line>
-    <line>Of the fountain lighted caves</line>
-    <line><del rend="strikethrough">And</del> Thro And the <del rend="strikethrough">woven</del></line>
-    <line>As the music wild &amp; sweet</line>
-    <line>Answers to <unclear>thy</unclear>   soft <unclear>light</unclear></line>
-    <line><del rend="strikethrough">Echoes your</del> thine <del rend="strikethrough">aerial</del> feet</line>
-    <line>Child of Ocean</line>
+
+    <line xml:id="e11-116-pu_line_9">Of
+      <mod>
+         <del rend="strikethrough">sweet</del>
+         <add place="superlinear">faint</add>
+       </mod>
+        night-flowers,
+        <mod>
+          <del rend="strikethrough">by</del>
+          <add place="superlinear">&amp;</add>
+        </mod>
+         the waves
+       </line>
+    <line xml:id="e11-116-pu_line_10">Of the fountain lighted caves</line>
+    <line xml:id="e11-116-pu_line_11"><del rend="strikethrough">And</del> Thro And the <del rend="strikethrough">woven</del></line>
+    <line xml:id="e11-116-pu_line_12">As the music wild &amp; sweet</line>
+
+    <line xml:id="e11-116-pu_line_13">
+      <mod>
+        <del rend="strikethrough">Echoes your thine</del>
+        <add place="superlinear">Answer to <unclear>thy</unclear></add>
+      </mod>
+      <mod>
+          <del rend="strikethrough">aerial</del>
+        <add place="superlinear">soft <unclear>light</unclear></add>
+      </mod>
+       feet
+     </line>
+    <line rend="indent4" xml:id="e11-116-pu_line_14">Child of Ocean</line>
   </zone>
 </surface>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb027v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="27v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb027v.jp2"/>
+
+	<zone type="main">
+<line>As a violet's gentle eye</line>
+<line>Gazes on the azure sky</line>
+<line>Until its hue grows like what it beholds,</line>
+<line>As a grey &amp; empty mist</line>
+<line>Lies like solid amethyst</line>
+<line>Over the western mountain it enfolds</line>
+<line>When the sunset sleeps</line>
+<line>Unpon its snow&#8212;</line>
+<space unit="lines" extent="2"/>
+<!--the following are unused lines-->
+<line><del rend="strikethrough">As the a strain</del></line>
+<line>As a strain of sweetest soutnd</line>
+<line>Wraps itself the wind around</line>
+<line><del rend="strikethrough">Un</del>Til the void<del rend="strikethrough">less</del>
+wind
+<mod>
+	<del rend="strikethrough">be</del>
+	<add place="superlinear">itself grow</add>
+</mod>
+music too&#8212;
+</line>
+<line>As aught dark &amp; vain dull</line>
+<line><del rend="strikethrough">Movi</del>Basking
+<add place="superlinear">
+	<del rend="strikethrough">near</del>
+</add>
+in what is beautiful
+</line>
+<line>Is full of light &amp; love <del rend="strikethrough">&amp;<unclear>death</unclear></del></line>
+	</zone>
+</surface>

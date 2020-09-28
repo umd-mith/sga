@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-fb028r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="28r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb028r.jp2"/>
+
+	<zone type="main">
+		<line xml:id="hm_2177_pu_preface_28r_1">
+			able, who had they lived in the
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_2">
+			age of George the 2nd might
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_3">
+			probably have deserved to figure
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_4">
+			among the heroes fo the Dunciad.
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_5">
+			Still men
+		</line>
+		<space unit="lines" extent="4"/>
+		<line xml:id="hm_2177_pu_preface_28r_6">
+			I am undeniably
+			<mod>
+				<del rend="strikethrough">con</del>
+				<add place="superlinear">pursuaded</add>
+			</mod>
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_7">
+			And that
+			<mod>
+				<del rend="strikethrough">a</del>
+				<add place="superlinear">the</add>
+			</mod>
+			peculiar style
+			<del rend="strikethrough">has</del>
+			<add place="superlinear">of</add>
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_8">
+			<del rend="strikethrough">not been in En</del>
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_9">
+			intense &amp; comprehensive
+			<mod>
+				<del rend="strikethrough">thought</del>
+				<add place="superlinear">imagery</add>
+			</mod>
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_10">
+			<del rend="strikethrough">in poetry</del>
+			which distinguishes
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_11">
+			<del rend="strikethrough">England</del>
+			modern writers, has not
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_12">
+			been, as a genearl power, the product
+		</line>
+		<line xml:id="hm_2177_pu_preface_28r_13">
+			of the imitation of any particular
+		</line>
+	</zone>
+</surface>

@@ -9,7 +9,7 @@
   <zone type="main">
     <zone type="library">37</zone>
 
-    <space quantity="2" unit="lines"/>
+    <space extent="2" unit="lines"/>
     <line rend="indent1"> The
     <del rend="strikethrough">days are flying fast away</del>
     </line>
@@ -44,7 +44,7 @@
     <line rend="indent4">Than desire
     <del rend="strikethrough">can <unclear>hear</unclear></del></line>
     <line rend="indent5"> In this.</line>
-    <space quantity="2" unit="lines"/>
+    <space extent="2" unit="lines"/>
     <zone type="calculation">
     <line>899</line>
     <line>60</line>
@@ -73,7 +73,7 @@
     to day like tomorrow
 </line>
 <line rend="indent2"> Wd remain</line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 <line rend="indent2" >And between short is bliss</line>
 <line rend="indent2">And a state such as this</line>
 <line rend="indent3">Would</line>

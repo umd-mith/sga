@@ -7,43 +7,125 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="24">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0026.jp2"/>
   <zone type="main">
+    <zone type="library">24</zone>
     <line>My head <del rend="strikethrough"><unclear>was</unclear></del> is wild with weeping for a grief</line>
     <line>Which is the shadow of a gentle mind &#8212;</line>
     <line>I walk into the air, but no relief</line>
     <line>To seek, or haply if I sought to find &#8212;</line>
-    <line>for:</line>
-    <line>It comes unsought . . . <del rend="strikethrough"><unclear>no</unclear></del> wonder that a chief</line>
-    <line>Like thee</line>
-    <line><del rend="strikethrough">Among you</del>, mid spirits, should be cold &amp; blind</line>
-    <line>And &#8212;</line>
-    <line>F</line>
-    <line>the</line>
-    <line>1 The path by which that lovely twain</line>
-    <line>2 Has past to a by by myrtle pines &amp; yew</line>
-    <line>3 Through aisles asled dark forest <unclear>that</unclear> ever grew</line>
-    <line><unclear> </unclear></line>
-    <line>4 Is curtained out from Heavens wide blue</line>
-    <line><del rend="strikethrough">An</del></line>
-    <line>moon</line>
-    <line>5 Nor sun nor nor <del rend="strikethrough">star</del></line>
-    <line><unclear> </unclear></line>
-    <line><del rend="strikethrough">Neither</del> wind <del rend="strikethrough">nor</del> <del rend="strikethrough">sun</del> nor <del rend="strikethrough"><unclear> </unclear></del> rain</line>
-    <line>bowers</line>
-    <line>its          <del rend="strikethrough">shades</del></line>
-    <line>Can pierce <del rend="strikethrough"><del rend="strikethrough">that</del> those</del> interwoven <del rend="strikethrough">leaves</del></line>
-    <line><unclear>purling</unclear></line>
-    <line>Save when some cloud of <del rend="strikethrough">wandering</del> dew</line>
-    <line><del rend="strikethrough">Is</del> Slow driven on the earth <unclear>caressing</unclear> breeze</line>
-    <line>Between the trunks of the hoar trees</line>
-    <line><del rend="strikethrough">one pearl</del> each a pearl</line>
-    <line><del rend="strikethrough">And</del> hangs <del rend="strikethrough">all drops</del> in the white flowers</line>
-    <line>Of <del rend="strikethrough">the</del> green laurel <del rend="strikethrough"><unclear>born</unclear></del> blown anew dies silently</line>
-    <line>bends &#8212; and then <del rend="strikethrough">fades</del></line>
-    <line>Or <del rend="strikethrough">weighs</del> And <del rend="strikethrough"><unclear>su</unclear></del> bends    <del rend="strikethrough"><del rend="strikethrough">as</del> so it passes by</del></line>
-    <line><del rend="strikethrough">The</del> pale &amp; fair anemone</line>
-    <line>One</line>
-    <line><del rend="strikethrough">That <unclear>sky</unclear> <unclear>a    </unclear></del></line>
-    <line><del rend="strikethrough">The</del>   <del rend="strikethrough">are mossy &amp;</del></line>
-    <line><del rend="strikethrough">That are the</del></line>
+
+    <line>It comes unsought
+      <add place="superlinear">for:</add>
+       . . . <del rend="strikethrough"><unclear>no</unclear></del> wonder that a chief</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Among you</del>
+        <add place="superlinear">Like thee</add>
+      </mod>
+      ", mid spirits, should be cold &amp; blind</line>
+    <line>And
+      <space unit="chars" extent="10"/>
+       &#8212;</line>
+    <line xml:id="e12-026-pu_line_1">F</line>
+
+    <line xml:id="e12-026-pu_line_2">1 The path by
+      <add place="superlinear">the</add>
+       which that lovely twain</line>
+    <line xml:id="e12-026-pu_line_3">2 Has past to a by by myrtle pines &amp; yew</line>
+    <line xml:id="e12-026-pu_line_4">
+      <del rend="strikethrough">3 Through aisles asled dark forest <unclear>that</unclear> ever grew</del>
+    </line>
+    <zone type="sketch">
+      <!--sketch of tree in midst of lines-->
+    </zone>
+
+    <line xml:id="e12-026-pu_line_5">
+      <add place="superlinear"><unclear></unclear></add>
+      4 Is curtained out from Heavens wide blue</line>
+    <line xml:id="e12-026-pu_line_6"><del rend="strikethrough">An</del></line>
+
+    <line xml:id="e12-026-pu_line_7">5 Nor sun nor nor
+      <mod>
+        <del rend="strikethrough">star</del>
+      <add place="superlinear">moon</add>
+    </mod>
+  </line>
+
+    <line xml:id="e12-026-pu_line_8"><del rend="strikethrough">Neither</del> wind <del rend="strikethrough">nor</del>
+     <del rend="strikethrough">sun</del>
+     <add place="superlinear"><unclear unit="chars" extent="4"/></add>
+      nor <del rend="strikethrough"><unclear> </unclear></del> rain</line>
+
+
+    <line xml:id="e12-026-pu_line_9">Can pierce
+      <mod>
+        <del rend="strikethrough"><del rend="strikethrough">that</del> those</del>
+        <add place="superlinear">its</add>
+      </mod>
+       interwoven
+       <mod>
+         <del rend="strikethrough">leaves</del>
+       <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">shades</del>
+        <add place="superlinear">bowers</add>
+      </mod>
+      </add>
+    </mod>
+    </line>
+
+    <line xml:id="e12-026-pu_line_10">Save when some cloud of
+      <mod>
+        <del rend="strikethrough">wandering</del>
+        <add place="superlinear">
+          <unclear>purling</unclear>
+        </add>
+      </mod>
+       dew</line>
+    <line xml:id="e12-026-pu_line_11"><del rend="strikethrough">Is</del> Slow driven on the earth <unclear>caressing</unclear> breeze</line>
+    <line xml:id="e12-026-pu_line_12">Between the trunks of the hoar trees</line>
+
+    <line xml:id="e12-026-pu_line_13"><del rend="strikethrough">And</del> hangs
+    <mod>
+      <del rend="strikethrough">all drops</del>
+      <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">one pearl</del>
+        <add>each a pearl</add>
+      </mod>
+      </add>
+    </mod>
+     in the white flowers</line>
+    <line xml:id="e12-026-pu_line_14">
+      Of <del rend="strikethrough">the</del> green laurel
+      <del rend="strikethrough"><unclear>bend</unclear></del><unclear>blown</unclear> anew dies silently
+    </line>
+
+    <line xml:id="e12-026-pu_line_15">
+      Or
+      <del rend="strikethrough">weighs</del>
+      And <del rend="strikethrough"><unclear>su</unclear></del> bends
+      <add place="superlinear">bends</add>
+      <space unit="chars" extent="7"/>
+      <add place="superlinear">and then</add>
+      <mod>
+        <del rend="strikethrough"><del rend="strikethrough">as</del> so it passes by</del>
+      <add place="superlinear">
+        <del rend="strikethrough">fades</del>
+      </add>
+    </mod>
+  </line>
+    <line xml:id="e12-026-pu_line_16">
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="sublinear">One</add>
+      </mod>
+       pale &amp; fair anemone</line>
+
+    <line xml:id="e12-026-pu_line_17"><del rend="strikethrough">That <unclear>sky</unclear> a<unclear unit="chars" extent="3"/></del></line>
+    <line xml:id="e12-026-pu_line_18"><del rend="strikethrough">The</del>
+    <space unit="chars" extent="4"/>
+      <del rend="strikethrough">are mossy &amp;</del></line>
+    <line xml:id="e12-026-pu_line_19"><del rend="strikethrough">That are the</del></line>
   </zone>
 </surface>

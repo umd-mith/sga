@@ -7,21 +7,52 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="90">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0092.jp2"/>
   <zone type="main">
+  <zone type="library">90</zone>
     <line><del rend="strikethrough">The winds</del></line>
-    <line><del rend="strikethrough">song</del></line>
-    <line>We join the <del rend="strikethrough">dance</del></line>
-    <line>and the <del rend="strikethrough"><unclear>song</unclear></del> throng,</line>
-    <line><unclear>or</unclear></line>
-    <line>By the whirlwind of gladness borne along</line>
-    <line><unclear>fish</unclear></line>
-    <line>flying leap</line>
-    <line><del rend="strikethrough">As a <unclear>m tn</unclear> with</del></line>
-    <line>As <del rend="strikethrough"><unclear>the</unclear></del>     <del rend="strikethrough">flee</del></line>
-    <line>From the Indian <del rend="strikethrough"><unclear>sea</unclear></del> deep</line>
+    <line>We join the
+    <mod>
+        <del rend="strikethrough">dance</del>
+      <add place="superlinear">
+      <mod>
+        <del rend="strikethrough">song</del>
+        <add place="sublinear">and the throng</add>
+      </mod>
+    </add>
+  </mod>
+      </line>
+    <line>
+      <add place="intralinear">By</add>
+      <add place="superlinear"><unclear>or</unclear></add>
+       the whirlwind of gladness borne along
+     </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">As a <unclear>m tn</unclear> with</del>
+        <add place="sublinear">
+          As <del rend="strikethrough"><unclear>the</unclear></del>
+        </add>
+      </mod>
+  <add place="superlinear">flying
+    <add place="superlinear"><unclear>fish</unclear></add>
+  leap
+  <add place="sublinear">
+    <del rend="strikethrough">flee</del>
+  </add>
+</add>
+
+</line>
+    <line>From the Indian
+      <mod>
+        <del rend="strikethrough"><unclear>sea</unclear></del>
+        <add place="intralinear"> deep</add>
+      </mod>
+    </line>
     <line>And mix with the sea-birds, half asleep</line>
+    <space unit="lines" extent="2"/>
     <line>Whence come ye, so wild &amp; fleet</line>
-    <line><del rend="strikethrough">Like</del> For sandals of lightning are on yr.</line>
-    <line>feet</line>
+    <line><del rend="strikethrough">Like</del> For sandals of lightning are on yr.
+  <add place="sublinear">feet</add>
+</line>
     <line>And yr. wings are soft &amp; swift as thought</line>
     <line>And your eyes are Love which is veiled not</line>
   </zone>

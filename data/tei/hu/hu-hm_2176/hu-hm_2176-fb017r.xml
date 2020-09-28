@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb017r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="17r" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb017r.jp2"/>
+
+	<zone type="main">
+		<!--the following two lines are unused-->
+		<line><del rend="strikethrough">The solid heart of my glad universe</del></line>
+		<line>The caverns of my Pride's deep universe</line>
+	<line>Hark to the
+		<mod>
+			<del rend="strikethrough">awf</del>
+		<add place="superlinear">awful sweetness of that sound</add>
+	</mod>
+</line>
+<line><del rend="strikethrough">It</del> Tis the
+<add place="superlinear">deep</add> music of the rolling world</line>
+<line>
+	<del rend="strikethrough">Made living</del>
+<add place="superlinear">Fathomless</add>
+</line>
+<line>Kindling within the strings of the waved air</line>
+<line>Aeolian modulations &#8212;</line>
+<line rend="indent4"><del rend="strikethrough">Ione</del></line>
+<line rend="indent7"> Listen too</line>
+<line>How every pause is
+	<mod>
+		<del rend="strikethrough">broke into</del>
+		<add place="superlinear">filled with under</add>
+	</mod>
+	notes
+</line>
+<line> Clear silver, icy; keen awakening tones</line>
+<line><del rend="strikethrough">Such as</del> the sense
+<del rend="strikethrough">even to the inmost</del> &amp; live within
+</line>
+<line>Which <del rend="strikethrough">And</del> pierce
+<del rend="strikethrough">into the spirit</del>, the soul
+</line>
+<line>As the
+	<mod>
+		<del rend="strikethrough">clear</del>
+		<add place="superlinear">sharp</add>
+	</mod>
+	stars <del rend="strikethrough">beams</del> pierece
+	<mod>
+		<del rend="strikethrough">the wintry air</del>
+		<add place="superlinear">chrystal</add>
+		<add place="sublinear">winters sky</add>
+	</mod>
+</line>
+<line>And gaze upon themselves within the sea</line>
+<!--the following two lines are unused-->
+<line>Sooth<del rend="strikethrough">ing the eagle
+	<add place="superlinear">tyger</add>
+	joy, which <unclear>g</unclear></del>
+	<add place="sublinear">whose
+		<add place="sublinear">trampling fierce</add>
+	</add>
+</line>
+<line>Makes wounds which need thy balm
+	<add place="sublinear">
+		<del rend="strikethrough">balm</del>
+	</add>
+</line>
+	</zone>
+</surface>

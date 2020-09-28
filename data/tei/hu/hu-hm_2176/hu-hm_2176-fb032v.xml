@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb032v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="32v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2175-fb032v.jp2"/>
+
+	<zone type="main">
+<line>I rise, as from a bath of <del rend="strikethrough">mi</del> sparkling water</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Among</del>
+		<add place="intralinear">In</add>
+	</mod>
+	the deep hollow of the sunless rocks
+</line>
+<line>Out of the stream of sound&#8212;</line>
+<line rend="indent4">Ione</line>
+<line rend="indent5">
+	<mod>
+		<del rend="strikethrough">Ha ha</del>
+		<add place="superlinear">Ah, no!</add>
+	</mod>
+	sweet sister
+</line>
+<line>The stream of sound has ebbed away from you</line>
+<line>And you pretend to rise out of its wave</line>
+<line rend="indent4">Panthea</line>
+<line>Peace Peace a mighty Power which is a Darkness</line>
+<line>Is rising
+	<mod>
+		<del rend="strikethrough">from</del>
+		<add place="superlinear">out o'</add>
+	</mod>
+	the Earth, &amp; from the sky
+</line>
+<line>Is showered like Night, &amp; from within the air</line>
+<line>Bursts, like eclipse which had been gathered up</line>
+<line>Inot the pores of light&#8212; and the bright visions</line>
+<line>Gleam like two meteors</line>
+	</zone>
+</surface>

@@ -15,7 +15,7 @@
         <del rend="strikethrough">ever her slow slow feet</del>
       <add place="sublinear">
         <del rend="strikethrough">to the ever unreposing</del> song
-        <space quantity="2" unit="characters"/>
+        <space extent="2" unit="characters"/>
         <hi rend="underline">M.</hi>
         <add place="sublinear">
           <del rend="strikethrough">her <unclear>gri</unclear> feet to the</del>
@@ -32,7 +32,7 @@
     <add place="superlinear">song</add>
   </line>
   <line rend="indent4">&#8212;</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line>Of leaves &amp; winds &amp; waves &amp; birds &amp; bees</line>
 
     <line>And falling
@@ -62,7 +62,7 @@
         breeze
       </line>
       <line rend="indent4">&#8212;</line>
-      <space quantity="1" unit="line"/>
+      <space extent="1" unit="line"/>
 
 
     <line>
@@ -107,7 +107,7 @@
         </add>
       </mod>
       </line>
-  <space quantity="1" unit="line"/>
+  <space extent="1" unit="line"/>
     <line>
       <del rend="strikethrough">And still her</del>
       <mod>

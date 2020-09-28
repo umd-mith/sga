@@ -7,37 +7,111 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="92">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0094.jp2"/>
   <zone type="main">
-    <line>We come from the mind</line>
-    <line>obscene</line>
+  <zone type="library">92</zone>
+    <line>We come from the mind
+    <add place="sublinear"> obscene</add>
+  </line>
     <line>Of human kind</line>
-    <line><unclear>dusk</unclear></line>
-    <line>Which was late so <del rend="strikethrough">durk</del>, &amp; <del rend="strikethrough">faint,</del> &amp; blind</line>
-    <line>Now, 'tis An Ocean</line>
-    <line>pure</line>
-    <line>Of <del rend="strikethrough">gentle</del> emotion</line>
-    <line><del rend="strikethrough">of</del> A Heaven of serene &amp; mighty motion</line>
-    <line>Years after years</line>
-    <line>Thro the blood &amp; tears</line>
-    <line>hatreds</line>
-    <line>And the Hell of <del rend="strikethrough">its</del> thots hates, &amp; hopes</line>
-    <line>&amp;</line>
-    <line>fears</line>
-    <line><del rend="strikethrough"><unclear>We waded</unclear></del> <del rend="strikethrough">Half wading half flying</del></line>
-    <line><del rend="strikethrough">Like</del> We <del rend="strikethrough">flew</del> waded &amp; flew</line>
-    <line>h And the <del rend="strikethrough">islands</del> islets were few</line>
-    <line>the bud</line>
-    <line>Were <del rend="strikethrough">half</del> blighted flowers of happiness</line>
-    <line>grew</line>
-    <line><del rend="strikethrough">The swiftness of</del></line>
-    <line>might</line>
-    <line>And the speed of its <del rend="strikethrough">spirit</del> is <del rend="strikethrough">in</del> on our <unclear>wing</unclear></line>
-    <line><del rend="strikethrough"><unclear>power</unclear></del></line>
-    <line><unclear>Within</unclear> our</line>
-    <line>beyond</line>
-    <line><del rend="strikethrough">And in our eyes</del></line>
-    <line>And    humans</line>
-    <line>The love <del rend="strikethrough">lulling</del> lies</line>
-    <line>that</line>
+    <line>Which was late so
+      <mod>
+        <del rend="strikethrough">durk</del>
+        <add place="superlinear"><unclear>dusk</unclear></add>
+      </mod>
+      , &amp; <del rend="strikethrough">faint,</del> &amp; blind</line>
+    <line rend="indent1">Now, 'tis An Ocean</line>
+    <line rend="indent1">Of
+      <mod>
+        <del rend="strikethrough">gentle</del>
+        <add place="superlinear">pure</add>
+      </mod>
+       emotion
+     </line>
+    <line>
+      <mod>
+        <del rend="overwritten">of</del>
+        <add place="intralinear"> A</add>
+      </mod>
+       Heaven of serene &amp; mighty motion</line>
+    <space unit="lines" extent="2"/>
+    <line rend="indent2">Years after years</line>
+    <line rend="indent2">Thro the blood &amp; tears</line>
+    <line>And the Hell of
+      <mod>
+        <del rend="overwritten">its</del>
+        <add place="intralinear">thots</add>
+      </mod>
+        hate<unclear>treds</unclear>,
+         &amp; hopes &amp; fears
+       </line>
+    <line rend="indent1">
+      <mod>
+        <del rend="overwritten"><unclear>We waded</unclear></del>
+      <add place="intralinear">
+        <del rend="strikethrough">Half wading</del>
+      </add>
+    </mod>
+     <del rend="strikethrough">half flying</del>
+   </line>
+    <line rend="indent1">
+      <del rend="strikethrough">Like</del> We
+      <mod>
+        <del rend="strikethrough">flew</del>
+        <add place="intralinear">waded</add>
+      </mod>
+        &amp; flew
+      </line>
+    <line rend="indent1"> And the
+      <mod>
+         <del rend="overwritten">islands</del>
+         <add place="intralinear"> islets</add>
+       </mod>
+        were few
+      </line>
+
+    <line>W
+      <add place="superlinear">h</add>
+      ere
+      <mod>
+        <del rend="strikethrough">half</del>
+        <add place="superlinear">the bud</add>
+      </mod>
+       blighted flowers of happiness
+    <add place="sublinear">grew</add>
+  </line>
+    <space unit="lines" extent="2"/>
+    <line rend="indent1"><del rend="strikethrough">The swiftness of</del></line>
+
+    <line>And the speed of its
+      <mod>
+        <del rend="strikethrough">spirit</del>
+        <add place="sublinear">
+          <del rend="strikethrough"><unclear>might</unclear></del>
+        </add>
+        <add place="superlinear">might</add>
+      </mod>
+       is
+       <mod>
+          <del rend="overwritten">in</del>
+          <add place="intralinear">on</add>
+        </mod>
+         our <unclear>wing</unclear>
+     </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">And in our eyes</del>
+      <add place="superlinear"><unclear>Within</unclear> our</add>
+    </mod>
+  </line>
+    <line>
+      <add place="interlinear">And beyond humans</add>
+    </line>
+    <line>The love
+      <mod>
+        <del rend="strikethrough">lulling</del>
+        <add place="sublinear">that</add>
+      </mod>
+       lies
+     </line>
     <line>Which makes all it looks on, Pardadise</line>
   </zone>
 </surface>

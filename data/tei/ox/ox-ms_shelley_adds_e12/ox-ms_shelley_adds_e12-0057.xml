@@ -7,37 +7,85 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="55">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0057.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">the <unclear>L</unclear> <unclear>Low esses</unclear></del></line>
-    <line>The snow upon my lifeless mountains</line>
-    <line>Is melted into living fountains</line>
+  <zone type="library">56</zone>
+    <line rend="indent3"><del rend="strikethrough">the <unclear>L</unclear> <unclear>Low esses</unclear></del></line>
+    <space unit="line" extent="1"/>
+    <line rend="indent1">The snow upon my lifeless mountains</line>
+    <line rend="indent1">Is melted into living fountains</line>
     <line>My solid Oceans flow &amp; leap &amp; shine</line>
-    <line>A spirit from my heart bursts forth</line>
-    <line>It fills with unexpected birth</line>
+    <line rend="indent1">A spirit from my heart bursts forth</line>
+    <line rend="indent1">It fills with unexpected birth</line>
     <line>My cold void bosom &#8212; oh it must be thine</line>
-    <line>On mine, on mine</line>
-    <line><del rend="strikethrough">My</del> <del rend="strikethrough">Oh</del></line>
-    <line>Gazing on thee, I feel, I know</line>
-    <line><del rend="strikethrough">A thousand leaves</del></line>
-    <line>For on</line>
-    <line><del rend="strikethrough">And as</del></line>
-    <line><del rend="strikethrough">For as I gaze on thee, I know</del></line>
-    <line>Green stalks burst forth, &amp; bright</line>
-    <line>flowers</line>
-    <line>glow</line>
+    <line rend="indent1">On mine, on mine</line>
+    <line rend="indent3">/////</line>
+    <line rend="indent3">////////
+    <!--these appear to be tally marks-->
+  </line>
+    <line rend="indent1"><del rend="strikethrough">My</del> <del rend="strikethrough">Oh</del></line>
+
+
+    <line rend="indent1">  <add place="interlinear">Gazing on thee, I feel, I know</add>
+      <del rend="strikethrough">A thousand leaves</del>
+    </line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">And as</del>
+  <add place="superlinear">For on</add>
+</mod>
+</line>
+    <zone type="calculation">
+      <!--tally marks-->
+    </zone>
+      <line rend="indent1"><del rend="strikethrough">For as I gaze on thee, I know</del></line>
+    <line>Green stalks burst forth, &amp; bright
+    <add place="sublinear">flowers
+      <add place="sublinear">grown</add>
+    </add>
+  </line>
     <line><del rend="strikethrough">Upon my dark &amp; wrinkled countenance</del></line>
     <line>And living shapes upon my bosom move</line>
     <line>Music is in the sea &amp; air my</line>
-    <line><del rend="strikethrough">And there is music on the winds &amp;</del></line>
-    <line><del rend="strikethrough">billows</del></line>
+    <line>
+      <mod>
+        <del rend="strikethrough">And there is music on the winds &amp;
+    <add place="sublinear">
+      <del rend="strikethrough">billows</del>
+    </add>
+  </del>
+  <add place="superlinear">Music is in the sea &amp; air my</add>
+</mod>
+</line>
+
     <line><del rend="strikethrough">An</del> <del rend="strikethrough">Sweet sound is in the water &amp; the air</del></line>
-    <line><del rend="strikethrough">And winged clouds walk through my</del></line>
-    <line>Winged          soar    <del rend="strikethrough">atmosphere</del></line>
-    <line>Dark     <del rend="strikethrough">Wind-walking</del> clouds <del rend="strikethrough">are</del></line>
-    <line><del rend="strikethrough">wandering</del></line>
-    <line><del rend="strikethrough">Laden</del> with</line>
-    <line>bright</line>
-    <line>here &amp; there</line>
-    <line>Full of the rain <del rend="strikethrough">new</del> buds are dreaming of</line>
-    <line>Tis Love all Love</line>
+    <line>
+
+      <del rend="strikethrough">And winged clouds walk through my</del>
+    <add place="sublinear">
+      <del rend="strikethrough">atmosphere</del>
+    </add>
+  </line>
+    <line>
+      <add place="intralinear">Winged</add>
+      <del rend="strikethrough">Wind-walking</del> clouds
+      <add place="superlinear">soar</add>
+       <del rend="strikethrough">are</del>
+     <add place="sublinear">
+      <del rend="strikethrough">wandering</del>
+    </add>
+  </line>
+    <line>Full
+      <add place="superlinear">
+
+          <del rend="strikethrough">Laden</del> with bright
+        <add place="superlinear">Dark</add>
+      </add>
+      
+       of the rain
+       <del rend="strikethrough">new</del>
+       buds are
+       <add place="superlinear">here &amp; there</add>
+        dreaming of</line>
+    <line rend="indent3">Tis Love all Love</line>
   </zone>
 </surface>

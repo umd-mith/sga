@@ -7,31 +7,92 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="100">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0102.jp2"/>
   <zone type="main">
+  <zone type="library">100</zone>
+  <zone type="sketch">
+    <!--sketch of tree-->
+  </zone>
+  <space unit="lines" extent="5"/>
     <line><del rend="strikethrough">Some remain, &amp;</del></line>
     <line>As from</line>
     <line><del rend="strikethrough">Like</del> <del rend="strikethrough">One</del> a swarm of populous bees</line>
-    <line>violet</line>
-    <line>In a mossy islet, <del rend="strikethrough">flower</del>-paven</line>
-    <line>Sick            <del rend="strikethrough"><unclear>oer</unclear></del> on the breeze</line>
-    <line><del rend="strikethrough">Some</del> with sweetness, <del rend="strikethrough">to the breeze</del></line>
-    <line><del rend="strikethrough">Wandering, seek</del> another haven</line>
-    <line><del rend="strikethrough">Give their <del rend="strikethrough">gold</del> silver wings</del></line>
-    <line><del rend="strikethrough">rove</del></line>
-    <line><del rend="strikethrough"><del rend="strikethrough"><unclear></unclear></del> Some around</del> walk to seek</line>
-    <line><del rend="strikethrough">Wandering on the plains</del></line>
-    <line>sea</line>
-    <line>under bells</line>
+    <line>In a mossy islet,
+      <mod>
+        <del rend="strikethrough">flower</del>
+        <add place="superlinear">violet</add>
+      </mod>
+      -paven</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Some</del>
+        <add place="superlinear">Sick</add>
+      </mod>
+       with sweetness,
+       <mod>
+         <del rend="strikethrough">to the breeze</del>
+       <add place="superlinear">
+        <mod> <del rend="overwritten"><unclear>oer</unclear></del>
+       <add place="intralinear">on</add> </mod>
+     the breeze
+   </add>
+ </mod>
+</line>
+<line> Give their
+  <mod>
+    <del rend="overwritten">gold</del>
+  <add place="intralinear">silver</add>
+</mod>
+wings
+</line>
+<line>
+  <add place="superlinear">
+    <del rend="strikethrough">rove</del>
+  </add>
+<del rend="strikethrough">
+    <unclear>Some</unclear> around
+  </del>
+   walk to seek
+</line>
+    <line><del rend="strikethrough">Wandering,
+      <add place="sublinear">see</add>
+       seek</del> another haven
+     <add place="sublinear">under bells</add>
+   </line>
+   <space unit="line" extent="1"/>
     <line><del rend="strikethrough">Whilst another</del></line>
-    <line>starry</line>
-    <line>Others meanwhile, <del rend="strikethrough">golden stars</del></line>
-    <line>Of the downward</line>
-    <line><del rend="strikethrough">In a heaven of leaves</del> &amp; flowers</line>
+    <line>Others meanwhile,
+      <mod>
+        <del rend="strikethrough">golden stars</del>
+      <add place="superlinear">starry</add>
+    </mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">In a heaven of leaves</del>
+        <add place="superlinear">Of the downward</add>
+      </mod>
+       &amp; flowers
+     </line>
     <line><del rend="strikethrough">Build</del> their waxen cittadels</line>
-    <line>those</line>
-    <line>Among <del rend="strikethrough">Under</del> <del rend="strikethrough">their</del> ancestral bowers</line>
-    <line>In the <del rend="strikethrough">hoar</del> <del rend="strikethrough">stump</del> of the old <del rend="strikethrough">tree</del></line>
-    <line>heart <unclear>c</unclear>    pine tree</line>
-    <line>Which <del rend="strikethrough">murmu</del></line>
-    <line>sings there</line>
+    <line>
+      <add place="intralinear">Among</add>
+       <del rend="strikethrough">Under</del> <del rend="strikethrough">their</del>
+       <add place="superlinear">those</add>
+        ancestral bowers
+      </line>
+    <line>
+      In the <del rend="strikethrough">hoar</del> <del rend="strikethrough">stump</del>
+    <add place="sublinear">heart</add> of the old
+    <mod>
+      <del rend="strikethrough">tree</del>
+    <add place="sublinear">pine tree</add>
+  </mod>
+</line>
+    <line>
+      Which
+      <mod>
+        <del rend="strikethrough">murmu</del>
+    <add place="sublinear">sings there</add>
+  </mod>
+</line>
   </zone>
 </surface>

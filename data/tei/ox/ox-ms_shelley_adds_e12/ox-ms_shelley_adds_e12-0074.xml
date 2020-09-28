@@ -7,22 +7,53 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="72">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0074.jp2"/>
   <zone type="main">
+  <zone type="library">72</zone>
     <line><del rend="strikethrough">As the sun rules,</del></line>
     <line>The great Sun rules as with a tyrants gaze</line>
     <line>The unquiet republic of the maze</line>
     <line>Of ever wandering Planets &#8212;&#8212;</line>
-    <line>On which our souls <unclear>are</unclear> <del rend="strikethrough">charioted</del></line>
-    <line>If change or time should ever bring thee low</line>
-    <line>&#8212; I</line>
-    <line>I dare not dream <del rend="strikethrough">that</del> I could below</line>
-    <line><del rend="strikethrough"><unclear>further</unclear></del></line>
-    <line>The half of all that thou &#8212; hast been for</line>
-    <line>me</line>
-    <line>cloud</line>
-    <line>a <del rend="strikethrough">fire</del> by <del rend="strikethrough"><unclear>nigh</unclear></del> day</line>
-    <line>A light in darkness for my desart way</line>
-    <line><unclear> </unclear></line>
-    <line><unclear>Whose foes</unclear> assure me with <unclear>of</unclear> <unclear> </unclear> nod</line>
+    <space unit="lines" extent="2"/>
+    <line>
+            On which our souls <unclear>are</unclear>
+            <del rend="strikethrough">charioted</del>
+          </line>
+    <space unit="lines" extent="2"/>
+    <line>
+      If change or time should ever bring thee low
+    </line>
+    <line>I dare not dream <del rend="strikethrough">that</del> I could below
+  <add place="sublinear">
+    <unclear><del rend="strikethrough">fur</del>ther</unclear>
+  </add>
+</line>
+
+    <line>The half of all that thou &#8212; hast been for
+    <add place="sublinear">me</add>
+  </line>
+<space unit="lines" extent="2"/>
+    <line>A light in darkness for my desart way
+    <add place="superlinear">a
+  <mod>
+    <del rend="strikethrough">fire</del>
+  <add place="superlinear">cloud</add>
+</mod>
+  by
+<mod>
+    <del rend="overwritten"><unclear>nigh</unclear> </del>
+  <add place="intralinear">day</add>
+</mod>
+</add>
+  </line>
+  <space unit="lines" extent="2"/>
+  <line>
+      <unclear>Whose foes</unclear>
+       assure me with <unclear>of</unclear>
+       <add place="superlinear">
+         <unclear unit="chars" extent="3"/>
+       </add>
+       <unclear unit="chars" extent="5"/>
+        nod
+      </line>
     <line>That you are <unclear>faultness</unclear> &#8212; as I wd. to God</line>
   </zone>
 </surface>

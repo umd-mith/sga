@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb016v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="16v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb016v.jp2"/>
+
+	<zone type="main">
+		<line><del rend="strikethrough">On In</del></line>
+		<line>We hear,
+			<mod>
+				<del rend="strikethrough">thee&#8212;We</del>
+				<add place="sublinear">&#8212;Kingless</add>
+			</mod>
+			 we are blest &amp; bless
+		 </line>
+
+<line>Drinking from thy sense &amp; sight</line>
+<line>Beauty majesty &amp; might</line>
+<line>As a lover, or <del rend="strikethrough">a</del> cameleon</line>
+<line>Grows like
+	<mod>
+		<del rend="strikethrough">with</del>
+		<add place="sublinear">like</add>
+	</mod>
+	what he gazes on
+</line>
+<line>Ye
+	<mod>
+		<del rend="strikethrough">People of the dead,</del>
+		<add place="superlinear">happy dead, whom</add>
+	</mod>
+	on
+	<mod>
+		<del rend="strikethrough">even my words</del>
+		<add place="superlinear">whom
+			<del rend="strikethrough">even my words</del>
+			<add place="superlinear">brightest verse
+			<add place="superlinear">beams of</add>
+		</add>
+	</add>
+	</mod>
+</line>
+<line>Are clouds to hide, not colours to portray</line>
+<line>Whether your nature
+	<add place="superlinear">
+		<del rend="strikethrough">are</del>
+	</add>
+	<mod>
+		<del rend="strikethrough">fills</del>
+		<add place="superlinear">is that</add>
+	</mod>
+	the Universe
+</line>
+<line>Which
+	<mod>
+		<del rend="strikethrough">living ye beheld &amp; felt</del>
+	<add place="sublinear">
+		once ye saw &amp; <del rend="strikethrough">felt</del>
+		<add place="sublinear">suffered &#8212; or</add>
+	</add>
+</mod>
+		</line>
+		<line rend="indent4">Voice</line>
+		<line>
+			Whom we have left we change &amp; pass away
+	</line>
+	</zone>
+</surface>

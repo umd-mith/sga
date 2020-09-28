@@ -7,39 +7,97 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="74">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0076.jp2"/>
   <zone type="main">
-    <line>And see where through two openings</line>
-    <line>in the</line>
-    <line>wood</line>
+    <line>And see where through two openings
+    <add place="sublinear">in the
+    <add place="sublinear">wood</add>
+  </add>
+</line>
     <line>Which hanging branches over canopy;</line>
     <line>And where two <del rend="strikethrough">bro</del> runnels of the rivulet</line>
-    <line>Between</line>
-    <line><del rend="strikethrough">Among</del> the close moss, violet-inwoven</line>
-    <line>sisters</line>
-    <line>Have made their path of <del rend="strikethrough">music</del></line>
-    <line>melody, like <del rend="strikethrough">friends</del></line>
-    <line>which part <del rend="strikethrough">awhile that</del> they may meet <del rend="strikethrough">again</del></line>
-    <line><del rend="strikethrough">Mak</del>      with sigh         with smiles</line>
-    <line>Two visions of strange radiance float</line>
-    <line>upon</line>
-    <line>The <del rend="strikethrough">billowy</del> Oceanlike enchantment of</line>
-    <line>strong</line>
-    <line>sound</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Among</del>
+        <add place="superlinear">Between</add>
+      </mod> the close moss, violet-inwoven
+  </line>
+    <line>Have made their path of
+      <mod>
+        <del rend="strikethrough">music</del>
+      <add place="sublinear">meoldy, like
+      <del rend="strikethrough">friends</del>
+    <add place="superlinear">sisters</add>
+  </add>
+</mod>
+</line>
+    <line>which part
+      <mod>
+        <del rend="strikethrough">awhile that</del>
+        <add place="sublinear">with sighs</add>
+      </mod>
+       they may meet
+       <mod>
+         <del rend="strikethrough">again</del>
+       <add place="sublinear">with smiles</add>
+     </mod>
+   </line>
+   <line>
+     <del rend="strikethrough">Mak</del>
+   </line>
+    <line>Two visions of strange radiance float
+    <add place="sublinear">upon</add>
+  </line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">billowy</del>
+        <add place="intralinear">Oceanlike</add>
+      </mod>
+         enchantment of strong
+         <add place="sublinear">sound</add>
+       </line>
     <line>Which flows intenser keener deeper yet</line>
     <line>Under the ground &amp; through the windless air &#8212;</line>
-    <line><del rend="strikethrough">Ione</del></line>
-    <line><unclear>thin</unclear></line>
-    <line>I see a chariot like the <del rend="strikethrough">delicatest</del> boat</line>
-    <line><del rend="strikethrough">Mother of the</del>   pointed</line>
-    <line><del rend="strikethrough">Of the young moon, golden whose hollow</del></line>
-    <line><unclear>horns</unclear></line>
-    <line><unclear>appear</unclear></line>
-    <line>To <del rend="strikethrough">flow in &amp; fade <unclear>mingle</unclear> with lucid</del></line>
-    <line>By which         <del rend="strikethrough"><unclear>air</unclear> sky</del>;</line>
+    <space unit="line" extent="2"/>
+    <line rend="indent3"><del rend="strikethrough">Ione</del>/</line>
+    <line>I see a chariot like the
+      <mod>
+        <del rend="strikethrough">delicatest</del>
+        <add place="superlinear"><unclear>thin</unclear></add>
+      </mod>
+       boat
+     </line>
+
+    <line><del rend="strikethrough">Of the young moon,
+      <add place="superlinear">
+        <del rend="strikethrough">Mother of the the</del>
+      </add>
+       golden whose hollow</del>
+     <add place="superlinear">pointed</add>
+   <add place="sublinear"><unclear>horns</unclear>
+ <add place="sublinear"><unclear>appear</unclear></add>
+</add>
+</line>
+    <line>To <del rend="strikethrough">flow in &amp; fade <unclear>mingle</unclear> with lucid</del>
+  <add place="sublinear">
+  <del rend="strikethrough"><unclear>air</unclear> sky; </del>
+</add>
+</line>
     <line><del rend="strikethrough">Golden</del></line>
-    <line>Where<del rend="strikethrough">in</del> the <del rend="strikethrough">young</del> mother of the Months is</line>
-    <line>borne</line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Wherein</del>
+        <add place="superlinear">By which</add>
+      </mod>
+       the <del rend="strikethrough">young</del> mother of the Months is
+    <add place="sublinear">borne</add>
+    </line>
     <line>When she upsprings from interlunar sleep</line>
     <line>her</line>
-    <line>Into <del rend="strikethrough">the</del> western cave, by ebbing light</line>
+    <line>Into
+      <mod>
+        <del rend="strikethrough">the</del>
+        <add place="superlinear">her</add>
+      </mod>
+       western cave, by ebbing light
+     </line>
   </zone>
 </surface>

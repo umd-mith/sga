@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-fb032r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="32r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb032r.jp2"/>
+
+	<zone type="main">
+		<line>
+			fervid awakening of the public
+		</line>
+		<line>
+			mind which
+			<del rend="strikethrough">
+				overthrew the
+			</del>
+		</line>
+		<line>
+			<del rend="strikethrough">
+				hierarchy of Religion
+			</del>
+			shook
+		</line>
+		<line>
+			the most oppressive form of
+		</line>
+		<line>
+			the Christian Religion to the
+		</line>
+		<line>
+			dust, we owe Milton to
+		</line>
+		<line>
+			the
+			<add place="superlinear">1</add>
+			<hi rend="underline">
+				development
+			</hi>
+			<add place="superlinear">1</add>
+			&amp;
+			<hi rend="underline">
+				progress
+			</hi>
+		</line>
+		<line>
+			of the same spirit.
+			<del rend="strikethrough">Chaucer was</del>
+		</line>
+		<line>
+			<del rend="strikethrough">
+				contemporary with Wickliff</del>
+			</line>
+			<line>
+				The great writers of our own</line>
+				<line>
+					age are,
+					<del rend="strikethrough">
+						the  let us believe
+					</del>
+				</line>
+				<line>
+					we we have reason to suppose
+				</line>
+				<line>
+					the forerunners of some uni
+				</line>
+				<line>
+					magined chagne in our
+				</line>
+				<line>
+					Social condition, &amp; in the
+				</line>
+				<line>
+					opinions which cement it.
+				</line>	
+	<line>
+		If England were divided
+	</line>
+	<line>
+		into forty republics, each
+	</line>
+	</zone>
+</surface>

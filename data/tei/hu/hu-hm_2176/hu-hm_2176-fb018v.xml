@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb018v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="18v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb018v.jp2"/>
+
+	<zone type="main">
+		<line> The joy the triumph of delight and madness</line>
+		<line>The boundless overflowing bursting gladness</line>
+		<line>The
+			<mod>
+				<del rend="strikethrough">an</del>
+				<add place="superlinear">fire</add>
+			</mod>
+			of
+				<del rend="strikethrough">bursting joy not be</del> confined
+			</line>
+			<line>
+				<del rend="strikethrough">The</del>
+			</line>
+			<line>Ha! ha! the animation of delight</line>
+			<line>Which wraps me, like an atomostphere of light</line>
+			<line>And bears me as a cloud is borne
+				<add place="sublinear">by its own wind</add>
+			</line>
+			<line rend="indent2"><del rend="strikethrough">Among</del></line>
+			<line rend="indent2"> A <del rend="strikethrough">Green world mid many a star</del></line>
+			<line rend="indent2"><del rend="strikethrough">None of which more happy are</del> </line>
+			<line rend="indent2"><del rend="strikethrough">Th I am spinning round</del></line>
+<space unit="lines" extent="4"/>
+<line rend="indent2">
+	<add place="superlinear">
+		<del rend="strikethrough">Among</del>
+	</add>
+	<del rend="strikethrough">A Green world mid many a star</del>
+</line>
+<line rend="indent2">
+	<del rend="strikethrough">None of which more happy</del> are
+</line>
+<line rend="indent2">
+	<del rend="strikethrough">Th I am spinning round</del>
+</line>
+<line>A solid
+	<add place="superlinear">in</add>
+	cloud raning hot thundestones
+</line>
+<line>And</line>
+
+	</zone>
+</surface>

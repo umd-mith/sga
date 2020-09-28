@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb027r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="27r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb027r.jp2"/>
+
+	<zone type="main">
+<line><del rend="strikethrough">And his own heart is</del></line>
+<line><del rend="strikethrough">The earth</del> Man</line>
+<line><del rend="strikethrough">My sons are as</del> one
+<add place="superlinear">harmonious</add>
+soul of many a soul
+</line>
+<line><del rend="strikethrough">Subject to one</del></line>
+<line>Whose
+	<add place="superlinear">
+		<del rend="strikethrough">Conscious</del>
+	</add>
+	 Love is
+	 <mod>
+		 <del rend="strikethrough">their</del>
+		 <add place="superlinear">its</add>
+	 </mod>
+	 own law, &amp;
+ </line>
+ <line>
+	 <mod>
+		 <del rend="strikethrough">And all the forms of life</del>
+		 <add place="sublinear">
+			 <del rend="strikethrough">things flow to</del>
+		 </add>
+ <add place="superlinear">To which all things flow</add>
+ </mod>
+ all as Rivers to the sea
+ </line>
+ <line>
+	Familiar
+	<add place="superlinear">
+		<del rend="strikethrough">Sweet</del>
+	</add>
+	<mod>
+		<del rend="strikethrough">things</del>
+		<add place="superlinear">acts</add>
+	</mod>
+	are beautiful thro love
+</line>
+<line>
+	<del rend="strikethrough">And toil, &amp; Thought</del> thro life's green grove
+</line>
+<line>Labour &amp; Pain, &amp; grief <del rend="strikethrough">with solemn</del></line>
+<line><del rend="strikethrough">Like beasts that once were wild</del></line>
+<line>
+	<mod>
+		<del rend="strikethrough">Wander like
+	<add place="superlinear"><unclear>as</unclear></add>
+	beasts made</del>
+	<add place="sublinear">Walk like tame beasts &#8212; none knew</add>
+</mod>
+	&#8212; how gentle they could be
+</line>
+
+	</zone>
+</surface>

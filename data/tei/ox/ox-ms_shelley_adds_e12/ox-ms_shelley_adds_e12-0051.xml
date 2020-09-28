@@ -7,31 +7,97 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="49">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0051.jp2"/>
   <zone type="main">
-    <line>Ione</line>
-    <line>What dark forms were they . . .</line>
-    <line>The past Hours weak &amp; grey</line>
-    <line>spoil</line>
-    <line>With <del rend="strikethrough">one</del> the <del rend="strikethrough">coil,</del> which their toil</line>
-    <line><del rend="strikethrough">Rolled</del> Raked together</line>
-    <line>From the conquests <del rend="strikethrough">which none</del></line>
-    <line>cd. foil</line>
-    <line>but <del rend="strikethrough">o</del> One</line>
-    <line><del rend="strikethrough">Away, away</del></line>
-    <line>They have   they have</line>
-    <line><del rend="strikethrough">It is</del> past, <del rend="strikethrough">it is</del> past</line>
-    <line>outspeeded the</line>
-    <line><del rend="strikethrough">the</del> blast <del rend="strikethrough">I have <unclear>sur</unclear></del></line>
-    <line><del rend="strikethrough">It</del> They <del rend="strikethrough">has</del> <del rend="strikethrough"><unclear>oerspeeded</unclear></del></line>
-    <line><unclear>Whilst tis</unclear> said</line>
-    <line>They <del rend="strikethrough">Whither are gone</del>, they are fled</line>
-    <line>Whither o whither</line>
-    <line><del rend="strikethrough">To the cold, to the dead</del> . . .</line>
-    <line>To the cold to the <del rend="strikethrough">dead</del> <del rend="strikethrough">to the</del> dead</line>
-    <line><unclear>lost</unclear></line>
-    <line>To <unclear>r</unclear></line>
-    <line><del rend="strikethrough">O What bright</del></line>
-    <line><del rend="strikethrough">Forms of light</del></line>
-    <line>As con<unclear>trast</unclear> to Lord Byrons feeling<unclear>s</unclear> on the <unclear>same</unclear></line>
-    <line>subject</line>
+  <zone type="library">49</zone>
+    <line rend="indent4" xml:id="e12-51-pu_line_1">Ione</line>
+    <line rend="indent3" xml:id="e12-51-pu_line_2">1</line>
+    <line xml:id="e12-51-pu_line_3">What dark forms were they . . .</line>
+    <line rend="indent3" xml:id="e12-51-pu_line_4">2</line>
+    <line xml:id="e12-51-pu_line_5">The past Hours weak &amp; grey</line>
+    <line xml:id="e12-51-pu_line_6">With
+      <mod>
+        <del rend="overwritten">one</del>
+        <add place="intralinear"> the</add>
+      </mod>
+       <mod>
+         <del rend="strikethrough">coil,</del>
+         <add place="superlinear">spoil</add>
+       </mod>
+        which their toil
+      </line>
+    <line xml:id="e12-51-pu_line_7">
+      <mod>
+        <del rend="strikethrough">Rolled</del>
+        <add place="intralinear"> Raked</add>
+      </mod>
+       together
+     </line>
+    <line xml:id="e12-51-pu_line_8">From the conquests
+      <mod>
+        <del rend="strikethrough">which none</del>
+      <add place="sublinear">but one</add>
+    </mod>
+    cd. foil
+  </line>
+    <line xml:id="e12-51-pu_line_9"><del rend="strikethrough">Away, away</del></line>
+    <line rend="indent3" xml:id="e12-51-pu_line_10">3</line>
+       <zone type="calculation">
+         <!--tally marks-->
+       </zone>
+    <line xml:id="e12-51-pu_line_11">
+      <mod>
+        <del rend="strikethrough">It is</del>
+        <add place="superlinear">They have</add>
+      </mod>
+       past,
+       <mod>
+         <del rend="strikethrough">it is</del>
+         <add place="superlinear">they have</add>
+       </mod>
+        past</line>
+    <line xml:id="e12-51-pu_line_12">
+      <mod>
+        <del rend="overwritten">It</del>
+        <add place="intralinear">They</add>
+      </mod>
+      <mod>
+          <del rend="strikethrough">has</del> <del rend="strikethrough"><unclear>oerspeeded</unclear></del>
+        <add place="superlinear">outspeeded the
+        <add place="sublinear">
+          <del rend="strikethrough">the</del>
+        </add>
+        blast
+        <del rend="strikethrough">I have <unclear>sur</unclear></del>
+      </add>
+    </mod>
+      </line>
+    <line xml:id="e12-51-pu_line_13">They
+      <mod>
+        <del rend="strikethrough">Whither are gone</del>
+        <add place="superlinear"><unclear>Whist tis</unclear> said</add>
+      </mod>
+        , they are fled
+      </line>
+    <line rend="indent3" xml:id="e12-51-pu_line_14">Whither o whither</line>
+    <line xml:id="e12-51-pu_line_15"><del rend="strikethrough">To the cold, to the dead</del> . . .</line>
+    <line xml:id="e12-51-pu_line_16">To the cold to the
+      <mod>
+        <del rend="strikethrough">dead</del>
+        <add place="sublinear"><unclear>lost</unclear></add>
+      </mod>
+     <del rend="strikethrough">to the</del> dead
+   </line>
+    <line xml:id="e12-51-pu_line_17">To <unclear>r</unclear></line>
+    <line xml:id="e12-51-pu_line_18"><del rend="strikethrough">O What bright</del></line>
+    <line xml:id="e12-51-pu_line_19"><del rend="strikethrough">Forms of light</del></line>
+    <zone type="calculation">
+      <!--tally marks-->
+    </zone>
+    <zone type="sketch">
+      <!--sketch of a sailboat-->
+    </zone>
+    <line>
+    
+      As con<unclear>trast</unclear> to Lord Byrons feeling<unclear>s</unclear> on the <unclear>same</unclear></line>
+      <line>subject</line>
   </zone>
 </surface>

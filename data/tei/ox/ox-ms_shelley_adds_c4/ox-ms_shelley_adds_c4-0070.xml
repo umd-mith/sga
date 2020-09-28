@@ -26,9 +26,9 @@
     <line>
       In opposition rule our mortal day &#8212;
     </line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent4">&#8212;</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
 
     <line rend="indent1">And
       <mod>
@@ -131,9 +131,9 @@
        </mod>
         world thinks already old
       </line>
-      <space quantity="1" unit="line"/>
+      <space extent="1" unit="line"/>
       <line rend="indent4">&#8212;</line>
-      <space quantity="1" unit="line"/>
+      <space extent="1" unit="line"/>
     <line rend="indent1">
       <mod>
         <del rend="strikethrough">And in the</del>

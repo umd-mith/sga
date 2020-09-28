@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb017v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="17v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb017v.jp2"/>
+
+	<zone type="main">
+<line rend="indent4">The Moon</line>
+<line>Thou art speeding round the sun</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Thou green</del>
+		<add place="superlinear">
+			<del rend="strikethrough">Fairest</del>
+		</add>
+		<add place="sublinear">Brightest</add>
+	</mod>
+	World of many a one
+</line>
+<line>
+	<del rend="strikethrough">Swifter calmer is thy motion</del>
+</line>
+<line>
+	<del rend="strikethrough">Finless cleaver of the an Ocean</del>
+</line>
+<line><del rend="strikethrough">Green &amp; azure</del>,
+</line>
+<line>Green &amp; azure moon,
+	<add place="superlinear">orb</add>
+	which shinest
+</line>
+<line>
+	With a light which is divinest
+</line>
+<line>Among all the lamps of Heaven</line>
+<line>To whom love &amp; light is given</line>
+<line>I thy
+	<mod>
+		<del rend="strikethrough">chrystal</del>
+		<add place="superlinear">icy</add>
+	</mod>
+	paramour
+</line>
+<line>Borne beside thee by a power</line>
+<line>Like the
+	<mod>
+		<del rend="strikethrough">magnet</del>
+		<add place="superlinear">polar</add>
+	</mod>
+	Paradise
+</line>
+<line>
+	<del rend="strikethrough">Which there is in</del> lovers eyes</line>
+	<line>Magnet like <del rend="strikethrough">of</del> in</line>
+	</zone>
+</surface>

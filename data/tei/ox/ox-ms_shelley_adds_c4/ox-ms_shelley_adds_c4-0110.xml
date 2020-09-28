@@ -60,7 +60,7 @@
     </add>
   </mod>
 </line>
-<space quantity="2" unit="lines"/>
+<space extent="2" unit="lines"/>
 
     <line>
       <mod>
@@ -71,13 +71,13 @@
           <del rend="strikethrough">Fell on</del></add>
         </add>
       </mod>
-         <del rend="strikethrough">Were tangled in the hair of those <gap quantity="4" unit="chars"/></del>
+         <del rend="strikethrough">Were tangled in the hair of those <gap extent="4" unit="chars"/></del>
        </line>
     <line><del rend="strikethrough">Caught</del> On fairest <del rend="strikethrough">bosoms, &amp; the sunniest hair tresses</del></line>
     <line>Fell, and were melted by the youthful glow</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent4">&#8212;</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line>Which they extinguished;
       <mod>
         <del rend="strikethrough">even and their vapours</del>

@@ -7,28 +7,98 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="28">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0030.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">as      within</del></line>
-    <line>I went among my <del rend="strikethrough">a</del> kind, I armed.</line>
-    <line>with triple brass</line>
-    <line>Of calm endurance I <del rend="strikethrough">did gird my heart</del></line>
-    <line>my weak heart I armed</line>
-    <line>To bear scorn hate &amp; fear, a woeful mass</line>
-    <line>some</line>
-    <line><del rend="strikethrough">one</del></line>
-    <line>Or when <del rend="strikethrough">some</del> star of many a one</line>
-    <line>the night</line>
-    <line>That walk &amp; wander thro <del rend="strikethrough">drear</del> <del rend="strikethrough">night</del></line>
+    <zone type="library">28</zone>
+
+    <line>I went among my <del rend="strikethrough">a</del> kind,
+    <del rend="strikethrough">I</del>
+      <add place="superlinear">
+        <del rend="strikethrough">as</del>
+      </add>
+      <del rend="strikethrough">armed</del>
+      <add place="superlinear">
+        <del rend="strikethrough">within</del>
+      </add>
+      <add place="superlinear">with triple brass</add>
+    </line>
+
+    <line>Of calm endurance
+      <mod>
+        <del rend="strikethrough">I did gird my heart</del>
+      <add place="sublinear">my weak heart i armed</add>
+    </mod>
+  </line>
+    <line>
+      To bear scorn hate &amp; fear, a woeful mass
+    </line>
+    <zone type="sketch">
+      <!--sketch of three faces-->
+    </zone>
+<space unit="lines" extent="5"/>
+    <line>Or when
+      <mod>
+        <del rend="strikethrough">some</del>
+        <add place="superlinear">
+        <mod>
+          <del rend="strikethrough">one</del>
+          <add place="superlinear">some</add>
+        </mod>
+        </add>
+      </mod>
+         star of many a one</line>
+    <line>That walk &amp; wander thro
+      <mod>
+        <del rend="strikethrough">drear</del> <del rend="strikethrough">night</del>
+      <add place="superlinear">the night</add>
+    </mod>
+  </line>
     <line>Has found that spot thro which alone</line>
     <line><del rend="strikethrough">from</del> fall   high those</line>
-    <line>Beams <del rend="strikethrough">free</del> <del rend="strikethrough">come</del> &#8212; from <del rend="strikethrough">Heaven</del> <del rend="strikethrough">that</del> bower <unclear>upon</unclear></line>
-    <line><unclear>those</unclear> <unclear>path</unclear></line>
-    <line>Ere it is borne away away</line>
-    <line>cannot</line>
-    <line>By the swift Heavens that will not stay</line>
+    <line>Beams
+      <mod>
+        <del rend="strikethrough">free</del>
+        <add place="superlinear">
+          <del rend="strikethrough">from</del>
+        </add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">come</del>
+        <add place="superlinear">fall</add>
+      </mod>
+         &#8212; from
+         <mod>
+           <del rend="strikethrough">Heaven</del>
+           <add place="superlinear">high</add>
+         </mod>
+         <mod>
+            <del rend="strikethrough">that</del>
+            <add place="superlinear">those</add>
+          </mod>
+          <add place="sublinear">
+            <unclear>those path</unclear>
+          </add>
+           bower <unclear>upon</unclear>
+         </line>
+
+    <line>Ere it is borne away away,</line>
+
+    <line>By the swift Heavens that
+      <add place="superlinear">cannot</add>
+      will not stay
+    </line>
     <line>It scatters beams of golden light</line>
-    <line>Which stream in lines <unclear>their</unclear> <unclear>that</unclear> neer unite</line>
-    <line><del rend="strikethrough">And round them is</del> the gloom divine is still</line>
-    <line>around</line>
+    <line>Which stream in lines
+      <mod>
+        <del rend="strikethrough"><unclear>their</unclear></del>
+        <add place="intralinear"> <unclear>that</unclear></add>
+      </mod>
+       neer unite
+     </line>
+    <line>
+      <del rend="strikethrough">And round them is</del>
+    the gloom divine is still
+    <add place="sublinear">around</add>
+  </line>
+
     <line>And underneath the <del rend="strikethrough">grass</del> mossy ground</line>
   </zone>
 </surface>

@@ -7,23 +7,29 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="56">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0058.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">The story of</del></line>
-    <line>The Greek tragic writers were accustomed</line>
-    <line>to choose a subject well known to thier</line>
-    <line>auditors &amp; often treated by their</line>
-    <line><del rend="strikethrough">contemporaries &amp; rivals</del> &#8212;-</line>
-    <line>The Greek tragic writers <del rend="strikethrough">in their</del></line>
-    <line>in selecting <unclear>thier</unclear></line>
-    <line><del rend="strikethrough">treatment of</del> <del rend="strikethrough">when they</del> <del rend="strikethrough">choosing</del> as <del rend="strikethrough">a</del></line>
-    <line>subject any portion of the history or</line>
-    <line>mythology of their nation, employed</line>
-    <line>in their treatment of it, a certain</line>
-    <line>arbitrary discretion. They by no means</line>
-    <line>felt themselves obliged to adhere to the</line>
-    <line>common interpretation, or to imitate</line>
-    <line>in story, as in title their <del rend="strikethrough"><unclear> ? </unclear></del> <unclear>rivals</unclear></line>
-    <line>&amp; predecessors. Such a plan would</line>
-    <line>have been no more than <del rend="strikethrough">to <unclear>s</unclear></del> the</line>
-    <line>resignation of those claims to <del rend="strikethrough"><unclear>emulation</unclear></del></line>
+    <zone type="library">56</zone>
+    <line xml:id="e11-0056-pu_line_1"><del rend="strikethrough">The story of</del></line>
+    <line rend="indent1" xml:id="e11-0056-pu_line_2">>The Greek tragic writers were accustomed</line>
+    <line xml:id="e11-0056-pu_line_3">to choose a subject well known to their</line>
+    <line xml:id="e11-0056-pu_line_4">>auditors &amp; often treated by their</line>
+    <line xml:id="e11-0056-pu_line_5">><del rend="strikethrough">contemporaries &amp; rivals</del> &#8212;-</line>
+    <line rend="indent1" xml:id="e11-0056-pu_line_6">>The Greek tragic writers
+      <mod>
+         <del rend="strikethrough">in their</del>
+       <add place="sublinear">in selecting <unclear>their</unclear></add>
+     </mod>
+   </line>
+
+    <line xml:id="e11-0056-pu_line_7">><del rend="strikethrough">treatment of</del> <del rend="strikethrough">when they</del> <del rend="strikethrough">choosing</del> as <del rend="strikethrough">a</del></line>
+    <line xml:id="e11-0056-pu_line_8">subject any portion of the history or</line>
+    <line xml:id="e11-0056-pu_line_9">>mythology of their nation, employed</line>
+    <line xml:id="e11-0056-pu_line_10">>in their treatment of it, a certain</line>
+    <line xml:id="e11-0056-pu_line_11">>arbitrary discretion. They by no means</line>
+    <line xml:id="e11-0056-pu_line_12">>felt themselves obliged to adhere to the</line>
+    <line xml:id="e11-0056-pu_line_13">>common interpretation, or to imitate</line>
+    <line xml:id="e11-0056-pu_line_14">>in story, as in title their <del rend="strikethrough"><unclear> ? </unclear></del> <unclear>rivals</unclear></line>
+    <line xml:id="e11-0056-pu_line_15">>&amp; predecessors. Such a plan would</line>
+    <line xml:id="e11-0056-pu_line_16">>have been no more than <del rend="strikethrough">to <unclear>s</unclear></del> the</line>
+    <line xml:id="e11-0056-pu_line_17">>resignation of those claims to <del rend="strikethrough"><unclear>emulation</unclear></del></line>
   </zone>
 </surface>

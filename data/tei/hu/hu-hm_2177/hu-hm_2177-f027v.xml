@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-fb027v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="27v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb027vr.jp2"/>
+	<zone type="main">
+<line xml:id="hm_2177_pu_preface_27v_1">
+	the peculiarity of the moral
+</line>
+<line xml:id="hm_2177_pu_preface_27v_2">
+	&amp; intellectual
+	<mod>
+		<del rend="strikethrough">education</del>
+	<add place="intralinear">condition</add>
+</mod>
+</line>
+<line xml:id="hm_2177_pu_preface_27v_3">
+	of the minds among which
+</line>
+<line xml:id="hm_2177_pu_preface_27v_4">
+	they were produced. Thus
+</line>
+<line xml:id="hm_2177_pu_preface_27v_5">
+	a number of writers have the
+</line>
+<line xml:id="hm_2177_pu_preface_27v_6">
+	form, whilst they want the
+</line>
+<line xml:id="hm_2177_pu_preface_27v_7">
+	spirit of those whom they are
+	<add place="superlinear">it is alledged</add>
+</line>
+<line xml:id="hm_2177_pu_preface_27v_8">
+	supposed
+<add place="superlinear">they</add>
+to imitate;
+<del rend="strikethrough">and it</del>
+</line>
+<line xml:id="hm_2177_pu_preface_27v_9">
+	<del rend="strikethrough">is not because</del>
+	because the former
+</line>
+<line xml:id="hm_2177_pu_preface_27v_10">
+	is the endowment of the age
+</line>
+<line xml:id="hm_2177_pu_preface_27v_11">
+	in which they live, &amp; the latter
+</line>
+<line xml:id="hm_2177_pu_preface_27v_12">
+	must be
+	<add place="superlinear">the</add>
+	uncommunicated
+</line>
+<line xml:id="hm_2177_pu_preface_27v_13">
+	lightning of their own mind
+</line>
+<line xml:id="hm_2177_pu_preface_27v_14">
+	<del rend="strikethrough">In</del>
+	how many second rate
+</line>
+<line xml:id="hm_2177_pu_preface_27v_15">
+	writers of the age of Queen
+</line>
+<line xml:id="hm_2177_pu_preface_27v_16">
+	Elizabeth do
+	<del rend="strikethrough">we find a style</del>
+</line>
+<line xml:id="hm_2177_pu_preface_27v_17">
+	<del rend="strikethrough">&amp;</del>
+	posss a style &amp; form
+</line>
+<line xml:id="hm_2177_pu_preface_27v_18">
+	which is in ewery way admir
+</line>
+	</zone>
+</surface>

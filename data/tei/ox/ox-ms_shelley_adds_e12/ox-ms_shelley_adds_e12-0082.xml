@@ -7,47 +7,144 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="80">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0082.jp2"/>
   <zone type="main">
-    <line>grew over</line>
-    <line><del rend="strikethrough">Whose population</del>, which the Earth</line>
-    <line><del rend="strikethrough">drank</del> up</line>
-    <line><del rend="strikethrough">Whose population</del>   <del rend="strikethrough">were mortal, but</del></line>
-    <line><del rend="strikethrough">not human</del></line>
-    <line>see</line>
-    <line><del rend="strikethrough">Were</del> Was mortal but not human, <del rend="strikethrough">and</del> they lie</line>
-    <line>See their <del rend="strikethrough">last</del> works &amp;     swallowed up</line>
-    <line>uncouth skeletons</line>
-    <line><unclear>split</unclear></line>
-    <line><del rend="strikethrough">And around</del></line>
-    <line><del rend="strikethrough">heaven</del> cleaving pyramids &amp;</line>
-    <line><del rend="strikethrough"><unclear>The</unclear> <unclear>spkes</unclear></del> Huddled in grey       domes</line>
-    <line><del rend="strikethrough">black</del> annihilation <del rend="strikethrough">split</del></line>
-    <line><unclear>See</unclear> their sky</line>
-    <line>Jammed in<del rend="strikethrough">to</del> the hard grey deep &#8212; and over</line>
-    <line><unclear>thick</unclear>           these</line>
+  <zone type="library">80</zone>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">Whose population</del>
+        <add place="superlinear"> Whose population</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough">were mortal, but not human</del>
+        <add place="superlinear">which the earth
+
+  <mod>
+    <add place="sublinear">
+    <del rend="strikethrough">drank up</del>
+  </add>
+  <add place="superlinear">grew over</add>
+</mod>
+</add>
+</mod>
+</line>
+    <line>
+      <mod>
+        <del rend="overwritten">Were</del>
+      <add place="intralinear">Was</add>
+    </mod>
+     mortal but not human,
+     <mod>
+       <del rend="strikethrough">and</del>
+       <add place="superlinear">see</add>
+     </mod>
+      they lie
+    <add place="sublinear">swallowed up</add>
+  </line>
+  <line>
+    See their
+    <del rend="strikethrough">last</del>
+    works &amp; uncouth skeletons
+  </line>
+    <line><del rend="strikethrough">And around</del>
+  <add place="superlinear">
+    <unclear>split</unclear>
+</add>
+<del rend="strikethrough">heaven</del>
+cleaving pyramids &amp;
+<add place="sublinear">domes</add>
+</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough"><unclear>The</unclear> <unclear>skies</unclear></del>
+        <add place="sublinear"><unclear>See</unclear> their sky</add>
+      </mod>
+       Huddled in
+       <mod>
+         <del rend="strikethrough">black</del>
+         <add place="superlinear"> grey</add>
+       </mod>
+     annhilation
+   <del rend="strikethrough">split</del>
+     </line>
+    <line>Jammed in<del rend="strikethrough">to</del> the hard grey
+    <add place="sublinear"><unclear>thick</unclear></add>
+     deep &#8212; and over
+<add place="sublinear">these</add>
+</line>
     <line>The <del rend="strikethrough">cor</del> jagged alligator, &amp; the might</line>
-    <line>earth convulsing <del rend="strikethrough">mammoth</del> which</line>
-    <line>Of <del rend="strikethrough">dark behemoth</del>, <del rend="strikethrough">who</del>       were over</line>
-    <line>The Imperial     <unclear></unclear>       shores</line>
-    <line><del rend="strikethrough">The monarch</del> beasts, &amp; on the slimy <del rend="strikethrough">earth</del></line>
+
+    <line>Of
+      <mod>
+        <del rend="strikethrough">dark behemoth</del>
+        <add place="superlinear">earth convulsing
+        <del rend="strikethrough">mammoth</del>
+      </add>
+    </mod>, <del rend="strikethrough">who</del>
+    <add place="superlinear">which</add>
+          were over
+        </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The monarch</del>
+        <add place="superlinear">The Imperial</add>
+      </mod>
+      beasts, &amp; on the slimy
+      <mod>
+        <del rend="strikethrough">earth</del>
+    <add place="superlinear">shores</add>
+  </mod>
+</line>
     <line>And weed-overgrown continents, rank forests</line>
-    <line>Increased &amp; multiplied like summer flies   worms</line>
-    <line>cold blue world</line>
-    <line>On an abandoned corpse till this <del rend="strikethrough">green globe</del></line>
-    <line><del rend="strikethrough">world</del></line>
-    <line><del rend="strikethrough">With</del> Was clothed with waters <unclear>as</unclear> <del rend="strikethrough"><unclear>globe</unclear></del></line>
-    <line><unclear> </unclear></line>
-    <line><del rend="strikethrough">the</del> <unclear>some</unclear></line>
-    <line>Whose <del rend="strikethrough">chariot is</del> a comet,       <del rend="strikethrough"><unclear>Spirit</unclear></del></line>
-    <line><del rend="strikethrough">cried</del> aloud</line>
-    <line>Be not . . . and like my words, they were</line>
-    <line>no more</line>
+    <line>Increased &amp; multiplied like summer
+      <mod>
+        <del rend="strikethrough">flies</del>
+        <add place="intralinear">worms</add>
+      </mod>
+    </line>
+    <line>On an abandoned corpse till this
+      <mod>
+        <del rend="strikethrough">green globe</del>
+      <add place="superlinear">
+        cold <del rend="strikethrough">blue</del> world
+      </add>
+    </mod>
+    <add place="sublinear">
+      <del rend="strikethrough">world</del>
+      <add place="sublinear">
+        <del rend="strikethrough"><unclear>globe</unclear></del>
+      </add>
+    </add>
+      </line>
+    <line><del rend="strikethrough">With</del> Was clothed with waters
+    <unclear>as</unclear>
+  <add place="sublinear"><unclear>some</unclear>
+<add place="sublinear"><unclear>Spirit</unclear></add>
+</add>
+</line>
+    <line>Whose <del rend="strikethrough">chariot is</del> a comet,
+  <del rend="strikethrough">cried</del> aloud</line>
+    <line>Be not . . . and like my words, they were
+    <add place="sublinear">no more</add>
+  </line>
     <line>The anatomies of unknown winged things</line>
-    <line>And <del rend="strikethrough"><unclear>co</unclear></del> fish, which moved as islands in</line>
-    <line>the sea</line>
-    <line>And serpents, bony chains, <del rend="strikethrough">whose</del></line>
-    <line>twisted around</line>
+    <line>And <del rend="strikethrough"><unclear>co</unclear></del>
+    fish, which moved as islands in
+  <add place="sublinear">the sea</add>
+</line>
+
+    <line>And serpents, bony chains,
+      <mod>
+        <del rend="strikethrough">whose</del>
+    <add place="sublinear">twisted around</add>
+  </mod>
+</line>
     <line>The iron crags, or around heaps of dust</line>
-    <line><del rend="strikethrough"><unclear>Wh</unclear></del> To which they crushed the crags in their</line>
+    <line>
+      <mod>
+        <del rend="overwritten"><unclear>Wh</unclear></del>
+        <add place="intralinear">To</add>
+      </mod> which they crushed the crags in their</line>
     <line>last pangs</line>
   </zone>
 </surface>

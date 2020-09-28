@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-f031v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="31v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f031v.jp2"/>
+
+	<zone type="main">
+		<line>
+			equal in extent &amp; population
+		</line>
+		<line>
+			to Athens, there is no reason
+		</line>
+		<line>
+			to suppose, but that each under
+		</line>
+		<line>
+			<del rend="strikethrough">
+				similar
+			</del>
+			institutions similar to
+		</line>
+		<line>
+			those of Athens, would produce
+		</line>
+		<line>
+			philosophers &amp; poets equal to
+		</line>
+		<line>
+			those which have never (
+		</line>
+		<line>
+			if we may except Shakespeare)
+		</line>
+		<line>
+			been surpassed. So much ex
+		</line>
+		<line>
+			perience warrants; &amp; theory may
+		</line>
+		<line>
+			promise &amp; imagine more
+		</line>
+	</zone>
+</surface>

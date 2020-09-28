@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb025vr" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="25r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb025r.jp2"/>
+
+	<zone type="main">
+	<line>Leave many my latest born <del rend="strikethrough">my most beloved</del>
+	<add place="sublinear">
+		<del rend="strikethrough">my gar</del>
+	</add>
+</line>
+<line>The <del rend="strikethrough">image of the Power by</del> which is moved</line>
+<line>Leaves man, even as a leprous child is left</line>
+<line>Who
+	<mod>
+		<del rend="strikethrough">gathers</del>
+		<add place="intralinear">follows</add>
+	</mod>
+	<del rend="strikethrough">some</del>
+	sick
+	<del rend="strikethrough">chid</del>
+	<add place="sublinear">
+		beast, to some
+		<add place="sublinear">warm
+			<add place="sublinear"> cleft</add>
+		</add>
+	</add>
+</line>
+<line>Of rocks, through which the might of healing springs is poured</line>
+<line>
+	<del rend="strikethrough">
+		<del rend="overwritten">It</del>
+<add place="intralinear">I</add> hear it
+</del>
+<add place="superlinear">Then,</add>
+<add place="sublinear">
+	<del rend="strikethrough">She went And</del> when it
+</add>
+	<mod>
+		<del rend="strikethrough">returns</del>
+		<add place="superlinear">wanders</add>
+	</mod>
+	home with rosy smile
+</line>
+<line>Unconsciously,
+	<add place="superlinear">&amp;</add>
+	its mother fears awhile
+</line>
+<line>It is a spirit,  &#8212; then weeps on her child restored</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Reflecting</del>
+		<add place="superlinear">Which imaged</add>
+	</mod>
+	many a monstrous shape of error
+</line>
+<line>
+	<mod>
+		<del rend="strikethrough">Like</del>
+	<add place="intralinear">As</add>
+</mod>
+<mod>
+	<del rend="strikethrough">the</del>
+	<add place="superlinear">a</add>
+</mod>
+calm
+<mod>
+	<del rend="strikethrough">lake</del>
+	<add place="superlinear">sea</add>
+</mod>
+the
+<mod>
+	<del rend="strikethrough">Heavens</del>
+	<add place="superlinear">sky,</add>
+</mod>
+reflecting
+<add place="sublinear">
+	<del rend="strikethrough">thee great Titan</del>
+	<add place="sublinear">Love, bright love</add>
+</add>
+</line>
+<line>
+	<del rend="strikethrough">And</del> Which like a cloud melodious sounds embolden</line>
+	<line>To scale <del rend="strikethrough">the</del>
+	steep
+	<add place="superlinear">Dawn</add>
+	with wings purple &amp; golden
+</line>
+	</zone>
+</surface>

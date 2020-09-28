@@ -21,7 +21,7 @@
         <add place="superlinear">earth,as if she were the Dawn</add>
       </mod>
     </line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
 
     <line>
       <del rend="strikethrough">As if</del>
@@ -47,7 +47,7 @@
     </add>
     </mod>
   </line>
-  <space quantity="1" unit="line"/>
+  <space extent="1" unit="line"/>
 
     <line> And in
       <mod>

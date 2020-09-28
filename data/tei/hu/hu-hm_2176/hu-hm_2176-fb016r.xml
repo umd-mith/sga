@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb016r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="16r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb016r.jp2"/>
+
+	<zone type="main">
+
+<line>Whose life is</line>
+<line><del rend="strikethrough">Whose flight</del></line>
+<line>Is a long<del rend="strikethrough">g dreams of</del> sw</line>
+<line>Whose life is one long
+	<mod>
+		<del rend="strikethrough">deams</del>
+		<add place="superlinear">dream</add>
+	</mod>
+	of</line>
+	<line>Thou Earth calm Empire of a happy Soul</line>
+	<line>
+		<del rend="strikethrough">Of <unclear>m</unclear> Home</del>
+		<add place="superlinear">Sphere</add>
+		of divinest shapes &amp; harmonies
+	</line>
+	<line>Attractive
+		<add place="superlinear"><del rend="strikethrough">spirit</del> Beautiful orb,</add>
+		 Gathering as thou dost rol</line>
+	<line>The Love which paves thy path
+		<add place="superlinear">
+			<del rend="strikethrough">along</del>
+		</add>
+		<add place="sublinear">thro the Void</add>
+		skies
+	</line>
+	<line rend="indent4">Earth</line>
+	<line>I am a dew drop, trembling ere it dies!</line>
+	<line rend="indent1"><del rend="strikethrough">To thy strong</del></line>
+	<line>
+		<del rend="strikethrough">O G Demons &amp; elemental Spirits,</del>
+	</line>
+		<line>Ye Kings
+			<add place="superlinear">&amp;</add>
+			Suns &amp; Stars, Demons &amp; Gods
+		</line>
+		<line><del rend="strikethrough">Powers of those Elysian windless</del>
+	</line>
+	<line>Aetherial Dominations who possess</line>
+	<line>Thou People <del rend="strikethrough">of</del> the</line>
+	<line><del rend="strikethrough">The World beyond</del></line>
+	<line>Elysian windless fortunate abodes</line>
+	<line>Beyond
+		<add place="sublinear">Heavens constellated</add>
+		wilderness
+	</line>
+	</zone>
+</surface>

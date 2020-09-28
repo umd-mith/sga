@@ -7,24 +7,53 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="2">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0004.jp2"/>
   <zone type="main">
+    <zone type="library">2</zone>
     <line>the wider has appeared the interval</line>
     <line>between us, &amp; to a greater distance</line>
     <line>have the points of sympathy been</line>
     <line>withdrawn. With a spirit</line>
     <line>ill fitted to sustain such proof,</line>
     <line>trembling &amp; feeble thro its tenderness,</line>
-    <line>I have every where sought <del rend="strikethrough">to</del></line>
-    <line>&amp; have found only</line>
+    <line>I have every where sought
+      <mod>
+        <del rend="strikethrough">to</del>
+      <add place="sublinear">&amp; have found only</add>
+    </mod>
+  </line>
+
     <line>repulse &amp; dissappointment. Thou</line>
-    <line>demandest <del rend="strikethrough">wh</del> what is Love. <del rend="strikethrough">It</del></line>
+    <line>demandest <del rend="strikethrough">wh</del> what is Love.
+    <del rend="strikethrough">It</del>
+  </line>
     <line><del rend="strikethrough">is the sweet chalice of life whose</del></line>
     <line><del rend="strikethrough">dregs are bitterer than wormwood.</del></line>
-    <line>that powerful attractions, towards all</line>
-    <line>It is <del rend="strikethrough">all</del> <del rend="strikethrough">that</del> we concieve or that</line>
-    <line>fear or hope <del rend="strikethrough">or</del> <del rend="strikethrough"><unclear></unclear></del> beyond ours<del rend="strikethrough">elves</del></line>
-    <line>-elves when <del rend="strikethrough">the</del> <del rend="strikethrough">wings</del> <del rend="strikethrough">mind</del> We</line>
-    <line>find    within</line>
-    <line><del rend="strikethrough">feel</del> <del rend="strikethrough">that</del> <del rend="strikethrough">our</del> own thoughts</line>
+
+    <line>It is
+    <mod>
+      <del rend="strikethrough">all that</del>
+      <add place="superlinear">that pwoerful attractions, towards all</add>
+    </mod>
+    we concieve or that,
+  </line>
+    <line>fear or hope
+      <del rend="strikethrough">or</del>
+      <del rend="strikethrough"><unclear unit="chars" extent="1"/></del>
+       beyond ours
+     </line>
+    <line>-elves when <del rend="strikethrough">the</del>
+    <del rend="strikethrough">wings</del>
+    <del rend="strikethrough">mind</del> We</line>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">feel</del>
+        <add place="superlinear">find</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">that our</del>
+         <add place="superlinear">within</add>
+       </mod>
+        own thoughts</line>
     <line>the chasm of an insufficient void</line>
   </zone>
 </surface>

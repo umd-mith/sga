@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-f021r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="21r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb021r.jp2"/>
+
+	<zone type="main">
+		<zone type="sketch">
+			<!--sketch of tree-->
+		</zone>
+<line>Until each
+	<mod>
+		<del rend="strikethrough">mountainous tower,</del>
+		<add place="superlinear">craglike</add>
+	</mod>
+	<add place="sublinear">tower &amp;
+		<mod>
+			<del rend="strikethrough">spiry</del>
+			<add place="sublinear">storied</add>
+		</mod>
+		column
+	</add>
+</line>
+<line><del rend="strikethrough">And sculptured</del></line>
+<line>Palace &amp; obelisk &amp; temple solemn&#8212;</line>
+<line><del rend="strikethrough">With my fire</del></line>
+<line><del rend="strikethrough">And</del>
+<mod>
+	<del rend="strikethrough"> old </del>
+	<add place="superlinear">each</add>
+</mod>
+<del rend="strikethrough">heaven-cleaving</del>
+<mod>
+	<del rend="strikethrough">fane,</del>
+	<add place="superlinear">dome</add>
+</mod>
+<del rend="strikethrough">each pyramid</del>
+</line>
+<line> My
+	<mod>
+		<del rend="strikethrough">monarch</del>
+		<add place="superlinear">Imperial</add>
+	</mod>mountains crowed with
+	<add place="sublinear">cloud &amp; snow &amp; fire</add>
+	 light &amp; snow &amp; stillness
+ </line>
+ <line> My
+	 <mod>
+		 <del rend="strikethrough">mighty</del>
+		 <add place="superlinear">sea like</add>
+	 </mod>
+	 forests...
+	 <mod>
+		 <del rend="strikethrough">every blossom</del>
+		 <add place="sublinear">
+			 <del rend="strikethrough">and</del>
+		 </add>
+			 <add place="superlinear">every blade &amp; blossom</add>
+		 </mod>
+		 </line>
+		 <line>Of
+			 <mod>
+				 <del rend="strikethrough">life that feeds from my fond bosom</del>
+				 <add place="sublinear">That finds a grave &amp; cradle on my bosom</add>
+			 </mod>
+		 </line>
+		 <line><del rend="strikethrough">Should</del></line>
+		 <line>Were stamped
+			 <mod>
+				 <del rend="strikethrough">into a mire of lifeless</del>
+				 <add place="superlinear">by thy strong wrath into a</add>
+			 </mod>
+				 mire
+				 <add place="sublinear"><del rend="strikethrough">blank</del> &amp; lifeless</add>
+			 </line>
+			 <line>How artt thou sunk,
+				 <add place="superlinear">withdrawn,</add>
+				 <del rend="strikethrough">covered,</del>
+				 <add place="superlinear">covered,</add>
+				 &#8212; drunken up
+			 </line>
+			 <line>By <del rend="strikethrough">thirsty</del> Nothing, as the
+			 <mod>
+				 <del rend="strikethrough">half drained</del>
+				 <add place="sublinear">
+					 <del rend="strikethrough">unreplenished</del>
+				 </add>
+				 <add place="superlinear">brackish</add>
+			 </mod>
+			 cup
+		 </line>
+		 <line><del rend="strikethrough">A little drop</del> an desart tribe a little drop for all</line>
+		 <line>Drained by a <del rend="strikethrough">thirsty</del></line>
+		 <line>Drained by the desart wandering Band</line>
+
+	</zone>
+</surface>

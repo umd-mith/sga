@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb007v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="7v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb007v.jp2"/>
+
+	<zone type="main">
+		<!--inverted-->
+<line>As the violets gentle eye</line>
+<line>Gazes on the azure sky</line>
+<line>Till <del rend="strikethrough">Till he it</del></line>
+	</zone>
+</surface>

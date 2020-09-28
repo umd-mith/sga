@@ -7,21 +7,36 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="102">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0104.jp2"/>
   <zone type="main">
+  <zone type="library">102</zone>
     <line><del rend="strikethrough">We churn up the sea, &amp; thro the</del></line>
-    <line>Let us</line>
+
     <line><del rend="strikethrough">We sing, as <del rend="strikethrough">our</del> and we we whirl</del></line>
-    <line>We whirl, singing loud, round the</line>
-    <line>gathering <del rend="strikethrough">ball</del></line>
-    <line>And the                   sphere</line>
-    <line><del rend="strikethrough">And the waves &amp; the rocks &amp; the</del></line>
-    <line>love &amp; fear</line>
-    <line><del rend="strikethrough">atoms of <del rend="strikethrough">chaos</del> that</del></line>
-    <line><del rend="strikethrough">And the atoms of chaos</del> calm with</line>
+    <line>We whirl,
+      <add place="superlinear">Let us</add>
+       singing loud, round the
+    <add place="sublinear">gathering
+      <mod>
+        <del rend="strikethrough">ball</del>
+  <add place="sublinear">sphere</add>
+</mod>
+</add>
+  </line>
+    <line><del rend="strikethrough">And the waves &amp; the rocks &amp; the</del>
+    <add place="sublinear">love &amp; fear</add>
+  </line>
+    <line>
+      And
+      <del rend="strikethrough">the atoms of chaos</del>
+      <add place="superlinear"><del rend="strikethrough">Atoms of that</del></add>
+       calm with
+     </line>
     <line>And the <del rend="strikethrough">waves of its</del> chaos are</line>
-    <line>And the trees &amp; the <del rend="strikethrough"><unclear>   </unclear></del> beasts &amp; the clouds appear</line>
-    <line>We encircle the Oceans &amp; Mountains of earth</line>
+    <line>And the trees &amp; the <unclear>beasts</unclear> &amp; the clouds appear</line>
+    <space unit="line" extent="1"/>
+    <line>We <unclear>encircle</unclear> the Oceans &amp; Mountains of earth</line>
     <line>Singing to</line>
     <line>As</line>
+    <space unit="lines" extent="3"/>
     <line><unclear>Lead</unclear></line>
     <line>Break the dance &amp; scatter the song</line>
     <line>Let some depart <unclear>&amp;some</unclear> remain</line>

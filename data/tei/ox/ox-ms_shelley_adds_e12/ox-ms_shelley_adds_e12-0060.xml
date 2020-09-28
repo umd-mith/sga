@@ -7,32 +7,47 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="58">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0060.jp2"/>
   <zone type="main">
-    <line>The Earth</line>
+  <zone type="library">58</zone>
+    <line rend="indent4">The Earth</line>
     <line>The joy the triumph the delight</line>
     <line>the mad</line>
-    <line>The boundless overflowing bursting gladness</line>
-    <line>ness</line>
-    <line>uncomb</line>
-    <line>The <del rend="strikethrough">unconquerable</del>     not to</line>
-    <line>be confined</line>
-    <line>Ha ha the animation of delight</line>
-    <line>Which wraps me like an atmosphere</line>
-    <line>of light</line>
+    <line>The boundless overflowing bursting
+      <add place="superlinear">the madness</add>
+       gladness
+       <add place="sublinear">not to be confined</add>
+     </line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">unconquerable</del>
+        <add place="superlinear">uncomb</add>
+      </mod>
+      </line>
+    <line>
+      Ha ha the animation of delight
+  </line>
+    <line>Which wraps me like an atmosphere
+    <add place="sublinear">of light</add>
+  </line>
+
     <line>And bears me, as a cloud is borne by its own wind</line>
-    <line>Ha ha! the caverns of my hollow</line>
-    <line>mountains,</line>
+    <line rend="indent6">&#8212;</line>
+    <space unit="line" extent="1"/>
+    <line>Ha ha! the caverns of my hollow mountains,</line>
     <line>My cloven fire-crags, sound-exalting fountain<unclear>s</unclear>,</line>
-    <line>Laugh with a vast &amp; inextinguishable</line>
-    <line>laughin</line>
-    <line>The Oceans &amp; the Desarts &amp; the Abysses</line>
-    <line>fathomed</line>
-    <line>Of the deep Airs unmeasured wildernesses</line>
-    <line>Answer from all their clouds &amp; billows</line>
-    <line>echoing after</line>
-    <line>They cry aloud as I do &#8212; Sceptered Curse</line>
-    <line>Who all our Green &amp; azure Universe</line>
-    <line>Threatnens to muffle sound with black destruction</line>
-    <line>sending</line>
+    <line>Laugh with a vast &amp; inextinguishable laughing</line>
+    <line rend="indent1">The Oceans &amp; the Desarts &amp; the Abysses</line>
+    <line rend="indent1">Of the deep Airs unmeasured
+      <add place="superlinear">fathomed</add>
+       wildernesses
+     </line>
+    <line>Answer from all their clouds &amp; billows
+    <add place="sublinear">echoing after</add>
+  </line>
+    <line rend="indent1">They cry aloud as I do &#8212; Sceptered Curse</line>
+    <line rend="indent1">Who all our Green &amp; azure Universe</line>
+    <line>Threatnens to muffle sound with black destruction
+    <add place="sublinear">sending</add>
+  </line>
     <line>A solid cloud to rain hot thunderstones</line>
   </zone>
 </surface>

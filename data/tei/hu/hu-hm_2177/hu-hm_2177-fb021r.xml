@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-fb021r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="21r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb021r.jp2"/>
+	<zone type="main">
+	<zone type="sketch">
+		<!--faces in profile mid-way on page-->
+	</zone>
+	<line> Yo sun, who rules as with a tyrants frown
+		<add place="superlinear">gaze</add>
+	</line>
+	<line>The unquiet republic of the spheres</line>
+	<line>Of ever wandering Planets</line>
+	<space unit="lines" extent="3"/>
+	<line rend="indent7">comets are his</line>
+	<line rend="indent7">ministers</line>
+	</zone>
+</surface>

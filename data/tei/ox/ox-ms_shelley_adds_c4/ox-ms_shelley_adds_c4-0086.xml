@@ -30,7 +30,7 @@
       <add place="sublinear">forest tops began to burn</add>
     </mod>
   </line>
-  <space quantity="1" unit="line"/>
+  <space extent="1" unit="line"/>
 <line rend="indent3">&#8212;</line>
 
     <line>With kindling green touched by the
@@ -66,7 +66,7 @@
        </mod>
         time
       </line>
-      <space quantity="1" unit="line"/>
+      <space extent="1" unit="line"/>
       <line rend="indent3">&#8212;</line>
     <line>Had
       <mod>
@@ -122,7 +122,7 @@
         <add place="superlinear">&amp; and in its sweep</add>
       </mod> calm
     </line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent3">---</line>
     <line>
       Bent the
@@ -149,13 +149,13 @@
   </line>
     <line>
       <del rend="strikethrough">Wept Heavens dew in it like that never
-        <gap quantity="3" unit="characters"/></del>
+        <gap extent="3" unit="characters"/></del>
       </line>
     <line>
       <del rend="strikethrough">Wept</del>
       <del rend="strikethrough">Heaven's dew on it; the violet</del></line>
     <line>With <del rend="strikethrough">music, that even</del>
-    <space quantity="2" unit="characters"/> W
+    <space extent="2" unit="characters"/> W
   </line>
     <line>
       <del rend="strikethrough">sweet oblivious</del>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-f006v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="6v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f006v.jp2"/>
+	<zone type="main">
+		<line>In the depth of the deep</line>
+		<line rend="indent3">Down Down</line>
+		<line>
+			<del rend="strikethrough">Like a <unclear>f</unclear> <unclear>w</unclear> chains keep</del>
+		</line>
+		<line>Like
+			<mod>
+				<del rend="strikethrough">A dew mist</del>
+				<add place="superlinear">
+					<mod><del rend="strikethrough">grey death</del>
+					<add place="superlinear">the lightning</add></mod>
+				</add>
+			</mod>
+				asleep
+			</line>
+				<line>
+					Which the winds might embolden
+				</line>
+				<line>To climb the bright &amp; golden</line>
+				<line><del rend="strikethrough">Up</del> the
+				<add place="superlinear">pale</add>
+				vault of the dawn</line>
+				<line> Till the sund ride<del rend="strikethrough">s</del> thereon</line>
+				<line>
+					<del rend="strikethrough">Around the rests <space unit="chars" extent="4"/></del>
+					<mod>
+						<del rend="strikethrough"> <unclear unit="chars" extent="8"/></del>
+						<add place="sublinear">
+							<del rend="strikethrough">unknown</del>
+						</add>
+					</mod>
+				</line>
+				<line>
+					<del rend="strikethrough">Up</del>on <del rend="strikethrough">the brink, your limbs sink</del></line>
+					<line rend="indent3">Down, Down</line>
+					<line> A spell is muffled</line>
+					<line> Like
+						<mod>
+							<del rend="strikethrough"><unclear>a sp</unclear></del>
+						<add place="superlinear">that</add>
+					</mod>
+			spark
+					<add place="sublinear">nursed</add>
+					<mod>
+						<del rend="strikethrough">in embers</del>
+						<add place="sublinear">
+							<mod><del rend="strikethrough">ahses</del>
+							<add place="sublinear">in embers</add></mod>
+						</add>
+					</mod>
+				</line>
+				<line>
+					Like the
+				<mod>
+					<del rend="strikethrough">word</del>
+					<add place="superlinear">last look</add>
+				</mod>
+				love remembers
+			</line>
+			<line>Like a <del rend="strikethrough">clear lamp</del> that</line>
+			<line> Like <del rend="strikethrough">a snake coiled in slumber</del>
+			<add place="sublinear">
+				<del rend="strikethrough">dreams</del>
+			</add>
+		</line>
+		<line>
+			<del rend="strikethrough">Like a </del>
+			<mod>
+				<del rend="strikethrough"><unclear>diamond</unclear></del>
+				<add place="sublinear">star</add>
+			</mod>
+			 which</line>
+			<line>
+				<del rend="strikethrough">Like</del></line>
+				<line>
+					Over sepuchral wealth, a
+				</line>
+	</zone>
+</surface>

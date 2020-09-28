@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-fb029r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="29r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb029r.jp2"/>
+
+	<zone type="main">
+		<line>
+			to action perpetually change.
+		</line>
+		<line>
+			We owe,
+			<del rend="strikethrough">
+				probably to the Reformation
+			</del>
+		</line>
+		<line>
+			the great writers of the
+			<del rend="strikethrough">
+				age of
+			</del>
+		</line>
+		<line>
+			Elizebeth age to the
+		</line>
+		<line>
+			A
+			<mod>
+				<del rend="strikethrough">man</del>
+				<add place="superlinear">poet</add>
+			</mod>
+			is the
+			<add place="superlinear">joint</add>
+			product of
+			<add place="superlinear">such</add>
+			internal
+		</line>
+		<line>
+			powers as modify the natures of
+		</line>
+		<line>
+			others, &amp; of external
+			<mod>
+				<del rend="strikethrough">ones</del>
+				<add place="sublinear">influences</add>
+			</mod>
+			 which
+		 </line>
+		 <line>
+			 excite &amp; sustain these pwoers;
+		 </line>
+		 <line>
+			 every mans mind is in this respect
+		 </line>
+		 <line>
+			 modified by
+			 <del rend="strikethrough">every word</del>
+			 all the obj
+		 </line>
+		 <line>
+			 ects of nature &amp; of art, by every
+		 </line>
+		 <line>
+			 word, &amp;
+			 <mod>
+			 <del rend="strikethrough">tone</del>
+			 <add place="intralinear">sentence</add>
+		 </mod>
+		 which he
+	 </line>
+	 <line>
+		 ever admitted to act upon his
+	 </line>
+	 <line>
+		 consciousness. It is the mirror
+	 </line>
+	 <line>
+		 upon which
+		 <add place="superlinear">
+			 many
+		 </add>
+		 outward forms are
+	 </line>
+	 <line>
+		 reflected
+		 <add place="superlinear">in</add>
+		 &amp; which they compose
+	 </line>
+	 <line>
+		 one form.
+	 </line>
+
+	</zone>
+</surface>

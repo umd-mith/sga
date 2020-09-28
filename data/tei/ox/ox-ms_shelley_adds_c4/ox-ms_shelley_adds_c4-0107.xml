@@ -52,7 +52,7 @@
 
     <line>Danced in a thousand unimagined shapes</line>
     <line>Upon the sunny streams &amp; grassy shelves;</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
 
     <line>And other sate chattering like
       <mod>
@@ -96,7 +96,7 @@
 
     <line>Some <del rend="strikethrough">With motions wild</del></line>
     <line><del rend="strikethrough">Or</del> Made a cradle of the ermined capes</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
 
     <line>Of kingly mantles, or
       <mod>
@@ -146,7 +146,7 @@
      <add place="sublinear">girt with empire</add>
    </mod>
  </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 
     <line><del rend="strikethrough">Like The lord of many <unclear>lands</unclear></del></line>
     <line><del rend="strikethrough">A head</del>   <del rend="strikethrough">Heads</del></line>

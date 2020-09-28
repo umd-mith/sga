@@ -24,7 +24,7 @@
     <add place="sublinear">
       <del rend="strikethrough"> whose lowered</del>
       <add place="sublinear">
-        <del rend="strikethrough">or <gap quantity="4" unit="chars"/> lowered</del>
+        <del rend="strikethrough">or <gap extent="4" unit="chars"/> lowered</del>
         <add place="sublinear"><del rend="strikethrough">&amp; ate </del>
       <add place="sublinear"><del rend="strikethrough">&amp; ate</del></add>
     </add>

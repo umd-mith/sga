@@ -7,30 +7,83 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="82">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0084.jp2"/>
   <zone type="main">
-    <line>inmost</line>
-    <line>soul</line>
-    <line>Leave Man, the likeness of my</line>
-    <line><del rend="strikethrough">The centre of my circumference, the whole,</del></line>
-    <line>The sea to which all else</line>
-    <line>Ye <del rend="strikethrough">many parts <unclear>serene</unclear></del> <del rend="strikethrough">is</del> are <unclear>unremaining</unclear></line>
-    <line>waves</line>
-    <line><del rend="strikethrough">My <unclear>best</unclear></del> <del rend="strikethrough">Waked to the</del></line>
+  <zone type="library">82</zone>
+
+    <line>Leave Man, the likeness of my
+    <add place="superlinear">inmost</add>
+  soul
+</line>
+<line>
+    <del rend="strikethrough"> centre of my circumference, the whole,</del></line>
+
+    <line>
+      <mod>
+        <del rend="overwritten">Ye</del>
+        <add place="intralinear">The</add>
+      </mod>
+      <mod>
+        <del rend="strikethrough"> many parts <unclear>serene</unclear></del>
+        <add place="superlinear">sea to which all else</add>
+      </mod>
+      <mod>
+       <del rend="overwritten">is</del>
+       <add place="intralinear">are</add>
+     </mod>
+      <unclear>unremaining</unclear>
+    <add place="sublinear">waves</add>
+  </line>
+    <line>
+      <del rend="strikethrough">My <unclear>best</unclear></del> <del rend="strikethrough">Waked to the</del>
+    </line>
     <line>The latest born, the</line>
-    <line>Leave Man, <del rend="strikethrough">the loveliest</del>    mirror</line>
-    <line><del rend="strikethrough"><unclear>The</unclear></del> My latest born, the <del rend="strikethrough">cloudy</del></line>
-    <line>thou <unclear>mightiest</unclear> <del rend="strikethrough"><unclear>cloudiest</unclear></del> <del rend="strikethrough"><unclear>clearest</unclear></del></line>
-    <line>Of <unclear>thee</unclear> <del rend="strikethrough"><unclear>perfection</unclear></del></line>
+    <space unit="lines" extent="2"/>
+    <line>Leave Man,
+      <del rend="strikethrough">the lovliest</del>
+    </line>
+    <line>
+      <del rend="strikethrough"><unclear>The</unclear></del> My latest born, the
+      <mod>
+        <del rend="strikethrough">cloudy</del>
+        <add place="superlinear">mirror</add>
+      </mod>
+    </line>
+    <line>Of <unclear>thee</unclear>
+    <add place="superlinear">
+      <del rend="strikethrough">though <unclear>mightiest</unclear></del>
+      <del rend="overwritten">
+        <unclear>cloudiest</unclear>
+      </del>
+      <add place="intralinear"><unclear>clearest</unclear></add>
+    </add>
+       <del rend="strikethrough"><unclear>perfection</unclear></del>
+     </line>
     <line><del rend="strikethrough">at whose feet Pain &amp; Hate &amp; Error</del></line>
     <line>Through whom <del rend="strikethrough">I conquer</del> fear &amp; error</line>
     <line><del rend="strikethrough">Are like slaves chained</del> <unclear>forever</unclear></line>
-    <line>The <unclear>image</unclear> of thy <del rend="strikethrough"><unclear>faith</unclear></del> thy patience &amp;</line>
+    <line>The <unclear>image</unclear> of thy
+    <add place="superlinear"> his</add>
+     <del rend="strikethrough"><unclear>faith</unclear></del> thy patience &amp;
+   <add place="sublinear">thy
+   <add place="sublinear">glory</add>
+ </add>
+</line>
     <line><del rend="strikethrough">Even as a leprous child</del>         thy</line>
-    <line><del rend="strikethrough">glory</del></line>
+
     <line><del rend="strikethrough">In <unclear>dis   </unclear></del> <del rend="strikethrough">in victory</del></line>
-    <line>D                masked</line>
-    <line>Like some sweet child <del rend="strikethrough"><unclear>covered</unclear></del></line>
-    <line>boldness</line>
-    <line>in a leprous</line>
-    <line>Who</line>
+
+    <line>
+      <add place="superlinear">D</add>
+      Like
+      <add place="sublinear">Who</add>
+      some sweet child 
+      <mod>
+        <del rend="strikethrough"><unclear>covered</unclear></del>
+      <add place="superlinear">masked</add>
+    </mod>
+  </line>
+    <line>in a leprous
+    <add place="superlinear">boldness</add>
+  </line>
+
   </zone>
 </surface>

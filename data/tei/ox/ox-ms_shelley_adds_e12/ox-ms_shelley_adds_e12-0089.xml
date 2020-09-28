@@ -7,28 +7,99 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="87">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0089.jp2"/>
   <zone type="main">
+  <zone type="library">87</zone>
     <line><del rend="strikethrough">The shadow of thy glory, mighty Titan</del></line>
     <line><del rend="strikethrough">Oer</del> <del rend="strikethrough">the</del></line>
-    <line>Hope      <del rend="strikethrough">Sorrow</del></line>
-    <line>And we dreamed of <del rend="strikethrough">Love</del> embracing</line>
-    <line>And we dreamed that <del rend="strikethrough">Love</del> &amp; Power might</line>
-    <line><del rend="strikethrough">Hope</del></line>
-    <line>meet</line>
+    <line>And we dreamed of
+      <mod>
+        <del rend="strikethrough">Love</del>
+        <add place="superlinear">Hope</add>
+      </mod>
+       embracing
+     <add place="superlinear">
+      <del rend="strikethrough">Sorrow</del>
+    </add>
+  </line>
+    <line>And we dreamed that
+      <mod>
+        <del rend="strikethrough">Love</del>
+        <add place="sublinear">
+          <del rend="strikethrough">Hope</del>
+        </add>
+      </mod>
+       &amp; Power might
+     <add place="sublinear">meet</add>
+   </line>
+   <space unit="line" extent="2"/>
     <line><unclear>At that</unclear> The <del rend="strikethrough">dream</del></line>
-    <line>shade</line>
-    <line>The <del rend="strikethrough">cloud</del> of thy glory mighty Titan</line>
-    <line>rain</line>
-    <line>Like a cloud which over a frozen</line>
-    <line>dell</line>
+    <line>The
+      <mod>
+        <del rend="strikethrough">cloud</del>
+        <add place="superlinear">shade</add>
+      </mod>
+       of thy glory mighty Titan
+     </line>
+
+    <line>Like a
+      <add place="superlinear">rain</add>
+       cloud
+       <del rend="strikethrough">which</del>
+        over a frozen
+        <add place="sublinear">dell</add>
+      </line>
     <line>Descends to soften awaken enlighten</line>
-    <line>breeze</line>
-    <line>Weave the dance on azure <del rend="strikethrough">wind</del></line>
-    <line>Pierce with</line>
-    <line><del rend="strikethrough">Lifts</del> <del rend="strikethrough">the</del> song to the <del rend="strikethrough">sphered</del> light<del rend="strikethrough">s</del></line>
-    <line><unclear>Clasp</unclear> heart Heavens -golden</line>
-    <line><del rend="strikethrough">Delay</del> the day that too swiftly flees</line>
-    <line><del rend="strikethrough">Why should it <del rend="strikethrough">scatter</del> bright</del>   Night</line>
-    <line>To check its <del rend="strikethrough">car <unclear>at the</unclear></del> <del rend="strikethrough"><del rend="strikethrough"><unclear>grave</unclear></del> <unclear>cave</unclear></del></line>
-    <line>flight</line>
+    <space unit="lines" extent="3"/>
+    <line>Weave the dance on azure
+      <mod>
+        <del rend="strikethrough">wind</del>
+      <add place="superlinear">breeze</add>
+    </mod>
+  </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Lifts</del>
+        <add place="superlinear">Pierce</add>
+      </mod>
+    <mod>
+       <del rend="strikethrough">the</del>
+       <add place="superlinear">with</add>
+     </mod>
+      song to the
+      <mod>
+        <del rend="strikethrough">sphered</del>
+        <add place="sublinear">Heavens golden</add>
+      </mod>
+         light<del rend="strikethrough">s</del>
+       </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">Delay</del>
+        <add place="superlinear"><unclear>Clasp</unclear></add>
+      </mod>
+         the
+         <add place="superlinear">heart</add>
+          day that too swiftly flees</line>
+    <line>
+      <del rend="strikethrough">Why should it </del>
+        <mod>
+          <del rend="overwritten">scatter</del>
+          <add place="intralinear">
+            <del rend="strikethrough">bright</del>
+          </add>
+          </mod>
+           </line>
+    <line>
+      To check its
+      <mod>
+        <del rend="strikethrough">car</del>
+        <add place="sublinear">flight</add>
+      </mod>
+      <del rend="strikethrough"> <unclear>at the</unclear></del>
+      <mod>
+        <del rend="overwritten"><unclear>grave</unclear></del>
+      <add place="intralinear"><del rend="strikethrough"><unclear>cave</unclear></del></add>
+    </mod>
+  <add place="superlinear">Night</add>
+    </line>
   </zone>
 </surface>

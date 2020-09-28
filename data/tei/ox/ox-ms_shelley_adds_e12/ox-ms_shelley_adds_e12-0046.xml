@@ -7,34 +7,157 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="44">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0046.jp2"/>
   <zone type="main">
-    <line>And so they float upon their sway</line>
-    <line>17 <del rend="strikethrough">And as they pasr</del></line>
-    <line>still</line>
-    <line>18 Until <del rend="strikethrough">most</del> sweet, but loud &amp; <del rend="strikethrough">strong</del> x</line>
-    <line>is driven</line>
-    <line>19 The storm of <del rend="strikethrough">sound</del> carries along x</line>
-    <line>and hurrying; as they fleet</line>
-    <line>20 <del rend="strikethrough">Sucked in, <unclear>the those</unclear> dominions</del></line>
-    <line><del rend="strikethrough">When</del> Behind its</line>
-    <line>21 <del rend="strikethrough">Along its billows</del> gathering billows meet</line>
-    <line>22 <del rend="strikethrough">As winds amid the yielding air</del></line>
-    <line>23 <del rend="strikethrough">Behind the <unclear>passnes</unclear> cloud; they bear</del></line>
-    <line><del rend="strikethrough">Amidst</del> And <del rend="strikethrough">since</del> to of the fatal mountain bear.</line>
-    <line><unclear>the</unclear></line>
-    <line><del rend="strikethrough">The golden ins</del>      <del rend="strikethrough">which wandered free</del></line>
-    <line>plumed       <del rend="strikethrough">noon</del></line>
-    <line>The <del rend="strikethrough">golden</del> insects <del rend="strikethrough">of noontide</del> <del rend="strikethrough">&amp; light</del></line>
-    <line>swift &amp; free</line>
-    <line><del rend="strikethrough">The</del> Like bright <del rend="strikethrough">thoughts</del> in a mind of purity</line>
-    <line><del rend="strikethrough"><unclear>Made</unclear></del> <unclear>Whom</unclear> the <unclear>ever</unclear> messengers</line>
-    <line><unclear>Th</unclear></line>
-    <line><del rend="strikethrough"><unclear>Whose the</unclear></del></line>
-    <line>Power</line>
-    <line>spot</line>
-    <line>There was an <unclear>Empress</unclear> in this sweet <del rend="strikethrough">place</del></line>
-    <line>An                an</line>
-    <line><del rend="strikethrough">The</del> Eve of the Eden, <del rend="strikethrough">the</del> innerest grace</line>
-    <line>Which to the <del rend="strikethrough">flowers</del> of the</line>
+    <zone type="library">44</zone>
+
+    <line xml:id="e12-044-pu_line_1">
+      17
+      <mod>
+        <del rend="strikethrough">And as they pasr</del>
+      <add place="superlinear">And so they float upon their way</add>
+    </mod>
+  </line>
+
+    <line xml:id="e12-044-pu_line_2">
+      18 Until
+      <mod>
+        <del rend="strikethrough">most</del>
+        <add place="superlinear">
+
+          still
+        </add>
+      </mod>
+
+         sweet, but loud &amp; <del rend="strikethrough">strong</del> x
+       </line>
+
+    <line xml:id="e12-044-pu_line_3">
+      19 The storm of
+      <del rend="strikethrough">
+        <!--struck through later with pen-->
+        sound
+      </del>
+      <mod>
+        <del rend="strikethrough">carries</del>
+        <add place="superlinear">is driven</add>
+      </mod>
+           along x
+         </line>
+
+    <line xml:id="e12-044-pu_line_4">
+      20
+      Sucked in,
+      <add place="superlinear"> and hurrying; as they fleet</add>
+      <del rend="strikethrough">
+       <unclear>the those</unclear>
+       <space unit="chars" extent="9"/>
+        dominions
+     </del>
+ </line>
+    <line xml:id="e12-044-pu_line_5">
+      21
+      <mod>
+        <del rend="strikethrough">Along its billows</del>
+        <add place="superlinear">
+          <del rend="strikethrough">When</del>
+        </add>
+        <add place="superlinear">
+        
+          Behind its gathering billows meet
+        </add>
+      </mod>
+    </line>
+    <line xml:id="e12-044-pu_line_6">
+      22
+      <del rend="strikethrough">As winds amid the yielding air</del>
+    </line>
+    <line xml:id="e12-044-pu_line_7">
+      23
+      <del rend="strikethrough">Behind the <unclear>passnes</unclear> cloud; they bear</del>
+    </line>
+    <line>
+      <del rend="strikethrough">Amidst</del>
+       And <del rend="strikethrough">since</del> to of the fatal mountain bear.
+     </line>
+     <zone type="sketch">
+       <!--sketch of tree-->
+     </zone>
+     <space unit="lines" extent="3"/>
+    <line>
+      <del rend="strikethrough">The golden
+        <add place="superlinear">the</add>
+         ins</del>
+         <del rend="strikethrough">which wandered free</del></line>
+
+    <line>The
+      <mod>
+        <del rend="strikethrough">golden</del>
+        <add place="superlinear">plumed</add>
+      </mod>
+       insects <del rend="strikethrough">of</del>
+       <mod>
+         <del rend="strikethrough">noontide</del>
+         <add place="superlinear">
+           <del rend="strikethrough">noon</del>
+         </add>
+       </mod>
+        <del rend="strikethrough">&amp; light</del>
+      </line>
+    <line>
+      <del rend="strikethrough">The</del> Like bright <del rend="strikethrough">thoughts</del>
+      <add place="superlinear"> swift &amp; free</add>
+       in a mind of purity
+     </line>
+    <line>
+    <mod>
+      <del rend="overwritten"><unclear>Made</unclear></del>
+      <add place="intralinear"> <unclear>Whom</unclear></add>
+    </mod>
+       the
+        <unclear>ever</unclear>
+         messengers
+       </line>
+
+    <line>
+      <del rend="overwritten"><unclear>Which</unclear></del>
+      <add place="intralinear">
+        <del rend="strikethrough"><unclear>Whose the</unclear></del>
+      </add>
+        <add place="superlinear">
+          <del rend="overwritten"><unclear>Whic</unclear></del>
+          <add place="intralinear">Th</add>
+        </add>
+    </line>
+    <space unit="lines" extent="3"/>
+    <line>
+      There was an
+      <mod>
+        <del rend="strikethrough"><unclear>Empress</unclear></del>
+        <add place="superlinear">Power</add>
+      </mod>
+       in this sweet
+       <mod>
+         <del rend="strikethrough">place</del>
+       <add place="superlinear">spot</add>
+     </mod>
+   </line>
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="superlinear">An</add>
+      </mod>
+         Eve of the Eden,
+      <mod>
+          <del rend="strikethrough">the</del>
+          <add place="superlinear">an</add>
+        </mod>
+         innerest grace
+       </line>
+    <line>Which to the
+      <mod>
+        <del rend="strikethrough">flo</del>
+        <add place="intralinear">trees</add>
+      </mod>
+     of the</line>
     <line>Was, as God is to the starry scheme</line>
   </zone>
 </surface>

@@ -7,32 +7,68 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="36">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0038.jp2"/>
   <zone type="main">
+  <zone type="library">36</zone>
     <line>If Peace should ever return to me &#8212;</line>
-    <line>in</line>
-    <line>An Inquiry into what degree</line>
+    <line rend="indent1">An Inquiry into
+      <add place="superlinear">in</add>
+       what degree</line>
     <line>the principle of population can</line>
     <line>affect the future hopes of mankind's</line>
-    <line>Equality &#8212; <unclear>Nepenthe canison</unclear> &#8212;</line>
-    <line>Asia</line>
-    <line>The <unclear>fields</unclear> of <unclear>Enna</unclear></line>
-    <line><unclear>From</unclear></line>
-    <line>The <unclear>desert</unclear> <del rend="strikethrough">of our</del> being &#8212; <del rend="strikethrough">and</del></line>
-    <line>of spring</line>
-    <line>Panthea   I had dreams <del rend="strikethrough">spring</del></line>
-    <line><del rend="strikethrough">I had a dream of</del></line>
-    <line>Last night <del rend="strikethrough">burst <unclear>forth</unclear> on yon</del> buds</line>
-    <line>Methought that flower infolding</line>
-    <line>Burst <del rend="strikethrough">forth</del> on yon lightning blasted almond</line>
-    <line><del rend="strikethrough">swept</del>                         tree</line>
-    <line>And then <del rend="strikethrough">arose</del> from yon white Scythian</line>
-    <line>wilder<del rend="strikethrough">ness</del></line>
-    <line>-ness</line>
-    <line>A wind swept dawn wrinkling the</line>
-    <line><unclear>earth</unclear> with</line>
-    <line>frost</line>
-    <line>I looked; &amp; all the blossoms were blown</line>
-    <line><unclear>down</unclear></line>
-    <line>And on each leaf, as in the hyacinths <unclear>bell</unclear></line>
-    <line>Was written ai ai</line>
+    <line>Equality &#8212; <unclear>Nepenthe canison</unclear> &#8212;
+  </line>
+    <line xml:id="e12-036-pu_line_1">
+      
+      Asia</line>
+    <line rend="indent4" xml:id="e12-036-pu_line_2">The <unclear>fields</unclear> of <unclear>Enna</unclear></line>
+    <line xml:id="e12-036-pu_line_3"><unclear>From</unclear></line>
+    <line xml:id="e12-036-pu_line_4">
+      The <unclear>desert</unclear> <del rend="strikethrough">of our</del>
+      being &#8212; <del rend="strikethrough">and</del></line>
+
+    <line rend="indent4" xml:id="e12-036-pu_line_5">Panthea
+      <space unit="chars" extent="3"/>
+      I had dreams
+    <mod>
+        <del rend="strikethrough">spring</del>
+    <add place="superlinear">of spring</add>
+  </mod>
+</line>
+
+    <line xml:id="e12-036-pu_line_6">Last night
+      <add place="sublinear">methought</add>
+      <mod>
+        <del rend="strikethrough">burst <unclear>forth</unclear> on yon</del>
+        <add place="superlinear">
+          <del rend="strikethrough">I had a dream of</del>
+        </add>
+        <add place="sublinear">that flower infolding</add>
+      </mod>
+         buds
+       </line>
+
+    <line xml:id="e12-036-pu_line_7">Burst <del rend="strikethrough">forth</del> on yon lightning blasted almond
+  <add place="sublinear">tree</add>
+</line>
+
+    <line xml:id="e12-036-pu_line_8">And then
+      <mod>
+        <del rend="strikethrough">arose</del>
+        <add place="superlinear">
+          <del rend="strikethrough">swept</del>
+        </add>
+      </mod>
+       from yon white Scythian
+<add place="sublinear">wilderness</add>
+</line>
+
+    <line xml:id="e12-036-pu_line_9">A wind swept dawn wrinkling the
+<unclear>earth</unclear> with
+<add place="sublinear">frost</add>
+  </line>
+    <line xml:id="e12-036-pu_line_10">I looked; &amp; all the blossoms were blown
+    <add place="sublinear"><unclear>down</unclear></add>
+  </line>
+    <line xml:id="e12-036-pu_line_11">And on each leaf, as in the hyacinths <unclear>bell</unclear></line>
+    <line xml:id="e12-036-pu_line_12">Was written ai ai</line>
   </zone>
 </surface>

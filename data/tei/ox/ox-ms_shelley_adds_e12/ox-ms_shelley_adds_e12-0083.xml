@@ -7,24 +7,69 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="81">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0083.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">two</del></line>
-    <line>her eyes are like two Heavens</line>
-    <line><del rend="strikethrough">An</del> Of liquid darkness which the Deisty</line>
-    <line>storm</line>
-    <line>Within, seems pouring, as a <del rend="strikethrough">sea</del> is poured</line>
+  <zone type="library">81</zone>
+    <line rend="indent3">
+    her
+    <add place="superlinear">two</add>
+     eyes are like two Heavens
+   </line>
+    <line>
+      <mod>
+        <del rend="overwritten">An</del>
+        <add place="superlinear"> Of</add>
+      </mod>
+       liquid darkness which the Deisty</line>
+
+    <line>
+      Within, seems pouring, as a
+      <mod>
+        <del rend="strikethrough">sea</del>
+        <add place="superlinear">storm</add>
+      </mod>
+       is poured
+     </line>
     <line>From jagged clouds, out of their arrowy lashes</line>
-    <line>cloak; &amp; they</line>
-    <line>Were</line>
-    <line><unclear>rank</unclear></line>
-    <line><del rend="strikethrough">of Earth</del> Wrapt deluge round it like a</line>
-    <line>Like <unclear>i cl </unclear></line>
-    <line><del rend="strikethrough">Were suddenly</del> abolished &#8212; or some <del rend="strikethrough">Spirit</del></line>
-    <line>Wore deluge like a <del rend="strikethrough">robe, or some</del>      God</line>
-    <line><del rend="strikethrough">robe</del>,                 Angl</line>
-    <line>Gasped, yelled &amp;     <del rend="strikethrough">or some swift Spirit</del></line>
-    <line><unclear>S </unclear> <del rend="strikethrough">Monarch</del> <del rend="strikethrough">Spirit</del></line>
+       <space unit="lines" extent="2"/>
+
+    <line>
+      <mod>
+        <del rend="strikethrough">of Earth</del>
+        <add place="superlinear">Were
+        <add place="superlinear"><unclear>rank</unclear></add>
+      </add>
+      </mod>
+       Wrapt deluge round it like a
+     <add place="superlinear">cloak; &amp; they</add>
+   </line>
+    <line>
+      <add place="interlinear">
+        Like <unclear> ic cl </unclear>
+      </add>
+      <del rend="strikethrough">Were suddenly</del> abolished &#8212; or some <del rend="strikethrough">Spirit</del>
+    <add place="sublinear">God
+    <add place="sublinear">Angl
+    <add place="sublinear">
+      <del rend="strikethrough">or some swift Spirit</del>
+    </add>
+  </add>
+  </add>
+</line>
+<line>Wore deluge like a
+  <del rend="strikethrough">
+    robe, or some</del>
+<add place="sublinear">
+  <del rend="strikethrough">
+    robe,
+  </del>
+</add>
+</line>
+    <line>Gasped, yelled &amp;</line>
+    <line rend="indent3">
+      <del rend="strikethrough">Monarch</del> <del rend="strikethrough">Spirit</del></line>
     <line>Whose throne was in a comet, past, &amp; cried</line>
-    <line>Like icy winds that crawl oer</line>
-    <line>a cold <unclear>stream</unclear></line>
+    <space unit="lines" extent="4"/>
+    <line>Like icy winds that crawl oer
+    <add place="sublinear">a cold <unclear>stream</unclear></add>
+  </line>
   </zone>
 </surface>

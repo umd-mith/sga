@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb019r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="19r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb019r.jp2"/>
+
+	<zone type="main">
+	<line>It interpenetrates my granite mass</line>
+	<line><del rend="strikethrough">And</del> through hard
+	<add place="superlinear">tangled</add>
+	roots &amp;
+	<add place="superlinear">trodden</add>
+	lifeless clay doth pass
+</line>
+<line>Inot the utmost leaves &amp; delicatest flowers</line>
+<line>Upon the winds, among the clouds tis spread</line>
+<line>It gives a life to the forgotten dead</line>
+<line>They breathe a psirit up from their obscurest bowers</line>
+<line><del rend="strikethrough">And</del> like a
+<mod>
+<del rend="strikethrough">whirlwind</del>
+<add place="superlinear">
+	<del rend="strikethrough">swift</del> storm
+	</add>
+</mod>
+bursting its
+<mod>
+	<del rend="strikethrough">craggy</del>
+	<add place="superlinear">cloudly</add>
+</mod>
+prison
+</line>
+<line>
+	<add place="superlinear">
+		<del rend="strikethrough">Under the</del>
+	</add>
+	With earth<del rend="strikethrough">quake</del>
+	<add place="superlinear">lightning thunder</add>
+	&amp; whirlwind, it has risen
+</line>
+<line>Out of the
+	<mod>
+		<del rend="strikethrough">caverns of the caves of thought</del>
+		<add place="superlinear">secret caves of mans
+			<add place="superlinear">un</add>
+			 imagined being</add>
+		 </mod>
+		</line>
+		<line><del rend="strikethrough">It</del>With earthquake shock &amp; swiftness making shiver</line>
+		<line>Thoughts stagnant chaos unremoved forever</line>
+		<line>
+			<del rend="strikethrough">And its</del> Hate, &amp;
+			<add place="superlinear">like</add>
+			 Ignorance like
+		 </line>
+		 <line><del rend="strikethrough">Dull</del></line>
+		 <line>Till ignroance &amp; hate, like shades
+			 <add place="sublinear">from
+				 <mod><del rend="strikethrough">the morning planets</del>
+			 <add place="sublinear">sunrise fleeing</add></mod>
+		 </add>
+	 </line>
+
+
+	</zone>
+</surface>

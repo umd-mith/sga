@@ -6,27 +6,60 @@
   xml:id="ox-ms_shelley_adds_e11-0112" partOf="#ox-ms_shelley_adds_e11"
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="110">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0112.jp2"/>
+
   <zone type="main">
-    <line><del rend="strikethrough">Along the</del> Voice <unclear>more</unclear> distant</line>
-    <line>O follow follow</line>
-    <line>Thro the caverns hollow</line>
-    <line><del rend="strikethrough">H<unclear>u</unclear>nt the <unclear>w</unclear></del></line>
-    <line>While the storms</line>
-    <line><unclear>To</unclear> <del rend="strikethrough"><unclear>their</unclear> cradling mountains</del></line>
-    <line>As the song floats, thou pursue &#8212;</line>
-    <line>By the woodland noontide dew</line>
-    <line>By the forests &amp; the fountains</line>
-    <line><unclear>X</unclear> By the <del rend="strikethrough">caverns &amp; the</del> <del rend="strikethrough">chasms</del> chasms</line>
-    <line>gulphs &amp; rents &amp;</line>
-    <line>Where the Earth reposed from spasm</line>
-    <line><del rend="strikethrough"><unclear>When</unclear> the</del></line>
-    <line><del rend="strikethrough">And</del> On the day when he &amp; thou</line>
-    <line>Parted<unclear>;</unclear> to commingle now &#8212;</line>
-    <line>Child of Ocean</line>
-    <line>Asia</line>
-    <line><unclear>Link</unclear> my hand in thine</line>
-    <line>Come sweet Panthea - <del rend="strikethrough"><unclear>Link</unclear></del> <del rend="strikethrough"><unclear>thine</unclear></del></line>
-    <line><unclear> ? </unclear></line>
-    <line>And follow, ere the voices fade away</line>
+    <zone type="library">110</zone>
+    <!--the following written in verso on back of MS page-->
+    <line xml:id="e11-0110-pu_line_1"><del rend="strikethrough">Along the</del> Voice <unclear>more</unclear> distant</line>
+    <line rend="indent1" xml:id="e11-0110-pu_line_2">O follow follow</line>
+    <line rend="indent1" xml:id="e11-0110-pu_line_3">Thro the caverns hollow</line>
+    <line rend="indent1" xml:id="e11-0110-pu_line_4"><del rend="strikethrough">H<unclear>u</unclear>nt the <unclear>w</unclear></del></line>
+
+    <line rend="indent1" xml:id="e11-0110-pu_line_5">
+      <unclear>To</unclear>
+      <mod>
+      <del rend="strikethrough"><unclear>their</unclear> cradling mountains</del>
+    <add place="superlinear">While the storms</add>
+  </mod>
+</line>
+    <line xml:id="e11-0110-pu_line_6">As the song floats, thou pursue &#8212;</line>
+    <line xml:id="e11-0110-pu_line_7">By the woodland noontide dew</line>
+    <line xml:id="e11-0110-pu_line_8">By the forests &amp; the fountains</line>
+    <line xml:id="e11-0110-pu_line_9">
+      <unclear>X</unclear> By the
+      <mod>
+        <del rend="strikethrough">caverns &amp; the</del> <del rend="strikethrough">chasms</del>
+        <add place="sublinear">gulphs &amp; rents &amp;</add>
+    </mod>
+     chasms
+   </line>
+
+    <line rend="indent1" xml:id="e11-0110-pu_line_11">
+        Where the Earth reposed from spasm
+      <add place="sublinear">
+        <del rend="strikethrough">When the</del>
+      </add>
+
+      </line>
+
+    <line rend="indent1" xml:id="e11-0110-pu_line_13">
+      <del rend="strikethrough">And</del> On the day when he &amp; thou</line>
+    <line xml:id="e11-0110-pu_line_14">Parted<unclear>;</unclear> to commingle now &#8212;</line>
+    <line rend="indent4" xml:id="e11-0110-pu_line_15">Child of Ocean</line>
+
+  <line rend="indent4" xml:id="e11-0110-pu_line_16">Asia</line>
+    <line xml:id="e11-0110-pu_line_17">Come sweet Panthea -
+      <mod>
+        <del rend="strikethrough"><unclear>Link</unclear></del>
+        <del rend="strikethrough"><unclear>thine</unclear></del>
+      <add place="superlinear"> <unclear>Link</unclear> my hand in thine</add>
+    </mod>
+  </line>
+
+    <line xml:id="e11-0110-pu_line_18">And follow, ere the voices fade away</line>
+    <zone type="sketch">
+    <!--sketch of tree upper right-->
+  </zone>
+
   </zone>
 </surface>

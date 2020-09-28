@@ -15,7 +15,7 @@
       </mod>
        as shadows on the green,
      </line>
-     <space quantity="1" unit="line"/>
+     <space extent="1" unit="line"/>
      <line>-----</line>
     <line rend="indent1">
       <del rend="strikethrough">Who</del> Bright
@@ -86,7 +86,7 @@
 </mod>
 whose unholy leisure
 </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 <line rend="indent6"> --- </line>
 
     <line rend="indent4">
@@ -95,7 +95,7 @@ whose unholy leisure
     <add place="superlinear">Was soothed by mischief since the world began:,</add>
   </mod>
 </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
     <line rend="indent4">Throw back their heads &amp; loose their streaming
     <add place="sublinear">hair</add>
   </line>

@@ -7,30 +7,79 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="112">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0114.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">But there is another view of the subject</del></line>
-    <line><del rend="strikethrough">totally</del> But there is another point</line>
-    <line>of view from which <del rend="strikethrough">to</del> the Universe</line>
-    <line>may be considered, totally different</line>
-    <line>Voice</line>
-    <line>Echoes we &#8212; listen           and</line>
-    <line><del rend="strikethrough">Our words</del> We cannot stay</line>
-    <line>As <del rend="strikethrough"><unclear>drew</unclear></del> dew stars glisten</line>
-    <line>Then fade away &#8212;</line>
-    <line>Child of Ocean !</line>
-    <line>Asia</line>
-    <line>Hark spirit<unclear>s</unclear> speak the liquid responses</line>
-    <line>aerial          yet sound</line>
-    <line>Of their <del rend="strikethrough">aerial</del> tongues <del rend="strikethrough"><unclear>now</unclear> <unclear>die</unclear></del></line>
-    <line><del rend="strikethrough"><unclear>I</unclear></del></line>
-    <line><unclear>Eros</unclear> <unclear>or</unclear> Panthea</line>
-    <line>I hear</line>
-    <line>Voice</line>
-    <line>O follow follow !</line>
-    <line><unclear>music</unclear> <unclear>leadeth</unclear></line>
-    <line><unclear>Where</unclear> the <unclear>forest</unclear></line>
-    <line><unclear>where</unclear></line>
-    <line><del rend="strikethrough">Thro</del> <del rend="strikethrough">the caverns hollow</del></line>
-    <line><unclear>Where</unclear> the forest spreadeth &#8212;</line>
-    <line>Child of Ocean</line>
+    <zone type="library">112</zone>
+    <!--the following is written in verso in original MS-->
+  <!--first four lines written in ink, the rest in pencil-->
+    <line xml:id="e11-0112-pu_line_1">
+      <del rend="strikethrough">But there is another view of the subject</del>
+    </line>
+    <line xml:id="e11-0112-pu_line_2">
+      <del rend="strikethrough">totally</del>
+      But there is another point
+    </line>
+    <line xml:id="e11-0112-pu_line_3">of view from which
+      <del rend="strikethrough">to</del> the Universe
+    </line>
+    <line xml:id="e11-0112-pu_line_4">
+      may be considered, totally different
+    </line>
+    <line rend="indent4" xml:id="e11-0112-pu_line_5">
+      Voice
+    </line>
+    <line rend="indent3" xml:id="e11-0112-pu_line_6">Echoes we &#8212; listen
+      <space quantity="6" unit="chars"/>
+      and
+    </line>
+    <line rend="indent3" xml:id="e11-0112-pu_line_7">
+      <del rend="strikethrough">Our words</del> We cannot stay
+    </line>
+    <line rend="indent3" xml:id="e11-0112-pu_line_8">As <del rend="strikethrough"><unclear>drew</unclear></del> dew stars glisten</line>
+    <line rend="indent3" xml:id="e11-0112-pu_line_9">Then fade away &#8212;</line>
+    <line rend="indent4" xml:id="e11-0112-pu_line_10">Child of Ocean !</line>
+    <line rend="indent4" xml:id="e11-0112-pu_line_11">Asia</line>
+    <line xml:id="e11-0112-pu_line_12">Hark spirit<unclear>s</unclear> speak the liquid responses</line>
+
+    <line xml:id="e11-0112-pu_line_13">Of their
+      <mod>
+        <del rend="strikethrough">aerial</del>
+        <add place="superlinear">aerial</add>
+      </mod>
+       tongues
+       <mod>
+         <del rend="strikethrough"><unclear>now</unclear></del>
+         <add place="superlinear">yet</add>
+       </mod>
+       <mod>
+         <del rend="strikethrough"> <unclear>die</unclear></del>
+       <add place="superlinear">die</add>
+     </mod>
+   </line>
+
+    <line rend="indent4" xml:id="e11-0112-pu_line_14">
+      <unclear>Eros</unclear> <unclear>or</unclear> Panthea
+    </line>
+    <line rend="indent5" xml:id="e11-0112-pu_line_15">
+      <add place="superlinear">
+        <del rend="strikethrough">I</del>
+      </add>
+      I hear
+    </line>
+    <line rend="indent4" xml:id="e11-0112-pu_line_16">Voice</line>
+    <line rend="indent3">O follow follow !</line>
+
+    <line rend="indent3" xml:id="e11-0112-pu_line_17"><unclear>Where</unclear> the <unclear>forest</unclear>
+  <add place="superlinear">
+    <unclear>music leadeth</unclear>
+  </add>
+</line>
+
+    <line rend="indent3" xml:id="e11-0112-pu_line_18">
+      <mod>
+        <del rend="strikethrough">Thro</del>
+        <add place="superlinear">Where</add>
+      </mod>
+       <del rend="strikethrough">the caverns hollow</del></line>
+    <line rend="indent3" xml:id="e11-0112-pu_line_19"><unclear>Where</unclear> the forest spreadeth &#8212;</line>
+    <line rend="indent4" xml:id="e11-0112-pu_line_20">Child of Ocean</line>
   </zone>
 </surface>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb025v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="25v" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-fb025v.jp2"/>
+<zone type="library">*25v</zone>
+	<zone type="main">
+		<line>We have past Ages icy caves</line>
+		<line>And manhoods dark &amp; tossing waves</line>
+		<line>And youths
+			<mod>
+				<del rend="strikethrough">false sea which</del>
+				<add place="superlinear">false waters</add>
+			</mod>
+			smiling <del rend="strikethrough">but</del> to betray
+		</line>
+		<line> Beyond the
+			<mod>
+				<del rend="strikethrough">sunny isles</del>
+				<add place="superlinear">gleaming</add>
+			</mod>
+			we flee
+		</line>
+		<line>Of <del rend="strikethrough">mist</del> shadow-peopled infancy</line>
+		<line>
+			<del rend="strikethrough">Beyond And beyond</del>
+		</line>
+		<line><del rend="strikethrough">And</del> through death &amp; birth to a serener day</line>
+		<line rend="indent1">
+			<del rend="strikethrough">And The lightnin</del>
+		</line>
+		<line rend="indent2"><del rend="strikethrough">And</del></line>
+
+
+	</zone>
+</surface>

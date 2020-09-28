@@ -20,12 +20,15 @@
     <line>Like some of S.'s women <del rend="strikethrough"><unclear>modest</unclear>,</del> free</line>
     <line><del rend="strikethrough">And earnest</del>, <unclear></unclear></line>
     <line>If I had been an unconnected man</line>
-    <line>To the Ghost of Aeschylus</line>
-    <line>abdite?</line>
-    <line>Audisne haec Amphiarae, sub terram</line>
-    <line>Epigon - <unclear>Aesch.</unclear> ad Cic.</line>
-    <line><unclear>Sun</unclear></line>
-    <line><unclear>I</unclear> <unclear>the</unclear> - Percy</line>
+    <!--the following lines are written in pen and inverted in MS-->
+    <line rend="indent2">To the Ghost of Aeschylus</line>
+
+    <line>Audisne haec Amphiarae, sub terram
+    <add place="superlinear">abdite?</add>
+  </line>
+    <line rend="indent5">Epigon - <unclear>Aesch.</unclear> ad Cic.</line>
+    <line rend="indent2"><unclear>Sun</unclear></line>
+    <line rend="indent2"><unclear>I</unclear> <unclear>the</unclear></line>
     <line>Percy Shelley</line>
   </zone>
 </surface>

@@ -7,26 +7,42 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="93">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0095.jp2"/>
   <zone type="main">
-    <line>S. chorus</line>
-    <line>Leave Man my latest born,</line>
-    <line><del rend="strikethrough">From mind to mind</del></line>
-    <line><del rend="strikethrough">Where mind to</del></line>
-    <line><del rend="strikethrough">Where dis</del> &#8212;</line>
-    <line><del rend="strikethrough">We come the bowers</del></line>
-    <line><del rend="strikethrough">Where</del> P</line>
-    <line><del rend="strikethrough">From the source</del></line>
-    <line><del rend="strikethrough">many <unclear>bowers</unclear></del></line>
-    <line><del rend="strikethrough">Where mind with mind</del></line>
-    <line>that</line>
-    <line><del rend="strikethrough">A</del> From     deep Abyss</line>
-    <line>Of wonder &amp; bliss</line>
-    <line>caverns</line>
-    <line>Whose <del rend="strikethrough">chambers</del> are chrystal palaces</line>
-    <line><del rend="strikethrough">From the shade of bowers</del></line>
-    <line><del rend="strikethrough">Of Paradise</del> flowers &#8212;</line>
-    <line>From <del rend="strikethrough">the</del> those skiey towers</line>
-    <line>Where Thoughts crowned Powers</line>
-    <line>&amp;</line>
-    <line>Are watching yr. dance yr. happy hours</line>
+  <zone type="library">93</zone>
+    <line rend="indent3">S. chorus</line>
+    <line rend="indent1">Leave Man my latest born,</line>
+    <line rend="indent2"><del rend="strikethrough">From mind to mind</del></line>
+    <line rend="indent2"><del rend="strikethrough">Where mind to</del></line>
+    <line rend="indent2"><del rend="strikethrough">Where dis</del> &#8212;</line>
+    <line rend="indent2"><del rend="strikethrough">We come the bowers</del></line>
+    <line rend="indent2"><del rend="strikethrough">Where</del> P</line>
+    <line rend="indent3"><del rend="strikethrough">From the source</del>
+    <add place="sublinear"><del rend="strikethrough">many <unclear>bowers</unclear></del></add>
+  </line>
+    <line rend="indent3"><del rend="strikethrough">Where mind with mind</del></line>
+    <line rend="indent1">
+      <mod>
+        <del rend="overwritten">A</del>
+        <add place="intralinear">From</add>
+      </mod>
+      <add place="superlinear">that</add>
+           deep Abyss
+         </line>
+    <line rend="indent2">Of wonder &amp; bliss</line>
+    <line rend="indent1">Whose
+      <mod>
+        <del rend="strikethrough">chambers</del>
+        <add place="superlinear">caverns</add>
+      </mod>
+       are chrystal palaces
+     </line>
+    <line rend="indent2"><del rend="strikethrough">From the shade of bowers</del></line>
+    <line rend="indent2"><del rend="strikethrough">Of Paradise</del> flowers &#8212;</line>
+    <line rend="indent2">From <del rend="strikethrough">the</del> those skiey towers</line>
+    <line rend="indent2">Where Thoughts crowned Powers</line>
+    <line rend="indent1">
+      Are watching yr. dance
+      <add place="superlinear">&amp;</add>
+       yr. happy hours
+     </line>
   </zone>
 </surface>

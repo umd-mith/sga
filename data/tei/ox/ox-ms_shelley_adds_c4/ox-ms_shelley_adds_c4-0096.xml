@@ -46,7 +46,7 @@
       </mod>
        amazed
      </line>
-<space quantity="1" unit="line"/>
+<space extent="1" unit="line"/>
 <line rend="indent4">&#8212;</line>
     <line rend="indent1">Was <del rend="strikethrough">legible</del> <del rend="strikethrough">visible</del>, <del rend="strikethrough">until the second broke</del></line>
     <line rend="indent1">Leaves his stamp visibly upon the shore</line>
@@ -134,7 +134,7 @@
 
     <line rend="indent1">
       <mod>
-        <del rend="strikethrough">Amid that light <gap quantity="5" unit="characters"/></del>
+        <del rend="strikethrough">Amid that light <gap extent="5" unit="characters"/></del>
       <add place="superlinear">
       <del rend="strikethrough">Under the smile of the third sphere</del>
     </add>

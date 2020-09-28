@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb020r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="20r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb020r.jp2"/>
+
+	<zone type="main">
+<line>Thy cloud of wrath</line>
+<line>My cloven fire-crags
+<add place="sublinear">fire-hills</add>
+</line>
+<line>My mouthed
+	<add place="superlinear"><del rend="strikethrough">thunder</del></add>,
+	sound-exulting fountains
+</line>
+<line>Ha ha the caverns of my howllow mountains</line>
+<line>The
+	<del rend="strikethrough">breathless</del> mouth of my
+	<mod>
+		<del rend="strikethrough">volcanoes,</del>
+		<add place="sublinear"><del rend="strikethrough">thu</del></add>
+		<add place="superlinear">fire hills</add>
+	</mod>
+</line>
+	<line>Laugh with a<del rend="strikethrough">n</del>
+	<add place="superlinear">
+		<del rend="strikethrough">loud &amp; vast</del>
+		vast &amp;
+	</add>
+		inextinguishable laughter
+	</line>
+	<line><del rend="strikethrough">My Caverns</del></line>
+	<line><del rend="strikethrough">My Oceans</del></line>
+	<line><del rend="strikethrough">Splintering &amp; kneading down my</del></line>
+	<line><del rend="strikethrough">The windernesses of</del></line>
+	<line>The Oceans &amp; the Deserts &amp; the abysses</line>
+	<line>Of the deep Air's unmeased wildernesses</line>
+	<line>From all their clouds &amp; billows echoing after</line>
+	<line>Answer from</line>
+	<line rend="indent4">Ha ha</line>
+	<line rend="indent1"><del rend="strikethrough">What didst tho dr</del></line>
+	<line rend="indent1"><del rend="strikethrough">Though drea</del> Where is he now the</line>
+	<line rend="indent1"><del rend="strikethrough">Jupiter hear,</del> htou sceptre bearing Curse</line>
+	<line>Who
+		<add place="superlinear">all</add>
+		oer
+		<mod>
+			<del rend="strikethrough">this</del>
+			<add place="sublinear">our</add>
+		</mod>
+			 green &amp; azure Universe
+		 </line>
+
+	</zone>
+</surface>

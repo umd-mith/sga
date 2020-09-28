@@ -7,30 +7,102 @@
   mith:shelfmark="MS. Shelley adds. e. 11" mith:folio="111">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e11/ms_shelley_adds_e11-0113.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">Asia</del> Panthea</line>
-    <line>grows <unclear>more</unclear></line>
-    <line>faint</line>
-    <line>Shall we pursue the sound &#8212; it <del rend="strikethrough">is</del> more</line>
-    <line><unclear> ? </unclear></line>
-    <line>And distant. <unclear>a</unclear> <unclear>th</unclear> Asia</line>
-    <line><unclear>when</unclear>     nearer now</line>
-    <line><del rend="strikethrough"><unclear> </unclear></del>   <del rend="strikethrough"><unclear>D</unclear></del> Hark the strain<unclear>s</unclear> float<del rend="strikethrough"><unclear>s</unclear></del> <unclear>unknown</unclear></line>
-    <line><unclear>Unknown</unclear> Voice <unclear>  ?  </unclear></line>
-    <line><unclear>in</unclear> <unclear>the</unclear> <del rend="strikethrough"><unclear>   ?   </unclear></del> <unclear>world</unclear></line>
-    <line><del rend="strikethrough">Beyond the world of being</del> <del rend="strikethrough"><unclear>nature</unclear></del></line>
-    <line><del rend="strikethrough">In the shade of shadows</del></line>
-    <line><unclear>Sleeps</unclear> <del rend="strikethrough"><unclear>of</unclear></del> a voice unspoken;</line>
-    <line><del rend="strikethrough">Thro</del> By thy step alone</line>
-    <line>Can its rest be broken</line>
-    <line>Child of Ocean !</line>
-    <line><del rend="strikethrough">Follow</del> O <del rend="strikethrough">follow follow</del></line>
-    <line><del rend="strikethrough">Thro the caverns hollow</del></line>
-    <line><unclear>labyrinthine</unclear></line>
-    <line><del rend="strikethrough">H<unclear>u</unclear>nt the bubbling &amp; of the fountains</del></line>
-    <line>To <del rend="strikethrough">their cradles in the mountains</del></line>
-    <line><del rend="strikethrough">Deep beneath</del></line>
-    <line><del rend="strikethrough">Where on Demogorgons throne</del></line>
-    <line>A <del rend="strikethrough">veiled darkness sits alone</del></line>
-    <line>X Thro the labyrinthine mountains</line>
+    <zone type="library">111</zone>
+    <!--first few lines seem to be written in darker
+     pencil on top of earlier lighter lines only partially rubbed out or erased-->
+    <line rend="indent4" xml:id="e11-00111-pu_line_1">
+      <del rend="strikethrough">Asia</del> Panthea
+  </line>
+    <line xml:id="e11-00111-pu_line_2">Shall we pursue the sound &#8212; it
+      <del rend="strikethrough">is</del> more
+      <add place="superlinear">faint
+      <add place="superlinear">grows <unclear>more</unclear>
+    </add>
+  </add>
+  </line>
+
+    <line xml:id="e11-00111-pu_line_3">
+      And distant. <unclear>a</unclear> <unclear>th</unclear>
+    </line>
+    <line rend="indent5" xml:id="e11-00111-pu_line_4">
+      Asia
+    </line>
+    <line rend="indent4" xml:id="e11-00111-pu_line_5">
+      <unclear unit="chars" extent="3" /> <unclear>Hark</unclear>
+      the strain<unclear>s
+    <add place="superlinear"><unclear>when</unclear></add>
+  </unclear> float<del rend="strikethrough">e</del>
+      <add place="superlinear">nearer now</add>
+      <unclear>unknown</unclear>
+    </line>
+    <line rend="indent3" xml:id="e11-00111-pu_line_6">
+    <mod>
+        <del rend="strikethrough"><unclear>Unknown</unclear></del>
+      <add place="sublinear">
+        <unclear>in the</unclear>
+        <del rend="strikethrough"><unclear unit="chars" extent="5"/><unclear>world</unclear></del>
+        <add place="superlinear">Voice <unclear unit="chars" extent="5"/></add>
+      </add>
+    </mod>
+  </line>
+
+    <line rend="indent3" xml:id="e11-00111-pu_line_7">
+      <del rend="strikethrough">Beyond the world of being</del> <del rend="strikethrough"><unclear>nature</unclear></del>
+    </line>
+    <line rend="indent3" xml:id="e11-00111-pu_line_8">
+      <mod>
+        <del rend="strikethrough">In the shade of shadows</del>
+      <add place="sublinear">
+        <unclear>Sleeps</unclear>
+        <del rend="strikethrough">
+          <unclear>of</unclear>
+        </del>
+        a voice unspoken;
+      </add>
+    </mod>
+  </line>
+
+    <line rend="indent3" xml:id="e11-00111-pu_line_9">
+      <del rend="strikethrough">Thro</del> By thy step alone</line>
+    <line rend="indent4" xml:id="e11-00111-pu_line_10">
+      Can its rest be broken
+    </line>
+    <line rend="indent4" xml:id="e11-00111-pu_line_11">
+      Child of Ocean !
+    </line>
+    <line rend="indent3" xml:id="e11-00111-pu_line_12">
+      <del rend="strikethrough">Follow</del>
+     <del rend="strikethrough">O follow follow</del>
+   </line>
+    <line xml:id="e11-00111-pu_line_13">
+      <del rend="strikethrough">Thro the caverns hollow</del>
+    </line>
+
+    <line xml:id="e11-00111-pu_line_14">
+      <del rend="strikethrough">H<unclear>u</unclear>nt</del>
+      <mod>
+        <del rend="strikethrough"> the bubbling &amp; of the </del>
+        <add place="superlinear"><unclear>labyrinthine</unclear></add>
+      </mod>
+    <del rend="strikethrough">fountains</del>
+  </line>
+    <line xml:id="e11-00111-pu_line_15">
+      To
+      <mod>
+       <del rend="strikethrough"> their cradles in</del>
+       <add place="sublinear">Deep beneath</add>
+     </mod>
+     <del rend="strikethrough"> the mountains</del>
+     </line>
+
+    <line xml:id="e11-00111-pu_line_16">
+      <del rend="strikethrough">Where on Demogorgons throne</del>
+    </line>
+    <line xml:id="e11-00111-pu_line_17">
+      A <del rend="strikethrough">veiled darkness sits alone</del>
+    </line>
+    <line xml:id="e11-00111-pu_line_18">
+      X Thro the labyrinthine mountains
+    </line>
   </zone>
 </surface>

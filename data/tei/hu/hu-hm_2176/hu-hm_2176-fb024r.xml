@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb024r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="24r" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb024r.jp2"/>
+
+	<zone type="main">
+<line>His will, with all mean<del rend="strikethrough">s</del> passions,
+<mod>
+	<del rend="strikethrough">ill</del>
+	<add place="superlinear">bad</add>
+</mod>
+delights
+</line>
+<line>
+	<mod>
+		<del rend="strikethrough">With low cares, its terror mailed</del>
+		<add place="sublinear">And sceptered cares, its trembling</add>
+	</mod>
+	 satellites
+</line>
+<line>
+	<del rend="strikethrough">Is a spirit as a </del> spirit ill to
+	<mod>
+		<del rend="strikethrough">serve</del>
+		<add place="superlinear">rule</add>
+	</mod>
+	but mighty to obey
+</line>
+<line>
+	<del rend="strikethrough">A tempest winged</del>
+	<mod>
+		<del rend="strikethrough">boat,</del>
+		<add place="superlinear">ship</add>
+	</mod>
+	<del rend="strikethrough">a chariot speeding</del>
+</line>
+<line><del rend="strikethrough">With winds for steeds</del></line>
+<line>Is as a tempest winged ship whose helm</line>
+<line>Love
+	<mod>
+		<del rend="strikethrough">rules,</del>
+		<add place="superlinear">guides</add>
+	</mod>
+	thro waves which dare not overwhelm
+</line>
+<line>Forcing remotest shores to own its sovereign's sway</line>
+<line><del rend="strikethrough">And from the mass</del> confess strength</line>
+<line><del rend="strikethrough">And</del> All things <del rend="strikethrough">own</del> his
+<del rend="strikethrough">power</del>; from the cold mass
+</line>
+<line>Of <del rend="strikethrough">white &amp;</del> silent
+<add place="superlinear">&amp; of colour</add>
+marble,
+<mod>
+	<del rend="strikethrough">such forms pass</del>
+	<add place="sublinear">his dreams pass</add>
+</mod>
+</line>
+<line><del rend="strikethrough">At his command</del></line>
+<line>
+	<mod>
+		<del rend="overwritten">And</del>
+		<add place="intralinear">Whence</add>
+	</mod>
+	<add place="superlinear">gazing</add>
+	<del rend="strikethrough">mothers gaze &amp; love &amp; children</del>
+</line>
+<line>And mothers
+	<mod>
+		<del rend="strikethrough">gazing</del>
+		<add place="superlinear">
+	<mod>
+				<del rend="strikethrough">wove</del>
+			<add place="intralinear">weave</add>
+	</mod>
+	</add>
+</mod>
+	<mod>
+		<del rend="strikethrough">the light</del>
+		<add place="superlinear">the robes</add>
+	</mod>
+	their children wear
+</line>
+<line>
+	<del rend="strikethrough">Language</del> is <del rend="strikethrough">a music</del>
+	<add place="sublinear">as <del rend="strikethrough">an Orphic</del>
+		<add place="sublinear">perpetual<del rend="strikethrough">ly</del>
+		 Orphic
+		 <add place="superlinear">
+			 <del rend="strikethrough">strong</del>
+		 </add>
+		 song
+	 </add>
+ </add>
+ </line>
+ <line>
+	 <add place="superlinear">Ruling</add>
+	 <del rend="strikethrough">Which builds</del>
+	 rules with mighty harmony, the throng
+ </line>
+ <line>Of
+	 <mod>
+		 <del rend="strikethrough">feeling &amp;</del>
+		 <add place="superlinear">thoughts</add>
+	 </mod>
+	 of forms, which else senseless &amp; shapeless were
+ </line>
+
+	</zone>
+</surface>

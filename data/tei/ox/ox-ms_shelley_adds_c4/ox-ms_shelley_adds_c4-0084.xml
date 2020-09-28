@@ -10,7 +10,7 @@
 <zone type="pagination">5</zone>
   <zone type="main">
 
-    <line>But to destroy: 
+    <line>But to destroy:
       <mod>
         <del rend="strikethrough">but I am</del>
         <add place="superlinear">replied the
@@ -28,7 +28,7 @@
          <add place="sublinear">Am one of those who created, even</add>
        </mod>
      </line>
-     <space quantity="1" unit="line"/>
+     <space extent="1" unit="line"/>
 
     <line>If it be but a world of agony.&#8212;&#8212;</line>
     <line>Whence camest thou &amp; whither goest thou</line>
@@ -40,7 +40,7 @@
     </mod>
        thy course begin, I said, &amp; why?
      </line>
-     <space quantity="1" unit="line"/>
+     <space extent="1" unit="line"/>
     <line>
       Mine eyes are sick of this perpetual flow
     <add place="superlinear">
@@ -60,7 +60,7 @@
         </mod>
       </line>
     <line>Speak. &#8212; Whence I came partly I seem to know</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent4">__________</line>
     <line>
       And <del rend="strikethrough">how to this</del>
@@ -71,7 +71,7 @@
       been
       <add place="superlinear">brought</add>
     </line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line rend="indent5">X</line>
     <line>
       To
@@ -94,7 +94,7 @@
    </mod>
  </line>
     <line>Why this should be my mind can compass not</line>
-    <space quantity="1" unit="line"/>
+    <space extent="1" unit="line"/>
     <line>iv      devi</line>
 
     <line>Whither the conqueror hurries

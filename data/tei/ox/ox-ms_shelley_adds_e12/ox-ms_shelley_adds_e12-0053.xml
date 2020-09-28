@@ -7,33 +7,131 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="51">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0053.jp2"/>
   <zone type="main">
-    <line><del rend="strikethrough">Swift</del> Bright</line>
-    <line>float</line>
-    <line><del rend="strikethrough">The</del> clouds <del rend="strikethrough">are</del> in Heaven</line>
-    <line>Dew        <del rend="strikethrough">Drops</del> <del rend="strikethrough">are</del></line>
-    <line><del rend="strikethrough">They</del> <del rend="strikethrough">The</del> <del rend="strikethrough">dew</del> <del rend="strikethrough">is</del> on Earth</line>
-    <line><unclear>stars</unclear> gleam</line>
-    <line><del rend="strikethrough"><unclear></unclear></del> The waves assemble on Ocean &#8212;</line>
-    <line>are gathered</line>
-    <line><del rend="strikethrough">Their</del> They <del rend="strikethrough">legions are</del> driven</line>
-    <line>By the blast of <unclear>the</unclear> <del rend="strikethrough">storm of delight by</del></line>
-    <line>By the panic of glee &#8212;</line>
+  <zone type="library">51</zone>
+  <!--later edits in lighter ink where indicated-->
+
+    <line>
+      <mod>
+        <del rend="strikethrough">The</del>
+        <add place="superlinear">
+          <mod>
+            <del rend="strikethrough">Swift</del>
+          <add place="intralinear">Bright</add>
+        </mod>
+        </add>
+      </mod> clouds
+    <mod>
+      <del rend="strikethrough">are</del>
+      <add place="superlinear">
+
+        <!--lighter ink emendation-->
+        float</add>
+    </mod>
+
+    <!--return to fine point pen-->
+     in Heaven</line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="overwritten">They</del>
+        <add place="intralinear"><del rend="strikethrough">The</del></add>
+      </mod>
+
+        <mod>
+           <del rend="strikethrough">dew is</del>
+         <add place="superlinear">
+           <del rend="strikethrough">Drops are</del>
+         </add>
+         <add place="sublinear">
+
+           <!--lighter ink emendation-->
+           <unclear>stars</unclear> gleam</add>
+       </mod>
+
+    <!--return to fine point pen-->
+      on Earth
+  </line>
+    <line rend="indent1">
+        <del rend="overwritten"><unclear>The</unclear></del>
+         waves assemble on Ocean &#8212;
+       </line>
+    <line rend="indent1">
+      <mod>
+        <del rend="overwritten">Their</del>
+        <add place="intralinear"> They</add>
+      </mod>
+      <mod>
+         <del rend="strikethrough">legions are</del>
+         <add place="superlinear">
+
+           <!--lighter ink emendation-->
+           are gathered</add>
+       </mod>
+
+      <!--return to fine point pen-->
+        driven</line>
+    <line>
+      <add place="interlinear">
+
+        <!--lighter ink emendation-->
+        By the blast of <unclear>the</unclear> <del rend="strikethrough">storm of delight by</del>
+      </add>
+      </line>
+    <line rend="indent1">
+
+      <!--return to fine point pen-->
+      By the panic of glee &#8212;</line>
     <line>They <del rend="strikethrough">It</del> shakes with emotion</line>
-    <line>They dance in their mirth</line>
-    <line>But where are ye?</line>
+    <line rend="indent1">They dance in their mirth</line>
+    <line rend="indent2">But where are ye?</line>
     <line>The pine-boughs are singing</line>
-    <line>Old songs with new <del rend="strikethrough">gladness</del> joyance</line>
-    <line><del rend="strikethrough">And</del> The <del rend="strikethrough">riv</del> fountains &amp; billows</line>
+    <line rend="indent1">Old songs with new
+      <mod>
+        <del rend="strikethrough">gladness</del>
+        <add place="intralinear">
+
+          <!--lighter ink emendation-->
+          joyance</add>
+      </mod>
+      </line>
+    <line rend="indent1">
+
+      <!--return to fine point pen-->
+      <del rend="strikethrough">And</del> The
+      <mod>
+        <del rend="strikethrough">riv</del>
+        <add place="intralinear">fountains</add>
+      </mod>
+       &amp; billows
+     </line>
     <line>Fresh <del rend="strikethrough">Their</del> music are flinging</line>
-    <line>Like the notes of a spirit</line>
-    <line>From land &amp; from sea</line>
-    <line>The streams &amp; the mountains</line>
-    <line><del rend="strikethrough">Beams <unclear>start</unclear> from their pillows</del></line>
-    <line>Are laughing with madness</line>
-    <line>But where are ye</line>
+    <line>
+
+      <!--lighter ink emendation-->
+      Like the notes of a spirit
+    </line>
+    <line>
+
+      <!--return to fine point pen-->
+      From land &amp; from sea</line>
+
+    <line rend="indent1">
+      <mod>
+        <del rend="strikethrough">Beams <unclear>start</unclear> from their pillows</del>
+      <add place="superlinear">
+      
+    The streams &amp; the mountains
+  </add>
+</mod>
+</line>
+    <line rend="indent1">Are laughing with madness</line>
+    <line rend="indent2">But where are ye</line>
+    <space unit="line" extent="1"/>
     <line>The Serpent &amp; Dove</line>
     <line>Are at play in the cedars</line>
-    <line>Entwining enfolding</line>
+    <line>
+      <del rend="strikethrough">Entwining enfolding</del>
+    </line>
     <line>Their</line>
   </zone>
 </surface>

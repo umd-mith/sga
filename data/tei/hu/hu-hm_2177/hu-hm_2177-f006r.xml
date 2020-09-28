@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2177-f006r" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="6r (rev.)" mith:shelfmark="MS HM 2177">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2177/hm_2177-f006r.jp2"/>
+	<zone type="main">
+		<line>To the deep to the deep</line>
+		<line rend="indent3">Down, Down!</line>
+		<line>Through the shade of sleep</line>
+		<line>Thro the cloudy strife</line>
+		<line>Of death &amp;
+			<add place="superlinear">of</add>
+			life
+		</line>
+		<line>Thro the viel, within the bar</line>
+		<line>Of <del rend="strikethrough">the</del> things which seem &amp; are</line>
+		<line>Even to the
+			<mod>
+				<del rend="strikethrough"><unclear>chair</unclear></del>
+				<add place="superlinear">footsteps step</add>
+			</mod>
+			of the Eternal
+			<add place="superlinear">
+				<del rend="strikethrough">the</del>
+			</add>
+			throne
+		</line>
+		<line rend="indent3">Down Down</line>
+		<line> <del rend="strikethrough">Tra</del> Track the, sound, which</line>
+
+	</zone>
+</surface>

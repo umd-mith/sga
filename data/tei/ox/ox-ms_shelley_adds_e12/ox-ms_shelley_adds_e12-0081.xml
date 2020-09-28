@@ -7,37 +7,96 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="79">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0081.jp2"/>
   <zone type="main">
+  <zone type="library">79</zone>
     <line>Embleming Heaven &amp; Earth, unted now</line>
+    <space unit="line" extent="1"/>
     <line>And from the star upon its forehead, shoot</line>
-    <line>Like swords of azure fire, <del rend="strikethrough">&amp;</del> <del rend="strikethrough">or</del> golden spears</line>
+    <line>Like swords of azure fire,
+      <mod>
+        <del rend="overwritten">&amp;</del>
+      <add place="intralinear"><del rend="strikethrough">or</del></add>
+    </mod>
+     golden spears</line>
     <line>With tyrant quelling myrtle overtwind</line>
     <line><del rend="strikethrough">For they are Heaven &amp; Earth</del></line>
-    <line>Vast beams <del rend="strikethrough"><unclear>whose</unclear></del> <unclear>like</unclear> spokes of some</line>
-    <line>wheel</line>
+    <line>Vast beams
+      <mod>
+        <del rend="overwritten"><unclear>whose</unclear></del>
+        <add place="intralinear"><unclear>like</unclear></add>
+      </mod>
+       spokes of some
+    <add place="sublinear">>wheel</add>
+  </line>
     <line>Which whirl as the orb whirls . . . swifter than thou<unclear>ght</unclear></line>
     <line><del rend="strikethrough">Which</del> perpendicular now, &amp; now transverse</line>
-    <line>And       dark soil</line>
-    <line>Pieirce the <del rend="strikethrough">black earth</del>, and as they pierce</line>
-    <line>&amp; pass</line>
-    <line>Make bare the secrets of the Earths deep</line>
-    <line>heart</line>
-    <line>Shew <del rend="strikethrough">the black secr</del></line>
-    <line><del rend="strikethrough"><unclear>Wide</unclear> mighty mines</del></line>
-    <line><del rend="strikethrough">Wide caverned</del> mines of adamant &amp; gold</line>
-    <line>x <del rend="strikethrough">And</del> Valueless stones, &amp; unimagined gems</line>
+
+    <line>
+      <add place="superlinear">And</add>
+        Pieirce the
+        <mod>
+          <del rend="strikethrough">black earth</del>
+          <add place="superlinear">dark soil</add>
+        </mod>, and as they pierce
+    <add place="sublinear">>&amp; pass</add>
+  </line>
+    <line>Make bare the secrets of the Earths deep
+    <add place="sublinear">>heart</add>
+  </line>
+    <line> <del rend="strikethrough">Shew the black secr</del></line>
+    <line>
+      <mod>
+        <del rend="overwritten"><unclear>Wide</unclear> <unclear unit="chars" extent="4"/></del>
+      <add place="intralinear">Wide caverned</add>
+            </mod>
+            <add place="superlinear">
+              <del rend="strikethrough">mighty mines</del>
+            </add>
+            mines of adamant &amp; gold
+          </line>
+
+    <line>x
+    <mod>
+        <del rend="overwritten">And</del>
+      <add place="intralinear">Valueless</add>
+    </mod>
+     stones, &amp; unimagined gems</line>
     <line>x <del rend="strikethrough">And</del> Fountains of gloomy fire, and watersprings</line>
     <line>Whence the great sea, even as a child, is fed</line>
-    <line>monarch</line>
-    <line>Whose vapours clothe Earths mountain<del rend="strikethrough">s</del></line>
-    <line><del rend="strikethrough"><unclear>spa</unclear></del> kingly                        tops</line>
-    <line>With <del rend="strikethrough">king</del></line>
-    <line><del rend="strikethrough">regal</del>   ermine snow; see as they</line>
-    <line><del rend="strikethrough"><unclear>pass</unclear></del></line>
-    <line>flash</line>
+    <line>Whose vapours clothe Earths
+      <add place="superlinear">monarch</add>
+       mountain<del rend="strikethrough">s</del>
+     <add place="sublinear">tops</add>
+   </line>
+    <line>With
+      <mod>
+        <del rend="strikethrough">king</del>
+      <add place="sublinear">
+        <mod>
+          <del rend="strikethrough">regal</del>
+      <add place="superlinear">kingly</add>
+    </mod>
+    </add>
+    </mod>
+    ermine snow; see as they
+    <add place="sublinear">
+    <mod>
+        <del rend="strikethrough"><unclear>pass</unclear></del>
+      <add place="sublinear">flash</add>
+    </mod>
+    </add>
+  </line>
+
     <line>They make appear the melancholy ruins</line>
-    <line>cancelled</line>
-    <line>Of burie<unclear> </unclear> <del rend="strikethrough"><unclear>unremembered</unclear></del> cycles, mighty</line>
-    <line><del rend="strikethrough">Jammed in the clay</del> &amp;                  cities</line>
+
+    <line>Of burie<unclear unit="chars" extent="2"/>
+    <mod>
+      <del rend="strikethrough"><unclear>unremembered</unclear></del>
+      <add place="superlinear">cancelled</add>
+    </mod>
+     cycles, mighty
+   <add place="sublinear">cities</add>
+ </line>
+    <line><del rend="strikethrough">Jammed in the clay</del> &amp;</line>
     <line><del rend="strikethrough">With all their mortal populations, forms</del></line>
     <line><del rend="strikethrough">Unlike the</del></line>
   </zone>

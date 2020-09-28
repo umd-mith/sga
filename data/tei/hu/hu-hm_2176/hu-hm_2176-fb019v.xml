@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb019v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="19v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb019v.jp2"/>
+
+	<zone type="main">
+<line>
+	<del rend="strikethrough">Where are thou,</del> as I do &#8212; Sceptred</line>
+	<line>They cry aloud <del rend="strikethrough">where are thou</del></line>
+	<line> Threatenedst
+		<mod>
+			<del rend="strikethrough">to out of the sky</del>
+			<add place="sublinear">to muffle round with</add>
+		</mod>
+		<add place="sublinear">black destruction sending</add>
+	</line>
+	<line>A solid cloud
+		<add place="superlinear">to</add>
+		rain<del rend="strikethrough">ing</del> hot thunder stones
+	</line>
+	<line>And <del rend="strikethrough">To</del> splinter and knead down my children's bones</line>
+	<line><del rend="strikethrough">Battering into one dark</del></line>
+	<line>All I bring forth in one dark mass battering &amp; bleeding</line>
+
+
+	<zone type="sketch">
+		<!--sketch of tree-->
+	</zone>
+
+	</zone>
+</surface>

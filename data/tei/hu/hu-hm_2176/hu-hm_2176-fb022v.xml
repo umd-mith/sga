@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+	xml:id="hu-hm_2176-fb022v" ulx="0" uly="0" lrx="5412" lry="7216" mith:folio="22v" mith:shelfmark="MS HM 2176">
+	<graphic url="http://shelleygodwinarchive.org/images/hu/hm_2176/hm_2176-fb022v.jp2"/>
+
+	<zone type="main">
+<line>
+	<add place="superlinear">As the
+		<add place="superlinear">the</add>
+		 dissolving
+	 <add place="superlinear">As the</add>
+ </add>
+	<del rend="strikethrough">And</del>
+	as the <del rend="strikethrough">spirit</del>
+	of <del rend="strikethrough">the</del>
+	<add place="superlinear">
+		<del rend="strikethrough">warmth</del>
+		<add place="superlinear">dissolving
+			<mod>
+				<del rend="strikethrough">warmth</del>
+			<add place="superlinear">light</add>
+		</mod>
+	</add>
+	</add>
+	Dawn, may fold
+</line>
+<line>A half unfrozen dew-globe green &amp; gold</line>
+<line>And chrystalline, till it becomes a winged
+	<add place="sublinear">
+		<del rend="strikethrough">purple wandering</del>
+		<add place="sublinear">
+			<del rend="strikethrough">beamy</del> mist</add>
+		</add>
+	</line>
+	<line>And wanders up the vault of the blue Day</line>
+	<line>Outlives the noon, &amp; on the
+		<mod>
+			<del rend="strikethrough">evenings</del>
+			<add place="superlinear">suns last</add>
+		</mod>
+		ray
+	</line>
+	<line>Hangs oer the sea, a fleece of
+		<mod>
+			<del rend="strikethrough">gold</del>
+			<add place="sublinear">fire</add>
+		</mod>
+		&amp; amethyst
+	</line>
+	</zone>
+</surface>

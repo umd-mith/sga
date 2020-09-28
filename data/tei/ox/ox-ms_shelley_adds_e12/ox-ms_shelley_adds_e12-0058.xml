@@ -7,26 +7,60 @@
   mith:shelfmark="MS. Shelley adds. e. 12" mith:folio="56">
   <graphic url="http://shelleygodwinarchive.org/images/ox/ms_shelley_adds_e12/ms_shelley_adds_e12-0058.jp2"/>
   <zone type="main">
-    <line>The shadow of white Death <del rend="strikethrough">had</del> <del rend="strikethrough">has past</del></line>
-    <line>at last</line>
-    <line>From my path in Heaven has past</line>
-    <line>The cold still shadow of an icy sleep</line>
-    <line>frost &amp; nought</line>
-    <line>Which made the</line>
-    <line>clinging     solid   <del rend="strikethrough">snow</del></line>
-    <line><del rend="strikethrough">And</del> <del rend="strikethrough">solid</del> shroud of <del rend="strikethrough">clinging</del></line>
-    <line>Whi</line>
-    <line>warmth</line>
-    <line>As the dissolving <del rend="strikethrough">light</del> of Dawn may fold</line>
-    <line>A half-unfrozen dew globe green &amp; gold</line>
-    <line>And chrystalline, till it becomes a winged mist</line>
-    <line>And wanders up the vault of the blue day</line>
-    <line>Outlives the noon &amp; on the Suns last ray</line>
-    <line>Hangs on the sea, a fleece of fire &amp; amethyst</line>
-    <line>The Moon</line>
-    <line>Thou art <del rend="strikethrough">lying</del> folded, thou art lying</line>
-    <line>In the light which is undying</line>
-    <line>Agesilaus Plu</line>
+  <zone type="library">56</zone>
+    <line rend="indent1" xml:id="e12-056-pu_line_1">The shadow of white Death
+      <mod>
+        <del rend="overwritten">had</del>
+      <add place="intralinear"><del rend="strikethrough">has past</del></add>
+    <add place="sublinear">at last</add>
+  </mod>
+  </line>
+    <line rend="indent1"  xml:id="e12-056-pu_line_2">From my path in Heaven has past</line>
+    <line  xml:id="e12-056-pu_line_3">The cold still shadow of an icy sleep</line>
+
+    <line rend="indent1"  xml:id="e12-056-pu_line_4">
+      <mod>
+        <del rend="strikethrough">And</del> <del rend="strikethrough">solid</del>
+        <add place="sublinear">Whi</add>
+        <add place="superlinear">Which made the
+          <add place="sublinear">clinging</add>
+        </add>
+      </mod>
+       shroud of
+       <mod>
+         <del rend="strikethrough">clinging</del>
+       <add place="superlinear">solid</add>
+     </mod>
+     <add place="superlinear">
+      <del rend="strikethrough">snow</del>
+    </add>
+  </line>
+    <line  xml:id="e12-056-pu_line_5">As the dissolving
+      <mod>
+        <del rend="strikethrough">light</del>
+        <add place="superlinear">warmth</add>
+      </mod>
+       of Dawn may fold
+     </line>
+    <line rend="indent1" xml:id="e12-056-pu_line_6">A half-unfrozen dew globe green &amp; gold</line>
+    <line  xml:id="e12-056-pu_line_7">And chrystalline, till it becomes a winged mist</line>
+    <line rend="indent1"  xml:id="e12-056-pu_line_8">And wanders up the vault of the blue day</line>
+    <line rend="indent1"  xml:id="e12-056-pu_line_9">Outlives the noon &amp; on the Suns last ray</line>
+    <line  xml:id="e12-056-pu_line_10">Hangs on the sea, a fleece of fire &amp; amethyst</line>
+    <line rend="indent3"  xml:id="e12-056-pu_line_11">The Moon</line>
+    <line  xml:id="e12-056-pu_line_12">Thou art
+      <mod>
+        <del rend="strikethrough">lying</del>
+        <add place="intralinear">folded</add>
+      </mod>
+      , thou art lying
+    </line>
+    <line  xml:id="e12-056-pu_line_13">In the light which is undying</line>
+    <!--MS contains four lines of Greek followed by Shelley's comments on it-->
+    <line rend="indent4">
+      
+      Agesilaus Plu
+    </line>
     <line>Agesilaus had something the matter with his</line>
     <line>legs &#8212; he had the spirit to laugh at it himself</line>
   </zone>

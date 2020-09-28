@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:id="hu-hm_2177">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Huntington MS HM 2177, ff. 45v (rev.) – 46v (rev.)</title>
+                <title type="sub">An electronic transcription</title>
+				<respStmt xml:id="md_editor">
+					<resp>Metadata editors</resp>
+					<name xml:id="DD">Devin Doherty</name>
+				    <name xml:id="RV">Raffaele Viglianti</name>
+				</respStmt>
+			</titleStmt>
+            <editionStmt>
+                <edition>Shelley-Godwin Archive edition, <date>2016</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>Huntington Library</distributor>
+                <address>
+                    <addrLine>
+                        <ref target="http://www.shelleygodwinarchive.org/">http://www.shelleygodwinarchive.org/</ref>
+                    </addrLine>
+                </address>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p>CC0 1.0 Universal.</p>
+                        <p> To the extent possible under law, the creators of the metadata records for the Shelley-Godwin Archive
+                            have waived all copyright and related or neighboring rights to this work.</p>
+                    </licence>
+                </availability>
+                <pubPlace>College Park, MD</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>San Marino, California</settlement>
+                        <repository>Huntington Library</repository>
+                        <idno type="HU">MS HM 2177</idno>
+                    </msIdentifier>
+                    <msContents>
+                      <msItem class="work">
+                        <bibl status="draft">
+                          <author>Percy Bysshe Shelley</author>
+                          <title>Prometheus Unbound</title>
+                        </bibl>
+                        <msItem class="#preface"
+                          xml:id="hu-hm_2177_prometheus_ubound_preface">
+                            <locusGrp>
+                              <locus target="#hm_2177_pu_preface_1
+                            #hm_2177_pu_preface_26v_2
+                            #hm_2177_pu_preface_26v_3
+                            #hm_2177_pu_preface_26v_4
+                            #hm_2177_pu_preface_26v_5
+                            #hm_2177_pu_preface_26v_6
+                            #hm_2177_pu_preface_26v_7
+                            #hm_2177_pu_preface_26v_8
+                            #hm_2177_pu_preface_26v_9
+                            #hm_2177_pu_preface_26v_10
+                            #hm_2177_pu_preface_27r_1
+                            #hm_2177_pu_preface_27r_2
+                            #hm_2177_pu_preface_27r_3
+                            #hm_2177_pu_preface_27r_4
+                            #hm_2177_pu_preface_27r_5
+                            #hm_2177_pu_preface_27r_6
+                            #hm_2177_pu_preface_27r_7
+                            #hm_2177_pu_preface_27r_8
+                            #hm_2177_pu_preface_27r_9
+                            #hm_2177_pu_preface_27r_10
+                            #hm_2177_pu_preface_27r_11
+                            #hm_2177_pu_preface_27r_12
+                            #hm_2177_pu_preface_27r_13
+                            #hm_2177_pu_preface_27r_14
+                            #hm_2177_pu_preface_27r_15
+                            #hm_2177_pu_preface_27v_1
+                            #hm_2177_pu_preface_27v_2
+                            #hm_2177_pu_preface_27v_3
+                            #hm_2177_pu_preface_27v_4
+                            #hm_2177_pu_preface_27v_5
+                            #hm_2177_pu_preface_27v_6
+                            #hm_2177_pu_preface_27v_7
+                            #hm_2177_pu_preface_27v_8
+                            #hm_2177_pu_preface_27v_9
+                            #hm_2177_pu_preface_27v_10
+                            #hm_2177_pu_preface_27v_11
+                            #hm_2177_pu_preface_27v_12
+                            #hm_2177_pu_preface_27v_13
+                            #hm_2177_pu_preface_27v_14
+                            #hm_2177_pu_preface_27v_15
+                            #hm_2177_pu_preface_27v_16
+                            #hm_2177_pu_preface_27v_17
+                            #hm_2177_pu_preface_27v_18
+                            #hm_2177_pu_preface_28r_1
+                            #hm_2177_pu_preface_28r_2
+                            #hm_2177_pu_preface_28r_3
+                            #hm_2177_pu_preface_28r_4
+                            #hm_2177_pu_preface_28r_5
+                            #hm_2177_pu_preface_28r_6
+                            #hm_2177_pu_preface_28r_7
+                            #hm_2177_pu_preface_28r_8
+                            #hm_2177_pu_preface_28r_9
+                            #hm_2177_pu_preface_28r_10
+                            #hm_2177_pu_preface_28r_11
+                            #hm_2177_pu_preface_28r_12
+                            #hm_2177_pu_preface_28r_13"                  
+                            />
+
+                        <msItem class="#work">
+                            <locusGrp>
+                                <locus target="hu-hm_2177-fb045v
+                                    hu-hm_2177-fb046r
+                                    hm_2177-fb046v-1
+                                    hm_2177-fb046v-2
+                                    hm_2177-fb046v-3
+                                    hm_2177-fb046v-4
+                                    hm_2177-fb046v-5
+                                    hm_2177-fb046v-6" />
+                            </locusGrp>
+                            <bibl status="draft">
+								<author>Percy Bysshe Shelley</author>
+                                <title>My lost William (To William Shelley)</title>
+							</bibl>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <handNote scope="sole" xml:id="pbs"><persName>Percy Shelley</persName></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin notBefore="1819-06-07">Not before 7 June 1819</origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="../shared/classDecl.xml" />
+        </encodingDesc>
+    </teiHeader>
+    <sourceDoc>
+        <xi:include href="hu-hm_2177/hu-hm_2177-fb045v.xml" />
+        <xi:include href="hu-hm_2177/hu-hm_2177-fb046r.xml" />
+        <xi:include href="hu-hm_2177/hu-hm_2177-fb046v.xml" />
+    </sourceDoc>
+</TEI>
